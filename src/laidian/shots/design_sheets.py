@@ -261,8 +261,12 @@ def lights(out):
             else:
                 ls = [LS.tube_light(1.0)]
                 ls[0][4:10] = [-0.6, 0.8, 3.1, 0.6, 0.8, 3.1]
-                nm = ["tube"]
-                exp = 0.8
+                # 堂屋里日光灯照亮四面白墙，墙再把光反回来，所以日光灯下的脸是平的、白的；
+                # 设计稿的空场景没有墙，用一块面光源代替被照亮的墙，否则顶光会把下半张脸压黑
+                ls.append(LT.make_light(LT.RECT, (0.96, 0.96, 0.92), 14.0, pos=(-1.0, 2.2, 0.2), vec=(2.0, 0, 0),
+                                        vec2=(0, 0, 2.2), samples=6))
+                nm = ["tube", "walls"]
+                exp = 0.5
             for style in ("lantern", "woodcut", "silk"):
                 img = render_chars(sc, [(c, g)], [(outfit, info, pose.expr, None)], cam, 300, 380, ls, nm, style=style,
                                    exposure=exp, chars_only=False)
@@ -316,21 +320,21 @@ def room_states(out):
     from .style_samples import STYLES
     cs = L.CAMERAS[0]
     cam = Camera(cs.pos, cs.target, cs.hfov_deg)
-    lp_c = L.LAMP_CABINET
+    lp_h = L.LAMP_HELD
     lp_s = L.LAMP_STAGE
     fp = L.FLASHLIGHT_PROP
     states = [
         ("1 日光灯（开场）", room.RoomState(clothes_on_wire=True), [LS.tube_light(), LS.tv_light(0.3), LS.moon_light(0.4)], None, 0.9),
-        ("2 停电：只剩月光", room.RoomState(clothes_on_wire=True, tv_on=False), [LS.moon_light(1.6), LS.window_sky(1.6)], None, 30.0),
+        ("2 停电：只剩月光", room.RoomState(clothes_on_wire=True, tv_on=False), [LS.moon_light(1.6), LS.window_sky(8.0)], None, 26.0),
         ("3 马灯点亮（立柜旁）", room.RoomState(clothes_on_wire=True, tv_on=False),
-         LS.lamp_lights((lp_c.x - 0.25, lp_c.y - 0.1, 1.35), 0.4) + [LS.moon_light(1.0), LS.window_sky(1.0)], (lp_c.x - 0.25, lp_c.y - 0.1, 1.35), 7.0),
+         LS.lamp_lights((lp_h.x, lp_h.y, lp_h.z), 0.4) + [LS.moon_light(1.0), LS.window_sky(2.5)], (lp_h.x, lp_h.y, lp_h.z), 9.0),
         ("4 搭台后：马灯在床单后", room.RoomState(sheet_hung=True, tv_on=False),
-         LS.lamp_lights((lp_s.x, lp_s.y, lp_s.z), 0.4) + [LS.moon_light(1.0), LS.window_sky(1.0)], (lp_s.x, lp_s.y, lp_s.z), 4.0),
+         LS.lamp_lights((lp_s.x, lp_s.y, lp_s.z), 0.4) + [LS.moon_light(1.0), LS.window_sky(2.5)], (lp_s.x, lp_s.y, lp_s.z), 4.0),
         ("5 来电：日光灯 + 马灯 + 手电", room.RoomState(sheet_hung=True, tv_on=True),
          [LS.tube_light()] + LS.lamp_lights((lp_s.x, lp_s.y, lp_s.z), 0.4) + [LS.flashlight((fp.x, fp.y, fp.z), (1.35, 4.0, 1.3)), LS.tv_light(0.3), LS.moon_light(0.4)],
          (lp_s.x, lp_s.y, lp_s.z), 0.9),
         ("6 关灯后：马灯重新显出来", room.RoomState(sheet_hung=True, tv_on=False, fan_angle=0.5),
-         LS.lamp_lights((lp_s.x, lp_s.y, lp_s.z), 0.4) + [LS.flashlight((fp.x, fp.y, fp.z), (1.35, 4.0, 1.3)), LS.moon_light(1.0), LS.window_sky(1.0)],
+         LS.lamp_lights((lp_s.x, lp_s.y, lp_s.z), 0.4) + [LS.flashlight((fp.x, fp.y, fp.z), (1.35, 4.0, 1.3)), LS.moon_light(1.0), LS.window_sky(2.5)],
          (lp_s.x, lp_s.y, lp_s.z), 4.0),
     ]
     rows = {s: [] for s in ("lantern", "woodcut", "silk")}

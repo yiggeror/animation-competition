@@ -65,6 +65,8 @@ LAMP_STAGE = Point("lamp_stage", 1.30, 4.70, 1.55, "马灯（麻绳吊在檩条�
 LAMP_PURLIN_Z = 3.345
 # 马灯原来放在立柜顶上（第 2 场）
 LAMP_CABINET = Point("lamp_cabinet", 5.05, 4.25, 1.98, "马灯原位（立柜顶）")
+# 第 3 场刚点亮：奶奶拎着灯站在立柜前（灯不能贴着柜门，否则一半光被柜子挡住）
+LAMP_HELD = Point("lamp_held", 4.45, 4.05, 1.05, "马灯刚点亮，拎在立柜前")
 # 第 9 场手电架在木箱上
 FLASHLIGHT_PROP = Point("flashlight_prop", 0.55, 4.62, 0.62, "手电（第9场架在木箱上）")
 

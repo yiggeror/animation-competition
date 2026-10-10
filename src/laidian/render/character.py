@@ -410,6 +410,9 @@ def build(P: Proportions, pose: CharPose, outfit: str):
         else:
             B.capcone(hip - tdir * 0.04, kn, rh + 0.03, rk + 0.032, "trousers_nn", rnd=0.006, k=0.03)
             B.capcone(kn - tdir * 0.01, an - sdir * 0.02, rk + 0.032, ra_ + 0.028, "trousers_nn", rnd=0.006, k=0.035)
+            # 膝盖：两段平头裤管在弯折处外侧会留出楔形缺口，用一个球把布接上
+            rkc = rk + 0.030
+            B.ell(kn - (tdir - sdir) * 0.004, (rkc, rkc, rkc), np.eye(3), "trousers_nn", k=0.03, layer=1)
         # 脚
         fd = np.asarray(pose.foot_dir.get(side, R0 @ np.array([sg * 0.12, 1.0, 0.0])), float)
         fd = fd - np.array([0, 0, fd[2]])
