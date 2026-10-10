@@ -267,7 +267,8 @@ def shadow(chars, groups, ox, oy, oz, dx, dy, dz, tmax, w):
     tn, tf = _ray_groups(groups, ox, oy, oz, dx, dy, dz)
     if tf < 0 or tn > tmax:
         return 1.0
-    t = max(tn, 2e-3)
+    # 从离表面 6 毫米处开始判断：贴着表面走的光线（顶光下的脸）不该被算成"擦边遮挡"
+    t = max(tn, 6e-3)
     tf = min(tf, tmax)
     res = 1.0
     for it in range(96):

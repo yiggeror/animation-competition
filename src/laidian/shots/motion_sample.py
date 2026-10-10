@@ -1,7 +1,8 @@
-"""动态小样（4 秒）：从后台看，奶奶把鹤举到床单上。
+"""动态小样（4 秒）：第 6 场鹤亮相，床单正面（B 机位，镜头慢慢推近）。
 
-验证：手臂抬起时肩、肘、腕的连贯；手指握签子不悬空；皮影离开床单时影子大而虚、贴上后小而清楚；
-没装签子的鹤腿靠惯性摆动；脖子跟着头签走；画风合成在动起来时是否稳定（不闪、不游）。
+奶奶在床单后面把鹤从灯前送到床单上：皮影离床单远时影子大而虚，贴上后小而清楚（光线追踪算出来的，不是模糊滤镜）；
+头签带着脖子抬起来；没装签子的鹤腿靠惯性摆动。小满坐在左下角，一开始抱着胳膊，影子变清楚时身子往前探、胳膊松开。
+同时检查画风合成在镜头运动时是否稳定（不闪、不游）。
 
 用法：python -m laidian.shots.motion_sample OUT_DIR [--w 1280 --h 720 --ss 2 --fps 24 --styles lantern,woodcut,silk]
 """
@@ -28,9 +29,11 @@ DUR = 4.0
 
 def crane_tracks():
     """鹤：身体在床单平面上的位置（米）、离床单的距离、身体角度；头相对身体的位置（毫米，皮影局部坐标）。"""
-    root = anim.Track([(0.0, (1.00, 1.16)), (0.7, (0.99, 1.13), "inout"), (2.1, (1.03, 1.33), "out"),
+    # 一开始鹤在灯前 0.40 米（离灯 0.30 米）：影子放大约 2.3 倍，火苗和玻璃罩把边缘晕开；
+    # 放大中心是马灯，所以鹤要靠近灯的高度举着，影子才落在床单中间。
+    root = anim.Track([(0.0, (1.22, 1.40)), (0.8, (1.20, 1.37), "inout"), (2.1, (1.03, 1.31), "out"),
                        (2.5, (1.03, 1.30), "inout"), (4.0, (1.04, 1.31), "inout")])
-    dist = anim.Track([(0.0, 0.15), (0.8, 0.16, "inout"), (2.1, 0.004, "out"), (4.0, 0.004)])
+    dist = anim.Track([(0.0, 0.40), (0.8, 0.38, "inout"), (2.1, 0.004, "out"), (4.0, 0.004)])
     body_ang = anim.Track([(0.0, -0.10), (0.8, -0.14, "inout"), (2.1, 0.08, "out"), (2.6, 0.03, "inout"), (4.0, 0.05)])
     head = anim.Track([(0.0, (150, 110)), (0.8, (140, 92), "inout"), (2.2, (168, 196), "inout"),
                        (2.9, (182, 238), "out"), (3.4, (178, 228), "inout"), (4.0, (180, 232), "inout")])
@@ -103,6 +106,46 @@ def nainai_pose(t, hand_body, hand_head, body_pt, head_pt, state):
     return pose
 
 
+def xiaoman_pose(t):
+    """小满：坐板凳，背对镜头。先抱着胳膊缩着、低着头；影子变清楚时坐直、伸脖子往上看，胳膊松开。
+    背影里能读出来的是头和肩膀的高度变化，所以动作主要放在坐直上。"""
+    P = C.XIAOMAN
+    st_x = L.MARKS["xiaoman_audience"]
+    root = np.array([st_x.x, st_x.y, 0.30 + 0.075])
+    lean_in = float(anim.Track([(0.0, 0.0), (1.3, 0.0), (2.5, 1.08, "out"), (3.0, 0.95, "inout"), (4.0, 1.0, "inout")])(t))
+    unfold = float(anim.Track([(0.0, 0.0), (1.7, 0.0), (2.8, 1.0, "inout"), (4.0, 1.0)])(t))
+    breath = 0.5 + 0.5 * math.sin(t * 2 * math.pi / 3.0)
+    pose = C.CharPose(root=tuple(root), yaw=0.0, lean=(-4.0 + 9.0 * lean_in, 0.0), spine2=(12 - 15 * lean_in, 0, 3),
+                      neck=(10 - 16 * lean_in, 0, 0), head=(8 - 18 * lean_in, 4 * lean_in, 2), breath=breath,
+                      cowlick=(0.004 * math.sin(t * 3.1), 0.0))
+    fr = C.body_frames(P, pose)
+    R2 = fr["R2"]
+    chest = fr["s2"] + R2 @ np.array([0, 0.11, -0.02])
+    # 抱胳膊：两只手腕都压在胸前；松开：右手落到右膝上，左手落到左腿上
+    wR0 = chest + R2 @ np.array([-0.07, 0.03, -0.05])
+    wL0 = chest + R2 @ np.array([0.07, 0.04, -0.03])
+    wR1 = root + np.array([0.11, 0.24, 0.07])
+    wL1 = root + np.array([-0.10, 0.20, 0.03])
+    pose.wrist = {"R": wR0 + (wR1 - wR0) * unfold, "L": wL0 + (wL1 - wL0) * unfold}
+    pose.elbow_pole = {"R": chest + R2 @ np.array([0.40, 0.0, -0.4]), "L": chest + R2 @ np.array([-0.40, 0.0, -0.4])}
+    pose.ankle = {"R": (root[0] + 0.10, root[1] + 0.30, 0.075), "L": (root[0] - 0.09, root[1] + 0.26, 0.075)}
+    pose.knee_pole = {"R": (root[0] + 0.15, root[1] + 1.0, 0.5), "L": (root[0] - 0.15, root[1] + 1.0, 0.5)}
+    blink = 1.0 if 0.9 < t < 1.0 else 0.0
+    pose.expr = dict(eye_open=0.85 + 0.35 * lean_in, mouth_open=0.4 * lean_in, brow=-0.3 + 0.9 * lean_in,
+                     look=(0.0, 0.5), blink=blink)
+    return pose
+
+
+def camera(t):
+    """B 机位，4 秒里沿视线推近 0.15 米。"""
+    cs = L.CAMERAS[1]
+    pos0 = np.array(cs.pos, float)
+    tgt = np.array(cs.target, float)
+    d = (tgt - pos0) / np.linalg.norm(tgt - pos0)
+    push = float(anim.Track([(0.0, 0.0), (4.0, 0.15, "inout")])(t))
+    return Camera(tuple(pos0 + d * push), tuple(tgt), cs.hfov_deg)
+
+
 def setup(assets, t, state):
     st = room.RoomState(sheet_hung=True, tv_on=False, textures=assets.room_tex)
     pl = room.build(st)
@@ -119,17 +162,20 @@ def setup(assets, t, state):
     PP.add_puppet(pl, PP.CRANE_RIG, assets.cp, assets.ids("c"), cpose, L.WIRE_Y, M("wood_raw"), "crane",
                   rods=[("body", (8, 6), hand_body), ("head", (16, 2), hand_head)], rod_mat=M("wood_raw"))
     scene = rt.Scene(pl, assets.A, assets.R)
+    xpose = xiaoman_pose(t)
+    c1, g1, info1 = C.build(C.XIAOMAN, xpose, "xiaoman")
     npose = nainai_pose(t, hand_body, hand_head, body_pt, head_pt, state)
     c2, g2, info2 = C.build(C.NAINAI, npose, "nainai")
-    chars, groups, faces = merge_chars([(c2, g2)], [("nainai", info2, npose.expr, None)])
-    lights = LS.lamp_lights((lp.x, lp.y, lp.z), t) + [LS.moon_light(0.5)]
+    chars, groups, faces = merge_chars([(c1, g1), (c2, g2)],
+                                       [("xiaoman", info1, xpose.expr, 0), ("nainai", info2, npose.expr, None)])
+    lights = LS.lamp_lights((lp.x, lp.y, lp.z), t) + [LS.moon_light(0.6)]
     names = ["lamp_core", "lamp_globe", "moon"]
     glow = sheetglow.glow_lights(scene, lights, chars, groups)
     lights = lights + glow
     names += [f"sheet{k}" for k in range(len(glow))]
-    cam = Camera((0.08, 4.30, 1.24), (1.50, 4.55, 1.40), 68)
-    ctx = dict(exposure=2.6, chars=chars, faces=faces, t=t, cam=cam,
-               sources=[dict(kind="lamp", pos=(lp.x, lp.y, lp.z), intensity=0.7)])
+    cam = camera(t)
+    ctx = dict(exposure=2.4, chars=chars, faces=faces, t=t, cam=cam,
+               sources=[dict(kind="lamp", pos=(lp.x, lp.y, lp.z), intensity=0.6)])
     return scene, cam, lights, names, chars, groups, ctx
 
 

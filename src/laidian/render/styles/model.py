@@ -29,6 +29,7 @@ def compose(buf, scene, ctx, bg=BG, two_tone=True):
     cd = CD.layers(buf, chars, faces)
     out = out * (1 - 0.3 * fl["blush"][..., None]) + np.array([0.85, 0.40, 0.38]) * 0.3 * fl["blush"][..., None]
     out = out * (1 - fl["mouth"][..., None]) + np.array([0.45, 0.10, 0.08]) * fl["mouth"][..., None]
+    out = out * (1 - fl["brow_halo"][..., None]) + np.array([0.90, 0.72, 0.60]) * fl["brow_halo"][..., None]
     for key, a in (("line", 0.6), ("ink", 1.0), ("glass", 0.9)):
         out = out * (1 - a * fl[key][..., None]) + INK * a * fl[key][..., None]
     out = out * (1 - fl["white"][..., None]) + np.array([1, 1, 1.0]) * fl["white"][..., None]

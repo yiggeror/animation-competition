@@ -131,10 +131,12 @@ def flop(P, x, y, yaw=0.0, expr=None):
     R = rz(yaw)
     fr = C.body_frames(P, pose)
     root = np.asarray(pose.root, float)
-    pose.wrist = {"R": fr["hc"] + R @ np.array([0.04, 0.02, 0.10]), "L": fr["s2"] + R @ np.array([-0.30, 0.10, 0.08])}
-    pose.elbow_pole = {"R": fr["s2"] + R @ np.array([0.6, 0.2, 0.1]), "L": fr["s2"] + R @ np.array([-0.6, -0.3, 0.1])}
-    pose.ankle = {"R": root + R @ np.array([0.16, -0.50, 0.04]), "L": root + R @ np.array([-0.12, -0.52, 0.04])}
-    pose.knee_pole = {"R": root + R @ np.array([0.3, -0.2, 0.8]), "L": root + R @ np.array([-0.3, -0.2, 0.8])}
+    # 仰面躺着：头朝人物局部的 -y，脚朝 +y；右手搭在额头上，左手摊开，右膝支起
+    pose.wrist = {"R": fr["hc"] + R @ np.array([0.03, 0.04, 0.11]), "L": fr["s2"] + R @ np.array([-0.38, -0.02, 0.03])}
+    pose.elbow_pole = {"R": fr["s2"] + R @ np.array([0.7, -0.1, 0.2]), "L": fr["s2"] + R @ np.array([-0.5, 0.4, 0.3])}
+    pose.ankle = {"R": root + R @ np.array([0.13, 0.36, -0.03]), "L": root + R @ np.array([-0.13, 0.55, -0.03])}
+    pose.knee_pole = {"R": root + R @ np.array([0.2, 0.2, 1.0]), "L": root + R @ np.array([-0.2, 0.3, 1.0])}
+    pose.foot_dir = {"R": R @ np.array([0.2, 1, 0]), "L": R @ np.array([-0.3, 1, 0])}
     return pose
 
 

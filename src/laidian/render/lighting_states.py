@@ -75,6 +75,14 @@ def moon_light(strength=1.0):
     return make_light(DIR, MOON, 0.10 * strength, vec=d, radius=0.006, samples=4)
 
 
+def window_sky(strength=1.0):
+    """月夜的天光：从南窗透进来的一层淡蓝散射光（让暗场里的轮廓隐约可见，而不是一片死黑）。"""
+    x0, x1, z0, z1 = L.OPENINGS["window_s"][1:5]
+    # 面朝 +y（屋里）：u × v 要指向 +y
+    return make_light(RECT, MOON * np.array([0.9, 0.95, 1.0]), 0.05 * strength, pos=(x1, 0.03, z0),
+                      vec=(x0 - x1, 0, 0), vec2=(0, 0, z1 - z0), samples=6)
+
+
 def flashlight(pos, target, strength=1.0):
     d = np.asarray(target, float) - np.asarray(pos, float)
     d /= np.linalg.norm(d)

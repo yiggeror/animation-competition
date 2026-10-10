@@ -73,6 +73,7 @@ def compose(buf, scene, ctx):
     litc = (0.35 + 0.65 * lit)[..., None]
     out = out * (1 - 0.3 * fl["blush"][..., None]) + np.array([0.78, 0.36, 0.30]) * 0.3 * fl["blush"][..., None] * litc
     out = out * (1 - fl["mouth"][..., None]) + np.array([0.50, 0.12, 0.09]) * fl["mouth"][..., None] * litc
+    out = out * (1 - fl["brow_halo"][..., None]) + np.array([0.82, 0.62, 0.50]) * litc * fl["brow_halo"][..., None]
     for key, a in (("line", 0.55), ("ink", 1.0), ("glass", 0.9)):
         out = out * (1 - a * fl[key][..., None]) + INK * a * fl[key][..., None]
     out = out * (1 - fl["white"][..., None]) + silk * 1.2 * fl["white"][..., None] * litc

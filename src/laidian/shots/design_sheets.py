@@ -175,11 +175,42 @@ def poses(out):
              ("奶奶 · 踮脚够马灯", C.NAINAI, "nainai", PO.reaching_up(C.NAINAI, 0, 0, 0, 1.95, dict(eye_open=0.9, mouth_smile=0.1, look=(0, 0.8))), (1.6, 2.0, 1.1), (0, 0.1, 1.0))]
     for nm, P, outfit, pose, campos, look in items:
         c, g, info = C.build(P, pose, outfit)
+        lst = [(c, g)]
+        fc = [(outfit, info, pose.expr, None)]
+        prop = props_for(nm, pose)
+        if prop is not None:
+            lst.append(prop)
+            fc.append(("prop", info, {}, -99))
         cam = Camera(campos, look, 50)
-        img = render_chars(sc, [(c, g)], [(outfit, info, pose.expr, None)], cam, 520, 520)
+        img = render_chars(sc, lst, fc, cam, 520, 520)
         panels.append(label(img, nm, 22))
     S = sheet(panels, 3, "典型姿势", "小满快、急、动作大、坐不住；奶奶慢、稳、准。所有姿势都由 IK 摆放，肘、膝只朝正确方向弯。")
     S.save(out / "char_poses.png")
+
+
+def props_for(nm, pose):
+    """设计稿里给姿势配上道具（板凳、竹席），用 SDF 圆角盒画，和人物一起渲染。"""
+    from ..render.rig import rz
+    B = C.Builder()
+    R = rz(pose.yaw)
+    root = np.asarray(pose.root, float)
+    if "板凳" in nm:
+        h = 0.30 if "小满" in nm else 0.22
+        B.begin()
+        c = np.array([root[0], root[1], h - 0.015])
+        B.rbox(c, (0.15, 0.11, 0.015), R, 0.004, "wood_raw", k=0.0, layer=1)
+        for sx in (-1, 1):
+            for sy in (-1, 1):
+                lc = np.array([root[0], root[1], (h - 0.03) / 2]) + R @ np.array([sx * 0.12, sy * 0.08, 0])
+                B.rbox(lc, (0.015, 0.015, (h - 0.03) / 2), R, 0.003, "wood_raw", k=0.0, layer=1)
+        B.end(0.02)
+    elif "趴着" in nm or "瘫倒" in nm:
+        B.begin()
+        B.rbox(np.array([root[0], root[1], 0.003]), (0.75, 0.9, 0.003), R, 0.001, "bamboo", k=0.0, layer=1)
+        B.end(0.02)
+    else:
+        return None
+    return B.arrays()
 
 
 def hands(out):
@@ -257,9 +288,9 @@ def puppets(out):
         x = np.clip(x, 0, 1)
         return Image.fromarray((np.where(x <= 0.0031308, 12.92 * x, 1.055 * x ** (1 / 2.4) - 0.055) * 255).astype(np.uint8))
     cpose = crane_pose_debut()
-    a = assemble(PP.CRANE_RIG, cp, cpose, 900, 900, (430, 560), 2.2) * lamp
+    a = assemble(PP.CRANE_RIG, cp, cpose, 900, 900, (470, 545), 1.45) * lamp
     panels.append(label(to_img(a), "鹤 · 床单上的样子（透光）", 22))
-    ra, ca = assemble(PP.CRANE_RIG, cp, cpose, 900, 900, (430, 560), 2.2, "refl")
+    ra, ca = assemble(PP.CRANE_RIG, cp, cpose, 900, 900, (470, 545), 1.45, "refl")
     bg = np.array([0.05, 0.04, 0.035])
     panels.append(label(to_img((ra * ca[..., None] + bg * (1 - ca[..., None])) * 2.3), "鹤 · 从后台看到的皮面", 22, color=(230, 220, 200)))
     # 拆开的部件
@@ -268,12 +299,12 @@ def puppets(out):
     ex = assemble(PP.CRANE_RIG, cp, exp_pose, 900, 900, (450, 520), 1.6) * lamp
     panels.append(label(to_img(ex), "鹤 · 部件与铆点（颈 12 节）", 22))
     tpose = turtle_pose(facing=1)
-    b = assemble(PP.TURTLE_RIG, tp, tpose, 900, 900, (450, 520), 3.4) * lamp
+    b = assemble(PP.TURTLE_RIG, tp, tpose, 900, 900, (375, 560), 2.7) * lamp
     panels.append(label(to_img(b), "乌龟 · 床单上的样子（透光）", 22))
-    rb, cb = assemble(PP.TURTLE_RIG, tp, tpose, 900, 900, (450, 520), 3.4, "refl")
+    rb, cb = assemble(PP.TURTLE_RIG, tp, tpose, 900, 900, (375, 560), 2.7, "refl")
     panels.append(label(to_img((rb * cb[..., None] + bg * (1 - cb[..., None])) * 2.3), "乌龟 · 从后台看到的皮面", 22, color=(230, 220, 200)))
     t2 = turtle_pose(facing=1, head_out=0.0)
-    c2 = assemble(PP.TURTLE_RIG, tp, t2, 900, 900, (450, 520), 3.4) * lamp
+    c2 = assemble(PP.TURTLE_RIG, tp, t2, 900, 900, (375, 560), 2.7) * lamp
     panels.append(label(to_img(c2), "乌龟 · 缩头（头颈片滑进壳下）", 22))
     S = sheet(panels, 3, "皮影设计：鹤与乌龟（湖南皮影风格，造型原创）",
               "刮薄的牛皮，阳刻为主；鹤身刻成鳞羽网格（透光才是白鹤），黑蓑羽刻亮线；乌龟背甲按脊盾、肋盾、缘盾刻生长纹。签子平端，鹤两根（身、头），龟一根（壳）+ 头签。")
@@ -290,17 +321,17 @@ def room_states(out):
     fp = L.FLASHLIGHT_PROP
     states = [
         ("1 日光灯（开场）", room.RoomState(clothes_on_wire=True), [LS.tube_light(), LS.tv_light(0.3), LS.moon_light(0.4)], None, 0.9),
-        ("2 停电：只剩月光", room.RoomState(clothes_on_wire=True, tv_on=False), [LS.moon_light(1.6)], None, 9.0),
+        ("2 停电：只剩月光", room.RoomState(clothes_on_wire=True, tv_on=False), [LS.moon_light(1.6), LS.window_sky(1.6)], None, 30.0),
         ("3 马灯点亮（立柜旁）", room.RoomState(clothes_on_wire=True, tv_on=False),
-         LS.lamp_lights((lp_c.x - 0.25, lp_c.y - 0.1, 1.35), 0.4) + [LS.moon_light(1.0)], (lp_c.x - 0.25, lp_c.y - 0.1, 1.35), 2.8),
+         LS.lamp_lights((lp_c.x - 0.25, lp_c.y - 0.1, 1.35), 0.4) + [LS.moon_light(1.0), LS.window_sky(1.0)], (lp_c.x - 0.25, lp_c.y - 0.1, 1.35), 7.0),
         ("4 搭台后：马灯在床单后", room.RoomState(sheet_hung=True, tv_on=False),
-         LS.lamp_lights((lp_s.x, lp_s.y, lp_s.z), 0.4) + [LS.moon_light(1.0)], (lp_s.x, lp_s.y, lp_s.z), 2.8),
+         LS.lamp_lights((lp_s.x, lp_s.y, lp_s.z), 0.4) + [LS.moon_light(1.0), LS.window_sky(1.0)], (lp_s.x, lp_s.y, lp_s.z), 4.0),
         ("5 来电：日光灯 + 马灯 + 手电", room.RoomState(sheet_hung=True, tv_on=True),
          [LS.tube_light()] + LS.lamp_lights((lp_s.x, lp_s.y, lp_s.z), 0.4) + [LS.flashlight((fp.x, fp.y, fp.z), (1.35, 4.0, 1.3)), LS.tv_light(0.3), LS.moon_light(0.4)],
          (lp_s.x, lp_s.y, lp_s.z), 0.9),
         ("6 关灯后：马灯重新显出来", room.RoomState(sheet_hung=True, tv_on=False, fan_angle=0.5),
-         LS.lamp_lights((lp_s.x, lp_s.y, lp_s.z), 0.4) + [LS.flashlight((fp.x, fp.y, fp.z), (1.35, 4.0, 1.3)), LS.moon_light(1.0)],
-         (lp_s.x, lp_s.y, lp_s.z), 2.8),
+         LS.lamp_lights((lp_s.x, lp_s.y, lp_s.z), 0.4) + [LS.flashlight((fp.x, fp.y, fp.z), (1.35, 4.0, 1.3)), LS.moon_light(1.0), LS.window_sky(1.0)],
+         (lp_s.x, lp_s.y, lp_s.z), 4.0),
     ]
     rows = {s: [] for s in ("lantern", "woodcut", "silk")}
     assets = PuppetAssets()

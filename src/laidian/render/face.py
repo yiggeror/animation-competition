@@ -46,7 +46,7 @@ def _cov(d, aa):
     return np.clip(0.5 - d / aa, 0, 1)
 
 
-def decals(P, mask, head_c, head_R, who, expr, aa):
+def decals(P, mask, head_c, head_R, who, expr, aa, brows_only=False):
     """返回 dict(ink, white, mouth, blush, glass)：每个是 (n,) 覆盖率，只对 mask 内的像素。"""
     p = P[mask] - head_c
     q = p @ head_R           # 头部局部坐标
@@ -67,7 +67,9 @@ def decals(P, mask, head_c, head_R, who, expr, aa):
     for sg in (1, -1):
         cx = sg * ex
         cy = ey
-        if xm:
+        if brows_only:
+            pass
+        elif xm:
             # 孩子的眼睛：大而黑的眼珠 + 高光 + 上眼睑粗线
             rx, ry = 0.0122, 0.0158 * max(open_, 0.0)
             if open_ > 0.08 and smile < 0.6:
@@ -115,8 +117,14 @@ def decals(P, mask, head_c, head_R, who, expr, aa):
         w0 = 0.0028 if xm else 0.0016
         db = _poly(u, v, brow) - w0
         out["ink"] = np.maximum(out["ink"], _cov(db, aa) * (1.0 if xm else 0.75))
+        if brows_only:
+            continue
         # 腮红
         out["blush"] = np.maximum(out["blush"], np.clip(1 - ((u - sg * 0.042) ** 2 / 0.00022 + (v + 0.022) ** 2 / 0.00008), 0, 1))
+    if brows_only:
+        for k_ in out:
+            out[k_] = out[k_] * front
+        return out
     if not xm:
         # 眼镜鼻梁、法令纹、额头纹
         out["glass"] = np.maximum(out["glass"], _cov(_poly(u, v, _quad((-0.0135, 0.010), (0, 0.013), (0.0135, 0.010))) - 0.0007, aa))
@@ -127,13 +135,13 @@ def decals(P, mask, head_c, head_R, who, expr, aa):
             fh = _quad((-0.022, 0.052 + k * 0.009), (0, 0.055 + k * 0.009), (0.022, 0.052 + k * 0.009))
             out["line"] = np.maximum(out["line"], _cov(_poly(u, v, fh) - 0.0004, aa) * 0.4)
     # 嘴
-    mw = (0.015 if xm else 0.013) * e["mouth_w"] * (0.55 if e["puff"] > 0.3 else 1.0)
+    mw = (0.019 if xm else 0.014) * e["mouth_w"] * (0.55 if e["puff"] > 0.3 else 1.0)
     my = -0.046 if xm else -0.050
-    sm = e["mouth_smile"] * 0.005
+    sm = e["mouth_smile"] * (0.008 if xm else 0.006)
     op = e["mouth_open"]
     if op > 0.05:
         top = _quad((-mw, my + sm), (0, my + 0.002), (mw, my + sm))
-        bot_c = (0, my - 0.004 - 0.012 * op)
+        bot_c = (0, my - 0.004 - (0.020 if xm else 0.014) * op)
         bot = _quad((mw, my + sm), bot_c, (-mw, my + sm))
         pts = np.concatenate([top, bot])
         d = _poly(u, v, np.concatenate([pts, pts[:1]]))

@@ -202,17 +202,19 @@ def hand_prims(B: Builder, P: Proportions, wrist, F, hand: Hand, side, skin):
     B.ell(wrist + Y * (pl * 0.18) + Z * (pt * 0.15), (pw * 0.46, pl * 0.25, pt * 0.48), F, skin, k=0.012)
     # 拇指根（大鱼际）
     B.ell(wrist + Y * (pl * 0.32) + X * (sgn * pw * 0.28) + Z * (pt * 0.35), (pw * 0.22, pl * 0.30, pt * 0.42), F, skin, k=0.010)
+    B.end(0.01)
     tips = {}
-    offs = {"index": 0.36, "middle": 0.12, "ring": -0.12, "pinky": -0.36}
+    offs = {"index": 0.39, "middle": 0.13, "ring": -0.13, "pinky": -0.38}
     yoff = {"index": -0.02, "middle": 0.02, "ring": 0.0, "pinky": -0.10}
     for f in FINGERS:
+        B.begin()     # 每根手指自成一组：指缝之间才会画出线
         base = wrist + Y * (pl * (1.0 + yoff[f])) + X * (sgn * pw * offs[f])
         d = Y.copy()
         spread = hand.spread * (offs[f] / 0.36) * sgn
         d = axis_angle(Z, spread) @ d
         c0, c1, c2 = hand.curl.get(f, (10, 10, 10))
         lens = P.finger_len[f]
-        r0, r1 = P.finger_r
+        r0, r1 = P.finger_r[0] * 0.92, P.finger_r[1] * 0.92
         if f == "pinky":
             r0, r1 = r0 * 0.88, r1 * 0.9
         p = base
@@ -229,7 +231,9 @@ def hand_prims(B: Builder, P: Proportions, wrist, F, hand: Hand, side, skin):
                 B.cone(q, q, rads[k + 1] + P.knuckle, rads[k + 1] + P.knuckle, skin, k=0.004)
             p = q
         tips[f] = p
+        B.end(0.006)
     # 拇指：从掌根拇指侧伸出；对掌角度让它转向掌心
+    B.begin()
     opp, a0, a1, a2 = hand.thumb
     base = wrist + Y * (pl * 0.20) + X * (sgn * pw * 0.42) + Z * (pt * 0.25)
     if hand.thumb_along:

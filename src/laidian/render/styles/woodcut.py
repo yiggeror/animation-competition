@@ -88,6 +88,7 @@ def compose(buf, scene, ctx):
     fc = PAPER * Ec * (0.6 + 0.4 * tint) * (0.62 + 0.5 * Yt[..., None])
     out[face_clean] = fc[face_clean]
     out = out * (1 - fl["mouth"][..., None]) + np.array([0.30, 0.06, 0.04]) * fl["mouth"][..., None]
+    out = out * (1 - fl["brow_halo"][..., None]) + PAPER * 0.85 * fl["brow_halo"][..., None]
     for key, a in (("line", 0.7), ("ink", 1.0), ("glass", 1.0)):
         out = out * (1 - a * fl[key][..., None]) + INK * a * fl[key][..., None]
     out = out * (1 - fl["white"][..., None]) + PAPER * fl["white"][..., None]

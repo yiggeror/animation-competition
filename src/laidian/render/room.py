@@ -217,8 +217,10 @@ def build(state: RoomState) -> PrimList:
     tv = fur["tv"]
     pl.box(M("tv_body"), tv.x0 + 0.08, tv.x1 - 0.02, tv.y0 + 0.05, tv.y1 - 0.05, tv.z0, tv.z1 - 0.02, name="tv_back")
     pl.box(M("tv_body"), tv.x1 - 0.10, tv.x1, tv.y0, tv.y1, tv.z0, tv.z1, name="tv_front")
-    # 显像管屏幕：微微凸出的椭球面
-    pl.ell(M("tv_screen"), (tv.x1 - 0.06, (tv.y0 + tv.y1) / 2 - 0.05, (tv.z0 + tv.z1) / 2 + 0.02), (0.065, 0.21, 0.165), name="tv_screen")
+    # 显像管屏幕：前面板上一块圆角的屏（略凸出）
+    sy0, sy1 = tv.y0 + 0.07, tv.y1 - 0.15
+    sz0, sz1 = tv.z0 + 0.07, tv.z1 - 0.07
+    pl.obox(M("tv_screen"), (tv.x1 + 0.004, (sy0 + sy1) / 2, (sz0 + sz1) / 2), (0.006, (sy1 - sy0) / 2, (sz1 - sz0) / 2), ang=0.0, name="tv_screen")
     pl.cyl(M("tv_body"), (tv.x1, tv.y1 - 0.07, tv.z0 + 0.30), (tv.x1 + 0.015, tv.y1 - 0.07, tv.z0 + 0.30), 0.012, name="tv_knob")
     pl.cyl(M("tv_body"), (tv.x1, tv.y1 - 0.07, tv.z0 + 0.20), (tv.x1 + 0.015, tv.y1 - 0.07, tv.z0 + 0.20), 0.012, name="tv_knob")
     # 天线（兔耳朵）
@@ -323,9 +325,11 @@ def build(state: RoomState) -> PrimList:
         elif wall == "S":
             o, u, v = (a1, off, z0), (a0 - a1, 0, 0), (0, 0, z1 - z0)
         elif wall == "W":
-            o, u, v = (off, a1, z0), (0, a0 - a1, 0), (0, 0, z1 - z0)
+            # 站在屋里面朝西墙：右手边是北（+y），贴图从南往北排
+            o, u, v = (off, a0, z0), (0, a1 - a0, 0), (0, 0, z1 - z0)
         else:
-            o, u, v = (W - off, a0, z0), (0, a1 - a0, 0), (0, 0, z1 - z0)
+            # 面朝东墙：右手边是南（-y）
+            o, u, v = (W - off, a1, z0), (0, a0 - a1, 0), (0, 0, z1 - z0)
         return pl._add(4, mat, [*o, *u, *v], F_SHADOW, tid, name)
 
     for (wall, a0, a1, z0, z1, label) in L.WALL_ITEMS:

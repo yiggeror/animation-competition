@@ -194,7 +194,7 @@ def direct(P, N, ID, MAT, diffuser, prims, nodes, order, atlas, rects, lights, c
                             continue
                         tr, tg, tb = rt.transmittance(prims, nodes, order, ox, oy, oz, dx, dy, dz, 1e6, atlas, rects, skip)
                         if tr + tg + tb > 0 and chars.shape[0] > 0:
-                            v = S.shadow(chars, groups, ox, oy, oz, dx, dy, dz, 30.0, 0.02)
+                            v = S.shadow(chars, groups, ox, oy, oz, dx, dy, dz, 30.0, 0.008)
                             tr *= v
                             tg *= v
                             tb *= v
@@ -237,7 +237,7 @@ def direct(P, N, ID, MAT, diffuser, prims, nodes, order, atlas, rects, lights, c
                         continue
                     tr, tg, tb = rt.transmittance(prims, nodes, order, ox, oy, oz, dx, dy, dz, dl - 0.01, atlas, rects, skip)
                     if tr + tg + tb > 0 and chars.shape[0] > 0:
-                        v = S.shadow(chars, groups, ox, oy, oz, dx, dy, dz, dl - 0.01, 0.02)
+                        v = S.shadow(chars, groups, ox, oy, oz, dx, dy, dz, dl - 0.01, 0.008)
                         tr *= v
                         tg *= v
                         tb *= v

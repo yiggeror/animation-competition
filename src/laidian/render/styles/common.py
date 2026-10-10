@@ -61,6 +61,7 @@ def edges(buf, scene, chars=None, depth_rel=0.04, crease=0.55, mr_w=None):
         layer = np.full((H, W), -1)
         m = buf.CP >= 0
         layer[m] = chars[buf.CP[m], 23]
+        layer = np.where(layer == 5, 2, layer)      # 刘海和发盖算同一片头发，中间不画线
         obj = np.where(buf.CP >= 0, 100000 + g * 10 + layer, obj)
     # 静态物体：同一个"名字"的拼接件（墙体分块等）算一个物体
     if hasattr(scene, "names"):
@@ -101,20 +102,36 @@ def edges(buf, scene, chars=None, depth_rel=0.04, crease=0.55, mr_w=None):
 def face_layers(buf, cams_info, chars, ss=1):
     """对每个人物的头部像素画五官。cams_info: [(who, info, expr), ...]，按人物在 chars 里的顺序。"""
     H, W = buf.MAT.shape
-    layers = {k: np.zeros((H, W)) for k in ("ink", "white", "mouth", "blush", "glass", "line")}
+    layers = {k: np.zeros((H, W)) for k in ("ink", "white", "mouth", "blush", "glass", "line", "brow_on_hair", "brow_halo")}
     if chars is None or chars.shape[0] == 0:
         return layers
     for who, info, expr, g_head in cams_info:
         m = (buf.CP >= 0)
-        m = m & (chars[np.maximum(buf.CP, 0), 2] == g_head) & (chars[np.maximum(buf.CP, 0), 23] == 0)
+        lay = chars[np.maximum(buf.CP, 0), 23]
+        m_head = m & (chars[np.maximum(buf.CP, 0), 2] == g_head)
+        m = m_head & (lay == 0)
+        # 眉毛画在刘海上面（二维动画的常用做法：头发挡不住眉毛）
+        m_hair = m_head & np.isin(lay, [2, 5])
+        if m_hair.any():
+            depth_h = np.median(buf.T[m_hair])
+            aa_h = depth_h * 2 * math.tan(math.radians(25)) / W * 1.2
+            dh = FACE.decals(buf.P, m_hair, info["head_c"], info["head_R"], who, expr, aa_h, brows_only=True)
+            layers["brow_on_hair"] = layers.get("brow_on_hair", np.zeros((H, W)))
+            layers["brow_on_hair"][m_hair] = np.maximum(layers["brow_on_hair"][m_hair], dh["ink"])
         if not m.any():
             continue
         # 一个像素在头部大约多少米（抗锯齿宽度）
         depth = np.median(buf.T[m])
         aa = depth * 2 * math.tan(math.radians(25)) / W * 1.2
         d = FACE.decals(buf.P, m, info["head_c"], info["head_R"], who, expr, aa)
-        for k in layers:
+        for k in d:
             layers[k][m] = np.maximum(layers[k][m], d[k])
+    # 头发上的眉毛：外面描一圈肤色（brow_halo），里面是墨色（并进 ink）——黑发上也看得见
+    from scipy import ndimage as _nd
+    bh = layers["brow_on_hair"]
+    k = max(3, int(round(W / 640)) * 2 + 1)
+    layers["brow_halo"] = np.clip(_nd.maximum_filter(bh, size=k) - bh, 0, 1)
+    layers["ink"] = np.maximum(layers["ink"], bh)
     return layers
 
 

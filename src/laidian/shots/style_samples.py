@@ -65,7 +65,7 @@ def turtle_pose(root=(1.78, 1.00), facing=-1, dist=0.004, head_out=1.0):
     return PP.Pose(root_xz=root, facing=facing, dist=dist,
                    angles={"leg_front_near": 0.25, "leg_back_near": -0.2, "leg_front_far": -0.15, "leg_back_far": 0.12,
                            "headneck": 0.12},
-                   slide={"headneck": -38.0 * (1 - head_out)})
+                   slide={"headneck": -88.0 * (1 - head_out)})
 
 
 def rod_point(pose, rig, part, local):
