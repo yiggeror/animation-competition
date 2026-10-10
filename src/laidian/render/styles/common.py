@@ -153,3 +153,31 @@ def flame_shape(img_shape, center, h, w, t=0.0):
 
 def world_noise(P, scale, seed=0, octaves=3):
     return fbm(P * scale, octaves, seed)
+
+
+def screens(buf, ctx):
+    """电视、手机屏幕的自发光（电视雪花 / 节目、手机充电图标、锁屏）。返回 (H,W,3) 线性亮度。"""
+    from ..materials import M as _M
+    H, W = buf.MAT.shape
+    out = np.zeros((H, W, 3))
+    tv = ctx.get("tv", "off")
+    m = buf.MAT == _M("tv_screen")
+    names = ctx.get("scene_names")
+    if names is not None and m.any():
+        ids = np.where(buf.ID >= 0, buf.ID, 0)
+        isphone = np.array([n == "phone" for n in names])[ids] & m
+        istv = m & ~isphone
+        t = ctx.get("t", 0.0)
+        if tv == "static" and istv.any():
+            rng = np.random.default_rng(int(t * 25))
+            n = rng.random(istv.sum())
+            out[istv] = (0.25 + 0.75 * n[:, None]) * np.array([0.85, 0.9, 1.0]) * 1.4
+        elif tv == "on" and istv.any():
+            p = buf.P[istv]
+            c = 0.5 + 0.5 * np.sin(p[:, 1] * 30 + t * 2.0)[:, None] * np.array([0.6, 0.3, 0.9]) + 0.3
+            out[istv] = np.clip(c, 0, 1) * 1.1
+        ph = ctx.get("phone", "off")
+        if ph != "off" and isphone.any():
+            p = buf.P[isphone]
+            out[isphone] = np.array([0.55, 0.75, 1.0]) * (1.2 if ph == "lock" else 0.9)
+    return out

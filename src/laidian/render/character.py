@@ -47,10 +47,10 @@ class Proportions:
 
 
 XIAOMAN = Proportions(
-    name="xiaoman", hip_h=0.58, spine1=0.095, spine2=0.115, neck=0.12, head_pivot=0.062,
+    name="xiaoman", hip_h=0.648, spine1=0.10, spine2=0.12, neck=0.12, head_pivot=0.062,
     head_r=(0.096, 0.101, 0.106), face_r=(0.080, 0.077, 0.075),
     shoulder_w=0.128, shoulder_up=0.095, upper_arm=0.21, forearm=0.18, arm_r=(0.034, 0.028, 0.022),
-    hip_w=0.068, thigh=0.28, shin=0.27, leg_r=(0.056, 0.040, 0.030), foot_len=0.175,
+    hip_w=0.068, thigh=0.285, shin=0.272, leg_r=(0.056, 0.040, 0.030), foot_len=0.175,
     palm=(0.066, 0.060, 0.024),
     finger_len={"index": (0.029, 0.018, 0.015), "middle": (0.032, 0.020, 0.016), "ring": (0.030, 0.019, 0.015),
                 "pinky": (0.023, 0.014, 0.013)},
@@ -58,10 +58,10 @@ XIAOMAN = Proportions(
     skin="skin_xm", torso_r=(0.125, 0.085, 0.125))
 
 NAINAI = Proportions(
-    name="nainai", hip_h=0.74, spine1=0.11, spine2=0.14, neck=0.13, head_pivot=0.065,
+    name="nainai", hip_h=0.826, spine1=0.11, spine2=0.14, neck=0.13, head_pivot=0.065,
     head_r=(0.088, 0.098, 0.104), face_r=(0.073, 0.073, 0.077),
     shoulder_w=0.145, shoulder_up=0.10, upper_arm=0.26, forearm=0.225, arm_r=(0.036, 0.027, 0.021),
-    hip_w=0.085, thigh=0.36, shin=0.345, leg_r=(0.068, 0.044, 0.032), foot_len=0.215,
+    hip_w=0.085, thigh=0.38, shin=0.362, leg_r=(0.068, 0.044, 0.032), foot_len=0.215,
     palm=(0.076, 0.066, 0.022),
     finger_len={"index": (0.037, 0.023, 0.019), "middle": (0.041, 0.026, 0.020), "ring": (0.038, 0.024, 0.019),
                 "pinky": (0.030, 0.018, 0.016)},
@@ -76,6 +76,7 @@ class Hand:
     curl: dict = field(default_factory=lambda: {f: (15.0, 20.0, 10.0) for f in FINGERS})
     spread: float = 4.0
     thumb: tuple = (20.0, 10.0, 10.0, 10.0)   # (对掌, 掌指, 近节, 远节)
+    thumb_along: bool = False                  # 拇指顺着签子贴上去（握细棍、拿筷子的握法）
 
 
 @dataclass
@@ -97,6 +98,7 @@ class CharPose:
     expr: dict = field(default_factory=dict)
     hair_offset: tuple = (0.0, 0.0, 0.0)          # 头发的惯性偏移（弹簧算出）
     cowlick: tuple = (0.0, 0.0)                   # 呆毛的摆动
+    ponytail: tuple = (0.0, 0.0, 0.0)             # 马尾的惯性偏移（弹簧算出，头部局部坐标）
     breath: float = 0.0                           # 呼吸 0..1
 
 
@@ -230,7 +232,11 @@ def hand_prims(B: Builder, P: Proportions, wrist, F, hand: Hand, side, skin):
     # 拇指：从掌根拇指侧伸出；对掌角度让它转向掌心
     opp, a0, a1, a2 = hand.thumb
     base = wrist + Y * (pl * 0.20) + X * (sgn * pw * 0.42) + Z * (pt * 0.25)
-    d = (Y * 0.75 + X * sgn * 0.55 + Z * 0.35)
+    if hand.thumb_along:
+        # 拇指沿着手的 x 轴（握棍时 = 棍子方向），稍微压向掌心一侧
+        d = X * sgn * 0.80 + Y * 0.45 + Z * 0.40
+    else:
+        d = (Y * 0.75 + X * sgn * 0.55 + Z * 0.35)
     d /= np.linalg.norm(d)
     d = axis_angle(Y, -sgn * opp) @ d
     p = base
@@ -286,7 +292,8 @@ def build(P: Proportions, pose: CharPose, outfit: str):
     fr = body_frames(P, pose)
     R0, R1, R2, Rn, Rh = fr["R0"], fr["R1"], fr["R2"], fr["Rn"], fr["Rh"]
     skin = P.skin
-    info = {"head_c": fr["hc"], "head_R": Rh, "frames": fr}
+    info = {"head_c": fr["hc"], "head_R": Rh, "frames": fr, "who": P.name,
+            "chest_c": fr["s2"], "chest_R": R2, "neck_c": fr["neck"]}
     dl = default_limbs(P, pose, fr)
 
     # ---------------- 头
@@ -302,8 +309,10 @@ def build(P: Proportions, pose: CharPose, outfit: str):
         B.ell(hc + Rh @ np.array([sg * 0.046, 0.058, -0.040]), (0.026 + 0.016 * puff, 0.022 + 0.012 * puff, 0.024 + 0.008 * puff),
               Rh, skin, k=0.02)
     B.ell(hc + Rh @ np.array([0, 0.052, -0.083]), (0.028, 0.026, 0.022), Rh, skin, k=0.03)          # 下巴
-    nose_s = 1.0 if P.name == "xiaoman" else 1.15
-    B.ell(hc + Rh @ np.array([0, 0.090, -0.016]), (0.0115 * nose_s, 0.013 * nose_s, 0.016 * nose_s), Rh, skin, k=0.012)  # 鼻子
+    if P.name == "xiaoman":
+        B.ell(hc + Rh @ np.array([0, 0.084, -0.018]), (0.010, 0.010, 0.012), Rh, skin, k=0.014)   # 小鼻头
+    else:
+        B.ell(hc + Rh @ np.array([0, 0.086, -0.016]), (0.0135, 0.014, 0.018), Rh, skin, k=0.014)  # 奶奶：圆一点的鼻子
     for sg in (1, -1):
         B.ell(hc + Rh @ np.array([sg * 0.086, -0.006, -0.008]), (0.011, 0.020, 0.029), Rh @ rz(sg * 12), skin, k=0.01)  # 耳朵
     # 脖子
@@ -318,9 +327,9 @@ def build(P: Proportions, pose: CharPose, outfit: str):
     br = fr["breath"]
     # 斜方肌：从脖子根斜下到肩头，让肩膀有坡度（不是平的托盘）
     for sg in (1, -1):
-        shp = fr["s2"] + R2 @ np.array([sg * P.shoulder_w * 0.92, 0.0, P.shoulder_up - 0.012])
+        shp = fr["s2"] + R2 @ np.array([sg * P.shoulder_w, 0.0, P.shoulder_up + (pose.shrug[0] if sg > 0 else pose.shrug[1])])
         nb = fr["neck"] + R2 @ np.array([sg * 0.022, -0.004, -0.028])
-        B.cone(nb, shp, 0.040, 0.044, "tshirt_xm" if outfit == "xiaoman" else "blouse_nn", k=0.04, layer=1)
+        B.cone(nb, shp, 0.040, P.arm_r[0] + 0.013, "tshirt_xm" if outfit == "xiaoman" else "blouse_nn", k=0.04, layer=1)
     if outfit == "xiaoman":
         top = "tshirt_xm"
         B.ell(fr["s2"] + R2 @ np.array([0, 0.004, -0.004]), (tr[0] * 0.96 * br, tr[1] * br, tr[2] * 0.92), R2, top, k=0.05, layer=1)
@@ -356,9 +365,9 @@ def build(P: Proportions, pose: CharPose, outfit: str):
         # 袖子
         dirv = (el - sh) / (np.linalg.norm(el - sh) + 1e-9)
         if outfit == "xiaoman":
-            B.capcone(sh + dirv * 0.005, sh + dirv * 0.105, ra + 0.012, ra + 0.017, top, rnd=0.005, k=0.035)
+            B.capcone(sh - dirv * 0.012, sh + dirv * 0.105, ra + 0.013, ra + 0.017, top, rnd=0.005, k=0.035)
         else:
-            B.capcone(sh + dirv * 0.005, sh + dirv * 0.13, ra + 0.010, ra + 0.015, top, rnd=0.005, k=0.035)
+            B.capcone(sh - dirv * 0.012, sh + dirv * 0.13, ra + 0.012, ra + 0.015, top, rnd=0.005, k=0.035)
             if side == "L":
                 # 玉镯：腕上一圈
                 wdir = (wr - el) / (np.linalg.norm(wr - el) + 1e-9)
@@ -442,27 +451,48 @@ def _relaxed_hand(fdir, palm, side):
 
 def hair_prims(B, P, pose, hc, Rh):
     off = np.asarray(pose.hair_offset, float)
+    hr_ = P.head_r
     if P.name == "xiaoman":
         m = "hair_xm"
-        # 齐耳短发：颅顶 + 两侧 + 后脑，刘海压在额头上
-        B.ell(hc + Rh @ np.array([0, -0.014, 0.034]) + off * 0.3, (0.097, 0.104, 0.098), Rh, m, k=0.02, layer=2)
-        for sg in (1, -1):
-            B.ell(hc + Rh @ np.array([sg * 0.072, -0.004, -0.030]) + off, (0.030, 0.072, 0.062), Rh @ ry(sg * 10), m, k=0.03, layer=2)
-        B.ell(hc + Rh @ np.array([0, -0.050, -0.030]) + off, (0.085, 0.050, 0.065), Rh, m, k=0.03, layer=2)
-        B.ell(hc + Rh @ np.array([0.008, 0.068, 0.046]) + off * 0.5, (0.078, 0.032, 0.030), Rh @ rx(-22) @ ry(-4), m, k=0.02, layer=2)
+        # 头发往后扎成一个高马尾：整头发盖 − 脸的区域（剪出发际线），刘海几绺，马尾（三节，会甩）
+        B.ell(hc + Rh @ np.array([0, -0.008, 0.026]) + off * 0.2, (hr_[0] + 0.005, hr_[1] + 0.008, hr_[2] + 0.007), Rh, m, k=0.02, layer=2)
+        B.ell(hc + Rh @ np.array([0, 0.074, -0.050]), (0.090, 0.074, 0.090), Rh, m, k=0.012, layer=3)
+        for (x, dx, ln) in ((-0.046, -0.006, 0.040), (-0.020, -0.002, 0.044), (0.008, 0.003, 0.046), (0.034, 0.006, 0.042), (0.054, 0.006, 0.030)):
+            top_ = hc + Rh @ np.array([x, 0.086 - abs(x) * 0.35, 0.072])
+            tip = hc + Rh @ np.array([x + dx, 0.100 - abs(x) * 0.45, 0.072 - ln])
+            B.cone(top_, tip, 0.012, 0.003, m, k=0.008, layer=5)
+        tie = hc + Rh @ np.array([0, -0.088, 0.070])
+        B.ell(tie, (0.020, 0.018, 0.018), Rh, m, k=0.015, layer=2)
+        B.cone(tie, tie, 0.0135, 0.0135, "paper_red", k=0.0, layer=2)   # 红色发圈
+        # 马尾：根部跟着头，越往梢越受重力往下垂（世界坐标的"下"），再加上弹簧算出的甩动
+        pt = np.asarray(pose.ponytail, float)
+        down = np.array([0, 0, -1.0])
+        back = Rh @ np.array([0, -1.0, 0.25])
+        back /= np.linalg.norm(back)
+
+        def seg_dir(w_g):
+            d = back * (1 - w_g) + down * w_g
+            return d / np.linalg.norm(d)
+        p1 = tie + seg_dir(0.15) * 0.036 + pt * 0.35
+        p2 = p1 + seg_dir(0.65) * 0.048 + pt * 0.65
+        p3 = p2 + seg_dir(0.92) * 0.050 + pt * 1.0
+        B.cone(tie, p1, 0.016, 0.022, m, k=0.012, layer=2)
+        B.cone(p1, p2, 0.022, 0.017, m, k=0.012, layer=2)
+        B.cone(p2, p3, 0.017, 0.004, m, k=0.010, layer=2)
         # 呆毛：从头顶翘起的一小撮，会摆
-        base = hc + Rh @ np.array([0.012, -0.01, 0.126])
+        base = hc + Rh @ np.array([0.012, 0.0, 0.124])
         cx, cy = pose.cowlick
         p1 = base + Rh @ np.array([0.004 + cx * 0.5, 0.012 + cy * 0.5, 0.022])
         p2 = p1 + Rh @ np.array([0.010 + cx, 0.026 + cy, 0.012])
-        B.cone(base, p1, 0.0085, 0.0055, m, k=0.008, layer=2)
-        B.cone(p1, p2, 0.0055, 0.0022, m, k=0.004, layer=2)
+        B.cone(base, p1, 0.0080, 0.0050, m, k=0.008, layer=2)
+        B.cone(p1, p2, 0.0050, 0.0020, m, k=0.004, layer=2)
     else:
         m = "hair_nn"
         # 灰白短发，往后梳，别在耳后；发际线在额头上方
-        B.ell(hc + Rh @ np.array([0, -0.010, 0.036]) + off * 0.2, (0.093, 0.104, 0.090), Rh, m, k=0.02, layer=2)
-        B.ell(hc + Rh @ np.array([0, 0.050, 0.070]) + off * 0.2, (0.080, 0.040, 0.026), Rh @ rx(30), m, k=0.03, layer=2)
-        B.ell(hc + Rh @ np.array([0, -0.064, -0.012]) + off * 0.4, (0.080, 0.050, 0.068), Rh, m, k=0.03, layer=2)
+        hr_ = P.head_r
+        B.ell(hc + Rh @ np.array([0, -0.010, 0.040]) + off * 0.2, (hr_[0] + 0.004, hr_[1] + 0.006, hr_[2] - 0.008), Rh, m, k=0.02, layer=2)
+        B.ell(hc + Rh @ np.array([0, 0.052, 0.064]) + off * 0.2, (0.078, 0.036, 0.022), Rh @ rx(30), m, k=0.03, layer=2)
+        B.ell(hc + Rh @ np.array([0, -0.062, -0.018]) + off * 0.4, (0.076, 0.046, 0.060), Rh, m, k=0.03, layer=2)
         for sg in (1, -1):
             B.ell(hc + Rh @ np.array([sg * 0.074, -0.030, -0.006]) + off * 0.5, (0.024, 0.052, 0.050), Rh, m, k=0.02, layer=2)
         # 发卡（黑色细条）

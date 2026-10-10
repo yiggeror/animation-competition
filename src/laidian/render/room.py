@@ -13,6 +13,7 @@ from .materials import M
 from .rt import F_ALPHA, F_NOVIS, F_SHADOW, F_TRANSMIT, PrimList
 
 RIDGE_Z = 4.30
+PHONE_POS = (0.62, 2.05)        # 竹席上靠插座的一头
 RIDGE_Y = L.ROOM_D / 2
 EAVE_Z = L.ROOM_H
 
@@ -27,6 +28,8 @@ class RoomState:
     tv_on: bool = True
     back_door_open: bool = True
     main_door_open: float = 0.0     # 0 关 → 1 开
+    phone_on_mat: bool = True       # 手机躺在竹席上，插着充电线
+    shells: bool = False            # 地上的毛豆壳（第 2 场以后越来越多）
     textures: dict = field(default_factory=dict)  # 名称 -> 图集编号
 
 
@@ -294,6 +297,23 @@ def build(state: RoomState) -> PrimList:
     b = fur["broom"]
     pl.cyl(M("broom"), (4.68, 0.12, 0.0), (4.70, 0.10, 0.35), 0.07, name="broom_head")
     pl.cyl(M("wood_raw"), (4.70, 0.10, 0.35), (4.72, 0.08, 1.20), 0.012, name="broom_handle")
+
+    # ---------------- 手机和充电线
+    if state.phone_on_mat:
+        ph = PHONE_POS
+        pl.obox(M("tv_screen"), (ph[0], ph[1], 0.012), (0.036, 0.075, 0.0045), ang=0.35, name="phone")
+        so = L.SOCKET
+        pts = [(0.016, so.y, so.z), (0.05, so.y - 0.02, 0.05), (0.20, so.y - 0.18, 0.012), (ph[0] - 0.02, ph[1] + 0.08, 0.012)]
+        for a, b in zip(pts[:-1], pts[1:]):
+            pl.cyl(M("plastic_white"), a, b, 0.0022, name="charger_cable")
+        pl.box(M("plastic_white"), 0.015, 0.045, so.y - 0.02, so.y + 0.02, so.z - 0.025, so.z + 0.025, name="charger_plug")
+    # ---------------- 地上的毛豆壳
+    if state.shells:
+        rng = np.random.default_rng(5)
+        for k in range(42):
+            x = 2.05 + rng.normal(0, 0.16)
+            y = 1.62 + rng.normal(0, 0.14)
+            pl.obox(M("soybean"), (x, y, 0.004), (0.022, 0.006, 0.004), ang=rng.uniform(0, math.pi), name="shell")
 
     # ---------------- 墙上的东西（贴图四边形，离墙 5 毫米）
     def wall_quad(wall, a0, a1, z0, z1, mat, name, texname=None, off=0.005):

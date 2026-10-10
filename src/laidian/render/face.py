@@ -69,20 +69,20 @@ def decals(P, mask, head_c, head_R, who, expr, aa):
         cy = ey
         if xm:
             # 孩子的眼睛：大而黑的眼珠 + 高光 + 上眼睑粗线
-            rx, ry = 0.0105, 0.0135 * max(open_, 0.0)
+            rx, ry = 0.0122, 0.0158 * max(open_, 0.0)
             if open_ > 0.08 and smile < 0.6:
                 d_iris = _ell(u, v, cx + lx * 0.004, cy + ly * 0.003, rx * 0.88, max(ry * 0.92, 1e-4))
                 # 被上眼睑盖住的部分
                 lid = v - (cy + ry * 0.75)
                 d_iris = np.maximum(d_iris, lid)
                 out["ink"] = np.maximum(out["ink"], _cov(d_iris, aa))
-                hl = _ell(u, v, cx + lx * 0.004 - 0.003, cy + ly * 0.003 + 0.004 * open_, 0.0026, 0.0030)
+                hl = _ell(u, v, cx + lx * 0.004 - 0.0035, cy + ly * 0.003 + 0.0045 * open_, 0.0031, 0.0036)
                 out["white"] = np.maximum(out["white"], _cov(hl, aa) * (u * sg > -1))
             # 上眼睑：一道弧线（眯眼/笑时变成向上弯的月牙）
             k = smile
             top = cy + (0.012 * open_) * (1 - k) + 0.004 * k
-            arc = _quad((cx - sg * 0.013, cy + 0.002 - 0.004 * k), (cx, top + 0.005 * (1 - k) + 0.006 * k), (cx + sg * 0.012, cy + 0.004 - 0.002 * k))
-            out["ink"] = np.maximum(out["ink"], _cov(_poly(u, v, arc) - 0.0016, aa))
+            arc = _quad((cx - sg * 0.014, cy + 0.003 - 0.004 * k), (cx, top + 0.007 * (1 - k) + 0.006 * k), (cx + sg * 0.014, cy + 0.006 - 0.002 * k))
+            out["ink"] = np.maximum(out["ink"], _cov(_poly(u, v, arc) - 0.0019, aa))
         else:
             # 奶奶：眼睛细长，笑起来是月牙；眼尾的笑纹；眼袋一道细线
             k = max(smile, 0.35)
@@ -127,7 +127,7 @@ def decals(P, mask, head_c, head_R, who, expr, aa):
             fh = _quad((-0.022, 0.052 + k * 0.009), (0, 0.055 + k * 0.009), (0.022, 0.052 + k * 0.009))
             out["line"] = np.maximum(out["line"], _cov(_poly(u, v, fh) - 0.0004, aa) * 0.4)
     # 嘴
-    mw = 0.013 * e["mouth_w"] * (0.55 if e["puff"] > 0.3 else 1.0)
+    mw = (0.015 if xm else 0.013) * e["mouth_w"] * (0.55 if e["puff"] > 0.3 else 1.0)
     my = -0.046 if xm else -0.050
     sm = e["mouth_smile"] * 0.005
     op = e["mouth_open"]

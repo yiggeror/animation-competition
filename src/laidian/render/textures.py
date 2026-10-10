@@ -80,14 +80,14 @@ def albedo(buf, scene, chars=None, extra=None):
         st = fbm(p * np.array([2.0, 2.0, 1.2]), 5, 3)
         col = base[M("plaster")] * (0.92 + 0.14 * (st - 0.5))[:, None]
         # 水渍：靠近屋顶的大片淡黄褐色晕
-        wet = np.clip((fbm(p * 0.9, 3, 9) - 0.55) * 4, 0, 1) * np.clip((z - 2.2) / 0.8, 0, 1)
-        col = col * (1 - 0.35 * wet[:, None]) + np.array([0.42, 0.33, 0.20]) * 0.35 * wet[:, None]
+        wet = np.clip((fbm(p * 0.9, 3, 9) - 0.60) * 3, 0, 1) * np.clip((z - 2.4) / 0.8, 0, 1)
+        col = col * (1 - 0.18 * wet[:, None]) + np.array([0.42, 0.33, 0.20]) * 0.18 * wet[:, None]
         # 墙根的脏
         grime = np.clip(1 - z / 0.25, 0, 1) * (0.5 + 0.5 * fbm(p * 6, 3, 4))
         col = col * (1 - 0.35 * grime[:, None])
         # 墙裙
         wain = z < 1.05
-        chips = fbm(p * 9, 4, 21) > 0.68
+        chips = (fbm(p * 14, 4, 21) > 0.79) & (np.abs(z - 0.55) > 0.25)
         wc = base[M("wainscot")] * (0.9 + 0.2 * (fbm(p * 3, 3, 5) - 0.5))[:, None]
         col = np.where((wain & ~chips)[:, None], wc, col)
         band = (z > 1.035) & (z < 1.06)
@@ -155,6 +155,19 @@ def albedo(buf, scene, chars=None, extra=None):
         row = np.abs((p[:, 1] * 6.0) % 1.0 - 0.5) > 0.42
         col = base[M("roof_tile")] * (0.8 + 0.3 * fbm(p * 5, 3, 61))[:, None]
         A[m] = np.where(row[:, None], col * 0.5, col)
+    m = sel("blouse_nn")
+    if m.any():
+        # 碎花：浅蓝底上散着小白花和粉花（世界坐标里只用于静止镜头的预览；人物身上会改用身体坐标）
+        p = P[m] * 95.0
+        cell = np.floor(p)
+        f = p - cell - 0.5
+        h = _hash3(cell[:, 0].astype(np.int64), cell[:, 1].astype(np.int64), cell[:, 2].astype(np.int64), 3)
+        r = np.sqrt((f ** 2).sum(-1))
+        flower = (r < 0.24) & (h > 0.45)
+        col = np.tile(base[M("blouse_nn")], (m.sum(), 1))
+        col = np.where((flower & (h > 0.75))[:, None], np.array([0.85, 0.55, 0.6]), col)
+        col = np.where((flower & (h <= 0.75))[:, None], np.array([0.88, 0.88, 0.84]), col)
+        A[m] = col
     m = sel("enamel")
     if m.any():
         p = P[m]

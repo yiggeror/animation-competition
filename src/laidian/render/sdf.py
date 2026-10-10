@@ -9,7 +9,7 @@
   ELLIPSOID: 4-6 中心, 7-9 半径, 10-18 旋转（局部->世界，按行）
   ROUNDBOX : 4-6 中心, 7-9 半尺寸, 10-18 旋转, 19 圆角
   CAPCONE  : 4-6 a, 7-9 b, 10 ra, 11 rb, 12 圆角（截锥，端面平——袖口、裤腿）
-  23 层级：0 皮肤/身体；1 衣服（与身体硬接）；2 头发
+  23 层级：0 皮肤/身体；1 衣服；2 头发；3 从头发里减掉（剪出发际线）；4 从衣服里减掉（领口）；5 刘海（不被减掉的头发）
 groups (g, 8)：0-2 包围球心, 3 半径, 4 起始, 5 数量
 """
 import math
@@ -123,6 +123,11 @@ def scene_sdf(chars, groups, px, py, pz, best_bound):
     d_body = 1e9
     d_cloth = 1e9
     d_hair = 1e9
+    d_hcut = 1e9
+    d_ccut = 1e9
+    d_hx = 1e9
+    phx = -1
+    dhx_near = 1e9
     pb = -1
     pc = -1
     ph = -1
@@ -155,11 +160,30 @@ def scene_sdf(chars, groups, px, py, pz, best_bound):
                     dc_near = d
                     pc = q
                 d_cloth = smin(d_cloth, d, k)
-            else:
+            elif layer == 2:
                 if d < dh_near:
                     dh_near = d
                     ph = q
                 d_hair = smin(d_hair, d, k)
+            elif layer == 3:
+                d_hcut = smin(d_hcut, d, k)
+            elif layer == 4:
+                d_ccut = smin(d_ccut, d, k)
+            else:
+                if d < dhx_near:
+                    dhx_near = d
+                    phx = q
+                d_hx = smin(d_hx, d, k)
+    # 减法：头发减去"脸"的区域，衣服减去领口
+    if d_hcut < 1e8:
+        d_hair = max(d_hair, -d_hcut)
+    if d_ccut < 1e8:
+        d_cloth = max(d_cloth, -d_ccut)
+    # 刘海等不受减法影响的头发（层 5）
+    if d_hx < 1e8:
+        if d_hx < d_hair:
+            ph = phx
+        d_hair = smin(d_hair, d_hx, 0.006)
     d = d_body
     p = pb
     if d_cloth < d:

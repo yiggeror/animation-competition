@@ -1,172 +1,183 @@
-"""画风 A「灯影」：把皮影的造型语言延伸到整个画面。
+"""画风 A「灯影」：用皮影的镂空纹样做明暗。
 
-- 明暗分成几层色阶，像一层层染过色的牛皮；灯光因此自然铺成一圈一圈。
-- 有光的地方颜色更饱和、更暖（光透过染色的皮），暗处是深棕，不是死黑。
-- 每种材质有自己的"刀纹"（墙面的刮痕、木纹、碎花），只在受光处透亮——纹理是光照的结果，不是滤镜。
-- 轮廓是刀刻的深棕线，略有起伏。
-- 床单上的戏保留物理计算出的透光颜色，是全画面最亮、最纯的地方。
+- 亮处：平涂的"染色牛皮"颜色（固有色 × 光色，饱和、两级色阶）。
+- 暗处：整片沉成深棕的剪影，不画细节——像没被灯照到的皮影。
+- 亮暗之间：用皮影刀法的纹样（圆点、鱼鳞、卷草、方胜）刻出过渡——光越强，刻掉的越多。
+  纹样贴在物体表面（墙、木头、地面），人物身上用画面坐标的细点（避免关节处出现纹样接缝）。
+- 轮廓：亮处有深棕的刀刻边；暗处与剪影融成一片。
+- 床单上的戏保留物理计算的透光颜色——画面里最亮、最纯的东西。
+- 日光灯一亮，所有地方都落在"亮"的那一档：纹样和剪影全部消失，画面变平——这就是"惨白、平"。
 """
 import math
 
 import numpy as np
 from scipy import ndimage
 
+from .. import chardecals as CD
 from .. import textures as TX
 from ..materials import M
-from .common import (downsample, edges, face_layers, filmic, flame_shape, glow, linear_to_srgb, luminance,
+from .common import (screens, downsample, edges, face_layers, filmic, flame_shape, glow, linear_to_srgb, luminance,
                      project, total_light, world_noise)
 
-LEVELS = np.array([0.0, 0.028, 0.085, 0.20, 0.42, 0.78, 1.25])
-INK = np.array([0.030, 0.016, 0.010])
-SHADOW = np.array([0.020, 0.011, 0.008])
+DARK = np.array([0.030, 0.016, 0.010])
+INK = np.array([0.028, 0.015, 0.010])
 
 
-def band(Y, soft=0.10):
-    """把亮度量化成色阶（边缘略软）。"""
-    out = np.zeros_like(Y)
-    for k in range(1, len(LEVELS)):
-        lo, hi = LEVELS[k - 1], LEVELS[k]
-        t = np.clip((Y - lo) / max(hi - lo, 1e-6), 0, 1)
-        step = np.clip((t - 0.5) / soft + 0.5, 0, 1)
-        out = np.where(Y >= lo, lo + (hi - lo) * step, out)
-    return out
+def plane_uv(P, N):
+    """按主法线方向取平面坐标（墙、地、家具都能贴上纹样）。"""
+    ax = np.argmax(np.abs(N), axis=-1)
+    u = np.where(ax == 0, P[..., 1], P[..., 0])
+    v = np.where(ax == 2, P[..., 1], P[..., 2])
+    return u, v
 
 
-def patterns(buf):
-    """各材质的刀纹（0–1）。用世界坐标，镜头动也不会"游"。"""
-    H, W = buf.MAT.shape
-    P = buf.P
-    pat = np.zeros((H, W))
-    mat = buf.MAT
+def motif(name, u, v, cell):
+    """返回阈值场 M ∈ [0,1]：光的强度（归一化）超过 M 的地方被"刻亮"。"""
+    x = u / cell
+    y = v / cell
+    if name == "dots":
+        fx = x - np.floor(x) - 0.5
+        fy = y - np.floor(y) - 0.5
+        return np.clip(np.sqrt(fx * fx + fy * fy) / 0.7071, 0, 1)
+    if name == "diamond":
+        fx = np.abs(x - np.floor(x) - 0.5)
+        fy = np.abs(y - np.floor(y) - 0.5)
+        return np.clip((fx + fy), 0, 1)
+    if name == "scale":
+        row = np.floor(y)
+        xx = x + 0.5 * (row % 2)
+        fx = xx - np.floor(xx) - 0.5
+        fy = y - row
+        d = np.sqrt(fx * fx + (fy * 1.3) ** 2)
+        return np.clip(d / 0.75, 0, 1)
+    if name == "wave":
+        w = np.sin(x * 2 * math.pi) * 0.18
+        f = np.abs(((y + w) % 1.0) - 0.5) * 2
+        return np.clip(f, 0, 1)
+    if name == "lines":
+        return np.clip(np.abs((y % 1.0) - 0.5) * 2, 0, 1)
+    if name == "crescent":
+        row = np.floor(y)
+        xx = x + 0.5 * (row % 2)
+        fx = xx - np.floor(xx) - 0.5
+        fy = y - row - 0.5
+        d1 = np.sqrt(fx * fx + fy * fy)
+        d2 = np.sqrt((fx - 0.12) ** 2 + (fy + 0.10) ** 2)
+        return np.clip(np.maximum(d1 / 0.62, 1 - d2 / 0.40), 0, 1)
+    return np.full_like(x, 0.5)
 
-    def sel(n):
-        return mat == M(n)
 
-    m = sel("plaster")
-    if m.any():
-        p = P[m]
-        streak = TX.vnoise(p * np.array([60.0, 60.0, 2.5]), 5)
-        dots = TX.vnoise(p * 70.0, 7) > 0.93
-        pat[m] = np.clip((streak - 0.72) * 4, 0, 1) * 0.6 + dots * 0.5
-    for n in ("wood_dark", "chest", "beam", "column", "door_wood", "wood_raw"):
-        m = sel(n)
-        if m.any():
-            p = P[m]
-            g = TX.fbm(p * np.array([1.0, 9.0, 9.0]) if n == "beam" else p * np.array([9.0, 9.0, 1.0]) if n in ("column", "door_wood") else p * np.array([1.0, 9.0, 9.0]), 3, 13)
-            pat[m] = np.clip(1 - np.abs(np.sin(g * 40.0)) * 6, 0, 1) * 0.7
-    m = sel("concrete")
-    if m.any():
-        p = P[m]
-        pat[m] = np.clip((TX.ridged(p * 1.3, 4, 11) - 0.6) * 5, 0, 1)
-    m = sel("blouse_nn")
-    if m.any():
-        # 碎花：一朵朵五瓣小花刻空
-        p = P[m] * 110.0
-        cell = np.floor(p)
-        f = p - cell - 0.5
-        jit = TX._hash3(cell[:, 0].astype(np.int64), cell[:, 1].astype(np.int64), cell[:, 2].astype(np.int64), 3)
-        r = np.sqrt((f ** 2).sum(-1))
-        ang = np.arctan2(f[:, 1], f[:, 0] + f[:, 2])
-        petal = 0.22 + 0.10 * np.cos(5 * ang + jit * 6)
-        pat[m] = (r < petal) * (jit > 0.35) * 0.9
-    m = sel("tshirt_xm")
-    if m.any():
-        p = P[m]
-        pat[m] = (np.abs(((p[:, 2] * 40.0) % 1.0) - 0.5) > 0.46) * 0.25   # 针织横纹
-    m = sel("bamboo")
-    if m.any():
-        p = P[m]
-        pat[m] = (np.abs(((p[:, 0] * 66.0) % 1.0) - 0.5) > 0.40) * 0.8
-    return pat
+MOTIF = {
+    "plaster": ("crescent", 0.024), "concrete": ("diamond", 0.045), "wood_dark": ("wave", 0.016), "wood_raw": ("wave", 0.014),
+    "beam": ("wave", 0.02), "column": ("wave", 0.016), "door_wood": ("lines", 0.012), "chest": ("wave", 0.016),
+    "bamboo": ("lines", 0.010), "roof_tile": ("scale", 0.05), "tv_body": ("dots", 0.010), "enamel": ("dots", 0.008),
+    "cloth_towel": ("scale", 0.012), "cloth_blouse": ("scale", 0.012), "cloth_tshirt": ("scale", 0.012),
+    "paper": ("dots", 0.008), "paper_red": ("dots", 0.008), "stone": ("diamond", 0.02), "metal": ("dots", 0.006),
+}
 
 
 def compose(buf, scene, ctx):
     ss = getattr(buf, "ss", 1)
     H, W = buf.MAT.shape
+    cam = ctx["cam"]
     E, dif = total_light(buf)
     A = TX.albedo(buf, scene, extra=ctx.get("extra"))
-    rad = A * E / math.pi
-    x = rad * ctx.get("exposure", 1.0)
+    x = A * E / math.pi * ctx.get("exposure", 1.0)
     Y = luminance(x)
-    chroma = x / np.maximum(Y, 1e-6)[..., None]
-    Yb = band(Y)
-    # 受光处更饱和、更暖
-    lit = np.clip(Yb / 0.42, 0, 1)
-    gray = chroma.mean(-1, keepdims=True)
-    chroma = gray + (chroma - gray) * (1.0 + 0.45 * lit[..., None])
-    out = chroma * Yb[..., None]
-    out = out * (1 + np.array([0.06, 0.0, -0.06]) * lit[..., None])
-    # 暗部：深棕而不是黑
-    out = np.maximum(out, SHADOW * (1 - lit[..., None]))
-    # 刀纹：只在亮处透光
-    pat = patterns(buf)
-    glowp = np.clip((Y - 0.12) / 0.35, 0, 1)
-    out = out * (1 + 0.55 * (pat * glowp)[..., None]) - (pat * (1 - glowp) * 0.25)[..., None] * out
-    # 床单：保留物理透光，不分色阶
+    # 光的强弱（归一化 0–1）和光色
+    Lv = np.clip(filmic(Y * 1.6) / 0.85, 0, 1)
+    Ec = E / np.maximum(luminance(E), 1e-6)[..., None]
+    Ec = Ec / np.maximum(Ec.max(-1, keepdims=True), 1e-6)
+    # 纹样阈值场
+    u, v = plane_uv(buf.P, buf.N)
+    Mf = np.full((H, W), 0.5)
+    for name, (mo, cell) in MOTIF.items():
+        m = buf.MAT == M(name)
+        if m.any():
+            Mf[m] = motif(mo, u[m], v[m], cell)
+    # 墙裙用方胜
+    wain = (buf.MAT == M("plaster")) & (buf.P[..., 2] < 1.05)
+    Mf[wain] = motif("scale", u[wain], v[wain], 0.028)
+    # 人物：画面坐标的细点（不随肢体游动，也不会在关节处出现接缝）
+    isch = buf.CP >= 0
+    yy, xx = np.mgrid[0:H, 0:W].astype(float)
+    cellpx = 5.0 * ss
+    rot = 0.42
+    su = (xx * math.cos(rot) - yy * math.sin(rot)) / cellpx
+    sv = (xx * math.sin(rot) + yy * math.cos(rot)) / cellpx
+    Mf[isch] = motif("dots", su[isch] * 0.02, sv[isch] * 0.02, 0.02)[...]
+    # 过渡带
+    t0, t1 = 0.10, 0.40
+    level = np.clip((Lv - t0) / (t1 - t0), 0, 1)
+    aa = 0.10
+    lit = np.clip((level - Mf) / aa + 0.5, 0, 1)
+    lit = np.where(level >= 0.999, 1.0, lit)
+    lit = np.where(level <= 0.001, 0.0, lit)
+    # 亮处的颜色：固有色 × 光色，两级色阶
+    sat_a = A / np.maximum(A.max(-1, keepdims=True), 1e-6)
+    gray = A.mean(-1, keepdims=True)
+    dyed = np.clip(gray + (A - gray) * 1.35, 0, 1)
+    tone = np.where(Lv > 0.72, 1.0, 0.78)[..., None]
+    c_lit = dyed * (0.45 + 0.55 * Ec) * tone * 1.15
+    # 暗处：深棕，带一点光色
+    c_dark = DARK + 0.035 * Ec * level[..., None]
+    out = c_dark * (1 - lit[..., None]) + c_lit * lit[..., None]
+    # 皮面纹理：亮处一点点斑驳
+    hide = TX.fbm(buf.P * 7.0, 3, 77)
+    out = out * (0.92 + 0.14 * hide[..., None] * lit[..., None])
+    # 床单：物理透光
     sheet = dif & buf.hit
     xs = filmic(x[sheet] * 1.05)
-    out[sheet] = xs * 1.12
-    # 皮影本身（背面直接看到）：透光的颜色更亮一点
-    # 人物五官
+    out[sheet] = xs * 1.10
+    # 人物的线与五官
     chars = ctx.get("chars")
-    fl = face_layers(buf, ctx.get("faces", []), chars, ss)
-    skin_light = np.clip(Yb / 0.3, 0.15, 1.0)[..., None]
-    out = out * (1 - 0.35 * fl["blush"][..., None]) + np.array([0.55, 0.18, 0.15]) * 0.35 * fl["blush"][..., None] * skin_light
-    out = out * (1 - fl["mouth"][..., None]) + np.array([0.20, 0.04, 0.03]) * fl["mouth"][..., None] * skin_light
-    out = out * (1 - fl["line"][..., None] * 0.6) + INK * fl["line"][..., None] * 0.6
-    out = out * (1 - fl["ink"][..., None]) + INK * fl["ink"][..., None]
-    out = out * (1 - fl["glass"][..., None]) + np.array([0.12, 0.08, 0.05]) * fl["glass"][..., None]
-    out = out * (1 - fl["white"][..., None]) + np.array([0.95, 0.9, 0.8]) * skin_light * fl["white"][..., None]
-    # 刀刻轮廓
-    outline, inner = edges(buf, scene, chars, mr_w=0.0045 / ss)
-    k = int(round(1.6 * ss))
+    faces = ctx.get("faces", [])
+    fl = face_layers(buf, faces, chars, ss)
+    cd = CD.layers(buf, chars, faces)
+    litc = np.clip(lit, 0.25, 1)[..., None]
+    out = out * (1 - cd["print_light"][..., None]) + np.array([0.95, 0.92, 0.82]) * litc * cd["print_light"][..., None]
+    out = out * (1 - fl["blush"][..., None] * 0.35) + np.array([0.75, 0.25, 0.20]) * 0.35 * fl["blush"][..., None] * litc
+    out = out * (1 - fl["mouth"][..., None]) + np.array([0.30, 0.06, 0.04]) * fl["mouth"][..., None] * litc
+    for key, a in (("line", 0.6), ("ink", 1.0), ("glass", 0.9)):
+        out = out * (1 - a * fl[key][..., None]) + INK * a * fl[key][..., None]
+    for key, a in (("hair", 0.55), ("cloth_line", 0.85)):
+        out = out * (1 - a * cd[key][..., None] * lit[..., None]) + INK * a * cd[key][..., None] * lit[..., None]
+    out = out * (1 - cd["button"][..., None]) + np.array([0.92, 0.9, 0.85]) * litc * cd["button"][..., None]
+    out = out * (1 - fl["white"][..., None]) + np.array([1.0, 0.96, 0.88]) * litc * fl["white"][..., None]
+    out = out + screens(buf, ctx)
+    # 刀刻轮廓：亮处清楚，暗处融进剪影
+    outline, inner = edges(buf, scene, chars, mr_w=0.0050 / ss)
+    k = max(1, int(round(2.2 * ss)))
     ol = ndimage.maximum_filter(outline, size=k)
-    wob = world_noise(buf.P, 18.0, 4, 2)
-    ol = ol * (wob > 0.32)
-    il = ndimage.maximum_filter(inner, size=max(1, k - 1)) * 0.55
-    line_col = INK * (0.6 + 0.4 * (1 - lit))[..., None]
-    out = out * (1 - ol[..., None]) + line_col * ol[..., None]
-    out = out * (1 - il[..., None] * (1 - lit[..., None] * 0.5)) + line_col * il[..., None] * (1 - lit[..., None] * 0.5)
-    # 发光体
-    out = add_sources(out, buf, ctx, style="lantern")
-    # 没打到任何东西（窗外）
-    out[~buf.hit] = ctx.get("sky", np.array([0.006, 0.008, 0.016]))
-    # 皮面纹理：整个画面一层很细的纤维，亮处更明显
-    yy, xx = np.mgrid[0:H, 0:W]
-    fp = np.stack([xx * 0.35 / ss, yy * 0.03 / ss, np.zeros((H, W))], -1)
-    fiber = TX.vnoise(fp, 9)
-    out = out * (0.94 + 0.12 * fiber[..., None] * (0.3 + 0.7 * lit[..., None]))
+    ol = ndimage.gaussian_filter(ol, 0.35 * ss)
+    il = ndimage.gaussian_filter(inner, 0.35 * ss) * 0.6
+    out = out * (1 - ol[..., None]) + INK * ol[..., None]
+    out = out * (1 - (il * lit)[..., None]) + INK * (il * lit)[..., None]
+    out = add_sources(out, buf, ctx)
+    out[~buf.hit] = ctx.get("sky", DARK)
     img = downsample(out, ss)
-    return (linear_to_srgb(filmic(img * 1.0) if ctx.get("final_filmic") else np.clip(img, 0, 1)) * 255).astype(np.uint8)
+    return (linear_to_srgb(np.clip(img, 0, 1)) * 255).astype(np.uint8)
 
 
-def add_sources(out, buf, ctx, style="lantern"):
-    """马灯火苗与玻璃罩的光晕、日光灯管、手机/电视屏幕。"""
+def add_sources(out, buf, ctx):
     H, W = buf.MAT.shape
     cam = ctx["cam"]
     t = ctx.get("t", 0.0)
     for src in ctx.get("sources", []):
-        kind = src["kind"]
+        if src["kind"] != "lamp":
+            continue
         q = project(cam, src["pos"], W, H)
         if q[2] <= 0:
             continue
-        # 被挡住了吗（深度比较）
         xi, yi = int(q[0]), int(q[1])
         visible = 0 <= xi < W and 0 <= yi < H and buf.T[yi, xi] > q[2] - 0.05
-        px_per_m = W / (2 * cam.tan_half * q[2])
-        if kind == "lamp":
-            inten = src.get("intensity", 1.0)
-            g = glow((H, W), q[:2], 0.09 * px_per_m, 1.6) * inten
-            # 一圈一圈的光晕（灯影画风的标志）
-            if style == "lantern":
-                rings = np.floor(np.clip(g, 0, 1) * 5) / 5
-                out += np.array([1.0, 0.55, 0.20])[None, None] * (rings * 0.20)[..., None]
-            else:
-                out += np.array([1.0, 0.6, 0.25])[None, None] * (g * 0.25)[..., None]
-            if visible:
-                core, outer = flame_shape((H, W), (q[0], q[1] + 0.006 * px_per_m), 0.030 * px_per_m, 0.009 * px_per_m, t)
-                out = out * (1 - outer[..., None]) + np.array([1.0, 0.62, 0.22]) * 1.6 * outer[..., None]
-                out = out * (1 - core[..., None]) + np.array([1.0, 0.92, 0.70]) * 1.8 * core[..., None]
-        elif kind == "tube":
-            pass
+        if not visible:
+            continue
+        ppm = W / (2 * cam.tan_half * q[2])
+        g = glow((H, W), q[:2], 0.06 * ppm, 1.8) * src.get("intensity", 1.0)
+        rings = np.floor(np.clip(g, 0, 0.999) * 6) / 6
+        out = out + np.array([1.0, 0.55, 0.18]) * (rings * 0.30)[..., None]
+        core, outer = flame_shape((H, W), (q[0], q[1] + 0.006 * ppm), 0.030 * ppm, 0.009 * ppm, t)
+        out = out * (1 - outer[..., None]) + np.array([1.0, 0.62, 0.22]) * 1.5 * outer[..., None]
+        out = out * (1 - core[..., None]) + np.array([1.0, 0.94, 0.75]) * 1.7 * core[..., None]
     return out
