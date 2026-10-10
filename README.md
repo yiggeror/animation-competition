@@ -1,0 +1,2 @@
+# animation-competition
+none
