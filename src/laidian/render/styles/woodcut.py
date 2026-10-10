@@ -36,28 +36,44 @@ def compose(buf, scene, ctx):
     isch = buf.CP >= 0
     yy, xx = np.mgrid[0:H, 0:W].astype(float)
     # ---- 排线坐标
+    # 墙、地上的刀线固定在物体表面（世界坐标），镜头推拉时不会在墙上"爬"。
+    # 想要的线距（米）随距离变：远处一个像素代表更长的距离。把它取到最近的两档 2 的幂线距，
+    # 两档按距离混合——每档的线都钉在墙上，远近变化时只是中间多出/淡掉一根线。
     px_m = buf.T * 2 * cam.tan_half / W
     P, N = buf.P, buf.N
     vert = np.abs(N[..., 2]) < 0.6
     c_world = np.where(vert, P[..., 2], P[..., 0] * 0.9 + P[..., 1] * 0.43)
-    spacing_world = 7.5 * ss * px_m
-    phase_w = c_world / np.maximum(spacing_world, 1e-6)
-    # 人物：画面坐标里的 45° 斜刻
+    along_w = (P[..., 0] + P[..., 1] * 0.3) * 9.0
+    S0 = 0.002
+    lvl = np.log2(np.maximum(7.5 * ss * px_m, 1e-6) / S0)
+    l0 = np.floor(lvl)
+    fr = lvl - l0
+    # 人物：画面坐标里的 45° 斜刻（肢体关节处不会出现纹样接缝）
     sp_c = 5.5 * ss
     phase_c = (xx + yy) / (sp_c * math.sqrt(2))
-    phase = np.where(isch, phase_c, phase_w)
-    # 手刻的不规则：每道刀的位置、粗细都随机起伏；偶尔断刀
-    strand = np.floor(phase)
-    jitter = TX._hash3(strand.astype(np.int64), np.zeros_like(strand, dtype=np.int64), np.full(strand.shape, 7, np.int64), 1)
-    along = np.where(isch, (xx - yy) / (sp_c * 6), (P[..., 0] + P[..., 1] * 0.3) * 9.0)
-    wob = (TX.vnoise(np.stack([strand * 0.37, along, np.zeros_like(along)], -1), 3) - 0.5) * 0.35
-    f = np.abs(((phase + wob) % 1.0) - 0.5) * 2
-    taper = 0.75 + 0.5 * TX.vnoise(np.stack([strand * 1.7, along * 0.6, np.ones_like(along)], -1), 9)
-    width = np.clip(Yt * 1.3 * taper * (0.85 + 0.3 * jitter), 0, 1.05)
-    aa = 1.5 / np.where(isch, sp_c, 7.5 * ss)
-    carved = np.clip((width - f) / aa + 0.5, 0, 1)
-    breaks = TX.vnoise(np.stack([strand * 2.3, along * 1.8, np.full_like(along, 3.0)], -1), 13) > 0.86
-    carved = np.where(breaks & (Yt < 0.6), carved * 0.0, carved)
+    along_c = (xx - yy) / (sp_c * 6)
+
+    def carve(phase, along, aa, salt):
+        # 手刻的不规则：每道刀的位置、粗细都随机起伏；偶尔断刀
+        strand = np.floor(phase)
+        si = strand.astype(np.int64)
+        jitter = TX._hash3(si, np.full(si.shape, salt, np.int64), np.full(si.shape, 7, np.int64), 1)
+        wob = (TX.vnoise(np.stack([strand * 0.37, along, np.full_like(along, salt)], -1), 3) - 0.5) * 0.35
+        f = np.abs(((phase + wob) % 1.0) - 0.5) * 2
+        taper = 0.75 + 0.5 * TX.vnoise(np.stack([strand * 1.7, along * 0.6, np.full_like(along, 1.0 + salt)], -1), 9)
+        width = np.clip(Yt * 1.3 * taper * (0.85 + 0.3 * jitter), 0, 1.05)
+        c = np.clip((width - f) / aa + 0.5, 0, 1)
+        breaks = TX.vnoise(np.stack([strand * 2.3, along * 1.8, np.full_like(along, 3.0 + salt)], -1), 13) > 0.86
+        return np.where(breaks & (Yt < 0.6), 0.0, c)
+
+    sp0 = S0 * np.exp2(l0)
+    sp1 = sp0 * 2.0
+    pxm = np.maximum(px_m, 1e-9)
+    c0 = carve(c_world / sp0, along_w, 1.5 * pxm / sp0, 0)
+    c1 = carve(c_world / sp1, along_w, 1.5 * pxm / sp1, 0)
+    carved_w = c0 * (1 - fr) + c1 * fr
+    carved_c = carve(phase_c, along_c, 1.5 / sp_c, 0)
+    carved = np.where(isch, carved_c, carved_w)
     carved = np.where(Yt > 0.82, 1.0, carved)
     # 人物亮面整片留白
     carved = np.where(isch & (Yt > 0.55), 1.0, carved)
