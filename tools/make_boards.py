@@ -53,6 +53,31 @@ def main(src, dst):
             cmd += ["-filter_complex", ";".join(fl), "-map", "[out]", "-c:v", "libx264", "-crf", "23", "-preset", "slow",
                     "-pix_fmt", "yuv420p", str(dst / "motion" / "motion_compare.mp4")]
             subprocess.run(cmd, check=True)
+    # 动态小样的关键帧接触表：行 = 画风，列 = 时间
+    frames_dirs = [(s_, nm) for s_, nm in (("lantern", "A 灯影"), ("woodcut", "B 刻光"), ("silk", "C 绢灯"))
+                   if (src / "motion" / s_).is_dir()]
+    if frames_dirs:
+        allf = sorted((src / "motion" / frames_dirs[0][0]).glob("*.png"))
+        if allf:
+            n = len(allf)
+            picks = [round(i * (n - 1) / 5) for i in range(6)]
+            fw, fh, pad, head, left = 400, 225, 10, 70, 130
+            CW = left + 6 * (fw + pad) + pad
+            CH = head + len(frames_dirs) * (fh + pad) + pad
+            Cb = Image.new("RGB", (CW, CH), (236, 231, 220))
+            dc = ImageDraw.Draw(Cb)
+            dc.text((pad, 14), "动态小样关键帧（第 6 场鹤亮相，24 帧/秒）", fill=(40, 34, 30), font=font(28, 700))
+            for j, f in enumerate(picks):
+                dc.text((left + j * (fw + pad) + 4, 48), f"{f / 24:.1f} 秒", fill=(60, 52, 46), font=font(16, 600))
+            for i, (s_, nm) in enumerate(frames_dirs):
+                y = head + i * (fh + pad)
+                dc.text((pad, y + fh / 2 - 14), nm, fill=(40, 34, 30), font=font(24, 700))
+                for j, f in enumerate(picks):
+                    fp = src / "motion" / s_ / f"{f:04d}.png"
+                    if fp.exists():
+                        Cb.paste(Image.open(fp).convert("RGB").resize((fw, fh), Image.LANCZOS), (left + j * (fw + pad), y))
+            (dst / "motion").mkdir(exist_ok=True)
+            Cb.save(dst / "motion" / "motion_frames.jpg", quality=88)
     # 总览：行 = 画风，列 = 样张
     styles = [("lantern", "A 灯影"), ("woodcut", "B 刻光"), ("silk", "C 绢灯")]
     shots = [("s06", "第 6 场 · 鹤亮相"), ("s10", "第 10 场 · 来电（侧面）"), ("s10w", "第 10 场 · 来电（全景）")]
