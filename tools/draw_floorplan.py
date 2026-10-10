@@ -214,8 +214,9 @@ def plan():
         "因果要点",
         "1. 日光灯在床单【前面】：来电时从正面压",
         "   淡影子；影子剩淡淡残影。",
-        "2. 马灯挂在床单正后方 1 米、高 1.82 米：",
-        "   比签子高，手影落在床单下沿以外。",
+        "2. 马灯吊在床单后 0.7 米、与台口中部同高；",
+        "   艺人站在灯两侧稍后，签子从灯旁伸出：",
+        "   身体和手都不在灯与床单之间。",
         "3. 南窗正对床单：尾声从屋外能看见影子。",
         "4. 床单搭在铁丝上（离北墙 1 米），",
         "   D 机位能同时看到床单两边。",
@@ -266,28 +267,28 @@ def section():
     lx, lz2 = P(ly, lz)
     d.ellipse([lx - 12, lz2 - 12, lx + 12, lz2 + 12], fill=WARM, outline=INK)
     d.text((lx + 16, lz2 - 26), f"马灯 {lz:.2f}m", fill=WARM, font=font(18, 600), anchor="lm")
-    # 签子与手（平端）
-    for (py, pz) in [(L.WIRE_Y + 0.02, 1.35)]:
-        hy, hz = py + 0.45, pz - 0.05
-        d.line([P(py, pz), P(hy, hz)], fill=(130, 90, 40), width=4)
-        hx, hz2 = P(hy, hz)
-        d.ellipse([hx - 9, hz2 - 9, hx + 9, hz2 + 9], fill=(230, 190, 160), outline=INK)
-        # 手影落点
-        t = (L.WIRE_Y - ly) / (hy - ly)
-        z_sh = lz + (hz - lz) * t
-        d.line([P(ly, lz), P(L.WIRE_Y, z_sh)], fill=(150, 110, 60), width=1)
-        d.text(P(L.WIRE_Y - 0.08, z_sh), f"手影落在 {z_sh:.2f}m（床单下沿 {L.SHEET.z0:.2f}m 以下）",
-               fill=(150, 110, 60), font=font(16), anchor="rm")
-        d.text(P(hy + 0.05, hz - 0.2), "平端签子 + 手", fill=INK, font=font(16), anchor="lm")
-    # 皮影
-    d.line([P(L.WIRE_Y + 0.02, 1.15), P(L.WIRE_Y + 0.02, 1.55)], fill=(180, 50, 40), width=5)
-    d.text(P(L.WIRE_Y + 0.08, 1.62), "皮影贴紧床单", fill=(180, 50, 40), font=font(16), anchor="lm")
-    # 操纵者（坐矮凳）
+    # 艺人站在灯后，签子越过灯
     oy = L.MARKS["nainai_backstage"].y
-    rect(d, [P(oy - 0.12, 0.25), P(oy + 0.12, 0)], fill=(200, 180, 150))
-    d.ellipse([P(oy - 0.1, 1.08), P(oy + 0.1, 0.88)], outline=(90, 90, 160), width=3)
-    d.line([P(oy, 0.88), P(oy, 0.25)], fill=(90, 90, 160), width=3)
-    d.text(P(oy + 0.15, 0.6), "奶奶（坐矮凳）", fill=(90, 90, 160), font=font(16), anchor="lm")
+    hy, hz = L.LAMP_STAGE.y - 0.02, 1.32
+    py_, pz_ = L.WIRE_Y + 0.02, 1.38
+    d.line([P(py_, pz_), P(hy, hz)], fill=(130, 90, 40), width=4)
+    hx, hz2 = P(hy, hz)
+    d.ellipse([hx - 9, hz2 - 9, hx + 9, hz2 + 9], fill=(230, 190, 160), outline=INK)
+    d.text(P(hy - 0.05, hz - 0.12), "平端签子", fill=INK, font=font(16), anchor="rm")
+    d.line([P(L.WIRE_Y + 0.02, 1.15), P(L.WIRE_Y + 0.02, 1.55)], fill=(180, 50, 40), width=5)
+    d.text(P(L.WIRE_Y + 0.06, 1.66), "皮影贴紧床单", fill=(180, 50, 40), font=font(16), anchor="lm")
+    # 人（站立）
+    d.ellipse([P(oy - 0.1, 1.52), P(oy + 0.1, 1.30)], outline=(90, 90, 160), width=3)
+    d.line([P(oy, 1.30), P(oy, 0.0)], fill=(90, 90, 160), width=3)
+    d.line([P(oy, 1.18), P(hy, hz)], fill=(90, 90, 160), width=3)
+    d.text(P(oy + 0.12, 0.7), "奶奶（站在灯后）", fill=(90, 90, 160), font=font(16), anchor="lm")
+    # 头的"影子线"：从灯经过头顶，落到哪里
+    for zz in (1.30, 1.52):
+        t = (L.WIRE_Y - ly) / (oy - ly)
+        d.line([P(ly, lz), P(oy, zz)], fill=(150, 110, 60), width=1)
+    d.text(P(L.WIRE_Y + 0.1, 0.55), "人在灯后：头和手的影子都落不到床单上", fill=(150, 110, 60), font=font(16), anchor="lm")
+    # 吊灯的麻绳
+    d.line([P(ly, L.LAMP_PURLIN_Z), P(ly, lz + 0.2)], fill=(120, 100, 70), width=2)
     # 日光灯
     ty, tz = (L.TUBE.y0 + L.TUBE.y1) / 2, L.TUBE.z0
     tx, tz2 = P(ty, tz)
@@ -312,7 +313,7 @@ def section():
         t = wz / mz
         d.line([P(0, wz), P(-my * t, 0)], fill=(150, 175, 215), width=1)
     d.text((M, M - 80), "戏台剖面（沿 x≈1.3m，南 ← → 北）", fill=INK, font=font(30, 700))
-    d.text((M, M - 38), "灯比签子高：手影落在床单下沿以外；日光灯在床单前面：来电时从正面把影子压淡。",
+    d.text((M, M - 38), "马灯吊在床单后 0.7 米，艺人站在灯后；日光灯在床单前面：来电时从正面把影子压淡。",
            fill=INK, font=font(19))
     for i in range(0, 6):
         d.text(P(i, -0.12), f"y={i}", fill=WALL, font=font(14), anchor="mm")
