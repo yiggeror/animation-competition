@@ -60,8 +60,15 @@ def render_chars(sc, chars_list, faces, cam, W, H, lights=None, names=None, styl
 
 def label(img, text, size=26, pos=(14, 10), color=INKC):
     im = Image.fromarray(img) if isinstance(img, np.ndarray) else img
-    d = ImageDraw.Draw(im)
-    d.text(pos, text, fill=color, font=font(size, 600))
+    im = im.convert("RGB")
+    f = font(size, 600)
+    if sum(color[:3]) > 450:
+        # 浅色字：垫一块半透明深色底，亮画面上也看得清
+        x0, y0, x1, y1 = ImageDraw.Draw(im).textbbox(pos, text, font=f)
+        plate = Image.new("RGBA", im.size, (0, 0, 0, 0))
+        ImageDraw.Draw(plate).rounded_rectangle((x0 - 6, y0 - 4, x1 + 6, y1 + 4), 5, fill=(20, 16, 12, 150))
+        im = Image.alpha_composite(im.convert("RGBA"), plate).convert("RGB")
+    ImageDraw.Draw(im).text(pos, text, fill=color, font=f)
     return im
 
 

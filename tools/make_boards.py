@@ -2,6 +2,7 @@
 
 用法：python tools/make_boards.py BUILD_DIR renders/checkpoint1
 """
+import subprocess
 import sys
 from pathlib import Path
 
@@ -31,9 +32,27 @@ def main(src, dst):
         if im.width > 3000:
             im = im.resize((3000, int(im.height * 3000 / im.width)), Image.LANCZOS)
         im.save(dst / "design" / (p.stem + ".jpg"), quality=88)
-    for p in sorted((src / "motion").glob("*.mp4")):
+    # 动态小样：仓库里放压缩过的版本（CRF 24），外加三个画风并排的对比
+    mv = sorted((src / "motion").glob("motion_*.mp4"))
+    if mv:
         (dst / "motion").mkdir(exist_ok=True)
-        (dst / "motion" / p.name).write_bytes(p.read_bytes())
+        for p in mv:
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(p), "-c:v", "libx264", "-crf", "24",
+                            "-preset", "slow", "-pix_fmt", "yuv420p", str(dst / "motion" / p.name)], check=True)
+        order = [src / "motion" / f"motion_{s}.mp4" for s in ("lantern", "woodcut", "silk")]
+        if all(p.exists() for p in order):
+            names = ["A 灯影", "B 刻光", "C 绢灯"]
+            fl = []
+            for i, nm in enumerate(names):
+                fl.append(f"[{i}:v]scale=640:360,drawtext=fontfile={FONT}:text='{nm}':x=14:y=12:fontsize=22:"
+                          f"fontcolor=white:box=1:boxcolor=black@0.45:boxborderw=6[v{i}]")
+            fl.append("[v0][v1][v2]hstack=inputs=3[out]")
+            cmd = ["ffmpeg", "-y", "-loglevel", "error"]
+            for p in order:
+                cmd += ["-i", str(p)]
+            cmd += ["-filter_complex", ";".join(fl), "-map", "[out]", "-c:v", "libx264", "-crf", "23", "-preset", "slow",
+                    "-pix_fmt", "yuv420p", str(dst / "motion" / "motion_compare.mp4")]
+            subprocess.run(cmd, check=True)
     # 总览：行 = 画风，列 = 样张
     styles = [("lantern", "A 灯影"), ("woodcut", "B 刻光"), ("silk", "C 绢灯")]
     shots = [("s06", "第 6 场 · 鹤亮相"), ("s10", "第 10 场 · 来电（侧面）"), ("s10w", "第 10 场 · 来电（全景）")]
