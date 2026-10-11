@@ -91,8 +91,9 @@ export function front(ctx, P0, o = {}) {
   for (const [side, sg] of [['L', -1], ['R', 1]]) {
     const A = P['arm' + side] || {};
     const S = up([sg * D.shoulder[0], D.shoulder[1] + sh]);
-    const W = A.hand || [sg * 17.6, -64.5];
-    const E = A.elbow || ik2(S, W, D.upper, D.fore, A.bend ?? sg).joint;
+    const W0 = A.hand || [sg * 17.6, -64.5];
+    const sol = ik2(S, W0, D.upper, D.fore, A.bend ?? sg);
+    const E = A.elbow || sol.joint, W = A.elbow ? W0 : sol.end;   // 够不着时手停在最远处，胳膊不会被拉长
     const arm = tube([S, lerpP(S, E, 0.5), E, lerpP(E, W, 0.5), W], [[0, 2.8], [0.45, 2.4], [0.55, 2.2], [1, 1.75]], { capStart: 'round', capEnd: 'flat', step: 0.5 });
     const zA = A.z ?? 2;
     fig.part('arm' + side, arm.outline, { fill: D.skin, z: zA, inner: true });
@@ -227,8 +228,9 @@ export function side(ctx, P0, o = {}) {
 function armSide(fig, P, D, side, up, sh, z, tone, lw, st) {
   const A = P['arm' + side] || {};
   const S = up([side === 'N' ? 1.4 + st * 1.2 : -0.4 + st, D.shoulder[1] + sh + st * 1.2]);
-  const W = A.hand || (side === 'N' ? [4.6, -67] : [0.4, -67.6]);
-  const E = A.elbow || ik2(S, W, D.upper, D.fore, A.bend ?? 1).joint;
+  const W0 = A.hand || (side === 'N' ? [4.6, -67] : [0.4, -67.6]);
+  const sol = ik2(S, W0, D.upper, D.fore, A.bend ?? 1);
+  const E = A.elbow || sol.joint, W = A.elbow ? W0 : sol.end;   // 够不着时手停在最远处，胳膊不会被拉长
   const arm = tube([S, lerpP(S, E, 0.5), E, lerpP(E, W, 0.5), W], [[0, 2.8], [0.45, 2.4], [0.55, 2.2], [1, 1.75]], { capStart: 'round', capEnd: 'flat', step: 0.5 });
   const zA = A.z ?? z;
   fig.part('arm' + side, arm.outline, { fill: tone, z: zA, inner: side === 'N' });
@@ -276,8 +278,9 @@ export function back(ctx, P0, o = {}) {
   for (const [side, sg] of [['L', -1], ['R', 1]]) {
     const A = P['arm' + side] || {};
     const S = up([sg * D.shoulder[0], D.shoulder[1] + sh]);
-    const W = A.hand || [sg * 17.6, -64.5];
-    const E = A.elbow || ik2(S, W, D.upper, D.fore, A.bend ?? sg).joint;
+    const W0 = A.hand || [sg * 17.6, -64.5];
+    const sol = ik2(S, W0, D.upper, D.fore, A.bend ?? sg);
+    const E = A.elbow || sol.joint, W = A.elbow ? W0 : sol.end;   // 够不着时手停在最远处，胳膊不会被拉长
     const arm = tube([S, lerpP(S, E, 0.5), E, lerpP(E, W, 0.5), W], [[0, 2.8], [0.45, 2.4], [0.55, 2.2], [1, 1.75]], { capStart: 'round', capEnd: 'flat', step: 0.5 });
     const zA = A.z ?? 2;
     fig.part('arm' + side, arm.outline, { fill: D.skin, z: zA, inner: true });

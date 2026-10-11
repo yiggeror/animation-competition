@@ -4,7 +4,7 @@
 
 > 停电了。奶奶从木箱里翻出一套皮影，祖孙俩在床单上演起了《龟与鹤》。最热闹的时候，来电了。
 
-**画面全部由本仓库的程序逐帧计算生成**——不是录屏，不拼现成素材，不用 AI 生成的图片。影子和光由真实的光照计算得出：马灯、手电、日光灯都有真实的位置和大小，皮影的彩色影子是光线穿过雕花牛皮算出来的。
+**画面全部由本仓库的程序逐帧绘制生成**——不是录屏，不拼现成素材，不用 AI 生成的图片。床单上的影子按真实几何计算：马灯有真实的位置和大小，皮影离床单越远影子越大越虚，彩色牛皮透出彩色的光。
 
 ## 目录
 | 路径 | 内容 |
@@ -15,14 +15,32 @@
 | `docs/design/` | 画风方向、人物 / 皮影 / 场景设计说明 |
 | `docs/ai-usage-log.md` | AI 使用记录（哪些是 AI 做的，哪些是团队的决定） |
 | `src/laidian/layout.py` | 堂屋布局：全片唯一的空间数据来源 |
-| `src/laidian/render/` | 渲染器：光线追踪、光源与阴影、床单透光、皮影、人物、画风合成 |
+| `js/` | 第二版（2D）：绘制库、人物、皮影与影子、镜头、设计稿 |
+| `src/laidian/render/` | 第一版（3D）渲染器，保留作过程记录 |
 | `src/laidian/shots/` | 各个镜头 / 样张 / 设计稿的脚本 |
 | `tools/` | 平面图、能量曲线、检查用的小工具 |
 | `renders/` | 提交到仓库的预览图和小样（完整高清版另存，见下） |
 | `PROGRESS.md` | 进度 |
 | `CREDITS.md` | 素材来源与授权 |
 
-## 怎么重新生成
+## 当前技术路线（第二版：2D）
+画面由 `js/` 里的 JavaScript 在 Canvas 上逐帧绘制，用无头 Chromium（Playwright）逐帧导出、ffmpeg 合成。每一帧是时间的纯函数。
+- `js/lib/`：手绘笔触、一笔画成的人物（连续外轮廓）、亮边、光照图
+- `js/chars/`：小满、奶奶（正面/侧面/背面）、五官、手
+- `js/puppet.js`、`js/shadowplay.js`：皮影部件与正向运动学；床单上影子的几何计算（放大、两种半影、彩色透光、签子）
+- `js/shots/`：镜头；`js/sheets/`：设计稿
+
+```bash
+npm install                       # Playwright（用本机已装的 Chromium）
+bash tools/render_cp1_2d.sh build/cp1_2d          # 人物设计稿 + 两段动作测试
+node tools/js/snap.cjs js/sheets/characters.js out.png 1920 1080 expr   # 单张
+node tools/js/frames.cjs js/shots/s06_test.js build/s06 --mp4 build/s06.mp4  # 一段动画
+PYTHONPATH=src python tools/export_puppets.py assets/puppets             # 重新导出皮影贴图
+```
+
+第一版的 Python 3D 渲染器（`src/laidian/render/`）保留作过程记录；它算出的布景结论（马灯高度、艺人站位、皮影要靠近灯影子才大而虚）在第二版里继续沿用。
+
+## 第一版怎么重新生成
 
 ### 环境
 - Python 3.11+，依赖：`pip install numpy scipy numba pillow`
