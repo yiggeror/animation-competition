@@ -1,0 +1,95 @@
+{
+ "parts": [
+  {
+   "part": "shell",
+   "parent": null,
+   "at": [
+    0,
+    0
+   ],
+   "layer": 0.0,
+   "bounds": [
+    -125.0,
+    -24.0,
+    116.0,
+    80.0
+   ]
+  },
+  {
+   "part": "headneck",
+   "parent": "shell",
+   "at": [
+    88,
+    6
+   ],
+   "layer": -0.8,
+   "bounds": [
+    -42.0,
+    -16.0,
+    94.0,
+    22.0
+   ]
+  },
+  {
+   "part": "leg_front_far",
+   "parent": "shell",
+   "at": [
+    64,
+    -6
+   ],
+   "layer": -1.0,
+   "bounds": [
+    -20.0,
+    -42.0,
+    22.0,
+    10.0
+   ]
+  },
+  {
+   "part": "leg_back_far",
+   "parent": "shell",
+   "at": [
+    -56,
+    -6
+   ],
+   "layer": -1.0,
+   "bounds": [
+    -20.0,
+    -39.0,
+    22.0,
+    10.0
+   ]
+  },
+  {
+   "part": "leg_front_near",
+   "parent": "shell",
+   "at": [
+    58,
+    -8
+   ],
+   "layer": 0.8,
+   "bounds": [
+    -20.0,
+    -42.0,
+    22.0,
+    10.0
+   ]
+  },
+  {
+   "part": "leg_back_near",
+   "parent": "shell",
+   "at": [
+    -62,
+    -8
+   ],
+   "layer": 0.8,
+   "bounds": [
+    -20.0,
+    -39.0,
+    22.0,
+    10.0
+   ]
+  }
+ ],
+ "units": "mm, y up"
+}
