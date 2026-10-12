@@ -163,8 +163,8 @@ function silhouette(ctx, list, o) {
 // ------------------------------------------------------------------ 工笔
 function gongbi(ctx, list, o) {
   const s = o.s ?? 6;
-  const ink = o.ink ?? '#3a2b24';
-  const lw = Math.max(0.9, (o.lw ?? 0.16) * s);
+  const ink = o.ink ?? '#231915';
+  const lw = Math.max(1.7, (o.lw ?? 0.3) * s);
   ctx.save();
   ctx.lineJoin = 'round'; ctx.lineCap = 'round';
   // 整体外轮廓：所有纸片先描双倍宽的线，再上色（重叠处的内线被盖住）——同一组的人物只有一条连续的外轮廓
@@ -176,13 +176,15 @@ function gongbi(ctx, list, o) {
   }
   for (const pc of list) {
     ctx.save();
+    ctx.filter = 'saturate(0.72) sepia(0.18)';   // 矿物色：偏灰、偏暖
     if (pc.under && pc._cut) { ctx.fillStyle = pc.under; ctx.fill(pc._p); }
     ctx.fillStyle = pc.fill; ctx.fill(pc._cut || pc._p, 'evenodd');
+    ctx.filter = 'none';
     ctx.clip(pc._p);
     // 渲染：边缘往里一层层加深
     if (!pc.emissive && !pc.flatColor) {
       ctx.filter = `blur(${s * 0.9}px)`;
-      ctx.strokeStyle = pc.shade ?? 'rgba(80,50,40,0.22)'; ctx.lineWidth = s * 1.6; ctx.stroke(pc._p);
+      ctx.strokeStyle = pc.shade ?? 'rgba(70,40,30,0.32)'; ctx.lineWidth = s * 2.2; ctx.stroke(pc._p);
       ctx.filter = 'none';
     }
     // 内线：压在别的纸片上的那部分边（袖口、领子、刘海）
@@ -199,7 +201,7 @@ function gongbi(ctx, list, o) {
 }
 
 // 绢的纹理（工笔画面最后叠一层）
-export function silk(ctx, W, H, a = 0.12) {
+export function silk(ctx, W, H, a = 0.16) {
   const N = 6;
   ctx.save();
   ctx.globalCompositeOperation = 'multiply';
