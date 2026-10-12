@@ -15,7 +15,8 @@
 | `docs/design/` | 画风方向、人物 / 皮影 / 场景设计说明 |
 | `docs/ai-usage-log.md` | AI 使用记录（哪些是 AI 做的，哪些是团队的决定） |
 | `src/laidian/layout.py` | 堂屋布局：全片唯一的空间数据来源 |
-| `js/` | 第二版（2D）：绘制库、人物、皮影与影子、镜头、设计稿 |
+| `js/lamp/` | 第四版：光照引擎、人物卡片、皮影与布景、关键镜头 |
+| `js/` | 第二、三版（2D、剪纸片）：绘制库、人物、皮影与影子、镜头、设计稿 |
 | `src/laidian/render/` | 第一版（3D）渲染器，保留作过程记录 |
 | `src/laidian/shots/` | 各个镜头 / 样张 / 设计稿的脚本 |
 | `tools/` | 平面图、能量曲线、检查用的小工具 |
@@ -23,7 +24,21 @@
 | `PROGRESS.md` | 进度 |
 | `CREDITS.md` | 素材来源与授权 |
 
-## 当前技术路线（第二版：2D）
+## 当前技术路线（第四版："一盏灯照亮的世界"）
+屋子、床单、马灯、月光按真实尺寸建模，在 WebGL 着色器里逐像素计算光照（无头 Chromium 自带的 SwiftShader 软件渲染，结果和显卡无关）；
+人物是 2D 设计的"卡片"，由轮廓算法线后参与同一套光照；皮影是刻花、染色的牛皮透光图，床单上的影子由 `js/shadowplay.js` 按几何投影。
+- `js/lamp/gl.js`、`js/lamp/shaders.js`：渲染遍（表面 → 空气散射 → 合成 → 泛光 → 调色）
+- `js/lamp/cards.js`：由轮廓算法线（精确欧氏距离变换）；`js/lamp/xiaoman.js`：小满
+- `js/lamp/crane.js`：鹤皮影；`js/lamp/scenery.js`：皮影布景（荷塘、松枝）
+- `js/lamp/s06_key.js`：第 6 场关键镜头（场景尺寸、镜头、动作）；`xm_sheet.js`、`crane_sheet.js`：造型检查图
+
+```bash
+npm install
+node tools/js/snap.cjs js/lamp/s06_key.js key.png 1920 1080 3.0            # 静帧（参数 = 时间，秒）
+node tools/js/frames.cjs js/lamp/s06_key.js build/key --fps 24 --workers 3 --mp4 key.mp4   # 5 秒动态
+```
+
+## 第二版技术路线（2D，已被取代）
 画面由 `js/` 里的 JavaScript 在 Canvas 上逐帧绘制，用无头 Chromium（Playwright）逐帧导出、ffmpeg 合成。每一帧是时间的纯函数。
 - `js/lib/`：手绘笔触、一笔画成的人物（连续外轮廓）、亮边、光照图
 - `js/chars/`：小满、奶奶（正面/侧面/背面）、五官、手

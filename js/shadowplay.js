@@ -60,8 +60,8 @@ export function sheetImage(sheet, lamp, actors, k = 520, o = {}) {
           const blur = (lamp.core * p1[3]) / (D - p1[3]) * k;
           ox.save();
           ox.globalCompositeOperation = 'multiply';
-          ox.globalAlpha = Math.max(0.15, 0.85 - blur * 0.02);
-          ox.filter = `blur(${Math.min(30, blur * 0.5).toFixed(1)}px)`;
+          ox.globalAlpha = Math.max(o.rodMin ?? 0.15, (o.rodA ?? 0.85) - blur * (o.rodFade ?? 0.02));
+          ox.filter = `blur(${Math.min(o.rodBlurMax ?? 30, blur * (o.rodBlur ?? 0.5)).toFixed(1)}px)`;
           ox.strokeStyle = '#4a3a2c';
           ox.lineWidth = Math.max(1, 0.005 * p1[2] * k);
           ox.lineCap = 'round';
@@ -109,5 +109,6 @@ export function sheetImage(sheet, lamp, actors, k = 520, o = {}) {
   for (const v of [H / 2]) { ix.beginPath(); ix.moveTo(0, v); ix.lineTo(W, v + 5); ix.stroke(); }
   // ---- 3. 乘上影子
   ix.drawImage(mask, 0, 0);
-  return { canvas: img, W, H, k };
+  // o.split：另外交出影子图本身（亮度由调用方用浮点精确地算，避免 8 位渐变的色带）
+  return { canvas: img, mask: o.split ? mask : null, W, H, k };
 }
