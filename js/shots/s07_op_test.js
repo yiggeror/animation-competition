@@ -89,8 +89,8 @@ export async function renderFrame(ctx, t, W, H) {
     head: { nod: 0.4 + 0.5 * look, tilt: 0.04 * Math.sin(t * 1.7) },
     face: { look: [0.6, 0.6], smile, happyEyes: smile > 0.7 ? 1 : 0, blink: blink(t, [1.2, 3.1]), open: 0.95 },
     // 手的目标：画面坐标换回奶奶的身体坐标（厘米）
-    armN: { hand: [(hBody[0] - NN_AT[0]) / 6.2, (hBody[1] - NN_AT[1]) / 6.2], hp: 'grip', bend: 1, rot: -0.35 },
-    armF: { hand: [(hHead[0] - NN_AT[0]) / 6.2, (hHead[1] - NN_AT[1]) / 6.2], hp: 'grip', bend: 1, rot: -0.35 },
+    armN: { hand: [(hBody[0] - NN_AT[0]) / 6.2, (hBody[1] - NN_AT[1]) / 6.2], hp: 'grip', bend: -1, rot: -0.35 },
+    armF: { hand: [(hHead[0] - NN_AT[0]) / 6.2, (hHead[1] - NN_AT[1]) / 6.2], hp: 'grip', bend: -1, rot: -0.35 },
   };
   // 签子（画在奶奶后面一层：远侧的手握头签）
   line(ctx, [aHead, hHead], { lw: 3, stroke: '#7a5a3a', seed: 21 });

@@ -279,7 +279,7 @@ function armSide(fig, P, D, side, up, sh, z, tone, lw) {
   const A = P['arm' + side] || {};
   const S = up([side === 'N' ? 0.4 : -0.6, D.shoulder[1] + sh]);
   const W0 = A.hand || (side === 'N' ? [2.8, -54.2] : [-1.6, -54.6]);
-  const sol = ik2(S, W0, D.upper, D.fore, A.bend ?? 1);
+  const sol = ik2(S, W0, D.upper, D.fore, A.bend ?? -1);   // 侧面（面朝 +x）：肘只能朝下、朝后
   const E = A.elbow || sol.joint, W = A.elbow ? W0 : sol.end;   // 够不着时手停在最远处，胳膊不会被拉长   // 肘尖朝后（-x）
   const arm = tube([S, lerpP(S, E, 0.5), E, lerpP(E, W, 0.5), W], [[0, 1.95], [0.45, 1.7], [0.55, 1.55], [1, 1.2]], { capStart: 'round', capEnd: 'flat', step: 0.5 });
   fig.part('arm' + side, arm.outline, { fill: tone, z: A.z ?? z, inner: side === 'N' });
