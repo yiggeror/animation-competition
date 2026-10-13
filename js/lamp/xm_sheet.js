@@ -3,14 +3,14 @@ import * as XM from './xiaoman.js';
 import { Cards } from './cards.js';
 
 export async function render(ctx, arg, W, H) {
-  const s = 11;   // 每厘米像素
+  const s = +(arg || 11);   // 每厘米像素
   const panels = 3, pw = W / panels;
   ctx.fillStyle = '#6b6560'; ctx.fillRect(0, 0, W, H);
   const cards = new Cards(W, H);
   for (let k = 0; k < panels; k++) {
     const ox = pw * k + pw * 0.3, oy = H * 0.7;
     const map = ([x, y]) => [ox + x * s, oy - y * s];
-    for (const p of XM.parts(map, {}, s)) cards.add(p, 2.0);
+    cards.addAll(XM.parts(map, {}, s), 2.0);
   }
   const a = cards.a.getImageData(0, 0, W, H), n = cards.n.getImageData(0, 0, W, H);
   const out = ctx.getImageData(0, 0, W, H);

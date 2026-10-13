@@ -6,7 +6,7 @@ import { GL } from './gl.js';
 import * as SH from './shaders.js';
 import { sheetImage } from '../shadowplay.js';
 import { makeCrane } from './crane.js';
-import { makePond, makePine } from './scenery.js';
+import { makePond, makeWillow } from './scenery.js';
 import * as XMC from './xiaoman.js';
 import { Cards } from './cards.js';
 
@@ -19,7 +19,7 @@ export const S = {
   quiltL: [-1.7, 0.232, 0.10, 1.95],
   quiltR: [2.368, 4.5, 0.14, 1.95],
   wireZ: 1.99, pin0: 0.30, pinDx: 0.35,
-  lamp: { x: 1.50, y: 0.70, z: 1.34, core: 0.011, globe: 0.055, rgb: [1.0, 0.58, 0.24] },
+  lamp: { x: 1.52, y: 0.70, z: 1.30, core: 0.011, globe: 0.055, rgb: [1.0, 0.58, 0.24] },
   moon: { dir: [-0.88, 0.18, 0.44], rgb: [0.30, 0.42, 0.78] },
   window: [-2.3, -1.0, 0.9, 1.9],
   beams: [-1.7, 0.75, 1.45], beamZ0: 2.44,
@@ -45,7 +45,7 @@ function xmProxy() {
     sp(L(J.knee, J.ankle, 0.5), 0.045, 0.06), sp(L(J.knee, J.ankle, 0.5), 0.045, -0.06), sp([0, -11], 0.12)];
 }
 S.occ = xmProxy();
-export const CRANE_ROOT = [1.34, 0.98];
+export const CRANE_ROOT = [1.36, 0.66];
 
 // ---------------------------------------------------------------- 镜头
 export function camera(W, H, o = {}) {
@@ -76,8 +76,10 @@ function cranePose(t) {
   const r = raiseAt(t), angles = {};
   for (let i = 0; i < 12; i++) angles['neck' + i] = NECK_LOW[i] + (NECK_UP[i] - NECK_LOW[i]) * r;
   const look = t > 2.5 ? 0.07 * Math.sin((t - 2.5) * 2.2) * Math.exp(-(t - 2.5) * 0.25) : 0;
+  // 抬起的那条腿没装签子，身子一动它就跟着晃（惯性），慢慢停下来——皮影动作的"韵味"
+  const swing = 0.10 * Math.sin((t - 1.0) * 5.2) * Math.exp(-Math.max(0, t - 1.0) * 0.9) * (t > 1.0 ? 1 : 0);
   Object.assign(angles, { head: NECK_LOW[12] + (NECK_UP[12] - NECK_LOW[12]) * r + look,
-    tibia_near: 0.55, tarsus_near: -1.25, foot_near: 0.55, tibia_far: -0.05, tarsus_far: 0.02, foot_far: 0.03 });
+    tibia_near: 0.55 + swing, tarsus_near: -1.25 - swing * 0.6, foot_near: 0.55 + swing * 0.4, tibia_far: -0.05, tarsus_far: 0.02, foot_far: 0.03 });
   return { angles, rootAngle: 0.04 + 0.05 * (1 - Math.min(1, r)), facing: 1 };
 }
 // ---------------------------------------------------------------- 被子、毯子的花色（2D 画）
@@ -112,13 +114,13 @@ function quiltTex(kind) {
 }
 
 // ---------------------------------------------------------------- 渲染
-let G = null, crane = null, cranePal = null, QUILTS = null, CARDS = null, POND = null, PINE = null;
+let G = null, crane = null, cranePal = null, QUILTS = null, CARDS = null, POND = null, WILLOW = null;
 // 小满：呼吸；跟着鹤抬头（慢半拍）；鹤扬起头那一下嘴张大；4 秒多眨一次眼
 function xmPose(t) {
   const r = Math.min(1.05, raiseAt(t - 0.3));
   const bl = Math.max(0, 1 - Math.abs(t - 4.15) / 0.09);
-  return { lean: 0.35 + 0.012 * Math.sin((t / 3.4) * 6.283) + 0.02 * r, headUp: 0.27 + 0.08 * r, mouth: 0.45 + 0.45 * sstep(2.0, 2.6, t) * (1 - 0.5 * sstep(3.6, 4.6, t)),
-    blink: Math.min(1, bl * 1.6), pig: 0.03 * Math.sin(t * 1.3) - 0.04 * sstep(1.3, 2.6, t) };
+  return { headUp: 0.22 + 0.10 * r, breathe: Math.sin((t / 3.4) * 6.283), mouth: 0.4 + 0.45 * sstep(2.0, 2.6, t) * (1 - 0.5 * sstep(3.6, 4.6, t)),
+    blink: Math.min(1, bl * 1.6), pig: 0.03 * Math.sin(t * 1.3) - 0.05 * sstep(1.3, 2.6, t) };
 }
 
 export async function render(ctx, arg, W, H) {
@@ -129,7 +131,7 @@ export async function render(ctx, arg, W, H) {
 export async function renderFrame(ctx, t, W, H) {
   const pal = DEBUG.palette || 'plain';
   if (cranePal !== pal) { crane = makeCrane(1.35, pal); cranePal = pal; }
-  POND ||= makePond(); PINE ||= makePine();
+  POND ||= makePond(); WILLOW ||= makeWillow();
   if (!G || G.W !== W || G.H !== H) G = new GL(W, H);
   QUILTS ||= { L: quiltTex('L'), R: quiltTex('R') };
   const cam = camera(W, H, DEBUG.cam || {});
@@ -141,8 +143,8 @@ export async function renderFrame(ctx, t, W, H) {
   const lampSP = { x: L.x, z: L.z, D: L.y, core: L.core, globe: L.globe, coreW: 1.0, globeW: 0.55, rgb: [255, 200, 128], I: 1.32 };
   const still = { angles: {}, rootAngle: 0, facing: 1 };
   const img = sheetImage(sh, lampSP, [
-    { pup: POND, pose: still, root: [1.30, 0.46], dist: 0.003 },
-    { pup: PINE, pose: { ...still, rootAngle: -0.05 }, root: [sh.x0 + 0.03, sh.z1 - 0.13], dist: 0.003 },
+    { pup: POND, pose: still, root: [1.30, 0.34], dist: 0.003 },
+    { pup: WILLOW, pose: { ...still, rootAngle: -0.03 }, root: [sh.x0 + 0.05, sh.z1 - 0.13], dist: 0.003 },
     { pup: crane, pose: cranePose(t), root, dist,
     rods: [{ part: 'body', at: [10, 8], hand: [root[0] - 0.02, root[1] - 0.10, 0.42] }, { part: 'neck3', at: [10, 0], hand: [root[0] + 0.20, root[1] + 0.10, 0.42] }] }], 900, { split: true, rodMin: 0.06, rodA: 0.8, rodFade: 0.05, rodBlur: 1.0, rodBlurMax: 46 });
   const patches = patchRadiance(img.mask, sh, L, flick);
@@ -153,7 +155,7 @@ export async function renderFrame(ctx, t, W, H) {
   {
     const c0 = cam.project(xmWorld([0, 0])), depth = c0[2], sc = c0[3] / 100;
     const map = (p) => { const r = cam.project(xmWorld(p)); return [r[0], r[1]]; };
-    for (const p of XMC.parts(map, xmPose(t), sc)) CARDS.add(p, depth);
+    CARDS.addAll(XMC.parts(map, xmPose(t), sc), depth);
   }
   const cards = { alb: CARDS.alb, nrm: CARDS.nrm, mat: CARDS.mat };
 
@@ -166,7 +168,7 @@ export async function renderFrame(ctx, t, W, H) {
   gl.program('scene', SH.sceneFS(S)); gl.program('fog', SH.fogFS(S)); gl.program('combine', SH.combineFS);
   gl.program('down', SH.downFS); gl.program('blur', SH.blurFS); gl.program('final', SH.finalFS);
   const U = { uRes: [W, H], uCam: cam.C, uFwd: cam.fwd, uRight: cam.right, uUp: cam.up, uFocal: cam.focal,
-    uLamp: [L.x, L.y, L.z], uLampI: 1.0 * flick, uPatch: patches.map((p) => p * flick), uTime: t };
+    uLamp: [L.x, L.y, L.z], uLampI: 1.0 * flick, uCardDbg: DEBUG.card || 0, uPatch: patches.map((p) => p * flick), uTime: t };
   const tScene = gl.target('scene', W, H);
   gl.draw('scene', tScene, U, { uSheet: gl.texs.sheet, uQuiltL: gl.texs.qL, uQuiltR: gl.texs.qR, uAlb: gl.texs.alb, uNrm: gl.texs.nrm, uMat: gl.texs.mat });
   const fw = Math.round(W / 4), fh = Math.round(H / 4);

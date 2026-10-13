@@ -133,17 +133,19 @@ vec3 sheetE(vec3 P, vec3 N, float wrap, bool shadows) {
   return E;
 }
 // ---------------- 月光：从右墙窗户进来的平行光（窗框十字）
-float moonVis(vec3 P) {
+// bars = false：不算窗框的十字影子（人物身上用——一道细窗框影子横在胳膊上，看起来像关节缝）
+float moonVisB(vec3 P, bool bars) {
   float s = ((MOON_L.x > 0.0 ? B1.x : B0.x) - P.x) / MOON_L.x; vec3 W = P + s * MOON_L;
   float pen = 0.004 + 0.0045 * s;
   float inWin = (1.0 - smoothstep(-pen, pen, max(max(WIN.x - W.y, W.y - WIN.y), max(WIN.z - W.z, W.z - WIN.w))));
   float my = 0.5 * (WIN.x + WIN.y), mz = WIN.z + 0.62 * (WIN.w - WIN.z);
   float bar = max(1.0 - smoothstep(0.02 - pen, 0.02 + pen, abs(W.y - my)), 1.0 - smoothstep(0.018 - pen, 0.018 + pen, abs(W.z - mz)));
-  return inWin * (1.0 - bar);
+  return bars ? inWin * (1.0 - bar) : inWin * 0.85;
 }
+float moonVis(vec3 P) { return moonVisB(P, true); }
 vec3 moonE(vec3 P, vec3 N, bool shadows) {
   float c = dot(N, MOON_L); if (c <= 0.0) return vec3(0);
-  float v = moonVis(P); if (v <= 0.0) return vec3(0);
+  float v = moonVisB(P, shadows); if (v <= 0.0) return vec3(0);
   if (shadows) v *= occFront(P, P + MOON_L * 4.0, 0.0045);
   return MOON_RGB * c * v;
 }
@@ -154,6 +156,7 @@ vec3 moonE(vec3 P, vec3 N, bool shadows) {
 export function sceneFS(S) {
   return common(S) + `
 uniform sampler2D uSheet, uQuiltL, uQuiltR, uAlb, uNrm, uMat;
+uniform float uCardDbg;
 
 // 盒子从里面射出去
 float roomExit(vec3 ro, vec3 rd, out vec3 n) {
@@ -219,7 +222,7 @@ vec3 shadeDiffuse(vec3 P, vec3 N, vec3 alb, bool shadows) {
 
 // ---------------- 卡片（人物、道具）
 vec3 shadeCard(vec3 P, vec3 N, vec3 V, vec3 alb, float mat, float extra) {
-  int m = int(mat * 255.0 + 0.5);
+  int m = int(mat * 255.0 / 30.0 + 0.5);   // cards.js 里材质号 × 30 存的
   float wrap = m == 1 ? 0.6 : (m == 2 ? 0.3 : 0.55);
   // 地面反光：床单前面被照亮的地面把暖光从下往上反到人身上（离床单越近越亮）
   vec3 fl = vec3(P.x + 0.25, -0.35, 0.0) - P; vec3 fw = normalize(fl);
@@ -347,6 +350,9 @@ void main() {
       vec3 N = normalize(uRight * ns.x + uUp * ns.y - uFwd * ns.z);
       vec3 Pc = ro + rd * dc;
       vec3 cc = shadeCard(Pc, N, -rd, pow(al.rgb, vec3(2.2)), mt.g, mt.b);
+      if (uCardDbg > 0.5 && uCardDbg < 1.5) cc = pow(al.rgb, vec3(2.2)) * 0.2;
+      if (uCardDbg > 1.5 && uCardDbg < 2.5) cc = pow(nr.rgb, vec3(2.2)) * 0.2;
+      if (uCardDbg > 2.5) cc = vec3(mt.g * 255.0 / 120.0, mt.b, mt.r) * 0.2;
       col = mix(col, cc, nr.a);
       depth = mix(t, dc, step(0.5, nr.a));
     }
@@ -458,12 +464,9 @@ vec3 aces(vec3 x) { return clamp((x * (2.51 * x + 0.03)) / (x * (2.43 * x + 0.59
 float hash12(vec2 p) { vec3 p3 = fract(vec3(p.xyx) * 0.1031); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.x + p3.y) * p3.z); }
 void main() {
   vec2 px = uv * uRes;
-  // 轻微的色差（画面边缘）
-  vec2 cuv = uv - 0.5; float r2 = dot(cuv, cuv);
-  vec3 c;
-  c.r = texture(uSrc, 0.5 + cuv * (1.0 + 0.0016 * r2 * 4.0)).r;
-  c.g = texture(uSrc, uv).g;
-  c.b = texture(uSrc, 0.5 + cuv * (1.0 - 0.0016 * r2 * 4.0)).b;
+  // （不做色差：在高动态范围下，眼睛高光、浮尘这种小亮点会被线性插值漏到旁边，出红蓝边）
+  vec2 cuv = uv - 0.5;
+  vec3 c = texture(uSrc, uv).rgb;
   vec3 b1 = texture(uB1, uv).rgb, b2 = texture(uB2, uv).rgb, b3 = texture(uB3, uv).rgb;
   vec3 bloom = b1 * 0.5 + b2 * 0.35 + b3 * 0.35;
   c += bloom * uBloom;

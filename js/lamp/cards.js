@@ -6,6 +6,7 @@
 //            detail(ctx): 在这块形状上画细节（只进固有色）, shadow: 投在下面部件上的接触阴影（像素）, noNormal: 只画颜色 }
 // 材质号：0 普通 1 皮肤 2 头发 3 布（有绒毛逆光） 4 眼睛高光（映着床单） 7 牛皮（马灯透过来）
 
+export const MAT_STEP = 30;
 const POOL = {};
 function scratch(key, W, H) {
   let c = POOL[key];
@@ -55,7 +56,7 @@ function normalTile(alpha, w, h, R, tilt = [0, 0], flat = 0) {
   // 圆弧截面的高度；再轻轻模糊一下，免得中轴线上出现折痕
   const hgt = new Float32Array(w * h);
   for (let i = 0; i < w * h; i++) { const u = Math.min(d[i] + 0.5, R) / R; hgt[i] = inside[i] ? R * Math.sqrt(Math.max(0, 1 - (1 - u) * (1 - u))) : 0; }
-  const bl = boxBlur(hgt, w, h, Math.max(1, Math.round(R * 0.08)));
+  const bl = boxBlur(boxBlur(hgt, w, h, Math.max(1, Math.round(R * 0.12))), w, h, Math.max(1, Math.round(R * 0.12)));
   const out = new Uint8ClampedArray(w * h * 4);
   for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
     const i = y * w + x;
@@ -91,8 +92,57 @@ export class Cards {
     [this.alb, this.a] = mk(); [this.nrm, this.n] = mk(); [this.mat, this.m] = mk();
   }
   clear() { for (const x of [this.a, this.n, this.m]) { x.setTransform(1, 0, 0, 1, 0, 0); x.clearRect(0, 0, this.W, this.H); } }
-  // depth：离镜头的距离（米）
-  add(part, depth) {
+  // 一个人物的所有部件（从后往前）。同一 group 的部件（比如上臂、前臂、拳头）合成一个轮廓算法线，
+  // 这样手腕、膝盖、脚踝这些地方是一整块连续的肉，不会出现"木偶关节"那样的接缝；颜色和细节仍然按部件画。
+  addAll(parts, depth) {
+    const groups = {};
+    for (const p of parts) if (p.group && !p.noNormal) (groups[p.group] ||= []).push(p);
+    const tiles = {};
+    for (const [g, ps] of Object.entries(groups)) {
+      let a = Infinity, b = Infinity, c = -Infinity, d = -Infinity;
+      for (const p of ps) { a = Math.min(a, p.bbox[0]); b = Math.min(b, p.bbox[1]); c = Math.max(c, p.bbox[2]); d = Math.max(d, p.bbox[3]); }
+      const x0 = Math.max(0, Math.floor(a) - 4), y0 = Math.max(0, Math.floor(b) - 4);
+      const x1 = Math.min(this.W, Math.ceil(c) + 4), y1 = Math.min(this.H, Math.ceil(d) + 4);
+      const w = x1 - x0, h = y1 - y0;
+      if (w <= 0 || h <= 0) continue;
+      const [mc, mx] = scratch('mask', w, h);
+      mx.translate(-x0, -y0); mx.fillStyle = '#fff';
+      for (const p of ps) mx.fill(p.path, p.rule || 'nonzero');
+      const alpha = mx.getImageData(0, 0, w, h).data;
+      const lead = ps.find((p) => p.groupR) || ps[0];
+      const tile = normalTile(alpha, w, h, Math.max(1.5, lead.groupR ?? lead.R), lead.tilt, lead.flat || 0);
+      const cv = new OffscreenCanvas(w, h);
+      cv.getContext('2d').putImageData(new ImageData(tile, w, h), 0, 0);
+      tiles[g] = { cv, x0, y0 };
+    }
+    for (const p of parts) this.add(p, depth, p.group ? tiles[p.group] : null);
+    this.cleanMat(parts);
+  }
+  // 材质图上，两种材质交界处抗锯齿会混出中间值（比如皮肤 30 和眼睛高光 120 混成 75，会被当成"布"打光）。
+  // 把这些像素换成旁边干净像素的材质号——材质边界不需要抗锯齿，颜色和法线本来就是平滑的。
+  cleanMat(parts) {
+    let a = Infinity, b = Infinity, c = -Infinity, d = -Infinity;
+    for (const p of parts) { a = Math.min(a, p.bbox[0]); b = Math.min(b, p.bbox[1]); c = Math.max(c, p.bbox[2]); d = Math.max(d, p.bbox[3]); }
+    const x0 = Math.max(0, Math.floor(a) - 2), y0 = Math.max(0, Math.floor(b) - 2), x1 = Math.min(this.W, Math.ceil(c) + 2), y1 = Math.min(this.H, Math.ceil(d) + 2);
+    const w = x1 - x0, h = y1 - y0;
+    if (w <= 0 || h <= 0) return;
+    const img = this.m.getImageData(x0, y0, w, h), D = img.data;
+    const clean = (g) => { const r = g % MAT_STEP; return r <= 3 || r >= MAT_STEP - 3; };
+    const src = new Uint8ClampedArray(D);
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+      const i = (y * w + x) * 4;
+      if (!D[i + 3] || clean(src[i + 1])) continue;
+      let best = -1;
+      for (const [dx, dy] of [[-1, 0], [1, 0], [0, -1], [0, 1], [-1, -1], [1, 1], [1, -1], [-1, 1], [-2, 0], [2, 0], [0, -2], [0, 2]]) {
+        const xx = x + dx, yy = y + dy; if (xx < 0 || yy < 0 || xx >= w || yy >= h) continue;
+        const j = (yy * w + xx) * 4; if (src[j + 3] > 200 && clean(src[j + 1])) { best = j; break; }
+      }
+      if (best >= 0) { D[i + 1] = Math.round(src[best + 1] / MAT_STEP) * MAT_STEP; D[i] = src[best]; D[i + 2] = src[best + 2]; }
+    }
+    this.m.putImageData(img, x0, y0);
+  }
+  // depth：离镜头的距离（米）；gtile：这块所在组合起来算好的法线（有的话）
+  add(part, depth, gtile = null) {
     const { W, H } = this;
     const path = part.path;
     // 包围盒（多留一点边）
@@ -118,17 +168,23 @@ export class Cards {
     if (part.detail) { this.a.clip(path, part.rule || 'nonzero'); part.detail(this.a); }
     this.a.restore();
     if (part.noNormal) return;
-    // 法线
-    const [mc, mx] = scratch('mask', w, h);
-    mx.translate(-x0, -y0); mx.fillStyle = '#fff'; mx.fill(path, part.rule || 'nonzero');
-    const alpha = mx.getImageData(0, 0, w, h).data;
-    const tile = normalTile(alpha, w, h, Math.max(1.5, part.R), part.tilt, part.flat || 0);
-    const [tc, tx] = scratch('tile', w, h);
-    tx.putImageData(new ImageData(tile, w, h), 0, 0);
-    this.n.drawImage(tc, x0, y0);
-    // 材质：R = 深度/8，G = 材质号，B = extra
+    // 法线（keepNormal：不改下面的法线，只换材质——比如眼睛里的高光点）
+    if (part.keepNormal) {
+    } else if (gtile) {
+      this.n.save(); this.n.clip(path, part.rule || 'nonzero'); this.n.drawImage(gtile.cv, gtile.x0, gtile.y0); this.n.restore();
+    } else {
+      const [mc, mx] = scratch('mask', w, h);
+      mx.translate(-x0, -y0); mx.fillStyle = '#fff'; mx.fill(path, part.rule || 'nonzero');
+      const alpha = mx.getImageData(0, 0, w, h).data;
+      const tile = normalTile(alpha, w, h, Math.max(1.5, part.R), part.tilt, part.flat || 0);
+      const [tc, tx] = scratch('tile', w, h);
+      tx.putImageData(new ImageData(tile, w, h), 0, 0);
+      this.n.drawImage(tc, x0, y0);
+    }
+    // 材质：R = 深度/8，G = 材质号 × 30（间隔拉大：部件边缘抗锯齿混合时 8 位取整会把 1 舍成 0，
+    // 那一圈像素就被当成别的材质打光，显出一道"关节缝"），B = extra
     this.m.save();
-    this.m.fillStyle = `rgb(${Math.round((depth / 8) * 255)},${part.mat || 0},${Math.round((part.extra || 0) * 255)})`;
+    this.m.fillStyle = `rgb(${Math.round((depth / 8) * 255)},${(part.mat || 0) * MAT_STEP},${Math.round((part.extra || 0) * 255)})`;
     this.m.fill(path, part.rule || 'nonzero');
     this.m.restore();
   }

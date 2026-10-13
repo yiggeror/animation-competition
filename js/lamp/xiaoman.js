@@ -1,6 +1,9 @@
-// 小满（9 岁）：坐在小板凳上抱着膝盖，抬头看床单上的鹤。侧面（脸朝右）。
+// 小满（9 岁，约 1.32 米）：坐在小板凳上，身子前倾、手肘撑在膝盖上、两只拳头托着下巴，抬头看床单上的鹤。侧面（脸朝右）。
 // 局部坐标：厘米，x 朝她面朝的方向，y 朝上，原点在板凳面的中心；地面 y = -22。
-// 每个部件是一块平滑的形状；颜色是固有色，明暗全部交给场景里的光去算（cards.js 由轮廓算法线）。
+// 比例按 9 岁女孩的人体尺寸（头略放大一点）：上臂 20、前臂 16.5、拳头 7、大腿 30、小腿 28、脚 18 厘米。
+// 姿势是解出来的：手肘落在膝盖上 → 上臂长度定出身体前倾多少；拳头顶着下巴、脖子保持 6～7 厘米 → 定出前臂角度和头的位置。
+// 同一块皮肉（上臂-前臂-拳头、大腿-小腿-脚）是一个"组"，法线合起来算，手肘、手腕、膝盖、脚踝不出接缝。
+// 颜色是固有色，明暗全部交给场景里的光去算（cards.js 由轮廓算法线）。
 import { catmull } from '../lib/draw.js';
 import { tube } from '../lib/figure.js';
 import { bboxOf } from './cards.js';
@@ -32,7 +35,6 @@ function ellipse(cx, cy, rx, ry, rotA = 0, n = 28) {
 // pose：{ lean 身体前倾（弧度）, headUp 抬头（弧度）, mouth 0..1, blink 0..1, pig 辫子摆动（弧度）, breathe 0..1 }
 // map(p)：局部厘米 → 画面像素
 export function parts(map, pose = {}, s = 7) {
-  const lean = pose.lean ?? 0.36, headUp = pose.headUp ?? 0.34;
   const P = [];
   const toPath = (pts, smooth = true, per = 6) => {
     const q = (smooth ? catmull(pts, true, per) : pts).map(map);
@@ -56,27 +58,42 @@ export function parts(map, pose = {}, s = 7) {
   const part = (name, pts, o) => P.push({ name, ...toPath(pts, o.smooth ?? pts.length < 60), ...o, R: (o.R ?? 3) * s, shadow: o.shadow ? [o.shadow[0] * s, -o.shadow[1] * s, (o.shadow[2] ?? 0.8) * s, o.shadow[3] ?? 0.4] : null });
   const tubeL = (spine, widths, o = {}) => tube(spine, widths.map((w, i) => [i / (widths.length - 1), w]), { step: 0.4, ...o }).outline;
 
-  // ---------------- 骨架
-  const hip = [0, 8];
-  const ankle = [25, -16.0], ankleF = [28.0, -16.1];
-  const leg = ik(hip, ankle, 27, 24.5, 1);          // 膝盖往上拱
-  const knee = leg.joint;
-  const legF = ik(add(hip, [1.0, 0.5]), ankleF, 27, 24.5, 1), kneeF = legF.joint;
-  const up = rot([0, 1], -lean);                  // 身体轴（往前倾 = 往 +x 歪）
-  const along = (d, side = 0) => add(add(hip, [up[0] * d, up[1] * d]), [up[1] * side, -up[0] * side]);
-  const neck0 = along(33, 1.0), shoulder = along(28.5, -0.8);
-  const head = add(neck0, rot([2.0, 6.3], -lean * 0.3));
-  const hr = headUp - lean * 0.15;               // 头相对竖直方向的转角（抬头为正）
+  // ---------------- 骨架（解出来的姿势）
   const HS = 1.1;
+  const norm = (v) => { const l = Math.hypot(v[0], v[1]) || 1; return [v[0] / l, v[1] / l]; };
+  const mul = (v, k) => [v[0] * k, v[1] * k];
+  const dir = (a) => [Math.cos(a), Math.sin(a)];
+  const hip = [0, 8];
+  const ankle = [22.5, -15.5], ankleF = [25.0, -15.6];
+  const knee = ik(hip, ankle, 30, 28, 1).joint, kneeF = ik(add(hip, [0.8, 0.4]), ankleF, 30, 28, 1).joint;
+  const td = norm(sub(knee, hip)), tn = [-td[1], td[0]];               // 大腿方向、大腿"上面"的法向
+  const onThigh = (t, o) => add(lerp(hip, knee, t), mul(tn, o));
+  const elbow = add(add(knee, mul(td, -3.2)), mul(tn, 6.4));           // 手肘（尺骨鹰嘴）落在膝盖上方
+  const breathe = pose.breathe ?? 0;
+  const spine = (lam) => { const up = rot([0, 1], -lam); return (d, side = 0) => add(add(hip, mul(up, d)), [up[1] * side, -up[0] * side]); };
+  // 上臂 20 厘米：二分求身体前倾角
+  let lo = 0.05, hi = 1.3;
+  for (let i = 0; i < 40; i++) { const m = (lo + hi) / 2; const S = spine(m)(31, -0.6); (Math.hypot(S[0] - elbow[0], S[1] - elbow[1]) > 20 ? (lo = m) : (hi = m)); }
+  const lean = (lo + hi) / 2, along = spine(lean);
+  const shoulder = add(along(31, -0.6), [0, 0.3 * breathe]), neck0 = add(along(34.2, 1.4), [0, 0.3 * breathe]);
+  // 抬头角 hr；前臂角 phi 取使脖子长度最接近 6.5 厘米的那个
+  const hr = pose.headUp ?? 0.30;
+  const chinL = [6.3, -7.7];
+  let best = null;
+  for (let phi = 0.9; phi <= 2.1; phi += 0.004) {
+    const w = add(elbow, mul(dir(phi), 16.5)), top = add(w, mul(dir(phi), 6.6));
+    const hc = sub(top, rot(mul(chinL, HS), hr));
+    const nb = add(hc, rot(mul([0.6, -5.2], HS), hr));
+    const e = Math.abs(Math.hypot(nb[0] - neck0[0], nb[1] - neck0[1]) - 6.5);
+    if (!best || e < best.e) best = { e, phi, w, hc };
+  }
+  const phi = best.phi, wrist = best.w, head = best.hc;
   const H = (p) => add(head, rot([p[0] * HS, p[1] * HS], hr));        // 头的局部坐标 → 身体坐标
-  // 两只手在下巴底下握在一起（看得入迷、有点激动）
-  const handT = pose.hands === 'knee' ? add(knee, [-6.5, 2.2]) : H([2.6, -12.8]);
-  const arm = ik(shoulder, handT, 15.5, 13.5, -1);
-  const elbow = arm.joint, wrist = arm.end;
+  const sw = pose.pig ?? 0;
 
   // ---------------- 后面的辫子（远侧，大部分被头挡住）
-  const tieF = H([-6.6, -2.2]);
-  part('pigFar', tubeL([tieF, add(tieF, [-3.4, -5.5]), add(tieF, [-3.0, -11.5]), add(tieF, [-1.6, -15.5])], [2.0, 2.1, 1.5, 0.2]),
+  const tieF = H([-7.4, -2.6]);
+  part('pigFar', tubeL([tieF, add(tieF, rot([-3.2, -5.0], sw * 0.4)), add(tieF, rot([-3.6, -10.5], sw * 0.8)), add(tieF, rot([-2.4, -15.0], sw))], [2.0, 2.2, 1.6, 0.25]),
     { fill: C.hair, R: 1.6, mat: 2, extra: 0.8 });
   // ---------------- 板凳
   part('stoolLegB', [[-11, -2], [-8.5, -2], [-10.2, -22], [-12.8, -22]], { fill: C.stoolDark, R: 1.0, smooth: false });
@@ -84,46 +101,53 @@ export function parts(map, pose = {}, s = 7) {
   part('stoolRung', [[-11.2, -13], [11.4, -13], [11.6, -15], [-11.4, -15]], { fill: C.stoolDark, R: 0.8, smooth: false });
   part('stoolSeat', [[-14, 0.5], [14, 0.5], [14, -3], [-14, -3]], { fill: C.stool, R: 1.4, smooth: false,
     detail: (c) => { strokeL(c, [[-13, -1.2], [13, -1.0]], 0.12, 'rgba(60,35,20,0.5)'); } });
-  // ---------------- 远侧的腿（稍微露出一点脚）
-  part('shinF', tubeL([kneeF, lerp(kneeF, ankleF, 0.3), lerp(kneeF, ankleF, 0.65), ankleF], [3.8, 4.0, 3.0, 2.2]), { fill: C.skinDeep, R: 1.6, flat: 0.5, mat: 1 });
-  part('footF', footPts(ankleF), { fill: C.skinDeep, R: 1.6, mat: 1 });
+  // ---------------- 远侧的腿和胳膊（在暗处，颜色深一点；大半被近侧挡住）
+  const legShape = (k, a, grp, fill, extraShadow) => {
+    const kd = norm(sub(k, hip));
+    part(grp + 'Thigh', tubeL([add(hip, mul(kd, -2)), lerp(hip, k, 0.5), add(k, mul(kd, 0.6))], [[5.6, 5.8], [5.0, 5.4], [4.3, 4.4]]), { fill, R: 2.2, flat: 0.4, mat: 1, group: grp, groupR: 2.2 * s });
+    // 小腿：前面（胫骨）直，后面（小腿肚）鼓
+    part(grp + 'Shin', tubeL([add(k, [0, 0.4]), lerp(k, a, 0.32), lerp(k, a, 0.7), a], [[4.0, 4.2], [3.3, 4.9], [2.7, 3.2], [2.1, 2.3]]), { fill, R: 2.2, flat: 0.4, mat: 1, group: grp });
+    part(grp + 'Foot', footPts(a), { fill, R: 2.2, flat: 0.4, mat: 1, group: grp });
+  };
+  legShape(kneeF, ankleF, 'legF', C.skinDeep);
   part('sandalF', sandalPts(ankleF), { fill: C.sole, R: 0.8, smooth: false });
   strapPts(ankleF).forEach((q, i) => part('strapF' + i, q, { fill: '#9e2522', R: 0.8, smooth: false }));
-  // ---------------- 身体 + 裙子
-  const waistB = along(11.5, -6.2), waistF = along(11.5, 5.2), chest = along(21.5, 6.4), backU = along(24.5, -5.8);
-  const collarF = along(31.2, 3.6), collarB = along(31.6, -3.9);
-  // 大腿（在裙子底下，决定膝盖的形）
-  part('thigh', tubeL([add(hip, [-2, 0]), lerp(hip, knee, 0.5), knee], [6.0, 5.4, 4.6]), { fill: C.skin, R: 3.5, mat: 1 });
-  const thighDir = [(knee[0] - hip[0]) / 27, (knee[1] - hip[1]) / 27], thN = [-thighDir[1], thighDir[0]];
-  const onThigh = (t, o) => add(lerp(hip, knee, t), [thN[0] * o, thN[1] * o]);
+  // 远侧的拳头：在近侧拳头后面、略靠前，只露出指节
+  const fd = dir(phi), fp = [-fd[1], fd[0]];
+  const FW = (base, u, v) => add(base, add(mul(fd, u), mul(fp, v)));
+  const wristF = add(wrist, add(mul(fd, 0.6), mul(fp, -1.6)));
+  part('armF', tubeL([add(elbow, [1.4, 0.4]), lerp(add(elbow, [1.4, 0.4]), wristF, 0.5), wristF], [2.2, 2.0, 1.6]), { fill: C.skinDeep, R: 1.8, flat: 0.4, mat: 1, group: 'armF', groupR: 1.8 * s });
+  part('fistF', fistPts().map(([u, v]) => FW(wristF, u, v)), { fill: C.skinDeep, R: 1.8, flat: 0.4, mat: 1, group: 'armF' });
+  // ---------------- 近侧的腿：大腿（大半在裙子里）、膝盖、小腿、脚——一个组，膝盖和脚踝是连着的肉
+  legShape(knee, ankle, 'legN', C.skin);
+  part('sandal', sandalPts(ankle), { fill: C.sole, R: 0.8, smooth: false });
+  strapPts(ankle).forEach((q, i) => part('strap' + i, q, { fill: C.sandal, R: 0.8, smooth: false, shadow: [-0.1, -0.2, 0.3, 0.3] }));
+  // ---------------- 身体 + 裙子：后背微微拱起（身子前倾）；裙子盖住大腿到膝盖上面一点
+  const hemT = 0.8;
   const dress = [
-    collarB, backU, waistB, add(hip, [-7.8, -2.5]), add(hip, [-6.5, -7.6]),             // 后背 → 坐着的臀部（裙子搭在凳面上）
-    [3, -0.4], onThigh(0.5, -5.6), onThigh(0.9, -5.2),                                    // 大腿底下
-    add(knee, [2.8, -4.2]), add(knee, [4.8, -2.6]), add(knee, [5.0, 0.6]),                // 裙摆盖过膝盖
-    onThigh(0.9, 5.4), onThigh(0.55, 6.2), onThigh(0.2, 6.8), waistF,                     // 大腿上面（腿面）
-    chest, collarF,
+    along(33.6, -3.4), along(29.5, -6.0), along(22, -7.0), along(14, -6.8), along(6, -6.6),       // 后背
+    [-7.6, 3.0], [-7.4, -0.6], [-2, -0.9],                                                            // 坐在凳面上的臀部
+    onThigh(0.45, -5.9), onThigh(hemT, -5.4), onThigh(hemT + 0.03, -2.0),                             // 大腿底下 → 裙摆
+    onThigh(hemT + 0.04, 3.0), onThigh(hemT, 6.0), onThigh(0.5, 6.6), onThigh(0.2, 7.2),               // 裙摆 → 腿面
+    along(10, 6.2), along(18, 6.6), along(25, 5.8), along(30.8, 3.4),                                  // 肚子、胸口
   ];
-  part('dress', dress, { fill: C.dress, R: 3.2, flat: 0.4, mat: 3, extra: 0.3, shadow: [-0.3, -0.4, 0.7, 0.35],
+  part('dress', dress, { fill: C.dress, R: 3.0, flat: 0.4, mat: 3, extra: 0.3, shadow: [-0.2, -0.3, 0.5, 0.3],
     detail: (c) => {
-      for (let i = -8; i < 12; i++) for (let j = -3; j < 12; j++) {
-        const q = add(add(hip, [i * 3.3 + (j % 2) * 1.65, j * 3.3]), [0, 0]);
+      for (let i = -8; i < 14; i++) for (let j = -3; j < 14; j++) {
+        const q = add(hip, [i * 3.3 + (j % 2) * 1.65, j * 3.3]);
         const m = map(q); c.fillStyle = 'rgba(251,230,162,0.6)'; c.beginPath(); c.arc(m[0], m[1], 0.4 * s, 0, 6.283); c.fill();
       }
-      // 腰线、腿面上的褶
-      strokeL(c, [along(12, -6.0), along(12.7, 0), along(12, 5.4)], 0.22, 'rgba(160,96,20,0.45)');
-      strokeL(c, [onThigh(0.35, 3), onThigh(0.75, 1.5), add(knee, [3.0, -2.5])], 0.16, 'rgba(160,96,20,0.3)');
-      strokeL(c, [add(hip, [-5, -6]), onThigh(0.45, -4.5)], 0.14, 'rgba(160,96,20,0.3)');
+      // 腰线（前倾时腰在肚子那里折一下）、腿面上布料被拉出的褶、裙摆的一道边
+      strokeL(c, [along(12, -6.6), along(12.4, 0), along(11.5, 6.0)], 0.22, 'rgba(160,96,20,0.45)');
+      strokeL(c, [onThigh(0.25, 4.5), onThigh(0.55, 3.6), onThigh(hemT - 0.02, 2.0)], 0.15, 'rgba(160,96,20,0.3)');
+      strokeL(c, [onThigh(0.3, 2.2), onThigh(0.62, 0.8)], 0.12, 'rgba(160,96,20,0.25)');
+      strokeL(c, [onThigh(hemT - 0.01, 5.6), onThigh(hemT + 0.02, 1), onThigh(hemT - 0.01, -5.0)], 0.3, 'rgba(160,96,20,0.35)');
     } });
   // 白色小圆领
-  part('collar', [collarB, along(34.4, -2.0), along(34.6, 2.4), add(collarF, [1.3, 0.4]), add(along(29.2, 4.2), [0.6, 0]), along(29.7, 0.6), along(30.2, -2.9)],
-    { fill: C.collar, R: 1.4, mat: 3, extra: 0.4, shadow: [-0.3, -0.4, 0.5, 0.35] });
-  // ---------------- 近侧的腿：小腿、脚、红凉鞋
-  part('shin', tubeL([add(knee, [-0.3, 0.6]), lerp(knee, ankle, 0.3), lerp(knee, ankle, 0.65), ankle], [[4.0, 4.0], [3.4, 4.9], [2.9, 3.4], [2.2, 2.4]]), { fill: C.skin, R: 1.8, flat: 0.5, mat: 1, shadow: [-0.4, -0.5, 0.6, 0.3] });
-  part('foot', footPts(ankle), { fill: C.skin, R: 1.8, mat: 1 });
-  part('sandal', sandalPts(ankle), { fill: C.sole, R: 0.8, smooth: false });
-  strapPts(ankle).forEach((q, i) => part('strap' + i, q, { fill: C.sandal, R: 0.8, smooth: false, shadow: [-0.1, -0.2, 0.3, 0.35] }));
+  part('collar', [along(33.8, -3.2), along(35.2, -1.4), along(35.4, 2.2), along(32.6, 4.2), along(30.0, 3.8), along(30.6, 0.4), along(31.2, -2.6)],
+    { fill: C.collar, R: 1.3, flat: 0.3, mat: 3, extra: 0.4, shadow: [-0.2, -0.3, 0.4, 0.3] });
   // ---------------- 脖子、头
-  part('neck', tubeL([H([0.8, -5.0]), lerp(H([0.8, -5.0]), neck0, 0.5), add(neck0, [0, -2.0])], [3.0, 2.9, 3.3]), { fill: C.skinDeep, R: 2.6, mat: 1 });
+  part('neck', tubeL([H([0.6, -4.6]), lerp(H([0.6, -4.6]), neck0, 0.5), add(neck0, [-0.2, -1.6])], [3.2, 3.0, 3.4]), { fill: C.skinDeep, R: 2.4, flat: 0.3, mat: 1 });
   const face = [[2.0, 9.6], [5.6, 7.9], [7.5, 5.2], [8.3, 3.0], [8.0, 1.5], [8.4, 0.3], [9.5, -1.4], [9.6, -2.1], [9.1, -2.5], [8.5, -2.7],
     [8.7, -3.2], [8.95, -3.75], [8.45, -4.2], [8.55, -4.65], [8.2, -5.2], [8.3, -5.9], [7.6, -6.9], [5.8, -7.6], [3.0, -7.2], [0.6, -5.9],
     [-2.2, -3.2], [-4.2, 2.0], [-2.2, 8.2]];
@@ -148,20 +172,25 @@ export function parts(map, pose = {}, s = 7) {
       }
       // 上眼皮的线和睫毛
       strokeL(c, [H([4.35, 0.95]), H([5.3, 1.85 * op + 0.85 * (1 - op)]), H([6.6, 2.15 * op + 0.9 * (1 - op)]), H([7.55, 1.5])], 0.36, '#2a1612');
-      strokeL(c, [H([7.2, 1.85]), H([7.85, 2.5]), H([8.25, 2.6])], 0.16, '#2a1612');
-      strokeL(c, [H([6.7, 2.1]), H([7.15, 2.85]), H([7.5, 3.05])], 0.15, '#2a1612');
-      strokeL(c, [H([6.1, 2.1]), H([6.4, 2.75])], 0.13, '#2a1612');
+      if (op > 0.45) {   // 睁着：睫毛往上翘
+        strokeL(c, [H([7.2, 1.85]), H([7.85, 2.5]), H([8.25, 2.6])], 0.16, '#2a1612');
+        strokeL(c, [H([6.7, 2.1]), H([7.15, 2.85]), H([7.5, 3.05])], 0.15, '#2a1612');
+        strokeL(c, [H([6.1, 2.1]), H([6.4, 2.75])], 0.13, '#2a1612');
+      } else {           // 闭着：眼皮合成一道往下弯的线，睫毛顺着往下
+        strokeL(c, [H([7.3, 1.0]), H([7.9, 0.6]), H([8.2, 0.55])], 0.15, '#2a1612');
+        strokeL(c, [H([6.7, 0.85]), H([7.1, 0.35]), H([7.4, 0.25])], 0.14, '#2a1612');
+      }
       strokeL(c, [H([5.7, -0.2]), H([6.9, -0.05])], 0.08, 'rgba(120,60,50,0.4)');          // 下眼皮
       strokeL(c, [H([5.0, 3.55]), H([6.2, 3.95]), H([7.4, 3.85])], 0.28, '#3a2419');          // 眉毛
     } });
   // 眼睛里的高光：映着床单（单独一块，材质 4）
   if (1 - blink > 0.4) {
-    part('glint', ellipse(...H([6.95, 1.45]), 0.36, 0.42, hr, 12), { fill: '#ffffff', R: 0.4, mat: 4 });
-    part('glint2', ellipse(...H([6.25, 0.45]), 0.16, 0.16, 0, 8), { fill: '#ffffff', R: 0.2, mat: 4 });
+    part('glint', ellipse(...H([6.95, 1.45]), 0.36, 0.42, hr, 12), { fill: '#ffffff', R: 0.4, mat: 4, keepNormal: true });
+    part('glint2', ellipse(...H([6.25, 0.45]), 0.16, 0.16, 0, 8), { fill: '#ffffff', R: 0.2, mat: 4, keepNormal: true });
   }
   // 耳朵
   const ear = [[0.5, 1.6], [-0.9, 2.4], [-2.4, 1.4], [-2.7, -1.2], [-1.9, -3.4], [-0.6, -4.2], [0.3, -3.6], [0.0, -2.2], [0.5, -0.2]].map(([x, y]) => [x * 0.66 - 0.6, y * 0.66 + 0.1]);
-  part('ear', ear.map(H), { fill: '#eab597', R: 0.9, flat: 0.4, mat: 1, extra: 0.3,
+  part('ear', ear.map(H), { fill: '#eab597', R: 0.7, flat: 0.6, mat: 1, extra: 0.3,
     detail: (c) => { fillL(c, [H([-1.0, 0.8]), H([-1.8, 0.5]), H([-1.9, -0.8]), H([-1.4, -1.5]), H([-1.1, -0.7])], 'rgba(196,120,96,0.45)'); } });
   // 头发
   const hairPts = [[6.2, 7.7], [3.5, 10.7], [0, 11.5], [-4.6, 10.5], [-8.7, 7.0], [-10.3, 2.3], [-9.7, -2.5], [-7.5, -5.6], [-4.8, -5.2], [-3.2, -3.4],
@@ -184,39 +213,52 @@ export function parts(map, pose = {}, s = 7) {
   // 呆毛
   part('cowlick', tubeL([H([0.2, 11.0]), H([1.3, 12.9]), H([2.9, 13.6]), H([3.3, 12.6])], [0.55, 0.45, 0.3, 0.05]), { fill: C.hair, R: 0.5, mat: 2, extra: 1.0 });
   // 近侧的辫子：扎在耳朵后面，垂下来（重力方向是竖直的，不跟头转）
-  const tie = H([-7.6, -3.6]), sw = pose.pig ?? 0;
+  const tie = H([-7.6, -3.6]);
   const pig = [tie, add(tie, rot([-3.0, -5.0], sw * 0.5)), add(tie, rot([-3.8, -10.5], sw)), add(tie, rot([-2.8, -16.0], sw * 1.2))];
   part('pig', tubeL(pig, [2.4, 2.6, 1.9, 0.3]), { fill: C.hair, R: 1.8, mat: 2, extra: 0.9, shadow: [0.3, -0.4, 0.6, 0.45],
     detail: (c) => { for (let i = -1; i <= 1; i++) strokeL(c, pig.map((p, k) => add(p, [i * 0.6 * (1 - k / 4), 0])), 0.1, 'rgba(90,62,50,0.55)'); } });
   part('tie1', ellipse(...add(tie, [0.3, 0.7]), 1.25, 1.2), { fill: C.tie, R: 1.1, mat: 3, extra: 0.6, shadow: [-0.2, -0.3, 0.4, 0.4] });
   part('tie2', ellipse(...add(tie, [-0.8, -0.6]), 1.2, 1.15), { fill: C.tie, R: 1.1, mat: 3, extra: 0.6 });
-  // ---------------- 近侧的胳膊：泡泡袖、上臂、前臂抱着小腿、手
-  part('arm', tubeL([shoulder, lerp(shoulder, elbow, 0.5), elbow, lerp(elbow, wrist, 0.5), wrist], [2.9, 2.7, 2.3, 2.2, 1.9]), { fill: C.skin, R: 1.4, flat: 0.6, mat: 1, shadow: [-0.3, -0.4, 0.6, 0.25] });
-  const ha = Math.atan2(wrist[1] - elbow[1], wrist[0] - elbow[0]);
-  // 握在一起的两只手：近处的手背和弯着的四根手指，远处那只手的指尖从下面露出来
-  const HW = (p) => add(wrist, rot(p, ha));
-  part('handFar', [[1.6, -2.0], [5.2, -2.8], [7.8, -1.6], [7.6, 0.4], [4.4, 0.2], [1.6, 0.0]].map(HW), { fill: C.skinDeep, R: 1.0, flat: 0.4, mat: 1 });
-  part('hand', [[-0.4, 1.7], [3.4, 2.5], [6.0, 2.1], [7.4, 1.0], [7.5, -0.6], [6.8, -1.9], [4.6, -2.4], [2.0, -2.1], [-0.2, -1.6]].map(HW), { fill: C.skin, R: 1.4, flat: 0.4, mat: 1, shadow: [-0.3, -0.4, 0.5, 0.35],
-    detail: (c) => { strokeL(c, [HW([5.6, 2.0]), HW([6.6, 0.6]), HW([6.9, -1.0])], 0.12, 'rgba(170,100,80,0.55)'); for (let i = 0; i < 3; i++) strokeL(c, [HW([6.9 - i * 0.2, 0.9 - i * 0.9]), HW([7.45, 0.7 - i * 0.9])], 0.09, 'rgba(170,100,80,0.5)'); } });
-  part('thumb', tubeL([HW([3.0, 2.0]), HW([4.8, 2.9]), HW([6.6, 3.1])], [0.95, 0.85, 0.7]), { fill: C.skin, R: 0.8, flat: 0.4, mat: 1, shadow: [-0.2, -0.3, 0.3, 0.3],
-    detail: (c) => { strokeL(c, [HW([6.0, 3.3]), HW([6.6, 3.0])], 0.12, 'rgba(230,170,150,0.9)'); } });
-  // 泡泡袖：肩头鼓起来的灯笼形，袖口收一道边
-  const ua = Math.atan2(elbow[1] - shoulder[1], elbow[0] - shoulder[0]);
-  const A = (u, v) => add(shoulder, rot([u, v], ua));
-  const sl = [A(-3.2, -2.6), A(-1.0, -4.0), A(3.0, -4.5), A(6.4, -4.0), A(7.6, -2.8), A(7.8, 0), A(7.6, 2.8), A(6.4, 3.9), A(3.0, 4.4), A(-0.6, 3.9), A(-3.0, 2.8), A(-4.0, 0)];
-  part('sleeve', sl, { fill: C.dress, R: 2.4, flat: 0.3, mat: 3, extra: 0.3, shadow: [-0.4, -0.5, 0.6, 0.4],
+  // ---------------- 近侧的胳膊：上臂（三角肌那里厚、往肘收）→ 肘尖 → 前臂（靠肘处肌肉鼓、往手腕收细）→ 拳头托着下巴
+  // 一个组：手肘、手腕连着，不出接缝
+  const ud = norm(sub(elbow, shoulder)), un = [-ud[1], ud[0]];
+  part('upperArm', tubeL([add(shoulder, mul(ud, -1.0)), lerp(shoulder, elbow, 0.35), lerp(shoulder, elbow, 0.75), add(elbow, mul(ud, 0.6))], [[3.3, 3.2], [3.1, 3.1], [2.7, 2.7], [2.4, 2.4]]),
+    { fill: C.skin, R: 1.9, flat: 0.4, mat: 1, group: 'armN', groupR: 1.9 * s, shadow: [-0.3, -0.4, 0.6, 0.25] });
+  part('elbowPt', ellipse(...add(elbow, add(mul(ud, 0.3), mul(un, -0.6))), 2.3, 2.1, Math.atan2(ud[1], ud[0])), { fill: C.skin, R: 1.9, flat: 0.4, mat: 1, group: 'armN' });
+  part('forearm', tubeL([add(elbow, mul(fd, -0.8)), add(elbow, mul(fd, 3.5)), lerp(elbow, wrist, 0.6), wrist], [[2.5, 2.5], [2.8, 2.7], [2.25, 2.25], [1.95, 1.95]]),
+    { fill: C.skin, R: 1.9, flat: 0.4, mat: 1, group: 'armN' });
+  const NW = (u, v) => FW(wrist, u, v);
+  part('fist', fistPts().map(([u, v]) => NW(u, v)), { fill: C.skin, R: 1.9, flat: 0.4, mat: 1, group: 'armN',
     detail: (c) => {
-      strokeL(c, [A(6.6, -3.8), A(7.0, 0), A(6.6, 3.8)], 0.5, 'rgba(160,96,20,0.35)');
-      for (let i = 0; i < 3; i++) strokeL(c, [A(0.5 + i * 1.6, -3.6), A(1.5 + i * 1.6, 0), A(1.0 + i * 1.6, 3.5)], 0.12, 'rgba(160,96,20,0.25)');
+      // 弯着的四根手指：指节之间的缝，第二节指节的小窝
+      for (let i = 0; i < 3; i++) strokeL(c, [NW(5.0 + i * 0.75, -0.6), NW(5.6 + i * 0.75, -2.1)], 0.09, 'rgba(176,104,84,0.5)');
+      strokeL(c, [NW(6.9, 1.6), NW(7.5, 0.2), NW(7.2, -1.6)], 0.1, 'rgba(176,104,84,0.45)');
+      strokeL(c, [NW(1.2, 1.8), NW(3.2, 2.2)], 0.08, 'rgba(176,104,84,0.3)');
     } });
-  P.joints = { hip, knee, ankle, kneeF, ankleF, neck0, head, shoulder, elbow, wrist, chest: along(20, 1), belly: along(10, 0) };
+  // 大拇指：压在食指外侧，指甲朝外
+  // 大拇指压在食指外侧：和拳头是一块肉（同一组），只用一道浅浅的折痕和指甲把它勾出来
+  part('thumb', tubeL([NW(2.6, -2.0), NW(4.4, -2.5), NW(5.8, -2.3)], [0.95, 0.85, 0.7]), { fill: C.skin, R: 1.9, flat: 0.4, mat: 1, group: 'armN',
+    detail: (c) => { strokeL(c, [NW(2.8, -1.2), NW(4.4, -1.6), NW(5.6, -1.5)], 0.1, 'rgba(176,104,84,0.45)'); fillL(c, [NW(5.0, -2.55), NW(5.8, -2.6), NW(5.85, -2.05), NW(5.05, -1.95)], 'rgba(244,206,192,0.9)'); } });
+  // 泡泡袖：肩头鼓起来的灯笼形，袖口收一道边（盖住上臂上面一小半）
+  const A = (u, v) => add(shoulder, add(mul(ud, u), mul(un, v)));
+  const sl = [A(-3.0, 2.3), A(-1.0, 3.5), A(2.4, 3.9), A(5.2, 3.5), A(6.3, 2.5), A(6.5, 0), A(6.3, -2.5), A(5.2, -3.4), A(2.4, -3.8), A(-0.7, -3.4), A(-2.8, -2.5), A(-3.7, 0)];
+  part('sleeve', sl, { fill: C.dress, R: 2.4, flat: 0.3, mat: 3, extra: 0.3, shadow: [-0.3, -0.4, 0.5, 0.35],
+    detail: (c) => {
+      strokeL(c, [A(5.5, -3.2), A(5.9, 0), A(5.5, 3.2)], 0.45, 'rgba(160,96,20,0.35)');
+      for (let i = 0; i < 3; i++) strokeL(c, [A(0.4 + i * 1.4, -3.0), A(1.2 + i * 1.4, 0), A(0.9 + i * 1.4, 3.0)], 0.12, 'rgba(160,96,20,0.25)');
+    } });
+  P.joints = { hip, knee, ankle, kneeF, ankleF, neck0, head, shoulder, elbow, wrist, chest: along(20, 1), belly: along(10, 0), lean, phi };
   return P;
 }
 
+// 拳头（手腕局部坐标：u 沿前臂往上，v 往她身后为正）：手背、弯着的四指、指节顶着下巴
+function fistPts() {
+  return [[-1.2, 1.95], [1.0, 2.15], [3.2, 2.55], [5.0, 2.7], [6.7, 2.3], [7.6, 1.0], [7.7, -0.6], [7.0, -2.0], [5.4, -2.7], [3.2, -2.55], [1.0, -2.1], [-1.2, -1.95]];
+}
 function footPts(a) {
-  // 脚：脚跟圆、脚背往前斜下去、脚趾圆头，长约 16 厘米
-  return [[a[0] - 2.6, a[1] + 2.6], [a[0] + 1.6, a[1] + 2.2], [a[0] + 5.0, a[1] - 1.2], [a[0] + 9.5, a[1] - 3.4], [a[0] + 12.4, a[1] - 4.3],
-    [a[0] + 13.4, a[1] - 5.2], [a[0] + 13.0, a[1] - 5.9], [a[0] - 2.4, a[1] - 5.9], [a[0] - 3.6, a[1] - 4.6], [a[0] - 3.5, a[1] - 1.0]];
+  // 脚：脚跟圆、脚背从脚踝斜着下去、足弓、脚趾圆头；长约 17 厘米，脚踝处高约 6.5 厘米
+  return [[a[0] - 2.2, a[1] + 2.0], [a[0] + 1.4, a[1] + 1.8], [a[0] + 4.6, a[1] - 1.6], [a[0] + 8.8, a[1] - 3.6], [a[0] + 12.0, a[1] - 4.6],
+    [a[0] + 13.2, a[1] - 5.4], [a[0] + 12.9, a[1] - 6.1], [a[0] + 6.0, a[1] - 6.2], [a[0] + 2.0, a[1] - 5.8], [a[0] - 2.6, a[1] - 6.1], [a[0] - 3.7, a[1] - 5.0], [a[0] - 3.3, a[1] - 1.6]];
 }
 function sandalPts(a) {
   // 红凉鞋：鞋底 + 脚背上一道宽带子 + 脚踝一道细带子（连成一块）
