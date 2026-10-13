@@ -80,7 +80,9 @@ function scales(L, region, x0, x1, y0, y1, r, w) {
   });
 }
 
-export function makeCrane(S = 1.35) {
+// palette：'plain' 素（只有本色、黑、丹顶的红，像真的丹顶鹤）| 'rich' 艳（覆羽染青绿、云纹染黄）
+export function makeCrane(S = 1.35, palette = 'plain') {
+  const rich = palette === 'rich';
   const s = (v) => v * S;
   const P = (pts) => pts.map(([x, y]) => [x * S, y * S]);
   const parts = [];
@@ -103,7 +105,7 @@ export function makeCrane(S = 1.35) {
           const cx = 88 - i * 19 - row * 9.5, cy = 42 - row * 13 - i * 1.0;
           if (cx < -150 || cx > 96) continue;
           const sc = path(P([[cx + 9.5, cy + 4], [cx, cy + 8], [cx - 9.5, cy + 4], [cx - 11, cy - 4], [cx, cy - 11], [cx + 11, cy - 4]]));
-          L.fill(sc, row % 2 ? 'green' : 'teal');
+          L.fill(sc, rich ? (row % 2 ? 'green' : 'teal') : 'leather');
           L.stroke(sc, s(1.3));
           const v = new Path2D(); v.moveTo(s(cx), s(cy + 5)); v.lineTo(s(cx), s(cy - 7)); L.carveLine(v, s(1.2));
         }
@@ -122,7 +124,7 @@ export function makeCrane(S = 1.35) {
     for (let i = 0; i < 11; i++) { const x = 70 - i * 18, y = 50 - (i > 5 ? (i - 5) * 4.5 : 0) + (i < 2 ? -3 : 0); const d = path(P([[x, y + 3], [x + 3, y], [x, y - 3], [x - 3, y]]), true, false); L.carve(d); }
     // 肩上的云纹（如意头）：黄色，镂空的旋涡
     const cloud = path(P([[96, 44], [82, 60], [60, 62], [44, 50], [48, 34], [64, 28], [80, 32], [92, 28]]));
-    L.fill(cloud, 'yellow');
+    L.fill(cloud, rich ? 'yellow' : 'leather');
     L.stroke(cloud, s(2));
     const sw = new Path2D(); for (let k = 0; k <= 40; k++) { const a = k * 0.32, r = 3 + k * 0.42; const x = 66 + Math.cos(a) * r, y = 46 + Math.sin(a) * r * 0.8; k ? sw.lineTo(s(x), s(y)) : sw.moveTo(s(x), s(y)); }
     L.carveLine(sw, s(2.2));

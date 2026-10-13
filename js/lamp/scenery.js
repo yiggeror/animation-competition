@@ -30,6 +30,11 @@ export function makePond() {
       }
     });
     L.stroke(path(top, false, false), 3);
+    // 两根别针把水纹条别在床单上
+    for (const x of [-560, 600]) {
+      L.fill(circ(x, 92, 6), 'line');
+      const nd = new Path2D(); nd.moveTo(x, 92); nd.lineTo(x + 46, 88); L.stroke(nd, 2.2);
+    }
     // 芦苇：细长的秆、两三片叶子、顶上一穗
     for (const [x, h, lean] of [[-640, 400, -0.15], [-600, 470, -0.05], [-560, 360, 0.08], [520, 430, 0.12], [580, 360, 0.2], [640, 480, 0.02]]) {
       const top = [x + lean * h, 150 + h];
@@ -75,7 +80,11 @@ export function makePond() {
 
 // 松枝：从左上角伸进来，原点在枝根
 export function makePine() {
-  return one('pine', [-40, -360, 760, 120], (L) => {
+  return one('pine', [-40, -360, 760, 160], (L) => {
+    // 用一个晾衣夹夹在床单上沿（奶奶两只手都要操纵鹤，布景得自己挂住）
+    const clip = path([[-14, 30], [16, 30], [14, 150], [-12, 150]], true, false);
+    L.fill(clip, 'line');
+    L.carve(path([[-4, 112], [5, 112], [5, 122], [-4, 122]], true, false));
     const br = feather([[0, 60], [200, 30], [380, -40], [560, -60], [720, -120]], 22, 7);
     L.fill(path(br.outline, true, false), 'brown');
     L.stroke(path(br.outline, true, false), 3);

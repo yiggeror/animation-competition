@@ -278,7 +278,13 @@ void main() {
     vec3 Lq = vec3(q.x, 0.0, q.y) - uLamp; float r2 = dot(Lq, Lq); float rr = sqrt(r2);
     float diff = ${S.sheetTau} * uLampI * uLamp.y / (r2 * rr);
     float hot = uLampI * (${S.sheetHot} * exp(-(Lq.x * Lq.x + Lq.z * Lq.z) / (0.12 * 0.12)) + 0.10 * exp(-(Lq.x * Lq.x + Lq.z * Lq.z) / (0.34 * 0.34)));
-    vec3 s = vec3(diff + hot, diff + hot * 0.92, diff + hot * 0.8) * LAMP_RGB * pow(texture(uSheet, suv).rgb, vec3(2.2));
+    // 床单比正经的影幕厚：光在布里散开一点（约 1.5 毫米），影子边缘略柔、颜色略淡
+    vec2 du = vec2(0.0015 / (SHEET.y - SHEET.x), 0.0015 / (SHEET.w - SHEET.z));
+    vec3 msk = pow(texture(uSheet, suv).rgb, vec3(2.2)) * 0.4
+      + (pow(texture(uSheet, suv + vec2(du.x, 0)).rgb, vec3(2.2)) + pow(texture(uSheet, suv - vec2(du.x, 0)).rgb, vec3(2.2))
+       + pow(texture(uSheet, suv + vec2(0, du.y)).rgb, vec3(2.2)) + pow(texture(uSheet, suv - vec2(0, du.y)).rgb, vec3(2.2))) * 0.15;
+    msk = mix(msk, vec3(dot(msk, vec3(0.3, 0.5, 0.2))), 0.15);
+    vec3 s = vec3(diff + hot, diff + hot * 0.92, diff + hot * 0.8) * LAMP_RGB * msk;
     // 挂起来的褶：上沿夹子之间往下垂的弧形褶，下沿轻微的波浪；棉布在褶子处厚一点、暗一点
     float fold = 0.5 + 0.5 * sin((q.x - PIN0) / PINDX * 2.0 * PI);
     float topFold = exp(-(sheetTop(q.x) - q.y) * 9.0) * fold;

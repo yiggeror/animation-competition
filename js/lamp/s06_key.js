@@ -112,7 +112,7 @@ function quiltTex(kind) {
 }
 
 // ---------------------------------------------------------------- 渲染
-let G = null, crane = null, QUILTS = null, CARDS = null, POND = null, PINE = null;
+let G = null, crane = null, cranePal = null, QUILTS = null, CARDS = null, POND = null, PINE = null;
 // 小满：呼吸；跟着鹤抬头（慢半拍）；鹤扬起头那一下嘴张大；4 秒多眨一次眼
 function xmPose(t) {
   const r = Math.min(1.05, raiseAt(t - 0.3));
@@ -127,7 +127,9 @@ export async function render(ctx, arg, W, H) {
 }
 
 export async function renderFrame(ctx, t, W, H) {
-  crane ||= makeCrane(); POND ||= makePond(); PINE ||= makePine();
+  const pal = DEBUG.palette || 'plain';
+  if (cranePal !== pal) { crane = makeCrane(1.35, pal); cranePal = pal; }
+  POND ||= makePond(); PINE ||= makePine();
   if (!G || G.W !== W || G.H !== H) G = new GL(W, H);
   QUILTS ||= { L: quiltTex('L'), R: quiltTex('R') };
   const cam = camera(W, H, DEBUG.cam || {});
@@ -140,7 +142,7 @@ export async function renderFrame(ctx, t, W, H) {
   const still = { angles: {}, rootAngle: 0, facing: 1 };
   const img = sheetImage(sh, lampSP, [
     { pup: POND, pose: still, root: [1.30, 0.46], dist: 0.003 },
-    { pup: PINE, pose: { ...still, rootAngle: -0.05 }, root: [sh.x0 + 0.02, sh.z1 - 0.12], dist: 0.003 },
+    { pup: PINE, pose: { ...still, rootAngle: -0.05 }, root: [sh.x0 + 0.03, sh.z1 - 0.13], dist: 0.003 },
     { pup: crane, pose: cranePose(t), root, dist,
     rods: [{ part: 'body', at: [10, 8], hand: [root[0] - 0.02, root[1] - 0.10, 0.42] }, { part: 'neck3', at: [10, 0], hand: [root[0] + 0.20, root[1] + 0.10, 0.42] }] }], 900, { split: true, rodMin: 0.06, rodA: 0.8, rodFade: 0.05, rodBlur: 1.0, rodBlurMax: 46 });
   const patches = patchRadiance(img.mask, sh, L, flick);
