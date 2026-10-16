@@ -32,6 +32,48 @@ function ellipse(cx, cy, rx, ry, rotA = 0, n = 28) {
   return out;
 }
 
+
+// 一笔画出整条四肢的外轮廓（A 根 → B 关节 → C 末端），像画师画人体那样：
+//   弯曲的外侧绕着关节画一段圆弧（膝盖骨、肘尖），内侧两条轮廓线在关节处相交、挤出一道褶（膝窝、肘窝）；
+//   末端接上脚或手腕。这样整条腿/胳膊是一块连续的肉，不会像拼起来的管子那样在关节处鼓出"球关节"。
+// w1p/w1m：第一段在 +n / −n 两侧的半宽 [[t, w], ...]；w2p/w2m：第二段。extremity(pEnd, mEnd) 返回从 + 侧末端绕到 − 侧末端的点。
+function limbOutline(A, B, C, w1p, w1m, w2p, w2m, extremity = null, step = 0.6) {
+  const sub2 = (a, b) => [a[0] - b[0], a[1] - b[1]], add2 = (a, b) => [a[0] + b[0], a[1] + b[1]], mul2 = (a, k) => [a[0] * k, a[1] * k];
+  const prof = (w, t) => { if (t <= w[0][0]) return w[0][1]; for (let i = 1; i < w.length; i++) if (t <= w[i][0]) { const k = (t - w[i - 1][0]) / (w[i][0] - w[i - 1][0]), e = k * k * (3 - 2 * k); return w[i - 1][1] + (w[i][1] - w[i - 1][1]) * e; } return w[w.length - 1][1]; };
+  const L1 = Math.hypot(...sub2(B, A)), L2 = Math.hypot(...sub2(C, B));
+  const d1 = mul2(sub2(B, A), 1 / L1), d2 = mul2(sub2(C, B), 1 / L2), n1 = [-d1[1], d1[0]], n2 = [-d2[1], d2[0]];
+  const outer = d1[0] * d2[1] - d1[1] * d2[0] > 0 ? -1 : 1;     // 往左拐时 +n 侧在里面
+  const side = (sg, wa, wb) => {
+    const pts = [];
+    const o1 = (t) => add2(add2(A, mul2(d1, L1 * t)), mul2(n1, sg * prof(wa, t)));
+    const o2 = (t) => add2(add2(B, mul2(d2, L2 * t)), mul2(n2, sg * prof(wb, t)));
+    const N1 = Math.max(4, Math.ceil(L1 / step)), N2 = Math.max(4, Math.ceil(L2 / step));
+    if (sg === outer) {
+      for (let i = 0; i <= N1; i++) pts.push(o1(i / N1));
+      // 绕关节的圆弧，半径从第一段末端的半宽过渡到第二段起点的半宽
+      const a0 = Math.atan2(sg * n1[1], sg * n1[0]); let a1 = Math.atan2(sg * n2[1], sg * n2[0]);
+      let da = a1 - a0; while (da > Math.PI) da -= 2 * Math.PI; while (da < -Math.PI) da += 2 * Math.PI;
+      const r0 = prof(wa, 1), r1 = prof(wb, 0), K = Math.max(3, Math.ceil(Math.abs(da) * 8));
+      for (let k = 1; k < K; k++) { const u = k / K, a = a0 + da * u, r = r0 + (r1 - r0) * u; pts.push(add2(B, [Math.cos(a) * r, Math.sin(a) * r])); }
+      for (let i = 0; i <= N2; i++) pts.push(o2(i / N2));
+    } else {
+      // 里侧：两条轮廓线的交点就是褶
+      const p = add2(B, mul2(n1, sg * prof(wa, 1))), q = add2(B, mul2(n2, sg * prof(wb, 0)));
+      const den = d1[0] * d2[1] - d1[1] * d2[0];
+      let u = 0, v = 0;
+      if (Math.abs(den) > 1e-4) { const w = sub2(q, p); u = (w[0] * d2[1] - w[1] * d2[0]) / den; v = (w[0] * d1[1] - w[1] * d1[0]) / den; }
+      u = Math.max(-L1 * 0.6, Math.min(0, u)); v = Math.max(0, Math.min(L2 * 0.6, v));
+      for (let i = 0; i <= N1; i++) { const t = i / N1; if (L1 * t - L1 > u) break; pts.push(o1(t)); }
+      pts.push(add2(p, mul2(d1, u)));
+      for (let i = 0; i <= N2; i++) { const t = i / N2; if (L2 * t < v) continue; pts.push(o2(t)); }
+    }
+    return pts;
+  };
+  const P = side(1, w1p, w2p), M = side(-1, w1m, w2m);
+  const ext = extremity ? extremity(P[P.length - 1], M[M.length - 1]) : [];
+  return [...P, ...ext, ...M.reverse()];
+}
+
 // pose：{ lean 身体前倾（弧度）, headUp 抬头（弧度）, mouth 0..1, blink 0..1, pig 辫子摆动（弧度）, breathe 0..1 }
 // map(p)：局部厘米 → 画面像素
 export function parts(map, pose = {}, s = 7) {
@@ -76,18 +118,34 @@ export function parts(map, pose = {}, s = 7) {
   for (let i = 0; i < 40; i++) { const m = (lo + hi) / 2; const S = spine(m)(31, -0.6); (Math.hypot(S[0] - elbow[0], S[1] - elbow[1]) > 20 ? (lo = m) : (hi = m)); }
   const lean = (lo + hi) / 2, along = spine(lean);
   const shoulder = add(along(31, -0.6), [0, 0.3 * breathe]), neck0 = add(along(34.2, 1.4), [0, 0.3 * breathe]);
-  // 抬头角 hr；前臂角 phi 取使脖子长度最接近 6.5 厘米的那个
+  // 抬头角 hr；手腕在下巴前下方（头的局部坐标 WRIST_L），前臂 16.5 厘米 → 前臂角 phi 由"脖子露出 6.5 厘米"定。
+  // 这个条件一般有两个解（前臂竖一点 / 斜一点）。只取前臂竖的那支，并且用二分求精确的根——
+  // 之前逐帧取"误差最小"的格点，两个解来回跳，人在画面里一伸一缩。
   const hr = pose.headUp ?? 0.30;
-  const chinL = [6.3, -7.7];
-  let best = null;
-  for (let phi = 0.9; phi <= 2.1; phi += 0.004) {
-    const w = add(elbow, mul(dir(phi), 16.5)), top = add(w, mul(dir(phi), 6.6));
-    const hc = sub(top, rot(mul(chinL, HS), hr));
+  const WRIST_L = [4.9, -10.2];
+  const at = (phi) => {
+    const w = add(elbow, mul(dir(phi), 16.5));
+    const hc = sub(w, rot(mul(WRIST_L, HS), hr));
     const nb = add(hc, rot(mul([0.6, -5.2], HS), hr));
-    const e = Math.abs(Math.hypot(nb[0] - neck0[0], nb[1] - neck0[1]) - 6.5);
-    if (!best || e < best.e) best = { e, phi, w, hc };
+    return { w, hc, f: Math.hypot(nb[0] - neck0[0], nb[1] - neck0[1]) - 6.5 };
+  };
+  let phi = 1.35;
+  {
+    const roots = [];
+    let prev = at(0.8);
+    for (let x = 0.8 + 0.01; x <= 2.3; x += 0.01) {
+      const cur = at(x);
+      if (Math.sign(cur.f) !== Math.sign(prev.f)) {
+        let a = x - 0.01, b = x;
+        for (let i = 0; i < 30; i++) { const m = (a + b) / 2; (Math.sign(at(m).f) === Math.sign(at(a).f) ? (a = m) : (b = m)); }
+        roots.push((a + b) / 2);
+      }
+      prev = cur;
+    }
+    if (roots.length) phi = roots[0];                 // 前臂更竖的那一支
+    else { let bestE = Infinity; for (let x = 0.8; x <= 2.3; x += 0.005) { const e = Math.abs(at(x).f); if (e < bestE) { bestE = e; phi = x; } } }
   }
-  const phi = best.phi, wrist = best.w, head = best.hc;
+  const sol = at(phi), wrist = sol.w, head = sol.hc;
   const H = (p) => add(head, rot([p[0] * HS, p[1] * HS], hr));        // 头的局部坐标 → 身体坐标
   const sw = pose.pig ?? 0;
 
@@ -101,37 +159,46 @@ export function parts(map, pose = {}, s = 7) {
   part('stoolRung', [[-11.2, -13], [11.4, -13], [11.6, -15], [-11.4, -15]], { fill: C.stoolDark, R: 0.8, smooth: false });
   part('stoolSeat', [[-14, 0.5], [14, 0.5], [14, -3], [-14, -3]], { fill: C.stool, R: 1.4, smooth: false,
     detail: (c) => { strokeL(c, [[-13, -1.2], [13, -1.0]], 0.12, 'rgba(60,35,20,0.5)'); } });
-  // ---------------- 远侧的腿和胳膊（在暗处，颜色深一点；大半被近侧挡住）
-  const legShape = (k, a, grp, fill, extraShadow) => {
-    const kd = norm(sub(k, hip));
-    part(grp + 'Thigh', tubeL([add(hip, mul(kd, -2)), lerp(hip, k, 0.5), add(k, mul(kd, 0.6))], [[5.6, 5.8], [5.0, 5.4], [4.3, 4.4]]), { fill, R: 2.2, flat: 0.4, mat: 1, group: grp, groupR: 2.2 * s });
-    // 小腿：前面（胫骨）直，后面（小腿肚）鼓
-    part(grp + 'Shin', tubeL([add(k, [0, 0.4]), lerp(k, a, 0.32), lerp(k, a, 0.7), a], [[4.0, 4.2], [3.3, 4.9], [2.7, 3.2], [2.1, 2.3]]), { fill, R: 2.2, flat: 0.4, mat: 1, group: grp });
-    part(grp + 'Foot', footPts(a), { fill, R: 2.2, flat: 0.4, mat: 1, group: grp });
+  // ---------------- 腿：一笔外轮廓（大腿面 → 膝盖骨 → 胫骨 → 脚背 → 脚趾 → 脚底 → 脚跟 → 跟腱 → 小腿肚 → 膝窝的褶 → 大腿底面）
+  const legShape = (k, a, grp, fill, near) => {
+    const foot = (pEnd, mEnd) => [
+      [a[0] + 2.7, a[1] - 0.9], [a[0] + 5.0, a[1] - 2.5], [a[0] + 8.8, a[1] - 4.1], [a[0] + 11.8, a[1] - 5.0], [a[0] + 13.2, a[1] - 5.6],
+      [a[0] + 13.3, a[1] - 6.2], [a[0] + 12.2, a[1] - 6.5], [a[0] + 8.0, a[1] - 6.45], [a[0] + 4.6, a[1] - 6.0], [a[0] + 1.2, a[1] - 6.3],
+      [a[0] - 2.0, a[1] - 6.5], [a[0] - 3.3, a[1] - 5.8], [a[0] - 3.6, a[1] - 4.0], [a[0] - 3.0, a[1] - 2.0]];
+    const out = limbOutline(add(hip, [-1.5, 0.5]), k, a,
+      [[0, 6.0], [0.5, 5.6], [0.85, 4.8], [1, 4.4]],            // 大腿面
+      [[0, 6.0], [0.5, 5.5], [0.85, 4.6], [1, 4.3]],            // 大腿底面
+      [[0, 4.3], [0.15, 3.7], [0.5, 3.3], [0.85, 2.6], [1, 2.3]],   // 小腿前面（胫骨，几乎是直的）
+      [[0, 4.1], [0.25, 4.8], [0.5, 4.2], [0.8, 2.8], [1, 2.4]],   // 小腿肚
+      foot);
+    part(grp, out, { fill, R: 2.6, flat: 0.35, mat: 1, smooth: false,
+    });
   };
-  legShape(kneeF, ankleF, 'legF', C.skinDeep);
+  // 远侧的腿（在暗处，颜色深一点，大半被近侧挡住）
+  legShape(kneeF, ankleF, 'legF', C.skinDeep, false);
   part('sandalF', sandalPts(ankleF), { fill: C.sole, R: 0.8, smooth: false });
   strapPts(ankleF).forEach((q, i) => part('strapF' + i, q, { fill: '#9e2522', R: 0.8, smooth: false }));
-  // 远侧的拳头：在近侧拳头后面、略靠前，只露出指节
-  const fd = dir(phi), fp = [-fd[1], fd[0]];
-  const FW = (base, u, v) => add(base, add(mul(fd, u), mul(fp, v)));
-  const wristF = add(wrist, add(mul(fd, 0.6), mul(fp, -1.6)));
-  part('armF', tubeL([add(elbow, [1.4, 0.4]), lerp(add(elbow, [1.4, 0.4]), wristF, 0.5), wristF], [2.2, 2.0, 1.6]), { fill: C.skinDeep, R: 1.8, flat: 0.4, mat: 1, group: 'armF', groupR: 1.8 * s });
-  part('fistF', fistPts().map(([u, v]) => FW(wristF, u, v)), { fill: C.skinDeep, R: 1.8, flat: 0.4, mat: 1, group: 'armF' });
-  // ---------------- 近侧的腿：大腿（大半在裙子里）、膝盖、小腿、脚——一个组，膝盖和脚踝是连着的肉
-  legShape(knee, ankle, 'legN', C.skin);
+  // 远侧的前臂：在近侧胳膊后面，手托在远侧脸颊上（被头挡住）
+  const fd = dir(phi);
+  const wristF = add(wrist, [1.2, 0.6]);
+  part('armF', tubeL([add(elbow, [1.6, 0.2]), lerp(add(elbow, [1.6, 0.2]), wristF, 0.3), wristF], [2.5, 2.4, 1.9]), { fill: C.skinDeep, R: 1.9, flat: 0.4, mat: 1, smooth: false });
+  // ---------------- 近侧的腿
+  legShape(knee, ankle, 'legN', C.skin, true);
   part('sandal', sandalPts(ankle), { fill: C.sole, R: 0.8, smooth: false });
   strapPts(ankle).forEach((q, i) => part('strap' + i, q, { fill: C.sandal, R: 0.8, smooth: false, shadow: [-0.1, -0.2, 0.3, 0.3] }));
   // ---------------- 身体 + 裙子：后背微微拱起（身子前倾）；裙子盖住大腿到膝盖上面一点
-  const hemT = 0.8;
+  // 裙子顺着大腿面盖下来（裙子上沿 = 大腿面 + 布的厚度），裙摆斜着包住大腿：上面盖到膝盖前一点，下面短一点，
+  // 在大腿底下垂一点。膝盖和小腿从裙摆底下自然伸出来，裙摆在腿上投一点影子（不是"安"在裙子外面的一截腿）。
+  const hemTop = 0.84, hemBot = 0.72;
   const dress = [
     along(33.6, -3.4), along(29.5, -6.0), along(22, -7.0), along(14, -6.8), along(6, -6.6),       // 后背
     [-7.6, 3.0], [-7.4, -0.6], [-2, -0.9],                                                            // 坐在凳面上的臀部
-    onThigh(0.45, -5.9), onThigh(hemT, -5.4), onThigh(hemT + 0.03, -2.0),                             // 大腿底下 → 裙摆
-    onThigh(hemT + 0.04, 3.0), onThigh(hemT, 6.0), onThigh(0.5, 6.6), onThigh(0.2, 7.2),               // 裙摆 → 腿面
+    onThigh(0.4, -6.6), onThigh(0.62, -6.9), onThigh(hemBot, -6.5),                                    // 大腿底下垂着的裙子
+    onThigh((hemBot * 2 + hemTop) / 3, -3.0), onThigh((hemBot + hemTop * 2) / 3, 1.5), onThigh(hemTop, 5.0),   // 斜着的裙摆，包住大腿
+    onThigh(hemTop - 0.04, 5.9), onThigh(0.6, 6.2), onThigh(0.3, 6.6), onThigh(0.1, 7.0),               // 腿面（贴着大腿面）
     along(10, 6.2), along(18, 6.6), along(25, 5.8), along(30.8, 3.4),                                  // 肚子、胸口
   ];
-  part('dress', dress, { fill: C.dress, R: 3.0, flat: 0.4, mat: 3, extra: 0.3, shadow: [-0.2, -0.3, 0.5, 0.3],
+  part('dress', dress, { fill: C.dress, R: 3.0, flat: 0.4, mat: 3, extra: 0.3, shadow: [0.3, -0.6, 0.8, 0.45],
     detail: (c) => {
       for (let i = -8; i < 14; i++) for (let j = -3; j < 14; j++) {
         const q = add(hip, [i * 3.3 + (j % 2) * 1.65, j * 3.3]);
@@ -139,9 +206,8 @@ export function parts(map, pose = {}, s = 7) {
       }
       // 腰线（前倾时腰在肚子那里折一下）、腿面上布料被拉出的褶、裙摆的一道边
       strokeL(c, [along(12, -6.6), along(12.4, 0), along(11.5, 6.0)], 0.22, 'rgba(160,96,20,0.45)');
-      strokeL(c, [onThigh(0.25, 4.5), onThigh(0.55, 3.6), onThigh(hemT - 0.02, 2.0)], 0.15, 'rgba(160,96,20,0.3)');
-      strokeL(c, [onThigh(0.3, 2.2), onThigh(0.62, 0.8)], 0.12, 'rgba(160,96,20,0.25)');
-      strokeL(c, [onThigh(hemT - 0.01, 5.6), onThigh(hemT + 0.02, 1), onThigh(hemT - 0.01, -5.0)], 0.3, 'rgba(160,96,20,0.35)');
+      strokeL(c, [onThigh(0.25, 4.5), onThigh(0.55, 3.6), onThigh(hemTop - 0.06, 2.0)], 0.15, 'rgba(160,96,20,0.3)');
+      strokeL(c, [onThigh(hemTop - 0.01, 5.0), onThigh((hemBot + hemTop * 2) / 3 - 0.01, 1.5), onThigh((hemBot * 2 + hemTop) / 3 - 0.01, -3.0), onThigh(hemBot - 0.01, -6.3)], 0.32, 'rgba(160,96,20,0.4)');   // 裙摆的折边
     } });
   // 白色小圆领
   part('collar', [along(33.8, -3.2), along(35.2, -1.4), along(35.4, 2.2), along(32.6, 4.2), along(30.0, 3.8), along(30.6, 0.4), along(31.2, -2.6)],
@@ -219,42 +285,56 @@ export function parts(map, pose = {}, s = 7) {
     detail: (c) => { for (let i = -1; i <= 1; i++) strokeL(c, pig.map((p, k) => add(p, [i * 0.6 * (1 - k / 4), 0])), 0.1, 'rgba(90,62,50,0.55)'); } });
   part('tie1', ellipse(...add(tie, [0.3, 0.7]), 1.25, 1.2), { fill: C.tie, R: 1.1, mat: 3, extra: 0.6, shadow: [-0.2, -0.3, 0.4, 0.4] });
   part('tie2', ellipse(...add(tie, [-0.8, -0.6]), 1.2, 1.15), { fill: C.tie, R: 1.1, mat: 3, extra: 0.6 });
-  // ---------------- 近侧的胳膊：上臂（三角肌那里厚、往肘收）→ 肘尖 → 前臂（靠肘处肌肉鼓、往手腕收细）→ 拳头托着下巴
-  // 一个组：手肘、手腕连着，不出接缝
+  // ---------------- 近侧的胳膊：一笔外轮廓（后面：三角肌 → 肱三头肌 → 肘尖 → 前臂背面；前面：前臂掌面 → 肘窝的褶 → 肱二头肌）
   const ud = norm(sub(elbow, shoulder)), un = [-ud[1], ud[0]];
-  part('upperArm', tubeL([add(shoulder, mul(ud, -1.0)), lerp(shoulder, elbow, 0.35), lerp(shoulder, elbow, 0.75), add(elbow, mul(ud, 0.6))], [[3.3, 3.2], [3.1, 3.1], [2.7, 2.7], [2.4, 2.4]]),
-    { fill: C.skin, R: 1.9, flat: 0.4, mat: 1, group: 'armN', groupR: 1.9 * s, shadow: [-0.3, -0.4, 0.6, 0.25] });
-  part('elbowPt', ellipse(...add(elbow, add(mul(ud, 0.3), mul(un, -0.6))), 2.3, 2.1, Math.atan2(ud[1], ud[0])), { fill: C.skin, R: 1.9, flat: 0.4, mat: 1, group: 'armN' });
-  part('forearm', tubeL([add(elbow, mul(fd, -0.8)), add(elbow, mul(fd, 3.5)), lerp(elbow, wrist, 0.6), wrist], [[2.5, 2.5], [2.8, 2.7], [2.25, 2.25], [1.95, 1.95]]),
+  const armOut = limbOutline(add(shoulder, mul(ud, -1.2)), elbow, wrist,
+    [[0, 3.1], [0.4, 2.9], [0.85, 2.4], [1, 2.3]],                // 上臂前面（肱二头肌）
+    [[0, 3.2], [0.35, 3.0], [0.8, 2.5], [1, 2.2]],                // 上臂后面（肱三头肌）
+    [[0, 2.4], [0.2, 2.75], [0.6, 2.2], [1, 1.75]],               // 前臂靠身体一侧（肌肉在靠肘处鼓）
+    [[0, 2.2], [0.25, 2.5], [0.6, 2.05], [1, 1.75]], null);       // 前臂外侧（尺骨，比较直）
+  part('arm', armOut, { fill: C.skin, R: 1.9, flat: 0.4, mat: 1, group: 'armN', groupR: 1.9 * s, smooth: false, shadow: [-0.3, -0.4, 0.6, 0.25] });
+  // ---------------- 手：张开托着脸颊。手背朝外，四根手指分开搭在脸颊上，大拇指顺着下颌往前
+  // 手的局部坐标：u 从手腕指向中指指尖，v 往脸的前面（大拇指那边）为正
+  const tipL = [2.4, -1.4];                                         // 中指指尖落在脸颊上（头的局部坐标）
+  const hd = norm(sub(H(tipL), wrist)), hv0 = [-hd[1], hd[0]];
+  const hv = hv0[0] > 0 ? hv0 : mul(hv0, -1);                       // 让 v 朝前
+  const HW = (u, v) => add(wrist, add(mul(hd, u), mul(hv, v)));
+  const handLen = Math.hypot(...sub(H(tipL), wrist));
+  const palmL = handLen * 0.53;                                     // 手掌约占手长一半
+  part('palm', [[-0.8, 1.75], [1.5, 2.15], [palmL * 0.6, 2.45], [palmL, 2.35], [palmL + 0.3, 1.2], [palmL + 0.3, -1.0], [palmL, -2.1], [palmL * 0.6, -2.35], [1.5, -2.0], [-0.8, -1.75]].map(([u, v]) => HW(u, v)),
     { fill: C.skin, R: 1.9, flat: 0.4, mat: 1, group: 'armN' });
-  const NW = (u, v) => FW(wrist, u, v);
-  part('fist', fistPts().map(([u, v]) => NW(u, v)), { fill: C.skin, R: 1.9, flat: 0.4, mat: 1, group: 'armN',
-    detail: (c) => {
-      // 弯着的四根手指：指节之间的缝，第二节指节的小窝
-      for (let i = 0; i < 3; i++) strokeL(c, [NW(5.0 + i * 0.75, -0.6), NW(5.6 + i * 0.75, -2.1)], 0.09, 'rgba(176,104,84,0.5)');
-      strokeL(c, [NW(6.9, 1.6), NW(7.5, 0.2), NW(7.2, -1.6)], 0.1, 'rgba(176,104,84,0.45)');
-      strokeL(c, [NW(1.2, 1.8), NW(3.2, 2.2)], 0.08, 'rgba(176,104,84,0.3)');
-    } });
-  // 大拇指：压在食指外侧，指甲朝外
-  // 大拇指压在食指外侧：和拳头是一块肉（同一组），只用一道浅浅的折痕和指甲把它勾出来
-  part('thumb', tubeL([NW(2.6, -2.0), NW(4.4, -2.5), NW(5.8, -2.3)], [0.95, 0.85, 0.7]), { fill: C.skin, R: 1.9, flat: 0.4, mat: 1, group: 'armN',
-    detail: (c) => { strokeL(c, [NW(2.8, -1.2), NW(4.4, -1.6), NW(5.6, -1.5)], 0.1, 'rgba(176,104,84,0.45)'); fillL(c, [NW(5.0, -2.55), NW(5.8, -2.6), NW(5.85, -2.05), NW(5.05, -1.95)], 'rgba(244,206,192,0.9)'); } });
+  // 四根手指：食指在前，小指在后，微微张开；每根是圆头的细长条，带两道指节纹和指甲
+  const fingers = [[1.85, 0.07, 0.86, 0.56], [0.62, 0.0, 1.0, 0.58], [-0.62, -0.07, 0.92, 0.55], [-1.8, -0.15, 0.72, 0.48]];
+  fingers.forEach(([v0, ang, lenK, w], i) => {
+    const len = (handLen - palmL) * lenK + 0.3;
+    const fdir = rot(hd, ang * (hv === hv0 ? 1 : -1));
+    const base = HW(palmL - 0.3, v0), tip = add(base, mul(fdir, len));
+    const pts = tubeL([base, lerp(base, tip, 0.5), tip], [w, w * 0.95, w * 0.85]);
+    part('finger' + i, pts, { fill: C.skin, R: 1.9, flat: 0.4, mat: 1, group: 'armN', smooth: false, shadow: [-0.12, -0.18, 0.25, 0.3],
+      detail: (c) => {
+        const fn = [-fdir[1], fdir[0]];
+        for (const k of [0.38, 0.7]) { const q = lerp(base, tip, k); strokeL(c, [add(q, mul(fn, -w * 0.7)), add(q, mul(fn, w * 0.7))], 0.07, 'rgba(170,100,84,0.45)'); }
+        const nb = lerp(base, tip, 0.82);
+        fillL(c, ellipse(...add(nb, mul(fdir, 0.15)), w * 0.55, w * 0.42, Math.atan2(fdir[1], fdir[0]) + Math.PI / 2, 12), 'rgba(248,214,200,0.85)');   // 指甲
+      } });
+  });
+  // 大拇指：从手掌靠手腕的地方伸出来，顺着下颌往前（两节）
+  const tb = HW(1.6, 1.9), tdir = norm(add(mul(hd, 0.45), mul(hv, 0.9)));
+  const tm = add(tb, mul(tdir, 2.2)), tt = add(tm, mul(norm(add(tdir, mul(hd, 0.25))), 1.9));
+  part('thumb', tubeL([tb, tm, tt], [0.72, 0.62, 0.55]), { fill: C.skin, R: 1.9, flat: 0.4, mat: 1, group: 'armN', smooth: false, shadow: [-0.1, -0.15, 0.2, 0.25],
+    detail: (c) => { strokeL(c, [add(tm, mul(hd, -0.5)), add(tm, mul(hd, 0.5))], 0.07, 'rgba(170,100,84,0.45)'); fillL(c, ellipse(...lerp(tm, tt, 0.72), 0.36, 0.28, Math.atan2(tdir[1], tdir[0]) + Math.PI / 2, 12), 'rgba(248,214,200,0.85)'); } });
   // 泡泡袖：肩头鼓起来的灯笼形，袖口收一道边（盖住上臂上面一小半）
   const A = (u, v) => add(shoulder, add(mul(ud, u), mul(un, v)));
-  const sl = [A(-3.0, 2.3), A(-1.0, 3.5), A(2.4, 3.9), A(5.2, 3.5), A(6.3, 2.5), A(6.5, 0), A(6.3, -2.5), A(5.2, -3.4), A(2.4, -3.8), A(-0.7, -3.4), A(-2.8, -2.5), A(-3.7, 0)];
+  const sl = [A(-3.2, 2.4), A(-1.0, 3.8), A(2.2, 4.1), A(4.4, 3.8), A(5.6, 3.35), A(6.2, 3.3), A(6.5, 0), A(6.2, -3.35), A(5.6, -3.4), A(4.2, -3.9), A(1.6, -4.1), A(-1.2, -3.6), A(-3.2, -2.5), A(-3.9, 0)];
   part('sleeve', sl, { fill: C.dress, R: 2.4, flat: 0.3, mat: 3, extra: 0.3, shadow: [-0.3, -0.4, 0.5, 0.35],
     detail: (c) => {
-      strokeL(c, [A(5.5, -3.2), A(5.9, 0), A(5.5, 3.2)], 0.45, 'rgba(160,96,20,0.35)');
+      strokeL(c, [A(5.6, -3.3), A(5.9, 0), A(5.6, 3.3)], 0.5, 'rgba(160,96,20,0.4)');   // 袖口收的那道边，箍在胳膊上
       for (let i = 0; i < 3; i++) strokeL(c, [A(0.4 + i * 1.4, -3.0), A(1.2 + i * 1.4, 0), A(0.9 + i * 1.4, 3.0)], 0.12, 'rgba(160,96,20,0.25)');
     } });
-  P.joints = { hip, knee, ankle, kneeF, ankleF, neck0, head, shoulder, elbow, wrist, chest: along(20, 1), belly: along(10, 0), lean, phi };
+  P.joints = { hip, knee, ankle, kneeF, ankleF, neck0, head, shoulder, elbow, wrist, chest: along(20, 1), belly: along(10, 0), lean, phi, tip: H(tipL) };
   return P;
 }
 
-// 拳头（手腕局部坐标：u 沿前臂往上，v 往她身后为正）：手背、弯着的四指、指节顶着下巴
-function fistPts() {
-  return [[-1.2, 1.95], [1.0, 2.15], [3.2, 2.55], [5.0, 2.7], [6.7, 2.3], [7.6, 1.0], [7.7, -0.6], [7.0, -2.0], [5.4, -2.7], [3.2, -2.55], [1.0, -2.1], [-1.2, -1.95]];
-}
 function footPts(a) {
   // 脚：脚跟圆、脚背从脚踝斜着下去、足弓、脚趾圆头；长约 17 厘米，脚踝处高约 6.5 厘米
   return [[a[0] - 2.2, a[1] + 2.0], [a[0] + 1.4, a[1] + 1.8], [a[0] + 4.6, a[1] - 1.6], [a[0] + 8.8, a[1] - 3.6], [a[0] + 12.0, a[1] - 4.6],
