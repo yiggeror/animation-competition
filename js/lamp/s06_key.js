@@ -182,17 +182,20 @@ export async function renderShot(ctx, t, W, H, shot) {
   const root = [CRANE_ROOT[0], CRANE_ROOT[1] + 0.005 * Math.sin(t * 1.7) - 0.012 * (1 - Math.min(1, raiseAt(t)))], dist = 0.004;
   const lampSP = { x: L.x, z: L.z, D: L.y, core: L.core, globe: L.globe, coreW: 1.0, globeW: 0.55, rgb: [255, 200, 128], I: 1.32 };
   const still = { angles: {}, rootAngle: 0, facing: 1 };
-  const img = sheetImage(sh, lampSP, [
+  // 床单上的皮影：布景（荷塘、柳枝）+ 这个镜头的角色。shot.sheet(t, env) 返回角色列表（鹤、乌龟、手影……），没有就用第 6 场的鹤
+  const scenery = [
     { pup: POND, pose: still, root: [1.30, 0.34], dist: 0.003 },
     { pup: WILLOW, pose: { ...still, rootAngle: -0.03 }, root: [sh.x0 + 0.05, sh.z1 - 0.13], dist: 0.003 },
-    { pup: crane, pose: (shot.cranePose || cranePose)(t), root, dist,
-    rods: RODS.map((r, i) => ({ ...r, hand: shot.hands ? shot.hands(root, t, cam)[i] : r.hand(root) })) }], 900, { split: true, rodMin: 0.06, rodA: 0.8, rodFade: 0.05, rodBlur: 1.0, rodBlurMax: 46 });
+  ];
+  const actors = shot.sheet ? shot.sheet(t, { crane, cam, RODS }) : [{ pup: crane, pose: (shot.cranePose || cranePose)(t), root, dist,
+    rods: RODS.map((r, i) => ({ ...r, hand: shot.hands ? shot.hands(root, t, cam)[i] : r.hand(root) })) }];
+  const img = sheetImage(sh, lampSP, [...scenery, ...actors], 900, { split: true, rodMin: 0.06, rodA: 0.8, rodFade: 0.05, rodBlur: 1.0, rodBlurMax: 46 });
   const patches = patchRadiance(img.mask, sh, L, flick);
 
   // 2. 卡片（人物、道具）
   CARDS = CARDS && CARDS.W === W ? CARDS : new Cards(W, H);
   CARDS.clear();
-  await (shot.cards || cards06)(CARDS, cam, t, { root, crane, flick });
+  if (shot.cards !== null) await (shot.cards || cards06)(CARDS, cam, t, { root, crane, flick, actors });
   const cards = { alb: CARDS.alb, nrm: CARDS.nrm, mat: CARDS.mat };
 
   // 3. 上传、逐遍渲染

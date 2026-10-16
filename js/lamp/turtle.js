@@ -88,7 +88,8 @@ export function turtlePose(t, o = {}) {
   angles.legFF = walk * 0.35 * Math.sin(ph + Math.PI); angles.legBN = walk * 0.35 * Math.sin(ph + Math.PI);
   angles.tail = 0.15 * Math.sin(ph * 0.5);
   // 脖子：缩着时三节往回折，伸出去时拉直、略往上
-  angles.neck0 = -0.9 * (1 - out) + 0.15 * out; angles.neck1 = 1.2 * (1 - out) + 0.05 * out; angles.neck2 = -0.6 * (1 - out);
+  // 缩头：三节折紧，头贴在壳的前沿（第一节往后下、第二节折回来、第三节再折），伸出去时拉直、略往上
+  angles.neck0 = -1.5 * (1 - out) + 0.15 * out; angles.neck1 = 2.7 * (1 - out) + 0.05 * out; angles.neck2 = -1.9 * (1 - out);
   angles.head = (o.headTilt ?? 0) + 0.05 * Math.sin(ph) * walk + 0.25 * (o.bite ?? 0);
   return { angles, rootAngle: (o.rootAngle ?? 0) + walk * 0.02 * Math.sin(ph * 2), facing: o.facing ?? -1 };
 }
