@@ -207,7 +207,7 @@ export async function renderShot(ctx, t, W, H, shot) {
   gl.program('scene', SH.sceneFS(S)); gl.program('fog', SH.fogFS(S)); gl.program('combine', SH.combineFS);
   gl.program('down', SH.downFS); gl.program('blur', SH.blurFS); gl.program('final', SH.finalFS);
   const U = { uRes: [W, H], uCam: cam.C, uFwd: cam.fwd, uRight: cam.right, uUp: cam.up, uFocal: cam.focal,
-    uLamp: [L.x, L.y, L.z], uLampI: 1.0 * flick, uCardDbg: DEBUG.card || 0, uPatch: patches.map((p) => p * flick), uTime: t };
+    uLamp: [L.x, L.y, L.z], uLampI: 1.0 * flick, uFluor: shot.fluor ? shot.fluor(t) : 0, uCardDbg: DEBUG.card || 0, uPatch: patches.map((p) => p * flick), uTime: t };
   const tScene = gl.target('scene', W, H);
   gl.draw('scene', tScene, U, { uSheet: gl.texs.sheet, uQuiltL: gl.texs.qL, uQuiltR: gl.texs.qR, uAlb: gl.texs.alb, uNrm: gl.texs.nrm, uMat: gl.texs.mat });
   const fw = Math.round(W / 4), fh = Math.round(H / 4);
@@ -228,7 +228,7 @@ export async function renderShot(ctx, t, W, H, shot) {
     return b;
   };
   const b4 = blur(d4, 'b4'), b8 = blur(d8, 'b8'), b16 = blur(d16, 'b16');
-  gl.draw('final', null, { uRes: [W, H], uExp: 4.0 * (DEBUG.exp ?? shot.exp ?? 1), uTime: t, uBloom: 0.10 * (DEBUG.bloom ?? 1) }, { uSrc: tComb, uB1: b4, uB2: b8, uB3: b16 });
+  gl.draw('final', null, { uRes: [W, H], uExp: 4.0 * (DEBUG.exp ?? (typeof shot.exp === 'function' ? shot.exp(t) : shot.exp) ?? 1), uTime: t, uBloom: 0.10 * (DEBUG.bloom ?? 1) }, { uSrc: tComb, uB1: b4, uB2: b8, uB3: b16 });
   ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0);
   ctx.drawImage(gl.cv, 0, 0);
   if (DEBUG.proxy) {   // 调试：把人物的遮挡球投到画面上，看构图

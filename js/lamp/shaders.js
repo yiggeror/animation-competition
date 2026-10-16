@@ -18,6 +18,7 @@ in vec2 uv; out vec4 o;
 uniform vec2 uRes;
 uniform vec3 uCam, uFwd, uRight, uUp; uniform float uFocal;
 uniform vec3 uLamp; uniform float uLampI;
+uniform float uFluor;   // 日光灯（来电）：0 = 关，1 = 亮
 uniform vec3 uPatch[48];
 uniform float uTime;
 #define PI 3.14159265
@@ -197,7 +198,9 @@ vec3 ambient(vec3 P, vec3 N) {
   float near = exp(-abs(P.y) * 1.2) * smoothstep(-0.5, 1.2, P.x) * (1.0 - smoothstep(2.6, 4.0, P.x));
   vec3 warm = LAMP_RGB * 0.010 * near * (0.55 + 0.45 * max(N.z, -N.y * 0.6));
   if (P.y > 0.0) warm = LAMP_RGB * 0.03 * (0.7 + 0.3 * N.z);
-  return sky + warm;
+  // 日光灯：屋顶一根灯管，冷白、平、从上往下，满屋子都亮
+  vec3 fluor = uFluor * vec3(0.86, 0.93, 1.0) * 0.55 * (0.62 + 0.38 * max(N.z, 0.0));
+  return sky + warm + fluor;
 }
 
 // 屋子表面的固有色
@@ -327,6 +330,8 @@ void main() {
     }
     float hang = 1.0 + 0.035 * sin(bu * 7.0 + 0.6 * sin(bv * 2.0)) + 0.02 * sin(bu * 17.0 + 1.0);
     emit = s * (1.0 - 0.10 * topFold) * weave * (1.0 + crease) * hem * stitch * hang * print;
+    // 来电：床单被屋里的日光灯照着，白布反光把透过来的影子冲淡，几乎看不见
+    emit += uFluor * vec3(0.84, 0.9, 0.96) * 0.30 * weave * (1.0 + crease) * hem * print;
     lit = false;
   } else if (kind == 2 || kind == 3) {
     float u = kind == 2 ? (q.x - QL.x) / (QL.y - QL.x) : (q.x - QR.x) / (QR.y - QR.x);
