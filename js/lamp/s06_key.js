@@ -32,7 +32,7 @@ S.occBack = [[NN[0] - 0.06, NN[1], 0.12, 0.065], [NN[0] - 0.06, NN[1], 0.35, 0.0
   [NN[0] + 0.07, NN[1] + 0.02, 0.12, 0.065], [NN[0] + 0.07, NN[1] + 0.02, 0.35, 0.07], [NN[0] + 0.07, NN[1] + 0.02, 0.6, 0.08],
   [NN[0], NN[1], 0.85, 0.16], [NN[0] + 0.03, NN[1] - 0.02, 1.1, 0.17], [NN[0] + 0.06, NN[1] - 0.05, 1.35, 0.16], [NN[0] + 0.1, NN[1] - 0.06, 1.6, 0.12]];
 // 小满坐在小板凳上，朝着床单上的鹤（右前方）。她是一张竖着的"卡片"：局部坐标（厘米，x 朝前、y 朝上，原点在凳面中心）→ 世界坐标
-export const XM = { p: [0.55, -1.65], gaze: [0.62, 1.0], seat: 0.22 };
+export const XM = { p: [0.50, -1.45], gaze: [0.62, 1.0], seat: 0.22 };
 const XF = (() => { const g = Math.hypot(...XM.gaze); return [XM.gaze[0] / g, XM.gaze[1] / g]; })();
 export const xmWorld = ([x, y], side = 0) => [XM.p[0] + (XF[0] * x) / 100 + XF[1] * side, XM.p[1] + (XF[1] * x) / 100 - XF[0] * side, XM.seat + y / 100];
 // 挡光用的球：从她的骨架生成（床单光、月光在地上的软影子）
@@ -49,7 +49,7 @@ export const CRANE_ROOT = [1.36, 0.66];
 
 // ---------------------------------------------------------------- 镜头
 export function camera(W, H, o = {}) {
-  const C = o.pos || [1.48, -3.013, 0.45], T = o.target || [0.75, 0.0, 1.06], hfov = o.hfov || 60;
+  const C = o.pos || [1.48, -3.013, 0.34], T = o.target || [0.75, 0.0, 1.0], hfov = o.hfov || 60;
   const sub = (a, b) => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];
   const nrm = (a) => { const l = Math.hypot(...a); return a.map((v) => v / l); };
   const cross = (a, b) => [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]];
@@ -116,7 +116,15 @@ function quiltTex(kind) {
 }
 
 // ---------------------------------------------------------------- 渲染
-let G = null, crane = null, cranePal = null, QUILTS = null, CARDS = null, POND = null, WILLOW = null;
+let G = null, crane = null, cranePal = null, QUILTS = null, CARDS = null, POND = null, WILLOW = null, XMI = null;
+// 用户提供的小满坐姿参考图（collab/refs/xiaoman_sit_upright_side_user.png）抠图后的三张图；
+// ox, oy：凳面中心在图里的像素位置；sc：每厘米多少像素；seat：这张图里凳子的高度（米）
+async function loadXMI() {
+  const load = async (u) => createImageBitmap(await (await fetch(u)).blob());
+  const base = '/assets/chars/xiaoman_sit_user';
+  const [alb, nrm, mat] = await Promise.all([load(base + '.png'), load(base + '_n.png'), load(base + '_m.png')]);
+  return { alb, nrm, mat, info: { ox: 130, oy: 845, sc: 13, seat: (1138 - 845) / 13 / 100 } };   // 13 像素/厘米：凳高约 22.5 厘米，和场景里的小板凳一致
+}
 // 小满：呼吸；跟着鹤抬头（慢半拍）；鹤扬起头那一下看呆了——眼睛睁大、眉毛抬起、嘴张开，身子不自觉往前探一点
 // （手还搭在膝盖上，肩往前，手肘跟着弯）；后面慢慢缓下来；4 秒多眨一次眼
 function xmPose(t) {
@@ -160,7 +168,27 @@ export async function renderFrame(ctx, t, W, H) {
   {
     const c0 = cam.project(xmWorld([0, 0])), depth = c0[2], sc = c0[3] / 100;
     const map = (p) => { const r = cam.project(xmWorld(p)); return [r[0], r[1]]; };
-    CARDS.addAll(XMC.parts(map, xmPose(t), sc), depth);
+    if (DEBUG.xm === 'image') {
+      // 小满用画好的参考图（用户提供的坐姿图，抠图后算好法线和材质）：图片像素 → 局部厘米 → 世界 → 画面
+      XMI ||= await loadXMI();
+      // 卡片垂直于镜头的视线（正对镜头），二维画的侧面不会被斜着看压窄，也没有仰视的上下透视；
+      // 位置还是她坐的地方（凳面中心）。镜头只仰 11°，脚底因此离地面差几厘米，看不出来
+      const I = XMI.info, base = xmWorld([0, 0]); base[2] = I.seat;
+      const P = (px, py) => {
+        const x = (px - I.ox) / I.sc / 100, y = (I.oy - py) / I.sc / 100;
+        const r = cam.project([base[0] + cam.right[0] * x + cam.up[0] * y, base[1] + cam.right[1] * x + cam.up[1] * y, base[2] + cam.right[2] * x + cam.up[2] * y]);
+        return [r[0], r[1]];
+      };
+      // 整张图用一个仿射变换（取图里靠中间的三个点，透视误差摊在四边，人物范围内不到 1 像素量级）。
+      // 分条各用各的变换会在条与条的接缝处留下半透明的缝，法线被冲淡，显出一道道暗线。
+      const iw = XMI.alb.width, ih = XMI.alb.height;
+      const ax = iw * 0.2, bx = iw * 0.8, ay = ih * 0.2, by = ih * 0.8;
+      const p0 = P(ax, ay), p1 = P(bx, ay), p2 = P(ax, by);
+      const m0 = (p1[0] - p0[0]) / (bx - ax), m1 = (p1[1] - p0[1]) / (bx - ax), m2 = (p2[0] - p0[0]) / (by - ay), m3 = (p2[1] - p0[1]) / (by - ay);
+      const m = [m0, m1, m2, m3, p0[0] - ax * m0 - ay * m2, p0[1] - ax * m1 - ay * m3];
+      if (DEBUG.xmErr) { const q = P(iw, ih), e = [m0 * iw + m2 * ih + m[4], m1 * iw + m3 * ih + m[5]]; console.log('仿射误差（右下角，像素）', Math.hypot(q[0] - e[0], q[1] - e[1]).toFixed(2)); }
+      CARDS.addImage(XMI, [{ x0: 0, x1: iw, m }], depth);
+    } else CARDS.addAll(XMC.parts(map, xmPose(t), sc), depth);
   }
   const cards = { alb: CARDS.alb, nrm: CARDS.nrm, mat: CARDS.mat };
 
@@ -203,7 +231,7 @@ export async function renderFrame(ctx, t, W, H) {
   }
   ctx.restore();
 }
-export const DEBUG = { proxy: false, cam: null };
+export const DEBUG = { proxy: false, cam: null, xm: 'code' };
 
 // 浮尘：床单前面空气里慢慢飘的灰尘。挡在发光的床单前面时被逆光照亮（前向散射），离床单越近越亮；
 // 落在小满身后（她的轮廓里、比她远）的看不见。

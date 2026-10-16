@@ -136,6 +136,37 @@ export class Cards {
     }
     this.cleanMat(parts);
   }
+  // 一张画好的人物图当作一块卡片：固有色、法线、材质三张图（tools/card_maps.py 算好），按图片像素 → 画面像素的映射画上去。
+  // 卡片是一块竖着的平面，斜着看有透视：把图竖着切成几条，每条用自己的仿射变换（strips: [{x0, x1, m:[a,b,c,d,e,f]}]，x 是图片像素）。
+  addImage(maps, strips, depth) {
+    const { W, H } = this;
+    const draw = (ctx, img) => {
+      for (const st of strips) {
+        ctx.save();
+        ctx.setTransform(...st.m);
+        if (strips.length > 1) { ctx.beginPath(); ctx.rect(st.x0 - 0.6, -2, st.x1 - st.x0 + 1.2, img.height + 4); ctx.clip(); }
+        ctx.drawImage(img, 0, 0);
+        ctx.restore();
+      }
+    };
+    draw(this.a, maps.alb);
+    draw(this.n, maps.nrm);
+    // 材质：R 通道是深度，每次按这一帧的深度填
+    const [mc, mx] = scratch('imgmat', W, H);
+    draw(mx, maps.mat);
+    const id = mx.getImageData(0, 0, W, H), D = id.data, dr = Math.round((depth / 8) * 255);
+    for (let i = 0; i < D.length; i += 4) if (D[i + 3]) D[i] = dr;
+    mx.putImageData(id, 0, 0);
+    this.m.drawImage(mc, 0, 0);
+    // 缩放插值会在材质交界处混出中间值，和部件一样清理掉
+    let a = Infinity, b = Infinity, c = -Infinity, d = -Infinity;
+    for (const st of strips) for (const [x, y] of [[st.x0, 0], [st.x1, 0], [st.x0, maps.alb.height], [st.x1, maps.alb.height]]) {
+      const X = st.m[0] * x + st.m[2] * y + st.m[4], Y = st.m[1] * x + st.m[3] * y + st.m[5];
+      a = Math.min(a, X); b = Math.min(b, Y); c = Math.max(c, X); d = Math.max(d, Y);
+    }
+    this.cleanMat([{ bbox: [a, b, c, d] }]);
+    return [a, b, c, d];
+  }
   // 材质图上，两种材质交界处抗锯齿会混出中间值（比如皮肤 30 和眼睛高光 120 混成 75，会被当成"布"打光）。
   // 把这些像素换成旁边干净像素的材质号——材质边界不需要抗锯齿，颜色和法线本来就是平滑的。
   cleanMat(parts) {
