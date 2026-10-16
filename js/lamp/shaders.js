@@ -168,6 +168,8 @@ vec3 moonE(vec3 P, vec3 N, bool shadows) {
 export function sceneFS(S) {
   return common(S) + `
 uniform sampler2D uSheet, uQuiltL, uQuiltR, uAlb, uNrm, uMat;
+// 手电（第 9 场）：架在后台，光斑打在床单上；uSheet2 是手电挡出来的影子（狗的手影、皮影）
+uniform sampler2D uSheet2; uniform vec4 uFlash; uniform float uFlashI; uniform vec3 uFlashCol;   // uFlash = (x, 离床单, z, 光斑半径)
 uniform float uCardDbg;
 
 // 盒子从里面射出去
@@ -303,6 +305,13 @@ void main() {
        + pow(texture(uSheet, suv + vec2(0, du.y)).rgb, vec3(2.2)) + pow(texture(uSheet, suv - vec2(0, du.y)).rgb, vec3(2.2))) * 0.15;
     msk = mix(msk, vec3(dot(msk, vec3(0.3, 0.5, 0.2))), 0.15);
     vec3 s = vec3(diff + hot, diff + hot * 0.92, diff + hot * 0.8) * LAMP_RGB * msk;
+    // 手电的光斑：中间亮、边上一圈软边；被手和皮影挡住的地方是影子（冷色的光斑里一只暖暗的狗）
+    if (uFlashI > 0.0) {
+      float dd = length(q - vec2(uFlash.x, uFlash.z)) / uFlash.w;
+      float spot = uFlashI * smoothstep(1.0, 0.78, dd) * (0.7 + 0.3 * (1.0 - dd * dd));
+      vec3 m2 = pow(texture(uSheet2, suv).rgb, vec3(2.2));
+      s += spot * uFlashCol * m2;
+    }
     // 从后台看：床单这一面直接被马灯照着（棉布反射约 0.7，比透过去的亮），没有"透过布看见灯芯"的那团亮；影子一样
     if (ro.y > 0.0) s = vec3(diff * (0.7 / ${S.sheetTau}) / PI + hot * 0.08) * LAMP_RGB * msk;
     // 挂起来的褶：上沿夹子之间往下垂的弧形褶，下沿轻微的波浪；棉布在褶子处厚一点、暗一点

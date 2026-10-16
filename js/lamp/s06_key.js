@@ -191,6 +191,11 @@ export async function renderShot(ctx, t, W, H, shot) {
     rods: RODS.map((r, i) => ({ ...r, hand: shot.hands ? shot.hands(root, t, cam)[i] : r.hand(root) })) }];
   const img = sheetImage(sh, lampSP, [...scenery, ...actors], 900, { split: true, rodMin: 0.06, rodA: 0.8, rodFade: 0.05, rodBlur: 1.0, rodBlurMax: 46 });
   const patches = patchRadiance(img.mask, sh, L, flick);
+  G.texture('sheet', img.mask);   // 先传上去：sheetImage 的画布是复用的，下面算手电的影子会把它覆盖
+  // 手电：shot.flash(t) = { pos:[x, 离床单, z], r（光斑半径）, I, color, actors }，单独投一张影子图
+  const fl = shot.flash ? shot.flash(t, { crane, actors }) : null;
+  const img2 = fl ? sheetImage(sh, { x: fl.pos[0], z: fl.pos[2], D: fl.pos[1], core: 0.004, globe: 0.02, coreW: 1.0, globeW: 0.4, rgb: [230, 240, 255], I: 1 },
+    fl.actors, 900, { split: true, rodMin: 0.06, rodA: 0.8, rodFade: 0.05, rodBlur: 1.0, rodBlurMax: 46 }) : null;
 
   // 2. 卡片（人物、道具）
   CARDS = CARDS && CARDS.W === W ? CARDS : new Cards(W, H);
@@ -200,16 +205,16 @@ export async function renderShot(ctx, t, W, H, shot) {
 
   // 3. 上传、逐遍渲染
   const gl = G;
-  gl.texture('sheet', img.mask);
+  if (img2) gl.texture('sheet2', img2.mask);
   gl.texture('qL', QUILTS.L); gl.texture('qR', QUILTS.R);
   gl.texture('alb', cards.alb); gl.texture('nrm', cards.nrm); gl.texture('mat', cards.mat);
   gl.texture('dust', dustLayer(cam, W, H, t, L, sh, flick));
   gl.program('scene', SH.sceneFS(S)); gl.program('fog', SH.fogFS(S)); gl.program('combine', SH.combineFS);
   gl.program('down', SH.downFS); gl.program('blur', SH.blurFS); gl.program('final', SH.finalFS);
   const U = { uRes: [W, H], uCam: cam.C, uFwd: cam.fwd, uRight: cam.right, uUp: cam.up, uFocal: cam.focal,
-    uLamp: [L.x, L.y, L.z], uLampI: 1.0 * flick, uFluor: shot.fluor ? shot.fluor(t) : 0, uCardDbg: DEBUG.card || 0, uPatch: patches.map((p) => p * flick), uTime: t };
+    uLamp: [L.x, L.y, L.z], uLampI: 1.0 * flick, uFluor: shot.fluor ? shot.fluor(t) : 0, uFlash: fl ? [fl.pos[0], fl.pos[1], fl.pos[2], fl.r] : [0, 1, 0, 1], uFlashI: fl ? fl.I : 0, uFlashCol: fl ? fl.color : [1, 1, 1], uCardDbg: DEBUG.card || 0, uPatch: patches.map((p) => p * flick), uTime: t };
   const tScene = gl.target('scene', W, H);
-  gl.draw('scene', tScene, U, { uSheet: gl.texs.sheet, uQuiltL: gl.texs.qL, uQuiltR: gl.texs.qR, uAlb: gl.texs.alb, uNrm: gl.texs.nrm, uMat: gl.texs.mat });
+  gl.draw('scene', tScene, U, { uSheet: gl.texs.sheet, uSheet2: img2 ? gl.texs.sheet2 : gl.texs.sheet, uQuiltL: gl.texs.qL, uQuiltR: gl.texs.qR, uAlb: gl.texs.alb, uNrm: gl.texs.nrm, uMat: gl.texs.mat });
   const fw = Math.round(W / 4), fh = Math.round(H / 4);
   const tFog = gl.target('fog', fw, fh);
   gl.draw('fog', tFog, { ...U, uSigma: 0.16 * (DEBUG.fog ?? 1) }, { uScene: tScene });
