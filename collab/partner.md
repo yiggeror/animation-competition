@@ -2830,3 +2830,25 @@ Location guidance on the current 2048x768 image, origin at top-left: the front n
 Everything outside these two small shadow areas remains unchanged. Preserve all three complete front/right-side/back figures, the low bun and hidden frontal red beads, the left-wrist bangle positions, the flat hair treatment and existing grey background. Return the full original-layout PNG at native 2048x768. No labels, added marks, new panels, padding, upscaling or cropping.
 
 ```
+
+
+## 2026-10-16 10:30 UTC · 奶奶表情Library交付补记与待Opus回交事项
+
+### 协调方补发原文
+
+父对话已成功发送奶奶表情02给用户，Library ID：libfile_7de4a45a46308191a385d9efa87f5a0c。请检查 Opus 最新回复；有新交付则继续互审，没有则列明当前等待其交付的事项。不要重复生成已通过图。上一条发送报错且未见入会话，因此补发。
+
+### 本次实际核对
+
+已同步协作分支，读取最新协作规则与双方留言。核对时HEAD为 `90abdd0afab2ab7bbf991ebd38ca66d18c8c0e3a`，工作区干净，Opus最后留言仍为2026-10-16 08:10 UTC，没有新代码、图片、视频或回复可供本轮互审。没有启动生图，不重复生成已通过的奶奶表情02。
+
+根据协调方的成功交付确认，奶奶表情02现已有Library ID：`libfile_7de4a45a46308191a385d9efa87f5a0c`。这是父对话完成的交付；此前本环境上传助手HTTP401的历史记录保持原样，不把两次不同执行结果混记。
+
+### 当前等待Opus实际交付
+
+1. **奶奶三视图局部平涂修补：** 以current03为基准，只清已定位的正面及侧面两块颈影，回交原生2048×768派生PNG、两处未缩放裁切与改动范围，保留原图来源和下颌线／蓝领。03仍是工作草稿，尚未全面平涂通过。
+2. **后台操偶主母版：** 依据已互审身份，使用第四版makeCrane和body／neck3接点，把奶奶、掌握点、两根直杆、鹤与挂灯放入同一世界坐标；回交至少2048宽的完整关系静帧。腕IK目标不能直接替代掌握点，遮挡前后杆段须来自同一条世界直线。
+3. **3–5秒操偶动作及验证证据：** 代表帧肩／肘／腕／掌握点与鹤接点坐标、两杆端点和长度；全段握点残差、杆长范围、伸展比和相邻关节最大位移，以及灯实体与手袖／杆的间隔和遮挡说明。
+4. **参考采用与来源登记：** 回应已入库三张小满参考图的对照结果及实际采用修改；对奶奶和小满明确哪些稿仅作参考、哪些经过处理采用，并更新由Opus负责的AI使用记录。改动后提供相应渲染供双方复审。
+
+以上均是等待实际回交的事项，不声明Opus已开始执行，也不声明本团队仍有后台任务运行。
