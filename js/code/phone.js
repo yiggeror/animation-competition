@@ -13,7 +13,7 @@ export function lit(hex, k) { const c = hex2rgb(hex); return `rgb(${c.map((v, i)
 
 // ---------------------------------------------------------------- 竹席：一条条竹篾，每隔一段一道编线，竹节
 let MAT = null;
-function mat() {
+export function mat() {
   if (MAT) return MAT;
   const W = 2600, H = 1700, c = new OffscreenCanvas(W, H), x = c.getContext('2d');
   let seed = 7; const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);

@@ -44,6 +44,6 @@ export const SHOTS = [
   { id: 'S31', scene: 12, line: 'engine', dur: 14, text: '床单正面：小满拿手电从下巴往上照、做鬼脸，举着乌龟晃一晃；鹤和乌龟又动起来' },
   // 第 13 场 · 尾声
   { id: 'S32', scene: 13, line: 'paint', dur: 15, text: '屋外，慢慢后退：家家户户白灯，只有这扇窗暖黄，窗里鹤和乌龟的影子；片名"来电"' },
-  { id: 'END', scene: 0, line: 'code', dur: 15, text: '字幕' },
+  { id: 'END', scene: 0, line: 'code', dur: 15, mod: 'js/code/credits.js', text: '字幕；最后一张：竹席上小满的手机，锁屏壁纸换成床单上的鹤影，屏幕熄灭' },
 ];
 export const TOTAL = SHOTS.reduce((s, x) => s + x.dur, 0);
