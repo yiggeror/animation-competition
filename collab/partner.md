@@ -1388,3 +1388,94 @@ SHA256：`a8791bde8d29fa88154bb947a5c03f5ea059c02a2d2b1ced1070d671c4fe06bf`。
 主母版仍优先验证右向站稳略驼、胸前两手各握一签、悬挂马灯、远侧解剖左腕玉镯，以及现有鹤的身后部／下颈接点。产出后先由另一位 Astra xhigh 实际看图，记录原始 PNG 尺寸和握持问题，再请你复审。正式图仍须实测宽度至少 2048；低于要求只标草稿，不用放大或补边代替。此次路径只针对独立的奶奶角色，不重试此前被拒的小满直立坐姿。
 
 这是一条制作路径通知，不是图片已生成或通过验收的声明；具体调用结果将单独记录。
+
+
+## 2026-10-16 09:40 UTC · 奶奶操偶 current01 原始草稿与作者原文
+
+本条交付实际成功取回的 [奶奶候选 current01](refs/grandma_puppeteer_side_current01_draft.png)，原始 PNG / RGB / 1536×1024，1658956 字节，SHA256 `936e451bfc472251d61a9a98d34c2dac9201b1f4ed26c16a3e7cef6116300181`。原文件逐字节复制，未缩放、补边或改像素。它的宽度和 body/neck3 双接点均未通过，当前仍为草稿，请勿登记为正式母版或已采用资产。
+
+独立 Astra 视觉复审正在进行；团队将根据接点问题做定点修订，并另交实际结果。先请你实际查看身份、衣装与握持外形，避免只凭提示词讨论。本轮同时开始原任务中从未尝试的小满托腮图；已成功交付的三视图、表情与用户坐姿保持沿用。
+
+以下作者交付原文保持不变；其“待独立审查”是写作时状态，后续结论另行追加。来源为内置 `image_gen.imagegen`，具体图像模型未披露。
+
+### 作者原文：astra_grandma_current01_delivery.md
+
+SHA256：`0502df6ffa5d07d0429ac5aedc24dc4c7557d88de9d4e6ce662d8d1b8fcf8bc6`。
+
+# 奶奶操偶候选 current01：原始草稿交付与作者初审
+
+2026-10-16 UTC，Astra 设计负责人。
+
+**本次内置 image_gen 调用已成功返回一张奶奶图，实际原图已保存；它是 1536×1024 的原始草稿，未达到正式 PNG 宽度至少 2048 的用户要求，且操偶接点关系尚未通过。** 不将其登记为已批准母版，也不把它当作旧调用成功补领。独立视觉复审已请求，待审查员另出结论。
+
+## 制作事实
+
+- 执行前已读实时分支 `e018498506f7f05a276650e0854bae34713dab44` 的最新协作记录，以及此前已互审的 `grandma_master_prompt.md`。Opus 最新请求仍为 08:10 的先做奶奶操偶母版。
+- 父级转交最新用户授权：检查可访问记录后继续实际制作，不因不可确认的旧调用无限等待。因此本次明确发起一次当前可追踪的独立成年奶奶制作；旧调用仍保持“结果未确认”。没有宣称已找回旧图，也没有把本次当作被拒内容重试。
+- 实际查看两个输入：现有 `crane_puppet.jpg` 约束鹤的道具身份，已交付 `xiaoman_turnaround_v4_draft.png` 仅参考同片线条与画风。提示词明确只生成成年奶奶，不包含小满，也不复制三视图版式。
+- 主要美术提示沿用已通过互审的版本，仅增加第二参考图的用途、单张横向构图以及不保证的原生宽度目标。`referenced_image_paths` 传入两张已查看的本地图片；`transparent_background:false`；没有 `num_last_images_to_include`，没有虚构尺寸参数。
+- 工具为 `image_gen.imagegen`；具体生成模型未披露。本次仅调用一次，未发生拒绝或额度错误，未为尺寸再生成，未切换渠道。
+- 请求于 09:33:04 UTC 记录提交；工具返回成功图像后于 09:34:30 UTC 完成保存与实测。工具结果只有 `image_url` 和 `output_hint`，完整原始 `output_hint` 及 payload 类型/长度保存在结果元数据；图像载荷独立保留为原始 PNG。
+
+## 原文件与尺寸
+
+| 项目 | 结果 |
+|---|---|
+| 交付文件 | `grandma_puppeteer_side_current01_draft.png` |
+| 格式／模式 | PNG / RGB |
+| 实测尺寸 | **1536×1024** |
+| 字节数 | 1,658,956 |
+| SHA-256 | `936e451bfc472251d61a9a98d34c2dac9201b1f4ed26c16a3e7cef6116300181` |
+| 正式尺寸验收 | 不通过；宽度不足 2048 |
+| 像素处理 | 无；只做字节一致复制，未缩放、补边、裁切或修改 |
+
+工具自动保存源文件在 `/workspace/generated_images/exec-851d453a-4cf2-4ea7-899e-975a93ef6476.png`。遵守工具要求保留自动生成源文件，本次人工交付副本、请求、元数据和说明全部保存在 `/workspace/laidain-production/grandma/`。源文件与交付副本已逐字节比对一致，并用 Pillow 完整读取 PNG 后实测宽高。
+
+## 作者初审：可保留与阻止升级母版的部分
+
+以下来自工具返回时实际展示的完整候选图，属于本作者美术初审，不替代独立审查。
+
+可作为后续参考的部分：
+
+- 奶奶全身朝右，灰白低髻、圆细框眼镜、红珠簪、浅蓝白小花开襟短袖、藏青宽裤、黑鞋白底均可读。年龄、温和专注和略圆背的方向基本成立，人物没有按小满身份直接换装。
+- 双脚与衣摆完整入画，上身有支撑，双肘保持弯曲；两手集中在胸前工作区且各拿一根杆。手掌轮廓连续，杆与拇指／弯曲手指有可读接触，没有只停在腕口。
+- 近侧较低的腕没有镯子；绿色玉镯在较高的后层手腕。可见遮挡关系与“近右远左、镯在远侧左腕”的目标相容，仍交独立审查确认，不能仅凭镯子画在左边就判解剖左右正确。
+- 马灯有吊线、吊钩与提梁关系，奶奶未提灯；灯与脸、双手有清楚间隔。鹤的现有本色皮、黑尾羽、红顶、分节颈与折腿身份得到较好保留。
+
+必须先解决的部分：
+
+1. **颈签接点不成立。** 可见较低一杆落到腹／翼下的身体区域，较高一杆进入尾羽／后翼方向后被遮住；没有一条可追踪的杆连到下段浅色颈节 `neck3`。至少一条身签关系可读，但“身签＋颈签”不能仅凭两杆存在就判通过。下一版应保留人物与手部基本外形，明确让负责颈部的那条杆延续到下颈；不能把头、喙或另一处身部当成 `neck3`。
+2. **原始分辨率不达正式要求。** 提示词要求宽度不构成文件证据。当前只有 1536 宽，不能在文件名去掉 draft 后宣称完成正式主母版，也不能通过放大或补边解决验收。
+
+此外，本图具有轻微立体明暗，背景也不是完全无层次的纯色样板；这些可列后续平涂清理项，优先级低于正确双接点。图像本身不能证明世界尺寸、固定杆长、腕／握点偏移补偿和逐帧可达性，上述仍按已有接入预检执行。
+
+## 交付清单与下一步
+
+- `grandma_puppeteer_side_current01_draft.png`：实际原始候选。
+- `grandma_current_call_prompt.txt`：本次使用的完整提示词。
+- `grandma_current_call_request.json`：本次实际工具参数。
+- `grandma_current_call_status.json`：新／旧调用状态、时间、参考图哈希、输出路径、尺寸和文件哈希。
+- `grandma_current_result_metadata.json`：工具返回字段、原始 output_hint 与图像载荷描述；base64 没有复制进元数据，二进制原图已单独保留。
+- 本说明：作者原文，可随草稿原样交给 Opus。
+
+当前完成的是一次可追踪的真实制作和原始草稿回收。独立审图、正确的 `body/neck3` 双杆连接、正式尺寸以及后续场景接入均未宣告完成。建议先让 Opus 和独立审查员判断这位奶奶的身份与外形是否可采用，再按明确问题做定点修订；本轮不为单纯尺寸追加生成。
+
+
+### 本次实际完整提示词
+
+```text
+Create one clean full-body character-design master image for the hand-drawn 2D animated short “Lai Dian.” The single main character is a Chinese countryside grandmother, about 70 years old and about 1.5 metres tall, standing in strict profile facing the RIGHT. She is a kind, capable, quietly humorous shadow-puppet performer. This is a character model image with a readable working pose, on a uniform pale-grey background.
+
+Give her natural elderly adult proportions and a gently rounded upper back above a supported waist and pelvis. Both feet rest firmly on the same ground level, with a small natural fore-and-aft offset. Her posture is stable and relaxed. Her shoulders stay low, both elbows remain comfortably bent, and she looks toward the crane she is operating with a small, attentive smile. Her grey-white hair is brushed back into a LOW bun with a red-bead hairpin. Thin round glasses leave the eye expression readable. She wears a light-blue short-sleeved button-front blouse with small WHITE flowers, dark navy wide-leg trousers, and black cloth shoes with white soles. One green jade bangle belongs to her anatomical LEFT wrist. In this right-facing profile her left arm is the far arm; keep the bangle on that far wrist, even if naturally obscured. The visible near wrist is her right wrist.
+
+Both hands work together IN FRONT OF HER CHEST. Each hand individually grasps ONE thin, rigid bamboo control rod. Use a small, natural difference in hand height and forward position so both grasping relationships can be understood without spreading the arms. Show continuous forearms and natural wrists, with each rod held between the thumb and curved fingers in the palm’s grasp area. The rods must physically meet the grasping fingers, not stop at the wrist or float beside a fist. Let the fingers naturally occlude the rod through each grasp. Exactly two rods can each be followed from one hand to one connection on the crane.
+
+The FIRST attached reference shows two lighting views of the SAME crane shadow puppet. Use its existing silhouette, colours and articulated construction only as prop guidance: an amber-brown leather body, black trailing tail feathers, a segmented long neck, red crown, long slim beak, and one folded leg. Use the physical backstage leather appearance, without copying the display panels, their text, or dramatic lighting. Place this flat crane puppet to the right of the grandmother, with its body connection around or slightly above her working hands. One rod connects to the rear body beneath the wing; the other connects to a LOWER pale neck segment near the neck base, not to the head or beak. Keep the full crane and both rod paths visible and visually subordinate to the grandmother.
+
+A kerosene lantern HANGS beside her from a clear hook and suspension line. The line may continue out of the top of the image. Show the complete lantern body with clear space around it, away from her face and working hands. Both of her hands operate the puppet; neither holds the lantern.
+
+Use elegant, continuous hand-drawn outlines, restrained facial lines, simple flat local colours, and carefully designed overlapping shapes. Keep all of the grandmother’s bun, fingers, trouser cuffs and shoes inside the canvas, as well as the lantern body, the crane, and the two rods, with breathing room. No text, labels, panels, additional people, room scenery, floor line, cast shadows, lighting glow, painted rim light, gradients, paper texture, visible construction skeleton, ball joints, disconnected limbs, extra hands, or extra rods.
+
+The SECOND attached reference is the existing Xiaoman turnaround and is supplied ONLY for line quality and the shared 2D film style. Create an elderly adult with her own mature facial proportions, clothing and posture as specified above; do not include Xiaoman or reproduce the three-view layout. Compose ONE full-body grandmother with her props, on a spacious landscape canvas. Use the highest native output resolution available, targeting a PNG at least 2048 pixels wide; this is an output request, not an instruction to enlarge or pad a smaller image.
+
+```
