@@ -136,34 +136,57 @@ export class Cards {
     }
     this.cleanMat(parts);
   }
-  // 一张画好的人物图当作一块卡片：固有色、法线、材质三张图（tools/card_maps.py 算好），按图片像素 → 画面像素的映射画上去。
-  // 卡片是一块竖着的平面，斜着看有透视：把图竖着切成几条，每条用自己的仿射变换（strips: [{x0, x1, m:[a,b,c,d,e,f]}]，x 是图片像素）。
-  addImage(maps, strips, depth) {
+  // 画好的人物图当作卡片：固有色、法线、材质三张图（tools/card_maps.py 算好），按图片像素 → 画面像素的仿射变换画上去。
+  // layers：从后往前 [{ maps:{alb,nrm,mat}, m:[a,b,c,d,e,f], clip?:{pts, invert}, alpha?, mat?:true, overlay?(ctx) }]
+  //   clip：图片像素坐标的多边形，invert 时画多边形以外的部分（比如"身体 = 整张图减去头"）；
+  //   alpha < 1 用来在两张变体之间过渡（固有色、法线按 alpha 叠，材质只取 mat 为真的那层）；
+  //   overlay：在这层的坐标里往固有色上补画（眨眼的眼皮、嘴形），法线和材质沿用下面的脸。
+  addImage(layers, depth) {
     const { W, H } = this;
-    const draw = (ctx, img) => {
-      for (const st of strips) {
-        ctx.save();
-        ctx.setTransform(...st.m);
-        if (strips.length > 1) { ctx.beginPath(); ctx.rect(st.x0 - 0.6, -2, st.x1 - st.x0 + 1.2, img.height + 4); ctx.clip(); }
-        ctx.drawImage(img, 0, 0);
-        ctx.restore();
+    // blend：[{ maps, w }, ...] 两张变体按权重叠加（在临时画布上用 lighter 相加，颜色和透明度都是严格的渐变），再整体画上去
+    const draw = (ctx, L, img, key) => {
+      if (L.blend) {
+        const [bc, bx] = scratch('blend', W, H);
+        bx.globalCompositeOperation = 'lighter';
+        for (const B of L.blend) if (B.w > 0) draw(bx, { ...L, blend: null, alpha: B.w }, B.maps[key]);
+        ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = L.alpha ?? 1; ctx.drawImage(bc, 0, 0); ctx.restore();
+        return;
       }
+      ctx.save();
+      ctx.setTransform(...L.m);
+      if (L.clip) {
+        ctx.beginPath();
+        if (L.clip.invert) ctx.rect(-10, -10, img.width + 20, img.height + 20);
+        L.clip.pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); ctx.closePath();
+        ctx.clip(L.clip.invert ? 'evenodd' : 'nonzero');
+      }
+      ctx.globalAlpha = L.alpha ?? 1;
+      ctx.drawImage(img, 0, 0);
+      ctx.restore();
     };
-    draw(this.a, maps.alb);
-    draw(this.n, maps.nrm);
+    for (const L of layers) {
+      if ((L.alpha ?? 1) <= 0) continue;
+      draw(this.a, L, L.maps?.alb, 'alb');
+      if (L.overlay) { this.a.save(); this.a.setTransform(...L.m); L.overlay(this.a); this.a.restore(); }
+      draw(this.n, L, L.maps?.nrm, 'nrm');
+    }
     // 材质：R 通道是深度，每次按这一帧的深度填
     const [mc, mx] = scratch('imgmat', W, H);
-    draw(mx, maps.mat);
+    for (const L of layers) if (L.mat !== false && (L.alpha ?? 1) > 0) {
+      // 材质不能混：两张都画（覆盖范围取并集，只有一张有的地方也有材质），权重大的那张盖在上面
+      const list = L.blend ? L.blend.filter((b) => b.w > 0).sort((a, b) => a.w - b.w).map((b) => b.maps) : [L.maps];
+      for (const mp of list) draw(mx, { ...L, blend: null, alpha: 1 }, mp.mat);
+    }
     const id = mx.getImageData(0, 0, W, H), D = id.data, dr = Math.round((depth / 8) * 255);
     for (let i = 0; i < D.length; i += 4) if (D[i + 3]) D[i] = dr;
     mx.putImageData(id, 0, 0);
     this.m.drawImage(mc, 0, 0);
     // 缩放插值会在材质交界处混出中间值，和部件一样清理掉
     let a = Infinity, b = Infinity, c = -Infinity, d = -Infinity;
-    for (const st of strips) for (const [x, y] of [[st.x0, 0], [st.x1, 0], [st.x0, maps.alb.height], [st.x1, maps.alb.height]]) {
-      const X = st.m[0] * x + st.m[2] * y + st.m[4], Y = st.m[1] * x + st.m[3] * y + st.m[5];
+    for (const L of layers) { const im = (L.maps || L.blend[0].maps).alb; for (const [x, y] of [[0, 0], [im.width, 0], [0, im.height], [im.width, im.height]]) {
+      const X = L.m[0] * x + L.m[2] * y + L.m[4], Y = L.m[1] * x + L.m[3] * y + L.m[5];
       a = Math.min(a, X); b = Math.min(b, Y); c = Math.max(c, X); d = Math.max(d, Y);
-    }
+    } }
     this.cleanMat([{ bbox: [a, b, c, d] }]);
     return [a, b, c, d];
   }

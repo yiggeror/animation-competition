@@ -15,7 +15,9 @@ rgb, a = im[..., :3], im[..., 3] / 255.0
 r, g, b = rgb[..., 0], rgb[..., 1], rgb[..., 2]
 L = rgb @ np.array([0.299, 0.587, 0.114])
 solid = a > 0.5
-line = (L < ndi.uniform_filter(L, 7) - 18) & solid           # 比周围暗一截的细线
+# 比周围暗一截、而且本身就暗的细线（轮廓线、发丝、衣褶）。浅色印花（裙子上的白点）旁边的黄色虽然也比周围暗，
+# 但不是线——要是当成分界，每个白点都会鼓成一个小包，袖子裙面显得脏
+line = (L < ndi.uniform_filter(L, 7) - 18) & (L < 150) & solid
 inside = solid & ~line
 # 每个像素最近的"区域内"像素（线和边缘用它的值）
 near = ndi.distance_transform_edt(~inside, return_distances=False, return_indices=True)
