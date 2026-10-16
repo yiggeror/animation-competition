@@ -2166,3 +2166,460 @@ Glasses must remain structurally continuous, with the same fine round rims and p
 Include the full crown, both ears and any naturally visible bun in each portrait, with clear breathing room and no overlap. Only head, neck and a consistent small shoulder/collar area; no hands or wrist jewellery in this crop, no puppet, rods, lantern or props. Elegant hand-drawn continuous outlines, simple FLAT local colours, restrained detail matching the reference; uniform pale-grey background. No writing, labels, panels, frame borders, scenery, cast shadows, dramatic lighting, gradients or paper texture. Use a wide horizontal canvas. Request an original PNG at least 2048 pixels wide if the tool can produce it natively; do not imitate higher resolution by padding or scaling a smaller picture.
 
 ```
+
+
+## 2026-10-16 10:21 UTC · 奶奶表情通过、三视图尺寸推进与操偶几何交接
+
+### 原始图核验
+
+| 文件 | 原生像素 | 字节 | SHA-256 |
+| --- | --- | ---: | --- |
+| `collab/refs/grandma_expressions_current02.png` | 2048×768 | 1770557 | `8394bd5dde841a3202e04f48684d728d5c511317efa1a159c55abe99818b39dd` |
+| `collab/refs/grandma_turnaround_current02_draft.png` | 1774×887 | 1504766 | `a6f023a9d315059d0498118e81ebd6e87fb300e3858c2582fd3679d662d9f23f` |
+| `collab/refs/grandma_turnaround_current03_draft.png` | 2048×768 | 1406736 | `ab88b69f5303229af379303a37b6e9e3c8cdb35cd05b3902b604871efb2b1671` |
+
+
+### 团队交付原文：root_refine_round_delivery.md
+
+SHA256：`16ca50fa41514a5452d971114546b1bc2af517112eeda1810e14a6cbc307bc98`。以下按原文追加。
+
+# 奶奶平涂与正式尺寸：本轮交付状态
+
+本轮两位 Astra xhigh 互相审查了各自制作的图，具体原文和实际提示词如下完整附入。没有改动 Opus 的角色代码、镜头或既有协作原文。
+
+**奶奶表情 current02 通过单张设计参考验收。** 实际原生2048×768，三种表情、前视低髻与红珠的自然遮挡、身份连续及主要去光照均获作者和独立审查一致确认。将生成时的候选文件 `grandma_expressions_current02_draft.png` 按原字节复制为 `collab/refs/grandma_expressions_current02.png`，SHA不变。这个通过不代表角色已分层、已接入动画或精确RGB色板已落实。
+
+**三视图 current02/current03 仍为工作草稿。** 02为1774×887，未过尺寸与平涂；03已原生2048×768且发亮暗带改善，但正面下颌下方及侧颈仍有明确橙色投影。当前不能因原生宽度通过就把03登记为全面平涂终稿。横幅是工具重新绘制的原始输出，没有本地放大或补边；人物像素高度从约820降至约720，画布变宽不表示主体细节增加。
+
+已将03残留限定到两小块颈影，团队正在执行另一次有明确局部目标的04修订；本条不预先宣称其成功或通过。若工具仍无法准确处理这两处，将把同色填充要求交由Opus在角色绘制中落实，不继续泛泛重生整个人物。
+
+**请 Opus 可以开始按已互审的人物身份与表情接入后台结构，不必等生成图自行解决杆几何。** 操偶主母版仍未通过，生成稿的杆端和遮挡前后共线不能直接照描。下附《给 Opus：奶奶操偶几何接入请求》为团队交接原文：继续使用第四版makeCrane与body/neck3，在同一世界坐标下核对掌握点、两根直杆和可达性，回交静帧、短动作及几何证据后再互审。
+
+本轮没有继续调用被拒绝的小满托腮修订，也没有以奶奶任务替代或绕过该限制。Library预览另以实际上传成功结果补记，当前这条不预报任何Library文件ID。
+
+
+### 团队交付原文：astra_grandma_expressions_current02_delivery.md
+
+SHA256：`e6375972ef245535efb77f0bb8b8fba47f5730883d9031f70d122a301c36c5e1`。以下按原文追加。
+
+# 奶奶表情 current02：实际修订与作者验收
+
+2026-10-16 UTC；Astra 本轮表情修订作者。本图由另一位 Astra 独立审查，本作者不自行作最终采用批准。
+
+**一次内置编辑成功返回，原生 2048×768 得以保留。前视低髻／红珠遮挡、专注眉心和主要光照色带均已按目标改善；作者建议该张进入通过验收，由独立审查员确认。** 本轮不是仅为尺寸重生，实际修正了可见内容。文件仍保留候选名称，独立审查状态另记。
+
+## 原图与实际调用
+
+调用前已重新读取实时协作记录，实际查看表情01和三视图01，并与三视图修订作者明确共同发髻、发簪方向与新色板。完整设计和看结果前写定的平涂验收标准在 `astra_grandma_expressions_current02_design.md`。实际完整提示词、请求、状态、返回元数据为本目录 `grandma_expressions_current02_*` 文件。
+
+工具为内置 `image_gen.imagegen`，具体底层模型未披露。本轮仅一次调用，提交时间 10:08:02 UTC，成功回收观察记录 10:08:59 UTC；无拒绝，无追加。唯一被编辑主图是表情01，三视图01仅作前脸低髻遮挡参考。托腮任务没有调用。
+
+实际工具源文件 `/workspace/generated_images/exec-1f150681-109c-4188-bdaa-788b28bc5b6f.png` 原样保留。交付副本 `grandma_expressions_current02_draft.png`：PNG / RGB，**2048×768**，1,770,557 字节，SHA-256 `8394bd5dde841a3202e04f48684d728d5c511317efa1a159c55abe99818b39dd`。本作者完整读取并实测，源与副本逐字节一致，未缩放、补边、重编码或修改像素。
+
+## 实际看图结论
+
+- 三头像完整，构图、头部尺度与五官身份保持；左栏慈祥微笑与中栏大笑保留，镜框、眼口结构和年龄特征没有因平涂清理消失。
+- 三栏原来偏在画面左耳下的显眼髻团收回，改为后脑低髻从下颊后露出少量边缘；红珠在正面隐藏。这与约定的解剖右后侧发簪及三视图正面遮挡相容，不表示把发簪从角色身份中删除。
+- 右栏强眉心竖纹明显减弱，内眉仍有轻微收拢，眼睛保持凝视，嘴角温和。专注与左栏微笑仍可区分，没有把专注直接替换成无表情脸。
+- 原有的整块颈下暗带、发丝白亮带／深灰光照带，以及脸和衣服的明显柔光塑形被清掉，头发和衣身主要靠线条解释结构。嘴内、唇、眼、白花、镜框的颜色有各自结构依据，不应当作未清除的光照阴影。
+
+## 平涂验收采用既定标准
+
+实际查看完整返回图及未缩放领口检查裁切，未看到上一版明确的下颌投影或发高光带。领口窄缝和细线仍解释衣片与身体的遮挡，不是向外铺开的柔软投影。当前主体从视觉上已达到本轮约定的平涂设计参考口径；不是声称每个填色区域数学上只有一个 RGB 值。
+
+远离轮廓的五个背景 7×7 小块，通道值约在 **209–212**，各块均值差很小；并非精确目标 `#D8D8D8`，但没有据此发现需要重生的明显光晕或连续渐变。额头、清楚的脸颊与颈部样块的主色也接近，未保留原来颈下显著暗区。采样记录在 `astra_grandma_expressions_current02_flat_samples.json`；初步碰到镜框／花纹的点已明确排除，不用结构色污染数值结论。少量样点只支持实际观察，不冒充整图全部像素的证明。
+
+本轮色板是统一制作目标，工具返回并未逐项精确复现十六进制值。视觉可辨的光照残留、身份变化才是实质问题，不以抗锯齿或不可感知的栅格差单独否决。最终是否通过由独立审查员按同样标准判断。
+
+## 与三视图02的关系及范围
+
+作者已经实际查看新三视图02：人物身份和前视遮挡与本表情相容，但三视图仍有可见发亮暗带和颈下影，且只有1774宽。不能因本张表情达到宽度和平涂目标，就把整套三视图或操偶母版一并宣布完成。三视图02由本作者另以独立审查角色出具意见，保持两张稿的状态分开。
+
+本张只交付奶奶表情设计参考，不包含分层绑定、操偶杆、neck3或动态可达性批准。原图、提示词和审核材料已交另一位 Astra，尚待其独立结论；不自动追加本张生成。
+
+## 独立复核回收后的状态更新
+
+上述作者验收完成后，另一位 Astra 已实际看图并保存 `astra_grandma_expressions_current02_independent_review.md`；本作者已实际读取其全文。独立结论通过本张的原生宽度、同人、三表情、前视髻／发饰遮挡及主要去光照处理，与作者意见一致。
+
+因此本张现在可交付为**通过复核的奶奶表情设计参考**，无需因下一阶段的精确RGB、分层或动态工作继续挂作内容未通过。精确色值、整套三视图、操偶几何与角色动画均不在这次单张批准范围。原始PNG保持不变；保留原文件名中的draft只是来源版本标识，当前验收状态以本段和独立报告为准。
+
+
+### 团队交付原文：astra_grandma_expressions_current02_design.md
+
+SHA256：`b0c5d68a165f344216104ed759a8cb502bfaf7a41fbb974e1a646b1c53afacc3`。以下按原文追加。
+
+# 奶奶表情 current02：调用前最小修订设计
+
+2026-10-16 UTC；Astra 表情修订作者。本轮与前次独立审查角色分开，产物交另一位 Astra 独立复核；不自行批准最终稿。
+
+用户明确要求继续独立可做的奶奶修订、平涂一致性和正式尺寸；协调方授权本任务一次内置 image_gen 编辑。托腮任务保持拒绝后停止，本次不涉及该角色或任务。
+
+已读实时 HEAD `5b128b54377a41770c84b7f19ddc142b1a0ea77d` 的 collab/README.md、claude.md 和 partner.md 最新内容，仓库当时无本地改动。实际重新完整查看了表情 current01 与三视图 current01，下面两张原文件作为实际输入。没有更改仓库文件。
+
+最小设计已与三视图修订作者直接确认：
+
+- 表情01继续是前脸和三表情主图；保留温和微笑、大笑、细圆镜和同一五官。三视图01只约束低髻与发簪的空间归属，不把整张三面排版复制过来。
+- 发髻在后脑下方居中，红珠固定解剖右后侧；背面画面右侧、侧面按原后髻可见，正面自然藏在头后。表情三栏收回侧颊旁突出的髻团和露珠，统一前视遮挡，不能为每张显示配饰而移动簪子。
+- 右栏专注只减弱眉心两条压纹和内眉压迫，保留凝视、轻微温和嘴角。其余两栏不重画表演。
+- 采用双方新约定的统一制作目标色板：肤色 `#FED4B8`、灰白发 `#C4C0BD`、蓝衣 `#8DB0DA`、白花 `#F7F4EC`、背景 `#D8D8D8`。这是本轮选择的新目标，不冒称旧稿本来就用了精确固定色。肤发衣以主固有色填充，去掉颈下阴影、肤色柔光、发丝亮暗带、衣领和衣褶光照明暗；结构由轮廓与细线保留。眼、唇、口腔、牙齿等必要结构色仍分别保留，不把面部压成无五官的平面。
+- 保持原来的宽 8:3 构图和完整三头像、肩领，不靠额外留白凑宽。原始表情01已实测2048×768，本次请求保留该原生尺寸；工具无显式宽高参数，仍以返回原文件实测为准，不虚构保尺寸保证、不做本地放大或补边。
+
+完整实际提示词见 `grandma_expressions_current02_prompt.txt`，实际请求为 `grandma_expressions_current02_request.json`。先保存此设计，再执行单次调用；若工具拒绝则准确记录并停止，不换说法或渠道重试。返回后逐字节保存原图、实测尺寸和哈希，记录作者观察，再交另一位 Astra 实际独立看图。
+
+## 看 current02 结果前固定的平涂验收依据
+
+以视觉可见的光照结构为主：是否仍有连续明暗渐变、下颌投到颈部的暗带、领片或衣褶的投影、发丝高光白带／暗灰光照色带，以及不能由服装图案、口腔、镜框或分区结构解释的大块异色。主体轮廓、细结构线、白花、眼口固有色属于允许的绘制信息；轮廓抗锯齿也不是光照。
+
+会记录少量远离轮廓的背景样点或小块范围辅助判断。背景若只有不可感知的细小栅格差，不单独据此否决视觉平涂，也不要求每个像素都精确等于目标十六进制值；若存在肉眼可见的渐变或光晕，仍明确记为未通过。目标色板用于跨图一致性，不把微小色差误报为人物身份变化。
+
+最终采用仍须同时检查前脸／配饰一致性、三表情清楚、完整画幅、视觉平涂和原生至少2048宽；部分改善只登记工作草稿。此口径在本次结果返回前写定，避免看完后为通过改标准。
+
+
+### 团队交付原文：astra_grandma_expressions_current02_independent_review.md
+
+SHA256：`2df47cd43ca79823a751852cb24fff9cd0fedd36ded94e5106c74ddaa24b3c48`。以下按原文追加。
+
+# 奶奶三表情 current02：独立实图复审
+
+2026-10-16 UTC，Astra 奶奶设计负责人。本图由另一位 Astra 执行编辑，本人没有制作或调用该版本。
+
+**本张通过本轮表情内容与视觉去光照复核，原生2048×768宽度也通过。** 慈祥笑、大笑、较温和的专注及统一前视低髻均可保留。这个结论采用正常观看尺度的平涂判断，不宣称所有内部像素完全同值或准确命中目标十六进制色；也不使仍未通过的三视图、操偶杆或整套最终采用自动通过。
+
+## 实际检查与文件
+
+已实际查看完整 current02，读取其实际提示词及状态记录，与先前实际查看的表情01、三视图01及本轮三视图02对照。独立用 Pillow 完整读取原PNG，并将保存副本与工具源文件逐字节比对。
+
+- 文件：`grandma_expressions_current02_draft.png`，PNG/RGB，**2048×768**，1,770,557 字节。
+- SHA-256：`8394bd5dde841a3202e04f48684d728d5c511317efa1a159c55abe99818b39dd`。
+- 工具原文件：`/workspace/generated_images/exec-1f150681-109c-4188-bdaa-788b28bc5b6f.png`。
+- 原样副本一致，没有本地放大、补边或像素修改。独立核验及有限取样记录见 `astra_grandma_expressions_current02_verification.json`。
+
+## 本次已解决的具体内容
+
+1. **前视低髻遮挡统一。** 原01在画面左耳后突出的髻团已收回，当前是藏于后脑、在两侧仅露有限边缘的低髻；三栏一致，红珠在正面自然隐藏。这与三视图正面及背面右后侧簪的固定规则能共同解释，没有为了露脸识别点把红珠移到颊旁。隐藏不是从角色身份中删除发簪。
+2. **专注眉心已减轻。** 右栏原先两道压迫明显的竖纹基本去掉，仍保留凝视与轻微眉端收拢，嘴角有温和弧度。读法已更接近熟练而安静的专注，不再需要以担忧／皱眉笑为主要问题。无需把眉眼全抹平，也无需为了区别于微笑而改成严厉表情。
+3. **原有两种笑保持。** 左栏闭口浅笑、中栏眼颊共同上提和自然开口大笑都延续，头部、耳、鼻、下颌和细圆镜保持同一人的连续结构。没有因为收髻或去阴影而换脸，眼睛、嘴、镜框也没有被一并抹掉。
+4. **主要光照块确已去除。** 原来的显著颈下阴影和头发亮白色带已经消失，头发主要用线组织，脸／颈和衣领也不再靠大块亮暗塑形。与当前三视图02仍明显残留的颈下影、发亮带不同，不能把那份未完成结论机械套到本图。
+
+## 平涂判断与精确色值的区别
+
+当前图在正常观看尺度上接近清楚的单一固有色填充，未见需要继续生图消除的明显方向光或柔光塑形。为避免把微小栅格波动误判为新阴影，本人对避开轮廓线的额头、两侧下颊、颈部和蓝衣内部作有限原像素取样：安全肤色区的中位RGB约为 `[253–254,207–208,172–174]`；几处安全蓝衣区约为 `[138–140,175–177,213–215]`。跨区变化只有少数灰度级，支持“明显光照已去除”，不支持宣称全画面逐像素单色。
+
+有些初次发丝／衣领取样碰到线或白花，已在原始记录标明限制，不拿其大范围极差当作平涂失败证据。背景取样约210–212，也没有准确等于请求的216。当前发、肤、衣的实际颜色同样与目标色板存在小幅偏差，因此不得记为精确色板验收通过。正式统一分层或向量重绘时，可按共用色板固定数值；这不需要推倒已成立的表情表演。
+
+## 与三视图及采用范围
+
+本图前视脸、髻、圆镜、领型与三视图仍是同一设计方向，髻与红珠的关键遮挡分歧已收敛。三视图02尚未去掉自身光照，也未达到2048宽，所以整套在色块和文件规格上还未统一。应把本张作为本轮较明确的去光照及前视遮挡参考，反向约束接下来的三视图清理，不能因三视图尚未通过就否认本张已经完成的改进。
+
+独立结论：原生尺寸、同人、三表情、前视发饰遮挡及主要去光照处理通过本轮复核；精确RGB填色、整套最终采用、角色分层和动态接入不在本次通过范围。本人未新增生图、未修改本图或仓库。
+
+
+### 团队交付原文：astra_grandma_geometry_handoff_to_opus.md
+
+SHA256：`b63bf7d74d9b564cc9be33a5fb75a565718d3a515a7357c72710741758e38eba`。以下按原文追加。
+
+# 给 Opus：奶奶操偶几何接入请求
+
+请以已互审的奶奶人物身份稿接入后台镜头，继续使用第四版 `makeCrane`，两根签分别连接 `body` 与 `neck3`，不要回用旧 `loadPuppet('crane')`／S07局部约定。当前生成图只能给外形参考；03上签遮挡前后不共线，不能直接照描成机械结构。
+
+请把奶奶身高、肩肘、两掌握点、鹤接点和挂灯实体统一到同一世界坐标，明确单位与各局部变换。杆端应对准掌握点，不能把腕IK目标当掌心；既有推导已确认旧接口两点有固定偏移。每根杆先由掌握点至对应鹤关节形成一条完整世界直线，再投影并按人物、翼身和灯的实际前后关系遮挡，不分别拼接露出的杆段。遇到伸手够不到，请调整站位、鹤位或签长，保留弯肘余量，不能拉长肢段或锁死肘后宣称握住。
+
+请回交一张至少2048宽的后台全关系静帧，完整包含奶奶、双手、两杆、鹤和挂灯；另给3–5秒小幅操偶短动作。随稿列出代表帧的肩／肘／腕／掌握点与body／neck3坐标、两杆端点和长度，以及全段的最大握点—杆端残差、杆长范围、肩到目标的伸展比和相邻关节最大位移。请说明灯体与手袖／杆的间隔、遮挡层次和检查范围，不以光源中心距离代替实体间隔。
+
+以上复用已核实的接口和几何判断，本轮没有新增后台绑定或动态测试；待你实际回交后，我们再独立审图与复核证据。
+
+
+### 团队交付原文：astra_grandma_turnaround_current02_delivery.md
+
+SHA256：`e79eeea905c7c309a69e13e4f156edae3be384fa307fb5ffb0f693cb34e11907`。以下按原文追加。
+
+# 奶奶三视图 current02：作者实际交付与未完成项
+
+2026-10-16 UTC，Astra 奶奶设计负责人。
+
+**本次定点编辑已成功返回，人物身份和配饰关系保持；严格平涂与正式宽度尚未完成。** 不将提示词中写明的目标冒充实际效果，原始图已交另一位 Astra 独立审查。
+
+## 原始记录
+
+本次从已互审的三视图 current01 开始，针对侧向、低髻和红珠遮挡、衣装结构、去光照及背景统一进行一次内置 `image_gen.imagegen` 编辑。不是只改尺寸的重复调用，底层模型未披露。
+
+- 提交：2026-10-16 10:07:51 UTC；成功结果回收记录：10:09:05 UTC。
+- 工具原文件：`/workspace/generated_images/exec-13055a74-d673-4a70-9f58-a42704927047.png`。
+- 原样副本：`grandma_turnaround_current02_draft.png`，PNG/RGB，**1774×887**，1,504,766 字节。
+- SHA-256：`a6f023a9d315059d0498118e81ebd6e87fb300e3858c2582fd3679d662d9f23f`。
+- 副本与源PNG逐字节相同；没有本地缩放、补边、重编码或像素修改。完整实际请求、提示词和结果元数据在同名文件中。没有拒绝或工具错误。
+
+## 实际内容
+
+本人实际查看返回图及保存原图。三个人物的温和老年脸、低髻圆镜、蓝白花衬衣、宽裤布鞋、稳定站姿和完整全身继续保持，正背面左镯在正确画面侧，侧近腕没有换戴玉镯。红珠正面隐藏、背面画面右侧及右侧面后髻处可见，和本轮同事的表情02采用相同身份规则。
+
+中栏身体较上一稿稍收向侧面，原先可见的小片远镯被更自然地遮住。仍有可见扣门襟宽度和展示式衣身阅读，不能由作者声称已完成可标定的严格90度正交。双鞋前后错开本身可以来自站位，不单凭两鞋可见或双镜圈就判定三分之四，更不能从图中量出一个未经测量的转体角。此项交由独立实图复核。
+
+**本次最明确未兑现的是人物的去光照。** 前视下颌与颈根之间仍有一块与面肤色不同的阴影，头顶、侧头和低髻仍有显著浅亮带／灰暗块；皮肤、衣料与裤子也保留层次。应保留外轮廓和细结构线，把这些光照填充改成同一固有色，不能因为整体较干净就写“纯平涂已完成”。
+
+背景已更接近中性灰、没有明显大幅舞台照明，但也不是请求的逐像素 `#D8D8D8`。四角空白50×50检查块的各通道范围约208–212，只有低幅波动。这个证据只能说明它不是精确单色填充，不能把几个灰度级的栅格变化夸成明显光照渐变。取样原始数据在 `grandma_turnaround_current02_background_sampling.json`，未改图。
+
+正式宽度仍为1774，小于2048；这项与身份保留、灰底改善分别验收。前次表情的2048输出已证明不能假定工具全局上限不足2048，本次结果也不能推导“正式尺寸无解”。
+
+## 后续已授权范围
+
+父级在收到实际结果后，转交用户继续平涂与正式尺寸的授权，允许在独立审查确认残留后再做一次有内容目标的 current03。拟限定为清理已定位的颈下影、头发亮暗带及残留衣料光照，同时保留身份；可将三栏在原生8:3画布重新绘制，争取工具已实际输出过的2048×768格式。不是给现有位图补灰边，也不做本地插值放大。
+
+若8:3输出降低每个人物的实际像素高度，会在交付中如实写明，不能把较大画布宽度说成主体细节增加。仍保持等高、完整、正常分栏和可用的衣手轮廓。任何后续原图另存并再次独立审查；当前02没有因此预先变成通过稿，也没有启动机械操偶整图重做。
+
+
+### 团队交付原文：astra_grandma_turnaround_current02_design.md
+
+SHA256：`d78c21943a2b6f2c87a77ba2baee199df34f948883bff46aa56dee6d756f66ba`。以下按原文追加。
+
+# 奶奶三视图 current02：调用前设计与互审范围
+
+2026-10-16 UTC，Astra 奶奶设计负责人。
+
+已读当前检出 `5b128b54377a41770c84b7f19ddc142b1a0ea77d` 的 `collab/claude.md` 最新记录、`partner.md` 本轮完整交付与两份独立身份审查；Opus 最新留言仍为08:10。已重新实际查看三视图 current01 原始PNG，读取其实际请求和作者／独立审查。仓库只读，未修改任何文件。
+
+用户经父级明确授权继续奶奶设定修订。本次不是只换尺寸的重复生成：有明确内容目标，包括严格侧向、跨视图低髻与红珠的固定位置、衣装结构和去光照平涂。只执行一次内置 image_gen 定点编辑，取回后由另一位 Astra 独立实审，不由作者自行批准为终稿。小满托腮不在本轮范围，也不调用该任务。操偶双杆和neck3继续由Opus按统一世界坐标处理，不再整图追杆。
+
+## 本次路线
+
+唯一图像输入为已互审的 `grandma_turnaround_current01_draft.png`，SHA-256 `93bdaee6ccf0a89730f41433127cfb5dcf4f96dbb2ee1685af5707fa15f8ecb9`。保留同一人物、三栏顺序、自然老年体量、脸型、眼镜、衣服和放松站姿，限定修订内容如下。
+
+1. 中栏从展示侧面收正为完整朝右正侧面。头、胸、骨盆、膝、足同向；门襟只沿最前侧窄边出现，不把前胸面朝观众展开。远手和远鞋允许自然遮挡，保留稳定站立，不为露镯或凑齐两只鞋扭转躯干。
+2. 低髻固定在后脑下方中央，红珠簪固定在解剖右后侧。正面髻主要藏于头后、红珠自然隐藏；侧面保留原后髻和可见红珠；背面红珠处在画面右侧。与负责表情修订的独立审查员已交流并同意同一遮挡规则。没有把原图可见性差异武断当成已经测出的三维位移。
+3. 左腕玉镯继续正面画面右腕、背面画面左腕、朝右侧面的远腕；近右腕无镯。正背门襟和衣领对应，背面不复制前纽扣。
+4. 去除皮肤、头发、衣料的柔光与亮暗色带，结构用轮廓、发丝和衣褶细线表达，保留必要五官与结构分界。背景全画布统一 `#D8D8D8`，不用地影、渐变和纹理。
+
+## 共享平涂目标色
+
+为使两位作者的三视图和表情修订可对齐，协商使用下列目标固有色。肤、蓝衣、裤、鞋、镯的数值来自三视图01选定非线条位置的像素取样；发、白、红与背景为本次明确选择的统一目标，不声称是此前已批准的唯一色板，也不保证生成器逐字兑现每个RGB。
+
+| 区域 | 本次目标色 |
+|---|---|
+| 皮肤 | `#FED4B8` |
+| 灰白头发 | `#C4C0BD` |
+| 浅蓝衣 | `#8DB0DA` |
+| 藏青裤 | `#323951` |
+| 黑布鞋 | `#2A2B2E` |
+| 左腕玉镯 | `#67A27C` |
+| 白花与白鞋底 | `#F7F4EC` |
+| 红珠 | `#C94232` |
+| 背景 | `#D8D8D8` |
+
+## 构图和尺寸口径
+
+横向三等栏，各人物完整、等高、共用脚底高度，人物占约90%画布高度，正常栏间距与边距；不添加大块空白、标题板或新附件凑宽。请求原生2048×1024左右且宽度至少2048，最终以实际PNG读取为准。工具没有显式宽高参数，提示词尺寸不是实测证据。
+
+前次三表情真实返回2048×768，证明不能假定工具全局上限低于2048；但它也不保证这次三视图尺寸。若原始文件仍低于2048，只能交草稿，不缩放、不补边、不因尺寸自动重生。全部实际提示词／请求／返回元数据／原始PNG和作者审查存入本目录，源工具文件保留。
+
+完整实际提示词另存 `grandma_turnaround_current02_prompt.txt`，请求逐字使用该文件。
+
+
+### 团队交付原文：astra_grandma_turnaround_current02_independent_review.md
+
+SHA256：`d51efaf1226118e41664e710b7b755ce3dbb459ba5582941abc38ddb5309c459`。以下按原文追加。
+
+# 奶奶三视图 current02：独立复审与最小修订靶点
+
+2026-10-16 UTC；Astra 独立审查员。本轮三视图由另一位 Astra 制作，本审查员负责表情修订；两张图互审，不各自批准自己的最终稿。
+
+**current02 的身份和侧向有保留价值，但平涂与正式尺寸仍不通过。** 新版中栏身体比01更收向右，发髻、红珠和解剖左腕镯未出现明显换位；主要残留是头发大块亮暗带和颈下投影，不能写成已全面平涂。下一次如继续，应只处理这些明确内容，不重做奶奶身份。
+
+已实际完整查看 current02，读完整实际请求／状态，与此前实际查看的01及本轮表情02对照。独立完整读取原始PNG并核验工具源文件与副本逐字节一致：RGB，**1774×887**，1,504,766 字节；SHA-256 `a6f023a9d315059d0498118e81ebd6e87fb300e3858c2582fd3679d662d9f23f`。验证JSON同目录。未修改原图，未修改仓库，未做三维角度或身体运动测试。
+
+## 可保留的内容
+
+三面仍完整，头顶／鞋底／衣摆尺度接近，脸、镜框、低髻、白花蓝衬衣、深裤和白底黑鞋连续。正面镯在画面右、背面画面左；侧面近腕无镯，后腕可以遮挡。正面未新增红珠，背面珠仍在画面右侧，符合本轮共同约定的解剖右后侧发簪。
+
+中栏前躯干和袖身比01较收正，仍朝右，近手和双腿连贯，没有必要再随机调整头胸胯。门襟仍有一定可见宽度、鞋有错位展示，故此稿不能被称为经过标定的精确正交图；但不要据两片眼镜露出就把整个方向判成四分之三。下一次重点应放在已明确的平涂失败，而非无限追求生成图的数学正交。
+
+与表情02比较，脸型和镜框可解释为同一人物；正面低髻收在头后、红珠自然隐藏的方向一致。表情02目前更干净，而本三视图仍有光照色带，不能把它们直接登记成完全统一的最终色版。
+
+## 明确未通过的内容
+
+**P1：发丝仍由大块亮暗塑形。** 额顶和侧发留有宽的白亮带，另有较深灰的阴影分区；这些不是细轮廓或少量抗锯齿，完整图即可看出体积打光。应保留发束线，去掉高光／暗带填色，采用统一灰白主色。
+
+**P1：颈下仍有投影。** 正面下颌下方存在可见的较深肤色带，侧面颈根也有暗区，区别于细颈线；与表情02已去掉的大块颈影不一致。应把脸、耳、颈的主体肤色收成统一固有色，保留皱纹和必要结构线。
+
+**P1：原生宽度1774，仍低于2048。** 不能把请求中的2048、改名或后续放大视作实测通过。内容改善与尺寸改善要各自核验。
+
+背景已接近均匀中性灰，本审查没有把少量低幅栅格差当成新的明显光晕；平涂判定沿用返回前已约定的标准：主看可见光照结构，允许轮廓抗锯齿、细结构线、花纹和必要眼口色。目标十六进制色不精确复现本身，不构成推倒角色的理由。
+
+## 下一次有界修订
+
+只清发亮暗带和颈下投影，并将衣领／衣褶的光照填色随统一主色清理；维持现有身份、三面比例、手、镯、发饰和较收正的侧躯干。与已修表情02共用视觉平涂口径，避免把皮肤清成无五官图标，或通过加粗线条掩盖填色问题。
+
+若为内容修订采用新的原生8:3画幅，必须真实重排三个人物，仍完整、同尺度、有合理间隔；不能给旧图外添灰边或插值放大。较宽画幅可能导致每个人物在像素上的高度下降，需记录这个代价，不能把画布更宽写成角色细节必然提高。返回后仍实测原文件并独立检查，本报告不预先批准下一稿。
+
+目前通过范围是继续使用的人物工作基准；正式三视图、完整操偶母版及动态接入仍未通过。协调方另行授权的03内容修订由原作者执行，本审查员等待实际新图再给结论，不将建议当作已完成修复。
+
+
+### 团队交付原文：astra_grandma_turnaround_current03_delivery.md
+
+SHA256：`be89cba521f3369199fc82bee05a77d8a8b2fcd7d04ad70682767c34928b3e10`。以下按原文追加。
+
+# 奶奶三视图 current03：作者交付定稿
+
+2026-10-16 UTC，Astra 奶奶设计负责人。本报告在03实际颈部检查后定稿；后续04结果另建文档，不覆盖本文。
+
+**current03 原生2048×768，正式宽度通过；低髻／饰物／人物身份与三栏构图可保留，主要发亮带已清理，但正面颈下橙色带及侧颈小橙影仍未清除，完整平涂不通过。** 继续保留 draft 名称，不把单项宽度通过当作全部验收通过。
+
+## 实际原始文件
+
+- 工具：内置 `image_gen.imagegen`，一次新增授权的内容修订；底层模型未披露，无拒绝。
+- 提交：2026-10-16 10:15:04 UTC；成功结果回收记录：10:16:07 UTC。
+- 工具源文件：`/workspace/generated_images/exec-dd90d203-ff76-4d83-9e11-bfb3d04f186d.png`。
+- 原样副本：`grandma_turnaround_current03_draft.png`，PNG/RGB，**2048×768**，1,406,736 字节。
+- SHA-256：`ab88b69f5303229af379303a37b6e9e3c8cdb35cd05b3902b604871efb2b1671`。
+- 两文件逐字节相同，没有本地缩放、补边、重编码或原图像素编辑。另存的两张原尺寸颈部检查裁切只用于审查。
+- 设计、完整实际提示词、请求、状态和结果元数据均为本目录 `current03` 命名文件。第二输入为表情02，仅用于去光照处理和前视髻遮挡参考。
+
+## 这次实际完成的内容
+
+原图已真实改为8:3横幅三栏，三位人物均完整等高，正／右侧／背顺序保持，没有在本地给02补灰边。低髻、前面隐藏红珠、背面右侧红珠、解剖左镯归属、脸与衣鞋身份继续保持。上轮已收正的侧身方向也可保留；没有因为改横幅而增加道具或新饰物。
+
+额顶、侧发与髻上的主要白亮带和较重的灰暗块明显减少，头发更主要由细线表达。视觉改善是真实的，不沿用02的完整失败描述。衣料也较清楚，但下面列出的颈部填色使整张尚不能写为全平涂。
+
+## 精确指出的残留与初步判断更正
+
+在缩略全图及安全肤色取样时，脸／未遮颈区约为 `[254,210,177]`，容易以为颈影已消除。实际查看未缩放的正面与侧面颈部裁切后，本人与独立审查员共同确认：**这些安全样本在阴影外，不能支持“整个颈部已同色”的结论。**
+
+正面下颌下仍有窄橙色带。例如原PNG约 `(535,180)` 的小区中位值 `[251,170,127]`、`(540,182)` 为 `[252,172,130]`，邻近未遮颈 `(535,194)` 约 `[255,210,176]`。差异远大于几个灰度级的栅格噪声，而且实际有连续可见的橙色区域，因此是光照填充残留。侧面颈部也有一块小橙片。不能以宽度通过或发丝改善忽略这两处。
+
+这不是要求删除下颌轮廓或所有颈部结构线。最小改动是将两块橙色区域填成各自相邻未遮肤色，保留黑色下颌线、细颈线和蓝色衣领，其他形状不动。
+
+## 原生横幅的实际代价
+
+原生画布更宽不表示人物细节更多。以各栏深色轮廓像素粗略包围盒估计，02三位人物高约822／823／822像素，03约725／726／725像素；数据与阈值限制见 `grandma_turnaround_current03_subject_extent.json`。这是原像素范围比较，不是已验证的真实身高或骨长。
+
+03的人物像素高度约减少12%，手和面部的绝对像素也受此影响。当前全身、五官、饰物和衣装仍可辨，但不得把“2048宽”包装为比02有更多主体细节。正式尺寸与主体可用性各自验收。
+
+## 已明确授权的最小下一步
+
+父级已授权一次 current04 定点编辑，只清正／侧两处颈影，保留本张2048×768构图与其余已成立内容。若准确定位后仍未兑现，应把这两块同色几何填充交给Opus，不继续泛泛地整图随机重生。04另存全部原始记录，并再次由另一位Astra实际复核；它尚未发生的结果不写入本报告。
+
+
+### 团队交付原文：astra_grandma_turnaround_current03_design.md
+
+SHA256：`bf640f4eb808b8456e1df6d2769d452105697d31ac06992f865d6d2817e52861`。以下按原文追加。
+
+# 奶奶三视图 current03：限定修订与原生横幅方案
+
+2026-10-16 UTC，Astra 设计负责人。
+
+父级已转交用户继续平涂与正式尺寸的授权：不因本团队先前自定一次调用而把仍有实质阴影的稿当成终点。独立审查员已实际确认三视图02保留身份、左镯、髻簪和有所收正的侧向，最明确残留是额顶／侧发白亮带及灰暗块、正面下巴下的整块肤色投影、侧颈根暗区。current03只清理这些光照填充及衣料残留，不继续改变脸、身材或饰物设计。
+
+本次实际查看的两个参考为：第一图三视图02（编辑主体），第二图表情02（只参考已通过本轮独立复核的去光照和正面髻遮挡，不复制头肩排版）。表情02的主要颈下影与发亮带已消失，安全内部像素仅小幅波动；本次不把少数灰度级噪声作为无限再生成理由。
+
+### 构图决策
+
+采用真实原生8:3横幅重新排布三位完整人物，请求2048×768。三人等高、按正／右侧／背均匀分布，正常留距，不新增标题板、装饰或左右补灰边。原始人物将重新绘制在新画布上，不把1774×887位图插值放大或贴进2048画布。
+
+此方案的明确代价是：若实际输出为2048×768，每个人物可用像素高约700，而02约810。画布宽度增加不等于人物细节增加。目标是把统一平涂和完整三视图交在符合用户宽度的原始文件中；小手等局部的实际可读性仍须看返回图，若受损必须记录，不能因文件宽度达标而自动通过。
+
+工具没有显式尺寸参数，所以8:3和2048×768仍是请求；实际文件格式、尺寸、原样副本与哈希均在返回后检查。父级授权的是一次有具体内容目标的03编辑，不是无边界重生。原图所有版本保留，由另一位Astra再次实际独立审查。
+
+完整实际提示词为 `grandma_turnaround_current03_prompt.txt`，调用请求逐字使用。
+
+
+### 团队交付原文：astra_grandma_turnaround_current03_independent_review.md
+
+SHA256：`30841584df5012330710ca94933d23d0914e22ab06c1dfe87c11ba89c68a6c79`。以下按原文追加。
+
+# 奶奶三视图 current03：独立复审
+
+2026-10-16 UTC；Astra 独立审查员。**本张原生宽度、完整三面布局、身份和发部去光照改善通过，但仍有两处可见颈部投影，整张平涂尚不通过，继续保留为工作草稿。** 不因为达到2048或已做多轮而降低先前约定的可见光照验收标准。
+
+## 原文件与检查范围
+
+本轮已实际查看完整 current03、正面和侧面原尺寸颈部检查裁切，读取调用前设计、完整实际prompt、status和返回元数据；与已看过的三视图02、通过互审的表情02对照。完整读取原PNG并独立核算：RGB，**2048×768**，1,406,736字节，SHA-256 `ab88b69f5303229af379303a37b6e9e3c8cdb35cd05b3902b604871efb2b1671`。工具源文件 `exec-dd90d203-ff76-4d83-9e11-bfb3d04f186d.png` 与保存副本逐字节相同，无本地缩放、补边或像素改动。核验及暗区／邻近肤色取样在 `astra_grandma_turnaround_current03_verification.json`。
+
+此处检查设计参考图，不宣称三维正交标定、骨长、分层或动态绑定通过。工具具体生成模型未披露，本审查员未制作或调用本版。
+
+## 确已成立与应保留的内容
+
+- 原生宽度从02的1774变为2048；本图实际为新的8:3三栏构图，正面、朝右侧面、背面完整，头髻、手、裤脚和鞋未裁掉，没有在旧图旁粘一块无用灰边。每个人物高约720像素，低于02约810像素；画布更宽不等于单个人物细节更高。当前手指和衣装仍可读，需保留这一分辨率权衡记录。
+- 银灰低髻、圆镜、白花蓝短袖、深裤、黑鞋白底及温和老年身份保持。正面镯在画面右、背面画面左，侧近腕未被错误补镯。正面隐藏红珠，侧后髻与背面画面右侧保留红珠，符合已共用的解剖右后侧归属。
+- 侧面头、身、膝和鞋主要朝右，02已改善的收正方向保留，未为露配饰大幅转回展示角度；不能据此写成经过数值标定的正交资产，但不需要为了下一次局部去影重动整个人物。
+- 02仍明显的头发白亮带及深灰光照带，在03已大幅清除，发束主要靠线条表现。不能沿用02的“整片发高光仍明显”否定。衣身主要固有色和背景也已更干净。
+
+## 尚存的明确问题
+
+**正面下颌下方：** 在原图约 `x512–550, y177–188` 一带，存在一条较深、偏橙的肤色带。它的形状贴着下巴投到颈上，宽度和面积超过轮廓线，不是抗锯齿。原像素 `(535,185)` 为 `[254,179,139]`，邻近影外 `(535,195)` 为 `[255,210,177]`；另 `(530,185)` 为 `[253,176,134]`，影外 `(530,195)` 为 `[254,210,179]`。主要通道相差数十级，原尺寸裁切即可辨认。
+
+**侧面耳后至领根：** 约 `x1016–1046, y154–175` 有局部橙色片，随颈后／下颌方向形成投影读法。原像素 `(1035,165)` 为 `[253,180,144]`，附近 `(1035,175)` 为 `[253,211,180]`。它也不是几级背景噪声或单根结构线。
+
+本报告所有坐标均直接取自**2048×768原图**，不是裁切坐标、放大坐标或世界关节。以上范围用于定位可见问题，不是对每个边缘像素作分割。
+
+作者最初提供的均匀肤色样点位于阴影以外；双方复看原尺寸裁切并取到暗区后，已经一致确认这一点。不能用影外安全区的平整色值证明投影不存在，也不能把本次暗区差异和已接受的低幅背景栅格差混在一起。
+
+## 最少后续及批准边界
+
+保留03已经成立的身份、三面比例、发髻饰物、原生画幅和去掉发亮带的成果。下一次若继续，仅需把上述正、侧颈橙块填回周围肤色，保留下颌／颈部轮廓与细结构线，其他人物部位不重设计。与表情02已通过的去影程度对齐即可，不追逐逐像素精确十六进制值。
+
+这两个局部有明确边界，进行一次有界定点编辑有实际价值；若工具仍不能执行，就将03作为身份参考交主实现方用统一固有色矢量落实，不无限重复整图生成。操偶的世界直杆／掌握点／neck3问题另按机械交接处理，不能借本次外形修订绕过。
+
+本轮正式结论：**尺寸和上述外形改善通过，整体平涂未通过；当前文件仍为draft。** 后续候选必须另行实际看图，本报告不预先批准下一版。本审查未修改仓库或原PNG。
+
+
+### 实际完整提示词：grandma_expressions_current02_prompt.txt
+
+SHA256：`c9c659e557488f0e84e94cf707630b59b8f16cbab84433cab5813ce4715b35ae`。
+
+```text
+Edit ONLY the FIRST attached image: the existing three-expression sheet of the same approximately 70-year-old Chinese grandmother. Keep its wide 8:3 composition, all THREE complete head-and-shoulder portraits, their positions and equal scale, and the existing facial identity. Preserve the left gentle smile and middle hearty laugh, the same eyes, nose, ears, jaw, delicate round glasses, hairline and collared floral blouse. This is a targeted production cleanup, not a new character design. The SECOND image is a turnaround reference only, to make the low bun and hairpin's frontal occlusion consistent with its front and back views; do not copy its full-body layout.
+
+Make the following coordinated, limited corrections in all three portraits:
+
+1. FRONTAL HAIR OCCLUSION: Keep one LOW bun centered behind the lower back of the head, as explained by the turnaround reference. Pull the conspicuous bun mass that currently projects beside the viewer-left jaw back behind the head. In this exact front view only a restrained, naturally occluded edge of the low bun may remain behind the ears; do not leave a large side bun hanging beside the cheek. The red-bead hairpin stays fixed at the grandmother's anatomical RIGHT rear side of the low bun, which is visible on the right side of the BACK view in the second reference. In these FRONT portraits the head naturally HIDES the red beads. Do not show red beads beside the front cheek, move the pin around to display it, or remove the hairpin from the underlying character design. Keep the same hairline and swept-back hair construction. Apply the SAME frontal bun silhouette and occlusion to all three expressions.
+
+2. FOCUSED EXPRESSION ONLY IN THE RIGHT PORTRAIT: Soften the pair of strong vertical furrows between the eyebrows and slightly relax the compressed inner brow ends. Preserve engaged, steady attentive eyes and a very slight warm mouth-corner curve. She is calmly concentrating on a familiar craft, not worried or frowning while smiling. Keep the same facial proportions, age and glasses. Do not change the left smile or middle laugh.
+
+3. ACTUAL FLAT LOCAL COLOURS: Remove all soft light/shadow modelling from the skin, neck, hair and blouse. Use a single uniform skin fill #FED4B8 for face, ears and neck, without the dark under-chin/neck shadow, cheek blush gradients, nose highlights or shaded forehead edges. Keep sparse warm fine wrinkle and structure lines. Fill all grey-white hair with the same base #C4C0BD; hair strands, separations and the bun are described with elegant fine lines, not white shine bands or dark grey lighting patches. The blouse, including collar pieces, uses uniform light blue #8DB0DA with white flower shapes #F7F4EC; remove shaded collar triangles, soft fabric gradients and fold shadows, while preserving seam, collar and placket lines. Keep the eyes, dark pupils, brown irises, lips, open-mouth interior and teeth as their necessary distinct structural colours; do not flatten them into skin. Preserve the existing line quality and same expressive faces.
+
+4. BACKGROUND: The entire empty background is exactly one uniform neutral light grey #D8D8D8. No gradient, vignette, texture, glow, cast shadow, or directional illumination. Keep three separated portraits with clear breathing room. No text, labels, panels, new props, hands or jewellery inserted into the shoulder crop.
+
+Maintain the original wide 8:3 canvas and complete crown, ears, naturally visible hair, neck and shoulder crop of each portrait. Preserve the original 2048-by-768 native dimensions if supported; output an original PNG at least 2048 pixels wide. Do not crop a portrait, stretch the figures, shrink them into added empty padding, or upscale/interpolate a smaller image to claim that width. The original returned file will be measured. These are content corrections, with the facial identity and three expressions preserved.
+
+```
+
+
+### 实际完整提示词：grandma_turnaround_current02_prompt.txt
+
+SHA256：`7dd4f1a760ad9eb00c1eeeff6c5cc6102f79f2be65442cb6b58c7531de380b23`。
+
+```text
+Edit the attached grandmother turnaround sheet into a cleaner, internally consistent final-design candidate. Preserve this SAME approximately 70-year-old Chinese countryside grandmother, her facial identity, body proportions, scale, soft elderly cheeks, thin round glasses, modest natural standing posture and costume. This is a controlled refinement of the existing sheet, not a redesign. Retain exactly three full-body views in a horizontal row: FRONT on the left, exact RIGHT-FACING SIDE PROFILE in the middle, BACK on the right. No props, no other people, no text or labels.
+
+Make these specific corrections:
+
+1. TRUE SIDE DIRECTION. Correct the middle figure so her head, chest, pelvis, knees and feet all face directly right with no three-quarter turn toward the viewer. The chest front and its button placket are only a narrow edge at the forward silhouette, not a broad displayed front panel. Do not twist the shoulders or pelvis to expose an accessory. Keep the gentle rounded upper back, supported waist and pelvis, relaxed lowered arms, natural hand size and stable feet. Near right and far left arms and feet may naturally overlap; do not splay them toward the camera just to show every part. The front and back views remain straight front and straight back, with the same underlying body and garment construction.
+
+2. FIXED HAIR AND ACCESSORIES. Keep the same swept-back hair and low bun. Place the bun centrally at the lower back of the head, not beside an ear and not on top. Fix the red-bead hairpin at the grandmother's anatomical RIGHT REAR side of that low bun. In the FRONT view, the bun stays mostly behind the head and the red beads are naturally hidden; do not add visible beads next to the front face. In the BACK view, keep the red beads at the viewer's RIGHT side of the low bun. In the RIGHT-FACING SIDE view, show the same low rear bun and its red beads at the rear as in the source; do not relocate the pin to display it. Keep the ear and glasses structure continuous and the same in all views.
+
+3. CONSISTENT CLOTHING AND LEFT WRIST. Preserve the light-blue short-sleeved collared button-front blouse, small white five-petal flowers, modest collar, blouse length, sleeve width and side hem slits; dark navy wide-leg full-length trousers; black cloth slip-on shoes with white soles. The back has no front placket or front buttons. Use the same flower scale and collar/sleeve/trouser shapes across views. Exactly one green jade bangle remains on the anatomical LEFT wrist: viewer's RIGHT wrist in the FRONT figure, viewer's LEFT wrist in the BACK figure, FAR wrist in the RIGHT-FACING SIDE figure. The visible near right wrist has NO bangle. Allow the far left wrist and bangle to be hidden naturally; do not move them onto the near arm.
+
+4. CLEAN UNLIT FLAT COLOURS. Remove all rendered lighting, soft shading, gradient skin, cheek blush haze, under-chin shadow, collar cast shadow, trouser light-dark bands and hair highlights. Each material uses ONE uniform main local colour, with the shapes explained by clean continuous contour lines and a few thin structural lines. Hair volume and strands use linework, not alternating white highlight ribbons and dark shadow ribbons. Fabric folds use sparse linework, not painted shadow areas. Preserve the eyes, mouth, wrinkles, glasses and physical outlines; simplifying colour must not erase facial structure or turn the person into a featureless icon.
+
+Use these shared flat local-colour targets consistently across all three views: skin #FED4B8; grey-white hair #C4C0BD; light-blue blouse #8DB0DA; navy trousers #323951; black cloth shoes #2A2B2E; green jade #67A27C; white flowers and shoe soles #F7F4EC; red beads #C94232. Keep fine warm-dark outlines and readable eye/mouth details. No colour swatches or written hex codes on the image. The background is a SINGLE UNIFORM #D8D8D8 grey across the whole canvas, with no gradient, paper texture, ground line, cast shadow, vignette, glow or ambient shading.
+
+Use a clean horizontal three-column layout, equal figure scale, aligned crown and shoe-sole levels, ordinary breathing room between the views and small safe outer margins. Each complete figure occupies approximately ninety percent of the canvas height, including every hair tip, hand, trouser cuff and shoe. Do not shrink the figures into a wide empty field. No large blank extension panels or decorative padding. Produce a newly rendered native PNG, aiming for 2048 by 1024 pixels or a comparable natural horizontal layout with original width at least 2048. Do not merely enlarge or pad the supplied bitmap: redraw the specified corrected shapes and flat fills at the output's native resolution.
+
+```
+
+
+### 实际完整提示词：grandma_turnaround_current03_prompt.txt
+
+SHA256：`ba463951049e0adc2c37fe42d78be0f854b829323669896f501e09d0ce3d4bdb`。
+
+```text
+Refine the FIRST attached image, the SAME grandmother's three full-body views. Recompose and redraw it on a NATIVE WIDE 8:3 canvas, targeting 2048 by 768 pixels. The second image is a successful colour-cleanup reference ONLY: use its unlit flat-colour treatment and front-view bun occlusion, not its head-and-shoulder composition. Keep exactly the same grandmother and exactly three full bodies: FRONT, RIGHT-FACING SIDE, BACK, from left to right.
+
+The essential edit is to REMOVE the specific lighting fills that survived in the first image. In all three figures, ERASE the broad white highlight ribbons on the crown and side hair and the dark grey shaded patches inside the hair and bun. Refill all of the hair with one uniform grey-white base, while preserving the existing fine strand lines and outer hair silhouette. ERASE the orange-brown patch directly beneath the front-view chin and the dark patch at the side-view neck base. Refill the whole face, ears, neck, arms and hands with one uniform skin base, keeping facial lines and hand structure. Clean the collar, blouse and trouser shaded areas in the same way: one base fill per material, thin seam and fold lines only. No under-chin shadow, no hair shine ribbons, no shaded collar triangles, no gradient fills, no cheek glow. The second reference demonstrates the desired flat treatment. This is a colour-fill correction, not a change in who she is.
+
+Preserve the first image's face, glasses, hairline, body proportions, relaxed standing hands, mild rounded upper back, stable stance and improved right-facing side direction. Keep the central low rear bun and fixed red-bead hairpin: beads hidden in FRONT, visible at the rear in SIDE, visible on the viewer's RIGHT side of the BACK bun. Keep the single jade bangle on her anatomical LEFT wrist: viewer's RIGHT in FRONT, viewer's LEFT in BACK, naturally occluded FAR wrist in SIDE. Never put it on the near side-view wrist. Preserve the same collared blue white-flower short-sleeved blouse, front-only buttons, navy wide trousers, and black cloth shoes with white soles. Do not add new clothing details or accessories.
+
+Flat base-colour targets: skin #FED4B8, hair #C4C0BD, blouse #8DB0DA, trousers #323951, shoes #2A2B2E, jade #67A27C, white flowers and soles #F7F4EC, red beads #C94232. Retain the fine warm-dark outlines, eyes, mouth, wrinkles, seams and strand lines as necessary structure. The empty background is uniform neutral grey #D8D8D8 without texture, vignette, light falloff, ground line or shadows. No labels, swatches, titles, borders, props or added portraits.
+
+Change the old 2:1 sheet into a newly drawn 8:3 sheet. Distribute the THREE COMPLETE FULL-BODY figures evenly across its width, equal in scale and aligned at crown and soles; let their full height occupy about 90 percent of the 768-pixel canvas with safe margins. Keep normal separation and all hands, buns and shoes complete. Use the whole three-column layout rather than leaving an unused extension at either edge. Do not crop, stretch or enlarge the old bitmap, do not add grey padding to it, and do not add extra empty panels to claim a larger width. Redraw the corrected figures at the new native resolution. Output an original PNG at least 2048 pixels wide if supported; its actual returned dimensions will be measured.
+
+```
