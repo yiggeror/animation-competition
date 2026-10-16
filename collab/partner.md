@@ -1053,3 +1053,304 @@ SHA256：`839998296ff377271245c532de18716c56572dd28cebdcccc61b99a751b663b5`。
 
 请先复审三视图与表情的外形／情绪方向，并把用户坐姿图作为主动作参考共同对照。建议保留用户图的背线、坐点、手落膝和裙腿轮廓，仅定点统一身份与侧向，不从零重生。具体意见仍可反馈回来，由双方继续互审后确定后续正式母版。
 
+
+
+## 2026-10-16 09:21 UTC · Astra xhigh 接续增量与奶奶接入互审原文
+
+以下五份是本轮两位按 `gpt-6-astra / xhigh` 显式参数启动的工作者完成、交叉复核后的作者原文，逐份直接追加。前条三篇旧报告保持不变。新增视觉意见已与取回的旧报告对齐，仅补充同一版素材的局部定位；奶奶报告是制作与数值接入预检，提示词尚未执行，均不代表 PNG 或新后台镜头完成。
+
+当前三张小满原图的 Library 引用和原始摘要已经由父对话转交，正在处理标准文件转移所需组件缺失；原图尚未落到本环境，也未提交到 `refs/`。奶奶旧生成状态仍待确认，不重复发起。用户的正式 PNG 实测宽度至少 2048 要求已明确纳入奶奶验收。
+
+### 作者原文：astra_latest_visual_review.md
+
+SHA256：`c9b2181cc099dbacdca645c2654fdd96eff6c2395995ff2ee89a70d4ab955218`。
+
+## 2026-10-16 09:16 UTC · checkpoint1-v4 接续复核／增量意见：局部腕掌与远臂轮廓
+
+**保留 `2485a1c` 旧复审的主结论和待办顺序：直背落膝主姿势、新鹤均可继续使用；优先精修自然手群与服装／发辫身份。** 本文补充腕底、远臂和裙膝的具体定位，不推翻已经确认的改善，也不要求重写骨架或重新制作缺失的旧成果。
+
+### 1. 与刚取回旧报告的衔接
+
+本轮开始时旧报告单独源文件尚未转交；现已实际读取 `/workspace/laidain-review/opus_2485a1c_visual_review_20261016.md` 全文，并重新计算 SHA-256，精确匹配 `5aa68adf8c0a2f1ce037ac0617883a5b1a0f2ce68fdb0ba8db5a464b4f93cd3e`。旧文件未改动，本文件不是其重建或替代版本。
+
+本轮审查基线为 `bb588cdfe5e9c8c74662f9df56e0ada492a479a1`；共享 HEAD 随后变为 `25145b42b2529528eda82ccf77937b7773e9e984`，仅协作记录更新。已运行 `git diff --stat 2485a1c..HEAD -- js/lamp renders/checkpoint1-v4`，结果为空。当前四个已审文件的 blob 与旧复审表格**完全一致**。因此下面是同一版素材的增量观察，不是声称 Opus 在旧复审之后又完成了一轮修改。
+
+已读取 `collab/README.md`、`collab/claude.md`、`collab/partner.md`；仓库及 `/workspace`、`/` 上级位置未找到适用的 `AGENTS.md`。父级明确按 `gpt-6-astra / xhigh / fork_turns:none` 启动本任务；此处记录调度参数，不额外声称独立核验了运行内部模型元数据。
+
+### 2. 本轮实际查看范围
+
+- 实际查看三张静帧：`xiaoman_design.jpg` 为 2700×1200 JPEG；`key_s06.jpg` 为 1920×1080 JPEG；`crane_puppet.jpg` 为 2400×1200 JPEG。另查看了原尺寸的手臂／裙膝裁切。
+- 视频经 `ffprobe` 实测为 H.264、1920×1080、24 fps、120 帧、5.000 秒，成功解码全部 120 帧。实际目视的是 0、1、2、3、4、4.958 秒全画面、每 6 帧一次的脸与鹤局部，以及扬头段每 3 帧的加密抽帧、反应／眨眼关键帧和六个时点的腕手局部。
+- **未实时连续播放，未逐张目视全部 120 帧，也未重跑既有的 120 帧关节统计。** 0.09325 cm 最大关节位移和 96.58% 最大伸展比沿用旧报告的既有核验，不能拿来代替外轮廓验收。
+- 工具正常。检查用抽帧、裁切和拼图只保存在 `/workspace/laidain-review/`；没有生图，没有修改或提交仓库文件。这些检查图片不是角色母版、正式参考图或分层素材。
+
+### 3. 给现有手部待办补充两个可直接修改的定位
+
+**A. 主腕连接已经改善，但腕底仍有一个局部小台阶。**
+
+定位：`xiaoman_design.jpg` 左栏掌根下侧，约原图 x=550、y=680；右栏对应位置；`key_s06.jpg` 近侧腕底及视频六个腕手抽查时点。
+
+当前前臂到手背总体连贯，旧复审“手腕不再是明显独立接头”的判断成立。新增定位是它的下侧边缘：前臂末端与掌根形成向下的小尖角／台阶，固有色已经可见，简单打光将它强化成深色楔口。不能把这个局部余项扩大成“主腕修复无效”，也不能只靠再次减阴影解决。
+
+建议保留腕目标、手落膝位置和肘部余量，只调整前臂末端与掌根的局部覆盖、宽度和切线。通过条件是平涂局部的腕底连续接入掌根，同一简单打光下不再像带一个袖口式断边。这可以并入旧报告 P1 的自然手群修订，不必另开一轮骨架调整。
+
+**B. 远侧前臂在近侧肘后上方露出尖楔。**
+
+定位：同图左栏近侧肘后上缘，约原图 x=400、y=565；视频近侧肘后方。
+
+可见一小片带尖角的肤色楔，之后沿近侧前臂形成窄长边，容易读成额外肘尖或叠上的零件。建议把远侧前臂起端藏回近侧肘后，或圆顺其露出部分；保持正常的近远遮挡，不为展示两手而把双臂展开。
+
+代码定位：`xiaoman.js:198–199` 单独生成远侧 `armF` 前臂；`179–182` 用近侧肩腕目标解近肘，远肘由近肘加偏移得到。本轮没有单独验证远臂的完整可达性。尖楔来自哪一处轮廓／覆盖应由局部对照确认，不能仅凭函数结构断言唯一根因。
+
+旧报告已指出的平行指缝、附加指头独立阴影／法线问题仍保留为 P1，不重复算作新发现。拇指在严格侧面被自然遮住，不构成必须补画一根可见拇指的理由。
+
+### 4. 裙膝待办的进一步定位
+
+旧报告“裙覆大腿成立，前下缘仍像厚片”的结论保持。补充位置是左栏约 x=470–550、y=760–850：裙前下摆集中成一个小垂角，旁边露出的大腿底线近水平，到膝窝突然转向小腿，形成较硬的凹角；右栏接触阴影强化了这处折角。
+
+建议保留裙子覆盖长度、臀部坐点和脚的位置，仅圆顺前下摆局部垂角，让裙缘略包过大腿下侧，膝窝接小腿肚改为柔和凹弧。不要加厚黑阴影，也不必把裙摆整段加长到遮住手。这仍是旧裙摆意见的定点补充，优先级低于自然手群和身份统一。
+
+白领、软袖口、袖身波点密度、短低辫／红绒球的一致性，以及临时站立轮廓校对，继续按旧报告推进。本轮没有重新取得 v4 三视图原图作身份对照，不能因当前白领已可见就宣称它与已定身份完全一致，也不以本轮小范围裁切降低旧 P1 身份待办的优先级。
+
+### 5. 动作的接续确认与一项新增时点证据
+
+本轮新抽帧与旧报告一致：0.50–1.00 秒的鹤头预备下沉存在、幅度轻；1.125–1.75 秒喙向右上、颈部转直，主抬头动作明确。小满随后逐步抬颏、睁眼、张嘴并轻微前探，手保持在膝上。“鹤没有预备”或“小满完全没反应”的旧批评均不适用于这版。
+
+新增确认：帧 99、100、101、102（4.125、4.167、4.208、4.250 秒）可见闭眼、继续闭眼、半睁、重新睁开的变化；眨眼实际存在，且避开主要惊奇段。无须为增加生命感再添加摇头或更多眨眼。
+
+节奏仍按旧复审的小幅调整方向：如正常速度下需要更清楚的惊奇，先拉开基准与峰值嘴形，检查其相对鹤提颈的延迟是否有意，不同时放大眉、眼、头、手和身体前倾。当前已有预备、过冲与收势曲线；本轮不再叠加第二套动作，也不预先锁一组未经连续播放比较的新帧数。
+
+两杆影在腿两侧、胸腹与主翼层次改善，同样从当前静帧与抽帧得到确认。折起脚尖与支撑腿交会处的小黑叉可作为低优先级清理，保留关节皮影“4”形的设计，不据此重做腿架。细线闪烁、极短单帧穿插与连续播放的弹性不在本轮已完成验收范围。
+
+### 6. 最小下一步与证据
+
+把新增的腕底台阶、远臂尖楔并入原先的自然手群修订；同时按旧报告统一服装与发辫身份。保留主姿势、骨长方案、新鹤与当前构图。先用同姿势的固有色／剪影／简单打光及同构图静帧证明局部改动；若遮挡随动作改变，再补对应时点或片段，不必仅为这份增量意见重做整段动画。
+
+检查证据位于 `/workspace/laidain-review/`：`astra_full_6.jpg`、`astra_face_21.jpg`、`astra_crane_21.jpg`、`astra_raise_dense.jpg`、`astra_face_dense.jpg`、`astra_hands_6.jpg`、`astra_design_arm_skirt_crop.png`、`astra_design_lit_arm_skirt_crop.png`。标签仅为时间／帧号，未改人物内容，未提交仓库；如转交，应登记为既有渲染检查图。
+
+四个已审 blob 分别为：小满 `36fe1644f3cd326c7387d71e571ee9098a9bbbd0`；场景静帧 `15ff78419871c76c99d1d0bf41037908a4f384c7`；鹤 `d6c9825944391aa662b457d4ee85c129b08ad791`；视频 `a1a4f2387a5a12447d0a89bc7ef58018a794e1c9`。它们与取回旧报告完全对应。
+
+### 作者原文：astra_latest_visual_text_code_crosscheck.md
+
+SHA256：`834a13b13c90109fa7de0f81b712f15785c10d9f5b7d6e363e9beb350c6fddcf`。
+
+# 最新增量视觉报告的文字／代码一致性复核
+
+复核对象：`/workspace/laidain-review/astra_latest_visual_review.md`，标题时间为 2026-10-16 09:16 UTC；本次读取 7878 字节。
+
+报告 SHA-256：`c9b2181cc099dbacdca645c2654fdd96eff6c2395995ff2ee89a70d4ab955218`。
+
+复核人：Astra 奶奶设计与接入预检负责人；2026-10-16 UTC。本文件更新并取代此前针对较长初稿的交叉复核。
+
+结论：当前增量版没有需要阻止转交 Opus 的文字或代码问题。它保留旧复审的主姿势、新鹤和待办顺序，将腕底台阶、远臂尖楔及裙膝硬角作为同版素材的具体定位补充；自然手群与服装／发辫身份仍为优先事项，不要求重写骨架或整套光照。
+
+本次只读取最新报告，沿用上一轮已完成的同版源码核对；未重新目视小满图片或视频，未重跑测试、关节统计或 Git 差异检查，也未修改作者报告。
+
+- 新版第 3 节已准确区分近肘 IK 与远肘偏移：`xiaoman.js:179–182` 用近侧肩腕目标求近肘，远肘由近肘加偏移；`198–199` 单独生成远前臂。报告明确未独立验证远臂完整可达性，也不凭函数结构认定尖楔唯一根因，与已读源码一致。
+- 已核对的近侧 `arm/hand` 同属 `armN`、同组不互投接触阴影，以及 `ring/pinky` 各自法线／阴影分支仍成立。新版把附加指条问题归回旧 P1，并要求先看轮廓和覆盖关系；没有把腕底余项扩大为主腕修复无效，也没有用重复减阴影替代轮廓修整。
+- `s06_key.js` 已有预备、起抬、过冲、收势、腿余摆及小满的延迟反应和眨眼。新版认可这些已有动作，明确不预先锁未经连续播放比较的新帧数；此前初稿中的具体预备／收势帧数试案已删除，本复核不再把它们当作当前建议。
+- 新版明确旧报告已经取回并由作者核对哈希，四个已审 blob 与旧复审一致；本轮是同一版素材的增量观察，不宣称旧复审之后又有一轮画面修改。本次没有独立重读或重新计算旧报告哈希，只核对当前文本的来源说明与结论边界。
+- 0.09325 cm／96.58% 仍标为旧报告既有统计，没有冒称本轮重测。未实时连续播放、未逐张目视全部 120 帧的限制保留；细线闪烁、极短穿插和连续运动弹性仍未验收。主姿势认可不能替代手群轮廓与母版身份核对。
+
+建议按当前增量版原文转交。下一步维持自然手群及服装／发辫身份修订，用同姿势固有色、剪影、简单打光和同构图静帧复核；只有遮挡随动作改变时再补对应时点或片段。
+
+### 作者原文：astra_grandma_preflight.md
+
+SHA256：`d969ead4538595cb41527347363bcf492d55154d4147820bee260e21c62ba004`。
+
+# 《来电》奶奶操偶主母版：制作与接入预检
+
+作者：Astra 奶奶设计与后台可达性审查；2026-10-16 UTC。
+
+**结论：可以依照已获同意的文字规格准备主母版，但目前不能宣称奶奶图片、后台站姿或握签绑定通过验收。** 08:10 的方向明确，可直接进入单张主母版的制作；本轮按交接要求暂停生图，等待旧生成任务状态确认。最需要在接入时额外防住的是“杆接在腕点而不是掌内握点”。现有第四版 S06 的杆长也只有近似恒定，后续需要明确固定握持段约束。
+
+本报告不重写已通过的长规格，不提交新造型批准，不改 Opus 的代码和仓库文件。独立检查脚本与数据只保存在 `/workspace/laidain-review/`。没有调用图像生成工具，没有产出奶奶 PNG，也没有重试小满被拒绝的坐姿任务。
+
+## 1. 本轮依据与边界
+
+- 已读 `collab/README.md`、`collab/claude.md` 全文及 `collab/partner.md` 第 558 行起的奶奶文字规格。
+- 最新设计指令为 `collab/claude.md:205–219` 的 08:10 留言：先操偶主母版，再三视图与表情；悬挂马灯；两手各握一签；左腕玉镯在右向侧面属远侧，可被遮挡；红珠簪与白色小花；统一真实世界坐标；采用第四版 `makeCrane` 的 `body/neck3`。
+- 开始检查时 HEAD 是 `bb588cdfe5e9c8c74662f9df56e0ada492a479a1`；运行数值脚本时共享 HEAD 已到 `25145b42b2529528eda82ccf77937b7773e9e984`。已核对两者差异仅为 `collab/partner.md` 追加 27 行，所审代码完全相同。
+- 在 `/AGENTS.md`、`/workspace/AGENTS.md`、仓库根与仓库内递归查找中未发现 `AGENTS.md`；亦未在可读的 `/workspace/.agents`、`.codex` 找到该文件。
+- 实际查看了 `renders/checkpoint1-v4/crane_puppet.jpg`：左右分别是透光与后台皮面展示。主母版的道具应参照其鹤身份和关节组织，不能把左侧发光影子当成后台实体自发光鸟。
+- `collab/refs/` 在本轮检查时只有 `.gitkeep`。这仅说明当前检出的分支未有 PNG，不足以证明父对话中没有正在运行或已完成但尚未转交的生成任务。
+
+## 2. 可立即执行的母版制作安排
+
+推荐只做**一张单人全身右向操偶母版**，先保持浅灰底、固有色和清晰轮廓。奶奶为主要阅读对象，鹤、两根杆、悬挂马灯只负责解释动作。先不要混入三视图、表情排版或整个堂屋。
+
+美术上采用下列取舍；均服务于已同意的文字规格，不另锁精确头身比、厘米手高或骨长：
+
+1. **年龄感由上背—颈—低髻的轮廓承担。** 温和圆背接着有支撑的腰胯；双脚落地，宽裤自然下垂。脸上用松弛面颊、细眼角纹和圆细框眼镜表达年龄，保留会演戏的专注与轻微笑意。不能画成腰折下去、头掉到胸前的虚弱老人。
+2. **两手在胸廓前形成一个紧凑工作区。** 允许小幅上下、前后错位，让两个握点可分别看懂；双肘留弯曲，肩放松。不要为展示远手把两臂展开成剪刀形，也不要把一手降到大腿、一手抬到脸边。
+3. **握签先看接触，再看手指细节。** 每根杆进入拇指与弯曲手指形成的夹持区；杆在手附近应有合理遮挡和前后连续关系，不能只与拳头或腕口相切。可见近手与远手各自只握一杆，杆到连接点逐根可追踪。
+4. **左镯身份优先于镯子曝光。** 此右向侧面约定可见近侧为解剖右侧，左腕在远侧。若远腕被近手、袖口或杆自然遮住，可以只露一小段绿弧，也可以暂时完全遮住；不能为了出现绿色饰物，把它转移到近腕。单张完全遮挡时只能判“未见换腕”，左镯身份还需后续三视图证明。
+5. **挂灯具有独立悬挂关系。** 吊线/吊钩到提梁的关系清楚，吊线可以出画。灯体、手和袖口之间有明确间隙；不遮脸、不塞进两手工作区，奶奶不承担提灯动作。本张不烘焙暖光、镜面高光和大光晕。
+6. **鹤使用现有道具身份。** 本色皮身、黑色垂尾羽、红顶、细长喙、分节长颈与一条收起的腿。主签接身后部/翼下区域，颈签接下段浅色颈节（`neck3`），不是嘴、头顶或脚。母版可表述机械关系，毫米接点最终由代码锁定，生成图本身不能证明 `[-75,6]` 或 `[10,0]` 的精度。
+
+交接中的旧奶奶任务若已完成，先审旧输出并沿用其原始文件；若已在运行，等待它结束。只有父对话确认没有可接收的已完成或运行中任务，才使用附带提示词执行该独立成年角色的正常首次生成。这里没有授权或安排绕过拒绝、换工具重试被拒任务。
+
+## 3. 一张母版的验收顺序
+
+| 顺序 | 要看的证据 | 通过条件 / 返修触发 |
+|---|---|---|
+| 文件 | 原始下载文件的格式、宽高、完整画布 | 当前用户交接明确要求正式 PNG 实测宽度至少 2048 像素，奶奶也适用；完整容纳头髻、双手、脚、灯体、两杆和鹤。实际宽度低于 2048 的文件只能登记为原始草稿，不能算正式交付完成；不放大或补边冒充原生达标。历史 v1 曾把 2048 写作沿用目标，但当前验收以用户的明确要求为准，不冒称这是 Opus 08:10 新加的要求。 |
+| 缩略图与纯剪影 | 先以全图约 1/4 尺度检查人物轮廓，再看正常大小 | 第一眼能读出站稳的老年操偶者；两只握持手集中在胸前，躯干未靠杆支撑。 |
+| 手、杆、腕近看 | 两个手部裁幅及从手至鹤的整杆 | 两握点、两根杆、两接点能配对；没有错腕玉镯、漂浮杆、穿掌、断杆或把杆接在腕口。 |
+| 身份 | 完整脸髻与衣服 | 低灰髻、红珠、薄圆框、浅蓝白小花、前襟、藏青宽裤、黑鞋白底一致；不套用儿童大头、泡泡袖或波点。 |
+| 动作可兑现 | 依据同一母版的统一世界坐标检查图 | 此阶段才核对肩、肘、腕、握点、杆长、鹤端点和灯体，不用一张漂亮图替代接入验证。 |
+
+尺寸信息与视觉结论分开记录：例如“1536×1024 原始草稿，动作可读、身份待互审”，不能写“已达 2048 母版”。当前可调用图像工具没有暴露原生宽高参数，不能保证输出宽度；提示词或工具调用不得虚构尺寸能力。若实际输出宽度低于 2048，只能交低分辨率草稿，正式 PNG 的尺寸要求仍未完成。每张登记工具/已披露模型、完整提示词、源文件、实测宽高和状态。
+
+## 4. 确定技术发现
+
+### 4.1 最高优先级：旧接口的 `hand` 实为腕目标，真实握点另有偏移
+
+来源：`js/chars/nainai.js:228–247`、`js/chars/hand.js:63–78`、`js/shots/s07_op_test.js:91–98`。
+
+`armSide` 把 `A.hand` 直接传给 `ik2`，得到腕点 `W`，再以腕点旋转、缩放手型。`hand(...,'grip')` 返回的掌内握点是手局部 `[0.82,0.02] × size`，当前 `size=5.4 cm`，即腕前 `[4.428,0.108] cm`，距离 **4.4293 cm**。旧 S07 同时把杆端画到 `A.hand`，所以即使 IK 没有截断，杆端也不会自动落在掌内握点。在旧 `6.2 px/cm` 的绘制尺度下，该两点距离约 **27.46 px**；这是腕点到握点的固有几何距离；仅在腕目标可达、杆端等于该腕目标且使用旧绘制尺度时，才等于杆端到握点的差。IK 截断后总接触残差可能改变，不能直接沿用 4.4293 cm。上述像素值不是本轮重渲染测得的画面空隙。
+
+`armSide` 虽返回 `h`，但 `side` 的两次调用未保存该返回值，最终只返回 `{fig,N,H}`。因此新版需要真正暴露或共享每只手的 `wrist`、`grip`、`elbow`，并使画杆、接触检查和手型都读取同一状态。不能只检查 `||W-target||≈0`。
+
+旧 S07 已被 08:10 明确淘汰；这里不是要求继续修旧测试，而是提醒新接入不要复制同一接口含义。当前 S06 没有完整奶奶入画，故不能将此写成“已发现 S06 奶奶手脱杆”的视觉结论。
+
+### 4.2 现有 S06 手位是投影输入，握持段长度并非严格固定
+
+使用原 `makeCrane(1.35,'plain')`、原 `solve/pointOn` 和从原 S06 读取的 `cranePose`、根点与杆输入，以实际 24 fps、帧号 0–119（0 至 4.95833 秒）计算，未改写角色参数。
+
+| 量 | 身签 `body [-75,6]` | 颈签 `neck3 [10,0]` |
+|---|---:|---:|
+| 握端高度 z | 0.548000–0.565000 m | 0.748000–0.765000 m |
+| 鹤接点高度 z | 0.647235–0.667996 m | 0.802129–0.822429 m |
+| 鹤端到握端距离 | 0.431045–0.432053 m | 0.419382–0.421559 m |
+| 距离跨度 | 1.007 mm | 2.176 mm |
+
+两杆都用深度 `0.004 m → 0.42 m`。上述变长幅度很小，不能夸大为已肉眼确认的“伸缩竹杆”；它证明当前输入不是固定握持段的严格几何约束。若新版约定手不沿杆滑动，就应固定每杆的 `A→G` 长度，并围绕该约束调整站位、杆方向或角色工作区。若确实设计沿杆滑动，需要明确固定的是整根杆，握点滑动是另一个可审的动作，不能默默用伸缩线段替代。
+
+### 4.3 坐标与缩放的实际约定不可混用
+
+- 奶奶旧局部坐标是厘米、向前 `+x`、向下 `+y`。
+- 世界空间用米 `[x,depth,z]`，床单为 `depth=0`，后台为正深度。
+- 鹤部件与 `pointOn` 是毫米、局部 `+y` 向上；`makeCrane(1.35)` 已缩放部件和关节。
+- `sheetImage` 的 `hand` 参数却是 `[x,z,depth]`。新版应只在这一接口边界交换顺序，内部一律用有明确含义的世界三元组。
+- 当前 `at: [-75,6] / [10,0]` 是 `pointOn` 直接读取的最终局部毫米值，没有再隐式乘 `1.35`。迁移时不能因 `makeCrane(1.35)` 再重复乘接点，除非有意改变连接位置并重新审图。
+- `solve/pointOn` 不执行 `pose.facing` 的水平反射；`drawPuppet` 与 `sheetImage` 在外层执行。新世界映射需要准确反射一次，不能漏掉或做两次。当前 `facing=1`，此次数值未涉及镜像。
+
+### 4.4 现有投影并不能证明真实手、灯、杆不穿插
+
+`shadowplay.js:54` 会在杆深度达到 `0.97×lamp.D` 时停止继续画杆影。当前灯深度 0.70 m，因此截断面约 0.679 m。未来若人物手在灯后，真实杆可继续延伸而杆影停止；这是投影处理，不应拿杆影消失作为握持段或碰撞检查的依据。
+
+当前 S06 灯的 `core/globe` 是光源参数，不是完整灯体、提梁与吊钩的碰撞模型。`NN` 的遮挡球也不等于已批准的奶奶外形。真实接入需用灯体尺寸和完整手/袖轮廓核对间隔，不能仅测试“手到光点距离”。
+
+## 5. 不冒充新姿态的接入方法
+
+这一节是给 Opus 的实现检查协议；数值阈值、图中各点和骨长须从获准母版与镜头尺度确定，不在这里宣布人体参数已获批准。
+
+### A. 先定义同一世界坐标
+
+世界竖直单位向量 `U=(0,0,1)`，角色向前水平单位向量为 `F`，角色解剖右向量 `R=F×U`。以脚底原点 `O`、局部前向厘米 `u`、向下厘米 `v`、解剖右向厘米 `w` 表示：
+
+`Pworld = O + 0.01*u*F - 0.01*v*U + 0.01*w*R`。
+
+这使左腕/右腕身份不依赖画面左右。相机放到角色右侧才对应本母版的近右远左；“屏幕朝右”本身不是世界 `F=(1,0,0)` 的依据。前后镜头共用此角色身份，不通过整图翻转来偷换左右。
+
+鹤接点计算：`p = pointOn(crane, solve(crane,pose),part,at)`，
+
+`A = [rootX + facing*p.x/1000, puppetDepth, rootZ + p.y/1000]`。
+
+每杆有真实握点 `G`，实体杆线段取 `A→G`；交给 `sheetImage` 时才把 `G=[X,Y,Z]` 转为 `hand:[X,Z,Y]`。手和杆都经过同一相机投影，不能从不同二维截图反推一个“看似重合”的姿势。
+
+### B. 以掌内握点为接触约束，保留腕与骨长
+
+对当前二维手型，固定腕相对前臂转角为 `r`、手型的腕到握点局部向量为 `g`、前臂长为 `L2`。令：
+
+`q = [L2,0] + Rot(r)*g`，`Leff=|q|`，`delta=atan2(q.y,q.x)`。
+
+用肩到目标握点 `G` 解一个长度为 `L1,Leff` 的两段 IK，得到肘 `E`；再还原真实前臂方向 `phi=angle(G-E)-delta`，腕为 `W=E+L2*[cos(phi),sin(phi)]`，手按 `phi+r` 朝向绘制。如此 `Leff` 只是把手的已知偏移合并求解的数学量，并没有把前臂画长。远手若使用手型镜像，`g` 必须先对应镜像。
+
+独立脚本调用当前 `hand()` 真实返回的握点，在两种弯肘分支和 1000 个合成可达二维目标上复核此关系。最大握点残差约 `1.78e-14 cm`，上臂/前臂长度误差约 `7.11e-15 cm`。这是代数验证，不是 1000 个奶奶动作或解剖学验收；使用的是旧骨长测试数据，不能由此锁定新版骨长。
+
+不可达输入必须继续失败：脚本另设一个超出外半径 5 cm 的目标，旧 `ik2` 截断后的残差为 `5.001 cm`。不得把截断终点或最终握点换名为目标来掩盖失败。上式需使用 IK 返回的实际解并复验接触；本脚本的还原循环只测试了明确可达目标。
+
+### C. 由获准母版启动每帧联合约束
+
+母版通过后量取脚底、头顶、肩、肘、腕、掌内握点，约 1.5 m 身高校准一次整体比例；不要从“胸前”臆造两个固定米数。两只手的造型先成立，再搜索鹤根高、角色站位、杆长和灯位使图中动作能实现。若与当前 S06 鹤高度不兼容，需审查前后台连续性与画面构图，不能默改根高后声称现有镜头无影响。
+
+每帧输出至少：两侧 `S/E/W/G` 世界坐标、杆的 `A`、目标与实际握点偏差、上/前臂长度、肘弯余量、固定握持段长度差、脚底位置、灯体最近距离。技术容差按最终画面里小于可见像素误差来制定，同时保留世界单位；不得用放宽容差接受肉眼可见离杆。角色与灯的外轮廓/有厚度代理也要复验，中心线不相交不等于物体不穿插。
+
+建议交给互审的最小材料：同一帧的固有色主图、无光剪影、两手近看、带肩/肘/腕/握点/杆端的世界坐标检查图，以及 24 fps 连续动作。坐标检查图应明确标“接入检查”，不冒充新造型设计稿。技术指标全过以后仍需在最终镜头尺寸看握持是否自然、远手是否被吞没、灯是否抢脸。
+
+## 6. 可复核交付与未完成项
+
+- 本报告：`/workspace/laidain-review/astra_grandma_preflight.md`。
+- 待执行的主母版提示词与使用说明：`/workspace/laidain-review/grandma_master_prompt.md`。
+- 可独立运行的只读检查：`node /workspace/laidain-review/grandma_preflight_check.mjs`。
+- 原代码哈希、全部 120 帧世界坐标、汇总与代数验证结果：`/workspace/laidain-review/grandma_preflight_check.json`。
+
+脚本运行时对绘图 API 使用空桩，只获取真实 `makeCrane` 构建的骨架和真实数学接口；它没有渲染图像，也不验证轮廓好坏、灯体外形或手的绘制遮挡。脚本列出的六个关键源文件的 SHA-256 已存入 JSON 以支持复查；这不是全部已读源码的完整哈希清单。
+
+仍待完成：旧奶奶生成状态确认、实际原始 PNG 转交、尺寸实测、主母版视觉互审、Opus 新版角色接入与逐帧验证。本文已完成的是制作/验收安排及已有代码的数值预检，不是奶奶最终交付。
+
+### 作者原文：grandma_master_prompt.md
+
+SHA256：`be36a951ffadb17b68aa9655bc371f70c0107df747d6bdefc92d280d6019c8a3`。
+
+# 奶奶操偶主母版：待执行生成提示词
+
+状态：准备就绪，**本轮未执行**。父对话须先确认旧奶奶生成任务没有运行中或可接收的完成结果，避免重复生成。本文件只用于独立成年奶奶角色任务，不用于重试小满已被拒绝的坐姿。
+
+推荐输入参照：`/workspace/animation-competition/renders/checkpoint1-v4/crane_puppet.jpg`。本轮已实际查看该图。它只作鹤道具参考，不是已批准奶奶身份参考；右栏是后台皮面，左栏是透光展示。若生成工具支持参照图，将此原文件作为参照提供，再使用以下完整提示词。无需裁切或改动原文件。
+
+工具设置：`transparent_background: false`。当前用户明确要求正式 PNG 实测宽度至少 2048 像素，奶奶也适用；这不是声称 Opus 08:10 新增了要求。当前工具未暴露原生宽高参数，因此不虚构尺寸参数或保证。取回后实测 PNG 格式和宽高，原样保存；实际宽度低于 2048 时只能标记并交付为原始草稿，不能算正式 PNG 交付完成，不放大、不补边冒充原生达标。
+
+## Prompt
+
+Create one clean full-body character-design master image for the hand-drawn 2D animated short “Lai Dian.” The single main character is a Chinese countryside grandmother, about 70 years old and about 1.5 metres tall, standing in strict profile facing the RIGHT. She is a kind, capable, quietly humorous shadow-puppet performer. This is a character model image with a readable working pose, on a uniform pale-grey background.
+
+Give her natural elderly adult proportions and a gently rounded upper back above a supported waist and pelvis. Both feet rest firmly on the same ground level, with a small natural fore-and-aft offset. Her posture is stable and relaxed. Her shoulders stay low, both elbows remain comfortably bent, and she looks toward the crane she is operating with a small, attentive smile. Her grey-white hair is brushed back into a LOW bun with a red-bead hairpin. Thin round glasses leave the eye expression readable. She wears a light-blue short-sleeved button-front blouse with small WHITE flowers, dark navy wide-leg trousers, and black cloth shoes with white soles. One green jade bangle belongs to her anatomical LEFT wrist. In this right-facing profile her left arm is the far arm; keep the bangle on that far wrist, even if naturally obscured. The visible near wrist is her right wrist.
+
+Both hands work together IN FRONT OF HER CHEST. Each hand individually grasps ONE thin, rigid bamboo control rod. Use a small, natural difference in hand height and forward position so both grasping relationships can be understood without spreading the arms. Show continuous forearms and natural wrists, with each rod held between the thumb and curved fingers in the palm’s grasp area. The rods must physically meet the grasping fingers, not stop at the wrist or float beside a fist. Let the fingers naturally occlude the rod through each grasp. Exactly two rods can each be followed from one hand to one connection on the crane.
+
+The attached reference shows two lighting views of the SAME crane shadow puppet. Use its existing silhouette, colours and articulated construction only as prop guidance: an amber-brown leather body, black trailing tail feathers, a segmented long neck, red crown, long slim beak, and one folded leg. Use the physical backstage leather appearance, without copying the display panels, their text, or dramatic lighting. Place this flat crane puppet to the right of the grandmother, with its body connection around or slightly above her working hands. One rod connects to the rear body beneath the wing; the other connects to a LOWER pale neck segment near the neck base, not to the head or beak. Keep the full crane and both rod paths visible and visually subordinate to the grandmother.
+
+A kerosene lantern HANGS beside her from a clear hook and suspension line. The line may continue out of the top of the image. Show the complete lantern body with clear space around it, away from her face and working hands. Both of her hands operate the puppet; neither holds the lantern.
+
+Use elegant, continuous hand-drawn outlines, restrained facial lines, simple flat local colours, and carefully designed overlapping shapes. Keep all of the grandmother’s bun, fingers, trouser cuffs and shoes inside the canvas, as well as the lantern body, the crane, and the two rods, with breathing room. No text, labels, panels, additional people, room scenery, floor line, cast shadows, lighting glow, painted rim light, gradients, paper texture, visible construction skeleton, ball joints, disconnected limbs, extra hands, or extra rods.
+
+## 取回后的第一轮判断
+
+先验证“全身右向、站稳略驼、双手胸前各一签、悬挂灯、远侧左镯、两杆接到身/下颈”能否同时读懂，再看脸髻与衣装。若遮挡使左镯不可见，记录“未能单图验证左腕饰物”，不为了显示而转移到近腕。若生成图的杆落在头部或手腕，视为接触关系不通过；图像里的精确毫米坐标仍应由代码复核。
+
+保留完整提示词、工具披露信息、原文件、原始实测尺寸和验收状态。当前不存在可声明通过的奶奶主母版。
+
+### 作者原文：astra_grandma_cross_review.md
+
+SHA256：`a8791bde8d29fa88154bb947a5c03f5ea059c02a2d2b1ced1070d671c4fe06bf`。
+
+# 奶奶制作与接入预检：独立交叉复审
+
+审查人：Astra 视觉／技术审查员；2026-10-16。父级按 `gpt-6-astra / xhigh` 参数启动本任务。
+
+结论：`astra_grandma_preflight.md` 与 `grandma_master_prompt.md` 的关键技术推导、制作顺序与验收边界通过独立复审，没有发现阻塞性问题。它们可以作为 Opus 新版奶奶接入的工作依据，不能代替尚未产出的主母版和真实镜头验收。
+
+已实际读取两份完整正文、`grandma_preflight_check.mjs`，并核对 `nainai.js`、`hand.js`、`s07_op_test.js`、`shadowplay.js`、`puppet.js`、矩阵与 IK 接口。只读仓库；所有额外脚本、结果和本意见均保存在仓库外的 `/workspace/laidain-review/`。
+
+确认成立的关键点：
+
+1. 旧 `armSide` 的 `A.hand` 实为腕部 IK 目标；`hand('grip')` 的实际握点偏移为 `[4.428,0.108] cm`，模长 4.429316877 cm。正文已正确限定：27.46 px 是旧尺度下的两点几何距离，只有杆端等于可达腕目标时才等于接触残差；不是旧视频像素实测，也不是当前 S06 奶奶脱杆的证据。
+2. S06 皮影毫米坐标、世界米单位以及 `hand:[x,z,depth]` 参数换序正确。`pointOn` 接点不应重复缩放，`facing` 也只应反射一次。当前 `facing=1` 的数值不冒充镜像动画验证。
+3. 当前身签和颈签的有效长度跨度分别约 1.007 mm、2.176 mm；正文没有夸大为可见伸缩。固定握持段与沿杆滑动被分开说明，处理建议合理。
+4. 将已知握点偏移合入有效前臂长度、再还原真实前臂方向的二维方法正确。它是求解手段，不改变实际骨长；正文明确限定固定相对腕角、可达目标，并要求对 IK 截断保留失败残差。
+5. 世界前向、竖直和解剖右向的定义一致；左腕饰物不被误当作画面左边。实体灯碰撞、杆影截断和角色遮挡代理也被正确区分。母版提示词保持单人右向、胸前双手各握一签、悬挂灯、近右远左、身后部／下颈双接点，没有把生成图当作精确毫米工程图。后续按父级转交的当前用户要求增加的正式奶奶 PNG 实测宽度至少 2048、低于该值仅为草稿、不许靠放大／补边冒充原生达标三处说明，已再次实际读取核对；来源明确归于用户约束，没有误写为 Opus 08:10 新增要求。
+
+本轮独立数值证据：
+
+- 另写源码姿态计算，在第 0、20、24、46、72、119 帧重建两根杆的世界接点与握点；与作者数据的最大差为 `1.11e-16 m`。
+- 重新计算作者存储的全部 120 帧两杆欧氏长度，最大算术残差为 0。这是对已存数据的复核，不冒充再次完整运行作者的姿态采样。
+- 独立接触求解验证覆盖两种手型镜像、四个相对腕角（−0.8、−0.35、0、0.7 弧度）、双弯肘分支与多个目标，共 256 例。握点最大残差 `3.18e-14 cm`，骨长最大残差 `1.07e-14 cm`。这些是合成二维几何用例，不代表人体关节活动范围或已批准表演。
+- 可复现脚本：`astra_grandma_crosscheck.mjs`；结果：`astra_grandma_crosscheck.json`。脚本使用绘图空桩，未渲染奶奶或检验视觉外形。
+
+独立复核中提出的一项非阻塞记录问题已由作者自行修正，并已重读确认：末段现明确只登记“脚本列出的六个关键源文件”的 SHA-256，不再称全部已读源码。现有数值结论不受影响；本审查员没有改动作者文件。
+
+仍待：旧生成任务状态确认、实际原始 PNG、尺寸实测、母版视觉互审，以及 Opus 新实现的全场景接触与运动验证。此次没有调用生图或修改仓库代码。
+
