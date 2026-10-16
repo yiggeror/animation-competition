@@ -141,13 +141,14 @@ function smoothClosed(pts) {
 const hex2 = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
 export function shade(hex, k) { return `rgb(${hex2(hex).map((v, i) => Math.round(255 * Math.pow(Math.min(1, Math.pow(v / 255, 2.2) * k[i]), 1 / 2.2))).join(',')})`; }
 
-// 画一只手。opt = { side: 1 右手 / -1 左手, pose, scale（小孩 0.78）, R（orient() 的结果）, at:[x,y]（手腕在画面上的位置，像素）,
+// 画一只手。opt = { side: 1 右手 / -1 左手（解剖上正确：手背朝镜头、手指朝上时，右手拇指在左边）, pose, scale（小孩 0.78）, R（orient() 的结果）, at:[x,y]（手腕在画面上的位置，像素）,
 //   px（每厘米多少像素）, skin, light:[r,g,b], shadeK（暗面系数）, rim（亮边颜色 rgba 字符串，可选）, forearm（前臂长，厘米）, sleeve（袖口颜色，可选）, sleeveAt（袖口离手腕多远） }
 export function drawHand(ctx, opt) {
   const side = opt.side ?? 1, sc = opt.scale ?? 1, R = opt.R || orient(), px = opt.px ?? 20;
   const L = opt.light || [1, 1, 1], skin = opt.skin || '#f3c4a0', shadeCol = opt.skinShade || '#d99a78';
   const J = solve(opt.pose || POSES.relaxed, sc);
-  const W = (p) => R([p[0] * side, p[1], p[2]]);                              // 手坐标 → 世界（左手镜像 x）
+  // 手坐标 → 世界。手坐标里拇指在 +x、手背朝 +z，这样直接算出来是左手；右手（side = 1）把 x 镜像
+  const W = (p) => R([p[0] * -side, p[1], p[2]]);
   const S = (w) => [opt.at[0] + w[0] * px, opt.at[1] - w[1] * px, w[2]];     // 世界 → 画面（带深度）
   const P2 = (p) => { const s = S(W(p)); return [s[0], s[1]]; };
   const depth = (p) => W(p)[2];

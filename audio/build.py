@@ -149,7 +149,7 @@ wg = np.zeros(N, np.float32); wg[:ns(CUT)] = 1; wg[ns(TV_ON):ns(OFF)] = 1
 wg[ns(OFF):ns(OFF + 1.5)] = np.linspace(1, 0, ns(OFF + 1.5) - ns(OFF))
 AMB += pan(whine * wg * 0.25, -0.55)
 # 马灯火苗：点着以后一直在（近景响一点）
-LAMP = T('S08', 1.8)
+LAMP = T('S08', 1.8)   # 灯芯着了
 fl = flame(TOTAL - LAMP)
 flg = gain_curve([(0, -26), (T('S08', 4), -18), (T('S09'), -28), (T('S12'), -24), (T('S13'), -30), (ON, -40), (OFF + 1, -28), (TOTAL, -28)], len(fl))
 s0 = ns(LAMP); AMB[s0:s0 + len(fl)] += pan(fl * flg, 0.3)[:N - s0]
@@ -229,10 +229,11 @@ sfx(fan_hand(3.5, 1.3), T('S07', 1.2), 0.25, -0.1)
 sfx(scrape(0.3, 4), T('S07', 1.4), 0.2, 0.4)              # 奶奶起身，凳子挪一下
 sfx(footsteps([0, 0.55, 1.1, 1.65, 2.2]), T('S07', 1.9), 0.35, 0.5)
 sfx(creak(0.4, 5), T('S07', 4.3), 0.15, 0.6); sfx(metal_clink(0.5), T('S07', 4.6), 0.3, 0.6)
-sfx(glass_clink(0.4), T('S08', 0.5), 0.3, 0.1)            # 取下灯罩
-sfx(match_strike(), T('S08', 1.0), 0.7, 0.1)
-sfx(burst(0.4, 300, 3000, a=0.05, r=0.15, g=0.4), T('S08', 1.8), 0.4, 0.1)   # 灯芯着了
-sfx(glass_clink(0.6), T('S08', 3.5), 0.4, 0.1)            # 放下灯罩
+# js/code/s08.js：0.35 划火柴，1.8 灯芯着了，2.2 甩灭火柴，3.4 放下灯罩
+sfx(match_strike(), T('S08', 0.2), 0.7, -0.15)
+sfx(burst(0.4, 300, 3000, a=0.05, r=0.15, g=0.4), T('S08', 1.8), 0.4, 0.05)   # 灯芯着了
+sfx(burst(0.25, 200, 1500, a=0.02, r=0.08, g=0.25), T('S08', 2.2), 0.3, 0.2)  # 甩灭火柴的"呼"
+sfx(glass_clink(0.6), T('S08', 3.4), 0.4, 0.05)            # 放下灯罩
 sfx(drawer(0.5), T('S09', 0.5), 0.5, -0.3)
 sfx(rustle(1.0, 22, 1000, 6000, 2.0), T('S09', 1.0), 0.25, -0.3)
 sfx(flashlight_click(), T('S09', 2.6), 0.4, -0.3)
