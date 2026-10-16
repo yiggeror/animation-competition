@@ -28,14 +28,21 @@ export function sheet(t, env) {
   const p1 = peck(t, 5.5), p2 = peck(t, 8.2, 0.3, 0.05, 0.25);
   const hit = t > 8.5 ? Math.exp(-(t - 8.5) * 1.2) : 0;                 // 撞上之后
   const dizzy = sstep(8.6, 9.0, t) * (1 - sstep(11.8, 13.5, t));
+  const amp = sstep(8.6, 9.0, t) * (1 - sstep(10.6, 12.4, t));        // 晕的幅度：撞完最大，慢慢缓过来
   let neck = mixNeck(NECK_UP, NECK_LOW, look);
   neck = mixNeck(neck, NECK_DOWN, Math.max(p1, p2 * 0.78));             // 第二下撞在龟壳上，比到水面浅
-  // 晕：脖子左右摇、头打转
-  neck = neck.map((v, i) => v + dizzy * 0.06 * Math.sin(t * 7 + i * 0.5) * (i < 12 ? 1 : 3));
+  // 晕：脖子一节节传着晃（像在画圈），头跟着转；身子左右打晃，膝盖发软
+  neck = neck.map((v, i) => v + amp * 0.10 * Math.sin(t * 6 + i * 0.45) * (i < 12 ? 1 : 3.5) + dizzy * 0.02 * Math.sin(t * 3 + i));
+  const sway = amp * Math.sin(t * 4.2);
   const recoil = hit * 0.05 * Math.sin((t - 8.5) * 14);                 // 撞上那一下往回弹
-  const root = [1.30 - 0.03 * sstep(8.5, 8.7, t) + 0.02 * sstep(9, 12, t) + recoil * 0.3, 0.66 + 0.005 * Math.sin(t * 1.7)];
-  const cPose = cranePoseOf(neck, dizzy > 0.1 ? { mode: 'two' } : { mode: 'stand', swing: 0.12 * hit * Math.sin((t - 8.5) * 6) },
-    0.04 + recoil + dizzy * 0.07 * Math.sin(t * 4.3), 1);
+  const root = [1.30 - 0.03 * sstep(8.5, 8.7, t) + 0.02 * sstep(9, 12, t) + recoil * 0.3 + 0.022 * amp * Math.sin(t * 4.2 + 0.9), 0.66 + 0.005 * Math.sin(t * 1.7) - 0.008 * amp * Math.abs(Math.sin(t * 4.2))];
+  // 撞上以后收着的那条腿放下来，两条腿撑着（0.3 秒过渡，不跳帧）
+  const cPose = cranePoseOf(neck, { mode: 'stand', swing: 0.12 * hit * Math.sin((t - 8.5) * 6) }, 0.04 + recoil + 0.15 * sway, 1);
+  const two = cranePoseOf(neck, { mode: 'two' }).angles, k2 = sstep(8.6, 8.9, t) * (1 - sstep(12.6, 13.2, t));
+  for (const j of ['tibia_near', 'tarsus_near', 'foot_near', 'tibia_far', 'tarsus_far', 'foot_far']) cPose.angles[j] += (two[j] - cPose.angles[j]) * k2;
+  // 两条腿轮流打软
+  cPose.angles.tibia_near += amp * 0.16 * Math.sin(t * 4.2); cPose.angles.tarsus_near -= amp * 0.2 * Math.max(0, Math.sin(t * 4.2));
+  cPose.angles.tibia_far -= amp * 0.16 * Math.sin(t * 4.2); cPose.angles.tarsus_far -= amp * 0.2 * Math.max(0, -Math.sin(t * 4.2));
   return [
     { pup: TURTLE, pose: tPose, root: [tx, tz], dist: 0.004, rods: turtleRods([tx, tz]) },
     { pup: env.crane, pose: cPose, root, dist: 0.004, rods: craneRods(env.RODS, root) },

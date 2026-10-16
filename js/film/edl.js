@@ -4,11 +4,11 @@
 export const SHOTS = [
   // 第 1 场 · 闷（日光灯）
   { id: 'S01', scene: 1, line: 'paint', dur: 12, text: '全景：吊扇转、蚊香烟、电视亮着；小满趴在竹席上玩手机，奶奶坐矮凳剥毛豆，推过来一块西瓜，小满摇头' },
-  { id: 'S02', scene: 1, line: 'code', dur: 4, text: '特写：手机屏幕，游戏画面 + 电量 2%' },
+  { id: 'S02', scene: 1, line: 'code', dur: 4, mod: 'js/code/s02.js', text: '特写：手机屏幕，游戏画面 + 电量 2%' },
   { id: 'S03', scene: 1, line: 'paint', dur: 6, text: '中近景：奶奶剥一颗豆，看一眼小满，自己咬一口西瓜' },
   // 第 2 场 · 停电
   { id: 'S04', scene: 2, line: 'paint', dur: 8, text: '全景："啪"——灯灭、电视缩成一个亮点、吊扇慢慢停；月光从窗口斜进来' },
-  { id: 'S05', scene: 2, line: 'code', dur: 4, text: '特写：手机 1%，手指狂按，屏幕黑' },
+  { id: 'S05', scene: 2, line: 'code', dur: 4, mod: 'js/code/s05.js', text: '特写：手机 1%，手指狂按，屏幕黑' },
   { id: 'S06', scene: 2, line: 'paint', dur: 8, text: '近景（月光）：小满跪在插座前，拔了又插，瞪着插座，狠狠插回去' },
   { id: 'S07', scene: 2, line: 'paint', dur: 5, text: '全景：小满往后一倒瘫在竹席上扇风；奶奶起身走向立柜，踮脚摸马灯' },
   { id: 'S08', scene: 2, line: 'paint', dur: 6, text: '特写：奶奶划火柴、点灯芯、放下灯罩——暖光铺开' },
