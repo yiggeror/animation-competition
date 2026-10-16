@@ -1941,3 +1941,228 @@ SHA256：`10b0ea4792333b45b5e6aca83ed6ee42b5554692bb1a0bf35faa3eaad4b0e9fd`。
 输出一张正方形 PNG。若工具原生能力支持，请使用至少 2048 像素宽的原生输出；不要放大、插值或补边来伪造尺寸。实际文件会另行测量，尺寸不能替代姿态正确。
 
 ```
+
+
+## 2026-10-16 10:01 UTC · 奶奶三视图与表情原图、双方实审；表情原生2048宽单项达标
+
+两类身份展开均已成功返回。本条原样交付PNG和四份作者/独立审查全文，保存副本与工具原文件逐字节一致，未缩放、补边或改像素。
+
+| 原图 | 实测尺寸 | 当前验收 |
+|---|---|---|
+| [奶奶三视图](refs/grandma_turnaround_current01_draft.png) | 1774×887 | 人物身份、衣装、左腕镯可作工作参考；宽度不足，严格侧向和平涂待统一 |
+| [奶奶三表情](refs/grandma_expressions_current01_draft.png) | 2048×768 | 原生宽度单项通过；微笑/大笑可作工作参考，专注眉心、前视低髻/红珠遮挡与平涂待整合 |
+
+表情图的2048来自实际原始PNG。因此，若之前小图记录给人“此工具绝不可能输出2048宽”的印象，应以这次实测纠正。接口仍未暴露可保证尺寸的参数，各图必须分别实测；其他原图不会随本张达标。表情保留draft文件名，不能把宽度通过误当内容全部通过。
+
+请按三视图正/侧/背共同解释的低髻与红珠位置统一表情正面遮挡，保留脸与眼镜；专注仅减弱眉心竖纹及内眉压力。正式平涂与原生尺寸可在统一向量/代码重绘时落实，仍需返图互审，不直接放大现有位图。
+
+尚未完成：操偶母版刚性上杆与neck3；小满托腮正确直背（修订被审核拒绝，已停止）；除奶奶表情外各参考的原生宽度；整套平涂及前视身份细节统一。本轮未开展分层或修改你的主代码，全部生成调用已结束。
+
+以下原文保留作者写作时状态，同时附上实际独立结论。最后拉取仍未见08:10之后的新回复，不将本轮建议登记为你已采纳。
+
+- `grandma_turnaround_current01_draft.png`：1660617字节，SHA256 `93bdaee6ccf0a89730f41433127cfb5dcf4f96dbb2ee1685af5707fa15f8ecb9`。
+
+- `grandma_expressions_current01_draft.png`：1989760字节，SHA256 `ce4e5702f1ec9f642326d3f771a869184304ea178412745be4f6db64f3e63c42`。
+
+
+### 作者原文：astra_grandma_turnaround_current01_delivery.md
+
+SHA256：`b4aa9fc62863c9d61a102f8b4774667e824c8d4cc21e55a15f1a2618870e81bf`。
+
+# 奶奶站立三视图 current01：作者实图审查
+
+2026-10-16 UTC，Astra 设计负责人。
+
+**三视图已一次成功返回，可作为人物身份与服装结构的工作草稿；实测1774×887，正式宽度不通过，尚不登记为最终采用的严格三视图。** 已将实际原图交另一位 Astra 独立复审，不为尺寸追加调用。
+
+## 制作与实测
+
+本次按公开调整后的路径，以操偶 current01 的人物部分为唯一图像输入，制作无杆、无灯、无鹤的身份展开。此前的操偶刚性杆与 `neck3` 问题不因本图而通过。current02/03不是额外独立身份参考。
+
+- 内置 `image_gen.imagegen`，底层模型未披露；单次调用，无拒绝。
+- 提交 2026-10-16 09:53:07 UTC；成功结果回收记录 09:54:06 UTC。
+- 原始工具文件：`/workspace/generated_images/exec-c3c06e79-6d20-4f2d-80ef-4b2276f63f01.png`。
+- 交付副本：`grandma_turnaround_current01_draft.png`，PNG/RGB，**1774×887**，1,660,617 字节。
+- SHA-256：`93bdaee6ccf0a89730f41433127cfb5dcf4f96dbb2ee1685af5707fa15f8ecb9`。
+- 副本与工具原文件逐字节一致，没有缩放、补边、重编码或像素修改。
+- 完整实际提示词、请求、状态、结果元数据为本目录 `grandma_turnaround_current01_*` 文件；调用前设计见 `astra_grandma_identity_expansion_design.md`。
+
+## 可保留的内容
+
+本人实际查看完整返回图及保存原图。画面依次为正面、朝右侧面、背面，三个人物互不重叠，头顶和鞋底基本对齐，发髻、手、裤脚、双鞋均完整。双臂自然下垂，站稳，未沿用操偶握拳或附带道具。
+
+灰白低髻、细圆镜、温和老年脸、浅蓝白色小花短袖开襟衣、藏青宽裤、黑鞋白底均与身份主参照连续。前面有门襟纽扣，背面没有复制前襟；领口、袖长、下摆侧开口和裤宽可互相解释。白花仍有花瓣，没有变成小满的波点。侧面保留轻圆的上背，未画成深弯腰。
+
+玉镯在正面画面右腕、背面画面左腕；朝右侧面的近侧可见腕无镯，前胸／前腰边缘的远腕处只有一小段绿色。它与解剖左腕归属相容，不能为了展示把镯补到近腕。新图把正背面的左右对应补充清楚，这是比单张操偶图更可检查的身份信息。
+
+低髻在侧面后脑下方、背面枕后低位；背面红珠在髻的画面右侧，侧面后方可见红珠，正面没有为了露出饰物强加一串珠子。当前没有明显的左右换位证据。正面脸是从原侧脸新展开的形状，尚需与表情图统一，不能称此前已存在获准正脸。
+
+## 本轮保留的边界与后续对齐项
+
+侧向阅读清楚，但前襟仍露出一定宽度，两只鞋也按展示方式错开；它适合做外形参考，不能仅凭这张就宣布精确90度正交建模通过。单独能见远镜圈并不足以证明三分之四；这里针对的是整体衣身与足部的展示透视。正式三视图应按同一模型对齐头胸胯和鞋底，避免直接把当前各栏当已注册的转面部件。
+
+图中仍有头发、衣料的轻明暗及背景的浅变化，没有严格满足“纯色底、全平涂”的最终口径。无需因此重新随机设计人物；后续绘制时统一固有色、线宽和正交朝向即可。原始宽度1774低于2048是独立的正式交付阻塞，不能用插值放大或补边解除。
+
+作者结论：身份和服装结构具备继续工作的价值；批准范围为待独立复核的参考草稿，不是完整操偶母版、正式PNG或可直接绑定的三面资产。新三表情还需与本图正面低髻、脸宽、眼镜和领型交叉核对。
+
+
+### 作者原文：astra_grandma_turnaround_current01_independent_review.md
+
+SHA256：`dc8ae4e8db8500c563859f8556842597325b64553e22f251773990c1b5cdf2e1`。
+
+# 奶奶三视图 current01：独立视觉复审
+
+2026-10-16 UTC；Astra 独立审查员。
+
+**可以作为奶奶身份与衣装的三面工作草稿继续使用；不能登记为正式三视图终稿或校准正交模板。** 三面的人物识别、衣装和左腕玉镯关系基本一致，值得保留。仍需在正式绘制时统一严格侧向、平涂及原生分辨率，不建议仅为这些细节再次随机生成整张身份稿。
+
+## 实际输入与文件
+
+已完整实际查看 `grandma_turnaround_current01_draft.png`，并重新查看其唯一身份来源 `grandma_puppeteer_side_current01_draft.png`；读取调用前设计、完整实际 prompt/request、status 和返回元数据。原始操偶图只有侧向，因此本张的正背面是新展开的合理候选，不把它们称为先前就已验证的身份细节。
+
+本次独立完整读取 PNG 并计算：RGB，**1774×887**，1,660,617 字节；SHA-256 `93bdaee6ccf0a89730f41433127cfb5dcf4f96dbb2ee1685af5707fa15f8ecb9`。保存副本与工具源文件 `exec-c3c06e79-6d20-4f2d-80ef-4b2276f63f01.png` 逐字节一致。验证记录为 `astra_grandma_turnaround_current01_verification.json`。本审查未修改原图或仓库，未做三维正交测量。
+
+## 可保留的具体内容
+
+1. **三面与主身份对应。** 从左到右是正面、朝右侧面、背面，均完整入画；银灰梳后发、低髻、细圆镜、温和老年脸、浅蓝白花开襟短袖、藏青宽裤、黑鞋白底保持同一造型系统。中间侧脸最直接延续操偶 current01。正面脸比单一侧图提供更多新信息，应作为待主实现方采用的正面展开，不冒称“与未知正脸精确相同”。
+2. **解剖左腕镯关系正确。** 正面绿色镯在画面右腕，背面在画面左腕。侧面清楚可见的近腕没有镯，前门襟附近的后层只露出少量绿色，符合远腕遮挡的读法；没有发现把镯移到近腕的明确像素证据。该小绿边不足以精确测量远侧手腕，但自然遮挡本身不构成缺失。
+3. **衣服前后结构可读。** 正面有扣门襟，背面没有复制前门襟和前排扣；白色图案读成小花，未整体变成波点。三面袖宽、衣长、裤形及白鞋底语言接近，侧面下摆开衩可见。无需重换衣鞋。
+4. **低髻与红珠有连续性。** 中栏髻仍低于后脑中心，右栏呈后脑下方的髻和侧方红珠，前栏配饰自然隐藏。当前没有明显“为展示配饰把簪移到头顶”的问题。精确发簪插向与髻结结构仍需在正式设定稿锁定，不能由几处可见红珠推导完整三维发饰。
+5. **尺度基本对齐。** 三栏头顶、鞋底、衣摆以及裤长的目测高度接近，没有一栏明显变高或变成另一个头身比例；体量相容。此结论是二维观察，不是标定身高 1.5 米或各骨长的验证。
+6. **姿态适合身份展开。** 站姿稳定、肩部放松、手臂自然下垂，保留轻微圆上背而非弯腰；没有复制操偶手势、灯、杆或鹤。双手可读为普通放松手，未见会阻断使用的多手或断腕。
+
+## 正式采用前仍须处理
+
+**P1：原生尺寸不足。** 1774 宽低于用户要求的 2048，当前只能草稿。不能将提示词请求、放大副本或补边画布计作达标。
+
+**P2：中栏不是精确正交校准图。** 脸和身体主要朝右，方向成立；但前门襟的可见宽度、两脚前后错开与鞋底显示带有轻微展示透视。仅凭这些画法不能量出三维转体角，也不能据露出两片眼镜就武断判为四分之三面。实际接入时要统一头、胸、盆、膝、脚的侧向，并按同一基准落脚；不要把本图各轮廓直接当严格正交尺寸。允许远侧自然遮挡，不需为了展示镯或另一鞋而转动身体。
+
+**P2：仍有细小明暗和背景变化。** 发丝、衣褶、肤色及背景存在轻微层次，并非完全无明暗的平整固有色。最终可在向量／代码重绘时简化，避免把这些亮暗误当成身份色块。
+
+衣花位置不宜逐点当作固定贴图坐标，侧背发髻和正面脸应先由 Opus 按这套工作稿确认，再在正式三面使用一致结构。无需因这些待定细节推倒已经连贯的人物身份。
+
+## 使用边界与最少下一步
+
+采用范围为角色识别、衣鞋轮廓、自然老年体量和配饰归属的工作参考。它不使操偶 current03 的折线杆或 neck3 连接自动通过，也不构成已完成角色绑定和逐帧测试。
+
+建议保留此稿，将严格侧向、正背结构与纯平涂纳入主实现方的统一重绘；以原生至少 2048 宽输出后，再检查实际尺寸和外形。该后续尚未执行，本报告不把重绘计划当作交付。当前无需为了尺寸单独重生；表情稿另作独立实际复审。
+
+
+### 作者原文：astra_grandma_expressions_current01_delivery.md
+
+SHA256：`8c7abf8d9847dba06e27d48363bea6ac952f23ec427ee7f6b73326676d47d48f`。
+
+# 奶奶三表情 current01：作者实图审查
+
+2026-10-16 UTC，Astra 设计负责人。
+
+**三表情已一次成功返回，原始PNG实测2048×768，本张宽度单项达到用户至少2048的要求。** 内容仍作为待互审的身份表情稿；尺寸达标不等于整套造型、操偶母版或最终采用通过。
+
+## 制作与实测
+
+本次唯一图像输入是操偶 current01 原图中的人物身份，没有引用刚生成的三视图，也没有把两次展开包装成互相独立证明同一未知正脸。两图均需并列对照后统一结构。
+
+- 内置 `image_gen.imagegen`，底层模型未披露；单次调用，无拒绝。
+- 提交 2026-10-16 09:54:21 UTC；成功结果回收记录 09:55:10 UTC。
+- 工具原文件：`/workspace/generated_images/exec-20e4b2b6-835e-4419-972e-6531483c4f17.png`。
+- 交付副本：`grandma_expressions_current01_draft.png`，PNG/RGB，**2048×768**，1,989,760 字节。
+- SHA-256：`ce4e5702f1ec9f642326d3f771a869184304ea178412745be4f6db64f3e63c42`。
+- 工具原文件与副本逐字节相同；没有缩放、补边、重编码或像素修改。2048是读取实际PNG所得，不是照抄提示词，也不是宣称工具有未披露的尺寸参数。
+- 完整实际提示词、请求、状态、元数据见本目录 `grandma_expressions_current01_*` 文件；文件名仍保留 draft 以表示内容验收状态。
+
+## 表情与身份阅读
+
+本人实际查看完整返回图及工具原文件。三栏统一正面头肩，头顶、耳部和可见髻完整，大小和肩领裁幅近似一致，没有文字或额外道具。
+
+左栏的闭口浅笑、微抬面颊和有注视的眼睛可读为慈祥；中栏颊部上提、眼睛随笑收拢、下颌和嘴自然打开，明显区别于浅笑，没有凭空补缺牙；右栏眉眼收紧、视线集中，保留轻微笑意，可读为带把握的专注。右栏眉心竖纹略强调，建议接入动画时以眉峰轻收为主，别继续叠加成怒相；当前没有必须重做整张的惊恐或愤怒表情。
+
+三栏的脸宽、鼻、眼、镜框、发际线和年龄基础保持连续；眼镜结构没有跟着嘴形扭曲，镜片未挡住眼睛。低髻、红珠、蓝底白花和衣领仍属原身份。没有用三种完全不同的脸代替三个表情。
+
+## 与三视图仍须统一的具体结构
+
+表情图的低髻在正面明显从画面左耳后伸出，并露出红珠；三视图正面的髻较收在后方、两侧露量较均衡，红珠未见。红珠在同一解剖侧露出本身不等于换边，但正脸看到的髻体积／偏置不同。正式共用前脸应以三视图背面确定髻的枕后位置，再统一正面遮挡，不能把每张较好看的髻位置分别当定稿。这是外形位置的局部对齐，不需要换整个人物身份。
+
+眉眼和鼻部在本张更细腻，整体仍有皮肤、头发和衣料明暗及背景浅变化。它是有效的表情表演参考，尚非严格纯灰底和平涂的最终角色资产。后续整合要让三视图和三表情共用同一前脸、低髻、镜框和衣领基准，再保留三种肌肉表情变化。
+
+作者结论：本张原始文件宽度通过，三种表情可作工作参考；身份整套一致性与平涂口径仍待独立审查和最终整合。本轮不会为已达标尺寸追加调用，也没有将它用于证明操偶杆、场景可达性或动态绑定通过。
+
+
+### 作者原文：astra_grandma_expressions_current01_independent_review.md
+
+SHA256：`56221690a12407b26d3163142576c4b7f5b771b13db98ac7a2e3056d796805af`。
+
+# 奶奶表情 current01：独立视觉复审
+
+2026-10-16 UTC；Astra 独立审查员。
+
+**本张原始 PNG 为 2048×768，正式宽度单项达标；慈祥微笑和大笑可作为表情参考，专注脸需轻微减弱紧眉感，发髻／红珠的正面可见性还需与三视图统一。当前不批准整套为最终设定稿。** 这些问题可在局部绘制或主实现重绘时处理，无须自动追加生成整张脸谱。
+
+## 原始文件和实际检查
+
+已实际完整查看 `grandma_expressions_current01_draft.png`，读取完整实际 prompt/request、status、返回元数据和调用前设计。另与已实际查看的 `grandma_turnaround_current01_draft.png` 正面、`grandma_puppeteer_side_current01_draft.png` 人物身份对照；没有把三视图当作本次生成输入——实际唯一输入仍是操偶 current01。
+
+独立用 Pillow 完整读取并计算：PNG / RGB，**2048×768**，1,989,760 字节；SHA-256 `ce4e5702f1ec9f642326d3f771a869184304ea178412745be4f6db64f3e63c42`。保存副本和工具源文件 `exec-20e4b2b6-835e-4419-972e-6531483c4f17.png` 逐字节一致，未做本地缩放、补边或其他像素处理。验证记录为 `astra_grandma_expressions_current01_verification.json`。
+
+这是工具原始返回文件自身达到 2048 宽。不能从之前几张 1536 或 1774 宽的结果推论工具存在低于 2048 的全局硬上限；若此前沟通给出这种印象，应以本次实测纠正。它也不使其他草稿自动达标：操偶三版仍各为 1536×1024，三视图为 1774×887，各自结论不变。
+
+## 三种表情与同人判断
+
+**左栏慈祥微笑：通过工作参考。** 眼睛有神，嘴角和面颊轻抬，嘴闭合自然，没有只在僵硬脸上贴一条笑线。眼镜、颊形和眼角线条一起维持温和的老年身份。
+
+**中栏大笑：通过工作参考。** 眼睛随颊部上提自然收窄，嘴张开而下颌仍连接，笑意同时来自眼、颊与嘴。没有读成惊恐张嘴；口腔体量不过分，牙齿没有被画成突兀缺牙或大牙床。与左栏的区别清楚。
+
+**右栏专注：成立但需微调。** 视线和眉部收拢能表达认真，嘴角还保留温和底色；但眉心两条竖向压纹较重，与仍然明显的笑线组合，存在担忧／皱眉笑的读法。没有必要升级为“人物变凶”或推倒表情。最小处理是减弱眉心竖纹和内眉端的压迫，让稳定凝视承担主要专注感，嘴角只保留轻微自然弧度。不能把嘴全改平、眉全部抹掉而失去原有性格。
+
+三栏的眼镜细框、桥架和镜腿连续，眼睛没有被不透明反光挡住。头部尺度、耳位、发际、鼻子、颊和下颌属于同一构造范围，未发现明确“换成三个人”的问题；笑时眼口变化具有连续性。三栏均为接近正面的头肩构图，没有为了露腕饰新增手；不应因画幅未包含手腕就把缺少玉镯列为错误。
+
+## 与三视图正脸的衔接
+
+总体脸型、灰白后梳发、圆镜、温和眼形、衬衣领和白花，与新三视图正面属于同一设计方向。表情稿展示的细节更多，不能将分辨率差异造成的细节多少直接写成换人；原操偶图只给了侧脸，正脸本来就是新展开内容。
+
+**需要统一的是低髻和红珠的正面遮挡。** 表情稿三栏在画面左耳下／后方露出较明确的一团发髻和两颗红珠；三视图正面髻更收在头后，红珠没有同样明确地露出。二者都把髻放在低位，没有变成顶髻，但还不能作为一个已完全锁定的正面轮廓。当前证据是像素可见性不同，不是测出了发簪在三维中被移动多少或其物理结构不可能。
+
+建议由 Opus 选定三视图正／侧／背共同解释的低髻与发簪位置，再让表情稿沿用同一个前视遮挡边界：收敛左侧发髻露出量，红珠该隐藏就隐藏，不因每栏都想显示识别点而横移配饰。脸和眼镜不随此修改重设计。
+
+## 画风与完成边界
+
+本张肤色、颈下和衣领有柔和明暗，头发有多层亮暗色带，背景也有轻微变化。即使阴影很柔，也不能写作“完全平涂”。后续清理可限定为背景统一单色、去掉颈下／领口的光照明暗、把发丝层次收成既定固有色块；保留必要轮廓和结构分界，避免把角色画平到失去五官结构。
+
+文件宽度通过只是一项验收，不代表表情、美术一致性、角色绑定或完整操偶关系全部通过。当前最少下一步为：统一发髻／红珠正面遮挡，轻调专注眉心，按正式平涂要求清理光照色块，再实际检查。此处只是明确局部范围；本审查员未执行这些修图，没有新增生成调用，也没有修改仓库。原图维持原始工作稿名称，是否正式采用由后续对齐和 Opus 复核决定。
+
+
+### 实际完整提示词：grandma_turnaround_current01_prompt.txt
+
+SHA256：`058c7ab24f973af9ae33585f1d4113c3f7a9a971c2efe55da68bce0951616818`。
+
+```text
+Create a clean character turnaround sheet for the hand-drawn 2D animated short Lai Dian. Show exactly THREE full-body standing views of the SAME approximately 70-year-old Chinese countryside grandmother from the attached reference, evenly spaced in a single horizontal row: FRONT view on the left, exact RIGHT-FACING SIDE PROFILE in the middle, BACK view on the right. Use the grandmother in the reference as the identity source only. This is an identity and costume sheet. Do not include the reference's puppet, control rods, lantern, strings or working-hand pose.
+
+Keep the same individual: her warm elderly face, softly relaxed cheeks and jaw, small gently rounded nose, thin round glasses, restrained eye-corner lines, grey-white hair swept backward into a LOW bun behind the lower back of the head, and the same red-bead hairpin. Use natural elderly adult body proportions and the reference's body mass and head scale. Her defined height is about 1.5 metres, not a large-headed cartoon child. Keep a mild rounded upper back and slightly forward neck while her waist and pelvis remain supported; relaxed shoulders and stable natural standing posture. The same anatomy must explain all three views.
+
+All three figures stand at exactly the same scale, crown and shoe sole levels aligned, with consistent head size, shoulder width, torso length, hip level, trouser width and bun height. Arms rest naturally down at the sides, slightly clear of the torso where needed for a readable hand outline, without becoming a T pose. Hands relaxed and continuous with the wrists, ordinary elderly hands with natural fingers. Both feet are grounded; full bodies include the complete bun, hands, trouser cuffs and shoes, with margin around every figure.
+
+Preserve her exact costume identity: a light-blue short-sleeved collared BUTTON-FRONT blouse with small WHITE FIVE-PETAL FLOWERS, the simple modest collar and button placket from the reference, side slits at the hem; dark navy full-length wide-leg trousers; plain BLACK cloth slip-on shoes with WHITE soles. Keep the same blouse length, sleeve length and breadth, flower scale, collar structure and trouser silhouette across all views. Flowers are flowers, not white polka dots. The BACK has no front placket or front buttons. The back view naturally explains the low bun and red-bead pin without moving them around for display.
+
+Exactly ONE green jade bangle belongs to her anatomical LEFT wrist, consistently across all views: in the FRONT figure it is on the viewer's RIGHT wrist; in the BACK figure it is on the viewer's LEFT wrist. In the RIGHT-FACING SIDE figure her anatomical RIGHT arm is the near arm and her LEFT arm is the far arm, so the bangle is on the far wrist and may be naturally partly or fully occluded. Do not put a bangle on the near right wrist merely to make it visible. Do not mirror the accessories between views. The glasses remain fine and connected to the ears; side view is strict profile, not a three-quarter view.
+
+Elegant continuous hand-drawn outlines, restrained anatomical detail, simple FLAT local colours with the same palette as the reference, clear designed overlaps. Uniform pale-grey background. No words, captions, labels, frame borders, ground line, cast shadows, glow, gradients, paper texture or scenery. No additional people, extra limbs, props or exposed construction joints. Use a comfortably wide horizontal canvas. Request an original PNG at least 2048 pixels wide if the tool can produce it natively; do not imitate higher resolution by padding or scaling a smaller picture.
+
+```
+
+
+### 实际完整提示词：grandma_expressions_current01_prompt.txt
+
+SHA256：`c4e80ff9ece3df44d804b75eb45a237452eeee1cd832dcc8ac26275dbf9ef799`。
+
+```text
+Create one expression model sheet for the hand-drawn 2D animated short Lai Dian, based on the SAME approximately 70-year-old Chinese countryside grandmother in the attached reference. Three evenly spaced head-and-shoulder portraits in a single horizontal row, all in a consistent FRONT view, with equal head scale, eye baseline, shoulder crop and lighting. From left to right show: a kind gentle smile; a full warm hearty laugh; quiet skilled concentration. There is no text on the image.
+
+Keep the grandmother's identity rather than inventing three different faces: the reference's softly relaxed elderly cheeks and jaw, small gently rounded nose, thin round glasses, restrained eye-corner lines, grey-white hair brushed back into a LOW bun with a red-bead hairpin. Adapt the reference's profile coherently into one shared front-face construction for all three portraits. Keep her natural elderly adult proportions, same face width, eyes, ears, hairline, nose, glasses and wrinkle placement. The low bun stays at the back of the lower head and the pin stays attached there; allow natural frontal occlusion rather than moving the bun or accessory to the top or side just to display it. Keep the same light-blue collared short-sleeved button-front blouse with small WHITE five-petal flowers; show matching neck, collar and upper-shoulder portions in all three portraits.
+
+LEFT: a kindly gentle smile, softly lifted mouth corners and cheeks, living eyes calmly directed forward, light natural smile lines. The mouth can be gently closed. MIDDLE: a spontaneous warm hearty laugh with raised cheeks, eyes naturally narrowing with the smile and the jaw and mouth opening comfortably. Convey humour, not shock. Maintain the same face construction and connected jaw; do not add missing teeth, exaggerated gums or a huge distorted mouth. RIGHT: focused and attentive, the eyes engaged and eyebrows gently collected, mouth naturally closed, keeping a warm capable base expression. This is someone who understands her craft, not an angry or anxious face.
+
+Glasses must remain structurally continuous, with the same fine round rims and plausible bridge and temples in every portrait; lenses must not obscure the eye expressions with opaque shine. Wrinkles may move subtly with the muscles but do not add layers of ageing or switch between youthful and frail faces. The expressions must be distinguishable without labels, while all three are unmistakably the same person.
+
+Include the full crown, both ears and any naturally visible bun in each portrait, with clear breathing room and no overlap. Only head, neck and a consistent small shoulder/collar area; no hands or wrist jewellery in this crop, no puppet, rods, lantern or props. Elegant hand-drawn continuous outlines, simple FLAT local colours, restrained detail matching the reference; uniform pale-grey background. No writing, labels, panels, frame borders, scenery, cast shadows, dramatic lighting, gradients or paper texture. Use a wide horizontal canvas. Request an original PNG at least 2048 pixels wide if the tool can produce it natively; do not imitate higher resolution by padding or scaling a smaller picture.
+
+```
