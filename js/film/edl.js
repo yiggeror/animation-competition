@@ -13,7 +13,7 @@ export const SHOTS = [
   { id: 'S07', scene: 2, line: 'paint', dur: 5, text: '全景：小满往后一倒瘫在竹席上扇风；奶奶起身走向立柜，踮脚摸马灯' },
   { id: 'S08', scene: 2, line: 'code', dur: 6, mod: 'js/code/s08.js', text: '特写：黑暗里"嚓"地划着火柴（画外），奶奶的手把火柴伸到灯芯，甩灭，按下灯罩——暖光铺开' },
   // 第 3 场 · 手电
-  { id: 'S09', scene: 3, line: 'paint', dur: 5, text: '中景（马灯侧光）：小满翻抽屉找到手电，按不亮，拍两下，亮' },
+  { id: 'S09', scene: 3, line: 'code', dur: 5, mod: 'js/code/s09.js', text: '特写（马灯侧光）：小满从抽屉里拿出手电，推开关不亮，拍两下，再推——亮' },
   { id: 'S10', scene: 3, line: 'paint', dur: 5, text: '手电光束扫过屋子，照到奶奶，奶奶眯起眼' },
   // 第 4 场 · 木箱
   { id: 'S12', scene: 4, line: 'paint', dur: 8, text: '中近景：奶奶打开木箱，拿起鹤对着马灯，彩色光斑落在箱盖上' },
