@@ -21,7 +21,7 @@ export const SHOTS = [
   // 第 5 场 · 搭台
   { id: 'S14', scene: 5, line: 'paint', dur: 10, text: '全景：奶奶把床单搭上铁丝、夹衣夹、挂马灯，床单亮起；小满拖板凳坐下，抱起胳膊' },
   // 第 6 场 · 鹤
-  { id: 'S15', scene: 6, line: 'engine', dur: 5, mod: 'js/lamp/s06_key.js', text: '床单正面：鹤亮相，昂首；小满抱着胳膊 → 看呆了' },
+  { id: 'S15', scene: 6, line: 'engine', dur: 8, mod: 'js/lamp/shots/s15.js', text: '床单正面：鹤的大虚影从远处贴近床单、变清楚；亮相，昂首；小满抱着胳膊 → 看呆了' },
   { id: 'S16', scene: 6, line: 'engine', dur: 8, mod: 'js/lamp/shots/s16.js', text: '床单正面：鹤踱步、梳毛、啄水（慢慢推近）' },
   // 第 7 场 · 乌龟
   { id: 'S17', scene: 7, line: 'engine', dur: 14, mod: 'js/lamp/shots/s17.js', text: '床单正面：乌龟爬进来；鹤啄空、一头撞在龟壳上、晕了' },

@@ -152,7 +152,7 @@ export function billboardM(cam, base, ox, oy, sc) {
 }
 
 // 第 6 场的人物卡片：小满坐在小板凳上看鹤
-async function cards06(CARDS, cam, t) {
+export async function cards06(CARDS, cam, t) {
   const c0 = cam.project(xmWorld([0, 0])), depth = c0[2], sc = c0[3] / 100;
   if (DEBUG.xm === 'image') {
     // 小满用画好的图（xm_rig.js）；位置是她坐的地方（凳面中心）。镜头只仰 11°，脚底因此离地面差几厘米，看不出来
