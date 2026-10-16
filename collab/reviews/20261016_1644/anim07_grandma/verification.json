@@ -1,0 +1,122 @@
+{
+  "asset": {
+    "file": "anim_07_grandma_tiptoe.png",
+    "size_bytes": 1529566,
+    "sha256": "f2e2f6ad2cb7b29bb7ba85774deca4bf5cc8b5744ff30f09abc0401b68a4e47d",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "mode": "RGB"
+  },
+  "sources": [
+    {
+      "file": "sources/anim_20_grandma_puppeteer.png",
+      "size_bytes": 1595456,
+      "sha256": "bd9f866b12272119b7e55fa153ce00ecb7ecaa28b14239a14df86bada4310c7d",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "sources/grandma_expressions_current02.png",
+      "size_bytes": 1770557,
+      "sha256": "8394bd5dde841a3202e04f48684d728d5c511317efa1a159c55abe99818b39dd",
+      "dimensions": [
+        2048,
+        768
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "sources/grandma_turnaround_current03_draft.png",
+      "size_bytes": 1406736,
+      "sha256": "ab88b69f5303229af379303a37b6e9e3c8cdb35cd05b3902b604871efb2b1671",
+      "dimensions": [
+        2048,
+        768
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "source_commit": "d609e9dca1f344db9271f70c476b520c759af581",
+  "source_generation_path": "/workspace/scratch/f060b5601755/generated_images/exec-0af5b533-8499-44df-bf53-6ea3e5acf886.png",
+  "native_generated_image_copied_without_pixel_changes": true,
+  "approximate_foreground_bbox_xyxy": [
+    255,
+    31,
+    876,
+    1477
+  ],
+  "bbox_method": "Diagnostic only: pixels with RGB channel spread >28 or maximum RGB <100. Not an exact segmentation or alpha mask.",
+  "approximate_character_height_percent": 94.14,
+  "visual_anchor_estimates_pixels": {
+    "top_fingertip_y": 31,
+    "head_top_y": 176,
+    "lower_right_toe_bottom_y": 1476,
+    "other_toe_bottom_y": 1454
+  },
+  "reach_diagnostic": {
+    "floor_to_head_px": 1300,
+    "floor_to_fingertip_px": 1445,
+    "ratio_fingertip_to_head_height": 1.1115384615384616,
+    "approx_fingertip_height_m_if_head_height_is_1_55m": 1.7228846153846153,
+    "limitation": "Silhouette/card-projection diagnostic, not a reconstructed world-coordinate proof. Camera/depth and body scale must be tested in scene. Result does not establish a 1.90m or 1.98m reach."
+  },
+  "background_samples": {
+    "upper_left": {
+      "median_rgb": [
+        213.0,
+        212.0,
+        214.0
+      ],
+      "min_rgb": [
+        210,
+        210,
+        211
+      ],
+      "max_rgb": [
+        215,
+        214,
+        216
+      ]
+    },
+    "middle_left": {
+      "median_rgb": [
+        212.0,
+        212.0,
+        213.0
+      ],
+      "min_rgb": [
+        210,
+        209,
+        211
+      ],
+      "max_rgb": [
+        214,
+        214,
+        215
+      ]
+    },
+    "lower_right": {
+      "median_rgb": [
+        212.0,
+        211.0,
+        213.0
+      ],
+      "min_rgb": [
+        209,
+        209,
+        210
+      ],
+      "max_rgb": [
+        214,
+        214,
+        215
+      ]
+    }
+  },
+  "git_worktree_status_after": ""
+}
