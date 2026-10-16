@@ -1662,3 +1662,282 @@ SHA256：`581683468dcafc68fa08ae49ee0047c1a5f9c1f89570f97d1cc8a6f284d66412`。
 采用与参考图一致的细而流畅的深棕轮廓线、温暖清楚的手绘二维动画语言；本张使用平整的固有色填充，背景为完全均匀的极浅中性灰。不要文字、标签、水印、地面线、投射阴影、材质纹理、渐变明暗、场景灯光、额外角色、桌子或其他背景道具。不要画关节圆盘、机械接缝、断肢、额外手臂或手掌。
 
 输出一张正方形PNG，使用工具可提供的最高原生分辨率，目标为2048×2048且宽度至少2048像素。不要用放大、插值或补边伪装尺寸；实际文件将另行读取像素尺寸验收。
+
+
+## 2026-10-16 09:53 UTC · 奶奶02/03原图与互审；身份展开继续，机械母版未通过
+
+本条原样交付奶奶 [current02](refs/grandma_puppeteer_side_current02_draft.png) 与 [current03](refs/grandma_puppeteer_side_current03_draft.png)，两张均为原始1536×1024 PNG；未放大、补边或改像素。02移到了偏高颈部且改变上颈颜色；03恢复黑色上颈并降低杆端，但杆在羽翼遮挡前后不共线，亦未确认neck3，因此完整操偶母版仍不通过。下面保留各版本写作时的作者与独立结论，不回改旧文。
+
+两位Astra一致同意公开调整制作顺序：仅批准current01中的**人物身份工作基准**，继续无道具三视图与表情；两次派生编辑不是三份独立验证，也不构成完整操偶母版批准。我们不再为刚性杆进行第四次整图生成。请你按已有握点/腕点预检，在统一世界坐标中从两掌握点分别向body、neck3画完整直杆再作遮挡，复核真实接触与可达性。
+
+尺寸方面，本轮实际工具接口没有原生宽高参数，提示词的2048未兑现。建议后续以人物身份参考完成向量/代码重绘，再原生渲染宽度至少2048的平涂参考；这应是新绘制的原生输出，不能直接插值放大现有位图。该重绘、渲染和验收尚未完成，我们没有修改你的主代码，也没有宣称你已采纳此路径。
+
+小满托腮首稿独立复审确认前倾/肘贴腿问题；随后一次姿势修订在输入审核阶段被工具拒绝，**没有current02图片**，现停止追加调用。成功首稿保留为不通过直背的原始草稿。拒绝分类仅按工具原样记录，不据此判断用户意图或图像内容。原文报告和完整实际修订提示词在下方。
+
+本次拉取时，你最新留言仍为08:10。本条请求你根据已到库实际图片复审身份，并继续精确机械接入；不把尚未收到的回复写成批准。
+
+- `grandma_puppeteer_side_current02_draft.png`：1668582字节，SHA256 `7a7aad9c568ff04da37d8da3d7b71d2322f15b967f9bc44ceab75e8c7ab8f572`。
+
+- `grandma_puppeteer_side_current03_draft.png`：1666867字节，SHA256 `ab3ceb5ea996276564252544b7002cf6156b2b1c036bb8a3ce865f9194da1625`。
+
+
+### 作者原文：astra_grandma_current02_delivery.md
+
+SHA256：`f2d697e73d5eaf495870701c09e24a83e48b2adb2bd43b4be2b3d098418952a8`。
+
+# 奶奶 current02：一次定点编辑结果与作者初看
+
+2026-10-16 UTC，Astra 本次编辑执行者。此处不是最终批准，独立验收交由另一位 Astra 审查员。
+
+已按父级授权，使用内置 `image_gen.imagegen` 对 current01 原图执行一次定点编辑，未发生拒绝。目标是保留人物、手、玉镯、低处身杆、挂灯与构图，只把高处杆改到浅色下颈；完整实际提示词和请求已记录。没有第二次调用，没有为尺寸追加尝试。
+
+输出 `grandma_puppeteer_side_current02_draft.png`：PNG / RGB / **1536×1024**，1,668,582 字节，SHA-256 `7a7aad9c568ff04da37d8da3d7b71d2322f15b967f9bc44ceab75e8c7ab8f572`。工具源 `/workspace/generated_images/exec-71c94cdc-b177-4ba3-87c6-6d7a5993feeb.png` 保留，交付副本逐字节一致。current01 未修改；current02 没有缩放、补边或后处理。宽度仍不足 2048，只能作为原始草稿，正式尺寸未通过。
+
+作者实际看见的结果：人物、双手与灯的整体造型和布局基本保持，较低身杆仍在；原先上杆的路线已经改变，现能看到从高处握手通向颈部的杆。但可见终点落在颈部中上段，明显高于要求的靠近颈根、约第三／第四节浅色下颈；同时上颈原有黑色皮面大部分被改成了浅色分节。不能仅因“杆已经碰到脖子”就称 body/neck3 通过，也不能忽略这项非目标配色变化。
+
+上述是编辑执行者的初看，待独立审查确认具体接点与道具身份保留程度。当前没有批准其为母版或宣布问题解决；也没有未经授权接着追加第三轮。
+
+本次记录：`grandma_current02_edit_prompt.txt`、`grandma_current02_edit_request.json`、`grandma_current02_edit_status.json`、`grandma_current02_edit_result_metadata.json`。工具未披露具体生成模型。本轮没有改动仓库文件。
+
+
+### 作者原文：astra_grandma_current02_independent_review.md
+
+SHA256：`a901f3d6a6d5a8970b73366aa8098cc648d990a2deb27c549d251ad8d929feb8`。
+
+# 奶奶 current02 独立实图复核
+
+2026-10-16 UTC，Astra 原设计负责人；current02 的实际编辑由另一审查员执行，本人没有制作该版本。
+
+**结论：current02 不通过下颈接杆要求，暂不批准为依赖三视图／表情展开的工作基准。** 人物主体、双握位、左腕饰物与挂灯基本保持；不需要推倒人物。接杆错位与鹤颈颜色变化需要一次局部纠正。
+
+实际查看完整 current02、current01，并作未缩放的颈部检查裁切；两原图未改。current02 实测 PNG/RGB、1536×1024、1,668,582 字节，SHA-256 `7a7aad9c568ff04da37d8da3d7b71d2322f15b967f9bc44ceab75e8c7ab8f572`，与交接记录一致。尺寸仍不足正式要求的2048宽，不因尺寸再生成。
+
+已改善：高杆现在从原手掌连续伸到鹤颈，能辨识与身体杆分开的通路；不再只消失在后翼。低杆仍落在身体区域。双手的掌内握持、较高后层腕的绿镯、较低近侧腕无镯、悬挂马灯和奶奶身份没有出现要求重新设计的变化。
+
+未通过的具体点：
+
+1. 高杆终点约在原1536×1024图的 `(1190,145)`，处于颈的中上段。`neck3` 是从身体颈根起的第4节，下颈应明显靠近身体，不能把“接在颈的任意位置”当通过。当前可见终点离头更近，位置不符合预定下颈。
+2. current02 把 current01 原来上段黑色的颈变成几乎全浅黄。现有 `makeCrane` 身份是下4节本色皮、上8节黑色并留一条浅背边；这次不只是移动签子，也改变了道具颜色分区。不能通过把中上颈染浅来满足“下部浅色颈节”的文字。
+
+最小修订：保留全体人物、灯、低杆和两手握位；只移除错误的高杆路线，将其终点下移到原有4节浅色下颈的最上节／接近黑浅分界处。按原图目视约在 `(1183,205)` 附近，辅助目标区域 `x1172–1192, y196–216`；像素是定位辅助，最终以从颈根数第4节和清楚下颈阅读为准，不把此图当精确毫米工程图。高杆应是一条刚性直杆，可被皮影片正常遮挡，但末段需清楚出现并接到下颈；不用让杆折弯或增加第三杆来绕身体。上段黑颈按 current01／原鹤资产恢复，保留其浅背边。
+
+已获父级授权由本人执行一次 current03 局部编辑。它是针对上述实际内容偏差的修订，不为尺寸重生；完整原图、请求和过程记录保留。current03 须再交另一位审查员实际复核，内容通过后才展开奶奶三视图和表情。
+
+
+### 作者原文：astra_grandma_current03_delivery.md
+
+SHA256：`6f9e288bf22e806fef52b38ace8ca8d5d6c5d919f8ad0fdc354e6164ee5c753c`。
+
+# 奶奶 current03 作者实图审查与有界路径调整
+
+2026-10-16 UTC，Astra 奶奶设计负责人。
+
+**current03 已成功返回，但完整操偶母版仍不通过；不再进行第四次整图修杆。经父级明确调度及两位 Astra 一致判断，只批准 current01 中的人物身份作为无道具三视图和表情的工作基准。** 此批准不涵盖双杆机械关系、正式尺寸、角色分层、场景接入或最终资产采用。
+
+## 实际文件与调用
+
+- 原始工具：内置 `image_gen.imagegen`；具体底层模型未披露。一次已授权的 current03 局部编辑，没有拒绝，没有因尺寸再次生成。
+- 提交：2026-10-16 09:46:48 UTC；成功结果回收观察时间：09:48:17 UTC。
+- 工具原文件：`/workspace/generated_images/exec-759b9203-5f9a-4196-868d-42a05be7d28b.png`。
+- 逐字节副本：`grandma_puppeteer_side_current03_draft.png`，PNG/RGB，实测 1536×1024，1,666,867 字节。
+- SHA-256：`ab3ceb5ea996276564252544b7002cf6156b2b1c036bb8a3ce865f9194da1625`。
+- 原始 PNG 没有缩放、补边或像素修改；另存未缩放检查裁切，不能当成正式输出。
+- 实际提示词、请求、状态和返回元数据分别在本目录 `grandma_current03_edit_*` 文件中。
+
+## 实图结论
+
+本人实际查看 current01、current02、current03 原图和颈杆裁切。current03 保持了奶奶的脸、低髻、红珠、眼镜、衣裤鞋、站姿、双手握位、远层左腕绿镯、悬挂马灯与身体杆；上段黑颈也重新出现。
+
+仍不通过的主要问题是高杆跨翼遮挡前后不共线。出手到尾羽处的可见杆段向上较陡，翼上方到颈的可见杆段明显较平，不能把被遮挡的中段想象成同一条刚性直杆。不能因为两个外露部分都直，就称整根杆为刚性直杆。
+
+颈端约在原图 `(1190,185)`，已较 current02 的约 `(1190,145)` 下移，但仍高于本次辅助目标区 `x1172–1192, y196–216`；浅色节数和黑浅分界也没有精确按从颈根起第4节复原。因此只能说更接近下颈，不能声称已核实 `neck3`。这些像素为人工目视定位，不是模型关节坐标测量。当前宽度1536也独立不满足正式PNG至少2048宽要求。
+
+## 公开调整后的制作范围
+
+原先“完整操偶主母版通过后才展开”的顺序，现根据实际结果作有界调整：人物身份在初稿中已可审查，后两次编辑没有需要推倒的人物改变；机械杆的问题交由 Opus 在统一世界坐标中精确重画、绑定并逐帧检查。继续随机整图生成不能替代这项几何工作。本次不自行改 Opus 代码，也不伪造已完成的绑定。
+
+身份主参照选 **current01 人物**。current02/03 是同一初稿的派生编辑，只用于核对连续性，不称三份独立身份验证。获准使用的范围为年龄、脸型与五官倾向、低髻红珠、细圆镜、浅蓝白花短袖开襟衣、藏青宽裤、黑布鞋白底、自然略圆上背及解剖左腕玉镯。正背面尚需在新三视图中补充并互审。
+
+后续各做一次无杆、无鹤、无灯的站立三视图和统一正面三表情，仍标原始工作草稿并由另一位 Astra 实际复审。当前没有完整操偶母版或正式资产通过；正式PNG宽度要求不因本次路径调整而降低。不为尺寸追加生图，不放大或补边。
+
+
+### 作者原文：astra_grandma_current03_independent_review.md
+
+SHA256：`24a0019b653e058b49027bedceb6759ac3c913d3c5fcbeb37e97d79d1713d7e9`。
+
+# 奶奶 current03：独立复审与制作路径判断
+
+2026-10-16 UTC；Astra 独立视觉／技术审查员。当前 03 由另一位 Astra 作者制作，本审查员未参与其实际调用。已实际查看完整 03 PNG、上杆检查裁切及独立颈部裁切，读取完整实际 edit request、status 和 result metadata；与此前实际查看的 01、02 及其审查记录衔接。本报告不修改仓库，不自行增加生成调用。
+
+**完整操偶母版仍不通过。03 恢复了黑色上颈，并把上杆端点下移，但同一根上杆的两个露出部分不共线，且不能确认已准确落在 neck3。可以单独批准奶奶人物身份作为“不持杆三视图／表情”的工作基准；这项有界批准不包含操偶连接、正式尺寸或新视图的预先批准。**
+
+## 实际文件与检查范围
+
+`grandma_puppeteer_side_current03_draft.png`：PNG / RGB，**1536×1024**，1,666,867 字节；SHA-256 `ab3ceb5ea996276564252544b7002cf6156b2b1c036bb8a3ce865f9194da1625`。本审查员用 Pillow 完整读取并独立计算哈希，另将工具源文件 `/workspace/generated_images/exec-759b9203-5f9a-4196-868d-42a05be7d28b.png` 与保存副本逐字节比对一致。原图无修改。
+
+宽度仍不足 2048，因此是原始草稿。`astra_current03_neck_independent_inspection.png` 仅为未缩放的检查裁切，不是新生成稿或正式母版。没有运行动态可达性、杆长恒定或三维遮挡测试。
+
+## 新图确实改善的内容
+
+- 上颈已恢复黑色主体，较 02 的几乎全浅颈更接近 01 的识别结构；不能沿用“03 上颈仍全浅”的旧否定。
+- 上杆可见终端从 02 的中上颈移到了黑浅交界附近。它现在确实画到了颈部，而不是只能猜测藏在翼／尾后面。
+- 奶奶的脸、低发髻、红珠、圆镜、浅蓝白花衬衣、深蓝宽裤、黑鞋白底，以及两只现有握手和挂灯，整体身份连续。低杆仍可追到身部，两个掌握关系保持可读。这些可以保留。
+
+## 仍不通过的具体原因
+
+**P1：上杆在遮挡前后改变方向。** 从高位手掌向尾羽方向延伸的可见竹杆较陡；从翼上方重新露出、伸向颈部的竹杆明显较平。羽翼遮挡可以隐藏一段直杆，却不能让同一根刚性直杆的投影在两侧具有不同方向。无需知道被遮挡段具体画在哪里，也已能判定现有可见片段不能共同属于一条直线。
+
+为支持这一目测，本审查员只对两段露在灰底上的竹杆做了局部像素采样：手侧 x=860/880/900，颈侧 x=1090/1110/1130/1150/1170；按竹色候选像素取每列最长连续段中心，再拟合各自直线。上扬角约 **32° 与 19.5°**，相差约 **12.5°**。这些数字是人工选窗的栅格近似，不是世界坐标或精确亚像素测量；窗口、原始候选、剔除的孤立像素和计算过程完整保存在 `astra_grandma_current03_visible_rod_sampling.py` / `.json`，已实际运行。差异明显大于数像素线宽造成的取点不确定性，支持而不替代目测结论。
+
+**P1：不能把“已降到颈部”写成“neck3 精确通过”。** 实际杆端约在原图 (1188,185) 一带；请求给出的目标在 (1183,205) 附近、优先指定从身部向上第 4 个下颈节。当前浅色区域仍向上延长，黑浅交界不再足以代替固定关节编号。不能靠重新染色把错误杆端解释成目标关节。精确的十二节／下四浅上八黑及 neck3，应回到既有 `makeCrane` 关节坐标核对，不凭这个生成分段反向重定义程序。
+
+**P1：正式文件尺寸仍未达到要求。** 这一点独立于人物或杆线是否满意，不可通过位图放大、补边或只改文件名解决。
+
+## 可以单独批准的身份工作基准
+
+同意协调方公开调整制作顺序：**以 current01 的人物部分为主要身份参考，展开无杆、无灯的奶奶三视图和表情稿。** current02/03 可用于确认局部编辑未明显漂移人物；它们是从同一稿派生的结果，不应被当成三份相互独立的身份验证。
+
+这个工作基准固定：银灰低髻、慈和侧脸与圆眼镜、红珠发饰、浅蓝底白花短袖衬衣、深蓝宽裤、黑色白底布鞋，以及解剖学左腕的玉镯。右向操偶图中高位后侧腕的玉镯位置可沿用为遮挡参考；新三视图必须根据解剖左右重新落实，不能为了把镯子展示出来换到另一腕，也不能把自然遮挡当成漏件。新表情要保持同一年龄、脸部比例和配饰，不因笑怒夸张而换人。
+
+此批准仅说明身份信息足够启动下一项工作。当前人物仍有轻微展示透视、局部明暗，整张并未获得“严格正侧面／全平涂／完整操偶母版”批准。后续无道具三视图仍需检查正面、严格侧面、背面的对应与衣鞋细节；表情仍需独立检查身份。两类新产物的实际分辨率也要单独实测。
+
+## 接入与下一步的有界建议
+
+不建议继续为一条杆反复生成整个人物。保留已稳定的脸、衣鞋、手部和灯，将两根刚性杆交由 Opus 按世界坐标统一绘制：从各掌握点出发，分别直连 body 与既定 neck3；先投影同一根完整直线，再按人物／皮影层级遮挡，不能分别凭眼拼两段。关节接点和手掌握点必须区分腕点；动态如需测试，再检查对应帧的实际可达性和长度变化，不把本张二维图当作动态通过证据。
+
+可行的后续交付路径是由主实现方以人物工作基准完成向量／代码重绘，统一世界坐标后原生渲染至少 2048 宽、符合平涂要求的参考图。这是新绘制的原生渲染，不等于把当前位图插值放大；但仍必须验收实际像素、身份外形、严格朝向、手杆连接及颈节，不能把尚未完成的重绘写成已交付。本审查员没有修改主代码，也没有完成或承诺该项重绘。
+
+本轮结论：人物身份工作基准通过；完整操偶母版、neck3 刚性连接及正式尺寸不通过。下一轮可并行推进身份展开与程序精确杆线，避免人物图无限返工。新三视图／表情仍由本审查员实际独立查看后给结论。
+
+
+### 作者原文：astra_chin_current01_independent_review.md
+
+SHA256：`42dcffbcdc17b746f5a473a0ae523a53217495ac4da3b5a7d3ae29ed6a9cdd79`。
+
+# 小满托腮 current01：独立视觉复审与最小修订意见
+
+2026-10-16 UTC；Astra 独立审查员。本报告是成功生成的独立托腮任务的接续审查，不重建旧审查，也不重试此前被拒的双手置膝任务。审查基于实际完整查看 current01 PNG、读取该次完整 prompt/request/metadata 和作者报告；作者意见用于对照，以下判断由本审查员负责。未修改仓库。
+
+**current01 不能作为合格的“直背托腮”母版。双掌接脸、主要身份和裙面覆盖已经成立，可保留；需要修改的是胸肩前倾及肘落腿面的组合。原生宽度 1254 同时未达正式交付要求。** 这张是可修订的草稿，无须重做角色设计。
+
+## 原图事实与范围
+
+文件：`xiaoman_chin_in_hands_side_current01_draft.png`。本次使用 Pillow 完整读取并重新计算 SHA-256：PNG / RGB，1254×1254，1,465,501 字节；SHA-256 `cacf83d981ffde832aeae1c934e1bd9d1cf27758250bdb99e3f0904da5ff7f19`。原图未编辑。测量记录见 `astra_chin_current01_independent_verification.json`。
+
+此处检查单张绘制的可读关系，不据此宣称真实受力、骨长或坐姿健康获验证；没有运行关节轨迹测试。1254 宽只能草稿，不能把提示词中的 2048 记为实际尺寸，也不能用放大或补边取得原生达标结论。
+
+## 实际可见的保留项
+
+- 近侧掌面和掌根接触下脸颊／下颌，另一只手在下颌另一侧可见，手指顺脸侧伸展。两手共同托脸读得清楚，不需要拆掉这一动作重来。单图只证明接触画得成立，不能量出承重。
+- 朝右的脸、专注略带欣喜的神情、深棕眼、齐刘海、一撮翘发、红绒球束起的低马尾、黄底白点裙及白圆领，维持了小满的主要身份。远侧发束被遮挡，不能因此断言漏画了第二束。
+- 裙布从坐点连续覆到大腿和膝部，小腿从裙下伸出，木凳和两脚完整入画。没有新增桌面、第三只手或额外角色。
+
+## 阻止通过的姿势问题
+
+**P1：躯干和肩向前倾。** 后腰到肩的轮廓是一条大致连续的斜线，不能称为严重圆弓驼背；但肩、胸廓相对坐点明显移向画面右侧，胸廓没有清楚地叠在骨盆上方。头和托脸双手也随之前移。因此，“背线较直”不等于预定的舒展直背。
+
+**P1：双肘的画面支撑关系落到大腿。** 两个肘的最低轮廓与黄色裙面顶端相接，近侧上臂由袖口斜向前下方，前臂从腿面竖起。像素上看不到肘与腿面的分离，整体读成肘撑腿的托腮姿势。不能把实际受力写死，但至少没有表达设计要求的贴身上臂、自然收肘和轻托。
+
+只把头向后平移会破坏手脸接触；只把肘抬高而冻结肩和头，又可能拉长前臂。应作为一次躯干—肩—肘—头手的协调修订，保持正常肢段比例和自然接触。
+
+## 次级偏差
+
+袖口褶边、鞋上的大圆扣和发束长度还需最后与已选身份基准统一；它们不应成为本次更换衣鞋或重画脸的理由。背景和肤色、衣褶仍有轻微明暗层次，尚非严格均匀底和完全平涂。面部侧向清楚，远腿及鞋有一定展示式错位；从这一点不能测出三维偏转角，也不应为露全远侧结构而故意转成四分之三面。上述均排在姿势后。
+
+不能用坐姿外接框推算已经达到站立 5.5–6 头身；本轮不通过缩头、拉长小腿或改变年龄解决姿势。
+
+## 已授权的一次最小修订
+
+保留同一九岁女孩的脸、表情、发型、衣鞋、双掌相对脸部的接触形状、裙覆腿、坐点、木凳和双脚。胸廓与肩向后归到骨盆上方，腰背自然舒展；头与双手协调跟随，避免头单独后移。上臂靠近躯干，双肘收回腰／下肋附近并清楚离开大腿裙面，前臂自然上举接到原来的托脸手形。双肩不耸，肘不抵膝，不新增桌面，不移动凳子掩饰姿势。
+
+协调方已明确授权基于这张成功输出进行一次定点编辑 current02；本报告先保存，再提交这一调用。若工具拒绝则停止；若返回小尺寸，只如实保留草稿，不为尺寸追加尝试。新图由另一名审查员独立复审，本作者不自行批准最终母版。
+
+
+### 作者原文：astra_chin_current02_delivery.md
+
+SHA256：`c3cb0a7b61340b7f69206f9c0f43d64df19fb0d36ed083ebe0ef8cfe5ceaac68`。
+
+# 小满托腮 current02：单次编辑拒绝记录
+
+2026-10-16 UTC；Astra 独立审查员 / 本次修订作者。
+
+**已按授权对成功的托腮 current01 提交一次姿势定点编辑；工具在输入审核阶段拒绝，current02 没有生成图片。此任务停止追加调用。** current01 保持原始草稿状态，未被覆盖。
+
+调用针对同一九岁女孩，保留双掌轻托脸及完整着装，修正胸肩前倾、肘落大腿的姿势。实际 prompt 保存在 `xiaoman_chin_current02_edit_prompt.txt`，完整参数在 `xiaoman_chin_current02_edit_request.json`，引用的唯一图像是已实际查看的 current01 原图。没有更改年龄，没有借用先前被拒的双手置膝任务，也没有绕过本次拒绝。
+
+工具为内置 `image_gen.imagegen`，具体生成模型未披露。此次单次调用返回 HTTP 400，`code: moderation_blocked`；`moderation_stage: input`；类别为 `sexual`。请求 ID：`8267437a-8d31-4761-be2a-2f98a53942c1`。这是工具返回的审核分类记录，不是本报告对用户意图或现有图像的判断。完整错误原文保存在 `xiaoman_chin_current02_edit_error.txt`，提交／结束时间与状态在 `xiaoman_chin_current02_edit_status.json`。
+
+没有可供实测尺寸、哈希或视觉复审的 current02 PNG，也没有尝试换提示、换工具、换角色年龄或重新提交。成功的 current01 及独立报告仍保留；本轮可交付的是原图独立意见、实际修订 prompt／request 与拒绝证据。正确直背托腮母版和正式尺寸均未完成。
+
+
+### 作者原文：astra_grandma_identity_expansion_design.md
+
+SHA256：`c7f7d4537b34f87d7b4ab576c1a75be1063bdcc5dd4415a34381d67666ffeaec`。
+
+# 奶奶身份展开：调用前取舍与实际提示词
+
+2026-10-16 UTC，Astra 设计负责人。
+
+父级在实审 current03 后明确授权调整制作路径，两位 Astra 同意：仅以 current01 **人物身份**作为三视图／表情工作基准，操偶杆和 `neck3` 接点仍不通过。current02/03只作派生连续性，不能算三份独立验证。三视图和表情各执行一次内置 image_gen 调用；任何拒绝准确停止，不换渠道。正式尺寸仍须实测宽度至少2048，低于要求只交草稿，不为尺寸补生。
+
+本次唯一图像输入是已实际查看的 `grandma_puppeteer_side_current01_draft.png`，SHA-256 `936e451bfc472251d61a9a98d34c2dac9201b1f4ed26c16a3e7cef6116300181`。输入中道具和操偶手势不延伸到身份稿。没有用儿童参考图构造奶奶身材或前脸。
+
+三视图：正面／严格朝右侧面／背面，统一头高与脚底线，放松站姿、双臂自然下垂，无灯无杆无鹤。保持低髻、红珠、细圆镜、浅蓝白花短袖开襟衣、藏青宽裤、黑鞋白底。解剖左镯在正面画面右腕、背面画面左腕、右侧面的远腕；侧面可自然被遮挡，不为展示转移到近侧。背面不复制前门襟。原图没有正背面，本次是待互审的合理身份展开，不声称此前已验证其精确结构。
+
+表情：按已通过文字规格采用统一正面、同样头肩裁幅，从左至右慈祥微笑、大笑、专注。变化由眉眼、颊和下颌一起承担，眼镜不随嘴形变形，低髻和簪可自然遮挡。肩部以上无手腕，因此不为了露镯而额外加手。所有侧向如出现应仍朝右，但本张三栏统一正面。
+
+两条完整实际提示词分别独立保存在 `grandma_turnaround_current01_prompt.txt` 与 `grandma_expressions_current01_prompt.txt`；调用请求会逐字使用这些文件，不另有未记录的简化提示。现有工具仅有 prompt、reference paths、透明底开关，没有原生宽高参数；提示词的2048是请求，不是达标证据。
+
+
+### 实际完整提示词：grandma_current02_edit_prompt.txt
+
+SHA256：`ec3b348cd236e45c871c96fdc635ae293d11f71501bcbee36c57f3266fd0802a`。
+
+```text
+Edit the attached Grandma character-design image with ONE localized mechanical correction. Preserve the same grandmother identity, face, hair, red-bead hairpin, thin glasses, blouse and white flowers, trousers, shoes, pose, both arms, both hands and their current grip positions, the green bangle on the higher far wrist, the hanging lantern, the crane silhouette and decoration, and the overall composition and background. Do not redesign or reposition these elements.
+
+There must still be exactly TWO separate thin rigid bamboo rods, each held by its existing hand. Keep the LOWER rod, held by the lower foreground hand, connected to the crane BODY beneath the wing as it currently is.
+
+Correct only the UPPER rod held by the higher hand with the jade bangle. Its current route disappears into the rear wing/tail area, which is incorrect for neck control. Replace that entire incorrect visible route with ONE continuous, straight bamboo rod from the SAME existing palm grip to a clearly visible attachment on the LOWER PALE AMBER SEGMENTED NECK, approximately the third or fourth small neck segment above where the neck meets the body. The endpoint must clearly touch this pale lower-neck segment ABOVE the body/wing silhouette, not the tail feathers, wing, belly, head, beak, or foot. The rod may naturally pass behind the body on its way, but its final segment and distinct lower-neck attachment must visibly emerge and be unambiguous. Preserve a clear separate path for the unchanged body rod. If the two rods cross in projection, show a natural single crossing with clear depth, not a fused or branching junction.
+
+Keep each rod going through the thumb-and-curved-finger grasp in the palm, with the existing finger occlusion; neither rod should end at a wrist. Remove the former wrong upper-rod path rather than retaining it as an extra rod. Exactly two rods total, no fork, no third rod, no new hand. Do not add circles, arrows, labels, explanatory text, scenery, dramatic lighting, or a different camera angle. Keep all existing subjects fully inside the canvas. Output the edited PNG at the highest native resolution available, aiming for at least 2048 pixels wide if supported; do not enlarge or pad a lower-resolution image to meet that number.
+
+```
+
+
+### 实际完整提示词：grandma_current03_edit_prompt.txt
+
+SHA256：`b20d471515d07653a9609d475e5ca4ba2dbbfb716093c5fef39ec4fd30bc3e01`。
+
+```text
+Edit ONLY the FIRST attached image, Grandma current02. Preserve the grandmother exactly: the same face, grey low bun, red beads, glasses, clothing, body pose, both arms, BOTH HANDS and their current palm grasp positions, the jade bangle on the higher far wrist, trousers, shoes, hanging lantern, background, and overall composition. Preserve the entire LOWER bamboo rod and its existing body attachment. Keep the crane body, wing, tail, legs, head and beak unchanged.
+
+Make one localized correction to the UPPER rod and the crane neck. Current02 incorrectly attaches the upper rod halfway or farther up the neck, near pixel (1190,145) on its 1536x1024 canvas. REMOVE that wrong upper route and its high attachment. Its correct endpoint must be much LOWER, close to where the neck emerges from the body: the FOURTH articulated neck segment when counting UPWARD FROM THE BODY, not counting downward from the head. The SECOND attached image, current01, is supplied only to show the correct neck colour divisions: exactly the lowest FOUR neck segments are pale amber leather, and the upper EIGHT segments are black with a narrow pale back edge. Restore that neck colour pattern from current01. Do not recolour the upper neck pale to make a wrong high attachment appear to meet the instruction.
+
+The requested rod endpoint is on the TOPMOST of those FOUR LOWER PALE segments, immediately below the black upper neck, approximately pixel (1183,205), within the local area x1172–1192 and y196–216 in the first image. It sits only a short distance above the body/wing, clearly BELOW the neck midpoint, not near the head. These coordinates are editing guidance only; the visible fourth segment from the body and preserved original black/pale colour boundary are the priority. Do not add coordinate marks, circles, arrows or labels.
+
+Draw ONE thin STRAIGHT rigid bamboo rod from the SAME existing higher palm grasp to that lower-neck attachment. It may pass behind the leather body and wing, but its final emerging segment must visibly reach the specified lower-neck joint. A straight rod naturally occluded by the puppet is correct; a bent rod, branching rod, or extra third rod is not. Keep the existing thumb/finger occlusion at the hand and keep the other body rod independent and unchanged. Remove all remnants of the previous wrong high endpoint and route. Exactly two rods total.
+
+The second image is NOT a replacement composition and its old hidden upper-rod endpoint must not be copied. Use it only for restoring the original black upper-neck and pale lower-neck design. Do not redraw or resize the grandmother, move either hand, change her expression, add props, change the camera, or crop the image. Return a single edited PNG at the highest native resolution supported, requesting at least 2048 pixels wide if possible; never enlarge or pad to claim that width. We will measure the original output separately.
+
+```
+
+
+### 实际完整提示词：xiaoman_chin_current02_edit_prompt.txt
+
+SHA256：`10b0ea4792333b45b5e6aca83ed6ee42b5554692bb1a0bf35faa3eaad4b0e9fd`。
+
+```text
+请对这张已生成的小满托腮图做一次局部姿势修订。她仍然是《来电》里的同一个九岁中国女孩，年龄、身份和画风都不改变。这是一张普通的完整着装角色坐姿参考图。
+
+唯一主要修改目标：把前倾、肘撑大腿的托腮姿势改为自然直背、双手轻托脸颊。保留同一张脸和专注微笑、眼神向右略上、原来的头部尺度、齐刘海、一撮翘发、红绒球短低双马尾。保留黄色白圆点裙、白色彼得潘领、泡泡袖、红凉鞋、低木凳、完整裙覆腿关系及双脚落地。不要换装、改变年龄、放大头或拉长腿。
+
+具体修改躯干和肩臂：保持骨盆在原来的凳面坐点，木凳和下半身的位置基本不动。让胸廓和肩部向后归到骨盆上方，背部自然舒展接近竖直，肩膀放松下沉；不是向前伸着胸肩，也不是僵直挺胸。头和双手作为协调的姿势整体适度随上身后移，使头由自然颈部承托，不要只移动头而让手断开。
+
+保留两只手原本轻托下颌两侧和下脸颊的自然手形、手脸实际接触与柔和指形。重新摆放连接它们的上臂和肘部：上臂向下贴近身体两侧，肘收回腰部／下肋前侧，清楚离开腿上的裙面，画出肘与大腿之间的可见空气间隙；前臂由肘自然斜向上到达托脸的手。用合理的肩—上臂—肘—前臂长度完成这个姿势，不拉长前臂，不耸肩。头只是轻轻靠着手，不把脸挤变形。不要把肘放在膝盖或大腿上，不加桌子或扶手，不通过抬高裙面或挪动木凳掩盖肘撑腿的问题。
+
+仍保持严格朝右的整体侧面，远侧手臂和腿可以合理遮挡；不要为了露全两边转成四分之三面。整个人物、翘发、双手、裙摆、脚和木凳完整入画。保持现有暖色二维动画线条与色彩，不新增配饰、道具、文字或水印。背景均匀极浅灰，避免新增场景或地面投影。除上述姿态协调所需的局部变化，不重设计脸、衣鞋、头发和木凳。
+
+输出一张正方形 PNG。若工具原生能力支持，请使用至少 2048 像素宽的原生输出；不要放大、插值或补边来伪造尺寸。实际文件会另行测量，尺寸不能替代姿态正确。
+
+```
