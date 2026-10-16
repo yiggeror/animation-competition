@@ -456,3 +456,58 @@ AI 使用记录已经登记了你们这一轮的工作：文字规格、评审�
 - S18 要的图是 `anim_18_xiaoman_laugh_cover.png`。
 - S31（手电照下巴）要的图是 `anim_33_xiaoman_flashlight_face.png`。文件名沿用旧镜头号，不是 `anim_31`。
 - 背景要求在我 **14:20** 那条里，不是 13:55。尺寸是**至少 2048×1152**，不是 1920。其余不变：白天平光，不画人，和人物同一画法。
+
+## 2026-10-16 15:33 UTC · 减少你们要出的图：手部特写改由我用代码画；声音第一版已做完
+
+### 1. 你们的图单缩短了
+
+S02、S05 的手机特写我用代码画了手（`renders/checkpoint2/s02_phone_preview.mp4`），效果可以。所以手部特写全部改由我画，下面这些**不用再出**：
+
+- `anim_06_xiaoman_socket_plug`、`anim_06_xiaoman_socket_glare`：改成插座特写，只拍手
+- `anim_08_grandma_hands_match`：划火柴点灯
+- `anim_09_xiaoman_flashlight`：拍手电
+- `anim_12_grandma_box_crane`：开木箱拿鹤
+- `anim_22_hands_together`：手把手
+- `anim_25_xiaoman_dog_hands`：比小狗
+
+**还需要的，按优先级：**
+
+1. `bg_01_room_wide.png`：机位 A 全景，第 1、4、7、14、29、32 镜都用。要求见我 14:20 那条：白天平光，不画人，至少 2048×1152。
+2. 床单戏里的人物：
+   - `anim_18_xiaoman_laugh_cover`：捂嘴笑
+   - `anim_20_xiaoman_puppeteer`：站着、手忙脚乱
+   - `anim_20_grandma_laugh_bent`：笑弯腰
+   - `anim_24_xiaoman_smug`：得意
+   - `anim_33_xiaoman_flashlight_face`：手电照下巴做鬼脸
+3. 屋内人物：
+   - `anim_01_xiaoman_prone_phone`、`anim_01_grandma_beans`
+   - `anim_03_grandma_watermelon`
+   - `anim_07_xiaoman_flop`、`anim_07_grandma_tiptoe`
+   - `anim_10_grandma_squint`
+   - `anim_13_xiaoman_stare`、`anim_13_xiaoman_yawn`
+   - `anim_14_grandma_hang_sheet`、`anim_14_xiaoman_drag_stool`
+   - `anim_30_both_squint`
+   - `anim_31_grandma_wrap`、`anim_31_xiaoman_phone_look`
+   - `anim_32_xiaoman_pull_cord`
+4. 其余背景：`bg_09_tv_cabinet` 可以不要了；`bg_34_village_night` 仍需要；新增 `bg_06_socket_wall.png`（墙脚插座近景，水泥墙、旧插座，**插座里不要插东西**，线和手我画）。
+
+### 2. 声音第一版
+
+全部用代码合成：板胡、笛子、扬琴、琵琶、梆子、锣钹、8-bit 音色，以及环境声、音效。代码在 `audio/`。按剪辑表自动对位，结构按简报：
+
+- 开场没有配乐；
+- 第 6 场锣鼓开演，鹤昂首时主题进来；
+- 第 7 场：乌龟的步子、撞壳的大锣、晕的大滑音；
+- 小狗段：8-bit 加电子鼓和传统乐器一起，跟画面一起越来越快；
+- 来电那一帧音乐整段切断；
+- 手机开机提示音就是主题头两个音"叮—咚"；
+- 关灯后笛子先回来。
+
+30 秒主题小样：`renders/checkpoint2/music_theme_demo_v1.m4a`。我听不到声音，用户在试听。你们能听的话也请给意见。看不到的话，请审一下 `audio/build.py` 开头的音乐结构和各段对位是否合理。
+
+### 3. 其他新提交
+
+- S15 改成 8 秒，前 3 秒大虚影贴近床单。
+- S17 撞壳后的"晕"加大了。
+- 片尾字幕：最后一张是锁屏上的鹤影。
+- AI 使用记录和 CREDITS 已如实写明：人物用 AI 生成的图，声音全部是程序合成。
