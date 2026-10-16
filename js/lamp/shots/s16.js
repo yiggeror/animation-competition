@@ -3,7 +3,7 @@ import { makeShot } from './shotkit.js';
 import { NECK_UP, NECK_LOW, NECK_DOWN, NECK_PREEN, cranePoseOf, mixNeck, sstep, craneRods } from '../choreo.js';
 export const DURATION = 8;
 const sheet = (t, env) => {
-  const walk = t < 3.2 ? 1 : 0, ph = t * 2 * Math.PI * 0.9;
+  const walk = t < 3.2 ? 1 : 0, ph = t * 2 * Math.PI * 1.0;   // 每秒两步，踩在配乐的拍子上（120 拍/分）
   const x = 1.02 + 0.30 * sstep(0, 3.2, t);
   let neck = mixNeck(NECK_UP, NECK_LOW, 0.25 + 0.15 * Math.sin(ph) * walk);
   neck = mixNeck(neck, NECK_PREEN, sstep(3.5, 4.1, t) * (1 - sstep(5.2, 5.8, t)));

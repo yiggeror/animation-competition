@@ -1,4 +1,4 @@
-// 逐帧渲染一个动画模块：node tools/js/frames.cjs <模块> <输出目录> [--fps 24] [--w 1920 --h 1080] [--from 0 --to 末尾] [--workers 3] [--mp4 输出.mp4]
+// 逐帧渲染一个动画模块：node tools/js/frames.cjs <模块> <输出目录> [--fps 24] [--w 1920 --h 1080] [--from 0 --to 末尾] [--workers 3] [--mp4 输出.mp4] [--debug '{"sheetRes":450}']
 // 模块导出 DURATION 和 renderFrame(ctx, t, W, H)。每帧是时间的纯函数，所以可以多个浏览器页面并行。
 const { chromium } = require('playwright');
 const { start } = require('./serve.cjs');
@@ -14,7 +14,7 @@ const fps = +(opt.fps || 24), W = +(opt.w || 1920), H = +(opt.h || 1080), worker
   fs.mkdirSync(outDir, { recursive: true });
   const srv = await start(0);
   const browser = await chromium.launch();
-  const url = `http://127.0.0.1:${srv.address().port}/dev/view.html?mod=${encodeURIComponent(mod)}&w=${W}&h=${H}`;
+  const url = `http://127.0.0.1:${srv.address().port}/dev/view.html?mod=${encodeURIComponent(mod)}&w=${W}&h=${H}` + (opt.debug ? `&debug=${encodeURIComponent(opt.debug)}` : '');
   const open = async () => {
     const page = await browser.newPage({ viewport: { width: 400, height: 300 } });
     page.on('pageerror', (e) => console.log('[pageerror]', e.message));

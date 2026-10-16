@@ -22,7 +22,7 @@ export function sheet(t, env) {
   neckOut *= 1 - sstep(5.75, 5.85, t) + sstep(7.3, 7.8, t);          // 第一次啄：缩头，过一会儿又探出来
   neckOut *= 1 - sstep(8.35, 8.45, t);                                // 第二次啄：又缩
   neckOut += 0.7 * sstep(11.5, 12.6, t) * (1 + 0.08 * Math.sin(t * 9)); // 最后慢慢探出头，一颤一颤（像在笑）
-  const tPose = turtlePose(t, { facing: -1, walk: walking, neckOut: Math.min(1, neckOut), headTilt: 0.1 });
+  const tPose = turtlePose(t, { facing: -1, walk: walking, speed: 1.0, neckOut: Math.min(1, neckOut), headTilt: 0.1 });   // 每秒两步，和配乐的低音步子对上
   // ---- 鹤
   const look = sstep(2.8, 4.2, t);                                     // 发现了，低头看
   const p1 = peck(t, 5.5), p2 = peck(t, 8.2, 0.3, 0.05, 0.25);

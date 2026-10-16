@@ -189,13 +189,13 @@ export async function renderShot(ctx, t, W, H, shot) {
   ];
   const actors = shot.sheet ? shot.sheet(t, { crane, cam, RODS }) : [{ pup: crane, pose: (shot.cranePose || cranePose)(t), root, dist,
     rods: RODS.map((r, i) => ({ ...r, hand: shot.hands ? shot.hands(root, t, cam)[i] : r.hand(root) })) }];
-  const img = sheetImage(sh, lampSP, [...scenery, ...actors], 900, { split: true, rodMin: 0.06, rodA: 0.8, rodFade: 0.05, rodBlur: 1.0, rodBlurMax: 46 });
+  const img = sheetImage(sh, lampSP, [...scenery, ...actors], DEBUG.sheetRes ?? 900, { split: true, rodMin: 0.06, rodA: 0.8, rodFade: 0.05, rodBlur: 1.0, rodBlurMax: 46 });
   const patches = patchRadiance(img.mask, sh, L, flick);
   G.texture('sheet', img.mask);   // 先传上去：sheetImage 的画布是复用的，下面算手电的影子会把它覆盖
   // 手电：shot.flash(t) = { pos:[x, 离床单, z], r（光斑半径）, I, color, actors }，单独投一张影子图
   const fl = shot.flash ? shot.flash(t, { crane, actors }) : null;
   const img2 = fl ? sheetImage(sh, { x: fl.pos[0], z: fl.pos[2], D: fl.pos[1], core: 0.004, globe: 0.02, coreW: 1.0, globeW: 0.4, rgb: [230, 240, 255], I: 1 },
-    fl.actors, 900, { split: true, rodMin: 0.06, rodA: 0.8, rodFade: 0.05, rodBlur: 1.0, rodBlurMax: 46 }) : null;
+    fl.actors, DEBUG.sheetRes ?? 900, { split: true, rodMin: 0.06, rodA: 0.8, rodFade: 0.05, rodBlur: 1.0, rodBlurMax: 46 }) : null;
 
   // 2. 卡片（人物、道具）
   CARDS = CARDS && CARDS.W === W ? CARDS : new Cards(W, H);
@@ -242,7 +242,8 @@ export async function renderShot(ctx, t, W, H, shot) {
   }
   ctx.restore();
 }
-export const DEBUG = { proxy: false, cam: null, xm: 'image' };   // xm：'image' 用画好的图，'code' 用代码画的小满
+// xm：'image' 用画好的图，'code' 用代码画的小满；sheetRes：床单图每米多少像素（默认 900，预览用 450）。预览页可以用 ?debug={...} 预设
+export const DEBUG = { proxy: false, cam: null, xm: 'image', ...(globalThis.__DEBUG || {}) };
 
 // 浮尘：床单前面空气里慢慢飘的灰尘。挡在发光的床单前面时被逆光照亮（前向散射），离床单越近越亮；
 // 落在小满身后（她的轮廓里、比她远）的看不见。

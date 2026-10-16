@@ -11,6 +11,7 @@ const W = +(q.get('w') || 1920), H = +(q.get('h') || 1080);
 const cv = document.getElementById('c'); cv.width = W; cv.height = H;
 const ctx = cv.getContext('2d');
 try {
+  if (q.has('debug')) window.__DEBUG = JSON.parse(q.get('debug'));
   const mod = await import('../' + q.get('mod'));
   await Promise.all([document.fonts.load('40px "Ma Shan Zheng"', '来电'), document.fonts.load('40px "Noto Sans SC"', '来电')]);
   window.DURATION = mod.DURATION || 0;
