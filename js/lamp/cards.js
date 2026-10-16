@@ -157,7 +157,8 @@ export class Cards {
       if (L.clip) {
         ctx.beginPath();
         if (L.clip.invert) ctx.rect(-10, -10, img.width + 20, img.height + 20);
-        L.clip.pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); ctx.closePath();
+        const polys = Array.isArray(L.clip.pts[0][0]) ? L.clip.pts : [L.clip.pts];     // 一个或几个多边形
+        for (const poly of polys) { poly.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); ctx.closePath(); }
         ctx.clip(L.clip.invert ? 'evenodd' : 'nonzero');
       }
       ctx.globalAlpha = L.alpha ?? 1;
@@ -189,6 +190,14 @@ export class Cards {
     } }
     this.cleanMat([{ bbox: [a, b, c, d] }]);
     return [a, b, c, d];
+  }
+  // 一根细杆（比如皮影的竹签）：画面像素的折线，宽 w 像素；法线朝镜头略圆，材质 mat
+  addStroke(pts, w, color, depth, mat = 0) {
+    const path = () => { const p = new Path2D(); pts.forEach(([x, y], i) => (i ? p.lineTo(x, y) : p.moveTo(x, y))); return p; };
+    const go = (ctx, style, lw) => { ctx.save(); ctx.strokeStyle = style; ctx.lineWidth = lw; ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.stroke(path()); ctx.restore(); };
+    go(this.a, color, w);
+    go(this.n, 'rgb(128,128,255)', w);
+    go(this.m, `rgb(${Math.round((depth / 8) * 255)},${mat * MAT_STEP},0)`, w);
   }
   // 材质图上，两种材质交界处抗锯齿会混出中间值（比如皮肤 30 和眼睛高光 120 混成 75，会被当成"布"打光）。
   // 把这些像素换成旁边干净像素的材质号——材质边界不需要抗锯齿，颜色和法线本来就是平滑的。

@@ -47,6 +47,11 @@ function xmProxy() {
 }
 S.occ = xmProxy();
 export const CRANE_ROOT = [1.36, 0.66];
+// 两根签子：接在鹤身子后部（翅膀底下）和第 4 节脖子上；hand(root) 是第 6 场默认的手端 [x, z, 离床单的距离]
+export const RODS = [
+  { part: 'body', at: [-75, 6], hand: (root) => [root[0] - 0.13, root[1] - 0.10, 0.42] },
+  { part: 'neck3', at: [10, 0], hand: (root) => [root[0] + 0.20, root[1] + 0.10, 0.42] },
+];
 
 // ---------------------------------------------------------------- 镜头
 export function camera(W, H, o = {}) {
@@ -73,7 +78,7 @@ const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a)
 const backOut = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); const c = 1.4; return 1 + (c + 1) * Math.pow(u - 1, 3) + c * Math.pow(u - 1, 2); };
 // 鹤亮相：先低着头（像在水里找东西），1.0 秒起慢慢把脖子扬起来（略冲过头再回来），然后左右看看
 export const raiseAt = (t) => backOut(1.0, 2.5, t);
-function cranePose(t) {
+export function cranePose(t) {
   // 预备：扬起之前脖子先往下沉一点（0.55～1.05 秒），再扬起、略冲过头、收住
   const prep = t > 0.55 && t < 1.15 ? Math.sin(Math.PI * Math.min(1, (t - 0.55) / 0.6)) ** 2 : 0;
   const r = raiseAt(t) - 0.14 * prep, angles = {};
@@ -134,13 +139,42 @@ export async function render(ctx, arg, W, H) {
   return renderFrame(ctx, +arg || 0, W, H);
 }
 
-export async function renderFrame(ctx, t, W, H) {
+// 一张画好的图正对镜头放在世界里（卡片垂直于视线）：图片像素 (ox, oy) 落在世界点 base，sc = 每厘米多少像素。
+// 二维画的侧面不会被斜着看压窄，也没有仰视的上下透视，投影就是缩放加平移。返回图片像素 → 画面像素的仿射变换
+export function billboardM(cam, base, ox, oy, sc) {
+  const P = (px, py) => {
+    const x = (px - ox) / sc / 100, y = (oy - py) / sc / 100;
+    const r = cam.project([base[0] + cam.right[0] * x + cam.up[0] * y, base[1] + cam.right[1] * x + cam.up[1] * y, base[2] + cam.right[2] * x + cam.up[2] * y]);
+    return [r[0], r[1]];
+  };
+  const p0 = P(0, 0), p1 = P(100, 0), p2 = P(0, 100);
+  return [(p1[0] - p0[0]) / 100, (p1[1] - p0[1]) / 100, (p2[0] - p0[0]) / 100, (p2[1] - p0[1]) / 100, p0[0], p0[1]];
+}
+
+// 第 6 场的人物卡片：小满坐在小板凳上看鹤
+async function cards06(CARDS, cam, t) {
+  const c0 = cam.project(xmWorld([0, 0])), depth = c0[2], sc = c0[3] / 100;
+  if (DEBUG.xm === 'image') {
+    // 小满用画好的图（xm_rig.js）；位置是她坐的地方（凳面中心）。镜头只仰 11°，脚底因此离地面差几厘米，看不出来
+    XMI ||= await loadRig(RIG16);
+    const R = RIG16, base = xmWorld([0, 0]); base[2] = (R.floorY - R.oy) / R.sc / 100;
+    CARDS.addImage(layers16(R, XMI, billboardM(cam, base, R.ox, R.oy, R.sc), pose16(t)), depth);
+  } else {
+    const map = (p) => { const r = cam.project(xmWorld(p)); return [r[0], r[1]]; };
+    CARDS.addAll(XMC.parts(map, xmPose(t), sc), depth);
+  }
+}
+
+export async function renderFrame(ctx, t, W, H) { return renderShot(ctx, t, W, H, {}); }
+
+// 床单戏的通用渲染：shot = { cam, cards(CARDS, cam, t), hands(root, t) → 两根签子的手端 [x, z, 离床单], cranePose(t), afterCards(CARDS, cam, t) }
+export async function renderShot(ctx, t, W, H, shot) {
   const pal = DEBUG.palette || 'plain';
   if (cranePal !== pal) { crane = makeCrane(1.35, pal); cranePal = pal; }
   POND ||= makePond(); WILLOW ||= makeWillow();
   if (!G || G.W !== W || G.H !== H) G = new GL(W, H);
   QUILTS ||= { L: quiltTex('L'), R: quiltTex('R') };
-  const cam = camera(W, H, DEBUG.cam || {});
+  const cam = camera(W, H, DEBUG.cam || shot.cam || {});
   const flick = 1 + 0.035 * Math.sin(t * 13.1) + 0.025 * Math.sin(t * 7.3 + 1.1) + 0.02 * Math.sin(t * 23.7);
 
   // 1. 床单：物理影子图
@@ -151,32 +185,14 @@ export async function renderFrame(ctx, t, W, H) {
   const img = sheetImage(sh, lampSP, [
     { pup: POND, pose: still, root: [1.30, 0.34], dist: 0.003 },
     { pup: WILLOW, pose: { ...still, rootAngle: -0.03 }, root: [sh.x0 + 0.05, sh.z1 - 0.13], dist: 0.003 },
-    { pup: crane, pose: cranePose(t), root, dist,
-    rods: [{ part: 'body', at: [-75, 6], hand: [root[0] - 0.13, root[1] - 0.10, 0.42] }, { part: 'neck3', at: [10, 0], hand: [root[0] + 0.20, root[1] + 0.10, 0.42] }] }], 900, { split: true, rodMin: 0.06, rodA: 0.8, rodFade: 0.05, rodBlur: 1.0, rodBlurMax: 46 });
+    { pup: crane, pose: (shot.cranePose || cranePose)(t), root, dist,
+    rods: RODS.map((r, i) => ({ ...r, hand: shot.hands ? shot.hands(root, t, cam)[i] : r.hand(root) })) }], 900, { split: true, rodMin: 0.06, rodA: 0.8, rodFade: 0.05, rodBlur: 1.0, rodBlurMax: 46 });
   const patches = patchRadiance(img.mask, sh, L, flick);
 
   // 2. 卡片（人物、道具）
   CARDS = CARDS && CARDS.W === W ? CARDS : new Cards(W, H);
   CARDS.clear();
-  {
-    const c0 = cam.project(xmWorld([0, 0])), depth = c0[2], sc = c0[3] / 100;
-    const map = (p) => { const r = cam.project(xmWorld(p)); return [r[0], r[1]]; };
-    if (DEBUG.xm === 'image') {
-      // 小满用画好的图（xm_rig.js）：图片像素 → 局部厘米 → 世界 → 画面
-      XMI ||= await loadRig(RIG16);
-      // 卡片垂直于镜头的视线（正对镜头）：二维画的侧面不会被斜着看压窄，也没有仰视的上下透视，投影就是缩放加平移。
-      // 位置还是她坐的地方（凳面中心）。镜头只仰 11°，脚底因此离地面差几厘米，看不出来
-      const R = RIG16, seat = (R.floorY - R.oy) / R.sc / 100, base = xmWorld([0, 0]); base[2] = seat;
-      const P = (px, py) => {
-        const x = (px - R.ox) / R.sc / 100, y = (R.oy - py) / R.sc / 100;
-        const r = cam.project([base[0] + cam.right[0] * x + cam.up[0] * y, base[1] + cam.right[1] * x + cam.up[1] * y, base[2] + cam.right[2] * x + cam.up[2] * y]);
-        return [r[0], r[1]];
-      };
-      const p0 = P(0, 0), p1 = P(100, 0), p2 = P(0, 100);
-      const m = [(p1[0] - p0[0]) / 100, (p1[1] - p0[1]) / 100, (p2[0] - p0[0]) / 100, (p2[1] - p0[1]) / 100, p0[0], p0[1]];
-      CARDS.addImage(layers16(R, XMI, m, pose16(t)), depth);
-    } else CARDS.addAll(XMC.parts(map, xmPose(t), sc), depth);
-  }
+  await (shot.cards || cards06)(CARDS, cam, t, { root, crane, flick });
   const cards = { alb: CARDS.alb, nrm: CARDS.nrm, mat: CARDS.mat };
 
   // 3. 上传、逐遍渲染
@@ -209,7 +225,7 @@ export async function renderFrame(ctx, t, W, H) {
     return b;
   };
   const b4 = blur(d4, 'b4'), b8 = blur(d8, 'b8'), b16 = blur(d16, 'b16');
-  gl.draw('final', null, { uRes: [W, H], uExp: 4.0 * (DEBUG.exp ?? 1), uTime: t, uBloom: 0.10 * (DEBUG.bloom ?? 1) }, { uSrc: tComb, uB1: b4, uB2: b8, uB3: b16 });
+  gl.draw('final', null, { uRes: [W, H], uExp: 4.0 * (DEBUG.exp ?? shot.exp ?? 1), uTime: t, uBloom: 0.10 * (DEBUG.bloom ?? 1) }, { uSrc: tComb, uB1: b4, uB2: b8, uB3: b16 });
   ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0);
   ctx.drawImage(gl.cv, 0, 0);
   if (DEBUG.proxy) {   // 调试：把人物的遮挡球投到画面上，看构图

@@ -113,6 +113,17 @@ vec3 lampE(vec3 P, vec3 N) {
   if (c <= 0.0) return vec3(0);
   return LAMP_RGB * uLampI * c / r2 * lampVis(P);
 }
+// 卡片（人物）受马灯照：后台的人物卡片不被代表她自己身体的遮挡球挡（不然自己把自己照得斑斑驳驳）
+// 卡片是一张正对镜头的二维画：灯在卡片背面（比人离镜头还远）时，把灯的方向沿卡片平面镜像到正面——
+// 画里的人是侧着身子朝灯的，朝灯那一侧（脸、手）就该被照亮；不镜像的话只有法线偏向灯的小块被照到，斑斑驳驳
+vec3 lampEcard(vec3 P, vec3 N) {
+  if (P.y < 0.0) return lampE(P, N);
+  vec3 d = uLamp - P; float r2 = dot(d, d); vec3 l = d * inversesqrt(r2);
+  vec3 cn = -uFwd; float k = 1.0;
+  if (dot(l, cn) < 0.0) { l = normalize(l - 2.0 * dot(l, cn) * cn); k = 0.85; }
+  float c = max(0.0, dot(N, l));
+  return LAMP_RGB * uLampI * k * c / r2 * beamsVis(P, uLamp);
+}
 // ---------------- 床单这块面光源对 P 的照度（只照看戏的这边）
 vec3 patchCenter(int i, int j) {
   float x = SHEET.x + (float(i) + 0.5) * (SHEET.y - SHEET.x) / 8.0;
@@ -223,11 +234,12 @@ vec3 shadeDiffuse(vec3 P, vec3 N, vec3 alb, bool shadows) {
 // ---------------- 卡片（人物、道具）
 vec3 shadeCard(vec3 P, vec3 N, vec3 V, vec3 alb, float mat, float extra) {
   int m = int(mat * 255.0 / 30.0 + 0.5);   // cards.js 里材质号 × 30 存的
+  if (m == 8) return alb * (1.0 + 7.0 * extra) * uLampI;   // 自己发光（马灯的火苗和玻璃罩），亮度随火苗闪
   float wrap = m == 1 ? 0.6 : (m == 2 ? 0.3 : 0.55);
   // 地面反光：床单前面被照亮的地面把暖光从下往上反到人身上（离床单越近越亮）
   vec3 fl = vec3(P.x + 0.25, -0.35, 0.0) - P; vec3 fw = normalize(fl);
   vec3 bounce = LAMP_RGB * ${S.bounce} * (m == 3 ? 1.6 : 1.0) * max(0.0, (dot(N, fw) + 0.5) / 1.5) * smoothstep(-3.0, -0.5, P.y);
-  vec3 E = sheetE(P, N, wrap, false) * ${S.cardSheetGain} + lampE(P, N) + moonE(P, N, false) * (m == 3 ? 0.15 : 0.3) + ambient(P, N) * 1.5 + bounce;
+  vec3 E = sheetE(P, N, wrap, false) * ${S.cardSheetGain} + lampEcard(P, N) + moonE(P, N, false) * (m == 3 ? 0.15 : 0.3) + ambient(P, N) * 1.5 + bounce;
   if (m == 1) E += LAMP_RGB * 0.02 + vec3(0.014, 0.005, 0.002);
   if (m == 3) E += LAMP_RGB * 0.012;   // 皮肤：暗部也透着一点暖（皮下散射）
   vec3 c = alb * E / PI;
@@ -257,7 +269,7 @@ void main() {
   vec3 bn; float tb = beamHit(ro, rd, bn);
   vec3 col; float depth;
   // 布帘平面
-  float tc = rd.y > 0.0 ? -ro.y / rd.y : 1e9;
+  float tc = ro.y * rd.y < 0.0 ? -ro.y / rd.y : 1e9;   // 从前面或后台都能看到床单所在的平面
   int kind = 0;   // 0 屋子 1 床单 2 左被 3 右毯 4 铁丝 5 夹子 6 房梁
   vec2 q;
   if (tb < t) { t = tb; n = bn; kind = 6; }
@@ -288,6 +300,8 @@ void main() {
        + pow(texture(uSheet, suv + vec2(0, du.y)).rgb, vec3(2.2)) + pow(texture(uSheet, suv - vec2(0, du.y)).rgb, vec3(2.2))) * 0.15;
     msk = mix(msk, vec3(dot(msk, vec3(0.3, 0.5, 0.2))), 0.15);
     vec3 s = vec3(diff + hot, diff + hot * 0.92, diff + hot * 0.8) * LAMP_RGB * msk;
+    // 从后台看：床单这一面直接被马灯照着（棉布反射约 0.7，比透过去的亮），没有"透过布看见灯芯"的那团亮；影子一样
+    if (ro.y > 0.0) s = vec3(diff * (0.7 / ${S.sheetTau}) / PI + hot * 0.08) * LAMP_RGB * msk;
     // 挂起来的褶：上沿夹子之间往下垂的弧形褶，下沿轻微的波浪；棉布在褶子处厚一点、暗一点
     float fold = 0.5 + 0.5 * sin((q.x - PIN0) / PINDX * 2.0 * PI);
     float topFold = exp(-(sheetTop(q.x) - q.y) * 9.0) * fold;
