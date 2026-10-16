@@ -5,7 +5,7 @@ export async function render(ctx, arg, W, H) {
   const pup = makeCrane();
   const NECK_UP = [1.25, 0.10, 0.08, 0.06, 0.03, 0.0, -0.04, -0.07, -0.09, -0.10, -0.09, -0.07, -0.55];
   const angles = {}; NECK_UP.slice(0, 12).forEach((a, i) => (angles['neck' + i] = a));
-  Object.assign(angles, { head: NECK_UP[12], tibia_near: 0.55, tarsus_near: -1.25, foot_near: 0.55, tibia_far: -0.05, tarsus_far: 0.02, foot_far: 0.03 });
+  Object.assign(angles, { head: NECK_UP[12], tibia_near: 1.15, tarsus_near: -2.5, foot_near: 1.15, tibia_far: -0.05, tarsus_far: 0.02, foot_far: 0.03 });
   const pose = { angles, rootAngle: 0.04, facing: 1 };
   const g = ctx.createRadialGradient(W * 0.3, H * 0.35, 0, W * 0.3, H * 0.35, W * 0.4);
   g.addColorStop(0, '#fff6dc'); g.addColorStop(1, '#e8b870');

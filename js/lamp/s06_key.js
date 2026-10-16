@@ -73,13 +73,15 @@ const backOut = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - 
 // 鹤亮相：先低着头（像在水里找东西），1.0 秒起慢慢把脖子扬起来（略冲过头再回来），然后左右看看
 export const raiseAt = (t) => backOut(1.0, 2.5, t);
 function cranePose(t) {
-  const r = raiseAt(t), angles = {};
+  // 预备：扬起之前脖子先往下沉一点（0.55～1.05 秒），再扬起、略冲过头、收住
+  const prep = t > 0.55 && t < 1.15 ? Math.sin(Math.PI * Math.min(1, (t - 0.55) / 0.6)) ** 2 : 0;
+  const r = raiseAt(t) - 0.14 * prep, angles = {};
   for (let i = 0; i < 12; i++) angles['neck' + i] = NECK_LOW[i] + (NECK_UP[i] - NECK_LOW[i]) * r;
   const look = t > 2.5 ? 0.07 * Math.sin((t - 2.5) * 2.2) * Math.exp(-(t - 2.5) * 0.25) : 0;
   // 抬起的那条腿没装签子，身子一动它就跟着晃（惯性），慢慢停下来——皮影动作的"韵味"
   const swing = 0.10 * Math.sin((t - 1.0) * 5.2) * Math.exp(-Math.max(0, t - 1.0) * 0.9) * (t > 1.0 ? 1 : 0);
   Object.assign(angles, { head: NECK_LOW[12] + (NECK_UP[12] - NECK_LOW[12]) * r + look,
-    tibia_near: 0.55 + swing, tarsus_near: -1.25 - swing * 0.6, foot_near: 0.55 + swing * 0.4, tibia_far: -0.05, tarsus_far: 0.02, foot_far: 0.03 });
+    tibia_near: 1.15 + swing, tarsus_near: -2.5 - swing * 0.6, foot_near: 1.15 + swing * 0.4, tibia_far: -0.05, tarsus_far: 0.02, foot_far: 0.03 });
   return { angles, rootAngle: 0.04 + 0.05 * (1 - Math.min(1, r)), facing: 1 };
 }
 // ---------------------------------------------------------------- 被子、毯子的花色（2D 画）
@@ -149,7 +151,7 @@ export async function renderFrame(ctx, t, W, H) {
     { pup: POND, pose: still, root: [1.30, 0.34], dist: 0.003 },
     { pup: WILLOW, pose: { ...still, rootAngle: -0.03 }, root: [sh.x0 + 0.05, sh.z1 - 0.13], dist: 0.003 },
     { pup: crane, pose: cranePose(t), root, dist,
-    rods: [{ part: 'body', at: [10, 8], hand: [root[0] - 0.02, root[1] - 0.10, 0.42] }, { part: 'neck3', at: [10, 0], hand: [root[0] + 0.20, root[1] + 0.10, 0.42] }] }], 900, { split: true, rodMin: 0.06, rodA: 0.8, rodFade: 0.05, rodBlur: 1.0, rodBlurMax: 46 });
+    rods: [{ part: 'body', at: [-75, 6], hand: [root[0] - 0.13, root[1] - 0.10, 0.42] }, { part: 'neck3', at: [10, 0], hand: [root[0] + 0.20, root[1] + 0.10, 0.42] }] }], 900, { split: true, rodMin: 0.06, rodA: 0.8, rodFade: 0.05, rodBlur: 1.0, rodBlurMax: 46 });
   const patches = patchRadiance(img.mask, sh, L, flick);
 
   // 2. 卡片（人物、道具）
