@@ -2623,3 +2623,210 @@ Flat base-colour targets: skin #FED4B8, hair #C4C0BD, blouse #8DB0DA, trousers #
 Change the old 2:1 sheet into a newly drawn 8:3 sheet. Distribute the THREE COMPLETE FULL-BODY figures evenly across its width, equal in scale and aligned at crown and soles; let their full height occupy about 90 percent of the 768-pixel canvas with safe margins. Keep normal separation and all hands, buns and shoes complete. Use the whole three-column layout rather than leaving an unused extension at either edge. Do not crop, stretch or enlarge the old bitmap, do not add grey padding to it, and do not add extra empty panels to claim a larger width. Redraw the corrected figures at the new native resolution. Output an original PNG at least 2048 pixels wide if supported; its actual returned dimensions will be measured.
 
 ```
+
+
+## 2026-10-16 10:26 UTC · 奶奶本轮定稿范围、精确填色交接与赛事背景原文
+
+新增原始参考文件：`collab/refs/grandma_turnaround_current04_draft.png`，2048×768，1642706字节，SHA256 `e81ec3d917282b3d9ce32fcca3f9df9141b7a30cc701147822654b4a099a13df`。仍为草稿；源与副本逐字节相同。
+
+
+### 团队交付原文：root_refine_round_final_delivery.md
+
+SHA256：`0606d8c3150d124a25f0d7fafe5fcd5169e483fc684452b3b64669998eb26bc3`。以下按原文追加。
+
+# 本轮最终交付：表情通过，三视图03留作工作基准
+
+两位Astra已完成交叉审查，结论一致：表情02通过单张设计参考验收；三视图03与04均保留草稿。三视图04虽然实际返回原生2048×768，却未去掉两处已定位的颈影，并使非目标肤色略变浅，因此供用户与Opus继续使用的三视图工作基准仍选择03。所有原始版本保留。当前没有运行中的生图，不再生成05。
+
+本轮表达图与三视图03／04的原生宽度均实测达标；没有本地放大、补边或改原图像素。三视图完整平涂尚未达标，操偶主母版也仍未通过。下附作者和独立审查的两份局部填色请求均按原文保留，具体坐标基于03原始2048×768图，只作皮肤形状定位，不能整框涂抹，也不能当成世界坐标。请Opus按真实皮肤轮廓落实同色填充，并与上一条body/neck3和掌握点的机械请求一起推进；回交实际文件后再复审。
+
+## 可直接打开的原图
+
+- [奶奶表情02：单张设计参考通过，2048×768](https://raw.githubusercontent.com/yiggeror/animation-competition/0f6b22c84a8e8af52b006bd7e6a36aca06cacc3a/collab/refs/grandma_expressions_current02.png)
+- [奶奶三视图03：工作草稿，2048×768](https://raw.githubusercontent.com/yiggeror/animation-competition/0f6b22c84a8e8af52b006bd7e6a36aca06cacc3a/collab/refs/grandma_turnaround_current03_draft.png)
+
+两条地址均已实际GET验证HTTP200、image/png，返回字节与生成原图逐字节相同。它们不是Library预览文件ID。
+
+本轮尝试按Library的批量准备上传流程保存上述两张预览，上传助手在宿主工具服务的tools/list阶段返回HTTP401，进程退出1，标准输出文件为0字节；未取得任何Library文件ID。此前普通Library搜索成功，故这里只报告上传助手认证失败，不把它推断成用户整个Library账号已断开。没有自动重试或改用其他上传通道，没有把尝试说成保存成功。
+
+## 赛事背景与接续顺序
+
+协调方的新赛事背景全文另附，不改写。本人已实际打开[官网2026赛事进程](https://www.cmit.cn/)和[10月15日材料通知](https://www.cmit.cn/html/tongzhigonggao/show-144-45835-1.html)核对，内容与补充一致。官网列报名及作品提交截至10月23日23:59:59，页面未标时区；不根据本环境UTC时区自行推算截止瞬间，校内安排和用户报名状态仍未知。
+
+团队排期判断：固定已成立的人物身份与表情，优先把两块明确填色和操偶世界几何落到实际后台静帧、3–5秒动作及验证证据，再继续后续镜头与材料整理。此次停止无进步的整图迭代，是因为已有准确可执行的实现请求；图稿通过标准保持不变。
+
+保留每次实际提示词、调用与来源、原始PNG、版本哈希、作者与独立审查，区分AI生成、代码绘制与后续人工处理。Opus的局部填色或向量重绘应另存派生文件，并如实登记采用范围。学生原创贡献、报名与系统提交状态不能由这些AI工作记录推定，仍以实际人员和系统证据填写。按官方材料通知准备评审材料及匿名化；已有完整成片时不另做重复展示片，本轮不宣称完整成片或参赛材料已完成。
+
+
+### 协调方补充原文：parent_competition_context_original_20261016.md
+
+SHA256：`cdb1d9258e1c159a61294322adeba9d7184fd3a17d7213f836620619ddcd5fb3`。以下按原文追加。
+
+补充已核实的赛事背景，供团队和 Opus 排期判断，不改变用户的创作要求：官网 https://www.cmit.cn/ 的 2026 赛事进程列报名及作品提交截至 10 月 23 日 23:59:59（页面未标时区，校内更早截止及用户报名状态未知）。10 月 15 日通知 https://www.cmit.cn/html/tongzhigonggao/show-144-45835-1.html 要求评审视频或汇报 PPT 至少一项、成果纳入打包文件、评审材料匿名化、系统提交审核；AI 工具、环节、人工处理和学生贡献需如实填报。已有完整成片无需重复制作展示视频。请在既有项目判断中考虑时间和材料需求，保持生成与人工修改来源记录；是否调整工作排序由你们判断。
+
+
+### 团队交付原文：astra_grandma_turnaround_current04_design.md
+
+SHA256：`e3c7604b631c1ccb60fe7ded9e95d9912ca09925f4bd84438fbe89a0927691ab`。以下按原文追加。
+
+# 奶奶三视图 current04：两处颈影限定清理
+
+2026-10-16 UTC，Astra 设计负责人。
+
+父级已明确授权一次最小编辑。03正式宽度、人物身份、髻簪与镯归属、布局和发亮带清理均保留；唯一目标为正面颈下橙色带和侧颈小橙影。独立审查员与本人已实际查看未缩放颈部裁切并取样确认，残留不是微小栅格波动。
+
+唯一引用是实际查看过的 `grandma_turnaround_current03_draft.png`，原生2048×768。像素定位以左上为原点：正面下颌／颈部检查框约 `x500–566, y164–212`，侧面颈部检查框约 `x996–1051, y147–195`。这些框只是让生成器找到目标，绝不是把框内下颌线、衣领或所有细节涂掉。只将橙色投影填充替换为邻近未遮颈的肤色，约 `#FED2B1`，具体以现图相邻肤色为准。
+
+保留原始2048×768画布、全部人物位置和像素高，不再次改分栏，不动脸、发、衣、手、镯、簪、轮廓、背景。去影后仍留细的下颌轮廓与必要颈线，不另加高光或模糊遮盖。
+
+请求只针对上述两块，使用短而明确的实际提示词，另存 `grandma_turnaround_current04_prompt.txt`。返回后仍实测原始尺寸、比对源副本和哈希，并由另一位Astra检查有无非目标改变；不由作者自行批准。
+
+若这个精确局部请求仍失效，按父级边界交Opus完成两块同色几何填充，不继续整图随机重生。所有版本保留，不进行本地位图放大或补边。
+
+
+### 团队交付原文：astra_grandma_turnaround_current04_delivery.md
+
+SHA256：`43879b134a26b17b4c822e96d466ad8bd4d4a083160e32b118e800374902c8cf`。以下按原文追加。
+
+# 奶奶三视图 current04：作者交付与定点编辑结果
+
+2026-10-16 UTC，Astra 奶奶设计负责人。
+
+**current04 成功返回原始2048×768 PNG，但两处颈部去影请求没有充分兑现，正面颈下橙色带仍明确存在。完整平涂继续不通过。** 按父级事先明确的边界，本任务不再生成current05；将颈部同色几何填充交给Opus。原图、实际请求和失败的内容目标均如实保留。
+
+## 原始文件与实际调用
+
+- 内置 `image_gen.imagegen`，一次明确授权的精确局部编辑，底层模型未披露；没有审核拒绝或环境错误。
+- 提交：2026-10-16 10:20:43 UTC；成功结果回收记录：10:21:43 UTC。
+- 工具原文件：`/workspace/generated_images/exec-dfc3a044-2277-42a6-86a1-101d730f3f3d.png`。
+- 原样副本：`grandma_turnaround_current04_draft.png`，PNG/RGB，**2048×768**，1,642,706 字节。
+- SHA-256：`e81ec3d917282b3d9ce32fcca3f9df9141b7a30cc701147822654b4a099a13df`。
+- 原样副本与工具源文件逐字节相同，没有缩放、补边、重编码或原图像素修改。独立保存的原大小检查裁切不作为交付图。
+- 完整短提示词、请求、状态和元数据见本目录 `grandma_turnaround_current04_*` 文件。提示词明确给出正／侧颈部的上下文框及实际橙影小范围，并要求保留全部下颌线、颈线和蓝领。
+
+## 实际检查
+
+本人实际查看完整输出和正／侧颈部原大小裁切。三栏构图、完整人物、左右腕镯、低髻红珠和主要衣装仍保持；此前已去掉的大片白发亮带没有整体恢复。原生宽度也保持达标。
+
+**前颈目标仍失败。** 原PNG约 `(540,182)` 的3×3中位RGB为 `[253,177,140]`，邻近正常下颈 `(535,195)` 为 `[254,218,190]`，差异约G41／B50；可见橙带位于连续皮肤区域，不是黑色下颌轮廓线，也不是几个灰度级噪声。原大小裁切仍能直接看见它。侧颈小片也仍有局部色块阅读；仅前颈一项已足以使本次“两个区域填为相邻肤色”的目标不通过。取样记录为 `grandma_turnaround_current04_neck_sampling.json`。
+
+不能通过“输出文件生成成功”推导“编辑要求完成”，也不能把更柔的阴影改名成固有色。
+
+## 非目标变化与版本取舍
+
+04虽被要求只改两个小区域，实际肤色在其他位置也略变浅。以相同原图坐标小区为例，03额头约 `[254,210,178]`，04约 `[254,216,187]`；03前臂约 `[254,211,178]`，04约 `[254,218,188]`。这不是完全换人，但说明“其它像素完全不变”的请求也不能被当成实际事实。
+
+作者建议后续精确绘制以 **current03** 为主要三视图基准：它已经具备原生2048宽、完整布局和较接近表情02的肤色；04没有解除颈影，又引入无关肤色偏移。04仍应作为真实尝试保留和交付记录，不自动升为比03更好的正式稿。版本取舍由另一位Astra独立复核后再共同确定。
+
+## 有界后续
+
+交接文件 `grandma_neck_flatfill_handoff_current03.md` 指定03的两个颈部皮肤区域、保留线条和相邻固有色依据。Opus可在自己的向量／几何重绘中让整块颈皮肤使用同一固有色，或对原参考做准确局部处理；本报告没有冒称该处理已经发生。
+
+本轮完成的是原始PNG回收、宽度检查、针对性编辑结果核验与可执行局部交接。当前整套人物身份参考已有可用内容，表情02已通过独立视觉内容复核；三视图完整平涂、操偶刚性杆与neck3、最终资产采用仍分别待完成。没有继续尝试被拒的小满任务，没有改仓库。
+
+
+### 团队交付原文：astra_grandma_turnaround_current04_independent_review.md
+
+SHA256：`a1ffca9ae353fc41e5150d82c2bcff9278ee741a2eac81d3bbb0bf1abce137b4`。以下按原文追加。
+
+# 奶奶三视图 current04：独立复审与工作基准选择
+
+2026-10-16 UTC；Astra 独立审查员。
+
+**04的两处颈部光照残留仍未清除，整张平涂不通过；停止追加05。当前最佳三视图工作基准仍选03，而不是自动选择最新04。** 已通过的表情02保持单张设计参考通过，三视图03／04均保留draft状态。
+
+## 实际核验
+
+实际完整查看04与两张未缩放颈部检查裁切，读取完整实际request、status、metadata，与已看过的03及表情02对照。独立完整读取原PNG并计算：RGB，**2048×768**，1,642,706字节；SHA-256 `e81ec3d917282b3d9ce32fcca3f9df9141b7a30cc701147822654b4a099a13df`。工具源 `exec-dfc3a044-2277-42a6-86a1-101d730f3f3d.png` 与保存副本逐字节一致，未放大、补边或做本地像素改动。
+
+核验及同坐标03／04的局部像素对照保存在 `astra_grandma_turnaround_current04_verification.json`。只检查实际图像与少量定点像素，没有宣称执行了整图精确分割、三维测试或其他未运行检查。
+
+## 两处定点目标仍未解决
+
+正面下颌下仍有橙色带，侧面耳后至领根仍有小橙色片；在完整图及原尺寸裁切都可读为投影。04原图坐标的3×3中位值如下：
+
+| 位置 | 颈部暗区RGB | 邻近影外肤色RGB |
+|---|---|---|
+| 正面 `(540,182)` 对 `(535,195)` | `[253,177,140]` | `[254,218,190]` |
+| 侧面 `(1035,165)` 对 `(1035,175)` | `[253,189,159]` | `[255,222,195]` |
+
+通道相差约30至50级，且形状对应下颌投影，不能归入轮廓抗锯齿或低幅背景噪声。它们也不是衣服图案、镜框或必要结构色块。清除了发亮带和达到了2048宽，并不能替这两处目标取得通过。
+
+## 03与04比较，为什么保留03为工作基准
+
+04保持三位完整人物、布局、脸／镜框／低髻、发簪归属、左右镯、衣鞋和手势，没有发现会推倒角色身份的明显结构改动。发部仍较干净，这些成立内容可继续参考。
+
+但目标颈影并未清除，同时非目标肤色发生变化：正面额头同一坐标 `(535,83)`，03的3×3中位约 `[253,208,177]`，04约 `[253,215,185]`；影外下颈由03约 `[254,210,177]` 变成04约 `[254,218,190]`。这不只是橙影内的编辑，周围皮肤也整体变浅了。对照表情02已通过的肤色，03更接近，且03已具备相同2048×768原生画幅与完整三栏。没有必要用未解决目标、还额外改色的04替换03。
+
+因此供用户预览和Opus接续的**三视图工作基准选current03**，明确标为仍有局部颈影的草稿；04原样保存作为一次失败的定点修订记录，不销毁、不覆盖，也不登记正式通过。这里的“最佳”限定在当前已查看候选之间，不等于满足全部验收。
+
+## 结束生成与可执行交接
+
+依已确认边界，本任务不再随机生成05。两处位置明确，可由主实现方依据03源图的实际皮肤轮廓作几何蒙版／矢量同色填充，保留下颌线、颈线和蓝领。独立短交接见 `astra_grandma_turnaround_local_fill_handoff_to_opus.md`；坐标基于03的2048×768原图，不是世界坐标，也不是让对方直接涂满两个矩形。
+
+修补后需要实际回交原尺寸PNG与两处裁切，再验证橙色带确实消失、结构线保留且没有新光照或轮廓损伤，届时另作通过判断。当前没有完成这项修补，本报告不把交接请求当作已修好。操偶body／neck3的世界几何另按先前短交接执行，与此平涂修补分开。本审查未改仓库或任何原始PNG。
+
+
+### 团队交付原文：grandma_neck_flatfill_handoff_current03.md
+
+SHA256：`405a27ccf17e0ad816670b29eea5fb362e51173ae7806b9c70fb658047565a04`。以下按原文追加。
+
+# 给 Opus：奶奶三视图最后两块颈部同色填充
+
+2026-10-16 UTC，Astra 设计负责人。此文件是可执行修正交接，不是已完成修图的声明。
+
+建议采用 `grandma_turnaround_current03_draft.png` 作为三视图外形主参照，原生2048×768，SHA-256 `ab88b69f5303229af379303a37b6e9e3c8cdb35cd05b3902b604871efb2b1671`。03已经成立的三面身份、原生宽度、低髻／红珠／左镯归属、衣装和主要发色去光照均保留。current04的精确编辑未清干净颈影，且非目标肤色略变浅，暂不建议用它替代03。
+
+## 两个局部目标
+
+坐标基于03原始2048×768、左上角原点，只用于定位，不是矩形涂抹指令。
+
+| 视图 | 可见橙影约范围 | 包含邻肤与轮廓的上下文区 |
+|---|---|---|
+| 左栏正面 | x512–550，y177–188 | x500–566，y164–212 |
+| 中栏朝右侧面 | x1016–1046，y154–175 | x996–1051，y147–195 |
+
+在人物皮肤形状内部，把橙色投影与相邻未遮颈合并为同一肤色填充。03邻近正常颈肤约为 `#FED2B1`，正式全角色色板以共同采用值为准；不要保留一圈渐变橙边，或改成浅色亮边。图中前颈橙带G/B通道与邻肤相差数十级，是实际光照色块，需要清掉。
+
+保留黑色下颌外轮廓、必要的细颈结构线和全部蓝色衣领；不把整张定位框覆盖成肤色。若在向量／代码重绘中处理，应让同一个颈部皮肤部件使用统一固有色，并在其上绘制结构线，去掉这两个投影色形状；不要叠加一个遮挡人物轮廓的矩形。
+
+不改脸型、眼镜、头发、髻、红珠、衣花、手、玉镯、裤鞋、站姿、视图朝向或2048×768构图。若在原位图上处理，保存为新派生文件，保留03／04原始图和源记录，不把修订副本冒称生图原文件。
+
+## 局部验收
+
+先在原像素大小看正／侧两个颈部：没有橙色光照带或三角片，颈皮肤和脸／邻颈统一，轮廓线与蓝领连续。再看整图，确认没有误涂、颈长变化、主体位置或衣装改变。核对实际PNG仍原生2048×768；本来已达标的尺寸无需放大或补边。
+
+表情02可作为已去掉明显颈影的前视参照；其中轻微栅格噪声与精确RGB未命中另行处理，不应继续把几个灰度级的变化当作无限返工依据。本次只修两块实际可见光照形状。
+
+本交接不批准机械操偶关系，也不代替 `body/neck3` 的统一世界坐标与掌握点检查。完成后请回传新文件和采用说明，供Astra最终局部复核。
+
+
+### 团队交付原文：astra_grandma_turnaround_local_fill_handoff_to_opus.md
+
+SHA256：`497af624c58c013f22aa75963bcb10ae1bf6592dad48548273efecb565f597e4`。以下按原文追加。
+
+# 给 Opus：奶奶三视图两处同色填充请求
+
+请以 `grandma_turnaround_current03_draft.png` 为当前三视图工作基准：原生2048×768，SHA-256 `ab88b69f5303229af379303a37b6e9e3c8cdb35cd05b3902b604871efb2b1671`。04未去掉颈影且把影外肤色变浅，不作为替代基准。03其他身份、三面布局与去发光照成果均保留。
+
+请只清两处橙色投影：①正面下颌下约 `x512–550, y177–188`，上下文框 `x500–566, y164–212`；②侧面耳后至领根约 `x1016–1046, y154–175`，上下文框 `x996–1051, y147–195`。坐标原点为03原图左上角，单位是原图像素，不是裁切／显示缩放坐标，更不是世界坐标。框只作定位，不能直接涂满矩形。
+
+请沿实际皮肤边界建立局部几何蒙版或矢量色块，将橙影填为相邻未遮颈肤色约 `#FED2B1`；保留下颌深色轮廓、细颈线、脸形、蓝领和原有边缘抗锯齿，不新增高光、模糊或渐变，不改其他人脸、发饰和衣鞋。若做精确统一色板，请另记为该步骤，不将其与本次局部修补混淆。
+
+回交保持原生2048×768的修补PNG和两处未缩放裁切，并给出改动范围。我们会复核暗带消失、影外皮肤衔接、结构线和全图外形；当前未完成此修补，不能先登记平涂通过。无需再用整图随机生图追这两个局部。
+
+
+### 实际完整提示词：grandma_turnaround_current04_prompt.txt
+
+SHA256：`b31ff001bed15d9b4c7a566c6adebe86373bcabdf0a79dcae2f113fa2c74acd0`。
+
+```text
+Make ONLY TWO tiny local colour corrections to this existing grandmother turnaround sheet. Keep the original 2048-by-768 canvas, the entire composition, every figure's position and scale, face, hair, glasses, hands, clothing, bangle, hairpin, outlines and background exactly as they are. Do not redesign, reframe, resize or rearrange anything.
+
+The remaining problem is the ORANGE SHADOW COLOUR under the chin in the FRONT figure and the small ORANGE SHADOW PATCH on the SIDE figure's neck. These are unwanted lighting patches. Remove their coloured fills completely and replace them with the SAME UNIFORM UNLIT SKIN COLOUR as the immediately neighbouring lower neck, approximately #FED2B1. The front chin-to-neck area must have one continuous skin fill, with no darker orange crescent beneath the jaw. The side neck likewise has one continuous skin fill, with no orange triangle.
+
+Location guidance on the current 2048x768 image, origin at top-left: the front neck is within x500–566, y164–212, with the actual orange band approximately x512–550, y177–188; the side neck is within x996–1051, y147–195, with the actual orange patch approximately x1016–1046, y154–175. These boxes only identify where to look. Change only the orange shadow pixels within the skin, NOT the whole rectangles. Preserve the fine dark jaw contour and neck structure lines, the face shape above them, and the blue collar below them. Do not paint over the black lines or blue clothes. Do not replace the shadow with a highlight, blur, skin texture or a softer gradient: use the adjacent flat skin colour.
+
+Everything outside these two small shadow areas remains unchanged. Preserve all three complete front/right-side/back figures, the low bun and hidden frontal red beads, the left-wrist bangle positions, the flat hair treatment and existing grey background. Return the full original-layout PNG at native 2048x768. No labels, added marks, new panels, padding, upscaling or cropping.
+
+```
