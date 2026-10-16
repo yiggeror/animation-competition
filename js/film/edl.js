@@ -9,7 +9,7 @@ export const SHOTS = [
   // 第 2 场 · 停电
   { id: 'S04', scene: 2, line: 'paint', dur: 8, text: '全景："啪"——灯灭、电视缩成一个亮点、吊扇慢慢停；月光从窗口斜进来' },
   { id: 'S05', scene: 2, line: 'code', dur: 4, mod: 'js/code/s05.js', text: '特写：手机 1%，手指狂按，屏幕黑' },
-  { id: 'S06', scene: 2, line: 'paint', dur: 8, text: '近景（月光）：小满跪在插座前，拔了又插，瞪着插座，狠狠插回去' },
+  { id: 'S06', scene: 2, line: 'code', dur: 8, mod: 'js/code/s06.js', text: '特写（月光）：墙脚插座，小满的手拔了又插，举起来吹一口，最后狠狠插回去' },
   { id: 'S07', scene: 2, line: 'paint', dur: 5, text: '全景：小满往后一倒瘫在竹席上扇风；奶奶起身走向立柜，踮脚摸马灯' },
   { id: 'S08', scene: 2, line: 'paint', dur: 6, text: '特写：奶奶划火柴、点灯芯、放下灯罩——暖光铺开' },
   // 第 3 场 · 手电
