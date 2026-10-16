@@ -1,0 +1,11 @@
+Use case: precise-object-edit.
+Asset type: a single animation in-between keyframe, anim_16_xiaoman_arms_mid.png, for the illustrated short film 《来电》.
+Input image 1 is the EDIT TARGET and exact visual/canvas anchor: Xiaoman seated on a wooden stool, facing screen right, arms crossed, closed pursed mouth.
+Input image 2 is SUPPORTING POSE REFERENCE ONLY: the same girl's final released-arm pose with her hands resting on her knees. Do not copy its smiling/open mouth or change the edit target's face.
+
+PRIMARY EDIT: Change ONLY the two arms from image 1 into the halfway pose between image 1 (arms folded) and image 2 (hands resting on knees). Her forearms have visibly uncrossed and both have separated from her chest. Both arms are in the middle of gently lowering toward her knees: elbows opening, wrists/hands hovering naturally in front of her lower abdomen/upper lap, about halfway down toward their final knee-resting positions. The hands are no longer holding opposite upper arms and are not yet touching her knees. Exactly two anatomically coherent arms and two naturally relaxed hands; no doubled limbs or translucent ghost arms. This is a clean single instant in the lowering action, not a collage or motion-blur composite.
+
+STRICT INVARIANTS: Keep the closed pursed lips and entire face EXACTLY as in image 1. Do not redraw or reposition the head, hair, pigtails, hair ties, neck, collar, torso, waist, dress/skirt silhouette, stool, knees, lower legs, sandals, feet, or the light gray background. Keep original colors, linework and flat softly shaded illustration style. Only arm contours and the minimum dress area newly uncovered by the moved arms may change. Shoulders stay attached in the same places. Maintain all non-arm screen-space positions, the exact same character size and the exact same framing. In particular lock stool-seat center, stool feet, shoe soles, head outline and skirt hem to image 1.
+
+CANVAS: Preserve the native 1254 by 1254 square canvas and original placement; this frame must align with image 1 in animation without rescaling or translation. Do not enlarge to 1536, zoom, crop, reposition, extend the canvas, add margins, or change the background. Keep the opaque gray background (no transparency).
+Output one finished image only. No labels, borders, text, watermarks, split panels, additional figures, or reference sheet.

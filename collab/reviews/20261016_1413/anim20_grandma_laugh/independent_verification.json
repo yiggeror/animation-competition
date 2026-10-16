@@ -1,0 +1,63 @@
+{
+  "output": {
+    "size": [
+      1024,
+      1536
+    ],
+    "format": "PNG",
+    "mode": "RGB",
+    "bytes": 1613031,
+    "sha256": "cb814fe129b313b9a3f13b6ef6ce773ea2651bc28149d2cab0deeedcef1d7a4d",
+    "source_byte_identical": true
+  },
+  "dark_outline_bbox": [
+    214,
+    154,
+    867,
+    1449
+  ],
+  "height_fraction": 0.84375,
+  "shoes": {
+    "near": {
+      "roi": [
+        220,
+        1360,
+        470,
+        1460
+      ],
+      "master": [
+        238,
+        1360,
+        464,
+        1449
+      ],
+      "laugh": [
+        237,
+        1360,
+        463,
+        1449
+      ]
+    },
+    "far": {
+      "roi": [
+        470,
+        1340,
+        725,
+        1420
+      ],
+      "master": [
+        470,
+        1340,
+        717,
+        1410
+      ],
+      "laugh": [
+        470,
+        1340,
+        716,
+        1410
+      ]
+    }
+  },
+  "method": "Read-only dark-outline threshold max RGB <105. Approximate bounds, not pixel-perfect registration or body rig validation. No pixels changed."
+}
