@@ -24,7 +24,7 @@ export const S = {
   window: [-2.3, -1.0, 0.9, 1.9],
   beams: [-1.7, 0.75, 1.45], beamZ0: 2.44,
   occ: [], occBack: [],
-  cardSheetGain: '1.8', sheetTau: '0.16', sheetHot: '0.55', bounce: '0.10',
+  cardSheetGain: '1.8', sheetTau: '0.16', sheetHot: '0.46', bounce: '0.10',
 };
 // 奶奶在床单后面、马灯左边（只看得见腰以下）：挡住马灯照后墙和地面的光
 export const NN = [1.05, 0.88];
@@ -49,7 +49,7 @@ export const CRANE_ROOT = [1.36, 0.66];
 
 // ---------------------------------------------------------------- 镜头
 export function camera(W, H, o = {}) {
-  const C = o.pos || [1.48, -3.013, 0.55], T = o.target || [0.75, 0.0, 1.06], hfov = o.hfov || 56;
+  const C = o.pos || [1.48, -3.013, 0.45], T = o.target || [0.75, 0.0, 1.06], hfov = o.hfov || 60;
   const sub = (a, b) => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];
   const nrm = (a) => { const l = Math.hypot(...a); return a.map((v) => v / l); };
   const cross = (a, b) => [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]];
@@ -115,11 +115,14 @@ function quiltTex(kind) {
 
 // ---------------------------------------------------------------- 渲染
 let G = null, crane = null, cranePal = null, QUILTS = null, CARDS = null, POND = null, WILLOW = null;
-// 小满：呼吸；跟着鹤抬头（慢半拍）；鹤扬起头那一下嘴张大；4 秒多眨一次眼
+// 小满：呼吸；跟着鹤抬头（慢半拍）；鹤扬起头那一下看呆了——眼睛睁大、眉毛抬起、嘴张开，身子不自觉往前探一点
+// （手还搭在膝盖上，肩往前，手肘跟着弯）；后面慢慢缓下来；4 秒多眨一次眼
 function xmPose(t) {
   const r = Math.min(1.05, raiseAt(t - 0.3));
   const bl = Math.max(0, 1 - Math.abs(t - 4.15) / 0.09);
-  return { headUp: 0.22 + 0.10 * r, breathe: Math.sin((t / 3.4) * 6.283), mouth: 0.4 + 0.45 * sstep(2.0, 2.6, t) * (1 - 0.5 * sstep(3.6, 4.6, t)),
+  const wow = sstep(1.5, 2.1, t) * (1 - 0.45 * sstep(3.4, 4.6, t));
+  return { headUp: 0.20 + 0.10 * r, lean: 0.03 + 0.045 * sstep(1.5, 2.8, t) - 0.015 * sstep(3.6, 4.8, t), wow,
+    breathe: Math.sin((t / 3.4) * 6.283), mouth: 0.4 + 0.45 * sstep(2.0, 2.6, t) * (1 - 0.5 * sstep(3.6, 4.6, t)),
     blink: Math.min(1, bl * 1.6), pig: 0.03 * Math.sin(t * 1.3) - 0.05 * sstep(1.3, 2.6, t) };
 }
 
@@ -246,7 +249,7 @@ export function sheetRadiance(u, v, sh, L, I = 1) {
   const hot = I * (SHEET_HOT * Math.exp(-(dx * dx + dz * dz) / (0.12 * 0.12)) + 0.10 * Math.exp(-(dx * dx + dz * dz) / (0.34 * 0.34)));
   return [diff + hot, (diff + hot * 0.92) * 0.58 / 0.58, diff + hot * 0.8];
 }
-export const SHEET_TAU = 0.16, SHEET_HOT = 0.55;
+export const SHEET_TAU = +S.sheetTau, SHEET_HOT = +S.sheetHot;   // 和着色器里用同一组数
 // 床单 8×6 块的平均亮度（线性），给面光源用：每块里取 6×6 个点，解析亮度 × 影子图
 function patchRadiance(mask, sh, L, I) {
   const w = mask.width, h = mask.height;

@@ -105,7 +105,7 @@ export class Cards {
       const x1 = Math.min(this.W, Math.ceil(c) + 4), y1 = Math.min(this.H, Math.ceil(d) + 4);
       const w = x1 - x0, h = y1 - y0;
       if (w <= 0 || h <= 0) continue;
-      const [mc, mx] = scratch('mask', w, h);
+      const mc = new OffscreenCanvas(w, h), mx = mc.getContext('2d', { willReadFrequently: true });
       mx.translate(-x0, -y0); mx.fillStyle = '#fff';
       for (const p of ps) mx.fill(p.path, p.rule || 'nonzero');
       const alpha = mx.getImageData(0, 0, w, h).data;
@@ -113,9 +113,27 @@ export class Cards {
       const tile = normalTile(alpha, w, h, Math.max(1.5, lead.groupR ?? lead.R), lead.tilt, lead.flat || 0);
       const cv = new OffscreenCanvas(w, h);
       cv.getContext('2d').putImageData(new ImageData(tile, w, h), 0, 0);
-      tiles[g] = { cv, x0, y0 };
+      tiles[g] = { cv, x0, y0, mask: mc, shadow: (ps.find((p) => p.shadow) || {}).shadow };
     }
-    for (const p of parts) this.add(p, depth, p.group ? tiles[p.group] : null);
+    // 同一组的部件合起来只往下面的东西投一次接触阴影（在组里第一块画之前），组内部件之间不互相投——
+    // 不然手的影子落在前臂上，手腕处就多出一道暗边，像接缝
+    const shadowed = {};
+    for (const p of parts) {
+      const t = p.group ? tiles[p.group] : null;
+      if (t && t.shadow && !shadowed[p.group]) {
+        shadowed[p.group] = true;
+        const sh = t.shadow;
+        this.a.save();
+        this.a.globalCompositeOperation = 'source-atop';
+        this.a.filter = `blur(${sh[2] ?? 4}px)`;
+        this.a.globalAlpha = sh[3] ?? 0.45;
+        const [bc, bx] = scratch('gsh', t.mask.width, t.mask.height);
+        bx.drawImage(t.mask, 0, 0); bx.globalCompositeOperation = 'source-in'; bx.fillStyle = '#000'; bx.fillRect(0, 0, bc.width, bc.height);
+        this.a.drawImage(bc, t.x0 + sh[0], t.y0 + sh[1]);
+        this.a.restore();
+      }
+      this.add(p, depth, t, !!t);
+    }
     this.cleanMat(parts);
   }
   // 材质图上，两种材质交界处抗锯齿会混出中间值（比如皮肤 30 和眼睛高光 120 混成 75，会被当成"布"打光）。
@@ -142,7 +160,7 @@ export class Cards {
     this.m.putImageData(img, x0, y0);
   }
   // depth：离镜头的距离（米）；gtile：这块所在组合起来算好的法线（有的话）
-  add(part, depth, gtile = null) {
+  add(part, depth, gtile = null, noShadow = false) {
     const { W, H } = this;
     const path = part.path;
     // 包围盒（多留一点边）
@@ -152,7 +170,7 @@ export class Cards {
     const w = x1 - x0, h = y1 - y0;
     if (w <= 0 || h <= 0) return;
     // 接触阴影：这块形状在下面部件上投一点模糊的暗影
-    if (part.shadow) {
+    if (part.shadow && !noShadow) {
       const [s, sx] = scratch('sh', W, H);
       sx.fillStyle = '#000'; sx.fill(path, part.rule || 'nonzero');
       this.a.save();

@@ -241,7 +241,7 @@ vec3 shadeCard(vec3 P, vec3 N, vec3 V, vec3 alb, float mat, float extra) {
       back += uPatch[j * 8 + i] * fwd * PATCH_A * 4.0 / max(r2, 0.05);
     }
     vec3 tint = m == 1 ? vec3(1.0, 0.55, 0.42) : (m == 2 ? vec3(1.0, 0.75, 0.5) : vec3(1.0, 0.9, 0.7));
-    c += back * edge * tint * (m == 2 ? 0.5 : 0.35) * (0.4 + extra);
+    c += back * edge * tint * (m == 2 ? 0.5 : 0.25) * (0.4 + extra);   // 皮肤的亮边收一点，形状靠外形读，不靠描亮边
   }
   // 眼睛里映着床单（高光）
   if (m == 4) c = alb * dot(uPatch[19] + uPatch[20] + uPatch[27] + uPatch[28], vec3(0.25)) * 2.2 * vec3(1.0, 0.92, 0.8);
