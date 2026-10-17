@@ -5,6 +5,20 @@
 粗剪预览：`node tools/film.mjs --preview --audio build/audio/film_mix_norm.wav` → `build/film_preview.mp4`（960×540，build/ 不进仓库），
 按 `js/film/edl.js` 31 个镜头，约 244.5 秒。声音 `python3 audio/build.py` → `build/audio/film_mix_norm.wav`（-16 LUFS / -1.5 dBTP，三条分轨相加 = 总混音）。
 
+
+### 2026-10-17 下午起：人物改为"生图形象做皮、代码骨架驱动"
+
+用户看完全片的意见：人物是一张张静态图在平移，表情不变、动作不变，像"伪人"。处理方式：
+- 骨架变形引擎 `js/rig/warp.js`：每张人物图绑一副 2D 骨架，切成细网格按骨骼权重连续变形（WebGL）。
+  - 支持钉点、区域限定、分层、程序眨眼和表情头；
+  - 床单戏图卡的固有色、法线、材质三张图一起变形。
+- 动作库 `js/rig/acts.js`；逐镜头动作计划 `docs/motion-plan.md`。
+- 分工：合作方（Astra 团队）出各张图的绑骨数据（`assets/rigs/*.rig.json`）和屋内镜头的动作；Opus 写引擎、床单戏和后台镜头、剪辑、声音。
+- 已换成骨架驱动的：
+  - S01、S04、S10 的奶奶（剥豆、停手抬头、眨眼）；
+  - S20 的小满（双手攥签跟着乌龟乱晃，签子跟手）和奶奶（操鹤、笑弯腰时肩膀抖）。
+- 试片格式按用户要求改为只放有画面的镜头、每镜标剧本：`tools/review_film.mjs`。
+
 | 镜头 | 状态 | 做法 / 用到的图（合作方 Astra 团队生图，来源见 `collab/partner.md`） |
 |---|---|---|
 | S01 全景·停电前 | 完成 | `bg_01` + 小满趴着玩手机 `anim_01`（小腿绕膝盖晃）+ 奶奶剥豆 `g01_beans`；吊扇虚影、蚊香烟、电视闪光、接触阴影 |
