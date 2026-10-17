@@ -1,0 +1,160 @@
+{
+  "sample_rate": 48000,
+  "packet_count": 1220,
+  "nonmonotonic_pts": [],
+  "nonmonotonic_dts": [],
+  "packet_timeline_discontinuities": [],
+  "duplicate_payload_groups": {},
+  "initial_packet": {
+    "pts": -1024,
+    "dts": -1024,
+    "duration": 1024,
+    "data_hash": "SHA256:c62b205575f0ec5634a4a47fe9374c7c2f28978350906fd83138f4e84aa8b760",
+    "side_data_list": [
+      {
+        "side_data_type": "Skip Samples",
+        "skip_samples": 1024,
+        "discard_padding": 0,
+        "skip_reason": 0,
+        "discard_reason": 0
+      }
+    ]
+  },
+  "last_packet": {
+    "pts": 1247232,
+    "dts": 1247232,
+    "duration": 768,
+    "data_hash": "SHA256:55a86b593ac30e07253bcd21133a1f058c7b5047ae75b7e0ff77f667f31237da"
+  },
+  "decoded_frames": 1248256,
+  "pts_compensated_frames": 1248256,
+  "raw_vs_pts_whole_array_bitwise_equal": true,
+  "raw_f32le_pcm_sha256": "f0d623aa426d33631df028e1bd99f45d9d16c6069e2d6414d59d78000eeac7ad",
+  "pts_f32le_pcm_sha256": "f0d623aa426d33631df028e1bd99f45d9d16c6069e2d6414d59d78000eeac7ad",
+  "cut_windows": [
+    {
+      "cut_seconds": 12,
+      "interval_seconds": [
+        11.9,
+        12.1
+      ],
+      "raw_vs_pts_bitwise_equal": true,
+      "different_sample_values": 0,
+      "nearby_packets": [
+        {
+          "pts": 574464,
+          "dts": 574464,
+          "duration": 1024,
+          "data_hash": "SHA256:067960e29bd851f9eaf9eef8c2b13bc2c9e612760f2696e0ba63f6258ce02cb2"
+        },
+        {
+          "pts": 575488,
+          "dts": 575488,
+          "duration": 1024,
+          "data_hash": "SHA256:a39301ef9202dd3924365a3d6bbd5b109220e57986a1be66bf94711e06881baf"
+        },
+        {
+          "pts": 576512,
+          "dts": 576512,
+          "duration": 1024,
+          "data_hash": "SHA256:6bb86e61246ef206397ba1013fede414b22ad5eb9749bd294d2fd36f16c00a37"
+        },
+        {
+          "pts": 577536,
+          "dts": 577536,
+          "duration": 1024,
+          "data_hash": "SHA256:39850ca643d2860072c795493383c11a36053a3c8a48d421e8c535082e234ca9"
+        }
+      ]
+    },
+    {
+      "cut_seconds": 18,
+      "interval_seconds": [
+        17.9,
+        18.1
+      ],
+      "raw_vs_pts_bitwise_equal": true,
+      "different_sample_values": 0,
+      "nearby_packets": [
+        {
+          "pts": 862208,
+          "dts": 862208,
+          "duration": 1024,
+          "data_hash": "SHA256:b10ca07e1c55cdc93f8f1f349c1a96527e89b1938d1c960fafef9154e0b7581f"
+        },
+        {
+          "pts": 863232,
+          "dts": 863232,
+          "duration": 1024,
+          "data_hash": "SHA256:d7efe940dd604e051d374d66cb12872107e3966f2383d77b554350f05d8878d5"
+        },
+        {
+          "pts": 864256,
+          "dts": 864256,
+          "duration": 1024,
+          "data_hash": "SHA256:38a823f3e815de5861096c79f1634f9661096a9d3f7703d5038364f3e050f9c9"
+        },
+        {
+          "pts": 865280,
+          "dts": 865280,
+          "duration": 1024,
+          "data_hash": "SHA256:f576b3c69956d1afeb08bcb55f2bd03ac237dc8f41d0205c0f6460d9dbe13db0"
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "node": "v24.19.0"
+  },
+  "independent_build_outputs": {
+    "stem_amb.wav": {
+      "file_sha256": "6a63e45bcf297c07ce4bc029f0bfe36323bb2f51018726de4ed9b0a7198eb311",
+      "pcm_sha256": "7c7e316056b6347cd001b5d137212c3f2efed37bd8e812331e2066b7a59fd047",
+      "sample_rate": 48000,
+      "channels": 2,
+      "sample_width_bytes": 2,
+      "frames": 11784000,
+      "duration_seconds": 245.5
+    },
+    "film_mix_norm.wav": {
+      "file_sha256": "ad67ddd07a541ac2a19fc139e4e03928111c90b0f8aca22484e6cd62eb688c09",
+      "pcm_sha256": "5fbfc70b607b31aac869c4539a643f9588df953c9e8219a6be6d44c7f6b0b351",
+      "sample_rate": 48000,
+      "channels": 2,
+      "sample_width_bytes": 2,
+      "frames": 11784000,
+      "duration_seconds": 245.5
+    },
+    "film_mix.wav": {
+      "file_sha256": "df66d2222d664f6f239c748b494e9a39b0e2159ce056ce0d1be4ea7b092b814f",
+      "pcm_sha256": "dd885082d43a667cc0da33a0c65124f74387a50ad16ed759b01c9dd11b62546d",
+      "sample_rate": 48000,
+      "channels": 2,
+      "sample_width_bytes": 2,
+      "frames": 11784000,
+      "duration_seconds": 245.5
+    },
+    "stem_music.wav": {
+      "file_sha256": "35ad72753fe4dffa92eb1f99e961c55a3e47b2a83d22964bc8f08e278215cb26",
+      "pcm_sha256": "6ac0f54a6baa63430067cd8c24057967e41bcb86f8b3014ff1ce3de9ab3e8c13",
+      "sample_rate": 48000,
+      "channels": 2,
+      "sample_width_bytes": 2,
+      "frames": 11784000,
+      "duration_seconds": 245.5
+    },
+    "stem_sfx.wav": {
+      "file_sha256": "79c5ac0c386d7d2667e5ffdf1bf116b7b9bb3ee5d3426c95cb04e2dcb36d9f3b",
+      "pcm_sha256": "f9e3df279871559b0b60b373d494594de1fca072c5591542fee09f037dcdc929",
+      "sample_rate": 48000,
+      "channels": 2,
+      "sample_width_bytes": 2,
+      "frames": 11784000,
+      "duration_seconds": 245.5
+    }
+  }
+}

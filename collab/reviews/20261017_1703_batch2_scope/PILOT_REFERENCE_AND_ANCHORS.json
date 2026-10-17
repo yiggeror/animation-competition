@@ -1,0 +1,80 @@
+{
+  "status": "candidate points for human/Opus freeze, not validated alignment",
+  "source_commit": "2e5270b39a74f87807d1e774975cac1f69d0f2a2",
+  "canvas": [
+    1024,
+    1536
+  ],
+  "A": "refs/x29_look_a.png",
+  "B_head_alpha": "refs/x29_head_b.png",
+  "visible_B": "refs/x29_head_b_visible_alpha_composite.png",
+  "visible_B_native_crop": {
+    "file": "refs/x29_head_b_visible_head_native.png",
+    "source_crop_xyxy": [
+      180,
+      65,
+      860,
+      700
+    ]
+  },
+  "anchors": [
+    {
+      "id": "A1",
+      "point": [
+        213,
+        1183
+      ],
+      "role": "registration",
+      "feature": "后方红凉鞋金色圆扣中心；只对A身体保持不动的头脸试点有效"
+    },
+    {
+      "id": "A2",
+      "point": [
+        803,
+        1290
+      ],
+      "role": "registration",
+      "feature": "远侧膝部下缘黑色轮廓弧的局部纹理块；试点要求整段跪坐固定"
+    },
+    {
+      "id": "C3",
+      "point": [
+        467,
+        1304
+      ],
+      "role": "check_only",
+      "feature": "裙摆下沿附近白圆点与布边的局部纹理块；只做第三点残差核，不参与解配准"
+    }
+  ],
+  "baseline_distance_px": 599.6240488839653,
+  "pilot": "one genuine halfway head/neck pose between A and B; no phone in hand; preserve one left-hand turtle rod and grounded right hand",
+  "gate": "Freeze exact A/B/desired midpoint pose before any generation. Verify non-target pixels/structure and >3px residual reject. Do not use B hidden RGB lower body for identity, anchors or image generation. No automatic retry.",
+  "x29_look_a_alpha_bbox_gt0": [
+    81,
+    118,
+    913,
+    1334
+  ],
+  "x29_look_a_sha256": "f20ba5137ad60169950c2d3019218cb9d9fe880985c1c0d3841d4f72895bfff7",
+  "x29_head_b_alpha_bbox_gt0": [
+    256,
+    102,
+    763,
+    666
+  ],
+  "x29_head_b_sha256": "2437a8cf26f012ca53146b8cfac9444ba06863d17461a0f025ce8e6938a7355e",
+  "partner_anchor_labels": {
+    "A": [
+      213,
+      1183
+    ],
+    "B": [
+      803,
+      1290
+    ],
+    "H": [
+      467,
+      1304
+    ]
+  }
+}
