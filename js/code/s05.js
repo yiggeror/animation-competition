@@ -9,11 +9,13 @@ const MASH = []; for (let p = 1.15; p < T_OFF - 0.05; p += 0.14 + 0.03 * Math.si
 const PRESS = [...MASH, 3.4, 3.72];
 export function state(t) {
   const pull = sstep(0.95, 1.75, t);
-  const bolt = t < 0.35 ? 1 : t < 0.47 ? 1 + 0.25 * Math.sin((t - 0.35) / 0.12 * Math.PI) : 0;   // 闪电先胀一下再消失
-  const level = t < 0.85 ? 2 : 1;
+  // 闪电先胀一下再消失、2% 跳成 1%：断电在上一个镜头（S04 0.6 秒），切进来马上就交代，不再拖
+  const bolt = t < 0.12 ? 1 : t < 0.24 ? 1 + 0.25 * Math.sin((t - 0.12) / 0.12 * Math.PI) : 0;
+  const level = t < 0.5 ? 2 : 1;
   const off = t < T_OFF ? 1 : t < T_OFF + 0.08 ? 0.35 : 0;   // 先暗一下，再全黑
   const shake = sstep(1.1, 1.3, t) * (t < T_OFF ? 1 : 0);
-  const press = pressAt(t, PRESS);
+  // 狂按：每下间隔 0.11～0.17 秒，按下 0.025 + 停 0.035 + 抬 0.04 秒，每下之间都有抬起来的帧
+  const press = t < T_OFF ? pressAt(t, MASH, { dn: 0.025, hold: 0.035, up: 0.04 }) : pressAt(t, PRESS.slice(MASH.length));
   // 左拇指在方向键上来回猛搓；屏幕黑了以后慢下来、停住
   const dpad = shake * 0.9 * Math.sin(t * 2 * Math.PI * 3.4) + (1 - shake) * 0.2 * Math.sin(t * 2.2) * (t < T_OFF ? 1 : 0.3);
   return {

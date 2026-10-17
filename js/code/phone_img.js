@@ -118,9 +118,11 @@ export async function renderPhoneImg(ctx, W, H, st) {
   for (let i = 0; i < G.length; i += 4) { const n = (rnd() - 0.5) * 6; G[i] += n; G[i + 1] += n; G[i + 2] += n; }
   ctx.putImageData(gi, 0, 0);
 }
-// 按键：presses 按下的时刻 → 0..1（0.06 秒按下去，停 0.06，0.12 秒抬起来）
-export function pressAt(t, presses) {
+// 按键：presses 按下的时刻 → 0..1。默认 0.06 秒按下去，停 0.06，0.12 秒抬起来；
+// 狂按时用短的（o = { dn, hold, up }），每下之间必须有抬起来的帧（24 帧/秒，一帧 0.042 秒）
+export function pressAt(t, presses, o = {}) {
+  const dn = o.dn ?? 0.06, hold = o.hold ?? 0.06, up = o.up ?? 0.12;
   let v = 0;
-  for (const p of presses) { const u = t - p; if (u > -0.06 && u < 0.18) v = Math.max(v, u < 0 ? (u + 0.06) / 0.06 : u < 0.06 ? 1 : 1 - (u - 0.06) / 0.12); }
+  for (const p of presses) { const u = t - p; if (u > -dn && u < hold + up) v = Math.max(v, u < 0 ? (u + dn) / dn : u < hold ? 1 : 1 - (u - hold) / up); }
   return v;
 }
