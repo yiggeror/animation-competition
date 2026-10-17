@@ -11,7 +11,7 @@ export const SHOTS = [
   { id: 'S05', scene: 2, line: 'code', dur: 4, mod: 'js/code/s05.js', text: '特写：手机 1%，手指狂按，屏幕黑' },
   { id: 'S06', scene: 2, line: 'paint', dur: 8, mod: 'js/paint/shots/s06.js', text: '特写（月光，侧面）：墙脚插座，小满的手捏着插头拔了又插，捏着晃两下，最后狠狠插回去' },
   { id: 'S07', scene: 2, line: 'paint', dur: 5, text: '全景：小满往后一倒瘫在竹席上扇风；奶奶起身走向立柜，踮脚摸马灯' },
-  { id: 'S08', scene: 2, line: 'code', dur: 6, mod: 'js/code/s08.js', text: '特写：黑暗里"嚓"地划着火柴（画外），奶奶的手把火柴伸到灯芯，甩灭，按下灯罩——暖光铺开' },
+  { id: 'S08', scene: 2, line: 'paint', dur: 6, mod: 'js/paint/shots/s08.js', text: '中景→特写→中景：黑暗里奶奶"嚓"地划着火柴，火光照亮她；特写里火柴碰到灯芯，甩灭，灯罩落下；回中景，马灯亮了' },
   // 第 3 场 · 手电
   { id: 'S09', scene: 3, line: 'code', dur: 5, mod: 'js/code/s09.js', text: '特写（马灯侧光）：小满从抽屉里拿出手电，推开关不亮，拍两下，再推——亮' },
   { id: 'S10', scene: 3, line: 'paint', dur: 5, mod: 'js/paint/shots/s10.js', text: '手电光束扫过屋子，照到奶奶，奶奶眯起眼' },

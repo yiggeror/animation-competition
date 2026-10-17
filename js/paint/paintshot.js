@@ -5,7 +5,7 @@
 //      光源会闪（火苗）；光照图在线性空间里算，再和固有色相乘
 //   3. 发光的东西直接加上去：马灯的火苗和玻璃罩、电视屏、手机屏
 //   4. 空气里被照亮的灰尘、颗粒、暗角；镜头可以平移和推拉
-// 一个镜头 = { bg, size:[W,H]（背景图的像素尺寸）, layers(t), light(t), glow(t), cam(t) }，坐标都是背景图的像素。
+// 一个镜头 = { bg, size:[W,H]（背景图的像素尺寸）, layers(t), light(t), glow(t), emit?(ctx,t), cam(t) }，坐标都是背景图的像素。
 const cache = {};
 export async function loadImg(name) {
   if (cache[name]) return cache[name];
@@ -104,6 +104,8 @@ export async function renderPaint(ctx, t, W, H, shot) {
     ax.fillStyle = gr; ax.fillRect(g.x - g.r, g.y - g.r, 2 * g.r, 2 * g.r);
   }
   ax.restore();
+  // 3b. 自己画的发光体/不受光照的东西（火苗的形状、烟）：shot.emit(ctx, t)，背景坐标
+  if (shot.emit) { ax.save(); shot.emit(ax, t); ax.restore(); }
   // 4. 镜头：平移、推拉（cam = { x, y, zoom }：画面中心对着背景的 (x, y)，zoom = 画面像素 / 背景像素）
   const cam0 = shot.cam?.(t) || { x: BW / 2, y: BH / 2, fit: 1 };
   const cam = { ...cam0, zoom: cam0.fit != null ? cam0.fit * W / BW : cam0.zoom };   // fit：相对"背景宽度正好铺满画面"的倍数（和输出分辨率无关）
