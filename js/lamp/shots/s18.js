@@ -5,6 +5,10 @@ import { makeShot } from './shotkit.js';
 import { sheet as sheet17 } from './s17.js';
 import { cards06, billboardM, XM } from '../s06_key.js';
 import { RIG16, loadRig, layers16, pose16 } from '../xm_rig.js';
+import { loadFlip, frameAt, flipMaps } from '../../rig/flipbook.js';
+// 逐帧版（合作方按关键帧单出的 x18_f01…f12，assets/flips/x18_laugh.flip.json）到了就用，整段 3 秒都按关键帧换；没到时退回旧的单张图
+let FLIP;
+async function flip() { if (FLIP === undefined) { try { FLIP = await loadFlip('x18_laugh'); } catch { FLIP = null; } } return FLIP; }
 export const DURATION = 3;
 const T_PU = 0.42;                                     // "噗"
 const CAM = { pos: [1.05, -2.70, 0.55], target: [0.42, -1.2, 0.70], hfov: 40 };
@@ -12,6 +16,13 @@ let LAUGH = null;
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
 const sheet = (t, env) => sheet17(13.6 + 0.3 * t, env);
 async function cards(CARDS, cam, t) {
+  const F = await flip();
+  if (F) {   // 逐帧：关键帧和母版同画幅，用同一个摆放矩阵；动作全在画里，不再整张伸缩
+    const R = RIG16, c0 = cam.project([XM.p[0], XM.p[1], XM.seat]);
+    const base = [XM.p[0], XM.p[1], (R.floorY - R.oy) / R.sc / 100];
+    CARDS.addImage([{ maps: flipMaps(F, frameAt(F, t)), m: billboardM(cam, base, R.ox, R.oy, R.sc) }], c0[2]);
+    return;
+  }
   if (t < T_PU) return cards06(CARDS, cam, 3.0 + t);   // 第 6 场之后的 B 状态
   LAUGH ||= (await loadRig({ files: { L: 'x18_laugh' } })).L;
   const R = RIG16, u = t - T_PU;
