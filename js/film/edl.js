@@ -39,7 +39,7 @@ export const SHOTS = [
   { id: 'S27', scene: 10, line: 'engine', dur: 5, mod: 'js/lamp/shots/s27.js', text: '床单正面（硬切进惨白）：日光灯闪两下亮了，影子几乎看不见' },
   { id: 'S28', scene: 10, line: 'paint', dur: 8, mod: 'js/paint/shots/s28.js', text: '全景（日光灯）：吊扇转起、电视嘶响、一地毛豆壳；两人被晃得眯眼；竹席上手机亮起充电图标' },
   // 第 11 场 · 收
-  { id: 'S29', scene: 11, line: 'paint', dur: 12, text: '奶奶笑笑，开始用布包皮影；手机"叮咚"开机；小满看看手机，又看看奶奶' },
+  { id: 'S29', scene: 11, line: 'paint', dur: 12, mod: 'js/paint/shots/s29.js', text: '奶奶笑笑，开始用布包皮影；手机"叮咚"开机；小满看看手机，又看看奶奶' },
   // 第 12 场 · 关灯
   { id: 'S30', scene: 12, line: 'paint', dur: 12, mod: 'js/paint/shots/s30.js', text: '全景：小满走到门边，踮脚拉灯绳——"咔嗒"，暗了；马灯的光重新显出来' },
   { id: 'S31', scene: 12, line: 'paint', dur: 14, mod: 'js/paint/shots/s31.js', text: '床单前：小满把手电抵在下巴下往上照、做鬼脸，举着乌龟晃一晃；切床单正面：鹤跳起来，乌龟爬进来，又演起来了' },
