@@ -1,0 +1,132 @@
+{
+  "source_sha256": "499a81ef65f78e44597045af0a91a3236de660064eecf0ca2ecd4cdfa35bb633",
+  "near_lengths_px": {
+    "upperarm": 129.6919426949878,
+    "forearm": 159.26079241294764,
+    "wrist_to_fingertip": 113.5649593844862
+  },
+  "k06": {
+    "id": "k06",
+    "requested_time_s": 0.8,
+    "reference_only_not_timeline": true,
+    "joints": {
+      "sh_n": [
+        270,
+        483
+      ],
+      "el_n": [
+        308.9685,
+        606.6991
+      ],
+      "wr_n": [
+        366,
+        458
+      ],
+      "palm_n": [
+        373.0,
+        408.0
+      ],
+      "mcp_n": [
+        380.0,
+        382.0
+      ],
+      "tip_n": [
+        390.0,
+        347.0
+      ],
+      "sh_f": [
+        321,
+        488
+      ],
+      "el_f": [
+        354,
+        650
+      ],
+      "wr_f": [
+        454,
+        723
+      ],
+      "palm_f": [
+        482,
+        737
+      ],
+      "tip_f": [
+        522,
+        761
+      ],
+      "neck": [
+        273,
+        418
+      ],
+      "head_center": [
+        239.0,
+        242.0
+      ],
+      "nose": [
+        390.0,
+        262.0
+      ],
+      "mouth_proxy": [
+        381.0,
+        313.0
+      ],
+      "chin_visible": [
+        339.0,
+        377.0
+      ],
+      "waist": [
+        263,
+        643
+      ],
+      "pelvis": [
+        223,
+        801
+      ],
+      "knee_n": [
+        465,
+        813
+      ],
+      "ankle_n": [
+        431,
+        1082
+      ],
+      "toe_n": [
+        555,
+        1132
+      ],
+      "knee_f": [
+        515,
+        799
+      ],
+      "ankle_f": [
+        498,
+        1060
+      ],
+      "toe_f": [
+        600,
+        1110
+      ]
+    },
+    "near_shoulder_lift_px": 0,
+    "head_rotation_deg": 0,
+    "near_hand_axis_deg": -77.79953127261922,
+    "near_palm_orientation": "palmar surface toward face; fingers together",
+    "near_elbow_internal_angle_deg": 38.4694545363956,
+    "segment_lengths_px": [
+      129.69198638720903,
+      159.26083741165,
+      113.5649593844862
+    ],
+    "max_length_error_px": 4.4998702350085296e-05,
+    "expression_note": "近手向嘴抬起途中、在下巴前方；指尖低于估计嘴34px，未接触嘴。",
+    "reuse_master": false,
+    "fixed_anchor_names": [
+      "stool_front_left_lower_corner",
+      "stool_front_right_foot_outer_bottom",
+      "stool_front_left_foot_outer_bottom",
+      "stool_front_left_upper_corner",
+      "near_shoe_sole_bottom",
+      "far_shoe_sole_bottom"
+    ]
+  }
+}

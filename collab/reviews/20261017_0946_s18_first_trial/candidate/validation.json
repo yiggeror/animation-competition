@@ -1,0 +1,54 @@
+{
+  "source_sha256": "499a81ef65f78e44597045af0a91a3236de660064eecf0ca2ecd4cdfa35bb633",
+  "size": [
+    635,
+    1175
+  ],
+  "fixed_joint_names": [
+    "sh_n",
+    "sh_f",
+    "el_f",
+    "wr_f",
+    "palm_f",
+    "tip_f",
+    "neck",
+    "head_center",
+    "nose",
+    "mouth_proxy",
+    "chin_visible",
+    "waist",
+    "pelvis",
+    "knee_n",
+    "ankle_n",
+    "toe_n",
+    "knee_f",
+    "ankle_f",
+    "toe_f"
+  ],
+  "all_fixed_joints_equal": true,
+  "near_segment_max_error_px": 4.4998702350085296e-05,
+  "k06_mouth_to_tip_vertical_gap_px": 34.0,
+  "stool_anchors": {
+    "A": {
+      "at": [
+        23,
+        898
+      ],
+      "source_alpha": 71
+    },
+    "B": {
+      "at": [
+        309,
+        1141
+      ],
+      "source_alpha": 239
+    }
+  },
+  "limitations": [
+    "static reference only",
+    "no character image generated",
+    "no continuous animation validation",
+    "mouth hidden in mother image",
+    "fixed-point reference does not guarantee generation pixel lock"
+  ]
+}

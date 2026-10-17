@@ -1,0 +1,64 @@
+{
+  "alignment": {
+    "before": {
+      "canvas": [
+        160,
+        100
+      ],
+      "anchors": [
+        [
+          70,
+          10
+        ],
+        [
+          70,
+          25
+        ]
+      ]
+    },
+    "after": {
+      "canvas": [
+        100,
+        80
+      ],
+      "anchors": [
+        [
+          20,
+          20
+        ],
+        [
+          50,
+          20
+        ]
+      ],
+      "pixel": [
+        199,
+        129,
+        67,
+        255
+      ]
+    }
+  },
+  "rejected": {
+    "missingTarget": "Error: flip missingTarget: referenceAnchors: need two finite points",
+    "missingCanvas": "Error: flip missingCanvas: explicit canvas [width,height] required",
+    "degenerate": "Error: flip degenerate: frame 0: anchors must be at least 1px apart",
+    "badIndex": "Error: flip badIndex: timeline 0: frame index out of range",
+    "unsorted": "Error: flip unsorted: timeline 2: starts at zero and must strictly increase",
+    "nonzeroStart": "Error: flip nonzeroStart: timeline 0: starts at zero and must strictly increase",
+    "mapSize": "Error: flip mapSize: a: nrm dimensions differ from albedo"
+  },
+  "valid72": {
+    "count": 72,
+    "allExpectedKey": true
+  },
+  "strict": {
+    "legacy": null,
+    "calls": 1,
+    "error": {
+      "message": "S18 flip review requires valid keyframes; legacy fallback disabled",
+      "cause": "fixture missing keyframe"
+    }
+  },
+  "scope": "Frozen module browser probes with synthetic source; not a final character film"
+}

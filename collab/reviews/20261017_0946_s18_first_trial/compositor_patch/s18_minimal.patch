@@ -1,0 +1,82 @@
+--- a/js/rig/flipbook.js
++++ b/js/rig/flipbook.js
+@@ -3,28 +3,50 @@
+ // （平移 + 旋转 + 等比缩放），按时间表换帧（一拍三，停顿处停更久），不叠化。
+ // 床单戏图卡要三张图（固有色、法线、材质：tools/prep_flip.py 生成 _n、_m），屋内镜头只用固有色。
+ // 描述文件 assets/flips/<名字>.flip.json：
+-//   { "frames": [{ "file": "x18_f01", "anchors": [[x, y], [x, y]] }, ...], "ref": 0,
++//   { "canvas": [635,1175], "referenceAnchors": [[x,y],[x,y]], "frames": [{ "file": "x18_f01", "anchors": [[x, y], [x, y]] }, ...],
+ //     "timeline": [[0.00, 0], [0.25, 1], ...]（[开始时间（秒）, 帧序号]，到下一项开始为止一直停在这一帧） }
+ const load = async (u) => { const r = await fetch(u); if (!r.ok) throw new Error(`${u} ${r.status}`); return createImageBitmap(await r.blob()); };
+ 
+ export async function loadFlip(name, o = {}) {
+-  const spec = await (await fetch(`/assets/flips/${name}.flip.json`)).json();
++  const response = await fetch(`/assets/flips/${name}.flip.json`);
++  if (!response.ok) throw new Error(`flip ${name}: manifest HTTP ${response.status}`);
++  const spec = await response.json();
++  const fail = (why) => { throw new Error(`flip ${name}: ${why}`); };
++  const anchors = (p, label) => {
++    if (!Array.isArray(p) || p.length !== 2 || p.some(q => !Array.isArray(q) || q.length !== 2 || q.some(v => !Number.isFinite(v)))) fail(`${label}: need two finite points`);
++    if (Math.hypot(p[1][0] - p[0][0], p[1][1] - p[0][1]) < 1) fail(`${label}: anchors must be at least 1px apart`);
++    return p;
++  };
++  if (!Array.isArray(spec.canvas) || spec.canvas.length !== 2 || spec.canvas.some(v => !Number.isInteger(v) || v <= 0)) fail('explicit canvas [width,height] required');
++  const referenceAnchors = anchors(spec.referenceAnchors, 'referenceAnchors');
++  if (!Array.isArray(spec.frames) || !spec.frames.length) fail('frames must not be empty');
++  spec.frames.forEach((f, i) => {
++    if (!f || typeof f.file !== 'string' || !f.file) fail(`frame ${i}: missing file`);
++    anchors(f.anchors, `frame ${i}`);
++  });
++  if (!Array.isArray(spec.timeline) || !spec.timeline.length) fail('timeline must not be empty');
++  spec.timeline.forEach((entry, i) => {
++    if (!Array.isArray(entry) || entry.length !== 2) fail(`timeline ${i}: expected [seconds,frameIndex]`);
++    const [t, k] = entry;
++    if (!Number.isFinite(t) || t < 0 || (i === 0 ? t !== 0 : t <= spec.timeline[i - 1][0])) fail(`timeline ${i}: starts at zero and must strictly increase`);
++    if (!Number.isInteger(k) || k < 0 || k >= spec.frames.length) fail(`timeline ${i}: frame index out of range`);
++  });
+   const frames = await Promise.all(spec.frames.map(async (f) => {
+     const b = `/assets/chars/${f.file}`;
+     const alb = await load(`${b}.png`);
+     const [nrm, mat] = o.maps === false ? [null, null] : await Promise.all([load(`${b}_n.png`).catch(() => null), load(`${b}_m.png`).catch(() => null)]);
++    for (const [ch, img] of [['nrm', nrm], ['mat', mat]]) if (img && (img.width !== alb.width || img.height !== alb.height)) fail(`${f.file}: ${ch} dimensions differ from albedo`);
+     return { ...f, alb, nrm, mat };
+   }));
+-  const ref = frames[spec.ref ?? 0];
+-  // 每张对齐到参考帧：两点确定的相似变换
++  // 每张（包括第一张）对齐到母版坐标；canvas/referenceAnchors 必须显式给出。
+   for (const f of frames) {
+-    const [a1, a2] = f.anchors, [r1, r2] = ref.anchors;
++    const [a1, a2] = f.anchors, [r1, r2] = referenceAnchors;
+     const va = [a2[0] - a1[0], a2[1] - a1[1]], vr = [r2[0] - r1[0], r2[1] - r1[1]];
+     const s = Math.hypot(...vr) / Math.hypot(...va), ang = Math.atan2(vr[1], vr[0]) - Math.atan2(va[1], va[0]);
+     const c = s * Math.cos(ang), d = s * Math.sin(ang);
+     f.M = [c, d, -d, c, r1[0] - (c * a1[0] - d * a1[1]), r1[1] - (d * a1[0] + c * a1[1])];
+   }
+-  return { spec, frames, W: ref.alb.width, H: ref.alb.height, cache: new Map() };
++  return { spec, frames, W: spec.canvas[0], H: spec.canvas[1], cache: new Map() };
+ }
+ // t 时刻该放哪一帧
+ export function frameAt(F, t, timeline = F.spec.timeline) {
+--- a/js/lamp/shots/s18.js
++++ b/js/lamp/shots/s18.js
+@@ -7,8 +7,18 @@
+ import { RIG16, loadRig, layers16, pose16 } from '../xm_rig.js';
+ import { loadFlip, frameAt, flipMaps } from '../../rig/flipbook.js';
+ // 逐帧版（合作方按关键帧单出的 x18_f01…f12，assets/flips/x18_laugh.flip.json）到了就用，整段 3 秒都按关键帧换；没到时退回旧的单张图
+-let FLIP;
+-async function flip() { if (FLIP === undefined) { try { FLIP = await loadFlip('x18_laugh'); } catch { FLIP = null; } } return FLIP; }
++let FLIP, FLIP_ERROR;
++// 试片入口：页面 ?flipReview=1，或导入本模块后调用 setFlipReviewRequired()。
++let FLIP_REQUIRED = new URLSearchParams(globalThis.location?.search ?? '').get('flipReview') === '1';
++export function setFlipReviewRequired(required = true) { FLIP_REQUIRED = required; }
++async function flip() {
++  if (FLIP === undefined) {
++    try { FLIP = await loadFlip('x18_laugh'); }
++    catch (error) { FLIP_ERROR = error; FLIP = null; }
++  }
++  if (FLIP_REQUIRED && FLIP === null) throw new Error('S18 flip review requires valid keyframes; legacy fallback disabled', { cause: FLIP_ERROR });
++  return FLIP;
++}
+ export const DURATION = 3;
+ const T_PU = 0.58;                                     // "噗"：母带琵琶音在 0.60 秒（audio/build.py），画面早一帧；逐帧版第 14 帧同此
+ const CAM = { pos: [1.05, -2.70, 0.55], target: [0.42, -1.2, 0.70], hfov: 40 };
