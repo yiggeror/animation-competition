@@ -1,0 +1,278 @@
+{
+  "verdict": "The delivered PCM slice supports removed-beans new-source content; the actual new S04 MP4 strongly matches its 22–30-second portion with stable sample alignment. Scope is this slice and this MP4, not the full master file hash.",
+  "slice": {
+    "file_sha256": "7f2046b47598f3ee1b34f69447ffda7877ad234ecc663fb63f2d41a1230721da",
+    "pcm_sha256": "cb40dd3ef25fce7f0cd49b7a0956970572d7ec0d3da5607a072cd98c95491a94",
+    "exact_delta_against_independent_new_source": {
+      "sample_values": 1344000,
+      "different_sample_values": 90,
+      "max_abs_difference_lsb": 3,
+      "difference_counts": {
+        "-3": 11,
+        "-2": 5,
+        "-1": 25,
+        "0": 1343910,
+        "1": 32,
+        "2": 6,
+        "3": 11
+      },
+      "difference_rms_lsb": 0.014915436235499051
+    },
+    "difference_rms_dbfs": -126.83627950312813,
+    "window_metrics": [
+      {
+        "name": "S03_all",
+        "new_source": {
+          "reference_start_seconds": 16,
+          "end_seconds": 22,
+          "lag_samples": 0,
+          "correlation": 0.9999999999870282,
+          "gain_ratio_opus_over_reference": 1.0000000039027612,
+          "opus_rms_dbfs": -20.38046676838315,
+          "reference_rms_dbfs": -20.380466802394782,
+          "difference_rms_dbfs": -126.24005018594472,
+          "difference_peak_dbfs": -80.76657360480111,
+          "gain_fitted_residual_snr_db": 105.85958596713527,
+          "exact_equal_sample_fraction": 0.9999236111111112
+        },
+        "restored_beans": {
+          "reference_start_seconds": 16,
+          "end_seconds": 22,
+          "lag_samples": 0,
+          "correlation": 0.8757738560838189,
+          "gain_ratio_opus_over_reference": 0.8024025992356832,
+          "opus_rms_dbfs": -20.38046676838315,
+          "reference_rms_dbfs": -19.620473769482103,
+          "difference_rms_dbfs": -25.91615452098167,
+          "difference_peak_dbfs": -3.927294112420388,
+          "gain_fitted_residual_snr_db": 5.173904733866711,
+          "exact_equal_sample_fraction": 0.0028368055555555555
+        }
+      },
+      {
+        "name": "S03_bite_cues",
+        "new_source": {
+          "reference_start_seconds": 19.8,
+          "end_seconds": 20.5,
+          "lag_samples": 0,
+          "correlation": 0.9999999999932364,
+          "gain_ratio_opus_over_reference": 0.9999999914987744,
+          "opus_rms_dbfs": -20.353180819018583,
+          "reference_rms_dbfs": -20.353180745236635,
+          "difference_rms_dbfs": -129.04026633533937,
+          "difference_peak_dbfs": -80.76657360480111,
+          "gain_fitted_residual_snr_db": 108.68710871461289,
+          "exact_equal_sample_fraction": 0.999985119047619
+        },
+        "restored_beans": {
+          "reference_start_seconds": 19.8,
+          "end_seconds": 20.5,
+          "lag_samples": 0,
+          "correlation": 0.7767856614904708,
+          "gain_ratio_opus_over_reference": 0.6797565661441705,
+          "opus_rms_dbfs": -20.353180819018583,
+          "reference_rms_dbfs": -19.1942249444475,
+          "difference_rms_dbfs": -23.106103480727825,
+          "difference_peak_dbfs": -3.927294112420388,
+          "gain_fitted_residual_snr_db": 1.8224529484269205,
+          "exact_equal_sample_fraction": 0.0007738095238095238
+        }
+      },
+      {
+        "name": "S03_S04_boundary",
+        "new_source": {
+          "reference_start_seconds": 21.9,
+          "end_seconds": 22.1,
+          "lag_samples": 0,
+          "correlation": 0.9999999999704516,
+          "gain_ratio_opus_over_reference": 1.0000000336077641,
+          "opus_rms_dbfs": -21.315404076609322,
+          "reference_rms_dbfs": -21.31540436877931,
+          "difference_rms_dbfs": -123.59958589183661,
+          "difference_peak_dbfs": -80.76657360480111,
+          "gain_fitted_residual_snr_db": 102.28426481645408,
+          "exact_equal_sample_fraction": 0.9999479166666667
+        },
+        "restored_beans": {
+          "reference_start_seconds": 21.9,
+          "end_seconds": 22.1,
+          "lag_samples": 0,
+          "correlation": 0.9999998398432036,
+          "gain_ratio_opus_over_reference": 1.0459012533959007,
+          "opus_rms_dbfs": -21.315404076609322,
+          "reference_rms_dbfs": -21.705219137314344,
+          "difference_rms_dbfs": -48.468005747351256,
+          "difference_peak_dbfs": -36.072854118370536,
+          "gain_fitted_residual_snr_db": 64.94245018114201,
+          "exact_equal_sample_fraction": 0.004427083333333333
+        }
+      },
+      {
+        "name": "S04_power_cut",
+        "new_source": {
+          "reference_start_seconds": 22.55,
+          "end_seconds": 22.95,
+          "lag_samples": 0,
+          "correlation": 0.9999999999870581,
+          "gain_ratio_opus_over_reference": 0.9999999782712817,
+          "opus_rms_dbfs": -19.86875352235056,
+          "reference_rms_dbfs": -19.868753333729718,
+          "difference_rms_dbfs": -125.73838409128741,
+          "difference_peak_dbfs": -80.76657360480111,
+          "gain_fitted_residual_snr_db": 105.86970978603908,
+          "exact_equal_sample_fraction": 0.999921875
+        },
+        "restored_beans": {
+          "reference_start_seconds": 22.55,
+          "end_seconds": 22.95,
+          "lag_samples": 0,
+          "correlation": 0.9667812655830457,
+          "gain_ratio_opus_over_reference": 0.9840554219470191,
+          "opus_rms_dbfs": -19.86875352235056,
+          "reference_rms_dbfs": -20.022604616747266,
+          "difference_rms_dbfs": -31.700733056181537,
+          "difference_peak_dbfs": -2.582587221313435,
+          "gain_fitted_residual_snr_db": 11.554798955769567,
+          "exact_equal_sample_fraction": 0.0012760416666666666
+        }
+      },
+      {
+        "name": "S04_all",
+        "new_source": {
+          "reference_start_seconds": 22,
+          "end_seconds": 30,
+          "lag_samples": 0,
+          "correlation": 0.9999999999921518,
+          "gain_ratio_opus_over_reference": 0.9999999921676238,
+          "opus_rms_dbfs": -19.302849422174777,
+          "reference_rms_dbfs": -19.3028493542118,
+          "difference_rms_dbfs": -127.34417502006175,
+          "difference_peak_dbfs": -80.76657360480111,
+          "gain_fitted_residual_snr_db": 108.04134256871598,
+          "exact_equal_sample_fraction": 0.9999401041666667
+        },
+        "restored_beans": {
+          "reference_start_seconds": 22,
+          "end_seconds": 30,
+          "lag_samples": 0,
+          "correlation": 0.9984512002643813,
+          "gain_ratio_opus_over_reference": 1.0270051783027319,
+          "opus_rms_dbfs": -19.302849422174777,
+          "reference_rms_dbfs": -19.547765285582432,
+          "difference_rms_dbfs": -43.522757238019196,
+          "difference_peak_dbfs": -2.582587221313435,
+          "gain_fitted_residual_snr_db": 25.079628127699216,
+          "exact_equal_sample_fraction": 0.009290364583333334
+        }
+      }
+    ]
+  },
+  "actual_s04_mp4": {
+    "file_sha256": "55644c27389abef54e3f2410460cbb1bb1d242317897812ad3ad16809b2d52f5",
+    "audio_codec": "aac",
+    "sample_rate": "48000",
+    "channels": 2,
+    "bit_rate": "255450",
+    "duration": "8.021333",
+    "alignment": {
+      "constant_lag_samples": 1024,
+      "constant_lag_seconds": 0.021333333333333333,
+      "video_start_seconds": 0.02099609375,
+      "audio_minus_video_seconds": 0.0003372395833333326,
+      "source_master_seconds": [
+        22,
+        30
+      ],
+      "reference_slice_local_seconds": [
+        6,
+        14
+      ]
+    },
+    "audio_pts_discontinuities": [],
+    "full_shot_metrics": {
+      "exact_opus_new_slice": {
+        "shot_start_seconds": 0,
+        "shot_end_seconds": 8,
+        "source_master_start_seconds": 22,
+        "lag_samples": 1024,
+        "lag_seconds": 0.021333333333333333,
+        "correlation": 0.9994617277618123,
+        "gain_ratio_decoded_over_source": 0.9959127585881816,
+        "gain_db": -0.03557407737345598,
+        "reference_rms_dbfs": -19.302849422174777,
+        "decoded_rms_dbfs": -19.33374685811446,
+        "difference_rms_dbfs": -48.94722054024612,
+        "gain_fitted_residual_snr_db": 29.67616385173333,
+        "left_right_correlations": [
+          0.9993069772928604,
+          0.999649396749826
+        ]
+      },
+      "restored_beans_reference": {
+        "shot_start_seconds": 0,
+        "shot_end_seconds": 8,
+        "source_master_start_seconds": 22,
+        "lag_samples": 1024,
+        "lag_seconds": 0.021333333333333333,
+        "correlation": 0.9979121267748122,
+        "gain_ratio_decoded_over_source": 1.02280589037192,
+        "gain_db": 0.19586440954694473,
+        "reference_rms_dbfs": -19.547765285582432,
+        "decoded_rms_dbfs": -19.33374685811446,
+        "difference_rms_dbfs": -42.64384181351136,
+        "gain_fitted_residual_snr_db": 23.77903534382895,
+        "left_right_correlations": [
+          0.9973335905544832,
+          0.9986120616570232
+        ]
+      }
+    },
+    "power_cut_metrics": {
+      "exact_opus_new_slice": {
+        "shot_start_seconds": 0.5,
+        "shot_end_seconds": 0.95,
+        "source_master_start_seconds": 22.5,
+        "lag_samples": 1024,
+        "lag_seconds": 0.021333333333333333,
+        "correlation": 0.9960081150869353,
+        "gain_ratio_decoded_over_source": 0.9916923795016832,
+        "gain_db": -0.07246048037735786,
+        "reference_rms_dbfs": -19.802877644436574,
+        "decoded_rms_dbfs": -19.840594688051354,
+        "difference_rms_dbfs": -40.78928978589598,
+        "gain_fitted_residual_snr_db": 20.95173205433766,
+        "left_right_correlations": [
+          0.9947695023364279,
+          0.99869733566828
+        ]
+      },
+      "restored_beans_reference": {
+        "shot_start_seconds": 0.5,
+        "shot_end_seconds": 0.95,
+        "source_master_start_seconds": 22.5,
+        "lag_samples": 1024,
+        "lag_seconds": 0.021333333333333333,
+        "correlation": 0.9668047244572717,
+        "gain_ratio_decoded_over_source": 0.982769813949214,
+        "gain_db": -0.15096382928109162,
+        "reference_rms_dbfs": -19.982866375933163,
+        "decoded_rms_dbfs": -19.840594688051354,
+        "difference_rms_dbfs": -31.672995801660456,
+        "gain_fitted_residual_snr_db": 11.558234700745603,
+        "left_right_correlations": [
+          0.9646548713410775,
+          0.9714633715535639
+        ]
+      }
+    },
+    "measured_input_lufs": "-14.06",
+    "measured_input_true_peak_dbtp": "-3.95",
+    "measured_input_lra": "3.00"
+  },
+  "limitations": [
+    "90 PCM values differ by at most 3 LSB between independently built new-source segment and supplied segment; cause is not established. Software-version causation is not claimed.",
+    "AAC decoded PCM is lossy; correlation supports content binding, not a cryptographic proof of the mux source filename.",
+    "The complete 95304b16… master was not supplied, so its full-file hash is not independently established.",
+    "No subjective listening, video-frame review, full rebuild, or production edits in this increment."
+  ]
+}

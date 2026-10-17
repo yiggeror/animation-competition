@@ -1,0 +1,104 @@
+{
+  "scope": "Independent static/source/registration review only; no actual scene or real-time video verdict.",
+  "fixed_target_size": [
+    941,
+    1212
+  ],
+  "fixed_target_anchors": [
+    [
+      165.0,
+      1084.0
+    ],
+    [
+      843.0,
+      1147.0
+    ]
+  ],
+  "fixed_holdout": [
+    594.0,
+    1111.0
+  ],
+  "fixed_threshold_px": 3,
+  "patches": [
+    [
+      -35,
+      -25,
+      35,
+      25
+    ],
+    [
+      -30,
+      -25,
+      30,
+      25
+    ],
+    [
+      -35,
+      -35,
+      35,
+      35
+    ]
+  ],
+  "search_native_px": 40,
+  "method": "NCC template matching reimplemented using scipy correlate; similarity computed independently in complex coordinates using A/B only; H never fitted. Master and original pixels read-only.",
+  "frames": [
+    {
+      "key": "k15",
+      "source": "s03_author/originals/g03_watermelon_k15.png",
+      "source_sha256": "ef95175a9d4ee526024f58c5210f27f4871d6ad92f76711e236d0e8cccf75f90",
+      "size": [
+        1105,
+        1424
+      ],
+      "native_anchors": [
+        [
+          195.03523219502728,
+          1266.1150247384717
+        ],
+        [
+          988.4423145404257,
+          1339.3949199138856
+        ]
+      ],
+      "native_holdout": [
+        696.428939763212,
+        1299.2707568838227
+      ],
+      "ncc_scores": [
+        0.969713006758364,
+        0.924672161200357,
+        0.9859619463516065
+      ],
+      "matrix": [
+        [
+          0.854586181727754,
+          -0.00047392340325652757
+        ],
+        [
+          0.00047392340325652757,
+          0.854586181727754
+        ]
+      ],
+      "translation": [
+        -1.0743728424959897,
+        1.9031636196118598
+      ],
+      "mapped_holdout": [
+        593.4684208156013,
+        1112.5720527487458
+      ],
+      "residual_px": 1.659495789125486,
+      "passes_3px": true,
+      "author_residual_px": 1.659495789125486,
+      "difference_from_author": 0.0,
+      "red_flesh_centroid_registered_px": [
+        445.71593253245965,
+        591.8216235893702
+      ],
+      "red_flesh_diagnostic_only": true,
+      "independent_registered_sha256": "09478b0dc5cbc40a2d85ed836c967faf3425705bd26d7cbf11ffa3b52d788ad5",
+      "author_registered_pixels_equal": true
+    }
+  ],
+  "fruit_diagnostic_steps": []
+}
