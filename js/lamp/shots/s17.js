@@ -19,13 +19,13 @@ export function sheet(t, env) {
   const tx = 2.55 - 0.62 * sstep(0, 5.0, t), tz = 0.45;
   const walking = t < 5.0 ? 1 : 0;
   let neckOut = 0.55 * sstep(4.6, 5.2, t);
-  neckOut *= 1 - sstep(5.75, 5.85, t) + sstep(7.3, 7.8, t);          // 第一次啄：缩头，过一会儿又探出来
+  neckOut *= 1 - sstep(5.52, 5.66, t) + sstep(7.3, 7.8, t);          // 第一次啄：喙还没到就缩头（啄空），过一会儿又探出来
   neckOut *= 1 - sstep(8.35, 8.45, t);                                // 第二次啄：又缩
   neckOut += 0.7 * sstep(11.5, 12.6, t) * (1 + 0.08 * Math.sin(t * 9)); // 最后慢慢探出头，一颤一颤（像在笑）
   const tPose = turtlePose(t, { facing: -1, walk: walking, speed: 1.0, neckOut: Math.min(1, neckOut), headTilt: 0.1 });   // 每秒两步，和配乐的低音步子对上
   // ---- 鹤
   const look = sstep(2.8, 4.2, t);                                     // 发现了，低头看
-  const p1 = peck(t, 5.5), p2 = peck(t, 8.2, 0.3, 0.05, 0.25);
+  const p1 = peck(t, 5.5), p2 = peck(t, 8.2, 0.3, 0.05, 0.25);   // 第一啄身子往后收 10 厘米：喙落在龟头刚才的位置（龟头已缩回），啄空
   const hit = t > 8.5 ? Math.exp(-(t - 8.5) * 1.2) : 0;                 // 撞上之后
   const dizzy = sstep(8.6, 9.0, t) * (1 - sstep(11.8, 13.5, t));
   const amp = sstep(8.6, 9.0, t) * (1 - sstep(10.6, 12.4, t));        // 晕的幅度：撞完最大，慢慢缓过来
@@ -35,7 +35,7 @@ export function sheet(t, env) {
   neck = neck.map((v, i) => v + amp * 0.10 * Math.sin(t * 6 + i * 0.45) * (i < 12 ? 1 : 3.5) + dizzy * 0.02 * Math.sin(t * 3 + i));
   const sway = amp * Math.sin(t * 4.2);
   const recoil = hit * 0.05 * Math.sin((t - 8.5) * 14);                 // 撞上那一下往回弹
-  const root = [1.30 - 0.03 * sstep(8.5, 8.7, t) + 0.02 * sstep(9, 12, t) + recoil * 0.3 + 0.022 * amp * Math.sin(t * 4.2 + 0.9), 0.66 + 0.005 * Math.sin(t * 1.7) - 0.008 * amp * Math.abs(Math.sin(t * 4.2))];
+  const root = [1.30 - 0.10 * p1 - 0.03 * sstep(8.5, 8.7, t) + 0.02 * sstep(9, 12, t) + recoil * 0.3 + 0.022 * amp * Math.sin(t * 4.2 + 0.9), 0.66 + 0.005 * Math.sin(t * 1.7) - 0.008 * amp * Math.abs(Math.sin(t * 4.2))];
   // 撞上以后收着的那条腿放下来，两条腿撑着（0.3 秒过渡，不跳帧）
   const cPose = cranePoseOf(neck, { mode: 'stand', swing: 0.12 * hit * Math.sin((t - 8.5) * 6) }, 0.04 + recoil + 0.15 * sway, 1);
   const two = cranePoseOf(neck, { mode: 'two' }).angles, k2 = sstep(8.6, 8.9, t) * (1 - sstep(12.6, 13.2, t));

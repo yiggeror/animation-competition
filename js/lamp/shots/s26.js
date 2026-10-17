@@ -10,7 +10,7 @@ const F = [1.50, 0.9, 0.80], DOG_D = 0.40;            // 手电（x, 离床单, 
 // 越演越快：时间先按 1 倍走，10 秒以后逐渐加到 1.8 倍
 const tempo = (t) => t + 0.8 * Math.max(0, t - 10) ** 2 / 16;
 
-function cast(t, env) {
+export function cast(t, env) {
   TURTLE ||= makeTurtle(); DOG ||= makeDog(1.0);
   const u = tempo(t);
   // ---- 狗影的位置（床单上）：从光斑右边探进来，冲鹤叫，追着鹤跑来跑去
