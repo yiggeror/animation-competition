@@ -5,9 +5,8 @@
 //   奶奶停下手里的豆子坐在暗里；月光从左边窗口斜进来。
 // 吊扇减速和 audio/build.py 的吊扇声一样按 exp(-(t-0.6)/2.2) 衰减。
 import { renderPaint, loadImg } from '../paintshot.js';
-import { loadRig, render as warp } from '../../rig/warp.js';
-import { grandmaBeans } from '../../rig/acts.js';
-import { GM, XM, COIL, FAN, xmLayers, xiaoman, COILC, SHADOWS } from './s01.js';
+import { flipLayer } from '../../rig/flipbook.js';
+import { GM, XM, COIL, FAN, COILC, SHADOWS } from './s01.js';
 export const DURATION = 8;
 const T_CUT = 0.6, T_B = 2.6;
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
@@ -88,12 +87,11 @@ const PHONE = [XM.x + 1428 * XM.sc, XM.y + 560 * XM.sc];          // 小满手�
 const shotB = {
   bg: 'bg_01_room_wide', size: [BW, BH],
   layers: async (t) => {
-    const L = await xmLayers();
     return [
       { img: SHADOWS, x: 0, y: 0, sc: 1, alpha: 0.4 },
       { img: COILC, x: COIL[0] - 60, y: COIL[1] - 34, sc: 1 },
-      { img: xiaoman(L, t), x: XM.x, y: XM.y, sc: XM.sc },
-      { img: warp(await loadRig('g01_beans'), grandmaBeans(t, { stop: 0.6, up: 1.0, blinks: [2.9, 5.6] })), x: GM.x, y: GM.y, sc: GM.sc, ox: 304, oy: 1348 },   // 奶奶：灭灯时停下手里的豆子，抬头看
+      { img: await flipLayer('x01_prone_phone_s04', t, 'x01_prone_phone'), x: XM.x, y: XM.y, sc: XM.sc },   // 逐帧，和 S01 同一组图、本镜自己的时间表
+      { img: await flipLayer('g01_beans_s04', t, 'g01_beans'), x: GM.x, y: GM.y, sc: GM.sc, ox: 304, oy: 1348 },   // 奶奶：灭灯后停下手里的豆子，抬头看
       { img: blades(t), x: 0, y: 0, sc: 1 },
     ];
   },

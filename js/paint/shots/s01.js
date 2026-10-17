@@ -1,13 +1,10 @@
 // S01 · 第 1 场：全景，夏夜的堂屋（底图 bg_01_room_wide），日光灯惨白，吊扇转，电视亮着，蚊香的烟往上飘。
 // 小满趴在竹席上横握手机打游戏（合作方画的 anim_01_xiaoman_prone_phone，抠图 assets/chars/x01_prone_phone.png），
-// 两条小腿翘着一晃一晃；奶奶坐在竹席那头的矮凳上剥毛豆（g01_beans，骨架驱动：js/rig/acts.js 的 grandmaBeans）。镜头慢慢推近。
+// 两条小腿翘着一晃一晃；奶奶坐在竹席那头的矮凳上剥毛豆（g01_beans）。镜头慢慢推近。
+// 两人的动作是逐帧关键帧（合作方生图，assets/flips/x01_prone_phone、g01_beans.flip.json，js/rig/flipbook.js 的 flipLayer）。
 // 游戏的"跳"声和剥豆声在 audio/build.py。推西瓜那一下放在 S03（奶奶近景）。
 import { renderPaint } from '../paintshot.js';
-import { loadRig, render as warp } from '../../rig/warp.js';
-import { grandmaBeans, xiaomanPhone } from '../../rig/acts.js';
-// 小满的绑骨（合作方出）到了就用骨架驱动，没到时退回旧的"小腿绕膝盖转"分层
-let XR;
-async function xmRig() { if (XR === undefined) { try { XR = await loadRig('x01_prone_phone'); } catch { XR = null; } } return XR; }
+import { flipLayer } from '../../rig/flipbook.js';
 export const DURATION = 12;
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
 const BW = 1672, BH = 941;
@@ -15,28 +12,6 @@ export const GM = { x: 905, y: 772, sc: 0.235 };                       // 奶奶
 export const XM = { x: 437, y: 509, sc: 0.19 };                        // 小满：图左上角落在底图 (x, y)，头朝右、手肘撑在竹席上
 export const COIL = [770, 712];                                        // 蚊香（地上，竹席右头和奶奶之间）
 export const FAN = [787, 112];                                         // 吊扇电机（底图）
-// 小腿：绕膝盖晃。图像素里的小腿范围（脚和小腿）和膝盖
-const LEGS = { poly: [[0, 90], [470, 90], [470, 560], [410, 690], [300, 735], [0, 640]], cut: [[0, 90], [455, 90], [455, 560], [398, 680], [300, 722], [0, 640]], knee: [330, 715] };
-let XL = null;
-export async function xmLayers() {
-  if (XL) return XL;
-  const im = await createImageBitmap(await (await fetch('/assets/chars/x01_prone_phone.png')).blob());
-  const mk = (keep, cut) => {
-    const c = new OffscreenCanvas(im.width, im.height), x = c.getContext('2d');
-    if (keep) { x.beginPath(); keep.forEach(([px, py], i) => (i ? x.lineTo(px, py) : x.moveTo(px, py))); x.closePath(); x.clip(); }
-    x.drawImage(im, 0, 0);
-    if (cut) { x.globalCompositeOperation = 'destination-out'; x.beginPath(); cut.forEach(([px, py], i) => (i ? x.lineTo(px, py) : x.moveTo(px, py))); x.closePath(); x.fill(); }
-    return c;
-  };
-  return (XL = { body: mk(null, LEGS.cut), legs: mk(LEGS.poly, null), w: im.width, h: im.height });
-}
-export function xiaoman(L, t) {
-  const c = new OffscreenCanvas(L.w, L.h), x = c.getContext('2d');
-  x.drawImage(L.body, 0, 0);
-  const a = 0.07 * Math.sin(t * 2.4) + 0.03 * Math.sin(t * 5.1 + 1);   // 小腿一晃一晃
-  x.save(); x.translate(...LEGS.knee); x.rotate(a); x.translate(-LEGS.knee[0], -LEGS.knee[1]); x.drawImage(L.legs, 0, 0); x.restore();
-  return c;
-}
 // 蚊香：绿色的盘香搁在铁架上，头上一点红
 function coil() {
   const c = new OffscreenCanvas(120, 60), x = c.getContext('2d');
@@ -58,12 +33,11 @@ const tv = (t) => 0.3 + 0.12 * Math.sin(t * 3.1) + 0.08 * Math.sin(t * 7.7 + 1) 
 const shot = {
   bg: 'bg_01_room_wide', size: [BW, BH],
   layers: async (t) => {
-    const L = await xmLayers();
     return [
       { img: SHADOWS, x: 0, y: 0, sc: 1 },
       { img: COILC, x: COIL[0] - 60, y: COIL[1] - 34, sc: 1 },
-      { img: (await xmRig()) ? warp(XR, xiaomanPhone(t, XR)) : xiaoman(L, t), x: XM.x, y: XM.y, sc: XM.sc },
-      { img: warp(await loadRig('g01_beans'), grandmaBeans(t, { looks: [2.6, 8.2] })), x: GM.x, y: GM.y, sc: GM.sc, ox: 304, oy: 1348 },   // 奶奶：骨架驱动剥豆，抬眼看两次小满
+      { img: await flipLayer('x01_prone_phone', t), x: XM.x, y: XM.y, sc: XM.sc },
+      { img: await flipLayer('g01_beans', t), x: GM.x, y: GM.y, sc: GM.sc, ox: 304, oy: 1348 },   // 奶奶：逐帧摘豆，抬眼看小满
     ];
   },
   light: (t) => ({
