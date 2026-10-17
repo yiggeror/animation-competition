@@ -3,7 +3,7 @@
 // 时长按 docs/preproduction/beat-sheet.md 的节拍，比原镜头表（34 个）压缩、合并了一些动作；总长约 4 分 40 秒。
 export const SHOTS = [
   // 第 1 场 · 闷（日光灯）
-  { id: 'S01', scene: 1, line: 'paint', dur: 12, text: '全景：吊扇转、蚊香烟、电视亮着；小满趴在竹席上玩手机，奶奶坐矮凳剥毛豆，推过来一块西瓜，小满摇头' },
+  { id: 'S01', scene: 1, line: 'paint', dur: 12, mod: 'js/paint/shots/s01.js', text: '全景：吊扇转、蚊香烟、电视亮着；小满趴在竹席上玩手机，奶奶坐矮凳剥毛豆，推过来一块西瓜，小满摇头' },
   { id: 'S02', scene: 1, line: 'code', dur: 4, mod: 'js/code/s02.js', text: '特写：手机屏幕，游戏画面 + 电量 2%' },
   { id: 'S03', scene: 1, line: 'paint', dur: 6, mod: 'js/paint/shots/s03.js', text: '中近景：奶奶剥一颗豆，看一眼小满，自己咬一口西瓜' },
   // 第 2 场 · 停电
