@@ -1,0 +1,278 @@
+{
+ "image": "assets/chars/g01_beans.png",
+ "size": [
+  779,
+  1355
+ ],
+ "author": "Opus（样板，手量）",
+ "bones": [
+  {
+   "name": "root",
+   "parent": null,
+   "head": [
+    560,
+    900
+   ],
+   "tail": [
+    560,
+    830
+   ]
+  },
+  {
+   "name": "thigh",
+   "parent": "root",
+   "head": [
+    560,
+    860
+   ],
+   "tail": [
+    150,
+    820
+   ]
+  },
+  {
+   "name": "shin",
+   "parent": "thigh",
+   "head": [
+    150,
+    830
+   ],
+   "tail": [
+    150,
+    1250
+   ]
+  },
+  {
+   "name": "stool",
+   "parent": "root",
+   "head": [
+    640,
+    980
+   ],
+   "tail": [
+    640,
+    1200
+   ]
+  },
+  {
+   "name": "bowl",
+   "parent": "root",
+   "head": [
+    170,
+    720
+   ],
+   "tail": [
+    440,
+    720
+   ]
+  },
+  {
+   "name": "spine",
+   "parent": "root",
+   "head": [
+    560,
+    840
+   ],
+   "tail": [
+    430,
+    330
+   ]
+  },
+  {
+   "name": "neck",
+   "parent": "spine",
+   "head": [
+    430,
+    330
+   ],
+   "tail": [
+    375,
+    275
+   ]
+  },
+  {
+   "name": "head",
+   "parent": "neck",
+   "head": [
+    375,
+    275
+   ],
+   "tail": [
+    330,
+    110
+   ]
+  },
+  {
+   "name": "upperarm_near",
+   "parent": "spine",
+   "head": [
+    590,
+    430
+   ],
+   "tail": [
+    600,
+    680
+   ]
+  },
+  {
+   "name": "forearm_near",
+   "parent": "upperarm_near",
+   "head": [
+    600,
+    680
+   ],
+   "tail": [
+    400,
+    640
+   ]
+  },
+  {
+   "name": "hand_near",
+   "parent": "forearm_near",
+   "head": [
+    400,
+    640
+   ],
+   "tail": [
+    290,
+    580
+   ]
+  },
+  {
+   "name": "upperarm_far",
+   "parent": "spine",
+   "head": [
+    383,
+    398
+   ],
+   "tail": [
+    300,
+    510
+   ]
+  },
+  {
+   "name": "forearm_far",
+   "parent": "upperarm_far",
+   "head": [
+    300,
+    510
+   ],
+   "tail": [
+    190,
+    480
+   ]
+  },
+  {
+   "name": "hand_far",
+   "parent": "forearm_far",
+   "head": [
+    190,
+    480
+   ],
+   "tail": [
+    140,
+    470
+   ]
+  }
+ ],
+ "layers": [],
+ "pins": [],
+ "notes": "样板：腿、凳子、盆用不动的骨头压住，免得被胳膊和身子带着变形。",
+ "regions": [
+  {
+   "bones": [
+    "bowl"
+   ],
+   "poly": [
+    [
+     95,
+     690
+    ],
+    [
+     300,
+     662
+    ],
+    [
+     470,
+     640
+    ],
+    [
+     480,
+     700
+    ],
+    [
+     430,
+     820
+    ],
+    [
+     180,
+     820
+    ],
+    [
+     105,
+     760
+    ]
+   ]
+  },
+  {
+   "bones": [
+    "thigh",
+    "shin",
+    "stool",
+    "root"
+   ],
+   "poly": [
+    [
+     60,
+     820
+    ],
+    [
+     700,
+     860
+    ],
+    [
+     779,
+     880
+    ],
+    [
+     779,
+     1355
+    ],
+    [
+     0,
+     1355
+    ],
+    [
+     0,
+     830
+    ]
+   ]
+  }
+ ],
+ "eyes": [
+  {
+   "c": [
+    335,
+    217
+   ],
+   "rx": 17,
+   "ry": 15,
+   "rot": 0.08,
+   "skin": "#fed4b1",
+   "line": "#3a2418",
+   "lw": 3
+  },
+  {
+   "c": [
+    281,
+    228
+   ],
+   "rx": 9,
+   "ry": 13,
+   "rot": 0.1,
+   "skin": "#fed4b1",
+   "line": "#3a2418",
+   "lw": 2.5
+  }
+ ]
+}

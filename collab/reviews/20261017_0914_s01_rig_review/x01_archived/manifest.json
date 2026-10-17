@@ -1,0 +1,81 @@
+{
+  "status": "frozen_head_boundary_revision_pending_final_independent_review",
+  "source": {
+    "path": "assets/chars/x01_prone_phone.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "9c99009187235b2e5ed2fccea85275957494c79dde56d95c55ff7e696332ad2a"
+  },
+  "engine_reference": {
+    "path": "/workspace/animation-competition/js/rig/warp.js",
+    "sha256": "7576db53c333c505bfe8d8ad8c179742cffc1293d49dca6416f1db6ea23e5deb",
+    "repo_head": "942df5d2701966c483902c7c0edb9bd3b7b2196b"
+  },
+  "scope": "x01 static rig data only; no shot edits, no animation validation",
+  "files": [
+    {
+      "path": "x01_prone_phone.rig.json",
+      "sha256": "48650432c05c4b6d1af4882fc76a157f7867863b3a65ca671aaeb222b8cadaa7"
+    },
+    {
+      "path": "x01_prone_phone.annotated.png",
+      "sha256": "be6f9c29cc10bef4c2ad7ab48b50026c3f6ac4ceebf1e8c6daceccbe3ae4dfb1"
+    },
+    {
+      "path": "x01_prone_phone.source.sha256",
+      "sha256": "b48db078081e0e3b3c4f782a909b4deafa55423b9dccd04908ce4d87cff17aa0"
+    },
+    {
+      "path": "author_report.md",
+      "sha256": "d12857b0fe6a03d2f70a46b79888cc462ad4da2979112ce9960e72eb79daa7de"
+    },
+    {
+      "path": "validate_x01.py",
+      "sha256": "a577aaf80ee45d9e494a9c48a9faba342bc7e022874e086ad10bbae9013d622a"
+    },
+    {
+      "path": "x01_static_validation.json",
+      "sha256": "a7c37bb6b41f48bd70023eb2442b15c19d9d4aba04568698f733ce81abb6f1d9"
+    },
+    {
+      "path": "x01_eyes_overlay.png",
+      "sha256": "3f4bce0f18e3201528b1ea9d95aee7a9024e32c699c97861cf382dcbb1ed573c"
+    },
+    {
+      "path": "x01_region_diagnostics/0_phone.png",
+      "sha256": "36804b580fc81328d48d60954a36588aecd43644678a96c8fc1feb504b53232c"
+    },
+    {
+      "path": "x01_region_diagnostics/1_head.png",
+      "sha256": "71a3db662ed0e1a40168b08406a7b0a806e70a97e392f85bb687e87ad7060b5a"
+    },
+    {
+      "path": "x01_region_diagnostics/2_neck_head.png",
+      "sha256": "2ca9bc0f856630580d02d22c6dd2e7a2a356395784bfb05686a78ced74ea5fb6"
+    },
+    {
+      "path": "x01_region_diagnostics/3_root_upperarm_near_forearm_near.png",
+      "sha256": "0c2549ac395e9536784cefe8c11c11af9846d367e0d69e41968d439c2e38e471"
+    },
+    {
+      "path": "x01_region_diagnostics/4_root_upperarm_far_forearm_far.png",
+      "sha256": "0acc3c244a48005c2edbbf69b4f99f6c62d5be00eff7e42a43d0b883946428e5"
+    },
+    {
+      "path": "x01_region_diagnostics/5_root_thigh_near_shin_near_foot_near.png",
+      "sha256": "8eb1240ba86588fe769e6a2ab0160dd71c1be8d3d65f005465b8a303ad610615"
+    },
+    {
+      "path": "x01_region_diagnostics/6_root_thigh_far_shin_far_foot_far.png",
+      "sha256": "fb6c796c60c50979f41a5cc4909101f4f15a8fc4cd634bc625cb174ccb5f672e"
+    },
+    {
+      "path": "head_braid_effective.png",
+      "sha256": "de3cbb9d0ba079afca09690479fdba788115c8d80d6da874daddb583f09aa36e"
+    }
+  ],
+  "supersedes_rig_sha256": "1431fb65b98a19762cfb9e25c1dbb39d62bdc355ff46cf02f356f052859ad350",
+  "revision_scope": "only regions[1] near-braid boundary plus explanatory notes; all other rig data byte-equivalent after JSON parsing"
+}

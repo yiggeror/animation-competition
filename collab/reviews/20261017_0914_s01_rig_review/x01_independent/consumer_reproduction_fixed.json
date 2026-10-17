@@ -1,0 +1,44 @@
+{
+  "consumer": "/tmp/laidian-s01-rigs/audit_x01/warp_reviewed_fixed_7576db53c333.js",
+  "synthetic": true,
+  "noWebGLRender": true,
+  "pin": {
+    "at": [
+      60,
+      50
+    ],
+    "layerAllowed": [
+      "arm"
+    ],
+    "defaultRootTarget": true,
+    "weights": [
+      {
+        "bone": "root",
+        "w": 1
+      },
+      {
+        "bone": "arm",
+        "w": 0
+      },
+      {
+        "bone": "root",
+        "w": 0
+      },
+      {
+        "bone": "root",
+        "w": 0
+      }
+    ],
+    "posedAt": [
+      60,
+      50
+    ],
+    "drift": 0
+  },
+  "keepUnder": {
+    "bodyRestEqual": false,
+    "bodyTrisEqual": false,
+    "bodyHasCenterVertex": true
+  },
+  "scope": "Consumer bind/transform reproduction, not actual x01 rig render"
+}
