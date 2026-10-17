@@ -1,0 +1,38 @@
+{
+  "shot": "S18",
+  "master": "assets/chars/x18_laugh.png",
+  "head_r": 105,
+  "nose_deg": -15,
+  "joints": {
+    "pelvis": [230, 650], "neck": [285, 420], "head": [300, 250],
+    "sh_n": [310, 455], "el_n": [420, 575], "wr_n": [395, 355], "hd_n": [378, 292],
+    "sh_f": [255, 445], "el_f": [330, 640], "wr_f": [470, 730], "hd_f": [525, 752],
+    "knee": [500, 780], "ankle": [470, 1080]
+  },
+  "keys": [
+    { "t": 0.00, "head_rot": -5, "shoulder_lift": 0, "wr_n": [455, 722], "hand_deg_n": 20, "wr_f": [470, 730], "hand_deg_f": 20,
+      "note": "看皮影看呆了：两手搭在膝盖上，抬头看床单，嘴微张，眼睛正常睁着" },
+    { "t": 0.25, "head_rot": -8, "shoulder_lift": 4, "wr_n": [455, 722], "hand_deg_n": 20, "wr_f": [470, 730], "hand_deg_f": 20,
+      "note": "反应过来（乌龟把鹤撞晕了）：眼睛睁大，眉毛抬起，嘴还张着" },
+    { "t": 0.42, "head_rot": 6, "shoulder_lift": 10, "wr_n": [455, 722], "hand_deg_n": 20, "wr_f": [470, 730], "hand_deg_f": 20,
+      "note": "憋笑：嘴抿紧，腮帮子鼓起一点，眼睛开始弯，下巴往回收，肩膀微微耸" },
+    { "t": 0.50, "head_rot": -14, "shoulder_lift": 22, "wr_n": [455, 722], "hand_deg_n": 20, "wr_f": [470, 730], "hand_deg_f": 20,
+      "note": "\"噗\"：嘴张开喷笑，眼睛眯成弯月，头往后仰，肩膀耸起" },
+    { "t": 0.62, "head_rot": -18, "shoulder_lift": 26, "wr_n": [455, 722], "hand_deg_n": 20, "wr_f": [470, 730], "hand_deg_f": 20,
+      "note": "笑到最大：同上，头再往后一点，肩膀最高" },
+    { "t": 0.80, "head_rot": -12, "shoulder_lift": 18, "wr_n": [440, 480], "hand_deg_n": -100, "wr_f": [470, 730], "hand_deg_f": 20,
+      "note": "近处的手从膝盖抬起来，到下巴下面（还没碰到嘴），还在笑" },
+    { "t": 0.92, "head_rot": -8, "shoulder_lift": 12, "wr_n": [395, 355], "hand_deg_n": -105, "wr_f": [470, 730], "hand_deg_f": 20,
+      "note": "手捂上嘴，手指并拢盖住嘴（和母版一样），眼睛还弯着" },
+    { "t": 1.05, "head_rot": -4, "shoulder_lift": 4, "wr_n": [395, 360], "hand_deg_n": -105, "wr_f": [470, 730], "hand_deg_f": 20,
+      "note": "捂着嘴偷笑，肩膀落下（抖动 A）" },
+    { "t": 1.17, "head_rot": -10, "shoulder_lift": 14, "wr_n": [395, 350], "hand_deg_n": -105, "wr_f": [470, 730], "hand_deg_f": 20,
+      "note": "捂着嘴偷笑，肩膀耸起（抖动 B）；A、B 交替三次" },
+    { "t": 1.90, "head_rot": -6, "shoulder_lift": 8, "wr_n": [395, 355], "hand_deg_n": -105, "wr_f": [470, 730], "hand_deg_f": 20,
+      "note": "手还捂着嘴，眼睛睁开一条缝偷偷往旁边瞄（看奶奶有没有看见）" },
+    { "t": 2.30, "head_rot": -4, "shoulder_lift": 6, "wr_n": [395, 357], "hand_deg_n": -105, "wr_f": [470, 730], "hand_deg_f": 20,
+      "note": "眼睛又弯回去，眉毛往下耷拉成\"忍不住\"的样子，手捂着嘴" },
+    { "t": 2.60, "head_rot": -8, "shoulder_lift": 12, "wr_n": [395, 352], "hand_deg_n": -105, "wr_f": [470, 730], "hand_deg_f": 20,
+      "note": "肩膀最后一抖，停到 3 秒" }
+  ]
+}
