@@ -2,13 +2,31 @@
 // 抠图 assets/chars/x09_flashlight.png），一脸疑惑。马灯在她前面（画面右边、桌上），暖光从右边照在脸上。
 // 1.6 推开关——不亮（"咔"）；2.1、2.5 往手心上磕两下（整个人跟着一顿，2.5 那下灯泡闪了一下又灭）；2.9 再推——亮了，
 // 一道冷白的光柱往右边打出去，空气里的灰被照亮，手和脸被手电头反上来的光照亮。时间对上 audio/build.py 的 S09。
-// 图只有一个姿势：推开关的拇指动作看不见，"磕"用整张图往下一顿再弹回来表现。
+// "拍"：合作方另画了抬手的 B（anim_09_xiaoman_flashlight_slap，右手举在手电上方）。脸、腿、托着手电的左手都用 A，
+// 只把"右胳膊 + 两只手 + 手电"这一块（REG，边缘羽化）换成 B——每下拍之前抬手 4 帧（B），拍下去回到 A、整个人一顿。
+// 推开关的拇指动作看不见。
 import { renderPaint, loadImg } from '../paintshot.js';
 export const DURATION = 4;
 const W = 1920, H = 1080;
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
 // 图（1536×1024）→ 画面：缩放 1.0，左上角放在 (OX, OY)；手电头（灯头玻璃的中心）在图上 (1088, 488)
 const OX = 120, OY = 60, HEAD = [1088, 488];
+const REG = [[540, 450], [630, 390], [870, 365], [1075, 360], [1080, 425], [970, 465], [970, 580], [880, 595], [830, 660], [660, 670], [540, 590]];
+const UP = [[1.92, 2.08], [2.33, 2.48]];          // 抬手（B）的时间段，各约 4 帧；拍下去在 2.1、2.5
+const up = (t) => UP.some(([a, b]) => t >= a && t < b);
+let AB = null;
+async function abLayers() {
+  if (AB) return AB;
+  const A = await loadImg('/assets/chars/x09_flashlight.png'), B = await loadImg('/assets/chars/x09_flashlight_slap.png');
+  const mask = new OffscreenCanvas(A.width, A.height), mx = mask.getContext('2d');
+  mx.filter = 'blur(7px)'; mx.fillStyle = '#000'; mx.beginPath(); REG.forEach(([x, y], i) => (i ? mx.lineTo(x, y) : mx.moveTo(x, y))); mx.closePath(); mx.fill();
+  const aCut = new OffscreenCanvas(A.width, A.height), ax = aCut.getContext('2d');
+  ax.drawImage(A, 0, 0); ax.globalCompositeOperation = 'destination-out'; ax.drawImage(mask, 0, 0);
+  const bReg = new OffscreenCanvas(A.width, A.height), bx = bReg.getContext('2d');
+  bx.drawImage(B, 0, 0); bx.globalCompositeOperation = 'destination-in'; bx.drawImage(mask, 0, 0);
+  const both = new OffscreenCanvas(A.width, A.height), cx = both.getContext('2d'); cx.drawImage(aCut, 0, 0); cx.drawImage(bReg, 0, 0);
+  return (AB = { A, slap: both });
+}
 const T_ON = 2.9, SLAPS = [2.1, 2.5];
 const jolt = (t) => SLAPS.reduce((a, p) => a + (t > p && t < p + 0.3 ? Math.exp(-(t - p) * 16) * Math.sin((t - p) * 38) : 0), 0);
 const on = (t) => (t >= T_ON ? sstep(T_ON, T_ON + 0.05, t) : t > 2.52 && t < 2.58 ? 0.35 : 0);
@@ -28,8 +46,8 @@ async function bg() {
 const shot = {
   size: [W, H],
   layers: async (t) => {
-    const j = jolt(t);
-    return [{ img: '/assets/chars/x09_flashlight.png', x: OX, y: OY + 14 * j + 1.6 * Math.sin(t * 1.8), sc: 1, rot: 0.006 * j }];
+    const j = jolt(t), L = await abLayers();
+    return [{ img: up(t) ? L.slap : L.A, x: OX, y: OY + 14 * j + 1.6 * Math.sin(t * 1.8), sc: 1, rot: 0.006 * j }];
   },
   light: (t) => {
     const f = 1 + 0.04 * Math.sin(t * 11) + 0.03 * Math.sin(t * 23), o = on(t), h = headF(t);
