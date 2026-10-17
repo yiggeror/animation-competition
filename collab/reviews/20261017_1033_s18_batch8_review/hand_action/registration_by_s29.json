@@ -1,0 +1,934 @@
+{
+  "method": "Local gradient-NCC in a uniformly scaled nominal canvas; global similarity fitted ONLY to two stool-foot landmarks. Third seat corner is held out. No head/clothing features fit.",
+  "precision": "Matching is integer nominal pixels, about 1.45 source pixels; decimal native coordinates express the coordinate conversion, not subpixel localization precision.",
+  "frames": [
+    {
+      "key": "k02",
+      "file": "x18_k02.png",
+      "source_path": "/tmp/laidian-s18-batch8/originals/x18_k02.png",
+      "source_sha256": "ec5c98336c38fbe088adab283d85caa45d353c25d8f67a296e35fedd6c0a8f6f",
+      "source_size": [
+        921,
+        1707
+      ],
+      "base_path": "/workspace/animation-competition/assets/chars/x16_arms_loose.png",
+      "base_sha256": "cf7756acf52a58b0279b03733fe75c87b1c9ddbb162d29b5e1aa6e12a766e280",
+      "nominal_native_per_target_pixel_scale": 1.451579829117105,
+      "anchor_matches": [
+        {
+          "name": "A1_left_foot",
+          "target": [
+            22,
+            1142
+          ],
+          "candidate_nominal": [
+            27.0,
+            1130.0
+          ],
+          "candidate_native": [
+            39.19265538616183,
+            1640.2852069023286
+          ],
+          "gradient_ncc": 0.8898622516982667,
+          "used_for_fit": true,
+          "registered": [
+            22.0,
+            1142.0
+          ],
+          "residual_px": 0.0
+        },
+        {
+          "name": "A2_right_foot",
+          "target": [
+            312,
+            1142
+          ],
+          "candidate_nominal": [
+            318.0,
+            1131.0
+          ],
+          "candidate_native": [
+            461.60238565923936,
+            1641.7367867314456
+          ],
+          "gradient_ncc": 0.858911203121374,
+          "used_for_fit": true,
+          "registered": [
+            312.0,
+            1142.0
+          ],
+          "residual_px": 0.0
+        },
+        {
+          "name": "H_seat_lower_left",
+          "target": [
+            22,
+            899
+          ],
+          "candidate_nominal": [
+            29.0,
+            889.0
+          ],
+          "candidate_native": [
+            42.09581504439604,
+            1290.4544680851063
+          ],
+          "gradient_ncc": 0.878078828932411,
+          "used_for_fit": false,
+          "registered": [
+            23.167780638152202,
+            901.8241657022744
+          ],
+          "residual_px": 3.0560797654423575
+        }
+      ],
+      "candidate_native_to_target_matrix": [
+        [
+          0.6865291082093986,
+          0.002359206557420457
+        ],
+        [
+          -0.002359206557420457,
+          0.6865291082093986
+        ]
+      ],
+      "translation": [
+        -8.776670366783708,
+        15.988923265865196
+      ],
+      "homogeneous_matrix": [
+        [
+          0.6865291082093986,
+          0.002359206557420457,
+          -8.776670366783708
+        ],
+        [
+          -0.002359206557420457,
+          0.6865291082093986,
+          15.988923265865196
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "rotation_deg": -0.19689193807189923,
+      "uniform_scale": 0.6865331618169458,
+      "registered_path": "/tmp/batch8_registration/registered_rgba/x18_k02_registered_635x1175.png",
+      "registered_sha256": "6ed94d262a25fa06c4fb39f439ce1426b4dca7b9f05fc446341f99599f3c522c"
+    },
+    {
+      "key": "k03",
+      "file": "x18_k03.png",
+      "source_path": "/tmp/laidian-s18-batch8/originals/x18_k03.png",
+      "source_sha256": "af096fb3468be5e92c5548157002d963e7fd63c88c76cb119428fd5774a54ea4",
+      "source_size": [
+        922,
+        1706
+      ],
+      "base_path": "/workspace/animation-competition/assets/chars/x16_arms_loose.png",
+      "base_sha256": "cf7756acf52a58b0279b03733fe75c87b1c9ddbb162d29b5e1aa6e12a766e280",
+      "nominal_native_per_target_pixel_scale": 1.4519416987770146,
+      "anchor_matches": [
+        {
+          "name": "A1_left_foot",
+          "target": [
+            22,
+            1142
+          ],
+          "candidate_nominal": [
+            22.0,
+            1126.0
+          ],
+          "candidate_native": [
+            31.94271737309432,
+            1634.8863528229185
+          ],
+          "gradient_ncc": 0.8720324779018993,
+          "used_for_fit": true,
+          "registered": [
+            22.0,
+            1142.0
+          ],
+          "residual_px": 0.0
+        },
+        {
+          "name": "A2_right_foot",
+          "target": [
+            312,
+            1142
+          ],
+          "candidate_nominal": [
+            315.0,
+            1126.0
+          ],
+          "candidate_native": [
+            457.3616351147596,
+            1634.8863528229185
+          ],
+          "gradient_ncc": 0.8717820277555535,
+          "used_for_fit": true,
+          "registered": [
+            311.99999999999994,
+            1142.0
+          ],
+          "residual_px": 5.684341886080802e-14
+        },
+        {
+          "name": "H_seat_lower_left",
+          "target": [
+            22,
+            899
+          ],
+          "candidate_nominal": [
+            22.0,
+            882.0
+          ],
+          "candidate_native": [
+            31.94271737309432,
+            1280.612578321327
+          ],
+          "gradient_ncc": 0.890982379550657,
+          "used_for_fit": false,
+          "registered": [
+            22.0,
+            900.4982935153583
+          ],
+          "residual_px": 1.4982935153583412
+        }
+      ],
+      "candidate_native_to_target_matrix": [
+        [
+          0.6816810158313219,
+          -0.0
+        ],
+        [
+          0.0,
+          0.6816810158313219
+        ]
+      ],
+      "translation": [
+        0.22525597269624953,
+        27.52901023890786
+      ],
+      "homogeneous_matrix": [
+        [
+          0.6816810158313219,
+          -0.0,
+          0.22525597269624953
+        ],
+        [
+          0.0,
+          0.6816810158313219,
+          27.52901023890786
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "rotation_deg": 0.0,
+      "uniform_scale": 0.6816810158313219,
+      "registered_path": "/tmp/batch8_registration/registered_rgba/x18_k03_registered_635x1175.png",
+      "registered_sha256": "30a05b989fee4b857bf39d48ff6648ecb9bdc98567a765a7f85076fe4351ff12"
+    },
+    {
+      "key": "k04",
+      "file": "x18_k04.png",
+      "source_path": "/tmp/laidian-s18-batch8/originals/x18_k04.png",
+      "source_sha256": "5637199875913619c185e9386800b58afc2218b51a06e492a3793f9964d9b5f6",
+      "source_size": [
+        922,
+        1706
+      ],
+      "base_path": "/workspace/animation-competition/assets/chars/x16_arms_loose.png",
+      "base_sha256": "cf7756acf52a58b0279b03733fe75c87b1c9ddbb162d29b5e1aa6e12a766e280",
+      "nominal_native_per_target_pixel_scale": 1.4519416987770146,
+      "anchor_matches": [
+        {
+          "name": "A1_left_foot",
+          "target": [
+            22,
+            1142
+          ],
+          "candidate_nominal": [
+            21.0,
+            1122.0
+          ],
+          "candidate_native": [
+            30.490775674317305,
+            1629.0785860278104
+          ],
+          "gradient_ncc": 0.8665745485758576,
+          "used_for_fit": true,
+          "registered": [
+            22.0,
+            1142.0
+          ],
+          "residual_px": 0.0
+        },
+        {
+          "name": "A2_right_foot",
+          "target": [
+            312,
+            1142
+          ],
+          "candidate_nominal": [
+            319.0,
+            1123.0
+          ],
+          "candidate_native": [
+            463.16940190986764,
+            1630.5305277265875
+          ],
+          "gradient_ncc": 0.8557566904060093,
+          "used_for_fit": true,
+          "registered": [
+            312.00000000000006,
+            1142.0000000000002
+          ],
+          "residual_px": 2.3437142008433856e-13
+        },
+        {
+          "name": "H_seat_lower_left",
+          "target": [
+            22,
+            899
+          ],
+          "candidate_nominal": [
+            23.0,
+            874.0
+          ],
+          "candidate_native": [
+            33.39465907187134,
+            1268.9970447311107
+          ],
+          "gradient_ncc": 0.9037819914992993,
+          "used_for_fit": false,
+          "registered": [
+            23.13642249873314,
+            900.6539046224874
+          ],
+          "residual_px": 2.0067029167049295
+        }
+      ],
+      "candidate_native_to_target_matrix": [
+        [
+          0.6702358675333153,
+          0.002249113649440774
+        ],
+        [
+          -0.002249113649440774,
+          0.6702358675333153
+        ]
+      ],
+      "translation": [
+        -2.0999943696865913,
+        50.20167783345505
+      ],
+      "homogeneous_matrix": [
+        [
+          0.6702358675333153,
+          0.002249113649440774,
+          -2.0999943696865913
+        ],
+        [
+          -0.002249113649440774,
+          0.6702358675333153,
+          50.20167783345505
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "rotation_deg": -0.1922669947985858,
+      "uniform_scale": 0.6702396412033116,
+      "registered_path": "/tmp/batch8_registration/registered_rgba/x18_k04_registered_635x1175.png",
+      "registered_sha256": "d7b2109eec7f5e00755cb9062a75168bd80a462dac00b96c32ac844536f13c77"
+    },
+    {
+      "key": "k05",
+      "file": "x18_k05.png",
+      "source_path": "/tmp/laidian-s18-batch8/originals/x18_k05.png",
+      "source_sha256": "333f9396b5c930bd5b4865d8d366af1738719120898d2e8bb62c96e0b841c861",
+      "source_size": [
+        922,
+        1706
+      ],
+      "base_path": "/workspace/animation-competition/assets/chars/x16_arms_loose.png",
+      "base_sha256": "cf7756acf52a58b0279b03733fe75c87b1c9ddbb162d29b5e1aa6e12a766e280",
+      "nominal_native_per_target_pixel_scale": 1.4519416987770146,
+      "anchor_matches": [
+        {
+          "name": "A1_left_foot",
+          "target": [
+            22,
+            1142
+          ],
+          "candidate_nominal": [
+            20.0,
+            1126.0
+          ],
+          "candidate_native": [
+            29.038833975540292,
+            1634.8863528229185
+          ],
+          "gradient_ncc": 0.8415778858769576,
+          "used_for_fit": true,
+          "registered": [
+            22.0,
+            1142.0
+          ],
+          "residual_px": 0.0
+        },
+        {
+          "name": "A2_right_foot",
+          "target": [
+            312,
+            1142
+          ],
+          "candidate_nominal": [
+            316.0,
+            1125.0
+          ],
+          "candidate_native": [
+            458.8135768135366,
+            1633.4344111241414
+          ],
+          "gradient_ncc": 0.8684838430114888,
+          "used_for_fit": true,
+          "registered": [
+            311.99999999999994,
+            1142.0
+          ],
+          "residual_px": 5.684341886080802e-14
+        },
+        {
+          "name": "H_seat_lower_left",
+          "target": [
+            22,
+            899
+          ],
+          "candidate_nominal": [
+            22.0,
+            881.0
+          ],
+          "candidate_native": [
+            31.94271737309432,
+            1279.1606366225499
+          ],
+          "gradient_ncc": 0.8901640512091497,
+          "used_for_fit": false,
+          "registered": [
+            24.7703527854184,
+            901.9755755161668
+          ],
+          "residual_px": 4.065575507611065
+        }
+      ],
+      "candidate_native_to_target_matrix": [
+        [
+          0.6747643852336749,
+          -0.0022796094095733463
+        ],
+        [
+          0.0022796094095733463,
+          0.6747643852336749
+        ]
+      ],
+      "translation": [
+        6.132531358069979,
+        38.7707180113448
+      ],
+      "homogeneous_matrix": [
+        [
+          0.6747643852336749,
+          -0.0022796094095733463,
+          6.132531358069979
+        ],
+        [
+          0.0022796094095733463,
+          0.6747643852336749,
+          38.7707180113448
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "rotation_deg": 0.1935660862632497,
+      "uniform_scale": 0.6747682359142577,
+      "registered_path": "/tmp/batch8_registration/registered_rgba/x18_k05_registered_635x1175.png",
+      "registered_sha256": "50a91d92b614b882e047194197f2f736ce4aae4e70c2817d0b332ff028941bf1"
+    },
+    {
+      "key": "k08",
+      "file": "x18_k08.png",
+      "source_path": "/tmp/laidian-s18-batch8/originals/x18_k08.png",
+      "source_sha256": "a18ebf13b48e9bd30c1c6c4297ac31f7fe740844c6efe307e3d6a21579729488",
+      "source_size": [
+        922,
+        1706
+      ],
+      "base_path": "/workspace/animation-competition/assets/chars/x18_laugh.png",
+      "base_sha256": "499a81ef65f78e44597045af0a91a3236de660064eecf0ca2ecd4cdfa35bb633",
+      "nominal_native_per_target_pixel_scale": 1.4519416987770146,
+      "anchor_matches": [
+        {
+          "name": "A1_left_foot",
+          "target": [
+            22,
+            1142
+          ],
+          "candidate_nominal": [
+            22.0,
+            1135.0
+          ],
+          "candidate_native": [
+            31.94271737309432,
+            1647.9538281119117
+          ],
+          "gradient_ncc": 0.8700021384541626,
+          "used_for_fit": true,
+          "registered": [
+            22.0,
+            1142.0
+          ],
+          "residual_px": 0.0
+        },
+        {
+          "name": "A2_right_foot",
+          "target": [
+            312,
+            1142
+          ],
+          "candidate_nominal": [
+            317.0,
+            1135.0
+          ],
+          "candidate_native": [
+            460.26551851231363,
+            1647.9538281119117
+          ],
+          "gradient_ncc": 0.8095612997642522,
+          "used_for_fit": true,
+          "registered": [
+            311.99999999999994,
+            1142.0
+          ],
+          "residual_px": 5.684341886080802e-14
+        },
+        {
+          "name": "H_seat_lower_left",
+          "target": [
+            22,
+            899
+          ],
+          "candidate_nominal": [
+            22.0,
+            891.0
+          ],
+          "candidate_native": [
+            31.94271737309432,
+            1293.68005361032
+          ],
+          "gradient_ncc": 0.9072753981391455,
+          "used_for_fit": false,
+          "registered": [
+            22.0,
+            902.1355932203389
+          ],
+          "residual_px": 3.135593220338933
+        }
+      ],
+      "candidate_native_to_target_matrix": [
+        [
+          0.677059449622296,
+          -0.0
+        ],
+        [
+          0.0,
+          0.677059449622296
+        ]
+      ],
+      "translation": [
+        0.3728813559322042,
+        26.23728813559319
+      ],
+      "homogeneous_matrix": [
+        [
+          0.677059449622296,
+          -0.0,
+          0.3728813559322042
+        ],
+        [
+          0.0,
+          0.677059449622296,
+          26.23728813559319
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "rotation_deg": 0.0,
+      "uniform_scale": 0.677059449622296,
+      "registered_path": "/tmp/batch8_registration/registered_rgba/x18_k08_registered_635x1175.png",
+      "registered_sha256": "30a37bf88f05782b0ad797bc816d4dba82828674a1ba99900fab930ed71f10ce"
+    },
+    {
+      "key": "k09",
+      "file": "x18_k09.png",
+      "source_path": "/tmp/laidian-s18-batch8/originals/x18_k09.png",
+      "source_sha256": "d6394d776759141db0f1e78abd2a01e3af920c21bdb2f36e9ec3382fe44e6626",
+      "source_size": [
+        922,
+        1706
+      ],
+      "base_path": "/workspace/animation-competition/assets/chars/x18_laugh.png",
+      "base_sha256": "499a81ef65f78e44597045af0a91a3236de660064eecf0ca2ecd4cdfa35bb633",
+      "nominal_native_per_target_pixel_scale": 1.4519416987770146,
+      "anchor_matches": [
+        {
+          "name": "A1_left_foot",
+          "target": [
+            22,
+            1142
+          ],
+          "candidate_nominal": [
+            24.0,
+            1116.0
+          ],
+          "candidate_native": [
+            34.84660077064835,
+            1620.3669358351483
+          ],
+          "gradient_ncc": 0.8799955253939005,
+          "used_for_fit": true,
+          "registered": [
+            22.0,
+            1142.0
+          ],
+          "residual_px": 0.0
+        },
+        {
+          "name": "A2_right_foot",
+          "target": [
+            312,
+            1142
+          ],
+          "candidate_nominal": [
+            319.0,
+            1116.0
+          ],
+          "candidate_native": [
+            463.16940190986764,
+            1620.3669358351483
+          ],
+          "gradient_ncc": 0.8084241791221181,
+          "used_for_fit": true,
+          "registered": [
+            312.00000000000006,
+            1142.0
+          ],
+          "residual_px": 5.684341886080802e-14
+        },
+        {
+          "name": "H_seat_lower_left",
+          "target": [
+            22,
+            899
+          ],
+          "candidate_nominal": [
+            27.0,
+            872.0
+          ],
+          "candidate_native": [
+            39.2024258669794,
+            1266.0931613335567
+          ],
+          "gradient_ncc": 0.8872313349326948,
+          "used_for_fit": false,
+          "registered": [
+            24.949152542372882,
+            902.135593220339
+          ],
+          "residual_px": 4.304584249567039
+        }
+      ],
+      "candidate_native_to_target_matrix": [
+        [
+          0.6770594496222961,
+          -0.0
+        ],
+        [
+          0.0,
+          0.6770594496222961
+        ]
+      ],
+      "translation": [
+        -1.593220338983052,
+        44.91525423728808
+      ],
+      "homogeneous_matrix": [
+        [
+          0.6770594496222961,
+          -0.0,
+          -1.593220338983052
+        ],
+        [
+          0.0,
+          0.6770594496222961,
+          44.91525423728808
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "rotation_deg": 0.0,
+      "uniform_scale": 0.6770594496222961,
+      "registered_path": "/tmp/batch8_registration/registered_rgba/x18_k09_registered_635x1175.png",
+      "registered_sha256": "cdecc2ae1f670a9921b807ce3fdc6855ec9db643eadbc0e7723117facf7d868e"
+    },
+    {
+      "key": "k10",
+      "file": "x18_k10.png",
+      "source_path": "/tmp/laidian-s18-batch8/originals/x18_k10.png",
+      "source_sha256": "017bf576db438805e35d737dfe43c60795aff444e0c89d4f2428d6d1d1476161",
+      "source_size": [
+        922,
+        1706
+      ],
+      "base_path": "/workspace/animation-competition/assets/chars/x18_laugh.png",
+      "base_sha256": "499a81ef65f78e44597045af0a91a3236de660064eecf0ca2ecd4cdfa35bb633",
+      "nominal_native_per_target_pixel_scale": 1.4519416987770146,
+      "anchor_matches": [
+        {
+          "name": "A1_left_foot",
+          "target": [
+            22,
+            1142
+          ],
+          "candidate_nominal": [
+            21.0,
+            1128.0
+          ],
+          "candidate_native": [
+            30.490775674317305,
+            1637.7902362204725
+          ],
+          "gradient_ncc": 0.910159383037305,
+          "used_for_fit": true,
+          "registered": [
+            22.0,
+            1142.0
+          ],
+          "residual_px": 0.0
+        },
+        {
+          "name": "A2_right_foot",
+          "target": [
+            312,
+            1142
+          ],
+          "candidate_nominal": [
+            310.0,
+            1128.0
+          ],
+          "candidate_native": [
+            450.1019266208745,
+            1637.7902362204725
+          ],
+          "gradient_ncc": 0.8955975615208097,
+          "used_for_fit": true,
+          "registered": [
+            312.0,
+            1142.0
+          ],
+          "residual_px": 0.0
+        },
+        {
+          "name": "H_seat_lower_left",
+          "target": [
+            22,
+            899
+          ],
+          "candidate_nominal": [
+            21.0,
+            888.0
+          ],
+          "candidate_native": [
+            30.490775674317305,
+            1289.324228513989
+          ],
+          "gradient_ncc": 0.8865638516454413,
+          "used_for_fit": false,
+          "registered": [
+            22.0,
+            901.1695501730105
+          ],
+          "residual_px": 2.1695501730105207
+        }
+      ],
+      "candidate_native_to_target_matrix": [
+        [
+          0.6911160471923091,
+          -0.0
+        ],
+        [
+          0.0,
+          0.6911160471923091
+        ]
+      ],
+      "translation": [
+        0.9273356401384092,
+        10.096885813148901
+      ],
+      "homogeneous_matrix": [
+        [
+          0.6911160471923091,
+          -0.0,
+          0.9273356401384092
+        ],
+        [
+          0.0,
+          0.6911160471923091,
+          10.096885813148901
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "rotation_deg": 0.0,
+      "uniform_scale": 0.6911160471923091,
+      "registered_path": "/tmp/batch8_registration/registered_rgba/x18_k10_registered_635x1175.png",
+      "registered_sha256": "d3e9b3cf496d45a02be6b85f75df29ec0844ec08594a0e56cbcd0486f314340f"
+    },
+    {
+      "key": "k11",
+      "file": "x18_k11.png",
+      "source_path": "/tmp/laidian-s18-batch8/originals/x18_k11.png",
+      "source_sha256": "382cfe07d818d8ade2ec3aae7e3b2bf334b81215c8efebb4fe40944b8feecc9b",
+      "source_size": [
+        922,
+        1706
+      ],
+      "base_path": "/workspace/animation-competition/assets/chars/x18_laugh.png",
+      "base_sha256": "499a81ef65f78e44597045af0a91a3236de660064eecf0ca2ecd4cdfa35bb633",
+      "nominal_native_per_target_pixel_scale": 1.4519416987770146,
+      "anchor_matches": [
+        {
+          "name": "A1_left_foot",
+          "target": [
+            22,
+            1142
+          ],
+          "candidate_nominal": [
+            21.0,
+            1127.0
+          ],
+          "candidate_native": [
+            30.490775674317305,
+            1636.3382945216954
+          ],
+          "gradient_ncc": 0.8958155464903939,
+          "used_for_fit": true,
+          "registered": [
+            22.0,
+            1142.0
+          ],
+          "residual_px": 0.0
+        },
+        {
+          "name": "A2_right_foot",
+          "target": [
+            312,
+            1142
+          ],
+          "candidate_nominal": [
+            310.0,
+            1128.0
+          ],
+          "candidate_native": [
+            450.1019266208745,
+            1637.7902362204725
+          ],
+          "gradient_ncc": 0.8484440833718305,
+          "used_for_fit": true,
+          "registered": [
+            312.0,
+            1142.0
+          ],
+          "residual_px": 0.0
+        },
+        {
+          "name": "H_seat_lower_left",
+          "target": [
+            22,
+            899
+          ],
+          "candidate_nominal": [
+            21.0,
+            887.0
+          ],
+          "candidate_native": [
+            30.490775674317305,
+            1287.872286815212
+          ],
+          "gradient_ncc": 0.8717723806161607,
+          "used_for_fit": false,
+          "registered": [
+            21.166686621488903,
+            901.1724336103063
+          ],
+          "residual_px": 2.3267743719565623
+        }
+      ],
+      "candidate_native_to_target_matrix": [
+        [
+          0.6911077725335703,
+          0.0023913763755488123
+        ],
+        [
+          -0.0023913763755488123,
+          0.6911077725335703
+        ]
+      ],
+      "translation": [
+        -2.985512799023219,
+        11.186801082349575
+      ],
+      "homogeneous_matrix": [
+        [
+          0.6911077725335703,
+          0.0023913763755488123,
+          -2.985512799023219
+        ],
+        [
+          -0.0023913763755488123,
+          0.6911077725335703,
+          11.186801082349575
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "rotation_deg": -0.1982545011992065,
+      "uniform_scale": 0.6911119098505557,
+      "registered_path": "/tmp/batch8_registration/registered_rgba/x18_k11_registered_635x1175.png",
+      "registered_sha256": "e715ac1dde7e6b00717d1e21a9832299203f69d88f838ea230398fc80662d9ba"
+    }
+  ]
+}
