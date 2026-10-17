@@ -16,7 +16,7 @@ const tmp = 'build/review_tmp'; fs.rmSync(tmp, { recursive: true, force: true })
 const run = (args) => { const r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', ...args], { stdio: 'inherit' }); if (r.status !== 0) process.exit(1); };
 // 剧本文字按宽度折行（中文按字数）
 const wrap = (s, n) => { const lines = []; for (let i = 0; i < s.length; i += n) lines.push(s.slice(i, i + n)); return lines.join('\n'); };
-let t0 = 0; const list = [];
+let t0 = 0; const list = [], pcm = [];
 for (const s of SHOTS) {
   const start = t0; t0 += s.dur;
   if (!s.mod || (only && !only.has(s.id))) continue;
@@ -25,9 +25,13 @@ for (const s of SHOTS) {
   const o = path.join(tmp, `${s.id}.mp4`);
   // 画面下方一条半透明黑底，白字；声音取母带里这个镜头的那一段
   const vf = `scale=${OW}:${OH},drawbox=x=0:y=ih-${92 * K}:w=iw:h=${92 * K}:color=black@0.55:t=fill,drawtext=expansion=none:fontfile='${FONT}':textfile='${txt}':fontsize=${22 * K}:fontcolor=white:line_spacing=${6 * K}:x=${24 * K}:y=h-${82 * K}`;
-  run(['-i', v, '-ss', String(start), '-t', String(s.dur), '-i', audio, '-map', '0:v', '-map', '1:a', '-vf', vf, '-r', '24', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '20', '-c:a', 'aac', '-b:a', '256k', '-ar', '48000', '-shortest', o]);
-  list.push(o); console.log(`${s.id}：${s.dur} 秒`);
+  // 画面每镜单独编码（不带声音）；声音先按样本切出原样 PCM，最后拼成一整段只编码一次 AAC（分段编 AAC 再拼，接缝处 priming 会叠出十几毫秒，Astra 实测）
+  run(['-i', v, '-t', String(s.dur), '-an', '-vf', vf, '-r', '24', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '20', o]);
+  const w = path.join(tmp, `${s.id}.wav`);
+  run(['-i', audio, '-af', `atrim=start_sample=${Math.round(start * 48000)}:end_sample=${Math.round((start + s.dur) * 48000)},asetpts=PTS-STARTPTS`, '-ar', '48000', '-c:a', 'pcm_s16le', w]);
+  list.push(o); pcm.push(w); console.log(`${s.id}：${s.dur} 秒`);
 }
-const lt = path.join(tmp, 'list.txt'); fs.writeFileSync(lt, list.map((f) => `file '${path.resolve(f)}'`).join('\n'));
-run(['-f', 'concat', '-safe', '0', '-i', lt, '-c', 'copy', out]);
+const lt = path.join(tmp, 'list.txt'), la = path.join(tmp, 'alist.txt');
+fs.writeFileSync(lt, list.map((f) => `file '${path.resolve(f)}'`).join('\n')); fs.writeFileSync(la, pcm.map((f) => `file '${path.resolve(f)}'`).join('\n'));
+run(['-f', 'concat', '-safe', '0', '-i', lt, '-f', 'concat', '-safe', '0', '-i', la, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '256k', '-ar', '48000', '-shortest', out]);
 console.log(out, `共 ${list.length} 个镜头`);
