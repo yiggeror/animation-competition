@@ -1,0 +1,627 @@
+{
+  "source": {
+    "manifest_sha256": "700b9ea1d6784dfddfb811e3b9876fadba6ed891c8338823aae7fc96667ca595",
+    "measurement_manifest_sha256": "04c920191913a402203c55f16d778085b402d70a250181a7018f1c0c232bad5f",
+    "base_commit": "3d8a00dd2910f725eb74df0165f8373482b1e90c",
+    "source_file_checks": [
+      {
+        "path": "audio/build.py",
+        "sha256": "018067cc5710611bd662f10527ba51c5a168e83d2e2f490bb71a59dce216230a",
+        "matches_manifest": true
+      },
+      {
+        "path": "audio/demo.py",
+        "sha256": "d7fdeee59f32dc53e93eb8b40bb24e71014bfbbb1de0c2595af6d352c0a97087",
+        "matches_manifest": true
+      },
+      {
+        "path": "audio/inst.py",
+        "sha256": "c6b8f630335dfabe6302e21dfb880dae34fd02b37a475418d1f0f57112d98275",
+        "matches_manifest": true
+      },
+      {
+        "path": "audio/score.py",
+        "sha256": "2171a6189a971a1b88b7619fc92ced65d015cada8894e59362ddb04e67f40b2e",
+        "matches_manifest": true
+      },
+      {
+        "path": "audio/sfx.py",
+        "sha256": "a06fd64a02f53cddd1bcec4cf0556244c782a308c1b04adbce439354fb4376c5",
+        "matches_manifest": true
+      },
+      {
+        "path": "js/film/edl.js",
+        "sha256": "1d886d75661492f45d6aa5ac7e229429c5e81d0ee5ac76daa002aef29718f42b",
+        "matches_manifest": true
+      }
+    ],
+    "frozen_audio_build_sha256": "018067cc5710611bd662f10527ba51c5a168e83d2e2f490bb71a59dce216230a",
+    "frozen_edl_sha256": "1d886d75661492f45d6aa5ac7e229429c5e81d0ee5ac76daa002aef29718f42b",
+    "current_worktree_AST_equals_frozen": true,
+    "edl_shots": 31,
+    "edl_seconds": 244.5,
+    "master_expected_seconds": 245.5,
+    "timing_seconds": {
+      "TV_ON": 175.9,
+      "ON": 169.5,
+      "TV_OFF": 195.6,
+      "OFF": 200.5,
+      "CUT": 22.6,
+      "FAN_ON": 174.7
+    },
+    "fan_speed_probes": [
+      {
+        "time": 200.499,
+        "speed": 0.9999999006259676
+      },
+      {
+        "time": 200.5,
+        "speed": 0.9999999006880569
+      },
+      {
+        "time": 200.6,
+        "speed": 0.9999999067050633
+      },
+      {
+        "time": 205.5,
+        "speed": 0.9999999956365377
+      },
+      {
+        "time": 244.5,
+        "speed": 1.0
+      },
+      {
+        "time": 245.499,
+        "speed": 1.0
+      }
+    ],
+    "tv_babble_gate_end": 195.6,
+    "crt_whine_fade_end": 195.9
+  },
+  "files": [
+    {
+      "file": "/tmp/laidian-audio-final-tvfan/film_mix_norm.wav",
+      "bytes": 47136078,
+      "sha256": "101d818f324f55c85c793c19b42bd774d6a8393ae67ec0565260b001bb91091e",
+      "probe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "pcm_s16le",
+            "codec_long_name": "PCM signed 16-bit little-endian",
+            "codec_type": "audio",
+            "codec_tag_string": "[1][0][0][0]",
+            "codec_tag": "0x0001",
+            "sample_fmt": "s16",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 16,
+            "initial_padding": 0,
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "duration_ts": 11784000,
+            "duration": "245.500000",
+            "bit_rate": "1536000",
+            "disposition": {
+              "default": 0,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            }
+          }
+        ],
+        "format": {
+          "filename": "/tmp/laidian-audio-final-tvfan/film_mix_norm.wav",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "wav",
+          "format_long_name": "WAV / WAVE (Waveform Audio)",
+          "duration": "245.500000",
+          "size": "47136078",
+          "bit_rate": "1536002",
+          "probe_score": 99,
+          "tags": {
+            "encoder": "Lavf61.7.103"
+          }
+        }
+      },
+      "decoded_frames": 11784000,
+      "decoded_seconds": 245.5,
+      "decoded_float32_sha256": "f2c71377ac72cc3b9dc3c2074958afe04294445dc485d5d60dfc690f056f3aee",
+      "native_peak": {
+        "linear": 0.5992431640625,
+        "dbfs": -4.447938230637722,
+        "frame": 7464212,
+        "time_seconds": 155.50441666666666,
+        "channel_zero_based": 1,
+        "channel": "R",
+        "samples_abs_ge_1": 0,
+        "samples_gt_minus1p5_dbfs": 0
+      },
+      "scipy_4x_peak": {
+        "linear": 0.6024367247187628,
+        "dbfs": -4.401771225637159,
+        "frame": 7777991,
+        "time_seconds": 40.51036979166667,
+        "channel_zero_based": 1,
+        "channel": "R",
+        "samples_abs_ge_1": 0,
+        "samples_gt_minus1p5_dbfs": 0
+      },
+      "ffmpeg_4x_peak": {
+        "linear": 0.6024887561798096,
+        "dbfs": -4.401021072145005,
+        "frame": 7777991,
+        "time_seconds": 40.51036979166667,
+        "channel_zero_based": 1,
+        "channel": "R",
+        "samples_abs_ge_1": 0,
+        "samples_gt_minus1p5_dbfs": 0
+      },
+      "ffmpeg_4x_decoded_frames": 47136000,
+      "int16_rails": {
+        "int16_min": -19636,
+        "int16_max": 19632,
+        "samples_at_negative_rail": 0,
+        "samples_at_positive_rail": 0
+      },
+      "tail_windows": {
+        "244.5-245.5": {
+          "frames": 48000,
+          "rms_dbfs": -25.05367411146405,
+          "peak_dbfs": -11.805852155676387,
+          "nonzero_channel_samples": 95865
+        },
+        "245.4-245.5": {
+          "frames": 4800,
+          "rms_dbfs": -25.67065101267982,
+          "peak_dbfs": -16.005651542225202,
+          "nonzero_channel_samples": 9591
+        }
+      },
+      "last_native_sample_by_channel": [
+        -0.01434326171875,
+        -0.015411376953125
+      ],
+      "commands": {
+        "decode": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-i",
+          "/tmp/laidian-audio-final-tvfan/film_mix_norm.wav",
+          "-map",
+          "0:a:0",
+          "-c:a",
+          "pcm_f32le",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        "ffmpeg_4x": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-i",
+          "/tmp/laidian-audio-final-tvfan/film_mix_norm.wav",
+          "-map",
+          "0:a:0",
+          "-af",
+          "aresample=192000",
+          "-c:a",
+          "pcm_f32le",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        "loudnorm": [
+          "ffmpeg",
+          "-hide_banner",
+          "-nostats",
+          "-i",
+          "/tmp/laidian-audio-final-tvfan/film_mix_norm.wav",
+          "-map",
+          "0:a:0",
+          "-af",
+          "loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json",
+          "-f",
+          "null",
+          "-"
+        ]
+      },
+      "loudnorm_input": {
+        "input_i": "-16.04",
+        "input_tp": "-4.40",
+        "input_lra": "8.20",
+        "input_thresh": "-26.11"
+      }
+    },
+    {
+      "file": "/tmp/laidian-audio-final-tvfan/FULL.m4a",
+      "bytes": 8051351,
+      "sha256": "201820c3c49ad3e240cf0b4078f55a435833566562238c3905d98debeea3aa5c",
+      "probe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "sample_fmt": "fltp",
+            "sample_rate": "48000",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 0,
+            "id": "0x1",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 11784000,
+            "duration": "245.500000",
+            "bit_rate": "260813",
+            "nb_frames": "11509",
+            "extradata_size": 5,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "SoundHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/tmp/laidian-audio-final-tvfan/FULL.m4a",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "245.500000",
+          "size": "8051351",
+          "bit_rate": "262365",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "M4A ",
+            "minor_version": "512",
+            "compatible_brands": "M4A isomiso2",
+            "encoder": "Lavf61.7.103"
+          }
+        }
+      },
+      "decoded_frames": 11784192,
+      "decoded_seconds": 245.504,
+      "decoded_float32_sha256": "e9b327b3a478a182beb7f28fc4ae6b7f7618d83678cba669a193b3ba4fb082ad",
+      "native_peak": {
+        "linear": 0.626183032989502,
+        "dbfs": -4.065974083435517,
+        "frame": 2272812,
+        "time_seconds": 47.35025,
+        "channel_zero_based": 0,
+        "channel": "L",
+        "samples_abs_ge_1": 0,
+        "samples_gt_minus1p5_dbfs": 0
+      },
+      "scipy_4x_peak": {
+        "linear": 0.6515227791959914,
+        "dbfs": -3.721407908892033,
+        "frame": 9091247,
+        "time_seconds": 47.35024479166667,
+        "channel_zero_based": 0,
+        "channel": "L",
+        "samples_abs_ge_1": 0,
+        "samples_gt_minus1p5_dbfs": 0
+      },
+      "ffmpeg_4x_peak": {
+        "linear": 0.6515649557113647,
+        "dbfs": -3.7208456435154735,
+        "frame": 9091247,
+        "time_seconds": 47.35024479166667,
+        "channel_zero_based": 0,
+        "channel": "L",
+        "samples_abs_ge_1": 0,
+        "samples_gt_minus1p5_dbfs": 0
+      },
+      "ffmpeg_4x_decoded_frames": 47136768,
+      "int16_rails": null,
+      "tail_windows": {
+        "244.5-245.5": {
+          "frames": 48000,
+          "rms_dbfs": -25.062968560966276,
+          "peak_dbfs": -11.832813235476058,
+          "nonzero_channel_samples": 96000
+        },
+        "245.4-245.5": {
+          "frames": 4800,
+          "rms_dbfs": -25.683193526332815,
+          "peak_dbfs": -16.010593609869463,
+          "nonzero_channel_samples": 9600
+        }
+      },
+      "last_native_sample_by_channel": [
+        0.0006553109851665795,
+        0.0005178285064175725
+      ],
+      "commands": {
+        "decode": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-i",
+          "/tmp/laidian-audio-final-tvfan/FULL.m4a",
+          "-map",
+          "0:a:0",
+          "-c:a",
+          "pcm_f32le",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        "ffmpeg_4x": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-i",
+          "/tmp/laidian-audio-final-tvfan/FULL.m4a",
+          "-map",
+          "0:a:0",
+          "-af",
+          "aresample=192000",
+          "-c:a",
+          "pcm_f32le",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        "loudnorm": [
+          "ffmpeg",
+          "-hide_banner",
+          "-nostats",
+          "-i",
+          "/tmp/laidian-audio-final-tvfan/FULL.m4a",
+          "-map",
+          "0:a:0",
+          "-af",
+          "loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json",
+          "-f",
+          "null",
+          "-"
+        ]
+      },
+      "loudnorm_input": {
+        "input_i": "-16.08",
+        "input_tp": "-3.72",
+        "input_lra": "8.20",
+        "input_thresh": "-26.15"
+      }
+    },
+    {
+      "file": "/tmp/laidian-audio-final-tvfan/S15.m4a",
+      "bytes": 268469,
+      "sha256": "d6f6a568ed7f4a4a4d4c84c3145bbae7d58ee69a1fc226bb132de6f445d2c71f",
+      "probe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "sample_fmt": "fltp",
+            "sample_rate": "48000",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 0,
+            "id": "0x1",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 384000,
+            "duration": "8.000000",
+            "bit_rate": "265459",
+            "nb_frames": "376",
+            "extradata_size": 5,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "SoundHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/tmp/laidian-audio-final-tvfan/S15.m4a",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "8.000000",
+          "size": "268469",
+          "bit_rate": "268469",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "M4A ",
+            "minor_version": "512",
+            "compatible_brands": "M4A isomiso2",
+            "encoder": "Lavf61.7.103"
+          }
+        }
+      },
+      "decoded_frames": 384000,
+      "decoded_seconds": 8.0,
+      "decoded_float32_sha256": "e56fb081e64a3bc80d08650bb0f229361c2cbdf0cd272b622727011181952802",
+      "native_peak": {
+        "linear": 0.6620630621910095,
+        "dbfs": -3.5820128318348843,
+        "frame": 144000,
+        "time_seconds": 3.0,
+        "channel_zero_based": 0,
+        "channel": "L",
+        "samples_abs_ge_1": 0,
+        "samples_gt_minus1p5_dbfs": 0
+      },
+      "scipy_4x_peak": {
+        "linear": 0.69537522711147,
+        "dbfs": -3.1556157041862996,
+        "frame": 576001,
+        "time_seconds": 3.0000052083333335,
+        "channel_zero_based": 0,
+        "channel": "L",
+        "samples_abs_ge_1": 0,
+        "samples_gt_minus1p5_dbfs": 0
+      },
+      "ffmpeg_4x_peak": {
+        "linear": 0.6949951648712158,
+        "dbfs": -3.1603643363144047,
+        "frame": 576001,
+        "time_seconds": 3.0000052083333335,
+        "channel_zero_based": 0,
+        "channel": "L",
+        "samples_abs_ge_1": 0,
+        "samples_gt_minus1p5_dbfs": 0
+      },
+      "ffmpeg_4x_decoded_frames": 1536000,
+      "int16_rails": null,
+      "tail_windows": {
+        "7.0-8.0": {
+          "frames": 48000,
+          "rms_dbfs": -17.13224066625003,
+          "peak_dbfs": -4.5009504190179115,
+          "nonzero_channel_samples": 96000
+        },
+        "7.9-8.0": {
+          "frames": 4800,
+          "rms_dbfs": -19.354527872975027,
+          "peak_dbfs": -4.775381640598058,
+          "nonzero_channel_samples": 9600
+        }
+      },
+      "last_native_sample_by_channel": [
+        0.04434060677886009,
+        0.005816707853227854
+      ],
+      "commands": {
+        "decode": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-i",
+          "/tmp/laidian-audio-final-tvfan/S15.m4a",
+          "-map",
+          "0:a:0",
+          "-c:a",
+          "pcm_f32le",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        "ffmpeg_4x": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-i",
+          "/tmp/laidian-audio-final-tvfan/S15.m4a",
+          "-map",
+          "0:a:0",
+          "-af",
+          "aresample=192000",
+          "-c:a",
+          "pcm_f32le",
+          "-f",
+          "f32le",
+          "-"
+        ],
+        "loudnorm": [
+          "ffmpeg",
+          "-hide_banner",
+          "-nostats",
+          "-i",
+          "/tmp/laidian-audio-final-tvfan/S15.m4a",
+          "-map",
+          "0:a:0",
+          "-af",
+          "loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json",
+          "-f",
+          "null",
+          "-"
+        ]
+      },
+      "loudnorm_input": {
+        "input_i": "-13.89",
+        "input_tp": "-3.16",
+        "input_lra": "1.20",
+        "input_thresh": "-23.89"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "laidian",
+  "private": true,
+  "type": "module",
+  "description": "《来电》：代码逐帧绘制的 2D 动画短片",
+  "scripts": {
+    "serve": "node tools/js/serve.cjs 8080"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}
