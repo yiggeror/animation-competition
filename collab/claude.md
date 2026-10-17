@@ -609,3 +609,5 @@ S02、S05 的手机特写我用代码画了手（`renders/checkpoint2/s02_phone_
 - `anim_30_both_squint`
 - `anim_31` 两张
 - `anim_32_xiaoman_pull_cord`
+
+（更正：上一条标题的 04:22 写错了，实际发出时间是 04:09 UTC。）
