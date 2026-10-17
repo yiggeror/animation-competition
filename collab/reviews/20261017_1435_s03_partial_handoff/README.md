@@ -6,10 +6,10 @@
 
 | 镜头 | 实际状态 | 入口及下一步 |
 |---|---|---|
-| S01/S04 | 我方 d12fee68acc393b9c40b1172e6a00eff493d8126 已交48张三图、4张独立时表、16张原件；180个变更文件固定提交HTTP200/逐字节读回全过。Opus在5773fcb69ef5728f487eecabd81d7e90794d4395接入两镜JS。 | [交付与限定结论](../20261017_1425_batch1_s01_s04/README.md)。代码采用不等于实际新片验收；尚未收到采用后MP4。不能声称已看见背面被手机挡住的拇指连续按屏。 |
+| S01/S04 | 我方 d12fee68acc393b9c40b1172e6a00eff493d8126 已交48张三图、4张独立时表、16张原件；180个变更文件固定提交HTTP200/逐字节读回全过。Opus在5773fcb69ef5728f487eecabd81d7e90794d4395接入两镜JS。 | [交付与限定结论](../20261017_1425_batch1_s01_s04/README.md)。收尾pull收到340b3a26870b11dab7059edbb22690cb8472ce34的新合并MP4，**未启动审查**，留给接替者。代码采用不等于新片验收。不能声称已看见背面被手机挡住的拇指连续按屏。 |
 | S03 | 六个状态可用，完整6秒未通过。本目录是未采用WIP，绝不能照标题“可用”推成整镜可接。 | 下方给原件、18张派生图、WIP表和三个独审。F102后嚼尾缺失，递收中段约95输出像素跨步。 |
 | S18 | 新定稿片已实际增量复审，k05b、两次耸肩及F54/F63收尾一起生效。 | [92b68f7报告](../20261017_1405_s18_final_review/README.md)。新片SHA256 `3af38f8205410ab520bfa89a68e04faed89f59317de277f77767ab5198ced100`。不重审旧片，不扩大成全片原速自然度批准。 |
-| S03声音 | 0606d3a源码已删除整镜beans，保留3.8秒rustle和4.0秒crunch。 | Opus报告新WAV SHA256 `6980b2ffd039ca4189fdac15ca71c36a7422a61a56bee9454ad8714490de9ede`，但实际文件未交。−16 LUFS等仍属其自报，不能沿用旧母带或数字核验冒充试听。 |
+| S03声音 | 0606d3a源码已删除整镜beans，保留3.8秒rustle和4.0秒crunch。 | Opus报告新WAV SHA256 `6980b2ffd039ca4189fdac15ca71c36a7422a61a56bee9454ad8714490de9ede`，实际WAV未交。340b3a2留言要求后续以0606d3a之后源码本地确定性重建并核哈希，本轮遵照停止指令未新建音频；−16 LUFS等仍属其自报，不能沿用旧母带或数字核验冒充试听。 |
 
 ## S03保存内容与明确缺口
 
@@ -26,7 +26,7 @@
 
 ## 接替路径、边界及写入状态
 
-主仓 `/workspace/animation-competition`，协作分支 `claude/intelligent-euler-t2so6e`。先pull并读 `collab/README.md`、claude/partner末尾及本索引；只追加自己的协作记录，js/audio由Opus维护。5773fcb是本轮收尾前最新读取的Opus提交，后续新增片由接替者读取，当前不再追加审查。
+主仓 `/workspace/animation-competition`，协作分支 `claude/intelligent-euler-t2so6e`。先pull并读 `collab/README.md`、claude/partner末尾及本索引；只追加自己的协作记录，js/audio由Opus维护。收尾pull新增340b3a2，已读取其交付留言并保留文件，当前不再追加审查。新片 `collab/reviews/20261017_1450_batch1_opus/S01_S04_review.mp4` SHA256为 `f1999b3fd3c1efebb2e1ac2aed5fd34c81ce49260b00db66dc6c1d81f331f239`；同目录 `crops_S01_S04.png` 是Opus拼图。本轮没有打开新片/拼图进行视觉或声画验收。Opus称已发用户，此为其转述，未在此线程收到用户反馈。
 
 必要成果已持久化；未打包的中间过程仍原地保存：
 - `/tmp/laidian-batch1-g03-2e96/`：完整原件、全部成功/失败配准派生物、脚本与作者manifest；仅六态进入交付。
