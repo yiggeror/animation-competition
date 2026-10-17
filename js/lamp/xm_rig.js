@@ -34,8 +34,9 @@ const blinkAt = (t, t0) => { const u = t - t0; if (u < 0 || u > 0.2) return 0; i
 export function pose16(t) {
   const blink = Math.max(blinkAt(t, 1.55), blinkAt(t, 4.15));
   const useB = t >= 1.61;                                    // 头（脸）在闭眼时换
-  // 身体（胳膊）三态：抱臂 → 松到一半（中间图只停很短，远手在中间图里偏高）→ 松开搭在膝上
-  const toM = sstep(1.44, 1.58, t), toB = sstep(1.60, 1.80, t);
+  // 身体（胳膊）三态：抱臂 → 松到一半（中间图只停 4 帧）→ 松开搭在膝上。
+  // 三张图之间直接切、不叠化（叠化时两张图的胳膊半透明地叠在一起，合作方查出 S15 4.458～4.792 秒有叠影），像一拍二的作画
+  const toM = t >= 1.50 ? 1 : 0, toB = t >= 1.67 ? 1 : 0;
   const mixB = toB, wM = toM * (1 - toB);
   const head = 0.045 * (1 - backOut(1.3, 2.8, t));        // 弧度；正 = 下巴低（画面里顺时针）
   const breathe = Math.sin((t / 3.4) * 6.283);
