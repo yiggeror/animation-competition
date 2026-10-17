@@ -40,14 +40,14 @@ export const POSES = {
   pinch: { f: { index: [0.7, 0.9, 0.4], middle: [0.9, 1.2, 0.6], ring: [1.1, 1.4, 0.7], little: [1.2, 1.5, 0.75] }, splay: 0.02, thumb: { tip: [2.6, 13.4, -3.0], pole: [0.7, 0, 0.7] } },
   point: { f: { index: [0.0, 0.05, 0.02], middle: [1.45, 1.7, 0.9], ring: [1.5, 1.75, 0.9], little: [1.45, 1.7, 0.85] }, splay: 0, thumb: { tip: [-0.2, 7.6, -3.6], pole: [0.5, 0.3, 0.8], adduct: 1 } },
   // 手影小狗（右手）：四指并拢伸直是嘴筒子，小指往下放是下巴，拇指竖起来是耳朵
-  dog: { f: { index: [0.05, 0.05, 0.02], middle: [0.05, 0.05, 0.02], ring: [0.15, 0.1, 0.05], little: [0.9, 0.2, 0.1] }, splay: -0.02, thumb: { tip: [3.6, 10.6, 3.2], pole: [1, 0, 0] } },
+  dog: { f: { index: [0.05, 0.05, 0.02], middle: [0.05, 0.05, 0.02], ring: [0.08, 0.06, 0.03], little: [0.12, 0.06, 0.03] }, splay: -0.02, jaw: 0.15, thumb: { tip: [5.6, 9.6, 0.6], pole: [0.3, 1, 0.2] } },
 };
 export function mixPose(A, B, k) {
   const L = (a, b) => a + (b - a) * k;
   const f = {};
   for (const n of Object.keys(A.f)) f[n] = A.f[n].map((v, i) => L(v, B.f[n][i]));
   const tA = A.thumb, tB = B.thumb;
-  return { f, splay: L(A.splay, B.splay), thumb: { tip: tA.tip.map((v, i) => L(v, tB.tip[i])), pole: (tA.pole || [0.6, 0, 0.8]).map((v, i) => L(v, (tB.pole || [0.6, 0, 0.8])[i])), adduct: L(tA.adduct ?? 0, tB.adduct ?? 0) } };
+  return { f, splay: L(A.splay, B.splay), jaw: L(A.jaw || 0, B.jaw || 0), thumb: { tip: tA.tip.map((v, i) => L(v, tB.tip[i])), pole: (tA.pole || [0.6, 0, 0.8]).map((v, i) => L(v, (tB.pole || [0.6, 0, 0.8])[i])), adduct: L(tA.adduct ?? 0, tB.adduct ?? 0) } };
 }
 
 // 正向运动学：返回各手指的关节点（手坐标）和"手背方向"
@@ -57,7 +57,9 @@ export function solve(pose, scale = 1) {
   const names = ['index', 'middle', 'ring', 'little'];
   names.forEach((n, i) => {
     const F = FINGERS[n], fl = pose.f[n];
-    const spread = pose.splay * (1.5 - i);           // 食指往拇指那边、小指往外
+    // 食指往拇指那边、小指往外；jaw：小指（带一点无名指）在掌面里往下张开（手影小狗的下巴）
+    // （绕 z 转正角度是往小指那边转，所以食指张开用负角）
+    const spread = -pose.splay * (1.5 - i) + (n === 'little' ? 1.5 * (pose.jaw || 0) : n === 'ring' ? 0.15 * (pose.jaw || 0) : 0);
     let dir = rot([0, 1, 0], [0, 0, 1], spread), axis = rot([1, 0, 0], [0, 0, 1], spread);
     let p = [F.mcp[0], F.mcp[1], 0];
     const pts = [[p[0], p[1] - 1.6, 0], p];             // 往手掌里多一个点，手指"长"在手掌里
@@ -217,12 +219,6 @@ export function drawHand(ctx, opt) {
       ctx.fillStyle = shade('#f8dccf', L); ctx.beginPath(); ctx.ellipse(nl * 0.1, 0, nl * 0.5, nw / 2, 0, 0, 7); ctx.fill();
       ctx.strokeStyle = LINE; ctx.lineWidth = lw * 0.55; ctx.stroke();
       ctx.restore();
-    }
-    // 近节和中节之间的褶（手背朝镜头时）
-    if (vis > 0.3 && pt.n !== 'thumb') {
-      const pj = P2(f.pts[3]), pj2 = P2(f.pts[4]), an = Math.atan2(pj2[1] - pj[1], pj2[0] - pj[0]) + Math.PI / 2, w = t.Wd(0.55) * 0.28;
-      ctx.strokeStyle = LINE; ctx.globalAlpha = 0.5; ctx.lineWidth = lw * 0.5; ctx.beginPath();
-      ctx.moveTo(pj[0] + Math.cos(an) * w, pj[1] + Math.sin(an) * w); ctx.lineTo(pj[0] - Math.cos(an) * w, pj[1] - Math.sin(an) * w); ctx.stroke(); ctx.globalAlpha = 1;
     }
   };
   const web = (pt) => {                                  // 手指骨架 + 手掌里的点围成的多边形，填肉色（握拳时不留空洞）
