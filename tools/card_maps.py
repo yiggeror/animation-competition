@@ -41,6 +41,16 @@ for m in (yellow, white, red, blue, black): mat[m] = 3; extra[m] = 0.3
 mat = np.where(inside, mat, mat[near[0], near[1]]); extra = np.where(inside, extra, extra[near[0], near[1]])
 # 小碎块（比如个别像素被分错）并进周围的大类
 mat = ndi.median_filter(mat, size=5)
+# 被别的材质包住的小块"其他"（比如生图里偏红、带排线的腮红）改成周围最多的材质：不然打光时被当成凳子木头，脸上一块黑斑
+lab, n = ndi.label((mat == 0) & solid)
+for i, sl in enumerate(ndi.find_objects(lab), 1):
+    if sl is None: continue
+    sl = tuple(slice(max(0, s.start - 4), s.stop + 4) for s in sl)
+    blob = lab[sl] == i
+    if blob.sum() > 0.004 * solid.sum(): continue            # 凳子这种大块不动
+    ring = ndi.binary_dilation(blob, iterations=3) & ~blob & solid[sl]
+    vals = mat[sl][ring]; vals = vals[vals != 0]
+    if vals.size: mat[sl][blob] = np.bincount(vals).argmax()
 edgeMat = np.zeros_like(solid)
 for dy, dx in ((0, 1), (1, 0)):
     edgeMat |= np.roll(mat, (dy, dx), axis=(0, 1)) != mat
