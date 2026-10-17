@@ -1,0 +1,476 @@
+{
+  "method": "Two fixed lower-garment NCC patch centers, global similarity only; third independently matched clothing holdout. These are not rigid world/stool anchors. No manual target fitting or local deformation.",
+  "target_size": [
+    941,
+    1212
+  ],
+  "target_anchors": [
+    [
+      165,
+      1084
+    ],
+    [
+      843,
+      1147
+    ]
+  ],
+  "holdout": [
+    594,
+    1111
+  ],
+  "patches": [
+    [
+      -35,
+      -25,
+      35,
+      25
+    ],
+    [
+      -30,
+      -25,
+      30,
+      25
+    ],
+    [
+      -35,
+      -35,
+      35,
+      35
+    ]
+  ],
+  "search_native_px": 40,
+  "frames": [
+    {
+      "file": "g03_watermelon_k01",
+      "source": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/s03_author/originals/g03_watermelon_k01.png",
+      "sha256": "3da07329e9676cf1267f45642acb470dbec3fd29309bdf296e9580c5041a1b0f",
+      "size": [
+        941,
+        1212
+      ],
+      "anchors": [
+        [
+          165.0,
+          1084.0
+        ],
+        [
+          843.0,
+          1147.0
+        ]
+      ],
+      "holdout_native": [
+        594.0,
+        1111.0
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        594.0,
+        1111.0
+      ],
+      "score": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "check_residual_px": 0.0,
+      "passes_3px": true,
+      "matrix": [
+        [
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "translation": [
+        0.0,
+        0.0
+      ],
+      "registered_path": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/s03_author/diagnostics/registered_rgba/g03_watermelon_k01.png",
+      "registered_sha256": "ecaf711bfa31e2e5f9ebeaa6261b33585428538337f0149597f6ae05f00fc61d"
+    },
+    {
+      "file": "g03_watermelon_k03",
+      "source": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/s03_author/originals/g03_watermelon_k03.png",
+      "sha256": "b36fd7eae2ba99292fb572f201db6648110ee6ee65ffa06c162437395176b413",
+      "size": [
+        1105,
+        1423
+      ],
+      "anchors": [
+        [
+          197.60280450851005,
+          1267.2106165578894
+        ],
+        [
+          991.1792390319895,
+          1342.0483595065134
+        ]
+      ],
+      "holdout_native": [
+        697.9792957172427,
+        1301.2559077279755
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        592.4862791397,
+        1112.4967107178873
+      ],
+      "score": [
+        0.97726515744229,
+        0.9325421728287855,
+        0.993524115882791
+      ],
+      "check_residual_px": 2.128730564431797,
+      "passes_3px": true,
+      "matrix": [
+        [
+          0.8542495183078543,
+          0.0011720432016956522
+        ],
+        [
+          -0.0011720432016956522,
+          0.8542495183078543
+        ]
+      ],
+      "translation": [
+        -5.287326155929037,
+        1.7175402344842041
+      ],
+      "registered_path": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/s03_author/diagnostics/registered_rgba/g03_watermelon_k03.png",
+      "registered_sha256": "f13e8b30553d82eb45387cd52ffdc40758c66b7fa4a42ec6239004485d00a887"
+    },
+    {
+      "file": "g03_watermelon_k06",
+      "source": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/s03_author/originals/g03_watermelon_k06.png",
+      "sha256": "6e67c061f2665f2cf16bfac791f44a02615f82e42857389a56785a7545e861f1",
+      "size": [
+        1105,
+        1423
+      ],
+      "anchors": [
+        [
+          195.1489864227341,
+          1267.893440019262
+        ],
+        [
+          990.1924559603616,
+          1343.8440706847848
+        ]
+      ],
+      "holdout_native": [
+        695.352485432283,
+        1300.95968320141
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        591.532859647396,
+        1111.0881963697332
+      ],
+      "score": [
+        0.972235858507429,
+        0.9268375983363102,
+        0.9800354642481865
+      ],
+      "check_residual_px": 2.4687162897103416,
+      "passes_3px": true,
+      "matrix": [
+        [
+          0.8525728703883173,
+          0.0022054733627677914
+        ],
+        [
+          -0.0022054733627677914,
+          0.8525728703883173
+        ]
+      ],
+      "translation": [
+        -4.175036716591677,
+        3.458846387586391
+      ],
+      "registered_path": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/s03_author/diagnostics/registered_rgba/g03_watermelon_k06.png",
+      "registered_sha256": "68888adfb63d0533f208f3357bf8c3fe82e0267285d50e0504282937fdf8e6cc"
+    },
+    {
+      "file": "g03_watermelon_k08",
+      "source": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/s03_author/originals/g03_watermelon_k08.png",
+      "sha256": "0364ce0d2ab2015c1a7765ec3e577a227b2a32df08b42efde25166fb768d9ae9",
+      "size": [
+        1105,
+        1423
+      ],
+      "anchors": [
+        [
+          194.45957510671502,
+          1266.410796037957
+        ],
+        [
+          984.9700341266581,
+          1340.445955448745
+        ]
+      ],
+      "holdout_native": [
+        691.5997154559183,
+        1299.8833498055665
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        591.3758316534297,
+        1112.396104535922
+      ],
+      "score": [
+        0.9878584962168688,
+        0.9482066827628661,
+        0.9927137279896454
+      ],
+      "check_residual_px": 2.972434589080687,
+      "passes_3px": true,
+      "matrix": [
+        [
+          0.8576151739532553,
+          0.0006245029538914112
+        ],
+        [
+          -0.0006245029538914112,
+          0.8576151739532553
+        ]
+      ],
+      "translation": [
+        -2.5623596149872014,
+        -1.9716745613063722
+      ],
+      "registered_path": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/s03_author/diagnostics/registered_rgba/g03_watermelon_k08.png",
+      "registered_sha256": "595ed5be7967e60320aae76f77a00359d1da89f9d5e4caa6a8c077730eb8642c"
+    },
+    {
+      "file": "g03_watermelon_k11",
+      "source": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/s03_author/originals/g03_watermelon_k11.png",
+      "sha256": "85b3942fbcd5b085facfa612d0637654dabd9cd40ac392226dcbbe436deff043",
+      "size": [
+        1105,
+        1423
+      ],
+      "anchors": [
+        [
+          195.58376732750747,
+          1267.792140190088
+        ],
+        [
+          992.2761702880206,
+          1344.1752637236957
+        ]
+      ],
+      "holdout_native": [
+        698.9498000032273,
+        1300.2161419660717
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        593.3343614677638,
+        1110.3313880476978
+      ],
+      "score": [
+        0.9705908787826041,
+        0.9200824905391312,
+        0.9722551987058621
+      ],
+      "check_residual_px": 0.9434599081884416,
+      "passes_3px": true,
+      "matrix": [
+        [
+          0.8507796300050974,
+          0.002491809349730629
+        ],
+        [
+          -0.002491809349730629,
+          0.8507796300050974
+        ]
+      ],
+      "translation": [
+        -4.557781510340533,
+        5.875629505788538
+      ],
+      "registered_path": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/s03_author/diagnostics/registered_rgba/g03_watermelon_k11.png",
+      "registered_sha256": "934f73554a38d47b1866849ef8046603ddb5b38a23ac1af00eca44b5ff56c570"
+    },
+    {
+      "file": "g03_watermelon_k12",
+      "source": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/s03_author/originals/g03_watermelon_k12.png",
+      "sha256": "7fdd284bb9fcfa1f6b16c5dfe743129a2db7605d4d71185d9c17e2d682a432a6",
+      "size": [
+        1105,
+        1424
+      ],
+      "anchors": [
+        [
+          194.31547868391306,
+          1267.143671874369
+        ],
+        [
+          986.1600128400142,
+          1340.554579629105
+        ]
+      ],
+      "holdout_native": [
+        694.4942230186077,
+        1300.1966117948284
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        593.269778413315,
+        1112.3912813591312
+      ],
+      "score": [
+        0.9793634678259152,
+        0.9431393383430066,
+        0.9931123612442547
+      ],
+      "check_residual_px": 1.5712693549887569,
+      "passes_3px": true,
+      "matrix": [
+        [
+          0.8562453345638269,
+          -0.00017964729536624953
+        ],
+        [
+          0.00017964729536624953,
+          0.8562453345638269
+        ]
+      ],
+      "translation": [
+        -1.1540831231446305,
+        -1.0207655146984962
+      ],
+      "registered_path": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/s03_author/diagnostics/registered_rgba/g03_watermelon_k12.png",
+      "registered_sha256": "9025fc5a33b9a3952124fc3221e1957e5a75d1553b7b16ccb9cede8955ab2016"
+    },
+    {
+      "file": "g03_watermelon_k13",
+      "source": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/s03_author/originals/g03_watermelon_k13.png",
+      "sha256": "710489f4067be28c0db076d76d98724a78c8ad4f84178e1a416ac03187a36b42",
+      "size": [
+        1105,
+        1424
+      ],
+      "anchors": [
+        [
+          195.03591472377408,
+          1266.57990760975
+        ],
+        [
+          987.274581805001,
+          1339.847528583615
+        ]
+      ],
+      "holdout_native": [
+        694.1102957673875,
+        1300.024959653697
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        592.1139392830053,
+        1112.80925915872
+      ],
+      "score": [
+        0.9740972501384849,
+        0.9256266859382841,
+        0.9918274857423951
+      ],
+      "check_residual_px": 2.6135500246986894,
+      "passes_3px": true,
+      "matrix": [
+        [
+          0.8558371313678742,
+          -0.0003721724977966891
+        ],
+        [
+          0.0003721724977966891,
+          0.8558371313678742
+        ]
+      ],
+      "translation": [
+        -1.4475915630299312,
+        -0.058701780458477515
+      ],
+      "registered_path": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/s03_author/diagnostics/registered_rgba/g03_watermelon_k13.png",
+      "registered_sha256": "cda96f2449f21305e77572d515526c3aa398536f17fee4969a278f64e7eacd8e"
+    },
+    {
+      "file": "g03_watermelon_k14",
+      "source": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/s03_author/originals/g03_watermelon_k14.png",
+      "sha256": "4d66cef975eb25ee9b65c2d3613734881bc88e03c178244a34e7a7895c43d058",
+      "size": [
+        1105,
+        1424
+      ],
+      "anchors": [
+        [
+          194.2944244307454,
+          1266.948786174247
+        ],
+        [
+          986.9595869228991,
+          1340.5806439111457
+        ]
+      ],
+      "holdout_native": [
+        693.256524163443,
+        1300.048166898168
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        591.7836869812533,
+        1112.3235819512477
+      ],
+      "score": [
+        0.9615241556452381,
+        0.9305420753615602,
+        0.9911518843985877
+      ],
+      "check_residual_px": 2.5814555155444534,
+      "passes_3px": true,
+      "matrix": [
+        [
+          0.8553445182539747,
+          -2.4466971433794448e-05
+        ],
+        [
+          2.4466971433794448e-05,
+          0.8553445182539747
+        ]
+      ],
+      "translation": [
+        -1.157672464389833,
+        0.31754704119839516
+      ],
+      "registered_path": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/s03_author/diagnostics/registered_rgba/g03_watermelon_k14.png",
+      "registered_sha256": "fb1590dd41d0e644597f25451caab62f9735bd9e9cfa1f08468bdb6bddf94f10"
+    }
+  ]
+}

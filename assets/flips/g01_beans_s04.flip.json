@@ -1,5 +1,5 @@
 {
-  "note": "S04 candidate only; two-foot rigid similarity registration; no image warping. S01 and S04 separate timelines; S10 not authorized. k04 retains beans in pod, only temporary placement, not empty husk. All new originals are independent one-shot edits of g01_beans master; k01 reprocessed same pipeline.",
+  "note": "S04 candidate only. Visible from F63. Freeze -> look overhead -> turn toward child -> sigh -> place unfinished pod and pea in basin -> empty hands rest. Not production approval. No RIFE. r06/r07/r06b rejected and excluded.",
   "target": {
     "width": 779,
     "height": 1355,
@@ -15,108 +15,135 @@
     ]
   },
   "fps": 24,
+  "visible_from_frame": 63,
   "frames": [
     {
-      "file": "g01_beans_k01",
+      "file": "g01_s04_r01",
       "anchors": [
         [
-          538.0,
-          1274.0
+          655.23,
+          1553.52
         ],
         [
-          745.0,
-          1215.0
+          908.06,
+          1480.89
         ]
       ]
     },
     {
-      "file": "g01_beans_k02",
+      "file": "g01_s04_r02",
       "anchors": [
         [
-          656.66,
-          1554.52
+          653.34,
+          1547.46
         ],
         [
-          909.75,
-          1481.75
+          905.1,
+          1475.14
         ]
       ]
     },
     {
-      "file": "g01_beans_k03",
+      "file": "g01_s04_r03",
       "anchors": [
         [
-          654.12,
-          1550.73
+          657.83,
+          1556.67
         ],
         [
-          906.55,
-          1479.39
+          910.88,
+          1484.44
         ]
       ]
     },
     {
-      "file": "g01_beans_k04",
+      "file": "g01_s04_r04",
       "anchors": [
         [
-          657.81,
-          1550.33
+          655.38,
+          1553.52
         ],
         [
-          911.22,
-          1477.52
+          906.98,
+          1480.4
         ]
       ]
     },
     {
-      "file": "g01_beans_k05",
+      "file": "g01_s04_r05",
       "anchors": [
         [
-          656.99,
-          1555.46
+          653.24,
+          1544.45
         ],
         [
-          911.0,
-          1483.18
+          904.9,
+          1473.35
         ]
       ]
     },
     {
-      "file": "g01_beans_k06",
+      "file": "g01_s04_r06c",
       "anchors": [
         [
-          654.01,
-          1555.1
+          657.87,
+          1553.89
         ],
         [
-          906.51,
-          1482.35
+          912.16,
+          1481.99
         ]
       ]
     },
     {
-      "file": "g01_beans_k07",
+      "file": "g01_s04_r07b",
       "anchors": [
         [
-          653.96,
-          1552.19
+          657.91,
+          1554.19
         ],
         [
-          905.95,
-          1479.7
+          911.89,
+          1482.3
         ]
       ]
     },
     {
-      "file": "g01_beans_k08",
+      "file": "g01_s04_r08",
       "anchors": [
         [
-          654.64,
-          1552.89
+          657.05,
+          1554.18
         ],
         [
-          906.76,
-          1480.51
+          909.85,
+          1482.03
+        ]
+      ]
+    },
+    {
+      "file": "g01_s04_r09",
+      "anchors": [
+        [
+          658.73,
+          1555.02
+        ],
+        [
+          912.77,
+          1482.55
+        ]
+      ]
+    },
+    {
+      "file": "g01_s04_r10",
+      "anchors": [
+        [
+          659.16,
+          1555.21
+        ],
+        [
+          913.54,
+          1482.62
         ]
       ]
     }
@@ -124,47 +151,59 @@
   "timelineFrames": [
     [
       0,
-      5
-    ],
-    [
-      69,
-      7
+      0
     ],
     [
       72,
-      5
+      1
+    ],
+    [
+      75,
+      2
+    ],
+    [
+      93,
+      1
     ],
     [
       96,
+      3
+    ],
+    [
+      99,
       4
     ],
     [
-      108,
+      117,
       5
     ],
     [
-      135,
+      123,
+      6
+    ],
+    [
+      126,
       7
     ],
     [
-      138,
-      5
+      129,
+      8
     ],
     [
-      162,
-      4
+      147,
+      9
+    ],
+    [
+      150,
+      8
+    ],
+    [
+      171,
+      9
     ],
     [
       174,
-      5
-    ],
-    [
-      186,
-      4
-    ],
-    [
-      189,
-      5
+      8
     ]
   ]
 }
