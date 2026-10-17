@@ -569,3 +569,43 @@ S02、S05 的手机特写我用代码画了手（`renders/checkpoint2/s02_phone_
 ### 4. S31 鬼脸的机位
 
 用**东侧半米空当**：小满站在床单前面东侧，手电从下巴往上照，脸朝床单前的观众方向、余光看奶奶，奶奶在床单后面露半张脸。`anim_33_xiaoman_flashlight_face` 按这个画：正面略侧、朝左，下巴下方留出手电的位置，手电由我画、光由我打。
+
+## 2026-10-17 04:22 UTC · 第一批修后短片可审
+
+全部都是 960×540 预览。床单戏的床单图用半分辨率（`sheetRes 450`），成片用全分辨率。
+
+| 镜头 | 短片 | 用了哪些素材 | commit |
+|---|---|---|---|
+| S15 | `renders/checkpoint2/s15_three_state_preview.mp4` | 抱臂 → `anim_16_xiaoman_arms_mid` v2（停约 0.1 秒）→ 松臂，三张同一个裁切框。眨眼时眼皮多边形下沿盖到 y≈288，并且法线和材质也一起盖住（`cards.js` 的 overlay 现在三张图都调用） | 684687b |
+| S18 | `renders/checkpoint2/s18_laugh_preview.mp4` | 前 0.42 秒 B 态，然后换成 `anim_18_xiaoman_laugh_cover`（和 B 逐像素对齐），肩膀一耸再一颤一颤 | 684687b、fb7e44a |
+| S22 | `renders/checkpoint2/s22_hands_preview.mp4` | `anim_22_hands_together`，签子沿你们给的两条杆轴直接接长，没有折角 | 3361cf7 |
+| S25 | `renders/checkpoint2/s25_dog_preview.mp4` | `anim_25_xiaoman_dog_hands`，狗影是图的轮廓按手电位置放大投到光斑里。嘴不开合，只在两声"汪"时轻轻往前一顶 | 684687b |
+| S27 | `renders/checkpoint2/s27_fix_preview.mp4` | 开头直接取 S26 第 18 秒的位置、朝向、腿姿，2.5 秒起再垂下去 | 69af0a9 |
+| S17 | 正在渲 → `renders/checkpoint2/s17_fix_preview.mp4` | 第一啄：乌龟在 5.52～5.66 秒缩头，鹤身子后收 10 厘米，喙落在龟头原来的空处 | 69af0a9 |
+| S20 | 正在渲 → `renders/checkpoint2/s20_backstage_preview.mp4` | `anim_20_xiaoman_puppeteer` v2、`anim_20_grandma_puppeteer` v2 → 6.0 秒换成 `anim_20_grandma_laugh_bent` | af40a43 |
+
+**S20 说明：**
+- 换了一个后台机位：东北角往西南看，小满和乌龟在前景，奶奶、马灯、鹤在后面。
+- 人物都面朝床单，在这个机位里朝画面左边，所以**三张图都做了水平翻转**，奶奶的绿镯会出现在另一只手腕上。如果你们认为这不能接受，请告诉我，我改回原机位，另想办法解决小满被挡的问题。
+- 图上露在拳头外的短签都擦掉了，由程序画长签：
+  - 小满两个握点约 (568,330)、(510,495)；
+  - 奶奶笑弯腰图握点约 (585,538)，两根鹤签并在这一只手里。
+
+**音频：**
+- 火苗时基已修；
+- music 分轨已乘 0.9，三条分轨相加就是总混音；
+- 电子声段加了隔直，实测 DC 约 1e-5；
+- 两遍 loudnorm 后实测 -16.0 LUFS、真峰 -1.5 dBTP（`build/audio/film_mix_norm.wav`，build 目录不进仓库）。
+
+**下一步：**
+- S24 新增一个 2.5 秒后台近景，用 `anim_24_xiaoman_smug`：S23 咬住鹤嘴之后，小满回头得意地看奶奶。
+- 然后用屋子底图做屋内镜头。
+
+屋内镜头的瓶颈是**小满在屋里的姿势图**，请排在手部图之后：
+- `anim_01_xiaoman_prone_phone`
+- `anim_07_xiaoman_flop`
+- `anim_13_xiaoman_stare` / `yawn`
+- `anim_14_xiaoman_drag_stool`、`anim_14_grandma_hang_sheet`
+- `anim_30_both_squint`
+- `anim_31` 两张
+- `anim_32_xiaoman_pull_cord`
