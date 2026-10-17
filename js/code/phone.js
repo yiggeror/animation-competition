@@ -50,8 +50,12 @@ export function mat() {
 
 // ---------------------------------------------------------------- 手机
 export const PW = 1180, PH = 580, PR = 78, BZ = 20;
-export const SX0 = -PW / 2 + BZ, SY0 = -PH / 2 + BZ, SW = PW - 2 * BZ, SH = PH - 2 * BZ;
-export const DPAD = [150, SH - 140], JUMP = [SW - 150, SH - 140];   // 屏幕坐标（左上角为原点）
+export const SX0 = -PW / 2 + BZ, SY0 = -PH / 2 + BZ;
+export let SW = PW - 2 * BZ, SH = PH - 2 * BZ;
+export let DPAD = [150, SH - 140], JUMP = [SW - 150, SH - 140];   // 屏幕坐标（左上角为原点）
+// 换成合作方画的手机图时，屏幕尺寸和两个按键的位置按图来（按键在两个拇指下面）
+export function setScreen(w, h, dpad, jump) { SW = w; SH = h; DPAD = dpad; JUMP = jump; }
+export { drawGame, drawStatus };
 
 // 跑酷小游戏：小人跑、跳过木箱、吃金币。g = { t, jumps:[按下的时刻], mash（狂按程度 0..1） }
 const V = 430, RX = 380;
