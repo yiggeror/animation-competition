@@ -5,7 +5,7 @@ export const SHOTS = [
   // 第 1 场 · 闷（日光灯）
   { id: 'S01', scene: 1, line: 'paint', dur: 12, mod: 'js/paint/shots/s01.js', text: '全景：吊扇转、蚊香烟、电视亮着；小满趴在竹席上玩手机，奶奶坐矮凳剥毛豆，推过来一块西瓜，小满摇头' },
   { id: 'S02', scene: 1, line: 'code', dur: 4, mod: 'js/code/s02.js', text: '特写：手机屏幕，游戏画面 + 电量 2%' },
-  { id: 'S03', scene: 1, line: 'paint', dur: 6, mod: 'js/paint/shots/s03.js', text: '中近景：奶奶剥一颗豆，看一眼小满，自己咬一口西瓜' },
+  { id: 'S03', scene: 1, line: 'paint', dur: 6, mod: 'js/paint/shots/s03.js', text: '中近景：奶奶看一眼小满，把西瓜往前递了递，又收回来自己咬一口' },
   // 第 2 场 · 停电
   { id: 'S04', scene: 2, line: 'paint', dur: 8, mod: 'js/paint/shots/s04.js', text: '全景："啪"——灯灭、电视缩成一个亮点、吊扇慢慢停；月光从窗口斜进来' },
   { id: 'S05', scene: 2, line: 'code', dur: 4, mod: 'js/code/s05.js', text: '特写：手机 1%，手指狂按，屏幕黑' },
