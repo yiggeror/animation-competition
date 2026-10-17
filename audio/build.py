@@ -224,7 +224,8 @@ sfx(power_cut(), CUT, 0.7, -0.3)
 print('屋内音效…')
 for t0, hard in [(1.0, False), (1.8, False), (3.0, False), (3.9, False), (6.4, True)]:
     sfx(plug(hard), T('S06', t0), 0.6 if hard else 0.4, 0.15)
-sfx(lp(R.standard_normal(ns(0.35)), 1500).astype(np.float32) * np.hanning(ns(0.35)).astype(np.float32) * 0.3, T('S06', 3.4), 0.5, 0.15)   # 吹一口插头
+for k in range(4):                                         # 捏着插头晃两下：插脚在手里轻轻磕的塑料声（js/paint/shots/s06.js 3.25～3.6 秒，每秒 4.5 下）
+    sfx(click(0.12, 3800, 260), T('S06', 3.25 + k / 9 + 0.05), 0.14, 0.15)
 sfx(thud(0.9, 80, 0.15, 900), T('S07', 0.4), 0.5, -0.1); sfx(bamboo_mat(0.7), T('S07', 0.42), 0.4, -0.1)
 sfx(fan_hand(3.5, 1.3), T('S07', 1.2), 0.25, -0.1)
 sfx(scrape(0.3, 4), T('S07', 1.4), 0.2, 0.4)              # 奶奶起身，凳子挪一下
@@ -539,8 +540,10 @@ music = reverb(music, reverb_ir(1.1), wet=0.2)
 music[s_on:s_on + ns(OFF - ON)] = 0                            # 混响尾巴也切掉：来电是一刀切
 SFX_r = reverb(SFX, reverb_ir(0.45, bright=5000), wet=0.15)
 music = music * 0.9                                          # 分轨和总混音用同一个系数，三条分轨相加就是总混音
+# 15 Hz 高通在每条分轨上各做一次再相加（线性滤波，等价于对总混音做），这样三条分轨相加仍然就是总混音
+hp2 = lambda x: np.stack([hp(x[:, 0], 15), hp(x[:, 1], 15)], 1).astype(np.float32)
+music, SFX_r, AMB = hp2(music), hp2(SFX_r), hp2(AMB)
 mix = music + SFX_r + AMB
-mix = np.stack([hp(mix[:, 0], 15), hp(mix[:, 1], 15)], 1)
 peak = np.abs(mix).max(); mix = mix / peak * 0.89
 print(f'峰值归一前 {peak:.2f}')
 for name, x in [('music', music), ('sfx', SFX_r), ('amb', AMB)]:
