@@ -1,0 +1,34 @@
+{
+  "target_rectangle_inclusive_xyxy": [
+    1180,
+    325,
+    1455,
+    525
+  ],
+  "outside_pixels": 1516204,
+  "outside_changed_any_channel": 1442151,
+  "outside_changed_percent": 95.11589469490913,
+  "outside_mean_abs_rgb": 2.1025763463667597,
+  "outside_max_abs_channel": 126,
+  "outside_changed_gt16": 12231,
+  "A": {
+    "center_screen_median_rgb": [
+      6.0,
+      251.0,
+      31.0
+    ],
+    "thumb_skin_roi_left_x": 1202,
+    "thumb_skin_roi_top_y": 339,
+    "note": "skin threshold silhouette extrema, not skeletal joint coordinates"
+  },
+  "B": {
+    "center_screen_median_rgb": [
+      7.0,
+      249.0,
+      41.0
+    ],
+    "thumb_skin_roi_left_x": 1196,
+    "thumb_skin_roi_top_y": 365,
+    "note": "skin threshold silhouette extrema, not skeletal joint coordinates"
+  }
+}
