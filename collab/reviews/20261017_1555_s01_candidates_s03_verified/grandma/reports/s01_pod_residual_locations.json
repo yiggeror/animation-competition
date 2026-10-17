@@ -1,0 +1,46 @@
+{
+  "coordinate_system": "Unregistered original PNG pixels, zero-based, top-left origin; all boxes half-open [left,top,right,bottom]. ROI is a visual localization box, not a segmentation or an automatic edit mask.",
+  "crop_box": [
+    220,
+    615,
+    390,
+    745
+  ],
+  "convex_residual_localization_box": [
+    264,
+    644,
+    299,
+    677
+  ],
+  "approximate_center": [
+    281,
+    660
+  ],
+  "interpretation": "Both c04b and c05b retain a raised green left-cavity object with a top highlight and rounded outer contour. c05b slightly changes interior shading but does not establish an unambiguously empty second well. One airborne pea is still below it. c05b remains rejected.",
+  "sources": [
+    {
+      "id": "c04b",
+      "path": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/grandma_author/originals/g01_s01_c04b.png",
+      "sha256": "e9fdd06cfe133d3b64392173ebb8de3eab8f5e455f145ad633fc67c0572c1176",
+      "source_size": [
+        951,
+        1654
+      ],
+      "native_crop": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/grandma_author/evidence/s01_c04b_pod_crop_native.png",
+      "zoom_crop": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/grandma_author/evidence/s01_c04b_pod_crop_4x.png",
+      "annotated_crop": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/grandma_author/evidence/s01_c04b_pod_location_4x.png"
+    },
+    {
+      "id": "c05b",
+      "path": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/grandma_author/originals/g01_s01_c05b.png",
+      "sha256": "efd422ea4d1636632e685d8d3e54e5359eabb169e27fcd6186f31a75469204cd",
+      "source_size": [
+        951,
+        1654
+      ],
+      "native_crop": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/grandma_author/evidence/s01_c05b_pod_crop_native.png",
+      "zoom_crop": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/grandma_author/evidence/s01_c05b_pod_crop_4x.png",
+      "annotated_crop": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/grandma_author/evidence/s01_c05b_pod_location_4x.png"
+    }
+  ]
+}

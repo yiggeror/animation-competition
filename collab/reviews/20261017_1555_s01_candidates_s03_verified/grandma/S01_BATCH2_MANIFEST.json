@@ -1,0 +1,374 @@
+{
+  "status": "S01 NOT READY FOR INTEGRATION. Four valid partial action states; two required ending states still missing.",
+  "bounded_batch_actual_calls": 4,
+  "preview_limit_seen": false,
+  "accepted_ids": [
+    "c01",
+    "c02b",
+    "c04",
+    "c04b"
+  ],
+  "rejected_ids": [
+    "c02",
+    "c03",
+    "c05",
+    "c06"
+  ],
+  "anchor_definition": {
+    "fit": [
+      [
+        538,
+        1274
+      ],
+      [
+        745,
+        1215
+      ]
+    ],
+    "third_check": [
+      759,
+      884
+    ],
+    "max_allowed_residual": 3
+  },
+  "cue_frames": [
+    19,
+    53,
+    88,
+    118,
+    143,
+    180,
+    215,
+    246
+  ],
+  "production_flip_created": false,
+  "missing": [
+    "last bean exits with correct two-bean conservation",
+    "valid two-cavity empty husk ending",
+    "glance transitions and half/full blinks for complete S01"
+  ],
+  "originals": [
+    {
+      "path": "originals/g01_s01_c01.png",
+      "sha256": "c9d0ec5aa6c5237e949f9b29d9ba7aaa47fd86f2a8ce5716ccba2570f60d2d3f",
+      "size": [
+        951,
+        1654
+      ],
+      "accepted": true,
+      "anchors": {
+        "file": "g01_s01_c01",
+        "anchors": [
+          [
+            655.66,
+            1549.71
+          ],
+          [
+            908.02,
+            1477.02
+          ]
+        ],
+        "score": [
+          0.678,
+          0.793,
+          0.804
+        ],
+        "check_residual_px": 1.48
+      }
+    },
+    {
+      "path": "originals/g01_s01_c02.png",
+      "sha256": "5625bbbfeaea078907a708b6248be18b23aec6959f73792e356848d92a392710",
+      "size": [
+        951,
+        1654
+      ],
+      "accepted": false,
+      "anchors": {
+        "file": "g01_s01_c02",
+        "anchors": [
+          [
+            656.68,
+            1554.71
+          ],
+          [
+            909.03,
+            1480.77
+          ]
+        ],
+        "score": [
+          0.707,
+          0.634,
+          0.803
+        ],
+        "check_residual_px": 3.68
+      }
+    },
+    {
+      "path": "originals/g01_s01_c02b.png",
+      "sha256": "6f98800374aa756ff5703e990cc01f53ac00412f8d10ed0de0c41d16be8dda8e",
+      "size": [
+        951,
+        1654
+      ],
+      "accepted": true,
+      "anchors": {
+        "file": "g01_s01_c02b",
+        "anchors": [
+          [
+            656.55,
+            1550.38
+          ],
+          [
+            910.09,
+            1477.56
+          ]
+        ],
+        "score": [
+          0.512,
+          0.609,
+          0.784
+        ],
+        "check_residual_px": 1.74
+      }
+    },
+    {
+      "path": "originals/g01_s01_c03.png",
+      "sha256": "c2ccad6bbf105508cc969c45f83c486adae0ab40ba7f1bad650e12141c85af60",
+      "size": [
+        951,
+        1654
+      ],
+      "accepted": false,
+      "anchors": {
+        "file": "g01_s01_c03",
+        "anchors": [
+          [
+            657.02,
+            1557.39
+          ],
+          [
+            910.05,
+            1483.99
+          ]
+        ],
+        "score": [
+          0.782,
+          0.752,
+          0.832
+        ],
+        "check_residual_px": 2.89
+      }
+    },
+    {
+      "path": "originals/g01_s01_c04.png",
+      "sha256": "1c597bf5eef8b9bee8595b8a61e31dbba6d183426916ee360ca0b5190d03bf5d",
+      "size": [
+        951,
+        1654
+      ],
+      "accepted": true,
+      "anchors": {
+        "file": "g01_s01_c04",
+        "anchors": [
+          [
+            656.63,
+            1546.76
+          ],
+          [
+            910.47,
+            1474.94
+          ]
+        ],
+        "score": [
+          0.662,
+          0.706,
+          0.85
+        ],
+        "check_residual_px": 1.65
+      }
+    },
+    {
+      "path": "originals/g01_s01_c04b.png",
+      "sha256": "e9fdd06cfe133d3b64392173ebb8de3eab8f5e455f145ad633fc67c0572c1176",
+      "size": [
+        951,
+        1654
+      ],
+      "accepted": true,
+      "anchors": {
+        "file": "g01_s01_c04b",
+        "anchors": [
+          [
+            656.93,
+            1546.37
+          ],
+          [
+            911.46,
+            1474.6
+          ]
+        ],
+        "score": [
+          0.603,
+          0.62,
+          0.823
+        ],
+        "check_residual_px": 2.43
+      }
+    },
+    {
+      "path": "originals/g01_s01_c05.png",
+      "sha256": "d29b419015ad453d45ff7f7431f5052488e8a12783ff2001a30dd6be36b2d83f",
+      "size": [
+        951,
+        1654
+      ],
+      "accepted": false,
+      "anchors": {
+        "file": "g01_s01_c05",
+        "anchors": [
+          [
+            657.42,
+            1547.91
+          ],
+          [
+            913.06,
+            1476.21
+          ]
+        ],
+        "score": [
+          0.465,
+          0.514,
+          0.781
+        ],
+        "check_residual_px": 3.12
+      }
+    },
+    {
+      "path": "originals/g01_s01_c06.png",
+      "sha256": "c751a9c264406baa18fa7862734aa8dbcd6780eea29b0625e8855941bc1df604",
+      "size": [
+        951,
+        1654
+      ],
+      "accepted": false,
+      "anchors": {
+        "file": "g01_s01_c06",
+        "anchors": [
+          [
+            657.56,
+            1546.66
+          ],
+          [
+            912.91,
+            1475.21
+          ]
+        ],
+        "score": [
+          0.405,
+          0.525,
+          0.771
+        ],
+        "check_residual_px": 3.16
+      }
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/chars/g01_s01_c01.png",
+      "sha256": "af32168861688576804bd7b2b81d736a0115bfa60c1ca8b3d830b856253dc608",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c01_n.png",
+      "sha256": "fb846cc5482f7f1994f84daa766091729ec17f4dc6032bfa60d4ff526ca81920",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c01_m.png",
+      "sha256": "ede2c46cc8bd37f73b3f50bb81f5c222c1f88a95b884986cf7c523148758e31b",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c02b.png",
+      "sha256": "feef1a3756e8316fdeb75fcf8b463a5eacefa26b5b15aa8fc637e16b66bd6015",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c02b_n.png",
+      "sha256": "897f3d4111b1d4faf053c666edab5868f1303d6933ac7687c7930ea3ee6e931b",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c02b_m.png",
+      "sha256": "5f9b73727436c474ffc7e2b145738ec6f67117d0df9a2a5b95eef049c8724388",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c04.png",
+      "sha256": "06abe5c47162036ca720ae043b1f8552d7b4c56c7ec2fda5a742b6045fab1ae6",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c04_n.png",
+      "sha256": "44ca9d1f1e857169380e65217353eac546cffd3b4e758863f1ff33d5a489b17e",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c04_m.png",
+      "sha256": "fd012c9358e27d379f22e2b2c0d51ee2c4d944e007563531d7dccee39a1a84df",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c04b.png",
+      "sha256": "f9409b10ad5ae1cc398df6c411eab1d1f9cf58e865c5880a30f6671a2b68aedb",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c04b_n.png",
+      "sha256": "023db32894688faaf365f11a7edcd33adddddc5f52ccee6c9f8bb0352127016e",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c04b_m.png",
+      "sha256": "c13e33f1d9fda4ed33e3875285416b6ae44d07a1718a9947e92afed69e70ea4a",
+      "size": [
+        951,
+        1654
+      ]
+    }
+  ]
+}

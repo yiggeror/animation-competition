@@ -1,0 +1,16 @@
+{
+  "name": "x01_prone_phone_k16",
+  "prompt": "Use case: identity-preserve. Asset: one full-body 2D animation keyframe for the existing S01 prone-phone girl. Image 1 is the only edit target and identity/body/layout master. Image 2 is a supporting leg-motion endpoint reference only, never a replacement character. Keep the original 1536x1024 framing and true transparent background. Edit ONLY the two lower legs below their stationary bent knees and the attached red sandals. Everything else must stay identical to image 1: exact face, expression, hair/ribbons, neck, shoulders, upper arms, fingers, phone/cameras, both elbow floor contacts, yellow dress and its white dots, waist/hip/knee contact, hem silhouette. No whole-character translation, resize, rotation, new lighting or new floor. Phone and both elbows and the lower hem must stay pixel-position locked. Preserve exactly two legs and the same red sandal design, toes and coherent joints; no duplicated sandals or extra limbs. Both calves swing naturally from their existing fixed knees; do not move the knees or dress. No text, panels, watermark or background. This is a different phase of an alternating idle calf-swing, not a new pose for the torso. Final return/ease-in intermediate before the original pose. Front/near sandal is almost back to its original high position; behind/far sandal is almost back low, approaching along a curved path. Approximate sandal center design targets: near (335,300), far (130,335). Keep only a subtle relaxed ankle flex, all upper-body and knee/dress pixels fixed.",
+  "referenced_image_paths": [
+    "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/xiaoman_author/candidate/assets/chars/x01_prone_phone_k01.png",
+    "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/xiaoman_author/raw/x01_prone_phone_k03.png"
+  ],
+  "transparent_background": true,
+  "status": "generated_once",
+  "design_targets_are_approximate_not_measured_output": true,
+  "reference_sha256": [
+    "bb3bc4aa09e329a324e61f83fd3298ce3a62f58240d48574952790f56cee24c1",
+    "b3ff2acd6d36e1e51cc3a40cd7fdd81e294c42cfd5b1337a9d38bed9ccbafac0"
+  ],
+  "actual_original_sha256": "56791279fdc113783cd2420325114c07ac37faa1ac17953fa80f2f2570c6d62f"
+}

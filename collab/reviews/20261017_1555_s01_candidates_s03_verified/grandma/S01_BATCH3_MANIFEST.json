@@ -1,0 +1,308 @@
+{
+  "status": "S01 incomplete, 5 valid partial action states; not approved for scene integration",
+  "actual_calls_this_batch": 2,
+  "preview_limit_seen": false,
+  "accepted_ids": [
+    "c01",
+    "c02b",
+    "c04",
+    "c04b",
+    "c06b"
+  ],
+  "new_results": [
+    {
+      "id": "c05b",
+      "file": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/grandma_author/originals/g01_s01_c05b.png",
+      "sha256": "efd422ea4d1636632e685d8d3e54e5359eabb169e27fcd6186f31a75469204cd",
+      "source_path": "/workspace/scratch/f060b5601755/generated_images/exec-f53e82b1-07ac-47ff-acbb-9a9b3066dce7.png",
+      "request": "requests/s01_c05b.json",
+      "accepted": false,
+      "anchors": {
+        "file": "g01_s01_c05b",
+        "anchors": [
+          [
+            657.05,
+            1546.28
+          ],
+          [
+            912.21,
+            1474.45
+          ]
+        ],
+        "score": [
+          0.51,
+          0.567,
+          0.8
+        ],
+        "check_residual_px": 3.07
+      }
+    },
+    {
+      "id": "c06b",
+      "file": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/grandma_author/originals/g01_s01_c06b.png",
+      "sha256": "5ffe92329bf1415da607b26216e70b1b0bcf86c2b840a0566099eb0a3d8de831",
+      "source_path": "/workspace/scratch/f060b5601755/generated_images/exec-64555698-ce0b-44b0-8ca2-0854300f4db5.png",
+      "request": "requests/s01_c06b.json",
+      "accepted": true,
+      "anchors": {
+        "file": "g01_s01_c06b",
+        "anchors": [
+          [
+            656.16,
+            1550.28
+          ],
+          [
+            909.33,
+            1477.31
+          ]
+        ],
+        "score": [
+          0.573,
+          0.654,
+          0.766
+        ],
+        "check_residual_px": 1.75
+      }
+    }
+  ],
+  "all_accepted_anchors": [
+    {
+      "file": "g01_s01_c01",
+      "anchors": [
+        [
+          655.66,
+          1549.71
+        ],
+        [
+          908.02,
+          1477.02
+        ]
+      ],
+      "score": [
+        0.678,
+        0.793,
+        0.804
+      ],
+      "check_residual_px": 1.48
+    },
+    {
+      "file": "g01_s01_c02b",
+      "anchors": [
+        [
+          656.55,
+          1550.38
+        ],
+        [
+          910.09,
+          1477.56
+        ]
+      ],
+      "score": [
+        0.512,
+        0.609,
+        0.784
+      ],
+      "check_residual_px": 1.74
+    },
+    {
+      "file": "g01_s01_c04",
+      "anchors": [
+        [
+          656.63,
+          1546.76
+        ],
+        [
+          910.47,
+          1474.94
+        ]
+      ],
+      "score": [
+        0.662,
+        0.706,
+        0.85
+      ],
+      "check_residual_px": 1.65
+    },
+    {
+      "file": "g01_s01_c04b",
+      "anchors": [
+        [
+          656.93,
+          1546.37
+        ],
+        [
+          911.46,
+          1474.6
+        ]
+      ],
+      "score": [
+        0.603,
+        0.62,
+        0.823
+      ],
+      "check_residual_px": 2.43
+    },
+    {
+      "file": "g01_s01_c06b",
+      "anchors": [
+        [
+          656.16,
+          1550.28
+        ],
+        [
+          909.33,
+          1477.31
+        ]
+      ],
+      "score": [
+        0.573,
+        0.654,
+        0.766
+      ],
+      "check_residual_px": 1.75
+    }
+  ],
+  "fixed_master_points": [
+    [
+      538,
+      1274
+    ],
+    [
+      745,
+      1215
+    ]
+  ],
+  "independent_check_point": [
+    759,
+    884
+  ],
+  "max_allowed_check_residual": 3,
+  "production_flip_created": false,
+  "missing": [
+    "last bean fully exits and pod has zero beans",
+    "glance/raise-head transitions",
+    "half and full blink states and complete facial timing"
+  ],
+  "assets": [
+    {
+      "path": "assets/chars/g01_s01_c01.png",
+      "sha256": "af32168861688576804bd7b2b81d736a0115bfa60c1ca8b3d830b856253dc608",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c01_n.png",
+      "sha256": "fb846cc5482f7f1994f84daa766091729ec17f4dc6032bfa60d4ff526ca81920",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c01_m.png",
+      "sha256": "ede2c46cc8bd37f73b3f50bb81f5c222c1f88a95b884986cf7c523148758e31b",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c02b.png",
+      "sha256": "feef1a3756e8316fdeb75fcf8b463a5eacefa26b5b15aa8fc637e16b66bd6015",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c02b_n.png",
+      "sha256": "897f3d4111b1d4faf053c666edab5868f1303d6933ac7687c7930ea3ee6e931b",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c02b_m.png",
+      "sha256": "5f9b73727436c474ffc7e2b145738ec6f67117d0df9a2a5b95eef049c8724388",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c04.png",
+      "sha256": "06abe5c47162036ca720ae043b1f8552d7b4c56c7ec2fda5a742b6045fab1ae6",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c04_n.png",
+      "sha256": "44ca9d1f1e857169380e65217353eac546cffd3b4e758863f1ff33d5a489b17e",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c04_m.png",
+      "sha256": "fd012c9358e27d379f22e2b2c0d51ee2c4d944e007563531d7dccee39a1a84df",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c04b.png",
+      "sha256": "f9409b10ad5ae1cc398df6c411eab1d1f9cf58e865c5880a30f6671a2b68aedb",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c04b_n.png",
+      "sha256": "023db32894688faaf365f11a7edcd33adddddc5f52ccee6c9f8bb0352127016e",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c04b_m.png",
+      "sha256": "c13e33f1d9fda4ed33e3875285416b6ae44d07a1718a9947e92afed69e70ea4a",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c06b.png",
+      "sha256": "f5acb1b8592ac9a465b4582e1766edeec01009c53a4cc1b1f2312022ead46411",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c06b_n.png",
+      "sha256": "0d062536599bb9ec3b7b1438669ee376bccb316a9cf61d12724331c3c318efe5",
+      "size": [
+        951,
+        1654
+      ]
+    },
+    {
+      "path": "assets/chars/g01_s01_c06b_m.png",
+      "sha256": "ccbe4edd10fb029f94e8abef21dd432b602d582e3e27b617c30951fb8b8a7e12",
+      "size": [
+        951,
+        1654
+      ]
+    }
+  ]
+}
