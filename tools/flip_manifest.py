@@ -24,7 +24,9 @@ for f in spec['frames']:
             files[p] = {'sha256': hashlib.sha256(open(p, 'rb').read()).hexdigest(), 'size': Image.open(p).size}
         except FileNotFoundError:
             files[p] = None
-    out['frames'].append({'file': f['file'], 'deg': round(deg, 2), 'scale': round(s, 4), 'files': files})
+    w, h = Image.open(f'assets/chars/{f["file"]}.png').size
+    nom = math.sqrt(spec['target']['width'] * spec['target']['height'] / (w * h))
+    out['frames'].append({'file': f['file'], 'deg': round(deg, 2), 'scale': round(s, 4), 'scaleAfterResolution': round(s / nom, 4), 'files': files})
 tl = spec['timelineFrames']
 for n in range(total):
     k = [i for n0, i in tl if n >= n0][-1]

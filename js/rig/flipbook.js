@@ -32,10 +32,11 @@ export async function loadFlip(name, o = {}) {
     const [a1, a2] = f.anchors, va = [a2[0] - a1[0], a2[1] - a1[1]];
     const s = Math.hypot(...vr) / Math.hypot(...va), ang = Math.atan2(vr[1], vr[0]) - Math.atan2(va[1], va[0]);
     const deg = Math.atan2(Math.sin(ang), Math.cos(ang)) * 180 / Math.PI;
-    if (Math.abs(deg) > MAX_DEG || s < SCALE[0] || s > SCALE[1]) bad(`${f.file} 对齐要转 ${deg.toFixed(1)}°、缩放 ${s.toFixed(2)}，超出范围，图和母版差太多`);
+    const nom = Math.sqrt((T.width * T.height) / (f.alb.width * f.alb.height)), rs = s / nom;   // 原图分辨率不同（比如 922×1706）是正常的，只查扣掉分辨率比之后的缩放
+    if (Math.abs(deg) > MAX_DEG || rs < SCALE[0] || rs > SCALE[1]) bad(`${f.file} 对齐要转 ${deg.toFixed(1)}°、缩放 ${rs.toFixed(2)}（已扣掉分辨率比 ${nom.toFixed(3)}），超出范围，图和母版差太多`);
     const c = s * Math.cos(ang), d = s * Math.sin(ang);
     f.M = [c, d, -d, c, r1[0] - (c * a1[0] - d * a1[1]), r1[1] - (d * a1[0] + c * a1[1])];
-    f.reg = { deg, scale: s };
+    f.reg = { deg, scale: s, nominal: nom };
   }
   const tl = spec.timelineFrames;
   if (!tl?.length || tl[0][0] !== 0) bad('timelineFrames 要从第 0 帧开始');
