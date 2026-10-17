@@ -8,7 +8,7 @@
 
 ### 2026-10-17：人物动作方案的调整
 
-**最新（10:20 UTC）：** 用户看了骨架变形样例（奶奶剥豆）说"不行"，选定 **Astra 逐帧出关键帧**（生图画一串关键帧，一拍三），代码只做合成、光照和镜头（`js/rig/flipbook.js`、`tools/prep_flip.py`、`tools/flip_manifest.py`）。S18 三秒试点：12 个关键帧状态（`docs/keyframes/S18.json`，"噗"在第 15 帧对齐母带琵琶音），k01 复用 x16、k07 复用母版、k06 用 Astra 生成的近口姿势（已接入，前 1.25 秒实渲在 `collab/reviews/20261017_1100_s18_trial_opus/`），其余 8 张待 Astra 生成。试点给用户看过、通过后再按 `docs/motion-plan.md` 的关键帧单逐镜生成。骨架引擎保留作小幅辅助。
+**最新（13:40 UTC）：** 人物动作改为 **逐帧关键帧**（用户选定，Astra 生图、代码只做合成光照镜头）。S18 三秒试点已完成并获用户认可（"还可以"）：11 张关键帧、一拍三、"噗"对齐母带，见 `assets/flips/x18_laugh.flip.json`。工具链：`tools/flip_anchors.py`（定位点）→ `tools/prep_flip.py`（抠图/法线/材质）→ `assets/flips/*.flip.json` → `js/rig/flipbook.js`（lamp 镜头）/ `flipLayer`（paint 镜头）。现按批推广：批 1 S01/S03/S04，批 2 S29/S30/S31，批 3 S20/S15/S24/S14，批 4 S07–S13/S28，批 5 S22/S25。骨架网格变形引擎保留作小幅辅助。
 
 **之前（09:00～09:35）尝试过：** "生图形象做皮、代码骨架驱动"
 

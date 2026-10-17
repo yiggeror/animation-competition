@@ -68,7 +68,15 @@ export function flipMaps(F, i) {
     x.setTransform(...f.M); x.drawImage(img, 0, 0);
     return c;
   };
-  const m = { alb: reg(f.alb), nrm: reg(f.nrm, 'rgb(128,128,255)'), mat: reg(f.mat, 'rgb(0,0,0)') };
+  const m = F.noMaps ? { alb: reg(f.alb) } : { alb: reg(f.alb), nrm: reg(f.nrm, 'rgb(128,128,255)'), mat: reg(f.mat, 'rgb(0,0,0)') };
   F.cache.set(i, m);
   return m;
+}
+// 屋内（paint）镜头用：有 assets/flips/<name>.flip.json 就返回 t 时刻对齐好的固有色图（和母版同画幅，layers 里的 x、y、sc 不用改），
+// 没有就返回母版路径，镜头照旧画静图。用法：{ img: await flipLayer('g03_watermelon', t), x, y, sc }
+const LAYERS = new Map();
+export async function flipLayer(name, t, master = name) {
+  if (!LAYERS.has(name)) LAYERS.set(name, loadFlip(name, { optional: true, maps: false }).then((F) => { if (F) F.noMaps = true; return F; }));
+  const F = await LAYERS.get(name);
+  return F ? flipMaps(F, frameAt(F, t)).alb : `/assets/chars/${master}.png`;
 }
