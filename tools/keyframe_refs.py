@@ -52,7 +52,7 @@ for k, kf in enumerate(spec['keys'], 1):
             hd = math.radians(kf.get(f'hand_deg_{s}', 0))
             J[f'hd_{s}'] = (wr[0] + l3 * math.cos(hd), wr[1] + l3 * math.sin(hd))
     # 画：淡化的母版 + 骨架
-    img = Image.new('RGBA', (W, H), (255, 255, 255, 255))
+    img = Image.new('RGBA', (W, H + 150), (255, 255, 255, 255))   # 文字条放在图下面，不挡脚和凳子
     faded = master.copy(); faded.putalpha(faded.getchannel('A').point(lambda v: v * 0.28))
     img.alpha_composite(faded)
     d = ImageDraw.Draw(img)
@@ -66,15 +66,19 @@ for k, kf in enumerate(spec['keys'], 1):
     r = spec['head_r']; c = J['head']
     d.ellipse([c[0] - r, c[1] - r, c[0] + r, c[1] + r], outline=(30, 30, 30), width=6)
     d.line([c, (c[0] + r * 1.15 * math.cos(nose_dir), c[1] + r * 1.15 * math.sin(nose_dir))], fill=(30, 30, 30), width=6)   # 鼻子朝向
-    d.rectangle([0, H - 150, W, H], fill=(255, 255, 255, 230))
-    d.text((16, H - 142), f"{shot} 关键帧 {k:02d}  {kf['t']:.2f} 秒", font=font, fill=(0, 0, 0))
+    # 两个不动的定位点（绿色十字，每张关键帧都标在同样的地方）
+    for i, (ax, ay) in enumerate(spec.get('anchors', {}).get('points', []), 1):
+        d.line([(ax - 16, ay), (ax + 16, ay)], fill=(20, 160, 60), width=4); d.line([(ax, ay - 16), (ax, ay + 16)], fill=(20, 160, 60), width=4)
+        d.text((ax + 10 if ax < W - 60 else ax - 40, ay - 36), f'A{i}', font=small, fill=(20, 140, 50))
+    f = f"第 {kf['f']} 帧，" if 'f' in kf else ''
+    d.text((16, H + 8), f"{shot} 关键帧 {k:02d}  {f}{kf['t']:.2f} 秒", font=font, fill=(0, 0, 0))
     for i, line in enumerate([kf['note'][j:j + 26] for j in range(0, len(kf['note']), 26)][:4]):
-        d.text((16, H - 106 + i * 26), line, font=small, fill=(40, 40, 40))
+        d.text((16, H + 44 + i * 26), line, font=small, fill=(40, 40, 40))
     img.convert('RGB').save(out / f'k{k:02d}.png')
-    thumbs.append(img.convert('RGB').resize((W // 3, H // 3)))
+    thumbs.append(img.convert('RGB').resize((W // 3, (H + 150) // 3)))
 # 总览
-cols = 6; rows = math.ceil(len(thumbs) / cols)
-sheet = Image.new('RGB', (cols * (W // 3), rows * (H // 3)), 'white')
-for i, t in enumerate(thumbs): sheet.paste(t, ((i % cols) * (W // 3), (i // cols) * (H // 3)))
+cols = 6; rows = math.ceil(len(thumbs) / cols); tw, th = thumbs[0].size
+sheet = Image.new('RGB', (cols * tw, rows * th), 'white')
+for i, t in enumerate(thumbs): sheet.paste(t, ((i % cols) * tw, (i // cols) * th))
 sheet.save(out / 'sheet.jpg', quality=88)
 print(out, len(thumbs))

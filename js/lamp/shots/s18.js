@@ -1,5 +1,5 @@
 // S18 · 第 7 场：小满"噗"地笑出声，捂住嘴。镜头推近到她（床单正面这一侧），床单上还是 S17 结尾：鹤晕乎乎地缓过来，乌龟探出头偷笑。
-// 前 0.42 秒她还是"看呆了"（松开胳膊、张着嘴，xm_rig 的 B）；"噗"——换成合作方画的捂嘴笑（anim_18，和 B 同一个裁切框、逐像素对齐），
+// 前 0.58 秒她还是"看呆了"（松开胳膊、张着嘴，xm_rig 的 B）；"噗"——换成合作方画的捂嘴笑（anim_18，和 B 同一个裁切框、逐像素对齐），
 // 肩膀一耸，然后笑得一颤一颤，慢慢收住。
 import { makeShot } from './shotkit.js';
 import { sheet as sheet17 } from './s17.js';
@@ -10,7 +10,7 @@ import { loadFlip, frameAt, flipMaps } from '../../rig/flipbook.js';
 let FLIP;
 async function flip() { if (FLIP === undefined) { try { FLIP = await loadFlip('x18_laugh'); } catch { FLIP = null; } } return FLIP; }
 export const DURATION = 3;
-const T_PU = 0.42;                                     // "噗"
+const T_PU = 0.58;                                     // "噗"：母带琵琶音在 0.60 秒（audio/build.py），画面早一帧；逐帧版第 14 帧同此
 const CAM = { pos: [1.05, -2.70, 0.55], target: [0.42, -1.2, 0.70], hfov: 40 };
 let LAUGH = null;
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
