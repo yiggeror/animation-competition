@@ -1,0 +1,63 @@
+{
+  "method": "independent local rebuild of 916257d source; not Opus delivered WAV or AAC",
+  "source_commit": "916257deb98240098be09d64cc7b45578e0ef8ee",
+  "s28_start_seconds": 174.5,
+  "s28_duration_seconds": 8,
+  "files": [
+    {
+      "file": "build/audio/film_mix_norm.wav",
+      "bytes": 47136078,
+      "sha256": "5144a8e4f3b4eba9d1954dd149927fd7574389f37901d54a12bc3de6b24e0e68",
+      "loudnorm_input": {
+        "input_i": "-15.96",
+        "input_tp": "-2.40",
+        "input_lra": "8.90",
+        "input_thresh": "-26.20"
+      }
+    },
+    {
+      "file": "verification/s28_from_local_norm.wav",
+      "bytes": 2304102,
+      "sha256": "49137476f8c4c31728eabf119a66dfd80fedb8f86dd4fac7ab6c44c9e24729ce",
+      "loudnorm_input": {
+        "input_i": "-18.71",
+        "input_tp": "-2.50",
+        "input_lra": "4.20",
+        "input_thresh": "-28.71"
+      }
+    },
+    {
+      "file": "verification/s28_160k.m4a",
+      "bytes": 162906,
+      "sha256": "82591b62eb9e1e441c8bfb7d0e6ebe40404dd8acfb53b7b4c9e3f6e6f7b7554d",
+      "loudnorm_input": {
+        "input_i": "-18.72",
+        "input_tp": "-2.46",
+        "input_lra": "4.20",
+        "input_thresh": "-28.72"
+      }
+    },
+    {
+      "file": "verification/s28_256k.m4a",
+      "bytes": 258441,
+      "sha256": "1329071e45ac5feb5c1cf521168ad072466a15853beba063e393d92e74415e39",
+      "loudnorm_input": {
+        "input_i": "-18.71",
+        "input_tp": "-2.42",
+        "input_lra": "4.20",
+        "input_thresh": "-28.71"
+      }
+    },
+    {
+      "file": "verification/film_mix_norm_256k.m4a",
+      "bytes": 8065738,
+      "sha256": "1b0c371247da0ecf58c2add36623341a9501d242a8b846cff588d7041f487171",
+      "loudnorm_input": {
+        "input_i": "-15.99",
+        "input_tp": "-0.66",
+        "input_lra": "9.00",
+        "input_thresh": "-26.23"
+      }
+    }
+  ]
+}

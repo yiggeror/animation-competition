@@ -1,0 +1,128 @@
+{
+  "head_neck": {
+    "box": [
+      230,
+      85,
+      820,
+      710
+    ],
+    "rgb_mae_8bit": 29.29872,
+    "pixels_any_channel_changed_fraction": 0.9807484745762712,
+    "pixels_max_channel_diff_gt10_fraction": 0.2771091525423729
+  },
+  "right_arm": {
+    "box": [
+      300,
+      825,
+      405,
+      1190
+    ],
+    "rgb_mae_8bit": 3.3554598825831703,
+    "pixels_any_channel_changed_fraction": 0.9706457925636007,
+    "pixels_max_channel_diff_gt10_fraction": 0.08785388127853881,
+    "best_integer_shift_B_dx_dy": [
+      0,
+      0
+    ],
+    "best_shift_mae": 3.3554598825831703
+  },
+  "left_grip_rod": {
+    "box": [
+      610,
+      890,
+      850,
+      1045
+    ],
+    "rgb_mae_8bit": 8.116003584229391,
+    "pixels_any_channel_changed_fraction": 0.9838440860215054,
+    "pixels_max_channel_diff_gt10_fraction": 0.1606989247311828,
+    "best_integer_shift_B_dx_dy": [
+      0,
+      0
+    ],
+    "best_shift_mae": 8.116003584229391
+  },
+  "lower_body": {
+    "box": [
+      65,
+      1050,
+      935,
+      1345
+    ],
+    "rgb_mae_8bit": 2.922571595558153,
+    "pixels_any_channel_changed_fraction": 0.9802181959867524,
+    "pixels_max_channel_diff_gt10_fraction": 0.0775725696473797,
+    "best_integer_shift_B_dx_dy": [
+      0,
+      0
+    ],
+    "best_shift_mae": 2.922571595558153
+  },
+  "gray_corner": {
+    "box": [
+      10,
+      10,
+      210,
+      90
+    ],
+    "rgb_mae_8bit": 0.8683958333333334,
+    "pixels_any_channel_changed_fraction": 0.965875,
+    "pixels_max_channel_diff_gt10_fraction": 0.0
+  },
+  "collar_interface_including_moving_neck": {
+    "box": [
+      365,
+      555,
+      620,
+      710
+    ],
+    "rgb_mae_8bit": 26.54494623655914,
+    "pixels_any_channel_changed_fraction": 0.9587096774193549,
+    "pixels_max_channel_diff_gt10_fraction": 0.334876660341556
+  },
+  "collar_lower_edge": {
+    "box": [
+      435,
+      652,
+      594,
+      704
+    ],
+    "rgb_mae_8bit": 20.991735203999355,
+    "pixels_max_channel_diff_gt10_fraction": 0.24866956942428642,
+    "best_integer_shift_B_dx_dy": [
+      2,
+      -1
+    ],
+    "best_shift_mae": 8.224318658280922
+  },
+  "torso_sleeves": {
+    "box": [
+      270,
+      705,
+      645,
+      895
+    ],
+    "rgb_mae_8bit": 6.765740350877193,
+    "pixels_max_channel_diff_gt10_fraction": 0.15272982456140352,
+    "best_integer_shift_B_dx_dy": [
+      0,
+      0
+    ],
+    "best_shift_mae": 6.765740350877193
+  },
+  "right_support": {
+    "box": [
+      235,
+      1180,
+      425,
+      1345
+    ],
+    "rgb_mae_8bit": 4.949526847421584,
+    "pixels_max_channel_diff_gt10_fraction": 0.15486443381180223,
+    "best_integer_shift_B_dx_dy": [
+      0,
+      0
+    ],
+    "best_shift_mae": 4.949526847421584
+  }
+}

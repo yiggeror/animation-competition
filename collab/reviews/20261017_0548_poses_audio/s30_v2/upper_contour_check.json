@@ -1,0 +1,13 @@
+{
+  "method": "Approximate non-gray silhouette above y1270: RGB chroma>18, one binary closing, largest connected component; symmetric nearest-edge distances. Diagnostic only; excludes gray and tiny disconnected detail.",
+  "old_area": 245675,
+  "new_area": 243419,
+  "symmetric_edge_distance_px": {
+    "mean": 1.0673686619107858,
+    "p95": 4.123105625617661,
+    "p99": 19.524773425705092,
+    "max": 32.7566787083184
+  },
+  "mask_iou": 0.961940062015877,
+  "use_in_final_judgement": "Not used: non-gray mask is sensitive to line/color changes and thresholds; it does not provide a stable anatomical contour displacement measurement."
+}

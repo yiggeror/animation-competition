@@ -1,0 +1,89 @@
+{
+  "a": "/tmp/laidian-produce-s29-xiaoman-a/anim_29_xiaoman_phone_look_a.png",
+  "b": "/tmp/laidian-produce-s29-xiaoman-b/anim_29_xiaoman_phone_look_b.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "comparison_note": "Raw RGB at identical pixel coordinates; not proof of perceptual equivalence or in-scene alignment.",
+  "conservative_head_hair_neck_exclusion_box_xyxy": [
+    200,
+    70,
+    840,
+    655
+  ],
+  "outside_exclusion_box": {
+    "pixels": 1198464,
+    "mean_rgb_absolute_difference_0_to_255": 2.3806305404250776,
+    "max_channel_difference_gt_8_fraction": 0.04789714167467692,
+    "max_channel_difference_gt_32_fraction": 0.015678401687493324,
+    "exact_rgb_equal_fraction": 0.02038609420057674
+  },
+  "protected_regions": {
+    "lower_collar_boundary": {
+      "box_xyxy": [
+        435,
+        652,
+        594,
+        704
+      ],
+      "pixels": 8268,
+      "mean_rgb_absolute_difference_0_to_255": 20.991735203999355,
+      "max_channel_difference_gt_8_fraction": 0.26971456216739237,
+      "max_channel_difference_gt_32_fraction": 0.18287373004354138,
+      "exact_rgb_equal_fraction": 0.050556361877116596
+    },
+    "torso_sleeves": {
+      "box_xyxy": [
+        270,
+        705,
+        645,
+        895
+      ],
+      "pixels": 71250,
+      "mean_rgb_absolute_difference_0_to_255": 6.765740350877193,
+      "max_channel_difference_gt_8_fraction": 0.17482105263157896,
+      "max_channel_difference_gt_32_fraction": 0.07571929824561403,
+      "exact_rgb_equal_fraction": 0.013459649122807017
+    },
+    "left_hand_rod": {
+      "box_xyxy": [
+        610,
+        885,
+        850,
+        1035
+      ],
+      "pixels": 36000,
+      "mean_rgb_absolute_difference_0_to_255": 8.371157407407408,
+      "max_channel_difference_gt_8_fraction": 0.18797222222222223,
+      "max_channel_difference_gt_32_fraction": 0.07172222222222223,
+      "exact_rgb_equal_fraction": 0.016055555555555556
+    },
+    "right_hand_support": {
+      "box_xyxy": [
+        235,
+        1180,
+        425,
+        1345
+      ],
+      "pixels": 31350,
+      "mean_rgb_absolute_difference_0_to_255": 4.949526847421584,
+      "max_channel_difference_gt_8_fraction": 0.18251993620414672,
+      "max_channel_difference_gt_32_fraction": 0.05598086124401914,
+      "exact_rgb_equal_fraction": 0.025231259968102073
+    },
+    "lower_body": {
+      "box_xyxy": [
+        75,
+        1040,
+        925,
+        1350
+      ],
+      "pixels": 263500,
+      "mean_rgb_absolute_difference_0_to_255": 2.918573055028463,
+      "max_channel_difference_gt_8_fraction": 0.09581024667931688,
+      "max_channel_difference_gt_32_fraction": 0.024242884250474384,
+      "exact_rgb_equal_fraction": 0.019518026565464894
+    }
+  }
+}

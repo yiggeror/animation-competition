@@ -1,0 +1,40 @@
+{
+  "task": "S30 Xiaoman pull cord, single candidate",
+  "reviewed_repository_commit": "2b6ae3ca08b7c2722db96fb2de960bda05bdd2d9",
+  "generator": "image_gen.imagegen",
+  "underlying_model": "Not disclosed by tool; no model name inferred",
+  "generation_calls": 1,
+  "automatic_retries": 0,
+  "original_generated_path": "/workspace/generated_images/exec-30aa7ecd-da7d-4fa3-9dbd-9a1acc3c2969.png",
+  "output_path": "/tmp/laidian-produce-s30/anim_30_xiaoman_pull_cord_draft.png",
+  "native_width": 1024,
+  "native_height": 1536,
+  "mode": "RGB",
+  "sha256": "285fc61f0d010c133b8c4c62f3857b926d75e060948571779f227ef067827165",
+  "prompt_path": "/tmp/laidian-produce-s30/prompt.txt",
+  "request_path": "/tmp/laidian-produce-s30/request.json",
+  "references": [
+    {
+      "path": "/workspace/animation-competition/collab/refs/xiaoman_turnaround_v4_draft.png",
+      "sha256": "816a5d7cfed7c220717ea80d9a9419290135d8543c4f87e4866d804132720d32"
+    },
+    {
+      "path": "/workspace/animation-competition/collab/refs/anim_20_xiaoman_puppeteer.png",
+      "sha256": "77fff6438b51ec53a08797d53eb15555420e21fa8a566eb2e6f0c430065b9aa7"
+    }
+  ],
+  "other_viewed_context": [
+    "collab/refs/bg_01_room_wide_base_v2_draft.png",
+    "collab/refs/anim_07_grandma_tiptoe_v2_draft.png"
+  ],
+  "image_edits_after_generation": false,
+  "repository_modified": false,
+  "status": "needs_limited_revision_not_accepted_for_pose_trial",
+  "blocking_issue": "Independent reviewer reports wedge/high-heel reading of red shoe soles; flat-sandal forefoot support is unclear.",
+  "author_review_path": "/tmp/laidian-produce-s30/author_review.md",
+  "independent_reviewer_task": "/root/audio_audit/s30_independent_review",
+  "independent_review_path": "/tmp/laidian-produce-s30/independent_review.md",
+  "generation_completed": "single output retained; no automatic correction or retry",
+  "reference_copy_status": "reference originals used directly; copied output hash equals generated original",
+  "original_copy_sha256_equal": true
+}

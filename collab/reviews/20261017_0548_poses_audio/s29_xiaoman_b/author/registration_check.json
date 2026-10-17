@@ -1,0 +1,97 @@
+{
+  "lower_collar_boundary": {
+    "box_xyxy": [
+      435,
+      652,
+      594,
+      704
+    ],
+    "searched_integer_dx_dy_range": [
+      -4,
+      4
+    ],
+    "best_B_sampling_offset_dx_dy": [
+      2,
+      -1
+    ],
+    "best_rgb_mae": 8.224318658280922,
+    "zero_offset_rgb_mae": 20.991735203999355,
+    "limitation": "Integer translation comparison only; no claim of subpixel equality, no affine/nonrigid registration."
+  },
+  "torso_sleeves": {
+    "box_xyxy": [
+      270,
+      705,
+      645,
+      895
+    ],
+    "searched_integer_dx_dy_range": [
+      -4,
+      4
+    ],
+    "best_B_sampling_offset_dx_dy": [
+      0,
+      0
+    ],
+    "best_rgb_mae": 6.765740350877193,
+    "zero_offset_rgb_mae": 6.765740350877193,
+    "limitation": "Integer translation comparison only; no claim of subpixel equality, no affine/nonrigid registration."
+  },
+  "left_hand_rod": {
+    "box_xyxy": [
+      610,
+      885,
+      850,
+      1035
+    ],
+    "searched_integer_dx_dy_range": [
+      -4,
+      4
+    ],
+    "best_B_sampling_offset_dx_dy": [
+      0,
+      0
+    ],
+    "best_rgb_mae": 8.371157407407408,
+    "zero_offset_rgb_mae": 8.371157407407408,
+    "limitation": "Integer translation comparison only; no claim of subpixel equality, no affine/nonrigid registration."
+  },
+  "right_hand_support": {
+    "box_xyxy": [
+      235,
+      1180,
+      425,
+      1345
+    ],
+    "searched_integer_dx_dy_range": [
+      -4,
+      4
+    ],
+    "best_B_sampling_offset_dx_dy": [
+      0,
+      0
+    ],
+    "best_rgb_mae": 4.949526847421584,
+    "zero_offset_rgb_mae": 4.949526847421584,
+    "limitation": "Integer translation comparison only; no claim of subpixel equality, no affine/nonrigid registration."
+  },
+  "lower_body": {
+    "box_xyxy": [
+      75,
+      1040,
+      925,
+      1350
+    ],
+    "searched_integer_dx_dy_range": [
+      -4,
+      4
+    ],
+    "best_B_sampling_offset_dx_dy": [
+      0,
+      0
+    ],
+    "best_rgb_mae": 2.918573055028463,
+    "zero_offset_rgb_mae": 2.918573055028463,
+    "limitation": "Integer translation comparison only; no claim of subpixel equality, no affine/nonrigid registration."
+  }
+}

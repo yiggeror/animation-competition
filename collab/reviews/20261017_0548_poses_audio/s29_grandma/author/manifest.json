@@ -1,0 +1,67 @@
+{
+  "tool": "image_gen.imagegen",
+  "generation_calls": 1,
+  "source": {
+    "path": "/workspace/generated_images/exec-1bd3a876-ebaf-47c2-8dd2-e58c2a9d1f86.png",
+    "sha256": "d794f1317a01e309f907560557be4db45047e5d040575d564cbf316bee3112a7",
+    "bytes": 1746464,
+    "format": "PNG",
+    "mode": "RGB",
+    "width": 1024,
+    "height": 1536
+  },
+  "candidate": {
+    "path": "/tmp/laidian-produce-s29-grandma/anim_29_grandma_wrap.png",
+    "sha256": "d794f1317a01e309f907560557be4db45047e5d040575d564cbf316bee3112a7",
+    "bytes": 1746464,
+    "format": "PNG",
+    "mode": "RGB",
+    "width": 1024,
+    "height": 1536
+  },
+  "byte_identical_to_source": true,
+  "generation_references": [
+    {
+      "path": "/workspace/animation-competition/collab/refs/anim_20_grandma_puppeteer.png",
+      "sha256": "bd9f866b12272119b7e55fa153ce00ecb7ecaa28b14239a14df86bada4310c7d",
+      "bytes": 1595456,
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "path": "/workspace/animation-competition/collab/refs/anim_01_grandma_beans.png",
+      "sha256": "980bf534b5124d922ef712f5a13ddd9c77137d4869ec34300ca3c4a54558ddac",
+      "bytes": 1779078,
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "path": "/workspace/animation-competition/collab/refs/grandma_expressions_current02.png",
+      "sha256": "8394bd5dde841a3202e04f48684d728d5c511317efa1a159c55abe99818b39dd",
+      "bytes": 1770557,
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 2048,
+      "height": 768
+    }
+  ],
+  "read_only_layout_context_not_passed_to_imagegen": [
+    {
+      "path": "/workspace/animation-competition/collab/refs/bg_01_room_wide_base_v2_draft.png",
+      "sha256": "3bc55f3b9d238b4242eddbd06a0c3f81a394673fa19c4f33ef263ba65d4e01ed",
+      "bytes": 1930766,
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1672,
+      "height": 941
+    }
+  ],
+  "resize_or_repaint_applied": false,
+  "status": "candidate_pending_independent_review",
+  "intended_usage": "S29 grandmother seated wrapping opaque indigo cloth over fully hidden shadow puppets; static A only",
+  "layer_choice": "grandmother, supporting wooden stool and opaque cloth bundle are drawn together on light gray; no invented puppet geometry or rods; not transparent PNG"
+}

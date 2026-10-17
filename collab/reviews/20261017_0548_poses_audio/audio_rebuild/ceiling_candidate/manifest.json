@@ -1,0 +1,28 @@
+{
+  "source": "same original film_mix.wav; only loudnorm TP target changed from -2.5 to -3.5; candidate authored by cloud Codex, not Opus delivery",
+  "auditioned": false,
+  "files": [
+    {
+      "file": "film_mix_norm_tp3p5.wav",
+      "bytes": 47136078,
+      "sha256": "db54e6a42df7dd977fea028f1f1b1134dfcef77d9aad27efb6aef5ce570f47dc",
+      "measured_loudnorm_input": {
+        "input_i": "-15.96",
+        "input_tp": "-3.40",
+        "input_lra": "8.60",
+        "input_thresh": "-26.19"
+      }
+    },
+    {
+      "file": "film_mix_norm_tp3p5_256k.m4a",
+      "bytes": 8061448,
+      "sha256": "f5a8e95a6f8b663e1c7451aaacb6b9081ad86b5daaf19a9eff41bf1e46e63166",
+      "measured_loudnorm_input": {
+        "input_i": "-15.99",
+        "input_tp": "-2.05",
+        "input_lra": "8.60",
+        "input_thresh": "-26.23"
+      }
+    }
+  ]
+}
