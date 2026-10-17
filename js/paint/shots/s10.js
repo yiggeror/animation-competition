@@ -1,6 +1,6 @@
 // S10 · 第 3 场：手电的光柱扫过屋子，照到奶奶，奶奶眯起眼。
 // 0～3 秒：屋子全景（合作方画的 bg_01 底图，白天平光），停电的夜里压成蓝黑，只有八仙桌上的马灯一团暖光；
-//   小满在电视柜前推亮手电，光柱从后墙扫过门、墙上的鹤画，停在坐在凳子上剥豆的奶奶身上（anim_01_grandma_beans）。
+//   小满在电视柜前举着推亮的手电（S09 刚推亮），光柱从后墙扫过门、墙上的鹤画，停在坐在凳子上剥豆的奶奶身上（anim_01_grandma_beans）。
 // 3～5 秒：切到奶奶脸部特写（anim_10_grandma_squint），手电的冷白光从左边打在脸上，她眯着眼往后一缩。
 import { renderPaint, loadImg } from '../paintshot.js';
 import { lamp as drawLamp, LX, LB } from '../../code/s08.js';
@@ -35,7 +35,7 @@ const wide = {
     ].map((L) => ({ ...L, alpha: 1 + 0 * lit }));
   },
   light: (t) => {
-    const on = sstep(0.12, 0.2, t);
+    const on = 1;                                  // 手电在上一镜（S09）已经推亮
     return {
       ambient: [0.028, 0.032, 0.05],
       lights: [{ x: LAMP.x, y: LAMP.y - 95, r: 760 * fl(t), color: [1.0, 0.62, 0.30], i: 0.95, falloff: 2.4 }],
@@ -77,8 +77,8 @@ export async function renderFrame(ctx, t, W, H) {
   if (t < T_CUT) {
     await renderPaint(ctx, t, W, H, wide);
     // 看得见的光柱（空气里的灰被照亮）：在画面坐标里补一道半透明的锥
-    if (t > 0.12) {
-      const k = (W / BW) * 1.06, on = sstep(0.12, 0.2, t);   // 和 wide.cam 的 fit 一致
+    {
+      const k = (W / BW) * 1.06, on = 1;   // 和 wide.cam 的 fit 一致
       const S = [(SRC[0] - BW / 2) * k + W / 2, (SRC[1] - BH / 2 - 10) * k + H / 2], a = beamAng(t), L = 1500 * k;
       ctx.save(); ctx.globalCompositeOperation = 'lighter'; ctx.filter = `blur(${Math.round(8 * k)}px)`;
       const g = ctx.createRadialGradient(S[0], S[1], 0, S[0], S[1], L);
