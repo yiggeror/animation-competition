@@ -1,0 +1,453 @@
+{
+  "method": "Bitwise float32 sample comparisons between continuous decoder output and explicit hard PTS-compensated aresample output. Content origin defined by independently verified packet grouping and 1024-sample priming.",
+  "segments": [
+    {
+      "shot": "S03",
+      "cut_seconds": 12,
+      "mismatch_content_head_samples": 513,
+      "head_duration_ms": 10.6875,
+      "equality_ranges_in_first_100ms": [
+        [
+          0,
+          513,
+          false
+        ],
+        [
+          513,
+          4800,
+          true
+        ]
+      ],
+      "mapping": [
+        {
+          "aligned_content_offset_samples": -1024,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            576000
+          ],
+          "exact_raw_sample_start_min_max": [
+            576000,
+            576000
+          ],
+          "raw_expected_sample_start": 577536,
+          "raw_minus_expected_samples": [
+            -1536
+          ]
+        },
+        {
+          "aligned_content_offset_samples": -512,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            576512
+          ],
+          "exact_raw_sample_start_min_max": [
+            576512,
+            576512
+          ],
+          "raw_expected_sample_start": 578048,
+          "raw_minus_expected_samples": [
+            -1536
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 0,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            577024
+          ],
+          "exact_raw_sample_start_min_max": [
+            577024,
+            577024
+          ],
+          "raw_expected_sample_start": 578560,
+          "raw_minus_expected_samples": [
+            -1536
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 128,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            577152
+          ],
+          "exact_raw_sample_start_min_max": [
+            577152,
+            577152
+          ],
+          "raw_expected_sample_start": 578688,
+          "raw_minus_expected_samples": [
+            -1536
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 256,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            577280
+          ],
+          "exact_raw_sample_start_min_max": [
+            577280,
+            577280
+          ],
+          "raw_expected_sample_start": 578816,
+          "raw_minus_expected_samples": [
+            -1536
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 384,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            577408
+          ],
+          "exact_raw_sample_start_min_max": [
+            577408,
+            577408
+          ],
+          "raw_expected_sample_start": 578944,
+          "raw_minus_expected_samples": [
+            -1536
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 512,
+          "exact_raw_sample_start_count": 0,
+          "exact_raw_sample_starts": [],
+          "exact_raw_sample_start_min_max": [],
+          "raw_expected_sample_start": 579072,
+          "raw_minus_expected_samples": []
+        },
+        {
+          "aligned_content_offset_samples": 640,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            579200
+          ],
+          "exact_raw_sample_start_min_max": [
+            579200,
+            579200
+          ],
+          "raw_expected_sample_start": 579200,
+          "raw_minus_expected_samples": [
+            0
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 768,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            579328
+          ],
+          "exact_raw_sample_start_min_max": [
+            579328,
+            579328
+          ],
+          "raw_expected_sample_start": 579328,
+          "raw_minus_expected_samples": [
+            0
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 896,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            579456
+          ],
+          "exact_raw_sample_start_min_max": [
+            579456,
+            579456
+          ],
+          "raw_expected_sample_start": 579456,
+          "raw_minus_expected_samples": [
+            0
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 1024,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            579584
+          ],
+          "exact_raw_sample_start_min_max": [
+            579584,
+            579584
+          ],
+          "raw_expected_sample_start": 579584,
+          "raw_minus_expected_samples": [
+            0
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 1536,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            580096
+          ],
+          "exact_raw_sample_start_min_max": [
+            580096,
+            580096
+          ],
+          "raw_expected_sample_start": 580096,
+          "raw_minus_expected_samples": [
+            0
+          ]
+        }
+      ],
+      "head_previous_tail_samples": 512,
+      "head_previous_tail_bitwise_match": true,
+      "last_mismatch_sample_matches_priming_last": true
+    },
+    {
+      "shot": "S04",
+      "cut_seconds": 18,
+      "mismatch_content_head_samples": 769,
+      "head_duration_ms": 16.020833333333332,
+      "equality_ranges_in_first_100ms": [
+        [
+          0,
+          769,
+          false
+        ],
+        [
+          769,
+          4800,
+          true
+        ]
+      ],
+      "mapping": [
+        {
+          "aligned_content_offset_samples": -1024,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            865536
+          ],
+          "exact_raw_sample_start_min_max": [
+            865536,
+            865536
+          ],
+          "raw_expected_sample_start": 867328,
+          "raw_minus_expected_samples": [
+            -1792
+          ]
+        },
+        {
+          "aligned_content_offset_samples": -512,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            866048
+          ],
+          "exact_raw_sample_start_min_max": [
+            866048,
+            866048
+          ],
+          "raw_expected_sample_start": 867840,
+          "raw_minus_expected_samples": [
+            -1792
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 0,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            866560
+          ],
+          "exact_raw_sample_start_min_max": [
+            866560,
+            866560
+          ],
+          "raw_expected_sample_start": 868352,
+          "raw_minus_expected_samples": [
+            -1792
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 128,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            866688
+          ],
+          "exact_raw_sample_start_min_max": [
+            866688,
+            866688
+          ],
+          "raw_expected_sample_start": 868480,
+          "raw_minus_expected_samples": [
+            -1792
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 256,
+          "exact_raw_sample_start_count": 897,
+          "exact_raw_sample_starts": [
+            866752,
+            866753,
+            866754,
+            866755,
+            866756,
+            866757,
+            866758,
+            866759
+          ],
+          "exact_raw_sample_start_min_max": [
+            866752,
+            867648
+          ],
+          "raw_expected_sample_start": 868608,
+          "raw_minus_expected_samples": [
+            -1856,
+            -1855,
+            -1854,
+            -1853,
+            -1852,
+            -1851,
+            -1850,
+            -1849
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 384,
+          "exact_raw_sample_start_count": 897,
+          "exact_raw_sample_starts": [
+            866752,
+            866753,
+            866754,
+            866755,
+            866756,
+            866757,
+            866758,
+            866759
+          ],
+          "exact_raw_sample_start_min_max": [
+            866752,
+            867648
+          ],
+          "raw_expected_sample_start": 868736,
+          "raw_minus_expected_samples": [
+            -1984,
+            -1983,
+            -1982,
+            -1981,
+            -1980,
+            -1979,
+            -1978,
+            -1977
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 512,
+          "exact_raw_sample_start_count": 897,
+          "exact_raw_sample_starts": [
+            866752,
+            866753,
+            866754,
+            866755,
+            866756,
+            866757,
+            866758,
+            866759
+          ],
+          "exact_raw_sample_start_min_max": [
+            866752,
+            867648
+          ],
+          "raw_expected_sample_start": 868864,
+          "raw_minus_expected_samples": [
+            -2112,
+            -2111,
+            -2110,
+            -2109,
+            -2108,
+            -2107,
+            -2106,
+            -2105
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 640,
+          "exact_raw_sample_start_count": 897,
+          "exact_raw_sample_starts": [
+            866752,
+            866753,
+            866754,
+            866755,
+            866756,
+            866757,
+            866758,
+            866759
+          ],
+          "exact_raw_sample_start_min_max": [
+            866752,
+            867648
+          ],
+          "raw_expected_sample_start": 868992,
+          "raw_minus_expected_samples": [
+            -2240,
+            -2239,
+            -2238,
+            -2237,
+            -2236,
+            -2235,
+            -2234,
+            -2233
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 768,
+          "exact_raw_sample_start_count": 0,
+          "exact_raw_sample_starts": [],
+          "exact_raw_sample_start_min_max": [],
+          "raw_expected_sample_start": 869120,
+          "raw_minus_expected_samples": []
+        },
+        {
+          "aligned_content_offset_samples": 896,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            869248
+          ],
+          "exact_raw_sample_start_min_max": [
+            869248,
+            869248
+          ],
+          "raw_expected_sample_start": 869248,
+          "raw_minus_expected_samples": [
+            0
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 1024,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            869376
+          ],
+          "exact_raw_sample_start_min_max": [
+            869376,
+            869376
+          ],
+          "raw_expected_sample_start": 869376,
+          "raw_minus_expected_samples": [
+            0
+          ]
+        },
+        {
+          "aligned_content_offset_samples": 1536,
+          "exact_raw_sample_start_count": 1,
+          "exact_raw_sample_starts": [
+            869888
+          ],
+          "exact_raw_sample_start_min_max": [
+            869888,
+            869888
+          ],
+          "raw_expected_sample_start": 869888,
+          "raw_minus_expected_samples": [
+            0
+          ]
+        }
+      ],
+      "head_previous_tail_samples": 768,
+      "head_previous_tail_bitwise_match": true,
+      "last_mismatch_sample_matches_priming_last": true
+    }
+  ]
+}
