@@ -1,0 +1,20 @@
+{
+  "image": "assets/chars/g20_laugh.png",
+  "size": [667, 1291],
+  "author": "Opus（临时，手量；请 Astra 独审/改正，并补 eyes）",
+  "bones": [
+    { "name": "root", "parent": null, "head": [180, 640], "tail": [180, 580] },
+    { "name": "legs", "parent": "root", "head": [180, 640], "tail": [200, 1240] },
+    { "name": "spine", "parent": "root", "head": [180, 600], "tail": [370, 270] },
+    { "name": "neck", "parent": "spine", "head": [370, 270], "tail": [410, 220] },
+    { "name": "head", "parent": "neck", "head": [410, 220], "tail": [470, 60] },
+    { "name": "arm_belly", "parent": "spine", "head": [250, 330], "tail": [300, 500] },
+    { "name": "upperarm_rod", "parent": "spine", "head": [330, 320], "tail": [390, 460] },
+    { "name": "forearm_rod", "parent": "upperarm_rod", "head": [390, 460], "tail": [480, 530] },
+    { "name": "hand_rod", "parent": "forearm_rod", "head": [480, 530], "tail": [600, 540] }
+  ],
+  "layers": [],
+  "regions": [ { "bones": ["root", "legs"], "poly": [[0, 660], [667, 660], [667, 1291], [0, 1291]] } ],
+  "pins": [], "eyes": [],
+  "notes": "握点 (585,538) 在 hand_rod（两根鹤签并在这只手里）。"
+}

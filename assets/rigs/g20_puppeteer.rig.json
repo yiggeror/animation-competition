@@ -1,0 +1,25 @@
+{
+  "image": "assets/chars/g20_puppeteer.png",
+  "size": [660, 1371],
+  "author": "Opus（临时，手量；请 Astra 独审/改正，并补 eyes）",
+  "bones": [
+    { "name": "root", "parent": null, "head": [200, 780], "tail": [200, 720] },
+    { "name": "legs", "parent": "root", "head": [200, 780], "tail": [200, 1320] },
+    { "name": "spine", "parent": "root", "head": [200, 740], "tail": [255, 290] },
+    { "name": "neck", "parent": "spine", "head": [255, 290], "tail": [275, 230] },
+    { "name": "head", "parent": "neck", "head": [275, 230], "tail": [280, 60] },
+    { "name": "upperarm_up", "parent": "spine", "head": [275, 380], "tail": [360, 500] },
+    { "name": "forearm_up", "parent": "upperarm_up", "head": [360, 500], "tail": [455, 510] },
+    { "name": "hand_up", "parent": "forearm_up", "head": [455, 510], "tail": [600, 465] },
+    { "name": "upperarm_low", "parent": "spine", "head": [230, 450], "tail": [300, 600] },
+    { "name": "forearm_low", "parent": "upperarm_low", "head": [300, 600], "tail": [470, 650] },
+    { "name": "hand_low", "parent": "forearm_low", "head": [470, 650], "tail": [600, 640] }
+  ],
+  "layers": [
+    { "name": "arm_low", "bones": ["upperarm_low", "forearm_low", "hand_low"], "keepUnder": true, "z": 1,
+      "poly": [[220, 540], [330, 560], [480, 606], [612, 598], [618, 684], [480, 692], [330, 682], [220, 640]] }
+  ],
+  "regions": [ { "bones": ["root", "legs"], "poly": [[0, 800], [660, 800], [660, 1371], [0, 1371]] } ],
+  "pins": [], "eyes": [],
+  "notes": "握点：上手 (590,466) 在 hand_up，下手 (578,641) 在 hand_low。"
+}

@@ -23,6 +23,23 @@ function poseX(t) {
     upperarm_low: { rot: 0.05 * wob * Math.sin(t * 5.3 + 2) - 0.06 * startle }, forearm_low: { rot: -0.08 * wob * Math.sin(t * 5.3 + 2.9) }, hand_low: { rot: 0.1 * wob * Math.sin(t * 8.1 + 1) },
   };
 }
+// 奶奶：操鹤时两手随鹤一起轻轻动、呼吸、偶尔看一眼小满；笑弯腰时肩膀一抖一抖、头点着、握签的手跟着颤
+let BG = null, BGL = null;
+function poseG(t) {
+  const br = Math.sin(t / 3.6 * 2 * Math.PI), op = Math.sin(t * 1.7), look = Math.max(0, Math.sin((t - 2.0) * 0.9)) * (t < 5.0 ? 1 : 0);
+  return {
+    spine: { rot: 0.006 * br, sy: 1 + 0.005 * br }, neck: { rot: -0.02 * look }, head: { rot: 0.04 * look + 0.01 * op },
+    upperarm_up: { rot: 0.025 * op }, forearm_up: { rot: -0.03 * op }, hand_up: { rot: 0.04 * Math.sin(t * 2.3) },
+    upperarm_low: { rot: 0.02 * Math.sin(t * 1.7 + 1) }, forearm_low: { rot: -0.03 * Math.sin(t * 1.7 + 1.4) }, hand_low: { rot: 0.04 * Math.sin(t * 2.1 + 2) },
+  };
+}
+function poseGL(t) {
+  const u = Math.max(0, t - T_LAUGH), shake = Math.sin(u * 2 * Math.PI * 3.2) * Math.exp(-u * 0.35) * Math.min(1, u * 4);
+  return {
+    spine: { rot: 0.025 * shake, sy: 1 + 0.012 * shake }, neck: { rot: -0.03 * shake }, head: { rot: -0.05 * Math.abs(shake) + 0.02 * shake },
+    arm_belly: { rot: 0.04 * shake }, upperarm_rod: { rot: 0.03 * shake }, forearm_rod: { rot: -0.04 * shake }, hand_rod: { rot: 0.05 * shake },
+  };
+}
 const xmGrips = (t) => (BX ? [posePoint(BX, poseX(t), 'hand_up', XM.grips[0]), posePoint(BX, poseX(t), 'hand_low', XM.grips[1])] : XM.grips);
 export const DURATION = 9;
 const T_LAUGH = 6.0;
@@ -71,8 +88,11 @@ function xmBase(t) {
 }
 function grips(t, cam) {
   const xm = xmGrips(t).map((g) => imgWorld(cam, xmBase(t), XM, flipP(XM, g)));   // 握点跟着骨架里的手走
-  const gm = t < T_LAUGH ? GR.grips.map((g) => imgWorld(cam, GPOS(t), GR, flipP(GR, g)))
-    : [0, 1].map(() => imgWorld(cam, GPOS(t), GL, flipP(GL, GL.grip)));
+  // 奶奶的握点也跟着骨架里的手走（GR.grips：[下手, 上手]）
+  const gp = BG ? [posePoint(BG, poseG(t), 'hand_low', GR.grips[0]), posePoint(BG, poseG(t), 'hand_up', GR.grips[1])] : GR.grips;
+  const glp = BGL ? posePoint(BGL, poseGL(t), 'hand_rod', GL.grip) : GL.grip;
+  const gm = t < T_LAUGH ? gp.map((g) => imgWorld(cam, GPOS(t), GR, flipP(GR, g)))
+    : [0, 1].map(() => imgWorld(cam, GPOS(t), GL, flipP(GL, glp)));
   return { xm, gm };
 }
 
@@ -135,21 +155,27 @@ const shot = {
     }
     // 6. 奶奶：拿着鹤 → 笑弯了腰
     const gb = GPOS(t), dG = cam.project(gb)[2];
-    if (t < T_LAUGH) CARDS.addImage([{ maps: MAPS.gr, m: mulM(billboardM(cam, gb, GR.ox, GR.oy, GR.sc), flipM(GR)), clip: { pts: GR.erase, invert: true } }], dG);
+    if (t < T_LAUGH) {
+      const P = poseG(t), maps = renderMaps(BG, P, MAPS.gr);
+      const erase = GR.erase.map((poly) => poly.map((q) => posePoint(BG, P, q[1] > 560 ? 'hand_low' : 'hand_up', q)));   // 短签跟着各自的手
+      CARDS.addImage([{ maps, m: mulM(billboardM(cam, gb, GR.ox, GR.oy, GR.sc), flipM(GR)), clip: { pts: erase, invert: true } }], dG);
+    }
     else {
       // 笑：一颤一颤（以脚底为基准竖直方向轻轻伸缩）
       const u = t - T_LAUGH, sy = 1 + 0.008 * Math.sin(u * 9) * Math.exp(-u * 0.25);
       const m0 = billboardM(cam, gb, GL.ox, GL.oy, GL.sc);
       const mul = (a, b) => [a[0] * b[0] + a[2] * b[1], a[1] * b[0] + a[3] * b[1], a[0] * b[2] + a[2] * b[3], a[1] * b[2] + a[3] * b[3], a[0] * b[4] + a[2] * b[5] + a[4], a[1] * b[4] + a[3] * b[5] + a[5]];
-      CARDS.addImage([{ maps: MAPS.gl, m: mul(mul(m0, [1, 0, 0, sy, 0, GL.oy * (1 - sy)]), flipM(GL)), clip: { pts: GL.erase, invert: true } }], dG);
+      const P = poseGL(t), maps = renderMaps(BGL, P, MAPS.gl);
+      const erase = GL.erase.map((poly) => poly.map((q) => posePoint(BGL, P, 'hand_rod', q)));
+      CARDS.addImage([{ maps, m: mul(m0, flipM(GL)), clip: { pts: erase, invert: true } }], dG);   // 笑的颤动改由骨架做（原来整张图竖直伸缩）
     }
   },
 };
 
 export async function render(ctx, arg, W, H) {
-  BX ||= await loadRig('x20_puppeteer');
+  BX ||= await loadRig('x20_puppeteer'); BG ||= await loadRig('g20_puppeteer'); BGL ||= await loadRig('g20_laugh');
   let t = +arg || 0;
   if (arg && arg.startsWith('{')) { const o = JSON.parse(arg); Object.assign(DEBUG, o); t = o.t ?? 0; }
   return renderShot(ctx, t, W, H, shot);
 }
-export async function renderFrame(ctx, t, W, H) { BX ||= await loadRig('x20_puppeteer'); return renderShot(ctx, t, W, H, shot); }
+export async function renderFrame(ctx, t, W, H) { BX ||= await loadRig('x20_puppeteer'); BG ||= await loadRig('g20_puppeteer'); BGL ||= await loadRig('g20_laugh'); return renderShot(ctx, t, W, H, shot); }
