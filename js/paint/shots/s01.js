@@ -4,12 +4,12 @@
 // 两人的动作是逐帧关键帧（合作方生图，assets/flips/x01_prone_phone、g01_beans.flip.json，js/rig/flipbook.js 的 flipLayer）。
 // 游戏的"跳"声和剥豆声在 audio/build.py。推西瓜那一下放在 S03（奶奶近景）。
 import { renderPaint } from '../paintshot.js';
-import { flipLayer } from '../../rig/flipbook.js';
+import { flipLayer, flipNrm } from '../../rig/flipbook.js';
 export const DURATION = 12;
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
 const BW = 1672, BH = 941;
 export const GM = { x: 905, y: 772, sc: 0.235 };                       // 奶奶（同 S10）
-export const XM = { x: 437, y: 509, sc: 0.19 };                        // 小满：图左上角落在底图 (x, y)，头朝右、手肘撑在竹席上
+export const XM = { x: 467.7, y: 548.5, sc: 0.1425 };                  // 小满：图左上角落在底图 (x, y)，头朝右、手肘撑在竹席上。原 0.19 比奶奶大（她离镜头更远，脸却和奶奶一样大），以贴席的肚子 (560, 667) 为中心缩到 0.75 倍
 export const COIL = [770, 712];                                        // 蚊香（地上，竹席右头和奶奶之间）
 export const FAN = [787, 112];                                         // 吊扇电机（底图）
 // 蚊香：绿色的盘香搁在铁架上，头上一点红
@@ -26,7 +26,7 @@ export const COILC = coil();
 export const SHADOWS = (() => {
   const c = new OffscreenCanvas(BW, BH), x = c.getContext('2d');
   x.filter = 'blur(6px)'; x.fillStyle = 'rgba(40,30,20,0.32)';
-  for (const [cx, cy, rx, ry] of [[560, 667, 85, 9], [633, 671, 22, 5], [495, 662, 28, 6], [905, 772, 40, 7], [960, 762, 34, 6]]) { x.beginPath(); x.ellipse(cx, cy, rx, ry, 0, 0, 7); x.fill(); }
+  for (const [cx, cy, rx, ry] of [[560, 667, 64, 7], [615, 670, 17, 4], [511, 663, 21, 5], [905, 772, 40, 7], [960, 762, 34, 6]]) { x.beginPath(); x.ellipse(cx, cy, rx, ry, 0, 0, 7); x.fill(); }
   return c;
 })();
 const tv = (t) => 0.3 + 0.12 * Math.sin(t * 3.1) + 0.08 * Math.sin(t * 7.7 + 1) + (Math.sin(t * 1.3) > 0.85 ? 0.15 : 0);
@@ -36,8 +36,8 @@ const shot = {
     return [
       { img: SHADOWS, x: 0, y: 0, sc: 1 },
       { img: COILC, x: COIL[0] - 60, y: COIL[1] - 34, sc: 1 },
-      { img: await flipLayer('x01_prone_phone', t), x: XM.x, y: XM.y, sc: XM.sc },
-      { img: await flipLayer('g01_beans', t), x: GM.x, y: GM.y, sc: GM.sc, ox: 304, oy: 1348 },   // 奶奶：逐帧摘豆，抬眼看小满
+      { img: await flipLayer('x01_prone_phone', t), nrm: await flipNrm('x01_prone_phone', t), x: XM.x, y: XM.y, sc: XM.sc },
+      { img: await flipLayer('g01_beans', t), nrm: await flipNrm('g01_beans', t), x: GM.x, y: GM.y, sc: GM.sc, ox: 304, oy: 1348 },   // 奶奶：逐帧摘豆，抬眼看小满
     ];
   },
   light: (t) => ({

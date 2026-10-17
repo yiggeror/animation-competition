@@ -74,15 +74,51 @@ function lightMap(W, H, L) {
   return buf;
 }
 
-// 渲染一帧。shot.layers(t) → [{ img, x, y, sc, rot?, alpha?, flip?, clip? }]（img 的像素 (0,0) 落在背景 (x, y)，缩放 sc）
+// 人物按法线受光（原来只有一张平的光照图乘上去，人物像贴上去的）：按场景里各盏灯对这个人的贡献算出主光方向，
+// 朝光的一侧提亮、背光的一侧压暗（法线朝镜头的地方不变，整体不变暗）；灯在头顶时再加一点上亮下暗。
+// 法线图的编码同 tools/card_soft.py：RGB = (n * 0.5 + 0.5) * 255，y 朝上。
+function shadeLayer(L, img, nrm, Lt) {
+  const w = img.width, h = img.height;
+  const cx = L.x + (w / 2 - (L.ox || 0)) * L.sc, cy = L.y + (h / 2 - (L.oy || 0)) * L.sc;
+  let lx = 0, ly = 0, lz = 0, tot = 0;
+  for (const l of Lt.lights || []) {
+    const d = Math.hypot(cx - l.x, cy - l.y) / l.r; if (d >= 1) continue;
+    const k = l.i * (1 - d) ** (l.falloff ?? 2.0) / (1 + 8 * d * d) * (l.color[0] + l.color[1] + l.color[2]) / 3;
+    const dx = l.x - cx, dy = cy - l.y, n = Math.hypot(dx, dy) || 1;
+    lx += k * 0.8 * dx / n; ly += k * 0.8 * dy / n; lz += k * 0.6; tot += k;
+  }
+  if (tot <= 1e-4) return img;
+  const ln = Math.hypot(lx, ly, lz); lx /= ln; ly /= ln; lz /= ln;
+  const amb = ((Lt.ambient || [0, 0, 0]).reduce((a, b) => a + b, 0)) / 3, ratio = tot / (tot + amb);
+  const ks = 2.6 * ratio, kv = ly > 0.3 ? 0.3 * ratio : 0;
+  const c = new OffscreenCanvas(w, h), x = c.getContext('2d');
+  x.drawImage(img, 0, 0); const id = x.getImageData(0, 0, w, h), D = id.data;
+  const nc = new OffscreenCanvas(w, h), nx = nc.getContext('2d'); nx.drawImage(nrm, 0, 0, w, h);
+  const N = nx.getImageData(0, 0, w, h).data;
+  for (let yy = 0, i = 0; yy < h; yy++) {
+    const fv = 1 + kv * (0.5 - yy / h);
+    for (let xx = 0; xx < w; xx++, i += 4) {
+      if (D[i + 3] === 0 || N[i + 3] === 0) continue;
+      const dot = (N[i] / 127.5 - 1) * lx + (N[i + 1] / 127.5 - 1) * ly + (N[i + 2] / 127.5 - 1) * lz;
+      const f = Math.min(1.4, Math.max(0.55, (1 + ks * (dot - lz)) * fv));
+      D[i] = Math.min(255, D[i] * f); D[i + 1] = Math.min(255, D[i + 1] * f); D[i + 2] = Math.min(255, D[i + 2] * f);
+    }
+  }
+  x.putImageData(id, 0, 0);
+  return c;
+}
+
+// 渲染一帧。shot.layers(t) → [{ img, nrm?, x, y, sc, rot?, alpha?, flip?, clip? }]（img 的像素 (0,0) 落在背景 (x, y)，缩放 sc；给了法线图 nrm 就按场景灯光打明暗）
 export async function renderPaint(ctx, t, W, H, shot) {
   const [BW, BH] = shot.size;
   const bg = (typeof shot.bg === 'string' ? await loadImg(shot.bg) : shot.bg) || (cache['__ph'] ||= placeholderBg(BW, BH));   // bg 可以是素材名，也可以是现成的画布
   // 1. 固有色（背景坐标）
   const alb = new OffscreenCanvas(BW, BH), ax = alb.getContext('2d');
   ax.drawImage(bg, 0, 0, BW, BH);
+  const Lt = shot.light(t);
   for (const L of (await shot.layers?.(t)) || []) {
-    const img = typeof L.img === 'string' ? await loadImg(L.img) : L.img; if (!img) continue;
+    let img = typeof L.img === 'string' ? await loadImg(L.img) : L.img; if (!img) continue;
+    if (L.nrm) img = shadeLayer(L, img, L.nrm, Lt);
     ax.save(); ax.globalAlpha = L.alpha ?? 1;
     ax.translate(L.x, L.y); if (L.rot) ax.rotate(L.rot); ax.scale((L.flip ? -1 : 1) * L.sc, L.sc);
     if (L.clip) { ax.beginPath(); L.clip.forEach(([px, py], j) => (j ? ax.lineTo(px, py) : ax.moveTo(px, py))); ax.closePath(); ax.clip(); }
@@ -91,7 +127,7 @@ export async function renderPaint(ctx, t, W, H, shot) {
     ax.restore();
   }
   // 2. 光照图 × 固有色（在线性空间里），再加发光
-  const Lt = shot.light(t), lm = lightMap(BW, BH, Lt);
+  const lm = lightMap(BW, BH, Lt);
   const id = ax.getImageData(0, 0, BW, BH), D = id.data, exp = Lt.exposure ?? 1;
   for (let i = 0, j = 0; i < D.length; i += 4, j += 3) {
     D[i] = lin2srgb(srgb2lin(D[i]) * lm[j] * exp); D[i + 1] = lin2srgb(srgb2lin(D[i + 1]) * lm[j + 1] * exp); D[i + 2] = lin2srgb(srgb2lin(D[i + 2]) * lm[j + 2] * exp);
