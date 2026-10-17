@@ -17,3 +17,25 @@ export function grandmaBeans(t, o = {}) {
     __blink: blinkAt(t, o.blinks || [0.9, 3.7, 6.1, 9.4, 11.2]),
   };
 }
+
+// 小满趴着打手机（x01_prone_phone）：按骨头名字里的关键词套动作（绑骨数据的命名细节不同也能用）——
+// 拇指一下下点（游戏里跳的时刻 presses），手机和两手作为一整块随游戏微晃，头跟着游戏小幅点，两条小腿交替晃，呼吸，眨眼
+export function xiaomanPhone(t, B, o = {}) {
+  const presses = o.presses || [1.5, 4.1, 6.7, 9.3, 11.9];
+  const press = presses.reduce((a, p) => { const u = t - p; return Math.max(a, u > -0.05 && u < 0.2 ? (u < 0 ? 1 + u / 0.05 : 1 - u / 0.2) : 0); }, 0);
+  const tap = 0.5 + 0.5 * Math.sin(t * 2 * Math.PI * 2.2);                 // 另一只拇指在方向键上来回搓
+  const br = Math.sin(t / 3.0 * 2 * Math.PI), urg = o.urgent ? sstep(o.urgent, o.urgent + 0.3, t) : 0;
+  const P = {};
+  for (const b of B.rig.bones) {
+    const n = b.name;
+    if (/spine|chest|torso/.test(n)) P[n] = { rot: 0.006 * br, sy: 1 + 0.006 * br };
+    else if (/neck/.test(n)) P[n] = { rot: 0.015 * press + 0.01 * Math.sin(t * 1.1) };
+    else if (/head/.test(n)) P[n] = { rot: 0.02 * press + 0.015 * Math.sin(t * 0.7) + 0.01 * urg * Math.sin(t * 17) };
+    else if (/phone/.test(n)) P[n] = { rot: 0.012 * press + 0.006 * Math.sin(t * 1.9) + 0.01 * urg * Math.sin(t * 23) };
+    else if (/thumb/.test(n)) P[n] = { rot: /far/.test(n) ? -0.08 * tap * (1 + urg) : -0.12 * press - 0.12 * urg * Math.abs(Math.sin(t * 19)) };
+    else if (/shin|calf|lower_leg/.test(n)) P[n] = { rot: (/far/.test(n) ? 1 : -1) * 0.08 * Math.sin(t * 2.4 + (/far/.test(n) ? 1.5 : 0)) };
+    else if (/foot/.test(n)) P[n] = { rot: 0.06 * Math.sin(t * 2.4 + 0.6) };
+  }
+  P.__blink = blinkAt(t, o.blinks || [0.6, 3.3, 5.8, 8.6, 10.7]);
+  return P;
+}

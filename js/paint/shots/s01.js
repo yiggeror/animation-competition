@@ -4,7 +4,10 @@
 // 游戏的"跳"声和剥豆声在 audio/build.py。推西瓜那一下放在 S03（奶奶近景）。
 import { renderPaint } from '../paintshot.js';
 import { loadRig, render as warp } from '../../rig/warp.js';
-import { grandmaBeans } from '../../rig/acts.js';
+import { grandmaBeans, xiaomanPhone } from '../../rig/acts.js';
+// 小满的绑骨（合作方出）到了就用骨架驱动，没到时退回旧的"小腿绕膝盖转"分层
+let XR;
+async function xmRig() { if (XR === undefined) { try { XR = await loadRig('x01_prone_phone'); } catch { XR = null; } } return XR; }
 export const DURATION = 12;
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
 const BW = 1672, BH = 941;
@@ -59,7 +62,7 @@ const shot = {
     return [
       { img: SHADOWS, x: 0, y: 0, sc: 1 },
       { img: COILC, x: COIL[0] - 60, y: COIL[1] - 34, sc: 1 },
-      { img: xiaoman(L, t), x: XM.x, y: XM.y + 0.6 * Math.sin(t * 1.7), sc: XM.sc },
+      { img: (await xmRig()) ? warp(XR, xiaomanPhone(t, XR)) : xiaoman(L, t), x: XM.x, y: XM.y, sc: XM.sc },
       { img: warp(await loadRig('g01_beans'), grandmaBeans(t, { looks: [2.6, 8.2] })), x: GM.x, y: GM.y, sc: GM.sc, ox: 304, oy: 1348 },   // 奶奶：骨架驱动剥豆，抬眼看两次小满
     ];
   },
