@@ -7,6 +7,23 @@ import { solve, pointOn, drawPuppet } from '../../puppet.js';
 import { makeTurtle, turtlePose } from '../turtle.js';
 import { NECK_UP, NECK_LOW, cranePoseOf, mixNeck, sstep } from '../choreo.js';
 import { GRANDMA, GR, CAM_C, loadMaps, flatMaps, makeLamp, craneCard } from '../s08_back.js';
+import { loadRig, renderMaps, posePoint } from '../../rig/warp.js';
+// 小满的骨架动作：两手攥着签子跟着乌龟乱晃（2.4～4.6 乌龟打转，手腕、肘、肩一起乱动），5.2～5.5 乌龟翻肚时一惊往后一缩；头跟着乌龟
+let BX = null;
+function poseX(t) {
+  const sstep2 = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
+  const chaos = sstep2(2.2, 2.6, t) * (1 - sstep2(4.4, 4.9, t)), wob = 0.3 + 0.7 * chaos;
+  const startle = Math.exp(-Math.max(0, t - 5.25) * 4) * (t > 5.25 ? Math.sin(Math.min(Math.PI / 2, (t - 5.25) * 12)) : 0);
+  const br = Math.sin(t / 3.2 * 2 * Math.PI);
+  return {
+    spine: { rot: 0.012 * wob * Math.sin(t * 4.1) - 0.04 * startle, sy: 1 + 0.005 * br },
+    neck: { rot: 0.03 * Math.sin(t * 2.7) * wob },
+    head: { rot: 0.05 * Math.sin(t * 3.1 + 1) * wob - 0.06 * startle },
+    upperarm_up: { rot: 0.07 * wob * Math.sin(t * 6.2) - 0.1 * startle }, forearm_up: { rot: -0.09 * wob * Math.sin(t * 6.2 + 0.8) + 0.05 * startle }, hand_up: { rot: 0.12 * wob * Math.sin(t * 9.3) },
+    upperarm_low: { rot: 0.05 * wob * Math.sin(t * 5.3 + 2) - 0.06 * startle }, forearm_low: { rot: -0.08 * wob * Math.sin(t * 5.3 + 2.9) }, hand_low: { rot: 0.1 * wob * Math.sin(t * 8.1 + 1) },
+  };
+}
+const xmGrips = (t) => (BX ? [posePoint(BX, poseX(t), 'hand_up', XM.grips[0]), posePoint(BX, poseX(t), 'hand_low', XM.grips[1])] : XM.grips);
 export const DURATION = 9;
 const T_LAUGH = 6.0;
 // 小满：站在奶奶右边、离床单近一点；图里脚底中点、每厘米像素（身高约 1.32 米）、两个拳头的握点（上手、下手）、要擦掉的短签
@@ -53,7 +70,7 @@ function xmBase(t) {
   return [XM.pos[0] + j, XM.pos[1], 0];
 }
 function grips(t, cam) {
-  const xm = XM.grips.map((g) => imgWorld(cam, xmBase(t), XM, flipP(XM, g)));
+  const xm = xmGrips(t).map((g) => imgWorld(cam, xmBase(t), XM, flipP(XM, g)));   // 握点跟着骨架里的手走
   const gm = t < T_LAUGH ? GR.grips.map((g) => imgWorld(cam, GPOS(t), GR, flipP(GR, g)))
     : [0, 1].map(() => imgWorld(cam, GPOS(t), GL, flipP(GL, GL.grip)));
   return { xm, gm };
@@ -110,7 +127,12 @@ const shot = {
     });
     // 5. 小满（比奶奶离镜头远，先画；奶奶的中近景里她在画外，不画）
     const xb = xmBase(t), dX = cam.project(xb)[2];
-    if (t < T_LAUGH) CARDS.addImage([{ maps: MAPS.xm, m: mulM(billboardM(cam, xb, XM.ox, XM.oy, XM.sc), flipM(XM)), clip: { pts: XM.erase, invert: true } }], dX);
+    if (t < T_LAUGH) {
+      // 骨架变形后的三张图；图上要擦掉的短签跟着两只手走
+      const P = poseX(t), maps = renderMaps(BX, P, MAPS.xm);
+      const erase = XM.erase.map((poly, i) => poly.map((q) => posePoint(BX, P, i ? 'hand_low' : 'hand_up', q)));
+      CARDS.addImage([{ maps, m: mulM(billboardM(cam, xb, XM.ox, XM.oy, XM.sc), flipM(XM)), clip: { pts: erase, invert: true } }], dX);
+    }
     // 6. 奶奶：拿着鹤 → 笑弯了腰
     const gb = GPOS(t), dG = cam.project(gb)[2];
     if (t < T_LAUGH) CARDS.addImage([{ maps: MAPS.gr, m: mulM(billboardM(cam, gb, GR.ox, GR.oy, GR.sc), flipM(GR)), clip: { pts: GR.erase, invert: true } }], dG);
@@ -125,8 +147,9 @@ const shot = {
 };
 
 export async function render(ctx, arg, W, H) {
+  BX ||= await loadRig('x20_puppeteer');
   let t = +arg || 0;
   if (arg && arg.startsWith('{')) { const o = JSON.parse(arg); Object.assign(DEBUG, o); t = o.t ?? 0; }
   return renderShot(ctx, t, W, H, shot);
 }
-export async function renderFrame(ctx, t, W, H) { return renderShot(ctx, t, W, H, shot); }
+export async function renderFrame(ctx, t, W, H) { BX ||= await loadRig('x20_puppeteer'); return renderShot(ctx, t, W, H, shot); }

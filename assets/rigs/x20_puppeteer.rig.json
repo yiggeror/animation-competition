@@ -1,0 +1,29 @@
+{
+  "image": "assets/chars/x20_puppeteer.png",
+  "size": [656, 1432],
+  "author": "Opus（临时，手量；请 Astra 独审/改正，并补 eyes）",
+  "bones": [
+    { "name": "root", "parent": null, "head": [220, 640], "tail": [220, 580] },
+    { "name": "leg_far", "parent": "root", "head": [200, 660], "tail": [150, 1340] },
+    { "name": "leg_near", "parent": "root", "head": [250, 660], "tail": [300, 1320] },
+    { "name": "spine", "parent": "root", "head": [220, 600], "tail": [245, 300] },
+    { "name": "neck", "parent": "spine", "head": [245, 300], "tail": [255, 240] },
+    { "name": "head", "parent": "neck", "head": [255, 240], "tail": [240, 40] },
+    { "name": "upperarm_up", "parent": "spine", "head": [325, 410], "tail": [420, 465] },
+    { "name": "forearm_up", "parent": "upperarm_up", "head": [420, 465], "tail": [535, 365] },
+    { "name": "hand_up", "parent": "forearm_up", "head": [535, 365], "tail": [590, 320] },
+    { "name": "upperarm_low", "parent": "spine", "head": [235, 490], "tail": [305, 570] },
+    { "name": "forearm_low", "parent": "upperarm_low", "head": [305, 570], "tail": [465, 520] },
+    { "name": "hand_low", "parent": "forearm_low", "head": [465, 520], "tail": [515, 495] }
+  ],
+  "layers": [
+    { "name": "arm_low", "bones": ["upperarm_low", "forearm_low", "hand_low"], "keepUnder": true, "z": 1,
+      "poly": [[190, 470], [300, 470], [480, 488], [545, 468], [552, 532], [472, 562], [332, 612], [228, 584], [188, 540]] }
+  ],
+  "regions": [
+    { "bones": ["root", "leg_far", "leg_near"], "poly": [[0, 760], [656, 760], [656, 1432], [0, 1432]] }
+  ],
+  "pins": [],
+  "eyes": [],
+  "notes": "握点：上手 (568,330) 在 hand_up 上，下手 (510,495) 在 hand_low 上。下胳膊压在裙子前面，单独一层，keepUnder（幅度小）。"
+}
