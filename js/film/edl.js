@@ -14,7 +14,7 @@ export const SHOTS = [
   { id: 'S08', scene: 2, line: 'code', dur: 6, mod: 'js/code/s08.js', text: '特写：黑暗里"嚓"地划着火柴（画外），奶奶的手把火柴伸到灯芯，甩灭，按下灯罩——暖光铺开' },
   // 第 3 场 · 手电
   { id: 'S09', scene: 3, line: 'code', dur: 5, mod: 'js/code/s09.js', text: '特写（马灯侧光）：小满从抽屉里拿出手电，推开关不亮，拍两下，再推——亮' },
-  { id: 'S10', scene: 3, line: 'paint', dur: 5, text: '手电光束扫过屋子，照到奶奶，奶奶眯起眼' },
+  { id: 'S10', scene: 3, line: 'paint', dur: 5, mod: 'js/paint/shots/s10.js', text: '手电光束扫过屋子，照到奶奶，奶奶眯起眼' },
   // 第 4 场 · 木箱
   { id: 'S12', scene: 4, line: 'code', dur: 8, mod: 'js/code/s12.js', text: '特写：樟木箱打开，奶奶握住签子把鹤立起来，马灯的光透过牛皮，鹤影落在箱盖内侧' },
   { id: 'S13', scene: 4, line: 'paint', dur: 5, text: '近景：小满盯着看 → 发现奶奶在看她 → 假装打哈欠，扭开头' },
@@ -31,6 +31,7 @@ export const SHOTS = [
   { id: 'S21', scene: 8, line: 'engine', dur: 6, mod: 'js/lamp/shots/s21.js', text: '床单正面：乌龟的影子忽大忽小、忽清忽虚，鹤"笑"得前仰后合' },
   { id: 'S22', scene: 8, line: 'code', dur: 5, mod: 'js/code/s22.js', text: '特写（后台）：奶奶从后面握住小满握签子的手——慢一点；乌龟一步步爬起来' },
   { id: 'S23', scene: 8, line: 'engine', dur: 5, mod: 'js/lamp/shots/s23.js', text: '床单正面：乌龟伸长脖子咬住鹤嘴，鹤僵住；后台小满得意地看奶奶' },
+  { id: 'S24', scene: 8, line: 'engine', dur: 2.5, mod: 'js/lamp/shots/s24.js', text: '后台近景：小满回过头，得意地看奶奶' },
   // 第 9 场 · 小狗
   { id: 'S25', scene: 9, line: 'engine', dur: 6, text: '后台：小满把手电架在木箱上，两只手伸进光里比出小狗' },
   { id: 'S26', scene: 9, line: 'engine', dur: 18, mod: 'js/lamp/shots/s26.js', text: '床单正面：暖的皮影、冷的狗影；小狗追鹤，乌龟骑在狗背上，越演越快' },

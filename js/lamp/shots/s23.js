@@ -4,7 +4,7 @@ import { makeTurtle, turtlePose } from '../turtle.js';
 import { NECK_UP, NECK_LOW, NECK_DOWN, cranePoseOf, mixNeck, sstep, craneRods, turtleRods } from '../choreo.js';
 export const DURATION = 5;
 let TURTLE = null;
-const sheet = (t, env) => {
+export const sheet = (t, env) => {
   TURTLE ||= makeTurtle();
   const bite = sstep(1.2, 1.6, t);
   const shake = sstep(2.4, 2.6, t) * Math.sin((t - 2.4) * 16) * (1 - sstep(4.2, 4.8, t));

@@ -6,7 +6,7 @@ export const DURATION = 6;
 const RW = 1920, RH = 1080, LINE = '#4a2e1f';
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
 const lerp = (a, b, k) => a + (b - a) * k;
-const LX = 1120, LB = 950;          // 马灯中心 x、底 y（设计坐标）
+export const LX = 1120, LB = 950;          // 马灯中心 x、底 y（设计坐标）
 
 // ---------------------------------------------------------------- 桌面和背景（固有色，之后乘光照）
 let BG = null;
@@ -34,7 +34,7 @@ function bg() {
 }
 
 // ---------------------------------------------------------------- 马灯
-function lamp(x, lift, flameOn) {
+export function lamp(x, lift, flameOn) {
   x.save(); x.translate(LX, LB); x.lineJoin = 'round'; x.lineCap = 'round';
   const L = (w) => { x.strokeStyle = LINE; x.lineWidth = w; };
   // 桌上的影子
@@ -88,7 +88,7 @@ function lamp(x, lift, flameOn) {
 }
 
 // 火苗（加在最后，自发光）
-function flameShape(x, at, size, t, cool = false) {
+export function flameShape(x, at, size, t, cool = false) {
   if (size <= 0.01) return;
   const fl = 1 + 0.08 * Math.sin(t * 23) + 0.05 * Math.sin(t * 37 + 1);
   const h = 70 * size * fl, w = 20 * size;

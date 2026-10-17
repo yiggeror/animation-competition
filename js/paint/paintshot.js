@@ -76,7 +76,7 @@ function lightMap(W, H, L) {
 // 渲染一帧。shot.layers(t) → [{ img, x, y, sc, rot?, alpha?, flip?, clip? }]（img 的像素 (0,0) 落在背景 (x, y)，缩放 sc）
 export async function renderPaint(ctx, t, W, H, shot) {
   const [BW, BH] = shot.size;
-  const bg = (await loadImg(shot.bg)) || (cache['__ph'] ||= placeholderBg(BW, BH));
+  const bg = (typeof shot.bg === 'string' ? await loadImg(shot.bg) : shot.bg) || (cache['__ph'] ||= placeholderBg(BW, BH));   // bg 可以是素材名，也可以是现成的画布
   // 1. 固有色（背景坐标）
   const alb = new OffscreenCanvas(BW, BH), ax = alb.getContext('2d');
   ax.drawImage(bg, 0, 0, BW, BH);
@@ -105,7 +105,8 @@ export async function renderPaint(ctx, t, W, H, shot) {
   }
   ax.restore();
   // 4. 镜头：平移、推拉（cam = { x, y, zoom }：画面中心对着背景的 (x, y)，zoom = 画面像素 / 背景像素）
-  const cam = shot.cam?.(t) || { x: BW / 2, y: BH / 2, zoom: W / BW };
+  const cam0 = shot.cam?.(t) || { x: BW / 2, y: BH / 2, fit: 1 };
+  const cam = { ...cam0, zoom: cam0.fit != null ? cam0.fit * W / BW : cam0.zoom };   // fit：相对"背景宽度正好铺满画面"的倍数（和输出分辨率无关）
   ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.fillStyle = '#000'; ctx.fillRect(0, 0, W, H);
   ctx.translate(W / 2, H / 2); ctx.scale(cam.zoom, cam.zoom); ctx.translate(-cam.x, -cam.y);
   ctx.imageSmoothingQuality = 'high';
