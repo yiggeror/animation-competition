@@ -29,7 +29,7 @@ export const SHOTS = [
   // 第 8 场 · 上手
   { id: 'S20', scene: 8, line: 'engine', dur: 9, text: '后台（机位 C）：奶奶把乌龟交给小满；签子缠在一起，乌龟翻了肚皮；奶奶笑弯了腰' },
   { id: 'S21', scene: 8, line: 'engine', dur: 6, mod: 'js/lamp/shots/s21.js', text: '床单正面：乌龟的影子忽大忽小、忽清忽虚，鹤"笑"得前仰后合' },
-  { id: 'S22', scene: 8, line: 'engine', dur: 5, text: '特写（后台）：奶奶从后面握住小满握签子的手——慢一点；乌龟一步步爬起来' },
+  { id: 'S22', scene: 8, line: 'code', dur: 5, mod: 'js/code/s22.js', text: '特写（后台）：奶奶从后面握住小满握签子的手——慢一点；乌龟一步步爬起来（代码画的占位版，等 anim_22）' },
   { id: 'S23', scene: 8, line: 'engine', dur: 5, mod: 'js/lamp/shots/s23.js', text: '床单正面：乌龟伸长脖子咬住鹤嘴，鹤僵住；后台小满得意地看奶奶' },
   // 第 9 场 · 小狗
   { id: 'S25', scene: 9, line: 'engine', dur: 6, text: '后台：小满把手电架在木箱上，两只手伸进光里比出小狗' },
@@ -44,6 +44,6 @@ export const SHOTS = [
   { id: 'S31', scene: 12, line: 'engine', dur: 14, text: '床单正面：小满拿手电从下巴往上照、做鬼脸，举着乌龟晃一晃；鹤和乌龟又动起来' },
   // 第 13 场 · 尾声
   { id: 'S32', scene: 13, line: 'paint', dur: 15, text: '屋外，慢慢后退：家家户户白灯，只有这扇窗暖黄，窗里鹤和乌龟的影子；片名"来电"' },
-  { id: 'END', scene: 0, line: 'code', dur: 15, mod: 'js/code/credits.js', text: '字幕；最后一张：竹席上小满的手机，锁屏壁纸换成床单上的鹤影，屏幕熄灭' },
+  { id: 'END', scene: 0, line: 'code', dur: 9, mod: 'js/code/credits.js', text: '字幕；最后一张：竹席上小满的手机，锁屏壁纸换成床单上的鹤影，屏幕熄灭' },
 ];
 export const TOTAL = SHOTS.reduce((s, x) => s + x.dur, 0);

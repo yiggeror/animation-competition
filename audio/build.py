@@ -151,8 +151,9 @@ AMB += pan(whine * wg * 0.25, -0.55)
 # 马灯火苗：点着以后一直在（近景响一点）
 LAMP = T('S08', 1.8)   # 灯芯着了
 fl = flame(TOTAL - LAMP)
-flg = gain_curve([(0, -26), (T('S08', 4), -18), (T('S09'), -28), (T('S12'), -24), (T('S13'), -30), (ON, -40), (OFF + 1, -28), (TOTAL, -28)], len(fl))
-s0 = ns(LAMP); AMB[s0:s0 + len(fl)] += pan(fl * flg, 0.3)[:N - s0]
+s0 = ns(LAMP)
+flg = gain_curve([(0, -26), (T('S08', 4), -18), (T('S09'), -28), (T('S12'), -24), (T('S13'), -30), (ON, -40), (OFF + 1, -28), (TOTAL, -28)])[s0:s0 + len(fl)]   # 曲线是全片时间，截出灯亮以后的一段
+fl = fl[:len(flg)]; AMB[s0:s0 + len(fl)] += pan(fl * flg, 0.3)
 
 # ================================================================ 第 1–5 场：手机游戏、剥毛豆、停电
 print('第 1–5 场…')
@@ -350,8 +351,8 @@ yq_chords(t0 + 0.3, [1, 6, 1], 120, 3, 0.25)
 # S22：奶奶从后面握住小满的手——只剩笛子，慢一半，主题前两小节；乌龟一步一步爬起来，每步一个低音拨弦
 t0 = T('S22')
 melody('dizi', mel(THEME_A, t0 + 0.4, 60, D5, beats_to=4, gap=0.03, acc=0.55), 0.45)
-for k in range(4):
-    place(MUS['pipa'], pipa(jp([1, 2, 3, 5][k], -1, D5), 0.9, 0.5), t0 + 0.4 + k * 1.0, 0.3)
+for k in range(4):                                         # js/code/s22.js：手握住以后，1.4 秒起每秒一步
+    place(MUS['pipa'], pipa(jp([1, 2, 3, 5][k], -1, D5), 0.9, 0.5), t0 + 1.4 + k * 1.0, 0.3)
 # S23：乌龟伸长脖子（0～1.3，笛子往上滑）→ 咬住鹤嘴（1.2～1.6）"呛" → 鹤僵住（空一下）→ 甩（2.4～4.8，板胡颤音 + 梆子）→ 小满得意（一个俏皮的收尾）
 t0 = T('S23')
 melody('dizi', [{'t': t0 + 0.1, 'd': 1.1, 'f': jp(1, 1, D5), 'acc': 0.5}, {'t': t0 + 1.2, 'd': 0.2, 'f': jp(1, 2, D5), 'acc': 0.75, 'slide': 1.0, 'legato': True}], 0.35)
@@ -371,6 +372,8 @@ for k in range(16):
     tk = 2.0 + k * 0.25
     arp.append({'t': tk, 'd': 0.2, 'f': jp([1, 3, 5, 1, 2, 5, 6, 2][k % 8], 1 + (k >= 8), D5), 'acc': 0.4 + 0.03 * k})
 y = chip_lead(arp, 6.0, 0.125); place(MUS['chip'], y, t0, 0.35)
+for tw in (4.6, 5.35):                                     # js/code/s25.js：狗影第一次张嘴
+    sfx(woof(0.7), t0 + tw, 0.16, 0.2)
 place(MUS['yq'], yangqin(jp(5, -1, D5), 3.5, 0.5), t0 + 3.0, 0.25)
 # S26：画面的时间是 u = tempo(t)（js/lamp/shots/s26.js，10 秒后越演越快）。音乐的拍 = 2u，所以和画面一起加速
 t0 = T('S26')
@@ -492,13 +495,14 @@ T2 = t0 + 1.0 + 8 * 60 / 84
 yq_chords(T2, THEME_ROOTS[4:], 84, 2, 0.2, pattern='arp')
 melody('dizi', mel(THEME_A, T2, 84, D5, beats_from=8, gap=0.03, acc=0.55), 0.4)
 T3 = T2 + 8 * 60 / 84                                       # 约 S31 的 12.4 秒
-melody('banhu', mel(THEME_A, T3, 108, D5, beats_to=4), 0.4)
-yq_chords(T3, THEME_ROOTS, 108, 2, 0.3)
-bangzi_beats(T3, 108, 4, 0.25)
+BPF = 118                                                   # 尾声的速度：32 拍正好走到 S32 结尾
+melody('banhu', mel(THEME_A, T3, BPF, D5, beats_to=4), 0.4)
+yq_chords(T3, THEME_ROOTS, BPF, 2, 0.3)
+bangzi_beats(T3, BPF, 4, 0.25)
 
 # ================================================================ 第 13 场 + 字幕：完整的主题
 print('第 13 场、字幕…')
-BP = 108; sp = 60 / BP
+BP = BPF; sp = 60 / BP
 t0 = T3 + 4 * sp
 melody('banhu', mel(THEME_A, t0, BP, D5, beats_from=4), 0.45)
 yq_chords(t0, THEME_ROOTS[2:], BP, 6, 0.3)
@@ -512,17 +516,13 @@ for b in range(8):
 bangzi_beats(t1, BP, 16, 0.25)
 t2 = t1 + 16 * sp
 place(MUS['perc'], qiang(0.7), t2, 0.45)                    # 片名出来
-# 字幕：方波和笛子二重奏（两个人的世界），慢一点
-BP3 = 96; sp3 = 60 / BP3; t3 = t2 + 2 * sp
-ch = [{'t': t3 + b * sp3 - t3, 'd': d * sp3 * 0.9, 'f': f * 2, 'acc': 0.55} for b, d, f, fl in parse(THEME_A, D5)[0]]
-place(MUS['chip'], chip_lead(ch, 16 * sp3 + 1, 0.5), t3, 0.18)
-melody('dizi', mel(THEME_A_DIZI, t3 + 8 * sp3, BP3, D5, beats_from=8), 0.35)
-yq_chords(t3, THEME_ROOTS, BP3, 8, 0.25, pattern='arp')
-t4 = t3 + 16 * sp3
-place(MUS['yq'], yangqin(jp(1, 1, D5), 4.0, 0.6), t4, 0.3)
-place(MUS['yq'], yangqin(jp(5, 0, D5), 4.0, 0.6), t4 + 0.45, 0.28)
-place(MUS['perc'], bangzi(0.8), t4 + 2.0, 0.4)
-print(f'  主题最后一个音在 {t4 + 2.0:.1f} 秒（全片 {TOTAL - 1:.1f} 秒）')
+# 片尾（js/code/credits.js）：锁屏亮着的时候扬琴"叮—咚"，屏幕熄灭（6.3 秒）时一声梆子
+TE = T('END')
+place(MUS['yq'], yangqin(jp(1, 1, D5), 4.0, 0.6), TE + 2.4, 0.3)
+place(MUS['yq'], yangqin(jp(5, 0, D5), 4.0, 0.6), TE + 2.85, 0.28)
+place(MUS['perc'], bangzi(0.8), TE + 6.3, 0.4)
+t4 = TE + 4.3
+print(f'  片名"呛"在 {t2:.1f} 秒（S32 结尾 {T("END"):.1f}），最后一声梆子 {TE + 6.3:.1f} 秒（全片 {TOTAL - 1:.1f} 秒）')
 
 # ================================================================ 合成旋律、混音
 print('合成旋律…')
@@ -530,16 +530,27 @@ render_lines()
 # 来电那一刻再切一次（旋律线是最后合成的）
 for k in MUS:
     MUS[k][s_on:s_on + ns(OFF - ON)] = 0
+for k in ('chip', 'beat'):                                  # 方波占空比 25% 有直流分量，先隔直
+    MUS[k] = hp(MUS[k], 20).astype(np.float32)
 music = (pan(MUS['banhu'] * 0.55, 0.15) + pan(MUS['dizi'] * 0.5, -0.12) + pan(MUS['yq'] * 0.35, -0.35) + pan(MUS['pipa'] * 0.45, 0.35)
          + pan(MUS['perc'] * 0.6, 0.05) + pan(MUS['chip'] * 0.35, 0.0) + pan(MUS['beat'] * 0.5, 0.0))
 print('混响…')
 music = reverb(music, reverb_ir(1.1), wet=0.2)
 music[s_on:s_on + ns(OFF - ON)] = 0                            # 混响尾巴也切掉：来电是一刀切
 SFX_r = reverb(SFX, reverb_ir(0.45, bright=5000), wet=0.15)
-mix = music * 0.9 + SFX_r + AMB
+music = music * 0.9                                          # 分轨和总混音用同一个系数，三条分轨相加就是总混音
+mix = music + SFX_r + AMB
+mix = np.stack([hp(mix[:, 0], 15), hp(mix[:, 1], 15)], 1)
 peak = np.abs(mix).max(); mix = mix / peak * 0.89
 print(f'峰值归一前 {peak:.2f}')
 for name, x in [('music', music), ('sfx', SFX_r), ('amb', AMB)]:
     wavfile.write(os.path.join(OUT, f'stem_{name}.wav'), SR, (np.clip(x / peak * 0.89, -1, 1) * 32767).astype(np.int16))
 wavfile.write(os.path.join(OUT, 'film_mix.wav'), SR, (np.clip(mix, -1, 1) * 32767).astype(np.int16))
-print(os.path.join(OUT, 'film_mix.wav'), f'{TOTAL:.1f}s')
+# 响度归一（两遍 loudnorm）：-16 LUFS、真峰 -1.5 dBTP，输出 film_mix_norm.wav（成片用这个）
+src = os.path.join(OUT, 'film_mix.wav'); dst = os.path.join(OUT, 'film_mix_norm.wav')
+r = subprocess.run(['ffmpeg', '-hide_banner', '-nostats', '-i', src, '-af', 'loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json', '-f', 'null', '-'], capture_output=True, text=True)
+m = json.loads(r.stderr[r.stderr.rindex('{'):r.stderr.rindex('}') + 1])
+af = f"loudnorm=I=-16:TP=-1.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true"
+subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', src, '-af', af, '-ar', str(SR), dst], check=True)
+print(f"响度：原 {m['input_i']} LUFS / 真峰 {m['input_tp']} dBTP → -16 LUFS")
+print(dst, f'{TOTAL:.1f}s')

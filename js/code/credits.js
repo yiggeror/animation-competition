@@ -2,7 +2,9 @@
 // 最后屏幕自己熄掉，全片结束。手机界面是原创的，没有任何真实品牌。
 import { mat, lit, RW, RH, sstep } from './phone.js';
 import { LINES, TEAM } from '../film/credits_text.js';
-export const DURATION = 15;
+const HAS_ROLL = LINES.length > 0 || TEAM.length > 0;
+const T0 = HAS_ROLL ? 8.5 : 0;                       // 锁屏从第几秒开始（有名单时先走名单）
+export const DURATION = HAS_ROLL ? 15 : 9;
 let WALL = null;
 async function wall() {
   if (WALL) return WALL;
@@ -40,14 +42,14 @@ function rolls(ctx, t) {
 }
 // 竹席上的手机（竖着放），锁屏
 function lock(ctx, t, img) {
-  const u = t - 8.5;
+  const u = t - T0;
   const amb = [0.16, 0.12, 0.09];                    // 马灯从远处照过来的一点暖光
   ctx.fillStyle = '#000'; ctx.fillRect(0, 0, RW, RH);
   const zoom = 1.0 + 0.04 * sstep(0, 6.5, u);
   ctx.save(); ctx.translate(RW / 2, RH / 2); ctx.scale(zoom, zoom); ctx.translate(-RW / 2, -RH / 2);
   ctx.save(); ctx.filter = 'blur(3px)'; ctx.drawImage(mat(), -300, -300); ctx.restore();
   ctx.save(); ctx.globalCompositeOperation = 'multiply'; ctx.fillStyle = `rgb(${amb.map((v) => Math.round(255 * Math.pow(v, 1 / 2.2))).join(',')})`; ctx.fillRect(0, 0, RW, RH); ctx.restore();
-  const on = 1 - sstep(5.7, 6.3, u);                 // 屏幕熄灭
+  const on = 1 - sstep(6.3, 6.9, u);                 // 屏幕熄灭（对上 audio/build.py 结尾的一声梆子）
   const PW = 470, PH = 960, R = 64, BZ = 16;
   ctx.translate(RW / 2, RH / 2 - 30); ctx.rotate(-0.07); ctx.scale(0.8, 0.8);
   // 屏幕往竹席上溢的光（冷一点）
@@ -100,10 +102,11 @@ function lock(ctx, t, img) {
 export async function renderFrame(ctx, t, W, H) {
   const img = await wall();
   ctx.save(); ctx.setTransform(W / RW, 0, 0, H / RH, 0, 0);
-  if (t < 9.5) rolls(ctx, t);
-  if (t > 8.5) { ctx.save(); ctx.globalAlpha = sstep(8.5, 9.5, t); lock(ctx, t, img); ctx.restore(); }
+  if (HAS_ROLL && t < T0 + 1) rolls(ctx, t);
+  if (t >= T0) { ctx.save(); ctx.globalAlpha = HAS_ROLL ? sstep(T0, T0 + 1, t) : 1; lock(ctx, t, img); ctx.restore(); }
+  if (!HAS_ROLL) { ctx.fillStyle = `rgba(0,0,0,${1 - sstep(0, 1.0, t)})`; ctx.fillRect(0, 0, RW, RH); }   // 从上一个镜头的黑里淡入
   // 最后一秒黑下去
-  ctx.fillStyle = `rgba(0,0,0,${sstep(14.2, 15, t)})`; ctx.fillRect(0, 0, RW, RH);
+  ctx.fillStyle = `rgba(0,0,0,${sstep(DURATION - 0.8, DURATION, t)})`; ctx.fillRect(0, 0, RW, RH);
   ctx.restore();
   grain(ctx, W, H, t);
 }
