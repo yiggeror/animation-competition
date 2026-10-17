@@ -1,6 +1,6 @@
 // S31 · 第 12 场：关灯以后。床单又被后台的马灯照亮。
 // A 0～7.5 秒：小满站在床单前（合作方画的 anim_33_xiaoman_flashlight_face v2：正面略左、吐舌头做鬼脸，右手在下巴下面攥着手电，
-//   左手举着一根签子；抠图 assets/chars/x31_flashlight_face.png）。0.6 秒"咔"地推亮手电，光从下巴往上照——鬼脸；
+//   左手举着一根签子；抠图 assets/chars/x31_flashlight_face.png）。承接 S30，手电开镜已经亮着，光从下巴往上照——鬼脸；
 //   4.5～7 秒举着乌龟晃一晃。乌龟举在亮着的床单前面，看到的是透光的颜色。
 //   图里手电是个灰色的占位短筒：按 S09 那只手电（红筒、镀铬灯头）重画在原来的位置上，灯头朝上、不顶下巴，手指那一层盖在手电上面。
 // B 7.5～14 秒：切到床单正面（WebGL 引擎）：鹤跳起来，乌龟从右边爬进来，俩互相点头——又演起来了。笛子回来（audio/build.py）。
@@ -11,7 +11,7 @@ import { makeTurtle, turtlePose } from '../../lamp/turtle.js';
 import { NECK_UP, NECK_LOW, NECK_DOWN, cranePoseOf, mixNeck, craneRods, turtleRods } from '../../lamp/choreo.js';
 import { drawPuppet, solve, pointOn } from '../../puppet.js';
 export const DURATION = 14;
-const T_B = 7.5, T_ON = 0.6;
+const T_B = 7.5, T_BOB = 0.6;
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
 const W = 1920, H = 1080;
 let TURTLE = null;
@@ -53,7 +53,25 @@ async function xm() {
   fx.save(); fx.beginPath(); FIST.forEach(([x, y], i) => (i ? fx.lineTo(x, y) : fx.moveTo(x, y))); fx.closePath(); fx.clip(); fx.drawImage(im, 0, 0); fx.restore();
   const id = fx.getImageData(400, 560, 140, 180), D = id.data;
   for (let i = 0; i < D.length; i += 4) if (isGray(D[i], D[i + 1], D[i + 2])) D[i + 3] = 0;
+  // 灰占位筒的尾端比新筒身偏左；只清掉这个局部的灰面/黑色筒底线。
+  // 用同一行右侧的原裙料补底，保留彩色手指；新手电仍在手指下合成。
+  const tail = new Path2D();
+  [[475, 687], [485, 686], [489, 691], [496, 711], [488, 715], [466, 715], [458, 710], [461, 701]].forEach(([x, y], i) => i ? tail.lineTo(x, y) : tail.moveTo(x, y)); tail.closePath();
+  const patch = bx.getImageData(450, 680, 60, 40), P = patch.data;
+  for (let y = 686; y < 716; y++) for (let x = 458; x < 497; x++) {
+    if (!bx.isPointInPath(tail, x + 0.5, y + 0.5)) continue;
+    const p = ((y - 680) * 60 + x - 450) * 4;
+    if (Math.max(P[p], P[p + 1], P[p + 2]) - Math.min(P[p], P[p + 1], P[p + 2]) >= 65) continue;
+    const cloth = ((y - 680) * 60 + 505 - 450) * 4;
+    P[p] = P[cloth]; P[p + 1] = P[cloth + 1]; P[p + 2] = P[cloth + 2];
+    D[((y - 560) * 140 + x - 400) * 4 + 3] = 0;
+  }
+  bx.putImageData(patch, 450, 680);
   fx.putImageData(id, 400, 560);
+  // 拳头粗遮罩还带进了下方的裙子圆点，曾把新筒尾截成“灰缝 + 悬空黑线”。
+  // 沿最后一根手指和掌缘的外侧裁掉这部分衣料，保留前景手指轮廓。
+  fx.save(); fx.globalCompositeOperation = 'destination-out'; fx.beginPath();
+  [[473, 690], [484, 688], [490, 694], [528, 692], [528, 742], [451, 742], [451, 714], [461, 703]].forEach(([x, y], i) => i ? fx.lineTo(x, y) : fx.moveTo(x, y)); fx.closePath(); fx.fill(); fx.restore();
   return (XM = { im, base, fing });
 }
 // 手电（S09 那一只）：灯头朝上，镀铬反光碗比筒粗一点
@@ -83,7 +101,8 @@ async function sheetBg() {
   x.filter = 'blur(14px)'; x.drawImage(s, -40, -30, W + 80, H + 60);
   return (BG = c);
 }
-const on = (t) => (t < T_ON ? 0 : t < T_ON + 0.06 ? 0.5 : 1) * (1 + 0.03 * Math.sin(t * 37));
+// 剧本第 12 场：手电一直亮着，只是此前被日光灯淹没；这里没有再次开灯。
+const on = (t) => 1 + 0.03 * Math.sin(t * 37);
 async function renderA(ctx, t, w, h) {
   const X = await xm(), bg = await sheetBg();
   const k = w / W;
@@ -110,7 +129,7 @@ async function renderA(ctx, t, w, h) {
   ax.globalCompositeOperation = 'destination-in'; ax.drawImage(X.base, 0, 0);   // 底图本来就包含拳头和手电的位置，用它一张当轮廓（连画两张 destination-in 会只剩交集）
   ax.globalCompositeOperation = 'source-over'; flashlightLitTop(ax, o);
   // 轻轻晃（吐舌头做鬼脸的那股劲）
-  const sway = 0.012 * Math.sin(t * 2.3), bob = 6 * Math.sin(t * 4.6) * sstep(T_ON, T_ON + 0.4, t);
+  const sway = 0.012 * Math.sin(t * 2.3), bob = 6 * Math.sin(t * 4.6) * sstep(T_BOB, T_BOB + 0.4, t);
   ctx.save(); ctx.translate(XO + 400, YO + 1400 * XS); ctx.rotate(sway); ctx.translate(-(XO + 400), -(YO + 1400 * XS));
   ctx.translate(XO, YO + bob); ctx.scale(XS, XS);
   // 乌龟：举在亮床单前面，看到透光的颜色（正片叠底到床单上）

@@ -10,14 +10,14 @@ export const SHOTS = [
   { id: 'S04', scene: 2, line: 'paint', dur: 8, mod: 'js/paint/shots/s04.js', text: '全景："啪"——灯灭、电视缩成一个亮点、吊扇慢慢停；月光从窗口斜进来' },
   { id: 'S05', scene: 2, line: 'code', dur: 4, mod: 'js/code/s05.js', text: '特写：手机 1%，手指狂按，屏幕黑' },
   { id: 'S06', scene: 2, line: 'paint', dur: 8, mod: 'js/paint/shots/s06.js', text: '特写（月光，侧面）：墙脚插座，小满的手捏着插头拔了又插，举到嘴边吹一口，最后狠狠插回去' },
-  { id: 'S07', scene: 2, line: 'paint', dur: 5, text: '全景：小满往后一倒瘫在竹席上扇风；奶奶起身走向立柜，踮脚摸马灯' },
+  { id: 'S07', scene: 2, line: 'paint', dur: 5, mod: 'js/paint/shots/s07.js', text: '全景：小满往后一倒瘫在竹席上扇风；奶奶起身走向立柜，踮脚摸马灯' },
   { id: 'S08', scene: 2, line: 'paint', dur: 6, mod: 'js/paint/shots/s08.js', text: '中景→特写→中景：黑暗里奶奶"嚓"地划着火柴，火光照亮她；特写里火柴碰到灯芯，甩灭，灯罩落下；回中景，马灯亮了' },
   // 第 3 场 · 手电
   { id: 'S09', scene: 3, line: 'paint', dur: 4, mod: 'js/paint/shots/s09.js', text: '近景（马灯从右边照过来）：小满跪在电视柜前捧着旧手电，推开关不亮，往手心磕两下，再推——亮了，光柱打出去' },
   { id: 'S10', scene: 3, line: 'paint', dur: 5, mod: 'js/paint/shots/s10.js', text: '手电光束扫过屋子，照到奶奶，奶奶眯起眼' },
   // 第 4 场 · 木箱
   { id: 'S12', scene: 4, line: 'paint', dur: 8, mod: 'js/paint/shots/s12.js', text: '中景：樟木箱开着，奶奶跪在箱边俯身握住签子，直起身把鹤立起来，马灯的光透过牛皮，鹤影落在箱盖内侧' },
-  { id: 'S13', scene: 4, line: 'paint', dur: 5, text: '近景：小满盯着看 → 发现奶奶在看她 → 假装打哈欠，扭开头' },
+  { id: 'S13', scene: 4, line: 'paint', dur: 5, mod: 'js/paint/shots/s13.js', text: '近景：小满盯着看 → 发现奶奶在看她 → 假装打哈欠，扭开头' },
   // 第 5 场 · 搭台
   { id: 'S14', scene: 5, line: 'paint', dur: 10, mod: 'js/paint/shots/s14.js', text: '全景：奶奶把床单搭上铁丝、夹衣夹、挂马灯，床单亮起；小满拖板凳坐下，抱起胳膊' },
   // 第 6 场 · 鹤
@@ -39,7 +39,7 @@ export const SHOTS = [
   { id: 'S27', scene: 10, line: 'engine', dur: 5, mod: 'js/lamp/shots/s27.js', text: '床单正面（硬切进惨白）：日光灯闪两下亮了，影子几乎看不见' },
   { id: 'S28', scene: 10, line: 'paint', dur: 8, mod: 'js/paint/shots/s28.js', text: '全景（日光灯）：吊扇转起、电视嘶响、一地毛豆壳；两人被晃得眯眼；竹席上手机亮起充电图标' },
   // 第 11 场 · 收
-  { id: 'S29', scene: 11, line: 'paint', dur: 12, text: '奶奶笑笑，开始用布包皮影；手机"叮咚"开机；小满看看手机，又看看奶奶' },
+  { id: 'S29', scene: 11, line: 'paint', dur: 12, mod: 'js/paint/shots/s29.js', text: '奶奶笑笑，开始用布包皮影；手机"叮咚"开机；小满看看手机，又看看奶奶' },
   // 第 12 场 · 关灯
   { id: 'S30', scene: 12, line: 'paint', dur: 12, mod: 'js/paint/shots/s30.js', text: '全景：小满走到门边，踮脚拉灯绳——"咔嗒"，暗了；马灯的光重新显出来' },
   { id: 'S31', scene: 12, line: 'paint', dur: 14, mod: 'js/paint/shots/s31.js', text: '床单前：小满把手电抵在下巴下往上照、做鬼脸，举着乌龟晃一晃；切床单正面：鹤跳起来，乌龟爬进来，又演起来了' },
