@@ -13,7 +13,7 @@ function scratch(key, W, H) {
   if (!c) c = POOL[key] = new OffscreenCanvas(W, H);
   if (c.width !== W || c.height !== H) { c.width = W; c.height = H; }
   const x = c.getContext('2d', { willReadFrequently: true });
-  x.setTransform(1, 0, 0, 1, 0, 0); x.globalCompositeOperation = 'source-over'; x.globalAlpha = 1; x.filter = 'none';
+  x.setTransform(1, 0, 0, 1, 0, 0); x.globalCompositeOperation = 'source-over'; x.globalAlpha = 1; x.filter = 'none'; x.imageSmoothingQuality = 'high';
   x.clearRect(0, 0, W, H);
   return [c, x];
 }
@@ -88,7 +88,8 @@ function boxBlur(src, w, h, r) {
 export class Cards {
   constructor(W, H) {
     this.W = W; this.H = H;
-    const mk = () => { const c = new OffscreenCanvas(W, H); const x = c.getContext('2d'); return [c, x]; };
+    // 高质量缩小：人物图常缩到几分之一，默认的低质量会把细线断成一粒一粒（同 paintshot）
+    const mk = () => { const c = new OffscreenCanvas(W, H); const x = c.getContext('2d'); x.imageSmoothingQuality = 'high'; return [c, x]; };
     [this.alb, this.a] = mk(); [this.nrm, this.n] = mk(); [this.mat, this.m] = mk();
   }
   clear() { for (const x of [this.a, this.n, this.m]) { x.setTransform(1, 0, 0, 1, 0, 0); x.clearRect(0, 0, this.W, this.H); } }

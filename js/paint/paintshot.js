@@ -114,6 +114,7 @@ export async function renderPaint(ctx, t, W, H, shot) {
   const bg = (typeof shot.bg === 'string' ? await loadImg(shot.bg) : shot.bg) || (cache['__ph'] ||= placeholderBg(BW, BH));   // bg 可以是素材名，也可以是现成的画布
   // 1. 固有色（背景坐标）
   const alb = new OffscreenCanvas(BW, BH), ax = alb.getContext('2d');
+  ax.imageSmoothingQuality = 'high';   // 人物图缩得很小（0.14～0.24 倍），默认的低质量缩小会把细线断成一粒一粒（Astra 实测 S01 小满腿内侧）
   ax.drawImage(bg, 0, 0, BW, BH);
   const Lt = shot.light(t);
   for (const L of (await shot.layers?.(t)) || []) {

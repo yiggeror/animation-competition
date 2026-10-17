@@ -66,7 +66,8 @@ const shot = {
     }
     x.restore();
   },
-  cam: (t) => { const k = sstep(0, 12, t); return { x: BW / 2 - 60 * k, y: BH / 2 + 10 + 25 * k, fit: 1.0 + 0.12 * k }; },
+  // 镜头中心从正中起、随推近下移（原来一开始就在 BH/2+10，开头底下露出 10 行黑边，Astra 实测）
+  cam: (t) => { const k = sstep(0, 12, t); return { x: BW / 2 - 60 * k, y: BH / 2 + 35 * k, fit: 1.0 + 0.12 * k }; },
 };
 export async function renderFrame(ctx, t, W, H) { return renderPaint(ctx, t, W, H, shot); }
 export async function render(ctx, arg, W, H) { return renderFrame(ctx, +arg || 0, W, H); }
