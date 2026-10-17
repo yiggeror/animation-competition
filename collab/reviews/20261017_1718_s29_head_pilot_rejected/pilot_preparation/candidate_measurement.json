@@ -1,0 +1,193 @@
+{
+  "numeric_failures": [
+    "A_NCC_below_frozen_minimum",
+    "B_NCC_below_frozen_minimum",
+    "B_peak_at_frozen_search_boundary",
+    "H_NCC_below_frozen_minimum",
+    "H_peak_at_frozen_search_boundary",
+    "H_residual_above_3px",
+    "global_scale_deviation_above_frozen_limit"
+  ],
+  "candidate_to_master": [
+    [
+      0.9780614902922112,
+      0.00631892432728098,
+      -14.154802718044948
+    ],
+    [
+      -0.00631892432728098,
+      0.9780614902922112,
+      10.84487101614127
+    ]
+  ],
+  "fit_points": [
+    "A",
+    "B"
+  ],
+  "independent_check_point": "H",
+  "acceptance": "reject_or_hold_no_rescue_warp_no_retry",
+  "automatic_visual_acceptance": false,
+  "candidate_mode": "RGBA",
+  "candidate_size": [
+    1024,
+    1536
+  ],
+  "matches": {
+    "A": {
+      "point": [
+        224.49788919222922,
+        1199.8976810820711
+      ],
+      "ncc": 0.8726118363305229,
+      "peak_margin": 0.19460205338981762,
+      "peak_on_search_boundary": false,
+      "fixed_template_xyxy": [
+        173,
+        1143,
+        253,
+        1223
+      ],
+      "fixed_search_window_xyxy": [
+        149,
+        1119,
+        277,
+        1247
+      ]
+    },
+    "B": {
+      "point": [
+        827.0,
+        1313.1903179408396
+      ],
+      "ncc": 0.28155168793847696,
+      "peak_margin": 0.06532864614502568,
+      "peak_on_search_boundary": true,
+      "fixed_template_xyxy": [
+        751,
+        1244,
+        855,
+        1322
+      ],
+      "fixed_search_window_xyxy": [
+        727,
+        1220,
+        879,
+        1346
+      ]
+    },
+    "H": {
+      "point": [
+        490.34001848898777,
+        1328.0
+      ],
+      "ncc": 0.879389545633662,
+      "peak_margin": 0.6483573343879971,
+      "peak_on_search_boundary": true,
+      "fixed_template_xyxy": [
+        425,
+        1262,
+        509,
+        1346
+      ],
+      "fixed_search_window_xyxy": [
+        401,
+        1238,
+        533,
+        1370
+      ]
+    }
+  },
+  "independent_H_mapped_to_master": [
+    473.819418021834,
+    1306.6121086527282
+  ],
+  "independent_H_residual_px": 7.302573092422426,
+  "global_similarity": {
+    "scale": 0.9780819022951376,
+    "rotation_degrees": -0.37016349322325665,
+    "translation_xy": [
+      -14.154802718044948,
+      10.84487101614127
+    ],
+    "A_B_fit_residual_is_not_independent_evidence": true
+  },
+  "non_target_raw": {
+    "pixels": 378142,
+    "premultiplied_rgb_mae_255": 52.0252685546875,
+    "premultiplied_rgb_p99_abs_255": 252.00784301757812,
+    "alpha_mae_255": 39.9567985534668,
+    "alpha_IoU_gt128": 0.8438641704548835,
+    "source_opaque_pixels_lost": 16579,
+    "extra_opaque_pixels": 41158
+  },
+  "non_target_registered": {
+    "pixels": 350225,
+    "premultiplied_rgb_mae_255": 28.466659545898438,
+    "premultiplied_rgb_p99_abs_255": 237.971923828125,
+    "alpha_mae_255": 12.254298210144043,
+    "alpha_IoU_gt128": 0.9561566339609299,
+    "source_opaque_pixels_lost": 4119,
+    "extra_opaque_pixels": 10761
+  },
+  "protected_regions_registered": {
+    "left_hand_and_single_rod": {
+      "pixels": 23230,
+      "premultiplied_rgb_mae_255": 48.23176193237305,
+      "premultiplied_rgb_p99_abs_255": 249.16854858398438,
+      "alpha_mae_255": 33.72018814086914,
+      "alpha_IoU_gt128": 0.8601293001746024,
+      "source_opaque_pixels_lost": 401,
+      "extra_opaque_pixels": 2563
+    },
+    "right_supporting_palm": {
+      "pixels": 23475,
+      "premultiplied_rgb_mae_255": 30.638671875,
+      "premultiplied_rgb_p99_abs_255": 228.42250061035156,
+      "alpha_mae_255": 8.495920181274414,
+      "alpha_IoU_gt128": 0.970943979628956,
+      "source_opaque_pixels_lost": 129,
+      "extra_opaque_pixels": 510
+    },
+    "red_sandal": {
+      "pixels": 30460,
+      "premultiplied_rgb_mae_255": 22.591510772705078,
+      "premultiplied_rgb_p99_abs_255": 205.48789978027344,
+      "alpha_mae_255": 9.873376846313477,
+      "alpha_IoU_gt128": 0.9658442694663167,
+      "source_opaque_pixels_lost": 92,
+      "extra_opaque_pixels": 884
+    },
+    "knees_and_skirt": {
+      "pixels": 111037,
+      "premultiplied_rgb_mae_255": 21.56371307373047,
+      "premultiplied_rgb_p99_abs_255": 230.00682067871094,
+      "alpha_mae_255": 9.36972427368164,
+      "alpha_IoU_gt128": 0.9678106026950984,
+      "source_opaque_pixels_lost": 30,
+      "extra_opaque_pixels": 3448
+    }
+  },
+  "head_roi_registered_metrics_not_midpose_proof": {
+    "pixels": 223413,
+    "premultiplied_rgb_mae_255": 37.963165283203125,
+    "premultiplied_rgb_p99_abs_255": 245.46572875976562,
+    "alpha_mae_255": 43.43544006347656,
+    "alpha_IoU_gt128": 0.8271232413864305,
+    "source_opaque_pixels_lost": 22294,
+    "extra_opaque_pixels": 14545
+  },
+  "mandatory_visual_review": [
+    "The head, chin, ears, bangs, both pigtails and necessary neck form a real halfway pose between A and B, not identical A/B or moved pupils only.",
+    "Identity, gaze toward grandmother, collar-neck overlap, hair outline and ear connection are visually continuous; no double contours or enlarged skull.",
+    "Original supporting hand, fingers, single rod grip/axis, both arms, dress dots, knees, red sandal and ground contacts remain fixed.",
+    "Only the original head/neck alpha may change to reflect the changed silhouette; no opaque matte or cropped feet/rod/hair.",
+    "No phone in hand, no extra turtle, no background/lamp, no diagnostic labels.",
+    "After static acceptance Opus alone checks M F198 to B F201 in the existing camera. This preparation does not approve the film."
+  ],
+  "master_file": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/batch2_scope/refs/x29_look_a.png",
+  "master_sha256": "f20ba5137ad60169950c2d3019218cb9d9fe880985c1c0d3841d4f72895bfff7",
+  "candidate_file": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/batch2_scope/pilot_preparation/output/x29_midhead_one_call_original.png",
+  "candidate_sha256": "802a4409131c76ec95709e334861c5ae27bf67f35a582fcabf1c708cfd9340d9",
+  "frozen_config_sha256": "e138b8b909e55bd10b912c32c474d61afb5725c75dd0f4f5252fdb994cf6ac73",
+  "measurement_script_sha256": "fb800d0377fadfd39fb41bcbbcbcd4cac15b628e903e110254c6e8ea61f33841"
+}

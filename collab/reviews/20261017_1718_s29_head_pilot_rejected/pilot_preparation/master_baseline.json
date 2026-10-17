@@ -1,0 +1,185 @@
+{
+  "numeric_failures": [],
+  "candidate_to_master": [
+    [
+      0.9999977771167717,
+      -7.930478582544212e-06,
+      0.009380594111149776
+    ],
+    [
+      7.930478582544212e-06,
+      0.9999977771167717,
+      -0.0019735521379971033
+    ]
+  ],
+  "fit_points": [
+    "A",
+    "B"
+  ],
+  "independent_check_point": "H",
+  "acceptance": "manual_structure_and_midpose_review_required",
+  "automatic_visual_acceptance": false,
+  "candidate_mode": "RGBA",
+  "candidate_size": [
+    1024,
+    1536
+  ],
+  "matches": {
+    "A": {
+      "point": [
+        213.00047466034442,
+        1183.0029140337724
+      ],
+      "ncc": 0.9999999999999986,
+      "peak_margin": 0.32554927882194895,
+      "peak_on_search_boundary": false,
+      "fixed_template_xyxy": [
+        173,
+        1143,
+        253,
+        1223
+      ],
+      "fixed_search_window_xyxy": [
+        149,
+        1119,
+        277,
+        1247
+      ]
+    },
+    "B": {
+      "point": [
+        803.0026346922383,
+        1289.9984728729119
+      ],
+      "ncc": 0.9999999999999991,
+      "peak_margin": 0.5755873682772976,
+      "peak_on_search_boundary": false,
+      "fixed_template_xyxy": [
+        751,
+        1244,
+        855,
+        1322
+      ],
+      "fixed_search_window_xyxy": [
+        727,
+        1220,
+        879,
+        1346
+      ]
+    },
+    "H": {
+      "point": [
+        466.99750749785585,
+        1304.0002280430695
+      ],
+      "ncc": 1.0,
+      "peak_margin": 0.4834258752637388,
+      "peak_on_search_boundary": false,
+      "fixed_template_xyxy": [
+        425,
+        1262,
+        509,
+        1346
+      ],
+      "fixed_search_window_xyxy": [
+        401,
+        1238,
+        533,
+        1370
+      ]
+    }
+  },
+  "independent_H_mapped_to_master": [
+    466.99550866515983,
+    1303.9990593644263
+  ],
+  "independent_H_residual_px": 0.00458877804311334,
+  "global_similarity": {
+    "scale": 0.999997777148218,
+    "rotation_degrees": 0.00045438396233163803,
+    "translation_xy": [
+      0.009380594111149776,
+      -0.0019735521379971033
+    ],
+    "A_B_fit_residual_is_not_independent_evidence": true
+  },
+  "non_target_raw": {
+    "pixels": 331304,
+    "premultiplied_rgb_mae_255": 0.0,
+    "premultiplied_rgb_p99_abs_255": 0.0,
+    "alpha_mae_255": 0.0,
+    "alpha_IoU_gt128": 1.0,
+    "source_opaque_pixels_lost": 0,
+    "extra_opaque_pixels": 0
+  },
+  "non_target_registered": {
+    "pixels": 332832,
+    "premultiplied_rgb_mae_255": 0.018276073038578033,
+    "premultiplied_rgb_p99_abs_255": 0.35277605056762695,
+    "alpha_mae_255": 0.004739811643958092,
+    "alpha_IoU_gt128": 1.0,
+    "source_opaque_pixels_lost": 0,
+    "extra_opaque_pixels": 0
+  },
+  "protected_regions_registered": {
+    "left_hand_and_single_rod": {
+      "pixels": 19443,
+      "premultiplied_rgb_mae_255": 0.03134062513709068,
+      "premultiplied_rgb_p99_abs_255": 0.32137346267700195,
+      "alpha_mae_255": 0.010830508545041084,
+      "alpha_IoU_gt128": 1.0,
+      "source_opaque_pixels_lost": 0,
+      "extra_opaque_pixels": 0
+    },
+    "right_supporting_palm": {
+      "pixels": 21902,
+      "premultiplied_rgb_mae_255": 0.04175487533211708,
+      "premultiplied_rgb_p99_abs_255": 0.49514615535736084,
+      "alpha_mae_255": 0.00957753136754036,
+      "alpha_IoU_gt128": 1.0,
+      "source_opaque_pixels_lost": 0,
+      "extra_opaque_pixels": 0
+    },
+    "red_sandal": {
+      "pixels": 28511,
+      "premultiplied_rgb_mae_255": 0.047277867794036865,
+      "premultiplied_rgb_p99_abs_255": 0.5441316962242126,
+      "alpha_mae_255": 0.012714039534330368,
+      "alpha_IoU_gt128": 1.0,
+      "source_opaque_pixels_lost": 0,
+      "extra_opaque_pixels": 0
+    },
+    "knees_and_skirt": {
+      "pixels": 105661,
+      "premultiplied_rgb_mae_255": 0.012193597853183746,
+      "premultiplied_rgb_p99_abs_255": 0.2842435836791992,
+      "alpha_mae_255": 0.0035763727501034737,
+      "alpha_IoU_gt128": 1.0,
+      "source_opaque_pixels_lost": 0,
+      "extra_opaque_pixels": 0
+    }
+  },
+  "head_roi_registered_metrics_not_midpose_proof": {
+    "pixels": 205948,
+    "premultiplied_rgb_mae_255": 0.04599091783165932,
+    "premultiplied_rgb_p99_abs_255": 0.7310354709625244,
+    "alpha_mae_255": 0.027131523936986923,
+    "alpha_IoU_gt128": 1.0,
+    "source_opaque_pixels_lost": 0,
+    "extra_opaque_pixels": 0
+  },
+  "mandatory_visual_review": [
+    "The head, chin, ears, bangs, both pigtails and necessary neck form a real halfway pose between A and B, not identical A/B or moved pupils only.",
+    "Identity, gaze toward grandmother, collar-neck overlap, hair outline and ear connection are visually continuous; no double contours or enlarged skull.",
+    "Original supporting hand, fingers, single rod grip/axis, both arms, dress dots, knees, red sandal and ground contacts remain fixed.",
+    "Only the original head/neck alpha may change to reflect the changed silhouette; no opaque matte or cropped feet/rod/hair.",
+    "No phone in hand, no extra turtle, no background/lamp, no diagnostic labels.",
+    "After static acceptance Opus alone checks M F198 to B F201 in the existing camera. This preparation does not approve the film."
+  ],
+  "master_file": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/batch2_scope/refs/x29_look_a.png",
+  "master_sha256": "f20ba5137ad60169950c2d3019218cb9d9fe880985c1c0d3841d4f72895bfff7",
+  "candidate_file": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/batch2_scope/refs/x29_look_a.png",
+  "candidate_sha256": "f20ba5137ad60169950c2d3019218cb9d9fe880985c1c0d3841d4f72895bfff7",
+  "frozen_config_sha256": "01c1699a5c55a168fb46e1a40560461dbec6376815229fbecd4abb66b0cf6a41",
+  "measurement_script_sha256": "fb800d0377fadfd39fb41bcbbcbcd4cac15b628e903e110254c6e8ea61f33841"
+}

@@ -1,0 +1,32 @@
+{
+  "method": "Independent integer-grid Pearson NCC via scipy.signal.correlate, same pre-frozen rectangles and +/-24px; no fit or rescue. Alpha correctly composited on gray218.",
+  "fixed_config_sha256": "e138b8b909e55bd10b912c32c474d61afb5725c75dd0f4f5252fdb994cf6ac73",
+  "output_sha256": "802a4409131c76ec95709e334861c5ae27bf67f35a582fcabf1c708cfd9340d9",
+  "anchors": {
+    "A": {
+      "integer_peak": [
+        224,
+        1200
+      ],
+      "ncc": 0.8726118362530797,
+      "boundary": false
+    },
+    "B": {
+      "integer_peak": [
+        827,
+        1313
+      ],
+      "ncc": 0.2815517077553446,
+      "boundary": true
+    },
+    "H": {
+      "integer_peak": [
+        490,
+        1328
+      ],
+      "ncc": 0.8793895487669146,
+      "boundary": true
+    }
+  },
+  "judgment": "All NCC below0.90; B/H boundary, matching invalid. No meaningful precision assigned to fitted H. Visual head near B, fullbody drift confirmed. REJECTED."
+}
