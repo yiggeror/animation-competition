@@ -1,4 +1,5 @@
 // 给用户看的试片：只拼有画面的镜头（剪辑表里有 mod 的），每个镜头下方标"镜头号 · 剧本这一段"，声音按每个镜头在全片里的位置从母带里切。
+// 剧本里的 % 等字符原样显示（drawtext 关掉 expansion，否则"2%"会让整条字幕不显示）。
 // 用法：node tools/review_film.mjs [--src build/preview_shots] [--audio build/audio/film_mix_norm.wav] [--out build/film_review.mp4] [--only S01,S02]
 // 镜头视频先用 tools/film.mjs --preview（或 render_final.mjs）渲好；这里只做标注和拼接。
 import { SHOTS } from '../js/film/edl.js';
@@ -22,7 +23,7 @@ for (const s of SHOTS) {
   const txt = path.join(tmp, `${s.id}.txt`); fs.writeFileSync(txt, wrap(`${s.id}  ${s.text}`, 34));
   const o = path.join(tmp, `${s.id}.mp4`);
   // 画面下方一条半透明黑底，白字；声音取母带里这个镜头的那一段
-  const vf = `scale=960:540,drawbox=x=0:y=ih-92:w=iw:h=92:color=black@0.55:t=fill,drawtext=fontfile='${FONT}':textfile='${txt}':fontsize=22:fontcolor=white:line_spacing=6:x=24:y=h-82`;
+  const vf = `scale=960:540,drawbox=x=0:y=ih-92:w=iw:h=92:color=black@0.55:t=fill,drawtext=expansion=none:fontfile='${FONT}':textfile='${txt}':fontsize=22:fontcolor=white:line_spacing=6:x=24:y=h-82`;
   run(['-i', v, '-ss', String(start), '-t', String(s.dur), '-i', audio, '-map', '0:v', '-map', '1:a', '-vf', vf, '-r', '24', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '20', '-c:a', 'aac', '-b:a', '256k', '-ar', '48000', '-shortest', o]);
   list.push(o); console.log(`${s.id}：${s.dur} 秒`);
 }

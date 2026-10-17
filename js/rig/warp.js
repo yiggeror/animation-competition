@@ -60,7 +60,7 @@ export function bind(img, rig, o = {}) {
     const allowed = L.bones ? L.bones.map((n) => idx[n]) : bones.map((_, i) => i).filter((i) => !(rig.layers || []).some((l) => l.exclusive && l.bones.includes(bones[i].name)));
     const nx = Math.ceil(W / step) + 1, ny = Math.ceil(H / step) + 1, vid = new Int32Array(nx * ny).fill(-1);
     const nb = bones.length, rest = [], full = [], fixed = [], grid = [];
-    const inLayer = (p) => (L.poly ? inPoly(p, L.poly) : !(rig.layers || []).some((l) => inPoly(p, l.poly)));
+    const inLayer = (p) => (L.poly ? inPoly(p, L.poly) : !(rig.layers || []).some((l) => !l.keepUnder && inPoly(p, l.poly)));   // keepUnder 的层下面身体层的网格和像素都保留
     const used = (gx, gy) => {   // 这个格子里有不透明像素、并且属于这一层
       for (let yy = gy * step; yy <= (gy + 1) * step; yy += step / 2) for (let xx = gx * step; xx <= (gx + 1) * step; xx += step / 2) if (alphaAt(xx, yy) > 8 && inLayer([xx, yy])) return true;
       return false;
@@ -77,7 +77,7 @@ export function bind(img, rig, o = {}) {
           // pins：钉点附近（半径 r，默认 24 像素）的顶点整个绑在一根骨头上（默认 root），例如贴在竹席上的手肘、膝盖
           const pin = (rig.pins || []).map((q) => (Array.isArray(q) ? { at: q } : q)).find((q) => Math.hypot(p[0] - q.at[0], p[1] - q.at[1]) < (q.r ?? 24));
           const reg = pin ? { bones: [pin.bone || 'root'] } : (rig.regions || []).find((r) => inPoly(p, r.poly));
-          const cand = reg ? reg.bones.map((n) => idx[n]).filter((bi) => allowed.includes(bi)) : allowed;
+          const cand = pin ? [idx[pin.bone || 'root']] : reg ? reg.bones.map((n) => idx[n]).filter((bi) => allowed.includes(bi)) : allowed;   // 钉点优先，不受这一层允许的骨头限制
           const wv = new Float32Array(nb);
           for (const bi of cand.length ? cand : allowed) wv[bi] = 1 / Math.pow(segDist(p, bones[bi].head, bones[bi].tail) + 6, falloff);
           const sum = wv.reduce((a, b) => a + b, 0); for (let q = 0; q < nb; q++) wv[q] /= sum;
@@ -130,14 +130,17 @@ export function boneMatrices(B, pose) {
 // 某根骨头上一点（原图坐标）摆完姿势以后的位置——用来让签子、手机、火柴跟着手走
 export function posePoint(B, pose, bone, p) { return apply(boneMatrices(B, pose)[B.idx[bone]], p); }
 
-let GLC = null;
+// GL 上下文按尺寸各存一个（不同尺寸的角色交替渲染时不重建）；网格的 VAO 也按上下文各存一份（VAO 不能跨上下文用）
+const GLCS = new Map();
 function glCtx(W, H) {
-  if (GLC && GLC.W === W && GLC.H === H) return GLC;
+  const key = `${W}x${H}`;
+  if (GLCS.has(key)) return GLCS.get(key);
   const cv = new OffscreenCanvas(W, H), gl = cv.getContext('webgl2', { premultipliedAlpha: true, alpha: true });
   const sh = (t, s) => { const o = gl.createShader(t); gl.shaderSource(o, s); gl.compileShader(o); if (!gl.getShaderParameter(o, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(o)); return o; };
   const pr = gl.createProgram(); gl.attachShader(pr, sh(gl.VERTEX_SHADER, VS)); gl.attachShader(pr, sh(gl.FRAGMENT_SHADER, FS)); gl.linkProgram(pr);
-  GLC = { cv, gl, pr, W, H, tex: new Map() };
-  return GLC;
+  const G = { cv, gl, pr, W, H, tex: new Map(), key };
+  GLCS.set(key, G);
+  return G;
 }
 // 渲染：返回原图尺寸的画布
 export function render(B, pose) {
@@ -169,14 +172,17 @@ function drawLayer(G, L, texCanvas) {
     G.tex.set(texCanvas, t);
   }
   gl.bindTexture(gl.TEXTURE_2D, t);
-  L.vao ||= (() => {
+  L.vaos ||= new Map();
+  let vao = L.vaos.get(G.key);
+  if (!vao) vao = (() => {
     const vao = gl.createVertexArray(); gl.bindVertexArray(vao);
     const buf = (data, loc, n) => { const b = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, b); gl.bufferData(gl.ARRAY_BUFFER, data, gl.STATIC_DRAW); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, n, gl.FLOAT, false, 0, 0); };
     buf(L.rest, gl.getAttribLocation(G.pr, 'aRest'), 2); buf(L.w, gl.getAttribLocation(G.pr, 'aW'), 4); buf(L.i, gl.getAttribLocation(G.pr, 'aI'), 4);
     const e = gl.createBuffer(); gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, e); gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, L.tris, gl.STATIC_DRAW);
     return vao;
   })();
-  gl.bindVertexArray(L.vao);
+  L.vaos.set(G.key, vao);
+  gl.bindVertexArray(vao);
   gl.drawElements(gl.TRIANGLES, L.tris.length, gl.UNSIGNED_INT, 0);
 }
 // 眨眼：rig.eyes = [{ c:[x,y], rx, ry, rot?, skin, line? }]（原图像素）。k 0..1：半闭（上半个眼睛盖上皮肤色，中间一道眼皮线）→ 全闭（整个眼睛盖上，
