@@ -29,7 +29,8 @@ const shot = {
     exposure: 1.0, vignette: 0.3, grain: 5,
   }),
   glow: () => [],
-  cam: (t) => { const z = 1 + 0.06 * sstep(0, 6, t); return { x: 960 + 40 * sstep(0, 6, t), y: 520, fit: z }; },
+  // 镜头中心从 540 起、随推近上移到 520：原来一开始就在 520，背景画布只有 1080 高，开头顶上露出约 20 像素黑边
+  cam: (t) => { const k = sstep(0, 6, t), z = 1 + 0.06 * k; return { x: 960 + 40 * k, y: 540 - 20 * k, fit: z }; },
 };
 export async function renderFrame(ctx, t, W, H) { shot.bg = await bg(); return renderPaint(ctx, t, W, H, shot); }
 export async function render(ctx, arg, W, H) { return renderFrame(ctx, +arg || 0, W, H); }
