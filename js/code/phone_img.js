@@ -1,6 +1,6 @@
 // 手机特写（S02、S05）的新画法：用合作方画的 anim_02_hands_phone_a（俯拍、小满两只手横握手机、屏幕是绿幕）。
 // 绿幕抠掉，换成程序画的游戏画面（phone.js 的 drawGame / drawStatus）；右拇指（按起跳键）和左拇指（按方向键）各自切成一层，
-// 按键时绕指根转一点点（右拇指转 0.045 弧度，指尖往下约 6 像素），拇指在屏幕上的影子由程序补。底下是竹席。
+// 左拇指按方向键时绕指根转一点点；右拇指按起跳键时换成图 B 里落到屏幕上的拇指（key_thumb.py 抠的）。抬着的拇指在屏幕上的影子由程序补。底下是竹席。
 // 坐标都是这张图的像素（1672×940），镜头 cam = { x, y, zoom }：画面中心对着图上 (x, y)，zoom 1 = 整张图铺满画面宽。
 import { mat, setScreen, drawGame, drawStatus, lit } from './phone.js';
 const IW = 1672, IH = 940;
@@ -10,7 +10,11 @@ const THUMB_R = { poly: [[1190, 326], [1342, 326], [1342, 530], [1296, 530], [11
 const THUMB_L = { poly: [[326, 396], [472, 396], [472, 500], [400, 540], [326, 566]], pivot: [312, 528] };
 setScreen(SCR.w, SCR.h, [128, 286], [886, 214]);                   // 方向键、起跳键在两个拇指下面
 let IMG = null;
-async function img() { if (IMG) return IMG; const r = await fetch('/assets/chars/h02_phone.png'); return (IMG = await createImageBitmap(await r.blob())); }
+const bmp = async (f) => createImageBitmap(await (await fetch(`/assets/chars/${f}.png`)).blob());
+async function img() { return (IMG ||= await bmp('h02_phone')); }
+// 按下去的右拇指：合作方的图 B（同一张手，只有右拇指落到屏幕上），tools/key_thumb.py 抠出拇指和贴着的接触影
+let THB = null;
+async function thumbB() { return (THB ||= { skin: await bmp('h02_thumb_b'), shadow: await bmp('h02_thumb_b_shadow'), region: await bmp('h02_thumb_b_region') }); }
 
 // 一层：整张手图（去掉两个拇指） / 只有一个拇指
 function layer(im, keep, cut) {
@@ -25,13 +29,18 @@ let LAYERS = null;
 async function layers() {
   if (LAYERS) return LAYERS;
   const im = await img();
-  return (LAYERS = { base: layer(im, null, [THUMB_R.poly, THUMB_L.poly]), tr: layer(im, THUMB_R.poly), tl: layer(im, THUMB_L.poly) });
+  const base = layer(im, null, [THUMB_R.poly, THUMB_L.poly]);
+  // 按下时用的底图：再挖掉右手那一块（换成图 B 的右手）；遮罩图的亮度当透明度用
+  const TB = await thumbB(), rm = new OffscreenCanvas(IW, IH), rx = rm.getContext('2d');
+  rx.drawImage(TB.region, 0, 0); const id = rx.getImageData(0, 0, IW, IH), D = id.data; for (let i = 0; i < D.length; i += 4) D[i + 3] = D[i]; rx.putImageData(id, 0, 0);
+  const baseB = new OffscreenCanvas(IW, IH), bx = baseB.getContext('2d'); bx.drawImage(base, 0, 0); bx.globalCompositeOperation = 'destination-out'; bx.drawImage(rm, 0, 0);
+  return (LAYERS = { base, baseB, tr: layer(im, THUMB_R.poly), tl: layer(im, THUMB_L.poly) });
 }
 const rotAbout = (x, p, a) => { x.translate(p[0], p[1]); x.rotate(a); x.translate(-p[0], -p[1]); };
 
 // st = { t, light: 'fluor'|'dark', screenOn 0..1, cam, phone:{dx,dy,rot}, game, status, press（右拇指 0..1）, dpad（左拇指 -1..1） }
 export async function renderPhoneImg(ctx, W, H, st) {
-  const L = await layers();
+  const L = await layers(), TB = await thumbB();
   const dark = st.light === 'dark', scr = st.screenOn;
   ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.fillStyle = '#000'; ctx.fillRect(0, 0, W, H);
   const k = (W / IW) * st.cam.zoom;
@@ -69,19 +78,22 @@ export async function renderPhoneImg(ctx, W, H, st) {
   gl.addColorStop(0, 'rgba(255,255,255,0)'); gl.addColorStop(0.5, `rgba(220,235,255,${ga})`); gl.addColorStop(1, 'rgba(255,255,255,0)'); ctx.fillStyle = gl; ctx.fillRect(0, 0, SCR.w, SCR.h);
   ctx.restore();
   // 拇指在屏幕上的影子（日光灯在头顶，抬起时影子离得远一点、虚一点）
-  const pr = st.press ?? 0, dp = st.dpad ?? 0;
-  const aR = -0.045 * pr, aL = 0.03 * dp;
+  // 右拇指：抬着时用 A 的拇指（往下按的半程跟着转一点），按到底（press ≥ 0.5）换成 B 的拇指和它的接触影
+  const pr = st.press ?? 0, dp = st.dpad ?? 0, down = pr >= 0.5;
+  const aR = -0.09 * Math.min(1, pr * 2), aL = 0.03 * dp;
   if (!dark) {
     ctx.save(); ctx.clip(mask); ctx.filter = `blur(${12 - 6 * pr}px)`; ctx.globalAlpha = 0.3;
-    ctx.save(); ctx.translate(-10 + 6 * pr, 16 - 9 * pr); rotAbout(ctx, THUMB_R.pivot, aR); ctx.drawImage(L.tr, 0, 0); ctx.restore();
+    if (!down) { ctx.save(); ctx.translate(-10 + 6 * pr, 16 - 9 * pr); rotAbout(ctx, THUMB_R.pivot, aR); ctx.drawImage(L.tr, 0, 0); ctx.restore(); }
     ctx.save(); ctx.translate(10, 16); rotAbout(ctx, THUMB_L.pivot, aL); ctx.drawImage(L.tl, 0, 0); ctx.restore();
     ctx.restore();
   }
+  if (down) { ctx.save(); ctx.clip(mask); ctx.globalAlpha = dark ? 0.2 : 1; ctx.drawImage(TB.shadow, 0, 0); ctx.restore(); }   // 停电时光是屏幕自己发的，只剩一点贴着的接触暗
   // 手（三层），按光照压色：日光灯下原色；停电时只有屏幕的冷光，手成了暗剪影
   const hands = new OffscreenCanvas(IW, IH), hx = hands.getContext('2d');
-  hx.drawImage(L.base, 0, 0);
+  hx.drawImage(down ? L.baseB : L.base, 0, 0);
   hx.save(); rotAbout(hx, THUMB_L.pivot, aL); hx.drawImage(L.tl, 0, 0); hx.restore();
-  hx.save(); rotAbout(hx, THUMB_R.pivot, aR); hx.drawImage(L.tr, 0, 0); hx.restore();
+  if (down) hx.drawImage(TB.skin, 0, 0);
+  else { hx.save(); rotAbout(hx, THUMB_R.pivot, aR); hx.drawImage(L.tr, 0, 0); hx.restore(); }
   if (dark) {
     const m = new OffscreenCanvas(IW, IH); m.getContext('2d').drawImage(hands, 0, 0);   // 三层合起来的轮廓（压色后用它把透明处还原）
     const kk = [0.1 + 0.16 * scr, 0.11 + 0.2 * scr, 0.16 + 0.3 * scr].map((v) => Math.round(255 * Math.pow(v, 1 / 2.2)));
