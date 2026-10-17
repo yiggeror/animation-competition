@@ -60,6 +60,7 @@ function grips(t, cam) {
 const shot = {
   cam: CAM20,
   exp: 0.26,
+  fog: 0.5,                                            // 后台的雾减半：人离镜头近，雾太浓会发灰发闷
   sheet: (t, env) => {
     TURTLE ||= makeTurtle();
     const T = turtleState(t), C = craneState(t);

@@ -217,7 +217,7 @@ export async function renderShot(ctx, t, W, H, shot) {
   gl.draw('scene', tScene, U, { uSheet: gl.texs.sheet, uSheet2: img2 ? gl.texs.sheet2 : gl.texs.sheet, uQuiltL: gl.texs.qL, uQuiltR: gl.texs.qR, uAlb: gl.texs.alb, uNrm: gl.texs.nrm, uMat: gl.texs.mat });
   const fw = Math.round(W / 4), fh = Math.round(H / 4);
   const tFog = gl.target('fog', fw, fh);
-  gl.draw('fog', tFog, { ...U, uSigma: 0.16 * (DEBUG.fog ?? 1) }, { uScene: tScene });
+  gl.draw('fog', tFog, { ...U, uSigma: 0.16 * (DEBUG.fog ?? shot.fog ?? 1) }, { uScene: tScene });
   const tComb = gl.target('comb', W, H);
   gl.draw('combine', tComb, { uFogRes: [fw, fh], uExt: 0.03 }, { uScene: tScene, uFog: tFog, uDust: gl.texs.dust });
   // 泛光

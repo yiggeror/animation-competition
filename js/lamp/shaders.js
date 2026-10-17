@@ -122,7 +122,7 @@ vec3 lampEcard(vec3 P, vec3 N) {
   vec3 d = uLamp - P; float r2 = dot(d, d); vec3 l = d * inversesqrt(r2);
   vec3 cn = -uFwd; float k = 1.0;
   if (dot(l, cn) < 0.0) { l = normalize(l - 2.0 * dot(l, cn) * cn); k = 0.85; }
-  float c = max(0.0, dot(N, l));
+  float c = max(0.0, (dot(N, l) + 0.5) / 1.5);   // 包裹一点：后台马灯离人很近，纯朗伯的明暗太硬，画上已有的明暗会被叠出一块一块
   return LAMP_RGB * uLampI * k * c / r2 * beamsVis(P, uLamp);
 }
 // ---------------- 床单这块面光源对 P 的照度（只照看戏的这边）

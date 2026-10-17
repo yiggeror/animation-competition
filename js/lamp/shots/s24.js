@@ -14,6 +14,7 @@ let MAP = null;
 const shot = {
   cam: CAM,
   exp: 0.22,
+  fog: 0.5,
   sheet: (t, env) => sheet23(3.4 + 0.1 * t, env),
   cards: async (CARDS, cam, t) => {
     MAP ||= await loadMaps(SM.file);
