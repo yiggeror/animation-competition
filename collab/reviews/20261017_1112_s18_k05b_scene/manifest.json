@@ -1,0 +1,272 @@
+{
+  "label": "k05b单张接入候选非已采用",
+  "base_head": "b13f6ca500ae4ecba77ff457341c630016268d2d",
+  "implementation_reference": "25c6350",
+  "runtime_override_only": "flip.frames[4] file/anchors and virtual candidate albedo/normal/material; original timeline unchanged",
+  "timeline": [
+    [
+      0,
+      0
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      9,
+      2
+    ],
+    [
+      15,
+      3
+    ],
+    [
+      18,
+      4
+    ],
+    [
+      21,
+      5
+    ],
+    [
+      24,
+      6
+    ],
+    [
+      27,
+      7
+    ],
+    [
+      30,
+      8
+    ],
+    [
+      33,
+      7
+    ],
+    [
+      36,
+      8
+    ],
+    [
+      39,
+      7
+    ],
+    [
+      42,
+      8
+    ],
+    [
+      45,
+      9
+    ],
+    [
+      54,
+      10
+    ],
+    [
+      63,
+      8
+    ],
+    [
+      66,
+      6
+    ]
+  ],
+  "render_manifest_sha256": "8ff27f8b97ca416e9208789f97caaa7c676c17049e39db23f67bae078582befa",
+  "override_sha256": "3c7be368273a8b1986315d659476ec29992abc5867597ccb5c4a5932b69b1c32",
+  "rendered_frames": 72,
+  "fps": 24,
+  "video_duration_seconds": 3,
+  "container_duration_seconds": 3.021333,
+  "baseline_path": "/workspace/animation-competition/collab/reviews/20261017_1045_s18_full_opus/S18_flipbook_review.mp4",
+  "baseline_sha256": "a398c4b1e7aae80757db38d35ad68a960d9e59469a410ba06299b7da2d360390",
+  "mp4": "/tmp/laidian-s18-k05b-candidate/S18_k05b单张接入候选非已采用.mp4",
+  "mp4_sha256": "09c34d1b1a99ac14e518f9ecc29425b60ba5dc808545a5a8a050bc748e80a182",
+  "audio": {
+    "mode": "bit-for-bit AAC packet copy from audited baseline, no re-encode",
+    "packet_count": 142,
+    "packet_pts_dts_duration_size_hash_all_equal": true,
+    "decoded_f32le_sha256": "5a55950fcd04b894f04a7ab40946c0b3070c9337467c8cac7010c3565ee29b87",
+    "decoded_pcm_bytes": 1163264,
+    "decoded_pcm_equal_to_baseline": true,
+    "container_audio_start_pts": 0,
+    "time_base": "1/48000",
+    "existing_verified_mother_segment_seconds": [
+      115,
+      118
+    ],
+    "mother_content_start_sample": 1024,
+    "mother_content_start_seconds": 0.021333333333333333
+  },
+  "timing": {
+    "video_start_pts": 258,
+    "video_time_base": "1/12288",
+    "video_start_seconds": 0.02099609375,
+    "F15_pts_seconds": 0.64599609375,
+    "audio_event_seconds": 0.6213333333333333,
+    "F15_minus_event_ms": 24.662760416666707
+  },
+  "subtitle_text": "S18  近景：小满\"噗\"地笑出声，捂住嘴",
+  "subtitle_filter": "scale=960:540,drawbox=x=0:y=ih-92:w=iw:h=92:color=black@0.55:t=fill,drawtext=expansion=none:fontfile='/workspace/animation-competition/assets/fonts/NotoSansSC-VF.ttf':textfile='/tmp/laidian-s18-k05b-candidate/subtitle.txt':fontsize=22:fontcolor=white:line_spacing=6:x=24:y=h-82",
+  "f0_decoded_comparison": {
+    "mean_abs_rgb": 0.6243621399176955,
+    "p99_abs_rgb": 5.0,
+    "max_abs_rgb": 60.0,
+    "pixels_max_channel_diff_over_20": 367,
+    "exact_decoded_pixels_equal": false
+  },
+  "encode_command": [
+    "ffmpeg",
+    "-y",
+    "-loglevel",
+    "error",
+    "-framerate",
+    "24",
+    "-i",
+    "/tmp/laidian-s18-k05b-candidate/frames/f%04d.png",
+    "-frames:v",
+    "72",
+    "-vf",
+    "scale=960:540,drawbox=x=0:y=ih-92:w=iw:h=92:color=black@0.55:t=fill,drawtext=expansion=none:fontfile='/workspace/animation-competition/assets/fonts/NotoSansSC-VF.ttf':textfile='/tmp/laidian-s18-k05b-candidate/subtitle.txt':fontsize=22:fontcolor=white:line_spacing=6:x=24:y=h-82",
+    "-r",
+    "24",
+    "-c:v",
+    "libx264",
+    "-pix_fmt",
+    "yuv420p",
+    "-crf",
+    "20",
+    "-video_track_timescale",
+    "12288",
+    "/tmp/laidian-s18-k05b-candidate/S18_k05b_subtitled_silent.mp4"
+  ],
+  "mux_command": [
+    "ffmpeg",
+    "-y",
+    "-loglevel",
+    "error",
+    "-copyts",
+    "-itsoffset",
+    "0.02099609375",
+    "-i",
+    "/tmp/laidian-s18-k05b-candidate/S18_k05b_subtitled_silent.mp4",
+    "-i",
+    "/workspace/animation-competition/collab/reviews/20261017_1045_s18_full_opus/S18_flipbook_review.mp4",
+    "-map",
+    "0:v:0",
+    "-map",
+    "1:a:0",
+    "-c",
+    "copy",
+    "-avoid_negative_ts",
+    "disabled",
+    "-video_track_timescale",
+    "12288",
+    "-movie_timescale",
+    "1536000",
+    "-movflags",
+    "+faststart",
+    "-metadata",
+    "title=k05b单张接入候选非已采用",
+    "/tmp/laidian-s18-k05b-candidate/S18_k05b单张接入候选非已采用.mp4"
+  ],
+  "limitations": [
+    "Only one new F18-20 hand pose; original Opus timing retained. Static/sequence naturalness requires review.",
+    "Not adopted, not motion approval."
+  ],
+  "files": {
+    "README.md": {
+      "sha256": "f6b90d9376e1c7a94c11578574b37bc32f4b7c82b9ec0b14dde851bba827c5ca",
+      "bytes": 648
+    },
+    "S18_k05b_subtitled_silent.mp4": {
+      "sha256": "ab8c24abc495d1a818efeb12ca2ed87d6852ed314a04872d96973e491a1eec1c",
+      "bytes": 199069
+    },
+    "S18_k05b单张接入候选非已采用.mp4": {
+      "sha256": "09c34d1b1a99ac14e518f9ecc29425b60ba5dc808545a5a8a050bc748e80a182",
+      "bytes": 295898
+    },
+    "anchors.json": {
+      "sha256": "dba3c29046b00c0466f7534c5b7ffc505d36aa3f5c661e9b639b9c2cc5c01902",
+      "bytes": 246
+    },
+    "baseline_decoded_f0000.png": {
+      "sha256": "69e26d47ecb2d42e52be5333b2545f2f6a2400652e6206de6057073bb27817d2",
+      "bytes": 134468
+    },
+    "candidate_decoded_f0000.png": {
+      "sha256": "0ae546ede6a48bb9de5dbbd5575f3f5e9dde4850d54f43e1c78830f425a9c075",
+      "bytes": 154075
+    },
+    "candidate_registration.json": {
+      "sha256": "14d46fdb251821a1e366d644529eeec97d350f62419bafcda2bf3ceb6829074a",
+      "bytes": 907
+    },
+    "comparison_contact_sheet.jpg": {
+      "sha256": "8ebe428b0ba17c0d978b5d37b72ad8856bc05d3a125e17553b7f0049dc55ae30",
+      "bytes": 87710
+    },
+    "finalize.py": {
+      "sha256": "01f430221701876ccf2221fa67d712a2813e734584d9d9edff2e34af4a2524a5",
+      "bytes": 7068
+    },
+    "key_render_manifest.json": {
+      "sha256": "c0c7dc0639f209af109646a31bc7d786449e7f71c2c1f8f52eb31cfdd9c103de",
+      "bytes": 11220
+    },
+    "key_subtitled_f0015.png": {
+      "sha256": "2990f78be4b60fa2d584ca54eaf8502c8221e413f55dd0750076284f77bb6f31",
+      "bytes": 721107
+    },
+    "key_subtitled_f0018.png": {
+      "sha256": "80054e1b1546e0726efd4f347e5e86fb65879d32a5a54ffa330161600eb47032",
+      "bytes": 720380
+    },
+    "key_subtitled_f0021.png": {
+      "sha256": "365de36c92849eac90602b437490533721700d569691aefdae8cf8b7a5765456",
+      "bytes": 722609
+    },
+    "key_subtitled_f0024.png": {
+      "sha256": "b5df7ff451c2691d469e23f11f9918874dcf24818a15ad17d7398582d8dc8450",
+      "bytes": 723745
+    },
+    "keys_F15_F18_F21_F24.jpg": {
+      "sha256": "33d4f843352a99a30ea535764ac259716a3ba65c65260322a06095d6b956f0b5",
+      "bytes": 209787
+    },
+    "prep.py": {
+      "sha256": "57f3d7a9e2c2f9f994896042663603dc6004f3b999220659db9b531d06177d1a",
+      "bytes": 2308
+    },
+    "prep_manifest.json": {
+      "sha256": "ada8e87bdd290200b8153335c23398e466cca9354660c6f46d3c2fa4d8a789ba",
+      "bytes": 3178
+    },
+    "render_candidate.cjs": {
+      "sha256": "0c04ff5f0af37d79237ba1114d3cb86b9b3b224f1999df04e30165ba75b9c4ad",
+      "bytes": 6044
+    },
+    "render_manifest.json": {
+      "sha256": "8ff27f8b97ca416e9208789f97caaa7c676c17049e39db23f67bae078582befa",
+      "bytes": 63983
+    },
+    "subtitle.txt": {
+      "sha256": "f1b58ef1599159aa19dca0415483204a09ec19ef1c058dbcaef55b936b1ef43e",
+      "bytes": 49
+    },
+    "x18_laugh.http_override.flip.json": {
+      "sha256": "3c7be368273a8b1986315d659476ec29992abc5867597ccb5c4a5932b69b1c32",
+      "bytes": 3102
+    },
+    "x18_laugh.k05b.flip.json": {
+      "sha256": "0de002201bff84853704ad9dd42e3bcdc4a176a7eba3021b50b6f4a4f3ca1e4f",
+      "bytes": 3104
+    },
+    "x18_laugh.original.flip.json": {
+      "sha256": "f8e4db8ddf550a71f3857b9c134a9205035ce6f6b5fe52cdc96ddf079c1a2263",
+      "bytes": 2348
+    }
+  }
+}

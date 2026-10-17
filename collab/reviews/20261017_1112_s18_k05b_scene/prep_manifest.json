@@ -1,0 +1,115 @@
+{
+  "source": "/tmp/laidian-s18-k05b-generation/x18_k05b.png",
+  "source_sha256": "5573e3eb196ff8fa1ab07cd13c1e02318b400e51f6d34b714ad4b4a447934d2f",
+  "source_size": [
+    922,
+    1705
+  ],
+  "alpha_method": "same current prep_flip rule: clip((A-6)/241,0,1)*255, rounded uint8; preserve RGB and full canvas",
+  "alpha_check": {
+    "original_lt32_to_gt128_pixels": 0,
+    "original_gt200_to_lt64_pixels": 0
+  },
+  "commands": [
+    [
+      "python3",
+      "-I",
+      "/workspace/animation-competition/tools/card_maps.py",
+      "/tmp/laidian-s18-k05b-candidate/assets/chars/x18_k05b.png",
+      "/tmp/laidian-s18-k05b-candidate/assets/chars/x18_k05b_n.png",
+      "/tmp/laidian-s18-k05b-candidate/assets/chars/x18_k05b_m.png"
+    ],
+    [
+      "python3",
+      "-I",
+      "/workspace/animation-competition/tools/card_soft.py",
+      "/tmp/laidian-s18-k05b-candidate/assets/chars/x18_k05b.png",
+      "/tmp/laidian-s18-k05b-candidate/assets/chars/x18_k05b_n.png"
+    ],
+    [
+      "python3",
+      "-I",
+      "/workspace/animation-competition/tools/flip_anchors.py",
+      "/workspace/animation-competition/assets/chars/x18_laugh.png",
+      "22,1142;312,1142",
+      "22,899",
+      "/tmp/laidian-s18-k05b-generation/x18_k05b.png"
+    ]
+  ],
+  "tools": {
+    "/workspace/animation-competition/tools/prep_flip.py": "a601697bc149f3314200e90705451229b90e16fa3d28aad3bea37031620f3fe2",
+    "/workspace/animation-competition/tools/card_maps.py": "a003eae6f9cc93f86da7c965febad9df923239db027b93a89fd89fc0d4aeed07",
+    "/workspace/animation-competition/tools/card_soft.py": "24cf925efccac7e5b65454377145647fb6d14021eb3a03599c9a92e7f5188563",
+    "/workspace/animation-competition/tools/flip_anchors.py": "b973f5910d08f42a1b1cff942fab91718d1efdfbe07a09f472ffe458e88fe062"
+  },
+  "anchors": [
+    {
+      "file": "x18_k05b",
+      "anchors": [
+        [
+          31.15,
+          1636.42
+        ],
+        [
+          458.79,
+          1636.91
+        ]
+      ],
+      "score": [
+        0.658,
+        0.604,
+        0.793
+      ],
+      "check_residual_px": 1.38
+    }
+  ],
+  "old_slot4": {
+    "file": "x18_k05",
+    "anchors": [
+      [
+        31.19,
+        1634.8
+      ],
+      [
+        457.1,
+        1635.19
+      ]
+    ]
+  },
+  "new_slot4": {
+    "file": "x18_k05b",
+    "anchors": [
+      [
+        31.15,
+        1636.42
+      ],
+      [
+        458.79,
+        1636.91
+      ]
+    ]
+  },
+  "timeline_unchanged": true,
+  "files": {
+    "assets/chars/x18_k05b.png": {
+      "sha256": "8ce21c4db9611f9857862d40e0a91fb746b0855f6acb8cd64f4eb5ad61c913b8",
+      "bytes": 968451
+    },
+    "assets/chars/x18_k05b_n.png": {
+      "sha256": "4aa6b392c70502a3c8373b0c80693726ea56f42a87048733828801ee1855f4e9",
+      "bytes": 231941
+    },
+    "assets/chars/x18_k05b_m.png": {
+      "sha256": "f1b67adde400e4bb47c240eb3a66b18520d55dffe76badee7f98f19bf3befc32",
+      "bytes": 106532
+    },
+    "anchors.json": {
+      "sha256": "dba3c29046b00c0466f7534c5b7ffc505d36aa3f5c661e9b639b9c2cc5c01902",
+      "bytes": 246
+    },
+    "x18_laugh.k05b.flip.json": {
+      "sha256": "0de002201bff84853704ad9dd42e3bcdc4a176a7eba3021b50b6f4a4f3ca1e4f",
+      "bytes": 3104
+    }
+  }
+}
