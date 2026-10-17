@@ -239,6 +239,7 @@ sfx(glass_clink(0.6), T('S08', 3.4), 0.4, 0.05)            # 放下灯罩
 sfx(flashlight_click(), T('S09', 1.6), 0.4, -0.3)
 sfx(flashlight_slap(), T('S09', 2.1), 0.45, -0.3); sfx(flashlight_slap(0.9), T('S09', 2.5), 0.5, -0.3)
 sfx(flashlight_click(0.8), T('S09', 2.9), 0.45, -0.3)
+sfx(flashlight_click(0.7), T('S31', 0.6), 0.35, -0.2)          # js/paint/shots/s31.js：小满在下巴底下推亮手电
 # js/code/s12.js：0～0.9 箱盖开到底，1.5 手伸进来碰到布，2.4～4.0 握住签子把鹤立起来
 # js/paint/shots/s12.js：开镜时箱盖已经开着（奶奶两只手都握着签子），没有开盖声
 sfx(rustle(1.0, 23, 800, 5000), T('S12', 1.5), 0.3, 0.1)
