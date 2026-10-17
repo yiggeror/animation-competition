@@ -3,6 +3,8 @@
 //   小满跪在电视柜前举着推亮的手电（S09 刚推亮），光柱从后墙扫过门、墙上的鹤画，停在坐在凳子上剥豆的奶奶身上（anim_01_grandma_beans）。
 // 3～5 秒：切到奶奶脸部特写（anim_10_grandma_squint），手电的冷白光从左边打在脸上，她眯着眼往后一缩。
 import { renderPaint, loadImg } from '../paintshot.js';
+import { loadRig, render as warp } from '../../rig/warp.js';
+import { grandmaBeans } from '../../rig/acts.js';
 import { lamp as drawLamp, LX, LB } from '../../code/s08.js';
 export const DURATION = 5;
 const T_CUT = 3.0;
@@ -33,7 +35,7 @@ const wide = {
   layers: async (t) => {
     const lit = sstep(0.15, 0.25, t);
     return [
-      { img: '/assets/chars/g01_beans.png', x: GM.x, y: GM.y, sc: GM.sc, ox: 304, oy: 1348, flip: false },
+      { img: warp(await loadRig('g01_beans'), grandmaBeans(t, { stop: 2.5, up: 2.55, blinks: [0.7, 2.6] })), x: GM.x, y: GM.y, sc: GM.sc, ox: 304, oy: 1348 },   // 奶奶：剥着豆，光柱照到脸上时停手抬头
       { img: '/assets/chars/x09_flashlight.png', x: XM.x, y: XM.y, sc: XM.sc },
       { img: lampImg(), x: LAMP.x, y: LAMP.y, sc: LAMP.s, ox: 350, oy: 980 },
     ].map((L) => ({ ...L, alpha: 1 + 0 * lit }));
