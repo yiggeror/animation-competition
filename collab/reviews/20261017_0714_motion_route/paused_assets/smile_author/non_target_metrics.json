@@ -1,0 +1,83 @@
+{
+  "target_exclusion_xyxy": [
+    150,
+    475,
+    575,
+    890
+  ],
+  "non_target_rgb_mae": 2.322799057732165,
+  "non_target_max_channel_diff_gt8_fraction": 0.056896975199947866,
+  "non_target_max_channel_diff_gt32_fraction": 0.013607697590170779,
+  "anchors": {
+    "ear": {
+      "box": [
+        555,
+        520,
+        680,
+        710
+      ],
+      "raw_rgb_mae": 5.54119298245614,
+      "best_B_sampling_dxdy": [
+        0,
+        0
+      ],
+      "best_mae": 5.54119298245614
+    },
+    "bun": {
+      "box": [
+        705,
+        500,
+        950,
+        750
+      ],
+      "raw_rgb_mae": 4.904255782312926,
+      "best_B_sampling_dxdy": [
+        0,
+        0
+      ],
+      "best_mae": 4.904255782312926
+    },
+    "three_beads": {
+      "box": [
+        775,
+        400,
+        870,
+        530
+      ],
+      "raw_rgb_mae": 6.360971659919028,
+      "best_B_sampling_dxdy": [
+        0,
+        0
+      ],
+      "best_mae": 6.360971659919028
+    },
+    "neck_and_collar_tip": {
+      "box": [
+        455,
+        850,
+        655,
+        1100
+      ],
+      "raw_rgb_mae": 3.77768,
+      "best_B_sampling_dxdy": [
+        0,
+        0
+      ],
+      "best_mae": 3.77768
+    },
+    "collar_outer": {
+      "box": [
+        375,
+        950,
+        790,
+        1100
+      ],
+      "raw_rgb_mae": 3.453253012048193,
+      "best_B_sampling_dxdy": [
+        0,
+        0
+      ],
+      "best_mae": 3.453253012048193
+    }
+  }
+}

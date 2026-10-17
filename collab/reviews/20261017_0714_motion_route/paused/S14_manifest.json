@@ -1,0 +1,163 @@
+{
+  "status": "PAUSED by root at user direction; no further static-image performance extension",
+  "worktree": "/workspace/animation-competition-astra",
+  "head": "ec727fb4b4e66e6536323b9eb3f60e7520ff2707",
+  "owned_files": [
+    {
+      "path": "js/paint/shots/s14.js",
+      "sha256": "5e8d6695a33a4354e3e5db51da3d3f820cebc7d9ad13b23f519cae0fb59761b3",
+      "saved": "/tmp/laidian-integration-s14/paused_snapshot/files/js/paint/shots/s14.js"
+    },
+    {
+      "path": "tools/cutout_s14.py",
+      "sha256": "008d1212830383509848254be2033a50a370e4200b133c493a35c9936679feeb",
+      "saved": "/tmp/laidian-integration-s14/paused_snapshot/files/tools/cutout_s14.py"
+    },
+    {
+      "path": "assets/chars/g14_body.png",
+      "sha256": "ddc24e05c41dbb0cfcd4582614b00d2b5a6f3222841a9a392404704c2c1b1050",
+      "saved": "/tmp/laidian-integration-s14/paused_snapshot/files/assets/chars/g14_body.png"
+    },
+    {
+      "path": "assets/chars/g14_contact_cloth.png",
+      "sha256": "0c65a56166a5ab3196facd4360b5f2fc7d2df368baa71086acd5c5426a4ebfec",
+      "saved": "/tmp/laidian-integration-s14/paused_snapshot/files/assets/chars/g14_contact_cloth.png"
+    },
+    {
+      "path": "assets/chars/g14_hang_sheet.png",
+      "sha256": "e49ff7b8098c06cff89c473d63d4068a86901767022f75a1c1d6eb4bc6c04852",
+      "saved": "/tmp/laidian-integration-s14/paused_snapshot/files/assets/chars/g14_hang_sheet.png"
+    },
+    {
+      "path": "assets/chars/g14_press_arm.png",
+      "sha256": "bf9d01efa820ee16214d692422aeb03b84e4f3dbd967effc675a1f0049dc6c70",
+      "saved": "/tmp/laidian-integration-s14/paused_snapshot/files/assets/chars/g14_press_arm.png"
+    },
+    {
+      "path": "collab/refs/anim_14_grandma_hang_sheet.png",
+      "sha256": "8f63518a0d0b8de74dadfcb13158ce6194ea2e9732961d390e032a35d1c0a0ef",
+      "saved": "/tmp/laidian-integration-s14/paused_snapshot/files/collab/refs/anim_14_grandma_hang_sheet.png"
+    }
+  ],
+  "contact_clip": {
+    "path": "/tmp/laidian-integration-s14/contact_v4/s14_contact_2p5_to_3p75_24fps_silent.mp4",
+    "sha256": "a3dbb7cc4ab372177552ac59a8ed0405f8aa231dad02dcdf318cba141c3e145d",
+    "ffprobe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 960,
+          "height": 540,
+          "coded_width": 960,
+          "coded_height": 540,
+          "closed_captions": 0,
+          "film_grain": 0,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 31,
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "24/1",
+          "time_base": "1/12288",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 15360,
+          "duration": "1.250000",
+          "bit_rate": "6951833",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "30",
+          "extradata_size": 46,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc61.19.101 libx264"
+          }
+        }
+      ],
+      "format": {
+        "filename": "/tmp/laidian-integration-s14/contact_v4/s14_contact_2p5_to_3p75_24fps_silent.mp4",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "1.250000",
+        "size": "1087418",
+        "bit_rate": "6959475",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf61.7.103"
+        }
+      }
+    }
+  },
+  "render_inputs_before": {
+    "js/paint/shots/s14.js": "5e8d6695a33a4354e3e5db51da3d3f820cebc7d9ad13b23f519cae0fb59761b3",
+    "tools/cutout_s14.py": "008d1212830383509848254be2033a50a370e4200b133c493a35c9936679feeb",
+    "js/paint/paintshot.js": "7404b28b72decbcc34047ea69e81c3927ac9cf626648910e6a1603f0d619c5fe",
+    "assets/paint/bg_01_room_wide.png": "3bc55f3b9d238b4242eddbd06a0c3f81a394673fa19c4f33ef263ba65d4e01ed",
+    "collab/refs/anim_14_grandma_hang_sheet.png": "8f63518a0d0b8de74dadfcb13158ce6194ea2e9732961d390e032a35d1c0a0ef",
+    "assets/chars/x16_arms_crossed.png": "2f9305ad4a47ed1c5e53f6a886134fe23facc4e3c2562782eaec38b496f6e318",
+    "assets/chars/g14_body.png": "ddc24e05c41dbb0cfcd4582614b00d2b5a6f3222841a9a392404704c2c1b1050",
+    "assets/chars/g14_contact_cloth.png": "0c65a56166a5ab3196facd4360b5f2fc7d2df368baa71086acd5c5426a4ebfec",
+    "assets/chars/g14_hang_sheet.png": "e49ff7b8098c06cff89c473d63d4068a86901767022f75a1c1d6eb4bc6c04852",
+    "assets/chars/g14_press_arm.png": "bf9d01efa820ee16214d692422aeb03b84e4f3dbd967effc675a1f0049dc6c70"
+  },
+  "render_inputs_after": {
+    "js/paint/shots/s14.js": "5e8d6695a33a4354e3e5db51da3d3f820cebc7d9ad13b23f519cae0fb59761b3",
+    "tools/cutout_s14.py": "008d1212830383509848254be2033a50a370e4200b133c493a35c9936679feeb",
+    "js/paint/paintshot.js": "7404b28b72decbcc34047ea69e81c3927ac9cf626648910e6a1603f0d619c5fe",
+    "assets/paint/bg_01_room_wide.png": "3bc55f3b9d238b4242eddbd06a0c3f81a394673fa19c4f33ef263ba65d4e01ed",
+    "collab/refs/anim_14_grandma_hang_sheet.png": "8f63518a0d0b8de74dadfcb13158ce6194ea2e9732961d390e032a35d1c0a0ef",
+    "assets/chars/x16_arms_crossed.png": "2f9305ad4a47ed1c5e53f6a886134fe23facc4e3c2562782eaec38b496f6e318",
+    "assets/chars/g14_body.png": "ddc24e05c41dbb0cfcd4582614b00d2b5a6f3222841a9a392404704c2c1b1050",
+    "assets/chars/g14_contact_cloth.png": "0c65a56166a5ab3196facd4360b5f2fc7d2df368baa71086acd5c5426a4ebfec",
+    "assets/chars/g14_hang_sheet.png": "e49ff7b8098c06cff89c473d63d4068a86901767022f75a1c1d6eb4bc6c04852",
+    "assets/chars/g14_press_arm.png": "bf9d01efa820ee16214d692422aeb03b84e4f3dbd967effc675a1f0049dc6c70"
+  },
+  "render_inputs_unchanged": true,
+  "full_10s": {
+    "png_count": 240,
+    "status": "Background render had completed when pause arrived; preserved as unreviewed historical PNGs. No full MP4 encoded."
+  },
+  "new_stool_asset_used": false,
+  "committed_or_pushed": false,
+  "capability_limit": "Single source pose with one rigid arm rotation; no articulated whole-body motion, gait, turn, mounting stool, or lamp-hanging demonstrated."
+}

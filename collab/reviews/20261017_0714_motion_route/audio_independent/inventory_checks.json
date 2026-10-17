@@ -1,0 +1,816 @@
+{
+  "source": {
+    "manifest_sha256": "6894140a2cbe01a14233dcc9919c41d302cf5b46ceddc2a94b532fa9990eab8b",
+    "measurement_manifest_sha256": "d3f6d26ef7e1d101f48927d83da48b93e37fbd628d5d9623d4a6f770a17e88a3",
+    "base_commit": "02cb28a48d7df0d4ce4c8d0bc422e0481c91c376",
+    "source_file_checks": [
+      {
+        "path": "audio/demo.py",
+        "sha256": "d7fdeee59f32dc53e93eb8b40bb24e71014bfbbb1de0c2595af6d352c0a97087",
+        "matches_manifest": true
+      },
+      {
+        "path": "audio/build.py",
+        "sha256": "92693576896a91fcb4d2d2595276052079561f7e1218598897d5c3dd57732ef6",
+        "matches_manifest": true
+      },
+      {
+        "path": "audio/inst.py",
+        "sha256": "c6b8f630335dfabe6302e21dfb880dae34fd02b37a475418d1f0f57112d98275",
+        "matches_manifest": true
+      },
+      {
+        "path": "audio/sfx.py",
+        "sha256": "a06fd64a02f53cddd1bcec4cf0556244c782a308c1b04adbce439354fb4376c5",
+        "matches_manifest": true
+      },
+      {
+        "path": "audio/score.py",
+        "sha256": "2171a6189a971a1b88b7619fc92ced65d015cada8894e59362ddb04e67f40b2e",
+        "matches_manifest": true
+      },
+      {
+        "path": "js/film/edl.js",
+        "sha256": "d82e62521076bbf2fbc28a7c1c5ab9f4b62e1305d7fe20671c3b51b5c4e5fe61",
+        "matches_manifest": true
+      },
+      {
+        "path": "package.json",
+        "sha256": "7435fe87be491d71687e23a98dabe79423370904520a23e57d13ce65ce7cbde7",
+        "matches_manifest": true
+      }
+    ],
+    "frozen_audio_build_sha256": "92693576896a91fcb4d2d2595276052079561f7e1218598897d5c3dd57732ef6",
+    "frozen_edl_sha256": "d82e62521076bbf2fbc28a7c1c5ab9f4b62e1305d7fe20671c3b51b5c4e5fe61",
+    "current_worktree_AST_equals_frozen": true,
+    "edl_shots": 31,
+    "edl_seconds": 244.5,
+    "master_expected_seconds": 245.5,
+    "timing_seconds": {
+      "CUT": 22.6,
+      "ON": 169.5,
+      "TV_ON": 175.9,
+      "FAN_ON": 174.7,
+      "TV_OFF": 195.6,
+      "OFF": 200.5
+    },
+    "fan_speed_probes": [
+      {
+        "time": 200.499,
+        "speed": 0.9999999006259676
+      },
+      {
+        "time": 200.5,
+        "speed": 0.9999999006880569
+      },
+      {
+        "time": 200.6,
+        "speed": 0.9999999067050633
+      },
+      {
+        "time": 205.5,
+        "speed": 0.9999999956365377
+      },
+      {
+        "time": 244.5,
+        "speed": 1.0
+      },
+      {
+        "time": 245.499,
+        "speed": 1.0
+      }
+    ],
+    "tv_babble_gate_end": 195.6,
+    "crt_whine_fade_end": 195.9
+  },
+  "records": [
+    {
+      "id": "MASTER",
+      "file": "film_mix_norm.wav",
+      "sha256": "6980ce06f50f6348b8f832d23cfb4a5d72edddda61ab47ade274727ecaaf18c4",
+      "bytes": 47136078,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "0009b017c26d11616bb0f9051572e098f52932e4009064687a6a2ae19aea72cb",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-16.04",
+        "input_tp": "-4.40",
+        "input_lra": "8.30"
+      },
+      "expected_duration": 245.5,
+      "actual_duration": 245.5,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "FULL",
+      "file": "FULL.m4a",
+      "sha256": "4bf872384ba2bec30dbd81b75fc9668da7571052bf81486c276573048f5b9f2d",
+      "bytes": 8052259,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "83266bc57fb76f881df3129a1bc46a7154b3a31483cceb0a2fa993fb55a095a1",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-16.08",
+        "input_tp": "-4.20",
+        "input_lra": "8.30"
+      },
+      "expected_duration": 245.5,
+      "actual_duration": 245.5,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S01",
+      "file": "S01.m4a",
+      "sha256": "d766106ce3d7609f7bd328ac66c3e648203d130380b36a2874ee33c3e8e2a54a",
+      "bytes": 391704,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "2155a0d050efd1c0242f369a0f954e3d795b5c21a4ea8defaebe2357df78493c",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-16.46",
+        "input_tp": "-5.64",
+        "input_lra": "0.50"
+      },
+      "expected_duration": 12,
+      "actual_duration": 12.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S02",
+      "file": "S02.m4a",
+      "sha256": "ba22a2c9dff0508505a70dab9668e472cb13e5125c0612727d6135fad066e24b",
+      "bytes": 129559,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "bb532a41b1282df487c801d9bfd93e4a4b2505b7e39688cb5443602a60edc886",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-14.19",
+        "input_tp": "-4.43",
+        "input_lra": "1.50"
+      },
+      "expected_duration": 4,
+      "actual_duration": 4.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S03",
+      "file": "S03.m4a",
+      "sha256": "493c6254cdd8237ec399f2de3a02af33e9bd627c6e7207794aef3793509a2188",
+      "bytes": 198651,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "3a07dcee2e4849101bb584c438e97ff489f950b0a327083643b1a7486876aabd",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-15.54",
+        "input_tp": "-4.53",
+        "input_lra": "1.10"
+      },
+      "expected_duration": 6,
+      "actual_duration": 6.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S04",
+      "file": "S04.m4a",
+      "sha256": "eebeddcdc30e6063f466f450fb0d8a38a123fced219d3b2ab63e284d5a3f240c",
+      "bytes": 259417,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "6cf112aa24242d9eb20a2677229ebc4c48ea846e5fec972ed7ebbfc0d693c029",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-14.28",
+        "input_tp": "-4.46",
+        "input_lra": "3.10"
+      },
+      "expected_duration": 8,
+      "actual_duration": 8.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S05",
+      "file": "S05.m4a",
+      "sha256": "bff9eb0d6263436d379295b389dedcaf460b3bed52457df8c9c6c3818079aaf8",
+      "bytes": 131452,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "5fb4ef299b8b239197098ba5d005ef48a998e78640fd4834fab9117ddf25893d",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-13.56",
+        "input_tp": "-4.49",
+        "input_lra": "1.30"
+      },
+      "expected_duration": 4,
+      "actual_duration": 4.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S06",
+      "file": "S06.m4a",
+      "sha256": "2f5938b0a9bd914ec0356425bff8cb676c561d558fcd4252943cb5b03eca2b9a",
+      "bytes": 261292,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "7df92f7d39b4cf4b9d98090265e14d180c6c0bd33ba07d7b517d243ff3d56414",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-17.78",
+        "input_tp": "-4.38",
+        "input_lra": "1.90"
+      },
+      "expected_duration": 8,
+      "actual_duration": 8.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S07",
+      "file": "S07.m4a",
+      "sha256": "b1427e194bd68b5c7c6ea8a58a0ecca0705824c4a490536de9a9562373c3cf80",
+      "bytes": 165895,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "8aaa69acd8ed51b2825015c47e6e9f4a4dde33ec3aa1bea29c2a4d445ca6e547",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-16.55",
+        "input_tp": "-4.35",
+        "input_lra": "0.40"
+      },
+      "expected_duration": 5,
+      "actual_duration": 5.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S08",
+      "file": "S08.m4a",
+      "sha256": "3082a99653f4a405273ebd42b59b37c8dbe22cd999ab3d9c759fb9162e97cd59",
+      "bytes": 196085,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "283292fa91c382d3d704163f7976838e452228dd97e29aa3d653609c4b7d1ac7",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-16.70",
+        "input_tp": "-2.46",
+        "input_lra": "0.80"
+      },
+      "expected_duration": 6,
+      "actual_duration": 6.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S09",
+      "file": "S09.m4a",
+      "sha256": "741a4bd69eb35fc6dec4503b6b2164378ade0032ebdf8bf1f173e346d80cc87c",
+      "bytes": 131188,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "65cdc8b9335fce40487600dc79458d99b9015d1ac39bd76252718a4b6f952d66",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-17.37",
+        "input_tp": "-4.47",
+        "input_lra": "0.50"
+      },
+      "expected_duration": 4,
+      "actual_duration": 4.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S10",
+      "file": "S10.m4a",
+      "sha256": "3ff6e5e0c978305bb1a9d97844f56079ca584205bbde547c61a3554eccc30a05",
+      "bytes": 161018,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "3b43aa079dd26156eb848b2fd549f7a20ddb7fe2ac75cea8ee0b6213b3e11f55",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-17.15",
+        "input_tp": "-4.53",
+        "input_lra": "0.90"
+      },
+      "expected_duration": 5,
+      "actual_duration": 5.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S12",
+      "file": "S12.m4a",
+      "sha256": "255620ba7ee4cbc726e0181a01e8f7693a83fff83fada9ecd726712812613d57",
+      "bytes": 263319,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "6343e2826882d911b4c3fa1881be7f510d5b067f050b337b2cb21e319b446632",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-16.66",
+        "input_tp": "-4.51",
+        "input_lra": "0.60"
+      },
+      "expected_duration": 8,
+      "actual_duration": 8.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S13",
+      "file": "S13.m4a",
+      "sha256": "9e37e9b4dd4bd2ca33a73278230a1ff9e8d1b282f685c09f6e994240f3c97a6b",
+      "bytes": 159694,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "529f9e2aa793921fe0a6ed96b9581f6bd36a61ef78c5dc40d55693d5c8ba2e5f",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-17.71",
+        "input_tp": "-5.23",
+        "input_lra": "0.40"
+      },
+      "expected_duration": 5,
+      "actual_duration": 5.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S14",
+      "file": "S14.m4a",
+      "sha256": "1cd2231f094ae41d3754823d0161cb5d31077ce4294923dfb394e9e5474efaed",
+      "bytes": 326483,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "7662a5d9a00e4abfc5ff2a8366fd1f2adc7a1534b74374851faaa0815b3aad94",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-16.93",
+        "input_tp": "-4.49",
+        "input_lra": "0.50"
+      },
+      "expected_duration": 10,
+      "actual_duration": 10.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S15",
+      "file": "S15.m4a",
+      "sha256": "ae4a78323ce52e2883efa46573d46937942a3aa5f1ce551049e9539518c37575",
+      "bytes": 268763,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "1c8ce6ba801a07ec4fdb8cb1d0032131645d4a29aabbad1caf75ebe16203deee",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-13.89",
+        "input_tp": "-3.26",
+        "input_lra": "1.20"
+      },
+      "expected_duration": 8,
+      "actual_duration": 8.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S16",
+      "file": "S16.m4a",
+      "sha256": "8391433f8fda23a676e2f8fb95ab80205a870ac3cdbd2aa91d4a5a4a39b46f6a",
+      "bytes": 266721,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "730e3a77859e7f738528ee574aa9b3edea850e44b35d635655c8acb992eb281d",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-13.47",
+        "input_tp": "-4.49",
+        "input_lra": "1.20"
+      },
+      "expected_duration": 8,
+      "actual_duration": 8.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S17",
+      "file": "S17.m4a",
+      "sha256": "2bc651f0c93c111980e65149a066e41c4c2992981e74cbbe3a242f27bc21699e",
+      "bytes": 464356,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "dd31b940bd40cb54013636815dadba592cc8e9101368c1790f1cd9bd0bb045e2",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-14.60",
+        "input_tp": "-4.33",
+        "input_lra": "3.40"
+      },
+      "expected_duration": 14,
+      "actual_duration": 14.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S18",
+      "file": "S18.m4a",
+      "sha256": "99d1c3278382641711500b45fc8f796dc39dd4b1f340395b519c64c06e1ab4fc",
+      "bytes": 96501,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "270f3531571b5a0311f949faee78dd2bb3353c9d9c146bdc9102398ee6e0f736",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-23.23",
+        "input_tp": "-10.95",
+        "input_lra": "0.30"
+      },
+      "expected_duration": 3,
+      "actual_duration": 3.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S20",
+      "file": "S20.m4a",
+      "sha256": "8130dcfb04b5c4aaad441f47b8575d98f7e9c85abd0e6d0a824446fc5f2020e1",
+      "bytes": 297685,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "95852042501e5a852dc3967f9a802eec1f60a101330d82277cab56f9f4a27f00",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-15.46",
+        "input_tp": "-4.45",
+        "input_lra": "8.00"
+      },
+      "expected_duration": 9,
+      "actual_duration": 9.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S21",
+      "file": "S21.m4a",
+      "sha256": "d4609b77c2fecefdca87ca1249ea550fbd02fef3f0208518c649f6bec6e052bc",
+      "bytes": 197487,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "0395a7c9badf02336cc553fb31c6a8d0da18ef7e27e0981198a60a1a614a0f47",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-14.34",
+        "input_tp": "-4.57",
+        "input_lra": "2.40"
+      },
+      "expected_duration": 6,
+      "actual_duration": 6.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S22",
+      "file": "S22.m4a",
+      "sha256": "d7dace2ca4702a44317d9b9eab831971fa223ff272cc194a2ab19029600a3e2f",
+      "bytes": 162871,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "f6277f34140dd2b92d37079e19cdc1969f49b9369c3f07c1c789f9f4e342ad20",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-15.21",
+        "input_tp": "-7.04",
+        "input_lra": "0.50"
+      },
+      "expected_duration": 5,
+      "actual_duration": 5.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S23",
+      "file": "S23.m4a",
+      "sha256": "c09a92ad8e968a69fb82d083362dd42a24ff7c45175350fda970c5f568c64c32",
+      "bytes": 165228,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "1ac87aead37177829da9ca689a702e745a9a2cf5e13e4892a0b5c523dbcdea0f",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-13.90",
+        "input_tp": "-4.37",
+        "input_lra": "1.40"
+      },
+      "expected_duration": 5,
+      "actual_duration": 5.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S24",
+      "file": "S24.m4a",
+      "sha256": "b62fe9e03d2f7170e77432f51332771931e983df727c56c40b5769c4fa301dfc",
+      "bytes": 80770,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "9e2ab51b2ae5f62625390397fb6a9627fc075855e32755e232bf79811a973fe4",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-20.93",
+        "input_tp": "-6.51",
+        "input_lra": "0.00"
+      },
+      "expected_duration": 2.5,
+      "actual_duration": 2.5,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S25",
+      "file": "S25.m4a",
+      "sha256": "7a1beb44f135d86cc9824daae199a72dbb639710c7636b78392210471d3ccdae",
+      "bytes": 197372,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "9e0699565c8f42ba0f2b984b6ba4c050132809a363dad6137582742d5c9deccd",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-19.68",
+        "input_tp": "-4.62",
+        "input_lra": "2.20"
+      },
+      "expected_duration": 6,
+      "actual_duration": 6.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S26",
+      "file": "S26.m4a",
+      "sha256": "89cbb8cb5326221fc133ac28cb38e1e436f51086a1991cff9562c2ac9e5a7c77",
+      "bytes": 601458,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "48a42220ceff8d247b2686eecc0cd4a37243b800bdabcd77fe349693aef337b2",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-14.24",
+        "input_tp": "-4.28",
+        "input_lra": "0.80"
+      },
+      "expected_duration": 18,
+      "actual_duration": 18.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S27",
+      "file": "S27.m4a",
+      "sha256": "d4959bbd30e0d25610f9909c5686e09c5a3e790c8e8eb0f3e1cf8d7ff57eb981",
+      "bytes": 164193,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "2baa8ad59ed6096b27f6b63a9fff8f72e433b8089e18ae5cc129ea1fe3b3965b",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-23.43",
+        "input_tp": "-4.23",
+        "input_lra": "2.10"
+      },
+      "expected_duration": 5,
+      "actual_duration": 5.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S28",
+      "file": "S28.m4a",
+      "sha256": "a3a8abd598cbc9d690d43e9f19e3750a2b2529dbb1621756fc6f49e0f542da0d",
+      "bytes": 258984,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "794f1ccf165328793ed8fc8b3becebc864e7003a7f5e3d891df5c7ce6de33fb3",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-18.34",
+        "input_tp": "-4.27",
+        "input_lra": "4.90"
+      },
+      "expected_duration": 8,
+      "actual_duration": 8.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S29",
+      "file": "S29.m4a",
+      "sha256": "8807a7a544d3118764b61920745fee7dfbdf3757de10dd8b1de5e3ca8d18eb1d",
+      "bytes": 389800,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "bdafe905c719f097aae8e601721c21fa5bc0f9ad278d84408b1b726adf2fcb48",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-19.64",
+        "input_tp": "-4.49",
+        "input_lra": "5.20"
+      },
+      "expected_duration": 12,
+      "actual_duration": 12.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S30",
+      "file": "S30.m4a",
+      "sha256": "994b438c413db519062459dee111eb5c4b63fcf5139165abb5d53fd451b48511",
+      "bytes": 389365,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "632f4322a2909b0dce595e409a5c7876622ce71203259b2e76b96eae66c7a1ce",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-20.48",
+        "input_tp": "-4.52",
+        "input_lra": "2.80"
+      },
+      "expected_duration": 12,
+      "actual_duration": 12.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S31",
+      "file": "S31.m4a",
+      "sha256": "5995e7a55f301c7366b4c9239e59e1d9b2924a73e62dfcb42f126fd05cd8a5d8",
+      "bytes": 458924,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "5eaa8586443280d6abb1e8d45fd0757c72582841bcd0eb20cc5c6bc0af72e797",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-15.86",
+        "input_tp": "-5.15",
+        "input_lra": "1.00"
+      },
+      "expected_duration": 14,
+      "actual_duration": 14.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "S32",
+      "file": "S32.m4a",
+      "sha256": "c30e7ef8ad265bb4417f18a027ecda532ebd84c2af4b052dddcd99fd658fc0ca",
+      "bytes": 494638,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "95126312dac970c27fef141858a1fa0b365353f54d4ef8df618ef30c4c0684aa",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-14.41",
+        "input_tp": "-4.44",
+        "input_lra": "1.50"
+      },
+      "expected_duration": 15,
+      "actual_duration": 15.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    },
+    {
+      "id": "END",
+      "file": "END.m4a",
+      "sha256": "9dd0d8e51c831b1e7dbb17581628b3f70553e0a3116c49324f1f830cfc7ec592",
+      "bytes": 291153,
+      "hash_matches": true,
+      "bytes_match": true,
+      "log_sha256": "b4a9f9273a1d28d3824e49d1c9bbf99512dbee8eb84a918f012aad7e2214b941",
+      "log_names_expected_input": true,
+      "log_metrics_match": true,
+      "measured_log_values": {
+        "input_i": "-21.70",
+        "input_tp": "-4.57",
+        "input_lra": "1.70"
+      },
+      "expected_duration": 9,
+      "actual_duration": 9.0,
+      "duration_matches": true,
+      "edl_timing_matches": true,
+      "encode_command_targets_expected_file": true,
+      "encode_command_uses_frozen_master": true
+    }
+  ],
+  "count": 33,
+  "all_pass": true
+}

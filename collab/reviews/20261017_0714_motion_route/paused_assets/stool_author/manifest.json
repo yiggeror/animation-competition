@@ -1,0 +1,64 @@
+{
+  "tool": "image_gen.imagegen",
+  "underlying_model": "not disclosed",
+  "generation_calls": 1,
+  "source": {
+    "path": "/workspace/generated_images/exec-ce86e246-f790-4ffc-88fc-9f3f78a06a68.png",
+    "bytes": 1648847,
+    "sha256": "363ecb558e018c7322ec3cfce000508781f92ec49a6a82260acbca9335e5091e",
+    "dimensions": [
+      1536,
+      1024
+    ]
+  },
+  "output": {
+    "path": "/tmp/laidian-produce-s14-stool/anim_14_xiaoman_drag_stool.png",
+    "bytes": 1648847,
+    "sha256": "363ecb558e018c7322ec3cfce000508781f92ec49a6a82260acbca9335e5091e",
+    "dimensions": [
+      1536,
+      1024
+    ]
+  },
+  "source_output_byte_identical": true,
+  "references": [
+    {
+      "path": "/workspace/animation-competition/collab/refs/anim_20_xiaoman_puppeteer.png",
+      "bytes": 1580494,
+      "sha256": "77fff6438b51ec53a08797d53eb15555420e21fa8a566eb2e6f0c430065b9aa7",
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "/workspace/animation-competition/collab/refs/xiaoman_expressions_current03.png",
+      "bytes": 1578292,
+      "sha256": "5df66be288683cb1c7e59ba9cd83105b515b7df28bd83fc8fdb159f80861cdee",
+      "dimensions": [
+        2048,
+        768
+      ]
+    },
+    {
+      "path": "/workspace/animation-competition/collab/refs/anim_16_xiaoman_arms_crossed.png",
+      "bytes": 1594851,
+      "sha256": "dd3b37cfac8bce1af55e8d3affb28dc4b70754c325b52e348c0662fbf9faec34",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "reference_roles": [
+    "same character standing identity",
+    "same character expressions",
+    "accepted stool structure only; sitting pose not used"
+  ],
+  "native_dimensions_preserved": true,
+  "post_processing": "none on deliverable; analytical evidence crops only",
+  "dedupe": "No matching drag-stool PNG in refs/review directories or /tmp/laidian-* before generation",
+  "status": "Author review complete; independent reviewer returned limited adoption, no mandatory redraw; formal report pending write",
+  "story_scope": "S14, standing small-step dragging a low wooden stool; single action midpoint, no seated pose",
+  "independent_report_expected": "/tmp/laidian-audit-s14-stool/report.md"
+}
