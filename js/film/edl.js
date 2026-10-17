@@ -10,14 +10,14 @@ export const SHOTS = [
   { id: 'S04', scene: 2, line: 'paint', dur: 8, mod: 'js/paint/shots/s04.js', text: '全景："啪"——灯灭、电视缩成一个亮点、吊扇慢慢停；月光从窗口斜进来' },
   { id: 'S05', scene: 2, line: 'code', dur: 4, mod: 'js/code/s05.js', text: '特写：手机 1%，手指狂按，屏幕黑' },
   { id: 'S06', scene: 2, line: 'paint', dur: 8, mod: 'js/paint/shots/s06.js', text: '特写（月光，侧面）：墙脚插座，小满的手捏着插头拔了又插，举到嘴边吹一口，最后狠狠插回去' },
-  { id: 'S07', scene: 2, line: 'paint', dur: 5, text: '全景：小满往后一倒瘫在竹席上扇风；奶奶起身走向立柜，踮脚摸马灯' },
+  { id: 'S07', scene: 2, line: 'paint', dur: 5, mod: 'js/paint/shots/s07.js', text: '全景：小满往后一倒瘫在竹席上扇风；奶奶起身走向立柜，踮脚摸马灯' },
   { id: 'S08', scene: 2, line: 'paint', dur: 6, mod: 'js/paint/shots/s08.js', text: '中景→特写→中景：黑暗里奶奶"嚓"地划着火柴，火光照亮她；特写里火柴碰到灯芯，甩灭，灯罩落下；回中景，马灯亮了' },
   // 第 3 场 · 手电
   { id: 'S09', scene: 3, line: 'paint', dur: 4, mod: 'js/paint/shots/s09.js', text: '近景（马灯从右边照过来）：小满跪在电视柜前捧着旧手电，推开关不亮，往手心磕两下，再推——亮了，光柱打出去' },
   { id: 'S10', scene: 3, line: 'paint', dur: 5, mod: 'js/paint/shots/s10.js', text: '手电光束扫过屋子，照到奶奶，奶奶眯起眼' },
   // 第 4 场 · 木箱
   { id: 'S12', scene: 4, line: 'paint', dur: 8, mod: 'js/paint/shots/s12.js', text: '中景：樟木箱开着，奶奶跪在箱边俯身握住签子，直起身把鹤立起来，马灯的光透过牛皮，鹤影落在箱盖内侧' },
-  { id: 'S13', scene: 4, line: 'paint', dur: 5, text: '近景：小满盯着看 → 发现奶奶在看她 → 假装打哈欠，扭开头' },
+  { id: 'S13', scene: 4, line: 'paint', dur: 5, mod: 'js/paint/shots/s13.js', text: '近景：小满盯着看 → 发现奶奶在看她 → 假装打哈欠，扭开头' },
   // 第 5 场 · 搭台
   { id: 'S14', scene: 5, line: 'paint', dur: 10, mod: 'js/paint/shots/s14.js', text: '全景：奶奶把床单搭上铁丝、夹衣夹、挂马灯，床单亮起；小满拖板凳坐下，抱起胳膊' },
   // 第 6 场 · 鹤
