@@ -1,0 +1,173 @@
+{
+  "captured_utc": "2026-10-17T14:04:05.412622+00:00",
+  "reported_new_version": "68071b1 includes d15d185",
+  "method": "Independent ffprobe packet payload hashes+PTS/DTS/durations; ffmpeg decoded native f32le PCM equality; decoded video timestamps. No listening or loudness remeasurement.",
+  "results": {
+    "old_v2": {
+      "source": "/tmp/laidian-s18-k05b-adopted-52ab987/source/collab/reviews/20261017_1115_s18_v2_opus/S18_flipbook_review_v2.mp4",
+      "frozen_copy": "/tmp/laidian-batch1-timing-2e96/s18_final_68071b1/old_v2.mp4",
+      "sha256": "b986ef9d31b62cd4ebd1961617552e38bf5976509ab567cf668a2b4c58130ece",
+      "bytes": 314132,
+      "video": {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/12288",
+        "start_pts": 258,
+        "start_time": "0.020996",
+        "duration_ts": 36864,
+        "duration": "3.000000",
+        "nb_frames": "72"
+      },
+      "audio": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 145024,
+        "duration": "3.021333",
+        "nb_frames": "142"
+      },
+      "format_duration": "3.021333",
+      "audio_packet_count": 142,
+      "decoded_pcm_sha256": "5a55950fcd04b894f04a7ab40946c0b3070c9337467c8cac7010c3565ee29b87",
+      "decoded_pcm_bytes": 1163264,
+      "decoded_pcm_samples_per_channel": 145408,
+      "video_decoded_frame_count": 72,
+      "F0": {
+        "pts": 258,
+        "pts_time": "0.020996",
+        "best_effort_timestamp": 258,
+        "best_effort_timestamp_time": "0.020996",
+        "side_data_list": [
+          {
+            "side_data_type": "H.26[45] User Data Unregistered SEI message"
+          }
+        ]
+      },
+      "F15": {
+        "pts": 7938,
+        "pts_time": "0.645996",
+        "best_effort_timestamp": 7938,
+        "best_effort_timestamp_time": "0.645996"
+      },
+      "F71": {
+        "pts": 36610,
+        "pts_time": "2.979329",
+        "best_effort_timestamp": 36610,
+        "best_effort_timestamp_time": "2.979329"
+      },
+      "first_audio_packet": {
+        "pts": 0,
+        "dts": 0,
+        "duration": 1024,
+        "size": "546",
+        "data_hash": "SHA256:3b152471780fc9f61c7d4af4b34314eeaa648b179052f68c851b84547f26a248",
+        "side_data_list": null
+      },
+      "last_audio_packet": {
+        "pts": 144384,
+        "dts": 144384,
+        "duration": 640,
+        "size": "594",
+        "data_hash": "SHA256:820ef2ced9c827897c83afff54bbfe96720df84296a13ab365d8161e969b530a",
+        "side_data_list": null
+      },
+      "video_pts_step_ticks": [
+        512
+      ],
+      "video_pts_step_seconds": 0.041666666666666664
+    },
+    "new_final": {
+      "source": "/workspace/animation-competition/collab/reviews/20261017_1405_s18_final_opus/S18_final_review.mp4",
+      "frozen_copy": "/tmp/laidian-batch1-timing-2e96/s18_final_68071b1/new_final.mp4",
+      "sha256": "3af38f8205410ab520bfa89a68e04faed89f59317de277f77767ab5198ced100",
+      "bytes": 316441,
+      "video": {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/12288",
+        "start_pts": 258,
+        "start_time": "0.020996",
+        "duration_ts": 36864,
+        "duration": "3.000000",
+        "nb_frames": "72"
+      },
+      "audio": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 145024,
+        "duration": "3.021333",
+        "nb_frames": "142"
+      },
+      "format_duration": "3.021333",
+      "audio_packet_count": 142,
+      "decoded_pcm_sha256": "5a55950fcd04b894f04a7ab40946c0b3070c9337467c8cac7010c3565ee29b87",
+      "decoded_pcm_bytes": 1163264,
+      "decoded_pcm_samples_per_channel": 145408,
+      "video_decoded_frame_count": 72,
+      "F0": {
+        "pts": 258,
+        "pts_time": "0.020996",
+        "best_effort_timestamp": 258,
+        "best_effort_timestamp_time": "0.020996",
+        "side_data_list": [
+          {
+            "side_data_type": "H.26[45] User Data Unregistered SEI message"
+          }
+        ]
+      },
+      "F15": {
+        "pts": 7938,
+        "pts_time": "0.645996",
+        "best_effort_timestamp": 7938,
+        "best_effort_timestamp_time": "0.645996"
+      },
+      "F71": {
+        "pts": 36610,
+        "pts_time": "2.979329",
+        "best_effort_timestamp": 36610,
+        "best_effort_timestamp_time": "2.979329"
+      },
+      "first_audio_packet": {
+        "pts": 0,
+        "dts": 0,
+        "duration": 1024,
+        "size": "546",
+        "data_hash": "SHA256:3b152471780fc9f61c7d4af4b34314eeaa648b179052f68c851b84547f26a248",
+        "side_data_list": null
+      },
+      "last_audio_packet": {
+        "pts": 144384,
+        "dts": 144384,
+        "duration": 640,
+        "size": "594",
+        "data_hash": "SHA256:820ef2ced9c827897c83afff54bbfe96720df84296a13ab365d8161e969b530a",
+        "side_data_list": null
+      },
+      "video_pts_step_ticks": [
+        512
+      ],
+      "video_pts_step_seconds": 0.041666666666666664
+    }
+  },
+  "comparison": {
+    "audio_packets_pts_dts_duration_size_payload_and_side_data_equal": true,
+    "aac_payload_sequence_equal": true,
+    "decoded_pcm_equal": true,
+    "all_video_pts_and_durations_equal": true,
+    "all_video_packet_pts_dts_durations_equal": false,
+    "all_72_video_packets_have_512_tick_duration": true
+  }
+}
