@@ -1,0 +1,47 @@
+{
+  "collar_lower": {
+    "roi": [
+      310,
+      1055,
+      735,
+      1170
+    ],
+    "raw_mae": 33.78513213981245,
+    "best_B_sample_dxdy": [
+      -1,
+      -29
+    ],
+    "registered_mae": 8.269606138107417,
+    "search": "dx -3..3, dy -40..-20 at native RGB pixels, local integer search"
+  },
+  "chest_dots": {
+    "roi": [
+      385,
+      1190,
+      740,
+      1440
+    ],
+    "raw_mae": 14.037220657276995,
+    "best_B_sample_dxdy": [
+      0,
+      -31
+    ],
+    "registered_mae": 4.404691079812206,
+    "search": "dx -3..3, dy -40..-20 at native RGB pixels, local integer search"
+  },
+  "left_sleeve": {
+    "roi": [
+      90,
+      1090,
+      365,
+      1380
+    ],
+    "raw_mae": 26.853421107628005,
+    "best_B_sample_dxdy": [
+      0,
+      -31
+    ],
+    "registered_mae": 5.959026123301985,
+    "search": "dx -3..3, dy -40..-20 at native RGB pixels, local integer search"
+  }
+}

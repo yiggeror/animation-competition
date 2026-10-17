@@ -1,0 +1,43 @@
+{
+  "video": "/tmp/laidian-integration-s30-tvfirst/s30_tvfirst_silent.mp4",
+  "sha256": "7e9bd3d3ea2e7de11ba655bf76ea2e75b133e2eb1eeb5447445be9a1e7f2d94f",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 960,
+        "height": 540,
+        "r_frame_rate": "24/1",
+        "duration": "12.000000",
+        "nb_frames": "288"
+      }
+    ],
+    "format": {
+      "duration": "12.000000"
+    }
+  },
+  "frame_count": 288,
+  "producer_source_hashes_before": "487d311213795957a56edddbeba2f14c93a625e9cba558e0302141e2a8efedaf  js/paint/shots/s30.js\n95d5bb92875958de67263597b6efb2b29664fbd12d8de268fc9fb71bb7e593ab  assets/chars/x30_pull_cord.png\n7404b28b72decbcc34047ea69e81c3927ac9cf626648910e6a1603f0d619c5fe  js/paint/paintshot.js\n",
+  "producer_source_hashes_after": "487d311213795957a56edddbeba2f14c93a625e9cba558e0302141e2a8efedaf  js/paint/shots/s30.js\n95d5bb92875958de67263597b6efb2b29664fbd12d8de268fc9fb71bb7e593ab  assets/chars/x30_pull_cord.png\n7404b28b72decbcc34047ea69e81c3927ac9cf626648910e6a1603f0d619c5fe  js/paint/paintshot.js\n",
+  "before_after_equal": true,
+  "quick_check_frame_indices": [
+    0,
+    26,
+    28,
+    32,
+    39,
+    40,
+    143,
+    144,
+    147,
+    168,
+    184
+  ],
+  "scope": "Opening and dark arm supplemental review only; future tail revision excluded.",
+  "selected_frames_independently_decoded_from_mp4": true,
+  "selected_decode_sheet": "tvfirst-video-keyframes.jpg"
+}
