@@ -12,22 +12,22 @@ export const GRANDMA = { pos: [1.25, 1.15] };
 // 图：脚底中点（图片像素）、每厘米像素（身高约 1.5 米）、两只手的握点（低的握主签、高的握头签）
 // 图上手里那几截短签方向不一（握签的那只低手前后两截还错开了一点），裁掉露在拳头外面的部分（erase），
 // 由程序从拳头里的握点画一根直的长签，拳头盖住签子的根，签子从握点自然伸出去
-const GR = { file: 'g20_puppeteer', ox: 245, oy: 1363, sc: 9.04, grips: [[578, 641], [590, 466]],
+export const GR = { file: 'g20_puppeteer', ox: 245, oy: 1363, sc: 9.04, grips: [[578, 641], [590, 466]],
   erase: [[[608, 445], [665, 445], [665, 482], [608, 482]], [[588, 626], [618, 626], [618, 654], [588, 654]], [[460, 668], [495, 668], [495, 694], [460, 694]]] };
-const CAM_C = { pos: [-0.2, 1.5, 1.2], target: [1.1, 0.75, 0.95], hfov: 60 };
+export const CAM_C = { pos: [-0.2, 1.5, 1.2], target: [1.1, 0.75, 0.95], hfov: 60 };
 
 let GM = null, LAMPM = null, CRANEC = null;
 const load = async (u) => createImageBitmap(await (await fetch(u)).blob());
-async function loadMaps(f) { const b = '/assets/chars/' + f; const [alb, nrm, mat] = await Promise.all([load(b + '.png'), load(b + '_n.png'), load(b + '_m.png')]); return { alb, nrm, mat }; }
+export async function loadMaps(f) { const b = '/assets/chars/' + f; const [alb, nrm, mat] = await Promise.all([load(b + '.png'), load(b + '_n.png'), load(b + '_m.png')]); return { alb, nrm, mat }; }
 
 // 平涂的卡片：给一张固有色画布，配上朝镜头的法线和一种材质
-function flatMaps(alb, mat = 0, extra = 0) {
+export function flatMaps(alb, mat = 0, extra = 0) {
   const mk = (fill) => { const c = new OffscreenCanvas(alb.width, alb.height), x = c.getContext('2d'); x.drawImage(alb, 0, 0); x.globalCompositeOperation = 'source-in'; x.fillStyle = fill; x.fillRect(0, 0, c.width, c.height); return c; };
   return { alb, nrm: mk('rgb(128,128,255)'), mat: mk(`rgb(0,${mat * 30},${Math.round(extra * 255)})`) };
 }
 
 // 马灯（风灯）：铁皮油壶、玻璃罩、上盖、两根护罩铁丝、提梁，挂在钩子上。局部厘米，原点在火苗；画成 10 像素/厘米的图
-function makeLamp() {
+export function makeLamp() {
   const K = 10, W = 26 * K, H = 46 * K, ox = 13 * K, oy = 24 * K;     // 火苗在 (13, 24) 厘米处
   const P = (x, y) => [ox + x * K, oy - y * K];
   const layer = () => { const c = new OffscreenCanvas(W, H); return [c, c.getContext('2d')]; };
@@ -54,7 +54,7 @@ function makeLamp() {
 }
 
 // 鹤从后台看：皮面贴图（drawPuppet 'r'），2 像素/毫米，原点 (900, 1000)
-function craneCard(pup, pose) {
+export function craneCard(pup, pose) {
   const c = new OffscreenCanvas(1800, 1800), x = c.getContext('2d');
   x.translate(900, 1000); x.scale(2, -2);
   drawPuppet(x, pup, pose, 'r');
