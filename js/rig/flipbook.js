@@ -16,7 +16,8 @@ export async function loadFlip(name, o = {}) {
   if (r.status === 404 && o.optional) return null;   // 没有描述文件：调用方可以退回旧画法；有描述文件但读坏了一律报错
   if (!r.ok) throw new Error(`${name}.flip.json ${r.status}`);
   const spec = await r.json(), T = spec.target, bad = (m) => { throw new Error(`${name}.flip.json：${m}`); };
-  const span = (a) => (a?.length === 2 && a.flat().every(Number.isFinite) ? Math.hypot(a[1][0] - a[0][0], a[1][1] - a[0][1]) : 0);
+  const pt = (p) => Array.isArray(p) && p.length === 2 && p.every(Number.isFinite);
+  const span = (a) => { const d = Array.isArray(a) && a.length === 2 && a.every(pt) ? Math.hypot(a[1][0] - a[0][0], a[1][1] - a[0][1]) : NaN; return Number.isFinite(d) ? d : 0; };
   if (!(T?.width > 0 && T?.height > 0) || span(T.anchors) < 40) bad('target 要有画幅和两个相距 40 像素以上的定位点');
   const frames = await Promise.all(spec.frames.map(async (f) => {
     const b = `/assets/chars/${f.file}`;
@@ -42,7 +43,7 @@ export async function loadFlip(name, o = {}) {
   if (!tl?.length || tl[0][0] !== 0) bad('timelineFrames 要从第 0 帧开始');
   tl.forEach(([n, i], k) => {
     if (!Number.isInteger(n) || (k && n <= tl[k - 1][0])) bad('timelineFrames 的帧号要是递增的整数');
-    if (!(i >= 0 && i < frames.length)) bad(`timelineFrames 里的帧序号 ${i} 越界`);
+    if (!(Number.isInteger(i) && i >= 0 && i < frames.length)) bad(`timelineFrames 里的帧序号 ${i} 不是整数或越界`);
   });
   return { spec, frames, fps: spec.fps || 24, W: T.width, H: T.height, cache: new Map() };
 }
