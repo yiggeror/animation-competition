@@ -34,6 +34,6 @@ for (const s of SHOTS) {
 const txt = path.join(dir, 'list.txt');
 fs.writeFileSync(txt, list.map((f) => `file '${path.resolve(f)}'`).join('\n'));
 const outFilm = opt.out || (pv ? 'build/film_preview.mp4' : 'build/film_rough.mp4');
-const aud = opt.audio && fs.existsSync(opt.audio) ? ['-i', opt.audio, '-map', '0:v', '-map', '1:a', '-c:a', 'aac', '-b:a', '192k', '-shortest'] : [];
+const aud = opt.audio && fs.existsSync(opt.audio) ? ['-i', opt.audio, '-map', '0:v', '-map', '1:a', '-c:a', 'aac', '-b:a', '256k', '-shortest'] : [];
 run('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', txt, ...aud, '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', String(fps), '-crf', '20', outFilm]);
 console.log(outFilm, `共 ${SHOTS.length} 个镜头，${SHOTS.reduce((t, s) => t + s.dur, 0)} 秒`);

@@ -547,11 +547,12 @@ print(f'峰值归一前 {peak:.2f}')
 for name, x in [('music', music), ('sfx', SFX_r), ('amb', AMB)]:
     wavfile.write(os.path.join(OUT, f'stem_{name}.wav'), SR, (np.clip(x / peak * 0.89, -1, 1) * 32767).astype(np.int16))
 wavfile.write(os.path.join(OUT, 'film_mix.wav'), SR, (np.clip(mix, -1, 1) * 32767).astype(np.int16))
-# 响度归一（两遍 loudnorm）：-16 LUFS、真峰 -1.5 dBTP，输出 film_mix_norm.wav（成片用这个）
+# 响度归一（两遍 loudnorm）：-16 LUFS、真峰 -2.5 dBTP，输出 film_mix_norm.wav（成片用这个）。
+# 真峰留 2.5 dB：压成 AAC 时高频噪声（电视的"嘶"）会冲过 WAV 的峰值（合作方量到 160k AAC 冲到 +2.6 dBFS），成片用 256k AAC
 src = os.path.join(OUT, 'film_mix.wav'); dst = os.path.join(OUT, 'film_mix_norm.wav')
-r = subprocess.run(['ffmpeg', '-hide_banner', '-nostats', '-i', src, '-af', 'loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json', '-f', 'null', '-'], capture_output=True, text=True)
+r = subprocess.run(['ffmpeg', '-hide_banner', '-nostats', '-i', src, '-af', 'loudnorm=I=-16:TP=-2.5:LRA=11:print_format=json', '-f', 'null', '-'], capture_output=True, text=True)
 m = json.loads(r.stderr[r.stderr.rindex('{'):r.stderr.rindex('}') + 1])
-af = f"loudnorm=I=-16:TP=-1.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true"
+af = f"loudnorm=I=-16:TP=-2.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true"
 subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', src, '-af', af, '-ar', str(SR), dst], check=True)
 print(f"响度：原 {m['input_i']} LUFS / 真峰 {m['input_tp']} dBTP → -16 LUFS")
 print(dst, f'{TOTAL:.1f}s')

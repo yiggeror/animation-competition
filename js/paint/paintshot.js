@@ -68,7 +68,8 @@ function lightMap(W, H, L) {
   }
   for (const [m, col, inten] of extras) {
     const d = m.getContext('2d').getImageData(0, 0, W, H).data;
-    for (let i = 0; i < W * H; i++) { const v = d[i * 4] / 255 * inten; if (v > 0) { buf[i * 3] += col[0] * v; buf[i * 3 + 1] += col[1] * v; buf[i * 3 + 2] += col[2] * v; } }
+    // getImageData 给的是未预乘的颜色：模糊/渐变边上 alpha 很小的像素 RGB 仍是 255，要乘 alpha 才是真实覆盖（合作方查出 S10 光柱的硬亮宽边）
+    for (let i = 0; i < W * H; i++) { const v = d[i * 4] / 255 * d[i * 4 + 3] / 255 * inten; if (v > 0) { buf[i * 3] += col[0] * v; buf[i * 3 + 1] += col[1] * v; buf[i * 3 + 2] += col[2] * v; } }
   }
   return buf;
 }
