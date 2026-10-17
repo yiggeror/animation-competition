@@ -1,16 +1,17 @@
 // S18 · 第 7 场：小满"噗"地笑出声，捂住嘴。镜头推近到她（床单正面这一侧），床单上还是 S17 结尾：鹤晕乎乎地缓过来，乌龟探出头偷笑。
-// 前 0.58 秒她还是"看呆了"（松开胳膊、张着嘴，xm_rig 的 B）；"噗"——换成合作方画的捂嘴笑（anim_18，和 B 同一个裁切框、逐像素对齐），
+// 前 0.625 秒她还是"看呆了"（松开胳膊、张着嘴，xm_rig 的 B）；"噗"——换成合作方画的捂嘴笑（anim_18，和 B 同一个裁切框、逐像素对齐），
 // 肩膀一耸，然后笑得一颤一颤，慢慢收住。
 import { makeShot } from './shotkit.js';
 import { sheet as sheet17 } from './s17.js';
 import { cards06, billboardM, XM } from '../s06_key.js';
 import { RIG16, loadRig, layers16, pose16 } from '../xm_rig.js';
 import { loadFlip, frameAt, flipMaps } from '../../rig/flipbook.js';
-// 逐帧版（合作方按关键帧单出的 x18_f01…f12，assets/flips/x18_laugh.flip.json）到了就用，整段 3 秒都按关键帧换；没到时退回旧的单张图
+// 逐帧版（合作方按关键帧单出的图，assets/flips/x18_laugh.flip.json）到了就用，整段 3 秒都按关键帧换；
+// 只有描述文件不存在时才退回旧的单张图，描述文件在但图读不出来就直接报错，不悄悄退回
 let FLIP;
-async function flip() { if (FLIP === undefined) { try { FLIP = await loadFlip('x18_laugh'); } catch { FLIP = null; } } return FLIP; }
+async function flip() { if (FLIP === undefined) FLIP = await loadFlip('x18_laugh', { optional: true }); return FLIP; }
 export const DURATION = 3;
-const T_PU = 0.58;                                     // "噗"：母带琵琶音在 0.60 秒（audio/build.py），画面早一帧；逐帧版第 14 帧同此
+const T_PU = 0.625;                                    // "噗"：第 15 帧（一拍三的节拍点），母带琵琶音在 0.60 秒（audio/build.py），早画面 25 毫秒；逐帧版同此
 const CAM = { pos: [1.05, -2.70, 0.55], target: [0.42, -1.2, 0.70], hfov: 40 };
 let LAUGH = null;
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
