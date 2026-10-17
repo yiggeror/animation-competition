@@ -1,9 +1,11 @@
-// S04 · 第 2 场：停电（临时版：只拍东西，两人一起的全景等小满的图）。
+// S04 · 第 2 场：停电。
 // A 0～2.6 秒：电视特写（屋子底图 bg_01 里的老电视），日光灯下屏幕放着动画片；0.6 秒"啪"——日光灯灭，
 //   显像管的画面先压成一道亮横线、再缩成一个亮点，慢慢熄掉；屋里一下子黑成月光的蓝。
-// B 2.6～8 秒：从正下方往上看天花板上的吊扇（程序画），断了电越转越慢；旁边的日光灯管黑着；月光从左边窗口斜进来。
+// B 2.6～8 秒：切回 S01 的全景，屋里黑成月光的蓝：吊扇越转越慢、扇叶一片片看得清了；小满手里的手机还亮着，照着她的脸；
+//   奶奶停下手里的豆子坐在暗里；月光从左边窗口斜进来。
 // 吊扇减速和 audio/build.py 的吊扇声一样按 exp(-(t-0.6)/2.2) 衰减。
 import { renderPaint, loadImg } from '../paintshot.js';
+import { GM, XM, COIL, FAN, xmLayers, xiaoman, COILC, SHADOWS } from './s01.js';
 export const DURATION = 8;
 const T_CUT = 0.6, T_B = 2.6;
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
@@ -62,58 +64,49 @@ const shotA = {
   cam: (t) => ({ x: W / 2 + 20 * sstep(0, T_B, t), y: 520, fit: 1.0 + 0.04 * sstep(0, T_B, t) }),
 };
 
-// ---------------------------------------------------------------- B：吊扇（从正下方往上看，程序画）
-const HUB = [960, 540];
-let CEIL = null;
-function ceiling() {
-  if (CEIL) return CEIL;
-  const c = new OffscreenCanvas(W, H), x = c.getContext('2d');
-  let seed = 17; const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
-  // 望板：一条条木板 + 两根大梁 + 檩条
-  for (let y = -40, i = 0; y < H + 40; y += 64, i++) { const v = 0.85 + 0.25 * rnd(); x.fillStyle = `rgb(${Math.round(112 * v)},${Math.round(80 * v)},${Math.round(54 * v)})`; x.fillRect(0, y, W, 62); x.fillStyle = 'rgba(40,25,15,0.6)'; x.fillRect(0, y + 62, W, 2); }
-  for (const bx of [330, 1590]) { x.fillStyle = '#5b3d27'; x.fillRect(bx - 70, 0, 140, H); x.strokeStyle = '#3e2a1e'; x.lineWidth = 4; x.strokeRect(bx - 70, -10, 140, H + 20); }
-  // 日光灯管（黑着）
-  x.save(); x.translate(960, 870); x.rotate(-0.05);
-  x.fillStyle = '#d9d6cc'; x.strokeStyle = '#3e2a1e'; x.lineWidth = 4; x.beginPath(); x.roundRect(-520, -34, 1040, 68, 10); x.fill(); x.stroke();
-  x.fillStyle = '#eef0ee'; x.beginPath(); x.roundRect(-480, -18, 960, 36, 18); x.fill(); x.stroke();
-  x.restore();
-  return (CEIL = c);
-}
+// ---------------------------------------------------------------- B：全景，黑下来的堂屋（同 S01 的机位和人）
+const BW = 1672, BH = 941;
 // 扇叶转过的角度：断电前每秒 3.5 圈，断电后按 2.2 秒的时间常数减速
 const OMEGA = 2 * Math.PI * 3.5, TAU = 2.2;
 const fanAng = (t) => (t < T_CUT ? OMEGA * t : OMEGA * T_CUT + OMEGA * TAU * (1 - Math.exp(-(t - T_CUT) / TAU)));
 const fanSpeed = (t) => (t < T_CUT ? OMEGA : OMEGA * Math.exp(-(t - T_CUT) / TAU));
-function fan(t) {
-  const c = new OffscreenCanvas(W, H), x = c.getContext('2d');
-  const a0 = fanAng(t), sp = fanSpeed(t), smear = Math.min(1.4, sp / 24), N = smear > 0.04 ? 8 : 1;
-  x.translate(...HUB);
+// 吊扇的三片扇叶（侧面看，压扁的椭圆轨迹）；转得快时拖残影
+function blades(t) {
+  const c = new OffscreenCanvas(BW, BH), x = c.getContext('2d');
+  const a0 = fanAng(t), smear = Math.min(1.4, fanSpeed(t) / 24), N = smear > 0.04 ? 8 : 1;
+  x.translate(FAN[0], FAN[1] + 12);
   for (let b = 0; b < 3; b++) for (let s2 = 0; s2 < N; s2++) {
-    x.save(); x.rotate(a0 + b * 2 * Math.PI / 3 - smear * s2 / N); x.globalAlpha = N > 1 ? 1.8 / N : 1;
-    x.fillStyle = '#4a4a48'; x.fillRect(90, -12, 170, 24);                                         // 铁片叶臂
-    x.fillStyle = '#e6dcc2'; x.strokeStyle = '#3e2a1e'; x.lineWidth = N > 1 ? 0 : 4;              // 扇叶：长条、末端圆
-    x.beginPath(); x.moveTo(220, -52); x.lineTo(820, -64); x.quadraticCurveTo(880, 0, 820, 64); x.lineTo(220, 52); x.closePath(); x.fill(); if (N === 1) x.stroke();
-    x.restore();
+    const a = a0 + b * 2 * Math.PI / 3 - smear * s2 / N, cx = Math.cos(a), sy = Math.sin(a) * 0.14;
+    x.globalAlpha = N > 1 ? 1.6 / N : 1; x.fillStyle = '#d8cfb6'; x.strokeStyle = '#3e2a1e'; x.lineWidth = N > 1 ? 0 : 1.5;
+    x.beginPath(); x.moveTo(cx * 40, sy * 40 - 3); x.lineTo(cx * 175, sy * 175 - 5); x.lineTo(cx * 175, sy * 175 + 5); x.lineTo(cx * 40, sy * 40 + 3); x.closePath(); x.fill(); if (N === 1) x.stroke();
   }
-  // 电机底盖（米色圆盖 + 一道红线 + 中间的螺丝帽）
-  x.globalAlpha = 1; x.fillStyle = '#e8dfc8'; x.strokeStyle = '#3e2a1e'; x.lineWidth = 5; x.beginPath(); x.arc(0, 0, 150, 0, 7); x.fill(); x.stroke();
-  x.strokeStyle = '#c4543e'; x.lineWidth = 8; x.beginPath(); x.arc(0, 0, 118, 0, 7); x.stroke();
-  x.fillStyle = '#d2c7ac'; x.strokeStyle = '#3e2a1e'; x.lineWidth = 3; x.beginPath(); x.arc(0, 0, 46, 0, 7); x.fill(); x.stroke();
   return c;
 }
+const PHONE = [XM.x + 1428 * XM.sc, XM.y + 560 * XM.sc];          // 小满手里的手机（底图坐标）
 const shotB = {
-  size: [W, H],
-  layers: async (t) => [{ img: fan(t), x: 0, y: 0, sc: 1 }],
+  bg: 'bg_01_room_wide', size: [BW, BH],
+  layers: async (t) => {
+    const L = await xmLayers();
+    return [
+      { img: SHADOWS, x: 0, y: 0, sc: 1, alpha: 0.4 },
+      { img: COILC, x: COIL[0] - 60, y: COIL[1] - 34, sc: 1 },
+      { img: xiaoman(L, t), x: XM.x, y: XM.y, sc: XM.sc },
+      { img: '/assets/chars/g01_beans.png', x: GM.x, y: GM.y, sc: GM.sc, ox: 304, oy: 1348 },
+      { img: blades(t), x: 0, y: 0, sc: 1 },
+    ];
+  },
   light: (t) => ({
-    ambient: [0.04, 0.05, 0.09],
-    lights: [{ x: -300, y: 400, r: 2300, color: [0.5, 0.62, 0.95], i: 0.6, falloff: 1.4 }],   // 窗口进来的月光
-    exposure: 1.0, vignette: 0.55, grain: 8,
+    ambient: [0.022, 0.026, 0.045],
+    lights: [{ x: PHONE[0], y: PHONE[1] - 6, r: 130, color: [0.6, 0.75, 1.0], i: 1.1, falloff: 1.8 }],     // 小满的手机还亮着
+    shafts: [{ poly: [[0, 170], [150, 120], [760, 760], [330, 941], [0, 941]], color: [0.5, 0.62, 0.95], i: 0.3 * moon(t), soft: 70 }],   // 窗口进来的月光
+    exposure: 1.0, vignette: 0.5, grain: 8,
   }),
-  glow: () => [],
-  cam: (t) => ({ x: W / 2, y: H / 2, fit: 1.0 + 0.04 * sstep(T_B, 8, t) }),
+  glow: (t) => [{ x: PHONE[0], y: PHONE[1], r: 26, color: [170, 205, 255], a: 0.7, core: 0.3 }, { x: COIL[0] - 20, y: COIL[1] + 1, r: 4, color: [255, 90, 40], a: 0.9, core: 0.3 }],
+  cam: (t) => { const k = sstep(T_B, 8, t); return { x: BW / 2 - 40, y: BH / 2 + 20, fit: 1.08 + 0.04 * k }; },
 };
 
 export async function renderFrame(ctx, t, w, h) {
   if (t < T_B) { shotA.bg = await tvBg(); return renderPaint(ctx, t, w, h, shotA); }
-  shotB.bg = ceiling(); return renderPaint(ctx, t, w, h, shotB);
+  return renderPaint(ctx, t, w, h, shotB);
 }
 export async function render(ctx, arg, w, h) { return renderFrame(ctx, +arg || 0, w, h); }

@@ -6,14 +6,14 @@ import { renderPaint } from '../paintshot.js';
 export const DURATION = 12;
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
 const BW = 1672, BH = 941;
-const GM = { x: 905, y: 772, sc: 0.235 };                       // 奶奶（同 S10）
-const XM = { x: 437, y: 509, sc: 0.19 };                        // 小满：图左上角落在底图 (x, y)，头朝右、手肘撑在竹席上
-const COIL = [770, 712];                                        // 蚊香（地上，竹席右头和奶奶之间）
-const FAN = [787, 112];                                         // 吊扇电机（底图）
+export const GM = { x: 905, y: 772, sc: 0.235 };                       // 奶奶（同 S10）
+export const XM = { x: 437, y: 509, sc: 0.19 };                        // 小满：图左上角落在底图 (x, y)，头朝右、手肘撑在竹席上
+export const COIL = [770, 712];                                        // 蚊香（地上，竹席右头和奶奶之间）
+export const FAN = [787, 112];                                         // 吊扇电机（底图）
 // 小腿：绕膝盖晃。图像素里的小腿范围（脚和小腿）和膝盖
 const LEGS = { poly: [[0, 90], [470, 90], [470, 560], [410, 690], [300, 735], [0, 640]], cut: [[0, 90], [455, 90], [455, 560], [398, 680], [300, 722], [0, 640]], knee: [330, 715] };
 let XL = null;
-async function xmLayers() {
+export async function xmLayers() {
   if (XL) return XL;
   const im = await createImageBitmap(await (await fetch('/assets/chars/x01_prone_phone.png')).blob());
   const mk = (keep, cut) => {
@@ -25,7 +25,7 @@ async function xmLayers() {
   };
   return (XL = { body: mk(null, LEGS.cut), legs: mk(LEGS.poly, null), w: im.width, h: im.height });
 }
-function xiaoman(L, t) {
+export function xiaoman(L, t) {
   const c = new OffscreenCanvas(L.w, L.h), x = c.getContext('2d');
   x.drawImage(L.body, 0, 0);
   const a = 0.07 * Math.sin(t * 2.4) + 0.03 * Math.sin(t * 5.1 + 1);   // 小腿一晃一晃
@@ -41,9 +41,9 @@ function coil() {
   x.strokeStyle = '#555'; x.lineWidth = 2; x.beginPath(); x.moveTo(-18, 22); x.lineTo(18, 22); x.moveTo(0, 0); x.lineTo(0, 22); x.stroke();
   return c;
 }
-const COILC = coil();
+export const COILC = coil();
 // 接触阴影：小满贴在竹席上的身子、手肘，奶奶的鞋和凳子腿（日光灯在头顶，影子软、贴得紧）
-const SHADOWS = (() => {
+export const SHADOWS = (() => {
   const c = new OffscreenCanvas(BW, BH), x = c.getContext('2d');
   x.filter = 'blur(6px)'; x.fillStyle = 'rgba(40,30,20,0.32)';
   for (const [cx, cy, rx, ry] of [[560, 667, 85, 9], [633, 671, 22, 5], [495, 662, 28, 6], [905, 772, 40, 7], [960, 762, 34, 6]]) { x.beginPath(); x.ellipse(cx, cy, rx, ry, 0, 0, 7); x.fill(); }
