@@ -23,7 +23,7 @@ for (const s of SHOTS) {
   if (fresh && !opt.force && !(only && only.has(s.id))) { console.log(`${s.id}：已有，跳过`); continue; }
   if (src) {
     console.log(`${s.id}：渲染 ${src}（${s.dur} 秒）`);
-    run('node', ['tools/js/frames.cjs', src, `build/${pv ? 'preview_frames' : 'frames'}/${s.id}`, '--fps', String(fps), '--w', String(W), '--h', String(H), '--to', String(s.dur), '--workers', '3', '--mp4', out, ...(debug ? ['--debug', debug] : [])]);
+    run('node', ['tools/js/frames.cjs', src, `build/${pv ? 'preview_frames' : 'frames'}/${s.id}`, '--fps', String(fps), '--w', String(W), '--h', String(H), '--to', String(s.dur), '--workers', '3', '--mp4', out, '--clean', '1', ...(debug ? ['--debug', debug] : [])]);
   } else {
     console.log(`${s.id}：占位卡`);
     const png = path.join(dir, `${s.id}.png`);

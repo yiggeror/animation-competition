@@ -1,4 +1,4 @@
-// 逐帧渲染一个动画模块：node tools/js/frames.cjs <模块> <输出目录> [--fps 24] [--w 1920 --h 1080] [--from 0 --to 末尾] [--workers 3] [--mp4 输出.mp4] [--debug '{"sheetRes":450}']
+// 逐帧渲染一个动画模块：node tools/js/frames.cjs <模块> <输出目录> [--fps 24] [--w 1920 --h 1080] [--from 0 --to 末尾] [--workers 3] [--mp4 输出.mp4 [--clean 1]] [--debug '{"sheetRes":450}']
 // 模块导出 DURATION 和 renderFrame(ctx, t, W, H)。每帧是时间的纯函数，所以可以多个浏览器页面并行。
 const { chromium } = require('playwright');
 const { start } = require('./serve.cjs');
@@ -46,5 +46,6 @@ const fps = +(opt.fps || 24), W = +(opt.w || 1920), H = +(opt.h || 1080), worker
       '-frames:v', String(f1 - f0), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', opt.crf || '18', '-tune', 'animation', opt.mp4], { stdio: 'inherit' });
     if (r.status !== 0) process.exit(r.status);
     console.log(opt.mp4);
+    if (opt.clean) fs.rmSync(outDir, { recursive: true, force: true });   // 压好视频后删掉逐帧 PNG（1080p 一个镜头上 GB，盘不够）
   }
 })();
