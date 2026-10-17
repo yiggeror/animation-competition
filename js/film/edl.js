@@ -25,7 +25,7 @@ export const SHOTS = [
   { id: 'S16', scene: 6, line: 'engine', dur: 8, mod: 'js/lamp/shots/s16.js', text: '床单正面：鹤踱步、梳毛、啄水（慢慢推近）' },
   // 第 7 场 · 乌龟
   { id: 'S17', scene: 7, line: 'engine', dur: 14, mod: 'js/lamp/shots/s17.js', text: '床单正面：乌龟爬进来；鹤啄空、一头撞在龟壳上、晕了' },
-  { id: 'S18', scene: 7, line: 'engine', dur: 3, text: '近景：小满"噗"地笑出声，捂住嘴' },
+  { id: 'S18', scene: 7, line: 'engine', dur: 3, mod: 'js/lamp/shots/s18.js', text: '近景：小满"噗"地笑出声，捂住嘴' },
   // 第 8 场 · 上手
   { id: 'S20', scene: 8, line: 'engine', dur: 9, text: '后台（机位 C）：奶奶把乌龟交给小满；签子缠在一起，乌龟翻了肚皮；奶奶笑弯了腰' },
   { id: 'S21', scene: 8, line: 'engine', dur: 6, mod: 'js/lamp/shots/s21.js', text: '床单正面：乌龟的影子忽大忽小、忽清忽虚，鹤"笑"得前仰后合' },

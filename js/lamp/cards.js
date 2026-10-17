@@ -140,7 +140,8 @@ export class Cards {
   // layers：从后往前 [{ maps:{alb,nrm,mat}, m:[a,b,c,d,e,f], clip?:{pts, invert}, alpha?, mat?:true, overlay?(ctx) }]
   //   clip：图片像素坐标的多边形，invert 时画多边形以外的部分（比如"身体 = 整张图减去头"）；
   //   alpha < 1 用来在两张变体之间过渡（固有色、法线按 alpha 叠，材质只取 mat 为真的那层）；
-  //   overlay：在这层的坐标里往固有色上补画（眨眼的眼皮、嘴形），法线和材质沿用下面的脸。
+  //   overlay(ctx, ch)：在这层的坐标里补画（眨眼的眼皮、嘴形）；ch 是 'alb' | 'nrm' | 'mat'，三张图都会调一次，
+  //   这样盖住的地方连法线和材质也一起换掉（不然闭眼时旧眼睛的法线、材质还在，光照下会透出眼形）。
   addImage(layers, depth) {
     const { W, H } = this;
     // blend：[{ maps, w }, ...] 两张变体按权重叠加（在临时画布上用 lighter 相加，颜色和透明度都是严格的渐变），再整体画上去
@@ -168,8 +169,9 @@ export class Cards {
     for (const L of layers) {
       if ((L.alpha ?? 1) <= 0) continue;
       draw(this.a, L, L.maps?.alb, 'alb');
-      if (L.overlay) { this.a.save(); this.a.setTransform(...L.m); L.overlay(this.a); this.a.restore(); }
+      if (L.overlay) { this.a.save(); this.a.setTransform(...L.m); L.overlay(this.a, 'alb'); this.a.restore(); }
       draw(this.n, L, L.maps?.nrm, 'nrm');
+      if (L.overlay) { this.n.save(); this.n.setTransform(...L.m); L.overlay(this.n, 'nrm'); this.n.restore(); }
     }
     // 材质：R 通道是深度，每次按这一帧的深度填
     const [mc, mx] = scratch('imgmat', W, H);
@@ -177,6 +179,7 @@ export class Cards {
       // 材质不能混：两张都画（覆盖范围取并集，只有一张有的地方也有材质），权重大的那张盖在上面
       const list = L.blend ? L.blend.filter((b) => b.w > 0).sort((a, b) => a.w - b.w).map((b) => b.maps) : [L.maps];
       for (const mp of list) draw(mx, { ...L, blend: null, alpha: 1 }, mp.mat);
+      if (L.overlay) { mx.save(); mx.setTransform(...L.m); L.overlay(mx, 'mat'); mx.restore(); }
     }
     const id = mx.getImageData(0, 0, W, H), D = id.data, dr = Math.round((depth / 8) * 255);
     for (let i = 0; i < D.length; i += 4) if (D[i + 3]) D[i] = dr;
