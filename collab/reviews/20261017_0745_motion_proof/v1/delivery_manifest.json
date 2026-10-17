@@ -1,0 +1,230 @@
+{
+  "status": "v1 frozen for independent motion audit; unapproved art proof",
+  "worktree": "/workspace/animation-competition-motion",
+  "new_files": [
+    {
+      "path": "js/motion/pullcord_proof.js",
+      "sha256": "2a5f608bc1faccaf6b102fab809fb6ef42104ab9effbe1028aea981803a6a295"
+    },
+    {
+      "path": "js/motion/xiaoman_proof.js",
+      "sha256": "39d2cfa61e5324e6f080e8fe316fae6efd16cf8d87318d00fffb5078cee5d431"
+    },
+    {
+      "path": "tools/motion/render_proof.cjs",
+      "sha256": "5e70a7e4fd25c05083ea54f67a8b2fbb1dcfc0a0146b76c965d282955d7e7e34"
+    },
+    {
+      "path": "tools/motion/check_proof.mjs",
+      "sha256": "c528b954972cde6f71cf116eb23cfd1a217f141902974a37b2ef8e2a617dd208"
+    },
+    {
+      "path": "dev/motion/proof.html",
+      "sha256": "1da13921dc7bcdd661f3e8c545ecb9ce75cb875e3b13f913d4b752e987319115"
+    }
+  ],
+  "source_unchanged": true,
+  "runtime_dependencies": {
+    "js/motion/pullcord_proof.js": "2a5f608bc1faccaf6b102fab809fb6ef42104ab9effbe1028aea981803a6a295",
+    "js/motion/xiaoman_proof.js": "39d2cfa61e5324e6f080e8fe316fae6efd16cf8d87318d00fffb5078cee5d431",
+    "js/cut/rig.js": "c9dc8afff50a00d65f603d5b9bd69724da505fd20260062c16e1061ef476c7ef",
+    "js/cut/render.js": "9c957baaf5e0a1cfe757cadfae7e77b25c496507f7bd577628f66e497607a73f",
+    "js/lib/figure.js": "03c8928bbe6546af7206024a163c9f56d7826f60917c24ac448010fdae67f3de",
+    "js/lib/draw.js": "e3d36d237c0f143f349bfd2fbc9afad24fc71897f56b990a5d2ed084d6c6d496",
+    "tools/motion/render_proof.cjs": "5e70a7e4fd25c05083ea54f67a8b2fbb1dcfc0a0146b76c965d282955d7e7e34"
+  },
+  "normal_frames": 72,
+  "skeleton_frames": 72,
+  "media": [
+    {
+      "path": "/tmp/laidian-motion-proof/v1/pullcord_normal_960x540_24fps.mp4",
+      "sha256": "36b65a1b1c51140f8621bcd6db4f9f8aa8a822c18a19b491f993778fef5dad08",
+      "ffprobe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 960,
+            "height": 540,
+            "coded_width": 960,
+            "coded_height": 540,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 2,
+            "pix_fmt": "yuv420p",
+            "level": 31,
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "time_base": "1/12288",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 36864,
+            "duration": "3.000000",
+            "bit_rate": "349677",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "72",
+            "extradata_size": 46,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]",
+              "encoder": "Lavc61.19.101 libx264"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/tmp/laidian-motion-proof/v1/pullcord_normal_960x540_24fps.mp4",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "3.000000",
+          "size": "132843",
+          "bit_rate": "354248",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf61.7.103"
+          }
+        }
+      }
+    },
+    {
+      "path": "/tmp/laidian-motion-proof/v1/pullcord_skeleton_960x540_24fps.mp4",
+      "sha256": "ccf1b4d2d4afb5b28008d1a1e193b4ad3b5ed32319dd778971dc52eca32fe5a5",
+      "ffprobe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 960,
+            "height": 540,
+            "coded_width": 960,
+            "coded_height": 540,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 2,
+            "pix_fmt": "yuv420p",
+            "level": 31,
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "time_base": "1/12288",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 36864,
+            "duration": "3.000000",
+            "bit_rate": "492616",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "72",
+            "extradata_size": 46,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]",
+              "encoder": "Lavc61.19.101 libx264"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/tmp/laidian-motion-proof/v1/pullcord_skeleton_960x540_24fps.mp4",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "3.000000",
+          "size": "186445",
+          "bit_rate": "497186",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf61.7.103"
+          }
+        }
+      }
+    }
+  ],
+  "frame_dirs": [
+    "normal",
+    "skeleton"
+  ],
+  "normal_speed": "Each MP4 is 72 frames at 24fps, duration exactly 3 seconds. Play without speed adjustment.",
+  "preview": "From the motion worktree: node tools/js/serve.cjs 8087 ; open http://127.0.0.1:8087/dev/motion/proof.html",
+  "animation_source": "Analytic torso/head/leg/arm/wrist/finger joint angles, FK/IK; no generated image textures, cuts, dissolves, pose swaps or temporal interpolation",
+  "known_visual_issues": [
+    "waist seam between inherited torso and skirt",
+    "closed fingers read more like a hook than a full opposed-thumb grip",
+    "existing cut head/face/hair proportions differ from approved production Xiaoman"
+  ]
+}
