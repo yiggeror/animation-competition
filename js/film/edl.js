@@ -33,11 +33,11 @@ export const SHOTS = [
   { id: 'S23', scene: 8, line: 'engine', dur: 5, mod: 'js/lamp/shots/s23.js', text: '床单正面：乌龟伸长脖子咬住鹤嘴，鹤僵住；后台小满得意地看奶奶' },
   { id: 'S24', scene: 8, line: 'engine', dur: 2.5, mod: 'js/lamp/shots/s24.js', text: '后台近景：小满回过头，得意地看奶奶' },
   // 第 9 场 · 小狗
-  { id: 'S25', scene: 9, line: 'engine', dur: 6, text: '后台：小满把手电架在木箱上，两只手伸进光里比出小狗' },
+  { id: 'S25', scene: 9, line: 'code', dur: 6, mod: 'js/code/s25.js', text: '后台：小满把手电架在木箱上，两只手伸进光里比出小狗' },
   { id: 'S26', scene: 9, line: 'engine', dur: 18, mod: 'js/lamp/shots/s26.js', text: '床单正面：暖的皮影、冷的狗影；小狗追鹤，乌龟骑在狗背上，越演越快' },
   // 第 10 场 · 来电
   { id: 'S27', scene: 10, line: 'engine', dur: 5, mod: 'js/lamp/shots/s27.js', text: '床单正面（硬切进惨白）：日光灯闪两下亮了，影子几乎看不见' },
-  { id: 'S28', scene: 10, line: 'paint', dur: 8, text: '全景（日光灯）：吊扇转起、电视嘶响、一地毛豆壳；两人被晃得眯眼；竹席上手机亮起充电图标' },
+  { id: 'S28', scene: 10, line: 'paint', dur: 8, mod: 'js/paint/shots/s28.js', text: '全景（日光灯）：吊扇转起、电视嘶响、一地毛豆壳；两人被晃得眯眼；竹席上手机亮起充电图标' },
   // 第 11 场 · 收
   { id: 'S29', scene: 11, line: 'paint', dur: 12, text: '奶奶笑笑，开始用布包皮影；手机"叮咚"开机；小满看看手机，又看看奶奶' },
   // 第 12 场 · 关灯
