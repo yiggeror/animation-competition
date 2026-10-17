@@ -1,0 +1,33 @@
+{
+  "state": "awaiting_parent_target_confirmation_before_single_image_call",
+  "tool": "image_gen.imagegen",
+  "planned_call_count": 1,
+  "automatic_retry": false,
+  "references": [
+    {
+      "path": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/batch2_scope/refs/x30_pull_cord.png",
+      "sha256": "95d5bb92875958de67263597b6efb2b29664fbd12d8de268fc9fb71bb7e593ab",
+      "actually_viewed": [
+        "original_RGBA",
+        "true_alpha_composite",
+        "arm_hand_elbow",
+        "free_hand",
+        "shoes",
+        "skirt",
+        "frozen_anchor_rois"
+      ]
+    }
+  ],
+  "frozen_files": {
+    "request.json": "2f62e15f26b619fcb16c62349e6960b206706127b30fe99ea5bdaee100c83b80",
+    "prompt.txt": "2810e039caed71d72b262c59cbfe8b33689a108744733406a594688e33c2c0b3",
+    "measurement_config.json": "867254aaca4b89de6b534dc5089ed8e37e66b5505a6ae5556c2b8c55014574d2",
+    "source_diagnostics.json": "8793c237e4a7fa3bc77d8c452c97165f4c987d1896553101ac39d18e2807735e",
+    "master_anchor_baseline.json": "a8e4795f56e5a1cf0673f78757d84635ab192859f082bf75ed80c2b55ac54bce",
+    "opus_1724_scope.txt": "cdcbb4ae620f20f5ad0b4decc4e7d6707913514e9499652ed7b63afb0e1e468c",
+    "opus_s30_4c182752_reference.js": "7dfb534c9d6cebb84713ff7619f2a80449af28b9633a321db26da5fcebf49609"
+  },
+  "technical_source_commit": "4c182752c5562a0b9fd2879deff3b7d35da8dfa2",
+  "user_authorization": "Parent supplied verbatim user continuing-production authorization; Opus scope is technical guidance only.",
+  "candidate_policy": "Preserve original PNG bytes and metadata. Audit untouched original before any prep. No repeat on rejection; no rescue body composite."
+}

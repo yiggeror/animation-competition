@@ -1,0 +1,36 @@
+{
+  "source": {
+    "hand_upper_skin_row_min8px_width": 191,
+    "cuff_yellow_roi_bbox_xyxy": [
+      636,
+      386,
+      656,
+      472
+    ],
+    "cuff_yellow_roi_centroid_xy": [
+      643.3562992125984,
+      430.46456692913387
+    ]
+  },
+  "candidate": {
+    "hand_upper_skin_row_min8px_width": 252,
+    "cuff_yellow_roi_bbox_xyxy": [
+      636,
+      407,
+      654,
+      491
+    ],
+    "cuff_yellow_roi_centroid_xy": [
+      643.1410256410256,
+      445.19132149901384
+    ]
+  },
+  "method": "Post-generation motion diagnostic only: threshold features on original pixels, no registration use. Width>=8 excludes thin rope. Cuff ROI x636:660,y380:500 includes only right-side yellow frill.",
+  "hand_top_downward_shift_px": 61,
+  "grip_estimate_xy": [
+    728,
+    272
+  ],
+  "grip_estimate_note": "Approximate equivalent grip using hand-top displacement, not an independently defined anatomical center; visual uncertainty about 2-3 px.",
+  "cuff_centroid_downward_shift_px": 14.726754569879972
+}

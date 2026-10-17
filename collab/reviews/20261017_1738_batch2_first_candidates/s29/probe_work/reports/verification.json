@@ -1,0 +1,94 @@
+{
+  "manifest_exit_code": 0,
+  "prep_exit_code": 0,
+  "diagnostic_only": true,
+  "total_frames": 48,
+  "timeline": "F0-23 mother, F24-47 the actual ~31px inward / ~10px downward candidate; no return or loop",
+  "required_pngs": 6,
+  "actual_pngs": 6,
+  "all_rgb_unchanged_from_inputs": true,
+  "alpha_normalization_exact_6_247_formula": true,
+  "all_three_maps_same_size_and_alpha": true,
+  "candidate_raw_AB_full_precision": [
+    [
+      370.15065427504385,
+      994.0737316208365
+    ],
+    [
+      367.37497422001184,
+      1340.2173754991918
+    ]
+  ],
+  "files": [
+    {
+      "file": "assets/chars/g29_cloth_probe_k01.png",
+      "bytes": 1728812,
+      "sha256": "d0d39801b9d470326cd58d796b2ec2c4d6281582d3ad6acdd062add6f3d5f7a5",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_matches_albedo": true
+    },
+    {
+      "file": "assets/chars/g29_cloth_probe_k01_n.png",
+      "bytes": 162781,
+      "sha256": "adfe87285b0243fccf27b64f0eaa67b9c2efe9bfdf5dcdc85aba47a9c82a92c0",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_matches_albedo": true
+    },
+    {
+      "file": "assets/chars/g29_cloth_probe_k01_m.png",
+      "bytes": 82533,
+      "sha256": "2c940911660493fd9df17efb05d2282cd217b0b1d476d9d83ed73efc5b43c49b",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_matches_albedo": true
+    },
+    {
+      "file": "assets/chars/g29_cloth_probe_k02.png",
+      "bytes": 1567058,
+      "sha256": "0ce4aebfb43f0c66b8af1000850d61e53b2af4624e6f4a80e03a3969cf251677",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_matches_albedo": true
+    },
+    {
+      "file": "assets/chars/g29_cloth_probe_k02_n.png",
+      "bytes": 185218,
+      "sha256": "7df367037865aad960bc9793f296faa1510d3bd673dcfd09b26f760d1fb675a9",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_matches_albedo": true
+    },
+    {
+      "file": "assets/chars/g29_cloth_probe_k02_m.png",
+      "bytes": 97627,
+      "sha256": "1f7c997a095c6342d3c54bec0e09aaa3ae7de09ca3465980af9e9487fc8ebb46",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_matches_albedo": true
+    }
+  ],
+  "flip_sha256": "e7a638fcbdf964712b83cd1acba912b860e8e16dcdb1319308acdbff3b90c598",
+  "not_a_full_s29_shot": true,
+  "no_renderer_or_audio_run": true,
+  "status": "Original C1 target not met. Actual later inward-fold state remains pending parent/Opus assessment; this is a technical probe entry only."
+}

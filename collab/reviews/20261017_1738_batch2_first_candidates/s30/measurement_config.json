@@ -1,0 +1,137 @@
+{
+  "version": "S30_halfpull_pre_generation_v1",
+  "frozen_utc": "2026-10-17T17:30:50Z",
+  "canvas": [
+    1024,
+    1536
+  ],
+  "master_path": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/batch2_scope/refs/x30_pull_cord.png",
+  "master_sha256": "95d5bb92875958de67263597b6efb2b29664fbd12d8de268fc9fb71bb7e593ab",
+  "alpha_composite_gray": 218,
+  "anchors": {
+    "A": {
+      "point": [
+        319,
+        868
+      ],
+      "patch_xyxy": [
+        295,
+        838,
+        346,
+        897
+      ],
+      "role": "fit_only_free_hanging_hand"
+    },
+    "B": {
+      "point": [
+        541,
+        1341
+      ],
+      "patch_xyxy": [
+        509,
+        1310,
+        566,
+        1373
+      ],
+      "role": "fit_only_right_sandal_buckle"
+    },
+    "H": {
+      "point": [
+        401,
+        1365
+      ],
+      "patch_xyxy": [
+        370,
+        1338,
+        430,
+        1394
+      ],
+      "role": "independent_check_left_sandal_strap_and_sole_never_fit"
+    }
+  },
+  "search_radius_px": 32,
+  "template_rescale_or_rotation_search": false,
+  "ncc_minimum": 0.9,
+  "second_peak_exclusion_radius_px": 6,
+  "ncc_peak_margin_minimum": 0.01,
+  "H_residual_max_px": 3.0,
+  "similarity_scale_deviation_max": 0.02,
+  "similarity_rotation_abs_max_deg": 2.0,
+  "frozen_target": {
+    "original_grip": [
+      727,
+      211
+    ],
+    "half_pull_grip": [
+      728,
+      231
+    ],
+    "grip_target_tolerance_px": 5,
+    "fixed_cuff_pivot": [
+      645,
+      418
+    ],
+    "suggested_elbow_center": [
+      690,
+      428
+    ],
+    "moving_region_xyxy": [
+      636,
+      181,
+      776,
+      470
+    ],
+    "rope_top_stationary": [
+      726,
+      2
+    ],
+    "no_whole_body_translation": true
+  },
+  "protected_regions": {
+    "head_and_hair": [
+      300,
+      100,
+      595,
+      480
+    ],
+    "left_free_arm_and_hand": [
+      285,
+      560,
+      426,
+      902
+    ],
+    "torso_and_skirt": [
+      350,
+      470,
+      700,
+      1028
+    ],
+    "knees_and_legs": [
+      370,
+      1028,
+      585,
+      1293
+    ],
+    "left_sandal": [
+      337,
+      1280,
+      485,
+      1433
+    ],
+    "right_sandal": [
+      458,
+      1290,
+      615,
+      1446
+    ]
+  },
+  "reject_conditions": [
+    "Any A/B/H NCC below 0.9 or peak margin below 0.01",
+    "Any peak on frozen search boundary: match invalid, do not report precise H residual",
+    "Independent H >3 source px after A/B fit",
+    "Head/body/free hand/shoe/skirt structure changed",
+    "Hand grip not distinctly lowered or single-cord grip anatomical failure",
+    "No transparency or canvas mismatch"
+  ],
+  "policy": "Audit untouched original candidate first; no body replacement, local warp, rescue composite, or automatic retry. Similarity is diagnostic only; A/B fit residual is not independent evidence."
+}

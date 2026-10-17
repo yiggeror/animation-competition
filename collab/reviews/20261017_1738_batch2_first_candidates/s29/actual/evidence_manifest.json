@@ -1,0 +1,169 @@
+{
+  "verdict": "Not accepted as the original narrow-displacement C1. Preserve as an actual later inward-fold candidate (~31px left / 10px down), pending parent and Opus review and timing decision. No retry or further generation.",
+  "generation_calls": 1,
+  "raw_sha256": "136dc120115561487f65a154afb5abb66387185517e5876da9f8636ecb143b23",
+  "frozen_planning_files_unchanged": {
+    "PILOT_ONE_STATE.md": "d2e317e67ef832162cae289c9bf42dc12801f7682c9eb73a039c43fb85fef907",
+    "PLAN_ONE_PAGE.md": "5a5d6a850bb6af3989158973c4feaa55ed80aa26325b94280b1dcbfb5428fd50",
+    "ANCHORS_AND_EXPOSURE_PLAN.json": "56e8b0b21a5056f0ffd6f4e571520142119152e67c04e32cfa173740610e5f25"
+  },
+  "files": [
+    {
+      "file": "C1_face_alpha_native.png",
+      "bytes": 182296,
+      "sha256": "233350f5c6790cd2b649ad6f28e7c643543f2826e1c1aec6511f0f1484f2ad65"
+    },
+    {
+      "file": "C1_hands_alpha_native.png",
+      "bytes": 139119,
+      "sha256": "65a46e7b29ee2b85b1d6b878e27cac9993193c41b00c2638968206e99ef96497"
+    },
+    {
+      "file": "C1_raw.png",
+      "bytes": 1613169,
+      "sha256": "136dc120115561487f65a154afb5abb66387185517e5876da9f8636ecb143b23"
+    },
+    {
+      "file": "C1_stool_alpha_native.png",
+      "bytes": 145777,
+      "sha256": "6933b50332727ca4d42cf8c1aa1e632d20eae87fc454bf3a7a0d3a41fdf30531"
+    },
+    {
+      "file": "C1_visible_alpha_preview.png",
+      "bytes": 244727,
+      "sha256": "69ff1190a1a79046d32bcb5904181ca00c2620e7b95da8a5ad10a3b1dc53f30b"
+    },
+    {
+      "file": "REPORT.md",
+      "bytes": 6031,
+      "sha256": "9ff34c13383bd7ca337a3fbccfeb666caccbbce8ec19625e003b8732c27a2dab"
+    },
+    {
+      "file": "alpha_outside_edit_metrics.json",
+      "bytes": 179,
+      "sha256": "7d6b586089c614ed4667d263958db64d655571a9a8c8eaf7e9180cf13f1a54c4"
+    },
+    {
+      "file": "anchor_A_complete_fixed_window_compare.png",
+      "bytes": 16219,
+      "sha256": "306d82f401b0c57d370be77f39c09f59755eaeae6314e77ec99f429ca47a22b5"
+    },
+    {
+      "file": "anchor_A_ncc_map.png",
+      "bytes": 2912,
+      "sha256": "e496f139607f126eff772e99b74495528c31bdfbfbcdcaf12d1f86fc0cbab462"
+    },
+    {
+      "file": "anchor_A_raw_native_compare.png",
+      "bytes": 22965,
+      "sha256": "050ea085211959a596ef47a9cc89c61981ca18e53687ec29b2ffbcca2883b86c"
+    },
+    {
+      "file": "anchor_B_complete_fixed_window_compare.png",
+      "bytes": 12737,
+      "sha256": "dd4213cfd6f842ee2c2978684c9ab13b0299eac78d85a4f1c9daab45e6dc0a2a"
+    },
+    {
+      "file": "anchor_B_ncc_map.png",
+      "bytes": 2612,
+      "sha256": "a29a14e970603e6c50d007b14051d2eb365097b20f101ae671e256b49ad663a9"
+    },
+    {
+      "file": "anchor_B_raw_native_compare.png",
+      "bytes": 12311,
+      "sha256": "10b7268a417a886538adc539f19c82be5b0cda2978069082b4bba4788d7fe21c"
+    },
+    {
+      "file": "anchor_H_complete_fixed_window_compare.png",
+      "bytes": 17663,
+      "sha256": "9096e2d51433e995dfa4db0dcb4d2d83227147d7d6d45cfbc0569e12d7fb5ae3"
+    },
+    {
+      "file": "anchor_H_ncc_map.png",
+      "bytes": 4009,
+      "sha256": "874d02f89c3f8ca7ec3e6c2856d5adc7aacfe1fb9377f4ee051c46337e70f724"
+    },
+    {
+      "file": "anchor_H_raw_native_compare.png",
+      "bytes": 13280,
+      "sha256": "3cb6d036ba67eaec3919cbded0379a43a7b104ac2dc986d023b9fa859c462ac7"
+    },
+    {
+      "file": "audit_fixed_templates.py",
+      "bytes": 5610,
+      "sha256": "35d23fadaf4064525ba5454bf5d10352a666d4341712759960a8dfafb7523991"
+    },
+    {
+      "file": "face_source_vs_raw.png",
+      "bytes": 299490,
+      "sha256": "41a9b57fd341b50dca6f462d0ffb36a37e65bf784caa7d01e3a8112f4999d34e"
+    },
+    {
+      "file": "fixed_native_contour_checks.json",
+      "bytes": 1020,
+      "sha256": "c3dbd5cb9f96f2086db721adb64cb2bb654cfba60264837865bc0f2788649cc6"
+    },
+    {
+      "file": "fixed_template_peak_audit.json",
+      "bytes": 8867,
+      "sha256": "3555e03481adbe488f40b648b699ea40116c0c23c434855bddfe64fb20ee2776"
+    },
+    {
+      "file": "hand_contacts_source_vs_raw_grid.png",
+      "bytes": 113215,
+      "sha256": "0d9c70bbed6f941c8ff6811ce353bc6dd0b787082d90191003a2c69085bdba60"
+    },
+    {
+      "file": "hand_motion_measured_comparison.png",
+      "bytes": 283334,
+      "sha256": "a9e7d677072285ed19b01a386f7e1f0eac2350b91f285fa4bb55dfe98e505dd5"
+    },
+    {
+      "file": "input_manifest.json",
+      "bytes": 1041,
+      "sha256": "6c70c8f4a5e391ec169190ed085f6bdaf89e2ac48a57e4fc2580c227fe13b67d"
+    },
+    {
+      "file": "measure_frozen_anchors.py",
+      "bytes": 3662,
+      "sha256": "b973f5910d08f42a1b1cff942fab91718d1efdfbe07a09f472ffe458e88fe062"
+    },
+    {
+      "file": "raw_alpha_metrics.json",
+      "bytes": 702,
+      "sha256": "0f2b57049b5a6c2d97a11ab667ada7270564696fbf767ce3073c29c14564fb66"
+    },
+    {
+      "file": "raw_anchor_measurements.json",
+      "bytes": 193,
+      "sha256": "e44be9ea963de3f732d720b34548f8c510e7efed00858dd20dbc51c3b1664f36"
+    },
+    {
+      "file": "raw_geometry_and_contacts.json",
+      "bytes": 2944,
+      "sha256": "66b05ed50592d8388f35947144a6af59fef106f1562311dae7f3ee43b8be33a7"
+    },
+    {
+      "file": "raw_output_manifest.json",
+      "bytes": 486,
+      "sha256": "973ba67e611a638e1f696f77290275039d3b83da2e4d975f0279619dd30ba36d"
+    },
+    {
+      "file": "request.json",
+      "bytes": 3297,
+      "sha256": "b870685dbed568cfabcd446ec77420fff9b0b228542e6cc83227fa2e3eb05838"
+    },
+    {
+      "file": "request.txt",
+      "bytes": 3088,
+      "sha256": "1852f4921cbdc9e343753cee6a3833ac5a8a24cdbc4592001f0df5c76715a8c3"
+    },
+    {
+      "file": "tool_result_metadata.json",
+      "bytes": 724,
+      "sha256": "4c520b1d3e8eab093dd46b66614211b4b2b19b4d3156ae86f5f131ab0ddcb2b0"
+    }
+  ],
+  "repository_mutations": false,
+  "mother_image_restoration_or_alpha_cleanup": false
+}

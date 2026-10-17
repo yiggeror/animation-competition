@@ -1,0 +1,126 @@
+{
+  "status": "PASS structural/alpha/24-frame-manifest checks only; not an animation or scene-light approval",
+  "validation_exit": 0,
+  "map_count": 6,
+  "duration_frames": 24,
+  "fps": 24,
+  "timelineFrames": [
+    [
+      0,
+      0
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      18,
+      0
+    ]
+  ],
+  "alpha_formula": "round(clip((alpha-6)/(247-6),0,1)*255); RGB untouched; RGBA retained, no gray-background recut",
+  "frames": [
+    {
+      "file": "x31_mouth_probe_k01",
+      "size": [
+        1024,
+        1536
+      ],
+      "rgb_identical_to_raw": true,
+      "alpha_exact_6_247_remap": true,
+      "raw_alpha_min_max": [
+        0,
+        255
+      ],
+      "prepared_alpha_min_max": [
+        0,
+        255
+      ],
+      "prepared_alpha_opaque_count": 621568,
+      "all_three_map_alpha_identical": true,
+      "all_three_sizes_identical": true,
+      "original_sha256": "0eda0496336ff1128474680389d8c55b36e6eb54d6d6584ce695f399e22e5cbc"
+    },
+    {
+      "file": "x31_mouth_probe_k02",
+      "size": [
+        1024,
+        1536
+      ],
+      "rgb_identical_to_raw": true,
+      "alpha_exact_6_247_remap": true,
+      "raw_alpha_min_max": [
+        0,
+        254
+      ],
+      "prepared_alpha_min_max": [
+        0,
+        255
+      ],
+      "prepared_alpha_opaque_count": 633957,
+      "all_three_map_alpha_identical": true,
+      "all_three_sizes_identical": true,
+      "original_sha256": "a733a8eccdc8aa42cf54761b31bf5ca3594370c1958067c5b3d11f6cba1e893f"
+    }
+  ],
+  "point_transforms": [
+    {
+      "file": "x31_mouth_probe_k01",
+      "M": [
+        1.0,
+        0.0,
+        -0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "raw_grip": [
+        850,
+        607
+      ],
+      "raw_tip": [
+        942,
+        470
+      ],
+      "master_grip": [
+        850.0,
+        607.0
+      ],
+      "master_tip": [
+        942.0,
+        470.0
+      ],
+      "scale": 1.0,
+      "rotation_deg": 0.0
+    },
+    {
+      "file": "x31_mouth_probe_k02",
+      "M": [
+        0.9972170974093425,
+        -8.52699958140195e-05,
+        8.52699958140195e-05,
+        0.9972170974093425,
+        0.6557340196275732,
+        3.3264988139719662
+      ],
+      "raw_grip": [
+        851,
+        607
+      ],
+      "raw_tip": [
+        942,
+        469
+      ],
+      "master_grip": [
+        849.3392428024372,
+        608.5647121750052
+      ],
+      "master_tip": [
+        940.074231407265,
+        470.94099316289675
+      ],
+      "scale": 0.997217101054974,
+      "rotation_deg": -0.00489924498890618
+    }
+  ]
+}

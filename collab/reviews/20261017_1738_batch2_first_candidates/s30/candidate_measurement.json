@@ -1,0 +1,156 @@
+{
+  "candidate_mode": "RGBA",
+  "candidate_size": [
+    1024,
+    1536
+  ],
+  "fit_points": [
+    "A",
+    "B"
+  ],
+  "independent_check": "H",
+  "failures": [
+    "A_NCC_below_frozen_minimum"
+  ],
+  "candidate_to_master": null,
+  "independent_H_residual_px": null,
+  "measurement_scope": "Untouched original; no prep, body composite or rescue warp.",
+  "automatic_visual_acceptance": false,
+  "matches": {
+    "A": {
+      "point": [
+        318.9806544350001,
+        867.9737690301703
+      ],
+      "ncc": 0.7710205080894708,
+      "peak_margin": 0.6012954523676979,
+      "peak_on_search_boundary": false,
+      "fixed_template_xyxy": [
+        295,
+        838,
+        346,
+        897
+      ],
+      "fixed_search_window_xyxy": [
+        263,
+        806,
+        378,
+        929
+      ]
+    },
+    "B": {
+      "point": [
+        541.4394615571306,
+        1340.8356901479417
+      ],
+      "ncc": 0.9064844800561237,
+      "peak_margin": 0.27598219379931477,
+      "peak_on_search_boundary": false,
+      "fixed_template_xyxy": [
+        509,
+        1310,
+        566,
+        1373
+      ],
+      "fixed_search_window_xyxy": [
+        477,
+        1278,
+        598,
+        1405
+      ]
+    },
+    "H": {
+      "point": [
+        400.9870423001183,
+        1365.1260327094908
+      ],
+      "ncc": 0.9798211255538862,
+      "peak_margin": 0.23169642258284107,
+      "peak_on_search_boundary": false,
+      "fixed_template_xyxy": [
+        370,
+        1338,
+        430,
+        1394
+      ],
+      "fixed_search_window_xyxy": [
+        338,
+        1306,
+        462,
+        1426
+      ]
+    }
+  },
+  "registration_valid": false,
+  "non_target_raw": {
+    "pixels": 232900,
+    "premultiplied_rgb_mae_255": 7.750744342803955,
+    "premultiplied_rgb_p99_abs_255": 60.8784294128418,
+    "alpha_mae_255": 7.488231182098389,
+    "alpha_IoU_gt128": 0.9751729203079097,
+    "source_opaque_pixels_lost": 10,
+    "extra_opaque_pixels": 5331
+  },
+  "protected_regions_raw": {
+    "head_and_hair": {
+      "pixels": 79667,
+      "premultiplied_rgb_mae_255": 8.865134239196777,
+      "premultiplied_rgb_p99_abs_255": 119.66667175292969,
+      "alpha_mae_255": 9.93423843383789,
+      "alpha_IoU_gt128": 0.9653709860580936,
+      "source_opaque_pixels_lost": 331,
+      "extra_opaque_pixels": 2200
+    },
+    "left_free_arm_and_hand": {
+      "pixels": 32835,
+      "premultiplied_rgb_mae_255": 8.868309020996094,
+      "premultiplied_rgb_p99_abs_255": 66.54871368408203,
+      "alpha_mae_255": 11.902177810668945,
+      "alpha_IoU_gt128": 0.950924224408172,
+      "source_opaque_pixels_lost": 0,
+      "extra_opaque_pixels": 1362
+    },
+    "torso_and_skirt": {
+      "pixels": 163048,
+      "premultiplied_rgb_mae_255": 8.729681968688965,
+      "premultiplied_rgb_p99_abs_255": 110.20122528076172,
+      "alpha_mae_255": 7.722370147705078,
+      "alpha_IoU_gt128": 0.9752684923935189,
+      "source_opaque_pixels_lost": 0,
+      "extra_opaque_pixels": 3848
+    },
+    "knees_and_legs": {
+      "pixels": 41056,
+      "premultiplied_rgb_mae_255": 6.8747358322143555,
+      "premultiplied_rgb_p99_abs_255": 53.37236404418945,
+      "alpha_mae_255": 8.809601783752441,
+      "alpha_IoU_gt128": 0.9678229434003919,
+      "source_opaque_pixels_lost": 0,
+      "extra_opaque_pixels": 1166
+    },
+    "left_sandal": {
+      "pixels": 13427,
+      "premultiplied_rgb_mae_255": 9.752156257629395,
+      "premultiplied_rgb_p99_abs_255": 56.610076904296875,
+      "alpha_mae_255": 11.796082496643066,
+      "alpha_IoU_gt128": 0.9521618336516756,
+      "source_opaque_pixels_lost": 8,
+      "extra_opaque_pixels": 543
+    },
+    "right_sandal": {
+      "pixels": 14157,
+      "premultiplied_rgb_mae_255": 11.693058013916016,
+      "premultiplied_rgb_p99_abs_255": 79.20745849609375,
+      "alpha_mae_255": 11.98777961730957,
+      "alpha_IoU_gt128": 0.9523373052245646,
+      "source_opaque_pixels_lost": 2,
+      "extra_opaque_pixels": 570
+    }
+  },
+  "H_status": "Not reported: one or more fixed-window matches invalid. No enlarged search.",
+  "master_sha256": "95d5bb92875958de67263597b6efb2b29664fbd12d8de268fc9fb71bb7e593ab",
+  "candidate_sha256": "d6a43ad689c8cf829cdd7a4901e99e60b73d2075c3b9dd463505d422b9d3093a",
+  "config_sha256": "867254aaca4b89de6b534dc5089ed8e37e66b5505a6ae5556c2b8c55014574d2",
+  "measurement_script_sha256": "ed667ec7c8933aca95144d489c15d7e0f5eed57225f00b5c356cbd418791bc91",
+  "helper_script_sha256": "fb800d0377fadfd39fb41bcbbcbcd4cac15b628e903e110254c6e8ea61f33841"
+}
