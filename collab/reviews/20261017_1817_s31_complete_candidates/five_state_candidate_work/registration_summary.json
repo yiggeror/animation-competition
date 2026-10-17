@@ -1,0 +1,97 @@
+{
+  "uncertainty_model": "Each candidate A.x,A.y,B.x,B.y independently -1/0/+1px: 81 grid. Source target fixed. Check-point own error excluded. Not a rigorous continuous supremum. Prior mouth report propagated only B radius1; that old report is retained unchanged and is not directly comparable.",
+  "states": [
+    {
+      "state": "A",
+      "method": "Identity reference",
+      "checks": {
+        "H": {
+          "nominal_px": 0.0,
+          "worst_81_grid_px": 0
+        },
+        "right_fist": {
+          "nominal_px": 0.0,
+          "worst_81_grid_px": 0
+        },
+        "left_palm": {
+          "nominal_px": 0.0,
+          "worst_81_grid_px": 0
+        }
+      },
+      "moving_left_palm_excluded": false
+    },
+    {
+      "state": "M",
+      "method": "Manual same frozen AB features; independent H not fit",
+      "checks": {
+        "H": {
+          "nominal_px": 1.131499106521312,
+          "worst_81_grid_px": 3.74099963543644
+        },
+        "right_fist": {
+          "nominal_px": 1.6211890159764377,
+          "worst_81_grid_px": 5.7129808087925165
+        },
+        "left_palm": {
+          "nominal_px": 1.698506480629532,
+          "worst_81_grid_px": 6.9744489500016265
+        }
+      },
+      "moving_left_palm_excluded": false
+    },
+    {
+      "state": "B",
+      "method": "Manual same frozen AB features; independent H not fit",
+      "checks": {
+        "H": {
+          "nominal_px": 1.0,
+          "worst_81_grid_px": 3.74161049671488
+        },
+        "right_fist": {
+          "nominal_px": 1.0,
+          "worst_81_grid_px": 5.040351973529075
+        },
+        "left_palm": {
+          "nominal_px": 0.0,
+          "worst_81_grid_px": 5.555488178971265
+        }
+      },
+      "moving_left_palm_excluded": false
+    },
+    {
+      "state": "R",
+      "method": "Manual same frozen AB features; independent H not fit",
+      "checks": {
+        "H": {
+          "nominal_px": 1.131499106521312,
+          "worst_81_grid_px": 3.74099963543644
+        },
+        "right_fist": {
+          "nominal_px": 1.6211890159764377,
+          "worst_81_grid_px": 5.7129808087925165
+        },
+        "left_palm": {
+          "nominal_px": 1.698506480629532,
+          "worst_81_grid_px": 6.9744489500016265
+        }
+      },
+      "moving_left_palm_excluded": false
+    },
+    {
+      "state": "I",
+      "method": "Manual same frozen AB features; independent H not fit",
+      "checks": {
+        "H": {
+          "nominal_px": 1.131499106521312,
+          "worst_81_grid_px": 3.74099963543644
+        },
+        "right_fist": {
+          "nominal_px": 1.6211890159764377,
+          "worst_81_grid_px": 5.7129808087925165
+        }
+      },
+      "moving_left_palm_excluded": true
+    }
+  ],
+  "status": "Nominal static check within3px; uncertainty bounds do not certify <=3px. Requires actual composite, lighting/occlusion and full-speed review."
+}

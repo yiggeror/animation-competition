@@ -1,0 +1,121 @@
+{
+  "matches": {
+    "A": {
+      "point_normalized": [
+        272.0,
+        1188.0
+      ],
+      "ncc": 0.9866442904510737,
+      "rival_ncc": 0.9631885860274787,
+      "registered_normalized": [
+        272.0,
+        1187.0
+      ],
+      "residual_px": 0.0
+    },
+    "B": {
+      "point_normalized": [
+        630.0,
+        1174.0
+      ],
+      "ncc": 0.9888200295006607,
+      "rival_ncc": 0.9846959334290448,
+      "registered_normalized": [
+        630.0,
+        1176.0
+      ],
+      "residual_px": 0.0
+    },
+    "H": {
+      "point_normalized": [
+        530.0,
+        873.0
+      ],
+      "ncc": 0.9821643753522641,
+      "rival_ncc": 0.564199904628829,
+      "registered_normalized": [
+        532.5512153318791,
+        874.2617793705202
+      ],
+      "residual_px": 2.84618812615848
+    },
+    "right_fist": {
+      "point_normalized": [
+        477.0,
+        642.0
+      ],
+      "ncc": 0.968718751760658,
+      "rival_ncc": 0.2755798074731381,
+      "registered_normalized": [
+        481.5013555624805,
+        642.8939077594265
+      ],
+      "residual_px": 4.589256255891269
+    },
+    "left_palm": {
+      "point_normalized": [
+        910.0,
+        664.0
+      ],
+      "ncc": 0.6488648298182441,
+      "rival_ncc": 0.6363056562353882,
+      "registered_normalized": [
+        914.1755998753506,
+        668.5096603303209
+      ],
+      "residual_px": 88.89289022926722
+    },
+    "rod_tip": {
+      "point_normalized": [
+        915.0,
+        424.0
+      ],
+      "ncc": 0.9453728485944101,
+      "rival_ncc": 0.8336231920618882,
+      "registered_normalized": [
+        921.1820660641945,
+        428.63002492988466
+      ],
+      "residual_px": 50.26686224554371
+    },
+    "collar": {
+      "point_normalized": [
+        570.0,
+        597.0
+      ],
+      "ncc": 0.8558773184320583,
+      "rival_ncc": 0.520229393806147,
+      "registered_normalized": [
+        574.8474446868183,
+        598.6867715799314
+      ],
+      "residual_px": 5.132535275536588
+    },
+    "jaw": {
+      "point_normalized": [
+        474.0,
+        510.0
+      ],
+      "ncc": 0.9939650186401477,
+      "rival_ncc": 0.9032244640705388,
+      "registered_normalized": [
+        479.6067933935806,
+        510.9119975070115
+      ],
+      "residual_px": 6.66944213546044
+    }
+  },
+  "H_pass": true,
+  "note": "H never enters fit. Diagnostic anatomy points are secondary checks, not fit anchors. NCC only establishes local texture alignment, not anatomical validity.",
+  "candidate_sha256": "f0c998e2025e90e62858d54e8e1ef0a4cd58a3cf369deee5550238b676b7684a",
+  "moving_left_arm_expected": true,
+  "important": "Automatic NCC only. Ambiguous slanted fold peaks require same-feature manual review. Moving left palm/rod are NOT static registration checks.",
+  "M_raw": [
+    0.9996727952633219,
+    0.008367092552196946,
+    -0.008367092552196946,
+    0.9996727952633219,
+    10.029105640386433,
+    -2.88712994702405
+  ]
+}

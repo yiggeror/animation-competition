@@ -1,0 +1,142 @@
+{
+  "scope": "Independent same-frozen-feature audit only; manual anchor uncertainty is not eliminated by fitting H",
+  "points": {
+    "A": {
+      "mother": {
+        "sha256": "0eda0496336ff1128474680389d8c55b36e6eb54d6d6584ce695f399e22e5cbc",
+        "white_components": [
+          {
+            "n": 85,
+            "bbox": [
+              260,
+              1180,
+              270,
+              1197
+            ],
+            "center": [
+              264.09411764705885,
+              1187.4470588235295
+            ]
+          }
+        ],
+        "black_x_at_y": {
+          "y": 1187,
+          "x": [
+            275
+          ]
+        }
+      },
+      "candidate": {
+        "sha256": "044e34586a04e3fa61705aa89890d349e817e497743e13d5a0275f2ca44053e1",
+        "white_components": [
+          {
+            "n": 87,
+            "bbox": [
+              261,
+              1180,
+              270,
+              1198
+            ],
+            "center": [
+              264.57471264367814,
+              1187.8505747126437
+            ]
+          }
+        ],
+        "black_x_at_y": {
+          "y": 1187,
+          "x": [
+            275,
+            276
+          ]
+        }
+      }
+    },
+    "B": {
+      "mother": {
+        "sha256": "0eda0496336ff1128474680389d8c55b36e6eb54d6d6584ce695f399e22e5cbc",
+        "white_components": [
+          {
+            "n": 88,
+            "bbox": [
+              624,
+              1168,
+              631,
+              1187
+            ],
+            "center": [
+              627.0340909090909,
+              1176.7613636363637
+            ]
+          }
+        ],
+        "black_x_at_y": {
+          "y": 1176,
+          "x": [
+            631
+          ]
+        }
+      },
+      "candidate": {
+        "sha256": "044e34586a04e3fa61705aa89890d349e817e497743e13d5a0275f2ca44053e1",
+        "white_components": [
+          {
+            "n": 96,
+            "bbox": [
+              624,
+              1168,
+              632,
+              1187
+            ],
+            "center": [
+              627.3958333333334,
+              1177.09375
+            ]
+          }
+        ],
+        "black_x_at_y": {
+          "y": 1176,
+          "x": [
+            631,
+            632
+          ]
+        }
+      }
+    }
+  },
+  "uncertainty": {
+    "H": {
+      "nominal": 1.0,
+      "worst_independent_AB_xy_plus_minus_1": 3.74161049671488,
+      "worst_offsets": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "grid81_note": "This does not include independent check-point localization error"
+    },
+    "right_fist": {
+      "nominal": 1.0,
+      "worst_independent_AB_xy_plus_minus_1": 5.040351973529013,
+      "worst_offsets": [
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "grid81_note": "This does not include independent check-point localization error"
+    },
+    "left_palm": {
+      "nominal": 0.0,
+      "worst_independent_AB_xy_plus_minus_1": 5.555488178971585,
+      "worst_offsets": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "grid81_note": "This does not include independent check-point localization error"
+    }
+  }
+}
