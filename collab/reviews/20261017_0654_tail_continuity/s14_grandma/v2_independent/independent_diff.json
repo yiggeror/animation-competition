@@ -1,0 +1,75 @@
+{
+  "excluded_target_rois": [
+    [
+      698,
+      102,
+      790,
+      190
+    ],
+    [
+      728,
+      267,
+      818,
+      354
+    ]
+  ],
+  "non_target_rgb_mae": 2.3423441824058933,
+  "non_target_max_channel_diff_gt8_fraction": 0.0429612482963355,
+  "non_target_max_channel_diff_gt32_fraction": 0.010130140056957952,
+  "clip_and_contact": {
+    "roi": [
+      800,
+      48,
+      887,
+      250
+    ],
+    "raw_mae": 6.951557224687986,
+    "best_local_sampling_dxdy": [
+      0,
+      0
+    ],
+    "best_mae": 6.951557224687986
+  },
+  "torso": {
+    "roi": [
+      320,
+      550,
+      605,
+      820
+    ],
+    "raw_mae": 5.22256443578081,
+    "best_local_sampling_dxdy": [
+      0,
+      0
+    ],
+    "best_mae": 5.22256443578081
+  },
+  "head": {
+    "roi": [
+      280,
+      80,
+      580,
+      350
+    ],
+    "raw_mae": 6.241234567901235,
+    "best_local_sampling_dxdy": [
+      0,
+      0
+    ],
+    "best_mae": 6.241234567901235
+  },
+  "feet": {
+    "roi": [
+      140,
+      1270,
+      615,
+      1490
+    ],
+    "raw_mae": 2.7933684210526315,
+    "best_local_sampling_dxdy": [
+      0,
+      0
+    ],
+    "best_mae": 2.7933684210526315
+  }
+}
