@@ -1,6 +1,7 @@
-// S03 · 第 1 场：中近景，奶奶拿着一块西瓜（合作方画的 anim_03_grandma_watermelon 候选），看一眼趴在竹席上玩手机的小满（画外左边）。
+// S03 · 第 1 场：中近景，奶奶拿着一块西瓜，看一眼趴在竹席上玩手机的小满（画外左边），把瓜往前递了递，又收回来自己咬一口、嚼。
 // 停电前：日光灯的冷白光从头顶照下来，左边电视的光一闪一闪地打在她脸上；背景是虚掉的屋子（bg_01 后墙一带）。镜头慢慢推近。
 import { renderPaint, loadImg } from '../paintshot.js';
+import { flipLayer, flipNrm } from '../../rig/flipbook.js';
 export const DURATION = 6;
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
 let BG = null;
@@ -16,9 +17,8 @@ const tv = (t) => 0.55 + 0.25 * Math.sin(t * 3.1) + 0.2 * Math.sin(t * 7.7 + 1) 
 const shot = {
   size: [1920, 1080],
   layers: async (t) => {
-    const br = 1 + 0.004 * Math.sin(t * 1.9);
-    const look = sstep(1.2, 2.0, t);               // 抬眼看一下小满（整张图往左偏一点点）
-    return [{ img: '/assets/chars/g03_watermelon.png', x: 560 - 10 * look, y: 70 + 4 * Math.sin(t * 1.9), sc: 0.86 * br, rot: -0.012 * look }];
+    // 逐帧：看小满 → 递瓜 → 收回 → 咬（3.8 秒脆响）→ 退瓜 → 嚼（assets/flips/g03_watermelon.flip.json）；不再整张图摇摆
+    return [{ img: await flipLayer('g03_watermelon', t), nrm: await flipNrm('g03_watermelon', t), x: 560, y: 70, sc: 0.86 }];
   },
   light: (t) => ({
     ambient: [0.62, 0.66, 0.72],
