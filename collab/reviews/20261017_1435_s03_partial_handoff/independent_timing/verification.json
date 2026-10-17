@@ -1,0 +1,208 @@
+{
+  "sha256": "51183bdc60990a875e8a2200bedf7b66c3c526134d4759fecbc9058598ab0d54",
+  "total_frames": 144,
+  "fps24": true,
+  "local0": true,
+  "integer_strict_increasing": true,
+  "within_bounds": true,
+  "non_on3_starts": [
+    91
+  ],
+  "accepted_exception_frames": [
+    91
+  ],
+  "face_groups": {
+    "g03_watermelon_k01": "left_open_smile",
+    "g03_watermelon_k02": "closed_blink",
+    "g03_watermelon_k03": "left_open_smile",
+    "g03_watermelon_k06": "down_gaze_smile",
+    "g03_watermelon_k07": "open_prebite",
+    "g03_watermelon_k08": "contact_bite"
+  },
+  "face_runs": [
+    {
+      "start": 0,
+      "end_exclusive": 18,
+      "face": "left_open_smile",
+      "frames": 18
+    },
+    {
+      "start": 18,
+      "end_exclusive": 21,
+      "face": "closed_blink",
+      "frames": 3
+    },
+    {
+      "start": 21,
+      "end_exclusive": 27,
+      "face": "left_open_smile",
+      "frames": 6
+    },
+    {
+      "start": 27,
+      "end_exclusive": 33,
+      "face": "down_gaze_smile",
+      "frames": 6
+    },
+    {
+      "start": 33,
+      "end_exclusive": 66,
+      "face": "left_open_smile",
+      "frames": 33
+    },
+    {
+      "start": 66,
+      "end_exclusive": 75,
+      "face": "down_gaze_smile",
+      "frames": 9
+    },
+    {
+      "start": 75,
+      "end_exclusive": 81,
+      "face": "left_open_smile",
+      "frames": 6
+    },
+    {
+      "start": 81,
+      "end_exclusive": 91,
+      "face": "open_prebite",
+      "frames": 10
+    },
+    {
+      "start": 91,
+      "end_exclusive": 144,
+      "face": "contact_bite",
+      "frames": 53
+    }
+  ],
+  "max_same_face_frames": 53,
+  "max_prebite_same_face_frames": 33,
+  "segments": [
+    {
+      "start": 0,
+      "end_exclusive": 18,
+      "frames": 18,
+      "file": "g03_watermelon_k01",
+      "face": "left_open_smile"
+    },
+    {
+      "start": 18,
+      "end_exclusive": 21,
+      "frames": 3,
+      "file": "g03_watermelon_k02",
+      "face": "closed_blink"
+    },
+    {
+      "start": 21,
+      "end_exclusive": 27,
+      "frames": 6,
+      "file": "g03_watermelon_k01",
+      "face": "left_open_smile"
+    },
+    {
+      "start": 27,
+      "end_exclusive": 33,
+      "frames": 6,
+      "file": "g03_watermelon_k06",
+      "face": "down_gaze_smile"
+    },
+    {
+      "start": 33,
+      "end_exclusive": 66,
+      "frames": 33,
+      "file": "g03_watermelon_k03",
+      "face": "left_open_smile"
+    },
+    {
+      "start": 66,
+      "end_exclusive": 75,
+      "frames": 9,
+      "file": "g03_watermelon_k06",
+      "face": "down_gaze_smile"
+    },
+    {
+      "start": 75,
+      "end_exclusive": 81,
+      "frames": 6,
+      "file": "g03_watermelon_k01",
+      "face": "left_open_smile"
+    },
+    {
+      "start": 81,
+      "end_exclusive": 91,
+      "frames": 10,
+      "file": "g03_watermelon_k07",
+      "face": "open_prebite"
+    },
+    {
+      "start": 91,
+      "end_exclusive": 144,
+      "frames": 53,
+      "file": "g03_watermelon_k08",
+      "face": "contact_bite"
+    }
+  ],
+  "transitions": [
+    {
+      "frame": 18,
+      "from": "g03_watermelon_k01",
+      "to": "g03_watermelon_k02",
+      "state_order_legal": true
+    },
+    {
+      "frame": 21,
+      "from": "g03_watermelon_k02",
+      "to": "g03_watermelon_k01",
+      "state_order_legal": true
+    },
+    {
+      "frame": 27,
+      "from": "g03_watermelon_k01",
+      "to": "g03_watermelon_k06",
+      "state_order_legal": true
+    },
+    {
+      "frame": 33,
+      "from": "g03_watermelon_k06",
+      "to": "g03_watermelon_k03",
+      "state_order_legal": true
+    },
+    {
+      "frame": 66,
+      "from": "g03_watermelon_k03",
+      "to": "g03_watermelon_k06",
+      "state_order_legal": true
+    },
+    {
+      "frame": 75,
+      "from": "g03_watermelon_k06",
+      "to": "g03_watermelon_k01",
+      "state_order_legal": true
+    },
+    {
+      "frame": 81,
+      "from": "g03_watermelon_k01",
+      "to": "g03_watermelon_k07",
+      "state_order_legal": true
+    },
+    {
+      "frame": 91,
+      "from": "g03_watermelon_k07",
+      "to": "g03_watermelon_k08",
+      "state_order_legal": true
+    }
+  ],
+  "all_current_transitions_legal": true,
+  "tail_unfinished_start_frame": 102,
+  "tail_unfinished_frames": 42,
+  "bite_start_local": 3.7916666666666665,
+  "bite_start_global": 19.791666666666668,
+  "rustle_local": 3.8,
+  "rustle_global": 19.8,
+  "bite_minus_rustle_ms": -8.333333333333304,
+  "crunch_frame": 96,
+  "crunch_local": 4,
+  "crunch_global": 20,
+  "frames96_file": "g03_watermelon_k08",
+  "no_chewing_state_available_in_frozen_bank": true
+}

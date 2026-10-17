@@ -1,0 +1,692 @@
+{
+  "method": "Two fixed lower-garment NCC patch centers, global similarity only; third independently matched clothing holdout. These are not rigid world/stool anchors. No manual target fitting or local deformation.",
+  "target_size": [
+    941,
+    1212
+  ],
+  "target_anchors": [
+    [
+      165,
+      1084
+    ],
+    [
+      843,
+      1147
+    ]
+  ],
+  "holdout": [
+    594,
+    1111
+  ],
+  "patches": [
+    [
+      -35,
+      -25,
+      35,
+      25
+    ],
+    [
+      -30,
+      -25,
+      30,
+      25
+    ],
+    [
+      -35,
+      -35,
+      35,
+      35
+    ]
+  ],
+  "search_native_px": 40,
+  "frames": [
+    {
+      "file": "g03_watermelon_k01",
+      "source": "/tmp/laidian-batch1-g03-2e96/originals/g03_watermelon_k01.png",
+      "sha256": "3da07329e9676cf1267f45642acb470dbec3fd29309bdf296e9580c5041a1b0f",
+      "size": [
+        941,
+        1212
+      ],
+      "anchors": [
+        [
+          165.0,
+          1084.0
+        ],
+        [
+          843.0,
+          1147.0
+        ]
+      ],
+      "holdout_native": [
+        594.0,
+        1111.0
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        594.0,
+        1111.0
+      ],
+      "score": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "check_residual_px": 0.0,
+      "passes_3px": true,
+      "matrix": [
+        [
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "translation": [
+        0.0,
+        0.0
+      ],
+      "registered_path": "/tmp/laidian-batch1-g03-2e96/diagnostics/registered_rgba/g03_watermelon_k01.png",
+      "registered_sha256": "ecaf711bfa31e2e5f9ebeaa6261b33585428538337f0149597f6ae05f00fc61d"
+    },
+    {
+      "file": "g03_watermelon_k02",
+      "source": "/tmp/laidian-batch1-g03-2e96/originals/g03_watermelon_k02.png",
+      "sha256": "d32ddb6f56247d75530d02fce87777d7240fb58fbd18dc2ce58510a4b6929aa1",
+      "size": [
+        1105,
+        1423
+      ],
+      "anchors": [
+        [
+          194.3961204444239,
+          1272.1619870258057
+        ],
+        [
+          994.2006198380253,
+          1345.9865092242696
+        ]
+      ],
+      "holdout_native": [
+        698.8407146267833,
+        1304.933838960075
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        592.6284472498332,
+        1112.0441773773957
+      ],
+      "score": [
+        0.9886867333262439,
+        0.9434662317367004,
+        0.993994188419026
+      ],
+      "check_residual_px": 1.7237933002407833,
+      "passes_3px": true,
+      "matrix": [
+        [
+          0.8477550402875449,
+          -0.0005187382788506928
+        ],
+        [
+          0.0005187382788506928,
+          0.8477550402875449
+        ]
+      ],
+      "translation": [
+        0.8596282004640443,
+        5.41742272772035
+      ],
+      "registered_path": "/tmp/laidian-batch1-g03-2e96/diagnostics/registered_rgba/g03_watermelon_k02.png",
+      "registered_sha256": "41cb7f8da304bbcf6fec7e53f35a44b76744858ca6bf8e08ef085ae36471af8b"
+    },
+    {
+      "file": "g03_watermelon_k03",
+      "source": "/tmp/laidian-batch1-g03-2e96/originals/g03_watermelon_k03.png",
+      "sha256": "b36fd7eae2ba99292fb572f201db6648110ee6ee65ffa06c162437395176b413",
+      "size": [
+        1105,
+        1423
+      ],
+      "anchors": [
+        [
+          197.60280450851005,
+          1267.2106165578894
+        ],
+        [
+          991.1792390319895,
+          1342.0483595065134
+        ]
+      ],
+      "holdout_native": [
+        697.9792957172427,
+        1301.2559077279755
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        592.4862791397,
+        1112.4967107178873
+      ],
+      "score": [
+        0.97726515744229,
+        0.9325421728287855,
+        0.993524115882791
+      ],
+      "check_residual_px": 2.128730564431797,
+      "passes_3px": true,
+      "matrix": [
+        [
+          0.8542495183078543,
+          0.0011720432016956522
+        ],
+        [
+          -0.0011720432016956522,
+          0.8542495183078543
+        ]
+      ],
+      "translation": [
+        -5.287326155929037,
+        1.7175402344842041
+      ],
+      "registered_path": "/tmp/laidian-batch1-g03-2e96/diagnostics/registered_rgba/g03_watermelon_k03.png",
+      "registered_sha256": "f13e8b30553d82eb45387cd52ffdc40758c66b7fa4a42ec6239004485d00a887"
+    },
+    {
+      "file": "g03_watermelon_k04",
+      "source": "/tmp/laidian-batch1-g03-2e96/originals/g03_watermelon_k04.png",
+      "sha256": "216252f1ed2d5dde96c9ce2ac40619e4442e392362215aa743ac3dd138b12f9d",
+      "size": [
+        1105,
+        1423
+      ],
+      "anchors": [
+        [
+          196.27787607140448,
+          1268.6909687000987
+        ],
+        [
+          1004.1530792642025,
+          1346.1282317401526
+        ]
+      ],
+      "holdout_native": [
+        699.753009223609,
+        1301.1790136740105
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        587.4972684969655,
+        1110.02975766986
+      ],
+      "score": [
+        0.9773921411634672,
+        0.7913965935788463,
+        0.9946133083266132
+      ],
+      "check_residual_px": 6.574715748969922,
+      "passes_3px": false,
+      "matrix": [
+        [
+          0.8390047677965305,
+          0.0024387837229472753
+        ],
+        [
+          -0.0024387837229472753,
+          0.8390047677965305
+        ]
+      ],
+      "translation": [
+        -2.7721367208009156,
+        20.04090768955598
+      ],
+      "registered_path": "/tmp/laidian-batch1-g03-2e96/diagnostics/registered_rgba/g03_watermelon_k04.png",
+      "registered_sha256": "542b072d66c32a5e2058ea9b66edc8514fae7e7aae17bc32d3353fb9c1fb1ed3"
+    },
+    {
+      "file": "g03_watermelon_k05",
+      "source": "/tmp/laidian-batch1-g03-2e96/originals/g03_watermelon_k05.png",
+      "sha256": "48f965aa4cfc6e9943ef7b17ab4f252a7479873d56dfb7d5c0fe1fc284924c70",
+      "size": [
+        1105,
+        1423
+      ],
+      "anchors": [
+        [
+          194.1148991942669,
+          1272.2825206769887
+        ],
+        [
+          991.2178476673258,
+          1345.7513477189395
+        ]
+      ],
+      "holdout_native": [
+        699.1772334766135,
+        1304.2308197140144
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        594.6052747244448,
+        1111.4961700039325
+      ],
+      "score": [
+        0.9924680959982141,
+        0.9448045612697931,
+        0.9935993799174188
+      ],
+      "check_residual_px": 0.7826507297985379,
+      "passes_3px": true,
+      "matrix": [
+        [
+          0.8506385637768137,
+          -0.0006330204694819006
+        ],
+        [
+          0.0006330204694819006,
+          0.8506385637768137
+        ]
+      ],
+      "translation": [
+        0.6837618202604006,
+        1.624545188360571
+      ],
+      "registered_path": "/tmp/laidian-batch1-g03-2e96/diagnostics/registered_rgba/g03_watermelon_k05.png",
+      "registered_sha256": "4768bf25712ccec2bb9ce20009e108997195b0e06181fc19aad9231f1b2383c9"
+    },
+    {
+      "file": "g03_watermelon_k06",
+      "source": "/tmp/laidian-batch1-g03-2e96/originals/g03_watermelon_k06.png",
+      "sha256": "6e67c061f2665f2cf16bfac791f44a02615f82e42857389a56785a7545e861f1",
+      "size": [
+        1105,
+        1423
+      ],
+      "anchors": [
+        [
+          195.1489864227341,
+          1267.893440019262
+        ],
+        [
+          990.1924559603616,
+          1343.8440706847848
+        ]
+      ],
+      "holdout_native": [
+        695.352485432283,
+        1300.95968320141
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        591.532859647396,
+        1111.0881963697332
+      ],
+      "score": [
+        0.972235858507429,
+        0.9268375983363102,
+        0.9800354642481865
+      ],
+      "check_residual_px": 2.4687162897103416,
+      "passes_3px": true,
+      "matrix": [
+        [
+          0.8525728703883173,
+          0.0022054733627677914
+        ],
+        [
+          -0.0022054733627677914,
+          0.8525728703883173
+        ]
+      ],
+      "translation": [
+        -4.175036716591677,
+        3.458846387586391
+      ],
+      "registered_path": "/tmp/laidian-batch1-g03-2e96/diagnostics/registered_rgba/g03_watermelon_k06.png",
+      "registered_sha256": "68888adfb63d0533f208f3357bf8c3fe82e0267285d50e0504282937fdf8e6cc"
+    },
+    {
+      "file": "g03_watermelon_k07",
+      "source": "/tmp/laidian-batch1-g03-2e96/originals/g03_watermelon_k07.png",
+      "sha256": "c39663aba47c5c819954a86f2e2dc7763056b25f702094ba66951d9f3c576ffa",
+      "size": [
+        1105,
+        1423
+      ],
+      "anchors": [
+        [
+          195.41497980701345,
+          1273.104238920997
+        ],
+        [
+          994.1184419492954,
+          1348.2890336636433
+        ]
+      ],
+      "holdout_native": [
+        699.1370797358073,
+        1306.0182774458362
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        592.5826701637022,
+        1111.4225618915407
+      ],
+      "score": [
+        0.9819817955082257,
+        0.9427871077150286,
+        0.9947698869116727
+      ],
+      "check_residual_px": 1.478980194945928,
+      "passes_3px": true,
+      "matrix": [
+        [
+          0.8487796569820409,
+          0.0010208097630397454
+        ],
+        [
+          -0.0010208097630397454,
+          0.8487796569820409
+        ]
+      ],
+      "translation": [
+        -2.163856766207175,
+        3.6145023054853027
+      ],
+      "registered_path": "/tmp/laidian-batch1-g03-2e96/diagnostics/registered_rgba/g03_watermelon_k07.png",
+      "registered_sha256": "458ca5135b5ba2b74969d78712e50d96a3f0f3a30bd498de484a404f41141cd8"
+    },
+    {
+      "file": "g03_watermelon_k08",
+      "source": "/tmp/laidian-batch1-g03-2e96/originals/g03_watermelon_k08.png",
+      "sha256": "0364ce0d2ab2015c1a7765ec3e577a227b2a32df08b42efde25166fb768d9ae9",
+      "size": [
+        1105,
+        1423
+      ],
+      "anchors": [
+        [
+          194.45957510671502,
+          1266.410796037957
+        ],
+        [
+          984.9700341266581,
+          1340.445955448745
+        ]
+      ],
+      "holdout_native": [
+        691.5997154559183,
+        1299.8833498055665
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        591.3758316534297,
+        1112.396104535922
+      ],
+      "score": [
+        0.9878584962168688,
+        0.9482066827628661,
+        0.9927137279896454
+      ],
+      "check_residual_px": 2.972434589080687,
+      "passes_3px": true,
+      "matrix": [
+        [
+          0.8576151739532553,
+          0.0006245029538914112
+        ],
+        [
+          -0.0006245029538914112,
+          0.8576151739532553
+        ]
+      ],
+      "translation": [
+        -2.5623596149872014,
+        -1.9716745613063722
+      ],
+      "registered_path": "/tmp/laidian-batch1-g03-2e96/diagnostics/registered_rgba/g03_watermelon_k08.png",
+      "registered_sha256": "595ed5be7967e60320aae76f77a00359d1da89f9d5e4caa6a8c077730eb8642c"
+    },
+    {
+      "file": "g03_watermelon_k09",
+      "source": "/tmp/laidian-batch1-g03-2e96/originals/g03_watermelon_k09.png",
+      "sha256": "d68764cbcb5981cf643f0826f6cad3d2a9532cbd9f77785a7e4c32a40e18c935",
+      "size": [
+        1105,
+        1423
+      ],
+      "anchors": [
+        [
+          194.4096260094545,
+          1271.568363901605
+        ],
+        [
+          988.1143779603871,
+          1345.5172423043416
+        ]
+      ],
+      "holdout_native": [
+        692.6127435910211,
+        1303.8897585507125
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        590.5730542712231,
+        1111.503995515072
+      ],
+      "score": [
+        0.9864516018595411,
+        0.9425176345217814,
+        0.992147065127433
+      ],
+      "check_residual_px": 3.46380838199731,
+      "passes_3px": false,
+      "matrix": [
+        [
+          0.854202284959931,
+          0.00021078480559746536
+        ],
+        [
+          -0.00021078480559746536,
+          0.854202284959931
+        ]
+      ],
+      "translation": [
+        -1.333174045870578,
+        -2.135623332287196
+      ],
+      "registered_path": "/tmp/laidian-batch1-g03-2e96/diagnostics/registered_rgba/g03_watermelon_k09.png",
+      "registered_sha256": "1042763a92c804c1dbedb446df39d01310d71b4a93e5d5b7f9d1079c1aa2eed6"
+    },
+    {
+      "file": "g03_watermelon_k09b",
+      "source": "/tmp/laidian-batch1-g03-2e96/originals/g03_watermelon_k09b.png",
+      "sha256": "06ab832309bc5828fd9ed0325b830b2318036d40b5f218abbc329db44108d1bc",
+      "size": [
+        1105,
+        1423
+      ],
+      "anchors": [
+        [
+          155.4509959523918,
+          1232.354688494189
+        ],
+        [
+          981.1984268744754,
+          1306.354688494189
+        ]
+      ],
+      "holdout_native": [
+        660.4624822131967,
+        1280.4689410680246
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        579.6442655264519,
+        1124.8763139509165
+      ],
+      "score": [
+        0.7087977452896383,
+        0.547290376620456,
+        0.47242003528121407
+      ],
+      "check_residual_px": 19.965951045202324,
+      "passes_3px": false,
+      "matrix": [
+        [
+          0.8213155248450466,
+          -0.0026916840164850383
+        ],
+        [
+          0.0026916840164850383,
+          0.8213155248450466
+        ]
+      ],
+      "translation": [
+        40.64279308933634,
+        71.42953726298958
+      ],
+      "registered_path": "/tmp/laidian-batch1-g03-2e96/diagnostics/registered_rgba/g03_watermelon_k09b.png",
+      "registered_sha256": "63f07c39b510f484f7618a81193defdb24da76b18e7080c5e5b03c6a5ee3037a"
+    },
+    {
+      "file": "g03_watermelon_k10",
+      "source": "/tmp/laidian-batch1-g03-2e96/originals/g03_watermelon_k10.png",
+      "sha256": "afdb53562be3adebc88eb2ef01c23633120b55754b857f07f0b3db6dd939a711",
+      "size": [
+        1105,
+        1423
+      ],
+      "anchors": [
+        [
+          195.02138742363965,
+          1272.2679721764005
+        ],
+        [
+          991.1823787263436,
+          1346.106573729577
+        ]
+      ],
+      "holdout_native": [
+        693.9056312330649,
+        1305.036032849751
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        589.8451352449932,
+        1111.9798710018633
+      ],
+      "score": [
+        0.9894208171951617,
+        0.937702598646578,
+        0.9919638917268145
+      ],
+      "check_residual_px": 4.268846250767309,
+      "passes_3px": false,
+      "matrix": [
+        [
+          0.8516004241685384,
+          -0.00014948684826735813
+        ],
+        [
+          0.00014948684826735813,
+          0.8516004241685384
+        ]
+      ],
+      "translation": [
+        -0.8901089225962266,
+        0.5069021059805436
+      ],
+      "registered_path": "/tmp/laidian-batch1-g03-2e96/diagnostics/registered_rgba/g03_watermelon_k10.png",
+      "registered_sha256": "ef7cea08550ba7b4edd61ce2a6212e977ae7ed1155f936221ddf49e1b9c2aeba"
+    },
+    {
+      "file": "g03_watermelon_k10b",
+      "source": "/tmp/laidian-batch1-g03-2e96/originals/g03_watermelon_k10b.png",
+      "sha256": "66ba7bf929933b227dcc53052b1295a7c8a92be4676e75d35649d7b39a586630",
+      "size": [
+        1105,
+        1423
+      ],
+      "anchors": [
+        [
+          219.7888715836419,
+          1307.3482894650801
+        ],
+        [
+          973.1409009957581,
+          1315.0976020205303
+        ]
+      ],
+      "holdout_native": [
+        694.0082114850759,
+        1320.9919533454897
+      ],
+      "target_holdout": [
+        594,
+        1111
+      ],
+      "holdout_mapped": [
+        591.1349944059345,
+        1131.5527613434544
+      ],
+      "score": [
+        0.11765663503234249,
+        0.2929883113069877,
+        0.4456497505091469
+      ],
+      "check_residual_px": 20.751488040500178,
+      "passes_3px": false,
+      "matrix": [
+        [
+          0.9007425727103707,
+          -0.07436080621669335
+        ],
+        [
+          0.07436080621669335,
+          0.9007425727103707
+        ]
+      ],
+      "translation": [
+        64.24227916727943,
+        -109.92793936969565
+      ],
+      "registered_path": "/tmp/laidian-batch1-g03-2e96/diagnostics/registered_rgba/g03_watermelon_k10b.png",
+      "registered_sha256": "a46e347918ccd4da28e5795875e8ae810e1480cc0341d148ba54fc03f64b4a99"
+    }
+  ]
+}
