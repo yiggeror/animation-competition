@@ -1,6 +1,6 @@
 // S20 · 第 8 场：后台（机位 C）。小满第一次上手：她攥着乌龟的两根签子（合作方画的 anim_20_xiaoman_puppeteer），手忙脚乱——
 // 乌龟在床单背面乱晃、打转，两根签子绞到一起（2.4～4.6，对上竹签相碰声），乌龟一下子翻了肚皮（5.5，对上"噔"和小锣）；
-// 奶奶本来稳稳地拿着鹤，这下笑弯了腰（6.0 起换成 anim_20_grandma_laugh_bent：一只手捂着肚子，另一只手把两根鹤签并在一起握着）。
+// 奶奶本来稳稳地拿着鹤，这下笑弯了腰（6.0 切到奶奶中近景，换成 anim_20_grandma_laugh_bent：一只手捂着肚子，另一只手把两根鹤签并在一起握着）。
 // 签子都由程序从图里的拳头握点画到皮影身上的接点；图上露在拳头外的短签擦掉。
 import { renderShot, billboardM, S, CRANE_ROOT, RODS, DEBUG } from '../s06_key.js';
 import { solve, pointOn, drawPuppet } from '../../puppet.js';
@@ -17,6 +17,8 @@ const GL = { file: 'g20_laugh', ox: 175, oy: 1284, sc: 9.0, grip: [585, 538], er
 let MAPS = null, LAMPM = null, TURTLE = null;
 // 机位：后台东北角往西南看——小满和乌龟离镜头近，奶奶、马灯、鹤在后面。人物都面朝床单（画面左边），图要水平翻转
 const CAM20 = { pos: [3.05, 1.5, 1.18], target: [1.5, 0.42, 0.95], hfov: 58 };
+// 6 秒乌龟翻肚之后切到奶奶的中近景（她笑弯了腰，两根鹤签并到一只手里——换姿势正好藏在剪辑点上），镜头慢慢推一点
+const CAMG = (t) => { const k = sstep(T_LAUGH, DURATION, t); return { pos: [2.55, 1.7, 1.2], target: [1.2, 1.15, 1.0 + 0.02 * k], hfov: 42 - 4 * k }; };   // 机位不动只收视角（往前挪会钻进后台的木箱）
 const GPOS = (t) => [GRANDMA.pos[0] - 0.12, GRANDMA.pos[1] - 0.05 + (t >= T_LAUGH ? 0.16 * sstep(T_LAUGH, T_LAUGH + 0.25, t) : 0), 0];   // 笑的时候往后退一步
 const flipP = (card, p) => [2 * card.ox - p[0], p[1]];
 const mulM = (a, b) => [a[0] * b[0] + a[2] * b[1], a[1] * b[0] + a[3] * b[1], a[0] * b[2] + a[2] * b[3], a[1] * b[2] + a[3] * b[3], a[0] * b[4] + a[2] * b[5] + a[4], a[1] * b[4] + a[3] * b[5] + a[5]];
@@ -58,7 +60,7 @@ function grips(t, cam) {
 }
 
 const shot = {
-  cam: CAM20,
+  cam: (t) => (t < T_LAUGH ? CAM20 : CAMG(t)),
   exp: 0.26,
   fog: 0.5,                                            // 后台的雾减半：人离镜头近，雾太浓会发灰发闷
   sheet: (t, env) => {
@@ -102,11 +104,11 @@ const shot = {
     const tsol = solve(TURTLE, T.pose);
     [{ part: 'shell', at: [0, 40] }, { part: 'head', at: [20, 0] }].forEach((r, i) => {
       const pm = pointOn(TURTLE, tsol, r.part, r.at);
-      rod([T.root[0] + pm[0] / 1000, dist, T.root[1] + pm[1] / 1000], G.xm[T.cross ? i : 1 - i]);
+      rod([T.root[0] + (T.pose.facing ?? 1) * pm[0] / 1000, dist, T.root[1] + pm[1] / 1000], G.xm[T.cross ? i : 1 - i]);   // 皮面按 facing 镜像画，杆端也要乘
     });
-    // 5. 小满（比奶奶离镜头远，先画）
+    // 5. 小满（比奶奶离镜头远，先画；奶奶的中近景里她在画外，不画）
     const xb = xmBase(t), dX = cam.project(xb)[2];
-    CARDS.addImage([{ maps: MAPS.xm, m: mulM(billboardM(cam, xb, XM.ox, XM.oy, XM.sc), flipM(XM)), clip: { pts: XM.erase, invert: true } }], dX);
+    if (t < T_LAUGH) CARDS.addImage([{ maps: MAPS.xm, m: mulM(billboardM(cam, xb, XM.ox, XM.oy, XM.sc), flipM(XM)), clip: { pts: XM.erase, invert: true } }], dX);
     // 6. 奶奶：拿着鹤 → 笑弯了腰
     const gb = GPOS(t), dG = cam.project(gb)[2];
     if (t < T_LAUGH) CARDS.addImage([{ maps: MAPS.gr, m: mulM(billboardM(cam, gb, GR.ox, GR.oy, GR.sc), flipM(GR)), clip: { pts: GR.erase, invert: true } }], dG);

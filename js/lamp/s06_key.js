@@ -174,7 +174,7 @@ export async function renderShot(ctx, t, W, H, shot) {
   POND ||= makePond(); WILLOW ||= makeWillow();
   if (!G || G.W !== W || G.H !== H) G = new GL(W, H);
   QUILTS ||= { L: quiltTex('L'), R: quiltTex('R') };
-  const cam = camera(W, H, DEBUG.cam || shot.cam || {});
+  const cam = camera(W, H, DEBUG.cam || (typeof shot.cam === 'function' ? shot.cam(t) : shot.cam) || {});   // shot.cam 可以是随时间变的（镜头内切机位）
   const flick = 1 + 0.035 * Math.sin(t * 13.1) + 0.025 * Math.sin(t * 7.3 + 1.1) + 0.02 * Math.sin(t * 23.7);
 
   // 1. 床单：物理影子图
