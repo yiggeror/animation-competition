@@ -97,14 +97,16 @@ const shot = {
     const L = S.lamp, lampBase = [L.x, L.y, L.z];
     const mL = billboardM(cam, lampBase, LAMPM.ox, LAMPM.oy, LAMPM.K), dL = cam.project(lampBase)[2];
     CARDS.addImage([{ maps: LAMPM.metal, m: mL }, { maps: LAMPM.glass, m: mL }, { maps: LAMPM.flame, m: mL }], dL);
-    // 4. 签子：鹤（奶奶）、乌龟（小满）
-    const rod = (pmWorld, grip) => { const A = cam.project(pmWorld), B = cam.project(grip); CARDS.addStroke([[A[0], A[1]], [B[0], B[1]]], Math.max(1.5, 0.007 * B[3]), '#9a7848', (A[2] + B[2]) / 2); };
-    const csol = solve(ctx.crane, C.pose);
-    RODS.forEach((r, i) => { const pm = pointOn(ctx.crane, csol, r.part, r.at); rod([C.root[0] + (C.pose.facing ?? 1) * pm[0] / 1000, dist, C.root[1] + pm[1] / 1000], G.gm[i]); });
-    const tsol = solve(TURTLE, T.pose);
+    // 4. 签子：鹤（奶奶）、乌龟（小满）。杆端按皮面图卡同一个仿射变换算（图卡是在接点附近线性化的透视，
+    //    直接用透视投影算杆端会和图卡上的接点差十几像素，合作方量过 10～18px）
+    const rod = (A, dA, grip) => { const B = cam.project(grip); CARDS.addStroke([[A[0], A[1]], [B[0], B[1]]], Math.max(1.5, 0.007 * B[3]), '#9a7848', (dA + B[2]) / 2); };
+    const viaCard = (m, px) => [m[0] * px[0] + m[2] * px[1] + m[4], m[1] * px[0] + m[3] * px[1] + m[5]];
+    const csol = solve(ctx.crane, C.pose), cf = C.pose.facing ?? 1;
+    RODS.forEach((r, i) => { const pm = pointOn(ctx.crane, csol, r.part, r.at); rod(viaCard(cm.m, [900 + cf * pm[0] * 2, 1000 - pm[1] * 2]), cm.d, G.gm[i]); });
+    const tsol = solve(TURTLE, T.pose), tf = T.pose.facing ?? 1;
     [{ part: 'shell', at: [0, 40] }, { part: 'head', at: [20, 0] }].forEach((r, i) => {
       const pm = pointOn(TURTLE, tsol, r.part, r.at);
-      rod([T.root[0] + (T.pose.facing ?? 1) * pm[0] / 1000, dist, T.root[1] + pm[1] / 1000], G.xm[T.cross ? i : 1 - i]);   // 皮面按 facing 镜像画，杆端也要乘
+      rod(viaCard(tm.m, [600 + tf * pm[0] * 2, 500 - pm[1] * 2]), tm.d, G.xm[T.cross ? i : 1 - i]);   // 皮面按 facing 镜像画，杆端也镜像
     });
     // 5. 小满（比奶奶离镜头远，先画；奶奶的中近景里她在画外，不画）
     const xb = xmBase(t), dX = cam.project(xb)[2];
