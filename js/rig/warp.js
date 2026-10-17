@@ -4,9 +4,11 @@
 //   bones: [{ name, parent, head:[x,y], tail:[x,y] }]（原图像素；head 是关节）
 //   layers: [{ name, bones:[...], poly:[[x,y]...], z }]（叠在身体前、要单独动的部分，切成单独一层，只受这些骨头影响）
 //   regions: [{ bones:[...], poly:[[x,y]...] }]（这块范围里的顶点只受这几根骨头影响，例如盆、凳子、贴地的腿）
-//   pins: [[x,y]...]（钉住不动的点，例如贴地的膝盖、手肘）
+//   pins: [[x,y]... 或 { at:[x,y], bone?, r? }]（钉点：半径 r 里的网格顶点整个绑在 bone（默认 root）上，不随别的骨头动，例如贴地的膝盖、手肘）
+//   刚体：手机、盆这类不能弯的东西用 regions 只绑一根骨头（手机绑在 phone 骨上，握手机的手指也绑这根），整块一起转
 // 姿势：{ 骨名: { rot（弧度，相对绑定姿势）, sx?, sy?（沿骨头方向/垂直方向的伸缩，呼吸用）, dx?, dy?（只对 root） } }
-// 表情：pose.__face = { img: 表情头图（和原图逐像素对齐的整张图）, poly: 脸部范围 } —— 画在 head 骨上，跟着头动。
+// 表情：pose.__face = loadFace(...) 的结果（和原图逐像素对齐的表情头，只取脸的范围）—— 贴在同一网格上，跟着头动。
+// 眨眼：pose.__blink = 0..1（rig.eyes 给眼睛的位置和大小，程序画眼皮）。
 // 输出：和原图同尺寸的画布（透明底），可以直接当 paintshot 的图层或 cards 的固有色用。
 const VS = `#version 300 es
 in vec2 aRest; in vec4 aW; in vec4 aI; out vec2 vUV;
@@ -72,7 +74,9 @@ export function bind(img, rig, o = {}) {
           vid[k] = rest.length / 2; const p = [u * step, v * step]; rest.push(p[0], p[1]); grid.push(k);
           // 权重：到每根允许的骨头线段的距离，w = 1 / (d + 6)^falloff。
           // regions：落在某个多边形里的顶点只受那几根骨头影响（盆、凳子、贴地的腿不被胳膊和身子带着变形），这些顶点的权重固定不平滑
-          const reg = (rig.regions || []).find((r) => inPoly(p, r.poly));
+          // pins：钉点附近（半径 r，默认 24 像素）的顶点整个绑在一根骨头上（默认 root），例如贴在竹席上的手肘、膝盖
+          const pin = (rig.pins || []).map((q) => (Array.isArray(q) ? { at: q } : q)).find((q) => Math.hypot(p[0] - q.at[0], p[1] - q.at[1]) < (q.r ?? 24));
+          const reg = pin ? { bones: [pin.bone || 'root'] } : (rig.regions || []).find((r) => inPoly(p, r.poly));
           const cand = reg ? reg.bones.map((n) => idx[n]).filter((bi) => allowed.includes(bi)) : allowed;
           const wv = new Float32Array(nb);
           for (const bi of cand.length ? cand : allowed) wv[bi] = 1 / Math.pow(segDist(p, bones[bi].head, bones[bi].tail) + 6, falloff);
@@ -144,10 +148,11 @@ export function render(B, pose) {
   M.forEach((m, k) => mats.set([m[0], m[1], 0, m[2], m[3], 0, m[4], m[5], 1], k * 9));
   gl.uniformMatrix3fv(gl.getUniformLocation(G.pr, 'uB'), false, mats);
   gl.uniform2f(gl.getUniformLocation(G.pr, 'uSize'), B.W, B.H);
-  const face = pose.__face;
+  const face = pose.__face, lid = pose.__blink ? lids(B, pose.__blink) : null;
   for (const L of B.layers) {
     drawLayer(G, L, L.tex);
     if (face && L.name === (face.layer || 'body')) drawLayer(G, L, face.tex);   // 表情头：同一层网格、换一张贴图（只在脸的范围里有像素）
+    if (lid && L.name === 'body') drawLayer(G, L, lid);                          // 眨眼的眼皮，跟着头走
   }
   const out = new OffscreenCanvas(B.W, B.H); out.getContext('2d').drawImage(G.cv, 0, 0);
   return out;
@@ -173,6 +178,31 @@ function drawLayer(G, L, texCanvas) {
   })();
   gl.bindVertexArray(L.vao);
   gl.drawElements(gl.TRIANGLES, L.tris.length, gl.UNSIGNED_INT, 0);
+}
+// 眨眼：rig.eyes = [{ c:[x,y], rx, ry, rot?, skin, line? }]（原图像素）。k 0..1：半闭（上半个眼睛盖上皮肤色，中间一道眼皮线）→ 全闭（整个眼睛盖上，
+// 下沿一道向下弯的闭眼线）。按两档缓存，眨眼只有两三帧
+function lids(B, k) {
+  const q = k >= 0.75 ? 1 : 0.5, key = `__lid${q}`;
+  if (B[key]) return B[key];
+  const c = new OffscreenCanvas(B.W, B.H), x = c.getContext('2d');
+  for (const e of B.rig.eyes || []) {
+    x.save(); x.translate(...e.c); x.rotate(e.rot || 0);
+    x.beginPath(); x.ellipse(0, 0, e.rx + 2, e.ry + 2, 0, 0, Math.PI * 2); x.clip();
+    x.fillStyle = e.skin; x.fillRect(-e.rx - 4, -e.ry - 4, 2 * e.rx + 8, q >= 1 ? 2 * e.ry + 8 : e.ry + 4);
+    x.restore();
+    x.save(); x.translate(...e.c); x.rotate(e.rot || 0); x.strokeStyle = e.line || '#3a2418'; x.lineWidth = e.lw || 3; x.lineCap = 'round';
+    x.beginPath();
+    if (q >= 1) { x.moveTo(-e.rx, e.ry * 0.15); x.quadraticCurveTo(0, e.ry * 0.75, e.rx, e.ry * 0.15); }   // 闭着：下沿一道弯
+    else { x.moveTo(-e.rx, 0); x.quadraticCurveTo(0, e.ry * 0.25, e.rx, 0); }                           // 半闭：中间一道
+    x.stroke(); x.restore();
+  }
+  return (B[key] = c);
+}
+// 眨眼曲线：times 里每个时刻眨一次（0.05 秒闭上、停 0.04、0.08 秒睁开）
+export function blinkAt(t, times) {
+  let k = 0;
+  for (const b of times) { const u = t - b; if (u > -0.05 && u < 0.12) k = Math.max(k, u < 0 ? 1 + u / 0.05 : u < 0.04 ? 1 : 1 - (u - 0.04) / 0.08); }
+  return k;
 }
 // 读绑骨数据 + 图，绑好
 const CACHE = new Map();

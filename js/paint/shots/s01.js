@@ -1,8 +1,10 @@
 // S01 · 第 1 场：全景，夏夜的堂屋（底图 bg_01_room_wide），日光灯惨白，吊扇转，电视亮着，蚊香的烟往上飘。
 // 小满趴在竹席上横握手机打游戏（合作方画的 anim_01_xiaoman_prone_phone，抠图 assets/chars/x01_prone_phone.png），
-// 两条小腿翘着一晃一晃；奶奶坐在竹席那头的矮凳上剥毛豆（g01_beans）。镜头慢慢推近。
+// 两条小腿翘着一晃一晃；奶奶坐在竹席那头的矮凳上剥毛豆（g01_beans，骨架驱动：js/rig/acts.js 的 grandmaBeans）。镜头慢慢推近。
 // 游戏的"跳"声和剥豆声在 audio/build.py。推西瓜那一下放在 S03（奶奶近景）。
 import { renderPaint } from '../paintshot.js';
+import { loadRig, render as warp } from '../../rig/warp.js';
+import { grandmaBeans } from '../../rig/acts.js';
 export const DURATION = 12;
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
 const BW = 1672, BH = 941;
@@ -58,7 +60,7 @@ const shot = {
       { img: SHADOWS, x: 0, y: 0, sc: 1 },
       { img: COILC, x: COIL[0] - 60, y: COIL[1] - 34, sc: 1 },
       { img: xiaoman(L, t), x: XM.x, y: XM.y + 0.6 * Math.sin(t * 1.7), sc: XM.sc },
-      { img: '/assets/chars/g01_beans.png', x: GM.x, y: GM.y + 0.8 * Math.sin(t * 1.3), sc: GM.sc, ox: 304, oy: 1348 },
+      { img: warp(await loadRig('g01_beans'), grandmaBeans(t, { looks: [2.6, 8.2] })), x: GM.x, y: GM.y, sc: GM.sc, ox: 304, oy: 1348 },   // 奶奶：骨架驱动剥豆，抬眼看两次小满
     ];
   },
   light: (t) => ({
