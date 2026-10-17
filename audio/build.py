@@ -119,14 +119,13 @@ insects_db = [(0, -14), (CUT, -14), (CUT + 1.5, -8), (T('S15'), -8), (T('S15', 3
               (OFF, -24), (OFF + 2, -7), (T('S31', 2), -9), (T('S31', 6), -15), (T('S32'), -10), (T('END'), -14), (TOTAL, -30)]
 g_ins = gain_curve(insects_db)[:, None]
 AMB += cr * g_ins * 1.0 + fr * g_ins * 0.55 + ci * g_ins * 0.18
-# 吊扇：开场转着；停电后 6 秒慢慢停；来电后转起来；关灯后又慢慢停
+# 吊扇独立开关：开场转着；停电后慢慢停；来电后转起来；第12场只关电视和日光灯，吊扇继续转。
 FAN_ON = T('S28', 0.2)
 
 
 def fan_speed(tt):
     s = np.where(tt < CUT, 1.0, np.exp(-(tt - CUT) / 2.2))
     s = np.where(tt >= FAN_ON, 1 - np.exp(-(tt - FAN_ON) / 1.6), s)
-    s = np.where(tt >= OFF, (1 - np.exp(-(OFF - FAN_ON) / 1.6)) * np.exp(-(tt - OFF) / 2.2), s)
     return np.clip(s, 0, 1)
 
 
@@ -138,15 +137,16 @@ hum = fluor_hum(TOTAL)
 hum_g = np.zeros(N, np.float32)
 hum_g[:ns(CUT)] = 1; hum_g[ns(T('S27', 0.52)):ns(OFF)] = 1.3
 AMB += pan(hum * hum_g * 10 ** (-30 / 20), 0.2)
-# 电视：开场的含糊人声（左边）；停电"嘣"；来电后"嗡—"一声再响起来；关灯时关掉
+# 电视：第12场先按掉电视，再走向门边拉灯绳；TV_OFF与S30开头CRT特写同步。
 TV_ON = T('S28', 1.4)
+TV_OFF = T('S30', 1.1)
 tvb = tv_babble(TOTAL)
-tv_g = np.zeros(N, np.float32); tv_g[:ns(CUT)] = 1; tv_g[ns(TV_ON + 0.9):ns(OFF)] = 1
+tv_g = np.zeros(N, np.float32); tv_g[:ns(CUT)] = 1; tv_g[ns(TV_ON + 0.9):ns(TV_OFF)] = 1
 tv_g *= gain_curve([(0, -20), (T('S02'), -27), (T('S03'), -21), (TOTAL, -21)])
 AMB += pan(tvb * tv_g, -0.55)
 whine = crt_whine(TOTAL)
-wg = np.zeros(N, np.float32); wg[:ns(CUT)] = 1; wg[ns(TV_ON):ns(OFF)] = 1
-wg[ns(OFF):ns(OFF + 1.5)] = np.linspace(1, 0, ns(OFF + 1.5) - ns(OFF))
+wg = np.zeros(N, np.float32); wg[:ns(CUT)] = 1; wg[ns(TV_ON):ns(TV_OFF)] = 1
+wg[ns(TV_OFF):ns(TV_OFF + 0.3)] = np.linspace(1, 0, ns(TV_OFF + 0.3) - ns(TV_OFF))
 AMB += pan(whine * wg * 0.25, -0.55)
 # 马灯火苗：点着以后一直在（近景响一点）
 LAMP = T('S08', 1.8)   # 灯芯着了
@@ -485,7 +485,7 @@ sfx(chime([jp(1, 1, D5), jp(5, 0, D5)], 0.28, 1.6), T('S29', 5.5), 0.35, -0.1)
 print('第 12 场…')
 sfx(footsteps([0, 0.5, 1.0, 1.5, 2.0, 2.5]), T('S30', 1.5), 0.3, -0.5)
 sfx(pull_cord(), OFF - 0.05, 0.6, -0.6)
-sfx(click(0.5, 2500, 200), OFF + 0.6, 0.3, -0.55)            # 电视关掉
+sfx(click(0.5, 2500, 200), TV_OFF, 0.3, -0.55)            # 电视关掉
 # 关灯后：安静几秒；S31 笛子轻轻地、慢慢地回来（主题前四小节），然后板胡、扬琴加进来，完整地回来
 t0 = T('S31')
 melody('dizi', mel(THEME_A, t0 + 1.0, 84, D5, beats_to=8, gap=0.03, acc=0.5), 0.4)
@@ -546,12 +546,17 @@ print(f'峰值归一前 {peak:.2f}')
 for name, x in [('music', music), ('sfx', SFX_r), ('amb', AMB)]:
     wavfile.write(os.path.join(OUT, f'stem_{name}.wav'), SR, (np.clip(x / peak * 0.89, -1, 1) * 32767).astype(np.int16))
 wavfile.write(os.path.join(OUT, 'film_mix.wav'), SR, (np.clip(mix, -1, 1) * 32767).astype(np.int16))
-# 响度归一（两遍 loudnorm）：-16 LUFS、真峰 -2.5 dBTP，输出 film_mix_norm.wav（成片用这个）。
-# 真峰留 2.5 dB：压成 AAC 时高频噪声（电视的"嘶"）会冲过 WAV 的峰值（合作方量到 160k AAC 冲到 +2.6 dBFS），成片用 256k AAC
+# 响度归一（两遍 loudnorm）：-16 LUFS，PCM 真峰目标 -4.5 dBTP；成片 AAC 仍须独立复测。
+# 2026-10-17 云端实测：-2.5 目标所得256k全片AAC为-0.66dBTP；-3.5目标全片通过但S08单独编码为-0.79dBTP。
+# 在修电视/吊扇时序前，同参数实测WAV为-4.40dBTP/-16.00LUFS，256k全片AAC为-3.19dBTP/-16.05LUFS。
+# 同一WAV按当前EDL单独编码31镜后均<=-3.28dBTP；不把PCM目标值或单一片段测量当编码后保证。
+# 修正TV_OFF与吊扇后：WAV -16.04LUFS/-4.40dBTP；全片256k AAC -16.08/-3.72；31镜单独编码最高-3.16dBTP。
+# 实际文件/hash/命令见collab/reviews/20261017_0616_integration/audio_final/，本行仅补验收记录，不改变音频计算。
+# 修改混音/剪辑/编码参数后，以最终AAC <= -1.5dBTP复验；这些数字不代替试听。
 src = os.path.join(OUT, 'film_mix.wav'); dst = os.path.join(OUT, 'film_mix_norm.wav')
-r = subprocess.run(['ffmpeg', '-hide_banner', '-nostats', '-i', src, '-af', 'loudnorm=I=-16:TP=-2.5:LRA=11:print_format=json', '-f', 'null', '-'], capture_output=True, text=True)
+r = subprocess.run(['ffmpeg', '-hide_banner', '-nostats', '-i', src, '-af', 'loudnorm=I=-16:TP=-4.5:LRA=11:print_format=json', '-f', 'null', '-'], capture_output=True, text=True)
 m = json.loads(r.stderr[r.stderr.rindex('{'):r.stderr.rindex('}') + 1])
-af = f"loudnorm=I=-16:TP=-2.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true"
+af = f"loudnorm=I=-16:TP=-4.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true"
 subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', src, '-af', af, '-ar', str(SR), dst], check=True)
 print(f"响度：原 {m['input_i']} LUFS / 真峰 {m['input_tp']} dBTP → -16 LUFS")
 print(dst, f'{TOTAL:.1f}s')
