@@ -1,0 +1,261 @@
+{
+  "variant": "B_36f_review_only",
+  "total_frames": 288,
+  "fps": 24,
+  "hand_cycle_ids": [
+    "c01",
+    "c02b",
+    "c04",
+    "c04b",
+    "c05c",
+    "c06b"
+  ],
+  "all_six_hand_states_share_one_face_category": true,
+  "original_audio_cues": [
+    19,
+    53,
+    88,
+    118,
+    143,
+    180,
+    215,
+    246
+  ],
+  "actual_bean_result_frames": [
+    {
+      "cycle": 1,
+      "closed_pod_fetch": 13,
+      "closed_pod_lift": 16,
+      "open_pod_frame": 19,
+      "original_audio_cue_frame": 19,
+      "audio_cue_shift_frames": 0,
+      "first_bean_falling": 38,
+      "last_bean_falling": 41,
+      "empty_husk_on_pile": 44
+    },
+    {
+      "cycle": 2,
+      "closed_pod_fetch": 47,
+      "closed_pod_lift": 50,
+      "open_pod_frame": 53,
+      "original_audio_cue_frame": 53,
+      "audio_cue_shift_frames": 0,
+      "first_bean_falling": 73,
+      "last_bean_falling": 76,
+      "empty_husk_on_pile": 79
+    },
+    {
+      "cycle": 3,
+      "closed_pod_fetch": 82,
+      "closed_pod_lift": 85,
+      "open_pod_frame": 88,
+      "original_audio_cue_frame": 88,
+      "audio_cue_shift_frames": 0,
+      "first_bean_falling": 111,
+      "last_bean_falling": 114,
+      "empty_husk_on_pile": 117
+    },
+    {
+      "cycle": 4,
+      "closed_pod_fetch": 120,
+      "closed_pod_lift": 123,
+      "open_pod_frame": 126,
+      "original_audio_cue_frame": 118,
+      "audio_cue_shift_frames": 8,
+      "first_bean_falling": 128,
+      "last_bean_falling": 131,
+      "empty_husk_on_pile": 134
+    },
+    {
+      "cycle": 5,
+      "closed_pod_fetch": 137,
+      "closed_pod_lift": 140,
+      "open_pod_frame": 143,
+      "original_audio_cue_frame": 143,
+      "audio_cue_shift_frames": 0,
+      "first_bean_falling": 165,
+      "last_bean_falling": 168,
+      "empty_husk_on_pile": 171
+    },
+    {
+      "cycle": 6,
+      "closed_pod_fetch": 174,
+      "closed_pod_lift": 177,
+      "open_pod_frame": 180,
+      "original_audio_cue_frame": 180,
+      "audio_cue_shift_frames": 0,
+      "first_bean_falling": 200,
+      "last_bean_falling": 203,
+      "empty_husk_on_pile": 206
+    },
+    {
+      "cycle": 7,
+      "closed_pod_fetch": 209,
+      "closed_pod_lift": 212,
+      "open_pod_frame": 215,
+      "original_audio_cue_frame": 215,
+      "audio_cue_shift_frames": 0,
+      "first_bean_falling": 231,
+      "last_bean_falling": 234,
+      "empty_husk_on_pile": 237
+    },
+    {
+      "cycle": 8,
+      "closed_pod_fetch": 240,
+      "closed_pod_lift": 243,
+      "open_pod_frame": 246,
+      "original_audio_cue_frame": 246,
+      "audio_cue_shift_frames": 0,
+      "first_bean_falling": 266,
+      "last_bean_falling": 269,
+      "empty_husk_on_pile": 272
+    }
+  ],
+  "blink_start_frames": [
+    22,
+    107,
+    145,
+    224,
+    262
+  ],
+  "blink_duration_frames": 2,
+  "blink_count": 5,
+  "look_child_sequences": [
+    [
+      56,
+      59,
+      68,
+      71
+    ],
+    [
+      183,
+      186,
+      195,
+      198
+    ]
+  ],
+  "missing_half_blink": true,
+  "longest_unchanged_working_face_frames": 36,
+  "face_runs": [
+    {
+      "start": 0,
+      "end_exclusive": 22,
+      "frames": 22,
+      "face_category": "working"
+    },
+    {
+      "start": 22,
+      "end_exclusive": 24,
+      "frames": 2,
+      "face_category": "f02"
+    },
+    {
+      "start": 24,
+      "end_exclusive": 56,
+      "frames": 32,
+      "face_category": "working"
+    },
+    {
+      "start": 56,
+      "end_exclusive": 59,
+      "frames": 3,
+      "face_category": "f03"
+    },
+    {
+      "start": 59,
+      "end_exclusive": 68,
+      "frames": 9,
+      "face_category": "f04"
+    },
+    {
+      "start": 68,
+      "end_exclusive": 71,
+      "frames": 3,
+      "face_category": "f03"
+    },
+    {
+      "start": 71,
+      "end_exclusive": 107,
+      "frames": 36,
+      "face_category": "working"
+    },
+    {
+      "start": 107,
+      "end_exclusive": 109,
+      "frames": 2,
+      "face_category": "f02"
+    },
+    {
+      "start": 109,
+      "end_exclusive": 145,
+      "frames": 36,
+      "face_category": "working"
+    },
+    {
+      "start": 145,
+      "end_exclusive": 147,
+      "frames": 2,
+      "face_category": "f02"
+    },
+    {
+      "start": 147,
+      "end_exclusive": 183,
+      "frames": 36,
+      "face_category": "working"
+    },
+    {
+      "start": 183,
+      "end_exclusive": 186,
+      "frames": 3,
+      "face_category": "f03"
+    },
+    {
+      "start": 186,
+      "end_exclusive": 195,
+      "frames": 9,
+      "face_category": "f04"
+    },
+    {
+      "start": 195,
+      "end_exclusive": 198,
+      "frames": 3,
+      "face_category": "f03"
+    },
+    {
+      "start": 198,
+      "end_exclusive": 224,
+      "frames": 26,
+      "face_category": "working"
+    },
+    {
+      "start": 224,
+      "end_exclusive": 226,
+      "frames": 2,
+      "face_category": "f02"
+    },
+    {
+      "start": 226,
+      "end_exclusive": 262,
+      "frames": 36,
+      "face_category": "working"
+    },
+    {
+      "start": 262,
+      "end_exclusive": 264,
+      "frames": 2,
+      "face_category": "f02"
+    },
+    {
+      "start": 264,
+      "end_exclusive": 288,
+      "frames": 24,
+      "face_category": "working"
+    }
+  ],
+  "warning": "B: 5 full-only blinks; <=36-frame working-face hold intentionally does NOT satisfy the latest 1-second requirement. Requires parent/Opus approval. Fourth opening cue must be reviewed/moved F118 -> F126; audio not edited.",
+  "additional_scene_risks": [
+    "c05c pale empty wells need scene readability review",
+    "c05c -> c06b is a large hand-height change with no added lowering intermediate",
+    "f03/f04 child eyeline and return motion require real scene review"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "status": "draft_not_executed",
+  "id": "f01_half_blink",
+  "title": "半闭眼（c04 持稳）",
+  "references": [
+    {
+      "index": 1,
+      "path": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/grandma_author/originals/g01_s01_c04.png",
+      "sha256": "1c597bf5eef8b9bee8595b8a61e31dbba6d183426916ee360ca0b5190d03bf5d"
+    }
+  ],
+  "image_gen_arguments": {
+    "prompt": "Edit only the eyelids of image 1 for the halfway closing phase of a natural blink. Both upper lids cover about half the visible irises; both eyes remain visibly partly open, still directed down at the pod. Keep the exact head angle, pupils, eyebrows, smile and glasses position. Keep the complete transparent frame and her identity: round glasses, grey bun, three red hairpin beads. Preserve both hands, fingers, the pod with exactly TWO seated beans, blouse, shoulders, bangle, basin, legs, shoes and every stool corner/foot exactly as image 1. No loose pea, extra object or text.",
+    "referenced_image_paths": [
+      "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/grandma_author/originals/g01_s01_c04.png"
+    ],
+    "transparent_background": true
+  },
+  "semantic_acceptance": [
+    "两眼各约半开，仍能看到瞳/虹膜；不是全闭、不是只变视线。",
+    "脸角、嘴形、眉形不额外变化；眼镜不得盖住错误眼睛。",
+    "与 c04 全开、f02 全闭可组成可见开合阶梯。"
+  ]
+}

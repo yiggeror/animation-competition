@@ -1,0 +1,24 @@
+{
+  "status": "draft_not_executed",
+  "id": "f04_child_smile",
+  "title": "看小满微笑",
+  "references": [
+    {
+      "index": 1,
+      "path": "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/grandma_author/originals/g01_s01_c04.png",
+      "sha256": "1c597bf5eef8b9bee8595b8a61e31dbba6d183426916ee360ca0b5190d03bf5d"
+    }
+  ],
+  "image_gen_arguments": {
+    "prompt": "Edit only her head, neck, gaze and mouth in image 1. She pauses with the pod held still and turns toward the child off-screen to her LEFT and SLIGHTLY BELOW eye level. Keep a modest three-quarter-left view and a neutral-to-slightly-down chin; both eyes clearly look left and a little downward. Give a small warm closed-mouth smile. The turn is a little farther than the intermediate, not a profile or upward lamp gaze. Keep the complete transparent frame and her identity: round glasses, grey bun, three red hairpin beads. Preserve both hands, fingers, the pod with exactly TWO seated beans, blouse, shoulders, bangle, basin, legs, shoes and every stool corner/foot exactly as image 1. No loose pea, extra object or text.",
+    "referenced_image_paths": [
+      "/workspace/scratch/f060b5601755/laidian_astra_takeover_20261017_work/grandma_author/originals/g01_s01_c04.png"
+    ],
+    "transparent_background": true
+  },
+  "semantic_acceptance": [
+    "完整注意力到左方略下小满位置，双眼方向一致；具体实景视线仍待 Opus 确认。",
+    "与 c04/f03 有可读区别，温和闭口微笑，不变惊讶／大笑。",
+    "荚内两豆及两手位置不变；返回可复用 f03 后回 c04，是否自然须接景实看。"
+  ]
+}
