@@ -1,6 +1,6 @@
 // S10 · 第 3 场：手电的光柱扫过屋子，照到奶奶，奶奶眯起眼。
 // 0～3 秒：屋子全景（合作方画的 bg_01 底图，白天平光），停电的夜里压成蓝黑，只有八仙桌上的马灯一团暖光；
-//   小满在电视柜前举着推亮的手电（S09 刚推亮），光柱从后墙扫过门、墙上的鹤画，停在坐在凳子上剥豆的奶奶身上（anim_01_grandma_beans）。
+//   小满跪在电视柜前举着推亮的手电（S09 刚推亮），光柱从后墙扫过门、墙上的鹤画，停在坐在凳子上剥豆的奶奶身上（anim_01_grandma_beans）。
 // 3～5 秒：切到奶奶脸部特写（anim_10_grandma_squint），手电的冷白光从左边打在脸上，她眯着眼往后一缩。
 import { renderPaint, loadImg } from '../paintshot.js';
 import { lamp as drawLamp, LX, LB } from '../../code/s08.js';
@@ -8,7 +8,9 @@ export const DURATION = 5;
 const T_CUT = 3.0;
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
 const BW = 1672, BH = 941;
-const SRC = [-60, 1060];                          // 手电的位置：小满在镜头左下方（画面外），光从画面角落射进来
+// 小满跪在电视柜前（同 S09 的图 x09_flashlight，缩小放进全景），手电头在她手里；光柱从这里扫出去
+const XM = { x: 127, y: 472, sc: 0.19 };
+const SRC = [XM.x + 1096 * XM.sc, XM.y + 488 * XM.sc];
 const GM = { x: 905, y: 772, sc: 0.235 };          // 奶奶脚底中点（底图像素）、缩放
 const LAMP = { x: 1365, y: 628, s: 0.17 };        // 桌上的马灯（底图像素，底座中点）、缩放
 let LAMPIMG = null;
@@ -20,7 +22,8 @@ function lampImg() {
 }
 // 光柱的角度：先照后墙，扫过门和鹤画（在画上停一下），最后落在奶奶身上
 function beamAng(t) {
-  const a0 = -1.12, a1 = -0.78, a2 = Math.atan2(GM.y - 230 - SRC[1], GM.x - SRC[0]);
+  // 图里手电是平着朝右的，光柱只在水平上下三十度里扫：先照门左边的墙，再停在鹤画上，最后落到奶奶脸上
+  const a0 = -0.55, a1 = -0.34, a2 = Math.atan2(GM.y - 230 - SRC[1], GM.x - SRC[0]);
   return a0 + (a1 - a0) * sstep(0.35, 1.3, t) + (a2 - a1) * sstep(1.75, 2.6, t);
 }
 const fl = (t) => 1 + 0.05 * Math.sin(t * 9.3) + 0.03 * Math.sin(t * 17.7);
@@ -31,6 +34,7 @@ const wide = {
     const lit = sstep(0.15, 0.25, t);
     return [
       { img: '/assets/chars/g01_beans.png', x: GM.x, y: GM.y, sc: GM.sc, ox: 304, oy: 1348, flip: false },
+      { img: '/assets/chars/x09_flashlight.png', x: XM.x, y: XM.y, sc: XM.sc },
       { img: lampImg(), x: LAMP.x, y: LAMP.y, sc: LAMP.s, ox: 350, oy: 980 },
     ].map((L) => ({ ...L, alpha: 1 + 0 * lit }));
   },
