@@ -3,7 +3,7 @@
 // （必须停在"插着"的状态，第 10 场手机才能自己充电）。
 // 侧面看，插头的两片插脚正好前后重叠成一条；插座面板贴在右边的墙上，插脚沿墙的法线（画面水平方向）进出，
 // 进去的那一截被面板挡住——面板画在手的上面。
-// 时间和 audio/build.py 里 S06 的插头声对齐：声音在 t0 + 0.11 秒"咔"，t0 = 1.0 拔、1.8 插、3.0 拔、3.9 插、6.4 狠插；3.25～3.6 晃。
+// 时间和 audio/build.py 里 S06 的插头声对齐：声音在 t0 + 0.11 秒"咔"，t0 = 1.0 拔、1.8 插、3.0 拔、3.9 插、6.4 狠插；3.4 吹气。
 import { renderPaint } from '../paintshot.js';
 export const DURATION = 8;
 const W = 1920, H = 1080, LINE = '#3e2a1e';
@@ -20,15 +20,14 @@ const WALL = PANEL.x1;
 // 手离插到底差多少（像素，负 = 往外拔）和一点转动
 function handPose(t) {
   const OUT1 = -235, OUT2 = -260, WIND = -300;
-  let dx = 0, rot = 0;
+  let dx = 0, dy = 0, rot = 0;
   // 第一次：拔（1.0～1.11），看一眼（举在外面轻轻转），插（1.66～1.91）
   dx += OUT1 * (sstep(0.98, 1.12, t) - sstep(1.66, 1.91, t));
   rot += (-0.03 + 0.025 * Math.sin((t - 1.12) * 7)) * (sstep(1.0, 1.2, t) - sstep(1.6, 1.85, t));
-  // 第二次：拔（3.0～3.11），晃两下（3.25～3.6），插（3.78～4.01）
+  // 第二次：拔（3.0～3.11），举到嘴边（往左上出画一截）吹一口（3.4，吹气声在画外），停一下，插（3.78～4.01）
   dx += OUT2 * (sstep(2.98, 3.12, t) - sstep(3.78, 4.01, t));
-  const sh = sstep(3.18, 3.25, t) * (1 - sstep(3.58, 3.66, t));
-  rot += sh * 0.07 * Math.sin((t - 3.25) * 2 * Math.PI * 4.5);
-  dx += sh * 9 * Math.sin((t - 3.25) * 2 * Math.PI * 4.5 + 1);
+  const blow = sstep(3.1, 3.3, t) * (1 - sstep(3.55, 3.78, t));
+  dx += -300 * blow; dy += -70 * blow; rot += -0.06 * blow + 0.01 * Math.sin(t * 9) * blow;
   // 第三次：慢慢往回收（5.75～6.15），停一下，猛地插（6.33～6.51）
   dx += WIND * (sstep(5.75, 6.15, t) - (t < 6.33 ? 0 : Math.min(1, ((t - 6.33) / 0.18) ** 2)));
   // 插着的时候手轻轻发抖、按着
@@ -36,7 +35,7 @@ function handPose(t) {
   if (holding) rot += 0.004 * Math.sin(t * 11.3) + 0.003 * Math.sin(t * 17.9);
   // 最后一下插完，手泄了劲，往下垂一点
   rot += 0.012 * sstep(6.9, 7.6, t);
-  return { dx: Math.min(0, dx), rot };
+  return { dx: Math.min(0, dx), dy, rot };
 }
 // 狠插那一下：墙和面板一震
 const jolt = (t) => (t > 6.51 && t < 6.75 ? Math.exp(-(t - 6.51) * 18) * Math.sin((t - 6.51) * 70) : 0);
@@ -93,7 +92,7 @@ const shot = {
     const s = HAND.sc, ox = HAND.root[0], oy = HAND.root[1];
     // 手图以插脚根为原点：插到底时插脚根在 (FACE, PIN_Y)
     return [
-      { img: HAND.img, x: FACE + P.dx, y: PIN_Y, sc: s, ox, oy, rot: P.rot },
+      { img: HAND.img, x: FACE + P.dx, y: PIN_Y + P.dy, sc: s, ox, oy, rot: P.rot },
       { img: panel(), x: 2 * j, y: 0, sc: 1 },
     ];
   },

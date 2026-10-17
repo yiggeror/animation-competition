@@ -6,8 +6,8 @@ import { mat, setScreen, drawGame, drawStatus, lit } from './phone.js';
 const IW = 1672, IH = 940;
 export const SCR = { x0: 325, y0: 166, w: 1018, h: 438 };          // 屏幕在图上的范围（抠绿幕时量的）
 // 两个拇指在屏幕上的部分（多边形）和指根（转动中心）
-const THUMB_R = { poly: [[1190, 326], [1342, 326], [1342, 530], [1296, 530], [1190, 430]], pivot: [1352, 452] };
-const THUMB_L = { poly: [[326, 396], [472, 396], [472, 500], [400, 540], [326, 566]], pivot: [312, 528] };
+const THUMB_R = { poly: [[1190, 326], [1342, 326], [1342, 530], [1296, 530], [1190, 430]], cut: [[1190, 326], [1328, 326], [1328, 530], [1296, 530], [1190, 430]], pivot: [1352, 452] };
+const THUMB_L = { poly: [[326, 396], [472, 396], [472, 500], [400, 540], [326, 566]], cut: [[340, 396], [472, 396], [472, 500], [400, 540], [340, 561]], pivot: [312, 528] };
 setScreen(SCR.w, SCR.h, [128, 286], [886, 214]);                   // 方向键、起跳键在两个拇指下面
 let IMG = null;
 const bmp = async (f) => createImageBitmap(await (await fetch(`/assets/chars/${f}.png`)).blob());
@@ -29,7 +29,8 @@ let LAYERS = null;
 async function layers() {
   if (LAYERS) return LAYERS;
   const im = await img();
-  const base = layer(im, null, [THUMB_R.poly, THUMB_L.poly]);
+  // 底图挖掉的范围比拇指层小一截（指根那边在屏幕边缘里面留 14 像素），拇指层转动时盖在底图同一截拇指上，屏幕边上不露缝
+  const base = layer(im, null, [THUMB_R.cut, THUMB_L.cut]);
   // 按下时用的底图：再挖掉右手那一块（换成图 B 的右手）；遮罩图的亮度当透明度用
   const TB = await thumbB(), rm = new OffscreenCanvas(IW, IH), rx = rm.getContext('2d');
   rx.drawImage(TB.region, 0, 0); const id = rx.getImageData(0, 0, IW, IH), D = id.data; for (let i = 0; i < D.length; i += 4) D[i + 3] = D[i]; rx.putImageData(id, 0, 0);
@@ -80,7 +81,7 @@ export async function renderPhoneImg(ctx, W, H, st) {
   // 拇指在屏幕上的影子（日光灯在头顶，抬起时影子离得远一点、虚一点）
   // 右拇指：抬着时用 A 的拇指（往下按的半程跟着转一点），按到底（press ≥ 0.5）换成 B 的拇指和它的接触影
   const pr = st.press ?? 0, dp = st.dpad ?? 0, down = pr >= 0.5;
-  const aR = -0.09 * Math.min(1, pr * 2), aL = 0.03 * dp;
+  const aR = -0.06 * Math.min(1, pr * 2), aL = 0.03 * dp;
   if (!dark) {
     ctx.save(); ctx.clip(mask); ctx.filter = `blur(${12 - 6 * pr}px)`; ctx.globalAlpha = 0.3;
     if (!down) { ctx.save(); ctx.translate(-10 + 6 * pr, 16 - 9 * pr); rotAbout(ctx, THUMB_R.pivot, aR); ctx.drawImage(L.tr, 0, 0); ctx.restore(); }

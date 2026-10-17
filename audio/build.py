@@ -224,8 +224,7 @@ sfx(power_cut(), CUT, 0.7, -0.3)
 print('屋内音效…')
 for t0, hard in [(1.0, False), (1.8, False), (3.0, False), (3.9, False), (6.4, True)]:
     sfx(plug(hard), T('S06', t0), 0.6 if hard else 0.4, 0.15)
-for k in range(4):                                         # 捏着插头晃两下：插脚在手里轻轻磕的塑料声（js/paint/shots/s06.js 3.25～3.6 秒，每秒 4.5 下）
-    sfx(click(0.12, 3800, 260), T('S06', 3.25 + k / 9 + 0.05), 0.14, 0.15)
+sfx(lp(R.standard_normal(ns(0.35)), 1500).astype(np.float32) * np.hanning(ns(0.35)).astype(np.float32) * 0.3, T('S06', 3.4), 0.5, 0.15)   # 吹一口插头（脸在画外）
 sfx(thud(0.9, 80, 0.15, 900), T('S07', 0.4), 0.5, -0.1); sfx(bamboo_mat(0.7), T('S07', 0.42), 0.4, -0.1)
 sfx(fan_hand(3.5, 1.3), T('S07', 1.2), 0.25, -0.1)
 sfx(scrape(0.3, 4), T('S07', 1.4), 0.2, 0.4)              # 奶奶起身，凳子挪一下
