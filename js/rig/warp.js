@@ -104,12 +104,16 @@ export function bind(img, rig, o = {}) {
       const top = Array.from(full[v], (w, q) => [q, w]).sort((m, n) => n[1] - m[1]).slice(0, 4), sum = top.reduce((a, t) => a + t[1], 0) || 1;
       top.forEach(([q, w], j) => { wts[v * 4 + j] = w / sum; ids[v * 4 + j] = q; });
     }
-    // 这一层的贴图：只保留这一层范围里的像素（身体层挖掉单独一层的部分）
-    const tex = new OffscreenCanvas(W, H), tx = tex.getContext('2d');
-    tx.drawImage(img, 0, 0);
-    if (L.poly) { tx.globalCompositeOperation = 'destination-in'; tx.beginPath(); L.poly.forEach(([px, py], i) => (i ? tx.lineTo(px, py) : tx.moveTo(px, py))); tx.closePath(); tx.fill(); }
-    else if (rig.layers?.length && !o.keepUnder) { tx.globalCompositeOperation = 'destination-out'; for (const l of rig.layers) { if (l.keepUnder) continue; tx.beginPath(); l.poly.forEach(([px, py], i) => (i ? tx.lineTo(px, py) : tx.moveTo(px, py))); tx.closePath(); tx.fill(); } }
-    layers.push({ name: L.name, z: L.z ?? 0, rest: new Float32Array(rest), w: wts, i: ids, tris: new Uint32Array(tris), tex });
+    // 这一层的贴图：只保留这一层范围里的像素（身体层挖掉单独一层的部分）；同一网格可以贴不同的图（固有色、法线、材质），按图缓存
+    const layerTex = (src) => {
+      const tex = new OffscreenCanvas(W, H), tx = tex.getContext('2d');
+      tx.drawImage(src, 0, 0);
+      if (L.poly) { tx.globalCompositeOperation = 'destination-in'; tx.beginPath(); L.poly.forEach(([px, py], i) => (i ? tx.lineTo(px, py) : tx.moveTo(px, py))); tx.closePath(); tx.fill(); }
+      else if (rig.layers?.length) { tx.globalCompositeOperation = 'destination-out'; for (const l of rig.layers) { if (l.keepUnder) continue; tx.beginPath(); l.poly.forEach(([px, py], i) => (i ? tx.lineTo(px, py) : tx.moveTo(px, py))); tx.closePath(); tx.fill(); } }
+      return tex;
+    };
+    const tex = layerTex(img);
+    layers.push({ name: L.name, z: L.z ?? 0, rest: new Float32Array(rest), w: wts, i: ids, tris: new Uint32Array(tris), tex, layerTex, texBy: new Map([[img, tex]]) });
   }
   layers.sort((p, q) => p.z - q.z);
   return { W, H, rig, idx, layers, img };
@@ -142,8 +146,8 @@ function glCtx(W, H) {
   GLCS.set(key, G);
   return G;
 }
-// 渲染：返回原图尺寸的画布
-export function render(B, pose) {
+// 渲染：返回原图尺寸的画布。src：换一张和原图对齐的图贴在同一网格上（床单戏图卡的法线图、材质图），默认原图
+export function render(B, pose, src) {
   const G = glCtx(B.W, B.H), gl = G.gl;
   gl.viewport(0, 0, B.W, B.H); gl.clearColor(0, 0, 0, 0); gl.clear(gl.COLOR_BUFFER_BIT);
   gl.useProgram(G.pr); gl.enable(gl.BLEND); gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
@@ -153,7 +157,10 @@ export function render(B, pose) {
   gl.uniform2f(gl.getUniformLocation(G.pr, 'uSize'), B.W, B.H);
   const face = pose.__face, lid = pose.__blink ? lids(B, pose.__blink) : null;
   for (const L of B.layers) {
-    drawLayer(G, L, L.tex);
+    let t = L.tex;
+    if (src && src !== B.img) { t = L.texBy.get(src); if (!t) { t = L.layerTex(src); L.texBy.set(src, t); } }
+    drawLayer(G, L, t);
+    if (src && src !== B.img) continue;                                         // 法线、材质图不叠表情头和眼皮
     if (face && L.name === (face.layer || 'body')) drawLayer(G, L, face.tex);   // 表情头：同一层网格、换一张贴图（只在脸的范围里有像素）
     if (lid && L.name === 'body') drawLayer(G, L, lid);                          // 眨眼的眼皮，跟着头走
   }
@@ -210,6 +217,8 @@ export function blinkAt(t, times) {
   for (const b of times) { const u = t - b; if (u > -0.05 && u < 0.12) k = Math.max(k, u < 0 ? 1 + u / 0.05 : u < 0.04 ? 1 : 1 - (u - 0.04) / 0.08); }
   return k;
 }
+// 床单戏图卡：固有色、法线、材质三张图用同一副骨架一起变形
+export function renderMaps(B, pose, maps) { return { alb: render(B, pose), nrm: render(B, pose, maps.nrm), mat: render(B, pose, maps.mat) }; }   // 固有色用绑骨时的原图（带表情头、眼皮），rig.image 就是固有色图
 // 读绑骨数据 + 图，绑好
 const CACHE = new Map();
 export async function loadRig(name) {
