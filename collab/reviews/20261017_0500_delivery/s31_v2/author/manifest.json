@@ -1,0 +1,37 @@
+{
+  "tool": "image_gen.imagegen",
+  "generation_calls_this_revision": 1,
+  "operation": "authorized bounded edit of S31 v1, head direction and right flashlight grip",
+  "source": {
+    "path": "/workspace/generated_images/exec-971aae8f-7772-44da-8736-d05952f87585.png",
+    "sha256": "74f791dae31b8bb24c9046badb32ff062ede5c87cdc65ef616f4bd0815b87b2d",
+    "bytes": 1606949,
+    "format": "PNG",
+    "mode": "RGB",
+    "width": 1024,
+    "height": 1536
+  },
+  "candidate": {
+    "path": "/tmp/laidian-produce-s31v2/anim_33_xiaoman_flashlight_face.png",
+    "sha256": "74f791dae31b8bb24c9046badb32ff062ede5c87cdc65ef616f4bd0815b87b2d",
+    "bytes": 1606949,
+    "format": "PNG",
+    "mode": "RGB",
+    "width": 1024,
+    "height": 1536
+  },
+  "input_v1": {
+    "path": "/tmp/laidian-produce-s31/anim_33_xiaoman_flashlight_face.png",
+    "sha256": "96505c96bf4b367f333a847c9e2d87ec9e924dd372e06186ab3291ab521e8af9",
+    "bytes": 1560885,
+    "format": "PNG",
+    "mode": "RGB",
+    "width": 1024,
+    "height": 1536
+  },
+  "byte_identical_to_source": true,
+  "resize_or_repaint_applied": false,
+  "status": "candidate_pending_independent_review",
+  "temporary_geometry": "Short neutral gray cylinder at right hand is a replaceable grip-volume guide, not final flashlight.",
+  "acceptance_scope_note": "Latest Opus request fixes head/face toward image left; pupil screen-left is not an independent user hard gate."
+}

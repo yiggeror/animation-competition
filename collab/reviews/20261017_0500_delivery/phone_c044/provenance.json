@@ -1,0 +1,24 @@
+{
+  "commit": "c044ecc8186cfd91e774ea2f41d0c28b5e3e09fa",
+  "origin": "Independent local verification render, not an Opus-delivered preview",
+  "files": {
+    "tools/js/frames.cjs": "f0d7b3ea0ac78c74ef332f02f6519b58b2e9f92f0fd36edee67234e528358522",
+    "tools/js/serve.cjs": "85e67155f5b39852bb8f7d08457a1ba15db538ce05e582cc26d4b364f8b6136d",
+    "js/code/s05.js": "4854706d4fafce5384a900c60780f1dc967c8f61d600f0a7209502a0e839f7e1",
+    "js/code/phone_img.js": "e062ba2be201c4d11e0afc6a8d89e639ae0968768e37ec53f13130b5ecf712c5",
+    "js/code/phone.js": "7b5152cc41a27c2fea9173b28a24392eecde304337c3293d8706e292684440d6",
+    "assets/chars/h02_phone.png": "728e11b302ca4409264ab08a47ab4bc696fc02870f12642ecfc0b158380b0cbe",
+    "assets/chars/h02_thumb_b.png": "fbaae16348a93ed681270e036492c911581a96177aa62cf3d222869cc691f1fb",
+    "assets/chars/h02_thumb_b_region.png": "905133519e6d194d4df0502ad2393a8db25006b3b0bc8bef25f5b783e4bbc2a3",
+    "assets/chars/h02_thumb_b_shadow.png": "d740d3533b7f3d9d177663daef17b95e7c371c1fcc1abd26c20196f89c783a77"
+  },
+  "runtime_edits": [
+    "serve.cjs require points to original repository absolute path",
+    "chromium.launch uses /usr/bin/chromium and --no-sandbox"
+  ],
+  "width": 960,
+  "height": 540,
+  "fps": 24,
+  "frames": 96,
+  "workers": 2
+}

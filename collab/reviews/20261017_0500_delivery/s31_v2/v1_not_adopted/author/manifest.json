@@ -1,0 +1,50 @@
+{
+  "tool": "image_gen.imagegen",
+  "generation_calls": 1,
+  "source": {
+    "path": "/workspace/generated_images/exec-11388a4c-f896-4406-9959-ac227c7c6290.png",
+    "sha256": "96505c96bf4b367f333a847c9e2d87ec9e924dd372e06186ab3291ab521e8af9",
+    "bytes": 1560885,
+    "format": "PNG",
+    "mode": "RGB",
+    "width": 1024,
+    "height": 1536
+  },
+  "candidate": {
+    "path": "/tmp/laidian-produce-s31/anim_33_xiaoman_flashlight_face.png",
+    "sha256": "96505c96bf4b367f333a847c9e2d87ec9e924dd372e06186ab3291ab521e8af9",
+    "bytes": 1560885,
+    "format": "PNG",
+    "mode": "RGB",
+    "width": 1024,
+    "height": 1536
+  },
+  "byte_identical_to_source": true,
+  "references": [
+    {
+      "path": "/workspace/animation-competition/collab/refs/anim_20_xiaoman_puppeteer.png",
+      "sha256": "77fff6438b51ec53a08797d53eb15555420e21fa8a566eb2e6f0c430065b9aa7",
+      "bytes": 1580494,
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "path": "/workspace/animation-competition/collab/refs/xiaoman_expressions_current03.png",
+      "sha256": "5df66be288683cb1c7e59ba9cd83105b515b7df28bd83fc8fdb159f80861cdee",
+      "bytes": 1578292,
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 2048,
+      "height": 768
+    }
+  ],
+  "resize_or_repaint_applied": false,
+  "status": "not_ready_for_S31_author_found_constraints_unmet_pending_independent_review",
+  "known_issues": [
+    "Right hand wrongly grips extra thin bamboo piece, not the required empty flashlight grip.",
+    "Gaze points screen-right, not requested left.",
+    "Face mostly frontal slightly right; intended left angle not achieved."
+  ]
+}

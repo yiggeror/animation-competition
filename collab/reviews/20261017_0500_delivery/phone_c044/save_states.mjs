@@ -1,0 +1,1 @@
+import fs from 'node:fs';import {state} from './source/js/code/s05.js'; fs.writeFileSync(new URL('./frame_states.json',import.meta.url),JSON.stringify(Array.from({length:96},(_,f)=>({frame:f,...state(f/24)})),null,2));
