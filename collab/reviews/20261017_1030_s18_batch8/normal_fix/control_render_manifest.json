@@ -1,0 +1,526 @@
+{
+  "loading": {
+    "mode": "actual loader success",
+    "frames": [
+      {
+        "file": "x16_arms_loose",
+        "input": [
+          635,
+          1175
+        ],
+        "allMapsPresent": true,
+        "reg": {
+          "deg": 0,
+          "scale": 1,
+          "nominal": 1
+        },
+        "matrix": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "output": [
+          635,
+          1175
+        ]
+      },
+      {
+        "file": "x18_f06",
+        "input": [
+          922,
+          1706
+        ],
+        "allMapsPresent": true,
+        "reg": {
+          "deg": -0.09680865458349595,
+          "scale": 0.6901301398039786,
+          "nominal": 0.688732888526258
+        },
+        "matrix": [
+          0.6901291546956299,
+          -0.0011660638724302664,
+          0.0011660638724302664,
+          0.6901291546956299,
+          -3.5543290163173076,
+          7.232963455418712
+        ],
+        "output": [
+          635,
+          1175
+        ]
+      },
+      {
+        "file": "x18_f06b",
+        "input": [
+          922,
+          1706
+        ],
+        "allMapsPresent": true,
+        "reg": {
+          "deg": 0.11722208072109654,
+          "scale": 0.689899828871276,
+          "nominal": 0.688732888526258
+        },
+        "matrix": [
+          0.689898384996674,
+          0.0014114728466684207,
+          -0.0014114728466684207,
+          0.689898384996674,
+          0.7845693392119983,
+          9.449160769909895
+        ],
+        "output": [
+          635,
+          1175
+        ]
+      },
+      {
+        "file": "x18_laugh",
+        "input": [
+          635,
+          1175
+        ],
+        "allMapsPresent": true,
+        "reg": {
+          "deg": 0,
+          "scale": 1,
+          "nominal": 1
+        },
+        "matrix": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "output": [
+          635,
+          1175
+        ]
+      }
+    ],
+    "perFrame": [
+      "x16_arms_loose",
+      "x16_arms_loose",
+      "x16_arms_loose",
+      "x16_arms_loose",
+      "x16_arms_loose",
+      "x16_arms_loose",
+      "x16_arms_loose",
+      "x16_arms_loose",
+      "x16_arms_loose",
+      "x16_arms_loose",
+      "x16_arms_loose",
+      "x16_arms_loose",
+      "x16_arms_loose",
+      "x16_arms_loose",
+      "x16_arms_loose",
+      "x18_f06",
+      "x18_f06",
+      "x18_f06",
+      "x18_f06b",
+      "x18_f06b",
+      "x18_f06b",
+      "x18_laugh",
+      "x18_laugh",
+      "x18_laugh",
+      "x18_laugh",
+      "x18_laugh",
+      "x18_laugh",
+      "x18_laugh",
+      "x18_laugh",
+      "x18_laugh"
+    ]
+  },
+  "rendered": [
+    {
+      "n": 21,
+      "file": "f0021.png",
+      "sha256": "38bdbc9941369680cef793060f853880a0390104ee4c10c8115032801c6bcccd"
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "path": "dev/view.html",
+      "status": 200
+    },
+    {
+      "path": "js/lamp/shots/s18.js",
+      "status": 200
+    },
+    {
+      "path": "js/lamp/shots/shotkit.js",
+      "status": 200
+    },
+    {
+      "path": "js/lamp/shots/s17.js",
+      "status": 200
+    },
+    {
+      "path": "js/lamp/s06_key.js",
+      "status": 200
+    },
+    {
+      "path": "js/lamp/xm_rig.js",
+      "status": 200
+    },
+    {
+      "path": "js/rig/flipbook.js",
+      "status": 200
+    },
+    {
+      "path": "favicon.ico",
+      "status": 404
+    },
+    {
+      "path": "js/lamp/turtle.js",
+      "status": 200
+    },
+    {
+      "path": "js/lamp/choreo.js",
+      "status": 200
+    },
+    {
+      "path": "js/lamp/gl.js",
+      "status": 200
+    },
+    {
+      "path": "js/lamp/shaders.js",
+      "status": 200
+    },
+    {
+      "path": "js/shadowplay.js",
+      "status": 200
+    },
+    {
+      "path": "js/lamp/crane.js",
+      "status": 200
+    },
+    {
+      "path": "js/lamp/scenery.js",
+      "status": 200
+    },
+    {
+      "path": "js/lamp/xiaoman.js",
+      "status": 200
+    },
+    {
+      "path": "js/lamp/cards.js",
+      "status": 200
+    },
+    {
+      "path": "js/puppet.js",
+      "status": 200
+    },
+    {
+      "path": "js/lib/draw.js",
+      "status": 200
+    },
+    {
+      "path": "js/lib/figure.js",
+      "status": 200
+    },
+    {
+      "path": "js/lib/core.js",
+      "status": 200
+    },
+    {
+      "path": "assets/fonts/MaShanZheng-Regular.ttf",
+      "status": 200
+    },
+    {
+      "path": "assets/fonts/NotoSansSC-VF.ttf",
+      "status": 200
+    },
+    {
+      "path": "assets/flips/x18_laugh.flip.json",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x16_arms_loose.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_f06.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_f06b.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_laugh.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x16_arms_loose_n.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x16_arms_loose_m.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_laugh_n.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_laugh_m.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_f06_n.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_f06_m.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_f06b_n.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_f06b_m.png",
+      "status": 200
+    },
+    {
+      "path": "assets/flips/x18_laugh.flip.json",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x16_arms_loose.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_f06.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_f06b.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_laugh.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x16_arms_loose_n.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x16_arms_loose_m.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_f06b_n.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_f06b_m.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_laugh_n.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_laugh_m.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_f06_n.png",
+      "status": 200
+    },
+    {
+      "path": "assets/chars/x18_f06_m.png",
+      "status": 200
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "dev/view.html",
+      "sha256": "2b5228f5447bcb919a6dea545152e5645cee890f89377d6ff7ffa14c9f6ed701",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/lamp/shots/s18.js",
+      "sha256": "361ef9d9f61634f0777f11cfb3a27f274bc4e36378e771e7926765d198ab03e1",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/lamp/shots/shotkit.js",
+      "sha256": "3cd7989d0276f0edc791ac72fae11463e611f13c0a3433fe99c27f38cec20a74",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/lamp/shots/s17.js",
+      "sha256": "c893524860dd10fe15c1309befe149e1ec22c9c009e6a46f822ddd7b84ba5b53",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/lamp/s06_key.js",
+      "sha256": "fdd0835b5486ac66385cb339b2a2dbbb8521978d3716c6293c7ef5927ef887d9",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/lamp/xm_rig.js",
+      "sha256": "99b819478174a2bf250883cf05dd3c9f9b5743c1cfb98c5fd58ab876d28b7b22",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/rig/flipbook.js",
+      "sha256": "00162231b0ec84c84aa9c0cede52665e00efa8fb1b4c9e8dfe0bd6936917dca0",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/lamp/turtle.js",
+      "sha256": "f7e91070a5959a2a5b97438a64db0f79af4890c2dbff1cdcbe6e4d6a28817ed2",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/lamp/choreo.js",
+      "sha256": "6f838cdfb1aab203f83e5905eb4242a65addb4181ca8e66ed4c91340903e33d6",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/lamp/gl.js",
+      "sha256": "ba98ba276559c430fc244a261387b32c77901a042e9c60b8acee31da3fdd0b29",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/lamp/shaders.js",
+      "sha256": "773d25786637b178c73df987f11539d8786f2516fc6c04099d81caae170ddf1d",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/shadowplay.js",
+      "sha256": "2620c4164efb9a440f69b7d723d1d373894116115c9aa56442160b8a7b0739d8",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/lamp/crane.js",
+      "sha256": "212e8a4fdad764fa50928c60a8efc956ad660c62377ea1ea152433a6fea4e642",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/lamp/scenery.js",
+      "sha256": "63f8cc830c0ed37db2a178b8b9ae3ed69f2d455915e1c5fb3bd5222d7fa64030",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/lamp/xiaoman.js",
+      "sha256": "d3b47b12cbcbb4bdec96df0bfa85357543ab6ea98d627cdb8260550cfc6e60e0",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/lamp/cards.js",
+      "sha256": "180990ac75dfe1d171ea7b1a318ff0bc9935cf9b4bcc11dcba5bafb65d15984f",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/puppet.js",
+      "sha256": "04b80760b97185ab8aea7826383d85f3c9d7789cd01aa1d8664fdc74bc4c30b7",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/lib/draw.js",
+      "sha256": "e3d36d237c0f143f349bfd2fbc9afad24fc71897f56b990a5d2ed084d6c6d496",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/lib/figure.js",
+      "sha256": "03c8928bbe6546af7206024a163c9f56d7826f60917c24ac448010fdae67f3de",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "js/lib/core.js",
+      "sha256": "748c357b97a71d6f122ef483923a64d3395bd692f6775b1601ef19b5bc08883e",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "assets/fonts/MaShanZheng-Regular.ttf",
+      "sha256": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "assets/fonts/NotoSansSC-VF.ttf",
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "assets/flips/x18_laugh.flip.json",
+      "sha256": "059f8c4b0197f117ac5ce0f11016096d2994929437a517bfd22bb47f7f1be740",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "assets/chars/x16_arms_loose.png",
+      "sha256": "cf7756acf52a58b0279b03733fe75c87b1c9ddbb162d29b5e1aa6e12a766e280",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "assets/chars/x18_f06.png",
+      "sha256": "542f07b0db703d3909e5d83d03d3be53b99724c647689bdcffa73a980618f096",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "assets/chars/x18_f06b.png",
+      "sha256": "ed6c7930644e14597d8bfeaba36f50f3202c694eb570843610031d260b41a399",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "assets/chars/x18_laugh.png",
+      "sha256": "499a81ef65f78e44597045af0a91a3236de660064eecf0ca2ecd4cdfa35bb633",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "assets/chars/x16_arms_loose_n.png",
+      "sha256": "d541789d15383e24e46528c3093886b55e91d6bb87ae02dcfe6a29a367a41068",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "assets/chars/x16_arms_loose_m.png",
+      "sha256": "719ab8de6a30e210985122833dcb451ecdd33a9e46c0283eeea61b49df9efaca",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "assets/chars/x18_laugh_n.png",
+      "sha256": "356b4144a0e9f2ea030c32ce48e08b6afca4237d15bee9482b6e68579c838f12",
+      "sourceUnchanged": false
+    },
+    {
+      "path": "assets/chars/x18_laugh_m.png",
+      "sha256": "87ce8fb019d1a7fddda7f961ad80b84f246ff3ef4c24f2f0d78f8a1564b9fe59",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "assets/chars/x18_f06_n.png",
+      "sha256": "7af684f56e971ef5f0e099cb3b0bebbd0cf3aee011199810b6ec409c3c2359a0",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "assets/chars/x18_f06_m.png",
+      "sha256": "b79db94637e60320883cd3a6580f98a65bdd38a32d07e0fd26bb55fce762d5cc",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "assets/chars/x18_f06b_n.png",
+      "sha256": "12e5666e29505a2b36e97c4da6351950e9a41c8df274724196bd085d87781464",
+      "sourceUnchanged": true
+    },
+    {
+      "path": "assets/chars/x18_f06b_m.png",
+      "sha256": "39ee583d6876ceee8c9a5f8ff3bd60f247a4ff3e2b9cbaeefbd8e833f256562d",
+      "sourceUnchanged": true
+    }
+  ],
+  "debug": {
+    "sheetRes": 450
+  },
+  "note": "Independent 960x540 actual S18 renders at three switch frames; video itself separately decoded, no temporal-playback or audio-listening claim"
+}

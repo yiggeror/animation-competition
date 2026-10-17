@@ -1,0 +1,67 @@
+{
+  "status": "frozen preparation; no image generation invoked",
+  "source": {
+    "path": "/workspace/animation-competition/assets/chars/x16_arms_loose.png",
+    "sha256": "cf7756acf52a58b0279b03733fe75c87b1c9ddbb162d29b5e1aa6e12a766e280",
+    "size": [
+      635,
+      1175
+    ],
+    "fixed_reference": "The actual base image itself; no old k04/k06 skeleton is substituted."
+  },
+  "files": {
+    "arms_grid.png": {
+      "sha256": "05d8add7a51ea5a3bd7042efeac75583f98302e753f525e4348d27e213ed4929",
+      "bytes": 603145
+    },
+    "author_notes.md": {
+      "sha256": "6aee1baf5f6420d70caa4424d4771cb38a2551398c9135fb8b98bee9d2367e0b",
+      "bytes": 1259
+    },
+    "build_reference.py": {
+      "sha256": "68ede55ac3d6e21a63303a4fd07a7dcb5a7a73c0b2ae2ba66be1b32eb94757c3",
+      "bytes": 9825
+    },
+    "finalize_request.py": {
+      "sha256": "c87e2c1a6b7e9c3021935f9d200c7752ee47f06439563f24ed0c7afffbed0c27",
+      "bytes": 5716
+    },
+    "head_grid.png": {
+      "sha256": "315e93c1fbff75de909b48515526b7a5ec5cdf08f68d7ed6b586d7f47f999558",
+      "bytes": 381662
+    },
+    "k04_loose_reference.json": {
+      "sha256": "9abc35a85e6962f87a500da85a4e61ec8b43d12c23b08c13f671cc910c6f4eb4",
+      "bytes": 10768
+    },
+    "k04_loose_target_reference.png": {
+      "sha256": "5402d53cd03bda6f7c1b1c137678a4979dd4fce8d6386c06bfdc4660fa6ce9fe",
+      "bytes": 66555
+    },
+    "master_identity_x16_arms_loose.png": {
+      "sha256": "cf7756acf52a58b0279b03733fe75c87b1c9ddbb162d29b5e1aa6e12a766e280",
+      "bytes": 759552
+    },
+    "prompt_k04.txt": {
+      "sha256": "91e7cf95b2bc3cead7acc967cf943fa1961867404108ee708448ccca5cd5f62e",
+      "bytes": 1811
+    },
+    "request_k04.json": {
+      "sha256": "76f6a3c94c510e53d892d3ef1f97656b7e8d9e0a34a15f5ca00c2e0cb418eead",
+      "bytes": 753
+    }
+  },
+  "checks": {
+    "source_copy_byte_identical": true,
+    "target_image_size": [
+      635,
+      1175
+    ],
+    "fixed_working_points_equal": true,
+    "max_reference_bone_length_error_px": 5.684341886080802e-14
+  },
+  "limits": [
+    "Estimated joints are not anatomical precision.",
+    "Generated outputs and temporal motion have not been tested by this preparation."
+  ]
+}

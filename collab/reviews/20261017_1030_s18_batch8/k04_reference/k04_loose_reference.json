@@ -1,0 +1,489 @@
+{
+  "shot": "S18",
+  "key": "k04",
+  "status": "reference/request prepared only; image generation not authorized in this task",
+  "master": "/workspace/animation-competition/assets/chars/x16_arms_loose.png",
+  "master_copy": "master_identity_x16_arms_loose.png",
+  "source_sha256": "cf7756acf52a58b0279b03733fe75c87b1c9ddbb162d29b5e1aa6e12a766e280",
+  "size": [
+    635,
+    1175
+  ],
+  "coordinate_convention": "native source pixels, x right/y down; near=anatomical right arm; far=anatomical left arm",
+  "amplitude": {
+    "head_rotation_reference_deg": -0.8,
+    "head_rotation_absolute_limit_deg": 1,
+    "head_pivot": [
+      273,
+      418
+    ],
+    "head_translation_independent_px": [
+      0,
+      0
+    ],
+    "shoulder_lift_reference_px": 2,
+    "shoulder_lift_limit_px": 3,
+    "elbow_passive_compensation_limit_px": 3,
+    "head_feature_motion_is_allowed": true,
+    "precision_statement": "These numbers describe a small reference envelope, not generator precision or guaranteed pixel locking."
+  },
+  "head_reference_matrix": [
+    [
+      0.9999025240093042,
+      0.013962180339145272,
+      -5.809580436302788
+    ],
+    [
+      -0.013962180339145272,
+      0.9999025240093042,
+      3.8524201966974942
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "source_landmarks": {
+    "neck_root": [
+      273,
+      418
+    ],
+    "head_center_proxy": [
+      239,
+      242
+    ],
+    "near_shoulder": [
+      235,
+      481
+    ],
+    "near_elbow": [
+      277,
+      681
+    ],
+    "near_wrist": [
+      414,
+      739
+    ],
+    "near_palm": [
+      451,
+      750
+    ],
+    "near_fingertip": [
+      490,
+      780
+    ],
+    "far_shoulder": [
+      324,
+      490
+    ],
+    "far_elbow": [
+      361,
+      669
+    ],
+    "far_wrist": [
+      455,
+      721
+    ],
+    "far_palm": [
+      487,
+      733
+    ],
+    "far_fingertip": [
+      523,
+      760
+    ],
+    "waist_proxy": [
+      263,
+      643
+    ],
+    "pelvis_proxy": [
+      223,
+      801
+    ],
+    "near_knee_proxy": [
+      465,
+      813
+    ],
+    "near_ankle": [
+      431,
+      1082
+    ],
+    "near_toe": [
+      555,
+      1132
+    ],
+    "far_knee_proxy": [
+      515,
+      799
+    ],
+    "far_ankle": [
+      498,
+      1060
+    ],
+    "far_toe": [
+      600,
+      1110
+    ],
+    "near_eye_center": [
+      313,
+      253
+    ],
+    "far_eye_visible_edge": [
+      363,
+      234
+    ],
+    "mouth_center": [
+      375,
+      316
+    ],
+    "nose_tip": [
+      391,
+      265
+    ],
+    "chin_visible": [
+      343,
+      373
+    ],
+    "ear_center": [
+      195,
+      315
+    ],
+    "tuft_top": [
+      194,
+      18
+    ],
+    "tuft_free_tip": [
+      150,
+      42
+    ],
+    "tuft_root": [
+      209,
+      85
+    ],
+    "near_braid_tie": [
+      121,
+      368
+    ],
+    "far_braid_tie": [
+      194,
+      388
+    ]
+  },
+  "source_landmark_confidence": {
+    "neck_root": {
+      "status": "occluded/anatomical proxy",
+      "uncertainty_px": 10
+    },
+    "head_center_proxy": {
+      "status": "composition proxy, not a surface feature",
+      "uncertainty_px": 15
+    },
+    "near_shoulder": {
+      "status": "hidden by sleeve; estimated",
+      "uncertainty_px": 12
+    },
+    "near_elbow": {
+      "status": "joint center estimated from visible bend",
+      "uncertainty_px": 8
+    },
+    "near_wrist": {
+      "status": "visible wrist transition; estimated center",
+      "uncertainty_px": 6
+    },
+    "far_shoulder": {
+      "status": "occluded shoulder; estimated",
+      "uncertainty_px": 15
+    },
+    "far_elbow": {
+      "status": "partly occluded by foreground arm; estimated",
+      "uncertainty_px": 12
+    },
+    "far_wrist": {
+      "status": "visible wrist transition; estimated center",
+      "uncertainty_px": 6
+    },
+    "near_palm": {
+      "status": "visible palm/back-of-hand center proxy",
+      "uncertainty_px": 5
+    },
+    "near_fingertip": {
+      "status": "visible fingertip; no digit identity claimed",
+      "uncertainty_px": 3
+    },
+    "far_palm": {
+      "status": "visible hand center proxy",
+      "uncertainty_px": 5
+    },
+    "far_fingertip": {
+      "status": "visible fingertip; no digit identity claimed",
+      "uncertainty_px": 3
+    },
+    "waist_proxy": {
+      "status": "garment waist position, not pelvis",
+      "uncertainty_px": 5
+    },
+    "pelvis_proxy": {
+      "status": "occluded by skirt; seated-location proxy",
+      "uncertainty_px": 15
+    },
+    "near_knee_proxy": {
+      "status": "knee under skirt edge; estimated",
+      "uncertainty_px": 10
+    },
+    "far_knee_proxy": {
+      "status": "partly hidden by skirt; estimated",
+      "uncertainty_px": 10
+    },
+    "near_ankle": {
+      "status": "visible landmark / shape-center estimate",
+      "uncertainty_px": 5
+    },
+    "near_toe": {
+      "status": "visible landmark / shape-center estimate",
+      "uncertainty_px": 5
+    },
+    "far_ankle": {
+      "status": "visible landmark / shape-center estimate",
+      "uncertainty_px": 5
+    },
+    "far_toe": {
+      "status": "visible landmark / shape-center estimate",
+      "uncertainty_px": 5
+    },
+    "near_eye_center": {
+      "status": "visible landmark / shape-center estimate",
+      "uncertainty_px": 5
+    },
+    "far_eye_visible_edge": {
+      "status": "visible landmark / shape-center estimate",
+      "uncertainty_px": 5
+    },
+    "mouth_center": {
+      "status": "visible landmark / shape-center estimate",
+      "uncertainty_px": 5
+    },
+    "nose_tip": {
+      "status": "visible landmark / shape-center estimate",
+      "uncertainty_px": 5
+    },
+    "chin_visible": {
+      "status": "visible landmark / shape-center estimate",
+      "uncertainty_px": 5
+    },
+    "ear_center": {
+      "status": "visible landmark / shape-center estimate",
+      "uncertainty_px": 5
+    },
+    "tuft_top": {
+      "status": "visible landmark / shape-center estimate",
+      "uncertainty_px": 3
+    },
+    "tuft_free_tip": {
+      "status": "visible landmark / shape-center estimate",
+      "uncertainty_px": 3
+    },
+    "tuft_root": {
+      "status": "visible landmark / shape-center estimate",
+      "uncertainty_px": 3
+    },
+    "near_braid_tie": {
+      "status": "visible landmark / shape-center estimate",
+      "uncertainty_px": 3
+    },
+    "far_braid_tie": {
+      "status": "visible landmark / shape-center estimate",
+      "uncertainty_px": 3
+    }
+  },
+  "target_landmarks": {
+    "neck_root": [
+      273,
+      418
+    ],
+    "head_center_proxy": [
+      236.5459704439941,
+      242.4918699058934
+    ],
+    "near_shoulder": [
+      235,
+      479
+    ],
+    "near_elbow": [
+      277.95351818490235,
+      678.7973855573172
+    ],
+    "near_wrist": [
+      414,
+      739
+    ],
+    "near_palm": [
+      451,
+      750
+    ],
+    "near_fingertip": [
+      490,
+      780
+    ],
+    "far_shoulder": [
+      324,
+      488
+    ],
+    "far_elbow": [
+      362.29333037291644,
+      666.7277842109354
+    ],
+    "far_wrist": [
+      455,
+      721
+    ],
+    "far_palm": [
+      487,
+      733
+    ],
+    "far_fingertip": [
+      523,
+      760
+    ],
+    "waist_proxy": [
+      263,
+      643
+    ],
+    "pelvis_proxy": [
+      223,
+      801
+    ],
+    "near_knee_proxy": [
+      465,
+      813
+    ],
+    "near_ankle": [
+      431,
+      1082
+    ],
+    "near_toe": [
+      555,
+      1132
+    ],
+    "far_knee_proxy": [
+      515,
+      799
+    ],
+    "far_ankle": [
+      498,
+      1060
+    ],
+    "far_toe": [
+      600,
+      1110
+    ],
+    "near_eye_center": [
+      310.69234120441325,
+      252.457596324899
+    ],
+    "far_eye_visible_edge": [
+      360.42218597843464,
+      232.76133935176495
+    ],
+    "mouth_center": [
+      373.5659150543562,
+      314.58580015645816
+    ],
+    "nose_tip": [
+      388.8522842412087,
+      263.3673765465573
+    ],
+    "chin_visible": [
+      342.36487856538974,
+      372.0270337958412
+    ],
+    "ear_center": [
+      193.56949855234228,
+      316.09909009349497
+    ],
+    "tuft_top": [
+      188.42282846760688,
+      19.14200264307079
+    ],
+    "tuft_free_tip": [
+      144.76220973933695,
+      43.75399915421648
+    ],
+    "tuft_root": [
+      204.35683241046914,
+      85.926039046607
+    ],
+    "near_braid_tie": [
+      120.31670733362847,
+      370.12712521108483
+    ],
+    "far_braid_tie": [
+      193.5888351930906,
+      389.10593652651335
+    ]
+  },
+  "fixed_landmark_names": [
+    "neck_root",
+    "near_wrist",
+    "near_palm",
+    "near_fingertip",
+    "far_wrist",
+    "far_palm",
+    "far_fingertip",
+    "waist_proxy",
+    "pelvis_proxy",
+    "near_knee_proxy",
+    "near_ankle",
+    "near_toe",
+    "far_knee_proxy",
+    "far_ankle",
+    "far_toe"
+  ],
+  "fixed_stool_anchors": {
+    "A_stool_seat_front_left_lower_corner": [
+      23,
+      898
+    ],
+    "B_stool_front_right_foot_outer_bottom": [
+      309,
+      1141
+    ],
+    "C_stool_front_left_foot_outer_bottom": [
+      23,
+      1141
+    ]
+  },
+  "kinematic_checks": [
+    {
+      "side": "near",
+      "upperarm_length_px": 204.3624231604235,
+      "forearm_length_px": 148.77163708180402,
+      "shoulder_displacement_px": 2,
+      "elbow_compensation_displacement_px": 2.4001473521545433,
+      "wrist_displacement_px": 0,
+      "max_bone_length_error_px": 5.684341886080802e-14
+    },
+    {
+      "side": "far",
+      "upperarm_length_px": 182.7840255602223,
+      "forearm_length_px": 107.42439201596628,
+      "shoulder_displacement_px": 2,
+      "elbow_compensation_displacement_px": 2.614511052870625,
+      "wrist_displacement_px": 0,
+      "max_bone_length_error_px": 5.684341886080802e-14
+    }
+  ],
+  "expression": {
+    "source": "eyes open, mouth already slightly open; hands on lap",
+    "target": "laugh burst: curved smiling closed eyes, slight cheek lift, slightly wider open laughing mouth; same face silhouette",
+    "far_eye": "keep the original side-view visibility; do not invent a full second frontal eye"
+  },
+  "notes": [
+    "This master is x16_arms_loose, not x18_laugh; no previous x18 k04 joint set is reused.",
+    "Head/hair may rotate together slightly; do not also instruct the head to remain absolutely motionless. Preserve tuft shape, braid count, ties, bangs and hair volume while permitting the stated small rigid-pose change.",
+    "Both wrists, palms, all fingers and hand-to-lap contact remain fixed. Elbows receive only passive 2.4-2.6px compensation needed by the 2px shoulder reference, not a new arm action.",
+    "Hip/legs/skirt/stool/shoes and camera framing remain unchanged. No hand raises or mouth-covering action.",
+    "Shoulders and covered joints are estimates. Exact target decimal coordinates are geometric calculation output, not visible anatomical precision.",
+    "One future image at most if separately authorized; no generation has been invoked here."
+  ]
+}
