@@ -1,0 +1,122 @@
+{
+  "collar_lower": {
+    "box_xyxy": [
+      300,
+      1080,
+      750,
+      1165
+    ],
+    "search_method": "Coarse dx +/-12, dy +/-64, grid step4 at spatial subsampling4; then +/-3 full-resolution integer refinement around best coarse point.",
+    "best_B_sampling_offset_dx_dy": [
+      -1,
+      -29
+    ],
+    "best_rgb_mae": 8.090684095860567,
+    "zero_offset_rgb_mae": 36.970474945533766,
+    "candidate_translation_to_align_A": [
+      1,
+      29
+    ],
+    "limitation": "Integer translation estimate for stated ROI only; not proof of subpixel or nonrigid equivalence; transform not applied to deliverable."
+  },
+  "near_shoulder_sleeve": {
+    "box_xyxy": [
+      80,
+      1060,
+      370,
+      1400
+    ],
+    "search_method": "Coarse dx +/-12, dy +/-64, grid step4 at spatial subsampling4; then +/-3 full-resolution integer refinement around best coarse point.",
+    "best_B_sampling_offset_dx_dy": [
+      0,
+      -31
+    ],
+    "best_rgb_mae": 7.49657200811359,
+    "zero_offset_rgb_mae": 28.850398918187963,
+    "candidate_translation_to_align_A": [
+      0,
+      31
+    ],
+    "limitation": "Integer translation estimate for stated ROI only; not proof of subpixel or nonrigid equivalence; transform not applied to deliverable."
+  },
+  "far_shoulder_sleeve": {
+    "box_xyxy": [
+      750,
+      1045,
+      950,
+      1390
+    ],
+    "search_method": "Coarse dx +/-12, dy +/-64, grid step4 at spatial subsampling4; then +/-3 full-resolution integer refinement around best coarse point.",
+    "best_B_sampling_offset_dx_dy": [
+      0,
+      -31
+    ],
+    "best_rgb_mae": 6.826212560386473,
+    "zero_offset_rgb_mae": 28.13957487922705,
+    "candidate_translation_to_align_A": [
+      0,
+      31
+    ],
+    "limitation": "Integer translation estimate for stated ROI only; not proof of subpixel or nonrigid equivalence; transform not applied to deliverable."
+  },
+  "chest_dots": {
+    "box_xyxy": [
+      380,
+      1190,
+      750,
+      1450
+    ],
+    "search_method": "Coarse dx +/-12, dy +/-64, grid step4 at spatial subsampling4; then +/-3 full-resolution integer refinement around best coarse point.",
+    "best_B_sampling_offset_dx_dy": [
+      0,
+      -31
+    ],
+    "best_rgb_mae": 4.4351074151074155,
+    "zero_offset_rgb_mae": 15.700932085932086,
+    "candidate_translation_to_align_A": [
+      0,
+      31
+    ],
+    "limitation": "Integer translation estimate for stated ROI only; not proof of subpixel or nonrigid equivalence; transform not applied to deliverable."
+  },
+  "bust_lowercut": {
+    "box_xyxy": [
+      140,
+      1410,
+      900,
+      1505
+    ],
+    "search_method": "Coarse dx +/-12, dy +/-64, grid step4 at spatial subsampling4; then +/-3 full-resolution integer refinement around best coarse point.",
+    "best_B_sampling_offset_dx_dy": [
+      0,
+      -31
+    ],
+    "best_rgb_mae": 3.351768236380425,
+    "zero_offset_rgb_mae": 22.960447830101568,
+    "candidate_translation_to_align_A": [
+      0,
+      31
+    ],
+    "limitation": "Integer translation estimate for stated ROI only; not proof of subpixel or nonrigid equivalence; transform not applied to deliverable."
+  },
+  "body_registration_anchor": {
+    "box_xyxy": [
+      70,
+      1090,
+      950,
+      1505
+    ],
+    "search_method": "Coarse dx +/-12, dy +/-64, grid step4 at spatial subsampling4; then +/-3 full-resolution integer refinement around best coarse point.",
+    "best_B_sampling_offset_dx_dy": [
+      0,
+      -31
+    ],
+    "best_rgb_mae": 5.926880248265791,
+    "zero_offset_rgb_mae": 24.369958926615553,
+    "candidate_translation_to_align_A": [
+      0,
+      31
+    ],
+    "limitation": "Integer translation estimate for stated ROI only; not proof of subpixel or nonrigid equivalence; transform not applied to deliverable."
+  }
+}

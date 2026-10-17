@@ -1,0 +1,57 @@
+{
+  "tool": "image_gen.imagegen",
+  "generation_calls": 1,
+  "source": {
+    "path": "/workspace/generated_images/exec-c05538ec-9186-42b6-9690-12da56375517.png",
+    "sha256": "1bae4f4689a460e3dba0bbac9b8d3c95955a220d31c9ac759f3f9bcafc1f0ac7",
+    "bytes": 1664449,
+    "format": "PNG",
+    "mode": "RGB",
+    "width": 1024,
+    "height": 1536
+  },
+  "candidate": {
+    "path": "/tmp/laidian-produce-grandma-prepare-blow/anim_29_grandma_prepare_blow.png",
+    "sha256": "1bae4f4689a460e3dba0bbac9b8d3c95955a220d31c9ac759f3f9bcafc1f0ac7",
+    "bytes": 1664449,
+    "format": "PNG",
+    "mode": "RGB",
+    "width": 1024,
+    "height": 1536
+  },
+  "byte_identical_to_source": true,
+  "generation_references": [
+    {
+      "path": "/workspace/animation-competition/collab/refs/anim_01_grandma_beans.png",
+      "sha256": "980bf534b5124d922ef712f5a13ddd9c77137d4869ec34300ca3c4a54558ddac",
+      "bytes": 1779078,
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "path": "/workspace/animation-competition/collab/refs/anim_20_grandma_puppeteer.png",
+      "sha256": "bd9f866b12272119b7e55fa153ce00ecb7ecaa28b14239a14df86bada4310c7d",
+      "bytes": 1595456,
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "path": "/workspace/animation-competition/collab/refs/grandma_expressions_current02.png",
+      "sha256": "8394bd5dde841a3202e04f48684d728d5c511317efa1a159c55abe99818b39dd",
+      "bytes": 1770557,
+      "format": "PNG",
+      "mode": "RGB",
+      "width": 2048,
+      "height": 768
+    }
+  ],
+  "resize_or_repaint_applied": false,
+  "status": "candidate_pending_independent_review_with_right_shoulder_crop_limitation",
+  "intended_usage": "Grandmother paused with puffed cheeks and pursed lips before blowing; actual lit lantern, lighting and large head shadow composed later; not an extinguished-lantern pose",
+  "automatic_retries": 0,
+  "known_deviation": "Image-right shoulder/sleeve cropped by right image edge; full head/bun/hairpin remain inside frame. Does not meet both-shoulders-complete requirement."
+}

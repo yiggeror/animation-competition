@@ -1,0 +1,40 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/laidian-audio-final-tvfan/S15.m4a':
+  Metadata:
+    major_brand     : M4A 
+    minor_version   : 512
+    compatible_brands: M4A isomiso2
+    encoder         : Lavf61.7.103
+  Duration: 00:00:08.00, start: 0.000000, bitrate: 268 kb/s
+  Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 265 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : M4A 
+    minor_version   : 512
+    compatible_brands: M4A isomiso2
+    encoder         : Lavf61.7.103
+  Stream #0:0(und): Audio: pcm_s16le, 192000 Hz, stereo, s16, 6144 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 pcm_s16le
+[Parsed_loudnorm_0 @ 0x7fd490002740] 
+{
+	"input_i" : "-13.89",
+	"input_tp" : "-3.16",
+	"input_lra" : "1.20",
+	"input_thresh" : "-23.89",
+	"output_i" : "-15.36",
+	"output_tp" : "-4.05",
+	"output_lra" : "0.50",
+	"output_thresh" : "-25.36",
+	"normalization_type" : "dynamic",
+	"target_offset" : "-0.64"
+}
+[out#0/null @ 0x5610c7ca7bc0] video:0KiB audio:6000KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:08.00 bitrate=N/A speed=25.7x    
