@@ -341,6 +341,18 @@ def beans(dur, rate=1.2, seed=10):
     return norm(x, 0.6)
 
 
+def beans_at(cracks, drops, seed=10):
+    """剥毛豆，按画面给的时刻（秒）：cracks = 豆荚掰开的"啪"，drops = 豆子落进搪瓷盆的"叮"（音色同 beans）"""
+    r = np.random.default_rng(seed); n = ns(max(cracks + drops) + 0.6); x = np.zeros(n)
+    for t in cracks:
+        s = ns(t); c = burst(0.03, 1500, 5000, r=0.004, g=0.5); x[s:s + len(c)] += c
+    for t in drops:
+        s2 = ns(t)
+        pg = modal([r.uniform(2300, 3600), r.uniform(5000, 6500)], [0.12, 0.06], [1, 0.4], 0.25) * r.uniform(0.15, 0.35)
+        x[s2:s2 + len(pg)] += pg[:n - s2]
+    return norm(x, 0.6)
+
+
 def footsteps(times, vel=0.4, seed=11):
     """拖鞋走在水泥地上（软的"嚓"）"""
     n = ns(max(times) + 0.5); x = np.zeros(n); r = np.random.default_rng(seed)
