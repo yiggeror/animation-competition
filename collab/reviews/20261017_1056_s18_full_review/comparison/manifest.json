@@ -1,0 +1,219 @@
+{
+  "label": "节奏收尾对照非已采用",
+  "base_head": "fda4926934128bf52c14fe9e655dbfb0f9379a24",
+  "runtime_override_only": "assets/flips/x18_laugh.flip.json.timelineFrames",
+  "timeline": [
+    [
+      0,
+      0
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      9,
+      2
+    ],
+    [
+      15,
+      3
+    ],
+    [
+      18,
+      4
+    ],
+    [
+      21,
+      5
+    ],
+    [
+      24,
+      6
+    ],
+    [
+      27,
+      7
+    ],
+    [
+      30,
+      8
+    ],
+    [
+      33,
+      7
+    ],
+    [
+      39,
+      8
+    ],
+    [
+      42,
+      7
+    ],
+    [
+      45,
+      9
+    ],
+    [
+      54,
+      7
+    ],
+    [
+      63,
+      6
+    ]
+  ],
+  "render_manifest_sha256": "f04ba21090e11408a1a603e08ad2074fc63e47376e5eabb93f83c851daa53a05",
+  "override_sha256": "44b9de877ed5a6c9e4f47364945d2b7074311866e513be896be628ad641aba55",
+  "rendered_frames": 72,
+  "fps": 24,
+  "video_duration_seconds": 3,
+  "container_duration_seconds": 3.021333,
+  "baseline_path": "/workspace/animation-competition/collab/reviews/20261017_1045_s18_full_opus/S18_flipbook_review.mp4",
+  "baseline_sha256": "a398c4b1e7aae80757db38d35ad68a960d9e59469a410ba06299b7da2d360390",
+  "mp4": "/tmp/laidian-s18-rhythm-comparison/S18_节奏收尾对照非已采用.mp4",
+  "mp4_sha256": "820fde72b8628ed3401ace22b1bc9de5f17f1739bfda22804f2a544f8dba2dc8",
+  "audio": {
+    "mode": "bit-for-bit AAC packet copy from audited baseline, no re-encode",
+    "packet_count": 142,
+    "packet_pts_dts_duration_size_hash_all_equal": true,
+    "decoded_f32le_sha256": "5a55950fcd04b894f04a7ab40946c0b3070c9337467c8cac7010c3565ee29b87",
+    "decoded_pcm_bytes": 1163264,
+    "decoded_pcm_equal_to_baseline": true,
+    "container_audio_start_pts": 0,
+    "time_base": "1/48000",
+    "existing_verified_mother_segment_seconds": [
+      115,
+      118
+    ],
+    "mother_content_start_sample": 1024,
+    "mother_content_start_seconds": 0.021333333333333333
+  },
+  "timing": {
+    "video_start_pts": 258,
+    "video_time_base": "1/12288",
+    "video_start_seconds": 0.02099609375,
+    "F15_pts_seconds": 0.64599609375,
+    "audio_event_seconds": 0.6213333333333333,
+    "F15_minus_event_ms": 24.662760416666707
+  },
+  "subtitle_text": "S18  近景：小满\"噗\"地笑出声，捂住嘴",
+  "subtitle_filter": "scale=960:540,drawbox=x=0:y=ih-92:w=iw:h=92:color=black@0.55:t=fill,drawtext=expansion=none:fontfile='/workspace/animation-competition/assets/fonts/NotoSansSC-VF.ttf':textfile='/tmp/laidian-s18-rhythm-comparison/subtitle.txt':fontsize=22:fontcolor=white:line_spacing=6:x=24:y=h-82",
+  "f0_decoded_comparison": {
+    "mean_abs_rgb": 0.6248103137860083,
+    "p99_abs_rgb": 5.0,
+    "max_abs_rgb": 60.0,
+    "pixels_max_channel_diff_over_20": 370,
+    "exact_decoded_pixels_equal": false
+  },
+  "encode_command": [
+    "ffmpeg",
+    "-y",
+    "-loglevel",
+    "error",
+    "-framerate",
+    "24",
+    "-i",
+    "/tmp/laidian-s18-rhythm-comparison/frames/f%04d.png",
+    "-frames:v",
+    "72",
+    "-vf",
+    "scale=960:540,drawbox=x=0:y=ih-92:w=iw:h=92:color=black@0.55:t=fill,drawtext=expansion=none:fontfile='/workspace/animation-competition/assets/fonts/NotoSansSC-VF.ttf':textfile='/tmp/laidian-s18-rhythm-comparison/subtitle.txt':fontsize=22:fontcolor=white:line_spacing=6:x=24:y=h-82",
+    "-r",
+    "24",
+    "-c:v",
+    "libx264",
+    "-pix_fmt",
+    "yuv420p",
+    "-crf",
+    "20",
+    "-video_track_timescale",
+    "12288",
+    "/tmp/laidian-s18-rhythm-comparison/S18_rhythm_candidate_subtitled_silent.mp4"
+  ],
+  "mux_command": [
+    "ffmpeg",
+    "-y",
+    "-loglevel",
+    "error",
+    "-copyts",
+    "-itsoffset",
+    "0.02099609375",
+    "-i",
+    "/tmp/laidian-s18-rhythm-comparison/S18_rhythm_candidate_subtitled_silent.mp4",
+    "-i",
+    "/workspace/animation-competition/collab/reviews/20261017_1045_s18_full_opus/S18_flipbook_review.mp4",
+    "-map",
+    "0:v:0",
+    "-map",
+    "1:a:0",
+    "-c",
+    "copy",
+    "-avoid_negative_ts",
+    "disabled",
+    "-video_track_timescale",
+    "12288",
+    "-movie_timescale",
+    "1536000",
+    "-movflags",
+    "+faststart",
+    "-metadata",
+    "title=节奏收尾对照非已采用",
+    "/tmp/laidian-s18-rhythm-comparison/S18_节奏收尾对照非已采用.mp4"
+  ],
+  "limitations": [
+    "Only timing/ending comparison; early arm pose discontinuities unchanged.",
+    "Not adopted, not motion approval."
+  ],
+  "files": {
+    "README.md": {
+      "sha256": "88ba618a8fbcc3afe004815e50dc578e2c6fe2e7a3f51be6a256af8c315fcfa5",
+      "bytes": 526
+    },
+    "S18_rhythm_candidate_subtitled_silent.mp4": {
+      "sha256": "084dbad8ca34a0864d52fcfcc0cea027cf5058c55bb725a7aa4a368262d9dbcf",
+      "bytes": 195511
+    },
+    "S18_节奏收尾对照非已采用.mp4": {
+      "sha256": "820fde72b8628ed3401ace22b1bc9de5f17f1739bfda22804f2a544f8dba2dc8",
+      "bytes": 292336
+    },
+    "baseline_decoded_f0000.png": {
+      "sha256": "69e26d47ecb2d42e52be5333b2545f2f6a2400652e6206de6057073bb27817d2",
+      "bytes": 134468
+    },
+    "candidate_decoded_f0000.png": {
+      "sha256": "6b3f614ac2b439039eaa522eeeeac311da0f59b59d7dd3ad76712c45df4c888e",
+      "bytes": 153230
+    },
+    "comparison_contact_sheet.jpg": {
+      "sha256": "53bd28eb644530c879607343a0e88e8b97b432ad8ba52deb168e86d9e3ebafe6",
+      "bytes": 86617
+    },
+    "finalize.py": {
+      "sha256": "c171547e655a98bd29e0013a9ba6f3b6fb416f11cd315b481de0a32f7ae97351",
+      "bytes": 6794
+    },
+    "render_manifest.json": {
+      "sha256": "f04ba21090e11408a1a603e08ad2074fc63e47376e5eabb93f83c851daa53a05",
+      "bytes": 57389
+    },
+    "render_override.cjs": {
+      "sha256": "bde50c024b361ccf9c52cd2536cfc477037d0073fbd537063830287741a74688",
+      "bytes": 4862
+    },
+    "subtitle.txt": {
+      "sha256": "f1b58ef1599159aa19dca0415483204a09ec19ef1c058dbcaef55b936b1ef43e",
+      "bytes": 49
+    },
+    "x18_laugh.original.flip.json": {
+      "sha256": "f8e4db8ddf550a71f3857b9c134a9205035ce6f6b5fe52cdc96ddf079c1a2263",
+      "bytes": 2348
+    },
+    "x18_laugh.timeline_override.flip.json": {
+      "sha256": "44b9de877ed5a6c9e4f47364945d2b7074311866e513be896be628ad641aba55",
+      "bytes": 3036
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "decoded_samples": 145408,
+  "decoded_seconds": 3.029333333333333,
+  "interior_best_correlation": 0.9987698880051824,
+  "audio_master_equivalent_at_container_t0": 114.97866666666667,
+  "leading_decoded_samples_before_master_115": 1024,
+  "content_3s_comparison_correlation": 0.9986574243133494,
+  "content_fitted_gain": 0.994703128436849,
+  "content_fitted_gain_db": -0.04613032316558985,
+  "content_clip_samples_abs_ge_1": 0,
+  "master_sha256": "6980ce06f50f6348b8f832d23cfb4a5d72edddda61ab47ade274727ecaaf18c4",
+  "loudnorm_input": {
+    "input_i": "-23.26",
+    "input_tp": "-10.95",
+    "input_lra": "0.30",
+    "input_thresh": "-33.26",
+    "output_i": "-15.92",
+    "output_tp": "-3.57",
+    "output_lra": "0.00",
+    "output_thresh": "-25.92",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.08"
+  },
+  "video_frames": 72,
+  "F0_PTS": 0.020996,
+  "F15_PTS": 0.645996,
+  "F71_PTS": 2.979329,
+  "video_frame_interval": 0.041666666666666664,
+  "audio_PU_expected_container_time": 0.6213333333333333,
+  "F15_minus_audio_PU_ms": 24.662666666666723,
+  "videoF0_minus_audio_content_start_ms": -0.3373333333333318,
+  "method": "Actual decoded AAC compared to original 6980 WAV by normalized stereo correlation; interior search avoids priming. Source cue +0.6 converted using measured content offset; not a subjective audible-transient annotation."
+}
