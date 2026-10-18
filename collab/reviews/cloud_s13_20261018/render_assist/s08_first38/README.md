@@ -9,3 +9,5 @@
 [最短核验记录](verification.json)含38源SHA/逐帧编码MSE，最大9.45683；[复用36缓存账本](reused36_baseline.json)、[ffprobe](ffprobe.json)、[执行原文](increment_command.log)保留。39运行路径按固定Git/blob核SHA；盒层1665有效像素、alpha及可见RGBA与033全同，底970，body/arms无重复盒，低杆148像素盘与033逐RGBA一致。483像素归body为固定作者包来源说明，本轮未重新分层或改母图。[纯源合同检查](source_contract_check.json)核旧36的144子帧及038拒绝，和实际图像门分开。
 
 本包只交影片、指定解码和短记录，不复制工程或旧证据。命令、Chromium进程配置见verification；真实PNG缓存保留在build/S08_first38_increment与build/S08_first38。生图0，S24人物、共享EDL、音轨、生产源及ready未改。
+
+补交：[F036原始Canvas无损PNG](canvas_new/F036.png)、[F037原始Canvas无损PNG](canvas_new/F037.png)及[对应SHA](canvas_new/SHA256SUMS.txt)，从原build/S08_first38_increment逐字节复制，与首次verification.json逐帧账本SHA一致；补交生图0、重渲0，旧36帧未重复上传。
