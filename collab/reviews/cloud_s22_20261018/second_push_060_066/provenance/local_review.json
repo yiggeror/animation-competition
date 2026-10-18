@@ -1,0 +1,22 @@
+{
+  "reviewed_at_utc": "2026-10-18T19:31:21.786746+00:00",
+  "actual_images_opened": [
+    "F066/qa/F066_raw_on_gray.png",
+    "F066/qa/F066_raw_contact_2x.png",
+    "F066/qa/F066_mapped_on_gray.png",
+    "F066/qa/F066_mapped_contact_2x.png",
+    "qa/contact_group_042_060_066_native.png",
+    "qa/forearm_join_042_060_066_native.png",
+    "qa/S22_060_083_second_push24_decoded.jpg",
+    "qa/S22_000_083_isolated_exposure84_decoded.jpg",
+    "decoded_actual/F060.png",
+    "decoded_actual/F066.png"
+  ],
+  "observed": "F060/F066 local review pass: closed source hand/rod group advances coherently, five corresponding contact regions exact RGBA; fixed left entries and continuous new forearm joins. No detached nail, new cut wrist, double contact contour or shaft slide seen.",
+  "native_raw_F066_issue": "Median source-anchor offset from F024 was +46.5,-16, rather than desired+49,-28. Native retained unchanged; accepted mapping method applied.",
+  "forearm_colour_note": "Neutral samples differ by maximum6 channel values from locked F042 (8 from F024). Form gradients retained, no additional recolour; this remains for Astra visual review.",
+  "boundary_verification": "24-frame and84-frame actual MP4s decoded and all frame identities match exact holds; boundary frames opened visually.",
+  "production_ready": false,
+  "Astra_dual_review_pending": true,
+  "no_F084": true
+}

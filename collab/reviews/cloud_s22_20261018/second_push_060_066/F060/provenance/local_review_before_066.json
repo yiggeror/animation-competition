@@ -1,0 +1,19 @@
+{
+  "reviewed_at_utc": "2026-10-18T19:27:15.402065+00:00",
+  "inspected": [
+    "qa/F060_raw_on_gray.png",
+    "qa/F060_raw_contact_2x.png",
+    "qa/F060_mapped_on_gray.png",
+    "qa/F060_mapped_contact_2x.png"
+  ],
+  "native_raw_issue": "Native drawing overshot the small motion (median anchor delta +55.5,-24 from F024); preserved unchanged, not used as the exposure position.",
+  "mapped_result": "Accept local gate: both wrist roots connect continuously through the newly drawn forearms; same five-digit grip/support contours and single rod retained; no visible new wrist seam, duplicate contour or rod slip.",
+  "table_cumulative_native": [
+    37,
+    -21
+  ],
+  "locked_contact_RGBA_max_error": 0,
+  "left_entries_unchanged": true,
+  "authority": "Local image review for next drawing; Astra final review remains pending.",
+  "qualified_for_F066": true
+}

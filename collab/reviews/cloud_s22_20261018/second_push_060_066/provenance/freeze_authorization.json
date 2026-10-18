@@ -1,0 +1,50 @@
+{
+  "locked_commit": "1acb90c7bba1f5ef241de441fdd74061f7b5eb31",
+  "locked_F042_sha256": "2a028a4c174c55e4cde7d794cd59561d39585c626740dd0afa7ffdd49f5b477c",
+  "locked_F024_sha256": "97560237598d024a725ab63ee62809d1f5ded5f6fc5aadc1d8a4f158ca85da4a",
+  "Astra_feedback": "036/042已双审锁；沿042续060×6→066×18；累计世界(+42,-24)/(+56,-32)，按同尺从锁024统一算累计，避免逐次四舍五入积差；同一接触组与签保持、入口固定、新前臂逐态接回。小段齐即交，不开084。",
+  "native_canvas": [
+    1672,
+    941
+  ],
+  "uniform_scale": 0.8708333333333333,
+  "calculation_origin": "Actual locked F024; each cumulative world delta rounded independently, never sum rounded steps.",
+  "targets": [
+    {
+      "frame": 60,
+      "hold": 6,
+      "world_cumulative": [
+        42.0,
+        -24.0
+      ],
+      "native_ideal": [
+        36.575,
+        -20.9
+      ],
+      "native_nearest": [
+        37,
+        -21
+      ]
+    },
+    {
+      "frame": 66,
+      "hold": 18,
+      "world_cumulative": [
+        56.0,
+        -32.0
+      ],
+      "native_ideal": [
+        48.766666666666666,
+        -27.866666666666667
+      ],
+      "native_nearest": [
+        49,
+        -28
+      ]
+    }
+  ],
+  "exposure_csv_sha256": "a715188a0f9b9620d5261e73b46d5eebbdb6c71954244dd504b76a6cde2a5851",
+  "plan_json_sha256": "485de38b5fcf662a1f4b0666422f734cee05fcdfd8985b0eff8f53694a0778b1",
+  "no_030": true,
+  "no_084": true
+}
