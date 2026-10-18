@@ -1,0 +1,42 @@
+{
+  "status": "INDEPENDENT_REVIEWER_STATIC_PASS",
+  "frame": 22,
+  "hold_frames": 3,
+  "asset_size": [
+    1024,
+    1536
+  ],
+  "world_size": [
+    1672,
+    941
+  ],
+  "asset_to_world": {
+    "uniform_scale": 0.2734375,
+    "translation": [
+      730,
+      375
+    ]
+  },
+  "frozen_interface_commit": "af8bfe2f85f568c77897017d50c752a587d70221",
+  "production_sha256": "f35bf87d46c1096fa336a2565699eae9f6be93f9b58ba392c0701f0f126c82db",
+  "previous_F018_sha256": "c5effd39dec1bb17e82609b2aac92f6726ceae22521d094ea35880a10bc6fe76",
+  "basin_rim_center_world": [
+    802.04,
+    752.8
+  ],
+  "basin_width_depth_scene": [
+    79.1,
+    21.7
+  ],
+  "constructed_bottom_y": 774.5,
+  "action": "Both hands visibly release with thumb/finger gaps, rise away from fixed basin; neither palm presses knee yet.",
+  "method": "F018 torso/head+16deg around constructed seated hip, arm fragments prepositioned separately;1builtin local repair. Model natural near forearm/bangle trajectory accepted, whole-image similarity registration then explicit local patches only. Original continuous back interior, fixed seated pants and feet retained.",
+  "wrist_deviation": "See wrist_path.json: visible jade centroid is a proxy, not joint measurement; raw-vs-input(-12.84,-9.32)scene accepted for natural release.",
+  "calls": {
+    "F022_builtin": 1,
+    "S07_grandma_basin_total": 8
+  },
+  "head_caveat": "Inherited75scene full-head envelope is conditional fit, not anatomy measurement.",
+  "camera": "F018/F022/F025 diagnostic uses approved early insert center1024,630 zoom2.75. This is not a freeze of all16-38: fromt1.05 onward camera follows rise upward using s07Camera; F031centerY595.2479338842975.",
+  "local_provenance": "astra_s07_f022_prepare_20261018_1357"
+}

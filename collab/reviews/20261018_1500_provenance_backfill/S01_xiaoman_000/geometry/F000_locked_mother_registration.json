@@ -1,0 +1,49 @@
+{
+  "frame": 0,
+  "shot": "S01",
+  "character": "xiaoman",
+  "duration_until_next_character_key_pending_coordinator": true,
+  "file": "approved/F000_play_phone.png",
+  "sha256": "de7b4b8c2c3918a4b6f05c451fb675e56a9677d3cb94c18ae106e13c848d061c",
+  "canvas": [
+    1792,
+    1024
+  ],
+  "canvas_to_scene": {
+    "s": 0.16,
+    "t": [
+      399.28,
+      533
+    ]
+  },
+  "head_center_scene": [
+    614.1149446369272,
+    589.2597953302053
+  ],
+  "head_envelope_h": 70,
+  "head_envelope_projected_w": 73.43669250645995,
+  "head_scale_from_call01": 1.209573867999556,
+  "head_extra_rotation_deg": 0,
+  "near_knee_proxy_canvas": [
+    470,
+    678
+  ],
+  "far_knee_proxy_canvas": [
+    516,
+    639
+  ],
+  "near_ankle_canvas": [
+    334.50387403670044,
+    342.63531993939887
+  ],
+  "far_ankle_canvas": [
+    287.9648774452858,
+    408.12210892248015
+  ],
+  "near_calf_angle_deg": -112,
+  "far_calf_angle_deg": -134.64508185574348,
+  "near_projected_calf_length_scene": 57.87239342596968,
+  "far_projected_calf_length_scene": 51.92107677328961,
+  "measurements_caveat": "Knees and hips are construction proxies, not real bone measurement. Source pixels copied rigidly; organic knee joins are call02 inpaint. No nonuniform anatomical scaling.",
+  "next_derivation_rule": "Use this frozen single image, never original rejected call01 or prior candidates."
+}

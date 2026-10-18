@@ -1,0 +1,20 @@
+{
+  "status": "REJECTED_FOR_BEAN_COUNT_AMBIGUITY",
+  "method": "single similarity on stable crop hand edges, then downsample6x and feather1.5px inside explicit socket polygon only; base alpha unchanged",
+  "parameters": {
+    "a": 0.765726096217648,
+    "b": -9.062138248169508e-05,
+    "tx": -0.21258804843560283,
+    "ty": -0.0060122685361997585
+  },
+  "median_distance_crop": 0.0,
+  "p90_distance_crop": 0.488227607846379,
+  "raw_sha256": "7a66fdf47ec07fc42718d5920cc6b5cc44e367bda351a090c9817dd485852cb5",
+  "candidate_sha256": "076c354c15dd3ed1123f17bb5ffb78a72ee19327ea0c33e452f15d8362e45624",
+  "changed_pixels": 473,
+  "outside_socket_mask_changes": 0,
+  "alpha_changed_pixels": 0,
+  "total_S01_calls": 5,
+  "F028_calls": 2,
+  "reason": "Still complete light-green oval core and closed lower arc: can read as third bean. Not a F030 mother."
+}

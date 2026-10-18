@@ -1,0 +1,68 @@
+{
+  "status": "PENDING_F028_TWO_BEAN_GATE_AND_F030_ACTUAL_GEOMETRY",
+  "no_new_production_or_generation": true,
+  "source_F028_pose_candidate": "a8c37b2aca6e1847f96c3b69bb32e28cc9ccb59c7ab41b9fd6d062b8e41dfe4f",
+  "actual_first_bean_A_alpha_center_asset": [
+    442.34522917955564,
+    893.4783628016021
+  ],
+  "A_extracted_sprite_size": [
+    25,
+    31
+  ],
+  "A_visible_span_approx": [
+    19,
+    25
+  ],
+  "actual_F028_remaining_B_center_estimate": [
+    474,
+    859
+  ],
+  "A_proposed_centers_by_frame": {
+    "28": [
+      442.35,
+      893.48
+    ],
+    "29": [
+      441.7,
+      900
+    ],
+    "30": [
+      441.05,
+      910.8
+    ],
+    "31": [
+      440.4,
+      925.8
+    ],
+    "32": [
+      439.75,
+      945
+    ],
+    "33": [
+      439.1,
+      968.4
+    ],
+    "34": [
+      438.45,
+      991
+    ],
+    "35": [
+      438.45,
+      991
+    ]
+  },
+  "B_release_plan": "F028 nested and thumb constrained; F029 partial exit needs explicit front-lip/thumb occlusion and source-clean plate from actual F030. F030 full bean must be genuinely drawn, because F028 B is thumb-occluded. No invisible duplicate or generic circle placeholder. Only after F030 actual review assign released sprite position and final trajectory.",
+  "landing": "Use same basin and current contents unchanged, add actual original bean pixels within basin inner opening and below any front content/lip. Separate foreground occluder mask. Do not erase falling beans at F035.",
+  "source_wrist_updates": {
+    "near": [
+      568,
+      916
+    ],
+    "far": [
+      532,
+      831
+    ]
+  },
+  "coordinator_natural_wrist_acceptance": "2026-10-18T14:29:57Z"
+}
