@@ -1,0 +1,14 @@
+{
+  "call_id": "S13_d08_call_010",
+  "pose": "d08",
+  "status": "completed_native_output_self_reviewed",
+  "tool": "image_gen.imagegen",
+  "dependency_sha256": "93ca7ffbb96bec1add190c170904886d8cdb316df38cbfa337c1a8cf2bc87fff",
+  "args": {
+    "prompt": "Continue S13 from this supplied ACCEPTED d07 ONLY, creating d08 at frames050–057, the peak of the girl's PRETENDED YAWN. Same1024×1536 transparent canvas, same camera, same character scale and lower-chest/lower-cutoff registration. Do not zoom or recenter. The supplied d07 is the only production source; do not invent another character or reuse a different earlier peak.\n\nDevelop the yawn from this intermediate opening to a clear but controlled peak: mouth aperture grows modestly, about25–35percent beyond the input (roughly80–85source pixels high). The actual lower mandible drops a little further with a believable curved chin, cheek and underside-of-jaw volume; do not merely stretch a red mouth patch inside an unchanged chin. Keep the upper skull, forehead and complete hair/cranium size stable: NO inflating head, wider skull, giant mouth or face-mesh stretch. The tongue stays naturally inside the mouth and there is no exaggerated teeth display.\n\nBoth eyes are now FULLY CLOSED, with no residual brown pupil or iris showing through. Brows remain softly performed sleepy, not pain or distress. The whole head tips gently back a few further degrees (about9degrees chin lift overall), and turns just slightly toward front while still facing SCREEN RIGHT (about28degrees, a loose visual target). Ears, bangs, back of head, red flower roots and both pigtails stay coherent with the complete head; hair roots follow the cranium. Draw real continuous curved neck surfaces under the opening jaw and into the same white collar, never a long straight neck tube or pasted head.\n\nPeak inhale: upper chest and BOTH shoulders rise together a tiny further amount (roughly3–4source pixels more), rather than an isolated shoulder twitch. Keep the same lower body placement and dress identity, yellow with white dots and white rounded collar; tiny cloth response only. Preserve neutral painted colors and hand-drawn linework, no added scene light or skin-color change. No hand near mouth, no props, no text or panels. Return exactly one clean transparent RGBA cutout. Outside the true fine-hair and clothing silhouette alpha must be zero, with no blocky alpha haze, backdrop, glow or shadow.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition/collab/reviews/cloud_s13_20261018/d05_d07_segment/approved_local/F044_d07_yawn_opening.png"
+    ],
+    "transparent_background": true
+  }
+}
