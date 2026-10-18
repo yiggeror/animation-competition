@@ -1,0 +1,43 @@
+{
+  "status": "TWO_ASTRA_SPECIFIED_CORRIDORS_CLEANED_PENDING_ACTUAL_REVIEW",
+  "authority": "Astra merged review: contact/whole arm/two sleeves/7f passed; only upper-wrist old skin strip and non-prop low-alpha torch outer contour, no regeneration/recolor,044/048 wait.",
+  "source_commit": "e6fa5e1f37fdf1bfbf3f9db9f4820b95950e522c",
+  "source_path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/F042_contact_gate/connection_call02/candidate/F042_complete_joint_pixels_v2_PENDING.png",
+  "source_sha256": "c909ea491e345021299dd7deada41b2a1748b6c12fc2c743e58242195d8a0270",
+  "candidate_sha256": "52bb96f9796878bbb9c928ad80c5af6b5a0580ad9f9c651384446f0caadd3f8f",
+  "wrist_existing_native_donor_path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/F042_contact_gate/connection_call02/qa/native_whole_crop_uniform_alignment.png",
+  "wrist_donor_sha256": "58d70cd35260f1e732012aa1a9f01feb62ac3f9139199d0ddaf6377a70ab24f0",
+  "wrist_donor_transform": "Previously frozen whole call02 crop scale0.3125 only; reused identical aligned PNG, no additional resampling.",
+  "ghost_donor_path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/whole_far_puff_zero_call/candidate/F037_whole_native_far_puff_PENDING.png",
+  "ghost_donor_sha256": "68ce16f14f9ea53f2c43c2c53f984a6a713b612f6aef28ab369780cb768695c9",
+  "ghost_donor_translation": [
+    0,
+    91
+  ],
+  "actual_prop_source": "Original031 rigid hand/torch translated[0,59], equivalent to037+91. Guard uses actual alpha material/AA, no coarse box.",
+  "wrist_take_pixels": 517,
+  "wrist_changed_pixels": 386,
+  "ghost_take_pixels": 934,
+  "outside_two_adoption_masks_RGBA_changes": 0,
+  "stationary_receiving_palm_RGBA_changes": 0,
+  "actual_prop_and_grip_except_authorized_proximal_wrist_corridor_RGBA_changes": 0,
+  "remaining_wrist_old_strip_pixels": 0,
+  "remaining_same_donor_non_material_ghost_pixels": 0,
+  "example1196_414_before_RGBA": [
+    87,
+    74,
+    70,
+    116
+  ],
+  "example1196_414_after_RGBA": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "no_recolor": true,
+  "new_image_calls": 0,
+  "S09_total_requests_unchanged": 17,
+  "S09_total_originals_unchanged": 16,
+  "F044_F048_unopened": true
+}

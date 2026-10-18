@@ -1,0 +1,63 @@
+{
+  "status": "LIMITED_POST_AUDIT_PASS_TWO_CORRIDORS_AND_UNCHANGED_7FRAME_LAYER",
+  "candidate_sha256": "52bb96f9796878bbb9c928ad80c5af6b5a0580ad9f9c651384446f0caadd3f8f",
+  "video_sha256": "966b02b01e4cc86ec207f169437ca5089ca6b338caa19af5f44f45313765d619",
+  "actual_views": [
+    "qa/two_corridors_before_after_gray.png",
+    "qa/two_corridors_before_after_dark.png",
+    "exposure/actual_decoded_0_4_5_6_contact_sheet.png"
+  ],
+  "facts": [
+    "Whole upper-wrist old skin band removed, one continuous true contour retained through both ends.",
+    "Detached low-alpha old torch-side outlines no longer visible on gray or dark backgrounds; lamphead, grip, torch and tailcap actual outlines remain.",
+    "No new defect seen at the two specified corridors. Previously reviewed arm/sleeves/action not reopened."
+  ],
+  "independent_RGBA_checks": {
+    "outside_two_corridors_RGBA_changes": 0,
+    "stationary_palm_material_guard_RGBA_changes": 0,
+    "real_hand_torch_material_guard_RGBA_changes": 0
+  },
+  "independent_full_video_decode": [
+    {
+      "clip_frame": 0,
+      "closest_source": 37,
+      "MAE": 1.2720442708333333
+    },
+    {
+      "clip_frame": 1,
+      "closest_source": 37,
+      "MAE": 1.2715028211805555
+    },
+    {
+      "clip_frame": 2,
+      "closest_source": 37,
+      "MAE": 1.2716565393518517
+    },
+    {
+      "clip_frame": 3,
+      "closest_source": 37,
+      "MAE": 1.2716496672453703
+    },
+    {
+      "clip_frame": 4,
+      "closest_source": 37,
+      "MAE": 1.2719241898148148
+    },
+    {
+      "clip_frame": 5,
+      "closest_source": 42,
+      "MAE": 1.2831239149305556
+    },
+    {
+      "clip_frame": 6,
+      "closest_source": 42,
+      "MAE": 1.2845905671296296
+    }
+  ],
+  "independent_decoded_frame_count": 7,
+  "limits": [
+    "Actual-image visual evidence is decoded0/4/5/6 contact sheet; all7 frames independently decoded and source-classified numerically. No realtime playback claimed.",
+    "Only authorized two-corridor cleanup and independent7frame layer increment; not entire S09 readiness or Astra final lock.",
+    "No generation, recolor, source edit or root-script edit by reviewer."
+  ]
+}

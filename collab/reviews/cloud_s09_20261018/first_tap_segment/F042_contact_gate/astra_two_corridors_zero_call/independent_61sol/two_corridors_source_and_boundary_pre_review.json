@@ -1,0 +1,24 @@
+{
+  "status": "SOURCE_AVAILABLE_ZERO_CALL_TWO_CORRIDORS_PRE_REVIEW",
+  "source_candidate": "c909ea491e345021299dd7deada41b2a1748b6c12fc2c743e58242195d8a0270",
+  "actual_views": [
+    "c909 whole native PNG",
+    "c909 wrist1002..1058/515..585 vs same uniformly aligned call02 donor",
+    "c909 torch1165..1210/370..450 vs locked037 shifted down91raw"
+  ],
+  "facts": [
+    "Same call02 donor has one continuous clean black wrist upper contour and no parallel old skin strip.",
+    "At1196/414 c909RGBA is87,74,70,116; authentic037+91RGBA is0,0,0,0.",
+    "call02 donor only covers fullnative630..1110/490..810. It is not a valid source beyond1110."
+  ],
+  "boundary_notes": [
+    "Wrist reported1009..1048/523..578 is approximate. Follow full sloped contour and AA transitions at both ends; do not clip with a hard rectangle.",
+    "Exterior samples candidatealpha>1/donoralpha0: y523x1045..1049, y540x1034..1037, y560x1018..1022, y578x1004. These are diagnostic candidates, not blanket permission to erase actual source contour AA.",
+    "Use authentic037+91 or031+59 complete rigid-object RGBA for prop outer halo. Keep actual foreground near arm, fixed receiver palm and full gripping fingers; do not protect hidden old layer alpha over current foreground.",
+    "Low alpha alone does not distinguish valid AA from obsolete halo. Follow same-source true contour, not wide ROI."
+  ],
+  "limits": [
+    "This is source and semantic-corridor advice only; repaired candidate and final7frame increment still require actual-view review.",
+    "No image generation, recolor, action change, source edit or root-script edit performed."
+  ]
+}
