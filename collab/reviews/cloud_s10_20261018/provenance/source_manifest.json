@@ -140,11 +140,10 @@
   "reference_method": "Python/matplotlib technical diagrams; source art remains unchanged; no generated production character.",
   "source_art_copy_policy": "Original sources remain at fixed repository paths; no duplicate large originals in this package.",
   "current_execution": {
-    "stage": "F000 locked; independently-approved F030 retained; eye-only F027 fix and F030→F033→F045 candidates + actual72frame prefix submitted for Astra review",
-    "executed_calls": 9,
-    "successful_outputs": 9,
+    "stage": "Astra locked00711c72 F027fixed/F033/F045; F045→F072→F096 actual drawings and complete120frame scene submitted for final-shot review",
+    "executed_calls": 11,
+    "successful_outputs": 11,
     "failed_image_calls": 0,
-    "other_pose_calls": 0,
     "tool": "image_gen.imagegen",
     "underlying_model": "not disclosed",
     "actual_request": "F000_first/provenance/F000_call01_request_ACTUAL.json",
@@ -163,18 +162,22 @@
       "F027": 2,
       "F030": 1,
       "F033": 1,
-      "F045": 1
+      "F045": 1,
+      "F072": 1,
+      "F096": 1
     },
-    "latest_batch": "F027_fix_033_045/README.md",
-    "actual_exposure": "F027_fix_033_045/exposure/S10_first72_scene.mp4",
-    "actual_exposure_frames": 72,
-    "actual_exposure_seconds": 3,
+    "latest_batch": "F072_096_full120/README.md",
+    "actual_exposure": "F072_096_full120/exposure/S10_full120_scene.mp4",
+    "actual_exposure_frames": 120,
+    "actual_exposure_seconds": 5,
     "actual_exposure_audio": false,
-    "not_generated": [
-      "F072",
-      "F096"
-    ],
+    "not_generated": [],
     "F027_call02_status": "NOT locked due wrong gaze/reopened eyes, preserved as source for eye-only correction",
-    "F027_eye_fix_calls": 1
+    "F027_eye_fix_calls": 1,
+    "complete_candidate_module": "F072_096_full120/S10_drawn_full_candidate.js",
+    "complete_adopted_images": "F072_096_full120/adopted/",
+    "actual_exposure_sha256": "8ed53dc47f7bcd4912b2d3ac85e23cc261c4db3c6804ebdc1d3d3107ea5ae223",
+    "Astra_fullshot_signoff": false,
+    "audio_signoff": false
   }
 }

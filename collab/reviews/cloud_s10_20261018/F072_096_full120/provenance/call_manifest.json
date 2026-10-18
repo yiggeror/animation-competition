@@ -1,0 +1,60 @@
+{
+  "batch_image_calls": 2,
+  "batch_actual_outputs": 2,
+  "tool_failures": 0,
+  "new_candidates": 2,
+  "S10_cumulative_calls": 11,
+  "chain": "locked045 → actual072 → actual096",
+  "calls": [
+    {
+      "call": "F072_call01",
+      "tool": "image_gen.imagegen",
+      "status": "actual image returned and viewed",
+      "request": "provenance/F072_call01_request.json",
+      "inputs": [
+        {
+          "path": "F072_096_full120/inputs/F045_locked_source.png",
+          "sha256": "81f75ed82e4579d2e3879f6fffb66dbe926d8cad6782df0449a1f31d5686f7a8"
+        },
+        {
+          "path": "reference/poses/F072.png",
+          "sha256": "53b4e4559c0c544c689055aa822d24cdae776f8a5bd34d4658265bca576cc0df"
+        },
+        {
+          "path": "F027_fix_033_045/qa/F027_fixed_eyes_native.png",
+          "sha256": "059b8eae3755967e252ea637ccaae97e25a0028eae121dfd3fb736f61b3376e2"
+        }
+      ],
+      "raw": "originals/F072_call01_raw.png",
+      "raw_sha256": "e3dbeb234318d69b564bb0a6ffa98c33cea906e68416eeec102fa4b78e079a5d",
+      "raw_size": [
+        1672,
+        941
+      ],
+      "candidate_sha256": "483fbf25f816a7889acff6e9971e1ff683333fe34db101aed2fa8b628abca8fe"
+    },
+    {
+      "call": "F096_call01",
+      "tool": "image_gen.imagegen",
+      "status": "actual image returned and viewed",
+      "request": "provenance/F096_call01_request.json",
+      "inputs": [
+        {
+          "path": "F072_096_full120/candidate/F072.png",
+          "sha256": "483fbf25f816a7889acff6e9971e1ff683333fe34db101aed2fa8b628abca8fe"
+        },
+        {
+          "path": "reference/poses/F096.png",
+          "sha256": "131f9efdb4f6ad284a75479edc7e6b01b3056603f5c3ecbe71c750912459f208"
+        }
+      ],
+      "raw": "originals/F096_call01_raw.png",
+      "raw_sha256": "61c27d8dacd5279ac6d2ab5815729b50c1d7a7b02060dc51c87e73f59cd50364",
+      "raw_size": [
+        1672,
+        941
+      ],
+      "candidate_sha256": "4d87846075d13a4540264029a19b8a6df45e0b79ed5b86b3a725939481f30760"
+    }
+  ]
+}
