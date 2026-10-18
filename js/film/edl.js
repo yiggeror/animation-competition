@@ -8,7 +8,7 @@ export const SHOTS = [
   { id: 'S02a', scene: 1, line: 'paint', dur: 2.5, mod: 'js/anim/s02a.js', text: '近景：小满的脸被屏幕照蓝，差点输——眉毛一挑，躲过去了——嘴角一撇' },
   { id: 'S03', scene: 1, line: 'paint', dur: 4, mod: 'js/anim/s03.js', text: '中近景：奶奶抬眼看小满，笑了笑，拿起一块西瓜往她那边推过去，等着' },
   { id: 'S03a', scene: 1, line: 'paint', dur: 1.5, mod: 'js/anim/s03a.js', text: '近景：西瓜推到跟前，小满头也不抬，摇了一下头' },
-  { id: 'S03b', scene: 1, line: 'paint', dur: 2, mod: 'js/anim/s03b.js', text: '近景：奶奶把西瓜收回来，自己咬了一口，嚼着——随你' },
+  { id: 'S03b', scene: 1, line: 'paint', dur: 2, mod: 'js/anim/s03b_drawn.js', text: '近景：奶奶把西瓜收回来，自己咬了一口，嚼着——随你' },
   // 第 2 场 · 停电
   { id: 'S04', scene: 2, line: 'paint', dur: 3, mod: 'js/anim/s04.js', text: '全景："啪"——灯灭、电视缩成一个亮点、吊扇慢下来；奶奶的手停住，抬头看灯；小满还在玩' },
   { id: 'S04a', scene: 2, line: 'code', dur: 2, mod: 'js/anim/s04a.js', text: '特写：吊扇停了，蚊香的烟变成一根直直往上升的线' },
