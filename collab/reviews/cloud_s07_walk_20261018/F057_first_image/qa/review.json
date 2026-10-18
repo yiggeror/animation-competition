@@ -1,0 +1,111 @@
+{
+  "status": "AUTHOR_AND_READ_ONLY_CLOUD_REJECTED_STEP_WIDTH_PENDING_ASTRA",
+  "native_calls": 1,
+  "native_outputs": 1,
+  "accepted_drawings": 0,
+  "tool": "image_gen.imagegen native tool; no external API/service",
+  "raw_original": {
+    "path": "F057_first_image/originals/F057_call01_raw.png",
+    "sha256": "2aa447312ca2e598a009987a4a44b561824c382338328c20f47b6169c37bcb9f",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGBA",
+    "raw_return_base64_byte_equal": true,
+    "host_original_path": "/workspace/generated_images/exec-0c805013-8e40-4506-b078-53f72d880842.png",
+    "host_byte_equality_verified_on_extraction": true
+  },
+  "inputs": [
+    {
+      "role": "technical construction guide; not character art",
+      "path": "F057_first_image/reference/F057_world_reference_at_call01.png",
+      "sha256": "d0cb3e04df0d87b16f8f7c4bf74e3cc9edea6fd5fd5d66c2b2c1f30dde722f73",
+      "actual_call_path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/arm_swing_v2/F057_world_reference.png"
+    },
+    {
+      "role": "true current03 right profile; never mirrored",
+      "path": "F057_first_image/reference/grandma_true_right_profile.png",
+      "sha256": "5b8732db585bf7d76474872660b4ca46b7b4f73eaac3092b59c6adde07a0a2f0",
+      "crop_xyxy": [
+        910,
+        10,
+        1125,
+        758
+      ],
+      "source": "sources/grandma_turnaround_current03_draft.png"
+    },
+    {
+      "role": "full identity turnaround",
+      "path": "sources/grandma_turnaround_current03_draft.png",
+      "sha256": "ab88b69f5303229af379303a37b6e9e3c8cdb35cd05b3902b604871efb2b1671",
+      "source_commit": "60159846257c803263b4eab675ba35487fff12ce"
+    }
+  ],
+  "manual_estimates_native": {
+    "head_top_y": 14,
+    "chin_y": 204,
+    "head_center_x": 832,
+    "near_ankle": [
+      967,
+      852
+    ],
+    "far_ankle": [
+      678,
+      848
+    ],
+    "near_wrist": [
+      676,
+      536
+    ],
+    "far_jade_wrist": [
+      988,
+      475
+    ],
+    "near_sole_y": 915,
+    "far_sole_y": 911
+  },
+  "uncertainty": "Head190±5native and horizontal ankle span289±10native; wrist and ankle centers are approximate visible landmarks, not recovered skeleton.",
+  "diagnostic_uniform_transform_only": {
+    "s": 0.3952631578947368,
+    "tx": 601.1007168750587,
+    "ty": 414.1247368421053,
+    "purpose": "QA plate, not production registration. Match head size, head x, mean sole floor; no local warp or bone replacement.",
+    "world_size": [
+      1672,
+      941
+    ]
+  },
+  "diagnostic_landmarks_world": {
+    "near_ankle": [
+      983.3201905592691,
+      750.888947368421
+    ],
+    "far_ankle": [
+      869.0891379276902,
+      749.3078947368422
+    ],
+    "near_wrist": [
+      868.2986116119007,
+      625.9857894736842
+    ],
+    "far_jade_wrist": [
+      991.6207168750586,
+      601.8747368421052
+    ]
+  },
+  "head_normalized_horizontal_ankle_span_world": 114.23105263157893,
+  "target_ankle_span_world": 64,
+  "span_difference_world": 50.23105263157893,
+  "failure": "About114±7world span versus64. Uniform scale to fit64 would make head about42world instead of75.1. No accepted mother pose; do not expand other10.",
+  "actual_visual_findings": [
+    "Right-facing identity and right bare wrist/left jade ownership readable.",
+    "Near right foot forward, far left foot behind; neither shoe is visibly cropped.",
+    "Both sleeve-arm-wrist-palm chains visually continuous; no definite disconnection or body penetration found. Occluded digits cannot be counted completely.",
+    "Far left wrist swings farther forward/higher than reference; uniform QA plate shows residual. Do not turn this into an unsupported topology failure.",
+    "Full canvas/world position ignored by generator. Character occupies nearly full941height; one uniform registration was tested only diagnostically.",
+    "G037 standing-source scale verification pending; head75.1 remains construction target."
+  ],
+  "preservation": "Original PNG, full prompt/arguments/raw return kept unchanged. No pixel cleanup, masks, art edits, scene render or additional native call.",
+  "remaining_permission": "Only first057 had been authorized; other10 remain unapproved. S09 separately paused."
+}
