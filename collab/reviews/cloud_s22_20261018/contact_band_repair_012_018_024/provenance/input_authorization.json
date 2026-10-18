@@ -1,0 +1,48 @@
+{
+  "parent_commit": "e5f014ea52f68d942571675ddc0dbb180320021b",
+  "Astra_feedback_verbatim": "S22注册新实图已看：孩子/签稳定可收，但018/024孩子小指下与成人食指内侧留了明显双轮廓，腕下还一段旧横线；不能只改末节2px而保这些假旧边。放行同raw最小连续接触带修：先用新锁孩子轮廓确定唯一遮挡界，清旧回声线、接成人皮肤/原阴影；再按提案让024成人四末节向内上轻收（2–4px仅起始建议，保持指甲厚度/指序、掌腕不整体移）。冻结孩子五区/单签/成人拇指，连续ROI不要拆到截线；无新增030/036。完成同6/6/12实际对照再回锁，先零调用，不重抽整手。",
+  "inputs": [
+    {
+      "path": "F000_color_repair/candidate/F000_repaired.png",
+      "sha256": "d4e78e2d5b84a72588cf3af1ff23ce39cdc18d19dde2fbf1f8eaf44ba62d7ef5"
+    },
+    {
+      "path": "S22_exposure.csv",
+      "sha256": "a715188a0f9b9620d5261e73b46d5eebbdb6c71954244dd504b76a6cde2a5851"
+    },
+    {
+      "path": "S22_plan.json",
+      "sha256": "485de38b5fcf662a1f4b0666422f734cee05fcdfd8985b0eff8f53694a0778b1"
+    },
+    {
+      "path": "contact_registration_012_018_024/candidate/F012_registered.png",
+      "sha256": "f01d484e04dea7e3cde141d1aa2a94ecd0d45d25bc81f7d94f2f9a3f33757898"
+    },
+    {
+      "path": "contact_registration_012_018_024/candidate/F018_registered.png",
+      "sha256": "d80b5648534b40462f4b137a445910a968a51229bc246e8e29a3b4d5b617144f"
+    },
+    {
+      "path": "contact_registration_012_018_024/candidate/F024_registered.png",
+      "sha256": "6c01e31de8654b0689daf5c725d175068f7ef40612fa6829f9527927a0c28b71"
+    },
+    {
+      "path": "contact_012_018_024/F012/originals/F012_call02_raw.png",
+      "sha256": "aaa4ee1ed1ee2142ebcfac245e5934e34ba55b6f86eed11c430fb7fb22cb523f"
+    },
+    {
+      "path": "contact_012_018_024/F018/originals/F018_call01_raw.png",
+      "sha256": "062e9495d9b401e23bd9c8670b4c08f8f1d19c4c08cd1fc9328924fc62e8283d"
+    },
+    {
+      "path": "contact_012_018_024/F024/originals/F024_call01_raw.png",
+      "sha256": "75b367bc3eb000ae5e526bc2fa90762a4f990b6b380766554a1635608f89d1a5"
+    }
+  ],
+  "new_image_calls": 0,
+  "cumulative_S22_attempts": 5,
+  "cumulative_S22_successful_outputs": 4,
+  "production_ready": false,
+  "no_state_030": true,
+  "no_state_036": true
+}

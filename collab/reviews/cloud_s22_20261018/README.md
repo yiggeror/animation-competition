@@ -1,8 +1,8 @@
-# S22：三图结构双审通过，同raw注册对照待审
+# S22：连续接触带修复及024轻收候选待回锁
 
 基线固定`da16fc0c1136767dba24a804ce0db01e2eed9bae`；仅此目录，未动模块/EDL/音轨/ready，未扩S24。
 
-最新：Astra已双审通过 [012/018/024原图结构](contact_012_018_024/README.md)。现交 [同raw零调用局部注册及6/6/12曝光对照](contact_registration_012_018_024/README.md)：孩子腕掌、指甲、拇食夹点及单签五处与锁000可见像素RGBA差均为0，成人原前景拇指和四末节保留。018→024的收束仍弱，另附未执行的最小末节/接触线局修提案，待Astra审，不标生产ready。已锁 [F000首母](F000_color_repair/README.md) SHA `d4e78e2d5b84a72588cf3af1ff23ce39cdc18d19dde2fbf1f8eaf44ba62d7ef5` 及三张raw/来源均保全。024仍持至035，不增030，不开036。原曝光表和计划JSON未改；本次新调用0，S22累计仍5尝试/4张成功原图。以下旧参考历史以本条覆盖。
+最新：按Astra实审交 [同raw连续接触带修复＋024末节轻收及6/6/12对照](contact_band_repair_012_018_024/README.md)，待回锁：清孩子小指下、成人食指内侧旧双边和腕下旧横线，接回成人皮肤与原阴影，024四末节局部内上轻收。孩子五区/单签与锁000可见RGBA差0，成人拇指差0，甲面核心保形，掌腕不整体移。三图生成原件与来源、[上一注册版](contact_registration_012_018_024/README.md)均保留未改。已锁 [F000首母](F000_color_repair/README.md) SHA `d4e78e2d5b84a72588cf3af1ff23ce39cdc18d19dde2fbf1f8eaf44ba62d7ef5` 不变。024仍持至035，不增030/036；原曝光表和计划JSON未改。本次新增调用0，S22累计仍5尝试/4张成功原图。未代替Astra生产过门，以下旧阶段状态以本条覆盖。
 
 最新门审补图（只新增两张，不改曝光表）：[F000自主握签＋成人近未触](reference/contour/F000_volume_reference.png)、[F024完整包握](reference/contour/F024_volume_reference.png)。手工Bezier体积轮廓，含掌体、弯曲四指、双方拇指/指甲、腕部和局部放大；不是图像生成或生产稿。F000两手轮廓最小间隙约17px；F024成人包指由尺侧下缘露出，孩子近面拇指及远面食/中指夹点仍可读。均已实际打开检查，交Astra裁定两图门。
 
