@@ -1,0 +1,24 @@
+{
+  "status": "HOLD_NOT_AUTHOR_PASSED_SEND_SINGLE_IMAGE_TO_ASTRA",
+  "candidate_sha256": "23917123ffe8f0a06fea3a0dbed4ae25fbc85872d2bba21dadaa70cebdf4df4b",
+  "original_sha256": "f10e92b0cc1155dad3746d00e45559f2fd2598a171ec832d9d858478a6cb274e",
+  "reviewed_actual_pngs": [
+    "originals/F079_call01_RAW.png",
+    "qa/F079_one_native_layered_crop_gray_TRIAL.png",
+    "qa/F079_one_native_layered_crop_dark_TRIAL.png",
+    "qa/F079_one_native_actual_connections_gray_TRIAL.png",
+    "qa/F073_F079_one_native_actual_comparison_gray.png"
+  ],
+  "findings": [
+    "Actual original contains coherent whole trousers, not a code-drawn bridge. Both original shoes, source ankles, head/blouse and complete true arms are reused as frozen actual layers; native generated shoes are not adopted.",
+    "With original feet restored, waist is continuously navy and both cuffs reach the actual source ankles without a large transparent break. This does not establish natural load transfer.",
+    "Near RIGHT leg still shows a forward diagonal thigh, pronounced knee corner and calf returning toward the landed ankle, close to the prior073 silhouette. The requested natural forward landing/extension and waist/hip weight transfer have not passed author review. Soft source hip/knee proxies do not prove anatomical lengths.",
+    "Original native navy mean vs locked062 is(+1.45449,+1.26125,-0.66285), within4 each; noRGB correction was applied. Background/native material alpha remains actual output, noalpha0guard moat."
+  ],
+  "request_count": 1,
+  "original_count": 1,
+  "additional_generation": false,
+  "next_state_started": false,
+  "S09_touched": false,
+  "disposition": "Deliver single actual original plus source-layered TRIAL now for Astra technical review. Do not label079locked or continue another state."
+}

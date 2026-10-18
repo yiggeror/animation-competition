@@ -1,0 +1,87 @@
+{
+  "reviewer": "cloud 6.1sol independent",
+  "status": "HOLD_ONE_NATIVE_TRIAL_NOT_ACCEPTED_NEAR_LEG_LANDING_REVIEW_FAILED",
+  "scope": "Only actual single F079 raw and frozen-source layered trial; no new image call, pose repair or sequence acceptance",
+  "raw_sha256": "f10e92b0cc1155dad3746d00e45559f2fd2598a171ec832d9d858478a6cb274e",
+  "raw_size": [
+    1024,
+    1536
+  ],
+  "trial_candidate_sha256": "23917123ffe8f0a06fea3a0dbed4ae25fbc85872d2bba21dadaa70cebdf4df4b",
+  "actual_viewed": [
+    "originals/F079_call01_RAW.png",
+    "qa/call01_whole_crop_uniform_520x780.png",
+    "qa/F079_crop_complete_edit_dark.png (approved input)",
+    "qa/F079_one_native_layered_crop_gray_TRIAL.png",
+    "qa/F079_one_native_layered_crop_dark_TRIAL.png",
+    "qa/F079_one_native_actual_connections_gray_TRIAL.png",
+    "qa/F073_F079_one_native_actual_comparison_gray.png"
+  ],
+  "confirmed_visible_facts": [
+    "试件使用完整真实原生裤层接回已定位的原鞋/踝，未把raw重画鞋位当成真正目标。",
+    "按真实固定源鞋看，两裤口主链可接，未见此前073式的大透空断口；腰衣到新裤底层整体连续可读。",
+    "近右脚已真实落在与远左同1022native底，远左鞋继续原位；身体/双臂/双真鞋源层未因该试件重新画或肢段拉伸。",
+    "近腿大腿仍明显斜前推出，内膝尖折与回折小腿轮廓仍沿073弯膝特征；虽然小腿已延伸到落地鞋，未达到本人可确认的自然前落承重状态。"
+  ],
+  "blocking_to_acceptance": [
+    {
+      "id": "natural_near_right_landing_not_demonstrated",
+      "region_native_approx_xyxy": [
+        1200,
+        625,
+        1360,
+        900
+      ],
+      "finding": "在完整真实鞋位的试件与锁073对照中，近腿明显保留高弯膝/回折小腿。两脚落地本身不能替代髋膝自然承重门；本审不把该单图当合格079或锁母。",
+      "evidence": "qa/F073_F079_one_native_actual_comparison_gray.png 与 qa/F079_one_native_actual_connections_gray_TRIAL.png近膝局部。",
+      "not_a_numeric_bone_claim": "不按软proxy的H/K/A偏差或投影段长判不可达，不冒称测得真实骨长/膝角；这是实际成图姿态/动作相位审查。"
+    }
+  ],
+  "source_layer_checks": {
+    "far_shoe_ankle_SUPPORT_FIXED": {
+      "SHA": "1103f923c4e2613dac88e8d1a8534c101103013c4db468af1adcd83426a74e77",
+      "matches_frozen_input_layer": true
+    },
+    "far_complete_arm_jade_hand": {
+      "SHA": "78db082eed7f787c633d2369a6571fa70762c22b6c63d3e3387290b47f94f065",
+      "matches_frozen_input_layer": true
+    },
+    "body_head_blouse": {
+      "SHA": "ddb113ad133a148f61efa1e729803640a68068ac3cfa43708915a59f76bc665a",
+      "matches_frozen_input_layer": true
+    },
+    "near_complete_arm": {
+      "SHA": "cca531e2fc91a6b8c7468411b0f062b58a2a225714f49d2648bfceba1f3702da",
+      "matches_frozen_input_layer": true
+    },
+    "near_shoe_ankle_LANDED": {
+      "SHA": "57518102bfef2d81fd98017bd445e8ae7918bdb1dd60093657f82fc576a6cc7c",
+      "matches_frozen_input_layer": true
+    }
+  },
+  "author_material_report": {
+    "native_pants_material_pixels": 79000,
+    "returned_noncloth_excluded": 328,
+    "uniform_whole_crop_scale": 0.5078125,
+    "no_nonuniform_limb_scale": true,
+    "navy_RGB_correction": [
+      0,
+      0,
+      0
+    ],
+    "native_navy_mean_delta_vs062": [
+      1.4544905906527177,
+      1.261254989164101,
+      -0.6628514219656907
+    ],
+    "actual_source_sole_bottoms_native": {
+      "far_shoe_ankle_SUPPORT_FIXED": 1022,
+      "near_shoe_ankle_LANDED": 1022
+    }
+  },
+  "disposition": "保留完整唯一原图、真实源层试件和HOLD证据，交Astra技术审；不补调、不把试件升格锁态或曝光合格态。",
+  "F079_requests": 1,
+  "F079_originals": 1,
+  "reviewer_new_calls": 0,
+  "other_states_or_S09_touched": false
+}

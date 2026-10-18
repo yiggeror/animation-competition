@@ -1,0 +1,68 @@
+{
+  "status": "ONE_NATIVE_LAYERED_TRIAL_PENDING_ACTUAL_REVIEW_NOT_ACCEPTED",
+  "candidate_sha256": "23917123ffe8f0a06fea3a0dbed4ae25fbc85872d2bba21dadaa70cebdf4df4b",
+  "raw_sha256": "f10e92b0cc1155dad3746d00e45559f2fd2598a171ec832d9d858478a6cb274e",
+  "raw_size": [
+    1024,
+    1536
+  ],
+  "whole_crop_uniform_scale": 0.5078125,
+  "whole_crop_xyxy": [
+    900,
+    280,
+    1420,
+    1060
+  ],
+  "no_nonuniform_limb_scale_or_code_pose": true,
+  "native_pants_material_pixels": 79000,
+  "returned_noncloth_pixels_excluded": 328,
+  "actual_navy_component_sizes": [
+    76092
+  ],
+  "palette_anchor_fixed062_SHA": "393622a77349083751122520b690bd35017f8535a25560d8cca775446d2eeb2f",
+  "anchor062_navy_mean": [
+    41.36472629752327,
+    44.95460202275157,
+    60.26250197191986
+  ],
+  "native079_navy_mean": [
+    42.81921688817599,
+    46.21585701191567,
+    59.59965054995417
+  ],
+  "native079_mean_delta_vs062": [
+    1.4544905906527177,
+    1.261254989164101,
+    -0.6628514219656907
+  ],
+  "navy_RGB_correction_applied": [
+    0,
+    0,
+    0
+  ],
+  "layer_order_back_to_front": [
+    "far_shoe_ankle_SUPPORT_FIXED",
+    "native_trousers",
+    "far_complete_arm_jade_hand",
+    "body_head_blouse",
+    "near_complete_arm",
+    "near_shoe_ankle_LANDED"
+  ],
+  "source_layer_SHA_match_frozen_inputs": {
+    "far_shoe_ankle_SUPPORT_FIXED": true,
+    "far_complete_arm_jade_hand": true,
+    "body_head_blouse": true,
+    "near_complete_arm": true,
+    "near_shoe_ankle_LANDED": true
+  },
+  "fixed_far_layer_SHA": "1103f923c4e2613dac88e8d1a8534c101103013c4db468af1adcd83426a74e77",
+  "real_sole_bottoms_native": {
+    "far_shoe_ankle_SUPPORT_FIXED": 1022,
+    "near_shoe_ankle_LANDED": 1022
+  },
+  "F079_requests": 1,
+  "F079_originals": 1,
+  "new_calls_for_adoption": 0,
+  "other_states_unopened": true,
+  "limits": "Single actual original only. Waist/hip support, actual near-leg extension and both true source ankle/cuffs must be visually reviewed; not accepted, no exposure."
+}
