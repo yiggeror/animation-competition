@@ -1,0 +1,2 @@
+cwd: /workspace/semantic-color-render-ac8a7d81
+node --require /workspace/cloud-s10-review-20261018-1324/collab/reviews/cloud_s10_20261018/render_assist/s10_semantic120/observe_chromium.cjs tools/js/frames.cjs js/anim/s10_drawn.js build/s10_semantic120 --fps 24 --w 1280 --h 720 --workers 4 --from 0 --to 5 --mp4 build/S10_semantic120.mp4
