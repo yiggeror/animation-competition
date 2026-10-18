@@ -1,0 +1,84 @@
+{
+  "status": "F020_INPUT_REFERENCE_GATE_PENDING_NO_CALL",
+  "source": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_FINAL_LOCKED/S08_F017_grandma_match_box_RGBA.png",
+  "source_sha256": "4e7be236953bee57aa8c3ecfc142893ab15c67095fae4b77718ff6aba0b1ec20",
+  "actual_native_calls_before": 9,
+  "crop_scene_box": [
+    900,
+    720,
+    1300,
+    1000
+  ],
+  "uniform_enlargement": 3,
+  "source_actual017_far_elbow_estimate": [
+    1000,
+    875
+  ],
+  "source_actual017_far_wrist": [
+    1085,
+    908
+  ],
+  "proposed_far_chain": [
+    [
+      994,
+      680
+    ],
+    [
+      1007,
+      795
+    ],
+    [
+      1062,
+      908
+    ],
+    [
+      1175,
+      853
+    ],
+    [
+      1210,
+      826
+    ]
+  ],
+  "new_far_forearm_screen_projection": 125.67418191498204,
+  "coordinate_warning": "Approximate screen projection only, not3D bone lengths or hard coordinates; natural rounded adult limb volume and smooth transition from017 are primary. Do not reuse abandoned low-elbow017 construction.",
+  "near_hand_match_rigid_translation": [
+    -12,
+    5
+  ],
+  "near_match_head": [
+    1062,
+    787
+  ],
+  "near_true_grip": [
+    1034,
+    824
+  ],
+  "visible_match_length": 46.400431,
+  "near_wrist_guide": [
+    939,
+    871
+  ],
+  "box_center": [
+    1100,
+    960
+  ],
+  "box_owner": "table only; left fingers released with air gap",
+  "table_surface_y": [
+    950.2,
+    981
+  ],
+  "target_lever_rest": [
+    1254.0390495120525,
+    737.5349762791033
+  ],
+  "lever_contact_now": false,
+  "mechanism_lift_now": 0,
+  "hard_guard": {
+    "true_hand_match": 7631,
+    "fixed_box": 1764,
+    "allowed_guard_overlap": 0
+  },
+  "changed_outside_white_or_rigid_preplacement": 0,
+  "fire_light": "Real match for lighting kerosene lamp; actual fire/glow later independent code layers, never baked into transparent character"
+}
