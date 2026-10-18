@@ -1,0 +1,3467 @@
+{
+  "status": "INDEPENDENT_REFERENCE_GATE_PASSED__OPUS_FREEZE_PENDING",
+  "source_head": "d2199f2dda6c7f9780beef9364e1a0880d34bfce",
+  "canvas": [
+    1672,
+    941
+  ],
+  "fps": 24,
+  "duration_frames": 36,
+  "coordinates": "origin upper-left, x right, y down. image_left/right are screen positions, never anatomical aliases.",
+  "construction": "Measured source 2D landmarks plus artist-defined depth projection guide. Angles are designed targets, not inferred camera reconstruction. No pixel warping or production images.",
+  "master_head_states": 8,
+  "recommended_exposure_states": 9,
+  "states": [
+    {
+      "frame": 0,
+      "hold": 8,
+      "end_exclusive": 8,
+      "yaw_deg_screen_left_negative": 0,
+      "chin_lift_pitch_deg": 0,
+      "note": "专注看手机",
+      "landmarks": {
+        "nose": [
+          836.0,
+          619.0
+        ],
+        "chin": [
+          837.0,
+          731.0
+        ],
+        "eye_image_left": [
+          748.0,
+          568.0
+        ],
+        "eye_image_right": [
+          930.0,
+          568.0
+        ],
+        "mouth": [
+          838.0,
+          665.0
+        ],
+        "bang_center": [
+          842.0,
+          439.0
+        ],
+        "crown": [
+          836.0,
+          150.0
+        ],
+        "cowlick": [
+          891.0,
+          77.0
+        ],
+        "ear_image_left": [
+          608.0,
+          561.0
+        ],
+        "ear_image_right": [
+          1064.0,
+          561.0
+        ],
+        "tie_image_left": [
+          625.0,
+          627.0
+        ],
+        "tie_image_right": [
+          1044.0,
+          627.0
+        ],
+        "neck_upper_left": [
+          775.0,
+          713.0
+        ],
+        "neck_upper_right": [
+          904.0,
+          713.0
+        ]
+      },
+      "ears": {
+        "image_left": {
+          "visible_width_px": 88.0,
+          "visible_height_px": 116,
+          "layer": "far ear; partially hidden by skull/side hair"
+        },
+        "image_right": {
+          "visible_width_px": 88.0,
+          "visible_height_px": 116,
+          "layer": "near ear; exposed by cheek rotation"
+        }
+      },
+      "ear_geometry_warning": "Visible width is an occlusion envelope, never an ear-scale command. Near ear 103.8px is an upper bound. Far ear 21.1px is remaining exposure behind side hair, not a flattened ear. Preserve the original ear thickness, height and root anatomy; root embeds into temporal hair.",
+      "tails": {
+        "image_left": {
+          "root": [
+            625.0,
+            627.0
+          ],
+          "tip": [
+            585,
+            777
+          ],
+          "rest_tip": [
+            585,
+            777
+          ],
+          "tip_dx_from_focus": 0
+        },
+        "image_right": {
+          "root": [
+            1044.0,
+            627.0
+          ],
+          "tip": [
+            1105,
+            777
+          ],
+          "rest_tip": [
+            1105,
+            777
+          ],
+          "tip_dx_from_focus": 0
+        }
+      },
+      "pupil_delta_from_eye_center": [
+        0,
+        0
+      ],
+      "neck_base_fixed": [
+        [
+          744,
+          742
+        ],
+        [
+          938,
+          742
+        ],
+        [
+          842,
+          810
+        ]
+      ],
+      "fixed_registration": {
+        "A": [
+          724.309375,
+          903.96875
+        ],
+        "B": [
+          949.3577981651376,
+          910.1743119266055
+        ],
+        "H": [
+          837.3405572755418,
+          904.3312693498452
+        ]
+      },
+      "target_tolerance_px": {
+        "nose_chin": 6,
+        "head_outline": 10,
+        "ear_visible_width": 6,
+        "tail_tip": 10,
+        "neck_collar_seam": 2
+      },
+      "measurement_class": "art-direction target; not generated art or recovered 3D measurement",
+      "projected_contour_guides": {
+        "skull": [
+          [
+            576.0,
+            505.0
+          ],
+          [
+            539.0,
+            468.0
+          ],
+          [
+            530.0,
+            417.0
+          ],
+          [
+            555.0,
+            319.0
+          ],
+          [
+            600.0,
+            248.0
+          ],
+          [
+            672.0,
+            190.0
+          ],
+          [
+            745.0,
+            156.0
+          ],
+          [
+            810.0,
+            153.0
+          ],
+          [
+            836.0,
+            174.0
+          ],
+          [
+            875.0,
+            150.0
+          ],
+          [
+            956.0,
+            157.0
+          ],
+          [
+            1033.0,
+            203.0
+          ],
+          [
+            1083.0,
+            274.0
+          ],
+          [
+            1127.0,
+            373.0
+          ],
+          [
+            1136.0,
+            442.0
+          ],
+          [
+            1110.0,
+            503.0
+          ]
+        ],
+        "jaw": [
+          [
+            650.0,
+            456.0
+          ],
+          [
+            649.0,
+            550.0
+          ],
+          [
+            660.0,
+            622.0
+          ],
+          [
+            690.0,
+            664.0
+          ],
+          [
+            744.0,
+            701.0
+          ],
+          [
+            807.0,
+            726.0
+          ],
+          [
+            837.0,
+            731.0
+          ],
+          [
+            869.0,
+            724.0
+          ],
+          [
+            933.0,
+            697.0
+          ],
+          [
+            989.0,
+            661.0
+          ],
+          [
+            1015.0,
+            610.0
+          ],
+          [
+            1029.0,
+            532.0
+          ],
+          [
+            1023.0,
+            457.0
+          ]
+        ],
+        "bang_edge": [
+          [
+            577.0,
+            506.0
+          ],
+          [
+            614.0,
+            481.0
+          ],
+          [
+            650.0,
+            468.0
+          ],
+          [
+            676.0,
+            451.0
+          ],
+          [
+            720.0,
+            443.0
+          ],
+          [
+            746.0,
+            440.0
+          ],
+          [
+            770.0,
+            443.0
+          ],
+          [
+            792.0,
+            442.0
+          ],
+          [
+            842.0,
+            439.0
+          ],
+          [
+            880.0,
+            439.0
+          ],
+          [
+            917.0,
+            449.0
+          ],
+          [
+            952.0,
+            451.0
+          ],
+          [
+            988.0,
+            471.0
+          ],
+          [
+            1023.0,
+            478.0
+          ],
+          [
+            1057.0,
+            511.0
+          ]
+        ],
+        "cowlick": [
+          [
+            836.0,
+            174.0
+          ],
+          [
+            811.0,
+            134.0
+          ],
+          [
+            822.0,
+            103.0
+          ],
+          [
+            858.0,
+            81.0
+          ],
+          [
+            891.0,
+            77.0
+          ],
+          [
+            915.0,
+            81.0
+          ]
+        ]
+      }
+    },
+    {
+      "frame": 8,
+      "hold": 3,
+      "end_exclusive": 11,
+      "yaw_deg_screen_left_negative": 0,
+      "chin_lift_pitch_deg": 0,
+      "note": "只动眼睛：看画右下的瓜",
+      "landmarks": {
+        "nose": [
+          836.0,
+          619.0
+        ],
+        "chin": [
+          837.0,
+          731.0
+        ],
+        "eye_image_left": [
+          748.0,
+          568.0
+        ],
+        "eye_image_right": [
+          930.0,
+          568.0
+        ],
+        "mouth": [
+          838.0,
+          665.0
+        ],
+        "bang_center": [
+          842.0,
+          439.0
+        ],
+        "crown": [
+          836.0,
+          150.0
+        ],
+        "cowlick": [
+          891.0,
+          77.0
+        ],
+        "ear_image_left": [
+          608.0,
+          561.0
+        ],
+        "ear_image_right": [
+          1064.0,
+          561.0
+        ],
+        "tie_image_left": [
+          625.0,
+          627.0
+        ],
+        "tie_image_right": [
+          1044.0,
+          627.0
+        ],
+        "neck_upper_left": [
+          775.0,
+          713.0
+        ],
+        "neck_upper_right": [
+          904.0,
+          713.0
+        ]
+      },
+      "ears": {
+        "image_left": {
+          "visible_width_px": 88.0,
+          "visible_height_px": 116,
+          "layer": "far ear; partially hidden by skull/side hair"
+        },
+        "image_right": {
+          "visible_width_px": 88.0,
+          "visible_height_px": 116,
+          "layer": "near ear; exposed by cheek rotation"
+        }
+      },
+      "ear_geometry_warning": "Visible width is an occlusion envelope, never an ear-scale command. Near ear 103.8px is an upper bound. Far ear 21.1px is remaining exposure behind side hair, not a flattened ear. Preserve the original ear thickness, height and root anatomy; root embeds into temporal hair.",
+      "tails": {
+        "image_left": {
+          "root": [
+            625.0,
+            627.0
+          ],
+          "tip": [
+            585,
+            777
+          ],
+          "rest_tip": [
+            585,
+            777
+          ],
+          "tip_dx_from_focus": 0
+        },
+        "image_right": {
+          "root": [
+            1044.0,
+            627.0
+          ],
+          "tip": [
+            1105,
+            777
+          ],
+          "rest_tip": [
+            1105,
+            777
+          ],
+          "tip_dx_from_focus": 0
+        }
+      },
+      "pupil_delta_from_eye_center": [
+        12,
+        8
+      ],
+      "neck_base_fixed": [
+        [
+          744,
+          742
+        ],
+        [
+          938,
+          742
+        ],
+        [
+          842,
+          810
+        ]
+      ],
+      "fixed_registration": {
+        "A": [
+          724.309375,
+          903.96875
+        ],
+        "B": [
+          949.3577981651376,
+          910.1743119266055
+        ],
+        "H": [
+          837.3405572755418,
+          904.3312693498452
+        ]
+      },
+      "target_tolerance_px": {
+        "nose_chin": 6,
+        "head_outline": 10,
+        "ear_visible_width": 6,
+        "tail_tip": 10,
+        "neck_collar_seam": 2
+      },
+      "measurement_class": "art-direction target; not generated art or recovered 3D measurement",
+      "projected_contour_guides": {
+        "skull": [
+          [
+            576.0,
+            505.0
+          ],
+          [
+            539.0,
+            468.0
+          ],
+          [
+            530.0,
+            417.0
+          ],
+          [
+            555.0,
+            319.0
+          ],
+          [
+            600.0,
+            248.0
+          ],
+          [
+            672.0,
+            190.0
+          ],
+          [
+            745.0,
+            156.0
+          ],
+          [
+            810.0,
+            153.0
+          ],
+          [
+            836.0,
+            174.0
+          ],
+          [
+            875.0,
+            150.0
+          ],
+          [
+            956.0,
+            157.0
+          ],
+          [
+            1033.0,
+            203.0
+          ],
+          [
+            1083.0,
+            274.0
+          ],
+          [
+            1127.0,
+            373.0
+          ],
+          [
+            1136.0,
+            442.0
+          ],
+          [
+            1110.0,
+            503.0
+          ]
+        ],
+        "jaw": [
+          [
+            650.0,
+            456.0
+          ],
+          [
+            649.0,
+            550.0
+          ],
+          [
+            660.0,
+            622.0
+          ],
+          [
+            690.0,
+            664.0
+          ],
+          [
+            744.0,
+            701.0
+          ],
+          [
+            807.0,
+            726.0
+          ],
+          [
+            837.0,
+            731.0
+          ],
+          [
+            869.0,
+            724.0
+          ],
+          [
+            933.0,
+            697.0
+          ],
+          [
+            989.0,
+            661.0
+          ],
+          [
+            1015.0,
+            610.0
+          ],
+          [
+            1029.0,
+            532.0
+          ],
+          [
+            1023.0,
+            457.0
+          ]
+        ],
+        "bang_edge": [
+          [
+            577.0,
+            506.0
+          ],
+          [
+            614.0,
+            481.0
+          ],
+          [
+            650.0,
+            468.0
+          ],
+          [
+            676.0,
+            451.0
+          ],
+          [
+            720.0,
+            443.0
+          ],
+          [
+            746.0,
+            440.0
+          ],
+          [
+            770.0,
+            443.0
+          ],
+          [
+            792.0,
+            442.0
+          ],
+          [
+            842.0,
+            439.0
+          ],
+          [
+            880.0,
+            439.0
+          ],
+          [
+            917.0,
+            449.0
+          ],
+          [
+            952.0,
+            451.0
+          ],
+          [
+            988.0,
+            471.0
+          ],
+          [
+            1023.0,
+            478.0
+          ],
+          [
+            1057.0,
+            511.0
+          ]
+        ],
+        "cowlick": [
+          [
+            836.0,
+            174.0
+          ],
+          [
+            811.0,
+            134.0
+          ],
+          [
+            822.0,
+            103.0
+          ],
+          [
+            858.0,
+            81.0
+          ],
+          [
+            891.0,
+            77.0
+          ],
+          [
+            915.0,
+            81.0
+          ]
+        ]
+      }
+    },
+    {
+      "frame": 11,
+      "hold": 3,
+      "end_exclusive": 14,
+      "yaw_deg_screen_left_negative": 0,
+      "chin_lift_pitch_deg": 0,
+      "note": "回手机；眉微皱",
+      "landmarks": {
+        "nose": [
+          836.0,
+          619.0
+        ],
+        "chin": [
+          837.0,
+          731.0
+        ],
+        "eye_image_left": [
+          748.0,
+          568.0
+        ],
+        "eye_image_right": [
+          930.0,
+          568.0
+        ],
+        "mouth": [
+          838.0,
+          665.0
+        ],
+        "bang_center": [
+          842.0,
+          439.0
+        ],
+        "crown": [
+          836.0,
+          150.0
+        ],
+        "cowlick": [
+          891.0,
+          77.0
+        ],
+        "ear_image_left": [
+          608.0,
+          561.0
+        ],
+        "ear_image_right": [
+          1064.0,
+          561.0
+        ],
+        "tie_image_left": [
+          625.0,
+          627.0
+        ],
+        "tie_image_right": [
+          1044.0,
+          627.0
+        ],
+        "neck_upper_left": [
+          775.0,
+          713.0
+        ],
+        "neck_upper_right": [
+          904.0,
+          713.0
+        ]
+      },
+      "ears": {
+        "image_left": {
+          "visible_width_px": 88.0,
+          "visible_height_px": 116,
+          "layer": "far ear; partially hidden by skull/side hair"
+        },
+        "image_right": {
+          "visible_width_px": 88.0,
+          "visible_height_px": 116,
+          "layer": "near ear; exposed by cheek rotation"
+        }
+      },
+      "ear_geometry_warning": "Visible width is an occlusion envelope, never an ear-scale command. Near ear 103.8px is an upper bound. Far ear 21.1px is remaining exposure behind side hair, not a flattened ear. Preserve the original ear thickness, height and root anatomy; root embeds into temporal hair.",
+      "tails": {
+        "image_left": {
+          "root": [
+            625.0,
+            627.0
+          ],
+          "tip": [
+            585,
+            777
+          ],
+          "rest_tip": [
+            585,
+            777
+          ],
+          "tip_dx_from_focus": 0
+        },
+        "image_right": {
+          "root": [
+            1044.0,
+            627.0
+          ],
+          "tip": [
+            1105,
+            777
+          ],
+          "rest_tip": [
+            1105,
+            777
+          ],
+          "tip_dx_from_focus": 0
+        }
+      },
+      "pupil_delta_from_eye_center": [
+        0,
+        0
+      ],
+      "neck_base_fixed": [
+        [
+          744,
+          742
+        ],
+        [
+          938,
+          742
+        ],
+        [
+          842,
+          810
+        ]
+      ],
+      "fixed_registration": {
+        "A": [
+          724.309375,
+          903.96875
+        ],
+        "B": [
+          949.3577981651376,
+          910.1743119266055
+        ],
+        "H": [
+          837.3405572755418,
+          904.3312693498452
+        ]
+      },
+      "target_tolerance_px": {
+        "nose_chin": 6,
+        "head_outline": 10,
+        "ear_visible_width": 6,
+        "tail_tip": 10,
+        "neck_collar_seam": 2
+      },
+      "measurement_class": "art-direction target; not generated art or recovered 3D measurement",
+      "projected_contour_guides": {
+        "skull": [
+          [
+            576.0,
+            505.0
+          ],
+          [
+            539.0,
+            468.0
+          ],
+          [
+            530.0,
+            417.0
+          ],
+          [
+            555.0,
+            319.0
+          ],
+          [
+            600.0,
+            248.0
+          ],
+          [
+            672.0,
+            190.0
+          ],
+          [
+            745.0,
+            156.0
+          ],
+          [
+            810.0,
+            153.0
+          ],
+          [
+            836.0,
+            174.0
+          ],
+          [
+            875.0,
+            150.0
+          ],
+          [
+            956.0,
+            157.0
+          ],
+          [
+            1033.0,
+            203.0
+          ],
+          [
+            1083.0,
+            274.0
+          ],
+          [
+            1127.0,
+            373.0
+          ],
+          [
+            1136.0,
+            442.0
+          ],
+          [
+            1110.0,
+            503.0
+          ]
+        ],
+        "jaw": [
+          [
+            650.0,
+            456.0
+          ],
+          [
+            649.0,
+            550.0
+          ],
+          [
+            660.0,
+            622.0
+          ],
+          [
+            690.0,
+            664.0
+          ],
+          [
+            744.0,
+            701.0
+          ],
+          [
+            807.0,
+            726.0
+          ],
+          [
+            837.0,
+            731.0
+          ],
+          [
+            869.0,
+            724.0
+          ],
+          [
+            933.0,
+            697.0
+          ],
+          [
+            989.0,
+            661.0
+          ],
+          [
+            1015.0,
+            610.0
+          ],
+          [
+            1029.0,
+            532.0
+          ],
+          [
+            1023.0,
+            457.0
+          ]
+        ],
+        "bang_edge": [
+          [
+            577.0,
+            506.0
+          ],
+          [
+            614.0,
+            481.0
+          ],
+          [
+            650.0,
+            468.0
+          ],
+          [
+            676.0,
+            451.0
+          ],
+          [
+            720.0,
+            443.0
+          ],
+          [
+            746.0,
+            440.0
+          ],
+          [
+            770.0,
+            443.0
+          ],
+          [
+            792.0,
+            442.0
+          ],
+          [
+            842.0,
+            439.0
+          ],
+          [
+            880.0,
+            439.0
+          ],
+          [
+            917.0,
+            449.0
+          ],
+          [
+            952.0,
+            451.0
+          ],
+          [
+            988.0,
+            471.0
+          ],
+          [
+            1023.0,
+            478.0
+          ],
+          [
+            1057.0,
+            511.0
+          ]
+        ],
+        "cowlick": [
+          [
+            836.0,
+            174.0
+          ],
+          [
+            811.0,
+            134.0
+          ],
+          [
+            822.0,
+            103.0
+          ],
+          [
+            858.0,
+            81.0
+          ],
+          [
+            891.0,
+            77.0
+          ],
+          [
+            915.0,
+            81.0
+          ]
+        ]
+      }
+    },
+    {
+      "frame": 14,
+      "hold": 3,
+      "end_exclusive": 17,
+      "yaw_deg_screen_left_negative": -9,
+      "chin_lift_pitch_deg": 1,
+      "note": "开始向画左转；尾端滞后",
+      "landmarks": {
+        "nose": [
+          806.3,
+          615.7
+        ],
+        "chin": [
+          815.9,
+          728.6
+        ],
+        "eye_image_left": [
+          724.8,
+          565.3
+        ],
+        "eye_image_right": [
+          904.6,
+          565.3
+        ],
+        "mouth": [
+          810.6,
+          661.9
+        ],
+        "bang_center": [
+          814.6,
+          436.0
+        ],
+        "crown": [
+          833.7,
+          149.8
+        ],
+        "cowlick": [
+          884.1,
+          76.4
+        ],
+        "ear_image_left": [
+          614.7,
+          561.4
+        ],
+        "ear_image_right": [
+          1065.1,
+          561.4
+        ],
+        "tie_image_left": [
+          639.3,
+          628.3
+        ],
+        "tie_image_right": [
+          1053.2,
+          628.3
+        ],
+        "neck_upper_left": [
+          764.0,
+          711.7
+        ],
+        "neck_upper_right": [
+          894.6,
+          712.0
+        ]
+      },
+      "ears": {
+        "image_left": {
+          "visible_width_px": 57.9,
+          "visible_height_px": 116,
+          "layer": "far ear; partially hidden by skull/side hair"
+        },
+        "image_right": {
+          "visible_width_px": 95.1,
+          "visible_height_px": 116,
+          "layer": "near ear; exposed by cheek rotation"
+        }
+      },
+      "ear_geometry_warning": "Visible width is an occlusion envelope, never an ear-scale command. Near ear 103.8px is an upper bound. Far ear 21.1px is remaining exposure behind side hair, not a flattened ear. Preserve the original ear thickness, height and root anatomy; root embeds into temporal hair.",
+      "tails": {
+        "image_left": {
+          "root": [
+            639.3,
+            628.3
+          ],
+          "tip": [
+            585,
+            777
+          ],
+          "rest_tip": [
+            585,
+            777
+          ],
+          "tip_dx_from_focus": 0
+        },
+        "image_right": {
+          "root": [
+            1053.2,
+            628.3
+          ],
+          "tip": [
+            1105,
+            777
+          ],
+          "rest_tip": [
+            1105,
+            777
+          ],
+          "tip_dx_from_focus": 0
+        }
+      },
+      "pupil_delta_from_eye_center": [
+        5,
+        6
+      ],
+      "neck_base_fixed": [
+        [
+          744,
+          742
+        ],
+        [
+          938,
+          742
+        ],
+        [
+          842,
+          810
+        ]
+      ],
+      "fixed_registration": {
+        "A": [
+          724.309375,
+          903.96875
+        ],
+        "B": [
+          949.3577981651376,
+          910.1743119266055
+        ],
+        "H": [
+          837.3405572755418,
+          904.3312693498452
+        ]
+      },
+      "target_tolerance_px": {
+        "nose_chin": 6,
+        "head_outline": 10,
+        "ear_visible_width": 6,
+        "tail_tip": 10,
+        "neck_collar_seam": 2
+      },
+      "measurement_class": "art-direction target; not generated art or recovered 3D measurement",
+      "projected_contour_guides": {
+        "skull": [
+          [
+            569.8,
+            503.9
+          ],
+          [
+            539.5,
+            467.7
+          ],
+          [
+            536.9,
+            417.4
+          ],
+          [
+            560.0,
+            319.2
+          ],
+          [
+            602.9,
+            248.0
+          ],
+          [
+            674.0,
+            190.0
+          ],
+          [
+            746.1,
+            156.0
+          ],
+          [
+            808.0,
+            152.8
+          ],
+          [
+            827.4,
+            173.1
+          ],
+          [
+            874.5,
+            150.0
+          ],
+          [
+            956.9,
+            157.3
+          ],
+          [
+            1035.3,
+            203.6
+          ],
+          [
+            1087.8,
+            274.9
+          ],
+          [
+            1132.0,
+            374.0
+          ],
+          [
+            1140.1,
+            442.9
+          ],
+          [
+            1111.3,
+            503.5
+          ]
+        ],
+        "jaw": [
+          [
+            642.1,
+            454.9
+          ],
+          [
+            638.8,
+            548.6
+          ],
+          [
+            646.5,
+            620.2
+          ],
+          [
+            673.8,
+            662.0
+          ],
+          [
+            724.8,
+            698.7
+          ],
+          [
+            786.2,
+            723.6
+          ],
+          [
+            815.9,
+            728.6
+          ],
+          [
+            847.5,
+            721.6
+          ],
+          [
+            913.0,
+            694.9
+          ],
+          [
+            971.5,
+            659.2
+          ],
+          [
+            1001.8,
+            608.8
+          ],
+          [
+            1019.6,
+            531.2
+          ],
+          [
+            1014.4,
+            456.3
+          ]
+        ],
+        "bang_edge": [
+          [
+            566.9,
+            504.5
+          ],
+          [
+            598.0,
+            478.9
+          ],
+          [
+            630.4,
+            465.6
+          ],
+          [
+            653.7,
+            448.3
+          ],
+          [
+            695.6,
+            440.1
+          ],
+          [
+            721.3,
+            437.1
+          ],
+          [
+            744.2,
+            440.0
+          ],
+          [
+            765.2,
+            439.0
+          ],
+          [
+            814.6,
+            436.0
+          ],
+          [
+            852.9,
+            436.0
+          ],
+          [
+            890.2,
+            446.1
+          ],
+          [
+            926.3,
+            448.3
+          ],
+          [
+            965.8,
+            468.7
+          ],
+          [
+            1005.1,
+            476.3
+          ],
+          [
+            1045.7,
+            510.0
+          ]
+        ],
+        "cowlick": [
+          [
+            829.0,
+            173.3
+          ],
+          [
+            805.1,
+            133.4
+          ],
+          [
+            817.5,
+            102.5
+          ],
+          [
+            851.5,
+            80.4
+          ],
+          [
+            884.1,
+            76.4
+          ],
+          [
+            907.0,
+            80.3
+          ]
+        ]
+      }
+    },
+    {
+      "frame": 17,
+      "hold": 4,
+      "end_exclusive": 21,
+      "yaw_deg_screen_left_negative": -20,
+      "chin_lift_pitch_deg": 3,
+      "note": "转到位；下巴微抬、撅嘴",
+      "landmarks": {
+        "nose": [
+          771.0,
+          608.9
+        ],
+        "chin": [
+          790.8,
+          723.6
+        ],
+        "eye_image_left": [
+          700.3,
+          559.8
+        ],
+        "eye_image_right": [
+          871.3,
+          559.8
+        ],
+        "mouth": [
+          778.0,
+          655.6
+        ],
+        "bang_center": [
+          781.8,
+          429.9
+        ],
+        "crown": [
+          830.9,
+          149.7
+        ],
+        "cowlick": [
+          874.0,
+          75.4
+        ],
+        "ear_image_left": [
+          630.3,
+          562.2
+        ],
+        "ear_image_right": [
+          1058.8,
+          562.2
+        ],
+        "tie_image_left": [
+          663.4,
+          630.7
+        ],
+        "tie_image_right": [
+          1057.1,
+          630.7
+        ],
+        "neck_upper_left": [
+          753.0,
+          708.7
+        ],
+        "neck_upper_right": [
+          881.1,
+          709.8
+        ]
+      },
+      "ears": {
+        "image_left": {
+          "visible_width_px": 21.1,
+          "visible_height_px": 116,
+          "layer": "far ear; partially hidden by skull/side hair"
+        },
+        "image_right": {
+          "visible_width_px": 103.8,
+          "visible_height_px": 116,
+          "layer": "near ear; exposed by cheek rotation"
+        }
+      },
+      "ear_geometry_warning": "Visible width is an occlusion envelope, never an ear-scale command. Near ear 103.8px is an upper bound. Far ear 21.1px is remaining exposure behind side hair, not a flattened ear. Preserve the original ear thickness, height and root anatomy; root embeds into temporal hair.",
+      "tails": {
+        "image_left": {
+          "root": [
+            663.4,
+            630.7
+          ],
+          "tip": [
+            610.0,
+            774
+          ],
+          "rest_tip": [
+            585,
+            777
+          ],
+          "tip_dx_from_focus": 25.0
+        },
+        "image_right": {
+          "root": [
+            1057.1,
+            630.7
+          ],
+          "tip": [
+            1113.5,
+            774
+          ],
+          "rest_tip": [
+            1105,
+            777
+          ],
+          "tip_dx_from_focus": 8.5
+        }
+      },
+      "pupil_delta_from_eye_center": [
+        5,
+        6
+      ],
+      "neck_base_fixed": [
+        [
+          744,
+          742
+        ],
+        [
+          938,
+          742
+        ],
+        [
+          842,
+          810
+        ]
+      ],
+      "fixed_registration": {
+        "A": [
+          724.309375,
+          903.96875
+        ],
+        "B": [
+          949.3577981651376,
+          910.1743119266055
+        ],
+        "H": [
+          837.3405572755418,
+          904.3312693498452
+        ]
+      },
+      "target_tolerance_px": {
+        "nose_chin": 6,
+        "head_outline": 10,
+        "ear_visible_width": 6,
+        "tail_tip": 10,
+        "neck_collar_seam": 2
+      },
+      "measurement_class": "art-direction target; not generated art or recovered 3D measurement",
+      "projected_contour_guides": {
+        "skull": [
+          [
+            571.2,
+            501.8
+          ],
+          [
+            550.1,
+            467.0
+          ],
+          [
+            555.3,
+            418.1
+          ],
+          [
+            575.4,
+            319.7
+          ],
+          [
+            614.2,
+            248.3
+          ],
+          [
+            681.9,
+            190.4
+          ],
+          [
+            750.5,
+            156.4
+          ],
+          [
+            806.4,
+            152.6
+          ],
+          [
+            817.2,
+            171.5
+          ],
+          [
+            872.6,
+            150.4
+          ],
+          [
+            953.9,
+            158.2
+          ],
+          [
+            1031.4,
+            204.9
+          ],
+          [
+            1085.2,
+            276.9
+          ],
+          [
+            1128.3,
+            376.0
+          ],
+          [
+            1135.0,
+            444.7
+          ],
+          [
+            1103.7,
+            504.5
+          ]
+        ],
+        "jaw": [
+          [
+            639.0,
+            452.6
+          ],
+          [
+            632.9,
+            545.7
+          ],
+          [
+            636.4,
+            616.6
+          ],
+          [
+            659.5,
+            657.7
+          ],
+          [
+            705.1,
+            693.9
+          ],
+          [
+            762.6,
+            718.6
+          ],
+          [
+            790.8,
+            723.6
+          ],
+          [
+            820.8,
+            716.6
+          ],
+          [
+            886.1,
+            690.4
+          ],
+          [
+            945.6,
+            655.5
+          ],
+          [
+            980.3,
+            606.1
+          ],
+          [
+            1002.0,
+            529.6
+          ],
+          [
+            998.0,
+            454.9
+          ]
+        ],
+        "bang_edge": [
+          [
+            563.5,
+            501.5
+          ],
+          [
+            586.3,
+            474.7
+          ],
+          [
+            613.3,
+            460.7
+          ],
+          [
+            632.6,
+            442.9
+          ],
+          [
+            670.6,
+            434.4
+          ],
+          [
+            695.0,
+            431.4
+          ],
+          [
+            715.8,
+            434.1
+          ],
+          [
+            734.8,
+            432.9
+          ],
+          [
+            781.8,
+            429.9
+          ],
+          [
+            819.2,
+            430.1
+          ],
+          [
+            855.7,
+            440.4
+          ],
+          [
+            892.0,
+            442.9
+          ],
+          [
+            934.4,
+            464.2
+          ],
+          [
+            977.5,
+            472.8
+          ],
+          [
+            1024.9,
+            508.1
+          ]
+        ],
+        "cowlick": [
+          [
+            820.6,
+            172.1
+          ],
+          [
+            798.8,
+            132.4
+          ],
+          [
+            812.6,
+            101.9
+          ],
+          [
+            843.0,
+            79.4
+          ],
+          [
+            874.0,
+            75.4
+          ],
+          [
+            894.8,
+            79.2
+          ]
+        ]
+      }
+    },
+    {
+      "frame": 21,
+      "hold": 2,
+      "end_exclusive": 23,
+      "yaw_deg_screen_left_negative": -20,
+      "chin_lift_pitch_deg": 3,
+      "note": "头保持；尾端过冲峰值",
+      "landmarks": {
+        "nose": [
+          771.0,
+          608.9
+        ],
+        "chin": [
+          790.8,
+          723.6
+        ],
+        "eye_image_left": [
+          700.3,
+          559.8
+        ],
+        "eye_image_right": [
+          871.3,
+          559.8
+        ],
+        "mouth": [
+          778.0,
+          655.6
+        ],
+        "bang_center": [
+          781.8,
+          429.9
+        ],
+        "crown": [
+          830.9,
+          149.7
+        ],
+        "cowlick": [
+          874.0,
+          75.4
+        ],
+        "ear_image_left": [
+          630.3,
+          562.2
+        ],
+        "ear_image_right": [
+          1058.8,
+          562.2
+        ],
+        "tie_image_left": [
+          663.4,
+          630.7
+        ],
+        "tie_image_right": [
+          1057.1,
+          630.7
+        ],
+        "neck_upper_left": [
+          753.0,
+          708.7
+        ],
+        "neck_upper_right": [
+          881.1,
+          709.8
+        ]
+      },
+      "ears": {
+        "image_left": {
+          "visible_width_px": 21.1,
+          "visible_height_px": 116,
+          "layer": "far ear; partially hidden by skull/side hair"
+        },
+        "image_right": {
+          "visible_width_px": 103.8,
+          "visible_height_px": 116,
+          "layer": "near ear; exposed by cheek rotation"
+        }
+      },
+      "ear_geometry_warning": "Visible width is an occlusion envelope, never an ear-scale command. Near ear 103.8px is an upper bound. Far ear 21.1px is remaining exposure behind side hair, not a flattened ear. Preserve the original ear thickness, height and root anatomy; root embeds into temporal hair.",
+      "tails": {
+        "image_left": {
+          "root": [
+            663.4,
+            630.7
+          ],
+          "tip": [
+            636.8,
+            774
+          ],
+          "rest_tip": [
+            585,
+            777
+          ],
+          "tip_dx_from_focus": 51.8
+        },
+        "image_right": {
+          "root": [
+            1057.1,
+            630.7
+          ],
+          "tip": [
+            1122.7,
+            774
+          ],
+          "rest_tip": [
+            1105,
+            777
+          ],
+          "tip_dx_from_focus": 17.7
+        }
+      },
+      "pupil_delta_from_eye_center": [
+        5,
+        6
+      ],
+      "neck_base_fixed": [
+        [
+          744,
+          742
+        ],
+        [
+          938,
+          742
+        ],
+        [
+          842,
+          810
+        ]
+      ],
+      "fixed_registration": {
+        "A": [
+          724.309375,
+          903.96875
+        ],
+        "B": [
+          949.3577981651376,
+          910.1743119266055
+        ],
+        "H": [
+          837.3405572755418,
+          904.3312693498452
+        ]
+      },
+      "target_tolerance_px": {
+        "nose_chin": 6,
+        "head_outline": 10,
+        "ear_visible_width": 6,
+        "tail_tip": 10,
+        "neck_collar_seam": 2
+      },
+      "measurement_class": "art-direction target; not generated art or recovered 3D measurement",
+      "projected_contour_guides": {
+        "skull": [
+          [
+            571.2,
+            501.8
+          ],
+          [
+            550.1,
+            467.0
+          ],
+          [
+            555.3,
+            418.1
+          ],
+          [
+            575.4,
+            319.7
+          ],
+          [
+            614.2,
+            248.3
+          ],
+          [
+            681.9,
+            190.4
+          ],
+          [
+            750.5,
+            156.4
+          ],
+          [
+            806.4,
+            152.6
+          ],
+          [
+            817.2,
+            171.5
+          ],
+          [
+            872.6,
+            150.4
+          ],
+          [
+            953.9,
+            158.2
+          ],
+          [
+            1031.4,
+            204.9
+          ],
+          [
+            1085.2,
+            276.9
+          ],
+          [
+            1128.3,
+            376.0
+          ],
+          [
+            1135.0,
+            444.7
+          ],
+          [
+            1103.7,
+            504.5
+          ]
+        ],
+        "jaw": [
+          [
+            639.0,
+            452.6
+          ],
+          [
+            632.9,
+            545.7
+          ],
+          [
+            636.4,
+            616.6
+          ],
+          [
+            659.5,
+            657.7
+          ],
+          [
+            705.1,
+            693.9
+          ],
+          [
+            762.6,
+            718.6
+          ],
+          [
+            790.8,
+            723.6
+          ],
+          [
+            820.8,
+            716.6
+          ],
+          [
+            886.1,
+            690.4
+          ],
+          [
+            945.6,
+            655.5
+          ],
+          [
+            980.3,
+            606.1
+          ],
+          [
+            1002.0,
+            529.6
+          ],
+          [
+            998.0,
+            454.9
+          ]
+        ],
+        "bang_edge": [
+          [
+            563.5,
+            501.5
+          ],
+          [
+            586.3,
+            474.7
+          ],
+          [
+            613.3,
+            460.7
+          ],
+          [
+            632.6,
+            442.9
+          ],
+          [
+            670.6,
+            434.4
+          ],
+          [
+            695.0,
+            431.4
+          ],
+          [
+            715.8,
+            434.1
+          ],
+          [
+            734.8,
+            432.9
+          ],
+          [
+            781.8,
+            429.9
+          ],
+          [
+            819.2,
+            430.1
+          ],
+          [
+            855.7,
+            440.4
+          ],
+          [
+            892.0,
+            442.9
+          ],
+          [
+            934.4,
+            464.2
+          ],
+          [
+            977.5,
+            472.8
+          ],
+          [
+            1024.9,
+            508.1
+          ]
+        ],
+        "cowlick": [
+          [
+            820.6,
+            172.1
+          ],
+          [
+            798.8,
+            132.4
+          ],
+          [
+            812.6,
+            101.9
+          ],
+          [
+            843.0,
+            79.4
+          ],
+          [
+            874.0,
+            75.4
+          ],
+          [
+            894.8,
+            79.2
+          ]
+        ]
+      }
+    },
+    {
+      "frame": 23,
+      "hold": 2,
+      "end_exclusive": 25,
+      "yaw_deg_screen_left_negative": -20,
+      "chin_lift_pitch_deg": 3,
+      "note": "头脸同021；尾端真实回落",
+      "landmarks": {
+        "nose": [
+          771.0,
+          608.9
+        ],
+        "chin": [
+          790.8,
+          723.6
+        ],
+        "eye_image_left": [
+          700.3,
+          559.8
+        ],
+        "eye_image_right": [
+          871.3,
+          559.8
+        ],
+        "mouth": [
+          778.0,
+          655.6
+        ],
+        "bang_center": [
+          781.8,
+          429.9
+        ],
+        "crown": [
+          830.9,
+          149.7
+        ],
+        "cowlick": [
+          874.0,
+          75.4
+        ],
+        "ear_image_left": [
+          630.3,
+          562.2
+        ],
+        "ear_image_right": [
+          1058.8,
+          562.2
+        ],
+        "tie_image_left": [
+          663.4,
+          630.7
+        ],
+        "tie_image_right": [
+          1057.1,
+          630.7
+        ],
+        "neck_upper_left": [
+          753.0,
+          708.7
+        ],
+        "neck_upper_right": [
+          881.1,
+          709.8
+        ]
+      },
+      "ears": {
+        "image_left": {
+          "visible_width_px": 21.1,
+          "visible_height_px": 116,
+          "layer": "far ear; partially hidden by skull/side hair"
+        },
+        "image_right": {
+          "visible_width_px": 103.8,
+          "visible_height_px": 116,
+          "layer": "near ear; exposed by cheek rotation"
+        }
+      },
+      "ear_geometry_warning": "Visible width is an occlusion envelope, never an ear-scale command. Near ear 103.8px is an upper bound. Far ear 21.1px is remaining exposure behind side hair, not a flattened ear. Preserve the original ear thickness, height and root anatomy; root embeds into temporal hair.",
+      "tails": {
+        "image_left": {
+          "root": [
+            663.4,
+            630.7
+          ],
+          "tip": [
+            623.4,
+            774
+          ],
+          "rest_tip": [
+            585,
+            777
+          ],
+          "tip_dx_from_focus": 38.4
+        },
+        "image_right": {
+          "root": [
+            1057.1,
+            630.7
+          ],
+          "tip": [
+            1118.1,
+            774
+          ],
+          "rest_tip": [
+            1105,
+            777
+          ],
+          "tip_dx_from_focus": 13.1
+        }
+      },
+      "pupil_delta_from_eye_center": [
+        5,
+        6
+      ],
+      "neck_base_fixed": [
+        [
+          744,
+          742
+        ],
+        [
+          938,
+          742
+        ],
+        [
+          842,
+          810
+        ]
+      ],
+      "fixed_registration": {
+        "A": [
+          724.309375,
+          903.96875
+        ],
+        "B": [
+          949.3577981651376,
+          910.1743119266055
+        ],
+        "H": [
+          837.3405572755418,
+          904.3312693498452
+        ]
+      },
+      "target_tolerance_px": {
+        "nose_chin": 6,
+        "head_outline": 10,
+        "ear_visible_width": 6,
+        "tail_tip": 10,
+        "neck_collar_seam": 2
+      },
+      "measurement_class": "art-direction target; not generated art or recovered 3D measurement",
+      "projected_contour_guides": {
+        "skull": [
+          [
+            571.2,
+            501.8
+          ],
+          [
+            550.1,
+            467.0
+          ],
+          [
+            555.3,
+            418.1
+          ],
+          [
+            575.4,
+            319.7
+          ],
+          [
+            614.2,
+            248.3
+          ],
+          [
+            681.9,
+            190.4
+          ],
+          [
+            750.5,
+            156.4
+          ],
+          [
+            806.4,
+            152.6
+          ],
+          [
+            817.2,
+            171.5
+          ],
+          [
+            872.6,
+            150.4
+          ],
+          [
+            953.9,
+            158.2
+          ],
+          [
+            1031.4,
+            204.9
+          ],
+          [
+            1085.2,
+            276.9
+          ],
+          [
+            1128.3,
+            376.0
+          ],
+          [
+            1135.0,
+            444.7
+          ],
+          [
+            1103.7,
+            504.5
+          ]
+        ],
+        "jaw": [
+          [
+            639.0,
+            452.6
+          ],
+          [
+            632.9,
+            545.7
+          ],
+          [
+            636.4,
+            616.6
+          ],
+          [
+            659.5,
+            657.7
+          ],
+          [
+            705.1,
+            693.9
+          ],
+          [
+            762.6,
+            718.6
+          ],
+          [
+            790.8,
+            723.6
+          ],
+          [
+            820.8,
+            716.6
+          ],
+          [
+            886.1,
+            690.4
+          ],
+          [
+            945.6,
+            655.5
+          ],
+          [
+            980.3,
+            606.1
+          ],
+          [
+            1002.0,
+            529.6
+          ],
+          [
+            998.0,
+            454.9
+          ]
+        ],
+        "bang_edge": [
+          [
+            563.5,
+            501.5
+          ],
+          [
+            586.3,
+            474.7
+          ],
+          [
+            613.3,
+            460.7
+          ],
+          [
+            632.6,
+            442.9
+          ],
+          [
+            670.6,
+            434.4
+          ],
+          [
+            695.0,
+            431.4
+          ],
+          [
+            715.8,
+            434.1
+          ],
+          [
+            734.8,
+            432.9
+          ],
+          [
+            781.8,
+            429.9
+          ],
+          [
+            819.2,
+            430.1
+          ],
+          [
+            855.7,
+            440.4
+          ],
+          [
+            892.0,
+            442.9
+          ],
+          [
+            934.4,
+            464.2
+          ],
+          [
+            977.5,
+            472.8
+          ],
+          [
+            1024.9,
+            508.1
+          ]
+        ],
+        "cowlick": [
+          [
+            820.6,
+            172.1
+          ],
+          [
+            798.8,
+            132.4
+          ],
+          [
+            812.6,
+            101.9
+          ],
+          [
+            843.0,
+            79.4
+          ],
+          [
+            874.0,
+            75.4
+          ],
+          [
+            894.8,
+            79.2
+          ]
+        ]
+      }
+    },
+    {
+      "frame": 25,
+      "hold": 3,
+      "end_exclusive": 28,
+      "yaw_deg_screen_left_negative": -9,
+      "chin_lift_pitch_deg": 1,
+      "note": "回转中间；尾端仍在右侧",
+      "landmarks": {
+        "nose": [
+          806.3,
+          615.7
+        ],
+        "chin": [
+          815.9,
+          728.6
+        ],
+        "eye_image_left": [
+          724.8,
+          565.3
+        ],
+        "eye_image_right": [
+          904.6,
+          565.3
+        ],
+        "mouth": [
+          810.6,
+          661.9
+        ],
+        "bang_center": [
+          814.6,
+          436.0
+        ],
+        "crown": [
+          833.7,
+          149.8
+        ],
+        "cowlick": [
+          884.1,
+          76.4
+        ],
+        "ear_image_left": [
+          614.7,
+          561.4
+        ],
+        "ear_image_right": [
+          1065.1,
+          561.4
+        ],
+        "tie_image_left": [
+          639.3,
+          628.3
+        ],
+        "tie_image_right": [
+          1053.2,
+          628.3
+        ],
+        "neck_upper_left": [
+          764.0,
+          711.7
+        ],
+        "neck_upper_right": [
+          894.6,
+          712.0
+        ]
+      },
+      "ears": {
+        "image_left": {
+          "visible_width_px": 57.9,
+          "visible_height_px": 116,
+          "layer": "far ear; partially hidden by skull/side hair"
+        },
+        "image_right": {
+          "visible_width_px": 95.1,
+          "visible_height_px": 116,
+          "layer": "near ear; exposed by cheek rotation"
+        }
+      },
+      "ear_geometry_warning": "Visible width is an occlusion envelope, never an ear-scale command. Near ear 103.8px is an upper bound. Far ear 21.1px is remaining exposure behind side hair, not a flattened ear. Preserve the original ear thickness, height and root anatomy; root embeds into temporal hair.",
+      "tails": {
+        "image_left": {
+          "root": [
+            639.3,
+            628.3
+          ],
+          "tip": [
+            617.6,
+            777
+          ],
+          "rest_tip": [
+            585,
+            777
+          ],
+          "tip_dx_from_focus": 32.6
+        },
+        "image_right": {
+          "root": [
+            1053.2,
+            628.3
+          ],
+          "tip": [
+            1116.1,
+            777
+          ],
+          "rest_tip": [
+            1105,
+            777
+          ],
+          "tip_dx_from_focus": 11.1
+        }
+      },
+      "pupil_delta_from_eye_center": [
+        5,
+        6
+      ],
+      "neck_base_fixed": [
+        [
+          744,
+          742
+        ],
+        [
+          938,
+          742
+        ],
+        [
+          842,
+          810
+        ]
+      ],
+      "fixed_registration": {
+        "A": [
+          724.309375,
+          903.96875
+        ],
+        "B": [
+          949.3577981651376,
+          910.1743119266055
+        ],
+        "H": [
+          837.3405572755418,
+          904.3312693498452
+        ]
+      },
+      "target_tolerance_px": {
+        "nose_chin": 6,
+        "head_outline": 10,
+        "ear_visible_width": 6,
+        "tail_tip": 10,
+        "neck_collar_seam": 2
+      },
+      "measurement_class": "art-direction target; not generated art or recovered 3D measurement",
+      "projected_contour_guides": {
+        "skull": [
+          [
+            569.8,
+            503.9
+          ],
+          [
+            539.5,
+            467.7
+          ],
+          [
+            536.9,
+            417.4
+          ],
+          [
+            560.0,
+            319.2
+          ],
+          [
+            602.9,
+            248.0
+          ],
+          [
+            674.0,
+            190.0
+          ],
+          [
+            746.1,
+            156.0
+          ],
+          [
+            808.0,
+            152.8
+          ],
+          [
+            827.4,
+            173.1
+          ],
+          [
+            874.5,
+            150.0
+          ],
+          [
+            956.9,
+            157.3
+          ],
+          [
+            1035.3,
+            203.6
+          ],
+          [
+            1087.8,
+            274.9
+          ],
+          [
+            1132.0,
+            374.0
+          ],
+          [
+            1140.1,
+            442.9
+          ],
+          [
+            1111.3,
+            503.5
+          ]
+        ],
+        "jaw": [
+          [
+            642.1,
+            454.9
+          ],
+          [
+            638.8,
+            548.6
+          ],
+          [
+            646.5,
+            620.2
+          ],
+          [
+            673.8,
+            662.0
+          ],
+          [
+            724.8,
+            698.7
+          ],
+          [
+            786.2,
+            723.6
+          ],
+          [
+            815.9,
+            728.6
+          ],
+          [
+            847.5,
+            721.6
+          ],
+          [
+            913.0,
+            694.9
+          ],
+          [
+            971.5,
+            659.2
+          ],
+          [
+            1001.8,
+            608.8
+          ],
+          [
+            1019.6,
+            531.2
+          ],
+          [
+            1014.4,
+            456.3
+          ]
+        ],
+        "bang_edge": [
+          [
+            566.9,
+            504.5
+          ],
+          [
+            598.0,
+            478.9
+          ],
+          [
+            630.4,
+            465.6
+          ],
+          [
+            653.7,
+            448.3
+          ],
+          [
+            695.6,
+            440.1
+          ],
+          [
+            721.3,
+            437.1
+          ],
+          [
+            744.2,
+            440.0
+          ],
+          [
+            765.2,
+            439.0
+          ],
+          [
+            814.6,
+            436.0
+          ],
+          [
+            852.9,
+            436.0
+          ],
+          [
+            890.2,
+            446.1
+          ],
+          [
+            926.3,
+            448.3
+          ],
+          [
+            965.8,
+            468.7
+          ],
+          [
+            1005.1,
+            476.3
+          ],
+          [
+            1045.7,
+            510.0
+          ]
+        ],
+        "cowlick": [
+          [
+            829.0,
+            173.3
+          ],
+          [
+            805.1,
+            133.4
+          ],
+          [
+            817.5,
+            102.5
+          ],
+          [
+            851.5,
+            80.4
+          ],
+          [
+            884.1,
+            76.4
+          ],
+          [
+            907.0,
+            80.3
+          ]
+        ]
+      }
+    },
+    {
+      "frame": 28,
+      "hold": 8,
+      "end_exclusive": 36,
+      "yaw_deg_screen_left_negative": 0,
+      "chin_lift_pitch_deg": 0,
+      "note": "回正；轻撅嘴，尾端收住",
+      "landmarks": {
+        "nose": [
+          836.0,
+          619.0
+        ],
+        "chin": [
+          837.0,
+          731.0
+        ],
+        "eye_image_left": [
+          748.0,
+          568.0
+        ],
+        "eye_image_right": [
+          930.0,
+          568.0
+        ],
+        "mouth": [
+          838.0,
+          665.0
+        ],
+        "bang_center": [
+          842.0,
+          439.0
+        ],
+        "crown": [
+          836.0,
+          150.0
+        ],
+        "cowlick": [
+          891.0,
+          77.0
+        ],
+        "ear_image_left": [
+          608.0,
+          561.0
+        ],
+        "ear_image_right": [
+          1064.0,
+          561.0
+        ],
+        "tie_image_left": [
+          625.0,
+          627.0
+        ],
+        "tie_image_right": [
+          1044.0,
+          627.0
+        ],
+        "neck_upper_left": [
+          775.0,
+          713.0
+        ],
+        "neck_upper_right": [
+          904.0,
+          713.0
+        ]
+      },
+      "ears": {
+        "image_left": {
+          "visible_width_px": 88.0,
+          "visible_height_px": 116,
+          "layer": "far ear; partially hidden by skull/side hair"
+        },
+        "image_right": {
+          "visible_width_px": 88.0,
+          "visible_height_px": 116,
+          "layer": "near ear; exposed by cheek rotation"
+        }
+      },
+      "ear_geometry_warning": "Visible width is an occlusion envelope, never an ear-scale command. Near ear 103.8px is an upper bound. Far ear 21.1px is remaining exposure behind side hair, not a flattened ear. Preserve the original ear thickness, height and root anatomy; root embeds into temporal hair.",
+      "tails": {
+        "image_left": {
+          "root": [
+            625.0,
+            627.0
+          ],
+          "tip": [
+            589,
+            777
+          ],
+          "rest_tip": [
+            585,
+            777
+          ],
+          "tip_dx_from_focus": 4
+        },
+        "image_right": {
+          "root": [
+            1044.0,
+            627.0
+          ],
+          "tip": [
+            1109,
+            777
+          ],
+          "rest_tip": [
+            1105,
+            777
+          ],
+          "tip_dx_from_focus": 4
+        }
+      },
+      "pupil_delta_from_eye_center": [
+        0,
+        0
+      ],
+      "neck_base_fixed": [
+        [
+          744,
+          742
+        ],
+        [
+          938,
+          742
+        ],
+        [
+          842,
+          810
+        ]
+      ],
+      "fixed_registration": {
+        "A": [
+          724.309375,
+          903.96875
+        ],
+        "B": [
+          949.3577981651376,
+          910.1743119266055
+        ],
+        "H": [
+          837.3405572755418,
+          904.3312693498452
+        ]
+      },
+      "target_tolerance_px": {
+        "nose_chin": 6,
+        "head_outline": 10,
+        "ear_visible_width": 6,
+        "tail_tip": 10,
+        "neck_collar_seam": 2
+      },
+      "measurement_class": "art-direction target; not generated art or recovered 3D measurement",
+      "projected_contour_guides": {
+        "skull": [
+          [
+            576.0,
+            505.0
+          ],
+          [
+            539.0,
+            468.0
+          ],
+          [
+            530.0,
+            417.0
+          ],
+          [
+            555.0,
+            319.0
+          ],
+          [
+            600.0,
+            248.0
+          ],
+          [
+            672.0,
+            190.0
+          ],
+          [
+            745.0,
+            156.0
+          ],
+          [
+            810.0,
+            153.0
+          ],
+          [
+            836.0,
+            174.0
+          ],
+          [
+            875.0,
+            150.0
+          ],
+          [
+            956.0,
+            157.0
+          ],
+          [
+            1033.0,
+            203.0
+          ],
+          [
+            1083.0,
+            274.0
+          ],
+          [
+            1127.0,
+            373.0
+          ],
+          [
+            1136.0,
+            442.0
+          ],
+          [
+            1110.0,
+            503.0
+          ]
+        ],
+        "jaw": [
+          [
+            650.0,
+            456.0
+          ],
+          [
+            649.0,
+            550.0
+          ],
+          [
+            660.0,
+            622.0
+          ],
+          [
+            690.0,
+            664.0
+          ],
+          [
+            744.0,
+            701.0
+          ],
+          [
+            807.0,
+            726.0
+          ],
+          [
+            837.0,
+            731.0
+          ],
+          [
+            869.0,
+            724.0
+          ],
+          [
+            933.0,
+            697.0
+          ],
+          [
+            989.0,
+            661.0
+          ],
+          [
+            1015.0,
+            610.0
+          ],
+          [
+            1029.0,
+            532.0
+          ],
+          [
+            1023.0,
+            457.0
+          ]
+        ],
+        "bang_edge": [
+          [
+            577.0,
+            506.0
+          ],
+          [
+            614.0,
+            481.0
+          ],
+          [
+            650.0,
+            468.0
+          ],
+          [
+            676.0,
+            451.0
+          ],
+          [
+            720.0,
+            443.0
+          ],
+          [
+            746.0,
+            440.0
+          ],
+          [
+            770.0,
+            443.0
+          ],
+          [
+            792.0,
+            442.0
+          ],
+          [
+            842.0,
+            439.0
+          ],
+          [
+            880.0,
+            439.0
+          ],
+          [
+            917.0,
+            449.0
+          ],
+          [
+            952.0,
+            451.0
+          ],
+          [
+            988.0,
+            471.0
+          ],
+          [
+            1023.0,
+            478.0
+          ],
+          [
+            1057.0,
+            511.0
+          ]
+        ],
+        "cowlick": [
+          [
+            836.0,
+            174.0
+          ],
+          [
+            811.0,
+            134.0
+          ],
+          [
+            822.0,
+            103.0
+          ],
+          [
+            858.0,
+            81.0
+          ],
+          [
+            891.0,
+            77.0
+          ],
+          [
+            915.0,
+            81.0
+          ]
+        ]
+      }
+    }
+  ],
+  "foreground_contract": {
+    "source": "sources/hand_melon_original.png",
+    "uniform_scale": 0.46,
+    "translation_native": [
+      847.46,
+      613.74
+    ],
+    "rotation": 0,
+    "native_blur_sigma_approx": 2.76,
+    "current_alpha_gt8_bbox": [
+      950,
+      765,
+      1396,
+      941
+    ],
+    "handheld_contacts_source": {
+      "palm_rind": [
+        650,
+        592
+      ],
+      "thumb_rind": [
+        840,
+        473
+      ],
+      "wrist_seam": [
+        866.5,
+        609
+      ]
+    },
+    "z_order": [
+      "room",
+      "free ponytail lengths (behind shoulders)",
+      "neck and whole head",
+      "fixed collar and garment",
+      "foreground hand and melon"
+    ],
+    "no_contact": [
+      "chin",
+      "lips",
+      "cheek"
+    ],
+    "collar_inner_boundary_fixed": [
+      [
+        744,
+        742
+      ],
+      [
+        754,
+        765
+      ],
+      [
+        800,
+        795
+      ],
+      [
+        842,
+        810
+      ],
+      [
+        885,
+        796
+      ],
+      [
+        927,
+        765
+      ],
+      [
+        938,
+        742
+      ]
+    ],
+    "timing": "Original foreground enters from lower right F000→F008; unchanged after F008. No new foreground keyframes."
+  },
+  "boundary_metrics": [
+    {
+      "frame": 0,
+      "face_polygon_to_hand_alpha_gt8_min_clearance_px": 97.08,
+      "face_nearest": [
+        952,
+        685
+      ],
+      "hand_nearest": [
+        1007,
+        765
+      ],
+      "chin_to_hand_core_px": 142.0
+    },
+    {
+      "frame": 8,
+      "face_polygon_to_hand_alpha_gt8_min_clearance_px": 97.08,
+      "face_nearest": [
+        952,
+        685
+      ],
+      "hand_nearest": [
+        1007,
+        765
+      ],
+      "chin_to_hand_core_px": 142.0
+    },
+    {
+      "frame": 11,
+      "face_polygon_to_hand_alpha_gt8_min_clearance_px": 97.08,
+      "face_nearest": [
+        952,
+        685
+      ],
+      "hand_nearest": [
+        1007,
+        765
+      ],
+      "chin_to_hand_core_px": 142.0
+    },
+    {
+      "frame": 14,
+      "face_polygon_to_hand_alpha_gt8_min_clearance_px": 109.27,
+      "face_nearest": [
+        953,
+        670
+      ],
+      "hand_nearest": [
+        1007,
+        765
+      ],
+      "chin_to_hand_core_px": 160.31
+    },
+    {
+      "frame": 17,
+      "face_polygon_to_hand_alpha_gt8_min_clearance_px": 126.05,
+      "face_nearest": [
+        942,
+        657
+      ],
+      "hand_nearest": [
+        1007,
+        765
+      ],
+      "chin_to_hand_core_px": 184.2
+    },
+    {
+      "frame": 21,
+      "face_polygon_to_hand_alpha_gt8_min_clearance_px": 126.05,
+      "face_nearest": [
+        942,
+        657
+      ],
+      "hand_nearest": [
+        1007,
+        765
+      ],
+      "chin_to_hand_core_px": 184.2
+    },
+    {
+      "frame": 23,
+      "face_polygon_to_hand_alpha_gt8_min_clearance_px": 126.05,
+      "face_nearest": [
+        942,
+        657
+      ],
+      "hand_nearest": [
+        1007,
+        765
+      ],
+      "chin_to_hand_core_px": 184.2
+    },
+    {
+      "frame": 25,
+      "face_polygon_to_hand_alpha_gt8_min_clearance_px": 109.27,
+      "face_nearest": [
+        953,
+        670
+      ],
+      "hand_nearest": [
+        1007,
+        765
+      ],
+      "chin_to_hand_core_px": 160.31
+    },
+    {
+      "frame": 28,
+      "face_polygon_to_hand_alpha_gt8_min_clearance_px": 97.08,
+      "face_nearest": [
+        952,
+        685
+      ],
+      "hand_nearest": [
+        1007,
+        765
+      ],
+      "chin_to_hand_core_px": 142.0
+    }
+  ],
+  "timing_caveat": "Recommended: split original F021×4 into F021×2 overshoot and F023×2 tail-only settling. F023 head/face/ears/roots equal F021 exactly; only free tail lengths change. Total remains 36 frames; 8 master head states, 9 exposure entries. Pending Opus freeze, no generation.",
+  "generation_budget": 0,
+  "production_base": {
+    "path": "sources/focus_semantic_production_base.png",
+    "original_path": "astra_followup_candidates_20261018_1111/s05a_valid_first5/candidates/S05a_F000.png",
+    "sha256": "aa7c4fd193e766b6debf4dc3dae6ed1ba0ce9d4668ddc12624d765a7fcd6021a",
+    "git_blob": "182e2fd197fb39a918f767f0e26a3779058d8078",
+    "reason": "Use independently reviewed semantic neck/collar focus with same geometry as original focus; avoids relocking old purple/white collar. Original focus is geometric provenance only.",
+    "new_neck_masks": "Do not reuse old static neck mask for rotated head; redraw and remeasure actual new neck/collar boundary."
+  }
+}
