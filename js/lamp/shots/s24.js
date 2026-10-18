@@ -15,7 +15,7 @@ const shot = {
   cam: CAM,
   exp: 0.22,
   fog: 0.5,
-  sheet: (t, env) => sheet23(3.4 + 0.1 * t, env),
+  sheet: (t, env) => sheet23(5, env),   // 幕上接 S23 的末态：鹤僵住、乌龟叼着不放（原来回拨到 S23 的 3.4 秒，甩头中段，跟上一镜接不上）
   cards: async (CARDS, cam, t) => {
     MAP ||= await loadMaps(SM.file);
     const base = [SM.pos[0], SM.pos[1], SM.z0], d = cam.project(base)[2];

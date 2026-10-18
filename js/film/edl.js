@@ -34,7 +34,7 @@ export const SHOTS = [
   // 第 8 场 · 上手
   { id: 'S20', scene: 8, line: 'engine', dur: 9, mod: 'js/lamp/shots/s20.js', text: '后台（机位 C）：奶奶把乌龟交给小满；签子缠在一起，乌龟翻了肚皮；奶奶笑弯了腰' },
   { id: 'S21', scene: 8, line: 'engine', dur: 6, mod: 'js/lamp/shots/s21.js', text: '床单正面：乌龟的影子忽大忽小、忽清忽虚，鹤"笑"得前仰后合' },
-  { id: 'S22', scene: 8, line: 'code', dur: 5, mod: 'js/code/s22.js', text: '特写（后台）：奶奶从后面握住小满握签子的手——慢一点；乌龟一步步爬起来' },
+  { id: 'S22', scene: 8, line: 'code', dur: 5, mod: 'js/anim/s22_drawn.js', text: '特写（后台）：奶奶从后面握住小满握签子的手——慢一点；乌龟一步步爬起来' },
   { id: 'S23', scene: 8, line: 'engine', dur: 5, mod: 'js/lamp/shots/s23.js', text: '床单正面：乌龟伸长脖子咬住鹤嘴，鹤僵住；后台小满得意地看奶奶' },
   { id: 'S24', scene: 8, line: 'engine', dur: 2.5, mod: 'js/lamp/shots/s24.js', text: '后台近景：小满回过头，得意地看奶奶' },
   // 第 9 场 · 小狗
