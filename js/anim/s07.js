@@ -1,37 +1,36 @@
 // 2-6 全景（4.5 秒，月光）：小满放下黑了的手机，往右一翻、仰面躺倒，拿手扇两下风，胳膊往席子上一摊，眼睛跟着奶奶；
-// 奶奶把盆放到两脚之间的地上，手撑膝盖站起来，转身走到八仙桌边（画面右边），伸手提起桌上的马灯。
-// 动作按人体来：骨头长度固定（腿用 IK 接到钉在地上的脚），翻身有中间一张（侧躺、背对镜头），起身是"前倾—离凳—伸直"，
-// 转身有正面一张，走路时着地的脚不动、身体往前移。
+// 奶奶把盆放在收回的鞋前外侧，掌面压膝起身，分两步转向八仙桌，先扣住提梁再提灯。
+// 骨长固定；翻身用本镜的连续接地投影，转身有换重/抬脚，已有第一步的支撑脚轨迹保留。
 import { renderPaint } from '../paint/paintshot.js';
 import { COIL, COILC } from '../paint/shots/s01.js';
-import { key, charLayer, stool, bowl, limbIK, legFK, XM_LEG, EASE } from './kit.js';
+import { key, charLayer, stool, bowl, limbIK, legFK, XM_LEG, EASE, armSide, shoulderSide, ARM } from './kit.js';
 import { darkLight, fan } from './s04.js';
-import { GM_AT, GM_K, XM_AT, XM_K, xmProne, phoneSide, tableLamp, LAMP_AT } from './s01.js';
+import { GM_AT, GM_K, XM_AT, XM_K, xmProne, phoneSide, tableLamp, LAMP_AT, LAMP_S } from './s01.js';
+import * as NAINAI from '../chars/nainai.js';
+import * as XIAOMAN from '../chars/xiaoman.js';
+import { Figure, tube } from '../lib/figure.js';
 export const DURATION = 4.5;
 const BW = 1672, BH = 941;
 const cl = (v) => Math.min(1, Math.max(0, v));
 const seg = (t, a, b, e = 'io') => EASE[e](cl((t - a) / (b - a)));
 
 // ---------------------------------------------------------------- 小满
-const T_ROLL = 0.6, T_SIDE = 0.625, T_BACK = 0.69;   // 0.6 起翻；0.625～0.69 侧躺（背对镜头，两帧）；0.69 仰面落地
+const T_ROLL = .48, T_FLAT = .72, T_BACK = 1.08;
 const PHONE0 = xmProne().phoneAt;
 export function xmPhone(t) {             // 手机：0.4 松手掉到席子上，之后就留在那儿（地面坐标）
   const d = seg(t, 0.4, 0.5, 'in');
   return [PHONE0[0] + 2 * d, PHONE0[1] + (-0.8 - PHONE0[1]) * d, PHONE0[2] * (1 - d)];
 }
-function xiaoman(t) {
-  if (t < T_SIDE) {                       // 趴着：0.15 头一低（泄气），0.4 松开手机，0.5 胸口一撑准备翻
+export function xiaomanS07(t) {
+  if (t < T_ROLL) {                       // 趴着：0.15 头一低（泄气），0.4 松开手机，0.5 胸口一撑准备翻
     const drop = key(t, [[0.12, 0], [0.32, 1, 'out']]), push = key(t, [[0.48, 0], [0.6, 1, 'out']]), open = seg(t, 0.38, 0.46);
     const P = xmProne({ lean: 1.42 - 0.14 * push, fa: -0.6 + 0.3 * open, hp: open > 0.5 ? 'open' : 'grip',
       head: { tilt: -0.85 - 0.3 * drop + 0.25 * push }, face: { look: [0.8, 0.6 + 0.3 * drop], open: 0.85 - 0.3 * drop, worry: 0.5 * drop, smile: -0.2 * drop } });
     return { view: 'side', P, flip: false };
   }
-  if (t < T_BACK) {                       // 侧躺、背对镜头（往自己右边翻，背朝我们）：整个人顺时针转 90°，头朝右
-    return { view: 'back', flip: false, rot: Math.PI / 2, pivot: [0, -43.5], to: [-5, -10.5],
-      P: { armL: { hand: [-13, -56], hp: 'relax' }, armR: { hand: [13, -57], hp: 'relax' }, legL: { foot: [-6, -4] }, legR: { foot: [3, -6] } } };   // 胳膊顺着身体
-  }
+  if (t < T_BACK) return xiaomanRoll(t);
   // 仰面躺着（侧面、镜像、顺时针转 90°：头朝右、脸朝上）。人物坐标还是"站着"的那套：+x = 脸朝的方向（落地后朝上），-x = 背（贴着席子）
-  const land = key(t, [[T_BACK, 1], [0.78, -0.35, 'out'], [0.9, 0.1, 'io'], [1.0, 0, 'io']]);     // 落地压一下再回弹
+  // 1.08 已落稳；沿用同一地面裁剪，不能在滚完一帧后突然露出穿地裙摆。
   const fanUp = key(t, [[1.3, 0], [1.45, 1, 'out'], [2.0, 1], [2.15, 0, 'in']]);                    // 1.3 抬手扇风，2.15 胳膊摊回席子上
   const flap = t > 1.4 && t < 2.0 ? key(t, [[1.4, 0], [1.55, 1, 'out'], [1.7, 0, 'io'], [1.85, 1, 'out'], [2.0, 0, 'io']]) : 0;
   const rest = [-4, -54], fanAt = [15 - 2 * flap, -88 + 4 * flap];
@@ -41,19 +40,72 @@ function xiaoman(t) {
     const r = legFK(hip, a1, a2, XM_LEG.thigh, XM_LEG.shin); legs['leg' + sd] = { knee: r.knee, foot: r.foot, footRot: -0.25 };
   }
   const look = t < 2.6 ? [0.3, -0.5] : key(t, [[2.6, [0.3, -0.5]], [2.85, [-0.7, -0.6], 'out']]);    // 2.6 听见奶奶的脚步，眼睛往头顶那边（奶奶走去的方向）瞟
-  return { view: 'side', flip: true, rot: Math.PI / 2, pivot: [-1, -43.5], to: [1, -6.6 + 1.2 * Math.max(0, -land)],
-    P: { head: { tilt: 0.5 - 0.15 * Math.max(0, land) }, breath: 0.8 * seg(t, 0.95, 1.25, 'sine') * (1 - seg(t, 1.25, 1.6)),
+  return { view: 'roll', roll: Math.PI, rot: Math.PI / 2, pivot: [-1, -43.5], to: [-1, -6.6],
+    support: { floorY: 0, hipX: -1, shoulderX: 33, clip: true },
+    P: { head: { tilt: 0.5 }, breath: 0.8 * seg(t, 0.95, 1.25, 'sine') * (1 - seg(t, 1.25, 1.6)),
       ...legs,
       armN: { hand: hN, hp: fanUp > 0.3 ? 'open' : 'relax', rot: fanUp > 0.3 ? -0.6 + 1.0 * flap : 0 }, armF: { hand: [5, -58], hp: 'relax' },
       face: { open: fanUp > 0.3 ? 0.4 : 0.55, look, mouth: t < 1.25 ? 0.35 * seg(t, 0.9, 1.0) : 0.15, smile: -0.25, worry: 0.45 } } };
 }
 
+// Lower onto one shoulder/hip before rolling about the head-to-foot axis.
+// In-plane flexion is FK; the roll is a transverse cos projection. A narrow
+// back surface covers the side surface at quarter-turn, with a ground clip and
+// a fixed hip x support. It is not a rotated, full-width standing back drawing.
+const shortest = (a, b, u) => a + Math.atan2(Math.sin(b - a), Math.cos(b - a)) * u;
+export function xiaomanRoll(t) {
+  const flat = seg(t, T_ROLL, T_FLAT), settle = seg(t, .98, T_BACK), turn = seg(t, .64, T_BACK);
+  const start = xmProne({ lean: 1.42, fa: -.3, hp: 'open', head: { tilt: -1.15 } });
+  const P = { lean: 1.42 * (1 - flat), head: { tilt: -1.15 + 1.65 * seg(t, .52, T_BACK) },
+    breath: .8 * seg(t, .95, 1.25, 'sine') * (1 - seg(t, 1.25, 1.6)),
+    face: { open: .55, look: [.3, -.5], mouth: .35 * seg(t, .9, 1), smile: -.25, worry: .45 } };
+  for (const [sd, hip, endA, endB, shin] of [['N', XM_LEG.hipN, Math.PI / 2 + .07, Math.PI / 2 + .1, -2.25], ['F', XM_LEG.hipF, Math.PI / 2 + .03, Math.PI / 2 + .12, -2.35]]) {
+    const a = shortest(Math.PI - .2, endA, flat), b = shortest(shin, endB, flat);
+    const leg = legFK(hip, a, b, XM_LEG.thigh, XM_LEG.shin);
+    P['leg' + sd] = { ...leg, footRot: shortest(shin - Math.PI / 2 + .9, -.25, flat) };
+    const S0 = shoulderSide('x', start, sd), A0 = start['arm' + sd], S = shoulderSide('x', P, sd);
+    const end = armSide('x', {}, sd, sd === 'N' ? [-4, -54] : [5, -58]);
+    const ua = shortest(Math.atan2(A0.elbow[1] - S0[1], A0.elbow[0] - S0[0]), Math.atan2(end.E[1] - end.S[1], end.E[0] - end.S[0]), flat);
+    const fa = shortest(Math.atan2(A0.hand[1] - A0.elbow[1], A0.hand[0] - A0.elbow[0]), end.dir, flat);
+    const E = [S[0] + ARM.x[0] * Math.cos(ua), S[1] + ARM.x[0] * Math.sin(ua)];
+    P['arm' + sd] = { elbow: E, hand: [E[0] + ARM.x[1] * Math.cos(fa), E[1] + ARM.x[1] * Math.sin(fa)], hp: t < .58 ? 'open' : 'relax' };
+  }
+  return { view: 'roll', P, roll: Math.PI * turn, rot: Math.PI / 2 * flat,
+    pivot: [-1, -43.5], to: [-1, -7.5 + .9 * settle],
+    support: { floorY: 0, hipX: -1, shoulderX: 33, clip: true } };
+}
+function rollingLayer(X, ph) {
+  const box = [400, 520, 760, 690], out = canvasLayer(box, XM_K, XM_AT), x = out.x;
+  phoneSide(x, ph, 0);
+  x.fillStyle = 'rgba(25,20,18,.12)'; x.beginPath(); x.ellipse(16, -.2, 23, 1.2, 0, 0, Math.PI * 2); x.fill();
+  const cs = Math.cos(X.roll), sn = Math.sin(X.roll);
+  const blend = new OffscreenCanvas(out.c.width, out.c.height), b = blend.getContext('2d'); b.globalCompositeOperation = 'lighter';
+  for (const view of ['side', 'back']) {
+    const weight = view === 'side' ? cs * cs : sn * sn;
+    if (weight < 1e-6) continue;
+    const temp = canvasLayer(box, XM_K, XM_AT), c = temp.x;
+    // Clip is in world space, before the character rotation. Phone and support
+    // stay outside this transform, so neither rolls along with her.
+    c.beginPath(); c.rect(-200, -200, 400, 200); c.clip();
+    c.translate(...X.to); c.rotate(X.rot);
+    c.scale(view === 'side' ? cs : .6 * sn, 1);
+    c.translate(view === 'side' ? -X.pivot[0] : 0, -X.pivot[1]);
+    const P = view === 'side' ? X.P : { head: { tilt: 0 },
+      legL: { foot: [-4.9, -3.7] }, legR: { foot: [4.9, -3.7] },
+      armL: { hand: [-13, -56], hp: 'relax' }, armR: { hand: [13, -57], hp: 'relax' } };
+    XIAOMAN.draw(c, view, P);
+    b.globalAlpha = weight; b.drawImage(temp.c, 0, 0);
+  }
+  x.save(); x.setTransform(1, 0, 0, 1, 0, 0); x.drawImage(blend, 0, 0); x.restore();
+  return out.layer;
+}
+
 // ---------------------------------------------------------------- 奶奶
-// 坐着时 pose.y = 37（髋往下挪 37 厘米坐到凳上）。脚钉在地上：地面坐标 (29, -4.6)（远）和 (33, -4.6)（近）——镜像坐标，+x = 她面朝的画面左边。
-const GL = 35.5, FEET0 = { N: [33, -4.6], F: [29, -4.6] }, HIP = { N: [0, -75], F: [-3, -75] };
-const BOWL0 = [24, -47], BOWL1 = [36, -3.3];                       // 盆：腿上 → 两脚之间的地上（盆沿中心，地面坐标；坐矮凳的老人放盆就放在脚边）
-const T_TURN0 = 1.84, T_TURN1 = 1.96, WALK0 = 1.98, STEP = 0.45, SL = 25.5;
-const HANDLE = [(LAMP_AT[0] - GM_AT[0]) / GM_K, (LAMP_AT[1] - 117 - GM_AT[1]) / GM_K];   // 桌上马灯提梁顶（奶奶的地面坐标，不镜像）
+// 坐姿由 y=37 开始；先各自抬脚收回 9cm，再以 (24,-4.6)/(20,-4.6) 支撑起身。镜像 +x 朝画面左。
+const GL = 35.5, HIP = { N: [0, -75], F: [-3, -75] };
+const BOWL0 = [24, -47], BOWL1 = [48, -3.3];                       // 盆沿中心：膝上 → 鞋前外侧；落盆后鞋底外沿仍留 1.8cm 轮廓前间隙
+const T_TURN0 = 1.62, T_TURN1 = 1.98, WALK0 = 1.98, STEP = 0.45, SL = 25.5;
+const HANDLE = [(LAMP_AT[0] - GM_AT[0]) / GM_K, (LAMP_AT[1] - 690 * LAMP_S - GM_AT[1]) / GM_K];   // 桌上马灯提梁顶（奶奶的地面坐标，不镜像）
 function legsTo(P, feet) {           // feet：地面坐标 → 人物坐标里的脚，膝盖用 IK（朝前），骨长固定
   const o = {};
   for (const sd of ['N', 'F']) {
@@ -62,32 +114,50 @@ function legsTo(P, feet) {           // feet：地面坐标 → 人物坐标里�
   }
   return o;
 }
+// The hand API takes a wrist, not a contact point. Keep the actual hand-local
+// anchor on its target and solve the wrist first; then compensate the IK forearm
+// angle. [0.82, 0.02] is hand.js's closed-hand grip, in palm-length units.
+const mix = (a, b, q) => a.map((v, i) => v + (b[i] - v) * q);
+const rot = (p, a) => [p[0] * Math.cos(a) - p[1] * Math.sin(a), p[0] * Math.sin(a) + p[1] * Math.cos(a)];
+function contactArm(P, sd, target, angle, hp, anchor = [.82 * 5.4, .02 * 5.4]) {
+  const off = rot(anchor, angle), wrist = [target[0] - off[0], target[1] - off[1]];
+  const a = armSide('n', P, sd, wrist);
+  return { hand: wrist, rot: angle - a.dir, hp };
+}
+function seatedFeet(t) {
+  const feet = {};
+  for (const [sd, x, a, b] of [['N', 33, .28, .44], ['F', 29, .46, .62]]) {
+    const u = cl((t - a) / (b - a));
+    feet[sd] = [x - 9 * EASE.io(u), -4.6 - 1.8 * Math.sin(Math.PI * u)];
+  }
+  return feet;
+}
 export function grandmaS07(t) {
-  // 检查：手是不是真碰到盆/膝盖（够不着时 IK 会让手停在半空）——见 checkReach()
+  // 接触使用手轮廓锚点，结构测试核对实际 IK 端点，不拿请求腕点冒充接触。
   if (t < T_TURN0) {
-    // 1) 0.2～0.75 前倾，两手端盆放到脚前的地上；2) 0.75～0.95 手撑到膝盖上；3) 0.95～1.6 起身：先往前移重心、屁股离凳，再往上伸直
-    const bend = key(t, [[0.2, 0.3], [0.72, 1.25], [0.95, 0.85], [1.12, 0.9], [1.6, 0.14], [1.8, 0.1]]);
+    // 0.2–0.72 放盆；0.72–0.92 手回膝；0.95 移重，1.05 离凳，1.6 伸直。
+    const bend = key(t, [[0.2, 0.3], [0.72, 1.25], [0.95, 0.72], [1.12, 0.78], [1.6, 0.1]]);
     const fwd = key(t, [[0.95, 0], [1.2, 0.45, 'in'], [1.6, 1, 'out']]), upk = key(t, [[1.05, 0], [1.6, 1, 'io']]);
-    const P = { x: 27 * fwd, y: 37 * (1 - upk), lean: bend, head: { nod: 0.2 - 0.25 * seg(t, 0.2, 0.7) + 0.2 * seg(t, 1.3, 1.7), tilt: 0 } };
-    Object.assign(P, legsTo(P, FEET0));
+    const P = { x: 22 * fwd, y: 37 * (1 - upk), lean: bend, head: { nod: 0.2 - 0.25 * seg(t, 0.2, 0.7) + 0.2 * seg(t, 1.3, 1.7), tilt: 0 } };
+    Object.assign(P, legsTo(P, seatedFeet(t)));
     const carry = seg(t, 0.2, 0.72), B = [BOWL0[0] + (BOWL1[0] - BOWL0[0]) * carry, BOWL0[1] + (BOWL1[1] - BOWL0[1]) * EASE.in(carry)];
-    const toKnee = seg(t, 0.75, 0.95);
-    const kn = (sd) => [P['leg' + sd].knee[0] - 3, P['leg' + sd].knee[1] - 5];   // 手掌按在膝盖上面一点
-    const onBowl = { N: [B[0] - 2 - P.x, B[1] - 1.5 - P.y], F: [B[0] + 3 - P.x, B[1] - 2 - P.y] };
-    const leave = seg(t, 1.28, 1.5);                                                   // 腿快伸直时手离开膝盖，垂到身边
-    const hand = (sd) => {
-      const a = t < 0.75 ? onBowl[sd] : [onBowl[sd][0] + (kn(sd)[0] - onBowl[sd][0]) * toKnee, onBowl[sd][1] + (kn(sd)[1] - onBowl[sd][1]) * toKnee];
-      const side = sd === 'N' ? [5, -64] : [1, -65];
-      return t < 1.28 ? a : [kn(sd)[0] + (side[0] - kn(sd)[0]) * leave, kn(sd)[1] + (side[1] - kn(sd)[1]) * leave];
-    };
-    P.armN = { hand: hand('N'), hp: t < 0.75 ? 'grip' : 'relax' }; P.armF = { hand: hand('F'), hp: t < 0.75 ? 'grip' : 'relax' };
+    const toKnee = seg(t, 0.72, 0.92);
+    // Place the lower palm surface on the knee cap; a wrist at the knee makes
+    // the fingers point up toward the chin. Palm orientation stays horizontal.
+    const kn = (sd) => [P['leg' + sd].knee[0], P['leg' + sd].knee[1] - 5.2];
+    const onBowl = { N: [B[0] - 10 - P.x, B[1] - .7 - P.y], F: [B[0] - 7 - P.x, B[1] - 2 - P.y] };
+    const leave = seg(t, 1.28, 1.5);
+    for (const sd of ['N', 'F']) {
+      const target = mix(onBowl[sd], kn(sd), toKnee);
+      const contact = contactArm(P, sd, target, 0, t < .72 ? 'grip' : 'relax', [.6 * 5.4, .33 * 5.4]);
+      const hang = sd === 'N' ? [5, -64] : [1, -65];
+      const wrist = mix(contact.hand, hang, leave), a = armSide('n', P, sd, wrist);
+      P['arm' + sd] = { hand: wrist, rot: -a.dir * (1 - leave), hp: t < .72 ? 'grip' : 'relax' };
+    }
     P.face = { look: [0.5, t < 0.9 ? 0.6 : 0.1], open: 0.85, worry: 0.3 * seg(t, 1.0, 1.15) * (1 - seg(t, 1.5, 1.7)), smile: 0.1 };
-    return { view: 'side', flip: true, P, bowl: t < 0.72 ? B : BOWL1, bowlFront: t < 0.72 };   // 端着时盆在身前，放下后在两脚之间（画在人后面）
+    return { view: 'side', flip: true, P, bowl: t < 0.72 ? B : BOWL1, bowlFront: t < 0.72 };   // 盆落在鞋前外侧，落地后保持世界坐标
   }
-  if (t < T_TURN1) {                   // 转身：正面一张（脚尖朝镜头，头已经转向画面右边）
-    const P = { x: 29, y: 0, head: { turn: 0.45, nod: 0.15 }, legL: { foot: [-4.4, -4.6] }, legR: { foot: [4.4, -4.6] }, face: { look: [-0.6, 0.1], open: 0.9, smile: 0.1 } };
-    return { view: 'front', flip: true, P, bowl: BOWL1 };
-  }
+  if (t < T_TURN1) return grandmaTurn(t);
   // 走：画面右边 = 不镜像时的 +x。起点两脚在 -29 一带；四步、每步 0.45 秒、步长 25.5 厘米，着地的脚不动；第五步收脚站定在八仙桌左边，
   // 然后探身伸手抓桌上马灯的提梁（4.3 抓住，4.4 提起一点）——下一镜 S08 她已经坐在桌边点灯。
   const w = Math.max(0, t - WALK0), k = w / STEP;
@@ -114,21 +184,107 @@ export function grandmaS07(t) {
   Object.assign(P, legsTo(P, feet));
   const sw = k < KEND ? Math.sin(Math.PI * k) * (1 - seg(k, 4, KEND)) : 0;                 // 胳膊和腿反着摆，幅度小，停步时收住
   const handle = [HANDLE[0] - P.x, HANDLE[1] - up * 1.5 - P.y], hang = [6 - 5 * sw, -63];
-  P.armN = { hand: [hang[0] + (handle[0] - hang[0]) * reach, hang[1] + (handle[1] - hang[1]) * reach], hp: grab ? 'grip' : reach > 0.5 ? 'open' : 'relax' };
+  const grasp = contactArm(P, 'N', handle, -.42, grab ? 'grip' : 'open');
+  const wrist = mix(hang, grasp.hand, reach), a = armSide('n', P, 'N', wrist);
+  P.armN = { hand: wrist, rot: (-.42 - a.dir) * reach, hp: grab ? 'grip' : reach > .5 ? 'open' : 'relax' };
   P.armF = { hand: [3 + 5 * sw, -64], hp: 'relax' };
   return { view: 'side', flip: false, P, bowl: BOWL1, lampLift: up * 1.5 * GM_K };
+}
+
+// A local 2.5-D turn: both feet and the pelvis share one world-space rig. The
+// original front pants ignore knee inputs, so this shot draws fixed-length legs
+// itself and reuses only the existing upper-body art. No shared character edits.
+const v3 = {
+  add: (a, b) => a.map((v, i) => v + b[i]),
+  sub: (a, b) => a.map((v, i) => v - b[i]),
+  scale: (a, s) => a.map(v => v * s),
+  dot: (a, b) => a.reduce((s, v, i) => s + v * b[i], 0),
+};
+function knee3(hip, foot, yaw) {
+  const d = v3.sub(foot, hip), len = Math.hypot(...d), unit = v3.scale(d, 1 / len);
+  const forward = [Math.cos(yaw), 0, Math.sin(yaw)];
+  const plane = v3.sub(forward, v3.scale(unit, v3.dot(unit, forward)));
+  const bend = v3.scale(plane, Math.sqrt(Math.max(0, GL * GL - len * len / 4)) / Math.hypot(...plane));
+  return v3.add(v3.add(hip, v3.scale(d, .5)), bend);
+}
+export function grandmaTurn(t) {
+  const u = seg(t, T_TURN0, T_TURN1), yaw = Math.PI * (1 - u);
+  const body = [-22 - 7 * u, 2.4 * u], feet = {}, rigs = {};
+  const P = { x: body[0], y: body[1], lean: .1 + .02 * u, head: { nod: .15, turn: 1 - 2 * seg(t, 1.62, 1.84) }, face: { look: [.6, .1], open: .9, smile: .1 } };
+  for (const [sd, from, to, a, b] of [['F', -20, -31, 1.62, 1.82], ['N', -24, -27, 1.82, 1.98]]) {
+    const q = cl((t - a) / (b - a)), step = EASE.io(q), sign = sd === 'N' ? -1 : 1;
+    const foot = [from + (to - from) * step, -4.6 - 2.6 * Math.sin(Math.PI * q), 0];
+    const hx = (sd === 'F' ? -3 * Math.cos(yaw) : 0) + sign * 7.2 * Math.sin(yaw);
+    const hip = [body[0] + hx, body[1] - 75, sign * 2 * Math.sin(yaw)];
+    const knee = knee3(hip, foot, yaw), shoeYaw = Math.PI * (1 - step);
+    rigs[sd] = { hip, knee, foot, shoeYaw, planted: q === 0 || q === 1 };
+    feet[sd] = foot.slice(0, 2);
+    P['leg' + sd] = { knee: [knee[0] - body[0], knee[1] - body[1]], foot: [foot[0] - body[0], foot[1] - body[1]] };
+  }
+  return { view: 'turn', flip: false, P, bowl: BOWL1, rigs, feet, yaw };
+}
+function canvasLayer(box, k, at) {
+  const [x0, y0, x1, y1] = box, ss = 2, c = new OffscreenCanvas((x1 - x0) * ss, (y1 - y0) * ss), x = c.getContext('2d');
+  x.scale(ss, ss); x.translate(at[0] - x0, at[1] - y0); x.scale(k, k);
+  return { c, x, layer: { img: c, x: x0, y: y0, sc: 1 / ss } };
+}
+function drawTurnLegs(x, G) {
+  const fig = new Figure(x, { lw: 2.2, seed: 13, ink: NAINAI.NN.ink });
+  for (const sd of ['F', 'N']) {
+    const r = G.rigs[sd], hip = r.hip.slice(0, 2), knee = r.knee.slice(0, 2), foot = r.foot.slice(0, 2), z = sd === 'N' ? -4 : -6;
+    const pts = tube([hip, mix(hip, knee, .5), knee, mix(knee, foot, .5), foot], [[0, 7.2], [.45, 5.6], [.55, 5.2], [1, 4.6]], { capStart: 'round', capStartK: .4, capEnd: 'flat', step: .7 });
+    fig.part('leg' + sd, pts.outline, { fill: sd === 'N' ? NAINAI.NN.pants : '#353a48', z, per: 2 });
+    const turn = Math.sin(r.shoeYaw), facing = Math.cos(r.shoeYaw);
+    const side = [[-4.6, -.6], [2, -.8], [7.6, 1], [8.8, 3], [7.8, 4.2], [-4.8, 4.2], [-5.2, 1.6]];
+    const front = [[-4.4, .4], [0, -.4], [4.4, .4], [4.8, 2.8], [3.2, 4.2], [-3.2, 4.2], [-4.8, 2.8]];
+    // When facing left reverse front vertex correspondence, keeping a nonzero
+    // projected sole width while the shoe rotates toward the camera.
+    const coords = side.map((p, i) => [foot[0] + p[0] * facing + front[i][0] * turn * (facing < 0 ? -1 : 1), foot[1] + p[1] * (1 - turn) + front[i][1] * turn]);
+    fig.part('shoe' + sd, coords, { fill: NAINAI.NN.shoe, z: z + .1, inner: true });
+    const half = 7.3 * Math.abs(facing) + 4.7 * turn, center = 1.9 * facing;
+    fig.part('sole' + sd, [[-half, 3.4], [half, 3.4], [half, 4.8], [-half, 4.8]].map(p => [foot[0] + center + p[0], foot[1] + p[1]]), { fill: NAINAI.NN.sole, z: z + .2, smooth: false });
+  }
+  fig.draw();
+}
+function upperTurnSprite(G, view, flip) {
+  const o = canvasLayer([760, 380, 1300, 790], GM_K, GM_AT), x = o.x;
+  x.translate(G.P.x, G.P.y); x.scale(flip ? -1 : 1, 1);
+  const q = (Math.PI - G.yaw) / Math.PI;
+  const P = { ...G.P, x: 0, y: 0, armN: { hand: mix([5, -64], [6, -63], q), hp: 'relax' }, armF: { hand: mix([1, -65], [3, -64], q), hp: 'relax' },
+    armL: { hand: [-16, -65], hp: 'relax' }, armR: { hand: [16, -65], hp: 'relax' } };
+  // Build the existing Figure, remove only lower-body ops, then redraw it. The
+  // character API returns its geometry; this does not monkey-patch the renderer.
+  const { fig } = NAINAI[view](x, P), lower = /^(leg|pants|shoe|sole)/;
+  fig.parts = fig.parts.filter(p => !lower.test(p.name));
+  fig.ops = fig.ops.filter(p => p.kind !== 'part' || !lower.test(p.name));
+  x.save(); x.setTransform(1, 0, 0, 1, 0, 0); x.clearRect(0, 0, o.c.width, o.c.height); x.restore();
+  fig.draw();
+  return o.c;
+}
+function turnLayer(G) {
+  const o = canvasLayer([760, 380, 1300, 790], GM_K, GM_AT), x = o.x;
+  x.save(); x.scale(-1, 1); stool(x, -2); bowl(x, ...BOWL1, 26); x.restore();
+  drawTurnLegs(x, G);
+  const c = Math.cos(G.yaw), weights = [['side', true, Math.max(0, -c) ** 2], ['front', false, Math.sin(G.yaw) ** 2], ['side', false, Math.max(0, c) ** 2]];
+  // Premultiplied additive dissolve avoids the dark/transparent middle of a
+  // conventional over-over crossfade. The shared skeleton, feet and contact
+  // shadows stay opaque; only the upper-body view art changes.
+  const blend = new OffscreenCanvas(o.c.width, o.c.height), b = blend.getContext('2d'); b.globalCompositeOperation = 'lighter';
+  for (const [view, flip, weight] of weights) if (weight > 1e-6) { b.globalAlpha = weight; b.drawImage(upperTurnSprite(G, view, flip), 0, 0); }
+  x.save(); x.setTransform(1, 0, 0, 1, 0, 0); x.drawImage(blend, 0, 0); x.restore();
+  return o.layer;
 }
 
 const shot = {
   bg: 'bg_01_room_wide', size: [BW, BH],
   layers: async (t) => {
-    const X = xiaoman(t), G = grandmaS07(t), ph = xmPhone(t);
+    const X = xiaomanS07(t), G = grandmaS07(t), ph = xmPhone(t);
     return [
       { img: COILC, x: COIL[0] - 60, y: COIL[1] - 34, sc: 1 },
       tableLamp(G.lampLift || 0),
-      charLayer('x', X.view, X.P, { box: [400, 520, 760, 690], k: XM_K, at: XM_AT, flip: X.flip, rot: X.rot || 0, pivot: X.pivot, to: X.to,
+      X.view === 'roll' ? rollingLayer(X, ph) : charLayer('x', X.view, X.P, { box: [400, 520, 760, 690], k: XM_K, at: XM_AT, flip: X.flip, rot: X.rot || 0, pivot: X.pivot, to: X.to,
         before: (x) => { if (X.flip) x.scale(-1, 1); phoneSide(x, ph, 0); } }),
-      charLayer('n', G.view, G.P, { box: [760, 380, 1300, 790], k: GM_K, at: GM_AT, flip: G.flip,
+      G.view === 'turn' ? turnLayer(G) : charLayer('n', G.view, G.P, { box: [760, 380, 1300, 790], k: GM_K, at: GM_AT, flip: G.flip,
         before: (x) => { if (!G.flip) x.scale(-1, 1); stool(x, -2); if (!G.bowlFront) bowl(x, G.bowl[0], G.bowl[1], 26); },
         after: (x) => { if (!G.flip) x.scale(-1, 1); if (G.bowlFront) bowl(x, G.bowl[0], G.bowl[1], 26); } }),
     ];
