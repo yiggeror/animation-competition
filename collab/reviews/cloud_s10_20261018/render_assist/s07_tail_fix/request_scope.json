@@ -1,0 +1,28 @@
+{
+  "requested_source_commit": "2f6ae68e1e2e959e25972d8785721435d51f87e9",
+  "source_module": "collab/reviews/20261018_1539_s07_tail_scene/s07_drawn_partial_tail_candidate.js",
+  "requested_range_seconds": [
+    1.625,
+    2.375
+  ],
+  "requested_absolute_frames_inclusive": [
+    39,
+    56
+  ],
+  "requested_frame_count": 18,
+  "requested_decode_frames": [
+    39,
+    43,
+    46,
+    49,
+    53
+  ],
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "source_mutations_authorized": false,
+  "not_rendering": "old first25frames or any other S07 range",
+  "compatibility_shim_sha256": "d6c69a5194d44cc502d801f7d3fcb50958783d93d13c351db2747e2020444a56",
+  "shim_path": "collab/reviews/cloud_s10_20261018/render_assist/use_system_chromium.cjs",
+  "setup_note": "Exact commit initially absent locally; fetched it. Worktree preparation queried before fetch completed and returned invalid reference; no rendering took place on that failed setup query."
+}

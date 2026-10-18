@@ -1,0 +1,133 @@
+{
+  "fixed_commit": "2f6ae68e1e2e959e25972d8785721435d51f87e9",
+  "source_worktree": "/workspace/s07-tail-render-2f6ae68e",
+  "source_clean_before_render": true,
+  "files": [
+    {
+      "path": "collab/reviews/20261018_1539_s07_tail_scene/s07_drawn_partial_tail_candidate.js",
+      "sha256": "9a3ec36a9f3bda6f389842c49a85ae4bc9a4fb45a8ad74a8c9042dff0b0b75ff",
+      "bytes": 3498
+    },
+    {
+      "path": "collab/reviews/20261018_1539_s07_tail_scene/README.md",
+      "sha256": "b3e028d479e195ed65809741684e598022bcfe3875dceb77af7e11d94814e309",
+      "bytes": 1221
+    },
+    {
+      "path": "tools/js/frames.cjs",
+      "sha256": "3f3f1a1920d6970bb578d735fc7b70420ae749da469637827459a861fe8bea14",
+      "bytes": 3221
+    },
+    {
+      "path": "collab/reviews/20261018_1232_s07_release/approved/phone_landed_only_same_registration.png",
+      "sha256": "4876b654fd27c7664bef703f35f1722d0d06964e040bb3f7eb937163af88bfdf",
+      "bytes": 15086,
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        1344,
+        768,
+        1481,
+        819
+      ]
+    },
+    {
+      "path": "collab/reviews/20261018_1539_s07_tail_scene/candidates/F049_tail_phone_clear.png",
+      "sha256": "83eb9134e5caea97625d95ba1c95482ff3f2692dd950b076808743fda25fda75",
+      "bytes": 1332322,
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "collab/reviews/20261018_1539_s07_tail_scene/candidates/F039_tail_phone_clear.png",
+      "sha256": "b207629f2a77d89117ed99168734870269a1639ae27e4e9155de6fe0a24e8c83",
+      "bytes": 1333914,
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "collab/reviews/20261018_1539_s07_tail_scene/candidates/F053_tail_phone_clear.png",
+      "sha256": "f28aca75ce4f09bc4eedad5f4fe1646f7d103fa98f3f1ee259f15ea680c4cd9b",
+      "bytes": 1300021,
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "collab/reviews/20261018_1539_s07_tail_scene/candidates/F043_tail_phone_clear.png",
+      "sha256": "7c79945fae28a2ef9f5db8a9fab75cde8dbbf474aff7c3e796b4046f9e125d2e",
+      "bytes": 1331544,
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "collab/reviews/20261018_1539_s07_tail_scene/candidates/F046_tail_phone_clear.png",
+      "sha256": "5d517e873c2cafa39ba0b782252d47ad0c55865fb9ad2be87b262a0ade13c6a8",
+      "bytes": 1332436,
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    }
+  ],
+  "source_head_after_render": "2f6ae68e1e2e959e25972d8785721435d51f87e9",
+  "source_clean_after_render": true,
+  "actual_command_argv": [
+    "node",
+    "--require",
+    "/workspace/cloud-s10-review-20261018-1324/collab/reviews/cloud_s10_20261018/render_assist/use_system_chromium.cjs",
+    "tools/js/frames.cjs",
+    "collab/reviews/20261018_1539_s07_tail_scene/s07_drawn_partial_tail_candidate.js",
+    "build/s07_tail18",
+    "--fps",
+    "24",
+    "--w",
+    "1280",
+    "--h",
+    "720",
+    "--workers",
+    "4",
+    "--from",
+    "1.625",
+    "--to",
+    "2.375",
+    "--mp4",
+    "build/S07_tail18.mp4"
+  ],
+  "all_recorded_source_SHA_unchanged_after_render": true,
+  "actual_render_PNG_frames": [
+    "00039.png",
+    "00040.png",
+    "00041.png",
+    "00042.png",
+    "00043.png",
+    "00044.png",
+    "00045.png",
+    "00046.png",
+    "00047.png",
+    "00048.png",
+    "00049.png",
+    "00050.png",
+    "00051.png",
+    "00052.png",
+    "00053.png",
+    "00054.png",
+    "00055.png",
+    "00056.png"
+  ]
+}
