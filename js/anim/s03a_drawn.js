@@ -5,13 +5,13 @@ import { drawnShot } from './drawn.js';
 import { loadImg } from '../paint/paintshot.js';
 import { key } from './kit.js';
 export const DURATION = 1.5;
-const X = '/assets/chars/x03a/', S = 1920 / 1672;
-// 000×8 008×3 011×3 014×3 017×4 021×2 023×2 025×3 028×8；021/023（回程尾摆）还在画，先由 017 顶着
-export const SHEET = [[X + 'S03a_F000', 0], [X + 'S03a_F008', 8], [X + 'S03a_F011', 11], [X + 'S03a_F014', 14], [X + 'S03a_F017', 17], [X + 'S03a_F025', 25], [X + 'S03a_F028', 28]];
+const X = '/collab/reviews/20261018_1305_s03a_all9/candidates/', H = '/assets/chars/x03a/', S = 1920 / 1672;
+// 000×8 008×3 011×3 014×3 017×4 021×2 023×2 025×3 028×8；九张均已锁版，14/17/21/23/25采用同一局部校色v2，勿混旧暖版
+export const SHEET = [[X + 'S03a_F000', 0], [X + 'S03a_F008', 8], [X + 'S03a_F011', 11], [X + 'S03a_F014', 14], [X + 'S03a_F017', 17], [X + 'S03a_F021', 21], [X + 'S03a_F023', 23], [X + 'S03a_F025', 25], [X + 'S03a_F028', 28]];
 let HAND = null;
 async function hand() {
   if (HAND) return HAND;
-  const im = await loadImg(X + 'S03a_foreground_grandma_right_hand_melon_RGBA.png');
+  const im = await loadImg(H + 'S03a_foreground_grandma_right_hand_melon_RGBA.png');
   const c = new OffscreenCanvas(im.width + 40, im.height + 40), x = c.getContext('2d');
   x.filter = 'blur(6px)'; x.drawImage(im, 20, 20);                     // 前景虚焦（在原图尺寸上模糊，缩小后约 3 像素）
   return (HAND = c);
