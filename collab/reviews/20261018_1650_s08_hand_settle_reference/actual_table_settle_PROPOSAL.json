@@ -1,0 +1,223 @@
+{
+  "status": "TWO_REVIEWER_REFERENCE_READY_FOR_DIRECTOR_NOT_NEW_FROZEN_BONES",
+  "actual_table_source": "astra_production_verification_20261018_1625/20261018_3f4c2f_verify/S08/S08_F000_actual_1920x1080.png",
+  "tabletop_y": [
+    950,
+    981
+  ],
+  "front_apron_y": [
+    981,
+    1030
+  ],
+  "states": {
+    "82": {
+      "R": [
+        [
+          800,
+          690
+        ],
+        [
+          790,
+          955
+        ],
+        [
+          990,
+          1005
+        ]
+      ],
+      "L": [
+        [
+          1050,
+          680
+        ],
+        [
+          1040,
+          960
+        ],
+        [
+          1115,
+          820
+        ]
+      ],
+      "face": [
+        900,
+        470
+      ],
+      "hip": [
+        690,
+        1080
+      ],
+      "br": [
+        870,
+        1080
+      ],
+      "lift": 0
+    },
+    "96": {
+      "R": [
+        [
+          650,
+          650
+        ],
+        [
+          690,
+          925
+        ],
+        [
+          915,
+          981
+        ]
+      ],
+      "L": [
+        [
+          930,
+          650
+        ],
+        [
+          900,
+          870
+        ],
+        [
+          1040,
+          920
+        ]
+      ],
+      "face": [
+        790,
+        435
+      ],
+      "hip": [
+        655,
+        1090
+      ],
+      "br": [
+        850,
+        1080
+      ],
+      "lift": 0
+    },
+    "114": {
+      "R": [
+        [
+          650,
+          650
+        ],
+        [
+          690,
+          925
+        ],
+        [
+          875,
+          981
+        ]
+      ],
+      "L": [
+        [
+          930,
+          650
+        ],
+        [
+          900,
+          880
+        ],
+        [
+          1010,
+          981
+        ]
+      ],
+      "face": [
+        790,
+        435
+      ],
+      "hip": [
+        655,
+        1090
+      ],
+      "br": [
+        850,
+        1080
+      ],
+      "lift": 0
+    },
+    "143": {
+      "R": [
+        [
+          650,
+          650
+        ],
+        [
+          690,
+          925
+        ],
+        [
+          875,
+          981
+        ]
+      ],
+      "L": [
+        [
+          930,
+          650
+        ],
+        [
+          900,
+          880
+        ],
+        [
+          1010,
+          981
+        ]
+      ],
+      "face": [
+        790,
+        435
+      ],
+      "hip": [
+        655,
+        1090
+      ],
+      "br": [
+        850,
+        1080
+      ],
+      "lift": 0
+    }
+  },
+  "necessary_projection_exceptions": {
+    "F082_near_wrist": [
+      [
+        1000,
+        1010
+      ],
+      [
+        990,
+        1005
+      ]
+    ],
+    "F096_far_elbow": [
+      [
+        950,
+        930
+      ],
+      [
+        900,
+        870
+      ]
+    ],
+    "F114_far_elbow": [
+      900,
+      880
+    ]
+  },
+  "fixed": [
+    "shoulders",
+    "head/chest/neck/body",
+    "near elbows",
+    "lamp box match coordinates",
+    "first3"
+  ],
+  "final_hand_projection": "Far palm rotates downward toward table plane, projected x about75% of the side-facing schematic; true hand identity and volume require actual drawing. Not a hand-scaling recipe.",
+  "body_context": "F114/F143 use approved096 body only as context, no new seated-body freeze.",
+  "obsolete": "parent v1 1055 support and112 node rejected",
+  "review": "Whole082/096/114 and hand closeups actualviewed; near light arm front, far jade arm behind, both complete sleeve-elbow-wrist contours; no crossing forearms or broken wrist hard blocker. Two reviewers accept as director proposal, pending director."
+}
