@@ -1,0 +1,147 @@
+{
+  "fixed_commit": "001c9c1828d9054675437111cf52df37c48721f2",
+  "runtime_files": [
+    {
+      "path": "tools/js/frames.cjs",
+      "sha256": "3f3f1a1920d6970bb578d735fc7b70420ae749da469637827459a861fe8bea14",
+      "git_blob": "b87e5a99db60921c128ff3065e724a48753324b8"
+    },
+    {
+      "path": "tools/js/serve.cjs",
+      "sha256": "85e67155f5b39852bb8f7d08457a1ba15db538ce05e582cc26d4b364f8b6136d",
+      "git_blob": "9b9842da7bc86fab9e352e44954cf90179872b5b"
+    },
+    {
+      "path": "dev/view.html",
+      "sha256": "2b5228f5447bcb919a6dea545152e5645cee890f89377d6ff7ffa14c9f6ed701",
+      "git_blob": "0bd637905abfab5d92ca971937bc4e1e11b73dc7"
+    },
+    {
+      "path": "js/paint/paintshot.js",
+      "sha256": "e1d059b90d799301826bd3b4ae34a06bf6c6aadfd9ead0fa25d2ccc09cf5b36c",
+      "git_blob": "04e5e6e2e88e48bb46ac96eeed81de12bdd59018"
+    },
+    {
+      "path": "collab/reviews/20261018_1616_s07_first57_scene/s07_drawn_candidate.js",
+      "sha256": "1957283ccf6b64cf22ba8019c8fd0a1d5c6c75081b0a50fbc7873046a17b0a95",
+      "git_blob": "0d2dbea49498c9f5381e35c3b3444151aef46074"
+    },
+    {
+      "path": "collab/reviews/20261018_1616_s07_first57_scene/ASSET_MANIFEST.json",
+      "sha256": "d8a248ca33f2905406882fb1ec8b11d025b50e1648d7600e00c4b13293adacb9",
+      "git_blob": "f8006b6f87f571652ce30abab3cbf6a46382366e"
+    },
+    {
+      "path": "collab/reviews/20261018_1616_s07_first57_scene/checks/unchanged_result.json",
+      "sha256": "f6dd2b629b66593da26d86aec9235f32659a86497a942ffa08dee04d99285ebc",
+      "git_blob": "fbf6d9128c81a7f5f4c073a1a26ccbba4c0cf69c"
+    }
+  ],
+  "producer_unchanged_report": {
+    "status": "passed",
+    "baseline_commit": "2f6ae68e",
+    "baseline_sha256": "9a3ec36a9f3bda6f389842c49a85ae4bc9a4fb45a8ad74a8c9042dff0b0b75ff",
+    "module_sha256": "1957283ccf6b64cf22ba8019c8fd0a1d5c6c75081b0a50fbc7873046a17b0a95",
+    "old_frame_descriptors_equal": 43,
+    "old_frame_ranges": [
+      [
+        0,
+        24
+      ],
+      [
+        39,
+        56
+      ]
+    ],
+    "old_image_urls_equal": 15,
+    "old_image_local_sha_rechecked": 15,
+    "camera_sample_times_equal": 216,
+    "entire_source_suffix_byte_identical": "XIAOMAN table through renderFrame; camera/props/phone/light/emit unchanged",
+    "new_exact_pixel_assets": 5,
+    "new_frame_count": 14,
+    "available_frame_count": 57,
+    "missing_frames_throw": [
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107
+    ],
+    "whole108_ready": false,
+    "actual_canvas_renders_performed": 0,
+    "rendered_pixel_equality_claim": false,
+    "next_step": "Render actual0-56 once in cloud; inspect015→016 and025→038 plus phone/tail. Static gates are not sequence gates."
+  },
+  "actual_render_command": [
+    "node",
+    "--require",
+    "/workspace/animation-competition-s07-render/collab/reviews/cloud_s13_20261018/render_assist/s07_first57/tools/system_chromium.cjs",
+    "tools/js/frames.cjs",
+    "/collab/reviews/20261018_1616_s07_first57_scene/s07_drawn_candidate.js",
+    "/tmp/s07_first57_canvas_frames",
+    "--fps",
+    "24",
+    "--w",
+    "1280",
+    "--h",
+    "720",
+    "--workers",
+    "4",
+    "--from",
+    "0",
+    "--to",
+    "2.375",
+    "--mp4",
+    "collab/reviews/cloud_s13_20261018/render_assist/s07_first57/S07_first57_720p24.mp4"
+  ],
+  "image_generation_calls": 0,
+  "frames57_107_rendered": false,
+  "module_or_asset_or_camera_changed": false,
+  "audio_changed": false
+}
