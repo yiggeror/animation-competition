@@ -1,0 +1,776 @@
+{
+  "status": "PASS_EXACT_CALL17_F036_REPLAY",
+  "final_png_sha256": "6ee3d4ccf88650496ce97f8709642fb3b5a228fd0ec1a5e5fd4efc50fac42753",
+  "input_count": 14,
+  "script_count": 10,
+  "all_inputs_declared_and_verified": true,
+  "inputs": [
+    {
+      "path": "F036_native_call17/raw/F036_whole_turn_arms_native_raw.png",
+      "sha256": "0c5406e79310fcbf80739e32de630bfb65d2f9e4f0110b31e4658c7d5d6a951d",
+      "bytes": 1204441
+    },
+    {
+      "path": "dependencies/F033_FINAL_LOCKED/S08_F033_grandma_match_box_RGBA.png",
+      "sha256": "0f8637f7f1cf5cc01e99029da5da13c9c42bac06329e2b64d77980d997029b47",
+      "bytes": 581097
+    },
+    {
+      "path": "dependencies/F033_FINAL_LOCKED/F033_true_near_hand_match_INDEPENDENT_FOREGROUND_RGBA.png",
+      "sha256": "c5007faf07a73248c97caee1c609bda25d736d25c1081438a06841647f0c7f11",
+      "bytes": 30339
+    },
+    {
+      "path": "dependencies/F033_FINAL_LOCKED/F033_true_near_hand_match_INDEPENDENT_FOREGROUND_footprint.png",
+      "sha256": "ab4709ac52a35ff194eb835b6e99ed68428d231512f2476bd998f8435ed5726d",
+      "bytes": 3034
+    },
+    {
+      "path": "dependencies/F033_FINAL_LOCKED/F033_near_distal_hard_guard_footprint.png",
+      "sha256": "f9d53a5fd0a7cec550c01c294367bb3c0015492db445de53f534c44d11e7e0c4",
+      "bytes": 2915
+    },
+    {
+      "path": "dependencies/F033_FINAL_LOCKED/F033_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_RGBA.png",
+      "sha256": "88d6c528d209237a55abd445f65290249080e7759aea045789f5b8e8ade462dc",
+      "bytes": 28206
+    },
+    {
+      "path": "dependencies/F033_FINAL_LOCKED/F033_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+      "sha256": "fc8a5aae3345c904f1a45d7dc3b5fb1a317d2c74aedea9985cdf3f6176deb50d",
+      "bytes": 2735
+    },
+    {
+      "path": "dependencies/F033_FINAL_LOCKED/F033_far_hand_jade_SEAT_hard_guard.png",
+      "sha256": "1a3047138caeaed8f4e6c47c08756d10bd8cf05b7c2a218cb33bb10e0562b9dc",
+      "bytes": 2739
+    },
+    {
+      "path": "dependencies/F033_FINAL_LOCKED/F033_far_original_jade_AA_requires_same_raw_skin_underlay.png",
+      "sha256": "fb19559ddbfa4335c7ab8f04c0ca6320b3a6b28600dac7838125412d934e7979",
+      "bytes": 2135
+    },
+    {
+      "path": "dependencies/F033_FINAL_LOCKED/F033_fixed_table_box_footprint.png",
+      "sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "bytes": 2180
+    },
+    {
+      "path": "dependencies/F000_FINAL_LOCKED/S08_F000_grandma_match_box_RGBA.png",
+      "sha256": "c803571d4a6446e783fcbeb7aef41d65c1862ff3bf78a9a53f34b4631170e3f3",
+      "bytes": 601803
+    },
+    {
+      "path": "dependencies/actual030_canvas/F030.png",
+      "sha256": "77b34cd91a1bef5c10a9150d8426e6fa8488bc2146879661935cc8d035e20d5c",
+      "bytes": 3565195
+    },
+    {
+      "path": "dependencies/font/DejaVuSans.ttf",
+      "sha256": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+      "bytes": 759720
+    },
+    {
+      "path": "F036_structure_gate/geometry/F036_first_structure.json",
+      "sha256": "079ca96c009caa9c5b0d2a1b209d0380e0314e8612f3dd174e06c4745c5a68c7",
+      "bytes": 3682
+    },
+    {
+      "path": "original_upstream/F033_LAYER_PARTITION/build_partition.py",
+      "sha256": "30b02c0133836b8ab82fd92d9dab3aa1d361f1c583974c5cf8f5d9ae0e04a5ab",
+      "bytes": 4495
+    },
+    {
+      "path": "F036_input_gate/build_input.py",
+      "sha256": "2827c37dbc5f32d04de74ab24f9271f494961d1f12e94377fa077700b4823f27",
+      "bytes": 12448
+    },
+    {
+      "path": "F036_input_gate/composite_returned_crop.py",
+      "sha256": "1e658d2823abdf44340c42165d125f293a62c3ebf21edc2ad6014c021e22f618",
+      "bytes": 3427
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/build.py",
+      "sha256": "8ce27bdf8bb0839674312d16b1f3f64b5e92af7fa1bad3c046615ace56ba66a1",
+      "bytes": 9446
+    },
+    {
+      "path": "F036_color_final/apply_colors.py",
+      "sha256": "d27a372ba4bc6511767209bb952fe722e5fa8a936320b13672d8d0bb1961e484",
+      "bytes": 4795
+    },
+    {
+      "path": "F036_box_layer_source_diagnostic/history_before_layer_correction/F036_FINAL_LOCKED/seal.py",
+      "sha256": "9518381f6dad672c98e3a9e9aedfa12a589b73ea0569f2618035dbd444ed077d",
+      "bytes": 5428
+    },
+    {
+      "path": "F036_box_layer_source_diagnostic/history_before_layer_correction/F036_LAYER_PARTITION/build_partition.py",
+      "sha256": "36eacf958e4af8df9984bb72bbf0e37bcabc922fd54afc08d39f4314be705f2a",
+      "bytes": 4461
+    },
+    {
+      "path": "F036_box_layer_source_diagnostic/rebuild_explicit_masks.py",
+      "sha256": "9699ee6055af3faf606cae1c23fdba6df68319230d5525224264653742dc7583",
+      "bytes": 1296
+    },
+    {
+      "path": "F036_FINAL_LOCKED/seal.py",
+      "sha256": "67684d361852261ec655fc7d267be177f76e41d7b572ecfa55eb7fbb2e5d1de5",
+      "bytes": 6445
+    },
+    {
+      "path": "F036_LAYER_PARTITION/build_partition.py",
+      "sha256": "3209ba61862d06d43725d42ef49c5d759606d917ffc226a46f8431b950076bad",
+      "bytes": 4684
+    }
+  ],
+  "execution": [
+    {
+      "source": "original_upstream/F033_LAYER_PARTITION/build_partition.py",
+      "source_sha256": "30b02c0133836b8ab82fd92d9dab3aa1d361f1c583974c5cf8f5d9ae0e04a5ab",
+      "executed_output_path": "F033_LAYER_PARTITION/build_partition.py",
+      "resource_relocations": [],
+      "arguments": []
+    },
+    {
+      "source": "F036_input_gate/build_input.py",
+      "source_sha256": "2827c37dbc5f32d04de74ab24f9271f494961d1f12e94377fa077700b4823f27",
+      "executed_output_path": "F036_input_gate/build_input.py",
+      "resource_relocations": [
+        "Font resource path only relocated to declared exact-font input; drawing logic unchanged."
+      ],
+      "arguments": []
+    },
+    {
+      "source": "F036_input_gate/composite_returned_crop.py",
+      "source_sha256": "1e658d2823abdf44340c42165d125f293a62c3ebf21edc2ad6014c021e22f618",
+      "executed_output_path": "F036_input_gate/composite_returned_crop.py",
+      "resource_relocations": [],
+      "arguments": [
+        "F036_result_registered_nominal",
+        "--raw",
+        "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_native_call17/raw/F036_whole_turn_arms_native_raw.png",
+        "--scale",
+        "0.979152840944806",
+        "--tx",
+        "-3.823933079265974",
+        "--ty",
+        "2.078205122639724"
+      ]
+    },
+    {
+      "source": "F036_same_raw_semantic_v9/build.py",
+      "source_sha256": "8ce27bdf8bb0839674312d16b1f3f64b5e92af7fa1bad3c046615ace56ba66a1",
+      "executed_output_path": "F036_same_raw_semantic_v9/build.py",
+      "resource_relocations": [],
+      "arguments": []
+    },
+    {
+      "source": "F036_color_final/apply_colors.py",
+      "source_sha256": "d27a372ba4bc6511767209bb952fe722e5fa8a936320b13672d8d0bb1961e484",
+      "executed_output_path": "F036_color_final/apply_colors.py",
+      "resource_relocations": [],
+      "arguments": []
+    },
+    {
+      "source": "F036_box_layer_source_diagnostic/history_before_layer_correction/F036_FINAL_LOCKED/seal.py",
+      "source_sha256": "9518381f6dad672c98e3a9e9aedfa12a589b73ea0569f2618035dbd444ed077d",
+      "executed_output_path": "F036_FINAL_LOCKED/seal.py",
+      "resource_relocations": [],
+      "arguments": []
+    },
+    {
+      "source": "F036_box_layer_source_diagnostic/history_before_layer_correction/F036_LAYER_PARTITION/build_partition.py",
+      "source_sha256": "36eacf958e4af8df9984bb72bbf0e37bcabc922fd54afc08d39f4314be705f2a",
+      "executed_output_path": "F036_LAYER_PARTITION/build_partition.py",
+      "resource_relocations": [],
+      "arguments": []
+    },
+    {
+      "source": "F036_box_layer_source_diagnostic/rebuild_explicit_masks.py",
+      "source_sha256": "9699ee6055af3faf606cae1c23fdba6df68319230d5525224264653742dc7583",
+      "executed_output_path": "F036_box_layer_source_diagnostic/rebuild_explicit_masks.py",
+      "resource_relocations": [],
+      "arguments": []
+    },
+    {
+      "source": "F036_FINAL_LOCKED/seal.py",
+      "source_sha256": "67684d361852261ec655fc7d267be177f76e41d7b572ecfa55eb7fbb2e5d1de5",
+      "executed_output_path": "F036_FINAL_LOCKED/seal.py",
+      "resource_relocations": [],
+      "arguments": []
+    },
+    {
+      "source": "F036_LAYER_PARTITION/build_partition.py",
+      "source_sha256": "3209ba61862d06d43725d42ef49c5d759606d917ffc226a46f8431b950076bad",
+      "executed_output_path": "F036_LAYER_PARTITION/build_partition.py",
+      "resource_relocations": [],
+      "arguments": []
+    }
+  ],
+  "outputs_verified": [
+    {
+      "path": "F033_LAYER_PARTITION/frames/F033_body_behind_original_pixels.png",
+      "expected_sha256": "adc14536112cc5ef24316d94bc88f6f5bc08cb8ab8d9cc6ea14aae7d79bfe511",
+      "actual_sha256": "adc14536112cc5ef24316d94bc88f6f5bc08cb8ab8d9cc6ea14aae7d79bfe511",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/masks/F036_CLEAR_26_old_low_alpha_fragments_in_871_air_islands.png",
+      "expected_sha256": "72f0b3be2d9e5bdb1777ec931229f929d65dd3dae248e0a4ed6aa7d7a7781cf3",
+      "actual_sha256": "72f0b3be2d9e5bdb1777ec931229f929d65dd3dae248e0a4ed6aa7d7a7781cf3",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/masks/F036_CLOSE_871_old_air_islands_to_BLACK.png",
+      "expected_sha256": "6fbd8cb3eecdd5d82f7d1746a98aa305e0ab87825acfb85b429d3dae33b7f8d4",
+      "actual_sha256": "6fbd8cb3eecdd5d82f7d1746a98aa305e0ab87825acfb85b429d3dae33b7f8d4",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/masks/F036_EXCLUDE_reuse_old_far_isolated_pixel_1127_800.png",
+      "expected_sha256": "88cbbf0de392e25c13e15863047b925ac250e8783a33165575cb15f79d25fa16",
+      "actual_sha256": "88cbbf0de392e25c13e15863047b925ac250e8783a33165575cb15f79d25fa16",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/masks/F036_FOREGROUND_near_forearm_corridor_only_construction.png",
+      "expected_sha256": "436805bf7bada016b3409745797eaae62613647a0509a16dae42c63ec09bae90",
+      "actual_sha256": "436805bf7bada016b3409745797eaae62613647a0509a16dae42c63ec09bae90",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/masks/F036_INCLUDE_original033_box_AA_surround_from_body_partition.png",
+      "expected_sha256": "3faca0226cac8a880b84ea5492cfd07ebd2683e5536e5ca88737f5b627673dd9",
+      "actual_sha256": "3faca0226cac8a880b84ea5492cfd07ebd2683e5536e5ca88737f5b627673dd9",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/masks/F036_RELEASE_old_collar_blue_NOT_true_hand.png",
+      "expected_sha256": "50aa1f07da0749604354cf05f16b9d9ea41df382f3b282fd7560e396979dcbe9",
+      "actual_sha256": "50aa1f07da0749604354cf05f16b9d9ea41df382f3b282fd7560e396979dcbe9",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/masks/F036_WHITE_body_neck_head_arms_wrist_allowed.png",
+      "expected_sha256": "5807ae040c9196416a75d3ad47350127f0dd3371490c7a1f76114634c6955fe3",
+      "actual_sha256": "5807ae040c9196416a75d3ad47350127f0dd3371490c7a1f76114634c6955fe3",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/masks/F036_far_guard_occluded_by_FOREGROUND_near_forearm_or_hand.png",
+      "expected_sha256": "f1a5199353bd0f9586d54005b4fc739e64bfe4c9bb670755f895b7bc4192a112",
+      "actual_sha256": "f1a5199353bd0f9586d54005b4fc739e64bfe4c9bb670755f895b7bc4192a112",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/masks/F036_far_original_jade_AA_underlay_editable.png",
+      "expected_sha256": "fb19559ddbfa4335c7ab8f04c0ca6320b3a6b28600dac7838125412d934e7979",
+      "actual_sha256": "fb19559ddbfa4335c7ab8f04c0ca6320b3a6b28600dac7838125412d934e7979",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/masks/F036_far_original_underlying_full_hand_SEAT_footprint.png",
+      "expected_sha256": "656938a7e9670ef163769b3d06b4a3bd0e011de15418e6cedbf42e2230e8eef5",
+      "actual_sha256": "656938a7e9670ef163769b3d06b4a3bd0e011de15418e6cedbf42e2230e8eef5",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/masks/F036_far_visible_hand_jade_TRUE_SEAT_guard.png",
+      "expected_sha256": "e559a4bda4bd2b930bdb024703d81e77f11721a65a0776c5407dd26b0ca258b9",
+      "actual_sha256": "e559a4bda4bd2b930bdb024703d81e77f11721a65a0776c5407dd26b0ca258b9",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/masks/F036_fixed_table_box_guard.png",
+      "expected_sha256": "39b7dc7ac4ef2b3e8974b1d4d737a553498a8b6a6a776cee5f088698e802f0f1",
+      "actual_sha256": "39b7dc7ac4ef2b3e8974b1d4d737a553498a8b6a6a776cee5f088698e802f0f1",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/masks/F036_near_distal_palm_fingers_entire_match_guard.png",
+      "expected_sha256": "e2a5da4e8a2fc666df727a6dbdec5cfdb1cb3886a1e81e5dca3f2b9e05071f56",
+      "actual_sha256": "e2a5da4e8a2fc666df727a6dbdec5cfdb1cb3886a1e81e5dca3f2b9e05071f56",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/masks/F036_near_proximal_palmroot_release.png",
+      "expected_sha256": "0b205d0cfbc2d0238f8cd6cc1ab9c034a901c61cd6f7895b828a292260d8f694",
+      "actual_sha256": "0b205d0cfbc2d0238f8cd6cc1ab9c034a901c61cd6f7895b828a292260d8f694",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/masks/F036_near_whole_transformed_hand_footprint.png",
+      "expected_sha256": "581093d84051c7fefd20a547fc80a71bc78d3d96ded4f1085deb98e2e6e7ebed",
+      "actual_sha256": "581093d84051c7fefd20a547fc80a71bc78d3d96ded4f1085deb98e2e6e7ebed",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/masks/F036_removed_tiny_permission_islands.png",
+      "expected_sha256": "499742ee93777971b9072b8f5d03141495a9dfe0d8fcb9235193ff0940240925",
+      "actual_sha256": "499742ee93777971b9072b8f5d03141495a9dfe0d8fcb9235193ff0940240925",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/inputs/F036_preplaced_body_anchor_truehands_NO_ROD_RGBA.png",
+      "expected_sha256": "4284e73514ed6ae75f2697604d492dbeadbd0d1768e56468e4a57554bc58350f",
+      "actual_sha256": "4284e73514ed6ae75f2697604d492dbeadbd0d1768e56468e4a57554bc58350f",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/inputs/F036_preplaced_true_near_hand_match_RGBA.png",
+      "expected_sha256": "f41cdc7e7d81e3be3133f537a6a9cbc2f9104c322e8a12dbb204835612fbed9b",
+      "actual_sha256": "f41cdc7e7d81e3be3133f537a6a9cbc2f9104c322e8a12dbb204835612fbed9b",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/inputs/F036_original_underlying_far_hand_SEAT_RGBA.png",
+      "expected_sha256": "6168e4a06d4bb88ba4659280b9c35d3d9002ab8f252392fa0819e389dda2acd0",
+      "actual_sha256": "6168e4a06d4bb88ba4659280b9c35d3d9002ab8f252392fa0819e389dda2acd0",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/inputs/F036_actual_edit_target_1p5x_RGBA.png",
+      "expected_sha256": "601e0ce3fb3e480e0eec01f219dbe267af0fdba008e0cc58d96bbf63ead5d95d",
+      "actual_sha256": "601e0ce3fb3e480e0eec01f219dbe267af0fdba008e0cc58d96bbf63ead5d95d",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/inputs/F036_actual_edit_WHITE_MASK_1p5x.png",
+      "expected_sha256": "cdbb93210571e81655d0da0031887009cd1378fad1107177daea7abb1cd2f9f4",
+      "actual_sha256": "cdbb93210571e81655d0da0031887009cd1378fad1107177daea7abb1cd2f9f4",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/inputs/F036_DUAL_CONTEXT_033_IDENTITY_030_ACTUAL_LAMP_SPACE.png",
+      "expected_sha256": "2d656cd68e2b9b58141a09f52f143b7afd9e84061345d45a32b0d23af86191c1",
+      "actual_sha256": "2d656cd68e2b9b58141a09f52f143b7afd9e84061345d45a32b0d23af86191c1",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/inputs/F036_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+      "expected_sha256": "3ad0b7f656d55849da06239a535c05f874d4236dfe5f192b08caa9d6df0720db",
+      "actual_sha256": "3ad0b7f656d55849da06239a535c05f874d4236dfe5f192b08caa9d6df0720db",
+      "identical": true
+    },
+    {
+      "path": "F036_input_gate/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png",
+      "expected_sha256": "a2bcc2d0530fda4160bed990bbc343ff86c34e5c3f6bfc8c58472630444f88ee",
+      "actual_sha256": "a2bcc2d0530fda4160bed990bbc343ff86c34e5c3f6bfc8c58472630444f88ee",
+      "identical": true
+    },
+    {
+      "path": "F036_result_registered_nominal/candidates/S08_F036_whole_turn_arms_candidate_RGBA.png",
+      "expected_sha256": "096807f4df1c9bcb73086531569613df2920b2763e7f11ad4487485075d85bd4",
+      "actual_sha256": "096807f4df1c9bcb73086531569613df2920b2763e7f11ad4487485075d85bd4",
+      "identical": true
+    },
+    {
+      "path": "F036_result_registered_nominal/registered/F036_registered_scene_patch_RGBA.png",
+      "expected_sha256": "2d0f8120aee0bfbfebf3b840d70591b9b8158b09402616526399c50a1ff8eb06",
+      "actual_sha256": "2d0f8120aee0bfbfebf3b840d70591b9b8158b09402616526399c50a1ff8eb06",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/candidates/S08_F036_same_raw_semantic_RGBA.png",
+      "expected_sha256": "32f9ab00d6679f2594de9da6cf0c0744a26c8ae60976934624d941c0c1c8c186",
+      "actual_sha256": "32f9ab00d6679f2594de9da6cf0c0744a26c8ae60976934624d941c0c1c8c186",
+      "identical": true
+    },
+    {
+      "path": "F036_color_final/candidates/S08_F036_whole_turn_same_raw_final_color_RGBA.png",
+      "expected_sha256": "6ee3d4ccf88650496ce97f8709642fb3b5a228fd0ec1a5e5fd4efc50fac42753",
+      "actual_sha256": "6ee3d4ccf88650496ce97f8709642fb3b5a228fd0ec1a5e5fd4efc50fac42753",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/masks/CLEAR_generated_near_hand_match_and_rod_ghosts.png",
+      "expected_sha256": "4a3416cf813fa8798ebb787c78524e4d45196b7833bd5a82cf8ed138dd81750d",
+      "actual_sha256": "4a3416cf813fa8798ebb787c78524e4d45196b7833bd5a82cf8ed138dd81750d",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/masks/CLEAR_last_native_jade_fringe_with_same_forearm_contour.png",
+      "expected_sha256": "86d22f4f0681f63343850c21ac5e6030644d76b415b46ad2bcc9cf9a455ac6f0",
+      "actual_sha256": "86d22f4f0681f63343850c21ac5e6030644d76b415b46ad2bcc9cf9a455ac6f0",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/masks/CLEAR_native_duplicate_far_material_above_true_front_arm.png",
+      "expected_sha256": "ca7b8c5f624517c8d8191c946b65f6515315b68a7c05ce9617fccbee7e1e3100",
+      "actual_sha256": "ca7b8c5f624517c8d8191c946b65f6515315b68a7c05ce9617fccbee7e1e3100",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/masks/EXPLICIT_semantic_union.png",
+      "expected_sha256": "b021eff58d3a12ac6392dc333f7a63c777c073ca1815e62ffe4e844f73c2bd9a",
+      "actual_sha256": "b021eff58d3a12ac6392dc333f7a63c777c073ca1815e62ffe4e844f73c2bd9a",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/masks/ORIGINAL_true_jade_AA_over_native_collar.png",
+      "expected_sha256": "259d70d116f4d1fe475b2e6f1281b6fdbc01cf0b79b771cbc783dda9f19ca2aa",
+      "actual_sha256": "259d70d116f4d1fe475b2e6f1281b6fdbc01cf0b79b771cbc783dda9f19ca2aa",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/masks/RELEASE_false_far_guard_exterior_air_NOT_seat.png",
+      "expected_sha256": "5332c555264785ce99b4bb373bfc7a3bc369ddaaec5a16275be6d4af0bf6c73f",
+      "actual_sha256": "5332c555264785ce99b4bb373bfc7a3bc369ddaaec5a16275be6d4af0bf6c73f",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/masks/RESTORE_native_sleeve_and_far_proximal_skin_collar.png",
+      "expected_sha256": "55144524d772b2be3a23cf21f022f0053b72bd116f77188f7a1d3c49fd328c38",
+      "actual_sha256": "55144524d772b2be3a23cf21f022f0053b72bd116f77188f7a1d3c49fd328c38",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/masks/RESTORE_original_far_hand_visible_above_true_front_arm.png",
+      "expected_sha256": "ed1ea3d98e98199ae24bbf6c829fb2f3736f750dafb936dd75b765f5c9ae5a96",
+      "actual_sha256": "ed1ea3d98e98199ae24bbf6c829fb2f3736f750dafb936dd75b765f5c9ae5a96",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/masks/RESTORE_same_raw_complete_far_sleeve.png",
+      "expected_sha256": "42d16355a585a21c8739ac475e336604ec09818790ffc8990c6c18d52e439a5e",
+      "actual_sha256": "42d16355a585a21c8739ac475e336604ec09818790ffc8990c6c18d52e439a5e",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/masks/RESTORE_true_near_distal_hand_AA.png",
+      "expected_sha256": "13dd48307f3d1473b55b98e62a3a66dd76a972db005b8fb9157130c6a13d467c",
+      "actual_sha256": "13dd48307f3d1473b55b98e62a3a66dd76a972db005b8fb9157130c6a13d467c",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/masks/RESTORE_true_transparent_lever_seat.png",
+      "expected_sha256": "137e89b1572239b4d7f57a7c765cbaabede1e12222e51202e15ed034eadd6d2f",
+      "actual_sha256": "137e89b1572239b4d7f57a7c765cbaabede1e12222e51202e15ed034eadd6d2f",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/masks/SAME_RAW_continuous_blue_cloth_seam_donor_plus16_plus32.png",
+      "expected_sha256": "6118d0ff66e046ec48679fd8dd98d86f379ccf1d28306baf8aa183426c808348",
+      "actual_sha256": "6118d0ff66e046ec48679fd8dd98d86f379ccf1d28306baf8aa183426c808348",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/masks/SAME_RAW_far_wrist_collar_smooth6right2down.png",
+      "expected_sha256": "940380e2f9d9ae771dc4fb25858955e5242724b7ec2a697637e589d435835714",
+      "actual_sha256": "940380e2f9d9ae771dc4fb25858955e5242724b7ec2a697637e589d435835714",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/masks/SAME_RAW_near_root_lower_edge_continuation_max3px.png",
+      "expected_sha256": "f5e2a2b7e0291854bd082f44091a03293a913a807390f2639b4c8636e6468c63",
+      "actual_sha256": "f5e2a2b7e0291854bd082f44091a03293a913a807390f2639b4c8636e6468c63",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/masks/TRUE_jade_partial_AA_underlay_sourceover.png",
+      "expected_sha256": "70c556b39b037d5dd5a3d46948e58233b172f307bd044673ff0f52571ab68ea8",
+      "actual_sha256": "70c556b39b037d5dd5a3d46948e58233b172f307bd044673ff0f52571ab68ea8",
+      "identical": true
+    },
+    {
+      "path": "F036_same_raw_semantic_v9/masks/TRUE_native_forearm_front_occlusion_semantic.png",
+      "expected_sha256": "d446e52827241f53ac88812c5f3f107f67e0a9c61425994674e576ff142c13d2",
+      "actual_sha256": "d446e52827241f53ac88812c5f3f107f67e0a9c61425994674e576ff142c13d2",
+      "identical": true
+    },
+    {
+      "path": "F036_color_final/masks/blue_blouse_SOFT.png",
+      "expected_sha256": "3ab9e8d4d3cde8daab8ddfd84bb65efed2b410eb43f27a2cbadefea57afab43c",
+      "actual_sha256": "3ab9e8d4d3cde8daab8ddfd84bb65efed2b410eb43f27a2cbadefea57afab43c",
+      "identical": true
+    },
+    {
+      "path": "F036_color_final/masks/crown_gray_hair_SOFT.png",
+      "expected_sha256": "bdc35c21185599964c5b68d228e7a03a7bf691d6ed7be437b9ae7ce158da030e",
+      "actual_sha256": "bdc35c21185599964c5b68d228e7a03a7bf691d6ed7be437b9ae7ce158da030e",
+      "identical": true
+    },
+    {
+      "path": "F036_color_final/masks/head_ear_neck_skin_SOFT.png",
+      "expected_sha256": "c6cd9ac50fde7029360eca939b4a03c4a4dda0bd891be5d72ded1023feb0b20d",
+      "actual_sha256": "c6cd9ac50fde7029360eca939b4a03c4a4dda0bd891be5d72ded1023feb0b20d",
+      "identical": true
+    },
+    {
+      "path": "F036_FINAL_LOCKED/F036_EXCLUDE_old_near_blue_collar_archive_only.png",
+      "expected_sha256": "c44e12118c3f7d9464dee78f0c08d14c06523242f3d3b4af92279c5f2eab9e29",
+      "actual_sha256": "c44e12118c3f7d9464dee78f0c08d14c06523242f3d3b4af92279c5f2eab9e29",
+      "identical": true
+    },
+    {
+      "path": "F036_FINAL_LOCKED/F036_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_RGBA.png",
+      "expected_sha256": "6168e4a06d4bb88ba4659280b9c35d3d9002ab8f252392fa0819e389dda2acd0",
+      "actual_sha256": "6168e4a06d4bb88ba4659280b9c35d3d9002ab8f252392fa0819e389dda2acd0",
+      "identical": true
+    },
+    {
+      "path": "F036_FINAL_LOCKED/F036_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+      "expected_sha256": "c0a78ef494353d8b15ac963b7075763c134f8ce96adff9c48a52e5e6fa89a412",
+      "actual_sha256": "c0a78ef494353d8b15ac963b7075763c134f8ce96adff9c48a52e5e6fa89a412",
+      "identical": true
+    },
+    {
+      "path": "F036_FINAL_LOCKED/F036_far_hand_jade_SEAT_hard_guard.png",
+      "expected_sha256": "b4e1ab858c8703d1499599ef0023f9a32d5e4a6652bba06be2e1799b0086bdfa",
+      "actual_sha256": "b4e1ab858c8703d1499599ef0023f9a32d5e4a6652bba06be2e1799b0086bdfa",
+      "identical": true
+    },
+    {
+      "path": "F036_FINAL_LOCKED/F036_far_original_jade_AA_requires_same_raw_skin_underlay.png",
+      "expected_sha256": "70c556b39b037d5dd5a3d46948e58233b172f307bd044673ff0f52571ab68ea8",
+      "actual_sha256": "70c556b39b037d5dd5a3d46948e58233b172f307bd044673ff0f52571ab68ea8",
+      "identical": true
+    },
+    {
+      "path": "F036_FINAL_LOCKED/F036_fixed_table_box_RGBA.png",
+      "expected_sha256": "cf3e3aedca8b9b681ac9e1c6cd9e6bc80eba689168ace734840e86ae7a1f5f1f",
+      "actual_sha256": "cf3e3aedca8b9b681ac9e1c6cd9e6bc80eba689168ace734840e86ae7a1f5f1f",
+      "identical": true
+    },
+    {
+      "path": "F036_FINAL_LOCKED/F036_fixed_table_box_footprint.png",
+      "expected_sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "actual_sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "identical": true
+    },
+    {
+      "path": "F036_FINAL_LOCKED/F036_near_distal_hard_guard_RGBA.png",
+      "expected_sha256": "3318bfb6581696dea72aeedb2003f9bc7aa70d0f2564f6498411bd075e05ce0a",
+      "actual_sha256": "3318bfb6581696dea72aeedb2003f9bc7aa70d0f2564f6498411bd075e05ce0a",
+      "identical": true
+    },
+    {
+      "path": "F036_FINAL_LOCKED/F036_near_distal_hard_guard_footprint.png",
+      "expected_sha256": "e2a5da4e8a2fc666df727a6dbdec5cfdb1cb3886a1e81e5dca3f2b9e05071f56",
+      "actual_sha256": "e2a5da4e8a2fc666df727a6dbdec5cfdb1cb3886a1e81e5dca3f2b9e05071f56",
+      "identical": true
+    },
+    {
+      "path": "F036_FINAL_LOCKED/F036_original_box_fringe483_BODY_BEHIND_TABLE.png",
+      "expected_sha256": "3faca0226cac8a880b84ea5492cfd07ebd2683e5536e5ca88737f5b627673dd9",
+      "actual_sha256": "3faca0226cac8a880b84ea5492cfd07ebd2683e5536e5ca88737f5b627673dd9",
+      "identical": true
+    },
+    {
+      "path": "F036_FINAL_LOCKED/F036_true_near_hand_match_INDEPENDENT_FOREGROUND_RGBA.png",
+      "expected_sha256": "122dc752104fc7bfb74c3d317b349c7b6d9f02434fbfd3243687097a060977cc",
+      "actual_sha256": "122dc752104fc7bfb74c3d317b349c7b6d9f02434fbfd3243687097a060977cc",
+      "identical": true
+    },
+    {
+      "path": "F036_FINAL_LOCKED/F036_true_near_hand_match_INDEPENDENT_FOREGROUND_footprint.png",
+      "expected_sha256": "66f2743628b1039b02109938548ac4bfc602614d0b305e9cfc6926068d024278",
+      "actual_sha256": "66f2743628b1039b02109938548ac4bfc602614d0b305e9cfc6926068d024278",
+      "identical": true
+    },
+    {
+      "path": "F036_FINAL_LOCKED/S08_F036_grandma_match_box_RGBA.png",
+      "expected_sha256": "6ee3d4ccf88650496ce97f8709642fb3b5a228fd0ec1a5e5fd4efc50fac42753",
+      "actual_sha256": "6ee3d4ccf88650496ce97f8709642fb3b5a228fd0ec1a5e5fd4efc50fac42753",
+      "identical": true
+    },
+    {
+      "path": "F036_LAYER_PARTITION/frames/F036_body_behind_original_pixels.png",
+      "expected_sha256": "c0ba247300d2d16518b3a181445df481cc26232e95518eb7ff8592cf2baf8455",
+      "actual_sha256": "c0ba247300d2d16518b3a181445df481cc26232e95518eb7ff8592cf2baf8455",
+      "identical": true
+    },
+    {
+      "path": "F036_LAYER_PARTITION/frames/F036_forearms_elbows_original_pixels.png",
+      "expected_sha256": "412dd0035b51d1afa9d3e95a9745711791c5ace59a14cceadc5318eba62530ea",
+      "actual_sha256": "412dd0035b51d1afa9d3e95a9745711791c5ace59a14cceadc5318eba62530ea",
+      "identical": true
+    },
+    {
+      "path": "F036_LAYER_PARTITION/frames/F036_table_box_original_pixels.png",
+      "expected_sha256": "747315c0af533afcec1f895367fae5777c1031adcda67d251a294bc3858ed853",
+      "actual_sha256": "747315c0af533afcec1f895367fae5777c1031adcda67d251a294bc3858ed853",
+      "identical": true
+    },
+    {
+      "path": "F036_LAYER_PARTITION/masks/F036_arms_binary.png",
+      "expected_sha256": "33ce64d5b681c4ecc64e23b31a3ccf6073832ad1ba9f07adae9899a26f24d2b7",
+      "actual_sha256": "33ce64d5b681c4ecc64e23b31a3ccf6073832ad1ba9f07adae9899a26f24d2b7",
+      "identical": true
+    },
+    {
+      "path": "F036_LAYER_PARTITION/masks/F036_body_binary.png",
+      "expected_sha256": "ea17c66d4a0ade1ae9aa5a49d2e81ae21b8aefbfd5167663aaf5ee322ae1fd96",
+      "actual_sha256": "ea17c66d4a0ade1ae9aa5a49d2e81ae21b8aefbfd5167663aaf5ee322ae1fd96",
+      "identical": true
+    },
+    {
+      "path": "F036_LAYER_PARTITION/masks/F036_table_box_binary.png",
+      "expected_sha256": "5af8ad0ae2746526a13e6b27e10674a2b9f847ff739175bb9dcbc4f328b9af4c",
+      "actual_sha256": "5af8ad0ae2746526a13e6b27e10674a2b9f847ff739175bb9dcbc4f328b9af4c",
+      "identical": true
+    },
+    {
+      "path": "F036_box_layer_source_diagnostic/history_before_layer_correction/F036_FINAL_LOCKED/F036_true_near_hand_match_INDEPENDENT_FOREGROUND_RGBA.png",
+      "expected_sha256": "dfc77ab770b3057678c33f7423ca2957b79136daf886b28a1a8dbaefe636e245",
+      "actual_sha256": "dfc77ab770b3057678c33f7423ca2957b79136daf886b28a1a8dbaefe636e245",
+      "identical": true
+    },
+    {
+      "path": "F036_box_layer_source_diagnostic/history_before_layer_correction/F036_FINAL_LOCKED/F036_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_RGBA.png",
+      "expected_sha256": "6168e4a06d4bb88ba4659280b9c35d3d9002ab8f252392fa0819e389dda2acd0",
+      "actual_sha256": "6168e4a06d4bb88ba4659280b9c35d3d9002ab8f252392fa0819e389dda2acd0",
+      "identical": true
+    },
+    {
+      "path": "F036_box_layer_source_diagnostic/history_before_layer_correction/F036_FINAL_LOCKED/F036_near_distal_hard_guard_footprint.png",
+      "expected_sha256": "e2a5da4e8a2fc666df727a6dbdec5cfdb1cb3886a1e81e5dca3f2b9e05071f56",
+      "actual_sha256": "e2a5da4e8a2fc666df727a6dbdec5cfdb1cb3886a1e81e5dca3f2b9e05071f56",
+      "identical": true
+    },
+    {
+      "path": "F036_box_layer_source_diagnostic/history_before_layer_correction/F036_LAYER_PARTITION/frames/F036_table_box_original_pixels.png",
+      "expected_sha256": "292cf68cebbcc01ea1957d1f2c531f1ed231c538ddedeab96fc2ac1cc628e065",
+      "actual_sha256": "292cf68cebbcc01ea1957d1f2c531f1ed231c538ddedeab96fc2ac1cc628e065",
+      "identical": true
+    },
+    {
+      "path": "F036_box_layer_source_diagnostic/EXCLUDE_near_archive_old_blue_collar_NOT_HAND.png",
+      "expected_sha256": "c44e12118c3f7d9464dee78f0c08d14c06523242f3d3b4af92279c5f2eab9e29",
+      "actual_sha256": "c44e12118c3f7d9464dee78f0c08d14c06523242f3d3b4af92279c5f2eab9e29",
+      "identical": true
+    },
+    {
+      "path": "F036_box_layer_source_diagnostic/EXTRA483_original033_body_box_fringe.png",
+      "expected_sha256": "3faca0226cac8a880b84ea5492cfd07ebd2683e5536e5ca88737f5b627673dd9",
+      "actual_sha256": "3faca0226cac8a880b84ea5492cfd07ebd2683e5536e5ca88737f5b627673dd9",
+      "identical": true
+    }
+  ],
+  "new_generation_calls": 0,
+  "network_calls": 0,
+  "reference_final_or_same_state_intermediates_as_inputs": false,
+  "alpha_changed_pixels_by_color": 0,
+  "denied_attempts": [
+    {
+      "event": "open",
+      "path": "/dev/null",
+      "write": true
+    }
+  ],
+  "opened_paths": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/__pycache__/decimal.cpython-312.pyc",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/__pycache__/fractions.cpython-312.pyc",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/PIL/__pycache__/GimpGradientFile.cpython-312.pyc",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/PIL/__pycache__/GimpPaletteFile.cpython-312.pyc",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/PIL/__pycache__/ImageChops.cpython-312.pyc",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/PIL/__pycache__/ImageFile.cpython-312.pyc",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/PIL/__pycache__/ImagePalette.cpython-312.pyc",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/PIL/__pycache__/ImageSequence.cpython-312.pyc",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/PIL/__pycache__/PaletteFile.cpython-312.pyc",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/PIL/__pycache__/PngImagePlugin.cpython-312.pyc",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first33_actual_20261018_2047/canvas_new/F030.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F000_FINAL_LOCKED/S08_F000_grandma_match_box_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F033_FINAL_LOCKED/F033_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F033_FINAL_LOCKED/F033_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F033_FINAL_LOCKED/F033_far_hand_jade_SEAT_hard_guard.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F033_FINAL_LOCKED/F033_far_original_jade_AA_requires_same_raw_skin_underlay.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F033_FINAL_LOCKED/F033_fixed_table_box_footprint.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F033_FINAL_LOCKED/F033_near_distal_hard_guard_footprint.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F033_FINAL_LOCKED/F033_true_near_hand_match_INDEPENDENT_FOREGROUND_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F033_FINAL_LOCKED/F033_true_near_hand_match_INDEPENDENT_FOREGROUND_footprint.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F033_FINAL_LOCKED/S08_F033_grandma_match_box_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F033_LAYER_PARTITION/frames/F033_body_behind_original_pixels.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F033_LAYER_PARTITION/frames/F033_forearms_elbows_original_pixels.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F033_LAYER_PARTITION/frames/F033_table_box_original_pixels.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_FINAL_LOCKED/F036_EXCLUDE_old_near_blue_collar_archive_only.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_FINAL_LOCKED/F036_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_FINAL_LOCKED/F036_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_FINAL_LOCKED/F036_far_hand_jade_SEAT_hard_guard.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_FINAL_LOCKED/F036_far_original_jade_AA_requires_same_raw_skin_underlay.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_FINAL_LOCKED/F036_fixed_table_box_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_FINAL_LOCKED/F036_fixed_table_box_footprint.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_FINAL_LOCKED/F036_near_distal_hard_guard_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_FINAL_LOCKED/F036_near_distal_hard_guard_footprint.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_FINAL_LOCKED/F036_original_box_fringe483_BODY_BEHIND_TABLE.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_FINAL_LOCKED/F036_true_near_hand_match_INDEPENDENT_FOREGROUND_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_FINAL_LOCKED/F036_true_near_hand_match_INDEPENDENT_FOREGROUND_footprint.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_FINAL_LOCKED/S08_F036_grandma_match_box_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_LAYER_PARTITION/frames/F036_body_behind_original_pixels.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_LAYER_PARTITION/frames/F036_forearms_elbows_original_pixels.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_LAYER_PARTITION/frames/F036_table_box_original_pixels.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_LAYER_PARTITION/masks/F036_arms_binary.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_LAYER_PARTITION/masks/F036_body_binary.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_LAYER_PARTITION/masks/F036_table_box_binary.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_box_layer_source_diagnostic/EXCLUDE_near_archive_old_blue_collar_NOT_HAND.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_box_layer_source_diagnostic/EXTRA483_original033_body_box_fringe.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_box_layer_source_diagnostic/history_before_layer_correction/F036_FINAL_LOCKED/F036_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_box_layer_source_diagnostic/history_before_layer_correction/F036_FINAL_LOCKED/F036_near_distal_hard_guard_footprint.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_box_layer_source_diagnostic/history_before_layer_correction/F036_FINAL_LOCKED/F036_true_near_hand_match_INDEPENDENT_FOREGROUND_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_box_layer_source_diagnostic/history_before_layer_correction/F036_LAYER_PARTITION/frames/F036_table_box_original_pixels.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_color_final/candidates/S08_F036_whole_turn_same_raw_final_color_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_color_final/masks/blue_blouse_SOFT.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_color_final/masks/crown_gray_hair_SOFT.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_color_final/masks/head_ear_neck_skin_SOFT.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F036_DUAL_CONTEXT_033_IDENTITY_030_ACTUAL_LAMP_SPACE.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F036_actual_edit_WHITE_MASK_1p5x.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F036_actual_edit_target_1p5x_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F036_original_underlying_far_hand_SEAT_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F036_preplaced_body_anchor_truehands_NO_ROD_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F036_preplaced_true_near_hand_match_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F036_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/masks/F036_CLEAR_26_old_low_alpha_fragments_in_871_air_islands.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/masks/F036_CLOSE_871_old_air_islands_to_BLACK.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/masks/F036_EXCLUDE_reuse_old_far_isolated_pixel_1127_800.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/masks/F036_FOREGROUND_near_forearm_corridor_only_construction.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/masks/F036_INCLUDE_original033_box_AA_surround_from_body_partition.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/masks/F036_RELEASE_old_collar_blue_NOT_true_hand.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/masks/F036_WHITE_body_neck_head_arms_wrist_allowed.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/masks/F036_far_guard_occluded_by_FOREGROUND_near_forearm_or_hand.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/masks/F036_far_original_jade_AA_underlay_editable.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/masks/F036_far_original_underlying_full_hand_SEAT_footprint.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/masks/F036_far_visible_hand_jade_TRUE_SEAT_guard.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/masks/F036_fixed_table_box_guard.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/masks/F036_near_distal_palm_fingers_entire_match_guard.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/masks/F036_near_proximal_palmroot_release.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/masks/F036_near_whole_transformed_hand_footprint.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_input_gate/masks/F036_removed_tiny_permission_islands.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_native_call17/raw/F036_whole_turn_arms_native_raw.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_result_registered_nominal/candidates/S08_F036_whole_turn_arms_candidate_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_result_registered_nominal/registered/F036_registered_scene_patch_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/candidates/S08_F036_same_raw_semantic_RGBA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/masks/CLEAR_generated_near_hand_match_and_rod_ghosts.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/masks/CLEAR_last_native_jade_fringe_with_same_forearm_contour.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/masks/CLEAR_native_duplicate_far_material_above_true_front_arm.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/masks/EXPLICIT_semantic_union.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/masks/ORIGINAL_true_jade_AA_over_native_collar.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/masks/RELEASE_false_far_guard_exterior_air_NOT_seat.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/masks/RESTORE_native_sleeve_and_far_proximal_skin_collar.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/masks/RESTORE_original_far_hand_visible_above_true_front_arm.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/masks/RESTORE_same_raw_complete_far_sleeve.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/masks/RESTORE_true_near_distal_hand_AA.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/masks/RESTORE_true_transparent_lever_seat.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/masks/SAME_RAW_continuous_blue_cloth_seam_donor_plus16_plus32.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/masks/SAME_RAW_far_wrist_collar_smooth6right2down.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/masks/SAME_RAW_near_root_lower_edge_continuation_max3px.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/masks/TRUE_jade_partial_AA_underlay_sourceover.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_same_raw_semantic_v9/masks/TRUE_native_forearm_front_occlusion_semantic.png",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output/tree/astra_s08_first_mother_20261018_1433/F036_structure_gate/geometry/F036_first_structure.json"
+  ],
+  "output_files_written": 153,
+  "registration_policy": "Exact actual frozen scale/tx/ty applied; original optimizer retained as source evidence, not reoptimized.",
+  "visual_scope": "Pixel/source reconstruction only; no new anatomy/color/Canvas visual acceptance inferred.",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "Pillow": "12.3.0",
+    "NumPy": "2.3.5",
+    "SciPy": "1.17.0",
+    "zlib": "1.3.2",
+    "zlib_runtime": "1.3.2"
+  }
+}

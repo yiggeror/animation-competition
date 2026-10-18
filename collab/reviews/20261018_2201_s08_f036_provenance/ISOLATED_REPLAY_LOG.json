@@ -1,0 +1,53 @@
+{
+  "started_utc": "2026-10-18T22:07:16.982313+00:00",
+  "finished_utc": "2026-10-18T22:07:57.728528+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-I",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/bundle/replay_f036.py",
+    "--out",
+    "/tmp/astra_f036_isolated_complete_20261018_2207/output"
+  ],
+  "cwd": "/tmp/astra_f036_isolated_complete_20261018_2207",
+  "exit_code": 0,
+  "pre_run_files": [
+    "F036_FINAL_LOCKED/seal.py",
+    "F036_LAYER_PARTITION/build_partition.py",
+    "F036_box_layer_source_diagnostic/history_before_layer_correction/F036_FINAL_LOCKED/seal.py",
+    "F036_box_layer_source_diagnostic/history_before_layer_correction/F036_LAYER_PARTITION/build_partition.py",
+    "F036_box_layer_source_diagnostic/rebuild_explicit_masks.py",
+    "F036_color_final/apply_colors.py",
+    "F036_input_gate/build_input.py",
+    "F036_input_gate/composite_returned_crop.py",
+    "F036_native_call17/raw/F036_whole_turn_arms_native_raw.png",
+    "F036_same_raw_semantic_v9/build.py",
+    "F036_structure_gate/geometry/F036_first_structure.json",
+    "REPLAY_DEPENDENCIES.json",
+    "dependencies/F000_FINAL_LOCKED/S08_F000_grandma_match_box_RGBA.png",
+    "dependencies/F033_FINAL_LOCKED/F033_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_RGBA.png",
+    "dependencies/F033_FINAL_LOCKED/F033_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+    "dependencies/F033_FINAL_LOCKED/F033_far_hand_jade_SEAT_hard_guard.png",
+    "dependencies/F033_FINAL_LOCKED/F033_far_original_jade_AA_requires_same_raw_skin_underlay.png",
+    "dependencies/F033_FINAL_LOCKED/F033_fixed_table_box_footprint.png",
+    "dependencies/F033_FINAL_LOCKED/F033_near_distal_hard_guard_footprint.png",
+    "dependencies/F033_FINAL_LOCKED/F033_true_near_hand_match_INDEPENDENT_FOREGROUND_RGBA.png",
+    "dependencies/F033_FINAL_LOCKED/F033_true_near_hand_match_INDEPENDENT_FOREGROUND_footprint.png",
+    "dependencies/F033_FINAL_LOCKED/S08_F033_grandma_match_box_RGBA.png",
+    "dependencies/actual030_canvas/F030.png",
+    "dependencies/font/DejaVuSans.ttf",
+    "original_upstream/F033_LAYER_PARTITION/build_partition.py",
+    "replay_f036.py"
+  ],
+  "only_declared_inputs_scripts_manifest_and_replayer": true,
+  "F036_final_and_intermediate_images_present_before_replay": false,
+  "network_used": false,
+  "new_generation_calls": 0,
+  "output_sha256": "6ee3d4ccf88650496ce97f8709642fb3b5a228fd0ec1a5e5fd4efc50fac42753",
+  "post_process_external_oracle_comparison": {
+    "different_RGBA_pixels": 0,
+    "max_channel_error": 0,
+    "PNG_bytes_identical": true,
+    "expected_sha256": "6ee3d4ccf88650496ce97f8709642fb3b5a228fd0ec1a5e5fd4efc50fac42753",
+    "actual_sha256": "6ee3d4ccf88650496ce97f8709642fb3b5a228fd0ec1a5e5fd4efc50fac42753"
+  }
+}

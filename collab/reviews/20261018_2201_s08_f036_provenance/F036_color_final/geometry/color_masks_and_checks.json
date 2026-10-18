@@ -1,0 +1,43 @@
+{
+  "status": "FINAL_COLOR_CANDIDATE_PENDING_DUAL_REVIEW",
+  "source_shape_sha256": "32f9ab00d6679f2594de9da6cf0c0744a26c8ae60976934624d941c0c1c8c186",
+  "candidate_sha256": "6ee3d4ccf88650496ce97f8709642fb3b5a228fd0ec1a5e5fd4efc50fac42753",
+  "alpha_changed": 0,
+  "fixed_hand_match_jade_seat_box_changed": 0,
+  "broad_near_arm_ROI_changed": 4718,
+  "actual_near_arm_skin_changed": 0,
+  "near_arm_policy": "Both near upperarm and near forearm skin unchanged, including sleeve-root turning shadow. Broad envelope may contain blue cloth color correction.",
+  "material_masks": [
+    {
+      "name": "head_ear_neck_skin",
+      "max_add_RGB": [
+        0,
+        5,
+        6
+      ],
+      "affected_soft_domain_pixels": 32044,
+      "mask": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_color_final/masks/head_ear_neck_skin_SOFT.png"
+    },
+    {
+      "name": "blue_blouse",
+      "max_add_RGB": [
+        9,
+        3,
+        0
+      ],
+      "affected_soft_domain_pixels": 111174,
+      "mask": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_color_final/masks/blue_blouse_SOFT.png"
+    },
+    {
+      "name": "crown_gray_hair",
+      "max_add_RGB": [
+        2,
+        2,
+        1
+      ],
+      "affected_soft_domain_pixels": 36599,
+      "mask": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_color_final/masks/crown_gray_hair_SOFT.png"
+    }
+  ],
+  "hair_bun_lower_shadow": "No correction belowY560; natural bun/ear and narrow far-arm occlusion shadows retained, not forced to lit mean."
+}

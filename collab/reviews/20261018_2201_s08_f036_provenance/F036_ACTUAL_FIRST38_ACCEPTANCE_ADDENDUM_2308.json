@@ -1,0 +1,34 @@
+{
+  "status": "F036_F037_ACTUAL_FIRST38_DUAL_REVIEW_PASSED",
+  "recorded_utc": "2026-10-18T23:09:05.183517+00:00",
+  "scope": "首38帧影片中的新增036–037实际Canvas与编码门已由协调及独审确认通过；不含038以后，也不声明整镜ready或原速主观自然度。",
+  "historical_manifest_policy": "原132项补包及旧SEALED_MANIFEST原字节不变；其中pending是当时历史快照，本新增短收据记录后续验收。",
+  "final_mother_sha256": "6ee3d4ccf88650496ce97f8709642fb3b5a228fd0ec1a5e5fd4efc50fac42753",
+  "actual_movie_commit": "f0cd7c13fa8cbba6bf8e3b86897882e04d7173cc",
+  "actual_canvas_supplement_commit": "b0477742efc63acc08ea16026b968643b484ab04",
+  "movie_sha256": "a33de1b70d8afb5f9db64bff4922858443c025198e6221b163cc5827ec499a2f",
+  "coordinator_replay": "最终PNG字节相同，RGBA差异0；复现证据不替代实际眼审。",
+  "evidence": [
+    {
+      "role": "coordinator_replay_log",
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_f036_replay_coordinator_20261018_2217/ISOLATED_REPLAY_LOG.json",
+      "sha256": "8a94f6dab3289b0745f7e2697d47f28362ca73287a6486effeeccbb125349684"
+    },
+    {
+      "role": "coordinator_replay_result",
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_f036_replay_coordinator_20261018_2217/output/REPLAY_RESULT.json",
+      "sha256": "0eba827e93d987539c55ebddb8bcc86d52e703dca976f438adfa76ef69c5e744"
+    },
+    {
+      "role": "independent_actual_review",
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first38_actual_review_20261018_2223/independent/INDEPENDENT_REVIEW.md",
+      "sha256": "ac7a02cf4ab842c2f16bc7b946ca79473f71e49eb43feb3221997126abea5a2a"
+    },
+    {
+      "role": "independent_actual_validation",
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first38_actual_review_20261018_2223/independent/INDEPENDENT_VALIDATION.json",
+      "sha256": "c369c1221854239efceedc55502535e095b081236151965040cde0842f0c70e1"
+    }
+  ],
+  "original_supplement_rows_sha256": "8191f0ef55a28ceac5219a7248b7a34a9826ad309dfe96073fd8e52ebb6f73d6"
+}
