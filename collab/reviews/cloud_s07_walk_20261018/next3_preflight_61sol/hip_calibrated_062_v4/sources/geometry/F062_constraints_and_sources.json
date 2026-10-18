@@ -1,0 +1,372 @@
+{
+  "status": "TECHNICAL_PREPOSITION_COMPLETE_OPERATION_MASK_PENDING_PARENT_REVIEW_NOT_CALL_APPROVED",
+  "source_F057": {
+    "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F057_semantic_color_ankle/candidate/F057_semantic_color_and_ankle_PENDING.png",
+    "sha256": "93939f3e148c0a957ef418c677e60cc3fd27cf6b6844f91d500c8a3508b76720",
+    "authority_commit": "e3d2202"
+  },
+  "new_image_calls": 0,
+  "registration_unchanged": {
+    "s": 0.36410361842105265,
+    "tx": 627.0254537171638,
+    "ty": 402.7604324894813,
+    "head_target": 69.1796875,
+    "head_center_world": [
+      929.9596642434797,
+      442.447726897376
+    ],
+    "warning": "Head source is actual G037253±5asset pixels, not75.1 construction; F057 head190±5native manual estimate. One uniform whole-image registration only."
+  },
+  "construction75_1_not_used": true,
+  "world_foot_rule": "Actual frozen057 near whole shoe+ankle is byte-identical at same native and world position; far whole shoe translates+73worldX,-23worldY. No foot-only stretch.",
+  "body_delta_world_requested": [
+    29.803991810986417,
+    -3.1758879254900307
+  ],
+  "body_delta_world_constraint_proposal": [
+    29.803991810986417,
+    -3.1758879254900307
+  ],
+  "head_center_world_proposal": [
+    959.7636560544661,
+    439.271838971886
+  ],
+  "body_vertical_delta_changed_from_reference": false,
+  "hip_calibration": {
+    "definition": "Frozen057 skeleton hidden hips898/613 and891/614 registered into same actual057 canvas, not measured anatomical joints. Actual057 knee/ankle definitions retained.",
+    "historical_waist_pixel_pivot_native_NOT_HIP": [
+      791.0,
+      550.2708845004845
+    ],
+    "hidden_near_hip_native": [
+      744.223711530048,
+      577.4168584817409
+    ],
+    "hidden_far_hip_native": [
+      724.9984150873603,
+      580.1633294021248
+    ],
+    "historical_waist_pivot_unreachability_claim_WITHDRAWN": true,
+    "rendered062_hips_exact_frozen_state": true,
+    "frozen_near_hip_world": [
+      930,
+      610
+    ],
+    "frozen_far_hip_world": [
+      923,
+      611
+    ],
+    "hip_vs_uniform_upper_body_offset_world": [
+      2.1960081890135825,
+      0.17588792549008758
+    ]
+  },
+  "near_chain": {
+    "source_native": [
+      [
+        744.223711530048,
+        577.4168584817409
+      ],
+      [
+        818.7165829532703,
+        764.1535416501339
+      ],
+      [
+        833.856190186625,
+        957.8118142506097
+      ]
+    ],
+    "proposal_native": [
+      [
+        832.1107809823349,
+        569.1774457205889
+      ],
+      [
+        869.1147785290661,
+        766.789390954603
+      ],
+      [
+        833.856190186625,
+        957.8118142506097
+      ]
+    ],
+    "source_world": [
+      [
+        898.0,
+        613.0
+      ],
+      [
+        925.1231240317695,
+        680.9915020335576
+      ],
+      [
+        930.6355098069075,
+        751.5031798245614
+      ]
+    ],
+    "proposal_world": [
+      [
+        930.0,
+        610.0
+      ],
+      [
+        943.4732894028086,
+        681.9512243029274
+      ],
+      [
+        930.6355098069075,
+        751.5031798245614
+      ]
+    ],
+    "lengths_source_world": [
+      73.20183198542243,
+      70.72682024406504
+    ],
+    "lengths_proposal_world": [
+      73.2018319854224,
+      70.72682024406505
+    ],
+    "thigh_rotation_deg": 11.141869528357196,
+    "shin_rotation_deg": 14.927968418518676,
+    "scale": 1,
+    "ankle_and_complete_shoe_fixed": true,
+    "knee_cut_explicit_not_native_art": true
+  },
+  "far_chain": {
+    "source_native": [
+      [
+        724.9984150873603,
+        580.1633294021248
+      ],
+      [
+        709.0,
+        764.345147583943
+      ],
+      [
+        658.0820512820513,
+        954.1656604044558
+      ]
+    ],
+    "proposal_native": [
+      [
+        812.8854845396471,
+        571.923916640973
+      ],
+      [
+        935.607839698414,
+        710.1921884113011
+      ],
+      [
+        858.5744284700806,
+        890.9968292356247
+      ]
+    ],
+    "proposal_world": [
+      [
+        923.0,
+        611.0
+      ],
+      [
+        967.6836535744605,
+        661.343978064402
+      ],
+      [
+        939.6355098069075,
+        727.175602015857
+      ]
+    ],
+    "lengths_source_world": [
+      67.3137803433397,
+      71.5576766035001
+    ],
+    "lengths_proposal_world": [
+      67.31378034333972,
+      71.55767660350011
+    ],
+    "thigh_rotation_deg": -46.55557232500345,
+    "shin_rotation_deg": 8.061172836656318,
+    "knee_cut_is_explicit_technical_scaffold_only": true,
+    "complete_shoe_translation_world": [
+      73,
+      -23
+    ]
+  },
+  "arms": {
+    "source_visible_proxy_definition": "Visible sleeve outlet/elbow/wrist only. Near three points and far elbow are manual +/-8native estimates. Far wrist inherited selected14deg source. Not anatomical shoulder/bone measurements.",
+    "near_source_native": [
+      [
+        727.0,
+        369.0
+      ],
+      [
+        700.0,
+        452.0
+      ],
+      [
+        675.0,
+        535.0
+      ]
+    ],
+    "far_source_native": [
+      [
+        903.0,
+        367.0
+      ],
+      [
+        916.0,
+        460.0
+      ],
+      [
+        940.1062511539905,
+        521.599860420153
+      ]
+    ],
+    "near_proposal_world": [
+      [
+        921.5327761202556,
+        533.9387797613597
+      ],
+      [
+        916.0035457309478,
+        565.233457885771
+      ],
+      [
+        911.1954357157114,
+        596.4267891508896
+      ]
+    ],
+    "far_proposal_world": [
+      [
+        985.6150129623609,
+        533.2105725245176
+      ],
+      [
+        985.5896664367053,
+        567.4014245042351
+      ],
+      [
+        991.159944668285,
+        590.8334281205856
+      ]
+    ],
+    "near_whole_rotation_deg": -8,
+    "far_whole_rotation_deg": 8,
+    "scale": 1,
+    "distal_jade_hand_same_whole_arm_transform": true,
+    "old623_not_target": true,
+    "small_counterphase_amplitudes_are_new_review_proposal": true
+  },
+  "actual_support": {
+    "near_shoe_ankle_FIXED": {
+      "native_alpha128_bottom": 1022,
+      "world_alpha128_bottom": 774.874330515797,
+      "floor_expected_world": 774.874330515797
+    },
+    "far_shoe_ankle": {
+      "native_alpha128_bottom": 959,
+      "world_alpha128_bottom": 751.9358025552708,
+      "floor_expected_world": 751.874330515797
+    }
+  },
+  "near_whole_shoe_ankle_original_RGBA_changes": 0,
+  "all_source_foreground_owned_exactly_once": true,
+  "layers_back_to_front": [
+    "far_thigh",
+    "far_shin",
+    "far_shoe_ankle",
+    "near_thigh",
+    "near_shin",
+    "far_complete_arm_jade_hand",
+    "body_head_blouse",
+    "near_complete_arm",
+    "near_shoe_ankle_FIXED"
+  ],
+  "source_materials": "Only original057 RGBA with scale1 rigid transforms and bicubic sampling; no repaint, palette changes, invented geometry or new images. Alpha compositing is scaffold assembly only, not an adopted byte-exact new figure.",
+  "source_body_foreground_pixels_below635": 0,
+  "source_body_alpha20_pixels_below635": 0,
+  "complete_blouse_source_pixels_assigned_to_arm_or_pants": 0,
+  "shoe_guard_visibility": {
+    "source_near_navy_material_reassigned_to_pants": 211,
+    "source_far_navy_material_reassigned_to_pants": 817,
+    "far_shoe_hidden_pixels_excluded_from_guard": 5782,
+    "far_shoe_front_occluding_layers": [
+      "near_thigh",
+      "near_shin",
+      "far_complete_arm_jade_hand",
+      "body_head_blouse",
+      "near_complete_arm",
+      "near_shoe_ankle_FIXED"
+    ],
+    "hard_shoe_guard_over_visible_navy_pixels": 0,
+    "note": "Full original shoe layers retained; only actually visible shoe/ankle material protects final pixels. Navy pants above/covering shoes are editable."
+  },
+  "draft_operational_mask": {
+    "status": "DRAFT_PENDING_PARENT_ACTUAL_REVIEW_NOT_INVOCATION_APPROVED",
+    "white_pixels": 91487,
+    "whole_shoe_ankle_overlap": 0,
+    "complete_hand_jade_overlap": 0,
+    "complete_visible_arm_except_sleeve_overlap": 0,
+    "head_overlap": 0,
+    "blouse_outside_sleeve_release_overlap": 0,
+    "crop_xyxy": [
+      650,
+      280,
+      1120,
+      1060
+    ],
+    "white_pixels_outside_crop": 0,
+    "irrelevant_draft_halo_removed_outside_crop": 1807,
+    "removed_halo_actual_alpha20_material_pixels": 0,
+    "mask_sha256": "a3dd9c47614fe7fe3e6f9663af2695d2168d65f4c0fcc2eb20bcab9abdb77002"
+  },
+  "actual_calibrated_trajectory_reach": {
+    "62": {
+      "head_body_delta_world": [
+        29.803991810986417,
+        -3.1758879254900307
+      ],
+      "near_hip_to_still_fixed_057_near_ankle_distance_world": 141.50460689736155,
+      "near_two_calibrated_proxy_segments_total_world": 143.92865222948745,
+      "reach_margin_world": 2.4240453321258997,
+      "note": "057 near shoe remains planted through068; no reach conflict under frozen-hip calibration."
+    },
+    "68": {
+      "head_body_delta_world": [
+        72.01685471749954,
+        2.0015197382925862
+      ],
+      "near_hip_to_still_fixed_057_near_ankle_distance_world": 142.0657636110073,
+      "near_two_calibrated_proxy_segments_total_world": 143.92865222948745,
+      "reach_margin_world": 1.8628886184801559,
+      "note": "057 near shoe remains planted through068; no reach conflict under frozen-hip calibration."
+    },
+    "73": {
+      "head_body_delta_world": [
+        98.69634047573868,
+        -3.247986830183663
+      ],
+      "near_hip_to_still_fixed_057_near_ankle_distance_world": 157.58991845993756,
+      "near_two_calibrated_proxy_segments_total_world": 143.92865222948745,
+      "reach_margin_world": -13.66126623045011,
+      "note": "For073 near shoe is swinging; this fixed-near-foot diagnostic does NOT apply as support constraint."
+    }
+  },
+  "semantic_domains": [
+    "hips",
+    "complete_near_pants_and_vacated_edges",
+    "complete_far_pants_and_vacated_edges",
+    "near_ankle",
+    "far_ankle",
+    "near_sleeve",
+    "far_sleeve"
+  ],
+  "preposition_limits": [
+    "Source-piece silhouettes and knee/hip/ankle/sleeve AA cuts remain technical scaffold, not accepted artwork or a passed invocation mask.",
+    "Full source and destination pant silhouettes and vacated cleanup are semantic review domains; do not assume small knee capsule can repair all cuts.",
+    "Far arm is behind blouse; actual bangle/hand visibility must be examined.",
+    "Hidden hips reuse frozen057 definitions and source knees/ankles are manual2D proxies, not anatomical measurements.",
+    "No center-of-mass/stability pass; old support hulls and wrist623 have not been reused.",
+    "No068/073 pictures or079 are prepared."
+  ],
+  "proposal_sha256": "35d3c8fea92ee8cbb97ae028229fbe86ae2d3c32c6ec8b21f9e277d31478723e"
+}

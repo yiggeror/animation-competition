@@ -1,0 +1,47 @@
+{
+  "status": "ACTUAL_PREPOSITION_AND_MASK_AUTHOR_REVIEW_PASS_PENDING_ASTRA_INPUT_GATE",
+  "scope": "S07 F062 input only; no finished art, generation approval,068/073 work or scene readiness claimed.",
+  "source_sha256": "93939f3e148c0a957ef418c677e60cc3fd27cf6b6844f91d500c8a3508b76720",
+  "proposal_sha256": "05588ef8914feafd6f75f3eb52a5d4548d9aed3a1cb152041712a29ecc5fa874",
+  "crop_sha256": "aeebc96671ce3d85ba0cee1c1a54e4e593b0347cb37ecbac3f8387689b4e4d36",
+  "crop_mask_sha256": "a687fd6e1e69f78687843523f9bfc0b9aaa976ed0612061794082b7e703b0a21",
+  "near_shoe_source_RGBA_changes": 0,
+  "near_actual_sole_native": 1022,
+  "near_actual_sole_world": 774.874330515797,
+  "head_blouse_matches_original_beat_translation_exactly": true,
+  "near_proxy_lengths_world_source": [
+    61.79157582498698,
+    70.72682024406504
+  ],
+  "near_proxy_lengths_world_F062": [
+    61.79157582498698,
+    70.72682024406504
+  ],
+  "near_hip_knee_cuff_same_white_component": [
+    36,
+    36,
+    36
+  ],
+  "actual_edit_protection_overlap_pixels": {
+    "HARD_complete_head_blouse_except_sleeve": 0,
+    "HARD_visible_complete_arms_except_sleeve": 0,
+    "HARD_visible_complete_shoes_ankles": 0
+  },
+  "actual_crop_size": [
+    470,
+    780
+  ],
+  "actual_views": [
+    "qa/F057_F062_actual_pixels_and_chain_comparison.png",
+    "qa/F062_crop_and_edit_domain_PENDING.png",
+    "qa/actual_fixed_near_and_swing_far_feet.png",
+    "masks/F062_crop_WHITE_EDIT_PENDING.png"
+  ],
+  "visual_findings": [
+    "Entire near trouser volume from waist/hips through knee to cuff is editable, including technical piece cracks and knee-back turn.",
+    "Head and blouse retain the original beat; fixed whole near shoe and bare ankle remain at the same support position.",
+    "Far hip is an explicit manual volume guide, not anatomical measurement; the whole far trouser is editable.",
+    "Visible arms, hands, jade bracelet and actual visible feet remain protected except small sleeve connections."
+  ],
+  "new_image_requests": 0
+}

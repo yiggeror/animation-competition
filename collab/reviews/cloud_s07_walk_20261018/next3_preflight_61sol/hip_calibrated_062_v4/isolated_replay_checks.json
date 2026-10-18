@@ -1,0 +1,10 @@
+{
+  "status": "ISOLATED_SOURCE_SNAPSHOT_REPLAY_PASS",
+  "inputs": "Only v4 package plus committed e3dF057 PNG and77ab hip-gate JSON; all generated PNG directories removed before replay. No untracked parent dependencies available.",
+  "png_files_checked": 32,
+  "png_sha256_mismatches": [],
+  "generated_calls": 0,
+  "command": "python hip_calibrated_062_v4/prepare.py",
+  "returncode": 0,
+  "stdout": "{\"proposal\": \"/tmp/s07_062_isolated_replay_j60gst7g/cloud_s07_walk_20261018/next3_preflight_61sol/hip_calibrated_062_v4/reference/F062_hip_calibrated_source_pixels_NOT_ART.png\", \"sha256\": \"05588ef8914feafd6f75f3eb52a5d4548d9aed3a1cb152041712a29ecc5fa874\", \"mask\": {\"pixels\": 103519, \"crop_xyxy\": [650, 280, 1120, 1060], \"head_blouse_overlap\": 0, \"visible_complete_arm_overlap\": 0, \"visible_complete_shoes_ankles_overlap\": 0, \"outside_crop\": 0, \"omitted_outside_crop_material_alpha20\": 0, \"all_pant_layer_alpha_outside_crop_or_guard\": 43, \"actual_visible_pants_alpha20_missing_edit_except_guard\": 0, \"isolated_arm_layer_AA_over_actual_body_guard\": 87, \"pants_side_isolated_ink_AA_still_hardprotected\": 0, \"detached_arm_layer_fragments_not_editable_and_visible\": 0}, \"actual_shoe_bottoms\": {\"near_shoe_ankle_FIXED\": {\"native_alpha128_bottom\": 1022, \"world_alpha128_bottom\": 774.874330515797}, \"far_shoe_ankle\": {\"native_alpha128_bottom\": 959, \"world_alpha128_bottom\": 751.9358025552708}}}"
+}
