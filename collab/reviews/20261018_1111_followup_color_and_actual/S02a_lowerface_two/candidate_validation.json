@@ -1,0 +1,109 @@
+{
+  "purpose": "Preserve the existing S02a shot lower-face cool-shadow continuity. Not a claim that the whole character is fully neutralized.",
+  "parameters": {
+    "face_geometry": "Own original dark-jaw bounded connected face domain, seed (840,715), x640..1040/y600..790 ROI; skin hue/saturation not used",
+    "gradient_start_y": 708,
+    "gradient_end": "per-state chin_y-4",
+    "gradient": "smoothstep(u)=3u^2-2u^3, zero first derivative at both endpoints",
+    "jaw_feather": "inside-only clip((distance to face exterior-0.5)/1.5,0,1)",
+    "reference_field": "Gaussian sigma9 normalized by each reference actual face mask, then map color field by mouth/chin vertical landmarks and per-row jaw width. Average neighboring reference chroma fields. Geometry is used only to sample color, no source pixel relocation.",
+    "luminance": "Retain each base pixel Rec.709 Y prime; gamut-limit chroma only if needed",
+    "protected": "Mouth and all y<=708, eyes/nose, black jaw line, all alpha, existing neck/collars, mask exterior"
+  },
+  "references": {
+    "focus": {
+      "path": "astra_s05a_draw_20261018_0956/inputs/S02a_k01_focus.png",
+      "mouth_y": 664,
+      "chin_y": 729,
+      "sha256": "50e8eb5e6b40f7ac3e8ef58294562dcc3f926c1051d9bb7c719ce170eec78d50"
+    },
+    "tense": {
+      "path": "astra_s02a_opening_draw_20261018/inputs/S02a_k02_tense.png",
+      "mouth_y": 715,
+      "chin_y": 774,
+      "sha256": "0c137f2c2b04ea22ea1acfbb554e70afb28b0d461a68e65e6249ab493270f0b5"
+    },
+    "F041": {
+      "path": "astra_s02a_opening_draw_20261018/final/S02a_F041.png",
+      "mouth_y": 704,
+      "chin_y": 766,
+      "sha256": "eea2920f3035b0ab4d0306d380b5b31ca440e46a0da86fa62c63ed6ad938a260"
+    },
+    "relief": {
+      "path": "astra_s02a_opening_draw_20261018/inputs/S02a_k03_relief.png",
+      "mouth_y": 694,
+      "chin_y": 754,
+      "sha256": "96c43a3788cf2be41eceb9900fe711c49739397e63ced7fbcd0c62856c77f87f"
+    }
+  },
+  "assets": [
+    {
+      "name": "S02a_F023",
+      "base_path": "astra_s02a_semantic_masks_20261018_1042/candidates/S02a_F023.png",
+      "base_sha256": "21fe5f0012dcda2bf083ee7bf62a1314116474c8df7bed2c7e896305dbaf5530",
+      "output_sha256": "e54c6d3ce43c2cd1eaf490a74a25ce3fd964a55778d22e6abf9bdc2f140b695f",
+      "refs": [
+        [
+          "focus",
+          0.5
+        ],
+        [
+          "tense",
+          0.5
+        ]
+      ],
+      "mouth_y": 698,
+      "chin_y": 755,
+      "support_bbox": [
+        720,
+        709,
+        950,
+        754
+      ],
+      "support_pixels": 6414,
+      "changed_pixels": 5715,
+      "checks": {
+        "outside_support_changed": 0,
+        "alpha_changed": 0,
+        "neck_collar_overlap": 0,
+        "mouth_eye_upperface_changed": 0,
+        "black_jaw_changed": 0,
+        "max_luma_difference": 0.4812000000000012
+      }
+    },
+    {
+      "name": "S02a_F044",
+      "base_path": "astra_s02a_semantic_masks_20261018_1042/candidates/S02a_F044.png",
+      "base_sha256": "7d1cf7eaff89776268a39afded7ca7e7671c683afba3e7ef0a8831e455c97121",
+      "output_sha256": "bbbdfa0ebfea23d41455b876c25a769d3383040e52581320154596d91ce01b9f",
+      "refs": [
+        [
+          "F041",
+          0.5
+        ],
+        [
+          "relief",
+          0.5
+        ]
+      ],
+      "mouth_y": 697,
+      "chin_y": 760,
+      "support_bbox": [
+        713,
+        709,
+        959,
+        759
+      ],
+      "support_pixels": 7401,
+      "changed_pixels": 5993,
+      "checks": {
+        "outside_support_changed": 0,
+        "alpha_changed": 0,
+        "neck_collar_overlap": 0,
+        "mouth_eye_upperface_changed": 0,
+        "black_jaw_changed": 0,
+        "max_luma_difference": 0.4795999999999765
+      }
+    }
+  ]
+}

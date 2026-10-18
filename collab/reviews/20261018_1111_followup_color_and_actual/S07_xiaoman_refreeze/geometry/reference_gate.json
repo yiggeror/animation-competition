@@ -1,0 +1,69 @@
+{
+  "status": "reference_gate_pending_no_imagegen_calls",
+  "repository": "yiggeror/animation-competition",
+  "source_commit": "b568a498bccb367958408f7f47adb95d23a3d789",
+  "fps": 24,
+  "scene": [
+    1672,
+    941
+  ],
+  "approved_cameras": {
+    "F000_F015": [
+      816,
+      482.5,
+      1.04
+    ],
+    "F039_F056": [
+      605,
+      637.5,
+      4.18
+    ]
+  },
+  "mother_registrations": {
+    "prone_F000_F008": {
+      "scale": 0.16,
+      "translate": [
+        430,
+        533
+      ],
+      "inherits": "S01 S04 frozen reference",
+      "source": "anim_01_xiaoman_prone_phone.png"
+    },
+    "supine_F039_onward": {
+      "scale": 0.18,
+      "translate": [
+        430,
+        560
+      ],
+      "inherits": "S07 frozen F043 reference",
+      "source": "anim_07_xiaoman_flop.png"
+    }
+  },
+  "base_frames": [
+    0,
+    8,
+    39,
+    43,
+    46,
+    49,
+    53
+  ],
+  "proposed_extra_frames": [
+    3,
+    6
+  ],
+  "pending_decisions": [
+    "Cross-pose projected head/torso continuity: 0.16 prone and 0.18 supine mother crops must not be silently mixed.",
+    "Approve two release-to-contact inbetweens F003/F006 if image review confirms required.",
+    "F039 near elbow support and F043/F046 near palm depth/clearance must be drawn, old centerline is not contact proof."
+  ],
+  "source_limitations": [
+    "Both pose mothers are 3/4; strict side view requires new paint.",
+    "Phone source shows rear shell, not visible screen or thumb contact.",
+    "Hip/knee points under dress are construction only.",
+    "Source F008 still holds phone despite caption; production follows plan instead."
+  ],
+  "generation_calls": 0,
+  "failed_generations": 0,
+  "generation_tool": "builtin image_gen only; not invoked yet"
+}

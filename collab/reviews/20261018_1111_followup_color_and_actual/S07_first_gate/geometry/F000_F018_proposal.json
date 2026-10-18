@@ -1,0 +1,240 @@
+{
+  "status": "PROPOSAL_PENDING_OPUS_FREEZE_NOT_PRODUCTION_ART",
+  "replaces": "此前S01/S04 72.02宽/21.7深混源提案及S07 765.859浅盆落地rim；未改旧包。",
+  "units": "1672×941 scene pixels before camera",
+  "shared_bowl": {
+    "width": 79.1,
+    "rim_ellipse_height": 17.4,
+    "rim_center_to_visible_bottom": 21.7,
+    "source_uniform_scale": 0.205,
+    "source_visible_width_px_approx": 386,
+    "source_visible_depth_px_approx": 106,
+    "scope": "原件部分盆底被裤腿遮挡；79.1/21.7是同一等比观察下的构造，非完整实测盆形。"
+  },
+  "fixed_world": {
+    "floor_y": 775,
+    "stool_top_y": 691.9,
+    "stool_x_extent": [
+      899,
+      982
+    ],
+    "F000_seat_contact": [
+      933,
+      691.9
+    ],
+    "F018_seat_contact": [
+      933,
+      691.9
+    ],
+    "near_ankle": [
+      869,
+      758
+    ],
+    "far_ankle": [
+      879,
+      758
+    ],
+    "sole_y": 775
+  },
+  "contacts": {
+    "rim_offsets": {
+      "near_contact": [
+        34,
+        4.4
+      ],
+      "far_contact": [
+        27,
+        -6.3
+      ]
+    },
+    "wrist_minus_contact": {
+      "near": [
+        9,
+        -12
+      ],
+      "far": [
+        7,
+        -11
+      ]
+    },
+    "grip": "近左手在近侧前缘，远右手在远侧后缘；拇指压内沿、卷指扣外沿下缘。不可画成腕点落盆或掌穿盆。"
+  },
+  "states": [
+    {
+      "frame": 0,
+      "hip": [
+        929,
+        670.9
+      ],
+      "shoulder": [
+        916,
+        560.664
+      ],
+      "far_hip": [
+        922,
+        671.9
+      ],
+      "far_shoulder": [
+        908,
+        563.664
+      ],
+      "near_ankle": [
+        869,
+        758
+      ],
+      "far_ankle": [
+        879,
+        758
+      ],
+      "head_center": [
+        893,
+        515
+      ],
+      "near_knee": [
+        852.8600235172161,
+        687.8323353735128
+      ],
+      "far_knee": [
+        847.0446059971617,
+        693.4798264561899
+      ],
+      "bowl_rim_center": [
+        868.52,
+        644.81
+      ],
+      "bowl_bottom_y": 666.51,
+      "camera": [
+        816,
+        482.5,
+        1.04
+      ],
+      "body_scope": "端态沿原两包身体；中间仅用于手臂可达检查，不是生产姿态冻结。",
+      "near_hand_anatomical": "left",
+      "arm_ik_branch": -1,
+      "near_contact": [
+        902.52,
+        649.2099999999999
+      ],
+      "near_wrist": [
+        911.52,
+        637.2099999999999
+      ],
+      "near_elbow": [
+        960.701214395663,
+        606.4657623192926
+      ],
+      "far_contact": [
+        895.52,
+        638.51
+      ],
+      "far_wrist": [
+        902.52,
+        627.51
+      ],
+      "far_elbow": [
+        956.2619601411031,
+        605.6971203140877
+      ]
+    },
+    {
+      "frame": 18,
+      "hip": [
+        929,
+        670
+      ],
+      "shoulder": [
+        823.5942657832134,
+        635.2058741420316
+      ],
+      "far_hip": [
+        922,
+        671
+      ],
+      "far_shoulder": [
+        815.5942657832134,
+        638.2058741420316
+      ],
+      "near_ankle": [
+        869,
+        758
+      ],
+      "far_ankle": [
+        879,
+        758
+      ],
+      "head_center": [
+        779.5942657832134,
+        606.2058741420316
+      ],
+      "near_knee": [
+        853.0552991466686,
+        687.7877039636377
+      ],
+      "far_knee": [
+        847.2754306579616,
+        693.3660174516363
+      ],
+      "bowl_rim_center": [
+        802.04,
+        752.8
+      ],
+      "bowl_bottom_y": 774.5,
+      "camera": [
+        1024,
+        630,
+        2.75
+      ],
+      "body_scope": "端态沿原两包身体；中间仅用于手臂可达检查，不是生产姿态冻结。",
+      "near_hand_anatomical": "left",
+      "arm_ik_branch": -1,
+      "near_contact": [
+        836.04,
+        757.1999999999999
+      ],
+      "near_wrist": [
+        845.04,
+        745.1999999999999
+      ],
+      "near_elbow": [
+        858.5736356078985,
+        688.8010575699097
+      ],
+      "far_contact": [
+        829.04,
+        746.5
+      ],
+      "far_wrist": [
+        836.04,
+        735.5
+      ],
+      "far_elbow": [
+        861.1101715738412,
+        683.1981214748632
+      ]
+    }
+  ],
+  "affected_frames": {
+    "S01_S04": "全部出现盆的态统一79.1宽/21.7可见深构造；盆中心868.52,644.81与底666.51不移。接触厚度由实际成图验证。",
+    "S07_F000": "新左侧双手端盆母态，身体沿S01/S04提案；旧剥豆图不能复用为端盆。",
+    "S07_F008_F016": "盆作为同一刚体平移；双手接点随盆，腕/肘重算同一分支；见reach样点，不当中间姿态冻结。",
+    "S07_F018": "盆底774.5不变，rim改752.8；手指接触和两腕/肘更新，身体/凳/地不变。",
+    "S07_F022": "盆已静止，用新F018手腕起点离盆移膝；不得把旧浅盆腕点作起点。",
+    "S07_F025_F028_F031": "膝掌目标不随盆移动；身体与脚沿原参考。须用新F022接膝，不能腕跳。",
+    "S07_F034_through_F106": "已落盆位置/厚度持续同一刚体；不会跟离盆手回升。奶奶其它关键接点不因此移动。"
+  },
+  "scope_limits": [
+    "没有生图",
+    "没有写GitHub或主实现",
+    "未冻结",
+    "非真实3D骨长",
+    "腕指真实形体、袖肘遮挡和连续表演仍须成图独审"
+  ],
+  "source_refs": {
+    "grandma_identity": "collab/refs/grandma_turnaround_current03_draft.png",
+    "bowl_observation": "collab/refs/anim_01_grandma_beans.png",
+    "F000_code_blob": "5441a67dda98ca44ef16907789f47a883d689e91",
+    "latest_claude_blob_read": "bf784462ea8c423c95529cde2149e9fabb19e3f9",
+    "base_s07_json": "/workspace/scratch/f060b5601755/astra_s07_reference_prepare_20261018_1021/geometry/six_key_states.json",
+    "base_s01_json": "/workspace/scratch/f060b5601755/astra_s01_s04_reference_prepare_20261018_1038/geometry/six_key_states.json"
+  }
+}

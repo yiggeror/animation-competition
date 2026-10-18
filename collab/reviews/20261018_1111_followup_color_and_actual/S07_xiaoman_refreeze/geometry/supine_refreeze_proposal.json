@@ -1,0 +1,250 @@
+{
+  "status": "proposal_for_refreeze_not_production",
+  "scale_reference_only": {
+    "uniform_scale": 0.22,
+    "translation": [
+      350.72,
+      526.76
+    ],
+    "note": "Whole-source uniform diagnostic registration only. New supine drawing follows S01 fixed role size and turnaround; old mother pixels are not final silhouette."
+  },
+  "points_world": {
+    "head_center": [
+      635,
+      610
+    ],
+    "head_envelope_radii": [
+      34,
+      35
+    ],
+    "head_back_contact": [
+      661.1400000000001,
+      635.22
+    ],
+    "near_scapula": [
+      611.86,
+      663.38
+    ],
+    "near_shoulder_proxy": [
+      609.0,
+      652.38
+    ],
+    "far_shoulder_proxy": [
+      567.4200000000001,
+      619.38
+    ],
+    "hip_hidden_construct": [
+      532,
+      657
+    ],
+    "near_knee_hidden_construct": [
+      480,
+      665
+    ],
+    "far_knee_hidden_construct": [
+      485,
+      638
+    ],
+    "near_heel": [
+      399.56000000000006,
+      698.36
+    ],
+    "far_heel": [
+      397.14000000000004,
+      669.3199999999999
+    ],
+    "near_elbow_support": [
+      647,
+      676
+    ],
+    "far_elbow": [
+      539.48,
+      614.1
+    ],
+    "far_wrist": [
+      511.54,
+      598.48
+    ],
+    "near_wrist": [
+      675.5788383248864,
+      659.5
+    ],
+    "near_palm": [
+      685.1051177665153,
+      654.0
+    ]
+  },
+  "projected_construction": {
+    "head_envelope": [
+      68,
+      70
+    ],
+    "near_upper_arm": 44.742646323166895,
+    "near_forearm": 33,
+    "near_hand_axis": 11,
+    "near_thigh": 52.61178575186362,
+    "near_shin_to_heel": 87.08319700148813,
+    "far_upper_arm_source_projection": 28.434521272565902,
+    "far_forearm_source_projection": 32.009810996005584
+  },
+  "arm_plan": {
+    "F039": {
+      "near_elbow_support": [
+        647,
+        676
+      ],
+      "forearm_angle_deg": -30,
+      "forearm_length": 33
+    },
+    "F043": {
+      "near_elbow_support": [
+        647,
+        676
+      ],
+      "forearm_angle_deg": -48,
+      "forearm_length": 33,
+      "phone_depth_order": "已落手机贴席保持不动；抬起的近右前臂在手机前方/上方，允许屏幕投影遮挡手机，但前臂与手机实体不接触。画面须用连续手臂轮廓与手机遮挡次序表明高度，不能把手机接到手上或穿入皮肤。"
+    },
+    "F046": {
+      "near_elbow_support": [
+        647,
+        676
+      ],
+      "forearm_angle_deg": -15,
+      "forearm_length": 33
+    },
+    "F049": "same recovery arm with glance; actual intermediate may be added if gap visible",
+    "F053": {
+      "near_shoulder_world": [
+        609.0,
+        652.38
+      ],
+      "near_elbow_support": [
+        647,
+        676
+      ],
+      "forearm_angle_deg": 28,
+      "forearm_length": 33,
+      "near_wrist_world": [
+        676.1372705643446,
+        691.4925615719344
+      ],
+      "near_palm_center_world": [
+        685.8496940857927,
+        696.6567487625792
+      ],
+      "hand_axis_length": 11,
+      "hand_outline_envelope_world": [
+        675,
+        686,
+        698,
+        706
+      ],
+      "forearm_outline_envelope_world": [
+        642,
+        671,
+        682,
+        697
+      ],
+      "phone_keepout_bbox_world": [
+        645.5,
+        656.5,
+        666.5,
+        663.5
+      ],
+      "minimum_forearm_y_clearance_to_phone_bbox": 7.5,
+      "minimum_hand_y_clearance_to_phone_bbox": 22.5,
+      "hand_support_targets_world": {
+        "ulnar_wrist_edge": [
+          679,
+          696
+        ],
+        "outer_palm_edge": [
+          691,
+          702
+        ]
+      },
+      "contact_instruction": "近前臂和空掌真正落席；掌向画面右下自然展开。腕/掌肉厚须贴席，不能仅把骨线放到席上。手掌整体在手机右下方，所有手指保持在明确包络内，不探回手机。",
+      "mat_border_check": "近掌最下界y706、x698附近，距当前席前边约y723尚有余量；以实际轮廓复核，不能靠点通过。",
+      "verification_required": "生产图与手机层在共同场景坐标中检查：F053手/前臂非透明像素与手机占地不得相交；不使用整体移动人物避错。"
+    }
+  },
+  "phone_landing_proposal": {
+    "center": [
+      656,
+      660
+    ],
+    "long_axis_length": 21,
+    "depth_projected": 7,
+    "thickness": 2,
+    "screen": "black, up",
+    "status": "F008 contact target only; first generated F000 strict-side hand must agree; ensure supine forearm lifts clear in depth, no intersection.",
+    "keepout_bbox_world": [
+      645.5,
+      656.5,
+      666.5,
+      663.5
+    ],
+    "occlusion_rule": "F043允许抬臂在前方遮挡静止手机，须有前后层次；F053落臂目标明确避让，不得触机或推动手机。"
+  },
+  "change_scope_vs_old_supine": {
+    "not_head_only": true,
+    "old_head_back": [
+      683.98,
+      648.74
+    ],
+    "new_head_back": [
+      661.1400000000001,
+      635.22
+    ],
+    "old_near_scapula": [
+      643.66,
+      671.78
+    ],
+    "new_near_scapula": [
+      611.86,
+      663.38
+    ],
+    "old_hip": [
+      578.32,
+      666.56
+    ],
+    "new_hip": [
+      532,
+      657
+    ],
+    "old_near_heel": [
+      469.96,
+      700.4
+    ],
+    "new_near_heel": [
+      399.56000000000006,
+      698.36
+    ],
+    "old_far_heel": [
+      467.98,
+      676.64
+    ],
+    "new_far_heel": [
+      397.14000000000004,
+      669.3199999999999
+    ],
+    "old_arm_centerline": [
+      27,
+      26
+    ],
+    "new_near_arm": [
+      44.742646323166895,
+      33
+    ],
+    "note": "Torso, sleeves, skirt, leg perspective, shoe contacts, and both arm paths redrawn together. Hidden hips/knees remain constructions. No local head enlargement or anisotropic deformation."
+  },
+  "review_needed": [
+    "New strict-side/scene-view profile identity and body thickness",
+    "Head-size continuity to S01/F000 at same scene scale",
+    "Elbow support and raised forearm depth clear of face/phone",
+    "Near shoe outline fits mat foreground border, not just heel point",
+    "F039 all contact points support actual flesh/cloth shape; bone center not support surface",
+    "F053 wrist/palm/forearm must satisfy explicit phone keepout envelopes and mat support; F043 only permitted overlap is raised-arm occlusion in front of grounded phone."
+  ]
+}

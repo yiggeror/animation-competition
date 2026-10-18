@@ -1,0 +1,294 @@
+{
+  "application_mode": "frozen_explicit_binary_masks",
+  "parameters": {
+    "source": "original unprocessed RGBA, not the contaminated v3/v4 assets",
+    "segmentation": "4-connected flood from hand-verified semantic seeds, dark-ink barrier and bounded anatomy ROI; no hue/saturation selection",
+    "roi_xyxy_exclusive": [
+      650,
+      700,
+      1030,
+      895
+    ],
+    "ink_barrier_luma_max": 100,
+    "alpha_min_exclusive": 240,
+    "seeds_xy": {
+      "collar_left": [
+        745,
+        815
+      ],
+      "collar_right": [
+        930,
+        815
+      ],
+      "neck": [
+        840,
+        780
+      ]
+    },
+    "feather": "inside-only clip((euclidean distance-to-exterior - 0.5) / 1.5, 0, 1)",
+    "collar_transform": "RGB = source Rec.709 luma in each channel, blended only by that collar soft mask",
+    "neck_transform": "retain source Rec.709 luma; use fixed reference chroma from F023 neck-lit patch, scaling chroma down only to stay in RGB gamut",
+    "neck_reference_patch_xyxy": [
+      790,
+      780,
+      880,
+      797
+    ],
+    "neck_reference_source_sha256": "d654d3ed4b14f8dd9dcf90be128fa155c91d04904619a287b499c83da8844645",
+    "neck_reference_note": "Same validated F023 neck chroma as S02a; fixed RGB median is 253,209,171.",
+    "scope": "Only independent neck, left collar and right collar. Chin, face, hair, clothing, background and alpha unchanged.",
+    "candidate_status": "Local color/mask validation only. Not integrated, not MP4 acceptance.",
+    "neck_reference_median_rgb": [
+      253.0,
+      209.0,
+      171.0
+    ],
+    "neck_reference_chroma": [
+      37.38919999999999,
+      -6.610800000000012,
+      -44.61080000000001
+    ]
+  },
+  "assets": [
+    {
+      "name": "S05a_F000",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s05a_draw_20261018_0956/handoff/final/S05a_F000.png",
+      "original_sha256": "50e8eb5e6b40f7ac3e8ef58294562dcc3f926c1051d9bb7c719ce170eec78d50",
+      "copy_sha256": "50e8eb5e6b40f7ac3e8ef58294562dcc3f926c1051d9bb7c719ce170eec78d50",
+      "candidate_path": "/workspace/scratch/f060b5601755/astra_s05a_semantic_masks_20261018_1053/candidates/S05a_F000.png",
+      "candidate_sha256": "aa7c4fd193e766b6debf4dc3dae6ed1ba0ce9d4668ddc12624d765a7fcd6021a",
+      "masks": {
+        "collar_left": {
+          "pixels": 12711,
+          "bbox_inclusive": [
+            668,
+            731,
+            839,
+            862
+          ]
+        },
+        "collar_right": {
+          "pixels": 12908,
+          "bbox_inclusive": [
+            843,
+            731,
+            1015,
+            862
+          ]
+        },
+        "neck": {
+          "pixels": 11734,
+          "bbox_inclusive": [
+            744,
+            712,
+            935,
+            809
+          ]
+        }
+      },
+      "segmentation_ink_threshold": 100,
+      "manual_mask_boundary_bridges": [],
+      "checks": {
+        "alpha_changed_pixels": 0,
+        "changed_pixels": 37281,
+        "changed_outside_semantic_regions": 0,
+        "shoulder_top_alpha_geometry_unchanged": true,
+        "changed_dark_ink_pixels_luma_le_100": 0,
+        "maximum_luma_change_RGB_rounding_only": 0.49979999999999336,
+        "neck_collar_overlap_pixels": 0
+      }
+    },
+    {
+      "name": "S05a_F010",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s05a_draw_20261018_0956/handoff/final/S05a_F010.png",
+      "original_sha256": "4e3bc8f8e8c8de60f2842ab339e89dbb3cac1f11f1d2d52573311c21c7c461eb",
+      "copy_sha256": "4e3bc8f8e8c8de60f2842ab339e89dbb3cac1f11f1d2d52573311c21c7c461eb",
+      "candidate_path": "/workspace/scratch/f060b5601755/astra_s05a_semantic_masks_20261018_1053/candidates/S05a_F010.png",
+      "candidate_sha256": "f10aea2fdc2e9486d16a3cea709eee10aab1992fad0f0b05174e46789defdc1b",
+      "masks": {
+        "collar_left": {
+          "pixels": 12711,
+          "bbox_inclusive": [
+            668,
+            731,
+            839,
+            862
+          ]
+        },
+        "collar_right": {
+          "pixels": 12908,
+          "bbox_inclusive": [
+            843,
+            731,
+            1015,
+            862
+          ]
+        },
+        "neck": {
+          "pixels": 11734,
+          "bbox_inclusive": [
+            744,
+            712,
+            935,
+            809
+          ]
+        }
+      },
+      "segmentation_ink_threshold": 100,
+      "manual_mask_boundary_bridges": [],
+      "checks": {
+        "alpha_changed_pixels": 0,
+        "changed_pixels": 37281,
+        "changed_outside_semantic_regions": 0,
+        "shoulder_top_alpha_geometry_unchanged": true,
+        "changed_dark_ink_pixels_luma_le_100": 0,
+        "maximum_luma_change_RGB_rounding_only": 0.49979999999999336,
+        "neck_collar_overlap_pixels": 0
+      }
+    },
+    {
+      "name": "S05a_F014",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s05a_draw_20261018_0956/handoff/final/S05a_F014.png",
+      "original_sha256": "3c48576a27cfda06cea70cb7c85a139be805cbdc25b50b94f9bdcf85d709d85b",
+      "copy_sha256": "3c48576a27cfda06cea70cb7c85a139be805cbdc25b50b94f9bdcf85d709d85b",
+      "candidate_path": "/workspace/scratch/f060b5601755/astra_s05a_semantic_masks_20261018_1053/candidates/S05a_F014.png",
+      "candidate_sha256": "e23f7cc370f31f0d50a8bd941abb1a1ac03eab790ab41270cd9daea671547fda",
+      "masks": {
+        "collar_left": {
+          "pixels": 12711,
+          "bbox_inclusive": [
+            668,
+            731,
+            839,
+            862
+          ]
+        },
+        "collar_right": {
+          "pixels": 12908,
+          "bbox_inclusive": [
+            843,
+            731,
+            1015,
+            862
+          ]
+        },
+        "neck": {
+          "pixels": 11734,
+          "bbox_inclusive": [
+            744,
+            712,
+            935,
+            809
+          ]
+        }
+      },
+      "segmentation_ink_threshold": 100,
+      "manual_mask_boundary_bridges": [],
+      "checks": {
+        "alpha_changed_pixels": 0,
+        "changed_pixels": 37281,
+        "changed_outside_semantic_regions": 0,
+        "shoulder_top_alpha_geometry_unchanged": true,
+        "changed_dark_ink_pixels_luma_le_100": 0,
+        "maximum_luma_change_RGB_rounding_only": 0.49979999999999336,
+        "neck_collar_overlap_pixels": 0
+      }
+    },
+    {
+      "name": "S05a_F024",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s05a_draw_20261018_0956/handoff/final/S05a_F024.png",
+      "original_sha256": "a4a884883c35d20f2454964b1754895cb57c4945fd6d630d417d849b030d3cd6",
+      "copy_sha256": "a4a884883c35d20f2454964b1754895cb57c4945fd6d630d417d849b030d3cd6",
+      "candidate_path": "/workspace/scratch/f060b5601755/astra_s05a_semantic_masks_20261018_1053/candidates/S05a_F024.png",
+      "candidate_sha256": "d7f6e0eee9506460d23774c4737839101261d37f27d52f7895051ed285548be5",
+      "masks": {
+        "collar_left": {
+          "pixels": 12711,
+          "bbox_inclusive": [
+            668,
+            731,
+            839,
+            862
+          ]
+        },
+        "collar_right": {
+          "pixels": 12908,
+          "bbox_inclusive": [
+            843,
+            731,
+            1015,
+            862
+          ]
+        },
+        "neck": {
+          "pixels": 11734,
+          "bbox_inclusive": [
+            744,
+            712,
+            935,
+            809
+          ]
+        }
+      },
+      "segmentation_ink_threshold": 100,
+      "manual_mask_boundary_bridges": [],
+      "checks": {
+        "alpha_changed_pixels": 0,
+        "changed_pixels": 37281,
+        "changed_outside_semantic_regions": 0,
+        "shoulder_top_alpha_geometry_unchanged": true,
+        "changed_dark_ink_pixels_luma_le_100": 0,
+        "maximum_luma_change_RGB_rounding_only": 0.49979999999999336,
+        "neck_collar_overlap_pixels": 0
+      }
+    },
+    {
+      "name": "S05a_F028",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s05a_draw_20261018_0956/handoff/final/S05a_F028.png",
+      "original_sha256": "5047b516f9341d754da7bc148ecd0231658928817bbcbf8e1111e18ea9c1f527",
+      "copy_sha256": "5047b516f9341d754da7bc148ecd0231658928817bbcbf8e1111e18ea9c1f527",
+      "candidate_path": "/workspace/scratch/f060b5601755/astra_s05a_semantic_masks_20261018_1053/candidates/S05a_F028.png",
+      "candidate_sha256": "0067cb0b775ecbfcf0662a6c1b4284cf5c23cb960dfc32892c3ff57a3b26c37c",
+      "masks": {
+        "collar_left": {
+          "pixels": 12711,
+          "bbox_inclusive": [
+            668,
+            731,
+            839,
+            862
+          ]
+        },
+        "collar_right": {
+          "pixels": 12908,
+          "bbox_inclusive": [
+            843,
+            731,
+            1015,
+            862
+          ]
+        },
+        "neck": {
+          "pixels": 11734,
+          "bbox_inclusive": [
+            744,
+            712,
+            935,
+            809
+          ]
+        }
+      },
+      "segmentation_ink_threshold": 100,
+      "manual_mask_boundary_bridges": [],
+      "checks": {
+        "alpha_changed_pixels": 0,
+        "changed_pixels": 37281,
+        "changed_outside_semantic_regions": 0,
+        "shoulder_top_alpha_geometry_unchanged": true,
+        "changed_dark_ink_pixels_luma_le_100": 0,
+        "maximum_luma_change_RGB_rounding_only": 0.49979999999999336,
+        "neck_collar_overlap_pixels": 0
+      }
+    }
+  ]
+}

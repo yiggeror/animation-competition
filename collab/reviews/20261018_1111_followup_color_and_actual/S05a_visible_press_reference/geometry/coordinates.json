@@ -1,0 +1,6012 @@
+{
+  "status": "LOCAL DESIGN CANDIDATE; no production image generation; no GitHub write; director freeze required",
+  "canvas": [
+    1672,
+    941
+  ],
+  "fps": 24,
+  "duration_frames": 60,
+  "source_commit": "ce208639bce712be34dbd3d724e5eaf02db582ee",
+  "coordinate_system": "source pixels, x right, y down; anatomical R = screen left; 3D proxy z increases away from camera",
+  "observed_source_anchors": {
+    "crown": [
+      836,
+      150
+    ],
+    "hair_left": [
+      533,
+      400
+    ],
+    "hair_right": [
+      1130,
+      400
+    ],
+    "head_center": [
+      836,
+      440
+    ],
+    "chin": [
+      837,
+      730
+    ],
+    "eye_R": [
+      748,
+      566
+    ],
+    "eye_L": [
+      934,
+      566
+    ],
+    "nose": [
+      836,
+      620
+    ],
+    "mouth": [
+      837,
+      670
+    ],
+    "head_base": [
+      837,
+      704
+    ],
+    "neck_root": [
+      837,
+      773
+    ],
+    "shoulder_R": [
+      602,
+      827
+    ],
+    "shoulder_L": [
+      1070,
+      827
+    ],
+    "sternum": [
+      836,
+      881
+    ],
+    "hip_construct": [
+      836,
+      1390
+    ]
+  },
+  "observation_limits": {
+    "head": "front mother image identity/ratios. Skull landmarks are 2D image observations, joint centers approximate.",
+    "shoulders": "cloth silhouette/joint proxies, ±18px",
+    "elbows_and_hip": "outside the source frame and entirely constructed; dashed only",
+    "bone_metric": "A fixed 2D-projection-derived 3D proxy, not anatomical or measured true bone length. Near prone source upper 197.8004px / fore 246.7894px, scaled uniformly 580/417. Depth solved to accommodate frontal foreshortening. Standing 5.61-head identity scale is not reverse-engineered into prone bones.",
+    "phone": "prone source shows BACK and wrapped fingers. No visible side-key or thumb-to-power-key evidence. New side-key rail/contact is a proposed construction needing approval."
+  },
+  "arm_proxy_calibration": {
+    "source_head_height_px": 417,
+    "target_head_height_px": 580,
+    "uniform_scale": 1.3908872901678657,
+    "upper_length_proxy": 275.11806853751654,
+    "fore_length_proxy": 343.25621739868853,
+    "source_near_shoulder": [
+      1012,
+      657
+    ],
+    "source_near_elbow": [
+      1118,
+      824
+    ],
+    "source_near_wrist": [
+      1291,
+      648
+    ]
+  },
+  "camera": {
+    "old": {
+      "x": 960,
+      "y": 470,
+      "fit": 1.25
+    },
+    "old_visible_source_rect": [
+      167.2,
+      33.092,
+      1504.8,
+      785.492
+    ],
+    "proposed": {
+      "x": 960,
+      "y": 560,
+      "fit": 1.04
+    },
+    "proposed_visible_source_rect": [
+      32.154,
+      35.503,
+      1639.846,
+      939.83
+    ],
+    "face_scale_ratio": 0.8320000000000001,
+    "proposal_only": "F000–027 camera unchanged. F028–035 use existing F028 drawing while easing old→proposed; F036–059 fixed proposed. Must be approved by Opus. No full-shot duration or camera-axis change.",
+    "cost": "face 16.8% smaller; reveal lower source 154.34px; no new canvas required; room background crop is same camera axis. Check actual composed 60f before acceptance."
+  },
+  "retained_states": [
+    [
+      0,
+      10
+    ],
+    [
+      10,
+      4
+    ],
+    [
+      14,
+      10
+    ],
+    [
+      24,
+      4
+    ],
+    [
+      28,
+      8
+    ]
+  ],
+  "superseded_originals_retained": [
+    "F044_old",
+    "F046_old",
+    "F050_old",
+    "F052_v3_old"
+  ],
+  "states": [
+    {
+      "frame": 36,
+      "hold_frames": 1,
+      "action": "两手连机刚从下沿露入",
+      "head_pitch_deg_design_only": 3,
+      "head_reference_transform": {
+        "anchor": [
+          836,
+          760
+        ],
+        "dx": 0,
+        "dy": 7,
+        "sy_2d_pitch_proxy": 0.992
+      },
+      "body": {
+        "shoulder_dy": 2,
+        "neck_dy": 5,
+        "sternum_dy": 2,
+        "constraint": "head–neck–collar–both shoulders–upper torso redraw together; no isolated shoulder patch"
+      },
+      "points": {
+        "crown": [
+          836,
+          161.88
+        ],
+        "hair_left": [
+          533,
+          409.88
+        ],
+        "hair_right": [
+          1130,
+          409.88
+        ],
+        "head_center": [
+          836,
+          449.56
+        ],
+        "chin": [
+          837,
+          737.24
+        ],
+        "eye_R": [
+          748,
+          574.552
+        ],
+        "eye_L": [
+          934,
+          574.552
+        ],
+        "nose": [
+          836,
+          628.12
+        ],
+        "mouth": [
+          837,
+          677.72
+        ],
+        "head_base": [
+          837,
+          711.448
+        ],
+        "neck_root": [
+          837,
+          778
+        ],
+        "shoulder_R": [
+          602,
+          829
+        ],
+        "shoulder_L": [
+          1070,
+          829
+        ],
+        "sternum": [
+          836,
+          883
+        ],
+        "hip_construct": [
+          836,
+          1390
+        ],
+        "wrist_R": [
+          674,
+          996
+        ],
+        "wrist_L": [
+          998,
+          996
+        ],
+        "elbow_R_construct": [
+          590,
+          1055
+        ],
+        "elbow_L_construct": [
+          1082,
+          1055
+        ]
+      },
+      "pupil_targets": [
+        [
+          748,
+          582.488
+        ],
+        [
+          934,
+          582.488
+        ]
+      ],
+      "arms_3d_proxy": {
+        "R": {
+          "shoulder_xyz_proxy": [
+            602.0,
+            829.0,
+            13.571
+          ],
+          "elbow_xyz_construct": [
+            590.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            674.0,
+            996.0,
+            -157.548
+          ],
+          "projected_upper_px": 226.318,
+          "projected_fore_px": 102.65,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        },
+        "L": {
+          "shoulder_xyz_proxy": [
+            1070.0,
+            829.0,
+            13.571
+          ],
+          "elbow_xyz_construct": [
+            1082.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            998.0,
+            996.0,
+            -157.548
+          ],
+          "projected_upper_px": 226.318,
+          "projected_fore_px": 102.65,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        }
+      },
+      "phone": {
+        "orientation": "landscape, same device throughout; black SCREEN on top, rear hidden beneath",
+        "dy": 76,
+        "outer_screen_plane_quad": [
+          [
+            707,
+            902
+          ],
+          [
+            963,
+            902
+          ],
+          [
+            978,
+            962
+          ],
+          [
+            692,
+            962
+          ]
+        ],
+        "black_display_quad": [
+          [
+            718,
+            909
+          ],
+          [
+            953,
+            909
+          ],
+          [
+            965,
+            955
+          ],
+          [
+            705,
+            955
+          ]
+        ],
+        "near_long_edge_sidewall": [
+          [
+            692,
+            962
+          ],
+          [
+            978,
+            962
+          ],
+          [
+            978,
+            971
+          ],
+          [
+            692,
+            971
+          ]
+        ],
+        "power_key_endpoints": [
+          [
+            739,
+            966
+          ],
+          [
+            764,
+            966
+          ]
+        ],
+        "power_key_contact": [
+          751,
+          966
+        ],
+        "screen_emission": 0,
+        "construction_dimensions_ratio": [
+          286,
+          145,
+          10
+        ],
+        "screen_camera_effective_angle_deg": 24.44,
+        "screen_plane_rule": "Face-up below both gaze origins. Viewer sees screen plane and near-side rail; do not draw rear cameras on visible screen. Not a vertical screen facing the child."
+      },
+      "hands": {
+        "anatomical_right_is": "screen-left",
+        "right_wrist": [
+          674,
+          996
+        ],
+        "left_wrist": [
+          998,
+          996
+        ],
+        "right_thumb_chain": [
+          [
+            708,
+            996
+          ],
+          [
+            720,
+            981
+          ],
+          [
+            738,
+            971
+          ],
+          [
+            751,
+            966
+          ]
+        ],
+        "thumb_state": "rest",
+        "sidewall_gap_px": 0,
+        "right_thumb_visible_pad_surface": [
+          751,
+          966
+        ],
+        "sidewall_outer_boundary_y": 971,
+        "right_support_contacts_construct": [
+          [
+            697,
+            937
+          ],
+          [
+            699,
+            968
+          ]
+        ],
+        "left_support_contacts_construct": [
+          [
+            976,
+            937
+          ],
+          [
+            972,
+            968
+          ]
+        ],
+        "right_hand_envelope": [
+          [
+            673,
+            1004
+          ],
+          [
+            654,
+            986
+          ],
+          [
+            655,
+            958
+          ],
+          [
+            665,
+            938
+          ],
+          [
+            685,
+            923
+          ],
+          [
+            697,
+            918
+          ],
+          [
+            704,
+            922
+          ],
+          [
+            704,
+            932
+          ],
+          [
+            694,
+            942
+          ],
+          [
+            704,
+            950
+          ],
+          [
+            718,
+            954
+          ],
+          [
+            730,
+            962
+          ],
+          [
+            737,
+            972
+          ],
+          [
+            735,
+            981
+          ],
+          [
+            721,
+            986
+          ],
+          [
+            711,
+            996
+          ],
+          [
+            708,
+            1008
+          ]
+        ],
+        "left_hand_envelope": [
+          [
+            996,
+            1004
+          ],
+          [
+            1015,
+            985
+          ],
+          [
+            1014,
+            958
+          ],
+          [
+            1006,
+            938
+          ],
+          [
+            986,
+            923
+          ],
+          [
+            975,
+            918
+          ],
+          [
+            968,
+            922
+          ],
+          [
+            968,
+            932
+          ],
+          [
+            978,
+            942
+          ],
+          [
+            969,
+            950
+          ],
+          [
+            957,
+            958
+          ],
+          [
+            946,
+            971
+          ],
+          [
+            943,
+            984
+          ],
+          [
+            957,
+            991
+          ],
+          [
+            964,
+            1007
+          ]
+        ],
+        "finger_chains_construct": {
+          "R_index": [
+            [
+              686,
+              964
+            ],
+            [
+              683,
+              947
+            ],
+            [
+              691,
+              934
+            ],
+            [
+              701,
+              935
+            ]
+          ],
+          "R_middle": [
+            [
+              685,
+              975
+            ],
+            [
+              687,
+              963
+            ],
+            [
+              697,
+              959
+            ],
+            [
+              706,
+              959
+            ]
+          ],
+          "R_ring": [
+            [
+              685,
+              983
+            ],
+            [
+              691,
+              975
+            ],
+            [
+              701,
+              972
+            ],
+            [
+              710,
+              973
+            ]
+          ],
+          "R_little": [
+            [
+              691,
+              993
+            ],
+            [
+              700,
+              987
+            ],
+            [
+              709,
+              985
+            ],
+            [
+              716,
+              986
+            ]
+          ],
+          "L_index": [
+            [
+              985,
+              964
+            ],
+            [
+              989,
+              947
+            ],
+            [
+              980,
+              934
+            ],
+            [
+              970,
+              935
+            ]
+          ],
+          "L_middle": [
+            [
+              986,
+              975
+            ],
+            [
+              984,
+              963
+            ],
+            [
+              974,
+              959
+            ],
+            [
+              965,
+              959
+            ]
+          ],
+          "L_ring": [
+            [
+              986,
+              983
+            ],
+            [
+              980,
+              975
+            ],
+            [
+              970,
+              972
+            ],
+            [
+              961,
+              973
+            ]
+          ],
+          "L_little": [
+            [
+              980,
+              993
+            ],
+            [
+              971,
+              987
+            ],
+            [
+              962,
+              985
+            ],
+            [
+              955,
+              986
+            ]
+          ],
+          "L_thumb": [
+            [
+              981,
+              979
+            ],
+            [
+              974,
+              962
+            ],
+            [
+              968,
+              945
+            ]
+          ]
+        },
+        "finger_visibility": "Index to little mostly hidden behind/under phone; only outer cupping contour shown, never paint four visible parallel sausages. All points are proposed, not measured.",
+        "contact_lock": "Both palms and cupping fingers move rigidly with device. Only R thumb flexes. Far/underside finger contacts are construction, not directly seen."
+      },
+      "chin_to_phone_far_edge_clearance_px": 164.76,
+      "gaze": {
+        "target": "phone black screen",
+        "outlet_ray_end": null
+      },
+      "facial_targets": {
+        "brow_R_curve": [
+          [
+            678,
+            476.344
+          ],
+          [
+            726,
+            470.392
+          ],
+          [
+            781,
+            484.28000000000003
+          ]
+        ],
+        "brow_L_curve": [
+          [
+            891,
+            484.28000000000003
+          ],
+          [
+            941,
+            470.392
+          ],
+          [
+            994,
+            476.344
+          ]
+        ],
+        "eyelid_open_height_px": 82,
+        "mouth_center": [
+          837,
+          677.72
+        ],
+        "mouth_half_width_height": [
+          18,
+          3
+        ],
+        "cheek_outward_expansion_px": 0,
+        "cheek_centers": [
+          [
+            708,
+            650.936
+          ],
+          [
+            966,
+            650.936
+          ]
+        ],
+        "note": "Geometric expression targets only; do not paste analytic lines as final facial art. F052 is brief cheek puff while exhaling, not sustained breath holding."
+      }
+    },
+    {
+      "frame": 37,
+      "hold_frames": 2,
+      "action": "举到位 · 黑屏可见 · 拇指搭侧键",
+      "head_pitch_deg_design_only": 5,
+      "head_reference_transform": {
+        "anchor": [
+          836,
+          760
+        ],
+        "dx": 0,
+        "dy": 15,
+        "sy_2d_pitch_proxy": 0.985
+      },
+      "body": {
+        "shoulder_dy": 5,
+        "neck_dy": 9,
+        "sternum_dy": 3,
+        "constraint": "head–neck–collar–both shoulders–upper torso redraw together; no isolated shoulder patch"
+      },
+      "points": {
+        "crown": [
+          836,
+          174.14999999999998
+        ],
+        "hair_left": [
+          533,
+          420.4
+        ],
+        "hair_right": [
+          1130,
+          420.4
+        ],
+        "head_center": [
+          836,
+          459.8
+        ],
+        "chin": [
+          837,
+          745.45
+        ],
+        "eye_R": [
+          748,
+          583.91
+        ],
+        "eye_L": [
+          934,
+          583.91
+        ],
+        "nose": [
+          836,
+          637.1
+        ],
+        "mouth": [
+          837,
+          686.35
+        ],
+        "head_base": [
+          837,
+          719.84
+        ],
+        "neck_root": [
+          837,
+          782
+        ],
+        "shoulder_R": [
+          602,
+          832
+        ],
+        "shoulder_L": [
+          1070,
+          832
+        ],
+        "sternum": [
+          836,
+          884
+        ],
+        "hip_construct": [
+          836,
+          1390
+        ],
+        "wrist_R": [
+          674,
+          920
+        ],
+        "wrist_L": [
+          998,
+          920
+        ],
+        "elbow_R_construct": [
+          590,
+          1055
+        ],
+        "elbow_L_construct": [
+          1082,
+          1055
+        ]
+      },
+      "pupil_targets": [
+        [
+          748,
+          591.79
+        ],
+        [
+          934,
+          591.79
+        ]
+      ],
+      "arms_3d_proxy": {
+        "R": {
+          "shoulder_xyz_proxy": [
+            602.0,
+            832.0,
+            9.323
+          ],
+          "elbow_xyz_construct": [
+            590.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            674.0,
+            920.0,
+            -134.21
+          ],
+          "projected_upper_px": 223.323,
+          "projected_fore_px": 159.0,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        },
+        "L": {
+          "shoulder_xyz_proxy": [
+            1070.0,
+            832.0,
+            9.323
+          ],
+          "elbow_xyz_construct": [
+            1082.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            998.0,
+            920.0,
+            -134.21
+          ],
+          "projected_upper_px": 223.323,
+          "projected_fore_px": 159.0,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        }
+      },
+      "phone": {
+        "orientation": "landscape, same device throughout; black SCREEN on top, rear hidden beneath",
+        "dy": 0,
+        "outer_screen_plane_quad": [
+          [
+            707,
+            826
+          ],
+          [
+            963,
+            826
+          ],
+          [
+            978,
+            886
+          ],
+          [
+            692,
+            886
+          ]
+        ],
+        "black_display_quad": [
+          [
+            718,
+            833
+          ],
+          [
+            953,
+            833
+          ],
+          [
+            965,
+            879
+          ],
+          [
+            705,
+            879
+          ]
+        ],
+        "near_long_edge_sidewall": [
+          [
+            692,
+            886
+          ],
+          [
+            978,
+            886
+          ],
+          [
+            978,
+            895
+          ],
+          [
+            692,
+            895
+          ]
+        ],
+        "power_key_endpoints": [
+          [
+            739,
+            890
+          ],
+          [
+            764,
+            890
+          ]
+        ],
+        "power_key_contact": [
+          751,
+          890
+        ],
+        "screen_emission": 0,
+        "construction_dimensions_ratio": [
+          286,
+          145,
+          10
+        ],
+        "screen_camera_effective_angle_deg": 24.44,
+        "screen_plane_rule": "Face-up below both gaze origins. Viewer sees screen plane and near-side rail; do not draw rear cameras on visible screen. Not a vertical screen facing the child."
+      },
+      "hands": {
+        "anatomical_right_is": "screen-left",
+        "right_wrist": [
+          674,
+          920
+        ],
+        "left_wrist": [
+          998,
+          920
+        ],
+        "right_thumb_chain": [
+          [
+            708,
+            920
+          ],
+          [
+            720,
+            905
+          ],
+          [
+            738,
+            895
+          ],
+          [
+            751,
+            890
+          ]
+        ],
+        "thumb_state": "rest",
+        "sidewall_gap_px": 0,
+        "right_thumb_visible_pad_surface": [
+          751,
+          890
+        ],
+        "sidewall_outer_boundary_y": 895,
+        "right_support_contacts_construct": [
+          [
+            697,
+            861
+          ],
+          [
+            699,
+            892
+          ]
+        ],
+        "left_support_contacts_construct": [
+          [
+            976,
+            861
+          ],
+          [
+            972,
+            892
+          ]
+        ],
+        "right_hand_envelope": [
+          [
+            673,
+            928
+          ],
+          [
+            654,
+            910
+          ],
+          [
+            655,
+            882
+          ],
+          [
+            665,
+            862
+          ],
+          [
+            685,
+            847
+          ],
+          [
+            697,
+            842
+          ],
+          [
+            704,
+            846
+          ],
+          [
+            704,
+            856
+          ],
+          [
+            694,
+            866
+          ],
+          [
+            704,
+            874
+          ],
+          [
+            718,
+            878
+          ],
+          [
+            730,
+            886
+          ],
+          [
+            737,
+            896
+          ],
+          [
+            735,
+            905
+          ],
+          [
+            721,
+            910
+          ],
+          [
+            711,
+            920
+          ],
+          [
+            708,
+            932
+          ]
+        ],
+        "left_hand_envelope": [
+          [
+            996,
+            928
+          ],
+          [
+            1015,
+            909
+          ],
+          [
+            1014,
+            882
+          ],
+          [
+            1006,
+            862
+          ],
+          [
+            986,
+            847
+          ],
+          [
+            975,
+            842
+          ],
+          [
+            968,
+            846
+          ],
+          [
+            968,
+            856
+          ],
+          [
+            978,
+            866
+          ],
+          [
+            969,
+            874
+          ],
+          [
+            957,
+            882
+          ],
+          [
+            946,
+            895
+          ],
+          [
+            943,
+            908
+          ],
+          [
+            957,
+            915
+          ],
+          [
+            964,
+            931
+          ]
+        ],
+        "finger_chains_construct": {
+          "R_index": [
+            [
+              686,
+              888
+            ],
+            [
+              683,
+              871
+            ],
+            [
+              691,
+              858
+            ],
+            [
+              701,
+              859
+            ]
+          ],
+          "R_middle": [
+            [
+              685,
+              899
+            ],
+            [
+              687,
+              887
+            ],
+            [
+              697,
+              883
+            ],
+            [
+              706,
+              883
+            ]
+          ],
+          "R_ring": [
+            [
+              685,
+              907
+            ],
+            [
+              691,
+              899
+            ],
+            [
+              701,
+              896
+            ],
+            [
+              710,
+              897
+            ]
+          ],
+          "R_little": [
+            [
+              691,
+              917
+            ],
+            [
+              700,
+              911
+            ],
+            [
+              709,
+              909
+            ],
+            [
+              716,
+              910
+            ]
+          ],
+          "L_index": [
+            [
+              985,
+              888
+            ],
+            [
+              989,
+              871
+            ],
+            [
+              980,
+              858
+            ],
+            [
+              970,
+              859
+            ]
+          ],
+          "L_middle": [
+            [
+              986,
+              899
+            ],
+            [
+              984,
+              887
+            ],
+            [
+              974,
+              883
+            ],
+            [
+              965,
+              883
+            ]
+          ],
+          "L_ring": [
+            [
+              986,
+              907
+            ],
+            [
+              980,
+              899
+            ],
+            [
+              970,
+              896
+            ],
+            [
+              961,
+              897
+            ]
+          ],
+          "L_little": [
+            [
+              980,
+              917
+            ],
+            [
+              971,
+              911
+            ],
+            [
+              962,
+              909
+            ],
+            [
+              955,
+              910
+            ]
+          ],
+          "L_thumb": [
+            [
+              981,
+              903
+            ],
+            [
+              974,
+              886
+            ],
+            [
+              968,
+              869
+            ]
+          ]
+        },
+        "finger_visibility": "Index to little mostly hidden behind/under phone; only outer cupping contour shown, never paint four visible parallel sausages. All points are proposed, not measured.",
+        "contact_lock": "Both palms and cupping fingers move rigidly with device. Only R thumb flexes. Far/underside finger contacts are construction, not directly seen."
+      },
+      "chin_to_phone_far_edge_clearance_px": 80.55,
+      "gaze": {
+        "target": "phone black screen",
+        "outlet_ray_end": null
+      },
+      "facial_targets": {
+        "brow_R_curve": [
+          [
+            678,
+            486.395
+          ],
+          [
+            726,
+            480.485
+          ],
+          [
+            781,
+            494.275
+          ]
+        ],
+        "brow_L_curve": [
+          [
+            891,
+            494.275
+          ],
+          [
+            941,
+            480.485
+          ],
+          [
+            994,
+            486.395
+          ]
+        ],
+        "eyelid_open_height_px": 82,
+        "mouth_center": [
+          837,
+          686.35
+        ],
+        "mouth_half_width_height": [
+          18,
+          3
+        ],
+        "cheek_outward_expansion_px": 0,
+        "cheek_centers": [
+          [
+            708,
+            659.755
+          ],
+          [
+            966,
+            659.755
+          ]
+        ],
+        "note": "Geometric expression targets only; do not paste analytic lines as final facial art. F052 is brief cheek puff while exhaling, not sustained breath holding."
+      }
+    },
+    {
+      "frame": 39,
+      "hold_frames": 3,
+      "action": "第一按 · 头颈肩上身同向压",
+      "head_pitch_deg_design_only": 7,
+      "head_reference_transform": {
+        "anchor": [
+          836,
+          760
+        ],
+        "dx": 0,
+        "dy": 24,
+        "sy_2d_pitch_proxy": 0.98
+      },
+      "body": {
+        "shoulder_dy": 11,
+        "neck_dy": 16,
+        "sternum_dy": 8,
+        "constraint": "head–neck–collar–both shoulders–upper torso redraw together; no isolated shoulder patch"
+      },
+      "points": {
+        "crown": [
+          836,
+          186.20000000000005
+        ],
+        "hair_left": [
+          533,
+          431.2
+        ],
+        "hair_right": [
+          1130,
+          431.2
+        ],
+        "head_center": [
+          836,
+          470.4
+        ],
+        "chin": [
+          837,
+          754.6
+        ],
+        "eye_R": [
+          748,
+          593.88
+        ],
+        "eye_L": [
+          934,
+          593.88
+        ],
+        "nose": [
+          836,
+          646.8
+        ],
+        "mouth": [
+          837,
+          695.8
+        ],
+        "head_base": [
+          837,
+          729.12
+        ],
+        "neck_root": [
+          837,
+          789
+        ],
+        "shoulder_R": [
+          602,
+          838
+        ],
+        "shoulder_L": [
+          1070,
+          838
+        ],
+        "sternum": [
+          836,
+          889
+        ],
+        "hip_construct": [
+          836,
+          1390
+        ],
+        "wrist_R": [
+          674,
+          916
+        ],
+        "wrist_L": [
+          998,
+          916
+        ],
+        "elbow_R_construct": [
+          590,
+          1055
+        ],
+        "elbow_L_construct": [
+          1082,
+          1055
+        ]
+      },
+      "pupil_targets": [
+        [
+          748,
+          601.72
+        ],
+        [
+          934,
+          601.72
+        ]
+      ],
+      "arms_3d_proxy": {
+        "R": {
+          "shoulder_xyz_proxy": [
+            602.0,
+            838.0,
+            1.308
+          ],
+          "elbow_xyz_construct": [
+            590.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            674.0,
+            916.0,
+            -132.403
+          ],
+          "projected_upper_px": 217.332,
+          "projected_fore_px": 162.41,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        },
+        "L": {
+          "shoulder_xyz_proxy": [
+            1070.0,
+            838.0,
+            1.308
+          ],
+          "elbow_xyz_construct": [
+            1082.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            998.0,
+            916.0,
+            -132.403
+          ],
+          "projected_upper_px": 217.332,
+          "projected_fore_px": 162.41,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        }
+      },
+      "phone": {
+        "orientation": "landscape, same device throughout; black SCREEN on top, rear hidden beneath",
+        "dy": -4,
+        "outer_screen_plane_quad": [
+          [
+            707,
+            822
+          ],
+          [
+            963,
+            822
+          ],
+          [
+            978,
+            882
+          ],
+          [
+            692,
+            882
+          ]
+        ],
+        "black_display_quad": [
+          [
+            718,
+            829
+          ],
+          [
+            953,
+            829
+          ],
+          [
+            965,
+            875
+          ],
+          [
+            705,
+            875
+          ]
+        ],
+        "near_long_edge_sidewall": [
+          [
+            692,
+            882
+          ],
+          [
+            978,
+            882
+          ],
+          [
+            978,
+            891
+          ],
+          [
+            692,
+            891
+          ]
+        ],
+        "power_key_endpoints": [
+          [
+            739,
+            886
+          ],
+          [
+            764,
+            886
+          ]
+        ],
+        "power_key_contact": [
+          751,
+          886
+        ],
+        "screen_emission": 0,
+        "construction_dimensions_ratio": [
+          286,
+          145,
+          10
+        ],
+        "screen_camera_effective_angle_deg": 24.44,
+        "screen_plane_rule": "Face-up below both gaze origins. Viewer sees screen plane and near-side rail; do not draw rear cameras on visible screen. Not a vertical screen facing the child."
+      },
+      "hands": {
+        "anatomical_right_is": "screen-left",
+        "right_wrist": [
+          674,
+          916
+        ],
+        "left_wrist": [
+          998,
+          916
+        ],
+        "right_thumb_chain": [
+          [
+            711,
+            914
+          ],
+          [
+            723,
+            897
+          ],
+          [
+            741,
+            886
+          ],
+          [
+            751,
+            886
+          ]
+        ],
+        "thumb_state": "press1",
+        "sidewall_gap_px": 0,
+        "right_thumb_visible_pad_surface": [
+          751,
+          886
+        ],
+        "sidewall_outer_boundary_y": 891,
+        "right_support_contacts_construct": [
+          [
+            697,
+            857
+          ],
+          [
+            699,
+            888
+          ]
+        ],
+        "left_support_contacts_construct": [
+          [
+            976,
+            857
+          ],
+          [
+            972,
+            888
+          ]
+        ],
+        "right_hand_envelope": [
+          [
+            673,
+            924
+          ],
+          [
+            654,
+            906
+          ],
+          [
+            655,
+            878
+          ],
+          [
+            665,
+            858
+          ],
+          [
+            685,
+            843
+          ],
+          [
+            697,
+            838
+          ],
+          [
+            704,
+            842
+          ],
+          [
+            704,
+            852
+          ],
+          [
+            694,
+            862
+          ],
+          [
+            704,
+            870
+          ],
+          [
+            718,
+            874
+          ],
+          [
+            730,
+            882
+          ],
+          [
+            737,
+            892
+          ],
+          [
+            735,
+            901
+          ],
+          [
+            721,
+            906
+          ],
+          [
+            711,
+            916
+          ],
+          [
+            708,
+            928
+          ]
+        ],
+        "left_hand_envelope": [
+          [
+            996,
+            924
+          ],
+          [
+            1015,
+            905
+          ],
+          [
+            1014,
+            878
+          ],
+          [
+            1006,
+            858
+          ],
+          [
+            986,
+            843
+          ],
+          [
+            975,
+            838
+          ],
+          [
+            968,
+            842
+          ],
+          [
+            968,
+            852
+          ],
+          [
+            978,
+            862
+          ],
+          [
+            969,
+            870
+          ],
+          [
+            957,
+            878
+          ],
+          [
+            946,
+            891
+          ],
+          [
+            943,
+            904
+          ],
+          [
+            957,
+            911
+          ],
+          [
+            964,
+            927
+          ]
+        ],
+        "finger_chains_construct": {
+          "R_index": [
+            [
+              686,
+              884
+            ],
+            [
+              683,
+              867
+            ],
+            [
+              691,
+              854
+            ],
+            [
+              701,
+              855
+            ]
+          ],
+          "R_middle": [
+            [
+              685,
+              895
+            ],
+            [
+              687,
+              883
+            ],
+            [
+              697,
+              879
+            ],
+            [
+              706,
+              879
+            ]
+          ],
+          "R_ring": [
+            [
+              685,
+              903
+            ],
+            [
+              691,
+              895
+            ],
+            [
+              701,
+              892
+            ],
+            [
+              710,
+              893
+            ]
+          ],
+          "R_little": [
+            [
+              691,
+              913
+            ],
+            [
+              700,
+              907
+            ],
+            [
+              709,
+              905
+            ],
+            [
+              716,
+              906
+            ]
+          ],
+          "L_index": [
+            [
+              985,
+              884
+            ],
+            [
+              989,
+              867
+            ],
+            [
+              980,
+              854
+            ],
+            [
+              970,
+              855
+            ]
+          ],
+          "L_middle": [
+            [
+              986,
+              895
+            ],
+            [
+              984,
+              883
+            ],
+            [
+              974,
+              879
+            ],
+            [
+              965,
+              879
+            ]
+          ],
+          "L_ring": [
+            [
+              986,
+              903
+            ],
+            [
+              980,
+              895
+            ],
+            [
+              970,
+              892
+            ],
+            [
+              961,
+              893
+            ]
+          ],
+          "L_little": [
+            [
+              980,
+              913
+            ],
+            [
+              971,
+              907
+            ],
+            [
+              962,
+              905
+            ],
+            [
+              955,
+              906
+            ]
+          ],
+          "L_thumb": [
+            [
+              981,
+              899
+            ],
+            [
+              974,
+              882
+            ],
+            [
+              968,
+              865
+            ]
+          ]
+        },
+        "finger_visibility": "Index to little mostly hidden behind/under phone; only outer cupping contour shown, never paint four visible parallel sausages. All points are proposed, not measured.",
+        "contact_lock": "Both palms and cupping fingers move rigidly with device. Only R thumb flexes. Far/underside finger contacts are construction, not directly seen."
+      },
+      "chin_to_phone_far_edge_clearance_px": 67.4,
+      "gaze": {
+        "target": "phone black screen",
+        "outlet_ray_end": null
+      },
+      "facial_targets": {
+        "brow_R_curve": [
+          [
+            678,
+            496.86
+          ],
+          [
+            726,
+            490.98
+          ],
+          [
+            781,
+            520.38
+          ]
+        ],
+        "brow_L_curve": [
+          [
+            891,
+            520.38
+          ],
+          [
+            941,
+            490.98
+          ],
+          [
+            994,
+            496.86
+          ]
+        ],
+        "eyelid_open_height_px": 68,
+        "mouth_center": [
+          837,
+          695.8
+        ],
+        "mouth_half_width_height": [
+          14,
+          3
+        ],
+        "cheek_outward_expansion_px": 0,
+        "cheek_centers": [
+          [
+            708,
+            669.34
+          ],
+          [
+            966,
+            669.34
+          ]
+        ],
+        "note": "Geometric expression targets only; do not paste analytic lines as final facial art. F052 is brief cheek puff while exhaling, not sustained breath holding."
+      }
+    },
+    {
+      "frame": 42,
+      "hold_frames": 2,
+      "action": "拇指松开 · 眼睛等黑屏回应",
+      "head_pitch_deg_design_only": 7,
+      "head_reference_transform": {
+        "anchor": [
+          836,
+          760
+        ],
+        "dx": 0,
+        "dy": 24,
+        "sy_2d_pitch_proxy": 0.98
+      },
+      "body": {
+        "shoulder_dy": 11,
+        "neck_dy": 16,
+        "sternum_dy": 8,
+        "constraint": "head–neck–collar–both shoulders–upper torso redraw together; no isolated shoulder patch"
+      },
+      "points": {
+        "crown": [
+          836,
+          186.20000000000005
+        ],
+        "hair_left": [
+          533,
+          431.2
+        ],
+        "hair_right": [
+          1130,
+          431.2
+        ],
+        "head_center": [
+          836,
+          470.4
+        ],
+        "chin": [
+          837,
+          754.6
+        ],
+        "eye_R": [
+          748,
+          593.88
+        ],
+        "eye_L": [
+          934,
+          593.88
+        ],
+        "nose": [
+          836,
+          646.8
+        ],
+        "mouth": [
+          837,
+          695.8
+        ],
+        "head_base": [
+          837,
+          729.12
+        ],
+        "neck_root": [
+          837,
+          789
+        ],
+        "shoulder_R": [
+          602,
+          838
+        ],
+        "shoulder_L": [
+          1070,
+          838
+        ],
+        "sternum": [
+          836,
+          889
+        ],
+        "hip_construct": [
+          836,
+          1390
+        ],
+        "wrist_R": [
+          674,
+          916
+        ],
+        "wrist_L": [
+          998,
+          916
+        ],
+        "elbow_R_construct": [
+          590,
+          1055
+        ],
+        "elbow_L_construct": [
+          1082,
+          1055
+        ]
+      },
+      "pupil_targets": [
+        [
+          748,
+          601.72
+        ],
+        [
+          934,
+          601.72
+        ]
+      ],
+      "arms_3d_proxy": {
+        "R": {
+          "shoulder_xyz_proxy": [
+            602.0,
+            838.0,
+            1.308
+          ],
+          "elbow_xyz_construct": [
+            590.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            674.0,
+            916.0,
+            -132.403
+          ],
+          "projected_upper_px": 217.332,
+          "projected_fore_px": 162.41,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        },
+        "L": {
+          "shoulder_xyz_proxy": [
+            1070.0,
+            838.0,
+            1.308
+          ],
+          "elbow_xyz_construct": [
+            1082.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            998.0,
+            916.0,
+            -132.403
+          ],
+          "projected_upper_px": 217.332,
+          "projected_fore_px": 162.41,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        }
+      },
+      "phone": {
+        "orientation": "landscape, same device throughout; black SCREEN on top, rear hidden beneath",
+        "dy": -4,
+        "outer_screen_plane_quad": [
+          [
+            707,
+            822
+          ],
+          [
+            963,
+            822
+          ],
+          [
+            978,
+            882
+          ],
+          [
+            692,
+            882
+          ]
+        ],
+        "black_display_quad": [
+          [
+            718,
+            829
+          ],
+          [
+            953,
+            829
+          ],
+          [
+            965,
+            875
+          ],
+          [
+            705,
+            875
+          ]
+        ],
+        "near_long_edge_sidewall": [
+          [
+            692,
+            882
+          ],
+          [
+            978,
+            882
+          ],
+          [
+            978,
+            891
+          ],
+          [
+            692,
+            891
+          ]
+        ],
+        "power_key_endpoints": [
+          [
+            739,
+            886
+          ],
+          [
+            764,
+            886
+          ]
+        ],
+        "power_key_contact": [
+          751,
+          886
+        ],
+        "screen_emission": 0,
+        "construction_dimensions_ratio": [
+          286,
+          145,
+          10
+        ],
+        "screen_camera_effective_angle_deg": 24.44,
+        "screen_plane_rule": "Face-up below both gaze origins. Viewer sees screen plane and near-side rail; do not draw rear cameras on visible screen. Not a vertical screen facing the child."
+      },
+      "hands": {
+        "anatomical_right_is": "screen-left",
+        "right_wrist": [
+          674,
+          916
+        ],
+        "left_wrist": [
+          998,
+          916
+        ],
+        "right_thumb_chain": [
+          [
+            708,
+            916
+          ],
+          [
+            718,
+            904
+          ],
+          [
+            738,
+            903
+          ],
+          [
+            751,
+            903
+          ]
+        ],
+        "thumb_state": "release",
+        "sidewall_gap_px": 6,
+        "right_thumb_visible_pad_surface": [
+          751,
+          897
+        ],
+        "sidewall_outer_boundary_y": 891,
+        "right_support_contacts_construct": [
+          [
+            697,
+            857
+          ],
+          [
+            699,
+            888
+          ]
+        ],
+        "left_support_contacts_construct": [
+          [
+            976,
+            857
+          ],
+          [
+            972,
+            888
+          ]
+        ],
+        "right_hand_envelope": [
+          [
+            673,
+            924
+          ],
+          [
+            654,
+            906
+          ],
+          [
+            655,
+            878
+          ],
+          [
+            665,
+            858
+          ],
+          [
+            685,
+            843
+          ],
+          [
+            697,
+            838
+          ],
+          [
+            704,
+            842
+          ],
+          [
+            704,
+            852
+          ],
+          [
+            694,
+            862
+          ],
+          [
+            704,
+            870
+          ],
+          [
+            718,
+            874
+          ],
+          [
+            730,
+            882
+          ],
+          [
+            737,
+            892
+          ],
+          [
+            735,
+            901
+          ],
+          [
+            721,
+            906
+          ],
+          [
+            711,
+            916
+          ],
+          [
+            708,
+            928
+          ]
+        ],
+        "left_hand_envelope": [
+          [
+            996,
+            924
+          ],
+          [
+            1015,
+            905
+          ],
+          [
+            1014,
+            878
+          ],
+          [
+            1006,
+            858
+          ],
+          [
+            986,
+            843
+          ],
+          [
+            975,
+            838
+          ],
+          [
+            968,
+            842
+          ],
+          [
+            968,
+            852
+          ],
+          [
+            978,
+            862
+          ],
+          [
+            969,
+            870
+          ],
+          [
+            957,
+            878
+          ],
+          [
+            946,
+            891
+          ],
+          [
+            943,
+            904
+          ],
+          [
+            957,
+            911
+          ],
+          [
+            964,
+            927
+          ]
+        ],
+        "finger_chains_construct": {
+          "R_index": [
+            [
+              686,
+              884
+            ],
+            [
+              683,
+              867
+            ],
+            [
+              691,
+              854
+            ],
+            [
+              701,
+              855
+            ]
+          ],
+          "R_middle": [
+            [
+              685,
+              895
+            ],
+            [
+              687,
+              883
+            ],
+            [
+              697,
+              879
+            ],
+            [
+              706,
+              879
+            ]
+          ],
+          "R_ring": [
+            [
+              685,
+              903
+            ],
+            [
+              691,
+              895
+            ],
+            [
+              701,
+              892
+            ],
+            [
+              710,
+              893
+            ]
+          ],
+          "R_little": [
+            [
+              691,
+              913
+            ],
+            [
+              700,
+              907
+            ],
+            [
+              709,
+              905
+            ],
+            [
+              716,
+              906
+            ]
+          ],
+          "L_index": [
+            [
+              985,
+              884
+            ],
+            [
+              989,
+              867
+            ],
+            [
+              980,
+              854
+            ],
+            [
+              970,
+              855
+            ]
+          ],
+          "L_middle": [
+            [
+              986,
+              895
+            ],
+            [
+              984,
+              883
+            ],
+            [
+              974,
+              879
+            ],
+            [
+              965,
+              879
+            ]
+          ],
+          "L_ring": [
+            [
+              986,
+              903
+            ],
+            [
+              980,
+              895
+            ],
+            [
+              970,
+              892
+            ],
+            [
+              961,
+              893
+            ]
+          ],
+          "L_little": [
+            [
+              980,
+              913
+            ],
+            [
+              971,
+              907
+            ],
+            [
+              962,
+              905
+            ],
+            [
+              955,
+              906
+            ]
+          ],
+          "L_thumb": [
+            [
+              981,
+              899
+            ],
+            [
+              974,
+              882
+            ],
+            [
+              968,
+              865
+            ]
+          ]
+        },
+        "finger_visibility": "Index to little mostly hidden behind/under phone; only outer cupping contour shown, never paint four visible parallel sausages. All points are proposed, not measured.",
+        "contact_lock": "Both palms and cupping fingers move rigidly with device. Only R thumb flexes. Far/underside finger contacts are construction, not directly seen."
+      },
+      "chin_to_phone_far_edge_clearance_px": 67.4,
+      "gaze": {
+        "target": "phone black screen",
+        "outlet_ray_end": null
+      },
+      "facial_targets": {
+        "brow_R_curve": [
+          [
+            678,
+            496.86
+          ],
+          [
+            726,
+            490.98
+          ],
+          [
+            781,
+            516.46
+          ]
+        ],
+        "brow_L_curve": [
+          [
+            891,
+            516.46
+          ],
+          [
+            941,
+            490.98
+          ],
+          [
+            994,
+            496.86
+          ]
+        ],
+        "eyelid_open_height_px": 72,
+        "mouth_center": [
+          837,
+          695.8
+        ],
+        "mouth_half_width_height": [
+          16,
+          3
+        ],
+        "cheek_outward_expansion_px": 0,
+        "cheek_centers": [
+          [
+            708,
+            669.34
+          ],
+          [
+            966,
+            669.34
+          ]
+        ],
+        "note": "Geometric expression targets only; do not paste analytic lines as final facial art. F052 is brief cheek puff while exhaling, not sustained breath holding."
+      }
+    },
+    {
+      "frame": 44,
+      "hold_frames": 3,
+      "action": "第二按更用力 · 面部压紧 · 上身前探",
+      "head_pitch_deg_design_only": 10,
+      "head_reference_transform": {
+        "anchor": [
+          836,
+          760
+        ],
+        "dx": 0,
+        "dy": 36,
+        "sy_2d_pitch_proxy": 0.97
+      },
+      "body": {
+        "shoulder_dy": 20,
+        "neck_dy": 27,
+        "sternum_dy": 15,
+        "constraint": "head–neck–collar–both shoulders–upper torso redraw together; no isolated shoulder patch"
+      },
+      "points": {
+        "crown": [
+          836,
+          204.30000000000007
+        ],
+        "hair_left": [
+          533,
+          446.8
+        ],
+        "hair_right": [
+          1130,
+          446.8
+        ],
+        "head_center": [
+          836,
+          485.6
+        ],
+        "chin": [
+          837,
+          766.9
+        ],
+        "eye_R": [
+          748,
+          607.8199999999999
+        ],
+        "eye_L": [
+          934,
+          607.8199999999999
+        ],
+        "nose": [
+          836,
+          660.2
+        ],
+        "mouth": [
+          837,
+          708.7
+        ],
+        "head_base": [
+          837,
+          741.68
+        ],
+        "neck_root": [
+          837,
+          800
+        ],
+        "shoulder_R": [
+          602,
+          847
+        ],
+        "shoulder_L": [
+          1070,
+          847
+        ],
+        "sternum": [
+          836,
+          896
+        ],
+        "hip_construct": [
+          836,
+          1390
+        ],
+        "wrist_R": [
+          674,
+          908
+        ],
+        "wrist_L": [
+          998,
+          908
+        ],
+        "elbow_R_construct": [
+          590,
+          1055
+        ],
+        "elbow_L_construct": [
+          1082,
+          1055
+        ]
+      },
+      "pupil_targets": [
+        [
+          748,
+          615.58
+        ],
+        [
+          934,
+          615.58
+        ]
+      ],
+      "arms_3d_proxy": {
+        "R": {
+          "shoulder_xyz_proxy": [
+            602.0,
+            847.0,
+            -9.672
+          ],
+          "elbow_xyz_construct": [
+            590.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            674.0,
+            908.0,
+            -128.596
+          ],
+          "projected_upper_px": 208.346,
+          "projected_fore_px": 169.307,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        },
+        "L": {
+          "shoulder_xyz_proxy": [
+            1070.0,
+            847.0,
+            -9.672
+          ],
+          "elbow_xyz_construct": [
+            1082.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            998.0,
+            908.0,
+            -128.596
+          ],
+          "projected_upper_px": 208.346,
+          "projected_fore_px": 169.307,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        }
+      },
+      "phone": {
+        "orientation": "landscape, same device throughout; black SCREEN on top, rear hidden beneath",
+        "dy": -12,
+        "outer_screen_plane_quad": [
+          [
+            707,
+            814
+          ],
+          [
+            963,
+            814
+          ],
+          [
+            978,
+            874
+          ],
+          [
+            692,
+            874
+          ]
+        ],
+        "black_display_quad": [
+          [
+            718,
+            821
+          ],
+          [
+            953,
+            821
+          ],
+          [
+            965,
+            867
+          ],
+          [
+            705,
+            867
+          ]
+        ],
+        "near_long_edge_sidewall": [
+          [
+            692,
+            874
+          ],
+          [
+            978,
+            874
+          ],
+          [
+            978,
+            883
+          ],
+          [
+            692,
+            883
+          ]
+        ],
+        "power_key_endpoints": [
+          [
+            739,
+            878
+          ],
+          [
+            764,
+            878
+          ]
+        ],
+        "power_key_contact": [
+          751,
+          878
+        ],
+        "screen_emission": 0,
+        "construction_dimensions_ratio": [
+          286,
+          145,
+          10
+        ],
+        "screen_camera_effective_angle_deg": 24.44,
+        "screen_plane_rule": "Face-up below both gaze origins. Viewer sees screen plane and near-side rail; do not draw rear cameras on visible screen. Not a vertical screen facing the child."
+      },
+      "hands": {
+        "anatomical_right_is": "screen-left",
+        "right_wrist": [
+          674,
+          908
+        ],
+        "left_wrist": [
+          998,
+          908
+        ],
+        "right_thumb_chain": [
+          [
+            715,
+            902
+          ],
+          [
+            729,
+            884
+          ],
+          [
+            744,
+            877
+          ],
+          [
+            751,
+            878
+          ]
+        ],
+        "thumb_state": "press2",
+        "sidewall_gap_px": 0,
+        "right_thumb_visible_pad_surface": [
+          751,
+          878
+        ],
+        "sidewall_outer_boundary_y": 883,
+        "right_support_contacts_construct": [
+          [
+            697,
+            849
+          ],
+          [
+            699,
+            880
+          ]
+        ],
+        "left_support_contacts_construct": [
+          [
+            976,
+            849
+          ],
+          [
+            972,
+            880
+          ]
+        ],
+        "right_hand_envelope": [
+          [
+            673,
+            916
+          ],
+          [
+            654,
+            898
+          ],
+          [
+            655,
+            870
+          ],
+          [
+            665,
+            850
+          ],
+          [
+            685,
+            835
+          ],
+          [
+            697,
+            830
+          ],
+          [
+            704,
+            834
+          ],
+          [
+            704,
+            844
+          ],
+          [
+            694,
+            854
+          ],
+          [
+            704,
+            862
+          ],
+          [
+            718,
+            866
+          ],
+          [
+            730,
+            874
+          ],
+          [
+            737,
+            884
+          ],
+          [
+            735,
+            893
+          ],
+          [
+            721,
+            898
+          ],
+          [
+            711,
+            908
+          ],
+          [
+            708,
+            920
+          ]
+        ],
+        "left_hand_envelope": [
+          [
+            996,
+            916
+          ],
+          [
+            1015,
+            897
+          ],
+          [
+            1014,
+            870
+          ],
+          [
+            1006,
+            850
+          ],
+          [
+            986,
+            835
+          ],
+          [
+            975,
+            830
+          ],
+          [
+            968,
+            834
+          ],
+          [
+            968,
+            844
+          ],
+          [
+            978,
+            854
+          ],
+          [
+            969,
+            862
+          ],
+          [
+            957,
+            870
+          ],
+          [
+            946,
+            883
+          ],
+          [
+            943,
+            896
+          ],
+          [
+            957,
+            903
+          ],
+          [
+            964,
+            919
+          ]
+        ],
+        "finger_chains_construct": {
+          "R_index": [
+            [
+              686,
+              876
+            ],
+            [
+              683,
+              859
+            ],
+            [
+              691,
+              846
+            ],
+            [
+              701,
+              847
+            ]
+          ],
+          "R_middle": [
+            [
+              685,
+              887
+            ],
+            [
+              687,
+              875
+            ],
+            [
+              697,
+              871
+            ],
+            [
+              706,
+              871
+            ]
+          ],
+          "R_ring": [
+            [
+              685,
+              895
+            ],
+            [
+              691,
+              887
+            ],
+            [
+              701,
+              884
+            ],
+            [
+              710,
+              885
+            ]
+          ],
+          "R_little": [
+            [
+              691,
+              905
+            ],
+            [
+              700,
+              899
+            ],
+            [
+              709,
+              897
+            ],
+            [
+              716,
+              898
+            ]
+          ],
+          "L_index": [
+            [
+              985,
+              876
+            ],
+            [
+              989,
+              859
+            ],
+            [
+              980,
+              846
+            ],
+            [
+              970,
+              847
+            ]
+          ],
+          "L_middle": [
+            [
+              986,
+              887
+            ],
+            [
+              984,
+              875
+            ],
+            [
+              974,
+              871
+            ],
+            [
+              965,
+              871
+            ]
+          ],
+          "L_ring": [
+            [
+              986,
+              895
+            ],
+            [
+              980,
+              887
+            ],
+            [
+              970,
+              884
+            ],
+            [
+              961,
+              885
+            ]
+          ],
+          "L_little": [
+            [
+              980,
+              905
+            ],
+            [
+              971,
+              899
+            ],
+            [
+              962,
+              897
+            ],
+            [
+              955,
+              898
+            ]
+          ],
+          "L_thumb": [
+            [
+              981,
+              891
+            ],
+            [
+              974,
+              874
+            ],
+            [
+              968,
+              857
+            ]
+          ]
+        },
+        "finger_visibility": "Index to little mostly hidden behind/under phone; only outer cupping contour shown, never paint four visible parallel sausages. All points are proposed, not measured.",
+        "contact_lock": "Both palms and cupping fingers move rigidly with device. Only R thumb flexes. Far/underside finger contacts are construction, not directly seen."
+      },
+      "chin_to_phone_far_edge_clearance_px": 47.1,
+      "gaze": {
+        "target": "phone black screen",
+        "outlet_ray_end": null
+      },
+      "facial_targets": {
+        "brow_R_curve": [
+          [
+            678,
+            511.79
+          ],
+          [
+            726,
+            505.97
+          ],
+          [
+            781,
+            545.74
+          ]
+        ],
+        "brow_L_curve": [
+          [
+            891,
+            545.74
+          ],
+          [
+            941,
+            505.97
+          ],
+          [
+            994,
+            511.79
+          ]
+        ],
+        "eyelid_open_height_px": 40,
+        "mouth_center": [
+          837,
+          708.7
+        ],
+        "mouth_half_width_height": [
+          12,
+          3
+        ],
+        "cheek_outward_expansion_px": 0,
+        "cheek_centers": [
+          [
+            708,
+            682.51
+          ],
+          [
+            966,
+            682.51
+          ]
+        ],
+        "note": "Geometric expression targets only; do not paste analytic lines as final facial art. F052 is brief cheek puff while exhaling, not sustained breath holding."
+      }
+    },
+    {
+      "frame": 47,
+      "hold_frames": 2,
+      "action": "保持第二按姿态 · 两帧静止无回应",
+      "head_pitch_deg_design_only": 10,
+      "head_reference_transform": {
+        "anchor": [
+          836,
+          760
+        ],
+        "dx": 0,
+        "dy": 36,
+        "sy_2d_pitch_proxy": 0.97
+      },
+      "body": {
+        "shoulder_dy": 20,
+        "neck_dy": 27,
+        "sternum_dy": 15,
+        "constraint": "head–neck–collar–both shoulders–upper torso redraw together; no isolated shoulder patch"
+      },
+      "points": {
+        "crown": [
+          836,
+          204.30000000000007
+        ],
+        "hair_left": [
+          533,
+          446.8
+        ],
+        "hair_right": [
+          1130,
+          446.8
+        ],
+        "head_center": [
+          836,
+          485.6
+        ],
+        "chin": [
+          837,
+          766.9
+        ],
+        "eye_R": [
+          748,
+          607.8199999999999
+        ],
+        "eye_L": [
+          934,
+          607.8199999999999
+        ],
+        "nose": [
+          836,
+          660.2
+        ],
+        "mouth": [
+          837,
+          708.7
+        ],
+        "head_base": [
+          837,
+          741.68
+        ],
+        "neck_root": [
+          837,
+          800
+        ],
+        "shoulder_R": [
+          602,
+          847
+        ],
+        "shoulder_L": [
+          1070,
+          847
+        ],
+        "sternum": [
+          836,
+          896
+        ],
+        "hip_construct": [
+          836,
+          1390
+        ],
+        "wrist_R": [
+          674,
+          908
+        ],
+        "wrist_L": [
+          998,
+          908
+        ],
+        "elbow_R_construct": [
+          590,
+          1055
+        ],
+        "elbow_L_construct": [
+          1082,
+          1055
+        ]
+      },
+      "pupil_targets": [
+        [
+          748,
+          615.58
+        ],
+        [
+          934,
+          615.58
+        ]
+      ],
+      "arms_3d_proxy": {
+        "R": {
+          "shoulder_xyz_proxy": [
+            602.0,
+            847.0,
+            -9.672
+          ],
+          "elbow_xyz_construct": [
+            590.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            674.0,
+            908.0,
+            -128.596
+          ],
+          "projected_upper_px": 208.346,
+          "projected_fore_px": 169.307,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        },
+        "L": {
+          "shoulder_xyz_proxy": [
+            1070.0,
+            847.0,
+            -9.672
+          ],
+          "elbow_xyz_construct": [
+            1082.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            998.0,
+            908.0,
+            -128.596
+          ],
+          "projected_upper_px": 208.346,
+          "projected_fore_px": 169.307,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        }
+      },
+      "phone": {
+        "orientation": "landscape, same device throughout; black SCREEN on top, rear hidden beneath",
+        "dy": -12,
+        "outer_screen_plane_quad": [
+          [
+            707,
+            814
+          ],
+          [
+            963,
+            814
+          ],
+          [
+            978,
+            874
+          ],
+          [
+            692,
+            874
+          ]
+        ],
+        "black_display_quad": [
+          [
+            718,
+            821
+          ],
+          [
+            953,
+            821
+          ],
+          [
+            965,
+            867
+          ],
+          [
+            705,
+            867
+          ]
+        ],
+        "near_long_edge_sidewall": [
+          [
+            692,
+            874
+          ],
+          [
+            978,
+            874
+          ],
+          [
+            978,
+            883
+          ],
+          [
+            692,
+            883
+          ]
+        ],
+        "power_key_endpoints": [
+          [
+            739,
+            878
+          ],
+          [
+            764,
+            878
+          ]
+        ],
+        "power_key_contact": [
+          751,
+          878
+        ],
+        "screen_emission": 0,
+        "construction_dimensions_ratio": [
+          286,
+          145,
+          10
+        ],
+        "screen_camera_effective_angle_deg": 24.44,
+        "screen_plane_rule": "Face-up below both gaze origins. Viewer sees screen plane and near-side rail; do not draw rear cameras on visible screen. Not a vertical screen facing the child."
+      },
+      "hands": {
+        "anatomical_right_is": "screen-left",
+        "right_wrist": [
+          674,
+          908
+        ],
+        "left_wrist": [
+          998,
+          908
+        ],
+        "right_thumb_chain": [
+          [
+            715,
+            902
+          ],
+          [
+            729,
+            884
+          ],
+          [
+            744,
+            877
+          ],
+          [
+            751,
+            878
+          ]
+        ],
+        "thumb_state": "press2",
+        "sidewall_gap_px": 0,
+        "right_thumb_visible_pad_surface": [
+          751,
+          878
+        ],
+        "sidewall_outer_boundary_y": 883,
+        "right_support_contacts_construct": [
+          [
+            697,
+            849
+          ],
+          [
+            699,
+            880
+          ]
+        ],
+        "left_support_contacts_construct": [
+          [
+            976,
+            849
+          ],
+          [
+            972,
+            880
+          ]
+        ],
+        "right_hand_envelope": [
+          [
+            673,
+            916
+          ],
+          [
+            654,
+            898
+          ],
+          [
+            655,
+            870
+          ],
+          [
+            665,
+            850
+          ],
+          [
+            685,
+            835
+          ],
+          [
+            697,
+            830
+          ],
+          [
+            704,
+            834
+          ],
+          [
+            704,
+            844
+          ],
+          [
+            694,
+            854
+          ],
+          [
+            704,
+            862
+          ],
+          [
+            718,
+            866
+          ],
+          [
+            730,
+            874
+          ],
+          [
+            737,
+            884
+          ],
+          [
+            735,
+            893
+          ],
+          [
+            721,
+            898
+          ],
+          [
+            711,
+            908
+          ],
+          [
+            708,
+            920
+          ]
+        ],
+        "left_hand_envelope": [
+          [
+            996,
+            916
+          ],
+          [
+            1015,
+            897
+          ],
+          [
+            1014,
+            870
+          ],
+          [
+            1006,
+            850
+          ],
+          [
+            986,
+            835
+          ],
+          [
+            975,
+            830
+          ],
+          [
+            968,
+            834
+          ],
+          [
+            968,
+            844
+          ],
+          [
+            978,
+            854
+          ],
+          [
+            969,
+            862
+          ],
+          [
+            957,
+            870
+          ],
+          [
+            946,
+            883
+          ],
+          [
+            943,
+            896
+          ],
+          [
+            957,
+            903
+          ],
+          [
+            964,
+            919
+          ]
+        ],
+        "finger_chains_construct": {
+          "R_index": [
+            [
+              686,
+              876
+            ],
+            [
+              683,
+              859
+            ],
+            [
+              691,
+              846
+            ],
+            [
+              701,
+              847
+            ]
+          ],
+          "R_middle": [
+            [
+              685,
+              887
+            ],
+            [
+              687,
+              875
+            ],
+            [
+              697,
+              871
+            ],
+            [
+              706,
+              871
+            ]
+          ],
+          "R_ring": [
+            [
+              685,
+              895
+            ],
+            [
+              691,
+              887
+            ],
+            [
+              701,
+              884
+            ],
+            [
+              710,
+              885
+            ]
+          ],
+          "R_little": [
+            [
+              691,
+              905
+            ],
+            [
+              700,
+              899
+            ],
+            [
+              709,
+              897
+            ],
+            [
+              716,
+              898
+            ]
+          ],
+          "L_index": [
+            [
+              985,
+              876
+            ],
+            [
+              989,
+              859
+            ],
+            [
+              980,
+              846
+            ],
+            [
+              970,
+              847
+            ]
+          ],
+          "L_middle": [
+            [
+              986,
+              887
+            ],
+            [
+              984,
+              875
+            ],
+            [
+              974,
+              871
+            ],
+            [
+              965,
+              871
+            ]
+          ],
+          "L_ring": [
+            [
+              986,
+              895
+            ],
+            [
+              980,
+              887
+            ],
+            [
+              970,
+              884
+            ],
+            [
+              961,
+              885
+            ]
+          ],
+          "L_little": [
+            [
+              980,
+              905
+            ],
+            [
+              971,
+              899
+            ],
+            [
+              962,
+              897
+            ],
+            [
+              955,
+              898
+            ]
+          ],
+          "L_thumb": [
+            [
+              981,
+              891
+            ],
+            [
+              974,
+              874
+            ],
+            [
+              968,
+              857
+            ]
+          ]
+        },
+        "finger_visibility": "Index to little mostly hidden behind/under phone; only outer cupping contour shown, never paint four visible parallel sausages. All points are proposed, not measured.",
+        "contact_lock": "Both palms and cupping fingers move rigidly with device. Only R thumb flexes. Far/underside finger contacts are construction, not directly seen."
+      },
+      "chin_to_phone_far_edge_clearance_px": 47.1,
+      "gaze": {
+        "target": "phone black screen",
+        "outlet_ray_end": null
+      },
+      "facial_targets": {
+        "brow_R_curve": [
+          [
+            678,
+            511.79
+          ],
+          [
+            726,
+            505.97
+          ],
+          [
+            781,
+            545.74
+          ]
+        ],
+        "brow_L_curve": [
+          [
+            891,
+            545.74
+          ],
+          [
+            941,
+            505.97
+          ],
+          [
+            994,
+            511.79
+          ]
+        ],
+        "eyelid_open_height_px": 40,
+        "mouth_center": [
+          837,
+          708.7
+        ],
+        "mouth_half_width_height": [
+          12,
+          3
+        ],
+        "cheek_outward_expansion_px": 0,
+        "cheek_centers": [
+          [
+            708,
+            682.51
+          ],
+          [
+            966,
+            682.51
+          ]
+        ],
+        "note": "Geometric expression targets only; do not paste analytic lines as final facial art. F052 is brief cheek puff while exhaling, not sustained breath holding."
+      }
+    },
+    {
+      "frame": 49,
+      "hold_frames": 3,
+      "action": "反向卸力 · 抬下颏 · 肩随上身松落",
+      "head_pitch_deg_design_only": -6,
+      "head_reference_transform": {
+        "anchor": [
+          836,
+          760
+        ],
+        "dx": 0,
+        "dy": 18,
+        "sy_2d_pitch_proxy": 1.0
+      },
+      "body": {
+        "shoulder_dy": 30,
+        "neck_dy": 30,
+        "sternum_dy": 29,
+        "constraint": "head–neck–collar–both shoulders–upper torso redraw together; no isolated shoulder patch"
+      },
+      "points": {
+        "crown": [
+          836,
+          168.0
+        ],
+        "hair_left": [
+          533,
+          418.0
+        ],
+        "hair_right": [
+          1130,
+          418.0
+        ],
+        "head_center": [
+          836,
+          458.0
+        ],
+        "chin": [
+          837,
+          748.0
+        ],
+        "eye_R": [
+          748,
+          584.0
+        ],
+        "eye_L": [
+          934,
+          584.0
+        ],
+        "nose": [
+          836,
+          638.0
+        ],
+        "mouth": [
+          837,
+          688.0
+        ],
+        "head_base": [
+          837,
+          722.0
+        ],
+        "neck_root": [
+          837,
+          803
+        ],
+        "shoulder_R": [
+          602,
+          857
+        ],
+        "shoulder_L": [
+          1070,
+          857
+        ],
+        "sternum": [
+          836,
+          910
+        ],
+        "hip_construct": [
+          836,
+          1390
+        ],
+        "wrist_R": [
+          674,
+          946
+        ],
+        "wrist_L": [
+          998,
+          946
+        ],
+        "elbow_R_construct": [
+          590,
+          1055
+        ],
+        "elbow_L_construct": [
+          1082,
+          1055
+        ]
+      },
+      "pupil_targets": [
+        [
+          748,
+          592.0
+        ],
+        [
+          934,
+          592.0
+        ]
+      ],
+      "arms_3d_proxy": {
+        "R": {
+          "shoulder_xyz_proxy": [
+            602.0,
+            857.0,
+            -20.636
+          ],
+          "elbow_xyz_construct": [
+            590.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            674.0,
+            946.0,
+            -144.464
+          ],
+          "projected_upper_px": 198.363,
+          "projected_fore_px": 137.612,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        },
+        "L": {
+          "shoulder_xyz_proxy": [
+            1070.0,
+            857.0,
+            -20.636
+          ],
+          "elbow_xyz_construct": [
+            1082.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            998.0,
+            946.0,
+            -144.464
+          ],
+          "projected_upper_px": 198.363,
+          "projected_fore_px": 137.612,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        }
+      },
+      "phone": {
+        "orientation": "landscape, same device throughout; black SCREEN on top, rear hidden beneath",
+        "dy": 26,
+        "outer_screen_plane_quad": [
+          [
+            707,
+            852
+          ],
+          [
+            963,
+            852
+          ],
+          [
+            978,
+            912
+          ],
+          [
+            692,
+            912
+          ]
+        ],
+        "black_display_quad": [
+          [
+            718,
+            859
+          ],
+          [
+            953,
+            859
+          ],
+          [
+            965,
+            905
+          ],
+          [
+            705,
+            905
+          ]
+        ],
+        "near_long_edge_sidewall": [
+          [
+            692,
+            912
+          ],
+          [
+            978,
+            912
+          ],
+          [
+            978,
+            921
+          ],
+          [
+            692,
+            921
+          ]
+        ],
+        "power_key_endpoints": [
+          [
+            739,
+            916
+          ],
+          [
+            764,
+            916
+          ]
+        ],
+        "power_key_contact": [
+          751,
+          916
+        ],
+        "screen_emission": 0,
+        "construction_dimensions_ratio": [
+          286,
+          145,
+          10
+        ],
+        "screen_camera_effective_angle_deg": 24.44,
+        "screen_plane_rule": "Face-up below both gaze origins. Viewer sees screen plane and near-side rail; do not draw rear cameras on visible screen. Not a vertical screen facing the child."
+      },
+      "hands": {
+        "anatomical_right_is": "screen-left",
+        "right_wrist": [
+          674,
+          946
+        ],
+        "left_wrist": [
+          998,
+          946
+        ],
+        "right_thumb_chain": [
+          [
+            708,
+            946
+          ],
+          [
+            720,
+            931
+          ],
+          [
+            738,
+            921
+          ],
+          [
+            751,
+            916
+          ]
+        ],
+        "thumb_state": "rest",
+        "sidewall_gap_px": 0,
+        "right_thumb_visible_pad_surface": [
+          751,
+          916
+        ],
+        "sidewall_outer_boundary_y": 921,
+        "right_support_contacts_construct": [
+          [
+            697,
+            887
+          ],
+          [
+            699,
+            918
+          ]
+        ],
+        "left_support_contacts_construct": [
+          [
+            976,
+            887
+          ],
+          [
+            972,
+            918
+          ]
+        ],
+        "right_hand_envelope": [
+          [
+            673,
+            954
+          ],
+          [
+            654,
+            936
+          ],
+          [
+            655,
+            908
+          ],
+          [
+            665,
+            888
+          ],
+          [
+            685,
+            873
+          ],
+          [
+            697,
+            868
+          ],
+          [
+            704,
+            872
+          ],
+          [
+            704,
+            882
+          ],
+          [
+            694,
+            892
+          ],
+          [
+            704,
+            900
+          ],
+          [
+            718,
+            904
+          ],
+          [
+            730,
+            912
+          ],
+          [
+            737,
+            922
+          ],
+          [
+            735,
+            931
+          ],
+          [
+            721,
+            936
+          ],
+          [
+            711,
+            946
+          ],
+          [
+            708,
+            958
+          ]
+        ],
+        "left_hand_envelope": [
+          [
+            996,
+            954
+          ],
+          [
+            1015,
+            935
+          ],
+          [
+            1014,
+            908
+          ],
+          [
+            1006,
+            888
+          ],
+          [
+            986,
+            873
+          ],
+          [
+            975,
+            868
+          ],
+          [
+            968,
+            872
+          ],
+          [
+            968,
+            882
+          ],
+          [
+            978,
+            892
+          ],
+          [
+            969,
+            900
+          ],
+          [
+            957,
+            908
+          ],
+          [
+            946,
+            921
+          ],
+          [
+            943,
+            934
+          ],
+          [
+            957,
+            941
+          ],
+          [
+            964,
+            957
+          ]
+        ],
+        "finger_chains_construct": {
+          "R_index": [
+            [
+              686,
+              914
+            ],
+            [
+              683,
+              897
+            ],
+            [
+              691,
+              884
+            ],
+            [
+              701,
+              885
+            ]
+          ],
+          "R_middle": [
+            [
+              685,
+              925
+            ],
+            [
+              687,
+              913
+            ],
+            [
+              697,
+              909
+            ],
+            [
+              706,
+              909
+            ]
+          ],
+          "R_ring": [
+            [
+              685,
+              933
+            ],
+            [
+              691,
+              925
+            ],
+            [
+              701,
+              922
+            ],
+            [
+              710,
+              923
+            ]
+          ],
+          "R_little": [
+            [
+              691,
+              943
+            ],
+            [
+              700,
+              937
+            ],
+            [
+              709,
+              935
+            ],
+            [
+              716,
+              936
+            ]
+          ],
+          "L_index": [
+            [
+              985,
+              914
+            ],
+            [
+              989,
+              897
+            ],
+            [
+              980,
+              884
+            ],
+            [
+              970,
+              885
+            ]
+          ],
+          "L_middle": [
+            [
+              986,
+              925
+            ],
+            [
+              984,
+              913
+            ],
+            [
+              974,
+              909
+            ],
+            [
+              965,
+              909
+            ]
+          ],
+          "L_ring": [
+            [
+              986,
+              933
+            ],
+            [
+              980,
+              925
+            ],
+            [
+              970,
+              922
+            ],
+            [
+              961,
+              923
+            ]
+          ],
+          "L_little": [
+            [
+              980,
+              943
+            ],
+            [
+              971,
+              937
+            ],
+            [
+              962,
+              935
+            ],
+            [
+              955,
+              936
+            ]
+          ],
+          "L_thumb": [
+            [
+              981,
+              929
+            ],
+            [
+              974,
+              912
+            ],
+            [
+              968,
+              895
+            ]
+          ]
+        },
+        "finger_visibility": "Index to little mostly hidden behind/under phone; only outer cupping contour shown, never paint four visible parallel sausages. All points are proposed, not measured.",
+        "contact_lock": "Both palms and cupping fingers move rigidly with device. Only R thumb flexes. Far/underside finger contacts are construction, not directly seen."
+      },
+      "chin_to_phone_far_edge_clearance_px": 104.0,
+      "gaze": {
+        "target": "phone black screen",
+        "outlet_ray_end": null
+      },
+      "facial_targets": {
+        "brow_R_curve": [
+          [
+            678,
+            485.0
+          ],
+          [
+            726,
+            479.0
+          ],
+          [
+            781,
+            495.0
+          ]
+        ],
+        "brow_L_curve": [
+          [
+            891,
+            495.0
+          ],
+          [
+            941,
+            479.0
+          ],
+          [
+            994,
+            485.0
+          ]
+        ],
+        "eyelid_open_height_px": 66,
+        "mouth_center": [
+          837,
+          688.0
+        ],
+        "mouth_half_width_height": [
+          15,
+          21
+        ],
+        "cheek_outward_expansion_px": 0,
+        "cheek_centers": [
+          [
+            708,
+            661.0
+          ],
+          [
+            966,
+            661.0
+          ]
+        ],
+        "note": "Geometric expression targets only; do not paste analytic lines as final facial art. F052 is brief cheek puff while exhaling, not sustained breath holding."
+      }
+    },
+    {
+      "frame": 52,
+      "hold_frames": 3,
+      "action": "鼓腮吐完 · 眼垂 · 两手连机下垂",
+      "head_pitch_deg_design_only": 0,
+      "head_reference_transform": {
+        "anchor": [
+          836,
+          760
+        ],
+        "dx": 0,
+        "dy": 24,
+        "sy_2d_pitch_proxy": 1.0
+      },
+      "body": {
+        "shoulder_dy": 36,
+        "neck_dy": 34,
+        "sternum_dy": 35,
+        "constraint": "head–neck–collar–both shoulders–upper torso redraw together; no isolated shoulder patch"
+      },
+      "points": {
+        "crown": [
+          836,
+          174.0
+        ],
+        "hair_left": [
+          533,
+          424.0
+        ],
+        "hair_right": [
+          1130,
+          424.0
+        ],
+        "head_center": [
+          836,
+          464.0
+        ],
+        "chin": [
+          837,
+          754.0
+        ],
+        "eye_R": [
+          748,
+          590.0
+        ],
+        "eye_L": [
+          934,
+          590.0
+        ],
+        "nose": [
+          836,
+          644.0
+        ],
+        "mouth": [
+          837,
+          694.0
+        ],
+        "head_base": [
+          837,
+          728.0
+        ],
+        "neck_root": [
+          837,
+          807
+        ],
+        "shoulder_R": [
+          602,
+          863
+        ],
+        "shoulder_L": [
+          1070,
+          863
+        ],
+        "sternum": [
+          836,
+          916
+        ],
+        "hip_construct": [
+          836,
+          1390
+        ],
+        "wrist_R": [
+          674,
+          997
+        ],
+        "wrist_L": [
+          998,
+          997
+        ],
+        "elbow_R_construct": [
+          590,
+          1055
+        ],
+        "elbow_L_construct": [
+          1082,
+          1055
+        ]
+      },
+      "pupil_targets": [
+        [
+          748,
+          598.0
+        ],
+        [
+          934,
+          598.0
+        ]
+      ],
+      "arms_3d_proxy": {
+        "R": {
+          "shoulder_xyz_proxy": [
+            602.0,
+            863.0,
+            -26.677
+          ],
+          "elbow_xyz_construct": [
+            590.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            674.0,
+            997.0,
+            -157.727
+          ],
+          "projected_upper_px": 192.375,
+          "projected_fore_px": 102.078,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        },
+        "L": {
+          "shoulder_xyz_proxy": [
+            1070.0,
+            863.0,
+            -26.677
+          ],
+          "elbow_xyz_construct": [
+            1082.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            998.0,
+            997.0,
+            -157.727
+          ],
+          "projected_upper_px": 192.375,
+          "projected_fore_px": 102.078,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        }
+      },
+      "phone": {
+        "orientation": "landscape, same device throughout; black SCREEN on top, rear hidden beneath",
+        "dy": 77,
+        "outer_screen_plane_quad": [
+          [
+            707,
+            903
+          ],
+          [
+            963,
+            903
+          ],
+          [
+            978,
+            963
+          ],
+          [
+            692,
+            963
+          ]
+        ],
+        "black_display_quad": [
+          [
+            718,
+            910
+          ],
+          [
+            953,
+            910
+          ],
+          [
+            965,
+            956
+          ],
+          [
+            705,
+            956
+          ]
+        ],
+        "near_long_edge_sidewall": [
+          [
+            692,
+            963
+          ],
+          [
+            978,
+            963
+          ],
+          [
+            978,
+            972
+          ],
+          [
+            692,
+            972
+          ]
+        ],
+        "power_key_endpoints": [
+          [
+            739,
+            967
+          ],
+          [
+            764,
+            967
+          ]
+        ],
+        "power_key_contact": [
+          751,
+          967
+        ],
+        "screen_emission": 0,
+        "construction_dimensions_ratio": [
+          286,
+          145,
+          10
+        ],
+        "screen_camera_effective_angle_deg": 24.44,
+        "screen_plane_rule": "Face-up below both gaze origins. Viewer sees screen plane and near-side rail; do not draw rear cameras on visible screen. Not a vertical screen facing the child."
+      },
+      "hands": {
+        "anatomical_right_is": "screen-left",
+        "right_wrist": [
+          674,
+          997
+        ],
+        "left_wrist": [
+          998,
+          997
+        ],
+        "right_thumb_chain": [
+          [
+            708,
+            997
+          ],
+          [
+            720,
+            982
+          ],
+          [
+            738,
+            972
+          ],
+          [
+            751,
+            967
+          ]
+        ],
+        "thumb_state": "rest",
+        "sidewall_gap_px": 0,
+        "right_thumb_visible_pad_surface": [
+          751,
+          967
+        ],
+        "sidewall_outer_boundary_y": 972,
+        "right_support_contacts_construct": [
+          [
+            697,
+            938
+          ],
+          [
+            699,
+            969
+          ]
+        ],
+        "left_support_contacts_construct": [
+          [
+            976,
+            938
+          ],
+          [
+            972,
+            969
+          ]
+        ],
+        "right_hand_envelope": [
+          [
+            673,
+            1005
+          ],
+          [
+            654,
+            987
+          ],
+          [
+            655,
+            959
+          ],
+          [
+            665,
+            939
+          ],
+          [
+            685,
+            924
+          ],
+          [
+            697,
+            919
+          ],
+          [
+            704,
+            923
+          ],
+          [
+            704,
+            933
+          ],
+          [
+            694,
+            943
+          ],
+          [
+            704,
+            951
+          ],
+          [
+            718,
+            955
+          ],
+          [
+            730,
+            963
+          ],
+          [
+            737,
+            973
+          ],
+          [
+            735,
+            982
+          ],
+          [
+            721,
+            987
+          ],
+          [
+            711,
+            997
+          ],
+          [
+            708,
+            1009
+          ]
+        ],
+        "left_hand_envelope": [
+          [
+            996,
+            1005
+          ],
+          [
+            1015,
+            986
+          ],
+          [
+            1014,
+            959
+          ],
+          [
+            1006,
+            939
+          ],
+          [
+            986,
+            924
+          ],
+          [
+            975,
+            919
+          ],
+          [
+            968,
+            923
+          ],
+          [
+            968,
+            933
+          ],
+          [
+            978,
+            943
+          ],
+          [
+            969,
+            951
+          ],
+          [
+            957,
+            959
+          ],
+          [
+            946,
+            972
+          ],
+          [
+            943,
+            985
+          ],
+          [
+            957,
+            992
+          ],
+          [
+            964,
+            1008
+          ]
+        ],
+        "finger_chains_construct": {
+          "R_index": [
+            [
+              686,
+              965
+            ],
+            [
+              683,
+              948
+            ],
+            [
+              691,
+              935
+            ],
+            [
+              701,
+              936
+            ]
+          ],
+          "R_middle": [
+            [
+              685,
+              976
+            ],
+            [
+              687,
+              964
+            ],
+            [
+              697,
+              960
+            ],
+            [
+              706,
+              960
+            ]
+          ],
+          "R_ring": [
+            [
+              685,
+              984
+            ],
+            [
+              691,
+              976
+            ],
+            [
+              701,
+              973
+            ],
+            [
+              710,
+              974
+            ]
+          ],
+          "R_little": [
+            [
+              691,
+              994
+            ],
+            [
+              700,
+              988
+            ],
+            [
+              709,
+              986
+            ],
+            [
+              716,
+              987
+            ]
+          ],
+          "L_index": [
+            [
+              985,
+              965
+            ],
+            [
+              989,
+              948
+            ],
+            [
+              980,
+              935
+            ],
+            [
+              970,
+              936
+            ]
+          ],
+          "L_middle": [
+            [
+              986,
+              976
+            ],
+            [
+              984,
+              964
+            ],
+            [
+              974,
+              960
+            ],
+            [
+              965,
+              960
+            ]
+          ],
+          "L_ring": [
+            [
+              986,
+              984
+            ],
+            [
+              980,
+              976
+            ],
+            [
+              970,
+              973
+            ],
+            [
+              961,
+              974
+            ]
+          ],
+          "L_little": [
+            [
+              980,
+              994
+            ],
+            [
+              971,
+              988
+            ],
+            [
+              962,
+              986
+            ],
+            [
+              955,
+              987
+            ]
+          ],
+          "L_thumb": [
+            [
+              981,
+              980
+            ],
+            [
+              974,
+              963
+            ],
+            [
+              968,
+              946
+            ]
+          ]
+        },
+        "finger_visibility": "Index to little mostly hidden behind/under phone; only outer cupping contour shown, never paint four visible parallel sausages. All points are proposed, not measured.",
+        "contact_lock": "Both palms and cupping fingers move rigidly with device. Only R thumb flexes. Far/underside finger contacts are construction, not directly seen."
+      },
+      "chin_to_phone_far_edge_clearance_px": 149.0,
+      "gaze": {
+        "target": "phone black screen",
+        "outlet_ray_end": null
+      },
+      "facial_targets": {
+        "brow_R_curve": [
+          [
+            678,
+            491.0
+          ],
+          [
+            726,
+            485.0
+          ],
+          [
+            781,
+            504.0
+          ]
+        ],
+        "brow_L_curve": [
+          [
+            891,
+            504.0
+          ],
+          [
+            941,
+            485.0
+          ],
+          [
+            994,
+            491.0
+          ]
+        ],
+        "eyelid_open_height_px": 42,
+        "mouth_center": [
+          837,
+          694.0
+        ],
+        "mouth_half_width_height": [
+          7,
+          8
+        ],
+        "cheek_outward_expansion_px": 14,
+        "cheek_centers": [
+          [
+            708,
+            667.0
+          ],
+          [
+            966,
+            667.0
+          ]
+        ],
+        "note": "Geometric expression targets only; do not paste analytic lines as final facial art. F052 is brief cheek puff while exhaling, not sustained breath holding."
+      }
+    },
+    {
+      "frame": 55,
+      "hold_frames": 5,
+      "action": "仍持机下沿 · 眼睛先去画面左下插座",
+      "head_pitch_deg_design_only": 0,
+      "head_reference_transform": {
+        "anchor": [
+          836,
+          760
+        ],
+        "dx": 0,
+        "dy": 24,
+        "sy_2d_pitch_proxy": 1.0
+      },
+      "body": {
+        "shoulder_dy": 36,
+        "neck_dy": 34,
+        "sternum_dy": 35,
+        "constraint": "head–neck–collar–both shoulders–upper torso redraw together; no isolated shoulder patch"
+      },
+      "points": {
+        "crown": [
+          836,
+          174.0
+        ],
+        "hair_left": [
+          533,
+          424.0
+        ],
+        "hair_right": [
+          1130,
+          424.0
+        ],
+        "head_center": [
+          836,
+          464.0
+        ],
+        "chin": [
+          837,
+          754.0
+        ],
+        "eye_R": [
+          748,
+          590.0
+        ],
+        "eye_L": [
+          934,
+          590.0
+        ],
+        "nose": [
+          836,
+          644.0
+        ],
+        "mouth": [
+          837,
+          694.0
+        ],
+        "head_base": [
+          837,
+          728.0
+        ],
+        "neck_root": [
+          837,
+          807
+        ],
+        "shoulder_R": [
+          602,
+          863
+        ],
+        "shoulder_L": [
+          1070,
+          863
+        ],
+        "sternum": [
+          836,
+          916
+        ],
+        "hip_construct": [
+          836,
+          1390
+        ],
+        "wrist_R": [
+          674,
+          1004
+        ],
+        "wrist_L": [
+          998,
+          1004
+        ],
+        "elbow_R_construct": [
+          590,
+          1055
+        ],
+        "elbow_L_construct": [
+          1082,
+          1055
+        ]
+      },
+      "pupil_targets": [
+        [
+          738,
+          602.0
+        ],
+        [
+          924,
+          602.0
+        ]
+      ],
+      "arms_3d_proxy": {
+        "R": {
+          "shoulder_xyz_proxy": [
+            602.0,
+            863.0,
+            -26.677
+          ],
+          "elbow_xyz_construct": [
+            590.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            674.0,
+            1004.0,
+            -158.889
+          ],
+          "projected_upper_px": 192.375,
+          "projected_fore_px": 98.27,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        },
+        "L": {
+          "shoulder_xyz_proxy": [
+            1070.0,
+            863.0,
+            -26.677
+          ],
+          "elbow_xyz_construct": [
+            1082.0,
+            1055.0,
+            170.0
+          ],
+          "wrist_xyz_construct": [
+            998.0,
+            1004.0,
+            -158.889
+          ],
+          "projected_upper_px": 192.375,
+          "projected_fore_px": 98.27,
+          "elbow_support": "xyz fixed across all states; shoulder depth solved for upper-bone length",
+          "upper_proxy_length_fixed": 275.118,
+          "fore_proxy_length_fixed": 343.256
+        }
+      },
+      "phone": {
+        "orientation": "landscape, same device throughout; black SCREEN on top, rear hidden beneath",
+        "dy": 84,
+        "outer_screen_plane_quad": [
+          [
+            707,
+            910
+          ],
+          [
+            963,
+            910
+          ],
+          [
+            978,
+            970
+          ],
+          [
+            692,
+            970
+          ]
+        ],
+        "black_display_quad": [
+          [
+            718,
+            917
+          ],
+          [
+            953,
+            917
+          ],
+          [
+            965,
+            963
+          ],
+          [
+            705,
+            963
+          ]
+        ],
+        "near_long_edge_sidewall": [
+          [
+            692,
+            970
+          ],
+          [
+            978,
+            970
+          ],
+          [
+            978,
+            979
+          ],
+          [
+            692,
+            979
+          ]
+        ],
+        "power_key_endpoints": [
+          [
+            739,
+            974
+          ],
+          [
+            764,
+            974
+          ]
+        ],
+        "power_key_contact": [
+          751,
+          974
+        ],
+        "screen_emission": 0,
+        "construction_dimensions_ratio": [
+          286,
+          145,
+          10
+        ],
+        "screen_camera_effective_angle_deg": 24.44,
+        "screen_plane_rule": "Face-up below both gaze origins. Viewer sees screen plane and near-side rail; do not draw rear cameras on visible screen. Not a vertical screen facing the child."
+      },
+      "hands": {
+        "anatomical_right_is": "screen-left",
+        "right_wrist": [
+          674,
+          1004
+        ],
+        "left_wrist": [
+          998,
+          1004
+        ],
+        "right_thumb_chain": [
+          [
+            708,
+            1004
+          ],
+          [
+            720,
+            989
+          ],
+          [
+            738,
+            979
+          ],
+          [
+            751,
+            974
+          ]
+        ],
+        "thumb_state": "rest",
+        "sidewall_gap_px": 0,
+        "right_thumb_visible_pad_surface": [
+          751,
+          974
+        ],
+        "sidewall_outer_boundary_y": 979,
+        "right_support_contacts_construct": [
+          [
+            697,
+            945
+          ],
+          [
+            699,
+            976
+          ]
+        ],
+        "left_support_contacts_construct": [
+          [
+            976,
+            945
+          ],
+          [
+            972,
+            976
+          ]
+        ],
+        "right_hand_envelope": [
+          [
+            673,
+            1012
+          ],
+          [
+            654,
+            994
+          ],
+          [
+            655,
+            966
+          ],
+          [
+            665,
+            946
+          ],
+          [
+            685,
+            931
+          ],
+          [
+            697,
+            926
+          ],
+          [
+            704,
+            930
+          ],
+          [
+            704,
+            940
+          ],
+          [
+            694,
+            950
+          ],
+          [
+            704,
+            958
+          ],
+          [
+            718,
+            962
+          ],
+          [
+            730,
+            970
+          ],
+          [
+            737,
+            980
+          ],
+          [
+            735,
+            989
+          ],
+          [
+            721,
+            994
+          ],
+          [
+            711,
+            1004
+          ],
+          [
+            708,
+            1016
+          ]
+        ],
+        "left_hand_envelope": [
+          [
+            996,
+            1012
+          ],
+          [
+            1015,
+            993
+          ],
+          [
+            1014,
+            966
+          ],
+          [
+            1006,
+            946
+          ],
+          [
+            986,
+            931
+          ],
+          [
+            975,
+            926
+          ],
+          [
+            968,
+            930
+          ],
+          [
+            968,
+            940
+          ],
+          [
+            978,
+            950
+          ],
+          [
+            969,
+            958
+          ],
+          [
+            957,
+            966
+          ],
+          [
+            946,
+            979
+          ],
+          [
+            943,
+            992
+          ],
+          [
+            957,
+            999
+          ],
+          [
+            964,
+            1015
+          ]
+        ],
+        "finger_chains_construct": {
+          "R_index": [
+            [
+              686,
+              972
+            ],
+            [
+              683,
+              955
+            ],
+            [
+              691,
+              942
+            ],
+            [
+              701,
+              943
+            ]
+          ],
+          "R_middle": [
+            [
+              685,
+              983
+            ],
+            [
+              687,
+              971
+            ],
+            [
+              697,
+              967
+            ],
+            [
+              706,
+              967
+            ]
+          ],
+          "R_ring": [
+            [
+              685,
+              991
+            ],
+            [
+              691,
+              983
+            ],
+            [
+              701,
+              980
+            ],
+            [
+              710,
+              981
+            ]
+          ],
+          "R_little": [
+            [
+              691,
+              1001
+            ],
+            [
+              700,
+              995
+            ],
+            [
+              709,
+              993
+            ],
+            [
+              716,
+              994
+            ]
+          ],
+          "L_index": [
+            [
+              985,
+              972
+            ],
+            [
+              989,
+              955
+            ],
+            [
+              980,
+              942
+            ],
+            [
+              970,
+              943
+            ]
+          ],
+          "L_middle": [
+            [
+              986,
+              983
+            ],
+            [
+              984,
+              971
+            ],
+            [
+              974,
+              967
+            ],
+            [
+              965,
+              967
+            ]
+          ],
+          "L_ring": [
+            [
+              986,
+              991
+            ],
+            [
+              980,
+              983
+            ],
+            [
+              970,
+              980
+            ],
+            [
+              961,
+              981
+            ]
+          ],
+          "L_little": [
+            [
+              980,
+              1001
+            ],
+            [
+              971,
+              995
+            ],
+            [
+              962,
+              993
+            ],
+            [
+              955,
+              994
+            ]
+          ],
+          "L_thumb": [
+            [
+              981,
+              987
+            ],
+            [
+              974,
+              970
+            ],
+            [
+              968,
+              953
+            ]
+          ]
+        },
+        "finger_visibility": "Index to little mostly hidden behind/under phone; only outer cupping contour shown, never paint four visible parallel sausages. All points are proposed, not measured.",
+        "contact_lock": "Both palms and cupping fingers move rigidly with device. Only R thumb flexes. Far/underside finger contacts are construction, not directly seen."
+      },
+      "chin_to_phone_far_edge_clearance_px": 156.0,
+      "gaze": {
+        "target": "lower-left offscreen outlet",
+        "outlet_ray_end": [
+          430,
+          1000
+        ]
+      },
+      "facial_targets": {
+        "brow_R_curve": [
+          [
+            678,
+            491.0
+          ],
+          [
+            726,
+            485.0
+          ],
+          [
+            781,
+            504.0
+          ]
+        ],
+        "brow_L_curve": [
+          [
+            891,
+            504.0
+          ],
+          [
+            941,
+            485.0
+          ],
+          [
+            994,
+            491.0
+          ]
+        ],
+        "eyelid_open_height_px": 50,
+        "mouth_center": [
+          837,
+          694.0
+        ],
+        "mouth_half_width_height": [
+          11,
+          3
+        ],
+        "cheek_outward_expansion_px": 0,
+        "cheek_centers": [
+          [
+            708,
+            667.0
+          ],
+          [
+            966,
+            667.0
+          ]
+        ],
+        "note": "Geometric expression targets only; do not paste analytic lines as final facial art. F052 is brief cheek puff while exhaling, not sustained breath holding."
+      }
+    }
+  ],
+  "entry_path": {
+    "whole_device_and_both_grips_waypoints": [
+      [
+        835,
+        1016
+      ],
+      [
+        835,
+        944
+      ],
+      [
+        835,
+        856
+      ]
+    ],
+    "no_chin_crossing": true,
+    "important": "Coordinator accepted this necessary split as candidate for Opus freeze: F036×1 entry, F037×2 arrival, F039 first press unchanged. Nine new-tail drawings; no image generation yet.",
+    "candidate_entry_and_arrival": [
+      36,
+      37
+    ]
+  },
+  "audio_required_after_freeze": {
+    "first_click_frame": 39,
+    "second_click_frame": 44,
+    "first_click_shot_sec": 1.625,
+    "second_click_shot_sec": 1.8333333333333333,
+    "old_clicks_must_not_remain": [
+      1.85,
+      2.1
+    ],
+    "old_audio_QA_not_transferable": "Old S05a v1 PCM/AAC review applies only to the old two-click timing. Rebuild mix and slice, then re-verify PCM/AAC after new timing is integrated.",
+    "note": "No audio edits here. New picture timing requires Opus to re-sync existing click cues and verify full mix."
+  },
+  "freeze_questions": [
+    "Approve fit=1.04/y=560 easing during F028–035, then fixed?",
+    "Approve low face-up landscape screen, near-long-edge side key under anatomical right thumb?",
+    "Freeze the coordinator-accepted F036×1/F037×2 split (nine new-tail states)?"
+  ],
+  "not_render_instructions": "Analytical reference only. No reuse as painted final frame. All new head, neck, shoulder, torso and hands must be coherently repainted from preceding accepted artwork.",
+  "release_coherence": {
+    "F044_F049_F052": {
+      "shoulder_dy": [
+        20,
+        30,
+        36
+      ],
+      "sternum_dy": [
+        15,
+        29,
+        35
+      ],
+      "neck_root_dy": [
+        27,
+        30,
+        34
+      ],
+      "head_transform_dy": [
+        36,
+        18,
+        24
+      ],
+      "head_y_scale": [
+        0.97,
+        1,
+        1
+      ],
+      "phone_dy": [
+        -12,
+        26,
+        77
+      ]
+    },
+    "interpretation": "F044→F049 shoulders drop 10 source px and sternum 14px, neck 3px; head center retreats upward 27.6px and chin upward 18.9px relative to compressed F044. F049→F052 shoulders/sternum/head settle down 6px together, neck 4px. F055 keeps this mass pose. Repaint connected head/neck/collar/shoulders/upper chest, not shoulder cutouts.",
+    "approval_state": "corrected local candidate; awaits director freeze"
+  },
+  "framing_hard_boundary": {
+    "state": 37,
+    "camera_bottom_source_y": 939.8333333333,
+    "all_hand_contour_including_outline_max_y": 934,
+    "source_pixel_margin": 5.8333333333,
+    "output_720_margin_px": 4.64,
+    "instruction": "At F037 arrival, whole hand contour including outline and antialiasing must stay at or above y934. No added downward wobble, overshoot, thickening, registration shift, or camera tightening. F039/F044 raise above this. F049 onward intentional phone/hand exit is a separate designed action. If art cannot fit, return to director rather than silently crop or expand camera."
+  }
+}
