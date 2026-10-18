@@ -1,0 +1,256 @@
+{
+  "scope": "Read-only post056 facts/source index only; no input masks, reconstruction, image generation, fetch, checkout or source edits. S07 delivery not blocked.",
+  "authority_commit": "4e25e5f07a8aa86926634b21b9f5884f547cbb10",
+  "large_source_commit_fixed_by_4e": "813657bf999147f69f1eb480c7d2357adfcce1b3",
+  "locked": {
+    "F052_SHA": "a107f71d994c3302884eb3ebba0e8e4726b89bd5e36c2f8a8fa022f44ddfbb42",
+    "F056_exact_F042_SHA": "52bb96f9796878bbb9c928ad80c5af6b5a0580ad9f9c651384446f0caadd3f8f",
+    "actual_isolated_exposure_scope": "048x4/052x4/056x2,10f24fps; limited lock only, no058/full96f/scene/audio approval"
+  },
+  "actual_images_viewed_from_exact_objects": [
+    "4e:collab/reviews/20261018_2216_s09_second_tap_repair/candidate/F052_rgba_LOCKED.png",
+    "813:collab/reviews/cloud_s09_20261018/first_tap_segment/F042_contact_gate/astra_two_corridors_zero_call/candidate/F042_two_corridors_clean_PENDING_ASTRA.png"
+  ],
+  "post056_schedule_from_fixed813_exposure": [
+    {
+      "id": "d13",
+      "start_frame_0": "58",
+      "end_frame_inclusive": "62",
+      "hold": "5",
+      "start_seconds": "2.416667",
+      "action": "第二击弹离，间隙35px",
+      "gaze": "tail_contact",
+      "switch": "OFF",
+      "light_on": "False",
+      "event": ""
+    },
+    {
+      "id": "d14",
+      "start_frame_0": "63",
+      "end_frame_inclusive": "68",
+      "hold": "6",
+      "start_seconds": "2.625000",
+      "action": "回操作角度，左手靠近前段尚未包托，眼回开关",
+      "gaze": "switch",
+      "switch": "OFF",
+      "light_on": "False",
+      "event": ""
+    },
+    {
+      "id": "d15",
+      "start_frame_0": "69",
+      "end_frame_inclusive": "72",
+      "hold": "4",
+      "start_seconds": "2.875000",
+      "action": "左手重新托稳；右拇指第二次向ON推，尚未到位",
+      "gaze": "switch",
+      "switch": "TRANSIT",
+      "light_on": "False",
+      "event": ""
+    },
+    {
+      "id": "d16",
+      "start_frame_0": "73",
+      "end_frame_inclusive": "76",
+      "hold": "4",
+      "start_seconds": "3.041667",
+      "action": "第二次到ON，灯亮；先眼后头确认",
+      "gaze": "lamp_rim",
+      "switch": "ON",
+      "light_on": "True",
+      "event": "switch_on_light"
+    },
+    {
+      "id": "d17",
+      "start_frame_0": "77",
+      "end_frame_inclusive": "84",
+      "hold": "8",
+      "start_seconds": "3.208333",
+      "action": "眉眼松开，整个头略迎光向右，不只挪五官",
+      "gaze": "lamp_rim",
+      "switch": "ON",
+      "light_on": "True",
+      "event": ""
+    },
+    {
+      "id": "d18",
+      "start_frame_0": "85",
+      "end_frame_inclusive": "95",
+      "hold": "11",
+      "start_seconds": "3.541667",
+      "action": "稳定持握向画右，留亮灯结果与接S10的方向",
+      "gaze": "screen_right",
+      "switch": "ON",
+      "light_on": "True",
+      "event": ""
+    }
+  ],
+  "frame_math": {
+    "post056_inclusive": [
+      58,
+      95
+    ],
+    "frames": 38,
+    "seconds_at24fps": 1.5833333333333333,
+    "whole_shot": 96,
+    "two_taps": [
+      42,
+      56
+    ],
+    "final_ON_and_light": 73,
+    "OFF_through_frame": 68,
+    "switch_transit_dark_frames": [
+      69,
+      72
+    ]
+  },
+  "available_material_and_limits": [
+    "Locked052 and exact042/056 remain untouched; specialist owns052.",
+    "Locked044fe70 is coherent first-rebound reference but actual48native/30.2267003registered clearance; no automatic authorization as05835registered.",
+    "Locked048/03768ce may supply same genuine grip/material/context; its accepted91native/57.3048registered gap is not058.",
+    "Pure0315e39 rigid hand/torch layer is authentic240-ish actual source; no175 target/cap44px/global820750 reuse.",
+    "F063 left hand approaches front section without support; F069 only then supports and starts secondON push; F073 ON reached/light begins. No new actual63/69 support contacts frozen in4e.",
+    "Old geometry175/200px projection joints/old820750 are historical; contactv3 itself says local only. Real post056 whole arms/five fingers/return-to-operating transform still need actual design gate."
+  ],
+  "decisions_for_Astra_or_parent_not_silent_assumptions": [
+    {
+      "id": "058_clearance_vs_existing044",
+      "fact": "CSV says058–062 hold5, second rebound35registered. Existing locked044 has30.226700251889167registered, difference4.773299748110833.",
+      "needs_explicit_choice": "Use existing044 with specifically accepted058 amplitude tolerance, or retain35 intent and later define a new real whole-arm pose. Earlier04855→57.3048 tolerance does not itself approve058."
+    },
+    {
+      "id": "063_069_operating_pose_actual_anchors",
+      "fact": "Timing and causal order clear; old63/69 numeric coordinates and175 prop obsolete.",
+      "needs_explicit_choice": "Actual rigid-group rotation center/final operating angle; near sleeve-elbow-wrist chain; left palm travel/which front-barrel patch approached063 and supported069. No old s120/n60/820750 copied as actual240 pose."
+    },
+    {
+      "id": "switch_and_light_followthrough",
+      "fact": "069–072 transit OFF-toON but dark;073–076 ON/light;077–084 whole head slightly screen-right;085–095 stable lit direction toS10.",
+      "needs_explicit_choice": "Real thumb/slider endpoint and lamp-mouth world origin/direction at the new operating pose; source first-switch art is continuity reference, not automatic posttap full-pose reuse. No code face-only turn or pre073 light."
+    }
+  ],
+  "no_timing_contradiction_found": "The six later holds fit058–095 without gaps/overlaps. 4e carries no newer full18state frame table; fixed813 timing remains a source with provenance, while latest4e lock supersedes stale historical README status labels.",
+  "sources": [
+    {
+      "commit": "4e25e5f07a8aa86926634b21b9f5884f547cbb10",
+      "path": "collab/reviews/20261018_2216_s09_second_tap_repair/README.md",
+      "sha256": "2cdc1a642ceabb64fb329e9226d20ff9fd2af1059dbb98665d668301157c2a18",
+      "git_blob": "da5cbfab6d71ba1fad362a717b601e59571cec25",
+      "role": "current lock scope to057 only"
+    },
+    {
+      "commit": "4e25e5f07a8aa86926634b21b9f5884f547cbb10",
+      "path": "collab/reviews/20261018_2216_s09_second_tap_repair/LOCK_RECEIPT.json",
+      "sha256": "d6cdf632836736aac97d4925b32531f9158b804406c8a14391f8ae682cb1f798",
+      "git_blob": "296344e078d8c5e0bc1f734f9aa5301d41c38bba",
+      "role": "Astra/coordinator limited052/056 lock"
+    },
+    {
+      "commit": "4e25e5f07a8aa86926634b21b9f5884f547cbb10",
+      "path": "collab/reviews/20261018_2216_s09_second_tap_repair/SOURCE_INDEX.json",
+      "sha256": "b9715991e7f41db0647b70a93c3577ac279a98923452303cecd5a7a46f1baed0",
+      "git_blob": "63b3328b2575b9570e0df94e740d25c79b8fd14e",
+      "role": "fixed813 sources, no alternate052"
+    },
+    {
+      "commit": "4e25e5f07a8aa86926634b21b9f5884f547cbb10",
+      "path": "collab/reviews/20261018_2216_s09_second_tap_repair/F056_SOURCE_INDEX.json",
+      "sha256": "2dd77b45255528cdf53d0da958365cf83865642eb492897a28236026571d058c",
+      "git_blob": "be01af6a84e40f95a8bb8fa3eae48818faec69c7",
+      "role": "exact042 reuse as056"
+    },
+    {
+      "commit": "4e25e5f07a8aa86926634b21b9f5884f547cbb10",
+      "path": "collab/reviews/20261018_2216_s09_second_tap_repair/candidate/F052_rgba_LOCKED.png",
+      "sha256": "a107f71d994c3302884eb3ebba0e8e4726b89bd5e36c2f8a8fa022f44ddfbb42",
+      "git_blob": "ecf106ba1360c6af2610ff1cad3a0a118a65d7a5",
+      "role": "unique locked052, actual view completed"
+    },
+    {
+      "commit": "4e25e5f07a8aa86926634b21b9f5884f547cbb10",
+      "path": "README.md",
+      "sha256": "e69993ed4ec6a749bc0f76656c5af1e40773721c0d639dedcee17576584cce86",
+      "git_blob": "026c292e243f5edb7c9cff70edcd5bcfede32c47",
+      "role": "exact4e instructions inspected; old notes do not override current lock"
+    },
+    {
+      "commit": "4e25e5f07a8aa86926634b21b9f5884f547cbb10",
+      "path": "collab/README.md",
+      "sha256": "9e4806cf07c208f28d64a480720e13112886d42c2251c3d15e564849ce350035",
+      "git_blob": "2eaffd3833d75960c4f6e0869490b61ccd5cc91b",
+      "role": "exact4e instructions inspected; old notes do not override current lock"
+    },
+    {
+      "commit": "4e25e5f07a8aa86926634b21b9f5884f547cbb10",
+      "path": "docs/keyframes/scenes03_12_drawing_plan.md",
+      "sha256": "4e099e1dfc9b2bcb2612bfee4e8df859695d48198539592c66e810bda7c38dab",
+      "git_blob": "a73725ca0dca7119d7d9d833d731c3a2f44c91ee",
+      "role": "exact4e instructions inspected; old notes do not override current lock"
+    },
+    {
+      "commit": "4e25e5f07a8aa86926634b21b9f5884f547cbb10",
+      "path": "collab/claude.md",
+      "sha256": "28447637a2d614cad107e74b924e5d80e5a93fd27af8a12566268861e49af0c5",
+      "git_blob": "f8dd84cfbbea75dc38039a0b55359656153f6a9f",
+      "role": "exact4e instructions inspected; old notes do not override current lock"
+    },
+    {
+      "commit": "4e25e5f07a8aa86926634b21b9f5884f547cbb10",
+      "path": "collab/partner.md",
+      "sha256": "2c661e6c3d1cdc3a898a43bc3af9a2ea68f3a7258449a530bc9833410292b759",
+      "git_blob": "a255f85d2520880032b6e77d4d1c17c1a12c7845",
+      "role": "exact4e instructions inspected; old notes do not override current lock"
+    },
+    {
+      "commit": "813657bf999147f69f1eb480c7d2357adfcce1b3",
+      "path": "collab/reviews/cloud_s09_20261018/exposure.csv",
+      "sha256": "fbdd40903fae53a51c67772bf11918605cbd05adfac0aa843fa4e08e4c98e1a2",
+      "git_blob": "e5ab46ac6e99e968e9599c9bdf8be06b969cfddb",
+      "role": "18state timing source; only schedule semantics inherited"
+    },
+    {
+      "commit": "813657bf999147f69f1eb480c7d2357adfcce1b3",
+      "path": "collab/reviews/cloud_s09_20261018/geometry/S09_reference_v1.json",
+      "sha256": "7798998a981dc7a14037299cfd2e3f47160c105e390496b00d49232c091e2d24",
+      "git_blob": "d41883c64d0ce5c47a2377c0f729d5126fb2b479",
+      "role": "historical175 geometry; no actual future joint/prop anchors inherited"
+    },
+    {
+      "commit": "813657bf999147f69f1eb480c7d2357adfcce1b3",
+      "path": "collab/reviews/cloud_s09_20261018/contact_reference_v3/contact_reference_v3.json",
+      "sha256": "9b0380111078514acaf29d841a04742e46a51d31043da865def246b92ba2e02f",
+      "git_blob": "44d4d0234d9d9f5e6a0e284c913951fa02dc60a7",
+      "role": "240px local reference only; old2.29 margin is not current3D contact proof"
+    },
+    {
+      "commit": "813657bf999147f69f1eb480c7d2357adfcce1b3",
+      "path": "collab/reviews/cloud_s09_20261018/first_tap_segment/F042_contact_gate/astra_two_corridors_zero_call/candidate/F042_two_corridors_clean_PENDING_ASTRA.png",
+      "sha256": "52bb96f9796878bbb9c928ad80c5af6b5a0580ad9f9c651384446f0caadd3f8f",
+      "git_blob": "583bd54a691aeafda47a462d25f23403faf816b6",
+      "role": "locked042 exact whole-image056"
+    },
+    {
+      "commit": "813657bf999147f69f1eb480c7d2357adfcce1b3",
+      "path": "collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/candidate/F044_complete_local_native_arm_PENDING_ASTRA.png",
+      "sha256": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+      "git_blob": "cdf1b2021b5de3a1f4878dd98259d9e2023797e4",
+      "role": "locked first recoil source/reference; gap48native=30.2267registered"
+    },
+    {
+      "commit": "813657bf999147f69f1eb480c7d2357adfcce1b3",
+      "path": "collab/reviews/cloud_s09_20261018/first_tap_segment/F048_recovery_reuse_gate/candidate/F048_recovery_TRUE_LOCKED_F037_REUSE_PENDING_ASTRA.png",
+      "sha256": "68ce16f14f9ea53f2c43c2c53f984a6a713b612f6aef28ab369780cb768695c9",
+      "git_blob": "efa08bf301610f0ef18aba8576cdb4137a41ad5a",
+      "role": "locked048/037; accepted91native clearance"
+    },
+    {
+      "commit": "813657bf999147f69f1eb480c7d2357adfcce1b3",
+      "path": "collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/sources/F031_rigid_whole_torch_and_grip.png",
+      "sha256": "5e39cda65ed11384debda248a3f6c1393ec2f16261d2da25cb7a4ccb40ef0862",
+      "git_blob": "a8c79847a5ed3d69da52c9715aae26e0242edfd7",
+      "role": "authentic same rigid hand/torch material; no175 resize"
+    }
+  ],
+  "reviewer_calls": 0,
+  "new_art_or_masks": 0
+}
