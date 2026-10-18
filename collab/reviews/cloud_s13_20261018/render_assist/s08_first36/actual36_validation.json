@@ -1,0 +1,1082 @@
+{
+  "status": "ASSEMBLED36_FROM_REUSED33_PLUS_NEW3_ENCODE_PASS_ACTUAL_VISUAL_REVIEW_REQUIRED",
+  "fixed_commit": "2a8fcb919cc4efe59169be80650d10621427ef25",
+  "entry_sha256": "58ab66325e19ff46d0b295ec428bfc7afd5137a02de6c415582f7fd32179f754",
+  "assembled_frames": 36,
+  "actually_rendered_this_task": [
+    33,
+    34,
+    35
+  ],
+  "reused_frames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "full36_rerendered": false,
+  "actual_increment_render_runs": 1,
+  "tool_invocations": 2,
+  "earlier_audit_initialization_failure_frames": 0,
+  "actual_resource_rows": [
+    {
+      "utc": "2026-10-18T21:46:52.415Z",
+      "event": "resource",
+      "page": 0,
+      "path": "/dev/view.html",
+      "status": 200
+    },
+    {
+      "utc": "2026-10-18T21:46:52.540Z",
+      "event": "resource",
+      "page": 0,
+      "path": "/collab/reviews/20261018_2034_s08_first36_scene/s08_first36_scene.js",
+      "status": 200,
+      "sha256": "58ab66325e19ff46d0b295ec428bfc7afd5137a02de6c415582f7fd32179f754",
+      "bytes": 5402
+    },
+    {
+      "utc": "2026-10-18T21:46:52.542Z",
+      "event": "resource",
+      "page": 0,
+      "path": "/js/paint/paintshot.js",
+      "status": 200,
+      "sha256": "7d61a8e3cfa595b5a2877ce3624c2d8d186a1578cc684a8948471eb0eedca975",
+      "bytes": 12532
+    },
+    {
+      "utc": "2026-10-18T21:46:52.554Z",
+      "event": "resource",
+      "page": 0,
+      "path": "/js/code/s08.js",
+      "status": 200,
+      "sha256": "2b5af710ff40ca93a370b6949713f9a52462d0d8f5a521ca4c239b18dafc7897",
+      "bytes": 13920
+    },
+    {
+      "utc": "2026-10-18T21:46:52.554Z",
+      "event": "resource",
+      "page": 0,
+      "path": "/collab/reviews/20261018_1822_s08_lamp_mechanical_candidate/lamp_mechanical_candidate.js",
+      "status": 200,
+      "sha256": "171aaace1079af7215788f38ebc2f35e4c0af09d8fd5d722009094443ff90bf1",
+      "bytes": 4659
+    },
+    {
+      "utc": "2026-10-18T21:46:52.554Z",
+      "event": "resource",
+      "page": 0,
+      "path": "/collab/reviews/20261018_2034_s08_first36_scene/contract.js",
+      "status": 200,
+      "sha256": "655a082566a505a7eeba8d1ab076e4b2f35eb3361411373947baa525a49244a4",
+      "bytes": 3507
+    },
+    {
+      "utc": "2026-10-18T21:46:52.558Z",
+      "event": "resource",
+      "page": 0,
+      "path": "/collab/reviews/20261018_2034_s08_first36_scene/layer_contract.js",
+      "status": 200,
+      "sha256": "2fa3f97fe286a76949f7f4b0c455245d4870a1e2e658e41e2bd96c4df0cbcf2a",
+      "bytes": 7063
+    },
+    {
+      "utc": "2026-10-18T21:46:52.571Z",
+      "event": "resource",
+      "page": 0,
+      "path": "/js/code/hand3d.js",
+      "status": 200,
+      "sha256": "66e6e41a68c6c96abc78e295236eefee6e39839c849175f336e5b8cedad52a4e",
+      "bytes": 16509
+    },
+    {
+      "utc": "2026-10-18T21:46:52.900Z",
+      "event": "resource",
+      "page": 0,
+      "path": "/assets/fonts/MaShanZheng-Regular.ttf",
+      "status": 200
+    },
+    {
+      "utc": "2026-10-18T21:46:53.229Z",
+      "event": "resource",
+      "page": 0,
+      "path": "/assets/fonts/NotoSansSC-VF.ttf",
+      "status": 200
+    },
+    {
+      "utc": "2026-10-18T21:46:53.451Z",
+      "event": "resource",
+      "page": 1,
+      "path": "/dev/view.html",
+      "status": 200
+    },
+    {
+      "utc": "2026-10-18T21:46:53.529Z",
+      "event": "resource",
+      "page": 2,
+      "path": "/dev/view.html",
+      "status": 200
+    },
+    {
+      "utc": "2026-10-18T21:46:53.609Z",
+      "event": "resource",
+      "page": 1,
+      "path": "/collab/reviews/20261018_2034_s08_first36_scene/s08_first36_scene.js",
+      "status": 200,
+      "sha256": "58ab66325e19ff46d0b295ec428bfc7afd5137a02de6c415582f7fd32179f754",
+      "bytes": 5402
+    },
+    {
+      "utc": "2026-10-18T21:46:53.649Z",
+      "event": "resource",
+      "page": 1,
+      "path": "/js/paint/paintshot.js",
+      "status": 200,
+      "sha256": "7d61a8e3cfa595b5a2877ce3624c2d8d186a1578cc684a8948471eb0eedca975",
+      "bytes": 12532
+    },
+    {
+      "utc": "2026-10-18T21:46:53.649Z",
+      "event": "resource",
+      "page": 1,
+      "path": "/js/code/s08.js",
+      "status": 200,
+      "sha256": "2b5af710ff40ca93a370b6949713f9a52462d0d8f5a521ca4c239b18dafc7897",
+      "bytes": 13920
+    },
+    {
+      "utc": "2026-10-18T21:46:53.649Z",
+      "event": "resource",
+      "page": 1,
+      "path": "/collab/reviews/20261018_2034_s08_first36_scene/contract.js",
+      "status": 200,
+      "sha256": "655a082566a505a7eeba8d1ab076e4b2f35eb3361411373947baa525a49244a4",
+      "bytes": 3507
+    },
+    {
+      "utc": "2026-10-18T21:46:53.649Z",
+      "event": "resource",
+      "page": 1,
+      "path": "/collab/reviews/20261018_1822_s08_lamp_mechanical_candidate/lamp_mechanical_candidate.js",
+      "status": 200,
+      "sha256": "171aaace1079af7215788f38ebc2f35e4c0af09d8fd5d722009094443ff90bf1",
+      "bytes": 4659
+    },
+    {
+      "utc": "2026-10-18T21:46:53.649Z",
+      "event": "resource",
+      "page": 1,
+      "path": "/collab/reviews/20261018_2034_s08_first36_scene/layer_contract.js",
+      "status": 200,
+      "sha256": "2fa3f97fe286a76949f7f4b0c455245d4870a1e2e658e41e2bd96c4df0cbcf2a",
+      "bytes": 7063
+    },
+    {
+      "utc": "2026-10-18T21:46:53.660Z",
+      "event": "resource",
+      "page": 1,
+      "path": "/js/code/hand3d.js",
+      "status": 200,
+      "sha256": "66e6e41a68c6c96abc78e295236eefee6e39839c849175f336e5b8cedad52a4e",
+      "bytes": 16509
+    },
+    {
+      "utc": "2026-10-18T21:46:53.699Z",
+      "event": "resource",
+      "page": 2,
+      "path": "/collab/reviews/20261018_2034_s08_first36_scene/s08_first36_scene.js",
+      "status": 200,
+      "sha256": "58ab66325e19ff46d0b295ec428bfc7afd5137a02de6c415582f7fd32179f754",
+      "bytes": 5402
+    },
+    {
+      "utc": "2026-10-18T21:46:53.714Z",
+      "event": "resource",
+      "page": 2,
+      "path": "/js/paint/paintshot.js",
+      "status": 200,
+      "sha256": "7d61a8e3cfa595b5a2877ce3624c2d8d186a1578cc684a8948471eb0eedca975",
+      "bytes": 12532
+    },
+    {
+      "utc": "2026-10-18T21:46:53.714Z",
+      "event": "resource",
+      "page": 2,
+      "path": "/js/code/s08.js",
+      "status": 200,
+      "sha256": "2b5af710ff40ca93a370b6949713f9a52462d0d8f5a521ca4c239b18dafc7897",
+      "bytes": 13920
+    },
+    {
+      "utc": "2026-10-18T21:46:53.717Z",
+      "event": "resource",
+      "page": 2,
+      "path": "/collab/reviews/20261018_1822_s08_lamp_mechanical_candidate/lamp_mechanical_candidate.js",
+      "status": 200,
+      "sha256": "171aaace1079af7215788f38ebc2f35e4c0af09d8fd5d722009094443ff90bf1",
+      "bytes": 4659
+    },
+    {
+      "utc": "2026-10-18T21:46:53.722Z",
+      "event": "resource",
+      "page": 2,
+      "path": "/collab/reviews/20261018_2034_s08_first36_scene/contract.js",
+      "status": 200,
+      "sha256": "655a082566a505a7eeba8d1ab076e4b2f35eb3361411373947baa525a49244a4",
+      "bytes": 3507
+    },
+    {
+      "utc": "2026-10-18T21:46:53.724Z",
+      "event": "resource",
+      "page": 2,
+      "path": "/collab/reviews/20261018_2034_s08_first36_scene/layer_contract.js",
+      "status": 200,
+      "sha256": "2fa3f97fe286a76949f7f4b0c455245d4870a1e2e658e41e2bd96c4df0cbcf2a",
+      "bytes": 7063
+    },
+    {
+      "utc": "2026-10-18T21:46:53.725Z",
+      "event": "resource",
+      "page": 2,
+      "path": "/js/code/hand3d.js",
+      "status": 200,
+      "sha256": "66e6e41a68c6c96abc78e295236eefee6e39839c849175f336e5b8cedad52a4e",
+      "bytes": 16509
+    },
+    {
+      "utc": "2026-10-18T21:46:53.936Z",
+      "event": "resource",
+      "page": 1,
+      "path": "/assets/fonts/MaShanZheng-Regular.ttf",
+      "status": 200
+    },
+    {
+      "utc": "2026-10-18T21:46:54.336Z",
+      "event": "resource",
+      "page": 2,
+      "path": "/assets/fonts/MaShanZheng-Regular.ttf",
+      "status": 200
+    },
+    {
+      "utc": "2026-10-18T21:46:54.460Z",
+      "event": "resource",
+      "page": 1,
+      "path": "/assets/fonts/NotoSansSC-VF.ttf",
+      "status": 200
+    },
+    {
+      "utc": "2026-10-18T21:46:54.508Z",
+      "event": "resource",
+      "page": 1,
+      "path": "/assets/paint/bg_01_room_wide.png",
+      "status": 200,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "utc": "2026-10-18T21:46:54.595Z",
+      "event": "resource",
+      "page": 2,
+      "path": "/assets/fonts/NotoSansSC-VF.ttf",
+      "status": 200
+    },
+    {
+      "utc": "2026-10-18T21:46:54.646Z",
+      "event": "resource",
+      "page": 2,
+      "path": "/assets/paint/bg_01_room_wide.png",
+      "status": 200,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "utc": "2026-10-18T21:46:54.681Z",
+      "event": "resource",
+      "page": 1,
+      "path": "/collab/reviews/20261018_2034_s08_first36_scene/frames/F033_forearms_elbows_original_pixels.png",
+      "status": 200,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "utc": "2026-10-18T21:46:54.692Z",
+      "event": "resource",
+      "page": 1,
+      "path": "/collab/reviews/20261018_2034_s08_first36_scene/frames/F033_body_behind_original_pixels.png",
+      "status": 200,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "utc": "2026-10-18T21:46:54.696Z",
+      "event": "resource",
+      "page": 1,
+      "path": "/collab/reviews/20261018_2034_s08_first36_scene/frames/F033_table_box_original_pixels.png",
+      "status": 200,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "utc": "2026-10-18T21:46:54.776Z",
+      "event": "resource",
+      "page": 2,
+      "path": "/collab/reviews/20261018_2034_s08_first36_scene/frames/F033_forearms_elbows_original_pixels.png",
+      "status": 200,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "utc": "2026-10-18T21:46:54.776Z",
+      "event": "resource",
+      "page": 2,
+      "path": "/collab/reviews/20261018_2034_s08_first36_scene/frames/F033_body_behind_original_pixels.png",
+      "status": 200,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "utc": "2026-10-18T21:46:54.776Z",
+      "event": "resource",
+      "page": 2,
+      "path": "/collab/reviews/20261018_2034_s08_first36_scene/frames/F033_table_box_original_pixels.png",
+      "status": 200,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "asset_SHA_probe": {
+    "status": "PASS_SEPARATE_READ_ONLY_CHROMIUM_ARRAYBUFFER_SHA_PROBE",
+    "actual_render_frames_in_probe": 0,
+    "rows": [
+      {
+        "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F033_body_behind_original_pixels.png",
+        "status": 200,
+        "bytes": 576928,
+        "sha256": "adc14536112cc5ef24316d94bc88f6f5bc08cb8ab8d9cc6ea14aae7d79bfe511"
+      },
+      {
+        "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F033_forearms_elbows_original_pixels.png",
+        "status": 200,
+        "bytes": 561607,
+        "sha256": "cc72ef2875b0eeb42b9a4fcfd767f2997da6e2b0cf6265d0961d7b895af2263e"
+      },
+      {
+        "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F033_table_box_original_pixels.png",
+        "status": 200,
+        "bytes": 557053,
+        "sha256": "52e15b0f4a7cf2d1e7472d0226c032514ecdf4cd4506fbf47401968caf223406"
+      }
+    ],
+    "note": "The actual render response audit reported200 but Playwright response.body returned0bytes for six PNG responses;those empty-body hashes are not native-file digests. This separate browser fetch+arrayBuffer probe verifies3current frozen files without rerendering;not relabeled as original render responses."
+  },
+  "actual_empty_response_body_observations": 6,
+  "actual_frame_trace": [
+    {
+      "utc": "2026-10-18T21:46:56.000Z",
+      "event": "actual_frame",
+      "page": 1,
+      "frame": 33,
+      "t": 1.375,
+      "exposure": {
+        "frame": 33,
+        "asset": "033",
+        "head": [
+          1230,
+          707
+        ],
+        "grip": [
+          1194.9191346191965,
+          737.3699338842536
+        ],
+        "touching": false
+      },
+      "png_sha256": "854b12cfbd232250e15537ea2f85b07fc790d9a55b5b67f41781141fd97d3b5a",
+      "png_bytes": 3578626
+    },
+    {
+      "utc": "2026-10-18T21:46:56.216Z",
+      "event": "actual_frame",
+      "page": 2,
+      "frame": 34,
+      "t": 1.4166666666666667,
+      "exposure": {
+        "frame": 34,
+        "asset": "033",
+        "head": [
+          1230,
+          707
+        ],
+        "grip": [
+          1194.9191346191965,
+          737.3699338842536
+        ],
+        "touching": false
+      },
+      "png_sha256": "fc65809d39ab4d82a7981fb143b45479a52329c863b5f5831cbce9c988f44a8f",
+      "png_bytes": 3586720
+    },
+    {
+      "utc": "2026-10-18T21:46:56.955Z",
+      "event": "actual_frame",
+      "page": 1,
+      "frame": 35,
+      "t": 1.4583333333333333,
+      "exposure": {
+        "frame": 35,
+        "asset": "033",
+        "head": [
+          1230,
+          707
+        ],
+        "grip": [
+          1194.9191346191965,
+          737.3699338842536
+        ],
+        "touching": false
+      },
+      "png_sha256": "eca30408ace309fff79b40a2fa797c9d2e42ce95954562495aea00f8753029e2",
+      "png_bytes": 3589119
+    }
+  ],
+  "page_errors": [],
+  "source_low_knob_disk148_RGBA_exact030": true,
+  "obsolete_far_archive_point1127_800_runtime_alpha": 0,
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": "24/1",
+  "duration": 1.5,
+  "audio_streams": 0,
+  "frame036_and_later_rendered": false,
+  "reused33_SHA_validation": [
+    {
+      "frame": 0,
+      "sha256": "1cfd8fe62ea9bb586cc066c45be556509590dae0914d75c494231846e2daa290",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 1,
+      "sha256": "8792c6d1480f06f98441c44663c45cd60cc734fc239e68bbf716d675e76732b8",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 2,
+      "sha256": "2270daac645dcd7dbb35cb606486083389d1c89457c3edcf144c4820152448c0",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 3,
+      "sha256": "62d6798c78dd1e3b9887e04a302c7394e98e867f199b63c2bca1e8ae9c23b03c",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 4,
+      "sha256": "84397cd5b4f76e909bf5842000c1b61d3103462a98aa216675b61aa91d2ace81",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 5,
+      "sha256": "4aa637b94ad603b0f6765c05261569b0f2a1ba9ee53fbf3ccf68644db3cb9a18",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 6,
+      "sha256": "c14a9f9799d731123e10b91a01df6b649e92dde0d5acde17bde5b544aa2062ec",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 7,
+      "sha256": "cab4b5159973611aee2d120fe205144943471bcc2d3d16891f2c92b936839d40",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 8,
+      "sha256": "c271909e85d23e424bbf557137506ad42844c438b62093404ec9ae996c9236e7",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 9,
+      "sha256": "a6c5055ce88c3f31b521d49de8cf2e97a9215da9318a21f9191a42eb6de49c87",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 10,
+      "sha256": "9bdea5b0f34dfbcf61ffe45a78ad4c67dec91d7340ccc399bfa95e8bf45ddafa",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 11,
+      "sha256": "8b90e52421d757d1de6a18b71d95fb8ee850c0c0383082e14543799ac5df89f3",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 12,
+      "sha256": "cc861f479a4b6cac80b32addd25dfbc7497826be8713a94990ebe234965cb5d6",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 13,
+      "sha256": "9d9352b32fe78bf615ce0a53f19013580480d51a4b13a87830f5e52926939f67",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 14,
+      "sha256": "0dcec75678d14ac68a54bd35da8b7c23184d9e35da754c50d32c1b73fb84ed3c",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 15,
+      "sha256": "3c59a58050e265674496208883d9584f93171661223bfe68f76f427d426a031f",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 16,
+      "sha256": "0851ff2aae7c85135b71b9062d07e527bba8e6a4dc7aca2a9a3d6b2adea53986",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 17,
+      "sha256": "5d2f066a1ab237b75a47537d774fdb194c46ea8cd59c54fd475b3b9b10814358",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 18,
+      "sha256": "2700b355a51d697fec03b62a100b6c0e8ac157d6ad931084c2a1fa6f1ae7a2d9",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 19,
+      "sha256": "6cb3777fbf7e2a2505671997b20f7ff2133f982010a4ddab0eddd4d40017b037",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 20,
+      "sha256": "9421bb803dad530af5823314594889d73412abad99054fa31119ab88bfe64b13",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 21,
+      "sha256": "f6623b0a24cda8bd53a2d510aef5af1f3a2b03cd5b24f25bdcab0f073cde556f",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 22,
+      "sha256": "939b5c874a045d6ed16fdfbee07210113865e5fc30a4de82633c0bce970a2ff3",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 23,
+      "sha256": "6314ad6ac6eba8e3096935b27c938443d080c39a81ab8bb61fa22677eeae4b71",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 24,
+      "sha256": "506e9464cdaec8492cf1a9f3602aeab9928d501e5ec959f1d99d30e0890b01aa",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 25,
+      "sha256": "22a2e6a770e74c7b67b824b0e46ecdaeeae262a0950511ae8d8b771a865c71c8",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 26,
+      "sha256": "0057698eeb6017423182befc8f130d15254c88a614102e1ec5b7772ebde5748b",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 27,
+      "sha256": "4f61de6f866c1746c7bc0b03ca4c3de84c69469fae2860ddb25ddef1afdf6ab5",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 28,
+      "sha256": "ee76ab53053870125b280c3812637bdfaa8cf4058ac84f47ee15b2a120a2ee0d",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 29,
+      "sha256": "924fb1ac64158b72bf98932f18bd63357bdfe410e0a6f2cd02f4d17c7459f11b",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 30,
+      "sha256": "77b34cd91a1bef5c10a9150d8426e6fa8488bc2146879661935cc8d035e20d5c",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 31,
+      "sha256": "ac6ef8590a7a89231e374e6011aafccc29035a0b305eca672677cab1b68a5d49",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    },
+    {
+      "frame": 32,
+      "sha256": "139dcc1986134c32bf61d585e64514bea4895b85561516f3f4ca12a8ca36d7f8",
+      "reused_saved_actual_Canvas": true,
+      "rerendered": false
+    }
+  ],
+  "new_source_runtime_SHA_validation": [
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/contract.js",
+      "sha256": "655a082566a505a7eeba8d1ab076e4b2f35eb3361411373947baa525a49244a4"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F000_body_behind_original_pixels.png",
+      "sha256": "9d796b2e01c23875f6f1d664f32dae4a2ac1e7dfa246d445ba4041af43b87c82"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F000_forearms_elbows_original_pixels.png",
+      "sha256": "eadeb9894a1c62fecae3fb0bc48240604a178283703d0d8ec8cbc4e5879684f9"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F003_body_behind_original_pixels.png",
+      "sha256": "1d32a02c8d4de628752de6a4004fa6e6e28653774cbbcdba3b20e64ff77d99a0"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F003_forearms_elbows_original_pixels.png",
+      "sha256": "c644829f0e9328af56ec8877479409c80d4e246fa846dfcc905706e047a7f35c"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F005_body_behind_original_pixels.png",
+      "sha256": "f61f53c9c8b1d2ebed85097117dc7ebe5d889a9ac608cab88d40bbb430763ce6"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F005_forearms_elbows_original_pixels.png",
+      "sha256": "5fd88e4098a8f6836a4fcaa69d593fd3f512ff460e3a373637e4b3a7ac5f81d6"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F006_body_behind_original_pixels.png",
+      "sha256": "9551c4674b6176d2d4410f466c1e2d2d07bfdd5fbd0b8e292c737e5a3abfe229"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F006_forearms_elbows_original_pixels.png",
+      "sha256": "820114e9d70eb0202fe9dc5bd75eb3f3456d81dd356bbef9d3241dd66aeb78ee"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F009_body_behind_original_pixels.png",
+      "sha256": "a7093f5eae4b25b1d392736f14bc5de1ac3d0be30a423ee1d161458fccf7232d"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F009_forearms_elbows_original_pixels.png",
+      "sha256": "f086481c0aa8156ec141a67cdb42ce8d30799f8c2ffee236f93806a1e3790ef8"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F014_body_behind_original_pixels.png",
+      "sha256": "5ce2ba7468024557bc0c60a67736ce37c581627de4f86c752af620c3619b61e4"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F014_forearms_elbows_original_pixels.png",
+      "sha256": "be40088b41d83b08cc33a88a67ce75c5dd2a1c0472bbf3900a69fbc70f45263b"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F017_body_behind_original_pixels.png",
+      "sha256": "6076b1df7002374a6d59a105928393f98f0bee053bffa94900f4210ffa2e776c"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F017_forearms_elbows_original_pixels.png",
+      "sha256": "591de43e7add7bfad54cbf6ea236c8983af22559437d060401228cb720b6aa43"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F017_table_box_original_pixels.png",
+      "sha256": "c90ced5ea42ecddc7c7fad3b5ef764e0a7c60eb2c69615f0bc6cf33598cc6a02"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F020_body_behind_original_pixels.png",
+      "sha256": "9e72e2e8832e7fa696e735a8807ed516d4222d8915b9eb44fd4023b64447c8e9"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F020_forearms_elbows_original_pixels.png",
+      "sha256": "ceb38cf609d5db0f6d0506e363ba5dd9baaee0fc09cc33af68a0d32249c7cc44"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F020_table_box_original_pixels.png",
+      "sha256": "7ff0d1619f0ece6a7050eb6252a6185fe5e91b91d3eba3a8dfb24c737840675f"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F023_body_behind_original_pixels.png",
+      "sha256": "b87fea09726df5a444d999191ddb840aa0c1367e5c3cd384ea6caafe0abbdc7f"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F023_forearms_elbows_original_pixels.png",
+      "sha256": "94dd13fb03d5f92f9138ea3aa965db059e57144cf783adbd2235c0d2aa4c58f0"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F023_table_box_original_pixels.png",
+      "sha256": "5b0bded939e80c90f4b58139d76bbdc2f10263b36db5a03335cdf8724a59f3b4"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F025_body_behind_original_pixels.png",
+      "sha256": "4b96d7be5d75ecd7a12f294414441f424d815d0dff1a82e77b411c437af8dacd"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F025_forearms_elbows_original_pixels.png",
+      "sha256": "fc0fd2968018f828be47d2b31a89385ec26c9d6570ab9379185b631a10d6f7f5"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F025_table_box_original_pixels.png",
+      "sha256": "e4c4ddbccf7b52e9dfdbedefcee772d8f9355efd45f244e24464b3e221716b91"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F027_body_behind_original_pixels.png",
+      "sha256": "d6ca9051f64d8df0864d29f30bde3d2588ecff48ae388d19194da74b0ecb1b86"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F027_forearms_elbows_original_pixels.png",
+      "sha256": "5d5751fe3ae4741589d9e3d7b0b5739b95defad2f8fc00ecc2ab58f36e11894d"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F027_table_box_original_pixels.png",
+      "sha256": "33803ac0893368d89393353b6bbae4220fdc6db6384fa4eb95ec72d96d82af0a"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F030_body_behind_original_pixels.png",
+      "sha256": "9d23df4f5f797bd4bf016c37381892d6d2f64c0f2d6f040f3dd28ce030fd838b"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F030_forearms_elbows_original_pixels.png",
+      "sha256": "09246c253a1a3d9c5b1c837680105d537b3bfa05a72c8f42c4bf4feea449cfb3"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F030_table_box_original_pixels.png",
+      "sha256": "eeebb29732ce936ca1feb134967b1714782cbbcfe922e86b821a89efa37616f2"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F033_body_behind_original_pixels.png",
+      "sha256": "adc14536112cc5ef24316d94bc88f6f5bc08cb8ab8d9cc6ea14aae7d79bfe511"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F033_forearms_elbows_original_pixels.png",
+      "sha256": "cc72ef2875b0eeb42b9a4fcfd767f2997da6e2b0cf6265d0961d7b895af2263e"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F033_table_box_original_pixels.png",
+      "sha256": "52e15b0f4a7cf2d1e7472d0226c032514ecdf4cd4506fbf47401968caf223406"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/layer_contract.js",
+      "sha256": "2fa3f97fe286a76949f7f4b0c455245d4870a1e2e658e41e2bd96c4df0cbcf2a"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/s08_first36_scene.js",
+      "sha256": "58ab66325e19ff46d0b295ec428bfc7afd5137a02de6c415582f7fd32179f754"
+    }
+  ],
+  "first33_static_regression_result": "static_regression_run.json",
+  "source_box": {
+    "visible_pixels": 1665,
+    "bottom_y": 970,
+    "alpha_and_visible_RGBA_exact030": true,
+    "body_or_arms_duplicate_box_pixels": 0
+  },
+  "actual_low_seat_source_alpha_2x2": [
+    [
+      0,
+      2
+    ],
+    [
+      23,
+      0
+    ]
+  ],
+  "low_lever_geometry": {
+    "angle": -0.35,
+    "lift": 1,
+    "center": [
+      1233.9532049682696,
+      766.8943738423919
+    ],
+    "total_globe_rise_contract_px": 83.24324324324324
+  },
+  "actual_match_head033": [
+    1230,
+    707
+  ],
+  "head_delta030_to033": [
+    82,
+    -10
+  ],
+  "wick_ignition": 0,
+  "all36_encoding_checks": [
+    {
+      "frame": 0,
+      "source_PNG_sha256": "1cfd8fe62ea9bb586cc066c45be556509590dae0914d75c494231846e2daa290",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 6.777445987654321
+    },
+    {
+      "frame": 1,
+      "source_PNG_sha256": "8792c6d1480f06f98441c44663c45cd60cc734fc239e68bbf716d675e76732b8",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.147987718621399
+    },
+    {
+      "frame": 2,
+      "source_PNG_sha256": "2270daac645dcd7dbb35cb606486083389d1c89457c3edcf144c4820152448c0",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.171389210390947
+    },
+    {
+      "frame": 3,
+      "source_PNG_sha256": "62d6798c78dd1e3b9887e04a302c7394e98e867f199b63c2bca1e8ae9c23b03c",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.19975340792181
+    },
+    {
+      "frame": 4,
+      "source_PNG_sha256": "84397cd5b4f76e909bf5842000c1b61d3103462a98aa216675b61aa91d2ace81",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.146192451131688
+    },
+    {
+      "frame": 5,
+      "source_PNG_sha256": "4aa637b94ad603b0f6765c05261569b0f2a1ba9ee53fbf3ccf68644db3cb9a18",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 9.439403774434156
+    },
+    {
+      "frame": 6,
+      "source_PNG_sha256": "c14a9f9799d731123e10b91a01df6b649e92dde0d5acde17bde5b544aa2062ec",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 8.645960969650206
+    },
+    {
+      "frame": 7,
+      "source_PNG_sha256": "cab4b5159973611aee2d120fe205144943471bcc2d3d16891f2c92b936839d40",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 8.15585792824074
+    },
+    {
+      "frame": 8,
+      "source_PNG_sha256": "c271909e85d23e424bbf557137506ad42844c438b62093404ec9ae996c9236e7",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.943789866255144
+    },
+    {
+      "frame": 9,
+      "source_PNG_sha256": "a6c5055ce88c3f31b521d49de8cf2e97a9215da9318a21f9191a42eb6de49c87",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.523803690843621
+    },
+    {
+      "frame": 10,
+      "source_PNG_sha256": "9bdea5b0f34dfbcf61ffe45a78ad4c67dec91d7340ccc399bfa95e8bf45ddafa",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 8.123362750771605
+    },
+    {
+      "frame": 11,
+      "source_PNG_sha256": "8b90e52421d757d1de6a18b71d95fb8ee850c0c0383082e14543799ac5df89f3",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 8.031905864197531
+    },
+    {
+      "frame": 12,
+      "source_PNG_sha256": "cc861f479a4b6cac80b32addd25dfbc7497826be8713a94990ebe234965cb5d6",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.609406346450617
+    },
+    {
+      "frame": 13,
+      "source_PNG_sha256": "9d9352b32fe78bf615ce0a53f19013580480d51a4b13a87830f5e52926939f67",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.6746564750514406
+    },
+    {
+      "frame": 14,
+      "source_PNG_sha256": "0dcec75678d14ac68a54bd35da8b7c23184d9e35da754c50d32c1b73fb84ed3c",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.660737525720164
+    },
+    {
+      "frame": 15,
+      "source_PNG_sha256": "3c59a58050e265674496208883d9584f93171661223bfe68f76f427d426a031f",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.509140625
+    },
+    {
+      "frame": 16,
+      "source_PNG_sha256": "0851ff2aae7c85135b71b9062d07e527bba8e6a4dc7aca2a9a3d6b2adea53986",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.813988876028807
+    },
+    {
+      "frame": 17,
+      "source_PNG_sha256": "5d2f066a1ab237b75a47537d774fdb194c46ea8cd59c54fd475b3b9b10814358",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.799393968621399
+    },
+    {
+      "frame": 18,
+      "source_PNG_sha256": "2700b355a51d697fec03b62a100b6c0e8ac157d6ad931084c2a1fa6f1ae7a2d9",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.8943428497942385
+    },
+    {
+      "frame": 19,
+      "source_PNG_sha256": "6cb3777fbf7e2a2505671997b20f7ff2133f982010a4ddab0eddd4d40017b037",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 8.093831661522634
+    },
+    {
+      "frame": 20,
+      "source_PNG_sha256": "9421bb803dad530af5823314594889d73412abad99054fa31119ab88bfe64b13",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 8.274506012088477
+    },
+    {
+      "frame": 21,
+      "source_PNG_sha256": "f6623b0a24cda8bd53a2d510aef5af1f3a2b03cd5b24f25bdcab0f073cde556f",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.7036934156378605
+    },
+    {
+      "frame": 22,
+      "source_PNG_sha256": "939b5c874a045d6ed16fdfbee07210113865e5fc30a4de82633c0bce970a2ff3",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.749862075617284
+    },
+    {
+      "frame": 23,
+      "source_PNG_sha256": "6314ad6ac6eba8e3096935b27c938443d080c39a81ab8bb61fa22677eeae4b71",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.648878440072017
+    },
+    {
+      "frame": 24,
+      "source_PNG_sha256": "506e9464cdaec8492cf1a9f3602aeab9928d501e5ec959f1d99d30e0890b01aa",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.6871043917181066
+    },
+    {
+      "frame": 25,
+      "source_PNG_sha256": "22a2e6a770e74c7b67b824b0e46ecdaeeae262a0950511ae8d8b771a865c71c8",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.999773984053498
+    },
+    {
+      "frame": 26,
+      "source_PNG_sha256": "0057698eeb6017423182befc8f130d15254c88a614102e1ec5b7772ebde5748b",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 8.071101144547326
+    },
+    {
+      "frame": 27,
+      "source_PNG_sha256": "4f61de6f866c1746c7bc0b03ca4c3de84c69469fae2860ddb25ddef1afdf6ab5",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.844125514403292
+    },
+    {
+      "frame": 28,
+      "source_PNG_sha256": "ee76ab53053870125b280c3812637bdfaa8cf4058ac84f47ee15b2a120a2ee0d",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.706370563271605
+    },
+    {
+      "frame": 29,
+      "source_PNG_sha256": "924fb1ac64158b72bf98932f18bd63357bdfe410e0a6f2cd02f4d17c7459f11b",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.6987123842592595
+    },
+    {
+      "frame": 30,
+      "source_PNG_sha256": "77b34cd91a1bef5c10a9150d8426e6fa8488bc2146879661935cc8d035e20d5c",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 7.902610114454733
+    },
+    {
+      "frame": 31,
+      "source_PNG_sha256": "ac6ef8590a7a89231e374e6011aafccc29035a0b305eca672677cab1b68a5d49",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 8.18292164994856
+    },
+    {
+      "frame": 32,
+      "source_PNG_sha256": "139dcc1986134c32bf61d585e64514bea4895b85561516f3f4ca12a8ca36d7f8",
+      "origin": "reused actual33 cache",
+      "decoded_vs_source_MSE": 8.36822595164609
+    },
+    {
+      "frame": 33,
+      "source_PNG_sha256": "854b12cfbd232250e15537ea2f85b07fc790d9a55b5b67f41781141fd97d3b5a",
+      "origin": "new actual2a8f Canvas render",
+      "decoded_vs_source_MSE": 7.918354230967078
+    },
+    {
+      "frame": 34,
+      "source_PNG_sha256": "fc65809d39ab4d82a7981fb143b45479a52329c863b5f5831cbce9c988f44a8f",
+      "origin": "new actual2a8f Canvas render",
+      "decoded_vs_source_MSE": 8.08871511702675
+    },
+    {
+      "frame": 35,
+      "source_PNG_sha256": "eca30408ace309fff79b40a2fa797c9d2e42ce95954562495aea00f8753029e2",
+      "origin": "new actual2a8f Canvas render",
+      "decoded_vs_source_MSE": 8.347108731995885
+    }
+  ],
+  "max_encoded_MSE": 9.439403774434156,
+  "mp4_sha256": "b16f1488496c0dc6a100060d36e99d19f80eff1f3b8fb2ae5b868b9ccb509f37"
+}

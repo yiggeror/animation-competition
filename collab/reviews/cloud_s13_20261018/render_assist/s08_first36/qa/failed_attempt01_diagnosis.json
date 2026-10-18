@@ -1,0 +1,7 @@
+{
+  "status": "RESOLVED_LOCAL_AUDIT_OUTPUT_DIRECTORY_MISSING",
+  "cause": "Copied audit shim writes../qa/actual_browser_events.jsonl but newqa directory had not been created",
+  "actual_frames_before_failure": 0,
+  "fix": "Create own deliveryqa directory;no source/module/assets edits",
+  "native_image_calls": 0
+}

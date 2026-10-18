@@ -1,0 +1,24 @@
+{
+  "fixed_commit": "2a8fcb919cc4efe59169be80650d10621427ef25",
+  "entry": "collab/reviews/20261018_2034_s08_first36_scene/s08_first36_scene.js",
+  "entry_sha256": "58ab66325e19ff46d0b295ec428bfc7afd5137a02de6c415582f7fd32179f754",
+  "command": "NODE_OPTIONS=--require ./collab/reviews/cloud_s13_20261018/render_assist/s08_first36/tools/actual_chromium_audit_shim.cjs node tools/js/frames.cjs collab/reviews/20261018_2034_s08_first36_scene/s08_first36_scene.js build/S08_first36_increment --fps 24 --w 1920 --h 1080 --workers 2 --from 1.375 --to 1.5",
+  "actually_rendered": [
+    33,
+    34,
+    35
+  ],
+  "successful_increment_runs": 1,
+  "tool_invocations": 2,
+  "first_audit_directory_initialization_failure_frames": 0,
+  "reused_33_delivery_commit": "c10fa38318a518d8b0c445c6a18bd8883d94cc43",
+  "reused33_all_SHA_reverified": true,
+  "assembly_encoding_runs": 1,
+  "full36_fresh_render": false,
+  "native_image_generation_calls": 0,
+  "source_edits": 0,
+  "new_frames036plus": false,
+  "actual_MP4_sha256": "b16f1488496c0dc6a100060d36e99d19f80eff1f3b8fb2ae5b868b9ccb509f37",
+  "resource_audit_limitation": "6actual PNG responsesHTTP200 but response.bodyreturned0bytes;emptySHA NOT nativeSHA. Separate read-only browser arrayBuffer probe verifies3current frozenfiles exactly,noextra rendering. Raworiginal observations preserved.",
+  "page_errors": []
+}

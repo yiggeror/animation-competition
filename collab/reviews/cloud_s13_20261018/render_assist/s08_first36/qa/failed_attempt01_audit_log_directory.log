@@ -1,0 +1,17 @@
+node:fs:2483
+    return binding.writeFileUtf8(
+                   ^
+
+Error: ENOENT: no such file or directory, open '/workspace/animation-competition-s08-first14/collab/reviews/cloud_s13_20261018/render_assist/s08_first36/qa/actual_browser_events.jsonl'
+    at Object.writeFileSync (node:fs:2483:20)
+    at Object.appendFileSync (node:fs:2565:6)
+    at log (/workspace/animation-competition-s08-first14/collab/reviews/cloud_s13_20261018/render_assist/s08_first36/tools/actual_chromium_audit_shim.cjs:7:17)
+    at chromium.launch (/workspace/animation-competition-s08-first14/collab/reviews/cloud_s13_20261018/render_assist/s08_first36/tools/actual_chromium_audit_shim.cjs:11:2)
+    at async /workspace/animation-competition-s08-first14/tools/js/frames.cjs:16:19 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/workspace/animation-competition-s08-first14/collab/reviews/cloud_s13_20261018/render_assist/s08_first36/qa/actual_browser_events.jsonl'
+}
+
+Node.js v24.19.0

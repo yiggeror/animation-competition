@@ -1,0 +1,25 @@
+{
+  "status": "PASS_SEPARATE_READ_ONLY_CHROMIUM_ARRAYBUFFER_SHA_PROBE",
+  "actual_render_frames_in_probe": 0,
+  "rows": [
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F033_body_behind_original_pixels.png",
+      "status": 200,
+      "bytes": 576928,
+      "sha256": "adc14536112cc5ef24316d94bc88f6f5bc08cb8ab8d9cc6ea14aae7d79bfe511"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F033_forearms_elbows_original_pixels.png",
+      "status": 200,
+      "bytes": 561607,
+      "sha256": "cc72ef2875b0eeb42b9a4fcfd767f2997da6e2b0cf6265d0961d7b895af2263e"
+    },
+    {
+      "path": "collab/reviews/20261018_2034_s08_first36_scene/frames/F033_table_box_original_pixels.png",
+      "status": 200,
+      "bytes": 557053,
+      "sha256": "52e15b0f4a7cf2d1e7472d0226c032514ecdf4cd4506fbf47401968caf223406"
+    }
+  ],
+  "note": "The actual render response audit reported200 but Playwright response.body returned0bytes for six PNG responses;those empty-body hashes are not native-file digests. This separate browser fetch+arrayBuffer probe verifies3current frozen files without rerendering;not relabeled as original render responses."
+}

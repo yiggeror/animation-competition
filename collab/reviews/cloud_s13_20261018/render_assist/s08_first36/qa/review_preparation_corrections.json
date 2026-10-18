@@ -1,0 +1,20 @@
+{
+  "source_or_actual_PNG_changes": 0,
+  "notes": [
+    {
+      "step": "copied static audit",
+      "initial_issue": "relative contract/layer imports still pointed to own toolsfolder",
+      "correction": "source/output URLs adapted to fixedsource;all source assertions unchanged;freshpass in static_regression_run.json"
+    },
+    {
+      "step": "review resource assertion",
+      "initial_issue": "actual Playwright response.body empty for6PNGresponses",
+      "correction": "preserveempty observations;verifyactualHTTP200 andindependent read-onlycurrentfrozenfilesSHA;no rerender;causeofemptyPlaywrightbodyunconfirmed"
+    },
+    {
+      "step": "low knob disk sampling",
+      "initial_issue": "reviewchecker sampled pixelcornersyield144points",
+      "correction": "match sourceverify_F033.py pixelcentres(x+.5,y+.5);148points andRGBAexact030;noPNGedit"
+    }
+  ]
+}
