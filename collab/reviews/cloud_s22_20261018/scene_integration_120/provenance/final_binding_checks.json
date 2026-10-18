@@ -11,6 +11,8 @@
   "full_scene_authorized_after_cleanup": true,
   "production_EDL_audio_ready_changed": false,
   "source_cleanup_review": "../F108_edge_cleanup_20261018/provenance/cleanup_checks.json",
-  "source_module_unchanged_from_b459d126": true,
-  "module_sha256": "a0f6df970ed1de735d8a4eed162b57a4abb202e02b0ac72da1ec1cda1ae40081"
+  "source_module_unchanged_from_b459d126": false,
+  "module_sha256": "a5d4596d86e9e8a485b70ad3f567716ee6878637f96236b4003a59c42d659d1f",
+  "only_module_delta_from_b459d126": "Astra requested turtleStep1.4+k/1.72+k ->1.5+k/1.82+k; rest of module byte-identical.",
+  "background_timing_fix": "turtle_timing_fix_20261018/provenance/timing_checks.json"
 }

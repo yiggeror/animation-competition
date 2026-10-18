@@ -1,0 +1,251 @@
+{
+  "base_commit": "3be9bc37c392fed5cea38e566a47a8195ff27bdc",
+  "before_scene_mp4_sha256": "d939665e2e618fb9613253b374ce4f43bd60541d4736b65c1b7365d72aec4af0",
+  "after_scene_mp4_sha256": "2370ae5b951a98e22ab1ece6ab082f4c0489850e0f614a43a59728f2b01378d2",
+  "before_module_sha256": "a0f6df970ed1de735d8a4eed162b57a4abb202e02b0ac72da1ec1cda1ae40081",
+  "after_module_sha256": "a5d4596d86e9e8a485b70ad3f567716ee6878637f96236b4003a59c42d659d1f",
+  "one_line_curve_change_only": true,
+  "changed_actual_Canvas_frames": [
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115
+  ],
+  "unchanged_actual_Canvas_frames_outside_four_curve_windows": 80,
+  "old_intervals": [
+    [
+      1.4,
+      1.72
+    ],
+    [
+      2.4,
+      2.7199999999999998
+    ],
+    [
+      3.4,
+      3.7199999999999998
+    ],
+    [
+      4.4,
+      4.72
+    ]
+  ],
+  "new_intervals": [
+    [
+      1.5,
+      1.82
+    ],
+    [
+      2.5,
+      2.8200000000000003
+    ],
+    [
+      3.5,
+      3.8200000000000003
+    ],
+    [
+      4.5,
+      4.82
+    ]
+  ],
+  "new_start_frames": [
+    36,
+    60,
+    84,
+    108
+  ],
+  "all12_image_SHA_unchanged": true,
+  "resource_map_JSON_JS_exposure_CSV_tail_lock_byte_identical": true,
+  "actual_decoded_requested_frames": [
+    35,
+    36,
+    37,
+    59,
+    60,
+    61,
+    83,
+    84,
+    85,
+    107,
+    108,
+    109
+  ],
+  "actual_decoded_requested_frame_SHA256": {
+    "F035": "24bf1f3025631064257801f268e94a5fb9560a0409cdeee27f570d74bfc5e802",
+    "F036": "b5aa122b8bee17cf337279c9e4703790f12d1a066c34f2f91f3c1b73384f8375",
+    "F037": "4f0ea667d7ef201190d97a9829b32eaaaf962b7f712ddb0098f9465fe65abd91",
+    "F059": "674be9ebd240361a43fbfbb51b8451afcf509cdd6f3d941eb733241fe3de43c6",
+    "F060": "a1590b77527fd05741eacd2c48ddea1b6220b8d134dc1e49187f3fe6c6e6941e",
+    "F061": "b14633dc68d9b980f6711948cd05e297cd6b4b273305a3a7c9e35a2bd657853a",
+    "F083": "5c6646d6b1f5bd4ad5e988413f4cd349cf73a06228c84bc4a8c771e613f599ff",
+    "F084": "583bc575951755f565185577fc462359f75480fe86b9a83f914f458c5f433c33",
+    "F085": "f8439b2e407b4d63ccba7fc62238ce7fa5e88456f9e71c69d319ff95682993a7",
+    "F107": "6ce530c6d5dc4249c292fd5c927e6e7ea9508c77ed63932cbd21d03044d02e6d",
+    "F108": "4e34455edc200507fbb1cfa9b8a7ca2fce0ecc18420dd833dadbc1151b471fd1",
+    "F109": "4243d2794aa1c720ad31b341663eb80e5bea5ec28b51001b1dcee37a3af18539"
+  },
+  "timing_comparison": [
+    {
+      "push": 1,
+      "frame": 35,
+      "time_seconds": "1.45833333",
+      "position": "before",
+      "human_state": "F024",
+      "old_turtleStep": "0.0875755593",
+      "new_turtleStep": "0.0000000000",
+      "new_walk_parameter": 0.15
+    },
+    {
+      "push": 1,
+      "frame": 36,
+      "time_seconds": "1.50000000",
+      "position": "start",
+      "human_state": "F036",
+      "old_turtleStep": "0.2319335938",
+      "new_turtleStep": "0.0000000000",
+      "new_walk_parameter": 0.15
+    },
+    {
+      "push": 1,
+      "frame": 37,
+      "time_seconds": "1.54166667",
+      "position": "after",
+      "human_state": "F036",
+      "old_turtleStep": "0.4144386009",
+      "new_turtleStep": "0.0464474713",
+      "new_walk_parameter": 1
+    },
+    {
+      "push": 2,
+      "frame": 59,
+      "time_seconds": "2.45833333",
+      "position": "before",
+      "human_state": "F042",
+      "old_turtleStep": "1.0875755593",
+      "new_turtleStep": "1.0000000000",
+      "new_walk_parameter": 0.15
+    },
+    {
+      "push": 2,
+      "frame": 60,
+      "time_seconds": "2.50000000",
+      "position": "start",
+      "human_state": "F060",
+      "old_turtleStep": "1.2319335938",
+      "new_turtleStep": "1.0000000000",
+      "new_walk_parameter": 0.15
+    },
+    {
+      "push": 2,
+      "frame": 61,
+      "time_seconds": "2.54166667",
+      "position": "after",
+      "human_state": "F060",
+      "old_turtleStep": "1.4144386009",
+      "new_turtleStep": "1.0464474713",
+      "new_walk_parameter": 1
+    },
+    {
+      "push": 3,
+      "frame": 83,
+      "time_seconds": "3.45833333",
+      "position": "before",
+      "human_state": "F066",
+      "old_turtleStep": "2.0875755593",
+      "new_turtleStep": "2.0000000000",
+      "new_walk_parameter": 0.15
+    },
+    {
+      "push": 3,
+      "frame": 84,
+      "time_seconds": "3.50000000",
+      "position": "start",
+      "human_state": "F084",
+      "old_turtleStep": "2.2319335938",
+      "new_turtleStep": "2.0000000000",
+      "new_walk_parameter": 0.15
+    },
+    {
+      "push": 3,
+      "frame": 85,
+      "time_seconds": "3.54166667",
+      "position": "after",
+      "human_state": "F084",
+      "old_turtleStep": "2.4144386009",
+      "new_turtleStep": "2.0464474713",
+      "new_walk_parameter": 1
+    },
+    {
+      "push": 4,
+      "frame": 107,
+      "time_seconds": "4.45833333",
+      "position": "before",
+      "human_state": "F090",
+      "old_turtleStep": "3.0875755593",
+      "new_turtleStep": "3.0000000000",
+      "new_walk_parameter": 0.15
+    },
+    {
+      "push": 4,
+      "frame": 108,
+      "time_seconds": "4.50000000",
+      "position": "start",
+      "human_state": "F108",
+      "old_turtleStep": "3.2319335937",
+      "new_turtleStep": "3.0000000000",
+      "new_walk_parameter": 0.15
+    },
+    {
+      "push": 4,
+      "frame": 109,
+      "time_seconds": "4.54166667",
+      "position": "after",
+      "human_state": "F108",
+      "old_turtleStep": "3.4144386009",
+      "new_turtleStep": "3.0464474713",
+      "new_walk_parameter": 1
+    }
+  ],
+  "rest_turtlePose_time_and_walk_logic_unchanged": true,
+  "scene_camera_light_colour_code_unchanged": true,
+  "audio_integrated": false,
+  "production_ready": false,
+  "shared_EDL_audio_ready_changed": false,
+  "new_image_generation_calls": 0
+}

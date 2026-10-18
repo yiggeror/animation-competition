@@ -51,7 +51,7 @@ async function assertTailApproved() {
 // This step belongs only to the approved background turtle. Human motion is
 // exclusively selected from the12 drawings; no old hand action is retained.
 function turtleStep(t) {
-  let value=0;for(let k=0;k<4;k++) value+=sstep(1.4+k,1.72+k,t);return value;
+  let value=0;for(let k=0;k<4;k++) value+=sstep(1.5+k,1.82+k,t);return value;
 }
 function renderScene(ctx,t,W,H,im) {
   TURTLE ||= makeTurtle();

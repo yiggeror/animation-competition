@@ -1,0 +1,28 @@
+{
+  "reviewer": "S22 original cloud author; handed to Astra for continued full-scene review",
+  "actual_artifact": "scene120/S22_actual_scene120.mp4",
+  "actual_mp4_sha256": "2370ae5b951a98e22ab1ece6ab082f4c0489850e0f614a43a59728f2b01378d2",
+  "actually_viewed": [
+    "qa/actual_decoded_second_0.jpg",
+    "qa/actual_decoded_second_1.jpg",
+    "qa/actual_decoded_second_2.jpg",
+    "qa/actual_decoded_second_3.jpg",
+    "qa/actual_decoded_second_4.jpg",
+    "turtle_timing_fix_20261018/qa/actual_four_push_triplets.jpg",
+    "turtle_timing_fix_20261018/qa/push_F036_before_after.jpg",
+    "turtle_timing_fix_20261018/qa/push_F060_before_after.jpg",
+    "turtle_timing_fix_20261018/qa/push_F084_before_after.jpg",
+    "turtle_timing_fix_20261018/qa/push_F108_before_after.jpg"
+  ],
+  "scope": "All120 actual decoded frames viewed in consecutive one-second sheets; specified12 full-scene triplets and4 actual old/new turtle crop boards inspected. No claim of realtime human playback or final production approval.",
+  "observations": [
+    "四次背景曲线只从1.4+k～1.72+k移到1.5+k～1.82+k；实际三帧对照中，推前一帧保持上一累计值，36/60/84/108起帧对齐人物换张，后一帧进入推进。",
+    "新旧实际背景局部已逐组看过；前一帧旧曲线k+0.0875755593改为k，起帧为k，后一帧为k+0.0464474713。",
+    "全部120帧新片解码缩览已实看，原图层、场景光与机位保持；指定12张完整1920x1080解码图已留存。",
+    "原Canvas SHA实际仅34–43/58–67/82–91/106–115共40帧改变，其余80帧逐字节一致。12人物图/资源JSON与JS/120行曝光CSV/尾态锁文件逐字节未变。"
+  ],
+  "author_result": "Pass for delivery of this requested minimal timing correction; Astra full-scene review remains pending.",
+  "production_ready": false,
+  "audio_integrated": false,
+  "new_generation_calls": 0
+}

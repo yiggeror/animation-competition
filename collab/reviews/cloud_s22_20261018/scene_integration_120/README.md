@@ -1,6 +1,8 @@
-# S22完整120帧实景候选：已接最终108，交Astra整镜双审
+# S22完整120帧实景候选：背景四推已延后0.1秒，待整镜双审
 
-[实际实景MP4](scene120/S22_actual_scene120.mp4)：**1920×1080、24fps、120帧、5秒，无音轨**。从共用`dev/view.html`正式Canvas入口逐帧捕获，包含已批准布景、真实乌龟、场景光、慢推、暗角和颗粒。视频完整SHA256：`d939665e2e618fb9613253b374ce4f43bd60541d4736b65c1b7365d72aec4af0`。
+最新Astra实审要求背景四推延后0.1秒，已按唯一曲线修正重渲本镜120帧。[指定四组三帧实际解码、旧新局部和时间对照](turtle_timing_fix_20261018/README.md)；12人物图与曝光/材色不变，四个窗口外80张原帧逐字节一致。以下当前视频及SHA均已换为本次新片，仍待整镜双审。
+
+[实际实景MP4](scene120/S22_actual_scene120.mp4)：**1920×1080、24fps、120帧、5秒，无音轨**。从共用`dev/view.html`正式Canvas入口逐帧捕获，包含已批准布景、真实乌龟、场景光、慢推、暗角和颗粒。视频完整SHA256：`2370ae5b951a98e22ab1ece6ab082f4c0489850e0f614a43a59728f2b01378d2`。
 
 Astra最新实审已通过114，并明确要求108指定外缘同raw清理后直接接景。[零生成小修](../F108_edge_cleanup_20261018/README.md)先交提交`2d99e52aabf7abed5ccc3b116f06f3d646e3bf85`。本镜仅绑定最终108 `e0d31242883ad1dca5e5ce1c838257228e5d980ace1605ea93e2a31349f5a704`；114保持`74b692c116bf4d72e7d0fb684910b852e4c91ed32cfbe84d704e22a44f217112`。[尾态授权记录](tail_lock.json)、[最终绑定核对](provenance/final_binding_checks.json)与[资源映射](resource_map.json)一致，实际浏览器请求的新108返回200并通过字节SHA验证。旧人物层包`df9f16b`保持原字节，旧108不参与本次实景。
 
@@ -8,7 +10,7 @@ Astra最新实审已通过114，并明确要求108指定外缘同raw清理后直
 
 保留12原态及原持帧：000–011、012–017、018–023、024–035、036–041、042–059、060–065、066–083、084–089、090–107、108–113、114–119。[逐帧120行最终源图/SHA映射](S22_final_frame_bindings_120.csv)。其他11态RGBA和所有曝光区间/持帧与`b459d126`逐项一致；人物原图左上对齐按1920/1672等比入画，无额外旧人物抖动或动作代码，不程序接第二签。
 
-[S22_drawn.js](S22_drawn.js)导出`DURATION=5`、`FPS=24`、`TOTAL_FRAMES=120`、`renderFrame(ctx,t,W,H)`和`render`。实际模块SHA `a0f6df970ed1de735d8a4eed162b57a4abb202e02b0ac72da1ec1cda1ae40081`，模块与已备入口版本保持原字节。正式路由：
+[S22_drawn.js](S22_drawn.js)导出`DURATION=5`、`FPS=24`、`TOTAL_FRAMES=120`、`renderFrame(ctx,t,W,H)`和`render`。实际模块SHA `a5d4596d86e9e8a485b70ad3f567716ee6878637f96236b4003a59c42d659d1f`；相对已备入口仅`turtleStep`一行区间改为1.5+k～1.82+k。正式路由：
 
 ```text
 /dev/view.html?mod=collab/reviews/cloud_s22_20261018/scene_integration_120/S22_drawn.js&w=1920&h=1080
