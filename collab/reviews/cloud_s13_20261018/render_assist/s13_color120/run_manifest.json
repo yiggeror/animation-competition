@@ -1,0 +1,13 @@
+{
+  "fixed_commit": "06a588dfbcb0124dfeaee563bcde07613f6bf5f6",
+  "branch": "cloud/s13-color120-verify-20261018",
+  "command": "node --require /workspace/animation-competition-s13-color120/collab/reviews/cloud_s13_20261018/render_assist/s13_color120/tools/system_chromium.cjs tools/js/frames.cjs /js/anim/s13_drawn.js build/s13_color120 --fps 24 --w 1280 --h 720 --workers 4 --from 0 --to 5 --mp4 build/S13_color120.mp4",
+  "source_integration_entry": "collab/reviews/20261018_1712_s13_semantic_color/README.md",
+  "scope": "actual S13 scene only; no source changes, image generation, audio, EDL or ready edits",
+  "image_generation_calls": 0,
+  "python": "Python 3.12.14",
+  "node": "v24.19.0",
+  "chromium": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "playwright": "1.62.1"
+}
