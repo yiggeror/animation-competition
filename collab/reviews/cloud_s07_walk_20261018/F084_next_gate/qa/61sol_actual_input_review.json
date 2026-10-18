@@ -1,0 +1,132 @@
+{
+  "status": "PREPARER_ACTUAL_SOURCE_INPUT_PASS_PENDING_ROOT_ASTRA_GATE_NOT_GENERATED",
+  "reviewer": "cloud_6.1sol",
+  "mother079_sha256": "856d10c9516c33a8e992a121033e76a5ac55bda269b16949a90aa431206f0364",
+  "scope": "Only084 input source preposition/whole trousers white domain, no real084 drawing or exposure acceptance",
+  "actual_viewed": [
+    "sources/F079_corrected_LOCKED.png (via corrected full gray source actual review)",
+    "qa/F079_F084_actual_preposition_and_mask_gray.png",
+    "qa/F079_F084_actual_preposition_and_mask_dark.png",
+    "qa/F084_actual_crop_and_WHITE_MASK_gray.png",
+    "qa/F084_complete_white_domain_overlay_gray.png",
+    "qa/F084_actual_sleeves_and_feet_dark.png",
+    "qa/F084_proxy_and_support_crop_GUIDE_NOT_ART.png",
+    "qa/F084_full_dark_NOT_ART.png"
+  ],
+  "visual_findings": [
+    "实际同框可分辨近右前鞋原位支撑、远左整鞋抬起前过步；源体/真实臂无新增肢体或玉镯归属错位。",
+    "预摆两裤仍是锁079完整原料平移后的旧姿态，左后旧裤口暂时悬空，这是整白真绘域内技术切口，未称成态或靠代码补桥。新far passing膝只在独立GUIDE图作软方向，不画新人物。",
+    "完整腰臀/旧新两腿/膝后转面与两裤口接入均在大块白域。最终六个H/K/踝前点同连通白区6，未被后层整鞋alpha/旧裤边割成孤立小框。",
+    "实际发现并修正本预摆旧裤可见性导致后抬鞋黑岛挡近胫的问题：仅在明确未来近胫遮挡走廊释放3389px后鞋可见保护；完整后鞋源层不改，后续采用新native前裤自然盖住，不能删鞋或把后鞋材料当新裤。",
+    "实际原头衣、完整可见双臂/手指/玉镯黑保，仅小袖根接域白；近支撑完整足源层逐RGBA/保存PNG字节0变，真实1022底，未用alpha0矩形护栏。",
+    "实际灰暗脚图显示远鞋为同源完整层scale1精确平移(+230.7035573123,−63.1688311688native)，实alpha128底959；近鞋1022。远鞋一次整体AA重采样如实记录，不虚报它和未移动原层逐字节同。"
+  ],
+  "finite_checks": {
+    "mother_six_layer_replay_RGBA_changed_pixels": 0,
+    "near_support_shoe_RGBA_changed_pixels": 0,
+    "near_support_shoe_saved_byte_identical": true,
+    "guard_intersections": {
+      "head_blouse": 0,
+      "complete_visible_arms": 0,
+      "near_actual_support_shoe": 0,
+      "far_actual_visible_swing_shoe": 0
+    },
+    "hard_guard_alpha0_pixels": 0,
+    "old_visible_pants_missing_edit_except_real_foreground": 0,
+    "white_pixels": 115816,
+    "crop_xyxy": [
+      1000,
+      280,
+      1520,
+      1060
+    ],
+    "connected_probes": {
+      "near_hiddenH": {
+        "native_xy": [
+          1290,
+          603
+        ],
+        "white": true,
+        "component": 6
+      },
+      "near_Kcorridor": {
+        "native_xy": [
+          1301,
+          772
+        ],
+        "white": true,
+        "component": 6
+      },
+      "near_above_ankle": {
+        "native_xy": [
+          1246,
+          933
+        ],
+        "white": true,
+        "component": 6
+      },
+      "far_hiddenH": {
+        "native_xy": [
+          1271,
+          606
+        ],
+        "white": true,
+        "component": 6
+      },
+      "far_Kcorridor": {
+        "native_xy": [
+          1396,
+          740
+        ],
+        "white": true,
+        "component": 6
+      },
+      "far_above_ankle": {
+        "native_xy": [
+          1271,
+          866
+        ],
+        "white": true,
+        "component": 6
+      }
+    },
+    "far_whole_layer_placed_not_mutated_or_split": true,
+    "isolated_sources_plus_prepare_reproduction": {
+      "reference/F084_actual_source_preposition_NOT_ART.png": {
+        "sha256": "5f55617fd8207c79c0961445d866c472e52cd98443d9cd317e6f567970c9249c",
+        "isolated_same_bytes": true
+      },
+      "reference/F084_crop_RGBA_NOT_ART.png": {
+        "sha256": "d622d6b4d1178551782964f7172db38cc5155a0db9b7cb41bdde1e2872525db8",
+        "isolated_same_bytes": true
+      },
+      "masks/F084_complete_waist_both_trousers_WHITE_EDIT_PENDING.png": {
+        "sha256": "fa43be490f82e1eb9992cc31a63b6e05d87fdd3ecb486eb9a9d4137faa1b05b7",
+        "isolated_same_bytes": true
+      },
+      "masks/F084_crop_WHITE_EDIT_PENDING.png": {
+        "sha256": "8894e26e64b0a4092c2bfc1dcdb443c5695757523d1a09f67a0cc9d86215a1f1",
+        "isolated_same_bytes": true
+      },
+      "layers/F084_near_shoe_ankle_SUPPORT_FIXED.png": {
+        "sha256": "57518102bfef2d81fd98017bd445e8ae7918bdb1dd60093657f82fc576a6cc7c",
+        "isolated_same_bytes": true
+      },
+      "layers/F084_far_shoe_ankle_SWING.png": {
+        "sha256": "c0385f95a38ebbf2d2236d88c4e44c0e003665dec0f1b0412f47f6a9ccb8411a",
+        "isolated_same_bytes": true
+      }
+    },
+    "isolated_reproduction_directory": "/tmp/s07_F084_source_replay_c5vl1szn/packet",
+    "snapshot_manifest_sha256": "876dbbcbd3483e9fa6af9ebb0baa3bdf93c5f9b2237df30dc23dcb24151042a1"
+  },
+  "explicit_limits": [
+    "母片重放/代理数值不替代真实084全腿自然体量、承重和五指实审；本包停在输入门。",
+    "需原作者/Astra实看同框预摆与实际白域后裁定是否调用；本审不调用、不提交/推送。",
+    "不回旧744/791/758/623绝对骨点，不以投影长度证明解剖骨长；090及以后未准备。",
+    "失败079/旧073姿态图不作输入或参考；唯一主要形体图为双审纠正079和锁057真实体量，palette锁057/062。"
+  ],
+  "remaining_clear_source_or_mask_blockers": [],
+  "new_calls": 0,
+  "new_pose_pixels_drawn": 0
+}

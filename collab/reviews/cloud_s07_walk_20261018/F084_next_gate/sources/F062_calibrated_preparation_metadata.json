@@ -1,0 +1,169 @@
+{
+  "status": "NEW_HIP_CALIBRATED_F062_PIXEL_PREFLIGHT_PENDING_PARENT_ACTUAL_REVIEW_NOT_CALL_APPROVED",
+  "source_sha256": "93939f3e148c0a957ef418c677e60cc3fd27cf6b6844f91d500c8a3508b76720",
+  "source": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F057_semantic_color_ankle/candidate/F057_semantic_color_and_ankle_PENDING.png",
+  "proposal_sha256": "05588ef8914feafd6f75f3eb52a5d4548d9aed3a1cb152041712a29ecc5fa874",
+  "registration": {
+    "s": 0.36410361842105265,
+    "tx": 627.0254537171638,
+    "ty": 402.7604324894813,
+    "head_target": 69.1796875,
+    "head_center_world": [
+      929.9596642434797,
+      442.447726897376
+    ],
+    "warning": "Head source is actual G037253±5asset pixels, not75.1 construction; F057 head190±5native manual estimate. One uniform whole-image registration only."
+  },
+  "near_source_chain_native": [
+    [
+      805.0,
+      595.0
+    ],
+    [
+      818.7165829532703,
+      764.1535416501339
+    ],
+    [
+      833.856190186625,
+      957.8118142506097
+    ]
+  ],
+  "near062_chain_native": [
+    [
+      886.855796820236,
+      603.2865215876859
+    ],
+    [
+      893.2756443138585,
+      772.8738172759424
+    ],
+    [
+      833.856190186625,
+      957.8118142506097
+    ]
+  ],
+  "near_lengths_world_source": [
+    61.79157582498698,
+    70.72682024406504
+  ],
+  "near_lengths_world_target": [
+    61.79157582498698,
+    70.72682024406504
+  ],
+  "hip_proxy_not_anatomical_measurement": true,
+  "hip_down_from_uniform_world": 6.193040419690623,
+  "hip_down_from_source_world": 3.0171524942006065,
+  "head_blouse_delta_world": [
+    29.803991810986417,
+    -3.1758879254900307
+  ],
+  "near_shoe_RGBA_changes": 0,
+  "shoe_roll_or_slide": false,
+  "far_shoe_delta_world": [
+    73,
+    -23
+  ],
+  "far_source_shape_proxy_native": [
+    [
+      785.7747035573123,
+      597.746470920384
+    ],
+    [
+      709.0,
+      764.345147583943
+    ],
+    [
+      658.0820512820513,
+      954.1656604044558
+    ]
+  ],
+  "far062_shape_proxy_native": [
+    [
+      867.6305003775483,
+      606.0329925080699
+    ],
+    [
+      988.7724495554281,
+      743.7795072434571
+    ],
+    [
+      858.5744284700806,
+      890.9968292356247
+    ]
+  ],
+  "far_proxy_is_unfrozen_manual_shape_guide": true,
+  "far_proxy_definition": "Near77ab hip plus former frozen side-relative offset[-7,+1]world only; no withdrawn744 absolute hip or lengths reused. Full far pants editable.",
+  "actual_shoe_bottoms": {
+    "near_shoe_ankle_FIXED": {
+      "native_alpha128_bottom": 1022,
+      "world_alpha128_bottom": 774.874330515797
+    },
+    "far_shoe_ankle": {
+      "native_alpha128_bottom": 959,
+      "world_alpha128_bottom": 751.9358025552708
+    }
+  },
+  "original_material_partition_exact_once": true,
+  "blouse_material_assigned_to_pants_or_arm": 0,
+  "body_source_alpha_below635": 0,
+  "layer_order_back_to_front": [
+    "far_thigh",
+    "far_shin",
+    "far_shoe_ankle",
+    "near_thigh",
+    "near_shin",
+    "far_complete_arm_jade_hand",
+    "body_head_blouse",
+    "near_complete_arm",
+    "near_shoe_ankle_FIXED"
+  ],
+  "mask": {
+    "pixels": 103519,
+    "crop_xyxy": [
+      650,
+      280,
+      1120,
+      1060
+    ],
+    "head_blouse_overlap": 0,
+    "visible_complete_arm_overlap": 0,
+    "visible_complete_shoes_ankles_overlap": 0,
+    "outside_crop": 0,
+    "omitted_outside_crop_material_alpha20": 0,
+    "all_pant_layer_alpha_outside_crop_or_guard": 43,
+    "actual_visible_pants_alpha20_missing_edit_except_guard": 0,
+    "isolated_arm_layer_AA_over_actual_body_guard": 87,
+    "pants_side_isolated_ink_AA_still_hardprotected": 0,
+    "detached_arm_layer_fragments_not_editable_and_visible": 0
+  },
+  "limits": [
+    "Pixel-piece knee/hip/ankle/sleeve cuts remain technical preposition, not final art.",
+    "Whole old/new pants and background cleanup are editable, not knee-only patches.",
+    "Hidden far-foot pixels never lock foreground pants. Complete visible arms protected except sleeve connections.",
+    "No new image request, recolor, limb stretch, changedhead timing, rolling/sliding shoe or11state reconstruction.",
+    "This062 shape guide and operation input require the requested Astra actual-image gate; manual farhip is a shape hint, not a new anatomical measurement or separate authorization blocker."
+  ],
+  "arm_source_isolated_nonmaterial_fragment_counts": {
+    "near_complete_arm": 597,
+    "far_complete_arm_jade_hand": 127
+  },
+  "finite_footcut_review": {
+    "old_far_pant_cut_ink_released_from_guard": 20,
+    "local_cleanup_semantic_pixels": 42,
+    "native_region": [
+      912,
+      889,
+      922,
+      901
+    ],
+    "actual_shoe_main_contour_and_all_warm_skin_with_AA_still_protected": true,
+    "near_original_shoe_layer_RGBA_untouched": true,
+    "note": "Only detached black L visible above far ankle in actualfootQA; no broad shoe threshold/recolor/pose change."
+  },
+  "arm_fragment_note": "Arm source layers retain original fragments for honest technical display; disconnected nonmaterial fragments beyond3px of main opaque limb are released to cleanup, never hard-protected as complete arm.",
+  "reproduction_inputs_snapshot": "sources/snapshot_manifest.json (byte-exact copies of all formerly uncommitted dependencies)",
+  "committed_external_inputs": [
+    "e3d2202 locked057 PNG; SHA checked by script",
+    "77ab772 next3_preflight_61sol/hip_gate_minimal_v3/hip_gate_notes.json"
+  ]
+}
