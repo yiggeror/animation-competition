@@ -1,0 +1,84 @@
+{
+  "status": "NAVY_WAIST_EXTENSION_INCREMENT_PASS_WITH_DISCLOSED_TINY_NONNAVY_SOURCE_GAP_NOT_UNQUALIFIED_FINAL_PASS",
+  "candidate_sha256": "6d8f9bad242c9680c10460fbda412edbd9db6a08575fe74b4fcb4d057aba3ca3",
+  "actual_views": [
+    "Updatedqa/layered_final_four_connections_gray.png",
+    "Updatedqa/layered_final_four_connections_dark.png"
+  ],
+  "independent_checks": {
+    "extension_pixels": 484,
+    "extension_bbox_native_inclusive": [
+      817,
+      498,
+      858,
+      529
+    ],
+    "native_blue_criterion_overlap": 0,
+    "candidate_RGBA_changes_outside_extension": 0
+  },
+  "repaired_probes": [
+    {
+      "xy": [
+        845,
+        527
+      ],
+      "new_RGBA": [
+        36,
+        40,
+        56,
+        253
+      ]
+    },
+    {
+      "xy": [
+        825,
+        529
+      ],
+      "new_RGBA": [
+        29,
+        33,
+        49,
+        253
+      ]
+    }
+  ],
+  "remaining_source_ambiguity": {
+    "native_xy": [
+      [
+        835,
+        527
+      ],
+      [
+        835,
+        528
+      ]
+    ],
+    "candidate_RGBA": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "donor_RGBA": [
+      [
+        128,
+        162,
+        205,
+        253
+      ],
+      [
+        135,
+        167,
+        209,
+        253
+      ]
+    ],
+    "meaning": "Same native blue blouse occludes this tiny region; correct exclusion prevents importing new blue material, but underlying navy is not available at these coordinates. Do not claim every waist gap is closed or invent navy pixels."
+  },
+  "carried_forward": "Prior static feet/layering,farknee and trueheel793926 findings remain valid; no wholebody/dynamic review reopened.",
+  "limits": [
+    "No generation or root script edits.",
+    "Not an unqualified final062 lock or motion pass.",
+    "Only current waist extension and specified source/material probes checked."
+  ]
+}

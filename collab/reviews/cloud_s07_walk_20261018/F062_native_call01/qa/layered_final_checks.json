@@ -1,0 +1,62 @@
+{
+  "status": "ACTUAL_NATIVE_LAYER_RECOMPOSITION_COLOR_LOCKED_PENDING_FINAL_VISUAL_REVIEW",
+  "candidate_sha256": "6d8f9bad242c9680c10460fbda412edbd9db6a08575fe74b4fcb4d057aba3ca3",
+  "native_raw_sha256": "efa81720135228ccec5c7af65b05d75a8ec2db39b28c2dd1d6ba740ad89722b0",
+  "native_whole_crop_scale": 0.5078125,
+  "no_extra_translation_rotation_or_limb_warp": true,
+  "native_cloth_only_source_extraction_no_code_paint": true,
+  "native_cloth_pixels": 64661,
+  "complete_native_outer_AA_beyond_old_mask_pixels": 3946,
+  "same_source_nondrawn_fragments_excluded": {
+    "far_shoe_ankle": 32,
+    "far_complete_arm_jade_hand": 123,
+    "near_complete_arm": 333,
+    "near_shoe_ankle_FIXED": 47
+  },
+  "blank_guard_pixels_released_for_actual_native_cloth": 28,
+  "far_source_foot_pixels_under_new_actual_trousers": 6860,
+  "near_actual_opaque_shoe_ankle_core_RGBA_changes": 0,
+  "source_body_opaque_visible_core_RGBA_changes": 0,
+  "source_layers_original_RGBA_preserved_where_material_kept": true,
+  "legitimate_AA_compositing_note": "Preserve original source material RGBA as independent layers; final flat AA changes over native cloth are necessary occlusion/compositing, not blanket byte-lock or recolor. No alpha0 dilation guard.",
+  "layer_order_back_to_front": [
+    "far_shoe_ankle",
+    "native_trousers",
+    "far_complete_arm_jade_hand",
+    "body_head_blouse",
+    "near_complete_arm",
+    "near_shoe_ankle_FIXED"
+  ],
+  "navy_palette_gate": {
+    "source057_mean_rgb": [
+      41.118420465531344,
+      45.08226370194095,
+      60.636231129619986
+    ],
+    "native062_locked_visible_pants_mean_rgb": [
+      41.24705163991626,
+      44.8606071179344,
+      60.174842986741105
+    ],
+    "mean_delta_rgb": [
+      0.128631174384914,
+      -0.22165658400655275,
+      -0.4613881428788815
+    ],
+    "within4": true,
+    "only_new_navy_material_correction_rgb": [
+      -6,
+      -5,
+      -5
+    ],
+    "deep_ink_max40_unchanged": true,
+    "native_trousers_alpha_unchanged": true,
+    "fore_material_excluded_from_comparison": true
+  },
+  "new_image_requests": 1,
+  "actual_raw_outputs": 1,
+  "new_image_calls_for_cleanup_or_color": 0,
+  "near_sole_bottom_native": 1022,
+  "near_sole_bottom_world": 774.874330515797,
+  "remaining_gate": "Final actual-image shape/contact review;068/073 unopened."
+}

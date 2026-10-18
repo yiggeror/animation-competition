@@ -1,0 +1,26 @@
+{
+  "status": "ISOLATED_UNIQUE_NATIVE_RAW_TO_CHOSEN_FINAL_AND_WORLD_REPLAY_PASS",
+  "files_checked": 10,
+  "mismatches": [],
+  "final_png_sha256": "393622a77349083751122520b690bd35017f8535a25560d8cca775446d2eeb2f",
+  "inputs": "Archived unique native raw, committed10908 F062 source/mask/layers and committede3d057 PNG; no old untracked dependencies.",
+  "commands": [
+    {
+      "script": "align_and_adopt.py",
+      "returncode": 0
+    },
+    {
+      "script": "compose_complete_native_layers.py",
+      "returncode": 0
+    },
+    {
+      "script": "close_internal_waist_from_native_source.py",
+      "returncode": 0
+    },
+    {
+      "script": "register_and_support.py",
+      "returncode": 0
+    }
+  ],
+  "new_image_calls": 0
+}

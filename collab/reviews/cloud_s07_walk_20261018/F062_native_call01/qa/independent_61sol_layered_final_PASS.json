@@ -1,0 +1,41 @@
+{
+  "status": "LIMITED_STATIC_F062_FINAL_LAYERING_COLOR_FOOT_AND_WAIST_PASS",
+  "candidate_path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F062_native_call01/candidate/F062_single_native_final_with_waist_underlay_PENDING_ASTRA.png",
+  "candidate_sha256": "393622a77349083751122520b690bd35017f8535a25560d8cca775446d2eeb2f",
+  "base6d8_sha256": "6d8f9bad242c9680c10460fbda412edbd9db6a08575fe74b4fcb4d057aba3ca3",
+  "native_raw_sha256": "efa81720135228ccec5c7af65b05d75a8ec2db39b28c2dd1d6ba740ad89722b0",
+  "same_native_colorlocked_donor_sha256": "f9afb4e7bce7c5c575640296709808f88df656fa4f51ed840e830752d9d6340e",
+  "actually_viewed_this_increment": [
+    "qa/waist_internal_source_underlay_before_after_gray.png",
+    "qa/waist_internal_source_underlay_before_after_dark.png"
+  ],
+  "independent_27point_mapping_and_composite_checks": {
+    "unique_targets": 27,
+    "donor_RGBA_metadata_mismatches": 0,
+    "source_x_same_y_plus4_mapping_failures": 0,
+    "donor_alpha250_and_navy_test_failures": 0,
+    "new_final_vs_real_underlay_plus_unchanged_base_composite_RGBA_mismatches": 0,
+    "final_RGBA_changes": 27,
+    "outside_27targets_RGBA_changes": 0,
+    "base_alpha0_hole_targets": 18,
+    "base_existing_AA_targets": 9,
+    "hole_targets_still_transparent": 0
+  },
+  "visual_conclusion": "Enclosed waist hole closed on both gray and dark; source blouseAA now lies over continuous dark navy without imported blue rectangle or new drawn outline. No visible new local seam requiring another generation.",
+  "honest_material_scope": "27 unchanged existing nativecolorlockedRGBA pixels from samex,y+4 become an internal below-blouse underlay. This is explicitly a4nativepixel local material translation, not same-coordinate navy recovery or wholelimb movement. Underlay RGB is copied; final blouse-AA pixels are normal compositing.",
+  "carried_forward_review_scope": [
+    "Same-source upper waist navy extension484px and blue-material exclusion independently checked at6d8.",
+    "Prior static feet/pants layering, complete farknee curve, near fixed shoe bottom1022native/774.874world and protectedpantscolor checks remain valid; outside27finalRGBA is unchanged.",
+    "Small793926grayline is actual sourcefarheel visible behind newnear pants, not old pant fragment."
+  ],
+  "supersedes": [
+    "qa/independent_61sol_semantic_final_review.json interim188notpass",
+    "qa/independent_61sol_waist_extension_review.json limited6d8 residualgap"
+  ],
+  "remaining_blockers_in_requested_static_scope": [],
+  "limits": [
+    "Only current static062 source-layer/waist/foot/pantscolor scope.",
+    "Not Astra motherlock,057→062 exposure review,068/073 permission or entireS07ready.",
+    "Reviewer generated no images and edited no source/root scripts."
+  ]
+}

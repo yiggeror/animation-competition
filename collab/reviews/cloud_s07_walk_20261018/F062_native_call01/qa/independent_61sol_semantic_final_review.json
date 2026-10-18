@@ -1,0 +1,122 @@
+{
+  "status": "NOT_PASSED_ONE_REMAINING_TRUE_NATIVE_WAIST_TOP_CLIP",
+  "supersedes": "Interim olda49 review; current188d25 only.",
+  "candidate_sha256": "188d25f8e62dc8993f018e4b9b44453549bde9bfb78d51bf5a5ec702203fa8f7",
+  "actually_viewed": [
+    "qa/layered_final_four_connections_gray.png",
+    "qa/layered_final_four_connections_dark.png",
+    "qa/F062_layered_final_full_gray.png",
+    "qa/F062_layered_final_full_dark.png",
+    "Direct057original heel vs062source farheel vs final793926 closeups"
+  ],
+  "visual_findings": [
+    "Most waistAA physically composes correctly, but left upper-waist strip820..846/526..529 remains clipped by y>=530 extraction (see blocker).",
+    "Near trousers/ankle connection no longer blocked by transparentfootguard; silhouette continuous into fixed foot.",
+    "Source farfoot remains behind actual new near trousers. Prior floating ankle/upper-shoe fringe does not cross foreground cloth.",
+    "Native far-knee outer arc intact with no mask facet cut.",
+    "No definite new low-alpha background glow or old trousers slivers seen in requested regions.",
+    "Navy material visually consistent with locked057; reported palette mean delta[+.134,-.216,-.457] read, with independent alpha/deepink checks."
+  ],
+  "point793926_ownership": {
+    "conclusion": "Genuine originalfar heel white-sidewall/black contour visible beneath semitransparent native pants edge; retain. Not legacy pant fragment.",
+    "farfoot_RGBA": [
+      159,
+      154,
+      150,
+      255
+    ],
+    "native_pants_alpha": 103,
+    "final_RGBA": [
+      102,
+      99,
+      101,
+      255
+    ],
+    "source057_approx_xy": [
+      592.5,
+      989.2
+    ],
+    "source057_593989_RGBA": [
+      234,
+      229,
+      224,
+      242
+    ],
+    "source057_592989_RGBA": [
+      69,
+      67,
+      64,
+      255
+    ]
+  },
+  "independent_checks": {
+    "near_opaque_core_RGBA_changes": 0,
+    "body_visible_opaque_core_RGBA_changes": 0,
+    "pants_color_alpha_changes": 0,
+    "deep_ink_RGB_changes_max40": 0,
+    "near_sole_alpha128_native_y": 1022,
+    "near_sole_alpha128_world_y": 774.874330515797
+  },
+  "all_kept_source_layer_RGBA_change_counts": {
+    "far_shoe_ankle": 0,
+    "far_complete_arm_jade_hand": 0,
+    "body_head_blouse": 0,
+    "near_complete_arm": 0,
+    "near_shoe_ankle_FIXED": 0
+  },
+  "limits": [
+    "Static062 limited native cloth,layering,foot connections and protectedpantscolor review only.",
+    "No actual057→062 exposure or playback reviewed, no completeS07 readiness orAstra lock.",
+    "No generation, source/root script edits,068or073 work by reviewer."
+  ],
+  "correction": "Initial limitedPASS was premature: physical layering fixes most waistAA, but the y>=530 extraction cuts actual native pants at remaining left-waist seam. Heel/source material and feet conclusions remain valid.",
+  "remaining_blockers": [
+    {
+      "approx_native_xyxy": [
+        820,
+        526,
+        846,
+        529
+      ],
+      "issue": "3-4row horizontal transparent stripe below source blouse. Real connected navy waist material exists above current y>=530 pants extraction cap; include actual same-native top contour and AA rather than a rectangle or native blueblouse.",
+      "pixel_evidence": [
+        {
+          "xy": [
+            845,
+            527
+          ],
+          "candidate_RGBA": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "native_RGBA": [
+            42,
+            45,
+            61,
+            253
+          ]
+        },
+        {
+          "xy": [
+            825,
+            529
+          ],
+          "candidate_RGBA": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "native_RGBA": [
+            35,
+            38,
+            54,
+            253
+          ]
+        }
+      ]
+    }
+  ]
+}
