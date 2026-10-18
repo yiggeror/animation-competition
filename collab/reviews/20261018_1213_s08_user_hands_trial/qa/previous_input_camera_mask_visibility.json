@@ -1,0 +1,36 @@
+{
+  "fixed_repo_commit": "af8bfe2f85f568c77897017d50c752a587d70221",
+  "edl": "S08 line paint, dur6, mod js/anim/s08.js, labelled medium shot",
+  "existing_camera_F000": {
+    "x": 960,
+    "y": 540,
+    "fit": 1
+  },
+  "drawn_scene_frozen_canvas": [
+    1920,
+    1080
+  ],
+  "table_front_top_scene_y": 981,
+  "bangle_scene_point": [
+    859.4882,
+    820.9515
+  ],
+  "bangle_screen_at_1280x720": [
+    572.9921,
+    547.301
+  ],
+  "table_screen_top_y_720": 654,
+  "arm_panel_scene": [
+    480,
+    560,
+    1040,
+    1000
+  ],
+  "actual_arm_mask_size": [
+    560,
+    440
+  ],
+  "mask_at_bangle": 255,
+  "mask_at_elbow": 255,
+  "conclusion": "Current frozen route shows the upper body and hands, not a hand-only crop. The bangle/forearm defect is inside the paste mask and 160 scene px above the table. No final drawn S08 MP4 exists yet; these are same-camera diagnostic composites, not actual encoded finished frames. If Opus changes to hands-only crop, only that crop should be judged; no such change appears in current edl/claude."
+}
