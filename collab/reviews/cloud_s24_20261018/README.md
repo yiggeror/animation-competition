@@ -1,6 +1,6 @@
-# S24 · 前四态已锁，015/019阶段保全，024图像局修受阻
+# S24 · 前四态已锁，024零生成接回候选待审
 
-独占分支`cloud/s24-reference-20261018`，基线`001c9c1828d9054675437111cf52df37c48721f2`。**Astra已双审锁新修母及006/009/012，沿B整层`.70+(590,20)`授权015/019/024；015/019原生候选已逐张实看及色门，024局修实际图像调用失败，无合格024。** 当前先看[015/019与024阻碍阶段包](d05_d07_segment/README.md)；[前批006/009/012](d02_d04_segment/README.md)、[同raw首母修色](d01_hair_color_fix/README.md)与[首次返回](d01_first_candidate/README.md)保留历史。9态/60帧/24fps/2.5秒不变，未开032/040，不修改共享模块、EDL、音频、留言或ready。
+独占分支`cloud/s24-reference-20261018`，基线`001c9c1828d9054675437111cf52df37c48721f2`。当前优先看[024零生成衣片接回包](d07_F024_zero_call_repair/README.md)：call008表演/头颈耳辫/领胸保留，call009仅作完整袖片供体，灰深底与019×5→024×8已实编解码。环境可执行，无新图像调用；结构候选待Astra审，原024色门未通过，未开032/040。015/019不重生成；[前批阶段包](d05_d07_segment/README.md)保留当时工具失败历史，当前不再依赖失败调用恢复。未修改共享代码、留言、EDL、音频或ready。
 
 x24原始身份图为`collab/refs/anim_24_xiaoman_smug.png`，处理资产`assets/chars/x24_smug.png`也已实看。两者只取身份和末表情倾向，旧空手合拢与整图翻转不作新动作依据。
 
@@ -30,6 +30,6 @@ x24原始身份图为`collab/refs/anim_24_xiaoman_smug.png`，处理资产`asset
 
 **颜色更正已纳入：**最新Opus退回S13累积色漂，动作/回头节奏认可，整镜待修色；本参考里的F087/F094只借整头结构。S24颜色固定身份与x13 F000，不能顺链继承头发变浅、皮肤变白、裙色变艳。F000色片只是同语义内区统计，不能把全部明暗强压成平涂；[源ROI和统计方法](provenance/F000_semantic_color_reference.json)明确。未并发改S13颜色。
 
-[来源与固定git blob](provenance/source_manifest.json)、[原参考授权/颜色更正](provenance/authorization_and_scope.md)、[参考冻结及首张授权](provenance/astra_reference_freeze_and_first_F000_gate.md)、[构造核验](qa/construction_validation.json)齐全。参考图和旧QA保留各阶段快照；历史[提示草案](prompts_NOT_EXECUTED.json)未直接执行，真实完整prompt在各包`requests/`。[当前账本](provenance/generation_ledger.json)累计10次尝试/9原件/1图像工具失败，候选态6（4已获Astra锁定、015/019待审），024两稿未采用、旧009过转稿也保留。场景/全片渲染0；中性人物层曝光不冒称Canvas接景。`build_reference.py`保留已有调用账本。
+[来源与固定git blob](provenance/source_manifest.json)、[原参考授权/颜色更正](provenance/authorization_and_scope.md)、[参考冻结及首张授权](provenance/astra_reference_freeze_and_first_F000_gate.md)、[构造核验](qa/construction_validation.json)齐全。参考图和旧QA保留各阶段快照；历史[提示草案](prompts_NOT_EXECUTED.json)未直接执行，真实完整prompt在各包`requests/`。[当前账本](provenance/generation_ledger.json)累计10次尝试/9原件/1图像工具失败；新增零调用024结构候选，当前候选态7，Astra已锁4态。015/019协调认可、独审短签待；024两份raw原拒收原因仍保留，现只作修复基体/袖供体，最终结构与色门待审。场景/全片渲染0；中性人物层曝光不冒称Canvas接景。`build_reference.py`保留已有调用账本。
 
-下一步：图像端恢复后只续现有024首稿的袖缘局修，015/019不重生成；024仍缺，未派032/040、不登记完整镜头。实际shell可读写不等于图像端恢复，已用一次真实失败调用记录门禁；参考构造角度不当成成图实测。
+下一步：Astra先审024衣片接回、独立皮肤接缝及保护域；原色门另列未过，未改保护头脸RGB。锁024并完成色门前不续032/040；图像端本轮未调用，不宣称已恢复。

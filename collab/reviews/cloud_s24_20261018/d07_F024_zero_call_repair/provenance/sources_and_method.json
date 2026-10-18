@@ -1,0 +1,88 @@
+{
+  "recorded_utc": "2026-10-18T19:24:48.571037+00:00",
+  "parent_commit": "9c178f95400e7da9073888cb6608389ff71081dc",
+  "source_thread": "01a0fbb9-4718-7063-bf5b-9bf34d41700f",
+  "sources": [
+    {
+      "path": "d05_d07_segment/originals/S24_F024_call_008_REJECTED_sleeve_crop_raw.png",
+      "sha256": "4a29d857b82802a60dfa57549130a2bb16dd073e96765e7a29ceb33165737b8e",
+      "role": "base full performance"
+    },
+    {
+      "path": "d05_d07_segment/originals/S24_F024_call_009_REJECTED_pose_regression_raw.png",
+      "sha256": "97e1a2316ca52369146cdc11dbd00c68e94a358c00e721b127b966b7377ee775",
+      "role": "donor clothing only;head/pose never used"
+    }
+  ],
+  "original_complete_requests_and_responses": [
+    {
+      "path": "d05_d07_segment/requests/F024_call_008_request.json",
+      "sha256": "95d41afcc1913778b6e8046299dc3e687694e36342ab8c29530a19fc5b0721c4"
+    },
+    {
+      "path": "d05_d07_segment/requests/F024_call_008_response.json",
+      "sha256": "ff3fdab99836c75c20efac1b0023bd394a4f894e726dfa82ed9e5966892ba8b8"
+    },
+    {
+      "path": "d05_d07_segment/requests/F024_call_008_tool_return_metadata.json",
+      "sha256": "6da2dcbec4a852ed0ab4403ab5d2bd5edf016df73e4427dc7331bb1c12a535d2"
+    },
+    {
+      "path": "d05_d07_segment/requests/F024_call_009_request.json",
+      "sha256": "5e40ae4bd155fbf4987333dee9e366f8910abf511640a4e28fafdda5c09aecce"
+    },
+    {
+      "path": "d05_d07_segment/requests/F024_call_009_response.json",
+      "sha256": "c4adb2c524262f2c8cb7b3765e795cfb95e18b82a7bef9669d3174cbb1c427ff"
+    },
+    {
+      "path": "d05_d07_segment/requests/F024_call_009_tool_return_metadata.json",
+      "sha256": "7038b97ceb8942ad77dd2255cac8cd7ef2f33c4e914cc672c1d0b0488026fc3b"
+    },
+    {
+      "path": "d05_d07_segment/requests/F024_call_010_request.json",
+      "sha256": "9707f8cd7afadcafa580f707bdf5f276336b5a80e88ad05e788d88804047e76e"
+    },
+    {
+      "path": "d05_d07_segment/requests/F024_call_010_response.json",
+      "sha256": "f80877e7ebde292e6edb748639bb57b1f0b4523e5cd59ea656c2d081a6e0d07c"
+    }
+  ],
+  "tool": "Pillow/scipy local compositing of native PNG pixels;0 imagegen,0 external APIs",
+  "cloth_transform": {
+    "native_pivot": [
+      850,
+      1015
+    ],
+    "target_pivot": [
+      866,
+      1019
+    ],
+    "clockwise_degrees": 2.5,
+    "resampling": "premultiplied RGBA bicubic"
+  },
+  "skin_underlap": {
+    "source": "call008 original upper-arm pixels only",
+    "inverse_affine": [
+      1,
+      -0.25,
+      373,
+      0,
+      1,
+      24
+    ],
+    "destination_y_support": [
+      1401,
+      1471
+    ],
+    "last12rows_fade_to_original": true,
+    "note": "Narrow affine seam only; maximum extra horizontal shear 8px at y1440 compared with -5px rigid shift. Main upper arm at y>=1472 is exact. No generated or drawn pixels."
+  },
+  "selected_candidate_sha256": "8c695f4020cc00e61b19d26a6818e0aa3c22abf752bb897a88cb3b561e69dd62",
+  "earlier_progress_candidate_sha256_superseded": "1cc18a94bb43b5be7b073fbf1653615678300ea53a8f08db368f1982dd3b91d8",
+  "why_superseded": "last actual dark-background view revealed armhole alpha slit;preserved first-raw cloth under the join and rebuilt current candidate",
+  "color_edits": 0,
+  "color_gate_pass": false,
+  "image_endpoint_recovery_tested": false,
+  "next_state_started": false
+}

@@ -1,0 +1,56 @@
+{
+  "candidate": "candidates/F024_original_pixel_sleeve_repair_rgba.png",
+  "candidate_sha256": "8c695f4020cc00e61b19d26a6818e0aa3c22abf752bb897a88cb3b561e69dd62",
+  "source_base_sha256": "4a29d857b82802a60dfa57549130a2bb16dd073e96765e7a29ceb33165737b8e",
+  "source_donor_sha256": "97e1a2316ca52369146cdc11dbd00c68e94a358c00e721b127b966b7377ee775",
+  "image_generation_calls_this_repair": 0,
+  "color_edits_this_repair": 0,
+  "cloth_rigid_registration": {
+    "native_pivot": [
+      850,
+      1015
+    ],
+    "target_pivot": [
+      866,
+      1019
+    ],
+    "clockwise_degrees": 2.5,
+    "resampling": "premultiplied RGBA bicubic"
+  },
+  "separate_skin_underlap": {
+    "source": "call008 original upper-arm pixels only",
+    "inverse_affine": [
+      1,
+      -0.25,
+      373,
+      0,
+      1,
+      24
+    ],
+    "destination_y_support": [
+      1401,
+      1471
+    ],
+    "last12rows_fade_to_original": true,
+    "note": "Narrow affine seam only; maximum extra horizontal shear 8px at y1440 compared with -5px rigid shift. Main upper arm at y>=1472 is exact. No generated or drawn pixels."
+  },
+  "changed_pixels": 91304,
+  "changed_bbox": [
+    745,
+    1017,
+    1024,
+    1472
+  ],
+  "alpha_changes_in_repair": 42168,
+  "protected_pixels": 1443191,
+  "protected_RGBA_changes": 0,
+  "outside_repair_support_RGBA_changes": 0,
+  "head_neck_ears_tails_y0_999_RGBA_changes": 0,
+  "lower_arm_y1472_on_RGBA_changes": 0,
+  "rightmost_column_opaque_pixels_sleeve_y1000_1449": 0,
+  "opaque_sleeve_max_x": 1019,
+  "opaque_sleeve_right_margin_native_px": 4,
+  "status": "ORIGINAL_PIXEL_COMPOSITE_FOR_ASTRA_REVIEW;NO_ASTRA_LOCK_CLAIM",
+  "not_Canvas_scene": true,
+  "F032_started": false
+}

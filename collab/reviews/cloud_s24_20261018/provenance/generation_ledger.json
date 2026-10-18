@@ -1,9 +1,9 @@
 {
-  "stage": "015019_saved_024_native_local_repair_tool_failed_no_accepted024",
+  "stage": "F024_zero_image_call_cloth_repair_candidate_Astra_review_pending_color_gate_failed",
   "image_generation_requests": 10,
   "successful_raw_images": 9,
   "failed_requests": 1,
-  "candidate_drawings": 6,
+  "candidate_drawings": 7,
   "adopted_production_drawings": 0,
   "scene_render_runs": 0,
   "full_film_render_runs": 0,
@@ -83,22 +83,22 @@
       "raw": "d05_d07_segment/originals/S24_F024_call_008_REJECTED_sleeve_crop_raw.png",
       "sha256": "4a29d857b82802a60dfa57549130a2bb16dd073e96765e7a29ceb33165737b8e",
       "tool_original_path": "/workspace/generated_images/exec-f1d3af8e-ad71-4b9b-a27b-6d5217776bd0.png",
-      "status": "REJECTED_NATIVE_SIDE_FRAMING;REPAIR_TARGET_ONLY_NOT_ADOPTED"
+      "status": "ORIGINAL_REJECTED_SLEEVE_CROP_RETAINED;CURRENT_BASE_FOR_ZERO_CALL_REPAIR_PENDING_ASTRA"
     },
     {
       "call_id": "S24_F024_call_009",
       "raw": "d05_d07_segment/originals/S24_F024_call_009_REJECTED_pose_regression_raw.png",
       "sha256": "97e1a2316ca52369146cdc11dbd00c68e94a358c00e721b127b966b7377ee775",
       "tool_original_path": "/workspace/generated_images/exec-a5b3015f-08a3-48e5-b1e5-dbb01ae1c245.png",
-      "status": "REJECTED_POSE_REGRESSION_NOT_ADOPTED_OR_DERIVED"
+      "status": "ORIGINAL_REJECTED_POSE_REGRESSION_RETAINED;ONLY_CLOTHING_DONOR_AUTHORIZED_BY_ASTRA"
     }
   ],
   "local_repaint": false,
   "local_color_edit": true,
   "alpha_cleanup": false,
-  "warp": false,
+  "warp": true,
   "F006_started": true,
-  "note": "Astra locked006009012 after actual15f review. This group:015019 accepted by author,024call008 sleeve cropped,009 repair pose-regressed,010 actual image call failed without new output. Shell read/write and all saved images verified;underlying image exception text unavailable,not claimed restored. Preserve originals and resume same024sleeve target only after image endpoint recovery. No032040,no shared production/S08/ready edits.",
+  "note": "Current zero-image-call024repair candidate delivered.015019 preserved;Astra coordinator accepted,independent short signature pending.024 original colour gate measured and failed;protected head/neck/ears/tails/collar pixels preserved. No032040, shared code or messages.",
   "color_derivatives": [
     {
       "source_sha256": "35bb55ead65abf20e3862b4d66dde2f0ed25023f31fb634fa2f03bcda0c72281",
@@ -113,7 +113,7 @@
   "F012_started": true,
   "Astra_locked_drawings": 4,
   "artistic_rejected_raw_images": 3,
-  "layer_preview_encoding_runs": 2,
+  "layer_preview_encoding_runs": 6,
   "F015_started": true,
   "F019_started": true,
   "F024_started": true,
@@ -134,5 +134,22 @@
       "latest_completed": "F015/F019 native outputs,color gates and actual reviews complete;F024call008posegood_sleevecropped,call009sleevefixed_pose_regressed,call010localrepairfailed",
       "next_action": "preserve originals and prepared local sleeve prompt;no automatic resend or regeneration;resume exact024repair only when image endpoint restored;proceed S08first23 shell/browser task"
     }
-  ]
+  ],
+  "local_alpha_composite": true,
+  "warp_scope": "cloth rigid rotation only;separate narrow first-raw upper-arm affine seam,no face/head/neck warp",
+  "local_composites": [
+    {
+      "candidate": "d07_F024_zero_call_repair/candidates/F024_original_pixel_sleeve_repair_rgba.png",
+      "sha256": "8c695f4020cc00e61b19d26a6818e0aa3c22abf752bb897a88cb3b561e69dd62",
+      "source_calls": [
+        "008",
+        "009"
+      ],
+      "image_generation_calls": 0,
+      "protected_RGBA_changes": 0,
+      "color_gate_pass": false,
+      "Astra_locked": false
+    }
+  ],
+  "latest_transition": "User authorized zero-generation donor-sleeve transplant;supersedes historical failed010 next-action without deleting failure record."
 }
