@@ -86,8 +86,8 @@
   "existing_contact_sheets_total_frames": 60,
   "reference_note": "Reference-phase raster files are manual technical diagrams; actual imagegen outputs are separately retained under F000_first and contact_012_018_024.",
   "reference_phase_image_generation_calls": 0,
-  "current_stage": "F000 mother locked by Astra; F012/F018/F024 sequential raw structure candidates delivered, registration drift pending review",
-  "latest_batch": "contact_012_018_024/README.md",
+  "current_stage": "Astra passed three raw hand structures; zero-call local registration and original6/6/12 comparison delivered, terminal curl remains weak; patch proposed only",
+  "latest_batch": "contact_registration_012_018_024/README.md",
   "other_states_generated": [
     "F012",
     "F018",
@@ -96,5 +96,7 @@
   "repair_image_generation_calls": 0,
   "successful_image_outputs": 4,
   "failed_image_calls": 1,
-  "mother_locked_sha256": "d4e78e2d5b84a72588cf3af1ff23ce39cdc18d19dde2fbf1f8eaf44ba62d7ef5"
+  "mother_locked_sha256": "d4e78e2d5b84a72588cf3af1ff23ce39cdc18d19dde2fbf1f8eaf44ba62d7ef5",
+  "registration_image_generation_calls": 0,
+  "production_ready": false
 }

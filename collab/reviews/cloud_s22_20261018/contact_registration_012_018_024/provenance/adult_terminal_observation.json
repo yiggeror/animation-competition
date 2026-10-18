@@ -1,0 +1,96 @@
+{
+  "method": "Centroids of actual visible skin regions; not reconstructed bone joints. Original adult foreground core remains unchanged during registration.",
+  "centres": {
+    "F018": [
+      {
+        "pad": "index",
+        "visible_region_centroid_xy": [
+          869.4309623430962,
+          625.6461446503288
+        ]
+      },
+      {
+        "pad": "middle",
+        "visible_region_centroid_xy": [
+          800.581619806966,
+          669.8438942509442
+        ]
+      },
+      {
+        "pad": "ring",
+        "visible_region_centroid_xy": [
+          750.2960579243766,
+          689.0490748189864
+        ]
+      },
+      {
+        "pad": "little",
+        "visible_region_centroid_xy": [
+          715.6373626373627,
+          709.1797026502909
+        ]
+      }
+    ],
+    "F024": [
+      {
+        "pad": "index",
+        "visible_region_centroid_xy": [
+          870.9096133751306,
+          628.80355276907
+        ]
+      },
+      {
+        "pad": "middle",
+        "visible_region_centroid_xy": [
+          798.6830508474576,
+          672.4762711864407
+        ]
+      },
+      {
+        "pad": "ring",
+        "visible_region_centroid_xy": [
+          745.669406719085,
+          692.7930664760544
+        ]
+      },
+      {
+        "pad": "little",
+        "visible_region_centroid_xy": [
+          705.0275983558427,
+          711.2818555490311
+        ]
+      }
+    ]
+  },
+  "F018_to_F024_deltas": [
+    {
+      "pad": "index",
+      "delta_xy": [
+        1.4786510320343496,
+        3.157408118741273
+      ]
+    },
+    {
+      "pad": "middle",
+      "delta_xy": [
+        -1.8985689595084523,
+        2.632376935496495
+      ]
+    },
+    {
+      "pad": "ring",
+      "delta_xy": [
+        -4.626651205291523,
+        3.7439916570680225
+      ]
+    },
+    {
+      "pad": "little",
+      "delta_xy": [
+        -10.609764281520029,
+        2.1021528987402007
+      ]
+    }
+  ],
+  "conclusion": "No clear coordinated inward curl. Palm-back contour change dominates; final settle is weak. A separate minimal adult terminal/contact-line patch is proposed, not executed."
+}
