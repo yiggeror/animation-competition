@@ -1,0 +1,63 @@
+{
+  "status": "PASS_ORIGINAL_RGBA_AND_FIXED_BOX_GRIP_NOT_CANVAS",
+  "source_sha256": "6ee3d4ccf88650496ce97f8709642fb3b5a228fd0ec1a5e5fd4efc50fac42753",
+  "RGBA_reconstruction_exact": true,
+  "all_layer_RGB_original_including_transparent": true,
+  "overlap_alpha_pixels": 0,
+  "table_box_unique_visible_pixels": 1665,
+  "box_visible_RGBA_and_alpha_same_as033": true,
+  "box_alpha_bottom": 970,
+  "original033_fringe483_retained_in_body_RGBA_exact": true,
+  "arms_at_or_below981_pixels": 0,
+  "group_checks": [
+    {
+      "name": "F036_true_near_hand_match_INDEPENDENT_FOREGROUND",
+      "footprint_pixels": 8453,
+      "visible_pixels": 8453
+    },
+    {
+      "name": "F036_near_distal_hard_guard",
+      "footprint_pixels": 6435,
+      "visible_pixels": 6435
+    },
+    {
+      "name": "F036_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT",
+      "footprint_pixels": 15409,
+      "visible_pixels": 6650
+    },
+    {
+      "name": "F036_fixed_table_box",
+      "footprint_pixels": 1764,
+      "visible_pixels": 1665
+    }
+  ],
+  "near_opaque_foreground_exact": true,
+  "near_distal_complete_RGBA_exact": true,
+  "excluded_old_near_blue_archive_pixels": 53,
+  "archive_excluded_pixels_all_outside_distal_and_mother_equals_far_layer": true,
+  "obsolete_far_pixel1127_800_not_in_archive": true,
+  "near_match_head": [
+    1335,
+    785
+  ],
+  "near_visible_wood_exit": [
+    1297.4057137582938,
+    812.1968682383957
+  ],
+  "independent_low_knob_center": [
+    1233.9532049682696,
+    766.8943738423919
+  ],
+  "independent_low_knob_radius": 6.8108108108108105,
+  "whole148px_low_knob_disk_RGBA_same_as033": true,
+  "knob_disk_pixels": 148,
+  "knob_disk_fully_transparent": 45,
+  "knob_disk_partially_transparent": 94,
+  "knob_disk_opaque_fingers": 9,
+  "runtime_character_transforms": 0,
+  "runtime_extra_hand_layers": 0,
+  "image_files_modified": 0,
+  "new_actual_canvas_frames": 0,
+  "archive_underlay_note": "Complete far archive includes hand hidden by native036 whole near forearm. Two hand-only RGBA archives are not the complete runtime foreground; no whole-archive source-over equivalence inferred.",
+  "actual_readability": "PENDING_REAL_CANVAS F036 match and flame pass in front of left side pipe, true root1335,785, grip stays behind original fingers, wick dark. Not a 2D continuous clearance claim."
+}
