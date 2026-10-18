@@ -1,0 +1,23 @@
+{
+  "status": "STRUCTURE_ONLY_PASS",
+  "frozenPoseTimes": [
+    0.2,
+    0.55,
+    1.1,
+    1.4,
+    1.85,
+    2.4,
+    3.3
+  ],
+  "frames": 96,
+  "upperErrorCm": 7.105427357601002e-15,
+  "foreErrorCm": 1.0658141036401503e-14,
+  "maxElbowStepCm": 2.3154224730420547,
+  "maxWristStepCm": 5.423483267193,
+  "wristWorldYRange": [
+    -43,
+    -24.8257351223509
+  ],
+  "actualRenderRequired": true,
+  "warning": "The local arm-only restore removes the lap-mask cut outside the bowl. Wrist still exits the frame during the down/reach; actual bowl occlusion and reentry require Opus render, not numerical acceptance."
+}
