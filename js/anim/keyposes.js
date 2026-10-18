@@ -15,7 +15,7 @@ export const KEYS = {
 };
 const MOD = { S01: './s01.js', S02a: './s02a.js', S03: './s03.js', S03a: './s03a.js', S03b: './s03b.js', S04: './s04.js', S05a: './s05a.js', S07: './s07.js', S08: './s08.js' };
 export async function render(ctx, arg, W, H) {
-  const id = arg || 'S03', keys = KEYS[id], mod = await import(MOD[id]);
+  const id = arg || 'S03', keys = KEYS[id], mod = await import(MOD[id] || `./${id.toLowerCase()}.js`);
   const cols = 4, tw = W / cols, th = tw * 9 / 16, lh = 64;
   ctx.fillStyle = '#f2ece2'; ctx.fillRect(0, 0, W, H);
   const off = new OffscreenCanvas(1280, 720), ox = off.getContext('2d');

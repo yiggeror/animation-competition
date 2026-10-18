@@ -4,7 +4,7 @@
 const MOD = { S01: './s01.js', S02a: './s02a.js', S03: './s03.js', S03a: './s03a.js', S03b: './s03b.js', S04: './s04.js', S05a: './s05a.js', S07: './s07.js', S08: './s08.js' };
 export async function render(ctx, arg, W, H) {
   const [id, range, crop] = String(arg).split('|');
-  const [a, b, d] = range.split(':').map(Number), mod = await import(MOD[id]);
+  const [a, b, d] = range.split(':').map(Number), mod = await import(MOD[id] || `./${id.toLowerCase()}.js`);   // 没登记的镜头按 js/anim/<镜头号小写>.js 找
   const ts = []; for (let t = a; t <= b + 1e-6; t += d) ts.push(+t.toFixed(4));
   const cols = Math.min(6, ts.length), tw = W / cols, th = tw * 9 / 16, lh = 30;
   const [cx, cy, cw] = crop ? crop.split(',').map(Number) : [0, 0, 1280];
