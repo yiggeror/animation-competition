@@ -25,3 +25,5 @@
 补充委托的已完成 S03a 实渲协助另见 [render_assist/README.md](render_assist/README.md)：固定f4f0ea43模块原样渲36帧，交720p／24fps无声MP4和实际解码九帧接触表；不涉及S03a生成或模块修改。
 
 第二次补充委托的已完成S05a完整实渲见 [render_assist/S05a_README.md](render_assist/S05a_README.md)：固定5c454750模块原样渲60帧，交720p／24fps无声MP4和实际解码14帧。未改S05a模块或音轨。
+
+排队S07两段诊断已完成，见 [render_assist/s07_partial/README.md](render_assist/s07_partial/README.md)：固定60159846只渲000–024与039–056（25＋18帧），交实际MP4、解码24张与日志；缺口未渲，不当全镜完成。

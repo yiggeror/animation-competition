@@ -1,0 +1,77 @@
+{
+  "source_commit": "60159846257c803263b4eab675ba35487fff12ce",
+  "render_method": "actual unchanged project module in Chromium; decoded with ffmpeg",
+  "segments": [
+    {
+      "video": "S07_first25.mp4",
+      "sha256": "c91b6ac2da354040e505fe19c765bd544cf5a430ae8507fba627a618e3bb0e7c",
+      "bytes": 384223,
+      "absolute_start_frame": 0,
+      "absolute_end_frame": 24,
+      "decoded_frame_count": 25,
+      "fps": 24,
+      "size": [
+        1280,
+        720
+      ],
+      "duration": 1.0416666666666667,
+      "has_audio": false,
+      "requested_absolute_frames": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        15,
+        16,
+        17,
+        18,
+        21,
+        22,
+        24
+      ],
+      "MP4_local_frame_mapping": "local=absolute-0"
+    },
+    {
+      "video": "S07_x39_56.mp4",
+      "sha256": "b9f26c94b082ca109b77794632725fc89855e0b0648f33c53a6494733d621b94",
+      "bytes": 186640,
+      "absolute_start_frame": 39,
+      "absolute_end_frame": 56,
+      "decoded_frame_count": 18,
+      "fps": 24,
+      "size": [
+        1280,
+        720
+      ],
+      "duration": 0.75,
+      "has_audio": false,
+      "requested_absolute_frames": [
+        39,
+        42,
+        43,
+        45,
+        46,
+        48,
+        49,
+        52,
+        53,
+        56
+      ],
+      "MP4_local_frame_mapping": "local=absolute-39"
+    }
+  ],
+  "not_rendered_ranges": [
+    [
+      25,
+      38
+    ],
+    [
+      57,
+      107
+    ]
+  ],
+  "complete_shot": false
+}
