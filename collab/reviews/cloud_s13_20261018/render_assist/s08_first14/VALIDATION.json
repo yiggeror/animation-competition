@@ -1,5 +1,5 @@
 {
-  "status": "PASS_REAL14_RENDER_ENCODING_SOURCE_SCOPE;EYE_CLOSURE_INTENT_REQUIRES_ASTRA_REVIEW",
+  "status": "PASS_REAL14_RENDER_ENCODING_SOURCE_SCOPE;EYE_SEQUENCE_MATCHES_ASTRA_CORRECTED_FROZEN_INTENT",
   "fixed_commit": "0c215550edb5f1807b240ca7f79f6f61c8aef01e",
   "actual_frames": 14,
   "range": [
@@ -34,7 +34,17 @@
     "eyes006_008": "narrowest,but iris remains visible",
     "eyes009_011": "already reopening",
     "eyes012_013": "normal open,original005 reused",
-    "fully_closed_eye_frame_present": false
+    "fully_closed_eye_frame_present": false,
+    "fully_closed_eye_required": false,
+    "eye_sequence_matches_frozen_intent": true
   },
-  "pending": "Astra decides complete-closure intent and original-speed artistic acceptance. This is only14f,not full-shot/audio ready."
+  "pending": "Astra actual strike/fire-source/table-occlusion and original-speed review. Only14f;not full-shot/audio ready. No complete-eye-closure defect.",
+  "Astra_eye_label_correction": {
+    "frozen_source": "41-state table and call07 per Astra clarification",
+    "F006": "about1/5 slit",
+    "F009": "partially reopening",
+    "F012": "fully open",
+    "previous_009_closed_label": "Astra label error; no regeneration required",
+    "scope": "existing MP4/decoded images/exposure all unchanged"
+  }
 }
