@@ -1,5 +1,7 @@
 # S09 026已锁＋031衣片语义修复准备
 
+**最新：连续裙外缘版031已获Astra整态通过；唯一源为clothing_semantic_review/continuous_contour_delivery/candidate/F031_raw_clothing_and_contours_for_final_lock.png，SHA4b59c624…d44da7，78a980d。后续见[037／042](../first_tap_segment/README.md)，本文其余状态为历史。**
+
 **最新：[衣片crop/mask及同raw接回候选](clothing_semantic_review/README.md)，新增生成0。Astra已锁031手／完整道具及净空，整态仍待衣片门；胸白点、腾空躯干／腰片和连续裙褶已全部列语义域，硬保护不变。先审此包，不续037／042。**
 
 **最新交付：[call07严格局修包](seam_repair/README.md)。Astra已锁026局部候选。本轮只执行一次call07，累计本段8次、其中031七次；仅采用611个筒纹返回像素，双手／灯头／完整尾盖保原像素，动作域外回锁母。完整031仍有旧臂遮挡衣片的缺源／衣纹接合问题，未锁母态，037／042仍为0。新版实际尺寸接触参考随包。**
