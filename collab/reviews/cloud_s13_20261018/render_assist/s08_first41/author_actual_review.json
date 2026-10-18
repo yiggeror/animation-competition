@@ -1,0 +1,44 @@
+{
+  "status": "AUTHOR_ACTUAL_LOCAL_CONTACT_REVIEW_PASS_ASTRA_REVIEW_PENDING",
+  "basis": "实际查看原始F038全帧与交付MP4解码F037/F038/F039/F040的全帧及两组局部放大；不是仅据源码或文件存在判断。",
+  "actual_images_viewed": [
+    "canvas_new/F038.png",
+    "00_actual_037_040.jpg",
+    "01_near_arm_pipe_low_grip_box.jpg",
+    "02_match_head_air_gap_wick_actual4x.jpg"
+  ],
+  "checks": [
+    {
+      "item": "037→038近臂与侧管前后关系",
+      "result": "PASS",
+      "observation": "前臂、手和火柴木杆在红色侧管之前，遮挡关系成立。"
+    },
+    {
+      "item": "038–040真火根与药头",
+      "result": "PASS",
+      "observation": "可见火焰连接在药头；固定入口火根为(1390,788)。"
+    },
+    {
+      "item": "药头与灯芯留隙、芯未亮",
+      "result": "PASS",
+      "observation": "三张新帧的药头右缘与灯芯左缘仍见空气间隙；灯芯受火光照亮但无独立灯芯火焰。源码wick=0只是独立的辅助证据。"
+    },
+    {
+      "item": "远手低杆",
+      "result": "PASS",
+      "observation": "远手仍保持低杆握点；源层148像素低杆圆盘RGBA与F036逐像素一致。"
+    },
+    {
+      "item": "单盒影",
+      "result": "PASS",
+      "observation": "桌面只见一个火柴盒及其薄影，无重叠第二盒/影。原盒1665像素可见RGBA和alpha与F036一致，盒底y=970。"
+    }
+  ],
+  "limitations": [
+    "本地接触与编码核对通过，整段原速观感与冻结由Astra审查。",
+    "未检查或渲染F041及后续帧。",
+    "控制台一条未标明URL的404已原样保留；无观察到的pageerror，未据此宣称所有网络请求均成功。"
+  ],
+  "image_generation_calls": 0,
+  "shared_source_changes": 0
+}
