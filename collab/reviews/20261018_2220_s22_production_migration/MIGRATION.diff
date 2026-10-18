@@ -1,0 +1,23 @@
+--- collab/reviews/cloud_s22_20261018/scene_integration_120/S22_drawn.js
++++ js/anim/s22_drawn.js
+@@ -1,7 +1,7 @@
+-// Independent S22 Canvas scene candidate. Production routing/EDL/ready remain untouched.
+-import { makeTurtle, turtlePose } from '../../../../js/lamp/turtle.js';
+-import { drawPuppet } from '../../../../js/puppet.js';
+-import { CONFIG, EXPOSURES } from './resource_map.js';
++// S22 production-path migration candidate; final scene review/render equivalence remain pending.
++import { makeTurtle, turtlePose } from '../lamp/turtle.js';
++import { drawPuppet } from '../puppet.js';
++import { CONFIG, EXPOSURES } from '../../assets/chars/s22/resource_map.js';
+ export { EXPOSURES };
+ export const DURATION = 5, FPS = 24, TOTAL_FRAMES = 120;
+ export const SHEET = EXPOSURES.map(row => [row.url, row.start]);
+@@ -28,7 +28,7 @@
+   return bitmaps.get(row.url);
+ }
+ async function tailLock() {
+-  const response=await fetch(new URL('./tail_lock.json',import.meta.url),{cache:'no-store'});
++  const response=await fetch(new URL('../../assets/chars/s22/tail_lock.json',import.meta.url),{cache:'no-store'});
+   if (!response.ok) throw new Error(`S22 tail lock HTTP ${response.status}`);
+   return response.json();
+ }
