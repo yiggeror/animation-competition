@@ -1,55 +1,82 @@
 // 2-7 中景（6 秒）：黑屋里，奶奶坐在八仙桌边点马灯。人物用代码小人（侧面、面朝右），马灯、桌子、火柴、火苗、烟都是代码画的。
 // 节拍（音效对齐 audio/build.py 的 S08：0.2 划火柴、1.8 灯芯着、2.2 甩灭、3.4 灯罩落下"叮"）：
 //   0.12～0.2 右手（近手）拿火柴在左手的火柴盒上一擦——0.2 着了，火光一跳，照亮她的脸，她眯一下眼；
-//   0.45～0.75 左手把火柴盒放到桌上；0.75～1.12 左手去够灯罩旁边的拨杆，往上一抬，灯罩升起来；
-//   1.1～1.7 身子往前探、眼睛盯着灯芯，火柴伸到灯罩下面；1.8 灯芯着了，她眉毛一扬；
-//   1.85～2.3 收回火柴、手腕甩两下，2.2 灭了，冒一缕烟；2.4～2.8 把灭了的火柴放到桌上；
-//   3.15～3.4 左手松开拨杆，灯罩落下（"叮"），暖光铺开；3.5～4.2 往后坐回去；4.3 看着灯笑开；5.0 眼睛往画面左边（小满那边）一瞟。
+//   0.45～0.72 左手放下火柴盒；0.90 捏住拨杆端，0.95～1.12 提罩；
+//   1.1～1.7 探身送火，1.7～1.85 燃烧头贴芯；1.8 起芯火，之后才撤火柴；
+//   1.85～2.35 收回火柴、单次甩腕，2.2 灭了；2.4～2.8 放到桌上，松指收手；
+//   3.25～3.3 松杆撤指，3.3～3.4 杆和罩自由落回（"叮"）；3.5～4.25 髋退回凳面、双手收回；4.3 笑开，5.0 看向画面左边。
 import { renderPaint, loadImg } from '../paint/paintshot.js';
 import { lamp as drawLamp, flameShape, LX, LB } from '../code/s08.js';
 import { key, charLayer, stool, armSide, blink, EASE } from './kit.js';
+import { NN } from '../chars/nainai.js';
 export const DURATION = 6;
 const W = 1920, H = 1080, K = 14, AT = [596, 1793];          // 每厘米 14 像素；奶奶原点（地面、两脚中间）在画面外下方
 const TOP = -58, EDGE = 12, LAMP_X = 56, LS = 1 / 18.5;      // 桌面高 58 厘米、桌沿在 x = 12；马灯放在 x = 56，设计坐标 18.5 单位 = 1 厘米（连提梁约 40 厘米）
 const SEAT_Y = 27;                                          // 坐着：髋往下挪 27 厘米（凳面 45）
-const WICK = [LAMP_X, TOP - 228 * LS];
+// 与 lampLayer 同一原点；code/s08.js 实际黑色芯帽顶是 −226（返回的 −228 是旧火苗提示点）。
+const LAMP_Y = TOP - 1.1;
+const WICK = [LAMP_X, LAMP_Y - 226 * LS];
 const S = (p) => [AT[0] + p[0] * K, AT[1] + p[1] * K];       // 地面坐标（厘米）→ 画面像素
 const cl = (v) => Math.min(1, Math.max(0, v));
 const seg = (t, a, b, e = 'io') => EASE[e](cl((t - a) / (b - a)));
 const fl = (t) => 1 + 0.06 * Math.sin(t * 9.3) + 0.04 * Math.sin(t * 17.7) + 0.03 * Math.sin(t * 31);
 
-// 灯罩高低：0.95～1.12 抬起，3.28～3.4 落下（越落越快）
-const lift = (t) => seg(t, 0.95, 1.12) * (1 - seg(t, 3.28, 3.4, 'in'));
-// 拨杆头（马灯左右镜像过，拨杆朝向奶奶这边）
-function leverTip(lf) { const la = 0.55 - lf * 0.9; return [LAMP_X - (150 + 95 * Math.cos(la)) * LS, TOP + (-230 + 95 * Math.sin(la)) * LS]; }
-// 火柴火苗大小：0.2 划着先蹿一下，2.2 甩灭；灯芯火苗：1.8 点着，灯罩落下后长大稳住
+// 先捏住杆头，再提罩；撤指完成后，拨杆和罩才一起落回。
+const lift = (t) => seg(t, 0.95, 1.12) * (1 - seg(t, 3.3, 3.4, 'in'));
+function leverTip(lf) { const la = 0.55 - lf * 0.9; return [LAMP_X - (150 + 95 * Math.cos(la)) * LS, LAMP_Y + (-230 + 95 * Math.sin(la)) * LS]; }
 const matchFlame = (t) => (t < 0.2 || t >= 2.2 ? 0 : t < 0.4 ? 1.6 - (t - 0.2) * 3.75 : 0.85 + 0.06 * Math.sin(t * 19));
 const wickFlame = (t) => (t < 1.8 ? 0 : 0.55 * seg(t, 1.8, 2.15, 'out') + 0.45 * seg(t, 3.4, 4.2));
 
+// hand.js 的 pinch 真正握点，不是腕前的任意常数。世界手角先定，再精确反求腕，避免不收敛的固定点迭代。
+const PINCH = [1.46 * NN.palm, -0.2 * NN.palm], BOX_OFFSET = [4, -1.2];
+const MATCH_LENGTH = 4.5, MATCH_ANGLE = -0.15;
+const MATCH_HEAD = [PINCH[0] + MATCH_LENGTH * Math.cos(MATCH_ANGLE), PINCH[1] + MATCH_LENGTH * Math.sin(MATCH_ANGLE)];
+const PUT_HEAD = [31.4, TOP - 2.5], PUT_ANGLE = Math.atan2(-0.2, 4.4) - MATCH_ANGLE;
+const BOX_REST = [25, TOP - 2.95];
+const rotate = (p, a) => [p[0] * Math.cos(a) - p[1] * Math.sin(a), p[0] * Math.sin(a) + p[1] * Math.cos(a)];
+const add = (a, b) => [a[0] + b[0], a[1] + b[1]];
+const sub = (a, b) => [a[0] - b[0], a[1] - b[1]];
+const origin = (P) => [P.x || 0, P.y || 0];
+function targetHand(P, side, target, offset, angle, hp) {
+  const wrist = sub(sub(target, rotate(offset, angle)), origin(P));
+  const a = armSide('n', P, side, wrist);
+  return { hand: wrist, hp, rot: angle - a.dir };
+}
+function handPoint(P, side, local) {
+  const A = P['arm' + side], a = armSide('n', P, side, A.hand);
+  return add(add(a.W, origin(P)), rotate(local, a.dir + A.rot));
+}
+const heldAngle = (t) => key(t, [[0, -1.35], [0.2, -1.35], [0.45, -1.15], [1.1, -1.15], [1.65, -0.55], [1.85, -0.55], [2.05, -1.15], [2.16, -0.75], [2.28, -1.25], [2.4, -1.0], [2.8, PUT_ANGLE]]);
+const heldHead = (t) => key(t, [[0, [22.2, -64.9]], [0.12, [22.2, -64.9]], [0.2, [25.8, -66.6], 'out'], [0.45, [29, -76], 'out'], [1.1, [31, -76]], [1.5, [50, -73]], [1.7, WICK], [1.85, WICK], [2.05, [38, -74]], [2.2, [39.5, -71]], [2.35, [36, -72]], [2.4, [36, -72]], [2.8, PUT_HEAD]]);
+
 function pose(t) {
   const lean = key(t, [[0, 0.22], [1.1, 0.25], [1.65, 0.5, 'io'], [2.0, 0.42], [3.3, 0.42], [4.2, 0.2, 'io'], [6, 0.2]]);
-  const P = { y: SEAT_Y, lean, head: { nod: key(t, [[0, 0.25], [1.1, 0.3], [1.65, 0.45], [3.5, 0.4], [4.2, 0.15], [5.0, 0.15], [5.3, 0.05, 'out'], [6, 0.05]]), tilt: 0 } };
-  // 脚：坐着，脚踩在桌子底下的地上
-  P.legN = { foot: [30, -4.6 - SEAT_Y] }; P.legF = { foot: [26, -4.6 - SEAT_Y] };
-  const toBody = (p) => [p[0], p[1] - SEAT_Y];
-  // ---- 右手（近手）：擦火柴 → 举着 → 伸到灯芯 → 收回甩 → 放下
-  const tip = (t < 1.1) ? null : key(t, [[1.1, [35, -75]], [1.7, [WICK[0] - 0.6, WICK[1] - 1.0], 'io'], [1.85, [WICK[0] - 0.6, WICK[1] - 1.0]], [2.05, [36, -72], 'out'], [2.4, [36, -72]], [2.8, [30, TOP - 1.2], 'io'], [6, [30, TOP - 1.2]]]);
-  let hN = key(t, [[0, [18, -64]], [0.12, [18, -64]], [0.2, [27, -66.5], 'out'], [0.45, [27, -67], 'out'], [1.1, [28, -67]]]);   // 胸口高度擦火柴、举着
-  const shake = t > 2.05 && t < 2.35 ? Math.sin((t - 2.05) * 52) * (1 - (t - 2.05) / 0.3) : 0;
-  let rotN = -0.9 + 0.5 * shake;                                       // 火柴头朝上（手掌往上翻）
-  if (tip) {                                                           // 让火柴头落在目标点上：反推手腕位置（迭代两三次）
-    let w = [tip[0] - 7, tip[1] + 1.5];
-    for (let i = 0; i < 4; i++) { const a = armSide('n', P, 'N', toBody(w)), d = a.dir + rotN, m = matchTip(a.W, d); w = [w[0] + tip[0] - m[0], w[1] + tip[1] - (m[1] + SEAT_Y)]; }
-    hN = w;
-    if (t > 2.4) rotN = -0.9 + 0.9 * seg(t, 2.4, 2.8);               // 放下火柴时手放平
+  const settle = seg(t, 3.5, 4.25);
+  const P = { x: -3 * settle, y: SEAT_Y + 1.2 * settle, lean, seated: true,
+    head: { nod: key(t, [[0, 0.25], [1.1, 0.3], [1.65, 0.45], [3.5, 0.4], [4.2, 0.15], [5.0, 0.15], [5.3, 0.05, 'out'], [6, 0.05]]), tilt: 0 } };
+  // 髋小幅退回凳面；双脚保持世界坐标，不随坐回滑动。
+  P.legN = { foot: sub([30, -4.6], origin(P)) }; P.legF = { foot: sub([26, -4.6], origin(P)) };
+  // 右手：真实指掌握点 → 火柴棍 → 药头；1.7 已接芯，1.8 才起芯火。
+  P.armN = targetHand(P, 'N', heldHead(t), MATCH_HEAD, heldAngle(t), 'pinch');
+  if (t > 2.8) {
+    const rest = sub(PUT_HEAD, rotate(MATCH_HEAD, PUT_ANGLE));
+    const wrist = key(t, [[2.8, rest], [2.9, rest], [3.35, [17, TOP - 0.5]], [4.25, [9, -53]]]);
+    P.armN = targetHand(P, 'N', wrist, [0, 0], key(t, [[2.8, PUT_ANGLE], [3.35, -0.1], [4.25, 0.35]]), t < 2.9 ? 'pinch' : 'relax');
   }
-  P.armN = { hand: toBody(hN), hp: t > 2.75 ? 'relax' : 'pinch', rot: rotN };
-  // ---- 左手（远手）：托火柴盒 → 放到桌上 → 抬拨杆 → 松开 → 收回
-  const lv = leverTip(lift(t));
-  const hF = t < 0.75 ? key(t, [[0, [22, -63]], [0.12, [22, -63]], [0.2, [21.5, -62.5]], [0.45, [22, -63]], [0.72, [25, TOP - 1.5], 'io']])
-    : t < 3.4 ? key(t, [[0.75, [25, TOP - 1.5]], [0.95, [lv[0] - 1.2, lv[1] + 1.2], 'io'], [3.28, [lv[0] - 1.2, lv[1] + 1.2]]]).map((v, i) => (t > 0.95 ? [lv[0] - 1.2, lv[1] + 1.2][i] : v))
-    : key(t, [[3.4, [lv[0] - 1.2, lv[1] + 1.2]], [3.9, [19, TOP - 1.5], 'io']]);
-  P.armF = { hand: toBody(hF), hp: t < 0.72 ? 'grip' : 'relax', rot: t < 0.72 ? -0.3 : 0 };
+  // 左手先托盒；盒在0.72落桌后，指尖于0.90先锁杆头，0.95才提罩。
+  if (t < 0.72) {
+    const center = key(t, [[0, [24, -66]], [0.45, [24, -66]], [0.72, BOX_REST]]);
+    const angle = key(t, [[0, -0.55], [0.45, -0.55], [0.72, 0]]);
+    P.armF = targetHand(P, 'F', center, BOX_OFFSET, angle, 'grip');
+  } else {
+    const from = add(sub(BOX_REST, BOX_OFFSET), PINCH), high = leverTip(1);
+    const contact = t < 0.9 ? key(t, [[0.72, from], [0.9, leverTip(0)]])
+      : t <= 3.25 ? leverTip(lift(t))
+      : key(t, [[3.25, high], [3.3, add(high, [-3.4, -2])], [3.4, add(high, [-5, -2.5])], [3.9, [25, -60]], [4.25, [14, -53.5]]]);
+    const angle = key(t, [[0.72, 0], [0.9, -0.2], [3.4, -0.2], [4.25, 0.25]]);
+    P.armF = targetHand(P, 'F', contact, PINCH, angle, t < 0.78 ? 'grip' : t < 3.3 ? 'pinch' : 'relax');
+  }
+  const hN = add(P.armN.hand, origin(P)), hF = add(P.armF.hand, origin(P));
   // ---- 脸
   const squint = key(t, [[0.2, 0], [0.24, 1, 'out'], [0.5, 0, 'io']]);
   const focus = key(t, [[1.1, 0], [1.4, 1], [1.8, 1], [2.0, 0.3], [3.3, 0.4], [3.6, 0]]);
@@ -59,12 +86,10 @@ function pose(t) {
   P.face = { look, smile, open: 0.9 - 0.45 * squint - 0.12 * focus + 0.15 * up - 0.25 * seg(t, 4.3, 4.8), brow: 0.25 * up + 0.1 * focus, worry: 0.15 * focus, mouth: 0, blush: 0.3, blink: blink(t, [0.9, 3.0, 5.6]) };
   return { P, hN, hF };
 }
-// 火柴：手指尖（手腕往前 4.6 厘米）捏着，往前再伸 4.5 厘米是火柴头（人物坐标）
-function matchTip(Wr, d) { const b = [Wr[0] + Math.cos(d) * 4.6, Wr[1] + Math.sin(d) * 4.6]; return [b[0] + Math.cos(d - 0.15) * 4.5, b[1] + Math.sin(d - 0.15) * 4.5]; }
-function matchGeom(P) {
-  const a = armSide('n', P, 'N', P.armN.hand), d = a.dir + (P.armN.rot || 0);
-  const b = [a.W[0] + Math.cos(d) * 4.6, a.W[1] + Math.sin(d) * 4.6 + SEAT_Y], h = matchTip(a.W, d);
-  return { base: b, head: [h[0], h[1] + SEAT_Y] };                  // 地面坐标
+// 与真实手型共用同一握点和世界变换；放下时两端连续，之后火柴固定在桌面。
+function matchGeom(P) { return { base: handPoint(P, 'N', PINCH), head: handPoint(P, 'N', MATCH_HEAD) }; }
+function matchAt(t, P) {
+  return t < 2.8 ? matchGeom(P) : { base: sub(PUT_HEAD, rotate([MATCH_LENGTH, 0], PUT_ANGLE + MATCH_ANGLE)), head: PUT_HEAD };
 }
 
 // ---------------------------------------------------------------- 画面
@@ -84,7 +109,7 @@ async function bg() {
 function lampLayer(t) {
   const c = new OffscreenCanvas(W, H), x = c.getContext('2d');
   x.translate(AT[0], AT[1]); x.scale(K, K);
-  x.save(); x.translate(LAMP_X, TOP - 1.1); x.scale(-LS, LS); x.translate(-LX, -LB); drawLamp(x, lift(t), false); x.restore();
+  x.save(); x.translate(LAMP_X, LAMP_Y); x.scale(-LS, LS); x.translate(-LX, -LB); drawLamp(x, lift(t), false); x.restore();
   return { img: c, x: 0, y: 0, sc: 1 };
 }
 function tableFront() {        // 桌沿和牙板：挡住桌子底下的腿
@@ -99,19 +124,20 @@ const TF = { c: null };
 const shot = {
   size: [W, H],
   layers: async (t) => {
-    const { P } = pose(t), M = matchGeom(P), mf = matchFlame(t);
+    const { P } = pose(t), M = matchAt(t, P);
     return [
       lampLayer(t),
       charLayer('n', 'side', P, { box: [0, 0, W, H], k: K, at: AT, ss: 1,
         before: (x) => stool(x, -3, 45),
         after: (x) => {
-          // 火柴盒：0.72 以前在左手里，之后放在桌上
-          const hb = t < 0.72 ? null : [25, TOP - 2.2];
-          if (hb) { x.fillStyle = '#c9a25a'; x.strokeStyle = '#3e2a1e'; x.lineWidth = 0.2; x.beginPath(); x.rect(hb[0] - 2.6, hb[1] - 1.5, 5.2, 1.5); x.fill(); x.stroke(); x.fillStyle = '#9b3a26'; x.fillRect(hb[0] - 2.5, hb[1] - 1.0, 5, 0.5); }
-          else { const a = armSide('n', P, 'F', P.armF.hand); x.save(); x.translate(a.W[0], a.W[1] + SEAT_Y); x.rotate(a.dir - 0.3); x.translate(4, -1.2); x.fillStyle = '#c9a25a'; x.strokeStyle = '#3e2a1e'; x.lineWidth = 0.2; x.beginPath(); x.rect(-2.6, -1.6, 5.2, 3.2); x.fill(); x.stroke(); x.fillStyle = '#9b3a26'; x.fillRect(-2.5, 1.1, 5, 0.5); x.restore(); }
-          // 火柴：着之前是红褐的药头，灭了以后是黑头；2.8 以后放在桌上
-          const put = t >= 2.8;
-          const b = put ? [27, TOP - 2.3] : M.base, h = put ? [31.4, TOP - 2.5] : M.head;
+          // 盒子落桌前后使用同一尺寸、中心和朝向，避免交接跳变。
+          const held = t < 0.72, a = armSide('n', P, 'F', P.armF.hand);
+          const box = held ? handPoint(P, 'F', BOX_OFFSET) : BOX_REST;
+          x.save(); x.translate(...box); x.rotate(held ? a.dir + P.armF.rot : 0);
+          x.fillStyle = '#c9a25a'; x.strokeStyle = '#3e2a1e'; x.lineWidth = 0.2;
+          x.beginPath(); x.rect(-2.6, -0.75, 5.2, 1.5); x.fill(); x.stroke();
+          x.fillStyle = '#9b3a26'; x.fillRect(-2.5, 0, 5, 0.5); x.restore();
+          const b = M.base, h = M.head;
           x.strokeStyle = '#d8c39a'; x.lineWidth = 0.35; x.lineCap = 'round'; x.beginPath(); x.moveTo(...b); x.lineTo(...h); x.stroke();
           x.fillStyle = t < 0.2 ? '#8a2f1e' : t < 2.2 ? '#5a2a18' : '#241712'; x.beginPath(); x.arc(h[0], h[1], 0.4, 0, 7); x.fill();
         } }),
@@ -119,7 +145,7 @@ const shot = {
     ];
   },
   light: (t) => {
-    const { P } = pose(t), M = matchGeom(P), m = matchFlame(t), w = wickFlame(t), lights = [];
+    const { P } = pose(t), M = matchAt(t, P), m = matchFlame(t), w = wickFlame(t), lights = [];
     if (m > 0) { const p = S(M.head); lights.push({ x: p[0], y: p[1] - 14, r: 780 * (0.85 + 0.2 * m), color: [1.0, 0.64, 0.32], i: (0.55 + 0.45 * m) * fl(t), falloff: 1.9 }); }
     if (w > 0) { const p = S(WICK); lights.push({ x: p[0], y: p[1] - 30, r: 900 + 1100 * w, color: [1.0, 0.62, 0.30], i: (0.35 + 0.95 * w) * fl(t), falloff: 1.9 }); }
     return { ambient: [0.10, 0.11, 0.17], lights, exposure: 1.0, vignette: 0.5, grain: 7 };
@@ -131,13 +157,13 @@ const shot = {
     return out;
   },
   emit: (x, t) => {
-    const { P } = pose(t), M = matchGeom(P), m = matchFlame(t), w = wickFlame(t);
+    const { P } = pose(t), M = matchAt(t, P), m = matchFlame(t), w = wickFlame(t);
     if (m > 0) { const q = S(M.head); flameShape(x, [q[0], q[1] + 2], 0.42 * m, t); }
     if (w > 0) { const q = S(WICK); flameShape(x, [q[0], q[1] + 2], 0.62 * w * fl(t), t, true); }
     // 灭了的火柴冒的一缕烟（2.2 起，2.5 秒散掉）
     const age = t - 2.2;
     if (age > 0 && age < 2.5) {
-      const q = S(t < 2.8 ? M.head : [31.4, TOP - 2.5]);
+      const q = S(M.head);
       x.save(); x.lineCap = 'round';
       for (let k = 0; k < 3; k++) {
         x.strokeStyle = `rgba(200,200,205,${Math.max(0, 0.22 * (1 - age / 2.5) - k * 0.05)})`; x.lineWidth = 3 + k * 4 + age * 6;
