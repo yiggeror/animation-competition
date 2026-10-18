@@ -1,0 +1,20 @@
+{
+  "status": "PASS_INPUT_PREPARATION_FOR_ASTRA_REVIEW_ONLY_NOT_GENERATED",
+  "mother073_sha256": "afc7dcff6593611d0e33b16a7fce9e12967bf1767cacf8336308a51a50af1929",
+  "reviewed_actual_images": [
+    "qa/F073_F079_actual_preposition_and_mask_gray.png",
+    "qa/F079_crop_complete_edit_dark.png",
+    "qa/actual_support_and_landed_shoes.png",
+    "qa/F079_actual_support_hidden_hip_and_knee_corridors.png",
+    "reference/F079_crop_RGBA_NOT_ART.png",
+    "masks/F079_crop_WHITE_EDIT_PENDING.png"
+  ],
+  "findings": [
+    "Far left original shoe remains exactly at1022 native sole bottom; whole near right shoe lands down63 native and advances67worldX, same1022 bottom.",
+    "Complete obsolete073 and intended new pants including hip, both full legs and cuff corridor are white; source true feet/arms/body stay black except explicit sleeve join and natural future back-foot occlusion.",
+    "Hip/knee lines are calibrated062 hidden-proxy projection guides advanced to actual target feet, not hard actual bone-length evidence. The shown bent old073 pants are explicitly obsolete material, not079 art.",
+    "Actual source layers replay mother0RGBA changes; no079 image call, no other state expansion. Source palette anchor remains locked057/062."
+  ],
+  "new_image_calls": 0,
+  "gate": "Astra must inspect this actual single-state input before079 native generation."
+}

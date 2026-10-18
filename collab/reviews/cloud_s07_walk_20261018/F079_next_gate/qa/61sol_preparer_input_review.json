@@ -1,0 +1,95 @@
+{
+  "reviewer": "cloud 6.1sol preparer actual-input check",
+  "status": "F079_SINGLE_INPUT_TECHNICAL_PASS_PENDING_ROOT_ACTUAL_REVIEW",
+  "authored_input": true,
+  "scope": "Only actual source preposition plus complete trousers input; no generated079 or sequence acceptance",
+  "mother073_SHA": "afc7dcff6593611d0e33b16a7fce9e12967bf1767cacf8336308a51a50af1929",
+  "preposition_SHA": "f167fc744f0f14355a9571e39168774c099ec180130225e90f06b5db68d691c4",
+  "full_edit_mask_SHA": "571c3f6f5d13537afa7b22f3748c8932cc9aaa183a3a2bf2b6cb21eed387878b",
+  "crop_edit_mask_SHA": "60e8d91d6018a546eabd83984738b3358537562298c5b1f1a74abfd5069b0b34",
+  "white_pixels": 121775,
+  "crop_xyxy": [
+    900,
+    280,
+    1420,
+    1060
+  ],
+  "crop_size": [
+    520,
+    780
+  ],
+  "actual_viewed": [
+    "qa/F073_F079_actual_preposition_and_mask_gray.png",
+    "qa/F079_crop_complete_edit_dark.png",
+    "qa/F079_actual_support_hidden_hip_and_knee_corridors.png",
+    "qa/actual_support_and_landed_shoes.png",
+    "qa/derived_body_old_ink_cleanup_actual_gray.png"
+  ],
+  "findings": [
+    "六真实生产层逐RGBA重放锁073母afc7完全一致；未回退call01裤体或未清鞋边旧层。",
+    "远左支撑整鞋逐RGBA原位1022底；近右原整鞋只+67worldX/+63nativeY刚体平移，真底落1022=774.8743305world。",
+    "头衣按已批准50.3205142/5.2495066world节拍整体移动，双臂绕真实073袖根各+12/-12度，scale1，手指/玉镯与各自整臂不拆。",
+    "隐藏H继承真实073手工proxy加delta，双K仅沿校准source投影方向/分数作软走廊，不是骨长或可达性证明，不用旧791/744/758/623或64/58。",
+    "旧073弯裤仅材质参考，腰臀/完整双裤/新旧空域和裤口都白，需原生整体成形；不能沿旧切边补丁通过。",
+    "真实可见足/皮肤/完整双臂/体衣材料黑保，小袖根可接；far完整足层在新裤下保全，实际新前景遮挡须输出后重算，不用隐藏alpha卡新裤。",
+    "头衣源的外露旧墨74px仅在079派生层排除，均alpha<=134且位于真蓝白材料2px边界外；073锁图/快照/完整臂层均未动。"
+  ],
+  "checks": {
+    "snapshot_SHA_mismatches": [],
+    "snapshot_count": 12,
+    "mother_RGBA_replay_changes": 0,
+    "far_support_complete_layer_RGBA_changes": 0,
+    "near_layer_vs_one_uniform_translation_RGBA_changes": 0,
+    "actual_feet": {
+      "far_support": {
+        "native_bottom": 1022,
+        "world_bottom": 774.874330515797,
+        "x_span_alpha128": [
+          973,
+          1143
+        ]
+      },
+      "near_landed": {
+        "native_bottom": 1022,
+        "world_bottom": 774.874330515797,
+        "x_span_alpha128": [
+          1199,
+          1374
+        ]
+      }
+    },
+    "foot_guards": {
+      "HARD_near_landed_shoe_actual_material": {
+        "guard_pixels": 10346,
+        "alpha0_guard_pixels": 0,
+        "white_overlap": 0
+      },
+      "HARD_far_support_shoe_visible_material": {
+        "guard_pixels": 9153,
+        "alpha0_guard_pixels": 0,
+        "white_overlap": 0
+      }
+    },
+    "guard_intersections": {
+      "body": 0,
+      "whole_visible_arms": 0,
+      "near_landed_foot": 0,
+      "far_visible_support_foot": 0
+    },
+    "old_visible_pants_uneditable_except_genuine_foreground": 0,
+    "editable_material_outside_crop": 0,
+    "body_old_ink_removed_pixels": 74,
+    "body_old_ink_max_source_alpha": 134,
+    "actual_body_core_alpha160_plus_changed": 0
+  },
+  "body_cleanup_source_map": "geometry/derived_body_old_ink_cleanup.json",
+  "proxy_geometry": "geometry/preparation_checks.json",
+  "palette_anchor": "sources/F062_palette_anchor.png actual locked057/062 target; no cumulative073 recolor",
+  "remaining_input_blockers": [],
+  "native_output_must_review": [
+    "自然双腿体积/隐髋落地承重和膝后转面，近腿不得保旧073弯折/条桥接鞋。",
+    "腰口、完整袖根、裤口真踝、生成鞋片/鬼线/AA边以及头衣/原鞋材质一致。"
+  ],
+  "new_calls": 0,
+  "other_states_unopened": true
+}
