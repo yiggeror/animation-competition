@@ -1,0 +1,126 @@
+{
+  "status": "REFERENCE_INTERFACE_PENDING_ASTRA_NOT_IMPLEMENTED",
+  "person": "future native hand-drawn complete grandma pose;construction volumes are not character artwork",
+  "proposed_native_canvas": [
+    1024,
+    1536
+  ],
+  "proposed_registration": {
+    "scale": 0.75,
+    "translation": [
+      300,
+      100
+    ]
+  },
+  "scene_size": [
+    1920,
+    1080
+  ],
+  "source_camera": "x=960+20*sstep(2,8,t),y=540-10*sstep(2,8,t),fit=1+.04*sstep(2,8,t)",
+  "camera_applied_to_whole_scene_once": true,
+  "box_front_pre_camera": [
+    1000,
+    800,
+    1860,
+    1040
+  ],
+  "lid_poly_pre_camera": [
+    [
+      1020,
+      760
+    ],
+    [
+      1840,
+      760
+    ],
+    [
+      1825,
+      450
+    ],
+    [
+      1035,
+      450
+    ]
+  ],
+  "light_source_parameters": {
+    "ambient": [
+      0.03,
+      0.026,
+      0.03
+    ],
+    "lamp_offscreen": {
+      "x": -350,
+      "y": 760,
+      "r": 2700,
+      "color": [
+        1,
+        0.64,
+        0.32
+      ],
+      "i": 1.25,
+      "falloff": 1.5
+    },
+    "lid_bounce": {
+      "x": 1350,
+      "y": 560,
+      "r": 760,
+      "color": [
+        1,
+        0.7,
+        0.42
+      ],
+      "i": 0.35,
+      "falloff": 1.6
+    },
+    "exposure": 1,
+    "vignette": 0.5,
+    "grain": 7
+  },
+  "prop": {
+    "source": "makeCrane(1.35,plain)",
+    "mm_to_scene_projection_design_scale": 0.72,
+    "body_joint_part": "body",
+    "body_joint_local_mm": [
+      -75,
+      6
+    ],
+    "neck_joint_part": "neck3",
+    "neck_joint_local_mm": [
+      10,
+      0
+    ],
+    "rod_lengths_H": {
+      "R": 1.7747139807413974,
+      "L": 2.6841737678780118
+    },
+    "rod_draw_outer_scene_px": 7,
+    "true_plane_rotation_degrees": {
+      "A": 55,
+      "B": 55,
+      "C": 85
+    },
+    "body_squash_parameter_used": false
+  },
+  "layer_order": [
+    "room+lidwood+clipped t-mode transmittedcolour",
+    "six native-alpha-derived knee/shin/shoeback contactshadowpatches",
+    "box interior cloth/backedge",
+    "far arm native pixels",
+    "body/head/legs native pixels",
+    "code crane/longrod segments",
+    "near complete arm and same-pose grip occlusion masks",
+    "box front/lip mask at800–1040"
+  ],
+  "hand_mask_scope": "Same complete native pose/whole arm;never reuse two independent hand archives as a whole foreground reconstruction",
+  "hold_rule": "At each native exposure hold all wrist/grip/body+neck3joint positions and rod endpoints.Only light/grain may vary;do not interpolate code props away from fixed native fingers.28timingstates are not a validated continuous contact trajectory.",
+  "colour_projection": "Use actual existing puppet t-map,clip to lid. Nativeperson contains no prepaintedcodecrane,longrods,box,shadoworcolouredlight.",
+  "scene_pass_claimed": false,
+  "do_not_reuse_as_pose_logic": [
+    "old G grip/knee sprite transform",
+    "groupM(theta)",
+    "action(theta,squash)",
+    "old rig based on long source forearm"
+  ],
+  "lighting_flicker_formula": "f=1+.04*sin(t*11)+.03*sin(t*23);mainr=2700*f;lidi=.35*f",
+  "lid_shadow_reconnect": "Use currentnew codepose/plane/rod endpoints for t-map projection;do not keep an old G/groupM shadow under a new crane."
+}

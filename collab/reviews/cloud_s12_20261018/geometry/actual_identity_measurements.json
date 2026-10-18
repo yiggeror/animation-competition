@@ -1,0 +1,133 @@
+{
+  "source": "collab/refs/grandma_turnaround_current03_draft.png",
+  "source_native_size": [
+    2048,
+    768
+  ],
+  "head_H_definition": "visible vertical crown31 to chin178=147px;not estimated real-world centimetres",
+  "landmarks_source_pixels": {
+    "crown": [
+      534,
+      31
+    ],
+    "chin": [
+      534,
+      178
+    ],
+    "shoulderR": [
+      447,
+      236
+    ],
+    "elbowR": [
+      420,
+      357
+    ],
+    "wristR": [
+      411,
+      445
+    ],
+    "fingerR": [
+      422,
+      498
+    ],
+    "shoulderL": [
+      621,
+      236
+    ],
+    "elbowL": [
+      649,
+      357
+    ],
+    "wristL": [
+      656,
+      445
+    ],
+    "fingerL": [
+      645,
+      498
+    ],
+    "hipR": [
+      484,
+      450
+    ],
+    "kneeR": [
+      483,
+      579
+    ],
+    "ankleR": [
+      482,
+      708
+    ],
+    "hipL": [
+      583,
+      450
+    ],
+    "kneeL": [
+      583,
+      579
+    ],
+    "ankleL": [
+      583,
+      708
+    ]
+  },
+  "measurements": [
+    {
+      "measure": "upper_armR",
+      "from": "shoulderR",
+      "to": "elbowR",
+      "projected_source_px": 123.976,
+      "H_ratio": 0.8434,
+      "uncertainty": "shoulder under cloth ±10px;elbow ±6px"
+    },
+    {
+      "measure": "forearmR",
+      "from": "elbowR",
+      "to": "wristR",
+      "projected_source_px": 88.459,
+      "H_ratio": 0.6018,
+      "uncertainty": "visible contour/manual centres ±6px"
+    },
+    {
+      "measure": "handR",
+      "from": "wristR",
+      "to": "fingerR",
+      "projected_source_px": 54.129,
+      "H_ratio": 0.3682,
+      "uncertainty": "relaxed full-hand extent ±5px"
+    },
+    {
+      "measure": "shoulder_width",
+      "from": "shoulderR",
+      "to": "shoulderL",
+      "projected_source_px": 174.0,
+      "H_ratio": 1.1837,
+      "uncertainty": "hidden joint estimates ±10px"
+    },
+    {
+      "measure": "femurR",
+      "from": "hipR",
+      "to": "kneeR",
+      "projected_source_px": 129.004,
+      "H_ratio": 0.8776,
+      "uncertainty": "trouser-hidden joint estimates ±12px;not exact anatomy"
+    },
+    {
+      "measure": "tibiaR",
+      "from": "kneeR",
+      "to": "ankleR",
+      "projected_source_px": 129.004,
+      "H_ratio": 0.8776,
+      "uncertainty": "trouser-hidden knee ±12px"
+    }
+  ],
+  "rig3D_choices_H": {
+    "upper_arm": 0.86,
+    "forearm": 0.64,
+    "wrist_to_grip": 0.23,
+    "femur": 0.9,
+    "tibia": 0.89,
+    "spine": 1.43
+  },
+  "note": "Projected manual measurements;hidden joints and depth estimated. Fixed3D bone proposal differs slightly within uncertainty;not orthographic anatomical ground truth."
+}
