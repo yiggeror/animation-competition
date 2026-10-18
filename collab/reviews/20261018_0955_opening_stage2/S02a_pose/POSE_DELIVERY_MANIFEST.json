@@ -1,0 +1,641 @@
+{
+  "shot": "S02a",
+  "scope": "Only new F023/F041/F044, no blink finals duplicated",
+  "finals": [
+    {
+      "frame": 23,
+      "path": "final/S02a_F023.png",
+      "sha256": "d654d3ed4b14f8dd9dcf90be128fa155c91d04904619a287b499c83da8844645",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "frame": 41,
+      "path": "final/S02a_F041.png",
+      "sha256": "eea2920f3035b0ab4d0306d380b5b31ca440e46a0da86fa62c63ed6ad938a260",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "frame": 44,
+      "path": "final/S02a_F044.png",
+      "sha256": "97d5802f02c9bc2a5088410aabb910882db4a2de1c13cee9b013b71f656cd27a",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA"
+    }
+  ],
+  "generation_calls_total_all_S02a": 11,
+  "generation_calls_for_this_segment": 8,
+  "included_used_donor_or_repair_calls": [
+    5,
+    6,
+    8,
+    9,
+    10,
+    11
+  ],
+  "omitted_failed_raw_calls_preserved_in_working_directory": [
+    4,
+    7
+  ],
+  "calls": [
+    {
+      "call": 4,
+      "frame": 23,
+      "status": "rejected_overshoot_not_a_parent",
+      "source": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k01_focus.png",
+      "source_sha256": "50e8eb5e6b40f7ac3e8ef58294562dcc3f926c1051d9bb7c719ce170eec78d50",
+      "source_size": [
+        1672,
+        941
+      ],
+      "reference_constraints": [
+        {
+          "path": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k02_tense.png",
+          "sha256": "0c137f2c2b04ea22ea1acfbb554e70afb28b0d461a68e65e6249ab493270f0b5"
+        }
+      ],
+      "prompt": "astra_s02a_opening_draw_20261018/prompts/call04_F023.txt",
+      "prompt_sha256": "165e3ca9d0924a5c1fd14a865ec030e015e9a21c2cf9dd73b7b69a006be12637",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "raw": "astra_s02a_opening_draw_20261018/raw/call04_F023.png",
+      "raw_sha256": "1c3bcb077ee88d480a21d8c7d111b784e8e9efc62a055ab0ed590347b2d16f05",
+      "raw_size": [
+        1672,
+        941
+      ],
+      "rejection": "Cowlick/hair/eye/chin too low, at or beyond old tense; shoulder raise excessive; not an in-between. No downstream derivation."
+    },
+    {
+      "call": 5,
+      "frame": 23,
+      "status": "partial_head_donor_only_neck_rejected",
+      "source": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k01_focus.png",
+      "source_sha256": "50e8eb5e6b40f7ac3e8ef58294562dcc3f926c1051d9bb7c719ce170eec78d50",
+      "source_size": [
+        1672,
+        941
+      ],
+      "reference_constraints": [
+        {
+          "path": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k02_tense.png",
+          "sha256": "0c137f2c2b04ea22ea1acfbb554e70afb28b0d461a68e65e6249ab493270f0b5"
+        }
+      ],
+      "prompt": "astra_s02a_opening_draw_20261018/prompts/call05_F023_targeted_retry.txt",
+      "prompt_sha256": "423f7fc1fcb3aacbf471c9c28c48480d2b755b69a83a84b7c0a08ff266a2f467",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "raw": "astra_s02a_opening_draw_20261018/raw/call05_F023_targeted_retry.png",
+      "raw_sha256": "64ab77e86f974d1741dfa175e526b29eef4387a5a10bf2082b9c3c68bbb3455a",
+      "raw_size": [
+        1672,
+        941
+      ],
+      "rejection": "Head position is between old anchors, but collar junction is near y797 instead of y820, causing neck compression beyond old tense. Not accepted for exposure or later-frame derivation. Only same-frame local reconstruction planned."
+    },
+    {
+      "call": 6,
+      "frame": 23,
+      "status": "locally_accepted_pending_independent_review",
+      "source": "astra_s02a_opening_draw_20261018/qa/F023_local_connection_guide.png",
+      "source_sha256": "8077aa5b0fbba262b5dbb16bcb3de1402a6f89b45b17c0c7b8a2a3b09e7b7501",
+      "source_size": [
+        1672,
+        941
+      ],
+      "guide_provenance": "Original focus below connection; untransformed generated call05 head donor above; provisional guide mask retained. This is same-frame repair, never a later exposure parent.",
+      "reference_constraints": [
+        {
+          "path": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k02_tense.png",
+          "sha256": "0c137f2c2b04ea22ea1acfbb554e70afb28b0d461a68e65e6249ab493270f0b5"
+        }
+      ],
+      "prompt": "astra_s02a_opening_draw_20261018/prompts/call06_F023_local_connection.txt",
+      "prompt_sha256": "8e9c7965c5f8d812d242f372f1c9f846e2db4f0245437dce3e881d3bdf6da602",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "raw": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/raw/call06_F023_local_connection.png",
+      "raw_sha256": "9220cc70e914a07d0d5f5e72680fab1dbd50bf98f3f8b277ee64188dfbc0cb91",
+      "raw_size": [
+        1671,
+        941
+      ],
+      "final": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/final/S02a_F023.png",
+      "final_sha256": "d654d3ed4b14f8dd9dcf90be128fa155c91d04904619a287b499c83da8844645",
+      "final_size": [
+        1672,
+        941
+      ],
+      "composite_static_master": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k01_focus.png",
+      "composite_static_master_sha256": "50e8eb5e6b40f7ac3e8ef58294562dcc3f926c1051d9bb7c719ce170eec78d50",
+      "mask": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/qa/F023_edit_mask.png",
+      "mask_sha256": "4f1df2489303df1180f73e7ba91123269c7eb4ec65e0aad38bf86c1db6dcaafd",
+      "mask_shape": {
+        "upper_box": [
+          480,
+          40,
+          1205,
+          775
+        ],
+        "collar_polygon": [
+          [
+            650,
+            728
+          ],
+          [
+            1028,
+            728
+          ],
+          [
+            1030,
+            856
+          ],
+          [
+            1010,
+            883
+          ],
+          [
+            666,
+            883
+          ],
+          [
+            646,
+            856
+          ]
+        ],
+        "gaussian_radius_px": 3
+      },
+      "transform": "Pad one fully transparent column at right, no rescale or shift",
+      "mask_outside_changed_pixels": 0,
+      "lower_chest_y895_plus_changed_pixels": 0,
+      "next_anchor": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k02_tense.png",
+      "next_anchor_sha256": "0c137f2c2b04ea22ea1acfbb554e70afb28b0d461a68e65e6249ab493270f0b5",
+      "notes": "Generated head and real neck/collar connection rejoined by explicit mask. No translation or scale of donor. Lower chest and lower sleeves retain master pixels. Acting gate remains independent.",
+      "independent_review_status": "passed_static_review; unchanged_frozen_PNG"
+    },
+    {
+      "call": 7,
+      "frame": 41,
+      "status": "rejected_endpoint_copy_not_a_parent",
+      "source": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k02_tense.png",
+      "source_sha256": "0c137f2c2b04ea22ea1acfbb554e70afb28b0d461a68e65e6249ab493270f0b5",
+      "source_size": [
+        1672,
+        941
+      ],
+      "reference_constraints": [
+        {
+          "path": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k03_relief.png",
+          "sha256": "96c43a3788cf2be41eceb9900fe711c49739397e63ced7fbcd0c62856c77f87f"
+        }
+      ],
+      "prompt": "astra_s02a_opening_draw_20261018/prompts/call07_F041.txt",
+      "prompt_sha256": "b3f98234a352bfeaca9570c3c69defb0bb5de4e656c47ead1d88095720917805",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "raw": "astra_s02a_opening_draw_20261018/raw/call07_F041.png",
+      "raw_sha256": "996789b74e5b4ef49c39b850b91ad3a45c3485b7b6229c1979ab9c579bfcf7de",
+      "raw_size": [
+        1671,
+        941
+      ],
+      "rejection": "Moved almost to relief instead of early 25 percent recovery; mouth and head too advanced. No downstream derivation."
+    },
+    {
+      "call": 8,
+      "frame": 41,
+      "status": "partial_generated_head_donor_only_wrong_position",
+      "source": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k02_tense.png",
+      "source_sha256": "0c137f2c2b04ea22ea1acfbb554e70afb28b0d461a68e65e6249ab493270f0b5",
+      "source_size": [
+        1672,
+        941
+      ],
+      "reference_constraints": [
+        {
+          "path": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k03_relief.png",
+          "sha256": "96c43a3788cf2be41eceb9900fe711c49739397e63ced7fbcd0c62856c77f87f",
+          "input_role": "visually inspected endpoint encoded as text limit only; omitted from tool inputs to avoid endpoint copying"
+        }
+      ],
+      "prompt": "astra_s02a_opening_draw_20261018/prompts/call08_F041_single_master_retry.txt",
+      "prompt_sha256": "0809e98e1e039bc936eda4c1c164855146c0092c581083a07fea6291bd5f9d55",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "raw": "astra_s02a_opening_draw_20261018/raw/call08_F041_single_master_retry.png",
+      "raw_sha256": "181dd740dd7ec0f40659d2327d2b75cc5f5f063ca47452460ef5718edb2bbcb6",
+      "raw_size": [
+        1671,
+        941
+      ],
+      "rejection": "Expression suitable but head rose about 17px instead of 5px; not accepted for exposure or next-state derivation. Generated donor head translated down 11px in same-frame provisional guide, not an original-face translation; neck will be generated."
+    },
+    {
+      "call": 9,
+      "frame": 41,
+      "status": "locally_accepted_pending_independent_review",
+      "source": "astra_s02a_opening_draw_20261018/qa/F041_local_connection_guide.png",
+      "source_sha256": "ed88a5fe424672c73ffd9c021d7eb733aee1849869b9ab76a8ab53e5062ecc49",
+      "source_size": [
+        1672,
+        941
+      ],
+      "guide_provenance": {
+        "static_master": "original tense",
+        "generated_head_donor": "raw/call08_F041_single_master_retry.png",
+        "donor_translation_pixels": [
+          0,
+          11
+        ],
+        "scale": 1,
+        "mask": "qa/F041_provisional_head_guide_mask.png",
+        "purpose": "Same-frame positional correction of newly generated head, not old-source-face translation; neck connection regenerated next"
+      },
+      "prompt": "astra_s02a_opening_draw_20261018/prompts/call09_F041_local_connection.txt",
+      "prompt_sha256": "113d241a30cce0f0f00d35e6fe995f193574a6699c4fdf5ebd34e1c0c0115d92",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "raw": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/raw/call09_F041_local_connection.png",
+      "raw_sha256": "563724582d07923b78da11b46060ef1deaf8432a3869a26a24ea419f6034588b",
+      "raw_size": [
+        1672,
+        941
+      ],
+      "final": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/final/S02a_F041.png",
+      "final_sha256": "eea2920f3035b0ab4d0306d380b5b31ca440e46a0da86fa62c63ed6ad938a260",
+      "final_size": [
+        1672,
+        941
+      ],
+      "composite_static_master": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k02_tense.png",
+      "composite_static_master_sha256": "0c137f2c2b04ea22ea1acfbb554e70afb28b0d461a68e65e6249ab493270f0b5",
+      "mask": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/qa/F041_edit_mask.png",
+      "mask_sha256": "bf74e69a863e72f71e78d551d9f258a8f12437a77a5cf2ded4343d242e3cd26c",
+      "neck_connection_mask": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/qa/F041_connection_mask.png",
+      "neck_connection_mask_sha256": "3373a7b2013d052414afb2aebb6d0d8acaba6b2783ce21decd36bec98ce0f348",
+      "neck_mask_polygon": [
+        [
+          650,
+          769
+        ],
+        [
+          1028,
+          769
+        ],
+        [
+          1030,
+          856
+        ],
+        [
+          1010,
+          883
+        ],
+        [
+          666,
+          883
+        ],
+        [
+          646,
+          856
+        ]
+      ],
+      "neck_mask_rectangle": [
+        475,
+        773,
+        1210,
+        815
+      ],
+      "neck_mask_gaussian_radius_px": 2,
+      "upper_head_mask": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/qa/F041_provisional_head_guide_mask.png",
+      "transform": "Only newly generated call08 head donor shifted +11px vertically in guide; no scale. Original tense torso unchanged. Final neck connection from call09, no donor shift.",
+      "mask_outside_changed_pixels": 0,
+      "lower_chest_y895_plus_changed_pixels": 0,
+      "next_anchor": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k03_relief.png",
+      "next_anchor_sha256": "96c43a3788cf2be41eceb9900fe711c49739397e63ced7fbcd0c62856c77f87f",
+      "notes": "Local positioning corrected head overshoot; new real neck connection regenerated, not old-face translation. No later frame derives from rejected raw candidate.",
+      "independent_review_status": "passed_static_review; unchanged_frozen_PNG"
+    },
+    {
+      "call": 10,
+      "frame": 44,
+      "status": "partial_generated_head_donor_only_wrong_position",
+      "source": "astra_s02a_opening_draw_20261018/final/S02a_F041.png",
+      "source_sha256": "eea2920f3035b0ab4d0306d380b5b31ca440e46a0da86fa62c63ed6ad938a260",
+      "source_size": [
+        1672,
+        941
+      ],
+      "reference_constraints": [
+        {
+          "path": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k03_relief.png",
+          "sha256": "96c43a3788cf2be41eceb9900fe711c49739397e63ced7fbcd0c62856c77f87f",
+          "input_role": "visually inspected endpoint encoded as text limit only; omitted from tool inputs to avoid endpoint copying"
+        }
+      ],
+      "prompt": "astra_s02a_opening_draw_20261018/prompts/call10_F044.txt",
+      "prompt_sha256": "1f2835b2ce60806e80e5398eb87664716096d216fd4affe9c1f5c1e225678df9",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "raw": "astra_s02a_opening_draw_20261018/raw/call10_F044.png",
+      "raw_sha256": "f9f5fec0a3ca0819e243a1b633aced1a4974e1f929d11bc0bdcddfd51b29af79",
+      "raw_size": [
+        1672,
+        941
+      ],
+      "rejection": "Subtle closed-mouth expression useful but head uplift exceeded relief. Same-frame newly generated head donor repositions down26px; no global transformation or old-source-face shift; neck/pigtail connection regenerated."
+    },
+    {
+      "call": 11,
+      "frame": 44,
+      "status": "locally_accepted_pending_independent_review",
+      "source": "astra_s02a_opening_draw_20261018/qa/F044_local_connection_guide.png",
+      "source_sha256": "420415cb3fe426d3d8322181cf31c4d7026ee25a2691b070a67041a59a89c931",
+      "source_size": [
+        1672,
+        941
+      ],
+      "guide_provenance": {
+        "static_master": "accepted final/S02a_F041.png",
+        "generated_head_donor": "raw/call10_F044.png",
+        "donor_translation_pixels": [
+          0,
+          26
+        ],
+        "scale": 1,
+        "mask": "qa/F044_provisional_head_guide_mask.png",
+        "purpose": "Same-frame positional correction of newly generated head, not old-source-face translation; new neck connection regenerated"
+      },
+      "prompt": "astra_s02a_opening_draw_20261018/prompts/call11_F044_local_connection.txt",
+      "prompt_sha256": "b70d25e08b351d95166a6c2ec91a560e0f28bfa33c6a46edd27ebf9b26e64899",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "raw": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/raw/call11_F044_local_connection.png",
+      "raw_sha256": "ec7c146a8a1fb2534e4fc320700d9d3e919c4c197016788f006fc529cd0b8646",
+      "raw_size": [
+        1672,
+        941
+      ],
+      "final": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/final/S02a_F044.png",
+      "final_sha256": "97d5802f02c9bc2a5088410aabb910882db4a2de1c13cee9b013b71f656cd27a",
+      "final_size": [
+        1672,
+        941
+      ],
+      "composite_static_master": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/final/S02a_F041.png",
+      "composite_static_master_sha256": "eea2920f3035b0ab4d0306d380b5b31ca440e46a0da86fa62c63ed6ad938a260",
+      "mask": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/qa/F044_edit_mask.png",
+      "mask_sha256": "f6030b00158ce61f7cd7f8435b2de10d72b91e43d17df76801180570900d21f9",
+      "neck_connection_mask": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/qa/F044_connection_mask.png",
+      "neck_connection_mask_sha256": "26526eddb8497503e7e721c8965c9f8d2139e5ee2def8e5f38c0e76285af4c71",
+      "neck_mask_polygon": [
+        [
+          650,
+          759
+        ],
+        [
+          1028,
+          759
+        ],
+        [
+          1030,
+          856
+        ],
+        [
+          1010,
+          883
+        ],
+        [
+          666,
+          883
+        ],
+        [
+          646,
+          856
+        ]
+      ],
+      "neck_mask_rectangle": [
+        475,
+        763,
+        1210,
+        815
+      ],
+      "neck_mask_gaussian_radius_px": 2,
+      "upper_head_mask": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/qa/F044_provisional_head_guide_mask.png",
+      "transform": "Only newly generated call10 head donor shifted +26px vertically in guide; no scale. Accepted F041 torso unchanged. Final neck connection from call11, no donor shift.",
+      "mask_outside_changed_pixels": 0,
+      "lower_chest_y895_plus_changed_pixels": 0,
+      "next_anchor": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k03_relief.png",
+      "next_anchor_sha256": "96c43a3788cf2be41eceb9900fe711c49739397e63ced7fbcd0c62856c77f87f",
+      "notes": "Local positioning corrected head overshoot; new real neck connection regenerated, not old-face translation. No later frame derives from rejected raw candidate.",
+      "independent_review_status": "passed_static_review; unchanged_frozen_PNG"
+    }
+  ],
+  "files": [
+    {
+      "path": "final/S02a_F023.png",
+      "sha256": "d654d3ed4b14f8dd9dcf90be128fa155c91d04904619a287b499c83da8844645",
+      "bytes": 600857
+    },
+    {
+      "path": "final/S02a_F041.png",
+      "sha256": "eea2920f3035b0ab4d0306d380b5b31ca440e46a0da86fa62c63ed6ad938a260",
+      "bytes": 576745
+    },
+    {
+      "path": "final/S02a_F044.png",
+      "sha256": "97d5802f02c9bc2a5088410aabb910882db4a2de1c13cee9b013b71f656cd27a",
+      "bytes": 590858
+    },
+    {
+      "path": "raw/call05_F023_targeted_retry.png",
+      "sha256": "64ab77e86f974d1741dfa175e526b29eef4387a5a10bf2082b9c3c68bbb3455a",
+      "bytes": 651421
+    },
+    {
+      "path": "prompts/call05_F023_targeted_retry.txt",
+      "sha256": "423f7fc1fcb3aacbf471c9c28c48480d2b755b69a83a84b7c0a08ff266a2f467",
+      "bytes": 1599
+    },
+    {
+      "path": "raw/call06_F023_local_connection.png",
+      "sha256": "9220cc70e914a07d0d5f5e72680fab1dbd50bf98f3f8b277ee64188dfbc0cb91",
+      "bytes": 653084
+    },
+    {
+      "path": "prompts/call06_F023_local_connection.txt",
+      "sha256": "8e9c7965c5f8d812d242f372f1c9f846e2db4f0245437dce3e881d3bdf6da602",
+      "bytes": 1823
+    },
+    {
+      "path": "raw/call08_F041_single_master_retry.png",
+      "sha256": "181dd740dd7ec0f40659d2327d2b75cc5f5f063ca47452460ef5718edb2bbcb6",
+      "bytes": 647527
+    },
+    {
+      "path": "prompts/call08_F041_single_master_retry.txt",
+      "sha256": "0809e98e1e039bc936eda4c1c164855146c0092c581083a07fea6291bd5f9d55",
+      "bytes": 1465
+    },
+    {
+      "path": "raw/call09_F041_local_connection.png",
+      "sha256": "563724582d07923b78da11b46060ef1deaf8432a3869a26a24ea419f6034588b",
+      "bytes": 642209
+    },
+    {
+      "path": "prompts/call09_F041_local_connection.txt",
+      "sha256": "113d241a30cce0f0f00d35e6fe995f193574a6699c4fdf5ebd34e1c0c0115d92",
+      "bytes": 1380
+    },
+    {
+      "path": "raw/call10_F044.png",
+      "sha256": "f9f5fec0a3ca0819e243a1b633aced1a4974e1f929d11bc0bdcddfd51b29af79",
+      "bytes": 668105
+    },
+    {
+      "path": "prompts/call10_F044.txt",
+      "sha256": "1f2835b2ce60806e80e5398eb87664716096d216fd4affe9c1f5c1e225678df9",
+      "bytes": 1733
+    },
+    {
+      "path": "raw/call11_F044_local_connection.png",
+      "sha256": "ec7c146a8a1fb2534e4fc320700d9d3e919c4c197016788f006fc529cd0b8646",
+      "bytes": 647968
+    },
+    {
+      "path": "prompts/call11_F044_local_connection.txt",
+      "sha256": "b70d25e08b351d95166a6c2ec91a560e0f28bfa33c6a46edd27ebf9b26e64899",
+      "bytes": 1384
+    },
+    {
+      "path": "qa/F023_local_connection_guide.png",
+      "sha256": "8077aa5b0fbba262b5dbb16bcb3de1402a6f89b45b17c0c7b8a2a3b09e7b7501",
+      "bytes": 597848
+    },
+    {
+      "path": "qa/F023_provisional_head_guide_mask.png",
+      "sha256": "d629ffc489cfb16a39a5ddf98910eb42a14c9d70e2f21a64ab9e3d9d8842bd3e",
+      "bytes": 4580
+    },
+    {
+      "path": "qa/F023_edit_mask.png",
+      "sha256": "4f1df2489303df1180f73e7ba91123269c7eb4ec65e0aad38bf86c1db6dcaafd",
+      "bytes": 5570
+    },
+    {
+      "path": "qa/F041_local_connection_guide.png",
+      "sha256": "ed88a5fe424672c73ffd9c021d7eb733aee1849869b9ab76a8ab53e5062ecc49",
+      "bytes": 579411
+    },
+    {
+      "path": "qa/F041_provisional_head_guide_mask.png",
+      "sha256": "df38fe0aa69d68814c40e5e83572dc5a15b1a5193f03d0aecde8fda6c7cb10b6",
+      "bytes": 3883
+    },
+    {
+      "path": "qa/F041_edit_mask.png",
+      "sha256": "bf74e69a863e72f71e78d551d9f258a8f12437a77a5cf2ded4343d242e3cd26c",
+      "bytes": 5266
+    },
+    {
+      "path": "qa/F044_local_connection_guide.png",
+      "sha256": "420415cb3fe426d3d8322181cf31c4d7026ee25a2691b070a67041a59a89c931",
+      "bytes": 589186
+    },
+    {
+      "path": "qa/F044_provisional_head_guide_mask.png",
+      "sha256": "4497f74bb761dc95fc830afcab0d38e4c602b86668cdf2820c6a637f2f78447f",
+      "bytes": 3860
+    },
+    {
+      "path": "qa/F044_edit_mask.png",
+      "sha256": "f6030b00158ce61f7cd7f8435b2de10d72b91e43d17df76801180570900d21f9",
+      "bytes": 5280
+    },
+    {
+      "path": "qa/F041_connection_mask.png",
+      "sha256": "3373a7b2013d052414afb2aebb6d0d8acaba6b2783ce21decd36bec98ce0f348",
+      "bytes": 3476
+    },
+    {
+      "path": "qa/F044_connection_mask.png",
+      "sha256": "26526eddb8497503e7e721c8965c9f8d2139e5ee2def8e5f38c0e76285af4c71",
+      "bytes": 3494
+    },
+    {
+      "path": "inputs/S02a_k01_focus.png",
+      "sha256": "50e8eb5e6b40f7ac3e8ef58294562dcc3f926c1051d9bb7c719ce170eec78d50",
+      "bytes": 702041
+    },
+    {
+      "path": "inputs/S02a_k02_tense.png",
+      "sha256": "0c137f2c2b04ea22ea1acfbb554e70afb28b0d461a68e65e6249ab493270f0b5",
+      "bytes": 628164
+    },
+    {
+      "path": "inputs/S02a_k03_relief.png",
+      "sha256": "96c43a3788cf2be41eceb9900fe711c49739397e63ced7fbcd0c62856c77f87f",
+      "bytes": 652662
+    },
+    {
+      "path": "qa/S02a_pose_three_state_overview.png",
+      "sha256": "0c7176e9b481ef651112af0318b4e4cb2545c12c0e7d518489e2cf8dd30b05c2",
+      "bytes": 771697
+    },
+    {
+      "path": "finish_pose.py",
+      "sha256": "316ee603a69315f85fecc441930b340fed0ca6cad25cc0774fa46b45a0e3d389",
+      "bytes": 2987
+    },
+    {
+      "path": "finish_F041.py",
+      "sha256": "9ae7fe4d000260feb458a351270f816e8ed497342327b73dc013202753272956",
+      "bytes": 2903
+    },
+    {
+      "path": "finish_F044.py",
+      "sha256": "bb16faec83ce8d199c0a81044b42ff5a89fb9df0c1d18bbb9757785319915158",
+      "bytes": 2912
+    }
+  ],
+  "exposure_ranges": [
+    {
+      "frame": 23,
+      "hold": 2
+    },
+    {
+      "frame": 41,
+      "hold": 3
+    },
+    {
+      "frame": 44,
+      "hold": 2
+    }
+  ],
+  "constraints": [
+    "No original modified",
+    "No GitHub/docs/assets/implementation writes",
+    "No global scale, no A/B/H fit",
+    "F041 and F044 locally positioned newly generated heads followed by real generated neck connections",
+    "No later exposure uses rejected raw candidate as mother",
+    "All zero-mask pixels and lower chest y895+ retain their respective static master RGBA",
+    "Neutral new regions; existing original pale-blue-light differences remain for single lighting integration"
+  ],
+  "review_status": {
+    "F023": "parent static independent review passed",
+    "F041": "parent static independent review passed",
+    "F044": "parent static independent review passed"
+  },
+  "status": "All three final PNGs frozen; static independent review passed; six S02a new states complete",
+  "remaining_join_review": "F044 neck sides are straighter and its collar tip differs slightly from old relief. Existing blue-versus-warm color changes remain for the actual 2-frame join review. No further generation or PNG changes in this delivery."
+}

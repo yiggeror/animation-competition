@@ -1,0 +1,296 @@
+{
+  "call_count": 8,
+  "status": "all_four_candidates_frozen_independent_static_review_passed",
+  "output_policy": "Built-in imagegen originals retained unchanged. User-authorized explicit-mask local compositing: real generated eyes/head/hand regions are reattached to locked original body pixels; F030 uses documented local hand/pod pre-positioning followed by genuine imagegen connection repair. PIL used for authorized composition, masks, measurements and QA. No full-character stretching; original narrow canvases receive right transparent padding only.",
+  "sources": [
+    {
+      "path": "astra_s03b_painted_pilot_20261018/refs/painted/S03_grandma_k01_F005_t0.20.png",
+      "sha256": "d77470263566ef6ad28e364950f06128bd4f83d9d8f65549c6e6dceebcdacc42",
+      "size": [
+        1672,
+        941
+      ],
+      "lighting": "legacy light cool fill"
+    },
+    {
+      "path": "astra_s03b_painted_pilot_20261018/refs/painted/S03_grandma_k02_F013_t0.55.png",
+      "sha256": "996146200db4538560ac1016af7f24033b26f889fda88cadffbf24ae0a7a7109",
+      "size": [
+        1671,
+        941
+      ],
+      "lighting": "legacy light cool fill"
+    },
+    {
+      "path": "astra_s03b_painted_pilot_20261018/refs/painted/S03_grandma_k03_F026_t1.10.png",
+      "sha256": "b2c64ad8ea3d545e02920f61674992ab336ab7af603a32ce5ef390708e1ec256",
+      "size": [
+        1671,
+        941
+      ],
+      "lighting": "legacy light cool fill"
+    },
+    {
+      "path": "astra_s03b_painted_pilot_20261018/refs/painted/S03_grandma_k04_F034_t1.40.png",
+      "sha256": "c02d8a6f385ca39280d948de64f6d481fc5a4cc8c95f6fd05a0c3ef8a7467af3",
+      "size": [
+        1672,
+        941
+      ],
+      "lighting": "legacy light cool fill"
+    }
+  ],
+  "outputs": [
+    {
+      "frame": 9,
+      "call": 1,
+      "path": "astra_s03_opening_draw_20261018/attention/originals/S03_F009_call01.png",
+      "raw_generated_source": "generated_images/exec-b6cd3066-2b17-431a-9641-e60412bbb648.png",
+      "sha256": "cb2bc7c779b7f693c2285bb6eec01ff8ef3141e2971a9cea9dde07dcb1e75691",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "status": "rejected_gaze_at_next_endpoint",
+      "edit_target": "astra_s03b_painted_pilot_20261018/refs/painted/S03_grandma_k01_F005_t0.20.png",
+      "next_anchor": "astra_s03b_painted_pilot_20261018/refs/painted/S03_grandma_k02_F013_t0.55.png",
+      "prompt": "prompts/F009_call01.txt"
+    },
+    {
+      "frame": 9,
+      "call": 2,
+      "path": "astra_s03_opening_draw_20261018/attention/originals/S03_F009_call02.png",
+      "sha256": "abb723f7261bc04fa9a7bf3e29edb51a1b204965256a18af5165c883f67d8b33",
+      "size": [
+        1671,
+        941
+      ],
+      "mode": "RGBA",
+      "status": "rejected_gaze_again_at_next_endpoint",
+      "edit_target": "k01",
+      "next_anchor": "k02",
+      "prompt": "prompts/F009_call02.txt"
+    },
+    {
+      "frame": 17,
+      "call": 3,
+      "path": "astra_s03_opening_draw_20261018/attention/originals/S03_F017_call03.png",
+      "sha256": "e1b3fcf257195360b56430dd67662e61692835ef349a48f8fc64827e76828ec1",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "status": "rejected_head_near_next_endpoint",
+      "edit_target": "astra_s03b_painted_pilot_20261018/refs/painted/S03_grandma_k02_F013_t0.55.png",
+      "next_anchor": "astra_s03b_painted_pilot_20261018/refs/painted/S03_grandma_k03_F026_t1.10.png",
+      "prompt": "prompts/F017_call03.txt"
+    },
+    {
+      "frame": 9,
+      "call": 4,
+      "path": "astra_s03_opening_draw_20261018/attention/originals/S03_F009_localeyes_call04.png",
+      "sha256": "6f1113733317bd4d8b9d3cc5d25ca5e4eb5e0cb0c0794a823d4bff32174bf32a",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "status": "under_visual_review_local_eyes",
+      "edit_target": "local_refs/F009_k01_head_native512.png",
+      "crop_bounds": [
+        620,
+        80,
+        1132,
+        592
+      ],
+      "prompt": "prompts/F009_localeyes_call04.txt"
+    },
+    {
+      "frame": 17,
+      "call": 5,
+      "path": "astra_s03_opening_draw_20261018/attention/originals/S03_F017_localhead_call05.png",
+      "sha256": "bc94277ccdc2a23f12134f1660155a5a545a47df78af50a33cda4a0452b51623",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "status": "under_visual_review_local_head",
+      "edit_target": "local_refs/F017_k02_head_native512.png",
+      "crop_bounds": [
+        600,
+        0,
+        1112,
+        512
+      ],
+      "prompt": "prompts/F017_localhead_call05.txt"
+    },
+    {
+      "frame": 21,
+      "call": 6,
+      "path": "astra_s03_opening_draw_20261018/attention/originals/S03_F021_localhead_call06.png",
+      "sha256": "48bd12c5941b76f53b09b3218c52fa26c85a86611de9fb77de90510bd10312e7",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "status": "candidate_local_head",
+      "edit_target": "local_refs/F021_from_F017_native512.png",
+      "crop_bounds": [
+        600,
+        0,
+        1112,
+        512
+      ],
+      "prompt": "prompts/F021_localhead_call06.txt"
+    },
+    {
+      "frame": 30,
+      "call": 7,
+      "path": "astra_s03_opening_draw_20261018/attention/originals/S03_F030_call07.png",
+      "sha256": "a6dfa3721b183095925ac0b67e6ae4b4cba3c471cce5d183098fa9302d525470",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "status": "rejected_hand_high_pod_long",
+      "edit_target": "k03",
+      "prompt": "prompts/F030_call07.txt"
+    },
+    {
+      "frame": 30,
+      "call": 8,
+      "path": "/workspace/scratch/f060b5601755/astra_s03_opening_draw_20261018/attention/originals/S03_F030_local_connections_call08.png",
+      "sha256": "92e452e38ad59c6c60027473cd565a489222efdfc8c72794ab55d651abc9671b",
+      "size": [
+        2146,
+        732
+      ],
+      "mode": "RGBA",
+      "status": "candidate_local_connection_repair",
+      "edit_target": "local_refs/F030_positioned_generated_hands_guide.png",
+      "prompt": "prompts/F030_local_connections_call08.txt"
+    }
+  ],
+  "frozen_review_candidates": [
+    {
+      "frame": 9,
+      "path": "astra_s03_opening_draw_20261018/attention/candidates/S03_F009_local_composite_v1.png",
+      "sha256": "00cf42fc11e50c8f8ae291fd64810a77a53b61ec4637b15ee98135a28d40c17a",
+      "size": [
+        1672,
+        941
+      ],
+      "status": "frozen_independent_static_review_passed"
+    },
+    {
+      "frame": 17,
+      "path": "astra_s03_opening_draw_20261018/attention/candidates/S03_F017_local_composite_v1.png",
+      "sha256": "a152d5062d37b2e2957a46cf29be15b225c558b0db557fb563e84e82edf5a1e8",
+      "size": [
+        1672,
+        941
+      ],
+      "status": "frozen_independent_static_review_passed"
+    },
+    {
+      "frame": 21,
+      "path": "astra_s03_opening_draw_20261018/attention/candidates/S03_F021_local_composite_v1.png",
+      "sha256": "2bfd3506bfab46a49c47d4cf4022de79e303e4f1f8c855aa5cb669d10be0c76e",
+      "size": [
+        1672,
+        941
+      ],
+      "status": "frozen_independent_static_review_passed"
+    },
+    {
+      "frame": 30,
+      "path": "astra_s03_opening_draw_20261018/attention/candidates/S03_F030_local_composite_v1.png",
+      "sha256": "6aad16ab0d7b60cc628be57ab58bde1f1cbb9799e8f6fcb3e26e6eab48afbd54",
+      "size": [
+        1672,
+        941
+      ],
+      "status": "frozen_independent_static_review_passed"
+    }
+  ],
+  "artifact_hashes": {
+    "originals/S03_F009_call01.png": "cb2bc7c779b7f693c2285bb6eec01ff8ef3141e2971a9cea9dde07dcb1e75691",
+    "originals/S03_F009_call02.png": "abb723f7261bc04fa9a7bf3e29edb51a1b204965256a18af5165c883f67d8b33",
+    "originals/S03_F009_localeyes_call04.png": "6f1113733317bd4d8b9d3cc5d25ca5e4eb5e0cb0c0794a823d4bff32174bf32a",
+    "originals/S03_F017_call03.png": "e1b3fcf257195360b56430dd67662e61692835ef349a48f8fc64827e76828ec1",
+    "originals/S03_F017_localhead_call05.png": "bc94277ccdc2a23f12134f1660155a5a545a47df78af50a33cda4a0452b51623",
+    "originals/S03_F021_localhead_call06.png": "48bd12c5941b76f53b09b3218c52fa26c85a86611de9fb77de90510bd10312e7",
+    "originals/S03_F030_call07.png": "a6dfa3721b183095925ac0b67e6ae4b4cba3c471cce5d183098fa9302d525470",
+    "originals/S03_F030_local_connections_call08.png": "92e452e38ad59c6c60027473cd565a489222efdfc8c72794ab55d651abc9671b",
+    "prompts/F009_call01.txt": "6fc5a3383292cf436bf3bce32b2693af648738d64f3802f14e0f659a79e40e48",
+    "prompts/F009_call02.txt": "780e82a8e6d9df33bb3479a1b3db9deebc06412795a3205209f5329255936007",
+    "prompts/F009_localeyes_call04.txt": "f1f2dcb0f4ea89e64150bbe8c3fea016b43b5f593396b6a08a362e9b25e546e6",
+    "prompts/F017_call03.txt": "3811655023190baa9a5f1319e1fdc638046b39facf3219a2b935315f0e7a173e",
+    "prompts/F017_localhead_call05.txt": "8f19bb053baaabda6a77e9f958595951c23b5c8965d670c8320335fe47a6f7b8",
+    "prompts/F021_localhead_call06.txt": "0d25c0a757969e261305fe461123f1553dab1ef1b90ddb561ed9393f00ecd0c3",
+    "prompts/F030_call07.txt": "e2fb784faa5bbbc86c28657dfd9ea1aab1b928a3cd51746c8954209acc1804ef",
+    "prompts/F030_local_connections_call08.txt": "25e5d9bfc202333cda11e2faf63d71d070d06f879f1378ec6bed7d527a4a1153",
+    "local_refs/F009_k01_head_native512.png": "94b335ebc78ab4df80185f3d2b156e59624497e360cb1f73d7963215d3c31b99",
+    "local_refs/F017_k02_head_native512.png": "2b1eb4afe99b7551f65b12a93c6c6ecb87050120907cd11d0d64dcf8f4842413",
+    "local_refs/F021_from_F017_native512.png": "c893d844fd44f5cf0775c87bb0703d7a5364e5530a61e76af893fbe32a93cc12",
+    "local_refs/F030_control_manifest.json": "4c16800a5ec3e5913cd62b5b75ec2a37fdb29383891da21852ed9e023be54068",
+    "local_refs/F030_positioned_generated_hands_guide.png": "4b3dea37f5940a2487e1dd7c1a5f92e09838735e4249ec66d72030e97ccc2324",
+    "masks/F009_all_changes.png": "3bf2008e4b562be1640b6adce11ea854bd9409e49e5837d730dfe5709cac4197",
+    "masks/F009_eye_left.png": "b0fc51683dded59150090c95434629c8f35f1367e2de7e0aac222c24a1823bee",
+    "masks/F009_eye_right.png": "9e350da620ae38b7b767537dd7306997124072c77cadb732a97c715497ecb506",
+    "masks/F009_pinch.png": "79353b9d168e8bd9b1abd4e4e7248d15c01e6063916d792a2fe6c492fd90677f",
+    "masks/F017_head_neck.png": "9479a43e4e35e2a2f304e1eff29e977e8c045d386b2f6c0722b95a740c85f731",
+    "masks/F021_head_neck.png": "9479a43e4e35e2a2f304e1eff29e977e8c045d386b2f6c0722b95a740c85f731",
+    "masks/F030_all_changes.png": "726d1b5781f7e7b3ab1e1bb17bcf9728e3cddc13f09c02efc335b4e748182cea",
+    "masks/F030_basin_lock.png": "33ee0b40b9af58ff1f8eb2b70e06013e0786baa05d4b25029439c1d7ff1fedb2",
+    "masks/F030_control_left_source.png": "1c5715777464ddb45ab88ad7e579d52f5151a7acd135a662109c4a0128c1a41d",
+    "masks/F030_control_pod_source.png": "ed7774667ca0b95a6a474fb6956c2f61e50a80d05d3a645d4b2200cdab48b7d2",
+    "masks/F030_control_right_source.png": "4c86300581d379289e1b6d3281f5995081629d911daf9c0577ad677ebf8db654",
+    "masks/F030_head.png": "9479a43e4e35e2a2f304e1eff29e977e8c045d386b2f6c0722b95a740c85f731",
+    "masks/F030_left.png": "44e6ddb615f1073f8d5770c0387b70652b972fed06a7578848e566a6dded3ec9",
+    "masks/F030_right.png": "3bb713fc63474c5e95c51859312e7692de5dfe93adc0f00dc6f164e4893c0513",
+    "candidates/S03_F009_local_composite_v1.png": "00cf42fc11e50c8f8ae291fd64810a77a53b61ec4637b15ee98135a28d40c17a",
+    "candidates/S03_F017_local_composite_v1.png": "a152d5062d37b2e2957a46cf29be15b225c558b0db557fb563e84e82edf5a1e8",
+    "candidates/S03_F021_local_composite_v1.png": "2bfd3506bfab46a49c47d4cf4022de79e303e4f1f8c855aa5cb669d10be0c76e",
+    "candidates/S03_F030_local_composite_v1.png": "6aad16ab0d7b60cc628be57ab58bde1f1cbb9799e8f6fcb3e26e6eab48afbd54"
+  },
+  "final_exposures": [
+    {
+      "frame": 9,
+      "hold": 4,
+      "end_inclusive": 12
+    },
+    {
+      "frame": 17,
+      "hold": 4,
+      "end_inclusive": 20
+    },
+    {
+      "frame": 21,
+      "hold": 5,
+      "end_inclusive": 25
+    },
+    {
+      "frame": 30,
+      "hold": 4,
+      "end_inclusive": 33
+    }
+  ],
+  "actual_image_generation_calls": 8,
+  "old_light_provenance": "k01-k04 legacy light cool fill retained in unedited base pixels; no extra blue scene lighting added; Opus must apply shared scene-light policy only once.",
+  "review_note": "F009/F017/F021/F030 independent static review passed at the four frozen hashes. Real exposure playback remains required for F021->k03 eye reopening/chin settling. F030 small hard corner at inner lower left sleeve near (630,653) is recorded; current v1 remains frozen, local cleanup only if visible in scene.",
+  "independent_review": {
+    "reviewer": "review_opening_drawn_sequences",
+    "result": "all_four_static_passed",
+    "F030_contact": "passed",
+    "remaining_scene_checks": [
+      "F021 to k03 eye reopening and slight chin settling",
+      "F030 inner lower left sleeve near (630,653), minor corner only if noticeable in scene"
+    ]
+  }
+}

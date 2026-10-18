@@ -1,0 +1,26 @@
+{
+  "base": "k03",
+  "head_source": "originals/S03_F030_call07.png",
+  "arm_source": "originals/S03_F030_local_connections_call08.png",
+  "arm_raw_size": [
+    2146,
+    732
+  ],
+  "arm_native_crop": [
+    400,
+    530,
+    1250,
+    820
+  ],
+  "control": "local_refs/F030_control_manifest.json",
+  "mask": "masks/F030_all_changes.png",
+  "checks": {
+    "outside_mask_changed_pixels": 0,
+    "basin_mask_changed_pixels": 0,
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "6aad16ab0d7b60cc628be57ab58bde1f1cbb9799e8f6fcb3e26e6eab48afbd54"
+  }
+}
