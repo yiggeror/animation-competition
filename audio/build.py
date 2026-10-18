@@ -114,7 +114,7 @@ print('环境声…')
 amb_len = TOTAL
 cr = crickets(amb_len, 6, seed=1); fr = frogs(amb_len, 1.1, seed=3); ci = cicadas(amb_len, seed=2)
 # 停电以后屋里静了，虫子显得更响；音乐进来时压低；来电时被电器盖住；关灯后又回来
-CUT = T('S04', 0.3); ON = T('S27', 0.0); OFF = T('S30', 6.0)
+CUT = T('S04', 7 / 24); ON = T('S27', 0.0); OFF = T('S30', 6.0)
 insects_db = [(0, -14), (CUT, -14), (CUT + 1.5, -8), (T('S15'), -8), (T('S15', 3), -15), (ON - 0.01, -15), (ON, -24),
               (OFF, -24), (OFF + 2, -7), (T('S31', 2), -9), (T('S31', 6), -15), (T('S32'), -10), (T('END'), -14), (TOTAL, -30)]
 g_ins = gain_curve(insects_db)[:, None]
