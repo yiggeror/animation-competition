@@ -30,13 +30,18 @@ try {
   check(JSON.stringify(m.registrationMatrix(1920,1080))===JSON.stringify([.7,0,0,.7,590,20]),'B registration');
   for(const t of [-1,2.5,Infinity,NaN]) {let rejected=false;try{m.pickExposure(t);}catch(e){rejected=e instanceof RangeError;}check(rejected,'range guard');}
   let rejected=false;try{m.registrationMatrix(1000,1000);}catch(e){rejected=e instanceof RangeError;}check(rejected,'aspect guard');
-  const urls=[],nativeFetch=globalThis.fetch;
-  globalThis.fetch=(...args)=>{urls.push(String(args[0]));return nativeFetch(...args);};
-  let reason='';try{await m.renderFrame(null,0,1920,1080);}catch(e){reason=String(e);}
-  check(reason.includes('final dual lock pending'),'tail lock must reject before render');
-  check(urls.length===1&&urls[0].endsWith('/final_lock.json'),'no native asset or WebGL invoked');
-  return {status:'PREPARATION_BROWSER_IMPORT_AND_STATIC_CONTRACT_PASS_RENDER_BLOCKED_PENDING_TAIL_LOCK',frames:60,drawings:9,all60_native_SHA_mapping:frames,camera:m.CAM,scene:m.SCENE_CONFIG,registration:m.registrationMatrix(1920,1080),actual_Canvas_frames_rendered:0,lock_gate_actually_rejected_before_asset_or_WebGL_load:true,scene_ready:false};
+  const lock=await (await fetch('/collab/reviews/cloud_s24_20261018/scene_candidate/final_lock.json')).json();
+  for(const e of m.EXPOSURES){const r=lock.assets.find(r=>r.start===e.start);check(r&&r.hold===e.hold&&r.sha256===e.sha256,'final lock resources');}
+  let blocked=null;
+  if(lock.approved!==true){
+   const urls=[],nativeFetch=globalThis.fetch;
+   globalThis.fetch=(...args)=>{urls.push(String(args[0]));return nativeFetch(...args);};
+   let reason='';try{await m.renderFrame(null,0,1920,1080);}catch(e){reason=String(e);}
+   check(reason.includes('final dual lock pending'),'tail lock must reject before render');
+   check(urls.length===1&&urls[0].endsWith('/final_lock.json'),'no native asset or WebGL invoked');blocked=true;
+  }else check(lock.status==='ASTRA_FINAL_DUAL_LOCKED_ALL9','approved lock status');
+  return {status:lock.approved?'APPROVED_LOCK_STATIC_BROWSER_PREFLIGHT_PASS_NO_SCENE_RENDER':'PREPARATION_BROWSER_IMPORT_AND_STATIC_CONTRACT_PASS_RENDER_BLOCKED_PENDING_TAIL_LOCK',approved:lock.approved,frames:60,drawings:9,all60_native_SHA_mapping:frames,camera:m.CAM,scene:m.SCENE_CONFIG,registration:m.registrationMatrix(1920,1080),actual_Canvas_frames_rendered:0,lock_gate_actually_rejected_before_asset_or_WebGL_load:blocked,scene_ready:false};
  },assetIndex);
- writeFileSync(path.join(own,'qa/preflight_result.json'),JSON.stringify(report,null,2)+'\n');
- console.log('PASS: real Chromium import;60f native/SHA mapping;original scene+B;actual render rejected before image/WebGL load.');
+ writeFileSync(path.join(own,report.approved?'qa/approved_preflight_result.json':'qa/preflight_result.json'),JSON.stringify(report,null,2)+'\n');
+ console.log('PASS: real Chromium import;60f native/SHA mapping;original scene+B;approval gate validated without scene rendering.');
 } finally {await browser.close();server.close();}

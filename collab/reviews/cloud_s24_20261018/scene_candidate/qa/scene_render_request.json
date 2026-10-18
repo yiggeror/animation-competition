@@ -1,0 +1,17 @@
+{
+  "source_preparation_commit": "25ae2c72dcc5bebcf50f3189470c213c241eb0e8",
+  "entry_sha256": "3833e90cc75d0f9e8449c14a3aa9fcb4d70f4abcff67883e9349fae7a10b2f04",
+  "final_lock_sha256": "a0bb28808899838068a8c0c3b25b2026484ab0266c2a9300117d62a22ee27ee0",
+  "native_asset_changes": 0,
+  "image_generation_calls": 0,
+  "actual_scene_runs_planned": 1,
+  "actual_scene_frames_planned": 60,
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "duration": 2.5,
+  "audio": false,
+  "command": "NODE_OPTIONS=--require ./collab/reviews/cloud_s24_20261018/scene_candidate/tools/actual_chromium_audit_shim.cjs node tools/js/frames.cjs collab/reviews/cloud_s24_20261018/scene_candidate/s24_drawn.js build/S24_scene60 --fps 24 --w 1920 --h 1080 --workers 2 --mp4 build/S24_scene60_1920x1080_24fps.mp4"
+}

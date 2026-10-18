@@ -1,6 +1,6 @@
-# S24 · 九态与完整60帧人物层已交，待Astra双审尾态
+# S24 · 完整60帧实际场景候选已交，幕上咬合待Astra整景门
 
-当前取图与60帧曝光见[末两态及完整人物层包](d08_d09_final_segment/README.md)。024已按44137d74终锁，原文件未动；032/040各一张原生输出并经10区材质归色与作者实看。完整九态、灰/深底60帧1080p/24fps/2.5秒片及解码齐。这是人物层，尚未正式Canvas接景，不报整镜ready。
+当前看[正式场景片与核验](scene_candidate/README.md)：真实Chromium1920×1080/24fps/60f/2.5秒静音；九态唯一锁图、原机位/灯/雾/B及曝光表保持。九态与切换关键解码实看、60帧编码对应和网络SHA通过。059既有幕上鹤嘴与龟头出现分离，证据已交，未签该接触或整景ready。人物层此前已双审，不再生图；本镜音轨、EDL与ready仍归协调，尚未登记。
 
 x24原始身份图为`collab/refs/anim_24_xiaoman_smug.png`，处理资产`assets/chars/x24_smug.png`也已实看。两者只取身份和末表情倾向，旧空手合拢与整图翻转不作新动作依据。
 
@@ -30,4 +30,4 @@ x24原始身份图为`collab/refs/anim_24_xiaoman_smug.png`，处理资产`asset
 
 **颜色更正已纳入：**最新Opus退回S13累积色漂，动作/回头节奏认可，整镜待修色；本参考里的F087/F094只借整头结构。S24颜色固定身份与x13 F000，不能顺链继承头发变浅、皮肤变白、裙色变艳。F000色片只是同语义内区统计，不能把全部明暗强压成平涂；[源ROI和统计方法](provenance/F000_semantic_color_reference.json)明确。未并发改S13颜色。
 
-[来源与固定git blob](provenance/source_manifest.json)、[原参考授权](provenance/authorization_and_scope.md)、[完整调用账本](provenance/generation_ledger.json)保留。累计12次请求/11张原件/1次工具失败，候选9态；本轮032/040新增2成功调用。旧阶段材料与失败记录未改。独占分支`cloud/s24-reference-20261018`，仅本目录交付。下一步等待Astra锁定末态；并准备本镜独立drawn模块和正式Canvas入口资源映射，最终仍需60帧实际场景片。
+[来源与固定git blob](provenance/source_manifest.json)、[完整调用账本](provenance/generation_ledger.json)保留。累计12次图像请求/11原件/1工具失败，9态均已Astra人物层双审锁定；本轮无生图。正式场景工具启动2次，首字体初始化失败0帧，随后1次成功完整60帧实渲、1次MP4编码。独占分支`cloud/s24-reference-20261018`，仅本目录交付，待Astra整景门。

@@ -1,7 +1,7 @@
 {
-  "status": "PENDING_ASTRA_FINAL_DUAL_LOCK_F032_F040",
-  "approved": false,
-  "do_not_render_until_approved": true,
+  "status": "ASTRA_FINAL_DUAL_LOCKED_ALL9",
+  "approved": true,
+  "do_not_render_until_approved": false,
   "person_layer_commit": "798402180f223a73281f7c8a5477cad656c97846",
   "previous_locked024_SHA": "44137d740ac5d07ca0258019c28cdf8f9b648d77ba79eda07f366f24503753db",
   "assets": [
@@ -59,5 +59,9 @@
       "hold": 20,
       "sha256": "724d5c1c2516e4720bd1905e14b1bfd104f142fe41bc399877963886b69816b8"
     }
-  ]
+  ],
+  "approval_source_thread": "01a0fbb9-4718-7063-bf5b-9bf34d41700f",
+  "approval_received_utc": "2026-10-18",
+  "approval_scope": "Astra dual review approved F032,F040 and complete60f gray/dark person-layer;actual60f Canvas scene authorized;EDL/ready/audio unchanged",
+  "F040_native_rim_note": "Two opaque black outline tangency pixels y1255,1256 at right native edge;no claim of transparent right margin."
 }

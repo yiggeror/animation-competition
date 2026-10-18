@@ -1,11 +1,11 @@
 {
-  "stage": "COMPLETE_9_DRAWINGS_60F_PERSON_LAYER_AUTHOR_PASS_PENDING_ASTRA_TAIL_LOCK_NOT_SCENE",
+  "stage": "COMPLETE60_ACTUAL_SCENE_CHARACTER_ENCODING_PASS_INHERITED_PUPPET_CONTACT_REVIEW_REQUIRED",
   "image_generation_requests": 12,
   "successful_raw_images": 11,
   "failed_requests": 1,
   "candidate_drawings": 9,
   "adopted_production_drawings": 0,
-  "scene_render_runs": 0,
+  "scene_render_runs": 1,
   "full_film_render_runs": 0,
   "external_paid_service_or_API_calls": 0,
   "image_tool": "image_gen.imagegen",
@@ -100,7 +100,7 @@
       "candidate": "d08_d09_final_segment/candidates/F032.png",
       "candidate_sha256": "cd01c1cc946011cc5d050498a16c83a84d197ca25221792e779bdd5d9d4e3e43",
       "request": "d08_d09_final_segment/requests/F032_call_011_request.json",
-      "status": "AUTHOR_ACTUAL_REVIEW_AND10MATERIAL_GATES_PASS_ASTRA_DUAL_REVIEW_PENDING",
+      "status": "ASTRA_FINAL_DUAL_LOCKED_EXACT_SHA_NATIVE_COLOR_CANDIDATE",
       "local_color_edit": true
     },
     {
@@ -111,7 +111,7 @@
       "candidate": "d08_d09_final_segment/candidates/F040.png",
       "candidate_sha256": "724d5c1c2516e4720bd1905e14b1bfd104f142fe41bc399877963886b69816b8",
       "request": "d08_d09_final_segment/requests/F040_call_012_request.json",
-      "status": "AUTHOR_ACTUAL_REVIEW_AND10MATERIAL_GATES_PASS_ASTRA_DUAL_REVIEW_PENDING",
+      "status": "ASTRA_FINAL_DUAL_LOCKED_EXACT_SHA_NATIVE_COLOR_CANDIDATE",
       "local_color_edit": true
     }
   ],
@@ -120,7 +120,7 @@
   "alpha_cleanup": true,
   "warp": true,
   "F006_started": true,
-  "note": "This stage2native image calls succeeded;032 actual review passed before040. Complete60f neutral person-layer only,not Canvas scene. Earlier raws/failures/phase files retained. Explicit exact locks counted000006009012024;015019 coordinator accepted previously.",
+  "note": "Astra explicitly dual-locked all9 native states and complete neutral60f;current actual Canvas60f candidate is author-reviewed and awaits Astra scene gate. First tool startup stopped at missing tracked fonts before anyframe,then one successful complete60f run.No new drawings or shared source/audio/EDL/ready edits. Actual059 inherited crane-bill/turtle-head contact visibly separates;character pass does not pass scene bite contact;Astra disposition required.",
   "color_derivatives": [
     {
       "source_sha256": "35bb55ead65abf20e3862b4d66dde2f0ed25023f31fb634fa2f03bcda0c72281",
@@ -145,7 +145,7 @@
   ],
   "F009_started": true,
   "F012_started": true,
-  "Astra_locked_drawings": 5,
+  "Astra_locked_drawings": 9,
   "artistic_rejected_raw_images": 3,
   "layer_preview_encoding_runs": 10,
   "F015_started": true,
@@ -185,12 +185,24 @@
       "Astra_locked": false
     }
   ],
-  "latest_transition": "Astra024 final dual lock authorizes032 then040;both actual native candidates+local color passed,complete60f layer ready for tail dual review.",
+  "latest_transition": "All9 lock recorded;formal actual scene60f rendered with original scene camera/light/fog and fixed B;single scene MP4 encoded and all60 decoded/order/native SHA validated.",
   "F024_author_accepted": true,
   "F024_Astra_final_locked": true,
   "F024_Astra_structure_approved_source": "4a203f2fa3e56603b30c4fa2faf26ca134047074",
   "alpha_cleanup_scope": "only left under-cuff corridor456alpha pixels;true frill0;colour stepalpha0",
   "F024_Astra_final_locked_sha256": "44137d740ac5d07ca0258019c28cdf8f9b648d77ba79eda07f366f24503753db",
-  "F032_Astra_final_locked": false,
-  "F040_Astra_final_locked": false
+  "F032_Astra_final_locked": true,
+  "F040_Astra_final_locked": true,
+  "F032_Astra_final_locked_sha256": "cd01c1cc946011cc5d050498a16c83a84d197ca25221792e779bdd5d9d4e3e43",
+  "F040_Astra_final_locked_sha256": "724d5c1c2516e4720bd1905e14b1bfd104f142fe41bc399877963886b69816b8",
+  "scene_tool_invocations": 2,
+  "scene_initialization_failures_before_any_frame": 1,
+  "scene_actual_rendered_frames": 60,
+  "scene_MP4_encoding_runs": 1,
+  "scene_candidate": "scene_candidate/actual_scene/S24_scene60_1920x1080_24fps.mp4",
+  "scene_candidate_sha256": "40a2f7c38a9f53167b381babc73b9b286701ccda530b18c811c22dd7dc90bf19",
+  "scene_Astra_final_review_pending": true,
+  "scene_ready_registered": false,
+  "scene_inherited_puppet_contact_pass": false,
+  "scene_inherited_puppet_contact_observation": "scene_candidate/qa/inherited_puppet_contact_observation.json"
 }

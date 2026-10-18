@@ -1,0 +1,22 @@
+{
+  "status": "RESOLVED_ENVIRONMENT_SPARSE_MISSING_FONTS_BEFORE_SCENE_START",
+  "first_exit_code": 1,
+  "actual_frames_before_failure": 0,
+  "root_cause": "dev/view.html waits document.fonts.load;both tracked TTF files absent in sparse worktree;HTTP404/ERR_ABORTED recorded",
+  "fix": "git sparse-checkout add /assets/fonts/;materialize existing tracked blobs,source0edit",
+  "fonts": [
+    {
+      "path": "assets/fonts/MaShanZheng-Regular.ttf",
+      "sha256": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb",
+      "unchanged_git_blob": "11bbfb9867d70612158229d037e7a5f622bd0e38"
+    },
+    {
+      "path": "assets/fonts/NotoSansSC-VF.ttf",
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "unchanged_git_blob": "fb0637bafbcd804fe32152370a1225990745b4bc"
+    }
+  ],
+  "scene_entry_changes": 0,
+  "native_drawing_changes": 0,
+  "image_generation_calls": 0
+}
