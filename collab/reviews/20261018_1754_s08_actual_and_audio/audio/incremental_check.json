@@ -1,0 +1,449 @@
+{
+  "commit": "ca7be38d85b64345c6d374f981b798974c53d423",
+  "old_master_source_commit": "da55623dc0a451ebb62b0df3ffde9b36c31501c6",
+  "old_master_source_provenance": {
+    "audio/build.py": {
+      "local_sha256": "6050ae67100a042d1a485728c5e16912f27acc15d528a4e4bca6fb7b511aab3a",
+      "matches_old_git_blob": true,
+      "latest_sha256": "b1231d3f200be1c3eed97a4f5fe67c0c6f707cbe0f8e7387389e228fa8bbbe54"
+    },
+    "audio/inst.py": {
+      "local_sha256": "c6b8f630335dfabe6302e21dfb880dae34fd02b37a475418d1f0f57112d98275",
+      "matches_old_git_blob": true,
+      "latest_sha256": "c6b8f630335dfabe6302e21dfb880dae34fd02b37a475418d1f0f57112d98275"
+    },
+    "audio/sfx.py": {
+      "local_sha256": "34943517c83815b8499f28ebb43bef57b377d827cef1b7375de5d16a320e6dc2",
+      "matches_old_git_blob": true,
+      "latest_sha256": "34943517c83815b8499f28ebb43bef57b377d827cef1b7375de5d16a320e6dc2"
+    },
+    "audio/score.py": {
+      "local_sha256": "2171a6189a971a1b88b7619fc92ced65d015cada8894e59362ddb04e67f40b2e",
+      "matches_old_git_blob": true,
+      "latest_sha256": "2171a6189a971a1b88b7619fc92ced65d015cada8894e59362ddb04e67f40b2e"
+    },
+    "js/film/edl.js": {
+      "local_sha256": "4013e5c27e812759b98f87933af835fc619a90230884612dbee44d9908143cde",
+      "matches_old_git_blob": true,
+      "latest_sha256": "f84b4273f17546c581cc85770ada8970204b5158e92e7fc87244a0e180cc1561"
+    },
+    "package.json": {
+      "local_sha256": "7435fe87be491d71687e23a98dabe79423370904520a23e57d13ce65ce7cbde7",
+      "matches_old_git_blob": true,
+      "latest_sha256": "7435fe87be491d71687e23a98dabe79423370904520a23e57d13ce65ce7cbde7"
+    }
+  },
+  "old_and_new_edl_timing_equal": true,
+  "old_master_path": "/workspace/scratch/f060b5601755/astra_audio_rebuild_20261018_da55623/build/audio/film_mix_norm.wav",
+  "old_master_sha256": "71e7df7ccec327bd6d56f44d561a86dfa76f76c4a7ee9eb37c50399b2976e283",
+  "old_master_rate": 48000,
+  "old_master_samples": 11188000,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "shots": {
+    "S01": {
+      "mp4_path": "/workspace/scratch/f060b5601755/astra_four_audio_increment_20261018_1745/collab/reviews/20261018_opening_drawn_wip/S01_drawn_v1.mp4",
+      "mp4_sha256": "494c15695b936f7c777a0953e5c1b16fa5d16c09a89ff5a7cd7d2f3c7b29d3d3",
+      "mp4_hash_matches_manifest": true,
+      "pcm_sha256": "335b5275085c18d900fd639a0eceb4c1688cc66897520f17f0ed1d04b9e82c9e",
+      "pcm_hash_matches_manifest": true,
+      "silent_reference_path": "/workspace/scratch/f060b5601755/astra_s01_contact_actual_20261018_1727/S01_contact_full84.mp4",
+      "silent_reference_sha256": "09e47090fc6e9b1f4175d803b483a682fafe03a056c28c90c91c04f59d23aed5",
+      "video_elementary_sha256": "671f592f9f6947a484c1d09a5fdb1bbd261cc7b6aa6e3665db507a54a4b3499f",
+      "silent_elementary_sha256": "671f592f9f6947a484c1d09a5fdb1bbd261cc7b6aa6e3665db507a54a4b3499f",
+      "video_elementary_bytes_equal": true,
+      "video_codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "expected_frames": 84,
+      "video_read_frames": 84,
+      "video_reported_frames": 84,
+      "video_fps": "24/1",
+      "video_start_time": "0.000000",
+      "video_duration": "3.500000",
+      "audio_codec": "aac",
+      "audio_channels": 2,
+      "audio_stream_duration": "3.500000",
+      "audio_stream_duration_ts": 168000,
+      "audio_stream_time_base": "1/48000",
+      "audio_stream_start_time": "0.000000",
+      "audio_first_packet": {
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "audio_last_packet": {
+        "pts": 167936,
+        "pts_time": "3.498667",
+        "dts": 167936,
+        "duration": 64,
+        "duration_time": "0.001333"
+      },
+      "pcm_rate": 48000,
+      "pcm_samples": 168000,
+      "pcm_channels": 2,
+      "pcm_duration": 3.5,
+      "aac_decoded_rate": 48000,
+      "aac_decoded_samples": 168960,
+      "aac_decoded_duration": 3.52,
+      "aac_decoded_trailing_samples_beyond_pcm": 960,
+      "aac_best_lag_samples": 0,
+      "aac_vs_pcm_zero_lag": {
+        "rmse": 0.003809778399825457,
+        "max_abs_error": 0.12712544202804565,
+        "correlation": 0.9992650849364406,
+        "rms_reference": 0.09912691964337848,
+        "snr_db": 28.3058379114555,
+        "equal_fraction": 0.0
+      },
+      "aac_vs_pcm_channel_correlations": [
+        0.9991328960613455,
+        0.9994402174116669
+      ],
+      "aac_sample_peak_dbfs": -4.748725414276123,
+      "aac_true_peak_dbtp_ffmpeg_loudnorm": -4.66,
+      "pcm_master_slice_start_sample": 0,
+      "pcm_master_slice_end_sample_exclusive": 168000,
+      "delivered_pcm_vs_old_master_lsb": {
+        "rmse": 0.015811388300841896,
+        "max_abs_error": 3.0,
+        "correlation": 0.9999999999881498,
+        "rms_reference": 3248.1909357395903,
+        "snr_db": 106.25343091518502,
+        "equal_fraction": 0.9999107142857143
+      },
+      "pcm_sample_peak_dbfs": -4.731641220411907,
+      "audio_presentation_samples_from_packet_end": 168000,
+      "video_frame_count_matches_expected": true,
+      "pcm_sample_count_matches_frames": true,
+      "audio_presentation_sample_count_matches_frames": true,
+      "aac_priming_samples_signalled": 1024,
+      "aac_padding_note": "Decoder emits complete 1024-sample AAC blocks after initial 1024-sample skip. Extra decoded trailing samples are outside MP4 presentation duration; comparison is clipped to actual PCM length."
+    },
+    "S04": {
+      "mp4_path": "/workspace/scratch/f060b5601755/astra_four_audio_increment_20261018_1745/collab/reviews/20261018_opening_drawn_wip/S04_drawn_v1.mp4",
+      "mp4_sha256": "ef7d3d80b89b0342e51b253f0eb1c50a24d9e0cb8d70132b69b695f89462cc58",
+      "mp4_hash_matches_manifest": true,
+      "pcm_sha256": "1daa6af38cb0a8239c842a359452914a36ae6aca9890f73f21833ef49dbfbf47",
+      "pcm_hash_matches_manifest": true,
+      "silent_reference_path": "/workspace/scratch/f060b5601755/astra_s04_contact_actual_20261018_1727/S04_contact_color_final72.mp4",
+      "silent_reference_sha256": "8ba7c45fb70c2b5237aff76251baa794a2a2c125908fe257304b3b58b9b4b4d1",
+      "video_elementary_sha256": "5b30f5d936b930471d576d0868fff444d53ff9c5bf06a5fbc44403eb44b29351",
+      "silent_elementary_sha256": "5b30f5d936b930471d576d0868fff444d53ff9c5bf06a5fbc44403eb44b29351",
+      "video_elementary_bytes_equal": true,
+      "video_codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "expected_frames": 72,
+      "video_read_frames": 72,
+      "video_reported_frames": 72,
+      "video_fps": "24/1",
+      "video_start_time": "0.000000",
+      "video_duration": "3.000000",
+      "audio_codec": "aac",
+      "audio_channels": 2,
+      "audio_stream_duration": "3.000000",
+      "audio_stream_duration_ts": 144000,
+      "audio_stream_time_base": "1/48000",
+      "audio_stream_start_time": "0.000000",
+      "audio_first_packet": {
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "audio_last_packet": {
+        "pts": 143360,
+        "pts_time": "2.986667",
+        "dts": 143360,
+        "duration": 640,
+        "duration_time": "0.013333"
+      },
+      "pcm_rate": 48000,
+      "pcm_samples": 144000,
+      "pcm_channels": 2,
+      "pcm_duration": 3.0,
+      "aac_decoded_rate": 48000,
+      "aac_decoded_samples": 144384,
+      "aac_decoded_duration": 3.008,
+      "aac_decoded_trailing_samples_beyond_pcm": 384,
+      "aac_best_lag_samples": 0,
+      "aac_vs_pcm_zero_lag": {
+        "rmse": 0.003279400130405804,
+        "max_abs_error": 0.08001083135604858,
+        "correlation": 0.9994002707535268,
+        "rms_reference": 0.09418772462535649,
+        "snr_db": 29.163997915869167,
+        "equal_fraction": 0.0
+      },
+      "aac_vs_pcm_channel_correlations": [
+        0.9993643591686733,
+        0.9994310707068782
+      ],
+      "aac_sample_peak_dbfs": -4.3288254737854,
+      "aac_true_peak_dbtp_ffmpeg_loudnorm": -4.29,
+      "pcm_master_slice_start_sample": 768000,
+      "pcm_master_slice_end_sample_exclusive": 912000,
+      "delivered_pcm_vs_old_master_lsb": {
+        "rmse": 0.010206207261596576,
+        "max_abs_error": 2.0,
+        "correlation": 0.9999999999945304,
+        "rms_reference": 3086.343354348404,
+        "snr_db": 109.61159712011614,
+        "equal_fraction": 0.9999479166666667
+      },
+      "pcm_sample_peak_dbfs": -4.431586860136364,
+      "audio_presentation_samples_from_packet_end": 144000,
+      "video_frame_count_matches_expected": true,
+      "pcm_sample_count_matches_frames": true,
+      "audio_presentation_sample_count_matches_frames": true,
+      "aac_priming_samples_signalled": 1024,
+      "aac_padding_note": "Decoder emits complete 1024-sample AAC blocks after initial 1024-sample skip. Extra decoded trailing samples are outside MP4 presentation duration; comparison is clipped to actual PCM length."
+    },
+    "S03a": {
+      "mp4_path": "/workspace/scratch/f060b5601755/astra_four_audio_increment_20261018_1745/collab/reviews/20261018_opening_drawn_wip/S03a_drawn_v4.mp4",
+      "mp4_sha256": "d78d6bdc70f957ba2167ca935251e90c385cb79d9e443bd9187645301ab9e68b",
+      "mp4_hash_matches_manifest": true,
+      "pcm_sha256": "95f4c1895ce676997109621831c71f796480e6e6e009481e5554ed8caaf04da0",
+      "pcm_hash_matches_manifest": true,
+      "silent_reference_path": "/workspace/scratch/f060b5601755/astra_s03a_color36_actual_20261018_1727/S03a_color36.mp4",
+      "silent_reference_sha256": "9d2277ec84b2b5b394614c4055175d606fc8eb18f7ed29771df985b6ed3436f1",
+      "video_elementary_sha256": "eab6e85eda4cf5a3cbd8d18c3e6b63f707d5daf61caf3db827cb30d74d087be2",
+      "silent_elementary_sha256": "eab6e85eda4cf5a3cbd8d18c3e6b63f707d5daf61caf3db827cb30d74d087be2",
+      "video_elementary_bytes_equal": true,
+      "video_codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "expected_frames": 36,
+      "video_read_frames": 36,
+      "video_reported_frames": 36,
+      "video_fps": "24/1",
+      "video_start_time": "0.000000",
+      "video_duration": "1.500000",
+      "audio_codec": "aac",
+      "audio_channels": 2,
+      "audio_stream_duration": "1.500000",
+      "audio_stream_duration_ts": 72000,
+      "audio_stream_time_base": "1/48000",
+      "audio_stream_start_time": "0.000000",
+      "audio_first_packet": {
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "audio_last_packet": {
+        "pts": 71680,
+        "pts_time": "1.493333",
+        "dts": 71680,
+        "duration": 320,
+        "duration_time": "0.006667"
+      },
+      "pcm_rate": 48000,
+      "pcm_samples": 72000,
+      "pcm_channels": 2,
+      "pcm_duration": 1.5,
+      "aac_decoded_rate": 48000,
+      "aac_decoded_samples": 72704,
+      "aac_decoded_duration": 1.5146666666666666,
+      "aac_decoded_trailing_samples_beyond_pcm": 704,
+      "aac_best_lag_samples": 0,
+      "aac_vs_pcm_zero_lag": {
+        "rmse": 0.006479306351555278,
+        "max_abs_error": 0.14354541897773743,
+        "correlation": 0.9979097926023159,
+        "rms_reference": 0.10025285695501775,
+        "snr_db": 23.791364864626722,
+        "equal_fraction": 6.944444444444445e-06
+      },
+      "aac_vs_pcm_channel_correlations": [
+        0.998328903295139,
+        0.9973976241397183
+      ],
+      "aac_sample_peak_dbfs": -5.131045341491699,
+      "aac_true_peak_dbtp_ffmpeg_loudnorm": -5.0,
+      "pcm_master_slice_start_sample": 600000,
+      "pcm_master_slice_end_sample_exclusive": 672000,
+      "delivered_pcm_vs_old_master_lsb": {
+        "rmse": 0.018257418583505537,
+        "max_abs_error": 3.0,
+        "correlation": 0.9999999999845559,
+        "rms_reference": 3285.085622238407,
+        "snr_db": 105.10214641647374,
+        "equal_fraction": 0.9998958333333333
+      },
+      "pcm_sample_peak_dbfs": -4.991896428246959,
+      "audio_presentation_samples_from_packet_end": 72000,
+      "video_frame_count_matches_expected": true,
+      "pcm_sample_count_matches_frames": true,
+      "audio_presentation_sample_count_matches_frames": true,
+      "aac_priming_samples_signalled": 1024,
+      "aac_padding_note": "Decoder emits complete 1024-sample AAC blocks after initial 1024-sample skip. Extra decoded trailing samples are outside MP4 presentation duration; comparison is clipped to actual PCM length."
+    },
+    "S13": {
+      "mp4_path": "/workspace/scratch/f060b5601755/astra_four_audio_increment_20261018_1745/collab/reviews/20261018_scenes03_12_drawn/S13_drawn_v1.mp4",
+      "mp4_sha256": "216927a5c9ffc27579adec7df9b9a55f58f068c0c225cc46e081d7291d23526a",
+      "mp4_hash_matches_manifest": true,
+      "pcm_sha256": "67697b60ac66cc8e8aede7e1b384b2ce998256cf27d6259914d7902e441f3876",
+      "pcm_hash_matches_manifest": true,
+      "silent_reference_path": "/workspace/scratch/f060b5601755/astra_s13_color120_actual_20261018_1723/S13_color120_720p24.mp4",
+      "silent_reference_sha256": "5be603c2d2229102ec3c2f9d0ed6db017c655f317fe76cf274d0282c4e9ae576",
+      "video_elementary_sha256": "0361fe31b11f1f5ef984de71b38003e97e33979452b7818e51fec1c7627e5646",
+      "silent_elementary_sha256": "0361fe31b11f1f5ef984de71b38003e97e33979452b7818e51fec1c7627e5646",
+      "video_elementary_bytes_equal": true,
+      "video_codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "expected_frames": 120,
+      "video_read_frames": 120,
+      "video_reported_frames": 120,
+      "video_fps": "24/1",
+      "video_start_time": "0.000000",
+      "video_duration": "5.000000",
+      "audio_codec": "aac",
+      "audio_channels": 2,
+      "audio_stream_duration": "5.000000",
+      "audio_stream_duration_ts": 240000,
+      "audio_stream_time_base": "1/48000",
+      "audio_stream_start_time": "0.000000",
+      "audio_first_packet": {
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "audio_last_packet": {
+        "pts": 239616,
+        "pts_time": "4.992000",
+        "dts": 239616,
+        "duration": 384,
+        "duration_time": "0.008000"
+      },
+      "pcm_rate": 48000,
+      "pcm_samples": 240000,
+      "pcm_channels": 2,
+      "pcm_duration": 5.0,
+      "aac_decoded_rate": 48000,
+      "aac_decoded_samples": 240640,
+      "aac_decoded_duration": 5.013333333333334,
+      "aac_decoded_trailing_samples_beyond_pcm": 640,
+      "aac_best_lag_samples": 0,
+      "aac_vs_pcm_zero_lag": {
+        "rmse": 0.0019801411557537375,
+        "max_abs_error": 0.047926850616931915,
+        "correlation": 0.9996461526026327,
+        "rms_reference": 0.07368901395618627,
+        "snr_db": 31.414131896986248,
+        "equal_fraction": 0.0
+      },
+      "aac_vs_pcm_channel_correlations": [
+        0.9996624846688316,
+        0.9996326310185946
+      ],
+      "aac_sample_peak_dbfs": -4.551822185516357,
+      "aac_true_peak_dbtp_ffmpeg_loudnorm": -4.55,
+      "pcm_master_slice_start_sample": 2764000,
+      "pcm_master_slice_end_sample_exclusive": 3004000,
+      "delivered_pcm_vs_old_master_lsb": {
+        "rmse": 0.011365151414154881,
+        "max_abs_error": 3.0,
+        "correlation": 0.9999999999889232,
+        "rms_reference": 2414.6416002147193,
+        "snr_db": 106.54554904926137,
+        "equal_fraction": 0.9999541666666667
+      },
+      "pcm_sample_peak_dbfs": -4.505634301598953,
+      "audio_presentation_samples_from_packet_end": 240000,
+      "video_frame_count_matches_expected": true,
+      "pcm_sample_count_matches_frames": true,
+      "audio_presentation_sample_count_matches_frames": true,
+      "aac_priming_samples_signalled": 1024,
+      "aac_padding_note": "Decoder emits complete 1024-sample AAC blocks after initial 1024-sample skip. Extra decoded trailing samples are outside MP4 presentation duration; comparison is clipped to actual PCM length."
+    }
+  },
+  "boundaries": [
+    "Signal/bitstream audit only; not a fresh subjective visual or listening approval.",
+    "Full delivery-file hash, PCM reference comparison, and lossy AAC comparison are separate checks.",
+    "S01 bean action frame review is assigned elsewhere. No new S01 sync sign-off here."
+  ],
+  "old_audio_build_git_blob": "a6a3af5637900eea774b8cf95656b140642c44fe",
+  "new_audio_build_git_blob": "d19d18e1b918e09c4deb0affc51df829580d6c2c",
+  "last_audio_build_change_before_delivery_commit": "7a48c1d8c8ac6b394a4dd31d4e6121ce4d7dce6e",
+  "s04_cut_version_boundary": {
+    "old_source_CUT_seconds_in_shot": 0.3,
+    "new_source_CUT_seconds_in_shot": 0.2916666666666667,
+    "old_event_placement_sample_in_shot": 14400,
+    "new_event_placement_sample_in_shot": 14000,
+    "difference_samples_48000hz": 400,
+    "difference_milliseconds": 8.333333333333334,
+    "old_source_CUT_position_at_24fps": 7.2,
+    "new_source_CUT_position_at_24fps": 7.0,
+    "old_reference_master_sha256": "71e7df7ccec327bd6d56f44d561a86dfa76f76c4a7ee9eb37c50399b2976e283",
+    "delivered_s04_pcm_vs_old_reference_max_lsb": 2.0,
+    "delivered_s04_pcm_vs_old_reference_rmse_lsb": 0.010206207261596576,
+    "conclusion": "Delivered S04 PCM retains the old 0.300s CUT signal. The changed 7/24 CUT is source-only for this delivery and is not accepted as already applied.",
+    "new_master_rebuilt_in_this_audit": false,
+    "reason_no_rebuild": "The delivered PCM signal matches the verified existing old-source master within 2 LSB. The old/new source difference is one CUT assignment, so rebuilding is unnecessary to identify this stale-delivery boundary."
+  },
+  "disposition": {
+    "all_eight_delivery_hashes_match_fixed_commit_manifests": true,
+    "all_four_h264_streams_byte_identical_to_approved_silent_sources": true,
+    "all_four_frame_and_pcm_presentation_lengths_match": true,
+    "all_four_aac_best_lag_samples_zero": true,
+    "new_s04_cut_applied_to_current_delivery": false,
+    "s01_action_sync_review": "Pending separate reviewer; not assessed here.",
+    "accepted_scope": "Actual delivery checksums, copied-video identity, frame/presentation lengths, lossy AAC-to-PCM signal correspondence.",
+    "not_accepted_scope": "New S04 7/24 audio placement, final S01 bean action synchronization, global final opening assembly, subjective audio/visual sign-off.",
+    "master_provenance_caveat": "Reference rebuild is fixed da55623. Its audio/build.py is unchanged from 7a48c1d through ca7be38 parent; EDL timing unchanged. Audio alone cannot identify a unique full originating repository commit. Differences of 2\u20133 integer PCM LSB are recorded, not called byte equality."
+  }
+}
