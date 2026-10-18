@@ -1,0 +1,33 @@
+{
+  "call_id": "S24_F024_call_009",
+  "pose": "d07_F024",
+  "status": "REJECTED_POSE_REGRESSION_NOT_ADOPTED_OR_DERIVED",
+  "tool": "image_gen.imagegen",
+  "args": {
+    "prompt": "LOCAL FRAMING REPAIR OF S24 F024 ONLY. Reference1 is the locked corrected color mother. Reference2 is the actual F024 repair target: its proud closed smile, small chin lift, raised brows, head/neck/hair/body pose are the correct intended beat, BUT THE OUTER RIGHT PUFF SLEEVE IS CUT BY THE1024px CANVAS EDGE. Reference3 is the accepted preceding F019 for structural continuity.\n\nRepair ONLY the yellow fabric silhouette of the SCREEN-RIGHT PUFF SLEEVE around native x870–1023,y1100–1400 so its whole rounded outer contour lies inside x1005 with at least about15–18pixels of transparent breathing room to the right edge. Naturally REDRAW a slightly more compact puff of fabric in place;keep shoulder joint, upper-arm axis, cuff/arm connection and child's anatomy consistent. Do not turn this into a flat vertical cropped sleeve or distort the arm. Preserve dress-dot style and natural small cloth folds. Upper arms may continue out of the BOTTOM, as before.\n\nEverything else in reference2 must remain at the same native location and scale: full skull/cowlick, both ears/flowers/short pigtails, awake right-up gaze at grandma, gently raised brows, SMALL CLOSED PROUD SMILE, small chin lift, under-jaw/neck volume and collar, chest/shoulder orientation, other sleeve and all anatomy. No new head turn or movement, no global recentering, shrinking, zoom, mirroring, warp or stretching. Do not alter the expression, close the eyes, open the mouth, enlarge hair, add hands/elbows/props or change pigtail motion. Entire cowlick/tails remain visible inside the frame.\n\nKeep the SAME native1024x1536 transparent RGBA canvas and later whole-layer placement0.70+(590,20). No code/card tricks;this is a local fabric drawing repair. Match reference1 corrected dark brown hair, warm peach skin, soft golden yellow dress and warm white collar/dots, preserving gradients/ink/highlights/alpha. No added lighting/background/glow/haze/text. Return one complete native transparent illustration with the right puff sleeve fully inside the side edge.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d05_d07_segment/originals/S24_F024_call_008_REJECTED_sleeve_crop_raw.png",
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d05_d07_segment/candidates/F019_rgba.png"
+    ],
+    "transparent_background": true
+  },
+  "inputs": [
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22",
+      "role": "locked_corrected_material_mother"
+    },
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d05_d07_segment/originals/S24_F024_call_008_REJECTED_sleeve_crop_raw.png",
+      "sha256": "4a29d857b82802a60dfa57549130a2bb16dd073e96765e7a29ceb33165737b8e",
+      "role": "current024_local_sleeve_repair_target_only;not_a_new_preceding_accepted_state"
+    },
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d05_d07_segment/candidates/F019_rgba.png",
+      "sha256": "d5f04b6b949a6b96a0c39ec8fe8850f7b2b30f00af835bbe38ddf53c66b4c1a3",
+      "role": "immediately_preceding_accepted019"
+    }
+  ],
+  "no_failed009_or_old_light_mother_input": true
+}

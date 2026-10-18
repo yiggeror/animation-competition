@@ -1,0 +1,28 @@
+{
+  "call_id": "S24_F015_call_006",
+  "status": "AUTHOR_ACCEPTED_CANDIDATE_ASTRA_REVIEW_PENDING",
+  "raw": "originals/S24_F015_call_006_raw.png",
+  "raw_sha256": "7152329ac1416ab476480465d2d6d6c1614a0ec6e3e5de61dac8244cdcd8b7a9",
+  "tool_original_path": "/workspace/generated_images/exec-de5c2f67-00ca-4880-b92e-6b84bfb1609a.png",
+  "candidate": "candidates/F015_rgba.png",
+  "candidate_sha256": "3eaef2e1fa5e99c308dd46de105bb38d8e97e331f3b801763da152e2aa6ca1ce",
+  "inputs": [
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22",
+      "role": "locked_corrected_material_mother"
+    },
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d02_d04_segment/candidates/F012_rgba.png",
+      "sha256": "dcbe1e529b03b963f56769e4f0c381cbca5bd2735cdb75d01bbce5f0cd0296c6",
+      "role": "immediately_preceding_Astra_locked_state"
+    }
+  ],
+  "raw_size": [
+    1024,
+    1536
+  ],
+  "raw_mode": "RGBA",
+  "model_version": "not returned by tool",
+  "local_color_step": "explicit masks relative to raw;no geometry warp;fixed corrected mother0485c6fe palette"
+}

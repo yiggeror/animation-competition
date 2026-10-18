@@ -1,9 +1,9 @@
 {
-  "stage": "corrected_mother_Astra_locked_three_native_states_delivered_pending_Astra_segment_review",
-  "image_generation_requests": 5,
-  "successful_raw_images": 5,
-  "failed_requests": 0,
-  "candidate_drawings": 4,
+  "stage": "015019_saved_024_native_local_repair_tool_failed_no_accepted024",
+  "image_generation_requests": 10,
+  "successful_raw_images": 9,
+  "failed_requests": 1,
+  "candidate_drawings": 6,
   "adopted_production_drawings": 0,
   "scene_render_runs": 0,
   "full_film_render_runs": 0,
@@ -57,6 +57,40 @@
       "candidate": "d02_d04_segment/candidates/F012_rgba.png",
       "candidate_sha256": "dcbe1e529b03b963f56769e4f0c381cbca5bd2735cdb75d01bbce5f0cd0296c6",
       "local_color_edit": true
+    },
+    {
+      "call_id": "S24_F015_call_006",
+      "raw": "d05_d07_segment/originals/S24_F015_call_006_raw.png",
+      "sha256": "7152329ac1416ab476480465d2d6d6c1614a0ec6e3e5de61dac8244cdcd8b7a9",
+      "tool_original_path": "/workspace/generated_images/exec-de5c2f67-00ca-4880-b92e-6b84bfb1609a.png",
+      "status": "AUTHOR_ACCEPTED_CANDIDATE_ASTRA_REVIEW_PENDING",
+      "candidate": "d05_d07_segment/candidates/F015_rgba.png",
+      "candidate_sha256": "3eaef2e1fa5e99c308dd46de105bb38d8e97e331f3b801763da152e2aa6ca1ce",
+      "local_color_edit": true
+    },
+    {
+      "call_id": "S24_F019_call_007",
+      "raw": "d05_d07_segment/originals/S24_F019_call_007_raw.png",
+      "sha256": "289e153769781e1fdbf931a99be96b6cadfbd54e209f0f0e24f0ecbcb46eac6f",
+      "tool_original_path": "/workspace/generated_images/exec-280b6880-9e02-4a0c-be05-3e2505691bf9.png",
+      "status": "AUTHOR_ACCEPTED_CANDIDATE_ASTRA_REVIEW_PENDING",
+      "candidate": "d05_d07_segment/candidates/F019_rgba.png",
+      "candidate_sha256": "d5f04b6b949a6b96a0c39ec8fe8850f7b2b30f00af835bbe38ddf53c66b4c1a3",
+      "local_color_edit": true
+    },
+    {
+      "call_id": "S24_F024_call_008",
+      "raw": "d05_d07_segment/originals/S24_F024_call_008_REJECTED_sleeve_crop_raw.png",
+      "sha256": "4a29d857b82802a60dfa57549130a2bb16dd073e96765e7a29ceb33165737b8e",
+      "tool_original_path": "/workspace/generated_images/exec-f1d3af8e-ad71-4b9b-a27b-6d5217776bd0.png",
+      "status": "REJECTED_NATIVE_SIDE_FRAMING;REPAIR_TARGET_ONLY_NOT_ADOPTED"
+    },
+    {
+      "call_id": "S24_F024_call_009",
+      "raw": "d05_d07_segment/originals/S24_F024_call_009_REJECTED_pose_regression_raw.png",
+      "sha256": "97e1a2316ca52369146cdc11dbd00c68e94a358c00e721b127b966b7377ee775",
+      "tool_original_path": "/workspace/generated_images/exec-a5b3015f-08a3-48e5-b1e5-dbb01ae1c245.png",
+      "status": "REJECTED_POSE_REGRESSION_NOT_ADOPTED_OR_DERIVED"
     }
   ],
   "local_repaint": false,
@@ -64,7 +98,7 @@
   "alpha_cleanup": false,
   "warp": false,
   "F006_started": true,
-  "note": "Astra locked corrected mother0485c6fe and B registration. Sequential native006 accepted,009call003 rejected for overshoot,009call004 accepted,then012 accepted by author. Each uses only corrected mother and prior accepted state;fixed mother controls all color gates. 4calls this segment,3adopted candidates+1artistic reject;5total,0tool failures. No015,no shared production/scene/full-film/ready edits;15fneutral drawn-layer QA only.",
+  "note": "Astra locked006009012 after actual15f review. This group:015019 accepted by author,024call008 sleeve cropped,009 repair pose-regressed,010 actual image call failed without new output. Shell read/write and all saved images verified;underlying image exception text unavailable,not claimed restored. Preserve originals and resume same024sleeve target only after image endpoint recovery. No032040,no shared production/S08/ready edits.",
   "color_derivatives": [
     {
       "source_sha256": "35bb55ead65abf20e3862b4d66dde2f0ed25023f31fb634fa2f03bcda0c72281",
@@ -77,8 +111,28 @@
   ],
   "F009_started": true,
   "F012_started": true,
-  "Astra_locked_drawings": 1,
-  "artistic_rejected_raw_images": 1,
-  "layer_preview_encoding_runs": 1,
-  "F015_started": false
+  "Astra_locked_drawings": 4,
+  "artistic_rejected_raw_images": 3,
+  "layer_preview_encoding_runs": 2,
+  "F015_started": true,
+  "F019_started": true,
+  "F024_started": true,
+  "F024_accepted": false,
+  "F032_started": false,
+  "F040_started": false,
+  "failed_request_details": [
+    {
+      "call_id": "S24_F024_call_010",
+      "status": "ACTUAL_IMAGE_TOOL_CALL_FAILED_NO_OUTPUT",
+      "observed_at_utc": "2026-10-18T18:40:12.969555+00:00",
+      "tool": "image_gen.imagegen",
+      "elapsed_seconds": 4.3,
+      "image_url_returned": false,
+      "new_raw_path": null,
+      "exception_name_and_message_fields": "not populated;original thrown payload not retained,so underlying transport cause unconfirmed",
+      "actual_environment": "/workspace/animation-competition-s24;actual shell read/write succeeded2026-10-18 18:38:47UTC",
+      "latest_completed": "F015/F019 native outputs,color gates and actual reviews complete;F024call008posegood_sleevecropped,call009sleevefixed_pose_regressed,call010localrepairfailed",
+      "next_action": "preserve originals and prepared local sleeve prompt;no automatic resend or regeneration;resume exact024repair only when image endpoint restored;proceed S08first23 shell/browser task"
+    }
+  ]
 }

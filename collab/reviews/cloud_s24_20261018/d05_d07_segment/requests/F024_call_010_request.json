@@ -1,0 +1,26 @@
+{
+  "call_id": "S24_F024_call_010",
+  "pose": "d07_F024",
+  "status": "actual_tool_call_failed_no_new_image;not_a_steered_or_queue_recovery",
+  "tool": "image_gen.imagegen",
+  "args": {
+    "prompt": "EDIT ONLY THE RIGHT PUFF SLEEVE EDGE OF THIS EXACT IMAGE. Treat the supplied F024 image as a literal in-place local edit target, not a reference for a redesigned girl. Return the SAME1024x1536 transparent image with the same proud head pose, and with just the clipped yellow fabric at the right edge repaired.\n\nONLY CHANGE native x880–1023,y1100–1400, the outer SCREEN-RIGHT yellow puff sleeve and adjacent transparent margin. Redraw a small strip of that puffed fabric naturally inward so the rounded sleeve's outermost contour is aroundx1005, leaving a narrow clean transparent margin to the1024canvas edge. Keep cuff/upper-arm connection, shoulder and anatomy unchanged, no flat vertical cut. Preserve local cloth folds/dots. Do not shrink or recenter the full character.\n\nEVERYTHING OUTSIDE THAT SLEEVE AREA MUST REMAIN THE SAME DRAWN POSE: keep the lifted CHIN, slightly RAISED EYEBROWS, awake right-up gaze, CLOSED SMALL PROUD SMILE, head angle, jaw/neck, both ears/flowers/short pigtails, cowlick, white collar, shoulders, chest, other sleeve and original framing exactly as they appear in this target. Do NOT lower the chin/brows or revert to an earlier neutral pose. Do not move any facial feature, head or body. No new turn, zoom, mirror, warp, background, text, hand, prop or lighting.\n\nPreserve native1024x1536 RGBA transparency and image scale. Keep full cowlick/tails inside. Palette and line/shading detail remain as in the target;the authorized semantic material-color gate will use the fixed corrected mother afterward, so do not alter other areas to recolor them. This is only a tiny local fabric-edge redraw on the same proud drawing. One complete transparent native image only.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d05_d07_segment/originals/S24_F024_call_008_REJECTED_sleeve_crop_raw.png"
+    ],
+    "transparent_background": true
+  },
+  "inputs": [
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d05_d07_segment/originals/S24_F024_call_008_REJECTED_sleeve_crop_raw.png",
+      "sha256": "4a29d857b82802a60dfa57549130a2bb16dd073e96765e7a29ceb33165737b8e",
+      "role": "original024proud_pose_local_sleeve_target_only"
+    }
+  ],
+  "locked_material_color_master": {
+    "path": "../d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+    "sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22",
+    "usage": "post-native-return semantic gate;not an alternative pose input"
+  },
+  "accepted_predecessor_ancestry": "F019d5f04b6b -> original024call008 -> sleeve-only local repair010;no failed009pose used"
+}

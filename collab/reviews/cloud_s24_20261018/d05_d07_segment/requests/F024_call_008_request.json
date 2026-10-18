@@ -1,0 +1,25 @@
+{
+  "call_id": "S24_F024_call_008",
+  "pose": "d07_F024",
+  "status": "REJECTED_NATIVE_SIDE_FRAMING;REPAIR_TARGET_ONLY_NOT_ADOPTED",
+  "tool": "image_gen.imagegen",
+  "args": {
+    "prompt": "S24 F024 ONLY, the PROUD peak held8frames, following the accepted F019 in reference2. Create one complete native1024x1536 transparent RGBA hand-drawn close-up. Reference1 remains the LOCKED CORRECTED mother for identity and exact material palette;reference2 is the actual immediately previous accepted pose. No older light-brown mother or rejected state.\n\nKEEP the moderate right-facing three-quarter head angle already reached in F019. At most1–2degrees more yaw, no new large turn or profile. The NEW beat is a VERY SMALL PROUD CHIN LIFT about2–3degrees from F019, eyebrows lifting subtly together and a CLOSED SMALL SATISFIED SMILE: her attitude is 'Look, I can do it!' to grandma at SCREEN RIGHT/UP. Not a boastful smirk, laugh, yawn or broad grin. Lips stay completely closed, no teeth/tongue/gap. Keep natural awake brown eyes and steady gaze at grandma; lids may relax a LITTLE with the smile, never sleepy/half-shut, blinking, squinting or startled.\n\nTilt the whole head coherently about the natural neck joint: skull/backhead, jaw/chin underside, ears, nose, bangs, cowlick, both red flower ROOTS and upper neck planes remain one believable volume. Chin lift must not become a long stretched neck or a translated floating head. Keep under-jaw volume and normal child's neck joining the rounded collar with no gap/double contour. Near ear/flower remains SCREEN LEFT, far on screen right recedes. No face-patch movement, mirror, warp or card rotation.\n\nChest/shoulders and neck base follow only a tiny additional amount toward grandma, all together, with the same anchored torso and sleeve size. No shrug or independent shoulder twitch. Body near/far arms do not swap. Upper arms exit bottom;all elbows, wrists, hands and prop grips stay outside the close frame. Preserve dress dots/collar form, no visible new gesture.\n\nHair: short twin pigtails, roots follow the small head tilt;loose ends keep only a small leftover screen-left lag/soft downward curve, beginning to settle. Full settling comes laterF032. No new big sweep, long tail, horizontal fan or huge cowlick.\n\nFRAMING MUST HOLD: same1024x1536 and fixed whole-layer0.70+(590,20), no zoom or global recentering. Keep entire cowlick clearly inside with at least70native pixels above its tip even during the chin lift;do not move the whole head upward to fake it. Keep both short pigtails inside side margins. Keep full puffed sleeves inside side edges with a few clean pixels of margin (upper arms may exit bottom). Do not enlarge skull, sleeve or body. Collar base remains near y1080.\n\nMatch CORRECTED reference1: deep brown crown aboutRGB56,42,34,near-tail55,42,33/far54,40,32;warm peach skin254,207,170;soft golden dress254,209,58 with warm-white collar/dots. Preserve gradients/blush/ink/highlights rather than flat swatches. No bleached skin, brightening brown hair, neon yellow, scene lighting/glow/haze, background, text/guides/grid, props or extra people. Return one complete transparent native illustration only.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d05_d07_segment/candidates/F019_rgba.png"
+    ],
+    "transparent_background": true
+  },
+  "inputs": [
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22"
+    },
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d05_d07_segment/candidates/F019_rgba.png",
+      "sha256": "d5f04b6b949a6b96a0c39ec8fe8850f7b2b30f00af835bbe38ddf53c66b4c1a3"
+    }
+  ],
+  "previous_actual_review": "qa/F019_author_review.json"
+}

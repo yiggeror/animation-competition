@@ -1,0 +1,25 @@
+{
+  "call_id": "S24_F019_call_007",
+  "pose": "d06_F019",
+  "status": "AUTHOR_ACCEPTED_CANDIDATE_ASTRA_REVIEW_PENDING",
+  "tool": "image_gen.imagegen",
+  "args": {
+    "prompt": "S24 F019 ONLY, next5-frame drawing from the accepted F015 in reference2. Output one full native1024x1536 transparent RGBA illustration. Reference1 is always the LOCKED CORRECTED F000 palette/identity mother;reference2 is the immediately preceding accepted native state and controls actual pose/framing. Do not use older light-brown mother or rejected drawings.\n\nF019 STORY: the HEAD ARRIVES first at grandma, whom she already looks at SCREEN RIGHT/UP. Advance the whole head only a SMALL further amount, about6–8degrees from actual F015, to a clear but moderate right-facing three-quarter. Stop comfortably before profile;do not add a large rotation based on obsolete construction numbers. Near ear/flower stays SCREEN LEFT, far on screen right recedes naturally. Rounded skull/backhead, jaw/chin, ears, bangs, cowlick, hair roots and upper neck all turn coherently. Keep child's head volume/size, no face-patch slide, mirror, card rotation or squash.\n\nThe CHEST AND BOTH SHOULDERS NOW FOLLOW JUST A LITTLE (roughly2–4degrees toward grandma), together with collar and neck base. Upper torso is still slightly left-oriented relative to head. Show natural neck torsion reducing a little as chest follows;under-jaw volume and collar connection remain continuous. No isolated shoulder twitch or wobble, no long tube neck. Keep garment/sleeves/body proportions and arm depth. Upper arms go out bottom;hands/elbows/wrists/prop grips remain out of the close frame.\n\nLOOSE HAIR LAG is the key: both flower roots follow the arriving skull, while the SHORT loose pigtail ends lag subtly toward SCREEN LEFT/back about15–25native pixels relative to their resting curves. Keep their lengths and mostly downward hang, compact soft curves;no long horizontal/fanned wind sweep, no stretched tail or floating root. Near screen-left tail has readable small inertia, far tail follows its depth.\n\nEyes stay awake and naturally open with steady brown-irised screen-right/up gaze at grandma; no new glance, blink or sleepy droop. Mouth stays CLOSED with the small friendly smile begun in F015, not a grin. DO NOT LIFT THE CHIN OR RAISE THE BROWS YET: that proud beat belongs to F024 next. Keep head pitch and cowlick height essentially like F015;only yaw/chest follow changes here.\n\nFRAMING: same1024x1536 canvas, head/body scale and anchor, whole-layer0.70+(590,20). Preserve complete cowlick/top margin;do not raise its top above the input near sourcey80, and keep both short tails inside the image. Collar base aroundy1080, arms/waist exit bottom, no zoom/recenter.\n\nMatch corrected reference1 material colors: deep brown hair crownRGB56,42,34, near-tail55,42,33 and far54,40,32;warm peach skin254,207,170;soft golden dress254,209,58 with warm-white dots and collar. Preserve local shading/blush/hair highlights/ink, not flat swatches. No bleaching, brightening hair, neon yellow, background, scene light/glow/haze, text/guides/grid, props or extra people. One complete transparent native illustration only.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d05_d07_segment/candidates/F015_rgba.png"
+    ],
+    "transparent_background": true
+  },
+  "inputs": [
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22"
+    },
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d05_d07_segment/candidates/F015_rgba.png",
+      "sha256": "3eaef2e1fa5e99c308dd46de105bb38d8e97e331f3b801763da152e2aa6ca1ce"
+    }
+  ],
+  "previous_actual_review": "qa/F015_author_review.json"
+}

@@ -1,0 +1,26 @@
+{
+  "call_id": "S24_F015_call_006",
+  "pose": "d05_F015",
+  "status": "AUTHOR_ACCEPTED_CANDIDATE_ASTRA_REVIEW_PENDING",
+  "tool": "image_gen.imagegen",
+  "args": {
+    "prompt": "S24 F015 ONLY, a small continuation from the ACCEPTED F012 in reference2. One complete native1024x1536 transparent RGBA hand-drawn character close-up. Reference1 is the LOCKED CORRECTED mother for identity and material palette;reference2 is the immediately previous approved drawing for actual head angle, framing and anatomy. Do not use an older light-brown mother or a rejected009.\n\nIMPORTANT: F012 ALREADY POINTS A LITTLE SCREEN RIGHT. Continue only a SMALL further rightward head turn, a few degrees, much smaller than the preceding009-to012 change. Do not interpret an old nominal6degree label as permission to add a large new rotation. Keep a mild right-facing view, near ear/flower on SCREEN LEFT, far ear on SCREEN RIGHT naturally receding. Redraw the whole head coherently: rounded cranium/backhead, jaw/chin, both ear relationships, bangs, cowlick, attached flower/pigtail roots and upper neck planes. No mirroring, face patch or 2D card rotation.\n\nSTORY F015 held4frames: this is where her eyes FINALLY CATCH GRANDMA at SCREEN RIGHT AND SLIGHTLY UP, offscreen. Brown irises coherently look right/up at that steady target, with natural awake lids, no exaggerated whites or cross-eye. Make the gaze feel directed and newly connected. Lips remain CLOSED, mouth corners begin only a SMALL gentle lift. Not yet the proud expression: no raised chin or raised brows, no broad smile, smirk, sleepy eyes, blink, yawn, teeth or open mouth.\n\nMaintain child head size and normal under-jaw/neck volume continuous to the collar. The neck/white collar may carry only a very slight shoulder follow; torso still gently faces screen LEFT, close to previous drawing. Body near/far arms remain unchanged when the head near ear is on screen left. Same sleeve/clothing proportions;upper arms exit below the frame;hands/elbows/wrists and prop grips stay out of sight.\n\nShort twin pigtails with red flower ties: roots move with skull, loose tips have only a tiny backward/left lag and remain hanging DOWN with compact soft curves. No horizontal fan, oversized cowlick, new wind sweep or long tail. Preserve native image framing/scale: full cowlick near y90–110, solid crown around y210, chin around y900–920, collar base around y1080, same torso anchor. Later fixed whole-layer placement0.70+(590,20) must remain valid. Keep full crown and tails inside image, no zoom or recentering.\n\nPalette comes ONLY from corrected reference1: deep brown hair/crown aroundRGB56,42,34, near-tail55,42,33 and far54,40,32;warm peach skin around254,207,170;soft golden yellow dress254,209,58 with warm white dots/collar. Preserve local gradients, blush, shadows, linework and highlights rather than flat swatches. No bleaching, increasing hair brightness, oversaturating dress, scene lighting, glow or background. Return one complete transparent RGBA illustration, no text/guides/grid/props/extra people.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d02_d04_segment/candidates/F012_rgba.png"
+    ],
+    "transparent_background": true
+  },
+  "inputs": [
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22",
+      "role": "locked_corrected_material_mother"
+    },
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d02_d04_segment/candidates/F012_rgba.png",
+      "sha256": "dcbe1e529b03b963f56769e4f0c381cbca5bd2735cdb75d01bbce5f0cd0296c6",
+      "role": "immediately_preceding_Astra_locked_state"
+    }
+  ]
+}

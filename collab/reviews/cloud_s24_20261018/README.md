@@ -1,6 +1,6 @@
-# S24 · 新修母已双审锁定，006/009/012小批待审
+# S24 · 前四态已锁，015/019阶段保全，024图像局修受阻
 
-独占分支`cloud/s24-reference-20261018`，基线`001c9c1828d9054675437111cf52df37c48721f2`。**Astra已双审锁新修母`0485c6fe…eff22`（`6cecf474`）并沿B整层`.70+(590,20)`授权006/009/012逐张推进；三张真实原生候选已逐张实看和区域色门，现交小批审。** 当前先看[006/009/012小批包](d02_d04_segment/README.md)；[同raw首母修色包](d01_hair_color_fix/README.md)和旧[首次返回包](d01_first_candidate/README.md)保全历史阶段标签。9态/60帧/24fps/2.5秒不变，未开F015，不修改共享模块、EDL、音频、留言或ready。
+独占分支`cloud/s24-reference-20261018`，基线`001c9c1828d9054675437111cf52df37c48721f2`。**Astra已双审锁新修母及006/009/012，沿B整层`.70+(590,20)`授权015/019/024；015/019原生候选已逐张实看及色门，024局修实际图像调用失败，无合格024。** 当前先看[015/019与024阻碍阶段包](d05_d07_segment/README.md)；[前批006/009/012](d02_d04_segment/README.md)、[同raw首母修色](d01_hair_color_fix/README.md)与[首次返回](d01_first_candidate/README.md)保留历史。9态/60帧/24fps/2.5秒不变，未开032/040，不修改共享模块、EDL、音频、留言或ready。
 
 x24原始身份图为`collab/refs/anim_24_xiaoman_smug.png`，处理资产`assets/chars/x24_smug.png`也已实看。两者只取身份和末表情倾向，旧空手合拢与整图翻转不作新动作依据。
 
@@ -30,6 +30,6 @@ x24原始身份图为`collab/refs/anim_24_xiaoman_smug.png`，处理资产`asset
 
 **颜色更正已纳入：**最新Opus退回S13累积色漂，动作/回头节奏认可，整镜待修色；本参考里的F087/F094只借整头结构。S24颜色固定身份与x13 F000，不能顺链继承头发变浅、皮肤变白、裙色变艳。F000色片只是同语义内区统计，不能把全部明暗强压成平涂；[源ROI和统计方法](provenance/F000_semantic_color_reference.json)明确。未并发改S13颜色。
 
-[来源与固定git blob](provenance/source_manifest.json)、[原参考授权/颜色更正](provenance/authorization_and_scope.md)、[参考冻结及首张授权](provenance/astra_reference_freeze_and_first_F000_gate.md)、[构造核验](qa/construction_validation.json)齐全。参考图和`qa/delivery_validation.json`保留035c998阶段标签/零调用快照；[提示词草案](prompts_NOT_EXECUTED.json)仍是未直接执行的历史草案，实际完整prompt在各新包`requests/`。[当前账本](provenance/generation_ledger.json)共5次请求/5原件：锁母1、三新态候选、009过转拒收1。三态逐次按新修母过区域色门，未用旧浅母；Astra锁母1、新三态待审，场景/全片渲染0；另有15帧中性画稿层曝光诊断，不冒称Canvas接景。`build_reference.py`保留已有调用账本。
+[来源与固定git blob](provenance/source_manifest.json)、[原参考授权/颜色更正](provenance/authorization_and_scope.md)、[参考冻结及首张授权](provenance/astra_reference_freeze_and_first_F000_gate.md)、[构造核验](qa/construction_validation.json)齐全。参考图和旧QA保留各阶段快照；历史[提示草案](prompts_NOT_EXECUTED.json)未直接执行，真实完整prompt在各包`requests/`。[当前账本](provenance/generation_ledger.json)累计10次尝试/9原件/1图像工具失败，候选态6（4已获Astra锁定、015/019待审），024两稿未采用、旧009过转稿也保留。场景/全片渲染0；中性人物层曝光不冒称Canvas接景。`build_reference.py`保留已有调用账本。
 
-下一门：Astra审`d02_d04_segment/candidates/`三张实际009转幅、012过正面、颏颈/换耳、区域色与顶部余量，再放015及后段。新修母及B注册已锁；未派015、不登记完整镜头，参考构造角度不当成成图实测。
+下一步：图像端恢复后只续现有024首稿的袖缘局修，015/019不重生成；024仍缺，未派032/040、不登记完整镜头。实际shell可读写不等于图像端恢复，已用一次真实失败调用记录门禁；参考构造角度不当成成图实测。
