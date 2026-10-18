@@ -1,0 +1,29 @@
+{
+  "status": "AUTHOR_STATIC_COMPLETE_VOLUME_PASS_PENDING_ASTRA_LOCK",
+  "candidate_sha256": "856d10c9516c33a8e992a121033e76a5ac55bda269b16949a90aa431206f0364",
+  "raw_sha256": "38b9ea55ebead05cae142d2ee911c88528f600c11dfbb5d65c02c8cada1c808a",
+  "actual_viewed": [
+    "frozen_astra_input/inputs/01_F079_corrected_complete_volume_RGBA.png",
+    "frozen_astra_input/inputs/02_F079_complete_waist_legs_WHITE_MASK.png",
+    "frozen_astra_input/inputs/03_F057_actual_identity_navy_volume_reference_RGBA.png",
+    "originals/F079_corrected_call01_RAW.png (native tool actual display)",
+    "qa/F079_corrected_layered_crop_gray_TRIAL.png",
+    "qa/F079_corrected_layered_crop_dark_TRIAL.png",
+    "qa/F079_corrected_actual_connections_gray_TRIAL.png"
+  ],
+  "findings": [
+    "One actual native whole waist/pelvis/crotch/two-leg drawing. Near RIGHT leg is foreground, knee lower and softly bent, shin approaches the fixed forward landed ankle nearly downward. Prior raised sharp knee/folded-back shin is visibly corrected.",
+    "Far LEFT support leg remains behind near leg, slopes backward continuously from shared pelvis to exact stationary original rear shoe. No technical guide seam, narrow bridge or source extraction wedge retained as finished trousers.",
+    "Waist navy stays continuous beneath original blouse. Both native cuffs overlap actual source ankle material naturally, no detached large clear band, duplicate shoe or generated shoe edging adopted. Two true original soles remain1022.",
+    "Original head/blouse, both entire arms/hands/jade and two whole actual shoe/ankle layers are unchanged frozen sources. Only the complete actual returned trousers are adopted, with428 nontrouser returned pixels excluded by documented semantic mask.",
+    "Original native navy average vs actual locked062 is(+0.269299,+1.533351,+3.275498), within4each; noRGB correction. True fold/ink planes and native material AA preserved."
+  ],
+  "limits": [
+    "Static single corrected079 author gate only; Astra must make final lock and judge sequence timing before next state.",
+    "Hidden H/K/A are soft image-space directions, not measured bones or proof of exact bone lengths.",
+    "Only one corrected request/original; no additional generation or sequence/exposure claim."
+  ],
+  "corrected_requests": 1,
+  "corrected_originals": 1,
+  "source_input_count": 3
+}

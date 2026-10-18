@@ -1,0 +1,100 @@
+{
+  "status": "LIMITED_SINGLE_CORRECTED_F079_STATIC_PASS_PENDING_ASTRA",
+  "reviewer": "independent_cloud_6.1sol",
+  "reviewed_at_UTC": "2026-10-18T22:30:08.678124+00:00",
+  "source_authority_commit": "4e25e5f07a8aa86926634b21b9f5884f547cbb10",
+  "candidate": "candidate/F079_corrected_complete_volume_PENDING_ASTRA.png",
+  "candidate_sha256": "856d10c9516c33a8e992a121033e76a5ac55bda269b16949a90aa431206f0364",
+  "raw": "originals/F079_corrected_call01_RAW.png",
+  "raw_sha256": "38b9ea55ebead05cae142d2ee911c88528f600c11dfbb5d65c02c8cada1c808a",
+  "actual_viewed": [
+    "originals/F079_corrected_call01_RAW.png",
+    "qa/F079_corrected_layered_crop_gray_TRIAL.png",
+    "qa/F079_corrected_layered_crop_dark_TRIAL.png",
+    "qa/F079_corrected_actual_connections_gray_TRIAL.png",
+    "qa/F079_corrected_actual_connections_dark_TRIAL.png",
+    "qa/F079_corrected_input_and_actual_comparison_gray.png"
+  ],
+  "actual_visual_findings": [
+    "本次真实原图与源层候选均呈完整腰臀双裤。近右腿位于前层，膝仅浅屈，小腿接近向下接前落原踝，先前073式抬高锐折膝与回折小腿不再成为本单张明确阻断。此为可见裤体判断，未将布褶当骨点量测。",
+    "远左腿在后，从共同腰臀连续向后下方接原支撑踝鞋；两裤分叉与前后归属清楚，未见窄条桥或提取裂口冒作完整裤体。",
+    "灰底与暗底放大实际腰口均由完整navy裤料接在原蓝衫下，未见原先横向透空/蓝补片；两原鞋上裸踝与新裤口连续，无大段背景断口、重复鞋片或明显悬空旧边。",
+    "近膝保留自然轻屈而非强制直腿；单张可读前近后远、双脚落地姿态。动态承重转换与步速仍须实际曝光门，不在本次范围。",
+    "深底未见需单独退回的裤外低alpha旧轮廓光晕；源衣/臂AA与裤料仍为原生线色质感，没有为统一颜色擅改母头衣或全图色彩。"
+  ],
+  "independent_material_checks": {
+    "raw_size": [
+      1024,
+      1536
+    ],
+    "whole_crop_uniform_scale": 0.5078125,
+    "crop_xyxy": [
+      900,
+      280,
+      1420,
+      1060
+    ],
+    "source_layers": [
+      {
+        "name": "far_shoe_ankle_SUPPORT_FIXED",
+        "source_sha256": "1103f923c4e2613dac88e8d1a8534c101103013c4db468af1adcd83426a74e77",
+        "production_sha256": "1103f923c4e2613dac88e8d1a8534c101103013c4db468af1adcd83426a74e77",
+        "byte_identical": true,
+        "RGBA_changed_pixels": 0
+      },
+      {
+        "name": "far_complete_arm_jade_hand",
+        "source_sha256": "78db082eed7f787c633d2369a6571fa70762c22b6c63d3e3387290b47f94f065",
+        "production_sha256": "78db082eed7f787c633d2369a6571fa70762c22b6c63d3e3387290b47f94f065",
+        "byte_identical": true,
+        "RGBA_changed_pixels": 0
+      },
+      {
+        "name": "body_head_blouse",
+        "source_sha256": "ddb113ad133a148f61efa1e729803640a68068ac3cfa43708915a59f76bc665a",
+        "production_sha256": "ddb113ad133a148f61efa1e729803640a68068ac3cfa43708915a59f76bc665a",
+        "byte_identical": true,
+        "RGBA_changed_pixels": 0
+      },
+      {
+        "name": "near_complete_arm",
+        "source_sha256": "cca531e2fc91a6b8c7468411b0f062b58a2a225714f49d2648bfceba1f3702da",
+        "production_sha256": "cca531e2fc91a6b8c7468411b0f062b58a2a225714f49d2648bfceba1f3702da",
+        "byte_identical": true,
+        "RGBA_changed_pixels": 0
+      },
+      {
+        "name": "near_shoe_ankle_LANDED",
+        "source_sha256": "57518102bfef2d81fd98017bd445e8ae7918bdb1dd60093657f82fc576a6cc7c",
+        "production_sha256": "57518102bfef2d81fd98017bd445e8ae7918bdb1dd60093657f82fc576a6cc7c",
+        "byte_identical": true,
+        "RGBA_changed_pixels": 0
+      }
+    ],
+    "replayed_composite_RGBA_changed_pixels": 0,
+    "retained_native_trousers_RGBA_changed_vs_same_uniform_native": 0,
+    "retained_native_trousers_material_pixels": 82352,
+    "actual_source_sole_alpha128_bottoms_native": {
+      "far_shoe_ankle_SUPPORT_FIXED": 1022,
+      "near_shoe_ankle_LANDED": 1022
+    },
+    "frozen_far_support_SHA256": "1103f923c4e2613dac88e8d1a8534c101103013c4db468af1adcd83426a74e77",
+    "navy_RGB_correction_applied": [
+      0,
+      0,
+      0
+    ],
+    "author_reported_navy_mean_delta_vs_locked062": [
+      0.2692990038285785,
+      1.5333506829744508,
+      3.275497512832885
+    ]
+  },
+  "clear_static_blockers": [],
+  "limits": [
+    "仅修正079单张真实裤体/源层接缝有限独审PASS，供Astra锁态裁定；不代Astra接受。",
+    "未重新渲染或解码曝光；不声称079与前态动态门或Canvas108f通过。",
+    "隐藏髋/膝引导仅投影代理，未称解剖实测或以软代理证明骨长。",
+    "本审不生成、不修改源图层、不提交或推送；保留旧079 HOLD证据。"
+  ]
+}

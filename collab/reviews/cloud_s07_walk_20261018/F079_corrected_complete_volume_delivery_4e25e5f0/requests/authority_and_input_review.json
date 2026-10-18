@@ -1,0 +1,22 @@
+{
+  "source_commit": "4e25e5f07a8aa86926634b21b9f5884f547cbb10",
+  "scope": "One corrected complete-volume F079 native request; actual full-leg review then immediate single-state delivery. S09 locked052a107f71d must not be repaired or generated.",
+  "user_instruction": "严格按 request_RELATIVE_NOT_CALLED.json 的3图及 prompt_CORRECTED_COMPLETE_VOLUME.txt 做唯一修正调用。不要另外附旧073或失败079图。",
+  "exact_request_adaptation": "Only relative reference paths resolved to byte-identical local frozen snapshot; metadata status omitted from native tool arguments. Prompt text and3PNG bytes unchanged.",
+  "new_requests_authorized": 1,
+  "automatic_retry_authorized": false,
+  "inputs": [
+    {
+      "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F079_corrected_complete_volume_delivery_4e25e5f0/frozen_astra_input/inputs/01_F079_corrected_complete_volume_RGBA.png",
+      "sha256": "d2f8ce03603a7d4bf9b35d2eb74e0f123afe772c6d64083429c653cec1caee2d"
+    },
+    {
+      "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F079_corrected_complete_volume_delivery_4e25e5f0/frozen_astra_input/inputs/02_F079_complete_waist_legs_WHITE_MASK.png",
+      "sha256": "a2a5b5c03a81a49047952a881fbe65d3534d3d7e1a746cc06805a75ebf384f7f"
+    },
+    {
+      "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F079_corrected_complete_volume_delivery_4e25e5f0/frozen_astra_input/inputs/03_F057_actual_identity_navy_volume_reference_RGBA.png",
+      "sha256": "6b85f39a768acd63914ff7483e76df448f298c9bbc4d6e200d1b924e8c64189e"
+    }
+  ]
+}

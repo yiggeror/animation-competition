@@ -1,0 +1,70 @@
+{
+  "status": "CORRECTED_COMPLETE_VOLUME_NATIVE_PENDING_ACTUAL_REVIEW",
+  "candidate_sha256": "856d10c9516c33a8e992a121033e76a5ac55bda269b16949a90aa431206f0364",
+  "raw_sha256": "38b9ea55ebead05cae142d2ee911c88528f600c11dfbb5d65c02c8cada1c808a",
+  "raw_size": [
+    1024,
+    1536
+  ],
+  "whole_crop_uniform_scale": 0.5078125,
+  "whole_crop_xyxy": [
+    900,
+    280,
+    1420,
+    1060
+  ],
+  "no_nonuniform_limb_scale_or_code_pose": true,
+  "native_pants_material_pixels": 82352,
+  "returned_noncloth_pixels_excluded": 428,
+  "actual_navy_component_sizes": [
+    79759
+  ],
+  "palette_anchor_fixed062_SHA": "393622a77349083751122520b690bd35017f8535a25560d8cca775446d2eeb2f",
+  "anchor062_navy_mean": [
+    41.36472629752327,
+    44.95460202275157,
+    60.26250197191986
+  ],
+  "native079_navy_mean": [
+    41.63402530135185,
+    46.48795270572602,
+    63.537999484752746
+  ],
+  "native079_mean_delta_vs062": [
+    0.2692990038285785,
+    1.5333506829744508,
+    3.275497512832885
+  ],
+  "navy_RGB_correction_applied": [
+    0,
+    0,
+    0
+  ],
+  "layer_order_back_to_front": [
+    "far_shoe_ankle_SUPPORT_FIXED",
+    "native_trousers",
+    "far_complete_arm_jade_hand",
+    "body_head_blouse",
+    "near_complete_arm",
+    "near_shoe_ankle_LANDED"
+  ],
+  "source_layer_SHA_match_frozen_inputs": {
+    "far_shoe_ankle_SUPPORT_FIXED": true,
+    "far_complete_arm_jade_hand": true,
+    "body_head_blouse": true,
+    "near_complete_arm": true,
+    "near_shoe_ankle_LANDED": true
+  },
+  "fixed_far_layer_SHA": "1103f923c4e2613dac88e8d1a8534c101103013c4db468af1adcd83426a74e77",
+  "real_sole_bottoms_native": {
+    "far_shoe_ankle_SUPPORT_FIXED": 1022,
+    "near_shoe_ankle_LANDED": 1022
+  },
+  "correction_requests": 1,
+  "correction_originals": 1,
+  "total_F079_requests": 2,
+  "total_F079_originals": 2,
+  "new_calls_for_adoption": 0,
+  "other_states_unopened": true,
+  "limits": "Single actual original only. Waist/hip support, actual near-leg extension and both true source ankle/cuffs must be visually reviewed; not accepted, no exposure."
+}
