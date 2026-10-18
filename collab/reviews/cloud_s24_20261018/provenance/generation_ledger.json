@@ -1,5 +1,5 @@
 {
-  "stage": "F024_zero_image_call_cloth_repair_candidate_Astra_review_pending_color_gate_failed",
+  "stage": "F024_final_corridor_cleanup_and_9_region_color_gates_author_pass_pending_Astra_final_lock",
   "image_generation_requests": 10,
   "successful_raw_images": 9,
   "failed_requests": 1,
@@ -95,10 +95,10 @@
   ],
   "local_repaint": false,
   "local_color_edit": true,
-  "alpha_cleanup": false,
+  "alpha_cleanup": true,
   "warp": true,
   "F006_started": true,
-  "note": "Current zero-image-call024repair candidate delivered.015019 preserved;Astra coordinator accepted,independent short signature pending.024 original colour gate measured and failed;protected head/neck/ears/tails/collar pixels preserved. No032040, shared code or messages.",
+  "note": "4a203 subject/13f transition Astra dual review approved. Current same-raw final cleanup removes21exposed old-line dark pixels and12stale-void pixels.9local material/light/shadow gates pass maxmean3.87796. Final44137d74 pendingAstra final lock;032040notstarted;0newimagecalls.",
   "color_derivatives": [
     {
       "source_sha256": "35bb55ead65abf20e3862b4d66dde2f0ed25023f31fb634fa2f03bcda0c72281",
@@ -107,17 +107,29 @@
       "status": "Astra_dual_review_locked_exact_SHA0485c6fe",
       "scope": "three_continuous_brown_hair_base_components_only;alpha_line_highlight_outside0change",
       "generation_calls": 0
+    },
+    {
+      "source_commit": "4a203f2fa3e56603b30c4fa2faf26ca134047074",
+      "candidate": "d07_final_cleanup_color/candidates/F024_final_rgba.png",
+      "candidate_sha256": "44137d740ac5d07ca0258019c28cdf8f9b648d77ba79eda07f366f24503753db",
+      "locked_mother_sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22",
+      "generation_calls": 0,
+      "local_cleanup_and_color": true,
+      "color_regions": 9,
+      "colour_alpha_changes": 0,
+      "cleanup_alpha_changes": 456,
+      "status": "AUTHOR_GATES_PASS_ASTRA_FINAL_LOCK_PENDING"
     }
   ],
   "F009_started": true,
   "F012_started": true,
   "Astra_locked_drawings": 4,
   "artistic_rejected_raw_images": 3,
-  "layer_preview_encoding_runs": 6,
+  "layer_preview_encoding_runs": 8,
   "F015_started": true,
   "F019_started": true,
   "F024_started": true,
-  "F024_accepted": false,
+  "F024_accepted": true,
   "F032_started": false,
   "F040_started": false,
   "failed_request_details": [
@@ -151,5 +163,9 @@
       "Astra_locked": false
     }
   ],
-  "latest_transition": "User authorized zero-generation donor-sleeve transplant;supersedes historical failed010 next-action without deleting failure record."
+  "latest_transition": "User authorized zero-generation donor-sleeve transplant;supersedes historical failed010 next-action without deleting failure record.",
+  "F024_author_accepted": true,
+  "F024_Astra_final_locked": false,
+  "F024_Astra_structure_approved_source": "4a203f2fa3e56603b30c4fa2faf26ca134047074",
+  "alpha_cleanup_scope": "only left under-cuff corridor456alpha pixels;true frill0;colour stepalpha0"
 }

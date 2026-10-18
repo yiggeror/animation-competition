@@ -1,0 +1,36 @@
+{
+  "source_commit": "4a203f2fa3e56603b30c4fa2faf26ca134047074",
+  "sources": [
+    {
+      "path": "d07_F024_zero_call_repair/candidates/F024_original_pixel_sleeve_repair_rgba.png",
+      "sha256": "8c695f4020cc00e61b19d26a6818e0aa3c22abf752bb897a88cb3b561e69dd62"
+    },
+    {
+      "path": "d05_d07_segment/originals/S24_F024_call_008_REJECTED_sleeve_crop_raw.png",
+      "sha256": "4a29d857b82802a60dfa57549130a2bb16dd073e96765e7a29ceb33165737b8e"
+    },
+    {
+      "path": "d05_d07_segment/originals/S24_F024_call_009_REJECTED_pose_regression_raw.png",
+      "sha256": "97e1a2316ca52369146cdc11dbd00c68e94a358c00e721b127b966b7377ee775"
+    },
+    {
+      "path": "d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22"
+    },
+    {
+      "path": "d05_d07_segment/candidates/F019_rgba.png",
+      "sha256": "d5f04b6b949a6b96a0c39ec8fe8850f7b2b30f00af835bbe38ddf53c66b4c1a3"
+    }
+  ],
+  "native_generation_calls_this_task": 0,
+  "new_prompts": 0,
+  "original_prompts_and_raws": "../d05_d07_segment/requests,F024call008/009/failed010 historical response unchanged",
+  "cleanup_output_sha256": "a17c100d095bedd78fd2b6d51bc949db535868c0ccd8f4648f14448b7d3f031e",
+  "final_sha256": "44137d740ac5d07ca0258019c28cdf8f9b648d77ba79eda07f366f24503753db",
+  "pipeline": [
+    "cleanup_corridor.py",
+    "color_regions.py",
+    "build_exposure.py",
+    "verify_protection.py"
+  ]
+}

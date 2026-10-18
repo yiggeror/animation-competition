@@ -1,0 +1,85 @@
+{
+  "source_commit": "4a203f2fa3e56603b30c4fa2faf26ca134047074",
+  "source_sha256": "8c695f4020cc00e61b19d26a6818e0aa3c22abf752bb897a88cb3b561e69dd62",
+  "output_sha256": "a17c100d095bedd78fd2b6d51bc949db535868c0ccd8f4648f14448b7d3f031e",
+  "donor_raw008_sha256": "4a29d857b82802a60dfa57549130a2bb16dd073e96765e7a29ceb33165737b8e",
+  "donor_inverse_affine": [
+    1,
+    -0.25,
+    373,
+    0,
+    1,
+    24
+  ],
+  "corridors": [
+    {
+      "corridor": "left",
+      "polygon": [
+        [
+          782,
+          1441
+        ],
+        [
+          812,
+          1439
+        ],
+        [
+          823,
+          1458
+        ],
+        [
+          817,
+          1474
+        ],
+        [
+          794,
+          1474
+        ],
+        [
+          781,
+          1458
+        ]
+      ],
+      "changed_pixels": 637,
+      "alpha_changes": 456
+    },
+    {
+      "corridor": "right",
+      "polygon": [
+        [
+          928,
+          1420
+        ],
+        [
+          942,
+          1421
+        ],
+        [
+          945,
+          1435
+        ],
+        [
+          944,
+          1454
+        ],
+        [
+          931,
+          1454
+        ],
+        [
+          926,
+          1438
+        ]
+      ],
+      "changed_pixels": 136,
+      "alpha_changes": 0
+    }
+  ],
+  "changed_pixels": 773,
+  "alpha_changed_pixels": 456,
+  "outside_corridors_changes": 0,
+  "real_frill_color_stroke_AA_changes": 0,
+  "head_neck_ears_hair_chest_changes": 0,
+  "image_calls": 0,
+  "status": "ACTUAL_VISUAL_REVIEW_REQUIRED"
+}

@@ -1,6 +1,6 @@
-# S24 · 前四态已锁，024零生成接回候选待审
+# S24 · 024清边与分区色门已过，待Astra终锁
 
-独占分支`cloud/s24-reference-20261018`，基线`001c9c1828d9054675437111cf52df37c48721f2`。当前优先看[024零生成衣片接回包](d07_F024_zero_call_repair/README.md)：call008表演/头颈耳辫/领胸保留，call009仅作完整袖片供体，灰深底与019×5→024×8已实编解码。环境可执行，无新图像调用；结构候选待Astra审，原024色门未通过，未开032/040。015/019不重生成；[前批阶段包](d05_d07_segment/README.md)保留当时工具失败历史，当前不再依赖失败调用恢复。未修改共享代码、留言、EDL、音频或ready。
+独占分支`cloud/s24-reference-20261018`，当前唯一取图见[024最终清边＋分区色门包](d07_final_cleanup_color/README.md)：以4a203主体/13f转态双审源为基，零生成清右旧臂悬线及左空隙残边；冠发/双尾及脸耳颈各自受光/暗面9区对锁母归色，最大均值通道差3.87796。表情、眉眼腮红、发线高光、真荷叶/领片及衣黄白点保护，色修alpha0，收口仅左走廊456个alpha变化。灰深底019×5→024×8实际编码/解码及保护域齐，待Astra终锁，不提前032/040。旧[4a203接回包](d07_F024_zero_call_repair/README.md)保留原色门未过历史；015/019与各原件/prompt不改。未动共享代码、留言、EDL、音频或ready。
 
 x24原始身份图为`collab/refs/anim_24_xiaoman_smug.png`，处理资产`assets/chars/x24_smug.png`也已实看。两者只取身份和末表情倾向，旧空手合拢与整图翻转不作新动作依据。
 
@@ -32,4 +32,4 @@ x24原始身份图为`collab/refs/anim_24_xiaoman_smug.png`，处理资产`asset
 
 [来源与固定git blob](provenance/source_manifest.json)、[原参考授权/颜色更正](provenance/authorization_and_scope.md)、[参考冻结及首张授权](provenance/astra_reference_freeze_and_first_F000_gate.md)、[构造核验](qa/construction_validation.json)齐全。参考图和旧QA保留各阶段快照；历史[提示草案](prompts_NOT_EXECUTED.json)未直接执行，真实完整prompt在各包`requests/`。[当前账本](provenance/generation_ledger.json)累计10次尝试/9原件/1图像工具失败；新增零调用024结构候选，当前候选态7，Astra已锁4态。015/019协调认可、独审短签待；024两份raw原拒收原因仍保留，现只作修复基体/袖供体，最终结构与色门待审。场景/全片渲染0；中性人物层曝光不冒称Canvas接景。`build_reference.py`保留已有调用账本。
 
-下一步：Astra先审024衣片接回、独立皮肤接缝及保护域；原色门另列未过，未改保护头脸RGB。锁024并完成色门前不续032/040；图像端本轮未调用，不宣称已恢复。
+下一步：Astra审本轮最终44137d74及灰深底13f曝光，终锁024前不续032/040；此轮无图像调用，不宣称图像端恢复。

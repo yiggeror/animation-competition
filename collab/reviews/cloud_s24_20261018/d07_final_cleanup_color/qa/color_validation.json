@@ -1,0 +1,557 @@
+{
+  "source_cleanup_sha256": "a17c100d095bedd78fd2b6d51bc949db535868c0ccd8f4648f14448b7d3f031e",
+  "locked_mother_sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22",
+  "final_sha256": "44137d740ac5d07ca0258019c28cdf8f9b648d77ba79eda07f366f24503753db",
+  "skin_sample_definition": {
+    "both_images": "alpha>=248,pigment_R>=235,own_domain_interior>=3px,blush excluded;source feature/collar guards excluded",
+    "current_lit_G_min": 206,
+    "current_shadow_G_max": 196,
+    "master_lit_G_min": 201,
+    "master_shadow_G_max": 191,
+    "assignment": "frozen before correction; lit/shadow is not recomputed from corrected output"
+  },
+  "method": "3 independent hair components + face/ear/neck each lit/shadow; local channel offsets on fixed semantic domains; gradients retained; no whole-image mean mapping",
+  "regions": [
+    {
+      "region": "crown",
+      "before": {
+        "pixels": 46029,
+        "median_RGB": [
+          63.0,
+          47.0,
+          38.0
+        ],
+        "mean_RGB": [
+          65.58155,
+          47.35326,
+          37.6389
+        ]
+      },
+      "master": {
+        "pixels": 79612,
+        "median_RGB": [
+          56.0,
+          42.0,
+          34.0
+        ],
+        "mean_RGB": [
+          56.47106,
+          41.79977,
+          33.74415
+        ]
+      },
+      "subtract_RGB": [
+        9.0,
+        5.0,
+        4.0
+      ],
+      "after": {
+        "pixels": 46029,
+        "median_RGB": [
+          55.0,
+          42.0,
+          34.0
+        ],
+        "mean_RGB": [
+          60.34902,
+          44.43151,
+          35.30544
+        ]
+      },
+      "mean_delta": [
+        3.87796,
+        2.63174,
+        1.56129
+      ],
+      "median_delta": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "line_floor": 48,
+      "highlight_floor": 70
+    },
+    {
+      "region": "near_tail",
+      "before": {
+        "pixels": 10500,
+        "median_RGB": [
+          61.0,
+          45.0,
+          36.0
+        ],
+        "mean_RGB": [
+          60.964,
+          43.74762,
+          34.7681
+        ]
+      },
+      "master": {
+        "pixels": 12562,
+        "median_RGB": [
+          55.0,
+          42.0,
+          33.0
+        ],
+        "mean_RGB": [
+          54.5929,
+          40.37096,
+          32.63334
+        ]
+      },
+      "subtract_RGB": [
+        6.0,
+        3.0,
+        3.0
+      ],
+      "after": {
+        "pixels": 10500,
+        "median_RGB": [
+          55.0,
+          42.0,
+          33.0
+        ],
+        "mean_RGB": [
+          57.51952,
+          42.02095,
+          33.04533
+        ]
+      },
+      "mean_delta": [
+        2.92662,
+        1.64999,
+        0.41199
+      ],
+      "median_delta": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "line_floor": 46,
+      "highlight_floor": 68
+    },
+    {
+      "region": "far_tail",
+      "before": {
+        "pixels": 6000,
+        "median_RGB": [
+          61.0,
+          45.0,
+          36.0
+        ],
+        "mean_RGB": [
+          60.8725,
+          43.61017,
+          34.819
+        ]
+      },
+      "master": {
+        "pixels": 4829,
+        "median_RGB": [
+          54.0,
+          40.0,
+          32.0
+        ],
+        "mean_RGB": [
+          54.76848,
+          40.27211,
+          32.73369
+        ]
+      },
+      "subtract_RGB": [
+        7.0,
+        5.0,
+        4.0
+      ],
+      "after": {
+        "pixels": 6000,
+        "median_RGB": [
+          55.0,
+          40.0,
+          33.0
+        ],
+        "mean_RGB": [
+          56.2145,
+          40.2765,
+          32.15717
+        ]
+      },
+      "mean_delta": [
+        1.44602,
+        0.00439,
+        -0.57652
+      ],
+      "median_delta": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "line_floor": 46,
+      "highlight_floor": 68
+    },
+    {
+      "region": "skin_face_lit",
+      "before": {
+        "pixels": 88862,
+        "median_RGB": [
+          253.0,
+          212.0,
+          178.0
+        ],
+        "mean_RGB": [
+          253.30373,
+          212.3682,
+          178.50571
+        ]
+      },
+      "master": {
+        "pixels": 80054,
+        "median_RGB": [
+          253.0,
+          207.0,
+          172.0
+        ],
+        "mean_RGB": [
+          253.29034,
+          207.58778,
+          172.11336
+        ]
+      },
+      "subtract_RGB": [
+        0.0,
+        5.0,
+        6.0
+      ],
+      "sample_mask": "masks/skin_face_lit_core_sample.png",
+      "lighting_assignment": "frozen from pre-correction RGB; not reclassified after colour change",
+      "after": {
+        "pixels": 88862,
+        "median_RGB": [
+          253.0,
+          207.0,
+          172.0
+        ],
+        "mean_RGB": [
+          253.30373,
+          207.3682,
+          172.50571
+        ]
+      },
+      "mean_delta": [
+        0.01339,
+        -0.21958,
+        0.39235
+      ],
+      "median_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "region": "skin_face_shadow",
+      "before": {
+        "pixels": 1260,
+        "median_RGB": [
+          251.0,
+          183.0,
+          144.0
+        ],
+        "mean_RGB": [
+          250.21905,
+          183.19762,
+          144.66905
+        ]
+      },
+      "master": {
+        "pixels": 752,
+        "median_RGB": [
+          251.0,
+          185.0,
+          143.0
+        ],
+        "mean_RGB": [
+          249.5984,
+          184.00133,
+          143.34574
+        ]
+      },
+      "subtract_RGB": [
+        0.0,
+        -2.0,
+        1.0
+      ],
+      "sample_mask": "masks/skin_face_shadow_core_sample.png",
+      "lighting_assignment": "frozen from pre-correction RGB; not reclassified after colour change",
+      "after": {
+        "pixels": 1260,
+        "median_RGB": [
+          251.0,
+          185.0,
+          143.0
+        ],
+        "mean_RGB": [
+          250.21905,
+          185.19762,
+          143.66905
+        ]
+      },
+      "mean_delta": [
+        0.62065,
+        1.19629,
+        0.32331
+      ],
+      "median_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "region": "skin_ear_lit",
+      "before": {
+        "pixels": 9368,
+        "median_RGB": [
+          253.0,
+          213.0,
+          179.0
+        ],
+        "mean_RGB": [
+          253.22556,
+          212.60867,
+          179.02551
+        ]
+      },
+      "master": {
+        "pixels": 9334,
+        "median_RGB": [
+          253.0,
+          207.0,
+          172.0
+        ],
+        "mean_RGB": [
+          253.21791,
+          207.34969,
+          172.26087
+        ]
+      },
+      "subtract_RGB": [
+        0.0,
+        6.0,
+        7.0
+      ],
+      "sample_mask": "masks/skin_ear_lit_core_sample.png",
+      "lighting_assignment": "frozen from pre-correction RGB; not reclassified after colour change",
+      "after": {
+        "pixels": 9368,
+        "median_RGB": [
+          253.0,
+          207.0,
+          172.0
+        ],
+        "mean_RGB": [
+          253.22556,
+          206.60867,
+          172.02551
+        ]
+      },
+      "mean_delta": [
+        0.00765,
+        -0.74102,
+        -0.23536
+      ],
+      "median_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "region": "skin_ear_shadow",
+      "before": {
+        "pixels": 1389,
+        "median_RGB": [
+          253.0,
+          183.0,
+          139.0
+        ],
+        "mean_RGB": [
+          253.07343,
+          183.69546,
+          140.17135
+        ]
+      },
+      "master": {
+        "pixels": 1673,
+        "median_RGB": [
+          251.0,
+          180.0,
+          133.0
+        ],
+        "mean_RGB": [
+          250.63419,
+          179.52241,
+          133.3413
+        ]
+      },
+      "subtract_RGB": [
+        2.0,
+        3.0,
+        6.0
+      ],
+      "sample_mask": "masks/skin_ear_shadow_core_sample.png",
+      "lighting_assignment": "frozen from pre-correction RGB; not reclassified after colour change",
+      "after": {
+        "pixels": 1389,
+        "median_RGB": [
+          251.0,
+          180.0,
+          133.0
+        ],
+        "mean_RGB": [
+          251.07343,
+          180.69546,
+          134.17135
+        ]
+      },
+      "mean_delta": [
+        0.43924,
+        1.17305,
+        0.83005
+      ],
+      "median_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "region": "skin_neck_lit",
+      "before": {
+        "pixels": 35444,
+        "median_RGB": [
+          253.0,
+          213.0,
+          178.0
+        ],
+        "mean_RGB": [
+          253.39832,
+          212.60611,
+          178.44194
+        ]
+      },
+      "master": {
+        "pixels": 33744,
+        "median_RGB": [
+          254.0,
+          208.0,
+          173.0
+        ],
+        "mean_RGB": [
+          253.46639,
+          208.21796,
+          172.79063
+        ]
+      },
+      "subtract_RGB": [
+        -1.0,
+        5.0,
+        5.0
+      ],
+      "sample_mask": "masks/skin_neck_lit_core_sample.png",
+      "lighting_assignment": "frozen from pre-correction RGB; not reclassified after colour change",
+      "after": {
+        "pixels": 35444,
+        "median_RGB": [
+          254.0,
+          208.0,
+          173.0
+        ],
+        "mean_RGB": [
+          254.38684,
+          207.60611,
+          173.44194
+        ]
+      },
+      "mean_delta": [
+        0.92045,
+        -0.61185,
+        0.65131
+      ],
+      "median_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "region": "skin_neck_shadow",
+      "before": {
+        "pixels": 5604,
+        "median_RGB": [
+          253.0,
+          187.0,
+          144.0
+        ],
+        "mean_RGB": [
+          253.35885,
+          187.08869,
+          143.98269
+        ]
+      },
+      "master": {
+        "pixels": 4740,
+        "median_RGB": [
+          251.0,
+          183.0,
+          139.0
+        ],
+        "mean_RGB": [
+          250.95527,
+          183.54705,
+          139.34979
+        ]
+      },
+      "subtract_RGB": [
+        2.0,
+        4.0,
+        5.0
+      ],
+      "sample_mask": "masks/skin_neck_shadow_core_sample.png",
+      "lighting_assignment": "frozen from pre-correction RGB; not reclassified after colour change",
+      "after": {
+        "pixels": 5604,
+        "median_RGB": [
+          251.0,
+          183.0,
+          139.0
+        ],
+        "mean_RGB": [
+          251.35885,
+          183.08869,
+          138.98269
+        ]
+      },
+      "mean_delta": [
+        0.40358,
+        -0.45836,
+        -0.3671
+      ],
+      "median_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "alpha_changes_color_step": 0,
+  "outside_color_domains_changes": 0,
+  "hair_line_highlight_changes": 0,
+  "facial_feature_blush_changes": 0,
+  "frozen_collar_RGBA_changes": 0,
+  "clothing_yellow_white_changes": 0,
+  "lower_body_y1100_on_changes": 0,
+  "color_changed_pixels": 324677,
+  "image_calls": 0,
+  "status": "LOCAL_COLOR_GATES_PASS;ACTUAL_VISUAL_REVIEW_REQUIRED"
+}
