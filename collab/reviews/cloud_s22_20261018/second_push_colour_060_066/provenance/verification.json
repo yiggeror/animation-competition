@@ -1,0 +1,97 @@
+{
+  "drawings": {
+    "F060": {
+      "sha256": "356c67d7c62efe46b4e68bece873407571adbc994801a622c39db2fdb1bfc136",
+      "alpha_exact": true,
+      "ink_and_contour_guards_RGBA_exact": true,
+      "x_ge_520_RGBA_exact": true,
+      "adult_F060_exact": true,
+      "unchanged_native_cumulative_delta": [
+        37,
+        -21
+      ],
+      "contact": {
+        "child_pinch": {
+          "compared_visible_pixels": 12082,
+          "max_RGBA_error": 0
+        },
+        "child_wrist": {
+          "compared_visible_pixels": 1190,
+          "max_RGBA_error": 0
+        },
+        "adult_thumb": {
+          "compared_visible_pixels": 3360,
+          "max_RGBA_error": 0
+        },
+        "four_supporting_ends": {
+          "compared_visible_pixels": 27441,
+          "max_RGBA_error": 0
+        },
+        "single_rod": {
+          "compared_visible_pixels": 16539,
+          "max_RGBA_error": 0
+        }
+      },
+      "changed_pixels": 67127,
+      "last_changed_x": 487
+    },
+    "F066": {
+      "sha256": "849de1cf2633d3818c59c73e5a68f22cca77a24c9fce8d44bce7b005385c1d60",
+      "alpha_exact": true,
+      "ink_and_contour_guards_RGBA_exact": true,
+      "x_ge_520_RGBA_exact": true,
+      "adult_F060_exact": null,
+      "unchanged_native_cumulative_delta": [
+        49,
+        -28
+      ],
+      "contact": {
+        "child_pinch": {
+          "compared_visible_pixels": 12082,
+          "max_RGBA_error": 0
+        },
+        "child_wrist": {
+          "compared_visible_pixels": 1190,
+          "max_RGBA_error": 0
+        },
+        "adult_thumb": {
+          "compared_visible_pixels": 3360,
+          "max_RGBA_error": 0
+        },
+        "four_supporting_ends": {
+          "compared_visible_pixels": 27441,
+          "max_RGBA_error": 0
+        },
+        "single_rod": {
+          "compared_visible_pixels": 16257,
+          "max_RGBA_error": 0
+        }
+      },
+      "changed_pixels": 145147,
+      "last_changed_x": 492
+    }
+  },
+  "clips": [
+    {
+      "name": "S22_060_083_colour24.mp4",
+      "sha256": "5ae7791729b4b01fca573171f691117629ba8ba763b7a093ce58dc2937463ac6",
+      "frames": 24,
+      "decoded_holds_exact": true,
+      "no_audio": true
+    },
+    {
+      "name": "S22_000_083_colour84.mp4",
+      "sha256": "c8d36c45d6ac8177e4819f785d210ad6bb0275d0e6ebcdb60085450fe87e13c8",
+      "frames": 84,
+      "decoded_holds_exact": true,
+      "no_audio": true
+    }
+  ],
+  "preexisting_review_files_SHA_verified": 385,
+  "original_raws_prompts_and_old_candidates_unchanged": true,
+  "alpha_geometry_ink_contact_and_displacement_unchanged": true,
+  "image_generation_calls": 0,
+  "production_ready": false,
+  "Astra_colour_review_pending": true,
+  "no_F084": true
+}

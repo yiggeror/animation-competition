@@ -1,0 +1,56 @@
+{
+  "source_commit": "6d2ad21e513ae90a87706d017df82a217cbfab56",
+  "Astra_instruction": "S22第二推实图结构双看可保，新Astra/xhigh独审已实际执行可用。需同raw最小区域色修后锁060/066：以024同截面中明面为主，042辅助。060只孩子近侧新前臂，G约−1～2/B−2～3；成人060保留。066两臂：成人中明面B−2～3；孩子B−3～4、局部G−1。沿完整新前臂从固定入口到腕前连续mask，x<400主体、400–520柔收至0；非整臂统一加减，保原明暗关系。x≥520整接触群、指甲/腕褶/夹点/签、全alpha与轮廓墨线原字节。实际同截面孩子024(254,205,171)，060(253,210,177)，066(253,209,179)；成人066(253,210,180)对024(253,209,175)。不用重画或改位移。024母源比相邻链优先，独立曝光收尾中，084仍暂不开。请原云先做这有限修色。",
+  "source_priority": [
+    "F024 same cross-section middle/light planes",
+    "F042 auxiliary"
+  ],
+  "sources": [
+    {
+      "path": "contact_band_repair_012_018_024/candidate/F024_contact_fixed.png",
+      "sha256": "97560237598d024a725ab63ee62809d1f5ded5f6fc5aadc1d8a4f158ca85da4a"
+    },
+    {
+      "path": "first_push_036_042/F042/candidate/F042_mapped.png",
+      "sha256": "2a028a4c174c55e4cde7d794cd59561d39585c626740dd0afa7ffdd49f5b477c"
+    },
+    {
+      "path": "second_push_060_066/F060/candidate/F060_mapped.png",
+      "sha256": "05fec583e4c5c40daf2a21a04c6a00beb91c5b9e4290a150ed509fc4ec323fc5"
+    },
+    {
+      "path": "second_push_060_066/F066/candidate/F066_mapped.png",
+      "sha256": "96f5cd2cf7138b3513aec96732d1ca64835896b72a735b958d1ebed8d7c35d10"
+    },
+    {
+      "path": "second_push_060_066/F060/originals/F060_call01_raw.png",
+      "sha256": "d9cc6038689ebf2c959f9979daef8ce2e5c40d631fbec739ae9693f36fbef869"
+    },
+    {
+      "path": "second_push_060_066/F066/originals/F066_call01_raw.png",
+      "sha256": "91b277575986478e7722cd5589f09f0748cef35e97624e36bbdb54462d84d684"
+    },
+    {
+      "path": "second_push_060_066/F060/provenance/request.json",
+      "sha256": "8ae8b32077dc71d7d4a6dd73fe8d1da3c631ffdca8ec5ba3e5d751dba7fd55bd"
+    },
+    {
+      "path": "second_push_060_066/F066/provenance/request.json",
+      "sha256": "c16d96f609f3768d24ca5d0a1d1f186b12078ffb6e03757948139a2193ba877e"
+    },
+    {
+      "path": "S22_exposure.csv",
+      "sha256": "a715188a0f9b9620d5261e73b46d5eebbdb6c71954244dd504b76a6cde2a5851"
+    },
+    {
+      "path": "S22_plan.json",
+      "sha256": "485de38b5fcf662a1f4b0666422f734cee05fcdfd8985b0eff8f53694a0778b1"
+    }
+  ],
+  "new_image_generation_calls": 0,
+  "scope": "Only limited RGB colour correction of registered same-raw forearms; source drawing and all geometry frozen.",
+  "raws_and_original_prompts_retained_in_prior_package": true,
+  "cumulative_S22_attempts": 9,
+  "cumulative_S22_successful_outputs": 8,
+  "no_F084": true
+}

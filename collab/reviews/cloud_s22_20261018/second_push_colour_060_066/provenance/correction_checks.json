@@ -1,0 +1,125 @@
+{
+  "F060": {
+    "source": "second_push_060_066/F060/candidate/F060_mapped.png",
+    "source_sha256": "05fec583e4c5c40daf2a21a04c6a00beb91c5b9e4290a150ed509fc4ec323fc5",
+    "candidate": "second_push_colour_060_066/candidate/F060_colour_fixed.png",
+    "candidate_sha256": "356c67d7c62efe46b4e68bece873407571adbc994801a622c39db2fdb1bfc136",
+    "changed_pixels": 67127,
+    "changed_bounds": [
+      0,
+      647,
+      487,
+      940
+    ],
+    "alpha_unchanged": true,
+    "alpha_bytes_sha256": "f4669327be1144f771ccefb4354e564f016fd3842a1b281d3650fde2fe63eb38",
+    "protected_contact_x_ge_520_unchanged": true,
+    "protected_contact_bytes_sha256": "54b71d4f04d9a476ec32991049e01b0f7d9bd53746695d5ef483a06a96f06c36",
+    "protected_ink_including_two_pixel_guard_unchanged": true,
+    "ink_guard_pixel_count": 78399,
+    "ink_guard_bytes_sha256": "9c41bd9995f6d74e15f19fd8ef2bf3ac909c50e0819296fa87e90d48b5429757",
+    "low_alpha_and_three_pixel_contour_guard_unchanged": true,
+    "geometry_and_displacement_unchanged": true,
+    "arms": {
+      "adult": {
+        "changed_pixels": 0,
+        "signed_RGB_delta_histogram": {
+          "R": {
+            "0": 91558
+          },
+          "G": {
+            "0": 91558
+          },
+          "B": {
+            "0": 91558
+          }
+        },
+        "luminance_correlation": 1.0
+      },
+      "child": {
+        "changed_pixels": 67127,
+        "signed_RGB_delta_histogram": {
+          "R": {
+            "0": 80184
+          },
+          "G": {
+            "-2": 49977,
+            "-1": 15195,
+            "0": 15012
+          },
+          "B": {
+            "-3": 48327,
+            "-2": 10624,
+            "-1": 8176,
+            "0": 13057
+          }
+        },
+        "luminance_correlation": 0.9997800207169356
+      }
+    },
+    "image_generation_calls": 0
+  },
+  "F066": {
+    "source": "second_push_060_066/F066/candidate/F066_mapped.png",
+    "source_sha256": "96f5cd2cf7138b3513aec96732d1ca64835896b72a735b958d1ebed8d7c35d10",
+    "candidate": "second_push_colour_060_066/candidate/F066_colour_fixed.png",
+    "candidate_sha256": "849de1cf2633d3818c59c73e5a68f22cca77a24c9fce8d44bce7b005385c1d60",
+    "changed_pixels": 145147,
+    "changed_bounds": [
+      0,
+      224,
+      492,
+      940
+    ],
+    "alpha_unchanged": true,
+    "alpha_bytes_sha256": "941451cb4f0b47a53a36a07f4785d25772dadef4396c364f3a205900f850033e",
+    "protected_contact_x_ge_520_unchanged": true,
+    "protected_contact_bytes_sha256": "803e973097f06e2d63d6b92218e5f668c56bbc27cb4c90f03e1bcecb4b4068c1",
+    "protected_ink_including_two_pixel_guard_unchanged": true,
+    "ink_guard_pixel_count": 82796,
+    "ink_guard_bytes_sha256": "59b6507e42f5934d9e2ee0ba3ce270ab01329fe52e6c01ab30d58d7c43c3b7bf",
+    "low_alpha_and_three_pixel_contour_guard_unchanged": true,
+    "geometry_and_displacement_unchanged": true,
+    "arms": {
+      "adult": {
+        "changed_pixels": 77253,
+        "signed_RGB_delta_histogram": {
+          "R": {
+            "0": 92044
+          },
+          "G": {
+            "0": 92044
+          },
+          "B": {
+            "-3": 49539,
+            "-2": 11107,
+            "-1": 16607,
+            "0": 14791
+          }
+        },
+        "luminance_correlation": 0.9999964128900382
+      },
+      "child": {
+        "changed_pixels": 67894,
+        "signed_RGB_delta_histogram": {
+          "R": {
+            "0": 80553
+          },
+          "G": {
+            "-1": 39423,
+            "0": 41130
+          },
+          "B": {
+            "-4": 45359,
+            "-3": 7558,
+            "-2": 8772,
+            "-1": 6205,
+            "0": 12659
+          }
+        },
+        "luminance_correlation": 0.9999025955369377
+      }
+    },
+    "image_generation_calls": 0
+  }
+}
