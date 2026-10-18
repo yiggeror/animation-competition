@@ -5,9 +5,11 @@ import { drawnShot } from './drawn.js';
 import { key } from './kit.js';
 export const DURATION = 2.5;
 const X = '/assets/chars/x05a/';
-// 036×1 037×2 039×3（第一按）042×2（松开）044×3 047×2（第二按，047 与 044 同一张）；049/052/055（泄气、看插座）还在画，先由 047 顶着
+const T = '/collab/reviews/20261018_1321_opening_tails/S05a_049_052/final/';
+const L = '/collab/reviews/20261018_1336_s05a_tail_complete/final/';
+// 036×1 037×2 039×3（第一按）042×2（松开）044×3 047×2（第二按，047 与 044 同一张）；049×3 052×3 055×5（整体泄气、看插座），不再用第二按顶住尾段
 export const SHEET = [[X + 'S05a_F000', 0], [X + 'S05a_F010', 10], [X + 'S05a_F014', 14], [X + 'S05a_F024', 24], [X + 'S05a_F028', 28],
-  [X + 'S05a_F036', 36], [X + 'S05a_F037', 37], [X + 'S05a_F039', 39], [X + 'S05a_F042', 42], [X + 'S05a_F044', 44]];
+  [X + 'S05a_F036', 36], [X + 'S05a_F037', 37], [X + 'S05a_F039', 39], [X + 'S05a_F042', 42], [X + 'S05a_F044', 44], [X + 'S05a_F044', 47], [T + 'S05a_F049', 49], [T + 'S05a_F052', 52], [L + 'S05a_F055', 55]];
 export const renderFrame = drawnShot({
   sheet: SHEET, bgKey: 'room_low_dark', bgCrop: [200, 300, 900, 420], blur: 18,
   light: () => ({ ambient: [0.16, 0.18, 0.26], lights: [], shafts: [{ poly: [[0, 0], [700, 0], [1400, 1080], [0, 1080]], color: [0.5, 0.62, 0.95], i: 0.42, soft: 120 }], exposure: 1.0, vignette: 0.5, grain: 8 }),
