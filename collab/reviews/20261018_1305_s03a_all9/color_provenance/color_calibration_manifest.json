@@ -1,0 +1,233 @@
+{
+  "status": "ZERO_CALL_COLOR_PROPOSAL_ONLY__LOCKED_ORIGINALS_UNCHANGED",
+  "reference": "S03a_F000 original focus skin palette",
+  "strength": 0.8,
+  "method": "Low-frequency vertical RGB offset from paired skin samples along nose-to-chin axis; skin-connected lower-face semantic mask; no geometry/alpha/neck/body/ink edits",
+  "poses": {
+    "014": {
+      "nose": [
+        754,
+        617
+      ],
+      "chin": [
+        785,
+        725
+      ],
+      "reference_samples": [
+        [
+          250.0,
+          204.5,
+          172.0
+        ],
+        [
+          242.0,
+          205.0,
+          190.0
+        ],
+        [
+          236.0,
+          206.0,
+          200.0
+        ],
+        [
+          229.0,
+          206.0,
+          209.0
+        ],
+        [
+          225.0,
+          206.0,
+          215.0
+        ]
+      ],
+      "source_samples": [
+        [
+          251.0,
+          210.0,
+          181.0
+        ],
+        [
+          246.0,
+          213.0,
+          195.0
+        ],
+        [
+          241.0,
+          214.0,
+          206.0
+        ],
+        [
+          235.0,
+          214.0,
+          211.0
+        ],
+        [
+          233.0,
+          214.0,
+          217.0
+        ]
+      ],
+      "offsets_rgb": [
+        [
+          -0.8,
+          -4.4,
+          -7.2
+        ],
+        [
+          -3.2,
+          -6.4,
+          -4.0
+        ],
+        [
+          -4.0,
+          -6.4,
+          -4.800000000000001
+        ],
+        [
+          -4.800000000000001,
+          -6.4,
+          -1.6
+        ],
+        [
+          -6.4,
+          -6.4,
+          -1.6
+        ]
+      ],
+      "semantic_mask_pixels": 22811,
+      "frames": [
+        "014",
+        "025"
+      ]
+    },
+    "017": {
+      "nose": [
+        675,
+        603
+      ],
+      "chin": [
+        737,
+        722
+      ],
+      "reference_samples": [
+        [
+          250.0,
+          204.5,
+          172.0
+        ],
+        [
+          242.0,
+          205.0,
+          190.0
+        ],
+        [
+          236.0,
+          206.0,
+          200.0
+        ],
+        [
+          229.0,
+          206.0,
+          209.0
+        ],
+        [
+          225.0,
+          206.0,
+          215.0
+        ]
+      ],
+      "source_samples": [
+        [
+          253.0,
+          212.0,
+          181.0
+        ],
+        [
+          250.0,
+          217.0,
+          196.0
+        ],
+        [
+          245.0,
+          217.0,
+          204.0
+        ],
+        [
+          242.0,
+          218.0,
+          211.0
+        ],
+        [
+          240.0,
+          217.0,
+          212.0
+        ]
+      ],
+      "offsets_rgb": [
+        [
+          -2.4000000000000004,
+          -6.0,
+          -7.2
+        ],
+        [
+          -6.4,
+          -9.600000000000001,
+          -4.800000000000001
+        ],
+        [
+          -7.2,
+          -8.8,
+          -3.2
+        ],
+        [
+          -10.4,
+          -9.600000000000001,
+          -1.6
+        ],
+        [
+          -12.0,
+          -8.8,
+          2.4000000000000004
+        ]
+      ],
+      "semantic_mask_pixels": 24957,
+      "frames": [
+        "017",
+        "021",
+        "023"
+      ]
+    }
+  },
+  "outputs": {
+    "014": {
+      "sha256": "6e72b82414f0fab5a6710ea8c98d21f2a446f907abf820f0a687ee4ce72966e9",
+      "changed_pixels": 22177,
+      "alpha_changed": 0,
+      "outside_face_mask_changed": 0
+    },
+    "025": {
+      "sha256": "dcc4974367a4b7f1cbea2bfcb6c98194b61e2e68193cbd37e2b814ee7ed42362",
+      "changed_pixels": 22087,
+      "alpha_changed": 0,
+      "outside_face_mask_changed": 0
+    },
+    "017": {
+      "sha256": "66fdb57ec6a46481da5a4d252e3057b825f4fc7e0ae33e86152c85e7d59c44ce",
+      "changed_pixels": 24371,
+      "alpha_changed": 0,
+      "outside_face_mask_changed": 0
+    },
+    "021": {
+      "sha256": "e630eb60217b8e57499386e4abcbddb7f335ef92c3d37248eda2b034bfab09ed",
+      "changed_pixels": 24371,
+      "alpha_changed": 0,
+      "outside_face_mask_changed": 0
+    },
+    "023": {
+      "sha256": "3b9fdff7d202e316696a3cd67f90f44f78f6bab112081b675c893d4b13e56063",
+      "changed_pixels": 24371,
+      "alpha_changed": 0,
+      "outside_face_mask_changed": 0
+    }
+  }
+}
