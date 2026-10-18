@@ -1,4 +1,4 @@
-// 1-5 小满近景（1.5 秒）·画的版本：Astra 画的 6 张脸（F000/F008 复用专注），按曝光表换张；
+// 1-5 小满近景（1.5 秒）·画的版本：Astra 画的整头转向（头、颈、耳一起转开约 30° 再回来，不是只扭脸），按曝光表换张；
 // 前景是奶奶托瓜的右手（单独一张画），从画面右下角斜着伸进来，第 8 帧到位后停住；离镜头近，做一点虚焦。
 // 手的落点用 Astra 在 1672×941 画布里给的：整张等比 0.46，左上角 (847.46, 613.74)，不旋转。
 import { drawnShot } from './drawn.js';
@@ -6,7 +6,8 @@ import { loadImg } from '../paint/paintshot.js';
 import { key } from './kit.js';
 export const DURATION = 1.5;
 const X = '/assets/chars/x03a/', S = 1920 / 1672;
-export const SHEET = [[X + 'S03a_F000', 0], [X + 'S03a_F008', 8], [X + 'S03a_F017', 17], [X + 'S03a_F019', 19], [X + 'S03a_F026', 26], [X + 'S03a_F029', 29]];
+// 000×8 008×3 011×3 014×3 017×4 021×2 023×2 025×3 028×8；021/023（回程尾摆）还在画，先由 017 顶着
+export const SHEET = [[X + 'S03a_F000', 0], [X + 'S03a_F008', 8], [X + 'S03a_F011', 11], [X + 'S03a_F014', 14], [X + 'S03a_F017', 17], [X + 'S03a_F025', 25], [X + 'S03a_F028', 28]];
 let HAND = null;
 async function hand() {
   if (HAND) return HAND;
