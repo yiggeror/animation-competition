@@ -1,0 +1,169 @@
+{
+  "status": "SEAM_PATCH_ADOPTED_FULL_POSE_PENDING_ASTRA_AND_OCCLUDED_CLOTHING",
+  "new_native_calls_this_round": 1,
+  "d06_native_calls_total": 7,
+  "pre_tap_calls_total": 8,
+  "all_S09_calls_total": 12,
+  "historical_prepared_request": "../requests/d06_call07_arguments.json was never executed; this round executed seam_repair/requests/call07_arguments.json only.",
+  "raw_original_sha256": "082ae4ac5c1aa4db58007e49704cc44a9a90eb0f90eedb1afca6c3f6972ebaa8",
+  "native_size": [
+    1672,
+    941
+  ],
+  "raw_return_byte_equal": true,
+  "source_preposition_sha256": "c0e9994329b0acafad86ab04d9a414bc2d3ca2d79d19f10fb58b5219c65e8155",
+  "source_call05_sha256": "05b3301da1652178ee0c39f3b5df181551cd1627f34ec4726e529c127f1ac93c",
+  "locked_mother_sha256": "a9a3eb670a30a6a87792a3a298f798c34a70923b3c4ea49b15c058de2a941ccc",
+  "native_adopted_changed_pixels": 611,
+  "native_patch_outside_mask_changed_pixels": 0,
+  "body_outside_action_domain_changed_pixels": 0,
+  "protected_mother_head_neck_collar_changed_pixels": 0,
+  "whole_hands_lamp_cap_source_byte_equal": true,
+  "measurements_manual_native": {
+    "complete_axis_center_to_center": 376.00132978488256,
+    "axis_uncertainty": 8,
+    "lamp_diameter": 128,
+    "lamp_diameter_uncertainty": 5,
+    "complete_rear_cap_diameter": 83,
+    "rear_cap_uncertainty": 4,
+    "tail_outer_bottom_y": 660,
+    "receiver_upper_face_y_on_axis_approx": 722,
+    "visible_gap": 62.0,
+    "visible_gap_range": [
+      60,
+      65
+    ]
+  },
+  "measurements_registered": {
+    "complete_axis": 236.77665603582022,
+    "complete_rear_cap_diameter": 52.26700251889169,
+    "visible_gap": 39.042821158690174
+  },
+  "comparison_to_locked_mother": {
+    "mother_axis_registered_approx": 240.2052476443473,
+    "corrected_axis_registered_approx": 236.77665603582022,
+    "difference_percent": -1.4273591614465952,
+    "full_mother_cap_diameter": "unobservable due to right-hand occlusion; do not use visible44 as full diameter"
+  },
+  "explicit_domains": [
+    "masks/native_seam_and_vacated_background.png",
+    "masks/action_domain_final.png",
+    "masks/protected_mother_head_neck_collar.png"
+  ],
+  "remaining_blocker": "Old near arm originally occludes torso/waist/skirt in locked mother. Source05 has fill pixels but clothing registration differs; cut white dots/fold joins remain in explicit action domain. No clean locked mother pixels exist at those original occlusions. This full pose is not locked or a next-pose source.",
+  "not_generated": [
+    37,
+    42
+  ],
+  "withdrawn_constraints": [
+    "44native full cap diameter",
+    "old2.29registered near-hand envelope"
+  ],
+  "technical_contact_states": [
+    {
+      "frame": 31,
+      "status": "actual candidate, no contact",
+      "prop_and_grip_translation_native": [
+        0,
+        0
+      ],
+      "lamp_axis_center_native": [
+        1135.0,
+        278.0
+      ],
+      "tail_axis_center_native": [
+        1134.0,
+        654.0
+      ],
+      "lamp_axis_center_registered": [
+        955.9571788413098,
+        258.53904282115866
+      ],
+      "tail_axis_center_registered": [
+        955.3274559193956,
+        495.3148614609571
+      ],
+      "tail_outer_bottom_native": 660,
+      "palm_surface_native_approx": [
+        1134,
+        722
+      ],
+      "outer_silhouette_gap_native_approx": 62.0,
+      "outer_silhouette_gap_registered_approx": 39.042821158690174,
+      "palm_frozen": true,
+      "axis_length_native": 376.00132978488256,
+      "rear_cap_diameter_native_approx": 83,
+      "arm_limit": "Prop plus near grip is rigid; wrist target moves, elbow/forearm must be redrawn with complete chain and real sleeve continuity, not translated as one whole arm."
+    },
+    {
+      "frame": 37,
+      "status": "technical anticipation target only, not generated",
+      "prop_and_grip_translation_native": [
+        0,
+        -31.76
+      ],
+      "lamp_axis_center_native": [
+        1135.0,
+        246.24
+      ],
+      "tail_axis_center_native": [
+        1134.0,
+        622.24
+      ],
+      "lamp_axis_center_registered": [
+        955.9571788413098,
+        238.5390428211587
+      ],
+      "tail_axis_center_registered": [
+        955.3274559193956,
+        475.3148614609571
+      ],
+      "tail_outer_bottom_native": 628.24,
+      "palm_surface_native_approx": [
+        1134,
+        722
+      ],
+      "outer_silhouette_gap_native_approx": 93.76,
+      "outer_silhouette_gap_registered_approx": 59.042821158690174,
+      "palm_frozen": true,
+      "axis_length_native": 376.00132978488256,
+      "rear_cap_diameter_native_approx": 83,
+      "arm_limit": "Prop plus near grip is rigid; wrist target moves, elbow/forearm must be redrawn with complete chain and real sleeve continuity, not translated as one whole arm."
+    },
+    {
+      "frame": 42,
+      "status": "technical first contact target only, not generated",
+      "prop_and_grip_translation_native": [
+        0,
+        62.0
+      ],
+      "lamp_axis_center_native": [
+        1135.0,
+        340.0
+      ],
+      "tail_axis_center_native": [
+        1134.0,
+        716.0
+      ],
+      "lamp_axis_center_registered": [
+        955.9571788413098,
+        297.5818639798489
+      ],
+      "tail_axis_center_registered": [
+        955.3274559193956,
+        534.3576826196473
+      ],
+      "tail_outer_bottom_native": 722.0,
+      "palm_surface_native_approx": [
+        1134,
+        722
+      ],
+      "outer_silhouette_gap_native_approx": 0.0,
+      "outer_silhouette_gap_registered_approx": 0.0,
+      "palm_frozen": true,
+      "axis_length_native": 376.00132978488256,
+      "rear_cap_diameter_native_approx": 83,
+      "arm_limit": "Prop plus near grip is rigid; wrist target moves, elbow/forearm must be redrawn with complete chain and real sleeve continuity, not translated as one whole arm."
+    }
+  ]
+}

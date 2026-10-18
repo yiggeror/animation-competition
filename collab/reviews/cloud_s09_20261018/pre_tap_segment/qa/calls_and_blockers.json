@@ -1,9 +1,9 @@
 {
-  "status": "PARTIAL_DIAGNOSTIC_HANDOFF_S09_CALLS_PAUSED_BY_COORDINATOR",
-  "executed_calls": 7,
-  "actual_raw_returns": 7,
+  "status": "SINGLE_AUTHORIZED_SEAM_CALL_DONE_FULL_POSE_NOT_LOCKED",
+  "executed_calls": 8,
+  "actual_raw_returns": 8,
   "d05_calls": 1,
-  "d06_calls": 6,
+  "d06_calls": 7,
   "d07_calls": 0,
   "F042_calls": 0,
   "prepared_but_NOT_CALLED": [
@@ -22,7 +22,7 @@
       ],
       "raw_return": "requests/d05_call01_raw_return.json",
       "raw_bytes_match_return": true,
-      "status": "AUTHOR_PASS_PENDING_ASTRA"
+      "status": "LOCKED_LOCAL_CANDIDATE_BY_ASTRA"
     },
     {
       "state": "d06",
@@ -107,6 +107,20 @@
       "raw_return": "requests/d06_call06_raw_return.json",
       "raw_bytes_match_return": true,
       "status": "NOT_CHAIN_APPROVED"
+    },
+    {
+      "state": "d06",
+      "call": 7,
+      "executed": true,
+      "original": "seam_repair/originals/d06_call07_raw.png",
+      "sha256": "082ae4ac5c1aa4db58007e49704cc44a9a90eb0f90eedb1afca6c3f6972ebaa8",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_return": "seam_repair/requests/call07_raw_return.json",
+      "raw_bytes_match_return": true,
+      "status": "611_LOCAL_RED_BARREL_PIXELS_ADOPTED_FULL_POSE_PENDING_CLOTHING_SOURCE"
     }
   ],
   "closest_raw": "originals/d06_call05_raw.png",
