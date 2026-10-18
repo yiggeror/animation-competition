@@ -1,0 +1,171 @@
+{
+  "status": "PRESERVED_EXACT_CALL17_ORIGINALS",
+  "created_utc": "2026-10-18T22:02:42.070260+00:00",
+  "request_sha256": "029ba7688874d2ccc40c4503158f038f95aa93dc52d1eeaeaaa063e781a4a728",
+  "prompt_sha256": "1fe5f065d3a0c5adb2032122b28ebd20deeaa68e399f872c1fb68fe8f1d4f517",
+  "actual_reference_count": 5,
+  "references_ordered": [
+    "F036_input_gate/inputs/F036_actual_edit_target_AIR871_CLEAN_1p5x_RGBA.png",
+    "F036_input_gate/inputs/F036_actual_edit_WHITE_MASK_1p5x.png",
+    "F036_input_gate/inputs/F036_DUAL_CONTEXT_033_IDENTITY_030_ACTUAL_LAMP_SPACE.png",
+    "F036_input_gate/inputs/F036_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+    "F036_input_gate/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png"
+  ],
+  "actual_five_reference_files_opened_for_preservation_review": true,
+  "visual_review_scope": "These exact five submitted files were opened and inspected on 2026-10-18 at preservation time; this is source-identification review, not a new anatomy/material acceptance or a claim about pre-call review.",
+  "native_generation_calls_for_this_state": 1,
+  "native_raws_for_this_state": 1,
+  "new_generation_calls_for_preservation": 0,
+  "raw_sha256": "0c5406e79310fcbf80739e32de630bfb65d2f9e4f0110b31e4658c7d5d6a951d",
+  "raw_size": [
+    1293,
+    1217
+  ],
+  "raw_preserved_matches_original_native_output": true,
+  "total_native_calls": 17,
+  "total_successful_raws": 17,
+  "total_tool_submissions": 18,
+  "total_old_parameter_validation_failures": 1,
+  "same_raw_semantic_v1_through_v9_and_color_are_not_generation_calls": true,
+  "actual_request_revision": "AIR871_CLEAN; frozen request SHA exact",
+  "early_input_history": "F036_input_gate/history/pre_871_air_islands is not the actual submitted five-image set and remains separated from this minimum package.",
+  "final_candidate_sha256": "6ee3d4ccf88650496ce97f8709642fb3b5a228fd0ec1a5e5fd4efc50fac42753",
+  "final_status_scope": "Parent coordinator reports current shape and color double-reviewed; author FINAL/layer seal is being preserved separately. No independent visual-acceptance claim is inferred from hashes.",
+  "composition_contract_scope": "Near hand and real far hand/jade source-over, transparent lever seat, and footprint releases must retain explicit source/mask provenance in the supplement; numbers do not constitute visual approval.",
+  "files": [
+    {
+      "path": "F036_native_call17/request.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_native_call17/request.json",
+      "sha256": "029ba7688874d2ccc40c4503158f038f95aa93dc52d1eeaeaaa063e781a4a728",
+      "git_blob_sha": "0950d3b576172077dbc36012da0c5bf0d97be07f",
+      "bytes": 6885
+    },
+    {
+      "path": "F036_native_call17/prompt.txt",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_native_call17/prompt.txt",
+      "sha256": "1fe5f065d3a0c5adb2032122b28ebd20deeaa68e399f872c1fb68fe8f1d4f517",
+      "git_blob_sha": "332dc8044032c19c714454a8b8015de2088170a0",
+      "bytes": 6028
+    },
+    {
+      "path": "F036_input_gate/inputs/F036_actual_edit_target_AIR871_CLEAN_1p5x_RGBA.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F036_actual_edit_target_AIR871_CLEAN_1p5x_RGBA.png",
+      "sha256": "601e0ce3fb3e480e0eec01f219dbe267af0fdba008e0cc58d96bbf63ead5d95d",
+      "git_blob_sha": "c9db18151b92b160552919d6cc33b818320e65b8",
+      "bytes": 988477
+    },
+    {
+      "path": "F036_input_gate/inputs/F036_actual_edit_WHITE_MASK_1p5x.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F036_actual_edit_WHITE_MASK_1p5x.png",
+      "sha256": "cdbb93210571e81655d0da0031887009cd1378fad1107177daea7abb1cd2f9f4",
+      "git_blob_sha": "ab818542dd7054ed4c976d0054b96abd3134e6a8",
+      "bytes": 6723
+    },
+    {
+      "path": "F036_input_gate/inputs/F036_DUAL_CONTEXT_033_IDENTITY_030_ACTUAL_LAMP_SPACE.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F036_DUAL_CONTEXT_033_IDENTITY_030_ACTUAL_LAMP_SPACE.png",
+      "sha256": "2d656cd68e2b9b58141a09f52f143b7afd9e84061345d45a32b0d23af86191c1",
+      "git_blob_sha": "f7a2d51c551b7af7952c499d1fdbdc7ac1313835",
+      "bytes": 1682261
+    },
+    {
+      "path": "F036_input_gate/inputs/F036_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F036_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+      "sha256": "3ad0b7f656d55849da06239a535c05f874d4236dfe5f192b08caa9d6df0720db",
+      "git_blob_sha": "07ac7a8787cb7f74fa210fd8ea503379c20aae22",
+      "bytes": 128306
+    },
+    {
+      "path": "F036_input_gate/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png",
+      "sha256": "a2bcc2d0530fda4160bed990bbc343ff86c34e5c3f6bfc8c58472630444f88ee",
+      "git_blob_sha": "561da17c2c82f992e85255f50785fff74588d108",
+      "bytes": 684410
+    },
+    {
+      "path": "F036_native_call17/raw/F036_whole_turn_arms_native_raw.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_native_call17/raw/F036_whole_turn_arms_native_raw.png",
+      "sha256": "0c5406e79310fcbf80739e32de630bfb65d2f9e4f0110b31e4658c7d5d6a951d",
+      "git_blob_sha": "4fa2fc77e51a840d877cbcdc86ece7849bc6520e",
+      "bytes": 1204441
+    }
+  ],
+  "original_status_record": {
+    "status": "SUCCESS_RAW_PRESERVED_PENDING_ACTUAL_REVIEW",
+    "logical_call": 17,
+    "actual_native_calls_before": 16,
+    "successful_raws_before": 16,
+    "actual_tool_submissions_before": 17,
+    "pre_generation_validation_failures_before": 1,
+    "request_sha256": "029ba7688874d2ccc40c4503158f038f95aa93dc52d1eeaeaaa063e781a4a728",
+    "actual_submissions_for_F036": 1,
+    "started_utc": "2026-10-18T21:42:24.240333+00:00",
+    "coordinator_final_gate": "2026-10-18T21:42:15Z",
+    "completed_utc": "2026-10-18T21:43:41.031894+00:00",
+    "original_native_path": "/workspace/scratch/f060b5601755/generated_images/exec-1e382177-0123-4b77-a97e-a97089937b26.png",
+    "raw_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_native_call17/raw/F036_whole_turn_arms_native_raw.png",
+    "raw_sha256": "0c5406e79310fcbf80739e32de630bfb65d2f9e4f0110b31e4658c7d5d6a951d",
+    "raw_bytes": 1204441,
+    "raw_size": [
+      1293,
+      1217
+    ],
+    "actual_native_calls": 17,
+    "successful_raws": 17,
+    "actual_tool_submissions": 18,
+    "validation_failures": 1,
+    "native_execution_errors": 0
+  },
+  "original_frozen_input_manifest": {
+    "request_sha256": "029ba7688874d2ccc40c4503158f038f95aa93dc52d1eeaeaaa063e781a4a728",
+    "files": [
+      {
+        "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_input_gate/prompt.txt",
+        "sha256": "1fe5f065d3a0c5adb2032122b28ebd20deeaa68e399f872c1fb68fe8f1d4f517",
+        "bytes": 6028
+      },
+      {
+        "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_input_gate/request.json",
+        "sha256": "029ba7688874d2ccc40c4503158f038f95aa93dc52d1eeaeaaa063e781a4a728",
+        "bytes": 6885
+      },
+      {
+        "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F036_actual_edit_target_AIR871_CLEAN_1p5x_RGBA.png",
+        "sha256": "601e0ce3fb3e480e0eec01f219dbe267af0fdba008e0cc58d96bbf63ead5d95d",
+        "bytes": 988477
+      },
+      {
+        "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F036_actual_edit_WHITE_MASK_1p5x.png",
+        "sha256": "cdbb93210571e81655d0da0031887009cd1378fad1107177daea7abb1cd2f9f4",
+        "bytes": 6723
+      },
+      {
+        "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F036_DUAL_CONTEXT_033_IDENTITY_030_ACTUAL_LAMP_SPACE.png",
+        "sha256": "2d656cd68e2b9b58141a09f52f143b7afd9e84061345d45a32b0d23af86191c1",
+        "bytes": 1682261
+      },
+      {
+        "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F036_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+        "sha256": "3ad0b7f656d55849da06239a535c05f874d4236dfe5f192b08caa9d6df0720db",
+        "bytes": 128306
+      },
+      {
+        "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_input_gate/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png",
+        "sha256": "a2bcc2d0530fda4160bed990bbc343ff86c34e5c3f6bfc8c58472630444f88ee",
+        "bytes": 684410
+      }
+    ],
+    "actual_lamp_context": {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first33_actual_20261018_2047/canvas_new/F030.png",
+      "role": "Actual unencoded Canvas030 lamp-space only, never character or color source",
+      "sha256": "77b34cd91a1bef5c10a9150d8426e6fa8488bc2146879661935cc8d035e20d5c"
+    },
+    "logical_call": 17,
+    "status": "INPUT_GATE_PENDING_NOT_SUBMITTED",
+    "air_island_review_revision": {
+      "closed_mask_pixels_scene": 871,
+      "removed_old_fragments_scene": 26,
+      "pose_and_main_edit_domain_unchanged": true
+    }
+  }
+}
