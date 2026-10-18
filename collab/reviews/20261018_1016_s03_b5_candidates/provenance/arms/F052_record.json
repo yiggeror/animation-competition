@@ -1,0 +1,41 @@
+{
+  "frame": 52,
+  "source": "astra_s03_opening_draw_20261018/reach_offer/S03_F048_candidate_v1.png",
+  "source_sha256": "4818fda41eb43447080e062988487caeee4cb23687dac6c0f12dead6244ec894",
+  "crop": [
+    150,
+    500,
+    662,
+    1012
+  ],
+  "prelayout_handfruit_translation": [
+    -59,
+    -70
+  ],
+  "prelayout_mask": "masks/F052_handfruit_translate_mask.png",
+  "call_count": 1,
+  "calls": [
+    {
+      "version": "v1",
+      "prompt_path": "prompts/F052_v1.txt",
+      "status": "returned",
+      "raw_path": "astra_s03_opening_draw_20261018/reach_offer/raw/F052_v1.png",
+      "raw_sha256": "686fd151a26825d569971371d7b5e9e7632f7e7a5038332466577f7493c39d05",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt_sha256": "8cb51767ff7ad7fc825c21b7a6b2ee79de11b81c45d74284b030aea3095693b2"
+    }
+  ],
+  "donor_uniform_scale": 0.4082934609250399,
+  "donor_translation": [
+    150,
+    500
+  ],
+  "candidate": "S03_F052_candidate_v1.png",
+  "candidate_sha256": "b010906d215105952f51a798bebc2ed6f68918880411766ab2bcdd660e38a013",
+  "mask": "masks/F052_composite_mask.png",
+  "plate_restore": "source previous approved F048 through fixed plate alpha",
+  "verified_actual_call_count": 1
+}

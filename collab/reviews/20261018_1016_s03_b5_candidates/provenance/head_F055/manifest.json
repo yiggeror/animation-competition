@@ -1,0 +1,159 @@
+{
+  "frame": 55,
+  "status": "frozen_independent_static_review_passed",
+  "actual_imagegen_call_count": 1,
+  "source": "astra_s03_opening_draw_20261018/reach_offer/S03_F055_candidate_v1.png",
+  "source_sha256": "6e100c1cf11c5efb67e7a8d53ae400268af8310faca11636e8a5e98960ae4a97",
+  "crop": [
+    620,
+    0,
+    1132,
+    512
+  ],
+  "endpoint_preview_only": "astra_s03b_painted_pilot_20261018/refs/painted/S03_grandma_k06_F058_t2.40.png",
+  "endpoint_sha256": "037d09935168bc2bbe46847496a36d322fe3152f8f50c243e6e87d0a063a94e1",
+  "endpoint_padding": "k06 native 1671x941; add one transparent pixel at right for QA only, never scale full endpoint",
+  "calls": [
+    {
+      "call": 1,
+      "prompt": "prompts/call01_F055_mid_nod.txt",
+      "inputs": [
+        "inputs/F055_head_source.png",
+        "inputs/F055_head_geometry.jpg"
+      ],
+      "status": "returned_accepted_static_review",
+      "raw": "astra_s03_f055_head_repair_20261018_1008/raw/call01_F055_head.png",
+      "raw_size": [
+        1254,
+        1254
+      ],
+      "raw_sha256": "b1908bed8b35bf3920735d56d3b49adccef15720b1f4b82fe755eea9c3e508b5"
+    }
+  ],
+  "method": "Single mother head crop + geometry guide, endpoint not supplied to imagegen. Explicit head-neck mask, frozen hand/fruit/body source. Built-in imagegen only. No old-face translation.",
+  "candidate": "S03_F055_head_candidate_v1.png",
+  "candidate_sha256": "4174fa8431999db191cc7e006f44047e2fa4066853c613e247a0aee3b52934b9",
+  "mask": "masks/F055_head_neck_call01.png",
+  "composition": {
+    "raw_uniform_resize": [
+      512,
+      512
+    ],
+    "placement": [
+      620,
+      0
+    ],
+    "no_face_translation": true,
+    "mask_polygon": [
+      [
+        635,
+        0
+      ],
+      [
+        1080,
+        0
+      ],
+      [
+        1080,
+        395
+      ],
+      [
+        987,
+        404
+      ],
+      [
+        951,
+        395
+      ],
+      [
+        922,
+        382
+      ],
+      [
+        906,
+        387
+      ],
+      [
+        902,
+        423
+      ],
+      [
+        891,
+        454
+      ],
+      [
+        876,
+        479
+      ],
+      [
+        854,
+        504
+      ],
+      [
+        836,
+        511
+      ],
+      [
+        817,
+        482
+      ],
+      [
+        797,
+        454
+      ],
+      [
+        781,
+        430
+      ],
+      [
+        765,
+        413
+      ],
+      [
+        744,
+        402
+      ],
+      [
+        725,
+        390
+      ],
+      [
+        698,
+        393
+      ],
+      [
+        635,
+        393
+      ]
+    ],
+    "mask_feather_pixels": 1.0
+  },
+  "checks": {
+    "outside_mask_changed_pixels": 0,
+    "mask_bbox": [
+      632,
+      0,
+      1084,
+      514
+    ],
+    "changed_pixels": 126787,
+    "body_below_y512_changed_pixels": 0,
+    "hands_fruit_basin_changed_pixels": 0,
+    "source_unchanged_sha256": "6e100c1cf11c5efb67e7a8d53ae400268af8310faca11636e8a5e98960ae4a97",
+    "candidate_sha256": "4174fa8431999db191cc7e006f44047e2fa4066853c613e247a0aee3b52934b9"
+  },
+  "local_collar_reconnection": {
+    "original_blue_pixels_changed": 1494,
+    "bbox": [
+      726,
+      364,
+      946,
+      511
+    ]
+  },
+  "independent_review": {
+    "reviewer": "review_opening_drawn_sequences",
+    "result": "static_passed",
+    "notes": "F052 to F055 to F058 chin/nose/spectacles true nod perspective gives an intermediate. Hair/neck/collar connections continuous. Left iris about 4px below endpoint is not an obvious gaze overshoot; check real 3f exposure without mechanical regeneration. Outside mask and y512 below RGBA independently exact."
+  }
+}

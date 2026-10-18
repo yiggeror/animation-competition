@@ -1,0 +1,159 @@
+{
+  "frame": 40,
+  "status": "frozen_independent_static_review_passed",
+  "actual_imagegen_call_count": 1,
+  "source": "astra_s03_opening_draw_20261018/reach_offer/S03_F040_hand_candidate_v5.png",
+  "source_sha256": "d4c68fd789c4ad49c059cb62906cfc360cb231f577e89dc64a79cdcfda4d7a99",
+  "crop": [
+    620,
+    0,
+    1132,
+    512
+  ],
+  "endpoint_preview_only": "astra_s03_plate_fix_20261018_0927/S03_k05_fixed_plate_candidate_v4.png",
+  "endpoint_sha256": "42c5b9537fc400138c100c4ec6eebc4d1cf645b6c00a959ac2d9536dd88e26d2",
+  "calls": [
+    {
+      "call": 1,
+      "prompt": "prompts/call01_F040_true_midturn.txt",
+      "inputs": [
+        "inputs/F040_v5_head_source.png",
+        "inputs/F040_head_geometry.jpg"
+      ],
+      "status": "accepted_static_review",
+      "raw": "astra_s03_f040_head_repair_20261018_1002/raw/call01_F040_head.png",
+      "raw_size": [
+        1254,
+        1254
+      ],
+      "sha256": "1cb770e7a2ae6d8bea943cd0a49fdac3787c4e7f8d1c689f3dfc40dcd259369f"
+    }
+  ],
+  "method": "Single mother head crop plus target geometry; endpoint not submitted. Built-in imagegen only. Explicit-mask local composition authorized; all originals preserved. No old-face translation or full-frame redraw.",
+  "candidate": "S03_F040_head_candidate_v1.png",
+  "candidate_sha256": "061f1dfd2708f07808edcf00120393f6e833433e9b1ce0d179266ff3271c154a",
+  "mask": "masks/F040_head_neck_call01.png",
+  "composition": {
+    "raw_uniform_resize": [
+      512,
+      512
+    ],
+    "placement": [
+      620,
+      0
+    ],
+    "no_face_translation": true,
+    "mask_polygon": [
+      [
+        640,
+        0
+      ],
+      [
+        1100,
+        0
+      ],
+      [
+        1100,
+        375
+      ],
+      [
+        1008,
+        384
+      ],
+      [
+        961,
+        383
+      ],
+      [
+        932,
+        373
+      ],
+      [
+        912,
+        383
+      ],
+      [
+        900,
+        421
+      ],
+      [
+        889,
+        448
+      ],
+      [
+        873,
+        475
+      ],
+      [
+        853,
+        496
+      ],
+      [
+        838,
+        505
+      ],
+      [
+        818,
+        477
+      ],
+      [
+        799,
+        452
+      ],
+      [
+        784,
+        426
+      ],
+      [
+        774,
+        404
+      ],
+      [
+        751,
+        386
+      ],
+      [
+        738,
+        376
+      ],
+      [
+        696,
+        386
+      ],
+      [
+        640,
+        376
+      ]
+    ],
+    "mask_feather_pixels": 1.0
+  },
+  "checks": {
+    "outside_mask_changed_pixels": 0,
+    "mask_bbox": [
+      637,
+      0,
+      1104,
+      508
+    ],
+    "changed_pixels": 121957,
+    "body_below_y512_changed_pixels": 0,
+    "hands_fruit_basin_changed_pixels": 0,
+    "source_unchanged_sha256": "d4c68fd789c4ad49c059cb62906cfc360cb231f577e89dc64a79cdcfda4d7a99",
+    "candidate_sha256": "061f1dfd2708f07808edcf00120393f6e833433e9b1ce0d179266ff3271c154a"
+  },
+  "independent_review": {
+    "reviewer": "review_opening_drawn_sequences",
+    "result": "static_passed",
+    "notes": "True intermediate head turn, identity, neck/collar pass. Approximately 12px rear-hair expansion and slight chin rise are minor contour breathing to inspect at real 4f exposure; do not regenerate mechanically. 652 blue collar-tip pixels are declared local neck reconnection area, accepted. Outside mask and below y512 RGBA exact."
+  },
+  "local_collar_reconnection": {
+    "original_blue_pixels_changed": 652,
+    "bbox": [
+      746,
+      373,
+      929,
+      408
+    ],
+    "review": "declared head-neck reconnection accepted by independent reviewer; preserve current composite"
+  }
+}

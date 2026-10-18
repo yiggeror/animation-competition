@@ -1,0 +1,40 @@
+{
+  "frame": 55,
+  "source": "astra_s03_opening_draw_20261018/reach_offer/S03_F052_candidate_v1.png",
+  "source_sha256": "b010906d215105952f51a798bebc2ed6f68918880411766ab2bcdd660e38a013",
+  "crop": [
+    150,
+    500,
+    662,
+    1012
+  ],
+  "prelayout_handfruit_translation": [
+    -35,
+    -44
+  ],
+  "prelayout_mask": "masks/F055_handfruit_translate_mask.png",
+  "call_count": 1,
+  "calls": [
+    {
+      "version": "v1",
+      "prompt_path": "prompts/F055_v1.txt",
+      "status": "returned",
+      "raw_path": "astra_s03_opening_draw_20261018/reach_offer/raw/F055_v1.png",
+      "raw_sha256": "501812750ea2acc10aba754a4b2cc8e0906dc7a1545d6cdc8b65779c5942620e",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt_sha256": "4b7b382e1991c7033cb5e8b1e29f18081c2310e44e0b34ab7f7bc66f506d36df"
+    }
+  ],
+  "donor_uniform_scale": 0.4082934609250399,
+  "donor_translation": [
+    150,
+    500
+  ],
+  "candidate": "S03_F055_candidate_v1.png",
+  "candidate_sha256": "6e100c1cf11c5efb67e7a8d53ae400268af8310faca11636e8a5e98960ae4a97",
+  "mask": "masks/F055_composite_mask.png",
+  "verified_actual_call_count": 1
+}
