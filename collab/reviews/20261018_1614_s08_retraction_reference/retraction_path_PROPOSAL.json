@@ -1,0 +1,393 @@
+{
+  "status": "INDEPENDENT_REFERENCE_PROPOSAL_NOT_PRODUCTION_APPROVED",
+  "source_final_F000_SHA256": "c803571d4a6446e783fcbeb7aef41d65c1862ff3bf78a9a53f34b4631170e3f3",
+  "source_measurement": "astra_s08_first_mother_20261018_1433/new_mother_measurements/F000_projected_measurements.json",
+  "source_measurement_uncertainty": "manual 5–12px; projected anchors, NOT bones or 3D",
+  "unchanged": [
+    "first3 submitted states",
+    "F082/F096 original shoulder/wrist/face/body endpoint anchors",
+    "lamp base1415,965.6 and wick1415,794.573",
+    "table box and match positions",
+    "F066 release/F078 open/F079 gap/F080 hood descent/F082 seated hood/F096 in-progress return timing"
+  ],
+  "changed": [
+    "F082 near elbow880,995→790,955; far1080,940→1040,960",
+    "F096 near elbow775,940→690,925; far1035,955→950,930",
+    "whole connected arm silhouette and relaxed empty hands; near wrist flexes down20.6deg at078/082,13.75deg at096 so thumb does not overlap far elbow",
+    "intermediate elbow/shoulder/wrist path is a NEW PROPOSAL requiring second review"
+  ],
+  "states": {
+    "41": {
+      "R": [
+        [
+          870,
+          735
+        ],
+        [
+          1020,
+          1010
+        ],
+        [
+          1275,
+          865
+        ]
+      ],
+      "L": [
+        [
+          1050,
+          680
+        ],
+        [
+          1080,
+          910
+        ],
+        [
+          1150,
+          790
+        ]
+      ],
+      "face": [
+        1000,
+        510
+      ],
+      "hip": [
+        690,
+        1080
+      ],
+      "br": [
+        900,
+        1080
+      ],
+      "lift": 1,
+      "projection_lengths": {
+        "R": [
+          313.25,
+          293.34
+        ],
+        "L": [
+          231.95,
+          138.92
+        ]
+      }
+    },
+    "66": {
+      "R": [
+        [
+          835,
+          715
+        ],
+        [
+          820,
+          1015
+        ],
+        [
+          1080,
+          1015
+        ]
+      ],
+      "L": [
+        [
+          1050,
+          680
+        ],
+        [
+          1045,
+          940
+        ],
+        [
+          1150,
+          790
+        ]
+      ],
+      "face": [
+        950,
+        490
+      ],
+      "hip": [
+        690,
+        1080
+      ],
+      "br": [
+        885,
+        1080
+      ],
+      "lift": 1,
+      "projection_lengths": {
+        "R": [
+          300.37,
+          260.0
+        ],
+        "L": [
+          260.05,
+          183.1
+        ]
+      }
+    },
+    "78": {
+      "R": [
+        [
+          810,
+          695
+        ],
+        [
+          800,
+          970
+        ],
+        [
+          1020,
+          1012
+        ]
+      ],
+      "L": [
+        [
+          1050,
+          680
+        ],
+        [
+          1045,
+          945
+        ],
+        [
+          1150,
+          790
+        ]
+      ],
+      "face": [
+        915,
+        475
+      ],
+      "hip": [
+        690,
+        1080
+      ],
+      "br": [
+        875,
+        1080
+      ],
+      "lift": 1,
+      "projection_lengths": {
+        "R": [
+          275.18,
+          223.97
+        ],
+        "L": [
+          265.05,
+          187.22
+        ]
+      }
+    },
+    "79": {
+      "R": [
+        [
+          807,
+          694
+        ],
+        [
+          797,
+          966
+        ],
+        [
+          1015,
+          1011
+        ]
+      ],
+      "L": [
+        [
+          1050,
+          680
+        ],
+        [
+          1044,
+          950
+        ],
+        [
+          1143,
+          798
+        ]
+      ],
+      "face": [
+        910,
+        474
+      ],
+      "hip": [
+        690,
+        1080
+      ],
+      "br": [
+        873,
+        1080
+      ],
+      "lift": 1,
+      "projection_lengths": {
+        "R": [
+          272.18,
+          222.6
+        ],
+        "L": [
+          270.07,
+          181.4
+        ]
+      }
+    },
+    "80": {
+      "R": [
+        [
+          804,
+          692
+        ],
+        [
+          794,
+          961
+        ],
+        [
+          1008,
+          1010
+        ]
+      ],
+      "L": [
+        [
+          1050,
+          680
+        ],
+        [
+          1042,
+          954
+        ],
+        [
+          1135,
+          807
+        ]
+      ],
+      "face": [
+        905,
+        472
+      ],
+      "hip": [
+        690,
+        1080
+      ],
+      "br": [
+        871,
+        1080
+      ],
+      "lift": 0.5,
+      "projection_lengths": {
+        "R": [
+          269.19,
+          219.54
+        ],
+        "L": [
+          274.12,
+          173.95
+        ]
+      }
+    },
+    "82": {
+      "R": [
+        [
+          800,
+          690
+        ],
+        [
+          790,
+          955
+        ],
+        [
+          1000,
+          1010
+        ]
+      ],
+      "L": [
+        [
+          1050,
+          680
+        ],
+        [
+          1040,
+          960
+        ],
+        [
+          1115,
+          820
+        ]
+      ],
+      "face": [
+        900,
+        470
+      ],
+      "hip": [
+        690,
+        1080
+      ],
+      "br": [
+        870,
+        1080
+      ],
+      "lift": 0,
+      "projection_lengths": {
+        "R": [
+          265.19,
+          217.08
+        ],
+        "L": [
+          280.18,
+          158.82
+        ]
+      }
+    },
+    "96": {
+      "R": [
+        [
+          650,
+          650
+        ],
+        [
+          690,
+          925
+        ],
+        [
+          915,
+          1000
+        ]
+      ],
+      "L": [
+        [
+          930,
+          650
+        ],
+        [
+          950,
+          930
+        ],
+        [
+          1070,
+          840
+        ]
+      ],
+      "face": [
+        790,
+        435
+      ],
+      "hip": [
+        655,
+        1090
+      ],
+      "br": [
+        850,
+        1080
+      ],
+      "lift": 0,
+      "projection_lengths": {
+        "R": [
+          277.89,
+          237.17
+        ],
+        "L": [
+          280.71,
+          150.0
+        ]
+      }
+    }
+  },
+  "context_warning": "F041 anchors are old structural context only, not actual143/231 measurements or F000 mother observations. Do not amend first3. Table is a proposal only and not implementation-approved."
+}
