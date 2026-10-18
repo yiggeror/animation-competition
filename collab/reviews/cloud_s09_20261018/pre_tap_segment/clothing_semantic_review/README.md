@@ -1,6 +1,6 @@
 # 031衣片语义域／同raw接回候选 · 先交Astra审
 
-**新增生成0。** 先看 [三处实图对照](qa/three_semantic_regions_comparison.png)、[完整语义域](qa/full_semantic_domain_overlay.png)、[720候选](qa/same_call05_1280x720_pending_review.png)。三行分别是胸口截断白点、旧臂腾空躯干／腰片、连续裙褶；每行依次为当前031／唯一call05同位连续衣片／接回候选。
+**新增生成0。** 先看 [三处实图对照](qa/three_semantic_regions_comparison.png)、[完整语义域](qa/full_semantic_domain_overlay.png)、[720候选](qa/same_call05_1280x720_pending_review.png)。三行分别是胸口截断白点、旧臂腾空躯干／腰片、连续裙褶；每行依次为当前031／唯一call05同位连续衣片／接回候选。6.1sol独审后已补整掌包络硬保护，避免肤色分类漏卷指小岛；候选PNG逐字节不变，见`qa/cloud_61sol_actual_review.md`。
 
 [联合mask](masks/semantic_clothing_union.png)明确包括胸口，三份独立语义mask及`crops/`内逐区原图／供体／候选／mask均齐，不再只给裙部两条。[硬保护域](masks/hard_protection_all.png)涵盖头颈领口、完整双臂肤色链及袖口褶边、整手电、真实外轮廓7px保护带与背景。肩袖白点仍在完整袖片保护区，本次未动，不把衣片修复扩大成改臂许可。
 

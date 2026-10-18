@@ -31,7 +31,9 @@ arms_skin=np.isin(lab,ids);arms_skin=binary_dilation(arms_skin,iterations=6)
 # Conservative full sleeve/cuff protection keeps anatomy, attached cloth ruffles and arm silhouettes fixed.
 near_sleeve=polygon([(589,497),(638,483),(689,500),(719,552),(720,601),(752,605),(779,623),(781,646),(749,671),(698,716),(655,718),(624,696),(589,678),(575,642),(578,584)])
 far_sleeve=polygon([(928,503),(978,529),(1019,569),(1026,628),(1028,658),(1016,689),(973,695),(947,672),(940,625),(926,577)])
-arms=arms_skin|near_sleeve|far_sleeve
+# The far palm's curled fingers have separated skin islands; protect the WHOLE actual palm rectangle.
+complete_left_palm=(xx>=1010)&(xx<=1235)&(yy>=695)&(yy<=815)
+arms=arms_skin|near_sleeve|far_sleeve|complete_left_palm
 head_neck_collar=yy<=590  # Includes a conservative shirt collar margin; chest repair is below603.
 torch=polygon([(1035,160),(1235,160),(1235,690),(1035,690)])
 # Preserve all true visible alpha boundaries; do not treat the off-shot canvas crop as a drawn contour.
@@ -85,6 +87,8 @@ checks={'status':'SEMANTIC_CROP_MASK_AND_SAME_RAW_CLOTH_CANDIDATE_PENDING_ASTRA'
  'candidate_outside_semantic_mask_changes':int(np.any(c[~combined]!=a[~combined],axis=1).sum()),
  'candidate_hard_domain_changes':int(np.any(c[hard]!=a[hard],axis=1).sum()),
  'candidate_alpha_changes':int((c[:,:,3]!=a[:,:,3]).sum()),
+ 'complete_left_palm_box_native':[1010,695,1235,815],
+ 'complete_left_palm_hard_coverage':bool(hard[complete_left_palm].all()),
  'candidate_native_pixels_taken':int(np.any(c!=a,axis=2).sum()),
  'no_donor_claim_outside_mask':'Source05 body/head pixels are never used outside the semantic fabric union; full arm/prop/head/outer silhouette remains current locked source.',
  'remaining_review':'Inspect full white dots, uninterrupted waist/skirt folds and donor joins at hard boundaries. This is a review candidate, not accepted artwork; no new native clothing repair until semantic masks are reviewed.',
