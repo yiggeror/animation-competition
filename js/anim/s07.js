@@ -50,7 +50,7 @@ export function xiaomanS07(t) {
 
 // Lower onto one shoulder/hip before rolling about the head-to-foot axis.
 // In-plane flexion is FK; the roll is a transverse cos projection. A narrow
-// back surface covers the side surface at quarter-turn, with a ground clip and
+// back surface replaces the occluded side surface at quarter-turn, with a ground clip and
 // a fixed hip x support. It is not a rotated, full-width standing back drawing.
 const shortest = (a, b, u) => a + Math.atan2(Math.sin(b - a), Math.cos(b - a)) * u;
 export function xiaomanRoll(t) {
@@ -74,29 +74,44 @@ export function xiaomanRoll(t) {
     pivot: [-1, -43.5], to: [-1, -7.5 + .9 * settle],
     support: { floorY: 0, hipX: -1, shoulderX: 33, clip: true } };
 }
+function rollView(X) {
+  const cs = Math.cos(X.roll);
+  // Switch the visible surface while the back occludes the face. The side
+  // surface is never squeezed through zero width and no second face is blended.
+  return Math.abs(cs) >= .66 ? { view: 'side', scaleX: cs } : { view: 'back', scaleX: .6 };
+}
+function xiaomanHeadCenter(P) {
+  const lean = P.lean || 0, n = rot([1.6, -39.9], lean), h = rot([-1, -13.6], lean + P.head.tilt + (P.head.nod || 0) * .12);
+  return [-1 + n[0] + h[0], -43.5 + n[1] + h[1]];
+}
+function rollSprite(X) {
+  const choice = rollView(X), o = canvasLayer([400, 520, 760, 690], XM_K, XM_AT), c = o.x;
+  c.globalAlpha = 1; c.globalCompositeOperation = 'source-over';
+  c.beginPath(); c.rect(-200, -200, 400, 200); c.clip();
+  const P = choice.view === 'side' ? X.P : { head: { tilt: X.P.head.tilt },
+    legL: { foot: [-4.9, -3.7] }, legR: { foot: [4.9, -3.7] },
+    armL: { hand: [-13, -56], hp: 'relax' }, armR: { hand: [13, -57], hp: 'relax' } };
+  const drawing = XIAOMAN.draw(c, choice.view, P), head = drawing.H([0, 0]);
+  c.save(); c.setTransform(1, 0, 0, 1, 0, 0); c.clearRect(0, 0, o.c.width, o.c.height); c.restore();
+  let shear = 0, sy = 1;
+  if (choice.view === 'back') {
+    // Align the replacement surface to the same hip/head landmarks. Keep its
+    // finite width, rather than flattening the whole body into a paper edge.
+    const target = xiaomanHeadCenter(X.P), span = head[1] - X.pivot[1];
+    shear = (Math.cos(X.roll) * (target[0] - X.pivot[0]) - choice.scaleX * head[0]) / span;
+    sy = (target[1] - X.pivot[1]) / span;
+  }
+  c.translate(...X.to); c.rotate(X.rot); c.transform(choice.scaleX, 0, shear, sy, 0, 0);
+  c.translate(choice.view === 'side' ? -X.pivot[0] : 0, -X.pivot[1]);
+  drawing.fig.draw();
+  return { canvas: o.c, figure: drawing.fig, head, choice };
+}
 function rollingLayer(X, ph) {
-  const box = [400, 520, 760, 690], out = canvasLayer(box, XM_K, XM_AT), x = out.x;
+  const out = canvasLayer([400, 520, 760, 690], XM_K, XM_AT), x = out.x;
   phoneSide(x, ph, 0);
   x.fillStyle = 'rgba(25,20,18,.12)'; x.beginPath(); x.ellipse(16, -.2, 23, 1.2, 0, 0, Math.PI * 2); x.fill();
-  const cs = Math.cos(X.roll), sn = Math.sin(X.roll);
-  const blend = new OffscreenCanvas(out.c.width, out.c.height), b = blend.getContext('2d'); b.globalCompositeOperation = 'lighter';
-  for (const view of ['side', 'back']) {
-    const weight = view === 'side' ? cs * cs : sn * sn;
-    if (weight < 1e-6) continue;
-    const temp = canvasLayer(box, XM_K, XM_AT), c = temp.x;
-    // Clip is in world space, before the character rotation. Phone and support
-    // stay outside this transform, so neither rolls along with her.
-    c.beginPath(); c.rect(-200, -200, 400, 200); c.clip();
-    c.translate(...X.to); c.rotate(X.rot);
-    c.scale(view === 'side' ? cs : .6 * sn, 1);
-    c.translate(view === 'side' ? -X.pivot[0] : 0, -X.pivot[1]);
-    const P = view === 'side' ? X.P : { head: { tilt: 0 },
-      legL: { foot: [-4.9, -3.7] }, legR: { foot: [4.9, -3.7] },
-      armL: { hand: [-13, -56], hp: 'relax' }, armR: { hand: [13, -57], hp: 'relax' } };
-    XIAOMAN.draw(c, view, P);
-    b.globalAlpha = weight; b.drawImage(temp.c, 0, 0);
-  }
-  x.save(); x.setTransform(1, 0, 0, 1, 0, 0); x.drawImage(blend, 0, 0); x.restore();
+  const sprite = rollSprite(X);
+  x.save(); x.setTransform(1, 0, 0, 1, 0, 0); x.globalAlpha = 1; x.globalCompositeOperation = 'source-over'; x.drawImage(sprite.canvas, 0, 0); x.restore();
   return out.layer;
 }
 
@@ -246,32 +261,43 @@ function drawTurnLegs(x, G) {
   }
   fig.draw();
 }
-function upperTurnSprite(G, view, flip) {
-  const o = canvasLayer([760, 380, 1300, 790], GM_K, GM_AT), x = o.x;
-  x.translate(G.P.x, G.P.y); x.scale(flip ? -1 : 1, 1);
-  const q = (Math.PI - G.yaw) / Math.PI;
-  const P = { ...G.P, x: 0, y: 0, armN: { hand: mix([5, -64], [6, -63], q), hp: 'relax' }, armF: { hand: mix([1, -65], [3, -64], q), hp: 'relax' },
-    armL: { hand: [-16, -65], hp: 'relax' }, armR: { hand: [16, -65], hp: 'relax' } };
-  // Build the existing Figure, remove only lower-body ops, then redraw it. The
-  // character API returns its geometry; this does not monkey-patch the renderer.
-  const { fig } = NAINAI[view](x, P), lower = /^(leg|pants|shoe|sole)/;
+function turnUpperView(G) {
+  const c = Math.cos(G.yaw), front = Math.abs(c) < Math.sqrt(3) / 2;
+  return { view: front ? 'front' : 'side', flip: !front && c < 0,
+    scaleX: front ? .84 + .16 * Math.sin(G.yaw) : .84 + .16 * Math.abs(c) };
+}
+function sideHeadCenter(P) {
+  // Same neck/head transforms as chars/nainai.js, used only to keep the head
+  // landmark continuous while the single visible view changes.
+  const lean = P.lean || 0, n = rot([7.4, -32.9], lean), h = rot([-1.5, -13.9], lean + .08 + (P.head.nod || 0) * .14 + (P.head.tilt || 0));
+  return [-1 + n[0] + h[0], -75 + n[1] + h[1]];
+}
+function upperTurnSprite(G) {
+  const choice = turnUpperView(G), o = canvasLayer([760, 380, 1300, 790], GM_K, GM_AT), x = o.x;
+  x.translate(G.P.x, G.P.y);
+  const q = (Math.PI - G.yaw) / Math.PI, sn = Math.sin(G.yaw), cs = Math.cos(G.yaw);
+  const P = { ...G.P, x: 0, y: 0, head: { ...G.P.head, turn: cs },
+    armN: { hand: mix([5, -64], [6, -63], q), hp: 'relax' }, armF: { hand: mix([1, -65], [3, -64], q), hp: 'relax' },
+    armL: { hand: [-16 - 1.5 * sn, -65 + .8 * cs], hp: 'relax' }, armR: { hand: [16 + 1.5 * sn, -65 - .8 * cs], hp: 'relax' } };
+  const drawing = NAINAI[choice.view](x, P), { fig } = drawing, lower = /^(leg|pants|shoe|sole)/;
   fig.parts = fig.parts.filter(p => !lower.test(p.name));
   fig.ops = fig.ops.filter(p => p.kind !== 'part' || !lower.test(p.name));
   x.save(); x.setTransform(1, 0, 0, 1, 0, 0); x.clearRect(0, 0, o.c.width, o.c.height); x.restore();
-  fig.draw();
-  return o.c;
+  const head = drawing.H([0, 0]), sx = choice.scaleX * (choice.flip ? -1 : 1);
+  const target = sideHeadCenter(P), targetX = cs * target[0];
+  const shear = (targetX - sx * head[0]) / (head[1] + 75), sy = (target[1] + 75) / (head[1] + 75);
+  // Align both head coordinates about the hip seam: the selected view follows
+  // one continuous head arc while remaining attached to the unchanged legs.
+  x.translate(0, -75); x.transform(sx, 0, shear, sy, 0, 0); x.translate(0, 75);
+  x.globalAlpha = 1; x.globalCompositeOperation = 'source-over'; fig.draw();
+  return { canvas: o.c, figure: fig, head, choice };
 }
 function turnLayer(G) {
   const o = canvasLayer([760, 380, 1300, 790], GM_K, GM_AT), x = o.x;
   x.save(); x.scale(-1, 1); stool(x, -2); bowl(x, ...BOWL1, 26); x.restore();
   drawTurnLegs(x, G);
-  const c = Math.cos(G.yaw), weights = [['side', true, Math.max(0, -c) ** 2], ['front', false, Math.sin(G.yaw) ** 2], ['side', false, Math.max(0, c) ** 2]];
-  // Premultiplied additive dissolve avoids the dark/transparent middle of a
-  // conventional over-over crossfade. The shared skeleton, feet and contact
-  // shadows stay opaque; only the upper-body view art changes.
-  const blend = new OffscreenCanvas(o.c.width, o.c.height), b = blend.getContext('2d'); b.globalCompositeOperation = 'lighter';
-  for (const [view, flip, weight] of weights) if (weight > 1e-6) { b.globalAlpha = weight; b.drawImage(upperTurnSprite(G, view, flip), 0, 0); }
-  x.save(); x.setTransform(1, 0, 0, 1, 0, 0); x.drawImage(blend, 0, 0); x.restore();
+  const sprite = upperTurnSprite(G);
+  x.save(); x.setTransform(1, 0, 0, 1, 0, 0); x.globalAlpha = 1; x.globalCompositeOperation = 'source-over'; x.drawImage(sprite.canvas, 0, 0); x.restore();
   return o.layer;
 }
 

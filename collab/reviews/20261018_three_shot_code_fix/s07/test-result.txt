@@ -1,18 +1,22 @@
-✔ closed hand encloses the actual cubic handle apex before lamp lift (1.823044ms)
-✔ bowl edge clears the retracted shoe sole at placement (0.434136ms)
-✔ turn has a lifted foot rather than three static front views (0.526916ms)
-✔ roll exposes a continuous support transform instead of a two-frame back swap (1.293995ms)
-✔ actual lower-palm contour touches both knee caps before hip lift (3.254055ms)
-✔ all turning legs have fixed 3-D femur/shin lengths and one planted foot (5.13142ms)
-✔ rise/turn/walk boundaries preserve world-space knees and ankles (0.414827ms)
-✔ the already-correct first walking support foot remains pinned (2.427557ms)
-✔ grip stays on the moving handle and lift starts after closed-hand contact (1.062755ms)
-✔ side-roll FK bones keep their lengths; knees and ankles stay above floor (4.418674ms)
-ℹ tests 10
+✔ turn consumes exactly one opaque upper-body drawing at every encoded turn frame (109.212122ms)
+✔ roll consumes exactly one opaque character drawing through both view changes (71.770663ms)
+✔ selected upper-body Figure has one face and head x/y are continuous at view boundaries (24.293315ms)
+✔ roll has one visible head silhouette and bounded head anchors at surface changes (17.406889ms)
+✔ closed hand encloses the actual cubic handle apex before lamp lift (1.877984ms)
+✔ bowl edge clears the retracted shoe sole at placement (0.599859ms)
+✔ turn has a lifted foot rather than three static front views (0.698324ms)
+✔ roll exposes a continuous support transform instead of a two-frame back swap (1.208948ms)
+✔ actual lower-palm contour touches both knee caps before hip lift (4.931894ms)
+✔ all turning legs have fixed 3-D femur/shin lengths and one planted foot (6.488842ms)
+✔ rise/turn/walk boundaries preserve world-space knees and ankles (1.251262ms)
+✔ the already-correct first walking support foot remains pinned (3.81181ms)
+✔ grip stays on the moving handle and lift starts after closed-hand contact (1.363909ms)
+✔ side-roll FK bones keep their lengths; knees and ankles stay above floor (6.286981ms)
+ℹ tests 14
 ℹ suites 0
-ℹ pass 10
+ℹ pass 14
 ℹ fail 0
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 116.482232
+ℹ duration_ms 452.046621
