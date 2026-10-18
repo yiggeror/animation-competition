@@ -1,0 +1,78 @@
+{
+  "source_commit": "62f4b262705feb4ccb25f9ff9bb049936b8c0a21",
+  "source_worktree": "/workspace/contact-render-62f4b262",
+  "source_clean_before": true,
+  "files": [
+    {
+      "path": "js/anim/s04_drawn.js",
+      "sha256": "07266e038367d1e2a0887ea9443665b9497b30ccc0b9b11e1190bf5c11ce26b9",
+      "bytes": 5953
+    },
+    {
+      "path": "js/anim/s04_drawn_timeline.js",
+      "sha256": "fee7ece8acb1bc186ca607cdd2c0b941b98d0690564e88e8ae3c33073c593f02",
+      "bytes": 2297
+    },
+    {
+      "path": "js/paint/paintshot.js",
+      "sha256": "7d61a8e3cfa595b5a2877ce3624c2d8d186a1578cc684a8948471eb0eedca975",
+      "bytes": 12532
+    },
+    {
+      "path": "tools/js/frames.cjs",
+      "sha256": "3f3f1a1920d6970bb578d735fc7b70420ae749da469637827459a861fe8bea14",
+      "bytes": 3221
+    },
+    {
+      "path": "assets/chars/s04/F010_near_leg_down.png",
+      "sha256": "04696fecfc23579ebc336220a0d5d60cfeae24de73d73e105526db929f98d11c",
+      "bytes": 1054694
+    },
+    {
+      "path": "assets/chars/s04/S01_F012_grandma_rgba.png",
+      "sha256": "e1b72562a2bc96b9ffc6e5e234a93eb573a7406afcdfa536d4c3c2f56d1589d4",
+      "bytes": 638685
+    },
+    {
+      "path": "assets/chars/s04/S04_F022_grandma_rgba.png",
+      "sha256": "6fc727833e49c9e0e70f9bb67d5755352b2a38b453b3678d60816ee2f41ad377",
+      "bytes": 644402
+    },
+    {
+      "path": "assets/chars/s04/S04_F028_grandma_rgba.png",
+      "sha256": "e08c927ad58a481a9cf2d3c8ec790efdf94ba0e7e080e2549673d5282c76b468",
+      "bytes": 647263
+    },
+    {
+      "path": "assets/chars/s04/S04_F034_grandma_rgba.png",
+      "sha256": "e7ea1815ad25075ca3c7ce45a9d3ffd5befc49214620208b94c929162aa4be5b",
+      "bytes": 646715
+    }
+  ],
+  "source_clean_after": true,
+  "all_recorded_source_SHA_unchanged": true,
+  "all5_locked_asset_SHA_verified": true,
+  "actual_command_argv": [
+    "node",
+    "--require",
+    "/workspace/cloud-s10-review-20261018-1324/collab/reviews/cloud_s10_20261018/render_assist/use_system_chromium.cjs",
+    "tools/js/frames.cjs",
+    "js/anim/s04_drawn.js",
+    "build/s04_contact72",
+    "--fps",
+    "24",
+    "--w",
+    "1280",
+    "--h",
+    "720",
+    "--workers",
+    "4",
+    "--from",
+    "0",
+    "--to",
+    "3",
+    "--mp4",
+    "build/S04_contact_color_final72.mp4"
+  ],
+  "rendered_frame_count": 72
+}
