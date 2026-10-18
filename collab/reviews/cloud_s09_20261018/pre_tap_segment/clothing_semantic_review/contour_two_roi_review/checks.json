@@ -1,0 +1,158 @@
+{
+  "status": "EXACT_APPROVED_ROI_COPY_VERIFIED_BUT_BOUNDARY_CLIPS_NOT_LOCKED",
+  "authorization": "Astra: only left raw x618..630/y829..846 and right x968..981/y843..856; same-call05 full RGBA; no generation; all other pixels and alpha locked.",
+  "new_native_calls": 0,
+  "S09_native_calls_unchanged": 12,
+  "F031_native_calls_unchanged": 7,
+  "F037_native_calls": 0,
+  "F042_native_calls": 0,
+  "source_before": {
+    "path": "pre_tap_segment/clothing_semantic_review/candidates/same_call05_continuous_cloth_pending_review.png",
+    "sha256": "db697c53dfa7b890ccc788c58264c65c7d4d6cb7cde04029dfe0a1a419f73714"
+  },
+  "donor": {
+    "path": "pre_tap_segment/originals/d06_call05_raw.png",
+    "sha256": "05b3301da1652178ee0c39f3b5df181551cd1627f34ec4726e529c127f1ac93c",
+    "translation": [
+      0,
+      0
+    ],
+    "scale": 1,
+    "full_RGBA_copy": true
+  },
+  "candidate": {
+    "path": "pre_tap_segment/clothing_semantic_review/contour_two_roi_review/candidate/F031_exact_two_ROIs_NOT_LOCKED.png",
+    "sha256": "1514811c724a2972a263ccbf777cd444729ab96f248697fde36b2ee0b80787a1"
+  },
+  "ROIs": {
+    "left": {
+      "box_xyxy_exclusive": [
+        618,
+        829,
+        631,
+        847
+      ],
+      "area_px": 234,
+      "changed_RGBA_pixels": 195,
+      "changed_alpha_pixels": 174,
+      "candidate_RGBA_equals_donor_in_whole_ROI": true
+    },
+    "right": {
+      "box_xyxy_exclusive": [
+        968,
+        843,
+        982,
+        857
+      ],
+      "area_px": 196,
+      "changed_RGBA_pixels": 108,
+      "changed_alpha_pixels": 95,
+      "candidate_RGBA_equals_donor_in_whole_ROI": true
+    }
+  },
+  "edit_mask_pixels": 430,
+  "total_changed_RGBA_pixels": 303,
+  "total_changed_alpha_pixels": 269,
+  "RGBA_changes_outside_two_ROIs": 0,
+  "alpha_changes_outside_two_ROIs": 0,
+  "previous_hard_protection_changes_except_authorized_ROIs": 0,
+  "complete_hands_prop_head_neck_unchanged": true,
+  "registration_unchanged": true,
+  "visible_alpha128_contour_rows_before_donor_after": {
+    "left": [
+      {
+        "y": 837,
+        "before": 618,
+        "donor": 624,
+        "after": 624
+      },
+      {
+        "y": 838,
+        "before": 618,
+        "donor": 623,
+        "after": 623
+      },
+      {
+        "y": 839,
+        "before": 617,
+        "donor": 623,
+        "after": 617
+      },
+      {
+        "y": 840,
+        "before": 617,
+        "donor": 622,
+        "after": 617
+      },
+      {
+        "y": 845,
+        "before": 613,
+        "donor": 618,
+        "after": 613
+      },
+      {
+        "y": 846,
+        "before": 613,
+        "donor": 618,
+        "after": 613
+      },
+      {
+        "y": 847,
+        "before": 612,
+        "donor": 617,
+        "after": 612
+      }
+    ],
+    "right": [
+      {
+        "y": 851,
+        "before": 978,
+        "donor": 979,
+        "after": 979
+      },
+      {
+        "y": 852,
+        "before": 979,
+        "donor": 979,
+        "after": 979
+      },
+      {
+        "y": 853,
+        "before": 971,
+        "donor": 980,
+        "after": 980
+      },
+      {
+        "y": 855,
+        "before": 972,
+        "donor": 981,
+        "after": 981
+      },
+      {
+        "y": 856,
+        "before": 973,
+        "donor": 981,
+        "after": 981
+      },
+      {
+        "y": 857,
+        "before": 973,
+        "donor": 982,
+        "after": 973
+      },
+      {
+        "y": 858,
+        "before": 974,
+        "donor": 983,
+        "after": 974
+      }
+    ]
+  },
+  "actual_view_findings": [
+    "Approved rectangles were copied exactly, but gray/dark actual inspection shows bounds clip the continuous donor contour; not a smooth-join pass.",
+    "Left y838 after first visible x623; y839 retains x617 outside approved x>=618, leaving the old contour island.",
+    "Right y856 after last visible x981; y857 retains x973 outside approved y<=856, leaving an8px retreat.",
+    "No unauthorized extension or alpha painting used to hide the boundary problem."
+  ],
+  "next_gate": "Astra review exact pixel boundary evidence and choose permitted contour extent/method; whole031 remains unlocked,037/042 not dispatched."
+}
