@@ -3,19 +3,19 @@
 import { renderPaint } from '../paint/paintshot.js';
 import { COIL, COILC, FAN } from '../paint/shots/s01.js';
 import { key } from './kit.js';
-import { grandmaPeel, xiaomanPhone, gmLayer, xmLayer, XM_AT, XM_K } from './s01.js';
+import { grandmaPeel, xiaomanPhone, xmProne, gmLayer, xmLayer, tableLamp, XM_AT, XM_K } from './s01.js';
 export const DURATION = 3;
 const BW = 1672, BH = 941, CUT = 0.3;
-const PHONE = [XM_AT[0] + 50 * XM_K, XM_AT[1] - 15 * XM_K];
+const PA = xmProne().phoneAt, PHONE = [XM_AT[0] + PA[0] * XM_K, XM_AT[1] + PA[1] * XM_K];   // 手机屏幕（背景像素）
 const fanSpin = (t) => (t < CUT ? 1 : Math.exp(-(t - CUT) / 1.4));
 export function grandmaStop(t) {
   const P = grandmaPeel(Math.min(t, 0.45));          // 手停在掐豆荚的那一下
   const up = key(t, [[0.9, 0], [1.25, 0.6, 'out'], [1.4, 1, 'io']]);
-  return { ...P, head: { nod: 0.45 - 0.85 * up, tilt: -0.18 - 0.1 * up }, face: { look: [0.3, -0.8 * up], open: 1 + 0.2 * up, mouth: 0.15 * up } };
+  return { ...P, head: { nod: 0.45 - 1.0 * up, tilt: -0.18 - 0.3 * up }, face: { look: [0.3, -0.8 * up], open: 1 + 0.2 * up, mouth: 0.15 * up } };
 }
 export const darkLight = (t, phoneLit = 1) => ({
-  ambient: [0.05, 0.06, 0.09],
-  lights: phoneLit > 0 ? [{ x: PHONE[0], y: PHONE[1] - 6, r: 140, color: [0.6, 0.75, 1.0], i: 1.1 * phoneLit, falloff: 1.8 }] : [],
+  ambient: [0.11, 0.13, 0.19],   // 停电后的月光底子：人物轮廓和动作要看得清
+  lights: phoneLit > 0 ? [{ x: PHONE[0], y: PHONE[1] - 6, r: 120, color: [0.6, 0.75, 1.0], i: 0.75 * phoneLit, falloff: 1.8 }] : [],
   shafts: [{ poly: [[0, 170], [150, 120], [760, 760], [330, 941], [0, 941]], color: [0.5, 0.62, 0.95], i: 0.38, soft: 70 }],
   exposure: 1.0, vignette: 0.5, grain: 8,
 });
@@ -30,11 +30,12 @@ const shot = {
   bg: 'bg_01_room_wide', size: [BW, BH],
   layers: async (t) => [
     { img: COILC, x: COIL[0] - 60, y: COIL[1] - 34, sc: 1 },
+    tableLamp(),
     xmLayer(xiaomanPhone(t, [0.5]), t),
     gmLayer(t < CUT ? grandmaPeel(t) : grandmaStop(t), t),
   ],
   light: (t) => (t < CUT ? brightLight : darkLight(t)),
-  glow: (t) => (t < CUT ? [] : [{ x: PHONE[0], y: PHONE[1], r: 26, color: [170, 205, 255], a: 0.7, core: 0.3 }, { x: COIL[0] - 20, y: COIL[1] + 1, r: 4, color: [255, 90, 40], a: 0.9, core: 0.3 }]),
+  glow: (t) => (t < CUT ? [] : [{ x: PHONE[0], y: PHONE[1], r: 14, color: [170, 205, 255], a: 0.45, core: 0.3 }, { x: COIL[0] - 20, y: COIL[1] + 1, r: 4, color: [255, 90, 40], a: 0.9, core: 0.3 }]),
   emit: (x, t) => {
     // 电视：灭的一瞬间缩成一个亮点再消失
     if (t < CUT) { x.save(); x.globalCompositeOperation = 'lighter'; x.fillStyle = 'rgba(110,150,210,0.1)'; x.beginPath(); x.roundRect(206, 370, 72, 98, 10); x.fill(); x.restore(); }

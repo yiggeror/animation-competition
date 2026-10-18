@@ -1,12 +1,12 @@
 // S05 · 第 2 场特写：停电后的手机。开头接 S04 的暗屋全景：已经断电7.4秒，充电标志已消失，电量为1%；
-// 镜头拉开，小满两只拇指狂按，想把这一局打完——屏幕一黑。黑了以后右拇指又戳了两下。屋里没灯，只有屏幕发光。
+// 镜头拉开，小满两只拇指狂按，想把这一局打完——屏幕一黑，拇指停住。屋里没灯，只有屏幕发光。
 // 手和手机同 S02（phone_img.js，合作方画的 anim_02_hands_phone_a）。
 import { renderPhoneImg, pressAt } from './phone_img.js';
 import { sstep } from './phone.js';
 export const DURATION = 4;
 const T_OFF = 3.05;
 const MASH = []; for (let p = 1.15; p < T_OFF - 0.05; p += 0.14 + 0.03 * Math.sin(p * 13)) MASH.push(p);
-const PRESS = [...MASH, 3.4, 3.72];
+const PRESS = [...MASH];   // 黑屏以后拇指停住（10-18：黑屏要停半秒让人看清，再戳的动作留给 S05a 的近景）
 export function state(t) {
   const pull = sstep(0.95, 1.75, t);
   // 停电发生在S04 +0.6秒，不能在S05又显示6帧充电或重复一次掉电。

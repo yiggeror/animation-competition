@@ -1,6 +1,6 @@
 // 给用户看的试片：只拼有画面的镜头（剪辑表里有 mod 的），每个镜头下方标"镜头号 · 剧本这一段"，声音按每个镜头在全片里的位置从母带里切。
 // 剧本里的 % 等字符原样显示（drawtext 关掉 expansion，否则"2%"会让整条字幕不显示）。
-// 用法：node tools/review_film.mjs [--src build/preview_shots] [--audio build/audio/film_mix_norm.wav] [--out build/film_review.mp4] [--only S01,S02] [--w 960]（输出宽度，16:9；1920 出 1080p，字幕等比放大）
+// 用法：node tools/review_film.mjs [--src build/preview_shots] [--audio build/audio/film_mix_norm.wav] [--out build/film_review.mp4] [--only S01,S02] [--w 960]（输出宽度，16:9；1920 出 1080p，字幕等比放大）[--clean 1]（不烧字幕，给审手部接触用的清版）
 // 镜头视频先用 tools/film.mjs --preview（或 render_final.mjs）渲好；这里只做标注和拼接。
 import { SHOTS } from '../js/film/edl.js';
 import { spawnSync } from 'node:child_process';
@@ -24,7 +24,7 @@ for (const s of SHOTS) {
   const txt = path.join(tmp, `${s.id}.txt`); fs.writeFileSync(txt, wrap(`${s.id}  ${s.text}`, 34));
   const o = path.join(tmp, `${s.id}.mp4`);
   // 画面下方一条半透明黑底，白字；声音取母带里这个镜头的那一段
-  const vf = `scale=${OW}:${OH},drawbox=x=0:y=ih-${92 * K}:w=iw:h=${92 * K}:color=black@0.55:t=fill,drawtext=expansion=none:fontfile='${FONT}':textfile='${txt}':fontsize=${22 * K}:fontcolor=white:line_spacing=${6 * K}:x=${24 * K}:y=h-${82 * K}`;
+  const vf = opt.clean ? `scale=${OW}:${OH}` : `scale=${OW}:${OH},drawbox=x=0:y=ih-${92 * K}:w=iw:h=${92 * K}:color=black@0.55:t=fill,drawtext=expansion=none:fontfile='${FONT}':textfile='${txt}':fontsize=${22 * K}:fontcolor=white:line_spacing=${6 * K}:x=${24 * K}:y=h-${82 * K}`;
   // 画面每镜单独编码（不带声音）；声音先按样本切出原样 PCM，最后拼成一整段只编码一次 AAC（分段编 AAC 再拼，接缝处 priming 会叠出十几毫秒，Astra 实测）
   run(['-i', v, '-t', String(s.dur), '-an', '-vf', vf, '-r', '24', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '20', o]);
   const w = path.join(tmp, `${s.id}.wav`);

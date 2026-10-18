@@ -2,7 +2,8 @@
 // 节拍：0.5 奶奶掐开豆荚（"啪"），1.5 豆子落盆（"嗒嗒"），2.5 伸手去拿下一个；小满小腿晃两下（0.6、1.8），手一直在按。
 import { renderPaint } from '../paint/paintshot.js';
 import { COIL, COILC, FAN } from '../paint/shots/s01.js';
-import { charLayer, key, kick, bowl, stool, phone } from './kit.js';
+import { lamp as drawLamp, LX, LB } from '../code/s08.js';
+import { charLayer, key, kick, bowl, stool, legFK, XM_LEG, shoulderSide, ARM } from './kit.js';
 export const DURATION = 3.5;
 const BW = 1672, BH = 941;
 const tv = (t) => 0.3 + 0.12 * Math.sin(t * 3.1) + 0.08 * Math.sin(t * 7.7 + 1) + (Math.sin(t * 1.3) > 0.85 ? 0.15 : 0);
@@ -13,25 +14,58 @@ export function grandmaPeel(t) {
   return { y: 37, seated: true, lean: 0.3 + 0.02 * kick(t, 0.5, 1, 4, 0.4), head: { nod: 0.45, tilt: -0.18 },
     armN: { hand: hn, hp: 'pinch' }, armF: { hand: hf, hp: 'pinch' }, legN: { foot: [33, -41.6] }, legF: { foot: [29, -41.6] } };
 }
-// 小满（侧面、趴着、头朝右）
+// 小满（侧面、趴着、头朝右，手肘撑在竹席上）。骨头长度固定：大腿贴着席子，小腿绕膝盖往上翘；上臂从肩膀落到席子上的肘，小臂往前端着手机。
+// o.lean 上身抬多高（1.42 ≈ 胸口离席几厘米），o.fa 小臂角度（负 = 往上抬），o.shinN / o.shinF 小腿角度（-π/2 = 竖直朝上）。
+export const XM_FLOOR = -36;                 // 趴着时 pose.y = 36，席面在人物坐标 y = -36
+export function xmProne(o = {}) {
+  const P = { y: 36, lean: o.lean ?? 1.42, head: { tilt: -0.85, ...(o.head || {}) } };
+  const legs = {};
+  for (const [sd, hip, sh] of [['N', XM_LEG.hipN, o.shinN ?? -2.25], ['F', XM_LEG.hipF, o.shinF ?? -2.35]]) {
+    const r = legFK(hip, Math.PI - 0.2, sh, XM_LEG.thigh, XM_LEG.shin);
+    legs['leg' + sd] = { knee: r.knee, foot: r.foot, footRot: sh - Math.PI / 2 + 0.9 };   // 脚背顺着小腿往后绷
+  }
+  const arms = {};
+  for (const [sd, fa] of [['N', (o.fa ?? -0.6) + (o.tapN ?? 0)], ['F', (o.fa ?? -0.6) - 0.06 + (o.tapF ?? 0)]]) {
+    const S = shoulderSide('x', P, sd), ey = XM_FLOOR - 1.8;                       // 肘落在席面上
+    const e = Math.asin(Math.min(1, (ey - S[1]) / ARM.x[0])), E = [S[0] + Math.cos(e) * ARM.x[0], ey];
+    const Wp = [E[0] + Math.cos(fa) * ARM.x[1], E[1] + Math.sin(fa) * ARM.x[1]];
+    arms['arm' + sd] = { elbow: E, hand: Wp, hp: o.hp || 'grip', ...(o['arm' + sd] || {}) };
+  }
+  const W = arms.armN.hand, fa = o.fa ?? -0.6;
+  return { ...P, ...legs, ...arms, face: { look: [0.8, 0.6], smile: 0, ...(o.face || {}) },
+    phoneAt: [W[0] + Math.cos(fa) * 3, W[1] + Math.sin(fa) * 3 - XM_FLOOR, -0.12] };   // 手机：地面坐标，屏幕朝她的脸（侧面看是一条薄片）
+}
 export function xiaomanPhone(t, swings = [0.6, 1.8]) {
   let n = 0, f = 0;
   for (const s of swings) { n += key(t, [[s, 0], [s + 0.25, 1, 'out'], [s + 0.55, 0, 'io']]); f += key(t, [[s + 0.15, 0], [s + 0.4, 1, 'out'], [s + 0.7, 0, 'io']]); }
-  const tap = Math.sin(t * 26) * 0.4;
-  return { y: 36, lean: 1.2, head: { tilt: -0.9 },
-    legN: { foot: [-36 + 6 * n, -64 - 6 * n], knee: [-21, -42] }, legF: { foot: [-28 - 5 * f, -68 + 5 * f], knee: [-21, -43] },
-    armN: { elbow: [36, -37.5], hand: [49, -50 + tap], hp: 'grip' }, armF: { elbow: [33, -38], hand: [47, -51 - tap], hp: 'grip' },
-    face: { look: [0.8, 0.6], smile: 0 } };
+  const tap = Math.sin(t * 26) * 0.05;
+  return xmProne({ shinN: -2.25 + 0.5 * n, shinF: -2.35 + 0.45 * f, tapN: tap, tapF: -tap });
+}
+// 侧面看的手机：一条薄片，屏幕那面朝上（朝她的脸）
+export function phoneSide(x, at, lit = 1) {
+  x.save(); x.translate(at[0], at[1]); x.rotate(at[2] || 0);
+  x.fillStyle = '#1f1f24'; x.strokeStyle = '#111'; x.lineWidth = 0.3; x.beginPath(); x.roundRect(-6.5, -0.7, 13, 1.4, 0.5); x.fill(); x.stroke();
+  if (lit > 0) { x.fillStyle = `rgba(150,200,255,${0.9 * lit})`; x.fillRect(-6, -0.8, 12, 0.4); }
+  x.restore();
+}
+// 八仙桌（画面右下）上放着的马灯和火柴盒：开场就摆在那儿，停电后奶奶走过去拿（S07），下一镜点亮（S08）。lift = 被拿起来多少（像素）
+export const LAMP_AT = [1262, 642], LAMP_S = 0.17;
+export function tableLamp(lift = 0) {
+  const c = new OffscreenCanvas(220, 200), x = c.getContext('2d');
+  x.translate(110, 170 - lift); x.scale(-LAMP_S, LAMP_S); x.translate(-LX, -LB); drawLamp(x, 0, false);
+  x.setTransform(1, 0, 0, 1, 0, 0); x.fillStyle = '#c9a25a'; x.strokeStyle = '#3e2a1e'; x.lineWidth = 1; x.beginPath(); x.rect(150, 162, 18, 7); x.fill(); x.stroke();   // 火柴盒
+  return { img: c, x: LAMP_AT[0] - 110, y: LAMP_AT[1] - 170, sc: 1 };
 }
 export const GM_AT = [935, 775], GM_K = 2.77, XM_AT = [540, 670], XM_K = 1.97;
 export const gmLayer = (P, t, extra = {}) => charLayer('n', 'side', P, { box: [780, 470, 1060, 790], k: GM_K, at: GM_AT, flip: true,
   before: (x) => stool(x, -2), after: (x) => bowl(x, 24, -47, 26), ...extra });   // 盆放在腿上（道具用地面坐标，不跟 pose.y 走）
 export const xmLayer = (P, t, extra = {}) => charLayer('x', 'side', P, { box: [440, 560, 700, 690], k: XM_K, at: XM_AT,
-  after: (x) => { phone(x, 50, -15, -0.6, extra.lit ?? 1); }, ...extra });
+  after: (x) => { if (P.phoneAt) phoneSide(x, P.phoneAt, extra.lit ?? 1); }, ...extra });
 const shot = {
   bg: 'bg_01_room_wide', size: [BW, BH],
   layers: async (t) => [
     { img: COILC, x: COIL[0] - 60, y: COIL[1] - 34, sc: 1 },
+    tableLamp(),
     xmLayer(xiaomanPhone(t), t),
     gmLayer(grandmaPeel(t), t),
   ],

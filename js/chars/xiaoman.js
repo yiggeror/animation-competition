@@ -206,11 +206,11 @@ export function side(ctx, P0, o = {}) {
     const knee = leg.knee || ik2(hip, foot, D.thigh, D.shin, 1).joint; // 膝盖朝前（+x）
     const t = tube([hip, lerpP(hip, knee, 0.5), knee, lerpP(knee, foot, 0.45), foot], [[0, [3.4, 3.4]], [0.45, [2.6, 2.6]], [0.55, [2.5, 2.5]], [0.7, [2.2, 2.7]], [1, [1.5, 1.5]]], { capStart: 'flat', capEnd: 'flat', step: 0.6 });
     fig.part('leg' + side, t.outline, { fill: tone, z, per: 2 });
-    const fx = foot[0], fy = foot[1];
-    fig.part('foot' + side, [[fx - 2.2, fy - 1.2], [fx + 1.5, fy - 0.2], [fx + 5.6, fy + 1.6], [fx + 6.4, fy + 3.2], [fx + 5.6, fy + 3.9], [fx - 2.4, fy + 3.9], [fx - 2.8, fy + 1.6]], { fill: tone, z: z + 0.1 });
-    fig.part('sole' + side, [[fx - 3.0, fy + 3.1], [fx + 6.6, fy + 3.1], [fx + 6.9, fy + 4.4], [fx - 3.0, fy + 4.4]], { fill: D.sandal, z: z + 0.2, inner: true, smooth: false });
-    fig.detail([[fx + 0.4, fy - 0.2], [fx + 1.6, fy + 1.4], [fx + 2.4, fy + 3.2]], { z: z + 0.3, lw: lw * 1.6, color: D.sandal, profile: 'flat', clip: ['foot' + side] });
-    fig.detail([[fx + 3.8, fy + 0.9], [fx + 4.3, fy + 3.2]], { z: z + 0.3, lw: lw * 1.4, color: D.sandal, profile: 'flat', clip: ['foot' + side] });
+    const fx = foot[0], fy = foot[1], fr = (pts) => (leg.footRot ? pts.map((q) => rotP(q, leg.footRot, foot)) : pts);   // footRot：脚掌绕脚踝转（趴着翘小腿时脚背朝后）
+    fig.part('foot' + side, fr([[fx - 2.2, fy - 1.2], [fx + 1.5, fy - 0.2], [fx + 5.6, fy + 1.6], [fx + 6.4, fy + 3.2], [fx + 5.6, fy + 3.9], [fx - 2.4, fy + 3.9], [fx - 2.8, fy + 1.6]]), { fill: tone, z: z + 0.1 });
+    fig.part('sole' + side, fr([[fx - 3.0, fy + 3.1], [fx + 6.6, fy + 3.1], [fx + 6.9, fy + 4.4], [fx - 3.0, fy + 4.4]]), { fill: D.sandal, z: z + 0.2, inner: true, smooth: false });
+    fig.detail(fr([[fx + 0.4, fy - 0.2], [fx + 1.6, fy + 1.4], [fx + 2.4, fy + 3.2]]), { z: z + 0.3, lw: lw * 1.6, color: D.sandal, profile: 'flat', clip: ['foot' + side] });
+    fig.detail(fr([[fx + 3.8, fy + 0.9], [fx + 4.3, fy + 3.2]]), { z: z + 0.3, lw: lw * 1.4, color: D.sandal, profile: 'flat', clip: ['foot' + side] });
   }
   // ---- 远侧胳膊（大部分被身体挡住）
   armSide(fig, P, D, 'F', up, sh, -3, D.skinShade, lw);
