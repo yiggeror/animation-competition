@@ -1,6 +1,7 @@
-// 2-6 全景（4.5 秒，月光）：小满放下黑了的手机，往右一翻、仰面躺倒，拿手扇两下风，胳膊往席子上一摊，眼睛跟着奶奶；
-// 奶奶把盆放在收回的鞋前外侧，掌面压膝起身，分两步转向八仙桌，先扣住提梁再提灯。
-// 骨长固定；翻身用本镜的连续接地投影，转身有换重/抬脚，已有第一步的支撑脚轨迹保留。
+// 2-6（4.5 秒，月光）：全景放手机 → 0.66 奶奶落盆/压膝起身近景
+// → 1.62 小满仰躺扇风/瞟奶奶近景 → 2.35 回全景，走向桌边先扣梁再提灯。
+// 翻身与奶奶转身在画外发生；镜内切镜避开未通过的换面，不宣称连续转体已修好。
+// 同一全局动作时间、同一场景光照；保留压膝、腿与第一步支撑、握梁后提灯。
 import { renderPaint } from '../paint/paintshot.js';
 import { COIL, COILC } from '../paint/shots/s01.js';
 import { key, charLayer, stool, bowl, limbIK, legFK, XM_LEG, EASE, armSide, shoulderSide, ARM } from './kit.js';
@@ -39,7 +40,10 @@ export function xiaomanS07(t) {
   for (const [sd, hip, a1, a2] of [['N', XM_LEG.hipN, Math.PI / 2 + 0.07, Math.PI / 2 + 0.1], ['F', XM_LEG.hipF, Math.PI / 2 + 0.03, Math.PI / 2 + 0.12]]) {
     const r = legFK(hip, a1, a2, XM_LEG.thigh, XM_LEG.shin); legs['leg' + sd] = { knee: r.knee, foot: r.foot, footRot: -0.25 };
   }
-  const look = t < 2.6 ? [0.3, -0.5] : key(t, [[2.6, [0.3, -0.5]], [2.85, [-0.7, -0.6], 'out']]);    // 2.6 听见奶奶的脚步，眼睛往头顶那边（奶奶走去的方向）瞟
+  const glance = key(t, [[1.82, 0], [1.96, 1, 'out'], [2.08, 1], [2.24, 0, 'io']]);
+  // eye() offsets are in body coordinates. In this mirrored, 90° supine view
+  // (+look.x, -look.y) moves the drawn iris screen-right/up, toward grandma.
+  const look = mix([0.3, -0.5], [1, -1], glance); // one glance, then return to rest
   return { view: 'roll', roll: Math.PI, rot: Math.PI / 2, pivot: [-1, -43.5], to: [-1, -6.6],
     support: { floorY: 0, hipX: -1, shoulderX: 33, clip: true },
     P: { head: { tilt: 0.5 }, breath: 0.8 * seg(t, 0.95, 1.25, 'sine') * (1 - seg(t, 1.25, 1.6)),
@@ -301,6 +305,17 @@ function turnLayer(G) {
   return o.layer;
 }
 
+// Hard editorial cuts, evaluated in seconds: at 24fps the first new frames are
+// F16/F39/F57. Do not snap 2.35s backward to F56. No per-insert time restart.
+export function s07Camera(t) {
+  if (t >= .66 && t < 1.62) {
+    // 608×342 scene-pixel window (16:9), following the rise upward. The early
+    // window includes the floor/bowl; the late window retains head and knees.
+    return { x: 1024, y: 630 - 90 * seg(t, 1.05, 1.6), fit: BW / 608 };
+  }
+  if (t >= 1.62 && t < 2.35) return { x: 605, y: 637.5, fit: BW / 400 };
+  return { x: BW / 2 - 20, y: BH / 2 + 12, fit: 1.04 };
+}
 const shot = {
   bg: 'bg_01_room_wide', size: [BW, BH],
   layers: async (t) => {
@@ -308,16 +323,18 @@ const shot = {
     return [
       { img: COILC, x: COIL[0] - 60, y: COIL[1] - 34, sc: 1 },
       tableLamp(G.lampLift || 0),
-      X.view === 'roll' ? rollingLayer(X, ph) : charLayer('x', X.view, X.P, { box: [400, 520, 760, 690], k: XM_K, at: XM_AT, flip: X.flip, rot: X.rot || 0, pivot: X.pivot, to: X.to,
-        before: (x) => { if (X.flip) x.scale(-1, 1); phoneSide(x, ph, 0); } }),
-      G.view === 'turn' ? turnLayer(G) : charLayer('n', G.view, G.P, { box: [760, 380, 1300, 790], k: GM_K, at: GM_AT, flip: G.flip,
+      // Do not even submit the offscreen actor during either insert: a wider
+      // output aspect ratio must not expose the failed side/back/front swaps.
+      ...(t >= .66 && t < 1.62 ? [] : [X.view === 'roll' ? rollingLayer(X, ph) : charLayer('x', X.view, X.P, { box: [400, 520, 760, 690], k: XM_K, at: XM_AT, flip: X.flip, rot: X.rot || 0, pivot: X.pivot, to: X.to,
+        before: (x) => { if (X.flip) x.scale(-1, 1); phoneSide(x, ph, 0); } })]),
+      ...(t >= 1.62 && t < 2.35 ? [] : [G.view === 'turn' ? turnLayer(G) : charLayer('n', G.view, G.P, { box: [760, 380, 1300, 790], k: GM_K, at: GM_AT, flip: G.flip,
         before: (x) => { if (!G.flip) x.scale(-1, 1); stool(x, -2); if (!G.bowlFront) bowl(x, G.bowl[0], G.bowl[1], 26); },
-        after: (x) => { if (!G.flip) x.scale(-1, 1); if (G.bowlFront) bowl(x, G.bowl[0], G.bowl[1], 26); } }),
+        after: (x) => { if (!G.flip) x.scale(-1, 1); if (G.bowlFront) bowl(x, G.bowl[0], G.bowl[1], 26); } })]),
     ];
   },
   light: (t) => darkLight(t, 0),
   glow: () => [{ x: COIL[0] - 20, y: COIL[1] + 1, r: 4, color: [255, 90, 40], a: 0.9, core: 0.3 }],
   emit: (x) => fan(x, 0),
-  cam: () => ({ x: BW / 2 - 20, y: BH / 2 + 12, fit: 1.04 }),
+  cam: s07Camera,
 };
 export async function renderFrame(ctx, t, W, H) { return renderPaint(ctx, t, W, H, shot); }

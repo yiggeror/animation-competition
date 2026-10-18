@@ -5,41 +5,30 @@
   "frame_index": "L is zero-based within S07; v2 review global g = 722 + L",
   "review_frames": [
     0,
-    7,
     10,
-    12,
-    14,
     15,
     16,
     17,
     18,
-    19,
-    20,
-    21,
     22,
     23,
     24,
     25,
     26,
-    27,
     28,
     31,
-    36,
     38,
     39,
     40,
-    41,
-    42,
-    43,
     44,
-    45,
-    46,
     47,
     48,
-    49,
     50,
     54,
+    56,
+    57,
     58,
+    59,
     96,
     101,
     102,
@@ -59,20 +48,20 @@
       "cue": "bowl touches floor"
     },
     {
-      "t": 0.86,
-      "cue": "short clothing/mat rustle during side roll"
-    },
-    {
       "t": 1.05,
       "cue": "quiet stool/cloth movement on standing"
     },
     {
+      "t": 1.06,
+      "cue": "retain existing soft mat thump/rustle for offscreen supine landing; no audio edit or duplicate sound"
+    },
+    {
       "t": 1.82,
-      "cue": "soft far-foot turning placement"
+      "cue": "soft far-foot turning placement (offscreen during child insert)"
     },
     {
       "t": 1.98,
-      "cue": "soft near-foot placement, do not double it with walk onset"
+      "cue": "soft near-foot placement, do not double it with walk onset (offscreen during child insert)"
     },
     {
       "t": 2.43,
@@ -109,44 +98,64 @@
       "release phone"
     ],
     [
-      0.48,
-      "lower shoulder and hip; begin continuous roll setup"
-    ],
-    [
-      0.64,
-      "begin long-axis side roll"
+      0.66,
+      "CUT F16: bowl is still descending; grandma close-up begins"
     ],
     [
       0.72,
-      "bowl settles outside retracted feet; hands begin return to knees"
+      "bowl settles; hands return toward knees"
     ],
     [
       0.92,
-      "both lower palm surfaces contact knee caps"
+      "both lower palm surfaces contact knees"
     ],
     [
       1.05,
-      "hip starts leaving stool, after contact"
+      "hip leaves stool only after contact"
+    ],
+    [
+      1.06,
+      "existing offscreen mat sound"
     ],
     [
       1.08,
-      "roll finishes supine; ground clipping persists"
+      "child pose reaches supine offscreen; no claim of visible continuous roll"
+    ],
+    [
+      1.6,
+      "grandma stands straight before cut"
     ],
     [
       1.62,
-      "far foot turn-step starts, near foot supports"
+      "CUT F39: child already supine/fanning; grandma turn-step starts offscreen"
     ],
     [
       1.82,
-      "far foot lands toward destination; near foot turns"
+      "offscreen far foot lands; child glance begins"
+    ],
+    [
+      1.96,
+      "projected iris reaches right/up glance toward grandma"
     ],
     [
       1.98,
-      "near foot lands and existing first walking step starts"
+      "offscreen near foot lands; walking begins"
+    ],
+    [
+      2.08,
+      "glance hold ends"
+    ],
+    [
+      2.24,
+      "glance returns to rest; no second 2.6s glance"
+    ],
+    [
+      2.35,
+      "CUT F57, not F56: wide shot returns with grandma already walking"
     ],
     [
       2.43,
-      "first original walking step lands"
+      "original first walking step lands"
     ],
     [
       2.88,
@@ -170,7 +179,50 @@
     ],
     [
       4.35,
-      "lamp lift starts only after grip"
+      "lift starts only after grip"
     ]
+  ],
+  "revision": "S07 in-shot cutaways; failed body rotations are offscreen, not repaired",
+  "cuts": [
+    {
+      "t": 0,
+      "first_frame": 0,
+      "last_frame": 15,
+      "view": "wide",
+      "action": "release phone; bowl descends"
+    },
+    {
+      "t": 0.66,
+      "first_frame": 16,
+      "last_frame": 38,
+      "view": "grandma rise close-up",
+      "camera_scene_pixels": {
+        "width": 608,
+        "height_16_9": 342,
+        "center_x": 1024,
+        "center_y": "630 -> 540, following rise 1.05 -> 1.6"
+      },
+      "action": "bowl landing, palm-knee contact, leave stool, stand; child roll offscreen"
+    },
+    {
+      "t": 1.62,
+      "first_frame": 39,
+      "last_frame": 56,
+      "view": "child supine close-up",
+      "camera_scene_pixels": {
+        "width": 400,
+        "height_16_9": 225,
+        "center_x": 605,
+        "center_y": 637.5
+      },
+      "action": "already supine, fanning, one glance toward grandma; grandma turns offscreen"
+    },
+    {
+      "t": 2.35,
+      "first_frame": 57,
+      "last_frame": 107,
+      "view": "wide",
+      "action": "grandma already walking; original first landing 2.43, grip then lift"
+    }
   ]
 }
