@@ -1,0 +1,449 @@
+{
+  "status": "PASS",
+  "all_copied_sources_match_originals": true,
+  "minimum_nine_unchanged_after_first_delivery": true,
+  "six_declared_replay_PNGs_only": true,
+  "no_final_or_intermediate_supplied_to_calculation": true,
+  "final_read_only_after_process_exit": true,
+  "all_stages_hash_verified": 43,
+  "source_files_modified": 0,
+  "new_generation_calls": 0,
+  "external_writes": 0,
+  "sources": [
+    {
+      "path": "F033_input_gate/inputs/F033_actual_edit_target_AA54_1p5x_RGBA.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "da0ec5bff6ffef8640811d7d1b1fec587c36974257061ae748cec9beb75960e2"
+    },
+    {
+      "path": "F033_input_gate/inputs/F033_actual_edit_WHITE_MASK_1p5x.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "aaeacb27672511ca3cd0e9f15219888b3d00f20e6e7b02786fc1d80d87dfd79a"
+    },
+    {
+      "path": "F033_input_gate/inputs/F030_locked_identity_full_arm_volume_REFERENCE.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "47a3684895c6f875a626840d9587ae4102daa6c92ab7d8f2cec1a3874ca5dc22"
+    },
+    {
+      "path": "F033_input_gate/inputs/F033_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "f15987a880ad8fec9e9733ce2f25c4f3a49ffe8903d3c5db63527ed376c77fc3"
+    },
+    {
+      "path": "F033_input_gate/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "a2bcc2d0530fda4160bed990bbc343ff86c34e5c3f6bfc8c58472630444f88ee"
+    },
+    {
+      "path": "F033_native_call16/request.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "4bafeebee2656597e0539db325d1ea93887b2396c5b4f39357c92937ceb001cf"
+    },
+    {
+      "path": "F033_native_call16/prompt.txt",
+      "original_and_copy_unchanged": true,
+      "sha256": "45d57dc9974aa983af328a69c55460dd19f0e98e5d0b588e3c0d741caecd0d98"
+    },
+    {
+      "path": "F033_native_call16/FROZEN_INPUT_MANIFEST.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "6e427f0d371df131a790377d77a0d2ba7400422cef4d0844d7c9216e68208c3a"
+    },
+    {
+      "path": "F033_native_call16/status.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "2d4fc9aabd86a4882292e01929ee0b2e9f593549f817999e9a9da800be6bc3dc"
+    },
+    {
+      "path": "F033_native_call16/raw/F033_whole_turn_arms_native_raw.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "8828aafd54c8e53430be57b425ea5c4c6a651c9519cdc1c1ae31f2d362908401"
+    },
+    {
+      "path": "F033_input_gate/request.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "4bafeebee2656597e0539db325d1ea93887b2396c5b4f39357c92937ceb001cf"
+    },
+    {
+      "path": "F033_input_gate/prompt.txt",
+      "original_and_copy_unchanged": true,
+      "sha256": "45d57dc9974aa983af328a69c55460dd19f0e98e5d0b588e3c0d741caecd0d98"
+    },
+    {
+      "path": "F033_input_gate/geometry/FROZEN_INPUT_MANIFEST.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "6e427f0d371df131a790377d77a0d2ba7400422cef4d0844d7c9216e68208c3a"
+    },
+    {
+      "path": "F033_input_gate/geometry/INPUT_CONTRACT.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "9c71dac53f6d763edc7d669d61c83d1196a779139973773d8f2e07cd505b721e"
+    },
+    {
+      "path": "F033_input_gate/geometry/RAW_UNIFORM_REGISTRATION.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "39e39469127c48754bc8079983363915e4122e63c4ce953551f9d01dddafd2e2"
+    },
+    {
+      "path": "F033_input_gate/build_input.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "225b928c6d9110e32557307d356d630c1b6debc25bb5a7abf23dd87c168848e3"
+    },
+    {
+      "path": "F033_input_gate/composite_returned_crop.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "acdb7c25c180b40c594438ce0b8d248b593812dcbd9436af61623f932c794313"
+    },
+    {
+      "path": "F033_input_gate/register_raw.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "a91c7b4dd57221fcd4d7376cf1fbb1a1dcf8e5271ea7913b9667000c61b29aaf"
+    },
+    {
+      "path": "F033_structure_gate/build_structure.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "ee87eaa47eb335ed654b25cf54f774a1250242be7230ef7e068f7c39a7c6c3de"
+    },
+    {
+      "path": "F033_structure_gate/geometry/F033_first_structure.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "48a3f575454d66b752fb7bc46d773b87cee86ddca375ad0921bdc6ab0eb61f91"
+    },
+    {
+      "path": "F033_color_final/apply_colors.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "2eabeaaf67c7b9d636662a387b74e0429db84f934d26b333903c490c4ceee721"
+    },
+    {
+      "path": "F033_color_final/encode_isolated.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "048a21aa941c8632aa27ec66113b2e33b53619a0a58f58c9160fce0a379624f2"
+    },
+    {
+      "path": "F033_color_final/remeasure_materials.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "97a70fd5a8375cc983b081c67b17f74c5e651388e58c320309cfa48564957f10"
+    },
+    {
+      "path": "F033_color_final/remeasure_reviewer_planes.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "82d5e79fa67c649ce17e24f2092dda24fa16d7a408d7dcad754fd0156a231e96"
+    },
+    {
+      "path": "F033_color_final/geometry/color_actual_diagnostic.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "a117cef8bb72cacae0690712e2972dd31a606bc7c24d4f829e2d569bdbbc3513"
+    },
+    {
+      "path": "F033_color_final/geometry/color_masks_and_checks.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "27b13376112b4ab2139956b63f0f4f33147741d43122387b0bbdca4dc4e252ef"
+    },
+    {
+      "path": "F033_color_final/geometry/reviewer_planes_remeasured.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "420d62243a9def89cdc2d0c26d5fc607646dc3d71a1a54879f9d3bbe3604d467"
+    },
+    {
+      "path": "F033_same_raw_semantic_v1/build.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "021f073b7f4623ffc68eef8426a42a77507a98ef0af9b33bf34035dc64b842f4"
+    },
+    {
+      "path": "F033_same_raw_semantic_v1/geometry/checks.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "e7076a9e5bea70cafe20d251e2cf8f1a8e952b84c8c5302d255bd0f9b174be90"
+    },
+    {
+      "path": "F033_same_raw_semantic_v2/build.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "15392a530bf15a794035c029661e4d78654da34275d2f26b5111334cac20aa80"
+    },
+    {
+      "path": "F033_same_raw_semantic_v2/geometry/checks.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "5ce024b84c150cca56084e7c900ca1e50fc314c81c808774d8750f5eb26c62fc"
+    },
+    {
+      "path": "F033_same_raw_semantic_v3/build.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "e74cdeb309e6b3ecc56b8773ff60ad6c423733608008862d80b9782de48ed21c"
+    },
+    {
+      "path": "F033_same_raw_semantic_v3/geometry/checks.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "69dd3cede5a2923f26f542f904669e2cf8ff3287993032f995a9a50805203050"
+    },
+    {
+      "path": "F033_same_raw_semantic_v4/build.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "67e94f9264d6ba6981a050b902a9f606f8266adeb3cda4e7454de4be2fc60359"
+    },
+    {
+      "path": "F033_same_raw_semantic_v4/geometry/checks.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "6acaf57e76b1f5b34552f81507cb020f47862468b56a243a1aa4e56032fee946"
+    },
+    {
+      "path": "F033_same_raw_semantic_v5/build.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "17760414eae75e6546005819da4e758a475e95b96366d60017f4f12e076ebf2c"
+    },
+    {
+      "path": "F033_same_raw_semantic_v5/geometry/checks.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "8d7026bfec5ac8af49964398e1037d2259faeca5213fbbf56c09c56a40336723"
+    },
+    {
+      "path": "F033_result_registered_nominal/geometry/checks.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "39bdcdd953e5fc338a99bac22aa3110e44223511083267802805352841b3f771"
+    },
+    {
+      "path": "F033_input_gate/masks/F033_RESTORE_true_foreground_AA_backed_by_far_hand.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "e1bef879fdd6eb7220ab66a395d11e0b52e15209be47549ee962f91582b1b6f4"
+    },
+    {
+      "path": "F033_input_gate/masks/F033_WHITE_body_neck_head_arms_wrist_allowed.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "c1f052313a1cf1634d8c31dc58b612d648ec2bf766483b8d30db2384a582005e"
+    },
+    {
+      "path": "F033_input_gate/masks/F033_far_guard_occluded_by_foreground_near_hand.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "2639bbdd07a30f0fd064200af78f3df8f226c8d3c0d5d83d2955e42bdd9a55d1"
+    },
+    {
+      "path": "F033_input_gate/masks/F033_far_original_underlying_full_hand_SEAT_footprint.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "5598879950dafc00b0018efde583f58958688571c96a22fb9239b64c25a2dff0"
+    },
+    {
+      "path": "F033_input_gate/masks/F033_far_visible_hand_jade_TRUE_SEAT_guard.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "ff63f9bcb13a77af97a225dc69d18b408d87d28fb863ebe0a479d9e781e5ff22"
+    },
+    {
+      "path": "F033_input_gate/masks/F033_fixed_table_box_guard.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae"
+    },
+    {
+      "path": "F033_input_gate/masks/F033_near_distal_palm_fingers_entire_match_guard.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "f9d53a5fd0a7cec550c01c294367bb3c0015492db445de53f534c44d11e7e0c4"
+    },
+    {
+      "path": "F033_input_gate/masks/F033_near_proximal_palmroot_release.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "2c570cf932fa033d9bdce5a1a74e62838ce041ff64955a8e2856bb79da808b4a"
+    },
+    {
+      "path": "F033_input_gate/masks/F033_near_whole_transformed_hand_footprint.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "ab4709ac52a35ff194eb835b6e99ed68428d231512f2476bd998f8435ed5726d"
+    },
+    {
+      "path": "F033_input_gate/masks/F033_removed_permission_islands.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "1a3949e80d4c98a005b9866bbb2bf55ba735a103c881cf2ff653fe5be155562f"
+    },
+    {
+      "path": "F033_same_raw_semantic_v5/masks/ADOPT_same_raw_continuous_far_forearm_outer_edge.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "721e8c77e2c21a200ae3af62141c64c8c3c9693f7e4c7c44f80d028560fd4df4"
+    },
+    {
+      "path": "F033_same_raw_semantic_v5/masks/EXCLUDE_native_jade_overhang_keep_original_jade.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "2a8e958b19f8ce986204a2d9c279720650c87ca324c89eafeda8f8a678165154"
+    },
+    {
+      "path": "F033_same_raw_semantic_v5/masks/ORIGINAL_jade_outer_AA_SOURCE_OVER_same_raw_wrist_underlay.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "fb19559ddbfa4335c7ab8f04c0ca6320b3a6b28600dac7838125412d934e7979"
+    },
+    {
+      "path": "F033_same_raw_semantic_v5/masks/RELEASE_detached_old_wrist_ink_NOT_true_jade.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "10b9bed06c1ba935504c7941cfc56409b2b11c391db8267c2595c792760ce76c"
+    },
+    {
+      "path": "F033_same_raw_semantic_v5/masks/RELEASE_old_far_alpha0_guard_outside_true_jade.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "a15d58c89e0533e6bef0cfede709fd2e7de6964f4723e388ca0fc6f7c4a6e047"
+    },
+    {
+      "path": "F033_color_final/masks/blue_blouse_SOFT.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "467c214d1eb0e0f17463b932cd84311623fba355dfda280d58aec9140d67f0fc"
+    },
+    {
+      "path": "F033_color_final/masks/crown_gray_hair_SOFT.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "1eb5b8aac1c50e6488385b61d5cb40c6446e8181fc8dc2c7c1f838e7b18ad185"
+    },
+    {
+      "path": "F033_color_final/masks/far_arm_skin_SOFT.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "4fdc3990fa169a4210a43dc4700a239afb6cc407e88d752b832c0f20db25eb40"
+    },
+    {
+      "path": "F033_color_final/masks/head_ear_neck_skin_SOFT.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "5aa82f3de15a5b42241ae6783c781044bc843ebfb842a108d3f39e066a6ddb17"
+    },
+    {
+      "path": "F033_input_gate/inputs/F033_preplaced_body_anchor_truehands_NO_ROD_RGBA.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "3c1c3a883b32341634e04b615782a2580db17c76f50d2c22c8e584ed53426686"
+    },
+    {
+      "path": "F033_input_gate/inputs/F033_preplaced_true_near_hand_match_RGBA.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "6642d0b0b00f12e72829b83532713e64aedd7e7878ee57afab5956432fbf64da"
+    },
+    {
+      "path": "F033_input_gate/inputs/F033_original_underlying_far_hand_SEAT_RGBA.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "686f00e2cead7d1f2d87f577cf85b1ae9b908310045603fbf5b5abfd2e8cd9af"
+    },
+    {
+      "path": "F033_input_gate/history/pre_AA54/request.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "02a5e6cb61a0bda855cad32ec4cb02c3032a9f0b67aca0641c894145083dba36"
+    },
+    {
+      "path": "F033_input_gate/history/pre_AA54/prompt.txt",
+      "original_and_copy_unchanged": true,
+      "sha256": "45d57dc9974aa983af328a69c55460dd19f0e98e5d0b588e3c0d741caecd0d98"
+    },
+    {
+      "path": "F033_input_gate/history/pre_AA54/build_input.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "f69ad286e421e76047d664c57351f11c9eace07698c5f0e9d0828de51b10b9e9"
+    },
+    {
+      "path": "F033_input_gate/history/pre_AA54/geometry/FROZEN_INPUT_MANIFEST.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "ea5fcd76c684eef5e7209757804f1abfe5c49d3389a06a25f33de0e8c831b242"
+    },
+    {
+      "path": "F033_input_gate/history/pre_AA54/geometry/INPUT_CONTRACT.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "c7e277bc14017b40dce1376986d9b0b5519899a27ba722f82e841da0e8094d07"
+    },
+    {
+      "path": "F033_input_gate/history/pre_AA54/inputs/F033_actual_edit_target_1p5x_RGBA.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "331972a454b1076e2f31f0000c81bc64cac19734af89eb154d76d5feaab8082a"
+    },
+    {
+      "path": "F033_input_gate/history/pre_AA54/inputs/F033_preplaced_body_anchor_truehands_NO_ROD_RGBA.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "7422435cffeb3de3dd2b92b711d7d9207a682059c4e73620f9107b8a3b465163"
+    },
+    {
+      "path": "F033_input_gate/history/pre_AA54/masks/F033_near_distal_palm_fingers_entire_match_guard.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "f19531882ed45ba224ad442ed4ad1f9cc47baa10779153d3e7b417c5fcc4a697"
+    },
+    {
+      "path": "F033_input_gate/history/pre_AA54/masks/F033_near_proximal_palmroot_release.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "d6c8efd4e535c9f8ce19ee13b282379a10d0ac9cabfca6f0d2e85147ae69c659"
+    },
+    {
+      "path": "dependencies/S08_F030_grandma_match_box_RGBA.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "ef53ba49d805d2a9eb2cf934f62b2098a07e924250fcbbd5070cb33fcbba6bc8"
+    },
+    {
+      "path": "dependencies/F030_true_near_hand_match_footprint.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "0f4fa9c34fda0417a4de08441061fb87b5abad5814edb4fbda87e72bd5a8eee0"
+    },
+    {
+      "path": "dependencies/F030_near_distal_hard_guard_footprint.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "0f74bd512ec02f5e1d253778e65d6089ec129ec5b039106797d61636c0d0dedb"
+    },
+    {
+      "path": "dependencies/F030_whole_closed_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "5598879950dafc00b0018efde583f58958688571c96a22fb9239b64c25a2dff0"
+    },
+    {
+      "path": "dependencies/F030_fixed_table_box_footprint.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae"
+    },
+    {
+      "path": "original_upstream/F030_LAYER_PARTITION/build_partition.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "b584a2e5aec417a887376e19648292541531f26b629128d73e79f0963a1aaa65"
+    },
+    {
+      "path": "original_upstream/F030_LAYER_PARTITION/LAYER_VALIDATION.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "3d1e9dfc335615bac65ce19d534dcb0dc9cc5ed5f1ec57483356975971fad224"
+    },
+    {
+      "path": "original_upstream/F030_LAYER_PARTITION/SEALED_MANIFEST.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "e8a52cc2009c2cc3db907fb5c1951f8f7546e467cfad417c663c6accc39d9230"
+    },
+    {
+      "path": "original_upstream/F030_FINAL_LOCKED/HAND_REUSE_CONTRACT.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "216a87b92d99a707bc86cc03017ba36a3984fc113b0591c5cdf6a76798e504ec"
+    },
+    {
+      "path": "original_upstream/F030_FINAL_LOCKED/SEALED_MANIFEST.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "1c71ffce5ba7ad6036d3abfcc41370c3e6bffa88ad7dd874c1877f6e4b2622d7"
+    },
+    {
+      "path": "final/S08_F033_whole_turn_same_raw_final_color_RGBA.png",
+      "original_and_copy_unchanged": true,
+      "sha256": "0f8637f7f1cf5cc01e99029da5da13c9c42bac06329e2b64d77980d997029b47"
+    },
+    {
+      "path": "F033_FINAL_LOCKED/HAND_REUSE_CONTRACT.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "10f49a8592a87ae0daf0cda8cc22f437e09346857c91bec49a5c17fafb4ebb93"
+    },
+    {
+      "path": "F033_FINAL_LOCKED/SEALED_MANIFEST.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "09ed7129b93c0084b6fc64126de1c26a477b0643bf2f66ac28db9eaca6c977c6"
+    },
+    {
+      "path": "F033_FINAL_LOCKED/seal.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "0a438ae9fa8bec7931e5c66c6652b5274bef89c8d6929ed9621be3cc21c189c9"
+    },
+    {
+      "path": "F033_LAYER_PARTITION/LAYER_VALIDATION.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "434fc3d90d1986f6bb9bc1b5a2e1a9b63d3997ba05c30189a6f813e851cf1dc5"
+    },
+    {
+      "path": "F033_LAYER_PARTITION/build_partition.py",
+      "original_and_copy_unchanged": true,
+      "sha256": "30b02c0133836b8ab82fd92d9dab3aa1d361f1c583974c5cf8f5d9ae0e04a5ab"
+    },
+    {
+      "path": "F033_LAYER_PARTITION/layer_contract.js",
+      "original_and_copy_unchanged": true,
+      "sha256": "b83cf49f732704b0bf0e2c85c5d0ce6b9dc743fd19712e7fab6a7be518b63fa3"
+    },
+    {
+      "path": "F033_color_final/isolated_6f/EXPOSURE_AND_DECODE_CHECK.json",
+      "original_and_copy_unchanged": true,
+      "sha256": "8b8ae2001784f9d94c8614addc442c545b694f1306581ae5f328cc28e82210c8"
+    }
+  ]
+}

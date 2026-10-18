@@ -1,0 +1,291 @@
+{
+  "status": "PASS_EXACT_F033_REPLAY",
+  "expected_final_sha256": "0f8637f7f1cf5cc01e99029da5da13c9c42bac06329e2b64d77980d997029b47",
+  "actual_final_sha256": "0f8637f7f1cf5cc01e99029da5da13c9c42bac06329e2b64d77980d997029b47",
+  "output": "color_final/candidates/S08_F033_whole_turn_same_raw_final_color_RGBA.png",
+  "inputs": [
+    {
+      "id": "source030",
+      "path": "dependencies/S08_F030_grandma_match_box_RGBA.png",
+      "sha256": "ef53ba49d805d2a9eb2cf934f62b2098a07e924250fcbbd5070cb33fcbba6bc8",
+      "bytes": 578989
+    },
+    {
+      "id": "near030",
+      "path": "dependencies/F030_true_near_hand_match_footprint.png",
+      "sha256": "0f4fa9c34fda0417a4de08441061fb87b5abad5814edb4fbda87e72bd5a8eee0",
+      "bytes": 3051
+    },
+    {
+      "id": "distal030",
+      "path": "dependencies/F030_near_distal_hard_guard_footprint.png",
+      "sha256": "0f74bd512ec02f5e1d253778e65d6089ec129ec5b039106797d61636c0d0dedb",
+      "bytes": 2980
+    },
+    {
+      "id": "far030",
+      "path": "dependencies/F030_whole_closed_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+      "sha256": "5598879950dafc00b0018efde583f58958688571c96a22fb9239b64c25a2dff0",
+      "bytes": 2735
+    },
+    {
+      "id": "box030",
+      "path": "dependencies/F030_fixed_table_box_footprint.png",
+      "sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "bytes": 2180
+    },
+    {
+      "id": "raw",
+      "path": "F033_native_call16/raw/F033_whole_turn_arms_native_raw.png",
+      "sha256": "8828aafd54c8e53430be57b425ea5c4c6a651c9519cdc1c1ae31f2d362908401",
+      "bytes": 1235076
+    }
+  ],
+  "all_inputs_declared": true,
+  "opened_input_paths": [
+    "F033_native_call16/raw/F033_whole_turn_arms_native_raw.png",
+    "dependencies/F030_fixed_table_box_footprint.png",
+    "dependencies/F030_near_distal_hard_guard_footprint.png",
+    "dependencies/F030_true_near_hand_match_footprint.png",
+    "dependencies/F030_whole_closed_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+    "dependencies/S08_F030_grandma_match_box_RGBA.png"
+  ],
+  "denied_attempts": [
+    "/dev/null"
+  ],
+  "stages_verified": [
+    {
+      "stage": "original030 body partition",
+      "sha256": "9d23df4f5f797bd4bf016c37381892d6d2f64c0f2d6f040f3dd28ce030fd838b",
+      "matches": true
+    },
+    {
+      "stage": "AA54 frozen original-pixel preplacement",
+      "sha256": "3c1c3a883b32341634e04b615782a2580db17c76f50d2c22c8e584ed53426686",
+      "matches": true
+    },
+    {
+      "stage": "actual submitted AA54 first target image",
+      "sha256": "da0ec5bff6ffef8640811d7d1b1fec587c36974257061ae748cec9beb75960e2",
+      "matches": true
+    },
+    {
+      "stage": "input mask F033_fixed_table_box_guard.png",
+      "sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "matches": true
+    },
+    {
+      "stage": "input mask F033_removed_permission_islands.png",
+      "sha256": "1a3949e80d4c98a005b9866bbb2bf55ba735a103c881cf2ff653fe5be155562f",
+      "matches": true
+    },
+    {
+      "stage": "input mask F033_RESTORE_true_foreground_AA_backed_by_far_hand.png",
+      "sha256": "e1bef879fdd6eb7220ab66a395d11e0b52e15209be47549ee962f91582b1b6f4",
+      "matches": true
+    },
+    {
+      "stage": "input mask F033_WHITE_body_neck_head_arms_wrist_allowed.png",
+      "sha256": "c1f052313a1cf1634d8c31dc58b612d648ec2bf766483b8d30db2384a582005e",
+      "matches": true
+    },
+    {
+      "stage": "input mask F033_far_guard_occluded_by_foreground_near_hand.png",
+      "sha256": "2639bbdd07a30f0fd064200af78f3df8f226c8d3c0d5d83d2955e42bdd9a55d1",
+      "matches": true
+    },
+    {
+      "stage": "input mask F033_near_distal_palm_fingers_entire_match_guard.png",
+      "sha256": "f9d53a5fd0a7cec550c01c294367bb3c0015492db445de53f534c44d11e7e0c4",
+      "matches": true
+    },
+    {
+      "stage": "input mask F033_far_original_underlying_full_hand_SEAT_footprint.png",
+      "sha256": "5598879950dafc00b0018efde583f58958688571c96a22fb9239b64c25a2dff0",
+      "matches": true
+    },
+    {
+      "stage": "input mask F033_near_whole_transformed_hand_footprint.png",
+      "sha256": "ab4709ac52a35ff194eb835b6e99ed68428d231512f2476bd998f8435ed5726d",
+      "matches": true
+    },
+    {
+      "stage": "input mask F033_far_visible_hand_jade_TRUE_SEAT_guard.png",
+      "sha256": "ff63f9bcb13a77af97a225dc69d18b408d87d28fb863ebe0a479d9e781e5ff22",
+      "matches": true
+    },
+    {
+      "stage": "input mask F033_near_proximal_palmroot_release.png",
+      "sha256": "2c570cf932fa033d9bdce5a1a74e62838ce041ff64955a8e2856bb79da808b4a",
+      "matches": true
+    },
+    {
+      "stage": "raw registered scene",
+      "sha256": "c7de17bbb79ce488ff6b85ceb7072929c99dd68a12c6ba7383e4b8f3eeb9d528",
+      "matches": true
+    },
+    {
+      "stage": "nominal white-mask composite",
+      "sha256": "4f3091c9024ae5eab8109408af3bd0e8651a28cddb79718dd1ae656b7644d48b",
+      "matches": true
+    },
+    {
+      "stage": "accepted semantic v5",
+      "sha256": "24aa2c820183ceac35905d01f018a3246ac8ca5877dce6254a2b35bfc7eed645",
+      "matches": true
+    },
+    {
+      "stage": "semantic mask ADOPT_same_raw_continuous_far_forearm_outer_edge.png",
+      "sha256": "721e8c77e2c21a200ae3af62141c64c8c3c9693f7e4c7c44f80d028560fd4df4",
+      "matches": true
+    },
+    {
+      "stage": "semantic mask ORIGINAL_jade_outer_AA_SOURCE_OVER_same_raw_wrist_underlay.png",
+      "sha256": "fb19559ddbfa4335c7ab8f04c0ca6320b3a6b28600dac7838125412d934e7979",
+      "matches": true
+    },
+    {
+      "stage": "semantic mask RELEASE_detached_old_wrist_ink_NOT_true_jade.png",
+      "sha256": "10b9bed06c1ba935504c7941cfc56409b2b11c391db8267c2595c792760ce76c",
+      "matches": true
+    },
+    {
+      "stage": "semantic mask RELEASE_old_far_alpha0_guard_outside_true_jade.png",
+      "sha256": "a15d58c89e0533e6bef0cfede709fd2e7de6964f4723e388ca0fc6f7c4a6e047",
+      "matches": true
+    },
+    {
+      "stage": "semantic mask EXCLUDE_native_jade_overhang_keep_original_jade.png",
+      "sha256": "2a8e958b19f8ce986204a2d9c279720650c87ca324c89eafeda8f8a678165154",
+      "matches": true
+    },
+    {
+      "stage": "locked final color image",
+      "sha256": "0f8637f7f1cf5cc01e99029da5da13c9c42bac06329e2b64d77980d997029b47",
+      "matches": true
+    },
+    {
+      "stage": "color mask far_arm_skin_SOFT.png",
+      "sha256": "4fdc3990fa169a4210a43dc4700a239afb6cc407e88d752b832c0f20db25eb40",
+      "matches": true
+    },
+    {
+      "stage": "color mask crown_gray_hair_SOFT.png",
+      "sha256": "1eb5b8aac1c50e6488385b61d5cb40c6446e8181fc8dc2c7c1f838e7b18ad185",
+      "matches": true
+    },
+    {
+      "stage": "color mask blue_blouse_SOFT.png",
+      "sha256": "467c214d1eb0e0f17463b932cd84311623fba355dfda280d58aec9140d67f0fc",
+      "matches": true
+    },
+    {
+      "stage": "color mask head_ear_neck_skin_SOFT.png",
+      "sha256": "5aa82f3de15a5b42241ae6783c781044bc843ebfb842a108d3f39e066a6ddb17",
+      "matches": true
+    },
+    {
+      "stage": "sealed independent source F033_fixed_table_box_footprint.png",
+      "sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "matches": true
+    },
+    {
+      "stage": "sealed independent source F033_fixed_table_box_RGBA.png",
+      "sha256": "cf3e3aedca8b9b681ac9e1c6cd9e6bc80eba689168ace734840e86ae7a1f5f1f",
+      "matches": true
+    },
+    {
+      "stage": "sealed independent source F033_true_near_hand_match_INDEPENDENT_FOREGROUND_footprint.png",
+      "sha256": "ab4709ac52a35ff194eb835b6e99ed68428d231512f2476bd998f8435ed5726d",
+      "matches": true
+    },
+    {
+      "stage": "sealed independent source F033_far_original_jade_AA_requires_same_raw_skin_underlay.png",
+      "sha256": "fb19559ddbfa4335c7ab8f04c0ca6320b3a6b28600dac7838125412d934e7979",
+      "matches": true
+    },
+    {
+      "stage": "sealed independent source S08_F033_grandma_match_box_RGBA.png",
+      "sha256": "0f8637f7f1cf5cc01e99029da5da13c9c42bac06329e2b64d77980d997029b47",
+      "matches": true
+    },
+    {
+      "stage": "sealed independent source F033_near_distal_hard_guard_RGBA.png",
+      "sha256": "dd3ba49cf94e0c366b4bca6078b3eed89abc2a557599e2ae19fec5ccd40059e8",
+      "matches": true
+    },
+    {
+      "stage": "sealed independent source F033_true_near_hand_match_INDEPENDENT_FOREGROUND_RGBA.png",
+      "sha256": "c5007faf07a73248c97caee1c609bda25d736d25c1081438a06841647f0c7f11",
+      "matches": true
+    },
+    {
+      "stage": "sealed independent source F033_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+      "sha256": "fc8a5aae3345c904f1a45d7dc3b5fb1a317d2c74aedea9985cdf3f6176deb50d",
+      "matches": true
+    },
+    {
+      "stage": "sealed independent source F033_far_hand_jade_SEAT_hard_guard.png",
+      "sha256": "1a3047138caeaed8f4e6c47c08756d10bd8cf05b7c2a218cb33bb10e0562b9dc",
+      "matches": true
+    },
+    {
+      "stage": "sealed independent source F033_near_distal_hard_guard_footprint.png",
+      "sha256": "f9d53a5fd0a7cec550c01c294367bb3c0015492db445de53f534c44d11e7e0c4",
+      "matches": true
+    },
+    {
+      "stage": "sealed independent source F033_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_RGBA.png",
+      "sha256": "88d6c528d209237a55abd445f65290249080e7759aea045789f5b8e8ade462dc",
+      "matches": true
+    },
+    {
+      "stage": "exclusive layer frames/F033_forearms_elbows_original_pixels.png",
+      "sha256": "cc72ef2875b0eeb42b9a4fcfd767f2997da6e2b0cf6265d0961d7b895af2263e",
+      "matches": true
+    },
+    {
+      "stage": "exclusive layer frames/F033_table_box_original_pixels.png",
+      "sha256": "52e15b0f4a7cf2d1e7472d0226c032514ecdf4cd4506fbf47401968caf223406",
+      "matches": true
+    },
+    {
+      "stage": "exclusive layer frames/F033_body_behind_original_pixels.png",
+      "sha256": "adc14536112cc5ef24316d94bc88f6f5bc08cb8ab8d9cc6ea14aae7d79bfe511",
+      "matches": true
+    },
+    {
+      "stage": "exclusive layer masks/F033_arms_binary.png",
+      "sha256": "1f8bd062fbb0d72f4592895dda0462b02221e753fefb74929386e7766813f12a",
+      "matches": true
+    },
+    {
+      "stage": "exclusive layer masks/F033_table_box_binary.png",
+      "sha256": "5af8ad0ae2746526a13e6b27e10674a2b9f847ff739175bb9dcbc4f328b9af4c",
+      "matches": true
+    },
+    {
+      "stage": "exclusive layer masks/F033_body_binary.png",
+      "sha256": "5a56a36ec79e1c5274b7f025f603582fbdd8e539098cbf10b9f893d2e5163ef3",
+      "matches": true
+    }
+  ],
+  "input_count": 6,
+  "new_image_generation_calls": 0,
+  "network_calls": 0,
+  "alpha_changed_pixels": 0,
+  "protected_hand_match_jade_seat_box_changed_pixels": 0,
+  "actual_near_arm_skin_changed_pixels": 0,
+  "restored_original_AA_input_pixels": 54,
+  "semantic_original_outer_jade_AA_source_over_pixels": 31,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "Pillow": "12.3.0",
+    "NumPy": "2.3.5",
+    "SciPy": "1.17.0",
+    "zlib": "1.3.2",
+    "zlib_runtime": "1.3.2"
+  },
+  "scope": "Pixel reconstruction only; no new visual approval, actual Canvas integration or AI-service regeneration claimed."
+}

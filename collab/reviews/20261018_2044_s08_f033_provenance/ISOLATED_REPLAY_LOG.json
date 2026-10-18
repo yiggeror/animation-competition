@@ -1,0 +1,34 @@
+{
+  "started_utc": "2026-10-18T20:49:05.759377+00:00",
+  "finished_utc": "2026-10-18T20:49:12.562667+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "replay_f033.py",
+    "--out",
+    "output"
+  ],
+  "cwd": "/tmp/astra_s08_f033_full_replay_2049",
+  "exit_code": 0,
+  "pre_run_files": [
+    "F033_native_call16/raw/F033_whole_turn_arms_native_raw.png",
+    "REPLAY_DEPENDENCIES.json",
+    "dependencies/F030_fixed_table_box_footprint.png",
+    "dependencies/F030_near_distal_hard_guard_footprint.png",
+    "dependencies/F030_true_near_hand_match_footprint.png",
+    "dependencies/F030_whole_closed_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+    "dependencies/S08_F030_grandma_match_box_RGBA.png",
+    "replay_f033.py"
+  ],
+  "only_six_inputs_plus_script_and_manifest": true,
+  "reference_final_present_during_replay": false,
+  "network_used": false,
+  "new_generation_calls": 0,
+  "output_SHA256": "0f8637f7f1cf5cc01e99029da5da13c9c42bac06329e2b64d77980d997029b47",
+  "post_run_external_oracle_comparison": {
+    "different_RGBA_pixels": 0,
+    "max_channel_error": 0,
+    "PNG_bytes_identical": true,
+    "expected_SHA256": "0f8637f7f1cf5cc01e99029da5da13c9c42bac06329e2b64d77980d997029b47",
+    "actual_SHA256": "0f8637f7f1cf5cc01e99029da5da13c9c42bac06329e2b64d77980d997029b47"
+  }
+}

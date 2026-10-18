@@ -1,0 +1,143 @@
+{
+  "status": "FIRST_F033_STRUCTURE_GATE_ONLY_NO_REQUEST_OR_NATIVE_CALL",
+  "source": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_FINAL_LOCKED/S08_F030_grandma_match_box_RGBA.png",
+  "source_sha256": "ef53ba49d805d2a9eb2cf934f62b2098a07e924250fcbbd5070cb33fcbba6bc8",
+  "source_points_screen_approx": {
+    "near_shoulder": [
+      704,
+      689
+    ],
+    "near_sleeve_exit": [
+      754,
+      817
+    ],
+    "near_elbow": [
+      858,
+      886
+    ],
+    "near_wrist": [
+      1018.146969743912,
+      789.9601982817446
+    ],
+    "far_shoulder": [
+      998,
+      681
+    ],
+    "far_sleeve_exit": [
+      1045,
+      805
+    ],
+    "far_elbow": [
+      1077,
+      881
+    ],
+    "far_wrist": [
+      1140,
+      829
+    ],
+    "neck_skin_root": [
+      861,
+      687
+    ],
+    "collar_V": [
+      866,
+      736
+    ],
+    "face_center": [
+      889,
+      543
+    ],
+    "cranium_center": [
+      847,
+      479
+    ]
+  },
+  "target_points_screen_approx": {
+    "near_shoulder": [
+      751,
+      698
+    ],
+    "far_shoulder": [
+      1018,
+      681
+    ],
+    "neck_skin_root": [
+      905,
+      690
+    ],
+    "collar_V": [
+      912,
+      738
+    ],
+    "face_center": [
+      934,
+      548
+    ],
+    "cranium_center": [
+      892,
+      484
+    ],
+    "far_wrist": [
+      1140,
+      829
+    ],
+    "near_wrist": [
+      1092.2232630810502,
+      763.5912604910552
+    ],
+    "near_elbow": [
+      936.128068310233,
+      866.0850925088889
+    ],
+    "near_sleeve_exit": [
+      852.8204375706281,
+      790.4468008798889
+    ],
+    "far_elbow": [
+      1082,
+      881
+    ],
+    "far_sleeve_exit": [
+      1055,
+      800
+    ]
+  },
+  "near_chain_proxy_lengths_030": [
+    250.04999500099976,
+    186.73696857408623
+  ],
+  "near_chain_proxy_lengths_033": [
+    250.0499950009998,
+    186.73696857408626
+  ],
+  "projection_note": "Manual screen proxies with5-10px uncertainty. Conserved2D segment lengths are a conservative first construction baseline, NOT anatomical bone lengths or a demand to flatten3D perspective. Natural elbow, sleeve volume and projected changes remain actual-image review.",
+  "near_group_transform": {
+    "scale": 1,
+    "clockwise_rotation_deg": 7,
+    "source_match_head": [
+      1148,
+      717
+    ],
+    "target_match_head": [
+      1230,
+      707
+    ],
+    "visible_exit": [
+      1194.9191346191965,
+      737.3699338842536
+    ],
+    "visible_segment_px": 46.400431
+  },
+  "far_hand_jade_alpha0_seat": "Original030 far hand/jade/seat intrinsically unchanged. New near hand overlays in foreground; actual seat core must remain visible. Original1006 outer-air and183 proximal-collar releases are not restored.",
+  "body_change": "Near shoulder+47,+9, far shoulder+20,0; neck root+44,+3; head+45,+5; coherent small chest yaw/lean, natural neck turn and eye gaze to the raised real match head. Full-body natural painting, no code body stretch.",
+  "near_elbow_change": [
+    78.12806831023295,
+    -19.91490749111108
+  ],
+  "next_step": "After coordinator/reviewer structure gate, prepare one actual five-image edit input and explicit mask. Reserved logicalcall16, not submitted.",
+  "actual_030_far_hand_occluded_by_true033_near_visible_px": 1431,
+  "near_visible_over_low_knob_core_px": 0,
+  "flame_envelope_min_far_hand_px": 31.78049716414141,
+  "flame_envelope_far_visible_overlap_px": 0,
+  "flame_depth_note": "033 endpoint lies before left pipe. Future033\u2192036 crosses pipe projection; must pass foreground with real Canvas lamp geometry, not claim2D clearance. This structure image draws no real flame asset."
+}

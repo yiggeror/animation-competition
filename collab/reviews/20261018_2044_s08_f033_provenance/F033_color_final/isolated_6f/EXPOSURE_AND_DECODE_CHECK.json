@@ -1,0 +1,63 @@
+{
+  "scope": "ISOLATED neutral character exposure, not actual Canvas lamp/table/fire scene",
+  "fps": 24,
+  "frame_count": 6,
+  "exposures": [
+    {
+      "state": "F030",
+      "frames": 3
+    },
+    {
+      "state": "F033",
+      "frames": 3
+    }
+  ],
+  "sources": [
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_FINAL_LOCKED/S08_F030_grandma_match_box_RGBA.png",
+      "sha256": "ef53ba49d805d2a9eb2cf934f62b2098a07e924250fcbbd5070cb33fcbba6bc8"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F033_color_final/candidates/S08_F033_whole_turn_same_raw_final_color_RGBA.png",
+      "sha256": "0f8637f7f1cf5cc01e99029da5da13c9c42bac06329e2b64d77980d997029b47"
+    }
+  ],
+  "videos": [
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F033_color_final/isolated_6f/F030x3_F033x3_24fps_ISOLATED_light.mp4",
+      "sha256": "c98fa5ccc4a590c79d23c61b90183451dcc64f2fa24b270ccb9f1f97fc6cc426",
+      "bytes": 154393,
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "24/1",
+            "duration": "0.250000",
+            "nb_read_frames": "6"
+          }
+        ]
+      }
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F033_color_final/isolated_6f/F030x3_F033x3_24fps_ISOLATED_dark.mp4",
+      "sha256": "f5ebe9cb703af21fb518107f76887c0e35af37f98738fb6ae93e7a289f893082",
+      "bytes": 149122,
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "24/1",
+            "duration": "0.250000",
+            "nb_read_frames": "6"
+          }
+        ]
+      }
+    }
+  ]
+}
