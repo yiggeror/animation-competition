@@ -1,0 +1,36 @@
+{
+  "status": "PREPARATION_REVIEWED_PENDING_ASTRA_INPUT_GATE_NOT_FROZEN_NOT_CALLED",
+  "reviewer": "cloud_root",
+  "scope": "F063 source-material target guide, complete redraw domain, source provenance and proposed request only",
+  "actual_images_viewed": [
+    "qa/F044_F063_actual_target_and_full_domain_gray.png",
+    "qa/F044_F063_actual_target_and_full_domain_dark.png",
+    "qa/F063_actual_crop_and_WHITE_MASK_gray.png",
+    "qa/technical_wrist_head_projection_conflict_gray_GUIDE.png",
+    "qa/source_palm_surface_correspondence_gray.png",
+    "qa/actual_rigid_unit_and_whole_left_hand_gap_gray_GUIDE.png"
+  ],
+  "accepted_preparation_facts": [
+    "Unique production mother is F044 fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9. F026 supplies angle, lens and support context only.",
+    "The same genuine source hand/torch unit undergoes a single rigid scale-1 projection. G/L/T targets agree within 0.002 native pixels, axis length and grip fraction are preserved.",
+    "White domain includes the complete new hand/torch, both complete arms, obsolete material, clothing reconstruction and vacated transparent regions. Protected material has no alpha-zero moat and no white-mask intersection.",
+    "Actual alpha-128 source material has zero hand/unit overlap and a minimum 15-native-pixel center distance; the fingertip-region minimum is 23. The nominal 32-native surface-point displacement is not physical clearance.",
+    "Prepared arguments and prompt are archived for review. No native image call or finished new anatomy has been produced."
+  ],
+  "Astra_decisions_required_before_any_call": [
+    "Review the proposed 700x670 crop and all five actual input PNGs. They are proposed inputs, not a frozen request.",
+    "The old projected proximal wrist overlaps fixed hair/head in 203 alpha-128 pixels at native bbox 946..969 / 487..519. The complete new hand, wrist and arm must be natively redrawn with natural topology while respecting the fixed head and torch targets. This technical projection is not approved anatomy.",
+    "Source surface proxy (1120,717) is a manual contact-semantics interpretation, not a measured anatomical center or separately frozen correspondence. Review its mapping to P-prime (1151.292,645.375); the fixed target has not been moved.",
+    "Source hand/torch extraction is genuine F044 lineage but not pixel-identical to the flattened fe70 unit: 104 RGBA pixel differences at source alpha>=128, 103 at >=240 and 17 at alpha=255. Do not claim bitwise identity to the flattened mother."
+  ],
+  "future_native_output_checks": [
+    "Complete near and far elbow/wrist continuity and plausible five-finger ownership",
+    "All F063 fingers and palm remain visibly clear of the actual new torch",
+    "Real OFF switch configuration, native lamp-mouth perspective and unchanged rigid torch proportions",
+    "Consistent character identity, gaze and material colors after any proposed output"
+  ],
+  "timing": "063-068 x6 OFF dark; 069-072 x4 transit dark; 073-076 x4 first ON; 077-084 x8 whole-head confirmation; 085-095 x11 steady bright screen-right",
+  "new_image_calls": 0,
+  "production_candidate_adopted": false,
+  "scope_excludes": "No F069/F073 native image or mask; no batch acceptance, full-scene render, ready/EDL/audio or shared-document change"
+}

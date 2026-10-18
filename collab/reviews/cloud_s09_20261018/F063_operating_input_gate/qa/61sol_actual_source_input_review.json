@@ -1,0 +1,166 @@
+{
+  "status": "F063_REAL_SOURCE_TARGET_AND_COMPLETE_MASK_READY_FOR_ASTRA_INPUT_REVIEW_NO_NATIVE_CALL",
+  "reviewer": "cloud_6.1sol_preparer",
+  "scope": "Single063 target-material guide/full redraw domain; not accepted anatomy or future six-state batch",
+  "actual_viewed": [
+    "sources/F044_fe70_LOCKED_mother.png (actual raw source view in preceding058 preparation)",
+    "sources/F026_angle_lens_support_CONTEXT_ONLY.png (actual raw026 viewed)",
+    "sources/F031_pure_same_grip_torch_lineage.png (actual raw layer viewed)",
+    "qa/F044_F063_actual_target_and_full_domain_gray.png",
+    "qa/F044_F063_actual_target_and_full_domain_dark.png",
+    "qa/F063_actual_crop_and_WHITE_MASK_gray.png",
+    "qa/technical_wrist_head_projection_conflict_gray_GUIDE.png",
+    "qa/source_palm_surface_correspondence_gray.png",
+    "/tmp/S09_F063_first_actual_unit_and_hand_gap.png"
+  ],
+  "facts_and_findings": [
+    "唯一生产母044fe70；用同一044真实握手筒来源整体旋转/平移作目标，未拿026换握位。矩阵刚性scale1，G/L/T匹配父/Astra冻结目标到.002native内，轴长未变，握轴距尾约51.86%。",
+    "掌目标按拟接触上表面语义解释。原可见1120/717是明确人工source correspondence，未映射内部1120/750；P′1151.292/645.375不变。实际源指尖清楚、无碰筒；不额外转手或挪掌。",
+    "alpha≥128完整源左手对整握手筒重叠0，最近像素中心距15native，source指尖区域最低23；是原图材料扫描，不将32法线点距当接触/间隙证明。1/20/240阈值结果另存geometry。",
+    "必须保留的投影局限：旧技术腕片转后在946..969/487..519碰固定发梢203个alpha≥128像素，逆源坐标1008.13..1039.49/527.09..555.60均在旧腕料/墨AA区。头领恢复母源0改，不冻结这块腕形；完整新握手/腕/近臂原生真绘需自然绕开发梢，不移动冻结筒轴或只画窄桥。",
+    "灰暗实际三栏显示原近臂旧姿态与原远臂手截口仍为技术证据，整新手筒/两完整臂/旧新空域都WHITE待新画。没有代码画出新肢体或把源切口宣称成态；后层袖/远臂不以hidden alpha锁前景。",
+    "实际稳定头领/近ruffle/裙料硬保，操作白域交集全0，guard中源alpha0像素0，旧筒和新筒除真实固定材料/头交叠处外完整可绘；future69等不制作新图或mask。"
+  ],
+  "frozen_geometry_and_checks": {
+    "mother044_sha256": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+    "unit_source_sha256": "b8774b779a30c1653c645aacebb01290c7ff77b63ffa9e70f03172e849224ca0",
+    "unit_transform": {
+      "rotation_degrees": 78.508,
+      "scale": 1,
+      "matrix": [
+        [
+          0.19923110917411352,
+          -0.9799525320836987
+        ],
+        [
+          0.9799525320836987,
+          0.19923110917411352
+        ]
+      ],
+      "translation_native": [
+        1284.0792113302323,
+        -606.8253880588991
+      ],
+      "G_source": [
+        1134.519,
+        470.0
+      ],
+      "G_target": [
+        1049.533,
+        598.588
+      ],
+      "actual_G_mapped": [
+        1049.533,
+        598.588
+      ],
+      "source_lamp_axis": [
+        1135.0,
+        289.0
+      ],
+      "source_tail_axis": [
+        1134.0,
+        665.0
+      ],
+      "actual_L_target": [
+        1227.0002384706622,
+        562.9985264074178
+      ],
+      "actual_T_target": [
+        858.3388552980175,
+        636.9294709248006
+      ],
+      "fixed_target_rounding_tolerance_native": 0.002,
+      "axis_source_native": 376.00132978488256,
+      "axis_target_native": 376.00132978488244,
+      "axis_registered_approx": 236.77665603582022,
+      "grip_axis_fraction_from_tail": 0.5186170239855139,
+      "AA_resampling": "One entire-unit BICUBIC rotation/translation, no nonuniform scale or piece-by-piece hand/torch warp; 2D target only."
+    },
+    "actual_gap128": {
+      "whole_unit_left_hand_overlap_pixels": 0,
+      "minimum_pixel_center_distance_native": 15.0,
+      "nearest_left_hand_xy": [
+        1106,
+        645
+      ],
+      "nearest_unit_xy": [
+        1097,
+        633
+      ],
+      "fingertip_region_minimum_pixel_center_distance_native": 23.0
+    },
+    "head_projection_conflict": {
+      "alpha128_pixels": 203,
+      "bbox_native_inclusive": [
+        946,
+        487,
+        969,
+        519
+      ],
+      "warm_skin_test_count": 190,
+      "remaining_pixels_include_wrist_ink_AA_not_assumed_all_skin": 13,
+      "inverse_source_wrist_bbox_fractional": [
+        1008.1272223888549,
+        527.0851784741237,
+        1039.4857034155332,
+        555.6010199872723
+      ],
+      "description": "Rotated old technical proximal wrist material intersects fixed hair/head outline; not torch body/cap/grip-axis displacement. Actual head restored unchanged. Entire new near hand/wrist/arm must be naturally native redrawn; technical cut/2D silhouette cannot be frozen as finished anatomy.",
+      "Astra_input_review_required": true
+    },
+    "unit_layer_vs_flat_mother_RGBA_differences_not_hidden": {
+      "128": 104,
+      "240": 103,
+      "255": 17
+    },
+    "white_pixels": 196613,
+    "guard_intersections": {
+      "head_neck_collar": 0,
+      "actual_stable_near_ruffle": 0,
+      "actual_stable_waist_skirt": 0
+    },
+    "guard_alpha0": 0,
+    "crop_xyxy": [
+      600,
+      230,
+      1300,
+      900
+    ],
+    "source_snapshot_manifest_sha256": "b891f010779242d3c5872c98e01feb9cf0c6d5eaea351e0e8129b1364bfef1ca",
+    "isolated_replay": {
+      "reference/F063_actual_source_target_GUIDE_NOT_ART.png": {
+        "sha256": "09638be919543134cbcbfbdbff0778ac37b25ebda3fd7899bb7c0325e781946e",
+        "isolated_same_bytes": true
+      },
+      "reference/F063_crop_RGBA_TARGET_GUIDE_NOT_ART.png": {
+        "sha256": "3341e4ae9357db18118ab04e6b5be6bc5569fe3433a148b53ffe657e612edbbb",
+        "isolated_same_bytes": true
+      },
+      "masks/F063_complete_unit_both_full_arms_old_new_vacated_WHITE_EDIT_PENDING_ASTRA.png": {
+        "sha256": "b0771e5679fb09d513b6cca21f3a9cc95129cf551dbe309423e0411e4d3f57e9",
+        "isolated_same_bytes": true
+      },
+      "masks/F063_crop_WHITE_EDIT_PENDING_ASTRA.png": {
+        "sha256": "c1484e4716ed033f3475b2ab4c34b053abcd997c2c25ce8d4bd088feae5e5429",
+        "isolated_same_bytes": true
+      },
+      "layers/F063_rigid_whole_unit_TARGET_GUIDE_NOT_ART.png": {
+        "sha256": "4f1f78c320b4881b66c5752f0e628cc486d8d6a8266e3633de06354cdbbacefd",
+        "isolated_same_bytes": true
+      },
+      "layers/F063_whole_left_hand_surface_target_GUIDE_NOT_ART.png": {
+        "sha256": "ad05ccc4bed71dba8b51a311319075c5a33a4bc7cfa78b411719224f90488192",
+        "isolated_same_bytes": true
+      }
+    }
+  },
+  "remaining_Astra_input_gate_review": [
+    "实际固定目标已确定，不再请求重冻G/L/T/P′；须审完整手/全臂真绘域与2D腕片碰发梢的说明，后续原生图自然手腕拓扑不能继承该技术截边。",
+    "真实新手五指/掌厚、近远肘连续、063所有指尖仍离筒、滑键真实OFF端点与灯口原生透视都须真实输出后审；本包不是这几项通过。"
+  ],
+  "unchanged_timing": "063x6 OFF暗→069x4 TRANSIT暗→073x4首次ON亮→077x8整头确认→085x11稳亮；无前亮",
+  "new_image_calls": 0,
+  "new_human_drawn_pixels": 0,
+  "source_or_shared_files_modified": false,
+  "git_mutations": false
+}

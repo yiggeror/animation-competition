@@ -1,0 +1,198 @@
+{
+  "status": "F063_ONLY_REFERENCE_AND_COMPLETE_MASK_PENDING_ASTRA_NO_CALL",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "b300752eea9f9c82615b80e7e6f33a11c1b2d70c5467fc48f841abf921ef95d6"
+    },
+    {
+      "path": "geometry/preparation_checks.json",
+      "sha256": "cf66fe097c6fe5cfcad937de7d422883396ec51575d4d366835d9c5cf15f06ee"
+    },
+    {
+      "path": "layers/F044_actual_receiver_whole_hand_GUIDE_SOURCE.png",
+      "sha256": "44350800ece9c7507fc80bdde54ebef74dc20851529e6cc18f28aeab06cb848b"
+    },
+    {
+      "path": "layers/F044_original_same_rigid_unit_GUIDE_SOURCE.png",
+      "sha256": "b8774b779a30c1653c645aacebb01290c7ff77b63ffa9e70f03172e849224ca0"
+    },
+    {
+      "path": "layers/F063_rigid_whole_unit_TARGET_GUIDE_NOT_ART.png",
+      "sha256": "4f1f78c320b4881b66c5752f0e628cc486d8d6a8266e3633de06354cdbbacefd"
+    },
+    {
+      "path": "layers/F063_whole_left_hand_surface_target_GUIDE_NOT_ART.png",
+      "sha256": "ad05ccc4bed71dba8b51a311319075c5a33a4bc7cfa78b411719224f90488192"
+    },
+    {
+      "path": "masks/F063_complete_unit_both_full_arms_old_new_vacated_WHITE_EDIT_PENDING_ASTRA.png",
+      "sha256": "b0771e5679fb09d513b6cca21f3a9cc95129cf551dbe309423e0411e4d3f57e9"
+    },
+    {
+      "path": "masks/F063_crop_WHITE_EDIT_PENDING_ASTRA.png",
+      "sha256": "c1484e4716ed033f3475b2ab4c34b053abcd997c2c25ce8d4bd088feae5e5429"
+    },
+    {
+      "path": "masks/HARD_actual_head_neck_collar.png",
+      "sha256": "5b72192c39bccd7a440031be7c8eb2239aac7c24e32f0ed513002ec6d3264c63"
+    },
+    {
+      "path": "masks/HARD_actual_stable_near_ruffle_ONLY.png",
+      "sha256": "223f98f56a91738c89208dfde862f7819a4a100f4dd0a21cce0fb3ac9412077e"
+    },
+    {
+      "path": "masks/HARD_actual_stable_waist_skirt_except_old_new_arm.png",
+      "sha256": "56a677d734ee34792105273c7a5373b0da2507ba817d8e54c65bc98c1e4250fb"
+    },
+    {
+      "path": "masks/full_redraw_semantic_envelope_GUIDE_ONLY.png",
+      "sha256": "470c762b6c0db9bf801f8117c3d8d128a3d2066e41228381653a719b38dc2569"
+    },
+    {
+      "path": "masks/old_receiver_actual_hand_material.png",
+      "sha256": "1fb03c28f0582294f2b25ffe536b12cd39dd2d816117026cc27842191cd2f765"
+    },
+    {
+      "path": "masks/old_unit_vacated_material.png",
+      "sha256": "b25ddabc3453d7baf1e66cd470a8c443f1d27d7e683d150d0eedd768d830310c"
+    },
+    {
+      "path": "masks/rotated_unit_technical_wrist_over_head_PROJECTION_CONFLICT_NOT_FROZEN.png",
+      "sha256": "7661121296f6e5f244260d79d2f880e48d565f5af39f5dd49e1066ba58148ea1"
+    },
+    {
+      "path": "prepare.py",
+      "sha256": "a25d409bfa186d1bca1564f484bd4aafb8db7575d26ed8b8d6f2495118d7574f"
+    },
+    {
+      "path": "qa/61sol_actual_source_input_review.json",
+      "sha256": "0b113072f4e2bdfb77f3d6235ba349cc0141f55c9e7adaec87fc13ed6393da00"
+    },
+    {
+      "path": "qa/F044_F063_actual_target_and_full_domain_dark.png",
+      "sha256": "0fbdde544d562f96792ff024bfc5139fc351da00524c2b8495551fff1a3e3dc4"
+    },
+    {
+      "path": "qa/F044_F063_actual_target_and_full_domain_gray.png",
+      "sha256": "2c6534a43206009ee8bb245eba3c1fed6149c61c4afa02f55daf232e6179bbaf"
+    },
+    {
+      "path": "qa/F063_actual_crop_and_WHITE_MASK_dark.png",
+      "sha256": "d9050859441c87f81dcf0927ee9d13cda98e628a8d1b8134e77169aa1c66e159"
+    },
+    {
+      "path": "qa/F063_actual_crop_and_WHITE_MASK_gray.png",
+      "sha256": "04f302f1a5b4b5b2bad757424c417719f72791125e364ba08c96b5d2833e4669"
+    },
+    {
+      "path": "qa/F063_complete_redraw_overlay_dark.png",
+      "sha256": "144c4bd9d3428b23d0122ecc1f8e40802aaf19b60cfdd8edf147657337d82d57"
+    },
+    {
+      "path": "qa/F063_complete_redraw_overlay_gray.png",
+      "sha256": "dd09bb00b4f2a8cd306f401cfc6eb65b28706d73e1ddbce6395d1e898d7d9533"
+    },
+    {
+      "path": "qa/F063_crop_target_dark_NOT_ART.png",
+      "sha256": "62d148ea17129e9b3162759132d64a8bbc2e7dc69336c023821ebe58a9abe957"
+    },
+    {
+      "path": "qa/F063_crop_target_gray_NOT_ART.png",
+      "sha256": "d17c725c79a0bffe2b0589c1286bc901c0f8b93fc7aa08c7800d0c5793d65c1f"
+    },
+    {
+      "path": "qa/F063_full_target_dark_NOT_ART.png",
+      "sha256": "808f502c560f949bd46120b8378014bb9a1a18a791bdb00b3e2c9d834c8bf76c"
+    },
+    {
+      "path": "qa/F063_full_target_gray_NOT_ART.png",
+      "sha256": "c0e506333e4f95e8627eeb7aa2b0b4e87b38f49ced2e1a2a94863d02a6d27423"
+    },
+    {
+      "path": "qa/actual_rigid_unit_and_whole_left_hand_gap_dark_GUIDE.png",
+      "sha256": "1bf0fa0686589a26bf4bdcd4cf52a65b15a78dd42a31120396e3416bb5ddab0e"
+    },
+    {
+      "path": "qa/actual_rigid_unit_and_whole_left_hand_gap_gray_GUIDE.png",
+      "sha256": "fb394b3973e630bedf7155e7e05ae0e39708efd73d6d6880ca89d2887d5bcc06"
+    },
+    {
+      "path": "qa/source_palm_surface_correspondence_dark.png",
+      "sha256": "c50a0130848ec89ce98b1f36745d5aa30a135db3058c2525cb99e26109e56e90"
+    },
+    {
+      "path": "qa/source_palm_surface_correspondence_gray.png",
+      "sha256": "1ee068f4e4d46f1cfa61603930f336841d27683c6538aefb1a773cef5a64d03b"
+    },
+    {
+      "path": "qa/technical_wrist_head_projection_conflict_dark_GUIDE.png",
+      "sha256": "04bab4962fff1ccc056a8b9f8f7ae158288a64d8e98ca1598998105d130d4596"
+    },
+    {
+      "path": "qa/technical_wrist_head_projection_conflict_gray_GUIDE.png",
+      "sha256": "3afbb7a49fd6bdcc08025f388a318dee878d916abac0ca8d980455457b1742db"
+    },
+    {
+      "path": "reference/F063_actual_source_target_GUIDE_NOT_ART.png",
+      "sha256": "09638be919543134cbcbfbdbff0778ac37b25ebda3fd7899bb7c0325e781946e"
+    },
+    {
+      "path": "reference/F063_crop_RGBA_TARGET_GUIDE_NOT_ART.png",
+      "sha256": "3341e4ae9357db18118ab04e6b5be6bc5569fe3433a148b53ffe657e612edbbb"
+    },
+    {
+      "path": "requests/arguments_PREPARED_NOT_CALLED.json",
+      "sha256": "7d94937c8f58e4f9b158e2fb11e68cb0e8cb07b5e105dcd690b111d41f64caf8"
+    },
+    {
+      "path": "requests/inputs_PENDING_ASTRA_NOT_FROZEN_FOR_CALL.json",
+      "sha256": "20a007ace9b93d8899a5cb9c718cacfb0b9523a57dd317082faae789c30d451c"
+    },
+    {
+      "path": "requests/prompt_PREPARED_NOT_CALLED.txt",
+      "sha256": "d6792e96d1d201907866c868537a355f3d1d8ca55d8cb99d550aa259326b5d9a"
+    },
+    {
+      "path": "sources/F026_angle_lens_support_CONTEXT_ONLY.png",
+      "sha256": "a9a3eb670a30a6a87792a3a298f798c34a70923b3c4ea49b15c058de2a941ccc"
+    },
+    {
+      "path": "sources/F031_pure_same_grip_torch_lineage.png",
+      "sha256": "5e39cda65ed11384debda248a3f6c1393ec2f16261d2da25cb7a4ccb40ef0862"
+    },
+    {
+      "path": "sources/F044_actual_head_neck_collar_guard.png",
+      "sha256": "5b72192c39bccd7a440031be7c8eb2239aac7c24e32f0ed513002ec6d3264c63"
+    },
+    {
+      "path": "sources/F044_actual_same_rigid_grip_torch_layer.png",
+      "sha256": "b8774b779a30c1653c645aacebb01290c7ff77b63ffa9e70f03172e849224ca0"
+    },
+    {
+      "path": "sources/F044_actual_stable_near_ruffle_guard.png",
+      "sha256": "223f98f56a91738c89208dfde862f7819a4a100f4dd0a21cce0fb3ac9412077e"
+    },
+    {
+      "path": "sources/F044_actual_waist_skirt_material_mask.png",
+      "sha256": "316b6534e406fd1b09dac72a55dfd42d46f0da6eab766d98b30e4926af9e1317"
+    },
+    {
+      "path": "sources/F044_fe70_LOCKED_mother.png",
+      "sha256": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9"
+    },
+    {
+      "path": "sources/F044_receiver_source_mask_NOT_AUTOMATIC_GUARD.png",
+      "sha256": "852f164cc80884aff011c55c2714c28203dd3122724a164af463374282384e50"
+    },
+    {
+      "path": "sources/snapshot_manifest.json",
+      "sha256": "b891f010779242d3c5872c98e01feb9cf0c6d5eaea351e0e8129b1364bfef1ca"
+    },
+    {
+      "path": "qa/root_actual_input_gate_review.json",
+      "sha256": "b1733c41299497c6976ee65d27ffb636018675e856ee32b6cd89ccfc726bb5fd"
+    }
+  ],
+  "new_calls": 0
+}
