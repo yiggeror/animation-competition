@@ -16,7 +16,7 @@ export function pose(t) {
 }
 const shot = closeShot({
   bgKey: 'room_low_dark', bgCrop: [200, 300, 900, 420], blur: 18,
-  layers: async (t) => [xiaomanFront(pose(t), { k: 14, at: [960, 1940] })],
+  layers: async (t) => [xiaomanFront(pose(t), { k: 19, at: [960, 2273] })],
   light: () => ({ ambient: [0.1, 0.12, 0.18], lights: [], shafts: [{ poly: [[0, 0], [700, 0], [1400, 1080], [0, 1080]], color: [0.5, 0.62, 0.95], i: 0.35, soft: 120 }], exposure: 1.0, vignette: 0.5, grain: 8 }),
 });
 export async function renderFrame(ctx, t, W, H) { return shot.render(ctx, t, W, H); }

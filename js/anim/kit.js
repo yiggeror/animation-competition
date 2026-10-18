@@ -37,7 +37,7 @@ export function melon(x, cx, cy, a = 0, s = 10, bite = 0) {
   x.fillStyle = '#e8584b'; x.fill(); x.stroke();
   x.beginPath(); x.moveTo(-6, 2.5); x.quadraticCurveTo(0, 5.2, 6, 2.5); x.quadraticCurveTo(0, 6.6, -6, 2.5); x.fillStyle = '#3f8a45'; x.fill(); x.stroke();
   x.fillStyle = '#2b1d18'; for (const [px, py] of [[-2, 0.5], [1.5, 0], [0, -2.2], [-0.5, 2]]) { x.beginPath(); x.ellipse(px, py, 0.35, 0.55, 0.3, 0, 7); x.fill(); }
-  if (bite > 0) { x.globalCompositeOperation = 'destination-out'; x.beginPath(); x.arc(0, -5, 2.6 * bite, 0, 7); x.fill(); }
+  if (bite > 0) { x.fillStyle = '#f6b3a6'; x.beginPath(); x.arc(0, -5, 2.6 * bite, 0, 7); x.fill(); x.strokeStyle = '#3b2c25'; x.lineWidth = 0.5; x.beginPath(); x.arc(0, -5, 2.6 * bite, 0.35, Math.PI - 0.35); x.stroke(); }   // 咬掉的一口：露出浅色果肉
   x.restore();
 }
 export function phone(x, cx, cy, a = 0, lit = 1) {
