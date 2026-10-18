@@ -1,0 +1,146 @@
+{
+  "locked_F024_sha256": "97560237598d024a725ab63ee62809d1f5ded5f6fc5aadc1d8a4f158ca85da4a",
+  "raw_sha256": "cac4df62e6be734bfcc7c896ad806c973bed3d0fc84723b2a0fd41bf8fd4565f",
+  "mapped_sha256": "ad6d47305791dd1fbc2d9849b8bd87d8632102f61dc29dce3ed5054867b49b4f",
+  "raw_anchor_matches": {
+    "child_thumbnail": {
+      "raw_delta": [
+        68,
+        -30
+      ],
+      "NCC": 0.9385754174577814
+    },
+    "adult_thumbnail": {
+      "raw_delta": [
+        63,
+        -25
+      ],
+      "NCC": 0.8204903940370332
+    },
+    "child_wrist_crease": {
+      "raw_delta": [
+        61,
+        -28
+      ],
+      "NCC": 0.9286788060166791
+    },
+    "child_palm_crease": {
+      "raw_delta": [
+        63,
+        -26
+      ],
+      "NCC": 0.9656460483538757
+    }
+  },
+  "median_raw_delta": [
+    63.0,
+    -27.0
+  ],
+  "native_table_delta": [
+    12,
+    -7
+  ],
+  "uniform_ideal_delta": [
+    12.191666666666666,
+    -6.966666666666667
+  ],
+  "method": "Locked drawn hand/rod group rigidly mapped; newly image-generated forearm pixels remapped with fixed left entries and continuous arm profiles into advancing wrist roots. Not a whole-sheet translation.",
+  "forearm_join_x": [
+    400,
+    520
+  ],
+  "offscreen_lower_arm_continuation_columns": 148,
+  "proof": {
+    "child_pinch": {
+      "source_box": [
+        760,
+        470,
+        893,
+        566
+      ],
+      "native_delta": [
+        12,
+        -7
+      ],
+      "visible_pixels": 12082,
+      "max_RGBA_error": 0
+    },
+    "child_wrist": {
+      "source_box": [
+        655,
+        640,
+        690,
+        674
+      ],
+      "native_delta": [
+        12,
+        -7
+      ],
+      "visible_pixels": 1190,
+      "max_RGBA_error": 0
+    },
+    "adult_thumb": {
+      "source_box": [
+        690,
+        530,
+        746,
+        590
+      ],
+      "native_delta": [
+        12,
+        -7
+      ],
+      "visible_pixels": 3360,
+      "max_RGBA_error": 0
+    },
+    "four_supporting_ends": {
+      "source_box": [
+        665,
+        580,
+        902,
+        742
+      ],
+      "native_delta": [
+        12,
+        -7
+      ],
+      "visible_pixels": 27441,
+      "max_RGBA_error": 0
+    },
+    "single_rod": {
+      "source_box": [
+        950,
+        7,
+        1660,
+        510
+      ],
+      "native_delta": [
+        12,
+        -7
+      ],
+      "visible_pixels": 17124,
+      "max_RGBA_error": 0
+    },
+    "locked024_left_entries": [
+      [
+        216,
+        420
+      ],
+      [
+        825,
+        940
+      ]
+    ],
+    "mapped_left_entries": [
+      [
+        216,
+        420
+      ],
+      [
+        825,
+        940
+      ]
+    ]
+  },
+  "new_image_calls_for_mapping": 0
+}

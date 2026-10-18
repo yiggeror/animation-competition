@@ -1,0 +1,23 @@
+[
+  "ffmpeg",
+  "-y",
+  "-v",
+  "error",
+  "-f",
+  "concat",
+  "-safe",
+  "0",
+  "-i",
+  "/workspace/cloud-s22-reference-20261018/collab/reviews/cloud_s22_20261018/first_push_036_042/exposure_frames/concat.txt",
+  "-vf",
+  "fps=24",
+  "-frames:v",
+  "60",
+  "-c:v",
+  "libx264",
+  "-crf",
+  "18",
+  "-pix_fmt",
+  "yuv420p",
+  "/workspace/cloud-s22-reference-20261018/collab/reviews/cloud_s22_20261018/first_push_036_042/S22_000_059_isolated_exposure60.mp4"
+]

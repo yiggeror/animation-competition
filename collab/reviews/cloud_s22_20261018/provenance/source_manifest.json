@@ -1,6 +1,6 @@
 {
   "baseline": "da16fc0c1136767dba24a804ce0db01e2eed9bae",
-  "image_generation_calls": 5,
+  "image_generation_calls": 7,
   "sources": [
     {
       "path": "collab/README.md",
@@ -86,18 +86,22 @@
   "existing_contact_sheets_total_frames": 60,
   "reference_note": "Reference-phase raster files are manual technical diagrams; actual imagegen outputs are separately retained under F000_first and contact_012_018_024.",
   "reference_phase_image_generation_calls": 0,
-  "current_stage": "Same-raw continuous contact-band cleanup and F024 local terminal settling delivered; actual6/6/12 comparison and image inspection completed; awaiting Astra relock",
-  "latest_batch": "contact_band_repair_012_018_024/README.md",
+  "current_stage": "Astra locked contact-band package caec482c; first-push036/042 candidates and000-059 isolated exposure delivered, awaiting review before060",
+  "latest_batch": "first_push_036_042/README.md",
   "other_states_generated": [
     "F012",
     "F018",
-    "F024"
+    "F024",
+    "F036",
+    "F042"
   ],
   "repair_image_generation_calls": 0,
-  "successful_image_outputs": 4,
+  "successful_image_outputs": 6,
   "failed_image_calls": 1,
   "mother_locked_sha256": "d4e78e2d5b84a72588cf3af1ff23ce39cdc18d19dde2fbf1f8eaf44ba62d7ef5",
   "registration_image_generation_calls": 0,
   "production_ready": false,
-  "contact_band_repair_image_calls": 0
+  "contact_band_repair_image_calls": 0,
+  "first_push_image_calls": 2,
+  "contact_band_passed_by_Astra": true
 }

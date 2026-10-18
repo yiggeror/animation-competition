@@ -1,0 +1,54 @@
+{
+  "locked_commit": "caec482c03cab002b2fea9c2556425a96812e2e3",
+  "locked_F024": "contact_band_repair_012_018_024/candidate/F024_contact_fixed.png",
+  "locked_F024_sha256": "97560237598d024a725ab63ee62809d1f5ded5f6fc5aadc1d8a4f158ca85da4a",
+  "authorization": "Astra接触带双审通过；续第一推036×6→042×18，先实看036再042，暂不060。手和单签作为同一接触组；前臂腕根随真实动作接回，不仅整层代码平移。",
+  "construction_canvas": [
+    1920,
+    1080
+  ],
+  "native_canvas": [
+    1672,
+    941
+  ],
+  "uniform_scale": 0.8708333333333333,
+  "origin": "Actual locked F024 hand/rod landmarks; old construction absolute wrist/grip positions are not a new registration origin.",
+  "targets": [
+    {
+      "frame": 36,
+      "hold": 6,
+      "table_delta": [
+        14,
+        -8
+      ],
+      "native_ideal_delta": [
+        12.191666666666666,
+        -6.966666666666667
+      ],
+      "native_nearest_pixel_delta": [
+        12,
+        -7
+      ]
+    },
+    {
+      "frame": 42,
+      "hold": 18,
+      "table_delta": [
+        28,
+        -16
+      ],
+      "native_ideal_delta": [
+        24.383333333333333,
+        -13.933333333333334
+      ],
+      "native_nearest_pixel_delta": [
+        24,
+        -14
+      ]
+    }
+  ],
+  "exposure_csv_sha256": "a715188a0f9b9620d5261e73b46d5eebbdb6c71954244dd504b76a6cde2a5851",
+  "plan_json_sha256": "485de38b5fcf662a1f4b0666422f734cee05fcdfd8985b0eff8f53694a0778b1",
+  "no_030": true,
+  "no_060": true
+}
