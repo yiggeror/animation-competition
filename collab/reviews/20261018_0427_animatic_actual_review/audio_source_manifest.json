@@ -1,0 +1,14 @@
+{
+  "commit": "f5b3610b9fdfe8df01adcfe7dd0d59e2060815d9",
+  "exported_utc": "2026-10-18T04:06:01.750397+00:00",
+  "sources": {
+    "audio/build.py": "b026aecaf19e45528ffffe44acf30836fc80a46d1cf581b56c12394edc7e2954",
+    "audio/demo.py": "d7fdeee59f32dc53e93eb8b40bb24e71014bfbbb1de0c2595af6d352c0a97087",
+    "audio/inst.py": "c6b8f630335dfabe6302e21dfb880dae34fd02b37a475418d1f0f57112d98275",
+    "audio/score.py": "2171a6189a971a1b88b7619fc92ced65d015cada8894e59362ddb04e67f40b2e",
+    "audio/sfx.py": "34943517c83815b8499f28ebb43bef57b377d827cef1b7375de5d16a320e6dc2",
+    "js/film/edl.js": "4ed7cc45f23754019b270e27e54b721d380496479e63310fb9787da7078d21f2",
+    "package.json": "7435fe87be491d71687e23a98dabe79423370904520a23e57d13ce65ce7cbde7"
+  },
+  "script_review": "build.py writes only ROOT/build/audio through makedirs, wavfile.write and ffmpeg outputs; dependencies inst, score, sfx have math/import definitions only; demo.py exported but not executed; PYTHONDONTWRITEBYTECODE=1 prevents source-directory pycache"
+}
