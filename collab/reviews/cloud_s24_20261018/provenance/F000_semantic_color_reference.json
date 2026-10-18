@@ -1,0 +1,69 @@
+{
+  "source": "assets/chars/x13/F000.png",
+  "source_sha256": "91715601ae814bd84a3dc8d6ce43f1cc809a7bdd74e7390fefffe579f6882050",
+  "method": "Explicit source ROIs and semantic color selection for reference statistics only; no art edits.",
+  "use": "Compare like semantic interiors after generation. Do not compare whole-image means across poses or force every shaded pixel to a flat chip.",
+  "later_x13_palette_rejected": true,
+  "chips": [
+    {
+      "semantic_region": "hair",
+      "source_roi": [
+        260,
+        260,
+        520,
+        500
+      ],
+      "opaque_selected_pixels": 56693,
+      "median_RGB": [
+        56,
+        42,
+        34
+      ]
+    },
+    {
+      "semantic_region": "skin",
+      "source_roi": [
+        530,
+        540,
+        730,
+        730
+      ],
+      "opaque_selected_pixels": 27998,
+      "median_RGB": [
+        252,
+        203,
+        167
+      ]
+    },
+    {
+      "semantic_region": "dress_yellow",
+      "source_roi": [
+        300,
+        1120,
+        650,
+        1300
+      ],
+      "opaque_selected_pixels": 58209,
+      "median_RGB": [
+        252,
+        207,
+        58
+      ]
+    },
+    {
+      "semantic_region": "collar_white",
+      "source_roi": [
+        360,
+        1000,
+        680,
+        1120
+      ],
+      "opaque_selected_pixels": 22278,
+      "median_RGB": [
+        251,
+        245,
+        240
+      ]
+    }
+  ]
+}
