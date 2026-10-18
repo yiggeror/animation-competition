@@ -40,12 +40,12 @@ def neutral(f):
     kg, kb = np.median(g[upper] / r[upper]), np.median(b[upper] / r[upper])
     w = np.clip((yy - (y0 + 0.45 * H)) / (0.15 * H), 0, 1)                # 往下渐入，交界不出线
     low = (a > 0) & (w > 0)
-    sk = low & (r > 110) & (b > r * kb)                                    # 偏蓝的皮肤
+    mx = np.maximum(np.maximum(r, g), b); mn = np.minimum(np.minimum(r, g), b)
+    wh = low & (mn > 175) & (mx - mn < 30) & ~((r > b + 18) & (r > g))     # 白领口：先从原像素认出来（低饱和近白），不进皮肤处理（Astra 10:31 复现：原来先被当皮肤压了 G/B）
+    sk = low & ~wh & (r > 110) & (b > r * kb)                              # 偏蓝的皮肤
     for ch, k in ((g, kg), (b, kb)):
         tgt = r * k; ch[sk] = ch[sk] + (np.minimum(ch[sk], np.maximum(tgt[sk], ch[sk] - 60)) - ch[sk]) * w[sk]
-    mx = np.maximum(np.maximum(r, g), b); mn = np.minimum(np.minimum(r, g), b)
-    wh = low & (mn > 175) & (mx - mn < 30) & ~((r > b + 18) & (r > g))     # 白领口：只认低饱和的近白（浅皮肤 r 明显大于 b，排除），拉成中性白
-    m = (r + g + b) / 3
+    m = (r + g + b) / 3                                                    # 白领口拉成中性白
     for ch in (r, g, b): ch[wh] = ch[wh] + (m[wh] + 1.5 - ch[wh]) * w[wh]
     return np.dstack([r, g, b, a]), kg, kb, int(sk.sum() + wh.sum())
 
