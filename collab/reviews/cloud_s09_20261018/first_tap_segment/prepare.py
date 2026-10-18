@@ -7,6 +7,8 @@ from PIL import Image,ImageDraw,ImageFont,ImageFilter
 from scipy.ndimage import binary_fill_holes,binary_closing,binary_dilation
 
 ROOT=Path(__file__).resolve().parent;BASE=ROOT.parent
+if (ROOT/'requests/F037_execution_state.json').exists():
+    raise SystemExit('Native request already started: preserve frozen inputs; use committed preparation artifacts.')
 for d in ['reference','masks','qa','requests','originals','candidate']:(ROOT/d).mkdir(exist_ok=True)
 source=BASE/'pre_tap_segment/clothing_semantic_review/continuous_contour_delivery/candidate/F031_raw_clothing_and_contours_for_final_lock.png'
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()

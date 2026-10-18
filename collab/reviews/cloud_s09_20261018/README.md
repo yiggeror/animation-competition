@@ -1,5 +1,7 @@
 # S09 第一阶段绘图参考 · 待 Astra 冻结
 
+**当前037小段：call01原件已保全（本段1次／S09累计13），同raw完整近臂统一下30raw、腾空衣片原位接回仍在语义边界复核，未采用；042为0。见[first_tap_segment](first_tap_segment/README.md)。**
+
 **最新状态：031整态已获Astra明确锁母，固定78a980d／SHA4b59c624…d44da7；037→042已授权逐张制作。当前入口为[first_tap_segment](first_tap_segment/README.md)，旧下文的待审状态保留为历史。**
 
 **最新状态：[f17651aa连续裙外缘走廊实交](pre_tap_segment/clothing_semantic_review/continuous_contour_delivery/README.md)。Astra已过胸白点／腰／内裙褶，旧两矩形限制已撤回；本次0生成从call05同位完整RGBA接回8146px许可走廊，实改3682px，走廊外／双手整筒头颈变化0。灰深底实看两边接顺，031交Astra整态锁母，037／042仍0。累计12次原生调用、031七次不变；下方旧状态和计数为历史。**
