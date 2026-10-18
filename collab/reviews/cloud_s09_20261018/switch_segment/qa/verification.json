@@ -1,0 +1,129 @@
+{
+  "status": "READY_FOR_ASTRA_REVIEW_NOT_FINAL_ADOPTION",
+  "F000_authorization_summary": "Astra relayed approval to lock natural 1bbdc358 F000, accept large vintage torch, reuse same registration, clean only transparency specks, continue d02-d04 and remake contact references before tapping.",
+  "current_phase_native_calls": 3,
+  "current_phase_raw_returns": 3,
+  "F000_regenerations_this_phase": 0,
+  "cumulative_native_calls": 4,
+  "cumulative_native_returns": 4,
+  "F000_clean_check": {
+    "source_sha256": "a71ef8759bfa9e907da65c8f15c147a39c4d79d1f91e402a38f49ba0850209e4",
+    "only_alpha_one_zeroed": true,
+    "pixels": 5652,
+    "all_RGB_and_alpha_gt_one_unchanged": true
+  },
+  "states": [
+    {
+      "state": "d02",
+      "native_file": "switch_segment/originals/d02_call01_raw.png",
+      "sha256": "5ea20e46436cd8418d28dfa6474b2c91c0dd9257ea746ac23e75b59e96e9f338",
+      "native_size": [
+        1672,
+        941
+      ],
+      "host_source": "/workspace/generated_images/exec-22953e2b-eee8-45e9-b9c6-8d300e385bcc.png",
+      "native_return_bytes_match": true,
+      "prompt_archive_matches_arguments": true,
+      "outside_zero_mask_pixel_changes": 0,
+      "changed_pixels": 4553,
+      "changed_bbox_exclusive": [
+        925,
+        545,
+        1022,
+        613
+      ],
+      "same_registration_verified": true
+    },
+    {
+      "state": "d03",
+      "native_file": "switch_segment/originals/d03_call01_raw.png",
+      "sha256": "c4de3b45d9bf7a7b5c0ef61e968bc5d242508b265a514a6cc06cc0fe3a0f9f80",
+      "native_size": [
+        1671,
+        941
+      ],
+      "host_source": "/workspace/generated_images/exec-61686897-4c05-4caa-b94b-c9dcf8363525.png",
+      "native_return_bytes_match": true,
+      "prompt_archive_matches_arguments": true,
+      "outside_zero_mask_pixel_changes": 0,
+      "changed_pixels": 8120,
+      "changed_bbox_exclusive": [
+        921,
+        540,
+        1063,
+        622
+      ],
+      "same_registration_verified": true
+    },
+    {
+      "state": "d04",
+      "native_file": "switch_segment/originals/d04_call01_raw.png",
+      "sha256": "deeccc295f3def8319f8e5e5bf78fd2a1c8d7135821b09c691f76643d1337f21",
+      "native_size": [
+        1672,
+        941
+      ],
+      "host_source": "/workspace/generated_images/exec-6472fb0a-90e2-4eff-8f63-7589f0f17f33.png",
+      "native_return_bytes_match": true,
+      "prompt_archive_matches_arguments": true,
+      "outside_zero_mask_pixel_changes": 0,
+      "changed_pixels": 8952,
+      "changed_bbox_exclusive": [
+        738,
+        252,
+        962,
+        310
+      ],
+      "same_registration_verified": true
+    }
+  ],
+  "preview": {
+    "path": "qa/S09_F000-F025_drawings_only.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1",
+          "duration": "1.083333",
+          "nb_frames": "26"
+        }
+      ]
+    },
+    "all_26_frames_decoded": true,
+    "actual_decode_sheet_viewed": "qa/actual_encoded_frames.png",
+    "scope": "drawing layer only; not complete S09 or scene render"
+  },
+  "author_actual_image_review": {
+    "viewed": [
+      "native returns d02-d04",
+      "local before-after d02-d04",
+      "d03 full source/thumb detail",
+      "d04 final frame",
+      "four-state sheet",
+      "actual decoded MP4 contact sheet",
+      "three new contact-reference PNGs"
+    ],
+    "result": "no clear blocker seen; d03 ON slider end partly thumb-occluded, mechanical endpoint not fully verified"
+  },
+  "cloud_61sol_review_summary": {
+    "agent": "/root/s09_motion_audit_61sol",
+    "model": "gpt-6.1-sol",
+    "scope": "read-only actual-image and pixel/math review",
+    "switch": "no clear blocker for Astra review; d03 visible forward push, d04 mild worry; outside masks unchanged; no final adoption authority",
+    "contact": "local tail-first math and two positive reopening gaps checked; conditional projected margin about2.29px, not full-arm or 3D clearance approval",
+    "summary_is_verbatim_transcript": false
+  },
+  "contact_gate": {
+    "proposal": "../contact_reference_v3/README.md",
+    "projected_margin_approx": 2.2936081735152176,
+    "conditional_on_manual_outline_and_limited_palm_band": true,
+    "F026_OFF_reset_actual_outline_recheck_required": true,
+    "complete_global_arm_pose_frozen": false,
+    "contact_drawings_generated": 0
+  },
+  "remaining_gate": "Astra review and contact reference freeze before actual tap artwork"
+}

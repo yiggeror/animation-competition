@@ -1,0 +1,25 @@
+{
+  "state": "d04",
+  "native_call": "image_gen.imagegen",
+  "source": "candidates/d03_raw_locked.png",
+  "raw_return": "requests/d04_call01_raw_return.json",
+  "original": "originals/d04_call01_raw.png",
+  "native_size": [
+    1672,
+    941
+  ],
+  "transparent_padding_right_bottom": [
+    0,
+    0
+  ],
+  "native_pixels_rescaled": false,
+  "original_sha256": "deeccc295f3def8319f8e5e5bf78fd2a1c8d7135821b09c691f76643d1337f21",
+  "mask": "masks/d04_native_patch_mask.png",
+  "mask_feather_sigma": 1.25,
+  "raw_candidate": "candidates/d04_raw_locked.png",
+  "registered_candidate": "candidates/d04_registered.png",
+  "outside_mask_zero_pixel_changes": 0,
+  "changed_pixels": 8952,
+  "method": "local patch pixels entirely from native image edit; outside mask exact previous accepted pixels; no code-generated hand or local anatomy warp",
+  "status": "AUTHOR_AND_61SOL_ACTUAL_IMAGE_REVIEW_COMPLETE_PENDING_ASTRA"
+}
