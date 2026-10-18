@@ -1,0 +1,70 @@
+{
+  "scope": "S03a first4 of9 exposures, not whole chain and not film pass",
+  "canvas": [
+    1672,
+    941
+  ],
+  "source_base_sha256": "aa7c4fd193e766b6debf4dc3dae6ed1ba0ce9d4668ddc12624d765a7fcd6021a",
+  "states": [
+    {
+      "state": "F000",
+      "path": "final/S03a_F000.png",
+      "sha256": "aa7c4fd193e766b6debf4dc3dae6ed1ba0ce9d4668ddc12624d765a7fcd6021a",
+      "status": "EXACT_APPROVED_SOURCE_REUSE",
+      "note": ""
+    },
+    {
+      "state": "F008",
+      "path": "final/S03a_F008.png",
+      "sha256": "bf5b0d2ff3140e02269fd8d8374a2c837996650adb8a4969bdb0ac7b1c301078",
+      "status": "INDEPENDENT_STATIC_GATE_PASSED__NOT_INTEGRATED",
+      "note": ""
+    },
+    {
+      "state": "F011",
+      "path": "final/S03a_F011.png",
+      "sha256": "80fe417c0447be2894204f732085aae4f0011fe1e289eb069d5cc09e0c3e658c",
+      "status": "INDEPENDENT_STATIC_GATE_PASSED__NOT_INTEGRATED",
+      "note": ""
+    },
+    {
+      "state": "F014",
+      "path": "final/S03a_F014.png",
+      "sha256": "bf30ce398e97e6bf16c07e56389d9f4f8003af8a45a1451be67f9764459f8be6",
+      "status": "INDEPENDENT_STATIC_GATE_PASSED__NOT_INTEGRATED",
+      "note": "Visual intermediate turn, not exact15deg; further true whole-head turn required for F017"
+    }
+  ],
+  "exposures": [
+    {
+      "frame": 0,
+      "hold": 8
+    },
+    {
+      "frame": 8,
+      "hold": 3
+    },
+    {
+      "frame": 11,
+      "hold": 3
+    },
+    {
+      "frame": 14,
+      "hold": 3
+    }
+  ],
+  "foreground": "Unchanged separate Opus hand/melon layer, never baked here",
+  "body_lock": "Corrected focus garment/collar/shoulder pixels exactly retained by semantic mask",
+  "call_counts_so_far": {
+    "builtin": 6,
+    "tool_failed": 0,
+    "whole_head_quality_rejections": 2
+  },
+  "remaining": [
+    "F017 true expanded full turn+5deg roll+chin lift+pout",
+    "F021 tail overshoot",
+    "F023 tail settling, exact same head as021",
+    "F025 return intermediate",
+    "F028 front return with slight pout"
+  ]
+}
