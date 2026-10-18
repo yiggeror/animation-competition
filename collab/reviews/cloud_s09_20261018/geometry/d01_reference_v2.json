@@ -1,0 +1,175 @@
+{
+  "shot": "S09",
+  "scope": "d01 F000 only; other 17 states are not rebuilt",
+  "status": "ASTRA_D01_REVIEW_REQUIRED_NO_IMAGE_GENERATION",
+  "canvas": {
+    "width": 1536,
+    "height": 864,
+    "origin": "top left; x right, y down",
+    "automatic_crop": false
+  },
+  "frozen_from_astra": [
+    "identity sources",
+    "upper/forearm rest length 0.8H",
+    "tail-cap two-tap causality",
+    "96-frame event/exposure table"
+  ],
+  "camera": "腰以上近景为新构图提案，尚未批准；旧母源是跪姿全身，不称沿用旧机位",
+  "head_unit": 250.0,
+  "rest_lengths": {
+    "upper_arm": 200.0,
+    "forearm": 200.0
+  },
+  "perspective_note": "允许投影短缩，不再对两段投影强求200；z仅证明等骨长可构造，非相机已标定或真实画稿证明",
+  "pose": {
+    "id": "d01",
+    "f": 0,
+    "hold": 8,
+    "draw": "双手捧筒，眼看侧滑开关",
+    "gaze": "switch",
+    "switch": "OFF",
+    "light_on": false,
+    "contacts": [
+      "right_fingers_barrel",
+      "left_fingers_front_barrel"
+    ],
+    "head": {
+      "center": [
+        745.0,
+        245.0
+      ],
+      "width": 245.0,
+      "height": 250.0,
+      "pitch_deg_suggestion": 0,
+      "yaw_deg_suggestion": 15,
+      "note": "整头体积/耳/发根/颈一起转，角度为意图而非成图实测"
+    },
+    "joints": {
+      "near_shoulder": [
+        650.0,
+        410.0
+      ],
+      "near_elbow": [
+        675.0,
+        568.0
+      ],
+      "near_wrist": [
+        865.0,
+        530.0
+      ],
+      "far_shoulder": [
+        850.0,
+        410.0
+      ],
+      "far_elbow": [
+        830.0,
+        600.0
+      ],
+      "far_wrist": [
+        955.0,
+        570.0
+      ],
+      "waist": [
+        750.0,
+        580.0
+      ]
+    },
+    "prop": {
+      "tail": [
+        860.0,
+        535.0
+      ],
+      "lamp": [
+        1029.037019600587,
+        489.7066671070589
+      ],
+      "grip_material_s": 65.0,
+      "grip": [
+        922.7851787087894,
+        518.1767620683362
+      ],
+      "axis_deg": -15.0,
+      "length": 175.0,
+      "barrel_diameter": 42.0,
+      "head_diameter": 58.0,
+      "switch_off_s": 92.0,
+      "switch_on_s": 104.0,
+      "thumb_tip": [
+        943.4299760714414,
+        490.9042054984977
+      ],
+      "left_palm": [
+        986.5226800038915,
+        543.5446734655493
+      ],
+      "left_contact_surface": null,
+      "left_support_material_s": 120.0,
+      "tail_palm_gap": null,
+      "palm_mode": "front_support",
+      "left_support_surface": [
+        981.346299101841,
+        524.226156939768
+      ],
+      "left_palm_normal_offset": 41.0
+    },
+    "layer_order_back_to_front": [
+      "far_arm_gray210",
+      "torso_gray150",
+      "near_arm_gray65"
+    ],
+    "events": [],
+    "status": "D01_TECHNICAL_REFERENCE_V2_ONLY_NOT_APPROVED_FOR_IMAGE_GENERATION"
+  },
+  "bone_projection": {
+    "near": {
+      "upper_rest": 200.0,
+      "fore_rest": 200.0,
+      "upper_projected": 159.9656213065795,
+      "fore_projected": 193.76274151652584,
+      "upper_projection_ratio": 0.7998281065328975,
+      "fore_projection_ratio": 0.9688137075826292
+    },
+    "far": {
+      "upper_rest": 200.0,
+      "fore_rest": 200.0,
+      "upper_projected": 191.049731745428,
+      "fore_projected": 128.5496013218244,
+      "upper_projection_ratio": 0.95524865872714,
+      "fore_projection_ratio": 0.642748006609122
+    }
+  },
+  "constructive_joint3D": {
+    "near_shoulder": [
+      650.0,
+      410.0,
+      -50.0
+    ],
+    "near_elbow": [
+      675.0,
+      568.0,
+      -170.04582458378133
+    ],
+    "near_wrist": [
+      865.0,
+      530.0,
+      -120.48777781032592
+    ],
+    "far_shoulder": [
+      850.0,
+      410.0,
+      50.0
+    ],
+    "far_elbow": [
+      830.0,
+      600.0,
+      109.16079783099616
+    ],
+    "far_wrist": [
+      955.0,
+      570.0,
+      -44.05473662944945
+    ]
+  },
+  "generation_requests": 0,
+  "generated_artworks": 0
+}
