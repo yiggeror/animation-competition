@@ -1,0 +1,196 @@
+{
+  "status": "REFERENCE_PROPOSAL_ONLY_NOT_GENERATION_INPUT_APPROVAL",
+  "records": {
+    "near": {
+      "source": "/workspace/scratch/f060b5601755/astra_s07_f057_semantic_actual_20261018_1835/candidate/F057_semantic_color_and_ankle_PENDING.png",
+      "source_sha256": "93939f3e148c0a957ef418c677e60cc3fd27cf6b6844f91d500c8a3508b76720",
+      "source_polygon": [
+        [
+          728,
+          550
+        ],
+        [
+          894,
+          555
+        ],
+        [
+          894,
+          936
+        ],
+        [
+          883,
+          947
+        ],
+        [
+          837,
+          968
+        ],
+        [
+          766,
+          968
+        ],
+        [
+          756,
+          815
+        ],
+        [
+          747,
+          690
+        ],
+        [
+          727,
+          547
+        ]
+      ],
+      "source_y_knots": [
+        520,
+        595,
+        764.1535,
+        957.8118,
+        980
+      ],
+      "target_y_knots": [
+        507,
+        617.5061,
+        772.9305,
+        957.8118,
+        980
+      ],
+      "source_x_knots": [
+        799,
+        805,
+        818.7166,
+        833.8562,
+        836
+      ],
+      "target_x_knots": [
+        1208.3,
+        1214.2705,
+        1260.2407,
+        1245.8268,
+        1248
+      ],
+      "operation": "reference-only rowwise projected placement; transverse width unchanged, no adopted final art"
+    },
+    "far": {
+      "source": "/workspace/scratch/f060b5601755/astra_s07_f057_semantic_actual_20261018_1835/candidate/F057_semantic_color_and_ankle_PENDING.png",
+      "source_sha256": "93939f3e148c0a957ef418c677e60cc3fd27cf6b6844f91d500c8a3508b76720",
+      "source_polygon": [
+        [
+          728,
+          550
+        ],
+        [
+          860,
+          555
+        ],
+        [
+          828,
+          670
+        ],
+        [
+          758,
+          815
+        ],
+        [
+          718,
+          956
+        ],
+        [
+          626,
+          928
+        ],
+        [
+          649,
+          846
+        ],
+        [
+          688,
+          750
+        ],
+        [
+          703,
+          700
+        ],
+        [
+          727,
+          600
+        ]
+      ],
+      "source_y_knots": [
+        520,
+        597.7465,
+        764.3451,
+        954.1657,
+        980
+      ],
+      "target_y_knots": [
+        507,
+        620.2526,
+        774.5496,
+        966.9968,
+        993
+      ],
+      "source_x_knots": [
+        790,
+        785.7747,
+        709,
+        658.0821,
+        650
+      ],
+      "target_x_knots": [
+        1199.27,
+        1195.0452,
+        1105.5499,
+        1039.8415,
+        1031.7
+      ],
+      "operation": "reference-only rowwise projected placement; transverse width unchanged, no adopted final art"
+    },
+    "waist_underlay": {
+      "source_box": [
+        780,
+        558,
+        870,
+        640
+      ],
+      "target_box": [
+        1128,
+        528,
+        1285,
+        626
+      ],
+      "purpose": "reference-only navy fill under original blouse, fully in future-generation domain; no final artwork claim"
+    }
+  },
+  "fixed_body_shoes_arms": "exact existing F079 source layers reused; only pants hint replaced",
+  "old073_pants_used_in_new_reference": false,
+  "failed079_raw_used_in_new_reference": false,
+  "near_hip_proxy": [
+    1214.2704581286946,
+    617.506121179238
+  ],
+  "near_knee_corridor": [
+    1260.240724535435,
+    772.9304705563372
+  ],
+  "near_ankle": [
+    1245.8268282442195,
+    957.8118142506097
+  ],
+  "far_hip_proxy": [
+    1195.0451616860068,
+    620.252592099622
+  ],
+  "far_knee_corridor": [
+    1105.5499249059817,
+    774.5495738512915
+  ],
+  "far_ankle": [
+    1039.8415092154223,
+    953.9968292356247
+  ],
+  "all_proxy_points_are_not_measured_bones": true,
+  "must_generate": "full waist/seat/crotch/both pant legs/cuffs, old and new silhouette union and background cleanup; donor seams/folds are not finished artwork",
+  "new_image_calls": 0
+}

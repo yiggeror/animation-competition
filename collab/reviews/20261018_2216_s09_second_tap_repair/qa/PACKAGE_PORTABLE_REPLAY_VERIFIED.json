@@ -1,0 +1,175 @@
+{
+  "status": "REPLAY_VERIFIED_SOURCE_EXACT",
+  "F052_sha256": "a107f71d994c3302884eb3ebba0e8e4726b89bd5e36c2f8a8fa022f44ddfbb42",
+  "F056_sha256": "52bb96f9796878bbb9c928ad80c5af6b5a0580ad9f9c651384446f0caadd3f8f",
+  "protected_hand_torch_core_pixels": 38939,
+  "protected_hand_torch_core_differences": 0,
+  "fixed_palm_and_head_waist_differences": 0,
+  "outside_donor_or_genuine_AA_differences": 0,
+  "native_generation_calls": 0,
+  "exposure": {
+    "gray": {
+      "sha256": "ed6fe1536cbcaf26764f202e5371d71c46f223832dc65af76e26f3639d3d26bf",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "24/1",
+            "duration": "0.416667",
+            "nb_frames": "10"
+          }
+        ]
+      },
+      "all_decoded_frames": [
+        {
+          "frame": 0,
+          "expected": 48,
+          "nearest": 48,
+          "RGB_MAE": 0.7672095630787037
+        },
+        {
+          "frame": 1,
+          "expected": 48,
+          "nearest": 48,
+          "RGB_MAE": 0.7660040509259259
+        },
+        {
+          "frame": 2,
+          "expected": 48,
+          "nearest": 48,
+          "RGB_MAE": 0.7661505353009259
+        },
+        {
+          "frame": 3,
+          "expected": 48,
+          "nearest": 48,
+          "RGB_MAE": 0.7662521701388889
+        },
+        {
+          "frame": 4,
+          "expected": 52,
+          "nearest": 52,
+          "RGB_MAE": 0.7724048755787037
+        },
+        {
+          "frame": 5,
+          "expected": 52,
+          "nearest": 52,
+          "RGB_MAE": 0.7719495081018518
+        },
+        {
+          "frame": 6,
+          "expected": 52,
+          "nearest": 52,
+          "RGB_MAE": 0.7720732060185185
+        },
+        {
+          "frame": 7,
+          "expected": 52,
+          "nearest": 52,
+          "RGB_MAE": 0.7720891203703704
+        },
+        {
+          "frame": 8,
+          "expected": 56,
+          "nearest": 56,
+          "RGB_MAE": 0.7687076822916666
+        },
+        {
+          "frame": 9,
+          "expected": 56,
+          "nearest": 56,
+          "RGB_MAE": 0.7683091001157407
+        }
+      ]
+    },
+    "dark": {
+      "sha256": "af35264073c6f64066b1ca89766b897ff3388268f321c3b005b242c190230aac",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "24/1",
+            "duration": "0.416667",
+            "nb_frames": "10"
+          }
+        ]
+      },
+      "all_decoded_frames": [
+        {
+          "frame": 0,
+          "expected": 48,
+          "nearest": 48,
+          "RGB_MAE": 1.5030562789351851
+        },
+        {
+          "frame": 1,
+          "expected": 48,
+          "nearest": 48,
+          "RGB_MAE": 1.502388961226852
+        },
+        {
+          "frame": 2,
+          "expected": 48,
+          "nearest": 48,
+          "RGB_MAE": 1.5025788483796296
+        },
+        {
+          "frame": 3,
+          "expected": 48,
+          "nearest": 48,
+          "RGB_MAE": 1.5024808304398147
+        },
+        {
+          "frame": 4,
+          "expected": 52,
+          "nearest": 52,
+          "RGB_MAE": 1.508121021412037
+        },
+        {
+          "frame": 5,
+          "expected": 52,
+          "nearest": 52,
+          "RGB_MAE": 1.5076909722222223
+        },
+        {
+          "frame": 6,
+          "expected": 52,
+          "nearest": 52,
+          "RGB_MAE": 1.5078432436342593
+        },
+        {
+          "frame": 7,
+          "expected": 52,
+          "nearest": 52,
+          "RGB_MAE": 1.5077058015046296
+        },
+        {
+          "frame": 8,
+          "expected": 56,
+          "nearest": 56,
+          "RGB_MAE": 1.5053837528935186
+        },
+        {
+          "frame": 9,
+          "expected": 56,
+          "nearest": 56,
+          "RGB_MAE": 1.5059479890046297
+        }
+      ]
+    }
+  },
+  "actual_gap_native": {
+    "48": 91,
+    "52": 37,
+    "56": 0
+  }
+}
