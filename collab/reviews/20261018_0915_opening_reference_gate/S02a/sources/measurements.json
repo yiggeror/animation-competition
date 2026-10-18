@@ -1,0 +1,299 @@
+{
+  "measurement_note": "Raw PNG pixel centers. Thresholded white-dot connected-component centroid; approx +/-1 pixel visual localization, not subpixel proof. No shoulders used. A/B/H visually correspond by left-center-right order in same bottom chest row; garment pattern persistence is not independently established. H is a held-out point, not used in fit; nearly collinear points cannot validate general warp. Do not claim H pass.",
+  "review_only_scene_fit": {
+    "scene": [
+      1920,
+      1080
+    ],
+    "source_canvas": [
+      1672,
+      941
+    ],
+    "drawImage_destination_xywh": [
+      0.5100956429330381,
+      0,
+      1918.979808714134,
+      1080
+    ],
+    "scale": 1.1477151965993624,
+    "status": "Uniform runtime starting point for review in the later K19 close-up, not an accepted final placement and not a new native-resolution asset. Earlier framing mismatch statements apply only to the fe2/K14 board."
+  },
+  "assets": [
+    {
+      "file": "S02a_k01_focus.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "sha256": "50e8eb5e6b40f7ac3e8ef58294562dcc3f926c1051d9bb7c719ce170eec78d50",
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "zero_pixels": 1117316,
+        "opaque_255_pixels": 858,
+        "near_opaque_250_255_pixels": 417883,
+        "nonzero_pixels": 456036,
+        "alpha_bbox_all_nonzero": [
+          49,
+          23,
+          1656,
+          941
+        ],
+        "main_component_bbox_alpha_ge_128": [
+          473,
+          77,
+          1197,
+          941
+        ],
+        "main_component_pixels_alpha_ge_128": 427896,
+        "outside_main_component_pixels_alpha_ge_128": 19,
+        "component_count_alpha_ge_128": 13
+      },
+      "lower_chest_points": {
+        "A": {
+          "xy": [
+            724.309375,
+            903.96875
+          ],
+          "area_pixels": 320,
+          "roi_xyxy": [
+            700,
+            890,
+            755,
+            930
+          ]
+        },
+        "B": {
+          "xy": [
+            949.3577981651376,
+            910.1743119266055
+          ],
+          "area_pixels": 327,
+          "roi_xyxy": [
+            925,
+            890,
+            975,
+            935
+          ]
+        },
+        "H": {
+          "xy": [
+            837.3405572755418,
+            904.3312693498452
+          ],
+          "area_pixels": 323,
+          "roi_xyxy": [
+            815,
+            890,
+            865,
+            935
+          ]
+        }
+      },
+      "AB_similarity_to_k01": {
+        "formula": "x_master = a*x_source - b*y_source + tx; y_master = b*x_source + a*y_source + ty",
+        "a": 1.0,
+        "b": 0.0,
+        "tx": 0.0,
+        "ty": 0.0,
+        "scale": 1.0,
+        "angle_deg": 0.0,
+        "H_mapped_xy": [
+          837.3405572755418,
+          904.3312693498452
+        ],
+        "H_residual_xy": [
+          0.0,
+          0.0
+        ],
+        "H_residual_native_pixels": 0.0,
+        "status": "not_a_pass: A/B material stability not established; H is near-collinear with A/B; visual pattern drift and rendering defects remain"
+      }
+    },
+    {
+      "file": "S02a_k02_tense.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "sha256": "0c137f2c2b04ea22ea1acfbb554e70afb28b0d461a68e65e6249ab493270f0b5",
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "zero_pixels": 1165335,
+        "opaque_255_pixels": 725,
+        "near_opaque_250_255_pixels": 384785,
+        "nonzero_pixels": 408017,
+        "alpha_bbox_all_nonzero": [
+          202,
+          64,
+          1610,
+          941
+        ],
+        "main_component_bbox_alpha_ge_128": [
+          476,
+          137,
+          1190,
+          941
+        ],
+        "main_component_pixels_alpha_ge_128": 393745,
+        "outside_main_component_pixels_alpha_ge_128": 17,
+        "component_count_alpha_ge_128": 10
+      },
+      "lower_chest_points": {
+        "A": {
+          "xy": [
+            731.1474358974359,
+            904.7051282051282
+          ],
+          "area_pixels": 312,
+          "roi_xyxy": [
+            700,
+            890,
+            755,
+            930
+          ]
+        },
+        "B": {
+          "xy": [
+            945.8940809968848,
+            912.772585669782
+          ],
+          "area_pixels": 321,
+          "roi_xyxy": [
+            925,
+            890,
+            975,
+            935
+          ]
+        },
+        "H": {
+          "xy": [
+            838.4858044164038,
+            910.8454258675079
+          ],
+          "area_pixels": 317,
+          "roi_xyxy": [
+            815,
+            890,
+            865,
+            935
+          ]
+        }
+      },
+      "AB_similarity_to_k01": {
+        "formula": "x_master = a*x_source - b*y_source + tx; y_master = b*x_source + a*y_source + ty",
+        "a": 1.0475789121057189,
+        "b": -0.010457608716707574,
+        "tx": -51.0863127210896,
+        "ty": -36.13521018275367,
+        "scale": 1.047631108104696,
+        "angle_deg": -0.5719444466041199,
+        "H_mapped_xy": [
+          836.8189991506605,
+          909.2786936868998
+        ],
+        "H_residual_xy": [
+          -0.5215581248812668,
+          4.947424337054599
+        ],
+        "H_residual_native_pixels": 4.9748397409876235,
+        "status": "not_a_pass: A/B material stability not established; H is near-collinear with A/B; visual pattern drift and rendering defects remain"
+      }
+    },
+    {
+      "file": "S02a_k03_relief.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "sha256": "96c43a3788cf2be41eceb9900fe711c49739397e63ced7fbcd0c62856c77f87f",
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "zero_pixels": 1152887,
+        "opaque_255_pixels": 1052,
+        "near_opaque_250_255_pixels": 395933,
+        "nonzero_pixels": 420465,
+        "alpha_bbox_all_nonzero": [
+          39,
+          56,
+          1467,
+          941
+        ],
+        "main_component_bbox_alpha_ge_128": [
+          470,
+          115,
+          1193,
+          941
+        ],
+        "main_component_pixels_alpha_ge_128": 405638,
+        "outside_main_component_pixels_alpha_ge_128": 3,
+        "component_count_alpha_ge_128": 4
+      },
+      "lower_chest_points": {
+        "A": {
+          "xy": [
+            729.2522796352583,
+            904.4164133738602
+          ],
+          "area_pixels": 329,
+          "roi_xyxy": [
+            700,
+            890,
+            755,
+            930
+          ]
+        },
+        "B": {
+          "xy": [
+            947.1052631578947,
+            911.7923976608187
+          ],
+          "area_pixels": 342,
+          "roi_xyxy": [
+            925,
+            890,
+            975,
+            935
+          ]
+        },
+        "H": {
+          "xy": [
+            837.9730538922156,
+            910.4221556886228
+          ],
+          "area_pixels": 334,
+          "roi_xyxy": [
+            815,
+            890,
+            865,
+            935
+          ]
+        }
+      },
+      "AB_similarity_to_k01": {
+        "formula": "x_master = a*x_source - b*y_source + tx; y_master = b*x_source + a*y_source + ty",
+        "a": 1.0328093662803448,
+        "b": -0.006483380248749726,
+        "tx": -34.732885299701024,
+        "ty": -25.39297292405604,
+        "scale": 1.0328297155368147,
+        "angle_deg": -0.35966506316178104,
+        "H_mapped_xy": [
+          836.6361464729391,
+          909.4666587937065
+        ],
+        "H_residual_xy": [
+          -0.7044108026026379,
+          5.1353894438613
+        ],
+        "H_residual_native_pixels": 5.183475602233058,
+        "status": "not_a_pass: A/B material stability not established; H is near-collinear with A/B; visual pattern drift and rendering defects remain"
+      }
+    }
+  ]
+}
