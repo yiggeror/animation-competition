@@ -1,0 +1,565 @@
+{
+  "status": "ACTUAL_HELD_SOURCE_EXPOSURE_DECODE_PASS_VISUAL_PENDING",
+  "sources": {
+    "48": {
+      "path": "sources/F048_locked.png",
+      "sha256": "68ce16f14f9ea53f2c43c2c53f984a6a713b612f6aef28ab369780cb768695c9",
+      "true_original_event": 48
+    },
+    "52": {
+      "path": "sources/F052_LOCKED_a107.png",
+      "sha256": "a107f71d994c3302884eb3ebba0e8e4726b89bd5e36c2f8a8fa022f44ddfbb42",
+      "true_original_event": 52
+    },
+    "56": {
+      "path": "sources/F056_exact_locked042.png",
+      "sha256": "52bb96f9796878bbb9c928ad80c5af6b5a0580ad9f9c651384446f0caadd3f8f",
+      "true_original_event": 42
+    },
+    "58": {
+      "path": "candidate/F058_exact_LOCKED044_REUSE_PENDING_ASTRA.png",
+      "sha256": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+      "true_original_event": 44
+    }
+  },
+  "F058_source_byte_changes": 0,
+  "new_native_requests": 0,
+  "new_originals": 0,
+  "registration": {
+    "scale": 0.6297229219143576,
+    "translation_xy": [
+      241.2216624685139,
+      83.47607052896726
+    ]
+  },
+  "constant_preview_crop_xyxy": [
+    280,
+    80,
+    1304,
+    656
+  ],
+  "actual_gap_native_rows": {
+    "48": 91,
+    "52": 37,
+    "56": 0,
+    "58": 48
+  },
+  "actual_gap_registered_px": {
+    "48": 57.304785894206546,
+    "52": 23.29974811083123,
+    "56": 0.0,
+    "58": 30.226700251889167
+  },
+  "actual_F058_clearance_accepted_instead_of_nominal35": true,
+  "clips": {
+    "F056x2_F058x5_gray": {
+      "path": "exposure/F056x2_F058x5_gray/S09_F056x2_F058x5_gray_24fps.mp4",
+      "sha256": "a9d89a0bb24dfe08580a44439ccf18927015d2b7be3855cb070c0e73d600dcb0",
+      "sequence": [
+        56,
+        56,
+        58,
+        58,
+        58,
+        58,
+        58
+      ],
+      "scene_frames_inclusive": [
+        56,
+        62
+      ],
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "24/1",
+            "duration": "0.291667",
+            "nb_frames": "7"
+          }
+        ]
+      },
+      "decoded_frames": [
+        {
+          "clip_frame": 0,
+          "scene_frame": 56,
+          "event": 56,
+          "true_source_event": 42,
+          "decoded_nearest": 56,
+          "expected_RGB_MAE": 0.7707078269675925
+        },
+        {
+          "clip_frame": 1,
+          "scene_frame": 57,
+          "event": 56,
+          "true_source_event": 42,
+          "decoded_nearest": 56,
+          "expected_RGB_MAE": 0.7701783130787037
+        },
+        {
+          "clip_frame": 2,
+          "scene_frame": 58,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 0.790376880787037
+        },
+        {
+          "clip_frame": 3,
+          "scene_frame": 59,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 0.7902835648148148
+        },
+        {
+          "clip_frame": 4,
+          "scene_frame": 60,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 0.7907353153935185
+        },
+        {
+          "clip_frame": 5,
+          "scene_frame": 61,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 0.7896943721064815
+        },
+        {
+          "clip_frame": 6,
+          "scene_frame": 62,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 0.7902803096064814
+        }
+      ],
+      "max_expected_RGB_MAE": 0.7907353153935185,
+      "no_tween_no_new_drawing": true
+    },
+    "F048x4_F052x4_F056x2_F058x5_gray": {
+      "path": "exposure/F048x4_F052x4_F056x2_F058x5_gray/S09_F048x4_F052x4_F056x2_F058x5_gray_24fps.mp4",
+      "sha256": "e2bcd4dc200ffd78159bc10ffc838e2e74f2c0f4969f3ffc81a819ae67b46dc6",
+      "sequence": [
+        48,
+        48,
+        48,
+        48,
+        52,
+        52,
+        52,
+        52,
+        56,
+        56,
+        58,
+        58,
+        58,
+        58,
+        58
+      ],
+      "scene_frames_inclusive": [
+        48,
+        62
+      ],
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "24/1",
+            "duration": "0.625000",
+            "nb_frames": "15"
+          }
+        ]
+      },
+      "decoded_frames": [
+        {
+          "clip_frame": 0,
+          "scene_frame": 48,
+          "event": 48,
+          "true_source_event": 48,
+          "decoded_nearest": 48,
+          "expected_RGB_MAE": 0.7503577112268518
+        },
+        {
+          "clip_frame": 1,
+          "scene_frame": 49,
+          "event": 48,
+          "true_source_event": 48,
+          "decoded_nearest": 48,
+          "expected_RGB_MAE": 0.7490154803240741
+        },
+        {
+          "clip_frame": 2,
+          "scene_frame": 50,
+          "event": 48,
+          "true_source_event": 48,
+          "decoded_nearest": 48,
+          "expected_RGB_MAE": 0.7492498553240741
+        },
+        {
+          "clip_frame": 3,
+          "scene_frame": 51,
+          "event": 48,
+          "true_source_event": 48,
+          "decoded_nearest": 48,
+          "expected_RGB_MAE": 0.7490169270833333
+        },
+        {
+          "clip_frame": 4,
+          "scene_frame": 52,
+          "event": 52,
+          "true_source_event": 52,
+          "decoded_nearest": 52,
+          "expected_RGB_MAE": 0.75400390625
+        },
+        {
+          "clip_frame": 5,
+          "scene_frame": 53,
+          "event": 52,
+          "true_source_event": 52,
+          "decoded_nearest": 52,
+          "expected_RGB_MAE": 0.7533922887731481
+        },
+        {
+          "clip_frame": 6,
+          "scene_frame": 54,
+          "event": 52,
+          "true_source_event": 52,
+          "decoded_nearest": 52,
+          "expected_RGB_MAE": 0.7534418402777778
+        },
+        {
+          "clip_frame": 7,
+          "scene_frame": 55,
+          "event": 52,
+          "true_source_event": 52,
+          "decoded_nearest": 52,
+          "expected_RGB_MAE": 0.7534288194444444
+        },
+        {
+          "clip_frame": 8,
+          "scene_frame": 56,
+          "event": 56,
+          "true_source_event": 42,
+          "decoded_nearest": 56,
+          "expected_RGB_MAE": 0.744505931712963
+        },
+        {
+          "clip_frame": 9,
+          "scene_frame": 57,
+          "event": 56,
+          "true_source_event": 42,
+          "decoded_nearest": 56,
+          "expected_RGB_MAE": 0.7441225405092593
+        },
+        {
+          "clip_frame": 10,
+          "scene_frame": 58,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 0.7611939380787037
+        },
+        {
+          "clip_frame": 11,
+          "scene_frame": 59,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 0.7611508969907408
+        },
+        {
+          "clip_frame": 12,
+          "scene_frame": 60,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 0.7615031828703703
+        },
+        {
+          "clip_frame": 13,
+          "scene_frame": 61,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 0.7610568576388889
+        },
+        {
+          "clip_frame": 14,
+          "scene_frame": 62,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 0.7613237847222222
+        }
+      ],
+      "max_expected_RGB_MAE": 0.7615031828703703,
+      "no_tween_no_new_drawing": true
+    },
+    "F056x2_F058x5_dark": {
+      "path": "exposure/F056x2_F058x5_dark/S09_F056x2_F058x5_dark_24fps.mp4",
+      "sha256": "558f59957a702d5fd3a558165ca0cdc51d70d75eafc2894225af4de6aae476b4",
+      "sequence": [
+        56,
+        56,
+        58,
+        58,
+        58,
+        58,
+        58
+      ],
+      "scene_frames_inclusive": [
+        56,
+        62
+      ],
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "24/1",
+            "duration": "0.291667",
+            "nb_frames": "7"
+          }
+        ]
+      },
+      "decoded_frames": [
+        {
+          "clip_frame": 0,
+          "scene_frame": 56,
+          "event": 56,
+          "true_source_event": 42,
+          "decoded_nearest": 56,
+          "expected_RGB_MAE": 1.5034758391203704
+        },
+        {
+          "clip_frame": 1,
+          "scene_frame": 57,
+          "event": 56,
+          "true_source_event": 42,
+          "decoded_nearest": 56,
+          "expected_RGB_MAE": 1.5029318576388888
+        },
+        {
+          "clip_frame": 2,
+          "scene_frame": 58,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 1.5243200231481482
+        },
+        {
+          "clip_frame": 3,
+          "scene_frame": 59,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 1.524267939814815
+        },
+        {
+          "clip_frame": 4,
+          "scene_frame": 60,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 1.5249016203703705
+        },
+        {
+          "clip_frame": 5,
+          "scene_frame": 61,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 1.5242578125
+        },
+        {
+          "clip_frame": 6,
+          "scene_frame": 62,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 1.5246780960648147
+        }
+      ],
+      "max_expected_RGB_MAE": 1.5249016203703705,
+      "no_tween_no_new_drawing": true
+    },
+    "F048x4_F052x4_F056x2_F058x5_dark": {
+      "path": "exposure/F048x4_F052x4_F056x2_F058x5_dark/S09_F048x4_F052x4_F056x2_F058x5_dark_24fps.mp4",
+      "sha256": "1efca07bf0f87c38da4915758388103f49b13db203c51da5a4102f6f176924dc",
+      "sequence": [
+        48,
+        48,
+        48,
+        48,
+        52,
+        52,
+        52,
+        52,
+        56,
+        56,
+        58,
+        58,
+        58,
+        58,
+        58
+      ],
+      "scene_frames_inclusive": [
+        48,
+        62
+      ],
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "24/1",
+            "duration": "0.625000",
+            "nb_frames": "15"
+          }
+        ]
+      },
+      "decoded_frames": [
+        {
+          "clip_frame": 0,
+          "scene_frame": 48,
+          "event": 48,
+          "true_source_event": 48,
+          "decoded_nearest": 48,
+          "expected_RGB_MAE": 1.4891417100694444
+        },
+        {
+          "clip_frame": 1,
+          "scene_frame": 49,
+          "event": 48,
+          "true_source_event": 48,
+          "decoded_nearest": 48,
+          "expected_RGB_MAE": 1.4880501302083333
+        },
+        {
+          "clip_frame": 2,
+          "scene_frame": 50,
+          "event": 48,
+          "true_source_event": 48,
+          "decoded_nearest": 48,
+          "expected_RGB_MAE": 1.4883293547453704
+        },
+        {
+          "clip_frame": 3,
+          "scene_frame": 51,
+          "event": 48,
+          "true_source_event": 48,
+          "decoded_nearest": 48,
+          "expected_RGB_MAE": 1.488212890625
+        },
+        {
+          "clip_frame": 4,
+          "scene_frame": 52,
+          "event": 52,
+          "true_source_event": 52,
+          "decoded_nearest": 52,
+          "expected_RGB_MAE": 1.4909866898148147
+        },
+        {
+          "clip_frame": 5,
+          "scene_frame": 53,
+          "event": 52,
+          "true_source_event": 52,
+          "decoded_nearest": 52,
+          "expected_RGB_MAE": 1.490719039351852
+        },
+        {
+          "clip_frame": 6,
+          "scene_frame": 54,
+          "event": 52,
+          "true_source_event": 52,
+          "decoded_nearest": 52,
+          "expected_RGB_MAE": 1.4908521412037037
+        },
+        {
+          "clip_frame": 7,
+          "scene_frame": 55,
+          "event": 52,
+          "true_source_event": 52,
+          "decoded_nearest": 52,
+          "expected_RGB_MAE": 1.4907664207175926
+        },
+        {
+          "clip_frame": 8,
+          "scene_frame": 56,
+          "event": 56,
+          "true_source_event": 42,
+          "decoded_nearest": 56,
+          "expected_RGB_MAE": 1.4842173032407406
+        },
+        {
+          "clip_frame": 9,
+          "scene_frame": 57,
+          "event": 56,
+          "true_source_event": 42,
+          "decoded_nearest": 56,
+          "expected_RGB_MAE": 1.484079861111111
+        },
+        {
+          "clip_frame": 10,
+          "scene_frame": 58,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 1.4992082609953703
+        },
+        {
+          "clip_frame": 11,
+          "scene_frame": 59,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 1.499033203125
+        },
+        {
+          "clip_frame": 12,
+          "scene_frame": 60,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 1.4993702980324075
+        },
+        {
+          "clip_frame": 13,
+          "scene_frame": 61,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 1.4991655815972222
+        },
+        {
+          "clip_frame": 14,
+          "scene_frame": 62,
+          "event": 58,
+          "true_source_event": 44,
+          "decoded_nearest": 58,
+          "expected_RGB_MAE": 1.4993438946759259
+        }
+      ],
+      "max_expected_RGB_MAE": 1.4993702980324075,
+      "no_tween_no_new_drawing": true
+    }
+  },
+  "limits": "Isolated original held PNGs,24fps,noaudio,not full scene/film. New15f encoded from unchanged locked sources; previous approved10f bitstream is not claimed copied."
+}

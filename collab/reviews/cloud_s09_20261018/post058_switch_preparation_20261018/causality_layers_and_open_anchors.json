@@ -1,0 +1,61 @@
+{
+  "status": "REFERENCE_SOURCE_AND_CAUSALITY_PACKET_ONLY_NOT_POSE_OR_CALL_READY",
+  "latest_authority": "Parent relays explicit Astra:058=whole locked044 fe70,48native/30.2267registered accepted,058–062hold5;056contact and073light unchanged. Supersedes prior readiness35 question.",
+  "existing_art_usage": {
+    "F000": "identity, materials, initial operating grip context",
+    "F008": "OFF prepress thumb shape",
+    "F014": "first ON dark visible thumb push reference only",
+    "F018": "frown reference; retain dark",
+    "F026": "real OFF reset and two-hand operating-context reference; not automatically063 entire pose",
+    "F031_pure_unit": "real rigid current hand/torch source, technical wrist cut is not a final arm connection",
+    "F056": "exact locked042 second contact",
+    "F058": "exact locked044 new approved reuse; torso/head/palm retain source unless later approved action changes them"
+  },
+  "causal_and_layer_checklist": [
+    "056独立第二接触→058确实离掌；仅尾盖触掌，不以灯头或指节抢触。058不再追35名义。",
+    "063首先从触掌姿态回操作角，左掌只是靠近灯头之后的前筒段，仍留真实间隙；手不穿筒、不在063提前包托。",
+    "069左掌/指真正承接前段后才供拇指第二推的反力；掌根—腕—远前臂完整连续，近右裸手仍完整环握，前臂不交叉。",
+    "原手筒既有握指/筒体交叠作为一件真实刚性源保持；后续拇指滑键局部改变须真实画稿，不能移动筒纹当作机械开关行程。",
+    "躯干在后、远袖远臂承托层次与前景近臂按实际遮挡分配；隐藏远袖/远臂alpha不能硬保压住新前景。左手包托时掌在筒下，指与筒前缘的交叠须真实手审。",
+    "近袖根→整上臂→肘→腕→握手全链须新姿态连续接回；技术腕截边不能当终稿，不能靠窄条补桥、拉伸手臂或只转手不接肘。",
+    "OFF持续至068；069–072为TRANSIT且灯仍暗；073首次ON亮，第一段ON不亮参考不能把灯提前亮。",
+    "073眼先看灯口，077才整头轻转并松眉；085稳定向右持握。亮灯点、光轴和S10交接在画面实际锚定前不可用代码旧点替代。"
+  ],
+  "Astra_actual_anchor_choices_needed_before_input_gate": [
+    {
+      "frame": 63,
+      "needed": "063完整操作筒轴方向/旋转量、真实转轴归属（可近腕/握持中心但未选定）、灯头/尾盖终点；近臂全链与左右肘间隔；是否参考026斜持角仅作提案，不视为已准。",
+      "why": "竖持058到斜持026是新三维姿态与远手行程，旧画和旧175坐标不能直接作为新目标。"
+    },
+    {
+      "frame": 69,
+      "needed": "左掌实际承托的前筒接触带、掌法向、腕/肘路径及指在筒前后的归属；063尚未触与069已托的可见区分。",
+      "why": "旧s/n、820750、旧腕代理均非真实240筒实际位置。"
+    },
+    {
+      "frame": 73,
+      "needed": "真实滑键OFF/TRANSIT/ON可见位置或遮挡判据、拇指合法行程；新操作姿态灯口中心/朝向、亮面与光束起点。",
+      "why": "第一次开关源的机械端点被拇指遮挡，且当前筒姿态不同；不得只套旧代码光点。"
+    },
+    {
+      "frames": [
+        77,
+        85
+      ],
+      "needed": "077整个头的确认幅度/朝向和085最终持灯方向，与S10光束首现时刻/位置确认。",
+      "why": "本包只有真实旧源，不生成新头姿/光效或声称后段已冻结。"
+    }
+  ],
+  "explicitly_not_inherited": [
+    "175px旧筒长",
+    "44px所谓完整尾径",
+    "旧820750掌面",
+    "旧200px双骨/旧关节proxy",
+    "旧2.29px安全余量",
+    "旧35px058名义间隙"
+  ],
+  "reviewer_image_generation_calls": 0,
+  "new_pose_images": 0,
+  "input_masks_created": 0,
+  "new_state_approval": false
+}

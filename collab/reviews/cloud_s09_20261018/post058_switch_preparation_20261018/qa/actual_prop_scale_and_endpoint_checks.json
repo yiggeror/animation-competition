@@ -1,0 +1,71 @@
+{
+  "status": "MANUAL_VISIBLE_ENDPOINTS_NOT_ANATOMY_OR_COMPLETE_CAP_DIAMETER",
+  "registration_scale": 0.6297229219143576,
+  "026": {
+    "tail_axis_manual_native": [
+      853,
+      638
+    ],
+    "lamp_axis_manual_native": [
+      1227,
+      563
+    ],
+    "axis_native_approx": 381.4459332592235,
+    "axis_registered_approx": 240.20524764434728,
+    "axis_native_uncertainty_approx": 8,
+    "source": "F000_lock.json endpoints inverted via unchanged registration; endpoint regions actually checked identical in026",
+    "full_cap_diameter": "unobservable; visible roughly44 is occluded fragment, not full diameter"
+  },
+  "031_and058": {
+    "031_lamp_axis_manual_native": [
+      1135,
+      278
+    ],
+    "031_tail_axis_manual_native": [
+      1134,
+      654
+    ],
+    "058_whole_reuse_shift_vs031_native": [
+      0,
+      11
+    ],
+    "axis_native_approx": 376.00132978488256,
+    "axis_registered_approx": 236.77665603582022,
+    "axis_native_uncertainty_approx": 8,
+    "lamp_full_visible_diameter_native_approx": 128,
+    "lamp_diameter_manual_uncertainty": 5,
+    "complete_cap_visible_diameter_native_approx": 83,
+    "cap_manual_uncertainty": 4,
+    "source": "actual images viewed; manual axis/diameter estimates also recorded in historical seam report; old contact target coordinates are not inherited"
+  },
+  "axis_difference_percent": -1.4273591614465841,
+  "judgment": "约1.43%轴长差在两次人工端点误差内；不能据此认定设计漂移或擅缩当前筒。完整尾盖只当前姿态可见，不做026完整径比。",
+  "actual_endpoint_RGBA_checks": {
+    "lamp_end": {
+      "native_box_halfopen": [
+        1155,
+        485,
+        1270,
+        636
+      ],
+      "F000_vs_F026_RGBA_changed_pixels": 0
+    },
+    "visible_tail_end": {
+      "native_box_halfopen": [
+        830,
+        611,
+        877,
+        662
+      ],
+      "F000_vs_F026_RGBA_changed_pixels": 0
+    }
+  },
+  "058_latest_override": {
+    "whole_image_reuse_of_locked044": true,
+    "source_sha256": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+    "gap_native": 48,
+    "gap_registered": 30.226700251889167,
+    "old_nominal35_superseded_by_explicit_Astra": true
+  },
+  "OFF_ON_visibility_limit": "d03/d05 thumb遮挡实际滑键端点；只能确认拇指前推/退回的可见形状，不能声称机械端点完整已验证。"
+}

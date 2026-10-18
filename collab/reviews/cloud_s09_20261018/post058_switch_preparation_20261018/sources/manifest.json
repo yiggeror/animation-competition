@@ -1,0 +1,148 @@
+{
+  "scope": "actual locked source/reference snapshots only; no new pose, input mask or generation",
+  "sources": [
+    {
+      "key": "F000_OFF_identity",
+      "source_repo_relative": "collab/reviews/cloud_s09_20261018/switch_segment/locked/F000_raw_alpha_clean.png",
+      "portable_path": "sources/F000_OFF_identity.png",
+      "sha256": "715ea4d87d07714a631e4f4662eeb58390044ebba4c9c1e49ad914a7d553aaa5",
+      "size": [
+        1672,
+        941
+      ],
+      "role": "锁定身份、完整斜持筒及OFF基态；非后段操作姿态自动复用",
+      "byte_identical_snapshot": true
+    },
+    {
+      "key": "F008_OFF_prepress",
+      "source_repo_relative": "collab/reviews/cloud_s09_20261018/switch_segment/candidates/d02_raw_locked.png",
+      "portable_path": "sources/F008_OFF_prepress.png",
+      "sha256": "4ebc432f94023f6a4053e4d7a7f27df0f45307d167c65a6bc142147047f6e350",
+      "size": [
+        1672,
+        941
+      ],
+      "role": "拇指预压仍OFF，第一开关方向参考",
+      "byte_identical_snapshot": true
+    },
+    {
+      "key": "F014_ON_dark",
+      "source_repo_relative": "collab/reviews/cloud_s09_20261018/switch_segment/candidates/d03_raw_locked.png",
+      "portable_path": "sources/F014_ON_dark.png",
+      "sha256": "e240aed812f21280c4fd378065b39885e58ef65902fa1bdaec8be1ffcf8f4755",
+      "size": [
+        1672,
+        941
+      ],
+      "role": "第一次到ON而暗，ON拇指形状/方向参考；机械端点部分遮挡",
+      "byte_identical_snapshot": true
+    },
+    {
+      "key": "F018_ON_dark_frown",
+      "source_repo_relative": "collab/reviews/cloud_s09_20261018/switch_segment/candidates/d04_raw_locked.png",
+      "portable_path": "sources/F018_ON_dark_frown.png",
+      "sha256": "bceedbf8141fb2e2eb8269b7df2f4b91fe81e5dab49a1639d5771e014fedee32",
+      "size": [
+        1672,
+        941
+      ],
+      "role": "第一次ON后等待/眉心轻拧，仍暗",
+      "byte_identical_snapshot": true
+    },
+    {
+      "key": "F026_OFF_reset",
+      "source_repo_relative": "collab/reviews/cloud_s09_20261018/pre_tap_segment/candidates/d05_raw_locked.png",
+      "portable_path": "sources/F026_OFF_reset.png",
+      "sha256": "a9a3eb670a30a6a87792a3a298f798c34a70923b3c4ea49b15c058de2a941ccc",
+      "size": [
+        1672,
+        941
+      ],
+      "role": "实际锁026，OFF复位；左手仍包托斜筒",
+      "byte_identical_snapshot": true
+    },
+    {
+      "key": "F031_whole_pose",
+      "source_repo_relative": "collab/reviews/cloud_s09_20261018/pre_tap_segment/clothing_semantic_review/continuous_contour_delivery/candidate/F031_raw_clothing_and_contours_for_final_lock.png",
+      "portable_path": "sources/F031_whole_pose.png",
+      "sha256": "4b59c62485cf382c3e2d411de3c8ca9fb4edee622dad31b41946362889d44da7",
+      "size": [
+        1672,
+        941
+      ],
+      "role": "实际锁031整态，竖筒与掌分离",
+      "byte_identical_snapshot": true
+    },
+    {
+      "key": "F031_pure_grip_torch",
+      "source_repo_relative": "collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/sources/F031_rigid_whole_torch_and_grip.png",
+      "portable_path": "sources/F031_pure_grip_torch.png",
+      "sha256": "5e39cda65ed11384debda248a3f6c1393ec2f16261d2da25cb7a4ccb40ef0862",
+      "size": [
+        1672,
+        941
+      ],
+      "role": "唯一纯031整握手筒原层；技术腕截线不是终稿接缝",
+      "byte_identical_snapshot": true
+    },
+    {
+      "key": "F056_exact042_contact",
+      "source_repo_relative": "collab/reviews/cloud_s09_20261018/first_tap_segment/F042_contact_gate/astra_two_corridors_zero_call/candidate/F042_two_corridors_clean_PENDING_ASTRA.png",
+      "portable_path": "sources/F056_exact042_contact.png",
+      "sha256": "52bb96f9796878bbb9c928ad80c5af6b5a0580ad9f9c651384446f0caadd3f8f",
+      "size": [
+        1672,
+        941
+      ],
+      "role": "锁042整图精确复用056；第二次尾盖触掌",
+      "byte_identical_snapshot": true
+    },
+    {
+      "key": "F058_exact044_rebound",
+      "source_repo_relative": "collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/candidate/F044_complete_local_native_arm_PENDING_ASTRA.png",
+      "portable_path": "sources/F058_exact044_rebound.png",
+      "sha256": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+      "size": [
+        1672,
+        941
+      ],
+      "role": "最新Astra准058整图复用锁044；48native离掌，058–062 hold5",
+      "byte_identical_snapshot": true
+    },
+    {
+      "source_repo_relative": "collab/reviews/cloud_s09_20261018/switch_segment/locked/F000_lock.json",
+      "portable_path": "sources/doc_switch_segment__locked__F000_lock.json",
+      "sha256": "793460bce925acc14511c9bba49d20bab5b9bc297e0a65369c0c5b92efa2d6b1",
+      "role": "历史已记录测量/像素来源或时表；最新Astra058裁定覆盖旧35名义",
+      "byte_identical_snapshot": true
+    },
+    {
+      "source_repo_relative": "collab/reviews/cloud_s09_20261018/switch_segment/qa/d03_patch_report.json",
+      "portable_path": "sources/doc_switch_segment__qa__d03_patch_report.json",
+      "sha256": "12566ad6447851685f7bc19039c4f47449ff1ec9b9057cd948396c378d4fbb26",
+      "role": "历史已记录测量/像素来源或时表；最新Astra058裁定覆盖旧35名义",
+      "byte_identical_snapshot": true
+    },
+    {
+      "source_repo_relative": "collab/reviews/cloud_s09_20261018/pre_tap_segment/qa/d05_patch_report.json",
+      "portable_path": "sources/doc_pre_tap_segment__qa__d05_patch_report.json",
+      "sha256": "51d3f55eaa886ab7850878162a9024c04ea51561ff232a0723868db0a372b760",
+      "role": "历史已记录测量/像素来源或时表；最新Astra058裁定覆盖旧35名义",
+      "byte_identical_snapshot": true
+    },
+    {
+      "source_repo_relative": "collab/reviews/cloud_s09_20261018/pre_tap_segment/seam_repair/qa/measurements_and_lock_checks.json",
+      "portable_path": "sources/doc_pre_tap_segment__seam_repair__qa__measurements_and_lock_checks.json",
+      "sha256": "dcef5e9232879e3e961dc8b9bca94544ecb7fb791bde926b98ad885144b041de",
+      "role": "历史已记录测量/像素来源或时表；最新Astra058裁定覆盖旧35名义",
+      "byte_identical_snapshot": true
+    },
+    {
+      "source_repo_relative": "collab/reviews/cloud_s09_20261018/exposure.csv",
+      "portable_path": "sources/doc_exposure.csv",
+      "sha256": "fbdd40903fae53a51c67772bf11918605cbd05adfac0aa843fa4e08e4c98e1a2",
+      "role": "历史已记录测量/像素来源或时表；最新Astra058裁定覆盖旧35名义",
+      "byte_identical_snapshot": true
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "source_raw_sha256": "a71ef8759bfa9e907da65c8f15c147a39c4d79d1f91e402a38f49ba0850209e4",
+  "approval": "Astra relayed user: lock natural raw from1bbdc358; no F000 generation repeat",
+  "alpha_cleanup": "only alpha==1 set to0; all RGB and alpha>1 byte-identical in clean raw",
+  "alpha_pixels_removed": 5652,
+  "raw_size": [
+    1672,
+    941
+  ],
+  "registered_size": [
+    1536,
+    864
+  ],
+  "registration": {
+    "scale": 0.6297229219143576,
+    "translation_xy": [
+      241.2216624685139,
+      83.47607052896726
+    ],
+    "inverse_pillow_affine": [
+      1.588,
+      0,
+      -383.0600000000001,
+      0,
+      1.588,
+      -132.56
+    ]
+  },
+  "accepted_prop": {
+    "axis_endpoints_registered_approx": {
+      "tail": [
+        778.375314861461,
+        485.2392947103274
+      ],
+      "lamp": [
+        1013.8916876574308,
+        438.01007556675063
+      ]
+    },
+    "length_registered_approx": 240.2052476443473,
+    "head_unit": 250,
+    "length_H": 0.9608209905773892,
+    "center_registered_approx": [
+      896.1335012594459,
+      461.624685138539
+    ],
+    "previous175_target_superseded": true,
+    "measurement": "manual visible endpoints, approximate"
+  },
+  "final_camera_crop_registered": [
+    280,
+    80,
+    1304,
+    656
+  ],
+  "final_preview_size": [
+    1280,
+    720
+  ],
+  "skirt_cut_raw_y": 941,
+  "skirt_cut_registered_y_approx": 676.0453400503778,
+  "crop_bottom_y": 656,
+  "note": "new final waist-up crop proposal for this shot; y676 cut line remains outside by about20px; no shared camera/EDL edited",
+  "F000_generation_calls_this_phase": 0,
+  "mother_status": "LOCKED_BY_ASTRA"
+}
