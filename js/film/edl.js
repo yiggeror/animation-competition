@@ -19,7 +19,7 @@ export const SHOTS = [
   { id: 'S08', scene: 2, line: 'paint', dur: 6, mod: 'js/anim/s08.js', text: '中景：奶奶在八仙桌边"嚓"地划着火柴，火光照亮脸；抬起灯罩，凑近点着灯芯，甩灭火柴；灯罩落下"叮"，暖光铺开，她看着灯笑了，往小满那边瞟一眼' },
   // 第 3 场 · 手电
   { id: 'S09', scene: 3, line: 'paint', dur: 4, mod: 'js/paint/shots/s09.js', text: '近景（马灯从右边照过来）：小满跪在电视柜前捧着旧手电，推开关不亮，往手心磕两下，再推——亮了，光柱打出去' },
-  { id: 'S10', scene: 3, line: 'paint', dur: 5, mod: 'js/paint/shots/s10.js', text: '手电光束扫过屋子，照到奶奶，奶奶眯起眼' },
+  { id: 'S10', scene: 3, line: 'paint', dur: 5, mod: 'js/anim/s10_drawn.js', text: '手电光束扫过屋子，照到奶奶，奶奶眯起眼' },
   // 第 4 场 · 木箱
   { id: 'S12', scene: 4, line: 'paint', dur: 8, mod: 'js/paint/shots/s12.js', text: '中景：樟木箱开着，奶奶跪在箱边俯身握住签子，直起身把鹤立起来，马灯的光透过牛皮，鹤影落在箱盖内侧' },
   { id: 'S13', scene: 4, line: 'paint', dur: 5, mod: 'js/paint/shots/s13.js', text: '近景：小满盯着看 → 发现奶奶在看她 → 假装打哈欠，扭开头' },
