@@ -1,0 +1,509 @@
+{
+  "status": "Partial remote delivery: first seven calls raw/request/prompt (21 objects) plus 2 untouched original manifests. Actual input references/masks/scripts remain local pending follow-up. F014/F017 are calls08/09 and not counted in this seven-call package.",
+  "objects": [
+    {
+      "sha256": "05c61c561db5cc6f096b05ba1b8b2cc1f4eb2189bc07f2907b7cefc691c34e6d",
+      "git_blob_sha1": "8d854b0a7f7ee6ddd6b9cdc92b1bd5ec96dd3a97",
+      "bytes": 3258,
+      "extension": "json",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F006_native_call06/request.json"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F006_native_call06/request.json",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/05c61c561db5cc6f096b05ba1b8b2cc1f4eb2189bc07f2907b7cefc691c34e6d.json",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/05c61c561db5cc6f096b05ba1b8b2cc1f4eb2189bc07f2907b7cefc691c34e6d.json",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_EYES_CALLS06_07_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/0/request",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "16573d37cb22828863c636c9223a1bd43f54770210b21554af6e0273c584cc14",
+      "git_blob_sha1": "6b9a0063518dcf959b94c84a356c09f3a7395aab",
+      "bytes": 1956529,
+      "extension": "png",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F009_native_call07/raw/F009_eyes_native_raw.png"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F009_native_call07/raw/F009_eyes_native_raw.png",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/16573d37cb22828863c636c9223a1bd43f54770210b21554af6e0273c584cc14.png",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/16573d37cb22828863c636c9223a1bd43f54770210b21554af6e0273c584cc14.png",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_EYES_CALLS06_07_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/1/raw",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "1cd14386acaa1497680040a3f56b357ba592c2ff211b61e16a915d57e8976dd0",
+      "git_blob_sha1": "a0d0e56e6931358dd6a1501b2e8b5be43b80f4bd",
+      "bytes": 2050439,
+      "extension": "png",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/root_s08_eyes03/raw/call03_eyes.png"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/root_s08_eyes03/raw/call03_eyes.png",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/1cd14386acaa1497680040a3f56b357ba592c2ff211b61e16a915d57e8976dd0.png",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/1cd14386acaa1497680040a3f56b357ba592c2ff211b61e16a915d57e8976dd0.png",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/2/raw",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "3cfea1d7780fcbc1853671afbd74231bc7ec528a6e16470d53c91f9370467d85",
+      "git_blob_sha1": "95b6b65c7390bf29cff599851bda730512769563",
+      "bytes": 2439,
+      "extension": "json",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/root_s08_eyes03/request.json"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/root_s08_eyes03/request.json",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/3cfea1d7780fcbc1853671afbd74231bc7ec528a6e16470d53c91f9370467d85.json",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/3cfea1d7780fcbc1853671afbd74231bc7ec528a6e16470d53c91f9370467d85.json",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/2/request",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "4ab8142b5ebc50d2af759b6c0feada01fd57f58b709216ca3ce0be01836a32db",
+      "git_blob_sha1": "c6c3af4851ca41862b47d5e7f28be1bffa1896e6",
+      "bytes": 4011,
+      "extension": "txt",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/prompts/call02_actual_prompt.txt"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/prompts/call02_actual_prompt.txt",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/4ab8142b5ebc50d2af759b6c0feada01fd57f58b709216ca3ce0be01836a32db.txt",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/4ab8142b5ebc50d2af759b6c0feada01fd57f58b709216ca3ce0be01836a32db.txt",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/1/actual_prompt_exact_text",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "6afae358381ed20cddb41070b72ebb50f4ca9c0c7c7c8af8707c57e75fecc26c",
+      "git_blob_sha1": "3b618aa3a96b33345646c871b819635aeb740d1c",
+      "bytes": 502843,
+      "extension": "png",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/root_s08_call02/raw/call02.png"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/root_s08_call02/raw/call02.png",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/6afae358381ed20cddb41070b72ebb50f4ca9c0c7c7c8af8707c57e75fecc26c.png",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/6afae358381ed20cddb41070b72ebb50f4ca9c0c7c7c8af8707c57e75fecc26c.png",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/1/raw",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "70909e34f4e8732581d1321967d60e8b9da662bf991cd8a34bf981276e7d8b50",
+      "git_blob_sha1": "c903b91c1ee471993cc60c46ad7d2c4117102607",
+      "bytes": 743731,
+      "extension": "png",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/raw/F000_call01_native_raw.png"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/raw/F000_call01_native_raw.png",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/70909e34f4e8732581d1321967d60e8b9da662bf991cd8a34bf981276e7d8b50.png",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/70909e34f4e8732581d1321967d60e8b9da662bf991cd8a34bf981276e7d8b50.png",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/0/raw",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "7882462ec73a882289e529d7ca70094a6bceaaef12f0c1f3a0616fa6401d1d22",
+      "git_blob_sha1": "91f67a6b66c6c0053e36f6863f6e9569040af2c1",
+      "bytes": 3426,
+      "extension": "txt",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/prompts/call04_actual_prompt.txt"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/prompts/call04_actual_prompt.txt",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/7882462ec73a882289e529d7ca70094a6bceaaef12f0c1f3a0616fa6401d1d22.txt",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/7882462ec73a882289e529d7ca70094a6bceaaef12f0c1f3a0616fa6401d1d22.txt",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/3/actual_prompt_exact_text",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "7fce6e4d1cadba15db2eb3c7e6564fd165db1574bed290ef7ed8bc69780a1cc4",
+      "git_blob_sha1": "9674d7f5e582c165ed89fb7c24115c2afd77ea2a",
+      "bytes": 1558366,
+      "extension": "png",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F003_native_call04/raw/F003_native_raw.png"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F003_native_call04/raw/F003_native_raw.png",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/7fce6e4d1cadba15db2eb3c7e6564fd165db1574bed290ef7ed8bc69780a1cc4.png",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/7fce6e4d1cadba15db2eb3c7e6564fd165db1574bed290ef7ed8bc69780a1cc4.png",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/3/raw",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "942b1383d7b8b66821f8195e31f23972df06789752775d611d7c2574043dc959",
+      "git_blob_sha1": "f3cc07a0e7bb4154d1e76949c36f61e4fdd3b688",
+      "bytes": 2741,
+      "extension": "txt",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_EYES_CALLS06_07_PROVENANCE/prompts/call07_actual_prompt.txt"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_EYES_CALLS06_07_PROVENANCE/prompts/call07_actual_prompt.txt",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/942b1383d7b8b66821f8195e31f23972df06789752775d611d7c2574043dc959.txt",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/942b1383d7b8b66821f8195e31f23972df06789752775d611d7c2574043dc959.txt",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_EYES_CALLS06_07_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/1/actual_prompt",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "94f6fb9d7ed6889578b0ba8cf50f74492b157dada8d6aed4d3bec299eb3bdf28",
+      "git_blob_sha1": "26e63c969385cb51037328d3a4ad7eff0eaf6cd1",
+      "bytes": 4220,
+      "extension": "txt",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/prompts/call01_actual_prompt.txt"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/prompts/call01_actual_prompt.txt",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/94f6fb9d7ed6889578b0ba8cf50f74492b157dada8d6aed4d3bec299eb3bdf28.txt",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/94f6fb9d7ed6889578b0ba8cf50f74492b157dada8d6aed4d3bec299eb3bdf28.txt",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/0/actual_prompt_exact_text",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "a4a7223f2eccb49a2bbb8e4bd5ab1fdd93344378efb5c904f4f2952fdc986174",
+      "git_blob_sha1": "f8e0da68d27a7a90b0a2c01ea8290de92c7b39a7",
+      "bytes": 2717,
+      "extension": "txt",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_EYES_CALLS06_07_PROVENANCE/prompts/call06_actual_prompt.txt"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_EYES_CALLS06_07_PROVENANCE/prompts/call06_actual_prompt.txt",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/a4a7223f2eccb49a2bbb8e4bd5ab1fdd93344378efb5c904f4f2952fdc986174.txt",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/a4a7223f2eccb49a2bbb8e4bd5ab1fdd93344378efb5c904f4f2952fdc986174.txt",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_EYES_CALLS06_07_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/0/actual_prompt",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "af955e3a3e454d7edfc4f3fc7648e8349e61899898d158db98e91d21c9cb4e5f",
+      "git_blob_sha1": "2eeb9c0f3ef275dfb9f971746ecbe3ba0b9bc094",
+      "bytes": 3396,
+      "extension": "txt",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/prompts/call05_actual_prompt.txt"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/prompts/call05_actual_prompt.txt",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/af955e3a3e454d7edfc4f3fc7648e8349e61899898d158db98e91d21c9cb4e5f.txt",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/af955e3a3e454d7edfc4f3fc7648e8349e61899898d158db98e91d21c9cb4e5f.txt",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/4/actual_prompt_exact_text",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "afa10a2971ba91400268f65f68fdcf7d2fbca70dfca92605a3a21f8d86df8dad",
+      "git_blob_sha1": "37f9598eb8f284e2393dec85226bb08c137fa0b7",
+      "bytes": 1921,
+      "extension": "txt",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/prompts/call03_actual_prompt.txt"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/prompts/call03_actual_prompt.txt",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/afa10a2971ba91400268f65f68fdcf7d2fbca70dfca92605a3a21f8d86df8dad.txt",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/afa10a2971ba91400268f65f68fdcf7d2fbca70dfca92605a3a21f8d86df8dad.txt",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/2/actual_prompt_exact_text",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "c96cca91ffc3db8500ceaf662402d51aeac871772b78fad24df55238e9e4b5db",
+      "git_blob_sha1": "7add45221e7454dc0cfae6d965007357f97d97c5",
+      "bytes": 3924,
+      "extension": "json",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F003_native_call04/request.json"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F003_native_call04/request.json",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/c96cca91ffc3db8500ceaf662402d51aeac871772b78fad24df55238e9e4b5db.json",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/c96cca91ffc3db8500ceaf662402d51aeac871772b78fad24df55238e9e4b5db.json",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/3/request",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "d335de47abd6accaed0e9532e1bd5562980334088542b99e045c601ecf28b788",
+      "git_blob_sha1": "6d9f612d15a6bdde19d73126c71cbebe00677dd9",
+      "bytes": 3389,
+      "extension": "json",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F009_native_call07/request.json"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F009_native_call07/request.json",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/d335de47abd6accaed0e9532e1bd5562980334088542b99e045c601ecf28b788.json",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/d335de47abd6accaed0e9532e1bd5562980334088542b99e045c601ecf28b788.json",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_EYES_CALLS06_07_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/1/request",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "e631fbffba9a1ecf5254c5c916119a77ef8747601862b612d9b2acc50d56ff68",
+      "git_blob_sha1": "9827d12794a3cd6c01cab9102750fc62bc04a7ee",
+      "bytes": 4898,
+      "extension": "json",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/root_s08_call02/request.json"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/root_s08_call02/request.json",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/e631fbffba9a1ecf5254c5c916119a77ef8747601862b612d9b2acc50d56ff68.json",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/e631fbffba9a1ecf5254c5c916119a77ef8747601862b612d9b2acc50d56ff68.json",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/1/request",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "e71b02e7a4beff476c7c35f5f13eb1e67c12c4a40014945d0773703fffd52f05",
+      "git_blob_sha1": "f492cf1a15130a25f4aaae08d75af1cc273f52f1",
+      "bytes": 5143,
+      "extension": "json",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/request_call01.json"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/request_call01.json",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/e71b02e7a4beff476c7c35f5f13eb1e67c12c4a40014945d0773703fffd52f05.json",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/e71b02e7a4beff476c7c35f5f13eb1e67c12c4a40014945d0773703fffd52f05.json",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/0/request",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "ed91d969c0a134f1304092bdb8240c4887b588a529d27c19cf2ec59ca8d1d698",
+      "git_blob_sha1": "daec3f1086e4a90ac04456c7d1f9c8a4dd5cd498",
+      "bytes": 1885349,
+      "extension": "png",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F006_native_call06/raw/F006_eyes_native_raw.png"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F006_native_call06/raw/F006_eyes_native_raw.png",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/ed91d969c0a134f1304092bdb8240c4887b588a529d27c19cf2ec59ca8d1d698.png",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/ed91d969c0a134f1304092bdb8240c4887b588a529d27c19cf2ec59ca8d1d698.png",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_EYES_CALLS06_07_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/0/raw",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "f83a40b97da66d28a21f4f70d9b7b64045a4228d4c59e4c28f9b933b6bdebe1c",
+      "git_blob_sha1": "f6ba9a5f1de832024b6624e8c89041e30437455e",
+      "bytes": 1522771,
+      "extension": "png",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F005_native_call05/raw/F005_native_raw.png"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F005_native_call05/raw/F005_native_raw.png",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/f83a40b97da66d28a21f4f70d9b7b64045a4228d4c59e4c28f9b933b6bdebe1c.png",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/f83a40b97da66d28a21f4f70d9b7b64045a4228d4c59e4c28f9b933b6bdebe1c.png",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/4/raw",
+          "role": null
+        }
+      ]
+    },
+    {
+      "sha256": "fd70ccf2d70660784f4534fabc2c5484d60c95477e0d48a2d0018290f36d1bc2",
+      "git_blob_sha1": "6ff9f0982990e9c0ea4068229ddf34b3be9fc712",
+      "bytes": 3900,
+      "extension": "json",
+      "source_paths": [
+        "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F005_native_call05/request.json"
+      ],
+      "source_path_preferred": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F005_native_call05/request.json",
+      "staged_absolute_path": "/workspace/scratch/f060b5601755/astra_s01_xiaoman_play_20261018_1342/provenance/S08_20261018_1742/objects/fd70ccf2d70660784f4534fabc2c5484d60c95477e0d48a2d0018290f36d1bc2.json",
+      "target": "collab/reviews/20261018_1742_s08_provenance/objects/fd70ccf2d70660784f4534fabc2c5484d60c95477e0d48a2d0018290f36d1bc2.json",
+      "upload_batch": "batch01_raw_request_prompt",
+      "roles": [],
+      "categories": [
+        "batch01_raw_request_prompt"
+      ],
+      "source_occurrences": [
+        {
+          "source_manifest": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/S08_FIRST5_PROVENANCE/manifest.json",
+          "json_pointer": "/calls/4/request",
+          "role": null
+        }
+      ]
+    }
+  ]
+}

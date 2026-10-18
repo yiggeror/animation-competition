@@ -1,0 +1,1155 @@
+{
+  "commit": "a039936fa0286ed6a64eb2874a8140ff8b290161",
+  "old_master_source_commit": "da55623dc0a451ebb62b0df3ffde9b36c31501c6",
+  "old_master_source_provenance": {
+    "audio/build.py": {
+      "local_sha256": "6050ae67100a042d1a485728c5e16912f27acc15d528a4e4bca6fb7b511aab3a",
+      "matches_old_git_blob": true,
+      "latest_sha256": "5a3d9dd453e32c0d3bd4100b418816fdcc7534ee645f473be381f5855e51bf45"
+    },
+    "audio/inst.py": {
+      "local_sha256": "c6b8f630335dfabe6302e21dfb880dae34fd02b37a475418d1f0f57112d98275",
+      "matches_old_git_blob": true,
+      "latest_sha256": "c6b8f630335dfabe6302e21dfb880dae34fd02b37a475418d1f0f57112d98275"
+    },
+    "audio/sfx.py": {
+      "local_sha256": "34943517c83815b8499f28ebb43bef57b377d827cef1b7375de5d16a320e6dc2",
+      "matches_old_git_blob": true,
+      "latest_sha256": "34943517c83815b8499f28ebb43bef57b377d827cef1b7375de5d16a320e6dc2"
+    },
+    "audio/score.py": {
+      "local_sha256": "2171a6189a971a1b88b7619fc92ced65d015cada8894e59362ddb04e67f40b2e",
+      "matches_old_git_blob": true,
+      "latest_sha256": "2171a6189a971a1b88b7619fc92ced65d015cada8894e59362ddb04e67f40b2e"
+    },
+    "js/film/edl.js": {
+      "local_sha256": "4013e5c27e812759b98f87933af835fc619a90230884612dbee44d9908143cde",
+      "matches_old_git_blob": true,
+      "latest_sha256": "f84b4273f17546c581cc85770ada8970204b5158e92e7fc87244a0e180cc1561"
+    },
+    "package.json": {
+      "local_sha256": "7435fe87be491d71687e23a98dabe79423370904520a23e57d13ce65ce7cbde7",
+      "matches_old_git_blob": true,
+      "latest_sha256": "7435fe87be491d71687e23a98dabe79423370904520a23e57d13ce65ce7cbde7"
+    }
+  },
+  "old_and_new_edl_timing_equal": true,
+  "old_master_path": "/workspace/scratch/f060b5601755/astra_audio_rebuild_20261018_da55623/build/audio/film_mix_norm.wav",
+  "old_master_sha256": "71e7df7ccec327bd6d56f44d561a86dfa76f76c4a7ee9eb37c50399b2976e283",
+  "old_master_rate": 48000,
+  "old_master_samples": 11188000,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "shots": {
+    "S01": {
+      "mp4_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S01_drawn_v2.mp4",
+      "mp4_sha256": "c0acf7160c4093cbd77b72a7d45107e86bd108a21c9f321be863764eb86682c8",
+      "mp4_hash_matches_manifest": true,
+      "pcm_sha256": "bac967cc49eeeaed76550cfeff1b534bc7203d17e2e1acb65580c3827e5081eb",
+      "pcm_hash_matches_manifest": true,
+      "silent_reference_path": "/workspace/scratch/f060b5601755/astra_s01_contact_actual_20261018_1727/S01_contact_full84.mp4",
+      "silent_reference_sha256": "09e47090fc6e9b1f4175d803b483a682fafe03a056c28c90c91c04f59d23aed5",
+      "video_elementary_sha256": "671f592f9f6947a484c1d09a5fdb1bbd261cc7b6aa6e3665db507a54a4b3499f",
+      "silent_elementary_sha256": "671f592f9f6947a484c1d09a5fdb1bbd261cc7b6aa6e3665db507a54a4b3499f",
+      "video_elementary_bytes_equal": true,
+      "video_codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "expected_frames": 84,
+      "video_read_frames": 84,
+      "video_reported_frames": 84,
+      "video_fps": "24/1",
+      "video_start_time": "0.000000",
+      "video_duration": "3.500000",
+      "audio_codec": "aac",
+      "audio_channels": 2,
+      "audio_stream_duration": "3.500000",
+      "audio_stream_duration_ts": 168000,
+      "audio_stream_time_base": "1/48000",
+      "audio_stream_start_time": "0.000000",
+      "audio_first_packet": {
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "audio_last_packet": {
+        "pts": 167936,
+        "pts_time": "3.498667",
+        "dts": 167936,
+        "duration": 64,
+        "duration_time": "0.001333"
+      },
+      "pcm_rate": 48000,
+      "pcm_samples": 168000,
+      "pcm_channels": 2,
+      "pcm_duration": 3.5,
+      "aac_decoded_rate": 48000,
+      "aac_decoded_samples": 168960,
+      "aac_decoded_duration": 3.52,
+      "aac_decoded_trailing_samples_beyond_pcm": 960,
+      "aac_best_lag_samples": 0,
+      "aac_vs_pcm_zero_lag": {
+        "rmse": 0.003822822238365974,
+        "max_abs_error": 0.11258944869041443,
+        "correlation": 0.9992606347878711,
+        "rms_reference": 0.09922638007188975,
+        "snr_db": 28.284860883531515,
+        "equal_fraction": 5.9523809523809525e-06
+      },
+      "aac_vs_pcm_channel_correlations": [
+        0.9994197986864386,
+        0.9990492676089852
+      ],
+      "aac_sample_peak_dbfs": -4.798464775085449,
+      "aac_true_peak_dbtp_ffmpeg_loudnorm": -4.71,
+      "pcm_master_slice_start_sample": 0,
+      "pcm_master_slice_end_sample_exclusive": 168000,
+      "delivered_pcm_vs_old_master_lsb": {
+        "rmse": 458.73503218737545,
+        "max_abs_error": 7052.0,
+        "correlation": 0.9900378456863768,
+        "rms_reference": 3248.1909357395903,
+        "snr_db": 17.00159285918651,
+        "equal_fraction": 0.04712797619047619
+      },
+      "pcm_sample_peak_dbfs": -4.71520363852198,
+      "delivered_pcm_vs_new_rebuilt_master_lsb": {
+        "samples": 168000,
+        "channels": 2,
+        "equal_fraction": 0.9999017857142857,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.016091257608669727,
+        "correlation": 0.9999999999877552
+      },
+      "new_pcm_vs_prior_delivery_pcm_lsb": {
+        "samples": 168000,
+        "channels": 2,
+        "equal_fraction": 0.04712797619047619,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 7052.0,
+        "rmse_lsb": 458.7350365407029,
+        "correlation": 0.9900378454066312
+      },
+      "audio_presentation_samples": 168000,
+      "aac_priming_samples_signalled": 1024
+    },
+    "S04": {
+      "mp4_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S04_drawn_v2.mp4",
+      "mp4_sha256": "451ae4a80e6e584f8bdc0e42ac2d74bdb0bf8a3b907e3a9d24e08bdc6516811b",
+      "mp4_hash_matches_manifest": true,
+      "pcm_sha256": "49f9af5242afbf278afdad366275a6d47fc258673d8608f4f826f06c194eb9c8",
+      "pcm_hash_matches_manifest": true,
+      "silent_reference_path": "/workspace/scratch/f060b5601755/astra_s04_contact_actual_20261018_1727/S04_contact_color_final72.mp4",
+      "silent_reference_sha256": "8ba7c45fb70c2b5237aff76251baa794a2a2c125908fe257304b3b58b9b4b4d1",
+      "video_elementary_sha256": "5b30f5d936b930471d576d0868fff444d53ff9c5bf06a5fbc44403eb44b29351",
+      "silent_elementary_sha256": "5b30f5d936b930471d576d0868fff444d53ff9c5bf06a5fbc44403eb44b29351",
+      "video_elementary_bytes_equal": true,
+      "video_codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "expected_frames": 72,
+      "video_read_frames": 72,
+      "video_reported_frames": 72,
+      "video_fps": "24/1",
+      "video_start_time": "0.000000",
+      "video_duration": "3.000000",
+      "audio_codec": "aac",
+      "audio_channels": 2,
+      "audio_stream_duration": "3.000000",
+      "audio_stream_duration_ts": 144000,
+      "audio_stream_time_base": "1/48000",
+      "audio_stream_start_time": "0.000000",
+      "audio_first_packet": {
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "audio_last_packet": {
+        "pts": 143360,
+        "pts_time": "2.986667",
+        "dts": 143360,
+        "duration": 640,
+        "duration_time": "0.013333"
+      },
+      "pcm_rate": 48000,
+      "pcm_samples": 144000,
+      "pcm_channels": 2,
+      "pcm_duration": 3.0,
+      "aac_decoded_rate": 48000,
+      "aac_decoded_samples": 144384,
+      "aac_decoded_duration": 3.008,
+      "aac_decoded_trailing_samples_beyond_pcm": 384,
+      "aac_best_lag_samples": 0,
+      "aac_vs_pcm_zero_lag": {
+        "rmse": 0.003232480135985734,
+        "max_abs_error": 0.09093645215034485,
+        "correlation": 0.9994161823470158,
+        "rms_reference": 0.09405577781307024,
+        "snr_db": 29.27699228995487,
+        "equal_fraction": 0.0
+      },
+      "aac_vs_pcm_channel_correlations": [
+        0.9993527665691248,
+        0.9994692491981434
+      ],
+      "aac_sample_peak_dbfs": -4.24399995803833,
+      "aac_true_peak_dbtp_ffmpeg_loudnorm": -4.03,
+      "pcm_master_slice_start_sample": 768000,
+      "pcm_master_slice_end_sample_exclusive": 912000,
+      "delivered_pcm_vs_old_master_lsb": {
+        "rmse": 1314.0871725666325,
+        "max_abs_error": 27507.0,
+        "correlation": 0.9092317192609937,
+        "rms_reference": 3086.343354348404,
+        "snr_db": 7.416401270497546,
+        "equal_fraction": 0.03767013888888889
+      },
+      "pcm_sample_peak_dbfs": -4.49095204131946,
+      "delivered_pcm_vs_new_rebuilt_master_lsb": {
+        "samples": 144000,
+        "channels": 2,
+        "equal_fraction": 0.9999236111111112,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.012909944487358056,
+        "correlation": 0.9999999999912282
+      },
+      "new_pcm_vs_prior_delivery_pcm_lsb": {
+        "samples": 144000,
+        "channels": 2,
+        "equal_fraction": 0.03767361111111111,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 27507.0,
+        "rmse_lsb": 1314.0871757189052,
+        "correlation": 0.9092317190100541
+      },
+      "audio_presentation_samples": 144000,
+      "aac_priming_samples_signalled": 1024
+    },
+    "S05a": {
+      "mp4_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S05a_drawn_v4.mp4",
+      "mp4_sha256": "3124fa429bc4a4f97b40509ff841972477628b827946215a7afeb3b529c2c6d2",
+      "mp4_hash_matches_manifest": true,
+      "pcm_sha256": "5c4ef1cb8afc91e995a970b66fcd42cedc971af85c5fac24a07fd52dfa677a2b",
+      "pcm_hash_matches_manifest": true,
+      "silent_reference_path": "/workspace/scratch/f060b5601755/astra_s05a_semantic60_actual_20261018_1742/S05a_semantic60.mp4",
+      "silent_reference_sha256": "b8d1451eeb7aa8491d895dbfa2c8a9053560041810a340fa3c552aa1b5ca7374",
+      "video_elementary_sha256": "f3613d1dcfeef5859b4c7ad50527a62969f697b29458316a53656f6723147d86",
+      "silent_elementary_sha256": "f3613d1dcfeef5859b4c7ad50527a62969f697b29458316a53656f6723147d86",
+      "video_elementary_bytes_equal": true,
+      "video_codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "expected_frames": 60,
+      "video_read_frames": 60,
+      "video_reported_frames": 60,
+      "video_fps": "24/1",
+      "video_start_time": "0.000000",
+      "video_duration": "2.500000",
+      "audio_codec": "aac",
+      "audio_channels": 2,
+      "audio_stream_duration": "2.500000",
+      "audio_stream_duration_ts": 120000,
+      "audio_stream_time_base": "1/48000",
+      "audio_stream_start_time": "0.000000",
+      "audio_first_packet": {
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "audio_last_packet": {
+        "pts": 119808,
+        "pts_time": "2.496000",
+        "dts": 119808,
+        "duration": 192,
+        "duration_time": "0.004000"
+      },
+      "pcm_rate": 48000,
+      "pcm_samples": 120000,
+      "pcm_channels": 2,
+      "pcm_duration": 2.5,
+      "aac_decoded_rate": 48000,
+      "aac_decoded_samples": 120832,
+      "aac_decoded_duration": 2.517333333333333,
+      "aac_decoded_trailing_samples_beyond_pcm": 832,
+      "aac_best_lag_samples": 0,
+      "aac_vs_pcm_zero_lag": {
+        "rmse": 0.002965273674654673,
+        "max_abs_error": 0.0791873186826706,
+        "correlation": 0.9989278668129371,
+        "rms_reference": 0.0638840818852873,
+        "snr_db": 26.66655751387139,
+        "equal_fraction": 0.0
+      },
+      "aac_vs_pcm_channel_correlations": [
+        0.9988692496143123,
+        0.9990346422850279
+      ],
+      "aac_sample_peak_dbfs": -5.386940002441406,
+      "aac_true_peak_dbtp_ffmpeg_loudnorm": -5.39,
+      "pcm_master_slice_start_sample": 1152000,
+      "pcm_master_slice_end_sample_exclusive": 1272000,
+      "delivered_pcm_vs_old_master_lsb": {
+        "rmse": 2.5143363935639162,
+        "max_abs_error": 42.0,
+        "correlation": 0.9999995927441716,
+        "rms_reference": 2091.6936676759897,
+        "snr_db": 58.401494001144975,
+        "equal_fraction": 0.18308333333333332
+      },
+      "pcm_sample_peak_dbfs": -5.3790270832783404,
+      "delivered_pcm_vs_new_rebuilt_master_lsb": {
+        "samples": 120000,
+        "channels": 2,
+        "equal_fraction": 0.9999125,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.014433756729740645,
+        "correlation": 0.9999999999762283
+      },
+      "new_pcm_vs_prior_delivery_pcm_lsb": {
+        "samples": 120000,
+        "channels": 2,
+        "equal_fraction": 0.18309583333333335,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 42.0,
+        "rmse_lsb": 2.5142742491621712,
+        "correlation": 0.9999995927771924
+      },
+      "audio_presentation_samples": 120000,
+      "aac_priming_samples_signalled": 1024
+    },
+    "S02a": {
+      "mp4_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S02a_drawn_v6.mp4",
+      "mp4_sha256": "eda2ae7c612d68051626dedcbdfe89da0adb04f6c63113e695b7b663ab0406e7",
+      "mp4_hash_matches_manifest": true,
+      "pcm_sha256": "dcb8b8f0990fd9fade49424ca1a0b7e622f090a99f8ca34f928a17d3e8707959",
+      "pcm_hash_matches_manifest": true,
+      "silent_reference_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/prior_ca7be38d/S02a_drawn_v6.mp4",
+      "silent_reference_sha256": "95036ea8da3eddc84e83d11a7277601d4e89d45dfe1628bfedfc3dffde25cd53",
+      "video_elementary_sha256": "7c2c2e73ee389e4f6b4579dbb660b621e0ed97af3a794cf3c9aa2f78e25df06e",
+      "silent_elementary_sha256": "7c2c2e73ee389e4f6b4579dbb660b621e0ed97af3a794cf3c9aa2f78e25df06e",
+      "video_elementary_bytes_equal": true,
+      "video_codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "expected_frames": 60,
+      "video_read_frames": 60,
+      "video_reported_frames": 60,
+      "video_fps": "24/1",
+      "video_start_time": "0.000000",
+      "video_duration": "2.500000",
+      "audio_codec": "aac",
+      "audio_channels": 2,
+      "audio_stream_duration": "2.500000",
+      "audio_stream_duration_ts": 120000,
+      "audio_stream_time_base": "1/48000",
+      "audio_stream_start_time": "0.000000",
+      "audio_first_packet": {
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "audio_last_packet": {
+        "pts": 119808,
+        "pts_time": "2.496000",
+        "dts": 119808,
+        "duration": 192,
+        "duration_time": "0.004000"
+      },
+      "pcm_rate": 48000,
+      "pcm_samples": 120000,
+      "pcm_channels": 2,
+      "pcm_duration": 2.5,
+      "aac_decoded_rate": 48000,
+      "aac_decoded_samples": 120832,
+      "aac_decoded_duration": 2.517333333333333,
+      "aac_decoded_trailing_samples_beyond_pcm": 832,
+      "aac_best_lag_samples": 0,
+      "aac_vs_pcm_zero_lag": {
+        "rmse": 0.0032512782064391056,
+        "max_abs_error": 0.1372501105070114,
+        "correlation": 0.9993809340562272,
+        "rms_reference": 0.09195099562808587,
+        "snr_db": 29.03004606239611,
+        "equal_fraction": 0.0
+      },
+      "aac_vs_pcm_channel_correlations": [
+        0.9993361038214772,
+        0.9994347950156367
+      ],
+      "aac_sample_peak_dbfs": -4.70496940612793,
+      "aac_true_peak_dbtp_ffmpeg_loudnorm": -4.56,
+      "pcm_master_slice_start_sample": 288000,
+      "pcm_master_slice_end_sample_exclusive": 408000,
+      "delivered_pcm_vs_old_master_lsb": {
+        "rmse": 4.0289980143951425,
+        "max_abs_error": 21.0,
+        "correlation": 0.9999999229574331,
+        "rms_reference": 3009.198503884243,
+        "snr_db": 57.465075677371345,
+        "equal_fraction": 0.10200833333333334
+      },
+      "pcm_sample_peak_dbfs": -4.6443314014192865,
+      "delivered_pcm_vs_new_rebuilt_master_lsb": {
+        "samples": 120000,
+        "channels": 2,
+        "equal_fraction": 0.99995,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.01241638702145945,
+        "correlation": 0.9999999999915081
+      },
+      "new_pcm_vs_prior_delivery_pcm_lsb": {
+        "samples": 120000,
+        "channels": 2,
+        "equal_fraction": 0.102,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 21.0,
+        "rmse_lsb": 4.029003185239081,
+        "correlation": 0.9999999229593174
+      },
+      "audio_presentation_samples": 120000,
+      "aac_priming_samples_signalled": 1024
+    },
+    "S03": {
+      "mp4_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S03_drawn_v3.mp4",
+      "mp4_sha256": "61f36b2ce0d5275b9aee0a357392909c1b08aed9035bfa70e887ba6acfa02b41",
+      "mp4_hash_matches_manifest": true,
+      "pcm_sha256": "d7343ce466aafc93f8597ea412c3db7d40575c053f0f36b492fc6e859d63518d",
+      "pcm_hash_matches_manifest": true,
+      "silent_reference_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/prior_ca7be38d/S03_drawn_v3.mp4",
+      "silent_reference_sha256": "34c846269f605ae5e6fed84c46c1c14c922ebf35ca3e4c97bbc2c58b252d7533",
+      "video_elementary_sha256": "176a228872e1338c6f00f197d658b9be30c810cfa40a17d6e2039c5215cc4516",
+      "silent_elementary_sha256": "176a228872e1338c6f00f197d658b9be30c810cfa40a17d6e2039c5215cc4516",
+      "video_elementary_bytes_equal": true,
+      "video_codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "expected_frames": 96,
+      "video_read_frames": 96,
+      "video_reported_frames": 96,
+      "video_fps": "24/1",
+      "video_start_time": "0.000000",
+      "video_duration": "4.000000",
+      "audio_codec": "aac",
+      "audio_channels": 2,
+      "audio_stream_duration": "4.000000",
+      "audio_stream_duration_ts": 192000,
+      "audio_stream_time_base": "1/48000",
+      "audio_stream_start_time": "0.000000",
+      "audio_first_packet": {
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "audio_last_packet": {
+        "pts": 191488,
+        "pts_time": "3.989333",
+        "dts": 191488,
+        "duration": 512,
+        "duration_time": "0.010667"
+      },
+      "pcm_rate": 48000,
+      "pcm_samples": 192000,
+      "pcm_channels": 2,
+      "pcm_duration": 4.0,
+      "aac_decoded_rate": 48000,
+      "aac_decoded_samples": 192512,
+      "aac_decoded_duration": 4.010666666666666,
+      "aac_decoded_trailing_samples_beyond_pcm": 512,
+      "aac_best_lag_samples": 0,
+      "aac_vs_pcm_zero_lag": {
+        "rmse": 0.003646704140757032,
+        "max_abs_error": 0.08586879074573517,
+        "correlation": 0.9991561682512947,
+        "rms_reference": 0.08857967304701544,
+        "snr_db": 27.708670855338625,
+        "equal_fraction": 0.0
+      },
+      "aac_vs_pcm_channel_correlations": [
+        0.9993200706662443,
+        0.998962205150913
+      ],
+      "aac_sample_peak_dbfs": -7.353856086730957,
+      "aac_true_peak_dbtp_ffmpeg_loudnorm": -7.35,
+      "pcm_master_slice_start_sample": 408000,
+      "pcm_master_slice_end_sample_exclusive": 600000,
+      "delivered_pcm_vs_old_master_lsb": {
+        "rmse": 3.7781137131069342,
+        "max_abs_error": 17.0,
+        "correlation": 0.9999999275343981,
+        "rms_reference": 2898.9656087110766,
+        "snr_db": 57.699360762155564,
+        "equal_fraction": 0.10404166666666667
+      },
+      "pcm_sample_peak_dbfs": -7.2760866489617975,
+      "delivered_pcm_vs_new_rebuilt_master_lsb": {
+        "samples": 192000,
+        "channels": 2,
+        "equal_fraction": 0.9999401041666667,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.015562374497485916,
+        "correlation": 0.9999999999856276
+      },
+      "new_pcm_vs_prior_delivery_pcm_lsb": {
+        "samples": 192000,
+        "channels": 2,
+        "equal_fraction": 0.10403385416666666,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 17.0,
+        "rmse_lsb": 3.778129566443339,
+        "correlation": 0.9999999275311273
+      },
+      "audio_presentation_samples": 192000,
+      "aac_priming_samples_signalled": 1024
+    },
+    "S03a": {
+      "mp4_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S03a_drawn_v4.mp4",
+      "mp4_sha256": "c98b1136ad31d31f44ccb411b306542a472879100f6847f20dea2ee1d7c86f42",
+      "mp4_hash_matches_manifest": true,
+      "pcm_sha256": "45cdffcfc3d2328d716c39ca03e866d578a7d1261e4d61446cf1d1f2c61131dd",
+      "pcm_hash_matches_manifest": true,
+      "silent_reference_path": "/workspace/scratch/f060b5601755/astra_s03a_color36_actual_20261018_1727/S03a_color36.mp4",
+      "silent_reference_sha256": "9d2277ec84b2b5b394614c4055175d606fc8eb18f7ed29771df985b6ed3436f1",
+      "video_elementary_sha256": "eab6e85eda4cf5a3cbd8d18c3e6b63f707d5daf61caf3db827cb30d74d087be2",
+      "silent_elementary_sha256": "eab6e85eda4cf5a3cbd8d18c3e6b63f707d5daf61caf3db827cb30d74d087be2",
+      "video_elementary_bytes_equal": true,
+      "video_codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "expected_frames": 36,
+      "video_read_frames": 36,
+      "video_reported_frames": 36,
+      "video_fps": "24/1",
+      "video_start_time": "0.000000",
+      "video_duration": "1.500000",
+      "audio_codec": "aac",
+      "audio_channels": 2,
+      "audio_stream_duration": "1.500000",
+      "audio_stream_duration_ts": 72000,
+      "audio_stream_time_base": "1/48000",
+      "audio_stream_start_time": "0.000000",
+      "audio_first_packet": {
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "audio_last_packet": {
+        "pts": 71680,
+        "pts_time": "1.493333",
+        "dts": 71680,
+        "duration": 320,
+        "duration_time": "0.006667"
+      },
+      "pcm_rate": 48000,
+      "pcm_samples": 72000,
+      "pcm_channels": 2,
+      "pcm_duration": 1.5,
+      "aac_decoded_rate": 48000,
+      "aac_decoded_samples": 72704,
+      "aac_decoded_duration": 1.5146666666666666,
+      "aac_decoded_trailing_samples_beyond_pcm": 704,
+      "aac_best_lag_samples": 0,
+      "aac_vs_pcm_zero_lag": {
+        "rmse": 0.0042052312258638634,
+        "max_abs_error": 0.1415826827287674,
+        "correlation": 0.9991289493232474,
+        "rms_reference": 0.10037508111442839,
+        "snr_db": 27.55672057293841,
+        "equal_fraction": 0.0
+      },
+      "aac_vs_pcm_channel_correlations": [
+        0.9990566710601879,
+        0.9992196977386767
+      ],
+      "aac_sample_peak_dbfs": -5.07626485824585,
+      "aac_true_peak_dbtp_ffmpeg_loudnorm": -4.94,
+      "pcm_master_slice_start_sample": 600000,
+      "pcm_master_slice_end_sample_exclusive": 672000,
+      "delivered_pcm_vs_old_master_lsb": {
+        "rmse": 4.157517455031174,
+        "max_abs_error": 23.0,
+        "correlation": 0.9999999424052061,
+        "rms_reference": 3285.085622238407,
+        "snr_db": 57.9542522443008,
+        "equal_fraction": 0.09608333333333334
+      },
+      "pcm_sample_peak_dbfs": -4.981542074702292,
+      "delivered_pcm_vs_new_rebuilt_master_lsb": {
+        "samples": 72000,
+        "channels": 2,
+        "equal_fraction": 0.9999652777777778,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 2.0,
+        "rmse_lsb": 0.007453559924999299,
+        "correlation": 0.9999999999974334
+      },
+      "new_pcm_vs_prior_delivery_pcm_lsb": {
+        "samples": 72000,
+        "channels": 2,
+        "equal_fraction": 0.09609027777777777,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 23.0,
+        "rmse_lsb": 4.157510773688186,
+        "correlation": 0.9999999424098289
+      },
+      "audio_presentation_samples": 72000,
+      "aac_priming_samples_signalled": 1024
+    },
+    "S10": {
+      "mp4_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_scenes03_12_drawn/S10_drawn_v1.mp4",
+      "mp4_sha256": "c19b648fd0e1409c3389ac5cd034f79d64f174468da68efcdc91c8c3ac610417",
+      "mp4_hash_matches_manifest": true,
+      "pcm_sha256": "8e7ed552c7d6fe9a8bd76bc0269f0acaf9e208b56ea37a1fffe0104952aeaf16",
+      "pcm_hash_matches_manifest": true,
+      "silent_reference_path": "/workspace/scratch/f060b5601755/astra_s10_audio_actual_20261018_1607/S10_drawn_v1.mp4",
+      "silent_reference_sha256": "952339fd2df74bf42edc95004f17d4072dfd24994e94315ad6dd58b6a3006f8f",
+      "video_elementary_sha256": "93a2e60c7456a5546fc8e747faa2bccab5e7ee1d6558d4c98346cfeab59e17c9",
+      "silent_elementary_sha256": "93a2e60c7456a5546fc8e747faa2bccab5e7ee1d6558d4c98346cfeab59e17c9",
+      "video_elementary_bytes_equal": true,
+      "video_codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "expected_frames": 120,
+      "video_read_frames": 120,
+      "video_reported_frames": 120,
+      "video_fps": "24/1",
+      "video_start_time": "0.000000",
+      "video_duration": "5.000000",
+      "audio_codec": "aac",
+      "audio_channels": 2,
+      "audio_stream_duration": "5.000000",
+      "audio_stream_duration_ts": 240000,
+      "audio_stream_time_base": "1/48000",
+      "audio_stream_start_time": "0.000000",
+      "audio_first_packet": {
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "audio_last_packet": {
+        "pts": 239616,
+        "pts_time": "4.992000",
+        "dts": 239616,
+        "duration": 384,
+        "duration_time": "0.008000"
+      },
+      "pcm_rate": 48000,
+      "pcm_samples": 240000,
+      "pcm_channels": 2,
+      "pcm_duration": 5.0,
+      "aac_decoded_rate": 48000,
+      "aac_decoded_samples": 240640,
+      "aac_decoded_duration": 5.013333333333334,
+      "aac_decoded_trailing_samples_beyond_pcm": 640,
+      "aac_best_lag_samples": 0,
+      "aac_vs_pcm_zero_lag": {
+        "rmse": 0.0037439895274573158,
+        "max_abs_error": 0.16785559803247452,
+        "correlation": 0.9987963423566438,
+        "rms_reference": 0.07608318930576932,
+        "snr_db": 26.159081681600927,
+        "equal_fraction": 0.0
+      },
+      "aac_vs_pcm_channel_correlations": [
+        0.9992021726553031,
+        0.9984413253653027
+      ],
+      "aac_sample_peak_dbfs": -4.512448787689209,
+      "aac_true_peak_dbtp_ffmpeg_loudnorm": -4.51,
+      "pcm_master_slice_start_sample": 2140000,
+      "pcm_master_slice_end_sample_exclusive": 2380000,
+      "delivered_pcm_vs_old_master_lsb": {
+        "rmse": 1.3782151803449756,
+        "max_abs_error": 9.0,
+        "correlation": 0.9999999088378972,
+        "rms_reference": 2492.2183719028317,
+        "snr_db": 65.1453812809413,
+        "equal_fraction": 0.30343333333333333
+      },
+      "pcm_sample_peak_dbfs": -4.4998474178335925,
+      "delivered_pcm_vs_new_rebuilt_master_lsb": {
+        "samples": 240000,
+        "channels": 2,
+        "equal_fraction": 0.99998125,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.006922186552431729,
+        "correlation": 0.999999999996147
+      },
+      "new_pcm_vs_prior_delivery_pcm_lsb": {
+        "samples": 240000,
+        "channels": 2,
+        "equal_fraction": 0.3034375,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 9.0,
+        "rmse_lsb": 1.3781909942626482,
+        "correlation": 0.9999999088405794
+      },
+      "audio_presentation_samples": 240000,
+      "aac_priming_samples_signalled": 1024
+    },
+    "S13": {
+      "mp4_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_scenes03_12_drawn/S13_drawn_v1.mp4",
+      "mp4_sha256": "ee50d48493f8d489c564ccdcdae2d4cff8386990b3329837551f6244210de6c5",
+      "mp4_hash_matches_manifest": true,
+      "pcm_sha256": "a67e3c2fb9b7a1e940f3b010829521076b9da996813be188b2e95bafa837a5c5",
+      "pcm_hash_matches_manifest": true,
+      "silent_reference_path": "/workspace/scratch/f060b5601755/astra_s13_color120_actual_20261018_1723/S13_color120_720p24.mp4",
+      "silent_reference_sha256": "5be603c2d2229102ec3c2f9d0ed6db017c655f317fe76cf274d0282c4e9ae576",
+      "video_elementary_sha256": "0361fe31b11f1f5ef984de71b38003e97e33979452b7818e51fec1c7627e5646",
+      "silent_elementary_sha256": "0361fe31b11f1f5ef984de71b38003e97e33979452b7818e51fec1c7627e5646",
+      "video_elementary_bytes_equal": true,
+      "video_codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "expected_frames": 120,
+      "video_read_frames": 120,
+      "video_reported_frames": 120,
+      "video_fps": "24/1",
+      "video_start_time": "0.000000",
+      "video_duration": "5.000000",
+      "audio_codec": "aac",
+      "audio_channels": 2,
+      "audio_stream_duration": "5.000000",
+      "audio_stream_duration_ts": 240000,
+      "audio_stream_time_base": "1/48000",
+      "audio_stream_start_time": "0.000000",
+      "audio_first_packet": {
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "audio_last_packet": {
+        "pts": 239616,
+        "pts_time": "4.992000",
+        "dts": 239616,
+        "duration": 384,
+        "duration_time": "0.008000"
+      },
+      "pcm_rate": 48000,
+      "pcm_samples": 240000,
+      "pcm_channels": 2,
+      "pcm_duration": 5.0,
+      "aac_decoded_rate": 48000,
+      "aac_decoded_samples": 240640,
+      "aac_decoded_duration": 5.013333333333334,
+      "aac_decoded_trailing_samples_beyond_pcm": 640,
+      "aac_best_lag_samples": 0,
+      "aac_vs_pcm_zero_lag": {
+        "rmse": 0.0025298550126051905,
+        "max_abs_error": 0.09436671435832977,
+        "correlation": 0.9994179731430964,
+        "rms_reference": 0.07370686478395748,
+        "snr_db": 29.28824612177024,
+        "equal_fraction": 2.0833333333333334e-06
+      },
+      "aac_vs_pcm_channel_correlations": [
+        0.999269818575844,
+        0.999544938039065
+      ],
+      "aac_sample_peak_dbfs": -4.553747177124023,
+      "aac_true_peak_dbtp_ffmpeg_loudnorm": -4.55,
+      "pcm_master_slice_start_sample": 2764000,
+      "pcm_master_slice_end_sample_exclusive": 3004000,
+      "delivered_pcm_vs_old_master_lsb": {
+        "rmse": 1.2119741127598394,
+        "max_abs_error": 6.0,
+        "correlation": 0.999999903400334,
+        "rms_reference": 2414.6416002147193,
+        "snr_db": 65.98718669872792,
+        "equal_fraction": 0.32272083333333335
+      },
+      "pcm_sample_peak_dbfs": -4.505189019788276,
+      "delivered_pcm_vs_new_rebuilt_master_lsb": {
+        "samples": 240000,
+        "channels": 2,
+        "equal_fraction": 0.99996875,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.00978945010372561,
+        "correlation": 0.9999999999917859
+      },
+      "new_pcm_vs_prior_delivery_pcm_lsb": {
+        "samples": 240000,
+        "channels": 2,
+        "equal_fraction": 0.32271458333333336,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 6.0,
+        "rmse_lsb": 1.2119689558730455,
+        "correlation": 0.9999999034004947
+      },
+      "audio_presentation_samples": 240000,
+      "aac_priming_samples_signalled": 1024
+    }
+  },
+  "boundaries": [
+    "Signal/bitstream audit only; not a fresh subjective visual or listening approval.",
+    "Full delivery-file hash, PCM reference comparison, and lossy AAC comparison are separate checks.",
+    "New S01 F012/F034/F035 and S04 F007 source timing is checked against independently rebuilt audio; actual action frame selection is inherited from the separate visual reviewer."
+  ],
+  "new_master_rebuild": {
+    "source_commit": "a039936fa0286ed6a64eb2874a8140ff8b290161",
+    "source_manifest": {
+      "commit": "a039936fa0286ed6a64eb2874a8140ff8b290161",
+      "files": {
+        "audio/build.py": {
+          "sha256": "5a3d9dd453e32c0d3bd4100b418816fdcc7534ee645f473be381f5855e51bf45",
+          "git_blob": "f46e100ca3fd98d13d5f0db898c7d4568f505466"
+        },
+        "audio/inst.py": {
+          "sha256": "c6b8f630335dfabe6302e21dfb880dae34fd02b37a475418d1f0f57112d98275",
+          "git_blob": "63bc63cd91cd6e150a8f115dd0fd3d83971a4161"
+        },
+        "audio/sfx.py": {
+          "sha256": "34943517c83815b8499f28ebb43bef57b377d827cef1b7375de5d16a320e6dc2",
+          "git_blob": "98db5abd10ba12ef438f883802697fd0cb6aabd0"
+        },
+        "audio/score.py": {
+          "sha256": "2171a6189a971a1b88b7619fc92ced65d015cada8894e59362ddb04e67f40b2e",
+          "git_blob": "e7b3eda650520491b02f8edf59581ed1730bf9a4"
+        },
+        "js/film/edl.js": {
+          "sha256": "f84b4273f17546c581cc85770ada8970204b5158e92e7fc87244a0e180cc1561",
+          "git_blob": "c85d8fc292108e3b65efa6bd42abe8c7992838e4"
+        },
+        "package.json": {
+          "sha256": "7435fe87be491d71687e23a98dabe79423370904520a23e57d13ce65ce7cbde7",
+          "git_blob": "a50f845ea6e2515a674bc568e0e943059e8fbfe0"
+        }
+      },
+      "numpy": "2.3.5",
+      "scipy": "1.17.0"
+    },
+    "source_files_reverified_against_fixed_git_commit": true,
+    "rebuilt_master": "/workspace/scratch/f060b5601755/astra_audio_rebuild_actual_a039936_20261018_1756/build/audio/film_mix_norm.wav",
+    "rebuilt_master_sha256": "d7077bb6eb8c1fd6f80d6af99e5d5c2314b7ae8724054e0ab603631563121346",
+    "sr": 48000,
+    "samples": 11188000,
+    "rebuild_log_sha256": "df07d50d860b56d94ae2224fde167aa6bb1fa2a2c5be8c8e7c8c885d798cc17a",
+    "original_build_unmodified": true,
+    "event_frames_24fps": {
+      "S01_crack": [
+        12
+      ],
+      "S01_beans": [
+        34,
+        35
+      ],
+      "S04_power_cut": [
+        7
+      ],
+      "S05a_button": [
+        39,
+        44
+      ]
+    },
+    "event_timing_note": "Event placement uses the unmodified repository source. S01 sfx clip origin uses ns(0)=1 sample; this existing 1/48000s convention is not a frame offset or a new alignment edit. No independent replacement RNG, synthesis, or normalization was used.",
+    "shots": {
+      "S01": {
+        "rebuilt_master_slice_start_sample": 0,
+        "rebuilt_master_slice_end_exclusive": 168000,
+        "delivered_pcm_sha256": "bac967cc49eeeaed76550cfeff1b534bc7203d17e2e1acb65580c3827e5081eb",
+        "vs_rebuilt_master": {
+          "samples": 168000,
+          "channels": 2,
+          "equal_fraction": 0.9999017857142857,
+          "sample_bytes_equal": false,
+          "max_abs_lsb": 3.0,
+          "rmse_lsb": 0.016091257608669727,
+          "correlation": 0.9999999999877552
+        },
+        "vs_prior_delivery_pcm": {
+          "samples": 168000,
+          "channels": 2,
+          "equal_fraction": 0.04712797619047619,
+          "sample_bytes_equal": false,
+          "max_abs_lsb": 7052.0,
+          "rmse_lsb": 458.7350365407029,
+          "correlation": 0.9900378454066312
+        }
+      },
+      "S04": {
+        "rebuilt_master_slice_start_sample": 768000,
+        "rebuilt_master_slice_end_exclusive": 912000,
+        "delivered_pcm_sha256": "49f9af5242afbf278afdad366275a6d47fc258673d8608f4f826f06c194eb9c8",
+        "vs_rebuilt_master": {
+          "samples": 144000,
+          "channels": 2,
+          "equal_fraction": 0.9999236111111112,
+          "sample_bytes_equal": false,
+          "max_abs_lsb": 3.0,
+          "rmse_lsb": 0.012909944487358056,
+          "correlation": 0.9999999999912282
+        },
+        "vs_prior_delivery_pcm": {
+          "samples": 144000,
+          "channels": 2,
+          "equal_fraction": 0.03767361111111111,
+          "sample_bytes_equal": false,
+          "max_abs_lsb": 27507.0,
+          "rmse_lsb": 1314.0871757189052,
+          "correlation": 0.9092317190100541
+        }
+      },
+      "S05a": {
+        "rebuilt_master_slice_start_sample": 1152000,
+        "rebuilt_master_slice_end_exclusive": 1272000,
+        "delivered_pcm_sha256": "5c4ef1cb8afc91e995a970b66fcd42cedc971af85c5fac24a07fd52dfa677a2b",
+        "vs_rebuilt_master": {
+          "samples": 120000,
+          "channels": 2,
+          "equal_fraction": 0.9999125,
+          "sample_bytes_equal": false,
+          "max_abs_lsb": 3.0,
+          "rmse_lsb": 0.014433756729740645,
+          "correlation": 0.9999999999762283
+        },
+        "vs_prior_delivery_pcm": {
+          "samples": 120000,
+          "channels": 2,
+          "equal_fraction": 0.18309583333333335,
+          "sample_bytes_equal": false,
+          "max_abs_lsb": 42.0,
+          "rmse_lsb": 2.5142742491621712,
+          "correlation": 0.9999995927771924
+        }
+      },
+      "S02a": {
+        "rebuilt_master_slice_start_sample": 288000,
+        "rebuilt_master_slice_end_exclusive": 408000,
+        "delivered_pcm_sha256": "dcb8b8f0990fd9fade49424ca1a0b7e622f090a99f8ca34f928a17d3e8707959",
+        "vs_rebuilt_master": {
+          "samples": 120000,
+          "channels": 2,
+          "equal_fraction": 0.99995,
+          "sample_bytes_equal": false,
+          "max_abs_lsb": 3.0,
+          "rmse_lsb": 0.01241638702145945,
+          "correlation": 0.9999999999915081
+        },
+        "vs_prior_delivery_pcm": {
+          "samples": 120000,
+          "channels": 2,
+          "equal_fraction": 0.102,
+          "sample_bytes_equal": false,
+          "max_abs_lsb": 21.0,
+          "rmse_lsb": 4.029003185239081,
+          "correlation": 0.9999999229593174
+        }
+      },
+      "S03": {
+        "rebuilt_master_slice_start_sample": 408000,
+        "rebuilt_master_slice_end_exclusive": 600000,
+        "delivered_pcm_sha256": "d7343ce466aafc93f8597ea412c3db7d40575c053f0f36b492fc6e859d63518d",
+        "vs_rebuilt_master": {
+          "samples": 192000,
+          "channels": 2,
+          "equal_fraction": 0.9999401041666667,
+          "sample_bytes_equal": false,
+          "max_abs_lsb": 3.0,
+          "rmse_lsb": 0.015562374497485916,
+          "correlation": 0.9999999999856276
+        },
+        "vs_prior_delivery_pcm": {
+          "samples": 192000,
+          "channels": 2,
+          "equal_fraction": 0.10403385416666666,
+          "sample_bytes_equal": false,
+          "max_abs_lsb": 17.0,
+          "rmse_lsb": 3.778129566443339,
+          "correlation": 0.9999999275311273
+        }
+      },
+      "S03a": {
+        "rebuilt_master_slice_start_sample": 600000,
+        "rebuilt_master_slice_end_exclusive": 672000,
+        "delivered_pcm_sha256": "45cdffcfc3d2328d716c39ca03e866d578a7d1261e4d61446cf1d1f2c61131dd",
+        "vs_rebuilt_master": {
+          "samples": 72000,
+          "channels": 2,
+          "equal_fraction": 0.9999652777777778,
+          "sample_bytes_equal": false,
+          "max_abs_lsb": 2.0,
+          "rmse_lsb": 0.007453559924999299,
+          "correlation": 0.9999999999974334
+        },
+        "vs_prior_delivery_pcm": {
+          "samples": 72000,
+          "channels": 2,
+          "equal_fraction": 0.09609027777777777,
+          "sample_bytes_equal": false,
+          "max_abs_lsb": 23.0,
+          "rmse_lsb": 4.157510773688186,
+          "correlation": 0.9999999424098289
+        }
+      },
+      "S10": {
+        "rebuilt_master_slice_start_sample": 2140000,
+        "rebuilt_master_slice_end_exclusive": 2380000,
+        "delivered_pcm_sha256": "8e7ed552c7d6fe9a8bd76bc0269f0acaf9e208b56ea37a1fffe0104952aeaf16",
+        "vs_rebuilt_master": {
+          "samples": 240000,
+          "channels": 2,
+          "equal_fraction": 0.99998125,
+          "sample_bytes_equal": false,
+          "max_abs_lsb": 3.0,
+          "rmse_lsb": 0.006922186552431729,
+          "correlation": 0.999999999996147
+        },
+        "vs_prior_delivery_pcm": {
+          "samples": 240000,
+          "channels": 2,
+          "equal_fraction": 0.3034375,
+          "sample_bytes_equal": false,
+          "max_abs_lsb": 9.0,
+          "rmse_lsb": 1.3781909942626482,
+          "correlation": 0.9999999088405794
+        }
+      },
+      "S13": {
+        "rebuilt_master_slice_start_sample": 2764000,
+        "rebuilt_master_slice_end_exclusive": 3004000,
+        "delivered_pcm_sha256": "a67e3c2fb9b7a1e940f3b010829521076b9da996813be188b2e95bafa837a5c5",
+        "vs_rebuilt_master": {
+          "samples": 240000,
+          "channels": 2,
+          "equal_fraction": 0.99996875,
+          "sample_bytes_equal": false,
+          "max_abs_lsb": 3.0,
+          "rmse_lsb": 0.00978945010372561,
+          "correlation": 0.9999999999917859
+        },
+        "vs_prior_delivery_pcm": {
+          "samples": 240000,
+          "channels": 2,
+          "equal_fraction": 0.32271458333333336,
+          "sample_bytes_equal": false,
+          "max_abs_lsb": 6.0,
+          "rmse_lsb": 1.2119689558730455,
+          "correlation": 0.9999999034004947
+        }
+      }
+    }
+  },
+  "disposition": {
+    "all_sixteen_delivery_hashes_match": true,
+    "all_eight_video_streams_match_specified_references": true,
+    "all_eight_pcm_and_mp4_lengths_match_frames": true,
+    "all_eight_aac_zero_best_lag": true,
+    "new_s01_s04_audio_source_applied": true,
+    "new_master_match_note": "All eight actual PCM slices match the fixed-source independent rebuild within 2\u20133 LSB maximum and 0.0069\u20130.0161 LSB RMSE. This is signal-level confirmation, not byte equality.",
+    "s05a_new_color_video_confirmed": true,
+    "s10_scope": "Only existing prior-color video identity and refreshed audio are checked. New-color S10 is outside this commit and not approved here.",
+    "aac_note": "AAC is lossy. Initial 1024 samples are signalled priming; extra decoded tail samples are AAC block padding outside exact MP4 presentation length. No PCM byte equality asserted for AAC.",
+    "subjective_scope": "No new subjective listening or visual approval; retains designated prior visual sources and separate event-frame decisions."
+  }
+}

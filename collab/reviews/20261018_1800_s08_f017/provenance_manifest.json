@@ -1,0 +1,270 @@
+{
+  "status": "FINAL_STATIC_DUAL_REVIEW_PASSED",
+  "frame": 17,
+  "candidate_sha256": "4e7be236953bee57aa8c3ecfc142893ab15c67095fae4b77718ff6aba0b1ec20",
+  "actual_native_calls": 9,
+  "actual_successful_raws": 9,
+  "native_failures": 0,
+  "source_F014_sha256": "d1727966cfc41b5a61f91c8b19cf8177fe88f12ce20c7d4a1036305b3fbe3d51",
+  "single_uniform_raw_registration": {
+    "scale": 0.75,
+    "tx": -179.25,
+    "ty": -145.5,
+    "coordinates": "3x crop930x840, scene930740..12401020"
+  },
+  "color_correction": "Only new far forearm flesh blue+3, internally feathered, preserves all alpha and spatial lighting variation; new wrist/palm/jade untouched; original000 remains authority.",
+  "projection_note": "017 hidden elbow estimate1000,875 vs0141048,963. Screen projected upperarm195vs288 and forearm91vs118; possible depth-turn interpretation is not a3D bone measurement. Actual scene exposure remains a separate gate.",
+  "box_owner": "table at017; source composedRGBA still includes exact box. Runtime must separate its explicit box mask before adding an independent table-box layer to avoid double alpha.",
+  "files": [
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_native_call09/raw/F017_far_arm_hand_native_raw.png",
+      "sha256": "fc459784153caabe29b22f47f634dc256fefcdfcec61cc5d94c64c5385269ee4",
+      "bytes": 863462
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_native_call09/request.json",
+      "sha256": "9904af524f14a9ea8b558c2c9cc55ae05c108764a511d4ff77c1348dcae19ba6",
+      "bytes": 5550
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_native_call09/prompt.txt",
+      "sha256": "7ae0756169a01874e6837e18d01e81c6990c333adeb71a3654b31b18a69c8cfe",
+      "bytes": 4754
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_native_call09/input_sha256.json",
+      "sha256": "d88537e49df50f0e89e2b5a11d6b955735e8bfcfa72bb5a7dc45aa37f544d909",
+      "bytes": 1684
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_native_call09/status.json",
+      "sha256": "1579443704b402075ff9f6ce470aa391de1bdc0217086738268fbecb3ffd9a65",
+      "bytes": 788
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_input_gate/build_input.py",
+      "sha256": "a0452ba691f01ca07bea8da78592ba8aff7e206dfe0499e9845fcc401fcd6fa0",
+      "bytes": 6382
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_input_gate/composite_returned_crop.py",
+      "sha256": "5fdc8cb4ab809edef7315f6a79e1468cbe12dc889ebe48677703d043fd397590",
+      "bytes": 3061
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_input_gate/clean_same_raw_semantics_v2.py",
+      "sha256": "1c88f6d943d06b2e0c6c1fec647376c5a7e303ceb505686d9033197f7f384a5a",
+      "bytes": 3439
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_input_gate/clean_seam_and_color_v4.py",
+      "sha256": "2fb5373a2eadfec6e98236a33834707dd692b96b7481d38d955c36524068b822",
+      "bytes": 5056
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_input_gate/measure_color_planes_final_v4.py",
+      "sha256": "873b71858e77a17324a8797a536b84ac96e6a6c61439b6cd9b77ef8a715a3d16",
+      "bytes": 2044
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_input_gate/make_actual_pose_diagnostics_final_v4.py",
+      "sha256": "d2945154f1f187e62be59607de5dbc052c43f06758cd57e34f20e90fade7f9b8",
+      "bytes": 3741
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/candidates/S08_F017_same_raw_semantic_candidate_RGBA.png",
+      "sha256": "4e7be236953bee57aa8c3ecfc142893ab15c67095fae4b77718ff6aba0b1ec20",
+      "bytes": 572737
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_input_gate/inputs/F017_far_arm_hand_crop_3x_RGBA.png",
+      "sha256": "a481d81dfcd99d2bd5a12313ca0cbf8ef097a644d9ecab35f917404e1ce4b17a",
+      "bytes": 214106
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_input_gate/inputs/F017_far_arm_hand_crop_3x_WHITE_MASK.png",
+      "sha256": "01f630d41e041c9491ff58b7e3debf1df9620e45b3cf7c4f5d29a34aca366472",
+      "bytes": 3567
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_input_gate/inputs/F017_head_body_contact_CONTEXT_ONLY.png",
+      "sha256": "889a16cab70388d60f2e31a1e6b69279d2dd870c3fff0d94adb76f286f840148",
+      "bytes": 853896
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_input_gate/inputs/F014_accepted_previous_arm_POSE_CONTINUITY.png",
+      "sha256": "617ceb072b928dd346615a52f3c572e88fcc469fdb4a916dfeb5efa4bf511f14",
+      "bytes": 374329
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_input_gate/inputs/F000_original_far_arm_COLOR_ONLY.png",
+      "sha256": "4f7f49e53210b0185f1eeeb446475946bfb58cd13cf37a6a802c2d0f1cdf7cb9",
+      "bytes": 384686
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_input_gate/masks/F014_vacated_far_arm_hand_box.png",
+      "sha256": "cac63f821f29a7c65df218ef0c8c01e3cd255e4ebf3460ee1613fb7c5c1448c9",
+      "bytes": 3540
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_input_gate/masks/F017_scene_white_allowed_black_frozen.png",
+      "sha256": "fa214a889123cd3ab180da37e3a9dc8c55def244456cb98f927058ad913cd8ac",
+      "bytes": 3568
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_input_gate/masks/F017_near_actual_hand_match_fixed.png",
+      "sha256": "9f88db5340ba457df3107ba4881716c022f86e49eaaa54e66f8cedcf96ea3aaf",
+      "bytes": 2964
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_input_gate/masks/F017_box_full_hard_protected.png",
+      "sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "bytes": 2180
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v2/masks/F017_palm_inner_sample.png",
+      "sha256": "b03f7ecddbec8a79277b6683a13e875bc493bef474f787251acf76ad7f608cf5",
+      "bytes": 2181
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v2/masks/FINAL_semantic_cleanup_union.png",
+      "sha256": "7c41e928aa99fd85f5a21109e655e0444d09c3523c38cd3c3e5fcf915365fbb4",
+      "bytes": 3081
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v2/masks/RESTORE_exact014_fixed_cuff_near_hand_true_collar.png",
+      "sha256": "963ce2c4485fa304389ee66090d5d02ebec63557f5e0ff34ed6fa5f824761562",
+      "bytes": 2964
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v2/masks/F000_wrist_skin_sample.png",
+      "sha256": "d88dd3cf174cbd7bea32547c8ef00e19493f6e11477ad29622189409b345218f",
+      "bytes": 2114
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v2/masks/FINAL_all_allowed_union.png",
+      "sha256": "fa214a889123cd3ab180da37e3a9dc8c55def244456cb98f927058ad913cd8ac",
+      "bytes": 3568
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v2/masks/F000_forearm_inner_sample.png",
+      "sha256": "22d40246dea2bae7ad382c4dede63089932e0102dbf084922f4ed92e01d04070",
+      "bytes": 2752
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v2/masks/F017_forearm_inner_sample.png",
+      "sha256": "be01b673abcd504672b23ae6416ec6dd71ca2b1e324e2554d74c97f068e715a3",
+      "bytes": 2218
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v2/masks/F000_palm_inner_sample.png",
+      "sha256": "abf4ac15b275d46852a2dc9823f1fb454442e720b8d7d0fa351fc8cbc4b7e87e",
+      "bytes": 2212
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v2/masks/REMOVE_native_box_ghost_outside_actual_box_not_fingers.png",
+      "sha256": "36e777e5061083e23faf4b1b47e903712f81e0d7842e70cc56bc45789ff7d1f3",
+      "bytes": 2209
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v2/masks/F017_wrist_skin_sample.png",
+      "sha256": "630ea0473fe45fde04b1f83cb99f563e88c513433420f8356419fdfa88f2478f",
+      "bytes": 2118
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/masks/F017_palm_inner_sample.png",
+      "sha256": "b03f7ecddbec8a79277b6683a13e875bc493bef474f787251acf76ad7f608cf5",
+      "bytes": 2181
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/masks/F000_forearm_inner_sample.png",
+      "sha256": "22d40246dea2bae7ad382c4dede63089932e0102dbf084922f4ed92e01d04070",
+      "bytes": 2752
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/masks/F017_forearm_inner_sample.png",
+      "sha256": "be01b673abcd504672b23ae6416ec6dd71ca2b1e324e2554d74c97f068e715a3",
+      "bytes": 2218
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/masks/NEW_actual_near_hand_guard_excluding_false_collar.png",
+      "sha256": "656965ea14f8cdec83990169b6518a8df758334a6f125e4400a08aa210a3faa9",
+      "bytes": 2965
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/masks/PROTECT_new_jade_and_palm_color.png",
+      "sha256": "444a4835df3da8bc4966f3d9f7ef485925458406c42db65d8b0a90da2dbbb032",
+      "bytes": 2377
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/masks/F000_wrist_lit_proximal_sample.png",
+      "sha256": "a952e7f62c5bc79479ab376a7707edd833b7d029c5fff39a02fca3d187a210a2",
+      "bytes": 2118
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/masks/RELEASE_only_false_near_hand_collar_square.png",
+      "sha256": "a886f732896d4636a31c6d0c274346921eac5119367f552e87c067e8c07437e2",
+      "bytes": 2152
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/masks/FINAL_explicit_semantic_union.png",
+      "sha256": "a231882a8ee67bdc69bfbadd6b9ae291e235950da4fb75e721da684f77c2ef24",
+      "bytes": 3567
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/masks/F000_palm_inner_sample.png",
+      "sha256": "abf4ac15b275d46852a2dc9823f1fb454442e720b8d7d0fa351fc8cbc4b7e87e",
+      "bytes": 2212
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/masks/OLD_near_guard_including_false_underhand_collar.png",
+      "sha256": "9f88db5340ba457df3107ba4881716c022f86e49eaaa54e66f8cedcf96ea3aaf",
+      "bytes": 2964
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/masks/COLOR_new_far_forearm_skin_BLUE_PLUS3_only.png",
+      "sha256": "d2e93d272712f24644f8b9f27d654ef97012d626bfe65a7e4c2e8fd9ced2eb5b",
+      "bytes": 2444
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/masks/F017_wrist_lit_proximal_sample.png",
+      "sha256": "630ea0473fe45fde04b1f83cb99f563e88c513433420f8356419fdfa88f2478f",
+      "bytes": 2118
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/geometry/color_before_after_same_samples.json",
+      "sha256": "be8ac27282fd8a495163ea5851e15fec4ff05fe5640eb0d58bc727a332445167",
+      "bytes": 2057
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/geometry/exposure_dark_ffprobe.json",
+      "sha256": "e99dd5f0a66014270ae85d572613c2d8ec47ebbee84abcc19d34e25a1ae95a83",
+      "bytes": 174
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/geometry/color_planes.json",
+      "sha256": "93a4d6cfa526979180069bedabbaeae5cf260262c25cd0541d5edeffef9baf6c",
+      "bytes": 3543
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/geometry/exposure_light_ffprobe.json",
+      "sha256": "e99dd5f0a66014270ae85d572613c2d8ec47ebbee84abcc19d34e25a1ae95a83",
+      "bytes": 174
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/geometry/actual_projected_chain.json",
+      "sha256": "9f8311ec5fe77471aad64826cc1c0cc8f1725b9f3304b49d70634c7a7cf5b23d",
+      "bytes": 1635
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F017_result_semantic_v4/geometry/checks.json",
+      "sha256": "5ec01256b57fc322e2ccaa95f1bb3c9939216f9a9f259f858b485ef7bc7d353f",
+      "bytes": 951
+    }
+  ],
+  "signoffs": {
+    "independent_reviewer": "017v4 static passed; same-raw seam and blue+3 natural; actual raised occluded elbow preserved",
+    "coordinator": "017v4 static final passed2026-10-18T17:53UTC; original low elbow construction is not claimed as executed"
+  },
+  "pending": "Actual Canvas tabletop bearing, lighting, and original-speed whole-scene appearance"
+}

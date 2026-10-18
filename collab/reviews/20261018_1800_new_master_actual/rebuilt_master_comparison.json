@@ -1,0 +1,244 @@
+{
+  "source_commit": "a039936fa0286ed6a64eb2874a8140ff8b290161",
+  "source_manifest": {
+    "commit": "a039936fa0286ed6a64eb2874a8140ff8b290161",
+    "files": {
+      "audio/build.py": {
+        "sha256": "5a3d9dd453e32c0d3bd4100b418816fdcc7534ee645f473be381f5855e51bf45",
+        "git_blob": "f46e100ca3fd98d13d5f0db898c7d4568f505466"
+      },
+      "audio/inst.py": {
+        "sha256": "c6b8f630335dfabe6302e21dfb880dae34fd02b37a475418d1f0f57112d98275",
+        "git_blob": "63bc63cd91cd6e150a8f115dd0fd3d83971a4161"
+      },
+      "audio/sfx.py": {
+        "sha256": "34943517c83815b8499f28ebb43bef57b377d827cef1b7375de5d16a320e6dc2",
+        "git_blob": "98db5abd10ba12ef438f883802697fd0cb6aabd0"
+      },
+      "audio/score.py": {
+        "sha256": "2171a6189a971a1b88b7619fc92ced65d015cada8894e59362ddb04e67f40b2e",
+        "git_blob": "e7b3eda650520491b02f8edf59581ed1730bf9a4"
+      },
+      "js/film/edl.js": {
+        "sha256": "f84b4273f17546c581cc85770ada8970204b5158e92e7fc87244a0e180cc1561",
+        "git_blob": "c85d8fc292108e3b65efa6bd42abe8c7992838e4"
+      },
+      "package.json": {
+        "sha256": "7435fe87be491d71687e23a98dabe79423370904520a23e57d13ce65ce7cbde7",
+        "git_blob": "a50f845ea6e2515a674bc568e0e943059e8fbfe0"
+      }
+    },
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "source_files_reverified_against_fixed_git_commit": true,
+  "rebuilt_master": "/workspace/scratch/f060b5601755/astra_audio_rebuild_actual_a039936_20261018_1756/build/audio/film_mix_norm.wav",
+  "rebuilt_master_sha256": "d7077bb6eb8c1fd6f80d6af99e5d5c2314b7ae8724054e0ab603631563121346",
+  "sr": 48000,
+  "samples": 11188000,
+  "rebuild_log_sha256": "df07d50d860b56d94ae2224fde167aa6bb1fa2a2c5be8c8e7c8c885d798cc17a",
+  "original_build_unmodified": true,
+  "event_frames_24fps": {
+    "S01_crack": [
+      12
+    ],
+    "S01_beans": [
+      34,
+      35
+    ],
+    "S04_power_cut": [
+      7
+    ],
+    "S05a_button": [
+      39,
+      44
+    ]
+  },
+  "event_timing_note": "Event placement uses the unmodified repository source. S01 sfx clip origin uses ns(0)=1 sample; this existing 1/48000s convention is not a frame offset or a new alignment edit. No independent replacement RNG, synthesis, or normalization was used.",
+  "shots": {
+    "S01": {
+      "rebuilt_master_slice_start_sample": 0,
+      "rebuilt_master_slice_end_exclusive": 168000,
+      "delivered_pcm_sha256": "bac967cc49eeeaed76550cfeff1b534bc7203d17e2e1acb65580c3827e5081eb",
+      "vs_rebuilt_master": {
+        "samples": 168000,
+        "channels": 2,
+        "equal_fraction": 0.9999017857142857,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.016091257608669727,
+        "correlation": 0.9999999999877552
+      },
+      "vs_prior_delivery_pcm": {
+        "samples": 168000,
+        "channels": 2,
+        "equal_fraction": 0.04712797619047619,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 7052.0,
+        "rmse_lsb": 458.7350365407029,
+        "correlation": 0.9900378454066312
+      }
+    },
+    "S04": {
+      "rebuilt_master_slice_start_sample": 768000,
+      "rebuilt_master_slice_end_exclusive": 912000,
+      "delivered_pcm_sha256": "49f9af5242afbf278afdad366275a6d47fc258673d8608f4f826f06c194eb9c8",
+      "vs_rebuilt_master": {
+        "samples": 144000,
+        "channels": 2,
+        "equal_fraction": 0.9999236111111112,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.012909944487358056,
+        "correlation": 0.9999999999912282
+      },
+      "vs_prior_delivery_pcm": {
+        "samples": 144000,
+        "channels": 2,
+        "equal_fraction": 0.03767361111111111,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 27507.0,
+        "rmse_lsb": 1314.0871757189052,
+        "correlation": 0.9092317190100541
+      }
+    },
+    "S05a": {
+      "rebuilt_master_slice_start_sample": 1152000,
+      "rebuilt_master_slice_end_exclusive": 1272000,
+      "delivered_pcm_sha256": "5c4ef1cb8afc91e995a970b66fcd42cedc971af85c5fac24a07fd52dfa677a2b",
+      "vs_rebuilt_master": {
+        "samples": 120000,
+        "channels": 2,
+        "equal_fraction": 0.9999125,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.014433756729740645,
+        "correlation": 0.9999999999762283
+      },
+      "vs_prior_delivery_pcm": {
+        "samples": 120000,
+        "channels": 2,
+        "equal_fraction": 0.18309583333333335,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 42.0,
+        "rmse_lsb": 2.5142742491621712,
+        "correlation": 0.9999995927771924
+      }
+    },
+    "S02a": {
+      "rebuilt_master_slice_start_sample": 288000,
+      "rebuilt_master_slice_end_exclusive": 408000,
+      "delivered_pcm_sha256": "dcb8b8f0990fd9fade49424ca1a0b7e622f090a99f8ca34f928a17d3e8707959",
+      "vs_rebuilt_master": {
+        "samples": 120000,
+        "channels": 2,
+        "equal_fraction": 0.99995,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.01241638702145945,
+        "correlation": 0.9999999999915081
+      },
+      "vs_prior_delivery_pcm": {
+        "samples": 120000,
+        "channels": 2,
+        "equal_fraction": 0.102,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 21.0,
+        "rmse_lsb": 4.029003185239081,
+        "correlation": 0.9999999229593174
+      }
+    },
+    "S03": {
+      "rebuilt_master_slice_start_sample": 408000,
+      "rebuilt_master_slice_end_exclusive": 600000,
+      "delivered_pcm_sha256": "d7343ce466aafc93f8597ea412c3db7d40575c053f0f36b492fc6e859d63518d",
+      "vs_rebuilt_master": {
+        "samples": 192000,
+        "channels": 2,
+        "equal_fraction": 0.9999401041666667,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.015562374497485916,
+        "correlation": 0.9999999999856276
+      },
+      "vs_prior_delivery_pcm": {
+        "samples": 192000,
+        "channels": 2,
+        "equal_fraction": 0.10403385416666666,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 17.0,
+        "rmse_lsb": 3.778129566443339,
+        "correlation": 0.9999999275311273
+      }
+    },
+    "S03a": {
+      "rebuilt_master_slice_start_sample": 600000,
+      "rebuilt_master_slice_end_exclusive": 672000,
+      "delivered_pcm_sha256": "45cdffcfc3d2328d716c39ca03e866d578a7d1261e4d61446cf1d1f2c61131dd",
+      "vs_rebuilt_master": {
+        "samples": 72000,
+        "channels": 2,
+        "equal_fraction": 0.9999652777777778,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 2.0,
+        "rmse_lsb": 0.007453559924999299,
+        "correlation": 0.9999999999974334
+      },
+      "vs_prior_delivery_pcm": {
+        "samples": 72000,
+        "channels": 2,
+        "equal_fraction": 0.09609027777777777,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 23.0,
+        "rmse_lsb": 4.157510773688186,
+        "correlation": 0.9999999424098289
+      }
+    },
+    "S10": {
+      "rebuilt_master_slice_start_sample": 2140000,
+      "rebuilt_master_slice_end_exclusive": 2380000,
+      "delivered_pcm_sha256": "8e7ed552c7d6fe9a8bd76bc0269f0acaf9e208b56ea37a1fffe0104952aeaf16",
+      "vs_rebuilt_master": {
+        "samples": 240000,
+        "channels": 2,
+        "equal_fraction": 0.99998125,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.006922186552431729,
+        "correlation": 0.999999999996147
+      },
+      "vs_prior_delivery_pcm": {
+        "samples": 240000,
+        "channels": 2,
+        "equal_fraction": 0.3034375,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 9.0,
+        "rmse_lsb": 1.3781909942626482,
+        "correlation": 0.9999999088405794
+      }
+    },
+    "S13": {
+      "rebuilt_master_slice_start_sample": 2764000,
+      "rebuilt_master_slice_end_exclusive": 3004000,
+      "delivered_pcm_sha256": "a67e3c2fb9b7a1e940f3b010829521076b9da996813be188b2e95bafa837a5c5",
+      "vs_rebuilt_master": {
+        "samples": 240000,
+        "channels": 2,
+        "equal_fraction": 0.99996875,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.00978945010372561,
+        "correlation": 0.9999999999917859
+      },
+      "vs_prior_delivery_pcm": {
+        "samples": 240000,
+        "channels": 2,
+        "equal_fraction": 0.32271458333333336,
+        "sample_bytes_equal": false,
+        "max_abs_lsb": 6.0,
+        "rmse_lsb": 1.2119689558730455,
+        "correlation": 0.9999999034004947
+      }
+    }
+  }
+}
