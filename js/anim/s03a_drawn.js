@@ -5,7 +5,7 @@ import { drawnShot } from './drawn.js';
 import { loadImg } from '../paint/paintshot.js';
 import { key } from './kit.js';
 export const DURATION = 1.5;
-const X = '/collab/reviews/20261018_1305_s03a_all9/candidates/', H = '/assets/chars/x03a/', S = 1920 / 1672;
+const X = '/assets/chars/x03a/', H = '/assets/chars/x03a/', S = 1920 / 1672;
 // 000×8 008×3 011×3 014×3 017×4 021×2 023×2 025×3 028×8；九张均已锁版，14/17/21/23/25采用同一局部校色v2，勿混旧暖版
 export const SHEET = [[X + 'S03a_F000', 0], [X + 'S03a_F008', 8], [X + 'S03a_F011', 11], [X + 'S03a_F014', 14], [X + 'S03a_F017', 17], [X + 'S03a_F021', 21], [X + 'S03a_F023', 23], [X + 'S03a_F025', 25], [X + 'S03a_F028', 28]];
 let HAND = null;
