@@ -1,0 +1,207 @@
+{
+  "status": "ALL_THREE_STATES_COORDINATOR_AND_INDEPENDENT_FINAL_PASS",
+  "asset_size": [
+    1024,
+    1536
+  ],
+  "asset_to_world": {
+    "uniform_scale": 0.2734375,
+    "translation": [
+      730,
+      375
+    ]
+  },
+  "coordinate_method": "Visible painted contour/contact estimates, +/-2 asset pixels; not hidden-skeleton ground truth. F010 actual measured state supersedes the locked-wrist proposal.",
+  "states": {
+    "F000": {
+      "actual_asset": {
+        "near_left_wrist_center": [
+          548,
+          910
+        ],
+        "far_right_wrist_center": [
+          526,
+          815
+        ],
+        "pod_center": [
+          461,
+          854
+        ],
+        "far_thumb_contact": [
+          456,
+          830
+        ],
+        "near_thumb_contact": [
+          472,
+          857
+        ]
+      },
+      "actual_world": {
+        "near_left_wrist_center": [
+          879.84375,
+          623.828125
+        ],
+        "far_right_wrist_center": [
+          873.828125,
+          597.8515625
+        ],
+        "pod_center": [
+          856.0546875,
+          608.515625
+        ],
+        "far_thumb_contact": [
+          854.6875,
+          601.953125
+        ],
+        "near_thumb_contact": [
+          859.0625,
+          609.3359375
+        ]
+      }
+    },
+    "F010": {
+      "actual_asset": {
+        "near_left_wrist_center": [
+          548,
+          905
+        ],
+        "far_right_wrist_center": [
+          526,
+          818
+        ],
+        "pod_center": [
+          463,
+          850
+        ],
+        "far_thumb_contact": [
+          458,
+          830
+        ],
+        "near_thumb_contact": [
+          470,
+          848
+        ]
+      },
+      "actual_world": {
+        "near_left_wrist_center": [
+          879.84375,
+          622.4609375
+        ],
+        "far_right_wrist_center": [
+          873.828125,
+          598.671875
+        ],
+        "pod_center": [
+          856.6015625,
+          607.421875
+        ],
+        "far_thumb_contact": [
+          855.234375,
+          601.953125
+        ],
+        "near_thumb_contact": [
+          858.515625,
+          606.875
+        ]
+      },
+      "near_wrist_delta_vs_F000_asset": [
+        0,
+        -5
+      ],
+      "near_wrist_delta_vs_F000_scene": [
+        0,
+        -1.3671875
+      ]
+    },
+    "F012": {
+      "actual_asset": {
+        "near_left_wrist_center": [
+          548,
+          910
+        ],
+        "far_right_wrist_center": [
+          526,
+          813
+        ],
+        "pod_center": [
+          463,
+          852
+        ],
+        "far_thumb_contact": [
+          457,
+          823
+        ],
+        "near_thumb_contact": [
+          477,
+          856
+        ]
+      },
+      "actual_world": {
+        "near_left_wrist_center": [
+          879.84375,
+          623.828125
+        ],
+        "far_right_wrist_center": [
+          873.828125,
+          597.3046875
+        ],
+        "pod_center": [
+          856.6015625,
+          607.96875
+        ],
+        "far_thumb_contact": [
+          854.9609375,
+          600.0390625
+        ],
+        "near_thumb_contact": [
+          860.4296875,
+          609.0625
+        ]
+      }
+    }
+  },
+  "jade": {
+    "side": "anatomical LEFT/near",
+    "count": 1,
+    "F000": "approved single generated natural jade from F000 call01",
+    "F010": "Final approved same F010 call01 natural wrist/jade; NOT original F000 jade pixels; no rigid original-jade transplant used",
+    "F012": "exact F000 source wrist/jade pixels"
+  },
+  "single_basin": {
+    "world_rim": [
+      868.52,
+      644.81
+    ],
+    "world_width_depth": [
+      79.1,
+      21.7
+    ],
+    "included_in_each_grandma_rgba": true,
+    "do_not_add_separate_basin": true,
+    "F010_changed_pixels_within_same_basin_protected_mask": 0,
+    "F012_y950_and_below_changed_pixels": 0
+  },
+  "timing": {
+    "fps": 24,
+    "states": [
+      {
+        "frame": 0,
+        "hold": 10,
+        "action": "closed ready hold"
+      },
+      {
+        "frame": 10,
+        "hold": 2,
+        "action": "fully closed pressure"
+      },
+      {
+        "frame": 12,
+        "hold": 16,
+        "action": "first split, two beans remain nested"
+      }
+    ],
+    "end_frame_inclusive": 27,
+    "scope_note": "F020 Xiaoman change separate; F028 bean fall not produced. F012 may be reused as S04 F000 under the same common-space contract."
+  },
+  "render_contract": "Draw actual full RGBA as authored at fixed scale/translation, hold frames; do not move pod/fingers independently, do not cross-fade hand pixels. Neutral base; scene lighting applied once by implementation."
+}
