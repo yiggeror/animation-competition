@@ -1,0 +1,24 @@
+{
+  "fixed_commit": "d6071b76c8b069c7112134320a69058b896ff1f5",
+  "delivery_branch": "cloud/s08-first14-render-20261018",
+  "delivery_base_commit": "69d2e31fb4a785b2a45abcacca170b05530b6ad7",
+  "execution_checkout": "exact detached fixed commit for rendering and source checks;returned to own branch for packet-only commit",
+  "command": "node --require /workspace/animation-competition-s08-first14/collab/reviews/cloud_s13_20261018/render_assist/s08_first23/tools/system_chromium.cjs tools/js/frames.cjs collab/reviews/20261018_1828_s08_first23_scene/s08_first23_scene.js build/S08_first23 --fps 24 --w 1920 --h 1080 --workers 2 --mp4 build/S08_first23_1920x1080_24fps.mp4",
+  "main_render_runs": 1,
+  "main_frames": 23,
+  "range": [
+    0,
+    22
+  ],
+  "old20_rerendered": false,
+  "diagnostic_same_frame_controls": [
+    20,
+    22
+  ],
+  "image_generation_calls": 0,
+  "source_shared_ready_edits": 0,
+  "node": "v24.19.0",
+  "chromium": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+  "playwright": "1.62.1",
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+}

@@ -1,0 +1,50 @@
+{
+  "status": "PASS_TINY_ACTUAL_BOX_CONTACT_ATTACHED_WITHIN_TABLE_SURFACE",
+  "method": "Same fixed browser with one contact omitted only in memory;adopted diagnostic rerenders identical main20 PNG. Pixel difference between lossless real Canvas frames,not painted shadow.",
+  "records": [
+    {
+      "frame": 20,
+      "changed_pixels": 65,
+      "bbox_xyxy_exclusive": [
+        1062,
+        970,
+        1141,
+        971
+      ],
+      "RGB_min_delta": [
+        -21,
+        -13,
+        -7
+      ],
+      "RGB_max_delta": [
+        0,
+        0,
+        0
+      ],
+      "crosses_front_lip981": false
+    },
+    {
+      "frame": 22,
+      "changed_pixels": 60,
+      "bbox_xyxy_exclusive": [
+        1062,
+        970,
+        1142,
+        971
+      ],
+      "RGB_min_delta": [
+        -21,
+        -12,
+        -7
+      ],
+      "RGB_max_delta": [
+        0,
+        0,
+        0
+      ],
+      "crosses_front_lip981": false
+    }
+  ],
+  "source_files_modified": false,
+  "control_adopted": false
+}
