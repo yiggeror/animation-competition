@@ -1,5 +1,5 @@
 {
-  "phase": "single_call07_seam_patch_complete_full_pose_pending_clothing_source",
+  "phase": "clothing_semantic_masks_and_same_raw_candidate_pending_Astra",
   "environment": "ready",
   "tools_used": [
     "git read/fetch/unique branch",
@@ -22,13 +22,14 @@
   "render_invocations": 0,
   "additional_cloud_model": "gpt-6.1-sol",
   "additional_cloud_task": "s09_motion_audit_61sol",
-  "next_gate": "Astra inspect seam patch and explicit locked-mother body restoration. Occluded clothing source/registration still unresolved; F037/F042 not generated.",
-  "current_delivery": "pre_tap_segment/seam_repair/README.md",
+  "next_gate": "Astra review three semantic clothing regions and same-call05 RGB-only candidate; full arms/prop/head/collar/outer contour protected, full031 not locked. F037/F042 remain0.",
+  "current_delivery": "pre_tap_segment/clothing_semantic_review/README.md",
   "new_contact_reference": "contact_reference_v3/README.md",
   "full_film_or_scene_render_invocations": 0,
   "drawing_only_preview_encoded_frames": 26,
   "d06_F031_attempts": 7,
   "d07_F037_attempts": 0,
   "prepared_not_executed": "pre_tap_segment/requests/d06_call07_arguments.json (historical draft; different from executed seam_repair request)",
-  "last_executed_request": "pre_tap_segment/seam_repair/requests/call07_arguments.json"
+  "last_executed_request": "pre_tap_segment/seam_repair/requests/call07_arguments.json",
+  "latest_clothing_preparation_native_calls": 0
 }

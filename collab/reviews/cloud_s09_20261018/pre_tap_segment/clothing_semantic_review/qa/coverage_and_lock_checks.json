@@ -1,0 +1,65 @@
+{
+  "status": "SEMANTIC_CROP_MASK_AND_SAME_RAW_CLOTH_CANDIDATE_PENDING_ASTRA",
+  "new_native_calls": 0,
+  "all_S09_native_calls_unchanged": 12,
+  "F031_calls_unchanged": 7,
+  "F037_calls": 0,
+  "F042_calls": 0,
+  "source_current": {
+    "path": "pre_tap_segment/seam_repair/candidates/d06_raw_locked_pending_clothing.png",
+    "sha256": "7b33b7bc2dc98e42628e8647a7106ef11f9814e0d66049e2339ec1c8aa9bd077",
+    "locked_by_Astra": "hands,complete prop,size and air gap only; full pose not locked"
+  },
+  "continuous_clothing_donor": {
+    "path": "pre_tap_segment/originals/d06_call05_raw.png",
+    "sha256": "05b3301da1652178ee0c39f3b5df181551cd1627f34ec4726e529c127f1ac93c",
+    "translation": [
+      0,
+      0
+    ],
+    "scale": 1,
+    "warp": false,
+    "code_drawn_pixels": false
+  },
+  "semantic_crop_boxes_native_xyxy": {
+    "chest_broken_white_dot": [
+      790,
+      595,
+      870,
+      651
+    ],
+    "old_arm_vacated_torso_and_waist": [
+      645,
+      688,
+      965,
+      821
+    ],
+    "continuous_skirt_folds": [
+      565,
+      780,
+      1035,
+      941
+    ],
+    "all_semantic_clothing": [
+      565,
+      590,
+      1035,
+      941
+    ]
+  },
+  "semantic_mask_pixels": {
+    "chest_broken_white_dot": 1925,
+    "old_arm_vacated_torso_and_waist": 19218,
+    "continuous_skirt_folds": 55034
+  },
+  "hard_protection": "head/neck/collar conservative through590; complete actual skin chains+dilated outlines; complete sleeves/cuffs; prop; visible outer alpha contour7px; transparent background",
+  "hard_protected_pixels": 1498994,
+  "mask_hard_protection_overlap": 0,
+  "candidate_outside_semantic_mask_changes": 0,
+  "candidate_hard_domain_changes": 0,
+  "candidate_alpha_changes": 0,
+  "candidate_native_pixels_taken": 43754,
+  "no_donor_claim_outside_mask": "Source05 body/head pixels are never used outside the semantic fabric union; full arm/prop/head/outer silhouette remains current locked source.",
+  "remaining_review": "Inspect full white dots, uninterrupted waist/skirt folds and donor joins at hard boundaries. This is a review candidate, not accepted artwork; no new native clothing repair until semantic masks are reviewed.",
+  "optional_next_action_if_source_join_fails": "After Astra review, one local clothing-only connection request inside approved semantic crop/mask; preserve all hard regions. No whole person or prop request."
+}
