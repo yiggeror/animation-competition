@@ -1,0 +1,166 @@
+{
+  "status": "PASS_ORIGINAL_RGBA_AND_ANALYTIC_GRIP_SEAT_ONLY_NOT_CANVAS",
+  "source_sha256": "25e5ff2a37421bc90bbbaa3650e912def85d64fea1ee7a5cafa1a3c98f689cae",
+  "RGBA_reconstruction_exact": true,
+  "all_layer_RGB_original_including_transparent": true,
+  "overlap_alpha_pixels": 0,
+  "box_only_in_table_box_pixels": 1665,
+  "box_visible_RGBA_and_alpha_same_as023": true,
+  "near_translation_from023": [
+    6,
+    3
+  ],
+  "near_guard_pixels": 7631,
+  "near_guard_changed_RGBA_pixels": 0,
+  "near_guard_RGBA_sha256": "a71ce92991fa368ad39d23e839cea404f2006027b10de56e6eb493ebe69fdc8b",
+  "near_match_head": [
+    1076,
+    794
+  ],
+  "near_visible_wood_exit": [
+    1048,
+    831
+  ],
+  "near_head_RGBA": [
+    120,
+    47,
+    34,
+    246
+  ],
+  "far_translation_from023": [
+    -12,
+    13
+  ],
+  "far_whole_footprint_pixels": 18939,
+  "far_visible_pixels": 6746,
+  "whole_far_hand_and_transparent_seat_copy_exact": true,
+  "independent_knob_center": [
+    1242.1515476848717,
+    750.9527302910597
+  ],
+  "independent_knob_radius": 6.8108108108108105,
+  "body_or_box_opaque_over_knob_pixels": 0,
+  "alpha_at_center_four_pixels": [
+    [
+      0,
+      2
+    ],
+    [
+      23,
+      0
+    ]
+  ],
+  "analytic_grip_visibility": {
+    "knob_pixel_center_disk": {
+      "pixels": 148,
+      "fully_transparent": 45,
+      "partially_transparent": 94,
+      "fully_opaque_fingers": 9,
+      "analytic_underlying_knob_transmission_sum_pixels": 97.31764705882352
+    },
+    "knob_conservative_inner_disk": {
+      "pixels": 108,
+      "fully_transparent": 38,
+      "partially_transparent": 62,
+      "fully_opaque_fingers": 8,
+      "analytic_underlying_knob_transmission_sum_pixels": 76.63529411764706
+    }
+  },
+  "shaft_source_samples": [
+    {
+      "distance_from_tip": 9,
+      "xy": [
+        1249.5795682190587,
+        756.034512551615
+      ],
+      "source_RGBA": [
+        94,
+        53,
+        35,
+        251
+      ]
+    },
+    {
+      "distance_from_tip": 12,
+      "xy": [
+        1252.055575063788,
+        757.7284399718001
+      ],
+      "source_RGBA": [
+        37,
+        28,
+        18,
+        27
+      ]
+    },
+    {
+      "distance_from_tip": 16,
+      "xy": [
+        1255.3569175234265,
+        759.9870098653802
+      ],
+      "source_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "distance_from_tip": 24,
+      "xy": [
+        1261.959602442704,
+        764.5041496525405
+      ],
+      "source_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "distance_from_tip": 40,
+      "xy": [
+        1275.1649722812588,
+        773.538429226861
+      ],
+      "source_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "distance_from_tip": 60,
+      "xy": [
+        1291.6716845794524,
+        784.8312786947617
+      ],
+      "source_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "distance_from_tip": 70,
+      "xy": [
+        1299.9250407285492,
+        790.4777034287121
+      ],
+      "source_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "no_code_rod_or_knob_added_to_character_layers": true,
+  "image_files_modified": 0,
+  "actual_canvas_frames": 0,
+  "actual_readability_status": "PENDING_REAL_CANVAS; analytic disk counts do not include Canvas edge antialiasing, lighting, grain, or visual judgement"
+}

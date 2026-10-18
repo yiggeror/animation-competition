@@ -1,0 +1,225 @@
+{
+  "status": "LOCKED_DUAL_STATIC_REVIEW_2026-10-18T19:16Z",
+  "final_png": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_FINAL_LOCKED/S08_F025_grandma_match_box_RGBA.png",
+  "final_sha256": "25e5ff2a37421bc90bbbaa3650e912def85d64fea1ee7a5cafa1a3c98f689cae",
+  "source_call": 13,
+  "actual_global_native_calls_now": 13,
+  "actual_returned_raws_now": 13,
+  "native_errors": 0,
+  "quality_not_adopted_calls": [
+    12
+  ],
+  "uniform_raw_registration_in_3x_crop": {
+    "scale": 0.8689355539464158,
+    "tx": -12,
+    "ty": -3
+  },
+  "repro_order": [
+    "composite_returned_crop.py with above registration",
+    "prepare_semantic_v8.py",
+    "apply_final_color_g1_v2.py"
+  ],
+  "protection": {
+    "status": "FINAL_CANDIDATE_PENDING_INDEPENDENT_INCREMENTAL_COLOR_SIGN",
+    "sha256": "25e5ff2a37421bc90bbbaa3650e912def85d64fea1ee7a5cafa1a3c98f689cae",
+    "outside_white_changed": 0,
+    "near_guard_changed": 0,
+    "far_hand_jade_alpha0_seat_guard_changed": 0,
+    "blue_cloth_changed": 0,
+    "box_changed": 0,
+    "same_native_call": 13,
+    "color_G1_only_pixels": 2704,
+    "alpha_difference_to_v8": 0
+  },
+  "color": "Only2704pixels G+1 on explicit new far forearm lit skin. R/B/alpha unchanged. Lower turning shadow unchanged. True hands, jade, alpha0 seat, box, blue blouse unchanged.",
+  "final_semantic_mask_directory": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_result_semantic_v8/masks",
+  "layer_directory": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_LAYER_PARTITION",
+  "scope": "Static character and exact local three-layer partition passed. Actual Canvas rod/fire/timing separate.",
+  "files": [
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_FINAL_LOCKED/S08_F025_grandma_match_box_RGBA.png",
+      "sha256": "25e5ff2a37421bc90bbbaa3650e912def85d64fea1ee7a5cafa1a3c98f689cae",
+      "bytes": 580277
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_native_call13/request.json",
+      "sha256": "b2198a440110be1525871bbfb258c8999efd202e418e2cfd5e7ec775d774d04a",
+      "bytes": 5507
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_native_call13/prompt.txt",
+      "sha256": "6dc8c28aa83e2b551618ed6594a11245b883358b8c3978bef8d4f8053766b0a4",
+      "bytes": 4692
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_native_call13/input_sha256.json",
+      "sha256": "f70a691e0e4c2bfd0e3c71342529de05c23b4ef336942273ce6b1bd76756a99b",
+      "bytes": 1308
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_native_call13/raw/F025_midpress_arm_native_raw.png",
+      "sha256": "cfeb2276e780fac90fcb68a3408f5d94033590076fdc44f0d749ec51ff83ff0d",
+      "bytes": 931889
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_input_gate/composite_returned_crop.py",
+      "sha256": "04662f06c96a3f4f1222775e4d5b809e0599fd1a551d7e6f164308d95b93a4ed",
+      "bytes": 3168
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_input_gate/prepare_semantic_v8.py",
+      "sha256": "7353127225d0795072dbdd5a9e6dd3975c9df2a7de9f7058c263cb5412936ecf",
+      "bytes": 5626
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_input_gate/apply_final_color_g1_v2.py",
+      "sha256": "cce62f1ab01057ba74ddef62e97f43671b0dc9a26672195c74025fdcf5ed74c8",
+      "bytes": 3496
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_FINAL_LOCKED/HAND_REUSE_CONTRACT.json",
+      "sha256": "5115bf35bc9cb596c14075451d4152f642aa28e6968a23153add7fbe0bad4796",
+      "bytes": 1354
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_LAYER_PARTITION/LAYER_VALIDATION.json",
+      "sha256": "456a89b0518049db8bdd69c0d2cb771e3a160210706cd759111096245cc9c9d8",
+      "bytes": 2618
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_result_color_final_v2/geometry/COLOR_PLANES_FINAL.json",
+      "sha256": "0a26627e093bc621a2eb19a4e434bd29248341dc9073991ca98b1f9b6b67629e",
+      "bytes": 5152
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_result_color_final_v2/geometry/checks.json",
+      "sha256": "c9642709efefe50ec3041178a67a98c71e601101cb32a6b465658e3543fd0849",
+      "bytes": 397
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_native_call13/raw_light.png",
+      "sha256": "6d9916e8065cccfd7863c3f7bdf242202e0d71056e6a5991f9776e2503345697",
+      "bytes": 724726
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_native_call13/raw_dark.png",
+      "sha256": "56c4a2992f56729473f8e16a75afc7d07448b184c28d907699ba43ab504784dd",
+      "bytes": 703312
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_result_semantic_v8/masks/PASTE_same_native_near_wrist_lower_edge_rigid_0_plus5.png",
+      "sha256": "5f3324be0b1967366f4e54795a5d0ab019a59c4143e59853c0a5d02a39bfe830",
+      "bytes": 2303
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_result_semantic_v8/masks/REMOVE_only_native_duplicate_finger_line_inside_upperarm_join.png",
+      "sha256": "0683232f57df2ef916010cc442bb28c79eee7ec3ac3d1b9ca4db56a6513df3f6",
+      "bytes": 2134
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_result_semantic_v8/masks/CLEAR_internal_preplacement_near_wrist_seam_same_raw_skin_clean_proximal_forearm_interior_patch.png",
+      "sha256": "73431d8b2896a276a05eb4c05144cb7bfba383d194a51ba999a3557659412e22",
+      "bytes": 2339
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_result_semantic_v8/masks/RESTORE_original023_far_upperarm_below_true_cuff_excluding_old_hand.png",
+      "sha256": "0e24a0b4e792d8e4c46320eb8cd0541067c826c454fd2bc26ae3bae96a655fdd",
+      "bytes": 2484
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_result_semantic_v8/masks/CLEAR_only_duplicate_native_match_in_true_air.png",
+      "sha256": "9a7ea43c0172f354e0506e82c61a322b938d01cc21c4ee188239cf95e3490c5f",
+      "bytes": 2480
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_result_semantic_v8/masks/RESTORE_original_body_air_below_near_wrist_no_duplicate_blue.png",
+      "sha256": "cb2175d694e74846de5ef4bc82455701e2b1fc495ce3ebfe5ea3a15867a09856",
+      "bytes": 2257
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_result_semantic_v8/masks/FINAL_explicit_semantic_union.png",
+      "sha256": "9306356a307c62d90d39b12ef57e9b2b57052cfb988722bd9d5001b6fc592473",
+      "bytes": 3767
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_result_semantic_v8/masks/CLEAR_native_old_near_hand_upper_line_same_raw_skin_110_20.png",
+      "sha256": "a9fc277ce5395c1d0dad37e9264569ae75e0b33106e1e63681c5e712bfeeb111",
+      "bytes": 2456
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_result_semantic_v8/masks/JOIN_actual_native_far_upperarm_lower_contour_rigid12_0.png",
+      "sha256": "286d7d60be2f693d821414fb52cf97614464de6e5d0b6a326d04ec9c769ffb96",
+      "bytes": 2141
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_result_color_final_v2/masks/ONLY_new_far_forearm_lit_material_G_plus1.png",
+      "sha256": "e881c917b6bc6b4ed4bd9571f6527ce1df3f6f5a11e92a915fbe914712f22d0b",
+      "bytes": 2582
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_input_gate/masks/F025_actual_blue_cuff_guard.png",
+      "sha256": "4e1aa694d1724dc19e84e450e94b19fac66f8e8768ae587323ecf72df7ecc317",
+      "bytes": 6247
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_input_gate/masks/F025_near_wrist_connection_collar.png",
+      "sha256": "21907fe38eb60fd5cd8a3bb260774657060c24df7f90b5e16aea71f78a41f02d",
+      "bytes": 2519
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_input_gate/masks/F025_near_hand_match_full_guard.png",
+      "sha256": "86d06b53a67b8f4a6f571e9a8822755ec3abc07f7b1177ea6047cc386a0e674c",
+      "bytes": 2978
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_input_gate/masks/F025_old_far_grip_location.png",
+      "sha256": "7e0753762a1c80c92247bc5cdbd83fe9dc50ef6d3143d24efdcfb03daef1e545",
+      "bytes": 2469
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_input_gate/masks/F025_fixed_table_box_guard.png",
+      "sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "bytes": 2180
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_input_gate/masks/F025_old_hand_clearance.png",
+      "sha256": "56332f732aee9455ae0aebba0d87e7e1642b852016c93647c6bdf265f482479d",
+      "bytes": 2813
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_input_gate/masks/F025_far_closed_hand_jade_AND_ALPHA0_SEAT_guard.png",
+      "sha256": "32fdc826a5cebd46c2eff67cd8e8260d47cd4be4cf86655882ea5b25fc14d53d",
+      "bytes": 2475
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_input_gate/masks/F025_WHITE_allowed_BLACK_frozen.png",
+      "sha256": "9306356a307c62d90d39b12ef57e9b2b57052cfb988722bd9d5001b6fc592473",
+      "bytes": 3767
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_input_gate/inputs/F025_closed_grip_midpress_crop_3x_RGBA.png",
+      "sha256": "750b8880dcba5f1a74e6f943f578f5786354a09402a4d577ee92333c42a831d8",
+      "bytes": 585862
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_input_gate/inputs/F025_closed_grip_midpress_crop_3x_WHITE_MASK.png",
+      "sha256": "07c7eb13b151e81f91422aac8e37a047a41e1172d163ed2e0485ebc193c0ff86",
+      "bytes": 3931
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_input_gate/inputs/F025_head_body_mid_rod_CONTEXT_ONLY.png",
+      "sha256": "84d1ccf9d8e8ae9fc7df1898f2a43eece6118c49a552e26c624a63ea3b730ee3",
+      "bytes": 693234
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_input_gate/inputs/F023_locked_actual_arm_GRIP_VOLUME_REFERENCE.png",
+      "sha256": "aa7574728812e6075e7370de54539edf8ff0b8f7434caff269902f45cf882c00",
+      "bytes": 481541
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F025_input_gate/inputs/F000_original_far_arm_COLOR_ONLY.png",
+      "sha256": "4f7f49e53210b0185f1eeeb446475946bfb58cd13cf37a6a802c2d0f1cdf7cb9",
+      "bytes": 384686
+    }
+  ]
+}
