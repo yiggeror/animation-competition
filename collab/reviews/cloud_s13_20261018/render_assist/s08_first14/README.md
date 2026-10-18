@@ -1,0 +1,15 @@
+# S08首14帧 · 固定稿真实Canvas，闭眼拍点须裁定
+
+固定提交`0c215550edb5f1807b240ca7f79f6f61c8aef01e`，入口`collab/reviews/20261018_1721_s08_first14_scene/s08_first14_scene.js`，SHA256 `4557e5f89fddf2fc65527d7a3f312139e807324fe7c3dff039e2b9324ec8a6de`。按指定原`frames.cjs`命令加现有Chromium shim实际渲染：[MP4](S08_first14_1920x1080_24fps.mp4)，1920×1080、24fps、14帧、14/24秒、无声。只有000–013，未渲014或任何后段；不称整镜通过、不登记ready。
+
+**实际眼态与“009闭眼”的简称有差异：**[眼睛实际2倍裁近](03_eyes_actual_2x.jpg)显示006–008最窄，但仍见瞳孔；009–011已回开，012–013恢复005正常睁眼。全14帧未见完全合拢帧，不能宣称“009完全闭眼”通过。源README写006眯眼、009回开，与实际画面相符；是否满足眨眼意图交Astra裁定。本轮仅实渲固定稿，没有修改眼睛或曝光。
+
+已实际查看[11个指定节点](00_requested_actual_decodes.jpg)、[完整14帧顺序](01_all14_actual_order.jpg)、[擦柴/起火近图](02_match_strike_fire_actual_2x.jpg)与[双肘/桌沿近图](04_elbows_table_actual.jpg)，以及000/005原尺寸Canvas输出。003–004柴头接住擦面；005退离后火焰从真实柴头(1074,782)长出，暖光同步照亮手和脸；000–004没有火，马灯芯全段未点燃、罩未抬。实际解码的柴头热色像素从005开始，灯芯热色像素0，详见[逐帧记录](actual14_validation.json)。
+
+两肘/前臂在原桌前沿之前，下身保留在桌沿/牙板后，未见前沿横切肘皮肤。五姿态按各自原RGBA分层，人物和桌沿未额外平移/变形。近肘仍在桌左角附近，不把本次遮挡复验扩称新增接触影或深桌面承重点通过；源包所述桌肘接触影诊断仍另办。
+
+`decoded/`保留F000/002/003/004/005/006/008/009/011/012/013共11张原1920×1080实际解码PNG。所有接触表/近图均来自本次MP4解码，只裁切/缩放排版。14张真实Canvas源保留于本工作区`build/S08_first14/`；[全14帧编码核验](actual14_validation.json)逐帧比对源，次序全对应，最大RGB通道MSE9.621；[ffprobe](ffprobe.json)确认规格及无音轨。
+
+[独立源码/分层核验](source_validation.json)确认五原图和十层同固定Git字节，分层alpha互斥、重建原RGBA零差。入口、公共renderer、原灯函数、背景及原frames工具均未改。[纯时表运行记录](contract_runtime.json)核五态六段曝光000×3/003×2/005×1/006×3/009×3/012复005×2；只调用`frameAt(14/24)`证实RangeError，未对014调用render。
+
+[原命令与环境](run_manifest.json)、[实际渲染短日志](render.log)、[解码核验日志](decode_check.log)、[时表日志](contract_check.log)及`tools/`齐全。渲染唯一404是原favicon；页面无JS渲染错误。生图0、源模块/素材/相机/灯/EDL/音轨/ready改动0，仅独占审查目录交付。实际原速观感、上述完整闭眼缺项及后续整镜由Astra审。

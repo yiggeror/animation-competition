@@ -1,0 +1,271 @@
+{
+  "status": "PASS_REAL14_RENDER_ENCODE_ORDER_AND_FIRE_ONSET",
+  "fixed_commit": "0c215550edb5f1807b240ca7f79f6f61c8aef01e",
+  "type": "REAL_CANVAS_SCENE_ONLY_000_013",
+  "frames": 14,
+  "fps": "24/1",
+  "duration_seconds": 0.5833333333333334,
+  "size": [
+    1920,
+    1080
+  ],
+  "audio_streams": 0,
+  "frames014_onward_rendered": false,
+  "selected_actual_decodes": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    11,
+    12,
+    13
+  ],
+  "mp4_sha256": "03ad4fcc87c290b2a0e5d1a4ff9b1f1af1236f516001a457e510c80da1b01e8b",
+  "all14_source_frames_match_encoded_order": true,
+  "max_MSE": 9.620392799377441,
+  "checks": [
+    {
+      "frame": 0,
+      "original_asset": "000",
+      "Canvas_source_sha256": "6504e01d6f3bb2749ddc6dc65bf8edd5a1f7cb8e44d415a4615ce3f7cd103380",
+      "encoded_vs_source_MSE": 6.802755832672119,
+      "actual_match_head": [
+        1076,
+        764
+      ],
+      "bright_flame_ROI_pixels": 0,
+      "bright_wick_ROI_pixels": 0,
+      "face_ROI_mean_RGB": [
+        75.79039764404297,
+        65.518798828125,
+        68.11039733886719
+      ]
+    },
+    {
+      "frame": 1,
+      "original_asset": "000",
+      "Canvas_source_sha256": "84a63fec0a8e96b0c26068bf54904c66f5ac4d845582abd1a8cc618407937165",
+      "encoded_vs_source_MSE": 7.163671493530273,
+      "actual_match_head": [
+        1076,
+        764
+      ],
+      "bright_flame_ROI_pixels": 0,
+      "bright_wick_ROI_pixels": 0,
+      "face_ROI_mean_RGB": [
+        75.94270324707031,
+        65.58519744873047,
+        68.17870330810547
+      ]
+    },
+    {
+      "frame": 2,
+      "original_asset": "000",
+      "Canvas_source_sha256": "215dbf5f7ceb185ca95a3c4fc28c26f77ec8322ee204fbc011422a18dff52b8e",
+      "encoded_vs_source_MSE": 7.185757637023926,
+      "actual_match_head": [
+        1076,
+        764
+      ],
+      "bright_flame_ROI_pixels": 0,
+      "bright_wick_ROI_pixels": 0,
+      "face_ROI_mean_RGB": [
+        75.93810272216797,
+        65.58779907226562,
+        68.16329956054688
+      ]
+    },
+    {
+      "frame": 3,
+      "original_asset": "003",
+      "Canvas_source_sha256": "eec0f763096870b92dcc9aa031803fe4837b359f3a3244a9744da2a5f946f71d",
+      "encoded_vs_source_MSE": 7.241855144500732,
+      "actual_match_head": [
+        1124,
+        755
+      ],
+      "bright_flame_ROI_pixels": 0,
+      "bright_wick_ROI_pixels": 0,
+      "face_ROI_mean_RGB": [
+        75.96199798583984,
+        65.59539794921875,
+        68.18299865722656
+      ]
+    },
+    {
+      "frame": 4,
+      "original_asset": "003",
+      "Canvas_source_sha256": "7303f095256796ca84c134065b946f6fb1db105a8bae60d99e74b5ebbec1ad38",
+      "encoded_vs_source_MSE": 7.253545761108398,
+      "actual_match_head": [
+        1124,
+        755
+      ],
+      "bright_flame_ROI_pixels": 0,
+      "bright_wick_ROI_pixels": 0,
+      "face_ROI_mean_RGB": [
+        75.76909637451172,
+        65.5656967163086,
+        68.09919738769531
+      ]
+    },
+    {
+      "frame": 5,
+      "original_asset": "005",
+      "Canvas_source_sha256": "40edf9daf98e8c819d006298b11f175c12ac58a9109c275542654194ee94f199",
+      "encoded_vs_source_MSE": 9.620392799377441,
+      "actual_match_head": [
+        1074,
+        782
+      ],
+      "bright_flame_ROI_pixels": 719,
+      "bright_wick_ROI_pixels": 0,
+      "face_ROI_mean_RGB": [
+        146.14219665527344,
+        106.67250061035156,
+        85.16960144042969
+      ]
+    },
+    {
+      "frame": 6,
+      "original_asset": "006",
+      "Canvas_source_sha256": "cef3247189c01e92dc2ce392b4314331c920b6fae5bf83fe3419d36e81c8d4e2",
+      "encoded_vs_source_MSE": 8.774918556213379,
+      "actual_match_head": [
+        1074,
+        782
+      ],
+      "bright_flame_ROI_pixels": 582,
+      "bright_wick_ROI_pixels": 0,
+      "face_ROI_mean_RGB": [
+        142.55580139160156,
+        104.07140350341797,
+        83.68810272216797
+      ]
+    },
+    {
+      "frame": 7,
+      "original_asset": "006",
+      "Canvas_source_sha256": "cae17256f9c4dec05696170d8a5081785eeaaf2df4046a0d660398b67b6f785b",
+      "encoded_vs_source_MSE": 8.326728820800781,
+      "actual_match_head": [
+        1074,
+        782
+      ],
+      "bright_flame_ROI_pixels": 517,
+      "bright_wick_ROI_pixels": 0,
+      "face_ROI_mean_RGB": [
+        136.38380432128906,
+        100.16940307617188,
+        81.92040252685547
+      ]
+    },
+    {
+      "frame": 8,
+      "original_asset": "006",
+      "Canvas_source_sha256": "f3eb1df1f9101aada4a48970faa11b8eb1b2eec27d97309d556f1851e16c9128",
+      "encoded_vs_source_MSE": 8.130606651306152,
+      "actual_match_head": [
+        1074,
+        782
+      ],
+      "bright_flame_ROI_pixels": 431,
+      "bright_wick_ROI_pixels": 0,
+      "face_ROI_mean_RGB": [
+        129.8896942138672,
+        96.2979965209961,
+        80.13909912109375
+      ]
+    },
+    {
+      "frame": 9,
+      "original_asset": "009",
+      "Canvas_source_sha256": "e4dedda78b46a4b0ff8bc54119ffa4cc3e1333ca497e5b5ff8eb988df02cd1f3",
+      "encoded_vs_source_MSE": 7.937160015106201,
+      "actual_match_head": [
+        1074,
+        782
+      ],
+      "bright_flame_ROI_pixels": 315,
+      "bright_wick_ROI_pixels": 0,
+      "face_ROI_mean_RGB": [
+        123.57379913330078,
+        92.27449798583984,
+        78.36949920654297
+      ]
+    },
+    {
+      "frame": 10,
+      "original_asset": "009",
+      "Canvas_source_sha256": "8b59bf7578a9d2ddd30f2ec6f4134149459cdfa4d655c7b971588b1d1634783f",
+      "encoded_vs_source_MSE": 8.22878360748291,
+      "actual_match_head": [
+        1074,
+        782
+      ],
+      "bright_flame_ROI_pixels": 263,
+      "bright_wick_ROI_pixels": 0,
+      "face_ROI_mean_RGB": [
+        123.54879760742188,
+        92.2970962524414,
+        78.39540100097656
+      ]
+    },
+    {
+      "frame": 11,
+      "original_asset": "009",
+      "Canvas_source_sha256": "1411f01d3db17178cd0e7d472fb439490f996f06172f6724bf3be23d17e33cfa",
+      "encoded_vs_source_MSE": 8.189749717712402,
+      "actual_match_head": [
+        1074,
+        782
+      ],
+      "bright_flame_ROI_pixels": 239,
+      "bright_wick_ROI_pixels": 0,
+      "face_ROI_mean_RGB": [
+        123.45429992675781,
+        92.21620178222656,
+        78.29889678955078
+      ]
+    },
+    {
+      "frame": 12,
+      "original_asset": "005",
+      "Canvas_source_sha256": "cd4de58db4df27f00fe6032449078247a3c5f29b6e3314940b1eff2c80f03933",
+      "encoded_vs_source_MSE": 7.95454740524292,
+      "actual_match_head": [
+        1074,
+        782
+      ],
+      "bright_flame_ROI_pixels": 218,
+      "bright_wick_ROI_pixels": 0,
+      "face_ROI_mean_RGB": [
+        120.06050109863281,
+        89.91390228271484,
+        78.03450012207031
+      ]
+    },
+    {
+      "frame": 13,
+      "original_asset": "005",
+      "Canvas_source_sha256": "70558696acf5a803aeff3e8e18ba20c07ef6e3c415fe47ee16497c0223ee6821",
+      "encoded_vs_source_MSE": 8.177374839782715,
+      "actual_match_head": [
+        1074,
+        782
+      ],
+      "bright_flame_ROI_pixels": 195,
+      "bright_wick_ROI_pixels": 0,
+      "face_ROI_mean_RGB": [
+        116.60009765625,
+        88.14630126953125,
+        76.41919708251953
+      ]
+    }
+  ],
+  "visual_review": "See README; fragment/encoding pass is not full-shot or audio approval."
+}
