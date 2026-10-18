@@ -200,7 +200,8 @@ for s in source_paths:
         with Image.open(p)as im:row.update(size=list(im.size),mode=im.mode)
     sources.append(row)
 put(P/'provenance/source_manifest.json',{'sources':sources,'code_use':'camera/lighting/duration only; no legacy figure action adopted','S13_color_status':'motion accepted; accumulated palette drift rejected, pending correction;later x13 samples structure-only'})
-put(P/'provenance/generation_ledger.json',{'stage':'reference_only_pending_Astra_freeze','image_generation_requests':0,'successful_raw_images':0,'adopted_production_drawings':0,'scene_render_runs':0,'full_film_render_runs':0,'external_paid_service_or_API_calls':0})
+if not (P/'provenance/generation_ledger.json').exists():
+    put(P/'provenance/generation_ledger.json',{'stage':'reference_only_pending_Astra_freeze','image_generation_requests':0,'successful_raw_images':0,'adopted_production_drawings':0,'scene_render_runs':0,'full_film_render_runs':0,'external_paid_service_or_API_calls':0})
 bone_errors={};hidden=True
 for k in KEYS:
     j=k['joints_3d_source']

@@ -1,0 +1,39 @@
+{
+  "status": "UNIFORM_REGISTRATION_CANDIDATES_PENDING_ASTRA",
+  "native_canvas": [
+    1024,
+    1536
+  ],
+  "candidate_png": "candidates/F000_native_rgba.png",
+  "candidate_sha256": "35bb55ead65abf20e3862b4d66dde2f0ed25023f31fb634fa2f03bcda0c72281",
+  "raw_to_candidate": "identity,byte-identical",
+  "local_repaint": false,
+  "warp": false,
+  "alpha_cleanup": false,
+  "color_correction": false,
+  "scene_canvas": [
+    1920,
+    1080
+  ],
+  "variants": [
+    {
+      "id": "A_reference_plan",
+      "scale": 0.67,
+      "translation": [
+        600,
+        90
+      ],
+      "meaning": "035c998构造提案原值；实际头位偏低"
+    },
+    {
+      "id": "B_uniform_candidate",
+      "scale": 0.7,
+      "translation": [
+        590,
+        20
+      ],
+      "meaning": "仅整层等比/平移，发顶接近原景；头高较构造略大，待锁"
+    }
+  ],
+  "limits": "Actual native head placement is lower than construction;variantB matches approximate crown/cowlick framing at a larger head scale. Neither is frozen; no local anatomy correction or scene render."
+}

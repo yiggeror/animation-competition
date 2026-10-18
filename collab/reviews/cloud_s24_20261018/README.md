@@ -1,6 +1,6 @@
-# S24九态参考 · 待 Astra 冻结 · 未生图
+# S24 · 九态参考已冻，首F000候选待锁
 
-独占分支`cloud/s24-reference-20261018`，基线`001c9c1828d9054675437111cf52df37c48721f2`。已实际查看剧本第8场、旧x24、S24两张代码接触表、身份三视图/表情及x13整头例。本轮只交参考，9态/60帧/24fps/2.5秒，不修改共享模块、EDL、音频、留言或ready。
+独占分支`cloud/s24-reference-20261018`，基线`001c9c1828d9054675437111cf52df37c48721f2`。**Astra已协调+独审通过035c998九态参考；本轮只开首F000一次，原生候选已返回，待锁颏颈/裁切/身份/区域色基。** 当前先看[首F000包](d01_first_candidate/README.md)。9态/60帧/24fps/2.5秒不变，未开F006，不修改共享模块、EDL、音频、留言或ready。
 
 x24原始身份图为`collab/refs/anim_24_xiaoman_smug.png`，处理资产`assets/chars/x24_smug.png`也已实看。两者只取身份和末表情倾向，旧空手合拢与整图翻转不作新动作依据。
 
@@ -30,6 +30,6 @@ x24原始身份图为`collab/refs/anim_24_xiaoman_smug.png`，处理资产`asset
 
 **颜色更正已纳入：**最新Opus退回S13累积色漂，动作/回头节奏认可，整镜待修色；本参考里的F087/F094只借整头结构。S24颜色固定身份与x13 F000，不能顺链继承头发变浅、皮肤变白、裙色变艳。F000色片只是同语义内区统计，不能把全部明暗强压成平涂；[源ROI和统计方法](provenance/F000_semantic_color_reference.json)明确。未并发改S13颜色。
 
-[来源与固定git blob](provenance/source_manifest.json)、[直接授权/最新更正](provenance/authorization_and_scope.md)、[构造核验](qa/construction_validation.json)齐全。[提示词草案](prompts_NOT_EXECUTED.json)未执行；[零调用账本](provenance/generation_ledger.json)确认生图0、采用画稿0、场景/全片渲染0。`python3 collab/reviews/cloud_s24_20261018/tools/build_reference.py`只重建本目录诊断图与JSON，不调用图像服务。
+[来源与固定git blob](provenance/source_manifest.json)、[原参考授权/颜色更正](provenance/authorization_and_scope.md)、[参考冻结及首张授权](provenance/astra_reference_freeze_and_first_F000_gate.md)、[构造核验](qa/construction_validation.json)齐全。参考图和`qa/delivery_validation.json`保留035c998阶段标签/零调用快照；[提示词草案](prompts_NOT_EXECUTED.json)仍未执行，实际首张prompt在新包。[当前账本](provenance/generation_ledger.json)登记1次请求/1原件/1候选，Astra锁定画稿0、场景/全片渲染0。`build_reference.py`不调用图像服务，并保留已有调用账本。
 
-下一门：Astra审9态曝光、左右眼线、近景裁切、整头颈衔接及末得意强度。参考未冻，不开母态，也不登记完整镜头。
+下一门：Astra锁首F000颏颈体积、实际裁切/等比配准、身份和区域色基。首母未锁，不派F006，不登记完整镜头；参考构造数字不当成成图测量。

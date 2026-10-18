@@ -1,0 +1,233 @@
+{
+  "fixed_master": "assets/chars/x13/F000.png",
+  "fixed_master_sha256": "91715601ae814bd84a3dc8d6ce43f1cc809a7bdd74e7390fefffe579f6882050",
+  "candidate_sha256": "35bb55ead65abf20e3862b4d66dde2f0ed25023f31fb634fa2f03bcda0c72281",
+  "method": "Separate manually located semantic interior ROIs;same explicit opacity/color masks. Descriptive diagnostics, not a whole-image average or automatic approval threshold. No color edits.",
+  "regions": [
+    {
+      "semantic_region": "hair",
+      "fixed_master": {
+        "roi": [
+          260,
+          260,
+          520,
+          500
+        ],
+        "pixels": 56693,
+        "median_RGB": [
+          56.0,
+          42.0,
+          34.0
+        ],
+        "p10_RGB": [
+          54.0,
+          40.0,
+          33.0
+        ],
+        "p90_RGB": [
+          57.0,
+          43.0,
+          35.0
+        ]
+      },
+      "candidate": {
+        "roi": [
+          360,
+          280,
+          730,
+          500
+        ],
+        "pixels": 80125,
+        "median_RGB": [
+          62.0,
+          47.0,
+          40.0
+        ],
+        "p10_RGB": [
+          61.0,
+          45.0,
+          38.0
+        ],
+        "p90_RGB": [
+          63.0,
+          48.0,
+          41.0
+        ]
+      },
+      "median_delta_RGB": [
+        6.0,
+        5.0,
+        6.0
+      ]
+    },
+    {
+      "semantic_region": "skin",
+      "fixed_master": {
+        "roi": [
+          530,
+          540,
+          730,
+          730
+        ],
+        "pixels": 27998,
+        "median_RGB": [
+          252.0,
+          203.0,
+          167.0
+        ],
+        "p10_RGB": [
+          251.0,
+          201.0,
+          164.0
+        ],
+        "p90_RGB": [
+          253.0,
+          204.0,
+          169.0
+        ]
+      },
+      "candidate": {
+        "roi": [
+          310,
+          760,
+          480,
+          850
+        ],
+        "pixels": 15235,
+        "median_RGB": [
+          254.0,
+          207.0,
+          170.0
+        ],
+        "p10_RGB": [
+          253.0,
+          201.0,
+          164.0
+        ],
+        "p90_RGB": [
+          254.0,
+          208.0,
+          172.0
+        ]
+      },
+      "median_delta_RGB": [
+        2.0,
+        4.0,
+        3.0
+      ]
+    },
+    {
+      "semantic_region": "dress_yellow",
+      "fixed_master": {
+        "roi": [
+          300,
+          1120,
+          650,
+          1300
+        ],
+        "pixels": 58209,
+        "median_RGB": [
+          252.0,
+          207.0,
+          58.0
+        ],
+        "p10_RGB": [
+          251.0,
+          206.0,
+          56.0
+        ],
+        "p90_RGB": [
+          253.0,
+          209.0,
+          59.0
+        ]
+      },
+      "candidate": {
+        "roi": [
+          310,
+          1210,
+          650,
+          1390
+        ],
+        "pixels": 57509,
+        "median_RGB": [
+          254.0,
+          209.0,
+          58.0
+        ],
+        "p10_RGB": [
+          253.0,
+          208.0,
+          57.0
+        ],
+        "p90_RGB": [
+          254.0,
+          210.0,
+          59.0
+        ]
+      },
+      "median_delta_RGB": [
+        2.0,
+        2.0,
+        0.0
+      ]
+    },
+    {
+      "semantic_region": "collar_white",
+      "fixed_master": {
+        "roi": [
+          360,
+          1000,
+          680,
+          1120
+        ],
+        "pixels": 22278,
+        "median_RGB": [
+          251.0,
+          245.0,
+          240.0
+        ],
+        "p10_RGB": [
+          250.0,
+          244.0,
+          239.0
+        ],
+        "p90_RGB": [
+          252.0,
+          246.0,
+          242.0
+        ]
+      },
+      "candidate": {
+        "roi": [
+          360,
+          1020,
+          700,
+          1160
+        ],
+        "pixels": 31996,
+        "median_RGB": [
+          252.0,
+          247.0,
+          242.0
+        ],
+        "p10_RGB": [
+          251.0,
+          246.0,
+          241.0
+        ],
+        "p90_RGB": [
+          253.0,
+          247.0,
+          243.0
+        ]
+      },
+      "median_delta_RGB": [
+        1.0,
+        2.0,
+        2.0
+      ]
+    }
+  ],
+  "status": "regional_color_baseline_pending_Astra"
+}

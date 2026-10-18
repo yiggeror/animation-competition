@@ -1,0 +1,30 @@
+{
+  "call_id": "S24_F000_call_001",
+  "pose": "d01_F000",
+  "status": "completed_native_output_pending_Astra_mother_lock",
+  "tool": "image_gen.imagegen",
+  "authorized_requests_this_gate": 1,
+  "args": {
+    "prompt": "S24 FIRST MOTHER DRAWING ONLY, pose d01 at frames000–005. Create one native1024×1536 clean transparent RGBA hand-drawn Xiaoman. This is the attentive starting pose BEFORE she turns back or becomes proud. Use reference1, the LOCKED character F000, for exact character identity, linework, natural skin/hair/dress palette and short pigtail design; reference2 is the identity turnaround; reference3 is only a construction/angle/framing guide, NEVER draw its gray geometric mannequin or annotations.\n\nPOSE AND STORY: whole head and upper torso face SCREEN LEFT, about30degree left three-quarter head and18degree left torso. Nose points SCREEN LEFT. She is looking toward the puppet result at SCREEN LEFT AND DOWN, outside the image: calm attentive brown irises with a modest left/down pupil shift. Eyes are fully awake and naturally open like the locked mother, not drooping, sleepy, half shut or exaggeratedly startled. Brows relaxed, NO proud raised brow yet. Lips fully CLOSED as a small neutral line: no mouth opening, smile curve, grin, smirk, teeth, tongue or yawn. She has NOT begun looking toward grandma at screen right/up.\n\nDraw an anatomically coherent complete head volume, chin/jaw underside, both ear relationships, bangs and rear cranium, flower attachments, both pigtail ROOTS, neck planes, white collar and upper chest. Rotate all head components coherently to the left; do not simply mirror the old picture or move facial features over a fixed skull. Preserve the child's skull size and identity proportions. Avoid a long rigid neck tube, detached chin, collar gaps, floating ears or an enlarged near ear. Shoulder and collar are gently left-facing with the torso, and connect naturally to the neck. Both upper arms continue down outside the frame; elbows, wrists, hands and prop grips are outside this close shot. No clasped hands, no extra arm or visible prop.\n\nHAIR: dark brown exactly like the LOCKED F000 reference, with its red flower ties and short resting twin pigtails. Each loose pigtail hangs DOWN beside the neck with a compact soft curve, root-to-tip about0.35–0.4head height. No horizontal flare, giant fanned tail, wind sweep, high ponytail, extended rope or lagging swing: she is still in this pose. Keep the full hair silhouette and cowlick inside the canvas with clean margins.\n\nFRAMING: same1024×1536 source canvas. Aim for solid-hair crown near y130–170 excluding the cowlick, chin around y770–810, collar/neck base around y940–990, shoulders around y1040–1080; keep the whole cowlick visible above the crown. Head height about640source pixels is a guide, not permission to distort anatomy. Upper chest/waist reaches the bottom and upper arms exit below it. Camera is fixed, no perspective zoom, no cut-off skull. Later full-picture placement is .67+(600,90), so body should cover the bottom crop at sourcey1478. Do not add coordinates or guides.\n\nCOLOR: the same warm peach skin, deep brown hair, soft golden yellow dress/white dots and warm white rounded collar as the LOCKED F000 reference. Do not lighten brown hair, bleach skin or increase dress saturation. Keep existing local shading and line detail, without painting every shaded pixel to a flat swatch. No new amber scene lighting, blue shadows, glow or backdrop: scene illumination will be applied once later.\n\nOUTPUT: one clean transparent native RGBA drawing, no text, grid, geometry, scene, props or extra people. Real fine hair alpha only; outside hair/clothing and within neck/pigtail gaps alpha must be zero, no haze, blocks or bloom.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s24/assets/chars/x13/F000.png",
+      "/workspace/animation-competition-s24/collab/refs/xiaoman_turnaround_v4_draft.png",
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/reference/S24_d01_F000_construction.png"
+    ],
+    "transparent_background": true
+  },
+  "inputs": [
+    {
+      "path": "/workspace/animation-competition-s24/assets/chars/x13/F000.png",
+      "sha256": "91715601ae814bd84a3dc8d6ce43f1cc809a7bdd74e7390fefffe579f6882050"
+    },
+    {
+      "path": "/workspace/animation-competition-s24/collab/refs/xiaoman_turnaround_v4_draft.png",
+      "sha256": "816a5d7cfed7c220717ea80d9a9419290135d8543c4f87e4866d804132720d32"
+    },
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/reference/S24_d01_F000_construction.png",
+      "sha256": "f4f99a9d7bb2f62985c7bd0624998b69df4c26ca52dfdbc5e08ca0de1aaa4caf"
+    }
+  ]
+}

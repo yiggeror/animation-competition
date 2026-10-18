@@ -1,0 +1,29 @@
+{
+  "status": "PASS_PROVENANCE_PENDING_ASTRA_ART_LOCK",
+  "image_generation_requests": 1,
+  "native_size": [
+    1024,
+    1536
+  ],
+  "native_mode": "RGBA",
+  "raw_candidate_default_bytes_identical": true,
+  "candidate_sha256": "35bb55ead65abf20e3862b4d66dde2f0ed25023f31fb634fa2f03bcda0c72281",
+  "fixed_master_sha256": "91715601ae814bd84a3dc8d6ce43f1cc809a7bdd74e7390fefffe579f6882050",
+  "frozen_reference_files_unchanged": 11,
+  "all_images_decodable": 23,
+  "manual_views": [
+    "three alpha bases",
+    "same-canvas master comparison",
+    "complete jaw/neck/collar",
+    "A/B neutral registration proposals",
+    "semantic region colors"
+  ],
+  "local_repaint_color_warp_alpha_edits": false,
+  "F006_started": false,
+  "scene_render_runs": 0,
+  "pending": [
+    "Astra mother anatomy/identity lock",
+    "registration/crop AorB review",
+    "regional palette acceptance"
+  ]
+}
