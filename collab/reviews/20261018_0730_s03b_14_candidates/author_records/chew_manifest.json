@@ -1,0 +1,271 @@
+{
+  "shot": "S03b",
+  "scope": "d09–d14 only",
+  "tool": "built-in image_gen edit",
+  "calls_used": 6,
+  "call_cap": 6,
+  "rate_limit_errors": 0,
+  "rerolls": 0,
+  "raw_originals_unmodified": true,
+  "qa_only_processing": "alpha composite/pad/crop/onion/contact sheets and read-only measurements; no deliverable painting, resizing or repairs",
+  "continuity_pass": false,
+  "static_registration_measurement": "31x31 RGBA k07 template normalized correlation ±20px search; offsets shown in px; see measurement logs",
+  "reference_commit": "19f7f4089d36f26bea6edb4a026931a4ab2882fe",
+  "freeze": "freeze_v2/S03b.json",
+  "items": [
+    {
+      "id": "d09",
+      "f": 19,
+      "hold": 3,
+      "call": 1,
+      "original": "originals/d09_f19_call01.png",
+      "raw_source": "/workspace/scratch/f060b5601755/generated_images/exec-b5999444-1389-4142-8f3c-008f12544caa.png",
+      "identical_to_raw_source": true,
+      "size": [
+        1670,
+        942
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "sha256": "d214909d056e41e63bb0d15dc007bdc27b554f4e24dd13648ac8f23ac64e72ea",
+      "anchors": {
+        "A": [
+          0,
+          2
+        ],
+        "B": [
+          2,
+          1
+        ],
+        "H": [
+          1,
+          1
+        ]
+      },
+      "prompt_refs_log": "logs/call01_d09.json",
+      "measurement_log": "logs/d09_f19_call01_metadata.json",
+      "status": "candidate_not_approved",
+      "issues": [
+        "NOT_ACCEPTED: d08→d09 fruit jumps upward ~92px and changes fruit face/seed layout",
+        "Closed mouth / screen-right cheek action visible; hand-fruit much higher than freeze",
+        "Canvas height942 vs941"
+      ]
+    },
+    {
+      "id": "d10",
+      "f": 22,
+      "hold": 3,
+      "call": 2,
+      "original": "originals/d10_f22_call02.png",
+      "raw_source": "/workspace/scratch/f060b5601755/generated_images/exec-5fe3f4cf-1344-48f7-8074-72e57b1dccda.png",
+      "identical_to_raw_source": true,
+      "size": [
+        1670,
+        942
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "sha256": "66a5e17ea2043a1eab56ea883b320c7d2cc8c9569e648cc1613f41f32564c6fd",
+      "anchors": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          2,
+          1
+        ],
+        "H": [
+          2,
+          1
+        ]
+      },
+      "prompt_refs_log": "logs/call02_d10.json",
+      "measurement_log": "logs/d10_f22_call02_metadata.json",
+      "status": "candidate_not_approved",
+      "issues": [
+        "CANDIDATE_ONLY: hand lowers from d09, but remains above freeze",
+        "Mouth flattening visible; required distinct jaw drop not established",
+        "Too many fruit seeds vs d07; canvas height942"
+      ]
+    },
+    {
+      "id": "d11",
+      "f": 25,
+      "hold": 3,
+      "call": 3,
+      "original": "originals/d11_f25_call03.png",
+      "raw_source": "/workspace/scratch/f060b5601755/generated_images/exec-fc5e1142-60a7-4673-a20b-70b86a2b6774.png",
+      "identical_to_raw_source": true,
+      "size": [
+        1670,
+        942
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "sha256": "2acb78e759b6bad1a3fce07819c2b04108a2741ef9cd0e5752aac801b2ce3925",
+      "anchors": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          3,
+          1
+        ],
+        "H": [
+          2,
+          1
+        ]
+      },
+      "prompt_refs_log": "logs/call03_d11.json",
+      "measurement_log": "logs/d11_f25_call03_metadata.json",
+      "status": "candidate_not_approved",
+      "issues": [
+        "CANDIDATE_ONLY: opposite screen-left puff and lowered lids clearly visible",
+        "3 seeds restored using d07 appearance, but fruit identity change from d10 visible",
+        "Large down-left hand displacement; canvas height942"
+      ]
+    },
+    {
+      "id": "d12",
+      "f": 28,
+      "hold": 4,
+      "call": 4,
+      "original": "originals/d12_f28_call04_FAILED.png",
+      "raw_source": "/workspace/scratch/f060b5601755/generated_images/exec-3cf42ea4-eb56-40a7-be72-41601160360b.png",
+      "identical_to_raw_source": true,
+      "size": [
+        1670,
+        942
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "sha256": "0c592a3e04f0cc5b4bbb3d3a14f3f38532b0858fc526d2967cff70351edf18f8",
+      "anchors": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          3,
+          0
+        ],
+        "H": [
+          2,
+          1
+        ]
+      },
+      "prompt_refs_log": "logs/call04_d12.json",
+      "measurement_log": "logs/d12_f28_call04_FAILED_metadata.json",
+      "status": "failed",
+      "issues": [
+        "FAILED: old k07 outstretched arm restored; fruit nearly regrown and seed layout changed",
+        "Eyes remain left/down rather than requested right/down",
+        "Not inherited; canvas height942"
+      ]
+    },
+    {
+      "id": "d13",
+      "f": 32,
+      "hold": 6,
+      "call": 5,
+      "original": "originals/d13_f32_call05.png",
+      "raw_source": "/workspace/scratch/f060b5601755/generated_images/exec-91198795-10b1-44dd-acd4-682f58654ec5.png",
+      "identical_to_raw_source": true,
+      "size": [
+        1670,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "sha256": "b70c77a6b62e34e5c91e4598573255072102be931ef09822812c515b588b6f49",
+      "anchors": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          5,
+          0
+        ],
+        "H": [
+          4,
+          0
+        ]
+      },
+      "prompt_refs_log": "logs/call05_d13.json",
+      "measurement_log": "logs/d13_f32_call05_metadata.json",
+      "status": "candidate_not_approved",
+      "issues": [
+        "CANDIDATE_ONLY: right/down gaze visible, bent arm and real bite retained",
+        "Rendered from d11; d12 intentionally not inherited",
+        "Hand shifts right/down; torso flower drift; exact yaw angle not verified"
+      ]
+    },
+    {
+      "id": "d14",
+      "f": 38,
+      "hold": 10,
+      "call": 6,
+      "original": "originals/d14_f38_call06.png",
+      "raw_source": "/workspace/scratch/f060b5601755/generated_images/exec-a2ec853c-bbbf-4bab-844f-4f983a65193f.png",
+      "identical_to_raw_source": true,
+      "size": [
+        1670,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "sha256": "60829e31b2adc50a22a538c11c4e7f8d934df2ee1f26b808255e6c57a646f509",
+      "anchors": {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          5,
+          0
+        ],
+        "H": [
+          5,
+          0
+        ]
+      },
+      "prompt_refs_log": "logs/call06_d14.json",
+      "measurement_log": "logs/d14_f38_call06_metadata.json",
+      "status": "candidate_not_approved",
+      "issues": [
+        "CANDIDATE_ONLY: faint smile, half-lidded right/down gaze visible",
+        "Three seeds and missing bite retained; hand descends ~16px rather than requested2px",
+        "Final static registration drift up to5px; continuous animation not approved"
+      ]
+    }
+  ],
+  "qa": [
+    "qa/contact_all6.jpg",
+    "qa/face_states_fixed_crop.jpg",
+    "qa/boundary_d08_d09_onion50.jpg",
+    "qa/*_onion_k07_50pct.jpg",
+    "qa/*_onion_previous_50pct.jpg"
+  ],
+  "next_review": "Opus sound-synced assembly review needed; d12 failed and d08→d09 discontinuity known; do not mark animation approved"
+}

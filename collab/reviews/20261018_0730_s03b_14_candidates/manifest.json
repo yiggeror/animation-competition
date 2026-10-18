@@ -1,0 +1,300 @@
+{
+  "generation_calls": 14,
+  "rerolls": 0,
+  "painted_targets": 14,
+  "scene_integration_approved": false,
+  "frozen_reference_commit": "b1e19b85221f218376e29e2b08c4630118a7a9b0",
+  "spec_path": "collab/reviews/20261018_0712_s03b_pose_proposal/freeze_v2/S03b.json",
+  "raw_originals_unchanged": true,
+  "qa_canvas_note": "All QA composites use top-left-aligned 1670x942 canvas; a 941-high original gets one transparent bottom row only in the QA composite. No original rescaled/cropped/modified.",
+  "states": [
+    {
+      "id": "d01",
+      "f": 0,
+      "hold": 4,
+      "path": "originals/d01_f00.png",
+      "source": "outputs/raise/d01_f00.png",
+      "bytes": 918199,
+      "sha256": "ae5c78373d8f58c05279fcf920ad9991e573bc84aef61ecf9306d186b8070107",
+      "git_blob": "683f40764f00a1f0b0ebd388a4986f29ee5f9853",
+      "size": [
+        1670,
+        942
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "status": "CANDIDATE: actual-speed scene review pending; see REVIEW.md"
+    },
+    {
+      "id": "d02",
+      "f": 4,
+      "hold": 2,
+      "path": "originals/d02_f04.png",
+      "source": "outputs/raise/d02_f04.png",
+      "bytes": 901007,
+      "sha256": "4edd9d11f9bb10d627ba7beac797df086927d8c866666561b47761ea8ba8ddfd",
+      "git_blob": "feec268771dfe743f769cf133925faddad2b1845",
+      "size": [
+        1670,
+        942
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "status": "CANDIDATE: actual-speed scene review pending; see REVIEW.md"
+    },
+    {
+      "id": "d03",
+      "f": 6,
+      "hold": 2,
+      "path": "originals/d03_f06.png",
+      "source": "outputs/raise/d03_f06.png",
+      "bytes": 870787,
+      "sha256": "c7821f99485f1c6c374d174c99486abc3cff6eea1b1659d7dd75186285ea7ad1",
+      "git_blob": "3e760489df68e646b5dd06144265c7801c57c77c",
+      "size": [
+        1670,
+        942
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "status": "CANDIDATE: actual-speed scene review pending; see REVIEW.md"
+    },
+    {
+      "id": "d04",
+      "f": 8,
+      "hold": 2,
+      "path": "originals/d04_f08.png",
+      "source": "outputs/raise/d04_f08.png",
+      "bytes": 867410,
+      "sha256": "c79429816692542aa169f6619430c70e46394ef888e1fd5a6086f2c84673c2a0",
+      "git_blob": "1e9072ef6db240c2b67c2e75925bb5bd09008246",
+      "size": [
+        1670,
+        942
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "status": "REJECT: rind-end toward mouth; orientation reset at d05"
+    },
+    {
+      "id": "d05",
+      "f": 10,
+      "hold": 2,
+      "path": "originals/d05_f10.png",
+      "source": "outputs/bite/S03b_d05_f10_original.png",
+      "bytes": 869086,
+      "sha256": "06e5d45145df74e69af9df0fa55fdcd52cf18b004ec92b1841dc8fbea7ad1a2a",
+      "git_blob": "91a9a7ff6d00bcff8f748a141b51ad57805e96d7",
+      "size": [
+        1670,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "status": "CANDIDATE: actual-speed scene review pending; see REVIEW.md"
+    },
+    {
+      "id": "d06",
+      "f": 12,
+      "hold": 3,
+      "path": "originals/d06_f12.png",
+      "source": "outputs/bite/S03b_d06_f12_original.png",
+      "bytes": 873112,
+      "sha256": "c086b1a66bd4e664e7f42b61c40c6e11ef279386bea287c7a6bed4ff5acb6fc8",
+      "git_blob": "64fa74aff12dc1776350dd28da77efda2e59d0ea",
+      "size": [
+        1670,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "status": "CANDIDATE: actual-speed scene review pending; see REVIEW.md"
+    },
+    {
+      "id": "d07",
+      "f": 15,
+      "hold": 2,
+      "path": "originals/d07_f15.png",
+      "source": "outputs/bite/S03b_d07_f15_original.png",
+      "bytes": 881562,
+      "sha256": "7c059eacf86ef447b75b4199a13db08bfd307d9dd82db19d0ecbe9eae2f48053",
+      "git_blob": "74a45c1c938f69390870118b42d54d977b53baa8",
+      "size": [
+        1670,
+        942
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "status": "CANDIDATE: actual-speed scene review pending; see REVIEW.md"
+    },
+    {
+      "id": "d08",
+      "f": 17,
+      "hold": 2,
+      "path": "originals/d08_f17.png",
+      "source": "outputs/bite/S03b_d08_f17_original.png",
+      "bytes": 880354,
+      "sha256": "18912572b43add72af92e156702fe89780ee1f91f5cd1d881e1fe55a76bcfef3",
+      "git_blob": "39bb8b7f7437bd47ac9d95d2cbe327e2469bd6a4",
+      "size": [
+        1670,
+        942
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "status": "CANDIDATE: actual-speed scene review pending; see REVIEW.md"
+    },
+    {
+      "id": "d09",
+      "f": 19,
+      "hold": 3,
+      "path": "originals/d09_f19.png",
+      "source": "outputs/chew/originals/d09_f19_call01.png",
+      "bytes": 872864,
+      "sha256": "d214909d056e41e63bb0d15dc007bdc27b554f4e24dd13648ac8f23ac64e72ea",
+      "git_blob": "ef1dcca0be3271ed61d73e51f7897b5824b7df60",
+      "size": [
+        1670,
+        942
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "status": "REJECT: upward reversal after d08; different fruit/seeds"
+    },
+    {
+      "id": "d10",
+      "f": 22,
+      "hold": 3,
+      "path": "originals/d10_f22.png",
+      "source": "outputs/chew/originals/d10_f22_call02.png",
+      "bytes": 866422,
+      "sha256": "66a5e17ea2043a1eab56ea883b320c7d2cc8c9569e648cc1613f41f32564c6fd",
+      "git_blob": "57dd64540f028c97d7763369d0202af6dd417f3b",
+      "size": [
+        1670,
+        942
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "status": "REJECT: fruit identity discontinuity from d08; weak chin action"
+    },
+    {
+      "id": "d11",
+      "f": 25,
+      "hold": 3,
+      "path": "originals/d11_f25.png",
+      "source": "outputs/chew/originals/d11_f25_call03.png",
+      "bytes": 884244,
+      "sha256": "2acb78e759b6bad1a3fce07819c2b04108a2741ef9cd0e5752aac801b2ce3925",
+      "git_blob": "77a1cb40f7ec1818d39afe8706c3d3b1d5b6234d",
+      "size": [
+        1670,
+        942
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "status": "CANDIDATE: actual-speed scene review pending; see REVIEW.md"
+    },
+    {
+      "id": "d12",
+      "f": 28,
+      "hold": 4,
+      "path": "originals/d12_f28.png",
+      "source": "outputs/chew/originals/d12_f28_call04_FAILED.png",
+      "bytes": 909703,
+      "sha256": "0c592a3e04f0cc5b4bbb3d3a14f3f38532b0858fc526d2967cff70351edf18f8",
+      "git_blob": "04458616591775b0a8396c3e7e79b15dc0ec846e",
+      "size": [
+        1670,
+        942
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "status": "REJECT: old extended-arm pose and bite nearly lost"
+    },
+    {
+      "id": "d13",
+      "f": 32,
+      "hold": 6,
+      "path": "originals/d13_f32.png",
+      "source": "outputs/chew/originals/d13_f32_call05.png",
+      "bytes": 874841,
+      "sha256": "b70c77a6b62e34e5c91e4598573255072102be931ef09822812c515b588b6f49",
+      "git_blob": "864e139609ff37948d647cab81265f5aaec56fd1",
+      "size": [
+        1670,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "status": "CANDIDATE: actual-speed scene review pending; see REVIEW.md"
+    },
+    {
+      "id": "d14",
+      "f": 38,
+      "hold": 10,
+      "path": "originals/d14_f38.png",
+      "source": "outputs/chew/originals/d14_f38_call06.png",
+      "bytes": 880755,
+      "sha256": "60829e31b2adc50a22a538c11c4e7f8d934df2ee1f26b808255e6c57a646f509",
+      "git_blob": "de4196a3200c8c37080666635052ffa1e442df77",
+      "size": [
+        1670,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "status": "CANDIDATE: actual-speed scene review pending; see REVIEW.md"
+    }
+  ],
+  "minimum_repair_targets": [
+    "d04",
+    "d09",
+    "d10",
+    "d12"
+  ],
+  "additional_generation_calls": 0,
+  "quota_errors": 0
+}
