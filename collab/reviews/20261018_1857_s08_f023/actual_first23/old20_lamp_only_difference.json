@@ -1,0 +1,74 @@
+{
+  "status": "PASS_OLD_ACTUAL20_SELECTED_DIFF_ONLY_LEVER",
+  "old_actual_commit": "69d2e31fb4a785b2a45abcacca170b05530b6ad7",
+  "old20_rerendered_this_task": false,
+  "comparison": "old saved lossless Canvas PNG vs new23 saved lossless Canvas PNG;not MP4 decodes",
+  "geometric_basis": {
+    "pivot": [
+      1301.48649,
+      791.54595
+    ],
+    "scale": 0.7567567567567568,
+    "old_initial_angle": 0.55,
+    "new_initial_angle": -0.85
+  },
+  "checks": [
+    {
+      "frame": 0,
+      "old20_source_sha256": "6504e01d6f3bb2749ddc6dc65bf8edd5a1f7cb8e44d415a4615ce3f7cd103380",
+      "new23_source_sha256": "1cfd8fe62ea9bb586cc066c45be556509590dae0914d75c494231846e2daa290",
+      "changed_pixels": 1165,
+      "actual_bbox_xyxy_exclusive": [
+        1233,
+        730,
+        1305,
+        836
+      ],
+      "authorized_lever_roi": [
+        1225,
+        720,
+        1315,
+        845
+      ],
+      "outside_ROI_changed_pixels": 0
+    },
+    {
+      "frame": 13,
+      "old20_source_sha256": "70558696acf5a803aeff3e8e18ba20c07ef6e3c415fe47ee16497c0223ee6821",
+      "new23_source_sha256": "9d9352b32fe78bf615ce0a53f19013580480d51a4b13a87830f5e52926939f67",
+      "changed_pixels": 1167,
+      "actual_bbox_xyxy_exclusive": [
+        1233,
+        730,
+        1305,
+        836
+      ],
+      "authorized_lever_roi": [
+        1225,
+        720,
+        1315,
+        845
+      ],
+      "outside_ROI_changed_pixels": 0
+    },
+    {
+      "frame": 17,
+      "old20_source_sha256": "b39a5edea6eaf18ce25d99bbbdd45a5887e1cd39fbcfd8afb732e09fb8d6833d",
+      "new23_source_sha256": "5d2f066a1ab237b75a47537d774fdb194c46ea8cd59c54fd475b3b9b10814358",
+      "changed_pixels": 1166,
+      "actual_bbox_xyxy_exclusive": [
+        1233,
+        730,
+        1305,
+        836
+      ],
+      "authorized_lever_roi": [
+        1225,
+        720,
+        1315,
+        845
+      ],
+      "outside_ROI_changed_pixels": 0
+    }
+  ]
+}
