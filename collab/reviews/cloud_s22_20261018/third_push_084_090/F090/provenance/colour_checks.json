@@ -1,0 +1,145 @@
+{
+  "source_sha256": "25f15dd1a5349fec017bb026de0f43067165018b29105e11bc42d371fa4d3d49",
+  "final_sha256": "751693d6cbfd6ad5e7182dc2309639ebbbb5c144c25cafa9424877a759636dfa",
+  "policy": {
+    "doses": {
+      "adult_G": -2.75,
+      "adult_B": -4.75,
+      "child_B": -2.75
+    },
+    "reason": "Signed doses subtract RGB; negatives add. Native mapped090 middle/light adult(253,204,169), child(252,204,167), versus mother024 adult(253,209,175), child(254,205,171). Small same-drawing additions: adult G+up to3/B+up to5, child B+up to3. Tone-weighted middle/light planes only, preserve raw dark sides, alpha, ink and x>=520 group. Reference024, never accumulated adjacent colour."
+  },
+  "alpha_exact": true,
+  "ink_and_contour_guards_exact": true,
+  "contact_x_ge_520_exact": true,
+  "source_contact_RGBA_sha256": "09477dcdd6ceaa9c1508062d02ea17cda318b14f0d876d713d02d799abdd32b7",
+  "final_contact_RGBA_sha256": "09477dcdd6ceaa9c1508062d02ea17cda318b14f0d876d713d02d799abdd32b7",
+  "changed_pixels": 118223,
+  "RGB_min_delta": [
+    0,
+    0,
+    0
+  ],
+  "RGB_max_delta": [
+    0,
+    3,
+    5
+  ],
+  "samples": {
+    "F024": {
+      "0.2": {
+        "adult": [
+          253.0,
+          210.0,
+          175.0
+        ],
+        "child": [
+          254.0,
+          206.0,
+          172.0
+        ]
+      },
+      "0.5": {
+        "adult": [
+          253.0,
+          209.0,
+          175.0
+        ],
+        "child": [
+          254.0,
+          205.0,
+          171.0
+        ]
+      },
+      "0.8": {
+        "adult": [
+          253.0,
+          196.0,
+          160.0
+        ],
+        "child": [
+          253.0,
+          197.0,
+          160.0
+        ]
+      }
+    },
+    "before": {
+      "0.2": {
+        "adult": [
+          252.0,
+          205.0,
+          168.0
+        ],
+        "child": [
+          252.0,
+          204.0,
+          166.0
+        ]
+      },
+      "0.5": {
+        "adult": [
+          253.0,
+          204.0,
+          169.0
+        ],
+        "child": [
+          252.0,
+          204.0,
+          167.0
+        ]
+      },
+      "0.8": {
+        "adult": [
+          252.0,
+          187.0,
+          149.0
+        ],
+        "child": [
+          253.0,
+          191.0,
+          151.0
+        ]
+      }
+    },
+    "after": {
+      "0.2": {
+        "adult": [
+          252.0,
+          208.0,
+          173.0
+        ],
+        "child": [
+          252.0,
+          204.0,
+          169.0
+        ]
+      },
+      "0.5": {
+        "adult": [
+          253.0,
+          207.0,
+          174.0
+        ],
+        "child": [
+          252.0,
+          204.0,
+          170.0
+        ]
+      },
+      "0.8": {
+        "adult": [
+          252.0,
+          187.0,
+          149.0
+        ],
+        "child": [
+          253.0,
+          191.0,
+          151.0
+        ]
+      }
+    }
+  },
+  "additional_image_calls": 0
+}

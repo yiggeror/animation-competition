@@ -1,0 +1,19 @@
+{
+  "reviewed_at_utc": "2026-10-18T19:53:52.814747+00:00",
+  "local_gate": "PASS_AS_REFERENCE_FOR_F090; Astra final review pending",
+  "actual_images_opened": [
+    "qa/F084_raw_contact_2x.png",
+    "qa/F084_mapped_on_gray.png",
+    "qa/F084_mapped_contact_2x.png",
+    "qa/F084_final_on_gray.png",
+    "qa/F084_024_before_after_native.png"
+  ],
+  "observed": "Both new forearms reach their advanced wrist roots continuously. Source closed grip/hand group and one rod remain unchanged, all five mapped regions exact RGBA. Left entries fixed. No new wrist cut, repeated contour, detached nail or shaft slide seen.",
+  "final_sha256": "cd5d4d79d00b9cdaab4e261cfe71d9ace543533d5b6d32bc93721608a25f4de0",
+  "native_cumulative_delta": [
+    61,
+    -35
+  ],
+  "colour_note": "F024 primary. Only child new-forearm B-1/2 in middle/light planes; adult/R/G/alpha/ink/contact unchanged. Middle/light samples within3 of024. Native dark-side samples preserved, not flattened.",
+  "no_F108": true
+}

@@ -1,0 +1,117 @@
+{
+  "drawings": {
+    "F084": {
+      "final_sha256": "cd5d4d79d00b9cdaab4e261cfe71d9ace543533d5b6d32bc93721608a25f4de0",
+      "raw_sha256": "88776e56adcebbbbc90bcb0473ec15d1fa9b08f45f6639038fe62853162827b7",
+      "native_cumulative_delta": [
+        61,
+        -35
+      ],
+      "contact": {
+        "child_pinch": {
+          "max_RGBA_error": 0,
+          "visible_pixels": 12082
+        },
+        "child_wrist": {
+          "max_RGBA_error": 0,
+          "visible_pixels": 1190
+        },
+        "adult_thumb": {
+          "max_RGBA_error": 0,
+          "visible_pixels": 3360
+        },
+        "four_supporting_ends": {
+          "max_RGBA_error": 0,
+          "visible_pixels": 27441
+        },
+        "single_rod": {
+          "max_RGBA_error": 0,
+          "visible_pixels": 15976
+        }
+      },
+      "left_entries": [
+        [
+          216,
+          420
+        ],
+        [
+          825,
+          940
+        ]
+      ],
+      "alpha_ink_and_x_ge_520_exact": true,
+      "raws_inputs_and_prompts_SHA_verified": true,
+      "middle_light_samples_max_channel_difference_from_F024": 3.0,
+      "dark_side_samples_unchanged": true
+    },
+    "F090": {
+      "final_sha256": "751693d6cbfd6ad5e7182dc2309639ebbbb5c144c25cafa9424877a759636dfa",
+      "raw_sha256": "d9c88269a2f8eb58784133302ad88d1c54ad2552c33d8132ef4bd7962a453a68",
+      "native_cumulative_delta": [
+        73,
+        -42
+      ],
+      "contact": {
+        "child_pinch": {
+          "max_RGBA_error": 0,
+          "visible_pixels": 12082
+        },
+        "child_wrist": {
+          "max_RGBA_error": 0,
+          "visible_pixels": 1190
+        },
+        "adult_thumb": {
+          "max_RGBA_error": 0,
+          "visible_pixels": 3360
+        },
+        "four_supporting_ends": {
+          "max_RGBA_error": 0,
+          "visible_pixels": 27441
+        },
+        "single_rod": {
+          "max_RGBA_error": 0,
+          "visible_pixels": 15697
+        }
+      },
+      "left_entries": [
+        [
+          216,
+          420
+        ],
+        [
+          825,
+          940
+        ]
+      ],
+      "alpha_ink_and_x_ge_520_exact": true,
+      "raws_inputs_and_prompts_SHA_verified": true,
+      "middle_light_samples_max_channel_difference_from_F024": 3.0,
+      "dark_side_samples_unchanged": true
+    }
+  },
+  "clips": [
+    {
+      "clip": "S22_084_107_third_push24.mp4",
+      "sha256": "278c9f0bdc7518d2301f08ba6a9b913dece087d942704cd8a002127ba24ee2f0",
+      "frames": 24,
+      "actual_decoded_holds_match": true
+    },
+    {
+      "clip": "S22_000_107_isolated_exposure108.mp4",
+      "sha256": "fffcc1f398521890857b61f1183e2dd1e426c685d26bb72f97d6df4d7bd75205",
+      "frames": 108,
+      "actual_decoded_holds_match": true
+    }
+  ],
+  "preexisting_review_files_SHA_verified": 453,
+  "old_packages_original_raws_exposure_CSV_and_plan_unchanged": true,
+  "new_image_calls": 2,
+  "successful_outputs": 2,
+  "cumulative_attempts": 11,
+  "cumulative_successful_outputs": 10,
+  "actual_review": "provenance/local_review.json",
+  "production_ready": false,
+  "Astra_review_pending": true,
+  "no_F108": true,
+  "no_F114": true
+}

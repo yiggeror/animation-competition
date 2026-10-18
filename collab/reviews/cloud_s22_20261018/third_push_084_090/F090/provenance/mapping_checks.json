@@ -1,0 +1,156 @@
+{
+  "locked_F024_sha256": "97560237598d024a725ab63ee62809d1f5ded5f6fc5aadc1d8a4f158ca85da4a",
+  "raw_sha256": "d9c88269a2f8eb58784133302ad88d1c54ad2552c33d8132ef4bd7962a453a68",
+  "native_raw_size": [
+    1672,
+    941
+  ],
+  "right_transparent_pad_columns": 0,
+  "mapped_sha256": "25f15dd1a5349fec017bb026de0f43067165018b29105e11bc42d371fa4d3d49",
+  "raw_anchor_matches": {
+    "child_thumbnail": {
+      "raw_delta": [
+        99,
+        -50
+      ],
+      "NCC": 0.9563904612641326
+    },
+    "adult_thumbnail": {
+      "raw_delta": [
+        94,
+        -49
+      ],
+      "NCC": 0.8802648164282013
+    },
+    "child_wrist_crease": {
+      "raw_delta": [
+        91,
+        -46
+      ],
+      "NCC": 0.9547292552568917
+    },
+    "child_palm_crease": {
+      "raw_delta": [
+        96,
+        -48
+      ],
+      "NCC": 0.962695324839312
+    }
+  },
+  "median_raw_delta": [
+    95.0,
+    -48.5
+  ],
+  "native_table_delta": [
+    73,
+    -42
+  ],
+  "uniform_ideal_delta": [
+    73.15,
+    -41.8
+  ],
+  "world_cumulative_delta": [
+    84.0,
+    -48.0
+  ],
+  "calculation_origin": "locked F024; cumulative rounding from world table",
+  "method": "Locked drawn hand/rod group rigidly mapped; newly image-generated forearm pixels remapped with fixed left entries and continuous arm profiles into advancing wrist roots. Not a whole-sheet translation.",
+  "forearm_join_x": [
+    400,
+    520
+  ],
+  "offscreen_lower_arm_continuation_columns": 148,
+  "proof": {
+    "child_pinch": {
+      "source_box": [
+        760,
+        470,
+        893,
+        566
+      ],
+      "native_delta": [
+        73,
+        -42
+      ],
+      "visible_pixels": 12082,
+      "max_RGBA_error": 0
+    },
+    "child_wrist": {
+      "source_box": [
+        655,
+        640,
+        690,
+        674
+      ],
+      "native_delta": [
+        73,
+        -42
+      ],
+      "visible_pixels": 1190,
+      "max_RGBA_error": 0
+    },
+    "adult_thumb": {
+      "source_box": [
+        690,
+        530,
+        746,
+        590
+      ],
+      "native_delta": [
+        73,
+        -42
+      ],
+      "visible_pixels": 3360,
+      "max_RGBA_error": 0
+    },
+    "four_supporting_ends": {
+      "source_box": [
+        665,
+        580,
+        902,
+        742
+      ],
+      "native_delta": [
+        73,
+        -42
+      ],
+      "visible_pixels": 27441,
+      "max_RGBA_error": 0
+    },
+    "single_rod": {
+      "source_box": [
+        950,
+        42,
+        1599,
+        510
+      ],
+      "native_delta": [
+        73,
+        -42
+      ],
+      "visible_pixels": 15697,
+      "max_RGBA_error": 0
+    },
+    "locked024_left_entries": [
+      [
+        216,
+        420
+      ],
+      [
+        825,
+        940
+      ]
+    ],
+    "mapped_left_entries": [
+      [
+        216,
+        420
+      ],
+      [
+        825,
+        940
+      ]
+    ]
+  },
+  "new_image_calls_for_mapping": 0
+}

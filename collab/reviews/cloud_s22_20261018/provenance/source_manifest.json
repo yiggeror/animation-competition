@@ -1,6 +1,6 @@
 {
   "baseline": "da16fc0c1136767dba24a804ce0db01e2eed9bae",
-  "image_generation_calls": 9,
+  "image_generation_calls": 11,
   "sources": [
     {
       "path": "collab/README.md",
@@ -86,8 +86,8 @@
   "existing_contact_sheets_total_frames": 60,
   "reference_note": "Reference-phase raster files are manual technical diagrams; actual imagegen outputs are separately retained under F000_first and contact_012_018_024.",
   "reference_phase_image_generation_calls": 0,
-  "current_stage": "Astra dual review accepted second-push structure at6d2ad21; limited same-drawing forearm colour repair and24/84-frame isolated exposure submitted for colour review, before084",
-  "latest_batch": "second_push_colour_060_066/README.md",
+  "current_stage": "Astra locked second-push colour and exposure at10e23037; third-push084/090 and24/108-frame isolated exposure submitted for review; before108/114",
+  "latest_batch": "third_push_084_090/README.md",
   "other_states_generated": [
     "F012",
     "F018",
@@ -95,10 +95,12 @@
     "F036",
     "F042",
     "F060",
-    "F066"
+    "F066",
+    "F084",
+    "F090"
   ],
   "repair_image_generation_calls": 0,
-  "successful_image_outputs": 8,
+  "successful_image_outputs": 10,
   "failed_image_calls": 1,
   "mother_locked_sha256": "d4e78e2d5b84a72588cf3af1ff23ce39cdc18d19dde2fbf1f8eaf44ba62d7ef5",
   "registration_image_generation_calls": 0,
@@ -109,5 +111,7 @@
   "second_push_image_calls": 2,
   "first_push_passed_by_Astra": true,
   "second_push_structure_passed_by_Astra": true,
-  "limited_colour_repair_image_calls": 0
+  "limited_colour_repair_image_calls": 0,
+  "third_push_image_calls": 2,
+  "second_push_colour_passed_by_Astra": true
 }
