@@ -1,0 +1,104 @@
+{
+  "status": "F000_ONLY_REAL_CANVAS_DIAGNOSTIC_PENDING",
+  "frame_count": 1,
+  "time_seconds": 0,
+  "full_S08_duration_seconds": 6,
+  "asset": {
+    "path": "frames/S08_F000_grandma_match_box_RGBA.png",
+    "sha256": "c803571d4a6446e783fcbeb7aef41d65c1862ff3bf78a9a53f34b4631170e3f3",
+    "source": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F000_FINAL_LOCKED/S08_F000_grandma_match_box_RGBA.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "placement": {
+      "x": 0,
+      "y": 0,
+      "sc": 1
+    }
+  },
+  "lamp": {
+    "base_old": [
+      1380,
+      965.6
+    ],
+    "base_new": [
+      1415,
+      965.6
+    ],
+    "uniform_scale": 0.7567567567567568,
+    "mirror_x": true,
+    "lift": 0,
+    "wick": [
+      1415,
+      794.572972972973
+    ]
+  },
+  "unchanged": {
+    "camera": [
+      960,
+      540,
+      1
+    ],
+    "bg_crop": [
+      980,
+      160,
+      640,
+      360
+    ],
+    "bg_destination": [
+      -80,
+      -60,
+      2080,
+      1200
+    ],
+    "bg_blur_px": 22,
+    "table_back_top_y": 950.2,
+    "table_front_y": 981,
+    "table_left_x": 764,
+    "ambient": [
+      0.1,
+      0.11,
+      0.17
+    ],
+    "vignette": 0.5,
+    "grain": 7
+  },
+  "open_visual_question": "Original foreground table y981 may occlude both new elbow tips at~990–998. Intentionally unchanged pending actual scene director review. No sketch polygon or camera change.",
+  "code_person_or_duplicate_match_box": false,
+  "sources": [
+    {
+      "path": "js/anim/s08.js",
+      "git_blob_sha": "2ae05674345478b4ef4708b34659efc376c8138a"
+    },
+    {
+      "path": "js/paint/paintshot.js",
+      "git_blob_sha": "04e5e6e2e88e48bb46ac96eeed81de12bdd59018"
+    },
+    {
+      "path": "js/code/s08.js",
+      "git_blob_sha": "5cbcefef2906d920ce8372a47a8bbbd06dd7ad4a"
+    },
+    {
+      "path": "assets/paint/bg_01_room_wide.png",
+      "git_blob_sha": "84945c23cac8e376fc24aeb5a43e4548b5eca8c9"
+    },
+    {
+      "path": "tools/js/snap.cjs",
+      "git_blob_sha": "8bbd4e5801023b489c080c2b090b88b7d21e06cb"
+    },
+    {
+      "path": "tools/js/frames.cjs",
+      "git_blob_sha": "b87e5a99db60921c128ff3065e724a48753324b8"
+    }
+  ],
+  "relative_runtime_dependencies": [
+    "contract.js",
+    "frames/S08_F000_grandma_match_box_RGBA.png"
+  ],
+  "absolute_repo_imports": [
+    "/js/paint/paintshot.js",
+    "/js/code/s08.js"
+  ],
+  "suggested_publish_root": "collab/reviews/20261018_1606_s08_f000_scene"
+}

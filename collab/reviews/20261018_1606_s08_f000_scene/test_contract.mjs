@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {DURATION,FRAME_COUNT,ART,LAMP_BASE,LAMP_SCALE,LAMP_WICK,ORIGINAL_TABLE,requireT0} from './contract.js';
+assert.equal(DURATION,1/24);assert.equal(FRAME_COUNT,1);assert.equal(requireT0(0),0);
+for(const t of[1/24,-1/24,NaN,Infinity,6])assert.throws(()=>requireT0(t));
+assert.deepEqual(LAMP_BASE,[1415,965.6]);assert.equal(LAMP_BASE[0]-(596+56*14),35);assert.equal(LAMP_SCALE,14/18.5);
+assert.ok(Math.abs(LAMP_WICK[1]-794.5729729729729)<1e-9);assert.equal(ORIGINAL_TABLE.front_y,981);
+const bytes=await readFile(new URL('./frames/'+ART.filename,import.meta.url));assert.equal(createHash('sha256').update(bytes).digest('hex'),ART.sha256);assert.equal(bytes.readUInt32BE(16),1920);assert.equal(bytes.readUInt32BE(20),1080);assert.equal(bytes[25],6);
+const code=await readFile(new URL('./s08_f000_scene.js',import.meta.url),'utf8');assert.ok(!code.includes('charLayer('));assert.ok(!code.includes('pose(t)'));assert.ok(!code.includes('flameShape('));assert.ok(!code.includes("from './contract.mjs'"));
+console.log(JSON.stringify({status:'passed',frame_count:1,time:0,canvas:[1920,1080],asset_sha256:ART.sha256,lamp_only_dx:35,original_table_front_y:981,strict_nonzero_time_rejected:true,actual_canvas_renders_performed:0,visual_status:'pending actual cloud Canvas frame; original table versus new elbow tips is intentionally unresolved'},null,2));
