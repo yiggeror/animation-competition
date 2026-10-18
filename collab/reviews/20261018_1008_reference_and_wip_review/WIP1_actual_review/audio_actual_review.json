@@ -1,0 +1,84 @@
+{
+  "source_commit": "98745bd8fb5aa0407978334b99c9ecdd651b9d39",
+  "verified_existing_independent_master": "400530a rebuilt; current audio code Git blobs and ordered EDL ids/durations unchanged",
+  "audio_source_checks": [
+    {
+      "path": "audio/build.py",
+      "git_blob": "65c5044057fe8eed36496e05c09d4b31bba06f6c",
+      "current_git_blob": "65c5044057fe8eed36496e05c09d4b31bba06f6c",
+      "same": true
+    },
+    {
+      "path": "audio/demo.py",
+      "git_blob": "b1b85cd8ab6d20892d1c62f629c576cf71bc3872",
+      "current_git_blob": "b1b85cd8ab6d20892d1c62f629c576cf71bc3872",
+      "same": true
+    },
+    {
+      "path": "audio/inst.py",
+      "git_blob": "63bc63cd91cd6e150a8f115dd0fd3d83971a4161",
+      "current_git_blob": "63bc63cd91cd6e150a8f115dd0fd3d83971a4161",
+      "same": true
+    },
+    {
+      "path": "audio/score.py",
+      "git_blob": "e7b3eda650520491b02f8edf59581ed1730bf9a4",
+      "current_git_blob": "e7b3eda650520491b02f8edf59581ed1730bf9a4",
+      "same": true
+    },
+    {
+      "path": "audio/sfx.py",
+      "git_blob": "98db5abd10ba12ef438f883802697fd0cb6aabd0",
+      "current_git_blob": "98db5abd10ba12ef438f883802697fd0cb6aabd0",
+      "same": true
+    }
+  ],
+  "edl_timing_equal": true,
+  "master_sr": 48000,
+  "master_sha256": "3960bef7c189bcba99444ecd17ab8dffbb21c66c66f78398ef776a285a46a163",
+  "clips": {
+    "S02a": {
+      "start_s": 6,
+      "end_s": 8.5,
+      "master_start_sample": 288000,
+      "master_end_exclusive_sample": 408000,
+      "pcm_samples": 120000,
+      "pcm_max_abs_vs_verified_master": 3,
+      "pcm_exact_vs_verified_master": false,
+      "decoded_aac_samples": 120832,
+      "reference_aac_decoded_samples": 120832,
+      "aac_reference_sample_compare_max_abs": 847,
+      "aac_reference_exact": false,
+      "aac_reference_corr": 0.9998972754205127,
+      "pcm_peak": 19197,
+      "aac_not_a_listening_claim": true,
+      "aac_mux_reference_exact": false,
+      "aac_mux_reference_max_abs": 847,
+      "aac_mux_first_last_diff": [
+        961,
+        95000
+      ],
+      "additional_independent_master_cut_aac_exact": false,
+      "additional_independent_master_cut_aac_max_abs": 847
+    },
+    "S03": {
+      "start_s": 8.5,
+      "end_s": 12.5,
+      "master_start_sample": 408000,
+      "master_end_exclusive_sample": 600000,
+      "pcm_samples": 192000,
+      "pcm_max_abs_vs_verified_master": 3,
+      "pcm_exact_vs_verified_master": false,
+      "decoded_aac_samples": 192512,
+      "reference_aac_decoded_samples": 192512,
+      "aac_reference_sample_compare_max_abs": 0,
+      "aac_reference_exact": true,
+      "aac_reference_corr": 1.0,
+      "pcm_peak": 14162,
+      "aac_not_a_listening_claim": true,
+      "aac_mux_reference_exact": true,
+      "aac_mux_reference_max_abs": 0,
+      "aac_mux_first_last_diff": null
+    }
+  }
+}

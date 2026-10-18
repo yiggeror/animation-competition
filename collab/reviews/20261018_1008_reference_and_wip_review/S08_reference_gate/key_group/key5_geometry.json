@@ -1,0 +1,930 @@
+{
+  "registration": {
+    "status": "deterministic reference freeze proposal for Opus approval; not production approval",
+    "scene_canvas": [
+      1920,
+      1080
+    ],
+    "mother_canvas": [
+      1536,
+      1024
+    ],
+    "mother_to_scene_matrix": [
+      [
+        0.9,
+        0,
+        265
+      ],
+      [
+        0,
+        0.9,
+        250
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "reason": "uniform scale; no anisotropic squeeze, flip or new portrait. Place identity head in medium shot and reserve reach to lamp. Art-direction choice, not fitted camera calibration.",
+    "source_hidden_hip_assumption": [
+      450,
+      920
+    ],
+    "scene_hidden_hip_assumption": [
+      670,
+      1078
+    ],
+    "hip_uncertainty_scene_px": 60,
+    "shoulder_uncertainty_scene_px": {
+      "R": 27,
+      "L_hidden": 45
+    },
+    "fixed_equal_arm_envelope_scene_px": {
+      "upper": 333.0,
+      "forearm": 301.5,
+      "origin": "preparatory U370/F335 source-equivalent proxy, uniformly scaled 0.9"
+    },
+    "projected_lengths_may_shorten": true,
+    "depth_status": "Not measured. Per-segment depth magnitude sqrt(L^2-lxy^2) is only a feasibility witness. No claim of physical 3D reconstruction or scene collision proof.",
+    "external_static_anchors": {
+      "table_front_left": [
+        764,
+        981
+      ],
+      "lamp_base": [
+        1380,
+        965.6
+      ]
+    },
+    "cloth_rule": "A/B/C are body material points, transformed around moving hip with torso; NEVER fixed screen anchors.",
+    "native_code_reference_canvas": [
+      1254,
+      706
+    ],
+    "native_to_scene_before_camera": "x=1920*x/1254; y=1080*y/706; then inverse camera. Header is overlay, not a letterbox offset.",
+    "camera_after_F82": "source code: q=clamp((f/24-3.4)/2.6), u=q*q*(3-2*q); fit=1+.03*u; center=[960+10*u,540]; screen=(scene-center)*fit+[960,540]. Diagrams use scene coordinates, no push baked in."
+  },
+  "states": [
+    {
+      "state": "d01",
+      "frame": 0,
+      "hold": 3,
+      "end_inclusive": 2,
+      "action": "左手托火柴盒、右手捏火柴，看着手",
+      "causal_contact_gate": "左掌托盒；右指捏火柴尾，眼落手部",
+      "reference": "sources/collab/keyposes/20261018_opening_frames/S08/S08_d01_f000.jpg",
+      "space": "pre-camera 1920x1080 scene px",
+      "torso_angle_delta_radians": 0,
+      "hidden_hip": [
+        670,
+        1078
+      ],
+      "body_landmarks": {
+        "R_shoulder": [
+          702.4000000000001,
+          639.7
+        ],
+        "R_elbow": [
+          906.7,
+          829.6
+        ],
+        "R_wrist": [
+          1166.8000000000002,
+          691.0
+        ],
+        "R_pinch": [
+          1289.2,
+          625.3
+        ],
+        "L_shoulder_hidden": [
+          831.1,
+          668.5
+        ],
+        "L_elbow": [
+          994.9,
+          896.2
+        ],
+        "L_wrist": [
+          1187.5,
+          890.8000000000001
+        ],
+        "L_palm": [
+          1305.4,
+          879.1
+        ],
+        "head_center": [
+          867.1,
+          452.5
+        ],
+        "mouth": [
+          958.0,
+          547.0
+        ],
+        "match_head": [
+          1359.4,
+          613.6
+        ],
+        "cloth_A": [
+          599.8,
+          969.1
+        ],
+        "cloth_B": [
+          796.9,
+          976.3000000000001
+        ],
+        "cloth_C": [
+          674.5,
+          1015.0
+        ]
+      },
+      "arms": {
+        "R_near_no_bangle": {
+          "shoulder": [
+            702.4000000000001,
+            639.7
+          ],
+          "elbow": [
+            632.4000000000001,
+            905.0
+          ],
+          "wrist": [
+            812.3066392949726,
+            917.5858678374801
+          ],
+          "upper_projected": 274.37946351722456,
+          "forearm_projected": 180.34634160867765,
+          "upper_depth_magnitude_assumed": 188.69263366650017,
+          "forearm_depth_magnitude_assumed": 241.61425261843755,
+          "reach_ratio": 0.47097099703738154,
+          "projection_branch": "elbow down; reduced projected length when table clearance needs foreshortening",
+          "bangle": false
+        },
+        "L_far_bangle": {
+          "shoulder": [
+            831.1,
+            668.5
+          ],
+          "elbow": [
+            761.1,
+            863.2220548897529
+          ],
+          "wrist": [
+            859.4882159037719,
+            820.9515074816248
+          ],
+          "upper_projected": 206.92191440368987,
+          "forearm_projected": 107.08426685050439,
+          "upper_depth_magnitude_assumed": 260.90672919553464,
+          "forearm_depth_magnitude_assumed": 281.8425265872593,
+          "reach_ratio": 0.24440045623287823,
+          "projection_branch": "elbow down; reduced projected length when table clearance needs foreshortening",
+          "bangle": true
+        }
+      },
+      "left_contact": [
+        937.4882159037719,
+        848.9515074816248
+      ],
+      "left_ownership": "support_box",
+      "box": {
+        "center": [
+          932,
+          840
+        ],
+        "angle": -0.55,
+        "owner": "L",
+        "width": 72.8,
+        "height": 21
+      },
+      "match": {
+        "head": [
+          899,
+          867
+        ],
+        "pinch_or_rest_tail": [
+          891.4083255298559,
+          929.5409184353681
+        ],
+        "angle": -1.45,
+        "length": 63,
+        "owner": "R",
+        "flame_on": false,
+        "smoke_on": false
+      },
+      "lamp": {
+        "base": [
+          1380,
+          965.6
+        ],
+        "wick": [
+          1380,
+          794.5729729729729
+        ],
+        "lever": [
+          1205.1968857113977,
+          829.1229197015015
+        ],
+        "lift": 0,
+        "glass_bottom_y": 814.2486486486486,
+        "wick_flame_on": false,
+        "wick_flame_root": [
+          1380,
+          794.5729729729729
+        ],
+        "independent_wick_flame_required": false
+      },
+      "gaze": "match",
+      "safety_scope": "2D construction feasibility only; final silhouette, depth ordering and actual finger contact need artwork inspection",
+      "original_source_copy": "sources/original_sources/collab/keyposes/20261018_opening_frames/S08/S08_d01_f000.jpg"
+    },
+    {
+      "state": "d12",
+      "frame": 27,
+      "hold": 3,
+      "end_inclusive": 29,
+      "action": "灯罩升到位",
+      "causal_contact_gate": "罩到高位；左指继续保持",
+      "reference": "sources/collab/keyposes/20261018_opening_frames/S08/S08_d12_f027.jpg",
+      "space": "pre-camera 1920x1080 scene px",
+      "torso_angle_delta_radians": 0.025,
+      "hidden_hip": [
+        670.0,
+        1078.0
+      ],
+      "body_landmarks": {
+        "R_shoulder": [
+          713.3462341567513,
+          640.6468772439962
+        ],
+        "R_elbow": [
+          912.8353882476733,
+          835.5945045701279
+        ],
+        "R_wrist": [
+          1176.318750304763,
+          703.5396374917323
+        ],
+        "R_pinch": [
+          1300.3228312085052,
+          640.9198489323792
+        ],
+        "L_shoulder_hidden": [
+          841.2860924990904,
+          672.65504256696
+        ],
+        "L_elbow": [
+          999.3430006152705,
+          904.3784634737674
+        ],
+        "L_wrist": [
+          1192.01780218791,
+          903.7946493390522
+        ],
+        "L_palm": [
+          1310.1734298890178,
+          895.045498376971
+        ],
+        "head_center": [
+          882.6742806025936,
+          457.6224453043378
+        ],
+        "mouth": [
+          971.1836219181146,
+          554.365178881039
+        ],
+        "match_head": [
+          1370.793364383262,
+          630.9783221851665
+        ],
+        "cloth_A": [
+          602.5441527725578,
+          967.3792122843632
+        ],
+        "cloth_B": [
+          799.4025809799128,
+          979.5039491363381
+        ],
+        "cloth_C": [
+          676.0734297658676,
+          1015.132174756247
+        ]
+      },
+      "arms": {
+        "R_near_no_bangle": {
+          "shoulder": [
+            713.3462341567513,
+            640.6468772439962
+          ],
+          "elbow": [
+            696.8554635373968,
+            905.0
+          ],
+          "wrist": [
+            955.9977567688607,
+            819.1359902777192
+          ],
+          "upper_projected": 264.866983647398,
+          "forearm_projected": 272.9969895563868,
+          "upper_depth_magnitude_assumed": 201.82784984617214,
+          "forearm_depth_magnitude_assumed": 127.96442354478862,
+          "reach_ratio": 0.4747481420011215,
+          "projection_branch": "elbow down; reduced projected length when table clearance needs foreshortening",
+          "bangle": false
+        },
+        "L_far_bangle": {
+          "shoulder": [
+            841.2860924990904,
+            672.65504256696
+          ],
+          "elbow": [
+            900.116345181621,
+            905.0
+          ],
+          "wrist": [
+            1110.9532049682696,
+            784.8943738423919
+          ],
+          "upper_projected": 239.67723687336596,
+          "forearm_projected": 242.64695110263804,
+          "upper_depth_magnitude_assumed": 231.17919916105865,
+          "forearm_depth_magnitude_assumed": 178.95448337662285,
+          "reach_ratio": 0.4603506441254217,
+          "projection_branch": "elbow down; reduced projected length when table clearance needs foreshortening",
+          "bangle": true
+        }
+      },
+      "left_contact": [
+        1198.9532049682696,
+        766.8943738423919
+      ],
+      "left_ownership": "hold_lever",
+      "box": {
+        "center": [
+          946.0,
+          939.6999999999999
+        ],
+        "angle": 0.0,
+        "owner": "table",
+        "width": 72.8,
+        "height": 21
+      },
+      "match": {
+        "head": [
+          1048.0,
+          731.0
+        ],
+        "pinch_or_rest_tail": [
+          1031.147573796651,
+          791.7041656812831
+        ],
+        "angle": -1.3,
+        "length": 63,
+        "owner": "R",
+        "flame_on": true,
+        "smoke_on": false
+      },
+      "lamp": {
+        "base": [
+          1380,
+          965.6
+        ],
+        "wick": [
+          1380,
+          794.5729729729729
+        ],
+        "lever": [
+          1198.9532049682696,
+          766.8943738423919
+        ],
+        "lift": 1.0,
+        "glass_bottom_y": 731.0054054054053,
+        "wick_flame_on": false,
+        "wick_flame_root": [
+          1380,
+          794.5729729729729
+        ],
+        "independent_wick_flame_required": false
+      },
+      "gaze": "match",
+      "safety_scope": "2D construction feasibility only; final silhouette, depth ordering and actual finger contact need artwork inspection",
+      "original_source_copy": "sources/original_sources/collab/keyposes/20261018_opening_frames/S08/S08_d12_f027.jpg"
+    },
+    {
+      "state": "d16",
+      "frame": 41,
+      "hold": 2,
+      "end_inclusive": 42,
+      "action": "火柴头贴住灯芯",
+      "causal_contact_gate": "药头接触芯帽，左杆仍高，玻璃不穿手",
+      "reference": "sources/collab/keyposes/20261018_opening_frames/S08/S08_d16_f041.jpg",
+      "space": "pre-camera 1920x1080 scene px",
+      "torso_angle_delta_radians": 0.24,
+      "hidden_hip": [
+        670.0,
+        1078.0
+      ],
+      "body_landmarks": {
+        "R_shoulder": [
+          805.6564115482189,
+          659.9641307185946
+        ],
+        "R_elbow": [
+          958.9610310519756,
+          892.9838587220586
+        ],
+        "R_wrist": [
+          1244.5516223337895,
+          820.182868541265
+        ],
+        "R_pinch": [
+          1379.0604530119408,
+          785.4607650681679
+        ],
+        "L_shoulder_hidden": [
+          923.8217732705737,
+          718.5309924155052
+        ],
+        "L_elbow": [
+          1028.8020455138774,
+          978.6403394980771
+        ],
+        "L_wrist": [
+          1217.1653336530849,
+          1019.1766402837422
+        ],
+        "L_palm": [
+          1334.4672016173367,
+          1035.8371256337327
+        ],
+        "head_center": [
+          1010.1337076735077,
+          517.2792843988437
+        ],
+        "mouth": [
+          1075.965431390193,
+          630.677891764587
+        ],
+        "match_head": [
+          1450.0294995757506,
+          790.782835137584
+        ],
+        "cloth_A": [
+          627.6978901833024,
+          955.5345701634292
+        ],
+        "cloth_B": [
+          817.4371461163621,
+          1009.379391251152
+        ],
+        "cloth_C": [
+          689.3462863517436,
+          1017.8753694032442
+        ]
+      },
+      "arms": {
+        "R_near_no_bangle": {
+          "shoulder": [
+            805.6564115482189,
+            659.9641307185946
+          ],
+          "elbow": [
+            965.8817207568629,
+            905.0
+          ],
+          "wrist": [
+            1252.6060755900203,
+            858.6557357802965
+          ],
+          "upper_projected": 292.7707754293444,
+          "forearm_projected": 290.4455998643395,
+          "upper_depth_magnitude_assumed": 158.6640257099901,
+          "forearm_depth_magnitude_assumed": 80.89254303978822,
+          "reach_ratio": 0.7708811194033024,
+          "projection_branch": "elbow down; reduced projected length when table clearance needs foreshortening",
+          "bangle": false
+        },
+        "L_far_bangle": {
+          "shoulder": [
+            923.8217732705737,
+            718.5309924155052
+          ],
+          "elbow": [
+            965.3879675084836,
+            905.0
+          ],
+          "wrist": [
+            1110.9532049682696,
+            784.8943738423919
+          ],
+          "upper_projected": 191.04564714478585,
+          "forearm_projected": 188.71830804517876,
+          "upper_depth_magnitude_assumed": 272.7463303273391,
+          "forearm_depth_magnitude_assumed": 235.13326053233095,
+          "reach_ratio": 0.3129242311068071,
+          "projection_branch": "elbow down; reduced projected length when table clearance needs foreshortening",
+          "bangle": true
+        }
+      },
+      "left_contact": [
+        1198.9532049682696,
+        766.8943738423919
+      ],
+      "left_ownership": "hold_lever",
+      "box": {
+        "center": [
+          946.0,
+          939.6999999999999
+        ],
+        "angle": 0.0,
+        "owner": "table",
+        "width": 72.8,
+        "height": 21
+      },
+      "match": {
+        "head": [
+          1380.0,
+          794.5729729729729
+        ],
+        "pinch_or_rest_tail": [
+          1326.2909551102512,
+          827.5022683956045
+        ],
+        "angle": -0.55,
+        "length": 63,
+        "owner": "R",
+        "flame_on": true,
+        "smoke_on": false
+      },
+      "lamp": {
+        "base": [
+          1380,
+          965.6
+        ],
+        "wick": [
+          1380,
+          794.5729729729729
+        ],
+        "lever": [
+          1198.9532049682696,
+          766.8943738423919
+        ],
+        "lift": 1.0,
+        "glass_bottom_y": 731.0054054054053,
+        "wick_flame_on": false,
+        "wick_flame_root": [
+          1380,
+          794.5729729729729
+        ],
+        "independent_wick_flame_required": false
+      },
+      "gaze": "wick_lamp",
+      "safety_scope": "2D construction feasibility only; final silhouette, depth ordering and actual finger contact need artwork inspection",
+      "original_source_copy": "sources/original_sources/collab/keyposes/20261018_opening_frames/S08/S08_d16_f041.jpg"
+    },
+    {
+      "state": "d26",
+      "frame": 82,
+      "hold": 6,
+      "end_inclusive": 87,
+      "action": "灯罩落定（'叮'），灯光一亮",
+      "causal_contact_gate": "玻璃落座、叮声、暖光稳定；两手清空",
+      "reference": "sources/collab/keyposes/20261018_opening_frames/S08/S08_d26_f082.jpg",
+      "space": "pre-camera 1920x1080 scene px",
+      "torso_angle_delta_radians": 0.18,
+      "hidden_hip": [
+        670.0,
+        1078.0
+      ],
+      "body_landmarks": {
+        "R_shoulder": [
+          780.345197678874,
+          652.5818676299632
+        ],
+        "R_elbow": [
+          947.3467481219232,
+          875.9895267413233
+        ],
+        "R_wrist": [
+          1228.0579914929328,
+          786.1943829689465
+        ],
+        "R_pinch": [
+          1360.2427024642755,
+          743.4690721400877
+        ],
+        "L_shoulder_hidden": [
+          901.8098292260414,
+          703.9576720821645
+        ],
+        "L_elbow": [
+          1022.1983922356754,
+          957.3039250571699
+        ],
+        "L_wrist": [
+          1212.6534471631671,
+          986.4722649579278
+        ],
+        "L_palm": [
+          1330.7432645519689,
+          996.0688804592114
+        ],
+        "head_center": [
+          975.8985900263917,
+          497.89249908325996
+        ],
+        "mouth": [
+          1048.4116870120915,
+          607.139516276145
+        ],
+        "match_head": [
+          1431.4031757070838,
+          744.5259769889597
+        ],
+        "cloth_A": [
+          620.4304933123461,
+          958.2915458008807
+        ],
+        "cloth_B": [
+          813.0570722322188,
+          1000.6619493111853
+        ],
+        "cloth_C": [
+          685.7061597433735,
+          1016.8234804347645
+        ]
+      },
+      "arms": {
+        "R_near_no_bangle": {
+          "shoulder": [
+            780.345197678874,
+            652.5818676299632
+          ],
+          "elbow": [
+            710.345197678874,
+            861.4294330467585
+          ],
+          "wrist": [
+            820.0,
+            900.0
+          ],
+          "upper_projected": 220.26644224784354,
+          "forearm_projected": 116.24054502272305,
+          "upper_depth_magnitude_assumed": 249.74325700502388,
+          "forearm_depth_magnitude_assumed": 278.1912753714974,
+          "reach_ratio": 0.3949185311826981,
+          "projection_branch": "elbow down; reduced projected length when table clearance needs foreshortening",
+          "bangle": false
+        },
+        "L_far_bangle": {
+          "shoulder": [
+            901.8098292260414,
+            703.9576720821645
+          ],
+          "elbow": [
+            847.1489248957434,
+            905.0
+          ],
+          "wrist": [
+            1012.0,
+            780.0
+          ],
+          "upper_projected": 208.340663522099,
+          "forearm_projected": 206.88372812531495,
+          "upper_depth_magnitude_assumed": 259.7752257686855,
+          "forearm_depth_magnitude_assumed": 219.32025222712738,
+          "reach_ratio": 0.21100346597549705,
+          "projection_branch": "elbow down; reduced projected length when table clearance needs foreshortening",
+          "bangle": true
+        }
+      },
+      "left_contact": [
+        1100.0,
+        762.0
+      ],
+      "left_ownership": "empty_clear",
+      "box": {
+        "center": [
+          946.0,
+          939.6999999999999
+        ],
+        "angle": 0.0,
+        "owner": "table",
+        "width": 72.8,
+        "height": 21
+      },
+      "match": {
+        "head": [
+          1035.6,
+          946.0
+        ],
+        "pinch_or_rest_tail": [
+          972.664981966751,
+          948.8606826378749
+        ],
+        "angle": -0.04542327942157701,
+        "length": 63,
+        "owner": "table",
+        "flame_on": false,
+        "smoke_on": true
+      },
+      "lamp": {
+        "base": [
+          1380,
+          965.6
+        ],
+        "wick": [
+          1380,
+          794.5729729729729
+        ],
+        "lever": [
+          1205.1968857113977,
+          829.1229197015015
+        ],
+        "lift": 0.0,
+        "glass_bottom_y": 814.2486486486486,
+        "wick_flame_on": true,
+        "wick_flame_root": [
+          1380,
+          794.5729729729729
+        ],
+        "independent_wick_flame_required": true
+      },
+      "gaze": "wick_lamp",
+      "safety_scope": "2D construction feasibility only; final silhouette, depth ordering and actual finger contact need artwork inspection",
+      "original_source_copy": "sources/original_sources/collab/keyposes/20261018_opening_frames/S08/S08_d26_f082.jpg"
+    },
+    {
+      "state": "d28",
+      "frame": 96,
+      "hold": 10,
+      "end_inclusive": 105,
+      "action": "坐回去，看着灯",
+      "causal_contact_gate": "坐回看灯；脚和坐面支持待补视野确认",
+      "reference": "sources/collab/keyposes/20261018_opening_frames/S08/S08_d28_f096.jpg",
+      "space": "pre-camera 1920x1080 scene px",
+      "torso_angle_delta_radians": -0.015,
+      "hidden_hip": [
+        640.0,
+        1090.0
+      ],
+      "body_landmarks": {
+        "R_shoulder": [
+          665.8221016093197,
+          651.2633260502629
+        ],
+        "R_elbow": [
+          872.9475114727135,
+          838.0775776182874
+        ],
+        "R_wrist": [
+          1130.9393287329808,
+          695.5918161305342
+        ],
+        "R_pinch": [
+          1252.3400959470005,
+          628.0632760911747
+        ],
+        "L_shoulder_hidden": [
+          794.9396069309764,
+          678.1296585039479
+        ],
+        "L_elbow": [
+          962.1365516966803,
+          903.3471348707126
+        ],
+        "L_wrist": [
+          1154.6338876404088,
+          895.0588506956033
+        ],
+        "L_palm": [
+          1272.3451307202783,
+          881.5917332389276
+        ],
+        "head_center": [
+          827.6956785055465,
+          461.6139782980986
+        ],
+        "mouth": [
+          920.0028992916352,
+          554.7398983781078
+        ],
+        "match_head": [
+          1322.3567051762534,
+          615.311631803551
+        ],
+        "cloth_A": [
+          568.1744586074838,
+          982.165211533235
+        ],
+        "cloth_B": [
+          765.3602812232841,
+          986.4080124159252
+        ],
+        "cloth_C": [
+          643.5545291965934,
+          1026.9395898983319
+        ]
+      },
+      "arms": {
+        "R_near_no_bangle": {
+          "shoulder": [
+            665.8221016093197,
+            651.2633260502629
+          ],
+          "elbow": [
+            595.8221016093197,
+            905.0
+          ],
+          "wrist": [
+            780.0,
+            921.0
+          ],
+          "upper_projected": 263.21531054837067,
+          "forearm_projected": 184.87157232957088,
+          "upper_depth_magnitude_assumed": 203.97720532678346,
+          "forearm_depth_magnitude_assumed": 238.16958610282765,
+          "reach_ratio": 0.4616342369798021,
+          "projection_branch": "elbow down; reduced projected length when table clearance needs foreshortening",
+          "bangle": false
+        },
+        "L_far_bangle": {
+          "shoulder": [
+            794.9396069309764,
+            678.1296585039479
+          ],
+          "elbow": [
+            724.9396069309764,
+            777.855584772022
+          ],
+          "wrist": [
+            740.3785739903677,
+            925
+          ],
+          "upper_projected": 121.84112758024422,
+          "forearm_projected": 147.9521565799045,
+          "upper_depth_magnitude_assumed": 309.90924418283277,
+          "forearm_depth_magnitude_assumed": 262.70213048880174,
+          "reach_ratio": 0.3984676931395606,
+          "projection_branch": "elbow down; reduced projected length when table clearance needs foreshortening",
+          "bangle": true
+        }
+      },
+      "left_contact": [
+        830.0,
+        919.0
+      ],
+      "left_ownership": "empty_clear",
+      "box": {
+        "center": [
+          946.0,
+          939.6999999999999
+        ],
+        "angle": 0.0,
+        "owner": "table",
+        "width": 72.8,
+        "height": 21
+      },
+      "match": {
+        "head": [
+          1035.6,
+          946.0
+        ],
+        "pinch_or_rest_tail": [
+          972.664981966751,
+          948.8606826378749
+        ],
+        "angle": -0.04542327942157701,
+        "length": 63,
+        "owner": "table",
+        "flame_on": false,
+        "smoke_on": true
+      },
+      "lamp": {
+        "base": [
+          1380,
+          965.6
+        ],
+        "wick": [
+          1380,
+          794.5729729729729
+        ],
+        "lever": [
+          1205.1968857113977,
+          829.1229197015015
+        ],
+        "lift": 0.0,
+        "glass_bottom_y": 814.2486486486486,
+        "wick_flame_on": true,
+        "wick_flame_root": [
+          1380,
+          794.5729729729729
+        ],
+        "independent_wick_flame_required": true
+      },
+      "gaze": "wick_lamp",
+      "safety_scope": "2D construction feasibility only; final silhouette, depth ordering and actual finger contact need artwork inspection",
+      "original_source_copy": "sources/original_sources/collab/keyposes/20261018_opening_frames/S08/S08_d28_f096.jpg"
+    }
+  ]
+}
