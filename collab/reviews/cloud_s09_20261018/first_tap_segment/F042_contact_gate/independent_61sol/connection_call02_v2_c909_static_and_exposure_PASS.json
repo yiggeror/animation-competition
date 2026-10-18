@@ -1,0 +1,43 @@
+{
+  "status": "PASS_LIMITED_STATIC042_AND_TWO_HOLD_ISOLATED_LAYER_REVIEW",
+  "candidate_sha256": "c909ea491e345021299dd7deada41b2a1748b6c12fc2c743e58242195d8a0270",
+  "video_sha256": "10ddf0abc8dba338207410db0489ed4fea0e813fc56aac5dee166f9518ec53e6",
+  "actually_viewed": [
+    "connection_call02/candidate/F042_complete_joint_pixels_v2_PENDING.png",
+    "connection_call02/qa/refined_actual_joint_comparison.png",
+    "exposure/actual_decoded_0_4_5_6_contact_sheet.png"
+  ],
+  "visual_findings": [
+    "Previous duplicate cuff arc, wrist V and long pointed obsolete ink are removed.",
+    "Single complete near arm, elbow, wrist and cuff attachment read continuously. Foreground near arm and far sleeve/palm ownership readable.",
+    "Tailcap reaches fixed palm pad, grip and rigid prop shape remain readable.",
+    "Decoded contact sheet frames0/4 show separated037 and5/6 show contact042, with stable head, receiving palm and prop design."
+  ],
+  "nonblocking_note": "At extreme native magnification minor approx1px ink/AA stair steps remain; no clear detached limb, double contour or cut wrist at displayed layer scale.",
+  "independent_pixel_checks": {
+    "outside_adoption_RGBA_changes": 0,
+    "adopted_vs_aligned_native_RGBA_mismatch": 0,
+    "postreturn_actual_grip_fingers_and_whole_torch_PROTECTED.png": 0,
+    "postreturn_outer_near_ruffle_material_PROTECTED.png": 0
+  },
+  "independent_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "24/1",
+        "duration": "0.291667",
+        "nb_frames": "7"
+      }
+    ]
+  },
+  "reported_full7_decode_check": "Read actual_decode_checks.json:037x5 then042x2,24fps,no audio,all7 classifications correct,maxMAE1.2871314380787038. Actual-view evidence is decoded0/4/5/6 sheet, not claimed realtime playback.",
+  "limits": [
+    "Pass only requested static042 and7frame isolated character-layer review.",
+    "Not Astra acceptance, entire-shot readiness, full two-tap causality, scene composition, or synchronized sound review.",
+    "No image generation or root asset/script modification by reviewer."
+  ]
+}

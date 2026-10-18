@@ -1,0 +1,61 @@
+{
+  "candidate": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/F042_contact_gate/whole_arm_trial/F042_whole_arm_06deg_UNPASSED.png",
+  "sha256": "e58390103486c80f369b5bc911c8351373f9d993013cebba73ef1547e8af9bc6",
+  "status": "NOT_PASSED_VISIBLE_ATTACHMENT_ARTIFACTS",
+  "actually_viewed": [
+    "whole_arm_trial/three_whole_arm_trials_actual_attachments.png",
+    "whole_arm_trial/F042_whole_arm_06deg_UNPASSED.png",
+    "whole_arm_trial/native_complete_near_arm_source.png",
+    "../whole_far_puff_zero_call/candidate/F037_whole_native_far_puff_PENDING.png (root crop comparison)"
+  ],
+  "facts": [
+    "Single complete near arm and elbow remain readable; no clear torso penetration.",
+    "Original receiving palm, rigid flashlight and cap-to-palm adjacency are visually maintained.",
+    "Visible far sleeve ruffle appears attached, with near arm in front."
+  ],
+  "blockers": [
+    {
+      "region_approx_raw": [
+        691,
+        644,
+        714,
+        680
+      ],
+      "issue": "Additional parallel black arc inside original near cuff; paired source037/source042 crop confirms the doubled contour is introduced in candidate."
+    },
+    {
+      "region_approx_raw": [
+        1048,
+        612,
+        1055,
+        620
+      ],
+      "issue": "Lower wrist join has a visible V-shaped contour interruption and small flesh projection; approximately4-6px, not only1px edge AA."
+    }
+  ],
+  "secondary_cleanup": [
+    {
+      "region_approx_raw": [
+        717,
+        699,
+        772,
+        718
+      ],
+      "issue": "Residual detached lower upper-arm ink noted in preceding actual-view audit; classify source ownership before removal."
+    },
+    {
+      "region_approx_raw": [
+        781,
+        627,
+        789,
+        631
+      ],
+      "issue": "Short residual black stroke near upper arm origin."
+    }
+  ],
+  "limits": [
+    "Approximate manually read coordinates, not anatomical measurement.",
+    "No acceptance of full042, finger topology, motion exposure, or Astra lock.",
+    "No image generation, source edits or root script modifications."
+  ]
+}

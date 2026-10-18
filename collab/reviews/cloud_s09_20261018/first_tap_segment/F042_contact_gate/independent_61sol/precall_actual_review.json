@@ -1,0 +1,32 @@
+{
+  "status": "PRECALL_REVIEW_NO_BLOCKER_SINGLE_F042_ONLY",
+  "actually_viewed": [
+    "qa/037_042_actual_preposition_and_complete_domain.png",
+    "qa/actual_cap_palm_contact_PREPOSITION.png"
+  ],
+  "read": [
+    "prepare.py",
+    "preparation.json",
+    "requests/arguments.json"
+  ],
+  "editable_pixels": 94810,
+  "hard_overlap_pixels": {
+    "complete_grip_flashlight": 0,
+    "head_neck_collar": 0,
+    "near_cuff_root": 0,
+    "fixed_receiver_palm_lower_forearm": 0,
+    "far_puff_visible_outside_new_arm": 0
+  },
+  "retained_old_arm_outside_edit_except_anchored_root_or_new_rigid": 0,
+  "visual_contact": "Tailcap is adjacent to the upper-left flesh pad of the fixed palm, not fingertip or nail. This is a drawing starting pose, not final generated contact acceptance.",
+  "arm_domain": "Whole raised old arm, wrist disconnection, future elbow/forearm and exposed garment are editable; no isolated wrist-hole repair assumption.",
+  "layer_rule": "Rounded far puff stays a source back layer. New foreground near arm may occlude it; postcomposition must use visible ownership, never freeze hidden sleeve alpha over the new foreground.",
+  "next_gate": "One native042 return then actual PNG and037x5→042x2 exposure review. No044/048.",
+  "new_image_calls": 0,
+  "root_files_modified": false,
+  "snapshot_sha256": {
+    "reference/F042_hand_torch_contact_PREPOSITION_NOT_ART.png": "1e8196746c6a0aa3fb67241f9440632d71719cde185d9e060bdb8b6a5dcd1a8f",
+    "masks/near_arm_and_vacated_WHITE_EDIT.png": "5e401a32339fc1d824213900fa89948c107f4125eb91bc2553ab1571e23b7100",
+    "requests/arguments.json": "1719637750d8dffc5c114bd44e6d4d5ba2797ccff2b6824bef4d1b6cfc4cb995"
+  }
+}

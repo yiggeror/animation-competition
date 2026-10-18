@@ -1,0 +1,50 @@
+{
+  "status": "PRECALL_BLOCKED_INCOMPLETE_OBSOLETE_INK_COVERAGE",
+  "actual_view": "connection_call02/qa/actual_complete_connections_input_and_mask.png and direct source/mask closeups",
+  "mask_sha256": "9714adf53768c3ae346bc1b535fe09d3f255878e74eeb8647333ec3de71c0f5c",
+  "mask_pixels": 5096,
+  "main_connections": "Cuff inner arc and wrist notch are substantially covered; original ruffle and hand/torch hard protection retained.",
+  "blockers": [
+    {
+      "approx_raw_xyxy": [
+        730,
+        709,
+        772,
+        720
+      ],
+      "description": "Long pointed obsolete upper-arm ink line remains mostly black-locked; edit region instead chiefly touches lower/current arm edge and adjacent cloth."
+    },
+    {
+      "approx_raw_xyxy": [
+        781,
+        634,
+        788,
+        637
+      ],
+      "description": "Old short black stroke left end remains locked; only right tip reaches editable strip."
+    }
+  ],
+  "independent_uneditable_samples": [
+    [
+      756,
+      714
+    ],
+    [
+      764,
+      718
+    ],
+    [
+      770,
+      719
+    ],
+    [
+      781,
+      635
+    ],
+    [
+      785,
+      635
+    ]
+  ],
+  "requested_scope": "Correct only complete obsolete-ink and AA ownership; preserve current continuous arm contour. No expansion to full pose or generation by reviewer."
+}

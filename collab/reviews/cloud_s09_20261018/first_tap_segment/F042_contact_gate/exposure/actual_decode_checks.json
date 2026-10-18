@@ -1,0 +1,107 @@
+{
+  "status": "ACTUAL7FRAME_EXPOSURE_DECODED_SOURCE_ORDER_VERIFIED_VISUAL_REVIEW_PENDING",
+  "sources": {
+    "37": {
+      "path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/whole_far_puff_zero_call/candidate/F037_whole_native_far_puff_PENDING.png",
+      "sha256": "68ce16f14f9ea53f2c43c2c53f984a6a713b612f6aef28ab369780cb768695c9"
+    },
+    "42": {
+      "path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/F042_contact_gate/connection_call02/candidate/F042_complete_joint_pixels_v2_PENDING.png",
+      "sha256": "c909ea491e345021299dd7deada41b2a1748b6c12fc2c743e58242195d8a0270"
+    }
+  },
+  "sequence": [
+    37,
+    37,
+    37,
+    37,
+    37,
+    42,
+    42
+  ],
+  "fps": 24,
+  "no_tween": true,
+  "no_audio": true,
+  "isolated_actual_png_layer_not_full_scene_or_film": true,
+  "registration": {
+    "scale": 0.6297229219143576,
+    "translation_xy": [
+      241.2216624685139,
+      83.47607052896726
+    ],
+    "inverse_pillow_affine": [
+      1.588,
+      0,
+      -383.0600000000001,
+      0,
+      1.588,
+      -132.56
+    ]
+  },
+  "preview_crop_xyxy": [
+    280,
+    80,
+    1304,
+    656
+  ],
+  "video_sha256": "10ddf0abc8dba338207410db0489ed4fea0e813fc56aac5dee166f9518ec53e6",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "24/1",
+        "duration": "0.291667",
+        "nb_frames": "7"
+      }
+    ]
+  },
+  "all_decoded_frames": [
+    {
+      "clip_frame": 0,
+      "expected_source": 37,
+      "decoded_closest_source": 37,
+      "RGB_MAE": 1.271799045138889
+    },
+    {
+      "clip_frame": 1,
+      "expected_source": 37,
+      "decoded_closest_source": 37,
+      "RGB_MAE": 1.27130859375
+    },
+    {
+      "clip_frame": 2,
+      "expected_source": 37,
+      "decoded_closest_source": 37,
+      "RGB_MAE": 1.2714908854166667
+    },
+    {
+      "clip_frame": 3,
+      "expected_source": 37,
+      "decoded_closest_source": 37,
+      "RGB_MAE": 1.2714731626157407
+    },
+    {
+      "clip_frame": 4,
+      "expected_source": 37,
+      "decoded_closest_source": 37,
+      "RGB_MAE": 1.2718073640046297
+    },
+    {
+      "clip_frame": 5,
+      "expected_source": 42,
+      "decoded_closest_source": 42,
+      "RGB_MAE": 1.285601851851852
+    },
+    {
+      "clip_frame": 6,
+      "expected_source": 42,
+      "decoded_closest_source": 42,
+      "RGB_MAE": 1.2871314380787038
+    }
+  ],
+  "max_MAE": 1.2871314380787038,
+  "remaining_gate": "Actual visual near-arm/cuff/wrist/contact and037→042 anticipation/contact continuity review; not an entire-shot ready pass."
+}

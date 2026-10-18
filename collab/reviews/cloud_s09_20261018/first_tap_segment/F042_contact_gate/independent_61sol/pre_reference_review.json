@@ -1,0 +1,70 @@
+{
+  "status": "PRE_REFERENCE_RISK_REVIEW_ONLY_NEW042_INPUT_NOT_YET_REVIEWED",
+  "actually_viewed": {
+    "locked_F037": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/whole_far_puff_zero_call/candidate/F037_whole_native_far_puff_PENDING.png",
+    "locked_F031": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/pre_tap_segment/clothing_semantic_review/continuous_contour_delivery/candidate/F031_raw_clothing_and_contours_for_final_lock.png",
+    "historical_F042_technical_only": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/reference/F042_rigid_preposition_NOT_ART.png"
+  },
+  "sha256": {
+    "locked_F037": "68ce16f14f9ea53f2c43c2c53f984a6a713b612f6aef28ab369780cb768695c9",
+    "locked_F031": "4b59c62485cf382c3e2d411de3c8ca9fb4edee622dad31b41946362889d44da7",
+    "historical_F042_technical_only": "06f0e3ad5a828e6b547454d6434177b759f506038b991c81186faa49ccd1bb3c"
+  },
+  "authority_from_parent": "Astra locks037 a1d7f27; permits042x2 only. No044/048 and no resending037.",
+  "alpha128_scan": {
+    "min_F037_empty_rows": 91,
+    "min_after_down91_empty_rows": 0,
+    "sample_columns": [
+      {
+        "x": 1106,
+        "F037_cap_last_y": 622,
+        "fixed_palm_first_y": 714,
+        "empty_rows": 91,
+        "after_down91_empty_rows": 0
+      },
+      {
+        "x": 1107,
+        "F037_cap_last_y": 622,
+        "fixed_palm_first_y": 714,
+        "empty_rows": 91,
+        "after_down91_empty_rows": 0
+      },
+      {
+        "x": 1110,
+        "F037_cap_last_y": 623,
+        "fixed_palm_first_y": 715,
+        "empty_rows": 91,
+        "after_down91_empty_rows": 0
+      },
+      {
+        "x": 1119,
+        "F037_cap_last_y": 625,
+        "fixed_palm_first_y": 717,
+        "empty_rows": 91,
+        "after_down91_empty_rows": 0
+      },
+      {
+        "x": 1120,
+        "F037_cap_last_y": 625,
+        "fixed_palm_first_y": 717,
+        "empty_rows": 91,
+        "after_down91_empty_rows": 0
+      }
+    ]
+  },
+  "facts": [
+    "Locked037 has a complete suspended tailcap and an unchanged open far receiving palm.",
+    "Historical042 shows a wrist extraction/overlap seam and the historical sleeve shape; it is not a whole-pose template or new042 accepted art.",
+    "037→042 whole hand/torch down91raw equals031→042 down59raw only as a contact starting registration."
+  ],
+  "recommendations": [
+    "Judge an actual visible tailcap-to-palm-pad tangent/light compression. Avoid remaining air gap, penetration through palm skin, contact on fingernail/fingertips, or near-hand knuckles touching first.",
+    "Keep the entire flashlight plus complete gripping fingers, thumb, palm and wrist root one rigid source unit. Reconstruct near shoulder/upper arm/elbow/forearm/wrist connection as a whole; do not force the old elbow or bridge the moved wrist with a narrow patch.",
+    "Include old/new near-arm silhouettes, old contour AA and newly exposed garment in the semantic edit envelope; protect complete fixed receiving palm and visible far forearm.",
+    "Preserve the complete rounded far puff as a background layer. Permit correct new foreground near-arm occlusion. An invisible far-sleeve alpha pixel must never freeze the new near-arm pixel covering it.",
+    "Keep the near/torso/far depth order. Inspect lower flounce to far arm continuity, doubled occlusion lines, sleeve-tip islands, and old arm outlines after composition.",
+    "Review actual042 sourcePNG, material/hand protection, visible contact and037x5→042x2 exposure before accepting042. Raster adjacency alone does not establish anatomical contact."
+  ],
+  "new_image_calls": 0,
+  "root_inputs_or_scripts_changed": false
+}

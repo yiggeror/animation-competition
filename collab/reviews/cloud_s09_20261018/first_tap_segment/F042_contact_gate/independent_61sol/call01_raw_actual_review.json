@@ -1,0 +1,29 @@
+{
+  "status": "RAW_RETURN_ACTUALLY_VIEWED_NOT_PASSED_RIGID_ARM_REGISTRATION_CANDIDATE_PENDING",
+  "actually_viewed": [
+    "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/F042_contact_gate/originals/F042_call01_raw.png",
+    "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/F042_contact_gate/reference/F042_hand_torch_contact_PREPOSITION_NOT_ART.png"
+  ],
+  "raw_sha256": "a94f6f144ab04728bcb7ce62b939c47d46e708d101dee06317140e91049b51ac",
+  "actual_raw_size": [
+    1672,
+    941
+  ],
+  "raw_must_not_be_used_as_whole_pose": true,
+  "visible_facts": [
+    "One continuous near upper arm, one bent elbow and a continuous forearm into the gripping wrist are visible; no obvious detached arm or duplicated elbow.",
+    "Flashlight/gripping hand and the receiving palm are displaced relative to the preposition. Preserve the locked source hand/torch and receiver; do not adopt those native pixels.",
+    "Near cuff opening is around raw710/660; wrist transition roughly spans1045..1070/610..650. These are manual visual ranges, not measured joint centers."
+  ],
+  "registration_review_requirements": [
+    "Use ONE scale1 rotation+translation for the full native near-arm source. Match the target wrist cross-section position, tangent direction and width, not only its center.",
+    "After that same transform, check the entire proximal arm cross-section lies within the original visible cuff opening or is genuinely hidden by its original foreground material. Root-center proximity alone is insufficient.",
+    "If matching wrist leaves root outside cuff, do not move the cuff, independently shift proximal arm, stretch bones or patch a narrow skin bridge. Report the remaining endpoint/source gap.",
+    "Keep source near-arm ownership explicit; adjacent far-arm skin, far cuff and clothing must not be included merely because their colors/alpha connect.",
+    "Preserve the rounded far sleeve as back-layer source; apply new near-arm occlusion by actual visibility. Remove obsolete arm contours and restore exposed garment only from authorized source pixels.",
+    "Reinspect complete hand/wrist join, root/sleeve join, elbow shape, material seams, fixed contact pad and real037x5→042x2 exposure after recomposition."
+  ],
+  "blocking_now": "No actual registered/recomposed arm candidate has yet been inspected. Whole raw and direct operational-mask takeback must not pass.",
+  "new_image_calls": 0,
+  "root_inputs_changed": false
+}

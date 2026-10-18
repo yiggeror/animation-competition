@@ -1,0 +1,19 @@
+{
+  "status": "PRECALL_PASS_ONLY_SINGLE_F042_CONNECTION_CALL02",
+  "supersedes": "connection_call02_precall_actual_review.json (old5096px mask; historically blocked)",
+  "actual_view": "Latest connection_call02/qa/actual_complete_connections_input_and_mask.png",
+  "mask_pixels": 4524,
+  "mask_sha256": "d33bf65e87614e18df534dadab27666cdc7e86d04ed9a8aa1faef5ded452c163",
+  "source_candidate_sha256": "e58390103486c80f369b5bc911c8351373f9d993013cebba73ef1547e8af9bc6",
+  "independently_checked": {
+    "whole_hand_torch_overlap": 0,
+    "actual_original_ruffle_overlap": 0,
+    "five_previously_locked_ink_samples_now_white": true
+  },
+  "visual_conclusion": "Long obsolete pointed contour and short black stroke now covered as complete local semantic regions. Cuff duplicate arc and lower wrist notch neighboring forearm are editable. Correct original ruffle, hand and rigid torch remain protected. No new definite pre-call blocker seen.",
+  "limits": [
+    "Only one requested F042 local-connection call scope.",
+    "No acceptance of returned pixels or complete042 motion.",
+    "No image generation or root input edits by reviewer."
+  ]
+}

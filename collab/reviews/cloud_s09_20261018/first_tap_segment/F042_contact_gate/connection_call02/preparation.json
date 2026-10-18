@@ -1,0 +1,18 @@
+{
+  "status": "PREPARED_ACTUAL_MINIMUM_F042_CONNECTION_REPAIR_NOT_EXECUTED",
+  "frame": 42,
+  "source_candidate_sha256": "e58390103486c80f369b5bc911c8351373f9d993013cebba73ef1547e8af9bc6",
+  "crop_xyxy": [
+    630,
+    490,
+    1110,
+    810
+  ],
+  "mask_pixels": 4524,
+  "whole_hand_torch_mask_overlap": 0,
+  "original_near_ruffle_material_overlap": 0,
+  "source_pose": "Single real native042 complete arm, one rigidR-6deg+t[-58.6205613,76.1285099], scale1. Not accepted due cuff duplicate arc and wristV. No per-segment transform or limb stretch.",
+  "specific_gate_failures": "61sol actual review: duplicate cuff arc691..714/644..680, wrist lower V1048..1055/612..620, small obsolete source-arm ink.",
+  "new_pose": false,
+  "F044_F048_unopened": true
+}

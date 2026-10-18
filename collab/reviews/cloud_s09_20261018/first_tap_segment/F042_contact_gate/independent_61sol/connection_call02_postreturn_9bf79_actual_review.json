@@ -1,0 +1,43 @@
+{
+  "status": "NOT_PASSED_TWO_RECOMPOSITION_EDGE_STEPS",
+  "candidate_sha256": "9bf79ca622109d11607f6b678fd2cada8e0356d1a590afe2991cea0cbf68852d",
+  "actually_viewed": [
+    "qa/refined_actual_joint_comparison.png",
+    "candidate/F042_complete_joint_pixels_PENDING.png",
+    "same-scaled native donor vs candidate coordinate closeups"
+  ],
+  "accepted_visible_scope": [
+    "Duplicate cuff arc removed; single sleeve opening and complete single near arm readable.",
+    "No new obvious limb crossing or detached hand; rigid prop and fixed receiving palm still readable."
+  ],
+  "blockers": [
+    {
+      "approx_raw_xyxy": [
+        1031,
+        630,
+        1036,
+        635
+      ],
+      "issue": "2-4px returning V on wrist lower contour remains; actual step is left of new wrist rectangle x1041."
+    },
+    {
+      "approx_raw_xyxy": [
+        779,
+        729,
+        784,
+        734
+      ],
+      "issue": "Short pointed contour step remains at old-line cleanup adoption boundary."
+    }
+  ],
+  "source_evidence": "Same native donor uniformly aligned at0.3125 has continuous single contours at both positions; no additional native call required for these edge fragments.",
+  "next_scope": "Refine only complete local native contour/AA adoption within current near-arm joint and obsolete-line semantics, retaining actual hand/fingers/prop and outer ruffle.",
+  "independent_RGBA_checks": {
+    "outside_adoption_RGBA_changes": 0,
+    "postreturn_actual_grip_fingers_and_whole_torch_PROTECTED.png": 0,
+    "postreturn_outer_near_ruffle_material_PROTECTED.png": 0
+  },
+  "no_generation": true,
+  "no_root_asset_edits": true,
+  "no_motion_acceptance": true
+}
