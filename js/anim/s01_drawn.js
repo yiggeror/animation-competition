@@ -39,7 +39,7 @@ function originalStoolLayer() {
   const c = new OffscreenCanvas(560, 640), x = c.getContext('2d');
   x.scale(2, 2); x.translate(935 - 780, 775 - 470); x.scale(-2.77, 2.77);
   stool(x, -2);
-  return { img: c, x: 780, y: 470, sc: 0.5 };
+  return { img: c, x: 780, y: 470, sc: 0.5, contact: { a: 0.45, blur: 3, sy: -0.1, skew: 0.5 } };
 }
 let cachedStool;
 let cachedLamp;
@@ -51,9 +51,9 @@ export const shot = {
     return [
       { img: COILC, x: COIL[0] - 60, y: COIL[1] - 34, sc: 1 },
       cachedLamp ||= tableLamp(),
-      { img: X, ...REGISTRATION.X },
+      { img: X, ...REGISTRATION.X, contact: { a: 0.4, blur: 3, sy: 1, dx: -2, dy: 3 } },   // 接地影子（Opus 10-18）：趴着，影子在身子正下方露一圈；奶奶和凳子在灯的右前方，影子往镜头这边、略往右
       cachedStool ||= originalStoolLayer(),
-      { img: G, ...REGISTRATION.G }, // Basin, beans, hands and phone are already in the drawings.
+      { img: G, ...REGISTRATION.G, contact: { a: 0.45, blur: 4, sy: -0.07, skew: 0.5 } }, // Basin, beans, hands and phone are already in the drawings.
     ];
   },
   light: (t) => ({

@@ -108,7 +108,27 @@ function shadeLayer(L, img, nrm, Lt) {
   return c;
 }
 
-// 渲染一帧。shot.layers(t) → [{ img, nrm?, x, y, sc, rot?, alpha?, flip?, clip? }]（img 的像素 (0,0) 落在背景 (x, y)，缩放 sc；给了法线图 nrm 就按场景灯光打明暗）
+// 接地影子：图层的剪影（黑色、只取 alpha）钉在它最低的那一行（脚、贴地的身子）上投到地面，再模糊，画在图层下面，之后跟场景一起乘光照图。
+// 全景里人物脚下没有影子会像贴上去的。sy < 0：影子往镜头这边倒（灯在人后面/头顶偏后），越小越扁；sy > 0：往后倒；
+// 趴着、躺着的人用 sy = 1、dy 两三像素：影子就在身子正下方露一圈。skew：影子越远越往旁边偏（灯在左边就给正数）。
+const SIL = new WeakMap();
+function silhouette(img) {
+  if (SIL.has(img)) return SIL.get(img);
+  const w = img.width, h = img.height, c = new OffscreenCanvas(w, h), x = c.getContext('2d');
+  x.drawImage(img, 0, 0); const A = x.getImageData(0, 0, w, h).data;
+  let base = 0; for (let yy = h - 1; yy >= 0 && !base; yy--) for (let xx = 0; xx < w; xx++) if (A[(yy * w + xx) * 4 + 3] > 128) { base = yy; break; }
+  x.globalCompositeOperation = 'source-in'; x.fillStyle = '#000'; x.fillRect(0, 0, w, h);
+  const s = { c, base }; SIL.set(img, s); return s;
+}
+function contactShadow(ax, L, img) {
+  const k = L.contact, s = silhouette(img), sc = L.sc, base = k.base ?? s.base, by = L.y + base * sc;   // 贴地线（背景坐标），脚和影子在这里接上
+  ax.save(); ax.globalAlpha = k.a ?? 0.35; ax.filter = `blur(${k.blur ?? 5}px)`;
+  ax.translate(L.x + (k.dx || 0), by + (k.dy || 0)); if (k.skew) ax.transform(1, 0, k.skew, 1, 0, 0);
+  ax.scale((L.flip ? -1 : 1) * sc, sc * (k.sy ?? -0.08)); ax.translate(0, -base);
+  ax.drawImage(s.c, 0, 0); ax.restore();
+}
+
+// 渲染一帧。shot.layers(t) → [{ img, nrm?, x, y, sc, rot?, alpha?, flip?, clip?, contact? }]（contact = { a, blur, sy, skew, dx, dy, base? }：接地影子）（img 的像素 (0,0) 落在背景 (x, y)，缩放 sc；给了法线图 nrm 就按场景灯光打明暗）
 export async function renderPaint(ctx, t, W, H, shot) {
   const [BW, BH] = shot.size;
   const bg = (typeof shot.bg === 'string' ? await loadImg(shot.bg) : shot.bg) || (cache['__ph'] ||= placeholderBg(BW, BH));   // bg 可以是素材名，也可以是现成的画布
@@ -120,6 +140,7 @@ export async function renderPaint(ctx, t, W, H, shot) {
   for (const L of (await shot.layers?.(t)) || []) {
     let img = typeof L.img === 'string' ? await loadImg(L.img) : L.img; if (!img) continue;
     if (L.nrm) img = shadeLayer(L, img, L.nrm, Lt);
+    if (L.contact) contactShadow(ax, L, img);
     ax.save(); ax.globalAlpha = L.alpha ?? 1;
     ax.translate(L.x, L.y); if (L.rot) ax.rotate(L.rot); ax.scale((L.flip ? -1 : 1) * L.sc, L.sc);
     if (L.clip) { ax.beginPath(); L.clip.forEach(([px, py], j) => (j ? ax.lineTo(px, py) : ax.moveTo(px, py))); ax.closePath(); ax.clip(); }
