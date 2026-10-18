@@ -1,0 +1,9 @@
+S01 grandma F030 and actual bean release/landing layers through F035.
+
+F030 exact final SHA 15c58e82435e85101ad363c34ed1812b48a9e0ec8f9232acc1ec47cb5d0724d3; independent release pass 2026-10-18 14:54:26 UTC. F029 lip-constraint and F033-F035 landing static gate passed 15:00:28 UTC; isolated timed replay passed15:04:42 UTC, corrected alpha/full-domain increment passed15:21:14 UTC. F035 SHA 9c990585a527f2d61f994f73b9e727949cb0aecfe6a260bff19fe1381d9925d6.
+
+One new model call for F030, total S01 calls 7. F029 and F031-035 are deterministic original-pixel bean/contact layers, not independent model generations. F028 delivered separately, reused byte-exact; F030 also remains byte-exact on its own exposure.
+
+F029 uses original F028 held hand/lip foreground, F030 empty inner-wall cleanplate to remove only old lower B, and the complete actual B sprite partly sliding out behind the front lip. At F030 B fully detaches. A uses original F028 drawn bean pixels; B uses actual F030 complete bean pixels. After release, trajectories accelerate. A contacts pile at34, settles35; B lands35. Both remain visible behind original front basin rim; no disappearing beans or duplicate basin. The old alpha-overlay version was withdrawn before repository commit. This refreshed package uses the bounded original-RGBA front-rim restore and exact per-frame union protection; no duplicate alpha compositing. Wrist/jade/whole body stay unchanged from F030 during bean fall.
+
+See geometry/trajectory_and_provenance_STATIC_PASS.json for exact transforms and sprites/ for original fullcanvas/cropped source fragments, hand cleanplates and exact original foreground masks. Scripts under reproduce/ are author-workspace provenance scripts, with relative dependencies on the original task directory; they are not drop-in implementation code. Parent owns scene integration, current repo commit mapping and lighting.

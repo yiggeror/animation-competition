@@ -1,0 +1,54 @@
+{
+  "frame": 20,
+  "shot": "S01",
+  "character": "xiaoman",
+  "duration_until_next_character_key_pending_coordinator": false,
+  "file": "approved/F020_near_leg_highest.png",
+  "sha256": "a96a1949b464b828f0e123a4079e9cde82414def262d15ce99a4e4b290f1408d",
+  "canvas": [
+    1792,
+    1024
+  ],
+  "canvas_to_scene": {
+    "s": 0.16,
+    "t": [
+      399.28,
+      533
+    ]
+  },
+  "head_center_scene": [
+    614.1149446369272,
+    589.2597953302053
+  ],
+  "head_envelope_h": 70,
+  "head_envelope_projected_w": 73.43669250645995,
+  "head_scale_from_call01": 1.209573867999556,
+  "head_extra_rotation_deg": 0,
+  "near_knee_proxy_canvas": [
+    470,
+    678
+  ],
+  "far_knee_proxy_canvas": [
+    516,
+    639
+  ],
+  "near_ankle_canvas": [
+    470.2880333294,
+    316.297655772
+  ],
+  "far_ankle_canvas": [
+    287.9648774452858,
+    408.12210892248015
+  ],
+  "near_calf_angle_deg": -89.95437383553927,
+  "far_calf_angle_deg": -134.64508185574348,
+  "near_projected_calf_length_scene": 57.87239342596968,
+  "far_projected_calf_length_scene": 51.92107677328961,
+  "measurements_caveat": "Knees and hips are construction proxies, not real bone measurements. Actual accepted F010 near calf and entire sandal rigidly rotated at scale 1; local organic knee joins drawn by call05. No nonuniform anatomical scaling.",
+  "next_derivation_rule": "F035 must derive from this actual accepted F020 image, pending coordinator next gate. Never use old F020 trajectory-only preview or rejected raw.",
+  "exposure": [
+    20,
+    34
+  ],
+  "acceptance": "Independent actual-image static review accepted 2026-10-18 15:05 UTC; whole-shot timing still awaiting scene composite. Coordinator informed."
+}
