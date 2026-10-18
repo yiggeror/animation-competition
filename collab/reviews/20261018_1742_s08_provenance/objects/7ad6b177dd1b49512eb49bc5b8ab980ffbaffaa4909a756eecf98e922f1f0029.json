@@ -1,0 +1,54 @@
+{
+  "status": "F005_INPUT_GATE_ONLY_NOT_CALLED",
+  "actual_native_calls_total_before_F005": 4,
+  "source_locked_F003": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F003_FINAL_LOCKED/S08_F003_grandma_match_box_RGBA.png",
+  "source_sha256": "33c7919c7cd2ca0ddbe7e0c6af03c914a1a74040ffce8efc4af2bcba13b10913",
+  "crop_scene_box": [
+    585,
+    615,
+    1235,
+    1045
+  ],
+  "uniform_enlargement": 2,
+  "whole_hand_match_translation_from_F003": [
+    -50,
+    27
+  ],
+  "head_scene": [
+    1074,
+    782
+  ],
+  "grip_scene": [
+    1046,
+    819
+  ],
+  "wrist_scene": [
+    951,
+    866
+  ],
+  "unchanged_visible_match_length": 46.4,
+  "edge_extraction": "The unique003 placed layer supplies known foreground colors on fractional alpha edges, avoiding the box color baked under the touching head. Explicit detached island at source1134:1143,744:766 removed; no alpha-threshold trimming of the real contour.",
+  "stroke": "F0031124,755 -> edge1092,755 contact32px -> F0051074,782 fully separated left/down",
+  "far_hand_reveal": "Restore only same approved F000 far hand/box/jade pixels that F003 near hand temporarily covered; no new far hand invention. Body/near arm source is unique locked F003.",
+  "chain_guide": [
+    [
+      668,
+      683
+    ],
+    [
+      695,
+      813
+    ],
+    [
+      760,
+      951
+    ],
+    [
+      951,
+      866
+    ]
+  ],
+  "chain_warning": "Projected targets only, not3D bones or compulsory exact lengths. Preserve natural complete chain and real wrist location.",
+  "hard_protection": "Preplaced real near hand/match except wrist seam; full real far hand/box/jade; all black pixels.",
+  "allowed": "Near arm/cuff-to-wrist plus old occupancy restoration to blouse/far upperarm/transparent air. No flame baked; later code owns fire/light."
+}

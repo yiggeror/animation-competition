@@ -1,0 +1,61 @@
+{
+  "status": "F003_INPUT_GATE_ONLY_NOT_CALLED",
+  "current_total_native_calls": 3,
+  "source_locked_sha256": "c803571d4a6446e783fcbeb7aef41d65c1862ff3bf78a9a53f34b4631170e3f3",
+  "crop_scene_box": [
+    585,
+    615,
+    1235,
+    1045
+  ],
+  "uniform_enlargement": 2,
+  "output_crop_size": [
+    1300,
+    860
+  ],
+  "whole_hand_match_translation": [
+    48,
+    -9
+  ],
+  "head_scene": [
+    1124,
+    755
+  ],
+  "visible_grip_scene": [
+    1096,
+    792
+  ],
+  "visible_match_length": 46.400431032480725,
+  "far_box_fixed_center": [
+    1125,
+    750
+  ],
+  "near_chain_construction": {
+    "shoulder": [
+      668,
+      683
+    ],
+    "sleeve_exit_guide": [
+      716,
+      805
+    ],
+    "elbow": [
+      807.61,
+      931.48
+    ],
+    "wrist": [
+      1001,
+      839
+    ]
+  },
+  "coordinate_warning": "Projected construction only, not3D bone lengths. Keep continuous shoulder-sleeve-upperarm-elbow-forearm-wrist path. Small lower cuff adapts; shoulder/upper sleeve stays original.",
+  "same_raw_cleanup": {
+    "source": "repair02_result_v1/registered/F000_call02_registered_RGBA.png",
+    "selection": "masks/same_raw02_index_cleanup_before_placement.png",
+    "pixels": 52,
+    "note": "Only placement copy; existing raw02 true index pixels replace accidentally included blue sleeve within index edge. No painted anatomy, no F000 modification."
+  },
+  "hard_protection": "All rigidly placed near palm/fingers/match except5px wrist seam; full far hand/box/jade; all scene pixels outside explicit white.",
+  "allowed": "Redraw near upperarm/elbow/forearm and tiny lower sleeve opening; restore old arm/hand vacancies to correct blouse, far upperarm where occluded, or transparent empty air.",
+  "native_call_planned": false
+}

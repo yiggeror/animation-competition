@@ -1,0 +1,28 @@
+{
+  "status": "BLOCKED_BEFORE_CANVAS_RENDER",
+  "chromium": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+  "node": "v24.19.0",
+  "playwright_resolved": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.js",
+  "binary": "/usr/bin/chromium",
+  "installed_by_this_task": false,
+  "attempts": 2,
+  "attempt_modes": [
+    "use_default",
+    "require_escalated"
+  ],
+  "exact_fatal": "FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)",
+  "command": [
+    "node",
+    "--require",
+    "../system_chromium.cjs",
+    "tools/js/snap.cjs",
+    "/collab/reviews/20261018_1721_s08_first14_scene/s08_first14_scene.js",
+    "../actual_F000_1920x1080.png",
+    "1920",
+    "1080",
+    "0"
+  ],
+  "cwd": "/workspace/scratch/f060b5601755/astra_s08_first14_scene_20261018_1721/runtime",
+  "actual_canvas_frames_produced": 0,
+  "next_step": "Use existing working cloud renderer; no install or permission workaround attempted."
+}

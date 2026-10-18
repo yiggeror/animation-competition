@@ -1,0 +1,235 @@
+{
+  "status": "PASS_LOCAL_STATIC_PIXEL_AND_MOCK_ONLY",
+  "actual_canvas": "PENDING",
+  "checks": {
+    "TEST_RESULT": {
+      "status": "PASS_STATIC_CONTRACT_ONLY",
+      "frames": 20,
+      "fps": 24,
+      "duration": 0.8333333333333334,
+      "first14_contract_samples_byte_equivalent": 56,
+      "old_image_files_byte_equal": 10,
+      "all_layer_sha256_verified": 15,
+      "original_room_table_lamp_stool_functions_byte_equal": true,
+      "original_light_glow_emit_camera_functions_byte_equal": true,
+      "scene_function_block_sha256": "37627cbd2cc5530bbdf8f0eff3ced33b2e6d7fc9fe572d6eabe1aa51c18e5ce8",
+      "frame020_and_later_rejected": true,
+      "first_match_flame_frame": 5,
+      "wick_flame_frames": 0,
+      "lamp_lift_frames": 0,
+      "box_contact_actual_canvas": "PENDING",
+      "actual_canvas_render_performed": false
+    },
+    "MODULE_WIRING_TEST": {
+      "status": "PASS_MOCK_WIRING_ONLY_NOT_CANVAS",
+      "frames_checked": 20,
+      "first14_mock_layer_draw_commands_and_lighting_identical": true,
+      "background_draw_commands_identical": true,
+      "loaded_original_pixel_layers": 15,
+      "lamp_calls": [
+        [
+          0,
+          false
+        ]
+      ],
+      "first14_contacts": 0,
+      "F014_table_box_draws": 0,
+      "F017_table_box_draws_per_frame": 1,
+      "F017_contact_attached_to_box": true,
+      "F017_order": [
+        "lamp",
+        "stool",
+        "body",
+        "table_front",
+        "table_box_with_attached_contact",
+        "arms"
+      ],
+      "original_pixel_transforms": "all x0 y0 sc1",
+      "all_public_frame_entry_points_reject_020": true,
+      "canvas_render_performed": false
+    },
+    "PIXEL_VALIDATION": {
+      "status": "PASS_ORIGINAL_PIXEL_IDENTITY_ONLY_NOT_CANVAS",
+      "rows": [
+        {
+          "asset": "000",
+          "source_sha256": "c803571d4a6446e783fcbeb7aef41d65c1862ff3bf78a9a53f34b4631170e3f3",
+          "layer_count": 2,
+          "overlap_alpha_pixels": 0,
+          "alpha_sum_equal": true,
+          "all_layer_RGB_original_including_transparent": true,
+          "RGBA_reconstruction_exact": true
+        },
+        {
+          "asset": "003",
+          "source_sha256": "33c7919c7cd2ca0ddbe7e0c6af03c914a1a74040ffce8efc4af2bcba13b10913",
+          "layer_count": 2,
+          "overlap_alpha_pixels": 0,
+          "alpha_sum_equal": true,
+          "all_layer_RGB_original_including_transparent": true,
+          "RGBA_reconstruction_exact": true
+        },
+        {
+          "asset": "005",
+          "source_sha256": "d2c623b6e9feca97be2dd906386ccca10f354a1e1b18e95b125a1a8a21f3b24a",
+          "layer_count": 2,
+          "overlap_alpha_pixels": 0,
+          "alpha_sum_equal": true,
+          "all_layer_RGB_original_including_transparent": true,
+          "RGBA_reconstruction_exact": true,
+          "match_hand_ROI_xyxy": [
+            1034,
+            770,
+            1086,
+            832
+          ],
+          "match_hand_ROI_RGBA_sha256": "72ee6e47113726f578ad2e1fdb523cd022265b75b0a2affed851beb336c72bee",
+          "match_head_xy": [
+            1074,
+            782
+          ],
+          "match_head_RGBA": [
+            120,
+            47,
+            34,
+            246
+          ],
+          "grip_xy": [
+            1046,
+            819
+          ],
+          "grip_RGBA": [
+            102,
+            71,
+            41,
+            255
+          ]
+        },
+        {
+          "asset": "006",
+          "source_sha256": "507ce096204aed9c22685071c0d94de8504de10d451ce18edaa4d4051ad58ad8",
+          "layer_count": 2,
+          "overlap_alpha_pixels": 0,
+          "alpha_sum_equal": true,
+          "all_layer_RGB_original_including_transparent": true,
+          "RGBA_reconstruction_exact": true
+        },
+        {
+          "asset": "009",
+          "source_sha256": "71c56b1bb2df6bec0bd1bd0bfdbdd188714b6c75a652ace44da69fc97db37f98",
+          "layer_count": 2,
+          "overlap_alpha_pixels": 0,
+          "alpha_sum_equal": true,
+          "all_layer_RGB_original_including_transparent": true,
+          "RGBA_reconstruction_exact": true
+        },
+        {
+          "asset": "014",
+          "source_sha256": "d1727966cfc41b5a61f91c8b19cf8177fe88f12ce20c7d4a1036305b3fbe3d51",
+          "layer_count": 2,
+          "overlap_alpha_pixels": 0,
+          "alpha_sum_equal": true,
+          "all_layer_RGB_original_including_transparent": true,
+          "RGBA_reconstruction_exact": true,
+          "match_hand_ROI_xyxy": [
+            1034,
+            770,
+            1086,
+            832
+          ],
+          "match_hand_ROI_RGBA_sha256": "72ee6e47113726f578ad2e1fdb523cd022265b75b0a2affed851beb336c72bee",
+          "match_head_xy": [
+            1074,
+            782
+          ],
+          "match_head_RGBA": [
+            120,
+            47,
+            34,
+            246
+          ],
+          "grip_xy": [
+            1046,
+            819
+          ],
+          "grip_RGBA": [
+            102,
+            71,
+            41,
+            255
+          ]
+        },
+        {
+          "asset": "017",
+          "source_sha256": "4e7be236953bee57aa8c3ecfc142893ab15c67095fae4b77718ff6aba0b1ec20",
+          "layer_count": 3,
+          "overlap_alpha_pixels": 0,
+          "alpha_sum_equal": true,
+          "all_layer_RGB_original_including_transparent": true,
+          "RGBA_reconstruction_exact": true,
+          "match_hand_ROI_xyxy": [
+            1034,
+            770,
+            1086,
+            832
+          ],
+          "match_hand_ROI_RGBA_sha256": "72ee6e47113726f578ad2e1fdb523cd022265b75b0a2affed851beb336c72bee",
+          "match_head_xy": [
+            1074,
+            782
+          ],
+          "match_head_RGBA": [
+            120,
+            47,
+            34,
+            246
+          ],
+          "grip_xy": [
+            1046,
+            819
+          ],
+          "grip_RGBA": [
+            102,
+            71,
+            41,
+            255
+          ],
+          "table_box_alpha_pixels": 1665,
+          "table_box_bbox_exclusive": [
+            1063,
+            947,
+            1138,
+            971
+          ],
+          "table_box_silhouette_alpha_gt128_base": 970,
+          "table_box_alpha_pixels_in_body_or_arms": 0
+        }
+      ],
+      "near_hand_match_005_014_017_exact_RGBA_same": true,
+      "image_generation_calls": 0,
+      "image_files_modified": 0,
+      "actual_canvas_frames": 0,
+      "F017_contact_projection": {
+        "measured_base_alpha_gt128": 970,
+        "source_box_y_inclusive": [
+          947,
+          970
+        ],
+        "sy": -0.055,
+        "unblurred_projected_y_inclusive": [
+          970,
+          971.265
+        ],
+        "blur_px": 0.65,
+        "opacity": 0.22,
+        "dx": 0,
+        "dy": 0,
+        "table_surface_y": [
+          950.2,
+          981
+        ],
+        "actual_visual_contact_status": "PENDING_ACTUAL_CANVAS_NOT_ASSERTED"
+      }
+    }
+  }
+}

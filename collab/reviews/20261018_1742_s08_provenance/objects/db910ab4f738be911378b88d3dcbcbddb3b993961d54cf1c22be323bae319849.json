@@ -1,0 +1,111 @@
+{
+  "coordinate_system": "scene1920x1080; screen x right, y down",
+  "source": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/eyes03_result_lid_continuous_v3/candidates/F000_same_raw_continuous_lid_cleanup_RGBA.png",
+  "source_sha256": "c803571d4a6446e783fcbeb7aef41d65c1862ff3bf78a9a53f34b4631170e3f3",
+  "status": "F000_STATIC_APPROVED_BY_COORDINATOR_AND_INDEPENDENT_REVIEWER",
+  "warning": "Manual screen projection construction anchors, NOT anatomical bone lengths or 3D dimensions. Shoulder/elbow centers approximate within5-12px; visible contact anchors within2-3px. Far sleeve-exit segment is partly occluded by near hand.",
+  "near_anatomical_right_bare_wrist": {
+    "shoulder": [
+      668,
+      683
+    ],
+    "sleeve_exit": [
+      695,
+      813
+    ],
+    "elbow": [
+      765,
+      951
+    ],
+    "wrist": [
+      953,
+      848
+    ],
+    "palm_center": [
+      994,
+      836
+    ],
+    "visible_tail_grip": [
+      1048,
+      801
+    ]
+  },
+  "far_anatomical_left_jade_wrist": {
+    "shoulder": [
+      994,
+      680
+    ],
+    "sleeve_exit": [
+      1007,
+      795
+    ],
+    "elbow": [
+      1055,
+      949
+    ],
+    "wrist": [
+      1174,
+      836
+    ],
+    "palm_center": [
+      1151,
+      800
+    ],
+    "support_pad": [
+      1103,
+      764
+    ]
+  },
+  "projected_lengths": {
+    "near_right": {
+      "shoulder_to_elbow": 285.01,
+      "elbow_to_wrist": 214.37,
+      "sleeve_exit_to_elbow": 154.74,
+      "wrist_to_palm_center": 42.72
+    },
+    "far_left": {
+      "shoulder_to_elbow": 275.83,
+      "elbow_to_wrist": 164.1,
+      "sleeve_exit_to_elbow": 161.31,
+      "wrist_to_palm_center": 42.72
+    }
+  },
+  "hands": {
+    "near_wrist_width_approx": 52,
+    "near_palm_width_approx": 64,
+    "near_wrist_to_visible_grip": 105.99,
+    "far_wrist_width_approx": 51,
+    "far_palm_width_approx": 55,
+    "far_wrist_to_support_pad": 101.12
+  },
+  "props": {
+    "match_head_center": [
+      1076,
+      764
+    ],
+    "visible_match_tail_at_grip": [
+      1048,
+      801
+    ],
+    "visible_head_center_to_grip": 46.4,
+    "head_radius_approx": 7.5,
+    "box_bounds": [
+      1089,
+      739,
+      1161,
+      761
+    ],
+    "box_center": [
+      1125,
+      750
+    ],
+    "actual_striker_visible_band": [
+      1092,
+      750,
+      1158,
+      759
+    ],
+    "construction_tail_1045_820_is_not_visible_endpoint": true
+  },
+  "depth": "Near right hand overlaps only a small far upper-arm/sleeve area; both forearms remain separate. Far pads are behind box underside, thumb stabilizes side."
+}
