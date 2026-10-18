@@ -10,7 +10,7 @@
 
 [旧23逐帧无损对照](old23_all_exact_comparison.json)：旧交付`3703140f3ca7b1a676fd0037c4c04f6064b949af`的000–022缓存全部先核原SHA，再与新27的对应PNG比，**23/23 PNG文件逐字节同**。旧d607源没有另重渲；本次a4首27按授权包含000–022。不是拿MP4有损解码作无损基准。
 
-[实际27帧核](actual27_validation.json)、[ffprobe](ffprobe.json)、[实看记录](AUTHOR_REVIEW.json)齐：27张原Canvas PNG与27张MP4解码顺序逐一核，最大MSE9.45612；27份runtime源逐SHA和固定Git blob核、共享代码/背景/renderer字节未动。新4态源与解码均保全。这是首27帧的局部实际门，仍待Astra原速主观审，不代表027以后、完整S08或音轨/ready。
+[实际27帧核](actual27_validation.json)、[ffprobe](ffprobe.json)、[实看记录](AUTHOR_REVIEW.json)齐：27张原Canvas PNG与27张MP4解码顺序逐一核，最大MSE9.45612；27份runtime源逐SHA和固定Git blob核、共享代码/背景/renderer字节未动。新增4帧源与5张请求解码均保全。这是首27帧的局部实际门，仍待Astra原速主观审，不代表027以后、完整S08或音轨/ready。
 
 复现前检出固定源a4b00a05，并用`tools/system_chromium.cjs`选择系统Chromium（仅进程配置，固定源未改）。实际命令：
 
