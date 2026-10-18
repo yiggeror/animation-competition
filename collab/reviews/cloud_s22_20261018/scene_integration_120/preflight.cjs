@@ -1,0 +1,27 @@
+const fs=require('fs'),path=require('path'),assert=require('assert');
+const {chromium}=require('playwright');
+const ROOT=path.resolve(__dirname,'../../../..');
+const {start}=require(path.join(ROOT,'tools/js/serve.cjs'));
+const rel=path.relative(ROOT,__dirname).split(path.sep).join('/');
+const executablePath=['/usr/bin/chromium','/usr/bin/chromium-browser'].find(p=>fs.existsSync(p));
+(async()=>{
+ const server=await start(0),base=`http://127.0.0.1:${server.address().port}`;
+ const browser=await chromium.launch({executablePath,headless:true,args:['--no-sandbox','--disable-dev-shm-usage']});
+ const page=await browser.newPage({viewport:{width:1920,height:1160}}),failures=[],responses=[];
+ page.on('requestfailed',r=>failures.push({url:r.url(),error:r.failure()?.errorText}));
+ page.on('response',r=>responses.push({path:new URL(r.url()).pathname,status:r.status()}));
+ await page.goto(base+'/'+rel+'/render.html');
+ await page.waitForFunction(()=>window.__ready||window.__error,null,{timeout:60000});
+ const state=await page.evaluate(()=>({preflight:window.__preflight,error:window.__error}));assert(!state.error,state.error);assert.strictEqual(state.preflight.drawings,12);assert.strictEqual(state.preflight.frames,120);
+ const binding=await page.evaluate(async()=>{const m=await import('./S22_drawn.js');return Array.from({length:120},(_,f)=>m.exposureAt(f/24).id);});
+ const map=JSON.parse(fs.readFileSync(path.join(__dirname,'resource_map.json')));assert.deepStrictEqual(binding,map.exposures.flatMap(r=>Array(r.hold).fill(r.id)));
+ const isApproved=state.preflight.tailStatus==='approved',snapshot=isApproved?'qa/preflight_scene_frame0.png':'qa/preflight_environment_only.png';
+ const png=await page.evaluate(()=>document.querySelector('canvas').toDataURL('image/png'));fs.mkdirSync(path.join(__dirname,'qa'),{recursive:true});fs.writeFileSync(path.join(__dirname,snapshot),Buffer.from(png.split(',')[1],'base64'));
+ const blocked=await page.evaluate(async()=>{try{await window.renderFrame(4.75);return {blocked:false};}catch(e){return {blocked:true,message:String(e.message)};}});
+ if(isApproved)assert(!blocked.blocked);else assert(blocked.blocked&&blocked.message.includes('S22_TAIL_FREEZE_REQUIRED'));
+ const formal=await browser.newPage();await formal.goto(base+'/dev/view.html?mod='+encodeURIComponent(rel+'/S22_drawn.js')+'&w=1920&h=1080');await formal.waitForFunction(()=>window.__ready||window.__error,null,{timeout:60000});const api=await formal.evaluate(()=>({ready:window.__ready,error:window.__error,duration:window.DURATION,renderFrame:typeof window.renderFrame}));assert(!api.error&&api.ready&&api.duration===5&&api.renderFrame==='function');
+ const oldSpriteRequested=responses.some(r=>r.path.includes('h22_together'));assert(!oldSpriteRequested);assert.strictEqual(failures.length,0);assert(!responses.some(r=>r.status>=400&&/\.(png|js|json)$/.test(r.path)));
+ const result={formalCanvasAPI:api,preflight:state.preflight,all120_exposure_bindings_match:true,tail_gate:blocked,old_proxy_sprite_requested:false,failed_requests:failures,asset_HTTP_responses:responses,snapshot,character_scene_rendered:isApproved,full120_scene_rendered:false,production_files_changed:false};
+ fs.writeFileSync(path.join(__dirname,'provenance/preflight.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({drawings:12,frames:120,formalCanvasAPI:true,all120BindingsMatch:true,tailRenderBlocked:true,failedRequests:failures.length,characterSceneRendered:false},null,2));
+ await browser.close();server.close();
+})().catch(e=>{console.error(e);process.exit(1);});

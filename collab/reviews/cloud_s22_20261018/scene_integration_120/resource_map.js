@@ -1,0 +1,117 @@
+export const CONFIG = Object.freeze({
+  "fps": 24,
+  "totalFrames": 120,
+  "duration": 5,
+  "sceneSize": [
+    1920,
+    1080
+  ],
+  "sourceCanvas": [
+    1672,
+    941
+  ],
+  "uniformImageScale": 1.1483253588516746,
+  "sceneReference": "js/code/s22.js",
+  "sceneReferenceSHA256": "c458f6c27161869ec5761bdc2c02fff4f7da17134da1c6500d145dc31cf86c3c",
+  "characterCommit": "df9f16b54b6873d3fe36e30d27c7082eb7b4a279",
+  "sceneIntegrated": false,
+  "audioIntegrated": false
+});
+export const EXPOSURES = Object.freeze([
+  {
+    "id": "F000",
+    "start": 0,
+    "end": 11,
+    "hold": 12,
+    "url": "/collab/reviews/cloud_s22_20261018/fourth_push_108_114/layer_sources/F000.png",
+    "sha256": "d4e78e2d5b84a72588cf3af1ff23ce39cdc18d19dde2fbf1f8eaf44ba62d7ef5"
+  },
+  {
+    "id": "F012",
+    "start": 12,
+    "end": 17,
+    "hold": 6,
+    "url": "/collab/reviews/cloud_s22_20261018/fourth_push_108_114/layer_sources/F012.png",
+    "sha256": "f01d484e04dea7e3cde141d1aa2a94ecd0d45d25bc81f7d94f2f9a3f33757898"
+  },
+  {
+    "id": "F018",
+    "start": 18,
+    "end": 23,
+    "hold": 6,
+    "url": "/collab/reviews/cloud_s22_20261018/fourth_push_108_114/layer_sources/F018.png",
+    "sha256": "c72e8afe8c5e73c17d66d57bc007f12fbfafd4efba9c0e3313f3010008c194a0"
+  },
+  {
+    "id": "F024",
+    "start": 24,
+    "end": 35,
+    "hold": 12,
+    "url": "/collab/reviews/cloud_s22_20261018/fourth_push_108_114/layer_sources/F024.png",
+    "sha256": "97560237598d024a725ab63ee62809d1f5ded5f6fc5aadc1d8a4f158ca85da4a"
+  },
+  {
+    "id": "F036",
+    "start": 36,
+    "end": 41,
+    "hold": 6,
+    "url": "/collab/reviews/cloud_s22_20261018/fourth_push_108_114/layer_sources/F036.png",
+    "sha256": "ad6d47305791dd1fbc2d9849b8bd87d8632102f61dc29dce3ed5054867b49b4f"
+  },
+  {
+    "id": "F042",
+    "start": 42,
+    "end": 59,
+    "hold": 18,
+    "url": "/collab/reviews/cloud_s22_20261018/fourth_push_108_114/layer_sources/F042.png",
+    "sha256": "2a028a4c174c55e4cde7d794cd59561d39585c626740dd0afa7ffdd49f5b477c"
+  },
+  {
+    "id": "F060",
+    "start": 60,
+    "end": 65,
+    "hold": 6,
+    "url": "/collab/reviews/cloud_s22_20261018/fourth_push_108_114/layer_sources/F060.png",
+    "sha256": "356c67d7c62efe46b4e68bece873407571adbc994801a622c39db2fdb1bfc136"
+  },
+  {
+    "id": "F066",
+    "start": 66,
+    "end": 83,
+    "hold": 18,
+    "url": "/collab/reviews/cloud_s22_20261018/fourth_push_108_114/layer_sources/F066.png",
+    "sha256": "849de1cf2633d3818c59c73e5a68f22cca77a24c9fce8d44bce7b005385c1d60"
+  },
+  {
+    "id": "F084",
+    "start": 84,
+    "end": 89,
+    "hold": 6,
+    "url": "/collab/reviews/cloud_s22_20261018/fourth_push_108_114/layer_sources/F084.png",
+    "sha256": "3a43afce664385306de620c16fccef8ee8534e0708c431fedae0b432cfaa71b9"
+  },
+  {
+    "id": "F090",
+    "start": 90,
+    "end": 107,
+    "hold": 18,
+    "url": "/collab/reviews/cloud_s22_20261018/fourth_push_108_114/layer_sources/F090.png",
+    "sha256": "cabe79438fa626ff0ce7a36e6447a4b8dbac4755528479fce125323a3a68d805"
+  },
+  {
+    "id": "F108",
+    "start": 108,
+    "end": 113,
+    "hold": 6,
+    "url": "/collab/reviews/cloud_s22_20261018/fourth_push_108_114/layer_sources/F108.png",
+    "sha256": "d80948993838a76c0ea788e7111e9c245b9457c34dea2fb9da49ddc1080b74f0"
+  },
+  {
+    "id": "F114",
+    "start": 114,
+    "end": 119,
+    "hold": 6,
+    "url": "/collab/reviews/cloud_s22_20261018/fourth_push_108_114/layer_sources/F114.png",
+    "sha256": "74b692c116bf4d72e7d0fb684910b852e4c91ed32cfbe84d704e22a44f217112"
+  }
+]);

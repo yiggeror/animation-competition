@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><link rel="icon" href="data:,"><title>S22正式Canvas接景准备</title>
+<style>body{margin:0;background:#202020;color:#eee;font:15px system-ui}p{margin:12px}canvas{display:block;max-width:100%;height:auto}</style>
+<p id="status">正在核对实际RGBA资源……</p><canvas id="c" width="1920" height="1080"></canvas>
+<script type="module">
+import * as shot from './S22_drawn.js';
+const c=document.querySelector('#c'),ctx=c.getContext('2d'),status=document.querySelector('#status');
+window.DURATION=shot.DURATION;window.renderFrame=async t=>{ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,c.width,c.height);await shot.renderFrame(ctx,t,c.width,c.height);};
+try{
+  window.__preflight=await shot.preflight();
+  if(window.__preflight.tailStatus==='approved'){
+    await window.renderFrame(+(new URLSearchParams(location.search).get('t'))||0);status.textContent='实际S22场景候选；音轨与生产ready未接入。';
+  }else{
+    await shot.renderEnvironment(ctx,0,c.width,c.height);status.textContent='12张RGBA映射核对通过。尾态等待Astra锁定；当前仅显示批准布景，未渲人物整镜。';
+  }
+  window.__ready=true;
+}catch(e){window.__error=String(e.stack||e);status.textContent=window.__error;console.error(e);}
+</script></html>
