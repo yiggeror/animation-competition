@@ -1,0 +1,117 @@
+{
+  "status": "READ_ONLY_QA_NOT_PRODUCTION_REGISTRATION",
+  "model": "[u,v]=[[a,-b],[b,a]]*[x,y]+[tx,ty]",
+  "parameters": {
+    "a": 0.9658021623104134,
+    "b": -0.006215150549027007,
+    "tx": -39.491155889494095,
+    "ty": 50.67579350023303,
+    "scale": 0.965822160037663,
+    "rotation_degrees": -0.36870592537175473
+  },
+  "method": "unweighted linear least squares of 8 head-envelope coordinate constraints + seat-height + two sole-height constraints; contact band must contain fixed seat x. No hidden joints used.",
+  "head_target_assumption": "Current complete head aspect ratio preserved, resized to 75 scene-px total height and centered on (893,515). Frozen head circle is only construction; this full-head envelope is conditional, not approved painted outline.",
+  "source_head_bbox": [
+    471,
+    335,
+    839,
+    632
+  ],
+  "observed_contact_band_asset": [
+    [
+      675,
+      1148
+    ],
+    [
+      840,
+      1148
+    ]
+  ],
+  "registered_contact_band_asset": [
+    [
+      619.560296500318,
+      1155.2214492119945
+    ],
+    [
+      778.9176532815362,
+      1154.195949371405
+    ]
+  ],
+  "target_contact_asset": [
+    742.4,
+    1158.9485714285713
+  ],
+  "seat_x_inside_registered_contact_band": true,
+  "rms_coordinate_residual_scene": 1.4668570663835752,
+  "max_component_scene": 2.14620528498481,
+  "residuals_scene": {
+    "head_top.x": -0.252369101396277,
+    "head_top.y": -1.2874937557710275,
+    "head_bottom.x": 0.25236910139385227,
+    "head_bottom.y": 2.14620528498481,
+    "head_left.x": -2.127274826597445,
+    "head_left.y": 0.7420555266048146,
+    "head_right.x": 2.1272748265949737,
+    "head_right.y": 0.11665600260896802,
+    "seat_band_y": -1.1601897650399362,
+    "near_sole_y": 1.4765190170515563,
+    "far_sole_y": -2.0337523104355792
+  },
+  "object_residuals": {
+    "rim_center": {
+      "registered_asset": [
+        449.33917888948434,
+        968.9434810698539
+      ],
+      "registered_scene": [
+        852.8661817275934,
+        639.9454831050382
+      ],
+      "frozen_scene": [
+        868.52,
+        644.81
+      ],
+      "delta_scene": [
+        -15.653818272406625,
+        -4.864516894961753
+      ]
+    },
+    "near_contact": {
+      "registered_asset": [
+        464.9784680029218,
+        997.8181035303818
+      ],
+      "registered_scene": [
+        857.142549844549,
+        647.8408876840888
+      ],
+      "frozen_scene": [
+        902.52,
+        649.21
+      ],
+      "delta_scene": [
+        -45.377450155451015,
+        -1.3691123159112522
+      ]
+    },
+    "far_contact": {
+      "registered_asset": [
+        418.2159794263352,
+        935.3392902065582
+      ],
+      "registered_scene": [
+        844.3559318743885,
+        630.7568371658558
+      ],
+      "frozen_scene": [
+        895.52,
+        638.51
+      ],
+      "delta_scene": [
+        -51.16406812561149,
+        -7.753162834144177
+      ]
+    }
+  },
+  "uncertainty": "Visible edge estimates +/-2 to 5 asset pixels. No covariance model; numbers are fit diagnostics, not measurement precision."
+}

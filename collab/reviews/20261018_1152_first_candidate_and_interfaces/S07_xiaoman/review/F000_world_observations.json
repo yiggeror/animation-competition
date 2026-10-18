@@ -1,0 +1,71 @@
+{
+  "registration": {
+    "scale": 0.16,
+    "translate": [
+      430,
+      533
+    ],
+    "nonuniform_warp": false
+  },
+  "head_envelope_same": [
+    68,
+    70
+  ],
+  "head_centers": {
+    "S01_reference": [
+      615,
+      597
+    ],
+    "S07_F000_candidate": [
+      623,
+      603
+    ]
+  },
+  "old_observed_contours": {
+    "近肘轮廓": [
+      609.2,
+      669.8
+    ],
+    "腹裙下缘": [
+      542.64,
+      662.76
+    ],
+    "近膝外缘": [
+      474.48,
+      651.4
+    ],
+    "近鞋外点": [
+      485.68,
+      584.36
+    ],
+    "远鞋外点": [
+      448.72,
+      595.88
+    ]
+  },
+  "new_observed_contours": {
+    "近肘轮廓": [
+      610.48,
+      674.44
+    ],
+    "腹裙下缘": [
+      544.88,
+      669.0
+    ],
+    "近膝外缘": [
+      474.48,
+      657.8
+    ],
+    "近鞋外点": [
+      485.68,
+      590.6
+    ],
+    "远鞋外点": [
+      448.72,
+      603.56
+    ]
+  },
+  "uncertainty": "hand-read contour points +/- 6 source px; not skeletal joints or physical bone lengths",
+  "far_elbow": "occluded by near arm; support cannot be visually proven in this isolated image",
+  "phone": "rear shell visible and held; not a passed release contact"
+}
