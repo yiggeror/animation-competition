@@ -1,0 +1,57 @@
+{
+  "tool": "image_gen.imagegen",
+  "underlying_model": "not disclosed by tool schema",
+  "requested_at_utc": "2026-10-18T13:48:49.107734+00:00",
+  "reference_commit": "8f1298219a7fc1d0276aef8082b72caf7fc5b413",
+  "state": "F000",
+  "call": 1,
+  "status": "executed_successfully_raw_returned_not_locked",
+  "arguments": {
+    "prompt": "Create exactly ONE new hand-drawn 2D animation character drawing: S10 frame F000, the neutral starting pose of this same grandmother. This is a single character drawing for a film, not a contact sheet or a technical diagram.\n\nReference roles, in attachment order:\n1. grandma_expressions_current02.png: primary face identity and natural open eyes. Use the left or right closed-mouth face, but with a quiet attentive expression, not a smile or frown.\n2. grandma_turnaround_current03_draft.png: primary hair, low bun, attached red bead ornament, blouse identity and proportions.\n3. old g10_squint.png: secondary contour and material-colour reference ONLY. Do not inherit its squint, sideways tilt, tightly cropped hair or posture.\n4. F000.png: composition and head/neck/shoulder connection guide ONLY. Its wireframes, polygons, dots, arrows, text and dashed hidden lines are not part of the drawing. Do not imitate its diagram style.\n\nDraw the older grandmother with the same round-oval face, thin round dark glasses, small round nose, grey eyebrows, fine eye-corner and mouth age lines, grey-white swept hair with a complete low bun, attached red bead hair ornament, and the same soft blue collared blouse with white five-petal flowers. Maintain the approved mature facial proportions. Clean organic linework and restrained flat material colour, compatible with the real identity drawings.\n\nF000 action: head faces straight toward the camera, level, no yaw or sideways tilt, neither chin lifted nor strongly tucked. Both eyes are naturally open and attentive, the brown pupils look gently toward off-screen screen LEFT, without an exaggerated sideways stare. Mouth quietly closed and relaxed, not grinning, not worried, not already reacting to bright light. The two glasses lenses remain round and correctly fitted; the bridge rests on the nose and the temple tips meet the ears. Ears and jaw belong to the same complete head volume. Hair roots, rear head and the low bun are structurally continuous, not separate floating patches.\n\nUse a fixed landscape 16:9 head-and-upper-chest close-up. Compose for 1920x1080: the complete head including all crown hair and the low bun stays inside the frame; neutral crown approximately y125 and chin approximately y730, centerline around x960. Blouse collar, both shoulders and upper chest are visible. Collar opening sits around y835-945 and the blouse continues to the lower image edge, with lower chest centered near x960. Shoulder joints approximately (650,872) and (1270,872) are composition guides, not hard polygon corners. Both elbows, wrists and hands remain completely outside the bottom of frame. Do not draw a full body, a shielding hand, extra arms, a flashlight, props, other people or a room.\n\nCrucial neck connection: draw an actual continuous neck surface from the underside/back of the jaw into the blouse collar, with natural neck width, no cut edge, no gap, no white fill, no detached head or thin stretched neck. The head is truly neutral and newly drawn, not the old g10 image moved or rotated.\n\nTransparent background. Neutral balanced material colours throughout face, chin, neck, hair and blouse; only very soft form shading if needed. The scene will provide all lighting afterwards. Do not paint any flashlight beam, spotlight on the face, baked white patch, blue chin, orange edge light, strong cast shadow, glass glare covering the eyes, background gradient or floor shadow. No text, no labels, no collage, no inset views, no watermark. Output one clean character drawing only.\n",
+    "referenced_image_paths": [
+      "/workspace/cloud-s10-review-20261018-1324/collab/refs/grandma_expressions_current02.png",
+      "/workspace/cloud-s10-review-20261018-1324/collab/refs/grandma_turnaround_current03_draft.png",
+      "/workspace/cloud-s10-review-20261018-1324/assets/chars/g10_squint.png",
+      "/workspace/cloud-s10-review-20261018-1324/collab/reviews/cloud_s10_20261018/reference/poses/F000.png"
+    ],
+    "transparent_background": true
+  },
+  "inputs": [
+    {
+      "path": "/workspace/cloud-s10-review-20261018-1324/collab/refs/grandma_expressions_current02.png",
+      "repo_path": "collab/refs/grandma_expressions_current02.png",
+      "sha256": "8394bd5dde841a3202e04f48684d728d5c511317efa1a159c55abe99818b39dd",
+      "role": "primary face identity"
+    },
+    {
+      "path": "/workspace/cloud-s10-review-20261018-1324/collab/refs/grandma_turnaround_current03_draft.png",
+      "repo_path": "collab/refs/grandma_turnaround_current03_draft.png",
+      "sha256": "ab88b69f5303229af379303a37b6e9e3c8cdb35cd05b3902b604871efb2b1671",
+      "role": "primary hair and clothing identity"
+    },
+    {
+      "path": "/workspace/cloud-s10-review-20261018-1324/assets/chars/g10_squint.png",
+      "repo_path": "assets/chars/g10_squint.png",
+      "sha256": "4b4c9d5521d9fd168b1ac452748cb5b83359e1783d46316a51f210edc5da6aa6",
+      "role": "secondary style only"
+    },
+    {
+      "path": "/workspace/cloud-s10-review-20261018-1324/collab/reviews/cloud_s10_20261018/reference/poses/F000.png",
+      "repo_path": "collab/reviews/cloud_s10_20261018/reference/poses/F000.png",
+      "sha256": "bbf17126905fd8ec7153dedda548426357e1b0ff981604c2f3645bae89a72ac2",
+      "role": "frozen composition and connections only"
+    }
+  ],
+  "raw_outputs": [
+    {
+      "path": "originals/F000_call01_raw.png",
+      "source_path": "/workspace/generated_images/exec-d0701a29-952c-4241-bba5-12bdf6399100.png",
+      "sha256": "9f2ef4b461e74d96ee36a7e67acfafccf77446755b8545268113032e1c53dd4c",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA"
+    }
+  ],
+  "authorization": "freeze_authorization.md",
+  "completed_at_utc": "2026-10-18T13:50:58.389871+00:00"
+}

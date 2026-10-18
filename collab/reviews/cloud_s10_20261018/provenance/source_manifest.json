@@ -134,8 +134,21 @@
     "executed_calls": 0,
     "availability": "listed, untested pending reference freeze",
     "raw_generated_outputs": [],
-    "new_paid_services": false
+    "new_paid_services": false,
+    "scope": "Historical first-stage reference-only record at 8f129821; current execution follows separately."
   },
   "reference_method": "Python/matplotlib technical diagrams; source art remains unchanged; no generated production character.",
-  "source_art_copy_policy": "Original sources remain at fixed repository paths; no duplicate large originals in this package."
+  "source_art_copy_policy": "Original sources remain at fixed repository paths; no duplicate large originals in this package.",
+  "current_execution": {
+    "stage": "F000 first candidate returned, not locked",
+    "executed_calls": 1,
+    "successful_outputs": 1,
+    "failed_image_calls": 0,
+    "other_pose_calls": 0,
+    "tool": "image_gen.imagegen",
+    "underlying_model": "not disclosed",
+    "actual_request": "F000_first/provenance/F000_call01_request_ACTUAL.json",
+    "raw_image": "F000_first/originals/F000_call01_raw.png",
+    "raw_sha256": "9f2ef4b461e74d96ee36a7e67acfafccf77446755b8545268113032e1c53dd4c"
+  }
 }
