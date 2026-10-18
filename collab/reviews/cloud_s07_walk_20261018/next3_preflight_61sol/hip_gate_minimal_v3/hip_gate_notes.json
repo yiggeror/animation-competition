@@ -1,0 +1,82 @@
+{
+  "status": "ONE_OVERLAY_FOR_ASTRA_HIP_PROXY_FAST_REVIEW_NO_IMAGE_CALL",
+  "source_F057_sha256": "93939f3e148c0a957ef418c677e60cc3fd27cf6b6844f91d500c8a3508b76720",
+  "source_F062_technical_scaffold_sha256": "35d3c8fea92ee8cbb97ae028229fbe86ae2d3c32c6ec8b21f9e277d31478723e",
+  "source_near_hip_candidate_native": [
+    805.0,
+    595.0
+  ],
+  "Astra_source_region_native": [
+    790,
+    580,
+    820,
+    610
+  ],
+  "source_candidate_is_manual_not_anatomical_measurement": true,
+  "source_knee_native": [
+    818.7165829532703,
+    764.1535416501339
+  ],
+  "source_ankle_native": [
+    833.856190186625,
+    957.8118142506097
+  ],
+  "fixed_projected_lengths_world": [
+    61.79157582498698,
+    70.72682024406504
+  ],
+  "original_upper_body_delta_world": [
+    29.803991810986417,
+    -3.1758879254900307
+  ],
+  "F062_hip_if_uniform_upper_body_native": [
+    886.855796820236,
+    586.2775161662431
+  ],
+  "uniform_hip_endpoint_distance_world": 136.64644013392336,
+  "uniform_hip_extra_required_length_world": 4.128044064871351,
+  "optional_endpoint_margin_world": 2.0,
+  "margin_is_proposal_not_approval": true,
+  "F062_optional_hip_native": [
+    886.855796820236,
+    603.2865215876859
+  ],
+  "F062_optional_hip_world": [
+    949.9328583570976,
+    622.4192379442082
+  ],
+  "F062_optional_knee_native": [
+    893.2756443138585,
+    772.8738172759424
+  ],
+  "F062_optional_knee_world": [
+    952.270348059237,
+    684.1665859425434
+  ],
+  "F062_fixed_ankle_native": [
+    833.856190186625,
+    957.8118142506097
+  ],
+  "F062_fixed_ankle_world": [
+    930.6355098069075,
+    751.5031798245614
+  ],
+  "optional_lengths_world": [
+    61.79157582498698,
+    70.72682024406504
+  ],
+  "optional_hip_down_from_uniform_world": 6.193040419690623,
+  "optional_hip_down_from_source_world": 3.0171524942006065,
+  "shoe_bottom_world": 774.874330515797,
+  "shoe_roll_or_slide": false,
+  "head_blouse_original_timing_unchanged": true,
+  "body_head_vertical_change_requested": false,
+  "historical791_waist_pivot_and744_hip_NOT_current_proxies": true,
+  "F062_pixel_scaffold_note": "Existing original-pixel preposition retained only as actual material background; its historical cloth pieces/knee cuts are not an adopted pose, final drawing or operation-mask pass. This gate reviews only the overlaid new hip/knee/ankle proposal.",
+  "new_image_calls": 0,
+  "overlay_sha256": "881dee26e50ce464b60e6ab171fd47046600fc76fafe607aa5c704fc9eaa4d9b",
+  "source_F057_repo_path": "collab/reviews/cloud_s07_walk_20261018/F057_semantic_color_ankle/candidate/F057_semantic_color_and_ankle_PENDING.png",
+  "source_F057_commit": "e3d2202cacfc6c3964112cbda8956592683b8792",
+  "technical_background_preserved_path": "F062_historical_pixel_background_NOT_ART.png",
+  "authority": "Astra latest actual-image hip-proxy correction relayed by parent: one062 hip/knee/ankle overlay for fast review, raw790–820/580–610 is a broad proposed region, not a new hard point; no generation before that review."
+}
