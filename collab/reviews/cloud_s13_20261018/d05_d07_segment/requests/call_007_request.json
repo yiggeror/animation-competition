@@ -1,0 +1,16 @@
+{
+  "call_id": "S13_d06_call_007",
+  "pose": "d06",
+  "purpose": "targeted_alpha_quality_repair_same_pose",
+  "status": "completed_one_raw_image",
+  "tool": "image_gen.imagegen",
+  "args": {
+    "prompt": "Repair the TRANSPARENT CUTOUT QUALITY of this supplied d06 drawing. It contains the correct S13 yawn-start pose, but its alpha has erroneous blocky soft haze outside the character. Remove all the surrounding block-pattern haze and residual background opacity. The background outside the true inked hair, cowlick, pigtails, ears, neck, dress and arms must be fully transparent; preserve genuine fine hair strands and transparent gaps between the hair and neck/shoulders. Do not substitute a solid background, drop shadow or outer glow.\n\nKeep the visible drawing and its pose as close as possible to the supplied d06: both eyes about35% open with brown pupils still visible beneath drooping upper lids; small upright yawn opening and real lower jaw beginning to drop; gently lifted chin and continuous curved neck entering the white collar; slight whole upper-chest inhale with BOTH shoulders, no separate twitch. This is d06, NOT a larger yawn or closed-eye peak. Maintain the exact1024×1536 canvas, same scale, cowlick top margin, lower-chest placement, yellow white-dot dress, white rounded collar and lower image cutoff. Do not zoom, shift the head, redesign the face or change the hairstyle. Same neutral painted colors. Preserve actual hand-drawn cranium/jaw/ear/neck continuity. No text, guides, background, extra hands or props. Return one clean transparent RGBA character cutout with the blocky alpha artifacts removed.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition/collab/reviews/cloud_s13_20261018/d05_d07_segment/originals/S13_d06_call_006_raw.png"
+    ],
+    "transparent_background": true
+  },
+  "dependency_sha256": "dfd81fc0e3842700852de05becdf414e91c479cfa6b8aaf670e37962a7e9bada",
+  "comparison_previous_pose_path": "/workspace/animation-competition/collab/reviews/cloud_s13_20261018/d05_d07_segment/approved_local/F036_d05_pretend_drowsy.png"
+}

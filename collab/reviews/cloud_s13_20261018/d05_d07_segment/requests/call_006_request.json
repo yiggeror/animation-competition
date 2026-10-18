@@ -1,0 +1,15 @@
+{
+  "call_id": "S13_d06_call_006",
+  "pose": "d06",
+  "status": "completed_raw_rejected_alpha_artifacts",
+  "tool": "image_gen.imagegen",
+  "dependency_sha256": "6031e55e4b60d5ce61ef6064a01b9c09e4736477cad5611d91f3c2b1112332e9",
+  "args": {
+    "prompt": "Continue S13 from the supplied AUTHOR-ACCEPTED d05 only. Create the NEXT pose d06, held on frames040–043. Same1024×1536 transparent canvas, same character identity, same global scale and camera. Keep the lower chest, dress pattern, body placement and lower cutoff at their accepted input positions. Do not zoom or recenter the portrait.\n\nThis is the first small opening of her FAKE YAWN, after deliberately drooping her eyes. Progress gently from d05: lower BOTH upper eyelids further so their opening is around35% of the fully-awake d04 opening, compared with d05's65%. Brown irises/pupils are still partly visible beneath natural upper-lid occlusion; do not squash or flatten the eyes and do not fully close them yet. Brows stay soft with the performed sleepy excuse, not pain, anger, shock or laughter.\n\nHer lips part into a SMALL upright yawn opening, about0.035head-height (roughly22source pixels high), clearly larger than d05's tiny slit but far smaller than a peak yawn. Let the actual mandible and chin begin to lower a little; this must be a real connected lower-jaw movement, not just enlarging a red mouth sticker on an unchanged face. Keep the upper skull the same size. No protruding tongue or teeth display. The head turns only a tiny further3degrees toward front (about37degrees still toward SCREEN RIGHT) and the chin lifts gently to about3degrees upward, with the entire head and curved neck participating. Keep ear, bangs, back of head, pigtail roots and red flowers coherent with the head volume; pigtails do not become rigid blocks.\n\nThe preparatory inhale continues: upper chest and BOTH shoulders rise together very slightly, about2additional source pixels from d05 (roughly4cumulative from the awake pose). Preserve a continuous natural neck entering the white collar. No isolated shoulder twitch, long tube neck, pasted face or disconnected collar. Preserve the same warm-neutral drawn skin, dark brown hair, red flower pigtail ties, yellow polka-dot dress and white Peter Pan collar. No new scene spotlight, no background, no hand near mouth, no added props or text. Only one edited native drawing. This is d06 yawn START, not d07 or the large d08 peak.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition/collab/reviews/cloud_s13_20261018/d05_d07_segment/approved_local/F036_d05_pretend_drowsy.png"
+    ],
+    "transparent_background": true
+  },
+  "rejection": "Correctly composited light backing shows blocky alpha haze around hair/body. Not adopted and not used for d07."
+}

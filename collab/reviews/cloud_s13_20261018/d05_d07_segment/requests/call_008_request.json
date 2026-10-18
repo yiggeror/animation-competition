@@ -1,0 +1,15 @@
+{
+  "call_id": "S13_d07_call_008",
+  "pose": "d07",
+  "status": "completed_raw_not_adopted_over_peak",
+  "tool": "image_gen.imagegen",
+  "dependency_sha256": "b077b6e0b759f1965f1e2d9499c8a3760ca4e3ffb19fc68e574160bafd546be6",
+  "args": {
+    "prompt": "Continue S13 from the supplied AUTHOR-ACCEPTED clean d06 drawing, not from any earlier flawed alpha version. Create the NEXT pose d07, held on frames044–049. Same girl, same1024×1536 transparent canvas, same global scale and camera registration, same lower-chest position and lower cutoff. Do not zoom or move the entire portrait.\n\nThis is the DEVELOPING FAKE YAWN, after d05's deliberate droop and d06's small beginning. Close BOTH eyelids almost fully, around10% of the fully-awake opening: only a tiny narrow iris sliver may remain, not the large partly visible brown pupils of d06. The eyelids and eyelashes must be real natural curves, not flattened eye stickers. Keep brows soft in a performed sleepy expression. The mouth opens clearly farther than the input, by roughly another half of its current aperture, into a moderate natural yawn. It is NOT the maximum d08 peak; leave room for a further opening next. Lower the actual mandible/chin a little more, roughly10–15additional source pixels, with matching cheek and underside-of-jaw structure. Do not just scale a red mouth patch on a fixed jaw, do not stretch the upper skull, and do not protrude the tongue.\n\nThe whole head gently tips back to about6degrees of chin lift, with a subtle further5degree return toward front (still approximately32degrees facing SCREEN RIGHT). Complete skull, nose/jaw, ears, bangs, back of head, pigtail roots and red flower ties remain one coherent volume. Redraw the real curved neck surfaces to connect naturally under the opening jaw and into the white collar. Avoid a long gray-stick neck, detached collar, pasted head or face-mesh distortion. Upper chest and both shoulders inhale together by only a few further source pixels, roughly8cumulative from the awake pose; never make isolated shoulder twitches. Keep the same white collar and yellow white-dot dress identity, with natural tiny cloth response rather than redesigning the pattern.\n\nReturn one clean transparent RGBA cutout. Outside the true inked hair/neck/dress/arms outline alpha must be fully transparent, without blocky soft alpha haze, outer glow, shadow or background. Keep genuine fine hair and gaps between pigtails and neck. Neutral painted character colors only, no extra scene lighting. No hands near the mouth, no new objects, no text or panels. This is d07 only; do not generate the d08 full yawn peak.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition/collab/reviews/cloud_s13_20261018/d05_d07_segment/approved_local/F040_d06_yawn_start.png"
+    ],
+    "transparent_background": true
+  },
+  "rejection": "Mouth opening and chest/chin lift too large for d07 intermediate; visually approached later d08 peak. Not used as d09/corrected-d07 source."
+}

@@ -1,5 +1,7 @@
 # S13 d02–d04 小段 · 沿锁定母态顺链交回 Astra
 
+最新状态：Astra已锁本页三张采用PNG，原SHA不变；当前d05–d07小批见 [新入口](../d05_d07_segment/README.md)。以下保留 `0c0f62d` 当时的交付与自审记录。
+
 **本轮3请求/3原件，d02→d03→d04依赖完成，作者已实看自审，待Astra小段回审。** 全部来自真实图像工具编辑；没有15张独立抽。唯一锁定源为 d01 配准PNG `91715601ae814bd84a3dc8d6ce43f1cc809a7bdd74e7390fefffe579f6882050`。授权原文见 [母态锁定与小段授权](../provenance/astra_d01_lock_and_segment_gate.md)。
 
 ## 优先看

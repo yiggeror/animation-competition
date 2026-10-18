@@ -1,9 +1,9 @@
 {
-  "stage": "d01_locked_d02_d04_segment_self_reviewed_pending_Astra",
-  "image_generation_requests": 4,
-  "successful_raw_images": 4,
+  "stage": "d01_d04_locked_d05_d07_self_reviewed_pending_Astra",
+  "image_generation_requests": 9,
+  "successful_raw_images": 9,
   "failed_requests": 0,
-  "post_d01_pose_requests": 3,
+  "post_d01_pose_requests": 8,
   "image_tool": "image_gen.imagegen",
   "image_tool_exposed": true,
   "execution_availability_tested": true,
@@ -23,7 +23,7 @@
       "path": "d02_d04_segment/originals/S13_d02_call_002_raw.png",
       "sha256": "df838e3cb6d2d2a4f8c1a5ab9252aa8b02292965d42ab21f03fd2a9dfbb675e1",
       "source_tool_path": "/workspace/generated_images/exec-78ee4cfc-b80c-4f60-80b2-61af76e99b3d.png",
-      "adoption_status": "partially_adopted_in_author_self_accepted_candidate_pending_Astra_segment_review",
+      "adoption_status": "Astra_locked_adopted_segment_0c0f62d",
       "adopted_output": "d02_d04_segment/approved_local/F018_d02_eyes_up.png",
       "adopted_sha256": "306ac1e2013a020b6a2e177d150f58ca34d1b17cdbbfc5488f166013dc06cd7e",
       "adopted_scope": "generated_eyes_only"
@@ -34,7 +34,7 @@
       "path": "d02_d04_segment/originals/S13_d03_call_003_raw.png",
       "sha256": "e2b899399fadcec5f019315501f74c379f4c18848c84638534f9383c092dae55",
       "source_tool_path": "/workspace/generated_images/exec-cd6a7350-2b67-4780-ac8e-57c9b35a2e81.png",
-      "adoption_status": "partially_adopted_in_author_self_accepted_candidate_pending_Astra_segment_review",
+      "adoption_status": "Astra_locked_adopted_segment_0c0f62d",
       "adopted_output": "d02_d04_segment/approved_local/F024_d03_whole_head_right.png",
       "adopted_sha256": "c04f4fcc60e6539cd7de3048e692a1986866e24cfffe4c702f03538c19decd5e",
       "adopted_scope": "complete_native_head_neck_collar_upper_shoulder_unit"
@@ -45,20 +45,76 @@
       "path": "d02_d04_segment/originals/S13_d04_call_004_raw.png",
       "sha256": "3c952b6c96031f2ece722ebe4615abd277d9647b0e0f7b914af9ea89a7146fe4",
       "source_tool_path": "/workspace/generated_images/exec-303cc6ef-7f79-49ea-a51d-59d743ea4968.png",
-      "adoption_status": "partially_adopted_in_author_self_accepted_candidate_pending_Astra_segment_review",
+      "adoption_status": "Astra_locked_adopted_segment_0c0f62d",
       "adopted_output": "d02_d04_segment/approved_local/F030_d04_awake_closed_mouth.png",
       "adopted_sha256": "994b085de94c9accbadfd9dea858aaa41814376ce42280b6a3c5fb3846b9f590",
       "adopted_scope": "generated_closed_mouth_patch_only_integer_translation"
+    },
+    {
+      "call_id": "S13_d05_call_005",
+      "pose": "d05",
+      "path": "d05_d07_segment/originals/S13_d05_call_005_raw.png",
+      "sha256": "6031e55e4b60d5ce61ef6064a01b9c09e4736477cad5611d91f3c2b1112332e9",
+      "source_tool_path": "/workspace/generated_images/exec-fe432a97-6851-4c23-8251-b7856e0af862.png",
+      "adoption_status": "native_whole_pose_author_self_accepted_pending_Astra_d05_d07_review",
+      "adopted_output": "d05_d07_segment/approved_local/F036_d05_pretend_drowsy.png",
+      "adopted_sha256": "6031e55e4b60d5ce61ef6064a01b9c09e4736477cad5611d91f3c2b1112332e9",
+      "adopted_scope": "full native RGBA, identity registration"
+    },
+    {
+      "call_id": "S13_d06_call_006",
+      "pose": "d06",
+      "path": "d05_d07_segment/originals/S13_d06_call_006_raw.png",
+      "sha256": "dfd81fc0e3842700852de05becdf414e91c479cfa6b8aaf670e37962a7e9bada",
+      "source_tool_path": "/workspace/generated_images/exec-03f47882-84f6-41ba-bafb-bcd0dc802370.png",
+      "adoption_status": "rejected_blocky_alpha_haze_not_a_d07_source"
+    },
+    {
+      "call_id": "S13_d06_call_007",
+      "pose": "d06",
+      "path": "d05_d07_segment/originals/S13_d06_call_007_raw.png",
+      "sha256": "b077b6e0b759f1965f1e2d9499c8a3760ca4e3ffb19fc68e574160bafd546be6",
+      "source_tool_path": "/workspace/generated_images/exec-e9fe608f-2b68-43cf-b2eb-daabe18cfe04.png",
+      "adoption_status": "native_whole_pose_author_self_accepted_pending_Astra_d05_d07_review",
+      "adopted_output": "d05_d07_segment/approved_local/F040_d06_yawn_start.png",
+      "adopted_sha256": "b077b6e0b759f1965f1e2d9499c8a3760ca4e3ffb19fc68e574160bafd546be6",
+      "adopted_scope": "full native RGBA, identity registration"
+    },
+    {
+      "call_id": "S13_d07_call_008",
+      "pose": "d07",
+      "path": "d05_d07_segment/originals/S13_d07_call_008_raw.png",
+      "sha256": "9a1f9e6a4f04662b72072e9c27ee1d6a4d28202889b7b8d22f9c3c03a3697071",
+      "source_tool_path": "/workspace/generated_images/exec-aa6d6a07-0aa6-473b-ba71-cfacbbe25e97.png",
+      "adoption_status": "not_adopted_over_peak_amplitude_not_a_following_source"
+    },
+    {
+      "call_id": "S13_d07_call_009",
+      "pose": "d07",
+      "path": "d05_d07_segment/originals/S13_d07_call_009_raw.png",
+      "sha256": "93ca7ffbb96bec1add190c170904886d8cdb316df38cbfa337c1a8cf2bc87fff",
+      "source_tool_path": "/workspace/generated_images/exec-a5054dc7-07d8-4430-afef-3fd18f75963b.png",
+      "adoption_status": "native_whole_pose_author_self_accepted_pending_Astra_d05_d07_review",
+      "adopted_output": "d05_d07_segment/approved_local/F044_d07_yawn_opening.png",
+      "adopted_sha256": "93ca7ffbb96bec1add190c170904886d8cdb316df38cbfa337c1a8cf2bc87fff",
+      "adopted_scope": "full native RGBA, identity registration"
     }
   ],
   "registration_candidates": 1,
   "local_repainting": false,
-  "alpha_cleanup": false,
+  "alpha_cleanup": true,
   "external_paid_service_or_api_calls": 0,
   "full_film_render_runs": 0,
   "blender_runs": 0,
   "module_or_scene_render_runs": 0,
-  "note": "d01 registered mother locked by Astra. New calls002→003→004 sequential from the actual self-accepted previous image. Original outputs and exact prompts preserved. d02 eyes / d04 lips use actual generated pixels with accepted pixels restored outside scope; d03 keeps complete native head-neck-collar unit after rejecting broken strict-boundary composites. No d05 request, no code-painted anatomy. 36f preview is isolated PNG layers, not Canvas scene.",
+  "note": "d01–d04 adopted PNGs locked by Astra; d05→d06→d07 authorized small batch, actual prior self-accepted image as each source. No d08 call. Native whole-pose outputs preferred for continuous head/neck/chest breathing; original outputs and exact requests preserved.",
   "local_source_pixel_composites": 3,
-  "isolated_PNG_layer_previews": 1
+  "isolated_PNG_layer_previews": 2,
+  "rejected_raw_outputs": 2,
+  "unique_adopted_pose_count": 7,
+  "post_d01_image_requests": 8,
+  "alpha_cleanup_method": "One image_gen same-pose quality repair, call007; no local alpha threshold or RGB-preservation claim.",
+  "image_tool_alpha_quality_repair_calls": 1,
+  "image_tool_pose_amplitude_correction_calls": 1,
+  "local_alpha_cleanup": false
 }

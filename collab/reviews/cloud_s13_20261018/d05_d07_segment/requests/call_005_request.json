@@ -1,0 +1,14 @@
+{
+  "call_id": "S13_d05_call_005",
+  "pose": "d05",
+  "status": "completed_one_raw_image",
+  "tool": "image_gen.imagegen",
+  "dependency_sha256": "994b085de94c9accbadfd9dea858aaa41814376ce42280b6a3c5fb3846b9f590",
+  "args": {
+    "prompt": "Continue the LOCKED S13 animation using ONLY the supplied adopted d04 drawing as production source. Create the NEXT drawing d05, frames036–039. It must be the same little girl, same1024×1536 transparent canvas, same character scale and camera registration. Preserve the lower chest, dress polka dots and lower image cutoff in exactly their input locations; do not zoom in to fill transparent margins.\n\nStory: she was awake and has just realized Grandma is watching her. She NOW deliberately pretends to be sleepy as an excuse. This is only the PREPARATION for the fake yawn, not the yawn peak. Make both upper eyelids deliberately droop to about65% of the input awake eye opening. Both pupils/irises remain clearly visible and directed toward Grandma up-right, naturally occluded by the upper lids rather than squashed. Keep identity and the warm brown iris highlights. Brows soften slightly as she puts on the sleepy act, not surprised, angry, crying, or smiling. Her closed lips only begin to part into a tiny natural opening, about0.01 of head height (roughly6source pixels), no tongue display or wide oval mouth yet.\n\nKeep the established right-facing whole-head orientation, with only a tiny approximately2degree return toward front (about40degrees total right) and a barely perceptible1degree chin lift. Reconstruct actual eyelids, complete head volume, jaw and curved neck as connected anatomy; do not compress the eyes, stretch a mouth patch, distort the face mesh, or rotate a pasted head sticker. The skull, near ear, bangs, pigtail roots and red flowers remain coherent with this small pose change. A gentle preparatory inhale starts: upper chest and both shoulders lift together by only about2source pixels, with a continuous white collar/neck junction. Do not lift one shoulder independently. Head height stays about640source pixels as loose camera control; do not copy any gray-stick diagram.\n\nPreserve the same hand-drawn anime character colors and outlines, dark brown low twin pigtails, red flower ties, yellow dress with white dots and white rounded collar. No added hands, elbows, props, background, scene lighting, text, guides or panels. Lower torso stays registered. One character drawing, transparent background. This is d05 only; do not jump ahead to half-closed eyes or a large open yawn.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition/collab/reviews/cloud_s13_20261018/d02_d04_segment/approved_local/F030_d04_awake_closed_mouth.png"
+    ],
+    "transparent_background": true
+  }
+}

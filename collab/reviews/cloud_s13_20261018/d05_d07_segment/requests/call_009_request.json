@@ -1,0 +1,15 @@
+{
+  "call_id": "S13_d07_call_009",
+  "pose": "d07",
+  "purpose": "correct_d07_intermediate_amplitude_from_accepted_d06",
+  "status": "completed_one_raw_image",
+  "tool": "image_gen.imagegen",
+  "dependency_sha256": "b077b6e0b759f1965f1e2d9499c8a3760ca4e3ffb19fc68e574160bafd546be6",
+  "args": {
+    "prompt": "Create a VERY SMALL NEXT STEP from this accepted S13 d06 into d07. Use this supplied d06 as the production source. Keep the exact1024×1536 transparent canvas and same portrait framing; do not enlarge, raise or recenter the character. Lower chest, dress waist and lower cutoff remain fixed. One single character.\n\nThe main new action is that BOTH eyelids close almost entirely: a tiny narrow slit may remain, around10% of the awake eye opening. Keep a natural drawn eyelid curve, with the irises mostly hidden by the upper lids. This is the in-between before the later d08 maximum yawn. Keep the mouth only MODERATELY open: increase its current opening by just about20percent, with a maximum around55–60source pixels high. Do NOT make a huge wide-open yawn oval. Keep the visible tongue small and inside the mouth, without sticking it out. The lower jaw moves down only a few further pixels, with coherent chin/cheek skin and a real neck connection. Never enlarge only a mouth sticker, stretch the upper skull or flatten the face.\n\nThe head tips back only gently, a few degrees more than this input, with no large upward head translation. The whole cranium, ears, bangs, pigtail roots and curved neck participate naturally; the face may return only slightly toward front while still looking to SCREEN RIGHT. Both shoulders and upper chest inhale together by a tiny amount (about2additional source pixels), not a large chest raise. The collar continues naturally around the neck. This must look clearly BETWEEN the input beginning yawn and a future bigger peak, not already at peak.\n\nPreserve the same dark brown twin pigtails/red flower ties, neutral skin, yellow white-dot dress, white rounded collar, warm hand-drawn linework and original character proportions. No new hands, objects, background, scene light, text or panels. Clean transparent RGBA outside the true fine hair and clothing silhouette, with no glow, block-pattern alpha haze or backdrop. Do not perform the full peak yawn in this drawing.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition/collab/reviews/cloud_s13_20261018/d05_d07_segment/approved_local/F040_d06_yawn_start.png"
+    ],
+    "transparent_background": true
+  }
+}
