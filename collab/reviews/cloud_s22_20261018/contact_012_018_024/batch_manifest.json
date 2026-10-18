@@ -1,0 +1,77 @@
+{
+  "locked_mother_sha256": "d4e78e2d5b84a72588cf3af1ff23ce39cdc18d19dde2fbf1f8eaf44ba62d7ef5",
+  "chain": [
+    "locked F000",
+    "F012 call02",
+    "F018 call01",
+    "F024 call01"
+  ],
+  "new_tool_calls": 4,
+  "new_successful_outputs": 3,
+  "new_failed_calls": 1,
+  "cumulative_S22_tool_attempts": 5,
+  "cumulative_S22_successful_outputs": 4,
+  "cumulative_S22_failed_calls": 1,
+  "outputs": [
+    {
+      "tool": "image_gen.imagegen",
+      "attempt": 2,
+      "source_path": "/workspace/generated_images/exec-bdd2a324-f1ba-40fd-9c17-b03873095ab4.png",
+      "retained_raw": "contact_012_018_024/F012/originals/F012_call02_raw.png",
+      "sha256": "aaa4ee1ed1ee2142ebcfac245e5934e34ba55b6f86eed11c430fb7fb22cb523f",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "batch_tool_calls_so_far": 2,
+      "batch_successful_outputs_so_far": 1,
+      "batch_failed_calls_so_far": 1,
+      "cumulative_S22_attempts_so_far": 3,
+      "cumulative_S22_successful_outputs_so_far": 2,
+      "postprocessing": "None; raw preserved unchanged. QA composites and crops only."
+    },
+    {
+      "tool": "image_gen.imagegen",
+      "attempt": 1,
+      "source_path": "/workspace/generated_images/exec-dc06af34-9149-4e7e-a1ff-6b133b6bb53b.png",
+      "retained_raw": "contact_012_018_024/F018/originals/F018_call01_raw.png",
+      "sha256": "062e9495d9b401e23bd9c8670b4c08f8f1d19c4c08cd1fc9328924fc62e8283d",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "batch_tool_calls_so_far": 3,
+      "batch_successful_outputs_so_far": 2,
+      "batch_failed_calls_so_far": 1,
+      "cumulative_S22_attempts_so_far": 4,
+      "cumulative_S22_successful_outputs_so_far": 3,
+      "postprocessing": "None; raw preserved unchanged. QA composites and crops only."
+    },
+    {
+      "tool": "image_gen.imagegen",
+      "attempt": 1,
+      "source_path": "/workspace/generated_images/exec-7efa2b81-fc07-41ac-a2bb-2854089dcc10.png",
+      "retained_raw": "contact_012_018_024/F024/originals/F024_call01_raw.png",
+      "sha256": "75b367bc3eb000ae5e526bc2fa90762a4f990b6b380766554a1635608f89d1a5",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "batch_tool_calls_so_far": 4,
+      "batch_successful_outputs_so_far": 3,
+      "batch_failed_calls_so_far": 1,
+      "cumulative_S22_attempts_so_far": 5,
+      "cumulative_S22_successful_outputs_so_far": 4,
+      "postprocessing": "None; raw preserved unchanged. QA composites and crops only."
+    }
+  ],
+  "status": "STRUCTURE_CANDIDATES_FOR_ASTRA_REVIEW; nonzero rod registration drift disclosed",
+  "production_ready": false,
+  "new_state_F030": false,
+  "exposure_csv_unchanged": true,
+  "plan_json_unchanged": true,
+  "preview": "actual PNGs only on gray; no scene render"
+}

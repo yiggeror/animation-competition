@@ -1,0 +1,4 @@
+cwd: collab/reviews/cloud_s22_20261018/contact_012_018_024
+ffmpeg -y -v error -f concat -safe 0 -i preview/concat.txt -vf fps=24 -frames:v 36 -c:v libx264 -crf 18 -pix_fmt yuv420p S22_contact_000_035_review.mp4
+
+Preview source: actual F000/F012/F018/F024 PNGs composited on RGB(115,115,115), fit to1280x720 with review-only label. Holds12/6/6/12. No S22 source module, generated code person or scene-light simulation.
