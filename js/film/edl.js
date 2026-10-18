@@ -2,15 +2,20 @@
 // line：'engine' 床单戏（js/lamp 光照引擎），'paint' 屋内镜头（js/paint 背景图 + 程序打光），'code' 纯程序画（手机屏等）。
 // 时长按 docs/preproduction/beat-sheet.md 的节拍，比原镜头表（34 个）压缩、合并了一些动作；总长约 4 分 40 秒。
 export const SHOTS = [
-  // 第 1 场 · 闷（日光灯）
-  { id: 'S01', scene: 1, line: 'paint', dur: 12, mod: 'js/paint/shots/s01.js', text: '全景：吊扇转、蚊香烟、电视亮着；小满趴在竹席上玩手机，奶奶坐矮凳剥毛豆，抬眼看看小满' },
-  { id: 'S02', scene: 1, line: 'code', dur: 4, mod: 'js/code/s02.js', text: '特写：手机屏幕，游戏画面 + 电量 2%' },
-  { id: 'S03', scene: 1, line: 'paint', dur: 6, mod: 'js/paint/shots/s03.js', text: '中近景：奶奶看一眼小满，把西瓜往前递了递，又收回来自己咬一口' },
+  // 第 1 场 · 闷（日光灯）。10-18 按"代码动画的节奏"重排：时长跟着信息走，每个动作只做一次，不循环（js/anim/，代码人物先定节奏，之后按姿势配画）
+  { id: 'S01', scene: 1, line: 'paint', dur: 3.5, mod: 'js/anim/s01.js', text: '全景：吊扇转、蚊香烟被吹斜、电视亮着；小满趴在竹席上玩手机，奶奶坐矮凳剥毛豆' },
+  { id: 'S02', scene: 1, line: 'code', dur: 2.5, mod: 'js/anim/s02.js', text: '特写：手机屏幕，游戏画面 + 电量 2%（插着充电）' },
+  { id: 'S02a', scene: 1, line: 'paint', dur: 2.5, mod: 'js/anim/s02a.js', text: '近景：小满的脸被屏幕照蓝，差点输——眉毛一挑，躲过去了——嘴角一撇' },
+  { id: 'S03', scene: 1, line: 'paint', dur: 4, mod: 'js/anim/s03.js', text: '中近景：奶奶抬眼看小满，笑了笑，拿起一块西瓜往她那边推过去，等着' },
+  { id: 'S03a', scene: 1, line: 'paint', dur: 1.5, mod: 'js/anim/s03a.js', text: '近景：西瓜推到跟前，小满头也不抬，摇了一下头' },
+  { id: 'S03b', scene: 1, line: 'paint', dur: 2, mod: 'js/anim/s03b.js', text: '近景：奶奶把西瓜收回来，自己咬了一口，嚼着——随你' },
   // 第 2 场 · 停电
-  { id: 'S04', scene: 2, line: 'paint', dur: 8, mod: 'js/paint/shots/s04.js', text: '全景："啪"——灯灭、电视缩成一个亮点、吊扇慢慢停；月光从窗口斜进来。奶奶愣住，抬头看灯，又转头看小满' },
-  { id: 'S05', scene: 2, line: 'code', dur: 4, mod: 'js/code/s05.js', text: '特写：手机 1%，手指狂按，屏幕黑' },
-  { id: 'S06', scene: 2, line: 'paint', dur: 8, mod: 'js/paint/shots/s06.js', text: '特写（月光，侧面）：墙脚插座，小满的手捏着插头拔了又插，举到嘴边吹一口，最后狠狠插回去' },
-  { id: 'S07', scene: 2, line: 'paint', dur: 5, mod: 'js/paint/shots/s07.js', text: '全景：小满往后一倒瘫在竹席上扇风；奶奶起身走向立柜，踮脚摸马灯' },
+  { id: 'S04', scene: 2, line: 'paint', dur: 3, mod: 'js/anim/s04.js', text: '全景："啪"——灯灭、电视缩成一个亮点、吊扇慢下来；奶奶的手停住，抬头看灯；小满还在玩' },
+  { id: 'S04a', scene: 2, line: 'code', dur: 2, mod: 'js/anim/s04a.js', text: '特写：吊扇停了，蚊香的烟变成一根直直往上升的线' },
+  { id: 'S05', scene: 2, line: 'code', dur: 3, mod: 'js/anim/s05.js', text: '特写：手机 1%，手指狂按，屏幕黑了' },
+  { id: 'S05a', scene: 2, line: 'paint', dur: 2.5, mod: 'js/anim/s05a.js', text: '近景：小满的脸也黑了——愣住，"不是吧"，猛按电源键' },
+  { id: 'S06', scene: 2, line: 'paint', dur: 5, mod: 'js/anim/s06.js', text: '特写（月光，侧面）：墙脚插座，小满拔下插头看看、吹一口、插回去，再拔再插，最后狠狠插回去' },
+  { id: 'S07', scene: 2, line: 'paint', dur: 3.5, mod: 'js/anim/s07.js', text: '全景：小满往后一倒瘫在竹席上扇风；奶奶放下盆站起来，朝立柜走过去' },
   { id: 'S08', scene: 2, line: 'paint', dur: 6, mod: 'js/paint/shots/s08.js', text: '中景→特写→中景：黑暗里奶奶"嚓"地划着火柴，火光照亮她；特写里火柴碰到灯芯，甩灭，灯罩落下；回中景，马灯亮了' },
   // 第 3 场 · 手电
   { id: 'S09', scene: 3, line: 'paint', dur: 4, mod: 'js/paint/shots/s09.js', text: '近景（马灯从右边照过来）：小满跪在电视柜前捧着旧手电，推开关不亮，往手心磕两下，再推——亮了，光柱打出去' },

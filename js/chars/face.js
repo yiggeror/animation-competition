@@ -63,6 +63,11 @@ export function mouth(fig, c, w, f, o) {
     fig.detail([[c[0] - hw, c[1] - lift], [c[0], c[1] + lift * 0.5], [c[0] + hw, c[1] - lift]], { z, lw: o.lw * 0.85, color: ink, profile: 'soft', clip });
     return;
   }
+  // 嘴角往下又张着嘴（吃惊、发愣、"不是吧"）：竖着的小椭圆，不画成笑口
+  if (s < -0.2) {
+    fig.detail(ellipsePts(c[0], c[1] + w * 0.08, w * (0.14 + 0.1 * open), w * (0.16 + 0.32 * open), 16), { z, fill: o.inside, lw: o.lw * 0.75, color: ink, clip });
+    return;
+  }
   // 张开：上唇线 + 下唇的弧，里面填深色，笑的时候露一点舌头
   const top = c[1] - lift * 0.6;
   const depth = w * (0.25 + 0.65 * open);
