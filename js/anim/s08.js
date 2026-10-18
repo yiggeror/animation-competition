@@ -152,3 +152,4 @@ const shot = {
   async render(ctx, t, w, h) { this.bg = await bg(); return renderPaint(ctx, t, w, h, this); },
 };
 export async function renderFrame(ctx, t, w, h) { return shot.render(ctx, t, w, h); }
+export { pose, matchGeom, WICK, leverTip, lift };
