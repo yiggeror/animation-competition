@@ -1,0 +1,135 @@
+{
+  "source_commit": "5749423f96a20b8af775a4263657881782f8c8f2",
+  "drawings": {
+    "F084": {
+      "sha256": "3a43afce664385306de620c16fccef8ee8534e0708c431fedae0b432cfaa71b9",
+      "alpha_R_ink_and_contact_exact": true,
+      "middle_highlight_pixels_exact": true,
+      "limited_dark_field_only": true,
+      "unchanged_cumulative_delta": [
+        61,
+        -35
+      ],
+      "five_contact_regions_max_RGBA_error": {
+        "child_pinch": 0,
+        "child_wrist": 0,
+        "adult_thumb": 0,
+        "four_supporting_ends": 0,
+        "single_rod": 0
+      },
+      "contrasts": {
+        "adult": {
+          "middle_minus_dark_RGB": [
+            1.0,
+            16.0,
+            22.0
+          ],
+          "dark_before": [
+            252.0,
+            190.0,
+            154.0
+          ],
+          "dark_after": [
+            252.0,
+            192.0,
+            156.0
+          ]
+        },
+        "child": {
+          "middle_minus_dark_RGB": [
+            1.0,
+            14.0,
+            18.0
+          ],
+          "dark_before": [
+            252.0,
+            191.0,
+            156.0
+          ],
+          "dark_after": [
+            252.0,
+            193.0,
+            156.0
+          ]
+        }
+      }
+    },
+    "F090": {
+      "sha256": "cabe79438fa626ff0ce7a36e6447a4b8dbac4755528479fce125323a3a68d805",
+      "alpha_R_ink_and_contact_exact": true,
+      "middle_highlight_pixels_exact": true,
+      "limited_dark_field_only": true,
+      "unchanged_cumulative_delta": [
+        73,
+        -42
+      ],
+      "five_contact_regions_max_RGBA_error": {
+        "child_pinch": 0,
+        "child_wrist": 0,
+        "adult_thumb": 0,
+        "four_supporting_ends": 0,
+        "single_rod": 0
+      },
+      "contrasts": {
+        "adult": {
+          "middle_minus_dark_RGB": [
+            1.0,
+            15.0,
+            17.0
+          ],
+          "dark_before": [
+            252.0,
+            187.0,
+            149.0
+          ],
+          "dark_after": [
+            252.0,
+            192.0,
+            157.0
+          ]
+        },
+        "child": {
+          "middle_minus_dark_RGB": [
+            -1.0,
+            9.0,
+            12.0
+          ],
+          "dark_before": [
+            253.0,
+            191.0,
+            151.0
+          ],
+          "dark_after": [
+            253.0,
+            195.0,
+            158.0
+          ]
+        }
+      }
+    }
+  },
+  "clips": [
+    {
+      "name": "S22_084_107_shadow_fixed24.mp4",
+      "sha256": "5580085a90de36314fa1a2dc0351f3476ad2b437051e0549bb1db4ba03309ab8",
+      "frames": 24,
+      "actual_decoded_holds_match": true,
+      "no_audio": true
+    },
+    {
+      "name": "S22_084_107_before_after24.mp4",
+      "sha256": "c77d1835a74c4833dd91623f4a86f61f4c6b8dc9bb4c36085a30db145e73d9f8",
+      "frames": 24,
+      "actual_decoded_holds_match": true,
+      "no_audio": true
+    }
+  ],
+  "preexisting_review_files_SHA_verified": 559,
+  "old_raws_prompts_candidates_exposure_table_and_plan_unchanged": true,
+  "image_generation_calls": 0,
+  "actual_visual_review": "provenance/local_review.json",
+  "production_ready": false,
+  "Astra_dual_review_pending": true,
+  "no_F108": true,
+  "no_F114": true
+}
