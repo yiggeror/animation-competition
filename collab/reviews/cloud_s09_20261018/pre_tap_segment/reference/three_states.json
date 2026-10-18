@@ -1,0 +1,250 @@
+{
+  "status": "THREE_STATE_FULL_ARM_REFERENCE_FOR_SELF_REVIEW_BEFORE_GENERATION",
+  "canvas": [
+    1536,
+    864
+  ],
+  "mother": "switch_segment/candidates/d04_registered.png",
+  "mother_sha256": "d73b16353adfacb9f92a15c9bbf0910d268ca7c7788d46c43a1c9fee182b22ec",
+  "head_unit": 250,
+  "rest_arm_lengths_each": 200,
+  "joint_uncertainty_source_registered": "shoulders under sleeves about±10, elbows±6, wrists±4; new points are intentions, not actual drawing measurements",
+  "prop_length": 240.2052476443473,
+  "receiver_face": [
+    940.0,
+    615.0
+  ],
+  "receiver_normal": [
+    0.0,
+    -1.0
+  ],
+  "reference_revision": "v2 after rejected call01-03: natural left palm with fingers screen right, wrist on left heel; vertical flashlight aligns tail above pad. Replaces forced left-pointing-palm reference, which produced reversed wrist attachment.",
+  "limits": "Old F000 local near-hand envelope is NOT transferred to the newly rotated grip. D026 actual grip must be checked; D031/D037 actual palm thickness, wrist connection, limb depths and future knuckle clearance must be inspected. No F042 artwork allowed. Target centerline checks are not full silhouette or 3D proof.",
+  "states": [
+    {
+      "id": "d05",
+      "frame": 26,
+      "hold": 5,
+      "joints": {
+        "near_shoulder": [
+          643,
+          428
+        ],
+        "near_elbow": [
+          676,
+          585
+        ],
+        "near_wrist": [
+          790,
+          508
+        ],
+        "far_shoulder": [
+          819,
+          420
+        ],
+        "far_elbow": [
+          879,
+          586
+        ],
+        "far_wrist": [
+          925,
+          508
+        ]
+      },
+      "projection": {
+        "near": {
+          "upper_projected": 160.4306703844374,
+          "fore_projected": 137.56816492197603,
+          "rest_length_each": 200,
+          "measurement": "manual source proxies / new projection choices; not true measured anatomy"
+        },
+        "far": {
+          "upper_projected": 176.5106229097841,
+          "fore_projected": 90.55385138137417,
+          "rest_length_each": 200,
+          "measurement": "manual source proxies / new projection choices; not true measured anatomy"
+        }
+      },
+      "tail": [
+        778.375314861461,
+        485.2392947103274
+      ],
+      "lamp": [
+        1013.8916876574308,
+        438.0100755667506
+      ],
+      "axis_degrees": -11.33939045575007,
+      "length": 240.2052476443473,
+      "switch": "OFF",
+      "light": false,
+      "left_palm_face": null,
+      "left_palm_normal": [
+        0.0,
+        -1.0
+      ],
+      "left_palm_band_n": [
+        -36,
+        12
+      ],
+      "left_pad_s": [
+        -32,
+        0
+      ],
+      "tail_gap_along_receiver_normal": null,
+      "near_forearm_far_forearm_centerlines_cross": false,
+      "intent": "same two-hand support; slide OFF, worried face retained"
+    },
+    {
+      "id": "d06",
+      "frame": 31,
+      "hold": 6,
+      "joints": {
+        "near_shoulder": [
+          643,
+          428
+        ],
+        "near_elbow": [
+          700,
+          580
+        ],
+        "near_wrist": [
+          885,
+          535
+        ],
+        "far_shoulder": [
+          819,
+          420
+        ],
+        "far_elbow": [
+          837,
+          585
+        ],
+        "far_wrist": [
+          890,
+          625
+        ]
+      },
+      "projection": {
+        "near": {
+          "upper_projected": 162.3360711610331,
+          "fore_projected": 190.3943276465977,
+          "rest_length_each": 200,
+          "measurement": "manual source proxies / new projection choices; not true measured anatomy"
+        },
+        "far": {
+          "upper_projected": 165.97891432347663,
+          "fore_projected": 66.40030120413611,
+          "rest_length_each": 200,
+          "measurement": "manual source proxies / new projection choices; not true measured anatomy"
+        }
+      },
+      "tail": [
+        940.0,
+        580.0
+      ],
+      "lamp": [
+        940.0,
+        339.7947523556527
+      ],
+      "axis_degrees": -90.0,
+      "length": 240.2052476443473,
+      "switch": "OFF",
+      "light": false,
+      "left_palm_face": [
+        940.0,
+        615.0
+      ],
+      "left_palm_normal": [
+        0.0,
+        -1.0
+      ],
+      "left_palm_band_n": [
+        -36,
+        12
+      ],
+      "left_pad_s": [
+        -32,
+        0
+      ],
+      "tail_gap_along_receiver_normal": 35,
+      "near_forearm_far_forearm_centerlines_cross": false,
+      "intent": "left releases and opens naturally with fingers pointing screen right, wrist at left heel; vertical torch tail aligned above pad; no contact"
+    },
+    {
+      "id": "d07",
+      "frame": 37,
+      "hold": 5,
+      "joints": {
+        "near_shoulder": [
+          643,
+          428
+        ],
+        "near_elbow": [
+          700,
+          580
+        ],
+        "near_wrist": [
+          885,
+          515
+        ],
+        "far_shoulder": [
+          819,
+          420
+        ],
+        "far_elbow": [
+          837,
+          585
+        ],
+        "far_wrist": [
+          890,
+          625
+        ]
+      },
+      "projection": {
+        "near": {
+          "upper_projected": 162.3360711610331,
+          "fore_projected": 196.08671551127577,
+          "rest_length_each": 200,
+          "measurement": "manual source proxies / new projection choices; not true measured anatomy"
+        },
+        "far": {
+          "upper_projected": 165.97891432347663,
+          "fore_projected": 66.40030120413611,
+          "rest_length_each": 200,
+          "measurement": "manual source proxies / new projection choices; not true measured anatomy"
+        }
+      },
+      "tail": [
+        940.0,
+        560.0
+      ],
+      "lamp": [
+        940.0,
+        319.7947523556527
+      ],
+      "axis_degrees": -90.0,
+      "length": 240.2052476443473,
+      "switch": "OFF",
+      "light": false,
+      "left_palm_face": [
+        940.0,
+        615.0
+      ],
+      "left_palm_normal": [
+        0.0,
+        -1.0
+      ],
+      "left_palm_band_n": [
+        -36,
+        12
+      ],
+      "left_pad_s": [
+        -32,
+        0
+      ],
+      "tail_gap_along_receiver_normal": 55,
+      "near_forearm_far_forearm_centerlines_cross": false,
+      "intent": "left holds receiver; right whole grip/prop withdraws20px vertically with no size change; no contact"
+    }
+  ]
+}

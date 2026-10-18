@@ -1,0 +1,124 @@
+{
+  "status": "PARTIAL_DIAGNOSTIC_HANDOFF_S09_CALLS_PAUSED_BY_COORDINATOR",
+  "executed_calls": 7,
+  "actual_raw_returns": 7,
+  "d05_calls": 1,
+  "d06_calls": 6,
+  "d07_calls": 0,
+  "F042_calls": 0,
+  "prepared_but_NOT_CALLED": [
+    "requests/d06_call07_arguments.json"
+  ],
+  "calls": [
+    {
+      "state": "d05",
+      "call": 1,
+      "executed": true,
+      "original": "originals/d05_call01_raw.png",
+      "sha256": "76c4a0e9d9f3256a13a6b1a23f8c6e06fcad4884351b772bef870b71ead3f7f9",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_return": "requests/d05_call01_raw_return.json",
+      "raw_bytes_match_return": true,
+      "status": "AUTHOR_PASS_PENDING_ASTRA"
+    },
+    {
+      "state": "d06",
+      "call": 1,
+      "executed": true,
+      "original": "originals/d06_call01_raw.png",
+      "sha256": "efd6539ed872c08be50382a23bdd4d9f98c7611970a857dd05ed4618f499bc9a",
+      "native_size": [
+        1671,
+        941
+      ],
+      "raw_return": "requests/d06_call01_raw_return.json",
+      "raw_bytes_match_return": true,
+      "status": "NOT_CHAIN_APPROVED"
+    },
+    {
+      "state": "d06",
+      "call": 2,
+      "executed": true,
+      "original": "originals/d06_call02_raw.png",
+      "sha256": "b401bf57eeb5ff680798517ca9ce9ff123c60891056dfd989a04e0d842ab9683",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_return": "requests/d06_call02_raw_return.json",
+      "raw_bytes_match_return": true,
+      "status": "NOT_CHAIN_APPROVED"
+    },
+    {
+      "state": "d06",
+      "call": 3,
+      "executed": true,
+      "original": "originals/d06_call03_raw.png",
+      "sha256": "e563526918d79b0f7ceff84bb56cbcce8d4266c7c55b0868b1935516dfa9e966",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_return": "requests/d06_call03_raw_return.json",
+      "raw_bytes_match_return": true,
+      "status": "NOT_CHAIN_APPROVED"
+    },
+    {
+      "state": "d06",
+      "call": 4,
+      "executed": true,
+      "original": "originals/d06_call04_raw.png",
+      "sha256": "694e4111482050214e111dca395dddca67bf5552d6613f7ae7d348f552584d49",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_return": "requests/d06_call04_raw_return.json",
+      "raw_bytes_match_return": true,
+      "status": "NOT_CHAIN_APPROVED"
+    },
+    {
+      "state": "d06",
+      "call": 5,
+      "executed": true,
+      "original": "originals/d06_call05_raw.png",
+      "sha256": "05b3301da1652178ee0c39f3b5df181551cd1627f34ec4726e529c127f1ac93c",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_return": "requests/d06_call05_raw_return.json",
+      "raw_bytes_match_return": true,
+      "status": "NOT_CHAIN_APPROVED"
+    },
+    {
+      "state": "d06",
+      "call": 6,
+      "executed": true,
+      "original": "originals/d06_call06_raw.png",
+      "sha256": "cccd0e8fc784146c14d7d048ccc48f889e8662a6ccbc3ff1bb014f995d7001fd",
+      "native_size": [
+        1672,
+        941
+      ],
+      "raw_return": "requests/d06_call06_raw_return.json",
+      "raw_bytes_match_return": true,
+      "status": "NOT_CHAIN_APPROVED"
+    }
+  ],
+  "closest_raw": "originals/d06_call05_raw.png",
+  "new_technical_repair_reference": "reference/d06_size_preposition_for_native_seam.png",
+  "new_reference_is_native_raw_return": false,
+  "reference_needs_native_seam_and_stabilization_review": true,
+  "independent_61sol_summary": {
+    "call01": "Head/body drift and palm misalignment; do not chain.",
+    "call05": "Natural left forearm-wrist-palm continuity and thick pad, real gap; no clear static topology blocker. Torch aspect ratio still inconsistent.",
+    "measurement_correction": "F000 cap is occluded: visible44raw is not complete diameter; do not shrink whole cap to44. Approx axial lengths F000375–390,04=335–350,05=435–455 raw; head diameters125–135.",
+    "summary_not_verbatim": true
+  },
+  "no_F037_from_failed_F031": true,
+  "next_gate": "Astra review nearest raw and explicit new pixel-based repair judgment; no repeated S09 draw requests while waiting"
+}
