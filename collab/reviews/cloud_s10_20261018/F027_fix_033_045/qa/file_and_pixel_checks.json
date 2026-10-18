@@ -1,0 +1,55 @@
+{
+  "F027_source_sha256": "0ebcbee47fc75ee3daf9eb7c794376a16b55857fd90e6333d3a8aa257f051d0d",
+  "F027_original_source_unchanged": true,
+  "F027_all_RGBA_outside_eye_mask_identical": true,
+  "F030_approved_source_unchanged": true,
+  "candidates": {
+    "F027_fixed": {
+      "sha256": "01297489955b35fe29241f303f63a1175fb724a02363a118908c0fa0847269cb",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "fixed_band_y948_1079_RGBA_equal_locked_F000": true
+    },
+    "F033": {
+      "sha256": "d8cbee2af69175a22dd8e2e28a61701af46c411f06038d2b9437e47051941380",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "fixed_band_y948_1079_RGBA_equal_locked_F000": true
+    },
+    "F045": {
+      "sha256": "81f75ed82e4579d2e3879f6fffb66dbe926d8cad6782df0449a1f31d5686f7a8",
+      "size": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "fixed_band_y948_1079_RGBA_equal_locked_F000": true
+    }
+  },
+  "raw_outputs": {
+    "F027_fix": {
+      "original_retained_unchanged": true,
+      "sha256": "97f023e5c2fc0685058d0d3d9dc81ea8f94ddc40ffe887823b86003d848b179a"
+    },
+    "F033": {
+      "original_retained_unchanged": true,
+      "sha256": "2a8aec193a06c3d0b4a24cbceb1666681d169e6c638559714dc42e3814a24dbe"
+    },
+    "F045": {
+      "original_retained_unchanged": true,
+      "sha256": "f8388536b96bf095349be991b77fb99c803749f51f7d81799854fb1b2c5b18b4"
+    }
+  },
+  "actual_image_review": [
+    "F027 eye crop: left gaze, medium squint, fixed frames",
+    "F033 native head neck + white background: full head turn and attached neck; eyes closed",
+    "F045 native head neck + gray background: small easing, slit opening",
+    "Actual MP4 contact plus native decode F027/F033/F045: lighting separate, head neck continuous; residual left collar edge documented"
+  ]
+}

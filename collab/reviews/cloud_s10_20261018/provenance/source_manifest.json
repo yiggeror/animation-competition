@@ -140,9 +140,9 @@
   "reference_method": "Python/matplotlib technical diagrams; source art remains unchanged; no generated production character.",
   "source_art_copy_policy": "Original sources remain at fixed repository paths; no duplicate large originals in this package.",
   "current_execution": {
-    "stage": "locked F000; F024/F027/F030 candidates and actual33frame scene exposure submitted for Astra review",
-    "executed_calls": 6,
-    "successful_outputs": 6,
+    "stage": "F000 locked; independently-approved F030 retained; eye-only F027 fix and F030→F033→F045 candidates + actual72frame prefix submitted for Astra review",
+    "executed_calls": 9,
+    "successful_outputs": 9,
     "failed_image_calls": 0,
     "other_pose_calls": 0,
     "tool": "image_gen.imagegen",
@@ -156,13 +156,25 @@
     "local_repair_request": "F000_repair/provenance/cloth_call01_request_ACTUAL.json",
     "local_repair_raw": "F000_repair/originals/cloth_call01_raw.png",
     "quality_rejected_outputs": 1,
-    "local_eye_calls": 1,
+    "local_eye_calls": 2,
     "initial_F000_calls": 1,
     "pose_calls": {
       "F024": 1,
       "F027": 2,
-      "F030": 1
+      "F030": 1,
+      "F033": 1,
+      "F045": 1
     },
-    "latest_batch": "F024_027_030/README.md"
+    "latest_batch": "F027_fix_033_045/README.md",
+    "actual_exposure": "F027_fix_033_045/exposure/S10_first72_scene.mp4",
+    "actual_exposure_frames": 72,
+    "actual_exposure_seconds": 3,
+    "actual_exposure_audio": false,
+    "not_generated": [
+      "F072",
+      "F096"
+    ],
+    "F027_call02_status": "NOT locked due wrong gaze/reopened eyes, preserved as source for eye-only correction",
+    "F027_eye_fix_calls": 1
   }
 }

@@ -1,0 +1,40 @@
+{
+  "source": "inputs/F027_reviewed_source.png",
+  "source_sha256": "0ebcbee47fc75ee3daf9eb7c794376a16b55857fd90e6333d3a8aa257f051d0d",
+  "raw": "originals/F027_fix_call01_raw.png",
+  "donor_uniform_registration": [
+    3.805434492420582,
+    0.7981590465514268,
+    -1.2254892490174067
+  ],
+  "frame_registration_error": 19.965298848735436,
+  "skin_RGB_offset": [
+    6.0,
+    1.0,
+    0.0
+  ],
+  "adoption": "only two feathered lens-interior eye ellipses; no eyebrows, frame, bridge, nose, head, hair, ears, neck or clothing adoption",
+  "ellipse_masks": [
+    [
+      939,
+      502,
+      58,
+      34
+    ],
+    [
+      1123,
+      498,
+      49,
+      32
+    ]
+  ],
+  "changed_pixels": 10913,
+  "changed_bbox": [
+    882,
+    467,
+    1172,
+    536
+  ],
+  "outside_eye_mask_RGBA_identical": true,
+  "candidate_sha256": "01297489955b35fe29241f303f63a1175fb724a02363a118908c0fa0847269cb"
+}
