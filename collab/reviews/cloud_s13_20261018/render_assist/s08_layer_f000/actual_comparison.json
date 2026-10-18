@@ -1,0 +1,45 @@
+{
+  "fixed_commit": "23ced01306239a15a55f42a8d46e23fe375b9c63",
+  "old_actual_source_commit": "b1fa2bace80a79dda6364ca70eaeb2c3d42306eb",
+  "old_actual_sha256": "9b63b3605aa59b8383e87f0322bceee1078e4486cd27e71d9c067b79a44d9ccd",
+  "new_actual_sha256": "6504e01d6f3bb2749ddc6dc65bf8edd5a1f7cb8e44d415a4615ce3f7cd103380",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "time": 0,
+  "changed_pixels": 1272,
+  "changed_bbox_inclusive": [
+    761,
+    978,
+    1089,
+    998
+  ],
+  "elbow_check_ROIs": {
+    "near_elbow": [
+      730,
+      960,
+      830,
+      1010
+    ],
+    "far_elbow": [
+      1010,
+      960,
+      1110,
+      1010
+    ]
+  },
+  "changed_outside_elbow_ROIs": 0,
+  "max_abs_channel_difference": 67,
+  "actual_render_not_topology_mock": true,
+  "image_generation_calls": 0,
+  "module_table_person_camera_light_modified": false,
+  "split_reconstructs_exact_c803_RGBA": true,
+  "alpha_overlap_pixels": 0,
+  "unchanged_dependency_SHA256": {
+    "js/paint/paintshot.js": "e1d059b90d799301826bd3b4ae34a06bf6c6aadfd9ead0fa25d2ccc09cf5b36c",
+    "js/code/s08.js": "2b5af710ff40ca93a370b6949713f9a52462d0d8f5a521ca4c239b18dafc7897",
+    "assets/paint/bg_01_room_wide.png": "3bc55f3b9d238b4242eddbd06a0c3f81a394673fa19c4f33ef263ba65d4e01ed",
+    "tools/js/snap.cjs": "68c407d94e96d69b6c4e868636b5b3fa08af53cc8353f695bb96dcdd3f27653d"
+  }
+}
