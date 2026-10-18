@@ -1,0 +1,29 @@
+"""F033 original layers and foreground-hand/low-grip source-over audit; no image edits or Canvas."""
+from pathlib import Path
+import json,hashlib,sys
+from PIL import Image
+import numpy as np
+O=Path(__file__).resolve().parent;R=Path(sys.argv[1]).resolve();F=R/'F033_FINAL_LOCKED';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();read=lambda p:np.array(Image.open(p).convert('RGBA'));mask=lambda p:np.array(Image.open(p).convert('L'))>0;diff=lambda x,y,m:int(np.any(x[m]!=y[m],axis=1).sum())
+src=F/'S08_F033_grandma_match_box_RGBA.png';assert sha(src)=='0f8637f7f1cf5cc01e99029da5da13c9c42bac06329e2b64d77980d997029b47';a=read(src);contract=json.loads((F/'HAND_REUSE_CONTRACT.json').read_text());assert contract['source_sha256']==sha(src);assert contract['near_match_head']==[1230,707];assert contract['near_visible_wood_exit']==[1194.9191346191965,737.3699338842536]
+arts=json.loads((O/'layer_contract.js').read_text().split(' = ',1)[1].rstrip(';\n'))['033'];layers={}
+for role,meta in arts.items():
+ p=O/'frames'/meta['filename'];assert sha(p)==meta['sha256'];layers[role]=read(p);assert np.array_equal(layers[role][:,:,:3],a[:,:,:3])
+assert np.array_equal(sum(v[:,:,3].astype(np.uint16) for v in layers.values()),a[:,:,3]);assert sum(v[:,:,3]>0 for v in layers.values()).max()==1
+reb=Image.fromarray(layers['body']);reb=Image.alpha_composite(reb,Image.fromarray(layers['table_box']));reb=Image.alpha_composite(reb,Image.fromarray(layers['arms']));assert np.array_equal(np.array(reb),a)
+box=layers['table_box'][:,:,3]>0;assert box.sum()==1665;assert not np.any(layers['body'][:,:,3][box]);assert not np.any(layers['arms'][:,:,3][box]);prevbox=read(R/'F030_LAYER_PARTITION/frames/F030_table_box_original_pixels.png');assert np.array_equal(prevbox[:,:,3],layers['table_box'][:,:,3]);assert np.array_equal(prevbox[box],layers['table_box'][box]);assert not np.any(layers['arms'][981:,:,3])
+groups=[]
+for g in contract['group_assets']:
+ m=mask(F/Path(g['footprint']).name);archive=read(F/Path(g['rgba']).name);assert int(m.sum())==g['footprint_pixels'];assert int((m&(archive[:,:,3]==0)).sum())==g['alpha0_inside'];assert int((m&(archive[:,:,3]>0)).sum())==g['visible_pixels'];visible=m&(a[:,:,3]>0)
+ if 'fixed_table_box' in g['name']:assert np.array_equal(archive[m],a[m]);assert np.array_equal(layers['table_box'][visible],a[visible])
+ else:assert np.array_equal(layers['arms'][visible],a[visible])
+ groups.append({'name':g['name'],'footprint_pixels':int(m.sum()),'archive_alpha0_pixels':g['alpha0_inside'],'source_visible_group_in_correct_layer':True})
+n=read(F/'F033_true_near_hand_match_INDEPENDENT_FOREGROUND_RGBA.png');f=read(F/'F033_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_RGBA.png');fh=mask(F/Path(contract['far_hard_guard']).name);aa=mask(F/Path(contract['far_jade_AA_underlay_mask']).name);comp=np.array(Image.alpha_composite(Image.fromarray(f),Image.fromarray(n)));overlap=(n[:,:,3]>0)&(f[:,:,3]>0)
+assert diff(a,n,n[:,:,3]==255)==0;assert diff(a,comp,overlap)==0;assert diff(a,comp,fh&(n[:,:,3]>0))==0
+far_unoccluded=fh&(n[:,:,3]==0);mismatches=far_unoccluded&np.any(a!=f,axis=2);yy,xx=np.where(mismatches);mismatch_rows=[{'xy':[int(x),int(y)],'final_RGBA':a[y,x].tolist(),'underlying_far_RGBA':f[y,x].tolist()} for y,x in zip(yy,xx)]
+# Author confirmed this frozen-archive obsolete isolated point; runtime source/layers are already clear.
+# Keep the discrepancy visible and require that it is exactly this one point, not an open-ended exemption.
+expected_archival_exception=[{'xy':[1127,800],'final_RGBA':[0,0,0,0],'underlying_far_RGBA':[18,30,18,84]}]
+assert mismatch_rows==expected_archival_exception, 'Unexpected far-hand archival differences: '+json.dumps(mismatch_rows)
+cx,cy=1233.9532049682696,766.8943738423919;radius=9*14/18.5;y,x=np.indices(a.shape[:2]);disk=np.hypot(x+.5-cx,y+.5-cy)<=radius;assert not np.any(layers['body'][:,:,3][disk]);assert not np.any(layers['table_box'][:,:,3][disk]);prior=read(R/'F030_FINAL_LOCKED/S08_F030_grandma_match_box_RGBA.png');assert np.array_equal(a[disk],prior[disk]);alpha=a[:,:,3][disk]
+report={'status':'PASS_RUNTIME_RGBA_WITH_ONE_DOCUMENTED_ARCHIVE_REUSE_EXCEPTION_NOT_CANVAS','source_sha256':sha(src),'RGBA_reconstruction_exact':True,'all_layer_RGB_original_including_transparent':True,'overlap_alpha_pixels':0,'table_box_unique_visible_pixels':1665,'box_visible_RGBA_and_alpha_same_as030':True,'arms_at_or_below981_pixels':0,'group_checks':groups,'near_opaque_foreground_exact':True,'near_over_far_visible_overlap_pixels':int(overlap.sum()),'near_over_far_source_over_changed_RGBA_pixels':0,'near_over_far_hard_guard_changed_RGBA_pixels':0,'far_unoccluded_hard_guard_changed_RGBA_pixels':len(mismatch_rows),'far_unoccluded_nonexception_changed_RGBA_pixels':0,'frozen_archive_reuse_exception':mismatch_rows,'archive_exception_author_confirmed':'2026-10-18T20:49:45Z; obsolete isolated outer pixel, not grip; author will exclude for036 reuse; no033 image or archive overwritten','far_jade_AA_native_underlay_exception_pixels':int(aa.sum()),'near_match_head':contract['near_match_head'],'near_visible_wood_exit':contract['near_visible_wood_exit'],'independent_low_knob_center':[cx,cy],'independent_low_knob_radius':radius,'whole148px_low_knob_disk_RGBA_same_as030':True,'knob_disk_pixels':int(disk.sum()),'knob_disk_fully_transparent':int((alpha==0).sum()),'knob_disk_partially_transparent':int(((alpha>0)&(alpha<255)).sum()),'knob_disk_opaque_fingers':int((alpha==255).sum()),'runtime_character_transforms':0,'runtime_extra_hand_layers':0,'image_files_modified':0,'new_actual_canvas_frames':0,'actual_readability':'PENDING_REAL_CANVAS F033 flame/side-pipe/hand depth gate; source-over and geometry checks are not visual acceptance'}
+(O/'F033_PIXEL_CONTACT_CHECK.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
