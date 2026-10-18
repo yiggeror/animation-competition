@@ -1,0 +1,995 @@
+{
+  "scope": "REFERENCE ANALYSIS ONLY. No new painted character or hand/melon asset. No image generation. No repo/docs/assets/implementation writes.",
+  "repo": "yiggeror/animation-competition",
+  "plan_commit": "280c1e25533b76cc5e44e954b45cc98297a36b46",
+  "plan_path": "docs/keyframes/opening_plan.json",
+  "fps": 24,
+  "native_guide_canvas": [
+    1672,
+    941
+  ],
+  "landmark_conventions": {
+    "origin": "top left; native source pixels",
+    "actual_source_manual": "Carried from actual-source S02a reference measurements and visually checked here; about +/-3–6 px. Eye_L/R are aperture tracking points, not pupil centers.",
+    "extra_manual": "Focus eye apertures, pupils, and neck edges visually estimated here; about +/-4–6 px.",
+    "lower_chest": "A/B/H are prior independently computed white-dot centroids, approx +/-1 px; source qa/measurements.json. Nearly collinear, diagnostic only.",
+    "bone_lengths": "No measured 3D bone lengths available. Chin–collar and shoulder distances below are screen-space chords; shoulder points are sleeve/outer-contour observations, not shoulder joints.",
+    "new_pose_values": "All new pose offsets, yaw and aperture dimensions are proposals, not measured new drawings or approved performances."
+  },
+  "source_actual_landmarks": {
+    "focus": {
+      "eye_L": [
+        736,
+        558
+      ],
+      "eye_R": [
+        940,
+        558
+      ],
+      "chin": [
+        838,
+        730
+      ],
+      "nose": [
+        836,
+        620
+      ],
+      "mouth_L": [
+        813,
+        664
+      ],
+      "mouth_R": [
+        864,
+        664
+      ],
+      "collar_junction": [
+        842,
+        810
+      ],
+      "shoulder_L": [
+        583,
+        780
+      ],
+      "shoulder_R": [
+        1070,
+        780
+      ],
+      "head_top": [
+        839,
+        148
+      ],
+      "cowlick_top": [
+        884,
+        77
+      ]
+    },
+    "tense": {
+      "eye_L": [
+        734,
+        617
+      ],
+      "eye_R": [
+        936,
+        617
+      ],
+      "chin": [
+        835,
+        776
+      ],
+      "nose": [
+        835,
+        677
+      ],
+      "mouth_L": [
+        811,
+        719
+      ],
+      "mouth_R": [
+        861,
+        718
+      ],
+      "collar_junction": [
+        838,
+        829
+      ],
+      "shoulder_L": [
+        592,
+        778
+      ],
+      "shoulder_R": [
+        1058,
+        778
+      ],
+      "head_top": [
+        838,
+        217
+      ],
+      "cowlick_top": [
+        883,
+        137
+      ]
+    },
+    "relief": {
+      "eye_L": [
+        734,
+        598
+      ],
+      "eye_R": [
+        934,
+        598
+      ],
+      "chin": [
+        835,
+        756
+      ],
+      "nose": [
+        834,
+        658
+      ],
+      "mouth_L": [
+        826,
+        693
+      ],
+      "mouth_R": [
+        880,
+        681
+      ],
+      "collar_junction": [
+        838,
+        823
+      ],
+      "shoulder_L": [
+        586,
+        786
+      ],
+      "shoulder_R": [
+        1068,
+        786
+      ],
+      "head_top": [
+        838,
+        199
+      ],
+      "cowlick_top": [
+        882,
+        115
+      ]
+    }
+  },
+  "focus_extra_manual_points": {
+    "eye_aperture_L_xyxy": [
+      686,
+      516,
+      777,
+      598
+    ],
+    "eye_aperture_R_xyxy": [
+      898,
+      514,
+      989,
+      599
+    ],
+    "pupil_L": [
+      747,
+      569
+    ],
+    "pupil_R": [
+      930,
+      569
+    ],
+    "neck_edge_L": [
+      775,
+      729
+    ],
+    "neck_edge_R": [
+      905,
+      729
+    ]
+  },
+  "chest_diagnostics": {
+    "S02a_k01_focus.png": {
+      "points": {
+        "A": {
+          "xy": [
+            724.309375,
+            903.96875
+          ],
+          "area_pixels": 320,
+          "roi_xyxy": [
+            700,
+            890,
+            755,
+            930
+          ]
+        },
+        "B": {
+          "xy": [
+            949.3577981651376,
+            910.1743119266055
+          ],
+          "area_pixels": 327,
+          "roi_xyxy": [
+            925,
+            890,
+            975,
+            935
+          ]
+        },
+        "H": {
+          "xy": [
+            837.3405572755418,
+            904.3312693498452
+          ],
+          "area_pixels": 323,
+          "roi_xyxy": [
+            815,
+            890,
+            865,
+            935
+          ]
+        }
+      },
+      "H_residual_px": 0.0
+    },
+    "S02a_k02_tense.png": {
+      "points": {
+        "A": {
+          "xy": [
+            731.1474358974359,
+            904.7051282051282
+          ],
+          "area_pixels": 312,
+          "roi_xyxy": [
+            700,
+            890,
+            755,
+            930
+          ]
+        },
+        "B": {
+          "xy": [
+            945.8940809968848,
+            912.772585669782
+          ],
+          "area_pixels": 321,
+          "roi_xyxy": [
+            925,
+            890,
+            975,
+            935
+          ]
+        },
+        "H": {
+          "xy": [
+            838.4858044164038,
+            910.8454258675079
+          ],
+          "area_pixels": 317,
+          "roi_xyxy": [
+            815,
+            890,
+            865,
+            935
+          ]
+        }
+      },
+      "H_residual_px": 4.9748397409876235
+    },
+    "S02a_k03_relief.png": {
+      "points": {
+        "A": {
+          "xy": [
+            729.2522796352583,
+            904.4164133738602
+          ],
+          "area_pixels": 329,
+          "roi_xyxy": [
+            700,
+            890,
+            755,
+            930
+          ]
+        },
+        "B": {
+          "xy": [
+            947.1052631578947,
+            911.7923976608187
+          ],
+          "area_pixels": 342,
+          "roi_xyxy": [
+            925,
+            890,
+            975,
+            935
+          ]
+        },
+        "H": {
+          "xy": [
+            837.9730538922156,
+            910.4221556886228
+          ],
+          "area_pixels": 334,
+          "roi_xyxy": [
+            815,
+            890,
+            865,
+            935
+          ]
+        }
+      },
+      "H_residual_px": 5.183475602233058
+    }
+  },
+  "constraints": [
+    "Low frontal head/shoulders close-up; Xiaoman hands, phone and elbow contact remain out of frame. No chin-in-hand.",
+    "Keep original 1672x941 guide coordinates; K19 scene crop is an integration decision.",
+    "Never register using moving shoulders. Do not apply the old 4.76%/3.28% scale fits; H residual remains about 5 px.",
+    "New art: neutral local color, 2–3 form-value layers. Scene lighting applied once. Old pale-blue chin/collar shading is recorded, never silently altered.",
+    "All references are sources, not approval of old alpha artifacts, face drift or weak tense expression."
+  ],
+  "shot": "S03a",
+  "duration_frames": 36,
+  "counts": {
+    "exposure_states": 6,
+    "plan_face_entries": 6,
+    "foreground_group_assets": 1,
+    "generated": 0,
+    "reuse_policy": "d01/d02 have the same face intention; retain both exposure entries. No collapse or new art count reduction without reference gate."
+  },
+  "states": [
+    {
+      "id": "S03a_d01",
+      "start_frame": 0,
+      "end_frame_exclusive": 8,
+      "hold_frames": 8,
+      "literal_plan": "盯着手机，嘴平",
+      "read": "专注手机",
+      "status": "reference proposal only; not generated",
+      "parent_after_approval": "old focus exact source",
+      "boundary_old_anchor": "../astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k01_focus.png (same source coordinates; slight looser crop deferred to scene integration)",
+      "guide_points": {
+        "eye_L": [
+          736.0,
+          558
+        ],
+        "eye_R": [
+          940.0,
+          558
+        ],
+        "chin": [
+          838.0,
+          730
+        ],
+        "nose": [
+          836.0,
+          620
+        ],
+        "mouth_L": [
+          813.0,
+          664
+        ],
+        "mouth_R": [
+          864.0,
+          664
+        ],
+        "collar_junction": [
+          842,
+          810
+        ],
+        "shoulder_L": [
+          583,
+          780
+        ],
+        "shoulder_R": [
+          1070,
+          780
+        ],
+        "head_top": [
+          839.0,
+          148
+        ],
+        "cowlick_top": [
+          884.0,
+          77
+        ]
+      },
+      "yaw_proposal_deg": 0,
+      "yaw_status": "Conceptual left-turn amplitude; -9 degrees approximates code -0.16 rad intent, not a measured angle in painted source.",
+      "face": {
+        "brow_lift_px": 0,
+        "upper_eye_opening_extra_px": 0,
+        "mouth": "flat",
+        "inner_brow_worry": false,
+        "gaze": "screen-fixed phone below frame; pupils counter-rotate relative to sockets as face turns left"
+      },
+      "face_perspective_proposal": {
+        "far_eye": "screen-left; max aperture width 0.92× at d04",
+        "near_eye": "screen-right; max aperture width 1.03× at d04",
+        "max_yaw_nose_minus_mean_eye_delta_px": -12,
+        "near_far_visibility": "At left turn: screen-left cheek/ear foreshorten, screen-right cheek/ear become more visible; bangs and neck-side overlap follow the same turn. No head translation is substituted.",
+        "limitation": "This line chart only conveys differential landmark motion. Ear/hair/skin occlusion still requires a real view-angle reference gate."
+      },
+      "foreground": {
+        "state": "outside frame / beginning approach",
+        "asset_id": "grandma_right_hand_intact_melon",
+        "new_asset_generated": false,
+        "hand_and_melon_must_remain_rigid_group": true
+      },
+      "notes": [
+        "嘴平；头肩仍用focus母源",
+        "自己的手与手机出画"
+      ]
+    },
+    {
+      "id": "S03a_d02",
+      "start_frame": 8,
+      "end_frame_exclusive": 17,
+      "hold_frames": 9,
+      "literal_plan": "瓜伸到下巴前，她眼睛没离开手机",
+      "read": "瓜到前景·眼不离屏",
+      "status": "reference proposal only; not generated",
+      "parent_after_approval": "S03a_d01 last accepted image",
+      "boundary_old_anchor": "../astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k01_focus.png (same source coordinates; slight looser crop deferred to scene integration)",
+      "guide_points": {
+        "eye_L": [
+          736.0,
+          558
+        ],
+        "eye_R": [
+          940.0,
+          558
+        ],
+        "chin": [
+          838.0,
+          730
+        ],
+        "nose": [
+          836.0,
+          620
+        ],
+        "mouth_L": [
+          813.0,
+          664
+        ],
+        "mouth_R": [
+          864.0,
+          664
+        ],
+        "collar_junction": [
+          842,
+          810
+        ],
+        "shoulder_L": [
+          583,
+          780
+        ],
+        "shoulder_R": [
+          1070,
+          780
+        ],
+        "head_top": [
+          839.0,
+          148
+        ],
+        "cowlick_top": [
+          884.0,
+          77
+        ]
+      },
+      "yaw_proposal_deg": 0,
+      "yaw_status": "Conceptual left-turn amplitude; -9 degrees approximates code -0.16 rad intent, not a measured angle in painted source.",
+      "face": {
+        "brow_lift_px": 0,
+        "upper_eye_opening_extra_px": 0,
+        "mouth": "flat",
+        "inner_brow_worry": false,
+        "gaze": "screen-fixed phone below frame; pupils counter-rotate relative to sockets as face turns left"
+      },
+      "face_perspective_proposal": {
+        "far_eye": "screen-left; max aperture width 0.92× at d04",
+        "near_eye": "screen-right; max aperture width 1.03× at d04",
+        "max_yaw_nose_minus_mean_eye_delta_px": -12,
+        "near_far_visibility": "At left turn: screen-left cheek/ear foreshorten, screen-right cheek/ear become more visible; bangs and neck-side overlap follow the same turn. No head translation is substituted.",
+        "limitation": "This line chart only conveys differential landmark motion. Ear/hair/skin occlusion still requires a real view-angle reference gate."
+      },
+      "foreground": {
+        "state": "in position, front of chest near chin; never touching face",
+        "asset_id": "grandma_right_hand_intact_melon",
+        "new_asset_generated": false,
+        "hand_and_melon_must_remain_rigid_group": true
+      },
+      "notes": [
+        "脸态保持，瓜先到前面",
+        "六条曝光保留，不擅自并项"
+      ]
+    },
+    {
+      "id": "S03a_d03",
+      "start_frame": 17,
+      "end_frame_exclusive": 19,
+      "hold_frames": 2,
+      "literal_plan": "脸开始往画面左偏（不要）",
+      "read": "开始向画面左偏",
+      "status": "reference proposal only; not generated",
+      "parent_after_approval": "S03a_d02 last accepted image",
+      "boundary_old_anchor": "../astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k01_focus.png (same source coordinates; slight looser crop deferred to scene integration)",
+      "guide_points": {
+        "eye_L": [
+          734.9,
+          558
+        ],
+        "eye_R": [
+          938.4,
+          558
+        ],
+        "chin": [
+          836.2,
+          730
+        ],
+        "nose": [
+          832.0,
+          620
+        ],
+        "mouth_L": [
+          809.9,
+          664
+        ],
+        "mouth_R": [
+          860.9,
+          664
+        ],
+        "collar_junction": [
+          842,
+          810
+        ],
+        "shoulder_L": [
+          583,
+          780
+        ],
+        "shoulder_R": [
+          1070,
+          780
+        ],
+        "head_top": [
+          838.6,
+          148
+        ],
+        "cowlick_top": [
+          883.6,
+          77
+        ]
+      },
+      "yaw_proposal_deg": -2,
+      "yaw_status": "Conceptual left-turn amplitude; -9 degrees approximates code -0.16 rad intent, not a measured angle in painted source.",
+      "face": {
+        "brow_lift_px": 0,
+        "upper_eye_opening_extra_px": 0,
+        "mouth": "flat",
+        "inner_brow_worry": false,
+        "gaze": "screen-fixed phone below frame; pupils counter-rotate relative to sockets as face turns left"
+      },
+      "face_perspective_proposal": {
+        "far_eye": "screen-left; max aperture width 0.92× at d04",
+        "near_eye": "screen-right; max aperture width 1.03× at d04",
+        "max_yaw_nose_minus_mean_eye_delta_px": -12,
+        "near_far_visibility": "At left turn: screen-left cheek/ear foreshorten, screen-right cheek/ear become more visible; bangs and neck-side overlap follow the same turn. No head translation is substituted.",
+        "limitation": "This line chart only conveys differential landmark motion. Ear/hair/skin occlusion still requires a real view-angle reference gate."
+      },
+      "foreground": {
+        "state": "in position, front of chest near chin; never touching face",
+        "asset_id": "grandma_right_hand_intact_melon",
+        "new_asset_generated": false,
+        "hand_and_melon_must_remain_rigid_group": true
+      },
+      "notes": [
+        "只向画面左开始偏",
+        "鼻/眼/脸廓不可等量平移"
+      ]
+    },
+    {
+      "id": "S03a_d04",
+      "start_frame": 19,
+      "end_frame_exclusive": 26,
+      "hold_frames": 7,
+      "literal_plan": "偏到位，嘴一撇",
+      "read": "左偏到位·拒绝",
+      "status": "reference proposal only; not generated",
+      "parent_after_approval": "S03a_d03 last accepted image",
+      "boundary_old_anchor": "../astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k01_focus.png (same source coordinates; slight looser crop deferred to scene integration)",
+      "guide_points": {
+        "eye_L": [
+          731.0,
+          558
+        ],
+        "eye_R": [
+          933.0,
+          558
+        ],
+        "chin": [
+          830.0,
+          730
+        ],
+        "nose": [
+          818.0,
+          620
+        ],
+        "mouth_L": [
+          799.0,
+          664
+        ],
+        "mouth_R": [
+          850.0,
+          664
+        ],
+        "collar_junction": [
+          842,
+          810
+        ],
+        "shoulder_L": [
+          583,
+          780
+        ],
+        "shoulder_R": [
+          1070,
+          780
+        ],
+        "head_top": [
+          837.0,
+          148
+        ],
+        "cowlick_top": [
+          882.0,
+          77
+        ]
+      },
+      "yaw_proposal_deg": -9,
+      "yaw_status": "Conceptual left-turn amplitude; -9 degrees approximates code -0.16 rad intent, not a measured angle in painted source.",
+      "face": {
+        "brow_lift_px": 0,
+        "upper_eye_opening_extra_px": 0,
+        "mouth": "side",
+        "inner_brow_worry": false,
+        "gaze": "screen-fixed phone below frame; pupils counter-rotate relative to sockets as face turns left"
+      },
+      "face_perspective_proposal": {
+        "far_eye": "screen-left; max aperture width 0.92× at d04",
+        "near_eye": "screen-right; max aperture width 1.03× at d04",
+        "max_yaw_nose_minus_mean_eye_delta_px": -12,
+        "near_far_visibility": "At left turn: screen-left cheek/ear foreshorten, screen-right cheek/ear become more visible; bangs and neck-side overlap follow the same turn. No head translation is substituted.",
+        "limitation": "This line chart only conveys differential landmark motion. Ear/hair/skin occlusion still requires a real view-angle reference gate."
+      },
+      "foreground": {
+        "state": "in position, front of chest near chin; never touching face",
+        "asset_id": "grandma_right_hand_intact_melon",
+        "new_asset_generated": false,
+        "hand_and_melon_must_remain_rigid_group": true
+      },
+      "notes": [
+        "左侧远眼略窄、右耳略显",
+        "眼球补偿，仍盯画外手机"
+      ]
+    },
+    {
+      "id": "S03a_d05",
+      "start_frame": 26,
+      "end_frame_exclusive": 29,
+      "hold_frames": 3,
+      "literal_plan": "开始转回来",
+      "read": "开始回正",
+      "status": "reference proposal only; not generated",
+      "parent_after_approval": "S03a_d04 last accepted image",
+      "boundary_old_anchor": "../astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k01_focus.png (same source coordinates; slight looser crop deferred to scene integration)",
+      "guide_points": {
+        "eye_L": [
+          733.2,
+          558
+        ],
+        "eye_R": [
+          936.1,
+          558
+        ],
+        "chin": [
+          833.6,
+          730
+        ],
+        "nose": [
+          826.0,
+          620
+        ],
+        "mouth_L": [
+          805.2,
+          664
+        ],
+        "mouth_R": [
+          856.2,
+          664
+        ],
+        "collar_junction": [
+          842,
+          810
+        ],
+        "shoulder_L": [
+          583,
+          780
+        ],
+        "shoulder_R": [
+          1070,
+          780
+        ],
+        "head_top": [
+          837.9,
+          148
+        ],
+        "cowlick_top": [
+          882.9,
+          77
+        ]
+      },
+      "yaw_proposal_deg": -5,
+      "yaw_status": "Conceptual left-turn amplitude; -9 degrees approximates code -0.16 rad intent, not a measured angle in painted source.",
+      "face": {
+        "brow_lift_px": 0,
+        "upper_eye_opening_extra_px": 0,
+        "mouth": "flat",
+        "inner_brow_worry": false,
+        "gaze": "screen-fixed phone below frame; pupils counter-rotate relative to sockets as face turns left"
+      },
+      "face_perspective_proposal": {
+        "far_eye": "screen-left; max aperture width 0.92× at d04",
+        "near_eye": "screen-right; max aperture width 1.03× at d04",
+        "max_yaw_nose_minus_mean_eye_delta_px": -12,
+        "near_far_visibility": "At left turn: screen-left cheek/ear foreshorten, screen-right cheek/ear become more visible; bangs and neck-side overlap follow the same turn. No head translation is substituted.",
+        "limitation": "This line chart only conveys differential landmark motion. Ear/hair/skin occlusion still requires a real view-angle reference gate."
+      },
+      "foreground": {
+        "state": "in position, front of chest near chin; never touching face",
+        "asset_id": "grandma_right_hand_intact_melon",
+        "new_asset_generated": false,
+        "hand_and_melon_must_remain_rigid_group": true
+      },
+      "notes": [
+        "沿同一路径回正",
+        "不越过中线，不做左右循环"
+      ]
+    },
+    {
+      "id": "S03a_d06",
+      "start_frame": 29,
+      "end_frame_exclusive": 36,
+      "hold_frames": 7,
+      "literal_plan": "转回来接着玩，嘴微撅",
+      "read": "回正继续玩",
+      "status": "reference proposal only; not generated",
+      "parent_after_approval": "S03a_d05 last accepted image",
+      "boundary_old_anchor": "../astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k01_focus.png (same source coordinates; slight looser crop deferred to scene integration)",
+      "guide_points": {
+        "eye_L": [
+          736.0,
+          558
+        ],
+        "eye_R": [
+          940.0,
+          558
+        ],
+        "chin": [
+          838.0,
+          730
+        ],
+        "nose": [
+          836.0,
+          620
+        ],
+        "mouth_L": [
+          813.0,
+          664
+        ],
+        "mouth_R": [
+          864.0,
+          664
+        ],
+        "collar_junction": [
+          842,
+          810
+        ],
+        "shoulder_L": [
+          583,
+          780
+        ],
+        "shoulder_R": [
+          1070,
+          780
+        ],
+        "head_top": [
+          839.0,
+          148
+        ],
+        "cowlick_top": [
+          884.0,
+          77
+        ]
+      },
+      "yaw_proposal_deg": 0,
+      "yaw_status": "Conceptual left-turn amplitude; -9 degrees approximates code -0.16 rad intent, not a measured angle in painted source.",
+      "face": {
+        "brow_lift_px": 0,
+        "upper_eye_opening_extra_px": 0,
+        "mouth": "pout",
+        "inner_brow_worry": false,
+        "gaze": "screen-fixed phone below frame; pupils counter-rotate relative to sockets as face turns left"
+      },
+      "face_perspective_proposal": {
+        "far_eye": "screen-left; max aperture width 0.92× at d04",
+        "near_eye": "screen-right; max aperture width 1.03× at d04",
+        "max_yaw_nose_minus_mean_eye_delta_px": -12,
+        "near_far_visibility": "At left turn: screen-left cheek/ear foreshorten, screen-right cheek/ear become more visible; bangs and neck-side overlap follow the same turn. No head translation is substituted.",
+        "limitation": "This line chart only conveys differential landmark motion. Ear/hair/skin occlusion still requires a real view-angle reference gate."
+      },
+      "foreground": {
+        "state": "in position, front of chest near chin; never touching face",
+        "asset_id": "grandma_right_hand_intact_melon",
+        "new_asset_generated": false,
+        "hand_and_melon_must_remain_rigid_group": true
+      },
+      "notes": [
+        "头回原位，嘴微撅",
+        "不接瓜，不跟着瓜转眼"
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "id": "A",
+      "states": [
+        "d01",
+        "d02"
+      ],
+      "chain": "focus → d01 → d02",
+      "old_boundary_anchor": "focus",
+      "reason": "Phone gaze unchanged while independent melon arrives."
+    },
+    {
+      "id": "B",
+      "states": [
+        "d03",
+        "d04"
+      ],
+      "chain": "accepted d02 → d03 → d04",
+      "old_boundary_anchor": "focus with genuine perspective reference, not code proportions",
+      "reason": "Single small left rejection; far-eye and cheek occlusion change."
+    },
+    {
+      "id": "C",
+      "states": [
+        "d05",
+        "d06"
+      ],
+      "chain": "accepted d04 → d05 → d06",
+      "old_boundary_anchor": "focus frontal face/head/collar endpoint; mouth alone remains mildly pouty",
+      "reason": "Return on same path, no right overshoot or cyclic shake."
+    }
+  ],
+  "projection_assumptions": {
+    "head": "Fixed cranial volume, no rescaling. Differential screen landmark shifts visualize weak-perspective yaw, but are not a rig or measured skull.",
+    "neck": "Chin x shifts <=8px while collar stays at observed focus; local skin and collar occlusion need real drawing review.",
+    "gaze": "Offscreen phone target is scene-stable, not attached to turning head. Do not aim pupils at the approaching melon.",
+    "camera": "Same low frontal setup, slightly looser framing only at scene integration; do not scale the native character to match code body proportions."
+  },
+  "contact_reference": {
+    "selected_exact_mother_source": {
+      "local": "../astra_s03b_painted_pilot_20261018/refs/painted/S03_grandma_k07_F079_t3.30.png",
+      "repo_path": "collab/reviews/20261018_0428_s03_keypose_candidates/originals/S03_grandma_k07_F079_t3.30.png",
+      "repo_commit": "fb0f76b40932f395bf90834d9fa274d4cb6ffd11",
+      "sha256": "4f00f1f0b3aaba92999c01ff87ef50c8762f2cc537e8c0fa68df837dc95a919c",
+      "git_blob": "afcf8b0e9e7e675d2a1ecf43bbce69ad801ab4e6",
+      "byte_count": 899480,
+      "canvas": [
+        1670,
+        941
+      ]
+    },
+    "comparison_source": {
+      "local": "../astra_s03b_painted_pilot_20261018/refs/painted/S03_grandma_k06_F058_t2.40.png",
+      "repo_path": "collab/reviews/20261018_0428_s03_keypose_candidates/originals/S03_grandma_k06_F058_t2.40.png",
+      "repo_commit": "fb0f76b40932f395bf90834d9fa274d4cb6ffd11",
+      "sha256": "037d09935168bc2bbe46847496a36d322fe3152f8f50c243e6e87d0a063a94e1",
+      "git_blob": "3b6e7d22f8a45b4a589fed79fda8c9d463bbeadf",
+      "byte_count": 889238,
+      "canvas": [
+        1671,
+        941
+      ]
+    },
+    "selection_reason": "k07 is the held S03 exit immediately preceding S03a. Both show the same intact melon, palm-up cradle and four curled fingers. Prefer the latest exact held source rather than a bitten S03b derivative.",
+    "chirality_evidence": "Grandma turnaround shows jade bracelet on anatomical left wrist; S03 k07 screen-right resting hand carries it. The offered screen-left hand is therefore anatomical right, matching requested asset. Do not add bracelet to this right hand or mirror it.",
+    "observed_k07_points_px": {
+      "melon_tip": [
+        240,
+        638
+      ],
+      "rind_bottom_visible": [
+        300,
+        747
+      ],
+      "thumb_far_side_visible": [
+        204,
+        696
+      ],
+      "index_to_little_visible_tips": [
+        [
+          207,
+          732
+        ],
+        [
+          236,
+          737
+        ],
+        [
+          258,
+          744
+        ],
+        [
+          286,
+          751
+        ]
+      ],
+      "palm_support_patch": [
+        304,
+        753
+      ],
+      "wrist_center": [
+        346,
+        736
+      ],
+      "elbow_center": [
+        471,
+        713
+      ]
+    },
+    "measurement_method": "Manual point picks on actual k07 at native 1670×941, checked in 3× crop (175,620)–(575,800); roughly +/-4–6 px. Finger naming order is only a silhouette trace, not joint reconstruction. Palm contact partly occluded by rind; patch is visual evidence, not measured load area.",
+    "observed_contact": "Four fingers visibly wrap lower rind; palm continues beneath slice; thumb is visible on the far/side edge. No bite notch; red flesh contour remains intact. Wrist is downstream of palm, not the attachment point for a floating slice.",
+    "support_analysis": "In the 2D crop, melon center proxy (~273,700) projects down into the finger/palm x-span (~220–325). This is a screen-space sanity check only; no 3D center of mass, physical load, or bone lengths are established.",
+    "view_compatibility": "NOT approved as a finished S03a angle. S03 k07 is a side-on offer viewed toward grandma; S03a is a receiving-side close-up with the forearm entering from the camera-side bottom-right, requiring depth/foreshortening changes. A rigid 2D crop/rotation can test composition but cannot certify that view change.",
+    "needs_new_angle_reference": true,
+    "new_angle_reference_brief": "Use k07 for exact right-hand identity, unbitten melon silhouette and finger/palm contact. Obtain an explicit right-hand, palm-up, wrist-nearer-camera reference with forearm receding from lower-right toward the slice. Preserve correct thumb side; do not mirror k07, invent a reversed left hand, or hide contact with blur.",
+    "proposed_composition_native_1672x941": {
+      "face_reference": "exact original focus only for review; no new painted pose",
+      "melon_envelope_xyxy": [
+        920,
+        760,
+        1220,
+        935
+      ],
+      "wrist_forearm_entry_from": [
+        1530,
+        1040
+      ],
+      "assembly_target": [
+        1120,
+        860
+      ],
+      "face_contact": "none; keep a visible gap from chin/lips; foreground may cover lower-right collar/chest only",
+      "layer_order": [
+        "background",
+        "Xiaoman",
+        "independent grouped right-hand+melon RGBA foreground"
+      ],
+      "asset_motion": "One transform for complete hand+melon; settle by f8. Mild blur applied to entire group in scene. No phone in frame.",
+      "caution": "Envelope is a composition proposal, not a generated/approved hand shape, actual limb path or exact runtime crop."
+    }
+  },
+  "source_aliases": {
+    "focus": {
+      "local": "../astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k01_focus.png",
+      "git_blob": "470d0e84b2e85d4227ee57f5b8bc1dc4fb846b95"
+    },
+    "tense": {
+      "local": "../astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k02_tense.png",
+      "git_blob": "4cb9b62b0c87b412f4abd2c695dec21aca818b72"
+    },
+    "relief": {
+      "local": "../astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k03_relief.png",
+      "git_blob": "9ffc08f9fbc6fe3307880b28283465753f852d84"
+    }
+  },
+  "actual_measurement_source": "../astra_xiaoman_opening_refs_20261018_0906/qa/measurements.json"
+}

@@ -1,0 +1,10 @@
+S02a 眨眼链最小交付
+3张final：final/S02a_F013.png、final/S02a_F014.png、final/S02a_F015.png
+真实生成原件：raw/call01_F013.png、raw/call02_F014.png、raw/call03_F015.png
+mask：qa/F013_edit_mask.png、qa/F014_edit_mask.png、qa/F015_edit_mask.png
+prompt：prompts/call01_F013.txt、prompts/call02_F014.txt、prompts/call03_F015.txt
+链近图：qa/S02a_blink_chain_closeup.png
+前后50%：qa/F013_previous_50pct.png、qa/F014_previous_50pct.png、qa/F015_previous_50pct.png、qa/F015_next_focus_50pct.png
+静态manifest：BLINK_MANIFEST.json
+1672×941 RGBA；3次真实生成；每张从上一合格图接眼部mask；无缩放；mask外RGBA差异0；F016精确复用原focus，不生成。
+原件旧蓝光保持；生成眼部没有新增蓝光。原件底部/透明区残留均保全，未擅自修。技术锁像素不代替表演审查。

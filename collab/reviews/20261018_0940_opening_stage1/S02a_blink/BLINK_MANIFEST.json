@@ -1,0 +1,170 @@
+{
+  "shot": "S02a",
+  "scope": "blink delivery only",
+  "call_count": 3,
+  "frames": [
+    13,
+    14,
+    15
+  ],
+  "chain": "original focus -> F013 -> F014 -> F015 -> exact original focus F016",
+  "calls": [
+    {
+      "call": 1,
+      "frame": 13,
+      "status": "accepted_local_patch_pending_independent_review",
+      "source": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k01_focus.png",
+      "source_sha256": "50e8eb5e6b40f7ac3e8ef58294562dcc3f926c1051d9bb7c719ce170eec78d50",
+      "source_size": [
+        1672,
+        941
+      ],
+      "prompt": "astra_s02a_opening_draw_20261018/prompts/call01_F013.txt",
+      "prompt_sha256": "4f6230cdb400b6a5ddd25361497640eed0ce583377a00e5a673a9e5d3d71e6d3",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "raw": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/raw/call01_F013.png",
+      "raw_sha256": "676e6dd02eb7341a47d75781db9e6561333dbf5fa6014775bed10b6544b43dd0",
+      "raw_size": [
+        1672,
+        941
+      ],
+      "final": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/final/S02a_F013.png",
+      "final_sha256": "e35bf0bccfebb7e82a876ec54b728d87866d9de8718ef5b095b34204c0409316",
+      "final_size": [
+        1672,
+        941
+      ],
+      "mask": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/qa/F013_edit_mask.png",
+      "mask_sha256": "e0a425508c5ee9526601fcadd7f111e780e71007f7901124b6780d4048e3a35a",
+      "mask_rectangles_before_blur": [
+        [
+          667,
+          494,
+          791,
+          611
+        ],
+        [
+          881,
+          494,
+          1007,
+          611
+        ]
+      ],
+      "mask_feather_gaussian_radius_px": 3,
+      "transform": "none; donor and master native 1672x941",
+      "mask_outside_changed_pixels": 0,
+      "notes": "Only generated eyelids and immediate skin were reconnected. All zero-mask pixels retain master RGBA exactly. Static pixel lock is not an acting approval."
+    },
+    {
+      "call": 2,
+      "frame": 14,
+      "status": "accepted_local_patch_pending_independent_review",
+      "source": "astra_s02a_opening_draw_20261018/final/S02a_F013.png",
+      "source_sha256": "e35bf0bccfebb7e82a876ec54b728d87866d9de8718ef5b095b34204c0409316",
+      "source_size": [
+        1672,
+        941
+      ],
+      "prompt": "astra_s02a_opening_draw_20261018/prompts/call02_F014.txt",
+      "prompt_sha256": "37042082f489934490ec9a549be663e34ef6150dcdad13cd6c16c8546861510e",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "raw": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/raw/call02_F014.png",
+      "raw_sha256": "aaef6e3c4e53832336aa6486f0a171c4324f28fa5940bfc565119f0f003a3a1a",
+      "raw_size": [
+        1672,
+        941
+      ],
+      "final": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/final/S02a_F014.png",
+      "final_sha256": "197ee61f9f57c3361151628cd17292e9293b08ac47c3084fa94418de3633870e",
+      "final_size": [
+        1672,
+        941
+      ],
+      "mask": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/qa/F014_edit_mask.png",
+      "mask_sha256": "e0a425508c5ee9526601fcadd7f111e780e71007f7901124b6780d4048e3a35a",
+      "mask_rectangles_before_blur": [
+        [
+          667,
+          494,
+          791,
+          611
+        ],
+        [
+          881,
+          494,
+          1007,
+          611
+        ]
+      ],
+      "mask_feather_gaussian_radius_px": 3,
+      "transform": "none; donor and master native 1672x941",
+      "mask_outside_changed_pixels": 0,
+      "notes": "Only generated eyelids and immediate skin were reconnected. All zero-mask pixels retain master RGBA exactly. Static pixel lock is not an acting approval."
+    },
+    {
+      "call": 3,
+      "frame": 15,
+      "status": "accepted_local_patch_pending_independent_review",
+      "source": "astra_s02a_opening_draw_20261018/final/S02a_F014.png",
+      "source_sha256": "197ee61f9f57c3361151628cd17292e9293b08ac47c3084fa94418de3633870e",
+      "source_size": [
+        1672,
+        941
+      ],
+      "reference_constraints": [
+        {
+          "path": "astra_s02a_opening_draw_20261018/final/S02a_F013.png",
+          "sha256": "e35bf0bccfebb7e82a876ec54b728d87866d9de8718ef5b095b34204c0409316"
+        },
+        {
+          "path": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k01_focus.png",
+          "sha256": "50e8eb5e6b40f7ac3e8ef58294562dcc3f926c1051d9bb7c719ce170eec78d50"
+        }
+      ],
+      "prompt": "astra_s02a_opening_draw_20261018/prompts/call03_F015.txt",
+      "prompt_sha256": "0c03f71533d9ee3fe9eb5e05686fa81212e0d6451098556f08876cd5756c93a0",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "raw": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/raw/call03_F015.png",
+      "raw_sha256": "06377311f5553dbfa99ca13dcb8bc02b03c2392066408828a93d51e57451f8f7",
+      "raw_size": [
+        1672,
+        941
+      ],
+      "final": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/final/S02a_F015.png",
+      "final_sha256": "9efd127f1d5402e744a1b0a5c89e11679f2190fe7942736827dfd53b809731bb",
+      "final_size": [
+        1672,
+        941
+      ],
+      "mask": "/workspace/scratch/f060b5601755/astra_s02a_opening_draw_20261018/qa/F015_edit_mask.png",
+      "mask_sha256": "e0a425508c5ee9526601fcadd7f111e780e71007f7901124b6780d4048e3a35a",
+      "mask_rectangles_before_blur": [
+        [
+          667,
+          494,
+          791,
+          611
+        ],
+        [
+          881,
+          494,
+          1007,
+          611
+        ]
+      ],
+      "mask_feather_gaussian_radius_px": 3,
+      "transform": "none; donor and master native 1672x941",
+      "mask_outside_changed_pixels": 0,
+      "notes": "Only generated eyelids and immediate skin were reconnected. All zero-mask pixels retain master RGBA exactly. Static pixel lock is not an acting approval."
+    }
+  ],
+  "F016_reuse": {
+    "path": "astra_xiaoman_opening_refs_20261018_0906/originals/S02a_k01_focus.png",
+    "sha256": "50e8eb5e6b40f7ac3e8ef58294562dcc3f926c1051d9bb7c719ce170eec78d50"
+  },
+  "unchanged_old_sources": true,
+  "status": "local QA complete; independent review requested"
+}

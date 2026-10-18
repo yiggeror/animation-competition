@@ -1,0 +1,65 @@
+{
+  "frame": 65,
+  "call_count_at_creation": 1,
+  "source": "/workspace/scratch/f060b5601755/astra_s03_opening_draw_20261018/waiting/inputs/k06_rightpad_1672x941.png",
+  "source_sha256": "2dcd108c874b4ce8ca70e5fb7e4a832fe4e11f7afe78b0a292ee57c6b577bc59",
+  "raw_generated_path": "/workspace/scratch/f060b5601755/astra_s03_opening_draw_20261018/waiting/originals/call01_F065.png",
+  "raw_generated_sha256": "dd8896cee8dad11d272bb0e774a0a6ac2bb1850e46198d816d4ecf277e85322e",
+  "raw_size": [
+    1671,
+    941
+  ],
+  "output": "/workspace/scratch/f060b5601755/astra_s03_opening_draw_20261018/waiting/F065_candidate.png",
+  "output_sha256": "d025368298fe7a5ab1011b3c66506ed7de824895bd779e9d8b1bd5e773f2256e",
+  "output_size": [
+    1672,
+    941
+  ],
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "repair": {
+    "method": "generated brow/eye pixels locally composited into exact previous accepted source using an explicit recorded grayscale mask",
+    "patch_translation_xy": [
+      0,
+      7
+    ],
+    "scale": [
+      1,
+      1
+    ],
+    "mask": "/workspace/scratch/f060b5601755/astra_s03_opening_draw_20261018/waiting/analysis/F065_repair_mask.png",
+    "mask_sha256": "c21fc54f471aad73fd6eb67130732f3ce57931a47b792467ae7a033929f25c8d",
+    "solid_roundrect_boxes": [
+      [
+        705,
+        198,
+        760,
+        233
+      ],
+      [
+        799,
+        219,
+        871,
+        271
+      ]
+    ],
+    "mask_blur_radius": 2,
+    "nonzero_mask_bbox": [
+      700,
+      193,
+      877,
+      277
+    ],
+    "changed_pixels_outside_mask": 0
+  },
+  "manual_review": "Pass for next source: eyes/gaze/mouth are exact k06. Brow patch moved down 7 native px relative raw call01, resulting a restrained approximately 3–4 px lift. Mask edge clean on visual inspection. All pixels outside local brow mask exactly k06.",
+  "pre_final_alpha_lock_output_sha256": "a51fa68467c4c031173f0aac27352bb95f2ab3358b6f07eeea1fbead7c681b66",
+  "pre_final_alpha_lock_output": "/workspace/scratch/f060b5601755/astra_s03_opening_draw_20261018/waiting/analysis/pre_alpha_lock/F065_candidate.png",
+  "final_alpha_lock": {
+    "reason": "Final static QA found minor alpha attenuation inside local donor mask only (up to 11 levels in F076). Restored original k06 alpha exactly; facial RGB untouched, no new imagegen call, no geometric transform.",
+    "alpha_source": "/workspace/scratch/f060b5601755/astra_s03_opening_draw_20261018/waiting/inputs/k06_rightpad_1672x941.png",
+    "source_alpha_preserved_exactly": true
+  }
+}
