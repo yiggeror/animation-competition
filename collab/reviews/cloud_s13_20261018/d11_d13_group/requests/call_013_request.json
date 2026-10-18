@@ -1,0 +1,14 @@
+{
+  "call_id": "S13_d11_call_013",
+  "pose": "d11",
+  "status": "completed_native_output_self_reviewed",
+  "tool": "image_gen.imagegen",
+  "dependency_sha256": "b64b67f0262596c1dc150f71b9dce05e14aa12589a8214f2cc4612dd685a00be",
+  "args": {
+    "prompt": "Continue S13 from this LOCKED accepted d10 only. Draw the NEXT pose d11, frames078–083: the yawn is finishing and the lips are ALMOST closed. Same1024×1536 transparent canvas, same character scale/camera, same lower-chest placement and lower cutoff. Do not zoom or recenter.\n\nIMPORTANT SEQUENCE: keep the current SCREEN-RIGHT head yaw. She must NOT start turning away while the mouth is still open. Left/right head rotation begins only at the later d13, after d12 completes lip closure. In this d11, only the natural pitch recovery from the yawn may continue a little toward upright; preserve the same right-facing ear/cheek/nose relationship.\n\nRaise the real lower mandible into a near-closed position, leaving only a TINY relaxed lip opening, roughly8–12source pixels high. No large red oval, protruding tongue or tooth display. Reconstruct the chin/cheek/underside-of-jaw and curved neck naturally as the jaw closes, rather than scaling a mouth sticker. The head, ears, bangs, pigtail roots and collar remain one coherent connected anatomy. Upper chest and both shoulders softly finish their shared exhale; no isolated shoulder twitch, rigid tube neck or detached collar.\n\nBoth eyes gradually reopen only to narrow sleepy slits, around20–25percent of the fully-awake opening, with brown irises naturally visible. Retain the pretended tired expression and keep the gaze to SCREEN RIGHT; no leftward glance or alert wide eyes yet. Keep the neutral warm drawn skin, dark brown twin pigtails/red flowers, yellow white-dot dress and white rounded collar, with the same linework and colors. No added scene lighting, hands, props, text, guides or background.\n\nOne clean transparent RGBA drawing. Outside true fine hair and clothing alpha is zero, including pigtail/neck gaps; no haze, block patterns, glow or shadow. This is near-closure d11, NOT the fully closed d12 and NOT the head-turn d13.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition/collab/reviews/cloud_s13_20261018/d08_d10_group/approved_local/F068_d10_yawn_release.png"
+    ],
+    "transparent_background": true
+  }
+}

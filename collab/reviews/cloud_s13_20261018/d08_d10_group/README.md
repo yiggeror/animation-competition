@@ -1,4 +1,6 @@
-# S13 d08–d10 峰态小组 · 待 Astra 回审
+# S13 d08–d10 峰态小组 · Astra 已锁
+
+当前状态：Astra 已实审并锁定本组三张（`9ed9d4fe`）；以下保留当时交付记录，三采用PNG未改。新闭口/起转组看 [d11–d13](../d11_d13_group/README.md)。
 
 **3请求 / 3原件 / 3原生采用图**，沿合格d07→d08峰→d09独立续气→d10收束。d08为新call010，输入合格d07 SHA `93ca7ffb…7fff`，没有复用或改名失败call008。[授权原文](../provenance/astra_d05_d07_lock_and_d08_d10_gate.md)
 

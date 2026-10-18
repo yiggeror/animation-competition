@@ -59,12 +59,12 @@ ROWS = [
  (50,28,-9,10,-12,.00,.120,'none',8,'假哈欠峰态','下颌下降 0.055H；额头颅体尺寸不变；胸肩同起。'),
  (58,28,-9,10,-9,.00,.105,'none',3,'峰态续气','保持哈欠但口腔略收、胸轻回，需独立画，不能用同图缩嘴。'),
  (68,24,-5,10,-5,.08,.065,'none',0,'哈欠收束','下颌回收、头回前；胸肩整体回落。'),
- (78,18,-1,10,0,.22,.018,'none',0,'即将收口','嘴将合，仍未扭开；最迟F084起转前明确闭口。'),
- (84,8,0,10,2,.38,.000,'away',0,'闭口后回避起转','嘴明确闭合，无口腔缝；眼缝先向画左，整头起转，肩尚未追上。'),
- (87,-6,0,8,3,.40,.000,'away',12,'转头中间一','整头越过正面；两耳露出比例交换，颈面重画。'),
+ (78,24,-1,10,0,.22,.018,'none',0,'即将收口但不转头','嘴将合，保持d10的左右头向；只回收哈欠俯仰，未开始扭开。'),
+ (84,24,0,10,2,.38,.000,'away',0,'明确闭口完成但不转头','唇线明确闭合，无口腔缝；左右头向保持，整头转动延至F087。'),
+ (87,8,0,8,3,.40,.000,'away',12,'闭口后整头起转','首次整头向画左转一小步，仍略朝画右，尚未越正面；颅体耳发根及颈面一起重画。'),
  (90,-23,1,6,5,.38,.000,'away',23,'转头中间二','鼻朝画左；胸肩小幅跟转，不能只替换脸。'),
  (94,-36,1,4,6,.32,.000,'away',25,'扭开到位','头比胸多转约 40°；马尾自由端向画右滞后，不拉长发根。'),
- (100,-33,1,4,6,.30,.000,'away',0,'轻回落停住','落定提案提前到F100，头回落约3°，尾端落定；实画曝光检吊住时可再提前F098，仍120帧。')
+ (100,-33,1,4,6,.30,.000,'away',0,'轻回落停住','F100头小回落约3°、尾端落定；按最新明确门保持F100，仍120帧。')
 ]
 KEYS=[]
 for i,row in enumerate(ROWS):
@@ -95,13 +95,14 @@ for i,row in enumerate(ROWS):
                  'head_frontmost_ear_landmark':'ear_near' if yaw>=0 else 'ear_far',
                  'hair_depth_note':'头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。',
                  'hands_visible':False,'hand_mouth_contact':False,
-                 'status':'reference_frozen_for_first_d01_only' if i==0 else 'reference_pending_Astra_freeze'})
+                 'status':'construction_only_actual_adoption_and_approval_in_group_records'})
 
 LENGTHS={}
 for name,a,b in [('upper_arm','shoulder_near','elbow_near'),('forearm','elbow_near','wrist_near'),
                  ('hand_envelope','wrist_near','finger_tip_near')]:
     n=math.dist(MEASURE[a],MEASURE[b]);LENGTHS[name]={'identity_px':round(n,3),'H':round(n/H,4),'source_px':round(n*4,3)}
-PLAN={'shot':'S13','status':'D01 REFERENCE FROZEN ONLY; FIRST IMAGE SEPARATE; REST PENDING ASTRA',
+PLAN={'shot':'S13','status':'CONSTRUCTION REFERENCE; ACTUAL APPROVALS IN GROUP RECORDS',
+      'latest_sequence_rule':'F078 closes without changing head yaw; F084 fully closed and yaw held; F087 is the first whole-head turn.',
       'base_commit':'3d66443997cee24b64059e6f53f7d46968a3a05c','fps':24,'duration_s':5,'frames':120,
       'drawing_count':16,'canvas_source':[1024,1536],'shot_canvas':[1920,1080],
       'placement_proposal':{'scale':.85,'translation':[330,-30], 'source_crop_y_at_shot_bottom':(1080+30)/.85,
@@ -181,7 +182,7 @@ def draw_construction(k, scale=.5):
         target=(1740,830) if k['gaze_target']=='crane' else (1740,330)
         arrow(d,((en[0]+ef[0])/2,(en[1]+ef[1])/2),target,'#467a96',3)
         txt(d,(target[0]-115,target[1]+20),'鹤 / 画右下' if k['gaze_target']=='crane' else '奶奶 / 画外右上',30)
-    txt(d,(30,22),'构造参考 · 非画稿 · '+('d01参考已冻' if k['id']=='d01' else '后段待审'),34,fill='#9d543a',bold=True)
+    txt(d,(30,22),'构造参考 · 非画稿 · 冻结状态见README',34,fill='#9d543a',bold=True)
     txt(d,(30,1020),'三档：深灰近臂 / 中灰躯干 / 浅灰远臂。手、肘、腕均在最终画幅外。',27)
     return im.resize((int(1920*scale),int(1080*scale)),Image.Resampling.LANCZOS)
 
@@ -197,12 +198,12 @@ for k in KEYS:
     txt(d,(28,650),k['note'],24)
     txt(d,(28,705),'固定颅体尺寸；下颌可开合；转头重画耳、发根、后脑与颈面。',25)
     txt(d,(28,755),'位置由 geometry/S13_reference_plan.json 追溯；角度为设计目标，非成图实测。',23)
-    txt(d,(28,835),'参考构造示意，不能剪进成片。仅d01参考已冻；真实母态另包待锁。',25,fill='#9d543a',bold=True)
+    txt(d,(28,835),'参考构造示意，不能剪进成片。实际采用与冻结状态以当前README为准。',25,fill='#9d543a',bold=True)
     p=OUT/f"reference/S13_{k['id']}_F{k['f']:03}_construction.png"; im.save(p)
     cards.append(im)
 
 sheet=Image.new('RGB',(1920,1510),'#eeece5');d=ImageDraw.Draw(sheet)
-txt(d,(24,10),'S13 / 16 曝光构造总览 / 120 帧 @24fps / 仅d01参考已冻、非画稿',32,bold=True)
+txt(d,(24,10),'S13 / 16 曝光构造总览 / 120 帧 @24fps / F084闭口，F087才起转',32,bold=True)
 for i,(im,k) in enumerate(zip(cards,KEYS)):
     # Use the composition image at readable scale; titles remain separate.
     x=(i%4)*480;y=70+(i//4)*355
@@ -292,7 +293,7 @@ for i,k in enumerate(KEYS):
       'referenced_image_paths':['collab/refs/xiaoman_turnaround_v4_draft.png','collab/refs/xiaoman_expressions_current03.png',
       f"collab/reviews/cloud_s13_20261018/reference/S13_{k['id']}_F{k['f']:03}_construction.png"] + ([] if i==0 else [f'<approved d{i:02} original path; fill only after acceptance>'])}})
 save_json(OUT/'prompts/requests_NOT_EXECUTED.json',{'status':'UNEXECUTED REFERENCE-STAGE DRAFTS',
-    'note':'These exact drafts were not executed. Actual d01 request/response is in d01_first_candidate/requests; no post-d01 calls. Later references still need review.',
+    'note':'These exact reference-stage drafts were not executed; actual tool calls are recorded in per-group request folders and the generation ledger. F084 closes first, F087 starts the head turn per the latest Astra gate.',
     'requests':requests})
 
 sources=['collab/README.md','collab/claude.md','collab/partner.md','docs/keyframes/scenes03_12_drawing_plan.md',

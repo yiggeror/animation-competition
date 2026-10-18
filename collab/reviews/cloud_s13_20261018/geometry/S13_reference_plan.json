@@ -1,6 +1,7 @@
 {
   "shot": "S13",
-  "status": "D01 REFERENCE FROZEN ONLY; FIRST IMAGE SEPARATE; REST PENDING ASTRA",
+  "status": "CONSTRUCTION REFERENCE; ACTUAL APPROVALS IN GROUP RECORDS",
+  "latest_sequence_rule": "F078 closes without changing head yaw; F084 fully closed and yaw held; F087 is the first whole-head turn.",
   "base_commit": "3d66443997cee24b64059e6f53f7d46968a3a05c",
   "fps": 24,
   "duration_s": 5,
@@ -483,7 +484,7 @@
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_frozen_for_first_d01_only"
+      "status": "construction_only_actual_adoption_and_approval_in_group_records"
     },
     {
       "id": "d02",
@@ -797,7 +798,7 @@
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_pending_Astra_freeze"
+      "status": "construction_only_actual_adoption_and_approval_in_group_records"
     },
     {
       "id": "d03",
@@ -1111,7 +1112,7 @@
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_pending_Astra_freeze"
+      "status": "construction_only_actual_adoption_and_approval_in_group_records"
     },
     {
       "id": "d04",
@@ -1425,7 +1426,7 @@
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_pending_Astra_freeze"
+      "status": "construction_only_actual_adoption_and_approval_in_group_records"
     },
     {
       "id": "d05",
@@ -1739,7 +1740,7 @@
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_pending_Astra_freeze"
+      "status": "construction_only_actual_adoption_and_approval_in_group_records"
     },
     {
       "id": "d06",
@@ -2053,7 +2054,7 @@
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_pending_Astra_freeze"
+      "status": "construction_only_actual_adoption_and_approval_in_group_records"
     },
     {
       "id": "d07",
@@ -2367,7 +2368,7 @@
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_pending_Astra_freeze"
+      "status": "construction_only_actual_adoption_and_approval_in_group_records"
     },
     {
       "id": "d08",
@@ -2681,7 +2682,7 @@
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_pending_Astra_freeze"
+      "status": "construction_only_actual_adoption_and_approval_in_group_records"
     },
     {
       "id": "d09",
@@ -2995,7 +2996,7 @@
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_pending_Astra_freeze"
+      "status": "construction_only_actual_adoption_and_approval_in_group_records"
     },
     {
       "id": "d10",
@@ -3309,7 +3310,7 @@
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_pending_Astra_freeze"
+      "status": "construction_only_actual_adoption_and_approval_in_group_records"
     },
     {
       "id": "d11",
@@ -3317,7 +3318,7 @@
       "hold": 6,
       "end_inclusive": 83,
       "t": 3.25,
-      "head_yaw_deg": 18,
+      "head_yaw_deg": 24,
       "head_pitch_deg": -1,
       "torso_yaw_deg": 10,
       "upper_body_dy_source_px": 0,
@@ -3325,8 +3326,8 @@
       "mouth_aperture_H": 0.018,
       "gaze_target": "none",
       "tail_lag_source_px": 0,
-      "title": "即将收口",
-      "note": "嘴将合，仍未扭开；最迟F084起转前明确闭口。",
+      "title": "即将收口但不转头",
+      "note": "嘴将合，保持d10的左右头向；只回收哈欠俯仰，未开始扭开。",
       "joints_3d_source": {
         "neck_base": [
           524.0,
@@ -3374,9 +3375,9 @@
           -79.878
         ],
         "head_center": [
-          522.533,
+          522.069,
           552.041,
-          -4.515
+          -4.337
         ],
         "occipital_joint": [
           524,
@@ -3384,59 +3385,59 @@
           0
         ],
         "nose": [
-          611.539,
+          639.221,
           723.041,
-          269.416
+          258.79
         ],
         "mouth_center": [
-          602.528,
+          627.361,
           771.557,
-          241.686
+          232.153
         ],
         "chin": [
-          569.088,
+          583.346,
           874.741,
-          138.767
+          133.293
         ],
         "ear_near": [
-          243.656,
+          254.452,
           688.021,
-          88.594
+          117.412
         ],
         "ear_far": [
-          802.877,
+          791.617,
           688.021,
-          -93.108
+          -121.749
         ],
         "eye_near": [
-          483.705,
+          510.201,
           628.015,
-          251.369
+          254.204
         ],
         "eye_far": [
-          704.35,
+          722.144,
           628.015,
-          179.677
+          159.841
         ],
         "hair_root_near": [
-          249.734,
+          256.025,
           756.708,
-          45.815
+          74.232
         ],
         "hair_root_far": [
-          772.815,
+          758.475,
           756.708,
-          -124.145
+          -149.473
         ],
         "tail_near": [
-          204.734,
+          211.025,
           1044.708,
-          20.815
+          49.232
         ],
         "tail_far": [
-          817.815,
+          803.475,
           1044.708,
-          -149.145
+          -174.473
         ]
       },
       "joints_source_xy": {
@@ -3477,7 +3478,7 @@
           2336
         ],
         "head_center": [
-          522.533,
+          522.069,
           552.041
         ],
         "occipital_joint": [
@@ -3485,47 +3486,47 @@
           824
         ],
         "nose": [
-          611.539,
+          639.221,
           723.041
         ],
         "mouth_center": [
-          602.528,
+          627.361,
           771.557
         ],
         "chin": [
-          569.088,
+          583.346,
           874.741
         ],
         "ear_near": [
-          243.656,
+          254.452,
           688.021
         ],
         "ear_far": [
-          802.877,
+          791.617,
           688.021
         ],
         "eye_near": [
-          483.705,
+          510.201,
           628.015
         ],
         "eye_far": [
-          704.35,
+          722.144,
           628.015
         ],
         "hair_root_near": [
-          249.734,
+          256.025,
           756.708
         ],
         "hair_root_far": [
-          772.815,
+          758.475,
           756.708
         ],
         "tail_near": [
-          204.734,
+          211.025,
           1044.708
         ],
         "tail_far": [
-          817.815,
+          803.475,
           1044.708
         ]
       },
@@ -3567,7 +3568,7 @@
           1955.6
         ],
         "head_center": [
-          774.153,
+          773.759,
           439.235
         ],
         "occipital_joint": [
@@ -3575,47 +3576,47 @@
           670.4
         ],
         "nose": [
-          849.808,
+          873.338,
           584.585
         ],
         "mouth_center": [
-          842.149,
+          863.257,
           625.823
         ],
         "chin": [
-          813.725,
+          825.844,
           713.53
         ],
         "ear_near": [
-          537.108,
+          546.284,
           554.818
         ],
         "ear_far": [
-          1012.446,
+          1002.874,
           554.818
         ],
         "eye_near": [
-          741.149,
+          763.671,
           503.813
         ],
         "eye_far": [
-          928.698,
+          943.822,
           503.813
         ],
         "hair_root_near": [
-          542.274,
+          547.622,
           613.202
         ],
         "hair_root_far": [
-          986.893,
+          974.704,
           613.202
         ],
         "tail_near": [
-          504.024,
+          509.372,
           858.002
         ],
         "tail_far": [
-          1025.143,
+          1012.954,
           858.002
         ]
       },
@@ -3623,7 +3624,7 @@
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_pending_Astra_freeze"
+      "status": "construction_only_actual_adoption_and_approval_in_group_records"
     },
     {
       "id": "d12",
@@ -3631,7 +3632,7 @@
       "hold": 3,
       "end_inclusive": 86,
       "t": 3.5,
-      "head_yaw_deg": 8,
+      "head_yaw_deg": 24,
       "head_pitch_deg": 0,
       "torso_yaw_deg": 10,
       "upper_body_dy_source_px": 2,
@@ -3639,8 +3640,8 @@
       "mouth_aperture_H": 0.0,
       "gaze_target": "away",
       "tail_lag_source_px": 0,
-      "title": "闭口后回避起转",
-      "note": "嘴明确闭合，无口腔缝；眼缝先向画左，整头起转，肩尚未追上。",
+      "title": "明确闭口完成但不转头",
+      "note": "唇线明确闭合，无口腔缝；左右头向保持，整头转动延至F087。",
       "joints_3d_source": {
         "neck_base": [
           524.0,
@@ -3698,59 +3699,59 @@
           0
         ],
         "nose": [
-          563.664,
+          639.92,
           730.0,
-          282.226
+          260.36
         ],
         "mouth_center": [
-          559.489,
+          627.718,
           778.0,
-          252.518
+          232.954
         ],
         "chin": [
-          544.18,
+          582.977,
           874.0,
-          143.589
+          132.464
         ],
         "ear_near": [
-          232.861,
+          255.418,
           690.0,
-          40.917
+          119.581
         ],
         "ear_far": [
-          815.139,
+          792.582,
           690.0,
-          -40.917
+          -119.581
         ],
         "eye_near": [
-          441.139,
+          511.578,
           634.0,
-          243.906
+          257.297
         ],
         "eye_far": [
-          670.881,
+          723.521,
           634.0,
-          211.618
+          162.934
         ],
         "hair_root_near": [
-          246.109,
+          256.506,
           758.0,
-          -1.338
+          75.311
         ],
         "hair_root_far": [
-          790.757,
+          758.956,
           758.0,
-          -77.883
+          -148.394
         ],
         "tail_near": [
-          201.109,
+          211.506,
           1046.0,
-          -26.338
+          50.311
         ],
         "tail_far": [
-          835.757,
+          803.956,
           1046.0,
-          -102.883
+          -173.394
         ]
       },
       "joints_source_xy": {
@@ -3799,47 +3800,47 @@
           826
         ],
         "nose": [
-          563.664,
+          639.92,
           730.0
         ],
         "mouth_center": [
-          559.489,
+          627.718,
           778.0
         ],
         "chin": [
-          544.18,
+          582.977,
           874.0
         ],
         "ear_near": [
-          232.861,
+          255.418,
           690.0
         ],
         "ear_far": [
-          815.139,
+          792.582,
           690.0
         ],
         "eye_near": [
-          441.139,
+          511.578,
           634.0
         ],
         "eye_far": [
-          670.881,
+          723.521,
           634.0
         ],
         "hair_root_near": [
-          246.109,
+          256.506,
           758.0
         ],
         "hair_root_far": [
-          790.757,
+          758.956,
           758.0
         ],
         "tail_near": [
-          201.109,
+          211.506,
           1046.0
         ],
         "tail_far": [
-          835.757,
+          803.956,
           1046.0
         ]
       },
@@ -3889,47 +3890,47 @@
           672.1
         ],
         "nose": [
-          809.115,
+          873.932,
           590.5
         ],
         "mouth_center": [
-          805.566,
+          863.56,
           631.3
         ],
         "chin": [
-          792.553,
+          825.53,
           712.9
         ],
         "ear_near": [
-          527.932,
+          547.105,
           556.5
         ],
         "ear_far": [
-          1022.868,
+          1003.695,
           556.5
         ],
         "eye_near": [
-          704.968,
+          764.841,
           508.9
         ],
         "eye_far": [
-          900.249,
+          944.993,
           508.9
         ],
         "hair_root_near": [
-          539.193,
+          548.03,
           614.3
         ],
         "hair_root_far": [
-          1002.143,
+          975.112,
           614.3
         ],
         "tail_near": [
-          500.943,
+          509.78,
           859.1
         ],
         "tail_far": [
-          1040.393,
+          1013.362,
           859.1
         ]
       },
@@ -3937,7 +3938,7 @@
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_pending_Astra_freeze"
+      "status": "construction_only_actual_adoption_and_approval_in_group_records"
     },
     {
       "id": "d13",
@@ -3945,7 +3946,7 @@
       "hold": 3,
       "end_inclusive": 89,
       "t": 3.625,
-      "head_yaw_deg": -6,
+      "head_yaw_deg": 8,
       "head_pitch_deg": 0,
       "torso_yaw_deg": 8,
       "upper_body_dy_source_px": 3,
@@ -3953,8 +3954,8 @@
       "mouth_aperture_H": 0.0,
       "gaze_target": "away",
       "tail_lag_source_px": 12,
-      "title": "转头中间一",
-      "note": "整头越过正面；两耳露出比例交换，颈面重画。",
+      "title": "闭口后整头起转",
+      "note": "首次整头向画左转一小步，仍略朝画右，尚未越正面；颅体耳发根及颈面一起重画。",
       "joints_3d_source": {
         "neck_base": [
           524.0,
@@ -4012,59 +4013,59 @@
           0
         ],
         "nose": [
-          494.209,
+          563.664,
           731.0,
-          283.439
+          282.226
         ],
         "mouth_center": [
-          497.345,
+          559.489,
           779.0,
-          253.603
+          252.518
         ],
         "chin": [
-          508.843,
+          544.18,
           875.0,
-          144.206
+          143.589
         ],
         "ear_near": [
-          231.611,
+          232.861,
           691.0,
-          -30.731
+          40.917
         ],
         "ear_far": [
-          816.389,
+          815.139,
           691.0,
-          30.731
+          -40.917
         ],
         "eye_near": [
-          384.594,
+          441.139,
           635.0,
-          216.615
+          243.906
         ],
         "eye_far": [
-          615.323,
+          670.881,
           635.0,
-          240.865
+          211.618
         ],
         "hair_root_near": [
-          254.688,
+          246.109,
           759.0,
-          -68.526
+          -1.338
         ],
         "hair_root_far": [
-          801.675,
+          790.757,
           759.0,
-          -11.036
+          -77.883
         ],
         "tail_near": [
-          221.688,
+          213.109,
           1047.0,
-          -93.526
+          -26.338
         ],
         "tail_far": [
-          858.675,
+          847.757,
           1047.0,
-          -36.036
+          -102.883
         ]
       },
       "joints_source_xy": {
@@ -4113,47 +4114,47 @@
           827
         ],
         "nose": [
-          494.209,
+          563.664,
           731.0
         ],
         "mouth_center": [
-          497.345,
+          559.489,
           779.0
         ],
         "chin": [
-          508.843,
+          544.18,
           875.0
         ],
         "ear_near": [
-          231.611,
+          232.861,
           691.0
         ],
         "ear_far": [
-          816.389,
+          815.139,
           691.0
         ],
         "eye_near": [
-          384.594,
+          441.139,
           635.0
         ],
         "eye_far": [
-          615.323,
+          670.881,
           635.0
         ],
         "hair_root_near": [
-          254.688,
+          246.109,
           759.0
         ],
         "hair_root_far": [
-          801.675,
+          790.757,
           759.0
         ],
         "tail_near": [
-          221.688,
+          213.109,
           1047.0
         ],
         "tail_far": [
-          858.675,
+          847.757,
           1047.0
         ]
       },
@@ -4203,55 +4204,55 @@
           672.95
         ],
         "nose": [
-          750.078,
+          809.115,
           591.35
         ],
         "mouth_center": [
-          752.743,
+          805.566,
           632.15
         ],
         "chin": [
-          762.517,
+          792.553,
           713.75
         ],
         "ear_near": [
-          526.869,
+          527.932,
           557.35
         ],
         "ear_far": [
-          1023.931,
+          1022.868,
           557.35
         ],
         "eye_near": [
-          656.905,
+          704.968,
           509.75
         ],
         "eye_far": [
-          853.025,
+          900.249,
           509.75
         ],
         "hair_root_near": [
-          546.484,
+          539.193,
           615.15
         ],
         "hair_root_far": [
-          1011.423,
+          1002.143,
           615.15
         ],
         "tail_near": [
-          518.434,
+          511.143,
           859.95
         ],
         "tail_far": [
-          1059.873,
+          1050.593,
           859.95
         ]
       },
-      "head_frontmost_ear_landmark": "ear_far",
+      "head_frontmost_ear_landmark": "ear_near",
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_pending_Astra_freeze"
+      "status": "construction_only_actual_adoption_and_approval_in_group_records"
     },
     {
       "id": "d14",
@@ -4565,7 +4566,7 @@
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_pending_Astra_freeze"
+      "status": "construction_only_actual_adoption_and_approval_in_group_records"
     },
     {
       "id": "d15",
@@ -4879,7 +4880,7 @@
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_pending_Astra_freeze"
+      "status": "construction_only_actual_adoption_and_approval_in_group_records"
     },
     {
       "id": "d16",
@@ -4896,7 +4897,7 @@
       "gaze_target": "away",
       "tail_lag_source_px": 0,
       "title": "轻回落停住",
-      "note": "落定提案提前到F100，头回落约3°，尾端落定；实画曝光检吊住时可再提前F098，仍120帧。",
+      "note": "F100头小回落约3°、尾端落定；按最新明确门保持F100，仍120帧。",
       "joints_3d_source": {
         "neck_base": [
           524.0,
@@ -5193,7 +5194,7 @@
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_pending_Astra_freeze"
+      "status": "construction_only_actual_adoption_and_approval_in_group_records"
     }
   ]
 }
