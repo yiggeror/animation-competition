@@ -1,0 +1,15 @@
+from pathlib import Path
+from PIL import Image,ImageFilter
+import argparse,numpy as np,json,hashlib
+p=argparse.ArgumentParser();p.add_argument('name');p.add_argument('--raw',required=True);p.add_argument('--scale',type=float,required=True);p.add_argument('--tx',type=float,default=0);p.add_argument('--ty',type=float,default=0);args=p.parse_args();G=Path(__file__).resolve().parent;R=G.parent;O=R/args.name
+for d in ['registered','candidates','qa','geometry']:(O/d).mkdir(parents=True,exist_ok=True)
+raw=Image.open(args.raw).convert('RGBA');s=args.scale;reg=raw.transform((1200,990),Image.Transform.AFFINE,(1/s,0,-args.tx/s,0,1/s,-args.ty/s),resample=Image.Resampling.BICUBIC);reg.save(O/'registered/F025_registered_crop_3x_RGBA.png');small=reg.resize((400,330),Image.Resampling.LANCZOS);scene=Image.new('RGBA',(1920,1080));scene.paste(small,(900,660));scene.save(O/'registered/F025_registered_scene_patch_RGBA.png')
+base=Image.open(G/'inputs/F025_scene_preplaced_NO_ROD_RGBA.png').convert('RGBA');m=Image.open(G/'masks/F025_WHITE_allowed_BLACK_frozen.png').convert('L');binary=np.array(m)>0;f=np.array(m.filter(ImageFilter.GaussianBlur(.6)),float)/255;f[~binary]=0;b=np.array(base);q=np.array(scene);ba=b[:,:,3].astype(float)/255;qa=q[:,:,3].astype(float)/255;alpha=qa*f+ba*(1-f);premul=q[:,:,:3].astype(float)*qa[:,:,None]*f[:,:,None]+b[:,:,:3].astype(float)*ba[:,:,None]*(1-f[:,:,None]);rgb=np.divide(premul,np.maximum(alpha[:,:,None],1e-10));out=np.dstack((np.rint(rgb).clip(0,255).astype('uint8'),np.rint(alpha*255).clip(0,255).astype('uint8')));out[~binary]=b[~binary];res=Image.fromarray(out);dest=O/'candidates/S08_F025_local_arm_hand_candidate_RGBA.png';res.save(dest)
+for tag,c in [('light',(244,242,237,255)),('dark',(34,42,53,255))]:
+ bg=Image.alpha_composite(Image.new('RGBA',base.size,c),res);bg.convert('RGB').save(O/'qa'/f'candidate_{tag}.png')
+ for n,bb,z in [('whole_arm',(900,660,1300,990),3),('grip_hand',(1120,680,1300,825),4),('upperarm_depth',(925,775,1115,950),4),('table_box',(1040,930,1190,990),4)]:
+  a=bg.crop(bb);a.resize((a.width*z,a.height*z),Image.Resampling.LANCZOS).convert('RGB').save(O/'qa'/f'{n}_{tag}.png')
+ orig=Image.alpha_composite(Image.new('RGBA',base.size,c),Image.open(R/'F023_FINAL_LOCKED/S08_F023_grandma_match_box_RGBA.png').convert('RGBA'));pan=Image.new('RGB',(1920,1080),c[:3]);pan.paste(orig.resize((960,540)).convert('RGB'),(0,270));pan.paste(bg.resize((960,540)).convert('RGB'),(960,270));pan.save(O/'qa'/f'F023_F025_same_scale_{tag}.png')
+ch=np.any(out!=b,2);checks={'status':'DIAGNOSTIC_PENDING_REVIEW','candidate_sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'raw_sha256':hashlib.sha256(Path(args.raw).read_bytes()).hexdigest(),'native_calls_for_pose':1,'registration':{'scale':s,'tx':args.tx,'ty':args.ty},'outside_white_changed':int((ch&~binary).sum())}
+for name in ['F025_near_hand_match_full_guard.png','F025_fixed_table_box_guard.png','F025_far_closed_hand_jade_AND_ALPHA0_SEAT_guard.png','F025_actual_blue_cuff_guard.png']:checks[name+'_changed']=int((ch&(np.array(Image.open(G/'masks'/name))>0)).sum())
+(O/'geometry/checks.json').write_text(json.dumps(checks,indent=2));print(json.dumps(checks))

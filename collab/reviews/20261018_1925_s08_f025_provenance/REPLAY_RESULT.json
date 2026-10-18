@@ -1,0 +1,46 @@
+{
+  "status": "SAME_RAW_REPLAY_BYTE_EXACT",
+  "actual_sha256": "25e5ff2a37421bc90bbbaa3650e912def85d64fea1ee7a5cafa1a3c98f689cae",
+  "locked_sha256": "25e5ff2a37421bc90bbbaa3650e912def85d64fea1ee7a5cafa1a3c98f689cae",
+  "byte_equal": true,
+  "logical_image_call": 13,
+  "additional_image_calls": 0,
+  "commands": [
+    {
+      "command": [
+        "python",
+        "/workspace/scratch/f060b5601755/astra_s08_f025_provenance_20261018_1925/isolated_replay/F025_input_gate/composite_returned_crop.py",
+        "F025_result_wrist_registered",
+        "--raw",
+        "/workspace/scratch/f060b5601755/astra_s08_f025_provenance_20261018_1925/isolated_replay/F025_native_call13/raw/F025_midpress_arm_native_raw.png",
+        "--scale",
+        "0.8689355539464158",
+        "--tx",
+        "-12",
+        "--ty",
+        "-3"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"DIAGNOSTIC_PENDING_REVIEW\", \"candidate_sha256\": \"9f8055c533ae4c52c717b616222111e9155e1bd510104df9ae4251b0b26bae14\", \"raw_sha256\": \"cfeb2276e780fac90fcb68a3408f5d94033590076fdc44f0d749ec51ff83ff0d\", \"native_calls_for_pose\": 1, \"registration\": {\"scale\": 0.8689355539464158, \"tx\": -12.0, \"ty\": -3.0}, \"outside_white_changed\": 0, \"F025_near_hand_match_full_guard.png_changed\": 0, \"F025_fixed_table_box_guard.png_changed\": 0, \"F025_far_closed_hand_jade_AND_ALPHA0_SEAT_guard.png_changed\": 0, \"F025_actual_blue_cuff_guard.png_changed\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "/workspace/scratch/f060b5601755/astra_s08_f025_provenance_20261018_1925/isolated_replay/F025_input_gate/prepare_semantic_v8.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{'status': 'SAME_RAW_SEMANTIC_CANDIDATE_PENDING_REVIEW', 'sha256': '137cc218103c41581b8d592460d3c9498e6165f67f599f6fdbc68dc5f39e449e', 'outside_white_changed': 0, 'near_guard_changed': 0, 'far_hand_jade_alpha0_seat_guard_changed': 0, 'blue_cloth_changed': 0, 'box_changed': 0, 'same_native_call': 13}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "/workspace/scratch/f060b5601755/astra_s08_f025_provenance_20261018_1925/isolated_replay/F025_input_gate/apply_final_color_g1_v2.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"sha256\": \"25e5ff2a37421bc90bbbaa3650e912def85d64fea1ee7a5cafa1a3c98f689cae\",\n  \"mask_pixels\": 2704,\n  \"deltas\": {\n    \"forearm_lit_inner_broad\": [\n      -1.634509753920696,\n      -3.933253856942514,\n      -3.5734778358621213\n    ],\n    \"forearm_lit_upper_middle_diagnostic\": [\n      -1.5765786664769053,\n      -3.6230669607913057,\n      -2.4771356056832587\n    ],\n    \"forearm_lower_turn_SHADOW_SEPARATE\": [\n      -6.48873968079252,\n      -16.017798569069896,\n      -18.669242340854908\n    ]\n  }\n}\n",
+      "stderr": ""
+    }
+  ]
+}
