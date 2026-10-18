@@ -1,0 +1,3 @@
+cwd: /workspace/s01-render-ab3644e0
+node --require /workspace/cloud-s10-review-20261018-1324/collab/reviews/cloud_s10_20261018/render_assist/use_system_chromium.cjs tools/js/frames.cjs collab/reviews/20261018_1600_s01_full_scene/s01_drawn_candidate.js build/s01_full84 --fps 24 --w 1280 --h 720 --workers 4 --mp4 build/S01_full84.mp4
+stdout/stderr: render.log

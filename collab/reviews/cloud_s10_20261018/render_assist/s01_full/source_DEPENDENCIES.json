@@ -1,0 +1,51 @@
+{
+  "repository": "yiggeror/animation-competition",
+  "ref_read": "claude/intelligent-euler-t2so6e",
+  "scope": "direct renderer/prop dependencies and source truth; unchanged repository files must remain available at HTTP root",
+  "files": [
+    {
+      "path": "js/paint/paintshot.js",
+      "git_blob_sha": "04e5e6e2e88e48bb46ac96eeed81de12bdd59018",
+      "usage": "existing renderPaint and loadImg"
+    },
+    {
+      "path": "js/paint/shots/s01.js",
+      "git_blob_sha": "741cfe1fa9be4882f08930f51eddf926d3200f34",
+      "usage": "COIL, COILC, FAN only; never its legacy character render"
+    },
+    {
+      "path": "js/code/s08.js",
+      "git_blob_sha": "5cbcefef2906d920ce8372a47a8bbbd06dd7ad4a",
+      "usage": "lamp, LX, LB props only"
+    },
+    {
+      "path": "assets/paint/bg_01_room_wide.png",
+      "git_blob_sha": "84945c23cac8e376fc24aeb5a43e4548b5eca8c9",
+      "usage": "exact original1672x941background"
+    },
+    {
+      "path": "js/anim/s01.js",
+      "git_blob_sha": "e7cce231e879da85d48125c28e22a4c3bbbc6d89",
+      "usage": "scene/light/camera/prop source; not imported or called"
+    },
+    {
+      "path": "js/anim/kit.js",
+      "git_blob_sha": "20a1d0621dec87f9b4706f3d22b87b6dcf2302fa",
+      "usage": "exact stool primitive and transform source; not imported or called"
+    },
+    {
+      "path": "docs/keyframes/opening_plan.json",
+      "git_blob_sha": "12ce95435f1e8b73f40c913ef0a883c0fac46305",
+      "usage": "84f original exposure source"
+    }
+  ],
+  "local_dependencies": [
+    "timeline.js",
+    "frames/*.png"
+  ],
+  "frame_count": 84,
+  "fps": 24,
+  "all_character_assets": 18,
+  "production_changes": false,
+  "server_mime_contract": "Original server maps.js, not.mjs; all runtime imports use.js"
+}
