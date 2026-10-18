@@ -1,0 +1,160 @@
+{
+  "status": "COORDINATOR_AND_INDEPENDENT_FINAL_STATIC_PASS",
+  "asset_size": [
+    1024,
+    1536
+  ],
+  "asset_to_world": {
+    "uniform_scale": 0.2734375,
+    "translation": [
+      730,
+      375
+    ]
+  },
+  "source_body_sha256": "485ab62dbeafd86fb0d3ce47beb5e2230a3720d027558a6a31e28cb545ccd7fc",
+  "candidate_sha256": "669a5e5b7b17ecbaddb0bb6aa266125de870def74c3517cecb9fff3b5fab9720",
+  "coordinate_method": "Visible contour/contact estimates from registered painted output, +/- 2 asset pixels. Wrist centers are visible local estimates, not measured hidden skeleton joints.",
+  "actual_asset": {
+    "near_left_wrist_center": [
+      548,
+      910
+    ],
+    "far_right_wrist_center": [
+      526,
+      815
+    ],
+    "pod_center": [
+      461,
+      854
+    ],
+    "pod_upper_tip": [
+      444,
+      826
+    ],
+    "pod_lower_tip": [
+      486,
+      879
+    ],
+    "far_thumb_contact": [
+      456,
+      830
+    ],
+    "far_index_contact": [
+      445,
+      827
+    ],
+    "near_thumb_contact": [
+      472,
+      857
+    ],
+    "near_supporting_index_contact": [
+      481,
+      878
+    ],
+    "near_elbow_outline_turn": [
+      722,
+      971
+    ],
+    "far_forearm_body_emergence": [
+      562,
+      824
+    ]
+  },
+  "actual_world": {
+    "near_left_wrist_center": [
+      879.84375,
+      623.828125
+    ],
+    "far_right_wrist_center": [
+      873.828125,
+      597.8515625
+    ],
+    "pod_center": [
+      856.0546875,
+      608.515625
+    ],
+    "pod_upper_tip": [
+      851.40625,
+      600.859375
+    ],
+    "pod_lower_tip": [
+      862.890625,
+      615.3515625
+    ],
+    "far_thumb_contact": [
+      854.6875,
+      601.953125
+    ],
+    "far_index_contact": [
+      851.6796875,
+      601.1328125
+    ],
+    "near_thumb_contact": [
+      859.0625,
+      609.3359375
+    ],
+    "near_supporting_index_contact": [
+      861.5234375,
+      615.078125
+    ],
+    "near_elbow_outline_turn": [
+      927.421875,
+      640.5078125
+    ],
+    "far_forearm_body_emergence": [
+      883.671875,
+      600.3125
+    ]
+  },
+  "superseded_proposal_world": {
+    "near_left_wrist_center": [
+      883,
+      614
+    ],
+    "far_right_wrist_center": [
+      874,
+      598
+    ],
+    "pod_center": [
+      859,
+      609
+    ]
+  },
+  "delta_actual_minus_proposal_world": {
+    "near_left_wrist_center": [
+      -3.15625,
+      9.828125
+    ],
+    "far_right_wrist_center": [
+      -0.171875,
+      -0.1484375
+    ],
+    "pod_center": [
+      -2.9453125,
+      -0.484375
+    ]
+  },
+  "body_locked": "Original source head/body/legs/seat outside explicit local arm/clothing union retained pixel-exact. Cuff lower-edge strip uses same registered raw to keep arm connected.",
+  "basin": {
+    "world_rim": [
+      868.52,
+      644.81
+    ],
+    "world_width_depth": [
+      79.1,
+      21.7
+    ],
+    "same_master_restoration_only_under_old_hand": true,
+    "count": 1
+  },
+  "jade": {
+    "side": "anatomical LEFT near wrist",
+    "candidate": "Approved single natural same-call generated green jade; no transplanted original jade pixels",
+    "original_rigid_transplant": "local trial retained separately; not submitted due mismatched original perspective and skin seam"
+  },
+  "chain_rule": "F010/F012 must derive from actual passed F000 geometry; do not claim near wrist remains (883,614). F012 shared freeze needs separate explicit small-chain input gate.",
+  "coordinator_pass": "2026-10-18 13:42 UTC",
+  "independent_pass": "2026-10-18 13:43 UTC",
+  "production_rgba_sha256": "669a5e5b7b17ecbaddb0bb6aa266125de870def74c3517cecb9fff3b5fab9720",
+  "full_local_provenance": "astra_s01_first_gate_20261018_1302"
+}

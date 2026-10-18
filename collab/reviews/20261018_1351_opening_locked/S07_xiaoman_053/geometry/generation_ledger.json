@@ -1,0 +1,54 @@
+{
+  "frame": 53,
+  "prior_s07_completed_calls": 14,
+  "prior_s07_quality_failures": 4,
+  "prior_author_model_capacity_failures": 2,
+  "generation_calls_started": 1,
+  "completed": 1,
+  "failed": 0,
+  "quality_failures": 0,
+  "calls": [
+    {
+      "call": 15,
+      "frame": 53,
+      "status": "approved_F053_v7",
+      "tool": "builtin image_gen",
+      "prompt": "prompts/F053_call015_local_repair.txt",
+      "approved_mother_sha256": "ee222f1774bbc06c17fa5d2efd417c0dab5f812f8eeecceee86307342a8a3ae4",
+      "input_prepose": "reference/F053_prepose_neutral.png",
+      "mask": "masks/generation_repair_allowed.png",
+      "source_generated": "generated_images/exec-61436712-07ce-46b7-a578-e22804a977e3.png",
+      "original": "originals/F053_call015.png",
+      "candidate": "candidates/F053_v7_rest_registered.png",
+      "rejected_composites": [
+        {
+          "version": 1,
+          "reason": "Narrow edit masks clipped elbow and produced forearm steps."
+        },
+        {
+          "version": 2,
+          "reason": "Old cuff overlay created a thin doubled-edge gap."
+        },
+        {
+          "version": 3,
+          "reason": "Expanded cuff patch clipped puff boundaries."
+        },
+        {
+          "version": 4,
+          "reason": "Puff boundary backfill incomplete."
+        },
+        {
+          "version": 5,
+          "reason": "Backfill retained tiny old cuff hooks."
+        }
+      ],
+      "approved": "approved/F053_rest_on_mat.png",
+      "approved_sha256": "fe7ede9a44e8da89322cb1b057f91310cd2dc69ee680db6aa5b98818bc255501",
+      "superseded_approved_geometry": {
+        "version": 6,
+        "reason": "Static pose passed. Replaced by identical RGB v7 to restore 1070 original sleeve alpha values without duplicate alpha-over."
+      }
+    }
+  ],
+  "composite_failures": 5
+}

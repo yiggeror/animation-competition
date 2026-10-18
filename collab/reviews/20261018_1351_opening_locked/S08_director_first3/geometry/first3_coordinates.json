@@ -1,0 +1,159 @@
+{
+  "status": "DIRECTOR_COMPOSITION_REFERENCE_ONLY_NOT_32_STATE_RELEASE",
+  "note": "No projected-length cache or bone-length pass. Human anatomy and detailed hand shapes still need review.",
+  "lamp_base": [
+    1415,
+    965.6
+  ],
+  "lamp_scale": 0.7567567567567568,
+  "lamp_wick": [
+    1415,
+    794.5729729729729
+  ],
+  "lamp_lever_pivot": [
+    1301.4864864864865,
+    791.545945945946
+  ],
+  "states": [
+    {
+      "frame": 0,
+      "R": [
+        [
+          650,
+          650
+        ],
+        [
+          780,
+          944
+        ],
+        [
+          970,
+          845
+        ]
+      ],
+      "L": [
+        [
+          1000,
+          650
+        ],
+        [
+          1060,
+          940
+        ],
+        [
+          1170,
+          830
+        ]
+      ],
+      "right_pinch": [
+        1045,
+        820
+      ],
+      "match_head": [
+        1076,
+        764
+      ],
+      "box_center": [
+        1125,
+        750
+      ],
+      "match_fire": false,
+      "left_contact": "box support",
+      "source": "coordinator F000 v5 geometry unchanged"
+    },
+    {
+      "frame": 27,
+      "R": [
+        [
+          680,
+          660
+        ],
+        [
+          750,
+          935
+        ],
+        [
+          930,
+          894
+        ]
+      ],
+      "L": [
+        [
+          1050,
+          660
+        ],
+        [
+          1120,
+          940
+        ],
+        [
+          1150,
+          790
+        ]
+      ],
+      "right_pinch": [
+        1005,
+        864
+      ],
+      "match_head": [
+        1026,
+        803.551674
+      ],
+      "match_fire": true,
+      "left_contact": [
+        1233.9532049682696,
+        766.8943738423919
+      ],
+      "lamp_lift": 1,
+      "head_torso_note": "frontward chest, gaze on burning head; flame stays within approved negative space",
+      "source": "F027_B_negative_space_DRAFT"
+    },
+    {
+      "frame": 41,
+      "R": [
+        [
+          870,
+          735
+        ],
+        [
+          1020,
+          1010
+        ],
+        [
+          1275,
+          865
+        ]
+      ],
+      "L": [
+        [
+          1050,
+          680
+        ],
+        [
+          1080,
+          910
+        ],
+        [
+          1150,
+          790
+        ]
+      ],
+      "right_pinch": [
+        1361.290955,
+        827.502268
+      ],
+      "match_head": [
+        1415.0,
+        794.572972972973
+      ],
+      "match_fire": true,
+      "left_contact": [
+        1233.9532049682696,
+        766.8943738423919
+      ],
+      "lamp_lift": 1,
+      "head_torso_note": "3/4 toward lamp with pitched head, shared chest/neck/collar yaw",
+      "source": "F041_B_chest_neck_head_turn_DRAFT"
+    }
+  ]
+}
