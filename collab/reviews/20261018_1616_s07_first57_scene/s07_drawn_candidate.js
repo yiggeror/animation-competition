@@ -44,7 +44,7 @@ export function camera(t){
 }
 let seat;
 function stoolLayer(){
- if(!seat){const c=new OffscreenCanvas(1672,941),x=c.getContext('2d');x.translate(...GM_AT);x.scale(-GM_K,GM_K);stool(x,-2);seat={img:c,x:0,y:0,sc:1};}
+ if(!seat){const c=new OffscreenCanvas(1672,941),x=c.getContext('2d');x.translate(...GM_AT);x.scale(-GM_K,GM_K);stool(x,-2);seat={img:c,x:0,y:0,sc:1,contact:{a:.45,blur:3,sy:-.1,skew:.5}};}
  return seat;
 }
 export function authoredLayers(f){
@@ -53,9 +53,9 @@ export function authoredLayers(f){
  if(f<16||f>=39){
    // F000..008 include their own phone. In supine states the separately locked phone stays behind body.
    if(f>=39)layers.push({img:PHONE,x:430,y:533,sc:.16});
-   layers.push({img:pick(XIAOMAN,f),x:f<39?430:339.7325,y:f<39?533:512.485,sc:f<39?.16:.2475});
+   layers.push({img:pick(XIAOMAN,f),x:f<39?430:339.7325,y:f<39?533:512.485,sc:f<39?.16:.2475,contact:{a:.4,blur:3,sy:1,dx:-2,dy:3}});
  }
- if(f<39)layers.push({img:pick(GRANDMA,f),x:730,y:375,sc:.2734375});
+ if(f<39)layers.push({img:pick(GRANDMA,f),x:730,y:375,sc:.2734375,contact:{a:.45,blur:4,sy:-.07,skew:.5}});
  return layers;
 }
 const shot={bg:'bg_01_room_wide',size:[1672,941],
