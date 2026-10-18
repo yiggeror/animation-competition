@@ -1,0 +1,55 @@
+{
+  "status": "PASS_STATIC_AND_DRAW_COMMANDS_ONLY_NOT_CANVAS",
+  "planned_frames": 30,
+  "approved_available_frames": 30,
+  "F027_drawing_adopted": true,
+  "first27_source_commit": "a4b00a05c88b3cc46284b45d1d25cff4c7ca0831",
+  "first27_actual_pass_commit": "9a6b01f70eb1aba3e8b21c75d5bc6497acb7a911",
+  "first27_contract_samples_exact": 108,
+  "first27_draw_commands_lighting_and_fire_identical": true,
+  "old_image_files_byte_equal": 24,
+  "verified_layer_sha256": 27,
+  "original_scene_draw_source_byte_equal": true,
+  "mechanical_geometry": [
+    {
+      "lift": 0,
+      "angle": -0.85,
+      "lever": [
+        1254.0390495120528,
+        737.5349762791034
+      ],
+      "globeTop": [
+        1415,
+        556.9513513513514
+      ]
+    },
+    {
+      "lift": 0.5,
+      "angle": -0.6,
+      "lever": [
+        1242.1515476848717,
+        750.9527302910597
+      ],
+      "globeTop": [
+        1415,
+        515.3297297297297
+      ]
+    },
+    {
+      "lift": 1,
+      "angle": -0.35,
+      "lever": [
+        1233.9532049682696,
+        766.8943738423919
+      ],
+      "globeTop": [
+        1415,
+        473.7081081081081
+      ]
+    }
+  ],
+  "first_rejected_frame": 30,
+  "F030_and_later_explicitly_rejected": true,
+  "high_mid_low_high_cache_order_preserves_old_frame0": true,
+  "new_actual_canvas_frames": 0
+}

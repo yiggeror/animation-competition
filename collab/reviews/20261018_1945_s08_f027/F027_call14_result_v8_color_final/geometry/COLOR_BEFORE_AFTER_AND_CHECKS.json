@@ -1,0 +1,67 @@
+{
+  "status": "FINAL_COLOR_CANDIDATE_PENDING_DUAL_GATE",
+  "candidate_sha256": "2dc0ee2bc06b4b872e0f79cbf4c1bd19b2ccaa160cba9b5feefd45f2a8e268ac",
+  "previous_sha256": "ea6fdf04bd912095b4430e4281f8e353bcaffa8a0cf8181b63bdbcb9b3454d30",
+  "source_raw_sha256": "d3364d4e471f9259d2eaf79aea70ed69d4d6d33add96a76a0a0d8ebee2e13e17",
+  "native_calls_added": 0,
+  "changes": "Only newcall14farforearm light AND lower-turn skin share G+0..1 B+0..4. Soft boundary to original025 collar/guard/ink. R andalpha unchanged; no separate shadow lifting.",
+  "actual_changed_pixels": 3636,
+  "soft_nonzero_pixels": 3636,
+  "G_changed_pixels": 3300,
+  "B_changed_pixels": 3636,
+  "R_changes": 0,
+  "alpha_changes": 0,
+  "guard_changes": 0,
+  "old025_collar_changes": 0,
+  "actual_lower_turn_dark_pixels": 1348,
+  "actual_lower_turn_dark_changes": 844,
+  "note": "Cyan diagnostic polygon includes some brighter transition pixels. Both real material planes receive the SAME channel offset; no independent shadow brightness compensation. Core plane contrast is preserved.",
+  "measurements": {
+    "027_lit_inner": {
+      "count": 1261,
+      "before": [
+        249.94686756542427,
+        199.36320380650278,
+        159.75495638382236
+      ],
+      "after": [
+        249.94686756542427,
+        200.2498017446471,
+        163.31720856463124
+      ],
+      "delta_to000_corresponding": [
+        -1.1861759128366032,
+        -3.8528069510050784,
+        -3.4938059281223843
+      ],
+      "delta_to025_corresponding": [
+        0.4483338410840929,
+        0.08044690593743553,
+        0.07967190773973698
+      ]
+    },
+    "027_underturn_shadow_SEPARATE": {
+      "count": 402,
+      "before": [
+        240.72139303482587,
+        182.21144278606965,
+        139.76119402985074
+      ],
+      "after": [
+        240.72139303482587,
+        183.19402985074626,
+        143.6915422885572
+      ],
+      "delta_to000_corresponding": [
+        -6.3777917477828225,
+        -10.051894062297208,
+        -12.345142494051487
+      ],
+      "delta_to025_corresponding": [
+        -3.9229107626424877,
+        -4.890780275836022,
+        -4.450229863341519
+      ]
+    }
+  }
+}
