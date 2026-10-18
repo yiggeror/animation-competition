@@ -46,6 +46,6 @@ for bg,col in [('gray',(213,223,231,255)),('dark',(35,43,52,255))]:
   clip={'path':str(video.relative_to(R)),'sha256':sha(video),'sequence':seq,'scene_frames_inclusive':[start,start+len(seq)-1],'probe':probe,'decoded_frames':scores,'max_expected_RGB_MAE':max(q['expected_RGB_MAE']for q in scores),'no_tween_no_new_drawing':True}
   (O/'actual_decode_checks.json').write_text(json.dumps(clip,ensure_ascii=False,indent=2)+'\n');report['clips'][label+'_'+bg]=clip
 with (R/'source_exposure_mapping_048_062.csv').open('w',newline='')as f:
- w=csv.writer(f);w.writerow(['scene_frame','state_event','original_source_event','source_sha256','switch','light_on'])
+ w=csv.writer(f,lineterminator='\n');w.writerow(['scene_frame','state_event','original_source_event','source_sha256','switch','light_on'])
  for i,e in enumerate([48]*4+[52]*4+[56]*2+[58]*5):w.writerow([48+i,e,sources[e]['true_original_event'],sources[e]['sha256'],'OFF',False])
 (R/'qa/actual_decode_and_gap_checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps({'actual_gaps':gaps,'clips':{k:{'frames':len(v['sequence']),'sha256':v['sha256'],'max_RGB_MAE':v['max_expected_RGB_MAE']}for k,v in report['clips'].items()}},ensure_ascii=False,indent=2))
