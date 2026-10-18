@@ -1,0 +1,203 @@
+{
+  "status": "ZERO_CALL_RIGID_PROPOSAL_ONLY_ARM_REACH_GATE_UNRESOLVED",
+  "new_native_calls": 0,
+  "S07_total_native_calls_unchanged": 2,
+  "accepted_F057": 0,
+  "other10_calls": 0,
+  "source": {
+    "path": "candidates/F057_call02_locked_domains_NOT_PASSED.png",
+    "sha256": "c9ae1dfb6fde6b16f2f9a03f453a3cea68a9dab689134be9a3935d7715160360",
+    "size": [
+      1672,
+      1080
+    ],
+    "meaning": "call02 uniformly aligned and previous locked domains restored; actual art, not a skeleton figure"
+  },
+  "source_call02_native_sha256": "549cd22c715a1724d6546ede9c2b084173d5592d4dde1ac884707d0490841449",
+  "registration_unchanged": {
+    "s": 0.36410361842105265,
+    "tx": 627.0254537171638,
+    "ty": 402.7604324894813,
+    "head_target": 69.1796875,
+    "head_center_world": [
+      929.9596642434797,
+      442.447726897376
+    ],
+    "warning": "Head source is actual G037253±5asset pixels, not75.1 construction; F057 head190±5native manual estimate. One uniform whole-image registration only."
+  },
+  "construction75_1_not_used": true,
+  "world_floor": 775,
+  "native_floor": 1022.345147583943,
+  "manual_landmark_limit": "All bone chains are visible 2D proxies with hidden hip/shoulder uncertainty, not measured anatomical joints or3D bone lengths. Same point definitions carried through rigid transforms.",
+  "near_complete_leg": {
+    "source_chain_native": [
+      [
+        791.0,
+        555.0
+      ],
+      [
+        858.0,
+        760.0
+      ],
+      [
+        908.8820512820513,
+        947.4666666666667
+      ]
+    ],
+    "proposal_chain_native": [
+      [
+        791.0,
+        550.2708845004845
+      ],
+      [
+        818.7165829532703,
+        764.1535416501339
+      ],
+      [
+        833.856190186625,
+        957.8118142506097
+      ]
+    ],
+    "rotation_deg": 10.71522097527263,
+    "source_pivot": [
+      791.0,
+      555.0
+    ],
+    "destination_pivot": [
+      791.0,
+      550.2708845004845
+    ],
+    "proxy_lengths_before_native": [
+      215.67104580819372,
+      194.2491550915484
+    ],
+    "proxy_lengths_after_native": [
+      215.6710458081937,
+      194.24915509154846
+    ],
+    "scale": 1,
+    "shoe_method": "complete leg rotates first; same real shoe/ankle fragment counter-rotated about transformed ankle to level the sole; ankle seam explicitly pending",
+    "source_real_sole_native_y": 1012,
+    "shoe_ankle_to_sole_native": 64.5333333333333
+  },
+  "far_complete_leg": {
+    "translation_native": [
+      0.0,
+      16.345147583943003
+    ],
+    "rotation_deg": 0,
+    "scale": 1,
+    "source_real_sole_native_y": 1006,
+    "source_ankle_native": [
+      658.0820512820513,
+      937.8205128205128
+    ],
+    "proposal_ankle_world": [
+      866.6355098069075,
+      750.175602015857
+    ],
+    "old_ankle_y758_not_forced": true
+  },
+  "support_actual_alpha128": {
+    "near": {
+      "actual_preposition_sole_native_y": 1022,
+      "actual_preposition_sole_world_y": 774.874330515797,
+      "visible_near_floor_contact_x_world_interval": [
+        915.0314158882165,
+        932.508389572427
+      ]
+    },
+    "far": {
+      "actual_preposition_sole_native_y": 1022,
+      "actual_preposition_sole_world_y": 774.874330515797,
+      "visible_near_floor_contact_x_world_interval": [
+        876.8005359540059,
+        900.1031675329533
+      ]
+    }
+  },
+  "support_limit": "Both visible shoe soles meet the same floor within raster rounding; this is geometric support only, not measured center-of-mass or dynamics.",
+  "proposal_horizontal_ankle_span_world": 63.99999999999999,
+  "near_proposal_ankle_world": [
+    930.6355098069075,
+    751.5031798245614
+  ],
+  "arm_complete_rigid": {
+    "visible_sleeve_pivot_native": [
+      903.0,
+      367.0
+    ],
+    "source_chain_native": [
+      [
+        903.0,
+        367.0
+      ],
+      [
+        914.0,
+        447.0
+      ],
+      [
+        976.4051282051282,
+        508.03076923076924
+      ]
+    ],
+    "proposal_chain_native": [
+      [
+        903.0,
+        367.0
+      ],
+      [
+        864.1868778740445,
+        437.81342775798714
+      ],
+      [
+        877.964337302079,
+        524.0070263074546
+      ]
+    ],
+    "rotation_deg": 36.55639963622353,
+    "scale": 1,
+    "proxy_lengths_before_native": [
+      80.75270893288967,
+      87.28777015824095
+    ],
+    "proxy_lengths_after_native": [
+      80.75270893288967,
+      87.28777015824089
+    ],
+    "complete_jade_and_hand_transform_same_as_arm": true,
+    "requested_wrist_world": [
+      942,
+      623
+    ],
+    "actual_proposal_wrist_world": [
+      946.6954457734923,
+      593.5532868460812
+    ],
+    "visible_sleeve_to_wrist_radius_world": 57.88902965734239,
+    "requested_sleeve_to_wrist_radius_world": 87.70775073288452,
+    "reach_deficit_world": 29.818721075542133,
+    "even_unfolded_visible_proxy_chain_max_world": 61.18414647828791,
+    "finding": "Rigid swing about real sleeve preserves arm/jade/hand but cannot reach623. No stretching, detached arm translation to waist, or fictitious bone-length pass used."
+  },
+  "actual_view_limit": "Rigid far-arm swing also puts much of the wrist behind the unchanged blouse. This is an explicit failed visibility/reach proposal, not a usable arm pose. Original complete jade/hand fragment is archived; rotated pixels use only source bicubic resampling and are not byte-identical after rotation.",
+  "future_native_seam_mask": {
+    "path": "masks/proposed_narrow_connection_only_NOT_APPROVED.png",
+    "pixels": 10351,
+    "domains": [
+      "trouser roots below unchanged blouse",
+      "small sleeve outlet",
+      "near cuff/ankle relevel junction"
+    ],
+    "whole_leg_or_arm_mask": false,
+    "knee_mask_pixels": 0,
+    "reason_no_knee_mask": "whole knee chain remains within one rigid leg; no knee cut was made",
+    "complete_distal_arm_overlap_pixels": 0,
+    "status": "proposal only; cannot generate until arm reach and mask review"
+  },
+  "static_source_foreground_changes": 0,
+  "original_blouse_blue_pixel_changes": 0,
+  "previous_complete_head_body_near_right_arm_hard_domain_changes": 0,
+  "no_request_prepared_or_sent": true,
+  "next_gate": "Astra inspect actual short-step support, fragment ownership and preserved chain lengths; resolve finite visible-arm reach to623 before authorizing any single connection call."
+}
