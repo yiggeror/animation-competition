@@ -1,0 +1,182 @@
+{
+  "generation_calls_started": 8,
+  "completed": 8,
+  "failed": 0,
+  "calls": [
+    {
+      "call": 1,
+      "frame": 0,
+      "tool": "builtin image_gen",
+      "prompt": "prompts/F000_call_001.txt",
+      "status": "completed_candidate_pending_review",
+      "freeze_commit": "7a48c1d8c8ac6b394a4dd31d4e6121ce4d7dce6e",
+      "source_generated": "generated_images/exec-72c5ba46-dc31-44f2-8509-27b73937da67.png",
+      "original": "originals/F000_call_001.png"
+    },
+    {
+      "call": 2,
+      "frame": 0,
+      "tool": "builtin image_gen",
+      "prompt": "prompts/F000_call_002_local_fingers.txt",
+      "status": "approved_F000_release_onset",
+      "scope": "local hand/finger refinement after independent base acceptance",
+      "mask": "masks/F000_call_002_edit_mask.png",
+      "original": "originals/F000_call_002.png",
+      "candidate": "candidates/F000_v2_fingers_clean_v4.png",
+      "effective_mask": "masks/F000_call_002_effective_mask_v3.png",
+      "outside_mask_rgba_changed_pixels": 0,
+      "native_alpha_defect": true,
+      "recovery_script": "scripts/restore_call002_alpha_v4.py",
+      "rejected_intermediates": [
+        "candidates/F000_v2_local_fingers.png",
+        "candidates/F000_v2_local_fingers_alpha_restored.png",
+        "candidates/F000_v2_fingers_clean.png"
+      ],
+      "approved_sha256": "99545196a0c2c11d9529c51cf4902a23e22e3f56f73ac209838ab96c0999e5dc"
+    },
+    {
+      "call": 3,
+      "frame": 3,
+      "tool": "builtin image_gen",
+      "prompt": "prompts/F003_call_003.txt",
+      "status": "completed_geometry_rejected_pending_local_fix",
+      "approved_parent": "candidates/F000_v2_fingers_clean_v4.png",
+      "input_reference": "reference/F003_input_F000_approved_on_neutral.png",
+      "allowed_mask": "masks/F003_call_003_allowed_region.png",
+      "original": "originals/F003_call_003.png",
+      "source_generated": "generated_images/exec-5af55810-1874-4b82-ac2a-00ee31a5b885.png",
+      "defect": "Phone center at source y873 about world672.7, already below approved landing center660; despite true hand gaps cannot pass trajectory.",
+      "alpha_zero_pixels": 1077021
+    },
+    {
+      "call": 4,
+      "frame": 3,
+      "tool": "builtin image_gen",
+      "prompt": "prompts/F003_call_004.txt",
+      "status": "completed_local_candidate_pending_review",
+      "preposition_record": "geometry/F003_prepose_diagnostic.json",
+      "input": "reference/F003_prepose_diagnostic_neutral.png",
+      "allowed_mask": "masks/F003_prepose_allowed_region.png",
+      "original": "originals/F003_call_004.png",
+      "candidate": "candidates/F003_v2_local.png",
+      "effective_mask": "masks/F003_call004_effective_mask_v2.png",
+      "outside_mask_rgba_changed_pixels": 0,
+      "source_generated": "generated_images/exec-031207b7-3a2c-4051-a169-79b1ddc3526b.png"
+    },
+    {
+      "call": 5,
+      "frame": 3,
+      "tool": "builtin image_gen",
+      "prompt": "prompts/F003_call_005.txt",
+      "status": "completed_rejected_no_readable_fifth_digit",
+      "scope": "near hand fifth digit and ownership only, phone/elbows/body locked",
+      "input": "reference/F003_call005_input_neutral.png",
+      "allowed_mask": "masks/F003_call005_near_hand_allowed.png",
+      "original": "originals/F003_call_005.png",
+      "source_generated": "generated_images/exec-1bc06a69-1953-488f-b5b5-39186aa0c718.png"
+    },
+    {
+      "call": 6,
+      "frame": 3,
+      "tool": "builtin image_gen",
+      "prompt": "prompts/F003_call_006.txt",
+      "status": "approved_F003_full_release",
+      "scope": "native-pixel short thumb preposition, builtin join only",
+      "preposition": "geometry/F003_thumb_prepose.json",
+      "input": "reference/F003_thumb_prepose_neutral.png",
+      "allowed_mask": "masks/F003_call006_thumb_join_allowed.png",
+      "original": "originals/F003_call_006.png",
+      "candidate": "candidates/F003_v3_thumb_join.png",
+      "source_generated": "generated_images/exec-9abfecc8-e122-4687-baf0-7255f7994676.png",
+      "effective_mask": "masks/F003_call006_thumb_join_allowed.png",
+      "outside_mask_rgba_changed_pixels": 0,
+      "approved_sha256": "c09299a86fd3ec258181c0123697c5321cc26ad6c03853320cf41d22bc18443a"
+    },
+    {
+      "call": 7,
+      "frame": 6,
+      "tool": "builtin image_gen",
+      "prompt": "prompts/F006_call_007.txt",
+      "status": "approved_F006_final_rear_edge_in_chain",
+      "approved_parent": "approved/F003_fully_released.png",
+      "input": "reference/F006_phone_edge_prepose_neutral.png",
+      "allowed_mask": "masks/F006_phone_redraw_allowed.png",
+      "preposition": "geometry/F006_phone_prepose.json",
+      "original": "originals/F006_call_007.png",
+      "candidate": "candidates/F006_v1_phone_edge.png",
+      "source_generated": "generated_images/exec-8170db21-e5aa-449f-abc5-5394371998dc.png",
+      "outside_mask_rgba_changed_pixels": 0
+    },
+    {
+      "call": 8,
+      "frame": 8,
+      "tool": "builtin image_gen",
+      "prompt": "prompts/F008_call_008.txt",
+      "status": "approved_F008_front_up_mat_landing_in_chain",
+      "chain_parent": "candidates/F006_v1_phone_edge.png",
+      "input": "reference/F008_phone_redraw_crop_1024.png",
+      "crop_registration": {
+        "full_source_crop": [
+          1216,
+          640,
+          1536,
+          960
+        ],
+        "upscale": 3.2,
+        "output_expected": [
+          1024,
+          1024
+        ],
+        "return_uniform_scale": 0.3125,
+        "paste": [
+          1216,
+          640
+        ]
+      },
+      "allowed_mask": "masks/F008_phone_redraw_allowed.png",
+      "preposition": "geometry/F008_phone_prepose.json",
+      "original": "originals/F008_call_008.png",
+      "candidate": "candidates/F008_v2_phone_landed.png",
+      "source_generated": "generated_images/exec-f94f2efa-5c85-4da5-9407-bc424f9c2040.png",
+      "actual_output_size": [
+        1254,
+        1254
+      ],
+      "actual_phone_registration": {
+        "nominal_uniform_scale": 0.2481060606060606,
+        "nominal_translation": [
+          1209.7973484848485,
+          633.969696969697
+        ],
+        "raster_crop": [
+          540,
+          540,
+          1092,
+          750
+        ],
+        "raster_size": [
+          137,
+          52
+        ],
+        "paste": [
+          1344,
+          768
+        ],
+        "filter": "premultiplied RGBA Lanczos; whole-pixel rounding only"
+      },
+      "outside_mask_rgba_changed_pixels": 0
+    }
+  ],
+  "quality_failures": 3,
+  "quality_failures_definition": "3 primary unusable-output events: raw alpha defect call002, trajectory rejection call003, no-anatomy-fix rejection call005. Partial useful bases call001 and call004 required targeted revisions and are itemized separately.",
+  "partial_bases_requiring_revision": [
+    {
+      "call": 1,
+      "issue": "Fingers still full grip, body accepted as local repair base"
+    },
+    {
+      "call": 4,
+      "issue": "Near hand only four readable tips, action/elbow accepted pending thumb fix"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "status": "approved_first16frame_Xiaoman_layer_gate_only",
+  "fps": 24,
+  "scene": [
+    1672,
+    941
+  ],
+  "source_sprite_size": [
+    1536,
+    1024
+  ],
+  "world_uniform_scale": 0.16,
+  "world_translation": [
+    430,
+    533
+  ],
+  "camera_f000_f015": {
+    "center": [
+      816,
+      482.5
+    ],
+    "zoom": 1.04
+  },
+  "exposure": [
+    {
+      "first": 0,
+      "last": 2,
+      "frames": 3,
+      "asset": "approved/F000_release_onset.png",
+      "sha256": "99545196a0c2c11d9529c51cf4902a23e22e3f56f73ac209838ab96c0999e5dc",
+      "included_in_this_bundle": false
+    },
+    {
+      "first": 3,
+      "last": 5,
+      "frames": 3,
+      "asset": "approved/F003_fully_released.png",
+      "sha256": "c09299a86fd3ec258181c0123697c5321cc26ad6c03853320cf41d22bc18443a",
+      "included_in_this_bundle": true
+    },
+    {
+      "first": 6,
+      "last": 7,
+      "frames": 2,
+      "asset": "approved/F006_near_edge.png",
+      "sha256": "e9f1212ab0b2490fe6a86e51a27f49942fae24270b415930d1766e21bd543550",
+      "included_in_this_bundle": true
+    },
+    {
+      "first": 8,
+      "last": 15,
+      "frames": 8,
+      "asset": "approved/F008_phone_landed.png",
+      "sha256": "b56f97d453a25c96d8a50db07f3b394e3cbabd600d30ea07f8390c1bee1254de",
+      "included_in_this_bundle": true
+    }
+  ],
+  "no_interpolation": true,
+  "prior_dependency": {
+    "asset": "approved/F000_release_onset.png",
+    "sha256": "99545196a0c2c11d9529c51cf4902a23e22e3f56f73ac209838ab96c0999e5dc",
+    "already_delivered": "commit d359df6a34ab37b487f561e76ea0102dc2d08365: collab/reviews/20261018_1152_first_candidate_and_interfaces/S07_xiaoman/candidates/F000_v2_fingers_clean_v4.png"
+  },
+  "preview": "review/release_000_015_camera_layer_only.mp4",
+  "preview_description": "16frames at24fps, frozen wide camera, background plus Xiaoman only, no grandma, no sound.",
+  "phone_after_landing": {
+    "world_center": [
+      656,
+      660
+    ],
+    "approx_world_bbox": [
+      645.5,
+      656.35,
+      666.5,
+      663.65
+    ],
+    "reusable_phone_only_layer": "approved/phone_landed_only_same_registration.png",
+    "note": "Optional source for later supine compositing, not an additional animation state."
+  },
+  "calls_started_completed": 8,
+  "tool_errors": 0,
+  "quality_events": {
+    "rejected_trajectory_call": 3,
+    "rejected_no_anatomy_fix_call": 5,
+    "native_alpha_recovery_call": 2,
+    "partial_bases_then_locally_corrected": [
+      1,
+      4
+    ]
+  },
+  "review": "Independent review inspected stills and decoded F0/F3/F6/F8/F15 from encoded clip.",
+  "remaining_work": "F039/F043/F046/F049/F053, then full108frame integration/review."
+}

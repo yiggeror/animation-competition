@@ -1,0 +1,42 @@
+{
+  "purpose": "pixel preposition guide only, not final animation asset",
+  "input_body": "candidates/F000_v2_fingers_clean_v4.png",
+  "input_open_arms_and_phone": "originals/F003_call_003.png",
+  "arms_rotation_degrees_ccw": 18,
+  "arms_pivot_source": [
+    1128,
+    873
+  ],
+  "phone_crop": [
+    1315,
+    826,
+    1508,
+    920
+  ],
+  "phone_resized": [
+    164,
+    80
+  ],
+  "phone_paste": [
+    1331,
+    716
+  ],
+  "phone_center_source": [
+    1413,
+    756
+  ],
+  "phone_center_world": [
+    656.08,
+    653.96
+  ],
+  "required_builtin_redraw": [
+    "Reconnect arm roots around same elbow without moving head/body",
+    "Remove added flash and restore two-lens rear phone design",
+    "Keep clear air gaps around every finger; this prepose is not verified anatomy"
+  ],
+  "masks": [
+    "masks/F003_prepose_open_arms_source.png",
+    "masks/F003_prepose_phone_source.png",
+    "masks/F003_prepose_allowed_region.png"
+  ]
+}

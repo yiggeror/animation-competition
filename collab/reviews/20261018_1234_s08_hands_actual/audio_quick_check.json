@@ -1,0 +1,15 @@
+{
+  "actual_mp4_sha256": "51220e9a6d000278c9d01501f62be11db2ab8ae3be06daec9a64680e0b2fc00e",
+  "actual_pcm_sha256": "d7c1162e37b1d0987e343150695a45be9c397d8fc6e6d6c0fdeafad3e71217e7",
+  "pcm_sr": 48000,
+  "pcm_samples": 72000,
+  "aac_decoded_samples": 72704,
+  "aac_vs_same_pcm_reencoded_bit_exact": false,
+  "decoded_actual_sha256": "9f7a850162a59edabfe00f6b1b7d7006a416ce46e326b973e5852cf699780eba",
+  "aac_peak_dbfs": -4.590782165527344,
+  "aac_vs_pcm_best_lag_samples": 0,
+  "aac_vs_pcm_zero_lag_correlation_mono": 0.998014795667397,
+  "same_pcm_reencode_comparison_note": "Not bit-exact; actual encode identifies Lavc60.31.102, local FFmpeg is 7.1.5 (Lavc61). Encoder version differs, but this alone is not proof of the cause. Do not claim bitwise equivalence.",
+  "aac_true_peak_dbTP": -4.6,
+  "aac_integrated_LUFS_1p5s_only": -16.8
+}
