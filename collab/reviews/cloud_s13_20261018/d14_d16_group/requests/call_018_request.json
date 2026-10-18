@@ -1,0 +1,14 @@
+{
+  "call_id": "S13_d16_call_018",
+  "pose": "d16",
+  "status": "completed_native_output_self_reviewed",
+  "tool": "image_gen.imagegen",
+  "dependency_sha256": "ad5c052f1a8a71ba21fdd6075428eec75e960038eaa932f1237e015519f0276d",
+  "args": {
+    "prompt": "Continue S13 from this accepted d15 only. Draw the FINAL original pose d16, held from frame100 through119. Same1024×1536 transparent canvas, same fixed camera, character scale, lower-chest registration and lower cutoff. This is a subtle settling pose, NOT another turn, yawn or new gesture.\n\nThe head has already arrived facing SCREEN LEFT in d15. Keep essentially that same left-facing three-quarter skull volume and head position; allow at most a very small soft relaxation of chin/pitch and3degrees back toward front, no deeper turn and no large bob. Both ears, facial centerline, bangs, red flower attachments and pigtail ROOTS remain attached coherently to that nearly stable skull. Keep the MOUTH COMPLETELY CLOSED with the same tiny neutral lip line; no oral gap, tongue, teeth or smile. Brown eyes retain the sleepy leftward gaze and relaxed upper lids. Neck and chest softly finish the turn together; keep collar attached and shoulders settled, no one-shoulder twitch or body shrink.\n\nThe visible animation now is the RESIDUAL HAIR settling AFTER the head: in d15 the pigtail free ends flare toward SCREEN RIGHT. In d16 redraw the loose lower sections and tips down and inward, easing toward their natural hanging curves. Make the near SCREEN-RIGHT pigtail's lower contour settle about25–40source pixels lower/inward while its red flower and upper root stay at essentially the same attachment location. The far SCREEN-LEFT free end relaxes similarly but less. Do not translate the entire braid, enlarge it, stretch a root or keep the same flared d15 tip contour. Both tails stay fully visible inside the frame. Hair should now look quiet and at rest for the final20frames.\n\nPreserve the same neutral unlit warm skin, drawn linework, brown hair, red flowers, yellow white-dot dress and rounded white collar. No face-only moving, mirroring, warp, background, scene lighting, hands, props, text or guides. One clean transparent native RGBA drawing; alpha outside real fine hair/clothing and inside neck/pigtail gaps is zero, with no haze, glow or block patterns.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition/collab/reviews/cloud_s13_20261018/d14_d16_group/approved_local/F094_d15_head_arrived_hair_lags.png"
+    ],
+    "transparent_background": true
+  }
+}

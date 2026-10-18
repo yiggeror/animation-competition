@@ -1,0 +1,14 @@
+{
+  "call_id": "S13_d14_call_016",
+  "pose": "d14",
+  "status": "completed_native_output_self_reviewed",
+  "tool": "image_gen.imagegen",
+  "dependency_sha256": "29418e08e7b0285fb8690add34878d600532c8a1d39f55379a915ffbca570660",
+  "args": {
+    "prompt": "Continue S13 from this LOCKED accepted d13 only. Draw the next original pose d14 at frames090–093. Same1024×1536 transparent canvas, same camera, same character scale and lower-chest registration, same bottom cutoff. Do not zoom or recenter.\n\nACTION: she has finished the fake yawn and is turning away from grandma at SCREEN RIGHT toward SCREEN LEFT. d13 has only reached near-front; now rotate the ENTIRE head through front into a modest LEFT-facing three-quarter, roughly20–25degrees left. The NOSE must now point SCREEN LEFT and the sleepy brown eyes look left with it. This is the middle turn, not the final deeper left turn. Keep the mouth completely closed with one small neutral lip line, no oral gap, tongue or tooth. Do not restart a yawn or smile.\n\nRedraw one anatomically coherent skull volume: rear cranium, bangs, facial centerline, both ears, red flower attachments, both pigtail roots, jaw underside and neck planes all rotate together. Ear and pigtail near/far visibility must exchange naturally after passing front; no face-only translation, sticker, rigid paper rotation or horizontal mirror. Keep the same skull size and childhood proportions. The white collar and upper chest gently follow only a small amount; body remains nearly frontal, both dress sleeves stay on their existing shoulders, no isolated shoulder twitch or long tube neck. The free pigtail ends trail slightly toward SCREEN RIGHT as the roots follow the skull, but leave the largest settling action for the final two poses.\n\nPreserve the same hand-drawn linework, warm neutral unlit skin, dark brown hair, twin red flowers, yellow white-dot dress and rounded white collar. Keep the pretended sleepy upper lids, relaxed brows, and quietly evasive mood. No hands, props, text, guides, new illumination or scene background. One clean transparent RGBA drawing. Alpha outside real hair/clothing is zero, including neck/pigtail gaps, with no haze, glow or block patterns.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition/collab/reviews/cloud_s13_20261018/d11_d13_group/approved_local/F087_d13_whole_head_turn_start.png"
+    ],
+    "transparent_background": true
+  }
+}
