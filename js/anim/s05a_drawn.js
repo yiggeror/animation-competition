@@ -5,8 +5,8 @@ import { drawnShot } from './drawn.js';
 import { key } from './kit.js';
 export const DURATION = 2.5;
 const X = '/assets/chars/x05a/';
-const T = '/collab/reviews/20261018_1321_opening_tails/S05a_049_052/final/';
-const L = '/collab/reviews/20261018_1336_s05a_tail_complete/final/';
+const T = '/assets/chars/x05a/';
+const L = '/assets/chars/x05a/';
 // 036×1 037×2 039×3（第一按）042×2（松开）044×3 047×2（第二按，047 与 044 同一张）；049×3 052×3 055×5（整体泄气、看插座），不再用第二按顶住尾段
 export const SHEET = [[X + 'S05a_F000', 0], [X + 'S05a_F010', 10], [X + 'S05a_F014', 14], [X + 'S05a_F024', 24], [X + 'S05a_F028', 28],
   [X + 'S05a_F036', 36], [X + 'S05a_F037', 37], [X + 'S05a_F039', 39], [X + 'S05a_F042', 42], [X + 'S05a_F044', 44], [X + 'S05a_F044', 47], [T + 'S05a_F049', 49], [T + 'S05a_F052', 52], [L + 'S05a_F055', 55]];
