@@ -33,7 +33,7 @@ function stool(x,cx,top=30) {
 function originalStoolLayer() {
   const c=new OffscreenCanvas(560,640),x=c.getContext('2d');
   x.scale(2,2);x.translate(935-780,775-470);x.scale(-2.77,2.77);stool(x,-2);
-  return {img:c,x:780,y:470,sc:.5};
+  return {img:c,x:780,y:470,sc:.5,contact:{a:.45,blur:3,sy:-.1,skew:.5}};
 }
 // Keep the source r14 halo in the scene, but remove coverage of the entire real
 // Xiaoman silhouette: its opaque phone back and fingers must never become a blue screen.
@@ -68,9 +68,9 @@ export const shot={
     return [
       {img:COILC,x:COIL[0]-60,y:COIL[1]-34,sc:1},
       cachedLamp ||= tableLamp(),
-      {img:X,...REGISTRATION.X},
+      {img:X,...REGISTRATION.X,contact:{a:.4,blur:3,sy:1,dx:-2,dy:3}},
       cachedStool ||= originalStoolLayer(),
-      {img:G,...REGISTRATION.G},
+      {img:G,...REGISTRATION.G,contact:{a:.45,blur:4,sy:-.07,skew:.5}},
     ];
   },
   light: (t) => (!isDark(t) ? brightLight : darkLight(t)),

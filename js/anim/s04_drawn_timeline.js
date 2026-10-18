@@ -24,7 +24,7 @@ export const ASSET_INFO = Object.freeze({
     "height": 1536
   },
   "S04_F034_grandma_rgba.png": {
-    "sha256": "32cada22cb7094e0539913ed591bf54d4b61a2ed8c017c4cf812316849f67b43",
+    "sha256": "e7ea1815ad25075ca3c7ce45a9d3ffd5befc49214620208b94c929162aa4be5b",
     "width": 1024,
     "height": 1536
   }

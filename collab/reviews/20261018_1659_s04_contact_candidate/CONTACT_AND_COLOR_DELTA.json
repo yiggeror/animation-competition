@@ -1,0 +1,89 @@
+{
+  "status": "SOURCE_AND_ASSET_CHECK_PASS_WAIT_REAL_CONTACT_RENDER",
+  "fixed_helper_commit": "a8a0f061039145e8dd5e03f98c479818ac7b8244",
+  "helper_path": "js/paint/paintshot.js",
+  "helper_git_blob_sha": "c903195ae3d0d071823b37572bddb4a196621008",
+  "S01_reference_git_blob_sha": "0a81d1d4e6357fc9d16d28f441a61dc5e4744ba8",
+  "parameters": {
+    "X": {
+      "a": 0.4,
+      "blur": 3,
+      "sy": 1,
+      "dx": -2,
+      "dy": 3
+    },
+    "G": {
+      "a": 0.45,
+      "blur": 4,
+      "sy": -0.07,
+      "skew": 0.5
+    },
+    "stool": {
+      "a": 0.45,
+      "blur": 3,
+      "sy": -0.1,
+      "skew": 0.5
+    }
+  },
+  "rationale": "Use the exact S01 contact settings on the same registered X010/G012-derived figures and same stool geometry. Preserves S01\u2192S04 baseline continuity. G/stool project forward/slightly right; prone X gets3px downward edge exposure. Original scene light multiplies the shadow after composition.",
+  "actual_asset_alpha_baselines": {
+    "S04_F022_grandma_rgba.png": {
+      "alpha_threshold": 128,
+      "last_opaque_asset_row": 1470,
+      "world_baseline_y": 776.953125,
+      "shadow_offset_dy": 0,
+      "same_as_S01_geometry": true
+    },
+    "F010_near_leg_down.png": {
+      "alpha_threshold": 128,
+      "last_opaque_asset_row": 849,
+      "world_baseline_y": 668.84,
+      "shadow_offset_dy": 3,
+      "same_as_S01_geometry": true
+    },
+    "S01_F012_grandma_rgba.png": {
+      "alpha_threshold": 128,
+      "last_opaque_asset_row": 1470,
+      "world_baseline_y": 776.953125,
+      "shadow_offset_dy": 0,
+      "same_as_S01_geometry": true
+    },
+    "S04_F034_grandma_rgba.png": {
+      "alpha_threshold": 128,
+      "last_opaque_asset_row": 1470,
+      "world_baseline_y": 776.953125,
+      "shadow_offset_dy": 0,
+      "same_as_S01_geometry": true
+    },
+    "S04_F028_grandma_rgba.png": {
+      "alpha_threshold": 128,
+      "last_opaque_asset_row": 1470,
+      "world_baseline_y": 776.953125,
+      "shadow_offset_dy": 0,
+      "same_as_S01_geometry": true
+    }
+  },
+  "stool_baseline_note": "Source primitive/560x640layer/transform matches new S01 exactly; actual >128 raster baseline must be read in Canvas, not invented from analytic stroke bounds.",
+  "base_override_used": false,
+  "color_revision": {
+    "old_sha256": "32cada22cb7094e0539913ed591bf54d4b61a2ed8c017c4cf812316849f67b43",
+    "new_sha256": "e7ea1815ad25075ca3c7ce45a9d3ffd5befc49214620208b94c929162aa4be5b",
+    "changed_pixels": 7772,
+    "channel_addition_max": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "alpha_geometry_below735_unchanged": true
+  },
+  "existing_shared_helper_changed_by_this_task": false,
+  "local_canvas_renders": 0,
+  "new_shadow_visual_pass": false,
+  "pending_checks": [
+    "actual G shoe/seat-leg shadow connection atbaseline776.953125",
+    "X shadow joins matte/elbow atactual668.84 withdy3andblur3; no detached silhouette",
+    "no fake disconnected projected body or knee shadow",
+    "frame6\u21927light cut keeps consistent support aftermoonlight transition"
+  ]
+}
