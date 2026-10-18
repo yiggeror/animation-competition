@@ -1,0 +1,14 @@
+{
+  "call_id": "S13_d03_call_003",
+  "pose": "d03",
+  "status": "completed_one_raw_image",
+  "tool": "image_gen.imagegen",
+  "dependency_sha256": "306ac1e2013a020b6a2e177d150f58ca34d1b17cdbbfc5488f166013dc06cd7e",
+  "args": {
+    "prompt": "Use the supplied accepted S13 d02 as the sole production source. Edit it into d03, frames024–029. SAME girl, SAME 1024×1536 canvas and unchanged overall scale/camera. This is the NEXT small step in one continuous animation, not a fresh portrait.\n\nThe eyes have ALREADY looked up-right at Grandma in d02. Now the ENTIRE HEAD turns a modest additional approximately 7 degrees toward SCREEN RIGHT to confirm Grandma is looking at her: total visual head direction about 42 degrees right. It must remain a small continuous step from the input, not a large profile jump. Keep both eyes visible, with the far eye naturally a little narrower. Gaze remains toward Grandma above and to screen right. She remains fully awake and attentive; lift the brows only subtly, without shock or sleepiness. The mouth remains small and slightly parted; full closure happens in the NEXT drawing.\n\nRedraw the whole three-dimensional head coherently: complete cranial and back-of-head silhouette, forehead/bangs, ear positions and visible ear surface, cheeks, nose/jaw, hair roots and red flower ties, both pigtails, and real curved neck surfaces. The rightward turn must be visible in the nose profile, far cheek/eye foreshortening, near ear visibility and hair-root relationship. Do not leave all hair and ears frozen while only shifting facial features. Do not rotate a flat pasted head card or distort the face mesh. Preserve the natural child neck and jaw volumes, with continuous neck skin entering the exact existing collar opening. Pigtail roots follow the skull, free ends may lag subtly rather than moving as a rigid sticker.\n\nThe shoulder girdle, torso, white Peter Pan collar and yellow polka-dot dress remain in exactly their accepted positions; no body shift, no collar redesign, no altered polka dots, no added arms or hands. Head height stays approximately640 pixels including solid hair and chin, excluding cowlick, as a loose camera control only. Prioritize continuous natural anatomy over the construction diagram's long gray neck. Preserve the same neutral painted colors and linework, without new scene lighting. Transparent background, one character only. No words, guides, panels or watermarks.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition/collab/reviews/cloud_s13_20261018/d02_d04_segment/approved_local/F018_d02_eyes_up.png"
+    ],
+    "transparent_background": true
+  }
+}

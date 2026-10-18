@@ -1,0 +1,18 @@
+{
+  "pose": "d02",
+  "status": "author_self_accepted_pending_Astra_segment_review",
+  "base": "d01_first_candidate/candidates/S13_d01_uniform_registered_rgba.png",
+  "base_sha256": "91715601ae814bd84a3dc8d6ce43f1cc809a7bdd74e7390fefffe579f6882050",
+  "raw": "originals/S13_d02_call_002_raw.png",
+  "raw_sha256": "df838e3cb6d2d2a4f8c1a5ab9252aa8b02292965d42ab21f03fd2a9dfbb675e1",
+  "output": "approved_local/F018_d02_eyes_up.png",
+  "output_sha256": "306ac1e2013a020b6a2e177d150f58ca34d1b17cdbbfc5488f166013dc06cd7e",
+  "method": "Actual imagegen RGB through two explicit eye-scope masks; accepted mother elsewhere; original mother alpha everywhere.",
+  "mask": "masks/d02_eye_edit_scope.png",
+  "mask_sha256": "a63ae4b5eacb92cfe27642dc82d345286da8656cfdf3630d30765b69277c0891",
+  "generated_pixels_not_drawn_by_code": true,
+  "raw_registration": "identity, no geometric warp",
+  "outside_scope_RGBA_changed_pixels": 0,
+  "alpha_changed_pixels": 0,
+  "self_review": "真实眼内视线由右下抬到右上，两眼一致；头/耳/发/颈/领/嘴不动；眼白、睫毛及皮肤接缝实看。"
+}

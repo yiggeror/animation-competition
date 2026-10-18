@@ -1,0 +1,18 @@
+{
+  "pose": "d03",
+  "status": "author_self_accepted_pending_Astra_segment_review",
+  "base": "approved_local/F018_d02_eyes_up.png",
+  "base_sha256": "306ac1e2013a020b6a2e177d150f58ca34d1b17cdbbfc5488f166013dc06cd7e",
+  "raw": "originals/S13_d03_call_003_raw.png",
+  "raw_sha256": "e2b899399fadcec5f019315501f74c379f4c18848c84638534f9383c092dae55",
+  "output": "approved_local/F024_d03_whole_head_right.png",
+  "output_sha256": "c04f4fcc60e6539cd7de3048e692a1986866e24cfffe4c702f03538c19decd5e",
+  "method": "Actual imagegen complete head/hair/ears/neck/collar/upper-shoulder pixels as one native unit; accepted lower chest retained; no local geometric deformation.",
+  "mask": "masks/d03_whole_head_neck_scope.png",
+  "mask_sha256": "4ef2dac67a4583ae3b7415531d1cde205cca8b710cd74716a0e003c9052fb0b9",
+  "raw_registration": "identity, no geometric warp",
+  "outside_scope_RGBA_changed_pixels": 0,
+  "lower_body_RGBA_changed_pixels": 0,
+  "head_alpha_changed_pixels": 208866,
+  "self_review": "整头轮廓、近耳、发根、花与两尾、远眼短缩及鼻颌一起右转；保留原生颈领连续面，清醒上视、小开口；白领接口有真实新像素，不能称白领0改。"
+}

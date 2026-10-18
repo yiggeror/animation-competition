@@ -1,0 +1,13 @@
+{
+  "call_id": "S13_d02_call_002",
+  "pose": "d02",
+  "status": "completed_one_raw_image",
+  "tool": "image_gen.imagegen",
+  "args": {
+    "prompt": "Edit the supplied LOCKED S13 d01 drawing into d02 (frames018–023). This is a narrowly localized animation edit, NOT a fresh portrait. Keep the exact same 1024×1536 canvas, character size, framing, head silhouette, face pose, ear, bangs, pigtails, flowers, nose, mouth opening, jaw, curved neck, white collar, yellow dotted dress and all arms. Do not enlarge or shift any part of the head or body. No yawn and no smile. Do not change the amount of eye opening or the eyebrow expression.\n\nONLY change the gaze inside BOTH existing eyes: Xiaoman has just noticed Grandma looking at her offscreen toward SCREEN RIGHT and ABOVE. Her pupils/irises move visibly UP and slightly right relative to the previous down-right crane gaze. Raise each iris/pupil roughly 12–18 source pixels within the SAME eye opening, allowing natural upper-eyelid occlusion; keep both eyes looking to the same target. Keep the eye-white boundaries, eyelashes and lids in their existing positions. Retain the same iris colors and highlights. The face and entire head remain in exactly d01's direction. This eye-only lead must read clearly at normal video size without making her cross-eyed or startled.\n\nReturn exactly one edited drawing with transparent background, neutral character colors, continuous hand-drawn linework and the same pixel placement. Preserve all already-approved anatomy. No background, no text, no panel, no arrows, no new props, no changes to the small parted lips. Later drawings will turn the head; this drawing must only lead with the eyes.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition/collab/reviews/cloud_s13_20261018/d01_first_candidate/candidates/S13_d01_uniform_registered_rgba.png"
+    ],
+    "transparent_background": true
+  }
+}

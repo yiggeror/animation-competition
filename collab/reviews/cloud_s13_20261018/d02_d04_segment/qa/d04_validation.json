@@ -1,0 +1,25 @@
+{
+  "pose": "d04",
+  "status": "author_self_accepted_pending_Astra_segment_review",
+  "base": "approved_local/F024_d03_whole_head_right.png",
+  "base_sha256": "c04f4fcc60e6539cd7de3048e692a1986866e24cfffe4c702f03538c19decd5e",
+  "raw": "originals/S13_d04_call_004_raw.png",
+  "raw_sha256": "3c952b6c96031f2ece722ebe4615abd277d9647b0e0f7b914af9ea89a7146fe4",
+  "output": "approved_local/F030_d04_awake_closed_mouth.png",
+  "output_sha256": "994b085de94c9accbadfd9dea858aaa41814376ce42280b6a3c5fb3846b9f590",
+  "method": "Actual generated closed mouth/skin patch translated back into accepted d03; all other pixels inherited. No code-painted lip or face deformation.",
+  "raw_to_d03_patch_transform": [
+    1,
+    0,
+    -23,
+    0,
+    1,
+    21
+  ],
+  "mask": "masks/d04_mouth_edit_scope.png",
+  "mask_sha256": "70b77585648c8dd1cc04067db06da324311cc6ce8538c48da06272562ab07fc1",
+  "outside_scope_RGBA_changed_pixels": 0,
+  "alpha_changed_pixels": 0,
+  "raw_full_image_adopted": false,
+  "self_review": "闭合自然小唇线，无口腔/舌残留；双眼仍清醒上视；嘴外头、耳发、颈领、身体和alpha不动；原整图缩放漂移已拒用。"
+}

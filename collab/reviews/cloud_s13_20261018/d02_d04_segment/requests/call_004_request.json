@@ -1,0 +1,14 @@
+{
+  "call_id": "S13_d04_call_004",
+  "pose": "d04",
+  "status": "completed_one_raw_image",
+  "tool": "image_gen.imagegen",
+  "dependency_sha256": "c04f4fcc60e6539cd7de3048e692a1986866e24cfffe4c702f03538c19decd5e",
+  "args": {
+    "prompt": "Edit this accepted S13 d03 drawing into d04 (frames030–035), the short AWAKE pause when Xiaoman realizes Grandma has caught her looking. This is the same continuous shot and the same 1024×1536 transparent character canvas.\n\nKeep EXACTLY the existing right-turned whole head position, complete hair silhouette, cowlick, near ear, bangs, eyes and up-right gaze, both pigtails and red flower roots, nose, jaw contour, natural curved neck, white collar, shoulders and yellow polka-dot dress. Do not turn or shift the head any farther. Do not shrink or resize the whole character. Remain bright-eyed and awake, no sleepy eyelids and no yawn. Keep the subtle attentive brow expression.\n\nOnly close the small parted mouth. Replace the visible mouth opening/tongue with naturally joined child lips: a small relaxed closed line, neither a smile nor an angry pout. There must be NO dark oral gap, tongue, open red patch or residual second mouth. Reconstruct the small surrounding lip/chin skin naturally while keeping the existing outer chin/jaw silhouette and cheek colors. The beat is a quiet caught-in-the-act pause, not fear or a grin. Preserve all accepted anatomy and neutral painted colors, without extra scene light.\n\nOne edited drawing only, transparent background, no text, guides, panels or objects. All areas away from the mouth stay in the same pixel position and retain the same linework. This is a local mouth closure, not a new portrait or another head turn.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition/collab/reviews/cloud_s13_20261018/d02_d04_segment/approved_local/F024_d03_whole_head_right.png"
+    ],
+    "transparent_background": true
+  }
+}
