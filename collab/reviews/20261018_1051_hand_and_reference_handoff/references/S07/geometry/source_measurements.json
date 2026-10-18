@@ -1,0 +1,233 @@
+{
+  "grandma_side": {
+    "source": "grandma_turnaround_current03_draft.png",
+    "source_size": [
+      2048,
+      768
+    ],
+    "points": {
+      "hair_top": [
+        1014,
+        28
+      ],
+      "chin": [
+        1070,
+        171
+      ],
+      "sole_near": [
+        1008,
+        749
+      ],
+      "shoulder_proxy": [
+        1000,
+        224
+      ],
+      "elbow_proxy": [
+        1008,
+        351
+      ],
+      "wrist": [
+        1026,
+        439
+      ],
+      "fingertip": [
+        1027,
+        506
+      ],
+      "hip_hidden_construct": [
+        1005,
+        430
+      ],
+      "knee_hidden_construct": [
+        1000,
+        574
+      ],
+      "ankle_proxy": [
+        1001,
+        712
+      ]
+    },
+    "uncertainty_px": {
+      "hair_top": 3,
+      "chin": 4,
+      "sole_near": 3,
+      "shoulder_proxy": 15,
+      "elbow_proxy": 12,
+      "wrist": 6,
+      "hip_hidden_construct": 35,
+      "knee_hidden_construct": 30,
+      "ankle_proxy": 10
+    },
+    "measured_outline_height_px": 721,
+    "measured_head_y_extent_px": 143,
+    "height_over_head_y_extent": 5.041958041958042,
+    "projected_segments_px": {
+      "shoulder_elbow": 127.251719045363,
+      "elbow_wrist": 89.82204629154248
+    },
+    "scope": "二维衣下关节代理。髋/膝被衣裤完全遮住。127/90是投影，不是真实骨长。"
+  },
+  "grandma_seated": {
+    "source": "anim_01_grandma_beans.png",
+    "source_size": [
+      1024,
+      1536
+    ],
+    "points": {
+      "hair_top": [
+        500,
+        72
+      ],
+      "chin": [
+        466,
+        403
+      ],
+      "near_shoulder_proxy": [
+        726,
+        449
+      ],
+      "near_elbow_proxy": [
+        729,
+        745
+      ],
+      "near_wrist": [
+        535,
+        697
+      ],
+      "seat_contact_cloth": [
+        730,
+        967
+      ],
+      "seat_front_edge": [
+        676,
+        1023
+      ],
+      "near_sole": [
+        482,
+        1424
+      ],
+      "near_knee_hidden_construct": [
+        432,
+        926
+      ],
+      "hip_hidden_construct": [
+        713,
+        925
+      ]
+    },
+    "scope": "座面、鞋底和盆外轮廓可见；衣裤下髋/膝非实测。近腕玉镯为解剖左，此三分之四朝左视角不可简单镜像成右手提灯。"
+  },
+  "xiaoman_supine": {
+    "source": "anim_07_xiaoman_flop.png",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "points": {
+      "near_shoulder_proxy": [
+        1174,
+        571
+      ],
+      "near_elbow_proxy": [
+        1243,
+        696
+      ],
+      "near_wrist": [
+        1367,
+        762
+      ],
+      "near_palm": [
+        1413,
+        784
+      ],
+      "far_shoulder_proxy": [
+        985,
+        421
+      ],
+      "far_elbow_proxy": [
+        858,
+        397
+      ],
+      "far_wrist": [
+        731,
+        326
+      ],
+      "head_back_contact": [
+        1411,
+        493
+      ],
+      "near_shoulder_support": [
+        1187,
+        621
+      ],
+      "hip_hidden_construct": [
+        824,
+        592
+      ],
+      "near_heel_contact": [
+        222,
+        780
+      ],
+      "far_heel_contact": [
+        211,
+        648
+      ]
+    },
+    "projected_segments_px": {
+      "near_upper": 142.77955035648486,
+      "near_forearm": 140.470637501223,
+      "far_upper": 129.24782396620841,
+      "far_forearm": 145.49914089093448
+    },
+    "scope": "近远臂二维投影不同不能强拉成等屏幕长度。肩中心在泡袖下，髋/膝在裙下；真实骨长及深度不可观测。"
+  },
+  "xiaoman_side_identity": {
+    "source": "xiaoman_turnaround_v4_draft.png",
+    "source_size": [
+      1536,
+      1024
+    ],
+    "points": {
+      "hair_top_no_cowlick": [
+        742,
+        63
+      ],
+      "chin": [
+        799,
+        222
+      ],
+      "sole": [
+        765,
+        955
+      ],
+      "shoulder_proxy": [
+        738,
+        277
+      ],
+      "elbow_proxy": [
+        747,
+        432
+      ],
+      "wrist": [
+        756,
+        529
+      ],
+      "hip_hidden_construct": [
+        756,
+        481
+      ],
+      "knee_hidden_construct": [
+        748,
+        672
+      ],
+      "ankle": [
+        743,
+        895
+      ]
+    },
+    "measured_outline_height_no_cowlick_px": 892,
+    "measured_head_y_extent_px": 159,
+    "height_over_head_y_extent": 5.610062893081761,
+    "scope": "头顶呆毛不算颅顶高度。腿骨被裙遮住，膝位不可当实测。"
+  }
+}

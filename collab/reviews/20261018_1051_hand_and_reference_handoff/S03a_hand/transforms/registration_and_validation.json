@@ -1,0 +1,63 @@
+{
+  "status": "CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+  "registered_raw": "composited/S03a_v004_registered_before_mask.png",
+  "composite": "composited/S03a_foreground_v004_local_composite.png",
+  "registration": {
+    "kind": "uniform scale plus translation only",
+    "scale": 0.8341543513957307,
+    "translate_px": [
+      107.26108374384236,
+      104.77832512315271
+    ],
+    "inverse_affine": [
+      1.1988188976377954,
+      0,
+      -128.58661417322836,
+      0,
+      1.1988188976377954,
+      -125.61023622047244
+    ],
+    "raw_far_tip": [
+      291,
+      270
+    ],
+    "target_far_tip": [
+      350,
+      330
+    ],
+    "raw_thumb_x": 900,
+    "target_thumb_x": 858,
+    "why": "Tool output enlarged/moved the group despite fixed-layout instruction. Registration restores approved local geometry before the bounded mask composite. It does not invent a new view."
+  },
+  "mask": "masks/local_repair_mask_binary.png",
+  "blend": "premultiplied alpha, inward16px; exact original RGBA outside binarymask",
+  "outside_mask_changed_pixels": 0,
+  "raw_sha256": "8a3b1b4a3db19d78a2e919b8789a383a3ec3841b8b2f74b18a5863a4de060cbf",
+  "composite_sha256": "e6ec506cb2b22375658a99828b5e5c9ee48f899a2dc3ff2a4ffaba1256978f5c",
+  "canvas": [
+    1536,
+    1024
+  ],
+  "alpha_bbox": [
+    221,
+    323,
+    1536,
+    1024
+  ],
+  "alpha_bbox_gt8": [
+    224,
+    329,
+    1536,
+    1024
+  ],
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "notes": [
+    "Raw is preserved unchanged.",
+    "No second generation was called.",
+    "Registration and pixel compositing are not production acceptance.",
+    "Hand anatomy, palm occlusion, identity/style and wrist join still require independent actual-view review."
+  ]
+}

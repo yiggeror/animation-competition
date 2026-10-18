@@ -1,0 +1,303 @@
+{
+  "xiaoman_prone": {
+    "source": "anim_01_xiaoman_prone_phone.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "points": {
+      "hair_top_no_cowlick": [
+        1152,
+        181
+      ],
+      "chin": [
+        1219,
+        598
+      ],
+      "near_shoulder_cloth_proxy": [
+        1012,
+        657
+      ],
+      "near_elbow_proxy": [
+        1118,
+        824
+      ],
+      "near_elbow_outer_contact": [
+        1120,
+        855
+      ],
+      "near_wrist": [
+        1291,
+        648
+      ],
+      "far_shoulder_cloth_proxy": [
+        1192,
+        624
+      ],
+      "far_elbow_proxy": [
+        1334,
+        765
+      ],
+      "far_elbow_outer_contact": [
+        1335,
+        794
+      ],
+      "far_wrist": [
+        1437,
+        628
+      ],
+      "near_knee_skin_proxy": [
+        278,
+        678
+      ],
+      "near_ankle": [
+        348,
+        321
+      ],
+      "far_ankle": [
+        117,
+        393
+      ],
+      "hip_hidden_construct": [
+        605,
+        653
+      ],
+      "far_knee_hidden_construct": [
+        324,
+        639
+      ],
+      "dress_lower_support": [
+        704,
+        811
+      ],
+      "near_phone_back_finger": [
+        1364,
+        573
+      ],
+      "far_phone_back_finger": [
+        1452,
+        568
+      ],
+      "phone_back_top_left": [
+        1357,
+        536
+      ],
+      "phone_back_top_right": [
+        1470,
+        515
+      ],
+      "phone_back_bottom_right": [
+        1451,
+        607
+      ],
+      "phone_back_bottom_left": [
+        1342,
+        629
+      ]
+    },
+    "uncertainty_px": {
+      "joint_proxies": 18,
+      "visible_wrist": 10,
+      "near_knee_skin_proxy": 25,
+      "hidden_hip_or_knee": 50,
+      "phone_contour": 4
+    },
+    "scope": "二维投影。肩、肘为衣下代理；近膝仅皮肤弯折代理；远膝和髋为构造。屏幕在手机背面之后，两拇指的真实触屏点不可见。两手背面触点不是拇指触屏证明。",
+    "projected_segments_px": {
+      "near_shoulder_cloth_proxy__near_elbow_proxy": 197.80040444852483,
+      "near_elbow_proxy__near_wrist": 246.78938388836744,
+      "far_shoulder_cloth_proxy__far_elbow_proxy": 200.11246837716035,
+      "far_elbow_proxy__far_wrist": 171.40011668607463,
+      "near_knee_skin_proxy__near_ankle": 363.7980208852159
+    }
+  },
+  "grandma_seated": {
+    "source": "anim_01_grandma_beans.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "points": {
+      "hair_top": [
+        500,
+        72
+      ],
+      "chin": [
+        466,
+        403
+      ],
+      "near_left_shoulder_proxy": [
+        726,
+        449
+      ],
+      "near_left_elbow_proxy": [
+        729,
+        745
+      ],
+      "near_left_wrist_bracelet": [
+        535,
+        697
+      ],
+      "far_right_shoulder_proxy": [
+        430,
+        464
+      ],
+      "far_right_elbow_proxy": [
+        348,
+        668
+      ],
+      "far_right_wrist": [
+        283,
+        598
+      ],
+      "far_right_pinched_bean": [
+        331,
+        580
+      ],
+      "near_left_pod_contact": [
+        380,
+        638
+      ],
+      "pod_tip": [
+        329,
+        607
+      ],
+      "pod_other_end": [
+        405,
+        656
+      ],
+      "bowl_left_rim": [
+        224,
+        757
+      ],
+      "bowl_right_rim": [
+        599,
+        771
+      ],
+      "bowl_lower_contour": [
+        351,
+        870
+      ],
+      "seat_contact_cloth": [
+        730,
+        977
+      ],
+      "seat_front_edge": [
+        676,
+        1023
+      ],
+      "near_sole": [
+        482,
+        1424
+      ],
+      "far_sole": [
+        248,
+        1368
+      ],
+      "hip_hidden_construct": [
+        713,
+        925
+      ],
+      "near_knee_hidden_construct": [
+        432,
+        926
+      ]
+    },
+    "uncertainty_px": {
+      "joint_proxies": 20,
+      "visible_wrist": 8,
+      "cloth_seat_contact": 12,
+      "hidden_hip_or_knee": 40,
+      "bean_pod_contact": 4
+    },
+    "scope": "母图已开荚，右手夹起一颗豆，左手托荚；不是未掐开/首次掐开态。左腕有玉镯，右腕无镯。座面斜向透视，接触用局部线段，不能当统一水平线。",
+    "projected_segments_px": {
+      "near_left_shoulder_proxy__near_left_elbow_proxy": 296.0152023123137,
+      "near_left_elbow_proxy__near_left_wrist_bracelet": 199.8499437077729,
+      "far_right_shoulder_proxy__far_right_elbow_proxy": 219.8635940759634,
+      "far_right_elbow_proxy__far_right_wrist": 95.524865872714
+    }
+  },
+  "grandma_identity": {
+    "source": "grandma_turnaround_current03_draft.png",
+    "size": [
+      2048,
+      768
+    ],
+    "points": {
+      "hair_top": [
+        1014,
+        28
+      ],
+      "chin": [
+        1070,
+        171
+      ],
+      "sole": [
+        1008,
+        749
+      ],
+      "shoulder_proxy": [
+        1000,
+        224
+      ],
+      "elbow_proxy": [
+        1008,
+        351
+      ],
+      "wrist": [
+        1026,
+        439
+      ]
+    },
+    "outline_height": 721,
+    "head_y_extent": 143,
+    "height_over_head_y_extent": 5.041958041958042,
+    "scope": "侧面朝右，近手为右无镯。S01朝左需重新建立左右手，不能将镜像后的近手仍称右。",
+    "projected_segments_px": {
+      "shoulder_proxy__elbow_proxy": 127.251719045363,
+      "elbow_proxy__wrist": 89.82204629154248
+    }
+  },
+  "xiaoman_identity": {
+    "source": "xiaoman_turnaround_v4_draft.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "points": {
+      "hair_top_no_cowlick": [
+        742,
+        63
+      ],
+      "chin": [
+        799,
+        222
+      ],
+      "sole": [
+        765,
+        955
+      ],
+      "shoulder_proxy": [
+        738,
+        277
+      ],
+      "elbow_proxy": [
+        747,
+        432
+      ],
+      "wrist": [
+        756,
+        529
+      ]
+    },
+    "outline_height": 892,
+    "head_y_extent": 159,
+    "height_over_head_y_extent": 5.610062893081761,
+    "scope": "站姿二维标尺。不能从站姿直接反解趴姿真实骨长。",
+    "projected_segments_px": {
+      "shoulder_proxy__elbow_proxy": 155.2610704587599,
+      "elbow_proxy__wrist": 97.41663102366043
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "status": "deterministic reference freeze proposal for Opus approval; not production approval",
+  "scene_canvas": [
+    1920,
+    1080
+  ],
+  "mother_canvas": [
+    1536,
+    1024
+  ],
+  "mother_to_scene_matrix": [
+    [
+      0.9,
+      0,
+      265
+    ],
+    [
+      0,
+      0.9,
+      250
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "reason": "uniform scale; no anisotropic squeeze, flip or new portrait. Place identity head in medium shot and reserve reach to lamp. Art-direction choice, not fitted camera calibration.",
+  "source_hidden_hip_assumption": [
+    450,
+    920
+  ],
+  "scene_hidden_hip_assumption": [
+    670,
+    1078
+  ],
+  "hip_uncertainty_scene_px": 60,
+  "shoulder_uncertainty_scene_px": {
+    "R": 27,
+    "L_hidden": 45
+  },
+  "fixed_equal_arm_envelope_scene_px": {
+    "upper": 333.0,
+    "forearm": 301.5,
+    "origin": "preparatory U370/F335 source-equivalent proxy, uniformly scaled 0.9"
+  },
+  "projected_lengths_may_shorten": true,
+  "depth_status": "Not measured. Per-segment depth magnitude sqrt(L^2-lxy^2) is only a feasibility witness. No claim of physical 3D reconstruction or scene collision proof.",
+  "external_static_anchors": {
+    "table_front_left": [
+      764,
+      981
+    ],
+    "lamp_base": [
+      1380,
+      965.6
+    ]
+  },
+  "cloth_rule": "A/B/C are body material points, transformed around moving hip with torso; NEVER fixed screen anchors.",
+  "native_code_reference_canvas": [
+    1254,
+    706
+  ],
+  "native_to_scene_before_camera": "x=1920*x/1254; y=1080*y/706; then inverse camera. Header is overlay, not a letterbox offset.",
+  "camera_after_F82": "source code: q=clamp((f/24-3.4)/2.6), u=q*q*(3-2*q); fit=1+.03*u; center=[960+10*u,540]; screen=(scene-center)*fit+[960,540]. Diagrams use scene coordinates, no push baked in."
+}

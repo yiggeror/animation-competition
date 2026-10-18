@@ -1,0 +1,179 @@
+{
+  "asset": "S03a foreground grandmother anatomical right hand supporting intact thin watermelon sector",
+  "status": "STATIC_INDEPENDENT_REVIEW_PASSED__SHOT_INTEGRATION_PENDING",
+  "reviewed_sha256": "a36340c223c5198285f5dcb15385dbe097609e070c4b6e3ec24c40dae2aa93fc",
+  "file": "S03a_foreground_grandma_right_hand_melon_RGBA.png",
+  "canvas_px": [
+    1536,
+    1024
+  ],
+  "mode": "RGBA",
+  "alpha_bbox_nonzero_xyxy_exclusive": [
+    221,
+    323,
+    1536,
+    1024
+  ],
+  "alpha_bbox_gt8_xyxy_exclusive": [
+    224,
+    329,
+    1536,
+    1024
+  ],
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "coordinate_convention": "Image coordinates: origin upper-left, x right, y down; points refer to uncropped original canvas. Alpha is straight PNG alpha. Preserve full canvas or subtract crop origin from all anchors.",
+  "anchors": {
+    "wrist_seam_center": {
+      "xy": [
+        866.5,
+        609.0
+      ],
+      "kind": "exact midpoint of recorded compositing seam, stable placement anchor",
+      "uv": [
+        0.5641276041666666,
+        0.5947265625
+      ]
+    },
+    "melon_far_tip": {
+      "xy": [
+        349,
+        331
+      ],
+      "kind": "manual visual estimate, tolerance about 3 px",
+      "uv": [
+        0.22721354166666666,
+        0.3232421875
+      ]
+    },
+    "palm_rind_load_contact": {
+      "xy": [
+        650,
+        592
+      ],
+      "kind": "manual visual estimate of supporting contact, tolerance about 8 px",
+      "uv": [
+        0.4231770833333333,
+        0.578125
+      ]
+    },
+    "thumb_rind_contact": {
+      "xy": [
+        840,
+        473
+      ],
+      "kind": "manual visual estimate, tolerance about 8 px",
+      "uv": [
+        0.546875,
+        0.4619140625
+      ]
+    },
+    "forearm_axis_proxy": {
+      "xy": [
+        1330,
+        1000
+      ],
+      "kind": "manual centerline proxy, not anatomical landmark",
+      "uv": [
+        0.8658854166666666,
+        0.9765625
+      ]
+    }
+  },
+  "wrist_seam_endpoints": [
+    [
+      958,
+      540
+    ],
+    [
+      775,
+      678
+    ]
+  ],
+  "forearm_axis_angle_deg_screen_y_down": 40.15035783326468,
+  "placement_contract": {
+    "transform": "Uniform scale plus translation preferred; no geometric rotation needed to fake a view. Blur and push-in belong to scene code.",
+    "anchor_formula": "tx = target_wrist_x - scale*866.5; ty = target_wrist_y - scale*609.0; transform every other anchor identically.",
+    "crop_rules": "Do not use alpha bbox as a new origin without subtracting its left/top from every anchor. PNG extends off canvas at right/bottom intentionally.",
+    "shot_gate": "Check actual final shot: foreground overlaps only intended right collar/chest, does not touch chin/lips/cheek; inspect final blur and temporal movement. Static approval does not approve scene placement."
+  },
+  "approved_direction_scene_guide_only": {
+    "canvas_px": [
+      1672,
+      941
+    ],
+    "wrist": [
+      1245,
+      930
+    ],
+    "melon_far_tip": [
+      1008,
+      766
+    ],
+    "load_contact": [
+      1112,
+      906
+    ],
+    "focus_chin_approx": [
+      838,
+      730
+    ],
+    "note": "These are construction guide targets, not recovered camera geometry. Current source anchors cannot all hit these targets under one exact uniform transform. Prioritize actual silhouette and chin clearance; no scene integration has been approved here."
+  },
+  "provenance": {
+    "raw_file": "originals/S03a_local_redraw_raw_v004.png",
+    "raw_sha256": "8a3b1b4a3db19d78a2e919b8789a383a3ec3841b8b2f74b18a5863a4de060cbf",
+    "approved_structure": "originals/approved_structure_base.png",
+    "generation_calls_total": 4,
+    "generation_calls_interface_repair": 0,
+    "registration": {
+      "kind": "uniform scale plus translation only",
+      "scale": 0.8341543513957307,
+      "translate_px": [
+        107.26108374384236,
+        104.77832512315271
+      ],
+      "inverse_affine": [
+        1.1988188976377954,
+        0,
+        -128.58661417322836,
+        0,
+        1.1988188976377954,
+        -125.61023622047244
+      ],
+      "raw_far_tip": [
+        291,
+        270
+      ],
+      "target_far_tip": [
+        350,
+        330
+      ],
+      "raw_thumb_x": 900,
+      "target_thumb_x": 858,
+      "why": "Tool output enlarged/moved the group despite fixed-layout instruction. Registration restores approved local geometry before the bounded mask composite. It does not invent a new view."
+    },
+    "wrist_repair_record": "transforms/wrist_interface_r2_validation.json",
+    "mask_outside_pixels_changed_from_approved_base": 0,
+    "interface_changed_pixels_from_first_composite": 25590,
+    "interface_changed_pixels_outside_wrist_strip": 0,
+    "interface_changed_pixels_outside_repair_mask": 0,
+    "distal_hand_melon_changed_by_interface_repair": 0,
+    "archive_scripts": {
+      "wrist": "../repair_004/metadata/repair_wrist_interface_r2.py",
+      "composite": "../repair_004/metadata/compose_local.py"
+    }
+  },
+  "notes": [
+    "No bracelet, no bite, one thin sector and five seeds. Right thumb at image upper right; four curled supporting fingers are intentionally visible.",
+    "The final approved PNG is byte-for-byte copied, not sanitized or regenerated. Use straight-alpha compositing; RGB under alpha zero is not visible image content."
+  ],
+  "edge_contract": {
+    "blur_applied": false,
+    "runtime_blur": "Apply only at scene integration; do not resave approved sharp PNG.",
+    "alpha_semantics": "Straight alpha. Full canvas intentional; right and bottom forearm exit cropped at canvas boundaries.",
+    "outside_repair_mask": "Byte-exact approved base RGBA; transparent pixel RGB may be nonzero and must be multiplied by alpha for display."
+  }
+}

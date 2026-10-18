@@ -1,0 +1,56 @@
+{
+  "status": "WRIST_INTERFACE_REPAIR_PENDING_REVIEW",
+  "generation_calls_this_interface_repair": 0,
+  "source_generation_raw_sha256": "8a3b1b4a3db19d78a2e919b8789a383a3ec3841b8b2f74b18a5863a4de060cbf",
+  "previous_composite_sha256": "e6ec506cb2b22375658a99828b5e5c9ee48f899a2dc3ff2a4ffaba1256978f5c",
+  "new_sha256": "a36340c223c5198285f5dcb15385dbe097609e070c4b6e3ec24c40dae2aa93fc",
+  "method": "Same globally registered raw. Only a narrow wrist strip is cross-sectionally registered to the original preserved forearm silhouette (without the construction polygon seam), then blended to exact source forearm. No hand/fruit mirror, rotation or new generation.",
+  "seam_A": [
+    958.0,
+    540.0
+  ],
+  "seam_B": [
+    775.0,
+    678.0
+  ],
+  "tangent": [
+    -0.7984265836147044,
+    0.6020921778078099
+  ],
+  "forearm_normal": [
+    0.6020921778078099,
+    0.7984265836147044
+  ],
+  "strip_depth_px": [
+    -60,
+    60
+  ],
+  "generated_wrist_width_at_seam_px": 203.0413366535142,
+  "base_wrist_width_at_seam_px": 242.81800899319518,
+  "cross_section_fit": "Generated bounds -> original forearm bounds, both sampled profiles smoothed at 2px to avoid raster jitter, smoothstep ramp from no correction at distal -60px to full match at seam 0px. Blend to exact source by proximal +40px, restricted by original edit mask.",
+  "output": "/workspace/scratch/f060b5601755/astra_s03a_foreground_draw_20261018_1010/repair_004/composited/S03a_foreground_v004_wrist_interface_r2.png",
+  "changed_pixels": 25590,
+  "changed_outside_original_repair_mask": 0,
+  "changed_outside_wrist_strip": 0,
+  "outside_mask_diff_to_approved_base": 0,
+  "alpha_bbox": [
+    221,
+    323,
+    1536,
+    1024
+  ],
+  "alpha_bbox_gt8": [
+    224,
+    329,
+    1536,
+    1024
+  ],
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "canvas": [
+    1536,
+    1024
+  ]
+}
