@@ -1,0 +1,98 @@
+{
+  "reviewer": "cloud 6.1sol preparer actual input check",
+  "status": "PREPARER_INPUT_TECHNICAL_PASS_PENDING_ROOT_ACTUAL_REVIEW",
+  "authored_this_input": true,
+  "scope": "F073 single input only; no native call, static artwork or dynamic approval",
+  "mother068_sha256": "8210a8d56c15a42da4b4daa6c4a4599ce6b2df9b1f5fdab2e1403ec7f9960768",
+  "preposition_sha256": "43f71ccfb0d88f4c6967b765fffee7017be9e29a5a8d401be0f74bc5bb6e5717",
+  "full_mask_sha256": "5fef97bf01bb1c6ebf06c730091f069a25b710d3d45e8a150d03dffd68ec59e4",
+  "crop_mask_sha256": "bc706b931f3ae2feb08bebbef5a9f4bab77d245aae475ea49582e08ee1b9915c",
+  "actual_viewed": [
+    "qa/F068_F073_actual_preposition_and_mask_gray.png",
+    "qa/F073_crop_complete_edit_dark.png",
+    "qa/actual_support_and_swing_shoes.png",
+    "qa/F073_actual_support_and_ownership.png"
+  ],
+  "findings": [
+    "来源生产层逐RGBA重放真实母068=8210，旧裤缘悬支路已在母生产远足层清除，不从旧输入farfoot回退。",
+    "远左完整支撑鞋逐RGBA原位；近右完整原鞋只做同一平移+83worldX/-63nativeY，1022/959实际底分别可读。",
+    "双臂真实整链按同一各自刚体+12/-12度回中位，指掌玉镯不拆，scale1；远左镯所属可读。",
+    "完整旧068双裤/新腿走廊/裤口与腾空区域白域连续，非局部膝腕补丁；旧裤姿态明确过时仅作材质参考。",
+    "真足guard无alpha0护栏；far完整足源放裤下，输出后须按实际新裤重算可见性，不能锁隐藏alpha。",
+    "真实blouse/完整可见双臂材料为黑域，小袖根连缝释放。隐髋是已过062手工proxy加beat，不是腰线/791/744或旧骨长。",
+    "色彩锚来自锁062实际图及当时navy mean；不从068新均色递归漂移。"
+  ],
+  "independent_numeric_checks": {
+    "source_snapshot_count": 12,
+    "source_snapshot_SHA_mismatch": [],
+    "mother_RGBA_replay_changes": 0,
+    "far_support_layer_RGBA_changes": 0,
+    "actual_feet": {
+      "far_support": {
+        "native_bottom": 1022,
+        "world_bottom": 774.874330515797,
+        "x_span_alpha128": [
+          973,
+          1143
+        ]
+      },
+      "near_swing": {
+        "native_bottom": 959,
+        "world_bottom": 751.9358025552708,
+        "x_span_alpha128": [
+          1015,
+          1190
+        ]
+      }
+    },
+    "foot_guards": {
+      "HARD_near_swing_shoe_actual_material": {
+        "guard_pixels": 10348,
+        "alpha0_guard_pixels": 0,
+        "edit_overlap": 0
+      },
+      "HARD_far_support_shoe_visible_material": {
+        "guard_pixels": 8757,
+        "alpha0_guard_pixels": 0,
+        "edit_overlap": 0
+      }
+    },
+    "guard_intersections": {
+      "body": 0,
+      "complete_arms": 0,
+      "near_swing_foot": 0,
+      "far_visible_support_foot": 0
+    },
+    "old_visible_pants_uneditable_except_real_foreground": 0,
+    "body_head_delta_world": [
+      26.67948575823914,
+      -5.249506568476249
+    ],
+    "near_shoe_delta_native": [
+      227.95708639186898,
+      -63.0
+    ],
+    "hidden_hip_manual_proxy_native": [
+      1076.066629064931,
+      603.0885040425534
+    ],
+    "white_pixels": 82968
+  },
+  "crop_xyxy": [
+    780,
+    280,
+    1300,
+    1060
+  ],
+  "crop_size": [
+    520,
+    780
+  ],
+  "remaining_input_blockers": [],
+  "native_output_must_review": [
+    "近右过步膝弯/后转面和远左支撑腿的完整自然体积，不能沿旧068伸腿姿势。",
+    "腰口与真实脚踝连接、袖根、鞋源外旧线/重复鞋片、真实足可见层次、palette与外AA。"
+  ],
+  "calls": 0,
+  "F079_unopened": true
+}

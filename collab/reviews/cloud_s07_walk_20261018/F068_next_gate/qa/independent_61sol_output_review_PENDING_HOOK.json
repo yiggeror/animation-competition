@@ -1,0 +1,81 @@
+{
+  "reviewer": "cloud 6.1sol independent",
+  "status": "PENDING_ONE_FARFOOT_OLD_EXTRACTION_INK_BRANCH_CLEANUP",
+  "candidate_sha256": "3d9a6065d5d873d43bd6873163cef0c44d89ab7ede364b28f8d7f0af3e3dbcf7",
+  "actual_viewed": [
+    "qa/F068_native_layered_crop_gray.png",
+    "qa/F068_native_layered_full_dark.png",
+    "qa/F068_native_connections_dark.png",
+    "qa/F068_far_heel_actual_source_comparison.png",
+    "/tmp/F068_heel_hook_layer_trace.png"
+  ],
+  "positive_findings": [
+    "完整新裤腰到双膝/裤口体积连续，未见旧弯腿切片、拉长断膝或腰口透明横缝。",
+    "双鞋实际接地，近鞋原位，远足与前景新裤层次可读；袖根和真手臂保持来源。",
+    "灰/深底未见明显新裤光晕或裤料色跳。"
+  ],
+  "blocker": {
+    "native_region": [
+      995,
+      926,
+      1004,
+      936
+    ],
+    "source": "layers/F068_far_shoe_ankle_LANDED.png",
+    "finding": "悬支路来自旧far-foot提取上沿，非新native裤，也非真实鞋底/后跟弧。",
+    "proof_sample": {
+      "xy": [
+        996,
+        929
+      ],
+      "source_farfoot_RGBA": [
+        15,
+        14,
+        21,
+        214
+      ],
+      "candidate_RGBA": [
+        15,
+        14,
+        21,
+        214
+      ],
+      "new_pants_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "true_skin_top_samples": [
+      {
+        "xy": [
+          1005,
+          938
+        ],
+        "RGBA": [
+          255,
+          205,
+          167,
+          249
+        ]
+      },
+      {
+        "xy": [
+          1006,
+          938
+        ],
+        "RGBA": [
+          227,
+          164,
+          128,
+          253
+        ]
+      }
+    ],
+    "recommended_boundary": "仅西北旧ink/AA悬支路，勿按整994..1008/926..938矩形清。保1005..1008/y936..938邻接暖肤的真上缘黑线与全部真skin/shoe。只改派生production远足，不改冻结sources/input。"
+  },
+  "post_cleanup_remaining_scope": "只复核同源支路移除、真实肤鞋边及最终SHA；不扩查新动作或重生图。",
+  "generation_calls_by_reviewer": 0,
+  "F073_unopened": true
+}

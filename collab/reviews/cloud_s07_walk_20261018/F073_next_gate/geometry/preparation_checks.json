@@ -1,0 +1,138 @@
+{
+  "status": "F073_SINGLE_INPUT_PREPARED_NOT_GENERATED_PENDING_REVIEW",
+  "mother068_sha256": "8210a8d56c15a42da4b4daa6c4a4599ce6b2df9b1f5fdab2e1403ec7f9960768",
+  "mother_layer_replay_RGBA_changes": 0,
+  "frame": 73,
+  "hold_frames": 6,
+  "inclusive_frames": [
+    73,
+    78
+  ],
+  "phase": "far anatomical LEFT single support; near RIGHT passing swing",
+  "registration": {
+    "s": 0.36410361842105265,
+    "tx": 627.0254537171638,
+    "ty": 402.7604324894813,
+    "head_target": 69.1796875,
+    "head_center_world": [
+      929.9596642434797,
+      442.447726897376
+    ],
+    "warning": "Head source is actual G037253±5asset pixels, not75.1 construction; F057 head190±5native manual estimate. One uniform whole-image registration only."
+  },
+  "body_head_delta_world": [
+    26.67948575823914,
+    -5.249506568476249
+  ],
+  "body_head_delta_native": [
+    73.2744318058019,
+    -14.417617136684628
+  ],
+  "near_complete_shoe_translation_native": [
+    227.95708639186898,
+    -63.0
+  ],
+  "near_complete_shoe_translation_world": [
+    83.0,
+    -22.93852796052632
+  ],
+  "near_foot_intent23world_difference": 0.061472039473681406,
+  "far_complete_support_shoe_RGBA_changes": 0,
+  "actual_feet": {
+    "far_support": {
+      "native_bottom": 1022,
+      "world_bottom": 774.874330515797,
+      "x_span_alpha128": [
+        973,
+        1143
+      ]
+    },
+    "near_swing": {
+      "native_bottom": 959,
+      "world_bottom": 751.9358025552708,
+      "x_span_alpha128": [
+        1015,
+        1190
+      ]
+    }
+  },
+  "whole_actual_arm_transforms": {
+    "near": {
+      "rotation_from_actual068_degrees": 12.0,
+      "matrix": [
+        [
+          0.9781476007338057,
+          -0.20791169081775934
+        ],
+        [
+          0.20791169081775934,
+          0.9781476007338057
+        ]
+      ],
+      "translation_native": [
+        171.34568868214683,
+        -198.50906602632347
+      ],
+      "scale": 1
+    },
+    "far": {
+      "rotation_from_actual068_degrees": -12.0,
+      "matrix": [
+        [
+          0.9781476007338057,
+          0.20791169081775934
+        ],
+        [
+          -0.20791169081775934,
+          0.9781476007338057
+        ]
+      ],
+      "translation_native": [
+        19.882877247477836,
+        222.5899055335025
+      ],
+      "scale": 1
+    }
+  },
+  "sleeve_roots_native": {
+    "near": [
+      998.0666290649311,
+      360.0794986211105
+    ],
+    "far": [
+      1174.066629064931,
+      358.0794986211105
+    ]
+  },
+  "hidden_hip_proxy_native": [
+    1076.066629064931,
+    603.0885040425534
+  ],
+  "hidden_hip_note": "Accepted062 manual hidden joint proxy plus approved beat deltas; guide only, not anatomical measurement or shirt-hem pivot. Whole new trousers must naturally connect real feet without forcing old projected lengths.",
+  "crop_xyxy": [
+    780,
+    280,
+    1300,
+    1060
+  ],
+  "crop_size": [
+    520,
+    780
+  ],
+  "white_pixels": 82968,
+  "guard_intersections": {
+    "body": 0,
+    "complete_arms": 0,
+    "near_swing_foot": 0,
+    "far_visible_support_foot": 0
+  },
+  "old_visible_pants_material_alpha20_uneditable_except_real_foreground": 0,
+  "palette_anchor": "sources/F062_palette_anchor.png SHA393622a; navy mean anchor in sources/F068_native_layered_checks.json is actual062, do not recursively shift palette from068",
+  "limits": [
+    "Old068 pants are obsolete material, whole new support/swing pose must be natively drawn.",
+    "Far full shoe layer fixed below new pants; guard visibility must follow actual new foreground after output.",
+    "Near full swing shoe preserved as original whole source material; no code articulation, scaling, shoe roll, footslide or generated image.",
+    "Only requested073 preparation; no079 or11-state expansion."
+  ],
+  "new_image_calls": 0
+}

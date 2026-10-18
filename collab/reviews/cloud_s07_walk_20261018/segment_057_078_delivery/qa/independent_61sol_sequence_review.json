@@ -1,0 +1,190 @@
+{
+  "reviewer": "cloud 6.1sol independent",
+  "status": "LIMITED_ISOLATED_22F_EXPOSURE_AND_SUPPORT_PASS_PENDING_ASTRA",
+  "scope": "F057x5/F062x6/F068x5/F073x6人物独立层曝光，不是Canvas场景或整S07 108f。",
+  "video_sha256": "ac773d34879d684591fa7d4c0e63329884778892acf5a248bc56c7ce511f60a9",
+  "actual_decode_method": "独立ffmpeg RGB24完整解码22帧，逐帧和四张实际注册PNG比较，不依赖作者接触表作解码证明。",
+  "fps": "24/1",
+  "decoded_frames": 22,
+  "duration_seconds": 0.916667,
+  "audio_stream_count": 0,
+  "all_frames_classified_correctly": true,
+  "max_RGB_MAE": 0.2464869068287037,
+  "per_frame": [
+    {
+      "clip_frame": 0,
+      "expected": 57,
+      "closest": 57,
+      "mae": 0.23543294270833334
+    },
+    {
+      "clip_frame": 1,
+      "expected": 57,
+      "closest": 57,
+      "mae": 0.2353193721064815
+    },
+    {
+      "clip_frame": 2,
+      "expected": 57,
+      "closest": 57,
+      "mae": 0.23533203125
+    },
+    {
+      "clip_frame": 3,
+      "expected": 57,
+      "closest": 57,
+      "mae": 0.2353193721064815
+    },
+    {
+      "clip_frame": 4,
+      "expected": 57,
+      "closest": 57,
+      "mae": 0.23540400752314813
+    },
+    {
+      "clip_frame": 5,
+      "expected": 62,
+      "closest": 62,
+      "mae": 0.23026294849537038
+    },
+    {
+      "clip_frame": 6,
+      "expected": 62,
+      "closest": 62,
+      "mae": 0.23030056423611112
+    },
+    {
+      "clip_frame": 7,
+      "expected": 62,
+      "closest": 62,
+      "mae": 0.2302759693287037
+    },
+    {
+      "clip_frame": 8,
+      "expected": 62,
+      "closest": 62,
+      "mae": 0.23059895833333333
+    },
+    {
+      "clip_frame": 9,
+      "expected": 62,
+      "closest": 62,
+      "mae": 0.23043836805555556
+    },
+    {
+      "clip_frame": 10,
+      "expected": 62,
+      "closest": 62,
+      "mae": 0.23042896412037037
+    },
+    {
+      "clip_frame": 11,
+      "expected": 68,
+      "closest": 68,
+      "mae": 0.22616536458333333
+    },
+    {
+      "clip_frame": 12,
+      "expected": 68,
+      "closest": 68,
+      "mae": 0.22631655092592592
+    },
+    {
+      "clip_frame": 13,
+      "expected": 68,
+      "closest": 68,
+      "mae": 0.2261154513888889
+    },
+    {
+      "clip_frame": 14,
+      "expected": 68,
+      "closest": 68,
+      "mae": 0.22614402488425925
+    },
+    {
+      "clip_frame": 15,
+      "expected": 68,
+      "closest": 68,
+      "mae": 0.22610785590277777
+    },
+    {
+      "clip_frame": 16,
+      "expected": 73,
+      "closest": 73,
+      "mae": 0.2464869068287037
+    },
+    {
+      "clip_frame": 17,
+      "expected": 73,
+      "closest": 73,
+      "mae": 0.2462452980324074
+    },
+    {
+      "clip_frame": 18,
+      "expected": 73,
+      "closest": 73,
+      "mae": 0.2462872540509259
+    },
+    {
+      "clip_frame": 19,
+      "expected": 73,
+      "closest": 73,
+      "mae": 0.2462890625
+    },
+    {
+      "clip_frame": 20,
+      "expected": 73,
+      "closest": 73,
+      "mae": 0.24639322916666667
+    },
+    {
+      "clip_frame": 21,
+      "expected": 73,
+      "closest": 73,
+      "mae": 0.24643952546296297
+    }
+  ],
+  "actual_viewed_frames": [
+    0,
+    5,
+    11,
+    16,
+    21
+  ],
+  "actual_viewed_images": [
+    "/tmp/S07_22f_independent_actual_decode.png",
+    "/tmp/S07_22f_independent_foot_contacts.png"
+  ],
+  "source_support_checks": {
+    "near062_vs068_whole_foot_layer_bytes_equal": true,
+    "near057_source_RGBA_core_alpha255_matches062": {
+      "core_pixels": 562,
+      "RGBA_changed": 0
+    },
+    "near057_eroded_actual_foot_RGB_matches062": {
+      "core_pixels": 8735,
+      "RGB_changed": 0
+    },
+    "far068_vs073_whole_support_layer_bytes_equal": true,
+    "far_support_SHA": "1103f923c4e2613dac88e8d1a8534c101103013c4db468af1adcd83426a74e77",
+    "far_support_bottom_native_both": 1022,
+    "near073_swing_bottom_native": 959,
+    "near073_lift_native": 63,
+    "near073_delta_from_previous_support_native": [
+      227.95708639186898,
+      -63
+    ]
+  },
+  "visible_findings": [
+    "固定相机/注册下近右鞋在057→062→068同位置，062远左过步→068远左落地→073远左承重/近右过步可读；未见承重鞋横滑。",
+    "068→073远左支撑整鞋保持原位，近右整鞋抬高63native；没有通过移远鞋来掩盖断腿。",
+    "曝光只持格无补间；关键持格内无换源、双鞋影、明显身份/色彩闪跳或肢体归属翻转。",
+    "057/062/068/073均为已实际成态源；本次没有从数值替代静态图审。"
+  ],
+  "remaining_blockers": [],
+  "not_claimed": [
+    "不代Astra/Canvas审定接入完整场景、镜头时长或整108帧S07。",
+    "不打开079、其余状态或新图调用。"
+  ],
+  "new_calls_by_reviewer": 0
+}

@@ -1,0 +1,263 @@
+{
+  "status": "22FRAME_REAL_PNG_EXPOSURE_DECODED_PENDING_ACTUAL_VISUAL_REVIEW",
+  "sources": {
+    "57": {
+      "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F057_semantic_color_ankle/candidate/F057_semantic_color_and_ankle_PENDING.png",
+      "sha256": "93939f3e148c0a957ef418c677e60cc3fd27cf6b6844f91d500c8a3508b76720",
+      "hold": 5,
+      "native_canvas": [
+        1672,
+        1080
+      ]
+    },
+    "62": {
+      "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F062_native_call01/candidate/F062_single_native_final_with_waist_underlay_PENDING_ASTRA.png",
+      "sha256": "393622a77349083751122520b690bd35017f8535a25560d8cca775446d2eeb2f",
+      "hold": 6,
+      "native_canvas": [
+        1672,
+        1080
+      ]
+    },
+    "68": {
+      "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F068_next_gate/candidate/F068_single_native_final_PENDING_ASTRA.png",
+      "sha256": "8210a8d56c15a42da4b4daa6c4a4599ce6b2df9b1f5fdab2e1403ec7f9960768",
+      "hold": 5,
+      "native_canvas": [
+        1672,
+        1080
+      ]
+    },
+    "73": {
+      "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F073_next_gate/candidate/F073_single_native_final_PENDING_ASTRA.png",
+      "sha256": "afc7dcff6593611d0e33b16a7fce9e12967bf1767cacf8336308a51a50af1929",
+      "hold": 6,
+      "native_canvas": [
+        1672,
+        1080
+      ]
+    }
+  },
+  "sequence": [
+    57,
+    57,
+    57,
+    57,
+    57,
+    62,
+    62,
+    62,
+    62,
+    62,
+    62,
+    68,
+    68,
+    68,
+    68,
+    68,
+    73,
+    73,
+    73,
+    73,
+    73,
+    73
+  ],
+  "fps": 24,
+  "scene_frames_inclusive": [
+    57,
+    78
+  ],
+  "no_tween": true,
+  "no_audio": true,
+  "isolated_actual_PNG_not_Canvas_scene_or_full_film": true,
+  "registration": {
+    "s": 0.36410361842105265,
+    "tx": 627.0254537171638,
+    "ty": 402.7604324894813,
+    "head_target": 69.1796875,
+    "head_center_world": [
+      929.9596642434797,
+      442.447726897376
+    ],
+    "warning": "Head source is actual G037253±5asset pixels, not75.1 construction; F057 head190±5native manual estimate. One uniform whole-image registration only."
+  },
+  "constant_preview_crop_world_xyxy": [
+    720,
+    360,
+    1488,
+    792
+  ],
+  "video_sha256": "ac773d34879d684591fa7d4c0e63329884778892acf5a248bc56c7ce511f60a9",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "24/1",
+        "duration": "0.916667",
+        "nb_frames": "22"
+      }
+    ]
+  },
+  "decoded_frames": [
+    {
+      "clip_frame": 0,
+      "scene_frame": 57,
+      "expected_source": 57,
+      "closest_source": 57,
+      "RGB_MAE": 0.23543294270833334
+    },
+    {
+      "clip_frame": 1,
+      "scene_frame": 58,
+      "expected_source": 57,
+      "closest_source": 57,
+      "RGB_MAE": 0.2353193721064815
+    },
+    {
+      "clip_frame": 2,
+      "scene_frame": 59,
+      "expected_source": 57,
+      "closest_source": 57,
+      "RGB_MAE": 0.23533203125
+    },
+    {
+      "clip_frame": 3,
+      "scene_frame": 60,
+      "expected_source": 57,
+      "closest_source": 57,
+      "RGB_MAE": 0.2353193721064815
+    },
+    {
+      "clip_frame": 4,
+      "scene_frame": 61,
+      "expected_source": 57,
+      "closest_source": 57,
+      "RGB_MAE": 0.23540400752314813
+    },
+    {
+      "clip_frame": 5,
+      "scene_frame": 62,
+      "expected_source": 62,
+      "closest_source": 62,
+      "RGB_MAE": 0.23026294849537038
+    },
+    {
+      "clip_frame": 6,
+      "scene_frame": 63,
+      "expected_source": 62,
+      "closest_source": 62,
+      "RGB_MAE": 0.23030056423611112
+    },
+    {
+      "clip_frame": 7,
+      "scene_frame": 64,
+      "expected_source": 62,
+      "closest_source": 62,
+      "RGB_MAE": 0.2302759693287037
+    },
+    {
+      "clip_frame": 8,
+      "scene_frame": 65,
+      "expected_source": 62,
+      "closest_source": 62,
+      "RGB_MAE": 0.23059895833333333
+    },
+    {
+      "clip_frame": 9,
+      "scene_frame": 66,
+      "expected_source": 62,
+      "closest_source": 62,
+      "RGB_MAE": 0.23043836805555556
+    },
+    {
+      "clip_frame": 10,
+      "scene_frame": 67,
+      "expected_source": 62,
+      "closest_source": 62,
+      "RGB_MAE": 0.23042896412037037
+    },
+    {
+      "clip_frame": 11,
+      "scene_frame": 68,
+      "expected_source": 68,
+      "closest_source": 68,
+      "RGB_MAE": 0.22616536458333333
+    },
+    {
+      "clip_frame": 12,
+      "scene_frame": 69,
+      "expected_source": 68,
+      "closest_source": 68,
+      "RGB_MAE": 0.22631655092592592
+    },
+    {
+      "clip_frame": 13,
+      "scene_frame": 70,
+      "expected_source": 68,
+      "closest_source": 68,
+      "RGB_MAE": 0.2261154513888889
+    },
+    {
+      "clip_frame": 14,
+      "scene_frame": 71,
+      "expected_source": 68,
+      "closest_source": 68,
+      "RGB_MAE": 0.22614402488425925
+    },
+    {
+      "clip_frame": 15,
+      "scene_frame": 72,
+      "expected_source": 68,
+      "closest_source": 68,
+      "RGB_MAE": 0.22610785590277777
+    },
+    {
+      "clip_frame": 16,
+      "scene_frame": 73,
+      "expected_source": 73,
+      "closest_source": 73,
+      "RGB_MAE": 0.2464869068287037
+    },
+    {
+      "clip_frame": 17,
+      "scene_frame": 74,
+      "expected_source": 73,
+      "closest_source": 73,
+      "RGB_MAE": 0.2462452980324074
+    },
+    {
+      "clip_frame": 18,
+      "scene_frame": 75,
+      "expected_source": 73,
+      "closest_source": 73,
+      "RGB_MAE": 0.2462872540509259
+    },
+    {
+      "clip_frame": 19,
+      "scene_frame": 76,
+      "expected_source": 73,
+      "closest_source": 73,
+      "RGB_MAE": 0.2462890625
+    },
+    {
+      "clip_frame": 20,
+      "scene_frame": 77,
+      "expected_source": 73,
+      "closest_source": 73,
+      "RGB_MAE": 0.24639322916666667
+    },
+    {
+      "clip_frame": 21,
+      "scene_frame": 78,
+      "expected_source": 73,
+      "closest_source": 73,
+      "RGB_MAE": 0.24643952546296297
+    }
+  ],
+  "max_RGB_MAE": 0.2464869068287037,
+  "remaining_gate": "Actual wholebody volume, support/foot lock, limb/clothes continuity and hand ownership review; not a whole108f S07 acceptance."
+}

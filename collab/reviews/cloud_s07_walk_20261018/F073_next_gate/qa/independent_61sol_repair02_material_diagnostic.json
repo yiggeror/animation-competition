@@ -1,0 +1,148 @@
+{
+  "reviewer": "cloud 6.1sol independent",
+  "status": "REPAIR02_DIAGNOSTIC_RESIDUAL_NATIVE_GENERATED_SHOE_EDGE_NOT_FINAL_PASS",
+  "candidate_sha256": "6428dd1986eaa229019fe543b9ed486e13e0e7019f8b6499863f60effaf6e205",
+  "actual_viewed": [
+    "qa/F073_repair02_native_layered_crop_gray.png",
+    "qa/F073_repair02_native_connections_dark.png",
+    "repair_call02/qa/native_whole_crop_uniform_alignment.png",
+    "/tmp/F073_repair02_ankle_and_heel_sources.png",
+    "/tmp/F073_repair02_ankle_actual_9x.png"
+  ],
+  "near_cuff_findings": {
+    "large_call01_connection_failure_resolved": true,
+    "true_skin_cuff_main_contact_native_approx": [
+      1104,
+      887,
+      1107,
+      889
+    ],
+    "remaining_right_overhang_air_band": {
+      "row": 890,
+      "x_range": [
+        1110,
+        1120
+      ],
+      "same_raw_alpha": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "finding": "同native自己也为空，不是完整暖肤被采纳mask漏掉。该区域是裤脚右外挑下方空气，不据此单独再认整腿断开。"
+    },
+    "native_available_ink_row": {
+      "y": 891,
+      "x_range_inclusive": [
+        1110,
+        1118
+      ],
+      "RGBA_first": [
+        3,
+        2,
+        2,
+        254
+      ],
+      "source": "native生成鞋口上缘ink/AA，非连续暖肤",
+      "judgment": "可诚实记录同源ink/AA存在，但单补这一行不会填y890空气；不画条桥、不挪真实鞋。"
+    }
+  },
+  "heel_artifact": {
+    "layer": "production_layers/native_complete_trousers_original_color.png",
+    "region_approx": [
+      1012,
+      912,
+      1015,
+      955
+    ],
+    "finding": "整裤材料2px膨胀带取入生成鞋左跟黑/白边，和真实前景near鞋形成双边；只从派生裤层剔非navy生成鞋材质。",
+    "white_source_probes": [
+      {
+        "xy": [
+          1013,
+          948
+        ],
+        "pants_RGBA": [
+          239,
+          239,
+          239,
+          253
+        ],
+        "same_native_RGBA": [
+          239,
+          239,
+          239,
+          253
+        ]
+      },
+      {
+        "xy": [
+          1013,
+          949
+        ],
+        "pants_RGBA": [
+          218,
+          215,
+          212,
+          253
+        ],
+        "same_native_RGBA": [
+          218,
+          215,
+          212,
+          253
+        ]
+      },
+      {
+        "xy": [
+          1013,
+          950
+        ],
+        "pants_RGBA": [
+          162,
+          160,
+          158,
+          253
+        ],
+        "same_native_RGBA": [
+          162,
+          160,
+          158,
+          253
+        ]
+      },
+      {
+        "xy": [
+          1014,
+          953
+        ],
+        "pants_RGBA": [
+          201,
+          200,
+          197,
+          253
+        ],
+        "same_native_RGBA": [
+          201,
+          200,
+          197,
+          253
+        ]
+      }
+    ],
+    "guardrail": "保第一道真实navy裤轮廓及全部原near/far足层，不按整矩形删裤，固定farfoot不修改。"
+  },
+  "other_finite_findings": [
+    "腰下先前明确灰线显著改善。",
+    "完整near腿已回左，非call01浮空裤口；本次不扩查全链/新骨架。"
+  ],
+  "new_calls_by_reviewer": 0,
+  "source_or_root_script_changes_by_reviewer": false
+}

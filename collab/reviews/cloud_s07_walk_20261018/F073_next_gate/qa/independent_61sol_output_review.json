@@ -1,0 +1,36 @@
+{
+  "reviewer": "cloud 6.1sol independent",
+  "status": "LIMITED_STATIC_F073_PASS_PENDING_ASTRA",
+  "candidate": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F073_next_gate/candidate/F073_single_native_final_PENDING_ASTRA.png",
+  "candidate_sha256": "afc7dcff6593611d0e33b16a7fce9e12967bf1767cacf8336308a51a50af1929",
+  "actual_viewed": [
+    "qa/F073_repair02_native_layered_crop_gray.png",
+    "qa/F073_repair02_native_layered_full_gray.png",
+    "qa/F073_repair02_native_connections_dark.png",
+    "/tmp/F073_final_actual_ankle_heel_gray_dark.png (fresh final PNG render)"
+  ],
+  "source_checks": {
+    "58_removed_native_RGBA_mappings_verified": true,
+    "removed_navy_seed_material_pixels": 0,
+    "all_four_confirmed_generated_white_heel_pixels_absent_from_pants": true,
+    "true_near_foot_complete_source_RGBA_changes": 0,
+    "true_far_foot_complete_source_RGBA_changes_vs068": 0,
+    "source_farfoot_SHA": "1103f923c4e2613dac88e8d1a8534c101103013c4db468af1adcd83426a74e77",
+    "near_actual_bottom_native": 959,
+    "far_actual_bottom_native": 1022,
+    "navy_rgb_adjustment": [
+      0,
+      0,
+      0
+    ]
+  },
+  "visible_findings": [
+    "完整近腿髋→膝→小腿→真实近踝主接点连续，call01的大浮空裤口已解除；未见拉伸细桥或新脚位替代。",
+    "58px排除仅去原生生成鞋材质，真navy/第一裤轮廓保持；高倍仍可区分后方裤边与前景真鞋边，未见残白鞋片。",
+    "腰口灰线已消除到连续衣裤叠层，袖根/完整双臂和前后所属稳定。",
+    "右侧裤口外挑下方原生也存在的小空气带不当作待画皮肤，不强补桥。"
+  ],
+  "remaining_blockers": [],
+  "limits": "单态静态及源材质有限通过；不代Astra锁定、不含Canvas/整108帧S07或成片验收。",
+  "calls_by_reviewer": 0
+}

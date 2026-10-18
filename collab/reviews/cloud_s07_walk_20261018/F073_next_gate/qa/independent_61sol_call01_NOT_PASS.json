@@ -1,0 +1,224 @@
+{
+  "reviewer": "cloud 6.1sol independent",
+  "status": "NOT_PASS_F073_CALL01_ACTUAL_TWO_MATERIAL_CONNECTION_FAILURES",
+  "candidate_sha256": "7d6630035850af3375e6018e8a174f818ed759ec026c9346768c0b44345eac08",
+  "native_raw_sha256": "410209216815230473ebee35340a07fae11b647eb3a6ac9e381c6d85953a8744",
+  "actual_viewed": [
+    "qa/F073_native_connections_dark.png",
+    "qa/F073_native_layered_crop_gray.png",
+    "qa/call01_whole_crop_uniform_alignment.png",
+    "/tmp/F073_call01_two_gap_source_inspection.png"
+  ],
+  "uniform_mapping_confirmed": {
+    "raw_size": [
+      1023,
+      1537
+    ],
+    "uniform_scale": 0.5074821080026025,
+    "horizontal_padding_each_side": 0.42290175666880714,
+    "no_segment_or_nonuniform_scale": true
+  },
+  "blocking_findings": [
+    {
+      "id": "near_full_leg_cuff_misses_true_ankle",
+      "native_region_xyxy": [
+        1055,
+        870,
+        1130,
+        906
+      ],
+      "actual_current_near_cuff": {
+        "left_bottom_opaque_sample_xy": [
+          1123,
+          881
+        ],
+        "cuff_bottom_samples_xy": [
+          [
+            1125,
+            885
+          ],
+          [
+            1140,
+            883
+          ],
+          [
+            1160,
+            876
+          ],
+          [
+            1180,
+            869
+          ],
+          [
+            1200,
+            862
+          ],
+          [
+            1220,
+            857
+          ]
+        ]
+      },
+      "true_target_near_ankle_proxy_xy": [
+        1062,
+        895
+      ],
+      "shortest_measured_skin_to_near_cuff_gap_native": 22.360679774997898,
+      "gap_endpoints_xy": [
+        [
+          1101,
+          885
+        ],
+        [
+          1123,
+          881
+        ]
+      ],
+      "target_proxy_to_nearleg_material_native": 62.5859409132754,
+      "finding": "原生near裤口跟随其错误右上鞋位；接回已定位真实近鞋后，真实裸踝与新裤口存在清楚空间断口。不能移动真实鞋去追错误生成鞋位。",
+      "same_native_source_availability": "目标连接附近(1062,895)/(1080,887)/(1110,885)/(1120,885)同call01 aligned原件均alpha0，新裤材料同为0；不是采纳mask漏掉了现成连续裤料。同坐标零调用取回缺源。"
+    },
+    {
+      "id": "waist_hem_native_blue_instead_of_required_pants",
+      "examined_central_gap_bbox_inclusive": [
+        1036,
+        526,
+        1135,
+        545
+      ],
+      "candidate_alpha_lt128_gap_pixels_in_examined_underhem_columns": 367,
+      "finding": "固定原蓝衫下缘与新裤腰之间有窄灰/透明接缝；主要中央段约2–5native厚，不能称腰口连续。",
+      "same_native_source_availability": "许多缺口同位原生RGB实际是蓝衫而非navy裤料；例如(1120,544)raw[129,167,214,253]而候选和pants alpha0。不能仅扩大navy采纳mask把该蓝料称裤，亦不以旧腰pivot更换目标。"
+    }
+  ],
+  "source_probes": [
+    {
+      "native_xy": [
+        1062,
+        895
+      ],
+      "candidate_RGBA": [
+        253,
+        184,
+        139,
+        253
+      ],
+      "same_call01_aligned_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_pants_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "native_xy": [
+        1080,
+        887
+      ],
+      "candidate_RGBA": [
+        245,
+        181,
+        141,
+        252
+      ],
+      "same_call01_aligned_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_pants_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "native_xy": [
+        1110,
+        885
+      ],
+      "candidate_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "same_call01_aligned_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_pants_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "native_xy": [
+        1120,
+        885
+      ],
+      "candidate_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "same_call01_aligned_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_pants_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "native_xy": [
+        1120,
+        544
+      ],
+      "candidate_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "same_call01_aligned_RGBA": [
+        129,
+        167,
+        214,
+        253
+      ],
+      "native_pants_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "far_support_complete_layer_RGBA_changes_vs068": 0,
+  "next_native_request_guidance": [
+    "保真nearA约1062/895与已定抬鞋整件、far支撑整鞋原位；隐藏H1076/603继续作衣内关节proxy，不挪脚追生成漂移。",
+    "修绘域应包含完整near髋→膝→裤口到目标真实裸踝，以及当前错误裤口/错误鞋位的旧形清理空域；不能只补一条细透明缝或代码拉伸小腿。",
+    "腰口由原蓝衫固定下缘下方的新真实裤底层连续接回，取真实navy；在当前367px段没有同位合法navy材料。"
+  ],
+  "remaining_scope": "已有限定位即止，不扩全链，不修改母068/sources/根脚本，不生成073或其他态。",
+  "new_calls_by_reviewer": 0
+}

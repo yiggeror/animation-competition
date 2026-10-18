@@ -1,0 +1,97 @@
+{
+  "reviewer": "cloud 6.1sol independent",
+  "status": "LIMITED_INPUT_PASS_SINGLE_F068_PENDING_AUTHOR_CALL",
+  "scope": "单态实际源预摆/真实保护域/整裤重绘白域输入门；不是F068新绘成态或动态验收；不生成/不启动073。",
+  "mother_sha256": "393622a77349083751122520b690bd35017f8535a25560d8cca775446d2eeb2f",
+  "preposition_sha256": "56d5e9140e42d52c258aedc90646de163671627bea951b3ed1d58efcfbff57d0",
+  "full_edit_mask_sha256": "8fe70338f5ed7d0fbcfff09c243001a8a86e3f1fa081d148476b50be3158388c",
+  "crop_edit_mask_sha256": "1771eed9f51fcc2c3d2ab8e3f9518d02b4d9c81829addd1a3eafd480f3d2af7c",
+  "crop_xyxy": [
+    700,
+    280,
+    1220,
+    1060
+  ],
+  "white_pixels": 108527,
+  "actual_viewed_paths": [
+    "qa/F062_F068_actual_preposition_and_mask_gray.png",
+    "qa/F062_F068_actual_preposition_and_mask_dark.png",
+    "qa/F068_crop_complete_edit_dark.png",
+    "qa/actual_shoe_layers_and_floor.png",
+    "qa/F068_actual_support_and_ownership.png",
+    "qa/derived_body_old_arm_cleanup_actual_gray_dark.png"
+  ],
+  "findings": [
+    "整裤腰/双裤腿和旧新轮廓清理走廊连续覆盖；旧062弯腿只作材质提示，所有实际旧裤前景未被错误硬保。",
+    "实际近鞋整层RGBA逐像素不动，双足alpha128实际底均1022native=774.8743305world；远足整层仅+181.2670807X/+63Y，没有缩放/滚鞋/滑近鞋。",
+    "真足guard只保实际可见材料，不含alpha0护栏；远鞋整层在裤下保留，后续按新裤真实前景重算遮挡，不能使用旧预摆可见性制造裤口缺口。",
+    "袖根白域允许接回，双完整臂/玉镯采用各自scale1刚体反相；完整近臂、真实远臂和蓝衣/白花层保持来源。",
+    "隐藏髋proxy由已过062手工H加body/head delta；不把蓝衫下摆或旧791/744当髋，不用投影腿长冒充解剖骨长/不可达证明。"
+  ],
+  "independent_checks": {
+    "snapshot_SHA_mismatch": [],
+    "source_mother_layer_replay_RGBA_changes": 0,
+    "near_shoe_layer_RGBA_changes": 0,
+    "actual_feet": {
+      "near": {
+        "native_bottom": 1022,
+        "world_bottom": 774.874330515797,
+        "opaque_x_span": [
+          787,
+          962
+        ]
+      },
+      "far": {
+        "native_bottom": 1022,
+        "world_bottom": 774.874330515797,
+        "opaque_x_span": [
+          973,
+          1143
+        ]
+      }
+    },
+    "guards": {
+      "HARD_near_fixed_shoe_ankle_actual_material": {
+        "material_pixels": 10336,
+        "alpha0_pixels": 0,
+        "edit_overlap": 0
+      },
+      "HARD_far_landed_shoe_visible_material": {
+        "material_pixels": 7875,
+        "alpha0_pixels": 0,
+        "edit_overlap": 0
+      }
+    },
+    "all_original_guard_intersections": {
+      "headbody": 0,
+      "completevisiblearms": 0,
+      "realnearfoot": 0,
+      "realfarfootvisible": 0
+    },
+    "complete_old_pants_omitted_unprotected_pixels": 0
+  },
+  "resolved_old_arm_debris": {
+    "body_derived_pixels_removed": 164,
+    "removed_actual_blue_or_white_material_alpha_ge20": 0,
+    "old_island_low_alpha_ringing_pixels_with_blue_or_white_RGB": 2,
+    "clear_RGBA_probe1112_510": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "cleanup_white_pixels": 90,
+    "remaining_cleanup_covered_by_real_foreground_guard": 74,
+    "coordinates_and_source_RGBA": "geometry/derived_body_old_arm_cleanup_checks.json",
+    "explicit_mask": "masks/derived_body_OLD_far_arm_skin_ink_cleanup.png",
+    "locked062_and_sources_not_changed": true,
+    "complete_far_arm_source_not_changed": true
+  },
+  "remaining_blockers": [],
+  "post_native_gate": [
+    "全新两腿体积/膝转面/隐髋自然下沉应据真实成图审，不允许沿旧弯腿保留。",
+    "袖根小域接回、远足被新裤遮挡、两鞋底接地必须实看输出；不因数值通过提前批准成态。"
+  ],
+  "new_image_calls": 0,
+  "F073_unopened": true
+}
