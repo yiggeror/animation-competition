@@ -1,0 +1,25 @@
+{
+  "fixed_commit": "76ff15e0800e51504bcfe10fec6739556057ea07",
+  "entry": "collab/reviews/20261018_2003_s08_first33_scene/s08_first33_scene.js",
+  "entry_sha256": "067903e959df59eb44e008932bc0254e4ce24bea8dc3cd39e4544c213633dfc8",
+  "command": "NODE_OPTIONS='--require /tmp/s08_first27_system_chromium.cjs' node tools/js/frames.cjs collab/reviews/20261018_2003_s08_first33_scene/s08_first33_scene.js build/S08_first33_increment --fps 24 --w 1920 --h 1080 --workers 2 --from 1.25 --to 1.375",
+  "actual_new_frames": [
+    30,
+    31,
+    32
+  ],
+  "increment_runs": 1,
+  "reused_30_baseline_delivery_commit": "54ae43dd3e5f7d869bc0b3000585bfbaf7638713",
+  "old30_all_SHA_reverified": true,
+  "assembly_encoding_runs": 1,
+  "all33_fresh_Canvas_render": false,
+  "actual_console_observations": [
+    "one HTTP404 console message;URL not reported;not assumed favicon",
+    "no pageerror observed"
+  ],
+  "browser": "/usr/bin/chromium",
+  "browser_version": "154.0.8037.57",
+  "playwright": "1.62.0",
+  "new_image_generation_calls": 0,
+  "shared_source_changes": 0
+}
