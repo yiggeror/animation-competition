@@ -1,0 +1,188 @@
+{
+  "status": "COORDINATOR_AND_REVIEWER_LOCAL_STATIC_LOCKED",
+  "frame": 14,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "candidate_sha256": "d1727966cfc41b5a61f91c8b19cf8177fe88f12ce20c7d4a1036305b3fbe3d51",
+  "actual_native_calls_to_date": 8,
+  "actual_preserved_raws": 8,
+  "native_failures": 0,
+  "reviewer": "v3 two seams natural; lit upper-arm and forearm same-face samples within±4. Lower shadow is naturally deeper/warmer after horizontal forearm turn; preserve it without flat color shift. Do not claim all skin/shadow within±4.",
+  "color_measurement": "See distinct per-plane means and explicit sample masks; no color adjustment applied.",
+  "scope": "Local static character only. Real table/front-layer and ignition/light exposure checks remain separate.",
+  "files": [
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v3/candidates/S08_F014_same_raw_semantic_candidate_RGBA.png",
+      "sha256": "d1727966cfc41b5a61f91c8b19cf8177fe88f12ce20c7d4a1036305b3fbe3d51",
+      "bytes": 592614
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_native_call08/raw/F014_far_arm_native_raw.png",
+      "sha256": "7a1e7be537c288ba3c9bb9f74c1346fc3c0082a956acbc135953e94d204d60dc",
+      "bytes": 1092840
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_native_call08/request.json",
+      "sha256": "8702cc143f305cdd6c674c5dd568e0791ffcf6638c9695f3d0b3e6e37755e6c2",
+      "bytes": 4337
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_native_call08/prompt.txt",
+      "sha256": "8e2ac4c9f5411810a66140c94b149c97d3d5908877eb540bb0964c8082e08469",
+      "bytes": 3701
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_native_call08/input_sha256.json",
+      "sha256": "0743a31032f0d78f8b61ea69a661edb872291c6e4a3faee5aef4f19dc7e4c8a6",
+      "bytes": 1419
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_input_gate/build_input.py",
+      "sha256": "241393e0d02609a6dada5a08981765d64b9fa8ac690f517aa175b670c4ebaa2d",
+      "bytes": 6704
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_input_gate/composite_returned_crop.py",
+      "sha256": "b15b11cce560cde7cd42573631c5c1e462c0410a3670757ce9c9a17be0baaecb",
+      "bytes": 4027
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_input_gate/clean_same_raw_semantics_v1.py",
+      "sha256": "1eeeb276075866d3ceeb91bf3a5d2d37ee819246f78edc63862879185aa4c0fd",
+      "bytes": 4220
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_input_gate/clean_same_raw_semantics_v3.py",
+      "sha256": "0d6000c7a2957febaa814f5d7eb66b37b3d4d874a60bce0e0fa7d2586b8ce195",
+      "bytes": 4067
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_input_gate/measure_color_homologous_planes.py",
+      "sha256": "4d5fb1312cca098810590963dc6f06f364b2089c5e3ec13d22839a1b2e924080",
+      "bytes": 3077
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v3/geometry/checks.json",
+      "sha256": "6164eefdb8eb59d109c7d95fd4d13797d8770cf5c786872be0670a001408d6f4",
+      "bytes": 726
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v3/geometry/color_homologous_planes.json",
+      "sha256": "57812c8012e8dc6025a17aff4f04bfc1bf8f03b5774c77583ab08df045213807",
+      "bytes": 5247
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_input_gate/inputs/F014_far_arm_crop_3x_RGBA.png",
+      "sha256": "a8c50357bdc3d22708d14b372ba49b16d86fc78e7c17ddbdc4e0cf07dd346389",
+      "bytes": 389665
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_input_gate/inputs/F014_far_arm_crop_3x_WHITE_MASK.png",
+      "sha256": "edb34f221f7a2725d9b061cb213b432ccc766e382dace1624e3ff85123889f38",
+      "bytes": 4976
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_input_gate/inputs/F014_head_body_chain_CONTEXT_ONLY.png",
+      "sha256": "8e3f73f7653e69fcaa6a049c73c8473469a932021534202dff57198ca0b1fc33",
+      "bytes": 868277
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_input_gate/inputs/F000_original_far_arm_COLOR_ONLY.png",
+      "sha256": "4f7f49e53210b0185f1eeeb446475946bfb58cd13cf37a6a802c2d0f1cdf7cb9",
+      "bytes": 384686
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v3/masks/F000_forearm_inner_matched_color_sample.png",
+      "sha256": "22d40246dea2bae7ad382c4dede63089932e0102dbf084922f4ed92e01d04070",
+      "bytes": 2752
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v3/masks/RELEASE_old_wrist_skin_spur_OUTSIDE_real_jade.png",
+      "sha256": "40f61afdcee7a1df7fc8e748f7ab5060e3f4543ecbc0a7169715d15f566e47e5",
+      "bytes": 2185
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v3/masks/F014_forearm_shadow_matched_color_sample.png",
+      "sha256": "41294b1247c2aa9cdce9a9cdd320115bd2b7b9b655aae74f8b92247151fa7e0a",
+      "bytes": 2217
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v3/masks/F014_upper_arm_inner_matched_color_sample.png",
+      "sha256": "d9c0f1322cce49adff87893b29b643539b718eecf49bd0536cbd33c5666e1d45",
+      "bytes": 2435
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v3/masks/RELEASE_old_near_palm_bottom_spur.png",
+      "sha256": "29fe841fe44d87c0f0d07ac38792a852f603177b9f6d8e3f764ee84942dd8b85",
+      "bytes": 2146
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v3/masks/NEW_real_jade_guard_excluding_old_skin_spur.png",
+      "sha256": "c0f59c52b19c54f970ec22d9ebeaac7516bb7d63ac38102dfe33dd8338d00635",
+      "bytes": 2402
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v3/masks/F014_forearm_inner_matched_color_sample.png",
+      "sha256": "10fbd8e104bc4e237c3ae96015132d224205a41bbcb58ad828ba5d7fc6d8aea5",
+      "bytes": 2410
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v3/masks/F000_forearm_shadow_matched_color_sample.png",
+      "sha256": "677529d44800f7513f8ee20895891db3cc8c9e90e701815484700fecc3e8384c",
+      "bytes": 2256
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v3/masks/OLD_frozen_input_white.png",
+      "sha256": "af8a922b1cab32ddc68a559ef5449b186aee5059969ee285fc8d43547779b0d3",
+      "bytes": 4449
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v3/masks/FINAL_explicit_semantic_union.png",
+      "sha256": "0147c91e5ba7cb25a6231b99a1c34dcec01d4b7b7f9715776ee7af41e24e1515",
+      "bytes": 4444
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v3/masks/F000_upper_arm_inner_matched_color_sample.png",
+      "sha256": "a5af1eae046e6e614966ce4f1aa8f68127e994afda1b45040bb81e08af5829ae",
+      "bytes": 2463
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v3/masks/OLD_jade_guard_with_false_skin_spur.png",
+      "sha256": "e8ecc3f88c741337821e628304bb7a80fca9e118541f6152eeed6b6deadb4672",
+      "bytes": 2416
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v1/masks/EXPLICIT_semantic_cleanup_union.png",
+      "sha256": "e61b16f66735ba2ad10512875a27eb7dc2be53de34e5a0cc6c91e45f7caecf59",
+      "bytes": 3498
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v1/masks/FINAL_actual_union_same_as_input_white.png",
+      "sha256": "af8a922b1cab32ddc68a559ef5449b186aee5059969ee285fc8d43547779b0d3",
+      "bytes": 4449
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v1/masks/F014_far_arm_semantic_color_sample.png",
+      "sha256": "a451b6c4b4bb5b244e78380b068ab4fb68b0237020f181d9e2adb1d15348109b",
+      "bytes": 2896
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v1/masks/F000_far_arm_semantic_color_sample.png",
+      "sha256": "2a8036611ba808b47c9413d373b5752684c4bf19464eb6c9d4b55b5235b6cefa",
+      "bytes": 2971
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v1/masks/RESTORE_exact_F012_fixed_cuff_near_hand_and_contour.png",
+      "sha256": "1526b6a65d5b8f7c9ac17a4f47b1d4a2e6aac9da7cf51f1898059be78cde6508",
+      "bytes": 3033
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F014_result_semantic_v1/masks/REMOVE_only_generated_far_prop_and_finger_duplicates.png",
+      "sha256": "c63ad5ad94b6b812c66c668fd10d8a0caf013f0952d288354058a2deee65681d",
+      "bytes": 2750
+    }
+  ],
+  "coordinator": "Actual full-arm and012→014 same-scale viewed; natural shadow retained; use this unique014 to derive017."
+}
