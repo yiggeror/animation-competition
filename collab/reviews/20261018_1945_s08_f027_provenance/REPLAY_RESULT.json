@@ -1,0 +1,136 @@
+{
+  "status": "PASS_EXACT_FINAL_REPRODUCED",
+  "new_generation_calls": 0,
+  "input_count": 6,
+  "inputs": [
+    {
+      "id": "raw",
+      "path": "F027_native_call02_global14/raw/F027_global_call14_native_raw.png",
+      "sha256": "d3364d4e471f9259d2eaf79aea70ed69d4d6d33add96a76a0a0d8ebee2e13e17",
+      "bytes": 853835
+    },
+    {
+      "id": "source025",
+      "path": "dependencies/S08_F025_grandma_match_box_RGBA.png",
+      "sha256": "25e5ff2a37421bc90bbbaa3650e912def85d64fea1ee7a5cafa1a3c98f689cae",
+      "bytes": 580277
+    },
+    {
+      "id": "near025",
+      "path": "dependencies/F025_true_near_hand_match_footprint.png",
+      "sha256": "86d06b53a67b8f4a6f571e9a8822755ec3abc07f7b1177ea6047cc386a0e674c",
+      "bytes": 2978
+    },
+    {
+      "id": "far025",
+      "path": "dependencies/F025_whole_closed_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+      "sha256": "32fdc826a5cebd46c2eff67cd8e8260d47cd4be4cf86655882ea5b25fc14d53d",
+      "bytes": 2475
+    },
+    {
+      "id": "white3x",
+      "path": "F027_from_F025_input_gate_v3_5refs_1925/inputs/F027_lowpress_arm_crop_3x_WHITE_MASK.png",
+      "sha256": "a1e333cdd19a6b13e108f32576b0fa5ab5ffc9cc19c81e59c351a2a1c274cbf1",
+      "bytes": 3983
+    },
+    {
+      "id": "jade",
+      "path": "dependencies/F027_true_jade_material_AND_outline_hard_guard.png",
+      "sha256": "6a5bce752cbe5cc9d61b90b71c898ff1924a79612a7719d9417bfd32b942eace",
+      "bytes": 2416
+    }
+  ],
+  "file_access_enforced": true,
+  "opened_package_files": [
+    "F027_from_F025_input_gate_v3_5refs_1925/inputs/F027_lowpress_arm_crop_3x_WHITE_MASK.png",
+    "F027_native_call02_global14/raw/F027_global_call14_native_raw.png",
+    "dependencies/F025_true_near_hand_match_footprint.png",
+    "dependencies/F025_whole_closed_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+    "dependencies/F027_true_jade_material_AND_outline_hard_guard.png",
+    "dependencies/S08_F025_grandma_match_box_RGBA.png"
+  ],
+  "denied_file_access": [],
+  "final_png_sha256": "2dc0ee2bc06b4b872e0f79cbf4c1bd19b2ccaa160cba9b5feefd45f2a8e268ac",
+  "final_decoded_rgba_sha256": "b8272b530d1b2598f117b80048deaab7cad5bb76d484e6acf1105d446ccb87f8",
+  "semantic_v6_png_sha256": "ea6fdf04bd912095b4430e4281f8e353bcaffa8a0cf8181b63bdbcb9b3454d30",
+  "final_bytes": 579264,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "registration": {
+    "scale": 0.8904593639575972,
+    "tx": 0,
+    "ty": 20.904593639575978
+  },
+  "guards": {
+    "white_pixels": 15994,
+    "near_pixels": 7631,
+    "far_actual_hard_pixels": 18756,
+    "released_far_collar_pixels": 183,
+    "outside_white_changed": 0,
+    "near_far_guard_changes": 0
+  },
+  "color": {
+    "actual_changed_pixels": 3636,
+    "G_changed_pixels": 3300,
+    "B_changed_pixels": 3636,
+    "R_changes": 0,
+    "alpha_changes": 0,
+    "old025_collar_changes": 0
+  },
+  "operations": [
+    {
+      "operation": "RESTORE_LOCKED025_real_upperarm_below_cuff_excluding_old_near_hand",
+      "pixels": 1347
+    },
+    {
+      "operation": "JOIN_original025_near_wrist_collar_rigid_plus6_plus3",
+      "pixels": 3780
+    },
+    {
+      "operation": "CLEAR_duplicate_upper_hand_line_same_call14_clean_skin_texture_patch_only",
+      "pixels": 799
+    },
+    {
+      "operation": "JOIN_original025_far_proximal_skin_collar_rigid_minus8_plus16",
+      "pixels": 2654
+    },
+    {
+      "operation": "CLEAR_duplicate_raw_match_in_air_outside_true_match_guard",
+      "pixels": 886
+    },
+    {
+      "operation": "RESTORE_original025_body_air_under_near_wrist",
+      "pixels": 334
+    },
+    {
+      "operation": "RESTORE_original025_near_forearm_upper_crossover_no_raw_extra_line",
+      "pixels": 892
+    },
+    {
+      "operation": "RESTORE_true025_proximal_near_forearm_no_extra_native_line",
+      "pixels": 1982
+    },
+    {
+      "operation": "CLEAR_shifted_blue_tail_to_original_body_air",
+      "pixels": 290
+    },
+    {
+      "operation": "CLEAR_single_stray_raw_interior_line_same_raw_skin_minus35_plus30",
+      "pixels": 85
+    },
+    {
+      "operation": "STITCH_22px_near_lower_skin_collar_original025_to_plus6_plus3_no_hand_warp",
+      "pixels": 475
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "Pillow": "12.3.0",
+    "NumPy": "2.3.5",
+    "SciPy": "1.17.0",
+    "zlib": "1.3.2"
+  },
+  "note": "Exact postprocess replay from preserved raw. Generation itself is not rerun. New-view lower-turn shading is not a claim of every skin pixel being within4 channels of000."
+}

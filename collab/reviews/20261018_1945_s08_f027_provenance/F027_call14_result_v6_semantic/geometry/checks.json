@@ -1,0 +1,101 @@
+{
+  "status": "SAME_RAW_SEMANTIC_CANDIDATE_NOT_LOCKED",
+  "candidate_sha256": "ea6fdf04bd912095b4430e4281f8e353bcaffa8a0cf8181b63bdbcb9b3454d30",
+  "native_call": 14,
+  "raw_sha256": "d3364d4e471f9259d2eaf79aea70ed69d4d6d33add96a76a0a0d8ebee2e13e17",
+  "uniform_registration": {
+    "scale": 0.8904593639575972,
+    "tx": 0,
+    "ty": 20.904593639575978
+  },
+  "new_native_calls": 0,
+  "operations": [
+    {
+      "operation": "RESTORE_LOCKED025_real_upperarm_below_cuff_excluding_old_near_hand",
+      "pixels": 1347
+    },
+    {
+      "operation": "JOIN_original025_near_wrist_collar_rigid_plus6_plus3",
+      "pixels": 3780
+    },
+    {
+      "operation": "CLEAR_duplicate_upper_hand_line_same_call14_clean_skin_texture_patch_only",
+      "pixels": 799
+    },
+    {
+      "operation": "JOIN_original025_far_proximal_skin_collar_rigid_minus8_plus16",
+      "pixels": 2654
+    },
+    {
+      "operation": "CLEAR_duplicate_raw_match_in_air_outside_true_match_guard",
+      "pixels": 886
+    },
+    {
+      "operation": "RESTORE_original025_body_air_under_near_wrist",
+      "pixels": 334
+    },
+    {
+      "operation": "RESTORE_original025_near_forearm_upper_crossover_no_raw_extra_line",
+      "pixels": 892
+    },
+    {
+      "operation": "RESTORE_true025_proximal_near_forearm_no_extra_native_line",
+      "pixels": 1982
+    },
+    {
+      "operation": "CLEAR_shifted_blue_tail_to_original_body_air",
+      "pixels": 290
+    },
+    {
+      "operation": "CLEAR_single_stray_raw_interior_line_same_raw_skin_minus35_plus30",
+      "pixels": 85
+    },
+    {
+      "operation": "STITCH_22px_near_lower_skin_collar_original025_to_plus6_plus3_no_hand_warp",
+      "pixels": 475
+    }
+  ],
+  "checks": {
+    "outside_white_changed": 0,
+    "far_CLOSED_HAND_JADE_AND_ALPHA0_SEAT_guard_changed": 0,
+    "near_HAND_MATCH_guard_changed": 0,
+    "actual_blue_cloth_guard_changed": 0,
+    "fixed_table_box_guard_changed": 0
+  },
+  "source025_sha256": "25e5ff2a37421bc90bbbaa3650e912def85d64fea1ee7a5cafa1a3c98f689cae",
+  "source023_true_hand_origin_sha256": "dc35d227078f37e18340635c95f721a5b8495ecbb87b802df51447d375987e47",
+  "far_from025": [
+    -8,
+    16
+  ],
+  "near_from025": [
+    6,
+    3
+  ],
+  "near_match_head": [
+    1082,
+    797
+  ],
+  "near_visible_wood_exit": [
+    1054,
+    834
+  ],
+  "visible_segment_only_px": 46.400431032480725,
+  "actual_knob_center": [
+    1233.9532049682696,
+    766.8943738423919
+  ],
+  "box_center": [
+    1100,
+    960
+  ],
+  "final_rgba_contains_reference_rod": false,
+  "local_pixel_repair_disclosure": [
+    "Source025 upperarm below unchanged cuff restored excluding old near-hand footprint.",
+    "Complete real hand/jade/alpha-zero seat and complete near-hand match remain protected original pixels.",
+    "Source025 proximal skin collar translated with far hand and blended only immediately beside true jade; no whole old forearm pasted.",
+    "Near lower wrist connector only22px wide is resampled from original025 skin toward its+6,+3 rigid hand placement; no hand, whole arm or sleeve warped.",
+    "Native stray interior lines cleaned using same-call14 actual skin texture sample; source sampling is documented in repair_f027_call14_v6.py.",
+    "All repair is within approved white mask. No global or local RGB correction applied."
+  ]
+}
