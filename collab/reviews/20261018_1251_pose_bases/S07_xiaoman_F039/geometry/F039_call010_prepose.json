@@ -1,0 +1,53 @@
+{
+  "status": "diagnostic pixel preposition only; builtin must repair anatomy and joins",
+  "source": "originals/F039_call_009.png",
+  "registration": {
+    "s": 0.2475,
+    "t": [
+      339.7325,
+      512.485
+    ]
+  },
+  "near_leg_and_shoe_native_translation": [
+    32,
+    -42
+  ],
+  "near_hand_native_translation": [
+    -43,
+    40
+  ],
+  "new_near_arm_target_source": {
+    "shoulder": [
+      1088,
+      565
+    ],
+    "elbow": [
+      1241,
+      661
+    ],
+    "wrist": [
+      1357,
+      594
+    ],
+    "palm": [
+      1395,
+      572
+    ]
+  },
+  "invariants": [
+    "head face far arm torso skirt and far leg outside effective mask locked",
+    "native source pixels and original alpha preserved outside effective mask",
+    "no head proportional scaling",
+    "phone remains separate stationary under hair"
+  ],
+  "required_builtin_repairs": [
+    "Reconnect near knee to skirt opening after whole near lower-leg/shoe move.",
+    "Redraw near sleeve opening, upper arm, elbow and forearm along guide into preposed hand.",
+    "Five-digit hand anatomy, continuous wrist, no guide lines."
+  ],
+  "allowed_mask": "masks/F039_call010_effective_allowed.png",
+  "source_masks": [
+    "masks/F039_call009_near_leg_source.png",
+    "masks/F039_call009_near_hand_source.png"
+  ]
+}

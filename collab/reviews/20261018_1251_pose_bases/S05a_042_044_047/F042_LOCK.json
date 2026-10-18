@@ -1,0 +1,15 @@
+{
+  "frame": 42,
+  "sha256": "3bf83f8ea45f79bfc491269a2104408941dbfb7993d82521dc653411feef8b3d",
+  "path": "final/S05a_F042.png",
+  "accepted_parent": 39,
+  "review": "Independent release/wait static gate passed 2026-10-18T12:35Z; opaque source rail alpha restored per reviewer before lock. Full motion still pending.",
+  "raws": [
+    "raw/call06_F042_release_wait.png",
+    "raw/call07_F042_rail_seam.png"
+  ],
+  "mask": "masks/F042_rail_seam_repair_mask.png",
+  "minimal_base": "candidates/F042_call06_complete_pending_review.png",
+  "reproduction": "compose_call07.py",
+  "alpha_rule": "keep entire call06 base alpha; composite only newly drawn RGB inside rail mask"
+}

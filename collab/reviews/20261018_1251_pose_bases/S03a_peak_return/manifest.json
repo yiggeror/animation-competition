@@ -1,0 +1,34 @@
+{
+  "fps": 24,
+  "total_shot_frames": 36,
+  "states": [
+    {
+      "frame": "017",
+      "hold": 4,
+      "path": "candidates/S03a_F017.png",
+      "sha256": "68137c119eeefdb1122b4251616dd271ae86cc24f03727b43c59934cde943346",
+      "status": "INDEPENDENT_STATIC_PASS__EXPOSURE_AND_COLOR_INTEGRATION_PENDING"
+    },
+    {
+      "frame": "025",
+      "hold": 3,
+      "path": "candidates/S03a_F025.png",
+      "sha256": "df75b8b564b5f142d3627f54ba04a884174d607cd151da15677f1ca525d645ec",
+      "status": "INDEPENDENT_STATIC_PASS__EXPOSURE_AND_COLOR_INTEGRATION_PENDING"
+    },
+    {
+      "frame": "028",
+      "hold": 8,
+      "path": "candidates/S03a_F028.png",
+      "sha256": "9820a29f0c42483d5b7a3a6d301a7b4c4fdbfd573b5e4f8e9d04bfd0e8a042ff",
+      "status": "INDEPENDENT_STATIC_PASS__EXPOSURE_AND_COLOR_INTEGRATION_PENDING"
+    }
+  ],
+  "caveats": [
+    "F017 visual peak may exceed designed30deg; rigid down22px accepted; no landmark snapping.",
+    "F025 reuses F014 approved whole-head volume; F028 reuses original-focus volume viaF011.",
+    "F021/F023 tail repair remains separate pending gate.",
+    "Warm turned lower face to original cooler front chin requires exposure color continuity gate; these are unchanged locked static originals.",
+    "All garment pixels match corrected F000 base. Foreground hand/melon remains separate and is not baked in."
+  ]
+}

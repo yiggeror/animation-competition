@@ -1,0 +1,94 @@
+{
+  "status": "production input layout guide, not approved drawing",
+  "source_original": "sources/anim_07_xiaoman_flop.png",
+  "diagnostic_source_mask": "masks/supine_source_diagnostic_only_mask.png",
+  "old_near_arm_erasure": "masks/F039_reference_old_near_arm_erase.png",
+  "whole_canvas_pad": [
+    1792,
+    1024
+  ],
+  "whole_source_uniform_factor": 0.8571428571428571,
+  "raster_canvas": [
+    1536,
+    1024
+  ],
+  "raster_top_padding": 73,
+  "production_world_registration": {
+    "uniform_scale": 0.2566666666666667,
+    "translate": [
+      350.72,
+      508.0233333333333
+    ]
+  },
+  "frozen_world_targets_unchanged": {
+    "head_center": [
+      635,
+      610
+    ],
+    "head_envelope_radii": [
+      34,
+      35
+    ],
+    "head_back_contact": [
+      661.1400000000001,
+      635.22
+    ],
+    "near_scapula": [
+      611.86,
+      663.38
+    ],
+    "near_shoulder_proxy": [
+      609.0,
+      652.38
+    ],
+    "far_shoulder_proxy": [
+      567.4200000000001,
+      619.38
+    ],
+    "hip_hidden_construct": [
+      532,
+      657
+    ],
+    "near_knee_hidden_construct": [
+      480,
+      665
+    ],
+    "far_knee_hidden_construct": [
+      485,
+      638
+    ],
+    "near_heel": [
+      399.56000000000006,
+      698.36
+    ],
+    "far_heel": [
+      397.14000000000004,
+      669.3199999999999
+    ],
+    "near_elbow_support": [
+      647,
+      676
+    ],
+    "far_elbow": [
+      539.48,
+      614.1
+    ],
+    "far_wrist": [
+      511.54,
+      598.48
+    ],
+    "near_wrist": [
+      675.5788383248864,
+      659.5
+    ],
+    "near_palm": [
+      685.1051177665153,
+      654.0
+    ]
+  },
+  "head_world_envelope": [
+    68,
+    70
+  ],
+  "note": "Pixel density/blank margin only. No local head/limb deformation. Actual silhouette/support must be freshly drawn and reviewed."
+}
