@@ -1,0 +1,50 @@
+{
+  "tool": "image_gen.imagegen",
+  "source_path": "/workspace/generated_images/exec-3210f2a6-138b-449c-b2ae-7567c2b3314d.png",
+  "retained_raw": "originals/F000_call01_raw.png",
+  "sha256": "57f14bae2b0e48cf35e0270f7d7384e28719897282bd1ff02b036ec429e52353",
+  "size": [
+    1672,
+    941
+  ],
+  "mode": "RGBA",
+  "raw_preserved_without_cleanup_or_registration": true,
+  "image_calls": 1,
+  "successful_outputs": 1,
+  "failed_tool_calls": 0,
+  "other_states_generated": false,
+  "opaque_components_alpha_ge128": [
+    {
+      "label": 1,
+      "pixels": 150739,
+      "bbox": [
+        0,
+        7,
+        1672,
+        941
+      ]
+    },
+    {
+      "label": 2,
+      "pixels": 103154,
+      "bbox": [
+        0,
+        211,
+        817,
+        487
+      ]
+    }
+  ],
+  "adult_child_opaque_outline_min_gap_px_raw": 19.209372712298546,
+  "adult_child_distinct_opaque_components": true,
+  "separate_small_components_pixels": 23445,
+  "separate_small_components_max_alpha": 6,
+  "contact_crop_native": [
+    580,
+    285,
+    960,
+    710
+  ],
+  "quality_status": "Raw image and real alpha-composited white/gray previews plus native grip2x inspected. Two opaque hand islands are separate with19.21px minimum gap; child thumbnail/opposition crevice and one shaft visible. Disconnected alpha speckles<=6 remain unmodified; awaiting Astra mother review.",
+  "low_alpha_high_chroma_pixels_including_legitimate_antialias": 15626
+}
