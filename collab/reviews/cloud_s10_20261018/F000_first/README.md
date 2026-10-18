@@ -1,5 +1,7 @@
 # S10 F000 首张实际输出 · 待 Astra 锁定
 
+本文件保留首张阶段的原始输出及检查。当前按Astra定向修复后的唯一锁母候选见 [../F000_repair/README.md](../F000_repair/README.md)；这里的原件及历史检查未替换。
+
 按 Astra 对 `8f129821` 的单张启动授权执行。**实际生图1次、原始输出1张、其他七态0次；没有进行后续派生。** 工具 `image_gen.imagegen` 已实际成功，底层模型名没有披露。
 
 原件：[`originals/F000_call01_raw.png`](originals/F000_call01_raw.png)，**1672×941 RGBA**，SHA256 `9f2ef4b461e74d96ee36a7e67acfafccf77446755b8545268113032e1c53dd4c`。与工具保留的 `/workspace/generated_images/exec-d0701a29-952c-4241-bba5-12bdf6399100.png` 逐字节同一份。未裁切、缩放、抠图清边或改色；未将技术骨架充当画稿。

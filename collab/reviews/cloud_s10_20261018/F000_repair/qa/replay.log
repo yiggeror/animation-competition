@@ -1,0 +1,5 @@
+register_donor.py
+Frozen local donor registration replayed; no original person pixels used from this output.
+
+compose.py
+{'status': 'assembled_pending_visual_check', 'candidate': 'candidate/F000_repaired.png', 'sha256': '0e231c39834a557ea73cc9af146b6ebf7c35dac4f160c83ae2242f270b0c07c6', 'new_pixel_range_y': [978, 1079], 'generated_pixels_adopted_above_y978': 0, 'changed_pixels_outside_authorized_mask': 0, 'all_RGBA_pixels_y0_977_identical_to_registered_clean_source': True, 'donor_uniform_registration_file': 'provenance/cloth_donor_registration.json', 'local_new_band_contour_adjustment': 'row-wise x mapping between donor alpha>=128 outline and continuation x=517-.47*(y-978), 1399+.47*(y-978); affects only new generated band', 'unblended_seam_RGB_absolute_delta_median': 5.0, 'unblended_seam_RGB_absolute_delta_mean': 8.520454545454545, 'new_band_colour_join': 'rows978-1025 only: add median blue-fabric RGB offset, excluding white petals and black contours, with quadratic weight (1-(y-978)/48)^2; original y<978 unchanged', 'blue_fabric_RGB_offset': [8.0, 2.0, 4.0], 'full_person_regeneration': False, 'new_pose_generation': False}

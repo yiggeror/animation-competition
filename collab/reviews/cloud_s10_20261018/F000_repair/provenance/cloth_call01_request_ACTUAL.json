@@ -1,0 +1,34 @@
+{
+  "tool": "image_gen.imagegen",
+  "underlying_model": "not disclosed",
+  "call": 1,
+  "purpose": "only lower chest narrow band y978-1079, same F000; no new pose",
+  "status": "executed_successfully_local_output_adopted_only_in_authorized_band",
+  "prepared_at_utc": "2026-10-18T14:10:04.267235+00:00",
+  "arguments": {
+    "prompt": "Edit this LOCAL CROP ONLY, extending an existing hand-drawn blue blouse downward into the empty transparent strip. This is a small clothing-continuation patch, not a new person or a new pose. No head or face is provided or requested. Do not draw a head, a face, arms, hands, a full person, new skin or new collar.\n\nKeep the SAME crop coordinate system, 1024 pixels wide by 256 pixels high, landscape. The attached crop contains finished existing blouse in rows 0 through 153; rows 154 through 255 are the missing strip. Keep the existing top 154 rows in place and unchanged for alignment. Continue only the missing blue-and-white flower blouse strip in the bottom 102 rows, without reframing, resizing, centering the subject or adding margins.\n\nAt row 154 the left blue-cloth contour is near x69 and the right contour near x951. Continue those same gentle outer shoulder/sleeve outlines downward so the left cloth edge reaches approximately x21 at the bottom and the right reaches approximately x999. Keep transparent space outside the two cloth contours. Keep the two outer contour lines thin and organic, smoothly joined to the lines already visible at the seam.\n\nContinue the same pale-medium blue fabric material colour, its very soft existing form shading, white five-petal flowers with small blue centers, and the existing central button-placket linework. Naturally finish the partial flower petals and any partial button/line at the upper join. Do not create a horizontal seam, a bottom hem, a duplicated collar, a new pocket, a large fold, a belt, text or a new prop. The blouse continues past the bottom edge of the crop. Flowers should look hand-drawn and compatible in size and spacing with those directly above the join, rather than a mechanically stretched last row.\n\nUse neutral balanced material colours with no scene lighting, spotlight, blue glow, orange rim, cast shadow or background. Transparent background. Return the same single local crop including the completed narrow cloth band only, without diagrams, text, insets, multiple views or a complete character.\n",
+    "referenced_image_paths": [
+      "/workspace/cloud-s10-review-20261018-1324/collab/reviews/cloud_s10_20261018/F000_repair/inputs/lower_chest_crop_1024x256.png"
+    ],
+    "transparent_background": true
+  },
+  "inputs": [
+    {
+      "path": "/workspace/cloud-s10-review-20261018-1324/collab/reviews/cloud_s10_20261018/F000_repair/inputs/lower_chest_crop_1024x256.png",
+      "sha256": "27beb943a0a0861b27cb9958e76192acdc3c0e75c1669c68dfd91fe5f67a96f8",
+      "role": "local upper-chest crop; no head or face; only bottom102 rows eligible for new cloth pixels"
+    }
+  ],
+  "max_authorized_band_calls": 1,
+  "full_character_regeneration": false,
+  "raw_outputs": [
+    {
+      "path": "originals/cloth_call01_raw.png",
+      "source_path": "/workspace/generated_images/exec-e50713ee-29fa-489b-bfee-66a6658e7453.png",
+      "sha256": "c1abd8732fbb8359a6fee02d1830e0fc53e555407341d6dd97bae9501f09071d",
+      "width": 2171,
+      "height": 724,
+      "mode": "RGBA"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "source": "F000_first/originals/F000_call01_raw.png",
+  "source_sha256": "9f2ef4b461e74d96ee36a7e67acfafccf77446755b8545268113032e1c53dd4c",
+  "source_size": [
+    1672,
+    941
+  ],
+  "canvas": [
+    1920,
+    1080
+  ],
+  "uniform_affine": [
+    [
+      0.918,
+      0,
+      171.0
+    ],
+    [
+      0,
+      0.918,
+      114.0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "inverse_affine_Pillow": [
+    1.0893246187363834,
+    0,
+    -186.27450980392157,
+    0,
+    1.0893246187363834,
+    -124.18300653594771
+  ],
+  "sampling": "one full-image RGBA affine BICUBIC, premultiplied alpha; no separate head transform",
+  "coordinate_notes": "continuous source coordinates; raster support varies up to filter footprint",
+  "anchors": {
+    "source_crown_y": 12,
+    "target_crown_y": 125.016,
+    "source_chin_y": 671,
+    "target_chin_y": 729.9780000000001
+  },
+  "original_bottom_continuous_y": 977.8380000000001,
+  "band_top": 978,
+  "band_bottom_inclusive": 1079,
+  "band_top_left_right": [
+    517,
+    1399
+  ],
+  "band_edge_dx_per_dy": 0.47,
+  "cloth_only_request_crop": [
+    448,
+    824,
+    1472,
+    1080
+  ],
+  "alpha_cleanup": {
+    "pixel_count": 2013,
+    "isolated_particle_pixels": 280,
+    "local_exterior_colour_pixels": 1868,
+    "maximum_alpha_removed": 10,
+    "source_RGB_changed_pixels": 0,
+    "source_alpha_above_24_changed_pixels": 0,
+    "protected_gray_black_hair_and_left_red_beads_changed_pixels": 0,
+    "method": "isolated non-main 4-connected components max alpha<=8, except protected gray/black hair and left red beads; plus exterior low alpha<=24 chroma>=60 >1.5px from alpha>=128 core, except protected areas",
+    "not_done": "no global alpha<128 cut; no 253/254 material alpha change; no face/neck RGB edits"
+  },
+  "band_generation_calls": 1,
+  "status": "prepared_source_preserved_with_local_band_candidate"
+}
