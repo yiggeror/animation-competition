@@ -1,0 +1,83 @@
+{
+  "status": "F052_ONLY_ACTUAL_INPUT_PREPARED_PENDING_AUTHOR_REVIEW_NO_CALL",
+  "mother048_SHA": "68ce16f14f9ea53f2c43c2c53f984a6a713b612f6aef28ab369780cb768695c9",
+  "context044_SHA": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+  "pure031_SHA": "5e39cda65ed11384debda248a3f6c1393ec2f16261d2da25cb7a4ccb40ef0862",
+  "preposition_SHA": "8e8af7803d640a7db14538db94268937ed83112fa4250476c2edb6cf56317a35",
+  "frame": 52,
+  "hold": 4,
+  "inclusive_frames": [
+    52,
+    55
+  ],
+  "whole_true_hand_torch_translation_from048_native": [
+    0,
+    54
+  ],
+  "absolute_from031_native": [
+    0,
+    22
+  ],
+  "relative_to042_native": [
+    0,
+    -37
+  ],
+  "rotation": 0,
+  "scale": 1,
+  "resampling": false,
+  "registration": {
+    "scale": 0.6297229219143576,
+    "translation_xy": [
+      241.2216624685139,
+      83.47607052896726
+    ],
+    "inverse_pillow_affine": [
+      1.588,
+      0,
+      -383.0600000000001,
+      0,
+      1.588,
+      -132.56
+    ]
+  },
+  "crop_xyxy": [
+    620,
+    240,
+    1240,
+    860
+  ],
+  "white_pixels": 74531,
+  "wrist_extraction_release_pixels": 90,
+  "wrist_release_plane": "abs((y-x)+463)<=7, actual proximal ROI and material, exact90; no grasp fingers/torch",
+  "actual_minimum_clear_native_rows": 37,
+  "actual_minimum_clear_registered_px": 23.29974811083123,
+  "cap_palm_opaque_overlap": 0,
+  "source052_rigid_foreground_RGBA_changes": 0,
+  "fixed_palm_RGBA_changes": 0,
+  "guard_intersections": {
+    "head_neck_collar_actual": 0,
+    "near_ruffle_ACTUAL048_material": 0,
+    "far_puff_actual_visible_except_new_foreground": 0,
+    "far_arm_actual_visible_except_new_foreground": 0,
+    "fixed_receiver_palm_actual_material": 0,
+    "pure_rigid_unit_except90_technical_wrist": 0,
+    "waist_skirt_actual_material": 0
+  },
+  "near_ruffle_actual_material_pixels": 6210,
+  "old044_ruffle_mask_actual048_RGBA_differences": 874,
+  "actual_source_skin_pixels_frozen_as_near_ruffle": 0,
+  "old_actual_neararm_uneditable_except_genuine_hard": 0,
+  "old_actual_neararm_in_guard": 975,
+  "outside_old_new_unit_changes": 0,
+  "source_snapshot_manifest": "sources/snapshot_manifest.json",
+  "two_routes": "geometry/two_source_routes_ACTUAL_NOT_IDENTICAL.json",
+  "new_image_calls": 0,
+  "F056_unopened": true,
+  "limits": [
+    "Old048 arm remains only inside whole WHITE redraw domain; no finished052 articulation claimed.",
+    "Only actual materials/AA protect; no alpha0 guard moat. Visible far layers can be occluded by new foreground neararm.",
+    "Cuff derived from actual048 yellow/white/ink material; old044ruffle is comparison only.",
+    "90pixel extraction edge release once is not permission to redraw fingers or flashlight.",
+    "Actual native output and048x4/052x4/056x2 exposure must pass later; no056 preparation yet."
+  ]
+}

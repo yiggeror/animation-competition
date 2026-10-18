@@ -1,0 +1,19 @@
+{
+  "status": "F052_NOT_PASSED_DO_NOT_USE_IN_EXPOSURE",
+  "reviewed_actual_pngs": [
+    "call01/qa/native_gray.png",
+    "call01/qa/strict_gray.png",
+    "call02/qa/strict_crop_gray.png",
+    "call02/qa/strict_crop_dark.png",
+    "qa/F052_complete_native_arm_crop_gray_TRIAL.png",
+    "qa/F052_complete_native_arm_crop_dark_TRIAL.png",
+    "qa/F052_wrist_3x_TRIAL.png",
+    "qa/F052_cuff_3x_TRIAL.png"
+  ],
+  "call01": "Rejected actual whole output: source torch shortened and lowered; strict mask disconnected wrist and duplicated prop.",
+  "call02": "Actual native1536x1024 whole local arm retained, uniform540x360 registration. DX0 has proximal wrist parallel ink and cuff cut. Whole local crop+3X improves wrist but shifts generated clothes/cuff/far-arm seams, so that trial also remains unaccepted. No limb segment warp or code-drawn body.",
+  "next_work": "Keep original048, pure031+22 unit, fixed palm, existing90px wrist release and entire arm white domain. Improve coherent native complete-arm extraction/registration and source cuff/clothing composition, or author a targeted whole-arm correction based on actual reviewed failure. Do not declare final052 or reuse056 until actual052passes.",
+  "F056_unopened": true,
+  "new_requests": 2,
+  "new_originals": 2
+}

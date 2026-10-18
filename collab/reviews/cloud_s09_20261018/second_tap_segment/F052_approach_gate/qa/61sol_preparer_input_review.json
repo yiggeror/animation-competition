@@ -1,0 +1,96 @@
+{
+  "reviewer": "cloud 6.1sol preparer actual-input check",
+  "status": "F052_SINGLE_INPUT_TECHNICAL_PASS_PENDING_ROOT_ACTUAL_REVIEW",
+  "scope": "F052 source-pixel preposition and whole neararm edit domain only; not generated art or exposure acceptance",
+  "authored_this_input": true,
+  "actual_viewed": [
+    "qa/F048_F052_actual_preposition_and_domain_gray.png",
+    "qa/F048_F052_actual_preposition_and_domain_dark.png",
+    "qa/actual_tailcap_fixed_palm_gap_gray.png",
+    "qa/ACTUAL048_near_ruffle_protection_dark.png"
+  ],
+  "source048_SHA": "68ce16f14f9ea53f2c43c2c53f984a6a713b612f6aef28ab369780cb768695c9",
+  "pure031_SHA": "5e39cda65ed11384debda248a3f6c1393ec2f16261d2da25cb7a4ccb40ef0862",
+  "preposition_SHA": "8e8af7803d640a7db14538db94268937ed83112fa4250476c2edb6cf56317a35",
+  "full_mask_SHA": "560dd17c57c940334e547633244c8468ef27a8597efd43921a498fbe5b59a076",
+  "crop_mask_SHA": "245c40e505ac04e4bb1243746fafc4a3a23e444ba59c4631e8bec27ccf9c1f60",
+  "white_pixels": 74531,
+  "crop_xyxy": [
+    620,
+    240,
+    1240,
+    860
+  ],
+  "findings": [
+    "主源真正pure031+22，逐RGBA等母048真实pure031−32整件下54，不重采样/旋转/缩放。",
+    "替代detached044+11实际3264RGBA不同，3136涉及非零alpha，pure>=240差280；此拆分/接合源只比较未采用，未将旧042近臂接料带进真握手。",
+    "完整旧近臂/未来近臂/旧筒腾空白域可重绘，预摆仍有旧臂残形属白域临时参考，不当完成动作。",
+    "实际048 near cuff黄料/白点/褶线重新辨别；未使用旧044 ruffle形体作为硬保。",
+    "固定真掌/头领/裙腰和真实近ruffle黑保，远袖/近端远臂允许未来近臂前景合理遮挡；不用隐藏整层alpha锁前景。",
+    "源近腕提取边只释放对应90px，实际平面/ROI/源映射齐；握指、拇指、掌、整筒其余材质保持。"
+  ],
+  "independent_checks": {
+    "actual_cap_palm_min_clear_native_rows": 37,
+    "actual_cap_palm_min_clear_registered_px": 23.29974811083123,
+    "cap_palm_opaque_overlap": 0,
+    "fixed_palm_RGBA_changes": 0,
+    "preposition_rigid_foreground_RGBA_changes": 0,
+    "outside_old_new_unit_RGBA_changes": 0,
+    "actual048_cuff_pixels": 6210,
+    "old044_cuff_mask_RGBA_diff_in048": 874,
+    "skin_frozen_as_cuff": 0,
+    "guards": {
+      "head_neck_collar_actual": {
+        "alpha0_guard_pixels": 0,
+        "edit_overlap": 0,
+        "old_actual_arm_overlap": 0
+      },
+      "near_ruffle_ACTUAL048_material": {
+        "alpha0_guard_pixels": 0,
+        "edit_overlap": 0,
+        "old_actual_arm_overlap": 0
+      },
+      "far_puff_actual_visible_except_new_foreground": {
+        "alpha0_guard_pixels": 0,
+        "edit_overlap": 0,
+        "old_actual_arm_overlap": 0
+      },
+      "far_arm_actual_visible_except_new_foreground": {
+        "alpha0_guard_pixels": 0,
+        "edit_overlap": 0,
+        "old_actual_arm_overlap": 0
+      },
+      "fixed_receiver_palm_actual_material": {
+        "alpha0_guard_pixels": 0,
+        "edit_overlap": 0,
+        "old_actual_arm_overlap": 0
+      },
+      "pure_rigid_unit_except90_technical_wrist": {
+        "alpha0_guard_pixels": 0,
+        "edit_overlap": 0,
+        "old_actual_arm_overlap": 975
+      },
+      "waist_skirt_actual_material": {
+        "alpha0_guard_pixels": 0,
+        "edit_overlap": 0,
+        "old_actual_arm_overlap": 0
+      }
+    },
+    "oldarm_hard_overlap_except_new_original_unit": 0,
+    "wrist_release_material_pixels": 90,
+    "wrist_release_edit_white_pixels": 90
+  },
+  "proof_paths": [
+    "geometry/two_source_routes_ACTUAL_NOT_IDENTICAL.json",
+    "geometry/wrist_release90_source_map.json",
+    "geometry/actual_cap_palm_gap_scan.json",
+    "sources/snapshot_manifest.json"
+  ],
+  "remaining_input_blockers": [],
+  "post_native_gate": [
+    "必须实际看完整新近臂/袖根/腕、旧衣片连续、真实手筒保真及固定掌，不能直接套硬保拼缝通过。",
+    "F056须待052实际成态通过后再复用已锁042并审048/052/056实际曝光。"
+  ],
+  "new_calls": 0,
+  "F056_unopened": true
+}

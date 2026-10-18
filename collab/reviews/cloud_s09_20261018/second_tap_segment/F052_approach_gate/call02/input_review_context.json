@@ -1,0 +1,34 @@
+{
+  "status": "CALL01_REJECTED_GEOMETRY_COMPLETE_ARM_REAUTHOR_LOCAL_INPUT",
+  "call01_original_sha256": "92a035155f140d6d449e19e44a2b3d3d8aaa77674546bd643fae0b4ecbe7867f",
+  "failure": [
+    "Whole native output shortened/lowered torch despite black source guard.",
+    "Strict original-domain composite exposes disconnected wrist and duplicate torch; trial explicitly rejected."
+  ],
+  "corrective_action": "Same original048-derived preposition and same whole052 white domain cropped to540x360. Native must reauthor complete arm, source rigid units remain original; no segmented limb transform.",
+  "crop_xyxy": [
+    620,
+    500,
+    1160,
+    860
+  ],
+  "new_generated_art": false,
+  "inputs": [
+    {
+      "path": "call02/inputs/F044_locked_same_local_crop.png",
+      "sha256": "4b2747470de0ec008a823a7c2a9318ffce5ba829902356aa7fb7d1479d64b08a"
+    },
+    {
+      "path": "call02/inputs/F048_locked_same_local_crop.png",
+      "sha256": "95c379814b89c5ab28d5dda45a91f2317e7d7c2f2356e2cea01bd39998da3f36"
+    },
+    {
+      "path": "call02/inputs/F052_local_whole_arm_WHITE.png",
+      "sha256": "d77150793db565018216931b15fb8e95d3ee75ac129bfdf4e5c9da550bb1f98e"
+    },
+    {
+      "path": "call02/inputs/F052_local_whole_arm_RGBA_NOT_ART.png",
+      "sha256": "a2a45d26dc41a9156c64e1307d2b6a8a50e140b9fd787380c9724b92d1df771c"
+    }
+  ]
+}
