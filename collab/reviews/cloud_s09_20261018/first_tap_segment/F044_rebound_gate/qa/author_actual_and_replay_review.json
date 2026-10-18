@@ -1,0 +1,60 @@
+{
+  "status": "AUTHOR_ACTUAL_IMAGE_AND_10FRAME_SOURCE_SEQUENCE_PASS_ASTRA_FINAL_GATE_PENDING",
+  "actual_visual_images": [
+    "qa/F044_complete_local_native_arm_crop_gray.png",
+    "qa/F044_complete_local_native_arm_crop_dark.png",
+    "exposure/actual_decoded_0_1_2_5_6_9.png"
+  ],
+  "author_visual_findings": [
+    "One complete near arm joins original ruffle and source wrist; strict partial-mask seam candidate withdrawn.",
+    "Genuine rigid flashlight remains switchOFF/dark, cap separated from stationary receiving palm.",
+    "Original face/gaze/head and original palm do not follow the moving torch.",
+    "Near arm covers the original far puff; no rear cuff ink crosses the foreground skin.",
+    "Actual10f decoded shows contact→small rebound→same raised anticipation pose recovery."
+  ],
+  "replay_files_before": {
+    "collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/candidate/F044_complete_local_native_arm_PENDING_ASTRA.png": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+    "collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/candidate/F044_complete_native_arm_rigid_fit_TRIAL.png": "d27df66ed0774596765d254a09c15fd487f76ca1dcb34e15ef2ea5a24a8be3b8",
+    "collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/connection_call02/qa/native_whole_crop_uniform_alignment.png": "3c623923098cd85dff798b2cd095b2722d383cffe4e5b411c72ca671c74af4fa",
+    "collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/exposure/S09_F042x2_F044x4_F048x4_actual_layer_24fps_PENDING.mp4": "4b9df6824c0edd1f9f4a47e991fda0e023506a07571a53001e1925de7fca1f02"
+  },
+  "replay_files_after": {
+    "collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/candidate/F044_complete_local_native_arm_PENDING_ASTRA.png": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+    "collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/candidate/F044_complete_native_arm_rigid_fit_TRIAL.png": "d27df66ed0774596765d254a09c15fd487f76ca1dcb34e15ef2ea5a24a8be3b8",
+    "collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/connection_call02/qa/native_whole_crop_uniform_alignment.png": "3c623923098cd85dff798b2cd095b2722d383cffe4e5b411c72ca671c74af4fa",
+    "collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/exposure/S09_F042x2_F044x4_F048x4_actual_layer_24fps_PENDING.mp4": "4b9df6824c0edd1f9f4a47e991fda0e023506a07571a53001e1925de7fca1f02"
+  },
+  "all_replayed_selected_artifacts_SHA_identical": true,
+  "raw_returns": [
+    {
+      "archive": "collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/originals/F044_call01_raw.png",
+      "sha256": "3d0561f41e8dadd5f318ae51b9b732f8ddc6d3835217ee009d4cc45482fc25a4",
+      "raw_return_sha256": "8bd242f27a5db36bd2215572f6063c80a035fa20d9afad12a53d1e006c323a6f",
+      "base64_equals_archive": true,
+      "native_size": [
+        1254,
+        1254
+      ],
+      "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-5f48be80-0984-4ae5-a337-d79a8f5bed7f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "archive": "collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/connection_call02/originals/F044_call02_raw.png",
+      "sha256": "4c29d29c3ce35c4b961a1ccfd957cd97e76db980d2650c2cf303d720439e2b2b",
+      "raw_return_sha256": "91a6dea8913ad9a25404fb38c195dc98ed0cd92363f305619919cc7940701f4a",
+      "base64_equals_archive": true,
+      "native_size": [
+        1536,
+        1024
+      ],
+      "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-ee37d446-1317-46ad-b0a8-5541dd6be853.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ],
+  "native_image_requests": 2,
+  "native_image_originals": 2,
+  "S09_requests": 19,
+  "S09_originals": 18,
+  "F048_new_calls": 0,
+  "F048_tolerance_pending_ASTRA": "+2.304785894px vs nominal55; true locked037 artwork reuse, not a generated new048",
+  "F052_F056_paused": true,
+  "limits": "Author static and isolated10frame review, not Astra lock, exact physical bone-length measurement, actual scene/camera composite, whole96f shot or audio acceptance."
+}

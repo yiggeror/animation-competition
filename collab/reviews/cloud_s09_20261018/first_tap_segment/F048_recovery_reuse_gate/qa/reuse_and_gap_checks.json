@@ -1,0 +1,21 @@
+{
+  "status": "TRUE_EXISTING_POSE_REUSE_PENDING_ASTRA_TOLERANCE_REVIEW",
+  "source_frame": 37,
+  "source_sha256": "68ce16f14f9ea53f2c43c2c53f984a6a713b612f6aef28ab369780cb768695c9",
+  "candidate_sha256": "68ce16f14f9ea53f2c43c2c53f984a6a713b612f6aef28ab369780cb768695c9",
+  "frame": 48,
+  "hold": 4,
+  "inclusive_frames": [
+    48,
+    51
+  ],
+  "new_image_calls": 0,
+  "new_originals": 0,
+  "whole_image_RGBA_changes": 0,
+  "source_locked_geometry_registration_unchanged": true,
+  "desired_gap_registered_approx": 55,
+  "actual_source_gap_native_rows": 91,
+  "actual_source_gap_registered_px": 57.304785894206546,
+  "difference_vs_nominal55_registered_px": 2.304785894206546,
+  "rationale": "Recovery returns to the same previously locked raised anticipation pose. Reuse the genuine whole artwork, with the same original hand/torch, fixed palm, head/gaze and character; no code-drawn limb or part warp. Report actual57.3048 rather than claim exact55. Astra must accept the +2.3048px tolerance or request new native048; not silently exact."
+}

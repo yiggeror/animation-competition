@@ -1,0 +1,36 @@
+{
+  "status": "ACTUAL_F044_CONNECTION_REPAIR_INPUT_READY_NOT_CALLED",
+  "source_trial_sha256": "d27df66ed0774596765d254a09c15fd487f76ca1dcb34e15ef2ea5a24a8be3b8",
+  "first_native_raw_sha256": "3d0561f41e8dadd5f318ae51b9b732f8ddc6d3835217ee009d4cc45482fc25a4",
+  "crop_xyxy": [
+    620,
+    500,
+    1160,
+    860
+  ],
+  "crop_size": [
+    540,
+    360
+  ],
+  "white_pixels": 18642,
+  "actual_input_hole_pixels": 7537,
+  "proximal_wrist_cut_material_released": 90,
+  "original_real_grip_except_cut_white_overlap": 0,
+  "fixed_palm_white_overlap": 0,
+  "native_F044_requests_before_this": 1,
+  "new_requests": 0,
+  "inputs": [
+    {
+      "path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/connection_call02/reference/F044_existing_arm_local_crop.png",
+      "sha256": "962f7958e62b404c1a3c424467103d49c457b7606cfb0e891c8ed1b098675362"
+    },
+    {
+      "path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/connection_call02/masks/F044_connection_crop_WHITE_EDIT.png",
+      "sha256": "1d8fe2053393a83c887ca49cc1ad5b3effdeeeb3d73dc0b216cdf8af12c7ece6"
+    },
+    {
+      "path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/F042_contact_gate/astra_two_corridors_zero_call/candidate/F042_two_corridors_clean_PENDING_ASTRA.png",
+      "sha256": "52bb96f9796878bbb9c928ad80c5af6b5a0580ad9f9c651384446f0caadd3f8f"
+    }
+  ]
+}

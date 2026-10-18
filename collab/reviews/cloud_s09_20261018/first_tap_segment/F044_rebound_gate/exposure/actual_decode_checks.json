@@ -1,0 +1,139 @@
+{
+  "status": "10FRAME_ACTUAL_PNG_EXPOSURE_DECODED_PENDING_VISUAL_REVIEW",
+  "sources": {
+    "42": {
+      "path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/F042_contact_gate/astra_two_corridors_zero_call/candidate/F042_two_corridors_clean_PENDING_ASTRA.png",
+      "sha256": "52bb96f9796878bbb9c928ad80c5af6b5a0580ad9f9c651384446f0caadd3f8f",
+      "native_canvas": [
+        1672,
+        941
+      ]
+    },
+    "44": {
+      "path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/F044_rebound_gate/candidate/F044_complete_local_native_arm_PENDING_ASTRA.png",
+      "sha256": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+      "native_canvas": [
+        1672,
+        941
+      ]
+    },
+    "48": {
+      "path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/F048_recovery_reuse_gate/candidate/F048_recovery_TRUE_LOCKED_F037_REUSE_PENDING_ASTRA.png",
+      "sha256": "68ce16f14f9ea53f2c43c2c53f984a6a713b612f6aef28ab369780cb768695c9",
+      "native_canvas": [
+        1672,
+        941
+      ]
+    }
+  },
+  "sequence": [
+    42,
+    42,
+    44,
+    44,
+    44,
+    44,
+    48,
+    48,
+    48,
+    48
+  ],
+  "fps": 24,
+  "no_tween": true,
+  "no_audio": true,
+  "isolated_PNG_not_full_scene_or_film": true,
+  "registration": {
+    "scale": 0.6297229219143576,
+    "translation_xy": [
+      241.2216624685139,
+      83.47607052896726
+    ],
+    "inverse_pillow_affine": [
+      1.588,
+      0,
+      -383.0600000000001,
+      0,
+      1.588,
+      -132.56
+    ]
+  },
+  "video_sha256": "4b9df6824c0edd1f9f4a47e991fda0e023506a07571a53001e1925de7fca1f02",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "24/1",
+        "duration": "0.416667",
+        "nb_frames": "10"
+      }
+    ]
+  },
+  "all_decoded_frames": [
+    {
+      "clip_frame": 0,
+      "expected": 42,
+      "actual_closest_source": 42,
+      "RGB_MAE": 0.7522735821759259
+    },
+    {
+      "clip_frame": 1,
+      "expected": 42,
+      "actual_closest_source": 42,
+      "RGB_MAE": 0.7512912326388889
+    },
+    {
+      "clip_frame": 2,
+      "expected": 44,
+      "actual_closest_source": 44,
+      "RGB_MAE": 0.7724207899305555
+    },
+    {
+      "clip_frame": 3,
+      "expected": 44,
+      "actual_closest_source": 44,
+      "RGB_MAE": 0.772339771412037
+    },
+    {
+      "clip_frame": 4,
+      "expected": 44,
+      "actual_closest_source": 44,
+      "RGB_MAE": 0.7733532262731482
+    },
+    {
+      "clip_frame": 5,
+      "expected": 44,
+      "actual_closest_source": 44,
+      "RGB_MAE": 0.773199146412037
+    },
+    {
+      "clip_frame": 6,
+      "expected": 48,
+      "actual_closest_source": 48,
+      "RGB_MAE": 0.7820855034722223
+    },
+    {
+      "clip_frame": 7,
+      "expected": 48,
+      "actual_closest_source": 48,
+      "RGB_MAE": 0.7820656105324074
+    },
+    {
+      "clip_frame": 8,
+      "expected": 48,
+      "actual_closest_source": 48,
+      "RGB_MAE": 0.7825708912037037
+    },
+    {
+      "clip_frame": 9,
+      "expected": 48,
+      "actual_closest_source": 48,
+      "RGB_MAE": 0.7824327256944444
+    }
+  ],
+  "max_MAE": 0.7825708912037037,
+  "F048_authentic_source_reuse_not_new_generation": true
+}

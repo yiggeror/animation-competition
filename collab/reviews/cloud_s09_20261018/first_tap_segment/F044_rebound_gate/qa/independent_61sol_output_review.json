@@ -1,0 +1,206 @@
+{
+  "reviewer": "cloud 6.1sol independent",
+  "status": "LIMITED_PASS_F044_STATIC_AND_10F_EXPOSURE_FOR_ASTRA_REVIEW",
+  "candidate": "candidate/F044_complete_local_native_arm_PENDING_ASTRA.png",
+  "candidate_sha256": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+  "scope": "F044静态近臂/双端连接、远袖层次、固定掌与真实手筒材质；F042x2→F044x4→F048x4独立人物层10f曝光。不是整镜通过或代Astra锁定。",
+  "actual_viewed_paths": [
+    "qa/F044_complete_local_native_arm_crop_gray.png",
+    "qa/F044_complete_local_native_arm_crop_dark.png",
+    "exposure/actual_decoded_0_1_2_5_6_9.png",
+    "/tmp/s09_044_independent_decoded_0_2_6_9.png",
+    "/tmp/s09_F044_wrist_actual_source_comparison.png"
+  ],
+  "visible_findings": [
+    "近袖褶口→完整近上臂→肘→前臂→握手连续；未见贯穿腕白缝、双cuff弧或游离旧线造成的明确断接。",
+    "近臂居远圆袖和远前臂前方，远袖下口到左掌保持可读，未见穿体或新手影。",
+    "高倍腕缘可见约1–2native像素小墨阶及低对比斜向接料色差，实际720输出未形成裂口；本次有限审查不列结构阻断。",
+    "实解码clip0/2/6/9可读为尾盖触掌→独立离掌回弹→回到已锁蓄势pose；无额外触掌/双筒、明显肤色闪跳或头衣漂。"
+  ],
+  "material_checks": {
+    "pure_fixed_palm": {
+      "mask_pixels": 14869,
+      "rgba_changed_pixels": 0
+    },
+    "original_near_ruffle": {
+      "mask_pixels": 6014,
+      "rgba_changed_pixels": 0
+    },
+    "actual_torch_below_y590": {
+      "material_pixels": 6054,
+      "rgba_changed_pixels": 0
+    },
+    "unit_alpha255": {
+      "pixels": 657,
+      "rgba_changed_pixels": 17
+    },
+    "unit_alpha_ge240": {
+      "pixels": 39066,
+      "rgba_changed_pixels": 103
+    },
+    "recovery48": {
+      "sha256": "68ce16f14f9ea53f2c43c2c53f984a6a713b612f6aef28ab369780cb768695c9",
+      "source37_sha256": "68ce16f14f9ea53f2c43c2c53f984a6a713b612f6aef28ab369780cb768695c9",
+      "byte_equal_source37": true
+    },
+    "explicit_technical_wrist_release_pixels": 90,
+    "unit_alpha255_except_explicit_release": {
+      "pixels": 640,
+      "rgba_changed_pixels": 0
+    },
+    "unit_alpha_ge240_except_explicit_release": {
+      "pixels": 38976,
+      "rgba_changed_pixels": 13
+    }
+  },
+  "independently_decoded_video": {
+    "video_sha256": "4b9df6824c0edd1f9f4a47e991fda0e023506a07571a53001e1925de7fca1f02",
+    "probe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 1280,
+          "height": 720,
+          "coded_width": 1280,
+          "coded_height": 720,
+          "closed_captions": 0,
+          "film_grain": 0,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 31,
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "24/1",
+          "time_base": "1/12288",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 5120,
+          "duration": "0.416667",
+          "bit_rate": "1610649",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "10",
+          "extradata_size": 46,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc61.19.101 libx264"
+          }
+        }
+      ]
+    },
+    "count": 10,
+    "classification": [
+      {
+        "clip_frame": 0,
+        "expected": 42,
+        "closest": 42,
+        "mae": 0.7522735821759259
+      },
+      {
+        "clip_frame": 1,
+        "expected": 42,
+        "closest": 42,
+        "mae": 0.7512912326388889
+      },
+      {
+        "clip_frame": 2,
+        "expected": 44,
+        "closest": 44,
+        "mae": 0.7724207899305555
+      },
+      {
+        "clip_frame": 3,
+        "expected": 44,
+        "closest": 44,
+        "mae": 0.772339771412037
+      },
+      {
+        "clip_frame": 4,
+        "expected": 44,
+        "closest": 44,
+        "mae": 0.7733532262731482
+      },
+      {
+        "clip_frame": 5,
+        "expected": 44,
+        "closest": 44,
+        "mae": 0.773199146412037
+      },
+      {
+        "clip_frame": 6,
+        "expected": 48,
+        "closest": 48,
+        "mae": 0.7820855034722223
+      },
+      {
+        "clip_frame": 7,
+        "expected": 48,
+        "closest": 48,
+        "mae": 0.7820656105324074
+      },
+      {
+        "clip_frame": 8,
+        "expected": 48,
+        "closest": 48,
+        "mae": 0.7825708912037037
+      },
+      {
+        "clip_frame": 9,
+        "expected": 48,
+        "closest": 48,
+        "mae": 0.7824327256944444
+      }
+    ],
+    "all_expected": true,
+    "max_mae": 0.7825708912037037,
+    "source_candidate_sha256": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9"
+  },
+  "recovery48_numeric_limit": {
+    "same_locked37_original_bytes": true,
+    "actual_gap_native": 91,
+    "registered_gap": 57.30478589420654,
+    "nominal_registered_gap": 55,
+    "excess_registered_px": 2.30478589420654,
+    "judgment": "真实回到已锁037蓄势pose的候选无可见因果/形态阻断。未满足精确55数值；需向Astra显式保留该2.3048px差值，不代其裁定容差。"
+  },
+  "blocking_findings": [],
+  "not_claimed": [
+    "不把90px技术腕截口释放称手筒整件每像素0变化；其余高alpha腕AA也有13px自然叠合差异。",
+    "不声称F048新画、精确55间隙已通过或整S09镜头ready。"
+  ],
+  "new_generation_calls_by_reviewer": 0,
+  "other_source_files_modified_by_reviewer": false
+}

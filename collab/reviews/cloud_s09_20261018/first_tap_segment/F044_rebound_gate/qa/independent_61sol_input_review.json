@@ -1,0 +1,152 @@
+{
+  "status": "PASS_LIMITED_F044_INPUT_GATE_FOR_AUTHOR_NATIVE_CALL_NOT_FINISHED_ARM",
+  "mother_sha256": "52bb96f9796878bbb9c928ad80c5af6b5a0580ad9f9c651384446f0caadd3f8f",
+  "preposition_sha256": "15ce2bdace2a82c8de15d640ef5ed2daa043f6ebc441952ed0d813653c0ac817",
+  "mask_sha256": "dd6c169aa8b14936195819269de5ad9453bcdfef8b09d5359aaf700911626b2a",
+  "actual_views": [
+    "qa/F042_F044_actual_preposition_and_whole_arm_domain_gray.png refreshed this review",
+    "qa/actual_tailcap_fixed_palm_separation_gray.png previously actual-viewed same unchanged preposition",
+    "qa/actual_tailcap_fixed_palm_separation_dark.png previously actual-viewed same unchanged preposition"
+  ],
+  "independent_checks": {
+    "mother52bb_sha_match": true,
+    "whole_unit_vs_exact48up_RGBA_changes": 0,
+    "preposition_rigid_material_vs_exact_layer_RGBA_changes": 0,
+    "receiving_palm_vs_pure037_RGBA_changes": 0,
+    "old_near_arm_actual_material_not_white": 0,
+    "rigid_real_material_WHITE_intersection": 0,
+    "wrist_cut_neighbor_nonmaterial_pixels": 84,
+    "wrist_cut_neighbor_nonmaterial_not_white": 0,
+    "up48_registered_px": 30.226700251889167,
+    "minimum_actual_cap_palm_clear_rows": 48,
+    "minimum_clear_registered_px": 30.226700251889167
+  },
+  "manual_old_arm_and_wrist_probes": [
+    {
+      "xy": [
+        710,
+        680
+      ],
+      "white_edit": true,
+      "true_new_grip_material": false
+    },
+    {
+      "xy": [
+        750,
+        692
+      ],
+      "white_edit": true,
+      "true_new_grip_material": false
+    },
+    {
+      "xy": [
+        805,
+        717
+      ],
+      "white_edit": true,
+      "true_new_grip_material": false
+    },
+    {
+      "xy": [
+        848,
+        734
+      ],
+      "white_edit": true,
+      "true_new_grip_material": false
+    },
+    {
+      "xy": [
+        900,
+        699
+      ],
+      "white_edit": true,
+      "true_new_grip_material": false
+    },
+    {
+      "xy": [
+        959,
+        648
+      ],
+      "white_edit": true,
+      "true_new_grip_material": false
+    },
+    {
+      "xy": [
+        1015,
+        611
+      ],
+      "white_edit": true,
+      "true_new_grip_material": false
+    },
+    {
+      "xy": [
+        1034,
+        631
+      ],
+      "white_edit": true,
+      "true_new_grip_material": false
+    },
+    {
+      "xy": [
+        1049,
+        613
+      ],
+      "white_edit": true,
+      "true_new_grip_material": false
+    },
+    {
+      "xy": [
+        1005,
+        530
+      ],
+      "white_edit": true,
+      "true_new_grip_material": false
+    },
+    {
+      "xy": [
+        1018,
+        548
+      ],
+      "white_edit": true,
+      "true_new_grip_material": false
+    },
+    {
+      "xy": [
+        1033,
+        565
+      ],
+      "white_edit": true,
+      "true_new_grip_material": false
+    },
+    {
+      "xy": [
+        1046,
+        574
+      ],
+      "white_edit": true,
+      "true_new_grip_material": false
+    }
+  ],
+  "axis_reference": {
+    "source": "Existing same authentic031/042 physical prop manualaxis, preserved by exact wholeunit integer translation. Not remeasured from rectangular imagebbox.",
+    "length_native": 376.00132978488256,
+    "length_registered": 236.77665603582022,
+    "approx_measurement_uncertainty_native": 8,
+    "new_scale_rotation_warp": false
+  },
+  "physical_source_AA_note": {
+    "cap_contactAA_pixels_restored_from_same031_object": 93,
+    "original_palm_contactAA_pixels_restored_from_pure037": 283,
+    "meaning": "Pure original cap/receiver layers separated instead of translating flattened skin with the cap. No recolor or new outline."
+  },
+  "frame_and_hold": [
+    44,
+    4
+  ],
+  "visual_conclusion": "Rigid full hand/torch remains at same angle and proportions; actual tailcap separated from stationary palm by intended rebound gap. Whole old neararm and wrist-neighbor repair domain are white, genuine material only is black; no transparentguard moat found at extraction boundary.",
+  "limits": [
+    "Input-only approval: apparent old severed arm in preposition is obsolete fullwhite silhouette, not an accepted pose or seam-only drawing guide.",
+    "Author must inspect actual complete neararm/cuff/wrist/remote sleeve layering after the unique044 call, then actual042x2→044x4 exposure.",
+    "No044 generation or prepare.py edits by reviewer;048 waits,052/056paused."
+  ]
+}
