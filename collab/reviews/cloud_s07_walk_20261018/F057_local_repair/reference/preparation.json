@@ -1,0 +1,166 @@
+{
+  "status": "PREPARED_NOT_EXECUTED_PENDING_G037_SCALE_SOURCE",
+  "source_raw_sha256": "2aa447312ca2e598a009987a4a44b561824c382338328c20f47b6169c37bcb9f",
+  "source_native_size": [
+    1672,
+    941
+  ],
+  "working_native_canvas": [
+    1672,
+    1024
+  ],
+  "padding": "83transparent rows at bottom only; original pixels never rescaled",
+  "approval": "Astra passed counterphase arm reference v2, authorizes necessary singleF057 local repair only; all other10 remain unapproved. S09 repair completed before this preparation.",
+  "provisional_registration": {
+    "s": 0.3952631578947368,
+    "tx": 601.1007168750587,
+    "ty": 399.3640426868497,
+    "head_target": 75.1,
+    "head_center_world": [
+      929.9596642434797,
+      442.447726897376
+    ],
+    "warning": "Head190manual and75.1construction remain provisional until G037 standing source. Do not generate before rechecking."
+  },
+  "targets_world": {
+    "hip": [
+      912,
+      616
+    ],
+    "far_hip": [
+      905,
+      617
+    ],
+    "near_knee": [
+      943.3157522187093,
+      687.437550790718
+    ],
+    "far_knee": [
+      899.5041477116611,
+      694.8061411947975
+    ],
+    "near_ankle": [
+      929,
+      758
+    ],
+    "far_ankle": [
+      865,
+      758
+    ],
+    "near_sole_y": 775,
+    "far_sole_y": 775,
+    "far_wrist": [
+      942,
+      623
+    ],
+    "far_elbow": [
+      932,
+      566
+    ],
+    "far_shoulder_proxy": [
+      917,
+      506
+    ]
+  },
+  "targets_native": {
+    "hip": [
+      786.5627668939928,
+      548.0803181025108
+    ],
+    "far_hip": [
+      768.8530465211566,
+      550.6102781557731
+    ],
+    "near_knee": [
+      865.7903690451882,
+      728.8144679059251
+    ],
+    "far_knee": [
+      754.9487597730288,
+      747.4567072770984
+    ],
+    "near_ankle": [
+      829.5720877994522,
+      907.3346456657598
+    ],
+    "far_ankle": [
+      667.6546443906639,
+      907.3346456657598
+    ],
+    "far_wrist": [
+      862.4615684918623,
+      565.790038475347
+    ],
+    "far_elbow": [
+      837.1619679592392,
+      421.5823154393949
+    ],
+    "far_shoulder_proxy": [
+      799.2125671603044,
+      269.7847122436559
+    ]
+  },
+  "hip_variation": "Hip912,616 instead of898,613 construction;14pxforward/3down proposal to fit actual unchanged blouse. Needs real support/near-foot transfer inspection, not a numeric physics claim.",
+  "far_wrist_variation": "Target942,623 is13pxforward of929reference to leave actual wrist/bangle clear at the fixed blouse/pants edge. Under this provisional head-y registration original wrist is~992,587 (earlier floor-only diagnostic was~992,602). Explicit actual-cloth clearance gate, not a torso penetration exemption.",
+  "fragment_operations": [
+    {
+      "part": "near complete leg",
+      "rotation_degrees": 21,
+      "origin": [
+        812,
+        555
+      ],
+      "destination": [
+        790,
+        575
+      ],
+      "scale": 1
+    },
+    {
+      "part": "far complete leg",
+      "rotation_degrees": -2,
+      "origin": [
+        780,
+        555
+      ],
+      "destination": [
+        760,
+        575
+      ],
+      "scale": 1
+    },
+    {
+      "part": "near shoe",
+      "translation": [
+        -137.42791220054778,
+        35.3439665712192
+      ],
+      "rotation_degrees": 0,
+      "scale": 1
+    },
+    {
+      "part": "far shoe",
+      "translation": [
+        -10.345355609336139,
+        39.3439665712192
+      ],
+      "rotation_degrees": 0,
+      "scale": 1
+    },
+    {
+      "part": "far whole arm",
+      "translation": [
+        -125.5384315081377,
+        90.79003847534705
+      ],
+      "rotation_degrees": 0,
+      "scale": 1
+    }
+  ],
+  "preposition_limits": "All pieces are real raw pixels, NOT adopted art. Deliberate hip/knee/ankle and sleeve gaps must be natively reconstructed over full chains; do not use piece placement as anatomy validation or move only shoes.",
+  "preposition_outside_edit_pixel_changes": 0,
+  "preposition_protected_head_body_near_arm_pixel_changes": 0,
+  "new_native_calls": 0,
+  "other10_calls": 0,
+  "G037_source": "not yet present in fetched shared commit3f4c2f187daaeacc6b26e26260e426823f2fa6ad; grandma delivered through028 there"
+}
