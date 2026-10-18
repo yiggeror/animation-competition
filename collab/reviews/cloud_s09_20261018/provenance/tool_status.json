@@ -1,15 +1,16 @@
 {
-  "phase": "reference_before_freeze",
+  "phase": "F000_single_image_returned_mother_pending_Astra",
   "environment": "ready",
-  "tools_used": ["git read/fetch/unique branch", "Python Pillow source read", "Matplotlib technical references", "view_image actual image inspection"],
+  "tools_used": ["git read/fetch/unique branch", "Python Pillow source read and uniform registration", "Matplotlib technical references", "view_image actual image inspection", "image_gen.imagegen one F000 request"],
   "image_generation_tool_exposed": "image_gen.imagegen",
-  "image_generation_invocations": 0,
-  "image_generation_success_verified": false,
-  "raw_generated_outputs": 0,
+  "image_generation_invocations": 1,
+  "image_generation_success_verified": true,
+  "raw_generated_outputs": 1,
   "accepted_character_drawings": 0,
   "technical_reference_rasters_are_character_drawings": false,
   "render_invocations": 0,
   "additional_cloud_model": "gpt-6.1-sol",
   "additional_cloud_task": "s09_motion_audit_61sol",
-  "next_gate": "Astra explicit reference freeze, then one real d01 drawing and actual structural review"
+  "next_gate": "Astra actual F000 image/registration review and mother-frame lock; other 17 states remain paused",
+  "current_delivery": "F000_first_image/README.md"
 }

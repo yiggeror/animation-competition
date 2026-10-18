@@ -1,0 +1,84 @@
+{
+  "status": "TECHNICAL_ARTIFACT_CHECKS_PASS_NOT_MOTHER_FRAME_APPROVAL",
+  "request_count": 1,
+  "raw_output_count": 1,
+  "locked_mothers": 0,
+  "original_base64_decode_and_native_file_match": true,
+  "registration_reproduces_exact_RGBA_pixels": true,
+  "protected_prior_files_unchanged": 42,
+  "other17_generated": 0,
+  "decoded_images": [
+    {
+      "path": "candidate/F000_registered_v1.png",
+      "size": [
+        1536,
+        864
+      ],
+      "mode": "RGBA",
+      "sha256": "bf472e0fea708c034902716ef951bed3ecceaf3f9be0b4c28452c75d517510a0"
+    },
+    {
+      "path": "originals/F000_call01_raw.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "sha256": "a71ef8759bfa9e907da65c8f15c147a39c4d79d1f91e402a38f49ba0850209e4"
+    },
+    {
+      "path": "qa/raw_coordinate_grid.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "7e37f7f79addb129b15dbe3b0408ba89ce8cc6c47fe70807eace790539823f39"
+    },
+    {
+      "path": "qa/raw_hands_neutral_bg.png",
+      "size": [
+        460,
+        360
+      ],
+      "mode": "RGB",
+      "sha256": "2e0e0d64318e5f122a8bcd46064f7fde93b2349f83b91cbe8e34d75a50577c88"
+    },
+    {
+      "path": "qa/raw_head_neutral_bg.png",
+      "size": [
+        500,
+        510
+      ],
+      "mode": "RGB",
+      "sha256": "1827bf873748155c708014042e08f011191ee3ca80ebe776a718f6fefac97c5e"
+    },
+    {
+      "path": "qa/registered_dark_bg.png",
+      "size": [
+        1536,
+        864
+      ],
+      "mode": "RGB",
+      "sha256": "f48c48f0e0370e258f7c92f625ea3c71d64d16c2056be454eec8ccd6b7897f6a"
+    },
+    {
+      "path": "qa/registered_light_bg.png",
+      "size": [
+        1536,
+        864
+      ],
+      "mode": "RGB",
+      "sha256": "6be3ffee8606044bab4cae02ef7c3faa8481720d7bdf12811f2ff3893aa572b4"
+    },
+    {
+      "path": "qa/registered_reference_overlay.png",
+      "size": [
+        1536,
+        864
+      ],
+      "mode": "RGB",
+      "sha256": "21c33fe4975fa2c0a1d41b71078e5901bdc48507d766555dccd4800cd0283bb6"
+    }
+  ]
+}

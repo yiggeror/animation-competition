@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen",
+  "model_name": "not reported by native tool",
+  "requests": 1,
+  "raw_outputs": 1,
+  "raw_tool_return": "request/tool_raw_return.json",
+  "raw_image": "originals/F000_call01_raw.png",
+  "native_host_file": "/workspace/generated_images/exec-0691d306-3911-467d-a319-e3ca21888b57.png",
+  "raw_native_file_byte_identical": true,
+  "original_size": [
+    1672,
+    941
+  ],
+  "original_mode": "RGBA",
+  "original_sha256": "a71ef8759bfa9e907da65c8f15c147a39c4d79d1f91e402a38f49ba0850209e4",
+  "registration_candidate": "candidate/F000_registered_v1.png",
+  "candidate_status": "pending Astra, not locked",
+  "accepted_mother_frames": 0,
+  "other_states_generated": 0,
+  "reference_sources": [
+    {
+      "path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/reference/d01_F000_v2_full_canvas.png",
+      "sha256": "72457ee407f7e24bcefe96be548a5b4d88296aafaabcebe90d4da36c2f9db208",
+      "role": "approved_layout"
+    },
+    {
+      "path": "/workspace/animation-competition/collab/refs/xiaoman_turnaround_v4_draft.png",
+      "sha256": "816a5d7cfed7c220717ea80d9a9419290135d8543c4f87e4866d804132720d32",
+      "role": "identity_only"
+    },
+    {
+      "path": "/workspace/animation-competition/collab/refs/xiaoman_expressions_current03.png",
+      "sha256": "5df66be288683cb1c7e59ba9cd83105b515b7df28bd83fc8fdb159f80861cdee",
+      "role": "identity_only"
+    }
+  ],
+  "raw_return_contains_original_data_url": true
+}
