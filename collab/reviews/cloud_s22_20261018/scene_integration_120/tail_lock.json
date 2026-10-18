@@ -1,11 +1,15 @@
 {
-  "status": "pending_astra_tail_review",
+  "status": "approved",
   "source_character_commit": "df9f16b54b6873d3fe36e30d27c7082eb7b4a279",
   "candidate_final_RGBA": {
-    "F108": "d80948993838a76c0ea788e7111e9c245b9457c34dea2fb9da49ddc1080b74f0",
+    "F108": "e0d31242883ad1dca5e5ce1c838257228e5d980ace1605ea93e2a31349f5a704",
     "F114": "74b692c116bf4d72e7d0fb684910b852e4c91ed32cfbe84d704e22a44f217112"
   },
-  "approved_tail_commit": null,
-  "approved_final_RGBA": null,
-  "approval_note": null
+  "approved_tail_commit": "2d99e52aabf7abed5ccc3b116f06f3d646e3bf85",
+  "approved_final_RGBA": {
+    "F108": "e0d31242883ad1dca5e5ce1c838257228e5d980ace1605ea93e2a31349f5a704",
+    "F114": "74b692c116bf4d72e7d0fb684910b852e4c91ed32cfbe84d704e22a44f217112"
+  },
+  "approval_note": "Astra2026-10-18实审114通过；108仅x158–167/y913–940同raw连续边缘清理，保真实斜黑轮廓、接触组及颜色，114不动、无需生图；先交小修对照和唯一SHA后即接完整120帧实景。小修提交2d99e52aabf7abed5ccc3b116f06f3d646e3bf85已交，本入口仅绑定该最终108；其余11态与原曝光逐字节/逐项不变。",
+  "approval_evidence": "../F108_edge_cleanup_20261018/provenance/authorization.json"
 }

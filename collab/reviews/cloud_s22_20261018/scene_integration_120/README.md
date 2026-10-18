@@ -1,31 +1,27 @@
-# S22独立drawn模块与正式Canvas接景入口：准备完成，尾态待锁
+# S22完整120帧实景候选：已接最终108，交Astra整镜双审
 
-人物层先交提交 `df9f16b54b6873d3fe36e30d27c7082eb7b4a279`。本目录只准备本镜接景，不改生产主分支、共享EDL/音轨或ready。**当前没有120帧实际场景片，不能以人物层灰底片替代整镜ready。**
+[实际实景MP4](scene120/S22_actual_scene120.mp4)：**1920×1080、24fps、120帧、5秒，无音轨**。从共用`dev/view.html`正式Canvas入口逐帧捕获，包含已批准布景、真实乌龟、场景光、慢推、暗角和颗粒。视频完整SHA256：`d939665e2e618fb9613253b374ce4f43bd60541d4736b65c1b7365d72aec4af0`。
 
-[S22_drawn.js](S22_drawn.js)导出正式Canvas约定的`DURATION=5`、`renderFrame(ctx,t,W,H)`和`render`；[资源映射](resource_map.json)绑定12张实际RGBA及SHA，120帧完全沿原曝光表。108唯一`d8094899…80b74f0`、114唯一`74b692c1…f217112`仍等待Astra集中尾态双审。没有WIP顶帧，没有旧暖稿或旧h22两组手贴图。
+Astra最新实审已通过114，并明确要求108指定外缘同raw清理后直接接景。[零生成小修](../F108_edge_cleanup_20261018/README.md)先交提交`2d99e52aabf7abed5ccc3b116f06f3d646e3bf85`。本镜仅绑定最终108 `e0d31242883ad1dca5e5ce1c838257228e5d980ace1605ea93e2a31349f5a704`；114保持`74b692c116bf4d72e7d0fb684910b852e4c91ed32cfbe84d704e22a44f217112`。[尾态授权记录](tail_lock.json)、[最终绑定核对](provenance/final_binding_checks.json)与[资源映射](resource_map.json)一致，实际浏览器请求的新108返回200并通过字节SHA验证。旧人物层包`df9f16b`保持原字节，旧108不参与本次实景。
 
-场景参照最新协调分支 `c920857531ac60a63d1b09a848698854856ab657`，S22原场景代码SHA `c458f6c27161869ec5761bdc2c02fff4f7da17134da1c6500d145dc31cf86c3c` 与本地一致。保留后台床单径向暖光/褶子、实际乌龟素材及背景运动、一次场景乘光、5%慢推镜头、暗角及颗粒；人物只按绘图曝光换张，左上对齐按1920/1672等比放置，不叠加旧人物抖动/平移/旋转，也不程序接第二签。[场景与依赖SHA核对](provenance/scene_reference.json)。
+[12态实际解码总览](qa/actual_12_states.jpg)、[末态底边实际MP4放大](qa/actual_tail_lower_edge_6x.png)、[108实际全帧](scene120/decoded_actual/F108.png)、[114实际全帧](scene120/decoded_actual/F114.png)。全部120帧已从本MP4回解并逐页实看：[0–23](qa/actual_decoded_second_0.jpg)、[24–47](qa/actual_decoded_second_1.jpg)、[48–71](qa/actual_decoded_second_2.jpg)、[72–95](qa/actual_decoded_second_3.jpg)、[96–119](qa/actual_decoded_second_4.jpg)。108底部没有竖尖或下拖边；107→108、113→114及119已放大检查，真实斜黑轮廓与接触群保留。[作者实际看图记录](provenance/author_visual_review.json)。
 
-入口：[render.html](render.html)；正式共用入口路径为：
+保留12原态及原持帧：000–011、012–017、018–023、024–035、036–041、042–059、060–065、066–083、084–089、090–107、108–113、114–119。[逐帧120行最终源图/SHA映射](S22_final_frame_bindings_120.csv)。其他11态RGBA和所有曝光区间/持帧与`b459d126`逐项一致；人物原图左上对齐按1920/1672等比入画，无额外旧人物抖动或动作代码，不程序接第二签。
+
+[S22_drawn.js](S22_drawn.js)导出`DURATION=5`、`FPS=24`、`TOTAL_FRAMES=120`、`renderFrame(ctx,t,W,H)`和`render`。实际模块SHA `a0f6df970ed1de735d8a4eed162b57a4abb202e02b0ac72da1ec1cda1ae40081`，模块与已备入口版本保持原字节。正式路由：
 
 ```text
 /dev/view.html?mod=collab/reviews/cloud_s22_20261018/scene_integration_120/S22_drawn.js&w=1920&h=1080
 ```
 
-`tail_lock.json`目前为`pending_astra_tail_review`。未获明确尾态锁定时，正式`renderFrame`与场景捕获脚本均报`S22_TAIL_FREEZE_REQUIRED`，不会渲待审人物整镜。准备入口只显示已批准布景，[布景检查图](qa/preflight_environment_only.png)不含人物、不是整镜候选。
+场景参照协调分支`c920857531ac60a63d1b09a848698854856ab657`，S22场景代码SHA `c458f6c27161869ec5761bdc2c02fff4f7da17134da1c6500d145dc31cf86c3c`；保留床单径向暖光/褶子、实际乌龟素材及背景运动、一次场景乘光、5%慢推、暗角和颗粒。[依赖SHA核对](provenance/scene_reference.json)。
 
-已实际运行：
+已实际执行预检、整镜捕获和独立回解检查，资源失败0、旧h22贴图请求0。120张原Canvas PNG保存在[frames/](scene120/frames/)，24张状态首尾实际解码图保存在[decoded_actual/](scene120/decoded_actual/)。[完整捕获清单](provenance/actual_scene120_manifest.json)含120原帧SHA、实际HTTP与ffprobe结果；[独立检查](provenance/actual_scene120_checks.json)含120解码帧SHA。复现命令：
 
 ```bash
 node collab/reviews/cloud_s22_20261018/scene_integration_120/preflight.cjs
-```
-
-12个PNG加载及SHA/尺寸核对通过，全部120帧绑定与曝光表一致；正式Canvas接口兼容，失败资源请求0，未请求旧h22贴图。未锁尾态渲染阻断也已验证，[实际检查记录](provenance/preflight.json)、[捕获门检查](provenance/capture_guard.json)。
-
-收到Astra明确锁定后，先把`tail_lock.json`记为`approved`，填写实际审批提交和两张最终PNG的完整SHA；若终审改了尾态，则先同步资源映射及最终图，不能只改状态。随后本镜原作者可运行：
-
-```bash
 node collab/reviews/cloud_s22_20261018/scene_integration_120/render_scene120.cjs
+python collab/reviews/cloud_s22_20261018/scene_integration_120/verify_actual_scene.py
 ```
 
-该脚本通过共用`dev/view.html`正式Canvas接口逐帧捕获1920×1080、24fps、120帧/5秒，检查实际PNG资源SHA及HTTP错误，并输出`scene120/S22_actual_scene120.mp4`、全部Canvas原帧SHA、实际解码边界图及来源清单。只渲S22，不启动全片，不调用旧Blender。输出为场景无声审看片，仍不修改共享音轨、EDL或ready；实际片完成后须实看并交整镜双审。
+全部改动仅在本镜独占审查目录，未动共享EDL、音轨、ready、生产模块或主分支。[范围检查](provenance/production_scope_check.json)。本轮新图像调用0；原始生成输出和完整提示词仍保留于各原包。当前为**实际场景无声审看片，待Astra整镜双审**，未登记生产ready。旧`capture_guard.json`及布景独图属于接景前门禁验证历史。

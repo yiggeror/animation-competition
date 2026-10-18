@@ -14,8 +14,9 @@ export const CONFIG = Object.freeze({
   "sceneReference": "js/code/s22.js",
   "sceneReferenceSHA256": "c458f6c27161869ec5761bdc2c02fff4f7da17134da1c6500d145dc31cf86c3c",
   "characterCommit": "df9f16b54b6873d3fe36e30d27c7082eb7b4a279",
-  "sceneIntegrated": false,
-  "audioIntegrated": false
+  "sceneIntegrated": true,
+  "audioIntegrated": false,
+  "F108CleanupCommit": "2d99e52aabf7abed5ccc3b116f06f3d646e3bf85"
 });
 export const EXPOSURES = Object.freeze([
   {
@@ -103,8 +104,8 @@ export const EXPOSURES = Object.freeze([
     "start": 108,
     "end": 113,
     "hold": 6,
-    "url": "/collab/reviews/cloud_s22_20261018/fourth_push_108_114/layer_sources/F108.png",
-    "sha256": "d80948993838a76c0ea788e7111e9c245b9457c34dea2fb9da49ddc1080b74f0"
+    "url": "/collab/reviews/cloud_s22_20261018/F108_edge_cleanup_20261018/candidate/F108_edge_fixed.png",
+    "sha256": "e0d31242883ad1dca5e5ce1c838257228e5d980ace1605ea93e2a31349f5a704"
   },
   {
     "id": "F114",

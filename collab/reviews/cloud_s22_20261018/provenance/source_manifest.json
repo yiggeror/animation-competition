@@ -86,8 +86,8 @@
   "existing_contact_sheets_total_frames": 60,
   "reference_note": "Reference-phase raster files are manual technical diagrams; actual imagegen outputs are separately retained under F000_first and contact_012_018_024.",
   "reference_phase_image_generation_calls": 0,
-  "current_stage": "F114 passed Astra; authorized F108 ROI-only source-pixel cleanup delivered, full120-frame actual scene authorized after cleanup",
-  "latest_batch": "fourth_push_108_114/README.md",
+  "current_stage": "Actual120-frame1920x1080/24fps/5s silent S22 scene delivered using final cleanedF108;120 decoded frames visually inspected; awaiting Astra full-scene double review, production ready false",
+  "latest_batch": "scene_integration_120/README.md",
   "other_states_generated": [
     "F012",
     "F018",
@@ -123,5 +123,10 @@
   "scene_integration_preparation": "scene_integration_120/README.md",
   "F108_edge_cleanup": "F108_edge_cleanup_20261018/README.md",
   "final_F108_sha256": "e0d31242883ad1dca5e5ce1c838257228e5d980ace1605ea93e2a31349f5a704",
-  "F108_cleanup_image_generation_calls": 0
+  "F108_cleanup_image_generation_calls": 0,
+  "actual_scene120_mp4_sha256": "d939665e2e618fb9613253b374ce4f43bd60541d4736b65c1b7365d72aec4af0",
+  "scene_integrated": true,
+  "audio_integrated": false,
+  "actual_scene120_checks": "scene_integration_120/provenance/actual_scene120_checks.json",
+  "actual_visual_review": "scene_integration_120/provenance/author_visual_review.json"
 }

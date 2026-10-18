@@ -1,0 +1,28 @@
+{
+  "reviewer": "S22 original cloud author; handed to Astra for full-scene double review",
+  "actual_artifact": "scene120/S22_actual_scene120.mp4",
+  "actual_mp4_sha256": "d939665e2e618fb9613253b374ce4f43bd60541d4736b65c1b7365d72aec4af0",
+  "actually_viewed": [
+    "qa/actual_12_states.jpg",
+    "qa/actual_decoded_second_0.jpg",
+    "qa/actual_decoded_second_1.jpg",
+    "qa/actual_decoded_second_2.jpg",
+    "qa/actual_decoded_second_3.jpg",
+    "qa/actual_decoded_second_4.jpg",
+    "qa/actual_tail_lower_edge_6x.png",
+    "scene120/decoded_actual/F108.png",
+    "scene120/decoded_actual/F114.png"
+  ],
+  "scope": "All120 actual decoded frames viewed in consecutive one-second sheets; full-resolution108/114 and lower-edge closeups checked separately. This record does not claim a human realtime playback or production ready approval.",
+  "observations": [
+    "000自主握签、成人近未触；012/018接触推进，024完整包握，后续沿已锁曝光推进。",
+    "12态顺序和持帧可见；人物没有旧图抖动、额外平移/旋转或第二签。",
+    "实际乌龟、布景、暖场景光与慢推镜头已接入；无灰底代理或缺失图层。",
+    "F108最终机位底缘的竖尖和下拖边消失，真实斜黑轮廓保留；107→108、113→114及119底边已放大检查。",
+    "F114使用已通过的原SHA；另11态源图逐字节不变。"
+  ],
+  "author_result": "Pass for delivery as actual silent S22 scene candidate to Astra; production ready remains false.",
+  "production_ready": false,
+  "audio_integrated": false,
+  "new_generation_calls": 0
+}

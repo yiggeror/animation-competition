@@ -103,7 +103,7 @@
       {
         "id": "F108",
         "status": 200,
-        "sha256": "d80948993838a76c0ea788e7111e9c245b9457c34dea2fb9da49ddc1080b74f0",
+        "sha256": "e0d31242883ad1dca5e5ce1c838257228e5d980ace1605ea93e2a31349f5a704",
         "size": [
           1672,
           941
@@ -119,13 +119,12 @@
         ]
       }
     ],
-    "tailStatus": "pending_astra_tail_review",
+    "tailStatus": "approved",
     "sceneReferenceSHA256": "c458f6c27161869ec5761bdc2c02fff4f7da17134da1c6500d145dc31cf86c3c"
   },
   "all120_exposure_bindings_match": true,
   "tail_gate": {
-    "blocked": true,
-    "message": "S22_TAIL_FREEZE_REQUIRED: waiting for Astra final tail lock; full scene rendering is paused."
+    "blocked": false
   },
   "old_proxy_sprite_requested": false,
   "failed_requests": [],
@@ -139,11 +138,11 @@
       "status": 200
     },
     {
-      "path": "/js/lamp/turtle.js",
+      "path": "/js/puppet.js",
       "status": 200
     },
     {
-      "path": "/js/puppet.js",
+      "path": "/js/lamp/turtle.js",
       "status": 200
     },
     {
@@ -195,7 +194,7 @@
       "status": 200
     },
     {
-      "path": "/collab/reviews/cloud_s22_20261018/fourth_push_108_114/layer_sources/F108.png",
+      "path": "/collab/reviews/cloud_s22_20261018/F108_edge_cleanup_20261018/candidate/F108_edge_fixed.png",
       "status": 200
     },
     {
@@ -211,8 +210,8 @@
       "status": 200
     }
   ],
-  "snapshot": "qa/preflight_environment_only.png",
-  "character_scene_rendered": false,
+  "snapshot": "qa/preflight_scene_frame0.png",
+  "character_scene_rendered": true,
   "full120_scene_rendered": false,
   "production_files_changed": false
 }
