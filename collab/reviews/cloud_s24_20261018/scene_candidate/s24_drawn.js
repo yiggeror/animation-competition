@@ -77,7 +77,7 @@ export async function renderFrame(ctx,t,W,H) {
   await requireFinalLock();
   const maps=await nativeMaps(exposure);
   const shot={cam:CAM,exp:SCENE_CONFIG.exp,fog:SCENE_CONFIG.fog,
-    sheet:(u,env)=>sheet23(3.4+0.1*u,env),
+    sheet:(u,env)=>sheet23(5,env),
     cards:async(CARDS,cam)=>{
       const depth=cam.project(SCENE_CONFIG.depthBase)[2];
       CARDS.addImage([{maps,m}],depth);

@@ -1,0 +1,14 @@
+{
+  "fixed_runtime_commit": "93705f2f4d910a3b4805c602e8cc2c5bc2adda16",
+  "browser": "/usr/bin/chromium",
+  "args": [
+    "--enable-unsafe-swiftshader"
+  ],
+  "S24": "S24_AUDIT_FILE=collab/reviews/cloud_s24_20261018/scene_candidate/bite_fix_93705f2/qa/s24_actual_browser_events.jsonl NODE_OPTIONS=\"--require ./collab/reviews/cloud_s24_20261018/scene_candidate/bite_fix_93705f2/tools/actual_chromium_audit_shim.cjs\" node tools/js/frames.cjs collab/reviews/cloud_s24_20261018/scene_candidate/s24_drawn.js build/S24_bite_fix_93705f2_scene60 --fps 24 --w 1920 --h 1080 --workers 2 --mp4 build/S24_bite_fix_93705f2_scene60_1920x1080_24fps.mp4",
+  "S23": "S24_AUDIT_FILE=collab/reviews/cloud_s24_20261018/scene_candidate/bite_fix_93705f2/qa/s23_actual_browser_events.jsonl NODE_OPTIONS=\"--require ./collab/reviews/cloud_s24_20261018/scene_candidate/bite_fix_93705f2/tools/actual_chromium_audit_shim.cjs\" node tools/js/frames.cjs js/lamp/shots/s23.js build/S23_bite_fix_93705f2_tail2 --fps 24 --w 1920 --h 1080 --workers 1 --from 4.916666666666667 --to 5 --mp4 build/S23_bite_fix_93705f2_tail2_1920x1080_24fps.mp4",
+  "actual_render_runs": {
+    "S24_full60": 1,
+    "S23_tail2": 1
+  },
+  "image_generation_calls": 0
+}

@@ -1,0 +1,134 @@
+{
+  "fixed_runtime_commit": "93705f2f4d910a3b4805c602e8cc2c5bc2adda16",
+  "private_baseline_commit": "155d25986b9d6bb38acc8f09043ca74922e4dd16",
+  "old_entry_sha256": "3833e90cc75d0f9e8449c14a3aa9fcb4d70f4abcff67883e9349fae7a10b2f04",
+  "new_entry_sha256": "fdc0ee5db547882eebf56bf00f633b5e9be7f869588ab6fa23b9b48378341374",
+  "entry_only_replacement": {
+    "old": "sheet:(u,env)=>sheet23(3.4+0.1*u,env),",
+    "new": "sheet:(u,env)=>sheet23(5,env),"
+  },
+  "runtime_inputs": [
+    {
+      "path": "collab/reviews/cloud_s24_20261018/scene_candidate/s24_drawn.js",
+      "sha256": "fdc0ee5db547882eebf56bf00f633b5e9be7f869588ab6fa23b9b48378341374",
+      "basis": "owned_entry_155d259_plus_one_line"
+    },
+    {
+      "path": "js/lamp/cards.js",
+      "sha256": "f6aa857fd1ba89ace359273e640b46915ff1d142cc4d90f1e84b148f430db130",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/lamp/choreo.js",
+      "sha256": "6f838cdfb1aab203f83e5905eb4242a65addb4181ca8e66ed4c91340903e33d6",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/lamp/crane.js",
+      "sha256": "212e8a4fdad764fa50928c60a8efc956ad660c62377ea1ea152433a6fea4e642",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/lamp/gl.js",
+      "sha256": "ba98ba276559c430fc244a261387b32c77901a042e9c60b8acee31da3fdd0b29",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/lamp/s06_key.js",
+      "sha256": "fdd0835b5486ac66385cb339b2a2dbbb8521978d3716c6293c7ef5927ef887d9",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/lamp/s08_back.js",
+      "sha256": "79cbdae73443216a1611a1ee5161e9c22ecb230d0f04d07cf559cb25d4aa3b23",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/lamp/scenery.js",
+      "sha256": "63f8cc830c0ed37db2a178b8b9ae3ed69f2d455915e1c5fb3bd5222d7fa64030",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/lamp/shaders.js",
+      "sha256": "773d25786637b178c73df987f11539d8786f2516fc6c04099d81caae170ddf1d",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/lamp/shots/s23.js",
+      "sha256": "6d09ecaae7e518557ef961af858a301adeda8e74300c753b58605ea6b201632e",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/lamp/shots/shotkit.js",
+      "sha256": "3cd7989d0276f0edc791ac72fae11463e611f13c0a3433fe99c27f38cec20a74",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/lamp/turtle.js",
+      "sha256": "f7e91070a5959a2a5b97438a64db0f79af4890c2dbff1cdcbe6e4d6a28817ed2",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/lamp/xiaoman.js",
+      "sha256": "d3b47b12cbcbb4bdec96df0bfa85357543ab6ea98d627cdb8260550cfc6e60e0",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/lamp/xm_rig.js",
+      "sha256": "99b819478174a2bf250883cf05dd3c9f9b5743c1cfb98c5fd58ab876d28b7b22",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/lib/core.js",
+      "sha256": "748c357b97a71d6f122ef483923a64d3395bd692f6775b1601ef19b5bc08883e",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/lib/draw.js",
+      "sha256": "e3d36d237c0f143f349bfd2fbc9afad24fc71897f56b990a5d2ed084d6c6d496",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/lib/figure.js",
+      "sha256": "03c8928bbe6546af7206024a163c9f56d7826f60917c24ac448010fdae67f3de",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/puppet.js",
+      "sha256": "04b80760b97185ab8aea7826383d85f3c9d7789cd01aa1d8664fdc74bc4c30b7",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "js/shadowplay.js",
+      "sha256": "2620c4164efb9a440f69b7d723d1d373894116115c9aa56442160b8a7b0739d8",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "tools/js/frames.cjs",
+      "sha256": "3f3f1a1920d6970bb578d735fc7b70420ae749da469637827459a861fe8bea14",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "tools/js/serve.cjs",
+      "sha256": "85e67155f5b39852bb8f7d08457a1ba15db538ce05e582cc26d4b364f8b6136d",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "dev/view.html",
+      "sha256": "2b5228f5447bcb919a6dea545152e5645cee890f89377d6ff7ffa14c9f6ed701",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "assets/fonts/MaShanZheng-Regular.ttf",
+      "sha256": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb",
+      "basis": "fixed93705f2"
+    },
+    {
+      "path": "assets/fonts/NotoSansSC-VF.ttf",
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "basis": "fixed93705f2"
+    }
+  ],
+  "native9_exact": true,
+  "note": "Entry SOURCE_SCENE_COMMIT/SCENE_CONFIG offset constants remain original provenance;actual sheet call alone is overridden to5;actual dependency authority for this render is fixed93705f2 manifest."
+}
