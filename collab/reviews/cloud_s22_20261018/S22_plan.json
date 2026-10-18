@@ -1,0 +1,529 @@
+{
+  "shot": "S22",
+  "status": "REFERENCE PROPOSAL, NOT FROZEN, NO IMAGE CALLS",
+  "baseline": "da16fc0c1136767dba24a804ce0db01e2eed9bae",
+  "fps": 24,
+  "frames": 120,
+  "duration_seconds": 5,
+  "drawings": 12,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "composition_proposal": "One principal right/right hand-over-hand pair in close-up. Old source has two pairs and two rods; must explicitly freeze one pair versus four hands before generating. Second control rod outside main contact crop if required; do not erase it from shared module here.",
+  "hand_identity": "Grandma RIGHT from behind/outside child RIGHT shoulder; child RIGHT independently grips. No jade on chosen right wrist; left jade retained only if a later approved left hand is shown.",
+  "reference_lengths": {
+    "grandma": {
+      "source": "collab/refs/grandma_turnaround_current03_draft.png",
+      "crop": [
+        985,
+        414,
+        1063,
+        517
+      ],
+      "W": [
+        1028,
+        441
+      ],
+      "MCP": [
+        1034,
+        480
+      ],
+      "tip": [
+        1029,
+        509
+      ],
+      "uncertainty_px": 4,
+      "scale_proposal": 5.0,
+      "palm_projected_px": 39.46,
+      "visible_digit_chain_projected_px": 29.43,
+      "W_to_tip_projected_px": 68.01
+    },
+    "xiaoman": {
+      "source": "collab/refs/xiaoman_turnaround_v4_draft.png",
+      "crop": [
+        724,
+        499,
+        794,
+        604
+      ],
+      "W": [
+        754,
+        521
+      ],
+      "MCP": [
+        758,
+        558
+      ],
+      "tip": [
+        768,
+        595
+      ],
+      "uncertainty_px": 4,
+      "scale_proposal": 4.0,
+      "palm_projected_px": 37.22,
+      "visible_digit_chain_projected_px": 38.33,
+      "W_to_tip_projected_px": 75.31
+    }
+  },
+  "palm_depth_note": "52/64 are deliberately labeled proposed thickness proxies, not recovered physical depth. Read hand shape from real source crops; do not use construction rectangles as drawn palms.",
+  "camera_light": "Retain closeup/backstage warm upper-left light and gentle push-in as scene reference. No baked glow. Turtle and projection remain code. No scene module authored in this phase.",
+  "rows": [
+    {
+      "start_frame": 0,
+      "end_frame_inclusive": 11,
+      "hold_frames": 12,
+      "action": "小满已自主握签；奶奶从肩外后上方接近",
+      "phase": "approach_no_contact",
+      "joint_step": 0,
+      "shared_translation_xy": [
+        0,
+        0
+      ],
+      "child_wrist_xy": [
+        700,
+        700
+      ],
+      "grandma_wrist_xy": [
+        560,
+        430
+      ],
+      "grip_P_xy": [
+        926,
+        598
+      ],
+      "rod_axis_direction": [
+        0.8660254,
+        -0.5
+      ],
+      "rod_axis_equation": "y=1132.626-0.577350269*x",
+      "child_palm_projected_length_target_px": 148.9,
+      "grandma_palm_projected_length_target_px": 197.3,
+      "child_palm_depth_target_px": 52,
+      "grandma_palm_depth_target_px": 64,
+      "depth_status": "construction cross-section target, not measured3D thickness",
+      "occlusion": "child index/middle far pads > rod > child thumb near pad; grandma palm behind child, grandma curl tips locally in front below; never one whole-hand global order",
+      "wrist_chain": "bare forearm entry → W → MCP; constant measured palm/digit projected reference; elbow/shoulder outside frame, do not invent measured bone points",
+      "grip_lock": "P relative to child wrist = (226,-102), unchanged; no rod sliding after024",
+      "compression_px": 0
+    },
+    {
+      "start_frame": 12,
+      "end_frame_inclusive": 17,
+      "hold_frames": 6,
+      "action": "奶奶掌侧先触手背，未锁死",
+      "phase": "first_back_contact",
+      "joint_step": 0,
+      "shared_translation_xy": [
+        0,
+        0
+      ],
+      "child_wrist_xy": [
+        700,
+        700
+      ],
+      "grandma_wrist_xy": [
+        622,
+        490
+      ],
+      "grip_P_xy": [
+        926,
+        598
+      ],
+      "rod_axis_direction": [
+        0.8660254,
+        -0.5
+      ],
+      "rod_axis_equation": "y=1132.626-0.577350269*x",
+      "child_palm_projected_length_target_px": 148.9,
+      "grandma_palm_projected_length_target_px": 197.3,
+      "child_palm_depth_target_px": 52,
+      "grandma_palm_depth_target_px": 64,
+      "depth_status": "construction cross-section target, not measured3D thickness",
+      "occlusion": "child index/middle far pads > rod > child thumb near pad; grandma palm behind child, grandma curl tips locally in front below; never one whole-hand global order",
+      "wrist_chain": "bare forearm entry → W → MCP; constant measured palm/digit projected reference; elbow/shoulder outside frame, do not invent measured bone points",
+      "grip_lock": "P relative to child wrist = (226,-102), unchanged; no rod sliding after024",
+      "compression_px": 0
+    },
+    {
+      "start_frame": 18,
+      "end_frame_inclusive": 23,
+      "hold_frames": 6,
+      "action": "包指从尺侧下绕；孩子夹点仍露",
+      "phase": "curl_ulnar_under",
+      "joint_step": 0,
+      "shared_translation_xy": [
+        0,
+        0
+      ],
+      "child_wrist_xy": [
+        700,
+        700
+      ],
+      "grandma_wrist_xy": [
+        642,
+        497
+      ],
+      "grip_P_xy": [
+        926,
+        598
+      ],
+      "rod_axis_direction": [
+        0.8660254,
+        -0.5
+      ],
+      "rod_axis_equation": "y=1132.626-0.577350269*x",
+      "child_palm_projected_length_target_px": 148.9,
+      "grandma_palm_projected_length_target_px": 197.3,
+      "child_palm_depth_target_px": 52,
+      "grandma_palm_depth_target_px": 64,
+      "depth_status": "construction cross-section target, not measured3D thickness",
+      "occlusion": "child index/middle far pads > rod > child thumb near pad; grandma palm behind child, grandma curl tips locally in front below; never one whole-hand global order",
+      "wrist_chain": "bare forearm entry → W → MCP; constant measured palm/digit projected reference; elbow/shoulder outside frame, do not invent measured bone points",
+      "grip_lock": "P relative to child wrist = (226,-102), unchanged; no rod sliding after024",
+      "compression_px": 0
+    },
+    {
+      "start_frame": 24,
+      "end_frame_inclusive": 35,
+      "hold_frames": 12,
+      "action": "包握完成，停稳；不替孩子持杆",
+      "phase": "closed_wrap",
+      "joint_step": 0,
+      "shared_translation_xy": [
+        0,
+        0
+      ],
+      "child_wrist_xy": [
+        700,
+        700
+      ],
+      "grandma_wrist_xy": [
+        650,
+        500
+      ],
+      "grip_P_xy": [
+        926,
+        598
+      ],
+      "rod_axis_direction": [
+        0.8660254,
+        -0.5
+      ],
+      "rod_axis_equation": "y=1132.626-0.577350269*x",
+      "child_palm_projected_length_target_px": 148.9,
+      "grandma_palm_projected_length_target_px": 197.3,
+      "child_palm_depth_target_px": 52,
+      "grandma_palm_depth_target_px": 64,
+      "depth_status": "construction cross-section target, not measured3D thickness",
+      "occlusion": "child index/middle far pads > rod > child thumb near pad; grandma palm behind child, grandma curl tips locally in front below; never one whole-hand global order",
+      "wrist_chain": "bare forearm entry → W → MCP; constant measured palm/digit projected reference; elbow/shoulder outside frame, do not invent measured bone points",
+      "grip_lock": "P relative to child wrist = (226,-102), unchanged; no rod sliding after024",
+      "compression_px": 1
+    },
+    {
+      "start_frame": 36,
+      "end_frame_inclusive": 41,
+      "hold_frames": 6,
+      "action": "第一推中间态",
+      "phase": "closed_wrap",
+      "joint_step": 0.5,
+      "shared_translation_xy": [
+        14.0,
+        -8.0
+      ],
+      "child_wrist_xy": [
+        714.0,
+        692.0
+      ],
+      "grandma_wrist_xy": [
+        664.0,
+        492.0
+      ],
+      "grip_P_xy": [
+        940.0,
+        590.0
+      ],
+      "rod_axis_direction": [
+        0.8660254,
+        -0.5
+      ],
+      "rod_axis_equation": "y=1132.709-0.577350269*x",
+      "child_palm_projected_length_target_px": 148.9,
+      "grandma_palm_projected_length_target_px": 197.3,
+      "child_palm_depth_target_px": 52,
+      "grandma_palm_depth_target_px": 64,
+      "depth_status": "construction cross-section target, not measured3D thickness",
+      "occlusion": "child index/middle far pads > rod > child thumb near pad; grandma palm behind child, grandma curl tips locally in front below; never one whole-hand global order",
+      "wrist_chain": "bare forearm entry → W → MCP; constant measured palm/digit projected reference; elbow/shoulder outside frame, do not invent measured bone points",
+      "grip_lock": "P relative to child wrist = (226,-102), unchanged; no rod sliding after024",
+      "compression_px": 2
+    },
+    {
+      "start_frame": 42,
+      "end_frame_inclusive": 59,
+      "hold_frames": 18,
+      "action": "第一推末端＋停",
+      "phase": "closed_wrap",
+      "joint_step": 1,
+      "shared_translation_xy": [
+        28,
+        -16
+      ],
+      "child_wrist_xy": [
+        728,
+        684
+      ],
+      "grandma_wrist_xy": [
+        678,
+        484
+      ],
+      "grip_P_xy": [
+        954,
+        582
+      ],
+      "rod_axis_direction": [
+        0.8660254,
+        -0.5
+      ],
+      "rod_axis_equation": "y=1132.792-0.577350269*x",
+      "child_palm_projected_length_target_px": 148.9,
+      "grandma_palm_projected_length_target_px": 197.3,
+      "child_palm_depth_target_px": 52,
+      "grandma_palm_depth_target_px": 64,
+      "depth_status": "construction cross-section target, not measured3D thickness",
+      "occlusion": "child index/middle far pads > rod > child thumb near pad; grandma palm behind child, grandma curl tips locally in front below; never one whole-hand global order",
+      "wrist_chain": "bare forearm entry → W → MCP; constant measured palm/digit projected reference; elbow/shoulder outside frame, do not invent measured bone points",
+      "grip_lock": "P relative to child wrist = (226,-102), unchanged; no rod sliding after024",
+      "compression_px": 1
+    },
+    {
+      "start_frame": 60,
+      "end_frame_inclusive": 65,
+      "hold_frames": 6,
+      "action": "第二推中间态",
+      "phase": "closed_wrap",
+      "joint_step": 1.5,
+      "shared_translation_xy": [
+        42.0,
+        -24.0
+      ],
+      "child_wrist_xy": [
+        742.0,
+        676.0
+      ],
+      "grandma_wrist_xy": [
+        692.0,
+        476.0
+      ],
+      "grip_P_xy": [
+        968.0,
+        574.0
+      ],
+      "rod_axis_direction": [
+        0.8660254,
+        -0.5
+      ],
+      "rod_axis_equation": "y=1132.875-0.577350269*x",
+      "child_palm_projected_length_target_px": 148.9,
+      "grandma_palm_projected_length_target_px": 197.3,
+      "child_palm_depth_target_px": 52,
+      "grandma_palm_depth_target_px": 64,
+      "depth_status": "construction cross-section target, not measured3D thickness",
+      "occlusion": "child index/middle far pads > rod > child thumb near pad; grandma palm behind child, grandma curl tips locally in front below; never one whole-hand global order",
+      "wrist_chain": "bare forearm entry → W → MCP; constant measured palm/digit projected reference; elbow/shoulder outside frame, do not invent measured bone points",
+      "grip_lock": "P relative to child wrist = (226,-102), unchanged; no rod sliding after024",
+      "compression_px": 2
+    },
+    {
+      "start_frame": 66,
+      "end_frame_inclusive": 83,
+      "hold_frames": 18,
+      "action": "第二推末端＋停",
+      "phase": "closed_wrap",
+      "joint_step": 2,
+      "shared_translation_xy": [
+        56,
+        -32
+      ],
+      "child_wrist_xy": [
+        756,
+        668
+      ],
+      "grandma_wrist_xy": [
+        706,
+        468
+      ],
+      "grip_P_xy": [
+        982,
+        566
+      ],
+      "rod_axis_direction": [
+        0.8660254,
+        -0.5
+      ],
+      "rod_axis_equation": "y=1132.958-0.577350269*x",
+      "child_palm_projected_length_target_px": 148.9,
+      "grandma_palm_projected_length_target_px": 197.3,
+      "child_palm_depth_target_px": 52,
+      "grandma_palm_depth_target_px": 64,
+      "depth_status": "construction cross-section target, not measured3D thickness",
+      "occlusion": "child index/middle far pads > rod > child thumb near pad; grandma palm behind child, grandma curl tips locally in front below; never one whole-hand global order",
+      "wrist_chain": "bare forearm entry → W → MCP; constant measured palm/digit projected reference; elbow/shoulder outside frame, do not invent measured bone points",
+      "grip_lock": "P relative to child wrist = (226,-102), unchanged; no rod sliding after024",
+      "compression_px": 1
+    },
+    {
+      "start_frame": 84,
+      "end_frame_inclusive": 89,
+      "hold_frames": 6,
+      "action": "第三推中间态",
+      "phase": "closed_wrap",
+      "joint_step": 2.5,
+      "shared_translation_xy": [
+        70.0,
+        -40.0
+      ],
+      "child_wrist_xy": [
+        770.0,
+        660.0
+      ],
+      "grandma_wrist_xy": [
+        720.0,
+        460.0
+      ],
+      "grip_P_xy": [
+        996.0,
+        558.0
+      ],
+      "rod_axis_direction": [
+        0.8660254,
+        -0.5
+      ],
+      "rod_axis_equation": "y=1133.041-0.577350269*x",
+      "child_palm_projected_length_target_px": 148.9,
+      "grandma_palm_projected_length_target_px": 197.3,
+      "child_palm_depth_target_px": 52,
+      "grandma_palm_depth_target_px": 64,
+      "depth_status": "construction cross-section target, not measured3D thickness",
+      "occlusion": "child index/middle far pads > rod > child thumb near pad; grandma palm behind child, grandma curl tips locally in front below; never one whole-hand global order",
+      "wrist_chain": "bare forearm entry → W → MCP; constant measured palm/digit projected reference; elbow/shoulder outside frame, do not invent measured bone points",
+      "grip_lock": "P relative to child wrist = (226,-102), unchanged; no rod sliding after024",
+      "compression_px": 2
+    },
+    {
+      "start_frame": 90,
+      "end_frame_inclusive": 107,
+      "hold_frames": 18,
+      "action": "第三推末端＋停",
+      "phase": "closed_wrap",
+      "joint_step": 3,
+      "shared_translation_xy": [
+        84,
+        -48
+      ],
+      "child_wrist_xy": [
+        784,
+        652
+      ],
+      "grandma_wrist_xy": [
+        734,
+        452
+      ],
+      "grip_P_xy": [
+        1010,
+        550
+      ],
+      "rod_axis_direction": [
+        0.8660254,
+        -0.5
+      ],
+      "rod_axis_equation": "y=1133.124-0.577350269*x",
+      "child_palm_projected_length_target_px": 148.9,
+      "grandma_palm_projected_length_target_px": 197.3,
+      "child_palm_depth_target_px": 52,
+      "grandma_palm_depth_target_px": 64,
+      "depth_status": "construction cross-section target, not measured3D thickness",
+      "occlusion": "child index/middle far pads > rod > child thumb near pad; grandma palm behind child, grandma curl tips locally in front below; never one whole-hand global order",
+      "wrist_chain": "bare forearm entry → W → MCP; constant measured palm/digit projected reference; elbow/shoulder outside frame, do not invent measured bone points",
+      "grip_lock": "P relative to child wrist = (226,-102), unchanged; no rod sliding after024",
+      "compression_px": 1
+    },
+    {
+      "start_frame": 108,
+      "end_frame_inclusive": 113,
+      "hold_frames": 6,
+      "action": "第四推中间态",
+      "phase": "closed_wrap",
+      "joint_step": 3.5,
+      "shared_translation_xy": [
+        98.0,
+        -56.0
+      ],
+      "child_wrist_xy": [
+        798.0,
+        644.0
+      ],
+      "grandma_wrist_xy": [
+        748.0,
+        444.0
+      ],
+      "grip_P_xy": [
+        1024.0,
+        542.0
+      ],
+      "rod_axis_direction": [
+        0.8660254,
+        -0.5
+      ],
+      "rod_axis_equation": "y=1133.207-0.577350269*x",
+      "child_palm_projected_length_target_px": 148.9,
+      "grandma_palm_projected_length_target_px": 197.3,
+      "child_palm_depth_target_px": 52,
+      "grandma_palm_depth_target_px": 64,
+      "depth_status": "construction cross-section target, not measured3D thickness",
+      "occlusion": "child index/middle far pads > rod > child thumb near pad; grandma palm behind child, grandma curl tips locally in front below; never one whole-hand global order",
+      "wrist_chain": "bare forearm entry → W → MCP; constant measured palm/digit projected reference; elbow/shoulder outside frame, do not invent measured bone points",
+      "grip_lock": "P relative to child wrist = (226,-102), unchanged; no rod sliding after024",
+      "compression_px": 2
+    },
+    {
+      "start_frame": 114,
+      "end_frame_inclusive": 119,
+      "hold_frames": 6,
+      "action": "第四推末端，缓停",
+      "phase": "closed_wrap",
+      "joint_step": 4,
+      "shared_translation_xy": [
+        112,
+        -64
+      ],
+      "child_wrist_xy": [
+        812,
+        636
+      ],
+      "grandma_wrist_xy": [
+        762,
+        436
+      ],
+      "grip_P_xy": [
+        1038,
+        534
+      ],
+      "rod_axis_direction": [
+        0.8660254,
+        -0.5
+      ],
+      "rod_axis_equation": "y=1133.290-0.577350269*x",
+      "child_palm_projected_length_target_px": 148.9,
+      "grandma_palm_projected_length_target_px": 197.3,
+      "child_palm_depth_target_px": 52,
+      "grandma_palm_depth_target_px": 64,
+      "depth_status": "construction cross-section target, not measured3D thickness",
+      "occlusion": "child index/middle far pads > rod > child thumb near pad; grandma palm behind child, grandma curl tips locally in front below; never one whole-hand global order",
+      "wrist_chain": "bare forearm entry → W → MCP; constant measured palm/digit projected reference; elbow/shoulder outside frame, do not invent measured bone points",
+      "grip_lock": "P relative to child wrist = (226,-102), unchanged; no rod sliding after024",
+      "compression_px": 2
+    }
+  ]
+}
