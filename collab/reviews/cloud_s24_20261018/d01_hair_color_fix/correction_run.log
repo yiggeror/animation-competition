@@ -1,0 +1,75 @@
+{
+  "sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22",
+  "checks": {
+    "alpha_changed": 0,
+    "outside_three_semantic_components_changed": 0,
+    "protected_line_changed": 0,
+    "protected_highlight_changed": 0,
+    "skin_neck_eyes_mouth_garment_outside_domain_changed": 0,
+    "changed_pixels": 212752,
+    "RGB_min_delta": [
+      -6,
+      -5,
+      -6
+    ],
+    "RGB_max_delta": [
+      0,
+      0,
+      0
+    ]
+  },
+  "regions": {
+    "crown": {
+      "subtract": [
+        6.0,
+        5.0,
+        6.0
+      ],
+      "after_mean_delta": [
+        0.67672,
+        0.42372,
+        -0.06656
+      ],
+      "after_median_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "near_tail": {
+      "subtract": [
+        6.0,
+        4.0,
+        5.0
+      ],
+      "after_mean_delta": [
+        1.28234,
+        1.75258,
+        1.4541
+      ],
+      "after_median_delta": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "far_tail": {
+      "subtract": [
+        2.0,
+        0.0,
+        1.0
+      ],
+      "after_mean_delta": [
+        2.6027,
+        2.78161,
+        2.64495
+      ],
+      "after_median_delta": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "B_top_margin": 92.8
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS_SAME_RAW_LOCAL_HAIR_CORRECTION_EVIDENCE",
+  "candidate_sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22",
+  "RGBA_sha256": "c836a0ba96f0422335a0eabb8ef49bdf7b823f20055edbe9b41ef38d281ceaa6",
+  "size": [
+    1024,
+    1536
+  ],
+  "alpha_line_highlight_outside_changes": 0,
+  "changed_pixels": 212752,
+  "generation_calls_this_fix": 0,
+  "total_S24_generation_calls": 1,
+  "old_raw_old_candidate_frozen_references_unchanged": true,
+  "adopted_B_registration": [
+    0.7,
+    590,
+    20
+  ],
+  "manual_visual_inspection": [
+    "corrected native PNG",
+    "master/before/after",
+    "all3 corresponding hair crops",
+    "mask overlay",
+    "3 alpha backgrounds",
+    "neutral B whole-layer registration"
+  ],
+  "Astra_exact_corrected_mother_lock": "pending",
+  "next_states_started": false,
+  "shared_source_ready_edits": false
+}

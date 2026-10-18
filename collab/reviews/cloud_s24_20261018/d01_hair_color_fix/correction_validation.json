@@ -1,0 +1,408 @@
+{
+  "status": "LOCAL_HAIR_CORRECTION_READY_FOR_ASTRA_MOTHER_LOCK",
+  "raw_path": "collab/reviews/cloud_s24_20261018/d01_first_candidate/originals/S24_F000_call_001_raw.png",
+  "raw_sha256": "35bb55ead65abf20e3862b4d66dde2f0ed25023f31fb634fa2f03bcda0c72281",
+  "fixed_color_master": "assets/chars/x13/F000.png",
+  "fixed_color_master_sha256": "91715601ae814bd84a3dc8d6ce43f1cc809a7bdd74e7390fefffe579f6882050",
+  "candidate": "candidates/F000_hair_corrected_rgba.png",
+  "candidate_sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22",
+  "candidate_RGBA_sha256": "c836a0ba96f0422335a0eabb8ef49bdf7b823f20055edbe9b41ef38d281ceaa6",
+  "native_size": [
+    1024,
+    1536
+  ],
+  "method": "Three separately seeded connected opaque brown-hair components; per-region median RGB subtraction with protected stroke/highlight sets and distance/shadow feather. No spatial warp, no synthesis, no global grading.",
+  "regions": {
+    "crown": {
+      "seed": [
+        500,
+        300
+      ],
+      "master_roi": [
+        260,
+        260,
+        520,
+        500
+      ],
+      "raw_roi": [
+        360,
+        280,
+        730,
+        500
+      ],
+      "relation": "whole crown; original same-ROI baseline",
+      "component_label": 2,
+      "component_pixels": 236974,
+      "master": {
+        "roi": [
+          260,
+          260,
+          520,
+          500
+        ],
+        "pixels": 55418,
+        "mean_RGB": [
+          55.79434,
+          41.37605,
+          33.81071
+        ],
+        "median_RGB": [
+          56.0,
+          42.0,
+          34.0
+        ],
+        "p10_RGB": [
+          54.0,
+          40.0,
+          33.0
+        ],
+        "p90_RGB": [
+          57.0,
+          43.0,
+          35.0
+        ]
+      },
+      "before": {
+        "roi": [
+          360,
+          280,
+          730,
+          500
+        ],
+        "pixels": 79612,
+        "mean_RGB": [
+          61.59826,
+          46.08925,
+          38.8685
+        ],
+        "median_RGB": [
+          62.0,
+          47.0,
+          40.0
+        ],
+        "p10_RGB": [
+          61.0,
+          45.0,
+          38.0
+        ],
+        "p90_RGB": [
+          63.0,
+          48.0,
+          41.0
+        ]
+      },
+      "subtract_RGB": [
+        6.0,
+        5.0,
+        6.0
+      ],
+      "after": {
+        "roi": [
+          360,
+          280,
+          730,
+          500
+        ],
+        "pixels": 79612,
+        "mean_RGB": [
+          56.47106,
+          41.79977,
+          33.74415
+        ],
+        "median_RGB": [
+          56.0,
+          42.0,
+          34.0
+        ],
+        "p10_RGB": [
+          55.0,
+          41.0,
+          33.0
+        ],
+        "p90_RGB": [
+          59.0,
+          44.0,
+          36.0
+        ]
+      },
+      "after_mean_delta_vs_master": [
+        0.67672,
+        0.42372,
+        -0.06656
+      ],
+      "after_median_delta_vs_master": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "near_tail": {
+      "seed": [
+        800,
+        900
+      ],
+      "master_roi": [
+        185,
+        840,
+        320,
+        950
+      ],
+      "raw_roi": [
+        760,
+        850,
+        875,
+        960
+      ],
+      "relation": "master screen-left near tail -> S24 screen-right near tail",
+      "component_label": 867,
+      "component_pixels": 32851,
+      "master": {
+        "roi": [
+          185,
+          840,
+          320,
+          950
+        ],
+        "pixels": 14255,
+        "mean_RGB": [
+          53.31056,
+          38.61838,
+          31.17924
+        ],
+        "median_RGB": [
+          55.0,
+          41.0,
+          33.0
+        ],
+        "p10_RGB": [
+          45.0,
+          32.0,
+          25.0
+        ],
+        "p90_RGB": [
+          57.0,
+          42.0,
+          35.0
+        ]
+      },
+      "before": {
+        "roi": [
+          760,
+          850,
+          875,
+          960
+        ],
+        "pixels": 12562,
+        "mean_RGB": [
+          58.84397,
+          43.22138,
+          36.19209
+        ],
+        "median_RGB": [
+          61.0,
+          45.0,
+          38.0
+        ],
+        "p10_RGB": [
+          52.0,
+          37.0,
+          30.0
+        ],
+        "p90_RGB": [
+          62.0,
+          47.0,
+          39.0
+        ]
+      },
+      "subtract_RGB": [
+        6.0,
+        4.0,
+        5.0
+      ],
+      "after": {
+        "roi": [
+          760,
+          850,
+          875,
+          960
+        ],
+        "pixels": 12562,
+        "mean_RGB": [
+          54.5929,
+          40.37096,
+          32.63334
+        ],
+        "median_RGB": [
+          55.0,
+          42.0,
+          33.0
+        ],
+        "p10_RGB": [
+          51.0,
+          36.0,
+          29.0
+        ],
+        "p90_RGB": [
+          58.0,
+          43.0,
+          36.0
+        ]
+      },
+      "after_mean_delta_vs_master": [
+        1.28234,
+        1.75258,
+        1.4541
+      ],
+      "after_median_delta_vs_master": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "far_tail": {
+      "seed": [
+        300,
+        940
+      ],
+      "master_roi": [
+        735,
+        855,
+        815,
+        940
+      ],
+      "raw_roi": [
+        265,
+        910,
+        355,
+        965
+      ],
+      "relation": "master screen-right far tail -> S24 screen-left far tail",
+      "component_label": 1026,
+      "component_pixels": 12772,
+      "master": {
+        "roi": [
+          735,
+          855,
+          815,
+          940
+        ],
+        "pixels": 6581,
+        "mean_RGB": [
+          52.16578,
+          37.4905,
+          30.08874
+        ],
+        "median_RGB": [
+          54.0,
+          40.0,
+          32.0
+        ],
+        "p10_RGB": [
+          45.0,
+          30.0,
+          24.0
+        ],
+        "p90_RGB": [
+          58.0,
+          43.0,
+          35.0
+        ]
+      },
+      "before": {
+        "roi": [
+          265,
+          910,
+          355,
+          965
+        ],
+        "pixels": 4829,
+        "mean_RGB": [
+          55.88321,
+          40.27211,
+          33.26154
+        ],
+        "median_RGB": [
+          56.0,
+          40.0,
+          33.0
+        ],
+        "p10_RGB": [
+          50.0,
+          34.0,
+          28.0
+        ],
+        "p90_RGB": [
+          62.0,
+          46.0,
+          39.0
+        ]
+      },
+      "subtract_RGB": [
+        2.0,
+        0.0,
+        1.0
+      ],
+      "after": {
+        "roi": [
+          265,
+          910,
+          355,
+          965
+        ],
+        "pixels": 4829,
+        "mean_RGB": [
+          54.76848,
+          40.27211,
+          32.73369
+        ],
+        "median_RGB": [
+          54.0,
+          40.0,
+          32.0
+        ],
+        "p10_RGB": [
+          50.0,
+          34.0,
+          28.0
+        ],
+        "p90_RGB": [
+          60.0,
+          46.0,
+          38.0
+        ]
+      },
+      "after_mean_delta_vs_master": [
+        2.6027,
+        2.78161,
+        2.64495
+      ],
+      "after_median_delta_vs_master": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "checks": {
+    "alpha_changed": 0,
+    "outside_three_semantic_components_changed": 0,
+    "protected_line_changed": 0,
+    "protected_highlight_changed": 0,
+    "skin_neck_eyes_mouth_garment_outside_domain_changed": 0,
+    "changed_pixels": 212752,
+    "RGB_min_delta": [
+      -6,
+      -5,
+      -6
+    ],
+    "RGB_max_delta": [
+      0,
+      0,
+      0
+    ]
+  },
+  "image_generation_calls_this_fix": 0,
+  "total_S24_image_generation_calls": 1,
+  "F006_F009_F012_started": false,
+  "remaining_gate": "Astra lock exact corrected mother SHA before deriving later states."
+}
