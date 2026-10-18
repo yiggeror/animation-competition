@@ -1,0 +1,171 @@
+{
+  "clip": "S22_108_119_last12.mp4",
+  "sha256": "54d5ca581358d44e29e3586a0ad2c74e910ea1afbaa3b9b1357e06c3fb19472d",
+  "fps": 24,
+  "frames": 12,
+  "duration_seconds": 0.5,
+  "size": [
+    1280,
+    720
+  ],
+  "rows": [
+    {
+      "id": "F108",
+      "start": 108,
+      "end": 113,
+      "hold": 6,
+      "rgba_path": "layer_sources/F108.png",
+      "sha256": "d80948993838a76c0ea788e7111e9c245b9457c34dea2fb9da49ddc1080b74f0",
+      "review_source": "fourth_push_108_114/F108/candidate/F108_final_edge_aligned.png",
+      "world_cumulative": [
+        98.0,
+        -56.0
+      ],
+      "status": "Author reviewed; Astra final review pending"
+    },
+    {
+      "id": "F114",
+      "start": 114,
+      "end": 119,
+      "hold": 6,
+      "rgba_path": "layer_sources/F114.png",
+      "sha256": "74b692c116bf4d72e7d0fb684910b852e4c91ed32cfbe84d704e22a44f217112",
+      "review_source": "fourth_push_108_114/F114/candidate/F114_final_edge_aligned.png",
+      "world_cumulative": [
+        112.0,
+        -64.0
+      ],
+      "status": "Author reviewed; Astra final review pending"
+    }
+  ],
+  "actual_decoded_identities": [
+    "F108",
+    "F108",
+    "F108",
+    "F108",
+    "F108",
+    "F108",
+    "F114",
+    "F114",
+    "F114",
+    "F114",
+    "F114",
+    "F114"
+  ],
+  "all_holds_match": true,
+  "decoded_global_frames": [
+    108,
+    113,
+    114,
+    119
+  ],
+  "command": [
+    "ffmpeg",
+    "-y",
+    "-v",
+    "error",
+    "-f",
+    "image2pipe",
+    "-framerate",
+    "24",
+    "-i",
+    "-",
+    "-frames:v",
+    "12",
+    "-c:v",
+    "libx264",
+    "-crf",
+    "18",
+    "-pix_fmt",
+    "yuv420p",
+    "/workspace/cloud-s22-reference-20261018/collab/reviews/cloud_s22_20261018/fourth_push_108_114/S22_108_119_last12.mp4"
+  ],
+  "ffprobe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1280,
+        "height": 720,
+        "coded_width": 1280,
+        "coded_height": 720,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 31,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 4,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/12288",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 6144,
+        "duration": "0.500000",
+        "bit_rate": "729936",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "12",
+        "nb_read_frames": "12",
+        "extradata_size": 46,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc61.19.101 libx264"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/workspace/cloud-s22-reference-20261018/collab/reviews/cloud_s22_20261018/fourth_push_108_114/S22_108_119_last12.mp4",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "0.500000",
+      "size": "46615",
+      "bit_rate": "745840",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf61.7.103"
+      }
+    }
+  },
+  "scene_integrated": false,
+  "audio_integrated": false
+}

@@ -1,0 +1,25 @@
+{
+  "F108": {
+    "middle": {},
+    "dark": {
+      "adult_G": 1.25,
+      "adult_B": 1.75,
+      "child_G": 2.25,
+      "child_B": 1.75
+    },
+    "reason": "Small approved-dark-relative correction only where native new forearm is darker than corrected090. Mother024 remains primary. Maximum+1/2 adult, +2/2 child; middle/light planes unchanged; preserve natural soft shadows, not all-pixel matching."
+  },
+  "F114": {
+    "middle": {
+      "adult_B": -2.75,
+      "child_G": -1.75,
+      "child_B": -3.75
+    },
+    "dark": {
+      "adult_B": -1.25,
+      "child_G": 1.75,
+      "child_B": 1.25
+    },
+    "reason": "Mother024-guided middle/light blue excess correction, with a broad taper through the transition plane. Approved shadow-corrected090 constrains only slight dark-side differences. Preserve natural form gradients, geometry, alpha, ink and contact. No old warm pose input."
+  }
+}

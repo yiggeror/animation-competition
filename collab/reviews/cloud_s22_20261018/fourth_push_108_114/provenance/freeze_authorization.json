@@ -1,0 +1,64 @@
+{
+  "locked_commit": "ba1ae2b9e67020bd64a584e6e623a13545a82db5",
+  "Astra_instruction": "S22 ba1ae2b9暗侧修已双审通过，放108→114，先实看108再续114。唯一084=3a43afce664385306de620c16fccef8ee8534e0708c431fedae0b432cfaa71b9；090=cabe79438fa626ff0ce7a36e6447a4b8dbac4755528479fce125323a3a68d805。实看089→090暖深跳收住，24/24曝光与冻结接触/墨线/alpha/中明面0变；少量柔收暗层仍对024差−5～−6，保自然渐变，不称全暗面全点±4也无需再磨平。按024累计位移统一换算，色参母+已校暗面，不沿旧暖稿。",
+  "targets": [
+    {
+      "frame": 108,
+      "hold": 6,
+      "world_cumulative": [
+        98.0,
+        -56.0
+      ],
+      "native_ideal": [
+        85.34166666666667,
+        -48.766666666666666
+      ],
+      "native_nearest": [
+        85,
+        -49
+      ]
+    },
+    {
+      "frame": 114,
+      "hold": 6,
+      "world_cumulative": [
+        112.0,
+        -64.0
+      ],
+      "native_ideal": [
+        97.53333333333333,
+        -55.733333333333334
+      ],
+      "native_nearest": [
+        98,
+        -56
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "third_push_shadow_084_090/candidate/F084_shadow_fixed.png",
+      "sha256": "3a43afce664385306de620c16fccef8ee8534e0708c431fedae0b432cfaa71b9"
+    },
+    {
+      "path": "third_push_shadow_084_090/candidate/F090_shadow_fixed.png",
+      "sha256": "cabe79438fa626ff0ce7a36e6447a4b8dbac4755528479fce125323a3a68d805"
+    },
+    {
+      "path": "contact_band_repair_012_018_024/candidate/F024_contact_fixed.png",
+      "sha256": "97560237598d024a725ab63ee62809d1f5ded5f6fc5aadc1d8a4f158ca85da4a"
+    },
+    {
+      "path": "S22_exposure.csv",
+      "sha256": "a715188a0f9b9620d5261e73b46d5eebbdb6c71954244dd504b76a6cde2a5851"
+    },
+    {
+      "path": "S22_plan.json",
+      "sha256": "485de38b5fcf662a1f4b0666422f734cee05fcdfd8985b0eff8f53694a0778b1"
+    }
+  ],
+  "uniform_scale": 0.8708333333333333,
+  "calculation_origin": "Each world cumulative delta independently rounded from actual locked024.",
+  "colour_reference": "Mother024 plus approved shadow-corrected090; no old warm candidate is an image input.",
+  "deliverable": "All120frames character-layer exposure only; no scene/audio integration."
+}

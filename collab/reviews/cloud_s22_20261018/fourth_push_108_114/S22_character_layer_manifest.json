@@ -1,0 +1,185 @@
+{
+  "fps": 24,
+  "total_frames": 120,
+  "duration_seconds": 5,
+  "canvas": [
+    1672,
+    941
+  ],
+  "format": "12 unchanged RGBA PNGs plus explicit120-frame CSV; hold exposures, no interpolation",
+  "frame_csv": "S22_character_frames120.csv",
+  "frame_csv_sha256": "07521936b14ca48d99119536a0c8c81c4dc2c95f1c97457909225026123e2605",
+  "rows": [
+    {
+      "id": "F000",
+      "start": 0,
+      "end": 11,
+      "hold": 12,
+      "rgba_path": "layer_sources/F000.png",
+      "sha256": "d4e78e2d5b84a72588cf3af1ff23ce39cdc18d19dde2fbf1f8eaf44ba62d7ef5",
+      "review_source": "F000_color_repair/candidate/F000_repaired.png",
+      "world_cumulative": [
+        0.0,
+        0.0
+      ],
+      "status": "Locked by Astra"
+    },
+    {
+      "id": "F012",
+      "start": 12,
+      "end": 17,
+      "hold": 6,
+      "rgba_path": "layer_sources/F012.png",
+      "sha256": "f01d484e04dea7e3cde141d1aa2a94ecd0d45d25bc81f7d94f2f9a3f33757898",
+      "review_source": "contact_band_repair_012_018_024/candidate/F012_contact_fixed.png",
+      "world_cumulative": [
+        0.0,
+        0.0
+      ],
+      "status": "Locked by Astra"
+    },
+    {
+      "id": "F018",
+      "start": 18,
+      "end": 23,
+      "hold": 6,
+      "rgba_path": "layer_sources/F018.png",
+      "sha256": "c72e8afe8c5e73c17d66d57bc007f12fbfafd4efba9c0e3313f3010008c194a0",
+      "review_source": "contact_band_repair_012_018_024/candidate/F018_contact_fixed.png",
+      "world_cumulative": [
+        0.0,
+        0.0
+      ],
+      "status": "Locked by Astra"
+    },
+    {
+      "id": "F024",
+      "start": 24,
+      "end": 35,
+      "hold": 12,
+      "rgba_path": "layer_sources/F024.png",
+      "sha256": "97560237598d024a725ab63ee62809d1f5ded5f6fc5aadc1d8a4f158ca85da4a",
+      "review_source": "contact_band_repair_012_018_024/candidate/F024_contact_fixed.png",
+      "world_cumulative": [
+        0.0,
+        0.0
+      ],
+      "status": "Locked by Astra"
+    },
+    {
+      "id": "F036",
+      "start": 36,
+      "end": 41,
+      "hold": 6,
+      "rgba_path": "layer_sources/F036.png",
+      "sha256": "ad6d47305791dd1fbc2d9849b8bd87d8632102f61dc29dce3ed5054867b49b4f",
+      "review_source": "first_push_036_042/F036/candidate/F036_mapped.png",
+      "world_cumulative": [
+        14.0,
+        -8.0
+      ],
+      "status": "Locked by Astra"
+    },
+    {
+      "id": "F042",
+      "start": 42,
+      "end": 59,
+      "hold": 18,
+      "rgba_path": "layer_sources/F042.png",
+      "sha256": "2a028a4c174c55e4cde7d794cd59561d39585c626740dd0afa7ffdd49f5b477c",
+      "review_source": "first_push_036_042/F042/candidate/F042_mapped.png",
+      "world_cumulative": [
+        28.0,
+        -16.0
+      ],
+      "status": "Locked by Astra"
+    },
+    {
+      "id": "F060",
+      "start": 60,
+      "end": 65,
+      "hold": 6,
+      "rgba_path": "layer_sources/F060.png",
+      "sha256": "356c67d7c62efe46b4e68bece873407571adbc994801a622c39db2fdb1bfc136",
+      "review_source": "second_push_colour_060_066/candidate/F060_colour_fixed.png",
+      "world_cumulative": [
+        42.0,
+        -24.0
+      ],
+      "status": "Locked by Astra"
+    },
+    {
+      "id": "F066",
+      "start": 66,
+      "end": 83,
+      "hold": 18,
+      "rgba_path": "layer_sources/F066.png",
+      "sha256": "849de1cf2633d3818c59c73e5a68f22cca77a24c9fce8d44bce7b005385c1d60",
+      "review_source": "second_push_colour_060_066/candidate/F066_colour_fixed.png",
+      "world_cumulative": [
+        56.0,
+        -32.0
+      ],
+      "status": "Locked by Astra"
+    },
+    {
+      "id": "F084",
+      "start": 84,
+      "end": 89,
+      "hold": 6,
+      "rgba_path": "layer_sources/F084.png",
+      "sha256": "3a43afce664385306de620c16fccef8ee8534e0708c431fedae0b432cfaa71b9",
+      "review_source": "third_push_shadow_084_090/candidate/F084_shadow_fixed.png",
+      "world_cumulative": [
+        70.0,
+        -40.0
+      ],
+      "status": "Locked by Astra"
+    },
+    {
+      "id": "F090",
+      "start": 90,
+      "end": 107,
+      "hold": 18,
+      "rgba_path": "layer_sources/F090.png",
+      "sha256": "cabe79438fa626ff0ce7a36e6447a4b8dbac4755528479fce125323a3a68d805",
+      "review_source": "third_push_shadow_084_090/candidate/F090_shadow_fixed.png",
+      "world_cumulative": [
+        84.0,
+        -48.0
+      ],
+      "status": "Locked by Astra"
+    },
+    {
+      "id": "F108",
+      "start": 108,
+      "end": 113,
+      "hold": 6,
+      "rgba_path": "layer_sources/F108.png",
+      "sha256": "d80948993838a76c0ea788e7111e9c245b9457c34dea2fb9da49ddc1080b74f0",
+      "review_source": "fourth_push_108_114/F108/candidate/F108_final_edge_aligned.png",
+      "world_cumulative": [
+        98.0,
+        -56.0
+      ],
+      "status": "Author reviewed; Astra final review pending"
+    },
+    {
+      "id": "F114",
+      "start": 114,
+      "end": 119,
+      "hold": 6,
+      "rgba_path": "layer_sources/F114.png",
+      "sha256": "74b692c116bf4d72e7d0fb684910b852e4c91ed32cfbe84d704e22a44f217112",
+      "review_source": "fourth_push_108_114/F114/candidate/F114_final_edge_aligned.png",
+      "world_cumulative": [
+        112.0,
+        -64.0
+      ],
+      "status": "Author reviewed; Astra final review pending"
+    }
+  ],
+  "scene_integrated": false,
+  "audio_integrated": false,
+  "production_ready": false
+}

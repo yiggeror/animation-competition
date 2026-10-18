@@ -1,0 +1,19 @@
+{
+  "reviewed_at_utc": "2026-10-18T20:29:04.013699+00:00",
+  "local_gate": "PASS_AS_REFERENCE_FOR_F114; Astra review pending",
+  "images_actually_opened": [
+    "qa/F108_raw_contact_2x.png",
+    "qa/F108_mapped_on_gray.png",
+    "qa/F108_final_on_gray.png",
+    "qa/F108_final_on_dark.png",
+    "qa/F108_090_before_after_native.png"
+  ],
+  "observed": "Continuous new forearms to advanced wrists, fixed left entries, rigid source contact group and single rod. Gray/deep plates preserve natural form gradients with no new wrist seam or accumulating long warm/deep stripe seen. Middle/light planes unchanged by finishing; .8 dark samples differ from approved090 by about one channel value. Soft outer shadows remain natural, not claimed all within4 of mother.",
+  "final_sha256": "d1703d8cc42197eb9c7f878e87d9e588723b7f50576015945c194b7b1ea7b64c",
+  "native_cumulative_delta": [
+    85,
+    -49
+  ],
+  "contact_regions_max_RGBA_error": 0,
+  "qualified_for_F114": true
+}

@@ -1,6 +1,6 @@
 {
   "baseline": "da16fc0c1136767dba24a804ce0db01e2eed9bae",
-  "image_generation_calls": 11,
+  "image_generation_calls": 13,
   "sources": [
     {
       "path": "collab/README.md",
@@ -86,8 +86,8 @@
   "existing_contact_sheets_total_frames": 60,
   "reference_note": "Reference-phase raster files are manual technical diagrams; actual imagegen outputs are separately retained under F000_first and contact_012_018_024.",
   "reference_phase_image_generation_calls": 0,
-  "current_stage": "Astra accepted5749423 third-push structure/displacement/exposure; requested homologous dark-side correction, now delivered with24-frame before/after evidence for dual review;108/114 paused",
-  "latest_batch": "third_push_shadow_084_090/README.md",
+  "current_stage": "Last108/114 and all120-frame character layer delivered for Astra concentrated tail review; scene/audio not integrated",
+  "latest_batch": "fourth_push_108_114/README.md",
   "other_states_generated": [
     "F012",
     "F018",
@@ -97,10 +97,12 @@
     "F060",
     "F066",
     "F084",
-    "F090"
+    "F090",
+    "F108",
+    "F114"
   ],
   "repair_image_generation_calls": 0,
-  "successful_image_outputs": 10,
+  "successful_image_outputs": 12,
   "failed_image_calls": 1,
   "mother_locked_sha256": "d4e78e2d5b84a72588cf3af1ff23ce39cdc18d19dde2fbf1f8eaf44ba62d7ef5",
   "registration_image_generation_calls": 0,
@@ -115,5 +117,7 @@
   "third_push_image_calls": 2,
   "second_push_colour_passed_by_Astra": true,
   "third_push_structure_passed_by_Astra": true,
-  "third_push_shadow_image_calls": 0
+  "third_push_shadow_image_calls": 0,
+  "third_push_shadow_passed_by_Astra": true,
+  "fourth_push_image_calls": 2
 }
