@@ -1,0 +1,30 @@
+{
+  "status": "PASS_execution_and_migration_checks",
+  "S08_composition_issue": "Both elbow lower edges occluded by original foreground table, especially flattened far elbow; original table unchanged, coordinator decision pending",
+  "checks": {
+    "S10": {
+      "real_Canvas_pairs": 8,
+      "PNG_byte_identical": true,
+      "RGBA_max_difference": 0,
+      "size": [
+        1920,
+        1080
+      ],
+      "required_resources": "all200, response SHA and git blob match declared fixed sources"
+    },
+    "S13": {
+      "real_Canvas_pairs": 16,
+      "PNG_byte_identical": true,
+      "RGBA_max_difference": 0,
+      "size": [
+        1280,
+        720
+      ],
+      "required_resources": "all200, response SHA and git blob match declared fixed sources"
+    }
+  },
+  "S13_overlay_provenance": "production0aacbd5d +17 exact reviewed files from7b593c00, tracked production files unchanged",
+  "image_generation_calls": 0,
+  "continuous_full_shot_renders": 0,
+  "audio_or_ready_changes": 0
+}

@@ -1,0 +1,221 @@
+{
+  "art": {
+    "filename": "S08_F000_grandma_match_box_RGBA.png",
+    "sha256": "c803571d4a6446e783fcbeb7aef41d65c1862ff3bf78a9a53f34b4631170e3f3",
+    "width": 1920,
+    "height": 1080,
+    "x": 0,
+    "y": 0,
+    "sc": 1
+  },
+  "lamp_base": [
+    1415,
+    965.6
+  ],
+  "table": {
+    "left_x": 764,
+    "surface_rear_y": 950.2,
+    "front_y": 981
+  },
+  "elbow_mask_checks": [
+    {
+      "elbow": "near",
+      "roi": [
+        700,
+        940,
+        850,
+        1005
+      ],
+      "occluded_skin_pixels": 549,
+      "occluded_skin_bbox": [
+        762,
+        979,
+        806,
+        997
+      ],
+      "method": "diagnostic skin-color heuristic intersected with actual existing foreground table alpha; no image changes"
+    },
+    {
+      "elbow": "far",
+      "roi": [
+        1000,
+        940,
+        1130,
+        1005
+      ],
+      "occluded_skin_pixels": 430,
+      "occluded_skin_bbox": [
+        1039,
+        979,
+        1086,
+        991
+      ],
+      "method": "diagnostic skin-color heuristic intersected with actual existing foreground table alpha; no image changes"
+    }
+  ],
+  "snap_vs_independent_probe_byte_identical": true,
+  "actual_png_sha256": "9b63b3605aa59b8383e87f0322bceee1078e4486cd27e71d9c067b79a44d9ccd",
+  "fixed_commit": "3f4c2f187daaeacc6b26e26260e426823f2fa6ad",
+  "module": "collab/reviews/20261018_1606_s08_f000_scene/s08_f000_scene.js",
+  "resources": [
+    {
+      "path": "/dev/view.html",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261018_1606_s08_f000_scene/s08_f000_scene.js",
+      "status": 200
+    },
+    {
+      "path": "/js/paint/paintshot.js",
+      "status": 200
+    },
+    {
+      "path": "/js/code/s08.js",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261018_1606_s08_f000_scene/contract.js",
+      "status": 200
+    },
+    {
+      "path": "/js/code/hand3d.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/fonts/MaShanZheng-Regular.ttf",
+      "status": 200
+    },
+    {
+      "path": "/assets/fonts/NotoSansSC-VF.ttf",
+      "status": 200
+    },
+    {
+      "path": "/assets/paint/bg_01_room_wide.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261018_1606_s08_f000_scene/frames/S08_F000_grandma_match_box_RGBA.png",
+      "status": 200
+    }
+  ],
+  "browser_native_fetch_body_audit": [
+    {
+      "path": "/dev/view.html",
+      "status": 200,
+      "bytes": 1515,
+      "sha256": "2b5228f5447bcb919a6dea545152e5645cee890f89377d6ff7ffa14c9f6ed701",
+      "disk_sha256": "2b5228f5447bcb919a6dea545152e5645cee890f89377d6ff7ffa14c9f6ed701",
+      "matches_fixed_disk": true,
+      "git_blob": "0bd637905abfab5d92ca971937bc4e1e11b73dc7",
+      "disk_git_blob": "0bd637905abfab5d92ca971937bc4e1e11b73dc7"
+    },
+    {
+      "path": "/collab/reviews/20261018_1606_s08_f000_scene/s08_f000_scene.js",
+      "status": 200,
+      "bytes": 3804,
+      "sha256": "f0a55b7bff5deb5dbab726712c8da9691713458b36fdc33b72c1a5fea1d3a8d7",
+      "disk_sha256": "f0a55b7bff5deb5dbab726712c8da9691713458b36fdc33b72c1a5fea1d3a8d7",
+      "matches_fixed_disk": true,
+      "git_blob": "fc5203c748df3af840ad251f3a7db19c55dbed6a",
+      "disk_git_blob": "fc5203c748df3af840ad251f3a7db19c55dbed6a"
+    },
+    {
+      "path": "/js/paint/paintshot.js",
+      "status": 200,
+      "bytes": 10818,
+      "sha256": "e1d059b90d799301826bd3b4ae34a06bf6c6aadfd9ead0fa25d2ccc09cf5b36c",
+      "disk_sha256": "e1d059b90d799301826bd3b4ae34a06bf6c6aadfd9ead0fa25d2ccc09cf5b36c",
+      "matches_fixed_disk": true,
+      "git_blob": "04e5e6e2e88e48bb46ac96eeed81de12bdd59018",
+      "disk_git_blob": "04e5e6e2e88e48bb46ac96eeed81de12bdd59018"
+    },
+    {
+      "path": "/js/code/s08.js",
+      "status": 200,
+      "bytes": 13920,
+      "sha256": "2b5af710ff40ca93a370b6949713f9a52462d0d8f5a521ca4c239b18dafc7897",
+      "disk_sha256": "2b5af710ff40ca93a370b6949713f9a52462d0d8f5a521ca4c239b18dafc7897",
+      "matches_fixed_disk": true,
+      "git_blob": "5cbcefef2906d920ce8372a47a8bbbd06dd7ad4a",
+      "disk_git_blob": "5cbcefef2906d920ce8372a47a8bbbd06dd7ad4a"
+    },
+    {
+      "path": "/collab/reviews/20261018_1606_s08_f000_scene/contract.js",
+      "status": 200,
+      "bytes": 722,
+      "sha256": "f53b1265e1efe6f517c0aa5f8b0949857f3d1a13344ca0502fd72412e3fe3b0a",
+      "disk_sha256": "f53b1265e1efe6f517c0aa5f8b0949857f3d1a13344ca0502fd72412e3fe3b0a",
+      "matches_fixed_disk": true,
+      "git_blob": "21e8fbb2e493a8ef21393e99ec4b2b663997a929",
+      "disk_git_blob": "21e8fbb2e493a8ef21393e99ec4b2b663997a929"
+    },
+    {
+      "path": "/js/code/hand3d.js",
+      "status": 200,
+      "bytes": 16509,
+      "sha256": "66e6e41a68c6c96abc78e295236eefee6e39839c849175f336e5b8cedad52a4e",
+      "disk_sha256": "66e6e41a68c6c96abc78e295236eefee6e39839c849175f336e5b8cedad52a4e",
+      "matches_fixed_disk": true,
+      "git_blob": "e056578a86e02d2ce7618de9b73ed68c59709fc5",
+      "disk_git_blob": "e056578a86e02d2ce7618de9b73ed68c59709fc5"
+    },
+    {
+      "path": "/assets/fonts/MaShanZheng-Regular.ttf",
+      "status": 200,
+      "bytes": 5857936,
+      "sha256": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb",
+      "disk_sha256": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb",
+      "matches_fixed_disk": true,
+      "git_blob": "11bbfb9867d70612158229d037e7a5f622bd0e38",
+      "disk_git_blob": "11bbfb9867d70612158229d037e7a5f622bd0e38"
+    },
+    {
+      "path": "/assets/fonts/NotoSansSC-VF.ttf",
+      "status": 200,
+      "bytes": 17772300,
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "disk_sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "matches_fixed_disk": true,
+      "git_blob": "fb0637bafbcd804fe32152370a1225990745b4bc",
+      "disk_git_blob": "fb0637bafbcd804fe32152370a1225990745b4bc"
+    },
+    {
+      "path": "/assets/paint/bg_01_room_wide.png",
+      "status": 200,
+      "bytes": 1930766,
+      "sha256": "3bc55f3b9d238b4242eddbd06a0c3f81a394673fa19c4f33ef263ba65d4e01ed",
+      "disk_sha256": "3bc55f3b9d238b4242eddbd06a0c3f81a394673fa19c4f33ef263ba65d4e01ed",
+      "matches_fixed_disk": true,
+      "git_blob": "84945c23cac8e376fc24aeb5a43e4548b5eca8c9",
+      "disk_git_blob": "84945c23cac8e376fc24aeb5a43e4548b5eca8c9"
+    },
+    {
+      "path": "/collab/reviews/20261018_1606_s08_f000_scene/frames/S08_F000_grandma_match_box_RGBA.png",
+      "status": 200,
+      "bytes": 601803,
+      "sha256": "c803571d4a6446e783fcbeb7aef41d65c1862ff3bf78a9a53f34b4631170e3f3",
+      "disk_sha256": "c803571d4a6446e783fcbeb7aef41d65c1862ff3bf78a9a53f34b4631170e3f3",
+      "matches_fixed_disk": true,
+      "git_blob": "0b30a2536eb7c4ed5d8d790e168782393de59769",
+      "disk_git_blob": "0b30a2536eb7c4ed5d8d790e168782393de59769"
+    }
+  ],
+  "page_errors": [],
+  "chromium": "154.0.8037.57",
+  "actual_snap_command": [
+    "node",
+    "--require",
+    "/workspace/animation-competition/collab/reviews/cloud_s13_20261018/full_scene/tools/use_system_chromium.cjs",
+    "tools/js/snap.cjs",
+    "/collab/reviews/20261018_1606_s08_f000_scene/s08_f000_scene.js",
+    "/tmp/S08_F000.png",
+    "1920",
+    "1080",
+    "0"
+  ],
+  "snap_stdout": [
+    "[page] Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "/tmp/S08_F000.png"
+  ]
+}

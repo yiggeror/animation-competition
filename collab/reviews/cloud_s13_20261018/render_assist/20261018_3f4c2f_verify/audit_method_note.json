@@ -1,0 +1,9 @@
+{
+  "failed_audit_attempt": "DevTools response.body inspector cache evicted a large font and returned empty bitmap bodies; actual renders and fixed disk assets were intact.",
+  "root_cause_evidence": "Playwright Network.getResponseBody: Request content was evicted from inspector cache.",
+  "correction": "Resource byte audit uses browser-native fetch().arrayBuffer()+crypto.subtle SHA256, verified against clean fixed-commit disk/git blobs. No scene/asset/renderer changes.",
+  "final_status": "PASS all required resources for both modules;8/8 PNG pairs byte-identical",
+  "image_generation_calls": 0,
+  "full_shot_renders": 0,
+  "audio_changes": 0
+}
