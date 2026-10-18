@@ -1,0 +1,307 @@
+{
+  "status": "F020_STATIC_DUAL_REVIEW_LOCKED",
+  "final_sha256": "ff4fad4d91762f7a5e8687741d0d09747e466474b91c4f4d0d8f9df032d516e6",
+  "actual_native_calls": 10,
+  "successful_raws": 10,
+  "native_failures": 0,
+  "raw_registration": {
+    "scale": 0.800533689126084,
+    "tx": -28,
+    "ty": -21,
+    "coordinates": "3x crop1200x840, scene900720..13001000"
+  },
+  "true_near_hand_match_translation_from017": [
+    -12,
+    5
+  ],
+  "actual_near_match_head": [
+    1062,
+    787
+  ],
+  "actual_visible_shaft_start": [
+    1034,
+    824
+  ],
+  "visible_match_length": 46.400431,
+  "near_wrist_estimate": [
+    939,
+    871
+  ],
+  "table_box": [
+    1100,
+    960
+  ],
+  "note": "Natural native empty left hand is higher than construction but still18px before lever; shape/semantic extra transparent-air domain approved. Same raw cleanup only, original near-hand/match and box unchanged, no skin color correction. Lit forearm/palm±4; underside/wrist/knuckle and cuff shadows explicitly separate, not all-skin±4 claim. Exact actual Canvas continuity remains pending.",
+  "files": [
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_native_call10/request.json",
+      "sha256": "b946282190554e93992e829b0e03fa22c8c1cff474d851806e17323f7503d313",
+      "bytes": 5239
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_native_call10/prompt.txt",
+      "sha256": "b9ddd83d9caa1dc3fcd022bc724603b0b17912ca85f6c8d74a090fa93111eec8",
+      "bytes": 4446
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_native_call10/input_sha256.json",
+      "sha256": "ce464f5f3f40766ef7269104a84e5f7316a536b439f706d46f82361d25ef2ca8",
+      "bytes": 1997
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_native_call10/raw/F020_far_arm_release_native_raw.png",
+      "sha256": "1748aeae1e147b557ef73d797f420b02a5645a0d36accaaf6722d90cfbb74ab4",
+      "bytes": 930825
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_native_call10/status.json",
+      "sha256": "44b7ef21c559796ba73e8ce294b3e5e5c07bbf2e1658d34a13a9e63d028b7591",
+      "bytes": 714
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/build_input.py",
+      "sha256": "4a291d3d8ace11c93b099dbb354f19fceb372b82558cc1d5ffeed8c6b65a6861",
+      "bytes": 7274
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/composite_returned_crop.py",
+      "sha256": "d040f560e69b88e3176ef941d7af9bf983c59ca6b4f523310d9a33ced82b9346",
+      "bytes": 3162
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/prepare_same_raw_semantic_v5.py",
+      "sha256": "c1dcdde63635e007a262ede46106a4f888e44a8de2c2e97670d14420a58c2341",
+      "bytes": 5984
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/measure_color_planes_final.py",
+      "sha256": "935f53dfaed920c00a5cdd5f8a7eae0324e499fa5fd5a631570fb710357137f0",
+      "bytes": 3287
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/geometry/contract.json",
+      "sha256": "bbdf799f53825a759ebfdf8ed7cb26b774223e3808ea579605c22238fd5d495a",
+      "bytes": 1851
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_FINAL_LOCKED/S08_F020_grandma_match_box_RGBA.png",
+      "sha256": "ff4fad4d91762f7a5e8687741d0d09747e466474b91c4f4d0d8f9df032d516e6",
+      "bytes": 578510
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/geometry/checks.json",
+      "sha256": "07dac9d085a092ac0c67b75dd01570781c00a29785a9377b6bce40ad83cf1534",
+      "bytes": 924
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/geometry/color_planes_FINAL.json",
+      "sha256": "597afa1557a51e9b5316cd14aabf2dd80f7e4187a58f6185aa6939b2ce474ea9",
+      "bytes": 10161
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/inputs/F020_scene_preplaced_RGBA.png",
+      "sha256": "10139acfc858bc8fe4e36e2876a91728f1d5b54a9514430541abc6b06c6f0196",
+      "bytes": 545446
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/inputs/F017_accepted_previous_arm_POSE_CONTINUITY.png",
+      "sha256": "624d28379c4cae1ab8d4a3889528aecfe048a7d6f36d547e430ceb4a1ed5180d",
+      "bytes": 376984
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/inputs/F000_original_far_arm_COLOR_ONLY.png",
+      "sha256": "4f7f49e53210b0185f1eeeb446475946bfb58cd13cf37a6a802c2d0f1cdf7cb9",
+      "bytes": 384686
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/inputs/F020_near_hand_match_rigid_TRANSLATED_RGBA.png",
+      "sha256": "b6e27fe73452182016e9e628a867f1cdf9670674a707a7b19bbff8c8b38f9c40",
+      "bytes": 27863
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/inputs/F020_head_body_target_CONTEXT_ONLY.png",
+      "sha256": "01fc3b0ea2245bffb87bc404a1b535c3ebabb02f9c89ac3773b6541b0046e387",
+      "bytes": 608995
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/inputs/F020_arm_release_crop_3x_RGBA.png",
+      "sha256": "9fd3ae7a784d82d1609d877f654167a05eaa0e66daae156f085628d3a62dcc5b",
+      "bytes": 305711
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/inputs/F020_arm_release_crop_3x_WHITE_MASK.png",
+      "sha256": "5b95ab7295b7e3423050ab1c920e0acad288644c41a7b1bc08d06ddac3a074d9",
+      "bytes": 4694
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/masks/F020_box_fixed_on_table_guard.png",
+      "sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "bytes": 2180
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/masks/F020_near_wrist_only_collar.png",
+      "sha256": "9b10253be8b437db51612274e5b09f56dc36adaebf78ef78801eb97c23ef35e8",
+      "bytes": 2312
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/masks/F017_source_true_near_hand_match.png",
+      "sha256": "656965ea14f8cdec83990169b6518a8df758334a6f125e4400a08aa210a3faa9",
+      "bytes": 2965
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/masks/F020_preplaced_near_hand_match_guard.png",
+      "sha256": "a0d8cd9b0a4fa6cb866c80a5cfcdba1b2dc712756b13c5bccc3acbae419c2982",
+      "bytes": 2962
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/masks/F017_vacated_far_arm_old_near_hand.png",
+      "sha256": "f0a8d9c879269c7e73751bd0d70cd24a04239363c17b6cdae5c4d75cc69abf6b",
+      "bytes": 3579
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/masks/F020_scene_white_allowed_black_frozen.png",
+      "sha256": "df0dcafc1b057574c0a5521c5a76852dc1713e9fd47d63fa6066b7913bab4c9a",
+      "bytes": 4316
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_input_gate/masks/F020_true_hand_match_hard_guard_except_wrist_collar.png",
+      "sha256": "8f608fa0d114ddfcde5363484385139a6a50104d2399867c4f402b4327a4f0f5",
+      "bytes": 2973
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/REMOVE_old_native_near_outer_finger_edge_same_raw_offset30_0.png",
+      "sha256": "977989119991c9467c407ac236fc87aa8a2ac1056a74a673cc806f8a1b3a6ae6",
+      "bytes": 2318
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F020_forearm_inner_sample.png",
+      "sha256": "71d5cfbfc9829667ff655a33d82226c6cdd1e55d36f8069db0506ce9d5e6cb11",
+      "bytes": 2473
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F020_forearm_broad_including_lower_turn_FINAL_sample.png",
+      "sha256": "71d5cfbfc9829667ff655a33d82226c6cdd1e55d36f8069db0506ce9d5e6cb11",
+      "bytes": 2473
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/RESTORE_preplaced_original_near_wrist.png",
+      "sha256": "10a90f109e99f058149af8a16daf8c3ebf94976ad2a7d165f9b105bab1f4e699",
+      "bytes": 2483
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F000_forearm_lit_inner_FINAL_sample.png",
+      "sha256": "22d40246dea2bae7ad382c4dede63089932e0102dbf084922f4ed92e01d04070",
+      "bytes": 2752
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/FINAL_explicit_semantic_union_PROPOSED.png",
+      "sha256": "e4c95cffa00bf475c75e743c54aa44ea66c6496aa72103f921a8b92a94bb4317",
+      "bytes": 4309
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/CLEAR_generated_duplicate_box_only.png",
+      "sha256": "864fc1486911a9a5012d574c80d85b7152ea7d5e2ab081ef2d15bfde18f19ea9",
+      "bytes": 2299
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F020_forearm_lit_inner_FINAL_sample.png",
+      "sha256": "f848f13e5b9bcaf64c6e9d6395e539ce31df71e5bb1721a0924d99433638e67c",
+      "bytes": 2304
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F020_index_dorsal_lit_DIAGNOSTIC.png",
+      "sha256": "2a0e26bc056124d792a7b14a640f9e12390b4772c61711a6365793926c7228c7",
+      "bytes": 2164
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/NEW_release_outside_frozen_input_white.png",
+      "sha256": "95cc606582a4dd6266d6c2cca110f219fb65462b879f4afcab9f8ae90512a89c",
+      "bytes": 3119
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F020_wrist_lit_proximal_sample.png",
+      "sha256": "4152aa917ac41a63bbf296b57c2ef947b32799e7a7c8d90f05992e97f656541e",
+      "bytes": 2176
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F020_palm_inner_sample.png",
+      "sha256": "b9841878ad7c36da1582778fb542198495daf8aaa06621273659471cb9c4c69c",
+      "bytes": 2189
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F000_forearm_inner_sample.png",
+      "sha256": "22d40246dea2bae7ad382c4dede63089932e0102dbf084922f4ed92e01d04070",
+      "bytes": 2752
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F000_palm_lit_inner_FINAL_sample.png",
+      "sha256": "abf4ac15b275d46852a2dc9823f1fb454442e720b8d7d0fa351fc8cbc4b7e87e",
+      "bytes": 2212
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/REMOVE_old_native_near_knuckle_line_same_raw_offset5_minus10.png",
+      "sha256": "99d7afca92a4c79bc34eae22c487b902aff1268cc2bfabaa06e762c237b61a66",
+      "bytes": 2281
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/RESTORE_original_blue_cuff_only.png",
+      "sha256": "c29ce13332130c28d1756cc02deda8d5138284f3c0a3a69f3d88d0c6c14e7791",
+      "bytes": 2610
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F020_upperarm_under_cuff_shadow_FINAL_sample.png",
+      "sha256": "4475a4d6706b3319cb3d741327f5e19270060d1adee8bffecb52772708a73bc6",
+      "bytes": 2176
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/PROPOSED_full_actual_raw_hand_arm_permission.png",
+      "sha256": "0be1de176c8057dcaed4a8680066482d121fb29d3c808a5acaee16d4b42f2329",
+      "bytes": 3490
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F020_palm_lit_inner_FINAL_sample.png",
+      "sha256": "fb17270e45fa821cc3ba741378af898c71ee03cd51f111b01164c61c776dafa1",
+      "bytes": 2176
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F000_thumb_dorsal_lit_FINAL_sample.png",
+      "sha256": "fcf0dba7a8c2cebd498adf1f8af4b913300b239bc4a421a953915892030b2a7d",
+      "bytes": 2165
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F000_wrist_lit_proximal_sample.png",
+      "sha256": "a952e7f62c5bc79479ab376a7707edd833b7d029c5fff39a02fca3d187a210a2",
+      "bytes": 2118
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F020_palm_lower_turn_shadow_FINAL_sample.png",
+      "sha256": "b9841878ad7c36da1582778fb542198495daf8aaa06621273659471cb9c4c69c",
+      "bytes": 2189
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F020_thumb_dorsal_lit_FINAL_sample.png",
+      "sha256": "eb5d83c8985b6c08ef8732b22598e434375961d2f1dd6aeafc5e121bd3222328",
+      "bytes": 2160
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F000_palm_inner_sample.png",
+      "sha256": "abf4ac15b275d46852a2dc9823f1fb454442e720b8d7d0fa351fc8cbc4b7e87e",
+      "bytes": 2212
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F020_wrist_lower_turn_shadow_FINAL_sample.png",
+      "sha256": "4152aa917ac41a63bbf296b57c2ef947b32799e7a7c8d90f05992e97f656541e",
+      "bytes": 2176
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F000_wrist_lit_baseline_FINAL_sample.png",
+      "sha256": "a952e7f62c5bc79479ab376a7707edd833b7d029c5fff39a02fca3d187a210a2",
+      "bytes": 2118
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F020_result_semantic_v5/masks/F000_upperarm_lit_baseline_FINAL_sample.png",
+      "sha256": "a5af1eae046e6e614966ce4f1aa8f68127e994afda1b45040bb81e08af5829ae",
+      "bytes": 2463
+    }
+  ]
+}
