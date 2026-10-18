@@ -1,0 +1,64 @@
+{
+  "path": "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/outputs/chew/originals/d11_f25_call03.png",
+  "size": [
+    1670,
+    942
+  ],
+  "mode": "RGBA",
+  "sha256": "2acb78e759b6bad1a3fce07819c2b04108a2741ef9cd0e5752aac801b2ce3925",
+  "alpha_range": [
+    0,
+    255
+  ],
+  "alpha_zero_pixels": 1095040,
+  "nonzero_alpha_median": 253.0,
+  "fruit_stats": {
+    "visible_red_flesh_bbox": [
+      428,
+      473,
+      523,
+      574
+    ],
+    "visible_red_flesh_centroid": [
+      477.03,
+      532.49
+    ],
+    "visible_red_flesh_component_pixels": 5480,
+    "method": "Largest 4-connected high-red component in active-fruit ROI. Measures exposed red flesh, not whole-fruit size."
+  },
+  "anchors": {
+    "A": {
+      "actual_xy": [
+        559,
+        851
+      ],
+      "master_xy": [
+        558,
+        850
+      ],
+      "correlation": 0.990454455596799
+    },
+    "B": {
+      "actual_xy": [
+        1121,
+        851
+      ],
+      "master_xy": [
+        1118,
+        850
+      ],
+      "correlation": 0.9915319688056395
+    },
+    "H": {
+      "actual_xy": [
+        840,
+        551
+      ],
+      "master_xy": [
+        838,
+        550
+      ],
+      "correlation": 0.9160566859988022
+    }
+  }
+}

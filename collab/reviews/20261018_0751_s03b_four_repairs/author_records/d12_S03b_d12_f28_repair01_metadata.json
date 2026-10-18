@@ -1,0 +1,115 @@
+{
+  "id": "d12",
+  "path": "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d12/originals/S03b_d12_f28_repair01.png",
+  "size": [
+    1671,
+    941
+  ],
+  "mode": "RGBA",
+  "alpha_min": 0,
+  "alpha_max": 255,
+  "fully_transparent_px": 1109569,
+  "partially_transparent_px": 462029,
+  "sha256": "ab83234ad28bcf42046c350c99b46ac99f6895facee479aafc03a1289658150e",
+  "anchors": {
+    "A": {
+      "matched_xy": [
+        559,
+        850
+      ],
+      "offset": [
+        1,
+        0
+      ],
+      "template_correlation": 0.9392197787220196,
+      "method": "31x31px master RGBA template normalized correlation in \u00b120px search; not manually asserted target"
+    },
+    "B": {
+      "matched_xy": [
+        1123,
+        850
+      ],
+      "offset": [
+        5,
+        0
+      ],
+      "template_correlation": 0.9406039537181511,
+      "method": "31x31px master RGBA template normalized correlation in \u00b120px search; not manually asserted target"
+    },
+    "H": {
+      "matched_xy": [
+        845,
+        550
+      ],
+      "offset": [
+        7,
+        0
+      ],
+      "template_correlation": 0.9300318412505894,
+      "method": "31x31px master RGBA template normalized correlation in \u00b120px search; not manually asserted target"
+    }
+  },
+  "fruit_red_mask_measurement": {
+    "bbox_xyxy": [
+      577,
+      538,
+      671,
+      640
+    ],
+    "centroid_xy": [
+      626.67,
+      596.99
+    ],
+    "pixels": 5440,
+    "method": "largest connected red component x150..749 y>=300 R>150 G<110 B<110 alpha>220; no rind"
+  },
+  "manual_landmarks": {
+    "wrist": [
+      600,
+      695
+    ],
+    "palm": [
+      591,
+      644
+    ],
+    "elbow": [
+      568,
+      762
+    ],
+    "fruit_tip": [
+      625,
+      538
+    ],
+    "method": "native original visual estimate \u00b110px"
+  },
+  "notch_sample": {
+    "xy": [
+      646,
+      555
+    ],
+    "rgba": [
+      17,
+      65,
+      142,
+      253
+    ],
+    "interpretation": "underlying blue blouse in missing bite, not white patch"
+  },
+  "raw_copy_identical": true,
+  "midpoint_centroid_target": [
+    515.3,
+    560.63
+  ],
+  "midpoint_centroid_error": [
+    111.37,
+    36.36
+  ],
+  "d13_centroid": [
+    553.55,
+    588.79
+  ],
+  "beyond_d13_centroid": [
+    73.12,
+    8.2
+  ]
+}

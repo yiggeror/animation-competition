@@ -1,0 +1,279 @@
+{
+  "task": "S03b d09/d10 targeted sequential repairs",
+  "date_utc": "2026-10-18",
+  "method": "built-in image_gen edit",
+  "new_calls_used": 2,
+  "new_calls_max": 2,
+  "rate_limit_encountered": false,
+  "rerolls": 0,
+  "original_pixel_edits": false,
+  "repository_writes": false,
+  "timing_unchanged": {
+    "d09": {
+      "frame": 19,
+      "hold": 3
+    },
+    "d10": {
+      "frame": 22,
+      "hold": 3
+    }
+  },
+  "gate": "d09 actually reviewed by coordinator and independent reviewer before d10 was allowed; d10 was not called until release",
+  "overall_status": "d08-to-new09-to-new10 left/down geometry and watermelon continuity improved; d10-to-d11 still needs seam review; chewing jaw phase not verified",
+  "frames": [
+    {
+      "id": "d09",
+      "frame": 19,
+      "hold": 3,
+      "call_number": 1,
+      "wall_time_seconds": 40.5,
+      "generation_source_original": "/workspace/scratch/f060b5601755/generated_images/exec-f773c5e6-3831-467e-9df3-9eb065157bb3.png",
+      "output_original": "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d09_d10/originals/d09_f19_repair_call01.png",
+      "sha256": "4d5bb0a5a1e1bfa08bae203f380a0edf71df55716b3981ecb5693c9715cc90cf",
+      "same_bytes_as_generation_source": true,
+      "input_references": [
+        {
+          "path": "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/outputs/bite/S03b_d08_f17_original.png",
+          "role": "sole edit base; actual preceding d08",
+          "sha256": "18912572b43add72af92e156702fe89780ee1f91f5cd1d881e1fe55a76bcfef3"
+        }
+      ],
+      "transparent_background": true,
+      "prompt_file": "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d09_d10/logs/repair_call01_d09_prompt.txt",
+      "prompt": "Use case: identity-preserve. Make ONE very small animation continuation by editing the single supplied painted frame, d08. This image is the ONLY edit base. Output the same full 1670x942 transparent canvas with all stationary artwork unchanged. This is frame d09/F19, held for3 frames, after the bite, when she is slowly lowering the SAME bitten watermelon. Do not reconstruct or restage her pose.\n\nMain change: the active hand at screen-left lowers a small step, continuing away from her mouth, LEFT AND DOWN. Translate the wrist center from its actual position approximately(568,542) to approximately(541,570): about27 pixels left and28 pixels down on this 1670px-wide canvas. This is a small movement, not a large drop. Lower the whole SAME hand/fruit bundle with the wrist. Keep its apparent size exactly unchanged. Allow only a small10-degree counterclockwise relaxation of the hand/fruit from the supplied image, a gentle next step toward a more upright slice. Keep elbow low and tucked, lower its center only about10pixels from around(496,680) toward(492,691), reconnect the forearm naturally with rounded wrist contours. Do not lift the hand or melon toward the face, and do not raise the top of the melon above its current level.\n\nThe watermelon must be the IDENTICAL small slice from the supplied image. Preserve its specific proportions, red flesh, rind thickness, exactly the same three visible black seeds in the same relative layout, and the existing single small concave bite missing from its upper-right pointed edge. These features move/rotate together with the slice; no enlarged fruit, replacement slice, added seeds, new bite, smooth full tip, or altered notch. Preserve the same visible fingers cupping and supporting the green rind, continuous palm contact and sane finger joints. Do not change the gripping hand into a different hand or hide the rind.\n\nChewing acting: keep lips fully CLOSED, with a modest but clearly visible bulge on her screen-right cheek near the mouth as she begins the first chew. Keep the face recognizable and natural, not a balloon cheek or large grin. The head recovers upward only aboutONE degree from the supplied slightly-down pose, a tiny movement toward upright. Eyes continue looking at the slice. Preserve the same glasses, gray hair, red hair beads and facial identity. The later jaw-lowering chew is NOT this frame.\n\nStrictly preserve the supplied image's torso, fixed blue-white flower shirt pattern outside the needed active sleeve deformation, first button, inactive screen-right arm/resting hand/green bracelet, bean basin, beans, small bowl, trousers and bottom crop. Keep all their positions and colors unchanged. Actual stationary anchors in this input: basin rim left near(558,851), right near(1120,851), first button near(837,550). Do not recenter, zoom, rescale, crop, add margin or change the canvas. Exactly two arms, no ghost old arm, no duplicate fruit or fingers. Same linework, neutral lighting and color; genuine transparent background, no background fill, text, guides, numbers or overlays.\n",
+      "measured": {
+        "path": "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d09_d10/originals/d09_f19_repair_call01.png",
+        "size": [
+          1669,
+          942
+        ],
+        "mode": "RGBA",
+        "sha256": "4d5bb0a5a1e1bfa08bae203f380a0edf71df55716b3981ecb5693c9715cc90cf",
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_zero_pixels": 1101024,
+        "nonzero_alpha_median": 253.0,
+        "fruit_stats": {
+          "visible_red_flesh_bbox": [
+            533,
+            461,
+            604,
+            540
+          ],
+          "visible_red_flesh_centroid": [
+            566.94,
+            496.8
+          ],
+          "visible_red_flesh_component_pixels": 3190,
+          "method": "Largest 4-connected high-red component in active-fruit ROI. Measures exposed red flesh, not whole-fruit size."
+        },
+        "anchors": {
+          "A": {
+            "actual_xy": [
+              558,
+              851
+            ],
+            "master_xy": [
+              558,
+              850
+            ],
+            "correlation": 0.9800446905734139
+          },
+          "B": {
+            "actual_xy": [
+              1121,
+              851
+            ],
+            "master_xy": [
+              1118,
+              850
+            ],
+            "correlation": 0.9878642932189635
+          },
+          "H": {
+            "actual_xy": [
+              838,
+              551
+            ],
+            "master_xy": [
+              838,
+              550
+            ],
+            "correlation": 0.8332472586518981
+          }
+        }
+      },
+      "qa_files": [
+        "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d09_d10/qa/d08_to_d09_repair_onion50.png",
+        "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d09_d10/qa/d09_repair_actual_grid.png",
+        "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d09_d10/qa/d09_repair_face_crop.png",
+        "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d09_d10/qa/d09_repair_to_d10_repair_onion50.png",
+        "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d09_d10/qa/d09_repair_to_d11_onion50.png"
+      ],
+      "manual_review": {
+        "wrist_estimate_xy": [
+          541,
+          586
+        ],
+        "bite_concavity_estimate_xy": [
+          585,
+          480
+        ],
+        "seeds_visible": 3,
+        "bite_retained": true,
+        "cheek_puff": "weak",
+        "stage": "approved as sole d10 input, not full animation signoff"
+      }
+    },
+    {
+      "id": "d10",
+      "frame": 22,
+      "hold": 3,
+      "call_number": 2,
+      "wall_time_seconds": 42.7,
+      "generation_source_original": "/workspace/scratch/f060b5601755/generated_images/exec-d85a6774-25de-467e-b428-7949b7936bde.png",
+      "output_original": "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d09_d10/originals/d10_f22_repair_call02.png",
+      "sha256": "2185867940b808f8c23ef1fb8cf5dccfa2f962c3767f39325fd085e3c167b882",
+      "same_bytes_as_generation_source": true,
+      "input_references": [
+        {
+          "path": "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d09_d10/originals/d09_f19_repair_call01.png",
+          "role": "sole edit base; accepted new d09",
+          "sha256": "4d5bb0a5a1e1bfa08bae203f380a0edf71df55716b3981ecb5693c9715cc90cf"
+        }
+      ],
+      "transparent_background": true,
+      "prompt_file": "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d09_d10/logs/repair_call02_d10_prompt.txt",
+      "prompt": "Use case: identity-preserve. EDIT the ONLY supplied image, the accepted new d09 animation frame, into the next frame d10/F22 (held3 frames). One small, controlled continuation. Keep the exact supplied canvas size1669x942 and transparent background. Do not redraw the character, invent a new pose or replace the watermelon.\n\nHAND/FORWARD CONTINUITY: continue slowly LEFT AND DOWN. Move the active wrist from approximately(541,586) to approximately(515,607) on this full canvas: only26 pixels left,21 pixels down. The wrist must not rise. Lower the elbow slightly, from around(491,695) to around(487,704). Keep the shoulder stationary, elbow low and tucked, anatomically rounded wrist, and exactly the same visible fingers supporting the rind. The whole hand and same bitten slice travel together at unchanged size.\nRotate the hand/fruit bundle about15 degrees counterclockwise around its wrist relative to the supplied image, gently relaxing it toward a more upright held-slice orientation. This is only a small rotation, not a flip. The exposed red-flesh center should end near(519,515), lower and left of its present location near(567,497). The whole fruit stays clearly away from her mouth.\n\nSAME WATERMELON, not a replacement: retain the exact three visible black seeds with their relative arrangement, the same red-flesh silhouette and rind thickness, and the SAME existing single concave scalloped missing bite at the red tip. Preserve the same missing amount and same seed identities. Everything rotates together physically. No new seeds, seed duplication, missing notch, second bite, regrown point, enlarged wedge, or a newly designed fruit. Maintain continuous palm/finger support along the curved green rind with the same finger lengths.\n\nVISIBLE SECOND CHEW: keep lips closed but change the present soft smile into a slightly flatter closed chewing mouth line. Lower the lower-jaw/chin CONTOUR by about4–6 native pixels, a real subtle downward jaw motion, while lips lower about2 pixels. This is not simply drawing another crease. Let the modest screen-right cheek fullness relax slightly during this downward chew. It must read as a distinct small chewing phase from the supplied frame, without opening the mouth, a big grimace, balloon cheeks, or reshaping her identity. Let her head recover only another tiny degree toward upright. Eyes still track the slice. Preserve the eyes, round dark glasses, gray updo, red hair beads, facial scale and character identity.\n\nLOCK ALL STATIONARY ART: same torso and blue-white floral shirt with identical flower motifs outside the necessary moving sleeve, buttons/placket, screen-right inactive hand/forearm/green bangle, basin with beans, bottom-left small bowl, trousers and original bottom crop. Do not move or resize props. Actual input anchors: basin rim A(558,851),B(1121,851),first blouse buttonH(838,551). Keep these fixed. No recentering, zoom, canvas resize, new margins or crop. Same neutral light, color, linework and shading. No backdrop, text, numbers, diagrams, guide marks, old extra arm, duplicated hand or added objects. Genuine transparent cutout.\n",
+      "measured": {
+        "path": "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d09_d10/originals/d10_f22_repair_call02.png",
+        "size": [
+          1669,
+          942
+        ],
+        "mode": "RGBA",
+        "sha256": "2185867940b808f8c23ef1fb8cf5dccfa2f962c3767f39325fd085e3c167b882",
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_zero_pixels": 1098575,
+        "nonzero_alpha_median": 253.0,
+        "fruit_stats": {
+          "visible_red_flesh_bbox": [
+            499,
+            496,
+            572,
+            574
+          ],
+          "visible_red_flesh_centroid": [
+            534.89,
+            533.07
+          ],
+          "visible_red_flesh_component_pixels": 3269,
+          "method": "Largest 4-connected high-red component in active-fruit ROI. Measures exposed red flesh, not whole-fruit size."
+        },
+        "anchors": {
+          "A": {
+            "actual_xy": [
+              558,
+              852
+            ],
+            "master_xy": [
+              558,
+              850
+            ],
+            "correlation": 0.9611998452659293
+          },
+          "B": {
+            "actual_xy": [
+              1122,
+              851
+            ],
+            "master_xy": [
+              1118,
+              850
+            ],
+            "correlation": 0.9720343327044959
+          },
+          "H": {
+            "actual_xy": [
+              838,
+              551
+            ],
+            "master_xy": [
+              838,
+              550
+            ],
+            "correlation": 0.8581426238387684
+          }
+        }
+      },
+      "qa_files": [
+        "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d09_d10/qa/d09_repair_to_d10_repair_onion50.png",
+        "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d09_d10/qa/d10_repair_actual_grid.png",
+        "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d09_d10/qa/d10_repair_face_crop.png",
+        "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d09_d10/qa/d10_repair_to_d11_onion50.png"
+      ],
+      "manual_review": {
+        "wrist_estimate_xy": [
+          514,
+          628
+        ],
+        "bite_concavity_estimate_xy": [
+          550,
+          516
+        ],
+        "seeds_visible": 3,
+        "bite_retained": true,
+        "jaw_lowering": "not proven; mouth matched at0,+2px,chin at+1,+1px,eye at0,+1px",
+        "stage": "awaiting final seam/acting review"
+      }
+    }
+  ],
+  "offline_endpoint_reference": {
+    "path": "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/outputs/chew/originals/d11_f25_call03.png",
+    "role": "read only later boundary; never passed to image generation"
+  },
+  "face_patch_comparison": {
+    "mouth": {
+      "d09_patch_center": [
+        735,
+        379
+      ],
+      "best_matching_d10_displacement": [
+        0,
+        2
+      ],
+      "correlation": 0.9934552721692888,
+      "interpretation": "Local template alignment, not anatomical motion capture."
+    },
+    "chin": {
+      "d09_patch_center": [
+        762,
+        423
+      ],
+      "best_matching_d10_displacement": [
+        1,
+        1
+      ],
+      "correlation": 0.966970250481219,
+      "interpretation": "Local template alignment, not anatomical motion capture."
+    },
+    "near_eye": {
+      "d09_patch_center": [
+        786,
+        325
+      ],
+      "best_matching_d10_displacement": [
+        0,
+        1
+      ],
+      "correlation": 0.987353945906235,
+      "interpretation": "Local template alignment, not anatomical motion capture."
+    }
+  },
+  "qa_method": "50% blends of flattened neutral-gray read-only copies using common canvas area only; original dimensions and pixels untouched"
+}

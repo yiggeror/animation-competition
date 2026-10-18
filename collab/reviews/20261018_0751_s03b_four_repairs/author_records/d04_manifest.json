@@ -1,0 +1,118 @@
+{
+  "shot": "S03b",
+  "drawing": "d04",
+  "frame": 8,
+  "hold_frames": 2,
+  "tool": "built-in image_gen.imagegen",
+  "repair_call_sequence": 1,
+  "repair_call_limit": 1,
+  "total_worker_calls_including_original_round": 5,
+  "rate_limit_observed": false,
+  "retry_count": 0,
+  "edit_base": "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/outputs/raise/d03_f06.png",
+  "references": [
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/outputs/raise/d03_f06.png",
+      "role": "sole edit base actual d03",
+      "sha256": "c7821f99485f1c6c374d174c99486abc3cff6eea1b1659d7dd75186285ea7ad1"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/outputs/bite/S03b_d05_f10_original.png",
+      "role": "actual d05 subsequent boundary only",
+      "sha256": "06e5d45145df74e69af9df0fa55fdcd52cf18b004ec92b1841dc8fbea7ad1a2a"
+    }
+  ],
+  "inspected_not_sent_as_generation_reference": [
+    "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/outputs/raise/d04_f08.png",
+    "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/freeze_v2/skeleton/d04_f08.jpg"
+  ],
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "13bf4a8fe60ee27f56a112684e5918a2a6079557655f12005e2dd2fb67169b59",
+  "original": "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d04/d04_f08_repair01_original.png",
+  "generated_source": "/workspace/scratch/f060b5601755/generated_images/exec-bd38fc93-face-4f95-b576-dbb955a613dc.png",
+  "sha256": "5c309f6c89cd7076785bff73d3b9ce0ee9f64f3593292b1b9d3c5ea0f32fb718",
+  "size": [
+    1670,
+    942
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_zero_count": 1109325,
+  "transparent_background": true,
+  "original_postprocessing": "none; byte-identical copy",
+  "status": "coordinator_and_independent_review_accept_for_diagnostic_replacement; not_motion_approved",
+  "visual_judgment": "Green rind now remains on left/lower perimeter with the same visible red face and intact flesh, supported by palm/fingers. Old flip repaired. Head/face closely retain d03. The slice mostly translates right instead of completing an intermediate rotation; tip stays high by the cheek, and wrist may overshoot d05 in screen-x. d04-to-d05 still has a pronounced rotation/shape transition. Candidate retained for full-sequence visual review; no regeneration.",
+  "observed_output_points_approx_px": {
+    "fruit_top_tip": [
+      669,
+      333
+    ],
+    "wrist": [
+      647,
+      488
+    ],
+    "palm": [
+      619,
+      438
+    ],
+    "elbow": [
+      545,
+      673
+    ]
+  },
+  "point_measurement_note": "Visual reading from output originals/crops, ±10px approximate joint centers. Not copied from frozen input.",
+  "measured_anchors": {
+    "A": [
+      558,
+      852
+    ],
+    "B": [
+      1123,
+      852
+    ],
+    "H": [
+      838.0,
+      552.5
+    ]
+  },
+  "anchor_deltas_from_frozen": {
+    "A": [
+      0,
+      2
+    ],
+    "B": [
+      5,
+      2
+    ],
+    "H": [
+      0.0,
+      2.5
+    ]
+  },
+  "anchor_deltas_from_actual_d03": {
+    "A": [
+      1,
+      0
+    ],
+    "B": [
+      1,
+      0
+    ],
+    "H": [
+      1,
+      0
+    ]
+  },
+  "qa_reviewed": [
+    "qa/d04_previous_onion50.jpg",
+    "qa/d04_next_d05_onion50.jpg",
+    "qa/d03_d04_d05_active_contact.jpg",
+    "qa/d04_anchors.jpg"
+  ],
+  "qa_method": "50% blend over white with top-left alignment and only one-row padding for differing native sizes; QA derivatives only. Anchors independently segmented from output pixels.",
+  "continuous_motion": "Requires actual full-sequence composite review by Opus.",
+  "review_update": "Coordinator and independent reviewer inspected actual output and accept replacing old failed d04 for diagnostic sequence assembly. Old mouth-facing-rind failure closed; intact fruit/support grip maintained. Remaining risks: tip toward cheek/eye side, approx 26px wrist screen-x regression from d04 to d05, and downward rotation in a 2-frame exposure. Do not claim dynamic signoff."
+}
