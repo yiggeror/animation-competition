@@ -1,0 +1,13 @@
+# S07 F057 whole-arm preposition and continuous connection gate
+
+Coordinator and independent actual inspection select14degrees from the10/14/18degree same-source comparison. The old inferred wrist target(942,623) is withdrawn: the actual visible sleeve/arm chain cannot reach it without about30world pixels of artificial length. The selected wrist projects approximately(969.32,592.68); original jade/hand material is fully visible to the right of the blouse front edge. Near right leg forward and far left arm forward is the intended opposite-side walking phase. These projected points are guides, not true bone measurements.
+
+angle_14_PREPOSITION_NOT_ART.png is a technical pixel scaffold, not accepted artwork. It preserves the existing short-step leg geometry and shoe bases; head and near arm are unchanged. The original complete far arm is rigidly rotated without segment scaling; legitimate far-arm depth behind the blouse remains.
+
+The supplied white arm envelope deliberately releases the former whole-blue-blouse lock only at the real far sleeve outlet, adjoining side cloth and continuous upper-arm/elbow/proximal-forearm connection. Preserve the complete distal jade/hand material and its edge. Do not paste the far elbow over the front shirt merely to make it visible. This is an allowed semantic envelope, not a requirement to redraw every white pixel. Refine the actual final connection mask to remove inner cut-edge white scars and connect sleeve/arm naturally.
+
+Combine it with the existing independent trousers-root and near-ankle connection domains from e93afc911566e35ad5b1c0fb0caa1494bbf481f1. Keep whole leg chains, knee shapes, full shoes,64px ankle horizontal gap and actual sole775 support unchanged. Do not fix the pelvis/ankle holes by moving shoes or stretching a leg. Old36.56degree occluded-arm scaffold is withdrawn.
+
+Cloud author may prepare and actually view the final local crop/mask, preserving stated hard domains, and have its existing independent reviewer check the complete chain and contacts. If it stays within this frozen scaffold/envelope, one local connection image-edit request is allowed, followed by original-pixel constrained recomposition and actual full figure/ground review. Do not restart full-person generation. Any conflict requiring a different limb pose or broader head/near-arm changes returns to Astra before that action. New candidate must pass material-color comparison with this scene mother; natural shadow and fill sampled separately.
+
+All comparison/allowed-mask construction here used0 image-generation requests. Current F057 production count remains2 raw results,0 adopted before this repair.

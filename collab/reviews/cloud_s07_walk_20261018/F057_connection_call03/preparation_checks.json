@@ -1,0 +1,48 @@
+{
+  "status": "FINAL_CROP_MASK_PREPARED_PENDING_EXISTING_REVIEWER_NO_CALL_YET",
+  "fixed_source_commit": "56cb80c3dca135a1dbc6acde378433259590a183",
+  "current_user_authorization": "Selected14deg and withdrew wrist623; allows this final crop/mask review by existing independent reviewer then one local connection request without another parent/user confirmation.",
+  "source_sha256": "72b6d191185ef61a1e66f051912cf7ae4e7255a2153e30adb50594d0402bc909",
+  "crop_xyxy": [
+    560,
+    300,
+    1080,
+    1045
+  ],
+  "crop_size": [
+    520,
+    745
+  ],
+  "allowed_arm_envelope_pixels": 10745,
+  "final_arm_pixels": 10539,
+  "final_hip_pixels": 7905,
+  "final_ankle_pixels": 1340,
+  "final_mask_pixels": 19784,
+  "outside_allowed_pixels": 0,
+  "distal_jade_hand_overlap": 0,
+  "real_near_foot_ankle_overlap": 0,
+  "head_near_arm_other_body_overlap": 0,
+  "hip_envelope_source": "same original e93 polygon704,541/878,541/883,598/708,598; withdrawn36deg distal-hand exclusion not inherited; current14deg distal hand remains fully protected",
+  "old_36deg_guard_missing_gap_174_pixels_now_released": true,
+  "old_wrist623_withdrawn": true,
+  "selected_wrist_world": [
+    969.3215414625827,
+    592.676829036375
+  ],
+  "registration_unchanged": {
+    "s": 0.36410361842105265,
+    "tx": 627.0254537171638,
+    "ty": 402.7604324894813,
+    "head_target": 69.1796875,
+    "head_center_world": [
+      929.9596642434797,
+      442.447726897376
+    ],
+    "warning": "Head source is actual G037253±5asset pixels, not75.1 construction; F057 head190±5native manual estimate. One uniform whole-image registration only."
+  },
+  "step_geometry_source": "F057_local_repair/zero_call_pose_proposal/proposal_checks.json; same64horizontal and775real sole support; no new segment transforms",
+  "new_calls_at_preparation": 0,
+  "S07_actual_calls_at_preparation": 2,
+  "other10_calls": 0,
+  "no_request_in_flight": true
+}

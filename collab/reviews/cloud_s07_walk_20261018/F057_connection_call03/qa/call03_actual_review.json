@@ -1,0 +1,169 @@
+{
+  "status": "ONE_LOCAL_RETURN_RECOMPOSED_PENDING_ACTUAL_REVIEW",
+  "this_round_native_calls": 1,
+  "S07_total_native_calls": 3,
+  "other10_calls": 0,
+  "raw_sha256": "d0dab9f994ac1337ff0aec9cc50c6e779a3c355370c10f9a59e16b39db8e3d11",
+  "raw_size": [
+    1047,
+    1502
+  ],
+  "raw_return_byte_equal": true,
+  "frozen_inputs_and_prompt_verified": true,
+  "crop": [
+    560,
+    300,
+    1080,
+    1045
+  ],
+  "one_uniform_raw_to_crop_scale": 0.49665711556829034,
+  "one_uniform_raw_to_crop_translation": [
+    0,
+    0
+  ],
+  "output_height_after_uniform_scale": 745.9789875835721,
+  "requested_height": 745,
+  "no_nonuniform_or_segment_scale": true,
+  "candidate_sha256": "69cd37e40ebaf5aac8ad84458ce9a1febac9dbe8bead2bcdb6d58306f8fc2bc6",
+  "final_mask_pixels": 19784,
+  "candidate_changed_pixels": 15293,
+  "outside_final_mask_changes": 0,
+  "protected_head_near_arm_distal_jade_hand_real_foot_ankle_changes": 0,
+  "source_old_hip_gap_pixels_in_review_box": 179,
+  "remaining_hip_gap_alpha128_pixels_in_same_box": 18,
+  "source_and_candidate_world_registration": {
+    "s": 0.36410361842105265,
+    "tx": 627.0254537171638,
+    "ty": 402.7604324894813,
+    "head_target": 69.1796875,
+    "head_center_world": [
+      929.9596642434797,
+      442.447726897376
+    ],
+    "warning": "Head source is actual G037253±5asset pixels, not75.1 construction; F057 head190±5native manual estimate. One uniform whole-image registration only."
+  },
+  "selected_wrist_world_unchanged": [
+    969.3215414625827,
+    592.676829036375
+  ],
+  "ankle_horizontal_span_source_preserved_world": 64,
+  "actual_sole_world_source_preserved": 774.874330515797,
+  "material_comparison_same_scene_mother_pixels_shadow_and_fill_separate": {
+    "far_skin": {
+      "shadow": {
+        "pixels": 758,
+        "source_median_RGB": [
+          249.0,
+          197.0,
+          164.0
+        ],
+        "candidate_median_RGB": [
+          251.0,
+          196.0,
+          156.0
+        ],
+        "median_RGB_delta": [
+          2.0,
+          -1.0,
+          -8.0
+        ]
+      },
+      "fill": {
+        "pixels": 1682,
+        "source_median_RGB": [
+          250.0,
+          201.0,
+          165.0
+        ],
+        "candidate_median_RGB": [
+          251.0,
+          196.0,
+          156.0
+        ],
+        "median_RGB_delta": [
+          1.0,
+          -5.0,
+          -9.0
+        ]
+      }
+    },
+    "side_blouse": {
+      "shadow": {
+        "pixels": 658,
+        "source_median_RGB": [
+          77.0,
+          117.0,
+          172.5
+        ],
+        "candidate_median_RGB": [
+          99.0,
+          160.0,
+          226.0
+        ],
+        "median_RGB_delta": [
+          22.0,
+          43.0,
+          53.5
+        ]
+      },
+      "fill": {
+        "pixels": 1536,
+        "source_median_RGB": [
+          112.0,
+          167.0,
+          232.0
+        ],
+        "candidate_median_RGB": [
+          102.0,
+          163.0,
+          228.0
+        ],
+        "median_RGB_delta": [
+          -10.0,
+          -4.0,
+          -4.0
+        ]
+      }
+    },
+    "navy_root": {
+      "shadow": {
+        "pixels": 1717,
+        "source_median_RGB": [
+          40.0,
+          44.0,
+          64.0
+        ],
+        "candidate_median_RGB": [
+          43.0,
+          48.0,
+          69.0
+        ],
+        "median_RGB_delta": [
+          3.0,
+          4.0,
+          5.0
+        ]
+      },
+      "fill": {
+        "pixels": 3957,
+        "source_median_RGB": [
+          43.0,
+          47.0,
+          68.0
+        ],
+        "candidate_median_RGB": [
+          44.0,
+          49.0,
+          70.0
+        ],
+        "median_RGB_delta": [
+          1.0,
+          2.0,
+          2.0
+        ]
+      }
+    }
+  },
+  "no_new_requests_in_flight": true,
+  "full_figure_adoption_not_yet_claimed": true
+}

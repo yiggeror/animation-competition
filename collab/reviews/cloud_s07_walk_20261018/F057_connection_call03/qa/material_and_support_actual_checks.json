@@ -1,0 +1,100 @@
+{
+  "status": "ACTUAL_COLOR_AND_SUPPORT_EVIDENCE_PENDING_ASTRA_PALETTE_JUDGMENT",
+  "candidate_sha256": "1b166dc6e0ba1367eec70544c80bd690abab643299c85e9a317d1e64c1ce7919",
+  "G037_mother_sha256": "4ebf2dc030fc8afd1cc53fb0269b31b0e4b7c4c416019ec47c3a045341ac4f8a",
+  "skin_shadow_fill_samples": {
+    "G037实际站姿母源": {
+      "暗部": {
+        "pixels": 4257,
+        "median_RGB": [
+          232.0,
+          159.0,
+          104.0
+        ]
+      },
+      "底色": {
+        "pixels": 17076,
+        "median_RGB": [
+          246.0,
+          189.0,
+          141.0
+        ]
+      }
+    },
+    "F057冻结母源近右臂": {
+      "暗部": {
+        "pixels": 1209,
+        "median_RGB": [
+          250.0,
+          199.0,
+          160.0
+        ]
+      },
+      "底色": {
+        "pixels": 4897,
+        "median_RGB": [
+          252.0,
+          202.0,
+          163.0
+        ]
+      }
+    },
+    "F057冻结母源远左臂": {
+      "暗部": {
+        "pixels": 367,
+        "median_RGB": [
+          246.0,
+          195.0,
+          157.0
+        ]
+      },
+      "底色": {
+        "pixels": 1467,
+        "median_RGB": [
+          250.0,
+          201.0,
+          165.0
+        ]
+      }
+    },
+    "F057接续后远左臂": {
+      "暗部": {
+        "pixels": 522,
+        "median_RGB": [
+          246.0,
+          185.0,
+          144.0
+        ]
+      },
+      "底色": {
+        "pixels": 2112,
+        "median_RGB": [
+          251.0,
+          196.0,
+          156.0
+        ]
+      }
+    }
+  },
+  "sampling_limit": "Separate luminance-ranked skin shadow/fill samples; visible palette comparison, not a physical lighting fit.",
+  "palette_finding": "The frozen F057 mother is already lighter/pinker than accepted G037. The local returned forearm moves closer to G037, while all head/near arm and original blouse fill/shadow pixels are kept. No global recolor is authorized or performed. Do not call G037 palette exactly matched.",
+  "complete_original_near_shoe_and_ankle_material_RGBA_changes": 0,
+  "complete_distal_jade_hand_RGBA_changes": 0,
+  "support_actual": {
+    "far": {
+      "actual_sole_native_y": 1022,
+      "actual_sole_world_y": 774.874330515797,
+      "opaque_original_foot_pixels_below990_RGBA_changes": 0
+    },
+    "near": {
+      "actual_sole_native_y": 1022,
+      "actual_sole_world_y": 774.874330515797,
+      "opaque_original_foot_pixels_below990_RGBA_changes": 0
+    }
+  },
+  "horizontal_ankle_distance_source_preserved_world": 64,
+  "body_and_leg_chain_changes": "No joint or segment transform after frozen14deg scaffold; only authorized seam pixels taken; source proxy lengths are not anatomical measurements.",
+  "new_native_calls_unchanged": 1,
+  "S07_total_calls_unchanged": 3,
+  "no_request_in_flight": true
+}
