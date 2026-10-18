@@ -1,0 +1,7 @@
+# Production-path verification, 2026-10-18 16:29 UTC
+
+S13 is ready for Opus final visual review, audio and EDL integration. The earlier full120-frame silent Canvas film passed coordinator and independent actual-frame review. Production module js/anim/s13_drawn.js and all16 assets/chars/x13 PNGs are exact approved source pixels with path-only migration. Cloud actual Canvas comparison at16 exposure starts returned identical encoded PNG SHA256 and decoded RGBA. S10's8 exposure starts likewise match after production migration; its existing full visual/audio findings are unchanged.
+
+Evidence source: fixed b1fa2bace80a79dda6364ca70eaeb2c3d42306eb, collab/reviews/cloud_s13_20261018/render_assist/. This short package copies the exact contact sheets, pixel/resource logs and asset mapping; large paired PNG directories remain in that fixed source. Links inside copied cloud README refer to that complete source directory. Coordinator actually viewed both contact sheets, read module/path maps and independently checked the stored render hash pairs and required-resource status. Full film remains collab/reviews/20261018_1614_s13_full_visual/cloud_source/S13_drawn_120f_720p24.mp4.
+
+Scope: production migration verification plus previously completed full-film visual review. S13 is still silent; no claim of audio acceptance. S08's actual first-frame table/elbow occlusion is a separate pending scene-layer diagnosis, not acceptance.
