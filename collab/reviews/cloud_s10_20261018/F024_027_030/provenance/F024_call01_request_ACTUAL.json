@@ -1,0 +1,33 @@
+{
+  "tool": "image_gen.imagegen",
+  "state": "F024",
+  "call": 1,
+  "status": "adopted_after_author_static_QA_pending_Astra_exposure_review",
+  "prior_approved_candidate": "../F000_repair/candidate/F000_repaired.png",
+  "prior_sha256": "0e231c39834a557ea73cc9af146b6ebf7c35dac4f160c83ae2242f270b0c07c6",
+  "source_crop_canvas_rect": [
+    760,
+    350,
+    1170,
+    585
+  ],
+  "arguments": {
+    "prompt": "Edit this single small eye-and-eyebrow crop of the SAME grandmother to make the first mild reaction in a hand-drawn animation. Keep exactly the same crop framing and scale, round eyeglass frames, nose bridge, face skin colour, forehead wrinkles and gaze toward screen LEFT. The head has NOT turned yet. Do not draw a whole face, a head, hair, a body, a room or extra views outside this crop.\n\nOnly narrow both eye openings moderately: upper eyelids lower naturally over the irises, leaving approximately two thirds of their present vertical opening. This is the beginning of a squint, not fully closed eyes, not smiling crescent eyes and not the peak reaction. Preserve the same brown iris and eye volume, and the same quiet screen-left gaze. Do not squash the eyeballs or make the eyeglasses smaller. The near and far eyes are both still frontal at this instant.\n\nThe inner eyebrows gather VERY slightly with a small tension crease, but keep a calm older face rather than an angry expression or severe frown. Mouth and head pose are not in this edit. Thin organic linework and the exact existing neutral skin colours. Do not paint a flashlight beam, bright patch, glare, coloured light or new shadow. The scene light is added later.\n\nReturn ONE edited local crop in the same 410x235 landscape coordinates, with no extra margins, resizing, labels or collage. Existing transparent pixels remain transparent. Eyeglass rims and bridge should remain in place so the eye edit can be registered back onto the exact approved mother drawing.\n",
+    "referenced_image_paths": [
+      "/workspace/cloud-s10-review-20261018-1324/collab/reviews/cloud_s10_20261018/F024_027_030/inputs/F024_eyes_context.png"
+    ],
+    "transparent_background": true
+  },
+  "inputs": [
+    {
+      "path": "collab/reviews/cloud_s10_20261018/F024_027_030/inputs/F024_eyes_context.png",
+      "sha256": "f4bd02e9e86e930f5d244e27243e293db6cf020821b40e673af98a755c5edba2"
+    }
+  ],
+  "raw_output": {
+    "path": "originals/F024_call01_raw.png",
+    "sha256": "5380be486810f8e752d7d06577e93156db13cc7399a153a6af2a3d501bd25fdb"
+  },
+  "prepared_candidate": "candidate/F024.png",
+  "prepared_candidate_sha256": "c7fe7db0f4b3d8bee95c4f79fc5c252cf6fbb5ad1e9f4fc06dca0a6d84c78cae"
+}

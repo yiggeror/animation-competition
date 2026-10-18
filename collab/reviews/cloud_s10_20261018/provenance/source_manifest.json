@@ -140,9 +140,9 @@
   "reference_method": "Python/matplotlib technical diagrams; source art remains unchanged; no generated production character.",
   "source_art_copy_policy": "Original sources remain at fixed repository paths; no duplicate large originals in this package.",
   "current_execution": {
-    "stage": "F000 repaired candidate visually checked, pending Astra mother lock",
-    "executed_calls": 2,
-    "successful_outputs": 2,
+    "stage": "locked F000; F024/F027/F030 candidates and actual33frame scene exposure submitted for Astra review",
+    "executed_calls": 6,
+    "successful_outputs": 6,
     "failed_image_calls": 0,
     "other_pose_calls": 0,
     "tool": "image_gen.imagegen",
@@ -151,10 +151,18 @@
     "raw_image": "F000_first/originals/F000_call01_raw.png",
     "raw_sha256": "9f2ef4b461e74d96ee36a7e67acfafccf77446755b8545268113032e1c53dd4c",
     "local_cloth_repair_calls": 1,
-    "full_character_calls": 1,
     "candidate": "F000_repair/candidate/F000_repaired.png",
     "candidate_sha256": "0e231c39834a557ea73cc9af146b6ebf7c35dac4f160c83ae2242f270b0c07c6",
     "local_repair_request": "F000_repair/provenance/cloth_call01_request_ACTUAL.json",
-    "local_repair_raw": "F000_repair/originals/cloth_call01_raw.png"
+    "local_repair_raw": "F000_repair/originals/cloth_call01_raw.png",
+    "quality_rejected_outputs": 1,
+    "local_eye_calls": 1,
+    "initial_F000_calls": 1,
+    "pose_calls": {
+      "F024": 1,
+      "F027": 2,
+      "F030": 1
+    },
+    "latest_batch": "F024_027_030/README.md"
   }
 }

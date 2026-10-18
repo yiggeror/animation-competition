@@ -1,0 +1,31 @@
+{
+  "tool": "image_gen.imagegen",
+  "state": "F030",
+  "call": 1,
+  "status": "adopted_after_author_static_QA_pending_Astra_exposure_review",
+  "arguments": {
+    "prompt": "Edit the FIRST attachment, the actual previous F027 grandmother drawing, into ONE new hand-drawn animation state F030. The SECOND is a technical head-volume guide, not artwork to copy. Keep the same 1920x1080 composition, head scale, torso placement, blue-white-flower blouse and fixed lower-chest band. Do not zoom, reframe, move the whole body or add hands or props.\n\nContinue the small real head turn a LITTLE further toward screen RIGHT: about another 8-10 degrees from the previous drawing, roughly22 degrees total, still before the peak. Keep both eyes visible, with the screen-left near ear more exposed and the screen-right far ear now more occluded by the head. The far cheek and far glasses lens become a little narrower. Add a slight clockwise tilt of about4 degrees and a subtle chin tuck, with actual connected neck surfaces. This is not a full profile, not a 45degree turn, and not the peak F033.\n\nThe eyes now squeeze much more tightly, to narrow eyelid slits, approximately half the opening in F027, with at most a small trace of iris. She is shielding herself by turning away from off-screen light at screen LEFT; the eyes should not make an exaggerated wide sideways stare. Quiet closed mouth, a mild pressed-lip discomfort, not smiling or shouting. Keep mature grandmother identity and natural age lines.\n\nRedraw the complete head volume consistently: grey-white hairline/crown/rear skull, low bun with attached red beads, both ear visibility, jaw/chin, nose, round eyeglass planes, nose bridge and temple-to-ear contacts. All of these turn together. Do not leave old hair or ears frozen while shifting only facial features. Do not rigidly rotate a flat portrait. The low bun is attached hair mass, not a separate ponytail.\n\nRedraw the neck surfaces from the new jaw angle into the existing blouse collar, naturally and continuously; do not fix old neck pixels and twist only the face. Keep shoulders/body facing forward and lower chest/white flower pattern/bottom cloth band registered. No double collar or detached ear, no neck gap or white repair patch.\n\nNeutral material colours only: no baked flashlight illumination, white face patch, blue chin, orange rim, directional shadow, glass glare or background. Transparent background. One character state only, no diagram, text, inset, collage or later pose. Complete crown and bun stay inside the frame.\n",
+    "referenced_image_paths": [
+      "/workspace/cloud-s10-review-20261018-1324/collab/reviews/cloud_s10_20261018/F024_027_030/candidate/F027.png",
+      "/workspace/cloud-s10-review-20261018-1324/collab/reviews/cloud_s10_20261018/reference/poses/F030.png"
+    ],
+    "transparent_background": true
+  },
+  "inputs": [
+    {
+      "path": "collab/reviews/cloud_s10_20261018/F024_027_030/candidate/F027.png",
+      "sha256": "0ebcbee47fc75ee3daf9eb7c794376a16b55857fd90e6333d3a8aa257f051d0d"
+    },
+    {
+      "path": "collab/reviews/cloud_s10_20261018/reference/poses/F030.png",
+      "sha256": "341192bdbe116b23d32e22893336e04cc4ec1ef00db3e7c2d4ea0a769a893672"
+    }
+  ],
+  "prior_author_QA": "F027_preparation.json",
+  "raw_output": {
+    "path": "originals/F030_call01_raw.png",
+    "sha256": "dee8c70e038afdeea7262462ab1869176fefbda55fcb42a8b9903b9508f7d5df"
+  },
+  "prepared_candidate": "candidate/F030.png",
+  "prepared_candidate_sha256": "ecda49fb1923279868ebf72c705e2a21eac11c9cf3719c83971f3dcade420687"
+}
