@@ -1,0 +1,173 @@
+{
+  "status": "DIAGNOSTIC_BLOCKED_FAR_SLEEVE_SOURCE_CONFLICT_NOT_LOCKED",
+  "candidate_sha256": "526ca883e0867d5a1036b5afa99de35767c5216731b8674ac732d7a0f7c48735",
+  "sources": {
+    "F031": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/pre_tap_segment/clothing_semantic_review/continuous_contour_delivery/candidate/F031_raw_clothing_and_contours_for_final_lock.png",
+    "F031_sha256": "4b59c62485cf382c3e2d411de3c8ca9fb4edee622dad31b41946362889d44da7",
+    "native_raw": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/originals/F037_call01_raw.png",
+    "native_raw_sha256": "d913073cf1fb4feaa9b0fcc89c68c4112b1acefe2279b4fd6ddc1022b8a61a9b",
+    "locked_preposition": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/reference/F037_rigid_preposition_NOT_ART.png",
+    "locked_preposition_sha256": "ae58e01062d3644fd55af4752556fcc8e72516e40e052c6f5a1eb94afde9f454"
+  },
+  "transforms": {
+    "one_complete_near_arm_native_translation": [
+      0,
+      30
+    ],
+    "garment_native_translation": [
+      0,
+      0
+    ],
+    "raw_missing_right_column": "transparent padding only",
+    "scale": 1,
+    "rotation": 0,
+    "warp": false,
+    "alpha_composite_used_in_candidate": false
+  },
+  "adopt_pixels": 49880,
+  "arm_source_pixels": 31999,
+  "cloth_source_pixels": 17881,
+  "changed_pixels": 43028,
+  "outside_adoption_changes": 0,
+  "changes_outside_original_input_mask": 4879,
+  "locked_preposition_pixel_mismatches": 0,
+  "arm_source_RGBA_mismatches": 0,
+  "cloth_source_RGBA_mismatches": 0,
+  "head_changes": 0,
+  "near_cuff_changes": 0,
+  "far_visible_material_changes": 0,
+  "whole_grip_prop_changes": 0,
+  "far_arm_palm_changes": 0,
+  "below_778_changes": 0,
+  "floating_old_skin_1019_591_RGBA": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "new_image_calls": 0,
+  "scope_note": "Adoption refines the previously authorized entire near arm, obsolete arm occlusion contour and garment revealed by that arm. Original invocation mask and all parent files remain unchanged.",
+  "actual_review_blocker": "Preserved original far-sleeve tip and native-coordinate returned rounded sleeve do not form one smooth contour. Fixed-coordinate native garment source is transparent at the notch; original pixels there are old-arm skin/occlusion ink, not a usable new yellow contour. Do not adopt or expand F042.",
+  "source_gap_samples": [
+    {
+      "xy": [
+        1004,
+        610
+      ],
+      "original_RGBA": [
+        216,
+        170,
+        138,
+        254
+      ],
+      "native_dy0_RGBA": [
+        0,
+        127,
+        127,
+        2
+      ],
+      "native_dy30_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidate_RGBA": [
+        0,
+        127,
+        127,
+        2
+      ]
+    },
+    {
+      "xy": [
+        1005,
+        611
+      ],
+      "original_RGBA": [
+        17,
+        10,
+        14,
+        253
+      ],
+      "native_dy0_RGBA": [
+        127,
+        0,
+        0,
+        2
+      ],
+      "native_dy30_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidate_RGBA": [
+        127,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "xy": [
+        1005,
+        612
+      ],
+      "original_RGBA": [
+        149,
+        141,
+        136,
+        253
+      ],
+      "native_dy0_RGBA": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "native_dy30_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidate_RGBA": [
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "xy": [
+        1008,
+        608
+      ],
+      "original_RGBA": [
+        66,
+        46,
+        12,
+        253
+      ],
+      "native_dy0_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_dy30_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidate_RGBA": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

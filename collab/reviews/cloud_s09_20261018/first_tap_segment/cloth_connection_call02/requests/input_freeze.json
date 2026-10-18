@@ -1,0 +1,19 @@
+{
+  "status": "PREPARED_NOT_EXECUTED",
+  "source_sha256": "526ca883e0867d5a1036b5afa99de35767c5216731b8674ac732d7a0f7c48735",
+  "inputs": [
+    {
+      "path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/independent_recompose/F037_independent_original_pixels_PENDING.png",
+      "sha256": "526ca883e0867d5a1036b5afa99de35767c5216731b8674ac732d7a0f7c48735"
+    },
+    {
+      "path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/first_tap_segment/cloth_connection_call02/masks/only_missing_far_sleeve_connection.png",
+      "sha256": "4c68daddfea9c601b4102f1793f8ade47df8544471ce5431b5c21ba7008558b5"
+    }
+  ],
+  "arguments_sha256": "1b613320ddb4bf805b5d0abcbc9f221e5b2909550b79a4e553acf30200ab0a56",
+  "mask_pixels": 503,
+  "author_actual_mask_review": "PASS: only newly exposed cloth connection; complete near arm and child-defined hard protection intersection0",
+  "reviewer_mask_record": "../independent_recompose/PROPOSED_connection_mask_checks.json",
+  "new_native_calls": 0
+}
