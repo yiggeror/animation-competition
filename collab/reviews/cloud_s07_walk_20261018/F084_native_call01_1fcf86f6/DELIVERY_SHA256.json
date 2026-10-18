@@ -1,0 +1,287 @@
+{
+  "status": "EXACT_SOURCE_AND_SINGLE_ORIGINAL_VERIFIED_NOT_VISUAL_PASS",
+  "source_commit": "1fcf86f6a66786685a9ad0659ced6952833cb46d",
+  "prompt_and_five_images_unchanged": true,
+  "base64_host_archive_byte_identity": true,
+  "requests": 1,
+  "originals": 1,
+  "accepted_candidate": null,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "f72958aeda4b97c1eab185ae11e1d00e2ffb4a13e304ab9914a56701a96b81ee"
+    },
+    {
+      "path": "frozen_input/PACKAGE_SHA256.json",
+      "sha256": "d69baa4a89c1569a4ce8828bb4121a1b1d14dc604e0d14b54ca324405dc4193c"
+    },
+    {
+      "path": "frozen_input/README.md",
+      "sha256": "8a3c8880ff2bf9133003b0e875c0a2aef8a87e4420eb115ae6a571612cf4b140"
+    },
+    {
+      "path": "frozen_input/geometry/preparation_checks.json",
+      "sha256": "5b2d166f1cff0d45a9a9aab528ffc8a7e6d3a9b3508a7a68d18bfdfb36c6d827"
+    },
+    {
+      "path": "frozen_input/layers/F084_body_head_blouse.png",
+      "sha256": "522e32b9aef5e520da786f5e5dee5f1b1f0cae25d8eb0e248a4049f48aef4e4a"
+    },
+    {
+      "path": "frozen_input/layers/F084_far_complete_arm_jade_hand.png",
+      "sha256": "7aabbc6d293d7cf5c1679722ad46a2301d1f74e6c9bac4885415a7741fad1860"
+    },
+    {
+      "path": "frozen_input/layers/F084_far_shoe_ankle_SWING.png",
+      "sha256": "c0385f95a38ebbf2d2236d88c4e44c0e003665dec0f1b0412f47f6a9ccb8411a"
+    },
+    {
+      "path": "frozen_input/layers/F084_near_complete_arm.png",
+      "sha256": "7279d8bf087eea900d99dce4d51e0135727a84e8b6ced2435be71678f83fb436"
+    },
+    {
+      "path": "frozen_input/layers/F084_near_shoe_ankle_SUPPORT_FIXED.png",
+      "sha256": "57518102bfef2d81fd98017bd445e8ae7918bdb1dd60093657f82fc576a6cc7c"
+    },
+    {
+      "path": "frozen_input/layers/F084_old079_corrected_trousers_OBSOLETE_POSE_MATERIAL.png",
+      "sha256": "9805df3b9044578aebec3cc0ceb4147a4aa3af69fa13e22c549ea1da47abc46b"
+    },
+    {
+      "path": "frozen_input/masks/F084_complete_waist_both_trousers_WHITE_EDIT_PENDING.png",
+      "sha256": "fa43be490f82e1eb9992cc31a63b6e05d87fdd3ecb486eb9a9d4137faa1b05b7"
+    },
+    {
+      "path": "frozen_input/masks/F084_crop_WHITE_EDIT_PENDING.png",
+      "sha256": "8894e26e64b0a4092c2bfc1dcdb443c5695757523d1a09f67a0cc9d86215a1f1"
+    },
+    {
+      "path": "frozen_input/masks/HARD_actual_head_blouse_except_sleeves.png",
+      "sha256": "a027895be2f3fe4662253c94da410d62ea500d6770f6a46e67a02a0300fa596f"
+    },
+    {
+      "path": "frozen_input/masks/HARD_far_swing_shoe_visible_material.png",
+      "sha256": "49b511c3088ddce2a4b63758208a59dac54648bf428c9ab1981f390d95f44707"
+    },
+    {
+      "path": "frozen_input/masks/HARD_near_support_shoe_actual_material.png",
+      "sha256": "1f2290e4a45f224761878d5946d8d70d8b808bd51c095f1cbe14c1945b7e4843"
+    },
+    {
+      "path": "frozen_input/masks/HARD_visible_complete_arms_except_sleeves.png",
+      "sha256": "883875da97c4db15c27b4e41f2e6afb271089f683d2e2db23802f3a1395128dd"
+    },
+    {
+      "path": "frozen_input/masks/far_proximal_cuff_approach_RELEASE.png",
+      "sha256": "2d658fb9701c0b540f8b13e956cfe81acd3d60af6107d93750f716beb075b483"
+    },
+    {
+      "path": "frozen_input/masks/far_shoe_under_future_near_shin_OCCLUSION_RELEASE_NOT_SOURCE_CHANGE.png",
+      "sha256": "c8f7b603231af5ae144cff1ea769f8296f0b56abb28e7beb0803e298ca5955e9"
+    },
+    {
+      "path": "frozen_input/masks/full_far_swing_foot_LAYER_NOT_HIDDEN_GUARD.png",
+      "sha256": "a9e46463c190b4c5192d7897a572308a5c8bc8b986e7608365a80f21da8b26ab"
+    },
+    {
+      "path": "frozen_input/masks/full_old_new_trousers_semantic_GUIDE.png",
+      "sha256": "cc69623a050e6ec1ca7e32319e3ec0219f1513354885af69575f9b553c0e36ac"
+    },
+    {
+      "path": "frozen_input/prepare.py",
+      "sha256": "ff588ae316522fc1f9a67a0bd7a999a5552842e194d08a412c1cd66ae7ab53b7"
+    },
+    {
+      "path": "frozen_input/qa/61sol_actual_input_review.json",
+      "sha256": "aebed85b583bb55592f813208970de0c945ffe50b15f105e55189a1ca8618ef6"
+    },
+    {
+      "path": "frozen_input/qa/F079_F084_actual_preposition_and_mask_dark.png",
+      "sha256": "633b38bae295679cabb3ba6a18d6830974c215e8113801b963966b5c5ce08bd9"
+    },
+    {
+      "path": "frozen_input/qa/F079_F084_actual_preposition_and_mask_gray.png",
+      "sha256": "e471f53a577fa3f352afe41e90b0c90b0105cd8d34c04031dab0d4830cca9acc"
+    },
+    {
+      "path": "frozen_input/qa/F079_corrected_six_source_layers_REPLAY.png",
+      "sha256": "856d10c9516c33a8e992a121033e76a5ac55bda269b16949a90aa431206f0364"
+    },
+    {
+      "path": "frozen_input/qa/F084_actual_crop_and_WHITE_MASK_dark.png",
+      "sha256": "f37f4ca5a4d4ae8dcf572304b521fbbc4b72ff3051aaedcb7d32dea04700a248"
+    },
+    {
+      "path": "frozen_input/qa/F084_actual_crop_and_WHITE_MASK_gray.png",
+      "sha256": "028baa1316966e41d810516e4e5b34a669ec909c19f9c04d1ccd58239523bea2"
+    },
+    {
+      "path": "frozen_input/qa/F084_actual_sleeves_and_feet_dark.png",
+      "sha256": "951c6307df8dff089123d560bdd3b8091815b32ac73803eee1bb05c7fc659546"
+    },
+    {
+      "path": "frozen_input/qa/F084_actual_sleeves_and_feet_gray.png",
+      "sha256": "2ba24cce0c6f555e8a97094df34873d40f2bf9e3f9fb1a49ee5f873ed5ba0adb"
+    },
+    {
+      "path": "frozen_input/qa/F084_complete_white_domain_overlay_dark.png",
+      "sha256": "b74c41eefc5e1a5f6ddc5809d67990dc6c5b97497e2041306d4fea3c92dabed6"
+    },
+    {
+      "path": "frozen_input/qa/F084_complete_white_domain_overlay_gray.png",
+      "sha256": "657844718d3513f0176e84c181dd623de6967c8158aee4c2f92e15712e8d16aa"
+    },
+    {
+      "path": "frozen_input/qa/F084_crop_dark_NOT_ART.png",
+      "sha256": "cf01d9d34754042e058ecba37f2c2bd89d1464a0afdab7c66b361f0666a58403"
+    },
+    {
+      "path": "frozen_input/qa/F084_crop_gray_NOT_ART.png",
+      "sha256": "28d77e8836b1a25c98ab93a67bed5cbb76b2373875a81b67231be2c6f5e118f4"
+    },
+    {
+      "path": "frozen_input/qa/F084_full_dark_NOT_ART.png",
+      "sha256": "351a3fddf7a9e0aa63938c2adc99d7123950992179dd6cd12ed1e88e18d407c2"
+    },
+    {
+      "path": "frozen_input/qa/F084_full_gray_NOT_ART.png",
+      "sha256": "e462223ae0953a3a07367ff81028836e9c7054a7c482671982b8c2e6080277a5"
+    },
+    {
+      "path": "frozen_input/qa/F084_proxy_and_support_crop_GUIDE_NOT_ART.png",
+      "sha256": "567160a531f0edf5fca6a8c6b2769c4545c3d5969c29be2b35f5eccfedaadc52"
+    },
+    {
+      "path": "frozen_input/qa/root_actual_input_review.json",
+      "sha256": "70fc502ba88551a2c71f86fce4e5753fc5a494e33258996373269d175c278f14"
+    },
+    {
+      "path": "frozen_input/reference/F084_actual_feet_hidden_proxy_GUIDE_NOT_ART.png",
+      "sha256": "3257292faf6c3d467d5a04ccee62258cabd5e5ccf2ede0b1521880b5570ed608"
+    },
+    {
+      "path": "frozen_input/reference/F084_actual_source_preposition_NOT_ART.png",
+      "sha256": "5f55617fd8207c79c0961445d866c472e52cd98443d9cd317e6f567970c9249c"
+    },
+    {
+      "path": "frozen_input/reference/F084_crop_RGBA_NOT_ART.png",
+      "sha256": "d622d6b4d1178551782964f7172db38cc5155a0db9b7cb41bdde1e2872525db8"
+    },
+    {
+      "path": "frozen_input/requests/arguments_PREPARED_NOT_CALLED.json",
+      "sha256": "d5369d12bcd3ab267587360da42fd39c0fdeb6d3fd7444fdb122bd1af3acb248"
+    },
+    {
+      "path": "frozen_input/requests/input_sources_PENDING_ROOT_REVIEW.json",
+      "sha256": "cd3a418e19f573b72715984b3c95574f9ca2d916d5cda6a38a360bd594208f46"
+    },
+    {
+      "path": "frozen_input/requests/prompt_PREPARED_NOT_CALLED.txt",
+      "sha256": "8e7a2262f24b445eedf674f9580b32abf8eea41f0cf092fc39fe2d2f44074202"
+    },
+    {
+      "path": "frozen_input/sources/F057_locked_actual_volume_reference.png",
+      "sha256": "93939f3e148c0a957ef418c677e60cc3fd27cf6b6844f91d500c8a3508b76720"
+    },
+    {
+      "path": "frozen_input/sources/F062_calibrated_preparation_metadata.json",
+      "sha256": "3c0a18af56da4575ab427ab69d238015c00e89c7c9cdd5a58853d1d604a39c1b"
+    },
+    {
+      "path": "frozen_input/sources/F062_locked_palette_anchor.png",
+      "sha256": "393622a77349083751122520b690bd35017f8535a25560d8cca775446d2eeb2f"
+    },
+    {
+      "path": "frozen_input/sources/F079_approved_input_metadata_PROXY_ONLY.json",
+      "sha256": "514760cc80c904237b664679394be860c680189da19a3ccbe4bd3c8d3f1f72db"
+    },
+    {
+      "path": "frozen_input/sources/F079_corrected_LOCKED.png",
+      "sha256": "856d10c9516c33a8e992a121033e76a5ac55bda269b16949a90aa431206f0364"
+    },
+    {
+      "path": "frozen_input/sources/F079_native_complete_trousers_original_color_TRIAL.png",
+      "sha256": "3bcf45cc79ce9cd036b64e0265d3d38516afd0d852a11ce32f685c10c4d4dec4"
+    },
+    {
+      "path": "frozen_input/sources/F079_source_F079_body_head_blouse.png",
+      "sha256": "ddb113ad133a148f61efa1e729803640a68068ac3cfa43708915a59f76bc665a"
+    },
+    {
+      "path": "frozen_input/sources/F079_source_F079_far_complete_arm_jade_hand.png",
+      "sha256": "78db082eed7f787c633d2369a6571fa70762c22b6c63d3e3387290b47f94f065"
+    },
+    {
+      "path": "frozen_input/sources/F079_source_F079_far_shoe_ankle_SUPPORT_FIXED.png",
+      "sha256": "1103f923c4e2613dac88e8d1a8534c101103013c4db468af1adcd83426a74e77"
+    },
+    {
+      "path": "frozen_input/sources/F079_source_F079_near_complete_arm.png",
+      "sha256": "cca531e2fc91a6b8c7468411b0f062b58a2a225714f49d2648bfceba1f3702da"
+    },
+    {
+      "path": "frozen_input/sources/F079_source_F079_near_shoe_ankle_LANDED.png",
+      "sha256": "57518102bfef2d81fd98017bd445e8ae7918bdb1dd60093657f82fc576a6cc7c"
+    },
+    {
+      "path": "frozen_input/sources/legacy_events_079_084_ONLY.json",
+      "sha256": "474a4a3e1c8d7ea3c5752830bc4d608673da8ac6fd1017ef611c2ee1406ca2bf"
+    },
+    {
+      "path": "frozen_input/sources/snapshot_manifest.json",
+      "sha256": "876dbbcbd3483e9fa6af9ebb0baa3bdf93c5f9b2237df30dc23dcb24151042a1"
+    },
+    {
+      "path": "originals/F084_call01_RAW.png",
+      "sha256": "bf0817af5a9aecefebe8dedcfb23bb69104230f21613ebdc4a450c992d17e459"
+    },
+    {
+      "path": "originals/source_identity.json",
+      "sha256": "332b603dc630ae0019471c947e2040d8844a1bed01b1f8d80207aca90806bfd6"
+    },
+    {
+      "path": "qa/F084_actual_raw_whole_dark_NOT_PASS.png",
+      "sha256": "80bb236cb914be2c13268e9b565073cecdb979f59a9b14a3286046f8b2926810"
+    },
+    {
+      "path": "qa/F084_actual_raw_whole_gray_NOT_PASS.png",
+      "sha256": "f401b7f724ba407c98cc6834394d0c0581c76022e36771349d636ac3e41a1a0f"
+    },
+    {
+      "path": "qa/F084_approved_input_vs_actual_raw_dark_HOLD.png",
+      "sha256": "d2cbca7fcf4ea0512a8a6243494ca9a6035dcd5df11b1db1cd1c923d0397e91b"
+    },
+    {
+      "path": "qa/F084_approved_input_vs_actual_raw_gray_HOLD.png",
+      "sha256": "9d56004750d19e5b177b3d08a8b099bddf812eac4cc18bd7ed0db9327136a776"
+    },
+    {
+      "path": "qa/F084_raw_same_requested_frame_DIAGNOSTIC_NOT_ADOPTED.png",
+      "sha256": "6d2a95abbbc90f202eee6de7054827edbd06dbc6a8077bee8a9eb573d772a8fa"
+    },
+    {
+      "path": "qa/root_actual_output_review_HOLD.json",
+      "sha256": "2fe8a394f3e60c0a8583f937d88e253a384f01975962fa0512f02051b5f61fde"
+    },
+    {
+      "path": "requests/arguments_call01_EXACT.json",
+      "sha256": "d5369d12bcd3ab267587360da42fd39c0fdeb6d3fd7444fdb122bd1af3acb248"
+    },
+    {
+      "path": "requests/astra_authority_and_input_verification.json",
+      "sha256": "d2a4210439723d386d150de46ab635b7b6a774c53b61f3c8388df7731057ccf3"
+    },
+    {
+      "path": "requests/call01_raw_tool_return.json",
+      "sha256": "deb480d8dc304f19150c0a5bd2e756e0e424e688911ab7357cc7dd495c629d4d"
+    },
+    {
+      "path": "requests/execution_state.json",
+      "sha256": "36cd9bf2bd55ac909ac977f93fba2552a0cb83d999ba63e8ef185851048087f3"
+    },
+    {
+      "path": "requests/prompt_call01_EXACT.txt",
+      "sha256": "87047076a23e8803c5c9fd8c92d703e286a8cebef870b94d6d10c672d5e5d5dc"
+    }
+  ]
+}

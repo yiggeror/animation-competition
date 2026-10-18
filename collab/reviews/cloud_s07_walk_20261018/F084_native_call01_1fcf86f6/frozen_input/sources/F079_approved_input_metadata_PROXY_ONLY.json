@@ -1,0 +1,171 @@
+{
+  "status": "F079_SINGLE_ACTUAL_INPUT_PREPARED_NOT_GENERATED_PENDING_ROOT_REVIEW",
+  "mother073_SHA": "afc7dcff6593611d0e33b16a7fce9e12967bf1767cacf8336308a51a50af1929",
+  "source_layer_replay_RGBA_changes": 0,
+  "frame": 79,
+  "hold_frames": 5,
+  "inclusive_frames": [
+    79,
+    83
+  ],
+  "support": "far LEFT remains planted; near RIGHT lands; double support to near RIGHT load",
+  "registration": {
+    "s": 0.36410361842105265,
+    "tx": 627.0254537171638,
+    "ty": 402.7604324894813,
+    "head_target": 69.1796875,
+    "head_center_world": [
+      929.9596642434797,
+      442.447726897376
+    ],
+    "warning": "Head source is actual G037253±5asset pixels, not75.1 construction; F057 head190±5native manual estimate. One uniform whole-image registration only."
+  },
+  "body_head_delta_world": [
+    50.320514241760975,
+    5.249506568476249
+  ],
+  "body_head_delta_native": [
+    138.2038290637636,
+    14.417617136684628
+  ],
+  "near_whole_shoe_delta_native": [
+    184.01355166572557,
+    63.0
+  ],
+  "near_whole_shoe_delta_world": [
+    67.0,
+    22.93852796052632
+  ],
+  "far_whole_support_shoe_RGBA_changes": 0,
+  "actual_feet": {
+    "far_support": {
+      "native_bottom": 1022,
+      "world_bottom": 774.874330515797,
+      "x_span_alpha128": [
+        973,
+        1143
+      ]
+    },
+    "near_landed": {
+      "native_bottom": 1022,
+      "world_bottom": 774.874330515797,
+      "x_span_alpha128": [
+        1199,
+        1374
+      ]
+    }
+  },
+  "actual_sleeve_roots_native": {
+    "near": [
+      1136.2704581286948,
+      374.4971157577951
+    ],
+    "far": [
+      1312.2704581286946,
+      372.4971157577951
+    ]
+  },
+  "whole_arm_rigid_transforms": {
+    "near": {
+      "rotation_degrees_from_actual073": 12.0,
+      "matrix": [
+        [
+          0.9781476007338057,
+          -0.20791169081775934
+        ],
+        [
+          0.20791169081775934,
+          0.9781476007338057
+        ]
+      ],
+      "translation_native": [
+        234.8787169234813,
+        -185.22350228954713
+      ],
+      "scale": 1
+    },
+    "far": {
+      "rotation_degrees_from_actual073": -12.0,
+      "matrix": [
+        [
+          0.9781476007338057,
+          0.20791169081775934
+        ],
+        [
+          -0.20791169081775934,
+          0.9781476007338057
+        ]
+      ],
+      "translation_native": [
+        89.41108780171476,
+        266.34469129118867
+      ],
+      "scale": 1
+    }
+  },
+  "hidden_near_hip_proxy_native": [
+    1214.2704581286946,
+    617.506121179238
+  ],
+  "hidden_far_hip_shape_proxy_native": [
+    1195.0451616860068,
+    620.252592099622
+  ],
+  "actual_near_ankle_proxy_native": [
+    1245.8268282442195,
+    957.8118142506097
+  ],
+  "actual_far_ankle_proxy_native": [
+    1039.8415092154223,
+    953.9968292356247
+  ],
+  "near_knee_corridor_native": [
+    1260.240724535435,
+    772.9304705563372
+  ],
+  "far_knee_corridor_native": [
+    1105.5499249059817,
+    774.5495738512915
+  ],
+  "knee_direction_derivation": {
+    "near": {
+      "source_fraction": 0.4652456511759037,
+      "signed_source_perp_offset_native": 31.423036896332373,
+      "clamped_corridor_offset_native": 31.423036896332373
+    },
+    "far": {
+      "source_fraction": 0.48264619572612033,
+      "signed_source_perp_offset_native": -16.086915687996644,
+      "clamped_corridor_offset_native": -16.086915687996644
+    }
+  },
+  "proxy_limit": "062 calibrated manual source-proxy bend direction/fraction advanced between actual target endpoints only; not observed bones or hard lengths. Never substitute old791/744/758/623 or64/58. Native may settle hip and knee naturally; actual full art decides proportion/support.",
+  "crop_xyxy": [
+    900,
+    280,
+    1420,
+    1060
+  ],
+  "crop_size": [
+    520,
+    780
+  ],
+  "white_pixels": 121775,
+  "clipped_editable_actual_alpha20_material": 0,
+  "guard_intersections": {
+    "body": 0,
+    "whole_visible_arms": 0,
+    "near_landed_foot": 0,
+    "far_visible_support_foot": 0
+  },
+  "old_visible_pants_uneditable_except_genuine_foreground": 0,
+  "palette_anchor": "actual locked057/062; sources/F062_palette_anchor.png; no cumulative068/073 palette shift",
+  "new_calls": 0,
+  "F084_and_other_states_unopened": true,
+  "limits": [
+    "Old073 trousers are obsolete material and must be completely redrawn, not retained as079 bend/cuff cuts.",
+    "Source sleeves/skin/hands and real feet protected as visible actual material; black full hidden far-foot layer alpha never cuts new foreground pants.",
+    "Soles are true alpha128 boundaries1022, not legacy ankle758 or construction ground.",
+    "Only input preparation; no imagegen, submit, eleven-state expansion or finished079 claim."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "HOLD_ONE_NATIVE_NOT_ADOPTED",
+  "source_commit": "1fcf86f6a66786685a9ad0659ced6952833cb46d",
+  "raw_sha256": "bf0817af5a9aecefebe8dedcfb23bb69104230f21613ebdc4a450c992d17e459",
+  "actual_viewed": [
+    "originals/F084_call01_RAW.png (actual native tool display)",
+    "qa/F084_approved_input_vs_actual_raw_gray_HOLD.png",
+    "qa/F084_approved_input_vs_actual_raw_dark_HOLD.png",
+    "frozen_input/reference/F084_crop_RGBA_NOT_ART.png",
+    "frozen_input/masks/F084_crop_WHITE_EDIT_PENDING.png"
+  ],
+  "clear_blockers": [
+    {
+      "id": "framing_changed",
+      "finding": "The requested520x780 crop starts in the blouse/shoulder region, with the head outside. The1024x1536 original reframes to include the entire head and full character. Uniform display resize does not establish valid source registration."
+    },
+    {
+      "id": "far_passing_foot_target_not_followed",
+      "finding": "Approved084 places the complete far LEFT lifted shoe near the same horizontal position as the fixed near RIGHT support shoe: actual alpha128x spans far1204..1373, near1199..1374. The returned original instead puts the far lifted shoe clearly behind/image-left of the support shoe and continues a rearward leg. Restoring the actual fixed shoes would require a new complete leg pose, not a narrow cuff bridge or segmented code transform."
+    }
+  ],
+  "retained_facts": [
+    "The returned original is one actual coherent full figure, preserved entirely; no material has been deleted to hide the failure.",
+    "Five actual approved image inputs and prompt matched fixed1fcf86f bytes before request. There was one authorized request and one original output.",
+    "No adopted084candidate, source-layer production composite or exposure acceptance is claimed. No retry or090state has been executed."
+  ],
+  "diagnostic_registration": "Whole RAW uniformly resized only for same requested-frame display comparison. No leg/ankle/body nonuniform warp or false repaired figure.",
+  "requests": 1,
+  "originals": 1,
+  "retry_authorized": false,
+  "disposition": "Deliver single original, complete prompt/tool return/frozen inputs and actual gray/darkHOLD evidence immediately to Astra. Any new correction requires its own reviewed input and explicit single-state authorization."
+}
