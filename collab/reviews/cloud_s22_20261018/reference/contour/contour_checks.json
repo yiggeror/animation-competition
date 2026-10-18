@@ -1,0 +1,76 @@
+{
+  "method": "manually authored Bezier palm/finger volumes; SVG rasterized by installed Chromium; temporary alpha masks only check hover separation, not anatomical signoff",
+  "checks": [
+    {
+      "frame": 0,
+      "new_reference": "F000_volume_reference.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "manual_source": "F000_volume_source.svg",
+      "adult_child_surface_overlap_px": 0,
+      "minimum_outline_distance_px": 17.46424919657298,
+      "child_grip_P": [
+        926,
+        598
+      ],
+      "child_wrist": [
+        700,
+        700
+      ],
+      "adult_wrist": [
+        560,
+        430
+      ],
+      "rod_angle_deg": -30,
+      "adult_never_grips_rod": true,
+      "image_generation_calls": 0
+    },
+    {
+      "frame": 24,
+      "new_reference": "F024_volume_reference.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "manual_source": "F024_volume_source.svg",
+      "adult_child_surface_overlap_px": 20170,
+      "minimum_outline_distance_px": 0.0,
+      "child_grip_P": [
+        926,
+        598
+      ],
+      "child_wrist": [
+        700,
+        700
+      ],
+      "adult_wrist": [
+        650,
+        500
+      ],
+      "rod_angle_deg": -30,
+      "adult_never_grips_rod": true,
+      "image_generation_calls": 0
+    }
+  ],
+  "actual_visual_review": "Both final annotated1920x1080PNG opened and inspected. F000 has separated adult/child outlines; F024 adult near thumb rests proximal dorsum and four curl caps emerge under ulnar edge, while child thumb/index-middle grip remains visible. Manual construction, not production anatomy signoff; Astra gate pending.",
+  "original_exposure_unchanged": true,
+  "original_exposure_and12_existing_reference_files_byte_unchanged": [
+    "S22_exposure.csv",
+    "S22_plan.json",
+    "reference/poses/F000.png",
+    "reference/poses/F012.png",
+    "reference/poses/F018.png",
+    "reference/poses/F024.png",
+    "reference/poses/F036.png",
+    "reference/poses/F042.png",
+    "reference/poses/F060.png",
+    "reference/poses/F066.png",
+    "reference/poses/F084.png",
+    "reference/poses/F090.png",
+    "reference/poses/F108.png",
+    "reference/poses/F114.png"
+  ],
+  "image_generation_calls": 0
+}
