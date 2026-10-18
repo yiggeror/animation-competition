@@ -1,0 +1,214 @@
+{
+  "status": "SEMANTIC_COLOR_AND_OLD_ANKLE_TAIL_PENDING_ACTUAL_REVIEW",
+  "source_commit": "6a6e2699c262b9d3b42f61a499a7c42ddc856191",
+  "source_sha256": "1b166dc6e0ba1367eec70544c80bd690abab643299c85e9a317d1e64c1ce7919",
+  "G037_sha256": "4ebf2dc030fc8afd1cc53fb0269b31b0e4b7c4c416019ec47c3a045341ac4f8a",
+  "authorization": "Astra explicit per-material correction and old ankle-tail cleanup; no whole-person redraw",
+  "new_native_calls": 0,
+  "S07_native_calls_total": 3,
+  "in_flight": false,
+  "native_size": [
+    1672,
+    1080
+  ],
+  "registration_unchanged": {
+    "s": 0.36410361842105265,
+    "tx": 627.0254537171638,
+    "ty": 402.7604324894813,
+    "head_target": 69.1796875,
+    "head_center_world": [
+      929.9596642434797,
+      442.447726897376
+    ],
+    "warning": "Head source is actual G037253±5asset pixels, not75.1 construction; F057 head190±5native manual estimate. One uniform whole-image registration only."
+  },
+  "part_colors": [
+    {
+      "part": "face",
+      "fully_weighted_pixels": 6997,
+      "delta_RGB": [
+        -10,
+        -8,
+        -9
+      ],
+      "before_median_RGB": [
+        252.0,
+        203.0,
+        165.0
+      ],
+      "after_median_RGB": [
+        242.0,
+        195.0,
+        156.0
+      ]
+    },
+    {
+      "part": "ear",
+      "fully_weighted_pixels": 579,
+      "delta_RGB": [
+        -8,
+        -3,
+        3
+      ],
+      "before_median_RGB": [
+        251.0,
+        198.0,
+        155.0
+      ],
+      "after_median_RGB": [
+        243.0,
+        195.0,
+        157.0
+      ]
+    },
+    {
+      "part": "neck",
+      "fully_weighted_pixels": 1087,
+      "delta_RGB": [
+        -10,
+        -19,
+        -23
+      ],
+      "before_median_RGB": [
+        253.0,
+        202.0,
+        163.0
+      ],
+      "after_median_RGB": [
+        243.0,
+        183.0,
+        141.0
+      ]
+    },
+    {
+      "part": "near_arm",
+      "fully_weighted_pixels": 7911,
+      "delta_RGB": [
+        -6,
+        -12.5,
+        -21.5
+      ],
+      "before_median_RGB": [
+        252.0,
+        201.0,
+        163.0
+      ],
+      "after_median_RGB": [
+        246.0,
+        188.0,
+        142.0
+      ]
+    },
+    {
+      "part": "far_arm",
+      "fully_weighted_pixels": 3803,
+      "delta_RGB": [
+        -5,
+        -8,
+        -14
+      ],
+      "before_median_RGB": [
+        251.0,
+        195.0,
+        156.0
+      ],
+      "after_median_RGB": [
+        246.0,
+        187.0,
+        142.0
+      ]
+    },
+    {
+      "part": "near_hand",
+      "fully_weighted_pixels": 2876,
+      "delta_RGB": [
+        -3,
+        -8,
+        -22
+      ],
+      "before_median_RGB": [
+        252.0,
+        200.0,
+        162.0
+      ],
+      "after_median_RGB": [
+        249.0,
+        192.0,
+        140.0
+      ]
+    },
+    {
+      "part": "far_hand",
+      "fully_weighted_pixels": 2065,
+      "delta_RGB": [
+        -3,
+        -8,
+        -22
+      ],
+      "before_median_RGB": [
+        249.0,
+        198.0,
+        162.0
+      ],
+      "after_median_RGB": [
+        246.0,
+        190.0,
+        140.0
+      ]
+    },
+    {
+      "part": "blue_blouse",
+      "fully_weighted_pixels": 42415,
+      "delta_RGB": [
+        18,
+        0,
+        -23
+      ],
+      "before_median_RGB": [
+        108.0,
+        162.0,
+        231.0
+      ],
+      "after_median_RGB": [
+        126.0,
+        162.0,
+        208.0
+      ]
+    },
+    {
+      "part": "trousers",
+      "fully_weighted_pixels": 66593,
+      "delta_RGB": [
+        0,
+        0,
+        -6
+      ],
+      "before_median_RGB": [
+        42.0,
+        46.0,
+        67.0
+      ],
+      "after_median_RGB": [
+        42.0,
+        46.0,
+        61.0
+      ]
+    }
+  ],
+  "ear_neck_sampling": "G037 actual unpremultiplied ear median243/195/157 and neckfill243/184/142 from corresponding skin-only patches, alpha>180; face/arm/hand corrections follow Astra measured ranges. Different anatomy/lighting limits exact per-pixel matching.",
+  "RGB_changed_pixels": 141587,
+  "alpha_changed_pixels": 36,
+  "alpha_changes_outside_old_tail": 0,
+  "old_tail_bbox": [
+    775,
+    967,
+    792,
+    975
+  ],
+  "old_tail_removed_pixels": 36,
+  "old_tail_alpha128_pixels": 16,
+  "protected_white_gray_ink_hair_jade_feet_ankle_skin_changes": 0,
+  "geometry_or_articulation_changes": 0,
+  "candidate_sha256": "93939f3e148c0a957ef418c677e60cc3fd27cf6b6844f91d500c8a3508b76720",
+  "body_palette_limit": "Separate smooth skin parts and colored fabric only; neutral white/gray, dark ink, hair, jade and alpha frozen. No one RGB delta applied to whole image."
+}

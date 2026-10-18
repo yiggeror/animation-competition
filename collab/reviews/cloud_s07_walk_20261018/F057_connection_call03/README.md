@@ -1,5 +1,7 @@
 # F057定向连接1次 · 原件与最小重组交Astra锁母审查
 
+**Astra已通过本图身份／结构／短步与裤根，指定仅同原图语义回母色与近踝旧尾清理；最新完整修复入口为[分区颜色／踝尾](../F057_semantic_color_ankle/README.md)，SHA93939f3e…8b76720。本文原候选及计数保留为历史。**
+
 **唯一当前候选：[F057_call03_minimum_connections_PENDING.png](candidate/F057_call03_minimum_connections_PENDING.png)**，1672×1080 RGBA，SHA256 `1b166dc6e0ba1367eec70544c80bd690abab643299c85e9a317d1e64c1ce7919`；[世界配准图](candidate/F057_call03_minimum_world_PENDING.png)。先看[三处修前／实际重组](qa/three_connections_minimum_before_after.png)、[全身灰底](qa/F057_call03_minimum_full_gray.png)、[全身深底](qa/F057_call03_minimum_full_dark.png)。[6.1sol实际复核](qa/postreturn_cloud_61sol_actual_review.md)未见新的明确几何／拓扑阻断，同意交Astra锁帧审查；颜色门仍待裁定，**尚不冒称057整态已锁**；其他10态未生成。
 
 执行固定 `56cb80c3dca135a1dbc6acde378433259590a183` 的14°完整臂与批准语义包络，旧623腕目标已撤回；同源短步64／真实鞋底775预摆不重做。既有6.1sol实际看最终crop/mask后才发一次局部原生请求，记录见[预调用实审](qa/precall_cloud_61sol_actual_review.md)。裁图为原画布 `[560,300,1080,1045]`，520×745，排除头脸，只请求远袖→肘→近端前臂、裤根与近踝必要接续，没有请求整人或新姿态。
