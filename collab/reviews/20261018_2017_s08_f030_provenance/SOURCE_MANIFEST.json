@@ -1,0 +1,738 @@
+{
+  "created_utc": "2026-10-18T20:19:20.773371+00:00",
+  "root_original": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433",
+  "five_actual_refs_verified": true,
+  "original_native_output_matches_preserved_raw": true,
+  "source_files_unchanged": true,
+  "files": [
+    {
+      "path": "F030_input_gate/inputs/F030_actual_edit_target_1p5x_RGBA.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/inputs/F030_actual_edit_target_1p5x_RGBA.png",
+      "role": "actual_native_generation_reference_in_submitted_order_1",
+      "sha256": "9c9239b8fb6330d58d5ab9e4b40327b68eb4f7779935b9b03aea8d61665691e2",
+      "gitsha": "9270230a37b68e474afc57c7b913650eefad19c5",
+      "bytes": 1004698
+    },
+    {
+      "path": "F030_input_gate/inputs/F030_actual_edit_WHITE_MASK_1p5x.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/inputs/F030_actual_edit_WHITE_MASK_1p5x.png",
+      "role": "actual_native_generation_reference_in_submitted_order_2",
+      "sha256": "b85cc0dcce3ab962fe4ad60d60afdab6c7ab077cb3bfa1846be036898fa5cd09",
+      "gitsha": "73141e77ce4229f5b9ff1a7cd5aefb1a7eb5c85b",
+      "bytes": 6102
+    },
+    {
+      "path": "F030_input_gate/inputs/F027_locked_identity_and_full_arm_volume_REFERENCE.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/inputs/F027_locked_identity_and_full_arm_volume_REFERENCE.png",
+      "role": "actual_native_generation_reference_in_submitted_order_3",
+      "sha256": "5020ad7e7147c35ed867088c14600446cb116b03c86833d43fcfedaa45b55b49",
+      "gitsha": "847c7b3d92600482e2ba970f8adeaa4871f816b2",
+      "bytes": 870013
+    },
+    {
+      "path": "F030_input_gate/inputs/F030_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/inputs/F030_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+      "role": "actual_native_generation_reference_in_submitted_order_4",
+      "sha256": "8a6d3928a027317a1b28cf86dfa1dae330895e8b9f33671fa325a12607293028",
+      "gitsha": "64e9846c57c961a7599ebe8f544acdc227f77475",
+      "bytes": 152897
+    },
+    {
+      "path": "F030_input_gate/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png",
+      "role": "actual_native_generation_reference_in_submitted_order_5",
+      "sha256": "a2bcc2d0530fda4160bed990bbc343ff86c34e5c3f6bfc8c58472630444f88ee",
+      "gitsha": "561da17c2c82f992e85255f50785fff74588d108",
+      "bytes": 684410
+    },
+    {
+      "path": "F030_input_gate/request.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/request.json",
+      "role": "exact_original_generation_record",
+      "sha256": "50c4647e13062538ec801eee5d6341718818d2205a9d895121b28928cde98b51",
+      "gitsha": "4c21f5c2e07c1dcde9bca4aa1da2f2f11e88220f",
+      "bytes": 5433
+    },
+    {
+      "path": "F030_input_gate/prompt.txt",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/prompt.txt",
+      "role": "exact_original_generation_record",
+      "sha256": "47ed0a9eee55811b0210ef21726ee07e38b1b844ae95ebced80536632dadc4ab",
+      "gitsha": "f2535b9fb245f6a4ab9a11fe486e728909331ec6",
+      "bytes": 4593
+    },
+    {
+      "path": "F030_input_gate/geometry/FROZEN_INPUT_MANIFEST.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/geometry/FROZEN_INPUT_MANIFEST.json",
+      "role": "exact_original_generation_record",
+      "sha256": "a01eaca97b0425a60ef83d3c0281037ae464a23b7268228b3378cfa404eeeca5",
+      "gitsha": "0890ea1e2b47ab64b0d820e561bd47c0adc49a99",
+      "bytes": 3882
+    },
+    {
+      "path": "F030_input_gate/geometry/INPUT_CONTRACT.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/geometry/INPUT_CONTRACT.json",
+      "role": "exact_original_generation_record",
+      "sha256": "d85c2e78ade3feac2bed25d51630712774ccfd9f59413c7475a3c2fbad82c348",
+      "gitsha": "a9ec18381ae8ae57e9d858b17a69a636d737471d",
+      "bytes": 1852
+    },
+    {
+      "path": "F030_input_gate/geometry/RAW_UNIFORM_REGISTRATION_DIAGNOSTIC.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/geometry/RAW_UNIFORM_REGISTRATION_DIAGNOSTIC.json",
+      "role": "exact_original_generation_record",
+      "sha256": "3952e2fff20b467a2e0be54c302bcc71538f7ef1462e13212ade3cd294e37204",
+      "gitsha": "dcedbfbca762bc19062c2eaf7cf99ec724a9125c",
+      "bytes": 206
+    },
+    {
+      "path": "F030_native_call15/request.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_native_call15/request.json",
+      "role": "exact_original_generation_record",
+      "sha256": "50c4647e13062538ec801eee5d6341718818d2205a9d895121b28928cde98b51",
+      "gitsha": "4c21f5c2e07c1dcde9bca4aa1da2f2f11e88220f",
+      "bytes": 5433
+    },
+    {
+      "path": "F030_native_call15/prompt.txt",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_native_call15/prompt.txt",
+      "role": "exact_original_generation_record",
+      "sha256": "47ed0a9eee55811b0210ef21726ee07e38b1b844ae95ebced80536632dadc4ab",
+      "gitsha": "f2535b9fb245f6a4ab9a11fe486e728909331ec6",
+      "bytes": 4593
+    },
+    {
+      "path": "F030_native_call15/FROZEN_INPUT_MANIFEST.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_native_call15/FROZEN_INPUT_MANIFEST.json",
+      "role": "exact_original_generation_record",
+      "sha256": "a01eaca97b0425a60ef83d3c0281037ae464a23b7268228b3378cfa404eeeca5",
+      "gitsha": "0890ea1e2b47ab64b0d820e561bd47c0adc49a99",
+      "bytes": 3882
+    },
+    {
+      "path": "F030_native_call15/status.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_native_call15/status.json",
+      "role": "exact_original_generation_record",
+      "sha256": "77abe9f41fe836dc3e2502cb3fa95e5a041fa2a9d1b70264bb47aaf8caf3b155",
+      "gitsha": "fbbb0f3d4a4da0b7cdfdcb9c50c92ca0bd766b38",
+      "bytes": 897
+    },
+    {
+      "path": "F030_native_call15/raw/F030_whole_turn_arms_native_raw.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_native_call15/raw/F030_whole_turn_arms_native_raw.png",
+      "role": "exact_original_generation_record",
+      "sha256": "875c9f44855705b9f0a42cd9a36d7e31d873a8ba173c790004038453cae40a51",
+      "gitsha": "0f502d83eeff83b68e7e782a087b0079d64d227c",
+      "bytes": 1239507
+    },
+    {
+      "path": "F030_input_gate/masks/F030_RELEASE_original_far_empty_air_occupied_by_new_near_hand.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/masks/F030_RELEASE_original_far_empty_air_occupied_by_new_near_hand.png",
+      "role": "frozen_input_semantic_guard_or_permission",
+      "sha256": "250fc106861cf0ebf5de354a2d94b1933d60d39ab3eb2eb802e062b3c8e631d1",
+      "gitsha": "0239235d4f58cf91767b9f73381db9e31c6750c9",
+      "bytes": 2491
+    },
+    {
+      "path": "F030_input_gate/masks/F030_REMOVED_isolated_permission_islands.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/masks/F030_REMOVED_isolated_permission_islands.png",
+      "role": "frozen_input_semantic_guard_or_permission",
+      "sha256": "b82738342e403ba1f0569ff954116c816db98f797a9a11703ee081677f6aa361",
+      "gitsha": "b837a213ab6f1f692d47ab90c5fea62fca8c554a",
+      "bytes": 3455
+    },
+    {
+      "path": "F030_input_gate/masks/F030_WHITE_body_neck_head_arms_and_wrist_allowed.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/masks/F030_WHITE_body_neck_head_arms_and_wrist_allowed.png",
+      "role": "frozen_input_semantic_guard_or_permission",
+      "sha256": "e05bcb37f921c70043eb9dc4ba709d5e3f8ccf65a9d5541a5cb378fe948905eb",
+      "gitsha": "906845b2402eb0d0f855c179fefbb94ece6573a1",
+      "bytes": 5574
+    },
+    {
+      "path": "F030_input_gate/masks/F030_far_hand_jade_TRUE_ALPHA0_SEAT_guard.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/masks/F030_far_hand_jade_TRUE_ALPHA0_SEAT_guard.png",
+      "role": "frozen_input_semantic_guard_or_permission",
+      "sha256": "5598879950dafc00b0018efde583f58958688571c96a22fb9239b64c25a2dff0",
+      "gitsha": "6ba64759cc098c5e7ba6751aa835ca0408a9c2d1",
+      "bytes": 2735
+    },
+    {
+      "path": "F030_input_gate/masks/F030_fixed_table_box_guard.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/masks/F030_fixed_table_box_guard.png",
+      "role": "frozen_input_semantic_guard_or_permission",
+      "sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "gitsha": "51086df36f7566dc215a94ee9d2c81fc306f9234",
+      "bytes": 2180
+    },
+    {
+      "path": "F030_input_gate/masks/F030_near_distal_palm_fingers_entire_match_guard.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/masks/F030_near_distal_palm_fingers_entire_match_guard.png",
+      "role": "frozen_input_semantic_guard_or_permission",
+      "sha256": "644309f76cfd6a198b86a911b07c07e3857701a300d58bcb59d7460e41803355",
+      "gitsha": "7fc7b22caca8b47052dba62ba2bab49c0c3d2c6a",
+      "bytes": 3131
+    },
+    {
+      "path": "F030_input_gate/masks/F030_near_proximal_wrist_palmroot_release.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/masks/F030_near_proximal_wrist_palmroot_release.png",
+      "role": "frozen_input_semantic_guard_or_permission",
+      "sha256": "d1181f0564aa1c1fbc457d35c03b715ee016426cc5c6dec1639f6e50a102ee97",
+      "gitsha": "56027d2e41885919d028375a04281dbbc27c790a",
+      "bytes": 2382
+    },
+    {
+      "path": "F030_input_gate/masks/F030_near_whole_transformed_hand_footprint.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/masks/F030_near_whole_transformed_hand_footprint.png",
+      "role": "frozen_input_semantic_guard_or_permission",
+      "sha256": "0f4fa9c34fda0417a4de08441061fb87b5abad5814edb4fbda87e72bd5a8eee0",
+      "gitsha": "0963a6ec830180bbc8355564b067aab09fb09cba",
+      "bytes": 3051
+    },
+    {
+      "path": "F030_input_gate/inputs/F030_preplaced_original_body_anchor_and_truehands_NO_ROD_RGBA.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/inputs/F030_preplaced_original_body_anchor_and_truehands_NO_ROD_RGBA.png",
+      "role": "frozen_original_pixel_preplacement_oracle_not_replay_input",
+      "sha256": "1e5f5f7ec0b73cce2a311197d354f1ad622a7e4dadb959c9263d663a705397cc",
+      "gitsha": "134e07b489dfca4ea6c6e18b7a101758d1b10b5f",
+      "bytes": 519664
+    },
+    {
+      "path": "F030_input_gate/build_input.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/build_input.py",
+      "role": "unchanged_original_script_or_input_construction_record",
+      "sha256": "76debf18e24dc3d499eae43866cae620157e9d5a3f40851d5ee6654db40d2c54",
+      "gitsha": "8d4584b43a2cd5ff7eb8474004a1e0e07ee80584",
+      "bytes": 9601
+    },
+    {
+      "path": "F030_input_gate/composite_returned_crop.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_input_gate/composite_returned_crop.py",
+      "role": "unchanged_original_script_or_input_construction_record",
+      "sha256": "e663299d0c752af23ace0739a0839c6d261c9c640587e33e9600231af7377999",
+      "gitsha": "94874406af28622c4c099b73fc3ccab320495b0a",
+      "bytes": 3510
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/build.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/build.py",
+      "role": "unchanged_original_script_or_input_construction_record",
+      "sha256": "0cc1811c2b27b62f0bf16dd1a3f6ec1dd7862024f19d205d257bff8db6650668",
+      "gitsha": "d04593b84ad529f9599bdaf298bb23e721b3d22d",
+      "bytes": 9998
+    },
+    {
+      "path": "F030_color_final/apply_colors.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_color_final/apply_colors.py",
+      "role": "unchanged_original_script_or_input_construction_record",
+      "sha256": "f8d19d61a9c69a0b6089903c3edd7cfaeec4fd4fb5851966e4d12f5a579f4958",
+      "gitsha": "c1fb31d98ed7f9defd0a5cd4b45774f590682e83",
+      "bytes": 4359
+    },
+    {
+      "path": "F030_color_final/audit_same_review_samples.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_color_final/audit_same_review_samples.py",
+      "role": "unchanged_original_script_or_input_construction_record",
+      "sha256": "ea930f7fa01c29aeb38ed7ea24cdd96cafd194756144e092a97c38f8df63aa6b",
+      "gitsha": "209c4a48c00db47ca10b9ea4eee337171014a66d",
+      "bytes": 3057
+    },
+    {
+      "path": "F030_color_final/encode_isolated.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_color_final/encode_isolated.py",
+      "role": "unchanged_original_script_or_input_construction_record",
+      "sha256": "11d026507b47d1454ae15d6c1b0330813c0fd59edf45d34aa6e073969bc83eda",
+      "gitsha": "cd9acc1d27e9e1cd1592af9a824ab70491eb5830",
+      "bytes": 2972
+    },
+    {
+      "path": "F030_structure_gate_1942/build_structure.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_structure_gate_1942/build_structure.py",
+      "role": "unchanged_original_script_or_input_construction_record",
+      "sha256": "649ff710f86c9ff1b482cb5523980a1747ba6f02df140658dd6e8aa3cc24adcc",
+      "gitsha": "919ff31d710e088db0f863a78daa057dced0d598",
+      "bytes": 7039
+    },
+    {
+      "path": "F030_structure_gate_1942/geometry/F030_first_structure.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_structure_gate_1942/geometry/F030_first_structure.json",
+      "role": "unchanged_original_script_or_input_construction_record",
+      "sha256": "237a7c916f9a0980e7d96957ab92489b56450c365ba2d662e8bc4608dfc0e3aa",
+      "gitsha": "6b5ec1f67d3c646fb1630826cae02b9c6a870782",
+      "bytes": 3053
+    },
+    {
+      "path": "F030_projection_diagnostic/geometry/diagnostic.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_projection_diagnostic/geometry/diagnostic.json",
+      "role": "historical_or_review_diagnostic_preserved_verbatim",
+      "sha256": "971499bab9c974f8f8ca04e2032189f0e1d59561a6a0f1ee7795c7bc8d6095d4",
+      "gitsha": "d0fb401cf13870c52594838443089739406bc0b6",
+      "bytes": 626
+    },
+    {
+      "path": "F030_projection_diagnostic/build.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_projection_diagnostic/build.py",
+      "role": "historical_script_preserved_verbatim_do_not_execute",
+      "sha256": "ceb38441f1daf4d37b945e058b7e2cd5548c55d14f9c0493343ed73f6ac79abe",
+      "gitsha": "fc94edc34a315baf956f6b0d6cdac09135cec58f",
+      "bytes": 5925
+    },
+    {
+      "path": "F030_projection_diagnostic/build_v1_history.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_projection_diagnostic/build_v1_history.py",
+      "role": "historical_script_preserved_verbatim_do_not_execute",
+      "sha256": "33b4838ff2a65056519f72f276502d8a72648bd7d120dd3d33f679cd0c1acdc9",
+      "gitsha": "9e730b14b3563bab175068a03521ab4eb0189c0e",
+      "bytes": 5185
+    },
+    {
+      "path": "F030_projection_diagnostic/build_v2_history.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_projection_diagnostic/build_v2_history.py",
+      "role": "historical_script_preserved_verbatim_do_not_execute",
+      "sha256": "d95d8e92cafe8e6adc7f7df5b2060a709486100f2e32eb7c40f3e6c2eb12a720",
+      "gitsha": "e27c761c0d9861a10b5da38ede7631a2776f1ce4",
+      "bytes": 5199
+    },
+    {
+      "path": "F030_same_raw_semantic_v1/geometry/diagnostic.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v1/geometry/diagnostic.json",
+      "role": "historical_or_review_diagnostic_preserved_verbatim",
+      "sha256": "a64c1f2fdbf7b2257681c2dfb12856278429155427d47406812d91f0c6613655",
+      "gitsha": "819336ba175e4a9b61c8e648a345de2df6c77097",
+      "bytes": 727
+    },
+    {
+      "path": "F030_same_raw_semantic_v1/build.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v1/build.py",
+      "role": "historical_script_preserved_verbatim_do_not_execute",
+      "sha256": "6f4bf1e1db35e93f51dacfd70d29e49c13749d5663bf7d449eb4fa061a48745b",
+      "gitsha": "a52ac677c2feb24214cdc9aca40e41ac880bbce8",
+      "bytes": 6920
+    },
+    {
+      "path": "F030_same_raw_semantic_v2/geometry/diagnostic.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v2/geometry/diagnostic.json",
+      "role": "historical_or_review_diagnostic_preserved_verbatim",
+      "sha256": "a9b5f0650f7fa0f588b1d185181c9808d3adf73b737fc67064e4072524c42e1f",
+      "gitsha": "3078a7702f54fe427de26c92f0c3dad999ce88cd",
+      "bytes": 775
+    },
+    {
+      "path": "F030_same_raw_semantic_v2/build.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v2/build.py",
+      "role": "historical_script_preserved_verbatim_do_not_execute",
+      "sha256": "10a6ab7b9a182c9b805514ff6f86e149b7c17ad96a011b3a779789f7b4be9d5b",
+      "gitsha": "61edf11e9e440ea29375fa45ba2cae322b3de610",
+      "bytes": 7523
+    },
+    {
+      "path": "F030_same_raw_semantic_v3/geometry/diagnostic.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v3/geometry/diagnostic.json",
+      "role": "historical_or_review_diagnostic_preserved_verbatim",
+      "sha256": "0681a14e738c79c554235b1ec94e1c61cbd21e2fb6fdab638c4e4493111eea4e",
+      "gitsha": "011e4e329d916adc9594dbe7380cc77700ab0688",
+      "bytes": 860
+    },
+    {
+      "path": "F030_same_raw_semantic_v3/build.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v3/build.py",
+      "role": "historical_script_preserved_verbatim_do_not_execute",
+      "sha256": "e30d79fa9a8cc73c27450e69b9e7fddb57511377b015b514d5aea5a91815793d",
+      "gitsha": "dba456d086a9d5ec0f2df5a258d84f051b8bfecf",
+      "bytes": 8768
+    },
+    {
+      "path": "F030_same_raw_semantic_v4/geometry/diagnostic.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v4/geometry/diagnostic.json",
+      "role": "historical_or_review_diagnostic_preserved_verbatim",
+      "sha256": "b18a0330790a198fce7e3c856cf297a4efba685cd49e6b9b52af83f64c030659",
+      "gitsha": "4423bede12011e1c700f5bf192168399c82ffbc7",
+      "bytes": 932
+    },
+    {
+      "path": "F030_same_raw_semantic_v4/build.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v4/build.py",
+      "role": "historical_script_preserved_verbatim_do_not_execute",
+      "sha256": "03429743d8d083c366944efebc243a7ae634614d97c45324fd98e671973cd8d2",
+      "gitsha": "2f8c25a2fc41ae5b7f416a9eeaa933422777162a",
+      "bytes": 9066
+    },
+    {
+      "path": "F030_same_raw_semantic_v5/geometry/diagnostic.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v5/geometry/diagnostic.json",
+      "role": "historical_or_review_diagnostic_preserved_verbatim",
+      "sha256": "0cd491a3948399d8a72f18665ed9ef1a7484cac9d2572b647c6c814e970803ab",
+      "gitsha": "02946e635f8b3cb5653748cb0c9fd20e0f63d514",
+      "bytes": 910
+    },
+    {
+      "path": "F030_same_raw_semantic_v5/build.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v5/build.py",
+      "role": "historical_script_preserved_verbatim_do_not_execute",
+      "sha256": "eb1ebacedd6e23e6cb778ae37e218dad235d7c617d82e883a4badb6c89a36044",
+      "gitsha": "5a1bc1d225bf2d25a5bf549d58342e3d900c5349",
+      "bytes": 9488
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/geometry/diagnostic.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/geometry/diagnostic.json",
+      "role": "historical_or_review_diagnostic_preserved_verbatim",
+      "sha256": "0cd491a3948399d8a72f18665ed9ef1a7484cac9d2572b647c6c814e970803ab",
+      "gitsha": "02946e635f8b3cb5653748cb0c9fd20e0f63d514",
+      "bytes": 910
+    },
+    {
+      "path": "F030_result_registered_nominal/geometry/ACTUAL_PROXIES_AND_MISMATCH.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_result_registered_nominal/geometry/ACTUAL_PROXIES_AND_MISMATCH.json",
+      "role": "historical_or_review_diagnostic_preserved_verbatim",
+      "sha256": "9e67b46c4312494693a5b076ea05f88fa8b4a9f80a1880e79fe15ab282bc6005",
+      "gitsha": "16e97632014e25be44546878628d5848735d7b55",
+      "bytes": 1099
+    },
+    {
+      "path": "F030_result_registered_nominal/geometry/checks.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_result_registered_nominal/geometry/checks.json",
+      "role": "historical_or_review_diagnostic_preserved_verbatim",
+      "sha256": "da00909371e7d93973d9735c252b1d0a87770207ba92097f22bd147cf165ca36",
+      "gitsha": "ce466a4e493f434b2269b5fcc1ee7547184235a2",
+      "bytes": 643
+    },
+    {
+      "path": "F030_color_final/geometry/color_actual_diagnostic.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_color_final/geometry/color_actual_diagnostic.json",
+      "role": "historical_or_review_diagnostic_preserved_verbatim",
+      "sha256": "f0b95fcea0bc65084e65ee9d789d836f77024003595286b398b155552cb11f7b",
+      "gitsha": "f4cd09ca52438a5582a9bb47db0aedb398b404da",
+      "bytes": 13579
+    },
+    {
+      "path": "F030_color_final/geometry/color_masks_and_checks.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_color_final/geometry/color_masks_and_checks.json",
+      "role": "historical_or_review_diagnostic_preserved_verbatim",
+      "sha256": "bb37ae04e6239adce8b47668023cd385e5ac4c4f038ff2d2738b716e078a21f4",
+      "gitsha": "f163226c4a0954e388645d63d4aeae87279c83db",
+      "bytes": 2128
+    },
+    {
+      "path": "F030_color_final/geometry/color_masks_and_checks_INITIAL_BUILD_AUDIT.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_color_final/geometry/color_masks_and_checks_INITIAL_BUILD_AUDIT.json",
+      "role": "historical_or_review_diagnostic_preserved_verbatim",
+      "sha256": "9940a14dab69c49e0365ebb8ab96e428d3f07b6f73956104dcde94e855e2a3c9",
+      "gitsha": "5cb9e7e48263f1126f4bb24054761e51259aee25",
+      "bytes": 1627
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/masks/RELEASE_false_proximal_cut_AA_guard.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/masks/RELEASE_false_proximal_cut_AA_guard.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "58d89ad4f2015241e6700aad2e64d383207b477a48322e0cb12ceaf82f065531",
+      "gitsha": "3b62213c57f7f97df36f05128ec4b129ed572839",
+      "bytes": 2496
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/masks/adopted_same_raw_forearm_source.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/masks/adopted_same_raw_forearm_source.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "01ba12e1ef38bab2df20bb6834582191037bbd1496bcf002c69e90f76c41268f",
+      "gitsha": "b5838c8ec0ae7665dbdf2024973cfb825a3cc204",
+      "bytes": 4035
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/masks/chest_real_cloth_strip_region.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/masks/chest_real_cloth_strip_region.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "8e14b3317868c4ec9fad95a7299f6a8e3952e41a0afb172eb2d8e7cf6770def9",
+      "gitsha": "d4fe66c5c62e63f857576a43545b79ac2fdd822f",
+      "bytes": 2472
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/masks/continuous_old_wrist_cut_strip_same_projected_raw_skin.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/masks/continuous_old_wrist_cut_strip_same_projected_raw_skin.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "2f660691e0332ff5c0ddb9c5b5f931f1dc9f8046894b9a28f9fa9068b8d03463",
+      "gitsha": "24bb6fca0181dc6e4e2444765f1c398fc78af5aa",
+      "bytes": 2379
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/masks/false_internal_lower_wrist_double_line_real_skin_donor.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/masks/false_internal_lower_wrist_double_line_real_skin_donor.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "4c4f21009e9687b71cf729ab11a715f42441aef84b93551e3a2a75fe995710dd",
+      "gitsha": "f98b91951c40cec7b7babc7a9f3e21d5193fd4e4",
+      "bytes": 2147
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/masks/far_sleeve_inner_continuation_region.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/masks/far_sleeve_inner_continuation_region.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "01e5054170afabc26e999482372db9248bb6feb6745e6139a624512df6152da2",
+      "gitsha": "b8d12311985b362225788cc1cd607d0a84f9f53d",
+      "bytes": 2353
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/masks/lower_wrist_background_real_far_upperarm_donor.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/masks/lower_wrist_background_real_far_upperarm_donor.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "950c2b760d30700156b54f6029cdaf37822b607da4c57c689a5be15f31b5d8c4",
+      "gitsha": "b3ccb4864b0a618615d35f2bdbcacc169653aa27",
+      "bytes": 2428
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/masks/native_near_forearm_and_rejected_distal_group.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/masks/native_near_forearm_and_rejected_distal_group.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "5fcb07b913d79ca8c81b27d9e114dcc210ab85d528d940bc1db65761be20beef",
+      "gitsha": "c2316c6a9d504a608fc8907181ae91ec49cd121f",
+      "bytes": 4408
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/masks/newly_exposed_original_anchor_substrate_DIAGNOSTIC.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/masks/newly_exposed_original_anchor_substrate_DIAGNOSTIC.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "ea955096ca23064e221a8296fd9af7ad4bc87b34dec2d049661a648969d59849",
+      "gitsha": "1590aa0513a5cf9be472bd8267012bc95f824094",
+      "bytes": 2250
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/masks/old_cuff_fragment_outside_wrist_real_cloth_donor.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/masks/old_cuff_fragment_outside_wrist_real_cloth_donor.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "d91e489e82f623c60a9fd21cd575f36d04505a578da83f9f858cc50ba0707ca1",
+      "gitsha": "05d31ee84a78c7de965bc8be722671486b9042f3",
+      "bytes": 2163
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/masks/projected_near_forearm_actual_alpha.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/masks/projected_near_forearm_actual_alpha.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "af2e8e2c3e8c50202efdc160074468189a458d4f50e2010a9accb0f7a8895b01",
+      "gitsha": "77e16698c35c0dc32c0b698916e6a4491abda576",
+      "bytes": 3793
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/masks/same_raw_cloth_donor_adoption.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/masks/same_raw_cloth_donor_adoption.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "151d9d734508ce07058281b265335eeb447307d5481d645cce77009917126872",
+      "gitsha": "a757f7f93d02ced9cabaf3600550c11f44632e93",
+      "bytes": 2721
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/masks/true_distal_palm_fingers_match_guard_after_false_AA_release.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/masks/true_distal_palm_fingers_match_guard_after_false_AA_release.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "0f74bd512ec02f5e1d253778e65d6089ec129ec5b039106797d61636c0d0dedb",
+      "gitsha": "a7a8ba6ed1e472b3301883605916b8483e8913b4",
+      "bytes": 2980
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/masks/two_interior_native_alpha_holes_real_skin_donor.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/masks/two_interior_native_alpha_holes_real_skin_donor.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "122cca0845c16294cc9276829f870e4fc65fdc4a86117690ed985878e0cb4474",
+      "gitsha": "93d0c981981484e429308fffb025a9f85beca245",
+      "bytes": 2100
+    },
+    {
+      "path": "F030_same_raw_semantic_v6/masks/upper_wrist_real_proximal_contour_donor_arc.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_same_raw_semantic_v6/masks/upper_wrist_real_proximal_contour_donor_arc.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "bffc8e7f4472e3d32bedf19144f1409a3172a339aa26f52b3ad3a458d06a311e",
+      "gitsha": "054e76c400a610720b431d90d73cfcf961fe891c",
+      "bytes": 2271
+    },
+    {
+      "path": "F030_color_final/masks/blue_blouse_SOFT.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_color_final/masks/blue_blouse_SOFT.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "e0afbfc5d169c2170a751151094c635393e8d6803ec309cb070277ffc7408062",
+      "gitsha": "81987f6ac484f42fbba75b7242f44619186dce73",
+      "bytes": 49459
+    },
+    {
+      "path": "F030_color_final/masks/crown_gray_hair_SOFT.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_color_final/masks/crown_gray_hair_SOFT.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "59553dcc0416aa7f33f468d6efa70ae36baa40adce18cb42805111b6b220ec4b",
+      "gitsha": "b0bc96fe3c3931f70f0c366aa761c9cb04f9132b",
+      "bytes": 19135
+    },
+    {
+      "path": "F030_color_final/masks/far_arm_skin_SOFT.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_color_final/masks/far_arm_skin_SOFT.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "bddabc28be716293d5459aa1704155521222850be7addf0d685d1f8d3d0eea4c",
+      "gitsha": "684ea5dd01e77ac27192a9e90d75bc9a6c1e799a",
+      "bytes": 5417
+    },
+    {
+      "path": "F030_color_final/masks/head_ear_neck_skin_SOFT.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_color_final/masks/head_ear_neck_skin_SOFT.png",
+      "role": "operation_mask_evidence_not_replay_input",
+      "sha256": "3361e21a86f74d9faa63122eabcb688fe119a82aa1bfa881ea66a4654f3e3dd9",
+      "gitsha": "757e5160c46c72f3c9c68bcbc54eae24386ad25a",
+      "bytes": 15033
+    },
+    {
+      "path": "dependencies/S08_F027_grandma_match_box_RGBA.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_f027_parallel_20261018_1812/F027_FINAL_LOCKED/S08_F027_grandma_match_box_RGBA.png",
+      "role": "computational_original027_source",
+      "sha256": "2dc0ee2bc06b4b872e0f79cbf4c1bd19b2ccaa160cba9b5feefd45f2a8e268ac",
+      "gitsha": "f5fec7752a2905d22cfef4bc33352dc37c4318de",
+      "bytes": 579264
+    },
+    {
+      "path": "dependencies/F027_true_near_hand_match_footprint.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_f027_parallel_20261018_1812/F027_FINAL_LOCKED/F027_true_near_hand_match_footprint.png",
+      "role": "computational_original027_source",
+      "sha256": "a06a4e2be779e4816759b99ac05cee4a0133fcc23e41b4b974d0a6bcb3c499f6",
+      "gitsha": "661c9aa21be4a62e9ebd757ff201d2c346314750",
+      "bytes": 2977
+    },
+    {
+      "path": "dependencies/F027_whole_closed_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_f027_parallel_20261018_1812/F027_FINAL_LOCKED/F027_whole_closed_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+      "role": "computational_original027_source",
+      "sha256": "23165717fbfc627054d252ea0b444cfbe26dd3c05631327279f4e935d770099b",
+      "gitsha": "85421fcf54dfc95cd1e35d3e15e881beb0d4ca07",
+      "bytes": 2500
+    },
+    {
+      "path": "dependencies/F027_fixed_table_box_footprint.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_f027_parallel_20261018_1812/F027_FINAL_LOCKED/F027_fixed_table_box_footprint.png",
+      "role": "computational_original027_source",
+      "sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "gitsha": "51086df36f7566dc215a94ee9d2c81fc306f9234",
+      "bytes": 2180
+    },
+    {
+      "path": "dependencies/F027_near_wrist_connector_ONLY.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_f027_parallel_20261018_1812/F027_from_F025_input_gate_v3_5refs_1925/masks/F027_near_wrist_connector_ONLY.png",
+      "role": "computational_original027_partition_collar",
+      "sha256": "e303b729be92722cabf8f468c819fd6a428ad02f3cbb03b24b003e1c77de3fd8",
+      "gitsha": "5f43452153eaaa343cf7d0a8b1f7765bc8757799",
+      "bytes": 2630
+    },
+    {
+      "path": "original_upstream/F027_LAYER_PARTITION/build_partition.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_f027_parallel_20261018_1812/F027_LAYER_PARTITION/build_partition.py",
+      "role": "unchanged_upstream_partition_script",
+      "sha256": "50ea92c20d5e5dcd130e5eb071518fdedadf4d202f24b93ede3653d7bb3ee1cc",
+      "gitsha": "e865c9896f5c95a77f9b62186ffb2384a85d1f5f",
+      "bytes": 5811
+    },
+    {
+      "path": "original_upstream/F027_LAYER_PARTITION/LAYER_VALIDATION.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_f027_parallel_20261018_1812/F027_LAYER_PARTITION/LAYER_VALIDATION.json",
+      "role": "original027_partition_verification",
+      "sha256": "f30dc90afed33102a950faf8221bfdfa44ac44739ef1c2fdbab0a89ed6da257c",
+      "gitsha": "6c3cd14fcddddc2300496a8279078bd12ccaefa4",
+      "bytes": 2723
+    },
+    {
+      "path": "original_upstream/F027_LAYER_PARTITION/SEALED.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_f027_parallel_20261018_1812/F027_LAYER_PARTITION/SEALED.json",
+      "role": "original027_partition_verification",
+      "sha256": "76b94e6f23768fbce299afe9aa8cc02c03b902ef5c7117a3037342478d291bed",
+      "gitsha": "36980e769400ccf287bcba8a67d373a42f0fe884",
+      "bytes": 774
+    },
+    {
+      "path": "original_upstream/F027_FINAL_LOCKED/HAND_REUSE_CONTRACT.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_f027_parallel_20261018_1812/F027_FINAL_LOCKED/HAND_REUSE_CONTRACT.json",
+      "role": "original027_hand_source_contract",
+      "sha256": "1cdf5d4f6b46ce04f45f4120c3c137e46f6d53c200a0c0bacf1ce7d6d5e45a0d",
+      "gitsha": "c7c2bc8f95dfc5beedb9e9fda4e9db8b84fea2f8",
+      "bytes": 4068
+    },
+    {
+      "path": "dependencies/S08_F000_grandma_match_box_RGBA.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F000_FINAL_LOCKED/S08_F000_grandma_match_box_RGBA.png",
+      "role": "original_identity_material_source_generation_and_color_review_not_replay_input",
+      "sha256": "c803571d4a6446e783fcbeb7aef41d65c1862ff3bf78a9a53f34b4631170e3f3",
+      "gitsha": "0b30a2536eb7c4ed5d8d790e168782393de59769",
+      "bytes": 601803
+    },
+    {
+      "path": "final/S08_F030_whole_turn_same_raw_final_color_RGBA.png",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_color_final/candidates/S08_F030_whole_turn_same_raw_final_color_RGBA.png",
+      "role": "coordinator_static_lock_external_post_run_comparison_oracle",
+      "sha256": "ef53ba49d805d2a9eb2cf934f62b2098a07e924250fcbbd5070cb33fcbba6bc8",
+      "gitsha": "eafe8a60dd59d1e207820cd6861064abcd966e7e",
+      "bytes": 578989
+    },
+    {
+      "path": "F030_FINAL_LOCKED/HAND_REUSE_CONTRACT.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_FINAL_LOCKED/HAND_REUSE_CONTRACT.json",
+      "role": "sealed_final_or_layer_or_isolated_exposure_evidence_not_replay_input",
+      "sha256": "216a87b92d99a707bc86cc03017ba36a3984fc113b0591c5cdf6a76798e504ec",
+      "gitsha": "2d59477c91ad29f9db508688dbb54d86417d8d02",
+      "bytes": 4510
+    },
+    {
+      "path": "F030_FINAL_LOCKED/SEALED_MANIFEST.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_FINAL_LOCKED/SEALED_MANIFEST.json",
+      "role": "sealed_final_or_layer_or_isolated_exposure_evidence_not_replay_input",
+      "sha256": "1c71ffce5ba7ad6036d3abfcc41370c3e6bffa88ad7dd874c1877f6e4b2622d7",
+      "gitsha": "75b9653468a8fd20f75079f481d0c4346a266383",
+      "bytes": 3021
+    },
+    {
+      "path": "F030_FINAL_LOCKED/seal.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_FINAL_LOCKED/seal.py",
+      "role": "sealed_final_or_layer_or_isolated_exposure_evidence_not_replay_input",
+      "sha256": "39c7be6aaa5302051fd58aa25608303974db66c0c0ba8ded87a100e249cbb59c",
+      "gitsha": "9000dc01bf788556e3b806720928cbc83cb8890d",
+      "bytes": 3634
+    },
+    {
+      "path": "F030_LAYER_PARTITION/LAYER_VALIDATION.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_LAYER_PARTITION/LAYER_VALIDATION.json",
+      "role": "sealed_final_or_layer_or_isolated_exposure_evidence_not_replay_input",
+      "sha256": "3d1e9dfc335615bac65ce19d534dcb0dc9cc5ed5f1ec57483356975971fad224",
+      "gitsha": "71ac0d940e098e04df4b3114ff2c31996db6fe69",
+      "bytes": 2030
+    },
+    {
+      "path": "F030_LAYER_PARTITION/SEALED_MANIFEST.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_LAYER_PARTITION/SEALED_MANIFEST.json",
+      "role": "sealed_final_or_layer_or_isolated_exposure_evidence_not_replay_input",
+      "sha256": "e8a52cc2009c2cc3db907fb5c1951f8f7546e467cfad417c663c6accc39d9230",
+      "gitsha": "a420c7ef878a82776eb3eeb981abf944d95c06ee",
+      "bytes": 3538
+    },
+    {
+      "path": "F030_LAYER_PARTITION/build_partition.py",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_LAYER_PARTITION/build_partition.py",
+      "role": "sealed_final_or_layer_or_isolated_exposure_evidence_not_replay_input",
+      "sha256": "b584a2e5aec417a887376e19648292541531f26b629128d73e79f0963a1aaa65",
+      "gitsha": "12fba4a5b35abd9bd695c70de2c32c2d44c59d85",
+      "bytes": 4475
+    },
+    {
+      "path": "F030_LAYER_PARTITION/layer_contract.js",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_LAYER_PARTITION/layer_contract.js",
+      "role": "sealed_final_or_layer_or_isolated_exposure_evidence_not_replay_input",
+      "sha256": "2f2dec319474294581f05ec4635570a94009900ba4f5efea6dffab5b629b4fc6",
+      "gitsha": "0fc1bcad3e25402dc2e97e785ca14ea0e0b50f75",
+      "bytes": 667
+    },
+    {
+      "path": "F030_color_final/isolated_6f/EXPOSURE_AND_DECODE_CHECK.json",
+      "original_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_color_final/isolated_6f/EXPOSURE_AND_DECODE_CHECK.json",
+      "role": "sealed_final_or_layer_or_isolated_exposure_evidence_not_replay_input",
+      "sha256": "a82027b7c315d15b1e51b684e3f357541315dbedeafe8465e90ef632cecf784b",
+      "gitsha": "07db569d1fb1a22ec09359a690c58b5b7cdd5f7d",
+      "bytes": 1928
+    }
+  ],
+  "canonical_final_sealed_identity": {
+    "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_FINAL_LOCKED/S08_F030_grandma_match_box_RGBA.png",
+    "sha256": "ef53ba49d805d2a9eb2cf934f62b2098a07e924250fcbbd5070cb33fcbba6bc8",
+    "gitsha": "eafe8a60dd59d1e207820cd6861064abcd966e7e",
+    "bytes": 578989,
+    "matches_preserved_final": true
+  },
+  "source_snapshot_reverified_utc": "2026-10-18T20:23:11.123368+00:00",
+  "source_files_changed_since_snapshot": []
+}

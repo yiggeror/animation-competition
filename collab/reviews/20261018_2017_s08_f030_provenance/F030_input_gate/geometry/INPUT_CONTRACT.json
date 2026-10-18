@@ -1,0 +1,52 @@
+{
+  "status": "ACTUAL_INPUT_PREPARED_NOT_CALLED_PENDING_DUAL_GATE",
+  "logical_call_reserved": 15,
+  "source": "/workspace/scratch/f060b5601755/astra_s08_f027_parallel_20261018_1812/F027_FINAL_LOCKED/S08_F027_grandma_match_box_RGBA.png",
+  "source_sha256": "2dc0ee2bc06b4b872e0f79cbf4c1bd19b2ccaa160cba9b5feefd45f2a8e268ac",
+  "crop_scene_box": [
+    530,
+    280,
+    1340,
+    1080
+  ],
+  "input_scale": 1.5,
+  "near_rigid_transform": {
+    "scale": 1,
+    "clockwise_deg": 5,
+    "source_head": [
+      1082,
+      797
+    ],
+    "new_head": [
+      1148,
+      717
+    ]
+  },
+  "whole_body_construction_anchor_only": {
+    "source": "Original027 body alpha partition, visible pixels only",
+    "uniform_translate": [
+      28,
+      4
+    ],
+    "not_final_body_pose": true,
+    "full_body_is_editable_for_unified_chest_shoulders_neck_head_turn": true
+  },
+  "source_and_target_proxy_geometry": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_structure_gate_1942/geometry/F030_first_structure.json",
+  "removed_disconnected_permission_islands_pixels": 3917,
+  "near_wrist_palmroot_release_pixels": 1120,
+  "near_distal_palm_fingers_match_protected_pixels": 6723,
+  "far_original_footprint_pixels": 18756,
+  "far_true_hand_jade_seat_guard_pixels": 17750,
+  "released_far_alpha0_air_occupied_by_near_hand": 1006,
+  "released_far_air_bbox": [
+    1108,
+    729,
+    1149,
+    804
+  ],
+  "far_visible_hand_changed": 0,
+  "true_grip_seat_alpha0_changed": 0,
+  "all_white_hard_guard_overlap": 0,
+  "rod_policy": "Actual low lever visible under original true closed grip in input, never adopted into character. Restore original alpha0 seat. No flame or lamp in final character.",
+  "body_color_reference": "Original F000, not cumulative generated color; color checks separately compare lit material planes and natural shadow."
+}

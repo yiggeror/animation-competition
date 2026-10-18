@@ -1,0 +1,116 @@
+{
+  "status": "LOCKED_DUAL_STATIC_REVIEW",
+  "locked_utc": "2026-10-18T19:41:18.010697+00:00",
+  "source": "/workspace/scratch/f060b5601755/astra_s08_f027_parallel_20261018_1812/F027_FINAL_LOCKED/S08_F027_grandma_match_box_RGBA.png",
+  "source_sha256": "2dc0ee2bc06b4b872e0f79cbf4c1bd19b2ccaa160cba9b5feefd45f2a8e268ac",
+  "derived_from025_sha256": "25e5ff2a37421bc90bbbaa3650e912def85d64fea1ee7a5cafa1a3c98f689cae",
+  "true_closed_hand_origin023_sha256": "dc35d227078f37e18340635c95f721a5b8495ecbb87b802df51447d375987e47",
+  "far_from025": [
+    -8,
+    16
+  ],
+  "near_from025": [
+    6,
+    3
+  ],
+  "far_total_from023": [
+    -20,
+    29
+  ],
+  "near_total_from023": [
+    12,
+    6
+  ],
+  "near_total_from020": [
+    20,
+    10
+  ],
+  "far_guard_includes_alpha0": true,
+  "all_original_hard_group_RGBA_changed": 0,
+  "far_guard_proximal_collar_note": "Exported hardfootprint excludes183 original non-jade proximal skin/contour pixels released by explicit dual input gate. Actual jade material, palm/fingers and entire distal transparent knob seat stay exact. Released collar joins the final new forearm and should not be restored from an earlier mother.",
+  "groups": {
+    "whole_closed_far_hand_jade_AND_TRANSPARENT_SEAT": {
+      "footprint_pixels": 18756,
+      "visible_pixels": 6661,
+      "alpha0_guard_pixels": 12095,
+      "bbox_inclusive": [
+        1108,
+        729,
+        1264,
+        855
+      ],
+      "changes_to_protected_preplacement": 0
+    },
+    "true_near_hand_match": {
+      "footprint_pixels": 7631,
+      "visible_pixels": 7631,
+      "alpha0_guard_pixels": 0,
+      "bbox_inclusive": [
+        954,
+        787,
+        1091,
+        911
+      ],
+      "changes_to_protected_preplacement": 0
+    },
+    "fixed_table_box": {
+      "footprint_pixels": 1764,
+      "visible_pixels": 1665,
+      "alpha0_guard_pixels": 99,
+      "bbox_inclusive": [
+        1063,
+        947,
+        1137,
+        970
+      ],
+      "changes_to_protected_preplacement": 0
+    }
+  },
+  "knob_low": [
+    1233.9532049682696,
+    766.8943738423919
+  ],
+  "actual_seat_marker": [
+    1234.0390495120525,
+    766.5349762791033
+  ],
+  "seat_marker_error_scene_px": 0.3695076375328895,
+  "fixed_lever_pivot": [
+    1301.4864864864865,
+    791.545945945946
+  ],
+  "near_match_head": [
+    1082,
+    797
+  ],
+  "near_visible_wood_exit": [
+    1054,
+    834
+  ],
+  "near_wrist_APPROX_SCREEN_ONLY": [
+    959,
+    881
+  ],
+  "visible_segment_px": 46.400431,
+  "match_length_note": "46.4 measures visible head-to-wood-exit only. It is not the hidden full match length or a proven hidden finger pinch. Never scale/stretch the source group to a legacy64pxsketch.",
+  "box_center": [
+    1100,
+    960
+  ],
+  "hood_up_separate_scene_px": 83.24324324324324,
+  "near_shoulder_elbow_and_forearm_body": "Source025 original position; only local proximal wrist connectors changed, no whole near-arm displacement.",
+  "native_call": 14,
+  "tool_submission_attempt": 2,
+  "raw_sha256": "d3364d4e471f9259d2eaf79aea70ed69d4d6d33add96a76a0a0d8ebee2e13e17",
+  "first_submission_status": "VALIDATION_ERROR_NO_IMAGE6refs",
+  "input_request_sha256": "bb72fcc3345253e76cbefb5726f6cb35cadf89fdff2e2e0e6e2bdf4685c923c9",
+  "uniform_registration_raw_to_3xcrop": {
+    "scale": 0.8904593639575972,
+    "tx": 0,
+    "ty": 20.904593639575978
+  },
+  "color_mask": "/workspace/scratch/f060b5601755/astra_s08_f027_parallel_20261018_1812/F027_call14_result_v8_color_final/masks/ONLY_new_call14_far_LIGHT_AND_TURN_skin_SOFT_G1_B4.png",
+  "color_edit": "3636 new native skin material pixels, same G0..1 B0..4 offset across lit and lower-turn planes; R/alpha and original collar/guards unchanged.",
+  "actual_shape_note": "Native027 far upper/forearm through small low press; same-raw seams. Near lower wrist only22px skin connector interpolates original025 toward rigid+6,+3 hand placement; full protected hand/match untouched. No whole arm deformation, no baked lamp/lever/fire.",
+  "scene_render_status": "Static character approved only; independent actual Canvas integration still required."
+}

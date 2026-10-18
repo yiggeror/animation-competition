@@ -1,0 +1,51 @@
+{
+  "status": "FINAL_COLOR_CANDIDATE_PENDING_DUAL_REVIEW",
+  "source_shape_sha256": "6a5f8f2b56acebd7ad62dcc0001c145c5146b5154fc5e2a3eb32a803ff81ca45",
+  "candidate_sha256": "ef53ba49d805d2a9eb2cf934f62b2098a07e924250fcbbd5070cb33fcbba6bc8",
+  "alpha_changed": 0,
+  "fixed_hand_match_jade_seat_box_changed": 0,
+  "material_masks": [
+    {
+      "name": "head_ear_neck_skin",
+      "max_add_RGB": [
+        0,
+        6,
+        11
+      ],
+      "affected_soft_domain_pixels": 34442,
+      "mask": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_color_final/masks/head_ear_neck_skin_SOFT.png"
+    },
+    {
+      "name": "far_arm_skin",
+      "max_add_RGB": [
+        0,
+        5,
+        9
+      ],
+      "affected_soft_domain_pixels": 8379,
+      "mask": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_color_final/masks/far_arm_skin_SOFT.png"
+    },
+    {
+      "name": "blue_blouse",
+      "max_add_RGB": [
+        6,
+        3,
+        4
+      ],
+      "affected_soft_domain_pixels": 112119,
+      "mask": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_color_final/masks/blue_blouse_SOFT.png"
+    },
+    {
+      "name": "crown_gray_hair",
+      "max_add_RGB": [
+        2,
+        3,
+        3
+      ],
+      "affected_soft_domain_pixels": 31715,
+      "mask": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_color_final/masks/crown_gray_hair_SOFT.png"
+    }
+  ],
+  "hair_bun_lower_shadow": "No correction belowY535; natural changed shadow preserved, not forced to crown or lit mean.",
+  "near_arm_changed": 402
+}

@@ -1,0 +1,113 @@
+{
+  "runtime_boundary": "Start from six preserved raw/source PNGs. Reconstruct upstream original027 body partition, exact F030 preplacement/guards, actual uniform call15 registration, semantic v6, and final color. Never reads frozen intermediates or final.",
+  "runtime_inputs": [
+    {
+      "id": "source027",
+      "path": "dependencies/S08_F027_grandma_match_box_RGBA.png",
+      "sha256": "2dc0ee2bc06b4b872e0f79cbf4c1bd19b2ccaa160cba9b5feefd45f2a8e268ac",
+      "gitsha": "f5fec7752a2905d22cfef4bc33352dc37c4318de",
+      "bytes": 579264
+    },
+    {
+      "id": "near027",
+      "path": "dependencies/F027_true_near_hand_match_footprint.png",
+      "sha256": "a06a4e2be779e4816759b99ac05cee4a0133fcc23e41b4b974d0a6bcb3c499f6",
+      "gitsha": "661c9aa21be4a62e9ebd757ff201d2c346314750",
+      "bytes": 2977
+    },
+    {
+      "id": "far027",
+      "path": "dependencies/F027_whole_closed_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+      "sha256": "23165717fbfc627054d252ea0b444cfbe26dd3c05631327279f4e935d770099b",
+      "gitsha": "85421fcf54dfc95cd1e35d3e15e881beb0d4ca07",
+      "bytes": 2500
+    },
+    {
+      "id": "box027",
+      "path": "dependencies/F027_fixed_table_box_footprint.png",
+      "sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "gitsha": "51086df36f7566dc215a94ee9d2c81fc306f9234",
+      "bytes": 2180
+    },
+    {
+      "id": "collar027",
+      "path": "dependencies/F027_near_wrist_connector_ONLY.png",
+      "sha256": "e303b729be92722cabf8f468c819fd6a428ad02f3cbb03b24b003e1c77de3fd8",
+      "gitsha": "5f43452153eaaa343cf7d0a8b1f7765bc8757799",
+      "bytes": 2630
+    },
+    {
+      "id": "raw",
+      "path": "F030_native_call15/raw/F030_whole_turn_arms_native_raw.png",
+      "sha256": "875c9f44855705b9f0a42cd9a36d7e31d873a8ba173c790004038453cae40a51",
+      "gitsha": "0f502d83eeff83b68e7e782a087b0079d64d227c",
+      "bytes": 1239507
+    }
+  ],
+  "source_operations": [
+    {
+      "original_script": "original_upstream/F027_LAYER_PARTITION/build_partition.py",
+      "adopted_part": "Near/far/hand/match polygons through exclusive body alpha partition; preview/export-only branches omitted.",
+      "dependencies": [
+        "source027",
+        "near027",
+        "far027",
+        "box027",
+        "collar027"
+      ]
+    },
+    {
+      "original_script": "F030_input_gate/build_input.py",
+      "adopted_part": "Whole-hand rigid transform, proximal collar release, original body translation, white/guard masks and preplacement. Guide-generation/preview-only branches omitted.",
+      "dependencies": [
+        "source027",
+        "near027",
+        "far027",
+        "box027",
+        "reconstructed original027 body partition"
+      ],
+      "extra_generation_reference_only_sources": [
+        "dependencies/S08_F000_grandma_match_box_RGBA.png",
+        "F030_structure_gate_1942/geometry/F030_first_structure.json"
+      ]
+    },
+    {
+      "original_script": "F030_input_gate/composite_returned_crop.py",
+      "adopted_part": "Actual executed uniform registration and crop downsample; nominal rejected composite excluded from final branch.",
+      "dependencies": [
+        "raw"
+      ],
+      "registration_precision_note": "Use executed 0.9520895,2.45681689,4.89641481. Do not replace with more precise optimizer diagnostic values."
+    },
+    {
+      "original_script": "F030_same_raw_semantic_v6/build.py",
+      "adopted_part": "All image computation and mask saves through v6 candidate; old F027 comparison preview omitted.",
+      "dependencies": [
+        "registered raw",
+        "reconstructed preplacement",
+        "reconstructed input masks"
+      ]
+    },
+    {
+      "original_script": "F030_color_final/apply_colors.py",
+      "adopted_part": "All four material soft-mask operations and final RGBA; old F027 preview omitted; material-list variable renamed in portable script to avoid manifest shadowing.",
+      "dependencies": [
+        "semantic v6 image",
+        "semantic near-arm alpha",
+        "input near/far/box guards"
+      ]
+    }
+  ],
+  "historical_record_policy": "Original script and JSON status wording retained verbatim, including UNACCEPTED/DIAGNOSTIC names and pending statuses. Adoption/final lock is documented in separately copied final contract, never by rewriting historical artifacts.",
+  "color_audit_correction": "Original INITIAL_BUILD_AUDIT retained. Broad near-arm extraction domain has402 changed blue cloth/AA pixels; actual near-arm skin changed0. Corrected interpretation preserved separately in current original geometry JSON and sealed contract.",
+  "omitted_large_outputs": [
+    "Repeated preview boards",
+    "Rejected diagnostic candidate PNGs, indexed by SHA in DIAGNOSTIC_EVIDENCE_INDEX.json",
+    "Generated replay output PNGs",
+    "F030 three downstream layer PNGs already part of coordinator integration, declared by sealed layer manifest"
+  ],
+  "review_boundary": "No new visual review or Canvas integration assertion. Isolated6f decode record copied as documentary evidence only.",
+  "source_files_read_only": true,
+  "new_generation_calls": 0,
+  "external_uploads_or_git_writes": 0
+}

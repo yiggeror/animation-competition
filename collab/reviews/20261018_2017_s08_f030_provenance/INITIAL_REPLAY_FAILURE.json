@@ -1,0 +1,13 @@
+{
+  "status": "INITIAL_HARNESS_REPORTING_FAILURE_PRESERVED",
+  "exit_code": 1,
+  "cause": "Original color code uses manifest for a material list, shadowing the portable dependency manifest during final reporting. Image computation completed before the failure.",
+  "effect": "No production source or final image changed.",
+  "output_before_reporting_error_sha256": "ef53ba49d805d2a9eb2cf934f62b2098a07e924250fcbbd5070cb33fcbba6bc8",
+  "fix": "Rename only the portable material diagnostic accumulator to material_manifest. Original source script preserved unchanged.",
+  "evidence": [
+    "INITIAL_REPLAY.stderr.txt",
+    "INITIAL_REPLAY.stdout.txt"
+  ],
+  "retry": "fresh isolated directory, same six original computational inputs"
+}
