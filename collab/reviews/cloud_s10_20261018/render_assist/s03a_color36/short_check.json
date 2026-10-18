@@ -1,0 +1,34 @@
+{
+  "actual_images_opened": [
+    "actual_contact.jpg",
+    "decoded_actual/F014.png",
+    "crown_014_017_025_native.png"
+  ],
+  "observed": "No obvious crown colour jump at 14→17→25; migrated images and foreground hand appear in actual decoded clip.",
+  "hair_sampling_box": [
+    640,
+    180,
+    662,
+    202
+  ],
+  "hair_medians_RGB": {
+    "14": [
+      44,
+      33,
+      30
+    ],
+    "17": [
+      44,
+      34,
+      31
+    ],
+    "25": [
+      44,
+      33,
+      30
+    ]
+  },
+  "resource_status": "All 10 x03a PNG assets returned 200; only favicon.ico 404 in server probe.",
+  "source_status_after_resource_probe": "clean",
+  "new_image_calls": 0
+}
