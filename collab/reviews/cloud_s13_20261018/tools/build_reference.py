@@ -59,12 +59,12 @@ ROWS = [
  (50,28,-9,10,-12,.00,.120,'none',8,'假哈欠峰态','下颌下降 0.055H；额头颅体尺寸不变；胸肩同起。'),
  (58,28,-9,10,-9,.00,.105,'none',3,'峰态续气','保持哈欠但口腔略收、胸轻回，需独立画，不能用同图缩嘴。'),
  (68,24,-5,10,-5,.08,.065,'none',0,'哈欠收束','下颌回收、头回前；胸肩整体回落。'),
- (78,18,-1,10,0,.22,.018,'none',0,'收口后准备扭开','嘴将合；仍未转到画左；让假困和回避读成两件事。'),
- (84,8,0,10,2,.38,.005,'away',0,'回避起转','眼缝先向画左，头通过接近正面；肩尚未追上。'),
+ (78,18,-1,10,0,.22,.018,'none',0,'即将收口','嘴将合，仍未扭开；最迟F084起转前明确闭口。'),
+ (84,8,0,10,2,.38,.000,'away',0,'闭口后回避起转','嘴明确闭合，无口腔缝；眼缝先向画左，整头起转，肩尚未追上。'),
  (87,-6,0,8,3,.40,.000,'away',12,'转头中间一','整头越过正面；两耳露出比例交换，颈面重画。'),
  (90,-23,1,6,5,.38,.000,'away',23,'转头中间二','鼻朝画左；胸肩小幅跟转，不能只替换脸。'),
  (94,-36,1,4,6,.32,.000,'away',25,'扭开到位','头比胸多转约 40°；马尾自由端向画右滞后，不拉长发根。'),
- (104,-33,1,4,6,.30,.000,'away',0,'轻回落停住','头回落约 3°，马尾末端落定；闭嘴装作没事。')
+ (100,-33,1,4,6,.30,.000,'away',0,'轻回落停住','落定提案提前到F100，头回落约3°，尾端落定；实画曝光检吊住时可再提前F098，仍120帧。')
 ]
 KEYS=[]
 for i,row in enumerate(ROWS):
@@ -94,13 +94,14 @@ for i,row in enumerate(ROWS):
                  'joints_shot_xy':{k:rnd(shot(v)) for k,v in joints.items()},
                  'head_frontmost_ear_landmark':'ear_near' if yaw>=0 else 'ear_far',
                  'hair_depth_note':'头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。',
-                 'hands_visible':False,'hand_mouth_contact':False,'status':'reference_pending_Astra_freeze'})
+                 'hands_visible':False,'hand_mouth_contact':False,
+                 'status':'reference_frozen_for_first_d01_only' if i==0 else 'reference_pending_Astra_freeze'})
 
 LENGTHS={}
 for name,a,b in [('upper_arm','shoulder_near','elbow_near'),('forearm','elbow_near','wrist_near'),
                  ('hand_envelope','wrist_near','finger_tip_near')]:
     n=math.dist(MEASURE[a],MEASURE[b]);LENGTHS[name]={'identity_px':round(n,3),'H':round(n/H,4),'source_px':round(n*4,3)}
-PLAN={'shot':'S13','status':'REFERENCE ONLY / NOT FROZEN / NO GENERATED DRAWINGS',
+PLAN={'shot':'S13','status':'D01 REFERENCE FROZEN ONLY; FIRST IMAGE SEPARATE; REST PENDING ASTRA',
       'base_commit':'3d66443997cee24b64059e6f53f7d46968a3a05c','fps':24,'duration_s':5,'frames':120,
       'drawing_count':16,'canvas_source':[1024,1536],'shot_canvas':[1920,1080],
       'placement_proposal':{'scale':.85,'translation':[330,-30], 'source_crop_y_at_shot_bottom':(1080+30)/.85,
@@ -180,7 +181,7 @@ def draw_construction(k, scale=.5):
         target=(1740,830) if k['gaze_target']=='crane' else (1740,330)
         arrow(d,((en[0]+ef[0])/2,(en[1]+ef[1])/2),target,'#467a96',3)
         txt(d,(target[0]-115,target[1]+20),'鹤 / 画右下' if k['gaze_target']=='crane' else '奶奶 / 画外右上',30)
-    txt(d,(30,22),'构造参考 · 非画稿 · 未冻结',34,fill='#9d543a',bold=True)
+    txt(d,(30,22),'构造参考 · 非画稿 · '+('d01参考已冻' if k['id']=='d01' else '后段待审'),34,fill='#9d543a',bold=True)
     txt(d,(30,1020),'三档：深灰近臂 / 中灰躯干 / 浅灰远臂。手、肘、腕均在最终画幅外。',27)
     return im.resize((int(1920*scale),int(1080*scale)),Image.Resampling.LANCZOS)
 
@@ -196,12 +197,12 @@ for k in KEYS:
     txt(d,(28,650),k['note'],24)
     txt(d,(28,705),'固定颅体尺寸；下颌可开合；转头重画耳、发根、后脑与颈面。',25)
     txt(d,(28,755),'位置由 geometry/S13_reference_plan.json 追溯；角度为设计目标，非成图实测。',23)
-    txt(d,(28,835),'参考构造示意，不能剪进成片。下一步：Astra 冻结后才生成首态。',25,fill='#9d543a',bold=True)
+    txt(d,(28,835),'参考构造示意，不能剪进成片。仅d01参考已冻；真实母态另包待锁。',25,fill='#9d543a',bold=True)
     p=OUT/f"reference/S13_{k['id']}_F{k['f']:03}_construction.png"; im.save(p)
     cards.append(im)
 
 sheet=Image.new('RGB',(1920,1510),'#eeece5');d=ImageDraw.Draw(sheet)
-txt(d,(24,10),'S13 / 16 曝光构造总览 / 120 帧 @24fps / 全部未冻结、非画稿',32,bold=True)
+txt(d,(24,10),'S13 / 16 曝光构造总览 / 120 帧 @24fps / 仅d01参考已冻、非画稿',32,bold=True)
 for i,(im,k) in enumerate(zip(cards,KEYS)):
     # Use the composition image at readable scale; titles remain separate.
     x=(i%4)*480;y=70+(i//4)*355
@@ -290,7 +291,9 @@ for i,k in enumerate(KEYS):
       'args_template':{'prompt':prompt,'transparent_background':True,
       'referenced_image_paths':['collab/refs/xiaoman_turnaround_v4_draft.png','collab/refs/xiaoman_expressions_current03.png',
       f"collab/reviews/cloud_s13_20261018/reference/S13_{k['id']}_F{k['f']:03}_construction.png"] + ([] if i==0 else [f'<approved d{i:02} original path; fill only after acceptance>'])}})
-save_json(OUT/'prompts/requests_NOT_EXECUTED.json',{'status':'NO GENERATION UNTIL ASTRA FREEZE','requests':requests})
+save_json(OUT/'prompts/requests_NOT_EXECUTED.json',{'status':'UNEXECUTED REFERENCE-STAGE DRAFTS',
+    'note':'These exact drafts were not executed. Actual d01 request/response is in d01_first_candidate/requests; no post-d01 calls. Later references still need review.',
+    'requests':requests})
 
 sources=['collab/README.md','collab/claude.md','collab/partner.md','docs/keyframes/scenes03_12_drawing_plan.md',
          'docs/keyframes/S18.json','collab/refs/xiaoman_turnaround_v4_draft.png','collab/refs/xiaoman_expressions_current03.png',
@@ -305,10 +308,11 @@ for p in sources:
         with Image.open(ROOT/p) as img:info.update({'dimensions':list(img.size),'mode':img.mode})
     manifest.append(info)
 save_json(OUT/'provenance/source_manifest.json',{'base_commit':PLAN['base_commit'],'files':manifest})
-save_json(OUT/'provenance/generation_ledger.json',{'stage':'reference_only','image_generation_requests':0,'raw_outputs':[],
-    'image_tool_exposed':True,'execution_availability_tested':False,'reason':'First-stage freeze gate; no production image request authorized before review.',
-    'previews':'Pillow annotation and construction diagrams only; never production drawings.',
-    'external_paid_service_or_api_calls':0,'full_film_render_runs':0,'blender_runs':0})
+if not (OUT/'provenance/generation_ledger.json').exists():
+    save_json(OUT/'provenance/generation_ledger.json',{'stage':'reference_only','image_generation_requests':0,'raw_outputs':[],
+        'image_tool_exposed':True,'execution_availability_tested':False,'reason':'First-stage freeze gate; no production image request authorized before review.',
+        'previews':'Pillow annotation and construction diagrams only; never production drawings.',
+        'external_paid_service_or_api_calls':0,'full_film_render_runs':0,'blender_runs':0})
 
 # Objective checks do not replace visual inspection; saved separately from human/self review.
 checks={'frames':sum(k['hold'] for k in KEYS),'keys':len(KEYS),'all_contiguous':all(KEYS[i]['end_inclusive']+1==KEYS[i+1]['f'] for i in range(15)),

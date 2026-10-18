@@ -1,0 +1,54 @@
+{
+  "status": "candidate_pending_Astra_lock",
+  "method": "single uniform whole-image affine; no local warp or repaint",
+  "source": "originals/S13_d01_call_001_raw.png",
+  "source_sha256": "31cb92ed5bee1e6776106b071dbf442f3815b0aa12e1e7077a61903bd4db413b",
+  "source_dimensions": [
+    1024,
+    1536
+  ],
+  "manual_measurements": {
+    "solid_crown_y": 216,
+    "chin_y": 904,
+    "cranial_envelope_left_x": 118,
+    "cranial_envelope_right_x": 888,
+    "uncertainty_source_px": 4,
+    "note": "人工近似框，H640仅同机位尺寸控制；非三维角度或精确关节测量。"
+  },
+  "forward_transform_raw_to_reference_source": [
+    0.9302325581395349,
+    0,
+    56.09302325581393,
+    0,
+    0.9302325581395349,
+    31.069767441860478
+  ],
+  "registered_source_canvas": [
+    1024,
+    1536
+  ],
+  "resampling": "Pillow RGBA BICUBIC",
+  "alpha_policy": "Original alpha preserved in raw; candidate alpha only resampled with the same whole-image transform. No threshold, tightening, recolor, or hair repair.",
+  "shot_placement_after_registration": {
+    "scale": 0.85,
+    "translation": [
+      330,
+      -30
+    ],
+    "shot_canvas": [
+      1920,
+      1080
+    ]
+  },
+  "combined_raw_to_shot": [
+    0.7906976744186046,
+    0,
+    377.67906976744183,
+    0,
+    0.7906976744186046,
+    -3.590697674418596
+  ],
+  "output_lower_cut_scene_y": 1210.920930232558,
+  "landmark_limit": "没有逐点拟合枕骨/颈根/双肩。H和头外包络对齐后仍须Astra实审；真实颈面优先，不能再扭局部凑灰棒坐标。",
+  "candidate_sha256": "91715601ae814bd84a3dc8d6ce43f1cc809a7bdd74e7390fefffe579f6882050"
+}

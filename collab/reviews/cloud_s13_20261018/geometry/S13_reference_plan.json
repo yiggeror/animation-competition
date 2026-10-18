@@ -1,6 +1,6 @@
 {
   "shot": "S13",
-  "status": "REFERENCE ONLY / NOT FROZEN / NO GENERATED DRAWINGS",
+  "status": "D01 REFERENCE FROZEN ONLY; FIRST IMAGE SEPARATE; REST PENDING ASTRA",
   "base_commit": "3d66443997cee24b64059e6f53f7d46968a3a05c",
   "fps": 24,
   "duration_s": 5,
@@ -166,7 +166,7 @@
       14
     ],
     [
-      104,
+      100,
       15
     ]
   ],
@@ -483,7 +483,7 @@
       "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
       "hands_visible": false,
       "hand_mouth_contact": false,
-      "status": "reference_pending_Astra_freeze"
+      "status": "reference_frozen_for_first_d01_only"
     },
     {
       "id": "d02",
@@ -3325,8 +3325,8 @@
       "mouth_aperture_H": 0.018,
       "gaze_target": "none",
       "tail_lag_source_px": 0,
-      "title": "收口后准备扭开",
-      "note": "嘴将合；仍未转到画左；让假困和回避读成两件事。",
+      "title": "即将收口",
+      "note": "嘴将合，仍未扭开；最迟F084起转前明确闭口。",
       "joints_3d_source": {
         "neck_base": [
           524.0,
@@ -3636,11 +3636,11 @@
       "torso_yaw_deg": 10,
       "upper_body_dy_source_px": 2,
       "eye_open_fraction": 0.38,
-      "mouth_aperture_H": 0.005,
+      "mouth_aperture_H": 0.0,
       "gaze_target": "away",
       "tail_lag_source_px": 0,
-      "title": "回避起转",
-      "note": "眼缝先向画左，头通过接近正面；肩尚未追上。",
+      "title": "闭口后回避起转",
+      "note": "嘴明确闭合，无口腔缝；眼缝先向画左，整头起转，肩尚未追上。",
       "joints_3d_source": {
         "neck_base": [
           524.0,
@@ -3709,7 +3709,7 @@
         ],
         "chin": [
           544.18,
-          875.467,
+          874.0,
           143.589
         ],
         "ear_near": [
@@ -3808,7 +3808,7 @@
         ],
         "chin": [
           544.18,
-          875.467
+          874.0
         ],
         "ear_near": [
           232.861,
@@ -3898,7 +3898,7 @@
         ],
         "chin": [
           792.553,
-          714.147
+          712.9
         ],
         "ear_near": [
           527.932,
@@ -4570,8 +4570,8 @@
     {
       "id": "d15",
       "f": 94,
-      "hold": 10,
-      "end_inclusive": 103,
+      "hold": 6,
+      "end_inclusive": 99,
       "t": 3.916667,
       "head_yaw_deg": -36,
       "head_pitch_deg": 1,
@@ -4883,10 +4883,10 @@
     },
     {
       "id": "d16",
-      "f": 104,
-      "hold": 16,
+      "f": 100,
+      "hold": 20,
       "end_inclusive": 119,
-      "t": 4.333333,
+      "t": 4.166667,
       "head_yaw_deg": -33,
       "head_pitch_deg": 1,
       "torso_yaw_deg": 4,
@@ -4896,7 +4896,7 @@
       "gaze_target": "away",
       "tail_lag_source_px": 0,
       "title": "轻回落停住",
-      "note": "头回落约 3°，马尾末端落定；闭嘴装作没事。",
+      "note": "落定提案提前到F100，头回落约3°，尾端落定；实画曝光检吊住时可再提前F098，仍120帧。",
       "joints_3d_source": {
         "neck_base": [
           524.0,

@@ -1,0 +1,34 @@
+{
+  "raw_sha256": "31cb92ed5bee1e6776106b071dbf442f3815b0aa12e1e7077a61903bd4db413b",
+  "candidate_sha256": "91715601ae814bd84a3dc8d6ce43f1cc809a7bdd74e7390fefffe579f6882050",
+  "raw_dimensions": [
+    1024,
+    1536
+  ],
+  "raw_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    254
+  ],
+  "alpha_zero_pixels": 607672,
+  "alpha_nonzero_pixels": 965192,
+  "alpha_253_254_pixels": 866743,
+  "sample_fully_transparent_pixels_with_hidden_RGB": {
+    "top_left": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "left_y1200": [
+      143,
+      115,
+      29,
+      0
+    ]
+  },
+  "halo_check": "实看正确合成的浅/深/灰蓝三底，无先前裸RGB显示所似的大范围软雾；不清alpha。深底发缘仍应由Astra核细小线缘。",
+  "candidate_lower_cut_below_shot": true,
+  "poses_generated": 1,
+  "module_or_canvas_render": false
+}
