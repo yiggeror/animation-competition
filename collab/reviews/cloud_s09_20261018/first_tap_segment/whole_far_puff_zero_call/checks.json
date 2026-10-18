@@ -1,0 +1,55 @@
+{
+  "status": "WHOLE_UPPER_FAR_PUFF_SOURCE_COPY_PENDING_ASTRA_STATIC_AND_EXPOSURE_REVIEW",
+  "authority": "Astra latest explicitly releases whole upper far puff sleeve and old tip/occlusion ink; preserve lower flounce→far arm/palm, whole near arm/grip/prop/head/skirt. Do not generate or dispatch042.",
+  "source_before_sha256": "526ca883e0867d5a1036b5afa99de35767c5216731b8674ac732d7a0f7c48735",
+  "call01_source_sha256": "d913073cf1fb4feaa9b0fcc89c68c4112b1acefe2279b4fd6ddc1022b8a61a9b",
+  "candidate_sha256": "68ce16f14f9ea53f2c43c2c53f984a6a713b612f6aef28ab369780cb768695c9",
+  "new_native_calls": 0,
+  "S09_requests_unchanged": 15,
+  "S09_originals_unchanged": 14,
+  "F042_requests": 0,
+  "donor_transform": {
+    "scale": 1,
+    "translation": [
+      0,
+      0
+    ],
+    "rotation": 0,
+    "warp": false,
+    "RGBA_blending": false
+  },
+  "adoption_mask_pixels": 3380,
+  "RGBA_changed_pixels": 838,
+  "source_RGBA_mismatches": 0,
+  "outside_adoption_RGBA_changes": 0,
+  "complete_new_near_arm_changes": 0,
+  "lower_cuff_far_arm_palm_and_skirt_y648_down_changes": 0,
+  "whole_grip_prop_head_neck_changes": 0,
+  "historical_far_upper_puff_guard_released": true,
+  "actual_exposure": {
+    "frames": [
+      31,
+      31,
+      31,
+      31,
+      31,
+      31,
+      37,
+      37,
+      37,
+      37,
+      37
+    ],
+    "fps": 24,
+    "probe": {
+      "width": 1280,
+      "height": 720,
+      "r_frame_rate": "24/1",
+      "duration": "0.458333",
+      "nb_read_frames": "11"
+    },
+    "no_tween": true,
+    "scope": "isolated actual PNG exposure layer, no whole-shot/full-film render, background or audio"
+  },
+  "remaining_gate": "Astra static037 and actual031→037 exposure review;042 unopened."
+}

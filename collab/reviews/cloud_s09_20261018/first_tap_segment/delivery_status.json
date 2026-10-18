@@ -1,13 +1,15 @@
 {
-  "status": "F037_BLOCKED_LOCAL_CLOTH_OUTPUT_FILTER_F042_NOT_STARTED",
+  "status": "F037_WHOLE_UPPER_NATIVE_PUFF_PENDING_ASTRA_STATIC_AND_EXPOSURE_042_NOT_AUTHORIZED",
   "branch": "cloud/s09-reference-20261018-1327",
   "F031_locked_commit": "78a980dff69601083580a1df819789954f6d8947",
   "F031_locked_sha256": "4b59c62485cf382c3e2d411de3c8ca9fb4edee622dad31b41946362889d44da7",
   "latest_actual_F037": {
-    "path": "independent_recompose/F037_independent_original_pixels_PENDING.png",
-    "sha256": "526ca883e0867d5a1036b5afa99de35767c5216731b8674ac732d7a0f7c48735",
+    "path": "whole_far_puff_zero_call/candidate/F037_whole_native_far_puff_PENDING.png",
+    "sha256": "68ce16f14f9ea53f2c43c2c53f984a6a713b612f6aef28ab369780cb768695c9",
     "adopted": false,
-    "remaining_defect": "newly exposed farther sleeve upper contour lacks continuous yellow material"
+    "new_upper_sleeve_copy": true,
+    "new_static_connection_blocker": null,
+    "pending_gate": "Astra static037 and11-frame031→037 actual exposure"
   },
   "counts": {
     "S09_native_requests_total": 15,
@@ -46,5 +48,11 @@
     ],
     "F042_actual_contact_gate_complete": false
   },
-  "scope": "Only exclusive cloud_s09 review directory. No shared implementation/docs/messages/EDL/audio changes, no main push, no full render/Blender/new service/API."
+  "scope": "Only exclusive cloud_s09 review directory. No shared implementation/docs/messages/EDL/audio changes, no main push, no full render/Blender/new service/API.",
+  "zero_call_whole_puff_update": {
+    "new_image_calls": 0,
+    "old_tip_guard_explicitly_released": true,
+    "changed_pixels": 838,
+    "outside_mask_changes": 0
+  }
 }

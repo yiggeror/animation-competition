@@ -1,5 +1,7 @@
 # S09：已锁031后的037／042小序列
 
+**最新：[整块原生圆袖零调用接回](whole_far_puff_zero_call/README.md)，候选SHA68ce16f1…768695c9。按Astra新放宽采用完整圆袖并移除旧尖端，双审后交静态及031→037实际曝光门；037未自锁、042不开。旧503px限制已被本次整袖授权取代，下面失败记录原样保留。**
+
 **最终本段：037仍未通过，042为0。** [最新真实重组](independent_recompose/F037_independent_original_pixels_PENDING.png)SHA526ca883…c48735已清旧悬片／U边／截白点，但远袖新露上缘缺实际连续黄料；[来源冲突证据](independent_recompose/far_sleeve_source_conflict.png)。503px全图微接缝call02未填谷口、不采用；[局部call03](cloth_connection_call03/README.md)输出阶段被工具moderation_blocked／other拦截，无新图，未重送。**S09累计15请求／14原件，037共3请求／2原件、采用0，无在途。** 完整[本段实际结论](qa/F037_actual_outcome.md)。042真实触掌门未做，不能拿技术预摆替代。
 
 下面准备／诊断状态为阶段历史，完整输入及记录保留。
