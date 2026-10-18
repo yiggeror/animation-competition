@@ -1,0 +1,244 @@
+{
+  "status": "NO GENERATION UNTIL ASTRA FREEZE",
+  "requests": [
+    {
+      "id": "d01",
+      "executed": false,
+      "tool": "image_gen.imagegen (exposed; not invoked)",
+      "args_template": {
+        "prompt": "S13《来电》小满单角色逐张绘图，首阶段参考尚未冻结，本文件是待审提示词。身份以 xiaoman_turnaround_v4_draft.png 和 xiaoman_expressions_current03.png 为准：同一小女孩、深棕刘海、双低马尾、红花发圈、黄底白圆点短袖连衣裙、白色圆领。旧 anim_13 两张只参考造型笔触，不能复制错误动作或直接当两个端点。画布1024×1536，头高约640源px；共同位置按S13_reference_plan.json。本张参考构造图只是骨架/体积标注，绝不把灰块或骨架绘入成图。以最近已审合格的真实画稿为改图源，保留统一中性底色与笔触；场景马灯光由后续合成加一次。完整颅体、下颌、耳、刘海、后脑、发根、马尾和颈面作为连体结构重画；下颌张口不能只拉伸口腔像素。胸和肩随本张姿态整体运动，双臂从自己的肩袖连续向下，手、腕、肘全在最终画幅外，无手嘴接触，无新道具。禁止整身缩放、孤立肩抖、只挪五官、脸网格扭曲、全画面溶解、增加第三臂、复制对侧手或手从胸口长出。透明背景，保全半透明发缘。\n本张 d01 F000，停18帧：看鹤看入神。视线画右偏下；嘴轻启；并非困倦。\n头朝向+35°（正为画右），俯仰+0°（负为抬颏），胸朝向+12°，眼开比例1.0，嘴开口高约0.025头高。头与身体三维连续，角度是构造目标，最终用实际图判断，不能声称像素精确角。\n首态：重新建立比例正确、完整头颈胸肩的小满，不直接拿旧A当已合格母版。",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "collab/refs/xiaoman_expressions_current03.png",
+          "collab/reviews/cloud_s13_20261018/reference/S13_d01_F000_construction.png"
+        ]
+      }
+    },
+    {
+      "id": "d02",
+      "executed": false,
+      "tool": "image_gen.imagegen (exposed; not invoked)",
+      "args_template": {
+        "prompt": "S13《来电》小满单角色逐张绘图，首阶段参考尚未冻结，本文件是待审提示词。身份以 xiaoman_turnaround_v4_draft.png 和 xiaoman_expressions_current03.png 为准：同一小女孩、深棕刘海、双低马尾、红花发圈、黄底白圆点短袖连衣裙、白色圆领。旧 anim_13 两张只参考造型笔触，不能复制错误动作或直接当两个端点。画布1024×1536，头高约640源px；共同位置按S13_reference_plan.json。本张参考构造图只是骨架/体积标注，绝不把灰块或骨架绘入成图。以最近已审合格的真实画稿为改图源，保留统一中性底色与笔触；场景马灯光由后续合成加一次。完整颅体、下颌、耳、刘海、后脑、发根、马尾和颈面作为连体结构重画；下颌张口不能只拉伸口腔像素。胸和肩随本张姿态整体运动，双臂从自己的肩袖连续向下，手、腕、肘全在最终画幅外，无手嘴接触，无新道具。禁止整身缩放、孤立肩抖、只挪五官、脸网格扭曲、全画面溶解、增加第三臂、复制对侧手或手从胸口长出。透明背景，保全半透明发缘。\n本张 d02 F018，停6帧：先发现视线。只改眼内视线到画右偏上；整头、身体保持 d01。\n头朝向+35°（正为画右），俯仰+0°（负为抬颏），胸朝向+12°，眼开比例1.0，嘴开口高约0.025头高。头与身体三维连续，角度是构造目标，最终用实际图判断，不能声称像素精确角。\n依赖：从 d01 已通过原件派生；上张若退回则暂停本张，不从失败态扩链。",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "collab/refs/xiaoman_expressions_current03.png",
+          "collab/reviews/cloud_s13_20261018/reference/S13_d02_F018_construction.png",
+          "<approved d01 original path; fill only after acceptance>"
+        ]
+      }
+    },
+    {
+      "id": "d03",
+      "executed": false,
+      "tool": "image_gen.imagegen (exposed; not invoked)",
+      "args_template": {
+        "prompt": "S13《来电》小满单角色逐张绘图，首阶段参考尚未冻结，本文件是待审提示词。身份以 xiaoman_turnaround_v4_draft.png 和 xiaoman_expressions_current03.png 为准：同一小女孩、深棕刘海、双低马尾、红花发圈、黄底白圆点短袖连衣裙、白色圆领。旧 anim_13 两张只参考造型笔触，不能复制错误动作或直接当两个端点。画布1024×1536，头高约640源px；共同位置按S13_reference_plan.json。本张参考构造图只是骨架/体积标注，绝不把灰块或骨架绘入成图。以最近已审合格的真实画稿为改图源，保留统一中性底色与笔触；场景马灯光由后续合成加一次。完整颅体、下颌、耳、刘海、后脑、发根、马尾和颈面作为连体结构重画；下颌张口不能只拉伸口腔像素。胸和肩随本张姿态整体运动，双臂从自己的肩袖连续向下，手、腕、肘全在最终画幅外，无手嘴接触，无新道具。禁止整身缩放、孤立肩抖、只挪五官、脸网格扭曲、全画面溶解、增加第三臂、复制对侧手或手从胸口长出。透明背景，保全半透明发缘。\n本张 d03 F024，停6帧：确认奶奶在看。整头向奶奶多转约 7°；耳、后脑和发根一起转。\n头朝向+42°（正为画右），俯仰+0°（负为抬颏），胸朝向+12°，眼开比例1.05，嘴开口高约0.01头高。头与身体三维连续，角度是构造目标，最终用实际图判断，不能声称像素精确角。\n依赖：从 d02 已通过原件派生；上张若退回则暂停本张，不从失败态扩链。",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "collab/refs/xiaoman_expressions_current03.png",
+          "collab/reviews/cloud_s13_20261018/reference/S13_d03_F024_construction.png",
+          "<approved d02 original path; fill only after acceptance>"
+        ]
+      }
+    },
+    {
+      "id": "d04",
+      "executed": false,
+      "tool": "image_gen.imagegen (exposed; not invoked)",
+      "args_template": {
+        "prompt": "S13《来电》小满单角色逐张绘图，首阶段参考尚未冻结，本文件是待审提示词。身份以 xiaoman_turnaround_v4_draft.png 和 xiaoman_expressions_current03.png 为准：同一小女孩、深棕刘海、双低马尾、红花发圈、黄底白圆点短袖连衣裙、白色圆领。旧 anim_13 两张只参考造型笔触，不能复制错误动作或直接当两个端点。画布1024×1536，头高约640源px；共同位置按S13_reference_plan.json。本张参考构造图只是骨架/体积标注，绝不把灰块或骨架绘入成图。以最近已审合格的真实画稿为改图源，保留统一中性底色与笔触；场景马灯光由后续合成加一次。完整颅体、下颌、耳、刘海、后脑、发根、马尾和颈面作为连体结构重画；下颌张口不能只拉伸口腔像素。胸和肩随本张姿态整体运动，双臂从自己的肩袖连续向下，手、腕、肘全在最终画幅外，无手嘴接触，无新道具。禁止整身缩放、孤立肩抖、只挪五官、脸网格扭曲、全画面溶解、增加第三臂、复制对侧手或手从胸口长出。透明背景，保全半透明发缘。\n本张 d04 F030，停6帧：被看见的一顿。嘴收住，眉轻提；保持清醒的对视，不抢先闭眼。\n头朝向+42°（正为画右），俯仰+0°（负为抬颏），胸朝向+12°，眼开比例1.04，嘴开口高约0.0头高。头与身体三维连续，角度是构造目标，最终用实际图判断，不能声称像素精确角。\n依赖：从 d03 已通过原件派生；上张若退回则暂停本张，不从失败态扩链。",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "collab/refs/xiaoman_expressions_current03.png",
+          "collab/reviews/cloud_s13_20261018/reference/S13_d04_F030_construction.png",
+          "<approved d03 original path; fill only after acceptance>"
+        ]
+      }
+    },
+    {
+      "id": "d05",
+      "executed": false,
+      "tool": "image_gen.imagegen (exposed; not invoked)",
+      "args_template": {
+        "prompt": "S13《来电》小满单角色逐张绘图，首阶段参考尚未冻结，本文件是待审提示词。身份以 xiaoman_turnaround_v4_draft.png 和 xiaoman_expressions_current03.png 为准：同一小女孩、深棕刘海、双低马尾、红花发圈、黄底白圆点短袖连衣裙、白色圆领。旧 anim_13 两张只参考造型笔触，不能复制错误动作或直接当两个端点。画布1024×1536，头高约640源px；共同位置按S13_reference_plan.json。本张参考构造图只是骨架/体积标注，绝不把灰块或骨架绘入成图。以最近已审合格的真实画稿为改图源，保留统一中性底色与笔触；场景马灯光由后续合成加一次。完整颅体、下颌、耳、刘海、后脑、发根、马尾和颈面作为连体结构重画；下颌张口不能只拉伸口腔像素。胸和肩随本张姿态整体运动，双臂从自己的肩袖连续向下，手、腕、肘全在最终画幅外，无手嘴接触，无新道具。禁止整身缩放、孤立肩抖、只挪五官、脸网格扭曲、全画面溶解、增加第三臂、复制对侧手或手从胸口长出。透明背景，保全半透明发缘。\n本张 d05 F036，停4帧：决定装困。故意垂眼；上胸随吸气微起；不要直接跳到哈欠峰态。\n头朝向+40°（正为画右），俯仰-1°（负为抬颏），胸朝向+12°，眼开比例0.65，嘴开口高约0.01头高。头与身体三维连续，角度是构造目标，最终用实际图判断，不能声称像素精确角。\n依赖：从 d04 已通过原件派生；上张若退回则暂停本张，不从失败态扩链。",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "collab/refs/xiaoman_expressions_current03.png",
+          "collab/reviews/cloud_s13_20261018/reference/S13_d05_F036_construction.png",
+          "<approved d04 original path; fill only after acceptance>"
+        ]
+      }
+    },
+    {
+      "id": "d06",
+      "executed": false,
+      "tool": "image_gen.imagegen (exposed; not invoked)",
+      "args_template": {
+        "prompt": "S13《来电》小满单角色逐张绘图，首阶段参考尚未冻结，本文件是待审提示词。身份以 xiaoman_turnaround_v4_draft.png 和 xiaoman_expressions_current03.png 为准：同一小女孩、深棕刘海、双低马尾、红花发圈、黄底白圆点短袖连衣裙、白色圆领。旧 anim_13 两张只参考造型笔触，不能复制错误动作或直接当两个端点。画布1024×1536，头高约640源px；共同位置按S13_reference_plan.json。本张参考构造图只是骨架/体积标注，绝不把灰块或骨架绘入成图。以最近已审合格的真实画稿为改图源，保留统一中性底色与笔触；场景马灯光由后续合成加一次。完整颅体、下颌、耳、刘海、后脑、发根、马尾和颈面作为连体结构重画；下颌张口不能只拉伸口腔像素。胸和肩随本张姿态整体运动，双臂从自己的肩袖连续向下，手、腕、肘全在最终画幅外，无手嘴接触，无新道具。禁止整身缩放、孤立肩抖、只挪五官、脸网格扭曲、全画面溶解、增加第三臂、复制对侧手或手从胸口长出。透明背景，保全半透明发缘。\n本张 d06 F040，停4帧：哈欠起势。嘴先小开，下颌开始落；头与颈面连贯微后仰。\n头朝向+37°（正为画右），俯仰-3°（负为抬颏），胸朝向+12°，眼开比例0.35，嘴开口高约0.035头高。头与身体三维连续，角度是构造目标，最终用实际图判断，不能声称像素精确角。\n依赖：从 d05 已通过原件派生；上张若退回则暂停本张，不从失败态扩链。",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "collab/refs/xiaoman_expressions_current03.png",
+          "collab/reviews/cloud_s13_20261018/reference/S13_d06_F040_construction.png",
+          "<approved d05 original path; fill only after acceptance>"
+        ]
+      }
+    },
+    {
+      "id": "d07",
+      "executed": false,
+      "tool": "image_gen.imagegen (exposed; not invoked)",
+      "args_template": {
+        "prompt": "S13《来电》小满单角色逐张绘图，首阶段参考尚未冻结，本文件是待审提示词。身份以 xiaoman_turnaround_v4_draft.png 和 xiaoman_expressions_current03.png 为准：同一小女孩、深棕刘海、双低马尾、红花发圈、黄底白圆点短袖连衣裙、白色圆领。旧 anim_13 两张只参考造型笔触，不能复制错误动作或直接当两个端点。画布1024×1536，头高约640源px；共同位置按S13_reference_plan.json。本张参考构造图只是骨架/体积标注，绝不把灰块或骨架绘入成图。以最近已审合格的真实画稿为改图源，保留统一中性底色与笔触；场景马灯光由后续合成加一次。完整颅体、下颌、耳、刘海、后脑、发根、马尾和颈面作为连体结构重画；下颌张口不能只拉伸口腔像素。胸和肩随本张姿态整体运动，双臂从自己的肩袖连续向下，手、腕、肘全在最终画幅外，无手嘴接触，无新道具。禁止整身缩放、孤立肩抖、只挪五官、脸网格扭曲、全画面溶解、增加第三臂、复制对侧手或手从胸口长出。透明背景，保全半透明发缘。\n本张 d07 F044，停6帧：哈欠张开。眼将闭，真正张下颌；不是纵向拉伸嘴贴图。\n头朝向+32°（正为画右），俯仰-6°（负为抬颏），胸朝向+11°，眼开比例0.1，嘴开口高约0.075头高。头与身体三维连续，角度是构造目标，最终用实际图判断，不能声称像素精确角。\n依赖：从 d06 已通过原件派生；上张若退回则暂停本张，不从失败态扩链。",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "collab/refs/xiaoman_expressions_current03.png",
+          "collab/reviews/cloud_s13_20261018/reference/S13_d07_F044_construction.png",
+          "<approved d06 original path; fill only after acceptance>"
+        ]
+      }
+    },
+    {
+      "id": "d08",
+      "executed": false,
+      "tool": "image_gen.imagegen (exposed; not invoked)",
+      "args_template": {
+        "prompt": "S13《来电》小满单角色逐张绘图，首阶段参考尚未冻结，本文件是待审提示词。身份以 xiaoman_turnaround_v4_draft.png 和 xiaoman_expressions_current03.png 为准：同一小女孩、深棕刘海、双低马尾、红花发圈、黄底白圆点短袖连衣裙、白色圆领。旧 anim_13 两张只参考造型笔触，不能复制错误动作或直接当两个端点。画布1024×1536，头高约640源px；共同位置按S13_reference_plan.json。本张参考构造图只是骨架/体积标注，绝不把灰块或骨架绘入成图。以最近已审合格的真实画稿为改图源，保留统一中性底色与笔触；场景马灯光由后续合成加一次。完整颅体、下颌、耳、刘海、后脑、发根、马尾和颈面作为连体结构重画；下颌张口不能只拉伸口腔像素。胸和肩随本张姿态整体运动，双臂从自己的肩袖连续向下，手、腕、肘全在最终画幅外，无手嘴接触，无新道具。禁止整身缩放、孤立肩抖、只挪五官、脸网格扭曲、全画面溶解、增加第三臂、复制对侧手或手从胸口长出。透明背景，保全半透明发缘。\n本张 d08 F050，停8帧：假哈欠峰态。下颌下降 0.055H；额头颅体尺寸不变；胸肩同起。\n头朝向+28°（正为画右），俯仰-9°（负为抬颏），胸朝向+10°，眼开比例0.0，嘴开口高约0.12头高。头与身体三维连续，角度是构造目标，最终用实际图判断，不能声称像素精确角。\n依赖：从 d07 已通过原件派生；上张若退回则暂停本张，不从失败态扩链。",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "collab/refs/xiaoman_expressions_current03.png",
+          "collab/reviews/cloud_s13_20261018/reference/S13_d08_F050_construction.png",
+          "<approved d07 original path; fill only after acceptance>"
+        ]
+      }
+    },
+    {
+      "id": "d09",
+      "executed": false,
+      "tool": "image_gen.imagegen (exposed; not invoked)",
+      "args_template": {
+        "prompt": "S13《来电》小满单角色逐张绘图，首阶段参考尚未冻结，本文件是待审提示词。身份以 xiaoman_turnaround_v4_draft.png 和 xiaoman_expressions_current03.png 为准：同一小女孩、深棕刘海、双低马尾、红花发圈、黄底白圆点短袖连衣裙、白色圆领。旧 anim_13 两张只参考造型笔触，不能复制错误动作或直接当两个端点。画布1024×1536，头高约640源px；共同位置按S13_reference_plan.json。本张参考构造图只是骨架/体积标注，绝不把灰块或骨架绘入成图。以最近已审合格的真实画稿为改图源，保留统一中性底色与笔触；场景马灯光由后续合成加一次。完整颅体、下颌、耳、刘海、后脑、发根、马尾和颈面作为连体结构重画；下颌张口不能只拉伸口腔像素。胸和肩随本张姿态整体运动，双臂从自己的肩袖连续向下，手、腕、肘全在最终画幅外，无手嘴接触，无新道具。禁止整身缩放、孤立肩抖、只挪五官、脸网格扭曲、全画面溶解、增加第三臂、复制对侧手或手从胸口长出。透明背景，保全半透明发缘。\n本张 d09 F058，停10帧：峰态续气。保持哈欠但口腔略收、胸轻回，需独立画，不能用同图缩嘴。\n头朝向+28°（正为画右），俯仰-9°（负为抬颏），胸朝向+10°，眼开比例0.0，嘴开口高约0.105头高。头与身体三维连续，角度是构造目标，最终用实际图判断，不能声称像素精确角。\n依赖：从 d08 已通过原件派生；上张若退回则暂停本张，不从失败态扩链。",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "collab/refs/xiaoman_expressions_current03.png",
+          "collab/reviews/cloud_s13_20261018/reference/S13_d09_F058_construction.png",
+          "<approved d08 original path; fill only after acceptance>"
+        ]
+      }
+    },
+    {
+      "id": "d10",
+      "executed": false,
+      "tool": "image_gen.imagegen (exposed; not invoked)",
+      "args_template": {
+        "prompt": "S13《来电》小满单角色逐张绘图，首阶段参考尚未冻结，本文件是待审提示词。身份以 xiaoman_turnaround_v4_draft.png 和 xiaoman_expressions_current03.png 为准：同一小女孩、深棕刘海、双低马尾、红花发圈、黄底白圆点短袖连衣裙、白色圆领。旧 anim_13 两张只参考造型笔触，不能复制错误动作或直接当两个端点。画布1024×1536，头高约640源px；共同位置按S13_reference_plan.json。本张参考构造图只是骨架/体积标注，绝不把灰块或骨架绘入成图。以最近已审合格的真实画稿为改图源，保留统一中性底色与笔触；场景马灯光由后续合成加一次。完整颅体、下颌、耳、刘海、后脑、发根、马尾和颈面作为连体结构重画；下颌张口不能只拉伸口腔像素。胸和肩随本张姿态整体运动，双臂从自己的肩袖连续向下，手、腕、肘全在最终画幅外，无手嘴接触，无新道具。禁止整身缩放、孤立肩抖、只挪五官、脸网格扭曲、全画面溶解、增加第三臂、复制对侧手或手从胸口长出。透明背景，保全半透明发缘。\n本张 d10 F068，停10帧：哈欠收束。下颌回收、头回前；胸肩整体回落。\n头朝向+24°（正为画右），俯仰-5°（负为抬颏），胸朝向+10°，眼开比例0.08，嘴开口高约0.065头高。头与身体三维连续，角度是构造目标，最终用实际图判断，不能声称像素精确角。\n依赖：从 d09 已通过原件派生；上张若退回则暂停本张，不从失败态扩链。",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "collab/refs/xiaoman_expressions_current03.png",
+          "collab/reviews/cloud_s13_20261018/reference/S13_d10_F068_construction.png",
+          "<approved d09 original path; fill only after acceptance>"
+        ]
+      }
+    },
+    {
+      "id": "d11",
+      "executed": false,
+      "tool": "image_gen.imagegen (exposed; not invoked)",
+      "args_template": {
+        "prompt": "S13《来电》小满单角色逐张绘图，首阶段参考尚未冻结，本文件是待审提示词。身份以 xiaoman_turnaround_v4_draft.png 和 xiaoman_expressions_current03.png 为准：同一小女孩、深棕刘海、双低马尾、红花发圈、黄底白圆点短袖连衣裙、白色圆领。旧 anim_13 两张只参考造型笔触，不能复制错误动作或直接当两个端点。画布1024×1536，头高约640源px；共同位置按S13_reference_plan.json。本张参考构造图只是骨架/体积标注，绝不把灰块或骨架绘入成图。以最近已审合格的真实画稿为改图源，保留统一中性底色与笔触；场景马灯光由后续合成加一次。完整颅体、下颌、耳、刘海、后脑、发根、马尾和颈面作为连体结构重画；下颌张口不能只拉伸口腔像素。胸和肩随本张姿态整体运动，双臂从自己的肩袖连续向下，手、腕、肘全在最终画幅外，无手嘴接触，无新道具。禁止整身缩放、孤立肩抖、只挪五官、脸网格扭曲、全画面溶解、增加第三臂、复制对侧手或手从胸口长出。透明背景，保全半透明发缘。\n本张 d11 F078，停6帧：收口后准备扭开。嘴将合；仍未转到画左；让假困和回避读成两件事。\n头朝向+18°（正为画右），俯仰-1°（负为抬颏），胸朝向+10°，眼开比例0.22，嘴开口高约0.018头高。头与身体三维连续，角度是构造目标，最终用实际图判断，不能声称像素精确角。\n依赖：从 d10 已通过原件派生；上张若退回则暂停本张，不从失败态扩链。",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "collab/refs/xiaoman_expressions_current03.png",
+          "collab/reviews/cloud_s13_20261018/reference/S13_d11_F078_construction.png",
+          "<approved d10 original path; fill only after acceptance>"
+        ]
+      }
+    },
+    {
+      "id": "d12",
+      "executed": false,
+      "tool": "image_gen.imagegen (exposed; not invoked)",
+      "args_template": {
+        "prompt": "S13《来电》小满单角色逐张绘图，首阶段参考尚未冻结，本文件是待审提示词。身份以 xiaoman_turnaround_v4_draft.png 和 xiaoman_expressions_current03.png 为准：同一小女孩、深棕刘海、双低马尾、红花发圈、黄底白圆点短袖连衣裙、白色圆领。旧 anim_13 两张只参考造型笔触，不能复制错误动作或直接当两个端点。画布1024×1536，头高约640源px；共同位置按S13_reference_plan.json。本张参考构造图只是骨架/体积标注，绝不把灰块或骨架绘入成图。以最近已审合格的真实画稿为改图源，保留统一中性底色与笔触；场景马灯光由后续合成加一次。完整颅体、下颌、耳、刘海、后脑、发根、马尾和颈面作为连体结构重画；下颌张口不能只拉伸口腔像素。胸和肩随本张姿态整体运动，双臂从自己的肩袖连续向下，手、腕、肘全在最终画幅外，无手嘴接触，无新道具。禁止整身缩放、孤立肩抖、只挪五官、脸网格扭曲、全画面溶解、增加第三臂、复制对侧手或手从胸口长出。透明背景，保全半透明发缘。\n本张 d12 F084，停3帧：回避起转。眼缝先向画左，头通过接近正面；肩尚未追上。\n头朝向+8°（正为画右），俯仰+0°（负为抬颏），胸朝向+10°，眼开比例0.38，嘴开口高约0.005头高。头与身体三维连续，角度是构造目标，最终用实际图判断，不能声称像素精确角。\n依赖：从 d11 已通过原件派生；上张若退回则暂停本张，不从失败态扩链。",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "collab/refs/xiaoman_expressions_current03.png",
+          "collab/reviews/cloud_s13_20261018/reference/S13_d12_F084_construction.png",
+          "<approved d11 original path; fill only after acceptance>"
+        ]
+      }
+    },
+    {
+      "id": "d13",
+      "executed": false,
+      "tool": "image_gen.imagegen (exposed; not invoked)",
+      "args_template": {
+        "prompt": "S13《来电》小满单角色逐张绘图，首阶段参考尚未冻结，本文件是待审提示词。身份以 xiaoman_turnaround_v4_draft.png 和 xiaoman_expressions_current03.png 为准：同一小女孩、深棕刘海、双低马尾、红花发圈、黄底白圆点短袖连衣裙、白色圆领。旧 anim_13 两张只参考造型笔触，不能复制错误动作或直接当两个端点。画布1024×1536，头高约640源px；共同位置按S13_reference_plan.json。本张参考构造图只是骨架/体积标注，绝不把灰块或骨架绘入成图。以最近已审合格的真实画稿为改图源，保留统一中性底色与笔触；场景马灯光由后续合成加一次。完整颅体、下颌、耳、刘海、后脑、发根、马尾和颈面作为连体结构重画；下颌张口不能只拉伸口腔像素。胸和肩随本张姿态整体运动，双臂从自己的肩袖连续向下，手、腕、肘全在最终画幅外，无手嘴接触，无新道具。禁止整身缩放、孤立肩抖、只挪五官、脸网格扭曲、全画面溶解、增加第三臂、复制对侧手或手从胸口长出。透明背景，保全半透明发缘。\n本张 d13 F087，停3帧：转头中间一。整头越过正面；两耳露出比例交换，颈面重画。\n头朝向-6°（正为画右），俯仰+0°（负为抬颏），胸朝向+8°，眼开比例0.4，嘴开口高约0.0头高。头与身体三维连续，角度是构造目标，最终用实际图判断，不能声称像素精确角。\n依赖：从 d12 已通过原件派生；上张若退回则暂停本张，不从失败态扩链。",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "collab/refs/xiaoman_expressions_current03.png",
+          "collab/reviews/cloud_s13_20261018/reference/S13_d13_F087_construction.png",
+          "<approved d12 original path; fill only after acceptance>"
+        ]
+      }
+    },
+    {
+      "id": "d14",
+      "executed": false,
+      "tool": "image_gen.imagegen (exposed; not invoked)",
+      "args_template": {
+        "prompt": "S13《来电》小满单角色逐张绘图，首阶段参考尚未冻结，本文件是待审提示词。身份以 xiaoman_turnaround_v4_draft.png 和 xiaoman_expressions_current03.png 为准：同一小女孩、深棕刘海、双低马尾、红花发圈、黄底白圆点短袖连衣裙、白色圆领。旧 anim_13 两张只参考造型笔触，不能复制错误动作或直接当两个端点。画布1024×1536，头高约640源px；共同位置按S13_reference_plan.json。本张参考构造图只是骨架/体积标注，绝不把灰块或骨架绘入成图。以最近已审合格的真实画稿为改图源，保留统一中性底色与笔触；场景马灯光由后续合成加一次。完整颅体、下颌、耳、刘海、后脑、发根、马尾和颈面作为连体结构重画；下颌张口不能只拉伸口腔像素。胸和肩随本张姿态整体运动，双臂从自己的肩袖连续向下，手、腕、肘全在最终画幅外，无手嘴接触，无新道具。禁止整身缩放、孤立肩抖、只挪五官、脸网格扭曲、全画面溶解、增加第三臂、复制对侧手或手从胸口长出。透明背景，保全半透明发缘。\n本张 d14 F090，停4帧：转头中间二。鼻朝画左；胸肩小幅跟转，不能只替换脸。\n头朝向-23°（正为画右），俯仰+1°（负为抬颏），胸朝向+6°，眼开比例0.38，嘴开口高约0.0头高。头与身体三维连续，角度是构造目标，最终用实际图判断，不能声称像素精确角。\n依赖：从 d13 已通过原件派生；上张若退回则暂停本张，不从失败态扩链。",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "collab/refs/xiaoman_expressions_current03.png",
+          "collab/reviews/cloud_s13_20261018/reference/S13_d14_F090_construction.png",
+          "<approved d13 original path; fill only after acceptance>"
+        ]
+      }
+    },
+    {
+      "id": "d15",
+      "executed": false,
+      "tool": "image_gen.imagegen (exposed; not invoked)",
+      "args_template": {
+        "prompt": "S13《来电》小满单角色逐张绘图，首阶段参考尚未冻结，本文件是待审提示词。身份以 xiaoman_turnaround_v4_draft.png 和 xiaoman_expressions_current03.png 为准：同一小女孩、深棕刘海、双低马尾、红花发圈、黄底白圆点短袖连衣裙、白色圆领。旧 anim_13 两张只参考造型笔触，不能复制错误动作或直接当两个端点。画布1024×1536，头高约640源px；共同位置按S13_reference_plan.json。本张参考构造图只是骨架/体积标注，绝不把灰块或骨架绘入成图。以最近已审合格的真实画稿为改图源，保留统一中性底色与笔触；场景马灯光由后续合成加一次。完整颅体、下颌、耳、刘海、后脑、发根、马尾和颈面作为连体结构重画；下颌张口不能只拉伸口腔像素。胸和肩随本张姿态整体运动，双臂从自己的肩袖连续向下，手、腕、肘全在最终画幅外，无手嘴接触，无新道具。禁止整身缩放、孤立肩抖、只挪五官、脸网格扭曲、全画面溶解、增加第三臂、复制对侧手或手从胸口长出。透明背景，保全半透明发缘。\n本张 d15 F094，停10帧：扭开到位。头比胸多转约 40°；马尾自由端向画右滞后，不拉长发根。\n头朝向-36°（正为画右），俯仰+1°（负为抬颏），胸朝向+4°，眼开比例0.32，嘴开口高约0.0头高。头与身体三维连续，角度是构造目标，最终用实际图判断，不能声称像素精确角。\n依赖：从 d14 已通过原件派生；上张若退回则暂停本张，不从失败态扩链。",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "collab/refs/xiaoman_expressions_current03.png",
+          "collab/reviews/cloud_s13_20261018/reference/S13_d15_F094_construction.png",
+          "<approved d14 original path; fill only after acceptance>"
+        ]
+      }
+    },
+    {
+      "id": "d16",
+      "executed": false,
+      "tool": "image_gen.imagegen (exposed; not invoked)",
+      "args_template": {
+        "prompt": "S13《来电》小满单角色逐张绘图，首阶段参考尚未冻结，本文件是待审提示词。身份以 xiaoman_turnaround_v4_draft.png 和 xiaoman_expressions_current03.png 为准：同一小女孩、深棕刘海、双低马尾、红花发圈、黄底白圆点短袖连衣裙、白色圆领。旧 anim_13 两张只参考造型笔触，不能复制错误动作或直接当两个端点。画布1024×1536，头高约640源px；共同位置按S13_reference_plan.json。本张参考构造图只是骨架/体积标注，绝不把灰块或骨架绘入成图。以最近已审合格的真实画稿为改图源，保留统一中性底色与笔触；场景马灯光由后续合成加一次。完整颅体、下颌、耳、刘海、后脑、发根、马尾和颈面作为连体结构重画；下颌张口不能只拉伸口腔像素。胸和肩随本张姿态整体运动，双臂从自己的肩袖连续向下，手、腕、肘全在最终画幅外，无手嘴接触，无新道具。禁止整身缩放、孤立肩抖、只挪五官、脸网格扭曲、全画面溶解、增加第三臂、复制对侧手或手从胸口长出。透明背景，保全半透明发缘。\n本张 d16 F104，停16帧：轻回落停住。头回落约 3°，马尾末端落定；闭嘴装作没事。\n头朝向-33°（正为画右），俯仰+1°（负为抬颏），胸朝向+4°，眼开比例0.3，嘴开口高约0.0头高。头与身体三维连续，角度是构造目标，最终用实际图判断，不能声称像素精确角。\n依赖：从 d15 已通过原件派生；上张若退回则暂停本张，不从失败态扩链。",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "collab/refs/xiaoman_expressions_current03.png",
+          "collab/reviews/cloud_s13_20261018/reference/S13_d16_F104_construction.png",
+          "<approved d15 original path; fill only after acceptance>"
+        ]
+      }
+    }
+  ]
+}

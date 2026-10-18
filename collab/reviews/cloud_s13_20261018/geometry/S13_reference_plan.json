@@ -1,0 +1,5199 @@
+{
+  "shot": "S13",
+  "status": "REFERENCE ONLY / NOT FROZEN / NO GENERATED DRAWINGS",
+  "base_commit": "3d66443997cee24b64059e6f53f7d46968a3a05c",
+  "fps": 24,
+  "duration_s": 5,
+  "frames": 120,
+  "drawing_count": 16,
+  "canvas_source": [
+    1024,
+    1536
+  ],
+  "shot_canvas": [
+    1920,
+    1080
+  ],
+  "placement_proposal": {
+    "scale": 0.85,
+    "translation": [
+      330,
+      -30
+    ],
+    "source_crop_y_at_shot_bottom": 1305.8823529411766,
+    "note": "继承旧镜机位的提案，非已冻结接口；画稿整体等比，不单拉头脸。"
+  },
+  "coordinate_convention": "source x right, y down; orthographic z toward camera; +yaw nose right; -pitch chin up",
+  "identity_master": "collab/refs/xiaoman_turnaround_v4_draft.png",
+  "style_only": [
+    "collab/refs/anim_13_xiaoman_stare.png",
+    "collab/refs/anim_13_xiaoman_yawn.png"
+  ],
+  "identity_landmarks_manual_px": {
+    "crown_no_cowlick": [
+      324,
+      64
+    ],
+    "chin": [
+      324,
+      224
+    ],
+    "neck_base": [
+      324,
+      266
+    ],
+    "shoulder_near": [
+      269,
+      292
+    ],
+    "elbow_near": [
+      239,
+      423
+    ],
+    "wrist_near": [
+      210,
+      529
+    ],
+    "finger_tip_near": [
+      209,
+      590
+    ],
+    "shoulder_far": [
+      379,
+      292
+    ],
+    "elbow_far": [
+      409,
+      423
+    ],
+    "wrist_far": [
+      438,
+      529
+    ],
+    "finger_tip_far": [
+      439,
+      590
+    ]
+  },
+  "head_unit_identity_px": 160,
+  "head_unit_source_px": 640,
+  "measurement_caveat": "冠顶/下颏约±3px；袖下肩肘关节估计±8px，腕约±4px。不是实测人体三维扫描；固定三维模型为绘图构造提案。",
+  "bone_reference": {
+    "upper_arm": {
+      "identity_px": 134.391,
+      "H": 0.8399,
+      "source_px": 537.565
+    },
+    "forearm": {
+      "identity_px": 109.895,
+      "H": 0.6868,
+      "source_px": 439.582
+    },
+    "hand_envelope": {
+      "identity_px": 61.008,
+      "H": 0.3813,
+      "source_px": 244.033
+    }
+  },
+  "hidden_arm_note": "骨长保持；投影可缩短。肘、腕、手全程在最终画幅外；虚线表示画外构造，不指示手从躯干穿出。",
+  "layers_back_to_front": [
+    "far_arm",
+    "torso_and_dress",
+    "neck_then_whole_head",
+    "near_arm"
+  ],
+  "hair_layers": "头部耳/发根/马尾按各态 z 深度排序；过正面后头的近远关系交换，不能绑定躯干近/远臂命名。",
+  "contact_policy": "本版没有手嘴接触或持物；若冻后增加捂嘴须新交肩肘腕掌完整路径及近图，不能临时生一只悬手。",
+  "timelineFrames": [
+    [
+      0,
+      0
+    ],
+    [
+      18,
+      1
+    ],
+    [
+      24,
+      2
+    ],
+    [
+      30,
+      3
+    ],
+    [
+      36,
+      4
+    ],
+    [
+      40,
+      5
+    ],
+    [
+      44,
+      6
+    ],
+    [
+      50,
+      7
+    ],
+    [
+      58,
+      8
+    ],
+    [
+      68,
+      9
+    ],
+    [
+      78,
+      10
+    ],
+    [
+      84,
+      11
+    ],
+    [
+      87,
+      12
+    ],
+    [
+      90,
+      13
+    ],
+    [
+      94,
+      14
+    ],
+    [
+      104,
+      15
+    ]
+  ],
+  "keys": [
+    {
+      "id": "d01",
+      "f": 0,
+      "hold": 18,
+      "end_inclusive": 17,
+      "t": 0.0,
+      "head_yaw_deg": 35,
+      "head_pitch_deg": 0,
+      "torso_yaw_deg": 12,
+      "upper_body_dy_source_px": 0,
+      "eye_open_fraction": 1.0,
+      "mouth_aperture_H": 0.025,
+      "gaze_target": "crane",
+      "tail_lag_source_px": 0,
+      "title": "看鹤看入神",
+      "note": "视线画右偏下；嘴轻启；并非困倦。",
+      "joints_3d_source": {
+        "neck_base": [
+          524.0,
+          1040,
+          0.0
+        ],
+        "shoulder_near": [
+          308.808,
+          1144,
+          45.741
+        ],
+        "elbow_near": [
+          191.43,
+          1668,
+          70.69
+        ],
+        "wrist_near": [
+          77.965,
+          2092,
+          94.808
+        ],
+        "finger_tip_near": [
+          74.052,
+          2336,
+          95.639
+        ],
+        "shoulder_far": [
+          739.192,
+          1144,
+          -45.741
+        ],
+        "elbow_far": [
+          856.57,
+          1668,
+          -70.69
+        ],
+        "wrist_far": [
+          970.035,
+          2092,
+          -94.808
+        ],
+        "finger_tip_far": [
+          973.948,
+          2336,
+          -95.639
+        ],
+        "head_center": [
+          524.0,
+          552.0,
+          0.0
+        ],
+        "occipital_joint": [
+          524,
+          824,
+          0
+        ],
+        "nose": [
+          687.469,
+          728.0,
+          233.458
+        ],
+        "mouth_center": [
+          670.262,
+          776.0,
+          208.884
+        ],
+        "chin": [
+          607.169,
+          879.333,
+          118.777
+        ],
+        "ear_near": [
+          283.169,
+          688.0,
+          168.631
+        ],
+        "ear_far": [
+          764.831,
+          688.0,
+          -168.631
+        ],
+        "eye_near": [
+          560.901,
+          632.0,
+          254.94
+        ],
+        "eye_far": [
+          750.944,
+          632.0,
+          121.87
+        ],
+        "hair_root_near": [
+          275.79,
+          756.0,
+          124.967
+        ],
+        "hair_root_far": [
+          726.324,
+          756.0,
+          -190.5
+        ],
+        "tail_near": [
+          230.79,
+          1044.0,
+          99.967
+        ],
+        "tail_far": [
+          771.324,
+          1044.0,
+          -215.5
+        ]
+      },
+      "joints_source_xy": {
+        "neck_base": [
+          524.0,
+          1040
+        ],
+        "shoulder_near": [
+          308.808,
+          1144
+        ],
+        "elbow_near": [
+          191.43,
+          1668
+        ],
+        "wrist_near": [
+          77.965,
+          2092
+        ],
+        "finger_tip_near": [
+          74.052,
+          2336
+        ],
+        "shoulder_far": [
+          739.192,
+          1144
+        ],
+        "elbow_far": [
+          856.57,
+          1668
+        ],
+        "wrist_far": [
+          970.035,
+          2092
+        ],
+        "finger_tip_far": [
+          973.948,
+          2336
+        ],
+        "head_center": [
+          524.0,
+          552.0
+        ],
+        "occipital_joint": [
+          524,
+          824
+        ],
+        "nose": [
+          687.469,
+          728.0
+        ],
+        "mouth_center": [
+          670.262,
+          776.0
+        ],
+        "chin": [
+          607.169,
+          879.333
+        ],
+        "ear_near": [
+          283.169,
+          688.0
+        ],
+        "ear_far": [
+          764.831,
+          688.0
+        ],
+        "eye_near": [
+          560.901,
+          632.0
+        ],
+        "eye_far": [
+          750.944,
+          632.0
+        ],
+        "hair_root_near": [
+          275.79,
+          756.0
+        ],
+        "hair_root_far": [
+          726.324,
+          756.0
+        ],
+        "tail_near": [
+          230.79,
+          1044.0
+        ],
+        "tail_far": [
+          771.324,
+          1044.0
+        ]
+      },
+      "joints_shot_xy": {
+        "neck_base": [
+          775.4,
+          854.0
+        ],
+        "shoulder_near": [
+          592.486,
+          942.4
+        ],
+        "elbow_near": [
+          492.715,
+          1387.8
+        ],
+        "wrist_near": [
+          396.27,
+          1748.2
+        ],
+        "finger_tip_near": [
+          392.944,
+          1955.6
+        ],
+        "shoulder_far": [
+          958.314,
+          942.4
+        ],
+        "elbow_far": [
+          1058.085,
+          1387.8
+        ],
+        "wrist_far": [
+          1154.53,
+          1748.2
+        ],
+        "finger_tip_far": [
+          1157.856,
+          1955.6
+        ],
+        "head_center": [
+          775.4,
+          439.2
+        ],
+        "occipital_joint": [
+          775.4,
+          670.4
+        ],
+        "nose": [
+          914.349,
+          588.8
+        ],
+        "mouth_center": [
+          899.723,
+          629.6
+        ],
+        "chin": [
+          846.093,
+          717.433
+        ],
+        "ear_near": [
+          570.694,
+          554.8
+        ],
+        "ear_far": [
+          980.106,
+          554.8
+        ],
+        "eye_near": [
+          806.766,
+          507.2
+        ],
+        "eye_far": [
+          968.303,
+          507.2
+        ],
+        "hair_root_near": [
+          564.422,
+          612.6
+        ],
+        "hair_root_far": [
+          947.375,
+          612.6
+        ],
+        "tail_near": [
+          526.172,
+          857.4
+        ],
+        "tail_far": [
+          985.625,
+          857.4
+        ]
+      },
+      "head_frontmost_ear_landmark": "ear_near",
+      "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
+      "hands_visible": false,
+      "hand_mouth_contact": false,
+      "status": "reference_pending_Astra_freeze"
+    },
+    {
+      "id": "d02",
+      "f": 18,
+      "hold": 6,
+      "end_inclusive": 23,
+      "t": 0.75,
+      "head_yaw_deg": 35,
+      "head_pitch_deg": 0,
+      "torso_yaw_deg": 12,
+      "upper_body_dy_source_px": 0,
+      "eye_open_fraction": 1.0,
+      "mouth_aperture_H": 0.025,
+      "gaze_target": "grandma",
+      "tail_lag_source_px": 0,
+      "title": "先发现视线",
+      "note": "只改眼内视线到画右偏上；整头、身体保持 d01。",
+      "joints_3d_source": {
+        "neck_base": [
+          524.0,
+          1040,
+          0.0
+        ],
+        "shoulder_near": [
+          308.808,
+          1144,
+          45.741
+        ],
+        "elbow_near": [
+          191.43,
+          1668,
+          70.69
+        ],
+        "wrist_near": [
+          77.965,
+          2092,
+          94.808
+        ],
+        "finger_tip_near": [
+          74.052,
+          2336,
+          95.639
+        ],
+        "shoulder_far": [
+          739.192,
+          1144,
+          -45.741
+        ],
+        "elbow_far": [
+          856.57,
+          1668,
+          -70.69
+        ],
+        "wrist_far": [
+          970.035,
+          2092,
+          -94.808
+        ],
+        "finger_tip_far": [
+          973.948,
+          2336,
+          -95.639
+        ],
+        "head_center": [
+          524.0,
+          552.0,
+          0.0
+        ],
+        "occipital_joint": [
+          524,
+          824,
+          0
+        ],
+        "nose": [
+          687.469,
+          728.0,
+          233.458
+        ],
+        "mouth_center": [
+          670.262,
+          776.0,
+          208.884
+        ],
+        "chin": [
+          607.169,
+          879.333,
+          118.777
+        ],
+        "ear_near": [
+          283.169,
+          688.0,
+          168.631
+        ],
+        "ear_far": [
+          764.831,
+          688.0,
+          -168.631
+        ],
+        "eye_near": [
+          560.901,
+          632.0,
+          254.94
+        ],
+        "eye_far": [
+          750.944,
+          632.0,
+          121.87
+        ],
+        "hair_root_near": [
+          275.79,
+          756.0,
+          124.967
+        ],
+        "hair_root_far": [
+          726.324,
+          756.0,
+          -190.5
+        ],
+        "tail_near": [
+          230.79,
+          1044.0,
+          99.967
+        ],
+        "tail_far": [
+          771.324,
+          1044.0,
+          -215.5
+        ]
+      },
+      "joints_source_xy": {
+        "neck_base": [
+          524.0,
+          1040
+        ],
+        "shoulder_near": [
+          308.808,
+          1144
+        ],
+        "elbow_near": [
+          191.43,
+          1668
+        ],
+        "wrist_near": [
+          77.965,
+          2092
+        ],
+        "finger_tip_near": [
+          74.052,
+          2336
+        ],
+        "shoulder_far": [
+          739.192,
+          1144
+        ],
+        "elbow_far": [
+          856.57,
+          1668
+        ],
+        "wrist_far": [
+          970.035,
+          2092
+        ],
+        "finger_tip_far": [
+          973.948,
+          2336
+        ],
+        "head_center": [
+          524.0,
+          552.0
+        ],
+        "occipital_joint": [
+          524,
+          824
+        ],
+        "nose": [
+          687.469,
+          728.0
+        ],
+        "mouth_center": [
+          670.262,
+          776.0
+        ],
+        "chin": [
+          607.169,
+          879.333
+        ],
+        "ear_near": [
+          283.169,
+          688.0
+        ],
+        "ear_far": [
+          764.831,
+          688.0
+        ],
+        "eye_near": [
+          560.901,
+          632.0
+        ],
+        "eye_far": [
+          750.944,
+          632.0
+        ],
+        "hair_root_near": [
+          275.79,
+          756.0
+        ],
+        "hair_root_far": [
+          726.324,
+          756.0
+        ],
+        "tail_near": [
+          230.79,
+          1044.0
+        ],
+        "tail_far": [
+          771.324,
+          1044.0
+        ]
+      },
+      "joints_shot_xy": {
+        "neck_base": [
+          775.4,
+          854.0
+        ],
+        "shoulder_near": [
+          592.486,
+          942.4
+        ],
+        "elbow_near": [
+          492.715,
+          1387.8
+        ],
+        "wrist_near": [
+          396.27,
+          1748.2
+        ],
+        "finger_tip_near": [
+          392.944,
+          1955.6
+        ],
+        "shoulder_far": [
+          958.314,
+          942.4
+        ],
+        "elbow_far": [
+          1058.085,
+          1387.8
+        ],
+        "wrist_far": [
+          1154.53,
+          1748.2
+        ],
+        "finger_tip_far": [
+          1157.856,
+          1955.6
+        ],
+        "head_center": [
+          775.4,
+          439.2
+        ],
+        "occipital_joint": [
+          775.4,
+          670.4
+        ],
+        "nose": [
+          914.349,
+          588.8
+        ],
+        "mouth_center": [
+          899.723,
+          629.6
+        ],
+        "chin": [
+          846.093,
+          717.433
+        ],
+        "ear_near": [
+          570.694,
+          554.8
+        ],
+        "ear_far": [
+          980.106,
+          554.8
+        ],
+        "eye_near": [
+          806.766,
+          507.2
+        ],
+        "eye_far": [
+          968.303,
+          507.2
+        ],
+        "hair_root_near": [
+          564.422,
+          612.6
+        ],
+        "hair_root_far": [
+          947.375,
+          612.6
+        ],
+        "tail_near": [
+          526.172,
+          857.4
+        ],
+        "tail_far": [
+          985.625,
+          857.4
+        ]
+      },
+      "head_frontmost_ear_landmark": "ear_near",
+      "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
+      "hands_visible": false,
+      "hand_mouth_contact": false,
+      "status": "reference_pending_Astra_freeze"
+    },
+    {
+      "id": "d03",
+      "f": 24,
+      "hold": 6,
+      "end_inclusive": 29,
+      "t": 1.0,
+      "head_yaw_deg": 42,
+      "head_pitch_deg": 0,
+      "torso_yaw_deg": 12,
+      "upper_body_dy_source_px": 0,
+      "eye_open_fraction": 1.05,
+      "mouth_aperture_H": 0.01,
+      "gaze_target": "grandma",
+      "tail_lag_source_px": 0,
+      "title": "确认奶奶在看",
+      "note": "整头向奶奶多转约 7°；耳、后脑和发根一起转。",
+      "joints_3d_source": {
+        "neck_base": [
+          524.0,
+          1040,
+          0.0
+        ],
+        "shoulder_near": [
+          308.808,
+          1144,
+          45.741
+        ],
+        "elbow_near": [
+          191.43,
+          1668,
+          70.69
+        ],
+        "wrist_near": [
+          77.965,
+          2092,
+          94.808
+        ],
+        "finger_tip_near": [
+          74.052,
+          2336,
+          95.639
+        ],
+        "shoulder_far": [
+          739.192,
+          1144,
+          -45.741
+        ],
+        "elbow_far": [
+          856.57,
+          1668,
+          -70.69
+        ],
+        "wrist_far": [
+          970.035,
+          2092,
+          -94.808
+        ],
+        "finger_tip_far": [
+          973.948,
+          2336,
+          -95.639
+        ],
+        "head_center": [
+          524.0,
+          552.0,
+          0.0
+        ],
+        "occipital_joint": [
+          524,
+          824,
+          0
+        ],
+        "nose": [
+          714.702,
+          728.0,
+          211.796
+        ],
+        "mouth_center": [
+          694.628,
+          776.0,
+          189.502
+        ],
+        "chin": [
+          621.024,
+          874.933,
+          107.756
+        ],
+        "ear_near": [
+          305.515,
+          688.0,
+          196.724
+        ],
+        "ear_far": [
+          742.485,
+          688.0,
+          -196.724
+        ],
+        "eye_near": [
+          591.695,
+          632.0,
+          248.542
+        ],
+        "eye_far": [
+          764.105,
+          632.0,
+          93.304
+        ],
+        "hair_root_near": [
+          292.87,
+          756.0,
+          154.285
+        ],
+        "hair_root_far": [
+          701.6,
+          756.0,
+          -213.737
+        ],
+        "tail_near": [
+          247.87,
+          1044.0,
+          129.285
+        ],
+        "tail_far": [
+          746.6,
+          1044.0,
+          -238.737
+        ]
+      },
+      "joints_source_xy": {
+        "neck_base": [
+          524.0,
+          1040
+        ],
+        "shoulder_near": [
+          308.808,
+          1144
+        ],
+        "elbow_near": [
+          191.43,
+          1668
+        ],
+        "wrist_near": [
+          77.965,
+          2092
+        ],
+        "finger_tip_near": [
+          74.052,
+          2336
+        ],
+        "shoulder_far": [
+          739.192,
+          1144
+        ],
+        "elbow_far": [
+          856.57,
+          1668
+        ],
+        "wrist_far": [
+          970.035,
+          2092
+        ],
+        "finger_tip_far": [
+          973.948,
+          2336
+        ],
+        "head_center": [
+          524.0,
+          552.0
+        ],
+        "occipital_joint": [
+          524,
+          824
+        ],
+        "nose": [
+          714.702,
+          728.0
+        ],
+        "mouth_center": [
+          694.628,
+          776.0
+        ],
+        "chin": [
+          621.024,
+          874.933
+        ],
+        "ear_near": [
+          305.515,
+          688.0
+        ],
+        "ear_far": [
+          742.485,
+          688.0
+        ],
+        "eye_near": [
+          591.695,
+          632.0
+        ],
+        "eye_far": [
+          764.105,
+          632.0
+        ],
+        "hair_root_near": [
+          292.87,
+          756.0
+        ],
+        "hair_root_far": [
+          701.6,
+          756.0
+        ],
+        "tail_near": [
+          247.87,
+          1044.0
+        ],
+        "tail_far": [
+          746.6,
+          1044.0
+        ]
+      },
+      "joints_shot_xy": {
+        "neck_base": [
+          775.4,
+          854.0
+        ],
+        "shoulder_near": [
+          592.486,
+          942.4
+        ],
+        "elbow_near": [
+          492.715,
+          1387.8
+        ],
+        "wrist_near": [
+          396.27,
+          1748.2
+        ],
+        "finger_tip_near": [
+          392.944,
+          1955.6
+        ],
+        "shoulder_far": [
+          958.314,
+          942.4
+        ],
+        "elbow_far": [
+          1058.085,
+          1387.8
+        ],
+        "wrist_far": [
+          1154.53,
+          1748.2
+        ],
+        "finger_tip_far": [
+          1157.856,
+          1955.6
+        ],
+        "head_center": [
+          775.4,
+          439.2
+        ],
+        "occipital_joint": [
+          775.4,
+          670.4
+        ],
+        "nose": [
+          937.497,
+          588.8
+        ],
+        "mouth_center": [
+          920.434,
+          629.6
+        ],
+        "chin": [
+          857.87,
+          713.693
+        ],
+        "ear_near": [
+          589.688,
+          554.8
+        ],
+        "ear_far": [
+          961.112,
+          554.8
+        ],
+        "eye_near": [
+          832.941,
+          507.2
+        ],
+        "eye_far": [
+          979.489,
+          507.2
+        ],
+        "hair_root_near": [
+          578.939,
+          612.6
+        ],
+        "hair_root_far": [
+          926.36,
+          612.6
+        ],
+        "tail_near": [
+          540.689,
+          857.4
+        ],
+        "tail_far": [
+          964.61,
+          857.4
+        ]
+      },
+      "head_frontmost_ear_landmark": "ear_near",
+      "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
+      "hands_visible": false,
+      "hand_mouth_contact": false,
+      "status": "reference_pending_Astra_freeze"
+    },
+    {
+      "id": "d04",
+      "f": 30,
+      "hold": 6,
+      "end_inclusive": 35,
+      "t": 1.25,
+      "head_yaw_deg": 42,
+      "head_pitch_deg": 0,
+      "torso_yaw_deg": 12,
+      "upper_body_dy_source_px": 0,
+      "eye_open_fraction": 1.04,
+      "mouth_aperture_H": 0.0,
+      "gaze_target": "grandma",
+      "tail_lag_source_px": 0,
+      "title": "被看见的一顿",
+      "note": "嘴收住，眉轻提；保持清醒的对视，不抢先闭眼。",
+      "joints_3d_source": {
+        "neck_base": [
+          524.0,
+          1040,
+          0.0
+        ],
+        "shoulder_near": [
+          308.808,
+          1144,
+          45.741
+        ],
+        "elbow_near": [
+          191.43,
+          1668,
+          70.69
+        ],
+        "wrist_near": [
+          77.965,
+          2092,
+          94.808
+        ],
+        "finger_tip_near": [
+          74.052,
+          2336,
+          95.639
+        ],
+        "shoulder_far": [
+          739.192,
+          1144,
+          -45.741
+        ],
+        "elbow_far": [
+          856.57,
+          1668,
+          -70.69
+        ],
+        "wrist_far": [
+          970.035,
+          2092,
+          -94.808
+        ],
+        "finger_tip_far": [
+          973.948,
+          2336,
+          -95.639
+        ],
+        "head_center": [
+          524.0,
+          552.0,
+          0.0
+        ],
+        "occipital_joint": [
+          524,
+          824,
+          0
+        ],
+        "nose": [
+          714.702,
+          728.0,
+          211.796
+        ],
+        "mouth_center": [
+          694.628,
+          776.0,
+          189.502
+        ],
+        "chin": [
+          621.024,
+          872.0,
+          107.756
+        ],
+        "ear_near": [
+          305.515,
+          688.0,
+          196.724
+        ],
+        "ear_far": [
+          742.485,
+          688.0,
+          -196.724
+        ],
+        "eye_near": [
+          591.695,
+          632.0,
+          248.542
+        ],
+        "eye_far": [
+          764.105,
+          632.0,
+          93.304
+        ],
+        "hair_root_near": [
+          292.87,
+          756.0,
+          154.285
+        ],
+        "hair_root_far": [
+          701.6,
+          756.0,
+          -213.737
+        ],
+        "tail_near": [
+          247.87,
+          1044.0,
+          129.285
+        ],
+        "tail_far": [
+          746.6,
+          1044.0,
+          -238.737
+        ]
+      },
+      "joints_source_xy": {
+        "neck_base": [
+          524.0,
+          1040
+        ],
+        "shoulder_near": [
+          308.808,
+          1144
+        ],
+        "elbow_near": [
+          191.43,
+          1668
+        ],
+        "wrist_near": [
+          77.965,
+          2092
+        ],
+        "finger_tip_near": [
+          74.052,
+          2336
+        ],
+        "shoulder_far": [
+          739.192,
+          1144
+        ],
+        "elbow_far": [
+          856.57,
+          1668
+        ],
+        "wrist_far": [
+          970.035,
+          2092
+        ],
+        "finger_tip_far": [
+          973.948,
+          2336
+        ],
+        "head_center": [
+          524.0,
+          552.0
+        ],
+        "occipital_joint": [
+          524,
+          824
+        ],
+        "nose": [
+          714.702,
+          728.0
+        ],
+        "mouth_center": [
+          694.628,
+          776.0
+        ],
+        "chin": [
+          621.024,
+          872.0
+        ],
+        "ear_near": [
+          305.515,
+          688.0
+        ],
+        "ear_far": [
+          742.485,
+          688.0
+        ],
+        "eye_near": [
+          591.695,
+          632.0
+        ],
+        "eye_far": [
+          764.105,
+          632.0
+        ],
+        "hair_root_near": [
+          292.87,
+          756.0
+        ],
+        "hair_root_far": [
+          701.6,
+          756.0
+        ],
+        "tail_near": [
+          247.87,
+          1044.0
+        ],
+        "tail_far": [
+          746.6,
+          1044.0
+        ]
+      },
+      "joints_shot_xy": {
+        "neck_base": [
+          775.4,
+          854.0
+        ],
+        "shoulder_near": [
+          592.486,
+          942.4
+        ],
+        "elbow_near": [
+          492.715,
+          1387.8
+        ],
+        "wrist_near": [
+          396.27,
+          1748.2
+        ],
+        "finger_tip_near": [
+          392.944,
+          1955.6
+        ],
+        "shoulder_far": [
+          958.314,
+          942.4
+        ],
+        "elbow_far": [
+          1058.085,
+          1387.8
+        ],
+        "wrist_far": [
+          1154.53,
+          1748.2
+        ],
+        "finger_tip_far": [
+          1157.856,
+          1955.6
+        ],
+        "head_center": [
+          775.4,
+          439.2
+        ],
+        "occipital_joint": [
+          775.4,
+          670.4
+        ],
+        "nose": [
+          937.497,
+          588.8
+        ],
+        "mouth_center": [
+          920.434,
+          629.6
+        ],
+        "chin": [
+          857.87,
+          711.2
+        ],
+        "ear_near": [
+          589.688,
+          554.8
+        ],
+        "ear_far": [
+          961.112,
+          554.8
+        ],
+        "eye_near": [
+          832.941,
+          507.2
+        ],
+        "eye_far": [
+          979.489,
+          507.2
+        ],
+        "hair_root_near": [
+          578.939,
+          612.6
+        ],
+        "hair_root_far": [
+          926.36,
+          612.6
+        ],
+        "tail_near": [
+          540.689,
+          857.4
+        ],
+        "tail_far": [
+          964.61,
+          857.4
+        ]
+      },
+      "head_frontmost_ear_landmark": "ear_near",
+      "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
+      "hands_visible": false,
+      "hand_mouth_contact": false,
+      "status": "reference_pending_Astra_freeze"
+    },
+    {
+      "id": "d05",
+      "f": 36,
+      "hold": 4,
+      "end_inclusive": 39,
+      "t": 1.5,
+      "head_yaw_deg": 40,
+      "head_pitch_deg": -1,
+      "torso_yaw_deg": 12,
+      "upper_body_dy_source_px": -2,
+      "eye_open_fraction": 0.65,
+      "mouth_aperture_H": 0.01,
+      "gaze_target": "grandma",
+      "tail_lag_source_px": 0,
+      "title": "决定装困",
+      "note": "故意垂眼；上胸随吸气微起；不要直接跳到哈欠峰态。",
+      "joints_3d_source": {
+        "neck_base": [
+          524.0,
+          1038,
+          0.0
+        ],
+        "shoulder_near": [
+          308.808,
+          1142,
+          45.741
+        ],
+        "elbow_near": [
+          191.43,
+          1666,
+          70.69
+        ],
+        "wrist_near": [
+          77.965,
+          2090,
+          94.808
+        ],
+        "finger_tip_near": [
+          74.052,
+          2334,
+          95.639
+        ],
+        "shoulder_far": [
+          739.192,
+          1142,
+          -45.741
+        ],
+        "elbow_far": [
+          856.57,
+          1666,
+          -70.69
+        ],
+        "wrist_far": [
+          970.035,
+          2090,
+          -94.808
+        ],
+        "finger_tip_far": [
+          973.948,
+          2334,
+          -95.639
+        ],
+        "head_center": [
+          520.949,
+          550.041,
+          -3.636
+        ],
+        "occipital_joint": [
+          524,
+          822,
+          0
+        ],
+        "nose": [
+          706.09,
+          721.041,
+          217.006
+        ],
+        "mouth_center": [
+          687.347,
+          769.557,
+          194.67
+        ],
+        "chin": [
+          617.761,
+          870.395,
+          111.74
+        ],
+        "ear_near": [
+          297.257,
+          686.021,
+          187.161
+        ],
+        "ear_far": [
+          747.691,
+          686.021,
+          -190.798
+        ],
+        "eye_near": [
+          580.804,
+          626.015,
+          248.16
+        ],
+        "eye_far": [
+          758.526,
+          626.015,
+          99.033
+        ],
+        "hair_root_near": [
+          286.867,
+          754.708,
+          145.22
+        ],
+        "hair_root_far": [
+          708.192,
+          754.708,
+          -208.313
+        ],
+        "tail_near": [
+          241.867,
+          1042.708,
+          120.22
+        ],
+        "tail_far": [
+          753.192,
+          1042.708,
+          -233.313
+        ]
+      },
+      "joints_source_xy": {
+        "neck_base": [
+          524.0,
+          1038
+        ],
+        "shoulder_near": [
+          308.808,
+          1142
+        ],
+        "elbow_near": [
+          191.43,
+          1666
+        ],
+        "wrist_near": [
+          77.965,
+          2090
+        ],
+        "finger_tip_near": [
+          74.052,
+          2334
+        ],
+        "shoulder_far": [
+          739.192,
+          1142
+        ],
+        "elbow_far": [
+          856.57,
+          1666
+        ],
+        "wrist_far": [
+          970.035,
+          2090
+        ],
+        "finger_tip_far": [
+          973.948,
+          2334
+        ],
+        "head_center": [
+          520.949,
+          550.041
+        ],
+        "occipital_joint": [
+          524,
+          822
+        ],
+        "nose": [
+          706.09,
+          721.041
+        ],
+        "mouth_center": [
+          687.347,
+          769.557
+        ],
+        "chin": [
+          617.761,
+          870.395
+        ],
+        "ear_near": [
+          297.257,
+          686.021
+        ],
+        "ear_far": [
+          747.691,
+          686.021
+        ],
+        "eye_near": [
+          580.804,
+          626.015
+        ],
+        "eye_far": [
+          758.526,
+          626.015
+        ],
+        "hair_root_near": [
+          286.867,
+          754.708
+        ],
+        "hair_root_far": [
+          708.192,
+          754.708
+        ],
+        "tail_near": [
+          241.867,
+          1042.708
+        ],
+        "tail_far": [
+          753.192,
+          1042.708
+        ]
+      },
+      "joints_shot_xy": {
+        "neck_base": [
+          775.4,
+          852.3
+        ],
+        "shoulder_near": [
+          592.486,
+          940.7
+        ],
+        "elbow_near": [
+          492.715,
+          1386.1
+        ],
+        "wrist_near": [
+          396.27,
+          1746.5
+        ],
+        "finger_tip_near": [
+          392.944,
+          1953.9
+        ],
+        "shoulder_far": [
+          958.314,
+          940.7
+        ],
+        "elbow_far": [
+          1058.085,
+          1386.1
+        ],
+        "wrist_far": [
+          1154.53,
+          1746.5
+        ],
+        "finger_tip_far": [
+          1157.856,
+          1953.9
+        ],
+        "head_center": [
+          772.806,
+          437.535
+        ],
+        "occipital_joint": [
+          775.4,
+          668.7
+        ],
+        "nose": [
+          930.176,
+          582.885
+        ],
+        "mouth_center": [
+          914.245,
+          624.123
+        ],
+        "chin": [
+          855.097,
+          709.836
+        ],
+        "ear_near": [
+          582.669,
+          553.118
+        ],
+        "ear_far": [
+          965.538,
+          553.118
+        ],
+        "eye_near": [
+          823.683,
+          502.113
+        ],
+        "eye_far": [
+          974.747,
+          502.113
+        ],
+        "hair_root_near": [
+          573.837,
+          611.502
+        ],
+        "hair_root_far": [
+          931.963,
+          611.502
+        ],
+        "tail_near": [
+          535.587,
+          856.302
+        ],
+        "tail_far": [
+          970.213,
+          856.302
+        ]
+      },
+      "head_frontmost_ear_landmark": "ear_near",
+      "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
+      "hands_visible": false,
+      "hand_mouth_contact": false,
+      "status": "reference_pending_Astra_freeze"
+    },
+    {
+      "id": "d06",
+      "f": 40,
+      "hold": 4,
+      "end_inclusive": 43,
+      "t": 1.666667,
+      "head_yaw_deg": 37,
+      "head_pitch_deg": -3,
+      "torso_yaw_deg": 12,
+      "upper_body_dy_source_px": -4,
+      "eye_open_fraction": 0.35,
+      "mouth_aperture_H": 0.035,
+      "gaze_target": "none",
+      "tail_lag_source_px": 0,
+      "title": "哈欠起势",
+      "note": "嘴先小开，下颌开始落；头与颈面连贯微后仰。",
+      "joints_3d_source": {
+        "neck_base": [
+          524.0,
+          1036,
+          0.0
+        ],
+        "shoulder_near": [
+          308.808,
+          1140,
+          45.741
+        ],
+        "elbow_near": [
+          191.43,
+          1664,
+          70.69
+        ],
+        "wrist_near": [
+          77.965,
+          2088,
+          94.808
+        ],
+        "finger_tip_near": [
+          74.052,
+          2332,
+          95.639
+        ],
+        "shoulder_far": [
+          739.192,
+          1140,
+          -45.741
+        ],
+        "elbow_far": [
+          856.57,
+          1664,
+          -70.69
+        ],
+        "wrist_far": [
+          970.035,
+          2088,
+          -94.808
+        ],
+        "finger_tip_far": [
+          973.948,
+          2332,
+          -95.639
+        ],
+        "head_center": [
+          515.433,
+          548.373,
+          -11.369
+        ],
+        "occipital_joint": [
+          524,
+          820,
+          0
+        ],
+        "nose": [
+          692.259,
+          709.216,
+          223.287
+        ],
+        "mouth_center": [
+          675.741,
+          758.72,
+          201.367
+        ],
+        "chin": [
+          612.979,
+          870.598,
+          118.079
+        ],
+        "ear_near": [
+          284.918,
+          684.186,
+          171.249
+        ],
+        "ear_far": [
+          754.515,
+          684.186,
+          -182.618
+        ],
+        "eye_near": [
+          563.539,
+          616.226,
+          245.22
+        ],
+        "eye_far": [
+          748.822,
+          616.226,
+          105.599
+        ],
+        "hair_root_near": [
+          278.194,
+          754.187,
+          130.755
+        ],
+        "hair_root_far": [
+          717.443,
+          754.187,
+          -200.243
+        ],
+        "tail_near": [
+          233.194,
+          1042.187,
+          105.755
+        ],
+        "tail_far": [
+          762.443,
+          1042.187,
+          -225.243
+        ]
+      },
+      "joints_source_xy": {
+        "neck_base": [
+          524.0,
+          1036
+        ],
+        "shoulder_near": [
+          308.808,
+          1140
+        ],
+        "elbow_near": [
+          191.43,
+          1664
+        ],
+        "wrist_near": [
+          77.965,
+          2088
+        ],
+        "finger_tip_near": [
+          74.052,
+          2332
+        ],
+        "shoulder_far": [
+          739.192,
+          1140
+        ],
+        "elbow_far": [
+          856.57,
+          1664
+        ],
+        "wrist_far": [
+          970.035,
+          2088
+        ],
+        "finger_tip_far": [
+          973.948,
+          2332
+        ],
+        "head_center": [
+          515.433,
+          548.373
+        ],
+        "occipital_joint": [
+          524,
+          820
+        ],
+        "nose": [
+          692.259,
+          709.216
+        ],
+        "mouth_center": [
+          675.741,
+          758.72
+        ],
+        "chin": [
+          612.979,
+          870.598
+        ],
+        "ear_near": [
+          284.918,
+          684.186
+        ],
+        "ear_far": [
+          754.515,
+          684.186
+        ],
+        "eye_near": [
+          563.539,
+          616.226
+        ],
+        "eye_far": [
+          748.822,
+          616.226
+        ],
+        "hair_root_near": [
+          278.194,
+          754.187
+        ],
+        "hair_root_far": [
+          717.443,
+          754.187
+        ],
+        "tail_near": [
+          233.194,
+          1042.187
+        ],
+        "tail_far": [
+          762.443,
+          1042.187
+        ]
+      },
+      "joints_shot_xy": {
+        "neck_base": [
+          775.4,
+          850.6
+        ],
+        "shoulder_near": [
+          592.486,
+          939.0
+        ],
+        "elbow_near": [
+          492.715,
+          1384.4
+        ],
+        "wrist_near": [
+          396.27,
+          1744.8
+        ],
+        "finger_tip_near": [
+          392.944,
+          1952.2
+        ],
+        "shoulder_far": [
+          958.314,
+          939.0
+        ],
+        "elbow_far": [
+          1058.085,
+          1384.4
+        ],
+        "wrist_far": [
+          1154.53,
+          1744.8
+        ],
+        "finger_tip_far": [
+          1157.856,
+          1952.2
+        ],
+        "head_center": [
+          768.118,
+          436.117
+        ],
+        "occipital_joint": [
+          775.4,
+          667.0
+        ],
+        "nose": [
+          918.42,
+          572.833
+        ],
+        "mouth_center": [
+          904.38,
+          614.912
+        ],
+        "chin": [
+          851.032,
+          710.008
+        ],
+        "ear_near": [
+          572.18,
+          551.558
+        ],
+        "ear_far": [
+          971.338,
+          551.558
+        ],
+        "eye_near": [
+          809.008,
+          493.792
+        ],
+        "eye_far": [
+          966.499,
+          493.792
+        ],
+        "hair_root_near": [
+          566.465,
+          611.059
+        ],
+        "hair_root_far": [
+          939.827,
+          611.059
+        ],
+        "tail_near": [
+          528.215,
+          855.859
+        ],
+        "tail_far": [
+          978.077,
+          855.859
+        ]
+      },
+      "head_frontmost_ear_landmark": "ear_near",
+      "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
+      "hands_visible": false,
+      "hand_mouth_contact": false,
+      "status": "reference_pending_Astra_freeze"
+    },
+    {
+      "id": "d07",
+      "f": 44,
+      "hold": 6,
+      "end_inclusive": 49,
+      "t": 1.833333,
+      "head_yaw_deg": 32,
+      "head_pitch_deg": -6,
+      "torso_yaw_deg": 11,
+      "upper_body_dy_source_px": -8,
+      "eye_open_fraction": 0.1,
+      "mouth_aperture_H": 0.075,
+      "gaze_target": "none",
+      "tail_lag_source_px": 4,
+      "title": "哈欠张开",
+      "note": "眼将闭，真正张下颌；不是纵向拉伸嘴贴图。",
+      "joints_3d_source": {
+        "neck_base": [
+          524.0,
+          1032,
+          0.0
+        ],
+        "shoulder_near": [
+          308.042,
+          1136,
+          41.978
+        ],
+        "elbow_near": [
+          190.247,
+          1660,
+          64.875
+        ],
+        "wrist_near": [
+          76.378,
+          2084,
+          87.009
+        ],
+        "finger_tip_near": [
+          72.451,
+          2328,
+          87.772
+        ],
+        "shoulder_far": [
+          739.958,
+          1136,
+          -41.978
+        ],
+        "elbow_far": [
+          857.753,
+          1660,
+          -64.875
+        ],
+        "wrist_far": [
+          971.622,
+          2084,
+          -87.009
+        ],
+        "finger_tip_far": [
+          975.549,
+          2328,
+          -87.772
+        ],
+        "head_center": [
+          508.933,
+          545.49,
+          -24.111
+        ],
+        "occipital_joint": [
+          524,
+          816,
+          0
+        ],
+        "nose": [
+          668.882,
+          690.735,
+          231.86
+        ],
+        "mouth_center": [
+          655.73,
+          741.608,
+          210.813
+        ],
+        "chin": [
+          604.295,
+          870.46,
+          128.499
+        ],
+        "ear_near": [
+          267.141,
+          680.745,
+          143.741
+        ],
+        "ear_far": [
+          765.793,
+          680.745,
+          -167.852
+        ],
+        "eye_near": [
+          536.205,
+          601.01,
+          238.433
+        ],
+        "eye_far": [
+          732.952,
+          601.01,
+          115.492
+        ],
+        "hair_root_near": [
+          265.939,
+          752.554,
+          105.964
+        ],
+        "hair_root_far": [
+          732.366,
+          752.554,
+          -185.492
+        ],
+        "tail_near": [
+          224.939,
+          1040.554,
+          80.964
+        ],
+        "tail_far": [
+          781.366,
+          1040.554,
+          -210.492
+        ]
+      },
+      "joints_source_xy": {
+        "neck_base": [
+          524.0,
+          1032
+        ],
+        "shoulder_near": [
+          308.042,
+          1136
+        ],
+        "elbow_near": [
+          190.247,
+          1660
+        ],
+        "wrist_near": [
+          76.378,
+          2084
+        ],
+        "finger_tip_near": [
+          72.451,
+          2328
+        ],
+        "shoulder_far": [
+          739.958,
+          1136
+        ],
+        "elbow_far": [
+          857.753,
+          1660
+        ],
+        "wrist_far": [
+          971.622,
+          2084
+        ],
+        "finger_tip_far": [
+          975.549,
+          2328
+        ],
+        "head_center": [
+          508.933,
+          545.49
+        ],
+        "occipital_joint": [
+          524,
+          816
+        ],
+        "nose": [
+          668.882,
+          690.735
+        ],
+        "mouth_center": [
+          655.73,
+          741.608
+        ],
+        "chin": [
+          604.295,
+          870.46
+        ],
+        "ear_near": [
+          267.141,
+          680.745
+        ],
+        "ear_far": [
+          765.793,
+          680.745
+        ],
+        "eye_near": [
+          536.205,
+          601.01
+        ],
+        "eye_far": [
+          732.952,
+          601.01
+        ],
+        "hair_root_near": [
+          265.939,
+          752.554
+        ],
+        "hair_root_far": [
+          732.366,
+          752.554
+        ],
+        "tail_near": [
+          224.939,
+          1040.554
+        ],
+        "tail_far": [
+          781.366,
+          1040.554
+        ]
+      },
+      "joints_shot_xy": {
+        "neck_base": [
+          775.4,
+          847.2
+        ],
+        "shoulder_near": [
+          591.836,
+          935.6
+        ],
+        "elbow_near": [
+          491.71,
+          1381.0
+        ],
+        "wrist_near": [
+          394.921,
+          1741.4
+        ],
+        "finger_tip_near": [
+          391.584,
+          1948.8
+        ],
+        "shoulder_far": [
+          958.964,
+          935.6
+        ],
+        "elbow_far": [
+          1059.09,
+          1381.0
+        ],
+        "wrist_far": [
+          1155.879,
+          1741.4
+        ],
+        "finger_tip_far": [
+          1159.216,
+          1948.8
+        ],
+        "head_center": [
+          762.593,
+          433.667
+        ],
+        "occipital_joint": [
+          775.4,
+          663.6
+        ],
+        "nose": [
+          898.55,
+          557.125
+        ],
+        "mouth_center": [
+          887.371,
+          600.367
+        ],
+        "chin": [
+          843.651,
+          709.891
+        ],
+        "ear_near": [
+          557.07,
+          548.633
+        ],
+        "ear_far": [
+          980.924,
+          548.633
+        ],
+        "eye_near": [
+          785.774,
+          480.859
+        ],
+        "eye_far": [
+          953.009,
+          480.859
+        ],
+        "hair_root_near": [
+          556.049,
+          609.671
+        ],
+        "hair_root_far": [
+          952.511,
+          609.671
+        ],
+        "tail_near": [
+          521.199,
+          854.471
+        ],
+        "tail_far": [
+          994.161,
+          854.471
+        ]
+      },
+      "head_frontmost_ear_landmark": "ear_near",
+      "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
+      "hands_visible": false,
+      "hand_mouth_contact": false,
+      "status": "reference_pending_Astra_freeze"
+    },
+    {
+      "id": "d08",
+      "f": 50,
+      "hold": 8,
+      "end_inclusive": 57,
+      "t": 2.083333,
+      "head_yaw_deg": 28,
+      "head_pitch_deg": -9,
+      "torso_yaw_deg": 10,
+      "upper_body_dy_source_px": -12,
+      "eye_open_fraction": 0.0,
+      "mouth_aperture_H": 0.12,
+      "gaze_target": "none",
+      "tail_lag_source_px": 8,
+      "title": "假哈欠峰态",
+      "note": "下颌下降 0.055H；额头颅体尺寸不变；胸肩同起。",
+      "joints_3d_source": {
+        "neck_base": [
+          524.0,
+          1028,
+          0.0
+        ],
+        "shoulder_near": [
+          307.342,
+          1132,
+          38.203
+        ],
+        "elbow_near": [
+          189.165,
+          1656,
+          59.04
+        ],
+        "wrist_near": [
+          74.928,
+          2080,
+          79.184
+        ],
+        "finger_tip_near": [
+          70.988,
+          2324,
+          79.878
+        ],
+        "shoulder_far": [
+          740.658,
+          1132,
+          -38.203
+        ],
+        "elbow_far": [
+          858.835,
+          1656,
+          -59.04
+        ],
+        "wrist_far": [
+          973.072,
+          2080,
+          -79.184
+        ],
+        "finger_tip_far": [
+          977.012,
+          2324,
+          -79.878
+        ],
+        "head_center": [
+          504.024,
+          543.349,
+          -37.57
+        ],
+        "occipital_joint": [
+          524,
+          812,
+          0
+        ],
+        "nose": [
+          649.102,
+          672.598,
+          235.282
+        ],
+        "mouth_center": [
+          638.716,
+          724.7,
+          215.75
+        ],
+        "chin": [
+          597.346,
+          871.493,
+          137.943
+        ],
+        "ear_near": [
+          254.425,
+          677.674,
+          119.24
+        ],
+        "ear_far": [
+          773.599,
+          677.674,
+          -156.809
+        ],
+        "eye_near": [
+          514.126,
+          586.384,
+          228.517
+        ],
+        "eye_far": [
+          718.97,
+          586.384,
+          119.599
+        ],
+        "hair_root_near": [
+          257.648,
+          751.095,
+          84.829
+        ],
+        "hair_root_far": [
+          743.269,
+          751.095,
+          -173.38
+        ],
+        "tail_near": [
+          220.648,
+          1039.095,
+          59.829
+        ],
+        "tail_far": [
+          796.269,
+          1039.095,
+          -198.38
+        ]
+      },
+      "joints_source_xy": {
+        "neck_base": [
+          524.0,
+          1028
+        ],
+        "shoulder_near": [
+          307.342,
+          1132
+        ],
+        "elbow_near": [
+          189.165,
+          1656
+        ],
+        "wrist_near": [
+          74.928,
+          2080
+        ],
+        "finger_tip_near": [
+          70.988,
+          2324
+        ],
+        "shoulder_far": [
+          740.658,
+          1132
+        ],
+        "elbow_far": [
+          858.835,
+          1656
+        ],
+        "wrist_far": [
+          973.072,
+          2080
+        ],
+        "finger_tip_far": [
+          977.012,
+          2324
+        ],
+        "head_center": [
+          504.024,
+          543.349
+        ],
+        "occipital_joint": [
+          524,
+          812
+        ],
+        "nose": [
+          649.102,
+          672.598
+        ],
+        "mouth_center": [
+          638.716,
+          724.7
+        ],
+        "chin": [
+          597.346,
+          871.493
+        ],
+        "ear_near": [
+          254.425,
+          677.674
+        ],
+        "ear_far": [
+          773.599,
+          677.674
+        ],
+        "eye_near": [
+          514.126,
+          586.384
+        ],
+        "eye_far": [
+          718.97,
+          586.384
+        ],
+        "hair_root_near": [
+          257.648,
+          751.095
+        ],
+        "hair_root_far": [
+          743.269,
+          751.095
+        ],
+        "tail_near": [
+          220.648,
+          1039.095
+        ],
+        "tail_far": [
+          796.269,
+          1039.095
+        ]
+      },
+      "joints_shot_xy": {
+        "neck_base": [
+          775.4,
+          843.8
+        ],
+        "shoulder_near": [
+          591.241,
+          932.2
+        ],
+        "elbow_near": [
+          490.791,
+          1377.6
+        ],
+        "wrist_near": [
+          393.689,
+          1738.0
+        ],
+        "finger_tip_near": [
+          390.34,
+          1945.4
+        ],
+        "shoulder_far": [
+          959.559,
+          932.2
+        ],
+        "elbow_far": [
+          1060.009,
+          1377.6
+        ],
+        "wrist_far": [
+          1157.111,
+          1738.0
+        ],
+        "finger_tip_far": [
+          1160.46,
+          1945.4
+        ],
+        "head_center": [
+          758.42,
+          431.846
+        ],
+        "occipital_joint": [
+          775.4,
+          660.2
+        ],
+        "nose": [
+          881.736,
+          541.708
+        ],
+        "mouth_center": [
+          872.909,
+          585.995
+        ],
+        "chin": [
+          837.744,
+          710.769
+        ],
+        "ear_near": [
+          546.262,
+          546.023
+        ],
+        "ear_far": [
+          987.559,
+          546.023
+        ],
+        "eye_near": [
+          767.007,
+          468.426
+        ],
+        "eye_far": [
+          941.125,
+          468.426
+        ],
+        "hair_root_near": [
+          549.001,
+          608.43
+        ],
+        "hair_root_far": [
+          961.779,
+          608.43
+        ],
+        "tail_near": [
+          517.551,
+          853.23
+        ],
+        "tail_far": [
+          1006.829,
+          853.23
+        ]
+      },
+      "head_frontmost_ear_landmark": "ear_near",
+      "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
+      "hands_visible": false,
+      "hand_mouth_contact": false,
+      "status": "reference_pending_Astra_freeze"
+    },
+    {
+      "id": "d09",
+      "f": 58,
+      "hold": 10,
+      "end_inclusive": 67,
+      "t": 2.416667,
+      "head_yaw_deg": 28,
+      "head_pitch_deg": -9,
+      "torso_yaw_deg": 10,
+      "upper_body_dy_source_px": -9,
+      "eye_open_fraction": 0.0,
+      "mouth_aperture_H": 0.105,
+      "gaze_target": "none",
+      "tail_lag_source_px": 3,
+      "title": "峰态续气",
+      "note": "保持哈欠但口腔略收、胸轻回，需独立画，不能用同图缩嘴。",
+      "joints_3d_source": {
+        "neck_base": [
+          524.0,
+          1031,
+          0.0
+        ],
+        "shoulder_near": [
+          307.342,
+          1135,
+          38.203
+        ],
+        "elbow_near": [
+          189.165,
+          1659,
+          59.04
+        ],
+        "wrist_near": [
+          74.928,
+          2083,
+          79.184
+        ],
+        "finger_tip_near": [
+          70.988,
+          2327,
+          79.878
+        ],
+        "shoulder_far": [
+          740.658,
+          1135,
+          -38.203
+        ],
+        "elbow_far": [
+          858.835,
+          1659,
+          -59.04
+        ],
+        "wrist_far": [
+          973.072,
+          2083,
+          -79.184
+        ],
+        "finger_tip_far": [
+          977.012,
+          2327,
+          -79.878
+        ],
+        "head_center": [
+          504.024,
+          546.349,
+          -37.57
+        ],
+        "occipital_joint": [
+          524,
+          815,
+          0
+        ],
+        "nose": [
+          649.102,
+          675.598,
+          235.282
+        ],
+        "mouth_center": [
+          638.716,
+          727.7,
+          215.75
+        ],
+        "chin": [
+          597.022,
+          870.147,
+          137.335
+        ],
+        "ear_near": [
+          254.425,
+          680.674,
+          119.24
+        ],
+        "ear_far": [
+          773.599,
+          680.674,
+          -156.809
+        ],
+        "eye_near": [
+          514.126,
+          589.384,
+          228.517
+        ],
+        "eye_far": [
+          718.97,
+          589.384,
+          119.599
+        ],
+        "hair_root_near": [
+          257.648,
+          754.095,
+          84.829
+        ],
+        "hair_root_far": [
+          743.269,
+          754.095,
+          -173.38
+        ],
+        "tail_near": [
+          215.648,
+          1042.095,
+          59.829
+        ],
+        "tail_far": [
+          791.269,
+          1042.095,
+          -198.38
+        ]
+      },
+      "joints_source_xy": {
+        "neck_base": [
+          524.0,
+          1031
+        ],
+        "shoulder_near": [
+          307.342,
+          1135
+        ],
+        "elbow_near": [
+          189.165,
+          1659
+        ],
+        "wrist_near": [
+          74.928,
+          2083
+        ],
+        "finger_tip_near": [
+          70.988,
+          2327
+        ],
+        "shoulder_far": [
+          740.658,
+          1135
+        ],
+        "elbow_far": [
+          858.835,
+          1659
+        ],
+        "wrist_far": [
+          973.072,
+          2083
+        ],
+        "finger_tip_far": [
+          977.012,
+          2327
+        ],
+        "head_center": [
+          504.024,
+          546.349
+        ],
+        "occipital_joint": [
+          524,
+          815
+        ],
+        "nose": [
+          649.102,
+          675.598
+        ],
+        "mouth_center": [
+          638.716,
+          727.7
+        ],
+        "chin": [
+          597.022,
+          870.147
+        ],
+        "ear_near": [
+          254.425,
+          680.674
+        ],
+        "ear_far": [
+          773.599,
+          680.674
+        ],
+        "eye_near": [
+          514.126,
+          589.384
+        ],
+        "eye_far": [
+          718.97,
+          589.384
+        ],
+        "hair_root_near": [
+          257.648,
+          754.095
+        ],
+        "hair_root_far": [
+          743.269,
+          754.095
+        ],
+        "tail_near": [
+          215.648,
+          1042.095
+        ],
+        "tail_far": [
+          791.269,
+          1042.095
+        ]
+      },
+      "joints_shot_xy": {
+        "neck_base": [
+          775.4,
+          846.35
+        ],
+        "shoulder_near": [
+          591.241,
+          934.75
+        ],
+        "elbow_near": [
+          490.791,
+          1380.15
+        ],
+        "wrist_near": [
+          393.689,
+          1740.55
+        ],
+        "finger_tip_near": [
+          390.34,
+          1947.95
+        ],
+        "shoulder_far": [
+          959.559,
+          934.75
+        ],
+        "elbow_far": [
+          1060.009,
+          1380.15
+        ],
+        "wrist_far": [
+          1157.111,
+          1740.55
+        ],
+        "finger_tip_far": [
+          1160.46,
+          1947.95
+        ],
+        "head_center": [
+          758.42,
+          434.396
+        ],
+        "occipital_joint": [
+          775.4,
+          662.75
+        ],
+        "nose": [
+          881.736,
+          544.258
+        ],
+        "mouth_center": [
+          872.909,
+          588.545
+        ],
+        "chin": [
+          837.469,
+          709.625
+        ],
+        "ear_near": [
+          546.262,
+          548.573
+        ],
+        "ear_far": [
+          987.559,
+          548.573
+        ],
+        "eye_near": [
+          767.007,
+          470.976
+        ],
+        "eye_far": [
+          941.125,
+          470.976
+        ],
+        "hair_root_near": [
+          549.001,
+          610.98
+        ],
+        "hair_root_far": [
+          961.779,
+          610.98
+        ],
+        "tail_near": [
+          513.301,
+          855.78
+        ],
+        "tail_far": [
+          1002.579,
+          855.78
+        ]
+      },
+      "head_frontmost_ear_landmark": "ear_near",
+      "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
+      "hands_visible": false,
+      "hand_mouth_contact": false,
+      "status": "reference_pending_Astra_freeze"
+    },
+    {
+      "id": "d10",
+      "f": 68,
+      "hold": 10,
+      "end_inclusive": 77,
+      "t": 2.833333,
+      "head_yaw_deg": 24,
+      "head_pitch_deg": -5,
+      "torso_yaw_deg": 10,
+      "upper_body_dy_source_px": -5,
+      "eye_open_fraction": 0.08,
+      "mouth_aperture_H": 0.065,
+      "gaze_target": "none",
+      "tail_lag_source_px": 0,
+      "title": "哈欠收束",
+      "note": "下颌回收、头回前；胸肩整体回落。",
+      "joints_3d_source": {
+        "neck_base": [
+          524.0,
+          1035,
+          0.0
+        ],
+        "shoulder_near": [
+          307.342,
+          1139,
+          38.203
+        ],
+        "elbow_near": [
+          189.165,
+          1663,
+          59.04
+        ],
+        "wrist_near": [
+          74.928,
+          2087,
+          79.184
+        ],
+        "finger_tip_near": [
+          70.988,
+          2331,
+          79.878
+        ],
+        "shoulder_far": [
+          740.658,
+          1139,
+          -38.203
+        ],
+        "elbow_far": [
+          858.835,
+          1663,
+          -59.04
+        ],
+        "wrist_far": [
+          973.072,
+          2087,
+          -79.184
+        ],
+        "finger_tip_far": [
+          977.012,
+          2331,
+          -79.878
+        ],
+        "head_center": [
+          514.358,
+          548.035,
+          -21.657
+        ],
+        "occipital_joint": [
+          524,
+          819,
+          0
+        ],
+        "nose": [
+          636.076,
+          698.526,
+          251.726
+        ],
+        "mouth_center": [
+          625.622,
+          748.958,
+          228.246
+        ],
+        "chin": [
+          585.13,
+          873.174,
+          137.3
+        ],
+        "ear_near": [
+          250.597,
+          683.518,
+          108.752
+        ],
+        "ear_far": [
+          787.761,
+          683.518,
+          -130.409
+        ],
+        "eye_near": [
+          504.416,
+          607.685,
+          241.21
+        ],
+        "eye_far": [
+          716.358,
+          607.685,
+          146.847
+        ],
+        "hair_root_near": [
+          254.157,
+          754.745,
+          70.036
+        ],
+        "hair_root_far": [
+          756.607,
+          754.745,
+          -153.67
+        ],
+        "tail_near": [
+          209.157,
+          1042.745,
+          45.036
+        ],
+        "tail_far": [
+          801.607,
+          1042.745,
+          -178.67
+        ]
+      },
+      "joints_source_xy": {
+        "neck_base": [
+          524.0,
+          1035
+        ],
+        "shoulder_near": [
+          307.342,
+          1139
+        ],
+        "elbow_near": [
+          189.165,
+          1663
+        ],
+        "wrist_near": [
+          74.928,
+          2087
+        ],
+        "finger_tip_near": [
+          70.988,
+          2331
+        ],
+        "shoulder_far": [
+          740.658,
+          1139
+        ],
+        "elbow_far": [
+          858.835,
+          1663
+        ],
+        "wrist_far": [
+          973.072,
+          2087
+        ],
+        "finger_tip_far": [
+          977.012,
+          2331
+        ],
+        "head_center": [
+          514.358,
+          548.035
+        ],
+        "occipital_joint": [
+          524,
+          819
+        ],
+        "nose": [
+          636.076,
+          698.526
+        ],
+        "mouth_center": [
+          625.622,
+          748.958
+        ],
+        "chin": [
+          585.13,
+          873.174
+        ],
+        "ear_near": [
+          250.597,
+          683.518
+        ],
+        "ear_far": [
+          787.761,
+          683.518
+        ],
+        "eye_near": [
+          504.416,
+          607.685
+        ],
+        "eye_far": [
+          716.358,
+          607.685
+        ],
+        "hair_root_near": [
+          254.157,
+          754.745
+        ],
+        "hair_root_far": [
+          756.607,
+          754.745
+        ],
+        "tail_near": [
+          209.157,
+          1042.745
+        ],
+        "tail_far": [
+          801.607,
+          1042.745
+        ]
+      },
+      "joints_shot_xy": {
+        "neck_base": [
+          775.4,
+          849.75
+        ],
+        "shoulder_near": [
+          591.241,
+          938.15
+        ],
+        "elbow_near": [
+          490.791,
+          1383.55
+        ],
+        "wrist_near": [
+          393.689,
+          1743.95
+        ],
+        "finger_tip_near": [
+          390.34,
+          1951.35
+        ],
+        "shoulder_far": [
+          959.559,
+          938.15
+        ],
+        "elbow_far": [
+          1060.009,
+          1383.55
+        ],
+        "wrist_far": [
+          1157.111,
+          1743.95
+        ],
+        "finger_tip_far": [
+          1160.46,
+          1951.35
+        ],
+        "head_center": [
+          767.204,
+          435.83
+        ],
+        "occipital_joint": [
+          775.4,
+          666.15
+        ],
+        "nose": [
+          870.664,
+          563.747
+        ],
+        "mouth_center": [
+          861.778,
+          606.614
+        ],
+        "chin": [
+          827.36,
+          712.198
+        ],
+        "ear_near": [
+          543.007,
+          550.99
+        ],
+        "ear_far": [
+          999.597,
+          550.99
+        ],
+        "eye_near": [
+          758.753,
+          486.532
+        ],
+        "eye_far": [
+          938.905,
+          486.532
+        ],
+        "hair_root_near": [
+          546.033,
+          611.533
+        ],
+        "hair_root_far": [
+          973.116,
+          611.533
+        ],
+        "tail_near": [
+          507.783,
+          856.333
+        ],
+        "tail_far": [
+          1011.366,
+          856.333
+        ]
+      },
+      "head_frontmost_ear_landmark": "ear_near",
+      "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
+      "hands_visible": false,
+      "hand_mouth_contact": false,
+      "status": "reference_pending_Astra_freeze"
+    },
+    {
+      "id": "d11",
+      "f": 78,
+      "hold": 6,
+      "end_inclusive": 83,
+      "t": 3.25,
+      "head_yaw_deg": 18,
+      "head_pitch_deg": -1,
+      "torso_yaw_deg": 10,
+      "upper_body_dy_source_px": 0,
+      "eye_open_fraction": 0.22,
+      "mouth_aperture_H": 0.018,
+      "gaze_target": "none",
+      "tail_lag_source_px": 0,
+      "title": "收口后准备扭开",
+      "note": "嘴将合；仍未转到画左；让假困和回避读成两件事。",
+      "joints_3d_source": {
+        "neck_base": [
+          524.0,
+          1040,
+          0.0
+        ],
+        "shoulder_near": [
+          307.342,
+          1144,
+          38.203
+        ],
+        "elbow_near": [
+          189.165,
+          1668,
+          59.04
+        ],
+        "wrist_near": [
+          74.928,
+          2092,
+          79.184
+        ],
+        "finger_tip_near": [
+          70.988,
+          2336,
+          79.878
+        ],
+        "shoulder_far": [
+          740.658,
+          1144,
+          -38.203
+        ],
+        "elbow_far": [
+          858.835,
+          1668,
+          -59.04
+        ],
+        "wrist_far": [
+          973.072,
+          2092,
+          -79.184
+        ],
+        "finger_tip_far": [
+          977.012,
+          2336,
+          -79.878
+        ],
+        "head_center": [
+          522.533,
+          552.041,
+          -4.515
+        ],
+        "occipital_joint": [
+          524,
+          824,
+          0
+        ],
+        "nose": [
+          611.539,
+          723.041,
+          269.416
+        ],
+        "mouth_center": [
+          602.528,
+          771.557,
+          241.686
+        ],
+        "chin": [
+          569.088,
+          874.741,
+          138.767
+        ],
+        "ear_near": [
+          243.656,
+          688.021,
+          88.594
+        ],
+        "ear_far": [
+          802.877,
+          688.021,
+          -93.108
+        ],
+        "eye_near": [
+          483.705,
+          628.015,
+          251.369
+        ],
+        "eye_far": [
+          704.35,
+          628.015,
+          179.677
+        ],
+        "hair_root_near": [
+          249.734,
+          756.708,
+          45.815
+        ],
+        "hair_root_far": [
+          772.815,
+          756.708,
+          -124.145
+        ],
+        "tail_near": [
+          204.734,
+          1044.708,
+          20.815
+        ],
+        "tail_far": [
+          817.815,
+          1044.708,
+          -149.145
+        ]
+      },
+      "joints_source_xy": {
+        "neck_base": [
+          524.0,
+          1040
+        ],
+        "shoulder_near": [
+          307.342,
+          1144
+        ],
+        "elbow_near": [
+          189.165,
+          1668
+        ],
+        "wrist_near": [
+          74.928,
+          2092
+        ],
+        "finger_tip_near": [
+          70.988,
+          2336
+        ],
+        "shoulder_far": [
+          740.658,
+          1144
+        ],
+        "elbow_far": [
+          858.835,
+          1668
+        ],
+        "wrist_far": [
+          973.072,
+          2092
+        ],
+        "finger_tip_far": [
+          977.012,
+          2336
+        ],
+        "head_center": [
+          522.533,
+          552.041
+        ],
+        "occipital_joint": [
+          524,
+          824
+        ],
+        "nose": [
+          611.539,
+          723.041
+        ],
+        "mouth_center": [
+          602.528,
+          771.557
+        ],
+        "chin": [
+          569.088,
+          874.741
+        ],
+        "ear_near": [
+          243.656,
+          688.021
+        ],
+        "ear_far": [
+          802.877,
+          688.021
+        ],
+        "eye_near": [
+          483.705,
+          628.015
+        ],
+        "eye_far": [
+          704.35,
+          628.015
+        ],
+        "hair_root_near": [
+          249.734,
+          756.708
+        ],
+        "hair_root_far": [
+          772.815,
+          756.708
+        ],
+        "tail_near": [
+          204.734,
+          1044.708
+        ],
+        "tail_far": [
+          817.815,
+          1044.708
+        ]
+      },
+      "joints_shot_xy": {
+        "neck_base": [
+          775.4,
+          854.0
+        ],
+        "shoulder_near": [
+          591.241,
+          942.4
+        ],
+        "elbow_near": [
+          490.791,
+          1387.8
+        ],
+        "wrist_near": [
+          393.689,
+          1748.2
+        ],
+        "finger_tip_near": [
+          390.34,
+          1955.6
+        ],
+        "shoulder_far": [
+          959.559,
+          942.4
+        ],
+        "elbow_far": [
+          1060.009,
+          1387.8
+        ],
+        "wrist_far": [
+          1157.111,
+          1748.2
+        ],
+        "finger_tip_far": [
+          1160.46,
+          1955.6
+        ],
+        "head_center": [
+          774.153,
+          439.235
+        ],
+        "occipital_joint": [
+          775.4,
+          670.4
+        ],
+        "nose": [
+          849.808,
+          584.585
+        ],
+        "mouth_center": [
+          842.149,
+          625.823
+        ],
+        "chin": [
+          813.725,
+          713.53
+        ],
+        "ear_near": [
+          537.108,
+          554.818
+        ],
+        "ear_far": [
+          1012.446,
+          554.818
+        ],
+        "eye_near": [
+          741.149,
+          503.813
+        ],
+        "eye_far": [
+          928.698,
+          503.813
+        ],
+        "hair_root_near": [
+          542.274,
+          613.202
+        ],
+        "hair_root_far": [
+          986.893,
+          613.202
+        ],
+        "tail_near": [
+          504.024,
+          858.002
+        ],
+        "tail_far": [
+          1025.143,
+          858.002
+        ]
+      },
+      "head_frontmost_ear_landmark": "ear_near",
+      "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
+      "hands_visible": false,
+      "hand_mouth_contact": false,
+      "status": "reference_pending_Astra_freeze"
+    },
+    {
+      "id": "d12",
+      "f": 84,
+      "hold": 3,
+      "end_inclusive": 86,
+      "t": 3.5,
+      "head_yaw_deg": 8,
+      "head_pitch_deg": 0,
+      "torso_yaw_deg": 10,
+      "upper_body_dy_source_px": 2,
+      "eye_open_fraction": 0.38,
+      "mouth_aperture_H": 0.005,
+      "gaze_target": "away",
+      "tail_lag_source_px": 0,
+      "title": "回避起转",
+      "note": "眼缝先向画左，头通过接近正面；肩尚未追上。",
+      "joints_3d_source": {
+        "neck_base": [
+          524.0,
+          1042,
+          0.0
+        ],
+        "shoulder_near": [
+          307.342,
+          1146,
+          38.203
+        ],
+        "elbow_near": [
+          189.165,
+          1670,
+          59.04
+        ],
+        "wrist_near": [
+          74.928,
+          2094,
+          79.184
+        ],
+        "finger_tip_near": [
+          70.988,
+          2338,
+          79.878
+        ],
+        "shoulder_far": [
+          740.658,
+          1146,
+          -38.203
+        ],
+        "elbow_far": [
+          858.835,
+          1670,
+          -59.04
+        ],
+        "wrist_far": [
+          973.072,
+          2094,
+          -79.184
+        ],
+        "finger_tip_far": [
+          977.012,
+          2338,
+          -79.878
+        ],
+        "head_center": [
+          524.0,
+          554.0,
+          0.0
+        ],
+        "occipital_joint": [
+          524,
+          826,
+          0
+        ],
+        "nose": [
+          563.664,
+          730.0,
+          282.226
+        ],
+        "mouth_center": [
+          559.489,
+          778.0,
+          252.518
+        ],
+        "chin": [
+          544.18,
+          875.467,
+          143.589
+        ],
+        "ear_near": [
+          232.861,
+          690.0,
+          40.917
+        ],
+        "ear_far": [
+          815.139,
+          690.0,
+          -40.917
+        ],
+        "eye_near": [
+          441.139,
+          634.0,
+          243.906
+        ],
+        "eye_far": [
+          670.881,
+          634.0,
+          211.618
+        ],
+        "hair_root_near": [
+          246.109,
+          758.0,
+          -1.338
+        ],
+        "hair_root_far": [
+          790.757,
+          758.0,
+          -77.883
+        ],
+        "tail_near": [
+          201.109,
+          1046.0,
+          -26.338
+        ],
+        "tail_far": [
+          835.757,
+          1046.0,
+          -102.883
+        ]
+      },
+      "joints_source_xy": {
+        "neck_base": [
+          524.0,
+          1042
+        ],
+        "shoulder_near": [
+          307.342,
+          1146
+        ],
+        "elbow_near": [
+          189.165,
+          1670
+        ],
+        "wrist_near": [
+          74.928,
+          2094
+        ],
+        "finger_tip_near": [
+          70.988,
+          2338
+        ],
+        "shoulder_far": [
+          740.658,
+          1146
+        ],
+        "elbow_far": [
+          858.835,
+          1670
+        ],
+        "wrist_far": [
+          973.072,
+          2094
+        ],
+        "finger_tip_far": [
+          977.012,
+          2338
+        ],
+        "head_center": [
+          524.0,
+          554.0
+        ],
+        "occipital_joint": [
+          524,
+          826
+        ],
+        "nose": [
+          563.664,
+          730.0
+        ],
+        "mouth_center": [
+          559.489,
+          778.0
+        ],
+        "chin": [
+          544.18,
+          875.467
+        ],
+        "ear_near": [
+          232.861,
+          690.0
+        ],
+        "ear_far": [
+          815.139,
+          690.0
+        ],
+        "eye_near": [
+          441.139,
+          634.0
+        ],
+        "eye_far": [
+          670.881,
+          634.0
+        ],
+        "hair_root_near": [
+          246.109,
+          758.0
+        ],
+        "hair_root_far": [
+          790.757,
+          758.0
+        ],
+        "tail_near": [
+          201.109,
+          1046.0
+        ],
+        "tail_far": [
+          835.757,
+          1046.0
+        ]
+      },
+      "joints_shot_xy": {
+        "neck_base": [
+          775.4,
+          855.7
+        ],
+        "shoulder_near": [
+          591.241,
+          944.1
+        ],
+        "elbow_near": [
+          490.791,
+          1389.5
+        ],
+        "wrist_near": [
+          393.689,
+          1749.9
+        ],
+        "finger_tip_near": [
+          390.34,
+          1957.3
+        ],
+        "shoulder_far": [
+          959.559,
+          944.1
+        ],
+        "elbow_far": [
+          1060.009,
+          1389.5
+        ],
+        "wrist_far": [
+          1157.111,
+          1749.9
+        ],
+        "finger_tip_far": [
+          1160.46,
+          1957.3
+        ],
+        "head_center": [
+          775.4,
+          440.9
+        ],
+        "occipital_joint": [
+          775.4,
+          672.1
+        ],
+        "nose": [
+          809.115,
+          590.5
+        ],
+        "mouth_center": [
+          805.566,
+          631.3
+        ],
+        "chin": [
+          792.553,
+          714.147
+        ],
+        "ear_near": [
+          527.932,
+          556.5
+        ],
+        "ear_far": [
+          1022.868,
+          556.5
+        ],
+        "eye_near": [
+          704.968,
+          508.9
+        ],
+        "eye_far": [
+          900.249,
+          508.9
+        ],
+        "hair_root_near": [
+          539.193,
+          614.3
+        ],
+        "hair_root_far": [
+          1002.143,
+          614.3
+        ],
+        "tail_near": [
+          500.943,
+          859.1
+        ],
+        "tail_far": [
+          1040.393,
+          859.1
+        ]
+      },
+      "head_frontmost_ear_landmark": "ear_near",
+      "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
+      "hands_visible": false,
+      "hand_mouth_contact": false,
+      "status": "reference_pending_Astra_freeze"
+    },
+    {
+      "id": "d13",
+      "f": 87,
+      "hold": 3,
+      "end_inclusive": 89,
+      "t": 3.625,
+      "head_yaw_deg": -6,
+      "head_pitch_deg": 0,
+      "torso_yaw_deg": 8,
+      "upper_body_dy_source_px": 3,
+      "eye_open_fraction": 0.4,
+      "mouth_aperture_H": 0.0,
+      "gaze_target": "away",
+      "tail_lag_source_px": 12,
+      "title": "转头中间一",
+      "note": "整头越过正面；两耳露出比例交换，颈面重画。",
+      "joints_3d_source": {
+        "neck_base": [
+          524.0,
+          1043,
+          0.0
+        ],
+        "shoulder_near": [
+          306.141,
+          1147,
+          30.618
+        ],
+        "elbow_near": [
+          187.309,
+          1671,
+          47.319
+        ],
+        "wrist_near": [
+          72.438,
+          2095,
+          63.463
+        ],
+        "finger_tip_near": [
+          68.477,
+          2339,
+          64.02
+        ],
+        "shoulder_far": [
+          741.859,
+          1147,
+          -30.618
+        ],
+        "elbow_far": [
+          860.691,
+          1671,
+          -47.319
+        ],
+        "wrist_far": [
+          975.562,
+          2095,
+          -63.463
+        ],
+        "finger_tip_far": [
+          979.523,
+          2339,
+          -64.02
+        ],
+        "head_center": [
+          524.0,
+          555.0,
+          0.0
+        ],
+        "occipital_joint": [
+          524,
+          827,
+          0
+        ],
+        "nose": [
+          494.209,
+          731.0,
+          283.439
+        ],
+        "mouth_center": [
+          497.345,
+          779.0,
+          253.603
+        ],
+        "chin": [
+          508.843,
+          875.0,
+          144.206
+        ],
+        "ear_near": [
+          231.611,
+          691.0,
+          -30.731
+        ],
+        "ear_far": [
+          816.389,
+          691.0,
+          30.731
+        ],
+        "eye_near": [
+          384.594,
+          635.0,
+          216.615
+        ],
+        "eye_far": [
+          615.323,
+          635.0,
+          240.865
+        ],
+        "hair_root_near": [
+          254.688,
+          759.0,
+          -68.526
+        ],
+        "hair_root_far": [
+          801.675,
+          759.0,
+          -11.036
+        ],
+        "tail_near": [
+          221.688,
+          1047.0,
+          -93.526
+        ],
+        "tail_far": [
+          858.675,
+          1047.0,
+          -36.036
+        ]
+      },
+      "joints_source_xy": {
+        "neck_base": [
+          524.0,
+          1043
+        ],
+        "shoulder_near": [
+          306.141,
+          1147
+        ],
+        "elbow_near": [
+          187.309,
+          1671
+        ],
+        "wrist_near": [
+          72.438,
+          2095
+        ],
+        "finger_tip_near": [
+          68.477,
+          2339
+        ],
+        "shoulder_far": [
+          741.859,
+          1147
+        ],
+        "elbow_far": [
+          860.691,
+          1671
+        ],
+        "wrist_far": [
+          975.562,
+          2095
+        ],
+        "finger_tip_far": [
+          979.523,
+          2339
+        ],
+        "head_center": [
+          524.0,
+          555.0
+        ],
+        "occipital_joint": [
+          524,
+          827
+        ],
+        "nose": [
+          494.209,
+          731.0
+        ],
+        "mouth_center": [
+          497.345,
+          779.0
+        ],
+        "chin": [
+          508.843,
+          875.0
+        ],
+        "ear_near": [
+          231.611,
+          691.0
+        ],
+        "ear_far": [
+          816.389,
+          691.0
+        ],
+        "eye_near": [
+          384.594,
+          635.0
+        ],
+        "eye_far": [
+          615.323,
+          635.0
+        ],
+        "hair_root_near": [
+          254.688,
+          759.0
+        ],
+        "hair_root_far": [
+          801.675,
+          759.0
+        ],
+        "tail_near": [
+          221.688,
+          1047.0
+        ],
+        "tail_far": [
+          858.675,
+          1047.0
+        ]
+      },
+      "joints_shot_xy": {
+        "neck_base": [
+          775.4,
+          856.55
+        ],
+        "shoulder_near": [
+          590.22,
+          944.95
+        ],
+        "elbow_near": [
+          489.213,
+          1390.35
+        ],
+        "wrist_near": [
+          391.572,
+          1750.75
+        ],
+        "finger_tip_near": [
+          388.205,
+          1958.15
+        ],
+        "shoulder_far": [
+          960.58,
+          944.95
+        ],
+        "elbow_far": [
+          1061.587,
+          1390.35
+        ],
+        "wrist_far": [
+          1159.228,
+          1750.75
+        ],
+        "finger_tip_far": [
+          1162.595,
+          1958.15
+        ],
+        "head_center": [
+          775.4,
+          441.75
+        ],
+        "occipital_joint": [
+          775.4,
+          672.95
+        ],
+        "nose": [
+          750.078,
+          591.35
+        ],
+        "mouth_center": [
+          752.743,
+          632.15
+        ],
+        "chin": [
+          762.517,
+          713.75
+        ],
+        "ear_near": [
+          526.869,
+          557.35
+        ],
+        "ear_far": [
+          1023.931,
+          557.35
+        ],
+        "eye_near": [
+          656.905,
+          509.75
+        ],
+        "eye_far": [
+          853.025,
+          509.75
+        ],
+        "hair_root_near": [
+          546.484,
+          615.15
+        ],
+        "hair_root_far": [
+          1011.423,
+          615.15
+        ],
+        "tail_near": [
+          518.434,
+          859.95
+        ],
+        "tail_far": [
+          1059.873,
+          859.95
+        ]
+      },
+      "head_frontmost_ear_landmark": "ear_far",
+      "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
+      "hands_visible": false,
+      "hand_mouth_contact": false,
+      "status": "reference_pending_Astra_freeze"
+    },
+    {
+      "id": "d14",
+      "f": 90,
+      "hold": 4,
+      "end_inclusive": 93,
+      "t": 3.75,
+      "head_yaw_deg": -23,
+      "head_pitch_deg": 1,
+      "torso_yaw_deg": 6,
+      "upper_body_dy_source_px": 5,
+      "eye_open_fraction": 0.38,
+      "mouth_aperture_H": 0.0,
+      "gaze_target": "away",
+      "tail_lag_source_px": 23,
+      "title": "转头中间二",
+      "note": "鼻朝画左；胸肩小幅跟转，不能只替换脸。",
+      "joints_3d_source": {
+        "neck_base": [
+          524.0,
+          1045,
+          0.0
+        ],
+        "shoulder_near": [
+          305.205,
+          1149,
+          22.996
+        ],
+        "elbow_near": [
+          185.863,
+          1673,
+          35.54
+        ],
+        "wrist_near": [
+          70.498,
+          2097,
+          47.665
+        ],
+        "finger_tip_near": [
+          66.52,
+          2341,
+          48.083
+        ],
+        "shoulder_far": [
+          742.795,
+          1149,
+          -22.996
+        ],
+        "elbow_far": [
+          862.137,
+          1673,
+          -35.54
+        ],
+        "wrist_far": [
+          977.502,
+          2097,
+          -47.665
+        ],
+        "finger_tip_far": [
+          981.48,
+          2341,
+          -48.083
+        ],
+        "head_center": [
+          522.145,
+          557.041,
+          4.37
+        ],
+        "occipital_joint": [
+          524,
+          829,
+          0
+        ],
+        "nose": [
+          412.004,
+          737.989,
+          263.846
+        ],
+        "mouth_center": [
+          424.051,
+          785.458,
+          235.464
+        ],
+        "chin": [
+          467.68,
+          879.523,
+          132.682
+        ],
+        "ear_near": [
+          252.444,
+          693.021,
+          -112.69
+        ],
+        "ear_far": [
+          793.701,
+          693.021,
+          117.06
+        ],
+        "eye_near": [
+          326.058,
+          641.043,
+          169.444
+        ],
+        "eye_far": [
+          539.615,
+          641.043,
+          260.093
+        ],
+        "hair_root_near": [
+          286.024,
+          760.312,
+          -143.173
+        ],
+        "hair_root_far": [
+          792.302,
+          760.312,
+          71.729
+        ],
+        "tail_near": [
+          264.024,
+          1048.312,
+          -168.173
+        ],
+        "tail_far": [
+          860.302,
+          1048.312,
+          46.729
+        ]
+      },
+      "joints_source_xy": {
+        "neck_base": [
+          524.0,
+          1045
+        ],
+        "shoulder_near": [
+          305.205,
+          1149
+        ],
+        "elbow_near": [
+          185.863,
+          1673
+        ],
+        "wrist_near": [
+          70.498,
+          2097
+        ],
+        "finger_tip_near": [
+          66.52,
+          2341
+        ],
+        "shoulder_far": [
+          742.795,
+          1149
+        ],
+        "elbow_far": [
+          862.137,
+          1673
+        ],
+        "wrist_far": [
+          977.502,
+          2097
+        ],
+        "finger_tip_far": [
+          981.48,
+          2341
+        ],
+        "head_center": [
+          522.145,
+          557.041
+        ],
+        "occipital_joint": [
+          524,
+          829
+        ],
+        "nose": [
+          412.004,
+          737.989
+        ],
+        "mouth_center": [
+          424.051,
+          785.458
+        ],
+        "chin": [
+          467.68,
+          879.523
+        ],
+        "ear_near": [
+          252.444,
+          693.021
+        ],
+        "ear_far": [
+          793.701,
+          693.021
+        ],
+        "eye_near": [
+          326.058,
+          641.043
+        ],
+        "eye_far": [
+          539.615,
+          641.043
+        ],
+        "hair_root_near": [
+          286.024,
+          760.312
+        ],
+        "hair_root_far": [
+          792.302,
+          760.312
+        ],
+        "tail_near": [
+          264.024,
+          1048.312
+        ],
+        "tail_far": [
+          860.302,
+          1048.312
+        ]
+      },
+      "joints_shot_xy": {
+        "neck_base": [
+          775.4,
+          858.25
+        ],
+        "shoulder_near": [
+          589.424,
+          946.65
+        ],
+        "elbow_near": [
+          487.983,
+          1392.05
+        ],
+        "wrist_near": [
+          389.923,
+          1752.45
+        ],
+        "finger_tip_near": [
+          386.542,
+          1959.85
+        ],
+        "shoulder_far": [
+          961.376,
+          946.65
+        ],
+        "elbow_far": [
+          1062.817,
+          1392.05
+        ],
+        "wrist_far": [
+          1160.877,
+          1752.45
+        ],
+        "finger_tip_far": [
+          1164.258,
+          1959.85
+        ],
+        "head_center": [
+          773.823,
+          443.485
+        ],
+        "occipital_joint": [
+          775.4,
+          674.65
+        ],
+        "nose": [
+          680.203,
+          597.29
+        ],
+        "mouth_center": [
+          690.444,
+          637.639
+        ],
+        "chin": [
+          727.528,
+          717.595
+        ],
+        "ear_near": [
+          544.578,
+          559.068
+        ],
+        "ear_far": [
+          1004.646,
+          559.068
+        ],
+        "eye_near": [
+          607.149,
+          514.887
+        ],
+        "eye_far": [
+          788.673,
+          514.887
+        ],
+        "hair_root_near": [
+          573.121,
+          616.265
+        ],
+        "hair_root_far": [
+          1003.457,
+          616.265
+        ],
+        "tail_near": [
+          554.421,
+          861.065
+        ],
+        "tail_far": [
+          1061.257,
+          861.065
+        ]
+      },
+      "head_frontmost_ear_landmark": "ear_far",
+      "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
+      "hands_visible": false,
+      "hand_mouth_contact": false,
+      "status": "reference_pending_Astra_freeze"
+    },
+    {
+      "id": "d15",
+      "f": 94,
+      "hold": 10,
+      "end_inclusive": 103,
+      "t": 3.916667,
+      "head_yaw_deg": -36,
+      "head_pitch_deg": 1,
+      "torso_yaw_deg": 4,
+      "upper_body_dy_source_px": 6,
+      "eye_open_fraction": 0.32,
+      "mouth_aperture_H": 0.0,
+      "gaze_target": "away",
+      "tail_lag_source_px": 25,
+      "title": "扭开到位",
+      "note": "头比胸多转约 40°；马尾自由端向画右滞后，不拉长发根。",
+      "joints_3d_source": {
+        "neck_base": [
+          524.0,
+          1046,
+          0.0
+        ],
+        "shoulder_near": [
+          304.536,
+          1150,
+          15.346
+        ],
+        "elbow_near": [
+          184.828,
+          1674,
+          23.717
+        ],
+        "wrist_near": [
+          69.111,
+          2098,
+          31.809
+        ],
+        "finger_tip_near": [
+          65.121,
+          2342,
+          32.088
+        ],
+        "shoulder_far": [
+          743.464,
+          1150,
+          -15.346
+        ],
+        "elbow_far": [
+          863.172,
+          1674,
+          -23.717
+        ],
+        "wrist_far": [
+          978.889,
+          2098,
+          -31.809
+        ],
+        "finger_tip_far": [
+          982.879,
+          2342,
+          -32.088
+        ],
+        "head_center": [
+          521.21,
+          558.041,
+          3.84
+        ],
+        "occipital_joint": [
+          524,
+          830,
+          0
+        ],
+        "nose": [
+          355.522,
+          738.989,
+          231.89
+        ],
+        "mouth_center": [
+          373.645,
+          786.458,
+          206.946
+        ],
+        "chin": [
+          439.277,
+          880.523,
+          116.612
+        ],
+        "ear_near": [
+          284.754,
+          694.021,
+          -170.889
+        ],
+        "ear_far": [
+          760.456,
+          694.021,
+          174.729
+        ],
+        "eye_near": [
+          293.014,
+          642.043,
+          120.573
+        ],
+        "eye_far": [
+          480.706,
+          642.043,
+          256.94
+        ],
+        "hair_root_near": [
+          324.331,
+          761.312,
+          -193.037
+        ],
+        "hair_root_far": [
+          769.29,
+          761.312,
+          130.245
+        ],
+        "tail_near": [
+          304.331,
+          1049.312,
+          -218.037
+        ],
+        "tail_far": [
+          839.29,
+          1049.312,
+          105.245
+        ]
+      },
+      "joints_source_xy": {
+        "neck_base": [
+          524.0,
+          1046
+        ],
+        "shoulder_near": [
+          304.536,
+          1150
+        ],
+        "elbow_near": [
+          184.828,
+          1674
+        ],
+        "wrist_near": [
+          69.111,
+          2098
+        ],
+        "finger_tip_near": [
+          65.121,
+          2342
+        ],
+        "shoulder_far": [
+          743.464,
+          1150
+        ],
+        "elbow_far": [
+          863.172,
+          1674
+        ],
+        "wrist_far": [
+          978.889,
+          2098
+        ],
+        "finger_tip_far": [
+          982.879,
+          2342
+        ],
+        "head_center": [
+          521.21,
+          558.041
+        ],
+        "occipital_joint": [
+          524,
+          830
+        ],
+        "nose": [
+          355.522,
+          738.989
+        ],
+        "mouth_center": [
+          373.645,
+          786.458
+        ],
+        "chin": [
+          439.277,
+          880.523
+        ],
+        "ear_near": [
+          284.754,
+          694.021
+        ],
+        "ear_far": [
+          760.456,
+          694.021
+        ],
+        "eye_near": [
+          293.014,
+          642.043
+        ],
+        "eye_far": [
+          480.706,
+          642.043
+        ],
+        "hair_root_near": [
+          324.331,
+          761.312
+        ],
+        "hair_root_far": [
+          769.29,
+          761.312
+        ],
+        "tail_near": [
+          304.331,
+          1049.312
+        ],
+        "tail_far": [
+          839.29,
+          1049.312
+        ]
+      },
+      "joints_shot_xy": {
+        "neck_base": [
+          775.4,
+          859.1
+        ],
+        "shoulder_near": [
+          588.856,
+          947.5
+        ],
+        "elbow_near": [
+          487.104,
+          1392.9
+        ],
+        "wrist_near": [
+          388.744,
+          1753.3
+        ],
+        "finger_tip_near": [
+          385.352,
+          1960.7
+        ],
+        "shoulder_far": [
+          961.944,
+          947.5
+        ],
+        "elbow_far": [
+          1063.696,
+          1392.9
+        ],
+        "wrist_far": [
+          1162.056,
+          1753.3
+        ],
+        "finger_tip_far": [
+          1165.448,
+          1960.7
+        ],
+        "head_center": [
+          773.028,
+          444.335
+        ],
+        "occipital_joint": [
+          775.4,
+          675.5
+        ],
+        "nose": [
+          632.194,
+          598.14
+        ],
+        "mouth_center": [
+          647.598,
+          638.489
+        ],
+        "chin": [
+          703.385,
+          718.445
+        ],
+        "ear_near": [
+          572.041,
+          559.918
+        ],
+        "ear_far": [
+          976.387,
+          559.918
+        ],
+        "eye_near": [
+          579.062,
+          515.737
+        ],
+        "eye_far": [
+          738.6,
+          515.737
+        ],
+        "hair_root_near": [
+          605.681,
+          617.115
+        ],
+        "hair_root_far": [
+          983.896,
+          617.115
+        ],
+        "tail_near": [
+          588.681,
+          861.915
+        ],
+        "tail_far": [
+          1043.396,
+          861.915
+        ]
+      },
+      "head_frontmost_ear_landmark": "ear_far",
+      "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
+      "hands_visible": false,
+      "hand_mouth_contact": false,
+      "status": "reference_pending_Astra_freeze"
+    },
+    {
+      "id": "d16",
+      "f": 104,
+      "hold": 16,
+      "end_inclusive": 119,
+      "t": 4.333333,
+      "head_yaw_deg": -33,
+      "head_pitch_deg": 1,
+      "torso_yaw_deg": 4,
+      "upper_body_dy_source_px": 6,
+      "eye_open_fraction": 0.3,
+      "mouth_aperture_H": 0.0,
+      "gaze_target": "away",
+      "tail_lag_source_px": 0,
+      "title": "轻回落停住",
+      "note": "头回落约 3°，马尾末端落定；闭嘴装作没事。",
+      "joints_3d_source": {
+        "neck_base": [
+          524.0,
+          1046,
+          0.0
+        ],
+        "shoulder_near": [
+          304.536,
+          1150,
+          15.346
+        ],
+        "elbow_near": [
+          184.828,
+          1674,
+          23.717
+        ],
+        "wrist_near": [
+          69.111,
+          2098,
+          31.809
+        ],
+        "finger_tip_near": [
+          65.121,
+          2342,
+          32.088
+        ],
+        "shoulder_far": [
+          743.464,
+          1150,
+          -15.346
+        ],
+        "elbow_far": [
+          863.172,
+          1674,
+          -23.717
+        ],
+        "wrist_far": [
+          978.889,
+          2098,
+          -31.809
+        ],
+        "finger_tip_far": [
+          982.879,
+          2342,
+          -32.088
+        ],
+        "head_center": [
+          521.415,
+          558.041,
+          3.981
+        ],
+        "occipital_joint": [
+          524,
+          830,
+          0
+        ],
+        "nose": [
+          367.889,
+          738.989,
+          240.39
+        ],
+        "mouth_center": [
+          384.682,
+          786.458,
+          214.531
+        ],
+        "chin": [
+          445.496,
+          880.523,
+          120.886
+        ],
+        "ear_near": [
+          276.138,
+          694.021,
+          -158.133
+        ],
+        "ear_far": [
+          769.276,
+          694.021,
+          162.114
+        ],
+        "eye_near": [
+          299.641,
+          642.043,
+          132.497
+        ],
+        "eye_far": [
+          494.213,
+          642.043,
+          258.853
+        ],
+        "hair_root_near": [
+          314.501,
+          761.312,
+          -182.322
+        ],
+        "hair_root_far": [
+          775.77,
+          761.312,
+          117.229
+        ],
+        "tail_near": [
+          269.501,
+          1049.312,
+          -207.322
+        ],
+        "tail_far": [
+          820.77,
+          1049.312,
+          92.229
+        ]
+      },
+      "joints_source_xy": {
+        "neck_base": [
+          524.0,
+          1046
+        ],
+        "shoulder_near": [
+          304.536,
+          1150
+        ],
+        "elbow_near": [
+          184.828,
+          1674
+        ],
+        "wrist_near": [
+          69.111,
+          2098
+        ],
+        "finger_tip_near": [
+          65.121,
+          2342
+        ],
+        "shoulder_far": [
+          743.464,
+          1150
+        ],
+        "elbow_far": [
+          863.172,
+          1674
+        ],
+        "wrist_far": [
+          978.889,
+          2098
+        ],
+        "finger_tip_far": [
+          982.879,
+          2342
+        ],
+        "head_center": [
+          521.415,
+          558.041
+        ],
+        "occipital_joint": [
+          524,
+          830
+        ],
+        "nose": [
+          367.889,
+          738.989
+        ],
+        "mouth_center": [
+          384.682,
+          786.458
+        ],
+        "chin": [
+          445.496,
+          880.523
+        ],
+        "ear_near": [
+          276.138,
+          694.021
+        ],
+        "ear_far": [
+          769.276,
+          694.021
+        ],
+        "eye_near": [
+          299.641,
+          642.043
+        ],
+        "eye_far": [
+          494.213,
+          642.043
+        ],
+        "hair_root_near": [
+          314.501,
+          761.312
+        ],
+        "hair_root_far": [
+          775.77,
+          761.312
+        ],
+        "tail_near": [
+          269.501,
+          1049.312
+        ],
+        "tail_far": [
+          820.77,
+          1049.312
+        ]
+      },
+      "joints_shot_xy": {
+        "neck_base": [
+          775.4,
+          859.1
+        ],
+        "shoulder_near": [
+          588.856,
+          947.5
+        ],
+        "elbow_near": [
+          487.104,
+          1392.9
+        ],
+        "wrist_near": [
+          388.744,
+          1753.3
+        ],
+        "finger_tip_near": [
+          385.352,
+          1960.7
+        ],
+        "shoulder_far": [
+          961.944,
+          947.5
+        ],
+        "elbow_far": [
+          1063.696,
+          1392.9
+        ],
+        "wrist_far": [
+          1162.056,
+          1753.3
+        ],
+        "finger_tip_far": [
+          1165.448,
+          1960.7
+        ],
+        "head_center": [
+          773.202,
+          444.335
+        ],
+        "occipital_joint": [
+          775.4,
+          675.5
+        ],
+        "nose": [
+          642.706,
+          598.14
+        ],
+        "mouth_center": [
+          656.98,
+          638.489
+        ],
+        "chin": [
+          708.671,
+          718.445
+        ],
+        "ear_near": [
+          564.717,
+          559.918
+        ],
+        "ear_far": [
+          983.885,
+          559.918
+        ],
+        "eye_near": [
+          584.695,
+          515.737
+        ],
+        "eye_far": [
+          750.081,
+          515.737
+        ],
+        "hair_root_near": [
+          597.326,
+          617.115
+        ],
+        "hair_root_far": [
+          989.405,
+          617.115
+        ],
+        "tail_near": [
+          559.076,
+          861.915
+        ],
+        "tail_far": [
+          1027.655,
+          861.915
+        ]
+      },
+      "head_frontmost_ear_landmark": "ear_far",
+      "hair_depth_note": "头朝向过正面后，近/远耳与辫的可见性交换；身体近/远臂不交换。near/far 点名保留初态身份。",
+      "hands_visible": false,
+      "hand_mouth_contact": false,
+      "status": "reference_pending_Astra_freeze"
+    }
+  ]
+}
