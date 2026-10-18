@@ -1,0 +1,72 @@
+{
+  "source_commit": "d558a91bb2af071e635afd2456f7460d74b42fc5",
+  "source_worktree": "/workspace/s04-render-d558a91b",
+  "module_path": "js/anim/s04_drawn.js",
+  "module_sha256": "6b8b32fc80de1a159e01adfca15bf2a859a55a1aa3ef3b7f4bcdba57a53009ee",
+  "source_clean_before": true,
+  "files": [
+    {
+      "path": "js/anim/s04_drawn.js",
+      "sha256": "6b8b32fc80de1a159e01adfca15bf2a859a55a1aa3ef3b7f4bcdba57a53009ee",
+      "bytes": 5838
+    },
+    {
+      "path": "assets/chars/s04/F010_near_leg_down.png",
+      "sha256": "04696fecfc23579ebc336220a0d5d60cfeae24de73d73e105526db929f98d11c",
+      "bytes": 1054694
+    },
+    {
+      "path": "assets/chars/s04/S01_F012_grandma_rgba.png",
+      "sha256": "e1b72562a2bc96b9ffc6e5e234a93eb573a7406afcdfa536d4c3c2f56d1589d4",
+      "bytes": 638685
+    },
+    {
+      "path": "assets/chars/s04/S04_F022_grandma_rgba.png",
+      "sha256": "6fc727833e49c9e0e70f9bb67d5755352b2a38b453b3678d60816ee2f41ad377",
+      "bytes": 644402
+    },
+    {
+      "path": "assets/chars/s04/S04_F028_grandma_rgba.png",
+      "sha256": "e08c927ad58a481a9cf2d3c8ec790efdf94ba0e7e080e2549673d5282c76b468",
+      "bytes": 647263
+    },
+    {
+      "path": "assets/chars/s04/S04_F034_grandma_rgba.png",
+      "sha256": "32cada22cb7094e0539913ed591bf54d4b61a2ed8c017c4cf812316849f67b43",
+      "bytes": 646625
+    },
+    {
+      "path": "js/anim/s04_drawn_timeline.js",
+      "sha256": "2e8364302733d90da8cd82c9f1593da18dffe016821b5792e29b40dedef26288",
+      "bytes": 2297
+    }
+  ],
+  "source_clean_after": true,
+  "source_head_after": "d558a91bb2af071e635afd2456f7460d74b42fc5",
+  "all_source_SHA_unchanged_after": true,
+  "locked_asset_SHA_verified_count": 5,
+  "actual_command_argv": [
+    "node",
+    "--require",
+    "/workspace/cloud-s10-review-20261018-1324/collab/reviews/cloud_s10_20261018/render_assist/use_system_chromium.cjs",
+    "tools/js/frames.cjs",
+    "js/anim/s04_drawn.js",
+    "build/s04_drawn72",
+    "--fps",
+    "24",
+    "--w",
+    "1280",
+    "--h",
+    "720",
+    "--workers",
+    "4",
+    "--from",
+    "0",
+    "--to",
+    "3",
+    "--mp4",
+    "build/S04_drawn72.mp4"
+  ],
+  "rendered_frame_count": 72,
+  "version_status": "OLD d558a91b preserved after newer034 colour-fix notice; exact new commit awaited; not final034 acceptance"
+}
