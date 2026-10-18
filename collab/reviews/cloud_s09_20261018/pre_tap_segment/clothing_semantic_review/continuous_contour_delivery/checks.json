@@ -1,0 +1,50 @@
+{
+  "status": "CONTINUOUS_CONTOUR_EXECUTED_READY_FOR_ASTRA_FINAL_F031_LOCK",
+  "authorization_commit": "f17651aaee6f03cf0e48bd2939c4c6c1fb86cffb",
+  "old_two_rectangle_limit_withdrawn": true,
+  "source": {
+    "path": "pre_tap_segment/clothing_semantic_review/candidates/same_call05_continuous_cloth_pending_review.png",
+    "sha256": "db697c53dfa7b890ccc788c58264c65c7d4d6cb7cde04029dfe0a1a419f73714"
+  },
+  "donor": {
+    "path": "pre_tap_segment/originals/d06_call05_raw.png",
+    "sha256": "05b3301da1652178ee0c39f3b5df181551cd1627f34ec4726e529c127f1ac93c"
+  },
+  "candidate": {
+    "path": "pre_tap_segment/clothing_semantic_review/continuous_contour_delivery/candidate/F031_raw_clothing_and_contours_for_final_lock.png",
+    "sha256": "4b59c62485cf382c3e2d411de3c8ca9fb4edee622dad31b41946362889d44da7",
+    "size": [
+      1672,
+      941
+    ]
+  },
+  "same_coordinate_full_RGBA_copy": true,
+  "translation": [
+    0,
+    0
+  ],
+  "scale": 1,
+  "warp": false,
+  "allowed_mask_pixels": 8146,
+  "RGBA_changed_pixels": 3682,
+  "alpha_changed_pixels": 3168,
+  "RGBA_changes_outside_allowed_corridor": 0,
+  "alpha_changes_outside_allowed_corridor": 0,
+  "complete_arm_guard_overlap": 0,
+  "head_neck_prop_guard_overlap": 0,
+  "previous_hard_domain_changes_except_allowed_corridor": 0,
+  "complete_hands_arms_prop_head_neck_RGBA_changes": 0,
+  "left_contour_equals_donor_every_row_y820_940": true,
+  "right_contour_equals_donor_every_row_y840_940": true,
+  "largest_adjacent_row_alpha128_left_step": 1,
+  "largest_adjacent_row_alpha128_right_step": 1,
+  "left_top_y820_RGBA_changes": 0,
+  "right_top_y840_RGBA_changes": 0,
+  "new_native_calls": 0,
+  "S09_native_calls_unchanged": 12,
+  "F031_native_calls_unchanged": 7,
+  "F037_calls": 0,
+  "F042_calls": 0,
+  "registration_and_camera_unchanged": true,
+  "next_gate": "Astra final whole031 lock; do not dispatch037/042 before confirmation."
+}
