@@ -1,0 +1,68 @@
+{
+  "source_commit": "2255141f9397146957c7ba893da17051816cc9a2",
+  "clip": {
+    "file": "S05a_drawn_v1.mp4",
+    "bytes": 500473,
+    "sha256": "1be022525e464719b724907bf57d394b537cbc6d72b093c31e52c0040c7b2fc3",
+    "git_blob": "d42b521f6331d05935c8a29f00c340e4eec8dc41"
+  },
+  "new_master_sha256": "1d1e71b90864cd311945aaee07abfb56c6a532ce1426408f63d91cd67cc4dbcf",
+  "pcm": {
+    "file": "S05a_pcm.wav",
+    "bytes": 480078,
+    "sha256": "523c162de4823f55d280e6692003ddfaa39d643eb1b9af00c24b0a8094800430",
+    "sr": 48000,
+    "samples": 120000,
+    "channels": 2,
+    "master_range_seconds": [
+      24,
+      26.5
+    ],
+    "master_range_samples": [
+      1152000,
+      1272000
+    ],
+    "exact_to_independent_master": false,
+    "max_abs_lsb": 3,
+    "mean_abs_lsb": 7.916666666666666e-05,
+    "correlation": 0.9999999999833625
+  },
+  "actual_aac_vs_same_pcm_reencode": {
+    "sr": 48000,
+    "actual_samples": 120832,
+    "reference_samples": 120832,
+    "exact": true,
+    "max_abs_lsb": 0,
+    "correlation": 1.0
+  },
+  "encoded_audio_loudnorm": {
+    "input_i": "-18.92",
+    "input_tp": "-5.41",
+    "input_lra": "0.00",
+    "input_thresh": "-28.92",
+    "output_i": "-16.00",
+    "output_tp": "-2.50",
+    "output_lra": "0.00",
+    "output_thresh": "-26.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "click_offsets_seconds": [
+    1.85,
+    2.1
+  ],
+  "click_onset_sample_indices_within_pcm": [
+    88800,
+    100800
+  ],
+  "corresponding_visual_start_frames": [
+    44,
+    50
+  ],
+  "click_delay_after_visual_start_ms": [
+    16.666666666666828,
+    16.666666666666607
+  ],
+  "listening_claim": false,
+  "scope": "Actual newest AAC and new PCM compared to independently rebuilt updated master. Numerical timing/truepeak evidence, not subjective listening approval."
+}
