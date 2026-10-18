@@ -1,0 +1,92 @@
+{
+  "status": "CALL02_LOCAL_REPAIR_NOT_PASSED_NO_FURTHER_CALLS",
+  "this_round_native_calls": 1,
+  "S07_own_native_calls_total": 2,
+  "accepted_F057_drawings": 0,
+  "other10_native_calls": 0,
+  "raw_png_sha256": "549cd22c715a1724d6546ede9c2b084173d5592d4dde1ac884707d0490841449",
+  "raw_return_byte_equal": true,
+  "raw_output_size": [
+    1560,
+    1008
+  ],
+  "requested_working_size": [
+    1672,
+    1080
+  ],
+  "source_raw_first_call": "../F057_first_image/originals/F057_call01_raw.png",
+  "G037_fixed_source": "9ee7689d8ff56ab6c366a7f6d087197f0c8d6377",
+  "G037_actual_head_world": 69.1796875,
+  "G037_never_mirrored": true,
+  "uniform_raw_to_working_scale": 1.0717948717948718,
+  "uniform_raw_to_working_translation": [
+    0,
+    0
+  ],
+  "whole_figure_registration_to_world": {
+    "s": 0.36410361842105265,
+    "tx": 627.0254537171638,
+    "ty": 402.7604324894813,
+    "head_target": 69.1796875,
+    "head_center_world": [
+      929.9596642434797,
+      442.447726897376
+    ],
+    "warning": "Head source is actual G037253±5asset pixels, not75.1 construction; F057 head190±5native manual estimate. One uniform whole-image registration only."
+  },
+  "outside_edit_mask_pixel_changes": 0,
+  "protected_head_body_near_right_arm_pixel_changes": 0,
+  "no_segment_scaling_or_warp": true,
+  "manual_native_return": {
+    "near_ankle": [
+      848,
+      884
+    ],
+    "far_ankle": [
+      614,
+      875
+    ],
+    "far_jade_wrist": [
+      911,
+      474
+    ],
+    "near_sole_y": 944,
+    "far_sole_y": 938,
+    "uncertainty": "ankle centers±10raw, wrist±5raw, sole±3raw; visible estimates, not3D bone reconstruction"
+  },
+  "actual_world_landmarks": {
+    "near_ankle": [
+      957.9526973069075,
+      747.736474156148
+    ],
+    "far_ankle": [
+      866.6355098069074,
+      744.2242746369172
+    ],
+    "far_jade_wrist": [
+      982.5380939415229,
+      587.7362738356351
+    ]
+  },
+  "actual_horizontal_ankle_span_world_approx": 91.3171875,
+  "ankle_span_target_world": 64,
+  "ankle_span_uncertainty_world_approx": 6,
+  "actual_world_soles_approx": {
+    "near_sole_y": 771.1511376176863,
+    "far_sole_y": 768.8096712715326
+  },
+  "target_world_floor": 775,
+  "far_wrist_target_world": [
+    942,
+    623
+  ],
+  "actual_image_findings": [
+    "Real returned frame reconnected pants/legs and retains readable right-facing identity and right-bare/left-jade ownership.",
+    "Step only partly narrowed; measured horizontal ankle span still~91world versus64. Near right foot remains too far forward.",
+    "Far left wrist remains too far forward/high, about983,588 versus intended~942,623.",
+    "Both soles remain roughly769–771world versus775; manual estimates have uncertainty but no ground-pass claim.",
+    "Output changed canvas dimensions. Only one uniform whole-return alignment was applied before hard restoring source head, blouse and near arm.",
+    "No full-pose acceptance, no extension to other10, no new request in flight."
+  ],
+  "next_gate": "Astra inspect actual source-scale and call02 return before any additional targeted repair. Do not repeat full person/numeric redraw or derive later poses from this failed output."
+}

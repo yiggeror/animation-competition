@@ -1,5 +1,5 @@
 {
-  "status": "PREPARED_NOT_EXECUTED_PENDING_G037_SCALE_SOURCE",
+  "status": "PREPARED_AFTER_ACTUAL_G037_SCALE_CHECK_NOT_YET_EXECUTED",
   "source_raw_sha256": "2aa447312ca2e598a009987a4a44b561824c382338328c20f47b6169c37bcb9f",
   "source_native_size": [
     1672,
@@ -7,20 +7,20 @@
   ],
   "working_native_canvas": [
     1672,
-    1024
+    1080
   ],
-  "padding": "83transparent rows at bottom only; original pixels never rescaled",
+  "padding": "139transparent rows at bottom only; original pixels never rescaled",
   "approval": "Astra passed counterphase arm reference v2, authorizes necessary singleF057 local repair only; all other10 remain unapproved. S09 repair completed before this preparation.",
-  "provisional_registration": {
-    "s": 0.3952631578947368,
-    "tx": 601.1007168750587,
-    "ty": 399.3640426868497,
-    "head_target": 75.1,
+  "actual_source_checked_registration": {
+    "s": 0.36410361842105265,
+    "tx": 627.0254537171638,
+    "ty": 402.7604324894813,
+    "head_target": 69.1796875,
     "head_center_world": [
       929.9596642434797,
       442.447726897376
     ],
-    "warning": "Head190manual and75.1construction remain provisional until G037 standing source. Do not generate before rechecking."
+    "warning": "Head source is actual G037253±5asset pixels, not75.1 construction; F057 head190±5native manual estimate. One uniform whole-image registration only."
   },
   "targets_world": {
     "hip": [
@@ -54,54 +54,54 @@
       623
     ],
     "far_elbow": [
-      932,
-      566
+      947,
+      578
     ],
     "far_shoulder_proxy": [
-      917,
-      506
+      954.7187102961112,
+      539.299289397376
     ]
   },
   "targets_native": {
     "hip": [
-      786.5627668939928,
-      548.0803181025108
+      782.6743044154235,
+      585.6562712428927
     ],
     "far_hip": [
-      768.8530465211566,
-      550.6102781557731
+      763.4490079727358,
+      588.4027421632767
     ],
     "near_knee": [
-      865.7903690451882,
-      728.8144679059251
+      868.6821072340583,
+      781.857427113052
     ],
     "far_knee": [
-      754.9487597730288,
-      747.4567072770984
+      748.3548094800872,
+      802.0950463820769
     ],
     "near_ankle": [
-      829.5720877994522,
-      907.3346456657598
+      829.3643100619508,
+      975.6551419374156
     ],
     "far_ankle": [
-      667.6546443906639,
-      907.3346456657598
+      653.5901711573772,
+      975.6551419374156
     ],
     "far_wrist": [
-      862.4615684918623,
-      565.790038475347
+      865.0684320269424,
+      604.8815676855804
     ],
     "far_elbow": [
-      837.1619679592392,
-      421.5823154393949
+      878.8007866288623,
+      481.2903762683021
     ],
     "far_shoulder_proxy": [
-      799.2125671603044,
-      269.7847122436559
+      900.0,
+      375.0
     ]
   },
   "hip_variation": "Hip912,616 instead of898,613 construction;14pxforward/3down proposal to fit actual unchanged blouse. Needs real support/near-foot transfer inspection, not a numeric physics claim.",
-  "far_wrist_variation": "Target942,623 is13pxforward of929reference to leave actual wrist/bangle clear at the fixed blouse/pants edge. Under this provisional head-y registration original wrist is~992,587 (earlier floor-only diagnostic was~992,602). Explicit actual-cloth clearance gate, not a torso penetration exemption.",
+  "far_wrist_variation": "Target942,623 is13pxforward of929reference to leave actual wrist/bangle clear at the fixed blouse/pants edge. Green chain begins at actual native far sleeve outlet900,375; this is a visible cloth connection, not a guessed anatomical shoulder inside torso. Explicit actual-cloth clearance gate, not a torso penetration exemption.",
   "fragment_operations": [
     {
       "part": "near complete leg",
@@ -132,8 +132,8 @@
     {
       "part": "near shoe",
       "translation": [
-        -137.42791220054778,
-        35.3439665712192
+        -137.63568993804915,
+        107.345147583943
       ],
       "rotation_degrees": 0,
       "scale": 1
@@ -141,8 +141,8 @@
     {
       "part": "far shoe",
       "translation": [
-        -10.345355609336139,
-        39.3439665712192
+        -24.4098288426228,
+        111.345147583943
       ],
       "rotation_degrees": 0,
       "scale": 1
@@ -150,8 +150,8 @@
     {
       "part": "far whole arm",
       "translation": [
-        -125.5384315081377,
-        90.79003847534705
+        -122.93156797305755,
+        129.88156768558042
       ],
       "rotation_degrees": 0,
       "scale": 1
@@ -160,7 +160,7 @@
   "preposition_limits": "All pieces are real raw pixels, NOT adopted art. Deliberate hip/knee/ankle and sleeve gaps must be natively reconstructed over full chains; do not use piece placement as anatomy validation or move only shoes.",
   "preposition_outside_edit_pixel_changes": 0,
   "preposition_protected_head_body_near_arm_pixel_changes": 0,
-  "new_native_calls": 0,
+  "new_native_calls_at_preparation": 0,
   "other10_calls": 0,
-  "G037_source": "not yet present in fetched shared commit3f4c2f187daaeacc6b26e26260e426823f2fa6ad; grandma delivered through028 there"
+  "G037_source": "sources/G037/production/F037_grandma_rgba.png fixed9ee7689d; actually inspected; not mirrored"
 }
