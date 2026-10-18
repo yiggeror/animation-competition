@@ -1,0 +1,369 @@
+{
+  "status": "LOCAL_FIRST14_CANDIDATE_AWAITING_ACTUAL_CANVAS",
+  "source_frozen_commit": "87d420ed171eb611dc8f14dacd586de20fd5790a",
+  "source_frozen_directory": "collab/reviews/20261018_1654_s08_first6",
+  "original_RGBA_assets": {
+    "F000": {
+      "repository_path": "collab/reviews/20261018_1654_s08_first6/rgba/S08_F000.png",
+      "sha256": "c803571d4a6446e783fcbeb7aef41d65c1862ff3bf78a9a53f34b4631170e3f3"
+    },
+    "F003": {
+      "repository_path": "collab/reviews/20261018_1654_s08_first6/rgba/S08_F003.png",
+      "sha256": "33c7919c7cd2ca0ddbe7e0c6af03c914a1a74040ffce8efc4af2bcba13b10913"
+    },
+    "F005": {
+      "repository_path": "collab/reviews/20261018_1654_s08_first6/rgba/S08_F005.png",
+      "sha256": "d2c623b6e9feca97be2dd906386ccca10f354a1e1b18e95b125a1a8a21f3b24a"
+    },
+    "F006": {
+      "repository_path": "collab/reviews/20261018_1654_s08_first6/rgba/S08_F006.png",
+      "sha256": "507ce096204aed9c22685071c0d94de8504de10d451ce18edaa4d4051ad58ad8"
+    },
+    "F009": {
+      "repository_path": "collab/reviews/20261018_1654_s08_first6/rgba/S08_F009.png",
+      "sha256": "71c56b1bb2df6bec0bd1bd0bfdbdd188714b6c75a652ace44da69fc97db37f98"
+    }
+  },
+  "source_functions_check": {
+    "status": "PASS",
+    "frozen_F000_layer_entry_commit": "23ced01306239a15a55f42a8d46e23fe375b9c63",
+    "functions": [
+      "bg",
+      "lampLayerAtZero",
+      "originalStoolLayer",
+      "tableFront"
+    ],
+    "byte_equal": true,
+    "source_function_block_sha256": "9cc979147560eb7745dbd3439fa594433067c13d74d068049a38f959452a403d",
+    "table_front_y": 981,
+    "lamp_base": [
+      1415,
+      965.6
+    ],
+    "camera": {
+      "x": 960,
+      "y": 540,
+      "fit": 1
+    }
+  },
+  "layer_validation": {
+    "status": "PASS_ORIGINAL_PIXEL_PARTITION_ONLY",
+    "source_freeze_commit": "87d420ed171eb611dc8f14dacd586de20fd5790a",
+    "F000_layer_freeze_commit": "23ced01306239a15a55f42a8d46e23fe375b9c63",
+    "rows": [
+      {
+        "pose": "000",
+        "source_sha256": "c803571d4a6446e783fcbeb7aef41d65c1862ff3bf78a9a53f34b4631170e3f3",
+        "foreground_pixels": 63005,
+        "foreground_below_table_front_pixels": 1213,
+        "below_front_bbox": [
+          739,
+          981,
+          1088,
+          998
+        ],
+        "overlap_alpha_pixels": 0,
+        "RGBA_reconstruction_exact": true,
+        "RGB_original_everywhere": true,
+        "xy": [
+          0,
+          0
+        ],
+        "sc": 1,
+        "mask_method": "accepted original F000"
+      },
+      {
+        "pose": "003",
+        "source_sha256": "33c7919c7cd2ca0ddbe7e0c6af03c914a1a74040ffce8efc4af2bcba13b10913",
+        "foreground_pixels": 64278,
+        "foreground_below_table_front_pixels": 682,
+        "below_front_bbox": [
+          764,
+          981,
+          1088,
+          995
+        ],
+        "overlap_alpha_pixels": 0,
+        "RGBA_reconstruction_exact": true,
+        "RGB_original_everywhere": true,
+        "xy": [
+          0,
+          0
+        ],
+        "sc": 1,
+        "mask_method": "fresh per-pose arm tracing"
+      },
+      {
+        "pose": "005",
+        "source_sha256": "d2c623b6e9feca97be2dd906386ccca10f354a1e1b18e95b125a1a8a21f3b24a",
+        "foreground_pixels": 59133,
+        "foreground_below_table_front_pixels": 519,
+        "below_front_bbox": [
+          771,
+          981,
+          1088,
+          995
+        ],
+        "overlap_alpha_pixels": 0,
+        "RGBA_reconstruction_exact": true,
+        "RGB_original_everywhere": true,
+        "xy": [
+          0,
+          0
+        ],
+        "sc": 1,
+        "mask_method": "fresh per-pose arm tracing"
+      },
+      {
+        "pose": "006",
+        "source_sha256": "507ce096204aed9c22685071c0d94de8504de10d451ce18edaa4d4051ad58ad8",
+        "foreground_pixels": 59133,
+        "foreground_below_table_front_pixels": 519,
+        "below_front_bbox": [
+          771,
+          981,
+          1088,
+          995
+        ],
+        "overlap_alpha_pixels": 0,
+        "RGBA_reconstruction_exact": true,
+        "RGB_original_everywhere": true,
+        "xy": [
+          0,
+          0
+        ],
+        "sc": 1,
+        "mask_method": "005 arm pixels verified identical below y700; eyes only"
+      },
+      {
+        "pose": "009",
+        "source_sha256": "71c56b1bb2df6bec0bd1bd0bfdbdd188714b6c75a652ace44da69fc97db37f98",
+        "foreground_pixels": 59133,
+        "foreground_below_table_front_pixels": 519,
+        "below_front_bbox": [
+          771,
+          981,
+          1088,
+          995
+        ],
+        "overlap_alpha_pixels": 0,
+        "RGBA_reconstruction_exact": true,
+        "RGB_original_everywhere": true,
+        "xy": [
+          0,
+          0
+        ],
+        "sc": 1,
+        "mask_method": "005 arm pixels verified identical below y700; eyes only"
+      }
+    ],
+    "actual_canvas_validation": "Separate render gate, not established by this script",
+    "contact_shadows": "No generic clothing-bottom ground shadow. Existing lamp support shadow retained; any new elbow contact shadow is a separate pending diagnostic."
+  },
+  "contract_test": {
+    "status": "PASS",
+    "fps": 24,
+    "frames": 14,
+    "duration": 0.5833333333333334,
+    "unique_drawings": 5,
+    "exposure_states": 6,
+    "layer_assets_verified": 10,
+    "no_future_pose_fallback": true,
+    "flame_start_frame": 5,
+    "actual_source_contact_frame": 3,
+    "wick_flame_frames": 0,
+    "lamp_lift_frames": 0,
+    "real_RGBA_partition_verified": true,
+    "actual_render": "Separate browser result required"
+  },
+  "module_wiring_test": {
+    "status": "PASS_MOCK_WIRING_ONLY",
+    "frames_checked": 14,
+    "loaded_layers": 10,
+    "lamp_calls": [
+      [
+        0,
+        false
+      ]
+    ],
+    "flame_calls": 9,
+    "original_pixel_transforms": "all x0 y0 sc1",
+    "generic_ground_contact_shadows": 0,
+    "canvas_render_performed": false
+  },
+  "elbow_selection_check": {
+    "status": "PASS",
+    "ROIs": "actual elbow contours only; excludes lower torso pattern",
+    "rows": [
+      {
+        "pose": "000",
+        "actual_near_elbow_ROI": [
+          730,
+          981,
+          830,
+          1010
+        ],
+        "actual_far_elbow_ROI": [
+          1010,
+          981,
+          1110,
+          1010
+        ],
+        "warm_elbow_pixels_missing_from_foreground": 0
+      },
+      {
+        "pose": "003",
+        "actual_near_elbow_ROI": [
+          730,
+          981,
+          830,
+          1010
+        ],
+        "actual_far_elbow_ROI": [
+          1010,
+          981,
+          1110,
+          1010
+        ],
+        "warm_elbow_pixels_missing_from_foreground": 0
+      },
+      {
+        "pose": "005",
+        "actual_near_elbow_ROI": [
+          730,
+          981,
+          830,
+          1010
+        ],
+        "actual_far_elbow_ROI": [
+          1010,
+          981,
+          1110,
+          1010
+        ],
+        "warm_elbow_pixels_missing_from_foreground": 0
+      }
+    ]
+  },
+  "browser_status": {
+    "version": "Chromium154.0.8037.57",
+    "node": "v24.19.0",
+    "actual_canvas_frames": 0,
+    "failed_attempts": 2,
+    "fatal": "socket() failed: Operation not permitted (1)",
+    "next_step": "Existing cloud renderer"
+  },
+  "files": [
+    {
+      "repository_relative_path": "collab/reviews/20261018_1721_s08_first14_scene/s08_first14_scene.js",
+      "bytes": 4451,
+      "sha256": "4557e5f89fddf2fc65527d7a3f312139e807324fe7c3dff039e2b9324ec8a6de",
+      "git_blob_sha1": "7b6b82476df10cd4b0b6a3b30ef26479c305ab00"
+    },
+    {
+      "repository_relative_path": "collab/reviews/20261018_1721_s08_first14_scene/contract.js",
+      "bytes": 1992,
+      "sha256": "66a40084cefcb03ac8265a2e228d788c7a89b42c193f9b2b71276cbe257a16e7",
+      "git_blob_sha1": "857704a2b39f75d1532626be81fb696ec90329a7"
+    },
+    {
+      "repository_relative_path": "collab/reviews/20261018_1721_s08_first14_scene/layer_contract.js",
+      "bytes": 2175,
+      "sha256": "10aca4af38f27e38f16b36d9e84d479a0efb196d77aaf7acd97c87726a4f0d92",
+      "git_blob_sha1": "540b07b5c10e4f95b5c9a9bafde9469e286a94bd"
+    },
+    {
+      "repository_relative_path": "collab/reviews/20261018_1721_s08_first14_scene/frames/F000_body_behind_original_pixels.png",
+      "bytes": 596979,
+      "sha256": "9d796b2e01c23875f6f1d664f32dae4a2ac1e7dfa246d445ba4041af43b87c82",
+      "git_blob_sha1": "2905cc9e85cc75b008a2a7063268e4f16ed0f44f",
+      "reuse_existing_git_blob": {
+        "commit": "23ced01306239a15a55f42a8d46e23fe375b9c63",
+        "path": "collab/reviews/20261018_1631_s08_layer_diag/frames/F000_body_behind_original_pixels.png",
+        "git_blob_sha1": "2905cc9e85cc75b008a2a7063268e4f16ed0f44f"
+      }
+    },
+    {
+      "repository_relative_path": "collab/reviews/20261018_1721_s08_first14_scene/frames/F000_forearms_elbows_original_pixels.png",
+      "bytes": 581201,
+      "sha256": "eadeb9894a1c62fecae3fb0bc48240604a178283703d0d8ec8cbc4e5879684f9",
+      "git_blob_sha1": "167616a69daa16f69066ecac17a2b951a9564439",
+      "reuse_existing_git_blob": {
+        "commit": "23ced01306239a15a55f42a8d46e23fe375b9c63",
+        "path": "collab/reviews/20261018_1631_s08_layer_diag/frames/F000_forearms_elbows_original_pixels.png",
+        "git_blob_sha1": "167616a69daa16f69066ecac17a2b951a9564439"
+      }
+    },
+    {
+      "repository_relative_path": "collab/reviews/20261018_1721_s08_first14_scene/frames/F003_body_behind_original_pixels.png",
+      "bytes": 599061,
+      "sha256": "1d32a02c8d4de628752de6a4004fa6e6e28653774cbbcdba3b20e64ff77d99a0",
+      "git_blob_sha1": "7c6ec7599cd69da724b5623f5fc772222bca679b"
+    },
+    {
+      "repository_relative_path": "collab/reviews/20261018_1721_s08_first14_scene/frames/F003_forearms_elbows_original_pixels.png",
+      "bytes": 582867,
+      "sha256": "c644829f0e9328af56ec8877479409c80d4e246fa846dfcc905706e047a7f35c",
+      "git_blob_sha1": "255732aced5fa4e3700ce1998a8303147be6d65a"
+    },
+    {
+      "repository_relative_path": "collab/reviews/20261018_1721_s08_first14_scene/frames/F005_body_behind_original_pixels.png",
+      "bytes": 598143,
+      "sha256": "f61f53c9c8b1d2ebed85097117dc7ebe5d889a9ac608cab88d40bbb430763ce6",
+      "git_blob_sha1": "695ed071f59cd73b811845700ba653ef8c79ce63"
+    },
+    {
+      "repository_relative_path": "collab/reviews/20261018_1721_s08_first14_scene/frames/F005_forearms_elbows_original_pixels.png",
+      "bytes": 582021,
+      "sha256": "5fd88e4098a8f6836a4fcaa69d593fd3f512ff460e3a373637e4b3a7ac5f81d6",
+      "git_blob_sha1": "8924db8ce65a744b4af91a1b3862759a1247a58c"
+    },
+    {
+      "repository_relative_path": "collab/reviews/20261018_1721_s08_first14_scene/frames/F006_body_behind_original_pixels.png",
+      "bytes": 597621,
+      "sha256": "9551c4674b6176d2d4410f466c1e2d2d07bfdd5fbd0b8e292c737e5a3abfe229",
+      "git_blob_sha1": "f68595476b4832fbc5019a754538ab5f002affc3"
+    },
+    {
+      "repository_relative_path": "collab/reviews/20261018_1721_s08_first14_scene/frames/F006_forearms_elbows_original_pixels.png",
+      "bytes": 581512,
+      "sha256": "820114e9d70eb0202fe9dc5bd75eb3f3456d81dd356bbef9d3241dd66aeb78ee",
+      "git_blob_sha1": "64fddf09d5f6ff09346cdc1f2fae75a0250cdf1f"
+    },
+    {
+      "repository_relative_path": "collab/reviews/20261018_1721_s08_first14_scene/frames/F009_body_behind_original_pixels.png",
+      "bytes": 597829,
+      "sha256": "a7093f5eae4b25b1d392736f14bc5de1ac3d0be30a423ee1d161458fccf7232d",
+      "git_blob_sha1": "af9442d2dd796dec09c3fa936bde92a04c8fde25"
+    },
+    {
+      "repository_relative_path": "collab/reviews/20261018_1721_s08_first14_scene/frames/F009_forearms_elbows_original_pixels.png",
+      "bytes": 581706,
+      "sha256": "f086481c0aa8156ec141a67cdb42ce8d30799f8c2ffee236f93806a1e3790ef8",
+      "git_blob_sha1": "5c5d2d91f5e3ba8368375c164e11119ef3019f91"
+    },
+    {
+      "repository_relative_path": "collab/reviews/20261018_1721_s08_first14_scene/README.md",
+      "bytes": 1480,
+      "sha256": "3eda87217791947327b01e4e6194a9ba6f79f284732a51504852f16ceb4aad9c",
+      "git_blob_sha1": "97efc3629c7543fe15650f3c347b6645b4957c2e"
+    },
+    {
+      "repository_relative_path": "collab/reviews/20261018_1721_s08_first14_scene/exposure.json",
+      "bytes": 780,
+      "sha256": "1abc59c36531d041e30e248c2deaf107d4f427e18aff9cbaf659968438887dec",
+      "git_blob_sha1": "2cc923a0456806464ec7f23104ca6da0b7a48bca",
+      "reuse_existing_git_blob": {
+        "commit": "87d420ed171eb611dc8f14dacd586de20fd5790a",
+        "path": "collab/reviews/20261018_1654_s08_first6/exposure.json",
+        "git_blob_sha1": "2cc923a0456806464ec7f23104ca6da0b7a48bca"
+      }
+    },
+    {
+      "repository_relative_path": "collab/reviews/20261018_1721_s08_first14_scene/qa/actual_source_match_contacts_2x.png",
+      "bytes": 110543,
+      "sha256": "575082e9cb87779bd743c175c467efb52441832b30ce1c9ff6f1da594546b979",
+      "git_blob_sha1": "362e06efa070d8664f71989037c6de60907146af"
+    }
+  ]
+}
