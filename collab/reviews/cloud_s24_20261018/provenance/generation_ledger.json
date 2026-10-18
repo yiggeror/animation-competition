@@ -1,9 +1,9 @@
 {
-  "stage": "F000_structure_identity_and_B_registration_Astra_reviewed_hair_color_fixed_pending_exact_SHA_lock",
-  "image_generation_requests": 1,
-  "successful_raw_images": 1,
+  "stage": "corrected_mother_Astra_locked_three_native_states_delivered_pending_Astra_segment_review",
+  "image_generation_requests": 5,
+  "successful_raw_images": 5,
   "failed_requests": 0,
-  "candidate_drawings": 1,
+  "candidate_drawings": 4,
   "adopted_production_drawings": 0,
   "scene_render_runs": 0,
   "full_film_render_runs": 0,
@@ -18,26 +18,67 @@
       "tool_original_path": "/workspace/generated_images/exec-442f4faf-84e6-4c96-b9af-02582c9c01aa.png",
       "candidate": "d01_first_candidate/candidates/F000_native_rgba.png",
       "candidate_sha256": "35bb55ead65abf20e3862b4d66dde2f0ed25023f31fb634fa2f03bcda0c72281",
-      "status": "original_retained_structure_identity_reviewed_hair_derivative_pending_lock",
+      "status": "raw_retained;corrected_derivative0485c6fe_Astra_locked_and_only_mother_input",
       "scope": "full_native_byte_identical_RGBA"
+    },
+    {
+      "call_id": "S24_F006_call_002",
+      "raw": "d02_d04_segment/originals/S24_F006_call_002_raw.png",
+      "sha256": "27ceb255932f500951f98a0bfd24f5a393c913ebbd055715a1dfb3d0de7fc8f1",
+      "tool_original_path": "/workspace/generated_images/exec-81abc347-0b54-40e0-8189-7e371b5d8c5d.png",
+      "status": "author_accepted_candidate;Astra_segment_review_pending",
+      "candidate": "d02_d04_segment/candidates/F006_rgba.png",
+      "candidate_sha256": "4e363b28a951d7adafcbbe7bb41700086dfa91de0c6fc20ba9bac0641d52af4c",
+      "local_color_edit": true
+    },
+    {
+      "call_id": "S24_F009_call_003",
+      "raw": "d02_d04_segment/originals/S24_F009_call_003_REJECTED_overshoot_raw.png",
+      "sha256": "781a4a12192f41c2e827d0ce539bcbb47c01c0c4e024c1deaa6fb2f9935cad4c",
+      "tool_original_path": "/workspace/generated_images/exec-ec8c9e0b-2366-4f80-9773-6a056759612f.png",
+      "status": "REJECTED_ACTION_OVERSHOOT_NOT_DERIVED"
+    },
+    {
+      "call_id": "S24_F009_call_004",
+      "raw": "d02_d04_segment/originals/S24_F009_call_004_raw.png",
+      "sha256": "64bc0a97c51eb196963de395a862bbfa2ef3eb83b1354103769b78127e212277",
+      "tool_original_path": "/workspace/generated_images/exec-68bc1d7b-bce3-4105-9332-48af9993da88.png",
+      "status": "author_accepted_candidate;Astra_segment_review_pending",
+      "candidate": "d02_d04_segment/candidates/F009_rgba.png",
+      "candidate_sha256": "fa1d4ae70a784d1694d27c674ad28cc9357ced1e6686f9fda8718a60daa65532",
+      "local_color_edit": true
+    },
+    {
+      "call_id": "S24_F012_call_005",
+      "raw": "d02_d04_segment/originals/S24_F012_call_005_raw.png",
+      "sha256": "41dfd7ba6d1e9dda2488ad9442284c56829394b2e43c7ee198cbd02590872db5",
+      "tool_original_path": "/workspace/generated_images/exec-672ee534-b7c7-4480-a26a-32dd21a55e7a.png",
+      "status": "author_accepted_candidate;Astra_segment_review_pending",
+      "candidate": "d02_d04_segment/candidates/F012_rgba.png",
+      "candidate_sha256": "dcbe1e529b03b963f56769e4f0c381cbca5bd2735cdb75d01bbce5f0cd0296c6",
+      "local_color_edit": true
     }
   ],
   "local_repaint": false,
   "local_color_edit": true,
   "alpha_cleanup": false,
   "warp": false,
-  "F006_started": false,
-  "note": "Exactly one original image-generation call. Astra reviewed mother structure/identity/awake gaze and accepted B registration. Same-raw local hair correction adds0 calls; original raw and shallow-color candidate retained. Await exact corrected mother SHA lock before006/009/012. No scene/full-film render or shared production edits.",
+  "F006_started": true,
+  "note": "Astra locked corrected mother0485c6fe and B registration. Sequential native006 accepted,009call003 rejected for overshoot,009call004 accepted,then012 accepted by author. Each uses only corrected mother and prior accepted state;fixed mother controls all color gates. 4calls this segment,3adopted candidates+1artistic reject;5total,0tool failures. No015,no shared production/scene/full-film/ready edits;15fneutral drawn-layer QA only.",
   "color_derivatives": [
     {
       "source_sha256": "35bb55ead65abf20e3862b4d66dde2f0ed25023f31fb634fa2f03bcda0c72281",
       "candidate": "d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
       "candidate_sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22",
-      "status": "pending_Astra_exact_mother_lock",
+      "status": "Astra_dual_review_locked_exact_SHA0485c6fe",
       "scope": "three_continuous_brown_hair_base_components_only;alpha_line_highlight_outside0change",
       "generation_calls": 0
     }
   ],
-  "F009_started": false,
-  "F012_started": false
+  "F009_started": true,
+  "F012_started": true,
+  "Astra_locked_drawings": 1,
+  "artistic_rejected_raw_images": 1,
+  "layer_preview_encoding_runs": 1,
+  "F015_started": false
 }

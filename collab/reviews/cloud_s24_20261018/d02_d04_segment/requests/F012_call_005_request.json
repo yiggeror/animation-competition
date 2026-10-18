@@ -1,0 +1,25 @@
+{
+  "call_id": "S24_F012_call_005",
+  "pose": "d04_F012",
+  "status": "executed_native_return_author_accepted_after_actual_structure_and_color_review",
+  "tool": "image_gen.imagegen",
+  "args": {
+    "prompt": "S24 F012 ONLY, next3-frame native drawing after reference2 (accepted F009). One complete1024x1536 transparent RGBA illustration. Reference1 is the LOCKED CORRECTED S24 F000 mother for identity and exact material palette. Reference2 is the immediately preceding accepted F009 for continuous body scale/pose, gaze and head motion. Only these two images are approved; no older light-brown mother.\n\nF012 IS ALMOST A STRAIGHT-ON FRONTAL HEAD, JUST6DEGREES TOWARD SCREEN RIGHT. It is the tiny moment of passing frontal, not a right three-quarter head. Both eyes/ears are visible at nearly symmetric widths; nose is near the middle of the face, with its tip only a LITTLE to screen right. The screen-left ear/flower is now slightly nearer, screen-right slightly farther, but the difference is subtle. Do not turn as far as the original strong three-quarter pose in either direction. Keep the full head looking essentially toward the viewer with that very small rightward yaw.\n\nContinue the WHOLE SKULL turn from the accepted left-facing F009: redraw coherent rounded cranium/backhead, jaw/chin underside, both ear positions, bangs, cowlick, both flower attachments and hair ROOTS, and upper neck planes. Both ears must join the same cranium naturally; no pasted face, skewed eyes, mirrored card, disconnected chin, large ear or flattened backhead. Maintain this child's identity, skull volume and head height. Neck turns naturally above its existing collar base, without stretching into a long tube or detaching from the jaw. Chin is level, no proud chin lift yet.\n\nHer awake brown eyes keep leading a modest amount SCREEN RIGHT/UP within this new nearly-frontal head. She is still on the way to looking at grandma; F015 will acquire the target, not this drawing. Fully open natural awake eyes, no sleepy lids, blink, yawn or squint. Lips completely CLOSED with only a very small beginnings-of-a-smile curve; no broad grin, teeth, open mouth or triumphant expression.\n\nTorso/shoulders/sleeves stay gently SCREEN LEFT as in reference2, at most a tiny2degree follow: do not swap body near/far arms when the head passes frontal. Same rounded white collar base/garment and all yellow dress dots, no new arm gesture. Upper arms exit bottom; hands, elbows, wrists and prop grips are out of frame. Twin pigtails stay SHORT and DOWN with small soft curves, their roots follow the head and loose tips lag slightly toward screen left; no horizontal/fanned tail or big cowlick.\n\nFRAMING: keep native1024x1536, same head/body scale and anchored torso as accepted previous state. Cowlick top around y90–110, solid crown about y210, chin around y900–920, neck/collar base about y1080; entire cowlick and both tails inside image. Fixed whole-layer scene registration0.70+(590,20); no zoom/recenter to a new crop. Preserve top margin for later chin lift.\n\nCOLOR from reference1 ONLY: deep brown crown aboutRGB56,42,34, near tail55,42,33/far54,40,32; warm peach skin254,207,170; SOFT GOLDEN yellow dress254,209,58 with warm white dots and collar. Keep subtle skin/blush/shadow/hair highlight gradients and original ink, not flat swatches. Do not make hair light brown, skin white or yellow oversaturated. No scene lighting/glow/backdrop, words, grid, guide, props or extra people. Output just the complete transparent native illustration.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d02_d04_segment/candidates/F009_rgba.png"
+    ],
+    "transparent_background": true
+  },
+  "inputs": [
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22"
+    },
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d02_d04_segment/candidates/F009_rgba.png",
+      "sha256": "fa1d4ae70a784d1694d27c674ad28cc9357ced1e6686f9fda8718a60daa65532"
+    }
+  ],
+  "previous_actual_review": "qa/F009_author_review.json"
+}

@@ -1,6 +1,6 @@
-# S24 · 首母结构/注册已双审，同raw发色修后待锁
+# S24 · 新修母已双审锁定，006/009/012小批待审
 
-独占分支`cloud/s24-reference-20261018`，基线`001c9c1828d9054675437111cf52df37c48721f2`。**Astra首母双审已认可身份/清醒左下视线/闭口/颏颈短垂辫，并采用B整层`.70+(590,20)`；同raw仅棕发语义域修色已交，待锁精确修后SHA。** 当前先看[同raw发色修后首母](d01_hair_color_fix/README.md)，旧[一次原生返回包](d01_first_candidate/README.md)保全历史。9态/60帧/24fps/2.5秒不变，未开F006，不修改共享模块、EDL、音频、留言或ready。
+独占分支`cloud/s24-reference-20261018`，基线`001c9c1828d9054675437111cf52df37c48721f2`。**Astra已双审锁新修母`0485c6fe…eff22`（`6cecf474`）并沿B整层`.70+(590,20)`授权006/009/012逐张推进；三张真实原生候选已逐张实看和区域色门，现交小批审。** 当前先看[006/009/012小批包](d02_d04_segment/README.md)；[同raw首母修色包](d01_hair_color_fix/README.md)和旧[首次返回包](d01_first_candidate/README.md)保全历史阶段标签。9态/60帧/24fps/2.5秒不变，未开F015，不修改共享模块、EDL、音频、留言或ready。
 
 x24原始身份图为`collab/refs/anim_24_xiaoman_smug.png`，处理资产`assets/chars/x24_smug.png`也已实看。两者只取身份和末表情倾向，旧空手合拢与整图翻转不作新动作依据。
 
@@ -30,6 +30,6 @@ x24原始身份图为`collab/refs/anim_24_xiaoman_smug.png`，处理资产`asset
 
 **颜色更正已纳入：**最新Opus退回S13累积色漂，动作/回头节奏认可，整镜待修色；本参考里的F087/F094只借整头结构。S24颜色固定身份与x13 F000，不能顺链继承头发变浅、皮肤变白、裙色变艳。F000色片只是同语义内区统计，不能把全部明暗强压成平涂；[源ROI和统计方法](provenance/F000_semantic_color_reference.json)明确。未并发改S13颜色。
 
-[来源与固定git blob](provenance/source_manifest.json)、[原参考授权/颜色更正](provenance/authorization_and_scope.md)、[参考冻结及首张授权](provenance/astra_reference_freeze_and_first_F000_gate.md)、[构造核验](qa/construction_validation.json)齐全。参考图和`qa/delivery_validation.json`保留035c998阶段标签/零调用快照；[提示词草案](prompts_NOT_EXECUTED.json)仍未执行，实际首张prompt在新包。[当前账本](provenance/generation_ledger.json)登记1次请求/1原件/1候选，Astra锁定画稿0、场景/全片渲染0。`build_reference.py`不调用图像服务，并保留已有调用账本。
+[来源与固定git blob](provenance/source_manifest.json)、[原参考授权/颜色更正](provenance/authorization_and_scope.md)、[参考冻结及首张授权](provenance/astra_reference_freeze_and_first_F000_gate.md)、[构造核验](qa/construction_validation.json)齐全。参考图和`qa/delivery_validation.json`保留035c998阶段标签/零调用快照；[提示词草案](prompts_NOT_EXECUTED.json)仍是未直接执行的历史草案，实际完整prompt在各新包`requests/`。[当前账本](provenance/generation_ledger.json)共5次请求/5原件：锁母1、三新态候选、009过转拒收1。三态逐次按新修母过区域色门，未用旧浅母；Astra锁母1、新三态待审，场景/全片渲染0；另有15帧中性画稿层曝光诊断，不冒称Canvas接景。`build_reference.py`保留已有调用账本。
 
-下一门：Astra锁`d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png`的精确SHA；结构/身份/B注册已双审，本轮保留所有原形，仅修棕发底色。修后母态未锁，不派F006/009/012，不登记完整镜头；参考构造数字不当成成图测量。
+下一门：Astra审`d02_d04_segment/candidates/`三张实际009转幅、012过正面、颏颈/换耳、区域色与顶部余量，再放015及后段。新修母及B注册已锁；未派015、不登记完整镜头，参考构造角度不当成成图实测。

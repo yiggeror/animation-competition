@@ -1,0 +1,403 @@
+{
+  "frame": 9,
+  "raw": "originals/S24_F009_call_004_raw.png",
+  "raw_sha256": "64bc0a97c51eb196963de395a862bbfa2ef3eb83b1354103769b78127e212277",
+  "candidate": "candidates/F009_rgba.png",
+  "candidate_sha256": "fa1d4ae70a784d1694d27c674ad28cc9357ced1e6686f9fda8718a60daa65532",
+  "candidate_RGBA_sha256": "7e7da3948bfe27a09034189e5b30a73a9a801499ac6be09a0d97906690f8a160",
+  "locked_corrected_mother_sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22",
+  "native_canvas": [
+    1024,
+    1536
+  ],
+  "method": "Each actual native state gets separate explicit hair/skin/dress material domains; same approved mother for every color target. Local channel offsets preserve gradients. Hair deep/ridge lines and highlights, alpha and outside domains exact. No warp/reposition/anatomy code.",
+  "regions": [
+    {
+      "region": "crown",
+      "type": "hair",
+      "before": {
+        "roi": [
+          440,
+          290,
+          720,
+          460
+        ],
+        "pixels": 47155,
+        "median_RGB": [
+          64.0,
+          47.0,
+          38.0
+        ],
+        "mean_RGB": [
+          64.52578,
+          47.0966,
+          37.78401
+        ]
+      },
+      "master": {
+        "roi": [
+          360,
+          280,
+          730,
+          500
+        ],
+        "pixels": 79612,
+        "median_RGB": [
+          56.0,
+          42.0,
+          34.0
+        ],
+        "mean_RGB": [
+          56.47106,
+          41.79977,
+          33.74415
+        ]
+      },
+      "subtract_RGB": [
+        8.0,
+        5.0,
+        4.0
+      ],
+      "after": {
+        "roi": [
+          440,
+          290,
+          720,
+          460
+        ],
+        "pixels": 47155,
+        "median_RGB": [
+          56.0,
+          42.0,
+          34.0
+        ],
+        "mean_RGB": [
+          58.1451,
+          43.10181,
+          34.59393
+        ]
+      },
+      "mean_delta_vs_master": [
+        1.67404,
+        1.30204,
+        0.84978
+      ],
+      "median_delta_vs_master": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "region": "near_tail",
+      "type": "hair",
+      "before": {
+        "roi": [
+          790,
+          860,
+          900,
+          960
+        ],
+        "pixels": 10876,
+        "median_RGB": [
+          63.0,
+          46.0,
+          37.0
+        ],
+        "mean_RGB": [
+          62.17782,
+          44.78898,
+          35.73244
+        ]
+      },
+      "master": {
+        "roi": [
+          760,
+          850,
+          875,
+          960
+        ],
+        "pixels": 12562,
+        "median_RGB": [
+          55.0,
+          42.0,
+          33.0
+        ],
+        "mean_RGB": [
+          54.5929,
+          40.37096,
+          32.63334
+        ]
+      },
+      "subtract_RGB": [
+        8.0,
+        4.0,
+        4.0
+      ],
+      "after": {
+        "roi": [
+          790,
+          860,
+          900,
+          960
+        ],
+        "pixels": 10876,
+        "median_RGB": [
+          55.0,
+          42.0,
+          33.0
+        ],
+        "mean_RGB": [
+          57.12808,
+          42.26287,
+          33.2066
+        ]
+      },
+      "mean_delta_vs_master": [
+        2.53518,
+        1.89191,
+        0.57326
+      ],
+      "median_delta_vs_master": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "region": "far_tail",
+      "type": "hair",
+      "before": {
+        "roi": [
+          260,
+          910,
+          355,
+          965
+        ],
+        "pixels": 5040,
+        "median_RGB": [
+          59.0,
+          41.0,
+          32.0
+        ],
+        "mean_RGB": [
+          57.52222,
+          40.75139,
+          32.30238
+        ]
+      },
+      "master": {
+        "roi": [
+          265,
+          910,
+          355,
+          965
+        ],
+        "pixels": 4829,
+        "median_RGB": [
+          54.0,
+          40.0,
+          32.0
+        ],
+        "mean_RGB": [
+          54.76848,
+          40.27211,
+          32.73369
+        ]
+      },
+      "subtract_RGB": [
+        5.0,
+        1.0,
+        0.0
+      ],
+      "after": {
+        "roi": [
+          260,
+          910,
+          355,
+          965
+        ],
+        "pixels": 5040,
+        "median_RGB": [
+          56.0,
+          41.0,
+          32.0
+        ],
+        "mean_RGB": [
+          55.6369,
+          40.35337,
+          32.30238
+        ]
+      },
+      "mean_delta_vs_master": [
+        0.86842,
+        0.08126,
+        -0.43131
+      ],
+      "median_delta_vs_master": [
+        2.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "region": "skin",
+      "type": "skin",
+      "before": {
+        "roi": [
+          365,
+          760,
+          520,
+          845
+        ],
+        "pixels": 13175,
+        "median_RGB": [
+          254.0,
+          208.0,
+          173.0
+        ],
+        "mean_RGB": [
+          253.49989,
+          206.32888,
+          170.85298
+        ]
+      },
+      "master": {
+        "roi": [
+          310,
+          760,
+          480,
+          850
+        ],
+        "pixels": 15245,
+        "median_RGB": [
+          254.0,
+          207.0,
+          170.0
+        ],
+        "mean_RGB": [
+          253.40341,
+          205.4553,
+          168.91781
+        ]
+      },
+      "subtract_RGB": [
+        0.0,
+        1.0,
+        3.0
+      ],
+      "after": {
+        "roi": [
+          365,
+          760,
+          520,
+          845
+        ],
+        "pixels": 13175,
+        "median_RGB": [
+          254.0,
+          207.0,
+          170.0
+        ],
+        "mean_RGB": [
+          253.49989,
+          205.32888,
+          167.85298
+        ]
+      },
+      "mean_delta_vs_master": [
+        0.09648,
+        -0.12642,
+        -1.06483
+      ],
+      "median_delta_vs_master": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "region": "dress",
+      "type": "dress",
+      "before": {
+        "roi": [
+          310,
+          1210,
+          650,
+          1390
+        ],
+        "pixels": 57121,
+        "median_RGB": [
+          254.0,
+          207.0,
+          53.0
+        ],
+        "mean_RGB": [
+          253.81867,
+          206.60127,
+          52.86849
+        ]
+      },
+      "master": {
+        "roi": [
+          310,
+          1210,
+          650,
+          1390
+        ],
+        "pixels": 57561,
+        "median_RGB": [
+          254.0,
+          209.0,
+          58.0
+        ],
+        "mean_RGB": [
+          253.69224,
+          209.07939,
+          58.2293
+        ]
+      },
+      "subtract_RGB": [
+        0.0,
+        -2.0,
+        -5.0
+      ],
+      "after": {
+        "roi": [
+          310,
+          1210,
+          650,
+          1390
+        ],
+        "pixels": 57116,
+        "median_RGB": [
+          254.0,
+          209.0,
+          58.0
+        ],
+        "mean_RGB": [
+          253.81875,
+          208.58724,
+          57.83626
+        ]
+      },
+      "mean_delta_vs_master": [
+        0.12651,
+        -0.49215,
+        -0.39304
+      ],
+      "median_delta_vs_master": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "changed_pixels": 688725,
+  "alpha_changes": 0,
+  "protected_hair_line_highlight_changes": 0,
+  "outside_material_changes": 0,
+  "geometry_changes_from_this_color_step": 0,
+  "image_generation_calls_this_color_step": 0,
+  "status": "COLOR_GATE_PASS;ACTUAL_STRUCTURE_GAZE_AND_FRAMING_REVIEW_REQUIRED"
+}

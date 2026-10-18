@@ -1,0 +1,140 @@
+{
+  "frame": 6,
+  "status": "AUTHOR_ACTUAL_VISUAL_AND_COLOR_GATE_ACCEPTED_FOR_NEXT_STATE;ASTRA_SEGMENT_REVIEW_PENDING",
+  "candidate_sha256": "4e363b28a951d7adafcbbe7bb41700086dfa91de0c6fc20ba9bac0641d52af4c",
+  "actual_viewed": [
+    "native imagegen output",
+    "locked mother/raw/corrected full drawing board",
+    "eyes/jaw/neck comparison",
+    "B neutral1920x1080 registration"
+  ],
+  "gaze": "both irises initiate screen-right/up;head remains left;not yet acquired grandma",
+  "head_torso": "same pose visually;not byte-identical to mother;no code warp or transform",
+  "closed_mouth": true,
+  "jaw_neck_ear_connection": "retained",
+  "hands_elbows": "outside close framing",
+  "B_registration": {
+    "scale": 0.7,
+    "translation": [
+      590,
+      20
+    ]
+  },
+  "line_feature_alignment_diagnostic": [
+    {
+      "region": "cowlick",
+      "roi": [
+        380,
+        80,
+        580,
+        240
+      ],
+      "best_edge_alignment_shift_native_px": [
+        0,
+        0
+      ],
+      "cosine": 0.807769
+    },
+    {
+      "region": "nose",
+      "roi": [
+        250,
+        765,
+        330,
+        815
+      ],
+      "best_edge_alignment_shift_native_px": [
+        0,
+        0
+      ],
+      "cosine": 0.968781
+    },
+    {
+      "region": "mouth",
+      "roi": [
+        285,
+        825,
+        355,
+        870
+      ],
+      "best_edge_alignment_shift_native_px": [
+        0,
+        0
+      ],
+      "cosine": 0.991971
+    },
+    {
+      "region": "jaw",
+      "roi": [
+        250,
+        850,
+        500,
+        935
+      ],
+      "best_edge_alignment_shift_native_px": [
+        0,
+        0
+      ],
+      "cosine": 0.988084
+    },
+    {
+      "region": "ear",
+      "roi": [
+        590,
+        635,
+        720,
+        810
+      ],
+      "best_edge_alignment_shift_native_px": [
+        0,
+        0
+      ],
+      "cosine": 0.945533
+    },
+    {
+      "region": "collar",
+      "roi": [
+        360,
+        980,
+        740,
+        1160
+      ],
+      "best_edge_alignment_shift_native_px": [
+        0,
+        0
+      ],
+      "cosine": 0.975157
+    },
+    {
+      "region": "flower",
+      "roi": [
+        700,
+        710,
+        840,
+        820
+      ],
+      "best_edge_alignment_shift_native_px": [
+        0,
+        0
+      ],
+      "cosine": 0.898695
+    },
+    {
+      "region": "torso",
+      "roi": [
+        300,
+        1200,
+        700,
+        1400
+      ],
+      "best_edge_alignment_shift_native_px": [
+        0,
+        0
+      ],
+      "cosine": 0.979406
+    }
+  ],
+  "color_gate": "all5 material ROI mean channels within±4 of fixed corrected mother;max1.19757",
+  "native_alpha": "generation output retained exactly by local color step;not claimed equal to F000 alpha",
+  "next_state_authorized_by_prior_gate": 9
+}

@@ -1,0 +1,30 @@
+{
+  "call_id": "S24_F009_call_003",
+  "pose": "d03_F009",
+  "status": "executed_native_return_REJECTED_overshoot_retained",
+  "tool": "image_gen.imagegen",
+  "args": {
+    "prompt": "S24 F009 ONLY, the next3-frame drawing after the accepted F006 in reference2. Produce one native1024x1536 transparent RGBA hand-drawn full character close-up. Reference1 is the LOCKED CORRECTED S24 F000 mother and ALWAYS controls identity/material color. Reference2 is the immediately preceding accepted F006 and controls continuity. Reference3 is ONLY a schematic of the F009 head-turn angle: ignore its mannequin, text, head scale, framing and angular neck. Do not draw any guide.\n\nF009 ACTION: the WHOLE HEAD now STARTS turning toward screen RIGHT from its input left three-quarter pose. Turn the skull about16degrees to the right from F006: end still about14degrees LEFT of frontal, an intermediate shallow left-facing three-quarter, nose still points a little SCREEN LEFT. It must be visibly between the preceding strong left-facing view and a frontal view. Do not reach frontal or right-facing yet. Redraw the full skull, backhead volume, jaw/chin underside, ear positions, bangs, flower attachments and both pigtail ROOTS consistently with this real turn. The far screen-left ear becomes more visible and the near screen-right ear changes projection naturally. Preserve the same child's cranium and cheek volume; no face patch on a fixed skull, mirroring, 2D card rotation or skull squash.\n\nEYES lead as established by F006: awake open brown eyes, continuing a modest screen-right/up glance within the changing sockets. She has not yet acquired grandma's final offscreen target; F015 will do that. No drooping eyelids, blink, yawn or smug sleepy look. Mouth stays fully CLOSED, almost neutral with at most the tiniest onset of warmth, no broad smile, teeth or opening. Chin is not raised yet.\n\nNECK AND TORSO: upper neck planes follow the turning head, maintaining continuous under-jaw volume, ear-back/neck line and the same neck base in the rounded white collar. Do not make a long tube, a detached chin, a second neck line or floating ear. Torso, shoulders, collar base and sleeves stay gently facing screen left as in F006; the shoulders have not followed yet. Near/far BODY arms do not swap. Both upper arms continue outside the bottom crop, elbows/wrists/hands and prop grip remain out of frame. No hand gesture or new prop.\n\nHAIR: short hanging twin pigtails with red flower ties rooted to the rotating skull. Only the loose ends lag very slightly toward screen left; compact downward curves, not horizontal/fanned tails. Do not enlarge the cowlick or hair mass. Preserve full cowlick/crown within native canvas: source cowlick tip near y100, solid crown near y210–230, chin near y900–920, collar/neck base near y1080, same image scale and anchored torso as references1/2. The approved scene registration remains whole-layer0.70+(590,20); do not shift/zoom the drawing to imitate the smaller construction. Keep future top margin safe.\n\nCOLOR: match the CORRECTED reference1, never an earlier light-brown mother. Interior base colors approximately deep crown hair RGB56,42,34, near-tail55,42,33, far-tail54,40,32; warm skin254,207,170; soft golden dress254,209,58, warm-white collar and dots. Retain subtle local gradients, blush, hair linework/highlights, shadow values and alpha; these numbers are identity anchors, not permission to paint flat swatches. No brightening, bleaching, oversaturated yellow, added amber lighting, haze, background or scene shadows.\n\nReturn only one complete clean transparent native1024x1536 RGBA illustration. No scene, words, arrows, mannequin, chart or extra people.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d02_d04_segment/candidates/F006_rgba.png",
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/reference/S24_d03_F009_construction.png"
+    ],
+    "transparent_background": true
+  },
+  "inputs": [
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22"
+    },
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d02_d04_segment/candidates/F006_rgba.png",
+      "sha256": "4e363b28a951d7adafcbbe7bb41700086dfa91de0c6fc20ba9bac0641d52af4c"
+    },
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/reference/S24_d03_F009_construction.png",
+      "sha256": "4b8f6be8e2c63adf297e087278fcda7df0fbe4eeac1776762466661986e4ff86"
+    }
+  ],
+  "previous_actual_review": "qa/F006_author_review.json"
+}

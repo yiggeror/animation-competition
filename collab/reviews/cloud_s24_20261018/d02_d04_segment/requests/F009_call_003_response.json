@@ -1,0 +1,11 @@
+{
+  "call_id": "S24_F009_call_003",
+  "status": "REJECTED_ACTION_OVERSHOOT_NOT_DERIVED",
+  "raw": "originals/S24_F009_call_003_REJECTED_overshoot_raw.png",
+  "raw_sha256": "781a4a12192f41c2e827d0ce539bcbb47c01c0c4e024c1deaa6fb2f9935cad4c",
+  "tool_original_path": "/workspace/generated_images/exec-ec8c9e0b-2366-4f80-9773-6a056759612f.png",
+  "actual_view": "Complete native imagegen output inspected",
+  "reason": "Output already right-facing with screen-left near ear and screen-right far ear. F009 must remain shallow LEFT-facing;ear-side exchange belongs later crossing atF012. Do not derive F012 from this output.",
+  "next_attempt_source": "acceptedF0064e363b28+locked correctedF0000485c6fe;not this rejected output",
+  "model_version": "not returned by tool"
+}

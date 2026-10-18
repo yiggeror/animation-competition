@@ -1,0 +1,95 @@
+{
+  "frame": 6,
+  "raw": "originals/S24_F006_call_002_raw.png",
+  "master": "../d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+  "master_sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22",
+  "regions": {
+    "crown": {
+      "type": "hair",
+      "seed": [
+        500,
+        300
+      ],
+      "roi": [
+        360,
+        280,
+        730,
+        500
+      ],
+      "master_roi": [
+        360,
+        280,
+        730,
+        500
+      ]
+    },
+    "near_tail": {
+      "type": "hair",
+      "seed": [
+        800,
+        900
+      ],
+      "roi": [
+        760,
+        850,
+        875,
+        960
+      ],
+      "master_roi": [
+        760,
+        850,
+        875,
+        960
+      ]
+    },
+    "far_tail": {
+      "type": "hair",
+      "seed": [
+        300,
+        940
+      ],
+      "roi": [
+        265,
+        910,
+        355,
+        965
+      ],
+      "master_roi": [
+        265,
+        910,
+        355,
+        965
+      ]
+    },
+    "skin": {
+      "type": "skin",
+      "roi": [
+        310,
+        760,
+        480,
+        850
+      ],
+      "master_roi": [
+        310,
+        760,
+        480,
+        850
+      ]
+    },
+    "dress": {
+      "type": "dress",
+      "roi": [
+        310,
+        1210,
+        650,
+        1390
+      ],
+      "master_roi": [
+        310,
+        1210,
+        650,
+        1390
+      ]
+    }
+  }
+}

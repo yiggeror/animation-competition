@@ -1,0 +1,108 @@
+{
+  "frame": 12,
+  "raw": "originals/S24_F012_call_005_raw.png",
+  "master": "../d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+  "master_sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22",
+  "regions": {
+    "crown": {
+      "type": "hair",
+      "seed": [
+        450,
+        300
+      ],
+      "roi": [
+        310,
+        290,
+        600,
+        450
+      ],
+      "master_roi": [
+        360,
+        280,
+        730,
+        500
+      ],
+      "line_floor": 50,
+      "highlight_floor": 70,
+      "highlight_warm_red_floor": 65,
+      "highlight_chroma_delta": 20
+    },
+    "near_tail": {
+      "type": "hair",
+      "seed": [
+        220,
+        910
+      ],
+      "roi": [
+        170,
+        870,
+        285,
+        970
+      ],
+      "master_roi": [
+        760,
+        850,
+        875,
+        960
+      ],
+      "line_floor": 50,
+      "highlight_floor": 70,
+      "highlight_warm_red_floor": 65,
+      "highlight_chroma_delta": 21
+    },
+    "far_tail": {
+      "type": "hair",
+      "seed": [
+        815,
+        925
+      ],
+      "roi": [
+        760,
+        880,
+        840,
+        960
+      ],
+      "master_roi": [
+        265,
+        910,
+        355,
+        965
+      ],
+      "line_floor": 49,
+      "highlight_floor": 69,
+      "highlight_warm_red_floor": 64,
+      "highlight_chroma_delta": 21
+    },
+    "skin": {
+      "type": "skin",
+      "roi": [
+        420,
+        770,
+        580,
+        850
+      ],
+      "master_roi": [
+        310,
+        760,
+        480,
+        850
+      ]
+    },
+    "dress": {
+      "type": "dress",
+      "roi": [
+        310,
+        1210,
+        650,
+        1390
+      ],
+      "master_roi": [
+        310,
+        1210,
+        650,
+        1390
+      ]
+    }
+  },
+  "near_far_correspondence": "F012 head crossed frontal:screen-left hair tail is now near and matches locked mother screen-right near;screen-right is now far and matches locked mother screen-left far. Body arm depth unchanged."
+}

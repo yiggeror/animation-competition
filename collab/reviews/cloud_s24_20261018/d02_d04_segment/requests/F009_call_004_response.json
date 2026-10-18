@@ -1,0 +1,32 @@
+{
+  "call_id": "S24_F009_call_004",
+  "tool": "image_gen.imagegen",
+  "recorded_utc": "2026-10-18T18:09:18.039599+00:00",
+  "model_version": "not returned by tool",
+  "inputs": [
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22"
+    },
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d02_d04_segment/candidates/F006_rgba.png",
+      "sha256": "4e363b28a951d7adafcbbe7bb41700086dfa91de0c6fc20ba9bac0641d52af4c"
+    }
+  ],
+  "raw": "originals/S24_F009_call_004_raw.png",
+  "raw_sha256": "64bc0a97c51eb196963de395a862bbfa2ef3eb83b1354103769b78127e212277",
+  "tool_original_path": "/workspace/generated_images/exec-68bc1d7b-bce3-4105-9332-48af9993da88.png",
+  "raw_size": [
+    1024,
+    1536
+  ],
+  "raw_mode": "RGBA",
+  "returned_fields": [
+    "image_url",
+    "output_hint"
+  ],
+  "is_error": false,
+  "candidate": "candidates/F009_rgba.png",
+  "candidate_sha256": "fa1d4ae70a784d1694d27c674ad28cc9357ced1e6686f9fda8718a60daa65532",
+  "status": "author_accepted_candidate;Astra_segment_review_pending"
+}

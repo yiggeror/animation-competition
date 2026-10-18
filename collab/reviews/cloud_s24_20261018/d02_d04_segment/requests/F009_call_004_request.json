@@ -1,0 +1,24 @@
+{
+  "call_id": "S24_F009_call_004",
+  "pose": "d03_F009",
+  "status": "executed_native_return_author_accepted_after_actual_structure_and_color_review",
+  "tool": "image_gen.imagegen",
+  "args": {
+    "prompt": "S24 F009 CORRECT SHALLOW-LEFT HEAD TURN. Edit reference2 (accepted F006) into the FIRST head-turn inbetween, keeping reference1 as the locked corrected identity/color mother. These are the only approved image sources. One transparent1024x1536 RGBA illustration.\n\nCRITICAL ORIENTATION: she is STILL FACING SCREEN LEFT at the end of this drawing. Her nose must point gently LEFT, not right. Her LARGE NEAR EAR must remain ON THE RIGHT SIDE OF THE PICTURE, as in the inputs. The small FAR ear on the LEFT may just begin to appear. DO NOT swap ear sides, do not mirror, do not produce a right-facing three-quarter head. The later F012 drawing will cross frontal; this F009 has NOT crossed frontal yet.\n\nRotate the whole skull about16degrees toward camera from the current stronger LEFT-facing F006 to a shallow LEFT-facing angle, around14degrees LEFT of straight-on. Result resembles a nearly frontal child with a clear small LEFT-pointing nose and RIGHT near ear. It is only halfway from the present strong left three-quarter to frontal. Redraw cranium/backhead, jaw/chin, ear placement, bangs, both flower ROOTS and upper neck planes coherently. Do not just slide the facial features over a fixed head. Nose/face must not point screen right; if the LEFT ear becomes the dominant near ear, that is the wrong view.\n\nKeep the already initiated awake right/up eye glance from F006 within the changing sockets; no blink, droop, sleepy smug look or full look-at-grandma yet. Closed neutral mouth, only a barely starting softness; no visible mouth opening or grin. Keep chin level, not raised. Neck has normal child volume under the jaw and joins the unchanged rounded collar without gap or long rigid tube.\n\nTorso/shoulders/sleeves stay exactly the F006 left-oriented pose. Preserve body near/far arms, all dress dots and collar base. Both arms exit below frame; no visible elbows, wrists, hands or prop. Head turns while shoulders wait. Hair ties move with skull, two SHORT pigtails still hang mostly down, only a tiny leftward loose-end lag. No big horizontal fan, huge cowlick or new hair mass.\n\nKeep native framing and scale: cowlick tip about y100, solid crown about y210, chin about y900–920, collar base about y1080; entire cowlick visible. Fixed scene placement is .70+(590,20), no zoom/recentering. Match reference1 CORRECTED dark-brown hair and warm peach skin/soft golden dress exactly, preserving subtle gradient/ink/highlight detail. Avoid lightening hair, bleaching skin or shifting yellow. Do not use any older shallow-color original, background, scene light or haze. No text, guide or mannequin. Output one complete native transparent1024x1536 drawing.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d02_d04_segment/candidates/F006_rgba.png"
+    ],
+    "transparent_background": true
+  },
+  "inputs": [
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22"
+    },
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d02_d04_segment/candidates/F006_rgba.png",
+      "sha256": "4e363b28a951d7adafcbbe7bb41700086dfa91de0c6fc20ba9bac0641d52af4c"
+    }
+  ]
+}

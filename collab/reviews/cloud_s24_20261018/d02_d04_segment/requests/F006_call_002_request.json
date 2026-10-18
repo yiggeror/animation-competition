@@ -1,0 +1,21 @@
+{
+  "call_id": "S24_F006_call_002",
+  "pose": "d02_F006",
+  "status": "executed_native_return_author_accepted_after_actual_structure_and_color_review",
+  "tool": "image_gen.imagegen",
+  "authorization": "Astra locked corrected mother0485c6fe in6cecf474 and authorized sequential006/009/012 after per-state actual inspection",
+  "args": {
+    "prompt": "S24 F006 ONLY: make the next native1024x1536 transparent RGBA drawing by a MINIMAL EYE-ONLY EDIT of the supplied APPROVED CORRECTED MOTHER. This supplied image is the sole authoritative S24 mother, SHA2560485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22. Preserve its corrected deep brown hair, peach skin, soft golden yellow dress, white collar, local gradients, original linework and transparency. Do not recolor, brighten or add lighting. Do not use any older light-brown mother.\n\nSTORY F006 (held3frames): her eyes INITIATE a glance toward screen RIGHT and slightly UP, while her whole head and torso still face screen LEFT exactly as the approved starting drawing. Move both brown irises/pupils coherently a modest amount within the SAME eye whites, about8–12native pixels to screen right and6–10up relative to the input, just the first eye-led moment. She has NOT yet turned her head and has NOT yet acquired grandma's final offscreen gaze. Keep both eyes naturally awake/open; no eyelid droop, blink, sleepy expression, squint or startled stare. Closed mouth remains the same relaxed neutral line, no proud smile or raised chin yet.\n\nKeep EVERY other feature at its existing native pixel location: skull/crown/cowlick silhouette, full jaw/chin, ears, nose, eyebrows, bangs, hair roots, red flower ties, two short hanging pigtails, neck planes, collar, chest, shoulders, sleeves and all dress dots. No head/neck/ear/body movement, resizing, recentering, mirroring, zoom, local warp, face-patch displacement, new hand/prop or extension of hair. Upper arms continue out of the bottom; hands/elbows remain out of the close shot. The whole native image will later be placed uniformly at0.70+(590,20), so native framing must remain unchanged. Keep the complete cowlick/crown visible with exactly the starting margins.\n\nReturn one single complete1024x1536 native transparent RGBA illustration. This is a local eye-gaze redraw on the approved drawing, not a new pose or a new character. No background, text, arrows, guides, contact sheet or scene light.",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png"
+    ],
+    "transparent_background": true
+  },
+  "inputs": [
+    {
+      "path": "/workspace/animation-competition-s24/collab/reviews/cloud_s24_20261018/d01_hair_color_fix/candidates/F000_hair_corrected_rgba.png",
+      "sha256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22",
+      "role": "corrected_mother_and_immediately_preceding_approved_state"
+    }
+  ]
+}
