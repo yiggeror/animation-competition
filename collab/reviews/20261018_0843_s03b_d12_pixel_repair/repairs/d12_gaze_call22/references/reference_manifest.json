@@ -1,0 +1,73 @@
+{
+  "source_bbox_xyxy": [
+    608,
+    0,
+    1120,
+    512
+  ],
+  "native_crop_size": [
+    512,
+    512
+  ],
+  "status": "prepared; no generation yet; awaiting parent gate",
+  "source_images": {
+    "d11": "astra_s03b_painted_pilot_20261018/outputs/chew/originals/d11_f25_call03.png",
+    "d13": "astra_s03b_painted_pilot_20261018/outputs/chew/originals/d13_f32_call05.png",
+    "d12_locked": "astra_s03b_painted_pilot_20261018/repairs/d12_local_call21/composites/S03b_d12_f28_call21_composited_candidate.png"
+  },
+  "proposed_face_only_polygon_global": [
+    [
+      695,
+      211
+    ],
+    [
+      758,
+      198
+    ],
+    [
+      850,
+      220
+    ],
+    [
+      886,
+      272
+    ],
+    [
+      907,
+      321
+    ],
+    [
+      888,
+      372
+    ],
+    [
+      856,
+      406
+    ],
+    [
+      796,
+      420
+    ],
+    [
+      740,
+      406
+    ],
+    [
+      703,
+      383
+    ],
+    [
+      681,
+      352
+    ],
+    [
+      681,
+      306
+    ],
+    [
+      686,
+      266
+    ]
+  ],
+  "note": "Head silhouette, hair, ear, neck and external body remain locked. Face-only edit can provide perceptual start of small right yaw but does not assert literal 3-degree geometric head rotation."
+}

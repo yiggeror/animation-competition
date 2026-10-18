@@ -1,0 +1,42 @@
+{
+  "parent_candidate": "composites/S03b_d12_f28_call21_composited_candidate.png",
+  "new_candidate": "seams_v3/S03b_d12_f28_call21_seams_v3_candidate.png",
+  "same_generated_source": "/workspace/scratch/f060b5601755/astra_s03b_painted_pilot_20261018/repairs/d12_local_call21/originals/S03b_d12_call21_local_original.png",
+  "additional_image_calls": 0,
+  "released_old_protection_pixels": 685,
+  "released_regions_xyxy": [
+    [
+      449,
+      640,
+      469,
+      659
+    ],
+    [
+      489,
+      656,
+      501,
+      671
+    ],
+    [
+      554,
+      644,
+      567,
+      675
+    ],
+    [
+      486,
+      665,
+      563,
+      670
+    ]
+  ],
+  "left_corner_rule": "Reviewer-approved narrow palm-root boundary rectangle released; main palm/finger/fruit core stays protected.",
+  "new_protect_pixels": 16467,
+  "old_protect_changed_pixels": 685,
+  "core_protect_changed_pixels": 0,
+  "outside_REPAIR_v3_changed_pixels": 0,
+  "rgb_feather_pixels": 516,
+  "feather_rule": "Opaque blue fabric within +/-5px of diagonal (548,623) to (594,651), RGB blend from source to same call21 layer; expanded REPAIR records this corridor. Alpha, black outlines, white flowers, and skin not blended.",
+  "feather_alpha_changed_pixels": 0,
+  "sha256": "e860f258d35358785aab76f0a4a7770a8a42335b6a82bf810b5da6b1d3ec1147"
+}

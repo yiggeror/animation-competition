@@ -1,0 +1,28 @@
+{
+  "project_call": 22,
+  "repair_call": 8,
+  "mode": "builtin image_gen; single gated call",
+  "authorized_scope": "Only eye apertures and upper lids within original d11 head; parent gate at 08:41 UTC. Head silhouette neck and body locked.",
+  "started_utc": "2026-10-18T08:41:14.020472+00:00",
+  "input1": "references/d11_head_native_512.png",
+  "input2": "references/d13_head_native_512.png",
+  "prompt_file": "prompt_prepared.txt",
+  "status": "complete; local candidate only; ready for coordinator review",
+  "generated_original": "generated_images/exec-e4236beb-b960-4866-aafa-1fef67aec0ed.png",
+  "generated_raw": "astra_s03b_painted_pilot_20261018/repairs/d12_gaze_call22/outputs/call22_generated_raw.png",
+  "generated_size": [
+    1254,
+    1254
+  ],
+  "output_head_native512": "astra_s03b_painted_pilot_20261018/repairs/d12_gaze_call22/outputs/call22_head_native512.png",
+  "completed_utc": "2026-10-18T08:44:09.984497+00:00",
+  "generations_this_task": 1,
+  "project_total_generations": 22,
+  "initial_generations": 14,
+  "repair_generations": 8,
+  "final_candidate": "composites/S03b_d12_f28_call22_eyes_on_seams_v3.png",
+  "final_mask": "composites/S03b_d12_call22_eyes_mask.png",
+  "final_patch_rgba": "composites/S03b_d12_call22_eyes_patch_rgba.png",
+  "pixel_checks": "composites/pixel_lock_checks.json",
+  "qa": "QA_REPORT.md"
+}
