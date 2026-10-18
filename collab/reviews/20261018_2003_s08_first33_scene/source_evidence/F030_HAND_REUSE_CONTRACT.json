@@ -1,0 +1,104 @@
+{
+  "status": "LOCKED_DUAL_STATIC_SHAPE_AND_MATERIAL_REVIEW_2026-10-18T20:18Z",
+  "source": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_FINAL_LOCKED/S08_F030_grandma_match_box_RGBA.png",
+  "source_sha256": "ef53ba49d805d2a9eb2cf934f62b2098a07e924250fcbbd5070cb33fcbba6bc8",
+  "source027_sha256": "2dc0ee2bc06b4b872e0f79cbf4c1bd19b2ccaa160cba9b5feefd45f2a8e268ac",
+  "raw_call": 15,
+  "actual_global_valid_calls": 15,
+  "actual_preserved_raws": 15,
+  "actual_tool_submissions": 16,
+  "pre_generation_argument_validation_failures": 1,
+  "quality_rejected_raw_calls": [
+    12
+  ],
+  "static_exposures_passed": 13,
+  "static_unique_images_passed": 12,
+  "formal_exposures": 41,
+  "formal_unique_images_planned": 40,
+  "remaining_unique_images_planned": 28,
+  "near_match_head": [
+    1148,
+    717
+  ],
+  "near_visible_wood_exit": [
+    1116.881786,
+    751.418843
+  ],
+  "visible_segment_px": 46.400431,
+  "near_transform_from027": {
+    "rotation_degrees_clockwise": 5,
+    "scale": 1,
+    "head_anchor_source": [
+      1082,
+      797
+    ],
+    "head_anchor_target": [
+      1148,
+      717
+    ]
+  },
+  "near_actual_wrist_construction_center": [
+    1018.14697,
+    789.9602
+  ],
+  "actual_near_elbow_proxy": [
+    858,
+    886
+  ],
+  "far_hand_jade_true_alpha0_seat_unchanged_from027": true,
+  "far_guard_outer_alpha0_1006_released_to_allow_front_near_hand": true,
+  "far_original_183_proximal_collar_not_restored": true,
+  "far_knob_low": [
+    1233.953205,
+    766.894374
+  ],
+  "actual_far_seat_center": [
+    1234.039049512,
+    766.534976279
+  ],
+  "fixed_table_box_center": [
+    1100,
+    960
+  ],
+  "group_assets": [
+    {
+      "name": "F030_true_near_hand_match",
+      "footprint_pixels": 7843,
+      "alpha0_inside_footprint": 0,
+      "footprint": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_FINAL_LOCKED/F030_true_near_hand_match_footprint.png",
+      "rgba": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_FINAL_LOCKED/F030_true_near_hand_match_RGBA.png"
+    },
+    {
+      "name": "F030_near_distal_hard_guard",
+      "footprint_pixels": 6370,
+      "alpha0_inside_footprint": 0,
+      "footprint": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_FINAL_LOCKED/F030_near_distal_hard_guard_footprint.png",
+      "rgba": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_FINAL_LOCKED/F030_near_distal_hard_guard_RGBA.png"
+    },
+    {
+      "name": "F030_whole_closed_far_hand_jade_AND_TRANSPARENT_SEAT",
+      "footprint_pixels": 17750,
+      "alpha0_inside_footprint": 11089,
+      "footprint": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_FINAL_LOCKED/F030_whole_closed_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+      "rgba": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_FINAL_LOCKED/F030_whole_closed_far_hand_jade_AND_TRANSPARENT_SEAT_RGBA.png"
+    },
+    {
+      "name": "F030_fixed_table_box",
+      "footprint_pixels": 1764,
+      "alpha0_inside_footprint": 99,
+      "footprint": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_FINAL_LOCKED/F030_fixed_table_box_footprint.png",
+      "rgba": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F030_FINAL_LOCKED/F030_fixed_table_box_RGBA.png"
+    }
+  ],
+  "near_hand_future_transition": "Reuse whole hand with necessary proximal collar released; keep distal true fingers and match fixed. Whole near footprint includes naturally reconnected proximal wrist from accepted030, not all unchanged from027. Do not preserve obsolete crop-AA cut.",
+  "shape_provenance": "One whole native raw uniform registration. Authorized same-raw near forearm axial projection .7773692244593332 and +1.812861322237164 degrees with transverse scale1, blended outside elbow cap; actual elbow858,886 retained. Real cloth/skin donors and explicit semantic masks only. No whole character transform.",
+  "color_provenance": "Four approved soft material corrections; alpha and true props/hands exact. Near-arm true skin unchanged;402 blue pixels inside broad extraction alpha corrected as blue cloth. Natural lower-bun shadow retained, not claimed all materials globally within\u00b14.",
+  "no_baked_scene_layers": [
+    "flame",
+    "light cast",
+    "lamp",
+    "lever",
+    "table"
+  ],
+  "scope": "Character-local static approved. Isolated6f exposure and actual Canvas lamp/table/fire gates separate."
+}

@@ -1,0 +1,1 @@
+Preparation completed after the unique F030 final lock and author SEALED layers. See README.md and STAGE.json. Frames000–032; first rejected033. Previous first30 actual dual-pass; new030 actual Canvas pending.
