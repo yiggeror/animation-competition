@@ -1,6 +1,6 @@
-# S24 · 024清边与分区色门已过，待Astra终锁
+# S24 · 九态与完整60帧人物层已交，待Astra双审尾态
 
-独占分支`cloud/s24-reference-20261018`，当前唯一取图见[024最终清边＋分区色门包](d07_final_cleanup_color/README.md)：以4a203主体/13f转态双审源为基，零生成清右旧臂悬线及左空隙残边；冠发/双尾及脸耳颈各自受光/暗面9区对锁母归色，最大均值通道差3.87796。表情、眉眼腮红、发线高光、真荷叶/领片及衣黄白点保护，色修alpha0，收口仅左走廊456个alpha变化。灰深底019×5→024×8实际编码/解码及保护域齐，待Astra终锁，不提前032/040。旧[4a203接回包](d07_F024_zero_call_repair/README.md)保留原色门未过历史；015/019与各原件/prompt不改。未动共享代码、留言、EDL、音频或ready。
+当前取图与60帧曝光见[末两态及完整人物层包](d08_d09_final_segment/README.md)。024已按44137d74终锁，原文件未动；032/040各一张原生输出并经10区材质归色与作者实看。完整九态、灰/深底60帧1080p/24fps/2.5秒片及解码齐。这是人物层，尚未正式Canvas接景，不报整镜ready。
 
 x24原始身份图为`collab/refs/anim_24_xiaoman_smug.png`，处理资产`assets/chars/x24_smug.png`也已实看。两者只取身份和末表情倾向，旧空手合拢与整图翻转不作新动作依据。
 
@@ -30,6 +30,4 @@ x24原始身份图为`collab/refs/anim_24_xiaoman_smug.png`，处理资产`asset
 
 **颜色更正已纳入：**最新Opus退回S13累积色漂，动作/回头节奏认可，整镜待修色；本参考里的F087/F094只借整头结构。S24颜色固定身份与x13 F000，不能顺链继承头发变浅、皮肤变白、裙色变艳。F000色片只是同语义内区统计，不能把全部明暗强压成平涂；[源ROI和统计方法](provenance/F000_semantic_color_reference.json)明确。未并发改S13颜色。
 
-[来源与固定git blob](provenance/source_manifest.json)、[原参考授权/颜色更正](provenance/authorization_and_scope.md)、[参考冻结及首张授权](provenance/astra_reference_freeze_and_first_F000_gate.md)、[构造核验](qa/construction_validation.json)齐全。参考图和旧QA保留各阶段快照；历史[提示草案](prompts_NOT_EXECUTED.json)未直接执行，真实完整prompt在各包`requests/`。[当前账本](provenance/generation_ledger.json)累计10次尝试/9原件/1图像工具失败；新增零调用024结构候选，当前候选态7，Astra已锁4态。015/019协调认可、独审短签待；024两份raw原拒收原因仍保留，现只作修复基体/袖供体，最终结构与色门待审。场景/全片渲染0；中性人物层曝光不冒称Canvas接景。`build_reference.py`保留已有调用账本。
-
-下一步：Astra审本轮最终44137d74及灰深底13f曝光，终锁024前不续032/040；此轮无图像调用，不宣称图像端恢复。
+[来源与固定git blob](provenance/source_manifest.json)、[原参考授权](provenance/authorization_and_scope.md)、[完整调用账本](provenance/generation_ledger.json)保留。累计12次请求/11张原件/1次工具失败，候选9态；本轮032/040新增2成功调用。旧阶段材料与失败记录未改。独占分支`cloud/s24-reference-20261018`，仅本目录交付。下一步等待Astra锁定末态；并准备本镜独立drawn模块和正式Canvas入口资源映射，最终仍需60帧实际场景片。
