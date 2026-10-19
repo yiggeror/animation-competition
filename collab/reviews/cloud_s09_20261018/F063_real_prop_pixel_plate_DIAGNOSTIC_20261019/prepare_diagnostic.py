@@ -23,7 +23,7 @@ Image.fromarray(button.astype('uint8')*255).save(R/'masks/SOURCE_FE70_visible_sl
 sourceprop=np.where(keep[:,:,None],mother,0).astype('uint8');Image.fromarray(sourceprop).save(R/'layers/FE70_real_visible_prop_ONLY_original_coordinates.png')
 iv=M.T;it=-iv@t;prop=Image.fromarray(sourceprop).transform(size,Image.Transform.AFFINE,(*iv[0],it[0],*iv[1],it[1]),Image.Resampling.BICUBIC,fillcolor=0);pa=np.array(prop);prop.save(R/'layers/FE70_whole_visible_prop_SINGLE_RIGID_transform.png');pm=pa[:,:,3]>0
 head=mask(S/'F044_actual_head_neck_collar_GUARD.png')&(mother[:,:,3]>0);ruffle=mask(S/'F044_actual_near_whole_ruffle_GUARD.png')&(mother[:,:,3]>0);skirt=mask(S/'F044_stable_skirt_GUARD.png')&(mother[:,:,3]>0);frozen=head|ruffle|skirt
-oldnear=mask(AOLD/'F044_complete_old_near_arm_actual_mask.png');oldunit=mask(AOLD/'F044_old_rigid_unit_actual_mask.png');oldfar=mask(AOLD/'F044_old_far_arm_actual_visible_mask.png')|mask(AOLD/'F044_old_fixed_receiver_actual_mask.png');oldhuman=oldnear|oldfar
+oldnear=mask(AOLD/'F044_complete_old_near_arm_actual_mask.png');oldunit=mask(AOLD/'F044_old_rigid_unit_actual_mask.png');oldfar=mask(AOLD/'F044_old_far_arm_actual_visible_mask.png');oldhuman=oldnear|oldfar
 # Mother body/cloth outside all old moving material remains actual FE70, no donor/coded navy/yellow fill.
 body=mother.copy();clear=binary_dilation(oldnear|oldunit|oldfar,iterations=2)&~frozen;body[clear]=0;Image.fromarray(body).save(R/'layers/FE70_body_original_pixels_old_moving_material_removed.png')
 receiver=Image.open(P/'layers/F063_actual_whole_receiver_hand_REPOSITIONED_SOFT_NOT_FROZEN.png').convert('RGBA');ha=np.array(receiver)
