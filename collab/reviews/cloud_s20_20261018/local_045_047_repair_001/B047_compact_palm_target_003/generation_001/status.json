@@ -1,0 +1,30 @@
+{
+  "status": "ONE_RAW_COMPACT_PALM_STRUCTURAL_SELF_CHECK_PASS_ASTRA_FINAL_GATE_PENDING",
+  "new_image_calls": 1,
+  "new_raws": 1,
+  "retries": 0,
+  "actual_raw_sha256": "4c62c4dcfe06fcf80d58b59af53ccfe3d1295960dcccf2613861c3c7b3c18b73",
+  "approved_exact_two_inputs": "0610bf767b9cd7c555105c8780467b97010bcb02",
+  "postprocess": "whole uniform inverse only; no extra translation, rotation, per-finger warp, or rod correction",
+  "visual_self_check": "natural compact five-finger hand, opposed upper-rod pads at fixed clamp, curled remaining three, readable air against original lower axis and finite-tail marker, continuous wrist and annular jade",
+  "wrist_cross_section_check": {
+    "master_x1013_target_skin_y": [
+      354,
+      393
+    ],
+    "actual_skin_y": [
+      354,
+      397
+    ],
+    "master_x1018_target_skin_y": [
+      354,
+      397
+    ]
+  },
+  "original_CB_axis_and_tail_overlay": "fixed_axis_check_overlay_not_art.png",
+  "raw_rod_tail_contour_for_Astra_check": "Native returned tail is a few master pixels shorter than original x952; original-axis/finite-tail overlay supplied, no rod was moved or lengthened to manufacture air.",
+  "adopted": false,
+  "no_048_053_054_propagation": true,
+  "frozen_A_045_054_child_untouched": true,
+  "scoped_black_domain_RGBA_changes": 0
+}
