@@ -1,0 +1,80 @@
+{
+  "reviewed_utc": "2026-10-19T13:13:00Z",
+  "source_commit": "ddb509aa7e8283134e76980a638c81155578f520",
+  "actual_delivery_commit": "5c9833e68f267300a097fdc02f49f6b4c0285d3c",
+  "actual_path": "collab/reviews/cloud_s29_drawn_20261019/S06_BROWSER86_ddb509aa_20261019/S06.mp4",
+  "sha256": "f19c654be13b3d8ef97fefb135ef6522a577466eb30e7ed5cb30d673524bc3ba",
+  "independent_probe": {
+    "frames": 86,
+    "fps": "24/1",
+    "width": 1920,
+    "height": 1080,
+    "duration": 3.583333,
+    "audio_streams": 0
+  },
+  "independent_review": {
+    "all86_ordered_decoded_frames_seen": true,
+    "contact_before_after": [
+      [
+        10,
+        11
+      ],
+      [
+        29,
+        30
+      ],
+      [
+        45,
+        46
+      ],
+      [
+        69,
+        70
+      ]
+    ],
+    "phone_glances": [
+      [
+        34,
+        39
+      ],
+      [
+        78,
+        85
+      ]
+    ],
+    "cut_to_S07_commit": "4403cb1058bb35f4e032e3d1682b3f6226009547",
+    "judgment": "PASS: two unplug/replug cycles, continuous whole reaching arm and grip, cable and power strip, black phone screen and two phone glances are readable. Close-to-wide S06 085 to S07 000 omits release and return of the reaching hand; accepted as cut ellipsis by Astra, explicitly left to Opus final editing review."
+  },
+  "new_audio_events": [
+    {
+      "frame": 11,
+      "seconds": 0.4583333333333333,
+      "type": "unplug"
+    },
+    {
+      "frame": 30,
+      "seconds": 1.25,
+      "type": "insert"
+    },
+    {
+      "frame": 46,
+      "seconds": 1.9166666666666667,
+      "type": "unplug"
+    },
+    {
+      "frame": 70,
+      "seconds": 2.9166666666666665,
+      "type": "insert"
+    }
+  ],
+  "runtime": {
+    "asset_responses": "7 character PNGs plus background all 200",
+    "captured_responses_all200": 13,
+    "pageerrors": 0,
+    "requestfailed": 0,
+    "exit": 0,
+    "console_404": "URL not captured; cause unverified, not described as favicon.",
+    "node_warning": "MaxListenersExceededWarning retained; full render completed."
+  },
+  "boundary": "Visual inspection uses the independently decoded ordered frames and contact detail images, not a claim of subjective real-time playback. Silent delivery; new audio and EDL integration are not yet verified."
+}
