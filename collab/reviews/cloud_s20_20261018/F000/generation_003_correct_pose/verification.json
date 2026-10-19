@@ -1,0 +1,36 @@
+{
+  "verified_utc": "2026-10-19T02:13:54.199887+00:00",
+  "approved_gate_commit": "3f1cb1e644f87c689e1931dcf69a5bea76b6a952",
+  "raw_SHA256": "6eb8ed6145da4cf9a053993c383ae66f80b474d1a4f8b131a89cfd9e3fd6b204",
+  "request_archive_SHA256": "f10d3519bc3ca4b23b47ab79ae5d982daa2f794b8fd9fe4ec6b47670dd5463b1",
+  "tool_args_JSON_SHA256": "a7256e8c0f94b47be638a6d560c03b65b1440197b5c083cc578885caf0490710",
+  "composite_candidate_SHA256": "8d628e5fa1d5c8d69aaea749c37cd2b9b1fe14b971d6b38f8efa4a37f8add433",
+  "raw_size": [
+    1672,
+    941
+  ],
+  "new_model_calls": 1,
+  "new_raw_outputs": 1,
+  "in_flight": 0,
+  "retries": 0,
+  "cumulative_calls": 3,
+  "raw_topology_size_author_check": "OBSERVED_PASS",
+  "image_acceptance": "PENDING_ASTRA_WRIST_EDGE_REVIEW",
+  "checks": {
+    "full_tool_return_equals_original_and_archived_raw": true,
+    "frozen_four_input_snapshots_and_prompt_exact": true,
+    "request_archive_and_tool_args_hashes_valid": true,
+    "raw_dimensions_exact_no_resize_padding_or_crop": true,
+    "composite_is_only_frozen_white_RGBA_selection": true,
+    "outside_white_original_pixels_exact": true,
+    "palms_bracelet_front_rods_child_head_neck_waist_legs_unchanged": true,
+    "actual_shoulders_elbows_wrists_visually_checked_before_and_after_composite": true,
+    "remaining_wrist_edge_points_disclosed_not_hidden": true,
+    "one_authorized_call_one_raw_zero_retry_zero_inflight": true,
+    "all_previous_tracked_assets_and_historical_checksums_unchanged": true,
+    "original_216_frame_contract_unchanged": true,
+    "new_files_only_in_exclusive_call003_review_directory": true,
+    "neck_alpha_cleanup_and_later_poses_not_started": true
+  },
+  "production_ready": false
+}

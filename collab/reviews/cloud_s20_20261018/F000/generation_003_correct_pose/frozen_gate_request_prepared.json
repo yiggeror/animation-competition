@@ -1,0 +1,28 @@
+{
+  "tool": "image_gen.imagegen",
+  "submitted": false,
+  "attempts_this_round": 0,
+  "reserved_for_execution": false,
+  "requires_Astra_final_four_input_gate": true,
+  "args": {
+    "prompt": "把第一张已有正确臂链自然完稿。仅将奶奶双臂及肩袖处的平色施工体量转成与第一张其余部位一致的二维手绘线条、蓝白花布、肤肉与自然体积，保持这张已有的正确姿态、人物身份和抓持关系。\n\n第一张是唯一完整姿态底，画布1672×941。第二张只是第一张肩到双掌的同视角直接4倍放大，没有新增姿态。第三张是正确双臂透衣体量，只说明被遮挡的远臂如何连续接到肩和肘；成图按第一张的正常遮挡画，不画透衣、隐藏臂、虚线或施工标记。第四张是唯一白域mask：白色可完稿，黑色必须保持；没有另一套相反黑白语义。\n\n近L从画面右侧近肩与近短袖接上臂，经近肘，前臂斜向左上接已有高位带绿色玉镯的掌，仍握两鹤签。远R从画面左侧远肩后方接出，上臂和肘藏在躯干前衣层后，前臂伸到已有低位裸腕掌，仍握两龟签。沿第一张的完整臂链完成肩袖切入、上臂厚度、肘弯与腕掌过渡，衣肉相接自然，去掉平块和接片台阶。\n\n两只持杆掌、握指、唯一玉镯、四根前杆的原位置和接触完全保持；两根低位龟签的正确末端藏在掌内，不另添外露尾，不折杆或分叉。全图只有奶奶与小满各一人、现有四杆。小满两掌空起且零接触，整个人和原尺寸不改；奶奶头脸颈、腰腿脚不改，不换掌、不换镯、不镜像。原头身及相对站位保持，不作新的比例或机位注册。\n\n输出严格为1672×941透明人物层，不裁切、不补边、不缩放任何角色，不改构图或镜头。只完成白域内已有正确双臂，保持中性固有色；不画场景、灯光、影子、偶、文字、重复手臂或后续姿态。颈侧色彩和主体外孤立alpha清理留待后续同raw检查，本次不处理。\n",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F000/arm_correction_002_no_oldarms/inputs/01_F000_only_correct_pose.png",
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F000/arm_correction_002_no_oldarms/inputs/02_target_shoulders_to_palms_4x.png",
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F000/arm_correction_002_no_oldarms/inputs/03_correct_arm_xray.png",
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F000/arm_correction_002_no_oldarms/inputs/04_edit_white.png"
+    ]
+  },
+  "input_count": 4,
+  "no_last_conversation_images": true,
+  "excluded_reference_categories": [
+    "call001 full raw",
+    "call002 full raw",
+    "old-arm comparison images",
+    "inverse protection image",
+    "identity/material crops"
+  ],
+  "single_mask_reference_semantics": "fourth image: white editable, black protected",
+  "service_mask_limit": "Tool exposes reference images, not a hard-mask parameter; local protection still required after any authorized return."
+}

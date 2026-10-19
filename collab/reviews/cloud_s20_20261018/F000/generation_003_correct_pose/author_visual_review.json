@@ -1,0 +1,76 @@
+{
+  "reviewed_utc": "2026-10-19T02:11:46.832982+00:00",
+  "approved_gate_commit": "3f1cb1e644f87c689e1931dcf69a5bea76b6a952",
+  "raw_SHA256": "6eb8ed6145da4cf9a053993c383ae66f80b474d1a4f8b131a89cfd9e3fd6b204",
+  "candidate_SHA256": "8d628e5fa1d5c8d69aaea749c37cd2b9b1fe14b971d6b38f8efa4a37f8add433",
+  "request_archive_SHA256": "f10d3519bc3ca4b23b47ab79ae5d982daa2f794b8fd9fe4ec6b47670dd5463b1",
+  "actual_size": [
+    1672,
+    941
+  ],
+  "raw_topology_result": "AUTHOR_OBSERVED_CORRECT_NEAR_L_HIGH_PALM_FAR_R_LOW_PALM",
+  "composite_result": "CANDIDATE_PENDING_ASTRA_WRIST_EDGE_REVIEW",
+  "production_ready": false,
+  "actual_images_inspected": [
+    "qa/raw_shoulders_to_palms_3x_QA.png",
+    "qa/raw_near_L_high_wrist_3x_QA.png",
+    "qa/raw_far_R_low_wrist_3x_QA.png",
+    "qa/target_raw_composite_comparison.png",
+    "qa/composite_near_L_wrist_jade_4x_QA.png",
+    "qa/composite_near_L_sleeve_elbow_4x_QA.png",
+    "qa/composite_far_R_wrist_seam_4x_QA.png",
+    "qa/composite_rod_contacts_4x_QA.png",
+    "qa/wrist_outer_edge_source_raw_composite_QA.png",
+    "qa/composite_full_gray_QA.png"
+  ],
+  "checks": [
+    {
+      "item": "近L完整连接",
+      "assessment": "近侧肩线与近短袖接出上臂，肘轮廓连续回弯，前臂斜向左上接高位带镯掌，未再接低掌。"
+    },
+    {
+      "item": "远R遮挡连接",
+      "assessment": "远肩短袖在躯干后；上臂/肘按已审target被前衣层遮住，低位裸腕前臂由躯干左缘接出。只能核可见连接与遮挡一致，不把隐藏关节称作已测3D骨点。"
+    },
+    {
+      "item": "袖口/肘腕实际图形",
+      "assessment": "袖口有布边/厚度，近肘轮廓和肤肉阴影连续，低腕从掌到前臂无空洞；没有再保留call001完整错误臂链或增添重复整臂。"
+    },
+    {
+      "item": "尺寸与变换",
+      "assessment": "PNG IHDR及Pillow均1672×941；未缩放、补列或裁切，原件保持原字节。"
+    },
+    {
+      "item": "显式白域回贴",
+      "assessment": "仅39395白域像素从call003 raw取RGBA，其余用call001原字节；38901像素实际改变，保护区零差。此项不等同成品视觉通过。"
+    },
+    {
+      "item": "握持和孩子",
+      "assessment": "候选中双掌/握指/单镯/四前杆来自call001原像素，孩子整人和尺寸不改；实际手杆近景已看，低位尾按target藏掌，不新增可见错尾。"
+    }
+  ],
+  "remaining_review_points": [
+    {
+      "item": "镯下腕外小尖角",
+      "evidence": "qa/wrist_outer_edge_source_raw_composite_QA.png",
+      "assessment": "冻结掌缘与本次前臂接回处有小角，原件/回贴并排保留供Astra判断；本轮不扩大白域或改锁定掌。"
+    },
+    {
+      "item": "腕外极浅细尾",
+      "evidence": "qa/wrist_outer_edge_source_raw_composite_QA.png",
+      "assessment": "call003原件已带低alpha零碎细尾；示例(996,388)alpha4、(998,390)alpha3。未清理，不把它隐去后声称本轮已完成alpha门。"
+    },
+    {
+      "item": "颈色/孤立alpha/接景",
+      "assessment": "颈色、主体外孤立alpha以及CAM20/偶端接景仍未核/未处理；后态未开。"
+    }
+  ],
+  "new_model_calls": 1,
+  "new_raw_outputs": 1,
+  "cumulative_model_calls": 3,
+  "cumulative_raws": 3,
+  "in_flight": 0,
+  "retries": 0,
+  "later_pose_calls": 0,
+  "neck_or_alpha_cleanup_applied": false
+}
