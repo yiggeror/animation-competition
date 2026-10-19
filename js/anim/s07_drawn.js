@@ -1,6 +1,7 @@
 // S07 complete108 drawn candidate. First57 camera/person/contact choreography preserved.
 // F057+ eleven locked whole drawings, one fixed registration; F100+ embedded original physical lamp replaces tableLamp.
 // Actual whole-scene rendering still required before ready.
+import { openingPowerStripLayer, s07PhonePort } from './opening_power_strip.js';
 import { renderPaint } from '/js/paint/paintshot.js';
 import { COIL, COILC } from '/js/paint/shots/s01.js';
 import { stool, EASE } from '/js/anim/kit.js';
@@ -42,7 +43,7 @@ export function authoredLayers(f){
  if(f<16||f>=39){
    // F000..008 include their own phone. In supine states the separately locked phone stays behind body.
    if(f>=39)layers.push({img:PHONE,x:430,y:533,sc:.16});
-   layers.push({img:pick(XIAOMAN,f),x:f<39?430:339.7325,y:f<39?533:512.485,sc:f<39?.16:.2475,contact:{a:.4,blur:3,sy:1,dx:-2,dy:3}});
+   layers.push({img:pick(XIAOMAN,f),x:f<39?430:327.8295532646048,y:f<39?533:506.45498281786945,sc:f<39?.16:.23312714776632304,contact:{a:.4,blur:3,sy:1,dx:-2,dy:3}});
  }
  if(f<39)layers.push({img:pick(GRANDMA,f),x:730,y:375,sc:.2734375,contact:{a:.45,blur:4,sy:-.07,skew:.5}});
  if(f>=57){
@@ -59,7 +60,7 @@ export function authoredLayers(f){
 }
 const shot={bg:'bg_01_room_wide',size:[1672,941],
  layers:async(t)=>{const f=Math.floor(t*24+1e-6);return [
- {img:COILC,x:COIL[0]-60,y:COIL[1]-34,sc:1},...(f<LAMP_EMBEDDED_FROM?[tableLamp(0)]:[tableMatchboxOnly()]),stoolLayer(),...authoredLayers(f)];},
+ {img:COILC,x:COIL[0]-60,y:COIL[1]-34,sc:1},...(f<LAMP_EMBEDDED_FROM?[tableLamp(0)]:[tableMatchboxOnly()]),stoolLayer(),openingPowerStripLayer(s07PhonePort(f)),...authoredLayers(f)];},
  light:t=>darkLight(t,0),
  glow:()=>[{x:COIL[0]-20,y:COIL[1]+1,r:4,color:[255,90,40],a:.9,core:.3}],
  emit:x=>fan(x,0),cam:camera};

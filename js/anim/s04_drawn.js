@@ -1,9 +1,10 @@
 // LOCAL COLLAB S04 CANDIDATE. No shared helper, production module, EDL or audio changes.
+import {openingPowerStripLayer,HELD_PHONE_PORT} from './opening_power_strip.js';
 import {renderPaint,loadImg} from '/js/paint/paintshot.js';
 import {COIL,COILC,FAN} from '/js/paint/shots/s01.js';
 import {lamp as drawLamp,LX,LB} from '/js/code/s08.js';
 import {key} from '/js/lib/core.js';
-import {DURATION,FRAME_COUNT,CUT,PHONE,REGISTRATION,ASSET_INFO,frameIndex,frameAssets,isDark} from './s04_drawn_timeline.js';
+import {DURATION,FRAME_COUNT,CUT,PHONE,REGISTRATION,ASSET_INFO,frameIndex,frameAssets,isDark} from '/js/anim/s04_drawn_timeline.js';
 export {DURATION,FRAME_COUNT,CUT,PHONE};
 const BW=1672,BH=941;
 const fanSpin=(t)=>(!isDark(t)?1:Math.exp(-(t-CUT)/1.4));
@@ -68,6 +69,7 @@ export const shot={
     return [
       {img:COILC,x:COIL[0]-60,y:COIL[1]-34,sc:1},
       cachedLamp ||= tableLamp(),
+      openingPowerStripLayer(HELD_PHONE_PORT),
       {img:X,...REGISTRATION.X,contact:{a:.4,blur:3,sy:1,dx:-2,dy:3}},
       cachedStool ||= originalStoolLayer(),
       {img:G,...REGISTRATION.G,contact:{a:.45,blur:4,sy:-.07,skew:.5}},
