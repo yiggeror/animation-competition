@@ -1,0 +1,136 @@
+{
+  "status": "ONE_LOCAL_PATCH_ONLY_NOT_WHOLE_PERSON_REGISTRATION",
+  "raw_visible_joint_proxies": {
+    "R": {
+      "shoulder": [
+        465.0,
+        520.0
+      ],
+      "elbow": [
+        660.0,
+        731.0
+      ],
+      "wrist": [
+        889.0,
+        866.0
+      ],
+      "true_grip": [
+        977.0,
+        847.0
+      ]
+    },
+    "L": {
+      "shoulder": [
+        500.0,
+        480.0
+      ],
+      "elbow": [
+        714.0,
+        636.0
+      ],
+      "wrist": [
+        889.0,
+        674.0
+      ],
+      "true_grip": [
+        981.0,
+        703.0
+      ]
+    }
+  },
+  "target_corrected_joint_proxies": {
+    "R": {
+      "shoulder": [
+        518.2316117905232,
+        490.8343204646437
+      ],
+      "elbow": [
+        709.2975586246152,
+        692.904348454667
+      ],
+      "wrist": [
+        876.1011484469399,
+        786.8709327922884
+      ],
+      "true_grip": [
+        961.4285714285714,
+        772.8571428571429
+      ]
+    },
+    "L": {
+      "shoulder": [
+        544.8685135036467,
+        460.2675506864515
+      ],
+      "elbow": [
+        705.8919499265996,
+        595.9583324932158
+      ],
+      "wrist": [
+        850.7186619486557,
+        629.3777126544387
+      ],
+      "true_grip": [
+        936.2862427678649,
+        653.488363329145
+      ]
+    }
+  },
+  "weights": {
+    "shoulder": 3.0,
+    "elbow": 1.0,
+    "wrist": 1.0,
+    "true_grip": 5.0
+  },
+  "uncertainty_native": "closed grasp about4px, sleeve-hidden shoulder/elbow about15-25px; no hidden bone measurements",
+  "one_semantic_domain_polygon": [
+    [
+      448,
+      405
+    ],
+    [
+      572,
+      405
+    ],
+    [
+      655,
+      438
+    ],
+    [
+      724,
+      524
+    ],
+    [
+      1023,
+      575
+    ],
+    [
+      1023,
+      874
+    ],
+    [
+      826,
+      874
+    ],
+    [
+      648,
+      869
+    ],
+    [
+      552,
+      813
+    ],
+    [
+      470,
+      760
+    ],
+    [
+      443,
+      610
+    ]
+  ],
+  "hard_protection": "y<405 head/neck; y>=875 real waist/hips/pants/support; x<480,y>750 back waist; all pixels outside complete semantic arm region",
+  "domain_SHA256": "2ac0aae0a665e52c8be457fd5a6b3a21c4af9ef4b09aa8c02fc3b068ee3903b4",
+  "domain_trials": 1,
+  "new_whole_body_fit": false
+}

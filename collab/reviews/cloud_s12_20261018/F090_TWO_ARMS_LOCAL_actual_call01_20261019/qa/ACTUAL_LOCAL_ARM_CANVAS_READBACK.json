@@ -1,0 +1,36 @@
+{
+  "status": "NOT_QUALIFIED_RETURN_SOLE_RAW_AND_ACTUAL_CANVAS_NO_RETRY",
+  "raw_SHA256": "b664008d0481f15df4a55c39ba26aa8ba666f8ba449903ad5c7ce1f5aa00d5e8",
+  "native_SHA256": "6a1c3855dfc98000955c7bf8ae18087d41c491d27fe185d901ef8e6f094be9c1",
+  "actual_Canvas_SHA256": "43b792b638a6976dccdbeb32fc24577a7c9a1c36b493b53667b079adc076008b",
+  "local_imagegen_requests": 1,
+  "local_raw_count": 1,
+  "complete_semantic_patch_registrations": 1,
+  "new_whole_body_fits": 0,
+  "semantic_domain_trials": 1,
+  "actual_Canvas_count": 1,
+  "next094_calls": 0,
+  "new_qualified090_states": 0,
+  "outside_semantic_patch_RGBA_changes": 0,
+  "protected_head_neck_RGBA_changes": 0,
+  "protected_waist_hips_pants_support_RGBA_changes": 0,
+  "original_actual_ground_shadow_and_box_front_RGBA_changes": 0,
+  "local_patch_uniform_scale": 0.8420688717449083,
+  "frozen_grip_point_residuals_scene": {
+    "R": 9.8702850812368,
+    "L": 9.983931431316494
+  },
+  "actual_readback": [
+    "actual_scene/F090_canvas.png",
+    "diagnostics/ACTUAL090_NATIVE_ARMS_TRUE_ROD_GRIPS_1to1.png",
+    "diagnostics/ACTUAL090_FIXED_NECK_COLLAR_LOCAL_PATCH_INTERFACE_1to1.png",
+    "diagnostics/ACTUAL_LOCAL_ARMS_ON_REAL_BODY_NATIVE.png"
+  ],
+  "visual_findings": [
+    "Sole raw contains coherent native blue-floral sleeves, complete elbows, continuous forearms/wrists/palms; no technical-blue blocks/dots/text adopted.",
+    "One complete local patch registration improves both actual shaft contacts, but frozen true grip proxies still differ about10scene each; actual visual shaft intersection alone does not prove frozen grasp fraction.",
+    "Raw collar/torso arrangement differs from protected real090. The sole chosen semantic boundary creates a clear collar gap and a small retained old collar edge; this adoption is not seam-complete and is not qualified. This is an adoption-interface failure in addition to pose-layout error; raw itself does not contain the cutout gap.",
+    "No second semantic-mask trial, no local finger move, no new whole-body fit, no automatic retry; real head/neck and waist/pants/support stay native."
+  ],
+  "network_errors": []
+}

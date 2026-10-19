@@ -1,0 +1,232 @@
+{
+  "status": "NOT_QUALIFIED_LOCAL_PATCH_COLLAR_INTERFACE_AND_FROZEN_GRIP_LAYOUT_ERRORS",
+  "raw_SHA256": "b664008d0481f15df4a55c39ba26aa8ba666f8ba449903ad5c7ce1f5aa00d5e8",
+  "native_SHA256": "6a1c3855dfc98000955c7bf8ae18087d41c491d27fe185d901ef8e6f094be9c1",
+  "local_patch_only_similarity_matrix": [
+    [
+      0.8420646175857017,
+      0.0026766718119385796,
+      122.3775555085549
+    ],
+    [
+      -0.0026766718119386503,
+      0.8420646175857017,
+      61.62292199485387
+    ]
+  ],
+  "uniform_local_patch_scale": 0.8420688717449083,
+  "local_rotation_degrees": -0.18212554979227397,
+  "all_shoulder_elbow_wrist_true_grip_residuals": {
+    "R_shoulder": {
+      "registered": [
+        515.3294720281142,
+        498.25187074686727
+      ],
+      "target": [
+        518.2316117905232,
+        490.8343204646437
+      ],
+      "residual_native": [
+        -2.9021397624089786,
+        7.417550282223544
+      ],
+      "distance_native": 7.965077990193808,
+      "distance_scene": 5.575554593135665
+    },
+    "R_elbow": {
+      "registered": [
+        680.0968502096451,
+        675.4055540541224
+      ],
+      "target": [
+        709.2975586246152,
+        692.904348454667
+      ],
+      "residual_native": [
+        -29.20070841497011,
+        -17.498794400544625
+      ],
+      "distance_native": 34.04246138881027,
+      "distance_scene": 23.829722972167186
+    },
+    "R_wrist": {
+      "registered": [
+        873.2909983313825,
+        788.4713195832582
+      ],
+      "target": [
+        876.1011484469399,
+        786.8709327922884
+      ],
+      "residual_native": [
+        -2.8101501155573487,
+        1.6003867909697647
+      ],
+      "distance_native": 3.233911185032372,
+      "distance_scene": 2.2637378295226602
+    },
+    "R_true_grip": {
+      "registered": [
+        947.3418279144976,
+        772.2365447296792
+      ],
+      "target": [
+        961.4285714285714,
+        772.8571428571429
+      ],
+      "residual_native": [
+        -14.086743514073873,
+        -0.6205981274637224
+      ],
+      "distance_native": 14.100407258909716,
+      "distance_scene": 9.8702850812368
+    },
+    "L_shoulder": {
+      "registered": [
+        544.6946667711363,
+        464.4756025300214
+      ],
+      "target": [
+        544.8685135036467,
+        460.2675506864515
+      ],
+      "residual_native": [
+        -0.17384673251035565,
+        4.208051843569876
+      ],
+      "distance_native": 4.211641367041639,
+      "distance_scene": 2.9481489569291472
+    },
+    "L_elbow": {
+      "registered": [
+        725.3140557371389,
+        595.264875105636
+      ],
+      "target": [
+        705.8919499265996,
+        595.9583324932158
+      ],
+      "residual_native": [
+        19.42210581053928,
+        -0.6934573875798833
+      ],
+      "distance_native": 19.43448165668878,
+      "distance_scene": 13.604137159682146
+    },
+    "L_wrist": {
+      "registered": [
+        872.7770773434904,
+        626.7949130068034
+      ],
+      "target": [
+        850.7186619486557,
+        629.3777126544387
+      ],
+      "residual_native": [
+        22.058415394834697,
+        -2.5827996476352837
+      ],
+      "distance_native": 22.20910947676438,
+      "distance_scene": 15.546376633735065
+    },
+    "L_true_grip": {
+      "registered": [
+        950.3246456439211,
+        650.9685331100903
+      ],
+      "target": [
+        936.2862427678649,
+        653.488363329145
+      ],
+      "residual_native": [
+        14.038402876056239,
+        -2.519830219054711
+      ],
+      "distance_native": 14.262759187594993,
+      "distance_scene": 9.983931431316494
+    }
+  },
+  "local_patch_registration_count": 1,
+  "new_whole_body_registration_count": 0,
+  "domain_trials": 1,
+  "changed_RGBA_pixels": 147157,
+  "outside_semantic_patch_RGBA_changes": 0,
+  "protected_head_neck_RGBA_changes": 0,
+  "protected_waist_hips_pants_support_RGBA_changes": 0,
+  "independent_arm_wrist_palm_finger_warps": 0,
+  "technical_reference_pixels_adopted": 0,
+  "new_model_calls": 1,
+  "actual090_Canvas": 1,
+  "next094_calls": 0,
+  "front_digit_polygons_raw_same_patch_matrix": {
+    "L": [
+      [
+        956,
+        678
+      ],
+      [
+        978,
+        680
+      ],
+      [
+        995,
+        699
+      ],
+      [
+        999,
+        720
+      ],
+      [
+        984,
+        743
+      ],
+      [
+        962,
+        744
+      ],
+      [
+        949,
+        730
+      ],
+      [
+        953,
+        711
+      ]
+    ],
+    "R": [
+      [
+        953,
+        818
+      ],
+      [
+        976,
+        816
+      ],
+      [
+        992,
+        834
+      ],
+      [
+        995,
+        862
+      ],
+      [
+        979,
+        889
+      ],
+      [
+        959,
+        899
+      ],
+      [
+        943,
+        883
+      ],
+      [
+        944,
+        863
+      ]
+    ]
+  },
+  "actual_Canvas_SHA256": "43b792b638a6976dccdbeb32fc24577a7c9a1c36b493b53667b079adc076008b"
+}
