@@ -1,0 +1,182 @@
+{
+  "state": "REVIEW_ONLY_ACTUAL11F_ALL_DECODED_AND_VIEWED_HOLD060_PENDING062_PROP",
+  "production_adoption": false,
+  "F060_reason": "Actual tailcap presses/covers far forearm; receiving air fails",
+  "F062_limit": "Visible air and short sleeves pass limited view; hidden tail/full rigid group pending Astra",
+  "native_requests_this_exposure": 0,
+  "source_SHA256": {
+    "58": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+    "60": "85894fa7d6914c47b6870c337b89b3a8a0434ece1e23c2eb805f3170c3d956cc",
+    "62": "5006b6fe6328ad2b4d00327e24007d172abb43e2ce1c1dabc24451b7bbd7c9c9",
+    "63": "0abc3fd9cfcf7964f825ac7be0227fb9f588da709809f6d15362063741e545ef"
+  },
+  "registration": "native1672x941 at0,0 without scale/crop;31px caption strip only",
+  "exposure": {
+    "058": 2,
+    "060": 2,
+    "062": 1,
+    "063": 6,
+    "frames": 11,
+    "fps": 24,
+    "duration": 0.4583333333333333
+  },
+  "variants": {
+    "gray": {
+      "video_SHA256": "d4c34092200604f273a460028e7892bb9900ad64fe38b41f0d73695cbb629f03",
+      "decoded_frames": 11,
+      "fps": "24/1",
+      "duration": 0.458333,
+      "audio_streams": 0,
+      "all11_decoded_states_correct": true,
+      "all11_classification": [
+        {
+          "decoded_index": 0,
+          "expected_state": 58,
+          "actual_state": 58,
+          "matching_MAE": 0.663060305786914
+        },
+        {
+          "decoded_index": 1,
+          "expected_state": 58,
+          "actual_state": 58,
+          "matching_MAE": 0.6625461075997139
+        },
+        {
+          "decoded_index": 2,
+          "expected_state": 60,
+          "actual_state": 60,
+          "matching_MAE": 0.6996746214582472
+        },
+        {
+          "decoded_index": 3,
+          "expected_state": 60,
+          "actual_state": 60,
+          "matching_MAE": 0.6991239145844409
+        },
+        {
+          "decoded_index": 4,
+          "expected_state": 62,
+          "actual_state": 62,
+          "matching_MAE": 0.6555973559506698
+        },
+        {
+          "decoded_index": 5,
+          "expected_state": 63,
+          "actual_state": 63,
+          "matching_MAE": 0.6746815540066028
+        },
+        {
+          "decoded_index": 6,
+          "expected_state": 63,
+          "actual_state": 63,
+          "matching_MAE": 0.6746661711330327
+        },
+        {
+          "decoded_index": 7,
+          "expected_state": 63,
+          "actual_state": 63,
+          "matching_MAE": 0.6744454781735484
+        },
+        {
+          "decoded_index": 8,
+          "expected_state": 63,
+          "actual_state": 63,
+          "matching_MAE": 0.6753421971501894
+        },
+        {
+          "decoded_index": 9,
+          "expected_state": 63,
+          "actual_state": 63,
+          "matching_MAE": 0.6746101774732379
+        },
+        {
+          "decoded_index": 10,
+          "expected_state": 63,
+          "actual_state": 63,
+          "matching_MAE": 0.674973418394471
+        }
+      ]
+    },
+    "dark": {
+      "video_SHA256": "f4ac93d5a56b79423d0b5c3f315a16806fc0966dec9efb33e940de87017397ae",
+      "decoded_frames": 11,
+      "fps": "24/1",
+      "duration": 0.458333,
+      "audio_streams": 0,
+      "all11_decoded_states_correct": true,
+      "all11_classification": [
+        {
+          "decoded_index": 0,
+          "expected_state": 58,
+          "actual_state": 58,
+          "matching_MAE": 1.398074720564974
+        },
+        {
+          "decoded_index": 1,
+          "expected_state": 58,
+          "actual_state": 58,
+          "matching_MAE": 1.397217791954634
+        },
+        {
+          "decoded_index": 2,
+          "expected_state": 60,
+          "actual_state": 60,
+          "matching_MAE": 1.4244112256417325
+        },
+        {
+          "decoded_index": 3,
+          "expected_state": 60,
+          "actual_state": 60,
+          "matching_MAE": 1.4241242837734065
+        },
+        {
+          "decoded_index": 4,
+          "expected_state": 62,
+          "actual_state": 62,
+          "matching_MAE": 1.3988518633377307
+        },
+        {
+          "decoded_index": 5,
+          "expected_state": 63,
+          "actual_state": 63,
+          "matching_MAE": 1.42681895301291
+        },
+        {
+          "decoded_index": 6,
+          "expected_state": 63,
+          "actual_state": 63,
+          "matching_MAE": 1.4272783881702011
+        },
+        {
+          "decoded_index": 7,
+          "expected_state": 63,
+          "actual_state": 63,
+          "matching_MAE": 1.4265551880074296
+        },
+        {
+          "decoded_index": 8,
+          "expected_state": 63,
+          "actual_state": 63,
+          "matching_MAE": 1.4279051889919336
+        },
+        {
+          "decoded_index": 9,
+          "expected_state": 63,
+          "actual_state": 63,
+          "matching_MAE": 1.4266659446971337
+        },
+        {
+          "decoded_index": 10,
+          "expected_state": 63,
+          "actual_state": 63,
+          "matching_MAE": 1.4268675628933913
+        }
+      ]
+    }
+  },
+  "actual_root_viewed": [
+    "ACTUAL11f_decoded_turn_transition_gray.png",
+    "ACTUAL11f_complete_arms_grip_receiver_clearance_dark.png"
+  ],
+  "actual_findings": "Two actual26/52direction states supply a visible turn progression with short puffs and bare arms;060 false early contact persists,062 tail occlusion remains unresolved. These source failures are shown, not repaired or hidden. Complete segment not approved."
+}

@@ -1,0 +1,27 @@
+{
+  "state": "BOTH_UNIQUE_RAWS_ACTUALLY_REVIEWED_HOLD060_AND_PENDING062_FULL_PROP",
+  "raw_SHA256": {
+    "60": "14e9aee876ebdd73ed3331e024857fe92f32736399845f5885d182c8fdca8dc4",
+    "62": "714b1f4cf42862669a1545c01a391fd1a2b1b26edfcfaae38dfb1637a3de9b27"
+  },
+  "F060": "HOLD: real tailcap presses/covers the far forearm. Whole receiving-arm AIR fails. No patch/move/retry.",
+  "F062": "Short puff/full bare arms, near full grip and visible receiving-air limited pass; tailcap behind the near forearm/hand, so full tail-to-head geometry and grip fraction remain unverified for Astra. No claim of proven shortening.",
+  "source_head_skirt_candidates": "Mask-only protection review has native/source outline fringes, not clean production.11f review uses original whole mapped raws instead, with accepted058/063.",
+  "actual_root_views": [
+    "F060/qa/F060_actual_tail_far_forearm_palm_air_gray_3x.png",
+    "F062/qa/F062_registered_review_full_gray.png",
+    "F062/qa/F062_actual_tail_far_forearm_palm_air_dark_3x.png"
+  ],
+  "whole_registration": "1145x1374→770x924 scale770/1145+[550,0], no part fits",
+  "native_requests": {
+    "F060": 1,
+    "F062": 1
+  },
+  "raw_outputs": {
+    "F060": 1,
+    "F062": 1
+  },
+  "retries": 0,
+  "production_adoption": false,
+  "dependent11f": "One clearly labelled actual11f diagnostic review only; it preserves and shows failed060. No accepted bridge/exposure pass claimed."
+}
