@@ -1,0 +1,45 @@
+"""Authorized zero-imagegen true-source semantic ownership only.
+No warp/translation/scale of either source; all static supports from final074.
+No y1140 slice: crease/occlusion path with narrow real-source transition.
+"""
+from pathlib import Path
+from PIL import Image,ImageDraw,ImageFont
+import numpy as np,json,hashlib
+from scipy.ndimage import gaussian_filter,sobel
+O=Path(__file__).resolve().parents[1];R=O.parent;S=R/'F074_PANTS_LOCAL_actual_call01_20261019';A=R/'F078_COMPLETE_actual_call01_20261019';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+assert sha(S/'candidate/F074.png')=='2fbceafa0d533d727e6b72f0e292c63f98295ee34dd4a677a51e62785b768900';assert sha(A/'candidate/F078.png')=='d43046ca6d1827fddbac4ba5c53f718d71641bd2836292038e261df0233788f6'
+s=np.array(Image.open(S/'candidate/F074.png').convert('RGBA'));a=np.array(Image.open(A/'candidate/F078.png').convert('RGBA'));Y,X=np.mgrid[:1536,:1024]
+# Along actual back-calf cap / front-thigh underside / knee upper rounded plane.
+# Far shin is behind rising active thighs; near shin follows existing cuff into lower knee.
+anchors=np.array([[0,1080],[180,1085],[230,1088],[270,1090],[300,1094],[340,1108],[380,1130],[420,1152],[460,1166],[500,1175],[540,1181],[580,1182],[620,1178],[650,1172],[680,1170],[740,1170],[1023,1170]],float)
+base=np.interp(np.arange(1024),anchors[:,0],anchors[:,1]);lo=gaussian_filter(base,1)
+# Find a continuous narrow ownership path near the actual cloth fold, using source color agreement.
+# No RGB or alpha is moved: only choose where the already-drawn sources own pixels.
+rgbA=a[:,:,:3].astype(float);rgbS=s[:,:,:3].astype(float);color=np.sqrt(np.mean((rgbA-rgbS)**2,axis=2));grayA=rgbA.mean(axis=2);grayS=rgbS.mean(axis=2);ga=np.hypot(sobel(grayA,0),sobel(grayA,1))/8;gs=np.hypot(sobel(grayS,0),sobel(grayS,1))/8
+xs=np.arange(200,701);offs=np.arange(-6,7);rows=np.rint(lo[xs,None]+offs).astype(int);cost=np.zeros(rows.shape)
+for i,x in enumerate(xs):
+ yy=rows[i];both=(a[yy,x,3]>128)&(s[yy,x,3]>128);cost[i]=np.where(both,color[yy,x]+.8*abs(ga[yy,x]-gs[yy,x])-.12*(ga[yy,x]+gs[yy,x]),0)+.08*offs**2
+D=np.full_like(cost,np.inf);back=np.zeros(cost.shape,int);D[0]=cost[0]+.5*offs**2
+for i in range(1,len(xs)):
+ for j in range(len(offs)):
+  dy=rows[i,j]-rows[i-1];v=D[i-1]+.45*dy*dy;v[abs(dy)>2.5]=np.inf;k=int(np.argmin(v));D[i,j]=cost[i,j]+v[k];back[i,j]=k
+j=int(np.argmin(D[-1]+.5*offs**2));path=np.empty(len(xs),float)
+for i in range(len(xs)-1,-1,-1):path[i]=rows[i,j];j=back[i,j]
+seam=lo.copy();seam[xs]=path;seam=gaussian_filter(seam,.65)
+#4native transition ONLY near selected curve; far-support fill limited to6native above it.
+w=np.clip((Y-(seam[X]-2))/4,0,1);band=(abs(Y-seam[X])<=2)
+# Preserve true static back-calf cap where active front thigh uncovered it; no synthetic fill.
+farReveal=(a[:,:,3]<16)&(s[:,:,3]>0)&(Y>=seam[X]-6)&(Y>=1080)&(X<440);w[farReveal]=1
+# Source074 exists only below semantic support boundary; no old hip silhouette leaks above.
+ap=a.astype(float)/255;sp=s.astype(float)/255;ap[:,:,:3]*=ap[:,:,3:4];sp[:,:,:3]*=sp[:,:,3:4];out=ap*(1-w[:,:,None])+sp*w[:,:,None];good=out[:,:,3]>0;out[good,:3]/=out[good,3:4];out=np.uint8(np.clip(out*255+.5,0,255))
+activeHard=(w==0);staticHard=(w==1);out[activeHard]=a[activeHard];out[staticHard]=s[staticHard]
+# Mutually exclusive ownership; narrow mixed pixels are stored in only one layer.
+staticOwn=w>=.5;active=np.zeros_like(out);support=np.zeros_like(out);active[~staticOwn]=out[~staticOwn];support[staticOwn]=out[staticOwn];assert np.array_equal(np.maximum(active,support),out);assert not np.any((active[:,:,3]>0)&(support[:,:,3]>0))
+Image.fromarray(out).save(O/'candidate/F078.png');Image.fromarray(active).save(O/'layers/F078_ACTIVE_HEAD_TORSO_ARMS_HIPS_BOTH_THIGHS.png');Image.fromarray(support).save(O/'layers/F078_FIXED074_TRUE_KNEE_SHIN_ANKLE_SHOE_SUPPORT.png')
+fg0=Image.open(A/'layers/F078_FG_true_front_fingers.png').convert('RGBA');fg=np.array(fg0);own=fg[:,:,3]>0;assert np.array_equal(out[own],a[own]);bg=out.copy();bg[own]=0;Image.fromarray(bg).save(O/'layers/F078_BG_person.png');(O/'layers/F078_FG_true_front_fingers.png').write_bytes((A/'layers/F078_FG_true_front_fingers.png').read_bytes())
+for name,m in [('STATIC074_OWNERSHIP',staticOwn),('ACTIVE078_OWNERSHIP',~staticOwn),('NARROW_TRUE_SOURCE_CONNECTION_BAND',band),('TRUE_STATIC_FAR_SHIN_REVEAL',farReveal),('STATIC_HARD_EXACT',staticHard)]:Image.fromarray(np.uint8(m)*255).save(O/f'masks/{name}.png')
+# Human-visible ownership drawn over actual sources, not another person pose.
+baseIm=Image.new('RGBA',(1024,1536),'#e1e4e6');baseIm.alpha_composite(Image.fromarray(out));ov=np.zeros_like(out);ov[staticOwn]=(25,170,220,85);ov[band]=(245,90,30,170);baseIm.alpha_composite(Image.fromarray(ov));d=ImageDraw.Draw(baseIm);d.line([(x,float(seam[x]))for x in range(180,721)],fill='#ff5b16',width=2);baseIm.crop((0,930,750,1370)).resize((1125,660),Image.Resampling.NEAREST).save(O/'diagnostics/SEMANTIC_OWNERSHIP_CREASE_PATH_NOT_HORIZONTAL.png')
+plain=Image.new('RGBA',(1024,1536),'#e1e4e6');plain.alpha_composite(Image.fromarray(out));plain.crop((0,900,750,1380)).resize((1125,720),Image.Resampling.NEAREST).save(O/'diagnostics/ZERO_CALL_TRUE_SOURCE_NATIVE_ASSEMBLY.png')
+q={'status':'ZERO_IMAGEGEN_SEMANTIC_TWO_TRUE_SOURCE_ASSEMBLY_BEFORE_CANVAS','source_static074_SHA256':sha(S/'candidate/F074.png'),'source_active078_SHA256':sha(A/'candidate/F078.png'),'candidate_SHA256':sha(O/'candidate/F078.png'),'source078_registration_unchanged':True,'source074_identity_coordinate_scale_unchanged':True,'no_source_warp_translation_scale':True,'semantic_anchors_native':anchors.tolist(),'seam_y_by_native_x':seam.tolist(),'transition_width_native':4,'true_far_shin_reveal_max_extra_native':6,'narrow_transition_pixel_count':int(band.sum()),'true_far_shin_reveal_pixels':int(farReveal.sum()),'static_hard_RGBA_diff':int(np.count_nonzero(np.any(out[staticHard]!=s[staticHard],axis=1))),'active_hard_RGBA_diff':int(np.count_nonzero(np.any(out[activeHard]!=a[activeHard],axis=1))),'support_active_alpha_overlap':0,'support_active_channelmax_RGBA_union_exact':True,'imagegen_calls':0,'actual078_Canvas':0,'next_posture_calls':0}
+(O/'geometry/TRUE_SOURCE_SEMANTIC_OWNERSHIP.json').write_text(json.dumps(q,indent=2)+'\n');print(json.dumps({k:v for k,v in q.items()if k!='seam_y_by_native_x'},indent=2))

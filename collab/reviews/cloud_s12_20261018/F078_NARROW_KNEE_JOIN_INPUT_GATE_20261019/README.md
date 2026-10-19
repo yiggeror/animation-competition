@@ -1,0 +1,9 @@
+# F078 narrow knee-upper connection ONLY — input short gate,0calls
+
+Direct zero-imagegen actual source074 supports + actual078 active thighs restore ground positions but still leave a real upper-calf/knee connection gap, displaced folds and contour step. It is not a finished natural078. Per explicit user fallback, preserve diagnostic and submit ONLY a narrow knee-upper connector; no whole person/pants redraw. No realCanvas quota used because source-only join failed the natural-connection condition.
+
+Open inputs/01 complete thigh/knee/shin connection target, inputs/02same true ground/props context, inputs/03actual narrow protection map. All3 actual PNGs visually opened. First is a VOLUME REFERENCE ONLY; small geometry/material completion is deliberately marked construction, not adopted final drawing. Naturally redraw residual cap pixel facets/creases/gap instead of copying them. Final local pixels must come from true future narrow drawing.
+
+18457native pixels allowed, curved20native neighborhood of actual knee-upper crease, x235to695,y<1205; shoe/ankle protection intersection0. All other078head/chest/hips/wholearms/hands/thighs and074lower-knee/shin/instep/shoes/ankles/ground band/trueprops hard frozen. No y1140slice, individual knee/shin scale, foot move or double old078 shoes. Original074 support master is pure true pixels at unchanged native coordinates; source078 matrix unchanged.
+
+Full prompt/exact3SHA/nonexecuting request in requests/F078_NARROW_KNEE_JOIN_NOT_EXECUTABLE.json,call_allowed:false,actualargsnull. New model0,actualCanvas0,nextstate0. Zero-call source candidates/ownership/reconstruction evidence in ../F078_FIXED074_SUPPORTS_ZERO_CALL_20261019; only diagnostic, not qualified mother. Existing original074/078/raw/Canvas preserved. Next rising states adopt the persistent074fixed-support + new active-thigh strategy, but no next generation until078 actual gate.

@@ -1,0 +1,9 @@
+# F078 fixed074 true supports — ZERO model calls, diagnostic only
+
+User explicitly authorized FINAL074 real static knee/shin/instep/ankle/shoe support reuse at original native coordinates/scale and current078 real active upper/hip/thighs at its existing registration. Sources: FINAL0742fbceafa…b768900 and current078d43046ca…3788f6. No source warp/translation/scale, reference-image adoption, bone/shoe move or new imagegen. Original cached ground shadows/true rods remain source assets; no actualCanvas call used because join is not yet naturally complete.
+
+Semantic ownership follows real far-calf cap, thigh underside and knee-upper fold; not y1140horizontal slice.078 drift shins/shoes explicitly retired before composition. Original074 both shoes/bare ankles and all y>=1210ground support RGBA exact; original078 whole y<1080head/upper/hips/arms exact. Mutually exclusive active/support layers reconstruct visibleRGBA and alpha0diff, no overlap; hiddenRGB count in QA. Pure source074 reusable support master excludes connector band, not a constructed body.
+
+Direct source-only join is NOT natural enough: far-calf upper gap, misaligned folds and knee contour step remain. Current candidate is DIAGNOSTIC ONLY, not qualified078. Initial spike/fill attempts retained as v00/v01/v02 diagnostics and not adopted. Existing actual074/078 originals/Canvas unchanged. No actualCanvas performed, preserving the user conditional gate: if a new drawing is needed, only submit the narrow knee-upper connector input.
+
+Fallback input ../F078_NARROW_KNEE_JOIN_INPUT_GATE_20261019 contains complete connector target/context/protection,18457pixel narrow domain, shoes/ankles overlap0, full actual prompt/3SHA. It redraws ONLY upper-knee connection, never whole pants/person. New imagegen0, actualCanvas0, next posture0. Await that single local gate.
