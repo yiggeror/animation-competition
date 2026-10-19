@@ -1,0 +1,15 @@
+# F103 唯一修复原件与零调用保护接回交审
+
+输入冻结fa796ff9c273bd046c704c7ab7721513f9bffa8f，最终3381字节提示词SHA256为59973783ae145c0f114b8e31b599d06156c3bd28242e1cb97dcb03dc6df1bd81，末尾单换行。一次必要修复native请求、一张原始返回、零重试、106零调用。失败call01不采用。完整提示词/参数/工具原返回/未改原始PNG归档于requests和originals。Astra已实际看43a350ff原件并批准零调用保护接回。
+
+本次交审：`candidate/F103_REPAIR_call02_PROTECTED_SEMANTIC_TRIAL_PENDING_ASTRA.png`，1960×1080透明完整PNG。原1024×1536仅整张uniform45/64+[1240,0]注册一次；近短袖至完整裸臂闭握、整件连续蓝花上衣和真实腰裤均来自同一native raw。原头颈与完整远臂手镯同组delta8至总24°、scale1；双整鞋原位；原整灯含影全程identity、不靠移动灯或单独拟合手去接触。原灯在后、同一raw完整近臂手指在前，真弧只在实际手指体量处自然遮住，没有穿手线。未贴旧胸衣块、未调色、未新画人体或零件。
+
+根作者已实看完整灰深人形、真握3倍近图、袖口/腰及整鞋近图；短袖、单肘裸臂、整手闭握和连续真实衣腰裤成立。首试把少量真实上衣轮廓误归头颈清除域，已一次语义归属纠正并保留首试。当前高倍仍可见源颈领接边、原远手alpha亮边，以及原鞋踝与新裤脚的细接边，均保留原色/源alpha而未模糊补画；请Astra看实际结果终门，不自动视为终锁。
+
+完整灰深全画布、全人物、真弧闭握及接边近图在 `qa/protected_semantic_trial/`；首次试接在`qa/first_protected_trial_ARCHIVE/`。精确源保护检查和实际限制见`qa/protected_semantic_trial/checks.json`。头颈、双整鞋及未被真实手遮挡的固定原灯RGBA变化0。
+
+原件SHA256：e46fdeede06edaff502a1396559e499eeda189abdf17f01f2bd3882bf2bc595c
+
+接回候选SHA256：06443a17f780d7a72a293c27686099ffaf72ba827b00e3290059c3061cd2ad90
+
+等待103实际结果终门；106以及任何新生成均未开始。
