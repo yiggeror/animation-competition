@@ -1,0 +1,63 @@
+{
+  "status": "INPUT_GATE_ONLY_NOT_ART_NOT_CALLED",
+  "sources": {
+    "F069_ACTION_ACCEPTED_COSTUME_REVOKED.png": "1f0da0fd9612fec220aa851969b0f9d677ef3a1a5fd8aa06a597ad1c552f912b",
+    "F073_ACTION_LIGHT_ACCEPTED_COSTUME_REVOKED.png": "f43a42aa32c64fe3c64daa26747761ffc4325808f45a9ecd55407b661a084bbc",
+    "F063_SHORT_PUFF_IDENTITY_ONLY.png": "0abc3fd9cfcf7964f825ac7be0227fb9f588da709809f6d15362063741e545ef",
+    "head_guard_seed.png": "f4ff3c7d356c9a1ed55ce09dd1eaf57224d239e8cb351dd1f90b6fe42f59281d",
+    "skirt_guard_seed.png": "56a677d734ee34792105273c7a5373b0da2507ba817d8e54c65bc98c1e4250fb",
+    "source063_near_skin.png": "fe54593ddfb52089b1c24472ff4be4d952c53c8eb1b2b1dabbfc322c192bd573"
+  },
+  "mapping": {
+    "native_crop": [
+      550,
+      0,
+      1320,
+      924
+    ],
+    "tool": [
+      1280,
+      1536
+    ],
+    "uniform": 1.6623376623376624,
+    "inverse": "77/128+[550,0]"
+  },
+  "actual069_palms_all_digits_source_RGBA_changes": 0,
+  "actual069_visible_prop_slider_source_RGBA_changes": 0,
+  "white_actual_guards_overlap": 0,
+  "valid_source_chest_guard_pixels": 7525,
+  "alpha0_guard_pixels": 0,
+  "new_contours": "Fresh smooth taper; no reused long sleeve contour, no round joint disks, no faux final skin painting. Source063 contributes short-puff cloth only; no source063 hands or full pose.",
+  "future073": "Only after actual repaired069 arms accepted: carry its complete short sleeves and bare arms as coherent source layer; preserve accepted073 thumb/slider TRANSIT-to-ON delta and actual lens/beam layers. Do not skin-color original long sleeves. No073 candidate constructed.",
+  "calls": 0,
+  "soft_chains": {
+    "near": [
+      [
+        705,
+        666
+      ],
+      [
+        800,
+        730
+      ],
+      [
+        982,
+        638
+      ]
+    ],
+    "far": [
+      [
+        970,
+        742
+      ],
+      [
+        1015,
+        780
+      ],
+      [
+        1105,
+        680
+      ]
+    ]
+  }
+}
