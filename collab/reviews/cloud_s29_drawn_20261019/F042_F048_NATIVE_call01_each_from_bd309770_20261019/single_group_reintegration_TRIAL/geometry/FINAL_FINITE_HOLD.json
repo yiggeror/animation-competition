@@ -1,0 +1,31 @@
+{
+  "status": "HOLD_COMPOSITING_SEAMS_NOT_NATIVE_STRUCTURE_FAILURE",
+  "requests_total": 2,
+  "raws_total": 2,
+  "retry_count": 0,
+  "additional_generation_for_reintegration": 0,
+  "single_similarity_per_complete_arm_hand_cloth_group": true,
+  "no_second_M_trial": true,
+  "one_limited_semantic_mask_correction": true,
+  "source40eb_raw_delivery_unchanged": true,
+  "candidate_sha256": {
+    "42": "bab476ca7c5baa13d1c9535c971fe67d6c48661918933f414c06ddce7e7265e7",
+    "48": "e2f66959eef2ef6f3e8f4c4a7a2ca7db9a1b79b7a7eb81cfc64b0e18d9d917c7"
+  },
+  "actual_viewed": [
+    "F042_FULL_ON_GRAY.png",
+    "F048_FULL_ON_GRAY.png",
+    "contacts/F042_COMPLETE_SLEEVE_PINCH_TRUE_TAIL.png",
+    "contacts/F048_COMPLETE_SLEEVE_PINCH_TRUE_TAIL.png"
+  ],
+  "remaining_visible_limits": [
+    "cloth top small step/material boundary approx x515..610/y690..715",
+    "lower cloth new/locked-source fold and material continuity remains visible"
+  ],
+  "resolved_in_one_mask_correction": [
+    "L-shaped transparent sleeve-root clearance",
+    "042 relatively long transparent cloth-top strip"
+  ],
+  "near_C1_main_chest_other_true_props_RGBA_differences": 0,
+  "root_actual_review_agrees_finite_HOLD": true
+}

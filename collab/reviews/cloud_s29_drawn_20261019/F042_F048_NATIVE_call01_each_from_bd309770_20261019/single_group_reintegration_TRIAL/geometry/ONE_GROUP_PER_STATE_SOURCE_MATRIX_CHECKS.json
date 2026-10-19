@@ -1,0 +1,192 @@
+{
+  "only_locked_body_source_sha256": "0a65674bee91dec491997e45c5b0a2993c91a44f64424735883a032321b9a02b",
+  "rule": "Each whole arm/jade/palm/fingers and connected opaque cloth use one similarity. No separate palm/finger/lip fitting. Props restored from same-coordinate locked036 composition.",
+  "reports": [
+    {
+      "frame": 42,
+      "raw_sha256": "e136de84b37133140ddbbb9d2aad50b88efdcb5bf4a1661dbdb38567ef3cb4fa",
+      "candidate_sha256": "bab476ca7c5baa13d1c9535c971fe67d6c48661918933f414c06ddce7e7265e7",
+      "single_similarity_complete_arm_hand_and_cloth": [
+        [
+          0.9151612677614226,
+          -0.017035527950310197,
+          43.758117685697016
+        ],
+        [
+          0.017035527950310204,
+          0.9151612677614226,
+          24.881128130690286
+        ]
+      ],
+      "scale": 0.9153198103522288,
+      "rotation_deg": 1.066425309366926,
+      "manual_source_cuff_endpoints_and_pinch": [
+        [
+          616,
+          502
+        ],
+        [
+          532,
+          574
+        ],
+        [
+          751,
+          684
+        ]
+      ],
+      "soft_target_cuff_endpoints_and_pinch": [
+        [
+          604,
+          494
+        ],
+        [
+          517,
+          562
+        ],
+        [
+          718.7875,
+          662.6614
+        ]
+      ],
+      "mapped_anchors": [
+        [
+          598.9456235956776,
+          494.7859697643155
+        ],
+        [
+          520.8455190912957,
+          559.2465966953118
+        ],
+        [
+          719.3919286565133,
+          663.6451167701863
+        ]
+      ],
+      "residuals_px": [
+        5.115121631690606,
+        4.729613815079157,
+        1.1545703463887673
+      ],
+      "readpoint_error": "manual visible seam/pinch +/-3px; not measured bones",
+      "near_C1_RGBA_changed": 0,
+      "fixed_head_collar_main_chest_RGBA_changed": 0,
+      "props_except_finite_feather_RGBA_changed": 0,
+      "no_extra_generation": true,
+      "same036_cotton_backing": {
+        "source_crop": [
+          650,
+          700,
+          750,
+          738
+        ],
+        "paste_bbox": [
+          505,
+          690,
+          605,
+          728
+        ],
+        "scale": 1
+      },
+      "mask_revision": "one semantic correction, same fitted M unchanged",
+      "status": "FINITE_REINTEGRATION_HOLD_REMAINING_CLOTH_MATERIAL_SEAMS",
+      "visible_remaining_limits": [
+        "Small top-edge step/material sampling boundary right of fixed C1 at approx x515..610/y690..715.",
+        "Lower sheet new/locked036 fold/material transition remains visible; not adopted.",
+        "No further M or generation attempted."
+      ]
+    },
+    {
+      "frame": 48,
+      "raw_sha256": "7675187316297da388c335dcd4c32d6c880d2336458838eea2308b34e4a78bcd",
+      "candidate_sha256": "e2f66959eef2ef6f3e8f4c4a7a2ca7db9a1b79b7a7eb81cfc64b0e18d9d917c7",
+      "single_similarity_complete_arm_hand_and_cloth": [
+        [
+          0.9748802847799147,
+          0.019031780788527755,
+          5.016974522150804
+        ],
+        [
+          -0.019031780788527942,
+          0.974880284779915,
+          13.223303260141279
+        ]
+      ],
+      "scale": 0.975066037934124,
+      "rotation_deg": -1.1183960088688545,
+      "manual_source_cuff_endpoints_and_pinch": [
+        [
+          602,
+          501
+        ],
+        [
+          518,
+          575
+        ],
+        [
+          711,
+          680
+        ]
+      ],
+      "soft_target_cuff_endpoints_and_pinch": [
+        [
+          604,
+          494
+        ],
+        [
+          517,
+          562
+        ],
+        [
+          711.7875,
+          661.6614
+        ]
+      ],
+      "mapped_anchors": [
+        [
+          601.4298281347119,
+          490.18119390018484
+        ],
+        [
+          520.9482359915501,
+          563.9210045601349
+        ],
+        [
+          711.098467936869,
+          662.61030076984
+        ]
+      ],
+      "residuals_px": [
+        4.603157986111711,
+        4.390765988415945,
+        1.172679775141366
+      ],
+      "readpoint_error": "manual visible seam/pinch +/-3px; not measured bones",
+      "near_C1_RGBA_changed": 0,
+      "fixed_head_collar_main_chest_RGBA_changed": 0,
+      "props_except_finite_feather_RGBA_changed": 0,
+      "no_extra_generation": true,
+      "same036_cotton_backing": {
+        "source_crop": [
+          650,
+          700,
+          750,
+          738
+        ],
+        "paste_bbox": [
+          505,
+          690,
+          605,
+          728
+        ],
+        "scale": 1
+      },
+      "mask_revision": "one semantic correction, same fitted M unchanged",
+      "status": "FINITE_REINTEGRATION_HOLD_REMAINING_CLOTH_MATERIAL_SEAMS",
+      "visible_remaining_limits": [
+        "Small top-edge step/material sampling boundary right of fixed C1 at approx x515..610/y690..715.",
+        "Lower sheet new/locked036 fold/material transition remains visible; not adopted.",
+        "No further M or generation attempted."
+      ]
+    }
+  ]
+}
