@@ -1,3 +1,5 @@
+> Astra最终终门已通过并唯一采用本头颈修后PNG（4848cab5；SHA2a2fbbee…）。不再修079；以下保留交审历史说明。
+
 # F079完整头发–头颈体量收口：零调用候选
 
 直接看 `actual_full_gray_1x.jpg`、`076_left_repaired079_right_head_neck_1x.png` 和 `actual_neck_collar_1x.png`（另有3倍图）。均已实际查看。
