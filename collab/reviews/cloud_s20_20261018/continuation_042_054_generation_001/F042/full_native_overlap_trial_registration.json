@@ -1,0 +1,95 @@
+{
+  "frame": 42,
+  "status": "ACTUAL_CANDIDATE_REQUIRES_VISUAL_REVIEW",
+  "image_calls": 1,
+  "raw_sha256": "b972a245af177689b2dfa254be9cec4dc877ef9204f670744ffee291cb640d07",
+  "whole_child_uniform_registration": {
+    "scale": 0.967,
+    "rotation_deg": 0,
+    "translation": [
+      18.0,
+      26.0
+    ],
+    "native_arms_palms_preserved": true,
+    "old_palms_pasted": false
+  },
+  "whole_GR_arm_palm_one_rigid_registration": {
+    "first_global_grandma_fit": {
+      "matrix": [
+        [
+          0.9596408309140814,
+          -0.0037062454432685568,
+          22.903170315939114
+        ],
+        [
+          0.0037062454432685568,
+          0.9596408309140814,
+          27.39211659179568
+        ]
+      ],
+      "silhouette_samples": 650,
+      "median_boundary_residual_px": 1.8933050029705492,
+      "scope": "whole grandma head torso and feet silhouette fit, no hand fitting"
+    },
+    "rotation_deg": -2.114174021573161,
+    "matrix_2x3": [
+      [
+        0.9993192981568179,
+        0.03689092478327138,
+        -11.013626888360818
+      ],
+      [
+        -0.03689092478327138,
+        0.9993192981568179,
+        39.33683094612894
+      ]
+    ],
+    "source_actual_clamp": [
+      875.0,
+      314.69097262667435
+    ],
+    "target_fixed_CB_clamp": [
+      875.0,
+      321.5340336623411
+    ],
+    "no_separate_hand_warp": true
+  },
+  "native_T_axes": [
+    {
+      "id": "T_H",
+      "slope": 0.25227496168196395,
+      "intercept": 299.95799076275785,
+      "native_clamp_registered_px": [
+        475.39099999999996,
+        419.88723707170834
+      ],
+      "front": [
+        245,
+        361.76535637483903
+      ],
+      "tail": [
+        500.39099999999996,
+        426.19411111375746
+      ]
+    },
+    {
+      "id": "T_S",
+      "slope": 0.2684998259658898,
+      "intercept": 363.566388652976,
+      "native_clamp_registered_px": [
+        484.094,
+        493.54554340410743
+      ],
+      "front": [
+        230,
+        425.32134862513067
+      ],
+      "tail": [
+        509.094,
+        500.25803905325466
+      ]
+    }
+  ],
+  "fixed_G_L_head_body_native_source_rgba_changes": 0,
+  "costume_visual_review_required": true
+}
