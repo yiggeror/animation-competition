@@ -1,0 +1,42 @@
+{
+  "status": "FINAL_DUAL_CHARACTER_GAZE_EXACT_REUSE_APPROVED_RUNTIME_SEPARATE",
+  "mother_sha256": "7722c85545660ae240acc72d512985572b1a5ba5532780b150b4b8274c385ec2",
+  "character_reuse_of": "F051/F046",
+  "source_final_character_gate_complete": true,
+  "source_manifest_all_file_SHA256_verified": true,
+  "sources": [
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F053_FINAL_LOCKED/SEALED_MANIFEST.json",
+      "sha256": "ff4b67d67acefca355af396c67936fdc07ed27245133389739f62f57eb617643"
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F053_FINAL_LOCKED/HAND_REUSE_CONTRACT.json",
+      "sha256": "cd86abbd558b8f6c9d6d9e0843f87c111a4c2c4c6bb91f759157acb7d32dd82b"
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F053_FINAL_LOCKED/SOURCE_RECEIPT.json",
+      "sha256": "069a7dc573f772bf038477d4d762ae1c7a09f3f0aa34fa48d3aac43f9748798b"
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F053_LAYER_PARTITION/layer_contract.js",
+      "sha256": "a2f900db19feab0084bea1aaa2e31bcde05e1d502102bad8fbb1554cae668fa5"
+    },
+    {
+      "local_path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F053_LAYER_PARTITION/LAYER_VALIDATION.json",
+      "sha256": "a4c92a53dc2323764323dba4aead733cb1687175215a122a6b57d689f2c63470"
+    }
+  ],
+  "runtime_layer_asset": "046",
+  "new_character_PNG_bytes": 0,
+  "inherited_root_contract": {
+    "whole_domain_pixels": 2383,
+    "recomposition_diff_pixels": 57,
+    "max_RGBA_difference": [
+      100,
+      49,
+      13,
+      0
+    ]
+  },
+  "note": "Author source receipt marks runtime extinction pending, accurately separate from its final character/gaze approval. This module verifies extinction/smoke commands only; new Canvas still pending."
+}
