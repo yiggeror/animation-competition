@@ -1,0 +1,23 @@
+{
+  "tool": "builtin imagegen",
+  "call_number": 1,
+  "approved_gate": "parent 2026-10-19 05:43:53 UTC",
+  "prompt": "Use case: precise-object-edit. Produce one transparent 1672×941 2D animation cel, S20 F004. Image 1 is the sole full-frame pose target: keep its composition, scale and complete grandmother exactly. This is an early rising-arms in-between, before the later fully extended reach. Repair and newly draw only the girl's two complete shoulder-to-elbow-to-wrist-to-palm arm chains, cuff joins, and the small newly uncovered dress area. Preserve the target's bent raised far arm and lower forward near arm. Give each empty hand one thumb and four natural softly separated fingers. The raised fingertips stay left of both lower rods with a visible air gap; neither hand touches or holds any rod. Resolve the guide's cut-and-paste joints into smooth connected child anatomy and clean matched cel linework/shading. Image 2 is an identity/color crop only. Image 3 is an explicit white-edit/black-preserve mask, not artwork: change only its white areas. Preserve all other pixels: child head, neck, torso outside cuff repair, skirt below the repair, legs and shoes; grandmother's full body, high jade-bangle hand holding two high rods, low bare hand offering two lower rods; exactly four rods. Do not redraw faces, reposition characters, add an arm or hand, shift rods, write text or add a background. Real alpha transparency.\n",
+  "referenced_image_paths": [
+    "/workspace/scratch/f060b5601755/astra_s20_f004_native_20261019_0538/inputs/F004_pose_target_full.png",
+    "/workspace/scratch/f060b5601755/astra_s20_f004_native_20261019_0538/inputs/child_identity_crop.png",
+    "/workspace/scratch/f060b5601755/astra_s20_f004_native_20261019_0538/masks/edit_white.png"
+  ],
+  "transparent_background": true,
+  "inputs_sha256": {
+    "astra_s20_f004_native_20261019_0538/inputs/F004_pose_target_full.png": "b441ac6e5cff16a145eab46aa8dd9aae17f9575b4ac2a4e50e7a10e77215d8cb",
+    "astra_s20_f004_native_20261019_0538/inputs/child_identity_crop.png": "3e2d393049b394073e4d4dfedb96b834638f55776fa5f2c523655068560fb4e2",
+    "astra_s20_f004_native_20261019_0538/masks/edit_white.png": "720162cb95484bb91c188e9fbd6ac8c2985c18cdc657781f3b2d62f8d6d9df75"
+  },
+  "saved_original_path": "originals/F004_call001_raw.png",
+  "provider_original_path": "generated_images/exec-08dc8845-02bd-4ed7-82b2-b19dc8d799b8.png",
+  "call_status": "completed",
+  "generation_calls": 1,
+  "in_flight_calls": 0,
+  "postprocess": "Original F000 RGBA outside explicit complete-arm support restored pixel-exact. Complete generated arm support extended beyond the preparatory guide mask only where needed to retain the newly generated full sleeve-to-finger contour, while hard-excluding all rod protection bands and fixed character regions. No hand or limb warping."
+}
