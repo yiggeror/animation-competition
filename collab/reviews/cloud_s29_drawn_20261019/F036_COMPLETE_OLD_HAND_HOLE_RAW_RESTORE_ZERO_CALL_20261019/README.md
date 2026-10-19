@@ -1,7 +1,9 @@
-# 旧远手孔及AA弧完整补齐 · 零生图 · 三态静态通过
+# 完整旧远手孔及AA弧修复 · 零生图 · 原13f有限通过
 
-先看`THREE_PINCHES_BEFORE_AFTER_NORMAL_SIZE.png`；4倍核查为`THREE_PINCHES_BEFORE_AFTER_4X.png`。作者与既有云助手实际看正常尺寸三处夹口和完整三态：旧绕指腹灰白弧/小环已消失，布峰连续接到夹指下方，042/048只余两指内侧小三角空气，静态有限门通过。原13f实际审待续。
+先看`THREE_PINCHES_BEFORE_AFTER_NORMAL_SIZE.png`（静态正常尺寸）与`ACTUAL_THREE_PINCHES_BEFORE_AFTER_1TO1.png`（实际片同尺前后）。作者及既有云助手实际查看三态完整图、三处夹口和全部13帧解码表：036/042/048旧灰白弧/小环消除，布峰自然接到当前夹指下；041→042、047→048花纹/折面连续，C1承托、完整袖腕掌、真实偶四杆及厚唇T未见新异常。本次夹口HOLD在该修复和原13f范围内解除，未外推后续态/整镜。结论`FINAL_13F_ACTUAL_REVIEW.json`。
 
-同一036母版完整旧洞域3568点（含4px完整AA弧边），1038点逐点来自唯一已存raw原RGB，732点rawalpha≥128归真实不透明布；raw0外侧空气2530点未编造/平铺。补齐母版供036/042/048，后两态沿38f59c2d同一原网格映射。每态只将当前真实整臂/掌指前景alpha压在布上，不贴旧复合背景孔；原M/夹口未重拟，C1、真实偶杆/T及接触ROI外RGBA0差。原036前景层逐点复用，042/048以原mask与原M复用原raw前景。
+本轮**0生图、只渲原13f一次**。`S29_F036_F048_ACTUAL_SCENE_1080p24.mp4`为1920×1080/24fps/静音，036×6→042×6→048×1；SHA **2a27ec9391db4db6d6fe96b1c6bd0788be6089f54a40fb80cd40c2eb60c7f7c4**。实际相机/灯光/曝光/场景代码沿原版，生产源码0改；记录见`ACTUAL_BROWSER_RUN.json`、`FFPROBE.json`、`DECODE_CHECK.json`和`ONE_SCENE_RENDER_REQUEST.json`。
 
-`COMPLETE_HOLE_SOURCE_CHECK.json`及逐态`SOURCE_AND_COMPOSITION_CHECK.json`保留SHA/来源/原M/原网格来源。唯一原件仍为b8e3ade5…（2c223b63），旧母版c8ee0362…；本次无新prompt/API/生图。余小三角具体点源alpha0或低AA且当前指alpha也无实体，见`REMAINING_FINGER_AIR_ACTUAL_SOURCE_TRACE.json`，未以邻点涂满。
+唯一补齐母版SHA **18b478ba2734d3f7f30e254c73284c80bd8d4f4c7e428a4a304a461916c010f9**。完整旧洞+AA域3568点，1038点逐点取已有唯一raw（b8e3ade5…）原RGB，732点真实材料alpha归不透明，域外旧母版RGBA0差。036/042/048均由该母版，后两态复用38f59c2d原网格；当前原始整臂/掌指前景alpha压在布上，不再回贴旧复合孔/旧手mask。手臂M与夹口未重拟，实际偶杆/T及接触ROI外RGBA0差，详`COMPLETE_HOLE_SOURCE_CHECK.json`、逐态来源核对和`FRESH_FINAL_VERIFICATION.json`。
+
+rawalpha0的外侧/指间空气未编造或平铺。剩余小三角具体点见`REMAINING_FINGER_AIR_ACTUAL_SOURCE_TRACE.json`，如048目标(715,653)→原件(728.76912,653.98523)无布源、当前手指alpha0，按真实空气保留。旧洞域内映射原件不透明材质的036647/042539/048594个样点，输出alpha<250缺料0，详`OPAQUE_SOURCE_MATERIAL_COVERAGE_CHECK.json`。旧原件/逐字prompt/完整工具返回仍由2c223b63保全，本轮无新prompt或API。
