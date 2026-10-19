@@ -1,0 +1,49 @@
+{
+  "fixed_commit": "abc2059eb84adb74e39958a7105441257fc52115",
+  "source_file_SHA256": {
+    "js/anim/s07_drawn.js": "9bd1a4433a7216021b5959a0834fd27a779dd1cecbf9c21e214bc44bdc146446",
+    "js/paint/paintshot.js": "7d61a8e3cfa595b5a2877ce3624c2d8d186a1578cc684a8948471eb0eedca975",
+    "tools/js/frames.cjs": "3f3f1a1920d6970bb578d735fc7b70420ae749da469637827459a861fe8bea14",
+    "dev/view.html": "2b5228f5447bcb919a6dea545152e5645cee890f89377d6ff7ffa14c9f6ed701"
+  },
+  "command": "node tools/js/frames.cjs js/anim/s07_drawn.js build/S07_full108 --fps 24 --w 1920 --h 1080 --workers 2 --mp4 build/S07_full108.mp4",
+  "decode_indices": [
+    0,
+    15,
+    16,
+    24,
+    25,
+    37,
+    38,
+    39,
+    53,
+    56,
+    57,
+    61,
+    62,
+    67,
+    68,
+    72,
+    73,
+    78,
+    79,
+    83,
+    84,
+    89,
+    90,
+    94,
+    95,
+    99,
+    100,
+    102,
+    103,
+    105,
+    106,
+    107
+  ],
+  "environment_only": {
+    "NODE_PATH": "/opt/codex/cua_node/lib/node_modules",
+    "NODE_OPTIONS": "--require=<this_review_directory>/capture_browser_resources.cjs",
+    "browser_adapter_reason": "Playwright default cached browser absent; use installed/usr/bin/chromium. Adapter attaches resource events only, with no production implementation changes."
+  }
+}
