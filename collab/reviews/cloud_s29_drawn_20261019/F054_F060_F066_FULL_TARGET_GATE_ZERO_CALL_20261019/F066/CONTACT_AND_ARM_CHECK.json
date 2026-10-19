@@ -1,0 +1,110 @@
+{
+  "frame": 66,
+  "exposure": [
+    66,
+    71
+  ],
+  "status": "TECHNICAL_INPUT_GATE_PENDING_ASTRA_NOT_FINISHED_NATIVE_DRAWING",
+  "generation_calls": 0,
+  "near_state": "same palm stabilizes folded cloth",
+  "far_state": "same material point remains pinched; whole jade/wrist/hand follows inward lip",
+  "far_delta_from048": [
+    -30.0,
+    8.0
+  ],
+  "far_contact_target": [
+    681.098467936869,
+    670.61030076984
+  ],
+  "far_contact_source_material_point_same": true,
+  "whole_near_arm": {
+    "method": "native cuff plane fixed; continuous native upper-arm displacement to elbow; whole native forearm affine; whole native open palm similarity; no mesh or per-finger transforms",
+    "upper_source": "locked048 actual skin/ink only",
+    "forearm_source": "locked048 actual skin/ink only; closed grip excluded beyond x407",
+    "palm_source": "collab/reviews/20261017_1813_s29_complete_candidates/complete6_actual/raw/P.png",
+    "native_source_cuff": [
+      174.0,
+      611.0
+    ],
+    "native_source_elbow": [
+      174.0,
+      689.0
+    ],
+    "native_source_wrist": [
+      406.0,
+      701.0
+    ],
+    "target_cuff": [
+      174.0,
+      611.0
+    ],
+    "target_elbow": [
+      211.82882173338098,
+      692.6638245875374
+    ],
+    "target_wrist": [
+      455.0,
+      810.0
+    ],
+    "projected_upper_guide_length": 89.99999999999999,
+    "projected_forearm_guide_length": 270.0,
+    "upper_affine_M": [
+      [
+        0.8620070373128951,
+        0.48498489401770484
+      ],
+      [
+        -0.3993042294079103,
+        1.0469721100966336
+      ]
+    ],
+    "upper_affine_t": [
+      -272.3149947372614,
+      40.77897664793329
+    ],
+    "forearm_affine_M": [
+      [
+        1.0666806786300436,
+        -0.3582282646292545
+      ],
+      [
+        0.460213675823972,
+        0.880550218441756
+      ]
+    ],
+    "forearm_affine_t": [
+      273.0456579813098,
+      5.88754448779639
+    ],
+    "palm_affine_M": [
+      [
+        0.9,
+        -0.0
+      ],
+      [
+        0.0,
+        0.9
+      ]
+    ],
+    "palm_affine_t": [
+      11.300000000000011,
+      129.60000000000002
+    ],
+    "whole_palm_rotation_degrees": 0,
+    "whole_palm_uniform_scale": 0.9,
+    "not_measured_3D_bones": true,
+    "native_cuff_elbow_wrist_redraw_still_required": true
+  },
+  "near_forearm_and_upper_arm_foreground_prop_occlusion_pixels": 1269,
+  "near_forearm_over_neck_is_foreground_occlusion_not_prop_warp": true,
+  "near_whole_palm_props_overlap_pixels": 0,
+  "near_whole_palm_cloth_alpha_coverage_fraction": 1.0,
+  "palm_support_required": true,
+  "outer_feather_cover_pixels": 185,
+  "original_props_RGBA_SHA256": "c006b3fb3d05d29a4a3d16b06496308bce34797e93a76bc80c0e5511cdcd2704",
+  "original_props_geometry_changed": false,
+  "four_original_rods_geometry_changed": false,
+  "same_master_SHA256": "18b478ba2734d3f7f30e254c73284c80bd8d4f4c7e428a4a304a461916c010f9",
+  "source_raw_SHA256": "b8e3ade55a06042ee48123524528450f8f259cba7aae61c6a262394400d76b23",
+  "unknown_shirt_is_unfinished_volume_guide": true
+}

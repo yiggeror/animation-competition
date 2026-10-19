@@ -1,0 +1,82 @@
+{
+  "status": "PASS_TECHNICAL_PACK_CONSISTENCY_ONLY_NOT_NATIVE_OR_SCENE",
+  "generation_calls": 0,
+  "renders": 0,
+  "authoritative_source_hashes_verified": 20,
+  "locked048_and_sole_complete_master_unchanged": true,
+  "new054_cloth_changes_only_released_source_domain_pixels": 670,
+  "near060_and066_arm_byte_identical": true,
+  "exposures_explicit_new_directive": [
+    {
+      "state": "048",
+      "first_frame": "48",
+      "last_frame": "53",
+      "count": "6",
+      "fps": "24",
+      "start_seconds": "2.00",
+      "end_seconds_exclusive": "2.25",
+      "status": "LOCKED_NATIVE_HOLD"
+    },
+    {
+      "state": "054",
+      "first_frame": "54",
+      "last_frame": "59",
+      "count": "6",
+      "fps": "24",
+      "start_seconds": "2.25",
+      "end_seconds_exclusive": "2.50",
+      "status": "TECHNICAL_TARGET_PENDING_ASTRA_INPUT_GATE"
+    },
+    {
+      "state": "060",
+      "first_frame": "60",
+      "last_frame": "65",
+      "count": "6",
+      "fps": "24",
+      "start_seconds": "2.50",
+      "end_seconds_exclusive": "2.75",
+      "status": "TECHNICAL_TARGET_PENDING_ASTRA_INPUT_GATE"
+    },
+    {
+      "state": "066",
+      "first_frame": "66",
+      "last_frame": "71",
+      "count": "6",
+      "fps": "24",
+      "start_seconds": "2.75",
+      "end_seconds_exclusive": "3.00",
+      "status": "TECHNICAL_TARGET_PENDING_ASTRA_INPUT_GATE"
+    }
+  ],
+  "actual_visual_review": "root plus existing cloud; see ACTUAL_TECHNICAL_REVIEW.json",
+  "remaining_gate": "Astra actual-image input freeze; then native whole-chain drawing; no generation run",
+  "states": [
+    {
+      "frame": 54,
+      "whole_palm_props_overlap": 0,
+      "cloth_support_fraction": 0.0,
+      "feather_cover": 8,
+      "head_eyes_lower_body_RGBA_changes": 0,
+      "near_forearm_foreground_prop_overlap": 0,
+      "cloth_inversions": 0
+    },
+    {
+      "frame": 60,
+      "whole_palm_props_overlap": 0,
+      "cloth_support_fraction": 1.0,
+      "feather_cover": 43,
+      "head_eyes_lower_body_RGBA_changes": 0,
+      "near_forearm_foreground_prop_overlap": 1269,
+      "cloth_inversions": 0
+    },
+    {
+      "frame": 66,
+      "whole_palm_props_overlap": 0,
+      "cloth_support_fraction": 1.0,
+      "feather_cover": 185,
+      "head_eyes_lower_body_RGBA_changes": 0,
+      "near_forearm_foreground_prop_overlap": 1269,
+      "cloth_inversions": 0
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "generation_calls": 0,
+  "renders": 0,
+  "review_status": "TECHNICAL_ACTION_DIRECTION_READY_FOR_ASTRA_INPUT_GATE_ONLY",
+  "root_actual_images_viewed": [
+    "THREE_FULL_TECHNICAL_TARGETS_REVIEW.png",
+    "LOCKED048_TO_THREE_TARGETS_ARMS_1TO1.png",
+    "ANATOMICAL_PALM_EXTRACTION_ACTUAL.png",
+    "DIAGNOSTIC_RELEASE_REVEAL_SOURCE.png"
+  ],
+  "existing_cloud_reviewer": "/root/s09_motion_audit_61sol",
+  "cloud_actual_images_viewed": [
+    "THREE_FULL_TECHNICAL_TARGETS_REVIEW.png",
+    "LOCKED048_TO_THREE_TARGETS_ARMS_1TO1.png",
+    "F054/F054_TECHNICAL_INPUT_NOT_NATIVE_RGBA.png",
+    "F060/F060_TECHNICAL_INPUT_NOT_NATIVE_RGBA.png",
+    "F066/F066_TECHNICAL_INPUT_NOT_NATIVE_RGBA.png"
+  ],
+  "cloud_findings": [
+    "054 released original neck3 and palm hovers",
+    "060/066 palm sits on clear supported cloth with no palm/neck penetration",
+    "same far grip moves inward, material phase continuous and finite feather coverage monotone",
+    "no new hand/bangle/rod topology error"
+  ],
+  "required_native_drawing_boundaries": [
+    "redraw full sleeve/elbow/wrist/palm chain; current seams are not finished native anatomy",
+    "forearm has actual 2D curved-neck occlusion; it must be suspended in front/above neck, with pressure only at palm pad",
+    "redraw whole exposed flat-blue blouse; do not reproduce it as hard plate/apron"
+  ],
+  "native_pass": false,
+  "scene_pass": false,
+  "Astra_input_freeze": "PENDING"
+}
