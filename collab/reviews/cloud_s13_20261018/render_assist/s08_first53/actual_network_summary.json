@@ -1,0 +1,146 @@
+{
+  "actual_render_runs": 1,
+  "actual_frames": [
+    49,
+    50,
+    51,
+    52
+  ],
+  "actual_frame_PNG_matches_direct_deliveries": true,
+  "browser_versions": [
+    "154.0.8037.57"
+  ],
+  "observed_responses": 44,
+  "observed_non200_responses": [],
+  "requestfailed": [],
+  "pageerrors": [],
+  "console_errors_with_actual_locations": [
+    {
+      "utc": "2026-10-19T01:42:03.796Z",
+      "event": "console_error",
+      "page": 0,
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:37577/favicon.ico",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "F049_asset_responses": [
+    {
+      "utc": "2026-10-19T01:42:05.101Z",
+      "event": "response",
+      "page": 1,
+      "url": "http://127.0.0.1:37577/collab/reviews/20261019_0123_s08_first51_scene/frames/F049_forearms_elbows_original_pixels.png",
+      "status": 200,
+      "resource_type": "fetch",
+      "content_type": "image/png"
+    },
+    {
+      "utc": "2026-10-19T01:42:05.104Z",
+      "event": "response",
+      "page": 1,
+      "url": "http://127.0.0.1:37577/collab/reviews/20261019_0123_s08_first51_scene/frames/F049_table_box_original_pixels.png",
+      "status": 200,
+      "resource_type": "fetch",
+      "content_type": "image/png"
+    },
+    {
+      "utc": "2026-10-19T01:42:05.105Z",
+      "event": "response",
+      "page": 1,
+      "url": "http://127.0.0.1:37577/collab/reviews/20261019_0123_s08_first51_scene/frames/F049_body_behind_original_pixels.png",
+      "status": 200,
+      "resource_type": "fetch",
+      "content_type": "image/png"
+    },
+    {
+      "utc": "2026-10-19T01:42:05.209Z",
+      "event": "response",
+      "page": 2,
+      "url": "http://127.0.0.1:37577/collab/reviews/20261019_0123_s08_first51_scene/frames/F049_body_behind_original_pixels.png",
+      "status": 200,
+      "resource_type": "fetch",
+      "content_type": "image/png"
+    },
+    {
+      "utc": "2026-10-19T01:42:05.209Z",
+      "event": "response",
+      "page": 2,
+      "url": "http://127.0.0.1:37577/collab/reviews/20261019_0123_s08_first51_scene/frames/F049_forearms_elbows_original_pixels.png",
+      "status": 200,
+      "resource_type": "fetch",
+      "content_type": "image/png"
+    },
+    {
+      "utc": "2026-10-19T01:42:05.211Z",
+      "event": "response",
+      "page": 2,
+      "url": "http://127.0.0.1:37577/collab/reviews/20261019_0123_s08_first51_scene/frames/F049_table_box_original_pixels.png",
+      "status": 200,
+      "resource_type": "fetch",
+      "content_type": "image/png"
+    }
+  ],
+  "F046_reverse_reuse_asset_responses": [
+    {
+      "utc": "2026-10-19T01:42:07.380Z",
+      "event": "response",
+      "page": 2,
+      "url": "http://127.0.0.1:37577/collab/reviews/20261019_0123_s08_first51_scene/frames/F046_body_behind_original_pixels.png",
+      "status": 200,
+      "resource_type": "fetch",
+      "content_type": "image/png"
+    },
+    {
+      "utc": "2026-10-19T01:42:07.380Z",
+      "event": "response",
+      "page": 2,
+      "url": "http://127.0.0.1:37577/collab/reviews/20261019_0123_s08_first51_scene/frames/F046_forearms_elbows_original_pixels.png",
+      "status": 200,
+      "resource_type": "fetch",
+      "content_type": "image/png"
+    },
+    {
+      "utc": "2026-10-19T01:42:07.380Z",
+      "event": "response",
+      "page": 2,
+      "url": "http://127.0.0.1:37577/collab/reviews/20261019_0123_s08_first51_scene/frames/F046_table_box_original_pixels.png",
+      "status": 200,
+      "resource_type": "fetch",
+      "content_type": "image/png"
+    },
+    {
+      "utc": "2026-10-19T01:42:07.516Z",
+      "event": "response",
+      "page": 1,
+      "url": "http://127.0.0.1:37577/collab/reviews/20261019_0123_s08_first51_scene/frames/F046_body_behind_original_pixels.png",
+      "status": 200,
+      "resource_type": "fetch",
+      "content_type": "image/png"
+    },
+    {
+      "utc": "2026-10-19T01:42:07.516Z",
+      "event": "response",
+      "page": 1,
+      "url": "http://127.0.0.1:37577/collab/reviews/20261019_0123_s08_first51_scene/frames/F046_forearms_elbows_original_pixels.png",
+      "status": 200,
+      "resource_type": "fetch",
+      "content_type": "image/png"
+    },
+    {
+      "utc": "2026-10-19T01:42:07.522Z",
+      "event": "response",
+      "page": 1,
+      "url": "http://127.0.0.1:37577/collab/reviews/20261019_0123_s08_first51_scene/frames/F046_table_box_original_pixels.png",
+      "status": 200,
+      "resource_type": "fetch",
+      "content_type": "image/png"
+    }
+  ],
+  "observed_successful_runtime_files_Git_exact": 17,
+  "favicon_caveat": "Console favicon404 location may exist without response event. Preserve exact events; do not say every request200 or infer historical unknown first41URL."
+}
