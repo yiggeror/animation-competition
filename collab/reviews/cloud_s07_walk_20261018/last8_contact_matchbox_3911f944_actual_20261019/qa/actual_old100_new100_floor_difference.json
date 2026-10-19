@@ -1,0 +1,15 @@
+{
+  "comparison": "Both actual lossless render100 PNGs; new3911 vs oldabc2059; no MP4 compression in metrics",
+  "measured_floor_ROI_xyxy": [
+    1300,
+    865,
+    1480,
+    970
+  ],
+  "RGBA_or_RGB_changed_pixels": 831,
+  "max_channel_change_gt2_pixels": 382,
+  "max_RGB_channel_difference": 10,
+  "mean_RGB_difference": 0.11582010582010582,
+  "difference_heat_map": "12x red channel only; diagram of measured differences, not a corrected scene image",
+  "visual_limit": "New actual100 still shows human shadow extending screen-right toward table-foot region; residual extent is handed to Astra, no claim that all long-shadow appearance is eliminated."
+}
