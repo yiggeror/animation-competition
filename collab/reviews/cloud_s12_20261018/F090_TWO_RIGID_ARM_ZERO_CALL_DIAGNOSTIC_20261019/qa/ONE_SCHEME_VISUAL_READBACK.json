@@ -1,0 +1,33 @@
+{
+  "status": "SINGLE_RIGID_SCHEME_REACHABLE_BUT_PIXEL_SPLIT_NOT_PRODUCTION_NATIVE_JOINT_REDRAW_REQUIRED",
+  "source_real090_SHA256_unchanged": "0f1caa9edf588cdf525b728770a9079ac97b01c81ff09a398ec468add59ee209",
+  "source_real090_Canvas_SHA256_unchanged": "9d1174c6e6f0afcf186877c51bea85eca4f26b766652623c5dccf56bc2aadfd4",
+  "new_imagegen_calls": 0,
+  "new_whole_person_fits": 0,
+  "rigid_schemes": 1,
+  "mask_extraction_trials": 1,
+  "reference_Canvas_count": 1,
+  "new_production_actual_Canvas": 0,
+  "new_qualified090": 0,
+  "next094_calls": 0,
+  "source_head_neck_y_lt400_RGBA_changes": 0,
+  "source_pants_support_y_ge970_RGBA_changes": 0,
+  "original_ground_shadow_and_box_RGBA_changes": 0,
+  "actual_reference_Canvas_SHA256": "c1662a8aba0c864458a14ecaf3a468224d2b7ca1c8a54ebb94568568681c6a5b",
+  "closed_grip_point_errors_native": {
+    "R": 1.1368683772161603e-13,
+    "L": 1.6077746776921858e-13
+  },
+  "wrist_to_closed_grip_vs_shaft_angles_degrees": {
+    "R": -4.976402062496002,
+    "L": -25.738077166131266
+  },
+  "visual_findings": [
+    "Both fixed-length chains reach frozen grips with original outward elbow branch.",
+    "Actual reference shows near bare hand now at lower shaft and jade hand at upper shaft; geometric coincidence alone is not qualification.",
+    "One source extraction leaves sleeve/cuff voids and old skin/finger remnants; NOT a natural production join. No second extraction trial.",
+    "Separate clean full arm-volume correction has no competing old hand/arm source, and is a technical reference with real rigid forearm/hand pixels; no new generated art.",
+    "Local prompt inputs are actual registered090 body, clean unique arm correction and genuine code props ONLY. Failed split target/scene are review evidence and excluded from model inputs."
+  ],
+  "network_errors": []
+}
