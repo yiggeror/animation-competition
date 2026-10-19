@@ -1,0 +1,36 @@
+{
+  "requests": 2,
+  "requests_per_frame": 1,
+  "retries": 0,
+  "048_started_after_042_actual_pass": true,
+  "only_new_folder_changed": true,
+  "checks": [
+    {
+      "frame": 42,
+      "ordered_four_input_hashes_exact": true,
+      "raw_equals_full_tool_return": true,
+      "M_exact_to_8c": true,
+      "existing_actual_human_RGBA_changes": 0,
+      "true_original_props_RGBA_changes": 0,
+      "native_sheet_interior_alpha_under255": 0,
+      "normal_size_raw_whole_contact_actually_viewed_by_root_and_existing_cloud_helper": true,
+      "raw_SHA256": "0b4d2a4df10e793a884437c300597f7fa9ac95c932daf05fd4217c683cb6320a",
+      "reintegration_SHA256": "fc5783c963e3e13dc1425b21cf0d70cbc1bbf09f152486cde8edcb647333c38e",
+      "result": "FINITE_CLOTH_STATIC_SELF_CHECK_PASS_PENDING_ASTRA_REVIEW"
+    },
+    {
+      "frame": 48,
+      "ordered_four_input_hashes_exact": true,
+      "raw_equals_full_tool_return": true,
+      "M_exact_to_8c": true,
+      "existing_actual_human_RGBA_changes": 0,
+      "true_original_props_RGBA_changes": 0,
+      "native_sheet_interior_alpha_under255": 0,
+      "normal_size_raw_whole_contact_actually_viewed_by_root_and_existing_cloud_helper": true,
+      "raw_SHA256": "863f0be9124550eaa74b55259fc280881171190a5085340ca505de05558d100c",
+      "reintegration_SHA256": "da593981fb27d88c0eb1bb7ddc19a36ed76162a1db0629816324a1d2be00bb2f",
+      "result": "FINITE_CLOTH_STATIC_SELF_CHECK_PASS_PENDING_ASTRA_REVIEW"
+    }
+  ],
+  "limitation": "Only static cloth repair checked. Pattern phase differs across the two native drawings; no full-scene or animation acceptance claimed."
+}

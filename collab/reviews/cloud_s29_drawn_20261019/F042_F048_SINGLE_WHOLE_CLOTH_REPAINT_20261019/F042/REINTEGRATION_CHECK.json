@@ -1,0 +1,37 @@
+{
+  "frame": 42,
+  "new_generation_requests": 1,
+  "retries": 0,
+  "source_base_commit": "8c41ca4517978ca3a4e6a44260ed1d3426f12edd",
+  "raw_sha256": "0b4d2a4df10e793a884437c300597f7fa9ac95c932daf05fd4217c683cb6320a",
+  "output_sha256": "fc5783c963e3e13dc1425b21cf0d70cbc1bbf09f152486cde8edcb647333c38e",
+  "cloth_output_canvas": [
+    1024,
+    1536
+  ],
+  "existing_M_unchanged": [
+    [
+      0.9151612677614226,
+      -0.017035527950310197,
+      43.758117685697016
+    ],
+    [
+      0.017035527950310204,
+      0.9151612677614226,
+      24.881128130690286
+    ]
+  ],
+  "cloth_reintegration_transform": "identity in the already-current-M final canvas; no fit, resize or warp",
+  "native_cloth_bbox_inclusive": [
+    253,
+    657,
+    1008,
+    1083
+  ],
+  "native_cloth_opaque_component_pixels": 192221,
+  "native_cloth_interior_pixels_alpha_under250": 0,
+  "actual_human_protection_RGBA_changes": 0,
+  "true_original_props_protection_RGBA_changes": 0,
+  "layer_order": "existing body/silhouette outside new sheet retained; obsolete upper cloth protrusion retired along new native top edge; opaque one-piece new cloth; then exact existing human/true-prop pixels",
+  "status": "FINITE_CLOTH_STATIC_SELF_CHECK_PASS_PENDING_ASTRA_REVIEW"
+}
