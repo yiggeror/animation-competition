@@ -1,0 +1,82 @@
+{
+  "status": "F090_REFERENCE_SOURCE_CHAIN_NOT_NEW_PERSON_ART",
+  "sole_final086": {
+    "commit": "7eba0f67b074a5508b15531611f493b620ae3767",
+    "path": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F086_COMPLETE_actual_call01_20261019/candidate/F086.png",
+    "SHA256": "dd59078c720c39aef411fd3c5ee12a09f18b9dd85ba69376c2d2481205a6e8be",
+    "actual_Canvas_SHA256": "a272a02606f09495c6557b9f94ef05439e364fbee88ac6ed4bedaf03cc95edd9"
+  },
+  "actual_two_model_inputs_for_gate": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F090_COMPLETE_TARGET_FROM_FINAL086_20261019/inputs/01_F090_FULL_VISIBLE_RISE_AND_BOTH_ELBOW_RETRACTION.png",
+      "SHA256": "2dbd1accb310c08ba55933adbc0d14e2c8bcc8bf2ad8c243e150140cc8af2027",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F090_COMPLETE_TARGET_FROM_FINAL086_20261019/inputs/02_SAME_F090_TRUE_PAPER_TURN_RODS_BOX_GROUND_CONTEXT.png",
+      "SHA256": "b744cc392c3c1017db8d8257ef13515826cd48c71633e68b9c54a505742f5238",
+      "size": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "exact_full_prompt_SHA256": "fc12cfc8acbb3f4eae76a9a70eaf34e2b2f8e0b34306f355c014fc025c144bf3",
+  "sources": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_actual_call01_20261019/candidate/F086.png",
+      "role": "sole qualified actual086 source pixels; no retired mother",
+      "SHA256": "dd59078c720c39aef411fd3c5ee12a09f18b9dd85ba69376c2d2481205a6e8be"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_actual_call01_20261019/layers/F086_FG_true_front_fingers.png",
+      "role": "qualified actual front fingers, split by depth and moved only with whole hands",
+      "SHA256": "35fa234126aad35cbf1420768b78508a82da0230db94eae5f75ed13104edcc95"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_actual_call01_20261019/actual_scene/F086_native_ground_shadows_actual_layer.png",
+      "role": "unchanged real support shadow",
+      "SHA256": "242ac036e9546967e05e23b42f418deea70923087132bbf8aa1851a2c994ede4"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_actual_call01_20261019/actual_scene/F086_box_front_actual_layer.png",
+      "role": "unchanged original box front",
+      "SHA256": "4995c6a3e636f9a81a072773658da9c8607579bfc20235acfb0700ad6decbd34"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_TARGET_FROM_FINAL082_20261019/geometry/F086_FULL_RISE_BOTH_ARM_TRUE_PROP_AND_FIXED_SUPPORT_GEOMETRY.json",
+      "role": "actual086 true code prop points ONLY, not086 construction person pixels",
+      "SHA256": "1aa1ab8db721d14b4bb83b42f815915eb200b86ba8781b22b1cccb792910ca0d"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/geometry/three_key_pose_proposal.json",
+      "role": "frozen code-puppet poses and rod model lengths ONLY; old code-human anatomy not used",
+      "SHA256": "836d85d5b843aeae107693e6023772e5a91572787fa7dbb0e408e4773c0ff13f"
+    },
+    {
+      "path": "js/lamp/crane.js",
+      "role": "actual makeCrane artwork and part rig",
+      "SHA256": "212e8a4fdad764fa50928c60a8efc956ad660c62377ea1ea152433a6fea4e642"
+    },
+    {
+      "path": "js/puppet.js",
+      "role": "actual solve/pointOn/drawPuppet",
+      "SHA256": "04b80760b97185ab8aea7826383d85f3c9d7789cd01aa1d8664fdc74bc4c30b7"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_TARGET_FROM_FINAL082_20261019/masks/FINAL082_REAL_SHINS_ANKLES_SHOES_AND_EMPTY_FIXED.png",
+      "role": "qualified real fixed support ownership, evaluated on actual086 pixels",
+      "SHA256": "113c53943146244715ea1e8caa7c9ed2c4cd8cfce97c2280ad4524d5e976ae26"
+    }
+  ],
+  "final_person_reference_builder": "tools/build_visible090_segment_mesh_reference.py",
+  "retired_failed_arm_TPS": "tools/RETIRED_GLOBAL_ARM_TPS_REFERENCE_FAILURE.py.disabled",
+  "true_code_prop_builder": "tools/render_true090_prop_reference_once.cjs",
+  "new090_model_calls": 0,
+  "actual090_full_Canvas": 0,
+  "code_prop_only_reference_batches": 1,
+  "new094_model_calls": 0
+}

@@ -1,0 +1,116 @@
+"""Full visible090 planning reference from REAL qualified086 pixels only.
+This is not newly drawn character art. Both complete arms articulate using
+source illustration proxies; both closed hands follow their physical rods.
+"""
+from pathlib import Path
+from PIL import Image,ImageDraw,ImageFont,ImageFilter
+import numpy as np,json,math,hashlib
+from scipy.interpolate import RBFInterpolator
+from scipy.ndimage import map_coordinates,binary_dilation
+O=Path(__file__).resolve().parents[1];R=O.parent;M=R/'F086_COMPLETE_actual_call01_20261019';P=R/'F086_COMPLETE_TARGET_FROM_FINAL082_20261019'
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();g=json.loads((O/'geometry/F090_COMPLETE_PERSON_AND_RIGID_PROP_PLAN.json').read_text());assert sha(M/'candidate/F086.png')==g['sole_final086']['SHA256']
+B=np.asarray(Image.open(M/'candidate/F086.png').convert('RGBA'));Y,X=np.mgrid[:1536,:1024]
+UT=np.asarray(g['torso_head_native_matrix']);H=np.asarray(g['hip_source_visual_proxy']);Ht=np.asarray(g['hip_target']);K=np.asarray(g['knee_support_visual_proxy'])
+fixed=np.asarray(Image.open(P/'masks/FINAL082_REAL_SHINS_ANKLES_SHOES_AND_EMPTY_FIXED.png').convert('L'))>0;active=~fixed
+feet=np.asarray(Image.open(P/'masks/ORIGINAL_TRUE_SHOES_ANKLES_SURROUNDING_EMPTY_HARD.png').convert('L'))>0
+curve=np.array([[1070,225],[1085,235],[1098,270],[1112,315],[1130,360],[1150,400],[1170,445],[1190,485],[1215,520],[1245,550],[1270,552],[1290,540],[1304,540],[1315,560],[1350,580],[1535,580]],float);vx=np.interp(np.arange(1536),curve[:,0],curve[:,1])
+def rot(deg):
+ a=math.radians(deg);return np.array([[math.cos(a),-math.sin(a)],[math.sin(a),math.cos(a)]])
+RL=rot(6)
+def at(m,q):return np.asarray(m)@np.r_[q,1.]
+def smooth(v):v=np.clip(v,0,1);return v*v*(3-2*v)
+armPolys={
+ 'L':[(492,486),(604,488),(704,533),(810,545),(925,579),(1010,573),(1023,704),(929,715),(806,674),(700,655),(617,665),(536,608)],
+ 'R':[(477,531),(568,536),(626,595),(704,640),(809,703),(924,730),(1023,717),(1023,851),(938,861),(794,815),(686,780),(609,766),(544,728),(497,652)]}
+armMasks={};handMasks={}
+for role,poly in armPolys.items():
+ im=Image.new('L',(1024,1536));ImageDraw.Draw(im).polygon(poly,fill=255);armMasks[role]=np.asarray(im)>0
+ a=g['arms_actual_source_projected_proxies_not_hidden_bones'][role];w=np.asarray(a['source']['wrist']);grip=np.asarray(a['source_true_grip']);v=grip-w
+ u=((X-w[0])*v[0]+(Y-w[1])*v[1])/np.dot(v,v)
+ dist=np.abs((X-w[0])*v[1]-(Y-w[1])*v[0])/np.linalg.norm(v)
+ handMasks[role]=binary_dilation(armMasks[role]&(u>=-.18)&(dist<90),iterations=10)
+def armDesired(q,role):
+ a=g['arms_actual_source_projected_proxies_not_hidden_bones'][role];s=np.asarray(a['source']['shoulder']);e=np.asarray(a['source']['elbow']);w=np.asarray(a['source']['wrist']);grip=np.asarray(a['source_true_grip']);q=np.asarray(q)
+ U=np.asarray(a['upper_matrix']);F=np.asarray(a['forearm_matrix']);Hand=np.asarray(a['whole_closed_hand_matrix_same_rod_angle'])
+ vu=e-s;vf=w-e;tg=float(np.dot(q-w,grip-w)/np.dot(grip-w,grip-w))
+ if tg>=0:return at(Hand,q)
+ tu=float(np.clip(np.dot(q-s,vu)/np.dot(vu,vu),0,1));tf=float(np.clip(np.dot(q-e,vf)/np.dot(vf,vf),0,1))
+ du=float(np.linalg.norm(q-(s+tu*vu)));df=float(np.linalg.norm(q-(e+tf*vf)))
+ if du<df:
+  if tu<.18:
+   v=smooth(tu/.18);return (1-v)*at(UT,q)+v*at(U,q)
+  v=smooth((tu-.83)/.17);return (1-v)*at(U,q)+v*at(F,q)
+ if tf<.15:
+  v=smooth(tf/.15);return (1-v)*at(U,q)+v*at(F,q)
+ v=smooth((tf-.83)/.17);return (1-v)*at(F,q)+v*at(Hand,q)
+def desired(q):
+ q=np.asarray(q,float);x,y=q;xx=int(np.clip(round(x),0,1023));yy=int(np.clip(round(y),0,1535))
+ if fixed[yy,xx]:return q
+ for role in ['R','L']:
+  if armMasks[role][yy,xx]:return armDesired(q,role)
+ if y<=800:return at(UT,q)
+ if y<=925:
+  u=smooth((y-800)/125);return Ht+rot(-5+11*u)@(q-H)
+ u=smooth((1315-y)/220);v=smooth(max(0.,x-(vx[yy]-24))/75)
+ return q+u*v*((K+RL@(q-K))-q)
+controls={}
+def add(q,why):
+ q=np.asarray(q,float);controls[tuple(q)]=(q,desired(q),why)
+for y in [0,150,250,350,430,480,530,580,630,680,730,780,820,860,900,925,970,1020,1060,1100,1140,1180,1220,1260,1290,1315,1340,1400,1535]:
+ for x in [0,130,190,230,270,310,350,390,430,470,510,550,590,630,670,710,780,900,1023]:add([x,y],'whole real086 source-pixel reference, active knees and fixed real supports')
+for y in range(480,861,20):
+ for x in range(450,1024,20):
+  if armMasks['R'][min(y,1535),min(x,1023)] or armMasks['L'][min(y,1535),min(x,1023)]:add([x,y],'complete source arms bend through normal shoulder/elbow/wrist chains')
+for role,a in g['arms_actual_source_projected_proxies_not_hidden_bones'].items():
+ for name in ['shoulder','elbow','wrist']:
+  q=np.asarray(a['source'][name]);add(q,'actual visible'+role+name+' proxy, not hidden bone')
+  for dx,dy in [(0,-18),(0,18),(-18,0),(18,0)]:add(q+[dx,dy],'whole illustrated joint cross-section natural reference')
+add(H,'hip rebound from sole qualified real086');add(K,'fixed true support proxy')
+rows=list(controls.values());s=np.array([v[0] for v in rows]);t=np.array([v[1] for v in rows]);rbf=RBFInterpolator(t,s-t,kernel='thin_plate_spline',smoothing=.75)
+y,x=np.mgrid[0:1536:2,0:1024:2];p=np.c_[x.ravel(),y.ravel()];d=np.empty_like(p,float)
+for i in range(0,len(p),7000):d[i:i+7000]=rbf(p[i:i+7000])
+d=d.reshape(768,512,2);sx=X+map_coordinates(d[:,:,0],[Y/2,X/2],order=1,mode='nearest');sy=Y+map_coordinates(d[:,:,1],[Y/2,X/2],order=1,mode='nearest')
+for role in ['L','R']:
+ m=np.asarray(g['arms_actual_source_projected_proxies_not_hidden_bones'][role]['whole_closed_hand_matrix_same_rod_angle']);inv=np.linalg.inv(np.vstack([m,[0,0,1]]))[:2]
+ hx=inv[0,0]*X+inv[0,1]*Y+inv[0,2];hy=inv[1,0]*X+inv[1,1]*Y+inv[1,2];own=map_coordinates(handMasks[role].astype(float),[hy,hx],order=0,mode='constant')>.5
+ sx[own]=hx[own];sy[own]=hy[own]
+inv=np.linalg.inv(np.vstack([UT,[0,0,1]]))[:2];hx=inv[0,0]*X+inv[0,1]*Y+inv[0,2];hy=inv[1,0]*X+inv[1,1]*Y+inv[1,2];own=hy<475;sx[own]=hx[own];sy[own]=hy[own]
+pm=B.astype(float)/255;pm[:,:,:3]*=pm[:,:,3:4];n=np.stack([map_coordinates(pm[:,:,i],[sy,sx],order=1,mode='constant') for i in range(4)],axis=2);v=n[:,:,3]>0;n[v,:3]/=n[v,3:4];n=np.uint8(np.clip(n*255+.5,0,255));n[fixed]=B[fixed]
+assert np.array_equal(n[fixed],B[fixed]);Image.fromarray(n).save(O/'anatomy/F090_COMPLETE_VISIBLE_PERSON_REFERENCE_ONLY.png')
+# Both true closed front-finger groups move with their WHOLE hand/rod, never
+# pulled independently. The source FG is split only by existing depth rows.
+fg0=np.asarray(Image.open(M/'layers/F086_FG_true_front_fingers.png').convert('RGBA'));fgOwn=np.zeros((1536,1024),bool)
+for role in ['L','R']:
+ a=fg0.copy();a[Y>=710 if role=='L' else Y<710]=0
+ m=np.asarray(g['arms_actual_source_projected_proxies_not_hidden_bones'][role]['whole_closed_hand_matrix_same_rod_angle']);iv=np.linalg.inv(np.vstack([m,[0,0,1]]))[:2]
+ fgOwn|=np.asarray(Image.fromarray(a).transform((1024,1536),Image.Transform.AFFINE,tuple(iv.ravel()),Image.Resampling.BICUBIC))[:,:,3]>0
+fg=np.zeros_like(n);fg[fgOwn]=n[fgOwn];bg=n.copy();bg[fgOwn]=0
+Image.fromarray(bg).save(O/'anatomy/F090_REFERENCE_BG.png');Image.fromarray(fg).save(O/'anatomy/F090_REFERENCE_TRUE_FRONT_GRIPS.png');assert np.array_equal(np.maximum(bg,fg),n)
+for name,a in [('F090_COMPLETE_ACTIVITY_HEAD_BODY_ARMS_THIGHS_FULL_KNEES_FOLDS',active),('REAL086_SHINS_ANKLES_SHOES_AND_BLANK_FIXED',fixed),('REAL_ORIGINAL_SHOES_ANKLES_SURROUNDING_EMPTY_HARD',feet)]:Image.fromarray(np.uint8(a)*255).save(O/f'masks/{name}.png')
+master=np.zeros_like(B);master[fixed]=B[fixed];Image.fromarray(master).save(O/'anatomy/FINAL086_TRUE_FIXED_SUPPORT_MASTER_NATIVE.png')
+font=lambda s:ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',s)
+first=Image.new('RGBA',(1024,1536),'#e1e4e6');first.alpha_composite(Image.fromarray(n));dr=ImageDraw.Draw(first)
+for y,txt,sz in [(18,'F090 / HIPS RISE / BOTH ELBOWS RETRACT / COMPLETE ROUND KNEES',20),(55,'SOLE QUALIFIED ACTUAL086 PIXELS / POSE REFERENCE ONLY',20),(91,'Two complete shoulder-elbow-wrist-palm chains; true closed grips remain.',18),(1410,'Full knee faces + natural folds must be NEW drawing; no growing box cut.',18),(1450,'Current real shins/ankles/shoes/blank and ground support remain native.',18)]:dr.text((18,y),txt,font=font(sz),fill='#25313b')
+first.convert('RGB').save(O/'inputs/01_F090_FULL_VISIBLE_RISE_AND_BOTH_ELBOW_RETRACTION.png')
+
+props=Image.open(O/'code_props/F090_TRUE_CRANE_AND_TWO_PHYSICALLY_RIGID_RODS_REFERENCE.png').convert('RGBA')
+base=Image.open(R/'right_hand_lower_rod_inputs_20261019/first034_040/code_props/background_box_cloth_UNCHANGED.png').convert('RGBA');base=base.copy()
+# Release only the old pressure fold; current code-crane alpha supplies cloth
+# shadow. Static box/room and old actual support shadow are not reconstructed.
+k=4;c=Image.new('RGBA',(1920*k,1080*k));cd=ImageDraw.Draw(c);cd.polygon([(int(x*k),int(y*k)) for x,y in [(1010,800),(1850,800),(1838,764),(1022,764)]],fill='#2f4a78')
+for j in range(16):
+ cx=1050+j*52;cy=784+(j%2)*6
+ for xx,yy,rr in [(cx,cy,4),(cx+26,cy-9,2.5)]:cd.ellipse(((xx-rr)*k,(yy-rr)*k,(xx+rr)*k,(yy+rr)*k),fill=(235,235,225,179))
+c=c.resize((1920,1080),Image.Resampling.LANCZOS);base.paste(c.crop((1430,780,1560,800)),(1430,780))
+shadow=props.getchannel('A').transform((1920,1080),Image.Transform.AFFINE,(1,-.04/.06,795*.04/.06,0,1/.06,800-795/.06),Image.Resampling.BICUBIC).filter(ImageFilter.GaussianBlur(3));clip=Image.new('L',(1920,1080));ImageDraw.Draw(clip).polygon([(1010,800),(1850,800),(1838,764),(1022,764)],fill=255);sa=np.uint8(np.asarray(shadow)*.07)*(np.asarray(clip)>0);shade=Image.new('RGBA',(1920,1080),(14,20,30,0));shade.putalpha(Image.fromarray(sa));base.alpha_composite(shade)
+base.save(O/'code_props/F090_BOX_CLOTH_UNLOAD_CONTEXT_REFERENCE.png')
+def scene(im):return im.transform((1920,1080),Image.Transform.AFFINE,(1/.7,0,-275/.7,0,1/.7,-112/.7),Image.Resampling.BICUBIC)
+ctx=base.copy();ctx.alpha_composite(Image.open(M/'actual_scene/F086_native_ground_shadows_actual_layer.png'));ctx.alpha_composite(scene(Image.fromarray(bg)));ctx.alpha_composite(props);ctx.alpha_composite(scene(Image.fromarray(fg)));ctx.alpha_composite(Image.open(M/'actual_scene/F086_box_front_actual_layer.png'));ctx.save(O/'anatomy/F090_SAME_PERSON_TRUE_PROP_BOX_GROUND_CONTEXT_REFERENCE_ONLY.png');dr=ImageDraw.Draw(ctx);dr.text((18,18),'F090 SAME POSE + TRUE60deg CODE CRANE / PHYSICALLY RIGID RODS / UNLIT REFERENCE ONLY',font=font(22),fill='white');ctx.convert('RGB').save(O/'inputs/02_SAME_F090_TRUE_PAPER_TURN_RODS_BOX_GROUND_CONTEXT.png')
+
+overlay=Image.new('RGBA',(1024,1536),'#e1e4e6');overlay.alpha_composite(Image.fromarray(n));dr=ImageDraw.Draw(overlay)
+for role,color in [('L','#1b8c85'),('R','#bd6c22')]:
+ a=g['arms_actual_source_projected_proxies_not_hidden_bones'][role];pts=[a['target'][k] for k in ['shoulder','elbow','wrist','true_grip']];dr.line([tuple(v) for v in pts],fill=color,width=3)
+ for label,p in zip(['S','E','W','G'],pts):dr.ellipse((p[0]-5,p[1]-5,p[0]+5,p[1]+5),fill=color);dr.text((p[0]+8,p[1]-10),role+label,font=font(16),fill=color)
+dr.text((18,18),'ACTUAL-SOURCE VISIBLE ARM PROXIES / REVIEW ONLY / NOT A THIRD MODEL POSE',font=font(20),fill='#25313b');overlay.convert('RGB').save(O/'reference/SAME_F090_VISIBLE_COMPLETE_ARM_CHAINS_AND_TRUE_GRIPS.png')
+g['reference_geometry_checks']={'fixed_support_RGBA_changes':0,'fixed_visible_pixels':int((fixed&(B[:,:,3]>0)).sum()),'source_reference_pixels_adopted_as_new_art':0,'source_controls':s.tolist(),'target_controls':t.tolist(),'imagegen_calls':0,'actual090_full_Canvas':0,'code_prop_only_reference_batches':1};(O/'geometry/F090_COMPLETE_PERSON_AND_RIGID_PROP_PLAN.json').write_text(json.dumps(g,indent=2)+'\n')
+print(json.dumps({k:v for k,v in g['reference_geometry_checks'].items() if k not in ['source_controls','target_controls']},indent=2))

@@ -1,0 +1,11 @@
+{
+  "status": "REPRODUCED_SOURCE_PIXEL_REFERENCE_MAP_FOLD_NOT_MODEL_OUTPUT",
+  "area": "090 arm/wrist target rectangle x580to980,y570to820",
+  "samples": 1066,
+  "inverse_map_negative_Jacobian_samples": 57,
+  "inverse_map_det_min": -30.470502686820026,
+  "inverse_map_det_max": 12.972844063110998,
+  "cause": "A single whole-canvas inverse TPS couples two articulated arms and torso across discontinuous piece-assignment boundaries; the mapping folds and samples background inside real limb surfaces. This is reference construction failure, not a failed drawing or model result.",
+  "single_fix_hypothesis": "Use explicitly connected positive-orientation per-arm piecewise affine image ribbons and rigid closed-hand layers over a separate torso reference. Do not repair symptoms by painting skin or filling target pixels.",
+  "new_imagegen_calls": 0
+}
