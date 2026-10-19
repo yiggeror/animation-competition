@@ -1,0 +1,71 @@
+{
+  "status": "ONE_CORRECTED_F036_INPUT_PENDING_ASTRA",
+  "new_image_calls": 0,
+  "source032": "collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F032/S20_F032_accepted.png",
+  "source032_sha256": "b586eee0eebbd09167d27171eefccf5297b58472a736010ce871497452195b95",
+  "failed_raw_used": false,
+  "new_child_domain": "whole head/neck/chest/pelvis/two legs and two continuous arms; no shoulder/elbow rings; real palms and each own turtle shaft protected",
+  "grandma_nonrod_figure_RGBA_changes": 0,
+  "grandma_existing_approved_C_delta_pixels": 465,
+  "C_axis_source": "445d2921 / cam20_crane_lamp_left_001; reused without angle/camera change",
+  "rigid_grip_pairs": [
+    {
+      "hand": "X.R",
+      "rod": "T_H",
+      "translation_px": [
+        0,
+        0
+      ],
+      "rotation_degrees": 0,
+      "scale": 1,
+      "source_pixels": 2968,
+      "rigid_layer_RGBA_changes": 0,
+      "final_opaque_pair_RGBA_changes": 0,
+      "AA_wrist_join": "original alpha composited over new continuous forearm; no geometric warp"
+    },
+    {
+      "hand": "X.L",
+      "rod": "T_S",
+      "translation_px": [
+        0,
+        -1
+      ],
+      "rotation_degrees": 0,
+      "scale": 1,
+      "source_pixels": 3005,
+      "rigid_layer_RGBA_changes": 0,
+      "final_opaque_pair_RGBA_changes": 0,
+      "AA_wrist_join": "original alpha composited over new continuous forearm; no geometric warp"
+    }
+  ],
+  "ownership": {
+    "T_H": "X.R",
+    "T_S": "X.L",
+    "C_B": "G.L",
+    "C_N": "G.L"
+  },
+  "contact_crop_box": [
+    690,
+    270,
+    1010,
+    475
+  ],
+  "crop_scale": 3,
+  "single_mask": "white child edit only; grandma, both real palm/shaft pairs, approved C rods black protected",
+  "identity_reference_only": "existing next_036_057_inputs_002/F036/inputs/03_heads_internal_materials_only.png; whole old person is not a competing model reference",
+  "target_is_input_only_not_new_animation_frame": true,
+  "files": [
+    {
+      "path": "01_F036_corrected_target.png",
+      "sha256": "ffb7c2e89d42f17dbe1c80831c236343c278ce7ef7ab1851379403ab72e35077"
+    },
+    {
+      "path": "02_F036_same_view_palms_rods_3x.png",
+      "sha256": "91a41f62386b41cb8440436688b5da6ccdd253d0fa86567d903237b195c5a569"
+    },
+    {
+      "path": "03_child_edit_only_black_protect.png",
+      "sha256": "dbbb6ab2f4fcd03b1ea0526c8d0dbc7a66b97a0de0da5ea20255b199b540691f"
+    }
+  ]
+}
