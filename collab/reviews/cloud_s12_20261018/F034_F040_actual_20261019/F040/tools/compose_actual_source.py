@@ -1,0 +1,29 @@
+from pathlib import Path
+from PIL import Image,ImageDraw
+import numpy as np,json,math,hashlib,shutil
+R=Path('/workspace/animation-competition-s08-first14');C=R/'collab/reviews/cloud_s12_20261018';O=C/'F034_F040_actual_20261019/F040';M=O.parent/'F034';I=C/'right_hand_lower_rod_inputs_20261019/first034_040';b=np.array(Image.open(M/'candidate/F034.png').convert('RGBA'));raw=Image.open(O/'originals/F040_call01_raw.png').convert('RGBA');ra=np.array(raw)
+s=.54;theta=math.radians(0);A=s*np.array([[math.cos(theta),-math.sin(theta)],[math.sin(theta),math.cos(theta)]]);G=np.array([(953.9703435271945-275)/.7,(728.5213574356443-112)/.7]);g=np.array([1208.,827.]);t=G-A@g;inv=np.linalg.inv(A);v=-inv@t;coeff=tuple(np.column_stack([inv,v]).reshape(-1))
+# Both true arm chains, necessary sleeve roots only. Head and returned torso are context.
+poly=[(328,474),(374,476),(405,488),(438,520),(465,542),(483,484),(496,489),(511,546),(554,584),(602,616),(648,650),(698,689),(956,726),(1072,729),(1142,700),(1254,700),(1254,901),(1148,901),(1055,853),(974,845),(810,840),(650,815),(555,771),(509,789),(545,852),(622,899),(863,966),(972,915),(1128,917),(1140,1105),(858,1114),(616,1061),(472,997),(412,931),(374,859),(338,805),(300,830),(272,771),(231,659),(224,586),(242,529),(280,491)]
+mask=Image.new('L',raw.size);ImageDraw.Draw(mask).polygon(poly,fill=255);mainmask=mask.copy();ImageDraw.Draw(mask).polygon([(165,500),(280,471),(350,474),(390,575),(390,745),(435,850),(414,942),(322,1016),(212,951),(143,820),(135,675)],fill=255);sel=np.array(mask)>0;part=np.zeros_like(ra);part[sel]=ra[sel];new=Image.fromarray(part,'RGBA').transform((1024,1536),Image.Transform.AFFINE,coeff,Image.Resampling.BICUBIC);n=np.array(new)
+far=np.array(Image.open(O/'reference/actual034_far_arm_RGBA.png'))[:,:,3]>0;near=np.array(Image.open(O/'reference/actual034_near_arm_RGBA_NO_JADE.png'))[:,:,3]>0;old=far|near
+# Keep actual034 torso and its necessary original blue-root transition. No generated head or torso adoption.
+y,x=np.mgrid[:1536,:1024];root=Image.new('L',(1024,1536));ImageDraw.Draw(root).polygon([(416,638),(551,630),(638,668),(661,744),(641,811),(590,849),(488,955),(447,886),(426,784)],fill=255);rootkeep=((np.array(root)>0)&far&(y<785))|(near&(y<835))
+back=b.copy();back[old&~rootkeep]=0
+mainown=np.array(mainmask.transform((1024,1536),Image.Transform.AFFINE,coeff,Image.Resampling.NEAREST))>0
+adopt=(n[:,:,3]>0)&(mainown|((x>=400)&(x<660)&(y>=635)&(y<990)&(b[:,:,3]>0)));n[~adopt]=0
+out=np.array(Image.alpha_composite(Image.fromarray(back,'RGBA'),Image.fromarray(n,'RGBA')));edit=old|adopt;out[~edit]=b[~edit]
+# Limited semantic removal of the obsolete original shoulder-cap ink behind the new true sleeve; local original blue cloth colours only.
+from scipy.ndimage import distance_transform_edt
+seam=Image.new('L',(1024,1536));ImageDraw.Draw(seam).line([(439,737),(440,709),(454,681),(478,657),(506,646),(532,648),(551,661),(567,687),(575,716),(581,748)],fill=255,width=16)
+dark=(b[:,:,:3].max(axis=2)<135);cleanup=(np.array(seam)>0)&near&rootkeep&(b[:,:,0]<155)&(b[:,:,1]<190)&(n[:,:,3]<128);cloth=(b[:,:,0]>65)&(b[:,:,1].astype(int)>b[:,:,0].astype(int)+12)&(b[:,:,2].astype(int)>b[:,:,0].astype(int)+35)&(b[:,:,3]>200)&(b[:,:,:3].max(axis=2)<242)&~dark&(np.array(seam)==0);dist,ids=distance_transform_edt(~cloth,return_indices=True);cleanup&=dist<=16;out[cleanup,:3]=b[ids[0][cleanup],ids[1][cleanup],:3]
+# Far real front fingers only: no synthetic fingertip or per-joint adjustment.
+fp=[(1084,789),(1098,770),(1118,750),(1135,721),(1167,705),(1200,705),(1254,710),(1254,888),(1100,888),(1090,843)]
+fm=Image.new('L',raw.size);ImageDraw.Draw(fm).polygon(fp,fill=255);fgown=(np.array(fm.transform((1024,1536),Image.Transform.AFFINE,coeff,Image.Resampling.NEAREST))>0)&adopt;fg=np.zeros_like(out);fg[fgown]=out[fgown];bg=out.copy();bg[fgown]=0
+assert np.array_equal(np.maximum(bg,fg),out);assert not np.any((bg[:,:,3]>0)&(fg[:,:,3]>0));assert np.array_equal(out[~edit],b[~edit])
+for fn,a in [('candidate/F040.png',out),('layers/F040_BG_person.png',bg),('layers/F040_FG_actual_front_fingers.png',fg),('layers/raw_both_arms_exclusive.png',part),('diagnostics/F040_single_mapping_both_arms.png',n)]:Image.fromarray(a,'RGBA').save(O/fn)
+for fn,m in [('native_exact_edit_union.png',edit),('native_front_finger_ownership.png',fgown),('actual034_old_both_arm_ownership.png',old),('native_proximal034_blue_root_retained.png',rootkeep)]:Image.fromarray(np.uint8(m)*255).save(O/'masks'/fn)
+mask.save(O/'masks/raw_complete_both_arms_ownership.png');fm.save(O/'masks/raw_far_front_fingers_ownership.png')
+for name,im in [('whole',Image.fromarray(out,'RGBA')),('arms',Image.fromarray(out,'RGBA').crop((395,610,1024,1070)).resize((1258,920)))]:
+ p=Image.new('RGBA',im.size,'#c5c7ca');p.alpha_composite(im);p.convert('RGB').save(O/f'diagnostics/01_native_{name}_registration.jpg')
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();r={'state':'SINGLE_MAPPING_NATIVE_CANDIDATE_NOT_YET_CANVAS','mother034_SHA256':sha(M/'candidate/F034.png'),'raw040_SHA256':sha(O/'originals/F040_call01_raw.png'),'single_whole_raw_similarity':np.column_stack([A,t]).tolist(),'scale':s,'rotation_degrees':0,'source_grip_estimate':g.tolist(),'approved_grip_native':G.tolist(),'both_arm_source_ownership_polygon':poly,'front_finger_source_polygon':fp,'no_per_finger_or_joint_transform':True,'native_exclusive_union_RGBA_exact':True,'outside_exact_edit_union_RGBA_exact':True,'returned_head_and_torso_NOT_ADOPTED':True,'obsolete_original_shoulder_seam_semantic_cleanup_pixels':int(cleanup.sum()),'cleanup_scope':'Only obsolete original cap ink behind new sleeve, nearest original blue material. No source new-arm/finger geometry change.','candidate_SHA256':sha(O/'candidate/F040.png')};(O/'qa/native_scope_and_single_mapping.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps({'matrix':r['single_whole_raw_similarity'],'SHA256':r['candidate_SHA256']}))

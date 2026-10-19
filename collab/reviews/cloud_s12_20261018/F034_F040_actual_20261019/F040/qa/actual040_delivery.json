@@ -1,0 +1,86 @@
+{
+  "status": "ACTUAL040_AUTHOR_VIEWED_DELIVERED_FOR_DIRECT_FINAL_REVIEW",
+  "mother034_commit": "ecff090bd5cd1495901ddedc76ceea93d6eea840",
+  "mother034_native_SHA256": "29085c17701b05a679877da3fe6be588217179b477e399b49c6e656c540ade6e",
+  "raw040_SHA256": "1e94b9a15a7fdc73baabc7a634c1484c416d901fdc38f847b329f5804e04a43a",
+  "native040_SHA256": "aeb7a572b08aeb6c4cf41eac5de770a6ebd879635cc1c8c97c7a45cbf15c1dbe",
+  "actual040_Canvas_SHA256": "156ed63cf6436395ebaed27d1f5841eb37e44814513d023fd54edd1955c43f82",
+  "imagegen_calls040": 1,
+  "cumulative_S12_imagegen_calls": 12,
+  "actual040_Canvas_renders": 2,
+  "first_actual_Canvas_preserved": "diagnostics/pre_foreground_depth_v1/F040_canvas.png",
+  "first_actual_Canvas_reason": "Real thumb terminal was behind the rod. Only actual thumb/front-digit foreground ownership corrected; final native character RGBA unchanged. No new imagegen or isolated transform.",
+  "failed_module_import_before_any_Canvas": "qa/pre_Canvas_module_import_failure.jsonl",
+  "native_BG_FG_overlap_pixels": 0,
+  "native_BG_FG_RGBA_union_exact": true,
+  "outside_exact_edit_union_RGBA_exact": true,
+  "whole_board_mapping": [
+    [
+      0.54,
+      -0.0,
+      317.6376336102778
+    ],
+    [
+      0.0,
+      0.54,
+      434.1647963366347
+    ]
+  ],
+  "no_joint_finger_tip_or_arm_independent_warp": true,
+  "new_arms_pixels_from_actual_raw_not_reference_projection": true,
+  "both_arms_and_necessary_proximal_blue_transition_only": true,
+  "returned_head_or_whole_torso_not_adopted": true,
+  "obsolete_original_shoulder_cap_ink_cleanup_pixels": 2722,
+  "cleanup": "Local original blue material replaces obsolete original shoulder-cap seam behind new sleeve. Small material joins remain; hand/arm new geometry is unaltered.",
+  "actual_props_byteexact_approved040": true,
+  "actual_support_shadows_byteexact034": true,
+  "near_empty_no_rod_contact": {
+    "upper_rod_outer_edge_gap_scene_px": 46.02494947667315,
+    "lower_rod_outer_edge_gap_scene_px": 31.210505041952608,
+    "method": "Distances from real near-arm mapped native alpha>=32 pixel centres, excluding physical 7scene rod width. Not a fabricated hand drawing."
+  },
+  "raw_adopted_alpha32_bbox": [
+    135,
+    471,
+    1230,
+    1093
+  ],
+  "real_arm_ink_complete_no_raw_edge_clip": true,
+  "actual_network_errors": [],
+  "benign_favicon404": [
+    {
+      "utc": "2026-10-19T08:32:37.138Z",
+      "event": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:36203/favicon.ico",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "utc": "2026-10-19T08:31:23.664Z",
+      "event": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:38273/favicon.ico",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "author_actual_viewed": [
+    "originals/F040_call01_raw.png",
+    "diagnostics/02_raw_actual_fist5x.png",
+    "actual_scene/F040_canvas.png",
+    "actual_scene/034_to040_actual_full_chain_same_scale.jpg",
+    "actual_scene/both_hands_actual8x.png"
+  ],
+  "visual_result": "Closed real left thumb/index/other3 remain with shaft behind true front digits, no rod painted over thumb. Complete far sleeve/elbow/wrist and near shoulder/sleeve/elbow/wrist/empty palm transition naturally. Near hand stays empty with no jade. Fixed crane remains folded and cloth-supported. Blue proximal seams/material changes recorded for group review.",
+  "F048plus": "INPUTS_ONLY_NO_NEW_GENERATION",
+  "rise_crane_lift": "NOT_AUTHORIZED"
+}
