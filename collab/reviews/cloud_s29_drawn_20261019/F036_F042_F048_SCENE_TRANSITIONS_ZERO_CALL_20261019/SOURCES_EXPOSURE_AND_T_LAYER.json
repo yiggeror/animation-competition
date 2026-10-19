@@ -1,0 +1,163 @@
+{
+  "global_frames": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "fps": 24,
+  "source_state_starts": [
+    36,
+    42,
+    48
+  ],
+  "exposure_within_short_clip": [
+    {
+      "state": 36,
+      "frames": [
+        36,
+        41
+      ],
+      "count": 6
+    },
+    {
+      "state": 42,
+      "frames": [
+        42,
+        47
+      ],
+      "count": 6
+    },
+    {
+      "state": 48,
+      "frames": [
+        48,
+        48
+      ],
+      "count": 1
+    }
+  ],
+  "scope": "Both frozen switches at042 and048 are included. Clip ends at048 first frame; no unsupported last-state end/next state is inferred.",
+  "sources": [
+    {
+      "state": 36,
+      "source": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F036_CONTINUOUS_SLEEVE_CLOTH_sameM_zero_call_20261019/candidate/F036_CONTINUOUS_SLEEVE_CLOTH_SAME_M_TRIAL.png",
+      "used": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F036_CONTINUOUS_SLEEVE_CLOTH_sameM_zero_call_20261019/candidate/F036_CONTINUOUS_SLEEVE_CLOTH_SAME_M_TRIAL.png",
+      "sha256": "0a65674bee91dec491997e45c5b0a2993c91a44f64424735883a032321b9a02b",
+      "changed_pixels": 0,
+      "usedURL": "/collab/reviews/cloud_s29_drawn_20261019/F036_CONTINUOUS_SLEEVE_CLOTH_sameM_zero_call_20261019/candidate/F036_CONTINUOUS_SLEEVE_CLOTH_SAME_M_TRIAL.png"
+    },
+    {
+      "state": 42,
+      "source": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F042_F048_SINGLE_WHOLE_CLOTH_REPAINT_20261019/F042/REINTEGRATED_RGBA.png",
+      "source_sha256": "fc5783c963e3e13dc1425b21cf0d70cbc1bbf09f152486cde8edcb647333c38e",
+      "used": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F036_F042_F048_SCENE_TRANSITIONS_ZERO_CALL_20261019/F042_FRONT_LIP_OVER_OUTER_FEATHER_RGBA.png",
+      "sha256": "fdd72f88fc1389288808b1389942ac8bcbc1a79554f46d0c7bcaafed1397e3ca",
+      "native_cotton_layer": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F042_F048_SINGLE_WHOLE_CLOTH_REPAINT_20261019/F042/EXTRACTED_ONE_NATIVE_CLOTH.png",
+      "native_cotton_layer_sha256": "d521fd3a1f62edf603dda90e4ad6f34f23f62576a95dfb1c19a41b7e57a87aff",
+      "front_lip_semantic_contour": [
+        [
+          828,
+          798
+        ],
+        [
+          833,
+          798
+        ],
+        [
+          844,
+          804
+        ],
+        [
+          853,
+          811
+        ],
+        [
+          850,
+          815
+        ],
+        [
+          841,
+          810
+        ],
+        [
+          833,
+          805
+        ]
+      ],
+      "feather_intersection_pixels": 33,
+      "intersection_bbox_inclusive": [
+        828,
+        798,
+        849,
+        809
+      ],
+      "changed_pixels": 33,
+      "RGBA_changes_outside_original_feather": 0,
+      "all_other_puppet_and_rod_RGBA_changes": 0,
+      "all_person_RGBA_changes": 0,
+      "usedURL": "/collab/reviews/cloud_s29_drawn_20261019/F036_F042_F048_SCENE_TRANSITIONS_ZERO_CALL_20261019/F042_FRONT_LIP_OVER_OUTER_FEATHER_RGBA.png"
+    },
+    {
+      "state": 48,
+      "source": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F042_F048_SINGLE_WHOLE_CLOTH_REPAINT_20261019/F048/REINTEGRATED_RGBA.png",
+      "source_sha256": "da593981fb27d88c0eb1bb7ddc19a36ed76162a1db0629816324a1d2be00bb2f",
+      "used": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F036_F042_F048_SCENE_TRANSITIONS_ZERO_CALL_20261019/F048_FRONT_LIP_OVER_OUTER_FEATHER_RGBA.png",
+      "sha256": "021036b62d5669e102523914bf47ef118d61baca2a19e3f99f83208c21ea5998",
+      "native_cotton_layer": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F042_F048_SINGLE_WHOLE_CLOTH_REPAINT_20261019/F048/EXTRACTED_ONE_NATIVE_CLOTH.png",
+      "native_cotton_layer_sha256": "1d9f276bce428a4c217e04b923d58619b36d8e53f304c1986b5d4bf76b301a4f",
+      "front_lip_semantic_contour": [
+        [
+          827,
+          798
+        ],
+        [
+          832,
+          797
+        ],
+        [
+          844,
+          804
+        ],
+        [
+          852,
+          810
+        ],
+        [
+          849,
+          814
+        ],
+        [
+          841,
+          810
+        ],
+        [
+          832,
+          805
+        ]
+      ],
+      "feather_intersection_pixels": 34,
+      "intersection_bbox_inclusive": [
+        828,
+        798,
+        849,
+        809
+      ],
+      "changed_pixels": 34,
+      "RGBA_changes_outside_original_feather": 0,
+      "all_other_puppet_and_rod_RGBA_changes": 0,
+      "all_person_RGBA_changes": 0,
+      "usedURL": "/collab/reviews/cloud_s29_drawn_20261019/F036_F042_F048_SCENE_TRANSITIONS_ZERO_CALL_20261019/F048_FRONT_LIP_OVER_OUTER_FEATHER_RGBA.png"
+    }
+  ],
+  "generation_calls": 0
+}
