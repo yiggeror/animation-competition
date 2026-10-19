@@ -1,0 +1,127 @@
+{
+  "status": "FINITE_ACTUAL_REVIEW_HOLD_15_NATIVE_RECEIVER_GAP_NOT_MET",
+  "raw_sha256": "a5bb1af3b79762f79ef37ee9208d40d1351acf7d7e89d9b0d085b949bd82c6a9",
+  "raw_dimensions": [
+    1145,
+    1374
+  ],
+  "one_common_registration": {
+    "scale": 0.6724890829694323,
+    "offset": [
+      550,
+      0
+    ],
+    "native_crop": [
+      550,
+      0,
+      1320,
+      924
+    ],
+    "no_separate_hand_prop_fit": true,
+    "not_using77_over128_direct_on_returned_size": true
+  },
+  "actual_viewed": [
+    "originals/F063_pixel_plate_call01_RAW.png",
+    "source/reference_native/A_same_991b3ea5_770x924.png",
+    "qa/frozen_plate_vs_actual_common_inverse_gray.png",
+    "qa/frozen_plate_vs_actual_common_inverse_dark.png",
+    "qa/ACTUAL_complete_two_arm_chains_gray.png",
+    "qa/ACTUAL_complete_two_arm_chains_dark.png",
+    "qa/ACTUAL_whole_palm_lamp_and_grip_gray_3x.png",
+    "qa/ACTUAL_whole_palm_lamp_and_grip_dark_3x.png",
+    "qa/actual_palm_and_FIXED_visible_prop_CYAN_gray_3x.png",
+    "qa/actual_palm_and_FIXED_visible_prop_CYAN_dark_3x.png"
+  ],
+  "raw_visible_facts": [
+    "Complete near RIGHT sleeve→low elbow→forearm→neutral wrist→grasp is visually continuous, without old cut-wrist seam or sharp reverse fold.",
+    "Multiple curled finger contours and opposing thumb visibly belong to one grasp. Some wrapping topology is occluded, so exact five-finger topology is not certified by silhouette alone.",
+    "Far arm emerges from a separate yellow sleeve/ruffle behind the neararm and connects via low elbow to receiving palm. No visible branch from nearforearm. Its hidden proximal segment cannot be anatomically proven from this view.",
+    "Both receiving palm and fingers remain visibly clear of this RAW lamp and neargrip. However the requested15native material clearance is not maintained.",
+    "Lamp remains dark with reflected white highlights; no emitted beam is visible. This is F063 operating transition after second tap, before F069 support and before first ON."
+  ],
+  "actual_alpha128_material_clearance": {
+    "actual_RAW_lamp_front_head": {
+      "raw_pixel_center_distance": 11.180339887498949,
+      "native_equivalent": 7.518656518230735,
+      "receiver_raw_xy": [
+        979,
+        943
+      ],
+      "other_raw_xy": [
+        977,
+        932
+      ],
+      "overlap_pixels": 0
+    },
+    "fixed_true_source_visible_prop_forward_for_visual": {
+      "raw_pixel_center_distance": 15.0,
+      "native_equivalent": 10.087336244541484,
+      "receiver_raw_xy": [
+        979,
+        943
+      ],
+      "other_raw_xy": [
+        979,
+        928
+      ],
+      "overlap_pixels": 0
+    },
+    "actual_near_gripping_hand": {
+      "raw_pixel_center_distance": 22.627416997969522,
+      "native_equivalent": 15.21669090693147,
+      "receiver_raw_xy": [
+        806,
+        971
+      ],
+      "other_raw_xy": [
+        790,
+        955
+      ],
+      "overlap_pixels": 0
+    },
+    "fixed_original_native_material_NO_source_resampling": {
+      "native_pixel_center_distance": 10.157281274238843,
+      "receiver_native_xy": [
+        1209.0393013100438,
+        634.1572052401747
+      ],
+      "source_native_xy": [
+        1209,
+        624
+      ]
+    }
+  },
+  "clearance_method": {
+    "receiver": "warm contiguous complete receiving-hand material in raw ROI795..1030/936..1065, connected seed900/1000; fill internal holes then2px edge/ink allowance limited to actualalpha128. Includes all visible fingers/palm and partial wrist; no individual finger movement.",
+    "prop": "actualfront/head ROI875..1070/735..937 restricted to actualalpha128; closest point is real lower rim. This ROI excludes neargrip and receiving skin.",
+    "neargrip": "warm connected component in620..824/827..998 with seed750/900, plus2px realalpha edge allowance.",
+    "source": "entire original visible prop alpha128 mask preserved; not carved by newreceiver. Unresampled source-native nearest-neighbour pixel-center query also recorded.",
+    "semantic_outline_uncertainty_raw_px": 2,
+    "semantic_outline_uncertainty_native_px": 1.3449781659388647,
+    "target_native_alpha128": 15,
+    "point_centers_not_physical3D_surface_distance": true
+  },
+  "visible_prop_registration_limits": [
+    "Only same whole returned-frame normalization is used. Cyan overlay shows source real visible prop outline against raw; colors are diagnostics only.",
+    "Visible lamp rim is near the source common position, with a few rawpx discrepancy around lower rim. No separate prop registration or a diameter-based auto-pass is used.",
+    "Tailcap is partly occluded by nearforearm/grip. Its visible band cannot be measured as a complete tail diameter; no complete-diameter failure is asserted.",
+    "51.8617percent exact grip station cannot be certified from partly hidden cylinder and new hand; intendedG is not substituted for an actual measured hand contact station.",
+    "Thumb lies above/left of real striated slider. Exact adjacency/reach is not proven; final switch gate must inspect actual thumb pad and slider rather than calling any nearby black housing a push."
+  ],
+  "alpha_preview_safety": {
+    "alpha0_pixels": 778759,
+    "alpha1through15_pixels": 17557,
+    "opaque255_pixels": 1512,
+    "hidden_RGB_not_claimed_opaque_background": true
+  },
+  "production_adoption_conditions": [
+    "Original raw is not an approved whole-frame mother. Head/neck/collar, stable original ruffle/body/skirt/background must be compared to real frozen mother under this one registration.",
+    "Only complete newly valid arm/grasp regions and necessary unknown prop material may be considered; inspect all real sleeve/body/prop seams before adoption.",
+    "No old hands, shoes, separate prop shifts, arm stretching, narrow patches or candidates were made here.",
+    "15native outline gap target remains HOLD: actual raw lamp≈7.52native; unresampled fixed source≈10.16native, beyond±1.35native semantic uncertainty. Ask Astra for action decision; do not silently label it15 or openF069."
+  ],
+  "imagegen_calls": 0,
+  "git_operations": 0,
+  "source_files_changed": false,
+  "candidate_created": false
+}

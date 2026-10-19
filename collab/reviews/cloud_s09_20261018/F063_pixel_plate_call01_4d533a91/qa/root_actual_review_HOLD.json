@@ -1,0 +1,81 @@
+{
+  "state": "ACTUAL_REVIEW_HOLD_RECEIVER_CLEARANCE_PENDING_ASTRA_ACTION_DECISION",
+  "requests": 1,
+  "originals": 1,
+  "active": 0,
+  "retries": 0,
+  "candidate_created": false,
+  "archive_three_way_identical": true,
+  "raw_sha256": "a5bb1af3b79762f79ef37ee9208d40d1351acf7d7e89d9b0d085b949bd82c6a9",
+  "raw_return_sha256": "eb1769bbc1388f06e47f4b7bc99e17d9655040b3924db1fd076be67eddef2873",
+  "raw_dimensions": [
+    1145,
+    1374
+  ],
+  "exact_authorized_one_sentence_replacement_verified": true,
+  "unchanged_inputs": [
+    {
+      "path": "collab/reviews/cloud_s09_20261018/F063_pixel_plate_request_gate_991b3ea5/inputs_1280x1536/A_F063_pixel_plate_REQUEST_NOT_CALLED.png",
+      "sha256": "1abfc10483ab7c5d8f61d51b8f0cc7f145930a77c19c53a1943cb75a9dd7597f",
+      "source_commit_byte_equal": true
+    },
+    {
+      "path": "collab/reviews/cloud_s09_20261018/F063_pixel_plate_request_gate_991b3ea5/inputs_1280x1536/B_F063_pixel_plate_REQUEST_NOT_CALLED.png",
+      "sha256": "6616693e4b0e4540ce26b8476e1880534f130de29dee9b13c875fd11d23896de",
+      "source_commit_byte_equal": true
+    },
+    {
+      "path": "collab/reviews/cloud_s09_20261018/F063_pixel_plate_request_gate_991b3ea5/inputs_1280x1536/C_F063_identity_fabric_ONLY_NOT_CALLED.png",
+      "sha256": "ed8b2b6dc570aee9bb7f36c5722dbe5534d27cda403ff95ca156a4615b8f11c0",
+      "source_commit_byte_equal": true
+    }
+  ],
+  "independent_review_manifest_files_verified": 17,
+  "independent_review_manifest_sha256": "dcf675c8b2a4aea90d911e5060bda650e780d1cb1cb54119b05f56d277eb5d58",
+  "one_whole_uniform_inverse": {
+    "scale": 0.6724890829694323,
+    "offset": [
+      550,
+      0
+    ],
+    "native_crop": [
+      550,
+      0,
+      1320,
+      924
+    ]
+  },
+  "root_independent_distance_recomputation_from_saved_actual_semantic_masks": {
+    "actual_RAW_lamp": {
+      "raw_pixels": 11.180339887498949,
+      "native_pixels": 7.518656518230735,
+      "overlap_pixels": 0
+    },
+    "actual_near_grip": {
+      "raw_pixels": 22.627416997969522,
+      "native_pixels": 15.21669090693147,
+      "overlap_pixels": 0
+    },
+    "unresampled_fixed_original_prop": {
+      "native_pixels": 10.157281274238843,
+      "source_mask_carved_for_receiver": false
+    }
+  },
+  "semantic_uncertainty_native_pixels": 1.3449781659388647,
+  "target_receiver_clearance_native_pixels": 15,
+  "actual_viewed_by_root": [
+    "qa/RAW_actual_alpha_composite_gray.png",
+    "qa/plate_vs_RAW_whole_registration_dark.png",
+    "qa/RAW_complete_arm_grip_receiver_gray_2x.png",
+    "independent_review_61sol/qa/ACTUAL_complete_two_arm_chains_gray.png",
+    "independent_review_61sol/qa/ACTUAL_whole_palm_lamp_and_grip_gray_3x.png",
+    "independent_review_61sol/qa/ACTUAL_whole_palm_lamp_and_grip_dark_3x.png"
+  ],
+  "visual_findings": [
+    "Near sleeve, low elbow, forearm, wrist and whole grasp read continuously; receiving palm visibly clears both prop and gripping hand.",
+    "Requested receiver clearance is not maintained against either raw or fixed original prop. No separate fit or patch was attempted.",
+    "Exact slider reach and partially occluded grasp station are not certified; the partly occluded tail band is not a complete-diameter measurement."
+  ],
+  "production_mother_approved": false,
+  "following_F069_opened": false
+}
