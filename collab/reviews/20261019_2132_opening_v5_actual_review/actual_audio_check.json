@@ -1,0 +1,60 @@
+{
+  "commit": "44883e8c502a6066a33c67be0e58cf7185554759",
+  "video_sha256": "9ca642f720bd2d75e7c6a5b80c0a9dc8c562324db92303f69edf286f56b0113d",
+  "pcm_sha256": "084063581ce2e4e5a083865452e284460090e53d5ba701318fd3e833565f973e",
+  "frames": 974,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "fps": "24/1",
+  "video_duration": "40.583333",
+  "audio_duration": "40.583000",
+  "video_start": "0.000000",
+  "audio_start": "0.000000",
+  "pcm_samples": 1948000,
+  "pcm_rate": 48000,
+  "aac_decoded_samples": 1948672,
+  "aac_best_lag_samples": 0,
+  "aac_pcm_correlation": 0.9994145490639507,
+  "aac_pcm_rmse": 0.0032045059591764118,
+  "aac_true_peak_dbtp": -4.41,
+  "aac_integrated_lufs": -16.17,
+  "aac_first_packet": {
+    "codec_type": "audio",
+    "stream_index": 1,
+    "pts": -1024,
+    "pts_time": "-0.021333",
+    "dts": -1024,
+    "dts_time": "-0.021333",
+    "duration": 1024,
+    "duration_time": "0.021333",
+    "size": "589",
+    "pos": "272475",
+    "flags": "KD_",
+    "side_data_list": [
+      {
+        "side_data_type": "Skip Samples",
+        "skip_samples": 1024,
+        "discard_padding": 0,
+        "skip_reason": 0,
+        "discard_reason": 0
+      }
+    ]
+  },
+  "aac_last_packet": {
+    "codec_type": "audio",
+    "stream_index": 1,
+    "pts": 1947648,
+    "pts_time": "40.576000",
+    "dts": 1947648,
+    "dts_time": "40.576000",
+    "duration": 336,
+    "duration_time": "0.007000",
+    "size": "7",
+    "pos": "17170249",
+    "flags": "K__"
+  },
+  "aac_present_end_sample": 1947984,
+  "subjective_listening": false
+}

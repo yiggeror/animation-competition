@@ -1,0 +1,53 @@
+{
+  "fixed_commit": "44883e8c502a6066a33c67be0e58cf7185554759",
+  "independent_original_build": true,
+  "samples": 1948000,
+  "max_lsb": 3,
+  "rmse_lsb": 0.013957621397353797,
+  "unequal_channel_samples": 270,
+  "s06_four_cues": [
+    {
+      "shot_frame": 11,
+      "global_sample": 1294000,
+      "window_before_after_s": [
+        0.1,
+        0.3
+      ],
+      "max_lsb": 0,
+      "unequal_channel_samples": 0
+    },
+    {
+      "shot_frame": 30,
+      "global_sample": 1332000,
+      "window_before_after_s": [
+        0.1,
+        0.3
+      ],
+      "max_lsb": 2,
+      "unequal_channel_samples": 2
+    },
+    {
+      "shot_frame": 46,
+      "global_sample": 1364000,
+      "window_before_after_s": [
+        0.1,
+        0.3
+      ],
+      "max_lsb": 2,
+      "unequal_channel_samples": 2
+    },
+    {
+      "shot_frame": 70,
+      "global_sample": 1412000,
+      "window_before_after_s": [
+        0.1,
+        0.3
+      ],
+      "max_lsb": 3,
+      "unequal_channel_samples": 5
+    }
+  ],
+  "v5_vs_v4_max_lsb": 32130,
+  "v5_vs_v4_changed_channel_samples": 3327903,
+  "subjective_listening": false
+}
