@@ -1,0 +1,122 @@
+{
+  "source_sha256": "0a65674bee91dec491997e45c5b0a2993c91a44f64424735883a032321b9a02b",
+  "source_commit": "565fe6d5",
+  "only_continuous_RGB_source": "collab/reviews/cloud_s29_drawn_20261019/F036_CONTINUOUS_SLEEVE_CLOTH_sameM_zero_call_20261019/candidate/F036_CONTINUOUS_SLEEVE_CLOTH_SAME_M_TRIAL.png",
+  "status": "TECHNICAL_INPUT_TARGETS_NOT_NEW_NATIVE_NOT_FROZEN",
+  "projection_warning": "A bounded smooth image-space deformation is only a technical target; proxy projection lengths are not real bone measurements or a native anatomy pass. Whole palm/fingers share constant translation, not separate pasted fingers/palm.",
+  "arm_field": {
+    "fixed_through_source_x": 560,
+    "full_whole_hand_translation_from_source_x": 670,
+    "inverse": "piecewise monotone affine x; y displaced by the same smooth ramp"
+  },
+  "cloth_field": {
+    "top_follows_hand_until_y": 740,
+    "lap_fixed_from_y": 920
+  },
+  "states": [
+    {
+      "frame": 42,
+      "target_sha256": "2a71e16a334723a30b9e779e45524bf069073a84ab26fcc1c2da251e3d362bd8",
+      "whole_hand_translation": [
+        -7.0,
+        -1.0
+      ],
+      "pinch_proxy": [
+        718.78751656,
+        662.66135947
+      ],
+      "far_chain_manual_proxy_not_measured_bones": {
+        "root": [
+          564.6818181818181,
+          535.9545454545455
+        ],
+        "elbow": [
+          630.2272727272727,
+          591.3181818181819
+        ],
+        "wrist": [
+          678.0,
+          622.0
+        ],
+        "pinch": [
+          718.78751656,
+          662.66135947
+        ]
+      },
+      "near_C1_RGBA_changed": 0,
+      "head_chest_top470_RGBA_changed": 0,
+      "true_props_outside_finite_feather_RGBA_changed": 0,
+      "finite_feather_material_changed_pixels": 131,
+      "no_new_RGB_drawing": true,
+      "source_composition_retained_as_cotton_backing": true,
+      "pinch_cotton_underlayer": {
+        "source_crop": [
+          690,
+          700,
+          750,
+          735
+        ],
+        "target_bbox": [
+          694,
+          664,
+          754,
+          699
+        ],
+        "scale": 1,
+        "whole_same_source_patch_below_new_arm_and_fold": true
+      }
+    },
+    {
+      "frame": 48,
+      "target_sha256": "de856faa91936aef27f2da35b9c135d39f1205bd0248c4adff2f325d6cb9bc55",
+      "whole_hand_translation": [
+        -14.0,
+        -2.0
+      ],
+      "pinch_proxy": [
+        711.78751656,
+        661.66135947
+      ],
+      "far_chain_manual_proxy_not_measured_bones": {
+        "root": [
+          564.3636363636364,
+          535.9090909090909
+        ],
+        "elbow": [
+          625.4545454545455,
+          590.6363636363636
+        ],
+        "wrist": [
+          671.0,
+          621.0
+        ],
+        "pinch": [
+          711.78751656,
+          661.66135947
+        ]
+      },
+      "near_C1_RGBA_changed": 0,
+      "head_chest_top470_RGBA_changed": 0,
+      "true_props_outside_finite_feather_RGBA_changed": 0,
+      "finite_feather_material_changed_pixels": 183,
+      "no_new_RGB_drawing": true,
+      "source_composition_retained_as_cotton_backing": true,
+      "pinch_cotton_underlayer": {
+        "source_crop": [
+          690,
+          700,
+          750,
+          735
+        ],
+        "target_bbox": [
+          687,
+          663,
+          747,
+          698
+        ],
+        "scale": 1,
+        "whole_same_source_patch_below_new_arm_and_fold": true
+      }
+    }
+  ]
+}
