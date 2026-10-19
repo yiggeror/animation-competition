@@ -16,3 +16,5 @@
 {"shot":"S04","completed":72,"total":72}
 {"shot":"S04","frames":72,"duration":3,"file":"S04/S04_opening_corrected_1080p24.mp4","sha256":"a0214ae6a9ebb5491c157ab4f91421776759223acab6c98b0e4568959c840038","approvedSampleChecks":[{"name":"S04_F008.png","sha256":"eaa9f7a52ed7794f1f706a07d03430c235a3a75c22479be8966dcb301366a513","expected":"eaa9f7a52ed7794f1f706a07d03430c235a3a75c22479be8966dcb301366a513","pass":true}],"keyframes":[0,7,8,14,15,33,34,53,54,71]}
 {"shot":"S07","completed":1,"total":108}
+Error: Approved seven-frame migration mismatch S07_F008.png
+    at /workspace/opening-full-three-20261019-c5753892/collab/reviews/20261019_1203_opening_full_gate/render_full_three.cjs:21:154
