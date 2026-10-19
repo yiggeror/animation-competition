@@ -1,0 +1,32 @@
+{
+  "status": "PREPARED ACTUAL INPUTS; NOT EXECUTED; ASTRA REFERENCE GATE REQUIRED",
+  "tool": "image_gen.imagegen",
+  "execution_enabled": false,
+  "frame": 30,
+  "hold": 4,
+  "tool_arguments": {
+    "prompt": "S12 drawn animation, one native transparent 1024x1536 RGBA frame. Image 1 is the LOCKED actual mother F000, SHA256 95f80f2d8f56394abd4a808cc8a6f205633658a544de4ab52e1e34c4ac1ed793. Preserve this exact grandmother identity, fine silver hair and round thin glasses, neutral skin and dusty blue white-flower blouse, dark trousers and both complete cloth shoes. Image 2 is original identity03 for same-material PALETTE only, not its pose. Image 3 is a clearly labelled CONSTRUCTION guide for the complete FAR LEFT arm, not a finished drawing: ignore all blue/grey/gold diagram colors, lettering, dots, rods and bone lines. Use the guide's anatomical volumes and native coordinates; keep mother colors and line quality. The image 3 ghost mother is construction context only.\n\nDraw ONE whole grandmother on the SAME native canvas and framing. Keep mother head, facial gaze, neck, chest, pelvis, knees/shins/shoes and the complete NEAR RIGHT open empty hand unchanged in placement and identity; preserve body continuity. The allowed motion is the FAR LEFT arm from its shoulder under the blouse through the full upper arm, elbow, forearm, wrist and complete hand. Redraw the far sleeve together with the arm; cleanly remove the previous arm silhouette. Do not paste or translate an isolated hand. The far elbow stays visibly outside the torso silhouette. The arm may shorten by projection but its upper .86H and forearm .64H actual bone lengths must not change. Hidden far shoulder is estimated at native (644,684), +/-10-20px, not a point to dislocate. Keep ONE jade bangle on the far LEFT forearm proximal to its wrist; the near RIGHT forearm has no bangle. Fingers must have coherent knuckle volumes and naturally curved phalanges, thumb on opposite side to index, no extra digits or stretched palm.\n\nScene registration remains scale .70 at (275,112) on a 1920x1080 scene. In this segment the code neck3 rod is fixed from scene (934.3125,785.1297) to (1497.5315,714.6642), outline width7px. Proposed first-grasp centre G is scene (958,782.166145), native (975.714286,957.380208). The lower/body rod stays at scene (951.2617,798.9063) to (1282.1987,773.9468), outline width7px, and belongs to the STILL EMPTY near right hand. These rods are CONTACT GUIDES ONLY. Do NOT paint any rod, crane, cloth, box, cast shadow, scenery, diagram, words or arrows into the native character. The code shaft must later pass through the grasp with real native finger occlusion; draw fingers/palm coherently around this guide axis. Do not grip both rods, move the prop, lift the crane, raise the torso, swap hands or crop any shoe. The crane remains supported on the cloth.\n\nPreserve mother material colors: skin, blouse, hair, trousers each must compare to locked mother same-material masks within +/-4 per RGB channel on means, protected ink/white flowers and form shading retained; do not lighten skin or saturate blue. Transparent background, clean antialiasing with all fine hair/glasses preserved. All outline bounds must fit the native canvas with breathing room, especially the rightmost fingers. Do not replace the character with the construction figure.\n\nPalette priority: the LOCKED F000 (image 1) is the exact color authority. Image 2 records identity03 lineage only; do not shift the locked mother toward it. The pale proximal volume on image 3 is HIDDEN under the blouse. Never paint an exposed shoulder ball on the chest.\n\nF030 (held F030-F033): FIRST COMPLETE LEFT GRASP. Palm settles from above, thumb pad opposes the index around the 7px upper shaft; remaining fingers curl naturally around the SAME shaft. Wrist (native approx915.7,941.4) joins the forearm naturally, palm mass mainly above the shaft. The lower/body rod stays separate, untouched and at least 3 scene pixels clear of any finger. Full grip must fit before native x1024. Do not raise the upper handle or lift the crane; F034 onward is outside this request.\nConstruction anchor estimates in native pixels, not a substitute for actual image review:\n{\"S\": [644.0, 684.0], \"E\": [788.669, 845.019], \"W\": [915.714, 941.429], \"G\": [975.714, 957.38], \"B\": [883.953, 917.326]}\n",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/first_left_grasp_inputs_20261019/inputs/locked_F000.png",
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/first_left_grasp_inputs_20261019/inputs/identity03_original.png",
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/first_left_grasp_inputs_20261019/inputs/F030_CONSTRUCTION.png"
+    ],
+    "transparent_background": true
+  },
+  "input_sha256": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/first_left_grasp_inputs_20261019/inputs/locked_F000.png",
+      "sha256": "95f80f2d8f56394abd4a808cc8a6f205633658a544de4ab52e1e34c4ac1ed793"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/first_left_grasp_inputs_20261019/inputs/identity03_original.png",
+      "sha256": "ab88b69f5303229af379303a37b6e9e3c8cdb35cd05b3902b604871efb2b1671"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/first_left_grasp_inputs_20261019/inputs/F030_CONSTRUCTION.png",
+      "sha256": "d86095a37493818d4ada6900a266dfad3443adc77db492b2aa37f29c6898b9d8"
+    }
+  ],
+  "prompt_file": "prompts/F030.txt",
+  "do_not_batch": "After reference approval, execute F012 only and review actual output before any next call. All stages anchor material/identity to same locked mother, not an accumulating previous-frame color."
+}
