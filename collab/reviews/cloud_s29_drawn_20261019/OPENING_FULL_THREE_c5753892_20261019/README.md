@@ -1,3 +1,5 @@
-# Opening corrected full shots: actual render running
+# Opening corrected actual full shots
 
-Fixed source c57538925035118c0f8901fc2f22f478fbf803b4. One original process renders S01 84, S04 72 and S07 108 frames at1080p24, silent. Supervisor PID70763, node70767, HTTP70765; output /tmp/opening-continuity-full. Each completed clip will be independently decoded and published immediately on this branch. No full-shot visual acceptance, audio or ready changes.
+Fixed source c57538925035118c0f8901fc2f22f478fbf803b4; one original streaming render, no restart. Each completed shot is archived and independently decoded before its own publication.
+
+Completed: S01. Video, original key PNGs, all frame hashes, CLIP_CHECK and independent decode checks are in each shot directory. Full visual review and audio/EDL remain with main coordination. Runtime HTTP final report follows the same original process when all three finish.
