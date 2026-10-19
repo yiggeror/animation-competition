@@ -1,0 +1,55 @@
+{
+  "status": "AUTHOR_VISUAL_PASS_COMPLETE_REAL_RGBA_COVERAGE_ASTRA_FINAL_REVIEW_PENDING",
+  "native_SHA256": "5cbb830781a2a81c3ee5039229085b01da0da29546df6142945e3db995cec7c3",
+  "actual_Canvas_SHA256": "d1f66888df6cd973d4eba9bd13f5373139a8053287dfd3db62373f9f38464da3",
+  "new_model_calls": 0,
+  "complete_source_coverage_repair_batches": 1,
+  "new_whole_or_local_fits": 0,
+  "new_arm_scales": 1,
+  "new_arm_rotations": 0,
+  "exact_whole_arm_shifts": {
+    "R": [
+      14.086744,
+      0.620598
+    ],
+    "L": [
+      -14.038403,
+      2.51983
+    ]
+  },
+  "grip_errors_native": {
+    "R": 5.023655666494321e-07,
+    "L": 2.516883900255769e-07
+  },
+  "technical_paint_clone_smear_pixels": 0,
+  "RGBA_reconstruction_differences": 0,
+  "new_cloth_source_RGBA_differences": 0,
+  "old_complete_collar_chest_source_RGBA_differences": 0,
+  "white_flower_source_pixels_preserved_verification_only": 6158,
+  "head_neck_RGBA_changes": 0,
+  "waist_hips_pants_support_RGBA_changes": 0,
+  "outside_complete_semantic_ownership_RGBA_changes": 0,
+  "ground_shadow_and_box_front_actual_RGBA_changes": 0,
+  "BG_FG_overlap_pixels": 0,
+  "BG_FG_reconstruction_differences": 0,
+  "internal_transparent_shirt_arm_hole_pixels": 0,
+  "delivered_final_actual_Canvas": 1,
+  "actual_capture_passes": 2,
+  "preflight_capture": 1,
+  "final_capture_after_complete_original_collar_alpha_fringe": 1,
+  "new094_calls": 0,
+  "actual_image_readback": [
+    "actual_scene/F090_canvas.png",
+    "diagnostics/ACTUAL_FULL_NECK_SHOULDERS_SLEEVES_ELBOWS_WRISTS_1to1.png",
+    "diagnostics/ACTUAL_TRUE_BODY_NECK3_BOTH_GRIPS_1to1.png",
+    "diagnostics/SAME_RAW_REJOIN_NATIVE_GREY.png"
+  ],
+  "visual_findings": [
+    "Original continuous collar seat, both flaps and adjacent chest retained with one cloth ownership, including two previously omitted collar-edge pixels.",
+    "Near shoulder back and underarm continuous; white flowers, grey folds and ink preserved as complete RGBA. No flower holes or orphan skin trace.",
+    "Far sleeve and continuous proximal skin edge retained; complete source arms no longer subtracted before translation.",
+    "Exact frozen grips and visible closed-palm/front-digit shaft occlusion retained.",
+    "No current structural or source-coverage blocker in normal-camera Canvas; minor cloth material/seam tone differences remain for group colour review. Astra final lock pending."
+  ],
+  "network_errors": []
+}
