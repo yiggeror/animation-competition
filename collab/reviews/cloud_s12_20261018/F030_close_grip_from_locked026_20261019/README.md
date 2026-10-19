@@ -22,3 +22,5 @@ Native SHA `ace73556d7e6527c6e13779219a66f541f497078f9d05ed691612345042ef9b1`.
 Actual Canvas SHA `95f8e3bf3f15c2c6515bd8647fcf289613769b22cf9c228fdfb858d875b83ae2`.
 
 The batch exposure handoff follows with fixed source commits and three cached actualCanvas holds,4frames each; it will be labelled as exposure verification, not fresh per-frame production rendering. No unrelated old frames are rerendered. Next segment dependency is recorded in `provenance/next_segment_dependencies_NOT_OPEN.json`; no continuation is generated.
+
+Group exposure delivered under `group_delivery/`: all3fixed commit/path/SHA rows and022–025/026–029/030–033 four-frame holds are provided; it is cached actualCanvas exposure verification, not fresh production rendering.

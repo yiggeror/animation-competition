@@ -1,0 +1,22 @@
+[
+  "ffmpeg",
+  "-v",
+  "error",
+  "-framerate",
+  "24",
+  "-start_number",
+  "22",
+  "-i",
+  "build/S12_F022_F026_F030_12f_actualCanvas_exposure/%05d.png",
+  "-frames:v",
+  "12",
+  "-c:v",
+  "libx264",
+  "-pix_fmt",
+  "yuv420p",
+  "-crf",
+  "18",
+  "-tune",
+  "animation",
+  "collab/reviews/cloud_s12_20261018/F030_close_grip_from_locked026_20261019/group_delivery/S12_F022_F026_F030_12f_actualCanvas_hold.mp4"
+]

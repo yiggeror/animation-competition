@@ -1,0 +1,9 @@
+# Final022 /026 /030 native and actual-Canvas exposure delivery
+
+`final_PNG_commit_path_SHA_and_exposure.csv` and `fixed_native_Canvas_sources.json` give all three final native PNGs, exact immutable source commits/paths/SHA, and their corresponding actualCanvas SHA. `final_native/F022.png`, `F026.png`, `F030.png` are byte-identical convenience copies.022 and026 retain their official locks unchanged;030 is the author-passed actual closed grasp for the direct reviewer.
+
+Exposure:022–025,026–029,030–033, **4frames each at24fps**,12frames /0.5s /1920×1080 /silent. `S12_F022_F026_F030_12f_actualCanvas_hold.mp4` holds each existing verified actualCanvas4times. **This is actualCanvas exposure verification, not new per-frame production rendering.** Existing light/grain is frozen within each hold. No old scene was rerendered; no extra imagegen or newCanvas capture is used for this group. All12 source-copy hashes and decoded MSE are recorded; three decoded scene/hand keys were inspected.
+
+Only actual source ownership/depth compositing was used for030. The native palette/form shade and accepted022/026 pixels were kept; no later colour/AA operation changes these final hashes or the linked exposure sources. The current source/native binding is explicit and immutable.030’s new foreground can naturally cover old occluded edges while actual thumb first-touch and index contact patches stay exact. The accepted lower-air convention is **3pixel-centres /2pixel-square boundaries**, not3px boundary air.
+
+Next dependency only: near RIGHT must first establish its body-rod grip. After BOTH grips hold, a separately approved segment may raise hip/chest/shoulders/head together with knees/shins/instep on the floor, then lift crane/toward lamp. No direct030→dual-grip-rise jump.034/right-hand continuation remains closed; see the parent packet’s dependency JSON. No shared ready/EDL/audio edits.
