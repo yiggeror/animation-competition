@@ -1,0 +1,35 @@
+{
+  "source_commit": "c3c63cc288807740114a4689af6ea18277a63794",
+  "cwd": "/workspace/s28-production-six-20261019-c3c63cc2",
+  "argv": [
+    "/workspace/s28-production-six-20261019-c3c63cc2/scripts/verify_s28_migration/verify_six.cjs"
+  ],
+  "started_utc": "2026-10-19T11:15:35.058Z",
+  "pages": 1,
+  "requests": 41,
+  "responses": 41,
+  "request_failures": [],
+  "page_errors": [],
+  "console_errors": [],
+  "response_status_counts": {
+    "200": 41
+  },
+  "chromium_runtime": {
+    "effective_executable": "/usr/bin/chromium",
+    "options": {
+      "executablePath": "/usr/bin/chromium",
+      "headless": true,
+      "args": [
+        "--no-sandbox",
+        "--use-gl=angle",
+        "--use-angle=swiftshader",
+        "--enable-unsafe-swiftshader"
+      ]
+    },
+    "production_changes": false,
+    "launch_options_unchanged": true
+  },
+  "chromium_version": "154.0.8037.57",
+  "process_exit_code": 0,
+  "finished_utc": "2026-10-19T11:17:42.814Z"
+}

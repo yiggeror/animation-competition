@@ -1,0 +1,29 @@
+{
+  "status": "PASS_SIX_FRAME_PATH_MIGRATION_EQUIVALENCE_ONLY",
+  "actual_viewed_pngs": [
+    "actual_six_png/F000.png",
+    "actual_six_png/F012.png",
+    "actual_six_png/F042.png",
+    "actual_six_png/F132.png",
+    "actual_six_png/F162.png",
+    "actual_six_png/F191.png"
+  ],
+  "visual_facts": [
+    "000/012/042 are stage frames with changing Xiaoman gesture",
+    "132/162/191 show the connected phone with 1% charging screen"
+  ],
+  "all_six_sha256_match_frozen_expected": true,
+  "browser_requests": 41,
+  "browser_response_status_counts": {
+    "200": 41
+  },
+  "request_failures": [],
+  "page_errors": [],
+  "console_errors": [],
+  "collab_review_resource_requests": 0,
+  "native_generation_calls": 0,
+  "six_verification_runs": 1,
+  "full192_rerenders": 0,
+  "production_and_executor_edits": 0,
+  "scope_limit": "Six-frame migration equivalence; no new full192 artistic acceptance or ready/audio changes."
+}
