@@ -1,0 +1,264 @@
+{
+  "kind": "UNMODIFIED_NATIVE_F012_REVIEW_NOT_ASTRA_LOCK",
+  "raw_SHA256": "52c6faf1e5eda14c2930ca557b5d1624a4dea86853f8dd631dd950b7b0d89f2c",
+  "mother_SHA256": "95f80f2d8f56394abd4a808cc8a6f205633658a544de4ab52e1e34c4ac1ed793",
+  "raw_RGBA_size": [
+    1024,
+    1536
+  ],
+  "registration": {
+    "scale": 0.7,
+    "x": 275,
+    "y": 112
+  },
+  "material_threshold_RGB_mean": 4,
+  "mask_definition": "Manual physical material polygons, per-image same-pigment predicates; alpha>=128; blue excludes white flowers/ink by color. Not global averages. Compare broad whole pigment regions, not selected safe edit cores. Exact masks saved.",
+  "skin_new_far_arm_polygon_only_motion_adjustment": [
+    [
+      697,
+      748
+    ],
+    [
+      748,
+      768
+    ],
+    [
+      824,
+      803
+    ],
+    [
+      902,
+      824
+    ],
+    [
+      957,
+      825
+    ],
+    [
+      1008,
+      845
+    ],
+    [
+      1013,
+      914
+    ],
+    [
+      958,
+      925
+    ],
+    [
+      901,
+      905
+    ],
+    [
+      822,
+      886
+    ],
+    [
+      754,
+      873
+    ],
+    [
+      680,
+      828
+    ]
+  ],
+  "hair_region_polygon": [
+    [
+      [
+        444,
+        325
+      ],
+      [
+        746,
+        328
+      ],
+      [
+        810,
+        459
+      ],
+      [
+        757,
+        548
+      ],
+      [
+        635,
+        553
+      ],
+      [
+        589,
+        574
+      ],
+      [
+        435,
+        546
+      ]
+    ]
+  ],
+  "trousers_region_polygon": [
+    [
+      [
+        180,
+        1010
+      ],
+      [
+        463,
+        1009
+      ],
+      [
+        577,
+        1100
+      ],
+      [
+        642,
+        1180
+      ],
+      [
+        640,
+        1293
+      ],
+      [
+        525,
+        1320
+      ],
+      [
+        191,
+        1325
+      ]
+    ]
+  ],
+  "materials": {
+    "skin": {
+      "mother_pixels": 62520,
+      "F012_pixels": 63215,
+      "mother_mean_RGB": [
+        248.23693218170186,
+        203.49334612923863,
+        171.58142994241842
+      ],
+      "F012_mean_RGB": [
+        251.34749663845605,
+        205.05998576287274,
+        172.07982282686072
+      ],
+      "delta_F012_minus_mother_RGB": [
+        3.11056445675419,
+        1.5666396336341109,
+        0.49839288444229624
+      ],
+      "max_abs_channel_delta": 3.11056445675419,
+      "within_4": true
+    },
+    "blouse_blue": {
+      "mother_pixels": 118656,
+      "F012_pixels": 119091,
+      "mother_mean_RGB": [
+        134.3811016720604,
+        168.7346446871629,
+        211.0395260248112
+      ],
+      "F012_mean_RGB": [
+        140.1911647395689,
+        170.5692369700481,
+        212.21057006826712
+      ],
+      "delta_F012_minus_mother_RGB": [
+        5.8100630675085085,
+        1.834592282885211,
+        1.1710440434559075
+      ],
+      "max_abs_channel_delta": 5.8100630675085085,
+      "within_4": false
+    },
+    "hair": {
+      "mother_pixels": 40552,
+      "F012_pixels": 40660,
+      "mother_mean_RGB": [
+        177.88974649832315,
+        167.7162901953048,
+        163.19007693825213
+      ],
+      "F012_mean_RGB": [
+        180.91910969011315,
+        170.43831775700934,
+        166.5918593212002
+      ],
+      "delta_F012_minus_mother_RGB": [
+        3.0293631917899972,
+        2.72202756170455,
+        3.4017823829480562
+      ],
+      "max_abs_channel_delta": 3.4017823829480562,
+      "within_4": true
+    },
+    "trousers": {
+      "mother_pixels": 103035,
+      "F012_pixels": 103426,
+      "mother_mean_RGB": [
+        55.813442034260206,
+        60.0466055223953,
+        83.56112971320425
+      ],
+      "F012_mean_RGB": [
+        58.68816351787752,
+        62.44889099452749,
+        86.93697909616537
+      ],
+      "delta_F012_minus_mother_RGB": [
+        2.8747214836173143,
+        2.402285472132185,
+        3.375849382961121
+      ],
+      "max_abs_channel_delta": 3.375849382961121,
+      "within_4": true
+    }
+  },
+  "all_four_materials_pass": false,
+  "hand_to_fixed_rod_outline_gaps": {
+    "far_left": {
+      "L": {
+        "conservative_min_gap_to_7px_outline_scene_px": 33.27484796849008,
+        "nearest_native_pixel": [
+          969,
+          904
+        ],
+        "hand_skin_pixels": 6790
+      },
+      "R": {
+        "conservative_min_gap_to_7px_outline_scene_px": 49.429501241604214,
+        "nearest_native_pixel": [
+          969,
+          904
+        ],
+        "hand_skin_pixels": 6790
+      }
+    },
+    "near_right": {
+      "L": {
+        "conservative_min_gap_to_7px_outline_scene_px": 46.322651287465064,
+        "nearest_native_pixel": [
+          876,
+          991
+        ],
+        "hand_skin_pixels": 8102
+      },
+      "R": {
+        "conservative_min_gap_to_7px_outline_scene_px": 59.12228559019658,
+        "nearest_native_pixel": [
+          876,
+          991
+        ],
+        "hand_skin_pixels": 8102
+      }
+    }
+  },
+  "gap_method": "Finite projected code rod segment, width7scene px; selected actual hand skin pixel centres transformed by .70+(275,112); subtract half native pixel diagonal for conservative boundary. Diagnostic overlays, not real new scene render.",
+  "imagegen_calls_this_task": 1,
+  "inflight_this_worker": 0,
+  "other_frames_generated": [],
+  "pixel_corrections_or_transforms": 0,
+  "new_scene_renders": 0,
+  "original_art_not_modified": true,
+  "whole_body_pixel_identity_to_mother_claimed": false,
+  "Astra_final_approval": "PENDING_NATIVE_REVIEW_AND_COLOR_DISPOSITION"
+}

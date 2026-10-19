@@ -1,0 +1,38 @@
+{
+  "scope": "this cloud worker/session S12 F012 only",
+  "base_commit": "f1564c25180ad21dcdfc8f2d0e695ca4ad5ef419",
+  "approved_prompt_SHA256": "c6477cb1d6eba61279e725314f92a5ac50fc00a40a1816abf6ef0bcdb43e4f89",
+  "input_sha256": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/first_left_grasp_inputs_20261019/inputs/locked_F000.png",
+      "sha256": "95f80f2d8f56394abd4a808cc8a6f205633658a544de4ab52e1e34c4ac1ed793"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/first_left_grasp_inputs_20261019/inputs/identity03_original.png",
+      "sha256": "ab88b69f5303229af379303a37b6e9e3c8cdb35cd05b3902b604871efb2b1671"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/first_left_grasp_inputs_20261019/inputs/F012_CONSTRUCTION.png",
+      "sha256": "8b15409c291ebe52bdc21a80a169e98748bceadd0d6f5baa40fd31e9628e912d"
+    }
+  ],
+  "prior_native_calls": 3,
+  "calls_this_task": 1,
+  "inflight_this_worker": 0,
+  "outputs_this_task": 1,
+  "status": "RAW_F012_DELIVERED_GAP_PASS_BLUE_R_COLOR_GATE_FAIL_ASTRA_REVIEW_REQUIRED",
+  "other_frames_authorized": false,
+  "approval_message_parent": "01a0fbb9-4718-7063-bf5b-9bf34d41700f",
+  "zero_inflight_basis": "All previous S12 imagegen calls completed and retained; preparation-only ledger recorded0calls; no pending imagegen exec cell in this session. This is not a global other-worker job claim.",
+  "precheck_utc": "2026-10-19T01:17:42.262025+00:00",
+  "raw": "originals/F012_raw_call01.png",
+  "raw_SHA256": "52c6faf1e5eda14c2930ca557b5d1624a4dea86853f8dd631dd950b7b0d89f2c",
+  "tool_original_path": "/workspace/generated_images/exec-4ed0040a-88ad-458e-8527-ba4e6d7b7cfe.png",
+  "completed_utc": "2026-10-19T01:19:31.696838+00:00",
+  "other_frames_generated": [],
+  "cumulative_S12_native_calls": 4,
+  "material_gate_all_four": false,
+  "blue_R_delta": 5.8100630675085085,
+  "new_scene_render_runs": 0,
+  "pixel_edits": 0
+}
