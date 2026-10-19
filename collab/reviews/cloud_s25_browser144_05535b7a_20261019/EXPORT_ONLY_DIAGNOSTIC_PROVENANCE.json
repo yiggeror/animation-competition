@@ -1,0 +1,9 @@
+{
+  "fixed_commit": "05535b7a3bf0d7777333749c8a773dc2f0aaf28f",
+  "production_module_sha256": "664342ae72e308129071870bf64df3fa4043910eb64274a242e975d3f2d14ce6",
+  "diagnostic_module_sha256": "ccb0242fa1b7319c139bce80b5c1890f1a7ed5db8efe34f2f1ee4a299a954328",
+  "only_change": "export const FPS=24, FRAME_COUNT=144; -> export {FPS}; export const FRAME_COUNT=144;",
+  "renderFrame_and_all_rendering_code_unchanged": true,
+  "production_files_modified": false,
+  "purpose": "Actual Chromium full144 visual diagnostic of the minimal export-only repair; not a passing baseline05535b7a gate"
+}

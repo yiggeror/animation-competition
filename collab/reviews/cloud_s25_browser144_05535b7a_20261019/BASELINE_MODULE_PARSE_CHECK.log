@@ -1,0 +1,13 @@
+[stdin]:26
+export const FPS=24, FRAME_COUNT=144;
+             ^
+
+SyntaxError: Identifier 'FPS' has already been declared
+    at checkSyntax (node:internal/main/check_syntax:72:5)
+    at node:internal/main/check_syntax:45:5
+    at ReadStream.<anonymous> (node:internal/process/execution:205:5)
+    at ReadStream.emit (node:events:509:28)
+    at endReadableNT (node:internal/streams/readable:1736:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+
+Node.js v24.19.0
