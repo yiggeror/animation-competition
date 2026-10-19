@@ -1,0 +1,96 @@
+{
+  "status": "STABLE_DIAGNOSTIC_VALID_OUTPUT_HOLD_VISIBLE_UNSOURCED_TORCH_REGION",
+  "source_SHA256": {
+    "REAL_PROP_original_NO_HUMAN.png": "ca46b3a34bfc9bbecbd83eec67af95269a66588b14465e684cebdd09510d8a66",
+    "F063_LOCKED0abc.png": "0abc3fd9cfcf7964f825ac7be0227fb9f588da709809f6d15362063741e545ef",
+    "F058_LOCKED044.png": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+    "HEAD_actual_source.png": "f4ff3c7d356c9a1ed55ce09dd1eaf57224d239e8cb351dd1f90b6fe42f59281d",
+    "SKIRT_actual_source.png": "56a677d734ee34792105273c7a5373b0da2507ba817d8e54c65bc98c1e4250fb",
+    "F060_RAW14e9.png": "14e9aee876ebdd73ed3331e024857fe92f32736399845f5885d182c8fdca8dc4",
+    "F062_RAW714b.png": "714b1f4cf42862669a1545c01a391fd1a2b1b26edfcfaae38dfb1637a3de9b27",
+    "original_bridge_geometry.json": "6f4907a621d9ced60a04ec81f159f70fb4ebfa889e5b7c80d03334b51b8ccd04"
+  },
+  "physical_prop_source": "PROP_original, historical hand removed; visible source only, not complete hidden RGB",
+  "one_prop_transform": {
+    "scale": 1,
+    "rotation_deg": 52,
+    "M": [
+      [
+        0.6156614753256583,
+        -0.788010753606722
+      ],
+      [
+        0.788010753606722,
+        0.6156614753256583
+      ]
+    ],
+    "t": [
+      732.4483704633321,
+      -582.9432012468682
+    ],
+    "actual_raw_lens_filled_centroid": [
+      973.8684791843671,
+      722.3486830926083
+    ],
+    "actual_native_mouth_centroid": [
+      1204.9159204995308,
+      485.77160347712527
+    ],
+    "source_real_mouth_centroid": [
+      1133.03882756,
+      285.65702322
+    ],
+    "source_mouth_index_authority": "parent earlier actualFE70 dark lens area center; actual ellipse read is a proxy, not physical3D measurement",
+    "target_G_source_station_projection": [
+      1060.5629575931632,
+      600.4308643273358
+    ],
+    "target_T_source_endface_center": [
+      906.5813323341586,
+      720.0758744347173
+    ],
+    "target_L_source_endface_center": [
+      1203.4890371656115,
+      489.3751704658765
+    ],
+    "source_axis_length": 376.00132978488244,
+    "source_hand_pixel_adopted": 0
+  },
+  "complete_current_near_hand_RGBA_changes": 0,
+  "known_prop_layer_order": "current far arm -> current near forearm -> one rigid real physical lamp -> complete current hand/fingers",
+  "historical_hand_hidden_possible_tube_unknown_pixels_after_transform": 10152,
+  "unknown_not_covered_by_current_hand_pixels": 3226,
+  "no_unknown_RGB_created": true,
+  "F060_head_skirt_cleanup": {
+    "raw_head_hair_and_collar_cleared_pixels": 164186,
+    "raw_skirt_semantic_cleared_pixels": 96099,
+    "source_head_skirt_RGBA_changes": 0,
+    "complete_skirt_white_flower_and_AA_source_pixels_retained": 61984
+  },
+  "F062_head_skirt_cleanup": {
+    "raw_head_hair_and_collar_cleared_pixels": 162780,
+    "raw_skirt_semantic_cleared_pixels": 95389,
+    "source_head_skirt_RGBA_changes": 0,
+    "complete_skirt_white_flower_and_AA_source_pixels_retained": 61984
+  },
+  "F060_actual_correction": "Projection overlap alone does not prove physical collision. Prior contact/HOLD interpretation withdrawn under Astra actual review; raw unmodified, no new request.",
+  "calls": 0,
+  "git": 0,
+  "candidate_SHA256": "44a956e5a70a79c0182f68893dede8dbdb7477d63f905ecc7c2a01717dfa06a9",
+  "actually_viewed": [
+    "qa/F062_full_actual_layer_diagnostic_dark.png",
+    "qa/F062_full_actual_layer_diagnostic_gray.png",
+    "qa/F062_before_after_layer_ownership_gray.png",
+    "qa/F058_F060_F062_F063_SAME_SCALE_dark.png",
+    "qa/F060_full_clean_head_skirt_gray.png"
+  ],
+  "visual_conclusion": [
+    "062 complete real tail/red lower tube is in front of the original near forearm and behind the current intact grip; no old source hand adopted.",
+    "The source rigid axis passes through the actual current grasp location in the one fixed alignment; no independent hand, cap or head fit was performed.",
+    "Historical original hand-hidden surface is exposed beside current thumb/slider. It remains UNKNOWN with no source RGB; this is an effective layer diagnostic, NOT a finished adopted062.",
+    "Both returned heads/hair exterior outlines are fully cleared before actual locked head/neck/collar replacement; prior mask-only double outline is removed.",
+    "Returned skirt silhouette and floating white/yellow edge fragments were cleared semantically; complete locked skirt connected RGBA including white dots was restored. Original real short-sleeve roots and current bare arms kept."
+  ],
+  "unknown_measurement_limit": "3226 denotes a conservative possible hidden-tube ROI not occluded by current hand, not independently measured true physical surface area. Actual visible hole is plainly shown; no code painting or extrapolation.",
+  "source_outside_only_limit": "Only diagnostic source layering, no production static acceptance, no new image requests or video."
+}

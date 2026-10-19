@@ -1,0 +1,78 @@
+{
+  "status": "ACTUAL_LAYER_DIAGNOSTIC_VIEWED_NOT_FINAL_062_ADOPTION",
+  "reviewer": "root",
+  "actual_images_viewed": [
+    "qa/F062_before_after_layer_ownership_gray.png",
+    "qa/F058_F060_F062_F063_SAME_SCALE_gray.png",
+    "qa/F060_full_clean_head_skirt_dark.png",
+    "qa/F062_full_actual_layer_diagnostic_dark.png",
+    "qa/F058_F060_F062_F063_SAME_SCALE_dark.png"
+  ],
+  "F060_latest_Astra_interpretation": "Keep native turning direction. Tailcap/far-arm projection overlap alone is not demonstrated collision; prior inferred collision/HOLD reason withdrawn. Original raw bytes unchanged. New full head/skirt source-clear composite is a REVIEW candidate only.",
+  "F060_actual_whole_image_findings": [
+    "No doubled raw outer hair contour observed in final dark full image.",
+    "Final source skirt complete contour retained; previous floating outer yellow/white fragments removed.",
+    "Actual short-puff roots, original complete palms/arms/torch retained."
+  ],
+  "F062_actual_whole_image_findings": [
+    "Rigid true tailcap now visible in front of near forearm; actual whole gripping hand remains foreground.",
+    "Old hand-occluded source barrel material remains visibly absent beside thumb/slider.",
+    "This diagnostic establishes the proposed layer order but is not a complete-cylinder or production-ready image.",
+    "Original returned whole arms/actual hand remain unchanged; no code-created RGB used to pretend missing prop material exists."
+  ],
+  "F062_remaining_blocker": "Real-source torch barrel pixels absent in uncovered historical hand occlusion; requires Astra decision, not silent fill or new generation.",
+  "candidate_SHA256": "44a956e5a70a79c0182f68893dede8dbdb7477d63f905ecc7c2a01717dfa06a9",
+  "F060_review_SHA256": "2629196f0660b3fc72678cb2a69a021b8e8fb5f8a96fdafd6091a52ed6194061",
+  "one_prop_transform": {
+    "scale": 1,
+    "rotation_deg": 52,
+    "M": [
+      [
+        0.6156614753256583,
+        -0.788010753606722
+      ],
+      [
+        0.788010753606722,
+        0.6156614753256583
+      ]
+    ],
+    "t": [
+      732.4483704633321,
+      -582.9432012468682
+    ],
+    "actual_raw_lens_filled_centroid": [
+      973.8684791843671,
+      722.3486830926083
+    ],
+    "actual_native_mouth_centroid": [
+      1204.9159204995308,
+      485.77160347712527
+    ],
+    "source_real_mouth_centroid": [
+      1133.03882756,
+      285.65702322
+    ],
+    "source_mouth_index_authority": "parent earlier actualFE70 dark lens area center; actual ellipse read is a proxy, not physical3D measurement",
+    "target_G_source_station_projection": [
+      1060.5629575931632,
+      600.4308643273358
+    ],
+    "target_T_source_endface_center": [
+      906.5813323341586,
+      720.0758744347173
+    ],
+    "target_L_source_endface_center": [
+      1203.4890371656115,
+      489.3751704658765
+    ],
+    "source_axis_length": 376.00132978488244,
+    "source_hand_pixel_adopted": 0
+  },
+  "known_source_RGBA_limit": "Only visible real material was available; invisible historical occluded RGB not fabricated.",
+  "new_native_requests": 0,
+  "new_raw_outputs": 0,
+  "new_videos": 0,
+  "original_native_archive": "../F060_F062_NATIVE_from_APPROVED6940a80f_20261019/ contains complete prompts, frozen inputs, original raw-return JSONs and untouched060/062 PNGs at10262cd16d1f3b81b38f0d49f44a3c063a2fa17c",
+  "index_handoff_commit": "1460bc6d5ee97425afc295c71580b6059549d6a0",
+  "production_code_or_asset_edits": false
+}

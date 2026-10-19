@@ -1,0 +1,9 @@
+S09 zero-call layer diagnostic ONLY, stable.060 projection overlap is not proof of collision; prior collision/HOLD interpretation is withdrawn under Astra actual review. Original native060/062 bytes remain unchanged.
+
+062 uses frozen PROP_original physical pixels only, all historical human material excluded. ONE scale1 R52degree matrix aligns the actual filled dark-lens area center; t=[732.4483704633321,-582.9432012468682]. Source grasp station projects to1060.56296/600.43086, T906.58133/720.07587, L1203.48904/489.37517; source axis376.00133native stays rigid. Layer order: original far arm, original near forearm, one real whole physical-prop layer, then the entire actual current gripping hand and all fingers. Current hand RGBA changes0. No tube stretch, separate piece fit, old hand paste or new RGB.
+
+The restored real tail is visible in front of the forearm, but original hand-hidden pipe material remains absent beside the current thumb/slider. Visible UNKNOWN cannot be recovered from this source. Conservative unknown ROI/masks are explicit; no false complete-cylinder claim. Therefore diagnostic is useful, finished062 remains HOLD.
+
+Returned head/hair and collar exterior material is cleared first, then locked original head/neck/collar restored, eliminating prior mask-only double outer hair. Returned skirt including outside fragments is cleared; complete source skirt connected-alpha material including all white dots restored. Actual returned short sleeve roots and bare-arm chains kept. Full source protection0RGBA checks and one matrix/sourceSHA are in geometry/. Four states058/060/062/063 share the same display scale. Before/after raw/layered views and gray/dark full figures are in qa/. No generation/git/color patch or repeated micro-repair. Stop for root actual review.
+
+Root已实际打开最终060/062深底完整图、四态同尺深底及层次前后灰底复核。尾段层次按目标成立；键侧真实缺源仍清晰，062保持成片HOLD，等待Astra判断，不自动调用或补画。外裙悬点已清，原锁完整白花与裙轮廓保留。详见qa/ROOT_actual_final_layer_diagnostic_review.json。
