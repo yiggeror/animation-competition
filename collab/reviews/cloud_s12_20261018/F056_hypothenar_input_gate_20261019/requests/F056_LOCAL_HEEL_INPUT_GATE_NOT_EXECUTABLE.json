@@ -1,0 +1,38 @@
+{
+  "status": "LOCAL_HEEL_INPUT_REVIEW_ONLY_NOT_EXECUTABLE",
+  "call_allowed": false,
+  "tool_arguments": null,
+  "planned_arguments_after_direct_gate": {
+    "prompt": "S12 F056 INPUT REVIEW GATE ONLY: no image generation authorized yet. Prepare ONE necessary LOCAL HYPOTHENAR/PALMAR-APONEUROSIS repair. Current056 near bare wrist, palm orientation, complete thumb below the true lower BODY shaft, complete index wrapping IN FRONT, three other fingers free, and complete arm have independently PASSED. Their actual pixels are HARD PROTECTED. Formal continuity mother remains locked052; current056 is pending only the local heel finish.\n\nInput1 ALREADY shows the positive corrected heel target: continuous normal-thickness hypothenar and palmar aponeurosis, shallow natural palm creases, gentle rounded outer heel. It uses ONLY actual052 same-semantic local heel skin pixels inside current056 correct wrist/palm context. It is an explicitly labelled SOURCE-PIXEL REFERENCE CONSTRUCTION, NEVER the final new art. Redraw this small heel naturally. NO long diagonal raised skin strap, NO appended fleshy ribbon across the palm, NO outer pointed skin spur, NO extra finger and NO flattened palm thickness. Do not use the current failed strap as the target, and no complete old052 hand pose is supplied to compete for hand shape.\n\nInput2 shows EXACTLY THE SAME corrected heel target with the TRUE UNMOVED lower BODY shaft and fixed actual056 thumb/index depth. The orange traced soft-tissue region is the ONLY possible repair limit, NOT its rectangular bounding box. Cyan marks the permitted outer heel contour part. The interior permits only natural skin volume, shallow crease and soft shadow; interior alpha is fixed. ALL thenar tissue, complete thumb and its true underside soft-pad contact, complete index front middle/distal occlusion, ALL other3 complete digit ROOTS/MCP/PIP/DIP/TIPS, bare wrist, entire forearm/elbow/shoulder, other hand and body are HARD PROTECTED. Do not move, reshape, repaint, scale or blend any protected anatomy. No rod movement, release or re-grasp. The far LEFT jade hand remains on the upper NECK3 rod but is not supplied as another whole-hand image.\n\nInput3 has ONLY tiny actual052 same-semantic local heel material/crease/round edge patches; no alternate complete hand or failed strip. Keep intrinsic flesh colour and soft shadow, preserve coherent ink/AA at the allowed heel edge. Reference construction transitions and coloured guide lines are explanatory, not skin features. Output ONLY the necessary small organic heel skin/edge repair at the specified fixed local coordinates on TRANSPARENT background; no rod, label, guide, full hand, body or sleeve. Final adopted skin must be from the actual new image-generation output, never a code-colour fill or adopted reference mesh.\n\nFixed local output1024square: native crop[850,940,1040,1130], uniform4.8x with56px padding. plate=4.8*native+(-4024,-4456), inverse native=(plate+(4024,4456))/4.8. Keep exact current056 placement. Only the traced semantic heel mask may be adopted; if the returned board shifts, ONE whole small-patch similarity, no finger or joint deformation. Shoulder/sleeve/arm and original blue sleeve-root cleanup are a separate later semantic finish; do not combine them here.060/064 image generation remains unauthorized pending qualified056. Preserve the full prompt, all input SHA, raw original output and tool source.\n",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F056_hypothenar_input_gate_20261019/inputs/01_CORRECT_LOCAL_HEEL_fixed056_context.png",
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F056_hypothenar_input_gate_20261019/inputs/02_SAME_TARGET_TRUE_ROD_and_PROTECTION.png",
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F056_hypothenar_input_gate_20261019/inputs/03_ONLY_actual052_local_heel_MATERIAL.png"
+    ],
+    "transparent_background": true
+  },
+  "actual_input_PNGs": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F056_hypothenar_input_gate_20261019/inputs/01_CORRECT_LOCAL_HEEL_fixed056_context.png",
+      "SHA256": "952349789362d62768f7a9967229ca4270f329285f11bdc88cec90da1e06665c"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F056_hypothenar_input_gate_20261019/inputs/02_SAME_TARGET_TRUE_ROD_and_PROTECTION.png",
+      "SHA256": "5071313d706c880e8d4051d578b9ca752000e318a3a5076a4eab03561618c641"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F056_hypothenar_input_gate_20261019/inputs/03_ONLY_actual052_local_heel_MATERIAL.png",
+      "SHA256": "52a5303d7c80a34fa7ada053f6077629fbff8fb67177b7a741d609c4241a0864"
+    }
+  ],
+  "prompt_SHA256": "82ac076e802a624083571464847f32ec068b7728970e019ebe7441fb9bdc2980",
+  "current056_source": {
+    "path": "collab/reviews/cloud_s12_20261018/F056_directed_wrist_palm_repair_actual_20261019/candidate/F056.png",
+    "SHA256": "9d1a1aa9b3bf346618dfe961665a3174900f58bf2e5566d832cbb33de13a5cd2"
+  },
+  "local052_source": {
+    "path": "collab/reviews/cloud_s12_20261018/F048_F052_actual_20261019/F052/candidate/F052.png",
+    "SHA256": "5a9df2ee672bee4be4f660217e6546e0771656c26c3bd0c6882d657328739b5c"
+  },
+  "new_calls": 0
+}
