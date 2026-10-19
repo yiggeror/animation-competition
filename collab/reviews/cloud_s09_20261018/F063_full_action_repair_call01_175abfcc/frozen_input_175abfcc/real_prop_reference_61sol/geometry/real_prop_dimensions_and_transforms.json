@@ -1,0 +1,153 @@
+{
+  "status": "REAL_VISIBLE_PROP_SIZE_REFERENCE_ONLY_PENDING_ROOT_ASTRA",
+  "unit_SHA256": "b8774b779a30c1653c645aacebb01290c7ff77b63ffa9e70f03172e849224ca0",
+  "flat_mother_SHA256": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+  "unit_vs_flat_visible_prop_alpha128_RGBA_differences": 0,
+  "unit_vs_flat_note": "Historical unit and flattened mother have AA/flattening differences; not claimed byte-identical. No flatmother pixel substituted into unit.",
+  "source_T_ellipse_center_inferred_from_frozen_rigid_transform": [
+    1134.0,
+    664.9999999999999
+  ],
+  "source_L_ellipse_center_inferred_from_frozen_rigid_transform": [
+    1135.0000000000002,
+    289.0
+  ],
+  "endpoint_note": "Frozen source points recovered by inverse original s1 matrix. Manual ellipse center read uncertainty ~4native px each; inverse consistency is not independent physical measurement.",
+  "source_axis_center_to_center_native": 376.00132978488244,
+  "registered_axis_native": 376.00132978488244,
+  "target_T": [
+    858.3388552980175,
+    636.9294709248006
+  ],
+  "target_L": [
+    1227.0002384706622,
+    562.9985264074178
+  ],
+  "rigid_reference_only": {
+    "M": [
+      [
+        0.19923110917411352,
+        -0.9799525320836987
+      ],
+      [
+        0.9799525320836987,
+        0.19923110917411352
+      ]
+    ],
+    "t": [
+      1284.0792113302323,
+      -606.8253880588991
+    ],
+    "scale": 1,
+    "rotation_degrees": 78.508,
+    "grasp_not_transformed_or_locked": true,
+    "one_BICUBIC_whole_prop_resample": true
+  },
+  "reference_crop_native_halfopen": [
+    990,
+    250,
+    1220,
+    690
+  ],
+  "local_crop_equals_source_minus": [
+    990,
+    250
+  ],
+  "source_sections": [
+    {
+      "name": "tailcap_full_visible_material",
+      "manual_source_ROI_halfopen": [
+        1080,
+        620,
+        1190,
+        678
+      ],
+      "alpha_threshold": 128,
+      "actual_pixels": 3714,
+      "transverse_pixel_center_extent_native": 80.06620619459949,
+      "min_xy": [
+        1093,
+        622
+      ],
+      "max_xy": [
+        1173,
+        647
+      ],
+      "span_interval_from_T_native": [
+        -3.039882865983421,
+        45.10090432313619
+      ],
+      "ownership_boundary_uncertainty_native_px": 3,
+      "meaning": "2D visible-material band envelope normal to true axis; not exact 3D diameter. No occluded material reconstructed."
+    },
+    {
+      "name": "red_barrel_below_hand_clear_band",
+      "manual_source_ROI_halfopen": [
+        1090,
+        548,
+        1180,
+        599
+      ],
+      "alpha_threshold": 128,
+      "actual_pixels": 3501,
+      "transverse_pixel_center_extent_native": 68.08486558982716,
+      "min_xy": [
+        1099,
+        548
+      ],
+      "max_xy": [
+        1167,
+        580
+      ],
+      "span_interval_from_T_native": [
+        66.90667826731554,
+        117.08735185906788
+      ],
+      "ownership_boundary_uncertainty_native_px": 3,
+      "meaning": "2D visible-material band envelope normal to true axis; not exact 3D diameter. No occluded material reconstructed."
+    },
+    {
+      "name": "lampcap_full_visible_material",
+      "manual_source_ROI_halfopen": [
+        1060,
+        266,
+        1200,
+        358
+      ],
+      "alpha_threshold": 128,
+      "actual_pixels": 9977,
+      "transverse_pixel_center_extent_native": 124.02349754103162,
+      "min_xy": [
+        1071,
+        287
+      ],
+      "max_xy": [
+        1195,
+        296
+      ],
+      "span_interval_from_T_native": [
+        307.8818898492479,
+        398.043805019589
+      ],
+      "ownership_boundary_uncertainty_native_px": 3,
+      "meaning": "2D visible-material band envelope normal to true axis; not exact 3D diameter. No occluded material reconstructed."
+    }
+  ],
+  "manual_complete_tail_major_axis_prior_estimate_native": {
+    "value": 83,
+    "error": 4,
+    "limit": "Actual visible projected endcap estimate, not old44px occluded estimate and not physical3D caliper. Current pixel envelope separately recorded."
+  },
+  "source044_grip_axis_fraction_reference": 0.5186170239855135,
+  "grip_limit": "Axial station reference only; source hand occludes actual tube/axis. Never copy old wrist or hand-back silhouette; source hand context is labelled NON_TARGET.",
+  "exclusion": {
+    "old_human_source_material_removed": 17350,
+    "no_hidden_prop_fill": true,
+    "all_retained_visible_prop_RGBA_changes": 0,
+    "conservative_shared_hand_prop_boundary": "Old audited polygon intentionally removes ambiguous boundary and may omit a little visible prop; negative space is UNKNOWN, never a true necking/tube cut contour."
+  },
+  "current_far_palm_frozen": false,
+  "no_target_or_white_domain_written": true,
+  "image_calls": 0,
+  "F069_opened": false
+}
