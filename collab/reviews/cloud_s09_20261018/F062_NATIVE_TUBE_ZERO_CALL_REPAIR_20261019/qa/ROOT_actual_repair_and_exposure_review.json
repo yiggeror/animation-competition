@@ -1,0 +1,22 @@
+{
+  "status": "ACTUAL_ZERO_CALL_REPAIR_AND_9F_EXPOSURE_VIEWED_PENDING_ASTRA",
+  "actual_views": [
+    "qa/F062_ACTUAL_NATIVE_before_after_local_dark.png",
+    "qa/F062_full_actual_repair_dark.png",
+    "qa/ACTUAL9f_decoded_060_062_063_transition_gray.png",
+    "qa/ACTUAL9f_decoded_full_hands_prop_dark.png"
+  ],
+  "findings": [
+    "Native062 original has real continuous barrel/key pixels at exactly the required same scene position.",
+    "Local before/after now shows continuous red barrel and one original native key face; prior diagonal old cutout boundary and duplicate key edge cleared.",
+    "Whole flashlight keeps frozen real head, ends and newly foreground tail; current complete hand and two arm chains remain as before.",
+    "Actual exposure060x2/062x1/063x6 preserves turn order and receiving-palm air; no new contact or premature light introduced."
+  ],
+  "registration": "Identity for one material region after previously frozen whole-raw inverse. No new fit, blend, fill, tube extension, or separate hand transform.",
+  "candidate_sha256": "a301035e87678f51ac44b09099ee6696c28648da847f043b1ef99ccf67f6882a",
+  "zero_call": true,
+  "new_originals": 0,
+  "production_changes": false,
+  "all_git_sources_verified_SHA256": true,
+  "full_scene_or_final_motion_approval": false
+}

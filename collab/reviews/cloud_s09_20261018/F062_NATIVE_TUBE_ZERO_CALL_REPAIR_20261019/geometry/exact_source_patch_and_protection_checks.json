@@ -1,0 +1,213 @@
+{
+  "status": "ONE_NATIVE062_REAL_MATERIAL_IDENTITY_PATCH_PENDING_ACTUAL_ROOT_AND_ASTRA",
+  "sources": {
+    "actual_native062_whole_common_inverse": {
+      "commit": "10262cd16d1f3b81b38f0d49f44a3c063a2fa17c",
+      "path": "collab/reviews/cloud_s09_20261018/F060_F062_NATIVE_from_APPROVED6940a80f_20261019/F062/qa/F062_whole_fixed770x924_inverse.png",
+      "sha256": "5006b6fe6328ad2b4d00327e24007d172abb43e2ce1c1dabc24451b7bbd7c9c9"
+    },
+    "untouched_native062_raw": {
+      "commit": "10262cd16d1f3b81b38f0d49f44a3c063a2fa17c",
+      "path": "collab/reviews/cloud_s09_20261018/F060_F062_NATIVE_from_APPROVED6940a80f_20261019/F062/originals/F062_call01_RAW.png",
+      "sha256": "714b1f4cf42862669a1545c01a391fd1a2b1b26edfcfaae38dfb1637a3de9b27"
+    },
+    "before_frozen_rigid_prop": {
+      "commit": "da4b8c8df5209c0a81b0fb965d48b3b5d99402a2",
+      "path": "collab/reviews/cloud_s09_20261018/F060_F062_ZERO_CALL_LAYER_DIAGNOSTIC_20261019/candidate/F062_REAL_WHOLE_PROP_front_of_forearm_behind_actual_fingers_DIAGNOSTIC.png",
+      "sha256": "44a956e5a70a79c0182f68893dede8dbdb7477d63f905ecc7c2a01717dfa06a9"
+    },
+    "frozen_real_prop_source": {
+      "commit": "da4b8c8df5209c0a81b0fb965d48b3b5d99402a2",
+      "path": "collab/reviews/cloud_s09_20261018/F060_F062_ZERO_CALL_LAYER_DIAGNOSTIC_20261019/sources/REAL_PROP_original_NO_HUMAN.png",
+      "sha256": "ca46b3a34bfc9bbecbd83eec67af95269a66588b14465e684cebdd09510d8a66"
+    },
+    "frozen_rigid_prop_layer": {
+      "commit": "da4b8c8df5209c0a81b0fb965d48b3b5d99402a2",
+      "path": "collab/reviews/cloud_s09_20261018/F060_F062_ZERO_CALL_LAYER_DIAGNOSTIC_20261019/layers/ONE_REAL_PROP_R52_SCALE1_actual_mouth_registration.png",
+      "sha256": "32c6ae0a0d56473aa94e88a34500a92403ab08c843c012faec1fa124cb7c7d06"
+    },
+    "complete_current_near_hand": {
+      "commit": "da4b8c8df5209c0a81b0fb965d48b3b5d99402a2",
+      "path": "collab/reviews/cloud_s09_20261018/F060_F062_ZERO_CALL_LAYER_DIAGNOSTIC_20261019/masks/KEEP_F062_actual_complete_near_hand_fingers.png",
+      "sha256": "a06c3a555432123c7e1a0a354b879f4cfd1082d9565ebdec4f8a6566aa0d9687"
+    },
+    "approved060_complete_head_skirt": {
+      "commit": "da4b8c8df5209c0a81b0fb965d48b3b5d99402a2",
+      "path": "collab/reviews/cloud_s09_20261018/F060_F062_ZERO_CALL_LAYER_DIAGNOSTIC_20261019/candidate/F060_complete_head_skirt_source_REVIEW.png",
+      "sha256": "2629196f0660b3fc72678cb2a69a021b8e8fb5f8a96fdafd6091a52ed6194061"
+    },
+    "locked063": {
+      "commit": "10262cd16d1f3b81b38f0d49f44a3c063a2fa17c",
+      "path": "collab/reviews/cloud_s09_20261018/F063_zero_call_semantic_reintegration_20261019/candidate/F063_zero_call_semantic_RECONNECTED.png",
+      "sha256": "0abc3fd9cfcf7964f825ac7be0227fb9f588da709809f6d15362063741e545ef"
+    },
+    "frozen_prop_geometry": {
+      "commit": "da4b8c8df5209c0a81b0fb965d48b3b5d99402a2",
+      "path": "collab/reviews/cloud_s09_20261018/F060_F062_ZERO_CALL_LAYER_DIAGNOSTIC_20261019/geometry/one_rigid_source_transform_and_limits.json",
+      "sha256": "e0d054ead829a6df4c9b71b2db8bb9118c305958331e7c17390ebd7122e415f0"
+    }
+  },
+  "material_registration": {
+    "M": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "translation_xy": [
+      0,
+      0
+    ],
+    "scale": 1,
+    "rotation_deg": 0,
+    "source_grid": [
+      1672,
+      941
+    ],
+    "prior_whole_raw_inverse": "770/1145 and placement[550,0], frozen before this repair; not a new patch fit"
+  },
+  "frozen_physical_prop_transform_unchanged": {
+    "scale": 1,
+    "rotation_deg": 52,
+    "M": [
+      [
+        0.6156614753256583,
+        -0.788010753606722
+      ],
+      [
+        0.788010753606722,
+        0.6156614753256583
+      ]
+    ],
+    "t": [
+      732.4483704633321,
+      -582.9432012468682
+    ],
+    "actual_raw_lens_filled_centroid": [
+      973.8684791843671,
+      722.3486830926083
+    ],
+    "actual_native_mouth_centroid": [
+      1204.9159204995308,
+      485.77160347712527
+    ],
+    "source_real_mouth_centroid": [
+      1133.03882756,
+      285.65702322
+    ],
+    "source_mouth_index_authority": "parent earlier actualFE70 dark lens area center; actual ellipse read is a proxy, not physical3D measurement",
+    "target_G_source_station_projection": [
+      1060.5629575931632,
+      600.4308643273358
+    ],
+    "target_T_source_endface_center": [
+      906.5813323341586,
+      720.0758744347173
+    ],
+    "target_L_source_endface_center": [
+      1203.4890371656115,
+      489.3751704658765
+    ],
+    "source_axis_length": 376.00132978488244,
+    "source_hand_pixel_adopted": 0
+  },
+  "adopted_material_pixels": 4577,
+  "RGBA_changed_pixels": 3476,
+  "patch_bbox_xyxy": [
+    1025,
+    502,
+    1168,
+    627
+  ],
+  "complete_current_hand_RGBA_changes": 0,
+  "known_exterior_contour_RGBA_changes": 0,
+  "outside_patch_RGBA_changes": 0,
+  "adopted_RGBA_difference_from_same_position_native062": 0,
+  "lamp_head_and_front_end_y_lt490_RGBA_changes": 0,
+  "new_tail_and_lower_arms_y_ge640_RGBA_changes": 0,
+  "complete_two_original_arms": "Candidate unchanged outside local barrel/key material domain; original complete near hand explicitly protected. Donor is the same raw062 on the same whole-frame inverse, so any native human pixels at the border are also identical.",
+  "exact_source_key_polygon": [
+    [
+      1062,
+      611
+    ],
+    [
+      1107,
+      557
+    ],
+    [
+      1131,
+      548
+    ],
+    [
+      1166,
+      578
+    ],
+    [
+      1149,
+      616
+    ],
+    [
+      1098,
+      640
+    ]
+  ],
+  "material_domain_polygon": [
+    [
+      1025,
+      590
+    ],
+    [
+      1025,
+      560
+    ],
+    [
+      1130,
+      490
+    ],
+    [
+      1170,
+      425
+    ],
+    [
+      1200,
+      422
+    ],
+    [
+      1255,
+      505
+    ],
+    [
+      1222,
+      560
+    ],
+    [
+      1134,
+      617
+    ],
+    [
+      1080,
+      638
+    ],
+    [
+      1025,
+      638
+    ]
+  ],
+  "old_cutout_source_xyxy": [
+    1060,
+    370,
+    1201,
+    553
+  ],
+  "seam_fix": "Adoption crosses the artificial old hole edge and its AA and takes complete actual native key face. Earlier skin/gold color heuristics excluded red highlights and left diagonal old cut pixels; no such palette rejection is used for the authorized real barrel material.",
+  "new_native_requests": 0,
+  "new_raw_outputs": 0,
+  "new_RGB_or_alpha_drawing": false,
+  "full_raw_top_or_whole_prop_reextraction": false,
+  "candidate_sha256": "a301035e87678f51ac44b09099ee6696c28648da847f043b1ef99ccf67f6882a"
+}
