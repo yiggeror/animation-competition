@@ -1,0 +1,25 @@
+{
+  "status": "PASS_FINITE_060_COLLAR_SHOULDER_REPAIR_AND048_071_ACTUAL_SEQUENCE_PENDING_ASTRA",
+  "root_actual_views": [
+    "TWO_SWITCHES_SHOULDER_ACTUAL_OUTPUT_1TO1.png",
+    "HISTORY_VS_NEW060_ACTUAL_SHOULDER_1TO1.png",
+    "actual_decoded_keys/S29_F060_ACTUAL_DECODED.png",
+    "actual_decoded_keys/S29_F065_ACTUAL_DECODED.png",
+    "ALL24_REUSED18_NEW6_ACTUAL_DECODED_CONTACT.png"
+  ],
+  "finding": "Original actual background split is gone. Continuous neck/collar/shoulder/sleeve at normal output size; final protected upper exterior prevents prior doubleink/point. No regression in two switches, palm press, farcloth grip, samecloth phase or truepuppets4rods.",
+  "existing_readonly_helper": {
+    "agent": "/root/s09_motion_audit_61sol",
+    "actual_views": "bothswitch1to1,historycompare,24fcontact,full060/065",
+    "finite_result": "PASS: no backgroundsplit or obviousnew pointed/doubleink shoulder edge; hands/cloth/4rods stable.",
+    "edits": 0,
+    "renders": 0,
+    "generation": 0
+  },
+  "new_scene_browser_draws": 6,
+  "reused_original18_decoded_YUV_and_RGB_differences": 0,
+  "history24_unchanged": true,
+  "new_generation": 0,
+  "scope_limit": "Only patch and048–071; no fullshot ready. Existing nativefloral draw-state differences remain accepted historicalvariation.",
+  "ready_claimed": false
+}

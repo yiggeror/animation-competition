@@ -1,0 +1,40 @@
+{
+  "global_frames": [
+    60,
+    61,
+    62,
+    63,
+    64,
+    65
+  ],
+  "fps": 24,
+  "source_state_starts": [
+    60
+  ],
+  "exposure_within_short_clip": [
+    {
+      "state": 60,
+      "frames": [
+        60,
+        65
+      ],
+      "count": 6
+    }
+  ],
+  "sources": [
+    {
+      "state": 60,
+      "used": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F060_COLLAR_SHOULDER_SEMANTIC_CLOSURE_ZERO_CALL_20261019/F060_COLLAR_SHOULDER_CLOSED_RGBA.png",
+      "usedURL": "/collab/reviews/cloud_s29_drawn_20261019/F060_COLLAR_SHOULDER_SEMANTIC_CLOSURE_ZERO_CALL_20261019/F060_COLLAR_SHOULDER_CLOSED_RGBA.png",
+      "sha256": "b58a1241dd966774e9ff68c2ae5e05fadeca523a016b6cabecc264318c9d40c5"
+    }
+  ],
+  "generation_calls": 0,
+  "historical24f": {
+    "path": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F048_F071_SEMANTIC_CLOSURE_ZERO_CALL_20261019/S29_F048_F071_ACTUAL_SCENE_1080p24.mp4",
+    "SHA256": "5c8ed0c46726c8b210341b5bee74813996c2dde9a1b31800829a0ef2d69e9691",
+    "overwritten": false
+  },
+  "other18frames": "reuse original24 encoded video decoded YUV planes; no browser redrawing",
+  "final24_encoding": "lossless H264 from original18 YUV420 planes plus replacement6; independent RGB andYUV exact original18 verification required"
+}
