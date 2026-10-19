@@ -1,0 +1,131 @@
+{
+  "frame_anchor": 36,
+  "status": "INPUT_PENDING_ASTRA_SHORT_REVIEW",
+  "not_new_exposure_schedule": true,
+  "image_model_calls": 0,
+  "generation_authorized": false,
+  "source": "Frozen S20 protocol B04/B05/B06 and approvedCB strip036/042/047; firstactivecross sampling058",
+  "ownership": {
+    "T_H": [
+      "X.R"
+    ],
+    "T_S": [
+      "X.L"
+    ],
+    "C_B": [
+      "G.L"
+    ],
+    "C_N": [
+      "G.L"
+    ]
+  },
+  "hand_chain_construction": {
+    "G.R": {
+      "world_chain": [
+        [
+          1067.0,
+          285.0
+        ],
+        [
+          1086.6993275272266,
+          433.70082883082745
+        ],
+        [
+          1005.0,
+          476.0
+        ]
+      ],
+      "projected_upper_in_own_H": 0.8196721311475409,
+      "projected_forearm_in_own_H": 0.5027322404371586,
+      "construction_limits_in_own_H": [
+        1.0,
+        0.9
+      ]
+    },
+    "G.L": {
+      "world_chain": [
+        [
+          1160.0,
+          285.0
+        ],
+        [
+          1095.0,
+          435.0
+        ],
+        [
+          984.0,
+          343.0
+        ]
+      ],
+      "projected_upper_in_own_H": 0.893321460342722,
+      "projected_forearm_in_own_H": 0.7878144180121015,
+      "construction_limits_in_own_H": [
+        1.0,
+        0.9
+      ]
+    },
+    "X.R": {
+      "world_chain": [
+        [
+          632.8,
+          376.0
+        ],
+        [
+          716.5,
+          306.25
+        ],
+        [
+          786.0,
+          365.0
+        ]
+      ],
+      "projected_upper_in_own_H": 0.702922470831599,
+      "projected_forearm_in_own_H": 0.5871255753304193,
+      "construction_limits_in_own_H": [
+        0.9,
+        0.8
+      ]
+    },
+    "X.L": {
+      "world_chain": [
+        [
+          615.75,
+          379.1
+        ],
+        [
+          701.0,
+          458.15000000000003
+        ],
+        [
+          816.0,
+          416.0
+        ]
+      ],
+      "projected_upper_in_own_H": 0.750066663703967,
+      "projected_forearm_in_own_H": 0.790200714764916,
+      "construction_limits_in_own_H": [
+        0.9,
+        0.8
+      ]
+    }
+  },
+  "child_face": 1,
+  "child_near_arm": "R",
+  "G_R_CB_thumb_index_opposition_world": null,
+  "G_L_CN_opposition_world": [
+    929,
+    317.54
+  ],
+  "pending_crane_axis_gate": "445d2921 officialCAM20 candidate; angle provisional in these INPUTS ONLY",
+  "fixed_cues_seconds": {
+    "active_entangle": [
+      2.4,
+      4.6
+    ],
+    "flip_complete": 5.5,
+    "CAMG_cut": 6.0
+  },
+  "no_endpoint_swap": true,
+  "T_S_front_T_H_back_at_crossing": false,
+  "not_production_character_drawing": true
+}
