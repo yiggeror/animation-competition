@@ -1,0 +1,3 @@
+# F078 actual complete rise: one raw first
+
+Astra approved5ef1b39 actual3 inputs/fullprompt and authorized exactly1 complete078 drawing plus1 real Canvas. One raw returned and preserved untouched. Actual full authorized prompt/exact3 inputSHA/request retained. Sole mother FINAL0742fbceafa…b768900; no uncorrected074 fallback. Pelvis-leaves-heels/body rise and natural source-artifact redraw visible. Whole-image proportions/supports/closed real grips not signed off; single whole registration and actual Canvas pending. No knee/shin/finger/foot local deformation or automatic retry. Next posture calls0.
