@@ -1,0 +1,71 @@
+{
+  "frame": 42,
+  "inputs_only_not_production": true,
+  "image_calls": 0,
+  "mother": "collab/reviews/cloud_s20_20261018/costume_036_039_zero_call_001/S20_F039_costume_corrected.png",
+  "whole_body_turn": "support/feet/pelvis/chest/head neck all left profile; no whole person mirror",
+  "hand_guides": [
+    {
+      "side": "R",
+      "guide_only_source_opposite_native_hand": "L",
+      "local_hand_reflection_only": true,
+      "target_clamp": [
+        476,
+        432
+      ],
+      "wrist": [
+        497.12198956828615,
+        443.4022211530739
+      ],
+      "matrix": [
+        [
+          -0.8874966768081014,
+          -0.4608141150774098,
+          1355.8256113917969
+        ],
+        [
+          -0.4608141150774098,
+          0.8874966768081014,
+          417.15169987853676
+        ]
+      ]
+    },
+    {
+      "side": "L",
+      "guide_only_source_opposite_native_hand": "R",
+      "local_hand_reflection_only": true,
+      "target_clamp": [
+        482,
+        503
+      ],
+      "wrist": [
+        513.4711287888881,
+        516.8613235980546
+      ],
+      "matrix": [
+        [
+          -0.8444088060873122,
+          -0.5356993263036645,
+          1298.2534593254131
+        ],
+        [
+          -0.5356993263036645,
+          0.8444088060873122,
+          588.399381145491
+        ]
+      ]
+    }
+  ],
+  "fixed_ownership": {
+    "X.R": "T_H",
+    "X.L": "T_S",
+    "G.R": "C_B only first contact",
+    "G.L": [
+      "C_B",
+      "C_N"
+    ]
+  },
+  "closed_joint_rings": false,
+  "white_collar_dense_round_dots_open_toe_red_strap_sandals": true,
+  "review_requires_native_output_complete_arm_and_clamp": true
+}

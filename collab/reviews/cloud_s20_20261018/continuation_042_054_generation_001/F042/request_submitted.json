@@ -1,0 +1,35 @@
+{
+  "args": {
+    "prompt": "对第一张唯一完整的新F042动作target自然完稿，画风为精细温暖手绘动画人物，和第四张身份/服装小样为同一对人物。第一图中小满全身为新姿态施工参考，腿和整臂的平色轮廓必须重新自然手绘，肩肘要连续有肉感；不要把直线关节、方形袖子或拼贴边当成完稿。新小满整个人从脚掌支撑、膝、骨盆、胸廓到完整头颈都转向画左幕布，侧脸朝左，深棕发红花马尾、童年头身比例。小满白色彼得潘圆领、黄色泡泡短袖裙、密集均匀的真正圆形乳白小波点（大约25像素间距，不能稀疏）、红色搭带露趾凉鞋有脚趾和红鞋底；不要黄领、封闭鞋或白圆点变形。两脚保持参考支持位置和原腿长，脚尖向左。肩到肘到腕到手掌整条自然相连，一人恰好两手，没有多掌/脱腕/旧姿残影。不要只镜像旧人或只转五官。\n接触与遮挡严格按第一/第二图：小满远侧解剖右手X.R夹龟头签T_H，夹点约(476,432)，近侧左手X.L夹龟壳签T_S约(482,503)。每手拇指与食指指垫对夹同一根刚性木签，其余三指自然屈起，真实五指、腕掌相连。两根龟签向左伸出，各一条笔直木轴，没有X交叉；不能换端点、折杆、增杆或让签飘离夹点。保留新绘人物的原生完整双臂和原生手掌，不要画旧掌套新臂。\n奶奶头、眼镜、整件真实蓝花宽短袖、双腿黑鞋、近侧左整臂和玉镯及原夹掌严格沿第一图保持。只新画奶奶远侧裸腕右整臂及手：从肩(1067,285)到自然肘约(985,411)、腕约(913,354)，右掌由下向上接住鹤身签C_B，真正拇指/食指相向夹住下方木轴约(875,321.5)；拇指高点约315，不能碰上方鹤颈签C_N（此处y305），两杆必须清楚分开。裸右腕绝无玉镯。此042左手带玉镯仍同时夹C_N和C_B，不松开，C_B首次由左右共享支撑，C_N始终仅左手。新右臂在近侧左臂后面，不能球肩、三臂、断肘；补顺旧右臂腾出后蓝上衣的小缺口。鹤杆轴和奶奶左掌夹点不移动：C_N从(676,258)到(929,317.54)，C_B从(674,289)到(929,330.37)，它们从小满后脑后面经过，不能把灯光烘进皮肤。\n第三图是唯一编辑mask：白域只许新小满全身和奶奶裸右完整臂/掌及极小接缝，黑域原像素保护。第二图是同机位接触放大，第四图仅局部身份与服装，不能取旧姿。输出单张1672×941透明人物层，同画布站位，无文字、骨架、背景、地影或额外帧。圆形肩/肘是施工体积，不得照抄成球；奶奶保持真实蓝花宽短袖，只有小满是黄泡袖。",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/continuation_042_054_generation_001/F042/inputs/01_unique_complete_F042_target.png",
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/continuation_042_054_generation_001/F042/inputs/02_same_view_contacts_2x.png",
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/continuation_042_054_generation_001/F042/inputs/03_whole_child_and_GR_white_mask.png",
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/continuation_042_054_generation_001/F042/inputs/04_identity_material_patches_only.png"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/continuation_042_054_generation_001/F042/inputs/01_unique_complete_F042_target.png",
+      "snapshot": "collab/reviews/cloud_s20_20261018/continuation_042_054_generation_001/F042/actual_input_snapshots/01_01_unique_complete_F042_target.png",
+      "sha256": "7a699fa5f1bb306849cfd80113bc77f0a506f49ca5fa95210ae7289ec2e31d99"
+    },
+    {
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/continuation_042_054_generation_001/F042/inputs/02_same_view_contacts_2x.png",
+      "snapshot": "collab/reviews/cloud_s20_20261018/continuation_042_054_generation_001/F042/actual_input_snapshots/02_02_same_view_contacts_2x.png",
+      "sha256": "48a7df8cc9485e6ff77177c77b2153df05074f97bb7f80b0503f7a2c0f1a0508"
+    },
+    {
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/continuation_042_054_generation_001/F042/inputs/03_whole_child_and_GR_white_mask.png",
+      "snapshot": "collab/reviews/cloud_s20_20261018/continuation_042_054_generation_001/F042/actual_input_snapshots/03_03_whole_child_and_GR_white_mask.png",
+      "sha256": "fd87e05269f523c88bbd7c736dbcc8faaa9d3fb021669b127aa7111c3d20873b"
+    },
+    {
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/continuation_042_054_generation_001/F042/inputs/04_identity_material_patches_only.png",
+      "snapshot": "collab/reviews/cloud_s20_20261018/continuation_042_054_generation_001/F042/actual_input_snapshots/04_04_identity_material_patches_only.png",
+      "sha256": "f98822281564a11e4bbb6c1c652432bf3e24edfe46d1e69301aed947f205b7d2"
+    }
+  ],
+  "parent_authorized_042_045_047_054": true
+}
