@@ -1,0 +1,392 @@
+{
+  "status": "FIRST_THREE_TARGETS_PREPARATION_ONLY_0_IMAGEGEN_CALLS",
+  "locked_mother_commit": "545341eacd51a363c28da6d9ae7eada2c62c97a9",
+  "shot_seconds": 12,
+  "shot_frames": 288,
+  "fps": 24,
+  "locked_mother_hold_inclusive": [
+    0,
+    23
+  ],
+  "cloth_sound_start_seconds": 1.0,
+  "phone_sound_seconds": 5.5,
+  "partial_exposures_only": [
+    [
+      24,
+      29
+    ],
+    [
+      30,
+      35
+    ],
+    [
+      36,
+      null
+    ]
+  ],
+  "F036_end_not_invented": true,
+  "later_cover_requires_support_hand_release_first": true,
+  "phone_look_later_independent_input": true,
+  "targets": [
+    {
+      "frame": 24,
+      "pinch": [
+        827,
+        700
+      ],
+      "hand_deg": -8,
+      "name": "LIFT HELD EDGE",
+      "left_controls": [
+        [
+          888,
+          740
+        ],
+        [
+          930,
+          829
+        ]
+      ],
+      "intent": "Lift the same cotton edge. Keep the support palm and both puppets still.",
+      "status": "TECHNICAL_REAL_PIXEL_CONTACT_TARGET_ONLY_NOT_NEW_NATIVE_DRAWING",
+      "source_shoulder_soft": [
+        525.0,
+        465.0
+      ],
+      "source_elbow_soft": [
+        641.0,
+        632.0
+      ],
+      "source_wrist_soft": [
+        778.0,
+        680.0
+      ],
+      "target_shoulder_soft": [
+        525.0,
+        465.0
+      ],
+      "target_elbow_soft": [
+        606.674962491328,
+        651.2100977445642
+      ],
+      "target_wrist_from_whole_hand": [
+        751.7449609328706,
+        645.9474413648638
+      ],
+      "projected_upperarm_length": 203.3346994489627,
+      "projected_forearm_length": 145.16542288024374,
+      "soft_lengths_not_measured_3D_bones": true,
+      "hidden_shoulder_pick_uncertainty_px": 25,
+      "material_pinch_UV_ID": "same original held lip A; no regrip",
+      "opposing_pad_cloth_edge_B": [
+        856.3975831362848,
+        707.986369998017
+      ],
+      "actual_cloth_mask_at_pinch": true,
+      "moving_cloth_over_near_palm_pixels": 0,
+      "actual_original_black_tail_core_pixels_covered": 0,
+      "actual_original_black_tail_core_total": 838,
+      "full_opaque_cloth_rear_face_connected_to_A_and_lap": true,
+      "fold_surface_depth": "full continuous rear cotton face -> original props/rods -> turning front lip -> original near palm / far pinch",
+      "turning_lip_in_front_of_props_this_state": false,
+      "all_original_tail_tips_remain_in_front_of_lifted_cloth_before_036": true,
+      "near_palm_exact_RGBA_from_locked_mother": true,
+      "moving_cloth_minX": 827,
+      "near_palm_fixed": [
+        536,
+        750
+      ],
+      "elbow_chain_branch": "same lower elbow branch, no segment scaling",
+      "human_matrices_reference_only": {
+        "upper": [
+          [
+            0.981288731098175,
+            -0.19254209101200104,
+            99.3554916381836
+          ],
+          [
+            0.19254209101200104,
+            0.981288731098175,
+            -92.38385009765625
+          ]
+        ],
+        "forearm": [
+          [
+            0.9311432838439941,
+            0.3646535277366638,
+            -220.64891052246094
+          ],
+          [
+            -0.3646535277366638,
+            0.9311432838439941,
+            296.470458984375
+          ]
+        ],
+        "hand_and_bangle_together": [
+          [
+            0.9902680516242981,
+            0.13917310535907745,
+            -113.32130432128906
+          ],
+          [
+            -0.13917310535907745,
+            0.9902680516242981,
+            80.84182739257812
+          ]
+        ]
+      },
+      "whole_cloth_anchor_area": [
+        [
+          874,
+          874
+        ],
+        [
+          966,
+          928
+        ]
+      ],
+      "original_props_rods_positions_unchanged": true,
+      "no_new_native_calls": true,
+      "guide_limit": "Temporary actual-pixel articulation may show elbow/sleeve seams. All three final native drawings must redraw the COMPLETE far shoulder/sleeve/elbow/wrist/hand and coherent soft cotton, never adopt this collage."
+    },
+    {
+      "frame": 30,
+      "pinch": [
+        785,
+        688
+      ],
+      "hand_deg": -16,
+      "name": "FOLD IN TOWARD PUPPET",
+      "left_controls": [
+        [
+          898,
+          734
+        ],
+        [
+          930,
+          827
+        ]
+      ],
+      "intent": "Carry the same pinched material point inward; cloth remains continuous.",
+      "status": "TECHNICAL_REAL_PIXEL_CONTACT_TARGET_ONLY_NOT_NEW_NATIVE_DRAWING",
+      "source_shoulder_soft": [
+        525.0,
+        465.0
+      ],
+      "source_elbow_soft": [
+        641.0,
+        632.0
+      ],
+      "source_wrist_soft": [
+        778.0,
+        680.0
+      ],
+      "target_shoulder_soft": [
+        525.0,
+        465.0
+      ],
+      "target_elbow_soft": [
+        559.2417248978487,
+        665.4307967255033
+      ],
+      "target_wrist_from_whole_hand": [
+        702.9546755998447,
+        644.9469542996866
+      ],
+      "projected_upperarm_length": 203.3346994489627,
+      "projected_forearm_length": 145.1654228802438,
+      "soft_lengths_not_measured_3D_bones": true,
+      "hidden_shoulder_pick_uncertainty_px": 25,
+      "material_pinch_UV_ID": "same original held lip A; no regrip",
+      "opposing_pad_cloth_edge_B": [
+        815.222975756077,
+        691.8172943883839
+      ],
+      "actual_cloth_mask_at_pinch": true,
+      "moving_cloth_over_near_palm_pixels": 0,
+      "actual_original_black_tail_core_pixels_covered": 0,
+      "actual_original_black_tail_core_total": 838,
+      "full_opaque_cloth_rear_face_connected_to_A_and_lap": true,
+      "fold_surface_depth": "full continuous rear cotton face -> original props/rods -> turning front lip -> original near palm / far pinch",
+      "turning_lip_in_front_of_props_this_state": false,
+      "all_original_tail_tips_remain_in_front_of_lifted_cloth_before_036": true,
+      "near_palm_exact_RGBA_from_locked_mother": true,
+      "moving_cloth_minX": 785,
+      "near_palm_fixed": [
+        536,
+        750
+      ],
+      "elbow_chain_branch": "same lower elbow branch, no segment scaling",
+      "human_matrices_reference_only": {
+        "upper": [
+          [
+            0.9056472182273865,
+            -0.4240320324897766,
+            246.71011352539062
+          ],
+          [
+            0.4240320324897766,
+            0.9056472182273865,
+            -178.74276733398438
+          ]
+        ],
+        "forearm": [
+          [
+            0.8876500725746155,
+            0.46051856875419617,
+            -300.7897033691406
+          ],
+          [
+            -0.46051856875419617,
+            0.8876500725746155,
+            399.62835693359375
+          ]
+        ],
+        "hand_and_bangle_together": [
+          [
+            0.9612616896629333,
+            0.27563735842704773,
+            -232.34033203125
+          ],
+          [
+            -0.27563735842704773,
+            0.9612616896629333,
+            205.73486328125
+          ]
+        ]
+      },
+      "whole_cloth_anchor_area": [
+        [
+          874,
+          874
+        ],
+        [
+          966,
+          928
+        ]
+      ],
+      "original_props_rods_positions_unchanged": true,
+      "no_new_native_calls": true,
+      "guide_limit": "Temporary actual-pixel articulation may show elbow/sleeve seams. All three final native drawings must redraw the COMPLETE far shoulder/sleeve/elbow/wrist/hand and coherent soft cotton, never adopt this collage."
+    },
+    {
+      "frame": 36,
+      "pinch": [
+        742,
+        718
+      ],
+      "hand_deg": -4,
+      "name": "FIRST NEW TAIL COVER",
+      "left_controls": [
+        [
+          840,
+          755
+        ],
+        [
+          930,
+          827
+        ]
+      ],
+      "intent": "The leading cotton fold first overlaps the visible outer feather area.",
+      "status": "TECHNICAL_REAL_PIXEL_CONTACT_TARGET_ONLY_NOT_NEW_NATIVE_DRAWING",
+      "source_shoulder_soft": [
+        525.0,
+        465.0
+      ],
+      "source_elbow_soft": [
+        641.0,
+        632.0
+      ],
+      "source_wrist_soft": [
+        778.0,
+        680.0
+      ],
+      "target_shoulder_soft": [
+        525.0,
+        465.0
+      ],
+      "target_elbow_soft": [
+        525.8447776351795,
+        668.3329445779682
+      ],
+      "target_wrist_from_whole_hand": [
+        670.6987943129677,
+        658.8295845242277
+      ],
+      "projected_upperarm_length": 203.33469944896268,
+      "projected_forearm_length": 145.16542288024365,
+      "soft_lengths_not_measured_3D_bones": true,
+      "hidden_shoulder_pick_uncertainty_px": 25,
+      "material_pinch_UV_ID": "same original held lip A; no regrip",
+      "opposing_pad_cloth_edge_B": [
+        770.7688710922046,
+        728.0175873382824
+      ],
+      "actual_cloth_mask_at_pinch": true,
+      "moving_cloth_over_near_palm_pixels": 0,
+      "actual_original_black_tail_core_pixels_covered": 36,
+      "actual_original_black_tail_core_total": 838,
+      "full_opaque_cloth_rear_face_connected_to_A_and_lap": true,
+      "fold_surface_depth": "full continuous rear cotton face -> original props/rods -> turning front lip -> original near palm / far pinch",
+      "turning_lip_in_front_of_props_this_state": true,
+      "all_original_tail_tips_remain_in_front_of_lifted_cloth_before_036": false,
+      "near_palm_exact_RGBA_from_locked_mother": true,
+      "moving_cloth_minX": 742,
+      "near_palm_fixed": [
+        536,
+        750
+      ],
+      "elbow_chain_branch": "same lower elbow branch, no segment scaling",
+      "human_matrices_reference_only": {
+        "upper": [
+          [
+            0.8236690163612366,
+            -0.5670708417892456,
+            356.2616882324219
+          ],
+          [
+            0.5670708417892456,
+            0.8236690163612366,
+            -215.71829223632812
+          ]
+        ],
+        "forearm": [
+          [
+            0.9200796484947205,
+            0.39173126220703125,
+            -311.5004577636719
+          ],
+          [
+            -0.39173126220703125,
+            0.9200796484947205,
+            337.94232177734375
+          ]
+        ],
+        "hand_and_bangle_together": [
+          [
+            0.9975640773773193,
+            0.06975647062063217,
+            -152.84043884277344
+          ],
+          [
+            -0.06975647062063217,
+            0.9975640773773193,
+            34.75656509399414
+          ]
+        ]
+      },
+      "whole_cloth_anchor_area": [
+        [
+          874,
+          874
+        ],
+        [
+          966,
+          928
+        ]
+      ],
+      "original_props_rods_positions_unchanged": true,
+      "no_new_native_calls": true,
+      "guide_limit": "Temporary actual-pixel articulation may show elbow/sleeve seams. All three final native drawings must redraw the COMPLETE far shoulder/sleeve/elbow/wrist/hand and coherent soft cotton, never adopt this collage."
+    }
+  ]
+}
