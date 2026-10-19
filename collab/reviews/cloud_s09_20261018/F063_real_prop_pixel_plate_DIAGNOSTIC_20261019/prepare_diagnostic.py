@@ -22,8 +22,8 @@ restored=(red|button)&(unit[:,:,3]>0);keep|=restored
 Image.fromarray(button.astype('uint8')*255).save(R/'masks/SOURCE_FE70_visible_slider_actual_material.png')
 sourceprop=np.where(keep[:,:,None],mother,0).astype('uint8');Image.fromarray(sourceprop).save(R/'layers/FE70_real_visible_prop_ONLY_original_coordinates.png')
 iv=M.T;it=-iv@t;prop=Image.fromarray(sourceprop).transform(size,Image.Transform.AFFINE,(*iv[0],it[0],*iv[1],it[1]),Image.Resampling.BICUBIC,fillcolor=0);pa=np.array(prop);prop.save(R/'layers/FE70_whole_visible_prop_SINGLE_RIGID_transform.png');pm=pa[:,:,3]>0
-head=mask(S/'F044_actual_head_neck_collar_GUARD.png')&(mother[:,:,3]>0);ruffle=mask(S/'F044_actual_near_whole_ruffle_GUARD.png')&(mother[:,:,3]>0);skirt=mask(S/'F044_stable_skirt_GUARD.png')&(mother[:,:,3]>0);frozen=head|ruffle|skirt
-oldnear=mask(AOLD/'F044_complete_old_near_arm_actual_mask.png');oldunit=mask(AOLD/'F044_old_rigid_unit_actual_mask.png');oldfar=mask(AOLD/'F044_old_far_arm_actual_visible_mask.png');oldhuman=oldnear|oldfar
+head=mask(S/'F044_actual_head_neck_collar_GUARD.png')&(mother[:,:,3]>0);ruffle=mask(S/'F044_actual_near_whole_ruffle_GUARD.png')&(mother[:,:,3]>0);skirt=mask(S/'F044_stable_skirt_GUARD.png')&(mother[:,:,3]>0);frozen=head|ruffle|skirt;frozen[875:]=mother[875:,:,3]>0
+oldnear=mask(AOLD/'F044_complete_old_near_arm_actual_mask.png');oldunit=mask(AOLD/'F044_old_rigid_unit_actual_mask.png');oldfar=mask(AOLD/'F044_old_far_arm_actual_visible_mask.png')|mask(AOLD/'F044_old_fixed_receiver_actual_mask.png');oldfar[875:]=False;oldhuman=oldnear|oldfar
 # Mother body/cloth outside all old moving material remains actual FE70, no donor/coded navy/yellow fill.
 body=mother.copy();clear=binary_dilation(oldnear|oldunit|oldfar,iterations=2)&~frozen;body[clear]=0;Image.fromarray(body).save(R/'layers/FE70_body_original_pixels_old_moving_material_removed.png')
 receiver=Image.open(P/'layers/F063_actual_whole_receiver_hand_REPOSITIONED_SOFT_NOT_FROZEN.png').convert('RGBA');ha=np.array(receiver)
@@ -47,7 +47,7 @@ for z in [far,receiver,unknown,Image.fromarray(body),near,grip,prop]:plate.alpha
 a=np.array(plate);a[frozen]=mother[frozen];plate=Image.fromarray(a);plate.save(R/'reference/A_F063_real_prop_pixel_plate_NOT_ART_native.png')
 # One broad continuous new near chain, whole wrist/palm/needed finger/thumb roots;
 # all old arm vacancies and unknown cylinder are editable. Only actual prop/head/ruffle/skirt are hard.
-newnear=(np.array(near)[:,:,3]>0)|(np.array(grip)[:,:,3]>0);newfar=(np.array(far)[:,:,3]>0)|(ha[:,:,3]>0);white=binary_dilation(newnear|newfar|oldhuman|unknown_body|unknown_tube,iterations=10)&~(pm|frozen)
+newnear=(np.array(near)[:,:,3]>0)|(np.array(grip)[:,:,3]>0);newfar=(np.array(far)[:,:,3]>0)|(ha[:,:,3]>0);white=binary_dilation(newnear|newfar|oldhuman|unknown_body|unknown_tube,iterations=10)&~(pm|frozen);white[875:]=False
 for name,z in [('WHITE_whole_elbow_forearm_wrist_full_palm_fingers_unknown_tube_and_old_vacancy',white),('HARD_only_actual_visible_prop_material',pm),('HARD_actual_FE70_head_ruffle_skirt',frozen),('UNKNOWN_original_hand_hidden_cylinder',unknown_tube),('REMOVED_old_hand_wrist_human_NOT_HARD',oldhuman)]:Image.fromarray(z.astype('uint8')*255).save(R/'masks'/f'{name}.png')
 Image.fromarray(white.astype('uint8')*255).save(R/'reference/B_F063_complete_editing_band_native.png')
 # Existing approved crop is preserved only as diagnostic comparison; no request is made.
