@@ -1,0 +1,183 @@
+{
+  "status": "PARENT_APPROVED_LOCAL_S25_CLOSEUP_CAMERA_AND_TWO_SUPPORT_DIRECTION",
+  "camera": {
+    "position": [
+      0.5175209637741536,
+      5.699999999967718,
+      1.4999999999958884
+    ],
+    "yaw_degrees": 0.36493553920643523,
+    "pitch_degrees": -23.697933261450068,
+    "focal_pixels": 1031.5830819036178,
+    "hfov_degrees": 85.88303023897106,
+    "canvas": [
+      1920,
+      1080
+    ]
+  },
+  "torch": {
+    "axis_length_m": 0.25,
+    "tail_radius_m": 0.028,
+    "head_radius_m": 0.05,
+    "head_center": [
+      0.55,
+      4.62,
+      0.62
+    ],
+    "rear_center": [
+      0.53,
+      4.85076662083236,
+      0.5259427477032523
+    ],
+    "axis_unit": [
+      0.08000000000000007,
+      -0.9230664833294391,
+      0.37622900918699065
+    ],
+    "pitch_degrees": 22.100293492043356,
+    "rear_true_contact": [
+      0.530909583045178,
+      4.8402715505472536,
+      0.5
+    ],
+    "head_true_contact": [
+      0.5516242554378179,
+      4.6012588030623105,
+      0.5736736648156209
+    ],
+    "head_existing_folded_cloth_height_above_chest_m": 0.07367366481562088,
+    "shadow_spot_on_sheet_y4": [
+      0.6037339410495073,
+      4.0,
+      0.8727033425096034
+    ],
+    "head_emit_face_camera_dot": -0.6684285967810581
+  },
+  "points": {
+    "tail_axis": {
+      "world": [
+        0.53,
+        4.85076662083236,
+        0.5259427477032523
+      ],
+      "screen": [
+        966.2378176459817,
+        1025.7865987339783
+      ],
+      "desired_legacy_reference": [
+        960,
+        1010
+      ]
+    },
+    "head_axis": {
+      "world": [
+        0.55,
+        4.62,
+        0.62
+      ],
+      "screen": [
+        979.6666271729895,
+        825.5195497129413
+      ],
+      "desired_legacy_reference": [
+        974,
+        850
+      ]
+    },
+    "beam_spot": {
+      "world": [
+        0.6037339410495073,
+        4.0,
+        0.8727033425096034
+      ],
+      "screen": [
+        1002.9816933695337,
+        477.8163899115201
+      ],
+      "desired_legacy_reference": [
+        1000,
+        470
+      ]
+    },
+    "box_near_left": {
+      "world": [
+        0.08,
+        4.95,
+        0.5
+      ],
+      "screen": [
+        539.9143770992367,
+        1124.4750066163558
+      ],
+      "desired_legacy_reference": [
+        560,
+        1080
+      ]
+    },
+    "box_near_right": {
+      "world": [
+        0.88,
+        4.95,
+        0.5
+      ],
+      "screen": [
+        1298.2848017112951,
+        1120.0381238745902
+      ],
+      "desired_legacy_reference": [
+        1400,
+        1080
+      ]
+    },
+    "box_far_left": {
+      "world": [
+        0.08,
+        4.48,
+        0.5
+      ],
+      "screen": [
+        657.0945056747498,
+        830.1088495992159
+      ],
+      "desired_legacy_reference": [
+        700,
+        880
+      ]
+    },
+    "box_far_right": {
+      "world": [
+        0.88,
+        4.48,
+        0.5
+      ],
+      "screen": [
+        1200.5469526609322,
+        827.8301607282992
+      ],
+      "desired_legacy_reference": [
+        1260,
+        880
+      ]
+    }
+  },
+  "support_screens": {
+    "tail": [
+      966.8637084797768,
+      1034.5450636346495
+    ],
+    "head": [
+      980.2821386631833,
+      844.2104442252078
+    ]
+  },
+  "median_projection_residual_pixels": 48.800189147549005,
+  "notes": [
+    "Both tail and head support are solved from a rigid solid, not snapped independently.",
+    "Head support is the already-existing blue packed cloth folded to height7.4cm on the chest rim; this is a proposed placement, not an approved added prop.",
+    "Projection is a real pinhole camera. It does not preserve the impossible old20px-deep box top.",
+    "Camera may exceed north wall y5: this is a technical close-up view; see result, do not hide that condition.",
+    "No production code or shared world coordinates changed.",
+    "First mother remains independently locked; this is only the final placement geometry gate."
+  ],
+  "approval_scope": "Local S25 technical projection; existing closed chest; existing blue cloth folded as soft support. No shared-scene or S26 mutation."
+}

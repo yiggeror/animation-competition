@@ -1,0 +1,41 @@
+[
+  {
+    "frame": "F006",
+    "new_source": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/call_F006/S28_XM_F006_raw.png",
+    "locked_source": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/call001/S28_XM_F000_raw.png",
+    "domain": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/locked_group/F006_full_arm_domain.png",
+    "output": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/locked_group/S28_XM_F006_locked.png",
+    "method": "ImageMagick RGBA binary full-arm-domain replacement, old arm cleared by new transparency; outside restored to exact F000. No warp/resize/body patch drift.",
+    "material_correction": {
+      "semantic": "yellow fabric only: r>.45, g>.62r, b<.52r; outlines/skin/white excluded",
+      "blue_add_integer": 11
+    },
+    "approval": "Coordinator 2026-10-19 06:17 UTC: zero-call full far-arm+root domain; restore locked F000 outside."
+  },
+  {
+    "frame": "F009",
+    "new_source": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/call_F009/S28_XM_F009_raw.png",
+    "locked_source": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/call001/S28_XM_F000_raw.png",
+    "domain": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/locked_group/F009_full_arm_domain.png",
+    "output": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/locked_group/S28_XM_F009_locked.png",
+    "method": "ImageMagick RGBA binary full-arm-domain replacement, old arm cleared by new transparency; outside restored to exact F000. No warp/resize/body patch drift.",
+    "material_correction": {
+      "semantic": "yellow fabric only: r>.45, g>.62r, b<.52r; outlines/skin/white excluded",
+      "blue_add_integer": 7
+    },
+    "approval": "Coordinator 2026-10-19 06:17 UTC: zero-call full far-arm+root domain; restore locked F000 outside."
+  },
+  {
+    "frame": "F012",
+    "new_source": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/call_F012/S28_XM_F012_raw.png",
+    "locked_source": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/call001/S28_XM_F000_raw.png",
+    "domain": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/locked_group/F012_full_arm_domain.png",
+    "output": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/locked_group/S28_XM_F012_locked.png",
+    "method": "ImageMagick RGBA binary full-arm-domain replacement, old arm cleared by new transparency; outside restored to exact F000. No warp/resize/body patch drift.",
+    "material_correction": {
+      "semantic": "yellow fabric only: r>.45, g>.62r, b<.52r; outlines/skin/white excluded",
+      "blue_add_integer": 5
+    },
+    "approval": "Coordinator 2026-10-19 06:17 UTC: zero-call full far-arm+root domain; restore locked F000 outside."
+  }
+]

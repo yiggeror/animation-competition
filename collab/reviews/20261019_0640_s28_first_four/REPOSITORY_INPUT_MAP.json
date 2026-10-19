@@ -1,0 +1,60 @@
+{
+  "actual_inputs_by_sha256": {
+    "816a5d7cfed7c220717ea80d9a9419290135d8543c4f87e4866d804132720d32": "collab/reviews/20261019_0640_s28_first_four/actual_inputs/01_01_xiaoman_identity.png",
+    "5df66be288683cb1c7e59ba9cd83105b515b7df28bd83fc8fdb159f80861cdee": "collab/reviews/20261019_0640_s28_first_four/actual_inputs/02_02_xiaoman_expression_identity.png",
+    "dca74c0a2f0cadc161074db82cc3793afa31f1ac50570a44596b2935bc451f9d": "collab/reviews/20261019_0640_s28_first_four/actual_inputs/03_03_F000_pose_target.png",
+    "b203116b6c600981735218238f4ea0c7d6b6d41ee8562a8205a16359185ac616": "collab/reviews/20261019_0640_s28_first_four/actual_inputs/04_04_actual_hands_and_target.png",
+    "b0461480aa8699475f22774cae7527cd3c97039ed518072f298aa68684ef7787": "collab/reviews/20261019_0640_s28_first_four/actual_inputs/05_05_stage_projection_candidate.png",
+    "a6303bfcb5bd806bf1cbebd9325f8862c45224eb8c639fd52cdcd55585ff2cef": "collab/reviews/20261019_0640_s28_first_four/actual_inputs/06_F006_full_input.png",
+    "2fb81889b14295a6027d6dfcd6e868e73977e601acec2f05ead32e3537f244a0": "collab/reviews/20261019_0640_s28_first_four/actual_inputs/07_02_identity_inner_material.png",
+    "71f7f6a5fc57b1f50ceecfd1c29e53808e18511b322ed29073d63fba0b0a8a04": "collab/reviews/20261019_0640_s28_first_four/actual_inputs/08_F006_hand_input.png",
+    "f4f0a1a5267de78a15b87c2c9e41d2d30ac40b4823f897adceaca051bbfae003": "collab/reviews/20261019_0640_s28_first_four/actual_inputs/09_04_far_arm_reconnect_mask.png",
+    "1c4e508cac4ebe0ca7baffad530b21548a854a77797249328c563867983f9852": "collab/reviews/20261019_0640_s28_first_four/actual_inputs/10_F009_full_input.png",
+    "db0d0e7577fff6144be9ca8e63a236c165f9679a026f60239ccd9adcb309a367": "collab/reviews/20261019_0640_s28_first_four/actual_inputs/11_F009_hand_input.png",
+    "e265d772b6c013484f9392d9708d2878c86c8dfaf910f71929e63a6a1bfb5f29": "collab/reviews/20261019_0640_s28_first_four/actual_inputs/12_F012_full_input.png",
+    "d5f2affc40a0358bb62deb332740aff2fe542d8942f5989ae20fc37c1b4a1643": "collab/reviews/20261019_0640_s28_first_four/actual_inputs/13_F012_hand_input.png"
+  },
+  "calls": [
+    {
+      "frame": "F000",
+      "request": "requests/F000_request.json",
+      "ordered_repository_inputs": [
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/01_01_xiaoman_identity.png",
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/02_02_xiaoman_expression_identity.png",
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/03_03_F000_pose_target.png",
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/04_04_actual_hands_and_target.png",
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/05_05_stage_projection_candidate.png"
+      ]
+    },
+    {
+      "frame": "F006",
+      "request": "requests/F006_request.json",
+      "ordered_repository_inputs": [
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/06_F006_full_input.png",
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/07_02_identity_inner_material.png",
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/08_F006_hand_input.png",
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/09_04_far_arm_reconnect_mask.png"
+      ]
+    },
+    {
+      "frame": "F009",
+      "request": "requests/F009_request.json",
+      "ordered_repository_inputs": [
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/10_F009_full_input.png",
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/07_02_identity_inner_material.png",
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/11_F009_hand_input.png",
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/09_04_far_arm_reconnect_mask.png"
+      ]
+    },
+    {
+      "frame": "F012",
+      "request": "requests/F012_request.json",
+      "ordered_repository_inputs": [
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/12_F012_full_input.png",
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/07_02_identity_inner_material.png",
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/13_F012_hand_input.png",
+        "collab/reviews/20261019_0640_s28_first_four/actual_inputs/09_04_far_arm_reconnect_mask.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "repository": "yiggeror/animation-competition",
+  "fixed_lookup_commit": "372d96fe79e4bb090e5589ebef664c890cf67912",
+  "note": "Actual exact byte comparison via Git blob hash; only repository_original_bytes:true entries may reuse existing blob. Local SVG-rendered targets/masks/crops are marked new; full old pose is not in raise group inputs. Index is provenance, no API calls or production changes.",
+  "calls": [
+    {
+      "frame": "F000",
+      "request_path": "requests/F000_request.json",
+      "actual_inputs": [
+        {
+          "order": 1,
+          "sha256": "816a5d7cfed7c220717ea80d9a9419290135d8543c4f87e4866d804132720d32",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/inputs/01_xiaoman_identity.png"
+        },
+        {
+          "order": 2,
+          "sha256": "5df66be288683cb1c7e59ba9cd83105b515b7df28bd83fc8fdb159f80861cdee",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/inputs/02_xiaoman_expression_identity.png"
+        },
+        {
+          "order": 3,
+          "sha256": "dca74c0a2f0cadc161074db82cc3793afa31f1ac50570a44596b2935bc451f9d",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/inputs/03_F000_pose_target.png"
+        },
+        {
+          "order": 4,
+          "sha256": "b203116b6c600981735218238f4ea0c7d6b6d41ee8562a8205a16359185ac616",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/inputs/04_actual_hands_and_target.png"
+        },
+        {
+          "order": 5,
+          "sha256": "b0461480aa8699475f22774cae7527cd3c97039ed518072f298aa68684ef7787",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/inputs/05_stage_projection_candidate.png"
+        }
+      ]
+    },
+    {
+      "frame": "F006",
+      "request_path": "requests/F006_request.json",
+      "actual_inputs": [
+        {
+          "order": 1,
+          "sha256": "a6303bfcb5bd806bf1cbebd9325f8862c45224eb8c639fd52cdcd55585ff2cef",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/F006_full_input.png"
+        },
+        {
+          "order": 2,
+          "sha256": "2fb81889b14295a6027d6dfcd6e868e73977e601acec2f05ead32e3537f244a0",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/02_identity_inner_material.png"
+        },
+        {
+          "order": 3,
+          "sha256": "71f7f6a5fc57b1f50ceecfd1c29e53808e18511b322ed29073d63fba0b0a8a04",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/F006_hand_input.png"
+        },
+        {
+          "order": 4,
+          "sha256": "f4f0a1a5267de78a15b87c2c9e41d2d30ac40b4823f897adceaca051bbfae003",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/04_far_arm_reconnect_mask.png"
+        }
+      ]
+    },
+    {
+      "frame": "F009",
+      "request_path": "requests/F009_request.json",
+      "actual_inputs": [
+        {
+          "order": 1,
+          "sha256": "1c4e508cac4ebe0ca7baffad530b21548a854a77797249328c563867983f9852",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/F009_full_input.png"
+        },
+        {
+          "order": 2,
+          "sha256": "2fb81889b14295a6027d6dfcd6e868e73977e601acec2f05ead32e3537f244a0",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/02_identity_inner_material.png"
+        },
+        {
+          "order": 3,
+          "sha256": "db0d0e7577fff6144be9ca8e63a236c165f9679a026f60239ccd9adcb309a367",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/F009_hand_input.png"
+        },
+        {
+          "order": 4,
+          "sha256": "f4f0a1a5267de78a15b87c2c9e41d2d30ac40b4823f897adceaca051bbfae003",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/04_far_arm_reconnect_mask.png"
+        }
+      ]
+    },
+    {
+      "frame": "F012",
+      "request_path": "requests/F012_request.json",
+      "actual_inputs": [
+        {
+          "order": 1,
+          "sha256": "e265d772b6c013484f9392d9708d2878c86c8dfaf910f71929e63a6a1bfb5f29",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/F012_full_input.png"
+        },
+        {
+          "order": 2,
+          "sha256": "2fb81889b14295a6027d6dfcd6e868e73977e601acec2f05ead32e3537f244a0",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/02_identity_inner_material.png"
+        },
+        {
+          "order": 3,
+          "sha256": "d5f2affc40a0358bb62deb332740aff2fe542d8942f5989ae20fc37c1b4a1643",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/F012_hand_input.png"
+        },
+        {
+          "order": 4,
+          "sha256": "f4f0a1a5267de78a15b87c2c9e41d2d30ac40b4823f897adceaca051bbfae003",
+          "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/04_far_arm_reconnect_mask.png"
+        }
+      ]
+    }
+  ],
+  "unique_inputs": [
+    {
+      "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/inputs/01_xiaoman_identity.png",
+      "sha256": "816a5d7cfed7c220717ea80d9a9419290135d8543c4f87e4866d804132720d32",
+      "bytes": 1451667,
+      "git_blob_sha": "1eb70a4ba2fa426e2b9ebc6bad6517ff0a1796ee",
+      "repository_original_bytes": true,
+      "existing_repository_sources": [
+        {
+          "repo_path": "collab/refs/xiaoman_turnaround_v4_draft.png",
+          "commit": "372d96fe79e4bb090e5589ebef664c890cf67912",
+          "blob_sha": "1eb70a4ba2fa426e2b9ebc6bad6517ff0a1796ee"
+        },
+        {
+          "repo_path": "collab/reviews/20261018_0915_opening_reference_gate/S02a/identity/xiaoman_turnaround_v4_draft.png",
+          "commit": "372d96fe79e4bb090e5589ebef664c890cf67912",
+          "blob_sha": "1eb70a4ba2fa426e2b9ebc6bad6517ff0a1796ee"
+        },
+        {
+          "repo_path": "collab/reviews/20261018_1500_provenance_backfill/S01_xiaoman_000/call01/inputs/03_identity_turnaround_v4.png",
+          "commit": "372d96fe79e4bb090e5589ebef664c890cf67912",
+          "blob_sha": "1eb70a4ba2fa426e2b9ebc6bad6517ff0a1796ee"
+        }
+      ],
+      "new_local_input_requires_publish": false
+    },
+    {
+      "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/inputs/02_xiaoman_expression_identity.png",
+      "sha256": "5df66be288683cb1c7e59ba9cd83105b515b7df28bd83fc8fdb159f80861cdee",
+      "bytes": 1578292,
+      "git_blob_sha": "6db26040363619710bb31cc1f8de2f44e308e315",
+      "repository_original_bytes": true,
+      "existing_repository_sources": [
+        {
+          "repo_path": "collab/refs/xiaoman_expressions_current03.png",
+          "commit": "372d96fe79e4bb090e5589ebef664c890cf67912",
+          "blob_sha": "6db26040363619710bb31cc1f8de2f44e308e315"
+        },
+        {
+          "repo_path": "collab/reviews/20261018_0915_opening_reference_gate/S02a/identity/xiaoman_expressions_current03.png",
+          "commit": "372d96fe79e4bb090e5589ebef664c890cf67912",
+          "blob_sha": "6db26040363619710bb31cc1f8de2f44e308e315"
+        }
+      ],
+      "new_local_input_requires_publish": false
+    },
+    {
+      "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/inputs/03_F000_pose_target.png",
+      "sha256": "dca74c0a2f0cadc161074db82cc3793afa31f1ac50570a44596b2935bc451f9d",
+      "bytes": 128139,
+      "git_blob_sha": "daf01980aa1ca6724c7c9ef6a5b41e9d02c6ed4b",
+      "repository_original_bytes": false,
+      "existing_repository_sources": [],
+      "new_local_input_requires_publish": true
+    },
+    {
+      "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/inputs/04_actual_hands_and_target.png",
+      "sha256": "b203116b6c600981735218238f4ea0c7d6b6d41ee8562a8205a16359185ac616",
+      "bytes": 438316,
+      "git_blob_sha": "bebf5b3de862ae86284b0d48eaeab5a7c0b4fe97",
+      "repository_original_bytes": false,
+      "existing_repository_sources": [],
+      "new_local_input_requires_publish": true
+    },
+    {
+      "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/inputs/05_stage_projection_candidate.png",
+      "sha256": "b0461480aa8699475f22774cae7527cd3c97039ed518072f298aa68684ef7787",
+      "bytes": 196349,
+      "git_blob_sha": "0eea0ad754b33cbe38ea92d7801027b0a5b85f3a",
+      "repository_original_bytes": false,
+      "existing_repository_sources": [],
+      "new_local_input_requires_publish": true
+    },
+    {
+      "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/F006_full_input.png",
+      "sha256": "a6303bfcb5bd806bf1cbebd9325f8862c45224eb8c639fd52cdcd55585ff2cef",
+      "bytes": 482763,
+      "git_blob_sha": "c4045305a03d7418d1e9d5e539ce28927a18cbfa",
+      "repository_original_bytes": false,
+      "existing_repository_sources": [],
+      "new_local_input_requires_publish": true
+    },
+    {
+      "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/02_identity_inner_material.png",
+      "sha256": "2fb81889b14295a6027d6dfcd6e868e73977e601acec2f05ead32e3537f244a0",
+      "bytes": 276972,
+      "git_blob_sha": "ff99eed2e82992044a40c1c3a905b095940bf0c4",
+      "repository_original_bytes": false,
+      "existing_repository_sources": [],
+      "new_local_input_requires_publish": true
+    },
+    {
+      "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/F006_hand_input.png",
+      "sha256": "71f7f6a5fc57b1f50ceecfd1c29e53808e18511b322ed29073d63fba0b0a8a04",
+      "bytes": 153191,
+      "git_blob_sha": "a85a5427fa7f7b0882b3f563f342586185f450c8",
+      "repository_original_bytes": false,
+      "existing_repository_sources": [],
+      "new_local_input_requires_publish": true
+    },
+    {
+      "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/04_far_arm_reconnect_mask.png",
+      "sha256": "f4f0a1a5267de78a15b87c2c9e41d2d30ac40b4823f897adceaca051bbfae003",
+      "bytes": 8166,
+      "git_blob_sha": "b8194b5a3ecb982e602d6c20111d6eab3f1c50d7",
+      "repository_original_bytes": false,
+      "existing_repository_sources": [],
+      "new_local_input_requires_publish": true
+    },
+    {
+      "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/F009_full_input.png",
+      "sha256": "1c4e508cac4ebe0ca7baffad530b21548a854a77797249328c563867983f9852",
+      "bytes": 478573,
+      "git_blob_sha": "0750056f5d3d15cc4e9d16caecf202252deed0c6",
+      "repository_original_bytes": false,
+      "existing_repository_sources": [],
+      "new_local_input_requires_publish": true
+    },
+    {
+      "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/F009_hand_input.png",
+      "sha256": "db0d0e7577fff6144be9ca8e63a236c165f9679a026f60239ccd9adcb309a367",
+      "bytes": 149224,
+      "git_blob_sha": "15e830c0fa020f503c14a517760e07d8f1b9c97b",
+      "repository_original_bytes": false,
+      "existing_repository_sources": [],
+      "new_local_input_requires_publish": true
+    },
+    {
+      "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/F012_full_input.png",
+      "sha256": "e265d772b6c013484f9392d9708d2878c86c8dfaf910f71929e63a6a1bfb5f29",
+      "bytes": 479496,
+      "git_blob_sha": "05e9bc536cbbf271a667810de2418bb6cc41e8d6",
+      "repository_original_bytes": false,
+      "existing_repository_sources": [],
+      "new_local_input_requires_publish": true
+    },
+    {
+      "absolute_source_path": "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/right_arm_raise_group/F012_hand_input.png",
+      "sha256": "d5f2affc40a0358bb62deb332740aff2fe542d8942f5989ae20fc37c1b4a1643",
+      "bytes": 149429,
+      "git_blob_sha": "8015dd4cad65060e8bc75e3e534615f32d2f1576",
+      "repository_original_bytes": false,
+      "existing_repository_sources": [],
+      "new_local_input_requires_publish": true
+    }
+  ]
+}
