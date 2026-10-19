@@ -1,0 +1,32 @@
+{
+  "fixed_commit": "8a86a552fba1a822aae0f27ca53e2b0defb4e392",
+  "source_worktree": "/workspace/s28-three-frame-20261019-76c44a19",
+  "source_worktree_clean": true,
+  "readme_commands_run_serially": true,
+  "stage_http": 8196,
+  "phone_http": 8195,
+  "stage_entry": "float-depth adapter, NOT old 8bit stage",
+  "phone_entry": "original phone-three command; full192 float entry delegates to same phone insert",
+  "files": [
+    {
+      "path": "collab/reviews/20261019_0901_s28_float_depth/render_three.cjs",
+      "sha256": "a63b6b6ef64f26d795f7aed889fc72f496255667b7dab8f5134ec108c036eaf7"
+    },
+    {
+      "path": "collab/reviews/20261019_0901_s28_float_depth/stage_adapter.mjs",
+      "sha256": "b89321cb64fd156838e4f33c25383da4fcfb0382f35b8698861efd6b3780dd55"
+    },
+    {
+      "path": "collab/reviews/20261019_0901_s28_float_depth/entry_full192.mjs",
+      "sha256": "f8632ed602f487bd18f57dc34009578e9479c204cfde90749b79b0c73d057e93"
+    },
+    {
+      "path": "collab/reviews/20261019_0847_s28_full192/render_phone_three.cjs",
+      "sha256": "480b6996364cb270967c776b0854330fac6203d65a9dd6a3acd14c34f62627d3"
+    },
+    {
+      "path": "collab/reviews/20261019_0847_s28_full192/phone_insert.mjs",
+      "sha256": "7794a1d41dc047f4f7712d0b570312bdc00d39183d84ab443c88d8c494c0cc4d"
+    }
+  ]
+}
