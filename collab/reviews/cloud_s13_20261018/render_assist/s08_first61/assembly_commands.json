@@ -1,0 +1,48 @@
+{
+  "render_runs": 1,
+  "rendered_only": [
+    58,
+    59,
+    60
+  ],
+  "old_Canvas_reused_without_render": 58,
+  "encoding_runs": 1,
+  "encode": [
+    "ffmpeg",
+    "-y",
+    "-loglevel",
+    "error",
+    "-framerate",
+    "24",
+    "-start_number",
+    "0",
+    "-i",
+    "build/S08_first61/%05d.png",
+    "-frames:v",
+    "61",
+    "-c:v",
+    "libx264",
+    "-pix_fmt",
+    "yuv420p",
+    "-crf",
+    "18",
+    "-tune",
+    "animation",
+    "-an",
+    "collab/reviews/cloud_s13_20261018/render_assist/s08_first61/S08_first61_1920x1080_24fps.mp4"
+  ],
+  "decode": [
+    "ffmpeg",
+    "-y",
+    "-loglevel",
+    "error",
+    "-i",
+    "collab/reviews/cloud_s13_20261018/render_assist/s08_first61/S08_first61_1920x1080_24fps.mp4",
+    "-vsync",
+    "0",
+    "-start_number",
+    "0",
+    "build/S08_first61_decoded/%05d.png"
+  ],
+  "source_S08_first58_commit": "2ee2133d0966eab25c5b2bbb1be40d768f45b8b8"
+}

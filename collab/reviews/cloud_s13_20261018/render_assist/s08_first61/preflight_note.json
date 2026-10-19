@@ -1,0 +1,6 @@
+{
+  "first_preflight": "Stopped before any render because collab/partner.md was skip-worktree and absent, not modified.",
+  "cause_confirmed_by": "git ls-files -v => S; ls => no such file; fixed HEAD b99ce952, no tracked diff.",
+  "resolution": "Add read-only checkout of tracked collab/partner.md to sparse scope, then re-run all71 checks. No source changes.",
+  "canvas_outputs_before_resolution": 0
+}
