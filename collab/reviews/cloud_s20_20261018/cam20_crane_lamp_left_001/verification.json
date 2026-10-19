@@ -1,0 +1,71 @@
+{
+  "director_commit": "372d96fe79e4bb090e5589ebef664c890cf67912",
+  "official_CAM20_actual_render": "CAM20_F000_crane_lamp_left.png",
+  "actual_png_sha256": "0dd188686e772ce423f697f3ea536420fb85ab47968d16d303bde3f7542b40bb",
+  "size": [
+    1920,
+    1080
+  ],
+  "full_WebGL_scene_actual_render_count": 1,
+  "animation_sequence_rendered": false,
+  "image_model_calls": 0,
+  "F004_cloud_calls": 0,
+  "CAM20_lamp_room_exposure_fog_source_unchanged": true,
+  "puppet_orientation_scale_joint_pose_local_attachment_unchanged": true,
+  "crane_root_m": [
+    1.8,
+    1.14
+  ],
+  "actual_crane_bounds": [
+    176,
+    99,
+    825,
+    680
+  ],
+  "actual_crane_head_overlap_pixels": 0,
+  "actual_official_full_and_grip_crop_viewed": true,
+  "remaining_director_review": "Two straight shafts pass behind child head and reappear at forehead edge. Characters are foreground-occluded; rod-axis projection itself is not head-clear. See single circle image. No claim of full composition pass and no batch propagation.",
+  "head_clear_search_scope": "758 fully framed fixed-pose root samples;18 rod-head-clear,0 also puppet-head-clear at sampled mask points; finite grid is not an impossibility proof.",
+  "source_renderer_files": [
+    {
+      "path": "js/lamp/s06_key.js",
+      "sha256": "fdd0835b5486ac66385cb339b2a2dbbb8521978d3716c6293c7ef5927ef887d9",
+      "unchanged_vs_director_commit": true
+    },
+    {
+      "path": "js/lamp/s08_back.js",
+      "sha256": "79cbdae73443216a1611a1ee5161e9c22ecb230d0f04d07cf559cb25d4aa3b23",
+      "unchanged_vs_director_commit": true
+    },
+    {
+      "path": "js/lamp/scenery.js",
+      "sha256": "63f8cc830c0ed37db2a178b8b9ae3ed69f2d455915e1c5fb3bd5222d7fa64030",
+      "unchanged_vs_director_commit": true
+    },
+    {
+      "path": "js/lamp/crane.js",
+      "sha256": "212e8a4fdad764fa50928c60a8efc956ad660c62377ea1ea152433a6fea4e642",
+      "unchanged_vs_director_commit": true
+    },
+    {
+      "path": "js/lamp/turtle.js",
+      "sha256": "f7e91070a5959a2a5b97438a64db0f79af4890c2dbff1cdcbe6e4d6a28817ed2",
+      "unchanged_vs_director_commit": true
+    },
+    {
+      "path": "js/lamp/gl.js",
+      "sha256": "ba98ba276559c430fc244a261387b32c77901a042e9c60b8acee31da3fdd0b29",
+      "unchanged_vs_director_commit": true
+    },
+    {
+      "path": "js/lamp/shaders.js",
+      "sha256": "773d25786637b178c73df987f11539d8786f2516fc6c04099d81caae170ddf1d",
+      "unchanged_vs_director_commit": true
+    },
+    {
+      "path": "js/puppet.js",
+      "sha256": "04b80760b97185ab8aea7826383d85f3c9d7789cd01aa1d8664fdc74bc4c30b7",
+      "unchanged_vs_director_commit": true
+    }
+  ]
+}
