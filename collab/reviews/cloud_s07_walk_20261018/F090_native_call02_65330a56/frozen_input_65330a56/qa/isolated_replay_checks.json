@@ -1,0 +1,66 @@
+{
+  "status": "PASS_INPUT_REPLAY_ONLY",
+  "copied_only": [
+    "prepare.py",
+    "sources/"
+  ],
+  "four_request_images_byte_exact": 4,
+  "five_source_layers_byte_exact": 5,
+  "files": [
+    {
+      "path": "inputs_1024x1536/A_real_fixed_layers_plus_volume_NOT_ART_PREPARED.png",
+      "sha256": "b2a3756b099b9b7ba313d2f4c7254b78d902453b6cc88a09674d6e6043fe0bf9",
+      "isolated_sha256": "b2a3756b099b9b7ba313d2f4c7254b78d902453b6cc88a09674d6e6043fe0bf9",
+      "byte_identical": true
+    },
+    {
+      "path": "inputs_1024x1536/B_APPROVED_BYTE_IDENTICAL_PREPARED.png",
+      "sha256": "a777ac00d9cfb24ee616d9427b47b339ebd4a146f12d6420c9c8d960aabd9a8a",
+      "isolated_sha256": "a777ac00d9cfb24ee616d9427b47b339ebd4a146f12d6420c9c8d960aabd9a8a",
+      "byte_identical": true
+    },
+    {
+      "path": "inputs_1024x1536/C_same_A_volume_soft_anchors_NOT_ART_PREPARED.png",
+      "sha256": "09abcb4d5b9181a09dfb6e730f1b5396665317a828459b518ac05486c2e704b4",
+      "isolated_sha256": "09abcb4d5b9181a09dfb6e730f1b5396665317a828459b518ac05486c2e704b4",
+      "byte_identical": true
+    },
+    {
+      "path": "inputs_1024x1536/D_APPROVED_BYTE_IDENTICAL_PREPARED.png",
+      "sha256": "fab230dea13a6a1b6d2606aedf894600e5cd7d571bb39ac84aa9e42a6b07fb60",
+      "isolated_sha256": "fab230dea13a6a1b6d2606aedf894600e5cd7d571bb39ac84aa9e42a6b07fb60",
+      "byte_identical": true
+    },
+    {
+      "path": "production_reference_layers/F090_body_head_blouse.png",
+      "sha256": "2dcf44d849e30e552e8e6648673b7a3a6d32be7a07e247cdc8acc511c9cebdfc",
+      "isolated_sha256": "2dcf44d849e30e552e8e6648673b7a3a6d32be7a07e247cdc8acc511c9cebdfc",
+      "byte_identical": true
+    },
+    {
+      "path": "production_reference_layers/F090_far_complete_arm_jade_hand.png",
+      "sha256": "889b1dc7b3e259e6b493fdbb0d0cba7c0175c379e302fad09e5f624f4353ec21",
+      "isolated_sha256": "889b1dc7b3e259e6b493fdbb0d0cba7c0175c379e302fad09e5f624f4353ec21",
+      "byte_identical": true
+    },
+    {
+      "path": "production_reference_layers/F090_far_shoe_ankle_LANDED.png",
+      "sha256": "64637d1d886e25fdcf3c888b533c1a8164844fe429a87295cfb9194dc585503c",
+      "isolated_sha256": "64637d1d886e25fdcf3c888b533c1a8164844fe429a87295cfb9194dc585503c",
+      "byte_identical": true
+    },
+    {
+      "path": "production_reference_layers/F090_near_complete_arm.png",
+      "sha256": "669c4681f9dd78cb3990917f427c5ea40510cd69f14822f9161516c09aeec67c",
+      "isolated_sha256": "669c4681f9dd78cb3990917f427c5ea40510cd69f14822f9161516c09aeec67c",
+      "byte_identical": true
+    },
+    {
+      "path": "production_reference_layers/F090_near_shoe_ankle_SUPPORT_FIXED.png",
+      "sha256": "57518102bfef2d81fd98017bd445e8ae7918bdb1dd60093657f82fc576a6cc7c",
+      "isolated_sha256": "57518102bfef2d81fd98017bd445e8ae7918bdb1dd60093657f82fc576a6cc7c",
+      "byte_identical": true
+    }
+  ],
+  "image_calls": 0
+}

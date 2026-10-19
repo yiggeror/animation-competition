@@ -1,0 +1,97 @@
+{
+  "status": "ACTUAL_MEASUREMENTS_ONLY_REQUIRES_VISUAL_VOLUME_AND_SEAM_REVIEW",
+  "fixed_transform": "whole135/256 ->540x810; native origin1080,250; no fitting",
+  "frozen_sole_material_components": [
+    {
+      "pixels": 2157,
+      "bbox_native_crop_local_halfopen": [
+        121,
+        735,
+        291,
+        771
+      ],
+      "centroid_xy": [
+        199.37830319888735,
+        756.0542420027816
+      ]
+    },
+    {
+      "pixels": 2068,
+      "bbox_native_crop_local_halfopen": [
+        307,
+        735,
+        474,
+        771
+      ],
+      "centroid_xy": [
+        385.9260154738878,
+        756.0174081237911
+      ]
+    }
+  ],
+  "actual_sole_material_components": [
+    {
+      "pixels": 2200,
+      "bbox_native_crop_local_halfopen": [
+        121,
+        735,
+        292,
+        771
+      ],
+      "centroid_xy": [
+        199.8309090909091,
+        755.8481818181818
+      ]
+    },
+    {
+      "pixels": 2107,
+      "bbox_native_crop_local_halfopen": [
+        307,
+        735,
+        474,
+        771
+      ],
+      "centroid_xy": [
+        386.2876127195064,
+        756.094447081158
+      ]
+    }
+  ],
+  "actual_minus_frozen_sole_material_centroid_delta_native_px": [
+    [
+      0.45260589202175083,
+      -0.20606018459977804
+    ],
+    [
+      0.3615972456186114,
+      0.07703895736688082
+    ]
+  ],
+  "frozen_blouse_blue_material": {
+    "actual_blue_material_bbox_native_crop_local_halfopen": [
+      211,
+      0,
+      447,
+      315
+    ],
+    "centroid_xy": [
+      342.37800173594366,
+      151.92856109557334
+    ],
+    "pixels": 41476
+  },
+  "actual_blouse_blue_material": {
+    "actual_blue_material_bbox_native_crop_local_halfopen": [
+      210,
+      0,
+      449,
+      314
+    ],
+    "centroid_xy": [
+      340.77329801844223,
+      150.063713949382
+    ],
+    "pixels": 40776
+  },
+  "measurement_limits": "Material centers and bboxes are not anatomical ankle, pelvis or bone measurements. Threshold masks measure actual visible alpha128 material; no hidden shoe-layer alpha or technical volume used."
+}

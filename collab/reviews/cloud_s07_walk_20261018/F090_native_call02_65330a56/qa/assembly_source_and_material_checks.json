@@ -1,0 +1,58 @@
+{
+  "status": "CANDIDATE_ASSEMBLED_PENDING_ACTUAL_ROOT_ASTRA_REVIEW",
+  "raw_to_native": "whole135/256+1080,250 only; no fitting",
+  "source_layers_files_byte_identical": 5,
+  "new_pants_source": "one actual call02 complete waist/pelvis/both legs; original RGB, no recolor or connector paint",
+  "raw_whole_pants_material_pixels": 206524,
+  "native_pants_alpha128_pixels": 56084,
+  "opaque_front_original_material_pixels_RGBA_verified": 11523,
+  "opaque_front_original_material_RGBA_changes": 0,
+  "source_far_whole_shoe_layer_kept_complete": true,
+  "native_front_pants_may_naturally_occlude_back_far_shoe_pixels_alpha128": 81,
+  "actual_ankle_connections": {
+    "near": {
+      "actual_pants_to_source_skin_overlap_pixels_alpha128": 6,
+      "actual_pants_to_source_skin_3px_neighbor_pixels": 109,
+      "no_connector_or_bridge_drawn": true
+    },
+    "far": {
+      "actual_pants_to_source_skin_overlap_pixels_alpha128": 2,
+      "actual_pants_to_source_skin_3px_neighbor_pixels": 176,
+      "no_connector_or_bridge_drawn": true
+    }
+  },
+  "material_interiors": {
+    "F057": {
+      "pixels": 63712,
+      "interior_mean_RGB": [
+        41.44415494726268,
+        45.42688975389252,
+        60.95190858864892
+      ]
+    },
+    "F062": {
+      "pixels": 59649,
+      "interior_mean_RGB": [
+        43.25004610303609,
+        46.35584837968784,
+        61.169860349712486
+      ]
+    },
+    "call02": {
+      "pixels": 51121,
+      "interior_mean_RGB": [
+        41.63562919348213,
+        46.495882318421,
+        62.33258347841396
+      ],
+      "original_RGB_correction": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "no_technical_color_or_guide_layer_adopted": true,
+  "no_waist_or_ankle_filler_drawn": true,
+  "F095_unopened": true
+}
