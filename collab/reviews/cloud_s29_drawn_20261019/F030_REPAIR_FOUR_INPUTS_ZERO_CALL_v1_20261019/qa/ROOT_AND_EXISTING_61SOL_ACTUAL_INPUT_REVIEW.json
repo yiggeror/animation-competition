@@ -1,0 +1,26 @@
+{
+  "state": "ACTUAL_INPUTS_LOCALLY_REVIEWED_AWAITING_ASTRA_SHORT_GATE",
+  "new_requests_started": 0,
+  "new_raw_outputs": 0,
+  "root_actual_viewed": [
+    "inputs/01_F030_ONLY_COMPLETE_NEW_TARGET_TECHNICAL.png",
+    "inputs/02_F024_HEAD_IDENTITY_AND_INTERIOR_MATERIAL_CROPS_ONLY.png",
+    "inputs/03_SAME_F030_COMPLETE_FAR_ARM_PINCH_OPAQUE_CLOTH_ENLARGED.png",
+    "inputs/04_COMPLETE_MOVEMENT_SEMANTIC_WHITE_PROTECT_BLACK.png",
+    "qa/SEMANTIC_DOMAIN_ON_SAME_TARGET_AUDIT_ONLY_NOT_INPUT.png"
+  ],
+  "root_findings": [
+    "只有已批准030新target为完整姿态；其余无竞争旧整姿。",
+    "实际看图发现的布内部裁片签杆混入已撤换，第二图现为完整头身份和纯衣/布内部小片。",
+    "第三图完整远臂与夹点、连续不透明棉布面清楚；技术接缝必须原生重画。",
+    "最终白域覆盖完整远臂实际可见上臂/前臂/掌镯，未保护域缺白0；近裸右臂、真实neck3/原偶/杆、下肢保护区交集0。"
+  ],
+  "independent_read_only_review": "已逐张实看四输入及叠层：新030是唯一完整姿态，024仅身份与内部材质；远整臂、夹布和不透明褶面明确，白域覆盖完整动作，近右扶颈及下肢保留。未见新增输入门阻断，可交Astra短审；不代表后续原件动作已通过。无修改或生成。",
+  "limits": [
+    "输入门不保证模型必然形成收折动作；新原件仍须实看完整臂链、夹布及动作因果。",
+    "语义白域不是已执行的像素inpaint参数。",
+    "图一/三是已批准技术target，不能当新native人物画采用。",
+    "真实原偶接层和正式场景尚未执行。"
+  ],
+  "reviewed_utc": "2026-10-19T10:00:26Z"
+}
