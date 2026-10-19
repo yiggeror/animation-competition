@@ -1,0 +1,45 @@
+{
+  "status": "ONE_ZERO_CALL_WHOLE_BLOUSE_SEMANTIC_REINTEGRATION_PENDING_ACTUAL_REVIEW",
+  "raw_source_sha256": "b21f0b8b18e35657626575b827bddd6fc8e287a4b2cbdbc6c39a885de8793041",
+  "one_common_inverse": {
+    "scale": 0.703125,
+    "offset": [
+      1240,
+      0
+    ]
+  },
+  "new_color_generation_or_color_correction": false,
+  "raw_garment_RGB_original": true,
+  "old_chest_blend_layer_used": false,
+  "SHIRT_underarm_mix_mask_used": false,
+  "retained_layers_unchanged": {
+    "F100_zero_call_semantic_trial_20261019/layers/RAW_complete_new_near_sleeve_arm_hand.png": "43dec10feb2aedaeab6c18f0c4744a8b14710028d6c374099eb5c70a2921202d",
+    "F100_zero_call_semantic_trial_20261019/layers/BLEND_pants_wide_slanted_same_plane_overlap.png": "75736f7a5b234b9561931c7e11a4917921c10f13b1028653dd22dd3d36526aac",
+    "F100_zero_call_semantic_trial_20261019/layers/SOURCE_complete_far_arm_hand_jade.png": "ddad353b23d18dacb53c88bab999647184fa270222caeeebf1f89ab83d199d1f",
+    "F100_local_arm_call02_input_GATE_20261019/sources/F100_near_whole_shoe_FIXED.png": "60805bc58c5035c804025d84a00f122e434fb217e68478c86d671a5ab6a180a3",
+    "F100_local_arm_call02_input_GATE_20261019/sources/F100_far_whole_shoe_FIXED.png": "64637d1d886e25fdcf3c888b533c1a8164844fe429a87295cfb9194dc585503c",
+    "F100_local_arm_call02_input_GATE_20261019/sources/ORIGINAL_fixed_lamp_same_native_registration.png": "5c2321d12357ed82cee9e582a00f67faa92a8cc32ca0cbc33ae89608443ed29a"
+  },
+  "layer_order": [
+    "source_farshoe",
+    "unchanged_passed_pants",
+    "unchanged_complete_fararm_hand_jade",
+    "source16_head_hair_face_glasses_neck",
+    "whole_raw_continuous_blouse",
+    "unchanged_raw_near_sleeve_arm_hand",
+    "source_nearshoe",
+    "source_whole_lamp"
+  ],
+  "actual_blouse_material_pixels": 52309,
+  "candidate_sha256": "7dc803e92e69cb90a84465f4b25e64f5ba9ea62b6b3853bd9a66b658f9951b2b",
+  "calls": 0,
+  "git": 0,
+  "whole_selected_raw_blouse_RGBA_differences_from_common_raw": 0,
+  "actual_viewed": [
+    "final actualRGBA",
+    "full gray/dark",
+    "095same-frame gray/dark",
+    "neck/collar/shoulder/underarm gray/dark closeups"
+  ],
+  "finite_visual_conclusion": "Whole raw garment replaces all old internal source-chest/lower-shirt blend boundaries. Neck/collar and shoulder/underarm visibly continuous in final gray/dark; no new visible garment split found. Pending root/Astra actual review, not whole raw adoption or a new call."
+}
