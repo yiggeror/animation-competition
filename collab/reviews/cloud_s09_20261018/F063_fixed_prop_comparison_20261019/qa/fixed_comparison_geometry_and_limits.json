@@ -1,0 +1,91 @@
+{
+  "status": "FIXED_REVIEW_BUNDLE_STOP_MICROADJUST_PENDING_ASTRA_DIRECTION",
+  "new_image_calls": 0,
+  "F069_unopened": true,
+  "current_trial_sha256": "6ca8123da6afd1eafe7c78b51e819aac352bc9d90d3de0c6a988d3fdecf606e9",
+  "trial_geometry_modified": false,
+  "new_registered_group_modified": false,
+  "old_comparison_only": {
+    "scale": 1,
+    "rotation_degrees": 78.508,
+    "M": [
+      [
+        0.19923110917411352,
+        -0.9799525320836987
+      ],
+      [
+        0.9799525320836987,
+        0.19923110917411352
+      ]
+    ],
+    "t": [
+      1284.0792113302323,
+      -606.8253880588991
+    ],
+    "whole_prop_and_grasp_transform_together": true,
+    "not_adopted_into_new_trial": true
+  },
+  "new_existing_transform_unchanged": {
+    "scale": 0.542209296288587,
+    "rotation_degrees": -2.379877425655823,
+    "M": [
+      [
+        0.5417416274465395,
+        0.02251510766884169
+      ],
+      [
+        -0.02251510766884169,
+        0.5417416274465395
+      ]
+    ],
+    "t": [
+      568.6160012389555,
+      259.87085341839685
+    ],
+    "ALL_same_raw_arm_grasp_prop_material": true,
+    "single_group_resampling_once": true,
+    "no_independent_arm_hand_torch_transforms": true
+  },
+  "common_T": [
+    858.3388552980175,
+    636.9294709248006
+  ],
+  "common_L": [
+    1227.0002384706622,
+    562.9985264074178
+  ],
+  "common_axis_length_native": 376.00132978488244,
+  "comparison_crop_native": [
+    800,
+    480,
+    1290,
+    720
+  ],
+  "comparison_sheet_native_px_per_px": 1,
+  "full_projected_tail_diameters": {
+    "source_top": [
+      496.0,
+      666.0
+    ],
+    "source_bottom": [
+      515.0,
+      767.0
+    ],
+    "raw_length": 102.77159140540736,
+    "manual_error_raw_px": 6,
+    "registered_native": 55.723712254384125,
+    "locked044_full_projected_diameter_native_approx": 83.0,
+    "locked044_manual_error_native_px": 4,
+    "relative_difference": -0.3286299728387455,
+    "note": "Full transverse end-plane major axis is visible, unlike withdrawn44px occluded estimate. This is projected-image diameter comparison, not3D physical caliper proof. Common similarity cannot change this relative-to-axis proportion."
+  },
+  "contour_semantics": "Actual alpha128 outer silhouette of complete visible unit, includes grip and arm where within crop. No invented outline behind the hand. Not physical3D calipers.",
+  "source_limits": [
+    "044 unit is the archived historicalb877 complete grasp/prop source; 104alpha128 flattened-motherRGBA differences previously documented, so not claimed bitwise equal to flat044 mother.",
+    "Original044 whole unit contains a historical technical wrist fringe/cut; shown honestly for review, not certified as new arm anatomy.",
+    "New063 common-M registration locks axis length but exposes approximately33percent tail diameter conflict, sleeve/body seams and253stable-skirt overlap; current complete trial remainsHOLD."
+  ],
+  "decision_reserved_for_Astra": [
+    "Keep complete original044 grasp/prop group and attach an actual new full arm, or approve a minimal complete grasp/prop shape repair. Neither is executed by this fixed package."
+  ]
+}

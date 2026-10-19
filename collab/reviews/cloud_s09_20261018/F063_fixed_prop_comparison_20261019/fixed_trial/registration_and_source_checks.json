@@ -1,0 +1,215 @@
+{
+  "status": "ONE_SAME_SOURCE_GROUP_PLUS_CONTINUOUS026_BACKPLATE_TRIAL_HOLD_PENDING_ACTUAL_REVIEW",
+  "raw_SHA256": "50772cc5cf8c3b55b34d491940a814d488f24d3dab1909114d589a6db03eac4b",
+  "frozen044_SHA256": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+  "F026_SHA256": "a9a3eb670a30a6a87792a3a298f798c34a70923b3c4ea49b15c058de2a941ccc",
+  "datum_latest_authority": "Rear-end ELLIPSE CENTER mapsT, lamp ellipse center mapsL; not side-material midpoint or leftmost silhouette. Previous rear-extreme discussion withdrawn as final.",
+  "source_axis_points_manual": {
+    "T_tail_ellipse_center": [
+      505.0,
+      717.0
+    ],
+    "L_lamp_ellipse_center": [
+      1190.0,
+      609.0
+    ],
+    "T_error_radius_raw_px": 7,
+    "L_error_radius_raw_px": 5,
+    "tail_center_method": "Approx halfway of visible end-plane upper/lower arc endpoints496,666 and515,767; center rounded505,717. Rear end circle is oblique and partly side-occluded, so manual error retained."
+  },
+  "source_axis_length_raw": 693.461606723833,
+  "frozen_target_T": [
+    858.3388552980175,
+    636.9294709248006
+  ],
+  "frozen_target_L": [
+    1227.0002384706622,
+    562.9985264074178
+  ],
+  "frozen_target_G": [
+    1049.533,
+    598.588
+  ],
+  "frozen_axis_native": 376.00132978488244,
+  "single_similarity": {
+    "scale": 0.542209296288587,
+    "rotation_degrees": -2.379877425655823,
+    "M": [
+      [
+        0.5417416274465395,
+        0.02251510766884169
+      ],
+      [
+        -0.02251510766884169,
+        0.5417416274465395
+      ]
+    ],
+    "t": [
+      568.6160012389555,
+      259.87085341839685
+    ],
+    "ALL_same_raw_arm_grasp_prop_material": true,
+    "single_group_resampling_once": true,
+    "no_independent_arm_hand_torch_transforms": true
+  },
+  "endpoint_fit_error_native": {
+    "T": 0.0,
+    "L": 0.0
+  },
+  "grip_station": {
+    "frozen_fraction_from_tail": 0.5186170239855135,
+    "required_same_source_point_for_frozenG": [
+      860.2527714338257,
+      660.9900591185269
+    ],
+    "actual_grasp_axis_hidden_by_hand": true,
+    "manual_possible_grip_center_raw": [
+      840,
+      672
+    ],
+    "manual_station_uncertainty_raw_px": 25,
+    "note": "Required source860.25,660.99 sits within actual gripping hand. An occluded interior G is not measurable precisely enough to certify51.8617percent; no fake sourcepoint assigned."
+  },
+  "full_tail_diameter_visible_projection": {
+    "source_top": [
+      496.0,
+      666.0
+    ],
+    "source_bottom": [
+      515.0,
+      767.0
+    ],
+    "raw_length": 102.77159140540736,
+    "manual_error_raw_px": 6,
+    "registered_native": 55.723712254384125,
+    "locked044_full_projected_diameter_native_approx": 83.0,
+    "locked044_manual_error_native_px": 4,
+    "relative_difference": -0.3286299728387455,
+    "note": "Full transverse end-plane major axis is visible, unlike withdrawn44px occluded estimate. This is projected-image diameter comparison, not3D physical caliper proof. Common similarity cannot change this relative-to-axis proportion."
+  },
+  "registered_manual_source_landmarks": {
+    "near_source_opening_left": [
+      681.8409022020011,
+      673.0267324948472
+    ],
+    "near_source_opening_right": [
+      740.3278619019529,
+      657.02904507278
+    ],
+    "far_source_visible_upperarm": [
+      941.2409441880352,
+      699.1479719108434
+    ],
+    "near_source_low_elbow_proxy": [
+      753.0682043423692,
+      780.7726662506739
+    ],
+    "far_low_elbow_proxy": [
+      998.8571603192332,
+      805.8315584760514
+    ]
+  },
+  "frozen_actual_guard_RGBA_changes": 0,
+  "guard_alpha0_pixels": 0,
+  "new_registered_near_material_intersect_stable_skirt_alpha128": 253,
+  "new_registered_near_material_intersect_head_alpha128": 0,
+  "near_arm_material_under_restored_near_ruffle_alpha128": 1074,
+  "F026_collar13600_RGBA_changes": 0,
+  "F026_backplate_layer_position": "True back layer under retained044 actual clothes, never overwrites original visible044 cloth. Initial direct-matrix trial is withdrawn; sameM geometry unchanged.",
+  "F026_backplate_affine": {
+    "M": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "t": [
+      0,
+      0
+    ],
+    "scale": 1,
+    "box_halfopen": [
+      690,
+      565,
+      936,
+      786
+    ]
+  },
+  "confirmed_connected_silver_core_sourcealpha128_not_opaque_covered": 0,
+  "ambiguous_old_cap_dark_edge_not_opaque_covered": 2,
+  "visible_old026_silver_bbox_halfopen": null,
+  "actual_samples": {
+    "(840, 650)": {
+      "F026_RGBA": [
+        168,
+        160,
+        154,
+        253
+      ],
+      "group_alpha": 253,
+      "final_RGBA": [
+        184,
+        174,
+        168,
+        255
+      ],
+      "restored_guard": false
+    },
+    "(850, 640)": {
+      "F026_RGBA": [
+        201,
+        191,
+        188,
+        253
+      ],
+      "group_alpha": 254,
+      "final_RGBA": [
+        210,
+        205,
+        202,
+        255
+      ],
+      "restored_guard": false
+    },
+    "(930, 650)": {
+      "F026_RGBA": [
+        252,
+        201,
+        161,
+        254
+      ],
+      "group_alpha": 254,
+      "final_RGBA": [
+        250,
+        196,
+        156,
+        255
+      ],
+      "restored_guard": false
+    }
+  },
+  "F026_exposed_old_skin_pixels_sourcealpha128_not_opaque_covered": 298,
+  "F026_exposed_old_skin_bbox_halfopen": [
+    748,
+    586,
+    936,
+    770
+  ],
+  "old044_prop_RGBA_adopted_as_new_torch": 0,
+  "newraw_head_cloth_RGB_adopted": 0,
+  "source_layer_order": [
+    "044 oldarms/prop cleared",
+    "026 continuous body UNDER retained044 visible material at samecoordinates",
+    "sameM rawfar",
+    "sameM rawnear+grasp+wholeprop",
+    "044 actual head/collar/nearwhole ruffle/stable skirt"
+  ],
+  "candidate_path": "candidate/F063_single_group_026_backplate_TRIAL_HOLD.png",
+  "candidate_SHA256": "6ca8123da6afd1eafe7c78b51e819aac352bc9d90d3de0c6a988d3fdecf606e9",
+  "image_calls": 0,
+  "069_unopened": true
+}
