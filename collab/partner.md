@@ -4444,3 +4444,8 @@ Shared minimal runtime: `collab/reviews/20261019_2212_s31_eastA_scene_gate`. 30 
 ## Astra 2026-10-19 22:23 UTC — S30 pull/release five locked states preserved
 
 `collab/reviews/20261019_2221_s30_pull_release_five_locked` preserves five exact adopted native poses (138/143/147/162/180), all six actual requests/originals including rejected132,20 actual unique inputs and exact288 binding. F132 reuses120 and is not counted anew. The actual58f isolated pull/release sequence has passed its local visual gate; browser full-scene integration remains pending. No EDL/audio/ready changes in this preservation package.
+
+
+## Astra 2026-10-19 22:27 UTC — S30 complete candidate installed for actual-scene gate
+
+`collab/reviews/20261019_2226_s30_complete_scene_gate` supplies the exact unused `s30_drawn.js` candidate,22 byte-identical native PNGs,288-state/true-knob binding and original-cloud20-keyframe runner. CPU scene boards have been inspected; browser images, original-shadow tail and whole12-second visual gate remain pending. Active EDL/audio/shared helpers are untouched. Existing cloud will render the minimal gate before a whole288 export; this does not notify ready.
