@@ -1,0 +1,48 @@
+{
+  "inputs": [
+    {
+      "order": 1,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F020/inputs/01_F020_unique_opaque_target_from_accepted008.png",
+      "sha256": "0fa0aefe9917572ff2ed507a0c8f8ea8ad446f6e69fe1475f204abb12c94da93",
+      "size": [
+        1672,
+        941
+      ],
+      "role": "unique new opaque F020 pose, derived from actual accepted008"
+    },
+    {
+      "order": 2,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F020/inputs/02_same_view_grips_3x.png",
+      "sha256": "bd175ac1d4a355597878067019b9021008ad97a22ad5230ac6eb0f030bdf1e02",
+      "size": [
+        1320,
+        675
+      ],
+      "role": "exact same-view direct crop3x"
+    },
+    {
+      "order": 3,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F020/inputs/03_accepted008_head_materials_only.png",
+      "sha256": "225f4d7ffc5e47135b7c5a666d193045fc14b798d2df78d25429b15ae5ef9f7a",
+      "size": [
+        900,
+        600
+      ],
+      "role": "accepted008 cropped identity and internal materials only"
+    },
+    {
+      "order": 4,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F020/inputs/04_edit_white.png",
+      "sha256": "1428cd506892e61c9171638e20ee1547825ad2d0fcd5fdb9f4c6ca5a76f2a206",
+      "size": [
+        1672,
+        941
+      ],
+      "role": "single editable white, black source protection"
+    }
+  ],
+  "source_accepted_F008_sha256": "cc802f284046f978633b41f769cfef4119492f2433207c1e06c0ddc60e5ffbdf",
+  "frozen_geometry_commit": "c1b1833b7dfe806ae2daa1b84ddacfb804070f3d",
+  "authority": "Astra: after actual corrected008 passes, derive020 then032 from accepted actual; no extra states",
+  "submitted": false
+}

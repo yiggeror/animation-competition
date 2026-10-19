@@ -1,0 +1,23 @@
+{
+  "result": "AUTHOR_REJECTED_DIMENSION_MISMATCH",
+  "raw_sha256": "1445b6f3fbb24e83fe30bebd32608b539be79d9a0fa209de919cb4fe5f8fa8d6",
+  "original_kept_unmodified": true,
+  "actual_png_IHDR": [
+    1671,
+    941
+  ],
+  "required_png_IHDR": [
+    1672,
+    941
+  ],
+  "width_difference_pixels": -1,
+  "actual_image_seen": true,
+  "pose_contact_gate": "NOT_SIGNED / size gate prevents authorized black-domain registration",
+  "reason": "One column short. User contract forbids resampling, padding or cropping to force required dimensions.",
+  "no_composite_or_repaired_frame": true,
+  "F032_submitted": false,
+  "one_authorized_F020_attempt_consumed": true,
+  "no_retry": true,
+  "cause_claim": "Observed actual PNG dimensions only; no assertion about tool internals.",
+  "reviewed_utc": "2026-10-19T04:20:37.409778+00:00"
+}

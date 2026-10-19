@@ -1,0 +1,66 @@
+{
+  "tool": "image_gen.imagegen",
+  "args": {
+    "prompt": "将第一张完整的新F020共同承重姿态自然完稿为与第三张已通过008实物一致的二维手绘风格。第一张是本态唯一完整动作底：它从已通过008实物的头部身份、固有色、奶奶/四签/鞋踝原像素派生，孩子完整肩袖—上臂—肘—前臂—腕和两只真实屈指握掌已按已批020骨点摆好；没有旧双低掌或旧灰体。不得改回008空手或母态。第二张只把第一张接握区直接3倍放大，第三张只含已过008的头部和内部材质裁片，不含完整旧臂/旧全身。第四张白可完稿、黑须原RGBA保留；黑白语义不反转。\n本态F020共同承重：孩子自身近R肩(631,409)→肘(696.374,347.143)→腕(797,377.132)，掌中心(820,365.132)，拇指对屈曲食/中指真实夹住龟头签T_H；远L肩(676,429)→肘(740.326,467.564)→腕(827,428.673)，掌中心(850,416.673)，拇指对屈曲四指真实握住龟壳签T_S。两根各有独立掌内接触段，指腹形成对握，竹签从掌两侧沿同一直轴接出；不能只把闭拳贴杆、用圆圈夹杆或让裸杆穿掌面。五指体积与关节真实，近远臂各完整接回自己的肩，禁止多臂、断腕或拉长骨段。头颈、胸廓、骨盆按第一张共同靠近，鞋踝固定，角色尺度不变。\n奶奶低位裸腕G.R仍闭合支持两龟签后端，绝不提前松手。孩子R只接T_H，L只接T_S；T_H=龟head[20,0]，T_S=龟shell[0,40]，不换轴/偶端或合成一根。奶奶整个人、高位带唯一玉镯近L掌和两鹤签、低位供应掌、原鞋踝及黑域竹签原像素保持，不重画奶奶，不为高鹤远端接景改高握臂、灯或相机。\n保持第一张已具备的自然完整体量，把简化施工线条和色面转成自然衣褶、肤肉和真实指掌；不改姿态、不照搬技术几何。输出严格1672×941透明人物层，只这一时刻、两人四杆；无文字、骨架、圆掌/剖面、灰影、偶、场景、灯光、影子或额外帧；不裁切、补边、缩放。",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F020/inputs/01_F020_unique_opaque_target_from_accepted008.png",
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F020/inputs/02_same_view_grips_3x.png",
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F020/inputs/03_accepted008_head_materials_only.png",
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F020/inputs/04_edit_white.png"
+    ]
+  },
+  "submitted_inputs": [
+    {
+      "order": 1,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F020/inputs/01_F020_unique_opaque_target_from_accepted008.png",
+      "sha256": "0fa0aefe9917572ff2ed507a0c8f8ea8ad446f6e69fe1475f204abb12c94da93",
+      "size": [
+        1672,
+        941
+      ],
+      "role": "unique new opaque F020 pose, derived from actual accepted008"
+    },
+    {
+      "order": 2,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F020/inputs/02_same_view_grips_3x.png",
+      "sha256": "bd175ac1d4a355597878067019b9021008ad97a22ad5230ac6eb0f030bdf1e02",
+      "size": [
+        1320,
+        675
+      ],
+      "role": "exact same-view direct crop3x"
+    },
+    {
+      "order": 3,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F020/inputs/03_accepted008_head_materials_only.png",
+      "sha256": "225f4d7ffc5e47135b7c5a666d193045fc14b798d2df78d25429b15ae5ef9f7a",
+      "size": [
+        900,
+        600
+      ],
+      "role": "accepted008 cropped identity and internal materials only"
+    },
+    {
+      "order": 4,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F020/inputs/04_edit_white.png",
+      "sha256": "1428cd506892e61c9171638e20ee1547825ad2d0fcd5fdb9f4c6ca5a76f2a206",
+      "size": [
+        1672,
+        941
+      ],
+      "role": "single editable white, black source protection"
+    }
+  ],
+  "frame": 20,
+  "attempt_this_state": 1,
+  "maximum_attempts_this_state": 1,
+  "cumulative_request_number": 6,
+  "accepted_actual_predecessor": {
+    "frame": 8,
+    "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F008/S20_F008_accepted.png",
+    "sha256": "cc802f284046f978633b41f769cfef4119492f2433207c1e06c0ddc60e5ffbdf"
+  },
+  "authorization": "Astra: accepted actual corrected008 -> actual020 ->032; one each, self-review pass before continuation; no extra keys.",
+  "submitted_utc": "2026-10-19T04:17:49.439300+00:00"
+}
