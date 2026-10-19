@@ -1,0 +1,185 @@
+{
+  "status": "LIMITED_INPUT_PREPARATION_PASS_PENDING_ROOT_ASTRA_REVIEW",
+  "frame_hold": [
+    95,
+    99
+  ],
+  "scope": "Only095 actual-source input gate; no character art output, dynamics or final anatomy acceptance.",
+  "actual_viewed_images": [
+    {
+      "path": "qa/F095_four_inputs_gray.png",
+      "sha256": "21158af0ebea15793031d1f00a0d883ee741557895d0839f98fd16df1978705f"
+    },
+    {
+      "path": "qa/F095_four_inputs_dark.png",
+      "sha256": "7fd2d0c5f72db0608bcf988ed81061789419bd27d0a787b9a0a4d7208ce5de0d"
+    },
+    {
+      "path": "qa/F095_actual_whole_feet_support_and_occlusion_gray.png",
+      "sha256": "66580cf725e7018f15b306055c16c4f455f0e66c971f0c9001f0d54f137a2543"
+    },
+    {
+      "path": "qa/F095_real_material_and_white_overlay_dark.png",
+      "sha256": "f9a4c851328238f1a33b5e5a2fce9ff10f97a36f5cdbbc3156b452c775a08cb8"
+    },
+    {
+      "path": "inputs_1024x1536/A_F095_PREPARED_NOT_CALLED.png",
+      "sha256": "fdfc2105cd67d14a97a303e87054e1b2bf8cec15089ee817ab1a956a9968aa60"
+    },
+    {
+      "path": "inputs_1024x1536/B_F095_PREPARED_NOT_CALLED.png",
+      "sha256": "949b1bf0aacf446f1a4cd3313e557a0787b87f066ada95b085481e328c8b3355"
+    },
+    {
+      "path": "inputs_1024x1536/C_F095_PREPARED_NOT_CALLED.png",
+      "sha256": "df04ad95ff7ae75d0bbab7e9aa028b22a154f8493cf7a4a93f9194d9f8412cc7"
+    },
+    {
+      "path": "inputs_1024x1536/D_F095_PREPARED_NOT_CALLED.png",
+      "sha256": "fab230dea13a6a1b6d2606aedf894600e5cd7d571bb39ac84aa9e42a6b07fb60"
+    }
+  ],
+  "locked090_sha256": "012e7bae3f7e39ca93467bf1d43ec003d3ed5a741816c67ee8fc67c5e1225156",
+  "mother_six_layer_RGBA_changes": 0,
+  "actual_visible_findings": [
+    "A/C clearly identify new full waist/pelvis/two-leg technical volume as NOT_ART; no old090 trouser silhouette supplied.",
+    "NearRIGHT foreground shoe collects toward planted farLEFT shoe; both true source soles native1022. Foreground near shoe naturally occludes part of rear far shoe.",
+    "Complete hands/jade remain in whole arm source layers; current hand overlap follows near-front/far-back composition, not digit splitting.",
+    "Sleeve connection cut angles are pending native repair in the small white windows; no seam-complete claim at input stage.",
+    "Full new trousers domain remains continuous from pelvis through knees to both ankle approaches; no crop-cut active arms/feet/white domain."
+  ],
+  "actual_source_and_guard_checks": {
+    "far_support_whole_png_byte_identical": true,
+    "far_support_sha256": "64637d1d886e25fdcf3c888b533c1a8164844fe429a87295cfb9194dc585503c",
+    "far_visibility_caveat": "Whole far shoe source file is unchanged, but not all pixels remain visible; near shoe/foreground shin may naturally cover the rear layer. Hidden far alpha never protects foreground trousers.",
+    "near_whole_shoe_native_delta": [
+      162.04178430265387,
+      0.0
+    ],
+    "near_world_delta": [
+      59,
+      0
+    ],
+    "no_lift_no_roll_no_part_scale": true,
+    "white_pixels": 146899,
+    "white_guard_intersections": {
+      "body": 0,
+      "complete_visible_arms": 0,
+      "near_landed_foot": 0,
+      "far_visible_support": 0
+    },
+    "alpha0_guard_pixels": 0,
+    "white_probe_components": {
+      "nearH": {
+        "native": [
+          1470,
+          612
+        ],
+        "white": true,
+        "component": 3
+      },
+      "farH": {
+        "native": [
+          1450,
+          615
+        ],
+        "white": true,
+        "component": 3
+      },
+      "nearK": {
+        "native": [
+          1449,
+          787
+        ],
+        "white": true,
+        "component": 3
+      },
+      "farK": {
+        "native": [
+          1457,
+          784
+        ],
+        "white": true,
+        "component": 3
+      },
+      "near_ankle_approach": {
+        "native": [
+          1408,
+          933
+        ],
+        "white": true,
+        "component": 3
+      },
+      "far_ankle_approach": {
+        "native": [
+          1452,
+          929
+        ],
+        "white": true,
+        "component": 3
+      }
+    },
+    "bounds": {
+      "actual_arms_feet": {
+        "native_halfopen": [
+          1360,
+          351,
+          1577,
+          1024
+        ],
+        "crop_margins_L_T_R_B": [
+          240,
+          101,
+          83,
+          36
+        ]
+      },
+      "white": {
+        "native_halfopen": [
+          1310,
+          348,
+          1640,
+          1012
+        ],
+        "crop_margins_L_T_R_B": [
+          190,
+          98,
+          20,
+          48
+        ]
+      },
+      "new_technical_volume": {
+        "native_halfopen": [
+          1374,
+          535,
+          1577,
+          965
+        ],
+        "crop_margins_L_T_R_B": [
+          254,
+          285,
+          83,
+          95
+        ]
+      }
+    },
+    "active_outside_crop": 0,
+    "new_technical_material_uncovered_outside_white": 0,
+    "D_native_tool_literal_source_copies": [
+      true,
+      true
+    ]
+  },
+  "proposals_not_frozen_art": {
+    "whole_near_arm_rotation_degrees": -12,
+    "whole_far_arm_rotation_degrees": 10,
+    "arm_scale": 1,
+    "soft_HK": "Source-calibrated hidden proxy and newly proposed stopping-volume knee directions only; not measured bone lengths or legacy absolute wrist/hip compliance.",
+    "needs_root_Astra": "Arm settling and new whole trouser volume must be reviewed as this095 input. Actual native output must later show natural waist/sleeve/knee/calf/ankle connections and original palette."
+  },
+  "collab_README_read_SHA256": "9e4806cf07c208f28d64a480720e13112886d42c2251c3d15e564849ce350035",
+  "isolated_replay": "qa/isolated_replay_checks.json: four request PNGs plus five layers byte-identical using only own source snapshots and prepare.py.",
+  "explicit_input_blockers_seen": [],
+  "new_image_calls": 0,
+  "other_states_prepared": false
+}

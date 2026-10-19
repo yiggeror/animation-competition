@@ -1,0 +1,246 @@
+{
+  "source_path": "collab/reviews/cloud_s07_walk_20261018/arm_swing_v2/arm_swing_states.json",
+  "source_sha256": "d54824d3b4562ddc2a8c9de7db1cf0378e7ea0f842d33931be139a892e639f9b",
+  "limit": "ONLY event/bodydelta/footdelta semantics; absolute skeleton not measured anatomy or new drawing source.",
+  "states": [
+    {
+      "frame": 90,
+      "title": "远左脚落地",
+      "hip": [
+        1119,
+        618
+      ],
+      "shoulder": [
+        1127.8705310305781,
+        507.35501060040923
+      ],
+      "far_hip": [
+        1112,
+        619
+      ],
+      "far_shoulder": [
+        1119.8705310305781,
+        510.35501060040923
+      ],
+      "near_ankle": [
+        1079,
+        758
+      ],
+      "far_ankle": [
+        1154,
+        758
+      ],
+      "near_knee": [
+        1115.4703389732708,
+        695.920096849506
+      ],
+      "far_knee": [
+        1151.8852944302705,
+        686.0310621145945
+      ],
+      "near_wrist": [
+        1156.9070000750087,
+        625.5439847383094
+      ],
+      "far_wrist": [
+        1099.4957609007429,
+        630.5241338425695
+      ],
+      "near_elbow": [
+        1138.9840144012617,
+        570.3827067931906
+      ],
+      "far_elbow": [
+        1106.5641828182415,
+        572.9564570473729
+      ],
+      "head_center": [
+        1149.8705310305781,
+        447.35501060040923
+      ],
+      "contacts": [],
+      "lamp_lift": 0,
+      "sole_y": 775.0,
+      "near_hand_anatomical": "right",
+      "camera": [
+        816,
+        482.5,
+        1.04
+      ],
+      "hold_frames": 5,
+      "last_frame_inclusive": 94,
+      "geometry_status": "NEW_CONSTRUCTION_PROPOSAL_PENDING_ASTRA",
+      "support_phase": "双支撑→远左承重",
+      "facing": "screen right; never mirror",
+      "near_arm": "anatomical right, bare wrist, foreground",
+      "far_arm": "anatomical left, jade bangle, behind torso where occluded",
+      "planted_feet": [
+        "near",
+        "far"
+      ],
+      "shoe_support_x": {
+        "near": [
+          1065,
+          1105
+        ],
+        "far": [
+          1140,
+          1180
+        ]
+      },
+      "swing_sole_clearance": {},
+      "balance_proxy_xy": [
+        1125.697138694517,
+        590.1883228539901
+      ],
+      "support_hull_x": [
+        1065,
+        1180
+      ],
+      "gaze_target": [
+        1300,
+        655
+      ],
+      "hand_contact": "empty hands; no lamp contact",
+      "lamp_base": [
+        1262,
+        642
+      ],
+      "lamp_bail_contact": [
+        1262,
+        524.7
+      ],
+      "lamp_support": "table only",
+      "near_palm_proxy": [
+        1160.306187013133,
+        636.0056064175561
+      ],
+      "far_palm_proxy": [
+        1098.1551981232863,
+        641.4421415106241
+      ],
+      "arm_angle_degrees_from_down": {
+        "near": [
+          10,
+          18
+        ],
+        "far": [
+          -12,
+          -7
+        ]
+      },
+      "arm_swing_intent": "near right goes back when right foot lands; far left goes forward, then reverse on left landing; passing states near neutral",
+      "arm_status": "NEW_SMALL_COUNTERPHASE_PROPOSAL_PENDING_ASTRA",
+      "wrist_clearance_rule": "wrist/hand below shirt hem or visibly outside side silhouette; near arm in front, far arm behind with dashed hidden section. Actual cloth/hand widths must be checked in artwork, not inferred from points."
+    },
+    {
+      "frame": 95,
+      "title": "近右收脚站定",
+      "hip": [
+        1140,
+        613
+      ],
+      "shoulder": [
+        1149.9765189609793,
+        502.4492466356686
+      ],
+      "far_hip": [
+        1133,
+        614
+      ],
+      "far_shoulder": [
+        1141.9765189609793,
+        505.4492466356686
+      ],
+      "near_ankle": [
+        1138,
+        758
+      ],
+      "far_ankle": [
+        1154,
+        758
+      ],
+      "near_knee": [
+        1119.7986370455512,
+        688.3386018902835
+      ],
+      "far_knee": [
+        1125.9653670272796,
+        691.6821339751883
+      ],
+      "near_wrist": [
+        1184,
+        592
+      ],
+      "far_wrist": [
+        1156,
+        616
+      ],
+      "near_elbow": [
+        1203.5858073442253,
+        537.4069954053186
+      ],
+      "far_elbow": [
+        1124.8059083074854,
+        567.1028769406728
+      ],
+      "head_center": [
+        1171.9765189609793,
+        442.4492466356686
+      ],
+      "contacts": [],
+      "lamp_lift": 0,
+      "sole_y": 775.0,
+      "near_hand_anatomical": "right",
+      "camera": [
+        816,
+        482.5,
+        1.04
+      ],
+      "hold_frames": 5,
+      "last_frame_inclusive": 99,
+      "geometry_status": "NEW_CONSTRUCTION_PROPOSAL_PENDING_ASTRA",
+      "support_phase": "双脚固定，停止行进",
+      "facing": "screen right; never mirror",
+      "near_arm": "anatomical right, bare wrist, foreground",
+      "far_arm": "anatomical left, jade bangle, behind torso where occluded",
+      "planted_feet": [
+        "near",
+        "far"
+      ],
+      "shoe_support_x": {
+        "near": [
+          1124,
+          1164
+        ],
+        "far": [
+          1140,
+          1180
+        ]
+      },
+      "swing_sole_clearance": {},
+      "balance_proxy_xy": [
+        1147.5701961171485,
+        584.1309484817998
+      ],
+      "support_hull_x": [
+        1124,
+        1180
+      ],
+      "gaze_target": [
+        1262,
+        524.7
+      ],
+      "hand_contact": "empty hands; no lamp contact",
+      "lamp_base": [
+        1262,
+        642
+      ],
+      "lamp_bail_contact": [
+        1262,
+        524.7
+      ],
+      "lamp_support": "table only"
+    }
+  ]
+}
