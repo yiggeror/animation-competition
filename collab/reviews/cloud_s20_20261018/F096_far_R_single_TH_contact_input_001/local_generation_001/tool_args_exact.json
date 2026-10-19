@@ -1,0 +1,8 @@
+{
+  "prompt": "仅原生局修输入二白域内的完整远R掌腕：自然拇指、四根自然卷指、掌跟与完整短腕根，接回当前前臂。输入一是同一已批准096目标的唯一确定性局部，输入二是同视点同尺度真实mask；两图都是原画布x240..565、y295..535裁片同步3倍，975×720。只使用这一组局部，不参考或重构其他整姿，黑域的身体、完整近L掌夹握及两根真实轴作为固定上下文保留。\n本次输入坐标中，远R的唯一T_H夹点为(497.754,213.463)，真实X为(395.473,276.222)。T_H是从左下向右上伸入远R掌的那根硬直杆；T_S是从左上向右下、被下方近L单独握持的另一根硬直杆。远R只在X右上沿T_H约120裁片像素处夹T_H，不能退回X捏两杆。T_S在X前层，从远R手前方经过，但必须处于R拇指/卷指夹口之外，不能被R第二次握住。保留当前X、T_S完整轴、端点与近L夹点，不缩杆、移X、挪轴或擦掉真实杆获得假空气；不加第三杆。T_H仅按当前目标同轴接入新R夹口，掌内隐藏端遵循现有目标，不再改变杆归属。\n把粗施工肤面、补丁边和腕根描线统一原生重绘为自然完整整掌；骨长、掌体量与邻接096远前臂一致。手指完整、厚度自然，掌腕连续，不截指、断腕，不拼细皮肤桥，不保留旧错误双握或额外掌。短腕根顺畅接回固定前臂，肩肘和其他身体保持。\n输出完整975×720透明裁片，同画布、同视点、同尺度，黑域上下文保留；不重新构图，不增加背景、文字、骨架或其他帧。",
+  "transparent_background": true,
+  "referenced_image_paths": [
+    "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F096_far_R_single_TH_contact_input_001/local_generation_001/actual_input_snapshots/01_target_same_crop_3x.png",
+    "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F096_far_R_single_TH_contact_input_001/local_generation_001/actual_input_snapshots/02_mask_same_crop_3x.png"
+  ]
+}

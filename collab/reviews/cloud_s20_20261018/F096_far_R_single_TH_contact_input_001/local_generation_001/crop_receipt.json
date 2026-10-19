@@ -1,0 +1,43 @@
+{
+  "status": "DETERMINISTIC_APPROVED_TWO_CROPS_READY_NO_CALL_YET",
+  "approved_target_commit": "928a60d081f854149a9bdc2de945060bac77d292",
+  "source_target_sha256": "f247bc21f2f9c7bfe175d515ad144ebb25d85e26a262f31e0c19a98de7a3e98f",
+  "source_mask_sha256": "bacb9ab749b2b058dcc728e7348fcaf3f223b99d60e72c7fef8fc9bd5ec5c927",
+  "crop_half_open_xyxy": [
+    240,
+    295,
+    565,
+    535
+  ],
+  "crop_size_1x": [
+    325,
+    240
+  ],
+  "scale": 3,
+  "resampling": "NEAREST for both images; exact same source pixels and spatial scale",
+  "size_3x": [
+    975,
+    720
+  ],
+  "only_tool_inputs": [
+    {
+      "file": "01_target_same_crop_3x.png",
+      "sha256": "4927098336d3195710bcd2c9740f868aabcda5868e9747fe7f9eff506a257460"
+    },
+    {
+      "file": "02_mask_same_crop_3x.png",
+      "sha256": "b3cd5bf774981901f56d2d6c54baeccef7c769fe6c62f141166f8953f753ac08"
+    }
+  ],
+  "local_R_TH_grip": [
+    497.75429857665074,
+    213.463484982824
+  ],
+  "local_X": [
+    395.47332538835906,
+    276.2217714767679
+  ],
+  "image_tool_calls_authorized": 1,
+  "raw_outputs_authorized": 1,
+  "automatic_retries_authorized": 0
+}
