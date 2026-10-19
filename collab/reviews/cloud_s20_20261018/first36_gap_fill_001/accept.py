@@ -1,0 +1,3 @@
+from pathlib import Path
+import json,sys,hashlib,shutil
+P=Path(__file__).resolve().parent;f=int(sys.argv[1]);F=P/f'F{f:03}';s=json.loads((F/'status.json').read_text());assert s['state']=='AWAITING_AUTHOR_ACTUAL_REVIEW';src=F/s['candidate'];dest=F/f'S20_F{f:03}_accepted.png';shutil.copyfile(src,dest);s.update({'state':'AUTHOR_ACCEPTED','accepted_png':dest.name,'accepted_sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'actual_full_body_and_contact_images_viewed':True,'author_contact_review':sys.argv[2],'in_flight':0});(F/'status.json').write_text(json.dumps(s,ensure_ascii=False,indent=2)+'\n');print(f,'AUTHOR_ACCEPTED')

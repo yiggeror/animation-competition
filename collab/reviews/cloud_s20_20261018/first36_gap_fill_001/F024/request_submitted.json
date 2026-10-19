@@ -1,0 +1,56 @@
+{
+  "tool": "image_gen.imagegen",
+  "args": {
+    "prompt": "Finish one single F024 family-animation frame. Both characters are fully clothed: grandmother in blue floral shirt and dark trousers; child in yellow polka-dot dress. Image1 is the ONLY complete new opaque pose target. Its previous low holding hand is already removed and its new complete five-finger hand, wrist and forearm are correctly posed. Image2 is the exact same-view enlarged crop of image1; image3 contains only grandmother identity and internal color/material crops; image4 is the white-editable/black-protected mask. Keep the image1 canvas and pixel positions exactly. Do not reframe, reposition, resize, or redraw protected figures.\nF024: All five fingers have just opened and left BOTH lower rods. The palm and wrist have begun to move downward and right; retain a clear visible air gap between every finger/palm and each rod end.\nThe child's complete figure and BOTH gripping hands must remain exactly as image1. Child right hand holds only the turtle-head rod; child left hand holds only the turtle-shell rod. The original rigid rods and their separate rear ends stay on their existing straight axes. Their newly revealed ends must have air between them and grandmother's lower hand. Grandmother's high bracelet hand, entire upper arm gesture, both upper rods, head, torso, clothing and feet remain unchanged. Only her lower five-finger hand and connected forearm change. The hidden elbow and upper arm stay naturally behind the shirt, never drawn through it.\nKeep the complete arm, wrist and hand volume from the new target. Draw one thumb and four anatomically convincing fingers with natural joints and palm thickness. Finish the reference shapes in the same natural hand-drawn animation style, neutral colors, no scene lighting baked into the character. Output exactly1672 by941 RGBA with transparent background: two clothed people and four rods, only this moment. No text, scene, puppets, skeleton guides, extra limbs, ghost poses or additional frames. Black mask pixels must retain their source RGBA.",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/first36_gap_fill_001/F024/inputs/01_unique_complete_opaque_target.png",
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/first36_gap_fill_001/F024/inputs/02_exact_release_crop_4x.png",
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/first36_gap_fill_001/F024/inputs/03_grandma_head_internal_materials_only.png",
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/first36_gap_fill_001/F024/inputs/04_edit_white.png"
+    ]
+  },
+  "submitted_inputs": [
+    {
+      "order": 1,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/first36_gap_fill_001/F024/inputs/01_unique_complete_opaque_target.png",
+      "sha256": "df9ade7ca0ab8b15a1a231c01c3c5cccfd52225293a7eb1582efc1189b42d822",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "order": 2,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/first36_gap_fill_001/F024/inputs/02_exact_release_crop_4x.png",
+      "sha256": "0f1c7b6a9e5b89160b242ad877d71d1adf7763a1d10cf6f2053c288e140d8407",
+      "size": [
+        1380,
+        660
+      ]
+    },
+    {
+      "order": 3,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/first36_gap_fill_001/F024/inputs/03_grandma_head_internal_materials_only.png",
+      "sha256": "babb86fc33396e508e1cbca5f595fbbb65df29abe969720e7221cde3c86a4e88",
+      "size": [
+        900,
+        600
+      ]
+    },
+    {
+      "order": 4,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/first36_gap_fill_001/F024/inputs/04_edit_white.png",
+      "sha256": "d44acf15750f99a5ba98b9615591f74e4cebe0f0bac82bfae254d2c262a01180",
+      "size": [
+        1672,
+        941
+      ]
+    }
+  ],
+  "frame": 24,
+  "attempt_this_state": 1,
+  "cumulative_request_number": 13,
+  "authorization": "Astra locked008/020/032; continuously fill012/015/018 then022/024/027/030 with actual self-review;004 exclusively native Astra, cloud004 calls0",
+  "submitted_utc": "2026-10-19T05:12:34.081422+00:00"
+}

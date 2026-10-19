@@ -1,0 +1,43 @@
+{
+  "state": "AUTHOR_ACCEPTED",
+  "frame": 18,
+  "attempts_started": 1,
+  "in_flight": 0,
+  "new_raws": 1,
+  "automatic_retry": false,
+  "actual_size": [
+    1672,
+    941
+  ],
+  "raw_path": "S20_F018_attempt001_raw_1672x941.png",
+  "raw_sha256": "fe4a7ced76c12bf5d8401aafc00c9f7c4623e0fe2c77889aad87e958fb9a3893",
+  "original_tool_path": "/workspace/generated_images/exec-a1f3014a-0e1f-407b-a008-f011a62e64fa.png",
+  "same_raw_rightmost_transparent_column_only": false,
+  "original_columns_unchanged": true,
+  "candidate": "S20_F018_candidate.png",
+  "candidate_sha256": "f6065d5caf3a1c622af852d21f694d87c66641f42a3d3eb17a744b10ab69d4ad",
+  "black_domain_exact": true,
+  "source_rods_and_complete_lower_legs_returned_without_transform": true,
+  "raw_near_R_shoulder_departure_observed": true,
+  "zero_transform_locked020_upper_body_return": {
+    "source": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F020/S20_F020_accepted.png",
+    "sha256": "de378cd06028313388cd955e8feb56aef684fd63f5a9f7019fa148aad7885b12",
+    "translation": [
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1
+    ],
+    "scope": "complete anatomy and silhouette; stable receiver hold"
+  },
+  "waist_underlap_same020_actual_pixels": true,
+  "accepted_png": "S20_F018_accepted.png",
+  "accepted_sha256": "f6065d5caf3a1c622af852d21f694d87c66641f42a3d3eb17a744b10ab69d4ad",
+  "actual_full_body_and_contact_images_viewed": true,
+  "author_contact_review": "稳定接收态：020真实全部骨相/头身/双握/轮廓零变形复用，018原件肩位失败明确弃用，仅保留新原件裙内衣褶局部；无腰缘裂缝。",
+  "actual018_raw_retained_part": "interior skirt folds only, soft original-pixel composite, mask art/actual018_interior_cloth_return_mask.png",
+  "no_raw018_anatomy_pass_claim": true,
+  "actual_final_revision_viewed": true
+}
