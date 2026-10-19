@@ -1,0 +1,62 @@
+{
+  "status": "SOLE_F112_REQUEST_SEALED_BEFORE_SUBMISSION",
+  "approved_input_commit": "361a1ce2a2839012743321c5127b404206616b2e",
+  "authorization_source_thread_id": "01a15367-797a-7445-9575-b64350da70d8",
+  "approved_target_sha256": "3c3e6b9fb808a8e0a3c48abc2f810ccaf7e5e614dd0a25e6980e6af05d4cf9c0",
+  "source104_commit": "0c22667517ab830becdd8e66e8dab0b7348323b1",
+  "image_tool_submissions_authorized": 1,
+  "maximum_raw_outputs": 1,
+  "automatic_retries_authorized": 0,
+  "submitted": false,
+  "sealed_utc": "2026-10-19T23:36:25.535172+00:00",
+  "prepared_prompt_sha256": "6dd09c31d4ce539f6848a9cc56e0bf42494c32afe079a42d9a13b68a61aec63e",
+  "added_text_exact": "本次原生重绘补充：这是卸力后的被动余摆，不是再次主动拉扯，不提前翻肚。完整肩肘腕与领颈自然原生重绘，不照抄施工折线；尤其保持R单夹T_H、与X的轴向分离，T_S留在R拇指/卷指夹口外。",
+  "only_prompt_change_is_native_redraw_append": true,
+  "prompt_sha256": "bd84e7509ab0583198c65a649db43ace60c3d56701ba77165620279335866295",
+  "tool_args_sha256": "b825451bc8123ffdf81e374bce83e05e0209d7b4a6855afbe9bfbc9053c2455b",
+  "inputs": [
+    {
+      "order": 1,
+      "original_file": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F112_passive_residual_input_001/inputs/01_unique_complete_F112_target_REVIEW_ONLY.png",
+      "snapshot_file": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F112_passive_residual_input_001/generation_001/actual_input_snapshots/01_unique_complete_F112_target_REVIEW_ONLY.png",
+      "sha256": "3c3e6b9fb808a8e0a3c48abc2f810ccaf7e5e614dd0a25e6980e6af05d4cf9c0",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "order": 2,
+      "original_file": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F112_passive_residual_input_001/inputs/02_same_pose_dual_clamps_X_3x.png",
+      "snapshot_file": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F112_passive_residual_input_001/generation_001/actual_input_snapshots/02_same_pose_dual_clamps_X_3x.png",
+      "sha256": "fe3cd7e152ccb00db01f8d48c4e12ad377883b814bdcbfa3badef329210497d2",
+      "size": [
+        1740,
+        840
+      ]
+    },
+    {
+      "order": 3,
+      "original_file": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F112_passive_residual_input_001/inputs/03_104_identity_head_clothes_shoes_patches_only.png",
+      "snapshot_file": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F112_passive_residual_input_001/generation_001/actual_input_snapshots/03_104_identity_head_clothes_shoes_patches_only.png",
+      "sha256": "983c0e51c1344070160c13c282e871b72123c72e99c8d9ceaec26706e1225c7e",
+      "size": [
+        1080,
+        640
+      ]
+    },
+    {
+      "order": 4,
+      "original_file": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F112_passive_residual_input_001/inputs/04_complete_upper_whole_skirt_white_full_legs_black_mask.png",
+      "snapshot_file": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F112_passive_residual_input_001/generation_001/actual_input_snapshots/04_complete_upper_whole_skirt_white_full_legs_black_mask.png",
+      "sha256": "7b28b6d18a4f15aa5eb2fea06d63589e1a381fdd53bdae34906229f33dd07c52",
+      "size": [
+        1672,
+        941
+      ]
+    }
+  ],
+  "adopted": false,
+  "exposure_frozen": false,
+  "later_states_authorized": false
+}
