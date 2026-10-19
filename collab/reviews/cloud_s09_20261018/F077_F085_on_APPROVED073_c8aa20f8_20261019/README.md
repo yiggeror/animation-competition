@@ -1,0 +1,7 @@
+S09 approved073 body + officialc8aa20f8 whole-head077/085 integration, ZERO generation/git.9source_head_pack files unchanged; compose_heads.py was run directly on approved073f43a42aa. Candidate077=f46e7b15…,085=170b1e81…. Actual gray/dark collar/shoulder and true-alpha full images viewed: no new visible seam. Outside each official head mask, below540, hands/torch ROI and all actual emission+beam materialRGBA changes are0. Transparent-air hiddenRGB preview patches are not scene backgrounds.
+
+Actual exposure063x6→069x4→073x4→077x8→085x11:33frames/24fps/1.375s/noaudio, gray and dark MP4. Native1672x941 states stay at(0,0), no scaling/crop;1672x972video adds31pixels only for QA captions. Every33frames in each MP4 was decoded and correctly classified. Actual transition5/6,9/10,13/14,21/22 and final32 sheets and collar/hands/torch closeups viewed. FirstON startsF073/index10.
+
+Minimal archive retains5native state files(3sources+2candidates),9official head-pack files,MP4s and actual transition/closeup evidence; repeated full exposure/decode PNGs removed after verification. Reproduction script recreates and removes those temporary PNGs.063→069 garment/sleeve-volume change remains visibly present in the locked actual states and goes to Astra timing judgment, with no static repair. Turn bridges remain a separate task. This is not S09full-scene-ready acceptance.
+
+Root复核：077/085完整图、三态领肩、实际33f换张及手筒近图已实看。9个源文件与c8aa20f8逐字节一致，头mask外及y540以下与已过073逐RGBA差0。063→069衣袖体积变化如实交Astra节奏裁定；060/062转向桥另交参考门，原78°单跳问题未据此关闭。
