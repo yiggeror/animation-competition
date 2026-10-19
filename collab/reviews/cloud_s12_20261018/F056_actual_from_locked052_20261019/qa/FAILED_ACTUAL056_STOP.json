@@ -1,0 +1,38 @@
+{
+  "status": "FAILED_ACTUAL056_RAW_STOP_DEPENDENT_STATES_NO_RETRY",
+  "raw_SHA256": "16e2e498c86d2c4d4d84a013cd0a1ccdac957dc0516e4f19003ade82a41d8ba9",
+  "raw_commit": "896182319ba4fb25a0328352fff8d6fcf63d74dc",
+  "real_file_visually_inspected": [
+    "originals/F056_call01_raw.png",
+    "diagnostics/raw_wrist_and_hand_actual2x.png"
+  ],
+  "confirmed_major_error": "Opaque jade bracelet wrongly generated on the near RIGHT wrist, although source052 bare wrist and explicit no-jade requirement. This is actual artwork, not transparent glow/fringe.",
+  "opaque_wrong_jade_alpha128_pixels": 9886,
+  "wrong_jade_raw_bbox": [
+    1062,
+    558,
+    1169,
+    726
+  ],
+  "additional_hand_issue": "Returned hand exposes dorsal thumb nail/back of hand and folds the lower digits across the thumb; it is not the reviewed continuous oblique volar thenar/thumb-under-support view from052. Thumb rolling contact and true index rear/front shaft relation have NOT been established in an actual Canvas. Do not assume that removing green alone passes.",
+  "new_imagegen_calls056": 1,
+  "new_actual056_Canvas_renders": 0,
+  "cumulative_S12_imagegen_calls": 15,
+  "no_auto_retry": true,
+  "last_good_actual_state": {
+    "frame": 52,
+    "commit": "7ce0dc878db95dccbf4a9b791f6f0a1edc8f50b7",
+    "native_SHA256": "5a9df2ee672bee4be4f660217e6546e0771656c26c3bd0c6882d657328739b5c"
+  },
+  "minimum_rescue_raw_scope": [
+    1000,
+    520,
+    1530,
+    805
+  ],
+  "rescue_scope_meaning": "Distal forearm blending + whole bare wrist/palm/all5digits. Preserve good shoulder/sleeve/elbow/main forearm as potential salvage, do not repaint whole arm/body. Restore true near RIGHT no-jade wrist, continuous thenar/web/MCP/IP thumb-pad underside support, natural complete index MCP/PIP/DIP wrapping, other3air. Cannot fix by repainting jade skin-colour or pulling a fingertip.",
+  "failed_raw_is_not_continuity_mother": true,
+  "repair_or_new_call_permission": "NOT_AUTHORIZED; current single056 call budget spent. Scope diagnostic only, no new imagegen request executed.",
+  "dependent060064": "STOP_ACTUAL_REBINDING_AND_GENERATION; retain prior052-based NON_EXECUTABLE previews only. No actual056 mother exists.",
+  "body_rise_crane_lift": "NOT_OPEN"
+}
