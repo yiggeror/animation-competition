@@ -1,0 +1,3 @@
+# F074 local complete pants: call01 raw first
+
+Astra approved9da9034 actual inputs/hard mask and authorized exactly1 complete semantic pants drawing +1 actual074 Canvas. Sole current074 mother native3203a6f31b2e86a3939644f7ceb2197a93de802f45b30d70b3a347f24718abd1. One untouched full raw returned and visually opened; complete actual prompt/three inputSHA/request retained. Returned shoe/ankle pixels out of scope and will NOT be adopted. Whole-pants similarity/protected original hem+feet checks and real Canvas pending. No local joint/shin deformation or reference remap adoption. Next posture calls0.
