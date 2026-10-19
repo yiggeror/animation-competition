@@ -1,0 +1,37 @@
+{
+  "status": "REVIEWABLE_TECHNICAL_INPUTS_PENDING_ASTRA_FREEZE_NOT_NATIVE_DRAWING_PASS",
+  "generation_calls": 0,
+  "scene_render_calls": 0,
+  "reviewers": [
+    "root actual-image inspection",
+    "existing authorized cloud6.1sol /root/s09_motion_audit_61sol read-only actual-image inspection"
+  ],
+  "actually_inspected": [
+    "THREE_COMPLETE_TECHNICAL_TARGETS.png",
+    "LOCKED066_ACTUAL_REFERENCE_RGBA.png",
+    "F072/BOTH_ARMS_REAL_PROPS_CONTACTS_1TO1.png",
+    "F078/BOTH_ARMS_REAL_PROPS_CONTACTS_1TO1.png",
+    "F084/BOTH_ARMS_REAL_PROPS_CONTACTS_1TO1.png",
+    "F078/TRUE_PUPPETS_FOUR_RODS_CLOTH_OCCLUSION_1TO1.png",
+    "F084/NEAR_FRONT_EDGE_1TO1.png",
+    "F084/ACTUAL_EDGE_AND_TWO_PAD_TARGETS_2X.png"
+  ],
+  "root_findings": [
+    "072 and078 exact066 near arm remains on cloth support",
+    "far hand descends with the same cloth material point;078 lip occludes actual crane back",
+    "084 true front-edge target is measured from actual066 cloth, not trousers, turtle or a point in middle of sheet",
+    "original rigid puppets/four rods do not deform; finite cloth occlusion changes only visibility",
+    "head/gaze/legs and lower support remain fixed",
+    "technical proxies, far-root seam and exposed blouse must all be redrawn natively"
+  ],
+  "existing_cloud_verbatim": "当前技术目标可读，未见必须改锚点的硬接触矛盾：078确有布唇遮鹤背，084夹点位于真实前沿约430/959，偶杆未见变形。远袖根尖折、084腕截面及浅蓝衣身占位仍须完整原生重画；前沿已定位不等于夹握或解剖通过。未修改、生成或渲染。",
+  "not_certified": [
+    "final native soft-fold appearance",
+    "complete sleeve/elbow/wrist/palm anatomy",
+    "actual native thumb/index pressure contact",
+    "3D bone lengths",
+    "scene output or switch continuity",
+    "Astra approval/freeze"
+  ],
+  "remaining": "Astra reviews/finalizes these inputs before any new image generation; no later schedule invented"
+}
