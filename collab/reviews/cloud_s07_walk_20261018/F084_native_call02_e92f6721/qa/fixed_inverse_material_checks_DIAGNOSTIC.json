@@ -1,0 +1,132 @@
+{
+  "fixed_inverse_only": true,
+  "arm_registration": {
+    "near": {
+      "skin_source_boundary_pixels": 786,
+      "skin_raw_boundary_pixels": 750,
+      "symmetric_boundary_distance_native_mean": 0.16944734754441595,
+      "median": 0.0,
+      "p95": 1.0,
+      "max": 2.23606797749979,
+      "source_bbox": [
+        147,
+        70,
+        249,
+        327
+      ],
+      "raw_bbox": [
+        147,
+        70,
+        248,
+        327
+      ]
+    },
+    "far": {
+      "skin_source_boundary_pixels": 933,
+      "skin_raw_boundary_pixels": 794,
+      "symmetric_boundary_distance_native_mean": 1.6252141290284379,
+      "median": 0.0,
+      "p95": 9.219544457292887,
+      "max": 14.142135623730951,
+      "source_bbox": [
+        372,
+        76,
+        441,
+        318
+      ],
+      "raw_bbox": [
+        383,
+        76,
+        441,
+        317
+      ]
+    }
+  },
+  "pants_core_cross_sections_local": {
+    "280": [
+      [
+        213,
+        317
+      ]
+    ],
+    "320": [
+      [
+        219,
+        316
+      ]
+    ],
+    "360": [
+      [
+        225,
+        313
+      ]
+    ],
+    "400": [
+      [
+        232,
+        312
+      ]
+    ],
+    "420": [
+      [
+        231,
+        311
+      ]
+    ],
+    "440": [
+      [
+        229,
+        309
+      ]
+    ],
+    "460": [
+      [
+        227,
+        308
+      ]
+    ],
+    "480": [
+      [
+        225,
+        307
+      ]
+    ],
+    "500": [
+      [
+        224,
+        306
+      ]
+    ],
+    "520": [
+      [
+        224,
+        305
+      ]
+    ],
+    "560": [
+      [
+        225,
+        303
+      ]
+    ],
+    "600": [
+      [
+        225,
+        300
+      ]
+    ],
+    "640": [
+      [
+        227,
+        304
+      ]
+    ],
+    "660": [
+      [
+        225,
+        296
+      ]
+    ]
+  },
+  "note": "Navy core is a diagnostic color selection only. Soft joint lines are not measured anatomical points or frozen hard joints. No output adopted."
+}

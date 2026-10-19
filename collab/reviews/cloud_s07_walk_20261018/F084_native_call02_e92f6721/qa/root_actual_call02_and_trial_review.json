@@ -1,0 +1,30 @@
+{
+  "status": "ONE_NATIVE_CALL02_AND_COMPLETE_VOLUME_TRIAL_REVIEWED_PENDING_ASTRA",
+  "actual_viewed": [
+    "qa/F084_frozen_A_vs_call02_known_inverse_gray.png",
+    "qa/F084_frozen_A_vs_call02_known_inverse_dark.png",
+    "qa/F084_call02_soft_joint_comparison_DIAGNOSTIC.png",
+    "qa/F084_call02_source_layered_full_gray_TRIAL.png",
+    "qa/F084_call02_source_layered_crop_dark_TRIAL.png",
+    "qa/F084_call02_actual_connections_gray_TRIAL.png",
+    "qa/F084_call02_actual_connections_dark_TRIAL.png"
+  ],
+  "root_findings": [
+    "Actual raw respects the cropped shoulder-to-feet framing. Known whole inverse only registers visible blouse/arm/sole anchors before source-layer compositing; no adaptive fit was used.",
+    "Complete waist/pelvis and both broad native trouser volumes replace the empty domain. Near anatomical right shin is in front of the genuine raised far shoe, with no shoe-shaped cutout through the new shin.",
+    "Whole far thigh passes image-right and flexes back into the fixed upper shoe. New near leg supports the lower fixed shoe. Both cuffs meet actual ankle/shoe material after restoration of the five unchanged source layers.",
+    "All five frozen source layers remain byte-identical. No thin bridge, segmented limb scaling, shoe relocation, new code anatomy or RGB/alpha repair was used.",
+    "Palette mean differences to both locked mothers are within four RGB levels per channel; original output colors are retained. This is a material mean gate, not an anatomical acceptance test."
+  ],
+  "independent_61sol_raw_review_note": "The reviewer actually viewed both fixed-inverse gray/dark comparisons and judged the whole waist/hip, front support leg and far passing/flexed leg suitable to enter source-protected trial composition. The higher soft-knee deviation alone is not grounds for automatic rejection. Precise source anchors, palette and actual restored cuffs/sleeves still require root review; the action amplitude remains Astra's decision.",
+  "remaining_Astra_review": [
+    "Far knee is visually about 50 native pixels above the soft construction guide and noticeably flexed; judge walking amplitude and thigh/calf volume from the actual image, without treating the soft guide as a measured hard joint.",
+    "Review the one-state candidate at full and connection crops before locking or authorizing later exposures/states. No F090 preparation or generation is opened."
+  ],
+  "request_count_this_corrected_input": 1,
+  "original_count_this_corrected_input": 1,
+  "F084_total_requests": 2,
+  "F084_total_originals": 2,
+  "automatic_retry": false,
+  "locked_or_exposure_accepted": false
+}

@@ -1,0 +1,80 @@
+{
+  "method": "Known whole inverse only. Skin checks use the actual visible A composite, excluding hidden far-arm material. Sole checks compare only actual visible material; no output fitting or shoe movement.",
+  "anchors": {
+    "near": {
+      "source_boundary_pixels": 789,
+      "raw_boundary_pixels": 750,
+      "symmetric_distance_native_mean": 0.1700359580185809,
+      "median": 0.0,
+      "p95": 1.0,
+      "max": 2.23606797749979
+    },
+    "far": {
+      "source_boundary_pixels": 914,
+      "raw_boundary_pixels": 794,
+      "symmetric_distance_native_mean": 0.5554849153156217,
+      "median": 0.0,
+      "p95": 2.0,
+      "max": 9.486832980505138
+    },
+    "body_blue_visible_contour": {
+      "source_boundary_pixels": 3989,
+      "raw_boundary_pixels": 4325,
+      "symmetric_distance_native_mean": 0.33620662255355965,
+      "median": 0.0,
+      "p95": 1.0,
+      "max": 6.708203932499369
+    }
+  },
+  "feet": {
+    "near": {
+      "source_bbox_halfopen": [
+        201,
+        691,
+        373,
+        741
+      ],
+      "raw_bbox_halfopen": [
+        201,
+        691,
+        373,
+        741
+      ],
+      "source_material_bottom": 740,
+      "raw_material_bottom": 740,
+      "contour": {
+        "source_boundary_pixels": 366,
+        "raw_boundary_pixels": 365,
+        "symmetric_distance_native_mean": 0.1354309165526676,
+        "median": 0.0,
+        "p95": 1.0,
+        "max": 1.0
+      }
+    },
+    "far_visible_right": {
+      "source_bbox_halfopen": [
+        311,
+        660,
+        373,
+        677
+      ],
+      "raw_bbox_halfopen": [
+        311,
+        660,
+        373,
+        676
+      ],
+      "source_material_bottom": 676,
+      "raw_material_bottom": 675,
+      "contour": {
+        "source_boundary_pixels": 139,
+        "raw_boundary_pixels": 141,
+        "symmetric_distance_native_mean": 0.5315300968740935,
+        "median": 1.0,
+        "p95": 1.0,
+        "max": 2.0
+      }
+    }
+  },
+  "production_adopted": false
+}

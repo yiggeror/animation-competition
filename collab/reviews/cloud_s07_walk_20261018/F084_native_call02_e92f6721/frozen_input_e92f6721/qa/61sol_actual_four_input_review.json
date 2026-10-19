@@ -1,0 +1,204 @@
+{
+  "status": "FOUR_CORRECTED_NEUTRAL084_INPUTS_ACTUAL_PREPARER_REVIEW_COMPLETE_PENDING_ROOT_ASTRA_NO_CALL",
+  "scope": "Only corrected084 input gate; no real084 output or next state accepted",
+  "actual_viewed": [
+    "qa/four_native_references_gray.png",
+    "qa/four_native_references_dark.png",
+    "reference_native/C_wide_complete_leg_volume_TECHNICAL_NOT_ART_520x780.png (final rear shoe behind near shin refreshed)",
+    "reference_native/D_actual057_062_fabric_ink_palette_NO_FIGURE_520x780.png",
+    "inputs_1024x1536/A_whole_canvas_128over65_PREPARED.png",
+    "inputs_1024x1536/B_whole_canvas_128over65_PREPARED.png",
+    "inputs_1024x1536/C_whole_canvas_128over65_PREPARED.png",
+    "inputs_1024x1536/D_whole_canvas_128over65_PREPARED.png"
+  ],
+  "visual_findings": [
+    "A在肩/衫到足的2:3固定裁窗只见冻结真上身、双臂与上下两真鞋；腰臀两腿区域透明，不出现079旧后腿/失败084轮廓，无头或全人fit。",
+    "B是明确中性矩形减实际可见保护域再加原小袖根窗口。大白区不沿旧裤边；完整未来近胫走廊允许遮后抬鞋，未把完整后鞋alpha锁成前裤穿孔。B只是编辑范围参考，不伪称原生工具hardmask。",
+    "C具有宽腰臀、两个完整大腿、膝体积、小腿体积和软H/K/A，远左膝向右抬过、近右承重腿在前；真实后鞋先叠在图示近胫后，未把后鞋展示层顶穿前腿。C标NOT ART/非骨测，不能直接采用或当终稿体量通过。",
+    "D只含锁057/062四个内部裤料原RGBA矩形，能见navy平色/暗折面/细墨线，没有原人物或肢体外轮廓。Native样片1:1，无局部拉伸。",
+    "最终四输入均整幅同128/65变1024×1536，唯一逆映射65/128加1000,280。真native源五层不改；近下/远上真实鞋位置和鞋底/跨度符合冻结锚，不以恢复真鞋掩盖未来错姿。"
+  ],
+  "finite_checks": {
+    "frozen_layers": [
+      {
+        "name": "far_shoe_ankle_SWING",
+        "sha256": "c0385f95a38ebbf2d2236d88c4e44c0e003665dec0f1b0412f47f6a9ccb8411a",
+        "frozen_snapshot_byte_identical": true
+      },
+      {
+        "name": "far_complete_arm_jade_hand",
+        "sha256": "7aabbc6d293d7cf5c1679722ad46a2301d1f74e6c9bac4885415a7741fad1860",
+        "frozen_snapshot_byte_identical": true
+      },
+      {
+        "name": "body_head_blouse",
+        "sha256": "522e32b9aef5e520da786f5e5dee5f1b1f0cae25d8eb0e248a4049f48aef4e4a",
+        "frozen_snapshot_byte_identical": true
+      },
+      {
+        "name": "near_complete_arm",
+        "sha256": "7279d8bf087eea900d99dce4d51e0135727a84e8b6ced2435be71678f83fb436",
+        "frozen_snapshot_byte_identical": true
+      },
+      {
+        "name": "near_shoe_ankle_SUPPORT_FIXED",
+        "sha256": "57518102bfef2d81fd98017bd445e8ae7918bdb1dd60093657f82fc576a6cc7c",
+        "frozen_snapshot_byte_identical": true
+      }
+    ],
+    "native_A_RGBA_diff_vs_independent_only_five_layer_replay": 0,
+    "old079_or_old084_pants_layer_pixels_adopted_in_A": 0,
+    "neutral_white_pixels": 178322,
+    "guard_intersections": {
+      "actual_body_except_sleeves": 0,
+      "complete_visible_arms_except_sleeves": 0,
+      "near_real_support_foot": 0,
+      "far_real_visible_foot_except_future_front_occlusion": 0
+    },
+    "hard_guard_alpha0_pixels": 0,
+    "feet": {
+      "near_shoe_ankle_SUPPORT_FIXED": {
+        "native_sole_alpha128": 1022,
+        "crop_local_sole_alpha128": 742,
+        "crop_local_xspan_alpha128": [
+          199,
+          374
+        ],
+        "layer_sha256": "57518102bfef2d81fd98017bd445e8ae7918bdb1dd60093657f82fc576a6cc7c",
+        "changed_from_frozen_RGBA_pixels": 0
+      },
+      "far_shoe_ankle_SWING": {
+        "native_sole_alpha128": 959,
+        "crop_local_sole_alpha128": 679,
+        "crop_local_xspan_alpha128": [
+          204,
+          373
+        ],
+        "layer_sha256": "c0385f95a38ebbf2d2236d88c4e44c0e003665dec0f1b0412f47f6a9ccb8411a",
+        "changed_from_frozen_RGBA_pixels": 0
+      }
+    },
+    "whole_uniform_forward": 1.9692307692307693,
+    "unique_inverse": 0.5078125,
+    "cropoffset": [
+      1000,
+      280
+    ],
+    "request_input_count": 4,
+    "request_actual_sizes": {
+      "A_whole_canvas_128over65_PREPARED.png": [
+        1024,
+        1536
+      ],
+      "B_whole_canvas_128over65_PREPARED.png": [
+        1024,
+        1536
+      ],
+      "C_whole_canvas_128over65_PREPARED.png": [
+        1024,
+        1536
+      ],
+      "D_whole_canvas_128over65_PREPARED.png": [
+        1024,
+        1536
+      ]
+    },
+    "D_sample_source_RGBA_checks": [
+      {
+        "source": "F057_palette_ARCHIVE_NOT_REQUEST.png",
+        "source_box": [
+          764,
+          668,
+          812,
+          732
+        ],
+        "native_D_box": [
+          35,
+          110,
+          83,
+          174
+        ],
+        "RGBA_difference_pixels": 0
+      },
+      {
+        "source": "F057_palette_ARCHIVE_NOT_REQUEST.png",
+        "source_box": [
+          764,
+          768,
+          812,
+          832
+        ],
+        "native_D_box": [
+          275,
+          110,
+          323,
+          174
+        ],
+        "RGBA_difference_pixels": 0
+      },
+      {
+        "source": "F062_palette_ARCHIVE_NOT_REQUEST.png",
+        "source_box": [
+          884,
+          648,
+          932,
+          712
+        ],
+        "native_D_box": [
+          35,
+          400,
+          83,
+          464
+        ],
+        "RGBA_difference_pixels": 0
+      },
+      {
+        "source": "F062_palette_ARCHIVE_NOT_REQUEST.png",
+        "source_box": [
+          884,
+          768,
+          932,
+          832
+        ],
+        "native_D_box": [
+          275,
+          400,
+          323,
+          464
+        ],
+        "RGBA_difference_pixels": 0
+      }
+    ],
+    "prompt_two_paragraphs_exact_as_parent": true,
+    "prompt_sha256": "669a5e92ef4f153145925733ac1831425442f062810a283b8f9ca6a30f233ed2",
+    "isolated_sources_plus_prepare_replay": {
+      "inputs_1024x1536/A_whole_canvas_128over65_PREPARED.png": {
+        "sha256": "fd5e4edcb6cdddf9407ac19f1f77ae17fcd264077b93f85fad10e55ba72e71d4",
+        "isolated_same_bytes": true
+      },
+      "inputs_1024x1536/B_whole_canvas_128over65_PREPARED.png": {
+        "sha256": "b942a52d50e40d27360ca4d793997772782f808325e8ce6f77db98d9c7b28984",
+        "isolated_same_bytes": true
+      },
+      "inputs_1024x1536/C_whole_canvas_128over65_PREPARED.png": {
+        "sha256": "d4d6625bd7eef346e17dd6d9e06b64ba5a68d61167c808172724e6a0e797d391",
+        "isolated_same_bytes": true
+      },
+      "inputs_1024x1536/D_whole_canvas_128over65_PREPARED.png": {
+        "sha256": "106a6c7278db722da66284b58e3f875d9348014b7dc26f4a3c76c5058949e526",
+        "isolated_same_bytes": true
+      }
+    },
+    "isolated_directory": "/tmp/s07_F084_neutral4_replay_cjp14ufb/packet",
+    "source_manifest_sha256": "e6a254d91b8ce4da6f499e68816d8638ee0f3edce8cc07b990c25fe9fa7795e6"
+  },
+  "remaining_clear_input_structure_blockers": [],
+  "limits": [
+    "只交四输入快审；root/Astra须决定是否准唯一原生，不自动调用。",
+    "C是授权手工技术体积示意，不是代码人物终稿，不以软projection/数字证明自然腿长或骨测。",
+    "真实新原生整裤体量/承重/两鞋锚必须整体合格才可固定源保护重组，不能强恢复原鞋后用窄桥/拉肢掩盖错姿。",
+    "没有旧longprompt/母全身/失败RAW附图；source完整palette仅档案，不在请求。",
+    "未生图、未提交/推送，090未准备。"
+  ],
+  "new_calls": 0
+}
