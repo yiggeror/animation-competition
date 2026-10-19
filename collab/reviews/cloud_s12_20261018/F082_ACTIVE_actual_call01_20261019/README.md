@@ -13,3 +13,7 @@ FINAL074 static supports carried in locked078 remain at original native coordina
 Actual true props use the approved082 rigid image; browser premultiplication creates small straightRGBA readback differences, measured inqa, not a geometry change or falsely claimed byte equality. Actual ground-shadow and box-front cached layers are byte-identical locked078 (also original074). Existing renderPaint camera/light at actual82/24, current box/cloth unloading context, full actual1920×1080 captured exactly once; cached layer/crop readback adds0renders. No requestfailed/pageerror; complete network event log retained. Own review scene only; no shared implementation/docs/ready/EDL/audio changes.
 
 Full matrix, frozen mask,2px transition mask, actual raw front-digit polygons, registration/fixed-empty proof and real render event log retained. Await Astra direct structure review of this sole raw and existing actual result. Later activity must rebind a qualified actual082; none authorized now.
+
+## 已退役为历史诊断，不作连续母稿
+
+Astra终锁30b8223b的最终082（相邻F082_COMPLETE_PANTS_JOIN_actual_call01_20261019，native ce1ea797…e7fa6）；本版本不再用于086或后态，原件和历史实际图保留。

@@ -1,0 +1,87 @@
+{
+  "status": "F086_REFERENCE_SOURCE_CHAIN_NOT_NEW_DRAWING",
+  "sole_final082": {
+    "commit": "30b8223b6292aacbb6011d1eb871f5cb170a4876",
+    "path": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F082_COMPLETE_PANTS_JOIN_actual_call01_20261019/candidate/F082.png",
+    "SHA256": "ce1ea797ed8ae89212e436905da207447c6ec8fd6df6a1f2d7671c43ff4e7fa6",
+    "actual_Canvas_SHA256": "5051b6e5994f46127cd235a203efc5f899cdeb5c237af28604bc9b9881e7f97f"
+  },
+  "actual_two_model_inputs_for_gate": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_TARGET_FROM_FINAL082_20261019/inputs/01_F086_COMPLETE_VISIBLE_RISE_FROM_FINAL082.png",
+      "SHA256": "9d158167a1862cb478ce073b0a3ce4ab4644bb4b64ec346ab9e65cce35f6e6f3",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_TARGET_FROM_FINAL082_20261019/inputs/02_SAME_F086_TRUE_RODS_CRANE_BOX_GROUND_CONTEXT.png",
+      "SHA256": "8cfa2b9e002586baad654e98ab0b2807bcffc13063664782b5f201d751589867",
+      "size": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "exact_prompt_SHA256": "e4fea2ed79e50093f52a1900b7d99d68955d7f757db055bea295e7ed6090c48c",
+  "sources": [
+    {
+      "path": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F082_COMPLETE_PANTS_JOIN_actual_call01_20261019/candidate/F082.png",
+      "role": "sole final qualified actual082 mother; no retired082 person used",
+      "SHA256": "ce1ea797ed8ae89212e436905da207447c6ec8fd6df6a1f2d7671c43ff4e7fa6"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_COMPLETE_PANTS_JOIN_actual_call01_20261019/layers/F082_FG_true_front_fingers.png",
+      "role": "true current closed foreground grips",
+      "SHA256": "8055ac52e93d787abb9f6c5787d98863b0c25638702b66d72970d1c4dfdced16"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_COMPLETE_PANTS_JOIN_actual_call01_20261019/actual_scene/F082_code_props_actual_layer.png",
+      "role": "true current rigid rods/crane",
+      "SHA256": "5016de745e7b68668b6a696b2dac520c611d4e341673a7f2a4d2d2076d66bf87"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_COMPLETE_PANTS_JOIN_actual_call01_20261019/actual_scene/F082_native_ground_shadows_actual_layer.png",
+      "role": "unchanged actual support shadow",
+      "SHA256": "242ac036e9546967e05e23b42f418deea70923087132bbf8aa1851a2c994ede4"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_COMPLETE_PANTS_JOIN_actual_call01_20261019/actual_scene/F082_box_front_actual_layer.png",
+      "role": "unchanged actual box-front occlusion",
+      "SHA256": "4995c6a3e636f9a81a072773658da9c8607579bfc20235acfb0700ad6decbd34"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_COMPLETE_PANTS_JOIN_actual_call01_20261019/geometry/SHOE_ANKLE_AND_SURROUNDING_EMPTY_HARD_PROTECT.png",
+      "role": "actual shoes/ankles/empty hard guard",
+      "SHA256": "c84658fda10af1403b014649112f883836c1d96fa9f3d260587d785c68387827"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F074_PANTS_LOCAL_actual_call01_20261019/candidate/F074.png",
+      "role": "original true contact geometry only, not model pose/body pixels",
+      "SHA256": "2fbceafa0d533d727e6b72f0e292c63f98295ee34dd4a677a51e62785b768900"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/right_hand_lower_rod_inputs_20261019/first034_040/code_props/background_box_cloth_UNCHANGED.png",
+      "role": "static room/box context only, no old code human source",
+      "SHA256": "d66629ffef4c0b64e7fa365330ca9b88c9f4acf43c97f400645d036e3731d664"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_ACTIVE_TARGET_FIXED074_SUPPORTS_20261019/geometry/F082_COMPLETE_ACTIVE_RISE_TRUE_CONTACTS_AND_SUPPORT_DOMAIN.json",
+      "role": "current true082 prop/contact points ONLY; no old target body pixels",
+      "SHA256": "947f14a54312354a3e1d6fbba3de540956baefe18743bbe6453be250186910e5"
+    }
+  ],
+  "registration_to_scene": {
+    "scale": 0.7,
+    "origin": [
+      275,
+      112
+    ]
+  },
+  "reference_builder": "tools/build_complete086_reference.py",
+  "reference_pixels_never_production_art": true,
+  "new086_imagegen_calls": 0,
+  "new086_actual_Canvas": 0,
+  "new090_imagegen_calls": 0
+}
