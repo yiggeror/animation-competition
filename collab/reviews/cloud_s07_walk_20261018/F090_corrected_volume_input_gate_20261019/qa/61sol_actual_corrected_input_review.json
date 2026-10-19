@@ -1,0 +1,159 @@
+{
+  "status": "LIMITED_CORRECTED090_INPUT_PREPARATION_PASS_PENDING_ROOT_ASTRA",
+  "actual_viewed": [
+    {
+      "path": "qa/four_corrected_inputs_gray.png",
+      "sha256": "a629d73984bf29579620e0c9b33406b53b7aea6d9303a787dac7f5382e931037"
+    },
+    {
+      "path": "qa/four_corrected_inputs_dark.png",
+      "sha256": "afd2602478d40e35efc66db47349657d08d4e95f328e61909e18a28b1f5db336"
+    },
+    {
+      "path": "inputs_1024x1536/A_real_fixed_layers_plus_volume_NOT_ART_PREPARED.png",
+      "sha256": "b2a3756b099b9b7ba313d2f4c7254b78d902453b6cc88a09674d6e6043fe0bf9"
+    },
+    {
+      "path": "inputs_1024x1536/B_APPROVED_BYTE_IDENTICAL_PREPARED.png",
+      "sha256": "a777ac00d9cfb24ee616d9427b47b339ebd4a146f12d6420c9c8d960aabd9a8a"
+    },
+    {
+      "path": "inputs_1024x1536/C_same_A_volume_soft_anchors_NOT_ART_PREPARED.png",
+      "sha256": "09abcb4d5b9181a09dfb6e730f1b5396665317a828459b518ac05486c2e704b4"
+    },
+    {
+      "path": "inputs_1024x1536/D_APPROVED_BYTE_IDENTICAL_PREPARED.png",
+      "sha256": "fab230dea13a6a1b6d2606aedf894600e5cd7d571bb39ac84aa9e42a6b07fb60"
+    }
+  ],
+  "actual_facts": [
+    "A now visibly supplies complete approvedC waist/pelvis and broad whole thigh/knee-back/calf technical volumes directly under the fixed real blouse and into the original real shoes. It no longer asks the model to infer a step from empty trouser space.",
+    "C is the same real layers and same full technical volume with the approved soft chains/actual ankle and sole markers, not a second pose.",
+    "Near anatomicalRIGHT remains image-left/back on the unchanged support shoe. Far anatomicalLEFT has landed at image-right to take load. Actual source ankleY values remain naturally unequal while both soles stay1022native/local772.",
+    "B and D retain exactly the approved files at native and tool resolutions. B remains neutral whole-pants white minus true visible material guards; D remains only real057/062 interior fabric/ink samples.",
+    "Both A/C explicitly say NOT_ART/technical volume. These are not finished character drawings or bone measurements. All real completed trousers must still be drawn by a separately authorized native request."
+  ],
+  "verification": {
+    "approved_source_commit": "aba2cbca",
+    "five_source_layers_all_files_byte_identical": true,
+    "five_layer_originalA_RGBA_replay_changes": 0,
+    "A_native_and_tool_true_material_RGBA_changes": [
+      0,
+      0
+    ],
+    "B_D_native_and_tool_byte_identical": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "technical_volume_literal_approvedC_RGBA_changes": 0,
+    "technical_volume_inserted_only_into_empty_pixels": 53340,
+    "new_volume_uncovered_outside_white": 0,
+    "inherited_guard_intersections": {
+      "body_except_sleeves": 0,
+      "whole_visible_arms_except_sleeves": 0,
+      "near_actual_fixed_foot": 0,
+      "far_actual_visible_landed_foot_except_future_near_occlusion": 0
+    },
+    "inherited_alpha0guard": 0,
+    "crop_native": [
+      1080,
+      250,
+      1620,
+      1060
+    ],
+    "uniform_tool_mapping": "native=tool*135/256+[1080,250], entire canvas. No bodyfit, partscale or shoe moves. Original requestA actual material RGBA retained; technical additions only in its empty area.",
+    "source_and_white_bounds": {
+      "A_visible_material_inside_crop": {
+        "native_bbox_halfopen": [
+          1197,
+          250,
+          1557,
+          1024
+        ],
+        "local_bbox_halfopen": [
+          117,
+          0,
+          477,
+          774
+        ],
+        "crop_margins_L_T_R_B": [
+          117,
+          0,
+          63,
+          36
+        ]
+      },
+      "A_visible_whole_arms_and_feet": {
+        "native_bbox_halfopen": [
+          1197,
+          372,
+          1557,
+          1024
+        ],
+        "local_bbox_halfopen": [
+          117,
+          122,
+          477,
+          774
+        ],
+        "crop_margins_L_T_R_B": [
+          117,
+          122,
+          63,
+          36
+        ]
+      },
+      "B_actual_white": {
+        "native_bbox_halfopen": [
+          1120,
+          361,
+          1610,
+          1010
+        ],
+        "local_bbox_halfopen": [
+          40,
+          111,
+          530,
+          760
+        ],
+        "crop_margins_L_T_R_B": [
+          40,
+          111,
+          10,
+          50
+        ]
+      },
+      "nonbody_active_material_outside_crop_pixels": 0,
+      "white_outside_crop_pixels": 0,
+      "body_top_boundary_is_intentional_shoulder_crop_no_head": true,
+      "body_outside_crop_is_stable_head_upper_torso_not_editable": true,
+      "intentional_top_cut_is_not_a_reposition_or_fit": true
+    },
+    "new_technical_volume_bounds": {
+      "local_bbox_halfopen": [
+        140,
+        315,
+        449,
+        709
+      ],
+      "crop_margins_L_T_R_B": [
+        140,
+        315,
+        91,
+        101
+      ]
+    },
+    "isolated_four_requests_and_five_layers_byte_exact": true,
+    "replay_evidence": "qa/isolated_replay_checks.json"
+  },
+  "failed090_raw_read": false,
+  "failed_leg_or_wrong_shoe_silhouette_used": false,
+  "original084_trouser_shape_prompted": false,
+  "new_image_calls": 0,
+  "other_states_untouched": true,
+  "remaining_blockers": [],
+  "remaining_approval": "Root/Astra must review the corrected4inputs and full draft before any new request. No output anatomy/step/support or final state accepted by this input-preparation review.",
+  "draft_word_count": 262
+}
