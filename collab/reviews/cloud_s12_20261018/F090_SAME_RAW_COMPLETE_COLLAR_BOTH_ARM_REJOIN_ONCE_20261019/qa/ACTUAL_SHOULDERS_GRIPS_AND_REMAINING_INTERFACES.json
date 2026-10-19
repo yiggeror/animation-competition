@@ -1,0 +1,47 @@
+{
+  "status": "NOT_QUALIFIED_EXACT_GRIPS_COMPLETE_COLLAR_BUT_SHOULDER_UNDERARM_OWNERSHIP_GAPS",
+  "source_raw_SHA256": "b664008d0481f15df4a55c39ba26aa8ba666f8ba449903ad5c7ce1f5aa00d5e8",
+  "native_SHA256": "ac65f9820a724d13e8f63b2a262e5a780461c9b2a44b45075be4eaf71c7d18f6",
+  "actual_Canvas_SHA256": "430538687fc4b73f552a7584b50deb6ef682c3e2b1950b8dd7bea79c349595d3",
+  "new_model_calls": 0,
+  "same_source_rejoin_attempts": 1,
+  "new_whole_or_local_fits": 0,
+  "new_arm_rotation": 0,
+  "new_arm_scale": 1,
+  "exact_native_whole_arm_translations": {
+    "R": [
+      14.086744,
+      0.620598
+    ],
+    "L": [
+      -14.038403,
+      2.51983
+    ]
+  },
+  "independent_palm_finger_moves": 0,
+  "actual_Canvas": 1,
+  "new_qualified090": 0,
+  "new094_calls": 0,
+  "head_neck_RGBA_changes": 0,
+  "waist_hips_pants_support_RGBA_changes": 0,
+  "original_ground_shadow_box_front_RGBA_changes": 0,
+  "grip_error_native": {
+    "R": 5.023655666494321e-07,
+    "L": 2.516883900255769e-07
+  },
+  "viewed_actual_images": [
+    "actual_scene/F090_canvas.png",
+    "diagnostics/ACTUAL_FULL_NECK_SHOULDERS_SLEEVES_ELBOWS_WRISTS_1to1.png",
+    "diagnostics/ACTUAL_TRUE_BODY_NECK3_BOTH_GRIPS_1to1.png",
+    "diagnostics/SAME_RAW_REJOIN_NATIVE_GREY.png"
+  ],
+  "remaining_actual_interfaces": [
+    "NearRIGHT shoulder-cap back edge: visible transparent missing panel between original back shirt and shifted whole sleeve.",
+    "NearRIGHT underarm to exposed shirt: missing cloth wedges/flower-shaped alpha gaps from this sole ownership/underarm selection.",
+    "FarLEFT proximal skin/cuff top has a small clipped/jagged extraction edge; not a naturally finished sleeve interface."
+  ],
+  "root_cause_scope": "These are pixel-ownership/extraction interfaces of this sole rejoin, NOT holes in the preserved native raw. Do not regenerate the good original or claim hidden anatomical absence. No subsequent mask search or technical fill performed.",
+  "visual_contacts": "Both real closed palms now coincide with frozen true grasp targets; original 60degree crane, rods and grasp fractions unchanged. Actual front curled digits partitioned exclusively around shafts with the same whole-arm translation. Point coincidence plus visible contact does not override shoulder/underarm rejection.",
+  "technical_pixels_adopted": 0,
+  "network_errors": []
+}
