@@ -1,0 +1,263 @@
+{
+  "same_mother_partition_measurements": [
+    {
+      "frame": 0,
+      "raw_path": "/workspace/scratch/f060b5601755/s25_first_input_20261019_0605/call001/F000_raw.png",
+      "raw_sha256": "b952c08bc6d294b16cae45164e645e36ca8f3c4c8dd2e1019c465304cf771d48",
+      "samples": [
+        {
+          "region": "near_palm_interior",
+          "raw_center": [
+            800,
+            660
+          ],
+          "window": [
+            794,
+            654,
+            807,
+            667
+          ],
+          "valid_opaque_skin_pixels": 169,
+          "median_srgb": [
+            252.0,
+            201.0,
+            165.0
+          ]
+        },
+        {
+          "region": "near_forearm_interior",
+          "raw_center": [
+            640,
+            790
+          ],
+          "window": [
+            634,
+            784,
+            647,
+            797
+          ],
+          "valid_opaque_skin_pixels": 169,
+          "median_srgb": [
+            252.0,
+            201.0,
+            165.0
+          ]
+        },
+        {
+          "region": "far_grip_finger_interior",
+          "raw_center": [
+            940,
+            510
+          ],
+          "window": [
+            934,
+            504,
+            947,
+            517
+          ],
+          "valid_opaque_skin_pixels": 169,
+          "median_srgb": [
+            253.0,
+            207.0,
+            175.0
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 18,
+      "raw_path": "/workspace/scratch/f060b5601755/s25_first_input_20261019_0605/landing_group/generated/F018/raw.png",
+      "raw_sha256": "97d0d972c97d4bf596bca31d2bc473e2296739850b69987a0ca04d9615dbe918",
+      "samples": [
+        {
+          "region": "near_palm_interior",
+          "raw_center": [
+            800,
+            755
+          ],
+          "window": [
+            794,
+            749,
+            807,
+            762
+          ],
+          "valid_opaque_skin_pixels": 169,
+          "median_srgb": [
+            252.0,
+            202.0,
+            166.0
+          ],
+          "delta_rgb_vs_F000_same_region": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "region": "near_forearm_interior",
+          "raw_center": [
+            610,
+            880
+          ],
+          "window": [
+            604,
+            874,
+            617,
+            887
+          ],
+          "valid_opaque_skin_pixels": 169,
+          "median_srgb": [
+            253.0,
+            202.0,
+            167.0
+          ],
+          "delta_rgb_vs_F000_same_region": [
+            1.0,
+            1.0,
+            2.0
+          ]
+        },
+        {
+          "region": "far_grip_finger_interior",
+          "raw_center": [
+            890,
+            580
+          ],
+          "window": [
+            884,
+            574,
+            897,
+            587
+          ],
+          "valid_opaque_skin_pixels": 169,
+          "median_srgb": [
+            251.0,
+            198.0,
+            161.0
+          ],
+          "delta_rgb_vs_F000_same_region": [
+            -2.0,
+            -9.0,
+            -14.0
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 29,
+      "raw_path": "/workspace/scratch/f060b5601755/s25_first_input_20261019_0605/landing_group/generated/F029/raw.png",
+      "raw_sha256": "d5fd82a721da5936c86ebf422eabaedf4a872d41e06eb93982c07e1f1f728c83",
+      "samples": [
+        {
+          "region": "near_palm_interior",
+          "raw_center": [
+            800,
+            735
+          ],
+          "window": [
+            794,
+            729,
+            807,
+            742
+          ],
+          "valid_opaque_skin_pixels": 169,
+          "median_srgb": [
+            253.0,
+            202.0,
+            166.0
+          ],
+          "delta_rgb_vs_F000_same_region": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "region": "near_forearm_interior",
+          "raw_center": [
+            520,
+            880
+          ],
+          "window": [
+            514,
+            874,
+            527,
+            887
+          ],
+          "valid_opaque_skin_pixels": 169,
+          "median_srgb": [
+            253.0,
+            202.0,
+            167.0
+          ],
+          "delta_rgb_vs_F000_same_region": [
+            1.0,
+            1.0,
+            2.0
+          ]
+        },
+        {
+          "region": "far_grip_finger_interior",
+          "raw_center": [
+            950,
+            480
+          ],
+          "window": [
+            944,
+            474,
+            957,
+            487
+          ],
+          "valid_opaque_skin_pixels": 169,
+          "median_srgb": [
+            253.0,
+            203.0,
+            167.0
+          ],
+          "delta_rgb_vs_F000_same_region": [
+            0.0,
+            -4.0,
+            -8.0
+          ]
+        }
+      ]
+    }
+  ],
+  "final_rgba_receipts": [
+    {
+      "path": "/workspace/scratch/f060b5601755/s25_first_input_20261019_0605/landing_group/generated/F018/REGISTERED_foreground.png",
+      "sha256": "093f14b57a8aed445602c44a618ad3127cebe03add2e09a11867286d42b59095",
+      "mode": "RGBA",
+      "size": [
+        1920,
+        1080
+      ],
+      "alpha_min_max": [
+        0,
+        255
+      ],
+      "opaque_alpha_ge250_pixels": 41022,
+      "transparent_pixels": 2029968,
+      "partial_alpha_pixels": 2610,
+      "rgba_sha256": "28a82b3ed6189464258ae4ecae5f394089e413082a6e22fbfe9bf3b47ed0dfbb"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s25_first_input_20261019_0605/landing_group/repair_F029/F029_LOCAL_REPAIRED.png",
+      "sha256": "d18122d76013d3a74861d71de0f9fbfe84b8cfa1a68e00fb6256f1d382250c4f",
+      "mode": "RGBA",
+      "size": [
+        1920,
+        1080
+      ],
+      "alpha_min_max": [
+        0,
+        255
+      ],
+      "opaque_alpha_ge250_pixels": 30831,
+      "transparent_pixels": 2040920,
+      "partial_alpha_pixels": 1849,
+      "rgba_sha256": "464c7b45bce60ae23dd41d9bcd462f18f6882503c708792d42f294996092bc24"
+    }
+  ],
+  "interpretation": "Small local sRGB shading/color deviations, no regeneration. Samples measure interiors and do not authorize whole-image automatic color remap. F018 and F029 continuous-arm/hold structure passed parent pixel gate. F029 outside-mask bytes preserved."
+}
