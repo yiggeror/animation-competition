@@ -4464,3 +4464,7 @@ Shared minimal runtime: `collab/reviews/20261019_2212_s31_eastA_scene_gate`. 30 
 ### 2026-10-19 22:48 UTC — S31 东侧 A 可读性小修与 B 重复对照待实渲
 实际 f60a713c 的 A 背景包底出框，原鹤27.5px高被统一虚焦压成横条；原B前后有6个通道各1级差，未以JPEG/主观近似签零差。当前仅提交一个少帧候选，前景小满/真实龟双签/机位/14px全背景虚焦/原B不变。包地面和奶奶在已批东侧空挡内后移，完整原尺寸鹤平面从70°改20°直立，使红头颈弧露出口，CPU投影鹤高53px、包底505px入540高画面；实际暖光可读性待五PNG。
 从 collab/reviews/20261019_2212_s31_eastA_scene_gate 运行 NODE_PATH=/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules node scene_preview/render_visibility_and_b_diagnostic.cjs。只一次5张：fresh原B、同页B再画；另fresh上下文A000/A116后首次原B。保全部RGBA差异坐标/幅值/PNG SHA，原B自重复对照用于定位残差，不放宽阈值。未启动336全镜，未改EDL/ready/音轨。
+
+
+### 2026-10-19 22:52 UTC — S14 第二夹撤手六态已保全
+collab/reviews/20261019_2247_s14_second_clip_six_locked：081/084/087/090/093/095 全部实际终锁，6不同姿态/6原件/7尝试；093首输出拦截和原请求唯一重试记录均保留。090闭夹承布、093松柄、095双空手退离成立，工作凳与原布/两夹保护。仅人物段审，未写整镜ready。095最后26px孤片清理已读回终图。后续按原批准096–131提梁挂低钩段先建真实可达/支撑参考，不凭旧占位光点作接触。

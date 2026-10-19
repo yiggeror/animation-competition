@@ -1,0 +1,71 @@
+{
+  "status": "PARENT_APPROVED_COMPLETE_NATIVE_BODY_AND_SHOES_SAME_STOOL",
+  "at_utc": "2026-10-19T22:16:38.578868+00:00",
+  "final": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G084_complete_native_registered_candidate.png",
+  "sha256": "ee1bb3110a8b11781e1fb50cb9db4a703b3d54c792cd87ae9dc182254145922b",
+  "one_transform": {
+    "status": "ONE_COMPLETE_NATIVE_BODY_SIMILARITY_PHYSICAL_DIAGNOSTIC",
+    "scale": 0.680237424812704,
+    "rotation_deg": -1.5347103640670126,
+    "translation": [
+      126.13806209575307,
+      201.0699518325863
+    ],
+    "physical_anchors": [
+      "far_sole_center",
+      "near_sole_center",
+      "B_thumb_contact"
+    ],
+    "raw_anchors": [
+      [
+        421.0,
+        1217.0
+      ],
+      [
+        614.0,
+        1213.0
+      ],
+      [
+        844.0,
+        198.0
+      ]
+    ],
+    "target_anchors": [
+      [
+        442.0,
+        1021.0
+      ],
+      [
+        558.0,
+        1016.0
+      ],
+      [
+        704.0,
+        319.0
+      ]
+    ],
+    "residuals_xy": [
+      [
+        -7.412808853222032,
+        -0.04804977584615244
+      ],
+      [
+        7.753045754765367,
+        -1.2841920194380236
+      ],
+      [
+        -0.3402369015433351,
+        1.3322417952843466
+      ]
+    ],
+    "actual_registered_peg_mouth": [
+      757.8888697340954,
+      261.7188789740257
+    ],
+    "separate_part_transforms": false,
+    "raw_shoes_still_shown_in_diagnostic": true,
+    "cleanup": "Disconnected alpha specks only; largest complete connected native body retained."
+  },
+  "processing": "Whole native body including natural trouser cuffs ankles and both shoes retained at one similarity. Only disconnected alpha specks removed; exact original whole sheet first clip and rigid stool restored. No leg shoe hand independent transform or replacement.",
+  "parent_actual_review": "2026-10-19 22:16 native shoes accepted 7\u20138px transverse variation and small near-foot unload as same forward lean; exact stool unchanged."
+}
