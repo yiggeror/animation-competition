@@ -45,7 +45,16 @@ export function authoredLayers(f){
    layers.push({img:pick(XIAOMAN,f),x:f<39?430:339.7325,y:f<39?533:512.485,sc:f<39?.16:.2475,contact:{a:.4,blur:3,sy:1,dx:-2,dy:3}});
  }
  if(f<39)layers.push({img:pick(GRANDMA,f),x:730,y:375,sc:.2734375,contact:{a:.45,blur:4,sy:-.07,skew:.5}});
- if(f>=57)layers.push({img:pick(GRANDMA_WALK,f),x:WALK_REGISTRATION.x,y:WALK_REGISTRATION.y,sc:WALK_REGISTRATION.s,contact:{a:.45,blur:4,sy:-.07,skew:.5}});
+ if(f>=57){
+   const at={x:WALK_REGISTRATION.x,y:WALK_REGISTRATION.y,sc:WALK_REGISTRATION.s};
+   const contact={a:.45,blur:4,sy:-.07,skew:.5};
+   if(f>=100){
+     // Shadow ownership: human alpha only; the visible full drawing owns the physical lamp/table ellipse.
+     const id=f>=106?'F106':f>=103?'F103':'F100';
+     layers.push({img:'/assets/chars/g07/'+id+'_person_shadow.png',...at,alpha:0,contact});
+     layers.push({img:pick(GRANDMA_WALK,f),...at});
+   }else layers.push({img:pick(GRANDMA_WALK,f),...at,contact});
+ }
  return layers;
 }
 const shot={bg:'bg_01_room_wide',size:[1672,941],
