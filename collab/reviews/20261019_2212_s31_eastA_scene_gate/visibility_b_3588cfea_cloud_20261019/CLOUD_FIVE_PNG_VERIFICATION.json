@@ -1,0 +1,310 @@
+{
+  "status": "FIVE_PNG_RUNTIME_PASS_STRICT_ISOLATION_HOLD",
+  "source_commit": "3588cfeae7e1de0d816c990032db3801e550347d",
+  "unique_browser_runs": 1,
+  "new_generation": 0,
+  "PNG_count": 5,
+  "PNG_files": [
+    {
+      "file": "B180_FRESH_FIRST.png",
+      "PNG_SHA256": "62914b66f8764d6543cd8310c1c8e135a71fcf9ae51c2b77c4bfdc7e5ab7248b",
+      "decoded_RGBA_SHA256": "51fa480e1b06317ca8f40f08a270eae37ac726d80d6345d8027e151996103803",
+      "dimensions": [
+        960,
+        540
+      ],
+      "alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "B180_FRESH_REPEAT.png",
+      "PNG_SHA256": "f19e0ea25895cd9cbe17edf78068daf7dc2cf90e19df519162569f9bc1c97978",
+      "decoded_RGBA_SHA256": "84cdc64e8c932de4158b42d7a3fbbddd600ad0d1537180a7f4fac0ed37d6dbd1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "A000_VISIBILITY_CANDIDATE.png",
+      "PNG_SHA256": "62826c1e332ce3abb3a204815490095a466dc98161f36f64e7c3600cd8b0be29",
+      "decoded_RGBA_SHA256": "e5a4c326a540babc2807fcec281893c6867893d741239d82eaf5774efbb7f70f",
+      "dimensions": [
+        960,
+        540
+      ],
+      "alpha_range": [
+        252,
+        255
+      ]
+    },
+    {
+      "file": "A116_VISIBILITY_CANDIDATE.png",
+      "PNG_SHA256": "037a4330c026795da5e83e9d1aa542bc186a9bc369b42b2a215eb8f78d386a9f",
+      "decoded_RGBA_SHA256": "1a949a2d0c4eea7ba6fa50ba5a2ed287f6c7e7d75ba0eb8e52edfb235c943cf4",
+      "dimensions": [
+        960,
+        540
+      ],
+      "alpha_range": [
+        252,
+        255
+      ]
+    },
+    {
+      "file": "B180_FIRST_AFTER_A.png",
+      "PNG_SHA256": "f19e0ea25895cd9cbe17edf78068daf7dc2cf90e19df519162569f9bc1c97978",
+      "decoded_RGBA_SHA256": "84cdc64e8c932de4158b42d7a3fbbddd600ad0d1537180a7f4fac0ed37d6dbd1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "alpha_range": [
+        255,
+        255
+      ]
+    }
+  ],
+  "complete_independent_RGBA_comparisons": [
+    {
+      "name": "original_B_fresh_to_repeat_no_A",
+      "differingChannels": 6,
+      "differingPixels": 6,
+      "maxAbsoluteDifference": 1,
+      "totalAbsoluteDifference": 6,
+      "exactMatch": false,
+      "all_changed_pixel_RGBA_rows_file": "FULL_RGBA_DIFF_1.csv",
+      "all_rows_untruncated": true
+    },
+    {
+      "name": "original_B_fresh_first_to_first_after_A",
+      "differingChannels": 6,
+      "differingPixels": 6,
+      "maxAbsoluteDifference": 1,
+      "totalAbsoluteDifference": 6,
+      "exactMatch": false,
+      "all_changed_pixel_RGBA_rows_file": "FULL_RGBA_DIFF_2.csv",
+      "all_rows_untruncated": true
+    },
+    {
+      "name": "original_B_repeat_control_to_first_after_A",
+      "differingChannels": 0,
+      "differingPixels": 0,
+      "maxAbsoluteDifference": 0,
+      "totalAbsoluteDifference": 0,
+      "exactMatch": true,
+      "all_changed_pixel_RGBA_rows_file": "FULL_RGBA_DIFF_3.csv",
+      "all_rows_untruncated": true
+    }
+  ],
+  "source_files_exact_and_unchanged_after_run": [
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/BUNDLE_halfopen_call01/S31_HALF_OPEN_BUNDLE_WITH_ORIGINAL_CRANE.png",
+      "SHA256": "0aef89cce4dde10d8542d9f17717cb921870051a415f5e0121e21e21053f1e85",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/F000_final_mother/S31_F000_MOTHER.png",
+      "SHA256": "7f94f27d0f60b756d8f01c5d05ddf8bca8dc632bec52bc39dcf0a6cf09896dc4",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/F036_expression_call01/S31_F036_CHARACTER.png",
+      "SHA256": "288043bc5e2bc57176c082d1cf3a8dd886412ef4cf466c7c200ce0775139a820",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/F116_lift_call01/S31_F116_CHARACTER.png",
+      "SHA256": "5359eb949b8d067e02c86b5deb4c4780d25cebb682af94ce521a8de86fde198a",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/MANIFEST.json",
+      "SHA256": "b4bd11f0aad52bc853c915aaee37f1e4879b6f4c54ed74b7929e42a779054a15",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/README.md",
+      "SHA256": "786bbecf233e4c118b5f461e18bbf46cbe3f9290782414a69523b596882677d1",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/S31_VISIBILITY_B_DIAGNOSTIC_INPUT_INDEX.json",
+      "SHA256": "fec2e97adaa3e7005ff9b73cb38ea0ab65215986a25c812f1d693174ec1c5a12",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/VISIBILITY_B_DIAGNOSTIC_READ_FIRST.md",
+      "SHA256": "4575022eaf55fe2670f3d90a959ae1cd8c24410526ca0ed26ef6a82aead18be9",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/background_east_inputs/S31_EAST_A_PROJECTION.json",
+      "SHA256": "c13b24736f3c9faaea5d4ea2f3c905cd33b8bfac8bb1bd9b7713990121f91cd0",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/background_east_inputs/s28_gm_F000_SOURCE.png",
+      "SHA256": "5654630a64356647efcda09c0c259361ff8428ca5972d38c774c031b19fbce25",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/cloud_actual_f60a713c/visibility_fix/BUNDLE_ORIGINAL_CRANE_UPRIGHT_PLANE_CANDIDATE.png",
+      "SHA256": "57e989429ded8d5cbf70d1fa0812050b598e12c2e41dddff6fa3e3b307102975",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/README_RENDER.md",
+      "SHA256": "360eb45c03c65f7c1ed1bd631b8050ea092dd6d4bbee0f4cf2a857bb9a476191",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/SOURCE_LOCK.json",
+      "SHA256": "945360c6df0b97bc179f4c6736dcec12a033cbf4eff5070d0a4084392edcab1c",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/cards.js",
+      "SHA256": "f6aa857fd1ba89ace359273e640b46915ff1d142cc4d90f1e84b148f430db130",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/choreo.js",
+      "SHA256": "6f838cdfb1aab203f83e5905eb4242a65addb4181ca8e66ed4c91340903e33d6",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/crane.js",
+      "SHA256": "212e8a4fdad764fa50928c60a8efc956ad660c62377ea1ea152433a6fea4e642",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/gl.js",
+      "SHA256": "ba98ba276559c430fc244a261387b32c77901a042e9c60b8acee31da3fdd0b29",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/s06_key.js",
+      "SHA256": "fdd0835b5486ac66385cb339b2a2dbbb8521978d3716c6293c7ef5927ef887d9",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/s06_key_s31a.js",
+      "SHA256": "b376b1b751a8e42cc35fb21f83e85585f01cc4d833e97c97a04a32c74206c2cb",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/scenery.js",
+      "SHA256": "63f8cc830c0ed37db2a178b8b9ae3ed69f2d455915e1c5fb3bd5222d7fa64030",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/shaders.js",
+      "SHA256": "773d25786637b178c73df987f11539d8786f2516fc6c04099d81caae170ddf1d",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/shots/shotkit.js",
+      "SHA256": "3cd7989d0276f0edc791ac72fae11463e611f13c0a3433fe99c27f38cec20a74",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/turtle.js",
+      "SHA256": "f7e91070a5959a2a5b97438a64db0f79af4890c2dbff1cdcbe6e4d6a28817ed2",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/xiaoman.js",
+      "SHA256": "d3b47b12cbcbb4bdec96df0bfa85357543ab6ea98d627cdb8260550cfc6e60e0",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/xm_rig.js",
+      "SHA256": "99b819478174a2bf250883cf05dd3c9f9b5743c1cfb98c5fd58ab876d28b7b22",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lib/core.js",
+      "SHA256": "748c357b97a71d6f122ef483923a64d3395bd692f6775b1601ef19b5bc08883e",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lib/draw.js",
+      "SHA256": "e3d36d237c0f143f349bfd2fbc9afad24fc71897f56b990a5d2ed084d6c6d496",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lib/figure.js",
+      "SHA256": "03c8928bbe6546af7206024a163c9f56d7826f60917c24ac448010fdae67f3de",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/paint/paintshot.js",
+      "SHA256": "7d61a8e3cfa595b5a2877ce3624c2d8d186a1578cc684a8948471eb0eedca975",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/paint/shots/s31.js",
+      "SHA256": "6782316d1ad14ab0035be7d2a3cec2331b5d6a9a0965157cd8c0f89d8a592b68",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/puppet.js",
+      "SHA256": "04b80760b97185ab8aea7826383d85f3c9d7789cd01aa1d8664fdc74bc4c30b7",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/shadowplay.js",
+      "SHA256": "2620c4164efb9a440f69b7d723d1d373894116115c9aa56442160b8a7b0739d8",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/preview.html",
+      "SHA256": "605ca6115d8578179157f88dfe906f2e02a3ab5f36d6bb49d6b470365471f398",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/preview.js",
+      "SHA256": "60a46b41578cc7de4ff3d3d4f679fcbe449847cf06cf6af151d86d30fbcae4da",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/render_keyframes.cjs",
+      "SHA256": "945f5d36452772236d4028a16844fbf5cd3540b40522527048335e4bcb619bed",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/render_visibility_and_b_diagnostic.cjs",
+      "SHA256": "23f6c688f3b970f766cc6c32c7bd69448937060efd066310c81e1e7cc1073181",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/visibility_preview.html",
+      "SHA256": "59231729573751568f63b3b6e012c28ef1a9157dbd4b0ef418bdf25784f87f08",
+      "unchanged": true
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/visibility_preview.js",
+      "SHA256": "9fe17511f007d448cbd108c51098c4410b03fbaed4fb11e66f498978f7260c12",
+      "unchanged": true
+    }
+  ],
+  "source_index_runtimeFiles": 28,
+  "required_http_failures": [],
+  "request_failures": [],
+  "page_errors": [],
+  "favicon_responses": [],
+  "strictIsolation": false,
+  "original_script_exit_code": 2,
+  "actual_visual_status": "HOLD_BACKGROUND_BUNDLE_CRANE_READABILITY_AND_STRICT_FRESH_B_ZERO",
+  "shared_production_modified": false,
+  "whole_shot_rendered": false,
+  "ready_claimed": false,
+  "actual_visual_review": "ACTUAL_PNG_VISUAL_REVIEW.json"
+}
