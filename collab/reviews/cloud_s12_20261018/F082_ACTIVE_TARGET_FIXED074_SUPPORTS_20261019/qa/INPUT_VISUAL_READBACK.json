@@ -1,0 +1,40 @@
+{
+  "status": "ACTUAL_REFERENCE_PNG_VISUAL_READBACK_COMPLETE_ASTRA_INPUT_GATE_PENDING",
+  "actually_opened": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_ACTIVE_TARGET_FIXED074_SUPPORTS_20261019/inputs/01_F082_FULL_VISIBLE_RISE_FROM_FINAL078.png",
+      "SHA256": "b3f57cf0dd0996570facdab79b5b7f5c5b2dd649c634e242cc4f6dd79ef225dc"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_ACTIVE_TARGET_FIXED074_SUPPORTS_20261019/inputs/02_SAME_F082_TRUE_RODS_CRANE_BOX_GROUND_REFERENCE.png",
+      "SHA256": "a440e5ae83f0429efb8ea27f7e66342e42e618ee32283cefaa8f5e7e6f5cab01"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_ACTIVE_TARGET_FIXED074_SUPPORTS_20261019/inputs/03_SAME_F082_ACTIVE_AND_FIXED_SEMANTIC_OWNERSHIP.png",
+      "SHA256": "8bd9e98432807a4f12c52e57da455ebdc3b4ba456e5cdc3246a41e1786cbc73c"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_ACTIVE_TARGET_FIXED074_SUPPORTS_20261019/reference/FINAL078_ACTUAL_HIP_THIGH_SUPPORT_GRID.png",
+      "SHA256": "779bb7e324af24da3b356e589f5fb5fe9b96cbcfa2e5b364d9201c94fc4f50d3"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_ACTIVE_TARGET_FIXED074_SUPPORTS_20261019/reference/F082_COMPLETE_THIGHS_KNEE_JOIN_FIXED_SUPPORTS_1to1.png",
+      "SHA256": "f239779311e165038b42e30da75e4041be522dfc95cf5699efbcb777d76b328a"
+    }
+  ],
+  "observations": [
+    "Full visible pose continues actual078 hip rise, complete head/torso/full arms/grips follow; both thigh-to-knee chains and original fixed shins/shoes are visible.",
+    "Third input explicitly colors whole active upper/arms/hips/both thighs orange, moving natural knee-upper connector purple, permanent original074 support green. All18457 prior true join pixels inside the new active domain.",
+    "Same-pose true rod/crane reference preserves existing grip depth order and full shaft lengths, with current box-front and accepted ground-shadow context. Scene reference is unlit PIL composition, not an actual new Canvas.",
+    "Normal-size knee crop opened. Reference interpolation/fold edges and the already accepted tiny far-calf mark are not new art; future model must draw natural continuous cloth including this connector from the start.",
+    "All3 actual proposed PNGs and prompt/request contents hashed. No model call, original raw, actual082 Canvas or usable new082 drawn pose."
+  ],
+  "limits": [
+    "Hip/knee centers are uncertain visible proxies, not hidden3D bone certification.",
+    "Neither reference-pixel interpolation nor an actual PNG file alone proves a new drawn action state.",
+    "Future new shins/ankles/shoes will not be adopted; real Canvas/grip/ground/join final gate required after explicit generation authorization."
+  ],
+  "imagegen_calls": 0,
+  "actual082_Canvas": 0,
+  "source_reference_pixels_adopted_as_final_art": 0
+}

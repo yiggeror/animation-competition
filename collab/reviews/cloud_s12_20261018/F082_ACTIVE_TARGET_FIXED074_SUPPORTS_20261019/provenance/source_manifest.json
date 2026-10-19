@@ -1,0 +1,109 @@
+{
+  "status": "REFERENCE_SOURCE_PROVENANCE_NOT_NEW_DRAWING",
+  "activity_mother": {
+    "commit": "16791e6a6b84093bc4bdc44ad83c6c89863072fc",
+    "path": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F078_NARROW_JOIN_actual_call01_20261019/candidate/F078.png",
+    "SHA256": "c31ae5cced3a8f3480265e15082836210dced780abcb733530565d5828b0fbee"
+  },
+  "support_master": {
+    "commit": "3bd6e9e748bee6d166fa0baee8961df046e92366",
+    "path": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F074_PANTS_LOCAL_actual_call01_20261019/candidate/F074.png",
+    "SHA256": "2fbceafa0d533d727e6b72f0e292c63f98295ee34dd4a677a51e62785b768900",
+    "accepted_exclusive_source": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F078_NARROW_JOIN_actual_call01_20261019/layers/F078_FIXED074_STATIC_SUPPORTS.png",
+    "exclusive_source_SHA256": "eb8aad87d9cff28e3ae9ec1b2e3229e6a0d1aa5185e4fa080b50e2d109464bea"
+  },
+  "same_native_scene_registration": {
+    "scale": 0.7,
+    "translation": [
+      275,
+      112
+    ]
+  },
+  "sources": [
+    {
+      "path": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F078_NARROW_JOIN_actual_call01_20261019/candidate/F078.png",
+      "role": "sole qualified actual078 activity mother",
+      "SHA256": "c31ae5cced3a8f3480265e15082836210dced780abcb733530565d5828b0fbee"
+    },
+    {
+      "path": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F074_PANTS_LOCAL_actual_call01_20261019/candidate/F074.png",
+      "role": "original final074 static support source",
+      "SHA256": "2fbceafa0d533d727e6b72f0e292c63f98295ee34dd4a677a51e62785b768900"
+    },
+    {
+      "path": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F078_NARROW_JOIN_actual_call01_20261019/layers/F078_FIXED074_STATIC_SUPPORTS.png",
+      "role": "accepted074 static support ownership carried in locked078",
+      "SHA256": "eb8aad87d9cff28e3ae9ec1b2e3229e6a0d1aa5185e4fa080b50e2d109464bea"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F078_NARROW_JOIN_actual_call01_20261019/layers/F078_FG_true_front_fingers.png",
+      "role": "true current front-grip ownership",
+      "SHA256": "29d00463a314f88c853c19eae8c0d7cf3521284ff0b9c379a6c4234307b88e1b"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F078_NARROW_JOIN_actual_call01_20261019/actual_scene/F078_code_props_actual_layer.png",
+      "role": "true current078 rigid props",
+      "SHA256": "a45c44bdc4caf5f98406c21cae3296a97f044e3ecfbef0027e783de16d7e43f2"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F078_NARROW_JOIN_actual_call01_20261019/actual_scene/F078_native_ground_shadows_actual_layer.png",
+      "role": "current unchanged ground support shadow",
+      "SHA256": "242ac036e9546967e05e23b42f418deea70923087132bbf8aa1851a2c994ede4"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F078_NARROW_JOIN_actual_call01_20261019/actual_scene/F078_box_front_actual_layer.png",
+      "role": "unchanged actual box-front occlusion",
+      "SHA256": "4995c6a3e636f9a81a072773658da9c8607579bfc20235acfb0700ad6decbd34"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/right_hand_lower_rod_inputs_20261019/first034_040/code_props/background_box_cloth_UNCHANGED.png",
+      "role": "static room/box context only, no old code human source",
+      "SHA256": "d66629ffef4c0b64e7fa365330ca9b88c9f4acf43c97f400645d036e3731d664"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F078_FIXED074_SUPPORTS_ZERO_CALL_20261019/geometry/TRUE_SOURCE_SEMANTIC_OWNERSHIP.json",
+      "role": "preceding curved semantic seam, widened for new motion; not pose mother",
+      "SHA256": "149ac1f7bdbb7eb472c6382bc4216e9d9d1a0d0a6b93896228b2b0ccd6635701"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F078_FIXED074_SUPPORTS_ZERO_CALL_20261019/masks/ORIGINAL074_SHOES_ANKLES_HARD.png",
+      "role": "actual074 hard shoe and bare ankle protection",
+      "SHA256": "85ea53476bd177a453ac1b4862df89839b2405e8980f6f95c9473ade56cbfefc"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F078_COMPLETE_TARGET_from_FINAL074_20261019/geometry/F078_COMPLETE_RISE_AND_TRUE_CONTACTS.json",
+      "role": "current true078 rigid props/contact geometry only, not old body target",
+      "SHA256": "94a0a336acfff37f0b1c87d96ad6effe59a4b0a7cdc82aebe91bf167e452e450"
+    }
+  ],
+  "planned_input_SHA256s": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_ACTIVE_TARGET_FIXED074_SUPPORTS_20261019/inputs/01_F082_FULL_VISIBLE_RISE_FROM_FINAL078.png",
+      "SHA256": "b3f57cf0dd0996570facdab79b5b7f5c5b2dd649c634e242cc4f6dd79ef225dc",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_ACTIVE_TARGET_FIXED074_SUPPORTS_20261019/inputs/02_SAME_F082_TRUE_RODS_CRANE_BOX_GROUND_REFERENCE.png",
+      "SHA256": "a440e5ae83f0429efb8ea27f7e66342e42e618ee32283cefaa8f5e7e6f5cab01",
+      "size": [
+        2880,
+        1080
+      ]
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_ACTIVE_TARGET_FIXED074_SUPPORTS_20261019/inputs/03_SAME_F082_ACTIVE_AND_FIXED_SEMANTIC_OWNERSHIP.png",
+      "SHA256": "8bd9e98432807a4f12c52e57da455ebdc3b4ba456e5cdc3246a41e1786cbc73c",
+      "size": [
+        1024,
+        1536
+      ]
+    }
+  ],
+  "reference_method": "PIL/SciPy source-pixel pose reference only: rigid whole upper/head/complete arms/grips; smooth pelvis/thigh rotation into fixed true074 supports through an explicitly moving curved knee connector. No source-reference pixels adopted as finished art. True existing code props use identical rigid grip transform. Unlit context only; no actual Canvas rendered.",
+  "raw_generation": "NONE: generation not authorized",
+  "builder": "tools/build_active_target.py",
+  "actual_input_gate": "requests/F082_COMPLETE_ACTIVE_INPUT_GATE_NOT_EXECUTABLE.json"
+}
