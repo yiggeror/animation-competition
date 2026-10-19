@@ -1,0 +1,17 @@
+{
+  "whole_patch_delta": [
+    2,
+    1
+  ],
+  "failed_actual_bicubic_pixels": [
+    [
+      966,
+      1019
+    ],
+    [
+      956,
+      1029
+    ]
+  ],
+  "reason": "Analytical linear-alpha probe did not match actual PIL output pixel-centre convention; no candidate or Canvas adopted. Final coverage checked on actual PIL BICUBIC pixels."
+}
