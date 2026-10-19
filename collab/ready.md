@@ -194,3 +194,6 @@ S25已批22态/6秒的首母输入正在独立准备，不等待切口裁定才�
 
 
 - S08 · `js/anim/s08_drawn.js`（生产源54796bf3835d6fe8e32a78ea3c854ac2a5d34d15） · `collab/reviews/cloud_s13_20261018/render_assist/s08_production144/S08_production144_1920x1080_24fps.mp4` · 144f/24fps/6s，41曝光/35张不同人物画稿。实际整镜已审：擦柴起火→放盒→扣低杆同帧升罩→引燃灯芯并撤柴→柴落桌松指→松杆落罩→完整双臂收回并坐定笑看；单盒/弃柴/薄影/芯火及前后遮挡已核。生产入口再渲一次，144/144 Canvas PNG与完整MP4对已过dd6e23bc逐字节同（SHA256 e3f4fc04364d46ec7ff690ef7c20b2dd3138ce70219f75e3e173af87262d65be），112生产PNG全部200，reviews请求0，无页面/资源失败；唯一favicon404精确留存。06:44 Astra整镜视觉ready，可交Opus配声/EDL/终审。当前静音，音轨按新实际片另核，未沿用旧AAC。验证97b094028688b44ab6950ec8a25d5e77476f7078，薄证据同目录。
+
+
+- S07 · `js/anim/s07_drawn.js`（生产源3911f944f5db4ed17625b83e06ff813d8c455b3f） · `collab/reviews/20261019_0752_s07_visual_ready/S07_visual_1080p24.mp4` · 108f/24fps/4.5s。完整起身/转接/行走/伸手握灯/同握微提已实际主审＋独审；最后8帧修正只保留原火柴盒、人物单独投影，000–099实际原帧复用。盒持续、单灯、103→106真提、脚基点与前探自然人影通过，不再削影。完整MP4 SHA256 f7b5279f6b3e46460e9a063fffe1d2478717ad6951c38f47e57446dca7eec3b5，固定实际ae49b3466ca2000dc70219b5867eaadf34b3b238。07:52 Astra整镜视觉ready，可交Opus接声/EDL/终审；当前无声，新音轨另核。短证据同目录。
