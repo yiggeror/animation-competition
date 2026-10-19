@@ -1,0 +1,24 @@
+{
+  "status": "PASS_LIMITED_LOCKED079_TO_LOCKED084_ISOLATED11F_PENDING_ASTRA",
+  "actual_viewed": [
+    "exposure/gray/actual_decoded_contact_sheet.png",
+    "exposure/dark/actual_decoded_contact_sheet.png",
+    "exposure/gray/actual_decoded_04_legs_feet_2x.png",
+    "exposure/gray/actual_decoded_05_legs_feet_2x.png",
+    "exposure/dark/actual_decoded_06_legs_feet_2x.png",
+    "exposure/dark/actual_decoded_10_legs_feet_2x.png"
+  ],
+  "actual_requested_clip_frames_reviewed_on_both_backgrounds": [0, 4, 5, 6, 10],
+  "all_encoded_frames_decoded_and_source_matched": 22,
+  "source_sequence": "079 x5 -> 084 x6",
+  "scene_frame_range": [79, 89],
+  "findings": [
+    "The first five frames hold the exact locked079 source; clip5 switches to exact locked084 and remains through clip10. No tween or new state was inserted.",
+    "The near anatomical right support shoe remains fixed through the transition. The far left moves forward into lifted passing, with visible knee-forward/calf-return volume and correct foreground near-shin overlap over the back shoe.",
+    "Actual waist and both cuff connections remain continuous. No additional foot, source-shoe relocation, hollow shoe-shaped shin cutout or bridge repair appears.",
+    "The body advances with the beat and the arms counter-swing modestly. Identity, head/blouse scale, bare-near/jade-far ownership and overall navy material remain readable without a blocking flash."
+  ],
+  "locked_source_bytes_unchanged": true,
+  "new_image_calls": 0,
+  "scope_limit": "Only this isolated11-frame gray/dark layer exposure. Not full108-frame S07, actual room/camera composite, audio sync or film acceptance. F090 is input preparation only."
+}

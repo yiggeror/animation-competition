@@ -1,0 +1,242 @@
+{
+  "status": "ACTUAL11F_ALL_DECODED_PENDING_VISUAL_REVIEW",
+  "sequence": [
+    79,
+    79,
+    79,
+    79,
+    79,
+    84,
+    84,
+    84,
+    84,
+    84,
+    84
+  ],
+  "scene_frames_inclusive": [
+    79,
+    89
+  ],
+  "registration": {
+    "s": 0.36410361842105265,
+    "tx": 627.0254537171638,
+    "ty": 402.7604324894813,
+    "head_target": 69.1796875,
+    "head_center_world": [
+      929.9596642434797,
+      442.447726897376
+    ],
+    "warning": "Head source is actual G037253±5asset pixels, not75.1 construction; F057 head190±5native manual estimate. One uniform whole-image registration only."
+  },
+  "fixed_world_crop_xyxy": [
+    720,
+    360,
+    1488,
+    792
+  ],
+  "source_sha256": {
+    "79": "856d10c9516c33a8e992a121033e76a5ac55bda269b16949a90aa431206f0364",
+    "84": "21acf20424d94477191dbc6fd012fe61426d509ec55dbc48037bb97b2c89f6ae"
+  },
+  "no_tween": true,
+  "new_generation_calls": 0,
+  "backgrounds": {
+    "gray": {
+      "video": "exposure/gray/S07_F079x5_F084x6_gray_actual_24fps.mp4",
+      "sha256": "4d052b8755a5acfacb77012feb08c20838f49652b8c93b5625d491914edc1cee",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "24/1",
+            "duration": "0.458333",
+            "nb_frames": "11"
+          }
+        ]
+      },
+      "decoded_frames": [
+        {
+          "clip_frame": 0,
+          "scene_frame": 79,
+          "expected": 79,
+          "decoded_nearest": 79,
+          "RGB_MAE": 0.2612091290509259
+        },
+        {
+          "clip_frame": 1,
+          "scene_frame": 80,
+          "expected": 79,
+          "decoded_nearest": 79,
+          "RGB_MAE": 0.26079246238425924
+        },
+        {
+          "clip_frame": 2,
+          "scene_frame": 81,
+          "expected": 79,
+          "decoded_nearest": 79,
+          "RGB_MAE": 0.2607953559027778
+        },
+        {
+          "clip_frame": 3,
+          "scene_frame": 82,
+          "expected": 79,
+          "decoded_nearest": 79,
+          "RGB_MAE": 0.2607953559027778
+        },
+        {
+          "clip_frame": 4,
+          "scene_frame": 83,
+          "expected": 79,
+          "decoded_nearest": 79,
+          "RGB_MAE": 0.26078305844907407
+        },
+        {
+          "clip_frame": 5,
+          "scene_frame": 84,
+          "expected": 84,
+          "decoded_nearest": 84,
+          "RGB_MAE": 0.25547489872685186
+        },
+        {
+          "clip_frame": 6,
+          "scene_frame": 85,
+          "expected": 84,
+          "decoded_nearest": 84,
+          "RGB_MAE": 0.2554752604166667
+        },
+        {
+          "clip_frame": 7,
+          "scene_frame": 86,
+          "expected": 84,
+          "decoded_nearest": 84,
+          "RGB_MAE": 0.2554767071759259
+        },
+        {
+          "clip_frame": 8,
+          "scene_frame": 87,
+          "expected": 84,
+          "decoded_nearest": 84,
+          "RGB_MAE": 0.2559346064814815
+        },
+        {
+          "clip_frame": 9,
+          "scene_frame": 88,
+          "expected": 84,
+          "decoded_nearest": 84,
+          "RGB_MAE": 0.25543836805555553
+        },
+        {
+          "clip_frame": 10,
+          "scene_frame": 89,
+          "expected": 84,
+          "decoded_nearest": 84,
+          "RGB_MAE": 0.25586263020833333
+        }
+      ],
+      "max_RGB_MAE": 0.2612091290509259
+    },
+    "dark": {
+      "video": "exposure/dark/S07_F079x5_F084x6_dark_actual_24fps.mp4",
+      "sha256": "a594ecb5f5b992a6712cb0c3d9a8ce098a40f2160538240a3fd5d0b7ad6de362",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "24/1",
+            "duration": "0.458333",
+            "nb_frames": "11"
+          }
+        ]
+      },
+      "decoded_frames": [
+        {
+          "clip_frame": 0,
+          "scene_frame": 79,
+          "expected": 79,
+          "decoded_nearest": 79,
+          "RGB_MAE": 1.1519672309027778
+        },
+        {
+          "clip_frame": 1,
+          "scene_frame": 80,
+          "expected": 79,
+          "decoded_nearest": 79,
+          "RGB_MAE": 1.1515646701388889
+        },
+        {
+          "clip_frame": 2,
+          "scene_frame": 81,
+          "expected": 79,
+          "decoded_nearest": 79,
+          "RGB_MAE": 1.151568287037037
+        },
+        {
+          "clip_frame": 3,
+          "scene_frame": 82,
+          "expected": 79,
+          "decoded_nearest": 79,
+          "RGB_MAE": 1.151572265625
+        },
+        {
+          "clip_frame": 4,
+          "scene_frame": 83,
+          "expected": 79,
+          "decoded_nearest": 79,
+          "RGB_MAE": 1.1516569010416666
+        },
+        {
+          "clip_frame": 5,
+          "scene_frame": 84,
+          "expected": 84,
+          "decoded_nearest": 84,
+          "RGB_MAE": 1.1633112702546295
+        },
+        {
+          "clip_frame": 6,
+          "scene_frame": 85,
+          "expected": 84,
+          "decoded_nearest": 84,
+          "RGB_MAE": 1.1633615451388888
+        },
+        {
+          "clip_frame": 7,
+          "scene_frame": 86,
+          "expected": 84,
+          "decoded_nearest": 84,
+          "RGB_MAE": 1.1632049334490742
+        },
+        {
+          "clip_frame": 8,
+          "scene_frame": 87,
+          "expected": 84,
+          "decoded_nearest": 84,
+          "RGB_MAE": 1.1638129340277779
+        },
+        {
+          "clip_frame": 9,
+          "scene_frame": 88,
+          "expected": 84,
+          "decoded_nearest": 84,
+          "RGB_MAE": 1.1632552083333334
+        },
+        {
+          "clip_frame": 10,
+          "scene_frame": 89,
+          "expected": 84,
+          "decoded_nearest": 84,
+          "RGB_MAE": 1.1636877893518518
+        }
+      ],
+      "max_RGB_MAE": 1.1638129340277779
+    }
+  },
+  "limits": "Isolated layer only, no audio, not full108f scene or complete film."
+}
