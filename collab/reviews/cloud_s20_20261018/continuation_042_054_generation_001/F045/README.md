@@ -1,0 +1,1 @@
+045已实际自审：新左整臂/腕/掌上提，拇食对夹上C_N，小指仍暂托下C_B；右掌夹点与完整小满/衣鞋不动。本态1调用，原始输出和4输入/逐字prompt保全。后处理取完整原生左臂真实材质域，允许新前臂自然遮住原衣身，避免固定蓝衣遮罩压臂；右夹点50px保护区RGBA变化0。实际看 actual_full_gray.jpg / actual_native_contacts_4x.jpg。提交后后处理曾重算输入，现按提交时recipe确定性恢复输入，并把接收mask单列 postprocess_complete_native_GL_mask.png，不冒称后处理mask为实际提交mask。

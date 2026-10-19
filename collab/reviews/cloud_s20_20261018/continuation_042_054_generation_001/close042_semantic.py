@@ -20,6 +20,7 @@ reg=json.loads((F/'grandma_whole_registration_fit.json').read_text());M=np.array
 fits=json.loads((F/'native_registered_C_axes.json').read_text());q=fits['C_B'];targetm=.16357241713220919;theta=math.atan(targetm)-math.atan(q['slope']);Q=np.array([[math.cos(theta),-math.sin(theta)],[math.sin(theta),math.cos(theta)]]);pivot=np.array([875,q['at875']]);dest=np.array([875,targetm*875+178.40816867165805]);tr=dest-Q@pivot;GR=np.zeros_like(R);GR[rm]=R[rm];GR=warp(GR,Q,tr)
 # Astra-approved single continuous semantic domain: only native bare R, no L jade/forearm/blouse.
 keep=poly([(850,320),(867,305),(888,301),(907,320),(916,339),(930,341),(978,372),(984,378),(989,378),(993,370),(1008,364),(1047,387),(1051,405),(1030,418),(1011,434),(992,443),(980,444),(910,384),(865,373),(850,354)]);GR[:,:,3][~keep]=0
+gr,gc,gb=GR[:,:,:3].astype(float).transpose(2,0,1);junk=(GR[:,:,3]>0)&(gc>gr*1.05)&((gc>gb*1.04)|(gb>gr*1.10));GR[:,:,3][junk]=0
 # Rebind rigid prop axes to actual native child grips; no old palm transplant.
 ar,ag,ab=A[:,:,:3].astype(float).transpose(2,0,1);wood=(A[:,:,3]>150)&(ar>ag+15)&(ag>ab+15)&(ab<ag*.73);trows=[]
 for role,lo,hi,gx in [('T_H',335,399,473),('T_S',407,478,482)]:
