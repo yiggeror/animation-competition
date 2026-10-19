@@ -1,0 +1,307 @@
+{
+  "status": "PASS",
+  "scope": "F018 SINGLE INPUT GATE ONLY. No generation or scene-render acceptance implied.",
+  "source_parent_commit": "0c31714179fc8bcc8914fa313b8d3935c7a53aa3",
+  "checks_passed": 46,
+  "checks": [
+    {
+      "check": "F012_locked_source_git_literal_and_SHA",
+      "passed": true,
+      "source": "collab/reviews/cloud_s12_20261018/d02_F012_20261019/placket_tip_fix_20261019/candidate/F012.png",
+      "sha256": "063bc020f65f3e9485a57984f20703f0fbc96667a2f5a046ad713ee51d1beb88"
+    },
+    {
+      "check": "F000_locked_source_git_literal_and_SHA",
+      "passed": true,
+      "source": "collab/reviews/cloud_s12_20261018/first_left_grasp_inputs_20261019/inputs/locked_F000.png",
+      "sha256": "95f80f2d8f56394abd4a808cc8a6f205633658a544de4ab52e1e34c4ac1ed793"
+    },
+    {
+      "check": "F018_locked_source_git_literal_and_SHA",
+      "passed": true,
+      "source": "collab/reviews/cloud_s12_20261018/first_left_grasp_inputs_20261019/inputs/F018_CONSTRUCTION.png",
+      "sha256": "bcfaffbed6cca5012be23222cefa1035360cf7c8ede97648de82efc603449b8a"
+    },
+    {
+      "check": "Image1_exact_new_locked_F012_copy",
+      "passed": true
+    },
+    {
+      "check": "Image3_original_F018_byte_unchanged",
+      "passed": true
+    },
+    {
+      "check": "Image2_board_dimensions_and_SHA",
+      "passed": true,
+      "size": [
+        960,
+        1000
+      ],
+      "sha256": "a6a40d2e847b9a9256f20edb46cf8467fe7487deb0dc97448674ec7c7b5e22cd"
+    },
+    {
+      "check": "board_source_authority",
+      "passed": true
+    },
+    {
+      "check": "local_material_tile_count",
+      "passed": true
+    },
+    {
+      "check": "board_exact_source_RGB_HAIR strands / light",
+      "passed": true,
+      "source_box": [
+        602,
+        370,
+        642,
+        410
+      ],
+      "source_min_alpha": 253
+    },
+    {
+      "check": "board_exact_source_RGB_HAIR strands / shade",
+      "passed": true,
+      "source_box": [
+        490,
+        505,
+        514,
+        529
+      ],
+      "source_min_alpha": 253
+    },
+    {
+      "check": "board_exact_source_RGB_SKIN / light",
+      "passed": true,
+      "source_box": [
+        650,
+        554,
+        682,
+        586
+      ],
+      "source_min_alpha": 253
+    },
+    {
+      "check": "board_exact_source_RGB_SKIN / shade",
+      "passed": true,
+      "source_box": [
+        568,
+        496,
+        592,
+        520
+      ],
+      "source_min_alpha": 253
+    },
+    {
+      "check": "board_exact_source_RGB_BLUE / lit fabric",
+      "passed": true,
+      "source_box": [
+        476,
+        770,
+        508,
+        802
+      ],
+      "source_min_alpha": 253
+    },
+    {
+      "check": "board_exact_source_RGB_BLUE / folded shade",
+      "passed": true,
+      "source_box": [
+        485,
+        988,
+        501,
+        1004
+      ],
+      "source_min_alpha": 249
+    },
+    {
+      "check": "board_exact_source_RGB_FLOWER / light",
+      "passed": true,
+      "source_box": [
+        502,
+        765,
+        534,
+        797
+      ],
+      "source_min_alpha": 253
+    },
+    {
+      "check": "board_exact_source_RGB_FLOWER / shadow fill",
+      "passed": true,
+      "source_box": [
+        502,
+        1015,
+        510,
+        1023
+      ],
+      "source_min_alpha": 253
+    },
+    {
+      "check": "board_exact_source_RGB_TROUSERS / main",
+      "passed": true,
+      "source_box": [
+        414,
+        1168,
+        454,
+        1208
+      ],
+      "source_min_alpha": 253
+    },
+    {
+      "check": "board_exact_source_RGB_TROUSERS / fold",
+      "passed": true,
+      "source_box": [
+        270,
+        1240,
+        310,
+        1280
+      ],
+      "source_min_alpha": 253
+    },
+    {
+      "check": "board_exact_source_RGB_SHOE / black cloth",
+      "passed": true,
+      "source_box": [
+        128,
+        1260,
+        148,
+        1280
+      ],
+      "source_min_alpha": 253
+    },
+    {
+      "check": "board_exact_source_RGB_JADE / green",
+      "passed": true,
+      "source_box": [
+        826,
+        812,
+        838,
+        824
+      ],
+      "source_min_alpha": 253
+    },
+    {
+      "check": "one_disabled_F018_request_only",
+      "passed": true
+    },
+    {
+      "check": "actual_prompt_exact",
+      "passed": true,
+      "prompt_SHA256": "fbadda161afa5914204269f5383d25dca0ec3a00fc1a733eb4a78767abd89185"
+    },
+    {
+      "check": "supported_tool_arguments_only",
+      "passed": true
+    },
+    {
+      "check": "exactly_three_inputs_order",
+      "passed": true
+    },
+    {
+      "check": "actual_input_1_path_SHA_and_decode",
+      "passed": true,
+      "sha256": "063bc020f65f3e9485a57984f20703f0fbc96667a2f5a046ad713ee51d1beb88",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "check": "actual_input_2_path_SHA_and_decode",
+      "passed": true,
+      "sha256": "a6a40d2e847b9a9256f20edb46cf8467fe7487deb0dc97448674ec7c7b5e22cd",
+      "size": [
+        960,
+        1000
+      ],
+      "mode": "RGB"
+    },
+    {
+      "check": "actual_input_3_path_SHA_and_decode",
+      "passed": true,
+      "sha256": "bcfaffbed6cca5012be23222cefa1035360cf7c8ede97648de82efc603449b8a",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB"
+    },
+    {
+      "check": "no_full_F000_old103_or_original03_tool_input",
+      "passed": true
+    },
+    {
+      "check": "prompt_required_clause:NEWLY LOCKED F012",
+      "passed": true
+    },
+    {
+      "check": "prompt_required_clause:MATERIAL-ONLY LOCAL RGB BOARD",
+      "passed": true
+    },
+    {
+      "check": "prompt_required_clause:ORIGINAL APPROVED F018",
+      "passed": true
+    },
+    {
+      "check": "prompt_required_clause:both hands are EMPTY",
+      "passed": true
+    },
+    {
+      "check": "prompt_required_clause:at least 3 scene pixels",
+      "passed": true
+    },
+    {
+      "check": "prompt_required_clause:actual 7px rod outline",
+      "passed": true
+    },
+    {
+      "check": "prompt_required_clause:F022 is the later first thumb-touch",
+      "passed": true
+    },
+    {
+      "check": "prompt_required_clause:crane is still supported by the cloth",
+      "passed": true
+    },
+    {
+      "check": "prompt_required_clause:including the sleeve",
+      "passed": true
+    },
+    {
+      "check": "prompt_required_clause:static lower placket TIP",
+      "passed": true
+    },
+    {
+      "check": "prompt_required_clause:grey-blue shaded flower fill",
+      "passed": true
+    },
+    {
+      "check": "prompt_required_clause:both COMPLETE cloth shoes",
+      "passed": true
+    },
+    {
+      "check": "prompt_required_clause:Deliver F018 only",
+      "passed": true
+    },
+    {
+      "check": "original_geometry_git_literal",
+      "passed": true
+    },
+    {
+      "check": "F018_volume_coordinates_unchanged",
+      "passed": true
+    },
+    {
+      "check": "no_calls_renders_outputs_or_other_new_frames",
+      "passed": true
+    },
+    {
+      "check": "all_three_actual_images_viewed",
+      "passed": true
+    },
+    {
+      "check": "working_changes_within_this_packet_only",
+      "passed": true,
+      "changed_paths_outside_packet": []
+    }
+  ]
+}

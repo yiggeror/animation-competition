@@ -1,0 +1,30 @@
+{
+  "scope": "Prepared inputs only; no F018 generated art or actual scene frame exists in this packet.",
+  "reviewer": "cloud worker",
+  "review_date_UTC": "2026-10-19",
+  "method": "view_image of each actual image separately",
+  "images": [
+    {
+      "order": 1,
+      "path": "inputs/01_locked_F012.png",
+      "sha256": "063bc020f65f3e9485a57984f20703f0fbc96667a2f5a046ad713ee51d1beb88",
+      "actual_image_viewed": true,
+      "observation": "新锁012整人连续母：灰发细眼镜、原低位近右空手、蓝衣下摆布尖及受影花瓣、跪姿与两鞋均在。未作任何像素改动。"
+    },
+    {
+      "order": 2,
+      "path": "inputs/02_locked_F000_materials_ONLY.png",
+      "sha256": "a6a40d2e847b9a9256f20edb46cf8467fe7487deb0dc97448674ec7c7b5e22cd",
+      "actual_image_viewed": true,
+      "observation": "12个锁000局部RGB材色块及来源坐标；有灰发、肤色、蓝布、明暗花纹、裤、鞋与玉镯。无整人/完整旧姿态。放大的受影花瓣呈灰蓝，文字明确仅作材色。"
+    },
+    {
+      "order": 3,
+      "path": "inputs/03_F018_CONSTRUCTION_UNCHANGED.png",
+      "sha256": "bcfaffbed6cca5012be23222cefa1035360cf7c8ede97648de82efc603449b8a",
+      "actual_image_viewed": true,
+      "observation": "原018构造图逐字节保留。着色整远左臂向前下接近，开放手位于签上方；灰旧姿态仅作背景参照。prompt明确该灰影不替代新锁012，肩端体量藏在蓝衣内。此图不是角色成图，也不证明未来实际像素净空。"
+    }
+  ],
+  "limitation": "输入门可以确认身份/来源/意图，未来018仍须在真实输出和实际Canvas上复核整臂、空手、净空、色门与保护域。"
+}
