@@ -1,0 +1,14 @@
+{
+  "status": "NOT_ACCEPTED_FAR_SHOE_OCCLUSION",
+  "actual_viewed": [
+    "originals/F000_raw_attempt01.png",
+    "qa/raw01_gray_dark_review.jpg",
+    "qa/raw01_knees_shins_shoes_crop.png"
+  ],
+  "positive": [
+    "03 identity recognisable;two arms separated;both hands empty",
+    "transparent RGBA exists, effective solid region alpha254"
+  ],
+  "failure": "Far shoe mostly occluded;cannot sign both complete knee/shin/shoe chains. Correct same F000 lower body only, no new pose.",
+  "raw_unchanged": true
+}

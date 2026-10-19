@@ -1,0 +1,121 @@
+{
+  "reference_commit": "09c6a981b83a4300021ad053713d5cb846326edf",
+  "identity_source_commit": "aa397e44887e47d395b699fdba92cbd7795a9001",
+  "rows": [
+    {
+      "path": "collab/refs/grandma_turnaround_current03_draft.png",
+      "sha256": "ab88b69f5303229af379303a37b6e9e3c8cdb35cd05b3902b604871efb2b1671",
+      "role": "identity03"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/d01_F000/inputs/A_F000_native_layout_CONSTRUCTION_NOT_ART.png",
+      "sha256": "e15ad2aebd15b7dd0febf2ce849728b8f7c799fee01b1d2215a25c556f7c47a9",
+      "role": "construction_only_pose"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/reference/S12_A_F000_volume_contact.jpg",
+      "sha256": "adba33c2e41a140454f08085b2b7dc6f7f9b7ce5e3b33d558afaa57b09ddee9e",
+      "role": "approved_A_scene_context_not_art"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/geometry/three_key_pose_proposal.json",
+      "sha256": "836d85d5b843aeae107693e6023772e5a91572787fa7dbb0e408e4773c0ff13f",
+      "role": "frozen09c6reference"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/geometry/contact_shadow_anchor_proposal.json",
+      "sha256": "c65d76d2cf510f3bdd15e2b756d15b90102b17f418b97e762ed065a76654ea32",
+      "role": "frozen09c6reference"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/geometry/scene_integration_interface_PROPOSAL.json",
+      "sha256": "aa7e8369a235d11f85918668cfe4f01f785043d0f1cb449b04fb8735cd96377d",
+      "role": "frozen09c6reference"
+    }
+  ],
+  "native_canvas": [
+    1024,
+    1536
+  ],
+  "scene_registration": {
+    "scale": 0.75,
+    "x": 300,
+    "y": 100
+  },
+  "only_pose_to_generate": "F000",
+  "no_batch": true,
+  "A_native_points": {
+    "hip": [
+      236.46353772369267,
+      1003.0912582189229
+    ],
+    "shoulder_mid": [
+      516.4532113193765,
+      703.9607397112846
+    ],
+    "hipR": [
+      256.1517925822944,
+      1022.9737422689471
+    ],
+    "kneeR": [
+      431.36547171771207,
+      1192.670108379131
+    ],
+    "ankleR": [
+      184.9255959038278,
+      1206.3992170936936
+    ],
+    "shoulderR": [
+      558.7442432891283,
+      736.7759159149572
+    ],
+    "hipL": [
+      216.77528286509104,
+      983.2087741688987
+    ],
+    "kneeL": [
+      391.98896200050876,
+      1152.9051402790826
+    ],
+    "ankleL": [
+      145.54908618662444,
+      1166.634248993645
+    ],
+    "shoulderL": [
+      474.1621793496245,
+      671.1455635076122
+    ],
+    "gripR": [
+      733.3333333333334,
+      926.6666666666666
+    ],
+    "wristR": [
+      669.6466238533408,
+      930.2146385816659
+    ],
+    "gripL": [
+      806.6666666666666,
+      806.6666666666666
+    ],
+    "wristL": [
+      742.9799571866741,
+      810.2146385816659
+    ],
+    "elbowR": [
+      554.6033203369351,
+      973.8121558692515
+    ],
+    "elbowL": [
+      629.9325412535487,
+      787.2113260306969
+    ],
+    "neck_base": [
+      533.5001015401231,
+      655.5825043294423
+    ],
+    "head_center": [
+      580.8525743755303,
+      521.198517157658
+    ]
+  }
+}

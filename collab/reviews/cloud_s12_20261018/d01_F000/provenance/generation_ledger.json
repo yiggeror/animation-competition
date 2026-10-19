@@ -1,0 +1,54 @@
+{
+  "task": "S12 F000 single mother only",
+  "status": "ONE_F000_POSE_DELIVERED_CANDIDATE_NOT_MOTHER_LOCKED",
+  "planned_calls": 3,
+  "attempted_calls": 3,
+  "successful_images": 3,
+  "other_poses_generated": 0,
+  "request_file": "imagegen_request.json",
+  "reference_commit": "09c6a981b83a4300021ad053713d5cb846326edf",
+  "input_sha256": [
+    {
+      "path": "collab/refs/grandma_turnaround_current03_draft.png",
+      "sha256": "ab88b69f5303229af379303a37b6e9e3c8cdb35cd05b3902b604871efb2b1671"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/d01_F000/inputs/A_F000_native_layout_CONSTRUCTION_NOT_ART.png",
+      "sha256": "e15ad2aebd15b7dd0febf2ce849728b8f7c799fee01b1d2215a25c556f7c47a9"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/reference/S12_A_F000_volume_contact.jpg",
+      "sha256": "adba33c2e41a140454f08085b2b7dc6f7f9b7ce5e3b33d558afaa57b09ddee9e"
+    }
+  ],
+  "tool_original_path": "/workspace/generated_images/exec-2fca2e9c-126c-4463-9d05-d76dc86a8335.png",
+  "attempts": [
+    {
+      "attempt": 1,
+      "raw": "originals/F000_raw_attempt01.png",
+      "sha256": "1a5162614eb2d9c89877fd04e13e5c5c875354d4f439d60086bc32c131fd8202",
+      "status": "NOT_ACCEPTED_FAR_SHOE_OCCLUSION"
+    },
+    {
+      "attempt": 2,
+      "raw": "originals/F000_raw_attempt02.png",
+      "sha256": "3638f65c3462e796f0421b03f92beab67ee705d55403d057819b77ff8fe7307f",
+      "status": "LOWER_BODY_PASS_HAND_LENGTH_PENDING",
+      "tool_original_path": "/workspace/generated_images/exec-f0948005-8a19-443f-9d0d-a0b4a22e5a10.png"
+    },
+    {
+      "attempt": 3,
+      "raw": "originals/F000_raw_attempt03.png",
+      "sha256": "87f85597246e995ad4988b3a766c4f4171201851780e8c8ab5b3b0a93bf3cd61",
+      "status": "ACTUAL_SCENE_REVIEWED_MATERIAL_ALIGNMENT_AND_ASTRA_FREEZE_PENDING",
+      "tool_original_path": "/workspace/generated_images/exec-15c06c2c-7616-4740-b27e-54298cf93db2.png"
+    }
+  ],
+  "active_candidate": "candidate/F000.png",
+  "active_candidate_SHA256": "87f85597246e995ad4988b3a766c4f4171201851780e8c8ab5b3b0a93bf3cd61",
+  "native_pose_count": 1,
+  "first_raw_original_path": "collab/reviews/cloud_s12_20261018/d01_F000/originals/F000_raw_attempt01.png",
+  "first_raw_SHA256": "1a5162614eb2d9c89877fd04e13e5c5c875354d4f439d60086bc32c131fd8202",
+  "candidate_frozen": false,
+  "colour_alignment_signed": false
+}

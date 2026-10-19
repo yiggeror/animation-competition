@@ -1,0 +1,27 @@
+{
+  "status": "LOWER_BODY_PASS_HAND_PROPORTION_CORRECTION_NEEDED",
+  "actual_viewed": [
+    "candidate/F000.png",
+    "qa/raw02_arms_grid_closeup.jpg",
+    "qa/raw02_legs_grid_closeup.jpg"
+  ],
+  "measurements_are_manual_estimates": true,
+  "head_visible_vertical_H_px": 277,
+  "near_elbow_estimate": [
+    560,
+    948
+  ],
+  "near_wrist_estimate": [
+    729,
+    1000
+  ],
+  "near_longest_fingertip_estimate": [
+    869,
+    1023
+  ],
+  "near_forearm_projected_H": 0.6383361610597862,
+  "near_whole_hand_estimated_H": 0.5121902781162044,
+  "03_whole_hand_H": 0.3682244897959184,
+  "uncertainty": "wrist/finger centres about±10px; hidden shoulder/knee joints larger uncertainty.",
+  "decision": "Two legs/shoes now readable; correct same F000 hands to about.37H without elongating forearms. No next pose."
+}

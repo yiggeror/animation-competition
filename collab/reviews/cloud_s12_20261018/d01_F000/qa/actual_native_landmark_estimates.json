@@ -1,0 +1,94 @@
+{
+  "visible_head_H": 293.0,
+  "landmarks": {
+    "crown": [
+      622,
+      335
+    ],
+    "chin": [
+      709,
+      628
+    ],
+    "shoulderR": [
+      526,
+      715
+    ],
+    "elbowR": [
+      570,
+      948
+    ],
+    "wristR": [
+      758,
+      1000
+    ],
+    "fingertipR": [
+      869,
+      1027
+    ],
+    "elbowL": [
+      728,
+      805
+    ],
+    "bangleL": [
+      836,
+      838
+    ],
+    "wristL": [
+      881,
+      843
+    ],
+    "fingertipL": [
+      982,
+      854
+    ]
+  },
+  "measurements": [
+    {
+      "name": "near_upper_arm",
+      "from": "shoulderR",
+      "to": "elbowR",
+      "projected_native_pixels": 237.11811402758752,
+      "H_ratio": 0.8092768396845991,
+      "reference_H": 0.86,
+      "note": "Manual±10-20px centres;far arm shortened by projection;not hidden3D bone proof"
+    },
+    {
+      "name": "near_forearm",
+      "from": "elbowR",
+      "to": "wristR",
+      "projected_native_pixels": 195.05896544378575,
+      "H_ratio": 0.6657302574873234,
+      "reference_H": 0.64,
+      "note": "Manual±10-20px centres;far arm shortened by projection;not hidden3D bone proof"
+    },
+    {
+      "name": "near_hand",
+      "from": "wristR",
+      "to": "fingertipR",
+      "projected_native_pixels": 114.23659658795863,
+      "H_ratio": 0.3898859951807462,
+      "reference_H": 0.368,
+      "note": "Manual±10-20px centres;far arm shortened by projection;not hidden3D bone proof"
+    },
+    {
+      "name": "far_forearm",
+      "from": "elbowL",
+      "to": "wristL",
+      "projected_native_pixels": 157.64834283937145,
+      "H_ratio": 0.5380489516702097,
+      "reference_H": 0.64,
+      "note": "Manual±10-20px centres;far arm shortened by projection;not hidden3D bone proof"
+    },
+    {
+      "name": "far_hand",
+      "from": "wristL",
+      "to": "fingertipL",
+      "projected_native_pixels": 101.59724405711013,
+      "H_ratio": 0.34674827323245777,
+      "reference_H": 0.368,
+      "note": "Manual±10-20px centres;far arm shortened by projection;not hidden3D bone proof"
+    }
+  ],
+  "hidden_hip_knee_ankle": "Not numerically locked from loose trouser contours;Astra must review actual whole-body shape.",
+  "bangle_not_wrist_joint": true
+}
