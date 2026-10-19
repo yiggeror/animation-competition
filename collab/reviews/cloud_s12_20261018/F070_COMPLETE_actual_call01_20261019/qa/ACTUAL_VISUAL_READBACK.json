@@ -1,0 +1,36 @@
+{
+  "status": "ONE_RAW_ONE_REAL_CANVAS_DELIVERED_FOR_ASTRA_REVIEW_NOT_LOCKED",
+  "opened_actual_images": [
+    "actual_scene/F070_canvas.png",
+    "diagnostics/ACTUAL_F070_BOTH_TRUE_GRIPS.png",
+    "diagnostics/ACTUAL_F070_CLOTH_CRANE_FRONT_OCCLUSION.png",
+    "diagnostics/ACTUAL_F070_GROUND_SHOES_KNEES.png"
+  ],
+  "actual_Canvas_SHA256": "221cdd0123259bfe6b3fd669e852118acc3f547b78df2cb26c965536f7daf28a",
+  "native_SHA256": "def2f1f8ace0883ae5625e2936fd676ec2c85388d57f6fe391a5cfe41a70e960",
+  "raw_SHA256": "ddca7a779758e8cff6675c5679d14a9d549f19ba45d6c73376f6a5a52803075f",
+  "imagegen_calls": 1,
+  "actual070_Canvas": 1,
+  "074_imagegen_calls": 0,
+  "actual_pageerrors_or_requestfailed": [],
+  "actual_ground_shadow_and_box_front_byte_identical_to_locked064": true,
+  "true55_crane_two_rods_frozen_source_SHA256": "7be1d0e6e82debab591fff9f56d81ed57bace2aa40c1ad32f407a38a4530c62b",
+  "cloth_unload_source_SHA256": "9f860ba3ed5ca3181a9f151ce24568aae84a9e45e1509b669bd11bb1ae9fedcf",
+  "alpha32_registered_body_bbox": [
+    29,
+    299,
+    1007,
+    1316
+  ],
+  "exclusive_BG_FG_union_exact": true,
+  "single_whole_similarity_only": true,
+  "local_finger_shoe_joint_warps": 0,
+  "old_reference_body_pixels_adopted": 0,
+  "visual_findings": {
+    "body": "Pelvis/waist/chest/back/wholehead and both complete arms form continuous kneeling lift. Source collage seams not copied.",
+    "grips": "FarLEFTjade and nearRIGHTbare retained. Actual rods enter closed hands with curved foreground digits crossing rods. No independent finger or shaft adjustment. Soft contact visual estimates residual far(-1.18,-3.60)native and near(-1.22,+3.73)native, +/-3native uncertainty; not measured bone/pressure proof.",
+    "props_cloth": "True rods/crane together scene(-3,-24),55degree plane. Visible cloth unloading and front occlusion; some lower parts still behind front, no full-air-gap claim.",
+    "supports": "Both shoes/near shin contact shadows visible. New raw lower-leg/shoe contours differ after one whole fit; p95 absolute outline difference21.63native measures silhouette variation, not hidden joint drift. Fixed support requirement NOT signed off.",
+    "next_gate": "Astra review actual raw/Canvas supports before qualifying070 and074 mother. No extra generation, local deformation or old-leg graft."
+  }
+}

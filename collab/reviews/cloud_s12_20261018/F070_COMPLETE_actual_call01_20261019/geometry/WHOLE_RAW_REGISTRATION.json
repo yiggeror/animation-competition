@@ -1,0 +1,151 @@
+{
+  "status": "ONE_WHOLE_SIMILARITY_CANDIDATE_FOR_REAL_CANVAS_NOT_POSE_PASS",
+  "raw_SHA256": "ddca7a779758e8cff6675c5679d14a9d549f19ba45d6c73376f6a5a52803075f",
+  "native_candidate_SHA256": "def2f1f8ace0883ae5625e2936fd676ec2c85388d57f6fe391a5cfe41a70e960",
+  "one_whole_raw_to_native_matrix": [
+    [
+      0.9780313778987236,
+      -0.011218881241809685,
+      25.34728044369458
+    ],
+    [
+      0.011218881241809685,
+      0.9780313778987236,
+      -0.32337191307878466
+    ]
+  ],
+  "uniform_scale": 0.9780957210062796,
+  "rotation_degrees": 0.6572042263260391,
+  "translation_native": [
+    25.34728044369458,
+    -0.32337191307878466
+  ],
+  "fit_objective": "Whole actual alpha128 silhouette weighted floor3 + true-grip soft contact visual estimates. Four global parameters only. Reference body pixels NEVER adopted.",
+  "raw_soft_contacts_far_then_near": [
+    [
+      970.0,
+      851.0
+    ],
+    [
+      980.0,
+      965.0
+    ]
+  ],
+  "target_true_contacts_far_then_near": [
+    [
+      965.6719193245636,
+      846.4590820509204
+    ],
+    [
+      974.206856466072,
+      950.7367048206779
+    ]
+  ],
+  "registered_soft_contact_estimates": [
+    [
+      964.4904490686764,
+      842.8636454832905
+    ],
+    [
+      972.9918103860974,
+      954.471411376163
+    ]
+  ],
+  "contact_residual_native": [
+    [
+      -1.181470255887234,
+      -3.5954365676299176
+    ],
+    [
+      -1.215046079974627,
+      3.734706555485104
+    ]
+  ],
+  "contact_estimate_uncertainty_native": 3,
+  "lower_support_contour_absolute_distance_p95_native": 21.631760809508425,
+  "original_supports_exact": false,
+  "foreground_partition_only_polygons_raw": {
+    "far_actual_curled_front_digits": [
+      [
+        944,
+        839
+      ],
+      [
+        968,
+        837
+      ],
+      [
+        985,
+        845
+      ],
+      [
+        982,
+        868
+      ],
+      [
+        969,
+        880
+      ],
+      [
+        949,
+        877
+      ],
+      [
+        930,
+        868
+      ],
+      [
+        935,
+        851
+      ]
+    ],
+    "near_actual_curled_front_digits": [
+      [
+        980,
+        925
+      ],
+      [
+        999,
+        929
+      ],
+      [
+        1015,
+        944
+      ],
+      [
+        1018,
+        980
+      ],
+      [
+        1002,
+        993
+      ],
+      [
+        981,
+        986
+      ],
+      [
+        975,
+        977
+      ],
+      [
+        978,
+        965
+      ],
+      [
+        986,
+        958
+      ],
+      [
+        984,
+        941
+      ]
+    ]
+  },
+  "exclusive_BG_FG_union_exact": true,
+  "local_body_finger_shoe_warps": 0,
+  "source_reference_pixels_adopted": 0,
+  "raw_RGBA_material_edits": 0,
+  "actual_Canvas_pending": false,
+  "actual_Canvas_SHA256": "221cdd0123259bfe6b3fd669e852118acc3f547b78df2cb26c965536f7daf28a"
+}
