@@ -1,0 +1,115 @@
+{
+  "status": "ONE_NATIVE_F096_FAR_R_SINGLE_TH_LOCAL_CANDIDATE_ASTRA_TERMINAL_PENDING",
+  "image_tool_submissions": 1,
+  "raw_outputs": 1,
+  "automatic_retries": 0,
+  "only_two_matched_3x_crop_inputs": true,
+  "approved_target_commit": "928a60d081f854149a9bdc2de945060bac77d292",
+  "raw_output_original_path": "/workspace/generated_images/exec-5dc10783-991f-4d08-8fbf-3eccb10c466e.png",
+  "raw_sha256": "0216dfe595932f339ca6bff279c067eb77deea8858e458ed2e8fd8510f8a0509",
+  "requested_local_size": [
+    975,
+    720
+  ],
+  "actual_raw_size": [
+    1460,
+    1078
+  ],
+  "raw_original_unmodified": true,
+  "whole_native_palm_component_resampling_count": 1,
+  "whole_component_similarity": {
+    "source_landmarks": [
+      [
+        695.0,
+        355.30977340489073
+      ],
+      [
+        975.0,
+        398.0
+      ],
+      [
+        975.0,
+        540.0
+      ]
+    ],
+    "target_landmarks": [
+      [
+        405.91809952555025,
+        366.15449499427467
+      ],
+      [
+        478.0,
+        391.0
+      ],
+      [
+        478.0,
+        435.0
+      ]
+    ],
+    "weights": [
+      5.0,
+      2.0,
+      2.0
+    ],
+    "source_label": [
+      "native_TH_wood_to_thumb_contact",
+      "complete_short_wrist_upper_attachment",
+      "complete_short_wrist_lower_attachment"
+    ],
+    "one_complete_palm_registration_scale": 0.28630582291218265,
+    "rotation_degrees": 9.858826548714084,
+    "translation_xy": [
+      226.70225340833338,
+      232.32611267223137
+    ],
+    "matrix": [
+      [
+        0.28207783664501185,
+        -0.04902161061299583,
+        226.70225340833338
+      ],
+      [
+        0.04902161061299586,
+        0.2820778366450117,
+        232.32611267223137
+      ]
+    ],
+    "predicted": [
+      [
+        405.3284925177703,
+        366.62114426914434
+      ],
+      [
+        482.21754311324764,
+        392.389162004617
+      ],
+      [
+        475.2564744062022,
+        432.44421480820864
+      ]
+    ],
+    "RMS_px": 2.796422577388504
+  },
+  "separate_finger_or_grip_moves": false,
+  "technical_white_mask_hard_clipping": false,
+  "native_component_ownership": "complete own native thumb, four curled fingers, palm heel and short wrist; scene wood context removed semantically, fixed shafts retained",
+  "short_wrist_attachment": "actual native/fixed contour match within~1px at x478; native alpha retained, only last10px of overlapping skin RGB feathered; no hand/finger local warp",
+  "fixed_TS_axis_tip_L_grip_and_visible_RGBA_changes": 0,
+  "X_fixed_original_context": true,
+  "TH_same_axis_profile_and_previous_inferred_hidden_end_unchanged": true,
+  "all_x478_plus_original_shoulders_elbows_body_RGBA_changes": 0,
+  "all_y449_plus_original_near_L_palm_torso_skirt_full_legs_RGBA_changes": 0,
+  "black_context_native_redrawing_used": false,
+  "final_png": "F096_R_single_TH_native_local_candidate.png",
+  "final_png_sha256": "be1d3ccec0939b22203fa6ad00bb7773049694d3506f3113f47810220889430d",
+  "adopted": false,
+  "later_states_prepared": false,
+  "new_exposure_frozen": false,
+  "actual_views_inspected": [
+    "raw_actual_gray.jpg",
+    "actual_full_gray_1x.jpg",
+    "actual_contacts_1x.png",
+    "actual_contacts_3x.png"
+  ],
+  "actual_contiguous_opaque_wrist_overlap_rows_x477_x478": 44
+}
