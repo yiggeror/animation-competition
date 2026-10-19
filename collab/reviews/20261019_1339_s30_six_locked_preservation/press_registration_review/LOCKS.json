@@ -1,0 +1,125 @@
+{
+  "status": "PARENT_REVIEW_LOCKED_TWO_STATES",
+  "locked_utc": "2026-10-19T12:59:51Z",
+  "new_usable_poses": 2,
+  "method": "Original complete RAW plus single whole-actor similarity. No anatomy patch or independent head/limb scale.",
+  "mother_lock": "../F000_registration/F000_LOCK_AND_REGISTRATION.json",
+  "poses": {
+    "F012": {
+      "raw_path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_results/F012/RAW_call01.png",
+      "raw_sha256": "85e0b11756af1435c591e574ea1775039759417770e80c9db6bf7e0503ac26f5",
+      "actual_request_path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_results/F012/ACTUAL_REQUEST.json",
+      "actual_request_sha256": "7f449a3e965f620889277b0f227b7235d34c3b644f51ad0e50009fac32a226a3",
+      "matrix_raw_to_original_scene": [
+        [
+          0.2080663363010601,
+          -0.011752297913605965,
+          248.70339916604883
+        ],
+        [
+          0.011752297913605965,
+          0.2080663363010601,
+          352.7512867367211
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix_raw_to_mother_canvas": [
+        [
+          0.9677504014002796,
+          -0.054661850760957975,
+          73.03906588859913
+        ],
+        [
+          0.054661850760957975,
+          0.9677504014002796,
+          12.796682496377283
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "scene_fingertip": [
+        256.291979992067,
+        484.47117771986757
+      ]
+    },
+    "F027": {
+      "raw_path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_results/F027/RAW_call01.png",
+      "raw_sha256": "947a00df5f90c79af7d76c8edc78ce40b7d994ae7c2ee291a35f974ab5c3ee6a",
+      "actual_request_path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_results/F027/ACTUAL_REQUEST.json",
+      "actual_request_sha256": "8f4f5e010bb24a85f62e11938a32290c2ac9428cb08cc1618119246a42d9989e",
+      "matrix_raw_to_original_scene": [
+        [
+          0.20498982309336322,
+          -0.009658943502665026,
+          248.66718470372578
+        ],
+        [
+          0.009658943502665026,
+          0.20498982309336322,
+          356.85894894528633
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix_raw_to_mother_canvas": [
+        [
+          0.9534410376435499,
+          -0.04492531861704663,
+          72.87062652895712
+        ],
+        [
+          0.04492531861704663,
+          0.9534410376435499,
+          31.902088117610866
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "scene_fingertip": [
+        253.5720771865297,
+        483.84959379953267
+      ]
+    }
+  },
+  "fps": 24,
+  "exposure": [
+    {
+      "pose": "F000",
+      "start_frame": 0,
+      "count": 12
+    },
+    {
+      "pose": "F012",
+      "start_frame": 12,
+      "count": 15
+    },
+    {
+      "pose": "F027",
+      "start_frame": 27,
+      "count": 3
+    },
+    {
+      "pose": "F012",
+      "start_frame": 30,
+      "count": 6
+    }
+  ],
+  "tv_sound_seconds": 1.1,
+  "first_contact_frame": 27,
+  "support_note": "Small whole-actor support residual accepted in current projection/load shift; maximum estimated landmark residual2.54 original-scene px, not zero drift.",
+  "rejected": "All COMPLETE_MOTHER_LEGS_QA_* candidates and masks. Do not use.",
+  "generation_calls_in_this_registration": 0
+}

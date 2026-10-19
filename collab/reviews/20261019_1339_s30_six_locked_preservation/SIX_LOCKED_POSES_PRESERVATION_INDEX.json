@@ -1,0 +1,561 @@
+{
+  "status": "SIX_PARENT_LOCKED_POSES_MINIMAL_PRESERVATION_INDEX",
+  "raw_files_copied": 0,
+  "generation_calls": {
+    "F000_initial": 1,
+    "F000_cutout": 1,
+    "F012": 1,
+    "F027": 1,
+    "F036": 1,
+    "F040": 1,
+    "F048": 1
+  },
+  "poses": {
+    "F000": {
+      "raw": {
+        "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/F000_background_cutout_call02/S30_F000_cutout_call02_RAW.png",
+        "bytes": 1382843,
+        "sha256": "05d17fc6707ad58c84dd8af89fba01d2bb722503213035a6dba92fddf3620b30",
+        "git_blob_sha1": "56cd42a33eecb283b12bb6d91b5f21999efa4eec",
+        "local_reachable_git_matches": [],
+        "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+      },
+      "actual_request": {
+        "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/F000_background_cutout_call02/REQUEST_FROZEN.json",
+        "bytes": 1611,
+        "sha256": "158f84f50233b9a8b5f207fbb7cfc955a989300d878e462defaccbff3962108a",
+        "git_blob_sha1": "930c19a2c10e863f1191985de3ed19e95b272522",
+        "local_reachable_git_matches": [],
+        "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+      },
+      "actual_request_object": {
+        "prompt": "Perform a precise background-removal edit of the single supplied image. Keep the complete girl and the flashlight she holds, in exactly their existing pose, position, scale, proportions, colors, line art and canvas framing. Return a 1024 x 1536 RGBA transparent-background cutout. The girl, both hands and all fingers, both complete arms, head and hair strands, collar, yellow dotted dress, both entire legs and red open-toe sandals, and the complete red/silver flashlight are the only foreground objects. Preserve the original pointing right index finger and her left hand gripping the flashlight in front of the dress. Do not reposition any limb or flashlight, do not improve or redesign the anatomy, and do not change the expression. Remove the entire television, cabinet, room walls, floor, bamboo mat, wall trim, room shadows, and all empty-background pixels, including all negative spaces around and between the limbs and under the skirt. The pointing fingertip ends naturally in empty transparent air; do not add a television button or prop to it. Do not keep any cast shadow, floor patch, room light or opaque rectangle. Set every removed background pixel to actual alpha 0, not a translucent gray or a checkered background. Preserve natural anti-aliased foreground edges without background-colored halos. This is only background removal of the existing image, not a new scene or a new drawing pose.",
+        "referenced_image_paths": [
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/F000_actual_call01_20261019/S30_F000_call01_RAW.png"
+        ],
+        "transparent_background": true
+      },
+      "unique_matrix_raw_to_scene": [
+        [
+          0.215,
+          0,
+          233
+        ],
+        [
+          0,
+          0.215,
+          350
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "scene_canvas": [
+        1672,
+        941
+      ]
+    },
+    "F012": {
+      "raw": {
+        "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_results/F012/RAW_call01.png",
+        "bytes": 1399804,
+        "sha256": "85e0b11756af1435c591e574ea1775039759417770e80c9db6bf7e0503ac26f5",
+        "git_blob_sha1": "1bff92835868015978f89305f8df41ec37728597",
+        "local_reachable_git_matches": [],
+        "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+      },
+      "actual_request": {
+        "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_results/F012/ACTUAL_REQUEST.json",
+        "bytes": 2981,
+        "sha256": "7f449a3e965f620889277b0f227b7235d34c3b644f51ad0e50009fac32a226a3",
+        "git_blob_sha1": "736affd073cfe136a858fa724b1933dd8dec016c",
+        "local_reachable_git_matches": [],
+        "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+      },
+      "actual_request_object": {
+        "prompt": "Draw exactly one complete Xiaoman child figure for approved shot S30 frame 012, on a genuine TRANSPARENT 1024x1536 canvas. Image1 is the ONLY complete new pose target; it is a preposed technical reference, not final artwork. Image2 shows the SAME new complete reaching arm against the actual original television button for contact only; do not draw any television, room, cabinet, wall, floor or shadows. Image3 is head identity and intrinsic materials only. Image4 is white allowed complete moving-body domain, black fixed real feet. There is no competing earlier whole pose.\nACTION: She has leaned very slightly toward the television, approaching but NOT touching the button. Preserve a visibly small air gap. The anatomical FAR RIGHT hand is the forward pointing hand at image-left; the NEAR LEFT hand continues securely holding the SAME red flashlight low in front of the skirt. Keep the flashlight attached to its real grasp and its original size. Do not switch hands, release the lamp, press a flashlight switch, or draw another object. Her head/neck/chest/waist lean together with both complete legs naturally supporting the SAME stationary thin red open-toe sandals. Both whole soles keep the original exact floor contacts. No step, raised heel, widened stance, independent foot sliding, longer leg or stretched forearm.\nRegenerate a coherent natural entire head-neck-chest, short puff sleeves, complete two arms, waist/skirt and legs to the fixed true feet. Remove any minor technical cuff/ankle compositing edges from Image1; make continuous anatomy and natural cloth folds instead. Both hands keep their actual five-finger shapes and uses. The right shoulder-to-elbow-to-wrist chain is complete and bends gently, not rigid pipes. The head looks toward the television, mouth closed, same attentive calm expression. Keep round white collar, dense small white dots, yellow fabric, brown short twin tails/red ties and thin red sandals with visible toes. Match the actual target intrinsic colors without relighting; no glowing room background. Preserve the first image's canvas/camera/framing, complete head and feet, body scale and restrained new pose. Return the complete PERSON plus the held flashlight only with alpha=0 everywhere else. No scene, text, arrows, numbers, border, additional person or additional hands.",
+        "referenced_image_paths": [
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_inputs/F012/01_COMPLETE_NEW_PRESS_POSE_TARGET.png",
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_inputs/F012/02_SAME_POSE_COMPLETE_ARM_REAL_BUTTON_CONTACT.png",
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_inputs/F012/03_HEAD_AND_INNER_MATERIAL_ONLY.png",
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_inputs/F012/04_COMPLETE_MOVING_BODY_WHITE_FIXED_FEET_BLACK.png"
+        ],
+        "transparent_background": true
+      },
+      "unique_matrix_raw_to_scene": [
+        [
+          0.2080663363010601,
+          -0.011752297913605965,
+          248.70339916604883
+        ],
+        [
+          0.011752297913605965,
+          0.2080663363010601,
+          352.7512867367211
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "scene_canvas": [
+        1672,
+        941
+      ]
+    },
+    "F027": {
+      "raw": {
+        "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_results/F027/RAW_call01.png",
+        "bytes": 1420054,
+        "sha256": "947a00df5f90c79af7d76c8edc78ce40b7d994ae7c2ee291a35f974ab5c3ee6a",
+        "git_blob_sha1": "42cead7d10257bb223efc599dc1ac4e203f80a3e",
+        "local_reachable_git_matches": [],
+        "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+      },
+      "actual_request": {
+        "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_results/F027/ACTUAL_REQUEST.json",
+        "bytes": 3112,
+        "sha256": "8f4f5e010bb24a85f62e11938a32290c2ac9428cb08cc1618119246a42d9989e",
+        "git_blob_sha1": "4986232531b7973915ed87c1cabc5a8b78f597ce",
+        "local_reachable_git_matches": [],
+        "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+      },
+      "actual_request_object": {
+        "prompt": "Draw exactly one complete Xiaoman child figure for approved shot S30 frame 027, on a genuine TRANSPARENT 1024x1536 canvas. Image1 is the ONLY complete new pose target; it is a preposed technical reference, not final artwork. Image2 shows the SAME new complete reaching arm against the actual original television button for contact only; do not draw any television, room, cabinet, wall, floor or shadows. Image3 is head identity and intrinsic materials only. Image4 is white allowed complete moving-body domain, black fixed real feet. There is no competing earlier whole pose.\nACTION: Her right index fingertip now makes one gentle press on the actual button. The finger pad reaches the button edge shown in Image2. She has leaned only about 1.5 degrees toward the television; this is a restrained button press, not a lunge or a walking step. The anatomical FAR RIGHT hand is the forward pointing hand at image-left; the NEAR LEFT hand continues securely holding the SAME red flashlight low in front of the skirt. Keep the flashlight attached to its real grasp and its original size. Do not switch hands, release the lamp, press a flashlight switch, or draw another object. Her head/neck/chest/waist lean together with both complete legs naturally supporting the SAME stationary thin red open-toe sandals. Both whole soles keep the original exact floor contacts. No step, raised heel, widened stance, independent foot sliding, longer leg or stretched forearm.\nRegenerate a coherent natural entire head-neck-chest, short puff sleeves, complete two arms, waist/skirt and legs to the fixed true feet. Remove any minor technical cuff/ankle compositing edges from Image1; make continuous anatomy and natural cloth folds instead. Both hands keep their actual five-finger shapes and uses. The right shoulder-to-elbow-to-wrist chain is complete and bends gently, not rigid pipes. The head looks toward the television, mouth closed, same attentive calm expression. Keep round white collar, dense small white dots, yellow fabric, brown short twin tails/red ties and thin red sandals with visible toes. Match the actual target intrinsic colors without relighting; no glowing room background. Preserve the first image's canvas/camera/framing, complete head and feet, body scale and restrained new pose. Return the complete PERSON plus the held flashlight only with alpha=0 everywhere else. No scene, text, arrows, numbers, border, additional person or additional hands.",
+        "referenced_image_paths": [
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_inputs/F027/01_COMPLETE_NEW_PRESS_POSE_TARGET.png",
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_inputs/F027/02_SAME_POSE_COMPLETE_ARM_REAL_BUTTON_CONTACT.png",
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_inputs/F027/03_HEAD_AND_INNER_MATERIAL_ONLY.png",
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_inputs/F027/04_COMPLETE_MOVING_BODY_WHITE_FIXED_FEET_BLACK.png"
+        ],
+        "transparent_background": true
+      },
+      "unique_matrix_raw_to_scene": [
+        [
+          0.20498982309336322,
+          -0.009658943502665026,
+          248.66718470372578
+        ],
+        [
+          0.009658943502665026,
+          0.20498982309336322,
+          356.85894894528633
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "scene_canvas": [
+        1672,
+        941
+      ]
+    },
+    "F036": {
+      "raw": {
+        "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_results/F036/RAW_call01.png",
+        "bytes": 1328905,
+        "sha256": "ad14983b1c751ec85943c3d8ddb36e23d11ad3bb20b4ce5f2b8635c4379813d0",
+        "git_blob_sha1": "6e4b994d9208e0bc25e399b19a44ef4bb3b2b40d",
+        "local_reachable_git_matches": [],
+        "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+      },
+      "actual_request": {
+        "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_results/F036/ACTUAL_REQUEST.json",
+        "bytes": 3787,
+        "sha256": "1d7cac88fd3f2bd5662ec6fd6a82f13ba988627657b4e5f67a991abf19079473",
+        "git_blob_sha1": "f5d5802e485be7b146accdb6fb417b51e85f32ee",
+        "local_reachable_git_matches": [],
+        "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+      },
+      "actual_request_object": {
+        "prompt": "Draw exactly one complete Xiaoman child for approved S30 frame 036, on a genuinely TRANSPARENT 1024x1536 canvas.\nINPUT ROLES: Image1 is the ONLY full new pose target: a freshly drawn technical volume reference, not finished art. Regenerate coherent natural anatomy and cloth around that entire new pose. Image2 annotates the SAME new pose, blue anatomical RIGHT and magenta anatomical LEFT with complete supporting chains; use it only to disambiguate hands and feet. Image3 is the locked head identity and intrinsic material reference ONLY, not its earlier head angle, whole stance or pose. Image4 is the exact original flashlight and genuine LEFT-hand grasp reference ONLY, not an instruction to reuse its old spatial placement. No earlier complete person or competing pose is supplied.\nACTION: At the first footstep at 1.5 seconds she has released the TV button and turns her COMPLETE head-neck-chest and both shoulders away from the TV into a restrained near-frontal three-quarter view, looking along the route toward the camera and a little image-left. Her anatomical RIGHT foot has made the first new landing and accepts her weight. Her anatomical LEFT foot is behind her with its toes still on the earlier floor contact and its heel lifted naturally; the entire hip-knee-ankle-toe chain must explain that lift. The right hand has relaxed fully from pointing and swings low behind; no pointing at any object.\nNECKLINE: The round white front collar turns naturally with her near-frontal chest.\nCONTINUITY: The anatomical LEFT hand keeps holding the SAME red flashlight throughout. Never swap hands, add another object, put it down, press its switch or make it disappear. Its lens remains low and tilted toward the floor; its intrinsic size and true wrapped five-finger grip match Image4. The flashlight is already on, but output NO beam, halo or glow; scene lighting is separate. The anatomical RIGHT arm is free, complete and relaxed. Keep the two full arms distinct, with natural shoulder, elbow, forearm, wrist and five-finger hand connections. Preserve natural projected child proportions and the same underlying head-to-body, arm and leg lengths as the locked identity. Depth foreshortening is allowed; stretching or independently scaling head, legs, arms or sandals is not.\nRedraw the complete head, hair, neck, torso, both shoulders, two arms, both hands, waist, full skirt, two full legs and thin red open-toe sandals in this NEW pose. Do not trace the technical flat face, pipe-like construction edges or annotations. Use a closed relaxed mouth and attentive calm gaze along her route, no grin or new emotion. Preserve short brown twin tails with red ties, round white collar, short puff sleeves, dense small white dots on the yellow dress, child-sized thin red sandals and visible toes. Match the actual locked colors in Image3 without relighting. Keep the complete head including hair tuft and both complete feet within the target canvas. No television, doorway, wall, floor, floor marks, shadows, letters, numbers, arrows, bones, annotations, frame, additional person or additional limbs. Return only the complete person and the held flashlight, with alpha=0 everywhere else.",
+        "referenced_image_paths": [
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/F036/01_COMPLETE_NEW_WALK_POSE_TARGET.png",
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/F036/02_SAME_POSE_SUPPORT_CHAINS.png",
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/03_LOCKED_HEAD_ID_AND_MATERIAL_ONLY.png",
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/04_LOCKED_LEFT_GRASP_FLASHLIGHT_ONLY.png"
+        ],
+        "transparent_background": true
+      },
+      "unique_matrix_raw_to_scene": [
+        [
+          0.235,
+          0,
+          223.3873031708705
+        ],
+        [
+          0,
+          0.235,
+          356.2684876758173
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "scene_canvas": [
+        1672,
+        941
+      ]
+    },
+    "F040": {
+      "raw": {
+        "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_results/F040/RAW_call01.png",
+        "bytes": 1440118,
+        "sha256": "2388c4cc879c419db03f0965ad9e53baa2eee2e905fea5ff588ec73b049995b7",
+        "git_blob_sha1": "126e09269d22fe0851d96edc4d7633aec0c4f470",
+        "local_reachable_git_matches": [],
+        "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+      },
+      "actual_request": {
+        "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_results/F040/ACTUAL_REQUEST.json",
+        "bytes": 4251,
+        "sha256": "2a3680e63bed158ce151ce63eb8bc2738e3cfe9096195d8c5337be08bd101f2a",
+        "git_blob_sha1": "379eb61cb1fcec4bb0e5b3159bd29242eb28615b",
+        "local_reachable_git_matches": [],
+        "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+      },
+      "actual_request_object": {
+        "prompt": "Draw exactly one complete Xiaoman child for approved S30 frame 040, on a genuinely TRANSPARENT 1024x1536 canvas.\nINPUT ROLES: Image1 is the ONLY full new pose target: a freshly drawn technical volume reference, not finished art. Regenerate coherent natural anatomy and cloth around that entire new pose. Image2 annotates the SAME new pose, blue anatomical RIGHT and magenta anatomical LEFT with complete supporting chains; use it only to disambiguate hands and feet. Image3 is the locked head identity and intrinsic material reference ONLY, not its earlier head angle, whole stance or pose. Image4 is the exact original flashlight and genuine LEFT-hand grasp reference ONLY, not an instruction to reuse its old spatial placement. No earlier complete person or competing pose is supplied.\nACTION: This is the first sampled frame after the existing 1.65-second camera cut. The SAME world walk toward the south wall is now seen from behind and slightly from her anatomical right, moving toward image-right. This is an actual new rear-three-quarter drawing, never a mirrored earlier person. Her anatomical RIGHT foot supports her full weight on its planted complete sole. The anatomical LEFT leg is passing with its entire sandal clearly lifted from the floor; no second landing has happened yet. Head, neck, chest, both shoulders and pelvis all agree with this rear-three-quarter view. The free right arm is now on the camera-nearer image-right side. The left hand with flashlight is on the image-left side and still visibly connects through the entire left arm.\nNECKLINE: Use the actual rear collar/back neckline detail on the right of Image3: a CLOSED shallow U-shaped back neckline hugging the bare nape, with a continuous shallow white rounded back collar matching the turnaround. The nape, shoulders and upper back all turn together. Do not copy the large FRONT chest collar petals or a front opening onto her back; no yellow dress band across the bare nape.\nCONTINUITY: The anatomical LEFT hand keeps holding the SAME red flashlight throughout. Never swap hands, add another object, put it down, press its switch or make it disappear. Its lens remains low and tilted toward the floor; its intrinsic size and true wrapped five-finger grip match Image4. The flashlight is already on, but output NO beam, halo or glow; scene lighting is separate. The anatomical RIGHT arm is free, complete and relaxed. Keep the two full arms distinct, with natural shoulder, elbow, forearm, wrist and five-finger hand connections. Preserve natural projected child proportions and the same underlying head-to-body, arm and leg lengths as the locked identity. Depth foreshortening is allowed; stretching or independently scaling head, legs, arms or sandals is not.\nRedraw the complete head, hair, neck, torso, both shoulders, two arms, both hands, waist, full skirt, two full legs and thin red open-toe sandals in this NEW pose. Do not trace the technical flat face, pipe-like construction edges or annotations. Use a closed relaxed mouth and attentive calm gaze along her route, no grin or new emotion. Preserve short brown twin tails with red ties, round white collar, short puff sleeves, dense small white dots on the yellow dress, child-sized thin red sandals and visible toes. Match the actual locked colors in Image3 without relighting. Keep the complete head including hair tuft and both complete feet within the target canvas. No television, doorway, wall, floor, floor marks, shadows, letters, numbers, arrows, bones, annotations, frame, additional person or additional limbs. Return only the complete person and the held flashlight, with alpha=0 everywhere else.",
+        "referenced_image_paths": [
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/F040/01_COMPLETE_NEW_WALK_POSE_TARGET.png",
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/F040/02_SAME_POSE_SUPPORT_CHAINS.png",
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/03_LOCKED_ID_MATERIAL_REAR_NECK_ONLY.png",
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/04_LOCKED_LEFT_GRASP_FLASHLIGHT_ONLY.png"
+        ],
+        "transparent_background": true
+      },
+      "unique_matrix_raw_to_scene": [
+        [
+          0.62,
+          0,
+          -70
+        ],
+        [
+          0,
+          0.62,
+          50
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "scene_canvas": [
+        1920,
+        1080
+      ]
+    },
+    "F048": {
+      "raw": {
+        "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_results/F048/RAW_call01.png",
+        "bytes": 1417285,
+        "sha256": "7a2b874f1b7d617cf941a16086fcee9792e3ac102a32a437d35fe3224cd23b46",
+        "git_blob_sha1": "87ffffff289d6ec345ab42a3553fd9be0aed72c5",
+        "local_reachable_git_matches": [],
+        "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+      },
+      "actual_request": {
+        "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_results/F048/ACTUAL_REQUEST.json",
+        "bytes": 4134,
+        "sha256": "91dd0472bcbf62df2a680a38e1a2084a26d55489386fc864087a0c6eeaddfda0",
+        "git_blob_sha1": "f58e3663c0331b53ee503a2b6bbf532ac28052d7",
+        "local_reachable_git_matches": [],
+        "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+      },
+      "actual_request_object": {
+        "prompt": "Draw exactly one complete Xiaoman child for approved S30 frame 048, on a genuinely TRANSPARENT 1024x1536 canvas.\nINPUT ROLES: Image1 is the ONLY full new pose target: a freshly drawn technical volume reference, not finished art. Regenerate coherent natural anatomy and cloth around that entire new pose. Image2 annotates the SAME new pose, blue anatomical RIGHT and magenta anatomical LEFT with complete supporting chains; use it only to disambiguate hands and feet. Image3 is the locked head identity and intrinsic material reference ONLY, not its earlier head angle, whole stance or pose. Image4 is the exact original flashlight and genuine LEFT-hand grasp reference ONLY, not an instruction to reuse its old spatial placement. No earlier complete person or competing pose is supplied.\nACTION: At the second footstep at 2.0 seconds, keep the same rear-three-quarter viewpoint and image-right travel as F040. The anatomical LEFT foot now makes the next forward landing with the complete sole accepting weight. The anatomical RIGHT foot trails behind, toes still touching the floor at its own depth and heel raised; show the whole bent/supporting leg chain instead of lifting or sliding only the shoe. Her free anatomical right arm swings gently forward in counter-motion to the leading left leg, while the lamp-holding left arm stays controlled and low. Neither arm crosses the other, and both complete elbow/wrist/hand chains stay readable.\nNECKLINE: Use the actual rear collar/back neckline detail on the right of Image3: a CLOSED shallow U-shaped back neckline hugging the bare nape, with a continuous shallow white rounded back collar matching the turnaround. The nape, shoulders and upper back all turn together. Do not copy the large FRONT chest collar petals or a front opening onto her back; no yellow dress band across the bare nape.\nCONTINUITY: The anatomical LEFT hand keeps holding the SAME red flashlight throughout. Never swap hands, add another object, put it down, press its switch or make it disappear. Its lens remains low and tilted toward the floor; its intrinsic size and true wrapped five-finger grip match Image4. The flashlight is already on, but output NO beam, halo or glow; scene lighting is separate. The anatomical RIGHT arm is free, complete and relaxed. Keep the two full arms distinct, with natural shoulder, elbow, forearm, wrist and five-finger hand connections. Preserve natural projected child proportions and the same underlying head-to-body, arm and leg lengths as the locked identity. Depth foreshortening is allowed; stretching or independently scaling head, legs, arms or sandals is not.\nRedraw the complete head, hair, neck, torso, both shoulders, two arms, both hands, waist, full skirt, two full legs and thin red open-toe sandals in this NEW pose. Do not trace the technical flat face, pipe-like construction edges or annotations. Use a closed relaxed mouth and attentive calm gaze along her route, no grin or new emotion. Preserve short brown twin tails with red ties, round white collar, short puff sleeves, dense small white dots on the yellow dress, child-sized thin red sandals and visible toes. Match the actual locked colors in Image3 without relighting. Keep the complete head including hair tuft and both complete feet within the target canvas. No television, doorway, wall, floor, floor marks, shadows, letters, numbers, arrows, bones, annotations, frame, additional person or additional limbs. Return only the complete person and the held flashlight, with alpha=0 everywhere else.",
+        "referenced_image_paths": [
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/F048/01_COMPLETE_NEW_WALK_POSE_TARGET.png",
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/F048/02_SAME_POSE_SUPPORT_CHAINS.png",
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/03_LOCKED_ID_MATERIAL_REAR_NECK_ONLY.png",
+          "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/04_LOCKED_LEFT_GRASP_FLASHLIGHT_ONLY.png"
+        ],
+        "transparent_background": true
+      },
+      "unique_matrix_raw_to_scene": [
+        [
+          0.62,
+          0,
+          172.41999999999996
+        ],
+        [
+          0,
+          0.62,
+          36.980000000000004
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "scene_canvas": [
+        1920,
+        1080
+      ]
+    }
+  },
+  "initial_F000_generation_dependency": {
+    "actual_request": {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/F000_actual_call01_20261019/ACTUAL_REQUEST.json",
+      "bytes": 4341,
+      "sha256": "99e2584a791a95ec33a5b8c7228ef4cd833839a266f6b13ef890eba5fbdd6ade",
+      "git_blob_sha1": "b1d5831805a15ec9d2a43fac8a021f4896fc10d5",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    "actual_request_object": {
+      "prompt": "《来电》S30 首母单张，电视旁、按关机键之前。仅生成这一张完整人物画稿，不出接触表、不扩成动作序列。\n\n本次引用顺序与权限：\n1. F000_TARGET_TECHNICAL.png：唯一完整姿势参考，必须以此新完整头胸骨盆、双臂双手、双腿鞋的空间关系作姿势。它是解析技术图，不能复制其简化脸、示意颜色、腕部示意线或文字；要把它画成真实小满的连续柔软人体体量。右手食指与按钮有清楚小间隙，左手低握手电。技术块电视不生成。\n2. REF02_S28_F066_HEAD_COLLAR_ONLY.png：只有头/领胸身份和固有色，不包含另一个完整旧姿。继承近黑发、低双马尾红绒球、孩子脸、白领和黄裙的形状材色。图中窄眼只作身份，不复制表情；本镜睁眼看按键，头颈胸一起转向按键。\n3. REF03_S09_REAL_FLASHLIGHT_GRIP_ONLY.png：只有同一红筒手电和真实手指包筒细节；红筒、银色镀铬扩口灯头、黑开关和尾盖必须保留。只借鉴接触，不复制双手横捧；本镜左单手低握、右手按电视。\n4. REF04_ORIGINAL_TV_BUTTON_SPACE.png：原西墙电视/柜的按钮位置和朝向核验，保持场景已有位置，不生成现代电视。完整原景及全三视只留在来源目录，不作为本次多姿引用。\n5. F000_CONTACT_TARGETS.png：与第1图严格同姿，只放大右手留隙及左掌包筒，不给第二套手型。\n\n首母动作：小满已经站在电视前，双脚平稳承重，正要按关机键。近左手在左大腿外侧低持一直亮着的旧手电，灯头斜向下方，位于裙摆外侧，光束后期合成；手电不得穿过裙子、膝盖、腿或鞋。远右手向电视实体按钮伸过去，食指指腹距按钮表面保留清楚的小间隙，尚未按下。头、颈根、胸廓一起微向电视；目光落在按键，不看镜头；肩放松，不扭颈、不耸单肩。\n\n右臂必须从泡泡袖中的肩根，经完整上臂厚度、清楚肘尖与肘内褶、前臂到手腕连续画出。手腕自然延伸，食指稍伸，其余手指自然弯曲；不能从胸口长出前臂，不能两臂相交，不能把远臂画成细杆。右腕和手掌与躯干之间有可读负形。\n左臂承担手电重量：上臂自然垂下，肘轻弯，前臂到腕有体量和自然收细；掌心包住红筒，拇指与四指形成真实包握关系；前侧手指遮住筒身的一部分、后侧筒缘仍可读。不把灯悬在掌外，不用一圈手镯冒充握持。左右手不交换，右手不同时拿灯。\n\n全身必须有承重：胸廓在骨盆上方，骨盆位于两脚支撑面内，前后脚轻微错开但都平踩；膝盖微松，膝到胫骨到踝到足背连续，凉鞋薄平底贴地，无坡跟、脚尖立地、断踝或悬空。裙子包住腰/髋/大腿，有前后层次，不用宽裙藏掉断腿。\n\n保持完整人物，从呆毛到两只鞋底全在画内；允许后期人物整体注册，不拆旋四肢、不拼旧头手、不代码拉伸。只有固有色和很轻的体积明暗，无房间强光、无大黑影。开镜仍日光灯亮、电视开，灯光后期统一合成。输出人物与手电；若技术target画了电视接触校验块，它只作位置参考，不生成完整场景、不重画电视。\n\n禁止：乌龟/签子、奶奶、手机、额外手指、额外手臂、腕缝、球关节、硬管手臂、裙下双腿并成一条、厚底鞋、旧 x30 拉绳姿势、骨架数字或文字标注。\n\n鞋身份须延续小满：红色薄平底露趾凉鞋，能见自然脚趾，红踝带和小圆扣；不照抄技术图的封闭灰鞋面，不画厚底或楔跟。\n",
+      "referenced_image_paths": [
+        "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/input_gate/F000_TARGET_TECHNICAL.png",
+        "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/input_gate/REF02_S28_F066_HEAD_COLLAR_ONLY.png",
+        "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/input_gate/REF03_S09_REAL_FLASHLIGHT_GRIP_ONLY.png",
+        "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/input_gate/REF04_ORIGINAL_TV_BUTTON_SPACE.png",
+        "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/input_gate/F000_CONTACT_TARGETS.png"
+      ],
+      "transparent_background": true
+    }
+  },
+  "deduplicated_actual_reference_inputs": [
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/F000_actual_call01_20261019/S30_F000_call01_RAW.png",
+      "bytes": 2053566,
+      "sha256": "8f0c366518cce4e5f03573d25b135f2919e55823c7692fa755d4617a3949b960",
+      "git_blob_sha1": "f7455ced9d8337eceb45120f78cec03f0d6e71b8",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_inputs/F012/01_COMPLETE_NEW_PRESS_POSE_TARGET.png",
+      "bytes": 660866,
+      "sha256": "3df3e606dcf3160f53473fb23d8eef20c57c55a4c36705aa91d00b6f8d40c022",
+      "git_blob_sha1": "77da8856c27ef8c72ef62324e52539707f7d0254",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_inputs/F012/02_SAME_POSE_COMPLETE_ARM_REAL_BUTTON_CONTACT.png",
+      "bytes": 265684,
+      "sha256": "51bb85120d0b049e3bd1e285c924f69b452ab71d9e2674c276245ed206c2ded7",
+      "git_blob_sha1": "c2d44b7de23aa9a580282dee926aabb8c6d7a188",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_inputs/F012/03_HEAD_AND_INNER_MATERIAL_ONLY.png",
+      "bytes": 122325,
+      "sha256": "2023b1d89d06001b11957e6edd7ed8841d6c00ad5381d20c2ee38a26f6ba5a65",
+      "git_blob_sha1": "1f1b3dffe833bbec08723d1b3cc262dd407ea22b",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_inputs/F012/04_COMPLETE_MOVING_BODY_WHITE_FIXED_FEET_BLACK.png",
+      "bytes": 4375,
+      "sha256": "26556362fbb9fac83474f36d5af01528bb5acb31bb7024b41fb67e8373122f04",
+      "git_blob_sha1": "631f299f00945869ac11becac63f96f2179a055d",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_inputs/F027/01_COMPLETE_NEW_PRESS_POSE_TARGET.png",
+      "bytes": 662480,
+      "sha256": "14469fa7f0b4fbf42d7a96b613c8cc17237430e570f0399b4ad0cc83a28e3213",
+      "git_blob_sha1": "bfca53e6edfe234ad59d8cd93621a045617dc69c",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_inputs/F027/02_SAME_POSE_COMPLETE_ARM_REAL_BUTTON_CONTACT.png",
+      "bytes": 276641,
+      "sha256": "059cfb1c7ef5be616cbe172734027363c76825f965770149d0b5ac31be57f22d",
+      "git_blob_sha1": "8bb1650a37c34586371a90c519a29d7d48fef610",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_inputs/F027/03_HEAD_AND_INNER_MATERIAL_ONLY.png",
+      "bytes": 122325,
+      "sha256": "2023b1d89d06001b11957e6edd7ed8841d6c00ad5381d20c2ee38a26f6ba5a65",
+      "git_blob_sha1": "1f1b3dffe833bbec08723d1b3cc262dd407ea22b",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/actual_press_012_027_inputs/F027/04_COMPLETE_MOVING_BODY_WHITE_FIXED_FEET_BLACK.png",
+      "bytes": 4375,
+      "sha256": "26556362fbb9fac83474f36d5af01528bb5acb31bb7024b41fb67e8373122f04",
+      "git_blob_sha1": "631f299f00945869ac11becac63f96f2179a055d",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/F036/01_COMPLETE_NEW_WALK_POSE_TARGET.png",
+      "bytes": 168800,
+      "sha256": "9a75441fa56352a5e89ef7f05b38679e7abb5ee067f08b959e213b6c3861fdf6",
+      "git_blob_sha1": "951ff93b69ea2c3652e3f68b236dcb37a3b51d3e",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/F036/02_SAME_POSE_SUPPORT_CHAINS.png",
+      "bytes": 203022,
+      "sha256": "8877998e28396b64025708b5c2edc1e69fe66f6528a1a180f3e11fd2dc4ac1be",
+      "git_blob_sha1": "5bd85895cda94731806513e71c292cca47509a5b",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/03_LOCKED_HEAD_ID_AND_MATERIAL_ONLY.png",
+      "bytes": 201639,
+      "sha256": "e4360c1884e0798e931b7f5ed0adb528e2334c9d80a5cf10f13f9d9ed6a8782a",
+      "git_blob_sha1": "86124e65f75886a1460c0de514709d568cc52ea7",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/04_LOCKED_LEFT_GRASP_FLASHLIGHT_ONLY.png",
+      "bytes": 68008,
+      "sha256": "3986da20e9e4feff641a5a5a18ca892c77cfb06d498f0f430c4d68ecabaccef0",
+      "git_blob_sha1": "5dd5909076145a7b783d5a081d4896ec477946a2",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/F040/01_COMPLETE_NEW_WALK_POSE_TARGET.png",
+      "bytes": 163196,
+      "sha256": "fd0aeb52bb77d8b16cb331d97bf0d0ecd435d04658e0e24fbf31d3f514d6d599",
+      "git_blob_sha1": "0084ac0f9fc4048992fe8b3b4963e3f85f23e44e",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/F040/02_SAME_POSE_SUPPORT_CHAINS.png",
+      "bytes": 198099,
+      "sha256": "896716d43296b4ce2541c8aadc2f833c80cb941fcc2fd9a37cc8e0f7cce46043",
+      "git_blob_sha1": "1138c5bfc0282b0f4473d1861e9ebd3330d8d50c",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/03_LOCKED_ID_MATERIAL_REAR_NECK_ONLY.png",
+      "bytes": 211513,
+      "sha256": "eedd5c1c55c31f3d22c228a3b4333b50ae8db1ccdcc117307b1c386aa81e7920",
+      "git_blob_sha1": "0b04bd654073334bf96cf56b2cff3019bd4b9359",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/F048/01_COMPLETE_NEW_WALK_POSE_TARGET.png",
+      "bytes": 169583,
+      "sha256": "89470960a55345e1c090f5d0b8bc732aae1206b1311f569df897f86afefebaed",
+      "git_blob_sha1": "79ff9ce7d129ef23b03093d04fc6a7e3c654608c",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_gate/F048/02_SAME_POSE_SUPPORT_CHAINS.png",
+      "bytes": 212228,
+      "sha256": "21996e9b1a8ab98e3eb4505086d4599a1b0fa32655a5b418e10931404faa235b",
+      "git_blob_sha1": "f781d7ff6f7e8538178a7cbdc240eb7cdb996fd1",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/input_gate/F000_TARGET_TECHNICAL.png",
+      "bytes": 162395,
+      "sha256": "42822a31d5ad0bad4126492dc0ec8939dc603ffc9c9bddf0b6f346cc0be7e4dc",
+      "git_blob_sha1": "4485c4f7f38646d48e01bf91ed6d52fafb637c5d",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/input_gate/REF02_S28_F066_HEAD_COLLAR_ONLY.png",
+      "bytes": 276371,
+      "sha256": "7531e76b9cebd2c329322be751bd92307dd065b14aaecb7292f66c4fb13db64e",
+      "git_blob_sha1": "ad004ace353f860c44f9baa4d60f149a093c847c",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/input_gate/REF03_S09_REAL_FLASHLIGHT_GRIP_ONLY.png",
+      "bytes": 138279,
+      "sha256": "5e5a27ef135484c173d5ab7c91c515e553f8ed480eca60917f47e86c1fb4ed0d",
+      "git_blob_sha1": "6e3e66d32c6fec0a28918df2169c95b2c96c5d2f",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/input_gate/REF04_ORIGINAL_TV_BUTTON_SPACE.png",
+      "bytes": 117204,
+      "sha256": "6d324f853b94b7e0031af4d057c27db8e64132311711c2db9fb20c4f5e456e46",
+      "git_blob_sha1": "34e0b1000c7d7e36751ebc9fb7abd81d55d70ff6",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/input_gate/F000_CONTACT_TARGETS.png",
+      "bytes": 181701,
+      "sha256": "9bfc8e80295a52c5158307e1a89f088c7af062c4afd8047b70488dba4598dba2",
+      "git_blob_sha1": "2f1f2ef6c96ed6fb39a45705992af16e4c9b7135",
+      "local_reachable_git_matches": [],
+      "git_presence_note": "no reachable local git match; remote-only preservation not queried"
+    }
+  ],
+  "fps": 24,
+  "exposure": [
+    {
+      "pose": "F000",
+      "start_frame": 0,
+      "count": 12
+    },
+    {
+      "pose": "F012",
+      "start_frame": 12,
+      "count": 15
+    },
+    {
+      "pose": "F027",
+      "start_frame": 27,
+      "count": 3
+    },
+    {
+      "pose": "F012",
+      "start_frame": 30,
+      "count": 6
+    },
+    {
+      "pose": "F036",
+      "start_frame": 36,
+      "count": 4
+    },
+    {
+      "pose": "F040",
+      "start_frame": 40,
+      "count": 8
+    },
+    {
+      "pose": "F048",
+      "start_frame": 48,
+      "count": 12
+    }
+  ],
+  "camera_cut_seconds": 1.65,
+  "lock_sources": [
+    "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/F000_registration/F000_LOCK_AND_REGISTRATION.json",
+    "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/press_registration_review/LOCKS.json",
+    "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/walk_first_step_results/LOCKS.json"
+  ],
+  "local_git_heads_inspected": {
+    "/workspace/scratch/f060b5601755/laidian_astra_recovered_20261018_0527": "400530a9b1374eecabe4adf17a1a0a7ac1dae591"
+  },
+  "note": "No remote git writes/queries. Empty git matches means unknown remote preservation, not evidence of absence there."
+}
