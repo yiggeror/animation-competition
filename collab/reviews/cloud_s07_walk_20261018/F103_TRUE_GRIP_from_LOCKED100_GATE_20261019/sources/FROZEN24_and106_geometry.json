@@ -1,0 +1,304 @@
+{
+  "status": "PRELIMINARY_TECHNICAL_BATCH_REFERENCE_NOT_NATIVE_INPUT_FROZEN",
+  "states": {
+    "100": [
+      100,
+      102,
+      3,
+      "open approach; all fingertips air; table only"
+    ],
+    "103": [
+      103,
+      105,
+      3,
+      "whole fingers closed around true cubic bail; table remains support"
+    ],
+    "106": [
+      106,
+      107,
+      2,
+      "same whole grip and whole lamp dy=-4.5world; body/shoes fixed; shadow stays"
+    ]
+  },
+  "records": [
+    {
+      "state": "F103_16deg_PROXY_HOLD",
+      "lean_DEGREES_PROPOSAL": 16.0,
+      "source_body_fararm_M": [
+        [
+          0.9612616959383189,
+          -0.27563735581699916
+        ],
+        [
+          0.27563735581699916,
+          0.9612616959383189
+        ]
+      ],
+      "source_body_fararm_t": [
+        225.62707987988415,
+        -381.393734050351
+      ],
+      "shared_hidden_pivot_NOT_ANATOMY": [
+        1469.6922537244031,
+        612.0131793384701
+      ],
+      "scale": 1,
+      "near_sleeve_root": [
+        1461.6962011352998,
+        356.9182169050438
+      ],
+      "far_sleeve_root": [
+        1631.4295343320778,
+        403.5078681369589
+      ],
+      "hand_entry_wrist_DEFINED_BY_COMPLETE_TECH_PALM_NOT_MEASURED": [
+        1695.939126549811,
+        342.90347621183696
+      ],
+      "bail_top_material_reference": [
+        1743.939126549811,
+        334.90347621183696
+      ],
+      "proxy_projected_lengths": [
+        95.0,
+        110.0
+      ],
+      "root_to_wrist": 234.6618014578556,
+      "chosen_2D_proxy_IK_feasible": false,
+      "technical_elbow_NOT_ANATOMY": null,
+      "actual_proxy_lengths": null,
+      "whole_lamp_and_same_whole_hand_translation": [
+        0.0,
+        0.0
+      ],
+      "source_shadow_translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "state": "F103_24deg_PROPOSAL",
+      "lean_DEGREES_PROPOSAL": 24.0,
+      "source_body_fararm_M": [
+        [
+          0.9135454576426009,
+          -0.4067366430758002
+        ],
+        [
+          0.4067366430758002,
+          0.9135454576426009
+        ]
+      ],
+      "source_body_fararm_t": [
+        375.9897572842349,
+        -544.8663742979666
+      ],
+      "shared_hidden_pivot_NOT_ANATOMY": [
+        1469.6922537244031,
+        612.0131793384701
+      ],
+      "scale": 1,
+      "near_sleeve_root": [
+        1497.2763751305872,
+        358.28794810955253
+      ],
+      "far_sleeve_root": [
+        1658.8738489618363,
+        428.04650637560803
+      ],
+      "hand_entry_wrist_DEFINED_BY_COMPLETE_TECH_PALM_NOT_MEASURED": [
+        1695.939126549811,
+        342.90347621183696
+      ],
+      "bail_top_material_reference": [
+        1743.939126549811,
+        334.90347621183696
+      ],
+      "proxy_projected_lengths": [
+        95.0,
+        110.0
+      ],
+      "root_to_wrist": 199.25754885832524,
+      "chosen_2D_proxy_IK_feasible": true,
+      "technical_elbow_NOT_ANATOMY": [
+        1590.7693730378687,
+        375.1420082230397
+      ],
+      "actual_proxy_lengths": [
+        94.9999999999999,
+        110.00000000000009
+      ],
+      "whole_lamp_and_same_whole_hand_translation": [
+        0.0,
+        0.0
+      ],
+      "source_shadow_translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "state": "F106_24deg_PROPOSAL",
+      "lean_DEGREES_PROPOSAL": 24.0,
+      "source_body_fararm_M": [
+        [
+          0.9135454576426009,
+          -0.4067366430758002
+        ],
+        [
+          0.4067366430758002,
+          0.9135454576426009
+        ]
+      ],
+      "source_body_fararm_t": [
+        375.9897572842349,
+        -544.8663742979666
+      ],
+      "shared_hidden_pivot_NOT_ANATOMY": [
+        1469.6922537244031,
+        612.0131793384701
+      ],
+      "scale": 1,
+      "near_sleeve_root": [
+        1497.2763751305872,
+        358.28794810955253
+      ],
+      "far_sleeve_root": [
+        1658.8738489618363,
+        428.04650637560803
+      ],
+      "hand_entry_wrist_DEFINED_BY_COMPLETE_TECH_PALM_NOT_MEASURED": [
+        1695.939126549811,
+        330.54435707010913
+      ],
+      "bail_top_material_reference": [
+        1743.939126549811,
+        322.54435707010913
+      ],
+      "proxy_projected_lengths": [
+        95.0,
+        110.0
+      ],
+      "root_to_wrist": 200.59061704182514,
+      "chosen_2D_proxy_IK_feasible": true,
+      "technical_elbow_NOT_ANATOMY": [
+        1591.9328863344401,
+        366.35918634881136
+      ],
+      "actual_proxy_lengths": [
+        95.00000000000003,
+        109.99999999999999
+      ],
+      "whole_lamp_and_same_whole_hand_translation": [
+        0.0,
+        -12.359119141727836
+      ],
+      "source_shadow_translation": [
+        0,
+        0
+      ]
+    }
+  ],
+  "single_group_lift_native": -12.359119141727836,
+  "single_group_lift_world": -4.5,
+  "body_fararm_between103and106_same_M_t": true,
+  "feet_source_files_unchanged": true,
+  "table_shadow_not_part_of_lifted_object": true,
+  "lamp_only_existing_exact_prop_function_no_object_redesign": true,
+  "whole_grip_rearticulation_proxy_path": [
+    {
+      "fraction": 0.0,
+      "wrist": [
+        1695.939126549811,
+        342.90347621183696
+      ],
+      "elbow": [
+        1590.7693730378687,
+        375.1420082230397
+      ],
+      "projection_proxy_feasible": true
+    },
+    {
+      "fraction": 0.16666666666666666,
+      "wrist": [
+        1695.939126549811,
+        340.843623021549
+      ],
+      "elbow": [
+        1590.9981773435036,
+        373.81932892269987
+      ],
+      "projection_proxy_feasible": true
+    },
+    {
+      "fraction": 0.3333333333333333,
+      "wrist": [
+        1695.939126549811,
+        338.783769831261
+      ],
+      "elbow": [
+        1591.2157451167272,
+        372.4440339600653
+      ],
+      "projection_proxy_feasible": true
+    },
+    {
+      "fraction": 0.5,
+      "wrist": [
+        1695.939126549811,
+        336.723916640973
+      ],
+      "elbow": [
+        1591.4201763600108,
+        371.0136972063555
+      ],
+      "projection_proxy_feasible": true
+    },
+    {
+      "fraction": 0.6666666666666666,
+      "wrist": [
+        1695.939126549811,
+        334.6640634506851
+      ],
+      "elbow": [
+        1591.6094061963242,
+        369.5253521670148
+      ],
+      "projection_proxy_feasible": true
+    },
+    {
+      "fraction": 0.8333333333333334,
+      "wrist": [
+        1695.939126549811,
+        332.6042102603971
+      ],
+      "elbow": [
+        1591.7811589862708,
+        367.9753537679589
+      ],
+      "projection_proxy_feasible": true
+    },
+    {
+      "fraction": 1.0,
+      "wrist": [
+        1695.939126549811,
+        330.54435707010913
+      ],
+      "elbow": [
+        1591.9328863344401,
+        366.35918634881136
+      ],
+      "projection_proxy_feasible": true
+    }
+  ],
+  "contact_is_technical_not_actual_hands_verified": true,
+  "replace_sources_after_actual100": true,
+  "not_using_legacy100to103_body_translation": true,
+  "limits": [
+    "24degree entire head/chest/blouse plus complete fararm is proposed; 16degree comparison does not close chosen95/110 proxies. These proxies are not measured bones.",
+    "24degree projected IK feasible does not approve shoulder/forearm naturalness, five fingers, or final waist. All are pending actual100/Astra.",
+    "The closed palm is a complete NEW technical volume, not an actual hand image or inherited hanging wrist. No source limb pixels stretched.",
+    "106 body/fararm/shoes fixed to proposed103; only whole hand+whole lamp shares exact dy. Near arm must articulate as a complete chain, not float with the lifted hand.",
+    "No standalone per-state operation mask or native image request is frozen here. Root must replace actual100 sources and prepare complete white/real guards before any103 call."
+  ]
+}

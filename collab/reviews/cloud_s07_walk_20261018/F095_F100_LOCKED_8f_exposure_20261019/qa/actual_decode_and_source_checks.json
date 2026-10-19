@@ -1,0 +1,186 @@
+{
+  "status": "LIMITED_8F_EXPOSURE_DECODE_AND_ACTUAL_VIEW_PASS_PENDING_ASTRA_TIMING_REVIEW",
+  "sources": {
+    "095": {
+      "sha256": "dcf919f412fd379a34ea69329210a418547dcccc089e1b36aa208024a04fdca4",
+      "size": [
+        1672,
+        1080
+      ]
+    },
+    "100": {
+      "sha256": "7dc803e92e69cb90a84465f4b25e64f5ba9ea62b6b3853bd9a66b658f9951b2b",
+      "size": [
+        1960,
+        1080
+      ]
+    },
+    "lamp": {
+      "sha256": "5c2321d12357ed82cee9e582a00f67faa92a8cc32ca0cbc33ae89608443ed29a",
+      "size": [
+        1960,
+        1080
+      ]
+    }
+  },
+  "canvas": [
+    1960,
+    1080
+  ],
+  "registration": "native origin(0,0), canvas extension only, no scale or independent fit",
+  "exposure": {
+    "095": 5,
+    "100": 3,
+    "total": 8,
+    "fps": 24,
+    "expected_duration_seconds": 0.3333333333333333
+  },
+  "static_color_edits": false,
+  "lamp_same_position_composite_RGBA_differing_pixels_alphaGT0": 0,
+  "lamp_alpha_GT0_pixels": 46824,
+  "100_already_contains_original_lamp_not_overlaid_twice": true,
+  "variants": {
+    "gray": {
+      "video_sha256": "0cc149e34cffe3c9c12d2873d69203359d6e2089763d6a574e0ae9400899073f",
+      "width": 1960,
+      "height": 1080,
+      "avg_frame_rate": "24/1",
+      "decoded_frame_count": 8,
+      "duration_seconds": 0.333333,
+      "audio_streams": 0,
+      "classification_all_actual_frames": [
+        {
+          "frame": 0,
+          "state": 95,
+          "expected": 95,
+          "MAE_to095": 0.25325207860922144,
+          "MAE_to100": 4.897241591080877
+        },
+        {
+          "frame": 1,
+          "state": 95,
+          "expected": 95,
+          "MAE_to095": 0.25238441672965484,
+          "MAE_to100": 4.896267479213908
+        },
+        {
+          "frame": 2,
+          "state": 95,
+          "expected": 95,
+          "MAE_to095": 0.25240236835474933,
+          "MAE_to100": 4.896318499622071
+        },
+        {
+          "frame": 3,
+          "state": 95,
+          "expected": 95,
+          "MAE_to095": 0.2523510330057949,
+          "MAE_to100": 4.896270943562611
+        },
+        {
+          "frame": 4,
+          "state": 95,
+          "expected": 95,
+          "MAE_to095": 0.25249275636180396,
+          "MAE_to100": 4.8964532942806755
+        },
+        {
+          "frame": 5,
+          "state": 100,
+          "expected": 100,
+          "MAE_to095": 4.901179453262786,
+          "MAE_to100": 0.27764503023431597
+        },
+        {
+          "frame": 6,
+          "state": 100,
+          "expected": 100,
+          "MAE_to095": 4.90092576845553,
+          "MAE_to100": 0.27751637692113884
+        },
+        {
+          "frame": 7,
+          "state": 100,
+          "expected": 100,
+          "MAE_to095": 4.901320231796422,
+          "MAE_to100": 0.278273652053414
+        }
+      ],
+      "all_decoded_states_correct": true
+    },
+    "dark": {
+      "video_sha256": "d3ba39f161e104075b92eb61760fb9c1ccb751d2cc72f2794a2f5e27895d3354",
+      "width": 1960,
+      "height": 1080,
+      "avg_frame_rate": "24/1",
+      "decoded_frame_count": 8,
+      "duration_seconds": 0.333333,
+      "audio_streams": 0,
+      "classification_all_actual_frames": [
+        {
+          "frame": 0,
+          "state": 95,
+          "expected": 95,
+          "MAE_to095": 1.1482909737969262,
+          "MAE_to100": 7.829083994708995
+        },
+        {
+          "frame": 1,
+          "state": 95,
+          "expected": 95,
+          "MAE_to095": 1.1481772801713277,
+          "MAE_to100": 7.829246189216427
+        },
+        {
+          "frame": 2,
+          "state": 95,
+          "expected": 95,
+          "MAE_to095": 1.148199326026707,
+          "MAE_to100": 7.8292597316704455
+        },
+        {
+          "frame": 3,
+          "state": 95,
+          "expected": 95,
+          "MAE_to095": 1.1481772801713277,
+          "MAE_to100": 7.829246189216427
+        },
+        {
+          "frame": 4,
+          "state": 95,
+          "expected": 95,
+          "MAE_to095": 1.148289241622575,
+          "MAE_to100": 7.829287603930461
+        },
+        {
+          "frame": 5,
+          "state": 100,
+          "expected": 100,
+          "MAE_to095": 7.832564405391786,
+          "MAE_to100": 1.1665203766691863
+        },
+        {
+          "frame": 6,
+          "state": 100,
+          "expected": 100,
+          "MAE_to095": 7.8326549508692365,
+          "MAE_to100": 1.1665006928697406
+        },
+        {
+          "frame": 7,
+          "state": 100,
+          "expected": 100,
+          "MAE_to095": 7.832742504409171,
+          "MAE_to100": 1.1669548374905518
+        }
+      ],
+      "all_decoded_states_correct": true
+    }
+  },
+  "actual_viewed": [
+    "gray actual decoded0/4/5/7 contact sheet",
+    "dark actual decoded0/4/5/7 contact sheet",
+    "gray/dark actual decoded4-to5 sleeve/hand/lamp waist/farhand and complete shoes closeups"
+  ],
+  "visual_result": "No source lamp or shoe-position jump, repeated limb, reopened sleeve/waist cut or unintended light seen in specified actual decoded frames. One locked095-to100 pose change uses the authorized5+3holds; this is not a full-shot continuity or new static acceptance claim."
+}

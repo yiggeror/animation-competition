@@ -1,0 +1,5 @@
+S07 locked095x5→100x3 actual isolated exposure, gray and dark variants. Each MP4 is1960x1080,24fps,8decoded frames,0.333333s,noaudio. No whole-scene render, image generation, git, static/pose edits or color correction.
+
+095 locked1672x1080 is extended at native(0,0) to1960x1080 with no scaling, and the same original fixed lamp is composited once.100 locked1960x1080 already contains that lamp, so it is used directly without double-compositing lampAA. LampRGBA under all46824sourcealpha>0pixels is identical across the two pre-video states. Both source hashes match the requested locks.
+
+All8frames of each MP4 were actually decoded and classified correctly: frames0–4=095,5–7=100. Actual gray/dark decoded0/4/5/7 sheets and decoded4→5 whole sleeve/hand/fixedbail, waist/farhand and complete shoe closeups were viewed. No visible lamp/shoe jump, reopened cloth join, repeated limb or early light was found. This is the authorized isolated8f exposure, not a new static or full-shot acceptance. H264compressionMAE is recorded inqa/actual_decode_and_source_checks.json.
