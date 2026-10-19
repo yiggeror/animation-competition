@@ -1,0 +1,37 @@
+{
+  "Image1": "Exact byte copy of finally locked actual022, never failed022 or raw arm patch.",
+  "material_crop": {
+    "source": "collab/reviews/cloud_s12_20261018/batch_F022_F030_inputs_20261019/inputs/02_locked_F000_materials_ONLY.png",
+    "source_SHA256": "a6a40d2e847b9a9256f20edb46cf8467fe7487deb0dc97448674ec7c7b5e22cd",
+    "crop_xyxy": [
+      0,
+      0,
+      960,
+      890
+    ],
+    "reason": "Keep RGB patches, remove obsolete F012 geometry footer."
+  },
+  "contact_crops": {
+    "source_package_commit": "1651ff2a56a1277d0e9132b688ae44d013da56f8",
+    "target_crop_xyxy": [
+      1030,
+      82,
+      1600,
+      500
+    ],
+    "reason": "Keep approved local contact diagram; remove whole018 ghost and all old shoulder/elbow pose directions.",
+    "removed_old_ghost_rect_source_xyxy": [
+      1030,
+      410,
+      1240,
+      500
+    ],
+    "actual_mother_hand_crop_xyxy": [
+      852,
+      875,
+      1024,
+      972
+    ]
+  },
+  "new_imagegen_calls_input_preparation": 0
+}
