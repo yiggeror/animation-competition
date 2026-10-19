@@ -442,9 +442,9 @@
   "second_context_plate": {
     "native_crop": [
       800,
-      800,
+      900,
       1040,
-      1040
+      1140
     ],
     "scale": 3.8,
     "padding": [
@@ -460,9 +460,10 @@
       [
         0,
         3.8,
-        -2984
+        -3364
       ]
-    ]
+    ],
+    "near_right_and_lower_body_shaft_only": true
   },
   "actual_props_SHA256": "de65eeba034a10fdd1f8f12bb1a2a0bbbd51d6bf946904c17d3a963335424feb",
   "blue_sleeve_cleanup": "SEPARATE small semantic closure only; not part of this hand action or torso redraw",
