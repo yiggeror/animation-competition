@@ -1,0 +1,41 @@
+{
+  "reviewed_utc": "2026-10-19T01:56:32.529803+00:00",
+  "kind": "final_four_static_input_review_only",
+  "new_model_calls": 0,
+  "new_raw_outputs": 0,
+  "in_flight": 0,
+  "actual_images_inspected": [
+    "inputs/01_F000_only_correct_pose.png",
+    "inputs/02_target_shoulders_to_palms_4x.png",
+    "inputs/03_correct_arm_xray.png",
+    "inputs/04_edit_white.png",
+    "qa_only/old_arm_removal_comparison.png"
+  ],
+  "input_SHA256": [
+    "a6d23f92bd8eef585881f1c674c2cbafe5c42b7a9a6696437b72430ae0cefa0a",
+    "2fe09138669ee5db9921a321b9daa5439472dcb39161323d67cef96be829f9c4",
+    "dc81daa6cb5f1fe484b61f30c72917863f4ba9b3cc9cf0d8902c89dcd320b6d3",
+    "d6bff7856fedde907529b454f884d84bf2870e7d55fc28c2887d3d9c6c22ee2f"
+  ],
+  "observations": [
+    "第一张为已有正确体量：近肩/近袖→近L肘→高位镯掌；远R经躯干后接低位裸腕。",
+    "第二张只有第一张同视角肩至双掌的直接4倍放大，没有并排透衣或额外姿态。",
+    "第三张独立显示正确远R隐藏上臂/肘，成图禁止画透；第四张只有单一白可改/黑保护语义。",
+    "清除对照在qa_only：原旧整臂及近袖下旧上臂小块已从中间阶段清掉，最后置入正确全体量。完整旧臂对照不在模型参考。",
+    "原双掌/镯/四前杆和孩子的原抓持关系保留；全身target仍为1672×941，孩子不缩放。"
+  ],
+  "excluded_from_model": [
+    "full call001 raw",
+    "full call002 raw",
+    "old-arm QA images",
+    "inverse protection image",
+    "identity/material crops"
+  ],
+  "limits": [
+    "第一张是人工体量施工输入，不是新生图或完成画稿。",
+    "最终自然衣肉/线条仍待输入门通过后另获执行授权；不在本轮调用。",
+    "颈色/孤立alpha和所有后态未处理；CAM20和偶端接景仍待后核。"
+  ],
+  "outcome": "AUTHOR_FINAL_FOUR_INPUT_CHECK_PASS_PENDING_ASTRA_GATE",
+  "production_ready": false
+}

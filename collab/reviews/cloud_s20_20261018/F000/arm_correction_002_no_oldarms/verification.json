@@ -1,0 +1,35 @@
+{
+  "verified_utc": "2026-10-19T01:57:31.169242+00:00",
+  "baseline": "db31414155abcdd5c13c3280a9a102cd58f696d6",
+  "unique_pose_SHA256": "a6d23f92bd8eef585881f1c674c2cbafe5c42b7a9a6696437b72430ae0cefa0a",
+  "output_canvas": [
+    1672,
+    941
+  ],
+  "input_count": 4,
+  "new_model_calls": 0,
+  "new_raw_outputs": 0,
+  "in_flight": 0,
+  "checks": {
+    "final_four_boundary_applied": true,
+    "only_four_whitelisted_files_in_inputs": true,
+    "old_full_arm_raws_and_QA_excluded_from_model_args": true,
+    "inverse_protection_and_identity_crops_excluded": true,
+    "first_input_is_unchanged_correct_a6d23f92_target": true,
+    "second_input_exact_target_crop_4x_positive_scale_no_marks": true,
+    "third_input_correct_hidden_volume_only": true,
+    "fourth_single_white_mask_same_as_approved": true,
+    "palm_bracelet_front_rods_exact_call001_pixels": true,
+    "child_head_neck_waist_legs_and_outside_white_unchanged": true,
+    "local_clear_stage_removes_old_arm_pixels_without_touching_protection": true,
+    "complete_prompt_starts_with_approved_sentence": true,
+    "prepared_request_unsubmitted_and_unreserved": true,
+    "call002_1671x941_raw_preserved_unscaled": true,
+    "all_existing_tracked_files_and_historical_checksums_unchanged": true,
+    "216_frame_contract_unchanged": true,
+    "syntax_valid_and_no_pyc": true,
+    "actual_four_inputs_and_removal_QA_visually_inspected": true
+  },
+  "production_ready": false,
+  "next_call_authorized": false
+}
