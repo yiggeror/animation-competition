@@ -1,0 +1,45 @@
+{
+  "status": "HEAD_NECK_INPUT_AUTHOR_REVIEW",
+  "new_image_calls": 0,
+  "source_registered039": "collab/reviews/cloud_s20_20261018/F039_whole_source_diagnostic_001/F039_registered_rigid_pair_trial.png",
+  "source_sha256": "cfb2f5a4b8d8881d5685a202a45f79dfb00315e9eee57cb33960ea6175aec40c",
+  "approved_frontal_identity": "collab/refs/xiaoman_turnaround_v4_draft.png",
+  "front_identity_sha256": "816a5d7cfed7c220717ea80d9a9419290135d8543c4f87e4866d804132720d32",
+  "front_guide_similarity": {
+    "scale": 0.9,
+    "translation": [
+      316.3,
+      142.4
+    ],
+    "chin_target": [
+      607,
+      344
+    ]
+  },
+  "only_head_neck_small_collar_edit": true,
+  "whole_body_redraw": false,
+  "hands_or_wrists_in_edit": false,
+  "feet_same_scale_review": "032_036_registered039_feet_same_scale.png",
+  "foot_findings": [
+    "三张均为同一世界画布1:1裁片，近支撑位置基本连续，远脚发生转向/落点变化；静态并排不等同已完成动态滑步验收。",
+    "032红凉鞋到036/039包头鞋存在鞋型漂移，单列记录，本次按指令不动腿鞋。"
+  ],
+  "files": [
+    {
+      "path": "inputs/01_unique_complete_front_head_neck_target.png",
+      "sha256": "06c9bd5474be6f11489b30345622cb15ab6d22d876ee04fc82802862939c1518"
+    },
+    {
+      "path": "inputs/02_same_view_new_head_neck_3x.png",
+      "sha256": "3d174a87db8285faf666aae13e44d2b7d4e6a66e628da598b690c089ccc924f6"
+    },
+    {
+      "path": "inputs/03_head_neck_small_collar_edit_white.png",
+      "sha256": "f1776de451ed45878b0a50c4a3bd537a023949a9fcc7ddbdd495898f2955f576"
+    },
+    {
+      "path": "inputs/04_old_side_face_identity_local_only.png",
+      "sha256": "a0dbcfe60c3caade623b10ba6e65909367fc96b0845edc1be66f1480eb261d1f"
+    }
+  ]
+}
