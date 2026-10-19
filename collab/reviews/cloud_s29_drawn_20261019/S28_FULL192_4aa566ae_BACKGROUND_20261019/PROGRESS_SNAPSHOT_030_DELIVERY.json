@@ -1,0 +1,48 @@
+{
+  "supervisor_pid": 64780,
+  "source_executor_commit": "4aa566ae2714513ef54ae30bc403cf50dde5941c",
+  "source_entry_commit": "8a86a552fba1a822aae0f27ca53e2b0defb4e392",
+  "source_worktree": "/workspace/s28-three-frame-20261019-76c44a19",
+  "output": "/tmp/s28-full192",
+  "started_utc": "2026-10-19T09:39:09Z",
+  "status": "RUNNING",
+  "frames_requested": 192,
+  "real_frame_rendering_no_pose_cache": true,
+  "exact_renderer_sha256": "78f2b4a975165bddfad2145867ab81223542999e7681c3c31342f929a7952acf",
+  "http_pid": 64802,
+  "renderer_pid": 64804,
+  "verified_utc": "2026-10-19T09:49:17Z",
+  "completed_real_frame_count": 21,
+  "last_completed_frame": 20,
+  "ledger_mtime_utc": "2026-10-19T09:49:04.077909+00:00",
+  "last_real_frame": {
+    "frame": 20,
+    "time": 0.8333333333333334,
+    "part": "stage",
+    "elapsedMs": 23860.09999999404,
+    "meta": {
+      "frame": 20,
+      "lockedFrame": 20,
+      "xm": "collab/reviews/20261019_0820_s28_locked_stage_assets/xm/F015.png",
+      "gm": "collab/reviews/20261019_0820_s28_locked_stage_assets/gm/F012.png",
+      "depthWeight": 0,
+      "localArmMask": null,
+      "worldOcclusion": "Host compares true Float32 card ray distance against room/sheet; fullscene review pending",
+      "continuousCollisionProof": false,
+      "materialDepthUpload": "RGBA32F/NEAREST, true ray depth; no bias",
+      "floatUpload": {
+        "floatMatUploads": 1,
+        "maxRayDepthErrorM": 1.1920867049042272e-07,
+        "methodsRestored": true,
+        "originalProgramSlotsUnchanged": true,
+        "programPrefix": "s28_float_depth_20261019_v1__"
+      },
+      "debugOverridesRestored": true
+    },
+    "sha256": "08af29f1b76f6c796c4c4e17166a625486a11dd25d0a760b0e4f8fa47eacd33e",
+    "bytes": 3807139
+  },
+  "renderer_pid_verified_alive": true,
+  "formal_whole_clip_gate": "PENDING",
+  "detached_supervisor_ppid_is_one": true
+}

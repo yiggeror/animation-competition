@@ -1,0 +1,39 @@
+{
+  "frame": 30,
+  "local_gate": "HOLD_ACTION_TARGET_NOT_ACHIEVED",
+  "anatomy_and_opaque_cloth_continuity": "NO_OBVIOUS_HARD_BREAK_OBSERVED",
+  "action_failure": "远肘仍向画面右下展开，腕掌停在偶尾外侧；布沿仍为母000式右侧竖起小唇，没有已批target要求的向左上内收及前折面推进。相对024夹点回落接近000，不能读成继续收折。",
+  "index_coordinates_are_manual_not_measured_3D": true,
+  "manual_raw_pinch_approx": [
+    830,
+    736
+  ],
+  "locked_mother_pinch": [
+    845,
+    744
+  ],
+  "approved_soft_target_pinch": [
+    785,
+    688
+  ],
+  "reasons_not_resolvable_by_global_registration": [
+    "完整远肘屈曲与腕掌方向未形成，单一整母变换不能补出局部缺失动作。",
+    "仍需真实原偶neck3/四杆接层核验；生成偶不能直接采用。"
+  ],
+  "reviewed_actual_images": [
+    "FULL_RAW_ON_GRAY.png",
+    "FAR_COMPLETE_ARM_ACTUAL_RAW_CROP.png",
+    "C1_NEAR_SUPPORT_ACTUAL_RAW_CROP.png",
+    "C2_FAR_PINCH_ACTUAL_RAW_CROP.png",
+    "APPROVED_F030_TARGET",
+    "LOCKED_MOTHER_000",
+    "ACTUAL_F024_RAW"
+  ],
+  "independent_read_only_review": "F030动作门应HOLD。双臂、夹布及布面连续性成立；但远肘腕仍接近000姿态，夹点较024回落，未形成批准target要求的向偶内收与折面推进。整体注册无法补出缺失动作。保留原件，停依赖036，交Astra裁定；无修改或生成。",
+  "requests": 1,
+  "raw_outputs": 1,
+  "retries": 0,
+  "dependent_F036": "NOT_STARTED_STOPPED_ON_ACTUAL_F030_FAILURE",
+  "narrow_wrist_patch": false,
+  "reviewed_utc": "2026-10-19T09:49:17Z"
+}
