@@ -1,0 +1,101 @@
+{
+  "status": "ONE_CORRECT094_LOCAL_ARM_PLAN_ON_EXACT_BODY_DIAGNOSTIC",
+  "body_matrix": [
+    [
+      0.8808256253463345,
+      -0.05865897274477678,
+      53.10534221159776
+    ],
+    [
+      0.0586589727447768,
+      0.8808256253463345,
+      4.105390538904658
+    ]
+  ],
+  "body_raw_SHA256": "c02b78a2d69977c0ea1776f3645a341c03ddb22a4fd2698c303e557f72342d04",
+  "arms": {
+    "R": {
+      "shoulder": [
+        542.8745029977496,
+        461.39316667907394
+      ],
+      "elbow": [
+        666.2288832637848,
+        669.5167196261762
+      ],
+      "wrist": [
+        860.6865274172621,
+        780.3953507209587
+      ],
+      "true_grip": [
+        934.8216809027882,
+        764.5500897836491
+      ],
+      "source_qualified090_upper_projected_proxy_length": 241.9332891979582,
+      "source_qualified090_forearm_projected_proxy_length": 223.8478192951035,
+      "upper_target_projected_length": 241.93328919795823,
+      "forearm_target_projected_length": 223.84781929510345,
+      "natural_outward_branch": 1,
+      "whole_true_hand_matrix_from_final090_same65deg_rod": [
+        [
+          0.9999861815700699,
+          -0.005257058960205287,
+          -22.530650011209786
+        ],
+        [
+          0.005257058960205287,
+          0.9999861815700699,
+          -13.350659962337772
+        ]
+      ],
+      "correct_true_scene_grip": [
+        929.3751766319517,
+        647.1850628485544
+      ]
+    },
+    "L": {
+      "shoulder": [
+        579.5153433574776,
+        442.599710580553
+      ],
+      "elbow": [
+        685.405625662888,
+        638.8557820906874
+      ],
+      "wrist": [
+        823.5364834028757,
+        578.3632026173367
+      ],
+      "true_grip": [
+        900.0493204198561,
+        605.6354417960509
+      ],
+      "source_qualified090_upper_projected_proxy_length": 223.00044280518935,
+      "source_qualified090_forearm_projected_proxy_length": 150.79617379537302,
+      "upper_target_projected_length": 223.0004428051893,
+      "forearm_target_projected_length": 150.79617379537302,
+      "natural_outward_branch": 1,
+      "whole_true_hand_matrix_from_final090_same65deg_rod": [
+        [
+          0.9991912605048366,
+          -0.040209761635151456,
+          -9.203099248858734
+        ],
+        [
+          0.040209761635151456,
+          0.9991912605048366,
+          -84.97226610414623
+        ]
+      ],
+      "correct_true_scene_grip": [
+        905.0345242938993,
+        535.9448092572356
+      ]
+    }
+  },
+  "knee_patch_required": true,
+  "knee_reason": "Normal/native diagnostic retains old far-knee sharp flap and support-boundary bottom truncation; include complete both-knee and upper-shin fold-return small domains, not whole pants.",
+  "frozen_prop_geometry_source": "../F094_COMPLETE_TARGET_FROM_LOCKED090_20261019/geometry/F094_COMPLETE_PERSON_AND_RIGID_PROP_PLAN.json",
+  "new_imagegen": 0,
+  "new098_calls": 0
+}

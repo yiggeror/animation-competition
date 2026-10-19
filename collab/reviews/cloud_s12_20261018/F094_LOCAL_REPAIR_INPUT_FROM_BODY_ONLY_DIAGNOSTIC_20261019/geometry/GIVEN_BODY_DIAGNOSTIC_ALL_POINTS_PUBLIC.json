@@ -1,0 +1,297 @@
+{
+  "status": "EXACT_ASTRA_SINGLE_BODY_DIAGNOSTIC_NOT_GRIP_REPAIR",
+  "source_raw_SHA256": "c02b78a2d69977c0ea1776f3645a341c03ddb22a4fd2698c303e557f72342d04",
+  "raw_to_native_matrix": [
+    [
+      0.8808256253463345,
+      -0.05865897274477678,
+      53.10534221159776
+    ],
+    [
+      0.0586589727447768,
+      0.8808256253463345,
+      4.105390538904658
+    ]
+  ],
+  "scale": 0.8827766746749903,
+  "new_body_registration_diagnostics": 1,
+  "no_search": true,
+  "all_predeclared_points_public_including_failed_grips": {
+    "head_top": {
+      "registered": [
+        595.9909864253624,
+        88.91936303471466
+      ],
+      "target": [
+        620.0,
+        77.0
+      ],
+      "residual_native": [
+        -24.009013574637606,
+        11.919363034714664
+      ],
+      "distance_native": 26.804923950283,
+      "weight_original": 1.0
+    },
+    "head_visible_ear": {
+      "registered": [
+        562.5327871406473,
+        272.4849290115703
+      ],
+      "target": [
+        557.0,
+        282.0
+      ],
+      "residual_native": [
+        5.532787140647315,
+        -9.515070988429727
+      ],
+      "distance_native": 11.006739274579433,
+      "weight_original": 1.0
+    },
+    "chin": {
+      "registered": [
+        665.0056186812446,
+        327.9694151349919
+      ],
+      "target": [
+        675.0,
+        328.0
+      ],
+      "residual_native": [
+        -9.994381318755359,
+        -0.030584865008108864
+      ],
+      "distance_native": 9.994428116638474,
+      "weight_original": 1.0
+    },
+    "hip_visible_proxy": {
+      "registered": [
+        486.5308350349993,
+        869.0413363645418
+      ],
+      "target": [
+        462.55050270751417,
+        872.8903649794456
+      ],
+      "residual_native": [
+        23.980332327485144,
+        -3.849028614903773
+      ],
+      "distance_native": 24.287267442324115,
+      "weight_original": 2.0
+    },
+    "waist_back_hem": {
+      "registered": [
+        355.92647831936523,
+        757.7147640761818
+      ],
+      "target": [
+        341.0,
+        771.0
+      ],
+      "residual_native": [
+        14.92647831936523,
+        -13.285235923818163
+      ],
+      "distance_native": 19.982423490907927,
+      "weight_original": 1.0
+    },
+    "waist_front_hem": {
+      "registered": [
+        685.3646725406412,
+        912.3636534121264
+      ],
+      "target": [
+        691.0,
+        910.0
+      ],
+      "residual_native": [
+        -5.635327459358791,
+        2.363653412126382
+      ],
+      "distance_native": 6.110955164854337,
+      "weight_original": 1.0
+    },
+    "far_complete_knee_turn": {
+      "registered": [
+        726.1389309835694,
+        1216.772660774616
+      ],
+      "target": [
+        721.0,
+        1218.0
+      ],
+      "residual_native": [
+        5.138930983569367,
+        -1.2273392253839575
+      ],
+      "distance_native": 5.283462238727112,
+      "weight_original": 2.0
+    },
+    "near_complete_knee_turn": {
+      "registered": [
+        697.0773315521884,
+        1294.4631747916771
+      ],
+      "target": [
+        685.0,
+        1295.0
+      ],
+      "residual_native": [
+        12.077331552188411,
+        -0.5368252083228526
+      ],
+      "distance_native": 12.089256334687285,
+      "weight_original": 2.0
+    },
+    "knee_loaded_bottom": {
+      "registered": [
+        584.3931335831264,
+        1325.8871307138186
+      ],
+      "target": [
+        616.0,
+        1316.0
+      ],
+      "residual_native": [
+        -31.606866416873572,
+        9.887130713818578
+      ],
+      "distance_native": 33.11720638046369,
+      "weight_original": 2.0
+    },
+    "R_shoulder": {
+      "registered": [
+        542.8745029977496,
+        461.39316667907394
+      ],
+      "target": [
+        542.1883462808678,
+        476.9573234090816
+      ],
+      "residual_native": [
+        0.6861567168817828,
+        -15.564156730007653
+      ],
+      "distance_native": 15.579274237151244,
+      "weight_original": 1.0
+    },
+    "R_elbow": {
+      "registered": [
+        588.9867279604524,
+        685.6470421350472
+      ],
+      "target": [
+        655.6151966775888,
+        690.6535237291218
+      ],
+      "residual_native": [
+        -66.62846871713634,
+        -5.006481594074671
+      ],
+      "distance_native": 66.81629817299238,
+      "weight_original": 1.0
+    },
+    "R_wrist": {
+      "registered": [
+        766.6854556286556,
+        793.916760601456
+      ],
+      "target": [
+        860.6865274172621,
+        780.3953507209587
+      ],
+      "residual_native": [
+        -94.00107178860651,
+        13.521409880497231
+      ],
+      "distance_native": 94.96857386821792,
+      "weight_original": 1.0
+    },
+    "R_true_grip": {
+      "registered": [
+        832.688718556886,
+        799.1970091826605
+      ],
+      "target": [
+        934.8216809027882,
+        764.5500897836491
+      ],
+      "residual_native": [
+        -102.13296234590223,
+        34.64691939901138
+      ],
+      "distance_native": 107.8496686197555,
+      "weight_original": 4.0
+    },
+    "L_shoulder": {
+      "registered": [
+        579.5153433574776,
+        442.599710580553
+      ],
+      "target": [
+        541.7583794089558,
+        445.05907447808016
+      ],
+      "residual_native": [
+        37.75696394852184,
+        -2.4593638975271688
+      ],
+      "distance_native": 37.83697658891945,
+      "weight_original": 1.0
+    },
+    "L_elbow": {
+      "registered": [
+        692.8617286418764,
+        640.365453132518
+      ],
+      "target": [
+        678.8716870685622,
+        620.9258944128042
+      ],
+      "residual_native": [
+        13.990041573314215,
+        19.439558719713887
+      ],
+      "distance_native": 23.950317460114476,
+      "weight_original": 1.0
+    },
+    "L_wrist": {
+      "registered": [
+        800.2619138930351,
+        621.8605867268475
+      ],
+      "target": [
+        823.5364834028757,
+        578.3632026173367
+      ],
+      "residual_native": [
+        -23.274569509840603,
+        43.49738410951079
+      ],
+      "distance_native": 49.332828930021066,
+      "weight_original": 1.0
+    },
+    "L_true_grip": {
+      "registered": [
+        877.2475792029842,
+        648.2210503094446
+      ],
+      "target": [
+        900.0493204198561,
+        605.6354417960509
+      ],
+      "residual_native": [
+        -22.80174121687196,
+        42.58560851339371
+      ],
+      "distance_native": 48.305832515103475,
+      "weight_original": 4.0
+    }
+  },
+  "fixed_real090_RGBA_changes": 0,
+  "new_imagegen": 0,
+  "new098_calls": 0,
+  "native_SHA256": "f226da50ffb1d87d1869dd9a6d0fba026539930e3c3de10de16ba8abe9efdd8e"
+}
