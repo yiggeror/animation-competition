@@ -1,0 +1,24 @@
+{
+  "status": "F036_ACCEPTED_F039_ACTUAL_CONTACT_FAILURE",
+  "batch_actual_requests_including_first_rejected036": 3,
+  "batch_raw_outputs": 3,
+  "actual_requests_this_corrected_packet": 2,
+  "raws_this_corrected_packet": 2,
+  "accepted_unique_states": [
+    36
+  ],
+  "rejected_unique_attempts": [
+    "generation001/F036 attempt1",
+    "generation002/F039 attempt1"
+  ],
+  "not_called_states": [
+    42,
+    45,
+    47,
+    54
+  ],
+  "048_053": "reuse047 only after accepted047; no new call",
+  "last_good": "F036/S20_F036_accepted.png",
+  "blocking_evidence": "F039/actual_child_elbows_wrists_3x.jpg",
+  "failure_is_actual_contact_not_colour_microgate": true
+}
