@@ -1,0 +1,54 @@
+{
+  "status": "CORRECTED_FOUR_INPUTS_PREPARED_NOT_SUBMITTED",
+  "image_model_calls_this_round": 0,
+  "new_raws": 0,
+  "in_flight": 0,
+  "old_full_mother_in_model_references": false,
+  "old_gray_child_body_or_low_arms_in_target": false,
+  "inputs": [
+    {
+      "order": 1,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F008_corrected_input_001/inputs/01_F008_unique_opaque_pose_target.png",
+      "relative_path": "inputs/01_F008_unique_opaque_pose_target.png",
+      "role": "唯一完整新姿态：不透明新孩子体量；奶奶/四签/鞋踝原像素",
+      "sha256": "a38a3499860154e31866926e11e91427030ff66e3917fa518649a61dfecabaef",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "order": 2,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F008_corrected_input_001/inputs/02_same_view_approach_3x.png",
+      "relative_path": "inputs/02_same_view_approach_3x.png",
+      "role": "仅第一图指定裁片的同视角直接3倍放大",
+      "sha256": "8fd47fee1bfeaf1694ebadacd760d19aa320c84a1e0d9a0b6468590e0754d548",
+      "size": [
+        1410,
+        720
+      ]
+    },
+    {
+      "order": 3,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F008_corrected_input_001/inputs/03_head_identity_internal_materials.png",
+      "relative_path": "inputs/03_head_identity_internal_materials.png",
+      "role": "仅头部身份与内部布/肤/发裁片，不含旧全身或完整旧臂",
+      "sha256": "1722c77185efa176a01057419a2d8d208073901fc21f7890ac768a255d2b7e54",
+      "size": [
+        900,
+        600
+      ]
+    },
+    {
+      "order": 4,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F008_corrected_input_001/inputs/04_edit_white.png",
+      "relative_path": "inputs/04_edit_white.png",
+      "role": "唯一白可完稿/黑保护域；沿既批孩子域，另扣真实四签",
+      "sha256": "ab0c79d7fc3c314baeaa632c90a2bcc6a62f3348ad0edd4c7669106cbac648b0",
+      "size": [
+        1672,
+        941
+      ]
+    }
+  ]
+}

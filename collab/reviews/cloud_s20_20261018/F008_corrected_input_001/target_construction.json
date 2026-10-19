@@ -1,0 +1,121 @@
+{
+  "mother_sha256": "55ce8658e3454dcb92e8408dda25bc678f856d82bbb10cd80ff06a01fa0ab0c8",
+  "frozen_008": {
+    "lean": 20,
+    "head_lift": -3,
+    "R_sh": [
+      611,
+      417
+    ],
+    "L_sh": [
+      656,
+      428
+    ],
+    "R_palm": [
+      806,
+      318
+    ],
+    "L_palm": [
+      837,
+      455
+    ],
+    "closed": false,
+    "G_release": false,
+    "R_chain": [
+      [
+        611.0,
+        417.0
+      ],
+      [
+        683.5853201224099,
+        363.78936851786773
+      ],
+      [
+        783.0,
+        330.0
+      ]
+    ],
+    "L_chain": [
+      [
+        656.0,
+        428.0
+      ],
+      [
+        719.0147008694918,
+        468.6712118620587
+      ],
+      [
+        814.0,
+        467.0
+      ]
+    ],
+    "G_R_chain": [
+      [
+        1067,
+        285
+      ],
+      [
+        1076,
+        435
+      ],
+      [
+        984,
+        439
+      ]
+    ]
+  },
+  "head_source_cut": "art/head_identity_only_local.png",
+  "head_offset_px": [
+    20,
+    -3
+  ],
+  "old_child_torso_and_arms_reused": false,
+  "ghost_body_in_target": false,
+  "target_body_opaque": true,
+  "source_ankle_lower_calf_reuse_y": [
+    805,
+    941
+  ],
+  "four_rods_preserve_mask": "local_masks/protect_four_real_rods.png",
+  "third_image_patches": [
+    {
+      "role": "黄裙内布／点纹",
+      "source_box": [
+        567,
+        560,
+        620,
+        620
+      ]
+    },
+    {
+      "role": "肤色内部／不含边缘",
+      "source_box": [
+        550,
+        766,
+        570,
+        797
+      ]
+    },
+    {
+      "role": "头发内部",
+      "source_box": [
+        527,
+        224,
+        558,
+        250
+      ]
+    },
+    {
+      "role": "黄布明面",
+      "source_box": [
+        597,
+        625,
+        635,
+        671
+      ]
+    }
+  ],
+  "image_model_calls": 0,
+  "character_drawings_accepted": 0,
+  "purpose": "Manual opaque INPUT target, never a finished/generated animation frame."
+}
