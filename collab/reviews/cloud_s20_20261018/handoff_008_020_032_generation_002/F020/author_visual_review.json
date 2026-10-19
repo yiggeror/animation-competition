@@ -1,23 +1,30 @@
 {
-  "result": "AUTHOR_REJECTED_DIMENSION_MISMATCH",
+  "result": "AUTHOR_ACCEPTED_AFTER_AUTHORIZED_SAME_RAW_RETURN",
+  "frame": 20,
+  "accepted_png": "S20_F020_accepted.png",
+  "accepted_sha256": "de378cd06028313388cd955e8feb56aef684fd63f5a9f7019fa148aad7885b12",
   "raw_sha256": "1445b6f3fbb24e83fe30bebd32608b539be79d9a0fa209de919cb4fe5f8fa8d6",
-  "original_kept_unmodified": true,
-  "actual_png_IHDR": [
+  "actual_raw_size": [
     1671,
     941
   ],
-  "required_png_IHDR": [
+  "accepted_size": [
     1672,
     941
   ],
-  "width_difference_pixels": -1,
-  "actual_image_seen": true,
-  "pose_contact_gate": "NOT_SIGNED / size gate prevents authorized black-domain registration",
-  "reason": "One column short. User contract forbids resampling, padding or cropping to force required dimensions.",
-  "no_composite_or_repaired_frame": true,
-  "F032_submitted": false,
-  "one_authorized_F020_attempt_consumed": true,
-  "no_retry": true,
-  "cause_claim": "Observed actual PNG dimensions only; no assertion about tool internals.",
-  "reviewed_utc": "2026-10-19T04:20:37.409778+00:00"
+  "authority": "Astra actual content approval plus explicit right transparent-column copy and same-raw mask return permission.",
+  "actual_findings": [
+    "Both complete child shoulder/elbow/wrist chains and opposed finger grips remain readable.",
+    "T_H through nearR and T_S through farL remain distinct, hidden under their actual closed finger/palm surfaces, with visible shafts continuing to the mother supporting hand.",
+    "Grandmother supporting R hand and high jade L hand remain accepted source pixels.",
+    "Initial ankle cut-step from the raw repaint was resolved by retaining accepted008 full lower-leg/ankle/shoe pixels, untransformed, under actual020 skirt.",
+    "Final under-hem and ankle raster crops inspected; no new limb disconnect or rod-through-palm."
+  ],
+  "original_1671_columns_in_copy_unchanged": true,
+  "copy_added_column_only_transparent": true,
+  "original_raw_unchanged": true,
+  "no_scale_or_local_warp": true,
+  "black_domain_RGBA_changes": 0,
+  "next": "F032 one request, retain actual020 whole child and receiver grips exactly.",
+  "reviewed_utc": "2026-10-19T04:33:42.299977+00:00"
 }

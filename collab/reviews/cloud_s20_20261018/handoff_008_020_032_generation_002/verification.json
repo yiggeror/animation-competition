@@ -1,26 +1,52 @@
 {
-  "source_master_55ce_unchanged": true,
-  "F008": "AUTHOR_ACCEPTED",
-  "F008_accepted_sha256": "cc802f284046f978633b41f769cfef4119492f2433207c1e06c0ddc60e5ffbdf",
-  "F008_raw_png_size": [
-    1672,
-    941
+  "status": "THREE_ACTUAL_KEYS_AUTHOR_ACCEPTED",
+  "accepted_frames": [
+    {
+      "frame": 8,
+      "png": "F008/S20_F008_accepted.png",
+      "sha256": "cc802f284046f978633b41f769cfef4119492f2433207c1e06c0ddc60e5ffbdf",
+      "raw_sha256": "ee4bae044c5c4f71faf9d6187e29966d6062be1d6b2da7e97edd8e5a494c5c2f",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "frame": 20,
+      "png": "F020/S20_F020_accepted.png",
+      "sha256": "de378cd06028313388cd955e8feb56aef684fd63f5a9f7019fa148aad7885b12",
+      "raw_sha256": "1445b6f3fbb24e83fe30bebd32608b539be79d9a0fa209de919cb4fe5f8fa8d6",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "frame": 32,
+      "png": "F032/S20_F032_accepted.png",
+      "sha256": "b586eee0eebbd09167d27171eefccf5297b58472a736010ce871497452195b95",
+      "raw_sha256": "9b320725419af0230244de0605b6dcfb6ed9f92d26f211d42f5c0d3ec68718d9",
+      "size": [
+        1672,
+        941
+      ]
+    }
   ],
-  "F008_black_RGBA_changes": 0,
-  "F008_white_exact_actual_model_raw": true,
-  "F020": "AUTHOR_REJECTED_DIMENSION_MISMATCH",
-  "F020_raw_png_size": [
-    1671,
-    941
-  ],
-  "F020_raw_unchanged_no_composite": true,
-  "F032_submitted": false,
-  "new_model_calls": 2,
-  "new_model_raws": 2,
-  "retained_drawings": 1,
-  "cumulative_requests": 6,
-  "cumulative_raws": 6,
+  "F020_original_columns_in_copy_unchanged": true,
+  "F020_only_one_transparent_right_column_added": true,
+  "F020_no_scale_or_local_warp": true,
+  "F020_lower_legs_actual008_untransformed": true,
+  "F020_F032_whole_child_and_receiver_RGBA_changes": 0,
+  "black_domain_RGBA_changes_all_stages": 0,
+  "APNG_three_decoded_frames_exact_source_RGBA": true,
+  "new_model_calls_this_packet": 3,
+  "new_model_raws_this_packet": 3,
+  "cumulative_requests": 7,
+  "cumulative_raws": 7,
   "in_flight": 0,
   "automatic_retries": 0,
-  "production_source_or_shared_docs_changed": []
+  "new_intermediate_states": 0,
+  "source_mother_55ce_unchanged": true,
+  "scene_or_high_crane_gate_signed": false,
+  "production_or_shared_docs_changed": []
 }

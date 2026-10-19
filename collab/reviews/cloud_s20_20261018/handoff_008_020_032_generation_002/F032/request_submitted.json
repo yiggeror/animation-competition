@@ -1,0 +1,66 @@
+{
+  "tool": "image_gen.imagegen",
+  "args": {
+    "prompt": "把第一张完整F032放握新姿态自然完稿。第一张是唯一完整动作底，来自已经通过的020实物：孩子全片、两只实握手与两杆轴线、头身腿脚、奶奶高位带玉镯L臂和两鹤签均保持原像素；只把奶奶低位裸腕远R供应掌改成已张开撤离。原低R闭掌/旧前臂占位已清，第一张已有连续新远前臂与真实拇指加四指开掌轮廓。不得改回闭拳或添回原供应掌。第二张只从第一张放握区直接4倍放大。第三张只有奶奶头部与内部布/肤/发裁片，不含完整旧臂或旧全身。第四张唯一白可完稿、黑保持原RGBA，不反转语义。\n动作因果：020孩子两接收握点已稳，032仍由X.R夹T_H（龟head[20,0]）、X.L握T_S（龟shell[0,40]），两手、指腹对握、腕臂和杆轴按第一张完全不动。奶奶远R原肩(1067,285)→隐在躯干后的肘(1091.357,433.283)→腕(1012,480)，张开掌中心(978,487)，完整前臂带腕向右下撤离；只有远臂正常露出的部分可见，隐藏上臂/肘不能画透到前襟。拇指与四指全部自然张开，与两龟签均留清楚空气，G.R接触数0，不能捏住任何一签或只松拇指。\n两根龟签各自沿原真实硬直轴到独立后端，清除旧掌后应露出的杆段必须接回原轴，不折杆、不软结、不合成一签、不换偶端，杆不穿掌。已过020整张孩子及双握接触、原鞋踝、奶奶高L全臂/玉镯/两鹤签、头颈躯干及黑域可见杆原像素全部保持。孩子不得随奶奶放手漂移、重画或缩放。不是新动作插帧，也不改变高鹤接景、灯或相机。\n只将白域内简化施工体量自然完稿为第一/三张相同二维手绘风格：完整袖口后方臂链、肘腕过渡、掌厚和五指真实，保自然体积与中性固有色，不用圆圈/胶囊假手，不留旧臂双边或旧掌残影。严格1672×941透明两人四杆人物层，仅本态；无文字、骨架、透衣线、场景、偶、灯光、影子或其他帧，不裁切、补边或缩放角色。",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F032/inputs/01_F032_release_target_child020_exact.png",
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F032/inputs/02_release_same_view_4x.png",
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F032/inputs/03_grandma_head_internal_materials_only.png",
+      "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F032/inputs/04_release_only_edit_white.png"
+    ]
+  },
+  "submitted_inputs": [
+    {
+      "order": 1,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F032/inputs/01_F032_release_target_child020_exact.png",
+      "sha256": "7bd7ad72d56ab831c63363649440facde8c81f7e4a540f36d8bc45db795cfb33",
+      "size": [
+        1672,
+        941
+      ],
+      "role": "unique complete release pose, accepted020 child and grips exact"
+    },
+    {
+      "order": 2,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F032/inputs/02_release_same_view_4x.png",
+      "sha256": "bb4f65cb5690ca12f5f1d0911daea6e703aedf0c679c039d167d4c77006ecd9f",
+      "size": [
+        1380,
+        620
+      ],
+      "role": "exact direct same-view release crop4x"
+    },
+    {
+      "order": 3,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F032/inputs/03_grandma_head_internal_materials_only.png",
+      "sha256": "babb86fc33396e508e1cbca5f595fbbb65df29abe969720e7221cde3c86a4e88",
+      "size": [
+        900,
+        600
+      ],
+      "role": "grandma head/material crop only"
+    },
+    {
+      "order": 4,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F032/inputs/04_release_only_edit_white.png",
+      "sha256": "e0ca4051d67156839d3b64bfea02388999658c211ce0066315402c9e4576089e",
+      "size": [
+        1672,
+        941
+      ],
+      "role": "release-only white; child/grips and highL source-black protection"
+    }
+  ],
+  "frame": 32,
+  "attempt_this_state": 1,
+  "maximum_attempts_this_state": 1,
+  "cumulative_request_number": 7,
+  "accepted_actual_predecessor": {
+    "frame": 20,
+    "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_generation_002/F020/S20_F020_accepted.png",
+    "sha256": "de378cd06028313388cd955e8feb56aef684fd63f5a9f7019fa148aad7885b12"
+  },
+  "authorization": "Astra: accepted actual corrected008 -> actual020 ->032; one each, self-review pass before continuation; no extra keys.",
+  "submitted_utc": "2026-10-19T04:43:37.418208+00:00"
+}
