@@ -1,0 +1,393 @@
+{
+  "source_raw_SHA256": "50772cc5cf8c3b55b34d491940a814d488f24d3dab1909114d589a6db03eac4b",
+  "source_size": [
+    1282,
+    1227
+  ],
+  "manual_material_masks_for_measurement_only": {
+    "receiver_hand_domain_poly": [
+      [
+        967,
+        881
+      ],
+      [
+        1025,
+        825
+      ],
+      [
+        1275,
+        825
+      ],
+      [
+        1275,
+        972
+      ],
+      [
+        1035,
+        980
+      ],
+      [
+        982,
+        942
+      ]
+    ],
+    "near_grasp_domain_poly": [
+      [
+        737,
+        609
+      ],
+      [
+        791,
+        601
+      ],
+      [
+        885,
+        615
+      ],
+      [
+        925,
+        649
+      ],
+      [
+        926,
+        730
+      ],
+      [
+        902,
+        765
+      ],
+      [
+        861,
+        798
+      ],
+      [
+        806,
+        813
+      ],
+      [
+        756,
+        794
+      ],
+      [
+        718,
+        743
+      ],
+      [
+        716,
+        670
+      ]
+    ],
+    "prop_domain_poly": [
+      [
+        447,
+        665
+      ],
+      [
+        533,
+        652
+      ],
+      [
+        767,
+        609
+      ],
+      [
+        896,
+        590
+      ],
+      [
+        1048,
+        530
+      ],
+      [
+        1166,
+        496
+      ],
+      [
+        1215,
+        498
+      ],
+      [
+        1243,
+        522
+      ],
+      [
+        1252,
+        569
+      ],
+      [
+        1250,
+        707
+      ],
+      [
+        1221,
+        736
+      ],
+      [
+        1151,
+        741
+      ],
+      [
+        1071,
+        727
+      ],
+      [
+        1027,
+        711
+      ],
+      [
+        926,
+        736
+      ],
+      [
+        839,
+        771
+      ],
+      [
+        542,
+        793
+      ],
+      [
+        472,
+        781
+      ],
+      [
+        450,
+        752
+      ]
+    ],
+    "ownership_error": "Human-drawn source polygons may differ by approximately3–5raw pixels at silhouette/AA; alpha1 includes latent RGB/AA. Receiver hand and lamp are now separated, so no unknown shared contact silhouette is used to claim gap. Wrist extraction cutoff is technical only, not anatomy."
+  },
+  "actual_gap_scans": {
+    "1": {
+      "whole_visible_distal_receiver_to_prop": {
+        "pixel_center_distance": 108.04628637764465,
+        "receiver_xy": [
+          1150,
+          839
+        ],
+        "fixed_xy": [
+          1135,
+          732
+        ],
+        "overlap": 0
+      },
+      "whole_visible_distal_receiver_to_near_grasp": {
+        "pixel_center_distance": 144.138821973818,
+        "receiver_xy": [
+          995,
+          857
+        ],
+        "fixed_xy": [
+          925,
+          731
+        ],
+        "overlap": 0
+      }
+    },
+    "128": {
+      "whole_visible_distal_receiver_to_prop": {
+        "pixel_center_distance": 115.84903970253703,
+        "receiver_xy": [
+          1148,
+          843
+        ],
+        "fixed_xy": [
+          1134,
+          728
+        ],
+        "overlap": 0
+      },
+      "whole_visible_distal_receiver_to_near_grasp": {
+        "pixel_center_distance": 149.41218156495808,
+        "receiver_xy": [
+          996,
+          860
+        ],
+        "fixed_xy": [
+          926,
+          728
+        ],
+        "overlap": 0
+      }
+    },
+    "240": {
+      "whole_visible_distal_receiver_to_prop": {
+        "pixel_center_distance": 117.09824934643558,
+        "receiver_xy": [
+          1151,
+          843
+        ],
+        "fixed_xy": [
+          1135,
+          727
+        ],
+        "overlap": 0
+      },
+      "whole_visible_distal_receiver_to_near_grasp": {
+        "pixel_center_distance": 150.8409758653132,
+        "receiver_xy": [
+          999,
+          859
+        ],
+        "fixed_xy": [
+          926,
+          727
+        ],
+        "overlap": 0
+      }
+    }
+  },
+  "actual_empty_rows_under_known_rim_alpha128": [
+    {
+      "x": 1050,
+      "prop_last_visible_y": 709,
+      "receiver_first_visible_y": 840,
+      "strict_empty_rows_between": 130
+    },
+    {
+      "x": 1100,
+      "prop_last_visible_y": 723,
+      "receiver_first_visible_y": 849,
+      "strict_empty_rows_between": 125
+    },
+    {
+      "x": 1120,
+      "prop_last_visible_y": 729,
+      "receiver_first_visible_y": 852,
+      "strict_empty_rows_between": 122
+    },
+    {
+      "x": 1140,
+      "prop_last_visible_y": 727,
+      "receiver_first_visible_y": 847,
+      "strict_empty_rows_between": 119
+    },
+    {
+      "x": 1160,
+      "prop_last_visible_y": 724,
+      "receiver_first_visible_y": 844,
+      "strict_empty_rows_between": 119
+    },
+    {
+      "x": 1180,
+      "prop_last_visible_y": 722,
+      "receiver_first_visible_y": 859,
+      "strict_empty_rows_between": 136
+    },
+    {
+      "x": 1200,
+      "prop_last_visible_y": 719,
+      "receiver_first_visible_y": 847,
+      "strict_empty_rows_between": 127
+    },
+    {
+      "x": 1220,
+      "prop_last_visible_y": 711,
+      "receiver_first_visible_y": 845,
+      "strict_empty_rows_between": 133
+    }
+  ],
+  "changed_outside_input_white_RGBA_pixels": 912942,
+  "local_context_changed_regions": {
+    "head_face_context": {
+      "bbox_halfopen": [
+        0,
+        0,
+        750,
+        610
+      ],
+      "outside_frozen_local_white_RGBA_changed_pixels": 400591
+    },
+    "near_arm_context": {
+      "bbox_halfopen": [
+        140,
+        615,
+        925,
+        980
+      ],
+      "outside_frozen_local_white_RGBA_changed_pixels": 239046
+    },
+    "far_sleeve_upper_arm_context": {
+      "bbox_halfopen": [
+        575,
+        630,
+        775,
+        920
+      ],
+      "outside_frozen_local_white_RGBA_changed_pixels": 53094
+    },
+    "prop_whole_context": {
+      "bbox_halfopen": [
+        450,
+        495,
+        1255,
+        800
+      ],
+      "outside_frozen_local_white_RGBA_changed_pixels": 164815
+    }
+  },
+  "same_size_first_raw_to_local_raw_total_RGBA_changed_pixels": 1006909,
+  "044_registration_and_seam_diagnostic": {
+    "initial_uniform_width_inverse": 0.5460218408736349,
+    "offset_native": [
+      600,
+      230
+    ],
+    "status": "ONLY_DIAGNOSTIC_COORDINATE_COMPARISON_NOT_A_COMPOSITE_OR_SEAM_PASS",
+    "manual_raw_source_landmarks": {
+      "near_actual_skin_opening_left": [
+        177,
+        770
+      ],
+      "near_actual_skin_opening_right": [
+        286,
+        745
+      ],
+      "far_upper_arm_under_near_occlusion": [
+        653,
+        838
+      ],
+      "far_low_elbow_proxy": [
+        751,
+        1039
+      ],
+      "far_wrist_proxy": [
+        1000,
+        931
+      ]
+    },
+    "manual_044_actual_near_opening_approx": [
+      [
+        690,
+        650
+      ],
+      [
+        772,
+        629
+      ]
+    ],
+    "not_bone_or_frozen_joint_points": true,
+    "new_landmarks_initial_native": {
+      "near_actual_skin_opening_left": [
+        696.6458658346334,
+        650.4368174726989
+      ],
+      "near_actual_skin_opening_right": [
+        756.1622464898596,
+        636.7862714508581
+      ],
+      "far_upper_arm_under_near_occlusion": [
+        956.5522620904836,
+        687.5663026521061
+      ],
+      "far_low_elbow_proxy": [
+        1010.0624024960998,
+        797.3166926677067
+      ],
+      "far_wrist_proxy": [
+        1146.021840873635,
+        738.346333853354
+      ]
+    }
+  }
+}

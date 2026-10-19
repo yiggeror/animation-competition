@@ -1,0 +1,318 @@
+{
+  "status": "LIMITED_RAW_ARM_CONTINUITY_AND_NO_CONTACT_PASS_PRODUCTION_ADOPTION_NOT_PASS_YET",
+  "actual_viewed": [
+    {
+      "path": "originals/F063_local_repair_call01_RAW.png",
+      "sha256": "50772cc5cf8c3b55b34d491940a814d488f24d3dab1909114d589a6db03eac4b"
+    },
+    {
+      "path": "qa/F063_local_actual_forearm_palm_rim_gray.png",
+      "sha256": "5869422b1ed67272a34c60f2972ed4d893203acd18c949fa58e3c427885a18a3"
+    },
+    {
+      "path": "qa/F063_local_actual_forearm_palm_rim_dark.png",
+      "sha256": "4cdbbfde69191664d9a8a4c77c11d9a48416182c3bbef4e38913b41132b27255"
+    },
+    {
+      "path": "frozen_input_e6619045/sources/F044_fe70_PRODUCTION_MOTHER_ARCHIVE_NOT_REQUEST.png",
+      "sha256": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9"
+    }
+  ],
+  "source_raw_SHA256": "50772cc5cf8c3b55b34d491940a814d488f24d3dab1909114d589a6db03eac4b",
+  "image_size": [
+    1282,
+    1227
+  ],
+  "new_image_calls_by_reviewer": 0,
+  "visible_facts": [
+    "Old technical diagonal wrist cut/air triangle is absent; the far low elbow, forearm, wrist and whole palm form one continuous visible limb. Wrist enters the palm from image-left/below without a visible folded-back joint.",
+    "Three visible receiving digits, complete visible palm thickness and ink are separated from the now continuous lower silver ring. No receiving digit/palm contact with prop or near grasp is visible. Other occluded anatomical digits remain unverified.",
+    "Near whole arm and grip remain visually continuous; far arm sits behind near arm at their occlusion. No actual forearm crossing, duplicate limb, wrist at hair or new skin hole was seen.",
+    "The silver ring has an actual returned continuous rounded lower edge, with no remaining finger-shaped missing notch. Entire rigid torch outline and axis appear consistent with prior raw, not the withdrawn175/44 scheme. This is a visual/manual measurement, not pixel rigidity certification.",
+    "Lamp remains visibly dark with grey reflection shapes. Thumb partly occludes switch, so a true mechanical OFF slider endpoint cannot be certified from this image alone."
+  ],
+  "actual_visible_material_gaps_raw_pixels": {
+    "1": {
+      "whole_visible_distal_receiver_to_prop": {
+        "pixel_center_distance": 108.04628637764465,
+        "receiver_xy": [
+          1150,
+          839
+        ],
+        "fixed_xy": [
+          1135,
+          732
+        ],
+        "overlap": 0
+      },
+      "whole_visible_distal_receiver_to_near_grasp": {
+        "pixel_center_distance": 144.138821973818,
+        "receiver_xy": [
+          995,
+          857
+        ],
+        "fixed_xy": [
+          925,
+          731
+        ],
+        "overlap": 0
+      }
+    },
+    "128": {
+      "whole_visible_distal_receiver_to_prop": {
+        "pixel_center_distance": 115.84903970253703,
+        "receiver_xy": [
+          1148,
+          843
+        ],
+        "fixed_xy": [
+          1134,
+          728
+        ],
+        "overlap": 0
+      },
+      "whole_visible_distal_receiver_to_near_grasp": {
+        "pixel_center_distance": 149.41218156495808,
+        "receiver_xy": [
+          996,
+          860
+        ],
+        "fixed_xy": [
+          926,
+          728
+        ],
+        "overlap": 0
+      }
+    },
+    "240": {
+      "whole_visible_distal_receiver_to_prop": {
+        "pixel_center_distance": 117.09824934643558,
+        "receiver_xy": [
+          1151,
+          843
+        ],
+        "fixed_xy": [
+          1135,
+          727
+        ],
+        "overlap": 0
+      },
+      "whole_visible_distal_receiver_to_near_grasp": {
+        "pixel_center_distance": 150.8409758653132,
+        "receiver_xy": [
+          999,
+          859
+        ],
+        "fixed_xy": [
+          926,
+          727
+        ],
+        "overlap": 0
+      }
+    }
+  },
+  "actual_vertical_air_alpha128": [
+    {
+      "x": 1050,
+      "prop_last_visible_y": 709,
+      "receiver_first_visible_y": 840,
+      "strict_empty_rows_between": 130
+    },
+    {
+      "x": 1100,
+      "prop_last_visible_y": 723,
+      "receiver_first_visible_y": 849,
+      "strict_empty_rows_between": 125
+    },
+    {
+      "x": 1120,
+      "prop_last_visible_y": 729,
+      "receiver_first_visible_y": 852,
+      "strict_empty_rows_between": 122
+    },
+    {
+      "x": 1140,
+      "prop_last_visible_y": 727,
+      "receiver_first_visible_y": 847,
+      "strict_empty_rows_between": 119
+    },
+    {
+      "x": 1160,
+      "prop_last_visible_y": 724,
+      "receiver_first_visible_y": 844,
+      "strict_empty_rows_between": 119
+    },
+    {
+      "x": 1180,
+      "prop_last_visible_y": 722,
+      "receiver_first_visible_y": 859,
+      "strict_empty_rows_between": 136
+    },
+    {
+      "x": 1200,
+      "prop_last_visible_y": 719,
+      "receiver_first_visible_y": 847,
+      "strict_empty_rows_between": 127
+    },
+    {
+      "x": 1220,
+      "prop_last_visible_y": 711,
+      "receiver_first_visible_y": 845,
+      "strict_empty_rows_between": 133
+    }
+  ],
+  "measurement_uncertainty": "Manual visible-material ownership polygons/AA approximately3–5raw pixels; distal hand/wrist boundary for measurement is technical and not a bone proxy. Alpha1 weak halo scan is more conservative than visually opaque material.",
+  "pose_deviation_from_dy49_guide": {
+    "manual_source_visible_tip_proxies_first_raw": [
+      [
+        1110,
+        714
+      ],
+      [
+        1171,
+        712
+      ],
+      [
+        1206,
+        715
+      ]
+    ],
+    "manual_actual_visible_tip_proxies_new_raw": [
+      [
+        1150,
+        846
+      ],
+      [
+        1210,
+        846
+      ],
+      [
+        1251,
+        847
+      ]
+    ],
+    "approx_actual_delta_range_raw_pixels": {
+      "x": [
+        39,
+        45
+      ],
+      "y": [
+        132,
+        134
+      ]
+    },
+    "not_exact_rigid_hand_or_49_displacement_claim": true,
+    "assessment": "Actual air and arm continuity satisfy the stated local correction intent. Receiving hand is materially lower than the dy49 guide; no review assumes49 was achieved. Final action amplitude/next069 travel remains Astra judgment, not automatic anatomical failure."
+  },
+  "manual_axis_diagnostic": {
+    "new_raw_lamp_face_center_approx": [
+      1189,
+      611
+    ],
+    "new_raw_tail_center_approx": [
+      509,
+      720
+    ],
+    "manual_axis_length_raw": 688.6806226401321,
+    "approx_registered_length_using_diagnostic_width_inverse": 236.79764568511715,
+    "source_044_prior_actual_registered_axis_approx": 236.777,
+    "uncertainty_raw_axis_length_px": 8,
+    "note": "Ellipse-center manual readings, not a new source scale or frozen geometric anchor. No limb/prop transforms were performed."
+  },
+  "production_adoption_limit": {
+    "whole_raw_accepted": false,
+    "frozen_production_mother044_SHA256": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+    "adoptable_only_after_actual_registration": [
+      "Actual new double arms",
+      "Only necessary corrected lower silver edge"
+    ],
+    "never_replace_from_local_raw": [
+      "Frozen044 face/head/hair/collar",
+      "Frozen044 real blouse/ruffle/skirt/background"
+    ],
+    "actual_changed_outside_frozen_local_white_RGBA_pixels": 912942,
+    "change_count_limit": "Count includes widespread resampled AA/texture differences and does not measure equivalent geometric drift. Still forbids claiming outside material preserved.",
+    "044_root_comparison": {
+      "initial_uniform_width_inverse": 0.5460218408736349,
+      "offset_native": [
+        600,
+        230
+      ],
+      "status": "ONLY_DIAGNOSTIC_COORDINATE_COMPARISON_NOT_A_COMPOSITE_OR_SEAM_PASS",
+      "manual_raw_source_landmarks": {
+        "near_actual_skin_opening_left": [
+          177,
+          770
+        ],
+        "near_actual_skin_opening_right": [
+          286,
+          745
+        ],
+        "far_upper_arm_under_near_occlusion": [
+          653,
+          838
+        ],
+        "far_low_elbow_proxy": [
+          751,
+          1039
+        ],
+        "far_wrist_proxy": [
+          1000,
+          931
+        ]
+      },
+      "manual_044_actual_near_opening_approx": [
+        [
+          690,
+          650
+        ],
+        [
+          772,
+          629
+        ]
+      ],
+      "not_bone_or_frozen_joint_points": true,
+      "new_landmarks_initial_native": {
+        "near_actual_skin_opening_left": [
+          696.6458658346334,
+          650.4368174726989
+        ],
+        "near_actual_skin_opening_right": [
+          756.1622464898596,
+          636.7862714508581
+        ],
+        "far_upper_arm_under_near_occlusion": [
+          956.5522620904836,
+          687.5663026521061
+        ],
+        "far_low_elbow_proxy": [
+          1010.0624024960998,
+          797.3166926677067
+        ],
+        "far_wrist_proxy": [
+          1146.021840873635,
+          738.346333853354
+        ]
+      }
+    },
+    "seam_feasibility": "Approx near opening maps into the general original044 cuff neighborhood: left about+6.65/+0.44native, right about−15.84/+7.79 against manual source readings. This gives a plausible overlap to test, not a source-exact join. Far sleeve root is partly behind near foreground arm; visible far upper-arm point alone cannot certify original far cuff attachment. Use real originalruffle material and actual natural occlusion; do not warp/stretch individual limbs or hide a gap with thin bridges.",
+    "pending_actual_gate": [
+      "Uniform whole-raw initial registration versus actual fixed prop/body reference, then complete-arm semantic adoption to original044",
+      "Actual near cuff boundary and partly occluded far cuff/upper-arm seam under original044 layers",
+      "No outside044 protected material changes except explicitly allowed arm/rim adoption and natural new foreground occlusion",
+      "Final registered palm/rim/near grasp gap and OFF/unlit actual view"
+    ],
+    "not_performed": [
+      "No candidate production recomposition",
+      "No source edits or root script changes",
+      "No retry or069 preparation"
+    ]
+  },
+  "remaining_explicit_blockers": [
+    "Whole raw production adoption is blocked: head/clothing/context were regenerated.",
+    "Production lock is pending actual frozen044 registration/material/seam checks."
+  ],
+  "no_explicit_raw_topology_blocker_seen": true,
+  "does_not_substitute_for_Astra_pose_or_production_lock": true,
+  "evidence": "qa/61sol_actual_measurement_evidence.json"
+}

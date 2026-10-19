@@ -1,0 +1,312 @@
+{
+  "status": "PREPARED_LOCAL_PALM_INPUT_PENDING_ROOT_ASTRA_NO_CALL",
+  "source_raw_SHA256": "8943ae4194c77bf6a87ec43bb62d0970c8ac29b28733827c0b7107e079945489",
+  "context_raw_NOT_production_mother": true,
+  "production_mother_044_SHA256": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+  "source_size": [
+    1282,
+    1227
+  ],
+  "whole_hand_affine": {
+    "matrix": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "translation_raw_pixels": [
+      0,
+      49
+    ],
+    "scale": 1,
+    "integer_slice_no_resampling": true,
+    "complete_visible_hand_and_all_visible_fingers_unsplit": true,
+    "technical_wrist_cut_poly": [
+      [
+        952,
+        737
+      ],
+      [
+        1025,
+        685
+      ],
+      [
+        1240,
+        685
+      ],
+      [
+        1246,
+        835
+      ],
+      [
+        1027,
+        835
+      ],
+      [
+        1014,
+        815
+      ]
+    ],
+    "occluded_anatomical_fingers_not_invented": true
+  },
+  "whole_hand_source_pixels": 22088,
+  "outer_original_low_alpha_AA_included_pixels": 918,
+  "actual_bright_neutral_silver_contact_pixels_excluded_from_hand": 42,
+  "shifted_source_RGBA_exact": true,
+  "moved_material_bbox_halfopen": [
+    952,
+    753,
+    1228,
+    872
+  ],
+  "moved_material_crop_margin_L_T_R_B": [
+    952,
+    753,
+    54,
+    355
+  ],
+  "source_hand_top_or_bottom_clipped_pixels": 0,
+  "local_context_HARD_actual_visible_pixels": 893897,
+  "hard_alpha0_pixels": 0,
+  "white_pixels": 108690,
+  "hard_white_intersection": 0,
+  "near_arm_grasp_white_intersection": 0,
+  "moved_whole_hand_outside_white": 0,
+  "outside_white_RGBA_changes": 0,
+  "silver_local_allowed_pixels": 6874,
+  "source_occluded_silver_under_old_fingers": "UNKNOWN: no yellow/grey/skin RGB painted into it; guide deletes old palm and exposes missing-source area, must be restored by future native local edit. No reconstructed rim gap claim.",
+  "gap_known_visible_material_scans_raw_pixels": {
+    "1": {
+      "whole_hand_vs_known_fixed_prop_excluding_allowed_unknown_rim": {
+        "euclidean_pixel_center_distance": 41.14608122288197,
+        "moving_xy": [
+          982,
+          765
+        ],
+        "fixed_xy": [
+          964,
+          728
+        ],
+        "overlap_pixels": 0
+      },
+      "whole_hand_vs_near_grasp": {
+        "euclidean_pixel_center_distance": 66.84309986827361,
+        "moving_xy": [
+          953,
+          785
+        ],
+        "fixed_xy": [
+          911,
+          733
+        ],
+        "overlap_pixels": 0
+      }
+    },
+    "128": {
+      "whole_hand_vs_known_fixed_prop_excluding_allowed_unknown_rim": {
+        "euclidean_pixel_center_distance": 41.14608122288197,
+        "moving_xy": [
+          982,
+          765
+        ],
+        "fixed_xy": [
+          964,
+          728
+        ],
+        "overlap_pixels": 0
+      },
+      "whole_hand_vs_near_grasp": {
+        "euclidean_pixel_center_distance": 70.43436661176133,
+        "moving_xy": [
+          954,
+          785
+        ],
+        "fixed_xy": [
+          910,
+          730
+        ],
+        "overlap_pixels": 0
+      }
+    },
+    "240": {
+      "whole_hand_vs_known_fixed_prop_excluding_allowed_unknown_rim": {
+        "euclidean_pixel_center_distance": 41.7612260356422,
+        "moving_xy": [
+          1122,
+          756
+        ],
+        "fixed_xy": [
+          1134,
+          716
+        ],
+        "overlap_pixels": 0
+      },
+      "whole_hand_vs_near_grasp": {
+        "euclidean_pixel_center_distance": 71.7007670809734,
+        "moving_xy": [
+          955,
+          785
+        ],
+        "fixed_xy": [
+          909,
+          730
+        ],
+        "overlap_pixels": 0
+      }
+    },
+    "all_known_prop_alpha1": {
+      "euclidean_pixel_center_distance": 32.7566787083184,
+      "moving_xy": [
+        1119,
+        755
+      ],
+      "fixed_xy": [
+        1126,
+        723
+      ],
+      "overlap_pixels": 0
+    },
+    "visible_fingertip_material_subsets": {
+      "visible_digit_left": {
+        "source_tip_proxy": [
+          1110,
+          714
+        ],
+        "moved_tip_proxy": [
+          1110,
+          763
+        ],
+        "ROI_proxy_not_anatomical_measurement": true,
+        "all_actual_tip_material_vs_known_prop": {
+          "euclidean_pixel_center_distance": 32.7566787083184,
+          "moving_xy": [
+            1119,
+            755
+          ],
+          "fixed_xy": [
+            1126,
+            723
+          ],
+          "overlap_pixels": 0
+        },
+        "all_actual_tip_material_vs_near_grasp": {
+          "euclidean_pixel_center_distance": 181.0331461362808,
+          "moving_xy": [
+            1089,
+            766
+          ],
+          "fixed_xy": [
+            911,
+            733
+          ],
+          "overlap_pixels": 0
+        }
+      },
+      "visible_digit_middle": {
+        "source_tip_proxy": [
+          1171,
+          712
+        ],
+        "moved_tip_proxy": [
+          1171,
+          761
+        ],
+        "ROI_proxy_not_anatomical_measurement": true,
+        "all_actual_tip_material_vs_known_prop": {
+          "euclidean_pixel_center_distance": 40.24922359499622,
+          "moving_xy": [
+            1163,
+            759
+          ],
+          "fixed_xy": [
+            1145,
+            723
+          ],
+          "overlap_pixels": 0
+        },
+        "all_actual_tip_material_vs_near_grasp": {
+          "euclidean_pixel_center_distance": 242.53865671269807,
+          "moving_xy": [
+            1151,
+            768
+          ],
+          "fixed_xy": [
+            911,
+            733
+          ],
+          "overlap_pixels": 0
+        }
+      },
+      "visible_digit_right": {
+        "source_tip_proxy": [
+          1206,
+          715
+        ],
+        "moved_tip_proxy": [
+          1206,
+          764
+        ],
+        "ROI_proxy_not_anatomical_measurement": true,
+        "all_actual_tip_material_vs_known_prop": {
+          "euclidean_pixel_center_distance": 44.0,
+          "moving_xy": [
+            1188,
+            759
+          ],
+          "fixed_xy": [
+            1188,
+            715
+          ],
+          "overlap_pixels": 0
+        },
+        "all_actual_tip_material_vs_near_grasp": {
+          "euclidean_pixel_center_distance": 274.7544358149655,
+          "moving_xy": [
+            1184,
+            764
+          ],
+          "fixed_xy": [
+            911,
+            733
+          ],
+          "overlap_pixels": 0
+        }
+      }
+    }
+  },
+  "distance_caveat": "Pixel-center Euclidean distance is to CURRENT visible fixed material, not a recovered unknown silver lower rim; not a contact or future069 acceptance. 49 is guide amount only.",
+  "hand_ownership_extraction": "Manual transverse-wrist domain plus actual warm skin component, complete internal material/ink/AA envelope; source fingertip/silver occlusion line has manual source ownership uncertainty, all such contact-edge is white. Source untouched.",
+  "source_mask_selection_not_anatomical_measurement": true,
+  "local_context_vs_final_production": "Local context outside white is retained raw for local-call registration ONLY. Final extraction may use actual new double arms and necessary silver rim only, returned to frozen044 real head/collar/ruffle/clothes/skirt/background with actual registration and seams rechecked. Raw altered head/clothes must never be adopted wholesale.",
+  "registration_initial_diagnostic_only": {
+    "raw_width_to_original_frozen_700crop_uniform_inverse": 0.5460218408736349,
+    "approx_native_offset": [
+      600,
+      230
+    ],
+    "not_final_registration_or_seam_pass": true
+  },
+  "new_calls": 0,
+  "069_unopened": true,
+  "source_snapshot_SHA256": {
+    "F044_NATIVE_GUARD_far_puff_actual_visible.png": "8eb73635a78b004ae22c236ba57b57c21a5f470bb2acfd26d3194be896fd3ed2",
+    "F044_NATIVE_GUARD_head_neck_collar_actual.png": "5b72192c39bccd7a440031be7c8eb2239aac7c24e32f0ed513002ec6d3264c63",
+    "F044_NATIVE_GUARD_near_ruffle_actual_material.png": "223f98f56a91738c89208dfde862f7819a4a100f4dd0a21cce0fb3ac9412077e",
+    "F044_NATIVE_GUARD_waist_and_skirt_actual_material.png": "316b6534e406fd1b09dac72a55dfd42d46f0da6eab766d98b30e4926af9e1317",
+    "F044_fe70_PRODUCTION_MOTHER_ARCHIVE_NOT_REQUEST.png": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+    "F063_call01_RAW_UNCHANGED.png": "8943ae4194c77bf6a87ec43bb62d0970c8ac29b28733827c0b7107e079945489",
+    "authority_VERBATIM_and_scope.txt": "2ade425031388b914f4f13fec43fc9097d7de39c990be1e5c592166cc0ab38a7"
+  },
+  "production044_original_coordinate_guards": {
+    "not_mapped_as_raw_context_guard": true,
+    "head_collar": "F044_NATIVE_GUARD_head_neck_collar_actual.png",
+    "near_ruffle": "F044_NATIVE_GUARD_near_ruffle_actual_material.png",
+    "waist_skirt": "F044_NATIVE_GUARD_waist_and_skirt_actual_material.png",
+    "far_puff": "F044_NATIVE_GUARD_far_puff_actual_visible.png",
+    "note": "Original native coordinates and source RGBA retained; later actual new-arm registration and foreground occlusion must be checked, not blind hard-lock of hidden far layers."
+  }
+}
