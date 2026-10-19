@@ -1,0 +1,25 @@
+{
+  "status": "ACTUAL_RAW_HOLD_NOT_ADOPTED_NO106",
+  "actual_full_correct_alpha_gray_viewed": true,
+  "actual_complete_sleeve_hand_and_waist_dark_viewed": true,
+  "actual_original_fixed_lamp_overlay_viewed": true,
+  "native_requests": 1,
+  "raw_outputs": 1,
+  "retries": 0,
+  "F106_calls": 0,
+  "raw_size": [
+    1024,
+    1536
+  ],
+  "raw_sha256": "c4a13c8af6edca565fcc55a11c42e34929eeb2064c0fe1bc3dce9035f08f6032",
+  "raw_tool_return_sha256": "f8919f1d1d5d4b70b075c61b86cd7fffe4feda9c3e2a4c9a739d244f36d1b57f",
+  "whole_literal_inverse": "45/64 + [1240,0]",
+  "substantive_failures": [
+    "Short sleeve became a wrist-length garment sleeve, eliminating the required bare arm.",
+    "Gray-blue UNKNOWN waist construction was copied into an apron-shaped garment block instead of completing the existing trousers connection.",
+    "Actual generated lantern is redrawn and displaced from the original fixed real lantern at the only common registration; preserving the original prop does not preserve the newly drawn grip contact."
+  ],
+  "contact_note": "Hand closes around a redrawn wire in the raw. That alone does not establish grasp of the original fixed real bail.",
+  "transparency": "Correct alpha viewed; display-only hidden RGB at alpha0 is not treated as an opaque halo failure.",
+  "next_action": "Astra review this actual raw; no automatic retry, no106 lift. Any repair request must explicitly resolve short sleeves/barearm, genuine trouser material and original fixed prop contact."
+}
