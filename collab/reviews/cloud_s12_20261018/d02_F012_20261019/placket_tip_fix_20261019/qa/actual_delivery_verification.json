@@ -1,0 +1,47 @@
+{
+  "status": "SAME_RAW_TIP_ONLY_AND_SAME_TIME_ACTUAL_F012_VERIFIED_ASTRA_FINAL_REVIEW_PENDING",
+  "source_commit": "1c9199121eea99f2434cc39c864eb96c1aba1819",
+  "candidate_SHA256": "063bc020f65f3e9485a57984f20703f0fbc96667a2f5a046ad713ee51d1beb88",
+  "original_generator_raw_SHA256": "52c6faf1e5eda14c2930ca557b5d1624a4dea86853f8dd631dd950b7b0d89f2c",
+  "native_RGB_changed_pixels": 2717,
+  "native_alpha_entire_exact": true,
+  "native_RGB_outside_semantic_tip_exact": true,
+  "actual_Canvas_SHA256": "6ba342698cb32c6488118ebad9281ca3f013676b83a7b9956c83a11a1a924f94",
+  "actual_MP4_SHA256": "f01a9dc919242a9d604cf10a24470489e3e84812c5980eef49510330b1f2344a",
+  "MP4_decoded_vs_Canvas_RGB_MSE": 8.374244689941406,
+  "actual_Canvas_changed_pixels": 1426,
+  "actual_Canvas_changed_bbox": [
+    599,
+    770,
+    645,
+    845
+  ],
+  "actual_Canvas_changes_outside_registered_tip": 0,
+  "actual_scene_code_source_byte_equal_previous": true,
+  "actual_code_props_layer_byte_equal_previous": true,
+  "actual_ground_shadow_layer_byte_equal_previous": true,
+  "actual_registered_person_alpha_exact_previous": true,
+  "actual_person_props_alpha_overlap": 0,
+  "actual_hand_prop_gap_scene_px": {
+    "far_left": 32.01562118716424,
+    "near_right": 44.721359549995796
+  },
+  "actual_render_runs": 1,
+  "actual_frames": [
+    12
+  ],
+  "actual_time": 0.5,
+  "imagegen_calls_this_task": 0,
+  "cumulative_S12_native_calls_unchanged": 4,
+  "F018_generated": false,
+  "actual_cached_layer_readbacks_not_extra_renders": 3,
+  "actual_runtime_files": 17,
+  "actual_render_runs_total_this_task": 2,
+  "final_candidate_actual_render_runs": 1,
+  "actual_render_runs_note": "Two different native versions of the SAME F012: broader-scope diagnostic archived, then corrected contour final once. No S08 or other frame rerender.",
+  "MP4_encodes_total_this_task": 2,
+  "earlier_scope_diagnostic": "qa/iteration01_scope_refinement",
+  "adjacent_guard_pixels_exact_source": 610,
+  "earlier_changed_adjacent_pixels_restored": 257,
+  "comparison_mask_bilinear_support": "One-pixel 8-neighbour support; includes diagonal bilinear sampling footprint. No pixels outside registered cloth-tip support changed."
+}

@@ -1,0 +1,181 @@
+{
+  "native_candidate_SHA256": "063bc020f65f3e9485a57984f20703f0fbc96667a2f5a046ad713ee51d1beb88",
+  "native_size": [
+    1024,
+    1536
+  ],
+  "registration": {
+    "scale": 0.7,
+    "x": 275,
+    "y": 112
+  },
+  "contacts": [
+    {
+      "name": "R_knee",
+      "source_alpha_polygon_native": [
+        [
+          465,
+          1230
+        ],
+        [
+          632,
+          1215
+        ],
+        [
+          638,
+          1290
+        ],
+        [
+          490,
+          1318
+        ]
+      ],
+      "native_contact_base_y": 1305,
+      "path": "../../same_raw_fix_20261019/contact_masks/R_knee.png",
+      "alpha_pixels_nonzero": 10860,
+      "visible_ground_contact_gate": true,
+      "note": "Actual corrected F012 alpha patch; same approved contact polygon/base; far knee/shin naturally occluded.",
+      "source_native_SHA256": "103ed4fb52c64b370560456ff0dde5a0820596ecfed9e28daee0f026aef7b4ff"
+    },
+    {
+      "name": "R_shin",
+      "source_alpha_polygon_native": [
+        [
+          218,
+          1222
+        ],
+        [
+          480,
+          1215
+        ],
+        [
+          505,
+          1318
+        ],
+        [
+          195,
+          1323
+        ]
+      ],
+      "native_contact_base_y": 1309,
+      "path": "../../same_raw_fix_20261019/contact_masks/R_shin.png",
+      "alpha_pixels_nonzero": 23950,
+      "visible_ground_contact_gate": true,
+      "note": "Actual corrected F012 alpha patch; same approved contact polygon/base; far knee/shin naturally occluded.",
+      "source_native_SHA256": "103ed4fb52c64b370560456ff0dde5a0820596ecfed9e28daee0f026aef7b4ff"
+    },
+    {
+      "name": "R_shoe",
+      "source_alpha_polygon_native": [
+        [
+          43,
+          1224
+        ],
+        [
+          216,
+          1192
+        ],
+        [
+          232,
+          1305
+        ],
+        [
+          53,
+          1330
+        ]
+      ],
+      "native_contact_base_y": 1310,
+      "path": "../../same_raw_fix_20261019/contact_masks/R_shoe.png",
+      "alpha_pixels_nonzero": 17223,
+      "visible_ground_contact_gate": true,
+      "note": "Actual corrected F012 alpha patch; same approved contact polygon/base; far knee/shin naturally occluded.",
+      "source_native_SHA256": "103ed4fb52c64b370560456ff0dde5a0820596ecfed9e28daee0f026aef7b4ff"
+    },
+    {
+      "name": "L_knee",
+      "source_alpha_polygon_native": [
+        [
+          596,
+          1114
+        ],
+        [
+          654,
+          1130
+        ],
+        [
+          657,
+          1206
+        ],
+        [
+          610,
+          1220
+        ]
+      ],
+      "native_contact_base_y": 1218,
+      "path": "../../same_raw_fix_20261019/contact_masks/L_knee.png",
+      "alpha_pixels_nonzero": 3314,
+      "visible_ground_contact_gate": false,
+      "note": "Actual corrected F012 alpha patch; same approved contact polygon/base; far knee/shin naturally occluded.",
+      "source_native_SHA256": "103ed4fb52c64b370560456ff0dde5a0820596ecfed9e28daee0f026aef7b4ff"
+    },
+    {
+      "name": "L_shin",
+      "source_alpha_polygon_native": [
+        [
+          209,
+          1106
+        ],
+        [
+          466,
+          1108
+        ],
+        [
+          585,
+          1190
+        ],
+        [
+          198,
+          1215
+        ]
+      ],
+      "native_contact_base_y": 1213,
+      "path": "../../same_raw_fix_20261019/contact_masks/L_shin.png",
+      "alpha_pixels_nonzero": 31219,
+      "visible_ground_contact_gate": false,
+      "note": "Actual corrected F012 alpha patch; same approved contact polygon/base; far knee/shin naturally occluded.",
+      "source_native_SHA256": "103ed4fb52c64b370560456ff0dde5a0820596ecfed9e28daee0f026aef7b4ff"
+    },
+    {
+      "name": "L_shoe",
+      "source_alpha_polygon_native": [
+        [
+          20,
+          1110
+        ],
+        [
+          209,
+          1095
+        ],
+        [
+          218,
+          1196
+        ],
+        [
+          35,
+          1250
+        ]
+      ],
+      "native_contact_base_y": 1243,
+      "path": "../../same_raw_fix_20261019/contact_masks/L_shoe.png",
+      "alpha_pixels_nonzero": 15982,
+      "visible_ground_contact_gate": true,
+      "note": "Actual corrected F012 alpha patch; same approved contact polygon/base; far knee/shin naturally occluded.",
+      "source_native_SHA256": "103ed4fb52c64b370560456ff0dde5a0820596ecfed9e28daee0f026aef7b4ff"
+    }
+  ],
+  "all_six_contacts_independently_visible": false,
+  "frame": 12,
+  "absolute_time": 0.5,
+  "contact_transform_and_anchor_scheme_unchanged": true,
+  "alpha_unchanged_contact_masks_reused_exactly": true
+}

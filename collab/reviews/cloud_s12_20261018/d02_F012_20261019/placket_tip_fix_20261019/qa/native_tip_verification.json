@@ -1,0 +1,369 @@
+{
+  "source_commit": "1c9199121eea99f2434cc39c864eb96c1aba1819",
+  "source_candidate_SHA256": "103ed4fb52c64b370560456ff0dde5a0820596ecfed9e28daee0f026aef7b4ff",
+  "original_generator_raw_SHA256": "52c6faf1e5eda14c2930ca557b5d1624a4dea86853f8dd631dd950b7b0d89f2c",
+  "mother_SHA256": "95f80f2d8f56394abd4a808cc8a6f205633658a544de4ab52e1e34c4ac1ed793",
+  "candidate_SHA256": "063bc020f65f3e9485a57984f20703f0fbc96667a2f5a046ad713ee51d1beb88",
+  "imagegen_calls": 0,
+  "new_poses": 0,
+  "alpha_entire_native_exact_source": true,
+  "all_RGB_outside_semantic_tip_exact_source": true,
+  "ink_fold_creases_RGB_exact_source": true,
+  "skin_hair_trousers_RGB_exact_source": true,
+  "upper_and_middle_placket_y_less940_RGB_exact_source": true,
+  "pose_registration_or_spatial_resampling": 0,
+  "flower_edge_pixel_locations_unchanged": "Pointwise positive affine color correction; no resampling or edge/motif warp. Shaded flower fill and its antialias colors restore face tone together.",
+  "changed_RGB_pixels": 2717,
+  "actual_changed_bbox": [
+    464,
+    940,
+    529,
+    1047
+  ],
+  "max_RGB_reduction": [
+    37.0,
+    34.0,
+    27.0
+  ],
+  "complete_semantic_tip_polygon": [
+    [
+      474,
+      940
+    ],
+    [
+      497,
+      940
+    ],
+    [
+      499,
+      960
+    ],
+    [
+      488,
+      970
+    ],
+    [
+      494,
+      977
+    ],
+    [
+      491,
+      982
+    ],
+    [
+      509,
+      997
+    ],
+    [
+      534,
+      1016
+    ],
+    [
+      534,
+      1021
+    ],
+    [
+      506,
+      1051
+    ],
+    [
+      489,
+      1029
+    ],
+    [
+      477,
+      1011
+    ],
+    [
+      466,
+      997
+    ],
+    [
+      462,
+      990
+    ],
+    [
+      466,
+      978
+    ],
+    [
+      473,
+      963
+    ],
+    [
+      476,
+      951
+    ]
+  ],
+  "lit_face_polygon": [
+    [
+      474,
+      940
+    ],
+    [
+      497,
+      940
+    ],
+    [
+      499,
+      960
+    ],
+    [
+      488,
+      970
+    ],
+    [
+      470,
+      980
+    ],
+    [
+      466,
+      977
+    ],
+    [
+      473,
+      963
+    ],
+    [
+      476,
+      951
+    ]
+  ],
+  "face_calibration": {
+    "lit": {
+      "source_blue_mean_RGB": [
+        115.62637362637362,
+        145.68759811616954,
+        187.58241758241758
+      ],
+      "mother_blue_mean_RGB": [
+        109.8380062305296,
+        141.43769470404985,
+        183.3271028037383
+      ],
+      "source_flower_mean_RGB": [
+        180.22641509433961,
+        189.47169811320754,
+        209.58490566037736
+      ],
+      "mother_flower_mean_RGB": [
+        179.0,
+        189.375,
+        208.5
+      ],
+      "source_blue_pixels": 637,
+      "mother_blue_pixels": 642,
+      "source_flower_pixels": 53,
+      "mother_flower_pixels": 8,
+      "matched_blue_core_pixels": 408,
+      "matched_flower_core_pixels": 0,
+      "positive_RGB_gain": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "RGB_bias": [
+        -8.980392156862735,
+        -7.291666666666657,
+        -7.210784313725469
+      ],
+      "note": "Static matching blue pigment cores calibrate additive tone; lit flower overlap is too small to fit."
+    },
+    "shade": {
+      "source_blue_mean_RGB": [
+        129.30356164383562,
+        160.7413698630137,
+        202.54958904109589
+      ],
+      "mother_blue_mean_RGB": [
+        116.61117021276596,
+        149.72978723404256,
+        191.92446808510638
+      ],
+      "source_flower_mean_RGB": [
+        227.35476718403547,
+        232.3769401330377,
+        242.5011086474501
+      ],
+      "mother_flower_mean_RGB": [
+        203.03703703703704,
+        209.86772486772486,
+        223.0
+      ],
+      "source_blue_pixels": 1825,
+      "mother_blue_pixels": 1880,
+      "source_flower_pixels": 451,
+      "mother_flower_pixels": 378,
+      "matched_blue_core_pixels": 1402,
+      "matched_flower_core_pixels": 184,
+      "positive_RGB_gain": [
+        0.811934566546707,
+        0.7599423801250125,
+        0.6917746914468346
+      ],
+      "RGB_bias": [
+        11.072326729975401,
+        27.41210736086309,
+        51.77536078691162
+      ],
+      "note": "Static matching blue and flower cores calibrate positive gain; independent threshold area bias is recorded separately."
+    }
+  },
+  "face_measurements": {
+    "lit": {
+      "mother_blue_mean_RGB": [
+        113.40845070422536,
+        145.21830985915494,
+        186.7288732394366
+      ],
+      "before_blue_mean_RGB": [
+        123.36077057793345,
+        152.93345008756566,
+        193.56567425569176
+      ],
+      "after_blue_mean_RGB": [
+        116.25087719298246,
+        147.22280701754386,
+        187.74561403508773
+      ],
+      "before_delta_RGB": [
+        9.952319873708092,
+        7.715140228410718,
+        6.836801016255151
+      ],
+      "after_delta_RGB": [
+        2.8424264887570985,
+        2.004497158388915,
+        1.016740795651117
+      ],
+      "blue_fixed_source_anchor": {
+        "before_delta_RGB": [
+          5.78836739584402,
+          4.249903412119693,
+          4.2553147786792636
+        ],
+        "after_delta_RGB": [
+          -0.28698582236633285,
+          -0.6088093037358817,
+          -0.5986883610381426
+        ],
+        "source_pixels": 637,
+        "mother_pixels": 642,
+        "mother_small_sample_caveat": false
+      },
+      "flowers_fixed_source_anchor": {
+        "before_delta_RGB": [
+          1.2264150943396146,
+          0.09669811320753752,
+          1.084905660377359
+        ],
+        "after_delta_RGB": [
+          -6.1132075471698215,
+          -5.8466981132075375,
+          -4.8018867924528195
+        ],
+        "source_pixels": 53,
+        "mother_pixels": 8,
+        "mother_small_sample_caveat": true
+      },
+      "blue_matched_core": {
+        "pixels": 408,
+        "before_delta_RGB": [
+          8.980392156862735,
+          7.291666666666657,
+          7.210784313725469
+        ],
+        "after_delta_RGB": [
+          1.0245098039215605,
+          1.007352941176464,
+          0.9264705882352757
+        ]
+      }
+    },
+    "shade": {
+      "mother_blue_mean_RGB": [
+        124.68262862964849,
+        155.87213448802854,
+        195.82068262862964
+      ],
+      "before_blue_mean_RGB": [
+        136.1289629231596,
+        166.4846856528748,
+        207.01343363782914
+      ],
+      "after_blue_mean_RGB": [
+        124.59769512833944,
+        156.06914614981665,
+        196.27815610267155
+      ],
+      "before_delta_RGB": [
+        11.446334293511114,
+        10.612551164846252,
+        11.192751009199498
+      ],
+      "after_delta_RGB": [
+        -0.08493350130905242,
+        0.19701166178811036,
+        0.45747347404190464
+      ],
+      "blue_fixed_source_anchor": {
+        "before_delta_RGB": [
+          12.692391431069666,
+          11.011582628971126,
+          10.625120955989502
+        ],
+        "after_delta_RGB": [
+          0.7833503351792501,
+          0.6789798892451131,
+          0.44101136694840193
+        ],
+        "source_pixels": 1825,
+        "mother_pixels": 1880,
+        "mother_small_sample_caveat": false
+      },
+      "flowers_fixed_source_anchor": {
+        "before_delta_RGB": [
+          24.31773014699843,
+          22.509215265312832,
+          19.50110864745011
+        ],
+        "after_delta_RGB": [
+          -6.2765048862609945,
+          -4.896549701427745,
+          -2.7804878048780495
+        ],
+        "source_pixels": 451,
+        "mother_pixels": 378,
+        "mother_small_sample_caveat": false
+      },
+      "blue_matched_core": {
+        "pixels": 1402,
+        "before_delta_RGB": [
+          13.146932952924388,
+          11.5,
+          11.387303851640524
+        ],
+        "after_delta_RGB": [
+          0.5356633380884546,
+          0.397289586305277,
+          0.2738944365192708
+        ]
+      },
+      "flower_matched_core": {
+        "pixels": 184,
+        "before_delta_RGB": [
+          35.35326086956522,
+          32.086956521739125,
+          25.50543478260869
+        ],
+        "after_delta_RGB": [
+          0.14673913043478137,
+          0.14673913043478137,
+          0.010869565217376476
+        ]
+      }
+    }
+  },
+  "edit_feather_native_px": 2,
+  "face_blend_sigma_native_px": 2
+}
