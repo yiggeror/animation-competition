@@ -1,0 +1,75 @@
+{
+  "new_imagegen_calls": 0,
+  "new_native_drawings": 0,
+  "actual_source030_sha256": "0c182aa0d62acf8647daa316e06cdb4bfdd9ebd6c2e6c02f1b0e2f8065ffd4e5",
+  "same_common_frame_baseline_and_target": true,
+  "actual030_whole_body_not_globally_translated_or_scaled": true,
+  "body_exact_pixels": {
+    "head": {
+      "audited_pixels": 180000,
+      "unchanged_RGBA_from_actual030": true
+    },
+    "chest": {
+      "audited_pixels": 48100,
+      "unchanged_RGBA_from_actual030": true
+    },
+    "near_bare_arm": {
+      "audited_pixels": 53444,
+      "unchanged_RGBA_from_actual030": true
+    },
+    "knees_and_lowerbody": {
+      "audited_pixels": 249200,
+      "unchanged_RGBA_from_actual030": true
+    },
+    "stool": {
+      "audited_pixels": 180000,
+      "unchanged_RGBA_from_actual030": true
+    }
+  },
+  "source_pinch": [
+    731.0,
+    673.0
+  ],
+  "target_pinch": [
+    711.0,
+    670.0
+  ],
+  "delta_pinch": [
+    -20.0,
+    -3.0
+  ],
+  "no_covered_tail_created_by_puppet_motion": true,
+  "true_tail_core_pixels": 843,
+  "true_outer_feather_pixels_newly_covered": 141,
+  "true_core_pixels_newly_covered": 44,
+  "new_occlusion_all_opaque_blue_lip": true,
+  "occlusion_pixels_actually_changed_in_composite": 141,
+  "unchanged_opaque_true_body_and_rods_except_allowed_feathers": true,
+  "opaque_true_body_and_rod_audit_pixels": 21829,
+  "near_bare_arm_exact_RGBA_from_actual030": true,
+  "white_near_arm_overlap": 0,
+  "white_protected_true_prop_overlap": 0,
+  "target_visible_arm_white_coverage": {
+    "upper": {
+      "pixels": 25144,
+      "white_missing": 0
+    },
+    "forearm": {
+      "pixels": 11920,
+      "white_missing": 0
+    },
+    "hand_bangle": {
+      "pixels": 13533,
+      "white_missing": 0
+    },
+    "whole_continuous_actual_arm": {
+      "pixels": 40360,
+      "white_missing": 0
+    }
+  },
+  "continuous_actual_source_arm_probe_no_piece_splices": true,
+  "disclosed_technical_joint_gap_fill_pixels": 0,
+  "first_target_is_technical_not_native_art": true,
+  "actual030_complete_raw_provenance_not_in_planned_request": true,
+  "old_first3_036_and_failed036_not_used_to_construct_human_or_cloth": true
+}

@@ -1,0 +1,165 @@
+{
+  "common_frame": "ACTUAL_SUCCESSFUL_F030_NATIVE_1024x1536",
+  "no_alignment_of_old036_target_used": true,
+  "body_is_actual030_not_warped_old_mother": true,
+  "true_original_group_source": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/REGISTER_REAL_PROPS_zero_call_v1_20261019/layers/REAL_ORIGINAL_TWO_PUPPETS_FOUR_RODS.png",
+  "true_original_group_source_sha256": "b17a4d1c6e59da5898cf36e3d77b1d842caeed19f2d8e9f3c4a5c0c80c4a2c92",
+  "single_similarity_original_props_to_actual030": [
+    [
+      1.0013877066217955,
+      0.006954369989112145,
+      -42.959588241116535
+    ],
+    [
+      -0.006954369989112145,
+      1.0013877066217955,
+      -0.31323765218257904
+    ]
+  ],
+  "scale": 1.0014118544511068,
+  "rotation_degrees": -0.3978974790136875,
+  "near_palm_true_neck3_point_original": [
+    536.0,
+    750.0
+  ],
+  "near_palm_true_neck3_point_common030": [
+    499.0,
+    747.0
+  ],
+  "neck3_mapping_error": 0.0,
+  "manual_body_anchor_uncertainty_px": 15,
+  "multi_body_fit": [
+    {
+      "name": "near shoulder seam",
+      "source000": [
+        269.0,
+        410.0
+      ],
+      "actual030": [
+        229.0,
+        404.0
+      ],
+      "mapped": [
+        229.26499653568243,
+        408.38499653568243
+      ],
+      "residual_px": 4.392996446831095
+    },
+    {
+      "name": "sternum button",
+      "source000": [
+        452.0,
+        485.0
+      ],
+      "actual030": [
+        414.0,
+        467.0
+      ],
+      "mapped": [
+        413.04052459665445,
+        482.21642482430957
+      ],
+      "residual_px": 15.246644794297847
+    },
+    {
+      "name": "near elbow",
+      "source000": [
+        193.0,
+        711.0
+      ],
+      "actual030": [
+        149.0,
+        704.0
+      ],
+      "mapped": [
+        155.25279619914872,
+        710.3312283480154
+      ],
+      "residual_px": 8.898421922049035
+    },
+    {
+      "name": "collar base",
+      "source000": [
+        446.0,
+        440.0
+      ],
+      "actual030": [
+        408.0,
+        431.0
+      ],
+      "mapped": [
+        406.7192517074136,
+        437.19570424626346
+      ],
+      "residual_px": 6.326694816105012
+    },
+    {
+      "name": "seat/front hip",
+      "source000": [
+        504.0,
+        1063.0
+      ],
+      "actual030": [
+        473.0,
+        1049.0
+      ],
+      "mapped": [
+        469.1323111946946,
+        1060.6568920122736
+      ],
+      "residual_px": 12.281781144463247
+    },
+    {
+      "name": "near ankle",
+      "source000": [
+        456.0,
+        1374.0
+      ],
+      "actual030": [
+        420.0,
+        1367.0
+      ],
+      "mapped": [
+        423.22851034346235,
+        1372.4222785311295
+      ],
+      "residual_px": 6.310656345182386
+    },
+    {
+      "name": "far ankle",
+      "source000": [
+        847.0,
+        1344.0
+      ],
+      "actual030": [
+        819.0,
+        1337.0
+      ],
+      "mapped": [
+        814.562472532911,
+        1339.6614886667326
+      ],
+      "residual_px": 5.174473107893722
+    },
+    {
+      "name": "front knee",
+      "source000": [
+        608.0,
+        1030.0
+      ],
+      "actual030": [
+        583.0,
+        1015.0
+      ],
+      "mapped": [
+        573.0471384737207,
+        1026.8878432148867
+      ],
+      "residual_px": 15.50420165190778
+    }
+  ],
+  "multi_body_RMS_px": 10.178344337729442,
+  "reference_fit_only_not_formal_original_prop_scene_gate": true,
+  "same_true_props_RGBA_layer_for_both_reference_states": true,
+  "puppet_movement_between_common030_and_new036": false
+}
