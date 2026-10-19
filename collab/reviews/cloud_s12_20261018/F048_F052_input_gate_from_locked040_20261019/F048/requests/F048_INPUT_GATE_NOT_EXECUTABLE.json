@@ -1,0 +1,37 @@
+{
+  "tool": "image_gen.imagegen",
+  "status": "INPUT_GATE_NOT_EXECUTABLE",
+  "call_allowed": false,
+  "tool_arguments": null,
+  "planned_tool_arguments_after_direct_input_gate": {
+    "prompt": "S12 F048 local complete RIGHT arm redraw, empty approach, exposure048–051. Sole actual pixel mother: locked accepted F040, commit e40a926ee8b7104d61c94cb7637bd9b2589d9544, native SHA256 aeb7a572b08aeb6c4cf41eac5de770a6ebd879635cc1c8c97c7a45cbf15c1dbe. No030/034 competing pose.\n\nINPUT1 directly shows ONE complete shoulder/sleeve/upper arm/elbow/forearm/wrist/palm target, rebuilt only from actual040 source pixels for anatomy reference. The whole empty hand is translated intact, original full size, no mirror, no individual fingers pulled. It is a construction reference, NOT future character artwork. Redraw natural five-digit anatomy; digits may naturally occlude. The current highest visible extended finger is not renamed thumb. True radial thumb stays occluded at this empty-approach stage; a future052 requires supported forearm/wrist/palm rotation to reveal it. Do not fake that future thumb now. Draw the entire right arm chain naturally following the new wrist/palm from the lower route. Right wrist has NO jade.\n\nSource-collage cuts are not anatomical or clothing openings. Restore continuous proximal blue sleeve/underarm cloth to the unchanged torso, with the original blue/flower material, silhouette and near/far depth. Do not copy pale construction seams, duplicate shoulder caps, source crops, sharp cut wedges, grey holes or detached skin fragments. No full body or head redesign.\n\nINPUT2 is the EXACT SAME pose with actual locked040 left closed fist, two real straight rods, unchanged real crane rig, box and cloth support. Registration scene=.70*native+(275,112), native1024x1536. Upper rod and left five-digit closed grasp are frozen040, upper free scene(930.1059238245394,729.1297395769899) to neck3(1497.5314905035327,714.6642052957592). Lower body shaft stays scene(951.2616943917175,798.9063357461391) to(1282.1986905564156,773.9467944476169), outer width7scene, resting on box rim; never move or stretch it. ALL right fingers remain clear in048; no touch or grip. The future G shaft section at scene x960 is a proposal only, distinct from current palm-bone centre M and future thumb surface T. Native x1024 boundary is shown beside complete left fist, both rods and full right hand. Never shrink a palm, clip a digit, mirror left-hand pixels or detach a thumb to fit.\n\nINPUT3 contains only local actual source material patches, no alternate full pose. Keep intrinsic skin, blue blouse, flower petals, ink and soft volume shadow. Left entire arm/fist and all static body pixels will be preserved directly from accepted040; output/adopt only complete near RIGHT arm plus necessary proximal blouse join.\n\nLocal plate1024 square: native crop[320,580,1120,1180], uniform1.12, pad64x176. plate=1.12*native+(-294.4,-473.6), native=(plate+(294.4,473.6))/1.12. Native right edge x1024 is plate852.48; guard is not usable canvas. Keep complete ink/AA and fingertips with breathing room. If returned board uniformly changes scale/shift, assess one whole-patch mapping; no separate finger/joint adjustment or moving rods to chase a hand. Transparent output, no props/background/markers/text/head/body. No new crane articulation, no rise or lift; both knees/shins/shoes stay low and supported. Preserve raw output and source. Explicit ownership and mutually exclusive layers must reconstruct final native RGBA exactly.\n",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F048/inputs/F048_01_complete_right_arm_TARGET.png",
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F048/inputs/F048_02_SAME_POSE_true_props_contact.png",
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F048/inputs/03_local_material_ONLY.png"
+    ],
+    "transparent_background": true
+  },
+  "actual_three_input_PNGs": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F048/inputs/F048_01_complete_right_arm_TARGET.png",
+      "SHA256": "dabab348b083dd5804a815041cb9a76494a7b80f04e4b2705f7becf1b427f4f9"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F048/inputs/F048_02_SAME_POSE_true_props_contact.png",
+      "SHA256": "40f69ce8c2157df16460e7b84a1357500715277ddc8f203f3c5e884766092bcc"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F048/inputs/03_local_material_ONLY.png",
+      "SHA256": "d976781c23dbe4b5f2483a30a8fd90016128946a311b74beea46e0cc79ca5f92"
+    }
+  ],
+  "prompt_SHA256": "b5c927f6ad3a5f0f6429b8aa12f82d8dfc53cf153b76b0b275ba887cf6af5976",
+  "sole_actual_mother": {
+    "commit": "e40a926ee8b7104d61c94cb7637bd9b2589d9544",
+    "path": "collab/reviews/cloud_s12_20261018/F034_F040_actual_20261019/F040/candidate/F040.png",
+    "SHA256": "aeb7a572b08aeb6c4cf41eac5de770a6ebd879635cc1c8c97c7a45cbf15c1dbe"
+  },
+  "new_calls": 0,
+  "production_parent_after_input_gate": "048 actual from040;052 production only after actual048 accepted, not directly from040."
+}

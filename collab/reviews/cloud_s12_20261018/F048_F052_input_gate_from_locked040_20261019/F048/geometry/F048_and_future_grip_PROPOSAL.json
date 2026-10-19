@@ -1,0 +1,293 @@
+{
+  "state": 48,
+  "held_frames": [
+    48,
+    51
+  ],
+  "source040_native_SHA256": "aeb7a572b08aeb6c4cf41eac5de770a6ebd879635cc1c8c97c7a45cbf15c1dbe",
+  "source040_commit": "e40a926ee8b7104d61c94cb7637bd9b2589d9544",
+  "registration": {
+    "scale": 0.7,
+    "translation": [
+      275,
+      112
+    ],
+    "native": [
+      1024,
+      1536
+    ],
+    "native_right_scene_x": 991.8
+  },
+  "actual040_source_near_S_E_W": [
+    [
+      506.6376336102778,
+      758.1647963366347
+    ],
+    [
+      598.4376336102778,
+      930.9647963366347
+    ],
+    [
+      779.3376336102779,
+      974.1647963366347
+    ]
+  ],
+  "target048_near_S_E_W": [
+    [
+      516.6376336102778,
+      766.1647963366347
+    ],
+    [
+      620.4376336102778,
+      948.9647963366347
+    ],
+    [
+      819.3376336102779,
+      1009.1647963366347
+    ]
+  ],
+  "complete_hand_rigid_matrix": [
+    [
+      1,
+      0,
+      40
+    ],
+    [
+      0,
+      1,
+      35
+    ]
+  ],
+  "hand_scale": 1,
+  "hand_mirrored": false,
+  "thumb": "Source actual040 thumb remains naturally occluded; highest visible finger NOT relabelled thumb.052 must unocclude true radial thumb with whole wrist/palm and forearm roll, not mirror or detached finger.",
+  "current_M_palm_bone_estimate_native": [
+    920.0,
+    1015.0
+  ],
+  "future_fixed_G_shaft_scene": [
+    960.0,
+    798.2472855274066
+  ],
+  "future_fixed_G_shaft_native": [
+    978.5714285714287,
+    980.3532650391523
+  ],
+  "future_T52_true_thumb_surface_native": [
+    978.9474647100621,
+    985.3391046697905
+  ],
+  "future_T52_thumb_pad_centre_native": [
+    979.3987080764223,
+    991.3221122265562
+  ],
+  "thumb048_contact": false,
+  "actual_source_reference_near_gaps": {
+    "body_rod_outer_edge_scene_px": 5.3093075535135945,
+    "upper_rod_outer_edge_scene_px": 59.4502126547134
+  },
+  "whole_hand_rightmost_native_alpha32": 960,
+  "whole_hand_right_edge_breathing_native": 63,
+  "future_full_hand_max_native_x_proposal": 1010,
+  "future_full_hand_right_edge_breathing_native": 14,
+  "old_x970_grip": "Superseded proposal: full future fist had insufficient breathing room. x960 on same existing axis is proposed for input review, rod itself unchanged.",
+  "source_uncertainty_native": {
+    "S": 20,
+    "E": 6,
+    "W": 6,
+    "MCP": 8
+  },
+  "near_reference_warp": {
+    "source_control_vertices": [
+      [
+        561.5563924140356,
+        627.0773067296752
+      ],
+      [
+        464.4136632737204,
+        678.6843815854677
+      ],
+      [
+        367.2709341334052,
+        730.2914564412602
+      ],
+      [
+        603.780362750593,
+        706.5577214808422
+      ],
+      [
+        506.6376336102778,
+        758.1647963366347
+      ],
+      [
+        409.49490446996265,
+        809.7718711924272
+      ],
+      [
+        636.9568911668706,
+        832.9523782596947
+      ],
+      [
+        566.3076336102778,
+        870.4847963366346
+      ],
+      [
+        495.65837605368495,
+        908.0172144135746
+      ],
+      [
+        638.8219081753535,
+        878.7622066704832
+      ],
+      [
+        598.4376336102778,
+        930.9647963366347
+      ],
+      [
+        558.053359045202,
+        983.1673860027861
+      ],
+      [
+        707.920444938678,
+        912.9008363989592
+      ],
+      [
+        697.9326336102779,
+        954.7247963366347
+      ],
+      [
+        687.9448222818778,
+        996.5487562743101
+      ],
+      [
+        743.2334377182269,
+        931.6149780175348
+      ],
+      [
+        735.568373210385,
+        963.7124356441229
+      ],
+      [
+        727.903308702543,
+        995.8098932707111
+      ],
+      [
+        793.3607094951374,
+        943.876954836662
+      ],
+      [
+        784.1384152481746,
+        975.5621136467806
+      ],
+      [
+        774.9161210012119,
+        1007.2472724568993
+      ]
+    ],
+    "target_control_vertices": [
+      [
+        567.8519050330449,
+        633.5861464617957
+      ],
+      [
+        472.19738434114447,
+        687.9020066796253
+      ],
+      [
+        376.5428636492441,
+        742.2178668974549
+      ],
+      [
+        612.2921543021782,
+        711.8489361188051
+      ],
+      [
+        516.6376336102778,
+        766.1647963366347
+      ],
+      [
+        420.98311291837746,
+        820.4806565544643
+      ],
+      [
+        653.6745577498417,
+        845.4823525418494
+      ],
+      [
+        584.1076336102778,
+        884.9847963366346
+      ],
+      [
+        514.540709470714,
+        924.4872401314199
+      ],
+      [
+        661.6361165309863,
+        897.4023584090882
+      ],
+      [
+        620.4376336102778,
+        948.9647963366347
+      ],
+      [
+        579.2391506895692,
+        1000.5272342641812
+      ],
+      [
+        742.2891678982431,
+        940.9185725845368
+      ],
+      [
+        729.8326336102779,
+        982.0747963366347
+      ],
+      [
+        717.3760993223126,
+        1023.2310200887325
+      ],
+      [
+        780.7728887707419,
+        963.0142292233559
+      ],
+      [
+        771.2132229218383,
+        994.5992381493845
+      ],
+      [
+        761.6535570729347,
+        1026.1842470754132
+      ],
+      [
+        833.3607094951374,
+        978.876954836662
+      ],
+      [
+        824.1384152481746,
+        1010.5621136467806
+      ],
+      [
+        814.9161210012119,
+        1042.2472724568993
+      ]
+    ],
+    "distal_hand_rigid_matrix": [
+      [
+        1,
+        0,
+        40
+      ],
+      [
+        0,
+        1,
+        35
+      ]
+    ],
+    "hand_scale": 1.0,
+    "mirrored": false,
+    "reference_only_not_drawing": true
+  },
+  "reference_only_not_new_finished_drawing": true,
+  "left_arm_and_held_upper_rod": "Static accepted040 real pixels/props, no motion.",
+  "crane_low_body_box_cloth": "Unchanged accepted040; no rise/no lift.",
+  "later_dependencies": "052 actual production must use accepted048 as sole actual mother;056 actual accepted052;060 accepted056;064 accepted060 reuse candidate. None authorized now."
+}
