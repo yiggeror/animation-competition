@@ -1,0 +1,28 @@
+{
+  "args": [
+    "ffmpeg",
+    "-y",
+    "-loglevel",
+    "error",
+    "-framerate",
+    "24",
+    "-i",
+    "/tmp/s12_hold14_v6esgxfk/frame_%04d.png",
+    "-frames:v",
+    "14",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "18",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F034_F040_actual_20261019/group_delivery14/S12_F034_F040_14f_actualCanvas_HOLD.mp4"
+  ],
+  "source_staging": "Temporary symlinks to existing actual Canvas; no new render/PNGs.",
+  "new_Canvas_renders": 0,
+  "new_imagegen_calls": 0
+}
