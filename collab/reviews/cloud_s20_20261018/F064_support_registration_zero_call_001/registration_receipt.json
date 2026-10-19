@@ -1,0 +1,115 @@
+{
+  "status": "RIGID_SUPPORT_REGISTERED_BUT_VISIBLE_UNDER_HEM_ROOT_GAP_NOT_NATURAL_NOT_ADOPTABLE",
+  "source064_sha256": "6b6f9517c6240fc57808feba8e5008360c7d420fed2d65196c0319087cfa58d0",
+  "reference061_sha256": "0dde203fef7d78f00a6628ce1fc702f5ffa13a301adf0bd91b2fc10d80bd12ec",
+  "image_calls": 0,
+  "registrations": [
+    {
+      "role": "far",
+      "source_bearing_points": [
+        [
+          547.5,
+          912.0
+        ],
+        [
+          625.0,
+          906.0
+        ]
+      ],
+      "reference061_bearing_points": [
+        [
+          533.5,
+          919.0
+        ],
+        [
+          606.0,
+          913.0
+        ]
+      ],
+      "bearing_centroid_displacement_xy": [
+        -16.5,
+        7.0
+      ],
+      "one_final_rigid_R": [
+        [
+          0.9999859273292242,
+          0.00530519966751434
+        ],
+        [
+          -0.005305199667514349,
+          0.9999859273292242
+        ]
+      ],
+      "translation_xy": [
+        -21.314176394528204,
+        10.122965362815421
+      ],
+      "rotation_degrees": -0.30396697629984554,
+      "scale": 1,
+      "bearing_residual_px": [
+        2.492029438534532,
+        2.4920294385346637
+      ],
+      "image_resamplings": 1,
+      "no_knee_ankle_or_shoe_cut": true
+    },
+    {
+      "role": "near",
+      "source_bearing_points": [
+        [
+          663.5,
+          916.0
+        ],
+        [
+          761.5,
+          908.0
+        ]
+      ],
+      "reference061_bearing_points": [
+        [
+          636.5,
+          922.0
+        ],
+        [
+          720.5,
+          914.5
+        ]
+      ],
+      "bearing_centroid_displacement_xy": [
+        -34.0,
+        6.25
+      ],
+      "one_final_rigid_R": [
+        [
+          0.9999711388445014,
+          0.007597465237241161
+        ],
+        [
+          -0.0075974652372411714,
+          0.9999711388445013
+        ]
+      ],
+      "translation_xy": [
+        -40.90832472307113,
+        11.689515355349272
+      ],
+      "rotation_degrees": -0.4353068809191955,
+      "scale": 1,
+      "bearing_residual_px": [
+        6.995915822515553,
+        6.995915822515655
+      ],
+      "image_resamplings": 1,
+      "no_knee_ankle_or_shoe_cut": true
+    }
+  ],
+  "far_under_hem_gap_px_max": 13,
+  "far_under_hem_gap_px_median": 9.0,
+  "source_legs_removed_only_below_original_skirt_hem": true,
+  "source_upper_body_skirt_arms_T_rods_grandma_RGBA_unchanged": true,
+  "leg_layers_native_only_no_old061_leg_or_shoe_paste": true,
+  "no_scaling_stretching_or_root_skin_fabrication": true,
+  "conclusion": "foot support can be registered rigidly, but native far-leg top moves below fixed skirt hem and exposes an unpainted root gap; no natural join under current constraints",
+  "adopted": false,
+  "propagated": false
+}
