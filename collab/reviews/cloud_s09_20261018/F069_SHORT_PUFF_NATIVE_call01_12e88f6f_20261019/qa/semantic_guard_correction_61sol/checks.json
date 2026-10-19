@@ -1,0 +1,39 @@
+{
+  "status": "STABLE_SECOND_CANDIDATE_TWO_OLD_CLOTHING_BOUNDARIES_CLEARED_PENDING_ROOT_REVIEW",
+  "candidate": "candidate/F069_SHORT_PUFF_BARE_ARMS_semantic_RECONNECTED_SECOND_REVIEW.png",
+  "candidate_SHA256": "bc64924feaa5331c26f8c3d0874634ec7b765295ca95ff6f729bbe2755cdf8f5",
+  "first_candidate_preserved_SHA256": "e487e1e78b411c233e1df500d02ac8dae6bf589c6008767e437b84d5c970a0cd",
+  "source_raw_SHA256": "20fc656468f28ca6e9c381f0bfb88e51c0099abce697f792665c9c23c1786eeb",
+  "whole_registration_only": "770/1145+[550,0], no second transform",
+  "release_pixels": {
+    "old_far_wrist_cuff_boundary": 591,
+    "old_cloth_occlusion_false_prop": 444,
+    "union": 1035
+  },
+  "actual_changed_pixels": 1033,
+  "changes_outside_two_release_masks": 0,
+  "remaining_true_source_protection_RGBA_changes": 0,
+  "complete_source_palms_digits_except_reclassified_cuff_RGBA_changes": 0,
+  "actual_known_source_prop_except_reclassified_old_occlusion_RGBA_changes": 0,
+  "source_head_chest_skirt_guard_RGBA_changes": {
+    "head_collar": 0,
+    "valid_chest": 0,
+    "stable_skirt_waist": 0
+  },
+  "only_pixel_operation": "copy same uniformly mapped new raw RGBA in two wrong source-guard ownership regions; no new RGB, no blur, no local transform",
+  "calls": 0,
+  "no073_no_bridge": true,
+  "actually_viewed": [
+    "qa/semantic_guard_correction_61sol/far_wrist_first_native_second_dark.png",
+    "qa/semantic_guard_correction_61sol/tailcap_first_native_second_gray.png",
+    "qa/semantic_guard_correction_61sol/F069_second_reconnected_full_dark.png",
+    "qa/semantic_guard_correction_61sol/F069_second_two_short_puffs_bare_arms_dark_2x.png"
+  ],
+  "visual_findings": [
+    "Old scalloped cuff line across the far wrist is cleared; the continuous new returned wrist entrance remains.",
+    "Old sleeve fold/white dot and dangling line beneath the tailcap are cleared; same returned unknown lower metal/occlusion is used.",
+    "Both short puff sleeves, complete bare arms, actual source palms/digits, grip, supporting pad and true slider remain in the common registration."
+  ],
+  "remaining_limit": "At high magnification a small source/new-skin shade/edge transition remains near the proximal far wrist. No local movement, color patch, blur or further fitting performed; root should assess the actual candidate.",
+  "stopped_after_single_semantic_guard_correction": true
+}

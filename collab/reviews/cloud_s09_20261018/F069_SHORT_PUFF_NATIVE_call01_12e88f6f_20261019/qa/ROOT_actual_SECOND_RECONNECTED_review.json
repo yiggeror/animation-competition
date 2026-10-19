@@ -1,0 +1,17 @@
+{
+  "status": "SECOND_CANDIDATE_VISUALLY_SUITABLE_FOR_ASTRA_RESULT_REVIEW_NOT_YET_LOCKED",
+  "actual_views": [
+    "qa/semantic_guard_correction_61sol/F069_second_reconnected_full_gray.png",
+    "qa/semantic_guard_correction_61sol/F069_second_two_short_puffs_bare_arms_dark_2x.png",
+    "qa/semantic_guard_correction_61sol/far_wrist_first_native_second_dark.png",
+    "qa/semantic_guard_correction_61sol/tailcap_first_native_second_gray.png"
+  ],
+  "findings": [
+    "Both actual short puff cuffs end above elbows; complete new bare upper arms, elbows, forearms and wrists remain continuous.",
+    "Actual source whole palms/all digits, near grasp, far supporting palm pad and true torch/slider stay at the accepted action registration.",
+    "Two incorrectly protected old long-sleeve boundaries were released; no lingering cuff scallop or tailcap cloth line.",
+    "Clean original head/collar, valid chest and stable skirt retained; no guide annotations or new light."
+  ],
+  "remaining_limit": "High magnification shows a small source/new skin shade transition near the far wrist. No color patch, blur, local movement or extra native call; submit actual image for Astra result gate.",
+  "F073_F060_F062_calls": 0
+}

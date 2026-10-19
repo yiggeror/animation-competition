@@ -1,0 +1,74 @@
+{
+  "candidate": "candidate/F069_SHORT_PUFF_BARE_ARMS_semantic_RECONNECTED_FIRST_REVIEW.png",
+  "candidate_SHA256": "e487e1e78b411c233e1df500d02ac8dae6bf589c6008767e437b84d5c970a0cd",
+  "source_raw_SHA256": "20fc656468f28ca6e9c381f0bfb88e51c0099abce697f792665c9c23c1786eeb",
+  "source_original069_SHA256": "1f0da0fd9612fec220aa851969b0f9d677ef3a1a5fd8aa06a597ad1c552f912b",
+  "only_registration": {
+    "raw": [
+      1145,
+      1374
+    ],
+    "scale": 0.6724890829694323,
+    "native_size": [
+      770,
+      924
+    ],
+    "offset": [
+      550,
+      0
+    ],
+    "native_canvas": [
+      1672,
+      941
+    ]
+  },
+  "actual_original_source_RGBA_changes": {
+    "head_hair_neck_collar": 0,
+    "stable_skirt_waist": 0,
+    "valid_nonediting_chest": 0,
+    "whole_palms_all_digits": 0,
+    "visible_torch_slider": 0
+  },
+  "all_protection_RGBA_changes": 0,
+  "adoption_outside_complete_semantic_domain": 0,
+  "actual_new_native_adopted_pixels": 150709,
+  "new_raw_cloth_skin_continuous_material_only": true,
+  "independent_hand_prop_or_arm_fit": false,
+  "raw_whole_image_adopted": false,
+  "status": "HOLD_FIRST_CANDIDATE_PROTECTED_EXTRACTION_BOUNDARIES",
+  "calls": 0,
+  "scope": "No073 or bridges. Input labels are not adopted; head/context outside one complete front domain stays actual original source. No old cuff or long sleeve restored deliberately. Any source-returned wrist/prop attachment conflict must be reviewed, not patched or fitted.",
+  "actually_viewed": [
+    "originals/F069_SHORT_PUFF_TWO_BARE_ARMS_NATIVE_RAW.png",
+    "qa/semantic_reconnection_61sol/F069_reconnected_full_dark.png",
+    "qa/semantic_reconnection_61sol/F069_two_puffs_elbows_wrists_palms_gray_2x.png",
+    "qa/semantic_reconnection_61sol/F069_before_newraw_reconnected_connections_dark.png"
+  ],
+  "visible_facts": [
+    "New returned material supplies visibly short puff cuffs and continuous bare upperarms/elbows/forearms, not skin-colored long sleeves.",
+    "Complete new front blouse joins the returned two sleeves and source waist/skirt; no deliberate old wrist cuffs restored.",
+    "Original source palm/prop protection preserved exactly, but its extraction-boundary ownership is not visually safe at two interfaces."
+  ],
+  "blockers": [
+    {
+      "bbox_native": [
+        1085,
+        647,
+        1138,
+        707
+      ],
+      "issue": "Far palm proximal boundary imports an irregular/scalloped black line across new forearm; a visible pasted-wrist boundary. No local fit or clean-up performed."
+    },
+    {
+      "bbox_native": [
+        839,
+        599,
+        916,
+        658
+      ],
+      "issue": "Tailcap lower / near forearm interface imports old diagonal and dangling dark extraction lines. Visible-prop guard includes source boundary material needing semantic ownership review, not new geometry."
+    }
+  ],
+  "no_micro_repairs_after_view": true,
+  "next": "Root semantic ownership review required. Candidate is NOT final accepted069 and must not be propagated to073 yet."
+}
