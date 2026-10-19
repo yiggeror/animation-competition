@@ -1,0 +1,43 @@
+{
+  "status": "NOT_QUALIFIED_F094_TRUE_GRIP_LAYOUT_AND_COPIED_TECHNICAL_SKIN_CORNER",
+  "raw_SHA256": "c02b78a2d69977c0ea1776f3645a341c03ddb22a4fd2698c303e557f72342d04",
+  "native_SHA256": "8960e9dc1078bcd9e9b358e7f5dc2abf97f17ad425eee4b40bde6815ede174c1",
+  "actual_Canvas_SHA256": "553119cc6372f6b4ca21b62febac79c30b9a0c30374ea78b669b6b3a0261ecda",
+  "imagegen_requests": 1,
+  "raw_count": 1,
+  "joint_whole_output_registrations": 1,
+  "actual_full_Canvas_saved": 1,
+  "new098_calls": 0,
+  "new_usable094_states": 0,
+  "fixed_shin_ankle_shoe_and_blank_RGBA_changes": 0,
+  "outside_activity_RGBA_changes": 0,
+  "native_ground_shadow_and_box_front_actual_RGBA_changes": 0,
+  "true_grip_proxy_residuals_scene": {
+    "R": 58.55838685289076,
+    "L": 15.460568319084635
+  },
+  "complete_knee_proxy_residuals_native": {
+    "far_complete_knee_turn": 28.52783822939941,
+    "near_complete_knee_turn": 35.49034610215387,
+    "knee_loaded_bottom": 17.109165193270908
+  },
+  "no_independent_elbow_wrist_palm_finger_knee_warp": true,
+  "no_technical_target_pixels_adopted": true,
+  "actual_viewed": [
+    "actual_scene/F094_canvas.png",
+    "diagnostics/ACTUAL094_TRUE_GRIPS_AND_WRISTS_1to1.png",
+    "diagnostics/ACTUAL094_FULL_SHOULDERS_ELBOWS_WRISTS_1to1.png",
+    "diagnostics/ACTUAL094_FULL_KNEES_FIXED_SHINS_1to1.png",
+    "diagnostics/SAME_SCALE_TARGET_REGISTERED_RAW_ACTUAL.png"
+  ],
+  "visual_blockers": [
+    "NearRIGHT bare hand visibly does not reach the lower BODY shaft; whole-body joint fit cannot correct the relative two-palm layout.",
+    "FarLEFT jade hand is near the upper shaft but frozen grip proxy remains displaced and closed-volume occlusion is not accepted from a line crossing alone.",
+    "Sole raw reproduces an angular skin wedge directly before the jade bangle; that reference construction corner was required to be redrawn naturally. This defect exists in raw, not introduced by adoption.",
+    "Raw far-knee return retains a sharp construction-like fold. Registered lower-knee contour also encounters the fixed support ownership edge; all knee residuals retained and not equated with hidden bone movement."
+  ],
+  "preflight_context_path_error_corrected_before_any_actual_Canvas_saved": true,
+  "preflight_network_error_archive": "diagnostics/PREFLIGHT_CONTEXT_PATH_ERROR_NETWORK_EVENTS.jsonl",
+  "final_network_errors": [],
+  "automatic_retry": false
+}

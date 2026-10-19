@@ -1,0 +1,202 @@
+{
+  "status": "ONE_JOINT_WHOLE094_HEAD_SHOULDERS_HIP_BOTH_GRIPS_BOTH_KNEES",
+  "raw_SHA256": "c02b78a2d69977c0ea1776f3645a341c03ddb22a4fd2698c303e557f72342d04",
+  "raw_visible_points_target_weights": {
+    "head_top": [
+      [
+        620.0,
+        55.0
+      ],
+      [
+        620.0,
+        77.0
+      ],
+      1.0
+    ],
+    "head_visible_ear": [
+      [
+        596.0,
+        265.0
+      ],
+      [
+        557.0,
+        282.0
+      ],
+      1.0
+    ],
+    "chin": [
+      [
+        716.0,
+        320.0
+      ],
+      [
+        675.0,
+        328.0
+      ],
+      1.0
+    ],
+    "hip_visible_proxy": [
+      [
+        555.0,
+        945.0
+      ],
+      [
+        462.55050270751417,
+        872.8903649794456
+      ],
+      2.0
+    ],
+    "waist_back_hem": [
+      [
+        399.0,
+        829.0
+      ],
+      [
+        341.0,
+        771.0
+      ],
+      1.0
+    ],
+    "waist_front_hem": [
+      [
+        783.0,
+        979.0
+      ],
+      [
+        691.0,
+        910.0
+      ],
+      1.0
+    ],
+    "far_complete_knee_turn": [
+      [
+        852.0,
+        1320.0
+      ],
+      [
+        721.0,
+        1218.0
+      ],
+      2.0
+    ],
+    "near_complete_knee_turn": [
+      [
+        825.0,
+        1410.0
+      ],
+      [
+        685.0,
+        1295.0
+      ],
+      2.0
+    ],
+    "knee_loaded_bottom": [
+      [
+        700.0,
+        1454.0
+      ],
+      [
+        616.0,
+        1316.0
+      ],
+      2.0
+    ],
+    "R_shoulder": [
+      [
+        588.0,
+        480.0
+      ],
+      [
+        542.1883462808678,
+        476.9573234090816
+      ],
+      1.0
+    ],
+    "R_elbow": [
+      [
+        657.0,
+        730.0
+      ],
+      [
+        655.6151966775888,
+        690.6535237291218
+      ],
+      1.0
+    ],
+    "R_wrist": [
+      [
+        866.0,
+        839.0
+      ],
+      [
+        860.6865274172621,
+        780.3953507209587
+      ],
+      1.0
+    ],
+    "R_true_grip": [
+      [
+        941.0,
+        840.0
+      ],
+      [
+        934.8216809027882,
+        764.5500897836491
+      ],
+      4.0
+    ],
+    "L_shoulder": [
+      [
+        628.0,
+        456.0
+      ],
+      [
+        541.7583794089558,
+        445.05907447808016
+      ],
+      1.0
+    ],
+    "L_elbow": [
+      [
+        771.0,
+        671.0
+      ],
+      [
+        678.8716870685622,
+        620.9258944128042
+      ],
+      1.0
+    ],
+    "L_wrist": [
+      [
+        891.0,
+        642.0
+      ],
+      [
+        823.5364834028757,
+        578.3632026173367
+      ],
+      1.0
+    ],
+    "L_true_grip": [
+      [
+        980.0,
+        666.0
+      ],
+      [
+        900.0493204198561,
+        605.6354417960509
+      ],
+      4.0
+    ]
+  },
+  "all_regions_required": {
+    "head": 903,
+    "complete_shoulders_both_arm_chains": 992,
+    "waist_hips": 954,
+    "BOTH_complete_round_knees_upper_shin_returns": 1013
+  },
+  "uncertainty_native": "grasp approx4px; visible knee turns approx8px; hidden sleeve/hip proxy15-25px, not bone measurement",
+  "fixed_domain_SHA256": "113c53943146244715ea1e8caa7c9ed2c4cd8cfce97c2280ad4524d5e976ae26",
+  "knees_never_dropped_because_generated_shins_not_adopted": true
+}
