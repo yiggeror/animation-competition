@@ -1,0 +1,34 @@
+{
+  "tool": "image_gen.imagegen",
+  "status": "INPUT_ANATOMY_PREVIEW_NOT_EXECUTABLE",
+  "call_allowed": false,
+  "tool_arguments": null,
+  "planned_arguments_template_after_actual048_rebinding": {
+    "prompt": "S12 F052 true RIGHT thumb first underside touch; exposure052–055. INPUT GATE PROPOSAL ONLY, no execution permission. Preview arm pixels come solely from final actual040 SHA aeb7a572b08aeb6c4cf41eac5de770a6ebd879635cc1c8c97c7a45cbf15c1dbe. Before any production call, both real input images and this prompt/request MUST be rebuilt from actual accepted048 as sole continuity mother SHA {{ACTUAL_ACCEPTED048_NATIVE_SHA256}}. Do not submit040-based previews as an executable052 request.\n\nINPUT1 is ONE complete right shoulder/sleeve/upper arm/elbow/forearm/wrist/palm/5-digit target. The whole forearm/wrist/palm supinates about55degrees to expose the TRUE radial thumb from its proximal CMC/thenar side. The hand is an explicitly labeled anatomical VOLUME SCHEMATIC, NOT genuine generated or finished character art. Redraw a natural full-size right hand with the shown anatomy, skin volume and real crease/finger depth; do not copy capsule seams/joint dots/guide ink. All five digits are distinct anatomical chains. Do not rename the source048 highest visible extended finger as thumb, mirror the left hand, graft a detached thumb, shrink the palm or pull one fingertip. Source old occluded-thumb hand is removed entirely from the anatomical hand target. Redraw the entire arm, support the palm roll through the wrist and forearm muscles; do not twist just fingers.\n\nOnly true thumb volar PAD first touches the existing lower body shaft underside at T; G on the true shaft is scene(960,798.2472855274066), distinct from M palm-bone centre native(940,1045). T is the lower 7scene-wide shaft surface, pad radius8native. Other four digits retain actual air, no index wrap until056, no complete grip until060, no preload until064. Right wrist NO JADE. Shaft remains fixed scene(951.2616943917175,798.9063357461391) to(1282.1986905564156,773.9467944476169), supported on actual box rim. Do not move rod to chase thumb.\n\nINPUT2 is EXACTLY the same target with unchanged actual current left closed fist/upper rod, lower body rod, actual folded crane rig, box and cloth. Left whole real arm/grasp and all static body remain directly from actual accepted prior mother; no new articulation/lift/rise. Upper shaft/free end(930.1059238245394,729.1297395769899) to neck3(1497.5314905035327,714.6642052957592) stays frozen. Native x1024 boundary is shown along complete palm, both rods and left fist. Keep natural hand volume inside native1024 with full fingertip/ink/AA breathing room. G/T/M separate explanatory markers are not output pixels.\n\nINPUT3 only local real skin/blouse/identity material; no other pose. Source-collage cuts are not anatomical or clothing openings. Restore continuous blue proximal sleeve/underarm to original static torso silhouette and flower material; no pale cuts, duplicate shoulder caps or open grey wedges. Only output/adopt real newly drawn complete near RIGHT arm/wrist/palm/true5digits and necessary blue join. No head/body/legs/left-hand redesign. No copied code/source-reference hand as actual character.\n\nRegistration scene=.70*native+(275,112); native1024x1536. Local square1024: plate=1.12*native+(-294.4,-473.6), inverse native=(plate+(294.4,473.6))/1.12. Native right edge1024 is plate852.48, remaining area guard only. Keep output transparent, no rods/props/background/text/markers. Returned board scaling or shifting assessed with one whole-patch mapping, never separate digit/joint warps. Preserve raw PNG and prompt/input SHA provenance. Actual adopted real arm ownership must be explicit with mutually exclusive BG/FG whose union exactly reconstructs nativeRGBA; all prior-source bytes outside edit union exact.\n",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F052/inputs/F052_01_complete_arm_true_thumb_VOLUME_TARGET.png",
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F052/inputs/F052_02_SAME_POSE_true_props_thumb_contact.png",
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F052/inputs/03_local_material_ONLY.png"
+    ],
+    "transparent_background": true
+  },
+  "actual_three_PREVIEW_input_PNGs": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F052/inputs/F052_01_complete_arm_true_thumb_VOLUME_TARGET.png",
+      "SHA256": "be126cec2fa2bffd836b69914e6e9a07c9cd00930ef48ddd9fced5adbeb1795d"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F052/inputs/F052_02_SAME_POSE_true_props_thumb_contact.png",
+      "SHA256": "56fa0bf14ef7cba960125ff50629cc1bba8ca906fe2118cf0547bb48f52e5881"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F052/inputs/03_local_material_ONLY.png",
+      "SHA256": "d976781c23dbe4b5f2483a30a8fd90016128946a311b74beea46e0cc79ca5f92"
+    }
+  ],
+  "prompt_SHA256": "e6beb2a896991145e3d6e66e049ec3d6db3c14a8d86f565e442d5aeb61f71184",
+  "actual040_preview_source_SHA256": "aeb7a572b08aeb6c4cf41eac5de770a6ebd879635cc1c8c97c7a45cbf15c1dbe",
+  "future_production_actual048_SHA256": "UNAVAILABLE_NOT_YET_GENERATED",
+  "required_before_production": "Actual048 passes; rebuild both input images from actual048, preserve reviewed anatomical target; bind actual048 SHA and actual new input SHAs; request must have real arguments not this template.",
+  "new_calls": 0
+}
