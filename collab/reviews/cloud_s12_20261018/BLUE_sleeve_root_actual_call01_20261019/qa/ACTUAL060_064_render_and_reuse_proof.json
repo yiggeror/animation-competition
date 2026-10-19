@@ -1,0 +1,63 @@
+{
+  "status": "BLUE_ACTUAL060_AND064_PENDING_DIRECT_REVIEW",
+  "blue_imagegen_calls": 1,
+  "actual_Canvas_per_state": {
+    "F060": {
+      "count": 1,
+      "Canvas_SHA256": "e31c179587dcefcb9f3abd333d611d2741f41c6734d6757e607a4c6c59837c4b",
+      "native_SHA256": "905cab5393450737da89823b9e24915a05268cdcf2a96023e208e2a9c12dea4d",
+      "source_unchanged_actual_layers": {
+        "native_ground_shadows": {
+          "byte_exact": true,
+          "SHA256": "242ac036e9546967e05e23b42f418deea70923087132bbf8aa1851a2c994ede4"
+        },
+        "code_props": {
+          "byte_exact": true,
+          "SHA256": "de65eeba034a10fdd1f8f12bb1a2a0bbbd51d6bf946904c17d3a963335424feb"
+        },
+        "FG_index_registered": {
+          "byte_exact": true,
+          "SHA256": "21ee01c499437ea76b413577dac8dbd9cf1a58a177214c15c0375419d8af59ac"
+        },
+        "box_front": {
+          "byte_exact": true,
+          "SHA256": "4995c6a3e636f9a81a072773658da9c8607579bfc20235acfb0700ad6decbd34"
+        }
+      }
+    },
+    "F064": {
+      "count": 1,
+      "Canvas_SHA256": "8944bde07201659a7aec99edd0a309ba594be407cbb3f23c9a0fcec24490e6e6",
+      "native_SHA256": "905cab5393450737da89823b9e24915a05268cdcf2a96023e208e2a9c12dea4d",
+      "source_unchanged_actual_layers": {
+        "native_ground_shadows": {
+          "byte_exact": true,
+          "SHA256": "242ac036e9546967e05e23b42f418deea70923087132bbf8aa1851a2c994ede4"
+        },
+        "code_props": {
+          "byte_exact": true,
+          "SHA256": "de65eeba034a10fdd1f8f12bb1a2a0bbbd51d6bf946904c17d3a963335424feb"
+        },
+        "FG_index_registered": {
+          "byte_exact": true,
+          "SHA256": "21ee01c499437ea76b413577dac8dbd9cf1a58a177214c15c0375419d8af59ac"
+        },
+        "box_front": {
+          "byte_exact": true,
+          "SHA256": "4995c6a3e636f9a81a072773658da9c8607579bfc20235acfb0700ad6decbd34"
+        }
+      }
+    }
+  },
+  "original_white_and_domain_RGBA_proof": "qa/single_patch_semantic_scope_and_protection.json",
+  "064_all_six_actual_layers_byte_reuse060": {
+    "native_ground_shadows": true,
+    "BG_person_registered": true,
+    "code_props": true,
+    "FG_index_registered": true,
+    "box_front": true,
+    "person_registered": true
+  },
+  "064_new_drawing_pose": false,
+  "earlier034040048052056_batch_covered": false
+}
