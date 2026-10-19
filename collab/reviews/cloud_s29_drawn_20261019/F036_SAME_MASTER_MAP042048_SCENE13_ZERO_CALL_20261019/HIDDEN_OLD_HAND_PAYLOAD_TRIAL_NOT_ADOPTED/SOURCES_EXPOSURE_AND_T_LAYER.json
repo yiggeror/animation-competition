@@ -1,0 +1,71 @@
+{
+  "global_frames": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "fps": 24,
+  "source_state_starts": [
+    36,
+    42,
+    48
+  ],
+  "exposure_within_short_clip": [
+    {
+      "state": 36,
+      "frames": [
+        36,
+        41
+      ],
+      "count": 6
+    },
+    {
+      "state": 42,
+      "frames": [
+        42,
+        47
+      ],
+      "count": 6
+    },
+    {
+      "state": 48,
+      "frames": [
+        48,
+        48
+      ],
+      "count": 1
+    }
+  ],
+  "sources": [
+    {
+      "state": 36,
+      "used": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F036_FULL_FOLD_SAME_RAW_ZERO_CALL_20261019/F036_SAME_RAW_REINTEGRATED_RGBA.png",
+      "usedURL": "/collab/reviews/cloud_s29_drawn_20261019/F036_FULL_FOLD_SAME_RAW_ZERO_CALL_20261019/F036_SAME_RAW_REINTEGRATED_RGBA.png",
+      "sha256": "42af81de85dde49f2256ce2aca31eb69f8b6911693ff280e596d405c8e69c973"
+    },
+    {
+      "state": 42,
+      "used": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F036_SAME_MASTER_MAP042048_SCENE13_ZERO_CALL_20261019/F042/SAME036_MAPPED_REINTEGRATED_RGBA.png",
+      "usedURL": "/collab/reviews/cloud_s29_drawn_20261019/F036_SAME_MASTER_MAP042048_SCENE13_ZERO_CALL_20261019/F042/SAME036_MAPPED_REINTEGRATED_RGBA.png",
+      "sha256": "04f8b11983efa01bbad882bc8af83b00a0ca294fdaa3ce5b9d97c1a8d613e344"
+    },
+    {
+      "state": 48,
+      "used": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F036_SAME_MASTER_MAP042048_SCENE13_ZERO_CALL_20261019/F048/SAME036_MAPPED_REINTEGRATED_RGBA.png",
+      "usedURL": "/collab/reviews/cloud_s29_drawn_20261019/F036_SAME_MASTER_MAP042048_SCENE13_ZERO_CALL_20261019/F048/SAME036_MAPPED_REINTEGRATED_RGBA.png",
+      "sha256": "e0c51a895a3cbd5ab346a9925a100b1f42ed4d3ee3a7e73eb79ea3ebc759edd1"
+    }
+  ],
+  "generation_calls": 0,
+  "one_shared_master_SHA256": "3cb7dc6c8032453ea39fb79c1e1d8e36a7509fb53306a465057d6768895ed805"
+}
