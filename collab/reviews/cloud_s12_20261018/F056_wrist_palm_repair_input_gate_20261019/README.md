@@ -11,3 +11,5 @@ Review these actual new PNGs first:
 `diagnostics/FULL_SCENE_NOT_MODEL_INPUT.jpg` is only a scene/edge/cloth/props check and is excluded from model inputs. The failed whole board has ONE fixed similarity before repair; geometry, exact local plate coordinates and entry J are in `geometry/registration_and_full_wrist_hand_target.json`.
 
 Complete prompt, exact three input SHA256 values and non-executable request are retained. `call_allowed` is false; no repair imagegen or actual056 Canvas has run. 060/064 remain paused. After this short gate passes, any future generated patch must be adopted with ONE complete-patch similarity and only a small forearm join blend. Source-pixel reference articulation is not a finished drawing and cannot be adopted as actual056.
+
+Post-review revision: entire distal target translated[-4,+0.301683300299258]native without size/internal-shape change. Gscene x959.7. Both updated target PNGs were actually viewed. Sole authorized repair is now exhausted; see sibling `F056_directed_wrist_palm_repair_actual_20261019` for frozen actual inputs/raw/oneCanvas. Historical b4507ab request retains its original SHA rows explicitly as historical.

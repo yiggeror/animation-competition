@@ -1,0 +1,57 @@
+{
+  "status": "ACTUAL056_DIAGNOSTIC_PENDING_DIRECT_REVIEW_NOT_ACCEPTED",
+  "actual_canvas_renders": 1,
+  "frame": 56,
+  "time": 2.3333333333333335,
+  "actual_canvas_SHA256": "8cf10fafa9b00ec3aa2b77e5f6756fe1c0078a55d3699afc2cddcf108548d81d",
+  "native_candidate_SHA256": "9d1a1aa9b3bf346618dfe961665a3174900f58bf2e5566d832cbb33de13a5cd2",
+  "unchanged_actual_layers_vs_locked052": {
+    "code_props": {
+      "RGBA_exact": true,
+      "byte_exact": true,
+      "SHA256": "de65eeba034a10fdd1f8f12bb1a2a0bbbd51d6bf946904c17d3a963335424feb"
+    },
+    "native_ground_shadows": {
+      "RGBA_exact": true,
+      "byte_exact": true,
+      "SHA256": "242ac036e9546967e05e23b42f418deea70923087132bbf8aa1851a2c994ede4"
+    },
+    "box_front": {
+      "RGBA_exact": true,
+      "byte_exact": true,
+      "SHA256": "4995c6a3e636f9a81a072773658da9c8607579bfc20235acfb0700ad6decbd34"
+    }
+  },
+  "scene_asset_or_page_errors": [],
+  "incidental_favicon_404_preserved_not_scene_failure": [
+    {
+      "utc": "2026-10-19T10:28:25.407Z",
+      "event": "console_error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:35619/favicon.ico",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "imagegen_repair_calls": 1,
+  "repair_call_limit": 1,
+  "no_second_call": true,
+  "visually_opened": [
+    "originals/F056_directed_repair_call01_raw.png (grid diagnostic)",
+    "actual_scene/F056_canvas.png",
+    "diagnostics/actual_canvas_wrist_palm_6x.png",
+    "diagnostics/actual_canvas_whole_arm_3x.png"
+  ],
+  "visual_findings": [
+    "Near right bare wrist and palmar orientation visible; no wrong near-wrist jade.",
+    "Original lower shaft under thumb soft pad; actual front index middle/distal occludes shaft. Other three remain free.",
+    "Generated diagonal heel-of-palm ridge/strip and small pointed heel remnant persist despite explicit prompt; retained, not cut away.",
+    "Near sleeve root blue serrations/source joining artifacts remain; no body repaint."
+  ],
+  "formal_continuity_mother": "LOCKED actual052; this056 is pending and must not yet become060 mother",
+  "060064_generation": "PAUSED pending qualified056 and separate gate"
+}
