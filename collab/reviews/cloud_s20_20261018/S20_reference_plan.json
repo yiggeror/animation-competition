@@ -1,0 +1,388 @@
+{
+  "status": "REFERENCE_PROPOSAL_NOT_FROZEN",
+  "source_commit": "b75cfbcbd010ac9ecb7be21043bc445eb1adf15f",
+  "fps": 24,
+  "duration_seconds": 9,
+  "frames": 216,
+  "new_image_generation_calls": 0,
+  "production_character_drawings_generated": 0,
+  "key_reference_frames": [
+    20,
+    84,
+    156
+  ],
+  "character_pose_exposure_list_assigned": false,
+  "stage_camera": {
+    "CAM20": {
+      "pos": [
+        3.05,
+        1.5,
+        1.18
+      ],
+      "target": [
+        1.5,
+        0.42,
+        0.95
+      ],
+      "hfov": 58,
+      "frames": [
+        0,
+        143
+      ]
+    },
+    "CAMG": {
+      "cut_seconds": 6,
+      "cut_frame": 144,
+      "pos": [
+        2.55,
+        1.7,
+        1.2
+      ],
+      "target": "[1.2,1.15,1.0+0.02*k]",
+      "hfov": "42-4*k",
+      "frames": [
+        144,
+        215
+      ]
+    },
+    "note": "Camera read-only reference from source; new diagrams are construction views, not rendered camera projections."
+  },
+  "retained_continuous_cues": [
+    {
+      "cue": "active_rod_entangling",
+      "start": 2.4,
+      "end": 4.6,
+      "first_sample_at_or_after_start": 58,
+      "last_sample_before_end": 110,
+      "end_between_frames": [
+        110,
+        111
+      ]
+    },
+    {
+      "cue": "turtle_flip",
+      "start": 5.2,
+      "fully_belly_up": 5.5,
+      "completion_frame": 132
+    },
+    {
+      "cue": "original_grandma_camera_cut",
+      "time": 6,
+      "frame": 144
+    }
+  ],
+  "rod_identity": {
+    "T_H": {
+      "puppet": "turtle",
+      "attachment": {
+        "part": "head",
+        "at": [
+          20,
+          0
+        ]
+      },
+      "receiver": "X.R",
+      "colour_on_reference": "cyan"
+    },
+    "T_S": {
+      "puppet": "turtle",
+      "attachment": {
+        "part": "shell",
+        "at": [
+          0,
+          40
+        ]
+      },
+      "receiver": "X.L",
+      "colour_on_reference": "magenta"
+    },
+    "C_B": {
+      "puppet": "crane",
+      "attachment": {
+        "part": "body",
+        "at": [
+          -75,
+          6
+        ]
+      },
+      "steady_owner": "G.R",
+      "laugh_owner": "G.R"
+    },
+    "C_N": {
+      "puppet": "crane",
+      "attachment": {
+        "part": "neck3",
+        "at": [
+          10,
+          0
+        ]
+      },
+      "steady_owner": "G.L",
+      "laugh_owner": "G.R"
+    }
+  },
+  "laterality": {
+    "anatomical_LR": "Actor own L/R, not screen-left/right or upper/lower.",
+    "grandma_jade": "Only anatomicalL; nearL at main and laugh camera.",
+    "child_handoff": "Turns toward grandma; R can become near arm. No horizontal flip of an old source body.",
+    "child_operating": "Turns toward sheet; L becomes near arm.",
+    "laugh": "G.R bare wrist bundles2crane rods, G.L jade wrist supports abdomen."
+  },
+  "phase_plan": [
+    {
+      "phase": "B01",
+      "start_frame": 0,
+      "end_frame_inclusive": 11,
+      "frame_count": 12,
+      "start_seconds": "0.00000000",
+      "end_seconds_exclusive": "0.50000000",
+      "camera": "CAM20",
+      "beat": "收签准备",
+      "drawing_action": "奶奶L并C_B+C_N；R持T_H+T_S；小满两掌向签段张开，胸和脚朝向奶奶。",
+      "T_H_owner": "G.R",
+      "T_S_owner": "G.R",
+      "C_B_owner": "G.L",
+      "C_N_owner": "G.L",
+      "note": "动作阶段，不是一张图的持帧；冻结后再列逐张曝光。"
+    },
+    {
+      "phase": "B02",
+      "start_frame": 12,
+      "end_frame_inclusive": 23,
+      "frame_count": 12,
+      "start_seconds": "0.50000000",
+      "end_seconds_exclusive": "1.00000000",
+      "camera": "CAM20",
+      "beat": "交接共同承重",
+      "drawing_action": "小满R先闭合T_H，L再闭合T_S；奶奶R维持两签后端支持。K01参考F020。",
+      "T_H_owner": "G.R+X.R",
+      "T_S_owner": "G.R+X.L",
+      "C_B_owner": "G.L",
+      "C_N_owner": "G.L",
+      "note": "动作阶段，不是一张图的持帧；冻结后再列逐张曝光。"
+    },
+    {
+      "phase": "B03",
+      "start_frame": 24,
+      "end_frame_inclusive": 35,
+      "frame_count": 12,
+      "start_seconds": "1.00000000",
+      "end_seconds_exclusive": "1.50000000",
+      "camera": "CAM20",
+      "beat": "释放后端",
+      "drawing_action": "确认小满两握点稳定，奶奶R拇指及四指逐步松开并后撤；龟不失去支持。",
+      "T_H_owner": "X.R",
+      "T_S_owner": "X.L",
+      "C_B_owner": "G.L",
+      "C_N_owner": "G.L",
+      "note": "动作阶段，不是一张图的持帧；冻结后再列逐张曝光。"
+    },
+    {
+      "phase": "B04",
+      "start_frame": 36,
+      "end_frame_inclusive": 47,
+      "frame_count": 12,
+      "start_seconds": "1.50000000",
+      "end_seconds_exclusive": "2.00000000",
+      "camera": "CAM20",
+      "beat": "转幕并分鹤签",
+      "drawing_action": "小满用支撑脚短转带骨盆/胸/头朝幕，双腕随完整前臂移动；奶奶R接C_B后L才解除对此签的夹持。",
+      "T_H_owner": "X.R",
+      "T_S_owner": "X.L",
+      "C_B_owner": "G.L+G.R -> G.R",
+      "C_N_owner": "G.L",
+      "note": "动作阶段，不是一张图的持帧；冻结后再列逐张曝光。"
+    },
+    {
+      "phase": "B05",
+      "start_frame": 48,
+      "end_frame_inclusive": 57,
+      "frame_count": 10,
+      "start_seconds": "2.00000000",
+      "end_seconds_exclusive": "2.41666667",
+      "camera": "CAM20",
+      "beat": "短稳与起势",
+      "drawing_action": "小满双签各管一接点，先看龟再开始误扭；此段不提前画已经绞紧。",
+      "T_H_owner": "X.R",
+      "T_S_owner": "X.L",
+      "C_B_owner": "G.R",
+      "C_N_owner": "G.L",
+      "note": "动作阶段，不是一张图的持帧；冻结后再列逐张曝光。"
+    },
+    {
+      "phase": "B06",
+      "start_frame": 58,
+      "end_frame_inclusive": 77,
+      "frame_count": 20,
+      "start_seconds": "2.41666667",
+      "end_seconds_exclusive": "3.25000000",
+      "camera": "CAM20",
+      "beat": "第一次绞签",
+      "drawing_action": "连续cue t2.4开始；肩/肘/腕一起内收，硬直杆成X；T_S近，T_H远。",
+      "T_H_owner": "X.R",
+      "T_S_owner": "X.L",
+      "C_B_owner": "G.R",
+      "C_N_owner": "G.L",
+      "note": "动作阶段，不是一张图的持帧；冻结后再列逐张曝光。"
+    },
+    {
+      "phase": "B07",
+      "start_frame": 78,
+      "end_frame_inclusive": 95,
+      "frame_count": 18,
+      "start_seconds": "3.25000000",
+      "end_seconds_exclusive": "4.00000000",
+      "camera": "CAM20",
+      "beat": "绞签峰与反向",
+      "drawing_action": "失控反拉但各杆手端/偶端始终同一身份；腕曲不让肘、上臂拉长。K02参考F084。",
+      "T_H_owner": "X.R",
+      "T_S_owner": "X.L",
+      "C_B_owner": "G.R",
+      "C_N_owner": "G.L",
+      "note": "动作阶段，不是一张图的持帧；冻结后再列逐张曝光。"
+    },
+    {
+      "phase": "B08",
+      "start_frame": 96,
+      "end_frame_inclusive": 110,
+      "frame_count": 15,
+      "start_seconds": "4.00000000",
+      "end_seconds_exclusive": "4.62500000",
+      "camera": "CAM20",
+      "beat": "再绞并收紧",
+      "drawing_action": "2.4–4.6窗口末段；继续两根刚性签相擦，不画软绳结或突然换手。",
+      "T_H_owner": "X.R",
+      "T_S_owner": "X.L",
+      "C_B_owner": "G.R",
+      "C_N_owner": "G.L",
+      "note": "动作阶段，不是一张图的持帧；冻结后再列逐张曝光。"
+    },
+    {
+      "phase": "B09",
+      "start_frame": 111,
+      "end_frame_inclusive": 124,
+      "frame_count": 14,
+      "start_seconds": "4.62500000",
+      "end_seconds_exclusive": "5.20833333",
+      "camera": "CAM20",
+      "beat": "停主动绞、保留余晃",
+      "drawing_action": "t4.6后停止主动绞；代码spin缓出到4.8只读为余晃，不新增主动绞签cue；两掌仍实握。",
+      "T_H_owner": "X.R",
+      "T_S_owner": "X.L",
+      "C_B_owner": "G.R",
+      "C_N_owner": "G.L",
+      "note": "动作阶段，不是一张图的持帧；冻结后再列逐张曝光。"
+    },
+    {
+      "phase": "B10",
+      "start_frame": 125,
+      "end_frame_inclusive": 131,
+      "frame_count": 7,
+      "start_seconds": "5.20833333",
+      "end_seconds_exclusive": "5.50000000",
+      "camera": "CAM20",
+      "beat": "失控翻滚",
+      "drawing_action": "沿原5.2–5.5翻肚窗：两接点真实带动偶面滚转，手端不换绑；小满看到翻滚才整体收肘。",
+      "T_H_owner": "X.R",
+      "T_S_owner": "X.L",
+      "C_B_owner": "G.R",
+      "C_N_owner": "G.L",
+      "note": "动作阶段，不是一张图的持帧；冻结后再列逐张曝光。"
+    },
+    {
+      "phase": "B11",
+      "start_frame": 132,
+      "end_frame_inclusive": 143,
+      "frame_count": 12,
+      "start_seconds": "5.50000000",
+      "end_seconds_exclusive": "6.00000000",
+      "camera": "CAM20",
+      "beat": "翻肚与笑前并签",
+      "drawing_action": "F132/5.5完成翻肚；小满收住两签。奶奶R保持C_B，L把C_N送到R虎口夹牢，确认后才撤L。",
+      "T_H_owner": "X.R",
+      "T_S_owner": "X.L",
+      "C_B_owner": "G.R",
+      "C_N_owner": "G.L+G.R -> G.R",
+      "note": "动作阶段，不是一张图的持帧；冻结后再列逐张曝光。"
+    },
+    {
+      "phase": "B12",
+      "start_frame": 144,
+      "end_frame_inclusive": 155,
+      "frame_count": 12,
+      "start_seconds": "6.00000000",
+      "end_seconds_exclusive": "6.50000000",
+      "camera": "CAMG",
+      "beat": "原切景、笑起",
+      "drawing_action": "F144/6.0原CAMG切点不变；奶奶R已握C_B+C_N，L移腹前，腰髋/胸肩/颈头共同前俯。",
+      "T_H_owner": "X.R(offscreen)",
+      "T_S_owner": "X.L(offscreen)",
+      "C_B_owner": "G.R",
+      "C_N_owner": "G.R",
+      "note": "动作阶段，不是一张图的持帧；冻结后再列逐张曝光。"
+    },
+    {
+      "phase": "B13",
+      "start_frame": 156,
+      "end_frame_inclusive": 179,
+      "frame_count": 24,
+      "start_seconds": "6.50000000",
+      "end_seconds_exclusive": "7.50000000",
+      "camera": "CAMG",
+      "beat": "完整笑峰",
+      "drawing_action": "K03参考F156。两次笑波用完整胸/肩/头与轻屈膝变化，R仍实握双鹤签，L带镯扶腹。",
+      "T_H_owner": "X.R(offscreen)",
+      "T_S_owner": "X.L(offscreen)",
+      "C_B_owner": "G.R",
+      "C_N_owner": "G.R",
+      "note": "动作阶段，不是一张图的持帧；冻结后再列逐张曝光。"
+    },
+    {
+      "phase": "B14",
+      "start_frame": 180,
+      "end_frame_inclusive": 215,
+      "frame_count": 36,
+      "start_seconds": "7.50000000",
+      "end_seconds_exclusive": "9.00000000",
+      "camera": "CAMG",
+      "beat": "回弹与缓笑",
+      "drawing_action": "逐渐缓和，保持双脚支撑与掌腹接触；不以单肩抖或整张图伸缩填36帧。小满/龟在画外仍有两握点。",
+      "T_H_owner": "X.R(offscreen)",
+      "T_S_owner": "X.L(offscreen)",
+      "C_B_owner": "G.R",
+      "C_N_owner": "G.R",
+      "note": "动作阶段，不是一张图的持帧；冻结后再列逐张曝光。"
+    }
+  ],
+  "frozen_image_or_audio_files_modified": [],
+  "pending_Astra_freeze": [
+    "Accept explicit opening handoff and temporaryG.L crane bundle whileG.R hands over turtle bundle.",
+    "Accept fixedX.R=T_H/X.L=T_S and no endpoint remap when rods cross.",
+    "AcceptG.R crane bundle/G.L belly at laugh and pre-cut actual transfer ofC_N intoR.",
+    "Review3 full-volume construction plates, arm projections, hand contact separation and support before first mother image."
+  ],
+  "important_gaps": [
+    {
+      "source": "Script-v3 section8 + approved drawing list",
+      "gap": "They require grandma hands over turtle; sourceS20 starts with child already gripping both turtle rods. Opening0–2.4s is newly proposed real handover, not existing-code evidence."
+    },
+    {
+      "source": "s20.js T.cross ? i :1-i",
+      "gap": "Old code changes which hand endpoint is used for each turtle attachment. Proposed drawings preserve physical rod identity and produce a visibleX instead."
+    },
+    {
+      "source": "sourceg20 mirror + laterality audit",
+      "gap": "Old right-facing raw has jade on farL; 2D flip retains arm occlusion and produces wrong near/left reading. New construction uses new anatomical arm chains, not mirrored source pixels."
+    },
+    {
+      "source": "sourceg20_laugh andgrips()",
+      "gap": "Old raw shows one short rod; duplicategm grip point cannot prove two real rods in the palm. Proposal requires2distinct shafts/contact bands and pre-cut transfer."
+    },
+    {
+      "source": "s20.js spin envelope",
+      "gap": "Spin eases out through4.8 although comment/audioactive window ends4.6. Preserve2.4–4.6active action;4.6–4.8only passive settling. No code/audio edit in reference phase."
+    }
+  ],
+  "light_rule": "Scene lamp provides incoming light. Master neck orange shading and old card shading are identity references only, not frozen character texture illumination.",
+  "motion_density_guidance": "Fast hand/contact/flip samples may need2–3-frame drawings, moderate turns3–4, post-action settles4–6 with whole-body small drawings. These14phase intervals are not14poses or long single-picture holds; no40-pose list yet."
+}
