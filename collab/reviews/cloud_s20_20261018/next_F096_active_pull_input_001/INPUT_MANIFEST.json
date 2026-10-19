@@ -1,5 +1,5 @@
 {
-  "status": "F096_ZERO_CALL_ACTUAL_CONSTRUCTION_BLOCKED_CONTACT_OWNERSHIP_ASTRA_MINIMAL_ADJUSTMENT_PENDING",
+  "status": "F096_ZERO_CALL_CLARIFIED_FOUR_INPUTS_ASTRA_VISUAL_GATE_PENDING",
   "frame_label_only": 96,
   "new_image_calls": 0,
   "submitted": false,
@@ -167,7 +167,7 @@
     {
       "order": 1,
       "path": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F096_active_pull_input_001/inputs/01_unique_complete_F096_target_REVIEW_ONLY.png",
-      "sha256": "ee067680cfddfc69fcececb4d39f393ac9e7699ff3edb2fa2bf568a8a4e80eeb",
+      "sha256": "335168a0776b63615a27e21f8cd164138e0b5b1dc15bb66cbdb47e90830f41a4",
       "size": [
         1672,
         941
@@ -176,7 +176,7 @@
     {
       "order": 2,
       "path": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F096_active_pull_input_001/inputs/02_same_pose_dual_clamps_X_3x.png",
-      "sha256": "19c1229e12f279d99f53d114da40a23af9b24f1b0d75e17336be0cd41fa6b2ba",
+      "sha256": "9e9523bec46f0c59ac90ea8e7b4dfedf8ecabbe3f1b10a4a9d4ee75325064fb9",
       "size": [
         1455,
         930
@@ -194,7 +194,7 @@
     {
       "order": 4,
       "path": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F096_active_pull_input_001/inputs/04_complete_upper_whole_skirt_white_full_legs_black_mask.png",
-      "sha256": "27efd50c7b8c0f58593c584804907092e613884c891f6418080bb9d268472811",
+      "sha256": "85ddc66b84ba87dbc294d8f4dc5077eecc7fed655191d4a1f390a8e5009d8b2d",
       "size": [
         1672,
         941
@@ -213,18 +213,17 @@
     "096 construction target"
   ],
   "three_state_individual_alignment_applied": false,
-  "actual_unresolved_blocks": [
-    "090的近L拇指与远R腕掌在原件中遮挡接触；横向拉开后，当前远掌层仍带入近掌旧遮挡轮廓，不能据此生成。",
-    "近L袖/臂根有透明施工裂口，完整臂层与衣片所有权需最小接回。",
-    "T_S上端前方可见浅色旧轴残影，当前并未完全清净旧轴。"
-  ],
+  "actual_unresolved_blocks": [],
   "actual_views_inspected": [
     "complete_target_gray_REVIEW_ONLY.jpg",
     "contacts_1x_REVIEW_ONLY.png",
-    "084_passed_090_passed_096_target_same_canvas_upper_hands_1x.png",
-    "under_hem_target_left_mask_right_boundary_1x.png"
+    "sleeve_root_1x_REVIEW_ONLY.png"
   ],
-  "target_png_sha256": "ee067680cfddfc69fcececb4d39f393ac9e7699ff3edb2fa2bf568a8a4e80eeb",
+  "target_png_sha256": "335168a0776b63615a27e21f8cd164138e0b5b1dc15bb66cbdb47e90830f41a4",
   "source090_adopted": true,
-  "source090_exposure_frozen": false
+  "source090_exposure_frozen": false,
+  "clarification_source_commit": "6c7a398096cd5d7c43dc41b54ce57dc31ea56995",
+  "clarification_record": "clarification_record.json",
+  "remaining_TS_tip_ghost_cleared_by_minimal_clarification": true,
+  "whole_action_rebuilt": false
 }
