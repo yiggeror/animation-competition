@@ -1,0 +1,11 @@
+from pathlib import Path
+from PIL import Image,ImageDraw
+import numpy as np,json,hashlib
+O=Path(__file__).resolve().parent;R=O.parent;paths=[R/'F000_FINAL_LOCKED/S08_F000_grandma_match_box_RGBA.png',R/'F046_FINAL_LOCKED/S08_F046_grandma_match_box_RGBA.png',O/'candidates/S08_F049_wrist_same_raw_candidate_RGBA.png'];aa=[np.array(Image.open(p))for p in paths];S=[('native_wrist_forearm_lit',[847,865,874,883],[1145,817,1170,838],[1152,827,1172,846]),('native_palm_root_lit',[847,865,874,883],[1145,817,1170,838],[1205,816,1224,838]),('wrist_fold_DIAGNOSTIC_ONLY',[847,865,874,883],[1145,817,1170,838],[1185,827,1198,848]),('wrist_lower_turn_DIAGNOSTIC_ONLY',[847,865,874,883],[1145,817,1170,838],[1198,849,1215,857])];res=[];comps=[Image.alpha_composite(Image.new('RGBA',(1920,1080),(244,242,237,255)),Image.fromarray(a))for a in aa]
+for i,(name,*boxes) in enumerate(S):
+ vals=[]
+ for j,(a,b) in enumerate(zip(aa,boxes)):
+  x1,y1,x2,y2=b;ar=a[y1:y2,x1:x2].astype(int);m=(ar[:,:,3]>250)&(ar[:,:,0]>220)&(ar[:,:,0]-ar[:,:,1]>20)&(ar[:,:,1]-ar[:,:,2]>12);v=ar[:,:,:3][m];vals.append({'box':b,'n':len(v),'mean':v.mean(0).tolist(),'median':np.median(v,0).tolist()});d=ImageDraw.Draw(comps[j]);d.rectangle(b,outline=(220,30,150),width=1);d.text((x1,y1-11),str(i+1),fill=(255,0,100));mask=np.zeros(a.shape[:2],np.uint8);mask[y1:y2,x1:x2]=m*255;Image.fromarray(mask).save(O/'masks'/f'SAMPLE_{i+1}_{j}.png')
+ res.append({'name':name,'samples':vals,'delta049_000':(np.array(vals[2]['mean'])-vals[0]['mean']).tolist(),'delta049_046':(np.array(vals[2]['mean'])-vals[1]['mean']).tolist()})
+p=Image.new('RGB',(1500,600),(244,242,237));p.paste(comps[0].crop((800,820,925,920)).resize((500,400)),(0,80));p.paste(comps[1].crop((1090,790,1240,890)).resize((500,400)),(500,80));p.paste(comps[2].crop((1090,790,1240,890)).resize((500,400)),(1000,80));d=ImageDraw.Draw(p);d.text((5,30),'000 neutral material / 046 accepted / 049 native wrist. 1,2 comparable lit; 3,4 form-shadow diagnostic.',fill='black');p.save(O/'qa/F000_F046_F049_actual_wrist_materials.png');(O/'geometry/MATERIAL_SAMPLES.json').write_text(json.dumps({'source_sha256':[hashlib.sha256(p.read_bytes()).hexdigest()for p in paths],'samples':res},indent=2))
+for z in res:print(z['name'],np.round(z['delta049_000'],2),np.round(z['delta049_046'],2))

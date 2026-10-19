@@ -1,0 +1,23 @@
+{
+  "native_call": 22,
+  "submissions_for_F049": 1,
+  "raws_for_F049": 1,
+  "global_actual_images": 22,
+  "global_tool_submissions": 23,
+  "historical_parameter_validation_failure_no_image": 1,
+  "extra_generations_due_to_processing_versions": 0,
+  "adopted_intermediates": [
+    {
+      "path": "F049_result_nominal/candidates/S08_F049_wrist_candidate_RGBA.png",
+      "sha256": "aad4c0f4039e1c879c84d557eddb0b2dc61d873a5c5dee7cc4486accd04efb5f",
+      "disposition": "Nominal preview not final; its registered raw donor is consumed by semantic processing. No separate rejected generation."
+    },
+    {
+      "path": "F049_result_semantic_v1/candidates/S08_F049_wrist_same_raw_candidate_RGBA.png",
+      "sha256": "c75051f38c924099b0112984fbd18fa0b6f5eb425d0c89088141810683da8865",
+      "disposition": "Adopted geometry before final lit-wrist soft color, not a failed generation."
+    }
+  ],
+  "historical_status_rule": "Original input/pre-call and intermediate pending/diagnostic wording remains unchanged as historic records. Final independent and seal acceptance supersedes stage labels.",
+  "unknown_failures": "No independent failed generation or additional semantic version is evidenced in this scoped call22 tree. Do not invent individual failure reasons."
+}

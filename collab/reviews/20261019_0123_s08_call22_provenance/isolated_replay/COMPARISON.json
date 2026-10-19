@@ -1,0 +1,960 @@
+{
+  "status": "PASS_FIVE_STEP_ISOLATED_REPLAY_EXACT_FINAL_AND_LAYERS",
+  "processing_steps": 5,
+  "all_exit_zero": true,
+  "seed_files": 29,
+  "root_only_script_changes": 0,
+  "outputs": 83,
+  "byte_identical_outputs": 79,
+  "PNG_outputs": 74,
+  "byte_identical_PNGs": 74,
+  "pixel_differences": 0,
+  "root_only_JSON_differences": 1,
+  "manifest_path_digest_differences": 0,
+  "manifest_inventory_differences": 1,
+  "substantive_character_or_layer_differences": 0,
+  "current_frame_output_seeds": 0,
+  "archived_source_rows_changed": [],
+  "guard_blocked_operations": [],
+  "oracle_read_phase": "Only after all five child processes exited successfully. No oracle PNG or final/intermediate output was seeded.",
+  "layer_validation": {
+    "final_expected_hash_exact": true,
+    "three_layers_expected_hash_exact": true,
+    "mutually_exclusive_alpha": true,
+    "alpha_sum_exact": true,
+    "all_layer_RGB_original": true,
+    "RGBA_recomposition_exact": true
+  },
+  "differences": [
+    {
+      "path": "F049_FINAL_LOCKED/HAND_REUSE_CONTRACT.json",
+      "replay_sha256": "8adb07392e2bffc602d2f0f47352340e5b0e8852c4a72246aa2ecf6394ff96d9",
+      "oracle_sha256": "a709fb8fa321a1ebda7ab7c2678b04cc7dfa4ac6d4b53383d1eede0fdc6cf99d",
+      "kind": "JSON_METADATA_DIFFERENCE",
+      "normalized_field_differences": [
+        {
+          "field": "$.coordinator_final_gate_utc",
+          "replay": "<missing>",
+          "oracle": "2026-10-19T01:26:53Z"
+        },
+        {
+          "field": "$.independent_increment_review",
+          "replay": "<missing>",
+          "oracle": "/tmp/S08_F049_independent_review_0100/F049_FINAL_LAYER_AND_REUSE_INCREMENTAL_REVIEW.json"
+        },
+        {
+          "field": "$.near_independent_vs_flat_max_RGBA",
+          "replay": "<missing>",
+          "oracle": [
+            86,
+            86,
+            2,
+            7
+          ]
+        },
+        {
+          "field": "$.remaining_unique_images_planned",
+          "replay": "<missing>",
+          "oracle": 21
+        },
+        {
+          "field": "$.scope",
+          "replay": "Static wrist candidate and formal5f pendingfinaldualreview; actualCanvas separate.",
+          "oracle": "F049 character static geometry/material, formal046x3→049x2 isolated5f, threeexclusiveoriginalRGBAlayers and independentreuse passed. ActualCanvas wristflick/flame/lamp remains separate."
+        },
+        {
+          "field": "$.sourceover_audit",
+          "replay": "<missing>",
+          "oracle": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F049_FINAL_LOCKED/INDEPENDENT_HAND_SOURCEOVER_AUDIT.json"
+        },
+        {
+          "field": "$.sourceover_rebuild_baseline",
+          "replay": "<missing>",
+          "oracle": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F049_input_gate/inputs/F049_underlying_before_new_near_RGBA.png"
+        },
+        {
+          "field": "$.static_exposures_passed",
+          "replay": "<missing>",
+          "oracle": 20
+        },
+        {
+          "field": "$.static_unique_images_passed",
+          "replay": "<missing>",
+          "oracle": 19
+        },
+        {
+          "field": "$.status",
+          "replay": "PREPARED_PENDING_FINAL_STATIC_AND_LAYER_GATE",
+          "oracle": "DUAL_STATIC_COLOR_FORMAL5F_LAYER_REUSE_APPROVED"
+        }
+      ]
+    },
+    {
+      "path": "F049_FINAL_LOCKED/INDEPENDENT_HAND_SOURCEOVER_AUDIT.json",
+      "replay_sha256": "103144820376021a53371f8138ec03a37ccd79333703c5544f2a0e14b020aa43",
+      "oracle_sha256": "ead947c83cb1b0b1d1e06012a00292b2a51134edbec65c8cd73185a802d4a5a3",
+      "kind": "JSON_ABSOLUTE_ROOT_ONLY",
+      "normalized_field_differences": []
+    },
+    {
+      "path": "F049_FINAL_LOCKED/SEALED_MANIFEST.json",
+      "replay_sha256": "217020545cf453ca22bc3d46cf557cb4048c1514d3197b2c446886fe6e09ca53",
+      "oracle_sha256": "dab66f3a6ae03ceeb608c772f7588e51d4aeb6af809d67b3f6dfa3acc9006b3a",
+      "kind": "MANIFEST_OTHER_DIFFERENCE",
+      "manifest_analysis": {
+        "non_inventory_fields": [
+          {
+            "field": "$.actualCanvas_gate",
+            "replay": "<missing>",
+            "oracle": "Pending separate runtime render; no scene claim."
+          },
+          {
+            "field": "$.coordinator_gate_utc",
+            "replay": "<missing>",
+            "oracle": "2026-10-19T01:26:53Z"
+          },
+          {
+            "field": "$.independent_increment_review",
+            "replay": "<missing>",
+            "oracle": "/tmp/S08_F049_independent_review_0100/F049_FINAL_LAYER_AND_REUSE_INCREMENTAL_REVIEW.json"
+          },
+          {
+            "field": "$.status",
+            "replay": "PENDING_FINAL_DUAL_GATE",
+            "oracle": "FINAL_DUAL_STATIC_COLOR_FORMAL5F_LAYER_REUSE_APPROVED"
+          }
+        ],
+        "only_in_replay": [],
+        "only_in_author": [
+          "F049_FINAL_LOCKED/SOURCE_RECEIPT.json"
+        ],
+        "different_entries": [
+          {
+            "path": "F049_FINAL_LOCKED/HAND_REUSE_CONTRACT.json",
+            "referenced_file_digest_and_size_propagation": true,
+            "replay": {
+              "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F049_FINAL_LOCKED/HAND_REUSE_CONTRACT.json",
+              "sha256": "8adb07392e2bffc602d2f0f47352340e5b0e8852c4a72246aa2ecf6394ff96d9",
+              "bytes": 5893
+            },
+            "oracle": {
+              "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F049_FINAL_LOCKED/HAND_REUSE_CONTRACT.json",
+              "sha256": "a709fb8fa321a1ebda7ab7c2678b04cc7dfa4ac6d4b53383d1eede0fdc6cf99d",
+              "bytes": 6572
+            }
+          },
+          {
+            "path": "F049_FINAL_LOCKED/INDEPENDENT_HAND_SOURCEOVER_AUDIT.json",
+            "referenced_file_digest_and_size_propagation": true,
+            "replay": {
+              "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F049_FINAL_LOCKED/INDEPENDENT_HAND_SOURCEOVER_AUDIT.json",
+              "sha256": "103144820376021a53371f8138ec03a37ccd79333703c5544f2a0e14b020aa43",
+              "bytes": 80565
+            },
+            "oracle": {
+              "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F049_FINAL_LOCKED/INDEPENDENT_HAND_SOURCEOVER_AUDIT.json",
+              "sha256": "ead947c83cb1b0b1d1e06012a00292b2a51134edbec65c8cd73185a802d4a5a3",
+              "bytes": 80545
+            }
+          },
+          {
+            "path": "F049_LAYER_PARTITION/LAYER_VALIDATION.json",
+            "referenced_file_digest_and_size_propagation": true,
+            "replay": {
+              "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F049_LAYER_PARTITION/LAYER_VALIDATION.json",
+              "sha256": "867a133be0a0d5650d00edd0f0053715fccc7cf553b54891fc4bcfe1c12e7761",
+              "bytes": 529
+            },
+            "oracle": {
+              "path": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F049_LAYER_PARTITION/LAYER_VALIDATION.json",
+              "sha256": "0c457ef65eadaf7baedafaba254881bd71b45553c68bd7957951b418b5254fde",
+              "bytes": 639
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "F049_LAYER_PARTITION/LAYER_VALIDATION.json",
+      "replay_sha256": "867a133be0a0d5650d00edd0f0053715fccc7cf553b54891fc4bcfe1c12e7761",
+      "oracle_sha256": "0c457ef65eadaf7baedafaba254881bd71b45553c68bd7957951b418b5254fde",
+      "kind": "JSON_METADATA_DIFFERENCE",
+      "normalized_field_differences": [
+        {
+          "field": "$.independent_review",
+          "replay": "<missing>",
+          "oracle": "/tmp/S08_F049_independent_review_0100/F049_FINAL_LAYER_AND_REUSE_INCREMENTAL_REVIEW.json"
+        },
+        {
+          "field": "$.status",
+          "replay": "ORIGINAL_RGBA_THREEWAY_RECONSTRUCTION_PASS_VISUAL_PENDING",
+          "oracle": "PASS_DUAL_VISUAL_EXCLUSIVE_RGBA_PARTITION_AND_REUSE"
+        }
+      ]
+    }
+  ],
+  "all_output_comparisons": [
+    {
+      "path": "F049_FINAL_LOCKED/F049_actual_far_occluded_by_near_arm_and_hand.png",
+      "replay_sha256": "4c0126a76d84cec6bd2d2e96ebc216c69e3ac2c7460139a167c245fe73bddeec",
+      "replay_bytes": 2528,
+      "oracle_exists": true,
+      "oracle_sha256": "4c0126a76d84cec6bd2d2e96ebc216c69e3ac2c7460139a167c245fe73bddeec",
+      "oracle_bytes": 2528,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_actual_native_near_forearm_foreground.png",
+      "replay_sha256": "1c44a50fcdc21b429b99af20bbf300f702b8676a59ced8304adec7f8134a71a8",
+      "replay_bytes": 4051,
+      "oracle_exists": true,
+      "oracle_sha256": "1c44a50fcdc21b429b99af20bbf300f702b8676a59ced8304adec7f8134a71a8",
+      "oracle_bytes": 4051,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_complete_native_near_arm_plus_independent_hand_RGBA.png",
+      "replay_sha256": "abf987f73129632e5476fe5b71e4dadb9bf66557f7948d305f257bb0686aeb74",
+      "replay_bytes": 73992,
+      "oracle_exists": true,
+      "oracle_sha256": "abf987f73129632e5476fe5b71e4dadb9bf66557f7948d305f257bb0686aeb74",
+      "oracle_bytes": 73992,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_RGBA.png",
+      "replay_sha256": "6168e4a06d4bb88ba4659280b9c35d3d9002ab8f252392fa0819e389dda2acd0",
+      "replay_bytes": 28205,
+      "oracle_exists": true,
+      "oracle_sha256": "6168e4a06d4bb88ba4659280b9c35d3d9002ab8f252392fa0819e389dda2acd0",
+      "oracle_bytes": 28205,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+      "replay_sha256": "c5909abc746bf4fd6e28a8280bc0184c7d9b1a5ae9074b3c50b7f2206187ffbc",
+      "replay_bytes": 2753,
+      "oracle_exists": true,
+      "oracle_sha256": "c5909abc746bf4fd6e28a8280bc0184c7d9b1a5ae9074b3c50b7f2206187ffbc",
+      "oracle_bytes": 2753,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_far_hand_jade_SEAT_hard_guard.png",
+      "replay_sha256": "ae290dbaa10514d91d5bea0df4eb7d56fa0932c73b6fd14ac81edd10a207c0c8",
+      "replay_bytes": 2809,
+      "oracle_exists": true,
+      "oracle_sha256": "ae290dbaa10514d91d5bea0df4eb7d56fa0932c73b6fd14ac81edd10a207c0c8",
+      "oracle_bytes": 2809,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_far_historical_complete_jadeAA150.png",
+      "replay_sha256": "70c556b39b037d5dd5a3d46948e58233b172f307bd044673ff0f52571ab68ea8",
+      "replay_bytes": 2304,
+      "oracle_exists": true,
+      "oracle_sha256": "70c556b39b037d5dd5a3d46948e58233b172f307bd044673ff0f52571ab68ea8",
+      "oracle_bytes": 2304,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_far_jadeAA_visible_this_frame_only.png",
+      "replay_sha256": "9b4b7f38709af872bb9d80f9ef1e8875a71432d7582bfd2732a555c864121189",
+      "replay_bytes": 2300,
+      "oracle_exists": true,
+      "oracle_sha256": "9b4b7f38709af872bb9d80f9ef1e8875a71432d7582bfd2732a555c864121189",
+      "oracle_bytes": 2300,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_far_original_jade_AA_requires_same_raw_skin_underlay.png",
+      "replay_sha256": "d3735b62ec75a35a6ebd29add9e860404a88fcc068151c37ddf8f46e7a8c8b1f",
+      "replay_bytes": 2324,
+      "oracle_exists": true,
+      "oracle_sha256": "d3735b62ec75a35a6ebd29add9e860404a88fcc068151c37ddf8f46e7a8c8b1f",
+      "oracle_bytes": 2324,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_fixed_table_box_RGBA.png",
+      "replay_sha256": "cf3e3aedca8b9b681ac9e1c6cd9e6bc80eba689168ace734840e86ae7a1f5f1f",
+      "replay_bytes": 11567,
+      "oracle_exists": true,
+      "oracle_sha256": "cf3e3aedca8b9b681ac9e1c6cd9e6bc80eba689168ace734840e86ae7a1f5f1f",
+      "oracle_bytes": 11567,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_fixed_table_box_footprint.png",
+      "replay_sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "replay_bytes": 2180,
+      "oracle_exists": true,
+      "oracle_sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "oracle_bytes": 2180,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_near_distal_hard_guard_RGBA.png",
+      "replay_sha256": "5e08cce7915bb387cd34253ea7f78d2da7d1c4c60fbf3a42b0ded7370232ad5a",
+      "replay_bytes": 28480,
+      "oracle_exists": true,
+      "oracle_sha256": "5e08cce7915bb387cd34253ea7f78d2da7d1c4c60fbf3a42b0ded7370232ad5a",
+      "oracle_bytes": 28480,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_near_distal_hard_guard_footprint.png",
+      "replay_sha256": "6d40b1e7291493b7e1e2d842136aa9051d89f75fc0883bc86b7541824d8b7d1d",
+      "replay_bytes": 2833,
+      "oracle_exists": true,
+      "oracle_sha256": "6d40b1e7291493b7e1e2d842136aa9051d89f75fc0883bc86b7541824d8b7d1d",
+      "oracle_bytes": 2833,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_near_proximal_collar_REBUILD_NOT_HARD.png",
+      "replay_sha256": "563a1f2da4d0db496847870b27c1e101d3728730435b06d6b58a87550ad63534",
+      "replay_bytes": 2556,
+      "oracle_exists": true,
+      "oracle_sha256": "563a1f2da4d0db496847870b27c1e101d3728730435b06d6b58a87550ad63534",
+      "oracle_bytes": 2556,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_near_transformed_original6609_core.png",
+      "replay_sha256": "d1419b14a3731e85b26d760eb04facb0d5a30c844d56d1f0d9be75e437159a12",
+      "replay_bytes": 2820,
+      "oracle_exists": true,
+      "oracle_sha256": "d1419b14a3731e85b26d760eb04facb0d5a30c844d56d1f0d9be75e437159a12",
+      "oracle_bytes": 2820,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_original_near_before_native_collar_RGBA.png",
+      "replay_sha256": "32e1f9d9a3f3be783c8f6f3af2901fdf2a5440fccd768b3797b63d5bd6c5cc9f",
+      "replay_bytes": 33556,
+      "oracle_exists": true,
+      "oracle_sha256": "32e1f9d9a3f3be783c8f6f3af2901fdf2a5440fccd768b3797b63d5bd6c5cc9f",
+      "oracle_bytes": 33556,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_true_near_hand_match_INDEPENDENT_FOREGROUND_RGBA.png",
+      "replay_sha256": "341113eb33f46bea2c042bb9ffa88634268f9b3c54fd3a9c9e749427f7943fbb",
+      "replay_bytes": 33049,
+      "oracle_exists": true,
+      "oracle_sha256": "341113eb33f46bea2c042bb9ffa88634268f9b3c54fd3a9c9e749427f7943fbb",
+      "oracle_bytes": 33049,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/F049_true_near_hand_match_INDEPENDENT_FOREGROUND_footprint.png",
+      "replay_sha256": "75816c82dd5336b7d6cc9e279a615d60ea54305531f24301eff138cba0bf3882",
+      "replay_bytes": 2936,
+      "oracle_exists": true,
+      "oracle_sha256": "75816c82dd5336b7d6cc9e279a615d60ea54305531f24301eff138cba0bf3882",
+      "oracle_bytes": 2936,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/HAND_REUSE_CONTRACT.json",
+      "replay_sha256": "8adb07392e2bffc602d2f0f47352340e5b0e8852c4a72246aa2ecf6394ff96d9",
+      "replay_bytes": 5893,
+      "oracle_exists": true,
+      "oracle_sha256": "a709fb8fa321a1ebda7ab7c2678b04cc7dfa4ac6d4b53383d1eede0fdc6cf99d",
+      "oracle_bytes": 6572,
+      "byte_identical": false
+    },
+    {
+      "path": "F049_FINAL_LOCKED/INDEPENDENT_HAND_SOURCEOVER_AUDIT.json",
+      "replay_sha256": "103144820376021a53371f8138ec03a37ccd79333703c5544f2a0e14b020aa43",
+      "replay_bytes": 80565,
+      "oracle_exists": true,
+      "oracle_sha256": "ead947c83cb1b0b1d1e06012a00292b2a51134edbec65c8cd73185a802d4a5a3",
+      "oracle_bytes": 80545,
+      "byte_identical": false
+    },
+    {
+      "path": "F049_FINAL_LOCKED/S08_F049_grandma_match_box_RGBA.png",
+      "replay_sha256": "8f03f271d52c35283e0be68ab7146004a81c2f0231ccbab85f198524916c7bd1",
+      "replay_bytes": 560774,
+      "oracle_exists": true,
+      "oracle_sha256": "8f03f271d52c35283e0be68ab7146004a81c2f0231ccbab85f198524916c7bd1",
+      "oracle_bytes": 560774,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_FINAL_LOCKED/SEALED_MANIFEST.json",
+      "replay_sha256": "217020545cf453ca22bc3d46cf557cb4048c1514d3197b2c446886fe6e09ca53",
+      "replay_bytes": 9246,
+      "oracle_exists": true,
+      "oracle_sha256": "dab66f3a6ae03ceeb608c772f7588e51d4aeb6af809d67b3f6dfa3acc9006b3a",
+      "oracle_bytes": 9438,
+      "byte_identical": false
+    },
+    {
+      "path": "F049_LAYER_PARTITION/LAYER_VALIDATION.json",
+      "replay_sha256": "867a133be0a0d5650d00edd0f0053715fccc7cf553b54891fc4bcfe1c12e7761",
+      "replay_bytes": 529,
+      "oracle_exists": true,
+      "oracle_sha256": "0c457ef65eadaf7baedafaba254881bd71b45553c68bd7957951b418b5254fde",
+      "oracle_bytes": 639,
+      "byte_identical": false
+    },
+    {
+      "path": "F049_LAYER_PARTITION/frames/F049_body_behind_original_pixels.png",
+      "replay_sha256": "3c0b077e660433faeac31011a767cfa3a1756a559fb285bd43205e325a707a99",
+      "replay_bytes": 556418,
+      "oracle_exists": true,
+      "oracle_sha256": "3c0b077e660433faeac31011a767cfa3a1756a559fb285bd43205e325a707a99",
+      "oracle_bytes": 556418,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_LAYER_PARTITION/frames/F049_forearms_elbows_original_pixels.png",
+      "replay_sha256": "047e5506eede0cd7f7a9bfff6fef0a2e9e869e9b2d0aa252e514a6b42da6827f",
+      "replay_bytes": 539118,
+      "oracle_exists": true,
+      "oracle_sha256": "047e5506eede0cd7f7a9bfff6fef0a2e9e869e9b2d0aa252e514a6b42da6827f",
+      "oracle_bytes": 539118,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_LAYER_PARTITION/frames/F049_table_box_original_pixels.png",
+      "replay_sha256": "82411d00da844aaac638ab1e79adb197741a2b06146b0a9caac3433333370e74",
+      "replay_bytes": 534638,
+      "oracle_exists": true,
+      "oracle_sha256": "82411d00da844aaac638ab1e79adb197741a2b06146b0a9caac3433333370e74",
+      "oracle_bytes": 534638,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_LAYER_PARTITION/layer_contract.js",
+      "replay_sha256": "9992ca46c7b62d620b1f9dd302e9b0b9a9c3756ef4fff164b71ad20eec07e69e",
+      "replay_bytes": 667,
+      "oracle_exists": true,
+      "oracle_sha256": "9992ca46c7b62d620b1f9dd302e9b0b9a9c3756ef4fff164b71ad20eec07e69e",
+      "oracle_bytes": 667,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_LAYER_PARTITION/masks/F049_arms_binary.png",
+      "replay_sha256": "b346b8b20de87bc3b7a7a2a260f61c4a604adf00a72f69003df7181e0ef94b27",
+      "replay_bytes": 4646,
+      "oracle_exists": true,
+      "oracle_sha256": "b346b8b20de87bc3b7a7a2a260f61c4a604adf00a72f69003df7181e0ef94b27",
+      "oracle_bytes": 4646,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_LAYER_PARTITION/masks/F049_body_binary.png",
+      "replay_sha256": "11d9713d2a2d2b592543bd038f3ad256362ad005e39a1be595ef03ff1e1ec5b9",
+      "replay_bytes": 12765,
+      "oracle_exists": true,
+      "oracle_sha256": "11d9713d2a2d2b592543bd038f3ad256362ad005e39a1be595ef03ff1e1ec5b9",
+      "oracle_bytes": 12765,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_LAYER_PARTITION/masks/F049_table_box_binary.png",
+      "replay_sha256": "5af8ad0ae2746526a13e6b27e10674a2b9f847ff739175bb9dcbc4f328b9af4c",
+      "replay_bytes": 2186,
+      "oracle_exists": true,
+      "oracle_sha256": "5af8ad0ae2746526a13e6b27e10674a2b9f847ff739175bb9dcbc4f328b9af4c",
+      "oracle_bytes": 2186,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_LAYER_PARTITION/qa/F049_layer_TOPOLOGY_ONLY_NOT_CANVAS_dark.png",
+      "replay_sha256": "355a1e0a4525716766c8cd0584722ff72124eae610e818c5826d0f463c4b4aa5",
+      "replay_bytes": 598768,
+      "oracle_exists": true,
+      "oracle_sha256": "355a1e0a4525716766c8cd0584722ff72124eae610e818c5826d0f463c4b4aa5",
+      "oracle_bytes": 598768,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_LAYER_PARTITION/qa/F049_layer_TOPOLOGY_ONLY_NOT_CANVAS_light.png",
+      "replay_sha256": "e20cfc795909a0a6315bfb7822c635d240c1ccd19cc0cdc61d7fd96ac8ab3808",
+      "replay_bytes": 615807,
+      "oracle_exists": true,
+      "oracle_sha256": "e20cfc795909a0a6315bfb7822c635d240c1ccd19cc0cdc61d7fd96ac8ab3808",
+      "oracle_bytes": 615807,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_LAYER_PARTITION/qa/F049_threeway_overlay_dark.png",
+      "replay_sha256": "241cd56270ffa2bfa4995e921aa2f01e1accb9c02151faa74d14a9be95336755",
+      "replay_bytes": 654108,
+      "oracle_exists": true,
+      "oracle_sha256": "241cd56270ffa2bfa4995e921aa2f01e1accb9c02151faa74d14a9be95336755",
+      "oracle_bytes": 654108,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_LAYER_PARTITION/qa/F049_threeway_overlay_light.png",
+      "replay_sha256": "e7e07e828652d5bab4acb9901b1714b85f910e24dfddb08235a98b90a8af59a3",
+      "replay_bytes": 671402,
+      "oracle_exists": true,
+      "oracle_sha256": "e7e07e828652d5bab4acb9901b1714b85f910e24dfddb08235a98b90a8af59a3",
+      "oracle_bytes": 671402,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_color_final/candidates/S08_F049_same_raw_final_color_RGBA.png",
+      "replay_sha256": "8f03f271d52c35283e0be68ab7146004a81c2f0231ccbab85f198524916c7bd1",
+      "replay_bytes": 560774,
+      "oracle_exists": true,
+      "oracle_sha256": "8f03f271d52c35283e0be68ab7146004a81c2f0231ccbab85f198524916c7bd1",
+      "oracle_bytes": 560774,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_color_final/geometry/COLOR_MASK_AND_CHECKS.json",
+      "replay_sha256": "19e13d201258951eb219ace6983eb16dbe8f340b13cd35309a1f7953bd248abe",
+      "replay_bytes": 2805,
+      "oracle_exists": true,
+      "oracle_sha256": "19e13d201258951eb219ace6983eb16dbe8f340b13cd35309a1f7953bd248abe",
+      "oracle_bytes": 2805,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_color_final/masks/NEW_NATIVE_WRIST_LIT_SOFT_G3_B1.png",
+      "replay_sha256": "7161dfffc99b1f793d2b7f3fa42954b2e5c09deaa70de9638e838168076d4cc2",
+      "replay_bytes": 3049,
+      "oracle_exists": true,
+      "oracle_sha256": "7161dfffc99b1f793d2b7f3fa42954b2e5c09deaa70de9638e838168076d4cc2",
+      "oracle_bytes": 3049,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_color_final/masks/WRIST_CREASE_AND_UNDERSIDE_SHADOW_PROTECT.png",
+      "replay_sha256": "9874c0dd4c906bc42fd3c17b8b3c652cc57d9a42bade2d4c10e8d0fc81a34a67",
+      "replay_bytes": 2335,
+      "oracle_exists": true,
+      "oracle_sha256": "9874c0dd4c906bc42fd3c17b8b3c652cc57d9a42bade2d4c10e8d0fc81a34a67",
+      "oracle_bytes": 2335,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_color_final/qa/F046_F049_same_scale_dark.png",
+      "replay_sha256": "89d014213dcc67c5203d6bdbf29f075e178468c094776dfdace1fecf7273523c",
+      "replay_bytes": 449974,
+      "oracle_exists": true,
+      "oracle_sha256": "89d014213dcc67c5203d6bdbf29f075e178468c094776dfdace1fecf7273523c",
+      "oracle_bytes": 449974,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_color_final/qa/F046_F049_same_scale_light.png",
+      "replay_sha256": "5ab39a7a08b3b7280a06b68153a3d3eb67538cf1bb1a71ea2e2c302965290868",
+      "replay_bytes": 465611,
+      "oracle_exists": true,
+      "oracle_sha256": "5ab39a7a08b3b7280a06b68153a3d3eb67538cf1bb1a71ea2e2c302965290868",
+      "oracle_bytes": 465611,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_color_final/qa/actual_wrist_grip_dark.png",
+      "replay_sha256": "6a0750d0b63075907336afcd730f677aa9f0adbcbaa666a4c534e9076b4024ec",
+      "replay_bytes": 344182,
+      "oracle_exists": true,
+      "oracle_sha256": "6a0750d0b63075907336afcd730f677aa9f0adbcbaa666a4c534e9076b4024ec",
+      "oracle_bytes": 344182,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_color_final/qa/actual_wrist_grip_light.png",
+      "replay_sha256": "8f29264eefaab4ec18a0f5da2bff65a9b1f721dba627ef2857fbd79de3274387",
+      "replay_bytes": 359403,
+      "oracle_exists": true,
+      "oracle_sha256": "8f29264eefaab4ec18a0f5da2bff65a9b1f721dba627ef2857fbd79de3274387",
+      "oracle_bytes": 359403,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_color_final/qa/candidate_dark.png",
+      "replay_sha256": "a21e41faf707d9cd2eb065c394c87929a8dc767876ac84e04712d53639d3ed97",
+      "replay_bytes": 458312,
+      "oracle_exists": true,
+      "oracle_sha256": "a21e41faf707d9cd2eb065c394c87929a8dc767876ac84e04712d53639d3ed97",
+      "oracle_bytes": 458312,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_color_final/qa/candidate_light.png",
+      "replay_sha256": "140b587f27fd59ed3f10c6c15765ef55ec1b845d9ef4b7a6fc10d7c91bf20809",
+      "replay_bytes": 473209,
+      "oracle_exists": true,
+      "oracle_sha256": "140b587f27fd59ed3f10c6c15765ef55ec1b845d9ef4b7a6fc10d7c91bf20809",
+      "oracle_bytes": 473209,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_color_final/qa/color_mask_dark.png",
+      "replay_sha256": "48bbe7ad2965b7d3b6a753722b55ba936c25cebf19730e9b4462793d2d6f5df9",
+      "replay_bytes": 348365,
+      "oracle_exists": true,
+      "oracle_sha256": "48bbe7ad2965b7d3b6a753722b55ba936c25cebf19730e9b4462793d2d6f5df9",
+      "oracle_bytes": 348365,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_color_final/qa/color_mask_light.png",
+      "replay_sha256": "cd4b82c1d7860e8aae18fd4b5ae7cf5a592ac03a18fd71d6c4b13746afdb8497",
+      "replay_bytes": 363022,
+      "oracle_exists": true,
+      "oracle_sha256": "cd4b82c1d7860e8aae18fd4b5ae7cf5a592ac03a18fd71d6c4b13746afdb8497",
+      "oracle_bytes": 363022,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_nominal/candidates/S08_F049_wrist_candidate_RGBA.png",
+      "replay_sha256": "aad4c0f4039e1c879c84d557eddb0b2dc61d873a5c5dee7cc4486accd04efb5f",
+      "replay_bytes": 560532,
+      "oracle_exists": true,
+      "oracle_sha256": "aad4c0f4039e1c879c84d557eddb0b2dc61d873a5c5dee7cc4486accd04efb5f",
+      "oracle_bytes": 560532,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_nominal/geometry/NOMINAL_CHECKS.json",
+      "replay_sha256": "00f2b5b71313dd0490eaf7d179b55942d6b9aeed1441c0e1b93dc645a0ca2a49",
+      "replay_bytes": 952,
+      "oracle_exists": true,
+      "oracle_sha256": "00f2b5b71313dd0490eaf7d179b55942d6b9aeed1441c0e1b93dc645a0ca2a49",
+      "oracle_bytes": 952,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_nominal/masks/ACTUAL_internal_feather_entire_old_and_new_root_full.png",
+      "replay_sha256": "90e0c89e20c2279a5a71434fa3de568a3762b8a0050aba19cf7617f5f60959d4",
+      "replay_bytes": 2893,
+      "oracle_exists": true,
+      "oracle_sha256": "90e0c89e20c2279a5a71434fa3de568a3762b8a0050aba19cf7617f5f60959d4",
+      "oracle_bytes": 2893,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_nominal/qa/F046_F049_same_scale_dark.png",
+      "replay_sha256": "f7e578b0a676e45cf6c4a273e582d6977acd2fe3c02692e2a576f31d441a696c",
+      "replay_bytes": 450388,
+      "oracle_exists": true,
+      "oracle_sha256": "f7e578b0a676e45cf6c4a273e582d6977acd2fe3c02692e2a576f31d441a696c",
+      "oracle_bytes": 450388,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_nominal/qa/F046_F049_same_scale_light.png",
+      "replay_sha256": "2df2a7fd2bc1d8ef82438aafa59b969be33a75453af5cb9e6dd58681317da962",
+      "replay_bytes": 465970,
+      "oracle_exists": true,
+      "oracle_sha256": "2df2a7fd2bc1d8ef82438aafa59b969be33a75453af5cb9e6dd58681317da962",
+      "oracle_bytes": 465970,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_nominal/qa/actual_wrist_grip_dark.png",
+      "replay_sha256": "af2df1ee8a3e1f8dac216be8290b53894b15d745d93f4a4aa0a17b8940c5298f",
+      "replay_bytes": 343512,
+      "oracle_exists": true,
+      "oracle_sha256": "af2df1ee8a3e1f8dac216be8290b53894b15d745d93f4a4aa0a17b8940c5298f",
+      "oracle_bytes": 343512,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_nominal/qa/actual_wrist_grip_light.png",
+      "replay_sha256": "3537cb770d91d5113db676fc42ac6d044e74e940547f5f68cb381e367a839969",
+      "replay_bytes": 358983,
+      "oracle_exists": true,
+      "oracle_sha256": "3537cb770d91d5113db676fc42ac6d044e74e940547f5f68cb381e367a839969",
+      "oracle_bytes": 358983,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_nominal/qa/candidate_dark.png",
+      "replay_sha256": "578001344d6c29e3cfd85a1204e1b244ceb32d3173a041848207ce6b35fb0dff",
+      "replay_bytes": 458116,
+      "oracle_exists": true,
+      "oracle_sha256": "578001344d6c29e3cfd85a1204e1b244ceb32d3173a041848207ce6b35fb0dff",
+      "oracle_bytes": 458116,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_nominal/qa/candidate_light.png",
+      "replay_sha256": "d8bb7c3824d96cb9b9371c2c85fd8fb764c4db2276af2890d16ad8fbb3f5b5b9",
+      "replay_bytes": 472989,
+      "oracle_exists": true,
+      "oracle_sha256": "d8bb7c3824d96cb9b9371c2c85fd8fb764c4db2276af2890d16ad8fbb3f5b5b9",
+      "oracle_bytes": 472989,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_nominal/registered/F049_registered_crop_3x_RGBA.png",
+      "replay_sha256": "77c79ca1f19dfc69acf4ff5b07e5c664f4c3e7b6383f2f08e9c8b5a4138f2b0b",
+      "replay_bytes": 388983,
+      "oracle_exists": true,
+      "oracle_sha256": "77c79ca1f19dfc69acf4ff5b07e5c664f4c3e7b6383f2f08e9c8b5a4138f2b0b",
+      "oracle_bytes": 388983,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_nominal/registered/F049_registered_scene_patch_RGBA.png",
+      "replay_sha256": "130611d6a852d1d23f0c1003990126da4e7ab300fc789887e5d6b44bdf5036d2",
+      "replay_bytes": 68493,
+      "oracle_exists": true,
+      "oracle_sha256": "130611d6a852d1d23f0c1003990126da4e7ab300fc789887e5d6b44bdf5036d2",
+      "oracle_bytes": 68493,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/candidates/S08_F049_wrist_same_raw_candidate_RGBA.png",
+      "replay_sha256": "c75051f38c924099b0112984fbd18fa0b6f5eb425d0c89088141810683da8865",
+      "replay_bytes": 560705,
+      "oracle_exists": true,
+      "oracle_sha256": "c75051f38c924099b0112984fbd18fa0b6f5eb425d0c89088141810683da8865",
+      "oracle_bytes": 560705,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/geometry/CHECKS.json",
+      "replay_sha256": "b6e7a8f8e73a132a72986f7e5673f147e7a6acc7383c77bc8849523c5a9e525b",
+      "replay_bytes": 1208,
+      "oracle_exists": true,
+      "oracle_sha256": "b6e7a8f8e73a132a72986f7e5673f147e7a6acc7383c77bc8849523c5a9e525b",
+      "oracle_bytes": 1208,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/geometry/F049_independent_near_wrist_plus_true_hand_RGBA.png",
+      "replay_sha256": "285cc58b450c4eb814930672301a21a4fad351c3afaf2b072fe28f0e6924d1d2",
+      "replay_bytes": 43595,
+      "oracle_exists": true,
+      "oracle_sha256": "285cc58b450c4eb814930672301a21a4fad351c3afaf2b072fe28f0e6924d1d2",
+      "oracle_bytes": 43595,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/geometry/F049_same_raw_near_wrist_only_RGBA.png",
+      "replay_sha256": "d21e98772070c829165ec8cced4fa25fbe45a40774131ecbf6fdcd86e20915f8",
+      "replay_bytes": 29864,
+      "oracle_exists": true,
+      "oracle_sha256": "d21e98772070c829165ec8cced4fa25fbe45a40774131ecbf6fdcd86e20915f8",
+      "oracle_bytes": 29864,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/geometry/MATERIAL_SAMPLES.json",
+      "replay_sha256": "16c4e03fd76ef3290cdbb78c686dea7d3230c908f83be192103587037d54d8da",
+      "replay_bytes": 5822,
+      "oracle_exists": true,
+      "oracle_sha256": "16c4e03fd76ef3290cdbb78c686dea7d3230c908f83be192103587037d54d8da",
+      "oracle_bytes": 5822,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/masks/LOCAL_upper_wrist_height_transition_WEIGHT.png",
+      "replay_sha256": "47933420028dc7633a7d62241e8bad27238ccecbd5c13ef33786f90f807e4a2b",
+      "replay_bytes": 4794,
+      "oracle_exists": true,
+      "oracle_sha256": "47933420028dc7633a7d62241e8bad27238ccecbd5c13ef33786f90f807e4a2b",
+      "oracle_bytes": 4794,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/masks/NATIVE_near_upper_contour_source.png",
+      "replay_sha256": "554b850cfd333b23232bd445d809397ed91b6b38d06180072bdd2d7e2728fe26",
+      "replay_bytes": 2923,
+      "oracle_exists": true,
+      "oracle_sha256": "554b850cfd333b23232bd445d809397ed91b6b38d06180072bdd2d7e2728fe26",
+      "oracle_bytes": 2923,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/masks/SAMPLE_1_0.png",
+      "replay_sha256": "bfcdb9608517acf606ac8c9015b09baa2a8ac928a863c8d92070fa47d8c41ec2",
+      "replay_bytes": 2180,
+      "oracle_exists": true,
+      "oracle_sha256": "bfcdb9608517acf606ac8c9015b09baa2a8ac928a863c8d92070fa47d8c41ec2",
+      "oracle_bytes": 2180,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/masks/SAMPLE_1_1.png",
+      "replay_sha256": "71f0ba6c3a8c78eaf4c0d490a3081262752a00ef7ee35c31f320225eb6ee78cd",
+      "replay_bytes": 2186,
+      "oracle_exists": true,
+      "oracle_sha256": "71f0ba6c3a8c78eaf4c0d490a3081262752a00ef7ee35c31f320225eb6ee78cd",
+      "oracle_bytes": 2186,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/masks/SAMPLE_1_2.png",
+      "replay_sha256": "076084451b6691c910db85fe22ab6d6e2fac60dba3d38c46ca9596b6013f40d7",
+      "replay_bytes": 2146,
+      "oracle_exists": true,
+      "oracle_sha256": "076084451b6691c910db85fe22ab6d6e2fac60dba3d38c46ca9596b6013f40d7",
+      "oracle_bytes": 2146,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/masks/SAMPLE_2_0.png",
+      "replay_sha256": "bfcdb9608517acf606ac8c9015b09baa2a8ac928a863c8d92070fa47d8c41ec2",
+      "replay_bytes": 2180,
+      "oracle_exists": true,
+      "oracle_sha256": "bfcdb9608517acf606ac8c9015b09baa2a8ac928a863c8d92070fa47d8c41ec2",
+      "oracle_bytes": 2180,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/masks/SAMPLE_2_1.png",
+      "replay_sha256": "71f0ba6c3a8c78eaf4c0d490a3081262752a00ef7ee35c31f320225eb6ee78cd",
+      "replay_bytes": 2186,
+      "oracle_exists": true,
+      "oracle_sha256": "71f0ba6c3a8c78eaf4c0d490a3081262752a00ef7ee35c31f320225eb6ee78cd",
+      "oracle_bytes": 2186,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/masks/SAMPLE_2_2.png",
+      "replay_sha256": "ff71465cc18d0d4833d9d74ed4e04c2b87ec70eef1b7c9e71015556647071bc7",
+      "replay_bytes": 2154,
+      "oracle_exists": true,
+      "oracle_sha256": "ff71465cc18d0d4833d9d74ed4e04c2b87ec70eef1b7c9e71015556647071bc7",
+      "oracle_bytes": 2154,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/masks/SAMPLE_3_0.png",
+      "replay_sha256": "bfcdb9608517acf606ac8c9015b09baa2a8ac928a863c8d92070fa47d8c41ec2",
+      "replay_bytes": 2180,
+      "oracle_exists": true,
+      "oracle_sha256": "bfcdb9608517acf606ac8c9015b09baa2a8ac928a863c8d92070fa47d8c41ec2",
+      "oracle_bytes": 2180,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/masks/SAMPLE_3_1.png",
+      "replay_sha256": "71f0ba6c3a8c78eaf4c0d490a3081262752a00ef7ee35c31f320225eb6ee78cd",
+      "replay_bytes": 2186,
+      "oracle_exists": true,
+      "oracle_sha256": "71f0ba6c3a8c78eaf4c0d490a3081262752a00ef7ee35c31f320225eb6ee78cd",
+      "oracle_bytes": 2186,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/masks/SAMPLE_3_2.png",
+      "replay_sha256": "f29fd32a8917a32e4b90299a69e5be9ec55232f4dafceb55a41837dd5ab0b61e",
+      "replay_bytes": 2156,
+      "oracle_exists": true,
+      "oracle_sha256": "f29fd32a8917a32e4b90299a69e5be9ec55232f4dafceb55a41837dd5ab0b61e",
+      "oracle_bytes": 2156,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/masks/SAMPLE_4_0.png",
+      "replay_sha256": "bfcdb9608517acf606ac8c9015b09baa2a8ac928a863c8d92070fa47d8c41ec2",
+      "replay_bytes": 2180,
+      "oracle_exists": true,
+      "oracle_sha256": "bfcdb9608517acf606ac8c9015b09baa2a8ac928a863c8d92070fa47d8c41ec2",
+      "oracle_bytes": 2180,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/masks/SAMPLE_4_1.png",
+      "replay_sha256": "71f0ba6c3a8c78eaf4c0d490a3081262752a00ef7ee35c31f320225eb6ee78cd",
+      "replay_bytes": 2186,
+      "oracle_exists": true,
+      "oracle_sha256": "71f0ba6c3a8c78eaf4c0d490a3081262752a00ef7ee35c31f320225eb6ee78cd",
+      "oracle_bytes": 2186,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/masks/SAMPLE_4_2.png",
+      "replay_sha256": "905373d43b4018a5e708b7c88d969141425cc9755fff0ab8e8c53c8b74ca260b",
+      "replay_bytes": 2132,
+      "oracle_exists": true,
+      "oracle_sha256": "905373d43b4018a5e708b7c88d969141425cc9755fff0ab8e8c53c8b74ca260b",
+      "oracle_bytes": 2132,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/qa/F000_F046_F049_actual_wrist_materials.png",
+      "replay_sha256": "99410cda94a8fb20de075d0fc951c7509bf4a5b01be4f79bbf5add583c723c15",
+      "replay_bytes": 312295,
+      "oracle_exists": true,
+      "oracle_sha256": "99410cda94a8fb20de075d0fc951c7509bf4a5b01be4f79bbf5add583c723c15",
+      "oracle_bytes": 312295,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/qa/F046_F049_same_scale_dark.png",
+      "replay_sha256": "0ee6c9a72406a5022d52a364f5954435f64efd7e7a8becbd2b9369e1a6b026c9",
+      "replay_bytes": 449918,
+      "oracle_exists": true,
+      "oracle_sha256": "0ee6c9a72406a5022d52a364f5954435f64efd7e7a8becbd2b9369e1a6b026c9",
+      "oracle_bytes": 449918,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/qa/F046_F049_same_scale_light.png",
+      "replay_sha256": "d1d241de6bc3475604d6958371f1da97b8106c86b34282503d0f51c8643b8d46",
+      "replay_bytes": 465538,
+      "oracle_exists": true,
+      "oracle_sha256": "d1d241de6bc3475604d6958371f1da97b8106c86b34282503d0f51c8643b8d46",
+      "oracle_bytes": 465538,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/qa/actual_wrist_grip_dark.png",
+      "replay_sha256": "e7b49f57b4368380abebe465202404ef5e43c26b5145cba7c13ec15eaef6a4ac",
+      "replay_bytes": 343661,
+      "oracle_exists": true,
+      "oracle_sha256": "e7b49f57b4368380abebe465202404ef5e43c26b5145cba7c13ec15eaef6a4ac",
+      "oracle_bytes": 343661,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/qa/actual_wrist_grip_light.png",
+      "replay_sha256": "8c8def73c5b62f1634a515c401b4fed2681124e5b59215de94283b583d3d7793",
+      "replay_bytes": 358786,
+      "oracle_exists": true,
+      "oracle_sha256": "8c8def73c5b62f1634a515c401b4fed2681124e5b59215de94283b583d3d7793",
+      "oracle_bytes": 358786,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/qa/candidate_dark.png",
+      "replay_sha256": "1d061a1bd281c14640532e12ee9a4c021b0afb79676625580a7610b6e2afaee2",
+      "replay_bytes": 458265,
+      "oracle_exists": true,
+      "oracle_sha256": "1d061a1bd281c14640532e12ee9a4c021b0afb79676625580a7610b6e2afaee2",
+      "oracle_bytes": 458265,
+      "byte_identical": true
+    },
+    {
+      "path": "F049_result_semantic_v1/qa/candidate_light.png",
+      "replay_sha256": "9891dfc1fa1a2be0a6a20f7ac963f721784e3e50ed4085eb39bf213a9fdae346",
+      "replay_bytes": 473147,
+      "oracle_exists": true,
+      "oracle_sha256": "9891dfc1fa1a2be0a6a20f7ac963f721784e3e50ed4085eb39bf213a9fdae346",
+      "oracle_bytes": 473147,
+      "byte_identical": true
+    }
+  ],
+  "separately_preserved_metadata_outputs_not_generated": [
+    {
+      "path": "F049_FINAL_LOCKED/SOURCE_RECEIPT.json",
+      "preserved_sha256": "f49b43b847a1a495bfcfebeff0d7c302a3bd1c17fd63dbea26858d3b311a12d2",
+      "reason": "Metadata-only final receipt is preserved in the source package and intentionally not seeded or generated by the five image steps."
+    }
+  ],
+  "metadata_boundary": {
+    "five_step_pixels_and_layers_complete": true,
+    "finalize_metadata_executed": false,
+    "create_initial_source_receipt_executed": false,
+    "ledger_or_formal_plan_materialized": false,
+    "final_approval_fields_byte_replayed": false,
+    "description": "Coordinator explicitly requested five image steps only. Final contracts, status, source receipt, approval references and metadata scripts are preserved separately in the sealed source package. The two field-different JSON files and final-manifest inventory/approval differences are fully listed rather than normalized away."
+  }
+}

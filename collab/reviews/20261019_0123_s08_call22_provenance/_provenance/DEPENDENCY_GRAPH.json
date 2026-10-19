@@ -1,0 +1,108 @@
+{
+  "method": "Static read expressions from adopted original scripts; final steps are ordered and all generated intermediates are excluded from seeds.",
+  "nodes": [
+    {
+      "script": "F049_input_gate/composite_returned_crop.py",
+      "reads": [
+        "F049_native_call22/raw/F049_wrist_native_raw.png",
+        "F049_input_gate/geometry/RAW_UNIFORM_REGISTRATION.json",
+        "F049_input_gate/inputs/F049_scene_preplaced_NO_ROD_RGBA.png",
+        "F049_input_gate/masks/F049_WHITE_wrist_entire_root_and_exposed_far_underlay.png",
+        "F049_input_gate/masks/F049_entire_source2383_root_transformed_coverage_REBUILD.png",
+        "F049_input_gate/masks/F049_new_wrist_volume_CONSTRUCTION_ONLY.png",
+        "F049_input_gate/masks/F049_clear_complete_old_near_hand_match_and_root.png",
+        "F049_input_gate/masks/F049_near_true_distal_RGBA_hard_guard.png",
+        "F049_input_gate/masks/F049_far_visible_and_true_alpha0_seat_guard.png",
+        "F046_FINAL_LOCKED/S08_F046_grandma_match_box_RGBA.png"
+      ],
+      "key_outputs": [
+        "F049_result_nominal/registered/F049_registered_scene_patch_RGBA.png",
+        "F049_result_nominal/registered/F049_registered_crop_3x_RGBA.png",
+        "F049_result_nominal/candidates/S08_F049_wrist_candidate_RGBA.png"
+      ]
+    },
+    {
+      "script": "F049_result_semantic_v1/repair_wrist.py",
+      "reads": [
+        "F049_input_gate/inputs/F049_scene_preplaced_NO_ROD_RGBA.png",
+        "F049_input_gate/inputs/F049_independent_true_near_hand_match_RGBA.png",
+        "F049_input_gate/inputs/F049_complete_original_far_hand_SEAT_RGBA.png",
+        "F049_result_nominal/registered/F049_registered_scene_patch_RGBA.png",
+        "F049_input_gate/masks/F049_WHITE_wrist_entire_root_and_exposed_far_underlay.png",
+        "F049_input_gate/masks/F049_near_true_distal_RGBA_hard_guard.png",
+        "F049_input_gate/masks/F049_far_visible_and_true_alpha0_seat_guard.png",
+        "F049_input_gate/masks/F049_far_complete_underlying_footprint.png",
+        "F049_input_gate/masks/F049_entire_source2383_root_transformed_coverage_REBUILD.png",
+        "F049_input_gate/masks/F049_new_wrist_volume_CONSTRUCTION_ONLY.png",
+        "F046_FINAL_LOCKED/S08_F046_grandma_match_box_RGBA.png"
+      ],
+      "key_outputs": [
+        "F049_result_semantic_v1/candidates/S08_F049_wrist_same_raw_candidate_RGBA.png",
+        "F049_result_semantic_v1/geometry/F049_same_raw_near_wrist_only_RGBA.png",
+        "F049_result_semantic_v1/geometry/F049_independent_near_wrist_plus_true_hand_RGBA.png",
+        "F049_result_semantic_v1/masks/NATIVE_near_upper_contour_source.png",
+        "F049_result_semantic_v1/masks/LOCAL_upper_wrist_height_transition_WEIGHT.png"
+      ]
+    },
+    {
+      "script": "F049_result_semantic_v1/measure_material.py",
+      "reads": [
+        "F000_FINAL_LOCKED/S08_F000_grandma_match_box_RGBA.png",
+        "F046_FINAL_LOCKED/S08_F046_grandma_match_box_RGBA.png",
+        "F049_result_semantic_v1/candidates/S08_F049_wrist_same_raw_candidate_RGBA.png"
+      ],
+      "key_outputs": [
+        "F049_result_semantic_v1/geometry/MATERIAL_SAMPLES.json"
+      ]
+    },
+    {
+      "script": "F049_color_final/apply_wrist_color.py",
+      "reads": [
+        "F049_result_semantic_v1/candidates/S08_F049_wrist_same_raw_candidate_RGBA.png",
+        "F049_result_semantic_v1/geometry/F049_same_raw_near_wrist_only_RGBA.png",
+        "F049_result_semantic_v1/geometry/MATERIAL_SAMPLES.json",
+        "F049_input_gate/masks/F049_WHITE_wrist_entire_root_and_exposed_far_underlay.png",
+        "F049_input_gate/masks/F049_near_true_distal_RGBA_hard_guard.png",
+        "F049_input_gate/masks/F049_far_visible_and_true_alpha0_seat_guard.png",
+        "F046_FINAL_LOCKED/S08_F046_grandma_match_box_RGBA.png"
+      ],
+      "key_outputs": [
+        "F049_color_final/candidates/S08_F049_same_raw_final_color_RGBA.png",
+        "F049_color_final/masks/NEW_NATIVE_WRIST_LIT_SOFT_G3_B1.png",
+        "F049_color_final/masks/WRIST_CREASE_AND_UNDERSIDE_SHADOW_PROTECT.png",
+        "F049_color_final/geometry/COLOR_MASK_AND_CHECKS.json"
+      ]
+    },
+    {
+      "script": "F049_handoff_preparation/seal_handoff.py",
+      "reads": [
+        "F049_color_final/candidates/S08_F049_same_raw_final_color_RGBA.png",
+        "F049_color_final/masks/NEW_NATIVE_WRIST_LIT_SOFT_G3_B1.png",
+        "F049_result_semantic_v1/geometry/F049_independent_near_wrist_plus_true_hand_RGBA.png",
+        "F049_input_gate/inputs/F049_independent_true_near_hand_match_RGBA.png",
+        "F049_input_gate/inputs/F049_complete_original_far_hand_SEAT_RGBA.png",
+        "F049_input_gate/inputs/F049_underlying_before_new_near_RGBA.png",
+        "F049_input_gate/masks/F049_WHITE_wrist_entire_root_and_exposed_far_underlay.png",
+        "F049_input_gate/masks/F049_entire_source2383_root_transformed_coverage_REBUILD.png",
+        "F049_input_gate/masks/F049_near_true_distal_RGBA_hard_guard.png",
+        "F049_input_gate/masks/F049_source6611_distal_nearest_diagnostic.png",
+        "F049_input_gate/masks/F049_far_complete_underlying_footprint.png",
+        "F049_input_gate/masks/F049_true_low_rod_seat_core.png",
+        "F049_input_gate/masks/F049_full159_far_jade_skin_AA_underlay.png",
+        "F049_input_gate/masks/F049_clear_complete_old_near_hand_match_and_root.png",
+        "F046_FINAL_LOCKED/F046_far_historical_complete_jadeAA150.png",
+        "F046_FINAL_LOCKED/F046_complete_native_near_arm_plus_independent_hand_RGBA.png",
+        "F046_FINAL_LOCKED/F046_fixed_table_box_footprint.png",
+        "F046_FINAL_LOCKED/F046_fixed_table_box_RGBA.png",
+        "F046_LAYER_PARTITION/masks/F046_arms_binary.png",
+        "F049_input_gate/geometry/INPUT_CONTRACT.json"
+      ],
+      "key_outputs": [
+        "F049_FINAL_LOCKED/",
+        "F049_LAYER_PARTITION/"
+      ]
+    }
+  ],
+  "optional_optimizer": "F049_input_gate/register_raw.py",
+  "optional_exposure": "F049_handoff_preparation/encode_exposure.py; not required for image/layer reconstruction"
+}

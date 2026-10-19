@@ -1,0 +1,51 @@
+{
+  "status": "FINAL_LAYER_AND_REUSE_INCREMENTAL_PASS",
+  "mother_sha256": "8f03f271d52c35283e0be68ab7146004a81c2f0231ccbab85f198524916c7bd1",
+  "layer_sha256": {
+    "body_behind": "3c0b077e660433faeac31011a767cfa3a1756a559fb285bd43205e325a707a99",
+    "forearms_elbows": "047e5506eede0cd7f7a9bfff6fef0a2e9e869e9b2d0aa252e514a6b42da6827f",
+    "table_box": "82411d00da844aaac638ab1e79adb197741a2b06146b0a9caac3433333370e74"
+  },
+  "layer_visible_pixels": {
+    "body_behind": 215849,
+    "forearms_elbows": 39609,
+    "table_box": 1665
+  },
+  "mutually_exclusive_alpha_overlap": 0,
+  "alpha_reconstruction_mismatches": 0,
+  "RGBA_reconstruction_mismatches": 0,
+  "all_layer_full_RGB_equal_mother": true,
+  "box_visible_RGBA_equals046": true,
+  "root_pixels": 2451,
+  "root_rebuild_required": true,
+  "root_replay_exact": false,
+  "hard_pixels": 6709,
+  "core_pixels": 6609,
+  "root_hard_overlap": 0,
+  "independent_hard_vs_original_transformed_n": 0,
+  "independent_vs_flat_hard_diff_count": 255,
+  "independent_vs_flat_core_diff_count": 254,
+  "independent_vs_flat_max_RGBA": [
+    86,
+    86,
+    2,
+    7
+  ],
+  "hard_recomposed_over_frozen_underlay_vs_final": 0,
+  "audit_point_list_exact": true,
+  "root_independent_vs_flat_diff": 245,
+  "far_sha256": "6168e4a06d4bb88ba4659280b9c35d3d9002ab8f252392fa0819e389dda2acd0",
+  "far_original_SHA_preserved": true,
+  "far_jade_AA_counts": [
+    150,
+    159,
+    147
+  ],
+  "full_AA_vs_far_hard_intersection": 0,
+  "large_difference_interpretation": "Max86RGB at1288,871 is hiddenalpha0RGB; visiblelowalpha1233,877 originates actual nearalpha4 over sourceunderlayalpha3 givingalpha7. Archive preserves originalforeground; do not claim all differences mere rounding or allindependent equalsflat. Entire2451root remains mandatoryeditable.",
+  "visual_viewed": [
+    "F049_threeway_overlay_light.png",
+    "F049_layer_TOPOLOGY_ONLY_NOT_CANVAS_dark.png"
+  ],
+  "visual_result": "Continuous complete native arm/wrist assignedforeground; box only1665; body continuous. OriginalRGBA layer topology pass, not actual049Canvas acceptance."
+}

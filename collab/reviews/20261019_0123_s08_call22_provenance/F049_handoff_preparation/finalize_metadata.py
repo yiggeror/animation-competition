@@ -1,0 +1,19 @@
+from pathlib import Path
+import json,hashlib,datetime,shutil
+R=Path(__file__).resolve().parent.parent;O=R/'F049_FINAL_LOCKED';L=R/'F049_LAYER_PARTITION';sha='8f03f271d52c35283e0be68ab7146004a81c2f0231ccbab85f198524916c7bd1';now=datetime.datetime.now(datetime.timezone.utc).isoformat();review='/tmp/S08_F049_independent_review_0100/F049_FINAL_LAYER_AND_REUSE_INCREMENTAL_REVIEW.json'
+p=O/'HAND_REUSE_CONTRACT.json';j=json.loads(p.read_text());j.update(status='DUAL_STATIC_COLOR_FORMAL5F_LAYER_REUSE_APPROVED',scope='F049 character static geometry/material, formal046x3→049x2 isolated5f, threeexclusiveoriginalRGBAlayers and independentreuse passed. ActualCanvas wristflick/flame/lamp remains separate.',coordinator_final_gate_utc='2026-10-19T01:26:53Z',independent_increment_review=review,sourceover_audit=str(O/'INDEPENDENT_HAND_SOURCEOVER_AUDIT.json'),near_independent_vs_flat_max_RGBA=[86,86,2,7],sourceover_rebuild_baseline=str(R/'F049_input_gate/inputs/F049_underlying_before_new_near_RGBA.png'),static_exposures_passed=20,static_unique_images_passed=19,remaining_unique_images_planned=21);p.write_text(json.dumps(j,indent=2))
+p=L/'LAYER_VALIDATION.json';j=json.loads(p.read_text());j['status']='PASS_DUAL_VISUAL_EXCLUSIVE_RGBA_PARTITION_AND_REUSE';j['independent_review']=review;p.write_text(json.dumps(j,indent=2))
+p=R/'F049_native_call22/status.json';j=json.loads(p.read_text());j.update(final_state='F049_DUAL_STATIC_COLOR5F_LAYER_REUSE_APPROVED',final_mother_sha256=sha,final_path=str(O/'S08_F049_grandma_match_box_RGBA.png'));p.write_text(json.dumps(j,indent=2))
+p=O/'SOURCE_RECEIPT.json';j=json.loads(p.read_text());j['status']='FINAL_DUAL_STATIC_COLOR5F_LAYER_REUSE_APPROVED';j['independent_increment_review']=review;j['coordinator_gate_utc']='2026-10-19T01:26:53Z';paths=[Path(x['path'])for x in j['files']]+[Path(__file__).resolve()];j['files']=[{'path':str(p),'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size}for p in paths];p.write_text(json.dumps(j,indent=2))
+p=R/'S08_NATIVE_LEDGER.json';j=json.loads(p.read_text());
+for x in j['entries']:
+ if x.get('call_number')==22:x.update(state='FINAL_F049_DUAL_ACCEPTED',final_mother_sha256=sha,final_path=str(O/'S08_F049_grandma_match_box_RGBA.png'))
+p.write_text(json.dumps(j,indent=2))
+files=[{'path':str(p),'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size}for d in[O,L]for p in sorted(d.rglob('*'))if p.is_file()and p.name!='SEALED_MANIFEST.json'];p=O/'SEALED_MANIFEST.json';p.write_text(json.dumps({'status':'FINAL_DUAL_STATIC_COLOR_FORMAL5F_LAYER_REUSE_APPROVED','mother_sha256':sha,'coordinator_gate_utc':'2026-10-19T01:26:53Z','independent_increment_review':review,'actualCanvas_gate':'Pending separate runtime render; no scene claim.','files':files},indent=2));print('SEALED',hashlib.sha256(p.read_bytes()).hexdigest());print('SOURCE_RECEIPT',hashlib.sha256((O/'SOURCE_RECEIPT.json').read_bytes()).hexdigest())
+# Existing formal exposure timings remain exactly unchanged; only completion/source facts updated.
+P=R/'S08_41_STATE_FORMAL_PLAN_1728/S08_41_states_formal.json';hist=R/'F049_handoff_preparation/history_before049_formal.json'
+if not hist.exists():shutil.copy2(P,hist)
+j=json.loads(P.read_text());j.update(delivered_unique_character_RGBA_images=19,delivered_exposure_states=20,remaining_planned_unique_key_images=21,actual_native_image_calls_to_date=22,actual_preserved_raws=22,scope='First20character-localexposures through049approved,19uniqueRGBA. Actualfire/light/table/144fscene separate.051exact046reuse is onlycandidate until sequencegate.');
+for row in j['rows']:
+ if row['frame']==49:row.update(asset='F049 已锁8f03f271…16c7bd1',status='协调与独审自然腕接/分面材色/正式046×3→049×2隔离5f及三层复用档通过',final_sha256=sha,final_path=str(O/'S08_F049_grandma_match_box_RGBA.png'))
+P.write_text(json.dumps(j,ensure_ascii=False,indent=2))

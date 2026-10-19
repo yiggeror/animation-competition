@@ -1,0 +1,73 @@
+{
+  "status": "ACTUAL_INPUT_PREPARATION_PENDING_DUAL_GATE_ZERO_CALL22",
+  "source_sha256": "7722c85545660ae240acc72d512985572b1a5ba5532780b150b4b8274c385ec2",
+  "crop_scene_box": [
+    1090,
+    730,
+    1400,
+    910
+  ],
+  "input_scale": 3,
+  "near_rigid_transform": {
+    "rotation_clockwise_degrees": 15,
+    "scale": 1,
+    "rotation_pivot": [
+      1204.847686868556,
+      829.476655293115
+    ],
+    "wrist_translation": [
+      -5,
+      4
+    ],
+    "affine_rotation": [
+      [
+        0.9659258262890683,
+        -0.25881904510252074
+      ],
+      [
+        0.25881904510252074,
+        0.9659258262890683
+      ]
+    ],
+    "affine_translation": [
+      250.7385452353701,
+      -279.57379616768037
+    ]
+  },
+  "near_match_head": [
+    1352.1936211377067,
+    825.7393602711344
+  ],
+  "near_visible_wood_exit": [
+    1307.7068893620028,
+    838.9276390032729
+  ],
+  "visible_segment_px": 46.40043103248073,
+  "source_distal6611": 6611,
+  "transformed_nearest_distal_pixels": 6609,
+  "effective_near_RGBA_hard_guard": 6709,
+  "whole_original_root_source_pixels": 2383,
+  "whole_transformed_root_coverage": 2451,
+  "root_white_missing": 0,
+  "source2383_nearest_after_rotation_pixels": 2382,
+  "original_transformed_distal_core_white_overlap": 0,
+  "collar_filter_AA_islands_released": 2,
+  "root_replay_exact": false,
+  "root_rebuild_required": true,
+  "far_full159_AA": 159,
+  "far_effective_guard": 7853,
+  "far_original_RGBA_guard_changed": 0,
+  "near_RGBA_guard_changed": 0,
+  "near_sourceover_AA_independent_vs_flattened": 255,
+  "near_guard_baseline": "Exact independent transformed near source-over actual before_near underlay; not false alpha0 clipping or extracted far backing.",
+  "box_visible_pixels": 1665,
+  "white_pixels": 6440,
+  "white_guard_overlap": 0,
+  "old_near_air_black_cleared": 1860,
+  "closed_empty_white_islands": [
+    17
+  ],
+  "body_rule": "Keep accepted046original head/chest/shoulder/sleeve/upperarm/roundelbow and proximalforearm. Only wrist/root and necessary distalforearm join edited; final black base is NO_ROD preplacement, not old046flatmother.",
+  "far_rule": "Full original far independent posterior layer, native near wrist contour determines actual occlusion. Complete159 underlay retained, transparent lowseat real. Do not restore jade over foregroundneararm.",
+  "scope": "Input preparation only. No generation started. True lever shown as contactreference only, finalcharacterhasno lamp/rod/flame/light.049x2;051separate."
+}

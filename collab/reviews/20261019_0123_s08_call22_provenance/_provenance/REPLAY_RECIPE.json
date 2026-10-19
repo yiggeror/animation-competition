@@ -1,0 +1,39 @@
+{
+  "status": "STATIC_CLOSURE_REPLAY_PENDING",
+  "ordered_commands": [
+    "python F049_input_gate/composite_returned_crop.py F049_result_nominal --raw F049_native_call22/raw/F049_wrist_native_raw.png --registration F049_input_gate/geometry/RAW_UNIFORM_REGISTRATION.json",
+    "python F049_result_semantic_v1/repair_wrist.py",
+    "python F049_result_semantic_v1/measure_material.py",
+    "python F049_color_final/apply_wrist_color.py",
+    "python F049_handoff_preparation/seal_handoff.py"
+  ],
+  "registration_policy": "Use saved uniform scale/tx/ty from RAW_UNIFORM_REGISTRATION.json; optimizer retained as provenance, not rerun for exact reproduction.",
+  "required_root_replacements": [],
+  "root_policy": "Only seed rows listed in REPLAY_SEED_AND_CLOSURE.json; current F049 candidates, masks, metadata and layers are comparison targets only. All scripts derive source root from their own isolated __file__.",
+  "empty_directory_preconditions": [
+    "F049_result_semantic_v1/candidates",
+    "F049_result_semantic_v1/geometry",
+    "F049_result_semantic_v1/masks",
+    "F049_result_semantic_v1/qa",
+    "F049_color_final/candidates",
+    "F049_color_final/geometry",
+    "F049_color_final/masks",
+    "F049_color_final/qa"
+  ],
+  "expectations": {
+    "raw_sha256": "6a75a70521674ff20d3060cc52c9ab3de111ec0ad1a9b70830ea3e4647152e29",
+    "semantic_sha256": "c75051f38c924099b0112984fbd18fa0b6f5eb425d0c89088141810683da8865",
+    "final_sha256": "8f03f271d52c35283e0be68ab7146004a81c2f0231ccbab85f198524916c7bd1",
+    "final_layer_sha256": {
+      "F049_body_behind_original_pixels.png": "3c0b077e660433faeac31011a767cfa3a1756a559fb285bd43205e325a707a99",
+      "F049_forearms_elbows_original_pixels.png": "047e5506eede0cd7f7a9bfff6fef0a2e9e869e9b2d0aa252e514a6b42da6827f",
+      "F049_table_box_original_pixels.png": "82411d00da844aaac638ab1e79adb197741a2b06146b0a9caac3433333370e74"
+    }
+  },
+  "observed_environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "Pillow": "12.3.0"
+  }
+}

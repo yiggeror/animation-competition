@@ -1,0 +1,68 @@
+{
+  "candidate_sha256": "c75051f38c924099b0112984fbd18fa0b6f5eb425d0c89088141810683da8865",
+  "raw_sha256": "6a75a70521674ff20d3060cc52c9ab3de111ec0ad1a9b70830ea3e4647152e29",
+  "outside_white_changed": 0,
+  "near_hard_changed": 0,
+  "far_hard_changed": 0,
+  "source_native_upper_edge_trace": [
+    [
+      1090,
+      834.6
+    ],
+    [
+      1100,
+      832.3
+    ],
+    [
+      1120,
+      827.5
+    ],
+    [
+      1140,
+      822.6
+    ],
+    [
+      1160,
+      817.9
+    ],
+    [
+      1180,
+      813.1
+    ],
+    [
+      1198,
+      809.6
+    ],
+    [
+      1212,
+      805.5
+    ],
+    [
+      1223,
+      805
+    ],
+    [
+      1234,
+      806.3
+    ],
+    [
+      1246,
+      808
+    ],
+    [
+      1252,
+      810
+    ],
+    [
+      1252,
+      910
+    ],
+    [
+      1090,
+      910
+    ]
+  ],
+  "local_source_map": "source_y=target_y+8*smoothstep((x-1170)/58)*smoothstep((850-y)/45); proximal wrist only white, upper edge rises <=8px; lower edge and all original arm fixed",
+  "status": "DIAGNOSTIC_REQUIRES_ACTUAL_REVIEW",
+  "note": "Original true near distal edge including its existing light AA retained; no arbitrary clearing of locked hand. Full original far behind native near contour."
+}
