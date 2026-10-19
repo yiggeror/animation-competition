@@ -1,4 +1,6 @@
-# 064裙下腿根完整语义收口：0新生成，待Astra终门
+# 064裙下腿根完整语义收口：Astra最终通过
+
+最新：Astra已实看31035947全图、正常尺寸裙下及足支持并终审通过。唯一采用F064_proximal_roots_continuous_candidate.png，SHA 5ebf184c08b9e714f8b0030c226a2866158846bdac3db147d6645429867d2e76；近腿微小浅色过渡已接受，不再修改/注册腿，采用不等于冻结整段曝光。登记见ADOPTED_F064_SOURCE.json。下文保留初交记录。
 
 直接看 actual_full_gray.jpg / actual_under_hem_1x.png / actual_support_1x.png。当前正常尺寸可审；近腿裙下尚有一小块浅色过渡，交专审判断，不再磨像素。
 
