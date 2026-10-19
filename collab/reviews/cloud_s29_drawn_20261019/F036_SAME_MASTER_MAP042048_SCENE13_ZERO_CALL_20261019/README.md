@@ -1,9 +1,9 @@
-# 同一036母版 → 042/048 → 实际13帧 · 远夹口HOLD
+# 同源036净布与实际13帧 · 远夹口HOLD
 
-本轮0生图。036新净布/旧036叠图已先交b30abd65，整折面正常尺寸双审通过。这里以该最终唯一母版(c8ee0362…)传播冻结远夹口位移，C1、下撑、主脊末锚及原厚唇T固定；手臂原M未重拟，人物/掌/真实偶杆/原T的数值核对0改。旧042/048独立生图的不同花纹和轮廓未用于最终布面。最初异形轮廓几何预检发现反向三角形，未产映射图，已归档；最终小幅网格无反向、两夹口残差0。
+0生图。036新净布/旧036叠图已先交b30abd65，完整折面正常尺寸双审通过。042/048仅由该唯一母版(c8ee0362…)随冻结夹口delta小幅连续映射，C1、下撑、主脊末锚与原T固定；原手臂M未动。旧独立生图的不同纹样/轮廓未进入最终映射。异形轮廓几何预检未产映射图，已归档。
 
-实际片`S29_F036_F048_ACTUAL_SCENE_1080p24.mp4`：13帧1920×1080/24fps/静音，036×6→042×6→048×1，原机位/灯光/曝光不变，0整片渲染。SHA a4e6097e72224c592191d4199cc4a606b5e224fe636a5131b7c618ddf7d1e800。所有13帧均解码核，作者/既有云助手实际看全景表、两次换张原尺寸和T图：密度、花位、中央/右折面已连续，可读成同一布小幅内收，偶杆/T稳定。入口`BOTH_SWITCHES_ACTUAL_CLOTH_1TO1.png`及`ALL13_ACTUAL_DECODED_CONTACT.png`。
+实际片`S29_F036_F048_ACTUAL_SCENE_1080p24.mp4`：13帧1920×1080/24fps/静音，036×6→042×6→048×1，原机位/灯光/曝光。最终SHA **f675f683d7533934e7009dcbbf92a098a160701fc8eb12a453a300153a097d6c**。全部13帧实际解码；作者/既有云助手看过两次换张原尺寸，花纹尺度/花位和中央/右折面连续，T/偶杆稳定。入口`BOTH_SWITCHES_ACTUAL_CLOTH_1TO1.png`、`ALL13_ACTUAL_DECODED_CONTACT.png`。冻结人物、34,848点实际alpha偶杆域和原T独立RGBA核对0差，详`FRESH_FINAL_VERIFICATION.json`。
 
-**总接触门HOLD**：远夹口仍有小负形，042 native x715–724/y660–672，048 x706–722/y653–673。看`ACTUAL_FAR_PINCH_HOLD_NORMAL_AND_4X.png`和`PINCH_ALPHA_SOURCE_TRACE_4X.png`。追源`PINCH_GAP_SOURCE_TRACE.json`证实一部分是旧036手孔挖掉了raw内真实布料，不能泛称正常指间空气。仅补旧opaque手下587点raw的来源补全试件仍留AA弧边，标`HIDDEN_OLD_HAND_PAYLOAD_TRIAL_NOT_ADOPTED/`；不再打磨/不接正式生产。主映射与实际片均恢复首个同源版本，来源逐项相等，未拿试件冒称已渲染。
+**总接触门HOLD**：远夹口小负形，042 native x715–724/y660–672，048 x706–722/y653–673。`ACTUAL_FAR_PINCH_HOLD_NORMAL_AND_4X.png`与`PINCH_GAP_SOURCE_TRACE.json`证明一部分为旧036手孔，不泛称正常指间空气。仅补旧opaque手下587点raw的试件仍留AA弧边，完整保存在`HIDDEN_OLD_HAND_PAYLOAD_TRIAL_NOT_ADOPTED/`；未采用、未渲染试件，不再打磨。主交付保留原同源映射的几何与布面。
 
-`FINAL_FINITE_REVIEW_HOLD.json`为有限结论，`F042/F048/MAPPING_CHECK.json`存网格、冻结M、夹口和来源SHA。`ACTUAL_BROWSER_RUN.json`/`FFPROBE.json`/`DECODE_CHECK.json`存实际13帧、源码不变、解码哈希；`scene.js/html`和`render_short.cjs`逐字复用先前13f，仅读取本目录新计划的三态URL。历史、原件、提示词仍在2c223b63；本轮只做授权零生图合成。
+最终独立核对纠正了首次偶杆遮罩误用亮度的问题：改用真实alpha（首版漏138点、多1167点），补回每态136点真实黑色边缘，并重渲/解码同13f；未再改布面/掌/夹口。旧首片a4e6097e…及首次数值留在`FIRST_OLD_HAND_EXCLUSION_HOLD/`作历史，旧数值0不作为当前证据。当前结论以`FINAL_FINITE_REVIEW_HOLD.json`及`FRESH_FINAL_VERIFICATION.json`为准。实际场景代码逐字复用先前13f，未改生产源码、未渲整片；唯一原件/原提示词仍由2c223b63保全。

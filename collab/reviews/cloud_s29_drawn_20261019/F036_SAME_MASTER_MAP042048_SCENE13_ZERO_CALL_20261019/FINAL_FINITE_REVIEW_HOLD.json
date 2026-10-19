@@ -30,7 +30,6 @@
   "one_hidden_payload_trial": "587 raw pixels beneath original opaque hand; original visible0360changes;AA arcs remained, NOT_ADOPTED and no render",
   "further_polish_or_generation": false,
   "master_SHA256": "c8ee03628d309c56f22f86ffe304910d86d54f2748dc52221ae9d0c360f4e25d",
-  "final_mapped_states_exactly_equal_actual_scene_first_run_sources": true,
   "scene_source_camera_light_code_matches_previous13f_run": true,
   "scene_matrix_all13": [
     1.0026666666666666,
@@ -43,7 +42,12 @@
   "frames": 13,
   "fps": 24,
   "duration": 0.5416666666666666,
-  "video_SHA256": "a4e6097e72224c592191d4199cc4a606b5e224fe636a5131b7c618ddf7d1e800",
+  "video_SHA256": "f675f683d7533934e7009dcbbf92a098a160701fc8eb12a453a300153a097d6c",
   "production_source_changes": 0,
-  "no_full_film_render": true
+  "no_full_film_render": true,
+  "final_mapped_states_SHA_verified_after_actual_alpha_mask_correction": true,
+  "actual_prop_alpha_pixels": 34848,
+  "actual_prop_and_original_T_RGBA_changes": 0,
+  "historical_first_run_video_SHA256": "a4e6097e72224c592191d4199cc4a606b5e224fe636a5131b7c618ddf7d1e800",
+  "mask_correction_note": "first luminance-mask numeric0 invalid; corrected actual alpha>0 and rerendered exact13f, decoded all13; no cloth hand or pinch adjustment"
 }

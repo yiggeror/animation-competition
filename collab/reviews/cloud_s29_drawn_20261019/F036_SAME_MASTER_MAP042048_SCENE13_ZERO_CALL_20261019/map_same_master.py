@@ -17,7 +17,7 @@ def gray(a):
 masterp=M/'F036_COMPLETE_FOLD_CLOTH_RGBA.png';master=rgba(masterp)
 oldp=S/'candidate/F036_CONTINUOUS_SLEEVE_CLOTH_SAME_M_TRIAL.png';old=rgba(oldp)
 oldface=mask(B/'F036_SINGLE_CLEAN_CLOTH_MASTER_INPUT_GATE_ZERO_CALL_20261019/WHOLE_LOCKED036_CLOTH_DOMAIN.png')
-props=mask(P/'layers/TRUE_ORIGINAL_PROPS_SAME_COMMON030_COORDS.png')
+props=rgba(P/'layers/TRUE_ORIGINAL_PROPS_SAME_COMMON030_COORDS.png')[:,:,3]>0
 reports=json.loads((G/'geometry/ONE_GROUP_PER_STATE_SOURCE_MATRIX_CHECKS.json').read_text())['reports']
 fy=663.66135947;fx=725.78751656
 # A small continuous deformation of the same036 sheet, driven only by the frozen

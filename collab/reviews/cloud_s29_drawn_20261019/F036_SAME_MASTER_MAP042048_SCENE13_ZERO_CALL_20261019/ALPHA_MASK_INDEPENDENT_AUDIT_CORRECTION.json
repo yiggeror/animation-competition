@@ -1,0 +1,12 @@
+{
+  "old_mask_error": "RGBA luminance used instead of alpha for true puppets/rods; first numeric0 was invalid",
+  "old_luminance_selected_pixels": 35877,
+  "correct_actual_alpha_pixels": 34848,
+  "old_mask_missed_alpha_pixels": 138,
+  "old_mask_spurious_alpha0_pixels": 1167,
+  "first042048_actual_prop_RGBA_changes_each": 136,
+  "correction": "use actual alpha>0 and restore exact locked036 source; no cloth motion/hand/notch change",
+  "final042048_actual_prop_RGBA_changes_each": 0,
+  "generation_calls": 0,
+  "required_verification": "rerender same13f and decode final sources; first run remains historical"
+}
