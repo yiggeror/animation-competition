@@ -1,0 +1,158 @@
+{
+  "status": "PASS_ACTUAL_PRODUCTION60_EXACT_APPROVED_BASELINE",
+  "fixed_production_commit": "af005f039ef0155ac93c2ff86c5a804cb8aac7ff",
+  "baseline_source_commit": "1e64ae9356d6335430d4783cf4976e1569ed1923",
+  "baseline_runtime_commit": "93705f2f4d910a3b4805c602e8cc2c5bc2adda16",
+  "production_entry": "js/anim/s24_drawn.js",
+  "entry_SHA256": "e2188aebe53026da56c8b4b3939fb9c3b0106d8f62339db94f4d55c6385cb794",
+  "S23_git_blob": "7bf079d18839964271c3e743247509ed3840326d",
+  "S23_SHA256": "6d09ecaae7e518557ef961af858a301adeda8e74300c753b58605ea6b201632e",
+  "actual_new_production_render_invocations": 1,
+  "actual_new_production_frames": 60,
+  "approved_baseline_rerender_invocations": 0,
+  "same_SHA256_frames": 60,
+  "same_literal_bytes_frames": 60,
+  "different_frames": [],
+  "size": [
+    1920,
+    1080
+  ],
+  "sampling_fps": 24,
+  "sampling_duration": 2.5,
+  "new_MP4_encoding_runs": 0,
+  "new_audio_outputs": 0,
+  "native9_assets_changed": 0,
+  "original_lock_changed": false,
+  "source_restore_five_path_substitutions_exact": true,
+  "reviews_network_requests": [],
+  "reviews_network_request_count": 0,
+  "production_JS_assets_responses": 83,
+  "production_JS_assets_non200": [],
+  "native9_HTTP": [
+    {
+      "path": "/assets/chars/x24/F000.png",
+      "expected_native_SHA256": "0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22",
+      "HTTP_statuses": [
+        200,
+        200
+      ],
+      "requests": 2
+    },
+    {
+      "path": "/assets/chars/x24/F006.png",
+      "expected_native_SHA256": "4e363b28a951d7adafcbbe7bb41700086dfa91de0c6fc20ba9bac0641d52af4c",
+      "HTTP_statuses": [
+        200,
+        200
+      ],
+      "requests": 2
+    },
+    {
+      "path": "/assets/chars/x24/F009.png",
+      "expected_native_SHA256": "fa1d4ae70a784d1694d27c674ad28cc9357ced1e6686f9fda8718a60daa65532",
+      "HTTP_statuses": [
+        200,
+        200
+      ],
+      "requests": 2
+    },
+    {
+      "path": "/assets/chars/x24/F012.png",
+      "expected_native_SHA256": "dcbe1e529b03b963f56769e4f0c381cbca5bd2735cdb75d01bbce5f0cd0296c6",
+      "HTTP_statuses": [
+        200,
+        200
+      ],
+      "requests": 2
+    },
+    {
+      "path": "/assets/chars/x24/F015.png",
+      "expected_native_SHA256": "3eaef2e1fa5e99c308dd46de105bb38d8e97e331f3b801763da152e2aa6ca1ce",
+      "HTTP_statuses": [
+        200,
+        200
+      ],
+      "requests": 2
+    },
+    {
+      "path": "/assets/chars/x24/F019.png",
+      "expected_native_SHA256": "d5f04b6b949a6b96a0c39ec8fe8850f7b2b30f00af835bbe38ddf53c66b4c1a3",
+      "HTTP_statuses": [
+        200,
+        200
+      ],
+      "requests": 2
+    },
+    {
+      "path": "/assets/chars/x24/F024.png",
+      "expected_native_SHA256": "44137d740ac5d07ca0258019c28cdf8f9b648d77ba79eda07f366f24503753db",
+      "HTTP_statuses": [
+        200,
+        200
+      ],
+      "requests": 2
+    },
+    {
+      "path": "/assets/chars/x24/F032.png",
+      "expected_native_SHA256": "cd01c1cc946011cc5d050498a16c83a84d197ca25221792e779bdd5d9d4e3e43",
+      "HTTP_statuses": [
+        200,
+        200
+      ],
+      "requests": 2
+    },
+    {
+      "path": "/assets/chars/x24/F040.png",
+      "expected_native_SHA256": "724d5c1c2516e4720bd1905e14b1bfd104f142fe41bc399877963886b69816b8",
+      "HTTP_statuses": [
+        200,
+        200
+      ],
+      "requests": 2
+    }
+  ],
+  "lock_HTTP_statuses": [
+    200,
+    200
+  ],
+  "lock_requests": 2,
+  "native_image_HTTP_responses": 18,
+  "S23_HTTP_statuses": [
+    200,
+    200,
+    200
+  ],
+  "pageerrors_requestfailed": [],
+  "all_response_HTTP_errors": [],
+  "console_errors": [
+    {
+      "utc": "2026-10-19T00:38:15.808Z",
+      "event": "console_error",
+      "page": 0,
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:40425/favicon.ico",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "browser": {
+    "utc": "2026-10-19T00:38:15.570Z",
+    "event": "browser_launched",
+    "version": "154.0.8037.57",
+    "executable": "/usr/bin/chromium",
+    "args": [
+      "--enable-unsafe-swiftshader"
+    ]
+  },
+  "shared_source_edits": 0,
+  "imagegen_calls": 0,
+  "EDL_audio_ready_edits": 0,
+  "notes": [
+    "All60areactualproductionCanvasPNGs,notMP4decodedframes;old60cachewasreadonlyandmatchedsourceledger.",
+    "Consolefavicon404preservedifpresent;notanallHTTP200claim.ProductionJS/9images/lockassetsallobserved200."
+  ]
+}
