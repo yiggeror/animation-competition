@@ -1,0 +1,39 @@
+{
+  "as_of_utc": "2026-10-19T00:22:00Z",
+  "bundle_scope": "call18/F038, call19/F041, call20/F043 raw, exact requests/inputs and adopted postprocess sources; no new generation in this publication",
+  "source_rows": 188,
+  "unique_source_objects": 131,
+  "source_lookup_manifests": [
+    "ROWS.json",
+    "OBJECTS.json"
+  ],
+  "history_notice": "README and original frozen manifests preserve historical call-time review labels. Current acceptance is recorded here; replay transplantation not independently executed by source-preservation worker.",
+  "adopted": {
+    "F038": "756f9213256fb21367b9779c7c0627456dd362e9e022fb01a30665ce0c4c8946",
+    "F041": "5c20ca471bde6bf832d5fbdee1f018b1119d1890ed34c07feb8d091e906c89be",
+    "F043": "a2a9285481789c1b7bd69a58694026e7a473138093d8039ecf2d74b212311dd1"
+  },
+  "actual_first43": {
+    "commit": "119e98a561a7b6428b08a9b0b12b357c8b0ee6af",
+    "runtime_commit": "3e291e2544c5879955a1cf4d12c8e80341a1f4c0",
+    "video_sha256": "600840cfdfbba11ee8e9a1de398dbd7457c6de67350197bb95f451de99edd05f",
+    "verdict": "041/042 actual contact, head/chest/arm transition and occlusion accepted. 43 frames/1080p24/video-only; old41 reuse bookkeeping checked. Wick remains zero; not whole scene ready.",
+    "network": "Only second audit-run console error identifies favicon on port39839. Separate GET on port45045 is not the same rendering request. Earlier first41 and first43 first-run unlocated404 remain UNKNOWN."
+  },
+  "actual_first46": {
+    "commit": "07966095db7028677e884702cc784e69c172d0f2",
+    "runtime_commit": "837f8ab8fb02f3a013f11a9e204b6db3a56d3491",
+    "visual_boundary": "043–045 original Canvas visibly show eyebrow lift and warmer contact light; same-root flame remains merged, independent wick flame visibility not accepted. Preserve contact beat and check separated wick after046 withdrawal; no forced artificial second peak."
+  },
+  "new_call_outside_this_bundle": {
+    "frame": 46,
+    "call": 21,
+    "raw_returned": true,
+    "accepted": false,
+    "issue": "near hand shifted upward and far hand shifted downward by generation; same-raw complete near-arm remap under evaluation, original hand/match and far grip frozen.",
+    "effective_generations": 21,
+    "raw_outputs": 21,
+    "tool_submissions": 22,
+    "parameter_errors_without_output": 1
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "scope": "read-only hashes, source syntax and in-memory pixel checks; no postprocessing or image generation executed",
+  "calls": [
+    {
+      "frame": "F038",
+      "logical_call": 18,
+      "actual_submissions_for_frame": 1,
+      "request_sha256": "7bf511f1c54d89378f5588c410f5b32d8eed37f25ee75da7955c29ac99e0da09",
+      "prompt_exactly_equals_request_prompt": true,
+      "actual_request_inputs": 5,
+      "actual_inputs_equal_frozen_copies": true,
+      "frozen_manifest_all_hashes_and_bytes_match": true,
+      "raw_sha256": "802303fe40abb5f45262e9288a6cdaa95b560ced8a8a5a129caf9eb201c0fc60",
+      "raw_matches_status": true
+    },
+    {
+      "frame": "F041",
+      "logical_call": 19,
+      "actual_submissions_for_frame": 1,
+      "request_sha256": "3a6a6b216893febd3d7d66e15a9cade0d481b1e15e7cd350948638c807530edf",
+      "prompt_exactly_equals_request_prompt": true,
+      "actual_request_inputs": 5,
+      "actual_inputs_equal_frozen_copies": true,
+      "frozen_manifest_all_hashes_and_bytes_match": true,
+      "raw_sha256": "5225e628c1618f28f398c8265183abd9cc42abac7979cd01ec46215e6163bcd8",
+      "raw_matches_status": true
+    },
+    {
+      "frame": "F043",
+      "logical_call": 20,
+      "actual_submissions_for_frame": 1,
+      "request_sha256": "85d09a84a0e181f7b2d267e2d95028b585eb97241143409c30c82447bf4c87c2",
+      "prompt_exactly_equals_request_prompt": true,
+      "actual_request_inputs": 3,
+      "actual_inputs_equal_frozen_copies": true,
+      "frozen_manifest_all_hashes_and_bytes_match": true,
+      "raw_sha256": "4c2f1a987740abe88730a81971333bbeaedc4dfe54efff15bf2424564957ee7d",
+      "raw_matches_status": true
+    }
+  ],
+  "sealed_frames": [
+    {
+      "frame": "F038",
+      "final_sha256": "756f9213256fb21367b9779c7c0627456dd362e9e022fb01a30665ce0c4c8946",
+      "matches_author_accepted_hash": true,
+      "original_rgb_in_all_layers": true,
+      "exclusive_alpha_partition": true,
+      "alpha_sum_equal_final": true,
+      "RGBA_reconstruction_exact": true
+    },
+    {
+      "frame": "F041",
+      "final_sha256": "5c20ca471bde6bf832d5fbdee1f018b1119d1890ed34c07feb8d091e906c89be",
+      "matches_author_accepted_hash": true,
+      "original_rgb_in_all_layers": true,
+      "exclusive_alpha_partition": true,
+      "alpha_sum_equal_final": true,
+      "RGBA_reconstruction_exact": true
+    },
+    {
+      "frame": "F043",
+      "final_sha256": "a2a9285481789c1b7bd69a58694026e7a473138093d8039ecf2d74b212311dd1",
+      "matches_author_accepted_hash": true,
+      "original_rgb_in_all_layers": true,
+      "exclusive_alpha_partition": true,
+      "alpha_sum_equal_final": true,
+      "RGBA_reconstruction_exact": true
+    }
+  ],
+  "software_environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "Pillow": "12.3.0",
+    "scipy": "1.17.0"
+  },
+  "F043_semantic_union": {
+    "original_white_pixels": 2306,
+    "extra_old_brow_AA_pixels": 122,
+    "union_pixels": 2428,
+    "release_formula_exact": true,
+    "outside_union_changed": 0,
+    "alpha_changed": 0,
+    "glasses_eyelid_guard_changed": 0,
+    "new_generation_calls_for_same_raw_repair": 0
+  },
+  "preserved_python_scripts_syntax_parsed": [
+    "F038_color_final/apply_colors.py",
+    "F038_handoff_preparation/prepare_handoff.py",
+    "F038_input_gate/composite_returned_crop.py",
+    "F038_input_gate/register_raw.py",
+    "F038_same_raw_semantic_v6/build.py",
+    "F041_color_candidate/apply_colors.py",
+    "F041_handoff_preparation/seal_handoff.py",
+    "F041_input_gate/composite_returned_crop.py",
+    "F041_input_gate/register_raw.py",
+    "F041_same_raw_semantic_v7/build.py",
+    "F043_handoff_preparation/seal_handoff.py",
+    "F043_input_gate/composite_old_aa_collar_v2.py",
+    "F043_input_gate/register_raw.py",
+    "F043_same_raw_final_v3/release_old_brow_AA.py"
+  ]
+}

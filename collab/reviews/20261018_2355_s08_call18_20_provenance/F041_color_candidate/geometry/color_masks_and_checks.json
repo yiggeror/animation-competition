@@ -1,0 +1,61 @@
+{
+  "status": "TENTATIVE_ZERO_CALL_SOFT_COLOR_CANDIDATE_PENDING_DUAL_MATERIAL_REVIEW",
+  "source_shape_sha256": "326311dd183e4867f49ef9d29b40be6616a7b9f3f80c8e5145365475440eee54",
+  "candidate_sha256": "5c20ca471bde6bf832d5fbdee1f018b1119d1890ed34c07feb8d091e906c89be",
+  "alpha_changed": 0,
+  "fixed_hand_match_jade_seat_box_changed": 0,
+  "ear_concha_core_changed": 0,
+  "material_masks": [
+    {
+      "name": "head_ear_neck_lit_skin",
+      "max_add_RGB": [
+        0,
+        5,
+        8
+      ],
+      "soft_domain_pixels": 28456,
+      "mask": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_color_candidate/masks/head_ear_neck_lit_skin_SOFT.png"
+    },
+    {
+      "name": "blue_blouse",
+      "max_add_RGB": [
+        10,
+        6,
+        2
+      ],
+      "soft_domain_pixels": 104343,
+      "mask": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_color_candidate/masks/blue_blouse_SOFT.png"
+    },
+    {
+      "name": "crown_gray_hair",
+      "max_add_RGB": [
+        4,
+        4,
+        3
+      ],
+      "soft_domain_pixels": 32583,
+      "mask": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_color_candidate/masks/crown_gray_hair_SOFT.png"
+    },
+    {
+      "name": "near_upper_and_forearm_lit_skin",
+      "max_add_RGB": [
+        0,
+        3,
+        5
+      ],
+      "soft_domain_pixels": 24254,
+      "mask": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_color_candidate/masks/near_upper_and_forearm_lit_skin_SOFT.png"
+    },
+    {
+      "name": "chin_same_material_warm_subplane_TENTATIVE",
+      "max_add_RGB": [
+        0,
+        3,
+        4
+      ],
+      "soft_domain_pixels": 1862,
+      "mask": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_color_candidate/masks/chin_same_material_warm_subplane_TENTATIVE_SOFT.png"
+    }
+  ],
+  "shadow_policy": "Near-arm lit material only; natural lower-arm shadow/ear concha/bun upper-lower turning planes and thin far-arm occlusion shadow not forced to F000 lit means."
+}

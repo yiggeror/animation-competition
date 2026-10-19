@@ -1,0 +1,91 @@
+{
+  "scope": "Reproduce accepted source-pixel postprocessing and partitions from the preserved native raw and frozen local data. Never invoke an image-generation tool. No replay was executed during this read-only preservation task.",
+  "preparation": [
+    "Materialize ROWS paths beneath a NEW disposable replay root, stripping only the shared repository provenance prefix. Never point replay at the artist source tree.",
+    "Original source scripts are preserved byte-for-byte. F038_same_raw_semantic_v6/build.py and F041_same_raw_semantic_v7/build.py contain an absolute R path; in the disposable replay copies only, rebase that single R literal to the NEW replay root. Other included adopted scripts derive R from __file__.",
+    "Create masks, candidates, geometry and qa subdirectories beneath F038_color_final, F041_color_candidate and F043_same_raw_final_v3.",
+    "For exact adopted registration use the supplied RAW_UNIFORM_REGISTRATION.json values below. The optimizer scripts are provenance; do not rerun optimization as part of exact replay.",
+    "F043 composite refuses to overwrite its raw copy: use a clean F043_same_raw_aa_v2 output directory. Preserve its supplied release mask when preparing that directory."
+  ],
+  "dependency_environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "Pillow": "12.3.0",
+    "scipy": "1.17.0"
+  },
+  "steps": [
+    {
+      "frame": "F038",
+      "registration": {
+        "scale": 0.9790086218540862,
+        "tx": 7.853431107035116,
+        "ty": 23.726857547117948,
+        "loss": 0.08548959023414096,
+        "basis": "fixed far visible grip/jade and table box, exclude foreground near hand; single uniform whole raw transform",
+        "sampled_pixels": 5003,
+        "raw_sha256": "802303fe40abb5f45262e9288a6cdaa95b560ced8a8a5a129caf9eb201c0fc60"
+      },
+      "ordered_commands_from_new_root": [
+        "python F038_input_gate/composite_returned_crop.py F038_returned_raw_nominal --raw F038_native_call18/raw/F038_whole_turn_arms_native_raw.png --scale 0.9790086218540862 --tx 7.853431107035116 --ty 23.726857547117948",
+        "python F038_same_raw_semantic_v6/build.py",
+        "python F038_color_final/apply_colors.py",
+        "python F038_handoff_preparation/prepare_handoff.py"
+      ],
+      "final_color_alias": "F038_color_final/candidates/S08_F038_whole_turn_same_raw_final_color_RGBA.png"
+    },
+    {
+      "frame": "F041",
+      "registration": {
+        "scale": 0.9866407607889593,
+        "tx": 4.870565263130242,
+        "ty": 19.031297248532635,
+        "loss": 0.09529132938293225,
+        "basis": "fixed far visible grip/jade and table box, exclude foreground near hand; single uniform whole raw transform",
+        "sampled_pixels": 5368,
+        "raw_sha256": "5225e628c1618f28f398c8265183abd9cc42abac7979cd01ec46215e6163bcd8"
+      },
+      "ordered_commands_from_new_root": [
+        "python F041_input_gate/composite_returned_crop.py F041_returned_raw_nominal --raw F041_native_call19/raw/F041_whole_turn_arms_native_raw.png --scale 0.9866407607889593 --tx 4.870565263130242 --ty 19.031297248532635",
+        "python F041_same_raw_semantic_v7/build.py",
+        "python F041_color_candidate/apply_colors.py",
+        "python F041_handoff_preparation/seal_handoff.py"
+      ],
+      "final_color_alias": "F041_color_candidate/candidates/S08_F041_whole_turn_same_raw_final_color_RGBA.png"
+    },
+    {
+      "frame": "F043",
+      "registration": {
+        "scale": 0.7253490452801961,
+        "tx": -0.15658574064358735,
+        "ty": 3.0993710752053785,
+        "loss": 0.10059892744227705,
+        "basis": "Unchanged actual frame and eyelid ink with adjacent skin, excluding both eyebrow permission domains. One uniform raw transform only.",
+        "sampled_pixels": 24412,
+        "raw_sha256": "4c2f1a987740abe88730a81971333bbeaedc4dfe54efff15bf2424564957ee7d",
+        "target_size": [
+          1140,
+          900
+        ],
+        "source_scene_crop": [
+          950,
+          480,
+          1140,
+          630
+        ]
+      },
+      "ordered_commands_from_new_root": [
+        "python F043_input_gate/composite_old_aa_collar_v2.py F043_native_call20/raw/F043_brows_native_raw.png F043_same_raw_aa_v2 --scale 0.7253490452801961 --tx -0.15658574064358735 --ty 3.0993710752053785",
+        "python F043_same_raw_final_v3/release_old_brow_AA.py",
+        "python F043_handoff_preparation/seal_handoff.py"
+      ],
+      "necessary_preexisting_release_mask": "F043_same_raw_aa_v2/masks/PROPOSED_RELEASE_old_near_brow_lower_highlight_AA_2rows.png",
+      "release_mask_reconstruction_formula": "For each x=994..1054 inclusive, y is the last WHITE pixel row in original F043_brows_scene_WHITE_permission.png at x; release exactly y+1 and y+2. 122 new pixels; union with original 2306 is 2428. Preserve original F041 alpha."
+    }
+  ],
+  "expected_final_sha256": {
+    "F038": "756f9213256fb21367b9779c7c0627456dd362e9e022fb01a30665ce0c4c8946",
+    "F041": "5c20ca471bde6bf832d5fbdee1f018b1119d1890ed34c07feb8d091e906c89be",
+    "F043": "a2a9285481789c1b7bd69a58694026e7a473138093d8039ecf2d74b212311dd1"
+  },
+  "verification": "Check final SHA256s, then alpha-composite body -> table_box -> forearms and require exact original RGBA reconstruction. Original full RGB, including alpha-zero RGB, is preserved in every layer. SEALED_MANIFEST metadata can contain historical absolute paths and intentionally omitted QA references; image pixels and supplied artifact hashes are the reproduction targets."
+}
