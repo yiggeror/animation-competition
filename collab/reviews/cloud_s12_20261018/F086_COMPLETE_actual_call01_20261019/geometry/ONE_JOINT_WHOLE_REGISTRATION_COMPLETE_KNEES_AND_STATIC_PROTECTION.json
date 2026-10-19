@@ -1,0 +1,292 @@
+{
+  "status": "SOLE_JOINT_REGISTERED_F086_AND_ONE_REAL_CANVAS_DELIVERED_STRUCTURE_GATE_PENDING",
+  "raw_SHA256": "ae2a835773684b21ff6b64ff4ce40b285338cc9a2c0544916670f2b941ec8bae",
+  "native_SHA256": "dd59078c720c39aef411fd3c5ee12a09f18b9dd85ba69376c2d2481205a6e8be",
+  "one_whole_raw_to_native_matrix": [
+    [
+      0.9910447571773784,
+      -0.024463313252684128,
+      20.70398670469987
+    ],
+    [
+      0.024463313252684128,
+      0.9910447571773784,
+      -6.564319092675664
+    ]
+  ],
+  "uniform_scale": 0.9913466419089076,
+  "rotation_degrees": 1.4140229426917612,
+  "translation_native": [
+    20.70398670469987,
+    -6.564319092675664
+  ],
+  "joint_fit_objective": {
+    "status": "PREDECLARED_SINGLE_JOINT_GLOBAL_FIT_ALL_REGIONS_MANDATORY",
+    "regions": {
+      "head": 1650,
+      "shoulders_complete_arms": 1668,
+      "waist_hips": 557,
+      "BOTH_complete_knee_alpha_turns_and_fold_edges": 686
+    },
+    "raw_soft_grips_far_near": [
+      [
+        976.0,
+        643.0
+      ],
+      [
+        992.0,
+        767.0
+      ]
+    ],
+    "target_qualified_soft_grips_far_near": [
+      [
+        977.8259748974473,
+        652.5907861344423
+      ],
+      [
+        989.6064472655615,
+        774.2470418080808
+      ]
+    ],
+    "raw_visible_waist_hem_endpoints": [
+      [
+        278.0,
+        831.0
+      ],
+      [
+        617.0,
+        943.0
+      ]
+    ],
+    "target_visible_waist_hem_endpoints": [
+      [
+        276.0,
+        839.0
+      ],
+      [
+        614.0,
+        953.0
+      ]
+    ],
+    "raw_complete_far_near_knee_turn_and_ground_points": [
+      [
+        707.0,
+        1195.5
+      ],
+      [
+        686.0,
+        1251.5
+      ],
+      [
+        577.0,
+        1323.0
+      ]
+    ],
+    "target_complete_far_near_knee_turn_and_ground_points": [
+      [
+        686.0,
+        1205.0
+      ],
+      [
+        666.0,
+        1250.5
+      ],
+      [
+        561.5,
+        1313.0
+      ]
+    ],
+    "knee_error_never_ignored_because_generated_shins_not_adopted": true,
+    "estimated_point_uncertainty_native": "soft grips about3px; waist/cloth turns about4to8px, not hidden bone measurements"
+  },
+  "ALL_region_contour_results_no_dropped_knees": {
+    "head": {
+      "point_count": 1650,
+      "mean_absolute_contour_error_native": 4.6908879949649425,
+      "p95_absolute_contour_error_native": 10.959116682404973
+    },
+    "shoulders_complete_arms": {
+      "point_count": 1668,
+      "mean_absolute_contour_error_native": 3.6590641652388127,
+      "p95_absolute_contour_error_native": 7.223529582036007
+    },
+    "waist_hips": {
+      "point_count": 557,
+      "mean_absolute_contour_error_native": 4.284664130548663,
+      "p95_absolute_contour_error_native": 8.436615338056665
+    },
+    "BOTH_complete_knee_alpha_turns_and_fold_edges": {
+      "point_count": 686,
+      "mean_absolute_contour_error_native": 6.667115656088504,
+      "p95_absolute_contour_error_native": 18.438670776752325
+    }
+  },
+  "registered_soft_grips_far_near": [
+    [
+      972.2337592883454,
+      654.5536535069983
+    ],
+    [
+      985.0570245598506,
+      777.8346164090362
+    ]
+  ],
+  "soft_grip_residuals_native": [
+    [
+      -5.592215609101913,
+      1.9628673725560475
+    ],
+    [
+      -4.549422705710981,
+      3.587574600955463
+    ]
+  ],
+  "registered_waist_endpoints": [
+    [
+      275.8854158870305,
+      823.794675205972
+    ],
+    [
+      609.1096974858613,
+      943.0847512024983
+    ]
+  ],
+  "waist_residuals_native": [
+    [
+      -0.11458411296950999,
+      -15.205324794028002
+    ],
+    [
+      -4.890302514138739,
+      -9.915248797501704
+    ]
+  ],
+  "registered_complete_knee_turn_and_ground_points": [
+    [
+      692.1267390355225,
+      1195.5252505825279
+    ],
+    [
+      669.9448535926473,
+      1250.5100274061547
+    ],
+    [
+      560.1718481627461,
+      1318.7032263997946
+    ]
+  ],
+  "complete_knee_turn_and_ground_residuals_native": [
+    [
+      6.126739035522519,
+      -9.47474941747214
+    ],
+    [
+      3.9448535926472914,
+      0.01002740615467701
+    ],
+    [
+      -1.3281518372539267,
+      5.70322639979463
+    ]
+  ],
+  "natural_knee_shin_interface_expected_reference_alpha_missing_pixels_diagnostic_not_bone_proof": 88,
+  "knees_or_interface_errors_dropped": false,
+  "reviewed_adoption_domain_SHA256": "c8afa598bad272ab41c18093265d209eac37106e170c22c36eb79745e8456c36",
+  "domain_pixels": 1298934,
+  "changed_RGBA_pixels": 410399,
+  "outside_activity_RGBA_changes": 0,
+  "fixed_native_shins_shoes_blank_RGBA_changes": 0,
+  "protected_blank_pixels": 195612,
+  "new_alpha_leaks_in_protected_blank": 0,
+  "edge_transition_pixels_inside_activity": 604,
+  "ground_ink_arc_copied_back": false,
+  "separate_head_arm_knee_shin_foot_warps": 0,
+  "reference_body_pixels_adopted_as_new_art": 0,
+  "post_registration_mask_trials": 0,
+  "imagegen_calls": 1,
+  "actual086_Canvas": 1,
+  "next090_calls": 0,
+  "raw_front_digit_ownership_polygons": {
+    "far_LEFT_jade_front_curled_digits": [
+      [
+        941,
+        631
+      ],
+      [
+        963,
+        628
+      ],
+      [
+        981,
+        635
+      ],
+      [
+        990,
+        650
+      ],
+      [
+        986,
+        670
+      ],
+      [
+        974,
+        679
+      ],
+      [
+        954,
+        676
+      ],
+      [
+        938,
+        666
+      ],
+      [
+        933,
+        652
+      ]
+    ],
+    "near_RIGHT_bare_front_curled_digits": [
+      [
+        981,
+        731
+      ],
+      [
+        1000,
+        733
+      ],
+      [
+        1015,
+        750
+      ],
+      [
+        1022,
+        778
+      ],
+      [
+        1009,
+        799
+      ],
+      [
+        992,
+        805
+      ],
+      [
+        977,
+        795
+      ],
+      [
+        978,
+        779
+      ],
+      [
+        987,
+        768
+      ],
+      [
+        984,
+        749
+      ]
+    ]
+  },
+  "actual_Canvas_SHA256": "a272a02606f09495c6557b9f94ef05439e364fbee88ac6ed4bedaf03cc95edd9"
+}

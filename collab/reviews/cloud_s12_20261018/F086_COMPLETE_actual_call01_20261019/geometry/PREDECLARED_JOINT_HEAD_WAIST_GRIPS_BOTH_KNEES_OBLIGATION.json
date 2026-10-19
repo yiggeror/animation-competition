@@ -1,0 +1,79 @@
+{
+  "status": "PREDECLARED_SINGLE_JOINT_GLOBAL_FIT_ALL_REGIONS_MANDATORY",
+  "regions": {
+    "head": 1650,
+    "shoulders_complete_arms": 1668,
+    "waist_hips": 557,
+    "BOTH_complete_knee_alpha_turns_and_fold_edges": 686
+  },
+  "raw_soft_grips_far_near": [
+    [
+      976.0,
+      643.0
+    ],
+    [
+      992.0,
+      767.0
+    ]
+  ],
+  "target_qualified_soft_grips_far_near": [
+    [
+      977.8259748974473,
+      652.5907861344423
+    ],
+    [
+      989.6064472655615,
+      774.2470418080808
+    ]
+  ],
+  "raw_visible_waist_hem_endpoints": [
+    [
+      278.0,
+      831.0
+    ],
+    [
+      617.0,
+      943.0
+    ]
+  ],
+  "target_visible_waist_hem_endpoints": [
+    [
+      276.0,
+      839.0
+    ],
+    [
+      614.0,
+      953.0
+    ]
+  ],
+  "raw_complete_far_near_knee_turn_and_ground_points": [
+    [
+      707.0,
+      1195.5
+    ],
+    [
+      686.0,
+      1251.5
+    ],
+    [
+      577.0,
+      1323.0
+    ]
+  ],
+  "target_complete_far_near_knee_turn_and_ground_points": [
+    [
+      686.0,
+      1205.0
+    ],
+    [
+      666.0,
+      1250.5
+    ],
+    [
+      561.5,
+      1313.0
+    ]
+  ],
+  "knee_error_never_ignored_because_generated_shins_not_adopted": true,
+  "estimated_point_uncertainty_native": "soft grips about3px; waist/cloth turns about4to8px, not hidden bone measurements"
+}

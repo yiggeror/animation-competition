@@ -1,0 +1,68 @@
+{
+  "status": "SOLE_COMPLETE086_ACTUAL_DRAWING_SOURCE_CHAIN",
+  "authorization_source_thread": "01a15188-00cc-7705-b91f-7b18102ba0d0",
+  "approved_input_commit": "39e6e707d34e84319927c36ee997427efc721da9",
+  "actual_two_model_inputs": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_actual_call01_20261019/inputs/01_F086_COMPLETE_VISIBLE_RISE_FROM_FINAL082.png",
+      "source_path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_TARGET_FROM_FINAL082_20261019/inputs/01_F086_COMPLETE_VISIBLE_RISE_FROM_FINAL082.png",
+      "SHA256": "9d158167a1862cb478ce073b0a3ce4ab4644bb4b64ec346ab9e65cce35f6e6f3",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_actual_call01_20261019/inputs/02_SAME_F086_TRUE_RODS_CRANE_BOX_GROUND_CONTEXT.png",
+      "source_path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_TARGET_FROM_FINAL082_20261019/inputs/02_SAME_F086_TRUE_RODS_CRANE_BOX_GROUND_CONTEXT.png",
+      "SHA256": "8cfa2b9e002586baad654e98ab0b2807bcffc13063664782b5f201d751589867",
+      "size": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "executed_prompt_SHA256": "013cf3c335de2524e7a1b16f5370fc5d636f6a12abfd1fc3f3e32ff8582a52eb",
+  "untouched_raw_SHA256": "ae2a835773684b21ff6b64ff4ce40b285338cc9a2c0544916670f2b941ec8bae",
+  "sources": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_COMPLETE_PANTS_JOIN_actual_call01_20261019/candidate/F082.png",
+      "role": "sole qualified actual082 native support/mother, never retired082",
+      "SHA256": "ce1ea797ed8ae89212e436905da207447c6ec8fd6df6a1f2d7671c43ff4e7fa6"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_TARGET_FROM_FINAL082_20261019/anatomy/F086_COMPLETE_VISIBLE_SOURCE_PIXEL_REFERENCE_ONLY.png",
+      "role": "reviewed pose contour for joint fit ONLY, no production RGB",
+      "SHA256": "3b571089b30461bf9e33ea1df5cfbce5209a5690c30ffe8901127dca940d830f"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_TARGET_FROM_FINAL082_20261019/masks/FINAL082_REAL_SHINS_ANKLES_SHOES_AND_EMPTY_FIXED.png",
+      "role": "reviewed fixed real native support and blank ownership",
+      "SHA256": "113c53943146244715ea1e8caa7c9ed2c4cd8cfce97c2280ad4524d5e976ae26"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_TARGET_FROM_FINAL082_20261019/masks/F086_COMPLETE_ACTIVITY_THROUGH_BOTH_ROUND_KNEES_AND_FOLDS.png",
+      "role": "reviewed full activity mask including both complete knees and fold interfaces",
+      "SHA256": "c8afa598bad272ab41c18093265d209eac37106e170c22c36eb79745e8456c36"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_TARGET_FROM_FINAL082_20261019/code_props/F086_TRUE_RIGID_RODS_CRANE_SAME_BOTH_GRIPS.png",
+      "role": "approved same-rigid true shafts/crane",
+      "SHA256": "d938d472bc2c23ad6415a8efcb1f81564dbcebebc50acb31c3aeb93a1946f44b"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_TARGET_FROM_FINAL082_20261019/code_props/F086_BOX_CLOTH_UNLOAD_CONTEXT_REFERENCE.png",
+      "role": "approved box/cloth context",
+      "SHA256": "424787b31f6fa9cffd7abb40f11db63a756630e673cabc7544c4440d8e6ba169"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F086_COMPLETE_TARGET_FROM_FINAL082_20261019/geometry/F086_FULL_RISE_BOTH_ARM_TRUE_PROP_AND_FIXED_SUPPORT_GEOMETRY.json",
+      "role": "approved086 hip/arm/true-prop geometry",
+      "SHA256": "1aa1ab8db721d14b4bb83b42f815915eb200b86ba8781b22b1cccb792910ca0d"
+    }
+  ],
+  "registration": "one whole similarity jointly checking all required regions; no dropped knee residuals",
+  "imagegen_calls": 1,
+  "actual086_Canvas": 1,
+  "next090_calls": 0
+}
