@@ -1,0 +1,177 @@
+{
+  "60": {
+    "hold": 2,
+    "angle_from058_deg": 26,
+    "angle_from063_deg": -52.507999999999996,
+    "rigid_group_scale": 1,
+    "M": [
+      [
+        0.6086506500516637,
+        0.7934383316879058
+      ],
+      [
+        -0.7934383316879058,
+        0.6086506500516637
+      ]
+    ],
+    "t": [
+      -23.741606789072875,
+      1028.4087372582774
+    ],
+    "G_soft": [
+      1090.0,
+      560.0
+    ],
+    "T_soft": [
+      1004.0511522661006,
+      735.0373244031538
+    ],
+    "L_soft": [
+      1169.777497505093,
+      397.5291341414562
+    ],
+    "near_chain_soft": [
+      [
+        705.0,
+        666.0
+      ],
+      [
+        850.0,
+        710.0
+      ],
+      [
+        1089.2643841903841,
+        647.0707453877628
+      ]
+    ],
+    "far_chain_soft": [
+      [
+        945.0,
+        695.0
+      ],
+      [
+        995.0,
+        800.0647067814745
+      ],
+      [
+        1079.9611759311153,
+        743.4929433943038
+      ]
+    ],
+    "whole_far_hand_translation_soft": [
+      -12.038824068884699,
+      49.492943394303765
+    ],
+    "actual_far_palm_to_visible_torch_alpha128": {
+      "min_pixel_center_distance_native": 44.9221548904324,
+      "overlap_pixels": 0
+    },
+    "head_skirt_white_overlap": 0,
+    "note": "Translation/G and whole chains are explicit soft timing/pose proposals, not frozen measured bone points; actual connected arms and genuine air require drawing review."
+  },
+  "62": {
+    "hold": 1,
+    "angle_from058_deg": 52,
+    "angle_from063_deg": -26.507999999999996,
+    "rigid_group_scale": 1,
+    "M": [
+      [
+        0.8948720519109927,
+        0.4463227651695682
+      ],
+      [
+        -0.4463227651695682,
+        0.8948720519109927
+      ]
+    ],
+    "t": [
+      -146.36120061562133,
+      532.7707988874151
+    ],
+    "G_soft": [
+      1060.0,
+      600.0
+    ],
+    "T_soft": [
+      906.0183747409953,
+      719.6450101073814
+    ],
+    "L_soft": [
+      1202.9260795724485,
+      488.94430613854075
+    ],
+    "near_chain_soft": [
+      [
+        705.0,
+        666.0
+      ],
+      [
+        820.0,
+        725.0
+      ],
+      [
+        1021.1695303825404,
+        677.9361948152946
+      ]
+    ],
+    "far_chain_soft": [
+      [
+        945.0,
+        695.0
+      ],
+      [
+        995.0,
+        790.129413562949
+      ],
+      [
+        1085.9223518622307,
+        718.9858867886076
+      ]
+    ],
+    "whole_far_hand_translation_soft": [
+      -6.077648137769398,
+      24.985886788607527
+    ],
+    "actual_far_palm_to_visible_torch_alpha128": {
+      "min_pixel_center_distance_native": 67.0,
+      "overlap_pixels": 0
+    },
+    "head_skirt_white_overlap": 0,
+    "note": "Translation/G and whole chains are explicit soft timing/pose proposals, not frozen measured bone points; actual connected arms and genuine air require drawing review."
+  },
+  "exposure": {
+    "058": 2,
+    "060": 2,
+    "062": 1,
+    "063": 6,
+    "total": 11
+  },
+  "sources": {
+    "F063_LOCKED0abc.png": "0abc3fd9cfcf7964f825ac7be0227fb9f588da709809f6d15362063741e545ef",
+    "F058_LOCKED044.png": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+    "near_actual_mask.png": "fe54593ddfb52089b1c24472ff4be4d952c53c8eb1b2b1dabbfc322c192bd573",
+    "prop_actual_visible_mask.png": "cb87cd3547025dd8aee2c1cd96c57ef2279988e70ac017e050c2005096b6e625",
+    "prop_unknown_visible_mask.png": "1135b38733e9345a21cffc879b08ce74ee00a7b0878adc53d2267176f711080f",
+    "head_guard.png": "f4ff3c7d356c9a1ed55ce09dd1eaf57224d239e8cb351dd1f90b6fe42f59281d",
+    "skirt_guard.png": "56a677d734ee34792105273c7a5373b0da2507ba817d8e54c65bc98c1e4250fb",
+    "D_identity_cloth_1280x1536.png": "57a1cf0d6467d59bc1c91a7dca1cc7deedc9fde551a0b08b1360cb313f58923a",
+    "unit_geometry.json": "19e1f22301967463bf9eff3044ec9edcfec443f8fa831daaa966c35ab692a7c8"
+  },
+  "common_crop": {
+    "native": [
+      550,
+      0,
+      1320,
+      924
+    ],
+    "tool": [
+      1280,
+      1536
+    ],
+    "uniform_scale": 1.6623376623376624,
+    "inverse": "77/128+[550,0]"
+  },
+  "old39_degree_scheme": "WITHDRAWN_NOT_USED",
+  "calls": 0,
+  "unknown": "No hidden prop pixels invented. Source-extraction cuts and revealed source vacancies remain full WHITE for actual coherent drawing."
+}
