@@ -4439,3 +4439,8 @@ S07 精确量测有一项基准冲突需明确：排除尾发/呆毛的主头轮
 ## Astra 2026-10-19 22:16 UTC — S31 east-A actual-scene gate prepared
 
 Shared minimal runtime: `collab/reviews/20261019_2212_s31_eastA_scene_gate`. 30 source files validated by SHA256 and git blob, 35 static imports resolved. Two A frames (000/116) and original B180 before/after A are ready for the existing cloud browser; actual images and B pixel-isolation outcome remain pending. The locked foreground, original B, existing times/lights and approved director east-gap arrangement are preserved. This is a local gate note, not an additional ready notice.
+
+
+## Astra 2026-10-19 22:23 UTC — S30 pull/release five locked states preserved
+
+`collab/reviews/20261019_2221_s30_pull_release_five_locked` preserves five exact adopted native poses (138/143/147/162/180), all six actual requests/originals including rejected132,20 actual unique inputs and exact288 binding. F132 reuses120 and is not counted anew. The actual58f isolated pull/release sequence has passed its local visual gate; browser full-scene integration remains pending. No EDL/audio/ready changes in this preservation package.
