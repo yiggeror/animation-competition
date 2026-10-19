@@ -1,0 +1,48 @@
+{
+  "primary_current074": {
+    "commit": "0950619835aa4ee895e9048814ee5d989d5ef184",
+    "native_path": "collab/reviews/cloud_s12_20261018/F074_COMPLETE_actual_call01_20261019/candidate/F074.png",
+    "native_SHA256": "3203a6f31b2e86a3939644f7ceb2197a93de802f45b30d70b3a347f24718abd1",
+    "raw_SHA256": "0915a7df2762e3b19210a3f691b0d0b104bf9fc5dc2f3dd1d821d2e37ed963f3",
+    "actual_Canvas_SHA256": "c03fb12420f45abdd08b9fbabe3b9382dec581b07ec70aca5c1e58fe753d20b1"
+  },
+  "support070_geometry_only": {
+    "native_path": "collab/reviews/cloud_s12_20261018/F070_COMPLETE_actual_call01_20261019/candidate/F070.png",
+    "native_SHA256": "def2f1f8ace0883ae5625e2936fd676ec2c85388d57f6fe391a5cfe41a70e960",
+    "old_RGB_or_alpha_adopted": 0
+  },
+  "actual_input_manifest": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F074_PANTS_CONTINUITY_INPUT_GATE_20261019/inputs/01_COMPLETE_HIPS_THIGHS_KNEES_SHINS_TARGET_REFERENCE_ONLY.png",
+      "SHA256": "f95f9ecd328ff306dfd1f191cc0c4c0e020c75c4c8b819c3401d7556d7b8ca9a",
+      "size": [
+        1140,
+        960
+      ]
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F074_PANTS_CONTINUITY_INPUT_GATE_20261019/inputs/02_SAME_POSITION_TRUE_GROUND_CONTEXT_REFERENCE_ONLY.png",
+      "SHA256": "22ba00e431dfad6351f237af66d59b174cfe7710a35669e442389896f79d58a2",
+      "size": [
+        1920,
+        1160
+      ]
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F074_PANTS_CONTINUITY_INPUT_GATE_20261019/inputs/03_ONLY_CURRENT074_PANTS_MATERIAL_KNEE_FOLD.png",
+      "SHA256": "74d5fa12302a9f587076b24079aedf1177dca453b477a6321d43e524b7814414",
+      "size": [
+        1024,
+        650
+      ]
+    }
+  ],
+  "source074_protected_outside_domain_zero_difference": true,
+  "current_source074_original_and_Canvas_not_modified": true,
+  "automatic_reference_remap_NOT_a_final_repair": true,
+  "local_draw_gate_required": true,
+  "new_model_calls": 0,
+  "new_Canvas": 0,
+  "parent_review_scope": "Current074 upper body/head/chest/waist/natural jade-arm/bare-wrist/true grips retained; complete lower pants continuity correction only, no new whole-person generation.",
+  "reference_mask_scope": "Complete both-leg semantic trousers +2native corridor; blue hem/whole upper body/arms/palms/digits/shoes/bare ankles/props hard protected."
+}

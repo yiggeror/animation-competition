@@ -1,0 +1,21 @@
+{
+  "status": "ACTUAL_THREE_INPUTS_AND_MASK_VISUALLY_OPENED_LOCAL_REPAIR_PENDING_ASTRA",
+  "opened_model_inputs": [
+    "01_COMPLETE_HIPS_THIGHS_KNEES_SHINS_TARGET_REFERENCE_ONLY.png",
+    "02_SAME_POSITION_TRUE_GROUND_CONTEXT_REFERENCE_ONLY.png",
+    "03_ONLY_CURRENT074_PANTS_MATERIAL_KNEE_FOLD.png"
+  ],
+  "opened_hard_protection": "reference/SEMANTIC_ALLOWED_AND_HARD_PROTECTION_READBACK.png",
+  "visible_readback": "Complete current074 hip/both thighs into round near/far knees and shin/cuff connections visible, no isolated knee strip. Both actual074 shoes/bare ankles stay original. Same-position true ground/shadow/props context and current074 material-only third image. Whole-cloth reference only, not adopted final art.",
+  "reference_outside_semantic_domain_RGBA_changes": 0,
+  "reference_blue_hem_RGBA_changes": 0,
+  "reference_current074_both_shoes_bare_ankles_RGBA_changes": 0,
+  "reference_whole_pants_interior_RGBA_changes": 109655,
+  "old070_RGB_alpha_patch_adopted": 0,
+  "new_imagegen_calls": 0,
+  "new_actual_Canvas": 0,
+  "source074_raw_native_Canvas_preserved": true,
+  "same_source_final_reattach_adopted": false,
+  "assessment": "The complete source074 cloth remap is visually useful as target construction but cannot certify hidden bone chain or turn source folds into a new anatomically drawn repair. It is NOT applied as repair. Submit one complete semantic pants local-drawing input rather than alpha-only trim, isolated shin scale or old-leg graft.",
+  "next_posture_not_qualified074": true
+}
