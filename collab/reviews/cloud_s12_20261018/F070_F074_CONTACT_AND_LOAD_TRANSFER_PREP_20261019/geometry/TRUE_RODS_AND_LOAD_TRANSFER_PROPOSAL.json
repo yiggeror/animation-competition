@@ -1,0 +1,162 @@
+{
+  "status": "CONTACT_AND_LOAD_TRANSFER_PREPARATION_ONLY_NOT_FULL_POSE_TARGET",
+  "sole_accepted_action_base": {
+    "state": 64,
+    "commit": "a823437ff216ee0054e23b864679a540fa02b23e",
+    "native_SHA256": "63083a76287d04cd7a6d9628791e199b7fbea47f4e41de1344216d348be058f0"
+  },
+  "latest_blue_actual_candidate_pending_review": "25d26c12f7350935f0b0bcf6ff3b0275e4daa53b native905cab5393450737da89823b9e24915a05268cdcf2a96023e208e2a9c12dea4d; bind it only after blue acceptance",
+  "base_true_points_scene": {
+    "root": [
+      1335.0,
+      775.0
+    ],
+    "body_hinge": [
+      1282.1986905564156,
+      773.9467944476169
+    ],
+    "neck3_hinge": [
+      1497.5314905035327,
+      714.6642052957592
+    ],
+    "body_rod_free": [
+      951.2616943917175,
+      798.9063357461391
+    ],
+    "neck3_rod_free": [
+      930.1059238245394,
+      729.1297395769899
+    ],
+    "near_right_grip_axis": [
+      959.7,
+      798.269911774929
+    ],
+    "far_left_grip_axis": [
+      953.9703435271945,
+      728.5213574356443
+    ]
+  },
+  "first_segment_proposals": [
+    {
+      "frame_PROPOSAL_ONLY": 70,
+      "all_crane_rod_and_true_grip_points_same_scene_delta": [
+        0,
+        -2.0
+      ],
+      "points_scene": {
+        "root": [
+          1335.0,
+          773.0
+        ],
+        "body_hinge": [
+          1282.1986905564156,
+          771.9467944476169
+        ],
+        "neck3_hinge": [
+          1497.5314905035327,
+          712.6642052957592
+        ],
+        "body_rod_free": [
+          951.2616943917175,
+          796.9063357461391
+        ],
+        "neck3_rod_free": [
+          930.1059238245394,
+          727.1297395769899
+        ],
+        "near_right_grip_axis": [
+          959.7,
+          796.269911774929
+        ],
+        "far_left_grip_axis": [
+          953.9703435271945,
+          726.5213574356443
+        ]
+      },
+      "plane_fold_degrees_first_segment": 55,
+      "whole_upper_body_rise_proposal_scene_px": 5.0,
+      "body_requirement": "Head/neck/chest/shoulders and both complete arms move naturally together through hip/spine articulation; not shoulder-only and not a code-translated torso block. Ground contacts fixed. Needs actual complete pose target before generation.",
+      "cloth_transition_requirement": "Small initial separation only after both real grips carry load; measure actual crane/cloth alpha gap and relaxation of pressure fold, not a made-up support dot.",
+      "fixed_rod_length_proof": {
+        "body_full_rod": {
+          "old_projected_length": 331.87689605084904,
+          "proposed_projected_length": 331.87689605084904,
+          "unchanged": true
+        },
+        "neck3_full_rod": {
+          "old_projected_length": 567.6099236297919,
+          "proposed_projected_length": 567.6099236297919,
+          "unchanged": true
+        }
+      }
+    },
+    {
+      "frame_PROPOSAL_ONLY": 74,
+      "all_crane_rod_and_true_grip_points_same_scene_delta": [
+        0,
+        -8.0
+      ],
+      "points_scene": {
+        "root": [
+          1335.0,
+          767.0
+        ],
+        "body_hinge": [
+          1282.1986905564156,
+          765.9467944476169
+        ],
+        "neck3_hinge": [
+          1497.5314905035327,
+          706.6642052957592
+        ],
+        "body_rod_free": [
+          951.2616943917175,
+          790.9063357461391
+        ],
+        "neck3_rod_free": [
+          930.1059238245394,
+          721.1297395769899
+        ],
+        "near_right_grip_axis": [
+          959.7,
+          790.269911774929
+        ],
+        "far_left_grip_axis": [
+          953.9703435271945,
+          720.5213574356443
+        ]
+      },
+      "plane_fold_degrees_first_segment": 55,
+      "whole_upper_body_rise_proposal_scene_px": 12.0,
+      "body_requirement": "Head/neck/chest/shoulders and both complete arms move naturally together through hip/spine articulation; not shoulder-only and not a code-translated torso block. Ground contacts fixed. Needs actual complete pose target before generation.",
+      "cloth_transition_requirement": "Small initial separation only after both real grips carry load; measure actual crane/cloth alpha gap and relaxation of pressure fold, not a made-up support dot.",
+      "fixed_rod_length_proof": {
+        "body_full_rod": {
+          "old_projected_length": 331.87689605084904,
+          "proposed_projected_length": 331.87689605084904,
+          "unchanged": true
+        },
+        "neck3_full_rod": {
+          "old_projected_length": 567.6099236297919,
+          "proposed_projected_length": 567.6099236297919,
+          "unchanged": true
+        }
+      }
+    }
+  ],
+  "full_pose_target_PNG": null,
+  "must_prepare_actual_correct_complete_body_arm_palm_target_before_any_call": true,
+  "crane_cloth_contact_region_for_actual_pixel_check_not_exact3Dbone_measurement": {
+    "x": [
+      1438,
+      1547
+    ],
+    "y": [
+      790,
+      800
+    ]
+  },
+  "ground_contacts": "original knee/shin/instep/both-shoe source supports fixed; full upper body rise cannot float or slide them",
+  "no_imagegen_authorized": true,
+  "no_actual_Canvas_rendered": true
+}
