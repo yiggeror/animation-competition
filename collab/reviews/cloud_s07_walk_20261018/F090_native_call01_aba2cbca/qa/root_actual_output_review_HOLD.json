@@ -1,0 +1,28 @@
+{
+  "reviewer": "cloud root actual-image review",
+  "status": "HOLD_BOTH_SHOES_AND_CUFFS_SHIFTED_OUTWARD",
+  "actual_viewed": [
+    "originals/F090_call01_RAW.png",
+    "qa/F084_approved090_vs_actual090_gray_HOLD.png",
+    "qa/F084_approved090_vs_actual090_dark_HOLD.png",
+    "qa/F090_actual_feet_dark_HOLD.png",
+    "qa/F090_expected_cyan_actual_orange_soles_HOLD.png"
+  ],
+  "raw_dimensions": [1024, 1536],
+  "only_diagnostic_transform": "whole135/256 ->540x810; native crop1080,250,1620,1060; no fitting",
+  "complete_waist_and_both_trouser_volumes_visible": true,
+  "near_anatomical_RIGHT_image_left_visible_sole_centroid_delta_native_px": [-50.16587545322261, -1.2170551049010783],
+  "far_anatomical_LEFT_image_right_visible_sole_centroid_delta_native_px": [40.82818828476701, -0.0831845827426605],
+  "measurement_limitation": "These are visible sole-material centers, not anatomical joint or bone measurements.",
+  "actual_cuffs_follow_wrong_moved_shoes": true,
+  "frozen_shoe_registration_pass": false,
+  "F084_to_F090_continuity_accepted": false,
+  "candidate_or_production_composite_made": false,
+  "source_shoes_pasted_to_mask_wrong_pose": false,
+  "segmented_limb_or_whole_person_fit": false,
+  "requests_sent": 1,
+  "originals_received": 1,
+  "automatic_retry": false,
+  "F095_unopened": true,
+  "next_gate": "Astra review required before any new input or call; this failed original supplies no retry authorization."
+}

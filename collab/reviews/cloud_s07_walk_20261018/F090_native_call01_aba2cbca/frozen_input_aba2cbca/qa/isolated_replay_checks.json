@@ -1,0 +1,65 @@
+{
+  "status": "PASS_DETERMINISTIC_INPUT_REPLAY_ONLY",
+  "method": "Fresh temporary directory; only local prepare.py and complete sources snapshot copied; execute prepare.py once; compare all four requested PNGs and five prepared real layers by SHA256 and file bytes.",
+  "result_files": [
+    {
+      "path": "inputs_1024x1536/A_whole_canvas_256over135_PREPARED.png",
+      "original_SHA256": "e2f11cbea439f62ac918b93859ba5ea32c381f9a45e4e6a14519e8905a69a87f",
+      "isolated_SHA256": "e2f11cbea439f62ac918b93859ba5ea32c381f9a45e4e6a14519e8905a69a87f",
+      "byte_identical": true
+    },
+    {
+      "path": "inputs_1024x1536/B_whole_canvas_256over135_PREPARED.png",
+      "original_SHA256": "a777ac00d9cfb24ee616d9427b47b339ebd4a146f12d6420c9c8d960aabd9a8a",
+      "isolated_SHA256": "a777ac00d9cfb24ee616d9427b47b339ebd4a146f12d6420c9c8d960aabd9a8a",
+      "byte_identical": true
+    },
+    {
+      "path": "inputs_1024x1536/C_whole_canvas_256over135_PREPARED.png",
+      "original_SHA256": "67c8aa71714285b8d9a75229c62a6c6b0f200ef30ccd4ac72a9bc58874fbb680",
+      "isolated_SHA256": "67c8aa71714285b8d9a75229c62a6c6b0f200ef30ccd4ac72a9bc58874fbb680",
+      "byte_identical": true
+    },
+    {
+      "path": "inputs_1024x1536/D_whole_canvas_256over135_PREPARED.png",
+      "original_SHA256": "fab230dea13a6a1b6d2606aedf894600e5cd7d571bb39ac84aa9e42a6b07fb60",
+      "isolated_SHA256": "fab230dea13a6a1b6d2606aedf894600e5cd7d571bb39ac84aa9e42a6b07fb60",
+      "byte_identical": true
+    },
+    {
+      "path": "layers/F090_body_head_blouse.png",
+      "original_SHA256": "2dcf44d849e30e552e8e6648673b7a3a6d32be7a07e247cdc8acc511c9cebdfc",
+      "isolated_SHA256": "2dcf44d849e30e552e8e6648673b7a3a6d32be7a07e247cdc8acc511c9cebdfc",
+      "byte_identical": true
+    },
+    {
+      "path": "layers/F090_far_complete_arm_jade_hand.png",
+      "original_SHA256": "889b1dc7b3e259e6b493fdbb0d0cba7c0175c379e302fad09e5f624f4353ec21",
+      "isolated_SHA256": "889b1dc7b3e259e6b493fdbb0d0cba7c0175c379e302fad09e5f624f4353ec21",
+      "byte_identical": true
+    },
+    {
+      "path": "layers/F090_far_shoe_ankle_LANDED.png",
+      "original_SHA256": "64637d1d886e25fdcf3c888b533c1a8164844fe429a87295cfb9194dc585503c",
+      "isolated_SHA256": "64637d1d886e25fdcf3c888b533c1a8164844fe429a87295cfb9194dc585503c",
+      "byte_identical": true
+    },
+    {
+      "path": "layers/F090_near_complete_arm.png",
+      "original_SHA256": "669c4681f9dd78cb3990917f427c5ea40510cd69f14822f9161516c09aeec67c",
+      "isolated_SHA256": "669c4681f9dd78cb3990917f427c5ea40510cd69f14822f9161516c09aeec67c",
+      "byte_identical": true
+    },
+    {
+      "path": "layers/F090_near_shoe_ankle_SUPPORT_FIXED.png",
+      "original_SHA256": "57518102bfef2d81fd98017bd445e8ae7918bdb1dd60093657f82fc576a6cc7c",
+      "isolated_SHA256": "57518102bfef2d81fd98017bd445e8ae7918bdb1dd60093657f82fc576a6cc7c",
+      "byte_identical": true
+    }
+  ],
+  "request_png_exact_matches": 4,
+  "layer_png_exact_matches": 5,
+  "source_snapshot_complete": true,
+  "new_image_calls": 0,
+  "note": "No anatomy/art/output acceptance implied. Temporary absolute request paths are environment-specific by design."
+}

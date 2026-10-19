@@ -1,0 +1,191 @@
+{
+  "status": "LIMITED_INPUT_PREPARATION_PASS_PENDING_ROOT_ASTRA_IMAGE_GATE",
+  "frame": 90,
+  "inclusive_hold": [
+    90,
+    94
+  ],
+  "image_generation_calls": 0,
+  "actual_viewed_files": [
+    {
+      "path": "qa/F090_four_native_references_gray.png",
+      "sha256": "535a9f4a83c750ef09e0120068edff13a89936ef6875ab1d01f5f1e156b9c893"
+    },
+    {
+      "path": "qa/F090_four_native_references_dark.png",
+      "sha256": "a17e5e851d37ddb72e24dbc7f0c71a26882ccac5d9352d3a08beb0bd6e3542a1"
+    },
+    {
+      "path": "inputs_1024x1536/A_whole_canvas_256over135_PREPARED.png",
+      "sha256": "e2f11cbea439f62ac918b93859ba5ea32c381f9a45e4e6a14519e8905a69a87f"
+    },
+    {
+      "path": "inputs_1024x1536/B_whole_canvas_256over135_PREPARED.png",
+      "sha256": "a777ac00d9cfb24ee616d9427b47b339ebd4a146f12d6420c9c8d960aabd9a8a"
+    },
+    {
+      "path": "inputs_1024x1536/C_whole_canvas_256over135_PREPARED.png",
+      "sha256": "67c8aa71714285b8d9a75229c62a6c6b0f200ef30ccd4ac72a9bc58874fbb680"
+    },
+    {
+      "path": "inputs_1024x1536/D_whole_canvas_256over135_PREPARED.png",
+      "sha256": "fab230dea13a6a1b6d2606aedf894600e5cd7d571bb39ac84aa9e42a6b07fb60"
+    }
+  ],
+  "visible_facts": [
+    "A contains real newly placed blouse/body, two complete unsplit arms and two genuine shoes/ankles only; old084 trousers never supplied. Head is deliberately outside this shoulder-to-feet crop.",
+    "Near anatomical RIGHT source shoe remains at image-left, exactly the same original layer position and PNG bytes. Far anatomical LEFT lands at image-right from the original079 whole foot in one rigid horizontal translation.",
+    "Both actual alpha128 soles are native1022/local772. Real ankle proxy heights remain different by3.814985native; neither was pulled to legacy758 or a shared ankleY.",
+    "C visibly supplies broad new waist/pelvis, full thighs, soft knees and calves toward both true shoe targets; nearleg is foreground and farleg rear. It is clearly labeled NOT ART and not bone measurement.",
+    "D contains only four actual057/062 interior material/ink rectangles, with no old full character or failed image.",
+    "B has a neutral whole-pants region, actual visible guards and only small sleeve windows; its shape does not inherit old084 trousers."
+  ],
+  "verification": {
+    "source084_mother_SHA256": "21acf20424d94477191dbc6fd012fe61426d509ec55dbc48037bb97b2c89f6ae",
+    "source084_six_layer_RGBA_replay_changes": 0,
+    "prepared_A_five_layer_RGBA_replay_changes": 0,
+    "near_whole_shoe_file_byte_identical": true,
+    "near_whole_shoe_SHA256": {
+      "source": "57518102bfef2d81fd98017bd445e8ae7918bdb1dd60093657f82fc576a6cc7c",
+      "target": "57518102bfef2d81fd98017bd445e8ae7918bdb1dd60093657f82fc576a6cc7c"
+    },
+    "guard_intersections": {
+      "body_except_sleeves": 0,
+      "whole_visible_arms_except_sleeves": 0,
+      "near_actual_fixed_foot": 0,
+      "far_actual_visible_landed_foot_except_future_near_occlusion": 0
+    },
+    "guard_alpha0_pixels": 0,
+    "white_pixels": 215000,
+    "continuous_white_probes": {
+      "near_hiddenH": {
+        "native_xy": [
+          1409,
+          625
+        ],
+        "white": true,
+        "component": 3
+      },
+      "near_softK": {
+        "native_xy": [
+          1345,
+          800
+        ],
+        "white": true,
+        "component": 3
+      },
+      "near_ankle_approach": {
+        "native_xy": [
+          1246,
+          933
+        ],
+        "white": true,
+        "component": 3
+      },
+      "far_hiddenH": {
+        "native_xy": [
+          1390,
+          628
+        ],
+        "white": true,
+        "component": 3
+      },
+      "far_softK": {
+        "native_xy": [
+          1431,
+          789
+        ],
+        "white": true,
+        "component": 3
+      },
+      "far_ankle_approach": {
+        "native_xy": [
+          1452,
+          929
+        ],
+        "white": true,
+        "component": 3
+      }
+    },
+    "bounds_and_crop": {
+      "A_visible_material_inside_crop": {
+        "native_bbox_halfopen": [
+          1197,
+          250,
+          1557,
+          1024
+        ],
+        "local_bbox_halfopen": [
+          117,
+          0,
+          477,
+          774
+        ],
+        "crop_margins_L_T_R_B": [
+          117,
+          0,
+          63,
+          36
+        ]
+      },
+      "A_visible_whole_arms_and_feet": {
+        "native_bbox_halfopen": [
+          1197,
+          372,
+          1557,
+          1024
+        ],
+        "local_bbox_halfopen": [
+          117,
+          122,
+          477,
+          774
+        ],
+        "crop_margins_L_T_R_B": [
+          117,
+          122,
+          63,
+          36
+        ]
+      },
+      "B_actual_white": {
+        "native_bbox_halfopen": [
+          1120,
+          361,
+          1610,
+          1010
+        ],
+        "local_bbox_halfopen": [
+          40,
+          111,
+          530,
+          760
+        ],
+        "crop_margins_L_T_R_B": [
+          40,
+          111,
+          10,
+          50
+        ]
+      },
+      "nonbody_active_material_outside_crop_pixels": 0,
+      "white_outside_crop_pixels": 0,
+      "body_top_boundary_is_intentional_shoulder_crop_no_head": true,
+      "body_outside_crop_is_stable_head_upper_torso_not_editable": true,
+      "intentional_top_cut_is_not_a_reposition_or_fit": true
+    },
+    "isolated_four_request_pngs_and_five_real_layers_byte_exact": true,
+    "isolated_evidence": "qa/isolated_replay_checks.json"
+  },
+  "coordinate_and_material_limits": [
+    "All four request canvases are whole540x810 resampled uniformly256/135 to1024x1536; inverse135/256 plus native1080,250. No limb fit/warp or separate shoe scale.",
+    "Body beat/actual roots and feet are sourced from approved084 and079 event deltas; hidden hips and newly constructed knees are soft technical directions, not anatomical measurement.",
+    "Small sleeve connection material and all coherent new waist/pelvis/trousers must be genuinely redrawn in the later authorized native call. Complete source arms/hands/jade and actual feet remain rigid source layers.",
+    "A true shoes/body layers are references at this input stage. A future wrong leg pose may not be disguised by restoring shoes and painting a narrow bridge.",
+    "The upper torso is intentionally clipped at the fixed crop top; all visible complete arms, real feet and editable white pixels remain within crop."
+  ],
+  "remaining_blockers": [],
+  "remaining_approval": "Pending root/Astra review of this input gate and draft prompt; no090 output or final movement/anatomy acceptance claimed.",
+  "draft_prompt_word_count": 319,
+  "other_states_untouched": true
+}

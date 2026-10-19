@@ -1,0 +1,52 @@
+{
+  "status": "F090_FOUR_ACTUAL_INPUTS_REVIEWED_PENDING_ASTRA_NO_CALL",
+  "reviewer": "cloud_root",
+  "actual_viewed": [
+    "inputs_1024x1536/A_whole_canvas_256over135_PREPARED.png",
+    "inputs_1024x1536/B_whole_canvas_256over135_PREPARED.png",
+    "inputs_1024x1536/C_whole_canvas_256over135_PREPARED.png",
+    "inputs_1024x1536/D_whole_canvas_256over135_PREPARED.png",
+    "qa/F090_four_native_references_gray.png",
+    "qa/F090_four_native_references_dark.png"
+  ],
+  "independent_verification": {
+    "byte_identical_source_snapshots": 13,
+    "derived_event_excerpt": "One additional JSON is an explicit84/90-only excerpt, not a byte-identical full source file. Both selected state objects independently match the original table exactly.",
+    "original_full_event_table_sha256": "d54824d3b4562ddc2a8c9de7db1cf0378e7ea0f842d33931be139a892e639f9b",
+    "body_both_complete_arms_and_far_whole_foot_affines_recomputed_exactly": true,
+    "all_rigid_matrices_orthonormal_scale1": true,
+    "near_whole_shoe_original_file_byte_identical_in_place": true,
+    "far_whole_shoe_single_source_transform": "Original real079 far shoe translated+150worldX/0Y once; equivalent084-to090 delta+66/+23world. No second resampling from the raised084 shoe.",
+    "actual_two_sole_baselines_native": [1022, 1022],
+    "actual_ankle_heights_not_forced_equal": [957.8118142506097, 953.9968292356247],
+    "A_exact_composite_of_five_new_placed_real_layers_only": true,
+    "old084_trousers_used_in_A_B_or_C_pose": false,
+    "B_exact_neutral_rectangle_union_sleeve_windows_minus_actual_material": true,
+    "B_white_native_pixels": 215000,
+    "all_true_guard_intersections_and_alpha0_pixels": 0,
+    "both_hip_knee_and_ankle_approaches_share_one_white_component": true,
+    "native_crop_xyxy": [1080, 250, 1620, 1060],
+    "native_size": [540, 810],
+    "tool_sizes": [1024, 1536],
+    "all_four_whole_canvas_resizes_exact": true,
+    "forward_and_only_inverse": "Forward256/135; inverse135/256 plus(1080,250), entire canvas only. No adaptive body fit, leg scale or shoe move.",
+    "complete_arm_and_foot_material_outside_crop": 0,
+    "body_top_cut": "Intentional shoulder/blouse crop with head outside; not a false claim that the whole original head/body lies inside the cropped reference.",
+    "A_actual_arm_foot_bbox_halfopen": [1197, 372, 1557, 1024],
+    "A_arm_foot_margins_L_T_R_B": [117, 122, 63, 36],
+    "B_actual_bbox_halfopen": [1120, 361, 1610, 1010],
+    "B_margins_L_T_R_B": [40, 111, 10, 50],
+    "all_four_D_interior_sample_rectangles_RGBA_exact": true,
+    "four_references_only_and_draft_prompt_matches_arguments": true,
+    "F090_image_calls": 0
+  },
+  "finite_visual_findings": [
+    "A contains only real blouse/body, two complete original arms and two already placed original shoes. No old084 high-flexion trouser outline is supplied to the model.",
+    "C shows new broad waist/pelvis and both full thigh, knee-back and calf technical volumes. Near right leg trails to the fixed image-left shoe; far left leg accepts load at the landed image-right shoe, with both real soles aligned.",
+    "The near arm is proposed forward and far arm backward as complete source chains. Correct source depth is preserved, including naturally hidden far material; these rotations remain input proposals for Astra review.",
+    "D is material/ink/color only, without an old human/leg silhouette. The schematic volumes and soft joints are explicitly not finished artwork or measured bones."
+  ],
+  "remaining_Astra_gate": "Review the four actual input PNGs, proposed whole-arm swing, new landing volume directions and unfrozen short prompt before authorizing any090 call. Later actual native trousers must pass complete waist/leg volume and both original ankle/shoe registration before source-protected compositing; no restored shoe plus thin bridge may hide a wrong pose.",
+  "following_states_unopened": true,
+  "production_or_exposure_acceptance": false
+}
