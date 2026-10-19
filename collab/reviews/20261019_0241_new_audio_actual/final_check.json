@@ -1,0 +1,1118 @@
+{
+  "commit": "9047810888634d01804744aaa1da34740896da1e",
+  "scope": "Actual file, sample and H264 stream audit. No new subjective listening. No repository modifications. Fixed source audio is independently run unchanged in isolated rebuild directory.",
+  "shots": {
+    "S24": {
+      "file": "collab/reviews/20261018_scenes03_12_drawn/S24_drawn_v1.mp4",
+      "mp4_sha256": "7f3ffe1ed75a2f808a89f47f6fc9418787c3ece0180ab095e4e1a5579484f235",
+      "pcm_sha256": "cb72e37a1aceb18c0554f734bff675e81f5fe90d0654c5ef21d3df08bf0872f4",
+      "manifest_matches": {
+        "S24_drawn_v1.mp4": true,
+        "S24_pcm.wav": true
+      },
+      "reference_video": "/workspace/scratch/f060b5601755/astra_s24_bite_fix_independent_20261019_0021/S24_scene60_bite_fixed_1920x1080_24fps.mp4",
+      "reference_video_sha256": "4c11a2c16fcf25e4b49fa69a5f078c2a75c22c65dff6b8a8767a4545c70ca55c",
+      "h264_sha256": "3f69aa7acfeef3e7301abffd602e1d642d3577b7861339f4d3f20faadb1ada25",
+      "reference_h264_sha256": "3f69aa7acfeef3e7301abffd602e1d642d3577b7861339f4d3f20faadb1ada25",
+      "h264_bytes_equal": true,
+      "video_dimensions": [
+        1920,
+        1080
+      ],
+      "video_frames": 60,
+      "video_fps": "24/1",
+      "video_start": "0.000000",
+      "video_duration": "2.500000",
+      "audio_codec": "aac",
+      "audio_start": "0.000000",
+      "audio_duration": "2.500000",
+      "pcm_sample_rate": 48000,
+      "pcm_channels": 2,
+      "pcm_samples": 120000,
+      "aac_decoded_samples": 120832,
+      "aac_padding_samples": 832,
+      "aac_first_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "dts_time": "-0.021333",
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "size": "484",
+        "pos": "128660",
+        "flags": "KD_",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "aac_last_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": 119808,
+        "pts_time": "2.496000",
+        "dts": 119808,
+        "dts_time": "2.496000",
+        "duration": 192,
+        "duration_time": "0.004000",
+        "size": "7",
+        "pos": "949022",
+        "flags": "K__"
+      },
+      "aac_presentation_end_sample": 120000,
+      "aac_best_lag_samples": 0,
+      "aac_pcm_correlation": 0.999394414632211,
+      "aac_pcm_rmse": 0.0017401498112034662,
+      "aac_true_peak_dbtp": -7.25,
+      "aac_integrated_lufs": -21.15,
+      "master_slice_start_sample": 6268000,
+      "master_slice_end_exclusive": 6388000,
+      "edl_entry": {
+        "id": "S24",
+        "scene": 8,
+        "line": "engine",
+        "dur": 2.5,
+        "mod": "js/anim/s24_drawn.js",
+        "text": "后台近景：小满回过头，得意地看奶奶"
+      },
+      "pcm_vs_independent_new_master": {
+        "equal_samples": 239986,
+        "total_samples": 240000,
+        "exact_fraction": 0.9999416666666666,
+        "max_abs_lsb": 2.0,
+        "rmse_lsb": 0.012583057392117916,
+        "correlation": 0.9999999999701328
+      }
+    },
+    "S22": {
+      "file": "collab/reviews/20261018_scenes03_12_drawn/S22_drawn_v1.mp4",
+      "mp4_sha256": "1fa72ebe0264f5683317d99b6ff822f12f5badf563a934a51433dad334872bf8",
+      "pcm_sha256": "547dcf88a7ad1629084a8ae740e87ce144d5443ce89a403eb65ed0da5d2884b4",
+      "manifest_matches": {
+        "S22_drawn_v1.mp4": true,
+        "S22_pcm.wav": true
+      },
+      "reference_video": "/workspace/scratch/f060b5601755/astra_s22_audio_steps_93705f2_20261018_2338/S22_drawn_v1.mp4",
+      "reference_video_sha256": "335c02902c8947ac89bbb48fd9417a227eac0a79c475c8842601d98c99db39a4",
+      "h264_sha256": "733521b96a625a35803a2e3149248c0c259992468359d547ea5c144022b450b7",
+      "reference_h264_sha256": "733521b96a625a35803a2e3149248c0c259992468359d547ea5c144022b450b7",
+      "h264_bytes_equal": true,
+      "video_dimensions": [
+        1920,
+        1080
+      ],
+      "video_frames": 120,
+      "video_fps": "24/1",
+      "video_start": "0.000000",
+      "video_duration": "5.000000",
+      "audio_codec": "aac",
+      "audio_start": "0.000000",
+      "audio_duration": "5.000000",
+      "pcm_sample_rate": 48000,
+      "pcm_channels": 2,
+      "pcm_samples": 240000,
+      "aac_decoded_samples": 240640,
+      "aac_padding_samples": 640,
+      "aac_first_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "dts_time": "-0.021333",
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "size": "520",
+        "pos": "170230",
+        "flags": "KD_",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "aac_last_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": 239616,
+        "pts_time": "4.992000",
+        "dts": 239616,
+        "dts_time": "4.992000",
+        "duration": 384,
+        "duration_time": "0.008000",
+        "size": "7",
+        "pos": "4097621",
+        "flags": "K__"
+      },
+      "aac_presentation_end_sample": 240000,
+      "aac_best_lag_samples": 0,
+      "aac_pcm_correlation": 0.9998646713598227,
+      "aac_pcm_rmse": 0.0017020706162077385,
+      "aac_true_peak_dbtp": -6.83,
+      "aac_integrated_lufs": -15.8,
+      "master_slice_start_sample": 5788000,
+      "master_slice_end_exclusive": 6028000,
+      "edl_entry": {
+        "id": "S22",
+        "scene": 8,
+        "line": "code",
+        "dur": 5,
+        "mod": "js/anim/s22_drawn.js",
+        "text": "特写（后台）：奶奶从后面握住小满握签子的手——慢一点；乌龟一步步爬起来"
+      },
+      "prior_pcm_path": "/workspace/scratch/f060b5601755/astra_s22_audio_steps_93705f2_20261018_2338/S22_pcm.wav",
+      "prior_pcm_sha256": "374d86dbf6649dfed683c34b7c235d341b71ad510246c76802126b26cd47cce9",
+      "new_vs_prior_pcm": {
+        "equal_samples": 134264,
+        "total_samples": 480000,
+        "exact_fraction": 0.27971666666666667,
+        "max_abs_lsb": 5672.0,
+        "rmse_lsb": 456.19886046273723,
+        "correlation": 0.9908038966499252
+      },
+      "pcm_vs_independent_new_master": {
+        "equal_samples": 479992,
+        "total_samples": 480000,
+        "exact_fraction": 0.9999833333333333,
+        "max_abs_lsb": 2.0,
+        "rmse_lsb": 0.007359800721939872,
+        "correlation": 0.9999999999976059
+      },
+      "pipa_push_events": [
+        {
+          "frame": 36,
+          "shot_seconds": 1.5,
+          "shot_sample": 72000,
+          "master_sample": 5860000
+        },
+        {
+          "frame": 60,
+          "shot_seconds": 2.5,
+          "shot_sample": 120000,
+          "master_sample": 5908000
+        },
+        {
+          "frame": 84,
+          "shot_seconds": 3.5,
+          "shot_sample": 168000,
+          "master_sample": 5956000
+        },
+        {
+          "frame": 108,
+          "shot_seconds": 4.5,
+          "shot_sample": 216000,
+          "master_sample": 6004000
+        }
+      ],
+      "event_window_new_master_comparisons": [
+        {
+          "frame": 36,
+          "window_start_sample": 67200,
+          "window_end_sample": 86400,
+          "equal_samples": 38399,
+          "total_samples": 38400,
+          "exact_fraction": 0.9999739583333334,
+          "max_abs_lsb": 2.0,
+          "rmse_lsb": 0.010206207261596576,
+          "correlation": 0.9999999999960526
+        },
+        {
+          "frame": 60,
+          "window_start_sample": 115200,
+          "window_end_sample": 134400,
+          "equal_samples": 38400,
+          "total_samples": 38400,
+          "exact_fraction": 1.0,
+          "max_abs_lsb": 0.0,
+          "rmse_lsb": 0.0,
+          "correlation": 1.0
+        },
+        {
+          "frame": 84,
+          "window_start_sample": 163200,
+          "window_end_sample": 182400,
+          "equal_samples": 38400,
+          "total_samples": 38400,
+          "exact_fraction": 1.0,
+          "max_abs_lsb": 0.0,
+          "rmse_lsb": 0.0,
+          "correlation": 1.0
+        },
+        {
+          "frame": 108,
+          "window_start_sample": 211200,
+          "window_end_sample": 230400,
+          "equal_samples": 38397,
+          "total_samples": 38400,
+          "exact_fraction": 0.999921875,
+          "max_abs_lsb": 2.0,
+          "rmse_lsb": 0.015309310892394862,
+          "correlation": 0.9999999999369112
+        }
+      ]
+    },
+    "S01": {
+      "file": "collab/reviews/20261018_opening_drawn_wip/S01_drawn_v2.mp4",
+      "mp4_sha256": "c0acf7160c4093cbd77b72a7d45107e86bd108a21c9f321be863764eb86682c8",
+      "pcm_sha256": "bac967cc49eeeaed76550cfeff1b534bc7203d17e2e1acb65580c3827e5081eb",
+      "manifest_matches": {
+        "S01_drawn_v2.mp4": true,
+        "S01_pcm.wav": true
+      },
+      "reference_video": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S01_drawn_v2.mp4",
+      "reference_video_sha256": "c0acf7160c4093cbd77b72a7d45107e86bd108a21c9f321be863764eb86682c8",
+      "h264_sha256": "671f592f9f6947a484c1d09a5fdb1bbd261cc7b6aa6e3665db507a54a4b3499f",
+      "reference_h264_sha256": "671f592f9f6947a484c1d09a5fdb1bbd261cc7b6aa6e3665db507a54a4b3499f",
+      "h264_bytes_equal": true,
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "video_frames": 84,
+      "video_fps": "24/1",
+      "video_start": "0.000000",
+      "video_duration": "3.500000",
+      "audio_codec": "aac",
+      "audio_start": "0.000000",
+      "audio_duration": "3.500000",
+      "pcm_sample_rate": 48000,
+      "pcm_channels": 2,
+      "pcm_samples": 168000,
+      "aac_decoded_samples": 168960,
+      "aac_padding_samples": 960,
+      "aac_first_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "dts_time": "-0.021333",
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "size": "592",
+        "pos": "161438",
+        "flags": "KD_",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "aac_last_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": 167936,
+        "pts_time": "3.498667",
+        "dts": 167936,
+        "dts_time": "3.498667",
+        "duration": 64,
+        "duration_time": "0.001333",
+        "size": "7",
+        "pos": "1042506",
+        "flags": "K__"
+      },
+      "aac_presentation_end_sample": 168000,
+      "aac_best_lag_samples": 0,
+      "aac_pcm_correlation": 0.9992606347878711,
+      "aac_pcm_rmse": 0.003822822238365974,
+      "aac_true_peak_dbtp": -4.71,
+      "aac_integrated_lufs": -16.17,
+      "master_slice_start_sample": 0,
+      "master_slice_end_exclusive": 168000,
+      "edl_entry": {
+        "id": "S01",
+        "scene": 1,
+        "line": "paint",
+        "dur": 3.5,
+        "mod": "js/anim/s01_drawn.js",
+        "text": "全景：吊扇转、蚊香烟被吹斜、电视亮着；小满趴在竹席上玩手机，奶奶坐矮凳剥毛豆"
+      },
+      "prior_pcm_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S01_pcm.wav",
+      "prior_pcm_sha256": "bac967cc49eeeaed76550cfeff1b534bc7203d17e2e1acb65580c3827e5081eb",
+      "new_vs_prior_pcm": {
+        "equal_samples": 336000,
+        "total_samples": 336000,
+        "exact_fraction": 1.0,
+        "max_abs_lsb": 0.0,
+        "rmse_lsb": 0.0,
+        "correlation": 1.0
+      },
+      "pcm_vs_independent_new_master": {
+        "equal_samples": 335967,
+        "total_samples": 336000,
+        "exact_fraction": 0.9999017857142857,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.016091257608669727,
+        "correlation": 0.9999999999877552
+      }
+    },
+    "S04": {
+      "file": "collab/reviews/20261018_opening_drawn_wip/S04_drawn_v2.mp4",
+      "mp4_sha256": "451ae4a80e6e584f8bdc0e42ac2d74bdb0bf8a3b907e3a9d24e08bdc6516811b",
+      "pcm_sha256": "49f9af5242afbf278afdad366275a6d47fc258673d8608f4f826f06c194eb9c8",
+      "manifest_matches": {
+        "S04_drawn_v2.mp4": true,
+        "S04_pcm.wav": true
+      },
+      "reference_video": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S04_drawn_v2.mp4",
+      "reference_video_sha256": "451ae4a80e6e584f8bdc0e42ac2d74bdb0bf8a3b907e3a9d24e08bdc6516811b",
+      "h264_sha256": "5b30f5d936b930471d576d0868fff444d53ff9c5bf06a5fbc44403eb44b29351",
+      "reference_h264_sha256": "5b30f5d936b930471d576d0868fff444d53ff9c5bf06a5fbc44403eb44b29351",
+      "h264_bytes_equal": true,
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "video_frames": 72,
+      "video_fps": "24/1",
+      "video_start": "0.000000",
+      "video_duration": "3.000000",
+      "audio_codec": "aac",
+      "audio_start": "0.000000",
+      "audio_duration": "3.000000",
+      "pcm_sample_rate": 48000,
+      "pcm_channels": 2,
+      "pcm_samples": 144000,
+      "aac_decoded_samples": 144384,
+      "aac_padding_samples": 384,
+      "aac_first_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "dts_time": "-0.021333",
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "size": "634",
+        "pos": "93232",
+        "flags": "KD_",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "aac_last_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": 143360,
+        "pts_time": "2.986667",
+        "dts": 143360,
+        "dts_time": "2.986667",
+        "duration": 640,
+        "duration_time": "0.013333",
+        "size": "609",
+        "pos": "722455",
+        "flags": "K__"
+      },
+      "aac_presentation_end_sample": 144000,
+      "aac_best_lag_samples": 0,
+      "aac_pcm_correlation": 0.9994161823470158,
+      "aac_pcm_rmse": 0.003232480135985734,
+      "aac_true_peak_dbtp": -4.03,
+      "aac_integrated_lufs": -15.98,
+      "master_slice_start_sample": 768000,
+      "master_slice_end_exclusive": 912000,
+      "edl_entry": {
+        "id": "S04",
+        "scene": 2,
+        "line": "paint",
+        "dur": 3,
+        "mod": "js/anim/s04_drawn.js",
+        "text": "全景：\"啪\"——灯灭、电视缩成一个亮点、吊扇慢下来；奶奶的手停住，抬头看灯；小满还在玩"
+      },
+      "prior_pcm_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S04_pcm.wav",
+      "prior_pcm_sha256": "49f9af5242afbf278afdad366275a6d47fc258673d8608f4f826f06c194eb9c8",
+      "new_vs_prior_pcm": {
+        "equal_samples": 288000,
+        "total_samples": 288000,
+        "exact_fraction": 1.0,
+        "max_abs_lsb": 0.0,
+        "rmse_lsb": 0.0,
+        "correlation": 1.0
+      },
+      "pcm_vs_independent_new_master": {
+        "equal_samples": 287978,
+        "total_samples": 288000,
+        "exact_fraction": 0.9999236111111112,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.012909944487358056,
+        "correlation": 0.9999999999912282
+      }
+    },
+    "S05a": {
+      "file": "collab/reviews/20261018_opening_drawn_wip/S05a_drawn_v4.mp4",
+      "mp4_sha256": "3124fa429bc4a4f97b40509ff841972477628b827946215a7afeb3b529c2c6d2",
+      "pcm_sha256": "5c4ef1cb8afc91e995a970b66fcd42cedc971af85c5fac24a07fd52dfa677a2b",
+      "manifest_matches": {
+        "S05a_drawn_v4.mp4": true,
+        "S05a_pcm.wav": true
+      },
+      "reference_video": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S05a_drawn_v4.mp4",
+      "reference_video_sha256": "3124fa429bc4a4f97b40509ff841972477628b827946215a7afeb3b529c2c6d2",
+      "h264_sha256": "f3613d1dcfeef5859b4c7ad50527a62969f697b29458316a53656f6723147d86",
+      "reference_h264_sha256": "f3613d1dcfeef5859b4c7ad50527a62969f697b29458316a53656f6723147d86",
+      "h264_bytes_equal": true,
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "video_frames": 60,
+      "video_fps": "24/1",
+      "video_start": "0.000000",
+      "video_duration": "2.500000",
+      "audio_codec": "aac",
+      "audio_start": "0.000000",
+      "audio_duration": "2.500000",
+      "pcm_sample_rate": 48000,
+      "pcm_channels": 2,
+      "pcm_samples": 120000,
+      "aac_decoded_samples": 120832,
+      "aac_padding_samples": 832,
+      "aac_first_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "dts_time": "-0.021333",
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "size": "480",
+        "pos": "88458",
+        "flags": "KD_",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "aac_last_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": 119808,
+        "pts_time": "2.496000",
+        "dts": 119808,
+        "dts_time": "2.496000",
+        "duration": 192,
+        "duration_time": "0.004000",
+        "size": "7",
+        "pos": "591435",
+        "flags": "K__"
+      },
+      "aac_presentation_end_sample": 120000,
+      "aac_best_lag_samples": 0,
+      "aac_pcm_correlation": 0.9989278668129371,
+      "aac_pcm_rmse": 0.002965273674654673,
+      "aac_true_peak_dbtp": -5.39,
+      "aac_integrated_lufs": -18.91,
+      "master_slice_start_sample": 1152000,
+      "master_slice_end_exclusive": 1272000,
+      "edl_entry": {
+        "id": "S05a",
+        "scene": 2,
+        "line": "paint",
+        "dur": 2.5,
+        "mod": "js/anim/s05a_drawn.js",
+        "text": "近景：小满的脸也黑了——愣住，\"不是吧\"，猛按电源键"
+      },
+      "prior_pcm_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S05a_pcm.wav",
+      "prior_pcm_sha256": "5c4ef1cb8afc91e995a970b66fcd42cedc971af85c5fac24a07fd52dfa677a2b",
+      "new_vs_prior_pcm": {
+        "equal_samples": 240000,
+        "total_samples": 240000,
+        "exact_fraction": 1.0,
+        "max_abs_lsb": 0.0,
+        "rmse_lsb": 0.0,
+        "correlation": 1.0
+      },
+      "pcm_vs_independent_new_master": {
+        "equal_samples": 239979,
+        "total_samples": 240000,
+        "exact_fraction": 0.9999125,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.014433756729740645,
+        "correlation": 0.9999999999762283
+      }
+    },
+    "S02a": {
+      "file": "collab/reviews/20261018_opening_drawn_wip/S02a_drawn_v6.mp4",
+      "mp4_sha256": "eda2ae7c612d68051626dedcbdfe89da0adb04f6c63113e695b7b663ab0406e7",
+      "pcm_sha256": "dcb8b8f0990fd9fade49424ca1a0b7e622f090a99f8ca34f928a17d3e8707959",
+      "manifest_matches": {
+        "S02a_drawn_v6.mp4": true,
+        "S02a_pcm.wav": true
+      },
+      "reference_video": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S02a_drawn_v6.mp4",
+      "reference_video_sha256": "eda2ae7c612d68051626dedcbdfe89da0adb04f6c63113e695b7b663ab0406e7",
+      "h264_sha256": "7c2c2e73ee389e4f6b4579dbb660b621e0ed97af3a794cf3c9aa2f78e25df06e",
+      "reference_h264_sha256": "7c2c2e73ee389e4f6b4579dbb660b621e0ed97af3a794cf3c9aa2f78e25df06e",
+      "h264_bytes_equal": true,
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "video_frames": 60,
+      "video_fps": "24/1",
+      "video_start": "0.000000",
+      "video_duration": "2.500000",
+      "audio_codec": "aac",
+      "audio_start": "0.000000",
+      "audio_duration": "2.500000",
+      "pcm_sample_rate": 48000,
+      "pcm_channels": 2,
+      "pcm_samples": 120000,
+      "aac_decoded_samples": 120832,
+      "aac_padding_samples": 832,
+      "aac_first_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "dts_time": "-0.021333",
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "size": "497",
+        "pos": "50611",
+        "flags": "KD_",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "aac_last_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": 119808,
+        "pts_time": "2.496000",
+        "dts": 119808,
+        "dts_time": "2.496000",
+        "duration": 192,
+        "duration_time": "0.004000",
+        "size": "7",
+        "pos": "273537",
+        "flags": "K__"
+      },
+      "aac_presentation_end_sample": 120000,
+      "aac_best_lag_samples": 0,
+      "aac_pcm_correlation": 0.9993809340562272,
+      "aac_pcm_rmse": 0.0032512782064391056,
+      "aac_true_peak_dbtp": -4.56,
+      "aac_integrated_lufs": -16.63,
+      "master_slice_start_sample": 288000,
+      "master_slice_end_exclusive": 408000,
+      "edl_entry": {
+        "id": "S02a",
+        "scene": 1,
+        "line": "paint",
+        "dur": 2.5,
+        "mod": "js/anim/s02a_drawn.js",
+        "text": "近景：小满的脸被屏幕照蓝，差点输——眉毛一挑，躲过去了——嘴角一撇"
+      },
+      "prior_pcm_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S02a_pcm.wav",
+      "prior_pcm_sha256": "dcb8b8f0990fd9fade49424ca1a0b7e622f090a99f8ca34f928a17d3e8707959",
+      "new_vs_prior_pcm": {
+        "equal_samples": 240000,
+        "total_samples": 240000,
+        "exact_fraction": 1.0,
+        "max_abs_lsb": 0.0,
+        "rmse_lsb": 0.0,
+        "correlation": 1.0
+      },
+      "pcm_vs_independent_new_master": {
+        "equal_samples": 239988,
+        "total_samples": 240000,
+        "exact_fraction": 0.99995,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.01241638702145945,
+        "correlation": 0.9999999999915081
+      }
+    },
+    "S03": {
+      "file": "collab/reviews/20261018_opening_drawn_wip/S03_drawn_v3.mp4",
+      "mp4_sha256": "61f36b2ce0d5275b9aee0a357392909c1b08aed9035bfa70e887ba6acfa02b41",
+      "pcm_sha256": "d7343ce466aafc93f8597ea412c3db7d40575c053f0f36b492fc6e859d63518d",
+      "manifest_matches": {
+        "S03_drawn_v3.mp4": true,
+        "S03_pcm.wav": true
+      },
+      "reference_video": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S03_drawn_v3.mp4",
+      "reference_video_sha256": "61f36b2ce0d5275b9aee0a357392909c1b08aed9035bfa70e887ba6acfa02b41",
+      "h264_sha256": "176a228872e1338c6f00f197d658b9be30c810cfa40a17d6e2039c5215cc4516",
+      "reference_h264_sha256": "176a228872e1338c6f00f197d658b9be30c810cfa40a17d6e2039c5215cc4516",
+      "h264_bytes_equal": true,
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "video_frames": 96,
+      "video_fps": "24/1",
+      "video_start": "0.000000",
+      "video_duration": "4.000000",
+      "audio_codec": "aac",
+      "audio_start": "0.000000",
+      "audio_duration": "4.000000",
+      "pcm_sample_rate": 48000,
+      "pcm_channels": 2,
+      "pcm_samples": 192000,
+      "aac_decoded_samples": 192512,
+      "aac_padding_samples": 512,
+      "aac_first_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "dts_time": "-0.021333",
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "size": "495",
+        "pos": "84658",
+        "flags": "KD_",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "aac_last_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": 191488,
+        "pts_time": "3.989333",
+        "dts": 191488,
+        "dts_time": "3.989333",
+        "duration": 512,
+        "duration_time": "0.010667",
+        "size": "673",
+        "pos": "624936",
+        "flags": "K__"
+      },
+      "aac_presentation_end_sample": 192000,
+      "aac_best_lag_samples": 0,
+      "aac_pcm_correlation": 0.9991561682512947,
+      "aac_pcm_rmse": 0.003646704140757032,
+      "aac_true_peak_dbtp": -7.35,
+      "aac_integrated_lufs": -17.35,
+      "master_slice_start_sample": 408000,
+      "master_slice_end_exclusive": 600000,
+      "edl_entry": {
+        "id": "S03",
+        "scene": 1,
+        "line": "paint",
+        "dur": 4,
+        "mod": "js/anim/s03_drawn.js",
+        "text": "中近景：奶奶抬眼看小满，笑了笑，拿起一块西瓜往她那边推过去，等着"
+      },
+      "prior_pcm_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S03_pcm.wav",
+      "prior_pcm_sha256": "d7343ce466aafc93f8597ea412c3db7d40575c053f0f36b492fc6e859d63518d",
+      "new_vs_prior_pcm": {
+        "equal_samples": 384000,
+        "total_samples": 384000,
+        "exact_fraction": 1.0,
+        "max_abs_lsb": 0.0,
+        "rmse_lsb": 0.0,
+        "correlation": 1.0
+      },
+      "pcm_vs_independent_new_master": {
+        "equal_samples": 383977,
+        "total_samples": 384000,
+        "exact_fraction": 0.9999401041666667,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.015562374497485916,
+        "correlation": 0.9999999999856276
+      }
+    },
+    "S03a": {
+      "file": "collab/reviews/20261018_opening_drawn_wip/S03a_drawn_v4.mp4",
+      "mp4_sha256": "c98b1136ad31d31f44ccb411b306542a472879100f6847f20dea2ee1d7c86f42",
+      "pcm_sha256": "45cdffcfc3d2328d716c39ca03e866d578a7d1261e4d61446cf1d1f2c61131dd",
+      "manifest_matches": {
+        "S03a_drawn_v4.mp4": true,
+        "S03a_pcm.wav": true
+      },
+      "reference_video": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S03a_drawn_v4.mp4",
+      "reference_video_sha256": "c98b1136ad31d31f44ccb411b306542a472879100f6847f20dea2ee1d7c86f42",
+      "h264_sha256": "eab6e85eda4cf5a3cbd8d18c3e6b63f707d5daf61caf3db827cb30d74d087be2",
+      "reference_h264_sha256": "eab6e85eda4cf5a3cbd8d18c3e6b63f707d5daf61caf3db827cb30d74d087be2",
+      "h264_bytes_equal": true,
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "video_frames": 36,
+      "video_fps": "24/1",
+      "video_start": "0.000000",
+      "video_duration": "1.500000",
+      "audio_codec": "aac",
+      "audio_start": "0.000000",
+      "audio_duration": "1.500000",
+      "pcm_sample_rate": 48000,
+      "pcm_channels": 2,
+      "pcm_samples": 72000,
+      "aac_decoded_samples": 72704,
+      "aac_padding_samples": 704,
+      "aac_first_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "dts_time": "-0.021333",
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "size": "588",
+        "pos": "50779",
+        "flags": "KD_",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "aac_last_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": 71680,
+        "pts_time": "1.493333",
+        "dts": 71680,
+        "dts_time": "1.493333",
+        "duration": 320,
+        "duration_time": "0.006667",
+        "size": "7",
+        "pos": "167813",
+        "flags": "K__"
+      },
+      "aac_presentation_end_sample": 72000,
+      "aac_best_lag_samples": 0,
+      "aac_pcm_correlation": 0.9991289493232474,
+      "aac_pcm_rmse": 0.0042052312258638634,
+      "aac_true_peak_dbtp": -4.94,
+      "aac_integrated_lufs": -16.33,
+      "master_slice_start_sample": 600000,
+      "master_slice_end_exclusive": 672000,
+      "edl_entry": {
+        "id": "S03a",
+        "scene": 1,
+        "line": "paint",
+        "dur": 1.5,
+        "mod": "js/anim/s03a_drawn.js",
+        "text": "近景：西瓜推到跟前，小满头也不抬，摇了一下头"
+      },
+      "prior_pcm_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_opening_drawn_wip/S03a_pcm.wav",
+      "prior_pcm_sha256": "45cdffcfc3d2328d716c39ca03e866d578a7d1261e4d61446cf1d1f2c61131dd",
+      "new_vs_prior_pcm": {
+        "equal_samples": 144000,
+        "total_samples": 144000,
+        "exact_fraction": 1.0,
+        "max_abs_lsb": 0.0,
+        "rmse_lsb": 0.0,
+        "correlation": 0.9999999999999999
+      },
+      "pcm_vs_independent_new_master": {
+        "equal_samples": 143995,
+        "total_samples": 144000,
+        "exact_fraction": 0.9999652777777778,
+        "max_abs_lsb": 2.0,
+        "rmse_lsb": 0.007453559924999299,
+        "correlation": 0.9999999999974334
+      }
+    },
+    "S10": {
+      "file": "collab/reviews/20261018_scenes03_12_drawn/S10_drawn_v2.mp4",
+      "mp4_sha256": "32df59b1939dfad7eedbb03a5c15b0c92a5437af696e3905fa31d11e374d8beb",
+      "pcm_sha256": "8e7ed552c7d6fe9a8bd76bc0269f0acaf9e208b56ea37a1fffe0104952aeaf16",
+      "manifest_matches": {
+        "S10_drawn_v2.mp4": true,
+        "S10_pcm.wav": true
+      },
+      "reference_video": "/workspace/scratch/f060b5601755/astra_s10_v2_audio_increment_40aca5f_20261018_1809/S10_drawn_v2.mp4",
+      "reference_video_sha256": "32df59b1939dfad7eedbb03a5c15b0c92a5437af696e3905fa31d11e374d8beb",
+      "h264_sha256": "a842afe0cc30515ed88df65d9d29b9a184e82c19856b3bab4dd9a33939950733",
+      "reference_h264_sha256": "a842afe0cc30515ed88df65d9d29b9a184e82c19856b3bab4dd9a33939950733",
+      "h264_bytes_equal": true,
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "video_frames": 120,
+      "video_fps": "24/1",
+      "video_start": "0.000000",
+      "video_duration": "5.000000",
+      "audio_codec": "aac",
+      "audio_start": "0.000000",
+      "audio_duration": "5.000000",
+      "pcm_sample_rate": 48000,
+      "pcm_channels": 2,
+      "pcm_samples": 240000,
+      "aac_decoded_samples": 240640,
+      "aac_padding_samples": 640,
+      "aac_first_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "dts_time": "-0.021333",
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "size": "479",
+        "pos": "55343",
+        "flags": "KD_",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "aac_last_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": 239616,
+        "pts_time": "4.992000",
+        "dts": 239616,
+        "dts_time": "4.992000",
+        "duration": 384,
+        "duration_time": "0.008000",
+        "size": "7",
+        "pos": "588534",
+        "flags": "K__"
+      },
+      "aac_presentation_end_sample": 240000,
+      "aac_best_lag_samples": 0,
+      "aac_pcm_correlation": 0.9987963423566438,
+      "aac_pcm_rmse": 0.0037439895274573158,
+      "aac_true_peak_dbtp": -4.51,
+      "aac_integrated_lufs": -17.32,
+      "master_slice_start_sample": 2140000,
+      "master_slice_end_exclusive": 2380000,
+      "edl_entry": {
+        "id": "S10",
+        "scene": 3,
+        "line": "paint",
+        "dur": 5,
+        "mod": "js/anim/s10_drawn.js",
+        "text": "手电光束扫过屋子，照到奶奶，奶奶眯起眼"
+      },
+      "prior_pcm_path": "/workspace/scratch/f060b5601755/astra_s10_v2_audio_increment_40aca5f_20261018_1809/S10_pcm.wav",
+      "prior_pcm_sha256": "8e7ed552c7d6fe9a8bd76bc0269f0acaf9e208b56ea37a1fffe0104952aeaf16",
+      "new_vs_prior_pcm": {
+        "equal_samples": 480000,
+        "total_samples": 480000,
+        "exact_fraction": 1.0,
+        "max_abs_lsb": 0.0,
+        "rmse_lsb": 0.0,
+        "correlation": 1.0
+      },
+      "pcm_vs_independent_new_master": {
+        "equal_samples": 479991,
+        "total_samples": 480000,
+        "exact_fraction": 0.99998125,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.006922186552431729,
+        "correlation": 0.999999999996147
+      }
+    },
+    "S13": {
+      "file": "collab/reviews/20261018_scenes03_12_drawn/S13_drawn_v1.mp4",
+      "mp4_sha256": "ee50d48493f8d489c564ccdcdae2d4cff8386990b3329837551f6244210de6c5",
+      "pcm_sha256": "a67e3c2fb9b7a1e940f3b010829521076b9da996813be188b2e95bafa837a5c5",
+      "manifest_matches": {
+        "S13_drawn_v1.mp4": true,
+        "S13_pcm.wav": true
+      },
+      "reference_video": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_scenes03_12_drawn/S13_drawn_v1.mp4",
+      "reference_video_sha256": "ee50d48493f8d489c564ccdcdae2d4cff8386990b3329837551f6244210de6c5",
+      "h264_sha256": "0361fe31b11f1f5ef984de71b38003e97e33979452b7818e51fec1c7627e5646",
+      "reference_h264_sha256": "0361fe31b11f1f5ef984de71b38003e97e33979452b7818e51fec1c7627e5646",
+      "h264_bytes_equal": true,
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "video_frames": 120,
+      "video_fps": "24/1",
+      "video_start": "0.000000",
+      "video_duration": "5.000000",
+      "audio_codec": "aac",
+      "audio_start": "0.000000",
+      "audio_duration": "5.000000",
+      "pcm_sample_rate": 48000,
+      "pcm_channels": 2,
+      "pcm_samples": 240000,
+      "aac_decoded_samples": 240640,
+      "aac_padding_samples": 640,
+      "aac_first_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "dts_time": "-0.021333",
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "size": "651",
+        "pos": "58226",
+        "flags": "KD_",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "aac_last_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": 239616,
+        "pts_time": "4.992000",
+        "dts": 239616,
+        "dts_time": "4.992000",
+        "duration": 384,
+        "duration_time": "0.008000",
+        "size": "7",
+        "pos": "965961",
+        "flags": "K__"
+      },
+      "aac_presentation_end_sample": 240000,
+      "aac_best_lag_samples": 0,
+      "aac_pcm_correlation": 0.9994179731430964,
+      "aac_pcm_rmse": 0.0025298550126051905,
+      "aac_true_peak_dbtp": -4.55,
+      "aac_integrated_lufs": -16.97,
+      "master_slice_start_sample": 2764000,
+      "master_slice_end_exclusive": 3004000,
+      "edl_entry": {
+        "id": "S13",
+        "scene": 4,
+        "line": "paint",
+        "dur": 5,
+        "mod": "js/anim/s13_drawn.js",
+        "text": "近景：小满盯着看 → 发现奶奶在看她 → 假装打哈欠，扭开头"
+      },
+      "prior_pcm_path": "/workspace/scratch/f060b5601755/astra_eight_audio_increment_a039936_20261018_1757/collab/reviews/20261018_scenes03_12_drawn/S13_pcm.wav",
+      "prior_pcm_sha256": "a67e3c2fb9b7a1e940f3b010829521076b9da996813be188b2e95bafa837a5c5",
+      "new_vs_prior_pcm": {
+        "equal_samples": 480000,
+        "total_samples": 480000,
+        "exact_fraction": 1.0,
+        "max_abs_lsb": 0.0,
+        "rmse_lsb": 0.0,
+        "correlation": 0.9999999999999998
+      },
+      "pcm_vs_independent_new_master": {
+        "equal_samples": 479985,
+        "total_samples": 480000,
+        "exact_fraction": 0.99996875,
+        "max_abs_lsb": 3.0,
+        "rmse_lsb": 0.00978945010372561,
+        "correlation": 0.9999999999917859
+      }
+    }
+  },
+  "new_master": {
+    "path": "/workspace/scratch/f060b5601755/astra_audio_delivery_9047810_20261019_0235/rebuild/build/audio/film_mix_norm.wav",
+    "sha256": "dcd4876c1da45f8734b77d6f56887b8c84794f94149677f63100779af33f9079",
+    "sample_rate": 48000,
+    "samples": 11188000,
+    "source_manifest": {
+      "commit": "9047810888634d01804744aaa1da34740896da1e",
+      "files": {
+        "audio/build.py": {
+          "sha256": "1c8c184f8a1f1f402d94a4d40ad21c97e44d16287ba2f14cc0209afe5c2cb125",
+          "git_blob": "64c4abda9a977e5ae0c5fe3116af4601216e7880"
+        },
+        "audio/inst.py": {
+          "sha256": "c6b8f630335dfabe6302e21dfb880dae34fd02b37a475418d1f0f57112d98275",
+          "git_blob": "63bc63cd91cd6e150a8f115dd0fd3d83971a4161"
+        },
+        "audio/sfx.py": {
+          "sha256": "34943517c83815b8499f28ebb43bef57b377d827cef1b7375de5d16a320e6dc2",
+          "git_blob": "98db5abd10ba12ef438f883802697fd0cb6aabd0"
+        },
+        "audio/score.py": {
+          "sha256": "2171a6189a971a1b88b7619fc92ced65d015cada8894e59362ddb04e67f40b2e",
+          "git_blob": "e7b3eda650520491b02f8edf59581ed1730bf9a4"
+        },
+        "js/film/edl.js": {
+          "sha256": "2a5bc24bb05f0e8cc9273498af43e386e2a1c7f4652cd2aec595b3a82f350598",
+          "git_blob": "a12484df9ce9622e20bb901fb1574b1e128bb3bf"
+        },
+        "package.json": {
+          "sha256": "7435fe87be491d71687e23a98dabe79423370904520a23e57d13ce65ce7cbde7",
+          "git_blob": "a50f845ea6e2515a674bc568e0e943059e8fbfe0"
+        }
+      },
+      "numpy": "2.3.5",
+      "scipy": "1.17.0"
+    },
+    "source_bytes_reverified": true,
+    "original_build_exit_code": 0,
+    "rebuild_log_sha256": "76fe2795cc67b43c4b9cbb71bcddb8bd656d3e43dd4a7071e0745d3177f2b2cb",
+    "comparison_note": "Independent unchanged fixed-commit synthesis; output may differ by tiny floating-point/codec-platform rounding. No claim of literal original production-master possession or subjective listening."
+  },
+  "disposition": {
+    "all_20_delivery_hashes_match": true,
+    "all_10_h264_streams_equal_designated_approved_references": true,
+    "all_10_aac_zero_best_lag": true,
+    "worst_delivered_pcm_vs_new_independent_master_max_lsb": 3.0,
+    "worst_delivered_pcm_vs_new_independent_master_rmse_lsb": 0.016091257608669727,
+    "highest_actual_aac_true_peak_dbtp": -4.03,
+    "subjective_listening_performed": false,
+    "unchanged_existing_8_mp4_and_pcm_bytes": [
+      "S01",
+      "S04",
+      "S05a",
+      "S02a",
+      "S03",
+      "S03a",
+      "S10",
+      "S13"
+    ]
+  }
+}
