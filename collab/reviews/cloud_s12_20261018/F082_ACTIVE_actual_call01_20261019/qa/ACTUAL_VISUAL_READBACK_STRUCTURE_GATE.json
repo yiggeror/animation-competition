@@ -1,0 +1,24 @@
+{
+  "status": "ACTUAL082_DELIVERED_NEAR_KNEE_OUTER_STEP_STRUCTURE_GATE_PENDING_NOT_QUALIFIED",
+  "actually_opened": [
+    "originals/F082_call01_raw.png",
+    "diagnostics/RAW_ALPHA_UNCHANGED.png",
+    "diagnostics/RAW_ON_SOLID_ALPHA_CHECK.png",
+    "candidate/F082.png",
+    "actual_scene/F082_canvas.png",
+    "diagnostics/NATIVE_KNEE_JOIN_NORMAL_SIZE.png",
+    "diagnostics/ACTUAL_BOTH_TRUE_GRIPS_1to1.png"
+  ],
+  "observations": [
+    "Hip and whole torso/head/arms continue the approved rise; two complete closed hands and true rods retained.",
+    "Original074 shoes/ankles/shins and current ground shadow remain native static master. Fixed domain includes ALL empty pixels; no new support-alpha leak.",
+    "True rod/crane geometry remains the approved same-rigid-transform F082, box-front occlusion retained.",
+    "REAL STRUCTURAL CONFLICT: near-knee outer silhouette has a visible ledge at about native x680to705,y1195to1210 where the new active contour meets the fixed knee. Clearly visible in the actual1080p scene as well as the normal-size native crop. New full raw has a wider/deeper rounded knee than the permanent support; global registration deliberately did not follow the generated lower legs.",
+    "Far knee/shin top has a short raised fold mark and cloth/ink transition. It is delivered intact for review, not silently repaired or counted as final pass."
+  ],
+  "next_action": "Astra direct review of sole raw + existing actual Canvas. No second image call, full-pants redraw, narrow repair, second registration, mask expansion or next-pose generation.",
+  "imagegen_calls": 1,
+  "actual082_Canvas": 1,
+  "qualified_new082_action_poses": 0,
+  "next_posture_calls": 0
+}
