@@ -1,0 +1,45 @@
+{
+  "state": "ACTUAL_COMPLETE_SEMANTIC_TRIAL_VIEWED_PENDING_ASTRA_RESULT_GATE",
+  "candidate": "candidate/F106_ZERO_CALL_LOCKED103_WHOLE_CHAIN_actual106_CLOTH_BACKPLATE_PENDING_ASTRA.png",
+  "candidate_SHA256": "13bd048bc8a23519ab284c31ae477b1adea387d45df77fa55efafb8d850bec21",
+  "locked103_SHA256": "06443a17f780d7a72a293c27686099ffaf72ba827b00e3290059c3061cd2ad90",
+  "raw106_used_for_cloth_only_SHA256": "10bdbcc10f20f6ac472d8f70ef98a2385f6166523dec478f59b3afab004d5aee",
+  "same_whole_motion_group_path": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/layers/F106_whole_actual_bare_arm_hand_physical_lamp_LIFTED.png",
+  "same_whole_motion_group_SHA256": "e8b93f12e23377843b23660c50a9e33635fb47738e7b6b8c22c88e616f6e165f",
+  "only_group_transform": {
+    "native": [
+      0,
+      -12.359119141727836
+    ],
+    "world": [
+      0,
+      -4.5
+    ],
+    "rotation": 0,
+    "scale": 1
+  },
+  "motion_group_copied_without_further_transform": true,
+  "independent_wrist_hand_finger_lamp_fit": false,
+  "failed106_arm_hand_lamp_adopted": false,
+  "new_RGB_drawing_blur_or_recolor": false,
+  "shadow_in_motion_group": false,
+  "native_requests_this_trial": 0,
+  "native106_total_requests": 1,
+  "native106_total_raw_outputs": 1,
+  "native106_total_retries": 0,
+  "source_motion_opaque_core_RGBA_changes_outside_front_sleeve": 0,
+  "source_fixed_body_opaque_core_RGBA_changes_outside_motion": 0,
+  "actual_cloth_plate_pixels": 49267,
+  "actual_root_viewed": [
+    "qa/F106_complete_person_gray.png",
+    "qa/F106_complete_person_dark.png",
+    "qa/F106_shoulder_short_sleeve_elbow_wrist_same_whole_grip_gray_3x.png"
+  ],
+  "visual_findings": [
+    "Locked103 complete bare upperarm/elbow/forearm/whole hand and entire physical lamp are the same single stored translated group; no wrong106 limb/hand/lamp pixels adopted.",
+    "Original whole short sleeve is foreground; raised arm root enters its original real cuff naturally.",
+    "One complete actual106 blue-flower blouse piece behind source103 provides the newly exposed underarm/elbow cloth. Entire old-arm ink/skin AA boundary removed; no remaining dotted old-elbow arc.",
+    "Original background opening between front blouse and forearm is retained. Source head/far group/waist/legs/shoes and stationary shadow stay fixed."
+  ],
+  "limits": "Actual native-scale candidate submitted for Astra. Source neck/farhand/shoe alpha edges remain as already accepted103; no micro color edits. No final adoption or8f until actual-result gate."
+}

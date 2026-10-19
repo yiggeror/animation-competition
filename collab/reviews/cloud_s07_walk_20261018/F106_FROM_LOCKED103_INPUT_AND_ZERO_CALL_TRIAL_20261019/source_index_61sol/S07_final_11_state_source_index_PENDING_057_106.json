@@ -1,6 +1,6 @@
 {
   "schema": "S07_final_11_state_source_index_v1",
-  "status": "STABLE_EXISTING_LOCKED_SOURCE_INDEX_057_MISSING_106_HOLD",
+  "status": "EXISTING11STATE_SOURCE_INDEX_057_RESOLVED_106_ZERO_CALL_RESULT_PENDING",
   "repository": "/workspace/s07-walk-reference-20261018",
   "frame_rate": 24,
   "shot_frame_range_inclusive": [
@@ -68,23 +68,24 @@
       "hold_frames": 5,
       "support_event": "双支撑→近右承重",
       "action": "第一近脚落地",
-      "final_png_path": null,
-      "png_SHA256": null,
-      "source_commit_SHA": null,
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F057_semantic_color_ankle/candidate/F057_semantic_color_and_ankle_PENDING.png",
+      "png_SHA256": "93939f3e148c0a957ef418c677e60cc3fd27cf6b6844f91d500c8a3508b76720",
+      "source_commit_SHA": "e3d2202cacfc6c3964112cbda8956592683b8792",
       "known_commit_abbrev": null,
       "scene_registration_ref": null,
-      "whole_action_layer_path": null,
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F057_semantic_color_ankle/candidate/F057_semantic_color_and_ankle_PENDING.png",
       "component_layer_directory": null,
-      "has_physical_lamp": null,
-      "has_table_shadow": null,
+      "has_physical_lamp": false,
+      "has_table_shadow": false,
       "lamp_ownership": "original_scene.tableLamp(0)",
       "scene_tableLamp_0_enabled": true,
       "lamp_ON": false,
       "known_ground_anchors": null,
       "evidence": [
-        "collab/reviews/cloud_s07_walk_20261018/exposure.csv"
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "Explicit Astra source identity message source_thread01a1515b-ad57-7745-99c3-3cf607fea0c6,2026-10-19"
       ],
-      "unresolved": "Must use approved1705 ground-contact-shadow version. Exact final repository path/commit/SHA not supplied or located; parent explicitly requires null, NEVER substitute old93939f3e version. Table-shadow/artifact flags remain null for that unresolved final file.",
+      "unresolved": "Ground-contact1705 patch belongs to frames before57 and is not a new057 mother. Exact057 identity supplied by coordinator; no measurement or re-review performed. Other unknown anchor/registration fields remain uncomputed.",
       "lamp_support_owner": "table",
       "table_shadow_render_owner": "original_scene.tableLamp(0)",
       "lamp_render_owner": "original_scene.tableLamp(0)"
@@ -468,7 +469,7 @@
       "evidence": [
         "collab/reviews/cloud_s07_walk_20261018/exposure.csv"
       ],
-      "unresolved": "No accepted106. Raw is evidence only and must not become an automatic final-state fallback. No103x3→106x2 exposure produced.",
+      "unresolved": "Final106 remainsnull pending Astra actual-result gate on new zero-call semantic trial; failed native arm/hand/lamp not adopted. No8f yet.",
       "planned_same_hand_and_whole_physical_lamp_delta": {
         "native": [
           0,
@@ -484,7 +485,7 @@
       },
       "expected_final_contains_physical_lamp": true,
       "table_shadow_note": "Stationary context, outside moving hand/lamp group; final containment flag leftnull until root fills final artifact.",
-      "status": "HOLD_RAW_MISREGISTERED_NO_ADOPTION",
+      "status": "ZERO_CALL_SEMANTIC_CANDIDATE_PENDING_ASTRA_RESULT_GATE",
       "raw_only": {
         "path": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/originals/F106_NATIVE_call01_RAW.png",
         "SHA256": "10bdbcc10f20f6ac472d8f70ef98a2385f6166523dec478f59b3afab004d5aee",
@@ -495,7 +496,13 @@
       },
       "lamp_support_owner": "PLANNED_right_hand_final_selfcontained_NOT_ADOPTED",
       "table_shadow_render_owner": "planned_stationary_baseline_context_NO_ACCEPTED106",
-      "lamp_render_owner": "PLANNED_final_whole_action_PNG_only_NO_ACCEPTED106"
+      "lamp_render_owner": "PLANNED_final_whole_action_PNG_only_NO_ACCEPTED106",
+      "pending_candidate": {
+        "path": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/zero_call_semantic_cloth_trial_20261019/candidate/F106_ZERO_CALL_LOCKED103_WHOLE_CHAIN_actual106_CLOTH_BACKPLATE_PENDING_ASTRA.png",
+        "SHA256": "13bd048bc8a23519ab284c31ae477b1adea387d45df77fa55efafb8d850bec21",
+        "same_actual103_whole_motion_group": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/layers/F106_whole_actual_bare_arm_hand_physical_lamp_LIFTED.png",
+        "native_additional_requests": 0
+      }
     }
   ],
   "integrated_final_scene_whole_action_layer_path": null,
