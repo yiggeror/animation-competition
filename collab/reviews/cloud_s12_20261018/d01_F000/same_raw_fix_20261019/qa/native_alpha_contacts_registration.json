@@ -1,0 +1,231 @@
+{
+  "native_candidate_SHA256": "95f80f2d8f56394abd4a808cc8a6f205633658a544de4ab52e1e34c4ac1ed793",
+  "native_size": [
+    1024,
+    1536
+  ],
+  "alpha_diagnostics": {
+    "1": {
+      "count": 413546,
+      "bbox": [
+        0,
+        65,
+        992,
+        1536
+      ]
+    },
+    "8": {
+      "count": 394608,
+      "bbox": [
+        26,
+        334,
+        986,
+        1312
+      ]
+    },
+    "32": {
+      "count": 392512,
+      "bbox": [
+        26,
+        334,
+        986,
+        1312
+      ]
+    },
+    "128": {
+      "count": 389141,
+      "bbox": [
+        27,
+        335,
+        985,
+        1312
+      ]
+    },
+    "200": {
+      "count": 386652,
+      "bbox": [
+        27,
+        335,
+        985,
+        1311
+      ]
+    }
+  },
+  "registration": {
+    "scale": 0.7,
+    "x": 275,
+    "y": 112
+  },
+  "reference_provisional_registration": {
+    "scale": 0.75,
+    "x": 300,
+    "y": 100
+  },
+  "registration_reason": "Astra reviewed41cb60c F000 pose and this frame camera/placement;unchanged in same-raw repair.",
+  "actual_opaque_bottom_scene_F000": 1029.6999999999998,
+  "F000_opaque_bottom_margin": 50.30000000000018,
+  "same_F000_pose_end_camera_numeric_margin": 20.316376049982864,
+  "end_camera_note": "Diagnostic applying original final camera to the SAME first-mother alpha only;not a rendered or generatedF191 pose,not proof of finalC feet.",
+  "contacts": [
+    {
+      "name": "R_knee",
+      "source_alpha_polygon_native": [
+        [
+          465,
+          1230
+        ],
+        [
+          632,
+          1215
+        ],
+        [
+          638,
+          1290
+        ],
+        [
+          490,
+          1318
+        ]
+      ],
+      "native_contact_base_y": 1305,
+      "path": "../../contact_masks/R_knee.png",
+      "alpha_pixels_nonzero": 11152,
+      "visible_ground_contact_gate": true,
+      "note": "Actual native alpha patch;near body will cover occluded far knee/shin shadow. No independent proof of hidden joint anatomy."
+    },
+    {
+      "name": "R_shin",
+      "source_alpha_polygon_native": [
+        [
+          218,
+          1222
+        ],
+        [
+          480,
+          1215
+        ],
+        [
+          505,
+          1318
+        ],
+        [
+          195,
+          1323
+        ]
+      ],
+      "native_contact_base_y": 1309,
+      "path": "../../contact_masks/R_shin.png",
+      "alpha_pixels_nonzero": 24563,
+      "visible_ground_contact_gate": true,
+      "note": "Actual native alpha patch;near body will cover occluded far knee/shin shadow. No independent proof of hidden joint anatomy."
+    },
+    {
+      "name": "R_shoe",
+      "source_alpha_polygon_native": [
+        [
+          43,
+          1224
+        ],
+        [
+          216,
+          1192
+        ],
+        [
+          232,
+          1305
+        ],
+        [
+          53,
+          1330
+        ]
+      ],
+      "native_contact_base_y": 1310,
+      "path": "../../contact_masks/R_shoe.png",
+      "alpha_pixels_nonzero": 17335,
+      "visible_ground_contact_gate": true,
+      "note": "Actual native alpha patch;near body will cover occluded far knee/shin shadow. No independent proof of hidden joint anatomy."
+    },
+    {
+      "name": "L_knee",
+      "source_alpha_polygon_native": [
+        [
+          596,
+          1114
+        ],
+        [
+          654,
+          1130
+        ],
+        [
+          657,
+          1206
+        ],
+        [
+          610,
+          1220
+        ]
+      ],
+      "native_contact_base_y": 1218,
+      "path": "../../contact_masks/L_knee.png",
+      "alpha_pixels_nonzero": 3259,
+      "visible_ground_contact_gate": false,
+      "note": "Actual native alpha patch;near body will cover occluded far knee/shin shadow. No independent proof of hidden joint anatomy."
+    },
+    {
+      "name": "L_shin",
+      "source_alpha_polygon_native": [
+        [
+          209,
+          1106
+        ],
+        [
+          466,
+          1108
+        ],
+        [
+          585,
+          1190
+        ],
+        [
+          198,
+          1215
+        ]
+      ],
+      "native_contact_base_y": 1213,
+      "path": "../../contact_masks/L_shin.png",
+      "alpha_pixels_nonzero": 31230,
+      "visible_ground_contact_gate": false,
+      "note": "Actual native alpha patch;near body will cover occluded far knee/shin shadow. No independent proof of hidden joint anatomy."
+    },
+    {
+      "name": "L_shoe",
+      "source_alpha_polygon_native": [
+        [
+          20,
+          1110
+        ],
+        [
+          209,
+          1095
+        ],
+        [
+          218,
+          1196
+        ],
+        [
+          35,
+          1250
+        ]
+      ],
+      "native_contact_base_y": 1243,
+      "path": "../../contact_masks/L_shoe.png",
+      "alpha_pixels_nonzero": 16053,
+      "visible_ground_contact_gate": true,
+      "note": "Actual native alpha patch;near body will cover occluded far knee/shin shadow. No independent proof of hidden joint anatomy."
+    }
+  ],
+  "all_six_contacts_independently_visible": false,
+  "hidden_far_knee_shin_note": "Far knee/shin ground contacts are occluded;do not claim six independently visible contact shadows.",
+  "source_raw_SHA256": "87f85597246e995ad4988b3a766c4f4171201851780e8c8ab5b3b0a93bf3cd61",
+  "registration_Astra_approved_for_F000": true
+}

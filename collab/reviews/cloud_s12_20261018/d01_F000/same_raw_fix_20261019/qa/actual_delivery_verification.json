@@ -1,0 +1,109 @@
+{
+  "status": "SAME_RAW_NATIVE_AND_ACTUAL_F000_LOCAL_REPAIR_CHECKS_PASS_VISUAL_REVIEW_REQUIRED",
+  "source_commit": "41cb60c5a9703fc22e62553840f9523e4ae3fad5",
+  "source_raw_SHA256": "87f85597246e995ad4988b3a766c4f4171201851780e8c8ab5b3b0a93bf3cd61",
+  "corrected_native_SHA256": "95f80f2d8f56394abd4a808cc8a6f205633658a544de4ab52e1e34c4ac1ed793",
+  "source_original_unchanged": true,
+  "imagegen_calls_this_task": 0,
+  "original_cumulative_imagegen_calls": 3,
+  "other_poses_generated": 0,
+  "actual_render_frames": [
+    0
+  ],
+  "actual_render_runs": 2,
+  "final_render_frames": [
+    0
+  ],
+  "earlier_F000_render_runs": 1,
+  "earlier_run_reason": "Full pigment mean two channels exceeded4 by.13/.07;onelevel masked microadjustment then finaloneframe rerender. No generation.",
+  "frame_size": [
+    1920,
+    1080
+  ],
+  "fps": "24/1",
+  "audio_streams": 0,
+  "actual_Canvas_SHA256": "99dd5ec2bbb25a51a4b44decf57878f1201d72bb76c7127d3a55d9377c508bbb",
+  "actual_MP4_SHA256": "d294ae7dcf8b4f2ef3d68fd7aa4fa58b5bb7d9ee145c3200c4685a3a8e77f9a8",
+  "decoded_vs_source_RGB_MSE": 8.520247395833334,
+  "full_material_pigment_measurements": {
+    "skin": {
+      "pixels": 63220,
+      "before_mean_RGB": [
+        251.03082885162922,
+        199.58717178108193,
+        161.01871243277444
+      ],
+      "after_mean_RGB": [
+        247.68609617209745,
+        202.93190446061374,
+        171.0272540335337
+      ],
+      "source03_mean_RGB": [
+        249.73329352639698,
+        206.7072697417525,
+        174.28690849380504
+      ],
+      "after_delta_vs03": [
+        -2.047197354299527,
+        -3.775365281138761,
+        -3.2596544602713493
+      ],
+      "max_channel_delta": 3.775365281138761
+    },
+    "blouse_blue": {
+      "pixels": 119243,
+      "before_mean_RGB": [
+        124.35529129592513,
+        157.20257792910274,
+        207.9671091804131
+      ],
+      "after_mean_RGB": [
+        134.34580646243384,
+        168.60992259503703,
+        210.82500440277417
+      ],
+      "source03_mean_RGB": [
+        137.7676343709922,
+        171.92925265244259,
+        213.99263145622012
+      ],
+      "after_delta_vs03": [
+        -3.421827908558356,
+        -3.3193300574055513,
+        -3.1676270534459547
+      ],
+      "max_channel_delta": 3.421827908558356
+    }
+  },
+  "actual_scene_changed_pixels": 75398,
+  "scene_changed_outside_registered_native_mask_and_cloth_region": 0,
+  "visible_cloth_changed_pixels": 411,
+  "visible_cloth_changed_bbox": [
+    1450,
+    786,
+    1547,
+    798
+  ],
+  "box_front_pixels_y800plus_exact": true,
+  "crane_pose_plane55_rods_room_camera_light_functions_exact": true,
+  "pants_hair_lineart_core_alpha_protection": "material_alpha_verification.json",
+  "actual_HTTP_errors": [],
+  "actual_console_errors": [
+    {
+      "utc": "2026-10-19T00:36:26.878Z",
+      "event": "console_error",
+      "page": 0,
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:46571/favicon.ico",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "pageerror_requestfailed": [],
+  "Astra_final_mother_lock": "PENDING_REVIEW_THIS_REPAIR",
+  "later_exposures_authorized": false
+}

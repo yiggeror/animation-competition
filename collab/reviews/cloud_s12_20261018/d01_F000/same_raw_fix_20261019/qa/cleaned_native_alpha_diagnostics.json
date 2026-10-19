@@ -1,0 +1,51 @@
+{
+  "candidate_SHA256": "95f80f2d8f56394abd4a808cc8a6f205633658a544de4ab52e1e34c4ac1ed793",
+  "cleaned_alpha_diagnostics": {
+    "1": {
+      "pixels": 407323,
+      "bbox": [
+        23,
+        332,
+        989,
+        1315
+      ]
+    },
+    "8": {
+      "pixels": 394608,
+      "bbox": [
+        26,
+        334,
+        986,
+        1312
+      ]
+    },
+    "32": {
+      "pixels": 392512,
+      "bbox": [
+        26,
+        334,
+        986,
+        1312
+      ]
+    },
+    "128": {
+      "pixels": 389141,
+      "bbox": [
+        27,
+        335,
+        985,
+        1312
+      ]
+    },
+    "200": {
+      "pixels": 386652,
+      "bbox": [
+        27,
+        335,
+        985,
+        1311
+      ]
+    }
+  },
+  "contact_data_alpha_diagnostics_are_preserved_raw_reference": "qa/native_alpha_contacts_registration.json retains raw-source alpha stats because six contact masks derive from same raw. Actualcleaned alpha shownhere;alpha>=8 exact."
+}
