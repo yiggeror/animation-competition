@@ -16,7 +16,7 @@ def tube(a,b,r0,r1,col):
  d=f'M {pts[0][0]} {pts[0][1]} Q {(pts[0][0]+pts[1][0])/2+nx*2} {(pts[0][1]+pts[1][1])/2+ny*2} {pts[1][0]} {pts[1][1]} A {r1} {r1} 0 0 1 {pts[2][0]} {pts[2][1]} Q {(pts[2][0]+pts[3][0])/2-nx*2} {(pts[2][1]+pts[3][1])/2-ny*2} {pts[3][0]} {pts[3][1]} A {r0} {r0} 0 0 1 {pts[0][0]} {pts[0][1]} Z'
  return path(d,col)+line(a,b,'#6f7a86',.9,'4 4')+ellipse(b[0],b[1],r1,r1*.40,'none','#71818b',1,more=f'transform="rotate({math.degrees(math.atan2(dy,dx))+90} {b[0]} {b[1]})"')
 def arm(j,col):return tube(j[0],j[1],13,11,col)+tube(j[1],j[2],11,7,col)
-def grip(x,y,sc=1,face=-1,ang=0,jade=False,openhand=False):
+def grip(x,y,sc=1,face=-1,ang=0,jade=False,openhand=False,bundle=False):
  # Full palm contour, four individually curled finger volumes, opposed thumb.
  s=f'<g transform="translate({x} {y}) rotate({ang}) scale({sc*face} {sc})">'
  if openhand:
@@ -24,7 +24,7 @@ def grip(x,y,sc=1,face=-1,ang=0,jade=False,openhand=False):
  else:
   s+=path('M -26 -12 Q -10 -18 8 -14 Q 22 -12 23 1 Q 22 14 11 17 L -7 15 Q -22 10 -26 9 Z',C['near'])
   for fx,fy in [(12,-5),(11,2),(7,9),(1,14)]:s+=path(f'M {fx-5} {fy-4} Q {fx+8} {fy-8} {fx+10} {fy} Q {fx+8} {fy+7} {fx-3} {fy+4} Q {fx-10} {fy+1} {fx-5} {fy-4} Z',C['near'],w=1.2)
-  s+=path('M -14 -11 Q -1 -24 14 -15 Q 22 -10 14 -6 L 3 -5 Q -9 6 -15 0 Z','#f9d9c3',w=1.5)
+  s+=path('M -15 -9 Q -4 -23 9 -17 Q 19 -12 17 -5 Q 14 1 5 3 L -3 5 Q -13 11 -18 4 Q -22 -2 -15 -9 Z' if bundle else 'M -14 -11 Q -1 -24 14 -15 Q 22 -10 14 -6 L 3 -5 Q -9 6 -15 0 Z','#f9d9c3',w=1.5)
   s+=ellipse(12,-11,4,3,'#ffe9d9','#9f816d',.8)
  if jade:s+=ellipse(-25,0,4.5,12.5,'#6fa787','#35624e',1.7)
  return s+'</g>'
@@ -69,11 +69,11 @@ FIGS={
  'A_X':dict(k='X',o=[600,386],s=1.305,face=1,near='R',R=[(16,120),(60,165),(100,155)],L=[(5,122),(45,200),(110,185)],palms={'R':(120,155),'L':(134,185)}),
  'B_G':dict(k='G',o=[1030,304],s=1.45,face=-1,near='L',L=[(18,130),(5,205),(-65,170)],R=[(-20,125),(-60,198),(-110,225)],palms={'L':(-87,170),'R':(-132,225)}),
  'B_X':dict(k='X',o=[600,386],s=1.305,face=-1,near='L',R=[(-16,122),(-64,178),(-122,152)],L=[(14,125),(18,195),(-59,202)],palms={'R':(-144,152),'L':(-81,202)}),
- 'C_G':dict(k='G',o=[1000,290],s=1.6,face=-1,near='L',bent=True,L=[(-20,195),(45,250),(-10,285)],R=[(-70,195),(-90,275),(-170,282)],palms={'L':(-32,285),'R':(-192,282)})}
+ 'C_G':dict(bundle_hands=['R'],k='G',o=[1000,290],s=1.6,face=-1,near='L',bent=True,L=[(-20,195),(45,250),(-10,285)],R=[(-70,195),(-90,275),(-170,282)],palms={'L':(-32,285),'R':(-192,282)})}
 def world(f,p):return (f['o'][0]+f['s']*p[0],f['o'][1]+f['s']*p[1])
 def limb_label(f,hand):
  sh,el,wr=[world(f,p) for p in f[hand]];p=world(f,f['palms'][hand]);return txt(sh[0]+12,sh[1]-7,hand+'肩',17)+txt(el[0]+12,el[1]+5,hand+'肘',17)+txt(p[0]-8,p[1]+50,('小满' if f['k']=='X' else '奶奶')+hand,22,C['ink'],'650')
-def figure(f):
+def figure(f,labels=True):
  k=f['k'];near=f['near'];far='R' if near=='L' else 'L';b=f.get('bent',False);s=f'<g transform="translate({f["o"][0]} {f["o"][1]}) scale({f["s"]})">'
  # Full lower-body volumes are retained even when the eventual camera crops them.
  if b:hips=[(14,320),(53,320)];knees=[(10,405),(72,407)];ankles=[(5,490),(85,490)]
@@ -90,13 +90,13 @@ def figure(f):
  s+=arm(f[near],C['near'])
  for h in ['R','L']:
   sh=f[h][0];s+=ellipse(sh[0],sh[1],19,16,C['shirt'] if k=='G' else C['dress'],w=1.8)
- s+='</g>';return s+limb_label(f,'R')+limb_label(f,'L')
+ s+='</g>';return s+(limb_label(f,'R')+limb_label(f,'L') if labels else '')
 def figure_hands(f):
  result=''
  for hand in ['R','L']:
   p=world(f,f['palms'][hand]);jade=f['k']=='G' and hand=='L';direc=1 if f['face']==1 else -1
   # Grip drawing points its wrist opposite the chosen palm direction.
-  result+=grip(*p,sc=f['s']*.95,face=direc,jade=jade,openhand=f.get('bent',False) and hand=='L')
+  result+=grip(*p,sc=f['s']*.95,face=direc,jade=jade,openhand=hand in f.get('open_hands',[]) or (f.get('bent',False) and hand=='L'),bundle=hand in f.get('bundle_hands',[]))
  return result
 def rod(a,b,key,labelat=None,label=None):
  col=C[key];s=line(a,b,'#f8fafb',9)+line(a,b,col,4)
@@ -109,55 +109,111 @@ def header(n,title,sub):return f'<rect width="2400" height="1500" fill="#eef2f4"
 def footer(extra):return box(35,1200,2330,265,'共用施工尺与制作边界')+lines(60,1295,['G：身高4.8H；小满：身高4.7H，H_X=0.90H_G，约0.88成人高度。目标来自实际母版比例阅读，待冻结。','骨长施工目标：奶奶上臂1.00H／前臂0.90H／手0.50H；小满0.90H／0.80H／0.45H。不是二维图反推的实测三维骨长。','近臂实肤色、躯干衣块、远臂灰色；截面椭圆表示短缩，灰虚线表示遮挡。L/R始终按角色自身。',extra],23,dy=37)
 def finish(name,s):
  svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1500" viewBox="0 0 2400 1500"><style>text{{font-family:RefSC,"Noto Sans SC",sans-serif}} @font-face{{font-family:RefSC;src:url("/assets/fonts/NotoSansSC-VF.ttf")}}</style><desc>Human-authored static construction reference, zero image-model calls, not a production character drawing.</desc>'+s+'</svg>';(OUT/(name+'.svg')).write_text(svg)
-# K01: Manual handoff, with a separately supported crane bundle.
-s=header('K01','F020：交接承重重叠','奶奶L暂并鹤双签；R递龟双签。小满R先握头签、L握壳签，双方实握期间奶奶不先放。')
-for f in [FIGS['A_G'],FIGS['A_X']]:s+=figure(f)
-g=FIGS['A_G'];x=FIGS['A_X'];ag=world(g,g['palms']['R']);xr=world(x,x['palms']['R']);xl=world(x,x['palms']['L']);ag2=(ag[0],ag[1]+16)
-h=(xr[0]+2.5*(xr[0]-ag[0]),xr[1]+2.5*(xr[1]-ag[1]));b=(xl[0]+2.5*(xl[0]-ag2[0]),xl[1]+2.5*(xl[1]-ag2[1]));s+=puppet(b,h)
-s+=rod(h,(ag[0]+34,ag[1]+6),'TH',(340,500),'T_H 头签')+rod(b,(ag2[0]+34,ag2[1]-4),'TS',(350,775),'T_S 壳签')
-lc=world(g,g['palms']['L']);s+=rod((680,290),(lc[0]+22,lc[1]+7),'CB',(702,350),'C_B 鹤身')+rod((760,205),(lc[0]+22,lc[1]-6),'CN',(785,255),'C_N 鹤颈')
-for f in [g,x]:s+=figure_hands(f)
-s+=line((435,1035),(1140,1035),'#9caab4',2)+txt(80,1100,'同尺构造；正式景位沿CAM20。小满转胸向奶奶收签，随后整胸／脚转回幕。',22)
-s+=lines(1320,225,['交接不是递出偶面或只把手搭在签上：','①奶奶R仍握住两根的下游段；','②小满R拇指对食／中指夹住T_H；','③小满L拇指对屈曲四指握T_S；','④两处稳定后，奶奶R拇指／四指才松开。'],25,dy=40)
-# Distinct straight shafts and three staggered physical grip locations.
-s+=rod((1360,500),(2260,800),'TH',(1340,465),'T_H')+rod((1360,935),(2260,710),'TS',(1340,985),'T_S')
-s+=grip(1640,593,2.2,face=1,ang=18)+grip(1760,835,2.2,face=1,ang=-14)+grip(2160,752,3.4,face=-1)
-s+=txt(1510,555,'小满R：头签，先闭合',24,C['TH'],'700')+txt(1550,900,'小满L：壳签，独立闭合',24,C['TS'],'700')+txt(2010,875,'奶奶R：支持两签后端',24)
-s+=lines(1320,1070,['握点错开至少一掌位；两杆不断轴、不在掌中合成一杆。','奶奶L同时稳握C_B+C_N，鹤始终有人支持。'],23,dy=37)
-s+=footer('0生图；人物原图只读；补交接是待Astra裁定的动作设计，未改EDL／音轨／生产代码。');finish('S20_K01_F020_handoff',s)
-# K02: Fixed rod ownership through a physical X; no endpoint remapping.
-s=header('K02','F084：双臂分开，双签成X','2.4–4.6秒绞签窗保留。右手T_H／左手T_S始终不换绑，X处只有前后层次，不画软绳结。')
-g=FIGS['B_G'];x=FIGS['B_X']
-for f in [g,x]:s+=figure(f)
-xr=world(x,x['palms']['R']);xl=world(x,x['palms']['L']);X=(330,560);h=(X[0]-(xr[0]-X[0])*.5,X[1]-(xr[1]-X[1])*.5);b=(X[0]-(xl[0]-X[0])*.6,X[1]-(xl[1]-X[1])*.6)
-s+=puppet(b,h)+rod(h,(xr[0]+25,xr[1]+7),'TH',(180,570),'T_H')+rod(b,(xl[0]+25,xl[1]+13),'TS',(160,500),'T_S 近')
-s+=ellipse(*X,25,25,'none','#647481',1.7)+txt(265,616,'X：近壳签遮远头签',20)
-gl=world(g,g['palms']['L']);gr=world(g,g['palms']['R']);s+=rod((735,380),(gr[0]+24,gr[1]+15),'CB',(715,440),'C_B → G.R')+rod((710,280),(gl[0]+24,gl[1]+10),'CN',(700,265),'C_N → G.L')
-for f in [g,x]:s+=figure_hands(f)
-s+=txt(80,1100,'先肩／肘带动，再腕内收；前臂不相互绕过，屈肘与掌厚保持。',23)
-s+=lines(1320,220,['右手＝T_H→龟头；左手＝T_S→龟壳。','奶奶右手＝C_B→鹤身；左手＝C_N→neck3。','不采用代码T.cross切换手端归属的办法。'],25,dy=42)
-s+=rod((1380,440),(1760,735),'TH',(1340,420),'T_H远')+rod((1380,740),(1770,430),'TS',(1660,405),'T_S近')+ellipse(1575,586,34,34,'none','#7b8790',2)
-s+=grip(1740,720,2.3,face=-1,ang=35)+grip(1760,440,2.3,face=-1,ang=-35)
-s+=txt(1840,390,'小满L / T_S',24,C['TS'],'700')+txt(1810,785,'小满R / T_H',24,C['TH'],'700')+txt(1900,450,'双掌分别包握',25)+txt(1900,490,'拇指与对侧指腹',25)+txt(1900,530,'同时压住本签',25)
-s+=lines(1320,855,['5.2秒后开始失控翻滚；5.5秒F132完成翻肚。','翻肚由龟的两接点真实相对运动产生，手端不瞬跳换签。','F132后小满头、胸、肩和肘共同收住；两手仍握两签。','主图是F084施工峰；F132作为机构拍点另列，不把一图持到翻肚。'],23,dy=42)
-s+=footer('绞签首个24fps采样F058；结束4.6秒落在F110与111之间。连续声／机构cue仍精确保留。');finish('S20_K02_F084_crossed_rods',s)
-# K03: Whole-body laugh, right hand actually clamps two separate crane rods.
-s=header('K03','F156：腰髋带笑，R并鹤双签，L扶腹','F144／6.0秒保留原CAMG切奶奶中近景；这里补完整下肢施工，不据全身示意改机位。')
-g=FIGS['C_G'];s+=figure(g);gr=world(g,g['palms']['R']);s+=rod((150,540),(gr[0]+32,gr[1]+6),'CB',(115,510),'C_B')+rod((150,420),(gr[0]+32,gr[1]-9),'CN',(115,395),'C_N');s+=figure_hands(g)
-s+=f'<rect x="70" y="335" width="1130" height="570" rx="12" fill="none" stroke="#a7b2ba" stroke-width="2" stroke-dasharray="12 8"/>'+txt(80,320,'CAMG中近景意向框；保留下方全身用于骨长／支撑审查',21)
-s+=txt(140,1115,'两脚仍承重，膝微屈；笑的变化沿腰髋→胸肩→颈头传递。',23)
-s+=lines(1320,220,['F132–143先完成鹤签自交接：','G.R保持C_B；G.L把C_N送入R虎口并夹牢。','确认R拇指＋屈指同时压住两杆后，L才移到腹前。','F144切景不会把“两手握”凭空变成“单手并”。'],25,dy=42)
-s+=rod((1380,530),(2250,680),'CB',(1340,495),'C_B 身签')+rod((1380,590),(2250,705),'CN',(1340,645),'C_N 颈签')+grip(1945,654,4.3,face=-1,ang=8)
-s+=ellipse(1930,649,75,65,'none','#798790',1.5)+txt(1840,790,'R裸腕：双杆各自有接触带',24)
-s+=lines(1320,875,['左腕玉镯只在L，随前臂来到腹前，不随旧镜像换到R。','扶腹是有意掌腹接触；袖口→肘→腕→掌在衣前完整可追。','鹤两杆仍分别去body／neck3，不合成一杆、不增第三杆。','小满及龟在CAMG画外，仍由她R头签／L壳签持住。'],23,dy=42)
-s+=footer('F144–215笑的每次回弹都重画整胸／肩／头关系，不用肩抖、脸形变或整张图伸缩代动作。');finish('S20_K03_F156_laugh_bundle',s)
-# Explicit model ruler/projection lengths; these are design targets, not measured skeletons.
-report={'reference_type':'Static manually specified SVG volume construction; not generated production art.','H_G':100,'H_X_relative_to_G':.90,'adult_height_H':4.8,'child_height_H':4.7,'bone_targets_in_own_H':{'G':{'upperarm':1.00,'forearm':.90,'hand':.50},'X':{'upperarm':.90,'forearm':.80,'hand':.45}},'figures':{}}
-for name,f in FIGS.items():
- r={'kind':f['k'],'near_arm':f['near'],'face_screen_direction':f['face'],'placement':f['o'],'uniform_reference_scale':f['s'],'joints':{},'note':'Projected arm centre distances <= construction lengths; missing depth is foreshortening, not a claim of measured3D bone length.'}
- for hand in ['L','R']:
-  sh,el,wr=f[hand];up=math.dist(sh,el);lo=math.dist(el,wr);tar=report['bone_targets_in_own_H'][f['k']];assert up<=tar['upperarm']*100+1e-6,(name,hand,up);assert lo<=tar['forearm']*100+1e-6,(name,hand,lo)
-  r['joints'][hand]={'shoulder':sh,'elbow':el,'wrist':wr,'palm':f['palms'][hand],'upperarm_projection_H':up/100,'forearm_projection_H':lo/100}
- report['figures'][name]=r
-(D/'provenance/construction_ruler_and_joints.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
-print('3 static SVG volume/contact plates built; projected upper/forearm lengths within construction ruler.')
+def contact_band(x,y,angle,key):
+ # A section mark: central hidden shaft, thumb-side and finger-side contacts.
+ col=C[key]
+ return f'<g transform="translate({x} {y}) rotate({angle})">'+line((-8,0),(8,0),col,3.2,'3 2')+line((-5,-3.4),(5,-3.4),col,1.8)+line((-5,3.4),(5,3.4),col,1.8)+'</g>'
+def shaft_through(a,p,after=11):
+ dx,dy=p[0]-a[0],p[1]-a[1];n=math.hypot(dx,dy)
+ return (p[0]+after*dx/n,p[1]+after*dy/n)
+def on_axis(a,b,x):return (x,a[1]+(x-a[0])*(b[1]-a[1])/(b[0]-a[0]))
+def angle_of(a,b):return math.degrees(math.atan2(b[1]-a[1],b[0]-a[0]))
+TRANSFERS={
+ 'T':{'title':'龟交接：供给手先保留，接握确认后再松开','frames':[8,20,32],'rods':['TH','TS'],'states':[{'TH':['G.R'],'TS':['G.R']},{'TH':['G.R','X.R'],'TS':['G.R','X.L']},{'TH':['X.R'],'TS':['X.L']}],'captions':['原握：G.R闭合双龟签；小满双手未碰','接握：小满R头/L壳已闭；G.R仍闭合','放握：X.R/X.L维持；G.R张开撤离']},
+ 'CB':{'title':'F036–047接回鹤身签：G.L不先松C_B','frames':[36,42,47],'rods':['CN','CB'],'states':[{'CN':['G.L'],'CB':['G.L']},{'CN':['G.L'],'CB':['G.L','G.R']},{'CN':['G.L'],'CB':['G.R']}],'captions':['原握：G.L闭合C_N+C_B；G.R尚未接','接握：G.R已夹C_B；G.L仍支持两签','放握：G.R维持C_B；G.L仅撤C_B接触']},
+ 'CN':{'title':'F132–143并入鹤颈签：G.R先握牢，G.L后离开','frames':[132,138,143],'rods':['CN','CB'],'states':[{'CN':['G.L'],'CB':['G.R']},{'CN':['G.L','G.R'],'CB':['G.R']},{'CN':['G.R'],'CB':['G.R']}],'captions':['原握：G.L持C_N；G.R持C_B','接握：G.R已夹两签；G.L仍闭合C_N','放握：G.R保持两带；G.L张开撤离']}}
+def transfer_strip(kind):
+ t=TRANSFERS[kind];s=box(35,1200,2330,265,t['title']+' · 手端接触时序小示意')
+ for j,frame in enumerate(t['frames']):
+  x=65+j*770;y=1287;rs=t['rods'];state=t['states'][j]
+  s+=txt(x+10,1275,['原握','接握','放握'][j]+f' F{frame:03}',23,weight='700')
+  # Each column retains the same top/bottom rod order and anatomical hand IDs.
+  for k,key in enumerate(rs):s+=line((x+115,y+k*44),(x+690,y+k*44),C[key],3)+txt(x+60,y+k*44+7,key,19,C[key],'650')
+  if kind=='T':
+   if j<2:s+=grip(x+640,y+22,2.05,face=-1,bundle=True)
+   else:s+=grip(x+640,y+102,1.6,face=-1,openhand=True)
+   for k,h in enumerate(['X.R','X.L']):
+    yy=y+k*44 if j else y+104;xx=x+260+k*140
+    s+=grip(xx,yy,1.55,face=1,openhand=j==0)+txt(xx-35,yy+42,h,18)
+  elif kind=='CB':
+   s+=grip(x+260,y+(22 if j<2 else 0),2.05 if j<2 else 1.55,face=1,jade=True,bundle=j<2)
+   s+=grip(x+560,y+(104 if j==0 else 44),1.55,face=-1,openhand=j==0)
+  else:
+   s+=grip(x+260,y+(104 if j==2 else 0),1.55,face=1,jade=True,openhand=j==2)
+   s+=grip(x+560,y+(44 if j==0 else 22),1.55 if j==0 else 2.05,face=-1,bundle=j>0)
+  if kind=='T':
+   if j<2:
+    for key,yy in zip(rs,[y,y+44]):s+=contact_band(x+628,yy,0,key)
+   if j>0:
+    s+=contact_band(x+270,y,0,'TH')+contact_band(x+410,y+44,0,'TS')
+  elif kind=='CB':
+   s+=contact_band(x+270,y,0,'CN')
+   if j<2:s+=contact_band(x+270,y+44,0,'CB')
+   if j>0:s+=contact_band(x+548,y+44,0,'CB')
+  else:
+   if j<2:s+=contact_band(x+270,y,0,'CN')
+   s+=contact_band(x+548,y+44,0,'CB')
+   if j>0:s+=contact_band(x+548,y,0,'CN')
+  s+=txt(x+6,1452,t['captions'][j],20)
+  if kind!='T':
+   s+=txt(x+(100 if kind=='CN' and j==2 else 205),1405,'G.L（带镯）',18)
+   s+=txt(x+(610 if kind=='CB' and j==0 else 520),1405,'G.R（裸腕）',18)
+  if j<2:s+=txt(x+724,1357,'→',35,'#6f7d85','700')
+ return s
+def build_reference_plates():
+ # K01: Manual handoff, with a separately supported crane bundle.
+ s=header('K01','F020：交接承重重叠','奶奶L暂并鹤双签；R递龟双签。小满R先握头签、L握壳签，双方实握期间奶奶不先放。')
+ for f in [FIGS['A_G'],FIGS['A_X']]:s+=figure(f)
+ g=FIGS['A_G'];x=FIGS['A_X'];ag=world(g,g['palms']['R']);xr=world(x,x['palms']['R']);xl=world(x,x['palms']['L']);ag2=(ag[0],ag[1]+16)
+ h=(xr[0]+2.5*(xr[0]-ag[0]),xr[1]+2.5*(xr[1]-ag[1]));b=(xl[0]+2.5*(xl[0]-ag2[0]),xl[1]+2.5*(xl[1]-ag2[1]));s+=puppet(b,h)
+ s+=rod(h,(ag[0]+34,ag[1]+6),'TH',(340,500),'T_H 头签')+rod(b,(ag2[0]+34,ag2[1]-4),'TS',(350,775),'T_S 壳签')
+ lc=world(g,g['palms']['L']);s+=rod((680,290),(lc[0]+22,lc[1]+7),'CB',(702,350),'C_B 鹤身')+rod((760,205),(lc[0]+22,lc[1]-6),'CN',(785,255),'C_N 鹤颈')
+ for f in [g,x]:s+=figure_hands(f)
+ s+=line((435,1035),(1140,1035),'#9caab4',2)+txt(80,1100,'同尺构造；正式景位沿CAM20。小满转胸向奶奶收签，随后整胸／脚转回幕。',22)
+ s+=lines(1320,225,['交接不是递出偶面或只把手搭在签上：','①奶奶R仍握住两根的下游段；','②小满R拇指对食／中指夹住T_H；','③小满L拇指对屈曲四指握T_S；','④两处稳定后，奶奶R拇指／四指才松开。'],25,dy=40)
+ # Distinct straight shafts and three staggered physical grip locations.
+ s+=rod((1360,500),(2260,800),'TH',(1340,465),'T_H')+rod((1360,935),(2260,710),'TS',(1340,985),'T_S')
+ s+=grip(1640,593,2.2,face=1,ang=18)+grip(1760,835,2.2,face=1,ang=-14)+grip(2160,752,3.4,face=-1)
+ s+=txt(1510,555,'小满R：头签，先闭合',24,C['TH'],'700')+txt(1550,900,'小满L：壳签，独立闭合',24,C['TS'],'700')+txt(2010,875,'奶奶R：支持两签后端',24)
+ s+=lines(1320,1070,['握点错开至少一掌位；两杆不断轴、不在掌中合成一杆。','奶奶L同时稳握C_B+C_N，鹤始终有人支持。'],23,dy=37)
+ s+=transfer_strip('T');finish('S20_K01_F020_handoff',s)
+ # K02: Fixed rod ownership through a physical X; no endpoint remapping.
+ s=header('K02','F084：双臂分开，双签成X','2.4–4.6秒绞签窗保留。右手T_H／左手T_S始终不换绑，X处只有前后层次，不画软绳结。')
+ g=FIGS['B_G'];x=FIGS['B_X']
+ for f in [g,x]:s+=figure(f)
+ xr=world(x,x['palms']['R']);xl=world(x,x['palms']['L']);X=(330,560);h=(X[0]-(xr[0]-X[0])*.5,X[1]-(xr[1]-X[1])*.5);b=(X[0]-(xl[0]-X[0])*.6,X[1]-(xl[1]-X[1])*.6)
+ s+=puppet(b,h)+rod(h,(xr[0]+25,xr[1]+7),'TH',(180,570),'T_H')+rod(b,(xl[0]+25,xl[1]+13),'TS',(160,500),'T_S 近')
+ s+=ellipse(*X,25,25,'none','#647481',1.7)+txt(265,616,'X：近壳签遮远头签',20)
+ gl=world(g,g['palms']['L']);gr=world(g,g['palms']['R']);s+=rod((735,380),(gr[0]+24,gr[1]+15),'CB',(715,440),'C_B → G.R')+rod((710,280),(gl[0]+24,gl[1]+10),'CN',(700,265),'C_N → G.L')
+ for f in [g,x]:s+=figure_hands(f)
+ for a,z,key,xx in [(h,(xr[0]+25,xr[1]+7),'TH',xr[0]-15),(b,(xl[0]+25,xl[1]+13),'TS',xl[0]-14)]:
+  cp=on_axis(a,z,xx);s+=contact_band(*cp,angle_of(a,z),key)
+ s+=txt(80,1100,'先肩／肘带动，再腕内收；前臂不相互绕过，屈肘与掌厚保持。',23)
+ s+=lines(1320,220,['右手＝T_H→龟头；左手＝T_S→龟壳。','奶奶右手＝C_B→鹤身；左手＝C_N→neck3。','不采用代码T.cross切换手端归属的办法。'],25,dy=42)
+ s+='<!-- SAME_VIEW_K02 -->'
+ s+=lines(1320,1100,['详图仅从左主图原像素裁切放大：R在上、L在下。','窄色条为掌内杆段剖示；两侧短括分别指拇指／对侧指腹。'],22,dy=35)
+ s+=transfer_strip('CB');finish('S20_K02_F084_crossed_rods',s)
+ # K03: Whole-body laugh, right hand actually clamps two separate crane rods.
+ s=header('K03','F156：腰髋带笑，R并鹤双签，L扶腹','F144／6.0秒保留原CAMG切奶奶中近景；这里补完整下肢施工，不据全身示意改机位。')
+ g=FIGS['C_G'];s+=figure(g);gr=world(g,g['palms']['R']);c_axes=[((150,420),(678,726),'CN',(115,395)),((150,540),(682,742),'CB',(115,510))]
+ for a,cp,key,lab in c_axes:s+=rod(a,shaft_through(a,cp,22),key,lab,'C_N' if key=='CN' else 'C_B')
+ s+=figure_hands(g)
+ for a,cp,key,lab in c_axes:s+=contact_band(*cp,angle_of(a,cp),key)
+ s+=f'<rect x="70" y="335" width="1130" height="570" rx="12" fill="none" stroke="#a7b2ba" stroke-width="2" stroke-dasharray="12 8"/>'+txt(80,320,'CAMG中近景意向框；保留下方全身用于骨长／支撑审查',21)
+ s+=txt(140,1115,'两脚仍承重，膝微屈；笑的变化沿腰髋→胸肩→颈头传递。',23)
+ s+=lines(1320,220,['F132–143先完成鹤签自交接：','G.R保持C_B；G.L把C_N送入R虎口并夹牢。','确认R拇指＋屈指同时压住两杆后，L才移到腹前。','F144切景不会把“两手握”凭空变成“单手并”。'],25,dy=42)
+ s+='<!-- SAME_VIEW_K03 -->'
+ s+=lines(1320,1080,['同一主图视角：橙C_N在上、绿C_B在下，不重画／镜像。','两杆各有独立拇指—指腹接触带，不能用一个色圈代表两杆。'],22,dy=36)
+ s+=transfer_strip('CN');finish('S20_K03_F156_laugh_bundle',s)
+ # Explicit model ruler/projection lengths; these are design targets, not measured skeletons.
+ report={'reference_type':'Static manually specified SVG volume construction; not generated production art.','H_G':100,'H_X_relative_to_G':.90,'adult_height_H':4.8,'child_height_H':4.7,'bone_targets_in_own_H':{'G':{'upperarm':1.00,'forearm':.90,'hand':.50},'X':{'upperarm':.90,'forearm':.80,'hand':.45}},'figures':{}}
+ for name,f in FIGS.items():
+  r={'kind':f['k'],'near_arm':f['near'],'face_screen_direction':f['face'],'placement':f['o'],'uniform_reference_scale':f['s'],'joints':{},'note':'Projected arm centre distances <= construction lengths; missing depth is foreshortening, not a claim of measured3D bone length.'}
+  for hand in ['L','R']:
+   sh,el,wr=f[hand];up=math.dist(sh,el);lo=math.dist(el,wr);tar=report['bone_targets_in_own_H'][f['k']];assert up<=tar['upperarm']*100+1e-6,(name,hand,up);assert lo<=tar['forearm']*100+1e-6,(name,hand,lo)
+   r['joints'][hand]={'shoulder':sh,'elbow':el,'wrist':wr,'palm':f['palms'][hand],'upperarm_projection_H':up/100,'forearm_projection_H':lo/100}
+  report['figures'][name]=r
+ (D/'provenance/construction_ruler_and_joints.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+ print('3 static SVG volume/contact plates built; projected upper/forearm lengths within construction ruler.')
+
+if __name__=='__main__':build_reference_plates()

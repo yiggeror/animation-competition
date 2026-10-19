@@ -1,0 +1,134 @@
+{
+  "method": "literal mainPNG crop + positive4xscale, no redrawn hand detail",
+  "records": [
+    {
+      "key": "K02",
+      "main_PNG": "reference/S20_K02_F084_crossed_rods.png",
+      "native_detail": "reference/details/K02_main_crop_native.png",
+      "main_crop_bounds_xyxy": [
+        355,
+        530,
+        555,
+        695
+      ],
+      "native_detail_sha256": "721d13e95c0faed2e33778ed567c23bb52e57cc3a1bd149c7cc7d7ee3d5d40b7",
+      "detail_box_xywh": [
+        1350,
+        395,
+        800,
+        660
+      ],
+      "positive_uniform_scale": 4,
+      "rotation_degrees": 0,
+      "horizontal_flip": false,
+      "vertical_flip": false,
+      "source_pixels": "LiteralRGBA crop from the left main drawing; verify against finalPNG crop after render.",
+      "final_main_PNG_sha256": "f2d6118b1bea73a136edd149f4b950951da487589d77b4ccf3e578ad0d41804c",
+      "final_main_crop_RGBA_exact_to_native_detail": true
+    },
+    {
+      "key": "K03",
+      "main_PNG": "reference/S20_K03_F156_laugh_bundle.png",
+      "native_detail": "reference/details/K03_main_crop_native.png",
+      "main_crop_bounds_xyxy": [
+        600,
+        680,
+        800,
+        810
+      ],
+      "native_detail_sha256": "1b631db57477f3945dd56d10541a42a57a65aaab4fdc30a6de01d509c0e942f9",
+      "detail_box_xywh": [
+        1370,
+        445,
+        800,
+        520
+      ],
+      "positive_uniform_scale": 4,
+      "rotation_degrees": 0,
+      "horizontal_flip": false,
+      "vertical_flip": false,
+      "source_pixels": "LiteralRGBA crop from the left main drawing; verify against finalPNG crop after render.",
+      "final_main_PNG_sha256": "134ecde354647cc3981de2060a0af806273d498d119a14954a8ad252e2ab42da",
+      "final_main_crop_RGBA_exact_to_native_detail": true
+    }
+  ],
+  "independent_contact_bands": [
+    {
+      "key": "K02",
+      "rod": "TH",
+      "owner": "X.R",
+      "centre_xy": [
+        397.08000000000004,
+        579.601965973535
+      ],
+      "thumb_side_xy": [
+        398.03886472121576,
+        576.339976021618
+      ],
+      "opposed_finger_side_xy": [
+        396.1211352787843,
+        582.863955925452
+      ],
+      "band_not_shared_with_other_rod": true
+    },
+    {
+      "key": "K02",
+      "rod": "TS",
+      "owner": "X.L",
+      "centre_xy": [
+        480.295,
+        641.4246676300578
+      ],
+      "thumb_side_xy": [
+        481.9179349547905,
+        638.437012674659
+      ],
+      "opposed_finger_side_xy": [
+        478.67206504520954,
+        644.4123225854566
+      ],
+      "band_not_shared_with_other_rod": true
+    },
+    {
+      "key": "K03",
+      "rod": "CN",
+      "owner": "G.R",
+      "centre_xy": [
+        678,
+        726.0
+      ],
+      "thumb_side_xy": [
+        679.7048408602059,
+        723.0583138098409
+      ],
+      "opposed_finger_side_xy": [
+        676.2951591397941,
+        728.9416861901591
+      ],
+      "band_not_shared_with_other_rod": true
+    },
+    {
+      "key": "K03",
+      "rod": "CB",
+      "owner": "G.R",
+      "centre_xy": [
+        682,
+        742.0
+      ],
+      "thumb_side_xy": [
+        683.2069050033016,
+        738.8214185061563
+      ],
+      "opposed_finger_side_xy": [
+        680.7930949966984,
+        745.1785814938437
+      ],
+      "band_not_shared_with_other_rod": true
+    }
+  ],
+  "expected_order": {
+    "K02": "X.R/T_H aboveX.L/T_S",
+    "K03": "orangeC_N abovegreenC_B"
+  },
+  "image_generation_calls": 0
+}

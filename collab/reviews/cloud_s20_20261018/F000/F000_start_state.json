@@ -1,0 +1,212 @@
+{
+  "frame": 0,
+  "time_seconds": 0,
+  "status": "PREPARED_NOT_SUBMITTED",
+  "type": "unique full-body four-rod static construction input, not a production image",
+  "target_size": [
+    1672,
+    941
+  ],
+  "pose_source": "independentF000 joint/palm definition inbuild_F000_input.py",
+  "F020_used_as_input": false,
+  "grandma_pose": {
+    "k": "G",
+    "o": [
+      1030,
+      304
+    ],
+    "s": 1.45,
+    "face": -1,
+    "near": "L",
+    "L": [
+      [
+        18,
+        130
+      ],
+      [
+        -2,
+        190
+      ],
+      [
+        -70,
+        140
+      ]
+    ],
+    "R": [
+      [
+        -20,
+        125
+      ],
+      [
+        -60,
+        198
+      ],
+      [
+        -90,
+        210
+      ]
+    ],
+    "palms": {
+      "L": [
+        -92,
+        140
+      ],
+      "R": [
+        -112,
+        210
+      ]
+    },
+    "bundle_hands": [
+      "L",
+      "R"
+    ],
+    "open_hands": []
+  },
+  "child_pose": {
+    "k": "X",
+    "o": [
+      600,
+      386
+    ],
+    "s": 1.305,
+    "face": 1,
+    "near": "R",
+    "R": [
+      [
+        16,
+        120
+      ],
+      [
+        35,
+        187
+      ],
+      [
+        60,
+        220
+      ]
+    ],
+    "L": [
+      [
+        5,
+        122
+      ],
+      [
+        -10,
+        200
+      ],
+      [
+        25,
+        232
+      ]
+    ],
+    "palms": {
+      "R": [
+        80,
+        226
+      ],
+      "L": [
+        45,
+        237
+      ]
+    },
+    "open_hands": [
+      "R",
+      "L"
+    ]
+  },
+  "rod_axes": [
+    {
+      "id": "TH",
+      "start": [
+        760,
+        520
+      ],
+      "contact": [
+        853.6,
+        596.5
+      ],
+      "owner": "G.R",
+      "end": [
+        864.4400446665151,
+        605.3596518909018
+      ]
+    },
+    {
+      "id": "TS",
+      "start": [
+        730,
+        585
+      ],
+      "contact": [
+        857.6,
+        610.5
+      ],
+      "owner": "G.R",
+      "end": [
+        871.3285431132279,
+        613.2435568133802
+      ]
+    },
+    {
+      "id": "CN",
+      "start": [
+        760,
+        205
+      ],
+      "contact": [
+        882.6,
+        495.0
+      ],
+      "owner": "G.L",
+      "end": [
+        888.0514783036409,
+        507.8950139319402
+      ]
+    },
+    {
+      "id": "CB",
+      "start": [
+        680,
+        290
+      ],
+      "contact": [
+        886.6,
+        509.0
+      ],
+      "owner": "G.L",
+      "end": [
+        896.2069931328975,
+        519.1835987226746
+      ]
+    }
+  ],
+  "held_rod_count": 4,
+  "holders": {
+    "TH": [
+      "G.R"
+    ],
+    "TS": [
+      "G.R"
+    ],
+    "CB": [
+      "G.L"
+    ],
+    "CN": [
+      "G.L"
+    ]
+  },
+  "child_contact_count": 0,
+  "child_hands_open": [
+    "X.R",
+    "X.L"
+  ],
+  "annotation_transform": {
+    "scale": 0.94,
+    "translate": [
+      200,
+      -80
+    ]
+  },
+  "rod_segment_note": "These are straight holding/registration segments. Puppet-side world projection is not claimed as verified; actual scene mechanism stays unchanged.",
+  "image_generation_calls": 0
+}

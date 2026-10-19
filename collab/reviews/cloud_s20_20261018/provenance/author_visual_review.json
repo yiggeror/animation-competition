@@ -1,32 +1,30 @@
 {
-  "UTC": "2026-10-19T00:22:10.762382+00:00",
+  "UTC": "2026-10-19T00:50:59.308812+00:00",
+  "status": "AUTHOR_CHECK_PASS_PENDING_ASTRA_SMALL_GATE",
   "actually_viewed": [
     "reference/S20_K01_F020_handoff.png",
     "reference/S20_K02_F084_crossed_rods.png",
     "reference/S20_K03_F156_laugh_bundle.png",
-    "reference/00_actual_sources_and_ratios.png"
+    "F000/inputs/F000_fullbody_four_rods.png",
+    "F000/qa/F000_hold_contacts_same_view.png"
   ],
-  "image_SHA256": {
-    "reference/S20_K01_F020_handoff.png": "3a491a85f4462cdda437038ba32dbfa488256cc00e28e8eb77b9f0e00f222d9d",
-    "reference/S20_K02_F084_crossed_rods.png": "ac88917b79157abdc69480027695d56009f4394b7fc860069434d43fe1b333b2",
-    "reference/S20_K03_F156_laugh_bundle.png": "f0a2395edab1e5fcc50194911288247a0957e07afaa780480135787673d462fd",
-    "reference/00_actual_sources_and_ratios.png": "ec2cffb0891ddb8e4e0e898cf3e67b6cc31f034a21ae496168fcb941dd837f83"
+  "current_image_SHA256": {
+    "reference/S20_K01_F020_handoff.png": "554fd057807e972dd5288dcf3a36ba8bc731c70e91fc8ddbf6be123c6a8b440a",
+    "reference/S20_K02_F084_crossed_rods.png": "f2d6118b1bea73a136edd149f4b950951da487589d77b4ccf3e578ad0d41804c",
+    "reference/S20_K03_F156_laugh_bundle.png": "134ecde354647cc3981de2060a0af806273d498d119a14954a8ad252e2ab42da",
+    "F000/inputs/F000_fullbody_four_rods.png": "7bb8cc5b12cd86ca6b621425dca90e9cb878f3ba04c9160b4948098d5c777aee",
+    "F000/qa/F000_hold_contacts_same_view.png": "d430959e20c2ad557305f0ecef36a5f13ed0d3b425f93c5af391a2c9fd6d9e7d"
   },
-  "initial_findings_and_fix": [
-    "K03 disconnected/overlong neck corrected by moving the head with neck into the chest/collar, not stretching face.",
-    "K03 crossed knee ordering corrected; soles align and both leg volumes remain separate.",
-    "K01 shoes now follow the handoff-facing posture; K02 keeps sheet-facing posture.",
-    "K02 grip closeups now explicitly labelX.L/T_S andX.R/T_H."
+  "observations": [
+    "K02R上/L下，K03橙C_N上/绿C_B下；详情来自当前主图原像素裁切4倍正向放大，未另画另一个角度。",
+    "主图每根相应杆有独立拇指侧/指腹侧接触带，详情保留同一标记。",
+    "原三页均有原握/接握/放握三态；共同接握时供给手仍闭合，放握时受手维持。",
+    "F000完整双人全身，奶奶L两鹤签/R两龟签；小满双手张开，不碰杆，杆段已在两人间分开且不穿过小满躯干。",
+    "F000QA裁片和完整提示词/5真实输入文件已读；准备请求没有F020，submitted=false，attempts=0。"
   ],
-  "current_observations": [
-    "All3plates include full head/neck/ribcage/pelvis/limb volumes and sleeve-to-palm chains;K01/B include both whole figures, K03 preserves whole grandma below the camera intent frame.",
-    "OnlyG.L has the jade wrist marker;G.R has2distinct crane shafts at laugh, and actual belly contact follows a visible near forearm.",
-    "K01 shows3separate gripping hands on2turtle shafts with the adult releasing only after child2grips;K02 labels fixed attachments andXdepth.",
-    "Actual master/old-source crops reviewed;2Dpoints are approximate, construction bones are design targets, not3Dmeasurements."
-  ],
-  "result": "Deliverable as0-generation construction proposal for Astra review; not frozen, not production art.",
   "image_generation_calls": 0,
-  "production_character_frames": 0,
-  "actual_scene_frames_rendered": 0,
-  "production_ready": false
+  "generated_character_images": 0,
+  "ready": false,
+  "action_protocol_frozen": true,
+  "detail_and_F000_input_gate_approved_by_Astra": false
 }
