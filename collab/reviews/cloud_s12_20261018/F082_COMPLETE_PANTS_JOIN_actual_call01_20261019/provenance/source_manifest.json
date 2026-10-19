@@ -1,0 +1,60 @@
+{
+  "status": "SINGLE_AUTHORIZED_COMPLETE_TROUSER_REPAIR_FULL_SOURCE_CHAIN",
+  "authorization_source_thread": "01a15188-00cc-7705-b91f-7b18102ba0d0",
+  "actual_two_model_inputs": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_COMPLETE_PANTS_JOIN_actual_call01_20261019/inputs/01_SOLE_98917339_CURRENT082_FULL_POSE.png",
+      "source_path": "collab/reviews/cloud_s12_20261018/F082_WHOLE_PANTS_REJOIN_ZERO_CALL_ONCE_20261019/candidate/F082.png",
+      "SHA256": "a8360b1ff4cc87b6ffe07ae9f1e0b6d50cb58467fc6f15ca008eecc2c9897b1e"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_COMPLETE_PANTS_JOIN_actual_call01_20261019/inputs/02_EXACT_SAME_POSE_COMPLETE_TROUSER_REGION.png",
+      "source_path": "collab/reviews/cloud_s12_20261018/F082_WHOLE_PANTS_REJOIN_ZERO_CALL_ONCE_20261019/diagnostics/REJOIN_COMPLETE_WAIST_BOTH_KNEES_1to1.png",
+      "SHA256": "6f04c227b7412697ff0a0f1c3a6c240a898270e2c5044299a40c70b3d2b55bd2"
+    }
+  ],
+  "exact_executed_prompt_SHA256": "769b61a3e571c15d827ffe9065154cdf8fdf3688ca43abbb4f528f99727f4f93",
+  "untouched_raw_SHA256": "54764bde50dbf8a5aa1fc2dfe3ea3f453ea49ad82af8897bcab08d53a401f0ba",
+  "sources": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_WHOLE_PANTS_REJOIN_ZERO_CALL_ONCE_20261019/candidate/F082.png",
+      "role": "sole same-pose mother approved98917339",
+      "SHA256": "a8360b1ff4cc87b6ffe07ae9f1e0b6d50cb58467fc6f15ca008eecc2c9897b1e"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_WHOLE_PANTS_REJOIN_ZERO_CALL_ONCE_20261019/diagnostics/REJOIN_COMPLETE_WAIST_BOTH_KNEES_1to1.png",
+      "role": "exact same pose complete trouser crop, not alternate pose",
+      "SHA256": "6f04c227b7412697ff0a0f1c3a6c240a898270e2c5044299a40c70b3d2b55bd2"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F074_PANTS_LOCAL_actual_call01_20261019/candidate/F074.png",
+      "role": "original shin/support and actual ground-contour geometry, never another model pose input",
+      "SHA256": "2fbceafa0d533d727e6b72f0e292c63f98295ee34dd4a677a51e62785b768900"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_WHOLE_PANTS_REJOIN_ZERO_CALL_ONCE_20261019/geometry/CURRENT082_UPPER_ARMS_HANDS_UNCHANGED.png",
+      "role": "current actual upper/blouse protection source",
+      "SHA256": "0e457d77f024335ad370d1c85bd72ca5e44facd5759d56f8058fb1bde98726a9"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_WHOLE_PANTS_REJOIN_ZERO_CALL_ONCE_20261019/geometry/SHOE_AND_SURROUNDING_EMPTY_HARD_PROTECT.png",
+      "role": "current original shoe/ankle/blank protection",
+      "SHA256": "c84658fda10af1403b014649112f883836c1d96fa9f3d260587d785c68387827"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_ACTIVE_actual_call01_20261019/layers/F082_FG_true_front_fingers.png",
+      "role": "exact existing actual true-grip FG pixels",
+      "SHA256": "8055ac52e93d787abb9f6c5787d98863b0c25638702b66d72970d1c4dfdced16"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_ACTIVE_TARGET_FIXED074_SUPPORTS_20261019/code_props/F082_TRUE_CRANE_RODS_SAME_RIGID_GRIPS_REFERENCE.png",
+      "role": "unchanged true prop image, no person reference RGB adopted",
+      "SHA256": "ead1c0ea9e619da21cd784064848ce2e384a5874f610bfc018246f827a3a577c"
+    }
+  ],
+  "registration": "one native identity matrix",
+  "raw_source_tool_path": "/workspace/generated_images/exec-007e1212-d18d-43f3-8f0e-f6d2cc8709e0.png",
+  "imagegen_calls": 1,
+  "actual082_Canvas": 1,
+  "next086_calls": 0
+}

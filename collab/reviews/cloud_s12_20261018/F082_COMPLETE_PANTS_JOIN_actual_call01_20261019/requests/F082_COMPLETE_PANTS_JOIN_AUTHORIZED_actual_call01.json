@@ -1,0 +1,40 @@
+{
+  "tool": "image_gen.imagegen",
+  "status": "ASTRA_AUTHORIZED_EXACTLY_ONE_COMPLETE_TROUSER_JOIN_CALL_AND_ONE_REAL082_CANVAS",
+  "authorization_source_thread": "01a15188-00cc-7705-b91f-7b18102ba0d0",
+  "approved_commit": "98917339413cab124030a19afca6f5808cb109f7",
+  "call_allowed": true,
+  "maximum_imagegen_calls": 1,
+  "maximum_actual082_Canvas": 1,
+  "actual_two_input_PNGs": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_COMPLETE_PANTS_JOIN_actual_call01_20261019/inputs/01_SOLE_98917339_CURRENT082_FULL_POSE.png",
+      "source_path": "collab/reviews/cloud_s12_20261018/F082_WHOLE_PANTS_REJOIN_ZERO_CALL_ONCE_20261019/candidate/F082.png",
+      "SHA256": "a8360b1ff4cc87b6ffe07ae9f1e0b6d50cb58467fc6f15ca008eecc2c9897b1e"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F082_COMPLETE_PANTS_JOIN_actual_call01_20261019/inputs/02_EXACT_SAME_POSE_COMPLETE_TROUSER_REGION.png",
+      "source_path": "collab/reviews/cloud_s12_20261018/F082_WHOLE_PANTS_REJOIN_ZERO_CALL_ONCE_20261019/diagnostics/REJOIN_COMPLETE_WAIST_BOTH_KNEES_1to1.png",
+      "SHA256": "6f04c227b7412697ff0a0f1c3a6c240a898270e2c5044299a40c70b3d2b55bd2"
+    }
+  ],
+  "prompt_SHA256": "769b61a3e571c15d827ffe9065154cdf8fdf3688ca43abbb4f528f99727f4f93",
+  "tool_arguments": {
+    "prompt": "Edit the supplied image of the same elderly woman at this exact rising-on-her-knees pose. Image 1 is the sole pose and placement source. Image 2 is an exact close view of its trouser region, not a second pose. Produce one coherent hand-drawn repair of the navy trousers from the waistband hidden beneath the blue blouse through both thighs, both complete rounded knee forms, and their natural folded connections to the grounded shins. Close the accidental long transparent slit above the rear shin, the fine gaps beneath the blouse hem, and the detached curved line beneath the near knee. These gaps and detached lines are assembly defects, not anatomy or decoration. Preserve the current hip height, forward thigh direction, complete knee volume and grounded leg lengths. The knees must flow into the existing shins through continuous fabric volume, meaningful soft folds and unbroken ink contours. The lower knee contour must meet the existing ground-contact position in one continuous rounded curve, without a duplicate arc, floating strip, ledge, or downward extension. Preserve both original bare ankles and shoes exactly in their positions, their size and their surrounding transparent space. Preserve the blue floral blouse, all upper-body pixels, face, hair, both complete arms, hands, fingers and rod-grip shapes. Use the same navy fabric planes, existing ink weight and restrained shadows. Do not enlarge the knees, lengthen the shins, lower the feet, introduce a new pose, create extra limbs, flatten the fabric shading, or paint a background. Return a single clean transparent RGBA illustration in the same viewpoint; only the coherent trouser repair will be adopted.\n\nUse the same native1024x1536 full canvas coordinates as Image 1, with enough neighboring unchanged context to register this single coherent trouser repair. Return one PNG illustration, not a contact sheet.\n",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F082_COMPLETE_PANTS_JOIN_actual_call01_20261019/inputs/01_SOLE_98917339_CURRENT082_FULL_POSE.png",
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F082_COMPLETE_PANTS_JOIN_actual_call01_20261019/inputs/02_EXACT_SAME_POSE_COMPLETE_TROUSER_REGION.png"
+    ],
+    "transparent_background": true
+  },
+  "adoption_policy": {
+    "whole_semantic_new_pants": "waist hidden under existing blue hem, both thighs, both full round knees, complete natural knee/shin folded connector bands",
+    "upper_blouse_arms_hands_fingers_true_props": "existing actualRGBA hard protected",
+    "bare_ankles_shoes_surrounding_empty": "existing actualRGBA hard protected",
+    "static074_shins": "original native length/axis/support; only natural semantic narrow bands on both sides of fold valleys can redraw",
+    "ground_contact": "old1to2px ink strip is geometry reference, not pasted old art; new real drawing can redraw contour and AA within3native of original actual ground contour",
+    "registration": "at most one uniform similarity for the whole new semantic patch, no local knee pulling",
+    "no_second_call_or_automatic_mask_trials": true
+  },
+  "later086_generation_authorized": false
+}
