@@ -1,0 +1,19 @@
+{
+  "status": "V10_GEOMETRY_PENDING_DUAL_INCREMENTAL_AND_MATERIAL_GATE",
+  "candidate_sha256": "c5cfa9f7cdbc049c66e511418b503915c0f898f0c9e585738aef481fb66fb281",
+  "actual_native_calls": 21,
+  "effective_permission_union_pixels": 107303,
+  "diff_outside_union_vs_NO_ROD": 0,
+  "near_true_distal_RGBA_change": 0,
+  "true_low_seat_RGBA_change": 0,
+  "fixed_table_box_RGBA_change": 0,
+  "old_black_cleared1040_resurrected": 0,
+  "head_above680_RGBA_change_vs043": 0,
+  "forearm_endpoint_projection_factor": 1.1106661195323195,
+  "forearm_centreline_local_tangent_derivative_range": [
+    0.9999999999999997,
+    1.193280555122339
+  ],
+  "cross_sectional_width_factor": 1,
+  "clarification": "1.110666 is endpoint projection ratio, not a uniform per-texel scale. Smooth bend distributes rotation, local centreline derivative varies. Original report original sleeve unwarped is obsolete: upper sleeve cap horizontally registers up to28px at outer cap, tapers to0 byy820 andx845; actual cuff/skin/elbow unchanged. Lower body cloth uses smoothsource remap, not literal rigid up18 everywhere. These are same-source cloth-only adjustments."
+}

@@ -1,0 +1,137 @@
+{
+  "status": "LOCKED_F046_DUAL_STATIC_COLOR_FORMAL6F_FINAL233_AND_LAYER_REUSE",
+  "source": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_FINAL_LOCKED/S08_F046_grandma_match_box_RGBA.png",
+  "source_sha256": "7722c85545660ae240acc72d512985572b1a5ba5532780b150b4b8274c385ec2",
+  "derive_from_F043_sha256": "a2a9285481789c1b7bd69a58694026e7a473138093d8039ecf2d74b212311dd1",
+  "raw_call": 21,
+  "actual_global_valid_calls": 21,
+  "actual_preserved_raws": 21,
+  "actual_tool_submissions": 22,
+  "pre_generation_argument_validation_failures": 1,
+  "quality_rejected_raw_calls": [
+    12
+  ],
+  "static_exposures_passed": 19,
+  "static_unique_images_passed": 18,
+  "remaining_unique_images_planned": 22,
+  "formal_exposures": 41,
+  "formal_unique_images_planned": 40,
+  "near_match_head": [
+    1350,
+    782.572972972973
+  ],
+  "near_visible_wood_exit": [
+    1310.442494558651,
+    806.8258854425643
+  ],
+  "visible_segment_px": 46.400431,
+  "near_transform_from043": {
+    "translation": [
+      -65,
+      -12
+    ],
+    "clockwise_rotation_degrees": 0,
+    "scale": 1
+  },
+  "near_wrist_screen_proxy": [
+    1204.847686868556,
+    815.976655293115
+  ],
+  "actual_native_elbow_proxy": [
+    975,
+    914
+  ],
+  "far_knob_low": [
+    1233.953205,
+    766.894374
+  ],
+  "fixed_table_box_center": [
+    1100,
+    960
+  ],
+  "group_assets": [
+    {
+      "name": "F046_true_near_hand_match_INDEPENDENT_FOREGROUND",
+      "rgba": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_FINAL_LOCKED/F046_true_near_hand_match_INDEPENDENT_FOREGROUND_RGBA.png",
+      "footprint": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_FINAL_LOCKED/F046_true_near_hand_match_INDEPENDENT_FOREGROUND_footprint.png",
+      "rgba_sha256": "70b8945f86b86ddc0b83e8ffc570fe4707d3dfa20aab13544272dddc7e56d035",
+      "footprint_pixels": 8994,
+      "visible_pixels": 8994,
+      "alpha0_inside": 0
+    },
+    {
+      "name": "F046_near_distal_hard_guard",
+      "rgba": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_FINAL_LOCKED/F046_near_distal_hard_guard_RGBA.png",
+      "footprint": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_FINAL_LOCKED/F046_near_distal_hard_guard_footprint.png",
+      "rgba_sha256": "6f38ee95820d01800e62c02dde993dd0fbad833f91b2c4185a64c1eb524f3ea1",
+      "footprint_pixels": 6611,
+      "visible_pixels": 6611,
+      "alpha0_inside": 0
+    },
+    {
+      "name": "F046_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT",
+      "rgba": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_FINAL_LOCKED/F046_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_RGBA.png",
+      "footprint": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_FINAL_LOCKED/F046_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png",
+      "rgba_sha256": "6168e4a06d4bb88ba4659280b9c35d3d9002ab8f252392fa0819e389dda2acd0",
+      "footprint_pixels": 14849,
+      "visible_pixels": 6650,
+      "alpha0_inside": 8199
+    },
+    {
+      "name": "F046_fixed_table_box",
+      "rgba": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_FINAL_LOCKED/F046_fixed_table_box_RGBA.png",
+      "footprint": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_FINAL_LOCKED/F046_fixed_table_box_footprint.png",
+      "rgba_sha256": "cf3e3aedca8b9b681ac9e1c6cd9e6bc80eba689168ace734840e86ae7a1f5f1f",
+      "footprint_pixels": 1764,
+      "visible_pixels": 1665,
+      "alpha0_inside": 99
+    }
+  ],
+  "near_reuse_rule": "6611 true distal pixels immutable. Independent near collar derives exclusively from actual transformed native foreground and original independent near hand, no far/backing copied from final mother. 2383 root is explicitly editable for subsequent wrist joins; its flattened-current-mother difference is not a distal mismatch. Original collar and complete native foreground donor retained separately.",
+  "near_root_editable_mask": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_FINAL_LOCKED/F046_near_proximal_collar_REBUILD_NOT_HARD.png",
+  "near_root_foreground_vs_flat_mismatch_pixels": 67,
+  "near_root_original_overlaps_far_pixels": 263,
+  "near_distal_vs_final_changed": 0,
+  "far_reuse_rule": "Full original far RGBA and alpha0 rod seat retained independently; actual new foreground near arm determines occlusion. Complete159 AA constraint retained, current visible AA separately; never replace full159 with visible subset.",
+  "far_hard_guard": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_FINAL_LOCKED/F046_far_hand_jade_SEAT_hard_guard.png",
+  "far_jade_AA_underlay_mask": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_FINAL_LOCKED/F046_far_original_jade_AA_requires_same_raw_skin_underlay.png",
+  "far_complete_jade_AA_counts": {
+    "historical_complete": 150,
+    "complete_union": 159,
+    "current_frame_visible": 147
+  },
+  "far_jade_visible_only_mask": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_FINAL_LOCKED/F046_far_jadeAA_visible_this_frame_only.png",
+  "shape_provenance": "Raw21 uniformly registered. Native sleeve/cuff/upperarm and round elbow kept with shoulder-cap horizontal registration max28px taper0at820; complete forearm cubic centreline turn13.716deg with endpointprojection1.110666 and localtangentmax1.19328, transverse1, first30px near elbow unchanged. Revised actual elbow975914 accepted instead of original lowguide. Whiteflower cloth sourceband excluded before warp. Real original collar and raw full lapel/placket/sleeve materials reconstructed by explicit domains.",
+  "color_provenance": "Only new near sleeve lit blue softmaxRGB+3/+2/+1,18262pixels. Four comparable flat samples<=4. Crossing-fold upperblue and newly revealed chest/placket turning-plane are diagnostic only. Skin/wrist/head/chest and true hand/seat/box/alpha unchanged by color.",
+  "formal_exposure": "043x3\u2192046x3 isolated6f accepted.046frames46\u201348;next049x2. ActualCanvas withdrawal/independentwickfire still pending.",
+  "no_baked_scene_layers": [
+    "flame",
+    "light cast",
+    "lamp",
+    "lever",
+    "table"
+  ],
+  "box_runtime": "Original1665visible tablebox; historical483 fringe bodybehindtable, not box.",
+  "scope": "F046 static geometry/material, formal6f, final233oldairsemanticcleanup and freshlayer/reuse incremental independently passed2026-10-19T00:57:13Z. Runtime actualCanvas pending.",
+  "root_replay_exact": false,
+  "root_rebuild_required": true,
+  "root_rebuild_whole_domain_pixels": 2383,
+  "root_recomposition_diff_pixels": 57,
+  "root_recomposition_max_RGBA_difference": [
+    100,
+    49,
+    13,
+    0
+  ],
+  "root_independent_direct_vs_flattened_diff_pixels": 67,
+  "root_rule": "Every future input must release ALL2383 rootpixels, not just57differences. Only6611true distal hard-reusable.263far-overlaprootpixels cannot be cropped from flattened mother. These differences include post-composite collarcolour blending and are NOT described as pure rounding.",
+  "old_a6_approved_source_sha256": "a6ccf1721114d61b30b68234fbd22ef34e92bd6952b901ba79a2aae705b69441",
+  "final_old_air_cleanup": {
+    "pixels": 233,
+    "semantic_mask": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_FINAL_LOCKED/F046_CLEAR233_old043_air_contour.png",
+    "old043_exactRGBA": 233,
+    "NO_ROD_transparent": 223,
+    "NO_ROD_withdrawn_lowelbow_guide": 10,
+    "actual_new_arm_hand_box_head_rod_changed": 0
+  }
+}

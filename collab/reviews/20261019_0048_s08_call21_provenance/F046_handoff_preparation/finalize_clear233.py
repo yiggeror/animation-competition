@@ -1,0 +1,25 @@
+from pathlib import Path
+from PIL import Image
+import numpy as np,json,hashlib,shutil
+R=Path(__file__).resolve().parent.parent;D=R/'F046_old_air_semantic_candidate';O=R/'F046_FINAL_LOCKED';L=R/'F046_LAYER_PARTITION';H=R/'F046_handoff_preparation/history_a6_before233';H.mkdir(parents=True,exist_ok=True)
+# Preserve the original approved a6 snapshot and its contract before applying explicit final semantic old-air cleanup.
+for p in [O/'S08_F046_grandma_match_box_RGBA.png',O/'HAND_REUSE_CONTRACT.json',O/'SEALED_MANIFEST.json',L/'LAYER_VALIDATION.json',L/'layer_contract.js']+list((L/'frames').glob('*.png')):
+ if not(H/p.name).exists():shutil.copy2(p,H/p.name)
+src=D/'candidates/S08_F046_clear_old_air233_RGBA.png';sha=hashlib.sha256(src.read_bytes()).hexdigest();assert sha=='7722c85545660ae240acc72d512985572b1a5ba5532780b150b4b8274c385ec2';a=np.array(Image.open(src));m=np.array(Image.open(D/'masks/CLEAR233_old043_air_contour_outside_actual_new_foreground.png'))>0;assert m.sum()==233;old=np.array(Image.open(R/'F046_color_final/candidates/S08_F046_same_raw_final_color_RGBA.png'));assert not(np.any(a!=old,2)&~m).any();shutil.copy2(src,O/'S08_F046_grandma_match_box_RGBA.png');shutil.copy2(D/'masks/CLEAR233_old043_air_contour_outside_actual_new_foreground.png',O/'F046_CLEAR233_old043_air_contour.png')
+arts={};layers={}
+for role,name in [('body','body_behind'),('arms','forearms_elbows'),('table_box','table_box')]:
+ p=L/'frames'/f'F046_{name}_original_pixels.png';shutil.copy2(D/'frames'/p.name,p);z=np.array(Image.open(p));layers[role]=z;mask=(z[:,:,3]>0);Image.fromarray(mask.astype('uint8')*255).save(L/'masks'/f'F046_{role}_binary.png');arts[role]=dict(filename=p.name,sha256=hashlib.sha256(p.read_bytes()).hexdigest(),width=1920,height=1080)
+assert np.array_equal(np.array(Image.alpha_composite(Image.alpha_composite(Image.fromarray(layers['body']),Image.fromarray(layers['table_box'])),Image.fromarray(layers['arms']))),a);assert(sum(z[:,:,3]>0 for z in layers.values())).max()==1
+ct=json.loads((O/'HAND_REUSE_CONTRACT.json').read_text());ct.update(source_sha256=sha,status='LOCKED_F046_DUAL_STATIC_COLOR_FORMAL6F_FINAL233_AND_LAYER_REUSE',old_a6_approved_source_sha256=hashlib.sha256((R/'F046_color_final/candidates/S08_F046_same_raw_final_color_RGBA.png').read_bytes()).hexdigest(),final_old_air_cleanup=dict(pixels=233,semantic_mask=str(O/'F046_CLEAR233_old043_air_contour.png'),old043_exactRGBA=233,NO_ROD_transparent=223,NO_ROD_withdrawn_lowelbow_guide=10,actual_new_arm_hand_box_head_rod_changed=0),scope='F046 static geometry/material, formal6f, final233oldairsemanticcleanup and freshlayer/reuse incremental independently passed2026-10-19T00:57:13Z. Runtime actualCanvas pending.')
+(O/'HAND_REUSE_CONTRACT.json').write_text(json.dumps(ct,indent=2));rep=json.loads((L/'LAYER_VALIDATION.json').read_text());rep.update(source_sha256=sha,status='PASSED_FINAL233_ORIGINAL_RGBA_LAYER_AND_REUSE_INCREMENTAL',foreground_arm_pixels=int((layers['arms'][:,:,3]>0).sum()),final233_old_air_removed=True);(L/'LAYER_VALIDATION.json').write_text(json.dumps(rep,indent=2));(L/'layer_contract.js').write_text('export const LAYER_ARTS = '+json.dumps({'046':arts},indent=2)+';\n')
+# Recreate fresh QA using exactly the final masks and source pixels. No anatomy is repainted.
+from PIL import ImageDraw
+arm=layers['arms'][:,:,3]>0;box=layers['table_box'][:,:,3]>0
+for tag,col in [('light',(244,242,237,255)),('dark',(34,42,53,255))]:
+ bg=Image.alpha_composite(Image.new('RGBA',(1920,1080),col),Image.fromarray(a));v=np.array(bg);v[arm,:3]=np.rint(v[arm,:3]*.5+np.array([220,70,150])*.5);v[box,:3]=np.rint(v[box,:3]*.5+np.array([30,190,215])*.5);ov=Image.fromarray(v);ImageDraw.Draw(ov).line((620,981,1490,981),fill=(230,90,20,255));ov.crop((700,680,1470,1020)).resize((1540,680)).save(L/'qa'/f'F046_threeway_overlay_{tag}.png')
+ table=Image.new('RGBA',(1920,1080));d=ImageDraw.Draw(table);d.rectangle((764,950,1920,981),fill='#b48b60');d.rectangle((764,981,1920,1029),fill='#6a4226');d.rectangle((785,1029,1920,1080),fill='#5a361e');v=Image.new('RGBA',(1920,1080),col);v.alpha_composite(Image.fromarray(layers['body']));v.alpha_composite(table);v.alpha_composite(Image.fromarray(layers['table_box']));v.alpha_composite(Image.fromarray(layers['arms']));v.crop((700,680,1470,1020)).resize((1540,680)).save(L/'qa'/f'F046_layer_TOPOLOGY_ONLY_NOT_CANVAS_{tag}.png')
+files=[]
+for folder in [O,L]:
+ for p in sorted(folder.rglob('*')):
+  if p.is_file() and p.name!='SEALED_MANIFEST.json':files.append(dict(path=str(p),sha256=hashlib.sha256(p.read_bytes()).hexdigest(),bytes=p.stat().st_size))
+(O/'SEALED_MANIFEST.json').write_text(json.dumps(dict(status='SEALED_FINAL233_DUAL_STATIC_COLOR_FORMAL6F_LAYER_REUSE_PASSED',mother_sha256=sha,prior_a6_preserved=str(H),independent_final_layer_reuse_review='/tmp/S08_F046_independent_review_0003/F046_FINAL_LAYER_AND_REUSE_INCREMENTAL_REVIEW.json',independent_final_review_utc='2026-10-19T00:57:13.798302Z',coordinator_semantic_cleanup_utc='2026-10-19T00:54:44Z',files=files),indent=2));print(json.dumps(dict(final=sha,layers=arts),indent=2))

@@ -1,0 +1,34 @@
+{
+  "status": "ZERO_CALL_GEOMETRY_DIAGNOSTIC_REVISED_ELBOW_ROUTE_NOT_APPROVED",
+  "candidate_sha256": "07a1d02baafb4550a6309e329d9d9213d600b71dcb7130bfbca3b50e42ce0fcb",
+  "source_raw_sha256": "3f2793867cf321aaf5a54ed1bb2d59022f6683181bfe75d3ae7b6d7a886fa3ea",
+  "elbow_fixed_actual": [
+    975,
+    914
+  ],
+  "wrist_source": [
+    1158.0,
+    791.0
+  ],
+  "wrist_target_actual_collar": [
+    1204.847686868556,
+    829.476655293115
+  ],
+  "source_forearm_projection": 220.4948979001555,
+  "target_projection": 244.8962126274407,
+  "axial_factor": 1.1106661195323195,
+  "rotation_clockwise_deg": 13.71596830232081,
+  "terminal_axis_calibration_y_plus6": "Actual native wrist section was about6px above original collar section; source cross-section unchanged; actual endpoints now meet source collar edges",
+  "sleeve_cap_horizontal_correction_max28_to_zero_y820": true,
+  "explicit_added_permission_pixels": 7633,
+  "transverse_factor": 1,
+  "round_elbow_unchanged_radius_forearm30px": true,
+  "smooth_transition_forearm_distance": [
+    30,
+    220.4948979001555
+  ],
+  "method": "cubic centreline: tangent continuous at elbow; cross-sectional thickness1; original sleeve unwarped; real independent palm-root collar restored for connection",
+  "outside_white_diff_vs_NO_ROD": 0,
+  "near_hard_changed": 0,
+  "notes": "Original raw sleeve/upper arm/round elbow kept; only continuous foreground forearm remapped. Wrong native hands/match/far lower arm not adopted. Old sourcecloth restored only where actual043 body visible. Some boundary/underlay and wrist collar gaps may remain and must be actually reviewed; no final claim."
+}

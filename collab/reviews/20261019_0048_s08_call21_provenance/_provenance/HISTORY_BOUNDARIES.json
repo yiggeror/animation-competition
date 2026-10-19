@@ -1,0 +1,291 @@
+{
+  "native_call": 21,
+  "native_submissions_for_F046": 1,
+  "raws_for_F046": 1,
+  "global_actual_images": 21,
+  "global_tool_submissions": 22,
+  "historical_parameter_validation_failure_without_image": 1,
+  "version_count_is_not_generation_count": true,
+  "superseded_diagnostics": [
+    {
+      "version": 1,
+      "disposition": "SUPERSEDED_SAME_RAW21_DIAGNOSTIC_NOT_ADOPTED_FINAL",
+      "new_generation_calls": 0,
+      "script": {
+        "source_relative_path": "F046_same_raw_geometry_diagnostic/warp_forearm_candidate.py",
+        "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_diagnostic/warp_forearm_candidate.py",
+        "sha256": "447e9563739c7063df59c611b61823e2d8a7a23394ab2f3215fe88598f1e78bf",
+        "bytes": 7553
+      },
+      "geometry_records": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v1/geometry/DEFORMATION_AND_CHECKS.json",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v1/geometry/DEFORMATION_AND_CHECKS.json",
+          "sha256": "302df3a9edbef8f6aa52108cde09be193179b8743c61706abd7a2d761e96ca49",
+          "bytes": 1141
+        }
+      ],
+      "candidate_hash_records_only_not_copied": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v1/candidates/S08_F046_same_raw_arm_geometry_DIAGNOSTIC_RGBA.png",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v1/candidates/S08_F046_same_raw_arm_geometry_DIAGNOSTIC_RGBA.png",
+          "sha256": "a03219cbfb3743512a0cb9312be3e96b0eb0f2b44aaefca2bf326bd61e88c8cb",
+          "bytes": 558100
+        }
+      ],
+      "reason_evidence": "Individual rejection reason not explicitly preserved in available production geometry records; do not infer a specific defect or label an additional generation failure.",
+      "group_context": "Earlier same-raw diagnostics progressively joined the sleeve and proximal palm root; no separate native-call failure."
+    },
+    {
+      "version": 2,
+      "disposition": "SUPERSEDED_SAME_RAW21_DIAGNOSTIC_NOT_ADOPTED_FINAL",
+      "new_generation_calls": 0,
+      "script": {
+        "source_relative_path": "F046_same_raw_geometry_diagnostic/warp_forearm_candidate_v2.py",
+        "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_diagnostic/warp_forearm_candidate_v2.py",
+        "sha256": "5f3d8f2e1c3abe835eb166625e603af0a482c861f00ec234854c1cf9f97f70fb",
+        "bytes": 8562
+      },
+      "geometry_records": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v2/geometry/DEFORMATION_AND_CHECKS.json",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v2/geometry/DEFORMATION_AND_CHECKS.json",
+          "sha256": "79676e424467e40776fb7e6d4f38ee77a5903ff9d00c14f51ff41b8c10065c5b",
+          "bytes": 1330
+        }
+      ],
+      "candidate_hash_records_only_not_copied": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v2/candidates/S08_F046_same_raw_arm_geometry_DIAGNOSTIC_RGBA.png",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v2/candidates/S08_F046_same_raw_arm_geometry_DIAGNOSTIC_RGBA.png",
+          "sha256": "f512a82cbbb7ec9fa51bee93cc0f20f314f2b9e799ac8fa6cab7d1529b17b62c",
+          "bytes": 560113
+        }
+      ],
+      "reason_evidence": "Individual rejection reason not explicitly preserved in available production geometry records; do not infer a specific defect or label an additional generation failure.",
+      "group_context": "Earlier same-raw diagnostics progressively joined the sleeve and proximal palm root; no separate native-call failure."
+    },
+    {
+      "version": 3,
+      "disposition": "SUPERSEDED_SAME_RAW21_DIAGNOSTIC_NOT_ADOPTED_FINAL",
+      "new_generation_calls": 0,
+      "script": {
+        "source_relative_path": "F046_same_raw_geometry_diagnostic/warp_forearm_candidate_v3.py",
+        "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_diagnostic/warp_forearm_candidate_v3.py",
+        "sha256": "5f981e278b06d116e137223ee5d3db5af3ee05fb6893dd0149b6e1782872d05e",
+        "bytes": 10647
+      },
+      "geometry_records": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v3/geometry/DEFORMATION_AND_CHECKS.json",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v3/geometry/DEFORMATION_AND_CHECKS.json",
+          "sha256": "45ba2fbb8f61cf0ebe0dafb826fcd4c4d72521016a2e0a51939cd970999c6ae9",
+          "bytes": 1629
+        }
+      ],
+      "candidate_hash_records_only_not_copied": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v3/candidates/S08_F046_same_raw_arm_geometry_DIAGNOSTIC_RGBA.png",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v3/candidates/S08_F046_same_raw_arm_geometry_DIAGNOSTIC_RGBA.png",
+          "sha256": "df1c787998aacae96430328532a95f9db412d32c0280a83fd05b920669e7b999",
+          "bytes": 560189
+        }
+      ],
+      "reason_evidence": "Individual rejection reason not explicitly preserved in available production geometry records; do not infer a specific defect or label an additional generation failure.",
+      "group_context": "Earlier same-raw diagnostics progressively joined the sleeve and proximal palm root; no separate native-call failure."
+    },
+    {
+      "version": 4,
+      "disposition": "SUPERSEDED_SAME_RAW21_DIAGNOSTIC_NOT_ADOPTED_FINAL",
+      "new_generation_calls": 0,
+      "script": {
+        "source_relative_path": "F046_same_raw_geometry_diagnostic/warp_forearm_candidate_v4.py",
+        "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_diagnostic/warp_forearm_candidate_v4.py",
+        "sha256": "47b452e9cbda9f0467b8e189a8fe21b4368a1d8043842f588b22bf00e3218358",
+        "bytes": 11574
+      },
+      "geometry_records": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v4/geometry/DEFORMATION_AND_CHECKS.json",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v4/geometry/DEFORMATION_AND_CHECKS.json",
+          "sha256": "3358852e874a9b9dc3f0c4364f9884aecb9008c721236eb972e8061f4c25633d",
+          "bytes": 1629
+        }
+      ],
+      "candidate_hash_records_only_not_copied": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v4/candidates/S08_F046_same_raw_arm_geometry_DIAGNOSTIC_RGBA.png",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v4/candidates/S08_F046_same_raw_arm_geometry_DIAGNOSTIC_RGBA.png",
+          "sha256": "39bf9f7c87d1b02f1929791dbda6c97497dfcc4c162ea26a3b481674195ba810",
+          "bytes": 562827
+        }
+      ],
+      "reason_evidence": "Individual rejection reason not explicitly preserved in available production geometry records; do not infer a specific defect or label an additional generation failure.",
+      "group_context": "Earlier same-raw diagnostics progressively joined the sleeve and proximal palm root; no separate native-call failure."
+    },
+    {
+      "version": 5,
+      "disposition": "SUPERSEDED_SAME_RAW21_DIAGNOSTIC_NOT_ADOPTED_FINAL",
+      "new_generation_calls": 0,
+      "script": {
+        "source_relative_path": "F046_same_raw_geometry_diagnostic/warp_forearm_candidate_v5.py",
+        "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_diagnostic/warp_forearm_candidate_v5.py",
+        "sha256": "a60cb0c891bf4ce962344d97e0fd7482255d297cd9864f9c7e63ffbf11a03768",
+        "bytes": 12049
+      },
+      "geometry_records": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v5/geometry/DEFORMATION_AND_CHECKS.json",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v5/geometry/DEFORMATION_AND_CHECKS.json",
+          "sha256": "c108f4bb38fb7db161e6be4e820aaeb9f3af155fa255ab419c3507a1efb7321c",
+          "bytes": 1629
+        }
+      ],
+      "candidate_hash_records_only_not_copied": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v5/candidates/S08_F046_same_raw_arm_geometry_DIAGNOSTIC_RGBA.png",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v5/candidates/S08_F046_same_raw_arm_geometry_DIAGNOSTIC_RGBA.png",
+          "sha256": "e12fca145cd096a80158de28e834f76aab1b5b1bae68b2a82b9b2993c6c4506c",
+          "bytes": 562907
+        }
+      ],
+      "reason_evidence": "Individual rejection reason not explicitly preserved in available production geometry records; do not infer a specific defect or label an additional generation failure.",
+      "group_context": "Earlier same-raw diagnostics progressively joined the sleeve and proximal palm root; no separate native-call failure."
+    },
+    {
+      "version": 6,
+      "disposition": "SUPERSEDED_SAME_RAW21_DIAGNOSTIC_NOT_ADOPTED_FINAL",
+      "new_generation_calls": 0,
+      "script": {
+        "source_relative_path": "F046_same_raw_geometry_diagnostic/finish_continuous_cloth_v6.py",
+        "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_diagnostic/finish_continuous_cloth_v6.py",
+        "sha256": "4699f8a807f675f3c1b14eb3712209debe6b99fe2c94dbdd01b973e5c46e9a89",
+        "bytes": 6220
+      },
+      "geometry_records": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v6/geometry/CLOTH_SOURCE_AND_CHECKS.json",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v6/geometry/CLOTH_SOURCE_AND_CHECKS.json",
+          "sha256": "dfe2742ae33db9db8f2148c1e4fc5ea801d3e518d259e82eaba084d889ee52ba",
+          "bytes": 1141
+        }
+      ],
+      "candidate_hash_records_only_not_copied": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v6/candidates/S08_F046_same_raw_continuous_arm_cloth_RGBA.png",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v6/candidates/S08_F046_same_raw_continuous_arm_cloth_RGBA.png",
+          "sha256": "3be2a233ff35928a5b242eb33695a993f9f6085d8bf08ead68b47f0e53758e35",
+          "bytes": 564565
+        }
+      ],
+      "reason_evidence": "Individual rejection reason not explicitly preserved in available production geometry records; do not infer a specific defect or label an additional generation failure.",
+      "group_context": "Earlier same-raw diagnostics progressively joined the sleeve and proximal palm root; no separate native-call failure."
+    },
+    {
+      "version": 7,
+      "disposition": "SUPERSEDED_SAME_RAW21_DIAGNOSTIC_NOT_ADOPTED_FINAL",
+      "new_generation_calls": 0,
+      "script": {
+        "source_relative_path": "F046_same_raw_geometry_diagnostic/finish_continuous_cloth_v7.py",
+        "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_diagnostic/finish_continuous_cloth_v7.py",
+        "sha256": "832fcbce59ab61e21102368968bc38cde858f86c5733a62d1c98782f9f31241a",
+        "bytes": 8076
+      },
+      "geometry_records": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v7/geometry/CLOTH_SOURCE_AND_CHECKS.json",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v7/geometry/CLOTH_SOURCE_AND_CHECKS.json",
+          "sha256": "120d176e7823b274b8e943843482e67d4df2a412cf169089911a0df1adab3033",
+          "bytes": 1280
+        }
+      ],
+      "candidate_hash_records_only_not_copied": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v7/candidates/S08_F046_same_raw_continuous_arm_cloth_RGBA.png",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v7/candidates/S08_F046_same_raw_continuous_arm_cloth_RGBA.png",
+          "sha256": "e18b4e10c1095a648b20cbc85c9b59534277bca088969abab20e8480afed2cd7",
+          "bytes": 563656
+        }
+      ],
+      "reason_evidence": "Author-confirmed grouped deficiencies before final route: shape could be retained, but full shoulder/collar texture was interrupted, placket stopped too early, and source white-flower cloth antialiasing contaminated the lower forearm edge."
+    },
+    {
+      "version": 8,
+      "disposition": "SUPERSEDED_SAME_RAW21_DIAGNOSTIC_NOT_ADOPTED_FINAL",
+      "new_generation_calls": 0,
+      "script": {
+        "source_relative_path": "F046_same_raw_geometry_diagnostic/clean_three_interfaces_v8.py",
+        "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_diagnostic/clean_three_interfaces_v8.py",
+        "sha256": "1ea17316ddd1b75879e90c061ea500c6d9670e7c815f80a03698afc73ba03cde",
+        "bytes": 4668
+      },
+      "geometry_records": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v8/geometry/THREE_INTERFACE_CHECKS.json",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v8/geometry/THREE_INTERFACE_CHECKS.json",
+          "sha256": "3a87a780392aab5c82eb3917d45cb4321971e6363e5d483bb1e2714104e9513e",
+          "bytes": 358
+        }
+      ],
+      "candidate_hash_records_only_not_copied": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v8/candidates/S08_F046_same_raw_three_interfaces_RGBA.png",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v8/candidates/S08_F046_same_raw_three_interfaces_RGBA.png",
+          "sha256": "7fa903e11f22eee110d3dfb6b1a0117835231b9890078af43247524fb91f42ab",
+          "bytes": 563587
+        }
+      ],
+      "reason_evidence": "Individual rejection reason not explicitly preserved in available production geometry records; do not infer a specific defect or label an additional generation failure.",
+      "group_context": "Superseded interface/source-edge diagnostics. Final v9_base removes the complete source cloth edge before the same warp; v9_cloth provides continuous cloth and releases 349 actual forearm pixels; v10 restores whole original collar/raw sleeve join and continues the placket to the foreground occlusion. No individual additional failure reason is claimed."
+    },
+    {
+      "version": 9,
+      "disposition": "SUPERSEDED_SAME_RAW21_DIAGNOSTIC_NOT_ADOPTED_FINAL",
+      "new_generation_calls": 0,
+      "script": {
+        "source_relative_path": "F046_same_raw_geometry_diagnostic/clean_three_interfaces_v9.py",
+        "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_diagnostic/clean_three_interfaces_v9.py",
+        "sha256": "1853b3b5e287a02813077ffcbff2858cff8167f7a917ab2d0e904c76888a9af8",
+        "bytes": 5385
+      },
+      "geometry_records": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v9/geometry/THREE_INTERFACE_CHECKS.json",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v9/geometry/THREE_INTERFACE_CHECKS.json",
+          "sha256": "8680ee9f53b78bafabfddca1b7637be68eff51d9419a804067eeef61e3b54156",
+          "bytes": 549
+        }
+      ],
+      "candidate_hash_records_only_not_copied": [
+        {
+          "source_relative_path": "F046_same_raw_geometry_candidate_v9/candidates/S08_F046_same_raw_three_interfaces_RGBA.png",
+          "local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v9/candidates/S08_F046_same_raw_three_interfaces_RGBA.png",
+          "sha256": "b93586409757feabd782a70f0d8c73c284d201337326a8fb1d95e62db3a33423",
+          "bytes": 560407
+        }
+      ],
+      "reason_evidence": "Individual rejection reason not explicitly preserved in available production geometry records; do not infer a specific defect or label an additional generation failure.",
+      "group_context": "Superseded interface/source-edge diagnostics. Final v9_base removes the complete source cloth edge before the same warp; v9_cloth provides continuous cloth and releases 349 actual forearm pixels; v10 restores whole original collar/raw sleeve join and continues the placket to the foreground occlusion. No individual additional failure reason is claimed."
+    }
+  ],
+  "adopted_intermediates": [
+    "F046_same_raw_geometry_candidate_v9_base",
+    "F046_same_raw_geometry_candidate_v9_cloth"
+  ],
+  "adopted_final_geometry": "F046_same_raw_geometry_candidate_v10",
+  "adopted_soft_color": "F046_color_final",
+  "important_precedence": "The saved v10 explicit transform disclosure corrects obsolete descriptive labels in earlier diagnostics, including original sleeve unwarped and rigid lower-body up18. Preserve older files as history, not as final geometry claims.",
+  "approved_color_intermediate": {
+    "path": "F046_color_final/candidates/S08_F046_same_raw_final_color_RGBA.png",
+    "sha256": "a6ccf1721114d61b30b68234fbd22ef34e92bd6952b901ba79a2aae705b69441",
+    "disposition": "Approved a6 color intermediate and initial layer history; superseded only by explicit233 old-air semantic cleanup. Not an additional generation or color failure."
+  },
+  "final": {
+    "path": "F046_FINAL_LOCKED/S08_F046_grandma_match_box_RGBA.png",
+    "sha256": "7722c85545660ae240acc72d512985572b1a5ba5532780b150b4b8274c385ec2",
+    "actual_mask_clear_pixels": 233,
+    "outside_mask_RGBA_changes": 0
+  },
+  "historical_large_outputs": "Superseded v1-v9 PNGs are recorded by original path/hash but not included as upload rows. The historical a6 mother is already retained once as the color intermediate; initial a6 layer PNGs are reproducible by seal_handoff.py and not duplicated. Their original hashes remain in preserved historical layer contract and seal manifest.",
+  "review_precedence": "Historical intermediate statuses/failed or pending labels stay byte-original. The final independent233 layer/reuse receipt and final seal status govern final adoption."
+}

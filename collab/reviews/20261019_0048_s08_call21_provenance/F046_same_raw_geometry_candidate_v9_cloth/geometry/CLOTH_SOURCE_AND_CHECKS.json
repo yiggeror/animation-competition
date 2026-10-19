@@ -1,0 +1,34 @@
+{
+  "status": "GEOMETRY_AND_SOURCE_CLOTH_DIAGNOSTIC_NOT_APPROVED",
+  "sha256": "e7eca7050e1d35784024daf4e626e9ff56e731365234af965b31d72b84c5af87",
+  "parent_candidate": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F046_same_raw_geometry_candidate_v9_base/candidates/S08_F046_same_raw_arm_geometry_DIAGNOSTIC_RGBA.png",
+  "same_raw21_no_additional_generation": true,
+  "cloth_change_pixels": 12515,
+  "changes_outside_explicit_cloth_union": 0,
+  "near_distal_changed": 0,
+  "far_archive_not_rewritten": true,
+  "actual_new_foreground_release_pixels": 349,
+  "far_composite_changed_only_actual_foreground_release": 42,
+  "forearm_source_shape_unchanged_but_old_permission_clipping349_released": true,
+  "source_cloth_transforms": [
+    {
+      "source": "registered_raw_right_chest",
+      "target": "newly_exposed_chest_behind_arm",
+      "translation": [
+        -65,
+        55
+      ],
+      "scale": 1
+    },
+    {
+      "source": "original043_lower_torso",
+      "target": "newly_exposed_waist_outer_edge",
+      "translation": [
+        0,
+        -18
+      ],
+      "scale": 1
+    }
+  ],
+  "notes": "Only actual cloth donor pixels; native near arm and original hand positions remain unchanged. Must view actual shoulder/collar/forearm and cloth seams."
+}

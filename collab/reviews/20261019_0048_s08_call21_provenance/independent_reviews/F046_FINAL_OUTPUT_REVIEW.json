@@ -1,0 +1,192 @@
+{
+  "candidate_sha256": "a6ccf1721114d61b30b68234fbd22ef34e92bd6952b901ba79a2aae705b69441",
+  "pixel_audit": {
+    "changed_from_v10": 18262,
+    "color_delta_min": [
+      1,
+      0,
+      0
+    ],
+    "color_delta_max": [
+      3,
+      2,
+      1
+    ],
+    "alpha_changed": 0,
+    "outside_color_permission": 0,
+    "skin_change": 0,
+    "near_hard_RGBA_diff": 0,
+    "seat_RGBA_diff": 0,
+    "box_RGBA_diff": 0,
+    "head_y_lt674_RGBA_diff": 0
+  },
+  "six_frame_decode": [
+    {
+      "background": "light",
+      "sha256": "ae5d32c0fd4e5437977871983a8c158e085e68aca01b8e5c2c8563c3511ee362",
+      "probe": {
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration": "0.250000",
+        "nb_frames": "6"
+      },
+      "decoded_frames": 6,
+      "closest_source_order": [
+        "043",
+        "043",
+        "043",
+        "046",
+        "046",
+        "046"
+      ],
+      "MAE_each_against043_then046": [
+        [
+          2.003702571937866,
+          13.386846193022663
+        ],
+        [
+          2.000928189457601,
+          13.383394448688566
+        ],
+        [
+          2.0011051693404633,
+          13.383586707410236
+        ],
+        [
+          13.448889737713268,
+          2.0090488922841865
+        ],
+        [
+          13.450248281130634,
+          2.0109218232747645
+        ],
+        [
+          13.4500623885918,
+          2.0100560224089636
+        ]
+      ]
+    },
+    {
+      "background": "dark",
+      "sha256": "808ea07349f5f1b7e086df9b7107d35dbfc448715cb802bc8e55a38f2cef07f3",
+      "probe": {
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration": "0.250000",
+        "nb_frames": "6"
+      },
+      "decoded_frames": 6,
+      "closest_source_order": [
+        "043",
+        "043",
+        "043",
+        "046",
+        "046",
+        "046"
+      ],
+      "MAE_each_against043_then046": [
+        [
+          2.1980188439011967,
+          18.402760376878025
+        ],
+        [
+          2.1925719378660555,
+          18.40881079704609
+        ],
+        [
+          2.192494270435447,
+          18.409158390628978
+        ],
+        [
+          18.66922969187675,
+          2.182494270435447
+        ],
+        [
+          18.670127323656736,
+          2.183292589763178
+        ],
+        [
+          18.66965367965368,
+          2.182192513368984
+        ]
+      ]
+    }
+  ],
+  "status": "PASS_FINAL_CHARACTER_RGBA_MATERIAL_AND_FORMAL_SIXFRAME_GATE",
+  "review_time_utc": "2026-10-19T00:49:11.431785+00:00",
+  "visual_decision": "Actual native round elbow, full near arm and fixed original hand form a continuous natural withdrawal. Three repaired interfaces clean atactualscale. Forearm sourcewhiteflower contamination removed. Slightnewlitblue correction keeps neutralmaterial and originalfoldshading; no furthercolorchange. Originalface/gaze/expression, farlowgrip, transparentseat and singlebox preserved. Formaldecoded043x3→046x3 motion readable withoutaddedhold.",
+  "materials": "Three lit skinareas unchanged and within4; four actualnewlitblueareas remeasured within4. Newdiagonalsleevefold, placketturn and elbowunderside remain diagnostic-only, notforcedwithin4.",
+  "layer_gate": "Pendingauthornewsemanticthreewaylayersandindependenthandrootarchive",
+  "not_signed": [
+    "ActualCanvas lamp/table/pipe/flame scene depth",
+    "Newgeneration"
+  ],
+  "independent_final_lit_blue_samples": [
+    {
+      "name": "flat_blue1",
+      "box": [
+        780,
+        720,
+        803,
+        742
+      ],
+      "n": 474,
+      "deltaRGB_mean": [
+        -3.6132235309450493,
+        -3.3526709349494013,
+        -3.041607611227846
+      ],
+      "author_mean_max_abs_error": 0.0
+    },
+    {
+      "name": "flat_blue2",
+      "box": [
+        805,
+        732,
+        825,
+        750
+      ],
+      "n": 360,
+      "deltaRGB_mean": [
+        -3.976233376233381,
+        -3.5702166452166466,
+        -2.8141462891462936
+      ],
+      "author_mean_max_abs_error": 0.0
+    },
+    {
+      "name": "flat_blue3",
+      "box": [
+        790,
+        744,
+        812,
+        757
+      ],
+      "n": 281,
+      "deltaRGB_mean": [
+        -3.625145989914671,
+        -2.525801856762712,
+        -3.1950379459276235
+      ],
+      "author_mean_max_abs_error": 0.0
+    },
+    {
+      "name": "lower_lit_blue",
+      "box": [
+        820,
+        799,
+        850,
+        832
+      ],
+      "n": 672,
+      "deltaRGB_mean": [
+        -1.9243484555984622,
+        -0.3689269626769658,
+        -2.794602638352643
+      ],
+      "author_mean_max_abs_error": 0.0
+    }
+  ]
+}

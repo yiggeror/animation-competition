@@ -1,0 +1,73 @@
+{
+  "status": "V7_SHAPE_RETAIN_PENDING_THREE_CONTINUOUS_SEAM_REPAIRS_AND_MATERIAL_GATE",
+  "time_utc": "2026-10-19T00:38:36.874335+00:00",
+  "candidate_sha256": "e18b4e10c1095a648b20cbc85c9b59534277bca088969abab20e8480afed2cd7",
+  "raw_sha256": "3f2793867cf321aaf5a54ed1bb2d59022f6683181bfe75d3ae7b6d7a886fa3ea",
+  "actual_views": [
+    "F043_F046_actual_same_scale_light.png",
+    "whole_arm_dark.png",
+    "near_wrist_dark.png",
+    "shoulder_body_dark.png",
+    "REGISTERED_RAW_actual_joint_grid.png",
+    "SLEEVE_BODY_all_sources_grid.png",
+    "independent chest/wrist source comparison grids",
+    "actual registeredraw forearm/whiteflower adjacent source"
+  ],
+  "shape_decision": "Keep actual native round elbow975,914 and continuous remapped full forearm. No new request for low-elbow961,953, source projected length constraints or further geometric stretching. Adult width, wrist volume and withdrawal direction readable.",
+  "pixel_checks": {
+    "near_hard_diff": 0,
+    "true_seat_RGBA_diff": 0,
+    "box_RGBA_diff": 0,
+    "head_above650_RGBA_diff": 0,
+    "changes_outside_disclosed_union_vs_preplacement": 0
+  },
+  "required_complete_boundaries": [
+    {
+      "region": "shoulder/collar diagonalinterface",
+      "approx_path_scene": [
+        [
+          844,
+          692
+        ],
+        [
+          966,
+          816
+        ]
+      ],
+      "finding": "Broken black crease/sliverwhite petal at oldcollar/rawsleeve transition. Choose single complete source edges and materialonlyfeather; no duplicated shortinksegments."
+    },
+    {
+      "region": "button placket behind newforearm",
+      "bbox_scene": [
+        992,
+        800,
+        1014,
+        858
+      ],
+      "finding": "Placket ends near834withlightdot insidebluechest rather than naturallycontinuingtoforearmocclusion. Rejoin whole visible placket alongcloth interface; do not extend intoforegroundskin."
+    },
+    {
+      "region": "newforearmloweredge nativecloth contamination",
+      "bbox_scene": [
+        1135,
+        865,
+        1170,
+        883
+      ],
+      "exact_neutralwhite_diagnostic_bbox_scene": [
+        1146,
+        867,
+        1167,
+        877
+      ],
+      "finding": "Actualraw blueblouse whitepetaltips adjacent below nearforearm were included by source_skin dilation; blue_edge exclusion misses whitepetals. Remove complete cloth/petal boundary contamination fromnative skin selection and replay existingwarp, preserving skinink/AA. Do not blanketthresholdalpha or change originaltruehand."
+    }
+  ],
+  "material_note": "Subtle wristroot longitudinalmaterialband remains for sameface materialreview, not another geometric extension. No materialpass yet.",
+  "not_signed": [
+    "Final output adoption",
+    "Formal043x3→046x3 sixframe sequence",
+    "ActualCanvas table/pipe/flames",
+    "Newgeneration"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "status": "STATIC_SOURCE_DEPENDENCY_CLOSURE_ONLY_NOT_EXECUTED",
+  "root_policy": "For an isolated replay materialize only REPLAY_SEED_AND_CLOSURE.json seed_files under a NEW root at source_relative_path. Packaged current-frame derived masks/mother/layers/contracts are comparison targets, never seed inputs. Optional audit scripts can be copied separately. Do not run in the author source tree.",
+  "native_raw": "F046_native_call21/raw/F046_local_arm_native_raw.png",
+  "native_raw_sha256": "3f2793867cf321aaf5a54ed1bb2d59022f6683181bfe75d3ae7b6d7a886fa3ea",
+  "registration": "F046_input_gate/geometry/RAW_UNIFORM_REGISTRATION.json",
+  "registration_policy": "Use saved scale/tx/ty for exact replay. register_raw.py is preserved as provenance, not an instruction to rerun the optimizer.",
+  "ordered_commands": [
+    "python F046_input_gate/composite_returned_crop.py F046_result_nominal --raw F046_native_call21/raw/F046_local_arm_native_raw.png --registration F046_input_gate/geometry/RAW_UNIFORM_REGISTRATION.json",
+    "python F046_same_raw_geometry_diagnostic/warp_forearm_candidate_v9_base.py",
+    "python F046_same_raw_geometry_diagnostic/finish_continuous_cloth_v9.py",
+    "python F046_same_raw_geometry_diagnostic/clean_three_interfaces_v10.py",
+    "python F046_same_raw_geometry_diagnostic/validate_v10_geometry_union.py",
+    "python F046_color_final/apply_lit_sleeve_color.py",
+    "python F046_handoff_preparation/seal_handoff.py",
+    "python F046_old_air_semantic_candidate/prepare_clear233.py",
+    "python F046_handoff_preparation/finalize_clear233.py"
+  ],
+  "copy_only_root_rebase": "validate_v10_geometry_union.py contains the original absolute R literal; replace that root only in an isolated working copy. The other adopted processing scripts derive R from __file__.",
+  "data_preconditions": "All required actual input and guard files plus exact F043/F000 dependencies from EXTERNAL_DEPENDENCIES.json must be present. F043 assets are reused from the earlier committed source bundle, not duplicated here.",
+  "expectations": {
+    "geometry_sha256": "c5cfa9f7cdbc049c66e511418b503915c0f898f0c9e585738aef481fb66fb281",
+    "explicit_union_pixels": 107303,
+    "chest_sleeve_added_permission_pixels": 7633,
+    "actual_forearm_added_permission_pixels": 349,
+    "old_black_preplacement_cleared_pixels": 1040,
+    "forearm_endpoint_projection_ratio": 1.1106661195323195,
+    "local_centreline_tangent_range": [
+      0.9999999999999997,
+      1.193280555122339
+    ],
+    "cross_sectional_width_factor": 1,
+    "not_uniform_per_texel_scale": true,
+    "approved_color_intermediate_sha256": "a6ccf1721114d61b30b68234fbd22ef34e92bd6952b901ba79a2aae705b69441",
+    "final_sha256": "7722c85545660ae240acc72d512985572b1a5ba5532780b150b4b8274c385ec2",
+    "final_semantic_old_air_clear_pixels": 233,
+    "final_layer_sha256": {
+      "F046_body_behind_original_pixels.png": "81c054b8e846d168947914b01c6e50f7faee4415dc3d959a7a0c91d67cc53128",
+      "F046_forearms_elbows_original_pixels.png": "c2bfe5faa0ffb431e451742b84481c469fc288f31ae0856429e6be6089400263",
+      "F046_table_box_original_pixels.png": "c5f43dfae8b43b8436a2f67a5a013a77509ea049b1c798d501bdfbe8083bf984"
+    }
+  },
+  "upstream_reconstruction": "Do not reconstruct prior frames or generation inputs; use exact preserved frozen files. Do not run superseded v1-v9 variants in sequence.",
+  "critical_order": "First seal creates the initial a6 mother/layers. prepare_clear233 derives its 233 mask from INITIAL a6 arms and actual foreground dilated by two pixels; deriving from already-cleared final arms incorrectly yields empty. finalize_clear233 then locks the 7722 mother and fresh layers. Do not seed any current-frame outputs, including masks/contracts/frames, from the final archive.",
+  "optional_audits": [
+    "python F046_handoff_preparation/remeasure_final_planes.py",
+    "python F046_old_air_semantic_candidate/encode_final_exposure.py"
+  ],
+  "optional_audits_note": "Material measurement uses F000 plus a6; final exposure encodes/decode F043x3 then final7722x3. Neither changes adopted character or layers.",
+  "runtime_observed_not_pinned": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "Pillow": "12.3.0"
+  }
+}
