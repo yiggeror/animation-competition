@@ -1,0 +1,40 @@
+{
+  "reviewed_utc": "2026-10-19T01:28:03.001631+00:00",
+  "kind": "static_local_edit_input_review_only",
+  "source_commit": "300840f48aaa8fec60f2392bc16beb28e0a963e1",
+  "Astra_source_raw_rejection": "near/far shoulder-to-palm ownership reversed; displaced turtle tails",
+  "original_author_pass_is_superseded": true,
+  "new_image_generation_calls": 0,
+  "new_raw_outputs": 0,
+  "in_flight": 0,
+  "later_pose_calls": 0,
+  "submitted": false,
+  "actual_views_inspected": [
+    "qa/shoulders_to_palms_three_view.png",
+    "qa/palm_rod_contacts.png",
+    "qa/target_full_gray_QA.png",
+    "qa/edit_domain_overlay.png",
+    "masks/edit_white.png",
+    "masks/protect_white.png",
+    "full_arm_volume_xray.png"
+  ],
+  "target_sha256": "a6d23f92bd8eef585881f1c674c2cbafe5c42b7a9a6696437b72430ae0cefa0a",
+  "checks": {
+    "near_L_shoulder_sleeve_upper_elbow_forearm_to_original_high_palm": "continuous full silhouette; no jade-only swap",
+    "far_R_full_volume_to_original_low_palm": "full sleeve/upper/elbow/forearm shown beneath translucent torso; normal target hides true far volume",
+    "old_turtle_tail": "old displaced tails removed; corrected ends terminate under original opaque palm",
+    "protected_contacts": "original palms/fingers/bracelet/four front rods zero pixel changes",
+    "child": "original pixels, no size or registration lock",
+    "head_neck_waist_legs": "protected source pixels; no neck color edit yet",
+    "masks": "binary edit/protect inverse; no service-side hard-mask claim"
+  },
+  "limitations": [
+    "flat blocks/simplified shirt pattern and wrist construction joins are guide material; future local image edit must restore natural ink/cloth/skin continuity",
+    "projected joints are author construction anchors, not measured3D joints",
+    "neck semantic dewarming and isolated alpha1 cleanup only prepared/deferred",
+    "actualCAM20, puppet ends and all later poses unverified/unopened"
+  ],
+  "outcome": "AUTHOR_STATIC_INPUT_CHECK_PASS_PENDING_ASTRA_LOCAL_GATE",
+  "production_ready": false,
+  "wrist_refinement": "R wrist top/bottom matched to original x974–978 skin contour (about y429–461) before final input gate; original palm remains unchanged."
+}

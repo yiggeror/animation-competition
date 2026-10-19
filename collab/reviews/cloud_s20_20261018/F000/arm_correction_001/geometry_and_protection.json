@@ -1,0 +1,445 @@
+{
+  "source_commit": "300840f48aaa8fec60f2392bc16beb28e0a963e1",
+  "source_raw": "../generation_001/S20_F000_call001_raw.png",
+  "source_sha256": "de1aec591119393f7f99a61a166f62e9af456ce24ffd718fec0429b20fe2e330",
+  "canvas": [
+    1672,
+    941
+  ],
+  "image_generation_calls_this_round": 0,
+  "submitted": false,
+  "near_L": {
+    "shoulder": [
+      1148,
+      283
+    ],
+    "elbow": [
+      1120,
+      419
+    ],
+    "wrist": [
+      986,
+      352
+    ],
+    "palm_center": [
+      938,
+      323
+    ],
+    "single_jade_bracelet": "unchanged original pixels",
+    "holders": [
+      "CN",
+      "CB"
+    ],
+    "volume_path": "M 1108 380 C 1106 388 1100 396 1096 397 C 1068 383 1028 358 994 344 L 980 372 C 1019 393 1059 420 1101 439 Q 1129 452 1149 429 Q 1165 411 1174 395 Z"
+  },
+  "far_R": {
+    "shoulder": [
+      1067,
+      285
+    ],
+    "elbow": [
+      1076,
+      435
+    ],
+    "wrist": [
+      984,
+      439
+    ],
+    "palm_center": [
+      944,
+      446
+    ],
+    "holders": [
+      "TH",
+      "TS"
+    ],
+    "upper_arm_and_elbow": "behind torso; full volume shown in xray",
+    "volume_path": "M 1049 340 Q 1046 374 1053 407 Q 1056 423 1041 426 Q 1014 425 975 429 L 975 461 Q 1010 462 1047 461 Q 1098 466 1100 433 L 1102 345 Z"
+  },
+  "layer_order": [
+    "far_R full sleeve/upper arm/elbow/forearm",
+    "front torso",
+    "near_L upper arm/forearm and near sleeve",
+    "unchanged source palms/bracelet/front rods"
+  ],
+  "joint_positions": "Projected construction anchors, not measured 3D joints",
+  "frozen_front_segments": {
+    "CN": [
+      [
+        826,
+        79
+      ],
+      [
+        921,
+        300
+      ]
+    ],
+    "CB": [
+      [
+        792,
+        111
+      ],
+      [
+        906,
+        299
+      ]
+    ],
+    "TH": [
+      [
+        787,
+        343
+      ],
+      [
+        914,
+        431
+      ]
+    ],
+    "TS": [
+      [
+        774,
+        388
+      ],
+      [
+        912,
+        438
+      ]
+    ]
+  },
+  "low_turtle_axis_fits": {
+    "TH": {
+      "slope": 0.6954945799457998,
+      "intercept": -205.14137308039784,
+      "fit_columns": [
+        800,
+        880
+      ],
+      "sample_count": 81,
+      "y_at_x960": 462.53342366756993,
+      "hidden_end_under_palm": [
+        944,
+        451.4055103884371
+      ],
+      "target_exposed_tail_added": false
+    },
+    "TS": {
+      "slope": 0.381413730803975,
+      "intercept": 92.50752785305603,
+      "fit_columns": [
+        800,
+        880
+      ],
+      "sample_count": 81,
+      "y_at_x960": 458.66470942487206,
+      "hidden_end_under_palm": [
+        944,
+        452.5620897320085
+      ],
+      "target_exposed_tail_added": false
+    }
+  },
+  "tail_correction": "Remove the displaced exposed R-hand tails; both corrected ends terminate under opaque palm at x944. Do not add visible tails.",
+  "preserve_child": "All original pixels, no scale or translation",
+  "size_ratio_note": "Astra approx child/adult 0.82 vs construction0.88: defer registration review; do not lock size or scale child now.",
+  "deferred_same_raw_items": [
+    "neck-side semantic dewarming only after core arm gate",
+    "only isolated outside alpha1 points; preserve rod/hair anti-alias"
+  ],
+  "white_mask_meaning": "255 editable,0 protected; inverse protection mask white means protect",
+  "L_hand_protection_polygon": [
+    [
+      890,
+      281
+    ],
+    [
+      940,
+      280
+    ],
+    [
+      960,
+      294
+    ],
+    [
+      975,
+      318
+    ],
+    [
+      992,
+      327
+    ],
+    [
+      998,
+      340
+    ],
+    [
+      991,
+      364
+    ],
+    [
+      976,
+      379
+    ],
+    [
+      954,
+      374
+    ],
+    [
+      941,
+      358
+    ],
+    [
+      915,
+      357
+    ],
+    [
+      897,
+      344
+    ],
+    [
+      889,
+      318
+    ]
+  ],
+  "R_hand_protection_polygon": [
+    [
+      899,
+      428
+    ],
+    [
+      912,
+      423
+    ],
+    [
+      912,
+      419
+    ],
+    [
+      923,
+      417
+    ],
+    [
+      934,
+      413
+    ],
+    [
+      945,
+      414
+    ],
+    [
+      963,
+      419
+    ],
+    [
+      978,
+      421
+    ],
+    [
+      978,
+      453
+    ],
+    [
+      981,
+      454
+    ],
+    [
+      968,
+      460
+    ],
+    [
+      958,
+      466
+    ],
+    [
+      945,
+      474
+    ],
+    [
+      932,
+      475
+    ],
+    [
+      921,
+      472
+    ],
+    [
+      914,
+      468
+    ],
+    [
+      912,
+      463
+    ],
+    [
+      906,
+      460
+    ],
+    [
+      902,
+      452
+    ],
+    [
+      897,
+      447
+    ],
+    [
+      896,
+      436
+    ]
+  ],
+  "edit_corridors": [
+    [
+      [
+        980,
+        332
+      ],
+      [
+        1048,
+        347
+      ],
+      [
+        1053,
+        419
+      ],
+      [
+        1014,
+        425
+      ],
+      [
+        979,
+        376
+      ]
+    ],
+    [
+      [
+        978,
+        414
+      ],
+      [
+        1110,
+        405
+      ],
+      [
+        1146,
+        369
+      ],
+      [
+        1187,
+        381
+      ],
+      [
+        1166,
+        454
+      ],
+      [
+        1112,
+        468
+      ],
+      [
+        978,
+        467
+      ]
+    ],
+    [
+      [
+        1080,
+        250
+      ],
+      [
+        1174,
+        249
+      ],
+      [
+        1198,
+        282
+      ],
+      [
+        1197,
+        412
+      ],
+      [
+        1164,
+        451
+      ],
+      [
+        1103,
+        457
+      ],
+      [
+        980,
+        380
+      ],
+      [
+        977,
+        332
+      ],
+      [
+        1017,
+        332
+      ],
+      [
+        1088,
+        372
+      ],
+      [
+        1088,
+        316
+      ]
+    ],
+    [
+      [
+        1033,
+        270
+      ],
+      [
+        1077,
+        251
+      ],
+      [
+        1132,
+        271
+      ],
+      [
+        1135,
+        463
+      ],
+      [
+        1018,
+        469
+      ],
+      [
+        978,
+        459
+      ],
+      [
+        978,
+        413
+      ],
+      [
+        1023,
+        404
+      ],
+      [
+        1026,
+        329
+      ]
+    ],
+    [
+      [
+        948,
+        465
+      ],
+      [
+        974,
+        465
+      ],
+      [
+        976,
+        483
+      ],
+      [
+        948,
+        483
+      ]
+    ]
+  ],
+  "not_a_generated_character_output": true
+}
