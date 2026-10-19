@@ -1,5 +1,5 @@
 {
-  "status": "PREP_ONLY_REQUIRE_QUALIFIED_ACTUAL060",
+  "status": "HISTORICAL_PREVIEW_SUPERSEDED_BY_ACTUAL060_REUSE064",
   "call_allowed": false,
   "tool_arguments": null,
   "planned_arguments": null,
@@ -20,10 +20,14 @@
   "prompt_SHA256": "d55ccc6697565dcd579f11772a32d1610d6a3e5b7405c519438c3489bbf3e536",
   "actual_parent": {
     "state": 60,
-    "qualified": false,
-    "path": null,
-    "SHA256": null
+    "qualified": true,
+    "commit": "227fdb6339fe88eda7be2c2a3c67c4279f62809a",
+    "path": "collab/reviews/cloud_s12_20261018/F060_forearm_ink_RGB_cleanup_20261019/candidate/F060.png",
+    "SHA256": "63083a76287d04cd7a6d9628791e199b7fbea47f4e41de1344216d348be058f0"
   },
   "must_rebuild_ALL_actual_inputs": true,
-  "calls": 0
+  "calls": 0,
+  "actual064_reuse_delivery": "collab/reviews/cloud_s12_20261018/F064_actual060_REUSE_preload_20261019",
+  "no_imagegen_needed": true,
+  "historical_preview_images_NOT_executable_inputs": true
 }
