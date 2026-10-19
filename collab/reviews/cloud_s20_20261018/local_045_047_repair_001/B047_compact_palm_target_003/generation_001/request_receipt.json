@@ -1,0 +1,23 @@
+{
+  "authorization": "Astra passed0610bf76 full target/contact/mask, one two-image local call",
+  "approved_commit": "0610bf767b9cd7c555105c8780467b97010bcb02",
+  "planned_new_calls": 1,
+  "inputs": [
+    {
+      "actual_path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/local_045_047_repair_001/B047_compact_palm_target_003/inputs/01_compact_palm_target_crop4x.png",
+      "snapshot": "collab/reviews/cloud_s20_20261018/local_045_047_repair_001/B047_compact_palm_target_003/generation_001/actual_input_snapshots/01_01_compact_palm_target_crop4x.png",
+      "sha256": "70132001c984267cfd0f3ff70660c966a0b947340686605c2d123c0f11e03cd3",
+      "byte_equal_approved0610bf76": true
+    },
+    {
+      "actual_path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/local_045_047_repair_001/B047_compact_palm_target_003/inputs/02_same_crop_mask4x.png",
+      "snapshot": "collab/reviews/cloud_s20_20261018/local_045_047_repair_001/B047_compact_palm_target_003/generation_001/actual_input_snapshots/02_02_same_crop_mask4x.png",
+      "sha256": "6f1efa29c285515718e0e06e6b2290dfa121d83960177bd1becb93cb115f1c88",
+      "byte_equal_approved0610bf76": true
+    }
+  ],
+  "no_002_full_pose_reference": true,
+  "postprocess": "whole local uniform inverse only, no extra hand translation or rod correction",
+  "no_propagation_before_Astra_final_gate": true,
+  "frozen_A_045_054_child": true
+}
