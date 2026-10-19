@@ -1,0 +1,190 @@
+{
+  "status": "ONE_ZERO_CALL_F084_TWO_DOMAIN_CANDIDATE_ASTRA_REVIEW_PENDING",
+  "new_image_calls": 0,
+  "source084_commit": "07690a02a51bba4652cc06d1ef7f6fc73ab8eb1e",
+  "source084_file": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F084_peak_input_001/generation_001/F084_uniform_registered_fixed_lower_DIAGNOSTIC_NOT_ADOPTED.png",
+  "source084_sha256": "1bf65e3373979dc4317d52b223b72eaa75db9cad3652d628d733f438de73c784",
+  "reference079_file": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F079_head_neck_scale_close_zero_call_001/F079_own_head_neck_volume_closed_candidate.png",
+  "reference079_sha256": "2a2fbbee3aaff0b6289b4bb8df756193fe70e37ab9a552af8192c13e459930af",
+  "head_measurements": {
+    "correct079": {
+      "pixels": 18383,
+      "x_005_995": [
+        513.0,
+        721.0
+      ],
+      "y_005_995": [
+        149.0,
+        314.0
+      ],
+      "centroid": [
+        630.4861012892346,
+        223.33106674645052
+      ]
+    },
+    "source084": {
+      "pixels": 21259,
+      "x_005_995": [
+        504.0,
+        729.0
+      ],
+      "y_005_995": [
+        154.0,
+        321.0
+      ],
+      "centroid": [
+        631.6347899713063,
+        225.6051084246672
+      ]
+    },
+    "candidate084": {
+      "pixels": 18874,
+      "x_005_995": [
+        512.0,
+        721.0
+      ],
+      "y_005_995": [
+        151.0,
+        323.0
+      ],
+      "centroid": [
+        631.0588110628378,
+        231.4567129384338
+      ]
+    }
+  },
+  "complete_own_head_uniform_scale": 0.9271687752582003,
+  "head_translation_xy": [
+    44.85404666106797,
+    21.748433384110466
+  ],
+  "head_rotation_added_degrees": 0,
+  "head_neck_resampling_count": 1,
+  "neck_method": "own084 continuous inverse warp; C1 decay within 25px to original oblique collar attachment",
+  "old079_or076_pixels_pasted": false,
+  "true_TH_axis_endpoints_px": [
+    [
+      282.0,
+      435.5
+    ],
+    [
+      420.5,
+      344.5
+    ]
+  ],
+  "true_TS_axis_endpoints_px": [
+    [
+      298.0,
+      271.0
+    ],
+    [
+      466.5,
+      459.5
+    ]
+  ],
+  "true_two_shafts_and_grips_RGBA_changes": 0,
+  "third_steep_connector_removed_without_moving_true_axes_or_grips": true,
+  "hand_repair_method": "same084 adjacent own palm pixels continued across extra shaft occlusion within complete palm domains; interrupted external contours reconnected; no old palms pasted",
+  "head_changed_pixels": 41817,
+  "palm_contact_changed_pixels": 2155,
+  "outside_two_domains_RGBA_changes": 0,
+  "protected_upper_arms_torso_whole_skirt_RGBA_changes": 0,
+  "fixed_collar_RGBA_changes": 0,
+  "all_y550_plus_skirt_full_legs_shoes_RGBA_changes": 0,
+  "grandma_RGBA_changes": 0,
+  "C_axis_geometry_changed": false,
+  "C_only_head_occlusion_updated": true,
+  "final_png": "F084_two_domains_closed_candidate.png",
+  "final_png_sha256": "4df5d046a399f90aa798ca2cba2bd09e0cf7977eacb1058036bfabf52ddce448",
+  "adopted": false,
+  "propagated": false,
+  "new_exposure_frozen": false,
+  "further_states_prepared_or_called": false,
+  "source084_registered_complete_upper_sha256": "b0524b57fff3feef3186781235cd2cd1ca269048bfadd92b07492a575e754c2b",
+  "fixed_complete_lower_sha256": "da1ef7ce8167179f7268edfe1bd70781551f937a18d33c4a12bc62b17ae8e7c4",
+  "fixed_original_C_layer_sha256": "47c3ece2f53c7e8b1bea4e3248a65a2518855bc6546f525bf809db62f5ec454e",
+  "actual_views_inspected": [
+    "actual_full_gray_1x.jpg",
+    "actual_two_true_rods_contacts_1x.png",
+    "actual_two_true_rods_contacts_3x.png",
+    "actual_neck_collar_3x.png",
+    "079_left_repaired084_right_head_neck_same_canvas_1x.png",
+    "079_left_repaired084_right_upper_hands_action_same_canvas_1x.png",
+    "actual_under_hem_3x.png",
+    "actual_support_2x.png"
+  ],
+  "native_fingers_palms_wrists_face_neck_body_and_shoes_same_connected_component": true,
+  "connectivity_probes_xy": {
+    "far_forefinger": [
+      416,
+      359
+    ],
+    "far_palm": [
+      460,
+      379
+    ],
+    "far_wrist": [
+      485,
+      399
+    ],
+    "near_rear_finger": [
+      449,
+      431
+    ],
+    "near_thumb": [
+      481,
+      445
+    ],
+    "near_palm": [
+      488,
+      483
+    ],
+    "near_wrist": [
+      530,
+      493
+    ],
+    "face": [
+      568,
+      293
+    ],
+    "neck": [
+      625,
+      351
+    ],
+    "torso": [
+      617,
+      442
+    ],
+    "far_shoe": [
+      540,
+      897
+    ],
+    "near_shoe": [
+      680,
+      900
+    ]
+  },
+  "exposed_deleted_connector_air_probes_alpha": [
+    {
+      "xy": [
+        459,
+        427
+      ],
+      "alpha": 0
+    },
+    {
+      "xy": [
+        460,
+        430
+      ],
+      "alpha": 0
+    },
+    {
+      "xy": [
+        461,
+        433
+      ],
+      "alpha": 0
+    }
+  ]
+}
