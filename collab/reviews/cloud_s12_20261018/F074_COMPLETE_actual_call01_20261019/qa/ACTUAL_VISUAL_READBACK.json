@@ -1,0 +1,43 @@
+{
+  "status": "ONE074_RAW_ONE_REAL_CANVAS_READY_FOR_ASTRA_ACTUAL_REVIEW_NOT_LOCKED",
+  "opened": [
+    "originals/F074_call01_raw.png",
+    "actual_scene/F074_canvas.png",
+    "diagnostics/ACTUAL_F074_BOTH_TRUE_GRIPS.png",
+    "diagnostics/ACTUAL_F074_CLOTH_CRANE_FRONT_OCCLUSION.png",
+    "diagnostics/ACTUAL_F074_GROUND_SHOES_KNEES.png",
+    "diagnostics/LOCKED070_vs_ACTUAL074_SUPPORTS_SAME_NATIVE_SCALE.png"
+  ],
+  "imagegen_calls": 1,
+  "actual074_Canvas": 1,
+  "next_posture_calls": 0,
+  "raw_SHA256": "0915a7df2762e3b19210a3f691b0d0b104bf9fc5dc2f3dd1d821d2e37ed963f3",
+  "native_candidate_SHA256": "3203a6f31b2e86a3939644f7ceb2197a93de802f45b30d70b3a347f24718abd1",
+  "actual_Canvas_SHA256": "c03fb12420f45abdd08b9fbabe3b9382dec581b07ec70aca5c1e58fe753d20b1",
+  "single_whole_similarity_only": true,
+  "local_finger_shoe_joint_warps": 0,
+  "old_reference_body_pixels_adopted": 0,
+  "raw_material_RGBA_edits": 0,
+  "actual_unchanged_source070_layers": {
+    "native_ground_shadows_actual_layer.png": "242ac036e9546967e05e23b42f418deea70923087132bbf8aa1851a2c994ede4",
+    "box_front_actual_layer.png": "4995c6a3e636f9a81a072773658da9c8607579bfc20235acfb0700ad6decbd34"
+  },
+  "native_BG_FG_reconstruction": {
+    "native_BG_FG_alpha_overlap": 0,
+    "native_visible_RGBA_reconstruction_difference": 0,
+    "native_alpha_reconstruction_difference": 0,
+    "native_fully_transparent_hidden_RGB_difference_pixels": 25,
+    "native_channel_max_union_all_RGBA_exact": true,
+    "hidden_RGB_identity_claimed": false
+  },
+  "actual_network_pageerror_or_requestfailed": [],
+  "true_frozen074_code_props_source_SHA256": "6d6e0ec721405ca943921cbd8d342c55c0c1d8dd291b2dec78f9a429c810004d",
+  "approved074_cloth_unload_source_SHA256": "2f5485e38940985b02fc690876549ac4bfc0e04da3e4e3b85f1c014a24d9271c",
+  "visual_findings": {
+    "whole_body": "Full hips/pelvis/waist/chest/back/neck/wholehead rise together. FarLEFTjade complete arm naturally redrawn with a normal elbow and no source-pixel waist/shoulder collage; nearRIGHTbare wrist hairline gone and full palm retained.",
+    "true_grips": "Closed two-grip relation and foreground finger occlusion visible in actual Canvas. No digit/hand reshaping or rod movement independent of frozen rigid group. Soft point fit residual relative to passed070 grip relationship far(-1.30,-5.16)native / near(-1.22,+6.15)native with +/-3native visual-estimate uncertainty. Actual contacts await Astra review; not numerical proof.",
+    "props_cloth": "True two rods/hinges/crane together(-3,-18)scene from070,55degree plane; cloth unloading, faint true-alpha shadow and original box-front occlusion. No full-air-gap claim for every lower crane part.",
+    "supports": "Both shoes remain visibly in the ground band with original true ground shadows. New knee/trouser front outline extends11to23native x in sampled same-y rows1120..1300 vsactual070. This is cloth silhouette difference, not measured hidden knee-joint movement. Same-native-scale comparison supplied to judge possible accumulated widening. No local leg patch/old-leg graft or automatic regeneration used.",
+    "remaining_review": "074 is NOT locked and adds no usable-pose count yet. Astra to judge actual two-grip/support continuity before next-state mother rebind. Next drawing calls0."
+  }
+}

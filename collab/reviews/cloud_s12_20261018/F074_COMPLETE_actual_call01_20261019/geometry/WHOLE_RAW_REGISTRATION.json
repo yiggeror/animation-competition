@@ -1,0 +1,161 @@
+{
+  "status": "ONE_WHOLE_SIMILARITY_CANDIDATE_FOR_REAL_CANVAS_NOT_POSE_PASS",
+  "raw_SHA256": "0915a7df2762e3b19210a3f691b0d0b104bf9fc5dc2f3dd1d821d2e37ed963f3",
+  "native_candidate_SHA256": "3203a6f31b2e86a3939644f7ceb2197a93de802f45b30d70b3a347f24718abd1",
+  "one_whole_raw_to_native_matrix": [
+    [
+      0.9748318731178734,
+      -0.00931285276531439,
+      19.870996157743914
+    ],
+    [
+      0.00931285276531439,
+      0.9748318731178734,
+      15.27985475509117
+    ]
+  ],
+  "uniform_scale": 0.9748763563001874,
+  "rotation_degrees": 0.5473466159703129,
+  "translation_native": [
+    19.870996157743914,
+    15.27985475509117
+  ],
+  "fit_objective": "Whole actual alpha128 silhouette weighted floor3 + PASSED actual070 grip soft-contact estimates translated with true props. Four global parameters only. Reference body pixels NEVER adopted. Actual070 grips already passed despite small soft-point-to-axis estimate residual; preserve actual relationship rather than inventing new palm points.",
+  "raw_soft_contacts_far_then_near": [
+    [
+      971.0,
+      808.0
+    ],
+    [
+      981.0,
+      934.0
+    ]
+  ],
+  "registered_soft_contact_estimates": [
+    [
+      958.907959920825,
+      811.9867882694532
+    ],
+    [
+      967.4828592035742,
+      934.9087328099583
+    ]
+  ],
+  "contact_residual_native": [
+    [
+      -1.296774862137113,
+      -5.162571499551632
+    ],
+    [
+      -1.223236896808885,
+      6.151607148080984
+    ]
+  ],
+  "contact_estimate_uncertainty_native": 3,
+  "lower_support_contour_absolute_distance_p95_native": 16.75510901418966,
+  "foreground_partition_only_polygons_raw": {
+    "far_actual_curled_front_digits": [
+      [
+        944,
+        795
+      ],
+      [
+        968,
+        793
+      ],
+      [
+        985,
+        801
+      ],
+      [
+        982,
+        824
+      ],
+      [
+        969,
+        836
+      ],
+      [
+        949,
+        833
+      ],
+      [
+        930,
+        824
+      ],
+      [
+        935,
+        807
+      ]
+    ],
+    "near_actual_curled_front_digits": [
+      [
+        980,
+        891
+      ],
+      [
+        999,
+        895
+      ],
+      [
+        1015,
+        910
+      ],
+      [
+        1018,
+        946
+      ],
+      [
+        1002,
+        959
+      ],
+      [
+        981,
+        952
+      ],
+      [
+        975,
+        943
+      ],
+      [
+        978,
+        931
+      ],
+      [
+        986,
+        924
+      ],
+      [
+        984,
+        907
+      ]
+    ]
+  },
+  "exclusive_BG_FG_union_exact": true,
+  "local_body_finger_shoe_warps": 0,
+  "source_reference_pixels_adopted": 0,
+  "raw_RGBA_material_edits": 0,
+  "actual_Canvas_pending": false,
+  "target_passed070_soft_contacts_plus_rigid_delta": [
+    [
+      960.2047347829621,
+      817.1493597690048
+    ],
+    [
+      968.7060961003831,
+      928.7571256618774
+    ]
+  ],
+  "old_support_RGBA_pixels_identical": false,
+  "true_shaft_grip_axes_scene": {
+    "far": [
+      947.9703435271945,
+      686.5213574356443
+    ],
+    "near": [
+      953.7,
+      756.269911774929
+    ]
+  },
+  "actual_Canvas_SHA256": "c03fb12420f45abdd08b9fbabe3b9382dec581b07ec70aca5c1e58fe753d20b1"
+}
