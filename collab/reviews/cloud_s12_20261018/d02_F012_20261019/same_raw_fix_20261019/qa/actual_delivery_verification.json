@@ -1,0 +1,101 @@
+{
+  "status": "AUTHORIZED_SAME_RAW_R_ONLY_AND_ACTUAL_F012_PASS_COLLAR_FACE_RESIDUAL_REVIEW_REQUIRED",
+  "source_raw_SHA256": "52c6faf1e5eda14c2930ca557b5d1624a4dea86853f8dd631dd950b7b0d89f2c",
+  "candidate_SHA256": "103ed4fb52c64b370560456ff0dde5a0820596ecfed9e28daee0f026aef7b4ff",
+  "actual_Canvas_SHA256": "ad478641b320c35cd7d083bc9b1184e77bbb65bb7ed51f7926fad88bc8ff5080",
+  "actual_MP4_SHA256": "0ee0c43ed478275f8c7c4d1fb676cd4e6bc019ad10aa3d69b700d6ca37260016",
+  "actual_MP4_decoded_vs_Canvas_RGB_MSE": 8.379732131958008,
+  "actual_scene_frames": [
+    12
+  ],
+  "actual_scene_time": 0.5,
+  "actual_runtime_inputs": 17,
+  "successful_actual_renders": 1,
+  "failed_initial_local_path_launches": 1,
+  "first_failed_launch_output_frames": 0,
+  "MP4_encodes": 1,
+  "imagegen_calls_this_task": 0,
+  "cumulative_S12_native_calls_unchanged": 4,
+  "F018_and_later_generated": false,
+  "shared_sources_or_ready_changed": false,
+  "pose_registration_transform_changes": 0,
+  "alpha_ge8_exact_raw": true,
+  "protected_materials": {
+    "skin_RGB_exact_raw": true,
+    "hair_RGB_exact_raw": true,
+    "trousers_RGB_exact_raw": true
+  },
+  "native_alpha_after_cleanup": {
+    "1": {
+      "pixels": 407475,
+      "bbox": [
+        24,
+        332,
+        1002,
+        1315
+      ]
+    },
+    "8": {
+      "pixels": 395406,
+      "bbox": [
+        26,
+        334,
+        1000,
+        1313
+      ]
+    },
+    "128": {
+      "pixels": 390091,
+      "bbox": [
+        27,
+        335,
+        999,
+        1312
+      ]
+    }
+  },
+  "native_hand_analytic_gaps_unchanged_by_repair": true,
+  "actual_person_and_prop_alpha_overlap_pixels": 0,
+  "actual_layer_hand_gaps": {
+    "far_left": {
+      "actual_registered_layer_min_distance_to_actual_prop_alpha_scene_px": 32.01562118716424,
+      "nearest_actual_hand_pixel": [
+        955,
+        746
+      ],
+      "actual_hand_roi": [
+        860,
+        676,
+        987,
+        766
+      ]
+    },
+    "near_right": {
+      "actual_registered_layer_min_distance_to_actual_prop_alpha_scene_px": 44.721359549995796,
+      "nearest_actual_hand_pixel": [
+        890,
+        805
+      ],
+      "actual_hand_roi": [
+        786,
+        779,
+        904,
+        859
+      ]
+    }
+  },
+  "full_blue_RGB_delta_vs_mother": [
+    3.2262322154709864,
+    1.834592282885211,
+    1.1710440434559075
+  ],
+  "all_blue_mean_channels_within4": true,
+  "all_physical_faces_within4": false,
+  "collar_full_physical_face_delta_vs_mother": [
+    5.857411577113567,
+    4.132428439023045,
+    2.7664973951634124
+  ],
+  "collar_note": "Local complete collar/front face masks include darker folds and differ from parent spot/face masks, which were not supplied. Do not claim every face passes. Kept authorized R reduction<=4, protected folds and all G/B unchanged. Refer residual toAstra without expanding correction.",
+  "Astra_final_gate": "PENDING_REPAIRED_NATIVE_AND_ACTUAL_F012_REVIEW"
+}

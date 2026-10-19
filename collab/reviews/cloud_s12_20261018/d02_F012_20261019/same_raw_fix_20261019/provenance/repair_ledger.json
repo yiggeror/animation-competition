@@ -1,0 +1,42 @@
+{
+  "base_commit": "bbf19721fa2b183c8096578049518d5c292c2256",
+  "source_raw": "../originals/F012_raw_call01.png",
+  "source_raw_SHA256": "52c6faf1e5eda14c2930ca557b5d1624a4dea86853f8dd631dd950b7b0d89f2c",
+  "corrected_candidate_SHA256": "103ed4fb52c64b370560456ff0dde5a0820596ecfed9e28daee0f026aef7b4ff",
+  "imagegen_calls_this_task": 0,
+  "cumulative_S12_native_calls": 4,
+  "new_poses": 0,
+  "F018_enabled": false,
+  "RGB_channels_changed": [
+    "R"
+  ],
+  "max_R_reduction": 4,
+  "far_sleeve_RGBA_exact_raw": true,
+  "G_B_exact_raw": true,
+  "alpha_ge8_exact_raw": true,
+  "only_removed_weak_alpha_values": [
+    1,
+    2,
+    3
+  ],
+  "removed_weak_alpha_pixels": 11527,
+  "native_preparation_passes_before_scene": 2,
+  "native_preparation_note": "Unrendered initial draft usedcollar3.5; final uses4within authorized3to4. Far sleeve alpha protection made explicit before any successful Canvas. Only final native103ed4f delivered.",
+  "actual_render_launches": 2,
+  "failed_local_path_launches": 1,
+  "failed_launch_output_frames": 0,
+  "successful_actual_rendered_frames": [
+    12
+  ],
+  "MP4_encodes": 1,
+  "actual_cached_layer_readbacks": 3,
+  "readbacks_trigger_renderFrame_again": false,
+  "all_blue_channels_within4": true,
+  "all_physical_faces_within4": false,
+  "collar_full_face_residual_RGB": [
+    5.857411577113567,
+    4.132428439023045,
+    2.7664973951634124
+  ],
+  "status": "REPAIRED_NATIVE_AND_ACTUAL_F012_DELIVERED_COLLAR_RESIDUAL_ASTRA_REVIEW_PENDING"
+}

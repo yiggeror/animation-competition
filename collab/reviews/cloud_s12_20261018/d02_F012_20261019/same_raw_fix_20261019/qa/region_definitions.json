@@ -1,0 +1,167 @@
+{
+  "polygons_native": {
+    "far_sleeve_UNCHANGED": [
+      [
+        603,
+        635
+      ],
+      [
+        645,
+        657
+      ],
+      [
+        692,
+        703
+      ],
+      [
+        729,
+        740
+      ],
+      [
+        729,
+        779
+      ],
+      [
+        690,
+        816
+      ],
+      [
+        634,
+        843
+      ],
+      [
+        594,
+        821
+      ],
+      [
+        591,
+        766
+      ]
+    ],
+    "near_sleeve": [
+      [
+        436,
+        663
+      ],
+      [
+        482,
+        644
+      ],
+      [
+        524,
+        648
+      ],
+      [
+        560,
+        677
+      ],
+      [
+        578,
+        736
+      ],
+      [
+        588,
+        808
+      ],
+      [
+        596,
+        869
+      ],
+      [
+        580,
+        887
+      ],
+      [
+        446,
+        890
+      ],
+      [
+        432,
+        813
+      ],
+      [
+        426,
+        728
+      ]
+    ],
+    "collar_front": [
+      [
+        507,
+        544
+      ],
+      [
+        605,
+        580
+      ],
+      [
+        658,
+        653
+      ],
+      [
+        658,
+        781
+      ],
+      [
+        616,
+        853
+      ],
+      [
+        566,
+        917
+      ],
+      [
+        513,
+        965
+      ],
+      [
+        533,
+        1039
+      ],
+      [
+        493,
+        1070
+      ],
+      [
+        474,
+        1006
+      ],
+      [
+        496,
+        938
+      ],
+      [
+        521,
+        889
+      ],
+      [
+        552,
+        841
+      ],
+      [
+        552,
+        734
+      ],
+      [
+        521,
+        662
+      ]
+    ]
+  },
+  "partition_priority": [
+    "far_sleeve_UNCHANGED",
+    "near_sleeve",
+    "collar_front",
+    "lower_hem_y_ge970",
+    "remaining_back_waist"
+  ],
+  "measurement": "Physical face area plus per-image blue pigment predicate; fixed rawF012 selection for raw/corrected comparison. G/B not changed. Whole-face means include protected ink/flower boundary blue pixels.",
+  "blue_predicate": "R>65, B>R+20, B>G+15, maxRGB>120; alpha>=128 for color means. Edit support usesalpha>=8.",
+  "source_parent_review_R_deltas": {
+    "near_sleeve": 6.51,
+    "back_waist": 6.03,
+    "lower_hem": 6.23,
+    "collar_front": 5.22,
+    "far_sleeve": 3.1
+  },
+  "parent_and_local_partition_note": "Parent exact masks were not supplied; local complete physical-face boundaries are saved explicitly. Local means need not equal parent sample means."
+}

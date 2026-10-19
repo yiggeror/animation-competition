@@ -1,0 +1,69 @@
+{
+  "successful_actual_render_launches": 1,
+  "initial_failed_geometry_path_launches": 1,
+  "failed_launch_actual_output_frames": 0,
+  "actual_rendered_frames": [
+    12
+  ],
+  "actual_frame_PNG_SHA_matches": true,
+  "actual_cached_layer_readbacks": 3,
+  "readback_does_not_call_renderFrame_again": true,
+  "response_non200": [],
+  "console_errors_with_actual_URL": [
+    {
+      "utc": "2026-10-19T01:32:00.021Z",
+      "event": "console_error",
+      "page": 0,
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:33643/favicon.ico",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "pageerror_requestfailed": [],
+  "initial_failure_404_responses": [
+    {
+      "utc": "2026-10-19T01:31:17.916Z",
+      "event": "response",
+      "page": 1,
+      "url": "http://127.0.0.1:42603/collab/reviews/geometry/three_key_pose_proposal.json",
+      "status": 404,
+      "resource_type": "fetch",
+      "content_type": null
+    }
+  ],
+  "initial_failure_console_locations": [
+    {
+      "utc": "2026-10-19T01:31:16.617Z",
+      "event": "console_error",
+      "page": 0,
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:42603/favicon.ico",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "utc": "2026-10-19T01:31:17.916Z",
+      "event": "console_error",
+      "page": 1,
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:42603/collab/reviews/geometry/three_key_pose_proposal.json",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "runtime_files": 17,
+  "favicon_note": "Final console favicon404 location is preserved even if response event absent; do not claim all requests200. Initial own geometry404 is separately archived; no Canvas output on that launch."
+}

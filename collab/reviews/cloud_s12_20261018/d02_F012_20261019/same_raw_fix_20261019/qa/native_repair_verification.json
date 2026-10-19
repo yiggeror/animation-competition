@@ -1,0 +1,209 @@
+{
+  "source_raw_SHA256": "52c6faf1e5eda14c2930ca557b5d1624a4dea86853f8dd631dd950b7b0d89f2c",
+  "mother_SHA256": "95f80f2d8f56394abd4a808cc8a6f205633658a544de4ab52e1e34c4ac1ed793",
+  "corrected_candidate_SHA256": "103ed4fb52c64b370560456ff0dde5a0820596ecfed9e28daee0f026aef7b4ff",
+  "imagegen_calls_this_task": 0,
+  "new_poses": 0,
+  "RGB_channels_changed": [
+    "R"
+  ],
+  "R_changed_pixels": 80891,
+  "max_R_reduction": 4,
+  "G_B_exact_raw": true,
+  "alpha_ge8_exact_raw": true,
+  "all_head_guard_alpha_exact_raw": true,
+  "lineart_fold_ridges_white_flowers_exact_raw": true,
+  "far_sleeve_RGBA_exact_raw": true,
+  "RGB_outside_selected_blue_exact_raw": true,
+  "pose_registration_or_geometry_transforms": 0,
+  "removed_alpha1to7_pixels": 11527,
+  "removed_original_alpha_values": [
+    1,
+    2,
+    3
+  ],
+  "removed_alpha_RGB_exact_raw": true,
+  "full_blue_measured_pixels": 119091,
+  "full_blue_raw_delta_vs_mother": [
+    5.8100630675085085,
+    1.834592282885211,
+    1.1710440434559075
+  ],
+  "full_blue_corrected_delta_vs_mother": [
+    3.2262322154709864,
+    1.834592282885211,
+    1.1710440434559075
+  ],
+  "full_blue_all_channels_within4": true,
+  "face_measurements": {
+    "far_sleeve_UNCHANGED": {
+      "mother_pixels": 13138,
+      "F012_measure_pixels": 13302,
+      "mother_mean_RGB": [
+        128.86931039732076,
+        163.27188308722788,
+        206.1167605419394
+      ],
+      "raw_mean_RGB": [
+        131.89610584874455,
+        162.79431664411368,
+        205.41429860171402
+      ],
+      "corrected_mean_RGB": [
+        131.89610584874455,
+        162.79431664411368,
+        205.41429860171402
+      ],
+      "raw_delta_vs_mother": [
+        3.0267954514237942,
+        -0.47756644311419905,
+        -0.7024619402253904
+      ],
+      "corrected_delta_vs_mother": [
+        3.0267954514237942,
+        -0.47756644311419905,
+        -0.7024619402253904
+      ],
+      "corrected_R_within4": true,
+      "RGBA_exact_raw_on_entire_face": true
+    },
+    "near_sleeve": {
+      "mother_pixels": 27860,
+      "F012_measure_pixels": 28019,
+      "mother_mean_RGB": [
+        135.36116295764538,
+        169.88097631012204,
+        212.18715003589375
+      ],
+      "raw_mean_RGB": [
+        141.8299368285806,
+        172.18187658374674,
+        213.4826367821835
+      ],
+      "corrected_mean_RGB": [
+        138.83793140369036,
+        172.18187658374674,
+        213.4826367821835
+      ],
+      "raw_delta_vs_mother": [
+        6.468773870935223,
+        2.3009002736247055,
+        1.295486746289754
+      ],
+      "corrected_delta_vs_mother": [
+        3.4767684460449857,
+        2.3009002736247055,
+        1.295486746289754
+      ],
+      "corrected_R_within4": true,
+      "RGBA_exact_raw_on_entire_face": false
+    },
+    "collar_front": {
+      "mother_pixels": 9741,
+      "F012_measure_pixels": 9811,
+      "mother_mean_RGB": [
+        128.18478595626732,
+        161.68206549635562,
+        204.88420080073914
+      ],
+      "raw_mean_RGB": [
+        135.95882173071044,
+        165.81449393537866,
+        207.65069819590255
+      ],
+      "corrected_mean_RGB": [
+        134.0421975333809,
+        165.81449393537866,
+        207.65069819590255
+      ],
+      "raw_delta_vs_mother": [
+        7.774035774443121,
+        4.132428439023045,
+        2.7664973951634124
+      ],
+      "corrected_delta_vs_mother": [
+        5.857411577113567,
+        4.132428439023045,
+        2.7664973951634124
+      ],
+      "corrected_R_within4": false,
+      "RGBA_exact_raw_on_entire_face": false
+    },
+    "lower_hem": {
+      "mother_pixels": 12895,
+      "F012_measure_pixels": 13013,
+      "mother_mean_RGB": [
+        136.3410624272974,
+        170.3299728576968,
+        212.47103528499417
+      ],
+      "raw_mean_RGB": [
+        142.43156843156842,
+        172.52931683700913,
+        214.12710366556522
+      ],
+      "corrected_mean_RGB": [
+        139.64243448858832,
+        172.52931683700913,
+        214.12710366556522
+      ],
+      "raw_delta_vs_mother": [
+        6.09050600427102,
+        2.1993439793123457,
+        1.6560683805710426
+      ],
+      "corrected_delta_vs_mother": [
+        3.3013720612909196,
+        2.1993439793123457,
+        1.6560683805710426
+      ],
+      "corrected_R_within4": true,
+      "RGBA_exact_raw_on_entire_face": false
+    },
+    "back_waist": {
+      "mother_pixels": 55022,
+      "F012_measure_pixels": 54946,
+      "mother_mean_RGB": [
+        135.83859183599287,
+        170.33328486787104,
+        212.3881174802806
+      ],
+      "raw_mean_RGB": [
+        141.58877807301715,
+        172.01392276052852,
+        213.56752083864157
+      ],
+      "corrected_mean_RGB": [
+        138.51705310668657,
+        172.01392276052852,
+        213.56752083864157
+      ],
+      "raw_delta_vs_mother": [
+        5.7501862370242804,
+        1.6806378926574723,
+        1.1794033583609576
+      ],
+      "corrected_delta_vs_mother": [
+        2.6784612706937025,
+        1.6806378926574723,
+        1.1794033583609576
+      ],
+      "corrected_R_within4": true,
+      "RGBA_exact_raw_on_entire_face": false
+    }
+  },
+  "face_R_reductions_requested": {
+    "near_sleeve": 4.0,
+    "back_waist": 4.0,
+    "lower_hem": 4.0,
+    "collar_front": 4.0
+  },
+  "face_boundary_blur_sigma_native_px": 6,
+  "edit_boundary_feather_native_px": 2,
+  "head_guard_bbox": [
+    410,
+    312,
+    826,
+    651
+  ]
+}
