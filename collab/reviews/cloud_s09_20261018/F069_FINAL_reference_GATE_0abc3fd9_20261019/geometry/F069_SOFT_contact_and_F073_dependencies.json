@@ -1,0 +1,231 @@
+{
+  "status": "FINAL_REFERENCE_GATE_SOFT_TARGET_PENDING_REVIEW_NO_CALL",
+  "mother_sha256": "0abc3fd9cfcf7964f825ac7be0227fb9f588da709809f6d15362063741e545ef",
+  "crop_native": [
+    550,
+    0,
+    1320,
+    924
+  ],
+  "tool_uniform_scale": 1.6623376623376624,
+  "tool_inverse": "77/128 + [550,0]",
+  "whole_hand_only_transform": {
+    "angle_screen_y_down_deg": 15,
+    "scale": 1,
+    "pivot_visible_surface_proxy": [
+      1138,
+      643
+    ],
+    "post_rotation_translation": [
+      30,
+      -20
+    ],
+    "matrix": [
+      [
+        0.9659258262890683,
+        -0.25881904510252074
+      ],
+      [
+        0.25881904510252074,
+        0.9659258262890683
+      ]
+    ],
+    "translation": [
+      235.19705568396114,
+      -292.62637963053953
+    ],
+    "bicubic_AA_resampling": true,
+    "no_individual_finger_transform": true
+  },
+  "full_far_chain": {
+    "own_sleeve_soft_root": [
+      945.0,
+      695.0
+    ],
+    "visible_cuff_proxy": [
+      970.0,
+      744.0
+    ],
+    "elbow_soft": [
+      1013.7412105358188,
+      746.7760585118416
+    ],
+    "wrist_soft": [
+      1110.3676406904742,
+      660.3565410660266
+    ],
+    "source_projected_segments": [
+      43.829214001622255,
+      129.634100452003
+    ],
+    "note": "Manual 2D visible segment proxies, not anatomical bone lengths; all new chain must be drawn coherently."
+  },
+  "alpha128_material_contact": {
+    "whole_hand_true_prop_overlap_pixels": 6,
+    "xy": [
+      [
+        1135,
+        616
+      ],
+      [
+        1136,
+        616
+      ],
+      [
+        1137,
+        616
+      ],
+      [
+        1130,
+        617
+      ],
+      [
+        1131,
+        617
+      ],
+      [
+        1126,
+        618
+      ]
+    ],
+    "contact_source_xy": [
+      [
+        1104.3127144167431,
+        644.7795477043597
+      ],
+      [
+        1105.2786402430322,
+        644.5207286592572
+      ],
+      [
+        1106.2445660693213,
+        644.2619096141547
+      ],
+      [
+        1099.7419043304003,
+        647.0395687561614
+      ],
+      [
+        1100.7078301566894,
+        646.7807497110589
+      ],
+      [
+        1096.1370200703466,
+        649.0407707628606
+      ]
+    ],
+    "interpretation": "First raster contact is proximal palm heel/pad surface, not distal fingers; no pressure/thickness/ownership acceptance inferred. All fingers remain one source transform.",
+    "A_unoccluded_final063_visible_prop_inheritance_RGBA_differences": 0,
+    "whole_hand_to_OLD063_near_grip_min_distance_native": 3.605551275463989,
+    "OLD063_near_grip_overlap_pixels": 0,
+    "legacy_distance_not_new069_clearance": true
+  },
+  "near_operation_gate": {
+    "visible_thumb_tip_manual": [
+      1065,
+      574
+    ],
+    "visible_slider_material_centroid": [
+      1123.02601904,
+      598.86240543
+    ],
+    "distance_2d_native": 63.12810855234083,
+    "verified_reach": false,
+    "whole_grip_axial_SOFT_target_native": 35,
+    "G063_unchanged": [
+      1049.533,
+      598.588
+    ],
+    "G069_SOFT_new_grip_station": [
+      1083.8497627051338,
+      591.7061545033662
+    ],
+    "near_elbow_soft": [
+      790.0,
+      730.0
+    ],
+    "near_wrist_soft": [
+      1035.0,
+      630.0
+    ],
+    "current063_itself_changed": false,
+    "requirement": "Whole wrist/palm/thumb root and full grip must roll/regrip coherently; never stretch isolated thumb or move slider. Actual drawn069 must prove reach and far support ownership.",
+    "meaning": "Blue whole-hand target reaches slider index by whole-palm/root reconstruction; actual native anatomy/contact still must be verified. No old nearhand is left in A, no isolated thumb bridge or source finger stretching.",
+    "motion35_axis_unit": [
+      0.980478934432394,
+      -0.19662415704667893
+    ],
+    "motion35_delta_native": [
+      34.31676270513379,
+      -6.881845496633763
+    ],
+    "near_hand_volume_bbox_NOT_ART": [
+      673,
+      560,
+      1135,
+      767
+    ],
+    "near_far_projected_overlap_pixels_SOFT_front_near": 11,
+    "overlap_interpretation": "Small diagram projected overlap is explicitly near in front of far palm/wrist; not claimed anatomy/pressure proof. Actual069 must resolve full finger ownership."
+  },
+  "white_bbox": [
+    655,
+    512,
+    1279,
+    824
+  ],
+  "guard_overlap_pixels": {
+    "head_skirt": 0,
+    "fixed_visible_prop": 0
+  },
+  "F073_dependency": {
+    "must_use_future_accepted_069_mother": true,
+    "first_ON_frames": [
+      73,
+      76
+    ],
+    "TRANSIT_dark_frames": [
+      69,
+      72
+    ],
+    "actual_dark_lens_source_center": [
+      1133.03882756,
+      285.65702322
+    ],
+    "actual063_dark_lens_reference_center": [
+      1229.8854704704174,
+      560.4106455371643
+    ],
+    "direction_L_minus_T_unit": [
+      0.980478934432394,
+      -0.19662415704667893
+    ],
+    "source_lens_area2627_bbox": [
+      1080,
+      270,
+      1187,
+      302
+    ],
+    "meaning": "Actual dark neutral lens area fit reference only, not exact optical/mechanical measurement. Existing white reflections remain OFF.",
+    "new_light_not_drawn": true
+  },
+  "intermediate_reference_need": "One complete hand/rigid-lamp/full-arms turning reference if Astra requests; no fake interpolation and no change to058x5+063x6.",
+  "remaining_gates": [
+    "Root/Astra reference review and author input freeze before any call.",
+    "Actual069 complete near whole-hand slider reach, genuine far pad load and natural continuous arms must pass; blue volume is not five-finger acceptance.",
+    "073 follows actual accepted069 with stable support and firstON; no independent pose refreeze implied."
+  ],
+  "calls": 0,
+  "authority_latest": "Latest Astra overrides the preceding no-axial-shift message: allow whole near grip35native toward head and inward roll; real axis/key/lamp fixed. Unique opaque new full hand target required. D identity/cloth only. Both full sleeves/front garment may be repaired.063locked mother untouched.",
+  "unknown_revealed_barrel": {
+    "mask_pixels": 5044,
+    "source_real_RGBA_invented": false,
+    "meaning": "Blue hidden-barrel technical surface must be drawn with real final scale; no pureprop oldcut pixels pasted."
+  },
+  "new_geometry_bbox": [
+    673,
+    560,
+    1263,
+    777
+  ]
+}
