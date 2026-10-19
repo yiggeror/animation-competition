@@ -1,3 +1,5 @@
+最新终态：Astra已正式锁106零调用13bd048bc8a23519ab284c31ae477b1adea387d45df77fa55efafb8d850bec21，源提交68553dd89134163ab1c3c5482c8711f15d4f6156。锁100×3→103×3→106×2真实灰深8f已全解码实看，见locked100_103_106_8f_FINAL_20261019/README.md；11态正式索引见source_index_61sol/S07_final_11_state_source_index_LOCKED.json。下文保留原native失败历史，错误臂/手/灯始终弃用，最终仅取其真实衣料。
+
 最新状态：68553dd8已按Astra明确后续指示交付零调用完整语义候选，详见 `zero_call_semantic_cloth_trial_20261019/README.md`。候选SHA13bd048bc8a23519ab284c31ae477b1adea387d45df77fa55efafb8d850bec21，等待实际结果门。下文保留原native失败记录；错误native臂/手/灯仍未采用。057准确原图已由协调提供并补入索引，1705指前57帧接地补丁，不是新057母图。
 
 # F106 唯一局部整臂请求：原件HOLD，不采用

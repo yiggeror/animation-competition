@@ -1,6 +1,6 @@
 {
   "schema": "S07_final_11_state_source_index_v1",
-  "status": "EXISTING11STATE_SOURCE_INDEX_057_RESOLVED_106_ZERO_CALL_RESULT_PENDING",
+  "status": "ELEVEN_FINAL_SOURCE_IDENTITIES_LOCKED_8F_TIMING_PENDING_ASTRA",
   "repository": "/workspace/s07-walk-reference-20261018",
   "frame_rate": 24,
   "shot_frame_range_inclusive": [
@@ -37,7 +37,7 @@
   },
   "scene_lamp_policy": {
     "frames_0_through99": "Keep original scene tableLamp(0). Delivered pre100 person layers do not replace the physical lamp.",
-    "frames100_through107": "STOP drawing scene tableLamp(0), including its duplicate table shadow, because final100/103 and planned106 whole-action layer contains the physical lamp;106 final artifact is pending root.",
+    "frames100_through107": "STOP original scene tableLamp(0) including its duplicate shadow. Final100/103/106 whole-action PNG owns the one physical lamp and baseline table shadow.",
     "100_103_lamp_ownership": "table support;103 closed hand established but lamp not lifted",
     "106": "same complete gripping hand and full physical lamp lift together; table shadow stationary, lamp dark",
     "evidence": "Explicit parent delegated authority2026-10-19; F100/F103 source layer-order and protection checks.",
@@ -50,11 +50,11 @@
       107
     ],
     "disable_includes_original_table_shadow": true,
-    "single_render_owner": "Draw either original scene tableLamp(0) or the final whole-action PNG containing the physical lamp, never both. F106 has no accepted final yet; do not silently substitute the failed raw.",
+    "single_render_owner": "Draw original scene tableLamp(0) only frames0through99; draw the lamp-containing final whole-action PNG from100through107, never both.",
     "layer_order": [
       "room_and_table",
-      "original_scene.tableLamp(0)_and_its_shadow_ONLY_frames0_99",
-      "one_final_whole_action_PNG_per_state; frames100_105_already_include_lamp_and_table_shadow;106_missing"
+      "original_scene.tableLamp(0)_and_shadow_ONLY_frames0_99",
+      "one_final_whole_action_PNG_per_state;100_103_106_include_one_lamp_and_stationary_baseline_shadow"
     ]
   },
   "known_095_100_103_fixed_foot_proxy_evidence": "collab/reviews/cloud_s07_walk_20261018/F095_next_gate_20261019/geometry/preparation_checks.json",
@@ -449,16 +449,16 @@
       "hold_frames": 2,
       "support_event": "双脚固定，承重转交右手",
       "action": "手与整灯同移，灯底离桌",
-      "final_png_path": null,
-      "png_SHA256": null,
-      "source_commit_SHA": null,
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/zero_call_semantic_cloth_trial_20261019/candidate/F106_ZERO_CALL_LOCKED103_WHOLE_CHAIN_actual106_CLOTH_BACKPLATE_PENDING_ASTRA.png",
+      "png_SHA256": "13bd048bc8a23519ab284c31ae477b1adea387d45df77fa55efafb8d850bec21",
+      "source_commit_SHA": "68553dd89134163ab1c3c5482c8711f15d4f6156",
       "known_commit_abbrev": null,
       "scene_registration_ref": "unchanged_native_to_original_scene",
-      "whole_action_layer_path": null,
-      "component_layer_directory": null,
-      "has_physical_lamp": null,
-      "has_table_shadow": null,
-      "lamp_ownership": "PLANNED_final_whole_action_PNG_only_NO_ACCEPTED106",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/zero_call_semantic_cloth_trial_20261019/candidate/F106_ZERO_CALL_LOCKED103_WHOLE_CHAIN_actual106_CLOTH_BACKPLATE_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/zero_call_semantic_cloth_trial_20261019/layers",
+      "has_physical_lamp": true,
+      "has_table_shadow": true,
+      "lamp_ownership": "final_whole_action_PNG_only",
       "scene_tableLamp_0_enabled": false,
       "lamp_ON": false,
       "known_ground_anchors": {
@@ -467,9 +467,12 @@
         "far_LEFT_sole_bottom_native_alpha128": 1022
       },
       "evidence": [
-        "collab/reviews/cloud_s07_walk_20261018/exposure.csv"
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/zero_call_semantic_cloth_trial_20261019/qa/checks.json",
+        "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/locked100_103_106_8f_FINAL_20261019/qa/actual8_decode_and_table_source_checks.json",
+        "Astra explicit actual-result lock13bd048b at68553dd89134163ab1c3c5482c8711f15d4f6156"
       ],
-      "unresolved": "Final106 remainsnull pending Astra actual-result gate on new zero-call semantic trial; failed native arm/hand/lamp not adopted. No8f yet.",
+      "unresolved": null,
       "planned_same_hand_and_whole_physical_lamp_delta": {
         "native": [
           0,
@@ -484,8 +487,8 @@
         "table_shadow_moves_with_lamp": false
       },
       "expected_final_contains_physical_lamp": true,
-      "table_shadow_note": "Stationary context, outside moving hand/lamp group; final containment flag leftnull until root fills final artifact.",
-      "status": "ZERO_CALL_SEMANTIC_CANDIDATE_PENDING_ASTRA_RESULT_GATE",
+      "table_shadow_note": "Final106 PNG includes the independent stationary original baseline table shadow. It is NOT in the moving whole-arm/grip/lamp group and NOT lifted lighting certification.",
+      "status": "FORMALLY_LOCKED_ZERO_CALL_COMPLETE_CHAIN_AND_CLOTH_RESULT",
       "raw_only": {
         "path": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/originals/F106_NATIVE_call01_RAW.png",
         "SHA256": "10bdbcc10f20f6ac472d8f70ef98a2385f6166523dec478f59b3afab004d5aee",
@@ -494,15 +497,11 @@
         "retry": 0,
         "parent_actual_review": "Whole45/64+[1240,0] registration shows real grip/lamp displaced upper-right from frozen same-hand/same-lamp group. HOLD; no independent fit or source-hand paste."
       },
-      "lamp_support_owner": "PLANNED_right_hand_final_selfcontained_NOT_ADOPTED",
-      "table_shadow_render_owner": "planned_stationary_baseline_context_NO_ACCEPTED106",
-      "lamp_render_owner": "PLANNED_final_whole_action_PNG_only_NO_ACCEPTED106",
-      "pending_candidate": {
-        "path": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/zero_call_semantic_cloth_trial_20261019/candidate/F106_ZERO_CALL_LOCKED103_WHOLE_CHAIN_actual106_CLOTH_BACKPLATE_PENDING_ASTRA.png",
-        "SHA256": "13bd048bc8a23519ab284c31ae477b1adea387d45df77fa55efafb8d850bec21",
-        "same_actual103_whole_motion_group": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/layers/F106_whole_actual_bare_arm_hand_physical_lamp_LIFTED.png",
-        "native_additional_requests": 0
-      }
+      "lamp_support_owner": "near_RIGHT_same_complete_closed_hand",
+      "table_shadow_render_owner": "same_final_whole_action_PNG_stationary_baseline_only",
+      "lamp_render_owner": "final_whole_action_PNG_only",
+      "unique_complete_motion_layer_path": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/layers/F106_whole_actual_bare_arm_hand_physical_lamp_LIFTED.png",
+      "unique_complete_motion_layer_SHA256": "e8b93f12e23377843b23660c50a9e33635fb47738e7b6b8c22c88e616f6e165f"
     }
   ],
   "integrated_final_scene_whole_action_layer_path": null,
@@ -511,12 +510,13 @@
     "Parent explicitly locks10384334c3f/06443a17,10061766ddb/7dc803e9,095original color, and source069 is unrelated to thisS07 index.",
     "Existing filenames may retain PENDING or TRIAL wording; adopted status comes from later explicit lock authority, not filename.",
     "106 working files not read. Raw identity and HOLD are copied only from parent new explicit message;0571705 and106 final artifact remainnull.",
-    "Root clarified support owner versus renderer owner, exact numeric tableLamp frame ranges and one-lamp layer order. Existing062/079 commit objects resolved from known prefixes only; no new image measurement or anchor computation."
+    "Root clarified support owner versus renderer owner, exact numeric tableLamp frame ranges and one-lamp layer order. Existing062/079 commit objects resolved from known prefixes only; no new image measurement or anchor computation.",
+    "10613bd048b formally locked by Astra actual complete-person/whole-chain result review; source68553dd89134163ab1c3c5482c8711f15d4f6156. 057 sourcee3d2202c supplied separately;1705 is only pre57 ground-contact patch. Final8f uses locked100103106; no regeneration."
   ],
   "F106_existing_planned_actual_group_layers": {
     "source_complete_hand_and_lamp_no_shadow": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/layers/F103_ONE_actual_complete_hand_and_entire_physical_lamp_NO_shadow.png",
     "same_group_uniquely_lifted": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/layers/F106_ONE_same_actual_complete_hand_and_entire_physical_lamp_LIFTED.png",
     "original_stationary_shadow": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/sources/ORIGINAL_table_shadow_NOT_lifted.png",
-    "adoption_status": "INPUT_REFERENCE_GROUPS_ONLY_NO_ACCEPTED106"
+    "adoption_status": "FORMALLY_LOCKED106_WHOLE_ACTION_PNG_OWNS_LAMP_AND_STATIONARY_SHADOW"
   }
 }

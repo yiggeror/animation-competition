@@ -1,0 +1,203 @@
+{
+  "state": "ACTUAL8F_ALL_DECODED_AND_ROOT_VIEWED_PENDING_ASTRA_FINAL_TIMING_REVIEW",
+  "source_SHA256": {
+    "100": "7dc803e92e69cb90a84465f4b25e64f5ba9ea62b6b3853bd9a66b658f9951b2b",
+    "103": "06443a17f780d7a72a293c27686099ffaf72ba827b00e3290059c3061cd2ad90",
+    "106": "13bd048bc8a23519ab284c31ae477b1adea387d45df77fa55efafb8d850bec21"
+  },
+  "source_commits": {
+    "100": "61766ddbbde81bf1a15e7b846211ea8a25d8950f",
+    "103": "84334c3f7b0ab72e9e700ae3e165617945ef615e",
+    "106": "68553dd89134163ab1c3c5482c8711f15d4f6156"
+  },
+  "source_origin": "all actual locked final PNGs; no inputs or technical prepose",
+  "native_registration": "1960x1080 at0,0; no scale,crop,part movement or recolor",
+  "exposure": {
+    "100": 3,
+    "103": 3,
+    "106": 2,
+    "total": 8,
+    "fps": 24,
+    "duration": 0.3333333333333333
+  },
+  "native_new_requests": 0,
+  "F106_total": {
+    "requests": 1,
+    "raw": 1,
+    "retries": 0,
+    "new_final_repair_requests": 0
+  },
+  "variants": {
+    "gray": {
+      "video_SHA256": "ac05415fd922123ee9a62330d87d78a3f126936f65aa7ec2a0b2edeb94648f02",
+      "decoded_frames": 8,
+      "fps": "24/1",
+      "duration": 0.333333,
+      "audio_streams": 0,
+      "all8_actual_states_correct": true,
+      "all8_classifications": [
+        {
+          "decoded_index": 0,
+          "source_state": 100,
+          "expected_state": 100,
+          "matching_MAE": 0.25542233560090705
+        },
+        {
+          "decoded_index": 1,
+          "source_state": 100,
+          "expected_state": 100,
+          "matching_MAE": 0.2541235197782817
+        },
+        {
+          "decoded_index": 2,
+          "source_state": 100,
+          "expected_state": 100,
+          "matching_MAE": 0.2543531116150164
+        },
+        {
+          "decoded_index": 3,
+          "source_state": 103,
+          "expected_state": 103,
+          "matching_MAE": 0.26265369110607206
+        },
+        {
+          "decoded_index": 4,
+          "source_state": 103,
+          "expected_state": 103,
+          "matching_MAE": 0.26294438145628624
+        },
+        {
+          "decoded_index": 5,
+          "source_state": 103,
+          "expected_state": 103,
+          "matching_MAE": 0.2625418871252205
+        },
+        {
+          "decoded_index": 6,
+          "source_state": 106,
+          "expected_state": 106,
+          "matching_MAE": 0.27117047745023937
+        },
+        {
+          "decoded_index": 7,
+          "source_state": 106,
+          "expected_state": 106,
+          "matching_MAE": 0.2719771982867221
+        }
+      ]
+    },
+    "dark": {
+      "video_SHA256": "b61e0fe9724f260b58f9f90352bc194e43415e4c9c4052ee2f5ebd7a99817481",
+      "decoded_frames": 8,
+      "fps": "24/1",
+      "duration": 0.333333,
+      "audio_streams": 0,
+      "all8_actual_states_correct": true,
+      "all8_classifications": [
+        {
+          "decoded_index": 0,
+          "source_state": 100,
+          "expected_state": 100,
+          "matching_MAE": 1.144826782564878
+        },
+        {
+          "decoded_index": 1,
+          "source_state": 100,
+          "expected_state": 100,
+          "matching_MAE": 1.144746945074326
+        },
+        {
+          "decoded_index": 2,
+          "source_state": 100,
+          "expected_state": 100,
+          "matching_MAE": 1.1447710380448475
+        },
+        {
+          "decoded_index": 3,
+          "source_state": 103,
+          "expected_state": 103,
+          "matching_MAE": 1.152486929957168
+        },
+        {
+          "decoded_index": 4,
+          "source_state": 103,
+          "expected_state": 103,
+          "matching_MAE": 1.1526240866717057
+        },
+        {
+          "decoded_index": 5,
+          "source_state": 103,
+          "expected_state": 103,
+          "matching_MAE": 1.152476064499874
+        },
+        {
+          "decoded_index": 6,
+          "source_state": 106,
+          "expected_state": 106,
+          "matching_MAE": 1.1618934240362813
+        },
+        {
+          "decoded_index": 7,
+          "source_state": 106,
+          "expected_state": 106,
+          "matching_MAE": 1.1620915217939027
+        }
+      ]
+    }
+  },
+  "table_camera": {
+    "background_source": "assets/paint/bg_01_room_wide.png",
+    "background_SHA256": "3bc55f3b9d238b4242eddbd06a0c3f81a394673fa19c4f33ef263ba65d4e01ed",
+    "native_to_world": {
+      "s": 0.36410361842105265,
+      "tx": 627.0254537171638,
+      "ty": 402.7604324894813
+    },
+    "same_fixed_world_crop": [
+      720,
+      360,
+      1488,
+      792
+    ],
+    "preview_size": [
+      1280,
+      720
+    ],
+    "original_scene_tableLamp_0_draws": 0,
+    "whole_action_PNG_draws_per_frame": 1,
+    "original_known_lamp_base_native103": [
+      1743.939126549811,
+      657.0645151728758
+    ],
+    "locked106_same_base_native": [
+      1743.939126549811,
+      644.7053960311479
+    ],
+    "base_world103": [
+      1262,
+      642
+    ],
+    "base_world106": [
+      1262,
+      637.5
+    ],
+    "same_whole_motion_group_native_dy": -12.359119141727836,
+    "stationary_table_shadow_native_transform": [
+      0,
+      0
+    ],
+    "table_shadow_baseline_only_not_lifted_lighting_certification": true,
+    "render_scope": "three actual locked-state composites on original table with verified fixed camera; unlit geometry proof, no coded people, no full scene or108f render"
+  },
+  "actual_root_views": [
+    "ACTUAL8f_decoded2_3_5_6_full_and_true_grip_gray.png",
+    "ACTUAL8f_decoded2_3_5_6_full_and_true_grip_dark.png",
+    "ORIGINAL_TABLE_fixed_camera_100_103_106_support_and_lift.png"
+  ],
+  "actual_findings": [
+    "2to3: open hand closes around the real original wire; lamp remains table-supported.",
+    "5to6: the same whole closed grip and true physical lamp lift together; body/far group/waist/legs/shoes remain fixed.",
+    "Original-table fixed-camera actual composites show103 base resting at the established support,106 slight separation; one physical lamp and one stationary baseline table shadow.",
+    "No extra native request or source-color adjustment. Existing shadow retained only as baseline, not certification of complete lifted shadow/light physics."
+  ]
+}
