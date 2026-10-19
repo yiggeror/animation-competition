@@ -1,0 +1,72 @@
+{
+  "status": "PASS_STATIC_AND_STUB_ONLY",
+  "main_commit": "67dd8e34698a4bee2e5e7dfde72bc55170210d2b",
+  "source_commit": "1e64ae9356d6335430d4783cf4976e1569ed1923",
+  "production_files": 11,
+  "native_png_sha256_and_git_blobs_verified": 9,
+  "final_lock_original_blob": "5ded7dbf5a2db772daf765522e4438b808514348",
+  "only_source_changes": 5,
+  "normalized_source_byte_identical": true,
+  "exports": [
+    "CAM",
+    "DURATION",
+    "EXPOSURES",
+    "FPS",
+    "FRAME_COUNT",
+    "REGISTRATION",
+    "SCENE_CONFIG",
+    "SHEET",
+    "SOURCE_SCENE_COMMIT",
+    "pickExposure",
+    "registrationMatrix",
+    "renderFrame"
+  ],
+  "real_esm_graph_linked_modules": 19,
+  "shared_dependency_sha256_matches_fixed_render_baseline": 18,
+  "shared_s23_blob": "7bf079d18839964271c3e743247509ed3840326d",
+  "frame_exposure_mappings_equal": 60,
+  "stub_render_plans_equal": 60,
+  "holds": [
+    6,
+    3,
+    3,
+    3,
+    4,
+    5,
+    8,
+    8,
+    20
+  ],
+  "runtime_request_stub_count": 10,
+  "reviews_runtime_dependencies": 0,
+  "reviews_stub_requests": 0,
+  "negative_guards_pass": [
+    "unapproved",
+    "wrong_status",
+    "wrong_hold",
+    "wrong_lock_sha",
+    "wrong_count",
+    "missing_lock",
+    "corrupt_png",
+    "missing_png",
+    "wrong_dimensions"
+  ],
+  "unmodified": [
+    "camera",
+    "exposure",
+    "fog",
+    "registration",
+    "sheet23(5,env)",
+    "flatMaps(native,0)",
+    "image bytes",
+    "shared modules"
+  ],
+  "not_run": [
+    "browser",
+    "listening server",
+    "Canvas/WebGL actual rendering",
+    "PNG pixel decode",
+    "production path 60/60 actual PNG equivalence"
+  ],
+  "note": "Full main dependency graph was parsed and linked without evaluation; renderFrame control-flow used three dependency stubs and PNG-header bitmap stub. No actual image render is claimed."
+}

@@ -1,0 +1,240 @@
+{
+  "commit": "67dd8e34698a4bee2e5e7dfde72bc55170210d2b",
+  "files": [
+    {
+      "path": "js/lamp/s06_key.js",
+      "blob": "443bd5e2a793e24a9b1c51ad77e8e435a1f0bf13",
+      "sha256": "fdd0835b5486ac66385cb339b2a2dbbb8521978d3716c6293c7ef5927ef887d9",
+      "imports": [
+        {
+          "specifier": "./gl.js",
+          "resolved_path": "js/lamp/gl.js",
+          "blob": "265792ea869ab507660d75a432ba833646b0faf1"
+        },
+        {
+          "specifier": "./shaders.js",
+          "resolved_path": "js/lamp/shaders.js",
+          "blob": "8baa1c4467043fa3ce862b3f04c68244e1037ca8"
+        },
+        {
+          "specifier": "../shadowplay.js",
+          "resolved_path": "js/shadowplay.js",
+          "blob": "80a7e835e3a879e71ecb247353e5113ad68dbdf4"
+        },
+        {
+          "specifier": "./crane.js",
+          "resolved_path": "js/lamp/crane.js",
+          "blob": "067e077a2cdb692e6366eb2803087628823952b9"
+        },
+        {
+          "specifier": "./scenery.js",
+          "resolved_path": "js/lamp/scenery.js",
+          "blob": "56a9a3c1c9b560987998811889fdc2541d30e4c0"
+        },
+        {
+          "specifier": "./xiaoman.js",
+          "resolved_path": "js/lamp/xiaoman.js",
+          "blob": "154ad7c6ae109268c6d02561fade4b324589cc3d"
+        },
+        {
+          "specifier": "./cards.js",
+          "resolved_path": "js/lamp/cards.js",
+          "blob": "8a85b42cd2fddd6e289dc548e5bab50e0b2ae84a"
+        },
+        {
+          "specifier": "./xm_rig.js",
+          "resolved_path": "js/lamp/xm_rig.js",
+          "blob": "6260f11e25efe07a91949b6f8d00b27261d1d8ab"
+        }
+      ]
+    },
+    {
+      "path": "js/lamp/shots/s23.js",
+      "blob": "7bf079d18839964271c3e743247509ed3840326d",
+      "sha256": "6d09ecaae7e518557ef961af858a301adeda8e74300c753b58605ea6b201632e",
+      "imports": [
+        {
+          "specifier": "./shotkit.js",
+          "resolved_path": "js/lamp/shots/shotkit.js",
+          "blob": "b2e991a93729bf21725267798c5e6b1669b33e37"
+        },
+        {
+          "specifier": "../../puppet.js",
+          "resolved_path": "js/puppet.js",
+          "blob": "fa87fe75eb2edf5dae9d182c53b1d32d5ff7aa6d"
+        },
+        {
+          "specifier": "../turtle.js",
+          "resolved_path": "js/lamp/turtle.js",
+          "blob": "722b946f70b289365de7f4eda415880fa8dd10d6"
+        },
+        {
+          "specifier": "../choreo.js",
+          "resolved_path": "js/lamp/choreo.js",
+          "blob": "8ac73f1183995c86b724dcd2f94374da9a3fc194"
+        }
+      ]
+    },
+    {
+      "path": "js/lamp/s08_back.js",
+      "blob": "ff5b9e6a83ed8c9380e7fdd1db671b841dcedbea",
+      "sha256": "79cbdae73443216a1611a1ee5161e9c22ecb230d0f04d07cf559cb25d4aa3b23",
+      "imports": [
+        {
+          "specifier": "./s06_key.js",
+          "resolved_path": "js/lamp/s06_key.js",
+          "blob": "443bd5e2a793e24a9b1c51ad77e8e435a1f0bf13"
+        },
+        {
+          "specifier": "../puppet.js",
+          "resolved_path": "js/puppet.js",
+          "blob": "fa87fe75eb2edf5dae9d182c53b1d32d5ff7aa6d"
+        }
+      ]
+    },
+    {
+      "path": "js/lamp/gl.js",
+      "blob": "265792ea869ab507660d75a432ba833646b0faf1",
+      "sha256": "ba98ba276559c430fc244a261387b32c77901a042e9c60b8acee31da3fdd0b29",
+      "imports": []
+    },
+    {
+      "path": "js/lamp/shaders.js",
+      "blob": "8baa1c4467043fa3ce862b3f04c68244e1037ca8",
+      "sha256": "773d25786637b178c73df987f11539d8786f2516fc6c04099d81caae170ddf1d",
+      "imports": []
+    },
+    {
+      "path": "js/shadowplay.js",
+      "blob": "80a7e835e3a879e71ecb247353e5113ad68dbdf4",
+      "sha256": "2620c4164efb9a440f69b7d723d1d373894116115c9aa56442160b8a7b0739d8",
+      "imports": [
+        {
+          "specifier": "./puppet.js",
+          "resolved_path": "js/puppet.js",
+          "blob": "fa87fe75eb2edf5dae9d182c53b1d32d5ff7aa6d"
+        }
+      ]
+    },
+    {
+      "path": "js/lamp/crane.js",
+      "blob": "067e077a2cdb692e6366eb2803087628823952b9",
+      "sha256": "212e8a4fdad764fa50928c60a8efc956ad660c62377ea1ea152433a6fea4e642",
+      "imports": []
+    },
+    {
+      "path": "js/lamp/scenery.js",
+      "blob": "56a9a3c1c9b560987998811889fdc2541d30e4c0",
+      "sha256": "63f8cc830c0ed37db2a178b8b9ae3ed69f2d455915e1c5fb3bd5222d7fa64030",
+      "imports": [
+        {
+          "specifier": "./crane.js",
+          "resolved_path": "js/lamp/crane.js",
+          "blob": "067e077a2cdb692e6366eb2803087628823952b9"
+        }
+      ]
+    },
+    {
+      "path": "js/lamp/xiaoman.js",
+      "blob": "154ad7c6ae109268c6d02561fade4b324589cc3d",
+      "sha256": "d3b47b12cbcbb4bdec96df0bfa85357543ab6ea98d627cdb8260550cfc6e60e0",
+      "imports": [
+        {
+          "specifier": "../lib/draw.js",
+          "resolved_path": "js/lib/draw.js",
+          "blob": "95e94d8e89b1c50abf48b783cf13b9527e6de13b"
+        },
+        {
+          "specifier": "../lib/figure.js",
+          "resolved_path": "js/lib/figure.js",
+          "blob": "25dc6398af184c6dbc4ddd6a646d8d44a7bfb24d"
+        },
+        {
+          "specifier": "./cards.js",
+          "resolved_path": "js/lamp/cards.js",
+          "blob": "8a85b42cd2fddd6e289dc548e5bab50e0b2ae84a"
+        }
+      ]
+    },
+    {
+      "path": "js/lamp/cards.js",
+      "blob": "8a85b42cd2fddd6e289dc548e5bab50e0b2ae84a",
+      "sha256": "f6aa857fd1ba89ace359273e640b46915ff1d142cc4d90f1e84b148f430db130",
+      "imports": []
+    },
+    {
+      "path": "js/lamp/xm_rig.js",
+      "blob": "6260f11e25efe07a91949b6f8d00b27261d1d8ab",
+      "sha256": "99b819478174a2bf250883cf05dd3c9f9b5743c1cfb98c5fd58ab876d28b7b22",
+      "imports": []
+    },
+    {
+      "path": "js/lamp/shots/shotkit.js",
+      "blob": "b2e991a93729bf21725267798c5e6b1669b33e37",
+      "sha256": "3cd7989d0276f0edc791ac72fae11463e611f13c0a3433fe99c27f38cec20a74",
+      "imports": [
+        {
+          "specifier": "../s06_key.js",
+          "resolved_path": "js/lamp/s06_key.js",
+          "blob": "443bd5e2a793e24a9b1c51ad77e8e435a1f0bf13"
+        }
+      ]
+    },
+    {
+      "path": "js/puppet.js",
+      "blob": "fa87fe75eb2edf5dae9d182c53b1d32d5ff7aa6d",
+      "sha256": "04b80760b97185ab8aea7826383d85f3c9d7789cd01aa1d8664fdc74bc4c30b7",
+      "imports": []
+    },
+    {
+      "path": "js/lamp/turtle.js",
+      "blob": "722b946f70b289365de7f4eda415880fa8dd10d6",
+      "sha256": "f7e91070a5959a2a5b97438a64db0f79af4890c2dbff1cdcbe6e4d6a28817ed2",
+      "imports": [
+        {
+          "specifier": "./crane.js",
+          "resolved_path": "js/lamp/crane.js",
+          "blob": "067e077a2cdb692e6366eb2803087628823952b9"
+        }
+      ]
+    },
+    {
+      "path": "js/lamp/choreo.js",
+      "blob": "8ac73f1183995c86b724dcd2f94374da9a3fc194",
+      "sha256": "6f838cdfb1aab203f83e5905eb4242a65addb4181ca8e66ed4c91340903e33d6",
+      "imports": []
+    },
+    {
+      "path": "js/lib/draw.js",
+      "blob": "95e94d8e89b1c50abf48b783cf13b9527e6de13b",
+      "sha256": "e3d36d237c0f143f349bfd2fbc9afad24fc71897f56b990a5d2ed084d6c6d496",
+      "imports": [
+        {
+          "specifier": "./core.js",
+          "resolved_path": "js/lib/core.js",
+          "blob": "d39ed9427e6b53be83dd20bd3f4fcc0ef431ef55"
+        }
+      ]
+    },
+    {
+      "path": "js/lib/figure.js",
+      "blob": "25dc6398af184c6dbc4ddd6a646d8d44a7bfb24d",
+      "sha256": "03c8928bbe6546af7206024a163c9f56d7826f60917c24ac448010fdae67f3de",
+      "imports": [
+        {
+          "specifier": "./draw.js",
+          "resolved_path": "js/lib/draw.js",
+          "blob": "95e94d8e89b1c50abf48b783cf13b9527e6de13b"
+        }
+      ]
+    },
+    {
+      "path": "js/lib/core.js",
+      "blob": "d39ed9427e6b53be83dd20bd3f4fcc0ef431ef55",
+      "sha256": "748c357b97a71d6f122ef483923a64d3395bd692f6775b1601ef19b5bc08883e",
+      "imports": []
+    }
+  ],
+  "shared_files_to_publish": [],
+  "reviews_import_dependencies": 0
+}

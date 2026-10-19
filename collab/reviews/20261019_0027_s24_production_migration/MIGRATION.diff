@@ -1,0 +1,32 @@
+--- collab/reviews/cloud_s24_20261018/scene_candidate/s24_drawn.js
++++ js/anim/s24_drawn.js
+@@ -1,8 +1,8 @@
+ // Isolated S24 scene entry. Production source, EDL, audio and ready are untouched.
+ // Native drawings are the only character; the inherited lamp renderer handles room/light/sheet.
+-import { renderShot } from '../../../../js/lamp/s06_key.js';
+-import { sheet as sheet23 } from '../../../../js/lamp/shots/s23.js';
+-import { flatMaps } from '../../../../js/lamp/s08_back.js';
++import { renderShot } from '../lamp/s06_key.js';
++import { sheet as sheet23 } from '../lamp/shots/s23.js';
++import { flatMaps } from '../lamp/s08_back.js';
+ 
+ export const DURATION = 2.5;
+ export const FPS = 24;
+@@ -11,7 +11,7 @@
+ export const CAM = Object.freeze({pos:[3.15,1.62,1.12],target:[1.80,0.62,0.98],hfov:46});
+ export const SCENE_CONFIG = Object.freeze({exp:0.22,fog:0.5,sheetTimeOffset:3.4,sheetTimeScale:0.1,depthBase:[1.98,0.78,0.47]});
+ export const REGISTRATION = Object.freeze({native:[1024,1536],canvas:[1920,1080],scale:0.70,x:590,y:20});
+-const ASSET_ROOT = '/collab/reviews/cloud_s24_20261018/d08_d09_final_segment/candidates/';
++const ASSET_ROOT = '/assets/chars/x24/';
+ export const EXPOSURES = Object.freeze([
+   {id:'d01',start:0,hold:6,sha256:'0485c6fe2ee6ec05d762a6b1c531ed9764e7e77223b6cce455b54f50f99eff22'},
+   {id:'d02',start:6,hold:3,sha256:'4e363b28a951d7adafcbbe7bb41700086dfa91de0c6fc20ba9bac0641d52af4c'},
+@@ -41,7 +41,7 @@
+ let finalLockPromise;
+ async function requireFinalLock() {
+   finalLockPromise ||= (async()=>{
+-    const response=await fetch(new URL('./final_lock.json',import.meta.url));
++    const response=await fetch(new URL('../../assets/chars/x24/final_lock.json',import.meta.url));
+     if (!response.ok) throw new Error('S24 final lock record missing.');
+     const lock=await response.json();
+     if (lock.approved!==true || lock.status!=='ASTRA_FINAL_DUAL_LOCKED_ALL9') {
