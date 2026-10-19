@@ -1,0 +1,25 @@
+{
+  "frame": 24,
+  "reviewed_actual_images": [
+    "FULL_RAW_ON_GRAY.png",
+    "C1_NEAR_SUPPORT_ACTUAL_RAW_CROP.png",
+    "FAR_COMPLETE_ARM_ACTUAL_RAW_CROP.png",
+    "C2_FAR_PINCH_ACTUAL_RAW_CROP.png"
+  ],
+  "local_gate": "PASS_ANATOMY_AND_LIFT_ONLY",
+  "findings": [
+    "完整双肩袖—上臂—肘—腕—掌连续；近右裸手扶颈、远左单镯手夹布可读。",
+    "起提布面完整连续不透明，未复制技术图白洞、细带或接缝标记；尾羽主体仍露出，未提前包尾。",
+    "远夹点比目标偏右，远臂较伸展；当前未形成明显断臂、穿布或起提结构硬失败。"
+  ],
+  "limits": [
+    "不能声称精确对齐目标827,700，不能保证单一全母注册能同时对齐C1/C2。",
+    "生成偶仅供上下文；真实原偶neck3、四杆接层与正式机位尚待注册验证。"
+  ],
+  "helper_read_only_review": "已实看四图：双臂连续，近右裸手扶颈、远左镯手夹布可读；起提布面完整不透明，尾羽仍露出，未先包尾。夹点偏右目前未形成明显结构硬失败，但精确注册及真实原偶接层尚未验证，不能称已通过。全程只读。",
+  "requests": 1,
+  "raw_outputs": 1,
+  "retries": 0,
+  "next_authorized_frame": 30,
+  "reviewed_utc": "2026-10-19T09:46:04Z"
+}
