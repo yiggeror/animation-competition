@@ -1,0 +1,60 @@
+{
+  "status": "NATIVE_CANDIDATE_AWAITING_ACTUAL_CANVAS",
+  "source_arm_SHA256": "6e87f65ad06119f6483ba02bbfa072117f7fc1dcc32e4c79b374b67e7e41d543",
+  "source_static022_SHA256": "938682ddf40b13e6b72dbacbabedf9502ae73bba79944b330aae6a3bedb26234",
+  "native_candidate_SHA256": "2c28bafe7ee05c5b234711fc551dd2a4d358143ea2615dc0a2282428aa744332",
+  "forward_uniform_native_matrix": [
+    [
+      0.435717950246291,
+      0.061236164422429,
+      523.198762766005
+    ],
+    [
+      -0.061236164422429,
+      0.435717950246291,
+      572.695273541552
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "uniform_scale": 0.44,
+  "uniform_image_coordinate_degrees": -8,
+  "extra_whole_arm_translation_native": [
+    0,
+    0
+  ],
+  "proximal_mesh": {
+    "horizontal_native_support": [
+      610,
+      690
+    ],
+    "destination_vertical_native_support": [
+      640,
+      755
+    ],
+    "max_upward_displacement_native": 36,
+    "max_right_displacement_native": 15,
+    "max_vector_displacement_native": 39,
+    "lower_uniform_coordinate_y_taper": [
+      690,
+      755
+    ],
+    "x_smooth_ramps": [
+      600,
+      620,
+      665,
+      705
+    ],
+    "front_collar_placket_actual_outer_fold_trace_retained": true,
+    "applies_only_proximal_cloth": true,
+    "skin_wrist_all_digits_no_local_mesh": true
+  },
+  "protected_static_RGBA_exact": true,
+  "old_ownership_is_broad_GUIDE": false,
+  "exclusive_layers_RGBA_exact_reconstruction": true,
+  "imagegen_calls": 0,
+  "F026_F030_unbound": true
+}

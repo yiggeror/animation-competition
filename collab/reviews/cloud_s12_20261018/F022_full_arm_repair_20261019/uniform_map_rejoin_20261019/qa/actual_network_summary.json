@@ -1,0 +1,116 @@
+{
+  "actual_scene_render_runs": 2,
+  "both_rendered_frame": 22,
+  "both_actual_PNG_SHA_identical": true,
+  "second_render_reason": "Restore original invisible alpha0 RGB outside actual arm ownership; visible pixels/alpha unchanged.",
+  "actual_Canvas_SHA256": "1a0732e0fc879d086c04255dfdb507799d2be59fd21bfc91be025fd9cf809a2f",
+  "pageerror": [],
+  "requestfailed": [],
+  "non200_responses": [],
+  "console_errors_actual_locations": [
+    {
+      "utc": "2026-10-19T04:43:11.359Z",
+      "event": "console_error",
+      "page": 0,
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:46781/favicon.ico",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "utc": "2026-10-19T04:52:14.076Z",
+      "event": "console_error",
+      "page": 0,
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:41797/favicon.ico",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "loaded_files": [
+    {
+      "path": "assets/fonts/MaShanZheng-Regular.ttf",
+      "SHA256": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb"
+    },
+    {
+      "path": "assets/fonts/NotoSansSC-VF.ttf",
+      "SHA256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da"
+    },
+    {
+      "path": "assets/paint/bg_01_room_wide.png",
+      "SHA256": "3bc55f3b9d238b4242eddbd06a0c3f81a394673fa19c4f33ef263ba65d4e01ed"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F022_full_arm_repair_20261019/uniform_map_rejoin_20261019/candidate/F022.png",
+      "SHA256": "2c28bafe7ee05c5b234711fc551dd2a4d358143ea2615dc0a2282428aa744332"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F022_full_arm_repair_20261019/uniform_map_rejoin_20261019/contact_masks/L_knee.png",
+      "SHA256": "a525e0945e8a5da8b335e02cd8155c3aba2954dcbae3e0e7bf6f06791080a9fb"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F022_full_arm_repair_20261019/uniform_map_rejoin_20261019/contact_masks/L_shin.png",
+      "SHA256": "7bafdafb862e07f150a7cf0257d8e1a02465dc7bf2279f1eb69ba42453b011b3"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F022_full_arm_repair_20261019/uniform_map_rejoin_20261019/contact_masks/L_shoe.png",
+      "SHA256": "c953b2f5912f499bdf76b7ebfb2d266d5a0cd5e45fe71f80726c6707239dc9a2"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F022_full_arm_repair_20261019/uniform_map_rejoin_20261019/contact_masks/R_knee.png",
+      "SHA256": "63a74481b5d2403ce0a623d1af516a4e585f19a8bee4efc723c486e54390606f"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F022_full_arm_repair_20261019/uniform_map_rejoin_20261019/contact_masks/R_shin.png",
+      "SHA256": "cb1ede122088e9a645f493caaf2025aeddd33f7ffd91a24e1280c6bf64165dda"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F022_full_arm_repair_20261019/uniform_map_rejoin_20261019/contact_masks/R_shoe.png",
+      "SHA256": "e9f9e383fddc961ac0dad7bc2ab5cb6a4891b4974b87a3312b235726d151912e"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F022_full_arm_repair_20261019/uniform_map_rejoin_20261019/masks/non_thumb_alpha_native.png",
+      "SHA256": "2e7f19ea94f1380dce4355c82ce38afe3607799d51d4a0c329a5aea1d1f1131a"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F022_full_arm_repair_20261019/uniform_map_rejoin_20261019/masks/thumb_alpha_native.png",
+      "SHA256": "dc0d1fe912cf45765d992f42ffda1373b0ea0abf8bc08abbaae463b53d6b3631"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F022_full_arm_repair_20261019/uniform_map_rejoin_20261019/qa/native_alpha_contacts_registration.json",
+      "SHA256": "f2dd7857da5edc98f11622454c092d155ed7f95b79b89a1b2e86b0af8b808d5c"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F022_full_arm_repair_20261019/uniform_map_rejoin_20261019/scene/s12_F022_scene.js",
+      "SHA256": "c05bf34e6bc441902d8b92b62a597df3d5e9e8644f8d9362bf48467aadc7834a"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/geometry/three_key_pose_proposal.json",
+      "SHA256": "836d85d5b843aeae107693e6023772e5a91572787fa7dbb0e408e4773c0ff13f"
+    },
+    {
+      "path": "dev/view.html",
+      "SHA256": "2b5228f5447bcb919a6dea545152e5645cee890f89377d6ff7ffa14c9f6ed701"
+    },
+    {
+      "path": "js/lamp/crane.js",
+      "SHA256": "212e8a4fdad764fa50928c60a8efc956ad660c62377ea1ea152433a6fea4e642"
+    },
+    {
+      "path": "js/paint/paintshot.js",
+      "SHA256": "7d61a8e3cfa595b5a2877ce3624c2d8d186a1578cc684a8948471eb0eedca975"
+    },
+    {
+      "path": "js/puppet.js",
+      "SHA256": "04b80760b97185ab8aea7826383d85f3c9d7789cd01aa1d8664fdc74bc4c30b7"
+    }
+  ]
+}

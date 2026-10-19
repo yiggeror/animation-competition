@@ -1,0 +1,251 @@
+{
+  "status": "NATIVE_CANDIDATE_AWAITING_ACTUAL_CANVAS",
+  "source_arm_SHA256": "6e87f65ad06119f6483ba02bbfa072117f7fc1dcc32e4c79b374b67e7e41d543",
+  "source_static022_SHA256": "938682ddf40b13e6b72dbacbabedf9502ae73bba79944b330aae6a3bedb26234",
+  "native_candidate_SHA256": "25e7dc30a34ee72d04b1e630573a5e63197aa026cc3cba840a2154cad90aae1b",
+  "forward_uniform_native_matrix": [
+    [
+      0.435717950246291,
+      0.061236164422429,
+      523.198762766005
+    ],
+    [
+      -0.061236164422429,
+      0.435717950246291,
+      572.695273541552
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "uniform_scale": 0.44,
+  "uniform_image_coordinate_degrees": -8,
+  "extra_whole_arm_translation_native": [
+    0,
+    0
+  ],
+  "proximal_mesh": {
+    "horizontal_native_support": [
+      610,
+      690
+    ],
+    "destination_vertical_native_support": [
+      640,
+      755
+    ],
+    "max_upward_displacement_native": 36,
+    "lower_uniform_coordinate_y_taper": [
+      690,
+      755
+    ],
+    "x_smooth_ramps": [
+      610,
+      620,
+      680,
+      690
+    ],
+    "applies_only_proximal_cloth": true,
+    "skin_wrist_all_digits_no_local_mesh": true
+  },
+  "protected_static_RGBA_exact": true,
+  "old_ownership_is_broad_GUIDE": false,
+  "exclusive_layers_RGBA_exact_reconstruction": true,
+  "material_fixed_planes": {
+    "blue": {
+      "source_raw_pixels": 70788,
+      "static022_reference_pixels": 10359,
+      "source_fixed_plane_thresholds_L": [
+        157.99079999999998,
+        159.9186
+      ],
+      "reference_fixed_plane_thresholds_L": [
+        154.2936,
+        166.396
+      ],
+      "before_minus_target_RGB_by_dark_mid_lit": [
+        [
+          6.5606793258905896,
+          -5.6033700313371355,
+          -18.094217693389652
+        ],
+        [
+          10.76464347463994,
+          1.993848785980333,
+          -9.923412833534229
+        ],
+        [
+          15.950107821705217,
+          7.022590820257477,
+          -6.085269041501249
+        ]
+      ],
+      "applied_RGB_offsets_at_dark_mid_lit_anchors": [
+        [
+          5.000000825097919,
+          -8.756253232772059,
+          -21.605381308459712
+        ],
+        [
+          9.98260269869159,
+          1.3096006498268287,
+          -10.395686039345735
+        ],
+        [
+          18.188524701764905,
+          9.165538898139369,
+          -4.468427502333845
+        ]
+      ],
+      "after_minus_target_RGB_by_dark_mid_lit": [
+        [
+          0.010594127896766281,
+          -0.0625437977108163,
+          -0.10718084726357802
+        ],
+        [
+          0.032166211613841256,
+          -0.08499374345882416,
+          -0.1716719692332731
+        ],
+        [
+          -0.04453845507688925,
+          -0.11175263243512745,
+          0.23992007485807676
+        ]
+      ],
+      "fixed_plane_means_within4": true
+    },
+    "skin": {
+      "source_raw_pixels": 84584,
+      "static022_reference_pixels": 16478,
+      "source_fixed_plane_thresholds_L": [
+        216.89559999999997,
+        219.1174
+      ],
+      "reference_fixed_plane_thresholds_L": [
+        215.4784,
+        216.9718
+      ],
+      "before_minus_target_RGB_by_dark_mid_lit": [
+        [
+          -2.110977190162828,
+          -0.5015864263914693,
+          1.496417576294732
+        ],
+        [
+          -0.23616262086139272,
+          -2.2471230142305103,
+          -1.0206430674926708
+        ],
+        [
+          -0.4403032483378695,
+          -1.7086338222692916,
+          0.07048875098359986
+        ]
+      ],
+      "applied_RGB_offsets_at_dark_mid_lit_anchors": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "after_minus_target_RGB_by_dark_mid_lit": [
+        [
+          2.110977190162828,
+          0.5015864263914693,
+          -1.496417576294732
+        ],
+        [
+          0.23616262086139272,
+          2.2471230142305103,
+          1.0206430674926708
+        ],
+        [
+          0.4403032483378695,
+          1.7086338222692916,
+          -0.07048875098359986
+        ]
+      ],
+      "fixed_plane_means_within4": true
+    },
+    "jade": {
+      "source_raw_pixels": 6459,
+      "static022_reference_pixels": 1287,
+      "source_fixed_plane_thresholds_L": [
+        109.4112,
+        135.1971333333333
+      ],
+      "reference_fixed_plane_thresholds_L": [
+        113.24933333333333,
+        139.53626666666662
+      ],
+      "before_minus_target_RGB_by_dark_mid_lit": [
+        [
+          14.97512044956283,
+          -2.8675314771969056,
+          0.12441724941724885
+        ],
+        [
+          15.312971151411269,
+          0.9166358247138078,
+          5.163293530981548
+        ],
+        [
+          13.125331704988,
+          1.784039617295548,
+          5.840322550958859
+        ]
+      ],
+      "applied_RGB_offsets_at_dark_mid_lit_anchors": [
+        [
+          14.788790265024332,
+          -3.8276593729610284,
+          -1.1752891151109888
+        ],
+        [
+          15.813883800489906,
+          1.4544740699141279,
+          5.975031674733977
+        ],
+        [
+          12.674092402688187,
+          1.8393530062052326,
+          5.8177133364573415
+        ]
+      ],
+      "after_minus_target_RGB_by_dark_mid_lit": [
+        [
+          0.02487955043716994,
+          -0.07902986109306198,
+          0.08236713719985289
+        ],
+        [
+          0.019897929368681844,
+          0.07361487166502911,
+          0.024264500587619864
+        ],
+        [
+          0.11665621883921062,
+          0.21596038270445206,
+          0.15967744904114056
+        ]
+      ],
+      "fixed_plane_means_within4": true
+    }
+  },
+  "imagegen_calls": 0,
+  "F026_F030_unbound": true
+}

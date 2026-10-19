@@ -1,0 +1,256 @@
+{
+  "status": "STOP_ACTUAL_NON_THUMB_AA_AIR_BELOW3",
+  "source_arm_SHA256": "6e87f65ad06119f6483ba02bbfa072117f7fc1dcc32e4c79b374b67e7e41d543",
+  "source_static022_SHA256": "938682ddf40b13e6b72dbacbabedf9502ae73bba79944b330aae6a3bedb26234",
+  "native_candidate_SHA256": "2c28bafe7ee05c5b234711fc551dd2a4d358143ea2615dc0a2282428aa744332",
+  "forward_uniform_native_matrix": [
+    [
+      0.435717950246291,
+      0.061236164422429,
+      523.198762766005
+    ],
+    [
+      -0.061236164422429,
+      0.435717950246291,
+      572.695273541552
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "uniform_scale": 0.44,
+  "uniform_image_coordinate_degrees": -8,
+  "extra_whole_arm_translation_native": [
+    0,
+    0
+  ],
+  "proximal_mesh": {
+    "horizontal_native_support": [
+      610,
+      690
+    ],
+    "destination_vertical_native_support": [
+      640,
+      755
+    ],
+    "max_upward_displacement_native": 36,
+    "max_right_displacement_native": 15,
+    "max_vector_displacement_native": 39,
+    "lower_uniform_coordinate_y_taper": [
+      690,
+      755
+    ],
+    "x_smooth_ramps": [
+      600,
+      620,
+      665,
+      705
+    ],
+    "front_collar_placket_actual_outer_fold_trace_retained": true,
+    "applies_only_proximal_cloth": true,
+    "skin_wrist_all_digits_no_local_mesh": true
+  },
+  "protected_static_RGBA_exact": true,
+  "old_ownership_is_broad_GUIDE": false,
+  "exclusive_layers_RGBA_exact_reconstruction": true,
+  "material_fixed_planes": {
+    "blue": {
+      "source_raw_pixels": 70788,
+      "static022_reference_pixels": 9475,
+      "source_fixed_plane_thresholds_L": [
+        157.99079999999998,
+        159.9186
+      ],
+      "reference_fixed_plane_thresholds_L": [
+        156.9696,
+        166.6126
+      ],
+      "before_minus_target_RGB_by_dark_mid_lit": [
+        [
+          9.440938796453295,
+          -1.7787618098523694,
+          -13.736444946898729
+        ],
+        [
+          11.68142612927143,
+          2.9703843058590564,
+          -9.070095118382284
+        ],
+        [
+          15.941970658498718,
+          7.024321899957954,
+          -6.033540559838258
+        ]
+      ],
+      "applied_RGB_offsets_at_dark_mid_lit_anchors": [
+        [
+          8.723807853976536,
+          -3.6799699764397027,
+          -15.676999431313885
+        ],
+        [
+          11.013310769395426,
+          2.3898024770917248,
+          -9.481610435471593
+        ],
+        [
+          17.790715697576072,
+          8.762734568780735,
+          -4.74016625111959
+        ]
+      ],
+      "after_minus_target_RGB_by_dark_mid_lit": [
+        [
+          0.10440519242787616,
+          -0.08872429160697948,
+          -0.1075873672082821
+        ],
+        [
+          0.04240032534828231,
+          -0.14806171901429366,
+          -0.06188969879929118
+        ],
+        [
+          0.033206514890025574,
+          0.15570852562922255,
+          -0.10675108054616089
+        ]
+      ],
+      "fixed_plane_means_within4": true
+    },
+    "skin": {
+      "source_raw_pixels": 84584,
+      "static022_reference_pixels": 16478,
+      "source_fixed_plane_thresholds_L": [
+        216.89559999999997,
+        219.1174
+      ],
+      "reference_fixed_plane_thresholds_L": [
+        215.4784,
+        216.9718
+      ],
+      "before_minus_target_RGB_by_dark_mid_lit": [
+        [
+          -2.110977190162828,
+          -0.5015864263914693,
+          1.496417576294732
+        ],
+        [
+          -0.23616262086139272,
+          -2.2471230142305103,
+          -1.0206430674926708
+        ],
+        [
+          -0.4403032483378695,
+          -1.7086338222692916,
+          0.07048875098359986
+        ]
+      ],
+      "applied_RGB_offsets_at_dark_mid_lit_anchors": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "after_minus_target_RGB_by_dark_mid_lit": [
+        [
+          2.110977190162828,
+          0.5015864263914693,
+          -1.496417576294732
+        ],
+        [
+          0.23616262086139272,
+          2.2471230142305103,
+          1.0206430674926708
+        ],
+        [
+          0.4403032483378695,
+          1.7086338222692916,
+          -0.07048875098359986
+        ]
+      ],
+      "fixed_plane_means_within4": true
+    },
+    "jade": {
+      "source_raw_pixels": 6459,
+      "static022_reference_pixels": 1287,
+      "source_fixed_plane_thresholds_L": [
+        109.4112,
+        135.1971333333333
+      ],
+      "reference_fixed_plane_thresholds_L": [
+        113.24933333333333,
+        139.53626666666662
+      ],
+      "before_minus_target_RGB_by_dark_mid_lit": [
+        [
+          14.97512044956283,
+          -2.8675314771969056,
+          0.12441724941724885
+        ],
+        [
+          15.312971151411269,
+          0.9166358247138078,
+          5.163293530981548
+        ],
+        [
+          13.125331704988,
+          1.784039617295548,
+          5.840322550958859
+        ]
+      ],
+      "applied_RGB_offsets_at_dark_mid_lit_anchors": [
+        [
+          14.788790265024332,
+          -3.8276593729610284,
+          -1.1752891151109888
+        ],
+        [
+          15.813883800489906,
+          1.4544740699141279,
+          5.975031674733977
+        ],
+        [
+          12.674092402688187,
+          1.8393530062052326,
+          5.8177133364573415
+        ]
+      ],
+      "after_minus_target_RGB_by_dark_mid_lit": [
+        [
+          0.02487955043716994,
+          -0.07902986109306198,
+          0.08236713719985289
+        ],
+        [
+          0.019897929368681844,
+          0.07361487166502911,
+          0.024264500587619864
+        ],
+        [
+          0.11665621883921062,
+          0.21596038270445206,
+          0.15967744904114056
+        ]
+      ],
+      "fixed_plane_means_within4": true
+    }
+  },
+  "imagegen_calls": 0,
+  "F026_F030_unbound": true,
+  "actual_Canvas_SHA256": "1a0732e0fc879d086c04255dfdb507799d2be59fd21bfc91be025fd9cf809a2f",
+  "accepted_for_next_continuity": false
+}

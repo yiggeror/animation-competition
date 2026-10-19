@@ -1,0 +1,106 @@
+{
+  "status": "STOP_ACTUAL_NON_THUMB_AA_AIR_BELOW3",
+  "native_candidate_SHA256": "2c28bafe7ee05c5b234711fc551dd2a4d358143ea2615dc0a2282428aa744332",
+  "actual_Canvas_SHA256": "1a0732e0fc879d086c04255dfdb507799d2be59fd21bfc91be025fd9cf809a2f",
+  "source_arm_SHA256": "6e87f65ad06119f6483ba02bbfa072117f7fc1dcc32e4c79b374b67e7e41d543",
+  "source_static022_SHA256": "938682ddf40b13e6b72dbacbabedf9502ae73bba79944b330aae6a3bedb26234",
+  "exact_uniform_matrix": [
+    [
+      0.435717950246291,
+      0.061236164422429,
+      523.198762766005
+    ],
+    [
+      -0.061236164422429,
+      0.435717950246291,
+      572.695273541552
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "chosen_extra_whole_arm_translation_native": [
+    0,
+    0
+  ],
+  "proximal_cloth_vector_native": [
+    15,
+    -36
+  ],
+  "proximal_max_displacement_native": 39,
+  "actual_contact": {
+    "thumb_visible_upper": {
+      "pixel_box_boundary_air": 0.0,
+      "person_pixel": [
+        957,
+        777
+      ],
+      "prop_pixel": [
+        956,
+        778
+      ]
+    },
+    "thumb_visible_overlap": 0,
+    "thumb_AA_overlap": 0,
+    "all_other_ink_AA_upper": {
+      "pixel_box_boundary_air": 2.23606797749979,
+      "person_pixel": [
+        970,
+        773
+      ],
+      "prop_pixel": [
+        972,
+        776
+      ]
+    },
+    "all_hand_ink_AA_lower": {
+      "pixel_box_boundary_air": 16.0,
+      "person_pixel": [
+        956,
+        777
+      ],
+      "prop_pixel": [
+        957,
+        794
+      ]
+    },
+    "props_equal_frozen018": true,
+    "nearest_non_thumb_actual_person_RGBA": [
+      255,
+      0,
+      0,
+      1
+    ],
+    "nearest_non_thumb_mask_alpha": 1
+  },
+  "bounded_micro_probes": {
+    "software_grid_step_native": 0.1,
+    "radius_native": 1,
+    "actual_Chrome_mask_trials": 25,
+    "accepted": 0,
+    "alpha_diagnostics_not_full_scene_renders": true,
+    "zero_probe_alpha_equals_actual_full_scene": true,
+    "not_a_claim_of_mathematical_impossibility_between_test_points": true
+  },
+  "outside_old_new_ownership_RGBA_exact": true,
+  "source_originals_unchanged": true,
+  "near_right_head_and_all6_support_polygons_RGBA_exact": true,
+  "jade_actual_alpha_connected_regions": 1,
+  "jade_green_threshold_component_sizes": [
+    1370,
+    1
+  ],
+  "minor_green_threshold_pixel_inside_main_jade_bbox": true,
+  "distal_alpha_exact_same_uniform_map": true,
+  "exclusive_RGBA_reconstruction_exact": true,
+  "actual_props_RGBA_byte_equal_frozen018": true,
+  "actual_source_drawing_Canvas_and_contact_shoulder_crops_visually_inspected": true,
+  "new_imagegen_calls": 0,
+  "S12_cumulative_imagegen_calls": 7,
+  "actual_scene_render_runs": 2,
+  "both_actual_Canvas_PNG_identical": true,
+  "F026_F030_unbound": true,
+  "accepted_for_next_continuity": false
+}
