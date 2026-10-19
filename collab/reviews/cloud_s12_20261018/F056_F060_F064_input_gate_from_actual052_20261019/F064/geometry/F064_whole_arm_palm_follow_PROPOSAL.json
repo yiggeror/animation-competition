@@ -1,0 +1,561 @@
+{
+  "state": 64,
+  "proposed_hold": [
+    64,
+    69
+  ],
+  "preview_only_actual_mother": {
+    "state": 52,
+    "commit": "7ce0dc878db95dccbf4a9b791f6f0a1edc8f50b7",
+    "path": "collab/reviews/cloud_s12_20261018/F048_F052_actual_20261019/F052/candidate/F052.png",
+    "SHA256": "5a9df2ee672bee4be4f660217e6546e0771656c26c3bd0c6882d657328739b5c",
+    "author_passed_true_thumb_structure": true,
+    "direct_final_review_passed": true
+  },
+  "production_parent_required": "ACTUAL_ACCEPTED060_REQUIRED_REBUILD_BOTH_INPUTS_OR_REUSE_ACTUAL060",
+  "source052_S_E_W": [
+    [
+      549.7211421803579,
+      791.4800958956458
+    ],
+    [
+      686.6211421803579,
+      946.8800958956458
+    ],
+    [
+      864.2211421803579,
+      1029.020095895646
+    ]
+  ],
+  "target_S_E_W": [
+    [
+      566.0,
+      782.0
+    ],
+    [
+      717.0,
+      937.0
+    ],
+    [
+      895.0,
+      990.0
+    ]
+  ],
+  "source052_palm_bone_centre_M": [
+    901.2211421803579,
+    1050.4800958956457
+  ],
+  "target_palm_bone_centre_M": [
+    938,
+    1004
+  ],
+  "G_scene": [
+    962.5,
+    798.0587334647196
+  ],
+  "G_native": [
+    982.1428571428572,
+    980.0839049495995
+  ],
+  "shaft_does_not_move": true,
+  "G_reason": "Thumb section052 atx960 naturally advances2.5scene before secure index wrap; then same962.5section held through complete grip/preload. Complete wrist/palm advances; no isolated finger stretch to unchanged052palm.",
+  "thumb_T_native": [
+    993,
+    996
+  ],
+  "thumb_T_kind": "T thumb pad opposes index/middle, not rod centre",
+  "digits_native": {
+    "D1_THUMB": [
+      [
+        912,
+        1007
+      ],
+      [
+        949,
+        1004
+      ],
+      [
+        972,
+        1007
+      ],
+      [
+        993,
+        996
+      ]
+    ],
+    "D2_INDEX": [
+      [
+        968,
+        983
+      ],
+      [
+        984,
+        960
+      ],
+      [
+        1002,
+        972
+      ],
+      [
+        994,
+        992
+      ]
+    ],
+    "D3_MIDDLE": [
+      [
+        967,
+        995
+      ],
+      [
+        984,
+        970
+      ],
+      [
+        1000,
+        990
+      ],
+      [
+        987,
+        1006
+      ]
+    ],
+    "D4_RING": [
+      [
+        962,
+        1006
+      ],
+      [
+        980,
+        979
+      ],
+      [
+        993,
+        996
+      ],
+      [
+        977,
+        1010
+      ]
+    ],
+    "D5_LITTLE": [
+      [
+        953,
+        1015
+      ],
+      [
+        974,
+        989
+      ],
+      [
+        987,
+        1002
+      ],
+      [
+        973,
+        1016
+      ]
+    ]
+  },
+  "digit_radii_native": {
+    "D1_THUMB": [
+      13,
+      11,
+      9,
+      8
+    ],
+    "D2_INDEX": [
+      11,
+      10,
+      8.5,
+      7.5
+    ],
+    "D3_MIDDLE": [
+      11,
+      10,
+      8.5,
+      7.5
+    ],
+    "D4_RING": [
+      10,
+      9,
+      8,
+      7
+    ],
+    "D5_LITTLE": [
+      9,
+      8,
+      7,
+      6.5
+    ]
+  },
+  "palm_outline_native": [
+    [
+      901,
+      970
+    ],
+    [
+      927,
+      970
+    ],
+    [
+      950,
+      974
+    ],
+    [
+      968,
+      981
+    ],
+    [
+      980,
+      994
+    ],
+    [
+      973,
+      1018
+    ],
+    [
+      947,
+      1038
+    ],
+    [
+      921,
+      1041
+    ],
+    [
+      900,
+      1026
+    ],
+    [
+      888,
+      1012
+    ]
+  ],
+  "same_fixed_3D_digit_length_proxies_all_states": {
+    "D1_THUMB": [
+      42,
+      40,
+      35
+    ],
+    "D2_INDEX": [
+      44,
+      30,
+      24
+    ],
+    "D3_MIDDLE": [
+      45,
+      33,
+      24
+    ],
+    "D4_RING": [
+      43,
+      31,
+      22
+    ],
+    "D5_LITTLE": [
+      36,
+      26,
+      23
+    ]
+  },
+  "depth_compatible_sizes_not_measured_anatomy": {
+    "D1_THUMB": {
+      "fixed_3D_size_proxies": [
+        42,
+        40,
+        35
+      ],
+      "projected_segment_lengths": [
+        37.12142238654117,
+        23.194827009486403,
+        23.706539182259394
+      ],
+      "compatible_absolute_view_depth_differences": [
+        19.6468827043885,
+        32.58834147360065,
+        25.748786379167466
+      ],
+      "not_measured_real_3D": true
+    },
+    "D2_INDEX": {
+      "fixed_3D_size_proxies": [
+        44,
+        30,
+        24
+      ],
+      "projected_segment_lengths": [
+        28.0178514522438,
+        21.633307652783937,
+        21.540659228538015
+      ],
+      "compatible_absolute_view_depth_differences": [
+        33.926390907374746,
+        20.784609690826525,
+        10.583005244258365
+      ],
+      "not_measured_real_3D": true
+    },
+    "D3_MIDDLE": {
+      "fixed_3D_size_proxies": [
+        45,
+        33,
+        24
+      ],
+      "projected_segment_lengths": [
+        30.23243291566195,
+        25.612496949731394,
+        20.615528128088304
+      ],
+      "compatible_absolute_view_depth_differences": [
+        33.331666624997915,
+        20.808652046684813,
+        12.288205727444506
+      ],
+      "not_measured_real_3D": true
+    },
+    "D4_RING": {
+      "fixed_3D_size_proxies": [
+        43,
+        31,
+        22
+      ],
+      "projected_segment_lengths": [
+        32.449961479175904,
+        21.400934559032695,
+        21.2602916254693
+      ],
+      "compatible_absolute_view_depth_differences": [
+        28.21347195933177,
+        22.427661492005804,
+        5.656854249492375
+      ],
+      "not_measured_real_3D": true
+    },
+    "D5_LITTLE": {
+      "fixed_3D_size_proxies": [
+        36,
+        26,
+        23
+      ],
+      "projected_segment_lengths": [
+        33.421549934136806,
+        18.384776310850235,
+        19.79898987322333
+      ],
+      "compatible_absolute_view_depth_differences": [
+        13.379088160259652,
+        18.384776310850235,
+        11.704699910719626
+      ],
+      "not_measured_real_3D": true
+    }
+  },
+  "whole_forearm_palm_turn_from052_illustrative_degrees": 25,
+  "not_wrist_fold_angle": true,
+  "whole_hand_human_scale": 1.0,
+  "no_mirror_no_shrink": true,
+  "rightmost_complete_hand_alpha32_native": 1010,
+  "right_edge_breathing_native": 13,
+  "front_digit_reference_parts": {
+    "D1_THUMB": 0,
+    "D2_INDEX": 0,
+    "D3_MIDDLE": 1,
+    "D4_RING": 1,
+    "D5_LITTLE": 1
+  },
+  "guide_BG_FG_exclusive_RGBA_union_exact": true,
+  "actual_hand_not_generated": "All digit volumes are explanatory structure only, not actual future character pixels.",
+  "root_material": "Actual052 source blouse is reference only; redraw continuous natural sleeve/underarm, no rectangular patch copying.",
+  "arm_reference_warp": {
+    "source_control_vertices": [
+      [
+        572.7678827360066,
+        651.2344266228993
+      ],
+      [
+        490.2283933041482,
+        723.9477863604889
+      ],
+      [
+        407.6889038722897,
+        796.6611460980785
+      ],
+      [
+        632.2606316122163,
+        718.7667361580562
+      ],
+      [
+        549.7211421803579,
+        791.4800958956458
+      ],
+      [
+        467.1816527484994,
+        864.1934556332354
+      ],
+      [
+        698.7348617671641,
+        839.6076524501261
+      ],
+      [
+        638.7061421803579,
+        892.4900958956458
+      ],
+      [
+        578.6774225935517,
+        945.3725393411655
+      ],
+      [
+        726.0838064165588,
+        893.9773726067558
+      ],
+      [
+        686.6211421803579,
+        946.8800958956458
+      ],
+      [
+        647.158477944157,
+        999.7828191845358
+      ],
+      [
+        802.3515749538566,
+        953.0291331421353
+      ],
+      [
+        784.3011421803579,
+        992.0570958956458
+      ],
+      [
+        766.2507094068593,
+        1031.0850586491563
+      ],
+      [
+        837.230583055183,
+        980.1784157637089
+      ],
+      [
+        823.3779253452888,
+        1010.1301081094264
+      ],
+      [
+        809.5252676353945,
+        1040.0818004551438
+      ],
+      [
+        866.2318035936083,
+        995.7040751146272
+      ],
+      [
+        869.2008638717397,
+        1028.5702382777472
+      ],
+      [
+        872.169924149871,
+        1061.436401440867
+      ]
+    ],
+    "target_control_vertices": [
+      [
+        581.9894147704288,
+        640.7755735883512
+      ],
+      [
+        503.1976454537203,
+        717.534006922693
+      ],
+      [
+        424.40587613701183,
+        794.2924402570349
+      ],
+      [
+        644.7917693167085,
+        705.2415666656582
+      ],
+      [
+        566.0,
+        782.0
+      ],
+      [
+        487.2082306832915,
+        858.7584333343418
+      ],
+      [
+        721.4531049576061,
+        826.9256848477514
+      ],
+      [
+        664.15,
+        882.75
+      ],
+      [
+        606.8468950423938,
+        938.5743151522486
+      ],
+      [
+        751.1552754632261,
+        880.5250749621467
+      ],
+      [
+        717.0,
+        937.0
+      ],
+      [
+        682.8447245367739,
+        993.4749250378533
+      ],
+      [
+        827.1709684919196,
+        924.9380680837417
+      ],
+      [
+        814.9,
+        966.15
+      ],
+      [
+        802.6290315080804,
+        1007.3619319162583
+      ],
+      [
+        863.4820488269725,
+        946.1836657052785
+      ],
+      [
+        854.0647939378248,
+        977.8114274084535
+      ],
+      [
+        844.6475390486771,
+        1009.4391891116285
+      ],
+      [
+        897.0106614132504,
+        956.6839792189813
+      ],
+      [
+        899.9797216913818,
+        989.5501423821013
+      ],
+      [
+        902.9487819695131,
+        1022.4163055452212
+      ]
+    ],
+    "distal_hand_rigid_matrix": [
+      [
+        1,
+        0,
+        30.7788578196421
+      ],
+      [
+        0,
+        1,
+        -39.02009589564591
+      ]
+    ],
+    "hand_scale": 1.0,
+    "mirrored": false,
+    "reference_only_not_drawing": true
+  },
+  "current_props_SHA256": "de65eeba034a10fdd1f8f12bb1a2a0bbbd51d6bf946904c17d3a963335424feb",
+  "new_calls": 0,
+  "body_rise_crane_lift": "NOT_OPEN",
+  "F064_reuse_recommendation": "Prefer accepted actual060 complete grip reused for light preload hold; only local forearm tension if real060 cannot carry it. Rebind actual060 before any execution."
+}
