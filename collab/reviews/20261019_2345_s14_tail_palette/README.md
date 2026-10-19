@@ -1,0 +1,3 @@
+# S14 203/206 final limited material correction
+
+The structural arm/hip/stool/foot locks and all four native originals from b60605e8 remain valid. Only203/206 same-raw yellow cloth channels received the minimal correction documented here. Final203 SHA4c236d1b68de0a363b70defa6d11d860ceae935d8c0cdc081fcc4badfb597464; final206 SHA8df5ae0ef20e6fd5377e10cec840245e7da3a149191df65612bd4d54369126ce. Same-mother full semantic mean RGB now within +/-4 in cloth and skin; white dots/highlights, ink, alpha, head/neck, geometry and external domains unchanged. Coordinator viewed actual before/after and read full numerical gate. No new image calls or new distinct poses; these replace old final203/206 pixels and restore their previously pending usable-state status.197/200/208 untouched.

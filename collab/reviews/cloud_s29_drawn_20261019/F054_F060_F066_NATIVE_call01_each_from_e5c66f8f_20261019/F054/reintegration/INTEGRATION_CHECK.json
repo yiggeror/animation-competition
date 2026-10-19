@@ -1,0 +1,59 @@
+{
+  "state": 54,
+  "status": "HOLD_GROUP_NOT_PRODUCTION_060_HEM_AND_ROOT_REMAIN",
+  "generation_calls_state": 1,
+  "raw_SHA256": "767aa8fbabeaf95f1509a7118240c0016025537a913e2f3d61b526c58ada0132",
+  "same_source_cloth_RGBA_SHA256": "07b5dc94505458f1c083a35a7d6cbc969b04d29d592e4ac1f8a477d0878d9c47",
+  "true_original_props_RGBA_SHA256": "c006b3fb3d05d29a4a3d16b06496308bce34797e93a76bc80c0e5511cdcd2704",
+  "original_props_geometry_RGBA_changed": false,
+  "four_original_rods_geometry_changed": false,
+  "complete_far_group_single_similarity": {
+    "source_root": [
+      500.0,
+      450.0
+    ],
+    "target_root": [
+      500.0,
+      450.0
+    ],
+    "source_material_pinch_readpoint": [
+      715.0,
+      661.0
+    ],
+    "target_same_material_pinch": [
+      711.098467936869,
+      662.61030076984
+    ],
+    "matrix": [
+      [
+        0.9945005186880203,
+        -0.012886936403105736
+      ],
+      [
+        0.012886936403105736,
+        0.9945005186880203
+      ]
+    ],
+    "translation": [
+      8.548862037387437,
+      -3.9687016111619755
+    ],
+    "scale": 0.9945840109315045,
+    "rotation_degrees": 0.7424086055457748,
+    "contact_residual": 1.1368683772161603e-13,
+    "manual_readpoint_uncertainty_pixels": 3,
+    "per_finger_transform": false
+  },
+  "complete_native_blossom_blouse_included_to_avoid_cut_flower_seams": true,
+  "actual_new_native_human_foreground_used": true,
+  "obsolete_technical_arm_or_plain_blue_shirt_returned": false,
+  "cloth_and_generated_prop_pixels_excluded_from_human": true,
+  "same_native_raw_blouse_continuous_projection_maxdy": 22.0,
+  "blouse_is_behind_cotton_props_arms_foreground": true,
+  "near_palm_test_region_note": "native near hand skin withx>=455,y780..870; foreground forearm is separately allowed above/in front of curved neck",
+  "near_palm_original_prop_overlap_pixels": 0,
+  "near_palm_cloth_support_fraction": null,
+  "headguard_RGBA_changes": 0,
+  "candidate_RGBA_SHA256": "d325fd3bc84a6a049aba27a7a07de6363b50adcb46d90132cdb3987687dffe64",
+  "actual_review": "root plus existing cloud; latest060 native gaps x480–514/y714–736 and x503–524/y555–580"
+}
