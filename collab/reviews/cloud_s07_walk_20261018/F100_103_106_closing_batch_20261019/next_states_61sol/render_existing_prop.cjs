@@ -1,0 +1,4 @@
+// Exact existing lamp object/shadow separation only; no human or scene render.
+const fs=require('fs'),path=require('path');
+const {chromium}=require('/opt/codex/cua_node/lib/node_modules/playwright');
+(async()=>{const browser=await chromium.launch({executablePath:'/usr/bin/chromium',headless:true,timeout:10000,args:['--no-sandbox','--disable-dev-shm-usage']});try{for(const key of ['object','shadow']){const page=await browser.newPage({viewport:{width:1960,height:1080},deviceScaleFactor:1});await page.setContent(fs.readFileSync(path.join(__dirname,`reference/existing_lamp_${key}_ONLY_source.html`),'utf8'),{waitUntil:'domcontentloaded',timeout:5000});await page.locator('canvas').screenshot({path:path.join(__dirname,`reference/existing_lamp_${key}_same_registration.png`),omitBackground:true,timeout:5000});await page.close();}}finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1)});
