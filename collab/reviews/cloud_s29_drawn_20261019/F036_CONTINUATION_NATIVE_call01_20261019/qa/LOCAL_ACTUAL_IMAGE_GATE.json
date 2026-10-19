@@ -1,0 +1,55 @@
+{
+  "frame": 36,
+  "local_gate": "HOLD_CONTINUATION_MOTION_AND_FIRST_TAIL_COVER_NOT_ACHIEVED",
+  "native_anatomy_and_contact": "NO_OBVIOUS_BREAK_OBSERVED",
+  "root_actual_images_viewed": [
+    "FULL_RAW_ON_GRAY.png",
+    "FAR_COMPLETE_ARM_ACTUAL_RAW_CROP.png",
+    "C1_NEAR_SUPPORT_ACTUAL_RAW_CROP.png",
+    "C2_FAR_PINCH_AND_OPAQUE_CLOTH_ACTUAL_RAW_CROP.png",
+    "OUTER_TAIL_AND_CLOTH_ACTUAL_RAW_CROP.png",
+    "ACTUAL_F030_TARGET036_RAW036_SAME_PIXEL_SCALE.png"
+  ],
+  "root_findings": [
+    "远袖、上臂、肘、镯腕、捏布手连续，单镯归属正确；近右裸手仍扶生成颈，棉布不透明。",
+    "相对合格030，远肘重新向外伸、腕掌明显右下退，夹点落到尾羽外侧，原布峰摊低，没有继续向内落盖。",
+    "黑尾羽仍整体在布面前，未见可靠的新布沿截住外羽的首次覆盖边界；手指与尾羽相邻不能当遮尾完成。"
+  ],
+  "manual_native_pixel_indices_approx_not_3D_measurement": {
+    "passed_F030_pinch": [
+      730,
+      674
+    ],
+    "current_F036_pinch": [
+      798,
+      750
+    ],
+    "delta_pinch_current_minus_previous": [
+      68,
+      76
+    ],
+    "passed_F030_near_support": [
+      497,
+      748
+    ],
+    "current_F036_near_support": [
+      505,
+      750
+    ],
+    "delta_after_near_support_translation_removed": [
+      60,
+      74
+    ]
+  },
+  "independent_read_only_review": "独立复核同意036动作门HOLD。双臂、镯腕、捏布和近手扶颈结构成立；但相对030，远肘腕向外下退、布峰摊平，未延续向内落盖。黑尾羽仍在布前，首次遮尾边界不明确。保留原件作失败证据；无修改、生成或窄贴修补。",
+  "limits": [
+    "原始生成道具仅上下文，未作真实原偶part/四杆或正式机位注册。",
+    "目标544原偶像素/36尾羽核心像素只证明技术target允许第一小遮盖，不能代替本原件形成遮盖。",
+    "本轮只执行已授权036一次；不追加调用，不以贴腕/注册伪造缺失动作。"
+  ],
+  "requests_in_this_state": 1,
+  "raw_outputs": 1,
+  "extra_retries": 0,
+  "dependent_later_states": "NOT_STARTED",
+  "reviewed_utc": "2026-10-19T10:15:08Z"
+}

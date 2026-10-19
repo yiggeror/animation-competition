@@ -1,0 +1,40 @@
+{
+  "same_four_input_rule": true,
+  "only_complete_pose_is_approved_new_F036": true,
+  "first_target_exact_source_bytes": true,
+  "second_exact_approved_024_identity_material_crop_bytes": true,
+  "no_old_complete_mother_pose": true,
+  "no_old_complete_024_or_030_pose": true,
+  "no_failed_030_image_in_request": true,
+  "source_front_fold_actual_original_prop_overlap_pixels": 544,
+  "approved_original_black_tail_core_new_cover_pixels": 36,
+  "near_bare_arm_white_overlap": 0,
+  "lower_body_white_overlap": 0,
+  "remaining_true_prop_white_overlap": 0,
+  "semantic_values": [
+    0,
+    255
+  ],
+  "far_visible_arm_coverage": {
+    "SOURCE_FAR_UPPER_SHOULDER_SLEEVE": {
+      "visible_nonprotected_pixels": 20555,
+      "covered_white": 20555,
+      "missing_white": 0
+    },
+    "SOURCE_FAR_FOREARM": {
+      "visible_nonprotected_pixels": 10578,
+      "covered_white": 10578,
+      "missing_white": 0
+    },
+    "SOURCE_FAR_HAND_BANGLE_TOGETHER": {
+      "visible_nonprotected_pixels": 11136,
+      "covered_white": 11136,
+      "missing_white": 0
+    }
+  },
+  "mask_is_semantic_reference_not_executed_inpaint": true,
+  "new_imagegen_calls_in_preparation": 0,
+  "real_native_continuation_source": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F030_REPAIR_NATIVE_call01_20261019/originals/S29_F030_REPAIR_call01_RAW_UNTOUCHED.png",
+  "real_native_continuation_source_sha256": "0c182aa0d62acf8647daa316e06cdb4bfdd9ebd6c2e6c02f1b0e2f8065ffd4e5",
+  "source_030_complete_pose_is_provenance_only_not_sent": true
+}
