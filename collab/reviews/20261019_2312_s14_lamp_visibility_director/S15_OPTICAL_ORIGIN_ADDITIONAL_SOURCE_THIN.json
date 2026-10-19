@@ -1,0 +1,13 @@
+{
+  "status": "READ_ONLY_CLARIFICATION",
+  "source": "/workspace/scratch/f060b5601755/astra_three_shot_fix_20261018/js/lamp/s08_back.js",
+  "lines": [
+    29,
+    33,
+    90,
+    93
+  ],
+  "semantics": "makeLamp local coordinate origin is explicitly flame; lampBase is [S.lamp.x,y,z].",
+  "formal_S15_cards": "s15_drawn.cards adds native xiaoman only; does not call makeLamp. Frozen optical source is established, redS08 lantern handle dimensions not established inS15.",
+  "not_change": "Do not substitute old program-lantern design for actual red S08. No renderer or asset changed."
+}

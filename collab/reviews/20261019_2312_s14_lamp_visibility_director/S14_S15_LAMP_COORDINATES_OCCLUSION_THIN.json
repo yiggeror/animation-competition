@@ -1,0 +1,157 @@
+{
+  "status": "ZERO_CALL_DIRECTOR_RELATION_ONLY_NO_SCENE_CHANGE",
+  "optical_semantics": {
+    "S15": "S.lamp is common optical source center passed to sheetImage(lampSP) and shader uLamp; not prop body center or handle.",
+    "layout": "LAMP_STAGE explicitly states flame center.",
+    "source_lines": [
+      "sources/js/lamp/s06_key.js:20-27,181-188,216",
+      "sources/src/laidian/layout.py:LAMP_STAGE",
+      "S08 code/s08.js:37-88,153-171"
+    ]
+  },
+  "coordinates": {
+    "layout": {
+      "origin": "south-west floor, x east / y north / z up, metres",
+      "sheet": {
+        "x": [
+          0.25,
+          2.35
+        ],
+        "y": 4,
+        "z": [
+          0.86,
+          2.08
+        ]
+      },
+      "light": [
+        1.3,
+        4.7,
+        1.55
+      ],
+      "cameraA": [
+        4.95,
+        0.4,
+        1.3
+      ]
+    },
+    "S15_frozen_renderer": {
+      "origin": "cloth plane y=0; z=0 floor; x along cloth",
+      "sheet": {
+        "x": [
+          0.25,
+          2.35
+        ],
+        "y": 0,
+        "z": [
+          0.12,
+          1.94
+        ]
+      },
+      "light": [
+        1.52,
+        0.7,
+        1.3
+      ],
+      "camera": [
+        1.48,
+        -3.013,
+        0.34
+      ]
+    },
+    "comparison": "x extents agree; y_s15=y_layout-4 is a plane-relative origin correspondence only. z ranges and room heights differ; no validated global rigid/similarity conversion exists. Do not convert lamp heights using a constant shift.",
+    "S14_painted_background": "paint/shots/s14.js uses 2D paint camera, not proven identical to layout.py cameraA. Ray diagrams do NOT certify current painted-frame visibility.",
+    "curtain_uv_only_not_world_transform": {
+      "z_layout_from_s15_slope": 0.6703296703296703,
+      "offset": 0.7795604395604395
+    }
+  },
+  "frozen_S15_priority": true,
+  "prop_height_assumption_m": 0.3488372093023256,
+  "S08_prop_geometry": {
+    "base_y": 0,
+    "handle_top_y": -690,
+    "black_wick_cap_y": -226,
+    "returned_wick_y": -228,
+    "lighting_glow_center_y": -288,
+    "emissive_flame_center_y": "-(232+.35*70*1.5*flicker)",
+    "registration": "Optical source placement candidate uses S08 explicit glow center; physical size and S15 prop-card registration not frozen. Older hook z from black cap is superseded as a physical claim.",
+    "optical_to_handle_offset_m": 0.2032355915065723
+  },
+  "ray_tests": {
+    "layout_original_hook": {
+      "point": [
+        1.3,
+        4.7,
+        1.7532355915065723
+      ],
+      "sheet_intersection": [
+        1.8941860465116278,
+        4.0,
+        1.6794530533543397
+      ],
+      "inside_sheet": true
+    },
+    "layout_east055_hook": {
+      "point": [
+        1.85,
+        4.7,
+        1.7532355915065723
+      ],
+      "sheet_intersection": [
+        2.354651162790698,
+        4.0,
+        1.6794530533543397
+      ],
+      "x_clearance_m": 0.0046511627906977715,
+      "note": "point barely clears; not full hand/hook clearance, candidate rejected/unapproved"
+    },
+    "actual_S15_camera_frozen_light": {
+      "hook_candidate": [
+        1.52,
+        0.7,
+        1.5032355915065723
+      ],
+      "sheet_intersection": [
+        1.512458928090493,
+        0.0,
+        1.283934510425344
+      ],
+      "inside_sheet": true,
+      "prop_half_width_m": 0.10111223458038424
+    },
+    "S14_azimuth_in_S15_space_DIAGNOSTIC_ONLY": {
+      "camera": [
+        4.95,
+        -3.6,
+        1.3
+      ],
+      "hook": [
+        1.52,
+        0.7,
+        1.5032355915065723
+      ],
+      "sheet_intersection": [
+        2.0783720930232557,
+        0.0,
+        1.4701507277729442
+      ],
+      "inside_sheet": true,
+      "unverified": "same camera height numerically retained only, no full painted-camera calibration"
+    }
+  },
+  "conditional_horizontal_shadow_effect": {
+    "meaning": "only if S15 optical source itself is translated in its own coordinate frame, preserving all else",
+    "source_dx_m": 0.38,
+    "puppet_initial_depth_m": 0.344,
+    "lamp_depth_m": 0.7,
+    "shadow_dx_m": -0.36719101123595504,
+    "screen_width_fraction": 0.17485286249331192,
+    "not_claimed": "Not a measured discrepancy between layout and S15; no z comparison used."
+  },
+  "director_choice_not_executed": [
+    "Prefer preserve S15 optical source/screen and authorize visible local camera within existing096-131.",
+    "If wide-only, actual common scene/camera registration and explicit accepted furniture/light adjustment must be decided."
+  ],
+  "five_beat_guides": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/grandma_lamp_G096_G131_zero_call/G096_G131_FIVE_COMPLETE_VOLUME_ZERO_CALL_REVIEW.jpg",
+  "remaining": "Five guides are articulated reach diagnostics only. Box/feet are not yet calibrated into S15 camera world. No generation request submitted."
+}
