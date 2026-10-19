@@ -1,0 +1,401 @@
+{
+  "status": "F070_FIXED_FULL_LOWER_AND_NEW_UPPER_WHOLE_SKIRT_INPUT_ASTRA_GATE_PENDING",
+  "frame_label": 70,
+  "new_image_calls": 0,
+  "submitted": false,
+  "generation_authorized": false,
+  "frozen_exposure": false,
+  "source067_final_file": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F067_near_leg_support_root_zero_call_001/F067_near_support_and_root_closed_candidate.png",
+  "source067_sha256": "80a84871aaaa4eddd621e457fa4dae0b95494332d788119ae650ff85356e1dd8",
+  "fixed_full_lower_layer": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F070_fixed_lower_input_001/fixed_complete_lower_067_roots_legs_shoes.png",
+  "fixed_lower_sha256": "d9bab4c9e2b9d95814d6d7cddcd8494ef82cf020532507b1e1d0aaf52d084253",
+  "visible_lower_source_pixels_RGBA_exact": true,
+  "target_all_y736_plus_support_RGBA_exact": true,
+  "all_target_visible_legs_shoes_mask_black": true,
+  "new_white_domain": "head neck torso both full arms hands whole skirt T rods and hidden root overlap only",
+  "natural_occlusion_boundary_no_exposed_horizontal_cut": true,
+  "far_hidden_root_matte": "same far-leg skin continued behind skirt only; visible lower source pixels restored exact",
+  "near_hidden_root_source": "already approved full native near-leg component from fb7cc408",
+  "target_upper_method": "construction-only continuous upper/whole-skirt field; retained lower never warped",
+  "controls": [
+    [
+      [
+        440,
+        396
+      ],
+      [
+        -5,
+        -3
+      ]
+    ],
+    [
+      [
+        455,
+        400
+      ],
+      [
+        -5,
+        -3
+      ]
+    ],
+    [
+      [
+        496,
+        410
+      ],
+      [
+        -4,
+        -3
+      ]
+    ],
+    [
+      [
+        539,
+        430
+      ],
+      [
+        -2,
+        -2
+      ]
+    ],
+    [
+      [
+        559,
+        397
+      ],
+      [
+        -2,
+        0
+      ]
+    ],
+    [
+      [
+        475,
+        437
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    [
+      [
+        501,
+        455
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    [
+      [
+        524,
+        455
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    [
+      [
+        625,
+        478
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    [
+      [
+        662,
+        415
+      ],
+      [
+        -2,
+        1
+      ]
+    ],
+    [
+      [
+        628,
+        414
+      ],
+      [
+        -2,
+        1
+      ]
+    ],
+    [
+      [
+        646,
+        481
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    [
+      [
+        650,
+        618
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    [
+      [
+        622,
+        154
+      ],
+      [
+        -2,
+        1
+      ]
+    ],
+    [
+      [
+        578,
+        197
+      ],
+      [
+        -2,
+        1
+      ]
+    ],
+    [
+      [
+        569,
+        286
+      ],
+      [
+        -2,
+        1
+      ]
+    ],
+    [
+      [
+        710,
+        320
+      ],
+      [
+        -2,
+        1
+      ]
+    ],
+    [
+      [
+        632,
+        367
+      ],
+      [
+        -2,
+        1
+      ]
+    ],
+    [
+      [
+        560,
+        667
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        600,
+        683
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        640,
+        688
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        680,
+        686
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        730,
+        676
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        780,
+        650
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        415,
+        135
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        835,
+        135
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        415,
+        720
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        835,
+        720
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  ],
+  "T_rods": [
+    {
+      "role": "T_H",
+      "owner": "X.R",
+      "front": [
+        323,
+        480
+      ],
+      "pin": [
+        435,
+        393
+      ],
+      "tail": [
+        455,
+        377.4642857142858
+      ],
+      "slope": -0.7767857142857143,
+      "intercept": 730.9017857142858
+    },
+    {
+      "role": "T_S",
+      "owner": "X.L",
+      "front": [
+        301,
+        317
+      ],
+      "pin": [
+        479,
+        440
+      ],
+      "tail": [
+        499,
+        453.82022471910113
+      ],
+      "slope": 0.6910112359550562,
+      "intercept": 109.00561797752806
+    }
+  ],
+  "X_master": [
+    423.6935957897615,
+    401.7826532704532
+  ],
+  "X_angle_degrees": 72.48445905296086,
+  "inputs": [
+    {
+      "order": 1,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F070_fixed_lower_input_001/inputs/01_unique_complete_F070_fixed_lower_target_REVIEW_ONLY.png",
+      "sha256": "b2157fa69157209c65d5fbae1ec088fa7e8dcf3f1c50e3d672b817145e28a093",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "order": 2,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F070_fixed_lower_input_001/inputs/02_same_pose_dual_clamps_X_3x.png",
+      "sha256": "4617e12a1ee58aeefe87389f6604ebae405900ed0ff0e27a58469c32d4e62fc7",
+      "size": [
+        1365,
+        750
+      ]
+    },
+    {
+      "order": 3,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F070_fixed_lower_input_001/inputs/03_067_identity_head_clothes_shoes_patches_only.png",
+      "sha256": "000d4867c4249e59c42ac656dd1c8685c2895b9dcc6e13166bec099ba2c21325",
+      "size": [
+        1080,
+        640
+      ]
+    },
+    {
+      "order": 4,
+      "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F070_fixed_lower_input_001/inputs/04_new_upper_whole_skirt_white_full_legs_black_mask.png",
+      "sha256": "c6641a0951144a9f4a75ec12eafb37281c512c989c50e98206f20a0b1c6e6c83",
+      "size": [
+        1672,
+        941
+      ]
+    }
+  ],
+  "unchanged_cues_seconds": {
+    "entangle": [
+      2.4,
+      4.6
+    ],
+    "flip": 5.5,
+    "cut": 6.0
+  },
+  "source067_final_commit": "fb7cc408b5f29ea308c6b4042680346104554587",
+  "actual_images_inspected": [
+    "complete_target_gray_REVIEW_ONLY.jpg",
+    "inputs/02_same_pose_dual_clamps_X_3x.png",
+    "inputs/03_067_identity_head_clothes_shoes_patches_only.png",
+    "inputs/04_new_upper_whole_skirt_white_full_legs_black_mask.png",
+    "fixed_complete_lower_067_roots_legs_shoes.png",
+    "under_hem_target_left_mask_right_boundary_1x.png"
+  ],
+  "boundary_crop": "under_hem_target_left_mask_right_boundary_1x.png"
+}

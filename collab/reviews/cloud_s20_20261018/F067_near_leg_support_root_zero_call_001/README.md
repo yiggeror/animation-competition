@@ -1,3 +1,5 @@
+> Astra已终门通过并采用修后067（fb7cc408；SHA80a84871…），后续输入以此为源。以下为交审时历史记录。采用记录见 ADOPTED_F067_SOURCE.json；PNG原字节未变。
+
 # F067近侧整腿支持与裙下根部：同包零调用候选
 
 直接看 actual_full_gray.jpg / actual_under_hem_1x.png / actual_support_1x.png，以及064_left_repaired067_right_support_same_scale_1x.png（左064／右修后067）。均已实际查看，最终PNG和SHA在status.json，待Astra终门，不采用、不传播。
