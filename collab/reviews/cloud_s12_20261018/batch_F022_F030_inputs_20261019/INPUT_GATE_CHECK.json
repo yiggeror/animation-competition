@@ -1,0 +1,49 @@
+{
+  "status": "PASS_INPUT_REFERENCE_GATE_ONLY",
+  "mother_commit": "2c265ea885f956e15915cede73288c5c4d0f33f6",
+  "mother_SHA256": "c63f57f53bc2f4bbca59dba4310ea55c0629b354520f8d0becbe88f932ff40be",
+  "actual_tool_inputs_per_request": 3,
+  "ordered_batch": [
+    22,
+    26,
+    30
+  ],
+  "holds": [
+    4,
+    4,
+    4
+  ],
+  "all_three_execution_disabled": true,
+  "imagegen_calls": 0,
+  "scene_renders": 0,
+  "construction_only_not_future_actual_image_acceptance": true,
+  "rows": [
+    {
+      "frame": 22,
+      "hold": 4,
+      "construction_lower_rod_all_digits_min_air_scene": 15.406698868698996,
+      "construction_noncontact_digits_upper_min_air_scene": 4.484252121103151,
+      "thumb_same_G_tangent_error_native": 6.394884621840902e-14,
+      "palm_W_to_indexMCP_native": 79.07591289387686,
+      "prompt_SHA256": "6e780d7de984ec68f4ca666d15c3df508105f5faa71ca028e335aa5c3e5c83d5"
+    },
+    {
+      "frame": 26,
+      "hold": 4,
+      "construction_lower_rod_all_digits_min_air_scene": 4.1515145295646585,
+      "construction_noncontact_digits_upper_min_air_scene": 4.3976626809737445,
+      "thumb_same_G_tangent_error_native": 6.394884621840902e-14,
+      "palm_W_to_indexMCP_native": 81.39410298049853,
+      "prompt_SHA256": "a7baa1a2afa8a5d19972070483828a1b251edf595df1056dfe136bdf11395787"
+    },
+    {
+      "frame": 30,
+      "hold": 4,
+      "construction_lower_rod_all_digits_min_air_scene": 4.04796925986361,
+      "construction_noncontact_digits_upper_min_air_scene": null,
+      "thumb_same_G_tangent_error_native": 6.394884621840902e-14,
+      "palm_W_to_indexMCP_native": 81.30190649671138,
+      "prompt_SHA256": "ba56e0801c0b38ee340244955f67beb502ebb3201ed6be93e6682e80701e5cad"
+    }
+  ]
+}
