@@ -5,18 +5,13 @@
   "files": [
     {
       "path": "01_FULL_ON_GRAY.png",
-      "sha256": "2c5743eeedbdfe23e9a63298d5d3dab0f46cd871a7ff5d835f102d54af67de4c",
-      "bytes": 1190475
-    },
-    {
-      "path": "02_FORMAL_F036.png",
-      "sha256": "15b129b24ca971d77e06f2a39f3c2e6e243d2faac8ebdda71b50bf6567d289c6",
-      "bytes": 3555235
+      "sha256": "349adcf56ba699360e990a005dbd5b3bd56ae781ecf886740d87cba187b32c3c",
+      "bytes": 1190354
     },
     {
       "path": "03_SLEEVE_CLOSEUP.png",
-      "sha256": "abe68408d10b48eb14d9d93696ee4246d24a5b2ac2f117a6201808a61cbee338",
-      "bytes": 197546
+      "sha256": "25d0c15b03448dcade971e825ff0af292329ae481feeb7ab5d610da4cb83cb7d",
+      "bytes": 196348
     },
     {
       "path": "04_CLOTH_LIP_CLOSEUP.png",
@@ -25,23 +20,28 @@
     },
     {
       "path": "README.md",
-      "sha256": "b031da57b9b44acf7d181bee0b5f645826433c9ac9d3d2262eddc3f876a94c2c",
-      "bytes": 1538
+      "sha256": "aad1fb3409f701ab75e0c30687b1ce63fbf9e1761b87c8fe63ce4a45d0532730",
+      "bytes": 1602
     },
     {
       "path": "candidate/F036_CONTINUOUS_SLEEVE_CLOTH_SAME_M_TRIAL.png",
-      "sha256": "102472f43622d009469879deb71814c657d909f14f90003fbb8c9ba570306f45",
-      "bytes": 1886247
+      "sha256": "0a65674bee91dec491997e45c5b0a2993c91a44f64424735883a032321b9a02b",
+      "bytes": 1886102
     },
     {
       "path": "compose_continuous.py",
-      "sha256": "fa8d09b9cca9ac637fb79df0cbca4cb30861c1f41a2cce2cf6126107db3a51f4",
-      "bytes": 9627
+      "sha256": "e674d7c6a9564c6ea97e9e4d996aa0b5fc6aa6ffb825fa6c9df495cfac8280ab",
+      "bytes": 10380
     },
     {
       "path": "geometry/FINITE_PROTECTION_AND_SOURCE_PROOF.json",
-      "sha256": "fe4a4d2a1451e69290c89d9dea4db514695c8041a306c92139d6c08ac172935b",
-      "bytes": 1083
+      "sha256": "96be601a93d9703e1563c29a374b46fc9825e3178011fe55affc936a5b72f9df",
+      "bytes": 1403
+    },
+    {
+      "path": "geometry/ISOLATED_ALPHA_DEBRIS_CLEAR.json",
+      "sha256": "434e46bf2a26571850ae6225b5af08565ef13887d75656515768b40e5a18dcf6",
+      "bytes": 268
     },
     {
       "path": "geometry/ONE_SIMILARITY_AND_SOURCE_CHECKS.json",
@@ -77,6 +77,11 @@
       "path": "masks/ONLY_ACTUAL_SOFT_LIP_ALLOWED_REAL_OUTER_FEATHER_COVER.png",
       "sha256": "8eca6fe0bd8244f001450416fada1b447f9978d757134aefbbf2241050ff3bbe",
       "bytes": 1625
+    },
+    {
+      "path": "masks/ONLY_DISCONNECTED_UNDERARM_ALPHA_DEBRIS_REMOVED.png",
+      "sha256": "2e39bbb0365f06af114b2a23eb6285c6ba8cdf457db245d7831efb128ad5c376",
+      "bytes": 1694
     },
     {
       "path": "masks/RAW_COMPLETE_FAR_ARM_JADE_AND_SLEEVE_BAND.png",

@@ -1,5 +1,5 @@
 {
-  "candidate_sha256": "102472f43622d009469879deb71814c657d909f14f90003fbb8c9ba570306f45",
+  "candidate_sha256": "0a65674bee91dec491997e45c5b0a2993c91a44f64424735883a032321b9a02b",
   "same_single_matrix_as_6236e9ac": true,
   "near_bare_right_RGBA_changed": 0,
   "head_neck_collar_top450_RGBA_changed": 0,
@@ -27,5 +27,17 @@
   "remaining_limitations": [
     "Manual cloth/generated-puppet exclusion boundaries require actual image review.",
     "Source袖口anchor residuals unchanged; this is not a new pose or whole-shot approval."
-  ]
+  ],
+  "isolated_alpha_cleanup": {
+    "removed_pixels": 29,
+    "scope_bbox_exclusive": [
+      480,
+      560,
+      565,
+      625
+    ],
+    "criterion": "whole-image disconnected alpha>0 components, area<=8, whole bbox inside ROI",
+    "main_body_arm_sleeve_component_changed": false,
+    "no_new_RGBA_drawn": true
+  }
 }

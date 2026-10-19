@@ -101,7 +101,15 @@ feather=np.array(Image.open(P/'masks/TRUE_OUTER_FEATHER_LINES_COMMON030.png').co
 finite_outer=poly([(812,790),(873,790),(888,840),(812,840)],(W,H))
 cover=feather&finite_outer&(np.array(lipw)[:,:,3]>=128)
 prop_keep=(np.array(props)[:,:,3]>0)&~cover
-out=Image.alpha_composite(out,lipw);v=np.array(out);v[prop_keep]=real_before_lip[prop_keep];v[near]=old[near];out=Image.fromarray(v)
+out=Image.alpha_composite(out,lipw);v=np.array(out);v[prop_keep]=real_before_lip[prop_keep];v[near]=old[near];# Strictly remove only disconnected tiny alpha components in the sleeve-underarm air.
+labs0,n0=nd.label(v[:,:,3]>0);sizes0=np.bincount(labs0.ravel());iso=np.zeros((H,W),bool)
+for k in np.unique(labs0[560:625,480:565]):
+ if k==0 or sizes0[k]>8:continue
+ yk,xk=np.where(labs0==k)
+ if xk.min()>=480 and xk.max()<565 and yk.min()>=560 and yk.max()<625:iso|=labs0==k
+v[iso]=0;save_mask('ONLY_DISCONNECTED_UNDERARM_ALPHA_DEBRIS_REMOVED.png',iso)
+json.dump({'removed_pixels':int(iso.sum()),'scope_bbox_exclusive':[480,560,565,625],'criterion':'whole-image disconnected alpha>0 components, area<=8, whole bbox inside ROI','main_body_arm_sleeve_component_changed':False,'no_new_RGBA_drawn':True},open(R/'geometry/ISOLATED_ALPHA_DEBRIS_CLEAR.json','w'),indent=2)
+out=Image.fromarray(v)
 save_mask('ONLY_ACTUAL_SOFT_LIP_ALLOWED_REAL_OUTER_FEATHER_COVER.png',cover)
 
 out.save(R/'candidate/F036_CONTINUOUS_SLEEVE_CLOTH_SAME_M_TRIAL.png')
