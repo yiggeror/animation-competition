@@ -1,0 +1,286 @@
+{
+  "status": "INPUT_GATE_ONLY_PENDING_ASTRA_ONE_CALL_APPROVAL",
+  "new_generation_calls": 0,
+  "source_locked036_sha256": "0a65674bee91dec491997e45c5b0a2993c91a44f64424735883a032321b9a02b",
+  "source_M_exact": [
+    [
+      0.449105838,
+      -0.002299544,
+      425.664761
+    ],
+    [
+      0.002299544,
+      0.449105838,
+      334.71791
+    ]
+  ],
+  "C1": [
+    499,
+    747
+  ],
+  "far_pinch": [
+    725.78751656,
+    663.66135947
+  ],
+  "outer_cloth_domain": "source030 full-cloth perimeter plus actual036 BACK/FRONT extent, clipped to existing source alpha and physical human protection",
+  "outline_source030_native": [
+    [
+      510,
+      693
+    ],
+    [
+      590,
+      718
+    ],
+    [
+      642,
+      700
+    ],
+    [
+      695,
+      661
+    ],
+    [
+      710,
+      649
+    ],
+    [
+      734,
+      658
+    ],
+    [
+      766,
+      682
+    ],
+    [
+      811,
+      711
+    ],
+    [
+      900,
+      750
+    ],
+    [
+      960,
+      807
+    ],
+    [
+      1001,
+      867
+    ],
+    [
+      1005,
+      903
+    ],
+    [
+      958,
+      1025
+    ],
+    [
+      903,
+      1067
+    ],
+    [
+      850,
+      1012
+    ],
+    [
+      780,
+      1018
+    ],
+    [
+      688,
+      999
+    ],
+    [
+      623,
+      966
+    ],
+    [
+      582,
+      961
+    ],
+    [
+      530,
+      990
+    ],
+    [
+      451,
+      967
+    ],
+    [
+      350,
+      932
+    ],
+    [
+      272,
+      900
+    ],
+    [
+      257,
+      877
+    ],
+    [
+      303,
+      840
+    ],
+    [
+      349,
+      806
+    ],
+    [
+      403,
+      772
+    ],
+    [
+      461,
+      741
+    ]
+  ],
+  "central_ridge_and_thick_lip_bridges_only_inside_white": [
+    [
+      [
+        725.7875,
+        663.6614
+      ],
+      [
+        741,
+        710
+      ],
+      [
+        769,
+        756
+      ],
+      [
+        806,
+        795
+      ],
+      [
+        842,
+        835
+      ],
+      [
+        884,
+        878
+      ]
+    ],
+    [
+      [
+        792,
+        791
+      ],
+      [
+        814,
+        804
+      ],
+      [
+        840,
+        819
+      ],
+      [
+        865,
+        840
+      ],
+      [
+        889,
+        862
+      ]
+    ]
+  ],
+  "white_pixels": 69176,
+  "hard_protected_pixels": 105492,
+  "visible_locked036_hard_pixels": 105492,
+  "recovered_genuine_original_coordinate_cloth_under_props_pixels": 0,
+  "visible_locked036_RGBA_changes_on_hard_pixels": 0,
+  "hard_white_overlap": 0,
+  "human_white_overlap": 0,
+  "holes_inside_complete_visible_cloth_domain": 0,
+  "original_edge_AA_below250_retained": 1511,
+  "no_new_flowers_or_tiled_patch_in_guide": true,
+  "guide_fill_is_native_drawing": false,
+  "guide_fill_method": "smooth local navy volume interpolation and two locked-fold guide paths only in missing source, no texture duplication",
+  "generator_input_contains_person_or_prop_RGB": false,
+  "no_generation_request_submitted": true,
+  "future_hard_preservation_rule": "After the one approved cloth generation, use new pixels only inside02 white mask; restore HARD_PROTECTED_ORIGINAL_CLOTH_RGBA exactly. No person/prop RGB is part of the cloth generation target.",
+  "SHA256": {
+    "01_F036_COMPLETE_CLOTH_TARGET_TECHNICAL.png": "fdd4f1e13232538a5a0866d0a4d9c81af641fe15c9273d54bf3ef8ef46179d7f",
+    "02_ONLY_SOURCE_GAPS_WHITE_PROTECTED_BLACK.png": "9a2787f670b57dc4c1ea893612c79e69e1289b7e1a2f13502fb362e9c202d070",
+    "F036_COMPLETE_TARGET_AND_ONLY_GAPS_WHITE_1TO1.png": "e0730b3d590b7cfac946917093d509183499ca7c0bce41e07130bd5a51260d18",
+    "HARD_PROTECTED_ORIGINAL_CLOTH_MASK.png": "77871eef1f340aa892ab9f38fa6d14d39d0285f6e778625e0199a39d251bf2ad",
+    "HARD_PROTECTED_ORIGINAL_CLOTH_RGBA.png": "6489ae3709a2a91b5c55910cce9feee96794806139b11db9c9fce842f9077e48",
+    "HUMAN_BLACK_PROTECTION_GEOMETRY.png": "94e28d1263bba42ab087dc31573c2eb713b764656d8fa3d97ddae16a9fdd0387",
+    "WHOLE_LOCKED036_CLOTH_DOMAIN.png": "fd0e653c80fdbb7fb025299dc378750774ffee56c2d0893866b3ae2b4cbc418c"
+  },
+  "C1_non_cotton_residue_source_trace": [
+    {
+      "xy": [
+        468,
+        756
+      ],
+      "locked036_RGBA": [
+        55,
+        36,
+        23,
+        253
+      ],
+      "raw030_RGBA": [
+        55,
+        36,
+        23,
+        253
+      ],
+      "BACK_alpha": 0,
+      "FRONT_alpha": 0,
+      "now_white": true
+    },
+    {
+      "xy": [
+        501,
+        737
+      ],
+      "locked036_RGBA": [
+        53,
+        13,
+        8,
+        254
+      ],
+      "raw030_RGBA": [
+        53,
+        13,
+        8,
+        254
+      ],
+      "BACK_alpha": 0,
+      "FRONT_alpha": 0,
+      "now_white": true
+    },
+    {
+      "xy": [
+        509,
+        766
+      ],
+      "locked036_RGBA": [
+        21,
+        31,
+        37,
+        253
+      ],
+      "raw030_RGBA": [
+        21,
+        31,
+        37,
+        253
+      ],
+      "BACK_alpha": 0,
+      "FRONT_alpha": 0,
+      "now_white": true
+    }
+  ],
+  "C1_residue_only_pixels_opened_including_one_AA_margin": 438,
+  "actual_review": {
+    "root_viewed_complete_target_and_mask_1to1": true,
+    "existing_cloud_helper_viewed_corrected_target_mask_and_C1": true,
+    "limited_input_self_check": "PASS_FOR_ASTRA_SHORT_REVIEW_ONLY",
+    "no_generated_clean_master_claim": true
+  }
+}
