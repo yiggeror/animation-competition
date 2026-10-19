@@ -1,0 +1,35 @@
+{
+  "tool": "image_gen.imagegen",
+  "args": {
+    "prompt": "S12 F048 ACTUAL local complete RIGHT arm drawing, empty approach, exposure048–051. Sole actual pixel mother: locked accepted F040, commit e40a926ee8b7104d61c94cb7637bd9b2589d9544, native SHA256 aeb7a572b08aeb6c4cf41eac5de770a6ebd879635cc1c8c97c7a45cbf15c1dbe. No030/034 competing pose.\n\nINPUT1 directly shows ONE complete shoulder/sleeve/upper arm/elbow/forearm/wrist/palm target, rebuilt only from actual040 source pixels for anatomy reference. The whole empty hand is translated intact, original full size, no mirror, no individual fingers pulled. It is a construction reference, NOT future character artwork. Redraw natural five-digit anatomy; digits may naturally occlude. The current highest visible extended finger is not renamed thumb. True radial thumb stays occluded at this empty-approach stage; a future052 requires supported forearm/wrist/palm rotation to reveal it. Do not fake that future thumb now. Draw the entire right arm chain naturally following the new wrist/palm from the lower route. Right wrist has NO jade.\n\nSource-collage cuts are not anatomical or clothing openings. Restore continuous proximal blue sleeve/underarm cloth to the unchanged torso, with the original blue/flower material, silhouette and near/far depth. Do not copy pale construction seams, duplicate shoulder caps, source crops, sharp cut wedges, grey holes or detached skin fragments. No full body or head redesign.\n\nINPUT2 is the EXACT SAME pose with actual locked040 left closed fist, two real straight rods, unchanged real crane rig, box and cloth support. Registration scene=.70*native+(275,112), native1024x1536. Upper rod and left five-digit closed grasp are frozen040, upper free scene(930.1059238245394,729.1297395769899) to neck3(1497.5314905035327,714.6642052957592). Lower body shaft stays scene(951.2616943917175,798.9063357461391) to(1282.1986905564156,773.9467944476169), outer width7scene, resting on box rim; never move or stretch it. ALL right fingers remain clear in048; no touch or grip. The future G shaft section at scene x960 is a proposal only, distinct from current palm-bone centre M and future thumb surface T. Native x1024 boundary is shown beside complete left fist, both rods and full right hand. Never shrink a palm, clip a digit, mirror left-hand pixels or detach a thumb to fit.\n\nINPUT3 contains only local actual source material patches, no alternate full pose. Keep intrinsic skin, blue blouse, flower petals, ink and soft volume shadow. Left entire arm/fist and all static body pixels will be preserved directly from accepted040; output/adopt only complete near RIGHT arm plus necessary proximal blouse join.\n\nLocal plate1024 square: native crop[320,580,1120,1180], uniform1.12, pad64x176. plate=1.12*native+(-294.4,-473.6), native=(plate+(294.4,473.6))/1.12. Native right edge x1024 is plate852.48; guard is not usable canvas. Keep complete ink/AA and fingertips with breathing room. If returned board uniformly changes scale/shift, assess one whole-patch mapping; no separate finger/joint adjustment or moving rods to chase a hand. Transparent output, no props/background/markers/text/head/body. No new crane articulation, no rise or lift; both knees/shins/shoes stay low and supported. Preserve raw output and source. Explicit ownership and mutually exclusive layers must reconstruct final native RGBA exactly.\n\nDIRECT FINAL INPUT GATE AUTHORIZATION: Draw ONLY the complete near RIGHT arm plus necessary proximal blue sleeve/underarm transition; sole actual mother is locked accepted040 nativeSHA aeb7a572b08aeb6c4cf41eac5de770a6ebd879635cc1c8c97c7a45cbf15c1dbe. Keep genuine air to BOTH rods, even if the model drifts closer; no early fingertip/thumb touch. Original full hand and five-digit anatomy retain mother-state human scale, no palm shrink, clipping, mirror or detached finger adjustment. Preserve the actual entire FAR LEFT arm/closed grip and all original torso/head/knee/shin/shoes directly from locked040. New near sleeve joins the original blue blouse naturally; necessary local material closure may fix the existing join, but never copy long rectangular reference-patch cuts or expand to a full-body repaint. Numerical hidden joint locations are uncertain anatomy construction, not permission to stretch bone length. One whole returned patch registration first if it changes scale or position. No independently moved joint/finger/tip, no rod moved to chase hand. Transparent real artwork only, no reference joint markers, code-volume hand, props, background, head or whole body.\n",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F048/inputs/F048_01_complete_right_arm_TARGET.png",
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F048/inputs/F048_02_SAME_POSE_true_props_contact.png",
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F048/inputs/03_local_material_ONLY.png"
+    ],
+    "transparent_background": true
+  },
+  "actual_prompt_SHA256": "08cfd00aa4e23e8eae7af496c75cf375192a7b0cd637a5631c4a201064ccb569",
+  "actual_inputs": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F048/inputs/F048_01_complete_right_arm_TARGET.png",
+      "SHA256": "dabab348b083dd5804a815041cb9a76494a7b80f04e4b2705f7becf1b427f4f9"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F048/inputs/F048_02_SAME_POSE_true_props_contact.png",
+      "SHA256": "0c7aa92f57a22f08b5bfe4fcd1f336524781c45eea52c6622e6722d3cec18835"
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F048_F052_input_gate_from_locked040_20261019/F048/inputs/03_local_material_ONLY.png",
+      "SHA256": "d976781c23dbe4b5f2483a30a8fd90016128946a311b74beea46e0cc79ca5f92"
+    }
+  ],
+  "reviewed_input_commit": "a8ab569a74483ea3c334dea78ec51ebf9f8df636",
+  "actual_unique_mother": {
+    "commit": "e40a926ee8b7104d61c94cb7637bd9b2589d9544",
+    "path": "collab/reviews/cloud_s12_20261018/F034_F040_actual_20261019/F040/candidate/F040.png",
+    "SHA256": "aeb7a572b08aeb6c4cf41eac5de770a6ebd879635cc1c8c97c7a45cbf15c1dbe"
+  },
+  "authorized_calls": 1,
+  "authorization": "Direct reviewer01a15188-00cc-7705-b91f-7b18102ba0d0 final input gate approves048/052 max1local call each,048 actual passes before052.052 real inputs/request must rebind actual accepted048 SHA. Major error stops later, no retry.056/060/064 inputs only, no rise/lift."
+}
