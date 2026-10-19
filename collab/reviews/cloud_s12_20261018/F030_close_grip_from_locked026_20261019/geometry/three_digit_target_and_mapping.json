@@ -1,0 +1,143 @@
+{
+  "unique_static_mother_SHA256": "34515fa0f42af3c360004b7530142d7c077b9ba344da7eccd0dad26042eb4934",
+  "source_commit": "3ac42dabd48a08c420b4071c766abdb7894d9050",
+  "plate_native_crop": [
+    816,
+    816,
+    1024,
+    1024
+  ],
+  "native_to_plate": [
+    [
+      4,
+      0,
+      -3168
+    ],
+    [
+      0,
+      4,
+      -3168
+    ]
+  ],
+  "plate_to_native": [
+    [
+      0.25,
+      0,
+      792
+    ],
+    [
+      0,
+      0.25,
+      792
+    ]
+  ],
+  "current_fixed_thumb_index_exact_context": true,
+  "reference_volume_plans": [
+    {
+      "digit": "little",
+      "whole_source_index_reference_to_digit_matrix": [
+        [
+          0.9789526139080893,
+          -0.21929488164980787,
+          206.61466641100697
+        ],
+        [
+          0.2932673696603366,
+          1.1058248225131317,
+          -388.2129860535438
+        ]
+      ],
+      "native_root_estimate": [
+        944.0,
+        914.0
+      ],
+      "pad_target": [
+        951.218487164,
+        963.99560445
+      ],
+      "reference_longitudinal_projection_scale": 1.1468621336450933,
+      "reference_transverse_volume_scale": 1.0,
+      "rotation_degrees": 13.812746331288814,
+      "scope": "Reference-only anatomy volume projection from actual locked026 index; no code-painted finger/capsules. Root estimates inside current actual palm, hidden joints not measured. Actual new drawing is required."
+    },
+    {
+      "digit": "ring",
+      "whole_source_index_reference_to_digit_matrix": [
+        [
+          0.9965925187224935,
+          -0.16681302361732905,
+          147.2396028252009
+        ],
+        [
+          0.34105328958966075,
+          1.2810721918192198,
+          -604.8407910552144
+        ]
+      ],
+      "native_root_estimate": [
+        950.0,
+        905.0
+      ],
+      "pad_target": [
+        959.652732655,
+        962.940377936
+      ],
+      "reference_longitudinal_projection_scale": 1.33359909276155,
+      "reference_transverse_volume_scale": 1.0,
+      "rotation_degrees": 12.569998887340837,
+      "scope": "Reference-only anatomy volume projection from actual locked026 index; no code-painted finger/capsules. Root estimates inside current actual palm, hidden joints not measured. Actual new drawing is required."
+    },
+    {
+      "digit": "middle",
+      "whole_source_index_reference_to_digit_matrix": [
+        [
+          1.0081649683870393,
+          -0.13636804143408984,
+          115.02933259210727
+        ],
+        [
+          0.3963934528690552,
+          1.428771285319696,
+          -802.2936111043723
+        ]
+      ],
+      "native_root_estimate": [
+        957.0,
+        897.0
+      ],
+      "pad_target": [
+        968.086978146,
+        961.885151421
+      ],
+      "reference_longitudinal_projection_scale": 1.4944925565016904,
+      "reference_transverse_volume_scale": 1.0,
+      "rotation_degrees": 12.331944906560128,
+      "scope": "Reference-only anatomy volume projection from actual locked026 index; no code-painted finger/capsules. Root estimates inside current actual palm, hidden joints not measured. Actual new drawing is required."
+    }
+  ],
+  "reference_whole_hand_lower_air": [
+    {
+      "reference_only_alpha_threshold": 1,
+      "actual_lower_raster_overlap_pixels": 0,
+      "pixel_centre_air": 2.8284271247461903
+    },
+    {
+      "reference_only_alpha_threshold": 8,
+      "actual_lower_raster_overlap_pixels": 0,
+      "pixel_centre_air": 2.8284271247461903
+    },
+    {
+      "reference_only_alpha_threshold": 32,
+      "actual_lower_raster_overlap_pixels": 0,
+      "pixel_centre_air": 3.0
+    },
+    {
+      "reference_only_alpha_threshold": 128,
+      "actual_lower_raster_overlap_pixels": 0,
+      "pixel_centre_air": 3.0
+    }
+  ],
+  "production_rule": "Never adopt this volume construction. Future actual newly drawn three whole fingers/root only, from unique call. Frozen thumb/index contacts keep their actual positions. Genuine foreground occlusion may cover old edges; never preserve old AA by cutting holes in new fingers.",
+  "new_imagegen_calls": 0,
+  "F034": "CLOSED"
+}

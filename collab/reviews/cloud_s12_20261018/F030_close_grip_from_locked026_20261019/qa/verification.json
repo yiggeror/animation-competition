@@ -1,0 +1,58 @@
+{
+  "status": "ACTUAL030_SCOPE_AND_CONTACT_CHECKS_PASS_AUTHOR_VISUAL_REVIEW_NEXT",
+  "checks": {
+    "outside_actual3_root_edit_all_RGBA_including_hidden_alpha0_RGB_exact": true,
+    "source026_png_immutable_SHA_exact": true,
+    "fixed_thumb_index_body_contact_core_RGBA_exact": true,
+    "native_BG_FG_mutually_exclusive_union_RGBA_exact": true,
+    "head_neck_RGBA_exact": true,
+    "near_right_arm_RGBA_exact": true,
+    "whole_jade_wrist_RGBA_exact": true,
+    "R_knee_support_RGBA_exact": true,
+    "R_shin_support_RGBA_exact": true,
+    "R_shoe_support_RGBA_exact": true,
+    "L_knee_support_RGBA_exact": true,
+    "L_shin_support_RGBA_exact": true,
+    "L_shoe_support_RGBA_exact": true,
+    "actual_frozen_props_and_ground_shadows_byte_exact": true,
+    "actual_thumb_first_touch_patch_all_RGBA_exact": true,
+    "actual_index_upper_shaft_contact_patch_all_RGBA_exact": true
+  },
+  "actual_contact": [
+    {
+      "actual_FG_alpha_threshold": 1,
+      "lower_rod_overlap_pixels": 0,
+      "lower_air_pixel_centre_distance": 3.0,
+      "lower_air_unit_pixel_square_boundary_distance": 2.0,
+      "upper_rod_front_overlap_pixels": 301
+    },
+    {
+      "actual_FG_alpha_threshold": 8,
+      "lower_rod_overlap_pixels": 0,
+      "lower_air_pixel_centre_distance": 3.0,
+      "lower_air_unit_pixel_square_boundary_distance": 2.0,
+      "upper_rod_front_overlap_pixels": 297
+    },
+    {
+      "actual_FG_alpha_threshold": 32,
+      "lower_rod_overlap_pixels": 0,
+      "lower_air_pixel_centre_distance": 3.0,
+      "lower_air_unit_pixel_square_boundary_distance": 2.0,
+      "upper_rod_front_overlap_pixels": 287
+    },
+    {
+      "actual_FG_alpha_threshold": 128,
+      "lower_rod_overlap_pixels": 0,
+      "lower_air_pixel_centre_distance": 3.0,
+      "lower_air_unit_pixel_square_boundary_distance": 2.0,
+      "upper_rod_front_overlap_pixels": 278
+    }
+  ],
+  "native_SHA256": "ace73556d7e6527c6e13779219a66f541f497078f9d05ed691612345042ef9b1",
+  "Canvas_SHA256": "95f8e3bf3f15c2c6515bd8647fcf289613769b22cf9c228fdfb858d875b83ae2",
+  "raw_SHA256": "0ef84bfa385d9e198c4ae920ab3d1c026574d8970ed81b470b6bc4154962cea2",
+  "new_imagegen_calls": 1,
+  "originals": 1,
+  "actual_Canvas_render_runs": 1,
+  "F034_calls": 0
+}

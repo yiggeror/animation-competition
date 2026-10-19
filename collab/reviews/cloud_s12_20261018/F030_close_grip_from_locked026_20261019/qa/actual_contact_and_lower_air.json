@@ -1,0 +1,43 @@
+{
+  "source": "Actual Chromium FG layer and frozen actual7scene-px props, not input projection.",
+  "measurements": [
+    {
+      "actual_FG_alpha_threshold": 1,
+      "lower_rod_overlap_pixels": 0,
+      "lower_air_pixel_centre_distance": 3.0,
+      "lower_air_unit_pixel_square_boundary_distance": 2.0,
+      "upper_rod_front_overlap_pixels": 301
+    },
+    {
+      "actual_FG_alpha_threshold": 8,
+      "lower_rod_overlap_pixels": 0,
+      "lower_air_pixel_centre_distance": 3.0,
+      "lower_air_unit_pixel_square_boundary_distance": 2.0,
+      "upper_rod_front_overlap_pixels": 297
+    },
+    {
+      "actual_FG_alpha_threshold": 32,
+      "lower_rod_overlap_pixels": 0,
+      "lower_air_pixel_centre_distance": 3.0,
+      "lower_air_unit_pixel_square_boundary_distance": 2.0,
+      "upper_rod_front_overlap_pixels": 287
+    },
+    {
+      "actual_FG_alpha_threshold": 128,
+      "lower_rod_overlap_pixels": 0,
+      "lower_air_pixel_centre_distance": 3.0,
+      "lower_air_unit_pixel_square_boundary_distance": 2.0,
+      "upper_rod_front_overlap_pixels": 278
+    }
+  ],
+  "distance_definitions": {
+    "centre": "Euclidean distance between occupied pixel centres.",
+    "square_boundary": "Exact minimum Euclidean separation of closed1x1pixel squares: sqrt(max(abs(dx)-1,0)^2+max(abs(dy)-1,0)^2)."
+  },
+  "F026_accepted_baseline": {
+    "pixel_centres": 3,
+    "pixel_square_boundaries": 2,
+    "do_not_relabel_centre_as_boundary": true
+  },
+  "no_rod_movement": true
+}
