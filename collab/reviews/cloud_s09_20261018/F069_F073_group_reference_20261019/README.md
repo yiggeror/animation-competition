@@ -1,0 +1,1 @@
+Current concrete SOFT069 A/B/C/D and073 dependency package: F069_input_PREPARED/. Mother063 is final0abc3fd9, not the earlier waiting-for-mother status. Earlier geometry/reference files are retained as facts-only history. No069/073 request is frozen or called. See the new package README, actual gray/dark sheets, drafts and manifest.

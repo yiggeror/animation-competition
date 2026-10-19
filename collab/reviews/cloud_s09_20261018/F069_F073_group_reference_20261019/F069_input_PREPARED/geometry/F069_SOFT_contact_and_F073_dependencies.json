@@ -1,0 +1,185 @@
+{
+  "status": "SOFT_GROUP_INPUT_REFERENCE_NOT_FROZEN_NO_CALL",
+  "mother_sha256": "0abc3fd9cfcf7964f825ac7be0227fb9f588da709809f6d15362063741e545ef",
+  "crop_native": [
+    550,
+    0,
+    1320,
+    924
+  ],
+  "tool_uniform_scale": 1.6623376623376624,
+  "tool_inverse": "77/128 + [550,0]",
+  "whole_hand_only_transform": {
+    "angle_screen_y_down_deg": 15,
+    "scale": 1,
+    "pivot_visible_surface_proxy": [
+      1138,
+      643
+    ],
+    "post_rotation_translation": [
+      30,
+      -20
+    ],
+    "matrix": [
+      [
+        0.9659258262890683,
+        -0.25881904510252074
+      ],
+      [
+        0.25881904510252074,
+        0.9659258262890683
+      ]
+    ],
+    "translation": [
+      235.19705568396114,
+      -292.62637963053953
+    ],
+    "bicubic_AA_resampling": true,
+    "no_individual_finger_transform": true
+  },
+  "full_far_chain": {
+    "own_sleeve_soft_root": [
+      945.0,
+      695.0
+    ],
+    "visible_cuff_proxy": [
+      970.0,
+      744.0
+    ],
+    "elbow_soft": [
+      1013.7412105358188,
+      746.7760585118416
+    ],
+    "wrist_soft": [
+      1110.3676406904742,
+      660.3565410660266
+    ],
+    "source_projected_segments": [
+      43.829214001622255,
+      129.634100452003
+    ],
+    "note": "Manual 2D visible segment proxies, not anatomical bone lengths; all new chain must be drawn coherently."
+  },
+  "alpha128_material_contact": {
+    "whole_hand_true_prop_overlap_pixels": 6,
+    "xy": [
+      [
+        1135,
+        616
+      ],
+      [
+        1136,
+        616
+      ],
+      [
+        1137,
+        616
+      ],
+      [
+        1130,
+        617
+      ],
+      [
+        1131,
+        617
+      ],
+      [
+        1126,
+        618
+      ]
+    ],
+    "contact_source_xy": [
+      [
+        1104.3127144167431,
+        644.7795477043597
+      ],
+      [
+        1105.2786402430322,
+        644.5207286592572
+      ],
+      [
+        1106.2445660693213,
+        644.2619096141547
+      ],
+      [
+        1099.7419043304003,
+        647.0395687561614
+      ],
+      [
+        1100.7078301566894,
+        646.7807497110589
+      ],
+      [
+        1096.1370200703466,
+        649.0407707628606
+      ]
+    ],
+    "interpretation": "First raster contact is proximal palm heel/pad surface, not distal fingers; no pressure/thickness/ownership acceptance inferred. All fingers remain one source transform.",
+    "whole_hand_to_current_near_grip_min_distance_native": 3.605551275463989,
+    "A_final063_prop_and_near_grip_inheritance_RGBA_differences": 0,
+    "current_near_grip_overlap_pixels": 0
+  },
+  "near_operation_gate": {
+    "visible_thumb_tip_manual": [
+      1065,
+      574
+    ],
+    "visible_slider_material_centroid": [
+      1123.02601904,
+      598.86240543
+    ],
+    "distance_2d_native": 63.12810855234083,
+    "verified_reach": false,
+    "whole_grip_30_to45_axial_shift": "possible SOFT redraw study only, NOT applied or frozen; current063 unchanged",
+    "requirement": "Whole wrist/palm/thumb root and full grip must roll/regrip coherently; never stretch isolated thumb or move slider. Actual drawn069 must prove reach and far support ownership."
+  },
+  "white_bbox": [
+    903,
+    522,
+    1271,
+    816
+  ],
+  "guard_overlap_pixels": {
+    "head_skirt": 0,
+    "fixed_visible_prop": 0
+  },
+  "F073_dependency": {
+    "must_use_future_accepted_069_mother": true,
+    "first_ON_frames": [
+      73,
+      76
+    ],
+    "TRANSIT_dark_frames": [
+      69,
+      72
+    ],
+    "actual_dark_lens_source_center": [
+      1133.03882756,
+      285.65702322
+    ],
+    "actual063_dark_lens_reference_center": [
+      1229.8854704704174,
+      560.4106455371643
+    ],
+    "direction_L_minus_T_unit": [
+      0.980478934432394,
+      -0.19662415704667893
+    ],
+    "source_lens_area2627_bbox": [
+      1080,
+      270,
+      1187,
+      302
+    ],
+    "meaning": "Actual dark neutral lens area fit reference only, not exact optical/mechanical measurement. Existing white reflections remain OFF.",
+    "new_light_not_drawn": true
+  },
+  "intermediate_reference_need": "One complete hand/rigid-lamp/full-arms turning reference if Astra requests; no fake interpolation and no change to058x5+063x6.",
+  "remaining_gates": [
+    "Root/Astra review far pad/forearm/ownership target; raster6pixel contact is not palm-load acceptance.",
+    "Near whole-hand/thumb-root actual operation reach still open, explicitly not passed.",
+    "069 actual image, natural far chain and thumb operation must pass before073 inputs are frozen.",
+    "No verified mechanical end stops; forward push is toward true lamp end."
+  ],
+  "calls": 0
+}
