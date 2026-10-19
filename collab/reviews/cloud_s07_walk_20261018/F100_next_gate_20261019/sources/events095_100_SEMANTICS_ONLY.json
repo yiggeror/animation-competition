@@ -1,0 +1,228 @@
+{
+  "states": {
+    "95": {
+      "frame": 95,
+      "title": "近右收脚站定",
+      "hip": [
+        1140,
+        613
+      ],
+      "shoulder": [
+        1149.9765189609793,
+        502.4492466356686
+      ],
+      "far_hip": [
+        1133,
+        614
+      ],
+      "far_shoulder": [
+        1141.9765189609793,
+        505.4492466356686
+      ],
+      "near_ankle": [
+        1138,
+        758
+      ],
+      "far_ankle": [
+        1154,
+        758
+      ],
+      "near_knee": [
+        1119.7986370455512,
+        688.3386018902835
+      ],
+      "far_knee": [
+        1125.9653670272796,
+        691.6821339751883
+      ],
+      "near_wrist": [
+        1184,
+        592
+      ],
+      "far_wrist": [
+        1156,
+        616
+      ],
+      "near_elbow": [
+        1203.5858073442253,
+        537.4069954053186
+      ],
+      "far_elbow": [
+        1124.8059083074854,
+        567.1028769406728
+      ],
+      "head_center": [
+        1171.9765189609793,
+        442.4492466356686
+      ],
+      "contacts": [],
+      "lamp_lift": 0,
+      "sole_y": 775.0,
+      "near_hand_anatomical": "right",
+      "camera": [
+        816,
+        482.5,
+        1.04
+      ],
+      "hold_frames": 5,
+      "last_frame_inclusive": 99,
+      "geometry_status": "NEW_CONSTRUCTION_PROPOSAL_PENDING_ASTRA",
+      "support_phase": "双脚固定，停止行进",
+      "facing": "screen right; never mirror",
+      "near_arm": "anatomical right, bare wrist, foreground",
+      "far_arm": "anatomical left, jade bangle, behind torso where occluded",
+      "planted_feet": [
+        "near",
+        "far"
+      ],
+      "shoe_support_x": {
+        "near": [
+          1124,
+          1164
+        ],
+        "far": [
+          1140,
+          1180
+        ]
+      },
+      "swing_sole_clearance": {},
+      "balance_proxy_xy": [
+        1147.5701961171485,
+        584.1309484817998
+      ],
+      "support_hull_x": [
+        1124,
+        1180
+      ],
+      "gaze_target": [
+        1262,
+        524.7
+      ],
+      "hand_contact": "empty hands; no lamp contact",
+      "lamp_base": [
+        1262,
+        642
+      ],
+      "lamp_bail_contact": [
+        1262,
+        524.7
+      ],
+      "lamp_support": "table only"
+    },
+    "100": {
+      "frame": 100,
+      "title": "胸头一起探身／右手接近",
+      "hip": [
+        1140,
+        613
+      ],
+      "shoulder": [
+        1165.3055051124059,
+        504.92303015440336
+      ],
+      "far_hip": [
+        1133,
+        614
+      ],
+      "far_shoulder": [
+        1157.3055051124059,
+        507.92303015440336
+      ],
+      "near_ankle": [
+        1138,
+        758
+      ],
+      "far_ankle": [
+        1154,
+        758
+      ],
+      "near_knee": [
+        1119.7986370455512,
+        688.3386018902835
+      ],
+      "far_knee": [
+        1125.9653670272796,
+        691.6821339751883
+      ],
+      "near_wrist": [
+        1244,
+        519
+      ],
+      "far_wrist": [
+        1156,
+        616
+      ],
+      "near_elbow": [
+        1201.0684904379536,
+        557.9985318534419
+      ],
+      "far_elbow": [
+        1128.3659123008124,
+        565.0063023792782
+      ],
+      "head_center": [
+        1187.3055051124059,
+        444.92303015440336
+      ],
+      "contacts": [],
+      "lamp_lift": 0,
+      "sole_y": 775.0,
+      "near_hand_anatomical": "right",
+      "camera": [
+        816,
+        482.5,
+        1.04
+      ],
+      "hold_frames": 3,
+      "last_frame_inclusive": 102,
+      "geometry_status": "NEW_CONSTRUCTION_PROPOSAL_PENDING_ASTRA",
+      "support_phase": "双脚固定，灯仍归桌支撑",
+      "facing": "screen right; never mirror",
+      "near_arm": "anatomical right, bare wrist, foreground",
+      "far_arm": "anatomical left, jade bangle, behind torso where occluded",
+      "planted_feet": [
+        "near",
+        "far"
+      ],
+      "shoe_support_x": {
+        "near": [
+          1124,
+          1164
+        ],
+        "far": [
+          1140,
+          1180
+        ]
+      },
+      "swing_sole_clearance": {},
+      "balance_proxy_xy": [
+        1153.6183142089958,
+        583.4980886669948
+      ],
+      "support_hull_x": [
+        1124,
+        1180
+      ],
+      "gaze_target": [
+        1262,
+        524.7
+      ],
+      "hand_contact": "open approach, fingertip target(1255,515), above actual bail arc; actual finger thickness/gap must be verified",
+      "open_fingertip_target": [
+        1255,
+        515
+      ],
+      "open_fingertip_to_proposed_wire_centerline_min_distance": 10.495537284281312,
+      "lamp_base": [
+        1262,
+        642
+      ],
+      "lamp_bail_contact": [
+        1262,
+        524.7
+      ],
+      "lamp_support": "table only"
+    }
+  },
+  "limits": "Only100 event/body leaning intent. Old absolute wrists/bone sizes/ellipse targets are not actual source measurements."
+}

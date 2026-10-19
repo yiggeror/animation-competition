@@ -1,0 +1,4 @@
+// Only exact existing prop source; no human code/scene rendering.
+const fs=require('fs'),path=require('path');
+const {chromium}=require('/opt/codex/cua_node/lib/node_modules/playwright');
+(async()=>{const browser=await chromium.launch({executablePath:'/usr/bin/chromium',headless:true,timeout:10000,args:['--no-sandbox','--disable-dev-shm-usage']});try{const page=await browser.newPage({viewport:{width:1960,height:1080},deviceScaleFactor:1});await page.setContent(fs.readFileSync(path.join(__dirname,'reference/existing_lamp_ONLY_exact_source.html'),'utf8'),{waitUntil:'domcontentloaded',timeout:5000});await page.locator('canvas').screenshot({path:path.join(__dirname,'reference/existing_table_lamp_NATIVE_same_registration.png'),omitBackground:true,timeout:5000});}finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1)});

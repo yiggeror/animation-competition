@@ -1,0 +1,4 @@
+from pathlib import Path
+R=Path(__file__).resolve().parent;s=(R/'sources/existing_lamp_source_s08.js').read_text();beg=s.index('export function lamp(');end=s.index('\n// 火苗',beg);fn=s[beg:end].replace('export function lamp(','function lamp(',1);(R/'reference').mkdir(exist_ok=True)
+html='''<!doctype html><html><style>*{margin:0}html,body{background:transparent;overflow:hidden}</style><canvas id="c" width="1960" height="1080"></canvas><script>const LX=1120,LB=950,LINE='#4a2e1f';\n'''+fn+'''\nconst x=document.querySelector('canvas').getContext('2d');const s=.36410361842105265,tx=627.0254537171638,ty=402.7604324894813;x.setTransform(1/s,0,0,1/s,-tx/s,-ty/s);x.translate(1262,642);x.scale(-.17,.17);x.translate(-LX,-LB);lamp(x,0,false);document.title='EXISTING PROP ONLY - NO CHARACTER';</script></html>'''
+(R/'reference/existing_lamp_ONLY_exact_source.html').write_text(html)

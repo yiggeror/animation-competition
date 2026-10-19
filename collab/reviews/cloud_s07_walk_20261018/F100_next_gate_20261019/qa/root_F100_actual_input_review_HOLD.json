@@ -1,0 +1,64 @@
+{
+  "status": "HOLD_INPUT_NOT_FROZEN_NO_IMAGEGEN",
+  "scope": "F100..102 hold3; no F103/F106 input or native call",
+  "reviewer": "root actual PNG review following independent 6.1sol review",
+  "actual_viewed": [
+    {
+      "path": "inputs_1024x1536/A_F100_PREPARED_NOT_CALLED.png",
+      "sha256": "ef00c1903f2c55fd158efc08d4ae8c05fbae41bcb724519c8e5912df36e1279a"
+    },
+    {
+      "path": "inputs_1024x1536/B_F100_PREPARED_NOT_CALLED.png",
+      "sha256": "7593c6a78a8d22f88e629a1b9d226fd5d5068f4e271843cd916d8f180a8300f9"
+    },
+    {
+      "path": "inputs_1024x1536/C_F100_PREPARED_NOT_CALLED.png",
+      "sha256": "be88a817628674f638d81b6e9854b5fe0fd3f40bdebfe143c3c1ce929982d3f6"
+    },
+    {
+      "path": "inputs_1024x1536/D_F100_PREPARED_NOT_CALLED.png",
+      "sha256": "dc3b6d5c70b89dbbfc5582127702fd9d74c0c05bf48be4bd27d4bdefe9068d2c"
+    },
+    {
+      "path": "qa/F100_four_inputs_gray_PROPOSAL.png",
+      "sha256": "70e7e5c797b8d56b6200ee9ff0f3b7f7e09b29676fafaa4a83c7f35fd13da7ef"
+    },
+    {
+      "path": "qa/F100_four_inputs_dark_PROPOSAL.png",
+      "sha256": "580d224c04d4113d620d32bc6036dc3bd46497497f4dc5b92681b5e05a8b1fba"
+    },
+    {
+      "path": "qa/F100_lean_16_whole_source_group_gray_NOT_ART.png",
+      "sha256": "47f0fb3c13676ef8f6b8746ad7d10a66325d8490e9a4b3fb3e76fcd323638a9b"
+    },
+    {
+      "path": "qa/F100_lean_16_whole_source_group_dark_NOT_ART.png",
+      "sha256": "85d3efc79672c39a382d7747c032bf4bfef5cb6379da223b9abb194df9d0edb4"
+    },
+    {
+      "path": "qa/F100_complete_exposed_waist_NOT_ART_gray_3x.png",
+      "sha256": "abe11c3b3f2ab4cf2088ebe111e0c54ea2f868ff7966dfe5270612e2473d2353"
+    },
+    {
+      "path": "qa/F100_complete_exposed_waist_NOT_ART_dark_3x.png",
+      "sha256": "f37d8689b3bddad33ee0b28c9ae3eb5be11f65cd70c9bd677b4e6d8d1ade4a0f"
+    },
+    {
+      "path": "qa/F100_actual_full_hand_to_actual_lamp_gap_gray_4x.png",
+      "sha256": "fa2ec6cdbc13a399203eecec4b8818d523d7df76aa677b738eef145fa520b86e"
+    },
+    {
+      "path": "qa/SOURCE095_near_complete_arm_native3x_MATERIAL_ONLY.png",
+      "sha256": "504c9d6d38457e7152a32d84b025fe2f42e7648cdd97d92dcd5ea3ccde6535e8"
+    }
+  ],
+  "finding": "Whole head/chest/blouse lean, source shoes and original lamp are readable, near arm remains explicitly NOT_ART. The navy/blue waist interface still visibly follows the old hanging-hand negative. Filling alpha0 with technical volume has not repaired cloth or removed that source boundary. Do not call this proposal.",
+  "blocking_decision": "Astra must decide how the full new waist reconstruction may meet or replace the valid original navy core; then freeze natural arm/waist proportions and whole-group lean before a native call.",
+  "limits": [
+    "16degree lean is a proposal, not accepted animation or anatomy. 95/110native projected link proxies are not measured bones or maximum3Dreach.",
+    "Whole source palm/fingers Rminus60 is a soft guide only; full near wrist/palm is white, no hard wrist seam.",
+    "True fullhand to actual lamp material gap is alpha1=11.18034native, alpha128=12.80625native, zero overlap; recheck final art if later authorized.",
+    "Exact source layer and 29PNG isolated replay passes prove provenance/compositing only. They do not resolve the visible old-hand waist contour or approve generated artwork."
+  ],
+  "imagegen_calls": 0
+}

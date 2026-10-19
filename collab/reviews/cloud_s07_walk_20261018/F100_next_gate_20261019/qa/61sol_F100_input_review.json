@@ -1,0 +1,206 @@
+{
+  "status": "HOLD_F100_UNFROZEN_INPUT_OLD_HAND_NEGATIVE_STILL_VISIBLE_AT_NAVY_TECH_WAIST_INTERFACE",
+  "actual_viewed": [
+    {
+      "path": "inputs_1024x1536/A_F100_PREPARED_NOT_CALLED.png",
+      "SHA256": "ef00c1903f2c55fd158efc08d4ae8c05fbae41bcb724519c8e5912df36e1279a"
+    },
+    {
+      "path": "inputs_1024x1536/B_F100_PREPARED_NOT_CALLED.png",
+      "SHA256": "7593c6a78a8d22f88e629a1b9d226fd5d5068f4e271843cd916d8f180a8300f9"
+    },
+    {
+      "path": "inputs_1024x1536/C_F100_PREPARED_NOT_CALLED.png",
+      "SHA256": "be88a817628674f638d81b6e9854b5fe0fd3f40bdebfe143c3c1ce929982d3f6"
+    },
+    {
+      "path": "inputs_1024x1536/D_F100_PREPARED_NOT_CALLED.png",
+      "SHA256": "dc3b6d5c70b89dbbfc5582127702fd9d74c0c05bf48be4bd27d4bdefe9068d2c"
+    },
+    {
+      "path": "qa/F100_four_inputs_gray_PROPOSAL.png",
+      "SHA256": "70e7e5c797b8d56b6200ee9ff0f3b7f7e09b29676fafaa4a83c7f35fd13da7ef"
+    },
+    {
+      "path": "qa/F100_four_inputs_dark_PROPOSAL.png",
+      "SHA256": "580d224c04d4113d620d32bc6036dc3bd46497497f4dc5b92681b5e05a8b1fba"
+    },
+    {
+      "path": "qa/F100_lean_16_whole_source_group_gray_NOT_ART.png",
+      "SHA256": "47f0fb3c13676ef8f6b8746ad7d10a66325d8490e9a4b3fb3e76fcd323638a9b"
+    },
+    {
+      "path": "qa/F100_lean_08_whole_source_group_gray_NOT_ART.png",
+      "SHA256": "caa717075df4117aaf7442a65487beb32177a65765579d7580a180cd64fc2df9"
+    },
+    {
+      "path": "qa/F100_complete_exposed_waist_NOT_ART_gray_3x.png",
+      "SHA256": "abe11c3b3f2ab4cf2088ebe111e0c54ea2f868ff7966dfe5270612e2473d2353"
+    },
+    {
+      "path": "qa/F100_complete_exposed_waist_NOT_ART_dark_3x.png",
+      "SHA256": "f37d8689b3bddad33ee0b28c9ae3eb5be11f65cd70c9bd677b4e6d8d1ade4a0f"
+    },
+    {
+      "path": "qa/F100_actual_full_hand_to_actual_lamp_gap_gray_4x.png",
+      "SHA256": "fa2ec6cdbc13a399203eecec4b8818d523d7df76aa677b738eef145fa520b86e"
+    },
+    {
+      "path": "qa/actual_lamp_bail_and_approach_INTENT_ONLY_dark_3x.png",
+      "SHA256": "139cc65c8c43930fd82bc3508a0a0265f38eb7d9b110069ee4ed371113e213ea"
+    },
+    {
+      "path": "reference/existing_table_lamp_NATIVE_same_registration.png",
+      "SHA256": "5c2321d12357ed82cee9e582a00f67faa92a8cc32ca0cbc33ae89608443ed29a"
+    },
+    {
+      "path": "qa/SOURCE095_near_complete_arm_native3x_MATERIAL_ONLY.png",
+      "SHA256": "504c9d6d38457e7152a32d84b025fe2f42e7648cdd97d92dcd5ea3ccde6535e8"
+    }
+  ],
+  "mother095_source_and_replay": {
+    "SHA256": "dcf919f412fd379a34ea69329210a418547dcccc089e1b36aa208024a04fdca4",
+    "six_layer_RGBA_changes": 0
+  },
+  "actual_observations": [
+    "Chest/head/blouse are one rigid16degree source group; face and neck are not independently tilted. Complete original fararm/jade shares the same transform.",
+    "Complete new neararm/wrist/palm approach is readable as NOT_ART; whole hand transformed once, source cut white, all actual fingers clear of actualcubic bail.",
+    "Raised-hand waist void is covered by NOT_ART volume, but navy/blue material interface STILL visibly presents the old-hand negative contour. Released1039technical pixels have not visually removed that old outline. No real waist repair is claimed.",
+    "Broad waist technical volume and95/110projected arms are proposals; root/Astra must review natural full waist silhouette and anatomy. The polygon must not become an extra flap or enlarged waist.",
+    "Both actual fixed soles1022, no foot roll/new step/lift. Lamp remains original table registration and DARK/no grip. No real physicalcontact is claimed from a numericpoint."
+  ],
+  "source_feet": {
+    "near": {
+      "SHA256": "60805bc58c5035c804025d84a00f122e434fb217e68478c86d671a5ab6a180a3",
+      "sole_native": 1022,
+      "xspan_native": [
+        1361,
+        1536
+      ]
+    },
+    "far": {
+      "SHA256": "64637d1d886e25fdcf3c888b533c1a8164844fe429a87295cfb9194dc585503c",
+      "sole_native": 1022,
+      "xspan_native": [
+        1385,
+        1555
+      ]
+    }
+  },
+  "actual_full_hand_gap_by_alpha": {
+    "1": {
+      "min_gap_native": 11.180339887498949,
+      "overlap_pixels": 0
+    },
+    "16": {
+      "min_gap_native": 12.041594578792296,
+      "overlap_pixels": 0
+    },
+    "128": {
+      "min_gap_native": 12.806248474865697,
+      "overlap_pixels": 0
+    },
+    "240": {
+      "min_gap_native": 13.892443989449804,
+      "overlap_pixels": 0
+    }
+  },
+  "mask_and_bounds": {
+    "old_near_hand_technical_occlusion_edge_released_pixels": 1039,
+    "original095_pants_kept_material_RGBA_changes": 0,
+    "active_rgba_bbox_halfopen": [
+      1360,
+      47,
+      1852,
+      1024
+    ],
+    "white_bbox_halfopen": [
+      1345,
+      252,
+      1744,
+      656
+    ],
+    "crop_margins_L_T_R_B": [
+      120,
+      47,
+      108,
+      56
+    ],
+    "active_material_outside_crop": 0,
+    "guard_white_intersection": 0,
+    "guard_alpha0_in_actual_input": 0,
+    "newhand_tech_outside_white_or_fixed_guard": 0
+  },
+  "white_material_probes": {
+    "near_sleeve": {
+      "xy": [
+        1462,
+        357
+      ],
+      "WHITE": true,
+      "component": 1
+    },
+    "nearE": {
+      "xy": [
+        1557,
+        361
+      ],
+      "WHITE": true,
+      "component": 1
+    },
+    "nearW": {
+      "xy": [
+        1648,
+        300
+      ],
+      "WHITE": true,
+      "component": 1
+    },
+    "whole_palm": {
+      "xy": [
+        1685,
+        298
+      ],
+      "WHITE": true,
+      "component": 1
+    },
+    "waist_old_hand_unknown": {
+      "xy": [
+        1450,
+        590
+      ],
+      "WHITE": true,
+      "component": 6
+    },
+    "waist_complete_back": {
+      "xy": [
+        1590,
+        620
+      ],
+      "WHITE": true,
+      "component": 6
+    }
+  },
+  "draft_word_count": 394,
+  "draft_SHA256": "6741440d72c8d2747c5634d3d90e1af155e6961d063d36b93d609c4789571cbe",
+  "four_paths_and_prompt_match": true,
+  "isolated_replay": "qa/isolated_replay_checks.json;4inputs+existingprop+8layers exact using sources/4scripts only.",
+  "remaining_review": [
+    "BLOCKER: root/Astra choose handling of retained navy core versus remaining visible old-hand contour before any call.",
+    "Root/Astra inputfreeze of16degreebody and neararm projected proxies/real openhand direction.",
+    "After any authorized nativecall: full wrist/arm/waist real fabric continuity, original identity/palette, actual allfinger→realbail airgap and fixed shoes/lamp must be visually rechecked."
+  ],
+  "imagegen_calls": 0,
+  "git_actions": 0,
+  "F103or106prepared": false,
+  "specific_remaining_input_blocker": {
+    "actual_images": [
+      "inputs_1024x1536/A_F100_PREPARED_NOT_CALLED.png",
+      "qa/F100_complete_exposed_waist_NOT_ART_gray_3x.png",
+      "qa/F100_complete_exposed_waist_NOT_ART_dark_3x.png"
+    ],
+    "finding": "Old-hand void has no alpha0hole after technical volume, BUT retained source navy over the blue volume still outlines the old hanging-hand negative shape. It is not visually removed and the real waist is not repaired.",
+    "reason": "Retained effective095pants core remains on top of the technical waist; source-core preservation and eliminating the old competing cut contour require root/Astra semantic-boundary decision.",
+    "gate": "DO_NOT_CALL_CURRENT_UNFROZEN_PROPOSAL; root/Astra must decide; stop edits/no additional release or generation."
+  }
+}
