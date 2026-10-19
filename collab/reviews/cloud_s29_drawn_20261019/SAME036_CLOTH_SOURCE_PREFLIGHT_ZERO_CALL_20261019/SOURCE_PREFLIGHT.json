@@ -1,0 +1,318 @@
+{
+  "status": "HOLD_SOURCE_INSUFFICIENT_BEFORE_ANY_DEFORMATION",
+  "new_generation_calls": 0,
+  "new_mapping_candidates": 0,
+  "actual_back_and_front_layers_opened_by_root_and_existing_helper": true,
+  "source_candidate_coverage": "Original-coordinate raw030 outside technical replacement mask, plus locked036 BACK/FRONT; excludes mirror tile and translated rectangle. Candidate layers retain a few non-cotton edge pixels; this is an upper coverage audit, not a clean donor.",
+  "missing_outside_true_props_and_near_hand_conservative": {
+    "pixels": 25961,
+    "bbox_inclusive": [
+      268,
+      728,
+      972,
+      1008
+    ]
+  },
+  "confirmed_raw_non_cotton_no036_coverage": {
+    "pixels": 4594,
+    "bbox_inclusive": [
+      271,
+      739,
+      965,
+      998
+    ]
+  },
+  "regions": {
+    "crane_upper_face": {
+      "window_exclusive": [
+        400,
+        720,
+        870,
+        825
+      ],
+      "excluded_material_gap": {
+        "pixels": 6821,
+        "bbox_inclusive": [
+          400,
+          728,
+          841,
+          824
+        ]
+      },
+      "confirmed_raw_non_cotton": {
+        "pixels": 873,
+        "bbox_inclusive": [
+          400,
+          739,
+          779,
+          824
+        ]
+      },
+      "actual_non_cotton_source_example": {
+        "xy": [
+          639,
+          773
+        ],
+        "raw030_RGBA": [
+          151,
+          108,
+          55,
+          253
+        ],
+        "BACK_alpha": 0,
+        "FRONT_alpha": 0,
+        "true_prop_alpha": 0,
+        "locked036_flat_RGBA": [
+          19,
+          33,
+          65,
+          253
+        ]
+      }
+    },
+    "crane_stem_and_middle_face": {
+      "window_exclusive": [
+        550,
+        790,
+        700,
+        900
+      ],
+      "excluded_material_gap": {
+        "pixels": 3431,
+        "bbox_inclusive": [
+          550,
+          790,
+          699,
+          899
+        ]
+      },
+      "confirmed_raw_non_cotton": {
+        "pixels": 320,
+        "bbox_inclusive": [
+          560,
+          790,
+          699,
+          841
+        ]
+      },
+      "actual_non_cotton_source_example": {
+        "xy": [
+          639,
+          813
+        ],
+        "raw030_RGBA": [
+          93,
+          67,
+          57,
+          253
+        ],
+        "BACK_alpha": 0,
+        "FRONT_alpha": 0,
+        "true_prop_alpha": 0,
+        "locked036_flat_RGBA": [
+          38,
+          57,
+          98,
+          253
+        ]
+      }
+    },
+    "turtle_near_lower_face": {
+      "window_exclusive": [
+        260,
+        815,
+        560,
+        925
+      ],
+      "excluded_material_gap": {
+        "pixels": 4829,
+        "bbox_inclusive": [
+          268,
+          815,
+          559,
+          924
+        ]
+      },
+      "confirmed_raw_non_cotton": {
+        "pixels": 1017,
+        "bbox_inclusive": [
+          271,
+          815,
+          526,
+          890
+        ]
+      },
+      "actual_non_cotton_source_example": {
+        "xy": [
+          410,
+          872
+        ],
+        "raw030_RGBA": [
+          161,
+          112,
+          59,
+          253
+        ],
+        "BACK_alpha": 0,
+        "FRONT_alpha": 0,
+        "true_prop_alpha": 0,
+        "locked036_flat_RGBA": [
+          33,
+          52,
+          92,
+          253
+        ]
+      }
+    },
+    "rod_corridors_and_lower_drape": {
+      "window_exclusive": [
+        450,
+        850,
+        985,
+        1010
+      ],
+      "excluded_material_gap": {
+        "pixels": 14307,
+        "bbox_inclusive": [
+          450,
+          850,
+          972,
+          1008
+        ]
+      },
+      "confirmed_raw_non_cotton": {
+        "pixels": 2398,
+        "bbox_inclusive": [
+          450,
+          850,
+          965,
+          998
+        ]
+      },
+      "actual_non_cotton_source_example": {
+        "xy": [
+          717,
+          939
+        ],
+        "raw030_RGBA": [
+          234,
+          166,
+          78,
+          253
+        ],
+        "BACK_alpha": 0,
+        "FRONT_alpha": 0,
+        "true_prop_alpha": 0,
+        "locked036_flat_RGBA": [
+          27,
+          44,
+          82,
+          253
+        ]
+      }
+    }
+  },
+  "two_contact_points": {
+    "C1": {
+      "native": [
+        499,
+        747
+      ],
+      "source": "existing common030 near-hand/neck3 contact; frozen, not a new anatomical measurement"
+    },
+    "far_pinch036": {
+      "native": [
+        725.78751656,
+        663.66135947
+      ],
+      "source": "locked036 geometry/ONE_SIMILARITY_AND_SOURCE_CHECKS.json mapped_anchors[2]"
+    },
+    "far_pinch042": {
+      "native": [
+        719.3919286565133,
+        663.6451167701863
+      ],
+      "source": "8c fixed one-group mapped_anchors[2]; manual read uncertainty about3px"
+    },
+    "far_pinch048": {
+      "native": [
+        711.098467936869,
+        662.61030076984
+      ],
+      "source": "8c fixed one-group mapped_anchors[2]; manual read uncertainty about3px"
+    }
+  },
+  "locked_states_unchanged_SHA256": [
+    {
+      "state": 36,
+      "path": "F036_CONTINUOUS_SLEEVE_CLOTH_sameM_zero_call_20261019/candidate/F036_CONTINUOUS_SLEEVE_CLOTH_SAME_M_TRIAL.png",
+      "sha256": "0a65674bee91dec491997e45c5b0a2993c91a44f64424735883a032321b9a02b"
+    },
+    {
+      "state": 42,
+      "path": "F036_F042_F048_SCENE_TRANSITIONS_ZERO_CALL_20261019/F042_FRONT_LIP_OVER_OUTER_FEATHER_RGBA.png",
+      "sha256": "fdd72f88fc1389288808b1389942ac8bcbc1a79554f46d0c7bcaafed1397e3ca"
+    },
+    {
+      "state": 48,
+      "path": "F036_F042_F048_SCENE_TRANSITIONS_ZERO_CALL_20261019/F048_FRONT_LIP_OVER_OUTER_FEATHER_RGBA.png",
+      "sha256": "021036b62d5669e102523914bf47ef118d61baca2a19e3f99f83208c21ea5998"
+    }
+  ],
+  "source_SHA256": [
+    {
+      "path": "F036_CONTINUOUS_SLEEVE_CLOTH_sameM_zero_call_20261019/candidate/F036_CONTINUOUS_SLEEVE_CLOTH_SAME_M_TRIAL.png",
+      "sha256": "0a65674bee91dec491997e45c5b0a2993c91a44f64424735883a032321b9a02b"
+    },
+    {
+      "path": "F036_CONTINUOUS_SLEEVE_CLOTH_sameM_zero_call_20261019/layers/ONE_M_ACTUAL_COTTON_BACK.png",
+      "sha256": "ea36d95425be785f7cbec51ca7a7760e6c2abbc87253f2055e418ab761fd6060"
+    },
+    {
+      "path": "F036_CONTINUOUS_SLEEVE_CLOTH_sameM_zero_call_20261019/layers/ONE_M_ACTUAL_SOFT_LIP_FRONT.png",
+      "sha256": "51c68baa5272458138c551fd4b65424532e580868e25dd15aa1156feb8dadabc"
+    },
+    {
+      "path": "F030_REPAIR_NATIVE_call01_20261019/originals/S29_F030_REPAIR_call01_RAW_UNTOUCHED.png",
+      "sha256": "0c182aa0d62acf8647daa316e06cdb4bfdd9ebd6c2e6c02f1b0e2f8065ffd4e5"
+    },
+    {
+      "path": "F036_REBUILD_FROM_ACTUAL030_ZERO_CALL_v1_20261019/layers/ACTUAL030_CLOTH_CONTEXT_BASE_TECHNICAL_ONLY.png",
+      "sha256": "eec54d566070724fcd19d62e9e523289262cbad4a96f47bbfb26d4cd5eadfa47"
+    },
+    {
+      "path": "F036_REBUILD_FROM_ACTUAL030_ZERO_CALL_v1_20261019/masks/GENERATED_PROP_CONTEXT_REPLACEMENT_ONLY.png",
+      "sha256": "bb4ccf7a08e5ab4add3e76ecd56e3ac5bb89b3cbc849ff2ed7faa656526c4b09"
+    },
+    {
+      "path": "F036_CONTINUOUS_SLEEVE_CLOTH_sameM_zero_call_20261019/layers/LOCKED030_CONTINUOUS_REAL_COTTON_UNDERLAY.png",
+      "sha256": "05859030d91a56ef741720ed56d9af08b56b9debf89368665cbfba70a877e176"
+    }
+  ],
+  "forbidden_existing_substrates": {
+    "mirror_tile": {
+      "raw030_crop": [
+        540,
+        813,
+        607,
+        860
+      ],
+      "destination": "GENERATED_PROP_CONTEXT_REPLACEMENT_ONLY mask, mirrored modulo tile"
+    },
+    "rectangle": {
+      "raw030_crop": [
+        650,
+        700,
+        735,
+        738
+      ],
+      "destination": [
+        790,
+        792,
+        875,
+        830
+      ]
+    }
+  },
+  "limitation": "Broad exclusion-mask gap counts are conservative, not exact intrinsic source-occlusion area. Red subset confirms actual raw gold/green non-cotton material outside fixed true props with no opaque036 cloth layer coverage. No mesh or pattern replacement was attempted."
+}
