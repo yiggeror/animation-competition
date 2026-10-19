@@ -1,0 +1,22 @@
+{
+  "status": "AUTHOR_SAME_RAW_REPAIR_VISUAL_PASS_ASTRA_FINAL_LOCK_PENDING",
+  "actual_viewed": [
+    "qa/00_native_before_after_gray_dark.jpg",
+    "qa/source03_skin_selection.jpg",
+    "qa/source03_blouse_blue_selection.jpg",
+    "actual_scene/F000_Canvas.png",
+    "actual_scene/00_same_F000_before_after_actual.jpg",
+    "actual_scene/01_face_arms_cloth_colour_actual.jpg",
+    "actual_scene/02_belly_pressure_contact_actual5x.jpg",
+    "actual_scene/03_knees_shins_shoes_same_pose_actual.jpg"
+  ],
+  "observations": [
+    "灰/深底实看肤色橘偏减弱、蓝衫明度与饱和回到03材质家族，原形体阴影/白花/线稿仍连贯。",
+    "原发丝和镜框边界保住，远离真实轮廓的游离低alpha已清；核心透明度和完整跪坐轮廓不变。",
+    "同F000实际场景中双臂、手、鞋、相机与身体注册保持，鞋底朝上与近拇指遮挡沿Astra已批读法，不重生。",
+    "鹤腹旁蓝布出现小凹折与贴合暗线，仍55°斜靠、双签靠左沿，箱体/前板/盖内无额外变动；F000无透色。"
+  ],
+  "numerical_evidence": "actual_delivery_verification.json+material_alpha_verification.json",
+  "remaining": "Astra对本零生成修正作最后锁母；未授权后态，不生成后态。",
+  "imagegen_calls_this_task": 0
+}
