@@ -1,0 +1,242 @@
+{
+  "frame_anchor": 39,
+  "status": "INPUT_PENDING_ASTRA_SHORT_REVIEW",
+  "not_new_exposure_schedule": true,
+  "image_model_calls": 0,
+  "generation_authorized": false,
+  "source": "Frozen S20 protocol B04/B05/B06 and approvedCB strip036/042/047; firstactivecross sampling058",
+  "ownership": {
+    "T_H": [
+      "X.R"
+    ],
+    "T_S": [
+      "X.L"
+    ],
+    "C_B": [
+      "G.L"
+    ],
+    "C_N": [
+      "G.L"
+    ]
+  },
+  "hand_chain_construction": {
+    "G.R": {
+      "world_chain": [
+        [
+          1067.0,
+          285.0
+        ],
+        [
+          1042.8047393666473,
+          433.035770551864
+        ],
+        [
+          954.0,
+          409.0
+        ]
+      ],
+      "projected_upper_in_own_H": 0.8196721311475409,
+      "projected_forearm_in_own_H": 0.5027322404371585,
+      "construction_limits_in_own_H": [
+        1.0,
+        0.9
+      ]
+    },
+    "G.L": {
+      "world_chain": [
+        [
+          1160.0,
+          285.0
+        ],
+        [
+          1095.0,
+          435.0
+        ],
+        [
+          984.0,
+          343.0
+        ]
+      ],
+      "projected_upper_in_own_H": 0.893321460342722,
+      "projected_forearm_in_own_H": 0.7878144180121015,
+      "construction_limits_in_own_H": [
+        1.0,
+        0.9
+      ]
+    },
+    "X.R": {
+      "world_chain": [
+        [
+          595.6,
+          377.55
+        ],
+        [
+          693.25,
+          343.45000000000005
+        ],
+        [
+          706.0,
+          380.0
+        ]
+      ],
+      "projected_upper_in_own_H": 0.6673080248281148,
+      "projected_forearm_in_own_H": 0.2497420104832347,
+      "construction_limits_in_own_H": [
+        0.9,
+        0.8
+      ]
+    },
+    "X.L": {
+      "world_chain": [
+        [
+          629.7,
+          379.1
+        ],
+        [
+          701.0,
+          453.5
+        ],
+        [
+          731.0,
+          430.0
+        ]
+      ],
+      "projected_upper_in_own_H": 0.6648308055437865,
+      "projected_forearm_in_own_H": 0.245860632416661,
+      "construction_limits_in_own_H": [
+        0.9,
+        0.8
+      ]
+    }
+  },
+  "full_support_to_pelvis_chest_head": {
+    "G": {
+      "hips_world": [
+        [
+          1080.72,
+          517.8
+        ],
+        [
+          1142.94,
+          521.46
+        ]
+      ],
+      "knees_world": [
+        [
+          1067.91,
+          708.12
+        ],
+        [
+          1168.56,
+          709.95
+        ]
+      ],
+      "ankles_world": [
+        [
+          1069.8,
+          866.4
+        ],
+        [
+          1173.8,
+          883.4
+        ]
+      ],
+      "ankles_are_fixed_between_batch_states": true,
+      "foot_turn": "fixed original standing support"
+    },
+    "X": {
+      "hips_world": [
+        [
+          580.1,
+          555.8
+        ],
+        [
+          634.35,
+          560.45
+        ]
+      ],
+      "knees_world": [
+        [
+          578.55,
+          724.75
+        ],
+        [
+          645.2,
+          718.5500000000001
+        ]
+      ],
+      "ankles_world": [
+        [
+          580.1,
+          887.5
+        ],
+        [
+          652.95,
+          873.5500000000001
+        ]
+      ],
+      "ankles_are_fixed_between_batch_states": true,
+      "foot_turn": "profile_right -> foreshortened_front -> profile_left"
+    },
+    "no_whole_old_body_as_reference": true
+  },
+  "child_face": 1,
+  "child_near_arm": "R",
+  "G_R_CB_thumb_index_opposition_world": null,
+  "G_L_CN_opposition_world": [
+    929,
+    317.54
+  ],
+  "fixed_cues_seconds": {
+    "active_entangle": [
+      2.4,
+      4.6
+    ],
+    "flip_complete": 5.5,
+    "CAMG_cut": 6.0
+  },
+  "no_endpoint_swap": true,
+  "T_S_front_T_H_back_at_crossing": false,
+  "not_production_character_drawing": true,
+  "crane_axis_gate": "445d2921 accepted technical occlusion,currentaxes/childforeground/noangletraversal",
+  "old_whole_locked_people_used_only_locally": true,
+  "model_identity_references_only_head_and_internal_material_crops": true,
+  "required_turn_chain": "supporting foot -> pelvis -> chest/shoulders -> full head/neck; full arm/wrist follows",
+  "turtle_contacts": {
+    "X.R": {
+      "role": "T_H",
+      "palm": [
+        740,
+        380
+      ],
+      "visible_front_tip": [
+        650,
+        350
+      ],
+      "part": "head",
+      "at": [
+        20,
+        0
+      ]
+    },
+    "X.L": {
+      "role": "T_S",
+      "palm": [
+        765,
+        430
+      ],
+      "visible_front_tip": [
+        630,
+        400
+      ],
+      "part": "shell",
+      "at": [
+        0,
+        40
+      ]
+    }
+  },
+  "no_active_X_before058": true,
+  "first_reference_only_new_complete_opaque_pose": true,
+  "identity_only_head_internal_material_crops": true
+}

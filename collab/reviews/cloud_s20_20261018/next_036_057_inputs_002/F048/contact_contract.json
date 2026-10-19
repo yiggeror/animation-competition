@@ -1,0 +1,207 @@
+{
+  "frame_anchor": 48,
+  "status": "INPUT_PENDING_ASTRA_SHORT_REVIEW",
+  "not_new_exposure_schedule": true,
+  "image_model_calls": 0,
+  "generation_authorized": false,
+  "source": "Frozen S20 protocol B04/B05/B06 and approvedCB strip036/042/047; firstactivecross sampling058",
+  "ownership": {
+    "T_H": [
+      "X.R"
+    ],
+    "T_S": [
+      "X.L"
+    ],
+    "C_B": [
+      "G.R"
+    ],
+    "C_N": [
+      "G.L"
+    ]
+  },
+  "hand_chain_construction": {
+    "G.R": {
+      "world_chain": [
+        [
+          1067.0,
+          285.0
+        ],
+        [
+          985.3490322130403,
+          410.82972406968423
+        ],
+        [
+          913.0,
+          354.0
+        ]
+      ],
+      "projected_upper_in_own_H": 0.8196721311475409,
+      "projected_forearm_in_own_H": 0.5027322404371585,
+      "construction_limits_in_own_H": [
+        1.0,
+        0.9
+      ]
+    },
+    "G.L": {
+      "world_chain": [
+        [
+          1160.0,
+          285.0
+        ],
+        [
+          1095.0,
+          435.0
+        ],
+        [
+          984.0,
+          325.0
+        ]
+      ],
+      "projected_upper_in_own_H": 0.893321460342722,
+      "projected_forearm_in_own_H": 0.8539464394706886,
+      "construction_limits_in_own_H": [
+        1.0,
+        0.9
+      ]
+    },
+    "X.R": {
+      "world_chain": [
+        [
+          583.2,
+          379.1
+        ],
+        [
+          546.0,
+          470.55
+        ],
+        [
+          510.0,
+          432.0
+        ]
+      ],
+      "projected_upper_in_own_H": 0.6369458375717671,
+      "projected_forearm_in_own_H": 0.34029444922716257,
+      "construction_limits_in_own_H": [
+        0.9,
+        0.8
+      ]
+    },
+    "X.L": {
+      "world_chain": [
+        [
+          629.7,
+          383.75
+        ],
+        [
+          615.75,
+          489.15000000000003
+        ],
+        [
+          516.0,
+          503.0
+        ]
+      ],
+      "projected_upper_in_own_H": 0.6859300255857006,
+      "projected_forearm_in_own_H": 0.6497221050077424,
+      "construction_limits_in_own_H": [
+        0.9,
+        0.8
+      ]
+    }
+  },
+  "full_support_to_pelvis_chest_head": {
+    "G": {
+      "hips_world": [
+        [
+          1080.72,
+          517.8
+        ],
+        [
+          1142.94,
+          521.46
+        ]
+      ],
+      "knees_world": [
+        [
+          1067.91,
+          708.12
+        ],
+        [
+          1168.56,
+          709.95
+        ]
+      ],
+      "ankles_world": [
+        [
+          1069.8,
+          866.4
+        ],
+        [
+          1173.8,
+          883.4
+        ]
+      ],
+      "ankles_are_fixed_between_batch_states": true,
+      "foot_turn": "fixed original standing support"
+    },
+    "X": {
+      "hips_world": [
+        [
+          573.9,
+          555.8
+        ],
+        [
+          626.6,
+          560.45
+        ]
+      ],
+      "knees_world": [
+        [
+          578.55,
+          727.85
+        ],
+        [
+          640.55,
+          715.45
+        ]
+      ],
+      "ankles_world": [
+        [
+          580.1,
+          887.5
+        ],
+        [
+          652.95,
+          873.5500000000001
+        ]
+      ],
+      "ankles_are_fixed_between_batch_states": true,
+      "foot_turn": "profile_right -> foreshortened_front -> profile_left"
+    },
+    "no_whole_old_body_as_reference": true
+  },
+  "child_face": -1,
+  "child_near_arm": "L",
+  "G_R_CB_thumb_index_opposition_world": [
+    875,
+    321.5
+  ],
+  "G_L_CN_opposition_world": [
+    929,
+    317.54
+  ],
+  "pending_crane_axis_gate": "445d2921 officialCAM20 candidate; angle provisional in these INPUTS ONLY",
+  "fixed_cues_seconds": {
+    "active_entangle": [
+      2.4,
+      4.6
+    ],
+    "flip_complete": 5.5,
+    "CAMG_cut": 6.0
+  },
+  "no_endpoint_swap": true,
+  "T_S_front_T_H_back_at_crossing": false,
+  "not_production_character_drawing": true,
+  "reuse_F047": true,
+  "independent_new_pose": false
+}

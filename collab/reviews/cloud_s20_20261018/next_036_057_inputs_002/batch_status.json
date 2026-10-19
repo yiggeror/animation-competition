@@ -1,0 +1,35 @@
+{
+  "scope_frames": [
+    36,
+    57
+  ],
+  "fixed_source_phases": [
+    "B04 036–047",
+    "B05 048–057"
+  ],
+  "fps": 24,
+  "total_frames": 22,
+  "prepared_unique_generation_anchors": [
+    36,
+    39,
+    42,
+    45,
+    47,
+    54
+  ],
+  "reuse_anchors": {
+    "48": "47 actual PNG,048–053"
+  },
+  "outside_batch_deferred_anchor": 58,
+  "status": "WHOLE_BATCH_INPUT_PENDING_ASTRA_SHORT_REVIEW",
+  "image_calls": 0,
+  "raw_outputs": 0,
+  "generation_authorized": false,
+  "execution_after_single_input_gate": "author generates/reviews036->039->042->045->047->054 continuously; each actual full-body/finger/rod-contact check passes before proceeding, no individual main-review package every2frames",
+  "CAM20_technical_gate": "accepted/currentaxes preserved",
+  "first36_status": "main_review_passed_do_not_reopen",
+  "first_reference_image": "only complete new opaque target",
+  "old_whole_people": "local preservation/registration only,never submitted as competing reference",
+  "identity": "head and internal cloth/skin/hair crops only",
+  "story_sound_and_source_action_table_modified": false
+}
