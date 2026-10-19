@@ -1,0 +1,36 @@
+{
+  "status": "PASS_ZERO_CALL_INPUT_INTEGRITY_ONLY_NOT_ASTRA_VISUAL_APPROVAL",
+  "new_image_calls": 0,
+  "four_images_decoded_and_sha_verified": true,
+  "source112_unchanged": true,
+  "actual_1x_contact_crop_and_3x_exactly_match_target": true,
+  "mask_binary_and_full_visible_legs_shoes_black": true,
+  "projected_reference_lengths_preserved": true,
+  "RGBA_protection": {
+    "actual_grandma": {
+      "checked_pixels": 163843,
+      "changed_RGBA_pixels": 0
+    },
+    "support_and_shoes": {
+      "checked_pixels": 25554,
+      "changed_RGBA_pixels": 0
+    },
+    "old_and_new_unoccluded_full_lower": {
+      "checked_pixels": 36524,
+      "changed_RGBA_pixels": 0
+    },
+    "visible_original_C": {
+      "checked_pixels": 1139,
+      "changed_RGBA_pixels": 0
+    }
+  },
+  "visually_inspected": [
+    "complete target",
+    "normal contact",
+    "112-left120-right same-canvas comparison",
+    "actual complete mask",
+    "final112 identity patches",
+    "natural skirt-root boundary"
+  ],
+  "review_gate": "ASTRA_ACTUAL_FOUR_INPUTS_PENDING"
+}

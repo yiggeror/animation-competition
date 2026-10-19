@@ -1,0 +1,188 @@
+{
+  "status": "F120_SINGLE_PASSIVE_DECAY_ZERO_CALL_FOUR_INPUTS_ASTRA_GATE_PENDING",
+  "frame_label_only": 120,
+  "timing_window": "111-124 passive residual DECAY END, before125 flip",
+  "new_image_calls": 0,
+  "submitted": false,
+  "generation_authorized": false,
+  "later_states_prepared": false,
+  "frozen_exposure": false,
+  "source112_commit": "63812699879a3185cf0a591a3f2d5c3660490cd4",
+  "source112_file": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F112_passive_residual_input_001/generation_001/F112_uniform_registered_upper_fixed_full_lower_candidate.png",
+  "source112_sha256": "a5e3821aaa0e42b3db44086647c4c064aba019a6d74491fce735785521720b3a",
+  "source112_complete_upper_sha256": "ce61ff1e6752088e46bb07401dfb1820a2ccf1fac410b3182e902643dc49310a",
+  "target_is_construction_only_not_new_native_art": true,
+  "bone_reference": [
+    {
+      "side": "R",
+      "source_shoulder_elbow_wrist": [
+        [
+          542.0,
+          425.0
+        ],
+        [
+          493.0,
+          446.0
+        ],
+        [
+          437.0,
+          422.0
+        ]
+      ],
+      "target_shoulder_elbow_wrist": [
+        [
+          540.0,
+          426.0
+        ],
+        [
+          493.1925694987265,
+          451.5159646078382
+        ],
+        [
+          442.73677818387745,
+          417.36610190251537
+        ]
+      ],
+      "projected_upper_length_source_target": [
+        53.31041174104736,
+        53.310411741047346
+      ],
+      "projected_forearm_length_source_target": [
+        60.92618484691127,
+        60.92618484691127
+      ]
+    },
+    {
+      "side": "L",
+      "source_shoulder_elbow_wrist": [
+        [
+          676.0,
+          453.0
+        ],
+        [
+          645.0,
+          501.0
+        ],
+        [
+          499.0,
+          518.0
+        ]
+      ],
+      "target_shoulder_elbow_wrist": [
+        [
+          674.0,
+          455.0
+        ],
+        [
+          644.2375246378402,
+          503.776993145507
+        ],
+        [
+          497.8891278205505,
+          517.4571520995943
+        ]
+      ],
+      "projected_upper_length_source_target": [
+        57.14017850864661,
+        57.140178508646635
+      ],
+      "projected_forearm_length_source_target": [
+        146.98639392814562,
+        146.98639392814556
+      ]
+    }
+  ],
+  "projected_lengths_are_image_reference_not_3D_certification": true,
+  "both_complete_palms_and_two_shafts_same_rigid_map": {
+    "rotation_deg": 4.0,
+    "translation_xy": [
+      6.0,
+      -12.0
+    ],
+    "pivot": [
+      331.3996091978405,
+      421.9142076532207
+    ]
+  },
+  "source_two_axis_fits": [
+    [
+      -0.6037307720347017,
+      621.9903495662314
+    ],
+    [
+      0.8643793706293708,
+      135.45922202797198
+    ]
+  ],
+  "source_X": [
+    331.3996091978405,
+    421.9142076532207
+  ],
+  "target_X": [
+    337.3996091978405,
+    409.9142076532207
+  ],
+  "new_R_pin": [
+    384.7786083063542,
+    385.6475740040698
+  ],
+  "new_L_pin": [
+    428.4786656706059,
+    500.48428713285523
+  ],
+  "R_pin_X_axial_separation_px": 53.23193651546643,
+  "T_S_outside_R_clamp_and_X_foreground_topology_retained": true,
+  "head_uniform_scale": 1.0,
+  "head_rotation_deg": 1.0,
+  "head_translation_xy": [
+    -5.0,
+    3.0
+  ],
+  "fixed_complete_lower_file": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F120_passive_decay_input_001/fixed_complete_lower_skin_roots_legs_shoes_no_old_skirt_edge.png",
+  "fixed_complete_lower_sha256": "da1ef7ce8167179f7268edfe1bd70781551f937a18d33c4a12bc62b17ae8e7c4",
+  "original_C_rods_layer": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F120_passive_decay_input_001/fixed_original_C_rods_scene_layer.png",
+  "original_C_rods_sha256": "47c3ece2f53c7e8b1bea4e3248a65a2518855bc6546f525bf809db62f5ec454e",
+  "fixed_lower_RGBA_changes": 0,
+  "actual_support_foreground_RGBA_changes": 0,
+  "actual_grandma_foreground_RGBA_changes": 0,
+  "actual_visible_original_C_RGBA_changes": 0,
+  "complete_visible_legs_shoes_all_black": true,
+  "inputs": [
+    {
+      "order": 1,
+      "path": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F120_passive_decay_input_001/inputs/01_unique_complete_F120_target_REVIEW_ONLY.png",
+      "sha256": "be54515e428fb8cfe9e9e30bc6305db83a8ae5b0f1cefa3e1f8b841fc5d5bf00",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "order": 2,
+      "path": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F120_passive_decay_input_001/inputs/02_same_pose_dual_clamps_X_3x.png",
+      "sha256": "a8ca74274150939f38387871c63c2f0063560955582cdf40131b8a369dd76cbe",
+      "size": [
+        1800,
+        870
+      ]
+    },
+    {
+      "order": 3,
+      "path": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F120_passive_decay_input_001/inputs/03_112_identity_head_clothes_shoes_patches_only.png",
+      "sha256": "93fe8567e6c4de02de48503d7aa7989dfbc2904ecccbfe934cad26902a28a98f",
+      "size": [
+        1080,
+        640
+      ]
+    },
+    {
+      "order": 4,
+      "path": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F120_passive_decay_input_001/inputs/04_complete_upper_whole_skirt_white_full_legs_black_mask.png",
+      "sha256": "c6a5964e816fbb4b18c6e4348ef8f8bd749f8a4b307d4fcd2bc59a12c1fb7073",
+      "size": [
+        1672,
+        941
+      ]
+    }
+  ]
+}
