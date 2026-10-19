@@ -1,0 +1,25 @@
+{
+  "authority": "becf90507d242d4fd6bb67374bb099cf6455b85d",
+  "checks": {
+    "camera": true,
+    "exp": true,
+    "fog": true,
+    "pair_registration": true,
+    "lamp": true,
+    "room": true,
+    "sheet": true,
+    "moon": true,
+    "turtle_root_m": true,
+    "T_all_endpoints_fixed": true,
+    "upper_CN_endpoint_fixed_subpixel": true,
+    "same_crane_internal_joint_angles_facing_scale": true,
+    "both_crane_original_part_at_and_clamps_fixed": true
+  },
+  "image_calls": 0,
+  "formal_render_attempts": 2,
+  "delivered_final_formal_frames": 1,
+  "first_attempt_crop_diagnostic_preserved": "CAM20_first_card_crop_diagnostic.png",
+  "crop_correction": "isolated crane card transparent padding1800x1800/origin900,1000 ->2400x2400/origin1200,1300; same world projection and endpoints, shared code untouched",
+  "global_crane_assembly_rebinding": "rigid_lower_solution.json; only global rotation/root, upper CN fixed; all internal angles/facing/scale unchanged",
+  "final_sha256": "7c4a658ef2542c55894be5ab71f7a5b11f86d72fde3535319e863021a7d3207a"
+}
