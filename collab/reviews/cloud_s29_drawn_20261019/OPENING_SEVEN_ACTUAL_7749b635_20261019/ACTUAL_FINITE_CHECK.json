@@ -1,0 +1,26 @@
+{
+  "status": "PASS_EXECUTION_AND_RESOURCES_REVIEW_CANDIDATE_ONLY",
+  "unique_run": 1,
+  "actual_png_count": 7,
+  "all_seven_opened_with_view_image": true,
+  "all_archived_png_bytes_equal_original_outputs": true,
+  "all_pngs_decode_1920x1080": true,
+  "http_responses": 34,
+  "http_status_counts": {
+    "200": 34
+  },
+  "browser_errors": [],
+  "fixed_executor_candidate_sources_unchanged": true,
+  "launch_parameters_unchanged": true,
+  "visual_facts": [
+    "Phone and cable are visible in all seven stills.",
+    "Power strip lies outside the mat edge; lead runs toward the wall socket behind the TV cabinet.",
+    "S07 F039/F043/F053 are the same supine body composition with changing right arm gesture."
+  ],
+  "limits": [
+    "This is seven actual stills, not complete scene or motion acceptance.",
+    "Known S01 versus S07 F008 source head-scale conflict is documented in the fixed candidate README and not resolved by this run."
+  ],
+  "imagegen_calls": 0,
+  "full_scene_rerenders": 0
+}
