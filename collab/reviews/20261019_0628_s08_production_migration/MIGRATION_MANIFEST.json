@@ -1,0 +1,876 @@
+{
+  "entry": "js/anim/s08_drawn.js",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "frames": 144,
+  "fps": 24,
+  "exposures": 41,
+  "unique_character_images": 35,
+  "path_changes": [
+    {
+      "from": "'../20261018_1822_s08_lamp_mechanical_candidate/lamp_mechanical_candidate.js'",
+      "to": "'./s08_drawn_lamp.js'"
+    },
+    {
+      "from": "'./contract.js'",
+      "to": "'./s08_drawn_contract.js'"
+    },
+    {
+      "from": "'./layer_contract.js'",
+      "to": "'./s08_drawn_layers.js'"
+    },
+    {
+      "from": "'./frames/'",
+      "to": "'/assets/chars/g08/'"
+    }
+  ],
+  "unchanged_shared_imports": [
+    "/js/paint/paintshot.js",
+    "/js/code/s08.js"
+  ],
+  "lamp_source_blob": "9443a4f8a6faec95e36742a528499b9c810f8cba",
+  "checks": {
+    "passed": true,
+    "module_only_four_path_literals_changed": true,
+    "shared_imports_unchanged": true,
+    "contract_byte_exact": true,
+    "layer_contract_byte_exact": true,
+    "lamp_byte_exact": true,
+    "byte_exact_payload_files": 115,
+    "layer_blob_sha1_sha256_and_dimensions_verified": 112,
+    "production_image_urls_resolved_locally": 112,
+    "compiled_js_modules": 4,
+    "frames": 144,
+    "exposures": 41,
+    "unique_character_images": 35,
+    "matching_contract_subframe_samples": 576,
+    "compared_functions": [
+      "frameAt",
+      "poseAt",
+      "fireAt",
+      "mechanismAt"
+    ],
+    "all066_onward_contact_preserved": true,
+    "actual_canvas_rendered": false,
+    "cloud_equivalence_verified": false
+  },
+  "source_commit": "6ef3b0b03c1f800193df1018bd7f1af51a3bd6f0",
+  "actual_delivery_commit": "dd6e23bca9f06bf219d2aff81d5aeab44f03c4ab",
+  "files": [
+    {
+      "target_path": "js/anim/s08_drawn.js",
+      "sha256": "3d51ca82e1fdcadcf92e0b299ae15cbb6b31f3a6d714a743fa627ceacbbdffff",
+      "git_blob_sha1": "841d5bd801ab7746aa4782989dd72db3e7b915a5",
+      "bytes": 6942,
+      "mode": "only_four_path_literals_changed"
+    },
+    {
+      "target_path": "js/anim/s08_drawn_contract.js",
+      "sha256": "a8ffca12237cbe49d86e78ef6dfcff520c22291fe888720f97a244af4da85fab",
+      "git_blob_sha1": "e5e618152ba3bf4808dc9ddf7867428b6f006e29",
+      "bytes": 8135,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "js/anim/s08_drawn_layers.js",
+      "sha256": "82881539a92509feb1545bac2ff1fe011797ffce763f0c11da32a151095ff48e",
+      "git_blob_sha1": "40577b456ea7ca467445b42d132578f001582cbd",
+      "bytes": 25517,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "js/anim/s08_drawn_lamp.js",
+      "sha256": "171aaace1079af7215788f38ebc2f35e4c0af09d8fd5d722009094443ff90bf1",
+      "git_blob_sha1": "9443a4f8a6faec95e36742a528499b9c810f8cba",
+      "bytes": 4659,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F000_body_behind_original_pixels.png",
+      "sha256": "9d796b2e01c23875f6f1d664f32dae4a2ac1e7dfa246d445ba4041af43b87c82",
+      "git_blob_sha1": "2905cc9e85cc75b008a2a7063268e4f16ed0f44f",
+      "bytes": 596979,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F000_forearms_elbows_original_pixels.png",
+      "sha256": "eadeb9894a1c62fecae3fb0bc48240604a178283703d0d8ec8cbc4e5879684f9",
+      "git_blob_sha1": "167616a69daa16f69066ecac17a2b951a9564439",
+      "bytes": 581201,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F003_body_behind_original_pixels.png",
+      "sha256": "1d32a02c8d4de628752de6a4004fa6e6e28653774cbbcdba3b20e64ff77d99a0",
+      "git_blob_sha1": "7c6ec7599cd69da724b5623f5fc772222bca679b",
+      "bytes": 599061,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F003_forearms_elbows_original_pixels.png",
+      "sha256": "c644829f0e9328af56ec8877479409c80d4e246fa846dfcc905706e047a7f35c",
+      "git_blob_sha1": "255732aced5fa4e3700ce1998a8303147be6d65a",
+      "bytes": 582867,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F005_body_behind_original_pixels.png",
+      "sha256": "f61f53c9c8b1d2ebed85097117dc7ebe5d889a9ac608cab88d40bbb430763ce6",
+      "git_blob_sha1": "695ed071f59cd73b811845700ba653ef8c79ce63",
+      "bytes": 598143,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F005_forearms_elbows_original_pixels.png",
+      "sha256": "5fd88e4098a8f6836a4fcaa69d593fd3f512ff460e3a373637e4b3a7ac5f81d6",
+      "git_blob_sha1": "8924db8ce65a744b4af91a1b3862759a1247a58c",
+      "bytes": 582021,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F006_body_behind_original_pixels.png",
+      "sha256": "9551c4674b6176d2d4410f466c1e2d2d07bfdd5fbd0b8e292c737e5a3abfe229",
+      "git_blob_sha1": "f68595476b4832fbc5019a754538ab5f002affc3",
+      "bytes": 597621,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F006_forearms_elbows_original_pixels.png",
+      "sha256": "820114e9d70eb0202fe9dc5bd75eb3f3456d81dd356bbef9d3241dd66aeb78ee",
+      "git_blob_sha1": "64fddf09d5f6ff09346cdc1f2fae75a0250cdf1f",
+      "bytes": 581512,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F009_body_behind_original_pixels.png",
+      "sha256": "a7093f5eae4b25b1d392736f14bc5de1ac3d0be30a423ee1d161458fccf7232d",
+      "git_blob_sha1": "af9442d2dd796dec09c3fa936bde92a04c8fde25",
+      "bytes": 597829,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F009_forearms_elbows_original_pixels.png",
+      "sha256": "f086481c0aa8156ec141a67cdb42ce8d30799f8c2ffee236f93806a1e3790ef8",
+      "git_blob_sha1": "5c5d2d91f5e3ba8368375c164e11119ef3019f91",
+      "bytes": 581706,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F014_body_behind_original_pixels.png",
+      "sha256": "5ce2ba7468024557bc0c60a67736ce37c581627de4f86c752af620c3619b61e4",
+      "git_blob_sha1": "54e0a55f7791300f83625cdbf4d6f17f602fc967",
+      "bytes": 588117,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F014_forearms_elbows_original_pixels.png",
+      "sha256": "be40088b41d83b08cc33a88a67ce75c5dd2a1c0472bbf3900a69fbc70f45263b",
+      "git_blob_sha1": "2687881626fb32d1a62bad3a94fbd253e656ce35",
+      "bytes": 571434,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F017_body_behind_original_pixels.png",
+      "sha256": "6076b1df7002374a6d59a105928393f98f0bee053bffa94900f4210ffa2e776c",
+      "git_blob_sha1": "3fd4732aab0290bc9b4c28ddf21c613673a5edef",
+      "bytes": 569581,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F017_forearms_elbows_original_pixels.png",
+      "sha256": "591de43e7add7bfad54cbf6ea236c8983af22559437d060401228cb720b6aa43",
+      "git_blob_sha1": "6bfad4ec7a1a4a8632674047f94290db7e23b33e",
+      "bytes": 551577,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F017_table_box_original_pixels.png",
+      "sha256": "c90ced5ea42ecddc7c7fad3b5ef764e0a7c60eb2c69615f0bc6cf33598cc6a02",
+      "git_blob_sha1": "808176c08988507c28c29e32703991bd86ebec52",
+      "bytes": 547967,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F020_body_behind_original_pixels.png",
+      "sha256": "9e72e2e8832e7fa696e735a8807ed516d4222d8915b9eb44fd4023b64447c8e9",
+      "git_blob_sha1": "09321810c53a8ac3f032ff7507621ed011917d2e",
+      "bytes": 574673,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F020_forearms_elbows_original_pixels.png",
+      "sha256": "ceb38cf609d5db0f6d0506e363ba5dd9baaee0fc09cc33af68a0d32249c7cc44",
+      "git_blob_sha1": "0a70d60cb4a38604f745aee49414ae0a5f05dedb",
+      "bytes": 557343,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F020_table_box_original_pixels.png",
+      "sha256": "7ff0d1619f0ece6a7050eb6252a6185fe5e91b91d3eba3a8dfb24c737840675f",
+      "git_blob_sha1": "273a9019e8d0618148c987e57eba947be5a51de4",
+      "bytes": 553036,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F023_body_behind_original_pixels.png",
+      "sha256": "b87fea09726df5a444d999191ddb840aa0c1367e5c3cd384ea6caafe0abbdc7f",
+      "git_blob_sha1": "8452c1fcfb0e318a3e99b53dc66373be0e1ec77d",
+      "bytes": 577717,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F023_forearms_elbows_original_pixels.png",
+      "sha256": "94dd13fb03d5f92f9138ea3aa965db059e57144cf783adbd2235c0d2aa4c58f0",
+      "git_blob_sha1": "d11b8debc09e489fa5c080a8ef9885b1ed34df5d",
+      "bytes": 560600,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F023_table_box_original_pixels.png",
+      "sha256": "5b0bded939e80c90f4b58139d76bbdc2f10263b36db5a03335cdf8724a59f3b4",
+      "git_blob_sha1": "2767c432b0e08300b4e13dfa8c8bf8f2680e8c4f",
+      "bytes": 556050,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F025_body_behind_original_pixels.png",
+      "sha256": "4b96d7be5d75ecd7a12f294414441f424d815d0dff1a82e77b411c437af8dacd",
+      "git_blob_sha1": "332b8bbfd8869712b365a9a29197cab0edf6a381",
+      "bytes": 576696,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F025_forearms_elbows_original_pixels.png",
+      "sha256": "fc0fd2968018f828be47d2b31a89385ec26c9d6570ab9379185b631a10d6f7f5",
+      "git_blob_sha1": "877010d25137ec535fb37e7b004f6b6aef2bf0bc",
+      "bytes": 559255,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F025_table_box_original_pixels.png",
+      "sha256": "e4c4ddbccf7b52e9dfdbedefcee772d8f9355efd45f244e24464b3e221716b91",
+      "git_blob_sha1": "7b0bb511060ceed5a49082f7fb5edb5a4687d08a",
+      "bytes": 555062,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F027_body_behind_original_pixels.png",
+      "sha256": "d6ca9051f64d8df0864d29f30bde3d2588ecff48ae388d19194da74b0ecb1b86",
+      "git_blob_sha1": "35166d46dbe3a2fa717226abac3eff4760a9cdb2",
+      "bytes": 575570,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F027_forearms_elbows_original_pixels.png",
+      "sha256": "5d5751fe3ae4741589d9e3d7b0b5739b95defad2f8fc00ecc2ab58f36e11894d",
+      "git_blob_sha1": "43e1c01b128170794f0be12c27f87f78d9b69e93",
+      "bytes": 558433,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F027_table_box_original_pixels.png",
+      "sha256": "33803ac0893368d89393353b6bbae4220fdc6db6384fa4eb95ec72d96d82af0a",
+      "git_blob_sha1": "913c5603000181c7f360b0d9d756ed84d086709f",
+      "bytes": 554292,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F030_body_behind_original_pixels.png",
+      "sha256": "9d23df4f5f797bd4bf016c37381892d6d2f64c0f2d6f040f3dd28ce030fd838b",
+      "git_blob_sha1": "2041a039cb87803bd9da033b2e9e640562976e04",
+      "bytes": 574547,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F030_forearms_elbows_original_pixels.png",
+      "sha256": "09246c253a1a3d9c5b1c837680105d537b3bfa05a72c8f42c4bf4feea449cfb3",
+      "git_blob_sha1": "09704b4152233cfa0ce8a5f0226045377722fc94",
+      "bytes": 560889,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F030_table_box_original_pixels.png",
+      "sha256": "eeebb29732ce936ca1feb134967b1714782cbbcfe922e86b821a89efa37616f2",
+      "git_blob_sha1": "2aad719c951ba8879b7ad648cda1688423bf51d2",
+      "bytes": 556133,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F033_body_behind_original_pixels.png",
+      "sha256": "adc14536112cc5ef24316d94bc88f6f5bc08cb8ab8d9cc6ea14aae7d79bfe511",
+      "git_blob_sha1": "9f172af587ef083dd8e3fbbbe2087756a5719b93",
+      "bytes": 576928,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F033_forearms_elbows_original_pixels.png",
+      "sha256": "cc72ef2875b0eeb42b9a4fcfd767f2997da6e2b0cf6265d0961d7b895af2263e",
+      "git_blob_sha1": "c324d8d4427f60a60a1b4e389aad1457f72b9007",
+      "bytes": 561607,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F033_table_box_original_pixels.png",
+      "sha256": "52e15b0f4a7cf2d1e7472d0226c032514ecdf4cd4506fbf47401968caf223406",
+      "git_blob_sha1": "d6240d020d7e3fc8685f5aa1db9615a94c5e13bd",
+      "bytes": 557053,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F036_body_behind_original_pixels.png",
+      "sha256": "c0ba247300d2d16518b3a181445df481cc26232e95518eb7ff8592cf2baf8455",
+      "git_blob_sha1": "2fe3f5078bced945ccc049729751e6ac44b88acf",
+      "bytes": 589496,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F036_forearms_elbows_original_pixels.png",
+      "sha256": "412dd0035b51d1afa9d3e95a9745711791c5ace59a14cceadc5318eba62530ea",
+      "git_blob_sha1": "daf1ebd5cb74128ab315337084bdf8430a4c4ab4",
+      "bytes": 574386,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F036_table_box_original_pixels.png",
+      "sha256": "747315c0af533afcec1f895367fae5777c1031adcda67d251a294bc3858ed853",
+      "git_blob_sha1": "bbafe641499e79a34febfc2bc6bd41a87fe0bed3",
+      "bytes": 570397,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F038_body_behind_original_pixels.png",
+      "sha256": "485c34f193e64a05e042e6db29d5564ad6e7761f9d95c59485f52969dc8c6bd8",
+      "git_blob_sha1": "864353e56badb34905efb7cfc2eca6749fb7f953",
+      "bytes": 583784,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F038_forearms_elbows_original_pixels.png",
+      "sha256": "99791fe76c0e24591f9c50a4df66f250ceef7e24606da2fdc86697bb0594b53c",
+      "git_blob_sha1": "59aa6cf94861234443710910c56877c0954a79fd",
+      "bytes": 569700,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F038_table_box_original_pixels.png",
+      "sha256": "cb598111688149023412bc9421b09c399bceaf2382ea06f0d74f16d8081d33da",
+      "git_blob_sha1": "1bf3f041c77ac078da8bfe0f482243175c507d0b",
+      "bytes": 564730,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F041_body_behind_original_pixels.png",
+      "sha256": "73361112d01c3f0bfdc8653fba4a8cb218c72a202e422d703950a9393682bfc1",
+      "git_blob_sha1": "7ee1a16f8ca8cacfb9a31e8ef9bba326eb394f47",
+      "bytes": 581781,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F041_forearms_elbows_original_pixels.png",
+      "sha256": "1789e57401aef94e8a2bbb3639bcbd6317dea1802010323d1d530b43891823ed",
+      "git_blob_sha1": "31e4d3a34c37aa3f755194529a6dcc4f7ae409ff",
+      "bytes": 564644,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F041_table_box_original_pixels.png",
+      "sha256": "05e15174014eaa614567d9e5c66746f29356913ab1e9a2388b1e5a9a03de7f53",
+      "git_blob_sha1": "163446b9c7a05c64fd09a59a1b34d98e22637c9b",
+      "bytes": 559819,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F043_body_behind_original_pixels.png",
+      "sha256": "0e5cea836966035fd0eb90ec74658c2373744b94f3c11604c505d19b349a89f0",
+      "git_blob_sha1": "9078f21f3dfdf20465c295eaaa68e34cb74ed115",
+      "bytes": 582085,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F043_forearms_elbows_original_pixels.png",
+      "sha256": "ae1aa3e33eedc4a63133979d9b89ab3f9c0aff89005d5676e6d725e69ff9d92b",
+      "git_blob_sha1": "f271778cae05784570451b1ef5e0cd0e039ecd5e",
+      "bytes": 564920,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F043_table_box_original_pixels.png",
+      "sha256": "c928d28dd2fb04caa1a6ad1e362a06f69a7c4a38c3359a73def3256193cf1a28",
+      "git_blob_sha1": "5c67190ea02b018cde3de34fec375a60ba7986b4",
+      "bytes": 560088,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F046_body_behind_original_pixels.png",
+      "sha256": "81c054b8e846d168947914b01c6e50f7faee4415dc3d959a7a0c91d67cc53128",
+      "git_blob_sha1": "df09c1577f182201f3e26e5d07d68aeb97ac61c7",
+      "bytes": 555733,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F046_forearms_elbows_original_pixels.png",
+      "sha256": "c2bfe5faa0ffb431e451742b84481c469fc288f31ae0856429e6be6089400263",
+      "git_blob_sha1": "9d6ec9f5b36530972c2d26a5b74178f937ba796f",
+      "bytes": 538192,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F046_table_box_original_pixels.png",
+      "sha256": "c5f43dfae8b43b8436a2f67a5a013a77509ea049b1c798d501bdfbe8083bf984",
+      "git_blob_sha1": "e8063dc6eb08108a44a17bf2f1dd14ace3ce235a",
+      "bytes": 533984,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F049_body_behind_original_pixels.png",
+      "sha256": "3c0b077e660433faeac31011a767cfa3a1756a559fb285bd43205e325a707a99",
+      "git_blob_sha1": "587fe3daf33b40e2214049b89d2b5b32562aca69",
+      "bytes": 556418,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F049_forearms_elbows_original_pixels.png",
+      "sha256": "047e5506eede0cd7f7a9bfff6fef0a2e9e869e9b2d0aa252e514a6b42da6827f",
+      "git_blob_sha1": "104036c2a99af640fb4002a9fc5ce30a49439a9c",
+      "bytes": 539118,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F049_table_box_original_pixels.png",
+      "sha256": "82411d00da844aaac638ab1e79adb197741a2b06146b0a9caac3433333370e74",
+      "git_blob_sha1": "177b8de105b26c5eb297166184e335708d854bfa",
+      "bytes": 534638,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F058_body_behind_original_pixels.png",
+      "sha256": "2e96ec271d6b38cf3ec39552f119ee1d7b0d23b5aee5e094eaa53e17b041a606",
+      "git_blob_sha1": "bb25428b3aa0824b1c2ab6254ede66a5107349d6",
+      "bytes": 565015,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F058_forearms_elbows_original_pixels.png",
+      "sha256": "a9482b75e6d5f216697b35daa659460ed86e7cba6ddce241d50f6906833ce28f",
+      "git_blob_sha1": "852d9eb9aa75fdcfcaef324a4059d4ab84fbf8f1",
+      "bytes": 547976,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F058_table_box_original_pixels.png",
+      "sha256": "f070e35a5dd6f4d5beb5121c0eabf434a743187daeae9b92b39e892b4dd07c81",
+      "git_blob_sha1": "67fd4df53b2cebf258e9c16666c26fb1e7e2b685",
+      "bytes": 542944,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F061_body_behind_original_pixels.png",
+      "sha256": "c9a741d82b627110bf8a13a370261da53d7ac198f152be41346f469be1d752cc",
+      "git_blob_sha1": "c96f4ad4c3049e04de8fd75abb905a318ea182b7",
+      "bytes": 562536,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F061_forearms_elbows_original_pixels.png",
+      "sha256": "9df26e031c3c106288b4f9cad2d87ccee07785e9abdfe2c1f697cb0fb13a42ea",
+      "git_blob_sha1": "fe6249ef70310dfcb3dff92abf2d0246dcd2634a",
+      "bytes": 544977,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F061_table_box_original_pixels.png",
+      "sha256": "d9afc3aff75c84722c7c133d93c537d1f34fd70a17170cb5a1f46ab58933998e",
+      "git_blob_sha1": "8d00ca4941c0d792c7e68e891dc1690885bc6d54",
+      "bytes": 540265,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F064_body_behind_original_pixels.png",
+      "sha256": "92eae60926620cbe2dfea81e9120056f7ba098e50480b3c49c17989257887681",
+      "git_blob_sha1": "b46e73b35b6b117ec45deba42f3eeb48475a4413",
+      "bytes": 559655,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F064_forearms_elbows_original_pixels.png",
+      "sha256": "4e2c437510a4690f44e1be5fd773cc390ed14e495d2fce22d4c248bfceb09fbc",
+      "git_blob_sha1": "07a1c295c538573ded89fac6d88aad1cdfd7ea71",
+      "bytes": 542208,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F064_table_box_original_pixels.png",
+      "sha256": "d889171fac98f02b2ef6ca0ff55c7e12bdc50b6d9ef7826824c93eee8c6fc646",
+      "git_blob_sha1": "0e23b0008c34f0aebfb58f0c8e754a5b78ac7d6a",
+      "bytes": 537606,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F066_body_behind_original_pixels.png",
+      "sha256": "f44b6b93a947c1692913399927b7c4d2c68b3c6433be9b43a1093a39f1b68b6c",
+      "git_blob_sha1": "8646042ff1f784e6a7b4c4e5a206a663be36ce03",
+      "bytes": 555002,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F066_forearms_elbows_original_pixels.png",
+      "sha256": "bb8781593515c31d1c822eaafc17ead1cdc65c0593b3fdce49ef023e36193d81",
+      "git_blob_sha1": "9bc81ed37cd7e6f325b6e7dc2dbf2e573194c693",
+      "bytes": 537559,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F066_table_box_original_pixels.png",
+      "sha256": "2cb841491db625e7d634a9c03f38b9ee32df73555320f21bc6aecec1a5fa4289",
+      "git_blob_sha1": "b49c502a7313b76dcba21d8e0d9952f74af770eb",
+      "bytes": 533295,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F066_table_match_original_pixels.png",
+      "sha256": "6089d7dd8f36acc27588de609641f708e7a444814c84400c5825b386383ce10d",
+      "git_blob_sha1": "090cc3f9d25b009c74d7fd689f5a59bb858445be",
+      "bytes": 533572,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F069_body_behind_original_pixels.png",
+      "sha256": "dafc1b67fdc7d547aeed8bf405905509aca04fbd2efa682226654a692396b37e",
+      "git_blob_sha1": "22dfada053e8855f05e0b96d05dd0a8d0f09ae21",
+      "bytes": 555548,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F069_forearms_elbows_original_pixels.png",
+      "sha256": "d0c333275d5c6a15de35f67080da78a8bc5a8919bb09c168736677f5df71109a",
+      "git_blob_sha1": "b9622602634013e38525afc27bc92515663b2725",
+      "bytes": 538092,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F069_table_box_original_pixels.png",
+      "sha256": "61d9d2c69ae2b6ecfdbf33a3eae520f9ac6ea7e782217129be6f9f03d30769bc",
+      "git_blob_sha1": "27c4d36163926581e5d2d90b460272a651905e52",
+      "bytes": 533941,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F069_table_match_original_pixels.png",
+      "sha256": "bb0fe944c7f7ac070796c8c6f2c928fbce9fb6468203c1e0fefb89fdfc70530b",
+      "git_blob_sha1": "438a3396006163ac418b39041be844cc7eb0329d",
+      "bytes": 534222,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F072_body_behind_original_pixels.png",
+      "sha256": "1b3258e7b6270bc25fcc649f29c738ad9d292bc0af6695aad8b1d11aafdbbda6",
+      "git_blob_sha1": "3e02f6536c3c3556d5513c9084318d988ca5c9e6",
+      "bytes": 551273,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F072_forearms_elbows_original_pixels.png",
+      "sha256": "bfc5c19af82002af007053fb65f62cf3a34644b560f26f7783ecec1507a9b827",
+      "git_blob_sha1": "9dcb0f73700d1379c95f86b0bb49522e5ab9f188",
+      "bytes": 534008,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F072_table_box_original_pixels.png",
+      "sha256": "75c23007cab289c147238474b08fd6a0844300e6301cdfc8c6ae8c0bdd3e4c26",
+      "git_blob_sha1": "3ee51fcb058c9d42d38ef3926074031cdb1d7eaa",
+      "bytes": 529952,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F072_table_match_original_pixels.png",
+      "sha256": "3118871461aa3e473e0cd3c053a113efff0614fe787b66dda50c2e05c73800f7",
+      "git_blob_sha1": "501d230104499f39e43c1bab41e4efc1394c26db",
+      "bytes": 530164,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F078_body_behind_original_pixels.png",
+      "sha256": "4385f4fd65791a88aaf4c0b20f36bb3435c271497d1e9f2222a32215f4bc952d",
+      "git_blob_sha1": "994f0a1234d42f5be2ead73fc0233bed2bef0fea",
+      "bytes": 550729,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F078_forearms_elbows_original_pixels.png",
+      "sha256": "a480d798ac25c5d5584c7675345303afe81ea79b7dddbcef65dc14096454e64b",
+      "git_blob_sha1": "1b4cd74a6547570c25471a3d217999e787d734c6",
+      "bytes": 533244,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F078_table_box_original_pixels.png",
+      "sha256": "242711502bf1cb88b80ff61eb57d32310206435629b94ab27c62c6b3e1441fea",
+      "git_blob_sha1": "e518fd07766462fb60236515fa7fcfc6d5cd5738",
+      "bytes": 529459,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F078_table_match_original_pixels.png",
+      "sha256": "edd8415be93d3c82ff66ac16deff3bf430e911401fcd3e72324ff0655854370b",
+      "git_blob_sha1": "64d5cda06a6964fd2300615b0e25c97b7b333530",
+      "bytes": 529666,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F088_arms_original_pixels.png",
+      "sha256": "51a609e798af23bd3e4aab50ba6b38d3fcaf1375d3d58b8aef8bd39763fb5bc2",
+      "git_blob_sha1": "befbd95f5ae8891f36a2244693a0953af4508ab8",
+      "bytes": 85352,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F088_body_original_pixels.png",
+      "sha256": "169440f2f2e7015f85affdafa5cffbd8b597985f24e8979d836f96a2204e71cd",
+      "git_blob_sha1": "7a8e80daca3bbbc280fa3e0aef4ee2cc2cd950b6",
+      "bytes": 489927,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F088_table_box_original_pixels.png",
+      "sha256": "261f8ae2a8b265dc0e48142d8da622534b20c8fbbaa4c212f975bfc859cf3d0e",
+      "git_blob_sha1": "42ce44af8b759940fc67da5cd58f80f60d7b48b3",
+      "bytes": 8618,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F088_table_match_original_pixels.png",
+      "sha256": "52e7396025356bd01855b71982fac18a9719bb5ebc5011f00d82a318d05827c7",
+      "git_blob_sha1": "20a4dd8a2247cf000d2dfc2c9f998f5679f28c58",
+      "bytes": 10146,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F091_arms_original_pixels.png",
+      "sha256": "6678be3548c562e53959bed2295ccee64f6d84942d503919d3df087c54e1956c",
+      "git_blob_sha1": "2285b063ce673fe256b5bd910e4c903ce583fd94",
+      "bytes": 101677,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F091_body_original_pixels.png",
+      "sha256": "217f7fc0f7e5acfdcc040e16fefaf9011f95605c687c613f6c76ef1bfd866b99",
+      "git_blob_sha1": "04a204d07b7cec0e07724fdd7820968f5979e7fc",
+      "bytes": 482617,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F091_table_box_original_pixels.png",
+      "sha256": "f406b81a2b5aabd0232dde65d65ea224b0cad3815eca6be750d4ffad2e507098",
+      "git_blob_sha1": "b77fbff7b530364d6295c67fb39f908d1e75b6af",
+      "bytes": 10879,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F091_table_match_original_pixels.png",
+      "sha256": "52e7396025356bd01855b71982fac18a9719bb5ebc5011f00d82a318d05827c7",
+      "git_blob_sha1": "20a4dd8a2247cf000d2dfc2c9f998f5679f28c58",
+      "bytes": 10146,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F094_arms_original_pixels.png",
+      "sha256": "8134b1dfd1115690080f301cd627569fb3133d5b993c9f02ce19454be3e1a81e",
+      "git_blob_sha1": "f9a073aac3f78a9ab37f74fa6dcc906202d604b9",
+      "bytes": 109288,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F094_body_original_pixels.png",
+      "sha256": "824d15f6bcc2487e1c64997c7b9c0e440edc1f73cdc73e7627a3b8946694945e",
+      "git_blob_sha1": "b43da3750a816d9b9deaa2e9dc8379b9763e9794",
+      "bytes": 520138,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F094_table_box_original_pixels.png",
+      "sha256": "cf3e3aedca8b9b681ac9e1c6cd9e6bc80eba689168ace734840e86ae7a1f5f1f",
+      "git_blob_sha1": "a3bdfa113cb9a7371000d6f6ae2d0205abc998c3",
+      "bytes": 11567,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F094_table_match_original_pixels.png",
+      "sha256": "52e7396025356bd01855b71982fac18a9719bb5ebc5011f00d82a318d05827c7",
+      "git_blob_sha1": "20a4dd8a2247cf000d2dfc2c9f998f5679f28c58",
+      "bytes": 10146,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F096_arms_original_pixels.png",
+      "sha256": "628194baa23960f36900d6d3edd1de10bde5d411f68d116547a7c9401aad655f",
+      "git_blob_sha1": "26d2dae864c11a19c57fccb525b5a60ba9a1ebcf",
+      "bytes": 112935,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F096_body_original_pixels.png",
+      "sha256": "caae3be91ca0353416f1596983a65163c760f012aa67b5cb1acdd2928c34a502",
+      "git_blob_sha1": "d07cee9616584c0ae4333c15be2f8e8bfe3b60a3",
+      "bytes": 535590,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F096_table_box_original_pixels.png",
+      "sha256": "b9df00f6a5343805ea0aa796f21cec4313bdd92e9f7f76a42792cb462e7cfa21",
+      "git_blob_sha1": "d157703eba5e36fa0c57f192ed518b39a9da125a",
+      "bytes": 11422,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F096_table_match_original_pixels.png",
+      "sha256": "52e7396025356bd01855b71982fac18a9719bb5ebc5011f00d82a318d05827c7",
+      "git_blob_sha1": "20a4dd8a2247cf000d2dfc2c9f998f5679f28c58",
+      "bytes": 10146,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F106_arms_original_pixels.png",
+      "sha256": "628194baa23960f36900d6d3edd1de10bde5d411f68d116547a7c9401aad655f",
+      "git_blob_sha1": "26d2dae864c11a19c57fccb525b5a60ba9a1ebcf",
+      "bytes": 112935,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F106_body_original_pixels.png",
+      "sha256": "2857fbe325800cf29c61329a0286a161e4361b4e7ca8064504f68842ad889fd2",
+      "git_blob_sha1": "e2cd529439c326e7e2d36ec24dec0c37b3aabce2",
+      "bytes": 535845,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F106_table_box_original_pixels.png",
+      "sha256": "b9df00f6a5343805ea0aa796f21cec4313bdd92e9f7f76a42792cb462e7cfa21",
+      "git_blob_sha1": "d157703eba5e36fa0c57f192ed518b39a9da125a",
+      "bytes": 11422,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F106_table_match_original_pixels.png",
+      "sha256": "52e7396025356bd01855b71982fac18a9719bb5ebc5011f00d82a318d05827c7",
+      "git_blob_sha1": "20a4dd8a2247cf000d2dfc2c9f998f5679f28c58",
+      "bytes": 10146,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F114_arms_original_pixels.png",
+      "sha256": "5fd4e416d63b0b54d50172e227a19891cbc01d9f8ec4a41aab4cbc72785cf32a",
+      "git_blob_sha1": "0940cfdda9ed3d4c7e7d6493755bb47240180586",
+      "bytes": 111566,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F114_body_original_pixels.png",
+      "sha256": "f5b387746ea11e497e8012afff7bc52c98db16c866a1fb7bc73af210580c7fac",
+      "git_blob_sha1": "4b5898bceb06c16d6cbff6db4d88bb0b7aafab40",
+      "bytes": 522665,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F114_table_box_original_pixels.png",
+      "sha256": "bbc3b322b459b3d9fbb2d6dd6ed3a955ea2f18e59dc3a7cf17728850a7af3fa2",
+      "git_blob_sha1": "c0248acdbc3355e2dca7d2b4a232078d93943f4f",
+      "bytes": 11411,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F114_table_match_original_pixels.png",
+      "sha256": "52e7396025356bd01855b71982fac18a9719bb5ebc5011f00d82a318d05827c7",
+      "git_blob_sha1": "20a4dd8a2247cf000d2dfc2c9f998f5679f28c58",
+      "bytes": 10146,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F122_arms_original_pixels.png",
+      "sha256": "5fd4e416d63b0b54d50172e227a19891cbc01d9f8ec4a41aab4cbc72785cf32a",
+      "git_blob_sha1": "0940cfdda9ed3d4c7e7d6493755bb47240180586",
+      "bytes": 111566,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F122_body_original_pixels.png",
+      "sha256": "352c5218abeb2279a8dcaae85fd0660e71bc3620234adc8f413914e61dccbcba",
+      "git_blob_sha1": "1209969b1893ac813774cce68363096931867a7b",
+      "bytes": 522473,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F122_table_box_original_pixels.png",
+      "sha256": "bbc3b322b459b3d9fbb2d6dd6ed3a955ea2f18e59dc3a7cf17728850a7af3fa2",
+      "git_blob_sha1": "c0248acdbc3355e2dca7d2b4a232078d93943f4f",
+      "bytes": 11411,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F122_table_match_original_pixels.png",
+      "sha256": "52e7396025356bd01855b71982fac18a9719bb5ebc5011f00d82a318d05827c7",
+      "git_blob_sha1": "20a4dd8a2247cf000d2dfc2c9f998f5679f28c58",
+      "bytes": 10146,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F128_arms_original_pixels.png",
+      "sha256": "5fd4e416d63b0b54d50172e227a19891cbc01d9f8ec4a41aab4cbc72785cf32a",
+      "git_blob_sha1": "0940cfdda9ed3d4c7e7d6493755bb47240180586",
+      "bytes": 111566,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F128_body_original_pixels.png",
+      "sha256": "2494a0c4d88803321d46d730ee116b88ba82908cff0d1e1e70003ccb9c5d51f7",
+      "git_blob_sha1": "4a107bffe59ba34427f0b7b1b700f3b032ebebf0",
+      "bytes": 522327,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F128_table_box_original_pixels.png",
+      "sha256": "bbc3b322b459b3d9fbb2d6dd6ed3a955ea2f18e59dc3a7cf17728850a7af3fa2",
+      "git_blob_sha1": "c0248acdbc3355e2dca7d2b4a232078d93943f4f",
+      "bytes": 11411,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F128_table_match_original_pixels.png",
+      "sha256": "52e7396025356bd01855b71982fac18a9719bb5ebc5011f00d82a318d05827c7",
+      "git_blob_sha1": "20a4dd8a2247cf000d2dfc2c9f998f5679f28c58",
+      "bytes": 10146,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F136_arms_original_pixels.png",
+      "sha256": "5aa89fbf5dfff37ffc7b7f81aa2ccebd9d3b6a25869ffb735bcd2d352f42ab3e",
+      "git_blob_sha1": "e36545ad69bf574a761d9ecf8a76ea709fd92026",
+      "bytes": 112923,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F136_body_original_pixels.png",
+      "sha256": "909c8cf09f0e379bd4dc7b39e0a96a144d1d82d61a98b553e79e14b0812dcf48",
+      "git_blob_sha1": "e5be9c801dab08fbf73e53502dd75b98776d054f",
+      "bytes": 514606,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F136_table_box_original_pixels.png",
+      "sha256": "b9df00f6a5343805ea0aa796f21cec4313bdd92e9f7f76a42792cb462e7cfa21",
+      "git_blob_sha1": "d157703eba5e36fa0c57f192ed518b39a9da125a",
+      "bytes": 11422,
+      "mode": "byte_exact"
+    },
+    {
+      "target_path": "assets/chars/g08/F136_table_match_original_pixels.png",
+      "sha256": "52e7396025356bd01855b71982fac18a9719bb5ebc5011f00d82a318d05827c7",
+      "git_blob_sha1": "20a4dd8a2247cf000d2dfc2c9f998f5679f28c58",
+      "bytes": 10146,
+      "mode": "byte_exact"
+    }
+  ],
+  "status": "ACTUAL_CANDIDATE_VISUAL_PASS_PRODUCTION_EQUIVALENCE_PENDING"
+}
