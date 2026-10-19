@@ -1,0 +1,118 @@
+{
+  "commit": "03d5a24ec199ef520d2b704cae80510df4174588",
+  "videoSHA256": "eec1bd2410800599d6040d0fe821331181e1bcc43394f3d0fda1cc584da0d5b9",
+  "frame_rows": 192,
+  "decoded_frames": 192,
+  "stage_frames": 132,
+  "phone_frames": 60,
+  "source_pose_binding_all_frames": "PASS",
+  "float_and_state_restore_132": "PASS",
+  "depth_transition": [
+    {
+      "frame": 33,
+      "depth": 0,
+      "mask": 33
+    },
+    {
+      "frame": 34,
+      "depth": 0.24999999999999994,
+      "mask": 33
+    },
+    {
+      "frame": 35,
+      "depth": 0.7499999999999999,
+      "mask": 33
+    },
+    {
+      "frame": 36,
+      "depth": 1,
+      "mask": 36
+    },
+    {
+      "frame": 37,
+      "depth": 1,
+      "mask": 36
+    },
+    {
+      "frame": 38,
+      "depth": 1,
+      "mask": 36
+    },
+    {
+      "frame": 39,
+      "depth": 1,
+      "mask": 39
+    },
+    {
+      "frame": 40,
+      "depth": 1,
+      "mask": 39
+    },
+    {
+      "frame": 41,
+      "depth": 1,
+      "mask": 39
+    },
+    {
+      "frame": 42,
+      "depth": 1,
+      "mask": 42
+    },
+    {
+      "frame": 43,
+      "depth": 1,
+      "mask": 42
+    },
+    {
+      "frame": 44,
+      "depth": 1,
+      "mask": 42
+    },
+    {
+      "frame": 45,
+      "depth": 1,
+      "mask": 45
+    },
+    {
+      "frame": 46,
+      "depth": 0.75,
+      "mask": 45
+    },
+    {
+      "frame": 47,
+      "depth": 0.2500000000000001,
+      "mask": 45
+    },
+    {
+      "frame": 48,
+      "depth": 0,
+      "mask": null
+    }
+  ],
+  "visual_status": "PASS actual MP4 decoded all192 overview plus six detailed temporal groups and raw131/132 viewed",
+  "note": "Review sheets are decoded compressed MP4 pixels, not original PNG SHA source.",
+  "visual_groups": {
+    "000_033": "Same right-arm raising, forehead shielding, head-neck-chest avoidance and grandma shoulder motion read continuously; hands and feet remain supported.",
+    "033_048": "Every decoded frame inspected; no visible rod-through-arm or depth-layer flashing at enter/exit.",
+    "060_067": "Every decoded frame inspected; palm scale, elbow connection and repaired sleeve edge stay coherent; mild natural settle retained.",
+    "081_093": "Every decoded frame inspected; slit\u2192closed\u2192slit\u2192open, head/body stable.",
+    "120_191": "Stage persists to131, clean direct cut at132 with readable charging icon, phone push stays continuous.",
+    "whole_192": "No missing/black frames or unexpected scene switches; no renewed puppet depth striping."
+  },
+  "original_six_PNGs_match_2051e3fa": true,
+  "original_131_132_match_ledger": true,
+  "independent_ffprobe": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": "24/1",
+    "duration_s": 8,
+    "decoded_frames": 192
+  },
+  "production_migration_gate": "ALLOW path-only candidate plus all64 file/blob checks and original six actual PNG byte-equality gate; not yet production verified",
+  "limits": [
+    "Video has no audio; this does not pass final audio-sync/mix gate.",
+    "No claim of recovered full3D anatomy or continuous geometric collision proof.",
+    "Ground contact shadows remain faint but stable, as previously accepted."
+  ]
+}
