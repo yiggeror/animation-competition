@@ -1,0 +1,63 @@
+{
+  "fixed_commit": "65330a56639246c622ae3ad7881b9378fb9bd98f",
+  "actual_viewed": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "gray_contact"
+  ],
+  "full_prompt_read": true,
+  "sizes": {
+    "A_real_fixed_layers_plus_volume_NOT_ART_PREPARED.png": [
+      1024,
+      1536
+    ],
+    "B_APPROVED_BYTE_IDENTICAL_PREPARED.png": [
+      1024,
+      1536
+    ],
+    "C_same_A_volume_soft_anchors_NOT_ART_PREPARED.png": [
+      1024,
+      1536
+    ],
+    "D_APPROVED_BYTE_IDENTICAL_PREPARED.png": [
+      1024,
+      1536
+    ]
+  },
+  "hashes": {
+    "A_real_fixed_layers_plus_volume_NOT_ART_PREPARED.png": "b2a3756b099b9b7ba313d2f4c7254b78d902453b6cc88a09674d6e6043fe0bf9",
+    "B_APPROVED_BYTE_IDENTICAL_PREPARED.png": "a777ac00d9cfb24ee616d9427b47b339ebd4a146f12d6420c9c8d960aabd9a8a",
+    "C_same_A_volume_soft_anchors_NOT_ART_PREPARED.png": "09abcb4d5b9181a09dfb6e730f1b5396665317a828459b518ac05486c2e704b4",
+    "D_APPROVED_BYTE_IDENTICAL_PREPARED.png": "fab230dea13a6a1b6d2606aedf894600e5cd7d571bb39ac84aa9e42a6b07fb60"
+  },
+  "A_original_actual_RGBA_changed_pixels_at_any_original_positive_alpha": 0,
+  "B_byte_identical": true,
+  "D_byte_identical": true,
+  "added_technical_alpha128_in_pants_zone_y490plus_pixels": 190474,
+  "added_technical_alpha128_pants_zone_outside_B_white128": 30,
+  "scope": "PASS_ONE_F090_CALL02_INPUT_ONLY_NO_OUTPUT_OR_F095",
+  "visual_findings": [
+    "Complete new pelvis and both full leg volumes supplied directly in A and same-coordinate C",
+    "Fixed original near-right shoe at image-left and far-left landed shoe at image-right; no failed wide-stride silhouette competes",
+    "B complete white trouser field permits whole anatomy and continuous hems/ankle connections; actual source upper and shoes protected in reference",
+    "D four interior fabric/ink swatches only",
+    "Technical polygon outlines, circles, labels and small provisional hem seam must disappear in native output; they are not accepted final anatomy"
+  ],
+  "output_gate": "Known whole inverse135/256+[1080,250]; inspect complete waist-knee-ankle chains AND true shoe footprints AND blouse/waist scale before restoring protected originals. No pasted foot, narrow bridge, per-limb warp or automatic retry.",
+  "request_image_count": 4,
+  "transparent_background": true,
+  "prompt_sha256": "bb54614752ad555d637c6d772a2304e8e7432b1d18889ebea4630c9371ab2920",
+  "request_grid_edge_note": {
+    "outside_white128_pixels": 30,
+    "bbox_in_tool_grid": [
+      377,
+      598,
+      812,
+      1313
+    ],
+    "max_distance_tool_pixels_to_B_white128": 1.0,
+    "interpretation": "Forward-resampled guide edge pixels adjacent to white boundary; no existing actual RGBA changed. B is visual reference, not hard API mask. Native zero-coverage claim was author-verified, not independently repeated here."
+  }
+}
