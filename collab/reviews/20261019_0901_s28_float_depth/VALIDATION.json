@@ -1,0 +1,18 @@
+{
+  "root_cause": "8bit material ray-depth quantization reverses actual puppet-sheet ordering",
+  "GPU_upload": "existing GL.texture Float32Array path, RGBA32F NEAREST",
+  "world_depth_bias_m": 0,
+  "program_prefix": "s28_float_depth_20261019_v1__",
+  "hook_methods": [
+    "texture",
+    "program",
+    "draw"
+  ],
+  "GL_method_success_and_failure_restore_test": "PASS",
+  "DEBUG_owned_missing_undefined_fields_restore_test": "PASS",
+  "original_program_slots_unchanged_test": "PASS",
+  "source_images_and_geometry_unchanged": true,
+  "new_formal_render_status": "PENDING existing-cloud000/012/042",
+  "shared_S_GL_concurrent_use": "PROHIBITED",
+  "scope_limit": "Scoped program entries remain cached under unique names; does not claim allGPU state reset."
+}
