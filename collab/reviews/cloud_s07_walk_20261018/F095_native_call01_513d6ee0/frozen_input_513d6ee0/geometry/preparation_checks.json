@@ -1,0 +1,376 @@
+{
+  "status": "F095_COMPLETE_VOLUME_INPUT_PENDING_ROOT_ASTRA_NO_CALL",
+  "source_locked090_SHA256": "012e7bae3f7e39ca93467bf1d43ec003d3ed5a741816c67ee8fc67c5e1225156",
+  "source090_six_layers_RGBA_replay_changes": 0,
+  "frame": 95,
+  "inclusive_hold": [
+    95,
+    99
+  ],
+  "event_authority": "nearRIGHT collects and settles; both feet grounded, stop travelling; no new heelroll/lift instruction. FarLEFT previous front shoe remains planted while near collects.",
+  "body_world_delta": [
+    22.10598793040117,
+    -4.905763964740629
+  ],
+  "body_whole_native_translation": [
+    60.713453017205694,
+    -13.473538071427678
+  ],
+  "body_affine": {
+    "M": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "t": [
+      60.713453017205694,
+      -13.473538071427678
+    ],
+    "scale": 1
+  },
+  "whole_arm_proposals": {
+    "near": {
+      "rotation_degrees_PROPOSAL": -12.0,
+      "M": [
+        [
+          0.9781476007338057,
+          0.20791169081775934
+        ],
+        [
+          -0.20791169081775934,
+          0.9781476007338057
+        ]
+      ],
+      "t": [
+        10.276945385472118,
+        271.61057049899154
+      ],
+      "scale": 1,
+      "source_actual_sleeve_root": [
+        1330.9788007071977,
+        382.47771198845487
+      ],
+      "target_actual_sleeve_root": [
+        1391.6922537244034,
+        369.0041739170272
+      ],
+      "same_complete_arm_fingers_jade_unsplit": true,
+      "new095_arm_art_not_frozen": true
+    },
+    "far": {
+      "rotation_degrees_PROPOSAL": 10.0,
+      "M": [
+        [
+          0.984807753012208,
+          -0.17364817766693033
+        ],
+        [
+          0.17364817766693033,
+          0.984807753012208
+        ]
+      ],
+      "t": [
+        149.67710849259424,
+        -269.37734922305015
+      ],
+      "scale": 1,
+      "source_actual_sleeve_root": [
+        1506.9788007071975,
+        380.47771198845487
+      ],
+      "target_actual_sleeve_root": [
+        1567.6922537244031,
+        367.0041739170272
+      ],
+      "same_complete_arm_fingers_jade_unsplit": true,
+      "new095_arm_art_not_frozen": true
+    }
+  },
+  "source_sleeve_roots090": {
+    "near": [
+      1330.9788007071977,
+      382.47771198845487
+    ],
+    "far": [
+      1506.9788007071975,
+      380.47771198845487
+    ]
+  },
+  "target_sleeve_roots095": {
+    "near": [
+      1391.6922537244034,
+      369.0041739170272
+    ],
+    "far": [
+      1567.6922537244031,
+      367.0041739170272
+    ]
+  },
+  "far_support_whole_file_byte_identical": true,
+  "far_support_SHA256": "64637d1d886e25fdcf3c888b533c1a8164844fe429a87295cfb9194dc585503c",
+  "near_whole_foot_affine": {
+    "M": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "t": [
+      162.04178430265387,
+      0.0
+    ],
+    "world_delta": [
+      59,
+      0
+    ],
+    "scale": 1,
+    "no_roll_no_Y_lift_no_individual_foot_edits": true,
+    "one_whole_layer_AA_resample": true
+  },
+  "feet": {
+    "near_collected": {
+      "sole_alpha128_native": 1022,
+      "sole_local": 772,
+      "xspan_native_alpha128": [
+        1361,
+        1536
+      ]
+    },
+    "far_support_FIXED": {
+      "sole_alpha128_native": 1022,
+      "sole_local": 772,
+      "xspan_native_alpha128": [
+        1385,
+        1555
+      ]
+    }
+  },
+  "actual_ankle_proxy_near": [
+    1407.8686125468735,
+    957.8118142506097
+  ],
+  "actual_ankle_proxy_far": [
+    1451.812147273017,
+    953.9968292356247
+  ],
+  "softH_near": [
+    1469.6922537244031,
+    612.0131793384701
+  ],
+  "softH_far": [
+    1450.4669572817154,
+    614.7596502588541
+  ],
+  "softK_near": [
+    1448.6243446977207,
+    786.6724414407996
+  ],
+  "softK_far": [
+    1457.139505106212,
+    784.3544479078013
+  ],
+  "soft_pose_limit": "Hip follows approved090 same-source hidden proxy/bodybeat. NewK derived near halfway plus10/6px forward-normal only to propose broad stopping volume, not measured anatomy or fixed bone lengths. No absolute legacy hip/ankle/wrist imported.",
+  "A_original_actual_material_RGBA_changes": 0,
+  "A_old090_trouser_pixels_prompted": 0,
+  "B_depends_on_old090_pants_shape": false,
+  "B_white_pixels": 146899,
+  "guard_intersections": {
+    "body": 0,
+    "complete_visible_arms": 0,
+    "near_landed_foot": 0,
+    "far_visible_support": 0
+  },
+  "guard_alpha0_pixels": 0,
+  "far_hidden_foot_alpha_used_as_guard": false,
+  "far_visible_material_released_for_near_new_shin": 417,
+  "continuous_white_probes": {
+    "nearH": {
+      "native": [
+        1470,
+        612
+      ],
+      "white": true,
+      "component": 3
+    },
+    "farH": {
+      "native": [
+        1450,
+        615
+      ],
+      "white": true,
+      "component": 3
+    },
+    "nearK": {
+      "native": [
+        1449,
+        787
+      ],
+      "white": true,
+      "component": 3
+    },
+    "farK": {
+      "native": [
+        1457,
+        784
+      ],
+      "white": true,
+      "component": 3
+    },
+    "near_ankle_approach": {
+      "native": [
+        1408,
+        933
+      ],
+      "white": true,
+      "component": 3
+    },
+    "far_ankle_approach": {
+      "native": [
+        1452,
+        929
+      ],
+      "white": true,
+      "component": 3
+    }
+  },
+  "crop_native": [
+    1120,
+    250,
+    1660,
+    1060
+  ],
+  "native_size": [
+    540,
+    810
+  ],
+  "tool_size": [
+    1024,
+    1536
+  ],
+  "whole_forward": 1.8962962962962964,
+  "unique_inverse": 0.52734375,
+  "mapping": "native=tool*135/256+[1120,250] for whole canvas; no partfit/bodyfit/legwarp.",
+  "bounds": {
+    "actual_arms_feet": {
+      "native_halfopen": [
+        1360,
+        351,
+        1577,
+        1024
+      ],
+      "crop_margins_L_T_R_B": [
+        240,
+        101,
+        83,
+        36
+      ]
+    },
+    "white": {
+      "native_halfopen": [
+        1310,
+        348,
+        1640,
+        1012
+      ],
+      "crop_margins_L_T_R_B": [
+        190,
+        98,
+        20,
+        48
+      ]
+    },
+    "new_technical_volume": {
+      "native_halfopen": [
+        1374,
+        535,
+        1577,
+        965
+      ],
+      "crop_margins_L_T_R_B": [
+        254,
+        285,
+        83,
+        95
+      ]
+    }
+  },
+  "active_arms_feet_outside_crop": 0,
+  "volume_outside_crop": 0,
+  "technical_volume_uncovered_outside_white": 0,
+  "head_outside_crop_intentionally_body_upper_cut": true,
+  "D_byte_identical_native_and_tool": [
+    true,
+    true
+  ],
+  "source_and_layer_SHA256": [
+    {
+      "path": "layers/F095_far_shoe_ankle_SUPPORT_FIXED.png",
+      "sha256": "64637d1d886e25fdcf3c888b533c1a8164844fe429a87295cfb9194dc585503c"
+    },
+    {
+      "path": "layers/F095_far_complete_arm_jade_hand.png",
+      "sha256": "47b3cd0d915c0f5fdb89fdccebf456be5d1c6fe2a2e0b5dd446798f3a9005423"
+    },
+    {
+      "path": "layers/F095_body_head_blouse.png",
+      "sha256": "cd7d591556c4b2ed0442cda22797f00d5f4d104062ac651f629ec4fa5f8a2bec"
+    },
+    {
+      "path": "layers/F095_near_complete_arm.png",
+      "sha256": "2db45fac5edb43f0680beeb3b9e8ba56a2663817d49a414afbae134f9ecaba32"
+    },
+    {
+      "path": "layers/F095_near_shoe_ankle_COLLECTED_LANDED.png",
+      "sha256": "60805bc58c5035c804025d84a00f122e434fb217e68478c86d671a5ab6a180a3"
+    }
+  ],
+  "inputs": [
+    {
+      "letter": "A",
+      "path": "inputs_1024x1536/A_F095_PREPARED_NOT_CALLED.png",
+      "sha256": "fdfc2105cd67d14a97a303e87054e1b2bf8cec15089ee817ab1a956a9968aa60",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "letter": "B",
+      "path": "inputs_1024x1536/B_F095_PREPARED_NOT_CALLED.png",
+      "sha256": "949b1bf0aacf446f1a4cd3313e557a0787b87f066ada95b085481e328c8b3355",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "letter": "C",
+      "path": "inputs_1024x1536/C_F095_PREPARED_NOT_CALLED.png",
+      "sha256": "df04ad95ff7ae75d0bbab7e9aa028b22a154f8493cf7a4a93f9194d9f8412cc7",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "letter": "D",
+      "path": "inputs_1024x1536/D_F095_PREPARED_NOT_CALLED.png",
+      "sha256": "fab230dea13a6a1b6d2606aedf894600e5cd7d571bb39ac84aa9e42a6b07fb60",
+      "size": [
+        1024,
+        1536
+      ]
+    }
+  ],
+  "new_image_calls": 0,
+  "other_states_unopened": true
+}

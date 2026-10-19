@@ -1,0 +1,261 @@
+{
+  "status": "INPUT_PREPARATION_COMPLETE_PENDING_ASTRA_FREEZE_NO_CALL",
+  "new_image_calls": 0,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "ef8eeee6df25addaf34730cecaea9fbdabc4b127e576ff767932c716cdaf59a3",
+      "bytes": 3983
+    },
+    {
+      "path": "geometry/preparation_checks.json",
+      "sha256": "ff6dd799f949fb34489c87b2c81c736c0f64e7a3b865a3c45af44f5b570fc04c",
+      "bytes": 8203
+    },
+    {
+      "path": "inputs_1024x1536/A_F095_PREPARED_NOT_CALLED.png",
+      "sha256": "fdfc2105cd67d14a97a303e87054e1b2bf8cec15089ee817ab1a956a9968aa60",
+      "bytes": 637842
+    },
+    {
+      "path": "inputs_1024x1536/B_F095_PREPARED_NOT_CALLED.png",
+      "sha256": "949b1bf0aacf446f1a4cd3313e557a0787b87f066ada95b085481e328c8b3355",
+      "bytes": 5453
+    },
+    {
+      "path": "inputs_1024x1536/C_F095_PREPARED_NOT_CALLED.png",
+      "sha256": "df04ad95ff7ae75d0bbab7e9aa028b22a154f8493cf7a4a93f9194d9f8412cc7",
+      "bytes": 644636
+    },
+    {
+      "path": "inputs_1024x1536/D_F095_PREPARED_NOT_CALLED.png",
+      "sha256": "fab230dea13a6a1b6d2606aedf894600e5cd7d571bb39ac84aa9e42a6b07fb60",
+      "bytes": 202141
+    },
+    {
+      "path": "layers/F095_body_head_blouse.png",
+      "sha256": "cd7d591556c4b2ed0442cda22797f00d5f4d104062ac651f629ec4fa5f8a2bec",
+      "bytes": 245260
+    },
+    {
+      "path": "layers/F095_far_complete_arm_jade_hand.png",
+      "sha256": "47b3cd0d915c0f5fdb89fdccebf456be5d1c6fe2a2e0b5dd446798f3a9005423",
+      "bytes": 37156
+    },
+    {
+      "path": "layers/F095_far_shoe_ankle_SUPPORT_FIXED.png",
+      "sha256": "64637d1d886e25fdcf3c888b533c1a8164844fe429a87295cfb9194dc585503c",
+      "bytes": 31441
+    },
+    {
+      "path": "layers/F095_near_complete_arm.png",
+      "sha256": "2db45fac5edb43f0680beeb3b9e8ba56a2663817d49a414afbae134f9ecaba32",
+      "bytes": 43927
+    },
+    {
+      "path": "layers/F095_near_shoe_ankle_COLLECTED_LANDED.png",
+      "sha256": "60805bc58c5035c804025d84a00f122e434fb217e68478c86d671a5ab6a180a3",
+      "bytes": 31451
+    },
+    {
+      "path": "masks/HARD_actual_body_except_sleeves.png",
+      "sha256": "ddd8ff85a0d7dcd487459181e767e1c521c7eb38376713ff21755b54595ce9f9",
+      "bytes": 5936
+    },
+    {
+      "path": "masks/HARD_actual_complete_visible_arms_except_sleeves.png",
+      "sha256": "97de9e72bec7b522fb243b5d6dc9fdae2ef280846a8bfc153482b00ee9b2327b",
+      "bytes": 3370
+    },
+    {
+      "path": "masks/HARD_actual_near_landed_visible_whole_foot.png",
+      "sha256": "10f40dda292a47aef1c2f6f00e654df59c24a220786a10a803cfb880ac9f35e7",
+      "bytes": 2409
+    },
+    {
+      "path": "masks/HARD_visible_far_support_material_NOT_hidden_alpha.png",
+      "sha256": "85420ffc299bed6ae6303f41dec66fc96314a95f77085579b473b01ad70b527d",
+      "bytes": 2187
+    },
+    {
+      "path": "masks/TECHNICAL_NEW_complete_volume_NOT_ART.png",
+      "sha256": "6305ee8791fcef21a51d505eaeddaac2fc4ee67510c78dffbc6e19b65f578113",
+      "bytes": 3345
+    },
+    {
+      "path": "masks/WHITE_full_neutral_pants_and_sleeve_seams.png",
+      "sha256": "dfc5f60e44164054ac2c45a1ad0f1b94219b771ee7fe18d390377b4bd4e0bbef",
+      "bytes": 4405
+    },
+    {
+      "path": "masks/far_complete_support_LAYER_not_guard.png",
+      "sha256": "484043693414a85dfa35d37b98acedacf50967e3afc29d560551593b267c6bf4",
+      "bytes": 2519
+    },
+    {
+      "path": "masks/future_near_shin_may_cover_back_far_shoe.png",
+      "sha256": "debd81ae91d93d998c1317ead3ccb3fee970aa439f78925c1ca181920c32df54",
+      "bytes": 2061
+    },
+    {
+      "path": "masks/small_sleeve_connection_WHITE_domains.png",
+      "sha256": "d117fc979264f2cbf85824d3d4d27d10fe6a64b70d5184164c5daf2102653bac",
+      "bytes": 2386
+    },
+    {
+      "path": "prepare.py",
+      "sha256": "642c2f5b676cc416e3ae66f6b1981d6b2483c6c74d6b6666358e00dcd7d15a63",
+      "bytes": 18259
+    },
+    {
+      "path": "qa/61sol_actual_input_review.json",
+      "sha256": "af413e21f370ee5b5c3f67833f666f2a23bd02afcc69c780487480aadb514847",
+      "bytes": 5821
+    },
+    {
+      "path": "qa/F090_mother_six_layer_exact_replay_NOT_REQUEST.png",
+      "sha256": "012e7bae3f7e39ca93467bf1d43ec003d3ed5a741816c67ee8fc67c5e1225156",
+      "bytes": 400691
+    },
+    {
+      "path": "qa/F095_actual_whole_feet_support_and_occlusion_dark.png",
+      "sha256": "3323ef11f0ab5a3db6d3c72b3b08c238753d04d17d16d51d05516e91831ce6e0",
+      "bytes": 162390
+    },
+    {
+      "path": "qa/F095_actual_whole_feet_support_and_occlusion_gray.png",
+      "sha256": "66580cf725e7018f15b306055c16c4f455f0e66c971f0c9001f0d54f137a2543",
+      "bytes": 171894
+    },
+    {
+      "path": "qa/F095_four_inputs_dark.png",
+      "sha256": "7fd2d0c5f72db0608bcf988ed81061789419bd27d0a787b9a0a4d7208ce5de0d",
+      "bytes": 320816
+    },
+    {
+      "path": "qa/F095_four_inputs_gray.png",
+      "sha256": "21158af0ebea15793031d1f00a0d883ee741557895d0839f98fd16df1978705f",
+      "bytes": 313464
+    },
+    {
+      "path": "qa/F095_real_material_and_white_overlay_dark.png",
+      "sha256": "f9a4c851328238f1a33b5e5a2fce9ff10f97a36f5cdbbc3156b452c775a08cb8",
+      "bytes": 177164
+    },
+    {
+      "path": "qa/F095_real_material_and_white_overlay_gray.png",
+      "sha256": "7c4be0fff6711ac7c7984289f92c24901cd5e2a8717edee3f1a4179b75a22896",
+      "bytes": 182381
+    },
+    {
+      "path": "qa/isolated_replay_checks.json",
+      "sha256": "b4532ea870aa52d24f9ba5cc624cacb2bcb1afc742ac71fa117449a1cb5b6575",
+      "bytes": 2772
+    },
+    {
+      "path": "qa/root_actual_four_input_review.json",
+      "sha256": "3343a617ec42f80f736aca29d0cc0ea5a96a9069173d31afddb446d2e3aac6cc",
+      "bytes": 1812
+    },
+    {
+      "path": "reference_native/A_real_layers_full_NEW_volume_NOT_ART_540x810.png",
+      "sha256": "0bd8408729da556a5e156ea95be00e953edbbddfaa4571cefb0a53a4c69fde04",
+      "bytes": 189164
+    },
+    {
+      "path": "reference_native/B_neutral_complete_pants_WHITE_REFERENCE_540x810.png",
+      "sha256": "793d271f07937652aebcb1f2c0295417116ceb05925f6250aac334bc208c9bfe",
+      "bytes": 2974
+    },
+    {
+      "path": "reference_native/C_same_A_soft_chains_actual_anchors_NOT_ART_540x810.png",
+      "sha256": "7367ba61d895d00cec51dc1929537bb9655435d1b2415f5998dd4aa8b3bd7e91",
+      "bytes": 184284
+    },
+    {
+      "path": "reference_native/D_locked057_062_fabric_ONLY_540x810.png",
+      "sha256": "88570d50a627bdf4153fcacffd235d57c42f66b67b2746cd5afe88e757e0c8d0",
+      "bytes": 37576
+    },
+    {
+      "path": "requests/arguments_PREPARED_NOT_CALLED.json",
+      "sha256": "d13c841252c4ae355a400a3153d4fb16e89f3065c241f4c6623de9c4e3e04983",
+      "bytes": 2761
+    },
+    {
+      "path": "requests/prompt_DRAFT_NOT_FROZEN_NOT_CALLED.txt",
+      "sha256": "c4bcb0a11c6ab42a266f640c0569282a473c7e030391c047a3f268beb7e4ca14",
+      "bytes": 2042
+    },
+    {
+      "path": "sources/D057_062_actual_fabric_NATIVE_APPROVED.png",
+      "sha256": "88570d50a627bdf4153fcacffd235d57c42f66b67b2746cd5afe88e757e0c8d0",
+      "bytes": 37576
+    },
+    {
+      "path": "sources/D057_062_actual_fabric_TOOL_APPROVED.png",
+      "sha256": "fab230dea13a6a1b6d2606aedf894600e5cd7d571bb39ac84aa9e42a6b07fb60",
+      "bytes": 202141
+    },
+    {
+      "path": "sources/F090_LOCKED_012e_MOTHER_ARCHIVE_NOT_REQUEST.png",
+      "sha256": "012e7bae3f7e39ca93467bf1d43ec003d3ed5a741816c67ee8fc67c5e1225156",
+      "bytes": 400691
+    },
+    {
+      "path": "sources/F090_actual_complete_trousers_REPLAY_ONLY_NOT_REQUEST.png",
+      "sha256": "6313f974815dcf285cf6ebb0923f3be14575a7200cad699a4fffe2be5b39b795",
+      "bytes": 102425
+    },
+    {
+      "path": "sources/F090_approved_actual_target_metadata.json",
+      "sha256": "29e1aa3b43f408cb8c1d4bd499cf4f0338a60a7872dedbb44218c09cad5d8acb",
+      "bytes": 14269
+    },
+    {
+      "path": "sources/SOURCE_F090_body_head_blouse.png",
+      "sha256": "2dcf44d849e30e552e8e6648673b7a3a6d32be7a07e247cdc8acc511c9cebdfc",
+      "bytes": 241930
+    },
+    {
+      "path": "sources/SOURCE_F090_far_complete_arm_jade_hand.png",
+      "sha256": "889b1dc7b3e259e6b493fdbb0d0cba7c0175c379e302fad09e5f624f4353ec21",
+      "bytes": 37046
+    },
+    {
+      "path": "sources/SOURCE_F090_far_shoe_ankle_LANDED.png",
+      "sha256": "64637d1d886e25fdcf3c888b533c1a8164844fe429a87295cfb9194dc585503c",
+      "bytes": 31441
+    },
+    {
+      "path": "sources/SOURCE_F090_near_complete_arm.png",
+      "sha256": "669c4681f9dd78cb3990917f427c5ea40510cd69f14822f9161516c09aeec67c",
+      "bytes": 43557
+    },
+    {
+      "path": "sources/SOURCE_F090_near_shoe_ankle_SUPPORT_FIXED.png",
+      "sha256": "57518102bfef2d81fd98017bd445e8ae7918bdb1dd60093657f82fc576a6cc7c",
+      "bytes": 30986
+    },
+    {
+      "path": "sources/events090_095_ONLY.json",
+      "sha256": "fa5852c586a4ce529db0ae7d7ab89c6ee657d7927cb644ea3c5a7a53e6ed8f90",
+      "bytes": 5576
+    },
+    {
+      "path": "sources/shared_plan_and_authority_index.json",
+      "sha256": "ee0a0ce325a04f160a9b8208b39649f7bb822a737e0607882a47c48ea10560e0",
+      "bytes": 1708
+    },
+    {
+      "path": "sources/snapshot_manifest.json",
+      "sha256": "8839bb3777fe5f60a9bd0200525fa9cd72b189f6adff3b985615ecf385884d59",
+      "bytes": 3576
+    },
+    {
+      "path": "verify_gate.py",
+      "sha256": "09046eb20da51dd938c25851be4ffa89ef1b9a2faafe363c94bbc582c3aa9a83",
+      "bytes": 4024
+    }
+  ]
+}
