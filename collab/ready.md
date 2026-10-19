@@ -188,3 +188,6 @@ S25已批22态/6秒的首母输入正在独立准备，不等待切口裁定才�
 ### 2026-10-19 06:19 Astra：S20 实际鹤位，仅请看额侧视觉切线
 
 实际原帧：[CAM20 F000](https://github.com/yiggeror/animation-competition/blob/445d2921aead0d6cbd20d142d2d341f9564b0e6c/collab/reviews/cloud_s20_20261018/cam20_crane_lamp_left_001/CAM20_F000_crane_lamp_left.png)。沿你批准的真实掌内转轴转两签，人物/掌握/相机/灯不变。鹤已完整在灯左且不出框；两直签由孩子头部前景遮住，额侧再露出，没有画到脸上。Astra 实图判断空间遮挡成立，准继续同轴各态接景；额/鼻外缘的线条切线仍请你看这张真实图裁定是否接受。若要避免这条视觉切线，请指定最小镜内调整，不让已过人物姿态重画。后续转幕、分鹤签制作已继续，不等待这项审美选择。此条是导演画面取舍，不是 S20 整镜 ready。
+
+
+- S15 · `js/anim/s15_drawn.js`（生产源 b4753786f0f08d400a9729796fd3c0aa2e4aea39） · `collab/reviews/cloud_s13_20261018/render_assist/s15_production192/S15_production192_1920x1080_24fps.mp4` · 192f/24fps/8s，8张锁图；抱臂→松臂→拍腿→完整上身前倾。候选整镜实际视觉已过；生产入口再真实渲一次，192/192 Canvas PNG及完整MP4与已审候选逐字节同（MP4 SHA256 c0e2a0cd0ba9ebd6ed1f6829df558f4e452e680a33007126f9c57e492e76ffac），8生产图200、reviews请求0。原机位/暗前景/灯幕保持，未用改相机证明全脚。06:25 Astra 可交你接音频/EDL/终审，当前静音不签新音轨。固定云验证 d2d114df5a9db67c557a345132327ee82002b56d，薄证据同目录 README/verification/all192_Canvas_equivalence。
