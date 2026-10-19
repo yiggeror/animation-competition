@@ -1,0 +1,3 @@
+# Sole authorized F086 raw — joint registration and one actual Canvas pending
+
+Untouched sole raw ae2a835773684b21ff6b64ff4ce40b285338cc9a2c0544916670f2b941ec8bae preserved. Exact reviewed full prompt plus only authorized joint-registration sentence, actual2input PNGs/SHA and real execution request archived. Original39e6e707 unauthorized input-gate files unchanged. Actual raw/reference full-body coordinate crops opened: complete head/shoulders/waist/both grips/both round knees must be fitted and checked together by one global similarity; new shins/shoes not adopted. No pose qualification or automatic second draw/whole-pants rescue. Current phase imagegen1, actual086Canvas0,090calls0.
