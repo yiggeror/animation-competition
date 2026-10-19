@@ -1,0 +1,1 @@
+These two source-level arrays reconstruct the original raw RGBA exactly, with mutually exclusive alpha. Raw context is NOT adopted. Production candidate uses ONLY the single-similarity actual index/root, with all protected022 pixels restored. The original raw PNG, metadata and bytes remain unchanged in originals/.

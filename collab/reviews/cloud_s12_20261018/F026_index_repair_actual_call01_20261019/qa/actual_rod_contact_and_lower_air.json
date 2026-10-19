@@ -1,0 +1,52 @@
+{
+  "source": "Actual Chromium cached FG index and actual frozen7px prop raster, not native/PIL reference preview. Pixel-centre distances include full index ink and AA at stated thresholds.",
+  "actual_prop_SHA256": "8aac66e182d3d6109b61a324ed867e4a3f8934e385ab60ac2697dfd8683c1036",
+  "actual_FG_index_SHA256": "e0a328a06a09043fea7b04253ef1668a9ceaa8055997df7553d0eeeb40d9e265",
+  "measurements": [
+    {
+      "actual_new_drawn_index_alpha_threshold": 1,
+      "lower_rod_overlap_pixels": 0,
+      "min_air_to_actual_lower_rod_pixel_centres": 3.0,
+      "nearest_index_scene_pixel": [
+        957,
+        791
+      ],
+      "upper_rod_front_overlap_pixels": 143,
+      "min_air_to_upper_rod": 0.0
+    },
+    {
+      "actual_new_drawn_index_alpha_threshold": 8,
+      "lower_rod_overlap_pixels": 0,
+      "min_air_to_actual_lower_rod_pixel_centres": 3.0,
+      "nearest_index_scene_pixel": [
+        957,
+        791
+      ],
+      "upper_rod_front_overlap_pixels": 139,
+      "min_air_to_upper_rod": 0.0
+    },
+    {
+      "actual_new_drawn_index_alpha_threshold": 32,
+      "lower_rod_overlap_pixels": 0,
+      "min_air_to_actual_lower_rod_pixel_centres": 3.0,
+      "nearest_index_scene_pixel": [
+        957,
+        791
+      ],
+      "upper_rod_front_overlap_pixels": 136,
+      "min_air_to_upper_rod": 0.0
+    },
+    {
+      "actual_new_drawn_index_alpha_threshold": 128,
+      "lower_rod_overlap_pixels": 0,
+      "min_air_to_actual_lower_rod_pixel_centres": 3.0,
+      "nearest_index_scene_pixel": [
+        958,
+        791
+      ],
+      "upper_rod_front_overlap_pixels": 131,
+      "min_air_to_upper_rod": 0.0
+    }
+  ],
+  "interpretation": "New actual index crosses the front face of the upper shaft, pad turns below; no lower-shaft pixel overlaps. These measurements support actual visual review and do not certify hidden anatomy."
+}
