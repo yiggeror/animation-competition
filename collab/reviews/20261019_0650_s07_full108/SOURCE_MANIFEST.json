@@ -1,0 +1,694 @@
+{
+  "source_head": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+  "tail_index_commit": "68553dd89134163ab1c3c5482c8711f15d4f6156",
+  "native_registration_unchanged": {
+    "unchanged_native_to_original_scene": {
+      "s": 0.36410361842105265,
+      "tx": 627.0254537171638,
+      "ty": 402.7604324894813,
+      "formula": "world_xy=s*native_xy+[tx,ty]; only canvas extension at original origin for1960wide late states, no body-fit",
+      "fixed_world_crop": [
+        720,
+        360,
+        1488,
+        792
+      ],
+      "preview_size": [
+        1280,
+        720
+      ],
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/F084_F090_locked_exposure_20261019/sources/registration.json",
+        "collab/reviews/cloud_s07_walk_20261018/F090_native_call02_65330a56/qa/locked_camera_comparison.json",
+        "collab/reviews/cloud_s07_walk_20261018/F095_F100_LOCKED_8f_exposure_20261019/qa/actual_decode_and_source_checks.json"
+      ]
+    }
+  },
+  "files": [
+    {
+      "path": "assets/chars/g07/F000.png",
+      "sha": "cf339253dc824942a26c01aeb7f14dc579b7b77e",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1251_pose_bases/S07_grandma_F000/production/F000_grandma_rgba.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/g07/F008.png",
+      "sha": "be33109f4c24c44b2d2be9947970ba2f63ff7f8a",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1321_opening_tails/S07_grandma_008/production/F008_grandma_rgba.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/g07/F016.png",
+      "sha": "35ccedebcfacf1cd70ebef32c1c59583826b0510",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1351_opening_locked/S07_grandma_016/production/F016_grandma_rgba.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/g07/F018.png",
+      "sha": "7a099f427209e4a142ff6f588acdc08ce059ab8e",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1351_opening_locked/S07_grandma_018/production/F018_grandma_rgba.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/g07/F022.png",
+      "sha": "ae4630891d918510f8d451fde90a95166bb4a344",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1425_s07_partial_scene/S07_grandma_022/production/F022_grandma_rgba.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/g07/F025.png",
+      "sha": "7eb0602a7a979c067b1b38a8310352b45dc23ca8",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1616_s07_first57_scene/frames/F025_grandma_rgba.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/g07/F028.png",
+      "sha": "d30ff43917d0c3e648c621f94c6178fc5d4be29c",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1616_s07_first57_scene/frames/F028_grandma_rgba.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/g07/F031.png",
+      "sha": "cadee6075cf3e8daccb6093f3587a85f37f6a940",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1616_s07_first57_scene/frames/F031_grandma_rgba.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/g07/F034.png",
+      "sha": "8dcf2bcc8ca96ed27ba438c48ddfab57351506bf",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1616_s07_first57_scene/frames/F034_grandma_rgba.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/g07/F037.png",
+      "sha": "d75173b03fdea00274f7c7e9f5e93fd932c669d8",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1616_s07_first57_scene/frames/F037_grandma_rgba.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/x07/F000.png",
+      "sha": "ebd5d7738cda35c9f6100e05237c51602d45adae",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1152_first_candidate_and_interfaces/S07_xiaoman/candidates/F000_v2_fingers_clean_v4.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/x07/F003.png",
+      "sha": "5302360a8b90144cef55e4f22a46b459dddc2a04",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1232_s07_release/approved/F003_fully_released.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/x07/F006.png",
+      "sha": "dfd5ad33ec7222f9c946aecc5439aed3cf2ea017",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1232_s07_release/approved/F006_near_edge.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/x07/F008.png",
+      "sha": "a479ee2ee73221e5ee732db90bbc52ecb5c72d62",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1232_s07_release/approved/F008_phone_landed.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/x07/F039.png",
+      "sha": "b172e012240b7f5aa26f7677754721c6cc10b359",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1539_s07_tail_scene/candidates/F039_tail_phone_clear.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/x07/F043.png",
+      "sha": "153e40d09b8d6647078d48aa0111e613f2547252",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1539_s07_tail_scene/candidates/F043_tail_phone_clear.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/x07/F046.png",
+      "sha": "c92b4f70f55b5a08d9f8852659ca42adce619180",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1539_s07_tail_scene/candidates/F046_tail_phone_clear.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/x07/F049.png",
+      "sha": "015f7dacab1d487249ca353443231b0f34dd0861",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1539_s07_tail_scene/candidates/F049_tail_phone_clear.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/x07/F053.png",
+      "sha": "d8ef3007b8aa10c17eeed16fdcd27609d1ccb03e",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1539_s07_tail_scene/candidates/F053_tail_phone_clear.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/x07/phone_landed.png",
+      "sha": "2ec3756a43371623bdbf490975890653b4f015bf",
+      "source_commit": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+      "source_path": "collab/reviews/20261018_1232_s07_release/approved/phone_landed_only_same_registration.png",
+      "expected_source_sha256": null
+    },
+    {
+      "path": "assets/chars/g07/F057.png",
+      "sha": "6e9b7f9d961471c1c7c89563ca39833cc9233c74",
+      "source_commit": "68553dd89134163ab1c3c5482c8711f15d4f6156",
+      "source_path": "collab/reviews/cloud_s07_walk_20261018/F057_semantic_color_ankle/candidate/F057_semantic_color_and_ankle_PENDING.png",
+      "expected_source_sha256": "93939f3e148c0a957ef418c677e60cc3fd27cf6b6844f91d500c8a3508b76720"
+    },
+    {
+      "path": "assets/chars/g07/F062.png",
+      "sha": "87421577a1427896310dc1523feb1785787e816b",
+      "source_commit": "68553dd89134163ab1c3c5482c8711f15d4f6156",
+      "source_path": "collab/reviews/cloud_s07_walk_20261018/F062_native_call01/candidate/F062_single_native_final_with_waist_underlay_PENDING_ASTRA.png",
+      "expected_source_sha256": "393622a77349083751122520b690bd35017f8535a25560d8cca775446d2eeb2f"
+    },
+    {
+      "path": "assets/chars/g07/F068.png",
+      "sha": "4ce4e15b34d636dc32a80ad7b0bce0d6d70e2313",
+      "source_commit": "68553dd89134163ab1c3c5482c8711f15d4f6156",
+      "source_path": "collab/reviews/cloud_s07_walk_20261018/F068_next_gate/candidate/F068_single_native_final_PENDING_ASTRA.png",
+      "expected_source_sha256": "8210a8d56c15a42da4b4daa6c4a4599ce6b2df9b1f5fdab2e1403ec7f9960768"
+    },
+    {
+      "path": "assets/chars/g07/F073.png",
+      "sha": "57a715b524c6141c180e3284c6ed34368e39c1ef",
+      "source_commit": "68553dd89134163ab1c3c5482c8711f15d4f6156",
+      "source_path": "collab/reviews/cloud_s07_walk_20261018/F073_next_gate/candidate/F073_single_native_final_PENDING_ASTRA.png",
+      "expected_source_sha256": "afc7dcff6593611d0e33b16a7fce9e12967bf1767cacf8336308a51a50af1929"
+    },
+    {
+      "path": "assets/chars/g07/F079.png",
+      "sha": "4d179e268ea5f6c490daf34a767ccb4ad0e82449",
+      "source_commit": "68553dd89134163ab1c3c5482c8711f15d4f6156",
+      "source_path": "collab/reviews/cloud_s07_walk_20261018/F079_corrected_complete_volume_delivery_4e25e5f0/candidate/F079_corrected_complete_volume_PENDING_ASTRA.png",
+      "expected_source_sha256": "856d10c9516c33a8e992a121033e76a5ac55bda269b16949a90aa431206f0364"
+    },
+    {
+      "path": "assets/chars/g07/F084.png",
+      "sha": "dcb19d2a1528c854b50eb7dbfd24964aa4459afb",
+      "source_commit": "68553dd89134163ab1c3c5482c8711f15d4f6156",
+      "source_path": "collab/reviews/cloud_s07_walk_20261018/F084_native_call02_e92f6721/candidate/F084_call02_complete_volume_PENDING_ASTRA.png",
+      "expected_source_sha256": "21acf20424d94477191dbc6fd012fe61426d509ec55dbc48037bb97b2c89f6ae"
+    },
+    {
+      "path": "assets/chars/g07/F090.png",
+      "sha": "028a1eae2e1b577285063b2368a08c67f50f837f",
+      "source_commit": "68553dd89134163ab1c3c5482c8711f15d4f6156",
+      "source_path": "collab/reviews/cloud_s07_walk_20261018/F090_native_call02_65330a56/candidate/F090_call02_complete_trousers_PENDING_ASTRA.png",
+      "expected_source_sha256": "012e7bae3f7e39ca93467bf1d43ec003d3ed5a741816c67ee8fc67c5e1225156"
+    },
+    {
+      "path": "assets/chars/g07/F095.png",
+      "sha": "032b978c8c33e0c3add90681c1ad7b80731c0bb4",
+      "source_commit": "68553dd89134163ab1c3c5482c8711f15d4f6156",
+      "source_path": "collab/reviews/cloud_s07_walk_20261018/F095_native_call01_513d6ee0/registration_audit_61sol/candidate/F095_same_inverse_original_pants_and_source_layers_TRIAL_NOT_APPROVED.png",
+      "expected_source_sha256": "dcf919f412fd379a34ea69329210a418547dcccc089e1b36aa208024a04fdca4"
+    },
+    {
+      "path": "assets/chars/g07/F100.png",
+      "sha": "f475840e0f1325e8ab35e2ae9866b939fccd5300",
+      "source_commit": "68553dd89134163ab1c3c5482c8711f15d4f6156",
+      "source_path": "collab/reviews/cloud_s07_walk_20261018/F100_WHOLE_RAW_BLOUSE_FINAL_20261019/candidate/F100_WHOLE_RAW_BLOUSE_final_RGBA_PENDING_ASTRA.png",
+      "expected_source_sha256": "7dc803e92e69cb90a84465f4b25e64f5ba9ea62b6b3853bd9a66b658f9951b2b"
+    },
+    {
+      "path": "assets/chars/g07/F103.png",
+      "sha": "c05c50f6888eba57129a4535dce0bf0839b6fadb",
+      "source_commit": "68553dd89134163ab1c3c5482c8711f15d4f6156",
+      "source_path": "collab/reviews/cloud_s07_walk_20261018/F103_REPAIR_NATIVE_call02_fa796ff9_20261019/candidate/F103_REPAIR_call02_PROTECTED_SEMANTIC_TRIAL_PENDING_ASTRA.png",
+      "expected_source_sha256": "06443a17f780d7a72a293c27686099ffaf72ba827b00e3290059c3061cd2ad90"
+    },
+    {
+      "path": "assets/chars/g07/F106.png",
+      "sha": "6fde92ccc6c9aca500deaf7255462122a83f63ae",
+      "source_commit": "68553dd89134163ab1c3c5482c8711f15d4f6156",
+      "source_path": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/zero_call_semantic_cloth_trial_20261019/candidate/F106_ZERO_CALL_LOCKED103_WHOLE_CHAIN_actual106_CLOTH_BACKPLATE_PENDING_ASTRA.png",
+      "expected_source_sha256": "13bd048bc8a23519ab284c31ae477b1adea387d45df77fa55efafb8d850bec21"
+    }
+  ],
+  "tail_final_index": [
+    {
+      "state": 57,
+      "exposure_inclusive": [
+        57,
+        61
+      ],
+      "hold_frames": 5,
+      "support_event": "\u53cc\u652f\u6491\u2192\u8fd1\u53f3\u627f\u91cd",
+      "action": "\u7b2c\u4e00\u8fd1\u811a\u843d\u5730",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F057_semantic_color_ankle/candidate/F057_semantic_color_and_ankle_PENDING.png",
+      "png_SHA256": "93939f3e148c0a957ef418c677e60cc3fd27cf6b6844f91d500c8a3508b76720",
+      "source_commit_SHA": "e3d2202cacfc6c3964112cbda8956592683b8792",
+      "known_commit_abbrev": null,
+      "scene_registration_ref": null,
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F057_semantic_color_ankle/candidate/F057_semantic_color_and_ankle_PENDING.png",
+      "component_layer_directory": null,
+      "has_physical_lamp": false,
+      "has_table_shadow": false,
+      "lamp_ownership": "original_scene.tableLamp(0)",
+      "scene_tableLamp_0_enabled": true,
+      "lamp_ON": false,
+      "known_ground_anchors": null,
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "Explicit Astra source identity message source_thread01a1515b-ad57-7745-99c3-3cf607fea0c6,2026-10-19"
+      ],
+      "unresolved": "Ground-contact1705 patch belongs to frames before57 and is not a new057 mother. Exact057 identity supplied by coordinator; no measurement or re-review performed. Other unknown anchor/registration fields remain uncomputed.",
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "original_scene.tableLamp(0)",
+      "lamp_render_owner": "original_scene.tableLamp(0)"
+    },
+    {
+      "state": 62,
+      "exposure_inclusive": [
+        62,
+        67
+      ],
+      "hold_frames": 6,
+      "support_event": "\u8fd1\u53f3\u5355\u652f\u6491",
+      "action": "\u8fd1\u53f3\u652f\u6491\uff0f\u8fdc\u5de6\u8fc7\u6b65",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F062_native_call01/candidate/F062_single_native_final_with_waist_underlay_PENDING_ASTRA.png",
+      "png_SHA256": "393622a77349083751122520b690bd35017f8535a25560d8cca775446d2eeb2f",
+      "source_commit_SHA": "766f9f60f13c62f144d374b11475010b9e462421",
+      "known_commit_abbrev": "766f9f60",
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F062_native_call01/candidate/F062_single_native_final_with_waist_underlay_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F062_native_call01/production_layers",
+      "has_physical_lamp": false,
+      "has_table_shadow": false,
+      "lamp_ownership": "original_scene.tableLamp(0)",
+      "scene_tableLamp_0_enabled": true,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": null,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used."
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F062_native_call01/qa/internal_waist_native_source_underlay_checks.json",
+        "collab/reviews/cloud_s07_walk_20261018/F062_native_call01/qa/world_registration_and_support_checks.json"
+      ],
+      "source_commit_note": "Existing known lock prefix resolved to this exact local commit object by git rev-parse --verify; no source image or anchor recomputed.",
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "original_scene.tableLamp(0)",
+      "lamp_render_owner": "original_scene.tableLamp(0)"
+    },
+    {
+      "state": 68,
+      "exposure_inclusive": [
+        68,
+        72
+      ],
+      "hold_frames": 5,
+      "support_event": "\u53cc\u652f\u6491\u2192\u8fdc\u5de6\u627f\u91cd",
+      "action": "\u8fdc\u5de6\u811a\u843d\u5730",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F068_next_gate/candidate/F068_single_native_final_PENDING_ASTRA.png",
+      "png_SHA256": "8210a8d56c15a42da4b4daa6c4a4599ce6b2df9b1f5fdab2e1403ec7f9960768",
+      "source_commit_SHA": "619f84f5d36c36f5269150cad95beb5cc75a49c4",
+      "known_commit_abbrev": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F068_next_gate/candidate/F068_single_native_final_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F068_next_gate/production_layers",
+      "has_physical_lamp": false,
+      "has_table_shadow": false,
+      "lamp_ownership": "original_scene.tableLamp(0)",
+      "scene_tableLamp_0_enabled": true,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": 1022,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used."
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F068_next_gate/qa/author_actual_static_gate.json",
+        "collab/reviews/cloud_s07_walk_20261018/F068_next_gate/qa/author_actual_static_gate.json"
+      ],
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "original_scene.tableLamp(0)",
+      "lamp_render_owner": "original_scene.tableLamp(0)"
+    },
+    {
+      "state": 73,
+      "exposure_inclusive": [
+        73,
+        78
+      ],
+      "hold_frames": 6,
+      "support_event": "\u8fdc\u5de6\u5355\u652f\u6491",
+      "action": "\u8fdc\u5de6\u652f\u6491\uff0f\u8fd1\u53f3\u8fc7\u6b65",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F073_next_gate/candidate/F073_single_native_final_PENDING_ASTRA.png",
+      "png_SHA256": "afc7dcff6593611d0e33b16a7fce9e12967bf1767cacf8336308a51a50af1929",
+      "source_commit_SHA": "619f84f5d36c36f5269150cad95beb5cc75a49c4",
+      "known_commit_abbrev": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F073_next_gate/candidate/F073_single_native_final_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F073_next_gate/production_layers",
+      "has_physical_lamp": false,
+      "has_table_shadow": false,
+      "lamp_ownership": "original_scene.tableLamp(0)",
+      "scene_tableLamp_0_enabled": true,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 959,
+        "far_LEFT_sole_bottom_native_alpha128": 1022,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used."
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F073_next_gate/qa/independent_61sol_output_review.json",
+        "collab/reviews/cloud_s07_walk_20261018/F073_next_gate/qa/independent_61sol_output_review.json"
+      ],
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "original_scene.tableLamp(0)",
+      "lamp_render_owner": "original_scene.tableLamp(0)"
+    },
+    {
+      "state": 79,
+      "exposure_inclusive": [
+        79,
+        83
+      ],
+      "hold_frames": 5,
+      "support_event": "\u53cc\u652f\u6491\u2192\u8fd1\u53f3\u627f\u91cd",
+      "action": "\u8fd1\u53f3\u811a\u843d\u5730",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F079_corrected_complete_volume_delivery_4e25e5f0/candidate/F079_corrected_complete_volume_PENDING_ASTRA.png",
+      "png_SHA256": "856d10c9516c33a8e992a121033e76a5ac55bda269b16949a90aa431206f0364",
+      "source_commit_SHA": "0174fe214804465e714b6923213bd2f9caca8f48",
+      "known_commit_abbrev": "0174fe21",
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F079_corrected_complete_volume_delivery_4e25e5f0/candidate/F079_corrected_complete_volume_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F079_corrected_complete_volume_delivery_4e25e5f0/production_layers",
+      "has_physical_lamp": false,
+      "has_table_shadow": false,
+      "lamp_ownership": "original_scene.tableLamp(0)",
+      "scene_tableLamp_0_enabled": true,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": 1022,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used."
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F079_corrected_complete_volume_delivery_4e25e5f0/qa/one_native_layered_trial_checks.json",
+        "collab/reviews/cloud_s07_walk_20261018/F079_corrected_complete_volume_delivery_4e25e5f0/qa/one_native_layered_trial_checks.json"
+      ],
+      "source_commit_note": "Existing known lock prefix resolved to this exact local commit object by git rev-parse --verify; no source image or anchor recomputed.",
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "original_scene.tableLamp(0)",
+      "lamp_render_owner": "original_scene.tableLamp(0)"
+    },
+    {
+      "state": 84,
+      "exposure_inclusive": [
+        84,
+        89
+      ],
+      "hold_frames": 6,
+      "support_event": "\u8fd1\u53f3\u5355\u652f\u6491",
+      "action": "\u8fd1\u53f3\u652f\u6491\uff0f\u8fdc\u5de6\u8fc7\u6b65",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F084_native_call02_e92f6721/candidate/F084_call02_complete_volume_PENDING_ASTRA.png",
+      "png_SHA256": "21acf20424d94477191dbc6fd012fe61426d509ec55dbc48037bb97b2c89f6ae",
+      "source_commit_SHA": "2761136abb8038aa33f2173427f90d90898e1359",
+      "known_commit_abbrev": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F084_native_call02_e92f6721/candidate/F084_call02_complete_volume_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F084_native_call02_e92f6721/production_layers",
+      "has_physical_lamp": false,
+      "has_table_shadow": false,
+      "lamp_ownership": "original_scene.tableLamp(0)",
+      "scene_tableLamp_0_enabled": true,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": null,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used."
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F084_F090_locked_exposure_20261019/sources/source_manifest.json",
+        "collab/reviews/cloud_s07_walk_20261018/F084_native_call02_e92f6721/qa/one_native_source_layered_trial_checks.json"
+      ],
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "original_scene.tableLamp(0)",
+      "lamp_render_owner": "original_scene.tableLamp(0)"
+    },
+    {
+      "state": 90,
+      "exposure_inclusive": [
+        90,
+        94
+      ],
+      "hold_frames": 5,
+      "support_event": "\u53cc\u652f\u6491\u2192\u8fdc\u5de6\u627f\u91cd",
+      "action": "\u8fdc\u5de6\u811a\u843d\u5730",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F090_native_call02_65330a56/candidate/F090_call02_complete_trousers_PENDING_ASTRA.png",
+      "png_SHA256": "012e7bae3f7e39ca93467bf1d43ec003d3ed5a741816c67ee8fc67c5e1225156",
+      "source_commit_SHA": "d714f5babacaa7a8d450fc4cb93b84e9ac821880",
+      "known_commit_abbrev": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F090_native_call02_65330a56/candidate/F090_call02_complete_trousers_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F090_native_call02_65330a56/production_layers",
+      "has_physical_lamp": false,
+      "has_table_shadow": false,
+      "lamp_ownership": "original_scene.tableLamp(0)",
+      "scene_tableLamp_0_enabled": true,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": 1022,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used. Both soles use fixed original feet; actual ankle proxies not promoted from future095.",
+        "ankle_proxy_native_from_fixed_source_feet": null
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F090_F095_locked_exposure_20261019/sources/source_manifest.json",
+        "collab/reviews/cloud_s07_walk_20261018/F095_next_gate_20261019/geometry/preparation_checks.json"
+      ],
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "original_scene.tableLamp(0)",
+      "lamp_render_owner": "original_scene.tableLamp(0)"
+    },
+    {
+      "state": 95,
+      "exposure_inclusive": [
+        95,
+        99
+      ],
+      "hold_frames": 5,
+      "support_event": "\u53cc\u811a\u56fa\u5b9a\uff0c\u505c\u6b62\u884c\u8fdb",
+      "action": "\u8fd1\u53f3\u6536\u811a\u7ad9\u5b9a",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F095_native_call01_513d6ee0/registration_audit_61sol/candidate/F095_same_inverse_original_pants_and_source_layers_TRIAL_NOT_APPROVED.png",
+      "png_SHA256": "dcf919f412fd379a34ea69329210a418547dcccc089e1b36aa208024a04fdca4",
+      "source_commit_SHA": "4d7fb0d48d21c2446a9757c60ad6cb49db484bbd",
+      "known_commit_abbrev": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F095_native_call01_513d6ee0/registration_audit_61sol/candidate/F095_same_inverse_original_pants_and_source_layers_TRIAL_NOT_APPROVED.png",
+      "component_layer_directory": null,
+      "has_physical_lamp": false,
+      "has_table_shadow": false,
+      "lamp_ownership": "original_scene.tableLamp(0)",
+      "scene_tableLamp_0_enabled": true,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": 1022,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used.",
+        "ankle_proxy_native_from_fixed_source_feet": {
+          "near_RIGHT": [
+            1407.8686125468735,
+            957.8118142506097
+          ],
+          "far_LEFT": [
+            1451.812147273017,
+            953.9968292356247
+          ]
+        }
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F090_F095_locked_exposure_20261019/sources/source_manifest.json",
+        "collab/reviews/cloud_s07_walk_20261018/F095_next_gate_20261019/geometry/preparation_checks.json"
+      ],
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "original_scene.tableLamp(0)",
+      "lamp_render_owner": "original_scene.tableLamp(0)"
+    },
+    {
+      "state": 100,
+      "exposure_inclusive": [
+        100,
+        102
+      ],
+      "hold_frames": 3,
+      "support_event": "\u53cc\u811a\u56fa\u5b9a\uff0c\u706f\u4ecd\u5f52\u684c\u652f\u6491",
+      "action": "\u80f8\u5934\u4e00\u8d77\u63a2\u8eab\uff0f\u53f3\u624b\u63a5\u8fd1",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F100_WHOLE_RAW_BLOUSE_FINAL_20261019/candidate/F100_WHOLE_RAW_BLOUSE_final_RGBA_PENDING_ASTRA.png",
+      "png_SHA256": "7dc803e92e69cb90a84465f4b25e64f5ba9ea62b6b3853bd9a66b658f9951b2b",
+      "source_commit_SHA": "61766ddbbde81bf1a15e7b846211ea8a25d8950f",
+      "known_commit_abbrev": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F100_WHOLE_RAW_BLOUSE_FINAL_20261019/candidate/F100_WHOLE_RAW_BLOUSE_final_RGBA_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F100_WHOLE_RAW_BLOUSE_FINAL_20261019/layers",
+      "has_physical_lamp": true,
+      "has_table_shadow": true,
+      "lamp_ownership": "final_whole_action_PNG_only",
+      "scene_tableLamp_0_enabled": false,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": 1022,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used.",
+        "ankle_proxy_native_from_fixed_source_feet": {
+          "near_RIGHT": [
+            1407.8686125468735,
+            957.8118142506097
+          ],
+          "far_LEFT": [
+            1451.812147273017,
+            953.9968292356247
+          ]
+        },
+        "feet_unchanged_from095": true
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F100_WHOLE_RAW_BLOUSE_FINAL_20261019/qa/short_checks.json",
+        "collab/reviews/cloud_s07_walk_20261018/F100_WHOLE_RAW_BLOUSE_FINAL_20261019/qa/short_checks.json"
+      ],
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "same_final_whole_action_PNG_only",
+      "lamp_render_owner": "final_whole_action_PNG_only"
+    },
+    {
+      "state": 103,
+      "exposure_inclusive": [
+        103,
+        105
+      ],
+      "hold_frames": 3,
+      "support_event": "\u53cc\u811a\u56fa\u5b9a\uff0c\u684c\u652f\u6491\uff0b\u624b\u5df2\u95ed\u63e1",
+      "action": "\u624b\u6307\u95ed\u5408\u6263\u63d0\u6881",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F103_REPAIR_NATIVE_call02_fa796ff9_20261019/candidate/F103_REPAIR_call02_PROTECTED_SEMANTIC_TRIAL_PENDING_ASTRA.png",
+      "png_SHA256": "06443a17f780d7a72a293c27686099ffaf72ba827b00e3290059c3061cd2ad90",
+      "source_commit_SHA": "84334c3f7b0ab72e9e700ae3e165617945ef615e",
+      "known_commit_abbrev": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F103_REPAIR_NATIVE_call02_fa796ff9_20261019/candidate/F103_REPAIR_call02_PROTECTED_SEMANTIC_TRIAL_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F103_REPAIR_NATIVE_call02_fa796ff9_20261019/layers",
+      "has_physical_lamp": true,
+      "has_table_shadow": true,
+      "lamp_ownership": "final_whole_action_PNG_only",
+      "scene_tableLamp_0_enabled": false,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": 1022,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used.",
+        "ankle_proxy_native_from_fixed_source_feet": {
+          "near_RIGHT": [
+            1407.8686125468735,
+            957.8118142506097
+          ],
+          "far_LEFT": [
+            1451.812147273017,
+            953.9968292356247
+          ]
+        },
+        "feet_unchanged_from095": true
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F103_REPAIR_NATIVE_call02_fa796ff9_20261019/qa/protected_semantic_trial/checks.json",
+        "collab/reviews/cloud_s07_walk_20261018/F103_REPAIR_NATIVE_call02_fa796ff9_20261019/qa/protected_semantic_trial/checks.json"
+      ],
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "same_final_whole_action_PNG_only",
+      "lamp_render_owner": "final_whole_action_PNG_only"
+    },
+    {
+      "state": 106,
+      "exposure_inclusive": [
+        106,
+        107
+      ],
+      "hold_frames": 2,
+      "support_event": "\u53cc\u811a\u56fa\u5b9a\uff0c\u627f\u91cd\u8f6c\u4ea4\u53f3\u624b",
+      "action": "\u624b\u4e0e\u6574\u706f\u540c\u79fb\uff0c\u706f\u5e95\u79bb\u684c",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/zero_call_semantic_cloth_trial_20261019/candidate/F106_ZERO_CALL_LOCKED103_WHOLE_CHAIN_actual106_CLOTH_BACKPLATE_PENDING_ASTRA.png",
+      "png_SHA256": "13bd048bc8a23519ab284c31ae477b1adea387d45df77fa55efafb8d850bec21",
+      "source_commit_SHA": "68553dd89134163ab1c3c5482c8711f15d4f6156",
+      "known_commit_abbrev": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": null,
+      "component_layer_directory": null,
+      "has_physical_lamp": null,
+      "has_table_shadow": null,
+      "lamp_ownership": "PLANNED_final_whole_action_PNG_only_NO_ACCEPTED106",
+      "scene_tableLamp_0_enabled": false,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "feet_unchanged_from095_103": true,
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": 1022
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv"
+      ],
+      "unresolved": "Final106 remainsnull pending Astra actual-result gate on new zero-call semantic trial; failed native arm/hand/lamp not adopted. No8f yet.",
+      "planned_same_hand_and_whole_physical_lamp_delta": {
+        "native": [
+          0,
+          -12.359119141727836
+        ],
+        "world": [
+          0,
+          -4.5
+        ],
+        "rotation": 0,
+        "scale": 1,
+        "table_shadow_moves_with_lamp": false
+      },
+      "expected_final_contains_physical_lamp": true,
+      "table_shadow_note": "Stationary context, outside moving hand/lamp group; final containment flag leftnull until root fills final artifact.",
+      "status": "ZERO_CALL_SEMANTIC_CANDIDATE_PENDING_ASTRA_RESULT_GATE",
+      "raw_only": {
+        "path": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/originals/F106_NATIVE_call01_RAW.png",
+        "SHA256": "10bdbcc10f20f6ac472d8f70ef98a2385f6166523dec478f59b3afab004d5aee",
+        "requests": 1,
+        "originals": 1,
+        "retry": 0,
+        "parent_actual_review": "Whole45/64+[1240,0] registration shows real grip/lamp displaced upper-right from frozen same-hand/same-lamp group. HOLD; no independent fit or source-hand paste."
+      },
+      "lamp_support_owner": "PLANNED_right_hand_final_selfcontained_NOT_ADOPTED",
+      "table_shadow_render_owner": "planned_stationary_baseline_context_NO_ACCEPTED106",
+      "lamp_render_owner": "PLANNED_final_whole_action_PNG_only_NO_ACCEPTED106",
+      "pending_candidate": {
+        "path": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/zero_call_semantic_cloth_trial_20261019/candidate/F106_ZERO_CALL_LOCKED103_WHOLE_CHAIN_actual106_CLOTH_BACKPLATE_PENDING_ASTRA.png",
+        "SHA256": "13bd048bc8a23519ab284c31ae477b1adea387d45df77fa55efafb8d850bec21",
+        "same_actual103_whole_motion_group": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/layers/F106_whole_actual_bare_arm_hand_physical_lamp_LIFTED.png",
+        "native_additional_requests": 0
+      }
+    }
+  ],
+  "lamp_policy": "F000\u2013099 original scene tableLamp; F100+ final whole image contains physical lamp and original stationary table shadow. Final reviewer independently verified106 shadow2329visibleRGBA pixels fixed, only40y656pixels exposed by lifted lamp."
+}
