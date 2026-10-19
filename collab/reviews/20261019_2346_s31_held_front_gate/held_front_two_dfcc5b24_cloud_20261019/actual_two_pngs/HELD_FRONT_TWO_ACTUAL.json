@@ -1,0 +1,261 @@
+{
+  "status": "two_actual_images_complete_visual_gate_pending",
+  "runtimeInputIndexSHA256": "dfe77e86b793f8c7dfe79624f6f567bfaf38946d7cb2b8f963bb7dbd3197849d",
+  "frames": [
+    0,
+    116
+  ],
+  "outputSize": [
+    960,
+    540
+  ],
+  "blurAt1920": 14,
+  "BExecuted": false,
+  "responses": [
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/held_front_preview.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/held_front_preview.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/lamp/s06_key_s31a.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/paint/shots/s31.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/lamp/turtle.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/puppet.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/lamp/gl.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/lamp/crane.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/lamp/shaders.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/shadowplay.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/lamp/scenery.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/lamp/cards.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/lamp/xm_rig.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/paint/paintshot.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/lamp/xiaoman.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/lamp/s06_key.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/lamp/shots/shotkit.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/lamp/choreo.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/lib/draw.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/lib/figure.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/scene_preview/js/lib/core.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/background_east_inputs/S31_EAST_A_PROJECTION.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/F000_final_mother/S31_F000_MOTHER.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/F036_expression_call01/S31_F036_CHARACTER.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/F116_lift_call01/S31_F116_CHARACTER.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/GM_held_contact_call01/GM_HELD_ORIGINAL_CRANE_REAL_RODS_CANDIDATE.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/GM_held_contact_call01/ORIGINAL_COWHIDE_AND_SHAFT_MATERIAL_MASK.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34195/GM_held_contact_call01/HELD_PROP_DEPTH_OWNERSHIP_MASK.png",
+      "status": 200
+    }
+  ],
+  "requestFailed": [],
+  "pageErrors": [],
+  "console": [
+    {
+      "type": "warning",
+      "text": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+    },
+    {
+      "type": "warning",
+      "text": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+    },
+    {
+      "type": "warning",
+      "text": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+    }
+  ],
+  "pngs": [
+    {
+      "frame": 0,
+      "file": "A000_HELD_FRONT_CANDIDATE.png",
+      "bytes": 624701,
+      "sha256": "cc73686a706df6f2c4d49d5441a9b2e67906f74abeede608ff8aa8f137963c01",
+      "rgbaSHA256": "80853996aec6fae81fd77024bc7c4471a9b8d970626f51228c9d1e13da4eea4a"
+    },
+    {
+      "frame": 116,
+      "file": "A116_HELD_FRONT_CANDIDATE.png",
+      "bytes": 628273,
+      "sha256": "da05bd8644f5eb7b816d4fffe8fc14420e634b8905831269c2834af85de04d77",
+      "rgbaSHA256": "2d649a7b966593f2329c26f74b67c12d47a5d703d9398035fb3e0a636dc96462"
+    }
+  ],
+  "A": [
+    {
+      "f": 0,
+      "key": 0,
+      "heldBundle": {
+        "widthMetres": 0.73,
+        "planeY": -0.14,
+        "mouthWorld": [
+          2.0897418838388986,
+          -0.14,
+          0.8623874982575719
+        ],
+        "grandmaWorld": [
+          2.35,
+          -0.1,
+          0.02
+        ],
+        "actualGrips": [
+          [
+            226,
+            561
+          ],
+          [
+            224,
+            570
+          ]
+        ]
+      },
+      "backgroundCamera": {
+        "pos": [
+          0.82,
+          -2.05,
+          0.78
+        ],
+        "target": [
+          1.6,
+          0,
+          0.86
+        ],
+        "hfov": 52
+      },
+      "foregroundMatrix": [
+        1.075686274509804,
+        0,
+        0,
+        1.075686274509804,
+        -8.210588235294153,
+        74.66196078431372
+      ]
+    },
+    {
+      "f": 116,
+      "key": 116,
+      "heldBundle": {
+        "widthMetres": 0.73,
+        "planeY": -0.14,
+        "mouthWorld": [
+          2.0897418838388986,
+          -0.14,
+          0.8623874982575719
+        ],
+        "grandmaWorld": [
+          2.35,
+          -0.1,
+          0.02
+        ],
+        "actualGrips": [
+          [
+            226,
+            561
+          ],
+          [
+            224,
+            570
+          ]
+        ]
+      },
+      "backgroundCamera": {
+        "pos": [
+          0.82,
+          -2.05,
+          0.78
+        ],
+        "target": [
+          1.6,
+          0,
+          0.86
+        ],
+        "hfov": 52
+      },
+      "foregroundMatrix": [
+        1.075686274509804,
+        0,
+        0,
+        1.075686274509804,
+        -8.210588235294153,
+        74.66196078431372
+      ]
+    }
+  ],
+  "url": "http://127.0.0.1:34195/scene_preview/held_front_preview.html"
+}

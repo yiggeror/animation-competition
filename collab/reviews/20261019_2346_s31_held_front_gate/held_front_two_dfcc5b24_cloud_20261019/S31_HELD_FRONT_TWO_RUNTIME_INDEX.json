@@ -1,0 +1,482 @@
+{
+  "status": "Parent actual structural review passed for 98641368 candidate; prepared one A000/A116 warm-light plus 14px-blur batch; actual visual readability gate pending. No local browser call.",
+  "runtimeRoot": "Preserve listed relative paths under one package root",
+  "oneCommand": "NODE_PATH=/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules node scene_preview/render_held_front_two.cjs",
+  "outputs": "scene_preview/held_front_two_actual: two exact PNGs and URL/failure/SHA log",
+  "frames": [
+    0,
+    116
+  ],
+  "BExecuted": false,
+  "BIsolationClosedBy": "390e90c9e2436f8375d86e2b90c570cf60c5e873: no-A B repeat exactly equals first B after A in RGBA and PNG bytes; original first-draw residual remains source behavior",
+  "cameraAndForeground": "unchanged",
+  "originalUniformBlurAt1920": 14,
+  "grandmaWorld": [
+    2.35,
+    -0.1,
+    0.02
+  ],
+  "bundlePlaneY": -0.14,
+  "bundlePhysicalWidthMetres": 0.73,
+  "nativeRawSHA256": "bfa7c34ad40b946a0c0893e735b2de756faa6f2a8e83e7265b9e04cd820b67dc",
+  "nativeCandidateSHA256": "98641368443bf0aefa21e88386fddd7c6809cae70db00a1dc3ace1c3b043b698",
+  "materialOwnership": "Original complete crane and two real shafts have their own visible ownership mask mapped to existing cowhide material 7, avoiding skin misclassification. Cloth and native human keep existing classification.",
+  "depthOwnership": "Same original radial camera-depth encoding, with separate existing grandma/prop planes from their actual approved world positions. No new lamp, no shader change.",
+  "runtimeFiles": [
+    {
+      "relativePath": "scene_preview/js/lamp/s06_key.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/lamp/s06_key.js",
+      "sha256": "fdd0835b5486ac66385cb339b2a2dbbb8521978d3716c6293c7ef5927ef887d9",
+      "bytes": 21605,
+      "gitBlobOid": "443bd5e2a793e24a9b1c51ad77e8e435a1f0bf13",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/s06_key.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/lamp/gl.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/lamp/gl.js",
+      "sha256": "ba98ba276559c430fc244a261387b32c77901a042e9c60b8acee31da3fdd0b29",
+      "bytes": 5917,
+      "gitBlobOid": "265792ea869ab507660d75a432ba833646b0faf1",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/gl.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/lamp/shaders.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/lamp/shaders.js",
+      "sha256": "773d25786637b178c73df987f11539d8786f2516fc6c04099d81caae170ddf1d",
+      "bytes": 29001,
+      "gitBlobOid": "8baa1c4467043fa3ce862b3f04c68244e1037ca8",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/shaders.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/shadowplay.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/shadowplay.js",
+      "sha256": "2620c4164efb9a440f69b7d723d1d373894116115c9aa56442160b8a7b0739d8",
+      "bytes": 6195,
+      "gitBlobOid": "80a7e835e3a879e71ecb247353e5113ad68dbdf4",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/shadowplay.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/puppet.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/puppet.js",
+      "sha256": "04b80760b97185ab8aea7826383d85f3c9d7789cd01aa1d8664fdc74bc4c30b7",
+      "bytes": 2650,
+      "gitBlobOid": "fa87fe75eb2edf5dae9d182c53b1d32d5ff7aa6d",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/puppet.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/lamp/crane.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/lamp/crane.js",
+      "sha256": "212e8a4fdad764fa50928c60a8efc956ad660c62377ea1ea152433a6fea4e642",
+      "bytes": 13142,
+      "gitBlobOid": "067e077a2cdb692e6366eb2803087628823952b9",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/crane.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/lamp/scenery.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/lamp/scenery.js",
+      "sha256": "63f8cc830c0ed37db2a178b8b9ae3ed69f2d455915e1c5fb3bd5222d7fa64030",
+      "bytes": 7162,
+      "gitBlobOid": "56a9a3c1c9b560987998811889fdc2541d30e4c0",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/scenery.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/lamp/xiaoman.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/lamp/xiaoman.js",
+      "sha256": "d3b47b12cbcbb4bdec96df0bfa85357543ab6ea98d627cdb8260550cfc6e60e0",
+      "bytes": 29454,
+      "gitBlobOid": "154ad7c6ae109268c6d02561fade4b324589cc3d",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/xiaoman.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/lib/draw.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/lib/draw.js",
+      "sha256": "e3d36d237c0f143f349bfd2fbc9afad24fc71897f56b990a5d2ed084d6c6d496",
+      "bytes": 8877,
+      "gitBlobOid": "95e94d8e89b1c50abf48b783cf13b9527e6de13b",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lib/draw.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/lib/core.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/lib/core.js",
+      "sha256": "748c357b97a71d6f122ef483923a64d3395bd692f6775b1601ef19b5bc08883e",
+      "bytes": 3419,
+      "gitBlobOid": "d39ed9427e6b53be83dd20bd3f4fcc0ef431ef55",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lib/core.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/lib/figure.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/lib/figure.js",
+      "sha256": "03c8928bbe6546af7206024a163c9f56d7826f60917c24ac448010fdae67f3de",
+      "bytes": 10349,
+      "gitBlobOid": "25dc6398af184c6dbc4ddd6a646d8d44a7bfb24d",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lib/figure.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/lamp/cards.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/lamp/cards.js",
+      "sha256": "f6aa857fd1ba89ace359273e640b46915ff1d142cc4d90f1e84b148f430db130",
+      "bytes": 16926,
+      "gitBlobOid": "8a85b42cd2fddd6e289dc548e5bab50e0b2ae84a",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/cards.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/lamp/xm_rig.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/lamp/xm_rig.js",
+      "sha256": "99b819478174a2bf250883cf05dd3c9f9b5743c1cfb98c5fd58ab876d28b7b22",
+      "bytes": 6242,
+      "gitBlobOid": "6260f11e25efe07a91949b6f8d00b27261d1d8ab",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/xm_rig.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/paint/shots/s31.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/paint/shots/s31.js",
+      "sha256": "6782316d1ad14ab0035be7d2a3cec2331b5d6a9a0965157cd8c0f89d8a592b68",
+      "bytes": 11949,
+      "gitBlobOid": "bb3da475d67b137a8c7f48bece195c81a0167143",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/paint/shots/s31.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/paint/paintshot.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/paint/paintshot.js",
+      "sha256": "7d61a8e3cfa595b5a2877ce3624c2d8d186a1578cc684a8948471eb0eedca975",
+      "bytes": 12532,
+      "gitBlobOid": "c903195ae3d0d071823b37572bddb4a196621008",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/paint/paintshot.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/lamp/shots/shotkit.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/lamp/shots/shotkit.js",
+      "sha256": "3cd7989d0276f0edc791ac72fae11463e611f13c0a3433fe99c27f38cec20a74",
+      "bytes": 786,
+      "gitBlobOid": "b2e991a93729bf21725267798c5e6b1669b33e37",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/shots/shotkit.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/lamp/turtle.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/lamp/turtle.js",
+      "sha256": "f7e91070a5959a2a5b97438a64db0f79af4890c2dbff1cdcbe6e4d6a28817ed2",
+      "bytes": 6936,
+      "gitBlobOid": "722b946f70b289365de7f4eda415880fa8dd10d6",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/turtle.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/lamp/choreo.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/lamp/choreo.js",
+      "sha256": "6f838cdfb1aab203f83e5905eb4242a65addb4181ca8e66ed4c91340903e33d6",
+      "bytes": 3072,
+      "gitBlobOid": "8ac73f1183995c86b724dcd2f94374da9a3fc194",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/choreo.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "scene_preview/js/lamp/s06_key_s31a.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/js/lamp/s06_key_s31a.js",
+      "sha256": "b376b1b751a8e42cc35fb21f83e85585f01cc4d833e97c97a04a32c74206c2cb",
+      "bytes": 21683,
+      "gitBlobOid": "95a2a1bad00343709b1c89b6038fa5f264fce77e",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/s06_key_s31a.js",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "background_east_inputs/S31_EAST_A_PROJECTION.json",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/background_east_inputs/S31_EAST_A_PROJECTION.json",
+      "sha256": "c13b24736f3c9faaea5d4ea2f3c905cd33b8bfac8bb1bd9b7713990121f91cd0",
+      "bytes": 2972,
+      "gitBlobOid": "618b8c59caa6abea06613b451b5015ae32437a0c",
+      "transfer": "reuse exact existing blob under this relative path",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/background_east_inputs/S31_EAST_A_PROJECTION.json",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110"
+    },
+    {
+      "relativePath": "F000_final_mother/S31_F000_MOTHER.png",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/F000_final_mother/S31_F000_MOTHER.png",
+      "sha256": "7f94f27d0f60b756d8f01c5d05ddf8bca8dc632bec52bc39dcf0a6cf09896dc4",
+      "bytes": 668933,
+      "gitBlobOid": "6687e9b57ca8adbddcaceb755f40f426e2d12fcf",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/F000_final_mother/S31_F000_MOTHER.png",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "F036_expression_call01/S31_F036_CHARACTER.png",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/F036_expression_call01/S31_F036_CHARACTER.png",
+      "sha256": "288043bc5e2bc57176c082d1cf3a8dd886412ef4cf466c7c200ce0775139a820",
+      "bytes": 680859,
+      "gitBlobOid": "192537f7dd706bacf06a2c00d93ca68fa163f807",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/F036_expression_call01/S31_F036_CHARACTER.png",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "F116_lift_call01/S31_F116_CHARACTER.png",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/F116_lift_call01/S31_F116_CHARACTER.png",
+      "sha256": "5359eb949b8d067e02c86b5deb4c4780d25cebb682af94ce521a8de86fde198a",
+      "bytes": 684552,
+      "gitBlobOid": "a20afdf16e15c4f4844218e1ebbdf0ddc6c77796",
+      "existingRepositoryPath": "collab/reviews/20261019_2212_s31_eastA_scene_gate/F116_lift_call01/S31_F116_CHARACTER.png",
+      "existingCommit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+      "transfer": "reuse exact existing blob under this relative path"
+    },
+    {
+      "relativePath": "GM_held_contact_call01/GM_HELD_ORIGINAL_CRANE_REAL_RODS_CANDIDATE.png",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/GM_held_contact_call01/GM_HELD_ORIGINAL_CRANE_REAL_RODS_CANDIDATE.png",
+      "sha256": "98641368443bf0aefa21e88386fddd7c6809cae70db00a1dc3ace1c3b043b698",
+      "bytes": 927285,
+      "transfer": "new exact bytes; candidate only, not executed"
+    },
+    {
+      "relativePath": "GM_held_contact_call01/ORIGINAL_COWHIDE_AND_SHAFT_MATERIAL_MASK.png",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/GM_held_contact_call01/ORIGINAL_COWHIDE_AND_SHAFT_MATERIAL_MASK.png",
+      "sha256": "51d03a858b446d3184016bd7118890649c4aa891261d286270747bc8864aa185",
+      "bytes": 16298,
+      "transfer": "new exact bytes; candidate only, not executed"
+    },
+    {
+      "relativePath": "GM_held_contact_call01/HELD_PROP_DEPTH_OWNERSHIP_MASK.png",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/GM_held_contact_call01/HELD_PROP_DEPTH_OWNERSHIP_MASK.png",
+      "sha256": "bfd3c83655e4637ea577ffa49440f554302d4cd677354631baf288e3b36164bd",
+      "bytes": 36315,
+      "transfer": "new exact bytes; candidate only, not executed"
+    },
+    {
+      "relativePath": "scene_preview/held_front_preview.js",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/held_front_preview.js",
+      "sha256": "4b51be10c0f4e2efed643686066fc03c539f22febe5780f9f2cf7ec3d9ecd821",
+      "bytes": 7583,
+      "transfer": "new exact bytes; candidate only, not executed"
+    },
+    {
+      "relativePath": "scene_preview/held_front_preview.html",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/held_front_preview.html",
+      "sha256": "141d9a1f0fe7c4eca689b9acc5e87547cc50d9327861650141c419e064e5a3de",
+      "bytes": 294,
+      "transfer": "new exact bytes; candidate only, not executed"
+    },
+    {
+      "relativePath": "scene_preview/render_held_front_two.cjs",
+      "localSourcePath": "/workspace/scratch/f060b5601755/s31_first_inputs_20261019/scene_preview/render_held_front_two.cjs",
+      "sha256": "8fbddeafc7ef0921da39ea5d5f45aa1134f590297d35e27ca46d39df4b0ae11a",
+      "bytes": 3694,
+      "transfer": "new exact bytes; candidate only, not executed"
+    }
+  ],
+  "importsVerified": [
+    {
+      "source": "scene_preview/js/lamp/s06_key.js",
+      "import": "./gl.js",
+      "resolved": "scene_preview/js/lamp/gl.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/s06_key.js",
+      "import": "./shaders.js",
+      "resolved": "scene_preview/js/lamp/shaders.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/s06_key.js",
+      "import": "../shadowplay.js",
+      "resolved": "scene_preview/js/shadowplay.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/s06_key.js",
+      "import": "./crane.js",
+      "resolved": "scene_preview/js/lamp/crane.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/s06_key.js",
+      "import": "./scenery.js",
+      "resolved": "scene_preview/js/lamp/scenery.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/s06_key.js",
+      "import": "./xiaoman.js",
+      "resolved": "scene_preview/js/lamp/xiaoman.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/s06_key.js",
+      "import": "./cards.js",
+      "resolved": "scene_preview/js/lamp/cards.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/s06_key.js",
+      "import": "./xm_rig.js",
+      "resolved": "scene_preview/js/lamp/xm_rig.js"
+    },
+    {
+      "source": "scene_preview/js/shadowplay.js",
+      "import": "./puppet.js",
+      "resolved": "scene_preview/js/puppet.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/scenery.js",
+      "import": "./crane.js",
+      "resolved": "scene_preview/js/lamp/crane.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/xiaoman.js",
+      "import": "../lib/draw.js",
+      "resolved": "scene_preview/js/lib/draw.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/xiaoman.js",
+      "import": "../lib/figure.js",
+      "resolved": "scene_preview/js/lib/figure.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/xiaoman.js",
+      "import": "./cards.js",
+      "resolved": "scene_preview/js/lamp/cards.js"
+    },
+    {
+      "source": "scene_preview/js/lib/draw.js",
+      "import": "./core.js",
+      "resolved": "scene_preview/js/lib/core.js"
+    },
+    {
+      "source": "scene_preview/js/lib/figure.js",
+      "import": "./draw.js",
+      "resolved": "scene_preview/js/lib/draw.js"
+    },
+    {
+      "source": "scene_preview/js/paint/shots/s31.js",
+      "import": "../paintshot.js",
+      "resolved": "scene_preview/js/paint/paintshot.js"
+    },
+    {
+      "source": "scene_preview/js/paint/shots/s31.js",
+      "import": "../../lamp/s06_key.js",
+      "resolved": "scene_preview/js/lamp/s06_key.js"
+    },
+    {
+      "source": "scene_preview/js/paint/shots/s31.js",
+      "import": "../../lamp/shots/shotkit.js",
+      "resolved": "scene_preview/js/lamp/shots/shotkit.js"
+    },
+    {
+      "source": "scene_preview/js/paint/shots/s31.js",
+      "import": "../../lamp/turtle.js",
+      "resolved": "scene_preview/js/lamp/turtle.js"
+    },
+    {
+      "source": "scene_preview/js/paint/shots/s31.js",
+      "import": "../../lamp/choreo.js",
+      "resolved": "scene_preview/js/lamp/choreo.js"
+    },
+    {
+      "source": "scene_preview/js/paint/shots/s31.js",
+      "import": "../../puppet.js",
+      "resolved": "scene_preview/js/puppet.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/shots/shotkit.js",
+      "import": "../s06_key.js",
+      "resolved": "scene_preview/js/lamp/s06_key.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/turtle.js",
+      "import": "./crane.js",
+      "resolved": "scene_preview/js/lamp/crane.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/s06_key_s31a.js",
+      "import": "./gl.js",
+      "resolved": "scene_preview/js/lamp/gl.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/s06_key_s31a.js",
+      "import": "./shaders.js",
+      "resolved": "scene_preview/js/lamp/shaders.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/s06_key_s31a.js",
+      "import": "../shadowplay.js",
+      "resolved": "scene_preview/js/shadowplay.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/s06_key_s31a.js",
+      "import": "./crane.js",
+      "resolved": "scene_preview/js/lamp/crane.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/s06_key_s31a.js",
+      "import": "./scenery.js",
+      "resolved": "scene_preview/js/lamp/scenery.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/s06_key_s31a.js",
+      "import": "./xiaoman.js",
+      "resolved": "scene_preview/js/lamp/xiaoman.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/s06_key_s31a.js",
+      "import": "./cards.js",
+      "resolved": "scene_preview/js/lamp/cards.js"
+    },
+    {
+      "source": "scene_preview/js/lamp/s06_key_s31a.js",
+      "import": "./xm_rig.js",
+      "resolved": "scene_preview/js/lamp/xm_rig.js"
+    },
+    {
+      "source": "scene_preview/held_front_preview.js",
+      "import": "./js/paint/shots/s31.js",
+      "resolved": "scene_preview/js/paint/shots/s31.js"
+    },
+    {
+      "source": "scene_preview/held_front_preview.js",
+      "import": "./js/lamp/s06_key_s31a.js",
+      "resolved": "scene_preview/js/lamp/s06_key_s31a.js"
+    },
+    {
+      "source": "scene_preview/held_front_preview.js",
+      "import": "./js/lamp/turtle.js",
+      "resolved": "scene_preview/js/lamp/turtle.js"
+    },
+    {
+      "source": "scene_preview/held_front_preview.js",
+      "import": "./js/puppet.js",
+      "resolved": "scene_preview/js/puppet.js"
+    }
+  ],
+  "counts": {
+    "runtimeFiles": 29,
+    "existingBlobs": 23,
+    "newFiles": 6,
+    "relativeImports": 35
+  }
+}

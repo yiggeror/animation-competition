@@ -1,0 +1,227 @@
+{
+  "status": "PASS_UNIQUE_TWO_ACTUAL_RENDER_AND_PROTECTED_SOURCES_VISUAL_READABILITY_BOUNDED",
+  "fixed_commit": "dfcc5b24f3bcd66c3ccb1816ce396a493a196205",
+  "original_script_executions": 1,
+  "original_script_exit_code": 0,
+  "image_generation_calls": 0,
+  "scene_draws": [
+    0,
+    116
+  ],
+  "B_executed": false,
+  "full336_executed": false,
+  "before_after_29_SHA_pass": true,
+  "rows": [
+    {
+      "path": "scene_preview/js/lamp/s06_key.js",
+      "expected": "fdd0835b5486ac66385cb339b2a2dbbb8521978d3716c6293c7ef5927ef887d9",
+      "after": "fdd0835b5486ac66385cb339b2a2dbbb8521978d3716c6293c7ef5927ef887d9",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/lamp/gl.js",
+      "expected": "ba98ba276559c430fc244a261387b32c77901a042e9c60b8acee31da3fdd0b29",
+      "after": "ba98ba276559c430fc244a261387b32c77901a042e9c60b8acee31da3fdd0b29",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/lamp/shaders.js",
+      "expected": "773d25786637b178c73df987f11539d8786f2516fc6c04099d81caae170ddf1d",
+      "after": "773d25786637b178c73df987f11539d8786f2516fc6c04099d81caae170ddf1d",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/shadowplay.js",
+      "expected": "2620c4164efb9a440f69b7d723d1d373894116115c9aa56442160b8a7b0739d8",
+      "after": "2620c4164efb9a440f69b7d723d1d373894116115c9aa56442160b8a7b0739d8",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/puppet.js",
+      "expected": "04b80760b97185ab8aea7826383d85f3c9d7789cd01aa1d8664fdc74bc4c30b7",
+      "after": "04b80760b97185ab8aea7826383d85f3c9d7789cd01aa1d8664fdc74bc4c30b7",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/lamp/crane.js",
+      "expected": "212e8a4fdad764fa50928c60a8efc956ad660c62377ea1ea152433a6fea4e642",
+      "after": "212e8a4fdad764fa50928c60a8efc956ad660c62377ea1ea152433a6fea4e642",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/lamp/scenery.js",
+      "expected": "63f8cc830c0ed37db2a178b8b9ae3ed69f2d455915e1c5fb3bd5222d7fa64030",
+      "after": "63f8cc830c0ed37db2a178b8b9ae3ed69f2d455915e1c5fb3bd5222d7fa64030",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/lamp/xiaoman.js",
+      "expected": "d3b47b12cbcbb4bdec96df0bfa85357543ab6ea98d627cdb8260550cfc6e60e0",
+      "after": "d3b47b12cbcbb4bdec96df0bfa85357543ab6ea98d627cdb8260550cfc6e60e0",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/lib/draw.js",
+      "expected": "e3d36d237c0f143f349bfd2fbc9afad24fc71897f56b990a5d2ed084d6c6d496",
+      "after": "e3d36d237c0f143f349bfd2fbc9afad24fc71897f56b990a5d2ed084d6c6d496",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/lib/core.js",
+      "expected": "748c357b97a71d6f122ef483923a64d3395bd692f6775b1601ef19b5bc08883e",
+      "after": "748c357b97a71d6f122ef483923a64d3395bd692f6775b1601ef19b5bc08883e",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/lib/figure.js",
+      "expected": "03c8928bbe6546af7206024a163c9f56d7826f60917c24ac448010fdae67f3de",
+      "after": "03c8928bbe6546af7206024a163c9f56d7826f60917c24ac448010fdae67f3de",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/lamp/cards.js",
+      "expected": "f6aa857fd1ba89ace359273e640b46915ff1d142cc4d90f1e84b148f430db130",
+      "after": "f6aa857fd1ba89ace359273e640b46915ff1d142cc4d90f1e84b148f430db130",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/lamp/xm_rig.js",
+      "expected": "99b819478174a2bf250883cf05dd3c9f9b5743c1cfb98c5fd58ab876d28b7b22",
+      "after": "99b819478174a2bf250883cf05dd3c9f9b5743c1cfb98c5fd58ab876d28b7b22",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/paint/shots/s31.js",
+      "expected": "6782316d1ad14ab0035be7d2a3cec2331b5d6a9a0965157cd8c0f89d8a592b68",
+      "after": "6782316d1ad14ab0035be7d2a3cec2331b5d6a9a0965157cd8c0f89d8a592b68",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/paint/paintshot.js",
+      "expected": "7d61a8e3cfa595b5a2877ce3624c2d8d186a1578cc684a8948471eb0eedca975",
+      "after": "7d61a8e3cfa595b5a2877ce3624c2d8d186a1578cc684a8948471eb0eedca975",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/lamp/shots/shotkit.js",
+      "expected": "3cd7989d0276f0edc791ac72fae11463e611f13c0a3433fe99c27f38cec20a74",
+      "after": "3cd7989d0276f0edc791ac72fae11463e611f13c0a3433fe99c27f38cec20a74",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/lamp/turtle.js",
+      "expected": "f7e91070a5959a2a5b97438a64db0f79af4890c2dbff1cdcbe6e4d6a28817ed2",
+      "after": "f7e91070a5959a2a5b97438a64db0f79af4890c2dbff1cdcbe6e4d6a28817ed2",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/lamp/choreo.js",
+      "expected": "6f838cdfb1aab203f83e5905eb4242a65addb4181ca8e66ed4c91340903e33d6",
+      "after": "6f838cdfb1aab203f83e5905eb4242a65addb4181ca8e66ed4c91340903e33d6",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/js/lamp/s06_key_s31a.js",
+      "expected": "b376b1b751a8e42cc35fb21f83e85585f01cc4d833e97c97a04a32c74206c2cb",
+      "after": "b376b1b751a8e42cc35fb21f83e85585f01cc4d833e97c97a04a32c74206c2cb",
+      "pass": true
+    },
+    {
+      "path": "background_east_inputs/S31_EAST_A_PROJECTION.json",
+      "expected": "c13b24736f3c9faaea5d4ea2f3c905cd33b8bfac8bb1bd9b7713990121f91cd0",
+      "after": "c13b24736f3c9faaea5d4ea2f3c905cd33b8bfac8bb1bd9b7713990121f91cd0",
+      "pass": true
+    },
+    {
+      "path": "F000_final_mother/S31_F000_MOTHER.png",
+      "expected": "7f94f27d0f60b756d8f01c5d05ddf8bca8dc632bec52bc39dcf0a6cf09896dc4",
+      "after": "7f94f27d0f60b756d8f01c5d05ddf8bca8dc632bec52bc39dcf0a6cf09896dc4",
+      "pass": true
+    },
+    {
+      "path": "F036_expression_call01/S31_F036_CHARACTER.png",
+      "expected": "288043bc5e2bc57176c082d1cf3a8dd886412ef4cf466c7c200ce0775139a820",
+      "after": "288043bc5e2bc57176c082d1cf3a8dd886412ef4cf466c7c200ce0775139a820",
+      "pass": true
+    },
+    {
+      "path": "F116_lift_call01/S31_F116_CHARACTER.png",
+      "expected": "5359eb949b8d067e02c86b5deb4c4780d25cebb682af94ce521a8de86fde198a",
+      "after": "5359eb949b8d067e02c86b5deb4c4780d25cebb682af94ce521a8de86fde198a",
+      "pass": true
+    },
+    {
+      "path": "GM_held_contact_call01/GM_HELD_ORIGINAL_CRANE_REAL_RODS_CANDIDATE.png",
+      "expected": "98641368443bf0aefa21e88386fddd7c6809cae70db00a1dc3ace1c3b043b698",
+      "after": "98641368443bf0aefa21e88386fddd7c6809cae70db00a1dc3ace1c3b043b698",
+      "pass": true
+    },
+    {
+      "path": "GM_held_contact_call01/ORIGINAL_COWHIDE_AND_SHAFT_MATERIAL_MASK.png",
+      "expected": "51d03a858b446d3184016bd7118890649c4aa891261d286270747bc8864aa185",
+      "after": "51d03a858b446d3184016bd7118890649c4aa891261d286270747bc8864aa185",
+      "pass": true
+    },
+    {
+      "path": "GM_held_contact_call01/HELD_PROP_DEPTH_OWNERSHIP_MASK.png",
+      "expected": "bfd3c83655e4637ea577ffa49440f554302d4cd677354631baf288e3b36164bd",
+      "after": "bfd3c83655e4637ea577ffa49440f554302d4cd677354631baf288e3b36164bd",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/held_front_preview.js",
+      "expected": "4b51be10c0f4e2efed643686066fc03c539f22febe5780f9f2cf7ec3d9ecd821",
+      "after": "4b51be10c0f4e2efed643686066fc03c539f22febe5780f9f2cf7ec3d9ecd821",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/held_front_preview.html",
+      "expected": "141d9a1f0fe7c4eca689b9acc5e87547cc50d9327861650141c419e064e5a3de",
+      "after": "141d9a1f0fe7c4eca689b9acc5e87547cc50d9327861650141c419e064e5a3de",
+      "pass": true
+    },
+    {
+      "path": "scene_preview/render_held_front_two.cjs",
+      "expected": "8fbddeafc7ef0921da39ea5d5f45aa1134f590297d35e27ca46d39df4b0ae11a",
+      "after": "8fbddeafc7ef0921da39ea5d5f45aa1134f590297d35e27ca46d39df4b0ae11a",
+      "pass": true
+    }
+  ],
+  "pngs": [
+    {
+      "file": "A000_HELD_FRONT_CANDIDATE.png",
+      "png_SHA256": "cc73686a706df6f2c4d49d5441a9b2e67906f74abeede608ff8aa8f137963c01",
+      "decoded_RGBA_SHA256": "80853996aec6fae81fd77024bc7c4471a9b8d970626f51228c9d1e13da4eea4a",
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "file": "A116_HELD_FRONT_CANDIDATE.png",
+      "png_SHA256": "da05bd8644f5eb7b816d4fffe8fc14420e634b8905831269c2834af85de04d77",
+      "decoded_RGBA_SHA256": "2d649a7b966593f2329c26f74b67c12d47a5d703d9398035fb3e0a636dc96462",
+      "size": [
+        960,
+        540
+      ]
+    }
+  ],
+  "page_errors": [],
+  "request_failures": [],
+  "native_candidate_SHA256": "98641368443bf0aefa21e88386fddd7c6809cae70db00a1dc3ace1c3b043b698",
+  "blurAt1920": 14,
+  "visual_root_actual": [
+    "both full960x540 PNGs inspected at original brightness",
+    "half-open dark floral bundle and double-arm support distinguishable",
+    "gold crane torso/upper contour and small red head color visible; curved neck detail remains weak under unchanged uniform blur",
+    "far sleeve root/hand fold support blurred: native seam anatomy cannot be certified from these scene images",
+    "foreground size/lighting source unchanged; only approved exact runtime executed"
+  ],
+  "not_claimed": [
+    "final director readability pass",
+    "B rerun or threshold changes",
+    "whole336 scene",
+    "audio/EDL/ready"
+  ]
+}
