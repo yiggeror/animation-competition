@@ -1,0 +1,239 @@
+{
+  "status": "F090_ZERO_CALL_FOUR_INPUTS_ASTRA_GATE_PENDING",
+  "frame_label_only": 90,
+  "new_image_calls": 0,
+  "submitted": false,
+  "generation_authorized": false,
+  "frozen_exposure": false,
+  "later_states_prepared": false,
+  "source084_commit": "2c7142b2129bf0bff3b55295d2b067f6f237008c",
+  "source084_final_file": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F084_two_domains_close_zero_call_001/F084_two_domains_closed_candidate.png",
+  "source084_sha256": "4df5d046a399f90aa798ca2cba2bd09e0cf7977eacb1058036bfabf52ddce448",
+  "source084_corrected_upper_sha256": "7cfcac453332493f40e606d041c94b307fe55849a62716851d99d860343eda76",
+  "target_method": "construction-only; each complete actual084 limb follows its own unscaled upper/forearm/whole-palm bone field, its unique straight T follows the whole palm; torso/head separate continuous field; no native drawing generated",
+  "source_actual_joint_locations_are_image_reference_not_3D_bone_certification": true,
+  "bone_reference": [
+    {
+      "side": "R",
+      "source_shoulder_elbow_wrist": [
+        [
+          555.0,
+          383.0
+        ],
+        [
+          535.0,
+          405.0
+        ],
+        [
+          489.0,
+          401.0
+        ]
+      ],
+      "target_shoulder_elbow_wrist": [
+        [
+          560.0,
+          390.0
+        ],
+        [
+          538.8958384420724,
+          410.9431221391867
+        ],
+        [
+          493.0,
+          416.0
+        ]
+      ],
+      "upper_bone_lengths_px": [
+        29.732137494637012,
+        29.73213749463701
+      ],
+      "forearm_bone_lengths_px": [
+        46.17358552246078,
+        46.173585522460755
+      ],
+      "upper_rotation_deg": 2.9457504702072583,
+      "forearm_rotation_deg": -11.257320703152118,
+      "whole_palm_own_T_rotation_deg": 2.0,
+      "wrist_translation_xy": [
+        4.0,
+        15.0
+      ]
+    },
+    {
+      "side": "L",
+      "source_shoulder_elbow_wrist": [
+        [
+          665.0,
+          420.0
+        ],
+        [
+          600.0,
+          510.0
+        ],
+        [
+          513.0,
+          483.0
+        ]
+      ],
+      "target_shoulder_elbow_wrist": [
+        [
+          660.0,
+          412.0
+        ],
+        [
+          592.153444077999,
+          499.8740282991669
+        ],
+        [
+          508.0,
+          465.0
+        ]
+      ],
+      "upper_bone_lengths_px": [
+        111.01801655587259,
+        111.01801655587259
+      ],
+      "forearm_bone_lengths_px": [
+        91.09335870413386,
+        91.09335870413385
+      ],
+      "upper_rotation_deg": 1.8336765754127669,
+      "forearm_rotation_deg": 5.268146449324178,
+      "whole_palm_own_T_rotation_deg": -2.0,
+      "wrist_translation_xy": [
+        -5.0,
+        -18.0
+      ]
+    }
+  ],
+  "T_rods": [
+    {
+      "role": "T_H",
+      "owner": "X.R",
+      "front": [
+        286.9506008013469,
+        442.4725729372334
+      ],
+      "pin": [
+        423.8963085360328,
+        360.45751884970645
+      ],
+      "slope": -0.598887365250032,
+      "intercept": 614.3236622080658
+    },
+    {
+      "role": "T_S",
+      "owner": "X.L",
+      "front": [
+        287.8148911690025,
+        262.96333247995324
+      ],
+      "pin": [
+        459.1846062997485,
+        442.4880225908593
+      ],
+      "slope": 1.047587025361735,
+      "intercept": -38.547813214593646
+    }
+  ],
+  "source_X": [
+    385.2012242976137,
+    369.1352100485561
+  ],
+  "target_X": [
+    396.5269542881121,
+    376.8486793038384
+  ],
+  "T_S_foreground_at_X": true,
+  "native_old_shaft_pixels_removed_before_new_complete_two_role_layers": true,
+  "old_hidden_shaft_cross_sections_reconstructed_from_each_own084_shaft_30px_away": true,
+  "head_uniform_scale": 1.0,
+  "head_torso_rebound_rotation_deg": -1.5,
+  "head_translation_xy": [
+    -2.0,
+    2.0
+  ],
+  "head_source": "passed corrected084 complete own head-neck volume",
+  "fixed_complete_lower_file": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F090_rebound_input_001/fixed_complete_lower_skin_roots_legs_shoes_no_old_skirt_edge.png",
+  "fixed_complete_lower_sha256": "da1ef7ce8167179f7268edfe1bd70781551f937a18d33c4a12bc62b17ae8e7c4",
+  "fixed_lower_RGBA_changes": 0,
+  "original_C_rods_layer": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F090_rebound_input_001/fixed_original_C_rods_scene_layer.png",
+  "original_C_rods_sha256": "47c3ece2f53c7e8b1bea4e3248a65a2518855bc6546f525bf809db62f5ec454e",
+  "actual_support_foreground_RGBA_changes": 0,
+  "actual_grandma_foreground_RGBA_changes": 0,
+  "actual_visible_original_C_RGBA_changes": 0,
+  "visible_complete_legs_shoes_all_black": true,
+  "natural_skirt_occlusion_no_naked_leg_horizontal_cut": true,
+  "inputs": [
+    {
+      "order": 1,
+      "path": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F090_rebound_input_001/inputs/01_unique_complete_F090_target_REVIEW_ONLY.png",
+      "sha256": "4622cb9a808c9e8b3693c42eee0f077513f3e2070a50f5c631b88164fb3332c0",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "order": 2,
+      "path": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F090_rebound_input_001/inputs/02_same_pose_dual_clamps_X_3x.png",
+      "sha256": "7f3a9970e0b68448949e6b1b316f5ddef1899a1dd96f850a61176dcba48741ae",
+      "size": [
+        1455,
+        930
+      ]
+    },
+    {
+      "order": 3,
+      "path": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F090_rebound_input_001/inputs/03_084_identity_head_clothes_shoes_patches_only.png",
+      "sha256": "d34bf6ed834a3105d6279f9bc9fc853bcfc6ef2c28f978e36854a5ee528d52f7",
+      "size": [
+        1080,
+        640
+      ]
+    },
+    {
+      "order": 4,
+      "path": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F090_rebound_input_001/inputs/04_complete_upper_whole_skirt_white_full_legs_black_mask.png",
+      "sha256": "51cff06e975a0b3fcdc65ec48de0251f775473c19f4414f0a99f36e62feb94d6",
+      "size": [
+        1672,
+        941
+      ]
+    }
+  ],
+  "three_state_compare_crop_fixed": [
+    235,
+    125,
+    865,
+    720
+  ],
+  "three_state_order": [
+    "079 passed",
+    "084 passed",
+    "090 construction target"
+  ],
+  "three_state_individual_alignment_applied": false,
+  "actual_head_volume_source084_target090": [
+    {
+      "width_px": 209.0,
+      "area_px": 18874
+    },
+    {
+      "width_px": 209.0,
+      "area_px": 18835
+    }
+  ],
+  "two_limb_fields_independent_to_avoid_shared_touch_boundary_fold": true,
+  "actual_views_inspected": [
+    "complete_target_gray_REVIEW_ONLY.jpg",
+    "contacts_1x_REVIEW_ONLY.png",
+    "inputs/02_same_pose_dual_clamps_X_3x.png",
+    "inputs/03_084_identity_head_clothes_shoes_patches_only.png",
+    "inputs/04_complete_upper_whole_skirt_white_full_legs_black_mask.png",
+    "079_passed_084_passed_090_target_same_canvas_upper_hands_1x.png",
+    "under_hem_target_left_mask_right_boundary_1x.png",
+    "fixed_support_1x_REVIEW_ONLY.png"
+  ],
+  "target_png_sha256": "4622cb9a808c9e8b3693c42eee0f077513f3e2070a50f5c631b88164fb3332c0"
+}
