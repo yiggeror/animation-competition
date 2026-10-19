@@ -1,0 +1,67 @@
+{
+  "source_commit": "643be12444c9afd42a6ffd6686e97ed7b85dea15",
+  "image_model_calls": 0,
+  "raw_outputs": 0,
+  "F004_cloud_calls": 0,
+  "candidates_only": true,
+  "frames": [
+    {
+      "frame": 12,
+      "source": "first36_gap_fill_001/F012/S20_F012_accepted.png",
+      "source_sha256": "c44dbbd9fcf8f5dc2f7f1fe81c4f7306ab234ecae1d13e0262d054f3eb7c0870",
+      "candidate": "S20_F012_cleanup_candidate.png",
+      "candidate_sha256": "18e1f5b71094c5fe3238068b1378cb8e76e556f7ca476bd0871516d78a428784",
+      "changed_pixels": 33,
+      "actual_change_bbox": [
+        801,
+        343,
+        808,
+        352
+      ],
+      "outside_allowed_RGBA_changes": 0,
+      "repair": "Remove off-axis short bamboo nib only;015 also remove isolated detached tip. Primary shaft, fingers and contact remain original pixels.",
+      "actual_after_close_and_full_viewed": true,
+      "finger_and_true_shaft_contact_pixels_unchanged": true
+    },
+    {
+      "frame": 15,
+      "source": "first36_gap_fill_001/F015/S20_F015_accepted.png",
+      "source_sha256": "3980c555bf964664bc55f943c69dbecd0b41f8bc576c3911eeeb077d4dc4e425",
+      "candidate": "S20_F015_cleanup_candidate.png",
+      "candidate_sha256": "4f359b8b3fae67ae9937bcd214978fc76802687b8995f46707c8c436156b6410",
+      "changed_pixels": 57,
+      "actual_change_bbox": [
+        780,
+        330,
+        805,
+        352
+      ],
+      "outside_allowed_RGBA_changes": 0,
+      "repair": "Remove off-axis short bamboo nib only;015 also remove isolated detached tip. Primary shaft, fingers and contact remain original pixels.",
+      "actual_after_close_and_full_viewed": true,
+      "finger_and_true_shaft_contact_pixels_unchanged": true
+    },
+    {
+      "frame": 22,
+      "source": "first36_gap_fill_001/F022/S20_F022_accepted.png",
+      "source_sha256": "946bf92b9c6953505583046e00bf316b4ae24c9e38dc6528b8e046463ff72c17",
+      "candidate": "S20_F022_cleanup_candidate.png",
+      "candidate_sha256": "fba8d01994b28cd2394e51b5dd75c572bf9eb35284b25b0c78820fb438f38072",
+      "changed_pixels": 1734,
+      "actual_change_bbox": [
+        944,
+        410,
+        989,
+        478
+      ],
+      "outside_allowed_RGBA_changes": 0,
+      "repair": "Clear detached old wrist line using unchanged raw022 palm edge; blend only wrist junction from actual raw022 and locked020 internal skin, restore continuous top/lower contour. No finger or rod changes.",
+      "actual_after_close_and_full_viewed": true,
+      "finger_and_true_shaft_contact_pixels_unchanged": true
+    }
+  ],
+  "full_film_or_scene_render": false,
+  "prior_sources_modified": false,
+  "raw022_material_sha256": "ac2121fcc73f17cc814c3116bd2f2c5a13ab8516a65c7077f13e4dd69caca2bf",
+  "locked020_material_sha256": "de378cd06028313388cd955e8feb56aef684fd63f5a9f7019fa148aad7885b12"
+}
