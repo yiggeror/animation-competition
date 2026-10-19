@@ -1,0 +1,28 @@
+{
+  "status": "PASS_ACTUAL_PRODUCTION192_BYTE_EQUIVALENCE",
+  "fixed_production_commit": "b4753786f0f08d400a9729796fd3c0aa2e4aea39",
+  "candidate_delivery_commit": "6abc6cdadc7aeaad2893f0ef87c680a2000b3208",
+  "production_entry": "js/anim/s15_drawn.js",
+  "all192_production_Canvas_byte_equal_candidate": true,
+  "encoded_MP4_byte_equal_candidate": true,
+  "all192_decoded_video_frames_equivalent": true,
+  "full_candidate_decode_proof_reused_by_identical_MP4": true,
+  "candidate_prior_max_RGB_MSE": 8.841352462768555,
+  "production_MP4_SHA256": "c0e2a0cd0ba9ebd6ed1f6829df558f4e452e680a33007126f9c57e492e76ffac",
+  "frames": 192,
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": "24/1",
+  "duration_seconds": 8,
+  "audio_streams": 0,
+  "production_render_runs": 1,
+  "production_encode_runs": 1,
+  "old_candidate_rerendered": false,
+  "production_asset_count": 8,
+  "all_production_assets_HTTP200": true,
+  "reviews_request_count": 0,
+  "fixed14_source_paths_postchecked": true,
+  "imagegen_calls": 0
+}
