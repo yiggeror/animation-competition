@@ -1,0 +1,29 @@
+{
+  "human_pixel_source_only": {
+    "path": "collab/reviews/cloud_s12_20261018/F090_SAME_RAW_SEMANTIC_OWNERSHIP_FIXED_20261019/candidate/F090.png",
+    "SHA256": "5cbb830781a2a81c3ee5039229085b01da0da29546df6142945e3db995cec7c3",
+    "commit": "be3d6da289a50b6a7b853415684e3d46b0fa460c"
+  },
+  "human_joint_proxies": "Actual locked090 visible shoulder/elbow/wrist proxies rebound from the final local raw registration plus exact locked whole-arm translations; no old code human points.",
+  "old_code_table_reads": "Crane joint angles and fixed physical model shaft lengths only; no human points_scene/grip coordinates. C110 current timing overrides old table114 label.",
+  "image_technical_volumes": "Explicit opaque construction only, all new source/native illustration required before production.",
+  "exact_final_inputs": [
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F094_COMPLETE_TARGET_FROM_LOCKED090_20261019/inputs/01_F094_UNIQUE_WHOLE_RISE_RETRACT_ROUND_KNEES.png",
+      "SHA256": "addb188afbb9de730d4b860de3177f97f3e137138f0a4a54ba79776ec79efee8",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "collab/reviews/cloud_s12_20261018/F094_COMPLETE_TARGET_FROM_LOCKED090_20261019/inputs/02_SAME_F094_TRUE65_PAPER_RODS_BOX_GROUND_CONTEXT.png",
+      "SHA256": "26835cd643d7091980e7756eff9b6136ff14a386759e20099eba080e423135c3",
+      "size": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "prompt_SHA256": "3979c1aebe5a3cf1be69d798e158f777238601fb31e2dcb8d5389051f24f16d3"
+}

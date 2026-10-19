@@ -18,16 +18,25 @@ UT=np.asarray(g['torso_head_rigid_matrix']);TH=np.asarray(g['thigh_rigid_matrix'
 rolemasks={r:np.asarray(Image.open(M/f'layers/{r}_WHOLE_REAL_ARM_EXACT_TRANSLATION.png').convert('RGBA'))[:,:,3]>0 for r in ['R','L']}
 collar=np.asarray(Image.open(M/'geometry/ONE_WHOLE_ORIGINAL_COLLAR_AND_CENTRAL_CHEST.png').convert('L'))>0
 arms=rolemasks['R']|rolemasks['L'];remove=arms&~collar
+front=np.interp(Y,[0,520,580,640,710,800,880,1535],[1024,700,680,630,600,630,660,1024])
+remove|=(Y>520)&(Y<880)&(X>front) # Clear the entire old competing appendage footprint, not only cached arm alpha.
+
 hem=np.interp(X,[0,250,300,360,420,480,540,600,660,1023],[800,800,810,830,850,875,905,930,955,960])
-torso=(Y<hem+8)&~remove&~fixed;thigh=(Y>hem-14)&~fixed
+shirt=Image.new('L',src.size);ImageDraw.Draw(shirt).polygon([(250,0),(850,0),(850,700),(700,700),(610,735),(612,796),(638,859),(659,910),(660,945),(620,934),(570,909),(520,888),(470,863),(431,837),(404,837),(375,831),(350,819),(300,802),(326,754),(359,700),(395,655),(418,590),(428,480),(438,410),(450,350),(250,350)],fill=255)
+torso=(np.asarray(shirt)>0)&~remove&~fixed;thigh=(Y>hem+16)&~fixed # Do not duplicate the old shirt hem inside the independently rotating thigh reference.
+
 out=Image.new('RGBA',src.size)
 # Both complete moving knee faces, natural upper-shin folded connection and
 # grounded round contact are explicit new-drawing activity, not old flat ink.
-knee=Image.new('RGBA',src.size)
-pant_support=np.zeros_like(B);pantmask=(B[:,:,3]>0)&(Y>hem-18)&~fixed;pant_support[pantmask]=[52,57,77,255];knee.alpha_composite(Image.fromarray(pant_support));kd=ImageDraw.Draw(knee)
-kd.polygon([(430,830),(570,860),(690,930),(665,960),(520,910)],fill=(52,57,77,255))
-kd.ellipse((452,1113,721,1317),fill=(52,57,77,255));kd.ellipse((566,1082,718,1250),fill=(52,57,77,255))
-out.alpha_composite(knee);out.alpha_composite(warp(part(thigh),TH))
+# A complete opaque technical thigh/knee envelope replaces construction gaps;
+# actual source pants retain their shading inside it. It is not production art.
+outline=np.array([(365,760),(445,770),(520,790),(610,830),(685,875),(700,1000),(719,1110),(722,1218),(706,1278),(675,1305),(616,1316),(575,1313),(525,1309),(485,1298),(430,1260),(392,1190),(360,1120),(330,1085),(350,1080),(390,1055),(415,1055),(408,1010),(398,950),(383,890),(385,830)],float)
+smooth=[]
+for i in range(len(outline)):
+ p0,p1,p2,p3=[outline[j%len(outline)] for j in [i-1,i,i+1,i+2]]
+ for t in np.linspace(0,1,16,endpoint=False):smooth.append(.5*((2*p1)+(-p0+p2)*t+(2*p0-5*p1+4*p2-p3)*t*t+(-p0+3*p1-3*p2+p3)*t*t*t))
+pm=Image.new('L',(4096,6144));ImageDraw.Draw(pm).polygon([tuple(4*q) for q in smooth],fill=255);pm=pm.resize(src.size,Image.Resampling.LANCZOS)
+pants=Image.new('RGBA',src.size,(52,57,77,255));pants.putalpha(pm);pants.alpha_composite(warp(part(thigh),TH));pa=np.asarray(pants).copy();pa[:,:,3]=np.minimum(pa[:,:,3],np.asarray(pm));pa[pa[:,:,3]==0]=0;out.alpha_composite(Image.fromarray(pa))
 core=np.asarray(Image.open(M/'geometry/CONTINUOUS_REAL_BODY_CORE_UNDER_NEW_SLEEVES.png').convert('L'))>0
 tech=np.zeros_like(B);tech[core&(B[:,:,3]>0)]=[55,110,180,255]
 out.alpha_composite(warp(Image.fromarray(tech),UT));out.alpha_composite(warp(part(torso),UT))
