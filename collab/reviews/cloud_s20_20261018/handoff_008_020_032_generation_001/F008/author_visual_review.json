@@ -1,0 +1,38 @@
+{
+  "result": "AUTHOR_REJECTED / APPROVED_F008_POSE_NOT_APPLIED",
+  "actual_raw": "S20_F008_attempt001_raw.png",
+  "actual_raw_sha256": "3025b806666ebdacfaa2e2cd99b9e7581b6f23789a0340c6fac3c3f9711e6b35",
+  "actual_dimensions": [
+    1672,
+    941
+  ],
+  "original_tool_path": "/workspace/generated_images/exec-1ab6085f-6473-47ff-8705-d1c0d1f5b770.png",
+  "original_kept_unmodified": true,
+  "source_master_sha256": "55ce8658e3454dcb92e8408dda25bc678f856d82bbb10cd80ff06a01fa0ab0c8",
+  "frozen_gate": "c1b1833b7dfe806ae2daa1b84ddacfb804070f3d",
+  "actual_image_visual_findings": [
+    "Actual child palms remain near mother-state low positions around y460-520.",
+    "Approved F008 X.R target is [806,318], approaching T_H from above; no raised open palm is present there.",
+    "The actual child shoulder/elbow/wrist gesture follows the source mother rather than the approved full-volume target.",
+    "No drawn technical circles were copied, but this does not make the unchanged gesture a valid F008."
+  ],
+  "acceptance_checks": {
+    "canvas_size": "PASS 1672x941",
+    "approved_arm_pose": "FAIL",
+    "hand_to_rod_preparation": "FAIL required approach missing",
+    "source_black_domain_in_QA_composite": "PASS zero RGBA changes",
+    "retained_as_drawing": false,
+    "author_acceptance": false
+  },
+  "QA_composite_only": "qa/S20_F008_rejected_mask_QA.png / not accepted or used as next-state reference",
+  "tool_call_count_this_batch": 1,
+  "raw_count_this_batch": 1,
+  "cumulative_historical_plus_current_requests": 4,
+  "cumulative_historical_plus_current_raws": 4,
+  "retry_this_state": false,
+  "F020_submitted": false,
+  "F032_submitted": false,
+  "next_states_blocked_by": "User requires predecessor actual self-review pass; one authorized F008 attempt was rejected.",
+  "cause_scope": "Observed outcome only; no unsupported claim about the model internals or why it followed the mother.",
+  "reviewed_utc": "2026-10-19T03:41:21.785485+00:00"
+}
