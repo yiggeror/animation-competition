@@ -1,0 +1,34 @@
+node:assert:152
+  throw new AssertionError(obj);
+  ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be loosely deep-equal:
+
+[
+  'Camera cut is 3.2, expected5.5',
+  'F132 icon opacity is 0, expected1'
+]
+
+should loosely deep-equal
+
+[]
+    at Object.<anonymous> (/workspace/scratch/f060b5601755/s28_rod_clearance_review/stage_module_candidate/handoff_full192/test_phone_gate.cjs:7:108)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: [
+    'Camera cut is 3.2, expected5.5',
+    'F132 icon opacity is 0, expected1'
+  ],
+  expected: [],
+  operator: 'deepEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0
