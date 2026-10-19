@@ -1,0 +1,465 @@
+{
+  "purpose": "Isolate fresh Canvas versus sequential S07 history at F008; strict expected SHA unchanged",
+  "sourceChecks": [
+    {
+      "path": "js/anim/s01_drawn.js",
+      "actual": "8372b98b68ae4e17200e4e6065871f418827bb922b696d57ab8548f44206a8f4",
+      "expected": "8372b98b68ae4e17200e4e6065871f418827bb922b696d57ab8548f44206a8f4",
+      "pass": true
+    },
+    {
+      "path": "js/anim/s04_drawn.js",
+      "actual": "883eb313467c755722e44dc864596bc2d7d724833c326bad9c885239def9936d",
+      "expected": "883eb313467c755722e44dc864596bc2d7d724833c326bad9c885239def9936d",
+      "pass": true
+    },
+    {
+      "path": "js/anim/s07_drawn.js",
+      "actual": "07818e2935635c8b2801901ef3ddc61fc9fe55950725ce4ca60eeab146c736a4",
+      "expected": "07818e2935635c8b2801901ef3ddc61fc9fe55950725ce4ca60eeab146c736a4",
+      "pass": true
+    },
+    {
+      "path": "js/anim/opening_power_strip.js",
+      "actual": "caffd8110ef164dade76f8ce8ae9ba82cd0691357bad053e19afc8bc06a1901c",
+      "expected": "caffd8110ef164dade76f8ce8ae9ba82cd0691357bad053e19afc8bc06a1901c",
+      "pass": true
+    }
+  ],
+  "cases": [
+    {
+      "name": "FRESH_DIRECT_F008",
+      "frames": [
+        {
+          "frame": 8,
+          "sha256": "68ccf82317e5e7425fd136274615dc7d80a6596a6de723841f6a9a1cbbcb9685",
+          "contextAttributes": {
+            "alpha": true,
+            "colorSpace": "srgb",
+            "colorType": "unorm8",
+            "desynchronized": false,
+            "toneMapping": {
+              "mode": "standard"
+            },
+            "willReadFrequently": false
+          }
+        }
+      ],
+      "expected": "68ccf82317e5e7425fd136274615dc7d80a6596a6de723841f6a9a1cbbcb9685",
+      "pass": true
+    },
+    {
+      "name": "FRESH_S07_SEQUENCE_000_008",
+      "frames": [
+        {
+          "frame": 0,
+          "sha256": "e1e4976e50636939e0468cbd0edf496fe222acb35ccade707cca09117755fd4c",
+          "contextAttributes": {
+            "alpha": true,
+            "colorSpace": "srgb",
+            "colorType": "unorm8",
+            "desynchronized": false,
+            "toneMapping": {
+              "mode": "standard"
+            },
+            "willReadFrequently": false
+          }
+        },
+        {
+          "frame": 1,
+          "sha256": "e408fea94897d8f1a697aad7bf76e225243acd7b2c1fda274707a4be3cf408f2",
+          "contextAttributes": {
+            "alpha": true,
+            "colorSpace": "srgb",
+            "colorType": "unorm8",
+            "desynchronized": false,
+            "toneMapping": {
+              "mode": "standard"
+            },
+            "willReadFrequently": false
+          }
+        },
+        {
+          "frame": 2,
+          "sha256": "74b14e1c413f0167bdc3efccb57792cd972f89199fa8a434ba7537bf135f79f1",
+          "contextAttributes": {
+            "alpha": true,
+            "colorSpace": "srgb",
+            "colorType": "unorm8",
+            "desynchronized": false,
+            "toneMapping": {
+              "mode": "standard"
+            },
+            "willReadFrequently": false
+          }
+        },
+        {
+          "frame": 3,
+          "sha256": "6622edec89bc37630c7f54b58f23245c999f80dd0f81d56eab114d6680c17f36",
+          "contextAttributes": {
+            "alpha": true,
+            "colorSpace": "srgb",
+            "colorType": "unorm8",
+            "desynchronized": false,
+            "toneMapping": {
+              "mode": "standard"
+            },
+            "willReadFrequently": false
+          }
+        },
+        {
+          "frame": 4,
+          "sha256": "f363b042713d508fdbd287f86bd693868ed1f327b7e51dc36d6b23364eb2fe1f",
+          "contextAttributes": {
+            "alpha": true,
+            "colorSpace": "srgb",
+            "colorType": "unorm8",
+            "desynchronized": false,
+            "toneMapping": {
+              "mode": "standard"
+            },
+            "willReadFrequently": false
+          }
+        },
+        {
+          "frame": 5,
+          "sha256": "e56a19cff36bc196b9931f9f5550991795ce5fac72a64cf91876aa8013f58811",
+          "contextAttributes": {
+            "alpha": true,
+            "colorSpace": "srgb",
+            "colorType": "unorm8",
+            "desynchronized": false,
+            "toneMapping": {
+              "mode": "standard"
+            },
+            "willReadFrequently": false
+          }
+        },
+        {
+          "frame": 6,
+          "sha256": "2452f14a3885d02d15deb47b28f16ddddfb0baaf4307beaa276d1572d0caabb8",
+          "contextAttributes": {
+            "alpha": true,
+            "colorSpace": "srgb",
+            "colorType": "unorm8",
+            "desynchronized": false,
+            "toneMapping": {
+              "mode": "standard"
+            },
+            "willReadFrequently": false
+          }
+        },
+        {
+          "frame": 7,
+          "sha256": "a6131b3cd0d89efda297793d9ba87978c5aac193eed061a8a64a07afc383a33e",
+          "contextAttributes": {
+            "alpha": true,
+            "colorSpace": "srgb",
+            "colorType": "unorm8",
+            "desynchronized": false,
+            "toneMapping": {
+              "mode": "standard"
+            },
+            "willReadFrequently": false
+          }
+        },
+        {
+          "frame": 8,
+          "sha256": "68ccf82317e5e7425fd136274615dc7d80a6596a6de723841f6a9a1cbbcb9685",
+          "contextAttributes": {
+            "alpha": true,
+            "colorSpace": "srgb",
+            "colorType": "unorm8",
+            "desynchronized": false,
+            "toneMapping": {
+              "mode": "standard"
+            },
+            "willReadFrequently": false
+          }
+        }
+      ],
+      "expected": "68ccf82317e5e7425fd136274615dc7d80a6596a6de723841f6a9a1cbbcb9685",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "console": [
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "type": "warning",
+      "text": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+    }
+  ],
+  "responses": [
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/__s07_diagnostic__.html",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/anim/s01_drawn.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/anim/opening_power_strip.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/paint/paintshot.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/paint/shots/s01.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/code/s08.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/rig/flipbook.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/anim/s01_drawn_timeline.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/code/hand3d.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/anim/s04_drawn.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/lib/core.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/anim/s04_drawn_timeline.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/anim/s07_drawn.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/anim/s04.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/anim/s01.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/anim/kit.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/chars/xiaoman.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/chars/nainai.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/lib/draw.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/lib/figure.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/chars/face.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/js/chars/hand.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/assets/paint/bg_01_room_wide.png",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/assets/chars/x07/F008.png",
+      "status": 200
+    },
+    {
+      "case": "FRESH_DIRECT_F008",
+      "url": "http://127.0.0.1:33409/assets/chars/g07/F008.png",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/__s07_diagnostic__.html",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/anim/s01_drawn.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/anim/opening_power_strip.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/paint/shots/s01.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/paint/paintshot.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/code/s08.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/anim/s01_drawn_timeline.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/rig/flipbook.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/code/hand3d.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/anim/s04_drawn.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/lib/core.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/anim/s04_drawn_timeline.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/anim/s07_drawn.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/anim/kit.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/anim/s04.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/anim/s01.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/chars/xiaoman.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/chars/nainai.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/lib/draw.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/lib/figure.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/chars/face.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/js/chars/hand.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/assets/paint/bg_01_room_wide.png",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/assets/chars/x07/F000.png",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/assets/chars/g07/F000.png",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/assets/chars/x07/F003.png",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/assets/chars/x07/F006.png",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/assets/chars/x07/F008.png",
+      "status": 200
+    },
+    {
+      "case": "FRESH_S07_SEQUENCE_000_008",
+      "url": "http://127.0.0.1:33409/assets/chars/g07/F008.png",
+      "status": 200
+    }
+  ]
+}

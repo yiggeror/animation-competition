@@ -1,0 +1,181 @@
+{
+  "purpose": "Isolate fresh Canvas versus sequential S07 history at F008; strict expected SHA unchanged",
+  "sourceChecks": [
+    {
+      "path": "js/anim/s01_drawn.js",
+      "actual": "8372b98b68ae4e17200e4e6065871f418827bb922b696d57ab8548f44206a8f4",
+      "expected": "8372b98b68ae4e17200e4e6065871f418827bb922b696d57ab8548f44206a8f4",
+      "pass": true
+    },
+    {
+      "path": "js/anim/s04_drawn.js",
+      "actual": "883eb313467c755722e44dc864596bc2d7d724833c326bad9c885239def9936d",
+      "expected": "883eb313467c755722e44dc864596bc2d7d724833c326bad9c885239def9936d",
+      "pass": true
+    },
+    {
+      "path": "js/anim/s07_drawn.js",
+      "actual": "07818e2935635c8b2801901ef3ddc61fc9fe55950725ce4ca60eeab146c736a4",
+      "expected": "07818e2935635c8b2801901ef3ddc61fc9fe55950725ce4ca60eeab146c736a4",
+      "pass": true
+    },
+    {
+      "path": "js/anim/opening_power_strip.js",
+      "actual": "caffd8110ef164dade76f8ce8ae9ba82cd0691357bad053e19afc8bc06a1901c",
+      "expected": "caffd8110ef164dade76f8ce8ae9ba82cd0691357bad053e19afc8bc06a1901c",
+      "pass": true
+    }
+  ],
+  "cases": [
+    {
+      "name": "FRESH_CPU_CONTEXT_F008",
+      "frames": [
+        {
+          "frame": 8,
+          "sha256": "68ccf82317e5e7425fd136274615dc7d80a6596a6de723841f6a9a1cbbcb9685",
+          "contextAttributes": {
+            "alpha": true,
+            "colorSpace": "srgb",
+            "colorType": "unorm8",
+            "desynchronized": false,
+            "toneMapping": {
+              "mode": "standard"
+            },
+            "willReadFrequently": true
+          }
+        }
+      ],
+      "pass": true,
+      "expected": "68ccf82317e5e7425fd136274615dc7d80a6596a6de723841f6a9a1cbbcb9685"
+    }
+  ],
+  "errors": [],
+  "console": [],
+  "responses": [
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/__s07_diagnostic__.html",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/anim/s01_drawn.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/anim/opening_power_strip.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/paint/shots/s01.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/paint/paintshot.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/anim/s01_drawn_timeline.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/code/s08.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/rig/flipbook.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/code/hand3d.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/anim/s04_drawn.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/lib/core.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/anim/s04_drawn_timeline.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/anim/s07_drawn.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/anim/kit.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/anim/s04.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/anim/s01.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/chars/xiaoman.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/lib/draw.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/chars/nainai.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/lib/figure.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/chars/face.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/js/chars/hand.js",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/assets/paint/bg_01_room_wide.png",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/assets/chars/x07/F008.png",
+      "status": 200
+    },
+    {
+      "case": "FRESH_CPU_CONTEXT_F008",
+      "url": "http://127.0.0.1:40211/assets/chars/g07/F008.png",
+      "status": 200
+    }
+  ]
+}
