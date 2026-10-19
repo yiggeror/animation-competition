@@ -1,0 +1,56 @@
+{
+  "source_commit": "07ae7dff749abd53394e05b1c37f232afee67791",
+  "cwd": "/workspace/s09-full96-render-20261019-07ae7df",
+  "argv": [
+    "/workspace/s09-full96-render-20261019-07ae7df/tools/js/frames.cjs",
+    "js/anim/s09_drawn.js",
+    "build/S09_full96",
+    "--fps",
+    "24",
+    "--w",
+    "1920",
+    "--h",
+    "1080",
+    "--workers",
+    "2",
+    "--mp4",
+    "build/S09_full96.mp4"
+  ],
+  "started_utc": "2026-10-19T07:52:37.147Z",
+  "pages": 3,
+  "requests": 62,
+  "responses": 62,
+  "request_failures": [],
+  "page_errors": [],
+  "console_errors": [
+    {
+      "page": 1,
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:41159/favicon.ico",
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "response_status_counts": {
+    "200": 62
+  },
+  "chromium_runtime": {
+    "default_path": "/home/agent/.cache/ms-playwright/chromium-1200/chrome-linux64/chrome",
+    "default_path_exists": false,
+    "effective_executable": "/usr/bin/chromium",
+    "options": {
+      "executablePath": "/usr/bin/chromium",
+      "headless": true,
+      "args": [
+        "--no-sandbox",
+        "--disable-dev-shm-usage"
+      ]
+    },
+    "production_changes": false
+  },
+  "chromium_version": "154.0.8037.57",
+  "process_exit_code": 0,
+  "finished_utc": "2026-10-19T07:53:41.343Z"
+}
