@@ -1,0 +1,178 @@
+{
+  "status": "LIMITED_COMMON_REGISTRATION_AND_WHOLE_TROUSER_TRIAL_FEASIBLE_PENDING_ROOT_ASTRA",
+  "raw_viewed": "originals/F095_call01_RAW.png",
+  "raw_SHA256": "0fb9780d5151adb6a7f14d0e226d55f5e14e12fe270a5d9f90389269f79ead3d",
+  "actual_QA_viewed": [
+    {
+      "path": "qa/whole_frozen_actual_trial_gray.png",
+      "sha256": "124bd124b6523f5ba96f1efa88fc36d924d6002ae876834cfd07233cd5bcd878"
+    },
+    {
+      "path": "qa/whole_frozen_actual_trial_dark.png",
+      "sha256": "0006632fa80b173dbe0b5b0603b7faae62c30b651bd08bf7582bd4d9b720cd95"
+    },
+    {
+      "path": "qa/waist_complete_native_connections_gray.png",
+      "sha256": "e668f1ed62514133630f293521da2d0c05d57a59856d0de2503519efc8180822"
+    },
+    {
+      "path": "qa/waist_complete_native_connections_dark.png",
+      "sha256": "c6caf9173b7334e9646aea1fc50339fadd2b94a148ff02099dcf04fc89bd3885"
+    },
+    {
+      "path": "qa/source_ankles_and_two_whole_shoes_gray.png",
+      "sha256": "6da1ed99f5e3c3393879b2fb446b37577b0f9ee54c073296d759101285796604"
+    },
+    {
+      "path": "qa/source_ankles_and_two_whole_shoes_dark.png",
+      "sha256": "41ab3575c5537be141b92d6833cfc57ead96cdaf172b2bbc580cfb07a02dda4b"
+    },
+    {
+      "path": "qa/visible_soles_expected_CYAN_actual_ORANGE_dark.png",
+      "sha256": "3816b091b43409fcb49d548a319f58b9623a36edb13365ad2b5a1e3814088f1d"
+    },
+    {
+      "path": "masks/RAW_one_complete_navy_pants_source_material.png",
+      "sha256": "3d42c60f722c9475b3076bca70b979768269267b952801d24dce027f2eaf0bbf"
+    },
+    {
+      "path": "candidate/RAW_original_color_whole_trousers_EXTRACTED_TRIAL.png",
+      "sha256": "f423c5393f6af45661ebd1c91fbe5c438a41ab18b071bce8a01b9da0438656f4"
+    }
+  ],
+  "findings": [
+    "Under one approved whole135/256+[1120,250] inverse, front shoe/rear exposed toe/sole match frozen placement. Both alpha128 visible bottoms1022; no shoe fitting needed.",
+    "Complete waist/pelvis/both legs are present in actual raw. NearRIGHT has collected in front, farLEFT remains planted behind. No forced footlift/roll.",
+    "New cuffs meet true source ankle/shoe layers without large air gap or painted connector; near source shoe naturally occludes rear shoe.",
+    "Small genuine navy island between hands kept at same raw coordinates. Its connection is hand-occluded; no new bridge or hole cut.",
+    "Raw background haze and returned arm/blouse/shoe repaint are not adopted. Exact frozen five source files are read only.",
+    "Raw trousers slightly blue/bright against057/062; original color preserved. Mean color diagnostic is not palette approval.",
+    "Existing source sleeve cut/AA edges are source, not automatically accepted final seams."
+  ],
+  "ground_actual_alpha128": {
+    "expected": {
+      "bbox_local_halfopen": [
+        241,
+        730,
+        436,
+        773
+      ],
+      "bottom_local": 772,
+      "bottom_native": 1022
+    },
+    "actual": {
+      "bbox_local_halfopen": [
+        240,
+        730,
+        436,
+        773
+      ],
+      "bottom_local": 772,
+      "bottom_native": 1022
+    }
+  },
+  "white_material_boundary_error_native": {
+    "median": 0,
+    "p95": 1,
+    "max": 1,
+    "note": "Bright white core maxlocal770 differs from dark outsole bottom772."
+  },
+  "source_files": [
+    {
+      "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F095_native_call01_513d6ee0/frozen_input_513d6ee0/layers/F095_far_shoe_ankle_SUPPORT_FIXED.png",
+      "sha256": "64637d1d886e25fdcf3c888b533c1a8164844fe429a87295cfb9194dc585503c",
+      "source_not_edited": true
+    },
+    {
+      "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F095_native_call01_513d6ee0/frozen_input_513d6ee0/layers/F095_far_complete_arm_jade_hand.png",
+      "sha256": "47b3cd0d915c0f5fdb89fdccebf456be5d1c6fe2a2e0b5dd446798f3a9005423",
+      "source_not_edited": true
+    },
+    {
+      "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F095_native_call01_513d6ee0/frozen_input_513d6ee0/layers/F095_body_head_blouse.png",
+      "sha256": "cd7d591556c4b2ed0442cda22797f00d5f4d104062ac651f629ec4fa5f8a2bec",
+      "source_not_edited": true
+    },
+    {
+      "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F095_native_call01_513d6ee0/frozen_input_513d6ee0/layers/F095_near_complete_arm.png",
+      "sha256": "2db45fac5edb43f0680beeb3b9e8ba56a2663817d49a414afbae134f9ecaba32",
+      "source_not_edited": true
+    },
+    {
+      "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F095_native_call01_513d6ee0/frozen_input_513d6ee0/layers/F095_near_shoe_ankle_COLLECTED_LANDED.png",
+      "sha256": "60805bc58c5035c804025d84a00f122e434fb217e68478c86d671a5ab6a180a3",
+      "source_not_edited": true
+    }
+  ],
+  "individual_source_front_alpha255_RGBA_change_count": 0,
+  "individual_front_alpha255_pixels_checked": 3120,
+  "rounded_composite_front_alpha255_pixels_changed_over_new_backlayer": 1,
+  "AA_composition_note": "One rounded composite255 overlap changes naturally over new trousers. Never claim allsourceAA flat pixels0diff. Individual actual255 material core0diff and original source files unchanged.",
+  "actual_pants_raw_mask_kept_RGBA_changes": 0,
+  "palette": {
+    "F057": {
+      "interior_mean_RGB": [
+        41.44415494726268,
+        45.42688975389252,
+        60.95190858864892
+      ],
+      "interior_median_RGB": [
+        42.0,
+        46.0,
+        61.0
+      ],
+      "pixels": 63712
+    },
+    "F062": {
+      "interior_mean_RGB": [
+        43.25004610303609,
+        46.35584837968784,
+        61.169860349712486
+      ],
+      "interior_median_RGB": [
+        43.0,
+        46.0,
+        62.0
+      ],
+      "pixels": 59649
+    },
+    "call01_original": {
+      "interior_mean_RGB": [
+        42.99128318939009,
+        46.598358244872855,
+        63.83954116420225
+      ],
+      "interior_median_RGB": [
+        45.0,
+        49.0,
+        66.0
+      ],
+      "pixels": 37399,
+      "RGB_correction": [
+        0,
+        0,
+        0
+      ]
+    },
+    "call01_minus_F057": [
+      1.5471282421274068,
+      1.1714684909803381,
+      2.887632575553333
+    ],
+    "call01_minus_F062": [
+      -0.25876291364600235,
+      0.2425098651850135,
+      2.669680814489766
+    ]
+  },
+  "pants_mask_limits": "Semantic diagnostic2px actual dark/AA edge and under-blouse outline included. Root must independently check exact adoption edges; no RGB/alpha paint or warp.",
+  "specific_registration_or_large_connection_blockers_seen": [],
+  "remaining_gates": [
+    "Root/Astra independent wholevolume, sleeve/waist/cuff exact boundaries and palette acceptance.",
+    "No090→095 exposure or subsequent100 state review supplied."
+  ],
+  "candidate_path": "candidate/F095_same_inverse_original_pants_and_source_layers_TRIAL_NOT_APPROVED.png",
+  "candidate_SHA256": "dcf919f412fd379a34ea69329210a418547dcccc089e1b36aa208024a04fdca4",
+  "new_image_calls": 0,
+  "F100_opened": false
+}

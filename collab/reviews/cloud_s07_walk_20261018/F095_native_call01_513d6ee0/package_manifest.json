@@ -1,10 +1,10 @@
 {
-  "status": "ONE_ORIGINAL_FIRST_DELIVERY_PENDING_REGISTRATION",
+  "status": "ONE_ORIGINAL_FULL_VOLUME_COMMON_REGISTRATION_PENDING_ASTRA_STATIC_COLOR",
   "files": [
     {
       "path": "README.md",
-      "sha256": "446fe3db08cf9f0ee5c2a0e9793d3864b08555abdb45a0f35a8ebeb8dc5af3b5",
-      "bytes": 1401
+      "sha256": "73f506ecb6ddcc4cd24e8178311e7e6ee04cd73b273a03d9d161622258f04774",
+      "bytes": 2826
     },
     {
       "path": "frozen_input_513d6ee0/README.md",
@@ -105,6 +105,11 @@
       "path": "frozen_input_513d6ee0/masks/small_sleeve_connection_WHITE_domains.png",
       "sha256": "d117fc979264f2cbf85824d3d4d27d10fe6a64b70d5184164c5daf2102653bac",
       "bytes": 2386
+    },
+    {
+      "path": "frozen_input_513d6ee0/package_manifest.json",
+      "sha256": "498dc908caf13060069b25b15b8121ecd3c1d58735e97ce9e795a436803122e4",
+      "bytes": 9321
     },
     {
       "path": "frozen_input_513d6ee0/prepare.py",
@@ -272,6 +277,126 @@
       "bytes": 932
     },
     {
+      "path": "qa/root_actual_common_registration_review_PENDING_ASTRA.json",
+      "sha256": "b5814e7cc6404851969f955334aa1690e521fd7cc70fd682189df9532dc943c0",
+      "bytes": 1565
+    },
+    {
+      "path": "qa/root_same_camera090_095_dark_STATIC_ONLY.png",
+      "sha256": "c71f86fc942972348dd06cd107aa983c7116e879eec3865d117ddb6b01176e49",
+      "bytes": 83953
+    },
+    {
+      "path": "qa/root_same_camera090_095_gray_STATIC_ONLY.png",
+      "sha256": "3f519a07b2f817140c77955b8ffda45af612b521e6b5917b0fe61bb751f69fc5",
+      "bytes": 88488
+    },
+    {
+      "path": "registration_audit_61sol/F095_whole_native_crop_inverse135over256.png",
+      "sha256": "75fb3496f588eeb63051030e9930d253ed2a3d2e21e4560a92d8b7b6eb7d7463",
+      "bytes": 214747
+    },
+    {
+      "path": "registration_audit_61sol/README.md",
+      "sha256": "bab87c79bacd2e543cac02a0fa7e7a1237c72634d6957385b729c2f8ad3858c5",
+      "bytes": 1502
+    },
+    {
+      "path": "registration_audit_61sol/audit_common_registration.py",
+      "sha256": "01e727aac5e4c8bce0bc094c27a9827dffc992f489d70e5177914ea6328e28ac",
+      "bytes": 8199
+    },
+    {
+      "path": "registration_audit_61sol/candidate/F095_same_inverse_original_pants_and_source_layers_TRIAL_NOT_APPROVED.png",
+      "sha256": "dcf919f412fd379a34ea69329210a418547dcccc089e1b36aa208024a04fdca4",
+      "bytes": 358886
+    },
+    {
+      "path": "registration_audit_61sol/candidate/F095_whole_native_pants_COMMON_INVERSE_ORIGINAL_COLOR_TRIAL.png",
+      "sha256": "28c177a614d5ed8bd13c40d1e861710345b3057d66b18d970faf66e82f3f10a1",
+      "bytes": 82077
+    },
+    {
+      "path": "registration_audit_61sol/candidate/RAW_original_color_whole_trousers_EXTRACTED_TRIAL.png",
+      "sha256": "f423c5393f6af45661ebd1c91fbe5c438a41ab18b071bce8a01b9da0438656f4",
+      "bytes": 200853
+    },
+    {
+      "path": "registration_audit_61sol/finalize_finite_review.py",
+      "sha256": "c04ad8b808b4cfeb61372b1774290a8a84ee1ba876f403c14a0414f519733d08",
+      "bytes": 6478
+    },
+    {
+      "path": "registration_audit_61sol/geometry/actual_common_registration_and_material.json",
+      "sha256": "bd2a416c6e617c2d470412a5f7538c7b432bf674f23c066be1811adcad8590d5",
+      "bytes": 6305
+    },
+    {
+      "path": "registration_audit_61sol/last_measurements_stdout.json",
+      "sha256": "bd2a416c6e617c2d470412a5f7538c7b432bf674f23c066be1811adcad8590d5",
+      "bytes": 6305
+    },
+    {
+      "path": "registration_audit_61sol/masks/RAW_one_complete_navy_pants_source_material.png",
+      "sha256": "3d42c60f722c9475b3076bca70b979768269267b952801d24dce027f2eaf0bbf",
+      "bytes": 5096
+    },
+    {
+      "path": "registration_audit_61sol/package_manifest.json",
+      "sha256": "3a3b384b65a66012a70b9e1f2f2754ad46f236e6c0e7921f08330ad6a9d63091",
+      "bytes": 3723
+    },
+    {
+      "path": "registration_audit_61sol/qa/61sol_actual_output_common_registration_review.json",
+      "sha256": "3eb2a763822d0c87dd1fb54f2d7b68f1f1047fe015969f86ae35d9b434fc8360",
+      "bytes": 7028
+    },
+    {
+      "path": "registration_audit_61sol/qa/F095_frozen_five_real_layers_NO_OLD_PANTS.png",
+      "sha256": "3d859567065ebff714f6e44fca679569d69bc6a8ba0ab299a66de6c9d8541aeb",
+      "bytes": 180766
+    },
+    {
+      "path": "registration_audit_61sol/qa/source_ankles_and_two_whole_shoes_dark.png",
+      "sha256": "41ab3575c5537be141b92d6833cfc57ead96cdaf172b2bbc580cfb07a02dda4b",
+      "bytes": 212483
+    },
+    {
+      "path": "registration_audit_61sol/qa/source_ankles_and_two_whole_shoes_gray.png",
+      "sha256": "6da1ed99f5e3c3393879b2fb446b37577b0f9ee54c073296d759101285796604",
+      "bytes": 225154
+    },
+    {
+      "path": "registration_audit_61sol/qa/visible_soles_expected_CYAN_actual_ORANGE_dark.png",
+      "sha256": "3816b091b43409fcb49d548a319f58b9623a36edb13365ad2b5a1e3814088f1d",
+      "bytes": 36456
+    },
+    {
+      "path": "registration_audit_61sol/qa/visible_soles_expected_CYAN_actual_ORANGE_gray.png",
+      "sha256": "0dd0d3b471e87d5848e32cb9a9c7d67afee8ebb35c2707438f29d4ad4b7f13cf",
+      "bytes": 37474
+    },
+    {
+      "path": "registration_audit_61sol/qa/waist_complete_native_connections_dark.png",
+      "sha256": "c6caf9173b7334e9646aea1fc50339fadd2b94a148ff02099dcf04fc89bd3885",
+      "bytes": 280610
+    },
+    {
+      "path": "registration_audit_61sol/qa/waist_complete_native_connections_gray.png",
+      "sha256": "e668f1ed62514133630f293521da2d0c05d57a59856d0de2503519efc8180822",
+      "bytes": 297339
+    },
+    {
+      "path": "registration_audit_61sol/qa/whole_frozen_actual_trial_dark.png",
+      "sha256": "0006632fa80b173dbe0b5b0603b7faae62c30b651bd08bf7582bd4d9b720cd95",
+      "bytes": 345317
+    },
+    {
+      "path": "registration_audit_61sol/qa/whole_frozen_actual_trial_gray.png",
+      "sha256": "124bd124b6523f5ba96f1efa88fc36d924d6002ae876834cfd07233cd5bcd878",
+      "bytes": 358916
+    },
+    {
       "path": "requests/arguments_call01_EXACT.json",
       "sha256": "ab94cab00232709a5747943d0898e166879b63dd18a8f3b822df67e1d52ac688",
       "bytes": 2758
@@ -288,13 +413,18 @@
     },
     {
       "path": "requests/execution_state.json",
-      "sha256": "e26c7b40cd67ac205d52cf6cba3a124a56ec6ef452256174f5f05fa31c3afdcc",
-      "bytes": 559
+      "sha256": "3f123623f0feac7f9623a43da2ae28dbd763ae35f8e9c06287fde1680b4d460f",
+      "bytes": 704
     },
     {
       "path": "requests/prompt_call01_EXACT.txt",
       "sha256": "c4bcb0a11c6ab42a266f640c0569282a473c7e030391c047a3f268beb7e4ca14",
       "bytes": 2042
+    },
+    {
+      "path": "verify_archive_and_trial.py",
+      "sha256": "59dfe0b28e9e9bbdb3ddeac06474c8c9ffedb5c1276c484531b608935fb20183",
+      "bytes": 3422
     }
   ]
 }

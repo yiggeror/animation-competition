@@ -1,0 +1,7 @@
+# F095 finite actual-output common-registration audit — NO NEW CALL
+
+Only this registration_audit_61sol directory is authored. Raw0fb9780d…ead3d and all frozen/root inputs remain unchanged. Exactly one whole135/256+[1120,250] inverse; no per-shoe/limb fitting, scaling, bridges or shoe repaint. Both actual/source alpha128 bottoms1022. White-sole contour error median0/p95=1/max1native. Brightwhite core endslocal770; true dark outsole ends772. Overlapping feet need not be separate connected components.
+
+Candidate is a TRIAL: one original-color navy trousers layer plus original five real source layers. Small true navy island between hands stays at original coordinates; hand occlusion separates it in2D. No hidden connector was painted. Source shoes are not fitted; rearfoot hidden material need not remain visible. Haze and raw body/arm/shoe repaint excluded. Retained raw pants RGBA0changes. Actual255 front material0changes; one naturally rounded composite-alpha255 pixel differs over the new pants, so no false flat-AA0claim. Root must review exact sleeve/waist/cuff adoption edges before production.
+
+Gray/dark whole, waist, ankle/two-shoe and actual registration QA are inqa/. Original navy mean difference vs057 about(+1.6,+1.2,+2.9), vs062(−.2,+.3,+2.7). No recolor. This is limited registration/wholevolume feasibility, not Astra static/color/dynamic lock. F100 unopened; no new image calls/git. Source and mask method plus matrices are reproducible by audit_common_registration.py.

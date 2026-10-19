@@ -1,0 +1,235 @@
+{
+  "status": "COMMON_INVERSE_MEASUREMENTS_ONLY_PENDING_ACTUAL_REVIEW",
+  "raw_SHA256": "0fb9780d5151adb6a7f14d0e226d55f5e14e12fe270a5d9f90389269f79ead3d",
+  "raw_size": [
+    1024,
+    1536
+  ],
+  "whole_inverse": {
+    "s": 0.52734375,
+    "offset": [
+      1120,
+      250
+    ],
+    "no_independent_fit": true
+  },
+  "expected_visible_sole_material": {
+    "all_visible_union_bbox_local_halfopen": [
+      243,
+      735,
+      434,
+      771
+    ],
+    "sole_max_y_local": 770,
+    "centroid_union_local": [
+      342.1523554961577,
+      758.192114934848
+    ],
+    "components": [
+      {
+        "pixels": 2156,
+        "bbox_local_halfopen": [
+          243,
+          735,
+          413,
+          771
+        ],
+        "centroid_local": [
+          321.40120593692023,
+          756.0616883116883
+        ]
+      },
+      {
+        "pixels": 837,
+        "bbox_local_halfopen": [
+          348,
+          754,
+          434,
+          771
+        ],
+        "centroid_local": [
+          395.60454002389486,
+          763.6798088410992
+        ]
+      }
+    ]
+  },
+  "actual_visible_sole_material": {
+    "all_visible_union_bbox_local_halfopen": [
+      243,
+      735,
+      434,
+      771
+    ],
+    "sole_max_y_local": 770,
+    "centroid_union_local": [
+      342.12854317732365,
+      758.0876730388926
+    ],
+    "components": [
+      {
+        "pixels": 2190,
+        "bbox_local_halfopen": [
+          243,
+          735,
+          413,
+          771
+        ],
+        "centroid_local": [
+          321.4986301369863,
+          755.9447488584475
+        ]
+      },
+      {
+        "pixels": 844,
+        "bbox_local_halfopen": [
+          349,
+          754,
+          434,
+          771
+        ],
+        "centroid_local": [
+          395.65876777251185,
+          763.6481042654028
+        ]
+      }
+    ]
+  },
+  "visible_sole_union_centroid_delta_native": [
+    -0.023812318834075086,
+    -0.10444189595534681
+  ],
+  "actual_boundary_to_expected_px": {
+    "median": 0.0,
+    "p95": 1.0,
+    "max": 1.0
+  },
+  "expected_boundary_to_actual_px": {
+    "median": 0.0,
+    "p95": 1.0,
+    "max": 1.0
+  },
+  "expected_blouse_blue": {
+    "bbox_local_halfopen": [
+      231,
+      0,
+      468,
+      301
+    ],
+    "centroid_local": [
+      367.4908973566031,
+      135.85312071422808
+    ]
+  },
+  "actual_blouse_blue": {
+    "bbox_local_halfopen": [
+      231,
+      0,
+      469,
+      301
+    ],
+    "centroid_local": [
+      367.5741774461918,
+      136.14639579195963
+    ]
+  },
+  "material_interiors": {
+    "F057": {
+      "interior_mean_RGB": [
+        41.44415494726268,
+        45.42688975389252,
+        60.95190858864892
+      ],
+      "interior_median_RGB": [
+        42.0,
+        46.0,
+        61.0
+      ],
+      "pixels": 63712
+    },
+    "F062": {
+      "interior_mean_RGB": [
+        43.25004610303609,
+        46.35584837968784,
+        61.169860349712486
+      ],
+      "interior_median_RGB": [
+        43.0,
+        46.0,
+        62.0
+      ],
+      "pixels": 59649
+    },
+    "call01_original": {
+      "interior_mean_RGB": [
+        42.99128318939009,
+        46.598358244872855,
+        63.83954116420225
+      ],
+      "interior_median_RGB": [
+        45.0,
+        49.0,
+        66.0
+      ],
+      "pixels": 37399,
+      "RGB_correction": [
+        0,
+        0,
+        0
+      ]
+    },
+    "call01_minus_F057": [
+      1.5471282421274068,
+      1.1714684909803381,
+      2.887632575553333
+    ],
+    "call01_minus_F062": [
+      -0.25876291364600235,
+      0.2425098651850135,
+      2.669680814489766
+    ]
+  },
+  "connections": {
+    "near": {
+      "pants_over_true_source_skin_alpha128": 350,
+      "skin_within3px_of_pants": 562,
+      "original_whole_source_layer_sha256": "60805bc58c5035c804025d84a00f122e434fb217e68478c86d671a5ab6a180a3",
+      "whole_source_foot_not_redrawn_or_fit": true
+    },
+    "far": {
+      "pants_over_true_source_skin_alpha128": 240,
+      "skin_within3px_of_pants": 322,
+      "original_whole_source_layer_sha256": "64637d1d886e25fdcf3c888b533c1a8164844fe429a87295cfb9194dc585503c",
+      "whole_source_foot_not_redrawn_or_fit": true
+    }
+  },
+  "occluded_waist_island_actual_source_seed_raw": [
+    699,
+    580
+  ],
+  "occluded_waist_island_note": "Small true navy source island between hands is kept at exact same coordinates; its hidden connection is occluded by source hands, never painted or bridged.",
+  "raw_pants_source_mask_pixels": 152489,
+  "raw_pants_kept_RGBA_changes": 0,
+  "scope": "One complete trouser mass may contain both legs; no component splitting, holes cut, ankle bridge or new shoe paint. Background haze and all source-face/body/arm/shoe repaint are excluded.",
+  "threshold_limits": "Material-centroid/edge scans are visible projected material diagnostics, not anatomical ankle/hip or bone measurements. Source shoe overlap may merge components; union measured without artificial split.",
+  "palette_source_files": [
+    {
+      "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F090_native_call02_65330a56/frozen_input_65330a56/sources/approved_original_source_archive_NOT_REQUEST/F057_palette_ARCHIVE_NOT_REQUEST.png",
+      "sha256": "93939f3e148c0a957ef418c677e60cc3fd27cf6b6844f91d500c8a3508b76720"
+    },
+    {
+      "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F090_native_call02_65330a56/frozen_input_65330a56/sources/approved_original_source_archive_NOT_REQUEST/F057_actual_pants_material_mask.png",
+      "sha256": "83aacdced5e7cfa76c766b2bb7c86b7abb8ca263b4b9667b426217f7d11e0195"
+    },
+    {
+      "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F090_native_call02_65330a56/frozen_input_65330a56/sources/approved_original_source_archive_NOT_REQUEST/F062_palette_ARCHIVE_NOT_REQUEST.png",
+      "sha256": "393622a77349083751122520b690bd35017f8535a25560d8cca775446d2eeb2f"
+    },
+    {
+      "path": "/workspace/s07-walk-reference-20261018/collab/reviews/cloud_s07_walk_20261018/F090_native_call02_65330a56/frozen_input_65330a56/sources/approved_original_source_archive_NOT_REQUEST/F062_actual_pants_material_mask.png",
+      "sha256": "1cb45ee05a5662386535d91597b2f98256a930bc8882f944b854c5aca929e6c4"
+    }
+  ],
+  "new_image_calls": 0,
+  "F100_opened": false
+}
