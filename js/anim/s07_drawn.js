@@ -22,6 +22,15 @@ export function camera(t){
  if(f>=39&&f<57)return {x:605,y:637.5,fit:1672/400};
  return {x:816,y:482.5,fit:1.04};
 }
+// Original S01 matchbox is independent of the lamp lift. Keep its original lit layer slot.
+let matchbox;
+export function tableMatchboxOnly(){
+ if(!matchbox){const c=new OffscreenCanvas(220,200),x=c.getContext('2d');
+ x.fillStyle='#c9a25a';x.strokeStyle='#3e2a1e';x.lineWidth=1;
+ x.beginPath();x.rect(150,162,18,7);x.fill();x.stroke();
+ matchbox={img:c,x:1152,y:472,sc:1};}
+ return matchbox;
+}
 let seat;
 function stoolLayer(){
  if(!seat){const c=new OffscreenCanvas(1672,941),x=c.getContext('2d');x.translate(...GM_AT);x.scale(-GM_K,GM_K);stool(x,-2);seat={img:c,x:0,y:0,sc:1,contact:{a:.45,blur:3,sy:-.1,skew:.5}};}
@@ -41,7 +50,7 @@ export function authoredLayers(f){
 }
 const shot={bg:'bg_01_room_wide',size:[1672,941],
  layers:async(t)=>{const f=Math.floor(t*24+1e-6);return [
- {img:COILC,x:COIL[0]-60,y:COIL[1]-34,sc:1},...(f<LAMP_EMBEDDED_FROM?[tableLamp(0)]:[]),stoolLayer(),...authoredLayers(f)];},
+ {img:COILC,x:COIL[0]-60,y:COIL[1]-34,sc:1},...(f<LAMP_EMBEDDED_FROM?[tableLamp(0)]:[tableMatchboxOnly()]),stoolLayer(),...authoredLayers(f)];},
  light:t=>darkLight(t,0),
  glow:()=>[{x:COIL[0]-20,y:COIL[1]+1,r:4,color:[255,90,40],a:.9,core:.3}],
  emit:x=>fan(x,0),cam:camera};
