@@ -1,0 +1,59 @@
+{
+  "status": "LOCKED048_START_ONLY_NOT_NEXT3_TARGETS",
+  "coordinate_canvas": [
+    1024,
+    1536
+  ],
+  "C1": {
+    "xy": [
+      499.0,
+      747.0
+    ],
+    "physical_role": "near bare right hand supports actual crane neck3, not an invented second cloth pinch",
+    "true_part": "neck3",
+    "original_group_point": [
+      536.0,
+      750.0
+    ],
+    "true_original_props_to_common_M": [
+      [
+        1.0013877066217955,
+        0.006954369989112145,
+        -42.959588241116535
+      ],
+      [
+        -0.006954369989112145,
+        1.0013877066217955,
+        -0.31323765218257904
+      ]
+    ]
+  },
+  "C2": {
+    "xy": [
+      711.098467936869,
+      662.61030076984
+    ],
+    "physical_role": "far left bangle hand pinches the raised cotton lip",
+    "same_native_hand_point": [
+      711,
+      680
+    ],
+    "whole_arm_source_M_UNCHANGED": [
+      [
+        0.9748802847799147,
+        0.019031780788527755,
+        5.016974522150804
+      ],
+      [
+        -0.019031780788527942,
+        0.974880284779915,
+        13.223303260141279
+      ]
+    ],
+    "measurement_note": "native visible contact readpoint has manual +/-3px uncertainty; exact matrix number is not a measured3D bone claim"
+  },
+  "one_clean_cloth_master_SHA256": "18b478ba2734d3f7f30e254c73284c80bd8d4f4c7e428a4a304a461916c010f9",
+  "layer_order": "current finger foreground alpha -> continuous cotton lip -> actual feather intersection T -> lower cotton/lap; retain original puppets/four rods",
+  "old_hand_hole_reclip_forbidden": true,
+  "future_new_contact_targets": "must come from missing original frozen next3 table; none invented"
+}

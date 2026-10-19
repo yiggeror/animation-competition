@@ -1,0 +1,42 @@
+{
+  "generation_calls": 0,
+  "inputs": [
+    {
+      "input": "01_LOCKED048_COMPLETE_START_RGBA.png",
+      "source_commit": "baf6d568",
+      "source_path": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F036_COMPLETE_OLD_HAND_HOLE_RAW_RESTORE_ZERO_CALL_20261019/F048/CURRENT_FINGER_ALPHA_OVER_COMPLETE_CLOTH_RGBA.png",
+      "SHA256": "7cfb050414a6fde23fddf3f44bf2c83ddaae54f0be6b25d3babb874dda40b298",
+      "bytes": 1891124
+    },
+    {
+      "input": "02_ONLY_LOCKED_COMPLETE_CLOTH_MASTER_RGBA.png",
+      "source_commit": "baf6d568",
+      "source_path": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F036_COMPLETE_OLD_HAND_HOLE_RAW_RESTORE_ZERO_CALL_20261019/ONE036_COMPLETE_OLD_HOLE_CLOTH_MASTER_RGBA.png",
+      "SHA256": "18b478ba2734d3f7f30e254c73284c80bd8d4f4c7e428a4a304a461916c010f9",
+      "bytes": 337436
+    },
+    {
+      "input": "03_LOCKED048_COMPLETE_ARMS_TRUE_CONTACTS_TECHNICAL.png",
+      "derived_from": "01_LOCKED048_COMPLETE_START_RGBA.png",
+      "role": "annotations of two real locked contacts only; not a future pose or new drawing",
+      "SHA256": "ec9e7386d953521ee2fd68e7d298c619a8623de58f091522b7a62f15cbd81de7"
+    },
+    {
+      "input": "04_ACTUAL_CAMERA_LIGHT_LOCKED048_CANVAS.png",
+      "source_commit": "baf6d568",
+      "source_path": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F036_COMPLETE_OLD_HAND_HOLE_RAW_RESTORE_ZERO_CALL_20261019/keys/S29_F048_CANVAS.png",
+      "SHA256": "856c791b1dcb85dcaf866a9b1fbffa8d0c8f54adc0f319eb04df18e893f70801",
+      "bytes": 3564807
+    }
+  ],
+  "actual_geometry_sources": [
+    {
+      "path": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F036_REBUILD_FROM_ACTUAL030_ZERO_CALL_v1_20261019/geometry/COMMON_ACTUAL030_COORDINATES_AND_TRUE_PART_REFERENCE.json",
+      "SHA256": "1084bb93ef8865652e0f055413dd8e7d1726ba119a69ec40f3c6e02f688eec97"
+    },
+    {
+      "path": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F042_F048_NATIVE_call01_each_from_bd309770_20261019/single_group_reintegration_TRIAL/geometry/ONE_GROUP_PER_STATE_SOURCE_MATRIX_CHECKS.json",
+      "SHA256": "7ce0a65bab65c134e2548c448d1b8ca2f462432e4d7bea5302439413a3de1101"
+    }
+  ]
+}

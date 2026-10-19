@@ -1,0 +1,68 @@
+{
+  "status": "MISSING_ORIGINAL_FROZEN_NEXT3_TABLE__NO_FRAME_OR_ACTION_INVENTED",
+  "verified_locked_states": [
+    {
+      "frame": 36,
+      "exposure_proven_in_prior13f": [
+        36,
+        41
+      ],
+      "new_action_count": 0,
+      "reason": "repair of already existing036"
+    },
+    {
+      "frame": 42,
+      "exposure_proven_in_prior13f": [
+        42,
+        47
+      ],
+      "new_action_count": 1
+    },
+    {
+      "frame": 48,
+      "exposure_proven_in_prior13f": [
+        48,
+        48
+      ],
+      "new_action_count": 1,
+      "end_frame_not_proven": true
+    }
+  ],
+  "locked_new_action_count": 2,
+  "next_three": [
+    {
+      "slot": 1,
+      "frozen_start_frame": null,
+      "frozen_end_frame": null,
+      "action": null,
+      "C1_target": null,
+      "C2_target": null,
+      "reason": "await original frozen table commit:path or exact text"
+    },
+    {
+      "slot": 2,
+      "frozen_start_frame": null,
+      "frozen_end_frame": null,
+      "action": null,
+      "C1_target": null,
+      "C2_target": null,
+      "reason": "await original frozen table commit:path or exact text"
+    },
+    {
+      "slot": 3,
+      "frozen_start_frame": null,
+      "frozen_end_frame": null,
+      "action": null,
+      "C1_target": null,
+      "C2_target": null,
+      "reason": "await original frozen table commit:path or exact text"
+    }
+  ],
+  "new_targets_or_generation_requests": 0,
+  "do_not_infer": [
+    "054/060/066",
+    "048 final exposure",
+    "20261017 old six-state table",
+    "old code human action"
+  ]
+}
