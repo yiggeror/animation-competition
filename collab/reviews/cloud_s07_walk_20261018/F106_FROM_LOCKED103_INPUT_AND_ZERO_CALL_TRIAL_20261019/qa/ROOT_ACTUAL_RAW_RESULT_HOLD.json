@@ -1,0 +1,18 @@
+{
+  "status": "HOLD_UNIQUE_F106_RAW_NOT_ADOPTABLE_WITH_FROZEN_WHOLE_GRIP_LAMP",
+  "raw_SHA256": "10bdbcc10f20f6ac472d8f70ef98a2385f6166523dec478f59b3afab004d5aee",
+  "actual_views": [
+    "F106_RAW_correct_alpha_complete_gray.png",
+    "F106_RAW_vs_FROZEN_moved_same_whole_hand_lamp_DIAGNOSTIC_dark.png"
+  ],
+  "common_registration": "45/64+[1240,0] only; no part correction",
+  "observed": "Native redraw moved the closed grip and physical lamp markedly toward image-right/up relative to the frozen same103 complete-hand/lamp group, despite the correct fixed target in inputs. Actual returned short sleeve/bare arm is one elbow and coherent, but its distal wrist follows that different grip station.",
+  "constraint": "Frozen physical lamp and actual same103 full palm/fingers/thumb must stay in the one exact dy group. Moving/fitting the hand or lamp independently is prohibited. Pasting a fixed hand onto this wrong returned distal chain would hide a failed wrist and is not adoption.",
+  "diagnostic_overlay": "The second whole hand/lamp exists ONLY in a clearly named diagnostic overlap, not a candidate or new state.",
+  "no_native_retry": true,
+  "native_requests": 1,
+  "raw_outputs": 1,
+  "retries": 0,
+  "F103_regeneration": 0,
+  "remaining": "Need Astra actual-result decision for this failed unique local106 raw; no qualified106 or8f exposure.11state source index will explicitly keep106 final unknown."
+}

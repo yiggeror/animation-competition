@@ -1,0 +1,515 @@
+{
+  "schema": "S07_final_11_state_source_index_v1",
+  "status": "STABLE_EXISTING_LOCKED_SOURCE_INDEX_057_MISSING_106_HOLD",
+  "repository": "/workspace/s07-walk-reference-20261018",
+  "frame_rate": 24,
+  "shot_frame_range_inclusive": [
+    0,
+    107
+  ],
+  "indexed_action_range_inclusive": [
+    57,
+    107
+  ],
+  "no_new_render_measurement_hashing_or_git": true,
+  "scene_registration": {
+    "unchanged_native_to_original_scene": {
+      "s": 0.36410361842105265,
+      "tx": 627.0254537171638,
+      "ty": 402.7604324894813,
+      "formula": "world_xy=s*native_xy+[tx,ty]; only canvas extension at original origin for1960wide late states, no body-fit",
+      "fixed_world_crop": [
+        720,
+        360,
+        1488,
+        792
+      ],
+      "preview_size": [
+        1280,
+        720
+      ],
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/F084_F090_locked_exposure_20261019/sources/registration.json",
+        "collab/reviews/cloud_s07_walk_20261018/F090_native_call02_65330a56/qa/locked_camera_comparison.json",
+        "collab/reviews/cloud_s07_walk_20261018/F095_F100_LOCKED_8f_exposure_20261019/qa/actual_decode_and_source_checks.json"
+      ]
+    }
+  },
+  "scene_lamp_policy": {
+    "frames_0_through99": "Keep original scene tableLamp(0). Delivered pre100 person layers do not replace the physical lamp.",
+    "frames100_through107": "STOP drawing scene tableLamp(0), including its duplicate table shadow, because final100/103 and planned106 whole-action layer contains the physical lamp;106 final artifact is pending root.",
+    "100_103_lamp_ownership": "table support;103 closed hand established but lamp not lifted",
+    "106": "same complete gripping hand and full physical lamp lift together; table shadow stationary, lamp dark",
+    "evidence": "Explicit parent delegated authority2026-10-19; F100/F103 source layer-order and protection checks.",
+    "scene_tableLamp_0_enabled_frames_inclusive": [
+      0,
+      99
+    ],
+    "scene_tableLamp_0_disabled_frames_inclusive": [
+      100,
+      107
+    ],
+    "disable_includes_original_table_shadow": true,
+    "single_render_owner": "Draw either original scene tableLamp(0) or the final whole-action PNG containing the physical lamp, never both. F106 has no accepted final yet; do not silently substitute the failed raw.",
+    "layer_order": [
+      "room_and_table",
+      "original_scene.tableLamp(0)_and_its_shadow_ONLY_frames0_99",
+      "one_final_whole_action_PNG_per_state; frames100_105_already_include_lamp_and_table_shadow;106_missing"
+    ]
+  },
+  "known_095_100_103_fixed_foot_proxy_evidence": "collab/reviews/cloud_s07_walk_20261018/F095_next_gate_20261019/geometry/preparation_checks.json",
+  "states": [
+    {
+      "state": 57,
+      "exposure_inclusive": [
+        57,
+        61
+      ],
+      "hold_frames": 5,
+      "support_event": "双支撑→近右承重",
+      "action": "第一近脚落地",
+      "final_png_path": null,
+      "png_SHA256": null,
+      "source_commit_SHA": null,
+      "known_commit_abbrev": null,
+      "scene_registration_ref": null,
+      "whole_action_layer_path": null,
+      "component_layer_directory": null,
+      "has_physical_lamp": null,
+      "has_table_shadow": null,
+      "lamp_ownership": "original_scene.tableLamp(0)",
+      "scene_tableLamp_0_enabled": true,
+      "lamp_ON": false,
+      "known_ground_anchors": null,
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv"
+      ],
+      "unresolved": "Must use approved1705 ground-contact-shadow version. Exact final repository path/commit/SHA not supplied or located; parent explicitly requires null, NEVER substitute old93939f3e version. Table-shadow/artifact flags remain null for that unresolved final file.",
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "original_scene.tableLamp(0)",
+      "lamp_render_owner": "original_scene.tableLamp(0)"
+    },
+    {
+      "state": 62,
+      "exposure_inclusive": [
+        62,
+        67
+      ],
+      "hold_frames": 6,
+      "support_event": "近右单支撑",
+      "action": "近右支撑／远左过步",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F062_native_call01/candidate/F062_single_native_final_with_waist_underlay_PENDING_ASTRA.png",
+      "png_SHA256": "393622a77349083751122520b690bd35017f8535a25560d8cca775446d2eeb2f",
+      "source_commit_SHA": "766f9f60f13c62f144d374b11475010b9e462421",
+      "known_commit_abbrev": "766f9f60",
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F062_native_call01/candidate/F062_single_native_final_with_waist_underlay_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F062_native_call01/production_layers",
+      "has_physical_lamp": false,
+      "has_table_shadow": false,
+      "lamp_ownership": "original_scene.tableLamp(0)",
+      "scene_tableLamp_0_enabled": true,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": null,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used."
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F062_native_call01/qa/internal_waist_native_source_underlay_checks.json",
+        "collab/reviews/cloud_s07_walk_20261018/F062_native_call01/qa/world_registration_and_support_checks.json"
+      ],
+      "source_commit_note": "Existing known lock prefix resolved to this exact local commit object by git rev-parse --verify; no source image or anchor recomputed.",
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "original_scene.tableLamp(0)",
+      "lamp_render_owner": "original_scene.tableLamp(0)"
+    },
+    {
+      "state": 68,
+      "exposure_inclusive": [
+        68,
+        72
+      ],
+      "hold_frames": 5,
+      "support_event": "双支撑→远左承重",
+      "action": "远左脚落地",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F068_next_gate/candidate/F068_single_native_final_PENDING_ASTRA.png",
+      "png_SHA256": "8210a8d56c15a42da4b4daa6c4a4599ce6b2df9b1f5fdab2e1403ec7f9960768",
+      "source_commit_SHA": "619f84f5d36c36f5269150cad95beb5cc75a49c4",
+      "known_commit_abbrev": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F068_next_gate/candidate/F068_single_native_final_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F068_next_gate/production_layers",
+      "has_physical_lamp": false,
+      "has_table_shadow": false,
+      "lamp_ownership": "original_scene.tableLamp(0)",
+      "scene_tableLamp_0_enabled": true,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": 1022,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used."
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F068_next_gate/qa/author_actual_static_gate.json",
+        "collab/reviews/cloud_s07_walk_20261018/F068_next_gate/qa/author_actual_static_gate.json"
+      ],
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "original_scene.tableLamp(0)",
+      "lamp_render_owner": "original_scene.tableLamp(0)"
+    },
+    {
+      "state": 73,
+      "exposure_inclusive": [
+        73,
+        78
+      ],
+      "hold_frames": 6,
+      "support_event": "远左单支撑",
+      "action": "远左支撑／近右过步",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F073_next_gate/candidate/F073_single_native_final_PENDING_ASTRA.png",
+      "png_SHA256": "afc7dcff6593611d0e33b16a7fce9e12967bf1767cacf8336308a51a50af1929",
+      "source_commit_SHA": "619f84f5d36c36f5269150cad95beb5cc75a49c4",
+      "known_commit_abbrev": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F073_next_gate/candidate/F073_single_native_final_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F073_next_gate/production_layers",
+      "has_physical_lamp": false,
+      "has_table_shadow": false,
+      "lamp_ownership": "original_scene.tableLamp(0)",
+      "scene_tableLamp_0_enabled": true,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 959,
+        "far_LEFT_sole_bottom_native_alpha128": 1022,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used."
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F073_next_gate/qa/independent_61sol_output_review.json",
+        "collab/reviews/cloud_s07_walk_20261018/F073_next_gate/qa/independent_61sol_output_review.json"
+      ],
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "original_scene.tableLamp(0)",
+      "lamp_render_owner": "original_scene.tableLamp(0)"
+    },
+    {
+      "state": 79,
+      "exposure_inclusive": [
+        79,
+        83
+      ],
+      "hold_frames": 5,
+      "support_event": "双支撑→近右承重",
+      "action": "近右脚落地",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F079_corrected_complete_volume_delivery_4e25e5f0/candidate/F079_corrected_complete_volume_PENDING_ASTRA.png",
+      "png_SHA256": "856d10c9516c33a8e992a121033e76a5ac55bda269b16949a90aa431206f0364",
+      "source_commit_SHA": "0174fe214804465e714b6923213bd2f9caca8f48",
+      "known_commit_abbrev": "0174fe21",
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F079_corrected_complete_volume_delivery_4e25e5f0/candidate/F079_corrected_complete_volume_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F079_corrected_complete_volume_delivery_4e25e5f0/production_layers",
+      "has_physical_lamp": false,
+      "has_table_shadow": false,
+      "lamp_ownership": "original_scene.tableLamp(0)",
+      "scene_tableLamp_0_enabled": true,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": 1022,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used."
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F079_corrected_complete_volume_delivery_4e25e5f0/qa/one_native_layered_trial_checks.json",
+        "collab/reviews/cloud_s07_walk_20261018/F079_corrected_complete_volume_delivery_4e25e5f0/qa/one_native_layered_trial_checks.json"
+      ],
+      "source_commit_note": "Existing known lock prefix resolved to this exact local commit object by git rev-parse --verify; no source image or anchor recomputed.",
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "original_scene.tableLamp(0)",
+      "lamp_render_owner": "original_scene.tableLamp(0)"
+    },
+    {
+      "state": 84,
+      "exposure_inclusive": [
+        84,
+        89
+      ],
+      "hold_frames": 6,
+      "support_event": "近右单支撑",
+      "action": "近右支撑／远左过步",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F084_native_call02_e92f6721/candidate/F084_call02_complete_volume_PENDING_ASTRA.png",
+      "png_SHA256": "21acf20424d94477191dbc6fd012fe61426d509ec55dbc48037bb97b2c89f6ae",
+      "source_commit_SHA": "2761136abb8038aa33f2173427f90d90898e1359",
+      "known_commit_abbrev": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F084_native_call02_e92f6721/candidate/F084_call02_complete_volume_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F084_native_call02_e92f6721/production_layers",
+      "has_physical_lamp": false,
+      "has_table_shadow": false,
+      "lamp_ownership": "original_scene.tableLamp(0)",
+      "scene_tableLamp_0_enabled": true,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": null,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used."
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F084_F090_locked_exposure_20261019/sources/source_manifest.json",
+        "collab/reviews/cloud_s07_walk_20261018/F084_native_call02_e92f6721/qa/one_native_source_layered_trial_checks.json"
+      ],
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "original_scene.tableLamp(0)",
+      "lamp_render_owner": "original_scene.tableLamp(0)"
+    },
+    {
+      "state": 90,
+      "exposure_inclusive": [
+        90,
+        94
+      ],
+      "hold_frames": 5,
+      "support_event": "双支撑→远左承重",
+      "action": "远左脚落地",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F090_native_call02_65330a56/candidate/F090_call02_complete_trousers_PENDING_ASTRA.png",
+      "png_SHA256": "012e7bae3f7e39ca93467bf1d43ec003d3ed5a741816c67ee8fc67c5e1225156",
+      "source_commit_SHA": "d714f5babacaa7a8d450fc4cb93b84e9ac821880",
+      "known_commit_abbrev": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F090_native_call02_65330a56/candidate/F090_call02_complete_trousers_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F090_native_call02_65330a56/production_layers",
+      "has_physical_lamp": false,
+      "has_table_shadow": false,
+      "lamp_ownership": "original_scene.tableLamp(0)",
+      "scene_tableLamp_0_enabled": true,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": 1022,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used. Both soles use fixed original feet; actual ankle proxies not promoted from future095.",
+        "ankle_proxy_native_from_fixed_source_feet": null
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F090_F095_locked_exposure_20261019/sources/source_manifest.json",
+        "collab/reviews/cloud_s07_walk_20261018/F095_next_gate_20261019/geometry/preparation_checks.json"
+      ],
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "original_scene.tableLamp(0)",
+      "lamp_render_owner": "original_scene.tableLamp(0)"
+    },
+    {
+      "state": 95,
+      "exposure_inclusive": [
+        95,
+        99
+      ],
+      "hold_frames": 5,
+      "support_event": "双脚固定，停止行进",
+      "action": "近右收脚站定",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F095_native_call01_513d6ee0/registration_audit_61sol/candidate/F095_same_inverse_original_pants_and_source_layers_TRIAL_NOT_APPROVED.png",
+      "png_SHA256": "dcf919f412fd379a34ea69329210a418547dcccc089e1b36aa208024a04fdca4",
+      "source_commit_SHA": "4d7fb0d48d21c2446a9757c60ad6cb49db484bbd",
+      "known_commit_abbrev": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F095_native_call01_513d6ee0/registration_audit_61sol/candidate/F095_same_inverse_original_pants_and_source_layers_TRIAL_NOT_APPROVED.png",
+      "component_layer_directory": null,
+      "has_physical_lamp": false,
+      "has_table_shadow": false,
+      "lamp_ownership": "original_scene.tableLamp(0)",
+      "scene_tableLamp_0_enabled": true,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": 1022,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used.",
+        "ankle_proxy_native_from_fixed_source_feet": {
+          "near_RIGHT": [
+            1407.8686125468735,
+            957.8118142506097
+          ],
+          "far_LEFT": [
+            1451.812147273017,
+            953.9968292356247
+          ]
+        }
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F090_F095_locked_exposure_20261019/sources/source_manifest.json",
+        "collab/reviews/cloud_s07_walk_20261018/F095_next_gate_20261019/geometry/preparation_checks.json"
+      ],
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "original_scene.tableLamp(0)",
+      "lamp_render_owner": "original_scene.tableLamp(0)"
+    },
+    {
+      "state": 100,
+      "exposure_inclusive": [
+        100,
+        102
+      ],
+      "hold_frames": 3,
+      "support_event": "双脚固定，灯仍归桌支撑",
+      "action": "胸头一起探身／右手接近",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F100_WHOLE_RAW_BLOUSE_FINAL_20261019/candidate/F100_WHOLE_RAW_BLOUSE_final_RGBA_PENDING_ASTRA.png",
+      "png_SHA256": "7dc803e92e69cb90a84465f4b25e64f5ba9ea62b6b3853bd9a66b658f9951b2b",
+      "source_commit_SHA": "61766ddbbde81bf1a15e7b846211ea8a25d8950f",
+      "known_commit_abbrev": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F100_WHOLE_RAW_BLOUSE_FINAL_20261019/candidate/F100_WHOLE_RAW_BLOUSE_final_RGBA_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F100_WHOLE_RAW_BLOUSE_FINAL_20261019/layers",
+      "has_physical_lamp": true,
+      "has_table_shadow": true,
+      "lamp_ownership": "final_whole_action_PNG_only",
+      "scene_tableLamp_0_enabled": false,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": 1022,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used.",
+        "ankle_proxy_native_from_fixed_source_feet": {
+          "near_RIGHT": [
+            1407.8686125468735,
+            957.8118142506097
+          ],
+          "far_LEFT": [
+            1451.812147273017,
+            953.9968292356247
+          ]
+        },
+        "feet_unchanged_from095": true
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F100_WHOLE_RAW_BLOUSE_FINAL_20261019/qa/short_checks.json",
+        "collab/reviews/cloud_s07_walk_20261018/F100_WHOLE_RAW_BLOUSE_FINAL_20261019/qa/short_checks.json"
+      ],
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "same_final_whole_action_PNG_only",
+      "lamp_render_owner": "final_whole_action_PNG_only"
+    },
+    {
+      "state": 103,
+      "exposure_inclusive": [
+        103,
+        105
+      ],
+      "hold_frames": 3,
+      "support_event": "双脚固定，桌支撑＋手已闭握",
+      "action": "手指闭合扣提梁",
+      "final_png_path": "collab/reviews/cloud_s07_walk_20261018/F103_REPAIR_NATIVE_call02_fa796ff9_20261019/candidate/F103_REPAIR_call02_PROTECTED_SEMANTIC_TRIAL_PENDING_ASTRA.png",
+      "png_SHA256": "06443a17f780d7a72a293c27686099ffaf72ba827b00e3290059c3061cd2ad90",
+      "source_commit_SHA": "84334c3f7b0ab72e9e700ae3e165617945ef615e",
+      "known_commit_abbrev": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F103_REPAIR_NATIVE_call02_fa796ff9_20261019/candidate/F103_REPAIR_call02_PROTECTED_SEMANTIC_TRIAL_PENDING_ASTRA.png",
+      "component_layer_directory": "collab/reviews/cloud_s07_walk_20261018/F103_REPAIR_NATIVE_call02_fa796ff9_20261019/layers",
+      "has_physical_lamp": true,
+      "has_table_shadow": true,
+      "lamp_ownership": "final_whole_action_PNG_only",
+      "scene_tableLamp_0_enabled": false,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": 1022,
+        "note": "Existing source-layer/contact records only; null=not copied from a verified actual value. No coded758 ankle coordinates used.",
+        "ankle_proxy_native_from_fixed_source_feet": {
+          "near_RIGHT": [
+            1407.8686125468735,
+            957.8118142506097
+          ],
+          "far_LEFT": [
+            1451.812147273017,
+            953.9968292356247
+          ]
+        },
+        "feet_unchanged_from095": true
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
+        "collab/reviews/cloud_s07_walk_20261018/F103_REPAIR_NATIVE_call02_fa796ff9_20261019/qa/protected_semantic_trial/checks.json",
+        "collab/reviews/cloud_s07_walk_20261018/F103_REPAIR_NATIVE_call02_fa796ff9_20261019/qa/protected_semantic_trial/checks.json"
+      ],
+      "lamp_support_owner": "table",
+      "table_shadow_render_owner": "same_final_whole_action_PNG_only",
+      "lamp_render_owner": "final_whole_action_PNG_only"
+    },
+    {
+      "state": 106,
+      "exposure_inclusive": [
+        106,
+        107
+      ],
+      "hold_frames": 2,
+      "support_event": "双脚固定，承重转交右手",
+      "action": "手与整灯同移，灯底离桌",
+      "final_png_path": null,
+      "png_SHA256": null,
+      "source_commit_SHA": null,
+      "known_commit_abbrev": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
+      "whole_action_layer_path": null,
+      "component_layer_directory": null,
+      "has_physical_lamp": null,
+      "has_table_shadow": null,
+      "lamp_ownership": "PLANNED_final_whole_action_PNG_only_NO_ACCEPTED106",
+      "scene_tableLamp_0_enabled": false,
+      "lamp_ON": false,
+      "known_ground_anchors": {
+        "feet_unchanged_from095_103": true,
+        "near_RIGHT_sole_bottom_native_alpha128": 1022,
+        "far_LEFT_sole_bottom_native_alpha128": 1022
+      },
+      "evidence": [
+        "collab/reviews/cloud_s07_walk_20261018/exposure.csv"
+      ],
+      "unresolved": "No accepted106. Raw is evidence only and must not become an automatic final-state fallback. No103x3→106x2 exposure produced.",
+      "planned_same_hand_and_whole_physical_lamp_delta": {
+        "native": [
+          0,
+          -12.359119141727836
+        ],
+        "world": [
+          0,
+          -4.5
+        ],
+        "rotation": 0,
+        "scale": 1,
+        "table_shadow_moves_with_lamp": false
+      },
+      "expected_final_contains_physical_lamp": true,
+      "table_shadow_note": "Stationary context, outside moving hand/lamp group; final containment flag leftnull until root fills final artifact.",
+      "status": "HOLD_RAW_MISREGISTERED_NO_ADOPTION",
+      "raw_only": {
+        "path": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/originals/F106_NATIVE_call01_RAW.png",
+        "SHA256": "10bdbcc10f20f6ac472d8f70ef98a2385f6166523dec478f59b3afab004d5aee",
+        "requests": 1,
+        "originals": 1,
+        "retry": 0,
+        "parent_actual_review": "Whole45/64+[1240,0] registration shows real grip/lamp displaced upper-right from frozen same-hand/same-lamp group. HOLD; no independent fit or source-hand paste."
+      },
+      "lamp_support_owner": "PLANNED_right_hand_final_selfcontained_NOT_ADOPTED",
+      "table_shadow_render_owner": "planned_stationary_baseline_context_NO_ACCEPTED106",
+      "lamp_render_owner": "PLANNED_final_whole_action_PNG_only_NO_ACCEPTED106"
+    }
+  ],
+  "integrated_final_scene_whole_action_layer_path": null,
+  "integrated_layer_note": "Whole-action final PNG paths are per-state above. No separate final integrated runtime asset path supplied; null instead of guessing.",
+  "authority_notes": [
+    "Parent explicitly locks10384334c3f/06443a17,10061766ddb/7dc803e9,095original color, and source069 is unrelated to thisS07 index.",
+    "Existing filenames may retain PENDING or TRIAL wording; adopted status comes from later explicit lock authority, not filename.",
+    "106 working files not read. Raw identity and HOLD are copied only from parent new explicit message;0571705 and106 final artifact remainnull.",
+    "Root clarified support owner versus renderer owner, exact numeric tableLamp frame ranges and one-lamp layer order. Existing062/079 commit objects resolved from known prefixes only; no new image measurement or anchor computation."
+  ],
+  "F106_existing_planned_actual_group_layers": {
+    "source_complete_hand_and_lamp_no_shadow": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/layers/F103_ONE_actual_complete_hand_and_entire_physical_lamp_NO_shadow.png",
+    "same_group_uniquely_lifted": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/layers/F106_ONE_same_actual_complete_hand_and_entire_physical_lamp_LIFTED.png",
+    "original_stationary_shadow": "collab/reviews/cloud_s07_walk_20261018/F106_FROM_LOCKED103_INPUT_AND_ZERO_CALL_TRIAL_20261019/sources/ORIGINAL_table_shadow_NOT_lifted.png",
+    "adoption_status": "INPUT_REFERENCE_GROUPS_ONLY_NO_ACCEPTED106"
+  }
+}
