@@ -1,0 +1,35 @@
+{
+  "status": "NOT_QUALIFIED_MAJOR_TRUE_GRIP_CONTACT_DRIFT",
+  "raw_SHA256": "92e284d7afce8ee6bfa6fb9bd596d00911dfcf7538082e4445b5f95538848108",
+  "native_candidate_SHA256": "0f1caa9edf588cdf525b728770a9079ac97b01c81ff09a398ec468add59ee209",
+  "actual_Canvas_SHA256": "9d1174c6e6f0afcf186877c51bea85eca4f26b766652623c5dccf56bc2aadfd4",
+  "imagegen_requests": 1,
+  "raw_originals": 1,
+  "whole_raw_registrations": 1,
+  "actual_full_Canvas_renders": 1,
+  "additional_model_calls": 0,
+  "next094_calls": 0,
+  "new_usable090_states": 0,
+  "network_errors": [],
+  "native_ground_shadows_actual_RGBA_changes": 0,
+  "box_front_actual_RGBA_changes": 0,
+  "fixed_support_RGBA_changes": 0,
+  "outside_activity_RGBA_changes": 0,
+  "protected_blank_new_alpha": 0,
+  "frozen_grip_target_residuals_scene": {
+    "R": 45.63820329607752,
+    "L": 32.306019089056754
+  },
+  "complete_knee_residuals_native": {
+    "far_full_knee_turn": 29.46143595375761,
+    "near_full_knee_turn": 24.8940998597757,
+    "loaded_knee_bottom": 27.08195897442953
+  },
+  "visual_readback": [
+    "actual_scene/F090_canvas.png",
+    "diagnostics/ACTUAL_CANVAS_BOTH_HANDS_TRUE_ROD_CONTACTS_1to1.png",
+    "diagnostics/ACTUAL_CANVAS_BOTH_KNEES_FIXED_SUPPORT_1to1.png",
+    "diagnostics/TARGET_WHOLE_REGISTERED_RAW_ACTUAL_SIDE_BY_SIDE.png"
+  ],
+  "observed": "Complete arms and soft near wrist are drawn; whole-image composition/body proportions drift from frozen reference. Actual lower BODY shaft stops visibly short of near bare hand. Upper jade hand lies near upper shaft, but frozen grasp target also drifts. Knees remain loaded with no new shoe shift, but all knee residuals retained; not accepted from visual contact alone. No grip move, rod redesign, local warp, or retry performed. Raw RGB color halo is below zero alpha and does not render on grey/actual scene."
+}
