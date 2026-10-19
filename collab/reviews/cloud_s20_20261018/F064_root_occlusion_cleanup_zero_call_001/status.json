@@ -1,0 +1,25 @@
+{
+  "status": "ONE_ZERO_CALL_COMPLETE_UNDER_HEM_ROOT_OCCLUSION_CANDIDATE_ASTRA_GATE_PENDING",
+  "image_calls": 0,
+  "registered064_sha256": "edc8e38eaadabca25300d9236731643b7d59eb4310893ac0dd9ad49e026c5e58",
+  "original064_upper_hem_sha256": "6b6f9517c6240fc57808feba8e5008360c7d420fed2d65196c0319087cfa58d0",
+  "only_leg_sources": {
+    "far": {
+      "file": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F064_support_registration_zero_call_001/far_one_rigid_registered_leg_shoe.png",
+      "sha256": "f0103861b4a83b2060d85bbcb90fb32050933de7bef3fdcb9b38df1c16ba2512"
+    },
+    "near": {
+      "file": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F064_support_registration_zero_call_001/near_one_rigid_registered_leg_shoe.png",
+      "sha256": "53b6055c19de946915751a498629e8950a8c618e98d14f41e5114560105134db"
+    }
+  },
+  "method": "same registered leg skin/edge strip continued only into missing proximal occlusion volume; original yellow hem and stroke are exact foreground; remove legacy root islands outside new layers",
+  "no_old061_leg_pixels": true,
+  "no_registered_leg_scale_rotation_translation_or_stretch": true,
+  "all_y720_plus_thigh_knee_ankle_shoe_RGBA_exact": true,
+  "original_upper_hem_all_foreground_RGBA_exact": true,
+  "outside_complete_semantic_root_edit_RGBA_exact": true,
+  "changed_pixels": 3559,
+  "adopted": false,
+  "propagated": false
+}
