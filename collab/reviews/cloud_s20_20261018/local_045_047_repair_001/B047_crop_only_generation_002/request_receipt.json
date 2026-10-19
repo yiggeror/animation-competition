@@ -1,0 +1,43 @@
+{
+  "new_call_authorized": 1,
+  "uses_only_two_crop_inputs": true,
+  "approved_source_commit": "810962d28a7e8e744617a16420f3c260fc046f2c",
+  "inputs": [
+    {
+      "source": "collab/reviews/cloud_s20_20261018/local_045_047_repair_001/B047_continuous_palm_target/inputs/01_unique_complete_corrected_palm_target.png",
+      "source_sha256": "7b31b6267deb573323d3fe5b446c81411ed4de3949a5f4a912227896c352624f",
+      "crop_xyxy": [
+        840,
+        260,
+        1030,
+        420
+      ],
+      "scale": 4,
+      "resampling": "LANCZOS",
+      "actual_input": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/local_045_047_repair_001/B047_crop_only_generation_002/inputs/01_approved_target_crop4x.png",
+      "sha256": "df72f2b5c039a9d0ef76a7cd058697a4f743ed5f941adf6e69986f61eee6ae8b"
+    },
+    {
+      "source": "collab/reviews/cloud_s20_20261018/local_045_047_repair_001/B047_continuous_palm_target/inputs/03_continuous_palm_wrist_jade_only_white.png",
+      "source_sha256": "df627962523436484b238e5dbd929cbcb241ec12e252e0624c22c8a0339c3337",
+      "crop_xyxy": [
+        840,
+        260,
+        1030,
+        420
+      ],
+      "scale": 4,
+      "resampling": "NEAREST",
+      "actual_input": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/local_045_047_repair_001/B047_crop_only_generation_002/inputs/02_same_crop_mask4x.png",
+      "sha256": "6f1efa29c285515718e0e06e6b2290dfa121d83960177bd1becb93cb115f1c88"
+    }
+  ],
+  "excluded_old042_material_atlas_and_failed3885_hand": true,
+  "output_local_size": [
+    760,
+    640
+  ],
+  "postprocess": "whole local inverse scale only, no per-finger/hand shift; fixed clamp and wrist-root check",
+  "frozen_A_045_054_child": true,
+  "main_branch_S30_out_of_scope": true
+}
