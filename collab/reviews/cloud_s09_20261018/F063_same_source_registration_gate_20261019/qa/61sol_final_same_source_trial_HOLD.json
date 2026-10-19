@@ -1,0 +1,226 @@
+{
+  "status": "HOLD_SAME_SOURCE_SINGLE_GROUP_REGISTRATION_TRIAL_ONLY",
+  "candidate_path": "candidate/F063_single_group_026_backplate_TRIAL_HOLD.png",
+  "candidate_SHA256": "6ca8123da6afd1eafe7c78b51e819aac352bc9d90d3de0c6a988d3fdecf606e9",
+  "actual_viewed": [
+    {
+      "path": "qa/full_registered_026_trial_gray.png",
+      "sha256": "8e9ab15d5ada933a310166ba1e21fcb46f1eda7758df9434ef899afa91a2fc27"
+    },
+    {
+      "path": "qa/full_registered_026_trial_dark.png",
+      "sha256": "42f55b9493939c8101b56b2cc1a3abfe84fce221ff2d01ebed86d80950c89612"
+    },
+    {
+      "path": "qa/sleeve_grip_torch_backplate_connections_dark.png",
+      "sha256": "5e60c60ae465114f497f974a1ad58df437acb5d8b07a3152fb2c57bfb940c677"
+    },
+    {
+      "path": "qa/near_original_ruffle_to_new_arm_gray.png",
+      "sha256": "54fb802b7980e09be4dfab9c98218adfeb1f9e09f1d656aac97dfb2fa7e4f3c2"
+    },
+    {
+      "path": "qa/old026_silver_and_right_cloth_seam_dark.png",
+      "sha256": "80bbf09196260d86aab3e7637e0551b66b61c221de644e9821602136267bc1b4"
+    },
+    {
+      "path": "qa/source_real_tailcap_end_datum_grid.png",
+      "sha256": "c16765db48bae8aa9dbb10ff7128b3604adf3defb2151b8cfdae76dc1aab9561"
+    },
+    {
+      "path": "qa/source_real_lamp_face_datum_grid.png",
+      "sha256": "f538059d840ec2e641ae3248e6e14cb4e47c1da466570f7012e1d76521994bac"
+    },
+    {
+      "path": "qa/frozen044_T_datum_reference_grid.png",
+      "sha256": "7dc945c67eaa6b529a1bcd41d82ca421beb04c43612600cb7a2c527debfdeffc"
+    }
+  ],
+  "same_source_raw_SHA256": "50772cc5cf8c3b55b34d491940a814d488f24d3dab1909114d589a6db03eac4b",
+  "actual_new_source_only": [
+    "Complete visible near arm/grasp/entire torch including restoredsilver",
+    "Complete visible far arm/palm"
+  ],
+  "one_common_similarity": {
+    "scale": 0.542209296288587,
+    "rotation_degrees": -2.379877425655823,
+    "M": [
+      [
+        0.5417416274465395,
+        0.02251510766884169
+      ],
+      [
+        -0.02251510766884169,
+        0.5417416274465395
+      ]
+    ],
+    "t": [
+      568.6160012389555,
+      259.87085341839685
+    ],
+    "ALL_same_raw_arm_grasp_prop_material": true,
+    "single_group_resampling_once": true,
+    "no_independent_arm_hand_torch_transforms": true
+  },
+  "axis_fit_is_by_construction_not_full_prop_pass": true,
+  "datum_final": "Astra latest: true rear-end ellipse center505,717±7raw→frozenT; lamp ellipse center1190,609±5→L. Leftmost rear silhouette and cap-side midpoint are distinct and NOT final datums. Earlier rear-extreme proposal is withdrawn as final. Earlier236.8registered rough cap-material-center calculation is NOT a certificate of the frozen complete-axis datum.",
+  "actual_geometry_findings": [
+    "Near whole-arm/grasp/whole-prop from one raw has removed the old three-source hand/red-tube splice; no new internal torch/hand hard splice is manufactured.",
+    "Receiving hand remains visibly separate and far arm keeps the source actual elbow/wrist/palm continuity. No independent wrist, sleeve or palm translations or scale were applied.",
+    "Original044 near ruffle visually overlaps/joins the registered skin root; manual root coordinates alone do not prove a20–26pixel visible air gap. However the arm lower edge enters the stable skirt material and is cut by its restoration.",
+    "Right sleeve-inner/torso area still has visible gaps and old-outline fragments after correct layering. The current source-material boundary ownership/exposed clothing continuity does not pass production. No raw head/clothing was used as fill."
+  ],
+  "full_tail_projection_risk": {
+    "source_top": [
+      496.0,
+      666.0
+    ],
+    "source_bottom": [
+      515.0,
+      767.0
+    ],
+    "raw_length": 102.77159140540736,
+    "manual_error_raw_px": 6,
+    "registered_native": 55.723712254384125,
+    "locked044_full_projected_diameter_native_approx": 83.0,
+    "locked044_manual_error_native_px": 4,
+    "relative_difference": -0.3286299728387455,
+    "note": "Full transverse end-plane major axis is visible, unlike withdrawn44px occluded estimate. This is projected-image diameter comparison, not3D physical caliper proof. Common similarity cannot change this relative-to-axis proportion."
+  },
+  "grip_station_limit": {
+    "frozen_fraction_from_tail": 0.5186170239855135,
+    "required_same_source_point_for_frozenG": [
+      860.2527714338257,
+      660.9900591185269
+    ],
+    "actual_grasp_axis_hidden_by_hand": true,
+    "manual_possible_grip_center_raw": [
+      840,
+      672
+    ],
+    "manual_station_uncertainty_raw_px": 25,
+    "note": "Required source860.25,660.99 sits within actual gripping hand. An occluded interior G is not measurable precisely enough to certify51.8617percent; no fake sourcepoint assigned."
+  },
+  "new_near_arm_core_intersect_stable_skirt_pixels": 253,
+  "stable044_material_RGBA_changes": 0,
+  "guard_alpha0_pixels": 0,
+  "F026_continuous_backplate": {
+    "source_SHA256": "a9a3eb670a30a6a87792a3a298f798c34a70923b3c4ea49b15c058de2a941ccc",
+    "M": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "t": [
+      0,
+      0
+    ],
+    "box_halfopen": [
+      690,
+      565,
+      936,
+      786
+    ],
+    "collar13600_RGBA_changes": 0,
+    "correct_order": "026 full continuous backplate UNDER surviving legitimate044 material; new same-source far thennear-group above; restore044actualhead/collar/nearwhole ruffle/stable skirt. Valid044cloth is never overwritten by026oldskin."
+  },
+  "explicit_correction_of_initial_false_missing_source_claim": {
+    "initial_wrong_direct_overlay_evidence": "qa/INITIAL_DIRECT026_OVERWRITE_VALID044_CLOTH_WITHDRAWN.png",
+    "initial_SHA256": "19a6362207bc77c48448c4d6c434ef05832da8f66ec258e0e8d62ae16663ddb8",
+    "withdrawn_claim": "Initial exposed leftchest skin triangle and rightunder-collar oldskin did NOT prove both sources lack cloth. Direct rectangle-overwrite of valid044 cloth was wrong. The same-source matrix did not change when layer order was corrected.",
+    "actual_complementary_source_proof": "044705763 and917593 are realyellow and oldnear=False, while026samepoints are oldskin. 044780640/800650/820660 are oldskin under oldnear=True but026samepoints realyellow. These are valid complementary fixed-coordinate material sources."
+  },
+  "silver_and_skin_ownership_after_correct_layering": {
+    "silver_core_classification": "Actual cap-connected component seeded840650, sourcealpha>=128, neutral span<=25 andbrightness>=60; unrelated white-dot candidates removed.",
+    "confirmed_uncovered_silver_core_pixels": 0,
+    "ambiguous_dark_cap_connected_contour_pixels": 2,
+    "ambiguous_dark_points_not_certified_silver": [
+      [
+        837,
+        660
+      ],
+      [
+        838,
+        660
+      ]
+    ],
+    "specified840650_850640_930650_samples": {
+      "(840, 650)": {
+        "F026_RGBA": [
+          168,
+          160,
+          154,
+          253
+        ],
+        "group_alpha": 253,
+        "final_RGBA": [
+          184,
+          174,
+          168,
+          255
+        ],
+        "restored_guard": false
+      },
+      "(850, 640)": {
+        "F026_RGBA": [
+          201,
+          191,
+          188,
+          253
+        ],
+        "group_alpha": 254,
+        "final_RGBA": [
+          210,
+          205,
+          202,
+          255
+        ],
+        "restored_guard": false
+      },
+      "(930, 650)": {
+        "F026_RGBA": [
+          252,
+          201,
+          161,
+          254
+        ],
+        "group_alpha": 254,
+        "final_RGBA": [
+          250,
+          196,
+          156,
+          255
+        ],
+        "restored_guard": false
+      }
+    },
+    "warm_source_candidates_still_exposed": 298,
+    "warm_candidates_bbox": [
+      748,
+      586,
+      936,
+      770
+    ],
+    "warm_candidate_limit": "Conservative material candidates can include warmshade/AA; not every candidate is certified human skin. See actual probes and final visible sleeve/cloth gaps. No blanket claim that all two-source material is missing."
+  },
+  "remaining_production_blockers": [
+    "Full tail projected major-axis diameter55.72±about4native versus locked044about80–83±4. Same similarity fitting the frozenaxis cannot also change this proportion. It is2D projection evidence, not3D caliper proof; Astra must decide perspective/design acceptability.",
+    "Near arm overlaps stable skirt253core pixels; cannot independently shift or stretch that arm to fit sleeve/skirt while keeping one group transform.",
+    "Right sleeve-inner/continuous body seam is not complete; source boundary ghosts and gaps remain after available realcloth restoration. Candidate is not a locked state.",
+    "FrozenG is an occluded interior station. Required sourcepoint860.25,660.99 lies inside gripping hand, but actual51.8617percent gripping station cannot be precisely verified from visible pixels alone."
+  ],
+  "source_boundary_limit": "Visible skin/prop domains are manual semantic masks with several raw pixels of sharedcuff/ink/AA uncertainty; original raw garments/head/background are not adopted as garment fill. This trial is not a pixel-certified final foreground extraction.",
+  "RGB_source_operations": "Literal044/026 pixels, same-source whole group single similarity and ordinary alpha composition. Only alpha0resampleRGB is normalized to0. No generated colors/skin/cloth, no per-part warps, no old044prop used as new prop.",
+  "old044_prop_adopted_as_new_torch": 0,
+  "new_raw_head_cloth_fill_adopted": 0,
+  "isolated_replay_all_candidate_files_byte_identical": true,
+  "new_image_calls": 0,
+  "069_unopened": true,
+  "authority": "sources/latest_authority.txt",
+  "state": "STOPPED_FOR_ROOT_SECOND_REVIEW_NO_MORE_ADJUSTMENTS"
+}
