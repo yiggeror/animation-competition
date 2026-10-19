@@ -1,4 +1,6 @@
-# 唯一F061原件与完整接回：待Astra直接门
+# 唯一F061原件与完整接回：Astra最终通过
+
+最新：Astra已实看62aedca4完整原件、接回和1×/4×终审通过；唯一采用源为F061_native_child_locked_G_candidate.png，SHA 0dde203fef7d78f00a6628ce1fc702f5ffa13a301adf0bd91b2fc10d80bd12ec。登记见ADOPTED_F061_SOURCE.json，不重生，不据此冻结新持帧。下文保留初交时的待门记录。
 
 raw_original.png 为完整未改1672×941原件，SHA 0f12968d4670e43676f77b892d9a42a91391d805ba073bcf162ecb55b5197a9b。actual_full_scoped_gray.jpg 为锁奶奶后的完整接回；actual_contacts_1x.png / actual_contacts_4x.png 为正常尺寸/4×双掌与X，均已实际打开查看。严格1调用、1原件、0重试，不扩后态、不冻结曝光。
 
