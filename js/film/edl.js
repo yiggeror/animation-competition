@@ -38,7 +38,7 @@ export const SHOTS = [
   { id: 'S23', scene: 8, line: 'engine', dur: 5, mod: 'js/lamp/shots/s23.js', text: '床单正面：乌龟伸长脖子咬住鹤嘴，鹤僵住；后台小满得意地看奶奶' },
   { id: 'S24', scene: 8, line: 'engine', dur: 2.5, mod: 'js/anim/s24_drawn.js', text: '后台近景：小满回过头，得意地看奶奶' },
   // 第 9 场 · 小狗
-  { id: 'S25', scene: 9, line: 'code', dur: 6, mod: 'js/code/s25.js', text: '后台：小满把手电架在木箱上，两只手伸进光里比出小狗' },
+  { id: 'S25', scene: 9, line: 'code', dur: 6, mod: 'js/anim/s25_drawn.js', text: '后台：小满把手电架在木箱上，两只手伸进光里比出小狗' },
   { id: 'S26', scene: 9, line: 'engine', dur: 18, mod: 'js/lamp/shots/s26.js', text: '床单正面：暖的皮影、冷的狗影；小狗追鹤，乌龟骑在狗背上，越演越快' },
   // 第 10 场 · 来电
   { id: 'S27', scene: 10, line: 'engine', dur: 5, mod: 'js/lamp/shots/s27.js', text: '床单正面（硬切进惨白）：日光灯闪两下亮了，影子几乎看不见' },
