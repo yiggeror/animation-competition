@@ -1,0 +1,43 @@
+{
+  "status": "SINGLE_COMPLETE_PANTS_REJOIN_VISIBLE_FAILURE_DELIVERED_NO_MASK_RETRIES",
+  "candidate_SHA256": "a8360b1ff4cc87b6ffe07ae9f1e0b6d50cb58467fc6f15ca008eecc2c9897b1e",
+  "source_sole_raw_SHA256": "1e2a0674f404054874c3b0ebef3370662d8dedc708fc73d7353ab492f8175afc",
+  "one_whole_similarity_attempt": 1,
+  "scale": 0.9493486792228847,
+  "rotation_degrees": 1.6079879831142714,
+  "matrix": [
+    [
+      0.9489748376610891,
+      -0.02663967395341448,
+      41.94739772724415
+    ],
+    [
+      0.02663967395341463,
+      0.9489748376610895,
+      33.443656688878264
+    ]
+  ],
+  "actual_upper_RGBA_changes": 0,
+  "FG_file_byte_identical": true,
+  "shoe_ankle_surrounding_RGBA_changes": 0,
+  "new_alpha_in_protected_shoe_blank": 0,
+  "original074_contact_band_RGBA_changes": 0,
+  "exclusive_BG_FG_and_static_activity_reconstruction_RGBA_changes": 0,
+  "reference_pixels_adopted_as_production_art": 0,
+  "old_y1210_cut_removed": true,
+  "actually_opened": [
+    "diagnostics/REJOIN_COMPLETE_WAIST_BOTH_KNEES_1to1.png",
+    "diagnostics/RAW_BEFORE_ONE_REJOIN_FINAL074_SAME_NATIVE.png"
+  ],
+  "visible_conflicts": [
+    "A long white gap follows the upper fixed-shin/active-knee connection in the normal-size image.",
+    "A thin waist/blouse join gap remains after the single whole-pants shrink/rotation.",
+    "The protected original074 physical contact band and the registered rounded knee lower contour do not coincide; a thin separated lower arc remains."
+  ],
+  "do_not_infer": "This one attempted match/ownership failed; not proof every possible registration would fail. No alternative parameters or masks tried.",
+  "new_imagegen_calls": 0,
+  "new_actual_Canvas": 0,
+  "actual_Canvas_reason": "Normal-size natural-join prerequisite failed; following requested failure branch, deliver existing visible result and full semantic target immediately without a new render. Prior actual082 Canvas remains untouched.",
+  "qualified_new_action_states": 0,
+  "next086_imagegen_calls": 0
+}

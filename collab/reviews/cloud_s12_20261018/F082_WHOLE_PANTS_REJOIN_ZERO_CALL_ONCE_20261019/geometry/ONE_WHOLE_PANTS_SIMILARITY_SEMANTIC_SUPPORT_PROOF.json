@@ -1,0 +1,280 @@
+{
+  "status": "SINGLE_ZERO_CALL_REJOIN_FAILED_NORMAL_SIZE_JOINS_DELIVERED_FOR_INPUT_GATE",
+  "source_actual_raw_SHA256": "1e2a0674f404054874c3b0ebef3370662d8dedc708fc73d7353ab492f8175afc",
+  "unchanged_upper_source_SHA256": "af50c22ba0d22692005c2cf862071748a5c8153d18d054ced24d3a91f5987d3a",
+  "source_original074_SHA256": "2fbceafa0d533d727e6b72f0e292c63f98295ee34dd4a677a51e62785b768900",
+  "candidate_SHA256": "a8360b1ff4cc87b6ffe07ae9f1e0b6d50cb58467fc6f15ca008eecc2c9897b1e",
+  "one_whole_pants_raw_to_native_matrix": [
+    [
+      0.9489748376610891,
+      -0.02663967395341448,
+      41.94739772724415
+    ],
+    [
+      0.02663967395341463,
+      0.9489748376610895,
+      33.443656688878264
+    ]
+  ],
+  "one_similarity_attempt": 1,
+  "uniform_scale": 0.9493486792228847,
+  "rotation_degrees": 1.6079879831142714,
+  "translation_native": [
+    41.94739772724415,
+    33.443656688878264
+  ],
+  "all_control_residuals": [
+    {
+      "name": "actual082_back_waist_under_blouse",
+      "source": [
+        250.0,
+        850.0
+      ],
+      "target": [
+        248.94923825143476,
+        846.4631344059738
+      ],
+      "registered": [
+        256.54738428211414,
+        846.732187189158
+      ],
+      "residual_native": [
+        7.5981460306793736,
+        0.26905278318417913
+      ]
+    },
+    {
+      "name": "actual082_front_waist_under_blouse",
+      "source": [
+        580.0,
+        950.0
+      ],
+      "target": [
+        578.4624621578174,
+        947.7036331546199
+      ],
+      "registered": [
+        567.0451133149321,
+        950.4207633598937
+      ],
+      "residual_native": [
+        -11.417348842885303,
+        2.717130205273861
+      ]
+    },
+    {
+      "name": "fixed074_far_anterior_knee_turn",
+      "source": [
+        708.0,
+        1210.0
+      ],
+      "target": [
+        675.0,
+        1200.0
+      ],
+      "registered": [
+        681.5875773076637,
+        1200.564099417814
+      ],
+      "residual_native": [
+        6.587577307663651,
+        0.5640994178140772
+      ]
+    },
+    {
+      "name": "fixed074_near_anterior_round_turn",
+      "source": [
+        681.0,
+        1280.0
+      ],
+      "target": [
+        642.0,
+        1270.0
+      ],
+      "registered": [
+        654.1004795140753,
+        1266.273066857348
+      ],
+      "residual_native": [
+        12.100479514075346,
+        -3.7269331426518875
+      ]
+    },
+    {
+      "name": "fixed074_near_knee_ground_turn",
+      "source": [
+        570.0,
+        1337.0
+      ],
+      "target": [
+        550.0,
+        1313.0
+      ],
+      "registered": [
+        547.2458111183498,
+        1317.4076287952012
+      ],
+      "residual_native": [
+        -2.7541888816501796,
+        4.407628795201163
+      ]
+    },
+    {
+      "name": "fixed074_far_shin_upper_valley_axis_A",
+      "source": [
+        330.0,
+        1167.0
+      ],
+      "target": [
+        330.0,
+        1147.0
+      ],
+      "registered": [
+        324.0205946517689,
+        1149.6883846439964
+      ],
+      "residual_native": [
+        -5.979405348231126,
+        2.6883846439964145
+      ]
+    },
+    {
+      "name": "fixed074_far_shin_upper_valley_axis_B",
+      "source": [
+        490.0,
+        1202.0
+      ],
+      "target": [
+        490.0,
+        1182.0
+      ],
+      "registered": [
+        474.9241800891736,
+        1187.164851794681
+      ],
+      "residual_native": [
+        -15.075819910826397,
+        5.164851794680999
+      ]
+    },
+    {
+      "name": "fixed074_near_shin_upper_valley_axis_A",
+      "source": [
+        370.0,
+        1269.0
+      ],
+      "target": [
+        370.0,
+        1263.0
+      ],
+      "registered": [
+        359.26234141496417,
+        1247.5494050435643
+      ],
+      "residual_native": [
+        -10.737658585035831,
+        -15.45059495643568
+      ]
+    },
+    {
+      "name": "fixed074_near_shin_upper_valley_axis_B",
+      "source": [
+        530.0,
+        1315.0
+      ],
+      "target": [
+        530.0,
+        1306.0
+      ],
+      "registered": [
+        509.8728904388813,
+        1295.4645954085206
+      ],
+      "residual_native": [
+        -20.127109561118687,
+        -10.535404591479391
+      ]
+    }
+  ],
+  "no_body_or_crotch_mesh_or_per_knee_warps": true,
+  "top_waist_actual_pixel_constraints_not_bone_measurements": true,
+  "semantic_valley_y_x_anchors": [
+    [
+      1070.0,
+      225.0
+    ],
+    [
+      1085.0,
+      235.0
+    ],
+    [
+      1098.0,
+      270.0
+    ],
+    [
+      1112.0,
+      315.0
+    ],
+    [
+      1130.0,
+      360.0
+    ],
+    [
+      1150.0,
+      400.0
+    ],
+    [
+      1170.0,
+      445.0
+    ],
+    [
+      1190.0,
+      485.0
+    ],
+    [
+      1215.0,
+      520.0
+    ],
+    [
+      1245.0,
+      550.0
+    ],
+    [
+      1270.0,
+      552.0
+    ],
+    [
+      1290.0,
+      540.0
+    ],
+    [
+      1304.0,
+      540.0
+    ],
+    [
+      1315.0,
+      560.0
+    ],
+    [
+      1350.0,
+      580.0
+    ],
+    [
+      1535.0,
+      580.0
+    ]
+  ],
+  "y1210_horizontal_cut_requirement_removed": true,
+  "current082_upper_full_arms_hand_RGBA_changes": 0,
+  "current082_FG_byte_identical": true,
+  "shoes_ankles_surrounding_empty_RGBA_changes": 0,
+  "protected_contact_band_RGBA_changes": 0,
+  "complete_knee_context_overlap_with_static_semantic_shin_or_contact_pixels": 10694,
+  "complete_knee_context_overlap_note": "Includes intentionally nonadopted adjacent shin context. No trimming against old knee silhouette; no old-outline alpha shaving rule.",
+  "new_reference_pixels_adopted": 0,
+  "new_imagegen_calls": 0,
+  "new_actual082_Canvas": 0,
+  "next086_imagegen_calls": 0,
+  "new_qualified_action_states": 0,
+  "post_fit_mask_trials": 0
+}
