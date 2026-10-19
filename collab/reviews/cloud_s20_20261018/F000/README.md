@@ -1,3 +1,5 @@
+> 最新：本页为已审冻结输入的准备记录。Astra放行后仅提交一次，原件与来源见[generation_001回审包](generation_001/README.md)；当前1调用、1原件、0在途，无后态。下文原0调用状态保留为提交前历史。
+
 # F000唯一首母态输入小门：已准备，未提交生图
 
 唯一姿态输入：[F000_fullbody_four_rods.png](inputs/F000_fullbody_four_rods.png)，1672×941。完整SHA256：`7bb8cc5b12cd86ca6b621425dca90e9cb878f3ba04c9160b4948098d5c777aee`。[可编辑构造源](inputs/F000_fullbody_four_rods.svg)与[起始状态/四杆轴线](F000_start_state.json)保留。

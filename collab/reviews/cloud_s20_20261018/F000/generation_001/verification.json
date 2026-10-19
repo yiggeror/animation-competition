@@ -1,0 +1,28 @@
+{
+  "verified_utc": "2026-10-19T01:10:30.918806+00:00",
+  "baseline": "d783004174847be5685124a0920b75cbadf8cc83",
+  "checks": {
+    "frozen_five_input_snapshots_and_originals_sha_match": true,
+    "prompt_and_submitted_args_exactly_frozen": true,
+    "F020_excluded": true,
+    "tool_return_data_url_equals_original_and_delivery_raw_bytes": true,
+    "raw_size_1672x941_RGBA": true,
+    "one_tool_call_one_raw_zero_retry_zero_in_flight": true,
+    "later_pose_calls_zero": true,
+    "protected_216_frame_files_byte_identical": true,
+    "existing_reference_and_source_files_unchanged_except_readme_notices_and_checksums": true,
+    "all_changes_exclusive_review_directory": true,
+    "local_deliverable_links_exist": true,
+    "actual_visual_review_recorded": true,
+    "all_current_checksum_entries_verified": true
+  },
+  "raw_sha256": "de1aec591119393f7f99a61a166f62e9af456ce24ffd718fec0429b20fe2e330",
+  "visual_review_outcome": "AUTHOR_F000_CANDIDATE_PASS_PENDING_ASTRA_SINGLE_IMAGE_REVIEW",
+  "production_ready": false,
+  "scene_and_puppet_projection_verified": false,
+  "historical_manifests_preserved": [
+    "before_root_SHA256SUMS.txt",
+    "before_F000_SHA256SUMS.txt"
+  ],
+  "verification_preparation_note": "Two initial documentation checks preceded report/checksum creation and found verification.json then SHA256SUMS.txt missing. Root cause: validation before derived artifacts existed. Generate both artifacts before the final link check; finalize report, regenerate and verify all checksum entries. Full checks then pass. No new image calls."
+}

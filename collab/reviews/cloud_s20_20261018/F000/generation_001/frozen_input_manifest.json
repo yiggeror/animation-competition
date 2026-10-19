@@ -1,0 +1,81 @@
+{
+  "status": "PREPARED_NOT_SUBMITTED",
+  "frame": 0,
+  "unique_pose_input": {
+    "order": 1,
+    "repo_path": "collab/reviews/cloud_s20_20261018/F000/inputs/F000_fullbody_four_rods.png",
+    "actual_local_path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F000/inputs/F000_fullbody_four_rods.png",
+    "role": "唯一F000起始体量/四杆持有输入：小满零接触，奶奶持四杆",
+    "sha256": "7bb8cc5b12cd86ca6b621425dca90e9cb878f3ba04c9160b4948098d5c777aee",
+    "size": [
+      1672,
+      941
+    ]
+  },
+  "identity_inputs": [
+    {
+      "order": 2,
+      "repo_path": "collab/refs/grandma_turnaround_current03_draft.png",
+      "actual_local_path": "/workspace/cloud-s20-reference-20261018/collab/refs/grandma_turnaround_current03_draft.png",
+      "role": "奶奶身份/全身比例与左腕玉镯",
+      "sha256": "ab88b69f5303229af379303a37b6e9e3c8cdb35cd05b3902b604871efb2b1671",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "order": 3,
+      "repo_path": "collab/refs/grandma_expressions_current02.png",
+      "actual_local_path": "/workspace/cloud-s20-reference-20261018/collab/refs/grandma_expressions_current02.png",
+      "role": "奶奶面部身份、中性颈肤与温和起始表情",
+      "sha256": "8394bd5dde841a3202e04f48684d728d5c511317efa1a159c55abe99818b39dd",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "order": 4,
+      "repo_path": "collab/refs/xiaoman_turnaround_v4_draft.png",
+      "actual_local_path": "/workspace/cloud-s20-reference-20261018/collab/refs/xiaoman_turnaround_v4_draft.png",
+      "role": "小满身份/双马尾/衣裙/完整身体",
+      "sha256": "816a5d7cfed7c220717ea80d9a9419290135d8543c4f87e4866d804132720d32",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "order": 5,
+      "repo_path": "collab/refs/xiaoman_expressions_current03.png",
+      "actual_local_path": "/workspace/cloud-s20-reference-20261018/collab/refs/xiaoman_expressions_current03.png",
+      "role": "小满面部身份与自然表情",
+      "sha256": "5df66be288683cb1c7e59ba9cd83105b515b7df28bd83fc8fdb159f80861cdee",
+      "size": [
+        2048,
+        768
+      ]
+    }
+  ],
+  "F020_is_not_an_input": true,
+  "all_referenced_files_exist": true,
+  "image_generation_calls": 0,
+  "attempts": 0,
+  "raw_generated_outputs": [],
+  "request_requires_Astra_F000_input_gate": true,
+  "initial_holders": {
+    "TH": [
+      "G.R"
+    ],
+    "TS": [
+      "G.R"
+    ],
+    "CB": [
+      "G.L"
+    ],
+    "CN": [
+      "G.L"
+    ]
+  }
+}

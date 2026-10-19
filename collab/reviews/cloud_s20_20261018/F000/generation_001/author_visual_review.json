@@ -1,0 +1,58 @@
+{
+  "reviewed_utc": "2026-10-19T01:07:36.543644+00:00",
+  "reviewer": "cloud author; no second reviewer spawned",
+  "raw_sha256": "de1aec591119393f7f99a61a166f62e9af456ce24ffd718fec0429b20fe2e330",
+  "actual_images_inspected": [
+    "S20_F000_call001_raw.png",
+    "qa/gray_matte_preview_QA_NOT_OUTPUT.png",
+    "qa/grandma_L_crane_grip_gray_QA.png",
+    "qa/grandma_R_turtle_grip_gray_QA.png",
+    "qa/xiaoman_both_open_hands_gray_QA.png",
+    "qa/grandma_head_neck_gray_QA.png",
+    "qa/xiaoman_head_neck_gray_QA.png"
+  ],
+  "checks": [
+    {
+      "item": "身份/全身比例",
+      "result": "AUTHOR_VISUAL_PASS",
+      "evidence": "仅奶奶与小满各一人，头顶到鞋底完整；灰髻红珠圆镜蓝花衫深裤与黄波点白领红鞋身份一致，成人/孩子体量有别，颈根及袖臂连续；这里只是画面内目测，不冒充CAM20骨长/透视实测。"
+    },
+    {
+      "item": "奶奶解剖L/C_N+C_B",
+      "result": "AUTHOR_VISUAL_PASS",
+      "evidence": "高位持杆手与单只玉镯相连；可数两根竹色直杆，杆在拇指与弯指之间受握，手后两短尾可见；未见明显折轴、分叉或空拳。C_N/C_B语义由冻结上方双杆继承，成图未加色码。"
+    },
+    {
+      "item": "奶奶解剖R/T_H+T_S",
+      "result": "AUTHOR_VISUAL_PASS",
+      "evidence": "低位右前臂从另一短袖接到腕掌，无镯；两根分开的竹签收进同一握，短尾在手后露出。没有把杆接到小满掌上。T_H/T_S继承冻结下方双杆，不冒称已接真实龟偶。"
+    },
+    {
+      "item": "小满双手零接触",
+      "result": "AUTHOR_VISUAL_PASS",
+      "evidence": "两条前臂连接到两只开放手掌，拇指与伸/微屈四指可辨；两掌均在两龟签下方并有空隙，没有提前共同承重或握签。"
+    },
+    {
+      "item": "四杆/施工标记/灯光",
+      "result": "AUTHOR_VISUAL_PASS",
+      "evidence": "全图四根可数竹色杆，无原蓝粉绿橙码、骨架/圆筒/关节圈、文字或图框；未画偶、场景或灯；固有色加自然体积阴影，没有场景光斑。未做后处理改画。"
+    },
+    {
+      "item": "原件透明通道",
+      "result": "PASS_WITH_RAW_ALPHA_NOTE",
+      "evidence": "1672×941 RGBA，alpha>=240有252604像素；灰底实际合成可见两人完整。raw存在极低alpha游离像素，见png_inspection.json；本轮保持原字节，未裁切/清理/改色。"
+    }
+  ],
+  "outcome": "AUTHOR_F000_CANDIDATE_PASS_PENDING_ASTRA_SINGLE_IMAGE_REVIEW",
+  "production_ready": false,
+  "not_yet_verified": [
+    "实际CAM20场景透视/裁切与相对世界定位",
+    "偶端世界投影、杆端接景与道具前后遮挡",
+    "后态/交接序列/整镜/音轨"
+  ],
+  "image_generation_tool_calls": 1,
+  "raw_outputs": 1,
+  "in_flight": 0,
+  "later_pose_calls": 0,
+  "raw_pixel_edits": 0
+}
