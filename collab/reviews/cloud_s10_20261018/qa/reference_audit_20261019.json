@@ -1,0 +1,374 @@
+{
+  "status": "PASS_REFERENCE_RESTORATION_ONLY",
+  "utc": "2026-10-19T06:42:25.393900+00:00",
+  "baseline": "54796bf3835d6fe8e32a78ea3c854ac2a5d34d15",
+  "includes_118cb8cb": true,
+  "restored_files_byte_identical": 29,
+  "exposures": 8,
+  "coverage": [
+    0,
+    119
+  ],
+  "fps": 24,
+  "duration_seconds": 5.0,
+  "neck_axis_length_px": 182.00274723201295,
+  "max_neck_axis_delta": 8.526512829121202e-14,
+  "C7_fixed": true,
+  "CSV_agrees_with_JSON": true,
+  "decoded_reference_PNGs": [
+    {
+      "path": "reference/01_eight_poses.png",
+      "size": [
+        1960,
+        1173
+      ],
+      "mode": "RGBA",
+      "pixel_extrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "sha256": "319370329bba54e8551e111539745aba72a3b29b0c6206b1579a8d97ddf34b0f"
+    },
+    {
+      "path": "reference/02_observed_proportions.png",
+      "size": [
+        1587,
+        1157
+      ],
+      "mode": "RGBA",
+      "pixel_extrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "sha256": "a81a68d215b4a6bc206dfc15d38dd36080106addf85ca34de79723c8e0c68014"
+    },
+    {
+      "path": "reference/03_whole_head_neck.png",
+      "size": [
+        2040,
+        923
+      ],
+      "mode": "RGBA",
+      "pixel_extrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "sha256": "a47c3ad85f0922376a6faf1e5d924cdaaa7b8f47b75919ba7174f34f263b1cbd"
+    },
+    {
+      "path": "reference/04_layers_contacts.png",
+      "size": [
+        1738,
+        1021
+      ],
+      "mode": "RGBA",
+      "pixel_extrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "sha256": "ccac42d4ca1655dc77044580879664b5525d8e89288bd536640872062b053d19"
+    },
+    {
+      "path": "reference/poses/F000.png",
+      "size": [
+        1563,
+        1053
+      ],
+      "mode": "RGBA",
+      "pixel_extrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "sha256": "bbf17126905fd8ec7153dedda548426357e1b0ff981604c2f3645bae89a72ac2"
+    },
+    {
+      "path": "reference/poses/F024.png",
+      "size": [
+        1563,
+        1053
+      ],
+      "mode": "RGBA",
+      "pixel_extrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "sha256": "609ea8ae42fa370c83c1ec5a7d3d25293dd8e13dbe6cb34f54f02906f0f0d8f6"
+    },
+    {
+      "path": "reference/poses/F027.png",
+      "size": [
+        1563,
+        1053
+      ],
+      "mode": "RGBA",
+      "pixel_extrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "sha256": "137f3bcd985d2e031df776c794c5d7b824c5e0819731b58d47fd4439edeff1ab"
+    },
+    {
+      "path": "reference/poses/F030.png",
+      "size": [
+        1563,
+        1053
+      ],
+      "mode": "RGBA",
+      "pixel_extrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "sha256": "341192bdbe116b23d32e22893336e04cc4ec1ef00db3e7c2d4ea0a769a893672"
+    },
+    {
+      "path": "reference/poses/F033.png",
+      "size": [
+        1563,
+        1053
+      ],
+      "mode": "RGBA",
+      "pixel_extrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "sha256": "f0eb8ef1b77d743942200d6ceb9288e46ea79fff98bd7b0ae96aa3f6b8000d24"
+    },
+    {
+      "path": "reference/poses/F045.png",
+      "size": [
+        1563,
+        1053
+      ],
+      "mode": "RGBA",
+      "pixel_extrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "sha256": "bfbb524d6d45c71fea1512a939ab01e53dcafec32e4b3e748767e3bc34841b3e"
+    },
+    {
+      "path": "reference/poses/F072.png",
+      "size": [
+        1563,
+        1053
+      ],
+      "mode": "RGBA",
+      "pixel_extrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "sha256": "53b4e4559c0c544c689055aa822d24cdae776f8a5bd34d4658265bca576cc0df"
+    },
+    {
+      "path": "reference/poses/F096.png",
+      "size": [
+        1563,
+        1053
+      ],
+      "mode": "RGBA",
+      "pixel_extrema": [
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          255,
+          255
+        ]
+      ],
+      "sha256": "131f9efdb4f6ad284a75479edc7e6b01b3056603f5c3ecbe71c750912459f208"
+    }
+  ],
+  "actual_images_viewed_with_view_image": [
+    "reference/01_eight_poses.png",
+    "reference/02_observed_proportions.png",
+    "reference/03_whole_head_neck.png",
+    "reference/04_layers_contacts.png",
+    "collab/keyposes/20261018_scenes03_12/S10/S10_code_F000-F046.jpg",
+    "collab/keyposes/20261018_scenes03_12/S10/S10_code_F048-F094.jpg",
+    "collab/keyposes/20261018_scenes03_12/S10/S10_code_F096-F118.jpg",
+    "collab/refs/grandma_expressions_current02.png",
+    "collab/refs/grandma_turnaround_current03_draft.png",
+    "assets/chars/g10_squint.png"
+  ],
+  "visual_findings": [
+    "八态总览展示整颅和颈轴共同变化，肩/领固定；各角度仅为施工目标。",
+    "比例图将可见读点、隐藏关节估计、二维短缩与颈轴构造分开标示。",
+    "接触图明确鼻梁/镜桥、镜腿/耳根、下颌/颈面/领口；两手肘腕在画外。",
+    "代码接触表包含前72帧全景/后48帧近景；本参考采用新版清单要求的全镜近景。",
+    "旧g10存在裁发顶及固定眯眼，不用作转头或颈长母版。",
+    "图中多面体、网格、虚线仅为技术标示，不是实际人物素材。"
+  ],
+  "new_image_calls": 0,
+  "new_raw_outputs": 0,
+  "image_tool": "image_gen.imagegen exposed; not called in this task",
+  "new_scene_renders": 0,
+  "remaining_reference_blockers": [],
+  "not_reverified": [
+    "latest voiced S10 delivery",
+    "production module pixel equivalence",
+    "actual generated anatomy acceptance; source says this was already approved"
+  ]
+}
