@@ -1,0 +1,256 @@
+{
+  "status": "HOLD_NEW_WAIST_TO_OLD_LOWERLEG_JOIN_REQUIRES_ROOT_ASTRA_DECISION_NO_CALL",
+  "source_call01_sha256": "e2d25f29055fe8de97caea83620be7127fe15bf97ce859f922b83f7c0f0a16bf",
+  "source_call01_commit_reference": "71f78bca",
+  "source_fixed_16degree_layers_reference": "6cb57488/095",
+  "common_inverse": {
+    "scale": 0.703125,
+    "offset": [
+      1240,
+      0
+    ],
+    "native_crop": [
+      1240,
+      0,
+      1960,
+      1080
+    ]
+  },
+  "one_whole_arm_transform": {
+    "R_degrees": -10,
+    "scale": 1,
+    "pivot_native_fixed_by_parent": [
+      1542.34375,
+      361.40625
+    ],
+    "pivot_raw_correspondence": [
+      430,
+      514
+    ],
+    "M": [
+      [
+        0.984807753012208,
+        0.17364817766693033
+      ],
+      [
+        -0.17364817766693033,
+        0.984807753012208
+      ]
+    ],
+    "t": [
+      -39.325869519861726,
+      273.31575453641125
+    ],
+    "source_raw_semantic_polygon": [
+      [
+        292,
+        487
+      ],
+      [
+        308,
+        443
+      ],
+      [
+        332,
+        410
+      ],
+      [
+        364,
+        379
+      ],
+      [
+        393,
+        359
+      ],
+      [
+        425,
+        362
+      ],
+      [
+        453,
+        390
+      ],
+      [
+        474,
+        429
+      ],
+      [
+        481,
+        497
+      ],
+      [
+        480,
+        508
+      ],
+      [
+        493,
+        505
+      ],
+      [
+        585,
+        453
+      ],
+      [
+        627,
+        431
+      ],
+      [
+        653,
+        427
+      ],
+      [
+        687,
+        437
+      ],
+      [
+        724,
+        458
+      ],
+      [
+        736,
+        469
+      ],
+      [
+        732,
+        481
+      ],
+      [
+        729,
+        491
+      ],
+      [
+        722,
+        501
+      ],
+      [
+        710,
+        511
+      ],
+      [
+        689,
+        512
+      ],
+      [
+        651,
+        499
+      ],
+      [
+        607,
+        497
+      ],
+      [
+        571,
+        524
+      ],
+      [
+        511,
+        565
+      ],
+      [
+        450,
+        599
+      ],
+      [
+        429,
+        599
+      ],
+      [
+        406,
+        580
+      ],
+      [
+        389,
+        554
+      ],
+      [
+        334,
+        562
+      ]
+    ],
+    "source_ownership": "manual semantic polygon intersect actual RAW person component alpha16 plus2px actualalpha AA; removes separate RAW new-lamp component, never subtracts the FIXED source lamp from human",
+    "includes_complete_raw_short_sleeve_and_whole_arm_hand": true,
+    "not_adjusted_to_match_parent_gap_number": true,
+    "parent_gap13_15295_is_separate_diagnostic_not_our_mask_measurement": true
+  },
+  "true_lamp_gap_after_SOFT_transform": {
+    "16": {
+      "native_distance_pixel_centers": 11.704699910719626,
+      "overlap_pixels": 0,
+      "raised_arm_xy": [
+        1722,
+        324
+      ],
+      "actual_fixed_lamp_xy": [
+        1726,
+        335
+      ]
+    },
+    "128": {
+      "native_distance_pixel_centers": 12.649110640673518,
+      "overlap_pixels": 0,
+      "raised_arm_xy": [
+        1720,
+        324
+      ],
+      "actual_fixed_lamp_xy": [
+        1724,
+        336
+      ]
+    }
+  },
+  "raw_new_waist_full_common_mapping": true,
+  "derived_source_new_pants_only_yLT690": true,
+  "original_lowerlegs_yGE690_RGBA_changes": 0,
+  "source_head_chest_fararm_feet_and_lamp_not_individually_fit": true,
+  "white_guard_intersection_pixels": 0,
+  "guard_alpha0_in_A": 0,
+  "complete_raised_material_outside_white_or_protected_actual_layers": 0,
+  "white_pixels": 36233,
+  "white_bbox_halfopen": [
+    1413,
+    231,
+    1766,
+    424
+  ],
+  "material_bbox_halfopen": [
+    1360,
+    47,
+    1852,
+    1024
+  ],
+  "y690_source_join_requires_actual_view": true,
+  "joint_material_pixels_in_sample_band": 866,
+  "near_short_sleeve_original_competition_removed": true,
+  "no_unraised_arm_in_A_C": true,
+  "original_far_hand_is_complete_same_group_layer_not_isolated_palm": true,
+  "whole_far_source_layer_rgba_changes": 0,
+  "tool_size": [
+    1024,
+    1536
+  ],
+  "imagegen_calls": 0,
+  "limits": [
+    "The raised whole source is only SOFT guidance, not a zero-call anatomical/sleeve repair. Complete shoulder/short sleeve/whole arm/wrist/hand remain WHITE.",
+    "New call01 navy waist/hips remain real unchanged donor RGB under original source16 blouse and full fararm. Its y690 join into original095 lowerlegs must be judged visually; no code bridge/RGB fill, and no waiver to repaint protected waist.",
+    "No source hidden material or alpha0/occluded rear-foot layer is used to block foreground painting.",
+    "C soft chain is manually read projection only, not measured bone lengths or pose lock."
+  ],
+  "fullwhite_connected_component_count": 3,
+  "pivot_white": true,
+  "D_crop_paste_native1to1": {
+    "source": "sources/F100_body_head_chest_whole_RIGID16.png",
+    "complete_head_neck_collar_crop": [
+      1440,
+      30,
+      1750,
+      325
+    ],
+    "paste": [
+      15,
+      45
+    ],
+    "scale": 1,
+    "source_scope": "actual original body group; full head/face/glasses/neck/collar visible, no full failedraw or wrong lamp"
+  },
+  "waist_join_actual_findings": "At y690 the real call01 upper cap and original095 lowerlegs show horizontal ink/fold discontinuities and small outer-edge steps around x1380..1540/y689..692. No code bridge, RGB paint, independent fit, or expanded B was used. Current neararm-only gate cannot repair this protected join."
+}

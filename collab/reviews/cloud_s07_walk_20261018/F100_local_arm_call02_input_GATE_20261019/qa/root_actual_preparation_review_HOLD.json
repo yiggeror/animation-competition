@@ -1,0 +1,128 @@
+{
+  "state": "PREPARED_NOT_CALLED_HOLD_ACTUAL_Y690_WAIST_TO_ORIGINAL_LOWERLEGS_JOIN",
+  "imagegen_requests_call02": 0,
+  "originals_call02": 0,
+  "active": 0,
+  "candidate_created": false,
+  "source_call01_raw_sha256": "e2d25f29055fe8de97caea83620be7127fe15bf97ce859f922b83f7c0f0a16bf",
+  "true_fixed_lamp_sha256": "5c2321d12357ed82cee9e582a00f67faa92a8cc32ca0cbc33ae89608443ed29a",
+  "frozen_source_layer_checks": [
+    {
+      "path": "sources/F100_body_head_chest_whole_RIGID16.png",
+      "sha256": "26b07417fd83d1eb65ea0c4682b20e33e83a1915053908bcff1c0e3077fcced8",
+      "frozen_commit_byte_equal": true
+    },
+    {
+      "path": "sources/F100_far_complete_arm_jade_whole_RIGID16.png",
+      "sha256": "0eda8380639273ca08d40dd835807f9a925e7a4d1d86643a3030df0d6f164ba7",
+      "frozen_commit_byte_equal": true
+    },
+    {
+      "path": "sources/F100_near_whole_shoe_FIXED.png",
+      "sha256": "60805bc58c5035c804025d84a00f122e434fb217e68478c86d671a5ab6a180a3",
+      "frozen_commit_byte_equal": true
+    },
+    {
+      "path": "sources/F100_far_whole_shoe_FIXED.png",
+      "sha256": "64637d1d886e25fdcf3c888b533c1a8164844fe429a87295cfb9194dc585503c",
+      "frozen_commit_byte_equal": true
+    },
+    {
+      "path": "sources/F095_original_whole_trousers_FIXED_ARCHIVE.png",
+      "sha256": "28c177a614d5ed8bd13c40d1e861710345b3057d66b18d970faf66e82f3f10a1",
+      "frozen_commit_byte_equal": true
+    }
+  ],
+  "actual_inputs_viewed_individually": [
+    {
+      "letter": "A",
+      "path": "inputs_1024x1536/A_F100_local_arm_PREPARED_NOT_CALLED.png",
+      "sha256": "7897a9bd9cbbe284f36141767eb3079198d8bdfca16dfc9fb4f0d63ec6d07443",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "letter": "B",
+      "path": "inputs_1024x1536/B_F100_local_arm_PREPARED_NOT_CALLED.png",
+      "sha256": "eef5cdde22abe5af5f6ca56c601d8c933e258a23af8264023b8a62285c72bb94",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "L"
+    },
+    {
+      "letter": "C",
+      "path": "inputs_1024x1536/C_F100_local_arm_PREPARED_NOT_CALLED.png",
+      "sha256": "a3fc7773389bb130c9f4f60954533f87a4c47cc4a6d92d8240a4ec3baf6e8bd8",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "letter": "D",
+      "path": "inputs_1024x1536/D_F100_local_arm_PREPARED_NOT_CALLED.png",
+      "sha256": "0945aef41118ea8097ce8e6a2e703bfc96e764da42bd91de2656fe9526486471",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA"
+    }
+  ],
+  "prompt_string_sha256": "d3215766194610d14a5009ad13b09424e08351050ec53cc9ceb97a6a4c7a09fa",
+  "args_file_sha256": "0f5b0f5070488c5bf3efdf7128746ac1df44a91aab77df5ddc390f325c0f9c44",
+  "prompt_verbatim_preserved_no_factual_rewrite": true,
+  "one_whole_arm_transform_replayed_byte_equal": true,
+  "fixed_pivot_native": [
+    1542.34375,
+    361.40625
+  ],
+  "rotation_degrees": -10,
+  "scale": 1,
+  "source_native_A_layer_replay_byte_equal": true,
+  "native_to_tool": 1.4222222222222223,
+  "sole_common_inverse": {
+    "scale": 0.703125,
+    "offset": [
+      1240,
+      0
+    ]
+  },
+  "guide_to_unmoved_actual_lamp_alpha_clearance": {
+    "16": {
+      "native_pixels": 11.704699910719626,
+      "overlap_pixels": 0
+    },
+    "128": {
+      "native_pixels": 12.649110640673518,
+      "overlap_pixels": 0
+    }
+  },
+  "original_lowerlegs_yGE690_RGBA_changes": 0,
+  "white_guard_overlap_pixels": 0,
+  "actual_viewed_gray_dark": [
+    "qa/four_inputs_gray.png",
+    "qa/four_inputs_dark.png",
+    "qa/raised_full_sleeve_arm_and_TRUE_bail_gray_3x.png",
+    "qa/raised_full_sleeve_arm_and_TRUE_bail_dark_3x.png",
+    "qa/ACTUAL_new_waist_original_lower_join_dark_4x.png"
+  ],
+  "visual_findings": [
+    "A and C contain one whole raised near-sleeve/arm guide. The cut source shoulder/cloth edge is visible and fully requires the proposed real sleeve-to-fingers redraw; it is not an adopted arm.",
+    "Actual whole far-arm/hand/jade source group is restored beneath blouse; complete fixed lamp, source head/chest and planted shoes remain in the frozen registration.",
+    "D complete source head/face/neck/collar crop was visually rechecked after correcting initial half-face crop; no failed full raw or shifted raw lamp is included.",
+    "At native y689–692, roughly x1380–1540, new actual raw waist cut into the retained original lowerlegs shows horizontal ink/fold discontinuities and a 1–3px outside silhouette step.",
+    "The exact supplied prompt says the new cloth and its joins are already continuous, but this prepared source join does not yet meet that premise. No permission to redraw protected waist was inferred; prompt was not silently changed."
+  ],
+  "blocker": "Astra action decision on actual y690 waist/lowerleg join before final-gate request execution; no local bridge or wider B was made.",
+  "call02_authorized_to_execute": false,
+  "F103_F106_called": false,
+  "independent_61sol_manifest_verified_files": 43,
+  "independent_61sol_manifest_sha256": "3589d856ae6cdd0552ee027e6bc1227f3a7b50b12b9cabcd8634ea0215684e4e"
+}

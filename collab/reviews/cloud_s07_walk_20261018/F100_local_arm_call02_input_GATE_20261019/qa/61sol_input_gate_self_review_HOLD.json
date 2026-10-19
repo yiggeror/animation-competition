@@ -1,0 +1,61 @@
+{
+  "status": "HOLD_INPUT_REVIEW_ONLY_NOT_FROZEN_NOT_CALLED",
+  "scope": "Complete near short sleeve and arm only, fixed parent pivot, real source groups restored, no waist repaint.",
+  "actual_viewed": [
+    "inputs_1024x1536/A_F100_local_arm_PREPARED_NOT_CALLED.png",
+    "inputs_1024x1536/B_F100_local_arm_PREPARED_NOT_CALLED.png",
+    "inputs_1024x1536/C_F100_local_arm_PREPARED_NOT_CALLED.png",
+    "inputs_1024x1536/D_F100_local_arm_PREPARED_NOT_CALLED.png",
+    "qa/four_inputs_gray.png",
+    "qa/four_inputs_dark.png",
+    "qa/raised_full_sleeve_arm_and_TRUE_bail_gray_3x.png",
+    "qa/raised_full_sleeve_arm_and_TRUE_bail_dark_3x.png",
+    "qa/ACTUAL_new_waist_original_lower_join_gray_4x.png",
+    "qa/ACTUAL_new_waist_original_lower_join_dark_4x.png"
+  ],
+  "facts": [
+    "A/C show only one raised whole raw short-sleeve/arm/hand guide; unraised donor is source archive only.",
+    "Fixed actual16degree head/chest, complete fararm/hand/jade, original shoes/lowerlegs and true lamp restored. Farhand is a full original group, not an isolated palm.",
+    "Fixed−10degree scale1 pivot1542.34375/361.40625; no optimization to parent13.15295. Our material mask gives alpha12812.649native, overlap0.",
+    "Raw-person component ownership excludes the separate shifted NEW rawlamp from arm extraction; it never subtracts the FIXED original lamp to hide hand conflict.",
+    "Sleeve/shoulder attachment is visibly cut/offset and is deliberately inside complete WHITE for future coherent drawing, not claimed zero-call success.",
+    "D now includes complete source head/face/glasses/neck/collar rather than half a face, plus internal cloth/navy only."
+  ],
+  "blocker": "Protected new raw waistcap y<690 joins old095 lowerlegs y>=690 with visible horizontal fold/ink breaks and small contour steps. Do not call while this remains unresolved; exact supplied prompt presumes a preserved continuous join that this input presently does not meet. Root/Astra must decide source boundary, not a silent local patch.",
+  "unchanged_B_scope_after_parent_request": true,
+  "exact_parent_prompt_preserved": true,
+  "prompt_SHA256": "d3215766194610d14a5009ad13b09424e08351050ec53cc9ceb97a6a4c7a09fa",
+  "source_files": [
+    {
+      "file": "sources/F095_original_whole_trousers_FIXED_ARCHIVE.png",
+      "sha256": "28c177a614d5ed8bd13c40d1e861710345b3057d66b18d970faf66e82f3f10a1"
+    },
+    {
+      "file": "sources/F100_body_head_chest_whole_RIGID16.png",
+      "sha256": "26b07417fd83d1eb65ea0c4682b20e33e83a1915053908bcff1c0e3077fcced8"
+    },
+    {
+      "file": "sources/F100_call01_RAW_e2d25f29_SOURCE_ARCHIVE.png",
+      "sha256": "e2d25f29055fe8de97caea83620be7127fe15bf97ce859f922b83f7c0f0a16bf"
+    },
+    {
+      "file": "sources/F100_far_complete_arm_jade_whole_RIGID16.png",
+      "sha256": "0eda8380639273ca08d40dd835807f9a925e7a4d1d86643a3030df0d6f164ba7"
+    },
+    {
+      "file": "sources/F100_far_whole_shoe_FIXED.png",
+      "sha256": "64637d1d886e25fdcf3c888b533c1a8164844fe429a87295cfb9194dc585503c"
+    },
+    {
+      "file": "sources/F100_near_whole_shoe_FIXED.png",
+      "sha256": "60805bc58c5035c804025d84a00f122e434fb217e68478c86d671a5ab6a180a3"
+    },
+    {
+      "file": "sources/ORIGINAL_fixed_lamp_same_native_registration.png",
+      "sha256": "5c2321d12357ed82cee9e582a00f67faa92a8cc32ca0cbc33ae89608443ed29a"
+    }
+  ],
+  "imagegen_calls": 0,
+  "git_operations": 0,
+  "no_other_states_modified": true
+}
