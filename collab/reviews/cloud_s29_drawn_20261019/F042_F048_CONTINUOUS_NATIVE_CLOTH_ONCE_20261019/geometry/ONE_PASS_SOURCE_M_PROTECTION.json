@@ -1,0 +1,132 @@
+{
+  "source_commit": "8c41ca4517978ca3a4e6a44260ed1d3426f12edd",
+  "one_pass_only": true,
+  "reports": [
+    {
+      "frame": 42,
+      "source_raw_sha256": "e136de84b37133140ddbbb9d2aad50b88efdcb5bf4a1661dbdb38567ef3cb4fa",
+      "source_8c_candidate_sha256": "bab476ca7c5baa13d1c9535c971fe67d6c48661918933f414c06ddce7e7265e7",
+      "output_sha256": "4d0ebc3f3629607c314d6bb2d8729d45cc99bb55de73007ddc1211fce4f60719",
+      "M_exactly_read_not_refit": [
+        [
+          0.9151612677614226,
+          -0.017035527950310197,
+          43.758117685697016
+        ],
+        [
+          0.017035527950310204,
+          0.9151612677614226,
+          24.881128130690286
+        ]
+      ],
+      "raw_cotton_selected_pixels": 96169,
+      "whole_old8c_cloth_retired_pixels": 184122,
+      "unavailable_exposed_cloth": {
+        "pixels": 41846,
+        "bbox_inclusive": [
+          267,
+          646,
+          893,
+          982
+        ]
+      },
+      "projected_generated_prop_exclusion": {
+        "pixels": 41844,
+        "bbox_inclusive": [
+          267,
+          646,
+          893,
+          948
+        ]
+      },
+      "projected_human_occlusion": {
+        "pixels": 856,
+        "bbox_inclusive": [
+          524,
+          710,
+          637,
+          722
+        ]
+      },
+      "confirmed_raw_gold_core_not_cotton": {
+        "pixels": 8954,
+        "bbox_inclusive": [
+          277,
+          712,
+          887,
+          944
+        ]
+      },
+      "near_C1_RGBA_changed": 0,
+      "existing_complete_far_arm_RGBA_changed": 0,
+      "true_original_props_all_RGBA_changed": 0,
+      "fixed_head_chest_lowerlegs_guard_RGBA_changed": 0,
+      "new_generation_calls": 0,
+      "cotton_RGB_source": "this state original raw only, same coordinate M; no 036 donor crop",
+      "status": "HOLD_EXPOSED_SOURCE_CLOTH_GAPS_AFTER_FULL_OLD_CLOTH_RETIREMENT"
+    },
+    {
+      "frame": 48,
+      "source_raw_sha256": "7675187316297da388c335dcd4c32d6c880d2336458838eea2308b34e4a78bcd",
+      "source_8c_candidate_sha256": "e2f66959eef2ef6f3e8f4c4a7a2ca7db9a1b79b7a7eb81cfc64b0e18d9d917c7",
+      "output_sha256": "9daf25d673bf6de1ba008872bf07d83ae7c90663974a1b20cac0a739db50505f",
+      "M_exactly_read_not_refit": [
+        [
+          0.9748802847799147,
+          0.019031780788527755,
+          5.016974522150804
+        ],
+        [
+          -0.019031780788527942,
+          0.974880284779915,
+          13.223303260141279
+        ]
+      ],
+      "raw_cotton_selected_pixels": 94419,
+      "whole_old8c_cloth_retired_pixels": 181731,
+      "unavailable_exposed_cloth": {
+        "pixels": 50706,
+        "bbox_inclusive": [
+          275,
+          643,
+          943,
+          1001
+        ]
+      },
+      "projected_generated_prop_exclusion": {
+        "pixels": 50703,
+        "bbox_inclusive": [
+          275,
+          643,
+          943,
+          968
+        ]
+      },
+      "projected_human_occlusion": {
+        "pixels": 1319,
+        "bbox_inclusive": [
+          524,
+          659,
+          718,
+          733
+        ]
+      },
+      "confirmed_raw_gold_core_not_cotton": {
+        "pixels": 8291,
+        "bbox_inclusive": [
+          287,
+          720,
+          937,
+          958
+        ]
+      },
+      "near_C1_RGBA_changed": 0,
+      "existing_complete_far_arm_RGBA_changed": 0,
+      "true_original_props_all_RGBA_changed": 0,
+      "fixed_head_chest_lowerlegs_guard_RGBA_changed": 0,
+      "new_generation_calls": 0,
+      "cotton_RGB_source": "this state original raw only, same coordinate M; no 036 donor crop",
+      "status": "HOLD_EXPOSED_SOURCE_CLOTH_GAPS_AFTER_FULL_OLD_CLOTH_RETIREMENT"
+    }
+  ]
+}

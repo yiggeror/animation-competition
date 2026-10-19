@@ -1,0 +1,33 @@
+{
+  "reviewer": "Root independent actual-pixel review",
+  "new_generation_calls": 0,
+  "root_viewed_all_four_images": true,
+  "source036_sha256": "0a65674bee91dec491997e45c5b0a2993c91a44f64424735883a032321b9a02b",
+  "checks": [
+    {
+      "frame": 42,
+      "M_exact_to_8c": true,
+      "raw_sha256_verified": true,
+      "C1_protection_RGBA_differences": 0,
+      "original_props_RGBA_differences": 0,
+      "full_supplied_protection_RGBA_differences": 0,
+      "four_review_images_actually_opened_by_root": true,
+      "whole_SHA256": "284be8d99dc6b4b0b0eb46b9760c4fcf77e133366c19a8535e761b4ce60755e5",
+      "seam_SHA256": "0695b3fc6c6df6791fc5c1c9a986b14b32f52b8296f3c5802a29cf2c9823bc4d",
+      "visual_result": "HOLD. Retired prior cloth exposes unfilled regions; fixed-M own raw contains generated props in required material. This preview is diagnostic and is not an adoptable complete drawing."
+    },
+    {
+      "frame": 48,
+      "M_exact_to_8c": true,
+      "raw_sha256_verified": true,
+      "C1_protection_RGBA_differences": 0,
+      "original_props_RGBA_differences": 0,
+      "full_supplied_protection_RGBA_differences": 0,
+      "four_review_images_actually_opened_by_root": true,
+      "whole_SHA256": "a44c9658a9f6bdf2bda7f9b7036b191964772cf01f48a9be0c8485a6690af186",
+      "seam_SHA256": "67a18659292dd9a6ffe5fc935befeb4260b73f96163363104f41b3e9d9b9630d",
+      "visual_result": "HOLD. Retired prior cloth exposes unfilled regions; fixed-M own raw contains generated props in required material. This preview is diagnostic and is not an adoptable complete drawing."
+    }
+  ],
+  "limitation": "Conservative exclusion and outline masks contribute to total reported gap area. The gold-core pixels establish actual non-cotton source occlusion; total gap area is not an exact missing-source measurement."
+}
