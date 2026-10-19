@@ -1,0 +1,216 @@
+{
+  "status": "ONE_F084_NATIVE_THIRD_SHAFT_AND_HEAD_VOLUME_FAILURE_REGISTERED_DIAGNOSTIC_ASTRA_REVIEW",
+  "new_image_calls": 1,
+  "raw_outputs": 1,
+  "automatic_retries": 0,
+  "approved_input_commit": "fbf96bacf84fe6c90c3f157a36d5f73e6139603a",
+  "raw_sha256": "a6ccfc999e979dfbc0c6737addff0c5ff0c238058b1229b6618da41caf420652",
+  "raw_size": [
+    1671,
+    941
+  ],
+  "output_canvas_size": [
+    1672,
+    941
+  ],
+  "right_only_transparent_padding_columns": 1,
+  "native_component_sha256": "8b52c1e284805ebb1e49d9c816bc16f645782431150e892f9068083ee46e154f",
+  "native_component_pixels_exact_original": true,
+  "native_new_complete_skirt_not_clipped_to_technical_mask": true,
+  "source_component_resampling_count": 1,
+  "uniform_scale": 0.8592229202590906,
+  "rotation_degrees_screen_clockwise": 5.701103287953759,
+  "translation_xy_px": [
+    -27.705272689297658,
+    63.397782487437496
+  ],
+  "source_to_final_matrix_2x3": [
+    [
+      0.8549729092182374,
+      -0.08535426879461383,
+      -27.705272689297658
+    ],
+    [
+      0.08535426879461373,
+      0.8549729092182375,
+      63.397782487437496
+    ]
+  ],
+  "joint_landmark_RMSE_px": 11.736658671012062,
+  "landmarks": [
+    {
+      "name": "main_hair_crown",
+      "source_xy": [
+        778.0,
+        44.0
+      ],
+      "target_xy": [
+        619.0,
+        165.0
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "main_hair_front",
+      "source_xy": [
+        632.0,
+        147.0
+      ],
+      "target_xy": [
+        505.0,
+        253.0
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "main_hair_back",
+      "source_xy": [
+        896.0,
+        132.0
+      ],
+      "target_xy": [
+        714.0,
+        241.0
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "chin",
+      "source_xy": [
+        701.0,
+        246.0
+      ],
+      "target_xy": [
+        560.0,
+        337.0
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "neck_sternum",
+      "source_xy": [
+        767.0,
+        277.0
+      ],
+      "target_xy": [
+        618.0,
+        367.0
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "chest_volume",
+      "source_xy": [
+        814.0,
+        337.0
+      ],
+      "target_xy": [
+        651.0,
+        422.0
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "near_shoulder_volume",
+      "source_xy": [
+        834.0,
+        272.0
+      ],
+      "target_xy": [
+        671.0,
+        363.0
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "waist_far",
+      "source_xy": [
+        795.0,
+        431.0
+      ],
+      "target_xy": [
+        625.0,
+        496.0
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "waist_near",
+      "source_xy": [
+        899.0,
+        409.0
+      ],
+      "target_xy": [
+        708.0,
+        482.0
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "far_root_under_new_hem",
+      "source_xy": [
+        798.0,
+        632.0
+      ],
+      "target_xy": [
+        591.0,
+        681.0
+      ],
+      "weight": 2.0
+    },
+    {
+      "name": "near_root_under_new_hem",
+      "source_xy": [
+        943.0,
+        633.0
+      ],
+      "target_xy": [
+        718.0,
+        683.0
+      ],
+      "weight": 2.0
+    }
+  ],
+  "all_head_neck_torso_complete_arms_palms_wrists_skirt_and_two_T_same_transform": true,
+  "individual_hand_arm_or_rod_adjustments": false,
+  "generated_legs_and_shoes_used": false,
+  "fixed_complete_lower_source": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F084_peak_input_001/fixed_complete_lower_skin_roots_legs_shoes_no_old_skirt_edge.png",
+  "fixed_complete_lower_sha256": "da1ef7ce8167179f7268edfe1bd70781551f937a18d33c4a12bc62b17ae8e7c4",
+  "fixed_lower_layer_RGBA_changes": 0,
+  "fixed_lower_geometry_or_alpha_changes": 0,
+  "existing_visible_complete_legs_shoes_RGBA_changes": 0,
+  "actual_support_y760_plus_foreground_RGBA_changes": 0,
+  "actual_grandma_foreground_RGBA_changes": 0,
+  "visible_original_C_outside_child_RGBA_changes": 0,
+  "new_root_skin_or_old_edge_repairs": false,
+  "natural_skirt_foreground_overlap_with_full_hidden_roots": 3528,
+  "registered_component_sha256": "b0524b57fff3feef3186781235cd2cd1ca269048bfadd92b07492a575e754c2b",
+  "final_png": "F084_uniform_registered_fixed_lower_DIAGNOSTIC_NOT_ADOPTED.png",
+  "final_png_sha256": "1bf65e3373979dc4317d52b223b72eaa75db9cad3652d628d733f438de73c784",
+  "adopted": false,
+  "propagated": false,
+  "new_exposure_frozen": false,
+  "further_states_prepared_or_called": false,
+  "passed_source079_file": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F079_head_neck_scale_close_zero_call_001/F079_own_head_neck_volume_closed_candidate.png",
+  "passed_source079_sha256": "2a2fbbee3aaff0b6289b4bb8df756193fe70e37ab9a552af8192c13e459930af",
+  "actual_views_inspected": [
+    "raw_actual_full_gray.jpg",
+    "raw_actual_contacts_1x.png",
+    "raw_actual_contacts_3x.png",
+    "actual_full_gray_1x.jpg",
+    "actual_contacts_1x.png",
+    "actual_contacts_3x.png",
+    "actual_under_hem_1x.png",
+    "actual_under_hem_3x.png",
+    "actual_support_1x.png",
+    "actual_support_2x.png",
+    "079_left_actual084_right_upper_hands_rods_1x.png"
+  ],
+  "actual_failure": "原件在两交叉杆之外又生成连接双掌的额外杆段，形成三角；整体注册后头体量仍大于正确079。原样保留交审，未局部删杆或缩头，不采用。",
+  "primary_hair_core_widths_correct079_actual084_px": [
+    207.0,
+    224.0
+  ],
+  "registered_child_and_both_shoes_same_opaque_connected_component": true,
+  "other_states_prepared": false
+}
