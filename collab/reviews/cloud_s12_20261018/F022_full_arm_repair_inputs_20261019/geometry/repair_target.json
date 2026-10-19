@@ -1,0 +1,79 @@
+{
+  "state": "REPAIR_INPUT_ONLY_NOT_GENERATED",
+  "source_failed022_SHA256": "938682ddf40b13e6b72dbacbabedf9502ae73bba79944b330aae6a3bedb26234",
+  "reference_alpha_rule": "Unchanged RGB and all source alpha>=128 kept; only reference-preview sub128 fringe farther than one8-neighbour native pixel from visible body is omitted. Raw022 itself is untouched. This avoids treating near-invisible alpha4 halos as contact.",
+  "source_actual_prop_RGBA_path": "collab/reviews/cloud_s12_20261018/d03_F018_20261019/same_raw_fix_20261019/actual_scene/F018_code_props_actual_layer.png",
+  "source_actual_prop_RGBA_SHA256": "8aac66e182d3d6109b61a324ed867e4a3f8934e385ab60ac2697dfd8683c1036",
+  "source_actualCanvas_SHA256": "46f97711aff0b9451ba72d5a413e4b42cfa6583853d9999657e12f80bb78f001",
+  "actual_prop_box_region_kept_xyxy": [
+    1000,
+    447,
+    1860,
+    1058
+  ],
+  "distal_group_XY_translation_native": [
+    -1.4959558334873009,
+    50.1581200075172
+  ],
+  "distal_group_scale": 1.0,
+  "distal_group_rotation_about_wrist_deg": 5.5,
+  "all_palm_digits_jade_forearm_same_transform": true,
+  "single_thumb_transform": false,
+  "native_visible_right_margin_px": 11,
+  "near_right_arm_and_head_neck_protected_from_edit_domain": true,
+  "actual_box_cloth_crane_region_RGB_byte_equal": true,
+  "S_hidden_native": [
+    644.0,
+    684.0
+  ],
+  "source_E_estimate_native": [
+    770.0,
+    836.0
+  ],
+  "target_E_native": [
+    765.1774663270832,
+    898.9026694546121
+  ],
+  "source_W_estimate_native": [
+    901.0,
+    877.0
+  ],
+  "target_W_native": [
+    899.5040441665127,
+    927.1581200075173
+  ],
+  "new_cuff_native": [
+    711.0,
+    801.0
+  ],
+  "upper_length_depth_proxy_native": 251.98,
+  "upper_target_depth_proxy": 51.25216791346822,
+  "forearm_projection_length_preserved_native": 137.26616480400403,
+  "nominal_T_SURFACE_native": [
+    975.093564,
+    952.418887
+  ],
+  "nominal_G_AXIS_native": [
+    975.714286,
+    957.380208
+  ],
+  "proposed_group_against_actual_prop_raster": {
+    "visible_thumb_contour_pixel_box_gap_scene": 0.0,
+    "visible_thumb_overlap_pixels": 0,
+    "thumb_contact_AA_overlap_pixels": 3,
+    "thumb_contact_group_pixel_scene": [
+      957,
+      777
+    ],
+    "upper_rod_pixel_scene": [
+      957,
+      778
+    ],
+    "all_non_thumb_pixels_min_air_scene": 3.0,
+    "lower_rod_all_group_min_air_scene": 15.0
+  },
+  "old018_in_actual_tool_inputs": false,
+  "imagegen_calls": 0,
+  "scene_renders": 0,
+  "F026_F030_still_blocked": true
+}

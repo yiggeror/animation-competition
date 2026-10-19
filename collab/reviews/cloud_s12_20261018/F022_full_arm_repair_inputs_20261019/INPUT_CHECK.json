@@ -1,0 +1,57 @@
+{
+  "status": "PASS_INPUT_PREPARATION_ONLY_NOT_REPAIRED_ART",
+  "verified_UTC": "2026-10-19T04:04:43.716791+00:00",
+  "actual_inputs": [
+    {
+      "order": 1,
+      "size": [
+        1024,
+        1536
+      ],
+      "decoded": true,
+      "SHA256_matches_request": true
+    },
+    {
+      "order": 2,
+      "size": [
+        1600,
+        1536
+      ],
+      "decoded": true,
+      "SHA256_matches_request": true
+    },
+    {
+      "order": 3,
+      "size": [
+        1920,
+        1080
+      ],
+      "decoded": true,
+      "SHA256_matches_request": true
+    }
+  ],
+  "three_actual_inputs_and_contact_closeup_visually_inspected": true,
+  "raw022_byte_equal": true,
+  "actual_box_cloth_crane_region_RGB_byte_equal": true,
+  "native_guide_shape_and_head_above648_protected": true,
+  "independent_proposed_distal_group_actual_rod_raster_check": {
+    "visible_thumb_contour_pixel_box_gap_scene": 0.0,
+    "visible_thumb_overlap_pixels": 0,
+    "thumb_contact_AA_overlap_pixels": 3,
+    "all_non_thumb_pixels_min_air_scene": 3.0,
+    "lower_rod_all_group_min_air_scene": 15.0
+  },
+  "whole_distal_group_scale": 1.0,
+  "single_thumb_transform": false,
+  "request_and_prompt_freeze_SHA_match": true,
+  "unsupported_mask_tool_argument": false,
+  "imagegen_calls_this_task": 0,
+  "scene_renders_this_task": 0,
+  "prior_calls_submitted": {
+    "22": 1,
+    "26": 0,
+    "30": 0
+  },
+  "prior_cumulative_S12_calls": 6,
+  "F026_F030_still_blocked": true
+}

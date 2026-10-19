@@ -1,0 +1,41 @@
+{
+  "status": "AWAITING_FINAL_SINGLE_REPAIR_GATE_NOT_EXECUTED",
+  "execution_enabled": false,
+  "authorized_calls_after_final_clearance": 1,
+  "tool": "image_gen.imagegen",
+  "output_frame": 22,
+  "tool_arguments": {
+    "prompt": "REPAIR F022 FAR-LEFT ARM ONLY. Image1 is the FAILED F022 raw938682ddf40b13e6b72dbacbabedf9502ae73bba79944b330aae6a3bedb26234, the UNIQUE identity/material source for unchanged outside pixels. Its current far-arm POSITION is WRONG and must NOT be preserved inside the explicit full-arm edit domain. This is a LOCAL complete-arm repair, never a new full-body generation.\nOutput ONE arm-only replacement patch on the original native1024x1536 transparent RGBA canvas, in the exact original registration. Include the complete far LEFT clothed shoulder/sleeve, full upper arm, elbow, forearm, ONE jade bangle, wrist, palm and all fingers. Outside this far-arm patch leave transparent; no head, torso, near-right arm, legs, shoes or background. The author will reconstruct the full frame with exact Image1 pixels outside the indicated edit region. Do not redraw the whole character.\nImage2 is the CORRECTIVE TARGET INPUT, not finished art. Its LEFT panel is the same native1024x1536 registration; right panels are detail/mask guidance. Red boundary marks the COMPLETE far-left arm editable region, including shoulder/sleeve through fingertips and old/new arm footprint. Blue proximal volumes are to be redrawn naturally using Image1 cloth/skin/ink, NOT copied as blue skin. The real distal source pixels show the intended whole forearm+jade+wrist+ENTIRE palm/all-digits placement at scale1.0. They are prepositioned as ONE rigid group; no separate thumb pull, finger scaling or palm shrink. Preserve the useful whole hand shape and coherent knuckles. Connect the NEW elbow continuously to the fixed body shoulder with a naturally redrawn sleeve and full upper arm. Hidden shoulder lies under the existing blouse, never an exposed chest ball. Do not preserve the OLD elbow as a fixed rotation pivot or just rotate until the touch slides left. Target contact XY and the complete anatomical chain take priority over the old failed arm pose. A small joint transition may be repainted; bone lengths and hand volume must remain credible.\nImage3 contains real pixels from the previously verified FROZEN prop layer/box scene plus the same proposed arm. It is a clearly labelled DIAGNOSTIC, NOT a finished future frame and NOT a second character identity. There is NO old018 whole person among the inputs. Use Image3 for exact existing box/crane/upper-shaft/lower-shaft positions and contact context only; source the arm's intrinsic colors from Image1, not the lit background or blue construction volumes.\nRegistration stays scale.70 at scene(275,112), scene1920x1080. The existing upper neck3 shaft stays from(934.312497676,785.129739577) to(1497.531490504,714.664205296), outer width7scene px. G_AXIS=(975.714286,957.380208) native is the fixed shaft centreline cross-section, NOT a skin target. T_SURFACE=(975.093564,952.418887) native is the nominal TOP OUTER shaft surface there; the VISIBLE THUMB PAD must reach and gently touch that existing top outer contour, as the actual raster contact shown in Image2/3. The palm/MCP and wrist are NOT to be put on G_AXIS or T_SURFACE.\nF022 ONLY: thumb pad FIRST TOUCH. Palm and ALL other fingers remain above the upper shaft, with at least3scene px of actual air from their outer ink and antialiasing. NO index wrap, NO closed grasp, NO pull on the shaft. Lower/body shaft stays untouched and at least3scene px clear of ALL arm/finger ink/AA; it remains from(951.261694392,798.906335746) to(1282.198690556,773.946794448). Keep the existing near RIGHT hand empty and unchanged in the composite. Keep all contours/fingertips inside the native canvas with breathing room. Use clean antialiasing; faint source alpha halos are not valid proof of touch. Actual visible thumb contour and the frozen7px shaft decide first contact.\nDo NOT paint ANY rod, box, cloth, crane, diagram, words, arrows, blue capsules or new fingers from code into the patch. Future foreground finger pixels must be actual drawn artwork. Box, shafts, crane root and55degree cloth-supported puppet plane stay fixed. The crane remains cloth-supported and body down. F026/F030 remain blocked until this022 repair passes. No F034 or later lift is authorized; a later lift requires BOTH hands' separately approved grips and an approved later segment.\n\nConstruction target estimates only (native): S_hidden=[644.0, 684.0], new cuff=[711.0, 801.0], E=[765.1774663270832, 898.9026694546121], W=[899.5040441665127, 927.1581200075173]. The visible hand is the source prepositioned at scale1.0, not a changed palm size. Actual repaired anatomy/contact must be checked again; this reference is not an accepted output. Deliver F022 ARM PATCH ONLY.\n",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F022_full_arm_repair_inputs_20261019/inputs/01_FAILED_F022_unique_source.png",
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F022_full_arm_repair_inputs_20261019/inputs/02_full_arm_target_CONTACT_DIAGNOSTIC.png",
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F022_full_arm_repair_inputs_20261019/inputs/03_actual_props_target_arm_DIAGNOSTIC.png"
+    ],
+    "transparent_background": true
+  },
+  "prompt_SHA256": "bbd7296c8d51c1e72a1f2dcf87bfa92b901b0677b44756a25c244e931d339805",
+  "actual_inputs": [
+    {
+      "order": 1,
+      "path": "collab/reviews/cloud_s12_20261018/F022_full_arm_repair_inputs_20261019/inputs/01_FAILED_F022_unique_source.png",
+      "sha256": "938682ddf40b13e6b72dbacbabedf9502ae73bba79944b330aae6a3bedb26234"
+    },
+    {
+      "order": 2,
+      "path": "collab/reviews/cloud_s12_20261018/F022_full_arm_repair_inputs_20261019/inputs/02_full_arm_target_CONTACT_DIAGNOSTIC.png",
+      "sha256": "d0118b46a20720bd0b9573542175c80ebbc6c01bb750a0164e787afea5c09c30"
+    },
+    {
+      "order": 3,
+      "path": "collab/reviews/cloud_s12_20261018/F022_full_arm_repair_inputs_20261019/inputs/03_actual_props_target_arm_DIAGNOSTIC.png",
+      "sha256": "42e2644ede774b7c4dcf632dd7afcb73069da70d2d697cd21793167e9b64235b"
+    }
+  ],
+  "output_contract": "One complete far-left-arm-only transparent patch, native1024x1536; full-frame assembly uses failed022 exact outside pixels. No full-body regeneration.",
+  "editable_domain_GUIDE_only": "collab/reviews/cloud_s12_20261018/F022_full_arm_repair_inputs_20261019/inputs/full_far_arm_edit_domain_GUIDE.png",
+  "mask_is_not_a_tool_API_parameter": true,
+  "old018_temporal_only_not_in_tool_inputs": true,
+  "F026_F030_still_blocked": true,
+  "imagegen_calls_this_task": 0,
+  "scene_renders_this_task": 0
+}
