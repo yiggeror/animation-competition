@@ -1,0 +1,38 @@
+{
+  "status": "PREPARED_COMPLETE_TWO_REGION_INPUT_REVIEW_ONLY_PENDING_ROOT_ASTRA",
+  "actual_viewed": [
+    "inputs_1024x1536/A_F100_EXPANDED_PREPARED_NOT_CALLED.png",
+    "inputs_1024x1536/B_F100_EXPANDED_PREPARED_NOT_CALLED.png",
+    "inputs_1024x1536/C_F100_EXPANDED_PREPARED_NOT_CALLED.png",
+    "inputs_1024x1536/D_F100_EXPANDED_PREPARED_NOT_CALLED.png",
+    "qa/four_inputs_gray.png",
+    "qa/four_inputs_dark.png",
+    "qa/full_garment_WHITE_overlay_gray_2x.png",
+    "qa/full_garment_WHITE_overlay_dark_2x.png"
+  ],
+  "finite_findings": [
+    "A pose/source materials unchanged; C is exactA, no competing unraised arm or second silhouette.",
+    "B clearly opens complete sleeve/whole arm and broad hem-to-waist/hips/both thighs. Old690discontinuity and rear blouse-hem transparent strip are within full WHITE.",
+    "Far complete visible arm/palm/jade remains a black actual-material hole in cloth WHITE; lamp and shoes are protected. No hidden-alpha guard carves a new foreground.",
+    "D complete source head/face/neck/collar present and waistlabel says material/volume reference; joins editable.",
+    "Current A still has visible uncompleted sleeve and cloth seams. Expanded scope supplies one legitimate native reconstruction region; it is not code-repaired or passed finished art.",
+    "810and822must not become final horizontal clipping seams. Continuous source-matched returned cloth must be reviewed after drawing."
+  ],
+  "added_white_pixels": 100759,
+  "old_arm_white_lost": 0,
+  "guards": {
+    "fararm": 0,
+    "lamp": 0,
+    "shoes": 0
+  },
+  "guard_alpha0": 0,
+  "A_byte_identical": true,
+  "C_exactA": true,
+  "original_whole_Rminus10_pivot_unchanged": true,
+  "exact_prompt_file_and_argument_SHA256": "c84b68204faed159450700d942db7d167c101a28f06490f9b03cbd65c60d079f",
+  "isolated_replay": "qa/isolated_replay.json:5filesbyte-identical",
+  "no_imagegen": true,
+  "no_git": true,
+  "no_other_states_changed": true,
+  "remaining_before_call": "Root/Astra must review this finalB/fullprompt and explicitly authorize; no call permission or final-state acceptance is asserted."
+}

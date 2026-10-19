@@ -1,0 +1,288 @@
+{
+  "status": "EXPANDED_SINGLE_INPUT_GATE_PENDING_ACTUAL_ROOT_ASTRA_REVIEW_NO_CALL",
+  "source": "3eeb97cd frozen real A/raised pose unchanged",
+  "A_tool_SHA256": "7897a9bd9cbbe284f36141767eb3079198d8bdfca16dfc9fb4f0d63ec6d07443",
+  "A_byte_identical_to_prior": true,
+  "C_byte_identical_to_A": true,
+  "common_inverse": {
+    "scale": 0.703125,
+    "offset": [
+      1240,
+      0
+    ],
+    "crop": [
+      1240,
+      0,
+      1960,
+      1080
+    ]
+  },
+  "unchanged_whole_arm_transform": {
+    "R_degrees": -10,
+    "scale": 1,
+    "pivot_native_fixed_by_parent": [
+      1542.34375,
+      361.40625
+    ],
+    "pivot_raw_correspondence": [
+      430,
+      514
+    ],
+    "M": [
+      [
+        0.984807753012208,
+        0.17364817766693033
+      ],
+      [
+        -0.17364817766693033,
+        0.984807753012208
+      ]
+    ],
+    "t": [
+      -39.325869519861726,
+      273.31575453641125
+    ],
+    "source_raw_semantic_polygon": [
+      [
+        292,
+        487
+      ],
+      [
+        308,
+        443
+      ],
+      [
+        332,
+        410
+      ],
+      [
+        364,
+        379
+      ],
+      [
+        393,
+        359
+      ],
+      [
+        425,
+        362
+      ],
+      [
+        453,
+        390
+      ],
+      [
+        474,
+        429
+      ],
+      [
+        481,
+        497
+      ],
+      [
+        480,
+        508
+      ],
+      [
+        493,
+        505
+      ],
+      [
+        585,
+        453
+      ],
+      [
+        627,
+        431
+      ],
+      [
+        653,
+        427
+      ],
+      [
+        687,
+        437
+      ],
+      [
+        724,
+        458
+      ],
+      [
+        736,
+        469
+      ],
+      [
+        732,
+        481
+      ],
+      [
+        729,
+        491
+      ],
+      [
+        722,
+        501
+      ],
+      [
+        710,
+        511
+      ],
+      [
+        689,
+        512
+      ],
+      [
+        651,
+        499
+      ],
+      [
+        607,
+        497
+      ],
+      [
+        571,
+        524
+      ],
+      [
+        511,
+        565
+      ],
+      [
+        450,
+        599
+      ],
+      [
+        429,
+        599
+      ],
+      [
+        406,
+        580
+      ],
+      [
+        389,
+        554
+      ],
+      [
+        334,
+        562
+      ]
+    ],
+    "source_ownership": "manual semantic polygon intersect actual RAW person component alpha16 plus2px actualalpha AA; removes separate RAW new-lamp component, never subtracts the FIXED source lamp from human",
+    "includes_complete_raw_short_sleeve_and_whole_arm_hand": true,
+    "not_adjusted_to_match_parent_gap_number": true,
+    "parent_gap13_15295_is_separate_diagnostic_not_our_mask_measurement": true
+  },
+  "true_lamp_gap_after_same_SOFT_transform": {
+    "16": {
+      "native_distance_pixel_centers": 11.704699910719626,
+      "overlap_pixels": 0,
+      "raised_arm_xy": [
+        1722,
+        324
+      ],
+      "actual_fixed_lamp_xy": [
+        1726,
+        335
+      ]
+    },
+    "128": {
+      "native_distance_pixel_centers": 12.649110640673518,
+      "overlap_pixels": 0,
+      "raised_arm_xy": [
+        1720,
+        324
+      ],
+      "actual_fixed_lamp_xy": [
+        1724,
+        336
+      ]
+    }
+  },
+  "white_base_garment_rect_inclusiveX_halfopenY": [
+    1340,
+    470,
+    1630,
+    810
+  ],
+  "actual_garment_bbox_halfopen": [
+    1386,
+    470,
+    1608,
+    810
+  ],
+  "garment_envelope_bbox_halfopen": [
+    1340,
+    458,
+    1631,
+    822
+  ],
+  "exterior_air_dilation_native": 12,
+  "natural_lowerleg_matching_overlap_native_y": [
+    810,
+    821
+  ],
+  "y810_is_NOT_an_adoption_cut": true,
+  "B_is_reference_NOT_executable_hardmask": true,
+  "white_bbox_halfopen": [
+    1340,
+    231,
+    1766,
+    822
+  ],
+  "old_neararm_white_lost_pixels": 0,
+  "added_full_garment_white_pixels": 100759,
+  "white_guard_overlap": 0,
+  "guard_alpha0_in_A": 0,
+  "visible_fararm_lamp_shoes_white_overlap": {
+    "fararm": 0,
+    "lamp": 0,
+    "shoes": 0
+  },
+  "actual_lowerleg_stable_core_yGE822_WHITE": 0,
+  "new_upperpants_old_lower_join_NOW_EDITABLE": true,
+  "continuous_cloth_probes": {
+    "1410,480": {
+      "white": true,
+      "component": 4
+    },
+    "1450,540": {
+      "white": true,
+      "component": 4
+    },
+    "1460,650": {
+      "white": true,
+      "component": 4
+    },
+    "1430,689": {
+      "white": true,
+      "component": 4
+    },
+    "1430,690": {
+      "white": true,
+      "component": 4
+    },
+    "1430,710": {
+      "white": true,
+      "component": 4
+    },
+    "1460,790": {
+      "white": true,
+      "component": 4
+    }
+  },
+  "D_only_editorial_newwaist_label_changed": true,
+  "waist_RGB_or_bridge_painted": false,
+  "A_keeps_existing_transparent_strips_and690cut_as_reconstruction_target": true,
+  "request_scope": "one native repair BOTH complete near short sleeve/arm/hand AND broad complete lowerhem/waist/hips/bothupperlegs. Not an isolated seam strip.",
+  "calls": 0,
+  "limits": [
+    "A is a composite input target, not a finished repaired frame. Visible transparent garment strips and y690 discontinuities must be redrawn within new whole cloth domain.",
+    "Both original shoes, fixed lamp, complete visible fararm/jade and head/chest outside allowed hem stay real source-fixed. 810 is a broad-domain reference, not an adoption cut; a natural12px matching overlap through821 remains editable, stable lowercalf material822+ stays source-fixed.",
+    "Exterior air includes only permitted reconstruction corridor; hidden source alpha0 is never a hard guard.",
+    "Actual source proportions and full thigh/knee-back volume must be conserved by the native drawing, not by copying old cut contours or filling narrow bridges."
+  ],
+  "exact_Astra_replacement_prompt_file_and_argument_SHA256": "c84b68204faed159450700d942db7d167c101a28f06490f9b03cbd65c60d079f",
+  "prompt_has_exactly_one_final_newline": true,
+  "no_final_adoption_forced_at_y810_or822": "These are input-reference coverage/core limits. Future full cloth must meet existing continuous folds/contours naturally, with real matching overlap; never hard-clip adoption at810or822."
+}
