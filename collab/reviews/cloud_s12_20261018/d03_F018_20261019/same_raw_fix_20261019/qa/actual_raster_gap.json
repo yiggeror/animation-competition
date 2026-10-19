@@ -1,0 +1,29 @@
+{
+  "actual_time": 0.75,
+  "frame": 18,
+  "actual_registered_person_all_alpha_gt0_far_contact_ROI": [
+    900,
+    730,
+    1001,
+    799
+  ],
+  "actual_code_upper_rod_alpha_gt0": true,
+  "pixel_box_boundary_gap_scene_px": 4.0,
+  "nearest_actual_person_pixel": [
+    960,
+    773
+  ],
+  "nearest_actual_rod_pixel": [
+    959,
+    778
+  ],
+  "nearest_person_RGBA": [
+    0,
+    0,
+    0,
+    1
+  ],
+  "gap_at_least3": true,
+  "method": "Exact Euclidean distance between unit pixel-square supports for all alpha>0 person and actual rasterized rod pixels, including ink/AA; no skin-only threshold.",
+  "code_props_exact_final012": true
+}

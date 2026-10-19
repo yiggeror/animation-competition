@@ -1,0 +1,43 @@
+{
+  "source_commit": "fe520e6367c3caed9fd0d3210d1e39dc63238548",
+  "source_original": "../originals/F018_raw_call01.png",
+  "source_original_SHA256": "fbc502639b90de00eb0b664a41af7898df15e92bf5d58ac9e172579121b486a3",
+  "original_prompt": "../prompts/F018_EXACT_APPROVED.txt",
+  "prompt_SHA256": "fbadda161afa5914204269f5383d25dca0ec3a00fc1a733eb4a78767abd89185",
+  "original_request": "../provenance/actual_call01_request.json",
+  "original_tool_output_path": "/workspace/generated_images/exec-af430783-07d1-4303-8bab-6d6f54915eac.png",
+  "source_geometry_only": "candidate/F018_geometry_only.png",
+  "final_candidate": "candidate/F018.png",
+  "final_SHA256": "c63f57f53bc2f4bbca59dba4310ea55c0629b354520f8d0becbe88f932ff40be",
+  "inverse_map": "provenance/inverse_geometry_map.npz",
+  "replay_order": [
+    "python tools/repair_geometry.py",
+    "python tools/repair_color.py",
+    "python tools/prepare_scene_and_native_qa.py"
+  ],
+  "imagegen_calls_this_repair": 0,
+  "S12_cumulative_native_calls": 5,
+  "actual_scene_render_runs": 1,
+  "actual_scene_frame": 18,
+  "actual_scene_t": 0.75,
+  "new_frame_requests": [],
+  "F022_opened": false,
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "Pillow": "12.3.0"
+  },
+  "preflight_refinements": [
+    {
+      "issue": "Starting3.5deg did not give3scene outer-AA air.",
+      "resolution": "Native0.25deg sweep, rigid entire distal arm; selected5deg before actual render.",
+      "scene_renders_during_sweep": 0
+    },
+    {
+      "issue": "First tight extraction polygon omitted32 old bangle-edge pixels; actual native closeup and connected-component check caught a detached remnant.",
+      "resolution": "Add8native px semantic guard, still sample only real source alpha/AA; one connected distal component after repair.",
+      "scene_renders_before_resolution": 0
+    }
+  ],
+  "state": "CANDIDATE_AND_ONE_ACTUAL_FRAME_READY_FOR_ASTRA_REVIEW"
+}

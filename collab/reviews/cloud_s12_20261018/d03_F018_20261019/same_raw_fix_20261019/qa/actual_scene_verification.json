@@ -1,0 +1,93 @@
+{
+  "status": "PASS_SAME_RAW_REPAIR_AND_ACTUAL_F018_READY_FOR_ASTRA_REVIEW",
+  "source_raw_SHA256": "fbc502639b90de00eb0b664a41af7898df15e92bf5d58ac9e172579121b486a3",
+  "final_native_SHA256": "c63f57f53bc2f4bbca59dba4310ea55c0629b354520f8d0becbe88f932ff40be",
+  "actual_Canvas_SHA256": "46f97711aff0b9451ba72d5a413e4b42cfa6583853d9999657e12f80bb78f001",
+  "MP4_oneframe_SHA256": "24474e13069c77a88d992b19d868d8c7d8208c7f4914dfafdb8ce76106778003",
+  "actual_scene_frame": 18,
+  "absolute_scene_t": 0.75,
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": "24/1",
+  "actual_render_runs": 1,
+  "encode_runs": 1,
+  "decoded_RGB_MSE": 8.523028373718262,
+  "far_hand_actual_raster_gaps": {
+    "L": {
+      "actual_pixel_box_boundary_air_scene_px": 4.0,
+      "nearest_person_pixel": [
+        960,
+        773
+      ],
+      "nearest_rod_pixel": [
+        959,
+        778
+      ],
+      "nearest_person_RGBA": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "all_alpha_greater0_including_outer_ink_AA": true
+    },
+    "R": {
+      "actual_pixel_box_boundary_air_scene_px": 20.0,
+      "nearest_person_pixel": [
+        960,
+        773
+      ],
+      "nearest_rod_pixel": [
+        959,
+        794
+      ],
+      "nearest_person_RGBA": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "all_alpha_greater0_including_outer_ink_AA": true
+    }
+  },
+  "near_hand_actual_raster_gaps": {
+    "L": {
+      "actual_pixel_box_boundary_air_scene_px": 42.5440947723653,
+      "nearest_person_pixel": [
+        890,
+        803
+      ],
+      "nearest_rod_pixel": [
+        930,
+        785
+      ],
+      "all_alpha_greater0_including_outer_ink_AA": true
+    },
+    "R": {
+      "actual_pixel_box_boundary_air_scene_px": 56.08029957123981,
+      "nearest_person_pixel": [
+        890,
+        803
+      ],
+      "nearest_rod_pixel": [
+        947,
+        799
+      ],
+      "all_alpha_greater0_including_outer_ink_AA": true
+    }
+  },
+  "actual_gap_method": "Exact Euclidean gap between closed unit-square supports of every actual alpha>0 person pixel in far contact ROI and actual raster rod alpha>0; includes outer ink/AA.",
+  "complete_distal_inverse_map_rigid_max_error_native": 1.1368683772161603e-13,
+  "rotation_determinant": 1.0,
+  "full_distal_scale": 1.0,
+  "chosen_rotation_raise_deg": 5.0,
+  "source_ground_contact_alpha_all6_exact": true,
+  "code_crane_rods_layer_byte_equal_locked012": true,
+  "old_bangle_remnant_components": 0,
+  "imagegen_calls_this_repair": 0,
+  "S12_historical_cumulative_native_calls": 5,
+  "F022_opened": false,
+  "Astra_approval": "PENDING_REVIEW"
+}

@@ -1,0 +1,76 @@
+{
+  "candidate_SHA256": "c63f57f53bc2f4bbca59dba4310ea55c0629b354520f8d0becbe88f932ff40be",
+  "entry_SHA256": "1bc1001374b6605eb77aa141f537aa890ce1ff5575071ab4818408c843a6bc70",
+  "materials": {
+    "hair": {
+      "fixed_raw_material_pixels": 40829,
+      "fixed000_material_pixels": 40552,
+      "corrected_delta_vs000_RGB": [
+        2.024946489504117,
+        2.5523423942761383,
+        3.141011258862676
+      ],
+      "within4": true
+    },
+    "blouse_blue": {
+      "fixed_raw_material_pixels": 118550,
+      "fixed000_material_pixels": 118656,
+      "corrected_delta_vs000_RGB": [
+        3.2076456919210443,
+        1.950526126839634,
+        1.2159020646025454
+      ],
+      "within4": true
+    },
+    "trousers": {
+      "fixed_raw_material_pixels": 103479,
+      "fixed000_material_pixels": 103035,
+      "corrected_delta_vs000_RGB": [
+        0.6975988532628676,
+        -0.5559455817310166,
+        -0.16280734827996923
+      ],
+      "within4": true
+    }
+  },
+  "tip_matched_samples": {
+    "lit_blue": {
+      "pixels": 347,
+      "delta_vs_final012_RGB": [
+        -0.1239193083573582,
+        0.028818443804027538,
+        -0.10951008645534444
+      ],
+      "small_sample": false
+    },
+    "lit_flowers": {
+      "pixels": 11,
+      "delta_vs_final012_RGB": [
+        1.9090909090909065,
+        -4.0,
+        -6.2727272727272805
+      ],
+      "small_sample": true
+    },
+    "shade_blue": {
+      "pixels": 1374,
+      "delta_vs_final012_RGB": [
+        0.06550218340611025,
+        0.010917030567696884,
+        0.04585152838427575
+      ],
+      "small_sample": false
+    },
+    "shade_flowers": {
+      "pixels": 199,
+      "delta_vs_final012_RGB": [
+        0.09045226130652395,
+        0.12562814070352601,
+        0.07537688442212698
+      ],
+      "small_sample": false
+    }
+  },
+  "scene_time": 0.75,
+  "next": "View native diagnostics, then one actual F018 render"
+}

@@ -1,0 +1,128 @@
+{
+  "source_raw_SHA256": "fbc502639b90de00eb0b664a41af7898df15e92bf5d58ac9e172579121b486a3",
+  "geometry_only_SHA256": "c4b41a66e1e351b1bad87e7a175d53be4a588551c20d839fb859ad648f2682a4",
+  "candidate_SHA256": "c63f57f53bc2f4bbca59dba4310ea55c0629b354520f8d0becbe88f932ff40be",
+  "hair_bright_planes_only": {
+    "crown_light_gray": {
+      "editable_pixels": 23131,
+      "matched_core_pixels": 13362,
+      "RGB_bias_only_on_plane": [
+        -6.852866337374644,
+        -8.61847028887891,
+        -9.903083370752881
+      ],
+      "before_core_delta_RGB": [
+        6.852866337374644,
+        8.61847028887891,
+        9.903083370752881
+      ],
+      "after_core_delta_RGB": [
+        -0.1471336626253555,
+        -0.38152971112108963,
+        -0.09691662924711869
+      ]
+    },
+    "bun_light_gray": {
+      "editable_pixels": 5754,
+      "matched_core_pixels": 2843,
+      "RGB_bias_only_on_plane": [
+        -7.41540626099191,
+        -9.135772071755188,
+        -10.370383397819205
+      ],
+      "before_core_delta_RGB": [
+        7.41540626099191,
+        9.135772071755188,
+        10.370383397819205
+      ],
+      "after_core_delta_RGB": [
+        0.41540626099190997,
+        0.13577207175518818,
+        0.37038339781920504
+      ]
+    }
+  },
+  "hair_dark_earback_line_highlights_exact": true,
+  "blue_R_only_physical_faces": {
+    "far_sleeve": {
+      "whole_plane_blue_pixels": 13207,
+      "raw_delta_vs000_RGB": [
+        4.558190170559897,
+        1.635665939803232,
+        0.7997988583786082
+      ],
+      "R_reduction_max_requested": 1.7581901705598968
+    },
+    "near_sleeve": {
+      "whole_plane_blue_pixels": 27862,
+      "raw_delta_vs000_RGB": [
+        4.98385893597316,
+        2.112599169025202,
+        1.3024056313232393
+      ],
+      "R_reduction_max_requested": 2.18385893597316
+    },
+    "collar_front": {
+      "whole_plane_blue_pixels": 7971,
+      "raw_delta_vs000_RGB": [
+        5.835582414825154,
+        2.6811847231929846,
+        0.0007961718372087034
+      ],
+      "R_reduction_max_requested": 3.0
+    },
+    "lower_hem": {
+      "whole_plane_blue_pixels": 12576,
+      "raw_delta_vs000_RGB": [
+        5.393568995513675,
+        2.7850084546138874,
+        1.9781521944528606
+      ],
+      "R_reduction_max_requested": 2.5935689955136754
+    },
+    "back_waist": {
+      "whole_plane_blue_pixels": 54206,
+      "raw_delta_vs000_RGB": [
+        4.37252541350739,
+        1.6454651937457925,
+        1.3117263176406198
+      ],
+      "R_reduction_max_requested": 1.5725254135073898
+    }
+  },
+  "blue_G_B_exact_except_tip": true,
+  "tip_independent_final012_authority_SHA256": "063bc020f65f3e9485a57984f20703f0fbc96667a2f5a046ad713ee51d1beb88",
+  "tip_plane_transforms": {
+    "lit": {
+      "matched_blue_pixels": 347,
+      "matched_flower_pixels": 11,
+      "RGB_gain": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "RGB_bias": [
+        -7.567723342939473,
+        -5.841498559077792,
+        -6.671469740633995
+      ]
+    },
+    "shade": {
+      "matched_blue_pixels": 1374,
+      "matched_flower_pixels": 199,
+      "RGB_gain": [
+        0.937107235943833,
+        0.9087951287606352,
+        0.8536191195312776
+      ],
+      "RGB_bias": [
+        2.817507084899489,
+        11.22052094743296,
+        25.084651182444816
+      ]
+    }
+  },
+  "color_alpha_exact_geometry_only": true,
+  "RGB_changed_by_color": 119834,
+  "imagegen_calls": 0
+}
