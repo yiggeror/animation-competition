@@ -1,0 +1,41 @@
+{
+  "status": "TECHNICAL_REFERENCE_PREPARED / BATCH_GATE_PENDING",
+  "master_sha256_unchanged": "55ce8658e3454dcb92e8408dda25bc678f856d82bbb10cd80ff06a01fa0ab0c8",
+  "new_model_calls": 0,
+  "new_raws": 0,
+  "drawn_later_states": 0,
+  "production_files_changed": [],
+  "actual_reference_images_visually_inspected": true,
+  "checks": [
+    {
+      "frame": 8,
+      "four_complete_existing_inputs": true,
+      "fixed_construction_bone_lengths": true,
+      "target_hand_extents_inside_edit_white": true,
+      "shoe_ankle_contact_strip_black": true
+    },
+    {
+      "frame": 20,
+      "four_complete_existing_inputs": true,
+      "fixed_construction_bone_lengths": true,
+      "target_hand_extents_inside_edit_white": true,
+      "shoe_ankle_contact_strip_black": true
+    },
+    {
+      "frame": 32,
+      "four_complete_existing_inputs": true,
+      "fixed_construction_bone_lengths": true,
+      "target_hand_extents_inside_edit_white": true,
+      "shoe_ankle_contact_strip_black": true
+    }
+  ],
+  "F008_guide_hand_min_clearance_to_both_axes_px": {
+    "R / T_H": 13.302412009546167,
+    "R / T_S": 60.032584603721745,
+    "L / T_H": 35.56477633947946,
+    "L / T_S": 12.101354440165618
+  },
+  "F020_F032_receiver_grip_targets_unchanged": true,
+  "exposure_coverage": "F000-F035, 36 continuous frames, 12 exposures including locked F000",
+  "not_a_final_art_pass": "Checks apply to construction only; inspect actual model outputs before retaining drawings."
+}

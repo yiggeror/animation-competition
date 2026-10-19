@@ -1,0 +1,13 @@
+pose,start_frame,end_frame_inclusive,frame_count,stage,T_H_owner,T_S_owner,C_B_owner,C_N_owner
+000,0,3,4,locked_mother,G.R,G.R,G.L,G.L
+004,4,7,4,whole_body_approach_no_contact,G.R,G.R,G.L,G.L
+008,8,11,4,open_hands_clear_both_rods,G.R,G.R,G.L,G.L
+012,12,14,3,XR_first_contact_TH,G.R+X.R,G.R,G.L,G.L
+015,15,17,3,XL_closing_TS,G.R+X.R,G.R+X.L,G.L,G.L
+018,18,19,2,receivers_stable_supplier_still_holds,G.R+X.R,G.R+X.L,G.L,G.L
+020,20,21,2,shared_load_both_receivers_closed,G.R+X.R,G.R+X.L,G.L,G.L
+022,22,23,2,supplier_opens_thumb_then_fingers,G.R+X.R,G.R+X.L,G.L,G.L
+024,24,26,3,supplier_fingers_leave_rod,X.R,X.L,G.L,G.L
+027,27,29,3,supplier_whole_forearm_withdraws,X.R,X.L,G.L,G.L
+030,30,31,2,supplier_clear_receiver_grips_stable,X.R,X.L,G.L,G.L
+032,32,35,4,released_handoff_complete,X.R,X.L,G.L,G.L

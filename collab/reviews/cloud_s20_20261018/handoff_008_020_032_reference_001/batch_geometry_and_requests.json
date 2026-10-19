@@ -1,0 +1,412 @@
+{
+  "status": "PROPOSED_CONSTRUCTION / NOT_GENERATED",
+  "master_sha256": "55ce8658e3454dcb92e8408dda25bc678f856d82bbb10cd80ff06a01fa0ab0c8",
+  "image_model_calls": 0,
+  "new_model_raws": 0,
+  "in_flight": 0,
+  "character_drawings_generated": 0,
+  "technical_reference_plates": 3,
+  "canvas": [
+    1672,
+    941
+  ],
+  "construction_bone_lengths_px": {
+    "X.R": [
+      90,
+      105
+    ],
+    "X.L": [
+      75,
+      95
+    ],
+    "G.R": [
+      150.26975743641833,
+      92.0869154657707
+    ]
+  },
+  "bone_note": "Constant construction segment lengths in these target plates; not measured anatomical 3D lengths. Mother may be foreshortened. These targets await batch review.",
+  "sole_contacts_preserved": {
+    "G_far": [
+      1046,
+      903
+    ],
+    "G_near": [
+      1150,
+      920
+    ],
+    "X_near": [
+      581,
+      919
+    ],
+    "X_far": [
+      652,
+      905
+    ]
+  },
+  "rod_attachment_contract": {
+    "T_H": [
+      "turtle.head",
+      [
+        20,
+        0
+      ]
+    ],
+    "T_S": [
+      "turtle.shell",
+      [
+        0,
+        40
+      ]
+    ],
+    "C_B": [
+      "crane.body",
+      [
+        -75,
+        6
+      ]
+    ],
+    "C_N": [
+      "crane.neck3",
+      [
+        10,
+        0
+      ]
+    ]
+  },
+  "high_crane_scene_gate_independent": true,
+  "frames": [
+    {
+      "frame": 8,
+      "state": {
+        "lean": 20,
+        "head_lift": -3,
+        "R_sh": [
+          611,
+          417
+        ],
+        "L_sh": [
+          656,
+          428
+        ],
+        "R_palm": [
+          806,
+          318
+        ],
+        "L_palm": [
+          837,
+          455
+        ],
+        "closed": false,
+        "G_release": false,
+        "R_chain": [
+          [
+            611.0,
+            417.0
+          ],
+          [
+            683.5853201224099,
+            363.78936851786773
+          ],
+          [
+            783.0,
+            330.0
+          ]
+        ],
+        "L_chain": [
+          [
+            656.0,
+            428.0
+          ],
+          [
+            719.0147008694918,
+            468.6712118620587
+          ],
+          [
+            814.0,
+            467.0
+          ]
+        ],
+        "G_R_chain": [
+          [
+            1067,
+            285
+          ],
+          [
+            1076,
+            435
+          ],
+          [
+            984,
+            439
+          ]
+        ]
+      },
+      "inputs": [
+        {
+          "order": 1,
+          "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F000/f000_scene_gate_001/cleanup/S20_F000_master_clean.png",
+          "sha256": "55ce8658e3454dcb92e8408dda25bc678f856d82bbb10cd80ff06a01fa0ab0c8",
+          "size": [
+            1672,
+            941
+          ],
+          "role": "locked mother identity/material/black-domain source"
+        },
+        {
+          "order": 2,
+          "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_reference_001/F008/02_full_volume_target.png",
+          "sha256": "08b6d1eab013d311c99dcab9b74fd6aa095061d748bb5979c95c0b19244c0515",
+          "size": [
+            1672,
+            941
+          ],
+          "role": "unique target construction / NOT character drawing"
+        },
+        {
+          "order": 3,
+          "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_reference_001/F008/03_same_view_contacts_3x.png",
+          "sha256": "a01969c9e0f5fdd394c9f6d23086e99ab2e48344f3d1ecd6aa4ad264555ab081",
+          "size": [
+            1695,
+            765
+          ],
+          "role": "direct same-view detail"
+        },
+        {
+          "order": 4,
+          "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_reference_001/F008/04_edit_white.png",
+          "sha256": "0c3503e368cfb9299227240fc53cec7240b94fa43f0326eb309eb4b6272626ba",
+          "size": [
+            1672,
+            941
+          ],
+          "role": "single edit white mask"
+        }
+      ],
+      "request_sha256": "91c5d883329a70ac7587b72d6d5dfa8ff63a69ad994acd3558dabfba9b80c04a",
+      "prompt_sha256": "4aad64a99d225b523b6ee476a7fb02ad595d7bfcc721fc0a43eda3149c95c87c"
+    },
+    {
+      "frame": 20,
+      "state": {
+        "lean": 40,
+        "head_lift": -7,
+        "R_sh": [
+          631,
+          409
+        ],
+        "L_sh": [
+          676,
+          429
+        ],
+        "R_palm": [
+          820,
+          365.1323396567299
+        ],
+        "L_palm": [
+          850,
+          416.6729900632339
+        ],
+        "closed": true,
+        "G_release": false,
+        "R_chain": [
+          [
+            631.0,
+            409.0
+          ],
+          [
+            696.3737314862991,
+            347.1431068387907
+          ],
+          [
+            797.0,
+            377.1323396567299
+          ]
+        ],
+        "L_chain": [
+          [
+            676.0,
+            429.0
+          ],
+          [
+            740.3255922644987,
+            467.5644678405065
+          ],
+          [
+            827.0,
+            428.6729900632339
+          ]
+        ],
+        "G_R_chain": [
+          [
+            1067,
+            285
+          ],
+          [
+            1076,
+            435
+          ],
+          [
+            984,
+            439
+          ]
+        ]
+      },
+      "inputs": [
+        {
+          "order": 1,
+          "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F000/f000_scene_gate_001/cleanup/S20_F000_master_clean.png",
+          "sha256": "55ce8658e3454dcb92e8408dda25bc678f856d82bbb10cd80ff06a01fa0ab0c8",
+          "size": [
+            1672,
+            941
+          ],
+          "role": "locked mother identity/material/black-domain source"
+        },
+        {
+          "order": 2,
+          "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_reference_001/F020/02_full_volume_target.png",
+          "sha256": "4a79a9d41bd5e0a04b479138a74988350d973a2fdc736a1329290667d55f9303",
+          "size": [
+            1672,
+            941
+          ],
+          "role": "unique target construction / NOT character drawing"
+        },
+        {
+          "order": 3,
+          "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_reference_001/F020/03_same_view_contacts_3x.png",
+          "sha256": "ffc03adb0c238876e1ad0055c1dc88b4ae35b23d92b84fa191f4ef25ae7d7182",
+          "size": [
+            1695,
+            765
+          ],
+          "role": "direct same-view detail"
+        },
+        {
+          "order": 4,
+          "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_reference_001/F020/04_edit_white.png",
+          "sha256": "0c3503e368cfb9299227240fc53cec7240b94fa43f0326eb309eb4b6272626ba",
+          "size": [
+            1672,
+            941
+          ],
+          "role": "single edit white mask"
+        }
+      ],
+      "request_sha256": "481ae64f52f46ee747a1d309a8d010d4f29daf19ca37a9aa3a11aa19f847c97f",
+      "prompt_sha256": "36ea034648340ede1406301b3fd14cbe6d10e262b3beb3e721776afccef32480"
+    },
+    {
+      "frame": 32,
+      "state": {
+        "lean": 40,
+        "head_lift": -7,
+        "R_sh": [
+          631,
+          409
+        ],
+        "L_sh": [
+          676,
+          429
+        ],
+        "R_palm": [
+          820,
+          365.1323396567299
+        ],
+        "L_palm": [
+          850,
+          416.6729900632339
+        ],
+        "closed": true,
+        "G_release": true,
+        "R_chain": [
+          [
+            631.0,
+            409.0
+          ],
+          [
+            696.3737314862991,
+            347.1431068387907
+          ],
+          [
+            797.0,
+            377.1323396567299
+          ]
+        ],
+        "L_chain": [
+          [
+            676.0,
+            429.0
+          ],
+          [
+            740.3255922644987,
+            467.5644678405065
+          ],
+          [
+            827.0,
+            428.6729900632339
+          ]
+        ],
+        "G_R_chain": [
+          [
+            1067.0,
+            285.0
+          ],
+          [
+            1091.3567318268508,
+            433.28266795116303
+          ],
+          [
+            1012.0,
+            480.0
+          ]
+        ]
+      },
+      "inputs": [
+        {
+          "order": 1,
+          "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/F000/f000_scene_gate_001/cleanup/S20_F000_master_clean.png",
+          "sha256": "55ce8658e3454dcb92e8408dda25bc678f856d82bbb10cd80ff06a01fa0ab0c8",
+          "size": [
+            1672,
+            941
+          ],
+          "role": "locked mother identity/material/black-domain source"
+        },
+        {
+          "order": 2,
+          "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_reference_001/F032/02_full_volume_target.png",
+          "sha256": "e6b7960df9a072d31d6a4ea04cdadb44c9b53606c636d6b070288413dd33fd6d",
+          "size": [
+            1672,
+            941
+          ],
+          "role": "unique target construction / NOT character drawing"
+        },
+        {
+          "order": 3,
+          "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_reference_001/F032/03_same_view_contacts_3x.png",
+          "sha256": "b38c9ecec749c88ac641df5d6ef66e5d73a7dba4b104538e91a958f3048dcaa0",
+          "size": [
+            1695,
+            765
+          ],
+          "role": "direct same-view detail"
+        },
+        {
+          "order": 4,
+          "path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/handoff_008_020_032_reference_001/F032/04_edit_white.png",
+          "sha256": "79ee48a1f48846238992cd5e3f619fd413816fbdb495c7897fcaf9a56a0776fc",
+          "size": [
+            1672,
+            941
+          ],
+          "role": "single edit white mask"
+        }
+      ],
+      "request_sha256": "e6bc9081055a4bdc31a39a2a992f6e815c53a745ade6dba1bed267a968653b98",
+      "prompt_sha256": "ac71a385c0925b4f0499ef34f8fef225bfce0deb07df5f2e5e69da57b3d50a03"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PREPARED_NOT_SUBMITTED / BATCH_REFERENCE_GATE_PENDING",
+  "mother_source": "../F000/f000_scene_gate_001/cleanup/S20_F000_master_clean.png",
+  "mother_sha256": "55ce8658e3454dcb92e8408dda25bc678f856d82bbb10cd80ff06a01fa0ab0c8",
+  "new_model_calls": 0,
+  "new_model_raws": 0,
+  "in_flight": 0,
+  "output_canvas": [1672, 941],
+  "outside_single_white_mask": "Copy original mother RGBA exactly; no smoothing or color grading outside.",
+  "F008_F020": "Grandmother, high L whole arm, hands, jade, head/neck and legs/shoes remain source pixels; only child target domain changes. Crane shafts protected.",
+  "F032": "Only child target and low far-R release domain; high near-L whole arm, jade, grandmother head/neck/legs and four original source shoe contacts protected.",
+  "source_shoes_and_ankle_contact_strip": "Preserve; child editing white ends at y840.",
+  "dimension_mismatch": "Keep raw unchanged and report; no scaling, padding or cropping to force registration.",
+  "model_return_review": [
+    "Inspect actual full image and both complete shoulder-to-wrist chains, hands and source-protected pixels.",
+    "008: every child finger/palm clear of both rods; no contact inferred from a projected crossing.",
+    "020: two independent opposed grips on fixed rods; supplier still supports both.",
+    "032: receiver grips stable before supplier opens and withdraws; no phantom old palm or arm.",
+    "Neck/head, rib cage, pelvis and leg support move together; no stretched bones or changed character scale.",
+    "Retain tool prompt/request/input hashes/raw, source dimensions and author review; record actual request for each call."
+  ],
+  "continuous_batch_rule": "After explicit batch-reference approval, author generates and self-reviews segment continuously; no per-frame approval queue.",
+  "high_crane_integration_gate": "Independent; not a blocker for preparing/approving this low turtle-handoff segment.",
+  "shared_source_files_changed": []
+}
