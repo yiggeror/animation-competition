@@ -1,0 +1,12 @@
+{
+  "observedUTC": "2026-10-19T22:56:52.719713+00:00",
+  "latest_stdout": [
+    "S30 252",
+    "S30 253",
+    "S30 254"
+  ],
+  "session_ID": 18832,
+  "process_evidence": "Unified exec session18832 returned running with same session_ID after40second write_stdin wait; stdout monotonically progressed. Per-call /proc shell did not expose the renderer process, so no OS PID asserted.",
+  "authorized_command": "NODE_PATH=/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules node collab/reviews/20261019_2226_s30_complete_scene_gate/render_repository_keyframes.cjs --all",
+  "runtime_root": "/workspace/s30-full288-ed1721c1-20261019"
+}

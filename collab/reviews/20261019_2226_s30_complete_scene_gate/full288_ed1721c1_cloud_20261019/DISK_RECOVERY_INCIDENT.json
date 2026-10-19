@@ -1,0 +1,18 @@
+{
+  "retired_clean_temporary_worktree": "/workspace/s09-full96-render-20261019-07ae7df",
+  "commit": "a30342c47283ca9ccc5625628f4b2ab752f5003d",
+  "status_porcelain": "",
+  "processes_with_cwd_inside": [],
+  "reason": "recover workspace space for unique in-flight authorized S30 render; committed sources remain in common git object store; no raw/untracked output present",
+  "observed_failure": "Python py_compile could not create __pycache__, errno28 on workspace overlay. No browser renderer was restarted.",
+  "free_space_recovered": "3.2GiB",
+  "inflight_full_S30_continued_same_process": true,
+  "frame_observed_after_recovery": 207,
+  "must_check_after_completion": [
+    "original renderer status and ffmpeg errors",
+    "288 decoded frames",
+    "video packet/frame integrity and count",
+    "20 saved original JPEG keys",
+    "protected source hashes"
+  ]
+}
