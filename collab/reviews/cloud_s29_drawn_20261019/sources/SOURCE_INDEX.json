@@ -1,0 +1,75 @@
+{
+  "sources": [
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "assets/chars/g29_wrap.png",
+      "sha256": "d90813198dcdd9fb8e7e11eceb2d92da9250f13f70561d642a1e772a5e354667",
+      "role": "old actual identity cutout only, not new action/mother adoption"
+    },
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "collab/reviews/20261017_0548_poses_audio/s29_grandma/author/anim_29_grandma_wrap.png",
+      "sha256": "d794f1317a01e309f907560557be4db45047e5d040575d564cbf316bee3112a7",
+      "role": "unaltered native old identity RGB output"
+    },
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "collab/reviews/20261017_0548_poses_audio/s29_grandma/author/prompt.txt",
+      "sha256": "ffea95b6afb93f5e5a9b8bd3296d2be168a7efea6074944ae33e7444c36e2258",
+      "role": "historical full prompt with concealed contents; not new prompt"
+    },
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "collab/reviews/20261017_0548_poses_audio/s29_grandma/author/request.json",
+      "sha256": "971aa19233e98dde89044654598ef8beb35d36975b406387e0b09acdc6a8de73",
+      "role": "historical actual request"
+    },
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "collab/reviews/20261017_0548_poses_audio/s29_grandma/author/tool_metadata.json",
+      "sha256": "1b0938a98528d0746e1547a10a5652e91e7aef66199d5d4d07a665e7de6cdf7c",
+      "role": "historical tool metadata"
+    },
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "collab/reviews/20261017_0548_poses_audio/s29_grandma/author/manifest.json",
+      "sha256": "941a417b14e8861c945534e65ef6351b438c2b53f2a44fe3640f16f50f817acc",
+      "role": "historical raw/tool host SHA provenance"
+    },
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "collab/reviews/20261019_0727_s28_grandma_f000/S28_GM_F012_formal_contact.png",
+      "sha256": "91c2b51e7a87d6b9a634e652096e1ed3221a4fcbbd5870e29770fa91477923f3",
+      "role": "actually viewed for no-handover four rods continuity; not new S29 pose"
+    },
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "js/lamp/crane.js",
+      "sha256": "212e8a4fdad764fa50928c60a8efc956ad660c62377ea1ea152433a6fea4e642",
+      "role": "actual production crane raster/geometry function unchanged"
+    },
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "js/lamp/turtle.js",
+      "sha256": "f7e91070a5959a2a5b97438a64db0f79af4890c2dbff1cdcbe6e4d6a28817ed2",
+      "role": "actual production turtle raster/geometry function unchanged"
+    },
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "js/lamp/choreo.js",
+      "sha256": "6f838cdfb1aab203f83e5905eb4242a65addb4181ca8e66ed4c91340903e33d6",
+      "role": "one static prop joint pose only; no human code action"
+    },
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "js/puppet.js",
+      "sha256": "04b80760b97185ab8aea7826383d85f3c9d7789cd01aa1d8664fdc74bc4c30b7",
+      "role": "actual rigid part/joint solve and draw function unchanged"
+    }
+  ],
+  "new_imagegen_calls": 0,
+  "new_native_originals": 0,
+  "source_human_pixels_unchanged": true,
+  "human_procedural_drawn": false,
+  "technical_diagrams_are_not_native_outputs": true
+}

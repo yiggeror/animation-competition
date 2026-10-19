@@ -1,0 +1,8 @@
+const fs=require('fs'),path=require('path');
+const {chromium}=require('playwright');
+const root=path.resolve(__dirname,'../../..'),{start}=require(path.join(root,'tools/js/serve.cjs'));
+(async()=>{const server=await start(0),browser=await chromium.launch({executablePath:'/usr/bin/chromium',headless:true,args:['--no-sandbox','--disable-dev-shm-usage']});const page=await browser.newPage();const log={requests:[],responses:[],failed:[],pageerrors:[],purpose:'Technical reference diagrams, not imagegen or production rendering'};
+page.on('request',r=>log.requests.push(r.url()));page.on('response',r=>log.responses.push({url:r.url(),status:r.status()}));page.on('requestfailed',r=>log.failed.push({url:r.url(),error:r.failure()}));page.on('pageerror',e=>{log.pageerrors.push(e.message);console.error('Reference page error:',e.message);});
+await page.goto(`http://127.0.0.1:${server.address().port}/collab/reviews/cloud_s29_drawn_20261019/reference.html`);await page.waitForFunction(()=>window.referenceReady===true,null,{timeout:60000});
+const payload=await page.evaluate(()=>window.referencePayload);for(const [name,data]of Object.entries(payload))fs.writeFileSync(path.join(__dirname,name),Buffer.from(data.split(',')[1],'base64'));
+fs.writeFileSync(path.join(__dirname,'geometry/soft_target_and_true_prop_contacts.json'),JSON.stringify(await page.evaluate(()=>window.softTargets),null,2)+'\n');fs.writeFileSync(path.join(__dirname,'qa/reference_diagram_resource_log.json'),JSON.stringify(log,null,2)+'\n');await browser.close();server.close();console.log(JSON.stringify({diagrams:Object.keys(payload),failed:log.failed,pageerrors:log.pageerrors}));})().catch(e=>{console.error(e);process.exit(1);});

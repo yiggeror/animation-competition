@@ -1,0 +1,69 @@
+{
+  "fixed_latest_production": "9172ef0798383badf7af337eb91c49b6a63415f8",
+  "read_UTC": "2026-10-19 08:02-08:06 UTC",
+  "reads": [
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "collab/README.md",
+      "sha256": "9e4806cf07c208f28d64a480720e13112886d42c2251c3d15e564849ce350035",
+      "role": "current collab rules; present exclusive directory/branch instruction overrides shared writes"
+    },
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "collab/claude.md",
+      "sha256": "72939e3700ccb7de6ef070c59556c525ccadfd5f587831ac0d8ee6538d104ea0",
+      "role": "latest tail read, Opus decisions"
+    },
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "collab/partner.md",
+      "sha256": "12c64626d0de5ebe6722e9e2b71e769ff4fc514ff2c8e0408841dd08953cfe7c",
+      "role": "latest tail read; historical gates only"
+    },
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "docs/preproduction/script-v3.md",
+      "sha256": "fe7d72a2f823dca3659b90534057db43c37074ecf2de3a536cd4f3d4b2f92dd3",
+      "role": "actual scene11 text, current override recorded"
+    },
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "docs/keyframes/scenes03_12_drawing_plan.md",
+      "sha256": "4e099e1dfc9b2bcb2612bfee4e8df859695d48198539592c66e810bda7c38dab",
+      "role": "S29 12sec about36states approved list"
+    },
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "js/paint/shots/s29.js",
+      "sha256": "0aa013b4462457d0142c45e20ed806861a1450c69a60e9e39f01d1be2a6852f9",
+      "role": "actual current camera/light only; old code actions not adopted"
+    },
+    {
+      "commit": "9172ef0798383badf7af337eb91c49b6a63415f8",
+      "path": "js/paint/shots/s29_lamp.js",
+      "sha256": "fa2a68fecf715a810bc0a4319eb64a874f7ed36b6640043ffa831550474f6ae1",
+      "role": "existing last part layout only, no old head hold adopted"
+    },
+    {
+      "commit": "372d96fe79e4bb090e5589ebef664c890cf67912",
+      "path": "collab/claude.md",
+      "sha256": "72939e3700ccb7de6ef070c59556c525ccadfd5f587831ac0d8ee6538d104ea0",
+      "role": "exact newer no-handover and S31 half-open-pack directive"
+    }
+  ],
+  "priority": [
+    "current user exclusive reference-only task",
+    "Opus372d96fe exact explicit no-handover/S31 half-open package",
+    "script scene11 with its child-holds-turtle sentence overridden",
+    "old code/20261017 pilots only identity/camera/material, no new timing approval"
+  ],
+  "not_inherited": [
+    "old AB8.1-8.42",
+    "old head-up freeze",
+    "old 6-state/F240 fallback",
+    "old cloth displacement/triangle warp",
+    "old code child turtle rod",
+    "old fully hidden opaque final bundle as start state"
+  ],
+  "native_generation_authorized": false
+}

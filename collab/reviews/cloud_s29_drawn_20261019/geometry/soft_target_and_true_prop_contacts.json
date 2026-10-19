@@ -1,0 +1,203 @@
+{
+  "status": "FIRST_MOTHER_INPUT_PREPARATION_ONLY_NOT_APPROVED_FOR_GENERATION",
+  "sourceHuman": "oldg29 unchanged pixels used only as identity/proportion scaffolding; not new art",
+  "newNativeOutputRequired": true,
+  "nearBareRightContact": [
+    567,
+    739
+  ],
+  "farBangleLeftClothContact": [
+    791,
+    746
+  ],
+  "clothSupportPolygon": [
+    [
+      350,
+      746
+    ],
+    [
+      520,
+      709
+    ],
+    [
+      718,
+      714
+    ],
+    [
+      790,
+      746
+    ],
+    [
+      884,
+      835
+    ],
+    [
+      844,
+      905
+    ],
+    [
+      552,
+      922
+    ],
+    [
+      362,
+      850
+    ]
+  ],
+  "raisedFarClothLip": [
+    [
+      730,
+      714
+    ],
+    [
+      790,
+      746
+    ],
+    [
+      817,
+      793
+    ],
+    [
+      783,
+      783
+    ],
+    [
+      753,
+      752
+    ]
+  ],
+  "farContactDepth": "fingers -> raised cloth lip -> tail feathers -> lower cloth -> thighs",
+  "cranePose": {
+    "angles": {
+      "neck0": 0.25,
+      "neck1": -0.02,
+      "neck2": -0.06,
+      "neck3": -0.1,
+      "neck4": -0.14,
+      "neck5": -0.17,
+      "neck6": -0.19,
+      "neck7": -0.2,
+      "neck8": -0.19,
+      "neck9": -0.16,
+      "neck10": -0.12,
+      "neck11": -0.08,
+      "head": -0.55,
+      "tibia_near": 0.08,
+      "tarsus_near": -0.02,
+      "foot_near": 0.03,
+      "tibia_far": -0.05,
+      "tarsus_far": 0.02,
+      "foot_far": 0.03
+    },
+    "rootAngle": 0,
+    "facing": -1
+  },
+  "turtlePose": {
+    "angles": {
+      "legFN": 0,
+      "legBF": 0,
+      "legFF": 0,
+      "legBN": 0,
+      "tail": 0,
+      "neck0": -1.4174999999999998,
+      "neck1": 2.5675,
+      "neck2": -1.805,
+      "head": 0
+    },
+    "rootAngle": 0,
+    "facing": 1
+  },
+  "craneRoot": [
+    677.4925264192431,
+    759.7961595387585
+  ],
+  "turtleRoot": [
+    441,
+    829
+  ],
+  "oneLapPlaneMatrix": [
+    0.45,
+    0,
+    0,
+    -0.27
+  ],
+  "craneTruePart": "neck3",
+  "craneTruePartLocalPoint": [
+    10,
+    0
+  ],
+  "contactProofAfterDiagramProjection": [
+    567,
+    739
+  ],
+  "fourTrueAttachedStraightShafts": [
+    {
+      "puppet": "crane",
+      "part": "body",
+      "at": [
+        -75,
+        6
+      ],
+      "a": [
+        711.2425264192431,
+        758.1761595387585
+      ],
+      "b": [
+        846,
+        815
+      ]
+    },
+    {
+      "puppet": "crane",
+      "part": "neck3",
+      "at": [
+        10,
+        0
+      ],
+      "a": [
+        567,
+        739
+      ],
+      "b": [
+        827,
+        840
+      ]
+    },
+    {
+      "puppet": "turtle",
+      "part": "shell",
+      "at": [
+        0,
+        40
+      ],
+      "a": [
+        441,
+        818.2
+      ],
+      "b": [
+        695,
+        883
+      ]
+    },
+    {
+      "puppet": "turtle",
+      "part": "head",
+      "at": [
+        20,
+        0
+      ],
+      "a": [
+        537.8386543231954,
+        835.0656555299394
+      ],
+      "b": [
+        752,
+        898
+      ]
+    }
+  ],
+  "sourceHandsAreOnlyTechnicalOcclusionExamples": true,
+  "finalNativeWholeArmsAndFingersMustBeReviewed": true,
+  "all288frameTimingPrepared": false,
+  "imagegenCalls": 0
+}
