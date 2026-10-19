@@ -1,0 +1,244 @@
+{
+  "status": "LIMITED_LOCAL_INPUT_PREPARATION_PASS_PENDING_ROOT_ASTRA",
+  "actual_viewed": [
+    {
+      "path": "sources/F063_call01_RAW_UNCHANGED.png",
+      "sha256": "8943ae4194c77bf6a87ec43bb62d0970c8ac29b28733827c0b7107e079945489"
+    },
+    {
+      "path": "reference/A_same_raw_whole_hand_down49_FULL_CONTEXT_NOT_PRODUCTION.png",
+      "sha256": "00e6b900feed51d6b56296f560fad8dd3382eb90b950da8a418e72cb7e4886af"
+    },
+    {
+      "path": "reference/B_complete_far_forearm_and_hand_WHITE_REFERENCE.png",
+      "sha256": "ef11ec7ba53b3bbb7e3ea587e0ed50e605ad27c955519d3a0c930288eda8b8bc"
+    },
+    {
+      "path": "qa/whole_palm_fingertips_gap_and_white_gray.png",
+      "sha256": "bc1e9be826b1ee4b40ce6d0002da6826514308c3a25987b6b1902478f16b3518"
+    },
+    {
+      "path": "qa/whole_palm_fingertips_gap_and_white_dark.png",
+      "sha256": "6f4cc98fff6a7fbb5798115ba74fc9886725971b02b4fa69460823b256ac11ee"
+    },
+    {
+      "path": "qa/whole_context_target_and_full_white_gray.png",
+      "sha256": "1c369034ab6621085e2233ebe9d6cb56bd78c72ac223d146c9029cdbdb1912c9"
+    },
+    {
+      "path": "qa/whole_context_target_and_full_white_dark.png",
+      "sha256": "db81b050d8806170250a9ae05a01d70f8ad6a6bb1047e84cabae7b31a942569b"
+    },
+    {
+      "path": "qa/full_far_forearm_old_new_dark.png",
+      "sha256": "528838668fb2bed34a39625b8fdd82913f4883aa088ad17f09dfab48b1392e41"
+    },
+    {
+      "path": "reference/source_complete_visible_far_hand_RGBA.png",
+      "sha256": "7efb9c88f99f6af9356cae7633dc98758ca24d9150436dbf73ab54c99f1639ea"
+    }
+  ],
+  "image_calls": 0,
+  "source_raw_SHA256": "8943ae4194c77bf6a87ec43bb62d0970c8ac29b28733827c0b7107e079945489",
+  "production_mother044_SHA256": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+  "whole_source_hand_material_pixels": 22088,
+  "whole_hand_translation": [
+    0,
+    49
+  ],
+  "integer_original_RGBA_no_resampling": true,
+  "hand_was_not_split_or_scaled": true,
+  "visible_fingers": "All THREE visible source receiving digits/palm/ink/AA moved together; unseen anatomical fingers are not claimed verified or invented.",
+  "visible_observation": "Hand visibly separates from all currently visible lamp/near-grasp material after translation. Full palm remains within the source canvas. Old wrist cut is conspicuous and wholly editable, not a finished connection. The old finger-shaped missing-source silver border is still visibly unreconstructed and white.",
+  "strict_all_currently_visible_prop_alpha1_distance": {
+    "euclidean_pixel_center_distance": 32.7566787083184,
+    "moving_xy": [
+      1119,
+      755
+    ],
+    "fixed_xy": [
+      1126,
+      723
+    ],
+    "overlap_pixels": 0
+  },
+  "fixed_visible_prop_excluding_permitted_unknown_contact_edge_distance": {
+    "euclidean_pixel_center_distance": 41.14608122288197,
+    "moving_xy": [
+      982,
+      765
+    ],
+    "fixed_xy": [
+      964,
+      728
+    ],
+    "overlap_pixels": 0
+  },
+  "near_grasp_distance_alpha1": {
+    "euclidean_pixel_center_distance": 66.84309986827361,
+    "moving_xy": [
+      953,
+      785
+    ],
+    "fixed_xy": [
+      911,
+      733
+    ],
+    "overlap_pixels": 0
+  },
+  "per_visible_tip_scans": {
+    "visible_digit_left": {
+      "source_tip_proxy": [
+        1110,
+        714
+      ],
+      "moved_tip_proxy": [
+        1110,
+        763
+      ],
+      "ROI_proxy_not_anatomical_measurement": true,
+      "all_actual_tip_material_vs_known_prop": {
+        "euclidean_pixel_center_distance": 32.7566787083184,
+        "moving_xy": [
+          1119,
+          755
+        ],
+        "fixed_xy": [
+          1126,
+          723
+        ],
+        "overlap_pixels": 0
+      },
+      "all_actual_tip_material_vs_near_grasp": {
+        "euclidean_pixel_center_distance": 181.0331461362808,
+        "moving_xy": [
+          1089,
+          766
+        ],
+        "fixed_xy": [
+          911,
+          733
+        ],
+        "overlap_pixels": 0
+      }
+    },
+    "visible_digit_middle": {
+      "source_tip_proxy": [
+        1171,
+        712
+      ],
+      "moved_tip_proxy": [
+        1171,
+        761
+      ],
+      "ROI_proxy_not_anatomical_measurement": true,
+      "all_actual_tip_material_vs_known_prop": {
+        "euclidean_pixel_center_distance": 40.24922359499622,
+        "moving_xy": [
+          1163,
+          759
+        ],
+        "fixed_xy": [
+          1145,
+          723
+        ],
+        "overlap_pixels": 0
+      },
+      "all_actual_tip_material_vs_near_grasp": {
+        "euclidean_pixel_center_distance": 242.53865671269807,
+        "moving_xy": [
+          1151,
+          768
+        ],
+        "fixed_xy": [
+          911,
+          733
+        ],
+        "overlap_pixels": 0
+      }
+    },
+    "visible_digit_right": {
+      "source_tip_proxy": [
+        1206,
+        715
+      ],
+      "moved_tip_proxy": [
+        1206,
+        764
+      ],
+      "ROI_proxy_not_anatomical_measurement": true,
+      "all_actual_tip_material_vs_known_prop": {
+        "euclidean_pixel_center_distance": 44.0,
+        "moving_xy": [
+          1188,
+          759
+        ],
+        "fixed_xy": [
+          1188,
+          715
+        ],
+        "overlap_pixels": 0
+      },
+      "all_actual_tip_material_vs_near_grasp": {
+        "euclidean_pixel_center_distance": 274.7544358149655,
+        "moving_xy": [
+          1184,
+          764
+        ],
+        "fixed_xy": [
+          911,
+          733
+        ],
+        "overlap_pixels": 0
+      }
+    }
+  },
+  "distance_limit": "These are integer pixel-center distances to actual CURRENT visible material. Unknown silver under old fingers is not reconstructed or measured. Do not substitute49 or these distances for final visible-air/complete-arm acceptance. Source shared ink/AA ownership is a manual semantic extraction and remains editable.",
+  "white_pixels": 108690,
+  "source_or_target_clipped_pixels": 0,
+  "white_probes": {
+    "low_elbow": {
+      "xy": [
+        750,
+        1020
+      ],
+      "white": true
+    },
+    "old_wrist": {
+      "xy": [
+        980,
+        815
+      ],
+      "white": true
+    },
+    "new_palm": {
+      "xy": [
+        1120,
+        799
+      ],
+      "white": true
+    },
+    "old_touching_digit": {
+      "xy": [
+        1110,
+        714
+      ],
+      "white": true
+    }
+  },
+  "near_grasp_white_intersection": 0,
+  "actual_context_guard_alpha0": 0,
+  "outside_white_RGBA_changes": 0,
+  "moved_hand_outside_white": 0,
+  "frozen_source_layers": "Original044 fullPNG and head/collar/near-ruffle/waist-skirt/far-puff guards copied unchanged at original native1672x941 coordinates in sources. These do NOT designate altered raw head/clothes as production frozen.",
+  "adoption_boundary": "After an explicitly authorized future local repair, extract only the actual new double arms and necessary silver rim; register into frozen044 head/collar/ruffle/cloth/skirt/background, with actual sleeve/wrist/prop seam review. The existing1282→700 uniform width inverse+600/230 is only an initial diagnostic. No production compositing or seam PASS was done here.",
+  "remaining_gate_items": [
+    "Root/Astra must review complete-hand source extraction and shared contact AA ownership, the full-white elbow/forearm/hand domain, and the short draft before any single local request.",
+    "Native correction must restore true forearm/wrist continuity and only missing lower silver edge while keeping visible air; final no-contact condition and OFF/unlit must be actual-viewed.",
+    "Final frozen044 registration and real protected-source seams remain unverified until a genuine corrected local result exists."
+  ],
+  "new_calls": 0,
+  "069_unopened": true,
+  "isolated_reference_and_masks_byte_exact": true,
+  "authority": "sources/authority_VERBATIM_and_scope.txt"
+}

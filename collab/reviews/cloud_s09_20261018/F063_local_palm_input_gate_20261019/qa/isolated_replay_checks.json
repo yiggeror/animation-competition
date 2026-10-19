@@ -1,0 +1,85 @@
+{
+  "status": "PASS_ZERO_CALL_PREPARATION_REPLAY_ONLY",
+  "method": "Fresh temporary directory; only prepare.py and complete local sources snapshot; replay once, compare all4 reference PNGs and9 source/target/domain/guard masks byte-for-byte.",
+  "files": [
+    {
+      "path": "reference/A_same_raw_whole_hand_down49_FULL_CONTEXT_NOT_PRODUCTION.png",
+      "original_SHA256": "00e6b900feed51d6b56296f560fad8dd3382eb90b950da8a418e72cb7e4886af",
+      "isolated_SHA256": "00e6b900feed51d6b56296f560fad8dd3382eb90b950da8a418e72cb7e4886af",
+      "byte_identical": true
+    },
+    {
+      "path": "reference/B_complete_far_forearm_and_hand_WHITE_REFERENCE.png",
+      "original_SHA256": "ef11ec7ba53b3bbb7e3ea587e0ed50e605ad27c955519d3a0c930288eda8b8bc",
+      "isolated_SHA256": "ef11ec7ba53b3bbb7e3ea587e0ed50e605ad27c955519d3a0c930288eda8b8bc",
+      "byte_identical": true
+    },
+    {
+      "path": "reference/source_complete_visible_far_hand_RGBA.png",
+      "original_SHA256": "7efb9c88f99f6af9356cae7633dc98758ca24d9150436dbf73ab54c99f1639ea",
+      "isolated_SHA256": "7efb9c88f99f6af9356cae7633dc98758ca24d9150436dbf73ab54c99f1639ea",
+      "byte_identical": true
+    },
+    {
+      "path": "reference/target_same_whole_hand_INTEGER_dy49_RGBA.png",
+      "original_SHA256": "46ace4f48ee8e6cdca6f74c03f6ef2ac203f3b7b1760b497b203f99ecb701ab5",
+      "isolated_SHA256": "46ace4f48ee8e6cdca6f74c03f6ef2ac203f3b7b1760b497b203f99ecb701ab5",
+      "byte_identical": true
+    },
+    {
+      "path": "masks/HARD_local_context_actual_visible_material.png",
+      "original_SHA256": "b389cbd14bd9f6b339d739f3df19f8848b612b6ba9e6aafeaf451a6a6e037f80",
+      "isolated_SHA256": "b389cbd14bd9f6b339d739f3df19f8848b612b6ba9e6aafeaf451a6a6e037f80",
+      "byte_identical": true
+    },
+    {
+      "path": "masks/WHITE_complete_far_forearm_old_new_hand_air.png",
+      "original_SHA256": "ef11ec7ba53b3bbb7e3ea587e0ed50e605ad27c955519d3a0c930288eda8b8bc",
+      "isolated_SHA256": "ef11ec7ba53b3bbb7e3ea587e0ed50e605ad27c955519d3a0c930288eda8b8bc",
+      "byte_identical": true
+    },
+    {
+      "path": "masks/old_wrist_cut_WHITE_NOT_ANATOMY.png",
+      "original_SHA256": "cd63719f72771cd26f93da35d8dfc184c13d9be30c9e11b17e955a35c41e0a06",
+      "isolated_SHA256": "cd63719f72771cd26f93da35d8dfc184c13d9be30c9e11b17e955a35c41e0a06",
+      "byte_identical": true
+    },
+    {
+      "path": "masks/silver_lower_rim_local_allowed_UNKNOWN_BEHIND_OLD_FINGERS.png",
+      "original_SHA256": "666f3e087f345e73ba72cd6e5b5a2d8f27c777f026030450f5c45c6d77ecfce7",
+      "isolated_SHA256": "666f3e087f345e73ba72cd6e5b5a2d8f27c777f026030450f5c45c6d77ecfce7",
+      "byte_identical": true
+    },
+    {
+      "path": "masks/source_actual_prop_visible_material.png",
+      "original_SHA256": "5ce7e49be47bd7d66b0f029936c975bc87d167dec6be498e8d456da4801ea439",
+      "isolated_SHA256": "5ce7e49be47bd7d66b0f029936c975bc87d167dec6be498e8d456da4801ea439",
+      "byte_identical": true
+    },
+    {
+      "path": "masks/source_complete_visible_far_hand_material.png",
+      "original_SHA256": "aa588768cee2dddae480e0e13229e00d1d6998a8cc05445df09477682b4f0554",
+      "isolated_SHA256": "aa588768cee2dddae480e0e13229e00d1d6998a8cc05445df09477682b4f0554",
+      "byte_identical": true
+    },
+    {
+      "path": "masks/source_near_arm_and_grasp_actual_material_HARD.png",
+      "original_SHA256": "8284775f135deb6869c5d69c23284e5de5fe69c118a528e436a821310da976be",
+      "isolated_SHA256": "8284775f135deb6869c5d69c23284e5de5fe69c118a528e436a821310da976be",
+      "byte_identical": true
+    },
+    {
+      "path": "masks/source_old_far_forearm_whole_material.png",
+      "original_SHA256": "60c1d7b11246b2b4ee07d02ba7b28094470c06d0d86c79966a1528e9f005da4a",
+      "isolated_SHA256": "60c1d7b11246b2b4ee07d02ba7b28094470c06d0d86c79966a1528e9f005da4a",
+      "byte_identical": true
+    },
+    {
+      "path": "masks/target_same_complete_hand_down49_material.png",
+      "original_SHA256": "8246bee58409ff6cc5ea78ef625ef9456275cf85bc7a51fe9c3748dd00dba2e0",
+      "isolated_SHA256": "8246bee58409ff6cc5ea78ef625ef9456275cf85bc7a51fe9c3748dd00dba2e0",
+      "byte_identical": true
+    }
+  ],
+  "new_image_calls": 0
+}

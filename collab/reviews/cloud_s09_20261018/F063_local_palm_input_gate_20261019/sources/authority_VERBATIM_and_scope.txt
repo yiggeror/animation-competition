@@ -1,0 +1,7 @@
+Astra complete local instruction supplied by root,2026-10-19:
+S09 d22a1e06 主审已实看：近整臂握筒、远袖上臂低肘可保，三指提前压银圈属真实问题。请原云用同 raw 做唯一局部修输入：1282×1227 原图整掌含全指掌厚约 (0,+49) 像素预摆，禁止单指/缩放；白域完整覆盖远低肘约(750,1020)→远前臂→腕约(980,815)→新整掌及腾空区，另仅开放被旧指挡住的银圈下缘约 x1080–1230/y690–755，按真实轮廓收敛。近臂握筒/远袖上臂保留。先交实际预摆+完整白域，量真实材质净空后给单次修门；不全人重画、不当069。49 是 guide 人工对应的准备量，最终以可见空气隙和臂掌连续为准。
+
+Latest production adoption boundary:
+063 raw还改到了原头/衣背景，最终只能取实际新双臂和必要灯缘，不能采用整张raw的脸/头/旧保护区。定向修后必须回原冻结母层注册并检查接缝；双臂自然不等于整张raw可当063。
+
+Root constraints: zero image calls, prepare only. Whole hand inclusive visible fingers/thickness/ink/AA once integer0,+49, no scale or individual fingers. Original raw untouched. Context-only outside local white; final production mother remains044fe70. The raw→700crop width inverse is initial diagnostic only; actual local output registration/seams must be reviewed later.
