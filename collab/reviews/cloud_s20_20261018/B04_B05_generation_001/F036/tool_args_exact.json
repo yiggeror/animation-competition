@@ -1,0 +1,10 @@
+{
+  "prompt": "将第一张唯一完整、不透明的新F036姿态自然完稿为第三张实物的二维手绘角色风格。第一张只是一张完整体量施工输入，不是曝光成品；模型须按该完整新姿态画真实人物，不能直接把技术体块当成最终画稿。第二张从第一张接触区同机位直接放大，第三张只含已锁032的两个人物头部身份与内部材质，不含完整旧身或旧臂；第四张白可完稿、黑不变，唯一单mask不反转。\n036原握：孩子双手持续实握T_H/T_S，完整头颈胸盆随支撑脚开始转幕；奶奶R仍张开靠近，接触数0，L继续闭合并持C_B+C_N。\n所有手必须真实一拇四指，掌厚、指腹对握和完整腕臂连接成立。R/L按角色自身，奶奶仅近L戴玉镯，R腕不添任何饰物。人物头颈、胸廓、骨盆、两腿和支撑脚整体转动，不能只扭脸或只摆手；完整肩袖—上臂—肘—前臂—腕可追，骨长用短缩和体量表达，禁止拉长。四根硬杆分别对应turtle.head[20,0]、turtle.shell[0,40]、crane.body[-75,6]、crane.neck3[10,0]，不能合成软绳或换绑。只修施工线为自然关节、衣褶与中性固有色，场景灯光后接入。输出单张1672×941透明人物层，无骨架、圆圈假掌、文字、灰影、场景、额外帧；不缩放裁切。\n圆形肩/肘是施工体积，不得照抄成球；奶奶保持真实蓝花宽短袖，只有小满是黄泡袖。",
+  "transparent_background": true,
+  "referenced_image_paths": [
+    "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_036_057_inputs_002/F036/inputs/01_unique_opaque_complete_target.png",
+    "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_036_057_inputs_002/F036/inputs/02_exact_same_view_contacts_3x.png",
+    "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_036_057_inputs_002/F036/inputs/03_heads_internal_materials_only.png",
+    "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_036_057_inputs_002/F036/inputs/04_single_edit_white.png"
+  ]
+}

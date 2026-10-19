@@ -1,0 +1,22 @@
+{
+  "frozen_input_commit": "6579fd242bb6db148ae196e5ab07960a4913bd32",
+  "status": "STOPPED_ON_F036_STRUCTURE",
+  "actual_image_calls": 1,
+  "raw_outputs": 1,
+  "accepted_states": [],
+  "rejected_states": [
+    36
+  ],
+  "not_called_states": [
+    39,
+    42,
+    45,
+    47,
+    54
+  ],
+  "reuse_048_053": "requires accepted047; no new image call planned",
+  "automatic_retry": false,
+  "new_final_assets": 0,
+  "blocking_evidence": "F036/upper_contacts_2x.jpg",
+  "next_dependency": "Correct and approve the complete child two-arm/hand/turtle-rod structure in036 before deriving039+."
+}
