@@ -72,7 +72,7 @@
       "png_SHA256": "93939f3e148c0a957ef418c677e60cc3fd27cf6b6844f91d500c8a3508b76720",
       "source_commit_SHA": "e3d2202cacfc6c3964112cbda8956592683b8792",
       "known_commit_abbrev": null,
-      "scene_registration_ref": null,
+      "scene_registration_ref": "unchanged_native_to_original_scene",
       "whole_action_layer_path": "collab/reviews/cloud_s07_walk_20261018/F057_semantic_color_ankle/candidate/F057_semantic_color_and_ankle_PENDING.png",
       "component_layer_directory": null,
       "has_physical_lamp": false,
@@ -83,12 +83,14 @@
       "known_ground_anchors": null,
       "evidence": [
         "collab/reviews/cloud_s07_walk_20261018/exposure.csv",
-        "Explicit Astra source identity message source_thread01a1515b-ad57-7745-99c3-3cf607fea0c6,2026-10-19"
+        "Explicit Astra source identity message source_thread01a1515b-ad57-7745-99c3-3cf607fea0c6,2026-10-19",
+        "collab/reviews/cloud_s07_walk_20261018/F057_semantic_color_ankle/checks.json:registration_unchanged"
       ],
-      "unresolved": "Ground-contact1705 patch belongs to frames before57 and is not a new057 mother. Exact057 identity supplied by coordinator; no measurement or re-review performed. Other unknown anchor/registration fields remain uncomputed.",
+      "unresolved": "Known existing057 checks confirm the same s/tx/ty. No recomputation or visual re-review.1705 is pre57 ground-contact patch; unspecified actual ground-anchor values remainnull.",
       "lamp_support_owner": "table",
       "table_shadow_render_owner": "original_scene.tableLamp(0)",
-      "lamp_render_owner": "original_scene.tableLamp(0)"
+      "lamp_render_owner": "original_scene.tableLamp(0)",
+      "world_registered_png_path": "collab/reviews/cloud_s07_walk_20261018/F057_semantic_color_ankle/candidate/F057_semantic_color_and_ankle_world_PENDING.png"
     },
     {
       "state": 62,
