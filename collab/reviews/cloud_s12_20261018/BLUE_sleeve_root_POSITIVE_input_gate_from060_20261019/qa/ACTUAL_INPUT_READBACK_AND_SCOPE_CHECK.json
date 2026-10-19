@@ -1,0 +1,22 @@
+{
+  "status": "POSITIVE_BLUE_INPUTS_AND_EXPLICIT_SUPPLEMENT_PENDING_DIRECT_REVIEW",
+  "actually_opened": [
+    "inputs/01_POSITIVE_ROUND_BLUE_EDGE_FIXED_PATTERN.png",
+    "inputs/02_SAME_TARGET_BLUE_SCOPE_FLOWER_PROTECTION.png",
+    "inputs/03_ONLY_REAL060_BLUE_MATERIAL.png"
+  ],
+  "approved_original_mask_pixels": 1199,
+  "additional_PROPOSED_only_pixels": 669,
+  "proposed_complete_mask_pixels": 1868,
+  "reason": "The original narrow1199band did not include all real false-tab fringe/AA pixels.1199-only target test left split fringe, retained as NOT_USABLE diagnostic. Proposed extra explicitly includes that same local erroneous edge, not a torso/body repaint.",
+  "original1199_mask_unchanged": true,
+  "original_white_flower_RGBA_changed_pixels": 0,
+  "outside_proposed_RGBA_changed_pixels": 0,
+  "actual060_and064_production_pixels_changed": 0,
+  "source_reference_real_garment_pixels_not_flat_code_colour": true,
+  "future_final_reference_adoption_forbidden": true,
+  "imagegen_calls": 0,
+  "actual_Canvas": 0,
+  "supplement_requires_review_before_actual_execution": true,
+  "final_mask_SHA256": "3b7c4c7dfae6be449938dcd1c1b08e643ac3dbac49030551c589d8b8ae97b2c6"
+}
