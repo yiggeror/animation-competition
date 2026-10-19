@@ -1,0 +1,234 @@
+{
+  "new_image_calls": 0,
+  "same_raw_material_only": true,
+  "frames": [
+    {
+      "frame": 36,
+      "source": "collab/reviews/cloud_s20_20261018/B04_B05_generation_002/F036/S20_F036_accepted.png",
+      "source_sha256": "9a6d7a4c0f6cf3b819ae193ebf453f9277e9f58cd6bbb3f33c61c500fee85f4a",
+      "output": "S20_F036_costume_corrected.png",
+      "output_sha256": "9996baa93ed323cf7f2d67d2ebec5426c558c29ca58252ec8a49337482ac04c2",
+      "dot_restore": {
+        "old_dots_removed": 8,
+        "new_round_white_dots": 73,
+        "cloth_area_px": 48317,
+        "032_reference_dots": 77,
+        "032_dot_density_per_pixel": 0.0014948263477703792,
+        "real_white_pigment_source_center": [
+          629.7894736842105,
+          600.1578947368421
+        ],
+        "projected_spacing_px": 26.125653687594195
+      },
+      "real_collar_source": "approved v4 profile",
+      "collar_registration": {
+        "scale": 0.95,
+        "translation": [
+          -113.09999999999991,
+          106.80000000000001
+        ]
+      },
+      "sandals": [
+        {
+          "role": "far",
+          "real_donor": "approvedv4 full side sandal",
+          "one_whole_sandal_similarity": {
+            "scale": 0.9496729250602848,
+            "rotation_degrees": 4.676109621068539,
+            "matrix_2x3": [
+              [
+                0.9465119061864306,
+                -0.07742012683977506,
+                6.264568625104744
+              ],
+              [
+                0.07742012683977506,
+                0.9465119061864306,
+                -68.36280962067735
+              ]
+            ],
+            "source_ankle_and_toe": [
+              [
+                760.0,
+                925.0
+              ],
+              [
+                846.0,
+                956.0
+              ]
+            ],
+            "target_ankle_and_toe": [
+              [
+                654.0,
+                866.0
+              ],
+              [
+                733.0,
+                902.0
+              ]
+            ]
+          },
+          "native_shin_skin_kept_above_y": 862
+        },
+        {
+          "role": "near",
+          "real_donor": "locked032 near sandal",
+          "one_whole_sandal_similarity": {
+            "scale": 1.1056370119638415,
+            "rotation_degrees": -2.671817787201637,
+            "matrix_2x3": [
+              [
+                1.104435101044351,
+                0.05153940051539402,
+                -93.42058863420584
+              ],
+              [
+                -0.05153940051539402,
+                1.104435101044351,
+                -65.24698223246969
+              ]
+            ],
+            "source_ankle_and_toe": [
+              [
+                556.0,
+                880.0
+              ],
+              [
+                633.0,
+                918.0
+              ]
+            ],
+            "target_ankle_and_toe": [
+              [
+                566.0,
+                878.0
+              ],
+              [
+                653.0,
+                916.0
+              ]
+            ]
+          },
+          "native_shin_skin_kept_above_y": 874
+        }
+      ],
+      "new_image_calls": 0,
+      "head_above335_RGBA_changes": 0,
+      "arm_grip_and_G_x710plus_RGBA_changes": 0
+    },
+    {
+      "frame": 39,
+      "source": "collab/reviews/cloud_s20_20261018/F039_head_neck_repair_001/S20_F039_head_neck_accepted.png",
+      "source_sha256": "49ab348c844aaad32bbcd9f4a4fcbbcdc53dc63ce818f847938dbbc45ca344f8",
+      "output": "S20_F039_costume_corrected.png",
+      "output_sha256": "439135c0b70c78b0da0cd9412794a5f61be10d6b73c2ce0173138340112e4185",
+      "dot_restore": {
+        "old_dots_removed": 6,
+        "new_round_white_dots": 71,
+        "cloth_area_px": 46178,
+        "032_reference_dots": 77,
+        "032_dot_density_per_pixel": 0.0014948263477703792,
+        "real_white_pigment_source_center": [
+          629.7894736842105,
+          600.1578947368421
+        ],
+        "projected_spacing_px": 25.519122752552647
+      },
+      "real_collar_source": "approved v4 front",
+      "collar_registration": {
+        "scale": 0.9,
+        "translation": [
+          316.3,
+          142.4
+        ]
+      },
+      "sandals": [
+        {
+          "role": "far",
+          "real_donor": "approvedv4 full side sandal",
+          "one_whole_sandal_similarity": {
+            "scale": 0.8251462534578634,
+            "rotation_degrees": 18.718719050916132,
+            "matrix_2x3": [
+              [
+                0.7815005384707431,
+                -0.2648079454349647,
+                325.00694028957764
+              ],
+              [
+                0.2648079454349647,
+                0.7815005384707431,
+                -69.14203661601061
+              ]
+            ],
+            "source_ankle_and_toe": [
+              [
+                760.0,
+                925.0
+              ],
+              [
+                846.0,
+                956.0
+              ]
+            ],
+            "target_ankle_and_toe": [
+              [
+                674.0,
+                855.0
+              ],
+              [
+                733.0,
+                902.0
+              ]
+            ]
+          },
+          "native_shin_skin_kept_above_y": 852
+        },
+        {
+          "role": "near",
+          "real_donor": "locked032 near sandal",
+          "one_whole_sandal_similarity": {
+            "scale": 0.8830271104543557,
+            "rotation_degrees": 14.99037334722976,
+            "matrix_2x3": [
+              [
+                0.8529770785297708,
+                -0.2284009222840092,
+                282.73755594737554
+              ],
+              [
+                0.2284009222840092,
+                0.8529770785297708,
+                -11.610741896107356
+              ]
+            ],
+            "source_ankle_and_toe": [
+              [
+                556.0,
+                880.0
+              ],
+              [
+                633.0,
+                918.0
+              ]
+            ],
+            "target_ankle_and_toe": [
+              [
+                556.0,
+                866.0
+              ],
+              [
+                613.0,
+                916.0
+              ]
+            ]
+          },
+          "native_shin_skin_kept_above_y": 862
+        }
+      ],
+      "new_image_calls": 0,
+      "head_above335_RGBA_changes": 0,
+      "arm_grip_and_G_x710plus_RGBA_changes": 0
+    }
+  ]
+}
