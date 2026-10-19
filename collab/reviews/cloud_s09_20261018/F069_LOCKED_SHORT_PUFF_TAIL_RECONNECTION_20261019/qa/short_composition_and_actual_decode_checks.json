@@ -1,0 +1,532 @@
+{
+  "status": "ACTUAL_STATIC_AND33F_GRAY_DARK_DECODE_VIEWED_SUBMITTED_TO_ASTRA",
+  "head_composition": {
+    "77": {
+      "outside_whole_head_neck_RGBA_changes": 0,
+      "below540_RGBA_changes": 0
+    },
+    "85": {
+      "outside_whole_head_neck_RGBA_changes": 0,
+      "below540_RGBA_changes": 0
+    }
+  },
+  "source_SHA256": {
+    "63": "0abc3fd9cfcf7964f825ac7be0227fb9f588da709809f6d15362063741e545ef",
+    "69": "bc64924feaa5331c26f8c3d0874634ec7b765295ca95ff6f729bbe2755cdf8f5",
+    "73": "2b90ccb57d6059d46e289bd272c00d054afbb65d73a75697b393d31bf7435c5c",
+    "77": "984b7afbbf6fab220bc57b6528bd1ce9da07db093084eb5dcdf7d512ca93977d",
+    "85": "c204eec830001676197c325b44c4fb01d125dc599aa86b4f2338539325e62d0a"
+  },
+  "source_review_commit": "4a9bd2206c3138e9896bb4105ae37d3947512bfb",
+  "native_requests": 0,
+  "variants": {
+    "gray": {
+      "video_sha256": "a5e4e2a89ca2b8d5551a551c8e38ebb4700ac934e86a0988e7e7f98d6ec58fe0",
+      "size": [
+        1672,
+        972
+      ],
+      "decoded_frames": 33,
+      "fps": "24/1",
+      "duration": 1.375,
+      "audio_streams": 0,
+      "all33_decoded_classification_correct": true,
+      "all33_actual_classification": [
+        {
+          "index": 0,
+          "source_frame": 63,
+          "actual_class": 63,
+          "expected": 63,
+          "matching_MAE": 0.6362368814854195
+        },
+        {
+          "index": 1,
+          "source_frame": 64,
+          "actual_class": 63,
+          "expected": 63,
+          "matching_MAE": 0.6357667808691201
+        },
+        {
+          "index": 2,
+          "source_frame": 65,
+          "actual_class": 63,
+          "expected": 63,
+          "matching_MAE": 0.6359351720584664
+        },
+        {
+          "index": 3,
+          "source_frame": 66,
+          "actual_class": 63,
+          "expected": 63,
+          "matching_MAE": 0.6358172366944297
+        },
+        {
+          "index": 4,
+          "source_frame": 67,
+          "actual_class": 63,
+          "expected": 63,
+          "matching_MAE": 0.6362225241367542
+        },
+        {
+          "index": 5,
+          "source_frame": 68,
+          "actual_class": 63,
+          "expected": 63,
+          "matching_MAE": 0.6362297028110868
+        },
+        {
+          "index": 6,
+          "source_frame": 69,
+          "actual_class": 69,
+          "expected": 69,
+          "matching_MAE": 0.6211151065561397
+        },
+        {
+          "index": 7,
+          "source_frame": 70,
+          "actual_class": 69,
+          "expected": 69,
+          "matching_MAE": 0.6210673170955822
+        },
+        {
+          "index": 8,
+          "source_frame": 71,
+          "actual_class": 69,
+          "expected": 69,
+          "matching_MAE": 0.6212305806604053
+        },
+        {
+          "index": 9,
+          "source_frame": 72,
+          "actual_class": 69,
+          "expected": 69,
+          "matching_MAE": 0.6209986069269695
+        },
+        {
+          "index": 10,
+          "source_frame": 73,
+          "actual_class": 73,
+          "expected": 73,
+          "matching_MAE": 0.6597817026666929
+        },
+        {
+          "index": 11,
+          "source_frame": 74,
+          "actual_class": 73,
+          "expected": 73,
+          "matching_MAE": 0.6595755721608548
+        },
+        {
+          "index": 12,
+          "source_frame": 75,
+          "actual_class": 73,
+          "expected": 73,
+          "matching_MAE": 0.660074387474485
+        },
+        {
+          "index": 13,
+          "source_frame": 76,
+          "actual_class": 73,
+          "expected": 73,
+          "matching_MAE": 0.6598239542927652
+        },
+        {
+          "index": 14,
+          "source_frame": 77,
+          "actual_class": 77,
+          "expected": 77,
+          "matching_MAE": 0.6309804510340573
+        },
+        {
+          "index": 15,
+          "source_frame": 78,
+          "actual_class": 77,
+          "expected": 77,
+          "matching_MAE": 0.6307749358431619
+        },
+        {
+          "index": 16,
+          "source_frame": 79,
+          "actual_class": 77,
+          "expected": 77,
+          "matching_MAE": 0.6312427803046712
+        },
+        {
+          "index": 17,
+          "source_frame": 80,
+          "actual_class": 77,
+          "expected": 77,
+          "matching_MAE": 0.6304830714552937
+        },
+        {
+          "index": 18,
+          "source_frame": 81,
+          "actual_class": 77,
+          "expected": 77,
+          "matching_MAE": 0.6306118773833199
+        },
+        {
+          "index": 19,
+          "source_frame": 82,
+          "actual_class": 77,
+          "expected": 77,
+          "matching_MAE": 0.6305884954154934
+        },
+        {
+          "index": 20,
+          "source_frame": 83,
+          "actual_class": 77,
+          "expected": 77,
+          "matching_MAE": 0.6308760525987621
+        },
+        {
+          "index": 21,
+          "source_frame": 84,
+          "actual_class": 77,
+          "expected": 77,
+          "matching_MAE": 0.6307587325496682
+        },
+        {
+          "index": 22,
+          "source_frame": 85,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 0.6299325696864683
+        },
+        {
+          "index": 23,
+          "source_frame": 86,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 0.6299348258412586
+        },
+        {
+          "index": 24,
+          "source_frame": 87,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 0.6301270092083933
+        },
+        {
+          "index": 25,
+          "source_frame": 88,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 0.6298671411975506
+        },
+        {
+          "index": 26,
+          "source_frame": 89,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 0.6299003682044618
+        },
+        {
+          "index": 27,
+          "source_frame": 90,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 0.6298892925354914
+        },
+        {
+          "index": 28,
+          "source_frame": 91,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 0.6301298806781263
+        },
+        {
+          "index": 29,
+          "source_frame": 92,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 0.6300730665984078
+        },
+        {
+          "index": 30,
+          "source_frame": 93,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 0.6300757329631599
+        },
+        {
+          "index": 31,
+          "source_frame": 94,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 0.6300730665984078
+        },
+        {
+          "index": 32,
+          "source_frame": 95,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 0.6301298806781263
+        }
+      ]
+    },
+    "dark": {
+      "video_sha256": "192e7147b51c43806f93dea413bcb1b0ede6e70f3fffc79a4fbfa0c66daa76f5",
+      "size": [
+        1672,
+        972
+      ],
+      "decoded_frames": 33,
+      "fps": "24/1",
+      "duration": 1.375,
+      "audio_streams": 0,
+      "all33_decoded_classification_correct": true,
+      "all33_actual_classification": [
+        {
+          "index": 0,
+          "source_frame": 63,
+          "actual_class": 63,
+          "expected": 63,
+          "matching_MAE": 1.3930034999113947
+        },
+        {
+          "index": 1,
+          "source_frame": 64,
+          "actual_class": 63,
+          "expected": 63,
+          "matching_MAE": 1.3925789326008624
+        },
+        {
+          "index": 2,
+          "source_frame": 65,
+          "actual_class": 63,
+          "expected": 63,
+          "matching_MAE": 1.3927764486975014
+        },
+        {
+          "index": 3,
+          "source_frame": 66,
+          "actual_class": 63,
+          "expected": 63,
+          "matching_MAE": 1.392610518767926
+        },
+        {
+          "index": 4,
+          "source_frame": 67,
+          "actual_class": 63,
+          "expected": 63,
+          "matching_MAE": 1.3930535455267423
+        },
+        {
+          "index": 5,
+          "source_frame": 68,
+          "actual_class": 63,
+          "expected": 63,
+          "matching_MAE": 1.3930250359343928
+        },
+        {
+          "index": 6,
+          "source_frame": 69,
+          "actual_class": 69,
+          "expected": 69,
+          "matching_MAE": 1.3765358260972296
+        },
+        {
+          "index": 7,
+          "source_frame": 70,
+          "actual_class": 69,
+          "expected": 69,
+          "matching_MAE": 1.3763975853400805
+        },
+        {
+          "index": 8,
+          "source_frame": 71,
+          "actual_class": 69,
+          "expected": 69,
+          "matching_MAE": 1.3766970386122432
+        },
+        {
+          "index": 9,
+          "source_frame": 72,
+          "actual_class": 69,
+          "expected": 69,
+          "matching_MAE": 1.3770762777219892
+        },
+        {
+          "index": 10,
+          "source_frame": 73,
+          "actual_class": 73,
+          "expected": 73,
+          "matching_MAE": 1.3707604800441058
+        },
+        {
+          "index": 11,
+          "source_frame": 74,
+          "actual_class": 73,
+          "expected": 73,
+          "matching_MAE": 1.3707036659643872
+        },
+        {
+          "index": 12,
+          "source_frame": 75,
+          "actual_class": 73,
+          "expected": 73,
+          "matching_MAE": 1.371145051883356
+        },
+        {
+          "index": 13,
+          "source_frame": 76,
+          "actual_class": 73,
+          "expected": 73,
+          "matching_MAE": 1.370602344103806
+        },
+        {
+          "index": 14,
+          "source_frame": 77,
+          "actual_class": 77,
+          "expected": 77,
+          "matching_MAE": 1.359684400863738
+        },
+        {
+          "index": 15,
+          "source_frame": 78,
+          "actual_class": 77,
+          "expected": 77,
+          "matching_MAE": 1.3595873862077565
+        },
+        {
+          "index": 16,
+          "source_frame": 79,
+          "actual_class": 77,
+          "expected": 77,
+          "matching_MAE": 1.359844998063809
+        },
+        {
+          "index": 17,
+          "source_frame": 80,
+          "actual_class": 77,
+          "expected": 77,
+          "matching_MAE": 1.3593340815563038
+        },
+        {
+          "index": 18,
+          "source_frame": 81,
+          "actual_class": 77,
+          "expected": 77,
+          "matching_MAE": 1.3594058682996304
+        },
+        {
+          "index": 19,
+          "source_frame": 82,
+          "actual_class": 77,
+          "expected": 77,
+          "matching_MAE": 1.359398074310355
+        },
+        {
+          "index": 20,
+          "source_frame": 83,
+          "actual_class": 77,
+          "expected": 77,
+          "matching_MAE": 1.3596704537250346
+        },
+        {
+          "index": 21,
+          "source_frame": 84,
+          "actual_class": 77,
+          "expected": 77,
+          "matching_MAE": 1.3596089222307546
+        },
+        {
+          "index": 22,
+          "source_frame": 85,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 1.3465168661927922
+        },
+        {
+          "index": 23,
+          "source_frame": 86,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 1.3465072262586884
+        },
+        {
+          "index": 24,
+          "source_frame": 87,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 1.3466132655338308
+        },
+        {
+          "index": 25,
+          "source_frame": 88,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 1.3463361687045898
+        },
+        {
+          "index": 26,
+          "source_frame": 89,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 1.3463402708042085
+        },
+        {
+          "index": 27,
+          "source_frame": 90,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 1.346326528770486
+        },
+        {
+          "index": 28,
+          "source_frame": 91,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 1.3464323629406476
+        },
+        {
+          "index": 29,
+          "source_frame": 92,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 1.3463773948057574
+        },
+        {
+          "index": 30,
+          "source_frame": 93,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 1.346402827823393
+        },
+        {
+          "index": 31,
+          "source_frame": 94,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 1.346397084883927
+        },
+        {
+          "index": 32,
+          "source_frame": 95,
+          "actual_class": 85,
+          "expected": 85,
+          "matching_MAE": 1.3464701022571393
+        }
+      ]
+    }
+  },
+  "registration": "native1672x941 at0,0;1672x972 QA video adds31px caption strip only; no drawing scale/crop",
+  "exposure": {
+    "063": 6,
+    "069": 4,
+    "073": 4,
+    "077": 8,
+    "085": 11,
+    "total": 33,
+    "fps": 24,
+    "duration": 1.375
+  },
+  "root_actual_viewed": [
+    "F069_F073_F077_F085_full_actual_gray.png",
+    "F069_F073_F077_F085_complete_twoarms_grip_light_dark.png",
+    "ACTUAL_33f_decoded_transition_contact_sheet_gray.png",
+    "ACTUAL_decoded_collar_full_hands_torch_dark.png"
+  ],
+  "findings": "All four states show same accepted complete short puff and bare arms;073 own push/complete palms and light retained;077085 original whole head states on same073 body. No visible new cuff/wrist break.063 open support to069 stable support remains actual drawing change, submitted timing."
+}
