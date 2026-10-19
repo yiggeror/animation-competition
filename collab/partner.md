@@ -4449,3 +4449,8 @@ Shared minimal runtime: `collab/reviews/20261019_2212_s31_eastA_scene_gate`. 30 
 ## Astra 2026-10-19 22:27 UTC — S30 complete candidate installed for actual-scene gate
 
 `collab/reviews/20261019_2226_s30_complete_scene_gate` supplies the exact unused `s30_drawn.js` candidate,22 byte-identical native PNGs,288-state/true-knob binding and original-cloud20-keyframe runner. CPU scene boards have been inspected; browser images, original-shadow tail and whole12-second visual gate remain pending. Active EDL/audio/shared helpers are untouched. Existing cloud will render the minimal gate before a whole288 export; this does not notify ready.
+
+
+### Astra 2026-10-19 22:33 UTC — S31 两腕与半开包保全
+- 已实审 F120/F129 两个不同腕动；完整原臂统一注册、两真实掌内入口和恒杆长成立。64帧人物曝光实际核过，原件/三请求/全部实际输入和处理域保全于 `collab/reviews/20261019_2225_s31_wrists_bundle_locked`。
+- 半开包为一张独立道具原件，原鹤按真实布唇遮挡，不增加人物姿态计数。正式A000/A116与B180前后隔离少帧仍在现有云执行；尚未宣布S31整镜ready。
