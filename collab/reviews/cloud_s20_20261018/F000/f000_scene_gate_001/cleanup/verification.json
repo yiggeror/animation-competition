@@ -1,0 +1,101 @@
+{
+  "source": "semantic_repair_001_call003/S20_F000_call003_semantic_repair_candidate.png",
+  "source_sha256": "423715194ffaa08e867a0e1e3c6f6febe5de703e6c84fb2dc26d282ab6139943",
+  "final": "cleanup/S20_F000_master_clean.png",
+  "final_sha256": "55ce8658e3454dcb92e8408dda25bc678f856d82bbb10cd80ff06a01fa0ab0c8",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "neck_bbox_limit": [
+    1077,
+    190,
+    1138,
+    268
+  ],
+  "neck_interior_polygon": [
+    [
+      1081,
+      217
+    ],
+    [
+      1088,
+      212
+    ],
+    [
+      1098,
+      202
+    ],
+    [
+      1107,
+      195
+    ],
+    [
+      1112,
+      200
+    ],
+    [
+      1120,
+      203
+    ],
+    [
+      1125,
+      214
+    ],
+    [
+      1127,
+      219
+    ],
+    [
+      1115,
+      229
+    ],
+    [
+      1102,
+      240
+    ],
+    [
+      1084,
+      257
+    ],
+    [
+      1084,
+      249
+    ],
+    [
+      1089,
+      235
+    ],
+    [
+      1089,
+      227
+    ]
+  ],
+  "same_plane_reference_pixels": [
+    [
+      1110,
+      221
+    ],
+    [
+      1106,
+      229
+    ]
+  ],
+  "neck_changed_pixels": 295,
+  "neck_max_abs_luma_delta_8bit": 0.4343999999999999,
+  "neck_mean_luma_delta_8bit": 0.023585084745762593,
+  "exterior_alpha1_removed": 346,
+  "exterior_rectangle_half_open": [
+    450,
+    30,
+    1245,
+    930
+  ],
+  "alpha_changed_elsewhere": 0,
+  "RGBA_changed_outside_two_masks": 0,
+  "inside_rectangle_RGBA_changes_except_neck": 0,
+  "new_model_calls": 0,
+  "historical_model_calls": 3,
+  "new_later_states": 0,
+  "operation": "Limited luminance-preserving chroma attenuation; no smoothing or geometric change. Exterior alpha1 points only set to RGBA zero."
+}

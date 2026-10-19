@@ -1,0 +1,31 @@
+{
+  "cleanup_status": "COMPLETE / review pending",
+  "scene_status": "NOT_ACCEPTED / crane occlusion and upper crop require Astra decision",
+  "actual_images_viewed": [
+    "cleanup/S20_F000_master_clean.png",
+    "qa/neck_before_after.png",
+    "CAM20_F000.png",
+    "qa/feet_contact_crop.png",
+    "qa/crane_lamp_tall_crop.png"
+  ],
+  "visual_findings": [
+    "Neck shadow preserved; orange band lightly reduced.",
+    "Corrected per-pixel planar depth removes child left-edge sheet occlusion.",
+    "Both people keep approved shape and one common scale, height ratio 0.843607305936073.",
+    "Four shoes are visible in same-camera tall QA and contact their scene ground shadows.",
+    "T_H/T_S grip-to-skin joins visible; C_B/C_N skin endpoints are obscured by the lamp / upper crop in the official frame."
+  ],
+  "new_image_model_calls": 0,
+  "historical_model_requests": 3,
+  "historical_model_raws": 3,
+  "new_later_states": 0,
+  "scene_time_states_rendered": [
+    0
+  ],
+  "scene_frame_renders": 4,
+  "scene_render_iterations": 2,
+  "frame_images_have_been_visually_inspected": true,
+  "next_batch_reference": "next_handoff_batch_reference.md / PREPARATION ONLY, not approved generation",
+  "changed_production_files": [],
+  "changed_shared_documents": []
+}

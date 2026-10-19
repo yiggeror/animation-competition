@@ -1,0 +1,160 @@
+{
+  "master": "cleanup/S20_F000_master_clean.png",
+  "pair_registration": {
+    "base_world_m": [
+      1.13,
+      1.1,
+      0
+    ],
+    "ox": 1110,
+    "oy": 920,
+    "pixels_per_cm": 5.833333333333333,
+    "uniform_scale_only": true,
+    "mirrored": false,
+    "individual_body_warp": false,
+    "note": "Original grandmother F000 stage slot; one whole-pair billboard preserves approved relative proportions."
+  },
+  "rods": {
+    "T_H": {
+      "slope": 0.6952348690153572,
+      "intercept": -204.96025293586302,
+      "fit_columns": 81,
+      "shaft_tip_master_px": [
+        787,
+        343
+      ],
+      "grip_master_px": [
+        924,
+        437.43676603432704
+      ],
+      "master_axis_fit_RMS_px": 0.19510827165515449,
+      "initial_holder": "G.R"
+    },
+    "T_S": {
+      "slope": 0.3802619692863602,
+      "intercept": 93.45031616982774,
+      "fit_columns": 81,
+      "shaft_tip_master_px": [
+        774,
+        388
+      ],
+      "grip_master_px": [
+        924,
+        444.81237579042454
+      ],
+      "master_axis_fit_RMS_px": 0.23669144484706423,
+      "initial_holder": "G.R"
+    },
+    "C_N": {
+      "slope": 2.3087573234659216,
+      "intercept": -1827.29201356768,
+      "fit_columns": 46,
+      "shaft_tip_master_px": [
+        826,
+        79
+      ],
+      "grip_master_px": [
+        929,
+        317.5435399321609
+      ],
+      "master_axis_fit_RMS_px": 0.24690770104570706,
+      "initial_holder": "G.L"
+    },
+    "C_B": {
+      "slope": 1.6060746222633326,
+      "intercept": -1161.6763798951556,
+      "fit_columns": 46,
+      "shaft_tip_master_px": [
+        792,
+        111
+      ],
+      "grip_master_px": [
+        929,
+        330.3669441874804
+      ],
+      "master_axis_fit_RMS_px": 0.23783040221664387,
+      "initial_holder": "G.L"
+    }
+  },
+  "sole_landmarks_master_px": {
+    "G_far": [
+      1046,
+      903
+    ],
+    "G_near": [
+      1150,
+      920
+    ],
+    "X_near": [
+      581,
+      919
+    ],
+    "X_far": [
+      652,
+      905
+    ]
+  },
+  "sole_outline_points_master_px": {
+    "G_far": [
+      [
+        1008,
+        898
+      ],
+      [
+        1046,
+        903
+      ],
+      [
+        1090,
+        902
+      ]
+    ],
+    "G_near": [
+      [
+        1100,
+        913
+      ],
+      [
+        1150,
+        920
+      ],
+      [
+        1208,
+        909
+      ]
+    ],
+    "X_near": [
+      [
+        534,
+        906
+      ],
+      [
+        581,
+        919
+      ],
+      [
+        620,
+        912
+      ]
+    ],
+    "X_far": [
+      [
+        602,
+        897
+      ],
+      [
+        652,
+        905
+      ],
+      [
+        690,
+        902
+      ]
+    ]
+  },
+  "raster_height_ratio_X_to_G": 0.843607305936073,
+  "notes": [
+    "The ratio is measured from the approved art, not altered to match old code people.",
+    "Sole floor points are found by camera-ray/floor intersection; tilted billboard physical-z offsets are disclosed."
+  ]
+}

@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><title>S20 F000 isolated scene gate</title></head>
+<body style="margin:0;background:#222"><canvas id="frame"></canvas><script type="module">
+import {renderF000,geometry,report,scanPuppetRegistration} from './f000_scene.mjs';
+window.scanPuppets=scanPuppetRegistration;
+window.preflight=()=>report(geometry());
+window.renderF000=(W,H)=>renderF000(document.querySelector('canvas'),W,H,0);
+window.ready=true;
+</script></body></html>
