@@ -23,5 +23,6 @@ export async function renderFrame(ctx,t,W,H){
  const vg=ctx.createRadialGradient(960,500,450,960,540,1100);vg.addColorStop(0,'rgba(35,21,12,0)');vg.addColorStop(1,'rgba(35,21,12,.22)');ctx.fillStyle=vg;ctx.fillRect(0,0,RW,RH);ctx.restore();
 }
 
-export const FPS=24, FRAME_COUNT=144;
+export {FPS};
+export const FRAME_COUNT=144;
 export async function render(ctx,arg,W,H){return renderFrame(ctx,typeof arg==='number'?arg:(arg?.t??0),W,H);}
