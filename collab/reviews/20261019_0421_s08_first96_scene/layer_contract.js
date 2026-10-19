@@ -528,7 +528,15 @@ export const LAYER_ARTS = {
       "filename": "F078_table_match_original_pixels.png",
       "sha256": "edd8415be93d3c82ff66ac16deff3bf430e911401fcd3e72324ff0655854370b",
       "width": 1920,
-      "height": 1080
+      "height": 1080,
+      "contact": {
+        "base": 961,
+        "a": 0.2,
+        "blur": 0.6,
+        "sy": -0.07,
+        "dx": 0,
+        "dy": 0
+      }
     }
   },
   "088": {
@@ -548,7 +556,15 @@ export const LAYER_ARTS = {
       "filename": "F088_table_match_original_pixels.png",
       "sha256": "52e7396025356bd01855b71982fac18a9719bb5ebc5011f00d82a318d05827c7",
       "width": 1920,
-      "height": 1080
+      "height": 1080,
+      "contact": {
+        "base": 961,
+        "a": 0.2,
+        "blur": 0.6,
+        "sy": -0.07,
+        "dx": 0,
+        "dy": 0
+      }
     },
     "arms": {
       "filename": "F088_arms_original_pixels.png",
@@ -574,7 +590,15 @@ export const LAYER_ARTS = {
       "filename": "F091_table_match_original_pixels.png",
       "sha256": "52e7396025356bd01855b71982fac18a9719bb5ebc5011f00d82a318d05827c7",
       "width": 1920,
-      "height": 1080
+      "height": 1080,
+      "contact": {
+        "base": 961,
+        "a": 0.2,
+        "blur": 0.6,
+        "sy": -0.07,
+        "dx": 0,
+        "dy": 0
+      }
     },
     "arms": {
       "filename": "F091_arms_original_pixels.png",
@@ -600,7 +624,15 @@ export const LAYER_ARTS = {
       "filename": "F094_table_match_original_pixels.png",
       "sha256": "52e7396025356bd01855b71982fac18a9719bb5ebc5011f00d82a318d05827c7",
       "width": 1920,
-      "height": 1080
+      "height": 1080,
+      "contact": {
+        "base": 961,
+        "a": 0.2,
+        "blur": 0.6,
+        "sy": -0.07,
+        "dx": 0,
+        "dy": 0
+      }
     },
     "arms": {
       "filename": "F094_arms_original_pixels.png",
