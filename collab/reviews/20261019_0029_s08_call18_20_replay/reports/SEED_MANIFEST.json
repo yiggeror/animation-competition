@@ -1,0 +1,661 @@
+{
+  "original_rows_sha256": "d0af38d5cb4f105db96ab6c3a3daf48b00766b10048ac0e448cfa55f29ad3b3b",
+  "committed_source_reference": "67dd8e34698a4bee2e5e7dfde72bc55170210d2b (provided by coordinator; no repository read)",
+  "seed_files": [
+    {
+      "path": "F036_FINAL_LOCKED/F036_fixed_table_box_RGBA.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_FINAL_LOCKED/F036_fixed_table_box_RGBA.png",
+      "source_sha256": "cf3e3aedca8b9b681ac9e1c6cd9e6bc80eba689168ace734840e86ae7a1f5f1f",
+      "replay_sha256": "cf3e3aedca8b9b681ac9e1c6cd9e6bc80eba689168ace734840e86ae7a1f5f1f",
+      "bytes": 11567
+    },
+    {
+      "path": "F036_FINAL_LOCKED/S08_F036_grandma_match_box_RGBA.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F036_FINAL_LOCKED/S08_F036_grandma_match_box_RGBA.png",
+      "source_sha256": "6ee3d4ccf88650496ce97f8709642fb3b5a228fd0ec1a5e5fd4efc50fac42753",
+      "replay_sha256": "6ee3d4ccf88650496ce97f8709642fb3b5a228fd0ec1a5e5fd4efc50fac42753",
+      "bytes": 593375
+    },
+    {
+      "path": "F038_color_final/apply_colors.py",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_color_final/apply_colors.py",
+      "source_sha256": "7009975d8ab6fb5185f740fc4c7f6b18349bde13ff655c95def5a379a8c3836e",
+      "replay_sha256": "7009975d8ab6fb5185f740fc4c7f6b18349bde13ff655c95def5a379a8c3836e",
+      "bytes": 4803
+    },
+    {
+      "path": "F038_handoff_preparation/prepare_handoff.py",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_handoff_preparation/prepare_handoff.py",
+      "source_sha256": "97bf30b2cdef2a433fba7cfcc4efd3383424668bf6453bef74a999677212735d",
+      "replay_sha256": "97bf30b2cdef2a433fba7cfcc4efd3383424668bf6453bef74a999677212735d",
+      "bytes": 11008
+    },
+    {
+      "path": "F038_input_gate/composite_returned_crop.py",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/composite_returned_crop.py",
+      "source_sha256": "a4941ffe3bcb5b6f72ca3dfd4c2fcac4804b17d240c2e6b50c5e81e1f5122a62",
+      "replay_sha256": "a4941ffe3bcb5b6f72ca3dfd4c2fcac4804b17d240c2e6b50c5e81e1f5122a62",
+      "bytes": 3427
+    },
+    {
+      "path": "F038_input_gate/geometry/INPUT_CONTRACT.json",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/geometry/INPUT_CONTRACT.json",
+      "source_sha256": "9cf6042e3bf582732d80e06a707777888a22b94d6a53a19fd2e1e6f89280b4d4",
+      "replay_sha256": "9cf6042e3bf582732d80e06a707777888a22b94d6a53a19fd2e1e6f89280b4d4",
+      "bytes": 2679
+    },
+    {
+      "path": "F038_input_gate/geometry/RAW_UNIFORM_REGISTRATION.json",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/geometry/RAW_UNIFORM_REGISTRATION.json",
+      "source_sha256": "73715c7b2520905bfcfeb52db039c96d04aee65d395daa67e6b2bafb48957ddc",
+      "replay_sha256": "73715c7b2520905bfcfeb52db039c96d04aee65d395daa67e6b2bafb48957ddc",
+      "bytes": 351
+    },
+    {
+      "path": "F038_input_gate/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png",
+      "source_sha256": "a2bcc2d0530fda4160bed990bbc343ff86c34e5c3f6bfc8c58472630444f88ee",
+      "replay_sha256": "a2bcc2d0530fda4160bed990bbc343ff86c34e5c3f6bfc8c58472630444f88ee",
+      "bytes": 684410
+    },
+    {
+      "path": "F038_input_gate/inputs/F038_DUAL_CONTEXT_036_IDENTITY_033_ACTUAL_LAMP_SPACE.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/inputs/F038_DUAL_CONTEXT_036_IDENTITY_033_ACTUAL_LAMP_SPACE.png",
+      "source_sha256": "358529198deab372e2d0761aad40010a7f5e0271ba496b74b3ec1fd832518335",
+      "replay_sha256": "358529198deab372e2d0761aad40010a7f5e0271ba496b74b3ec1fd832518335",
+      "bytes": 1730599
+    },
+    {
+      "path": "F038_input_gate/inputs/F038_actual_edit_WHITE_MASK_1p5x.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/inputs/F038_actual_edit_WHITE_MASK_1p5x.png",
+      "source_sha256": "2ff19a32f563c0d336cc05edce02a6524942063ba1ca0a24c986b44ecc52917d",
+      "replay_sha256": "2ff19a32f563c0d336cc05edce02a6524942063ba1ca0a24c986b44ecc52917d",
+      "bytes": 5802
+    },
+    {
+      "path": "F038_input_gate/inputs/F038_actual_edit_target_1p5x_RGBA.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/inputs/F038_actual_edit_target_1p5x_RGBA.png",
+      "source_sha256": "76c87f2692abeeaeb2c93ba1168a6bf63abf510b4b7e224befeb54f06300580e",
+      "replay_sha256": "76c87f2692abeeaeb2c93ba1168a6bf63abf510b4b7e224befeb54f06300580e",
+      "bytes": 1035712
+    },
+    {
+      "path": "F038_input_gate/inputs/F038_original_underlying_far_hand_SEAT_RGBA.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/inputs/F038_original_underlying_far_hand_SEAT_RGBA.png",
+      "source_sha256": "6168e4a06d4bb88ba4659280b9c35d3d9002ab8f252392fa0819e389dda2acd0",
+      "replay_sha256": "6168e4a06d4bb88ba4659280b9c35d3d9002ab8f252392fa0819e389dda2acd0",
+      "bytes": 28205
+    },
+    {
+      "path": "F038_input_gate/inputs/F038_preplaced_body_anchor_truehands_NO_ROD_RGBA.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/inputs/F038_preplaced_body_anchor_truehands_NO_ROD_RGBA.png",
+      "source_sha256": "eefd024a44fe5ecd687a7bb1bc788768f0b10e4fad74512ea1c5d3a160a68e8b",
+      "replay_sha256": "eefd024a44fe5ecd687a7bb1bc788768f0b10e4fad74512ea1c5d3a160a68e8b",
+      "bytes": 535210
+    },
+    {
+      "path": "F038_input_gate/inputs/F038_preplaced_true_near_hand_match_RGBA.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/inputs/F038_preplaced_true_near_hand_match_RGBA.png",
+      "source_sha256": "1b3e645e8304b76f50556033e1f00322bdfe409c612bdb97a21953d63f02a8d0",
+      "replay_sha256": "1b3e645e8304b76f50556033e1f00322bdfe409c612bdb97a21953d63f02a8d0",
+      "bytes": 31396
+    },
+    {
+      "path": "F038_input_gate/inputs/F038_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/inputs/F038_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+      "source_sha256": "26fc694ccf663f07259de5962769e461c000c6bf78379ce86dcb54dc7106b282",
+      "replay_sha256": "26fc694ccf663f07259de5962769e461c000c6bf78379ce86dcb54dc7106b282",
+      "bytes": 145819
+    },
+    {
+      "path": "F038_input_gate/masks/F038_RELEASE_original_far_EXTERIORalpha0_over_new_body_NOT_SEAT.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/masks/F038_RELEASE_original_far_EXTERIORalpha0_over_new_body_NOT_SEAT.png",
+      "source_sha256": "1c65d311d3bc800de1a952a493078105139ee3ff944db1cd1137086716d0e1ba",
+      "replay_sha256": "1c65d311d3bc800de1a952a493078105139ee3ff944db1cd1137086716d0e1ba",
+      "bytes": 2425
+    },
+    {
+      "path": "F038_input_gate/masks/F038_WHITE_body_neck_head_arms_wrist_allowed.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/masks/F038_WHITE_body_neck_head_arms_wrist_allowed.png",
+      "source_sha256": "1a48e4d7c6f727b902656d7e8a98905242e03a1d8c0848deafe2b999799e013f",
+      "replay_sha256": "1a48e4d7c6f727b902656d7e8a98905242e03a1d8c0848deafe2b999799e013f",
+      "bytes": 5228
+    },
+    {
+      "path": "F038_input_gate/masks/F038_far_original_jade_AA_underlay_editable.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/masks/F038_far_original_jade_AA_underlay_editable.png",
+      "source_sha256": "70c556b39b037d5dd5a3d46948e58233b172f307bd044673ff0f52571ab68ea8",
+      "replay_sha256": "70c556b39b037d5dd5a3d46948e58233b172f307bd044673ff0f52571ab68ea8",
+      "bytes": 2304
+    },
+    {
+      "path": "F038_input_gate/masks/F038_far_original_underlying_full_hand_SEAT_footprint.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/masks/F038_far_original_underlying_full_hand_SEAT_footprint.png",
+      "source_sha256": "c0a78ef494353d8b15ac963b7075763c134f8ce96adff9c48a52e5e6fa89a412",
+      "replay_sha256": "c0a78ef494353d8b15ac963b7075763c134f8ce96adff9c48a52e5e6fa89a412",
+      "bytes": 2628
+    },
+    {
+      "path": "F038_input_gate/masks/F038_far_visible_hand_jade_TRUE_SEAT_guard.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/masks/F038_far_visible_hand_jade_TRUE_SEAT_guard.png",
+      "source_sha256": "17cf09ba6c8d511255fad846e03194d888a0f7dc800195b115e22d68d966f6b1",
+      "replay_sha256": "17cf09ba6c8d511255fad846e03194d888a0f7dc800195b115e22d68d966f6b1",
+      "bytes": 2715
+    },
+    {
+      "path": "F038_input_gate/masks/F038_fixed_table_box_guard.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/masks/F038_fixed_table_box_guard.png",
+      "source_sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "replay_sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "bytes": 2180
+    },
+    {
+      "path": "F038_input_gate/masks/F038_near_distal_palm_fingers_entire_match_guard.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/masks/F038_near_distal_palm_fingers_entire_match_guard.png",
+      "source_sha256": "b4d04c3e82d8062aeff7aacf41a108ba17b6e8dcfe05fd097508c106bedd3e30",
+      "replay_sha256": "b4d04c3e82d8062aeff7aacf41a108ba17b6e8dcfe05fd097508c106bedd3e30",
+      "bytes": 2819
+    },
+    {
+      "path": "F038_input_gate/masks/F038_near_proximal_palmroot_release.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/masks/F038_near_proximal_palmroot_release.png",
+      "source_sha256": "d31a4187e96be512e8e5c443818d57cf162c3d6102966b5eba457464cee12405",
+      "replay_sha256": "d31a4187e96be512e8e5c443818d57cf162c3d6102966b5eba457464cee12405",
+      "bytes": 2450
+    },
+    {
+      "path": "F038_input_gate/masks/F038_near_whole_transformed_hand_footprint.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/masks/F038_near_whole_transformed_hand_footprint.png",
+      "source_sha256": "99bb1fcbbc6f4fc4541a21779bfe67fc57b3bc6a0e3096fd453086bcfd187820",
+      "replay_sha256": "99bb1fcbbc6f4fc4541a21779bfe67fc57b3bc6a0e3096fd453086bcfd187820",
+      "bytes": 2826
+    },
+    {
+      "path": "F038_input_gate/register_raw.py",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_input_gate/register_raw.py",
+      "source_sha256": "565b67596d3f783910bca150687e84f167b69620c80ed9aae7ddb53e3f86dbb1",
+      "replay_sha256": "565b67596d3f783910bca150687e84f167b69620c80ed9aae7ddb53e3f86dbb1",
+      "bytes": 2080
+    },
+    {
+      "path": "F038_native_call18/FROZEN_INPUT_MANIFEST.json",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_native_call18/FROZEN_INPUT_MANIFEST.json",
+      "source_sha256": "fed6d0e475b8e356c09e3be83ce8b3fd584bb2eec42d7482088395239d511233",
+      "replay_sha256": "fed6d0e475b8e356c09e3be83ce8b3fd584bb2eec42d7482088395239d511233",
+      "bytes": 2059
+    },
+    {
+      "path": "F038_native_call18/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_native_call18/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png",
+      "source_sha256": "a2bcc2d0530fda4160bed990bbc343ff86c34e5c3f6bfc8c58472630444f88ee",
+      "replay_sha256": "a2bcc2d0530fda4160bed990bbc343ff86c34e5c3f6bfc8c58472630444f88ee",
+      "bytes": 684410
+    },
+    {
+      "path": "F038_native_call18/inputs/F038_DUAL_CONTEXT_036_IDENTITY_033_ACTUAL_LAMP_SPACE.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_native_call18/inputs/F038_DUAL_CONTEXT_036_IDENTITY_033_ACTUAL_LAMP_SPACE.png",
+      "source_sha256": "358529198deab372e2d0761aad40010a7f5e0271ba496b74b3ec1fd832518335",
+      "replay_sha256": "358529198deab372e2d0761aad40010a7f5e0271ba496b74b3ec1fd832518335",
+      "bytes": 1730599
+    },
+    {
+      "path": "F038_native_call18/inputs/F038_actual_edit_WHITE_MASK_1p5x.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_native_call18/inputs/F038_actual_edit_WHITE_MASK_1p5x.png",
+      "source_sha256": "2ff19a32f563c0d336cc05edce02a6524942063ba1ca0a24c986b44ecc52917d",
+      "replay_sha256": "2ff19a32f563c0d336cc05edce02a6524942063ba1ca0a24c986b44ecc52917d",
+      "bytes": 5802
+    },
+    {
+      "path": "F038_native_call18/inputs/F038_actual_edit_target_1p5x_RGBA.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_native_call18/inputs/F038_actual_edit_target_1p5x_RGBA.png",
+      "source_sha256": "76c87f2692abeeaeb2c93ba1168a6bf63abf510b4b7e224befeb54f06300580e",
+      "replay_sha256": "76c87f2692abeeaeb2c93ba1168a6bf63abf510b4b7e224befeb54f06300580e",
+      "bytes": 1035712
+    },
+    {
+      "path": "F038_native_call18/inputs/F038_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_native_call18/inputs/F038_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+      "source_sha256": "26fc694ccf663f07259de5962769e461c000c6bf78379ce86dcb54dc7106b282",
+      "replay_sha256": "26fc694ccf663f07259de5962769e461c000c6bf78379ce86dcb54dc7106b282",
+      "bytes": 145819
+    },
+    {
+      "path": "F038_native_call18/prompt.txt",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_native_call18/prompt.txt",
+      "source_sha256": "628dd4ec20f2705645870dc1843fbf29077c556ef30ec7bbdb796184508a9301",
+      "replay_sha256": "628dd4ec20f2705645870dc1843fbf29077c556ef30ec7bbdb796184508a9301",
+      "bytes": 6582
+    },
+    {
+      "path": "F038_native_call18/raw/F038_whole_turn_arms_native_raw.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_native_call18/raw/F038_whole_turn_arms_native_raw.png",
+      "source_sha256": "802303fe40abb5f45262e9288a6cdaa95b560ced8a8a5a129caf9eb201c0fc60",
+      "replay_sha256": "802303fe40abb5f45262e9288a6cdaa95b560ced8a8a5a129caf9eb201c0fc60",
+      "bytes": 1174565
+    },
+    {
+      "path": "F038_native_call18/request.json",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_native_call18/request.json",
+      "source_sha256": "7bf511f1c54d89378f5588c410f5b32d8eed37f25ee75da7955c29ac99e0da09",
+      "replay_sha256": "7bf511f1c54d89378f5588c410f5b32d8eed37f25ee75da7955c29ac99e0da09",
+      "bytes": 7428
+    },
+    {
+      "path": "F038_native_call18/status.json",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_native_call18/status.json",
+      "source_sha256": "17edacc7f6beb0023f1f6b863c540c9bf2776b7c699095406a71e886ed7997cc",
+      "replay_sha256": "17edacc7f6beb0023f1f6b863c540c9bf2776b7c699095406a71e886ed7997cc",
+      "bytes": 1254
+    },
+    {
+      "path": "F038_same_raw_semantic_v6/build.py",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F038_same_raw_semantic_v6/build.py",
+      "source_sha256": "189948d7b0ab74a1a0c0a621f3ceb0869f440298795c193fa471f8718816c90d",
+      "replay_sha256": "8eff7582b2e1f809d2f09bad7f0fa09861eea6554f12a30f70556ab1c489e812",
+      "bytes": 7655
+    },
+    {
+      "path": "F041_color_candidate/apply_colors.py",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_color_candidate/apply_colors.py",
+      "source_sha256": "741da561d99dee3af9e0cb2c2b29af78ad0721d0691f1da719c3123727eed04a",
+      "replay_sha256": "741da561d99dee3af9e0cb2c2b29af78ad0721d0691f1da719c3123727eed04a",
+      "bytes": 5031
+    },
+    {
+      "path": "F041_handoff_preparation/seal_handoff.py",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_handoff_preparation/seal_handoff.py",
+      "source_sha256": "f8e29b37d5f21c95e6869fef33be99b56b661c57c9d6191927708631986e1b23",
+      "replay_sha256": "f8e29b37d5f21c95e6869fef33be99b56b661c57c9d6191927708631986e1b23",
+      "bytes": 11320
+    },
+    {
+      "path": "F041_input_gate/composite_returned_crop.py",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/composite_returned_crop.py",
+      "source_sha256": "d880a9b8c39b5b063d5ec26b4ef2d615830806af1d295757f70ba0d0ee83af3a",
+      "replay_sha256": "d880a9b8c39b5b063d5ec26b4ef2d615830806af1d295757f70ba0d0ee83af3a",
+      "bytes": 3516
+    },
+    {
+      "path": "F041_input_gate/geometry/INPUT_CONTRACT.json",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/geometry/INPUT_CONTRACT.json",
+      "source_sha256": "6aebf0bb7d383c68c301eefc66ee99c5ec89dd1747e26e1e4d73364ffdcd6914",
+      "replay_sha256": "6aebf0bb7d383c68c301eefc66ee99c5ec89dd1747e26e1e4d73364ffdcd6914",
+      "bytes": 2763
+    },
+    {
+      "path": "F041_input_gate/geometry/RAW_UNIFORM_REGISTRATION.json",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/geometry/RAW_UNIFORM_REGISTRATION.json",
+      "source_sha256": "5f973249def1bc2edcf388c5b737fca2673da822092312059e7c8e9719d3c08c",
+      "replay_sha256": "5f973249def1bc2edcf388c5b737fca2673da822092312059e7c8e9719d3c08c",
+      "bytes": 351
+    },
+    {
+      "path": "F041_input_gate/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png",
+      "source_sha256": "a2bcc2d0530fda4160bed990bbc343ff86c34e5c3f6bfc8c58472630444f88ee",
+      "replay_sha256": "a2bcc2d0530fda4160bed990bbc343ff86c34e5c3f6bfc8c58472630444f88ee",
+      "bytes": 684410
+    },
+    {
+      "path": "F041_input_gate/inputs/F041_DUAL_CONTEXT_038_IDENTITY_036_ACTUAL_LAMP_SPACE.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/inputs/F041_DUAL_CONTEXT_038_IDENTITY_036_ACTUAL_LAMP_SPACE.png",
+      "source_sha256": "fbcc3d27fad768e286efa08fb3e1ae5d1c9afbe3d00d49c914566c4fbaf3229b",
+      "replay_sha256": "fbcc3d27fad768e286efa08fb3e1ae5d1c9afbe3d00d49c914566c4fbaf3229b",
+      "bytes": 1742701
+    },
+    {
+      "path": "F041_input_gate/inputs/F041_actual_edit_WHITE_MASK_1p5x.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/inputs/F041_actual_edit_WHITE_MASK_1p5x.png",
+      "source_sha256": "52146b4277ead15309be02e337b91d46d743c2186de207ec16ab92b34faa46ce",
+      "replay_sha256": "52146b4277ead15309be02e337b91d46d743c2186de207ec16ab92b34faa46ce",
+      "bytes": 5944
+    },
+    {
+      "path": "F041_input_gate/inputs/F041_actual_edit_target_1p5x_RGBA.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/inputs/F041_actual_edit_target_1p5x_RGBA.png",
+      "source_sha256": "0bd4e157efdf2ee1e3c8ee944652fc1e9670137972e9266b3f673fa42dc8aecb",
+      "replay_sha256": "0bd4e157efdf2ee1e3c8ee944652fc1e9670137972e9266b3f673fa42dc8aecb",
+      "bytes": 1030701
+    },
+    {
+      "path": "F041_input_gate/inputs/F041_original_underlying_far_hand_SEAT_RGBA.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/inputs/F041_original_underlying_far_hand_SEAT_RGBA.png",
+      "source_sha256": "6168e4a06d4bb88ba4659280b9c35d3d9002ab8f252392fa0819e389dda2acd0",
+      "replay_sha256": "6168e4a06d4bb88ba4659280b9c35d3d9002ab8f252392fa0819e389dda2acd0",
+      "bytes": 28205
+    },
+    {
+      "path": "F041_input_gate/inputs/F041_preplaced_body_anchor_truehands_NO_ROD_RGBA.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/inputs/F041_preplaced_body_anchor_truehands_NO_ROD_RGBA.png",
+      "source_sha256": "85241a49b73d8b9a6539d2edabcdb4ef5d930cafb82a4bde8448633750912fd1",
+      "replay_sha256": "85241a49b73d8b9a6539d2edabcdb4ef5d930cafb82a4bde8448633750912fd1",
+      "bytes": 534614
+    },
+    {
+      "path": "F041_input_gate/inputs/F041_preplaced_true_near_hand_match_RGBA.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/inputs/F041_preplaced_true_near_hand_match_RGBA.png",
+      "source_sha256": "b9d5ef9deef64f0a50c84404bdb2f745c76b985cadd587491c854a3d396f4db5",
+      "replay_sha256": "b9d5ef9deef64f0a50c84404bdb2f745c76b985cadd587491c854a3d396f4db5",
+      "bytes": 32135
+    },
+    {
+      "path": "F041_input_gate/inputs/F041_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/inputs/F041_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+      "source_sha256": "5d376e9bc32b7e21c41b23e27ebcac806bdfe5dd5d4b6309eec744548f578813",
+      "replay_sha256": "5d376e9bc32b7e21c41b23e27ebcac806bdfe5dd5d4b6309eec744548f578813",
+      "bytes": 148744
+    },
+    {
+      "path": "F041_input_gate/masks/F041_RELEASE_original_far_EXTERIORalpha0_over_new_body_NOT_SEAT.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/masks/F041_RELEASE_original_far_EXTERIORalpha0_over_new_body_NOT_SEAT.png",
+      "source_sha256": "a5bef39251c0a02569f8574f8b8a4ef66cdcd31a6ccc921245097b325dc3cb81",
+      "replay_sha256": "a5bef39251c0a02569f8574f8b8a4ef66cdcd31a6ccc921245097b325dc3cb81",
+      "bytes": 2129
+    },
+    {
+      "path": "F041_input_gate/masks/F041_WHITE_body_neck_head_arms_wrist_allowed.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/masks/F041_WHITE_body_neck_head_arms_wrist_allowed.png",
+      "source_sha256": "8696d8a68d2d24f713ca4e6846790d2d1b9b6da1f97755f1fdb343ff00c650d3",
+      "replay_sha256": "8696d8a68d2d24f713ca4e6846790d2d1b9b6da1f97755f1fdb343ff00c650d3",
+      "bytes": 5310
+    },
+    {
+      "path": "F041_input_gate/masks/F041_far_original_jade_AA_underlay_editable.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/masks/F041_far_original_jade_AA_underlay_editable.png",
+      "source_sha256": "d3735b62ec75a35a6ebd29add9e860404a88fcc068151c37ddf8f46e7a8c8b1f",
+      "replay_sha256": "d3735b62ec75a35a6ebd29add9e860404a88fcc068151c37ddf8f46e7a8c8b1f",
+      "bytes": 2324
+    },
+    {
+      "path": "F041_input_gate/masks/F041_far_original_underlying_full_hand_SEAT_footprint.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/masks/F041_far_original_underlying_full_hand_SEAT_footprint.png",
+      "source_sha256": "c5909abc746bf4fd6e28a8280bc0184c7d9b1a5ae9074b3c50b7f2206187ffbc",
+      "replay_sha256": "c5909abc746bf4fd6e28a8280bc0184c7d9b1a5ae9074b3c50b7f2206187ffbc",
+      "bytes": 2753
+    },
+    {
+      "path": "F041_input_gate/masks/F041_far_visible_hand_jade_TRUE_SEAT_guard.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/masks/F041_far_visible_hand_jade_TRUE_SEAT_guard.png",
+      "source_sha256": "94db45121e832e00bf5afe9ece302e541524437fc8abac39bbe2cb66ebc21a3a",
+      "replay_sha256": "94db45121e832e00bf5afe9ece302e541524437fc8abac39bbe2cb66ebc21a3a",
+      "bytes": 2769
+    },
+    {
+      "path": "F041_input_gate/masks/F041_fixed_table_box_guard.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/masks/F041_fixed_table_box_guard.png",
+      "source_sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "replay_sha256": "8575c40886ab5063ff309e1ee6b4e856932bfa550518090512d62be8618339ae",
+      "bytes": 2180
+    },
+    {
+      "path": "F041_input_gate/masks/F041_near_distal_palm_fingers_entire_match_guard.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/masks/F041_near_distal_palm_fingers_entire_match_guard.png",
+      "source_sha256": "a3a6731361bc3fc57754409b2071ae595c3339cf1b0433c411cc7d67d3b1340f",
+      "replay_sha256": "a3a6731361bc3fc57754409b2071ae595c3339cf1b0433c411cc7d67d3b1340f",
+      "bytes": 2790
+    },
+    {
+      "path": "F041_input_gate/masks/F041_near_proximal_palmroot_release.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/masks/F041_near_proximal_palmroot_release.png",
+      "source_sha256": "8fd960500fb4621e46196e51d342ef2f8efa652804692595810199bd573df8eb",
+      "replay_sha256": "8fd960500fb4621e46196e51d342ef2f8efa652804692595810199bd573df8eb",
+      "bytes": 2447
+    },
+    {
+      "path": "F041_input_gate/masks/F041_near_whole_transformed_hand_footprint.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/masks/F041_near_whole_transformed_hand_footprint.png",
+      "source_sha256": "21d04b5102c51cb8e539f5da219487ae706d39430a51afd3b76727e78d33052c",
+      "replay_sha256": "21d04b5102c51cb8e539f5da219487ae706d39430a51afd3b76727e78d33052c",
+      "bytes": 2796
+    },
+    {
+      "path": "F041_input_gate/register_raw.py",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_input_gate/register_raw.py",
+      "source_sha256": "c91e7c1e134b26e24aa64fe836001ec7b4f225a60c70ed3bb0f7181496021858",
+      "replay_sha256": "c91e7c1e134b26e24aa64fe836001ec7b4f225a60c70ed3bb0f7181496021858",
+      "bytes": 2080
+    },
+    {
+      "path": "F041_native_call19/FROZEN_INPUT_MANIFEST.json",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_native_call19/FROZEN_INPUT_MANIFEST.json",
+      "source_sha256": "7aee4e90df53c90a199532a1220dc226468d982e4437b4ffd5934a5607a3a726",
+      "replay_sha256": "7aee4e90df53c90a199532a1220dc226468d982e4437b4ffd5934a5607a3a726",
+      "bytes": 2059
+    },
+    {
+      "path": "F041_native_call19/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_native_call19/inputs/F000_original_identity_material_COLOR_ONLY_NO_HANDS.png",
+      "source_sha256": "a2bcc2d0530fda4160bed990bbc343ff86c34e5c3f6bfc8c58472630444f88ee",
+      "replay_sha256": "a2bcc2d0530fda4160bed990bbc343ff86c34e5c3f6bfc8c58472630444f88ee",
+      "bytes": 684410
+    },
+    {
+      "path": "F041_native_call19/inputs/F041_DUAL_CONTEXT_038_IDENTITY_036_ACTUAL_LAMP_SPACE.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_native_call19/inputs/F041_DUAL_CONTEXT_038_IDENTITY_036_ACTUAL_LAMP_SPACE.png",
+      "source_sha256": "fbcc3d27fad768e286efa08fb3e1ae5d1c9afbe3d00d49c914566c4fbaf3229b",
+      "replay_sha256": "fbcc3d27fad768e286efa08fb3e1ae5d1c9afbe3d00d49c914566c4fbaf3229b",
+      "bytes": 1742701
+    },
+    {
+      "path": "F041_native_call19/inputs/F041_actual_edit_WHITE_MASK_1p5x.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_native_call19/inputs/F041_actual_edit_WHITE_MASK_1p5x.png",
+      "source_sha256": "52146b4277ead15309be02e337b91d46d743c2186de207ec16ab92b34faa46ce",
+      "replay_sha256": "52146b4277ead15309be02e337b91d46d743c2186de207ec16ab92b34faa46ce",
+      "bytes": 5944
+    },
+    {
+      "path": "F041_native_call19/inputs/F041_actual_edit_target_1p5x_RGBA.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_native_call19/inputs/F041_actual_edit_target_1p5x_RGBA.png",
+      "source_sha256": "0bd4e157efdf2ee1e3c8ee944652fc1e9670137972e9266b3f673fa42dc8aecb",
+      "replay_sha256": "0bd4e157efdf2ee1e3c8ee944652fc1e9670137972e9266b3f673fa42dc8aecb",
+      "bytes": 1030701
+    },
+    {
+      "path": "F041_native_call19/inputs/F041_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_native_call19/inputs/F041_whole_chest_shoulders_neck_head_STRUCTURE_ONLY.png",
+      "source_sha256": "5d376e9bc32b7e21c41b23e27ebcac806bdfe5dd5d4b6309eec744548f578813",
+      "replay_sha256": "5d376e9bc32b7e21c41b23e27ebcac806bdfe5dd5d4b6309eec744548f578813",
+      "bytes": 148744
+    },
+    {
+      "path": "F041_native_call19/prompt.txt",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_native_call19/prompt.txt",
+      "source_sha256": "622c3add85bbb652aceef12d0912013d3d8c83b4ca05b9446dfc4972a17a5e67",
+      "replay_sha256": "622c3add85bbb652aceef12d0912013d3d8c83b4ca05b9446dfc4972a17a5e67",
+      "bytes": 6933
+    },
+    {
+      "path": "F041_native_call19/raw/F041_whole_turn_arms_native_raw.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_native_call19/raw/F041_whole_turn_arms_native_raw.png",
+      "source_sha256": "5225e628c1618f28f398c8265183abd9cc42abac7979cd01ec46215e6163bcd8",
+      "replay_sha256": "5225e628c1618f28f398c8265183abd9cc42abac7979cd01ec46215e6163bcd8",
+      "bytes": 1182908
+    },
+    {
+      "path": "F041_native_call19/request.json",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_native_call19/request.json",
+      "source_sha256": "3a6a6b216893febd3d7d66e15a9cade0d481b1e15e7cd350948638c807530edf",
+      "replay_sha256": "3a6a6b216893febd3d7d66e15a9cade0d481b1e15e7cd350948638c807530edf",
+      "bytes": 7779
+    },
+    {
+      "path": "F041_native_call19/status.json",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_native_call19/status.json",
+      "source_sha256": "208d303c64258b58f3e1104b51683f443c8d6438a7edb23f48cd1fbee1c5a53a",
+      "replay_sha256": "208d303c64258b58f3e1104b51683f443c8d6438a7edb23f48cd1fbee1c5a53a",
+      "bytes": 1254
+    },
+    {
+      "path": "F041_same_raw_semantic_v7/build.py",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F041_same_raw_semantic_v7/build.py",
+      "source_sha256": "464fbcd13b8bb37c8f3d7018fb1869470ddfa1f1963b1f8ecc6e5a3fbe03855b",
+      "replay_sha256": "dcda4fd705242e5c7241bdb00a6203d631eb1a31d6a34dd5281dfa5355bb7fb7",
+      "bytes": 8220
+    },
+    {
+      "path": "F043_handoff_preparation/seal_handoff.py",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_handoff_preparation/seal_handoff.py",
+      "source_sha256": "003b0ac96b3fe7db8aef7321ba9af676559674ced47401f2d2c26761c52e41e1",
+      "replay_sha256": "003b0ac96b3fe7db8aef7321ba9af676559674ced47401f2d2c26761c52e41e1",
+      "bytes": 6193
+    },
+    {
+      "path": "F043_input_gate/composite_old_aa_collar_v2.py",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_input_gate/composite_old_aa_collar_v2.py",
+      "source_sha256": "255795614230c1757719c8118962679bbc4f8334e4a9488a030deaf909245ad7",
+      "replay_sha256": "255795614230c1757719c8118962679bbc4f8334e4a9488a030deaf909245ad7",
+      "bytes": 3630
+    },
+    {
+      "path": "F043_input_gate/geometry/RAW_UNIFORM_REGISTRATION.json",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_input_gate/geometry/RAW_UNIFORM_REGISTRATION.json",
+      "source_sha256": "1e6c9ca1f2a1d2203a3abcdfebf58427966a332867688f92bda7d69c2ffb0511",
+      "replay_sha256": "1e6c9ca1f2a1d2203a3abcdfebf58427966a332867688f92bda7d69c2ffb0511",
+      "bytes": 488
+    },
+    {
+      "path": "F043_input_gate/inputs/F041_actual_brows_6x_RGBA.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_input_gate/inputs/F041_actual_brows_6x_RGBA.png",
+      "source_sha256": "05d685840e53aed2728100243973cf95636a3d454950e2232c1c8af943c924c4",
+      "replay_sha256": "05d685840e53aed2728100243973cf95636a3d454950e2232c1c8af943c924c4",
+      "bytes": 872222
+    },
+    {
+      "path": "F043_input_gate/inputs/F041_full_head_to_real_match_wick_CONTEXT_ONLY.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_input_gate/inputs/F041_full_head_to_real_match_wick_CONTEXT_ONLY.png",
+      "source_sha256": "e67943d8baf1868e5fc6894fbb859b06ad4a568e46d91b0e6fba84840aed1f27",
+      "replay_sha256": "e67943d8baf1868e5fc6894fbb859b06ad4a568e46d91b0e6fba84840aed1f27",
+      "bytes": 400849
+    },
+    {
+      "path": "F043_input_gate/inputs/F043_brows_WHITE_mask_6x.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_input_gate/inputs/F043_brows_WHITE_mask_6x.png",
+      "source_sha256": "3356bf2bc0253e702445df9a2fc69fe57688e0fb7a6b20bbc62e0cfaefc9bcc7",
+      "replay_sha256": "3356bf2bc0253e702445df9a2fc69fe57688e0fb7a6b20bbc62e0cfaefc9bcc7",
+      "bytes": 2109
+    },
+    {
+      "path": "F043_input_gate/masks/F043_brows_scene_WHITE_permission.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_input_gate/masks/F043_brows_scene_WHITE_permission.png",
+      "source_sha256": "30eaca6593b8aa9f96c55a584f17cac082e6820609e44dbbaa4456e6f0cc40ef",
+      "replay_sha256": "30eaca6593b8aa9f96c55a584f17cac082e6820609e44dbbaa4456e6f0cc40ef",
+      "bytes": 2477
+    },
+    {
+      "path": "F043_input_gate/masks/F043_real_glasses_eyelid_black_ink_plus1_guard.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_input_gate/masks/F043_real_glasses_eyelid_black_ink_plus1_guard.png",
+      "source_sha256": "9ff8b8ac5bbf7a5647d64c4b5f6011d3e8845e6c4f4f762ed1baf75dd16a8318",
+      "replay_sha256": "9ff8b8ac5bbf7a5647d64c4b5f6011d3e8845e6c4f4f762ed1baf75dd16a8318",
+      "bytes": 3316
+    },
+    {
+      "path": "F043_input_gate/register_raw.py",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_input_gate/register_raw.py",
+      "source_sha256": "8db5045a9990fc62aa8f06bde59c2ac1c8ee3e46be92322386042500329e83cb",
+      "replay_sha256": "8db5045a9990fc62aa8f06bde59c2ac1c8ee3e46be92322386042500329e83cb",
+      "bytes": 1990
+    },
+    {
+      "path": "F043_native_call20/FROZEN_INPUT_MANIFEST.json",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_native_call20/FROZEN_INPUT_MANIFEST.json",
+      "source_sha256": "f05133328d2d0fe614e6b75aa15572e53e256d2d41c9029ea647b70519a2707d",
+      "replay_sha256": "f05133328d2d0fe614e6b75aa15572e53e256d2d41c9029ea647b70519a2707d",
+      "bytes": 1508
+    },
+    {
+      "path": "F043_native_call20/inputs/F041_actual_brows_6x_RGBA.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_native_call20/inputs/F041_actual_brows_6x_RGBA.png",
+      "source_sha256": "05d685840e53aed2728100243973cf95636a3d454950e2232c1c8af943c924c4",
+      "replay_sha256": "05d685840e53aed2728100243973cf95636a3d454950e2232c1c8af943c924c4",
+      "bytes": 872222
+    },
+    {
+      "path": "F043_native_call20/inputs/F041_full_head_to_real_match_wick_CONTEXT_ONLY.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_native_call20/inputs/F041_full_head_to_real_match_wick_CONTEXT_ONLY.png",
+      "source_sha256": "e67943d8baf1868e5fc6894fbb859b06ad4a568e46d91b0e6fba84840aed1f27",
+      "replay_sha256": "e67943d8baf1868e5fc6894fbb859b06ad4a568e46d91b0e6fba84840aed1f27",
+      "bytes": 400849
+    },
+    {
+      "path": "F043_native_call20/inputs/F043_brows_WHITE_mask_6x.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_native_call20/inputs/F043_brows_WHITE_mask_6x.png",
+      "source_sha256": "3356bf2bc0253e702445df9a2fc69fe57688e0fb7a6b20bbc62e0cfaefc9bcc7",
+      "replay_sha256": "3356bf2bc0253e702445df9a2fc69fe57688e0fb7a6b20bbc62e0cfaefc9bcc7",
+      "bytes": 2109
+    },
+    {
+      "path": "F043_native_call20/prompt.txt",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_native_call20/prompt.txt",
+      "source_sha256": "6ef6ff43c51dcc35d641cb75c8a5428e7f48e5a350256995675755eee7598991",
+      "replay_sha256": "6ef6ff43c51dcc35d641cb75c8a5428e7f48e5a350256995675755eee7598991",
+      "bytes": 2918
+    },
+    {
+      "path": "F043_native_call20/raw/F043_brows_native_raw.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_native_call20/raw/F043_brows_native_raw.png",
+      "source_sha256": "4c2f1a987740abe88730a81971333bbeaedc4dfe54efff15bf2424564957ee7d",
+      "replay_sha256": "4c2f1a987740abe88730a81971333bbeaedc4dfe54efff15bf2424564957ee7d",
+      "bytes": 2221347
+    },
+    {
+      "path": "F043_native_call20/request.json",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_native_call20/request.json",
+      "source_sha256": "85d09a84a0e181f7b2d267e2d95028b585eb97241143409c30c82447bf4c87c2",
+      "replay_sha256": "85d09a84a0e181f7b2d267e2d95028b585eb97241143409c30c82447bf4c87c2",
+      "bytes": 3425
+    },
+    {
+      "path": "F043_native_call20/status.json",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_native_call20/status.json",
+      "source_sha256": "5ddd90367db4395d54032c581970d187d574ee36462ab65298e9ef15b14bedcf",
+      "replay_sha256": "5ddd90367db4395d54032c581970d187d574ee36462ab65298e9ef15b14bedcf",
+      "bytes": 1245
+    },
+    {
+      "path": "F043_same_raw_aa_v2/masks/PROPOSED_RELEASE_old_near_brow_lower_highlight_AA_2rows.png",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_same_raw_aa_v2/masks/PROPOSED_RELEASE_old_near_brow_lower_highlight_AA_2rows.png",
+      "source_sha256": "454b523b3fc933c2cb8fb17a26e03e42387996ddec2fa7d1d1d650b191ce764e",
+      "replay_sha256": "454b523b3fc933c2cb8fb17a26e03e42387996ddec2fa7d1d1d650b191ce764e",
+      "bytes": 2203
+    },
+    {
+      "path": "F043_same_raw_final_v3/release_old_brow_AA.py",
+      "source_local": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433/F043_same_raw_final_v3/release_old_brow_AA.py",
+      "source_sha256": "12f535cb54a46f7f30d60811fa2a002b16bb9a647d02818b7a1cbd273afe5418",
+      "replay_sha256": "12f535cb54a46f7f30d60811fa2a002b16bb9a647d02818b7a1cbd273afe5418",
+      "bytes": 3292
+    }
+  ],
+  "root_only_script_patches": [
+    {
+      "path": "F038_same_raw_semantic_v6/build.py",
+      "change": "Replace sole absolute R root literal only",
+      "original": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433",
+      "replacement": "/workspace/scratch/f060b5601755/astra_s08_recent_replay_20261019_0029/worktree",
+      "source_sha256": "189948d7b0ab74a1a0c0a621f3ceb0869f440298795c193fa471f8718816c90d",
+      "replay_copy_sha256": "8eff7582b2e1f809d2f09bad7f0fa09861eea6554f12a30f70556ab1c489e812"
+    },
+    {
+      "path": "F041_same_raw_semantic_v7/build.py",
+      "change": "Replace sole absolute R root literal only",
+      "original": "/workspace/scratch/f060b5601755/astra_s08_first_mother_20261018_1433",
+      "replacement": "/workspace/scratch/f060b5601755/astra_s08_recent_replay_20261019_0029/worktree",
+      "source_sha256": "464fbcd13b8bb37c8f3d7018fb1869470ddfa1f1963b1f8ecc6e5a3fbe03855b",
+      "replay_copy_sha256": "dcda4fd705242e5c7241bdb00a6203d631eb1a31d6a34dd5281dfa5355bb7fb7"
+    }
+  ],
+  "final_or_intermediate_candidate_images_seeded": false,
+  "upstream_F036_files_seeded": true,
+  "environment": {
+    "python": "3.12.14",
+    "Pillow": "12.3.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "expected_environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "Pillow": "12.3.0",
+    "scipy": "1.17.0"
+  }
+}

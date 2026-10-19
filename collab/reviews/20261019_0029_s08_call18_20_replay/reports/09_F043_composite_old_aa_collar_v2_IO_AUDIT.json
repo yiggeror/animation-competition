@@ -1,0 +1,100 @@
+{
+  "step": "09_F043_composite_old_aa_collar_v2",
+  "script": "F043_input_gate/composite_old_aa_collar_v2.py",
+  "arguments": [
+    "F043_native_call20/raw/F043_brows_native_raw.png",
+    "F043_same_raw_aa_v2",
+    "--scale",
+    "0.7253490452801961",
+    "--tx",
+    "-0.15658574064358735",
+    "--ty",
+    "3.0993710752053785"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 2.865,
+  "error": null,
+  "blocked_operations": [],
+  "worktree_file_operations": [
+    {
+      "action": "read",
+      "path": "F041_FINAL_LOCKED/S08_F041_grandma_match_box_RGBA.png"
+    },
+    {
+      "action": "read",
+      "path": "F043_input_gate/composite_old_aa_collar_v2.py"
+    },
+    {
+      "action": "read",
+      "path": "F043_input_gate/masks/F043_brows_scene_WHITE_permission.png"
+    },
+    {
+      "action": "read",
+      "path": "F043_input_gate/masks/F043_real_glasses_eyelid_black_ink_plus1_guard.png"
+    },
+    {
+      "action": "read",
+      "path": "F043_native_call20/raw/F043_brows_native_raw.png"
+    },
+    {
+      "action": "read",
+      "path": "F043_same_raw_aa_v2/candidates/S08_F043_brows_only_candidate_RGBA.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_aa_v2/candidates/S08_F043_brows_only_candidate_RGBA.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_aa_v2/geometry/checks.json"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_aa_v2/masks/actual_internal_feather_mask.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_aa_v2/masks/old_brows_and_AA_full_adoption.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_aa_v2/qa/F041_F043_brows_same_scale_dark.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_aa_v2/qa/F041_F043_brows_same_scale_light.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_aa_v2/qa/brows_dark.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_aa_v2/qa/brows_light.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_aa_v2/qa/head_to_wick_dark.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_aa_v2/qa/head_to_wick_light.png"
+    },
+    {
+      "action": "read",
+      "path": "F043_same_raw_aa_v2/raw/F043_native_raw.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_aa_v2/raw/F043_native_raw.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_aa_v2/registered/F043_registered_crop_6x_RGBA.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_aa_v2/registered/F043_registered_scene_patch_RGBA.png"
+    }
+  ]
+}

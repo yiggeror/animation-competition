@@ -1,0 +1,129 @@
+{
+  "step": "01_F038_composite_returned_crop",
+  "script": "F038_input_gate/composite_returned_crop.py",
+  "arguments": [
+    "F038_returned_raw_nominal",
+    "--raw",
+    "F038_native_call18/raw/F038_whole_turn_arms_native_raw.png",
+    "--scale",
+    "0.9790086218540862",
+    "--tx",
+    "7.853431107035116",
+    "--ty",
+    "23.726857547117948"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 4.685,
+  "error": null,
+  "blocked_operations": [],
+  "worktree_file_operations": [
+    {
+      "action": "read",
+      "path": "F036_FINAL_LOCKED/S08_F036_grandma_match_box_RGBA.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_input_gate/composite_returned_crop.py"
+    },
+    {
+      "action": "read",
+      "path": "F038_input_gate/inputs/F038_preplaced_body_anchor_truehands_NO_ROD_RGBA.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_input_gate/masks/F038_WHITE_body_neck_head_arms_wrist_allowed.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_input_gate/masks/F038_far_visible_hand_jade_TRUE_SEAT_guard.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_input_gate/masks/F038_fixed_table_box_guard.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_input_gate/masks/F038_near_distal_palm_fingers_entire_match_guard.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_native_call18/raw/F038_whole_turn_arms_native_raw.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_returned_raw_nominal/candidates/S08_F038_whole_turn_arms_candidate_RGBA.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/candidates/S08_F038_whole_turn_arms_candidate_RGBA.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/geometry/checks.json"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/qa/F036_F038_same_scale_dark.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/qa/F036_F038_same_scale_light.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/qa/candidate_dark.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/qa/candidate_light.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/qa/far_wrist_grip_dark.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/qa/far_wrist_grip_light.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/qa/head_neck_chest_dark.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/qa/head_neck_chest_light.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/qa/near_wrist_dark.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/qa/near_wrist_light.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/qa/whole_arms_dark.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/qa/whole_arms_light.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/qa/whole_turn_dark.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/qa/whole_turn_light.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/registered/F038_registered_crop_1p5x_RGBA.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_returned_raw_nominal/registered/F038_registered_scene_patch_RGBA.png"
+    }
+  ]
+}

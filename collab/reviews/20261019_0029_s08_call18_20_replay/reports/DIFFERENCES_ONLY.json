@@ -1,0 +1,137 @@
+{
+  "status": "PASS_NO_SUBSTANTIVE_DIFFERENCES",
+  "compared_generated_outputs": 247,
+  "byte_identical": 236,
+  "PNG_outputs": 227,
+  "all_PNG_outputs_byte_identical": true,
+  "differences": [
+    {
+      "path": "F038_FINAL_LOCKED/HAND_REUSE_CONTRACT.json",
+      "replayed_sha256": "a7b997dc3a3ebbd12977cb1c1fafb992852fd6fc4da232aba23f8ea4a6c8f9f3",
+      "bytes": 6266,
+      "expected_reference": "archived ROWS in committed source bundle",
+      "original_source_sha256": "fe84270d468302ef490fb79874281d4c12afc8750651d0f7af151853bf0ea990",
+      "expected_sha256": "fe84270d468302ef490fb79874281d4c12afc8750651d0f7af151853bf0ea990",
+      "exact_sha_match": false,
+      "original_matches_archived_row": true,
+      "difference_class": "ROOT_PATH_REBASE_ONLY"
+    },
+    {
+      "path": "F038_FINAL_LOCKED/SEALED_MANIFEST.json",
+      "replayed_sha256": "50c4fb34d26396f7981e3e1557961c93d0f141b685fc9d86b3c45a84d2beb217",
+      "bytes": 8199,
+      "expected_reference": "archived ROWS in committed source bundle",
+      "original_source_sha256": "5e81cce5daf351700895a5b8dbf7a0d94488858682f3a596b0a550be9dae9aee",
+      "expected_sha256": "5e81cce5daf351700895a5b8dbf7a0d94488858682f3a596b0a550be9dae9aee",
+      "exact_sha_match": false,
+      "original_matches_archived_row": true,
+      "difference_class": "ROOT_PATH_AND_REFERENCED_METADATA_HASH_AND_SIZE_REBASE_ONLY",
+      "normalized_json_differences": [],
+      "difference_explanation": "All remaining differences are manifest references to independently verified root-path-only JSON files, including their changed SHA256 and byte length."
+    },
+    {
+      "path": "F038_color_final/geometry/color_masks_and_checks.json",
+      "replayed_sha256": "3ce8cd2a9fa865d139c45e7a5ddca25f73c6fbdf25d9147128ec334b6da9334b",
+      "bytes": 1741,
+      "expected_reference": "archived ROWS in committed source bundle",
+      "original_source_sha256": "93343c183c9342c6f7ac32cae929574e0179f50b7a51d204516ce891e598a38b",
+      "expected_sha256": "93343c183c9342c6f7ac32cae929574e0179f50b7a51d204516ce891e598a38b",
+      "exact_sha_match": false,
+      "original_matches_archived_row": true,
+      "difference_class": "ROOT_PATH_REBASE_ONLY"
+    },
+    {
+      "path": "F038_same_raw_semantic_v6/geometry/checks.json",
+      "replayed_sha256": "54d94ada493480052875d51408d363b3dc95ba030f5a285b1b521598a5a9f044",
+      "bytes": 494,
+      "expected_reference": "archived ROWS in committed source bundle",
+      "original_source_sha256": "875e05070849eab6b5ee43b94c1a3ec05606703d4dcd3859b1a305dac01ac84e",
+      "expected_sha256": "875e05070849eab6b5ee43b94c1a3ec05606703d4dcd3859b1a305dac01ac84e",
+      "exact_sha_match": false,
+      "original_matches_archived_row": true,
+      "difference_class": "ROOT_PATH_REBASE_ONLY"
+    },
+    {
+      "path": "F041_FINAL_LOCKED/HAND_REUSE_CONTRACT.json",
+      "replayed_sha256": "6bfd4907726b90887d54738b833c5c434b6eaeff5ebc8d1e2c551588ae6743e8",
+      "bytes": 6351,
+      "expected_reference": "archived ROWS in committed source bundle",
+      "original_source_sha256": "716462f1bd88f8d43edeccfc3aab6e36134059dc608457454cb547e788e41c6f",
+      "expected_sha256": "716462f1bd88f8d43edeccfc3aab6e36134059dc608457454cb547e788e41c6f",
+      "exact_sha_match": false,
+      "original_matches_archived_row": true,
+      "difference_class": "ROOT_PATH_REBASE_ONLY"
+    },
+    {
+      "path": "F041_FINAL_LOCKED/SEALED_MANIFEST.json",
+      "replayed_sha256": "03c34d58c01992891f9a72f7483f6591bc32441947756b3cf1d7598dd98e0143",
+      "bytes": 8549,
+      "expected_reference": "archived ROWS in committed source bundle",
+      "original_source_sha256": "07ab9409f20f8bb95a23bf53d1701d8b6dcbd13985ab76404ed58f6a52ccbc65",
+      "expected_sha256": "07ab9409f20f8bb95a23bf53d1701d8b6dcbd13985ab76404ed58f6a52ccbc65",
+      "exact_sha_match": false,
+      "original_matches_archived_row": true,
+      "difference_class": "ROOT_PATH_AND_REFERENCED_METADATA_HASH_AND_SIZE_REBASE_ONLY",
+      "normalized_json_differences": [],
+      "difference_explanation": "All remaining differences are manifest references to independently verified root-path-only JSON files, including their changed SHA256 and byte length."
+    },
+    {
+      "path": "F041_color_candidate/geometry/color_masks_and_checks.json",
+      "replayed_sha256": "8b8d8529fe51b79410839a4bf96770838fee9de9f43778deb2d1fb8c02b3b70a",
+      "bytes": 2131,
+      "expected_reference": "archived ROWS in committed source bundle",
+      "original_source_sha256": "bb554045844cf7c02cc2c93e9aaf2cc27dd58d5ae68ef110b1249016a103551c",
+      "expected_sha256": "bb554045844cf7c02cc2c93e9aaf2cc27dd58d5ae68ef110b1249016a103551c",
+      "exact_sha_match": false,
+      "original_matches_archived_row": true,
+      "difference_class": "ROOT_PATH_REBASE_ONLY"
+    },
+    {
+      "path": "F041_same_raw_semantic_v7/geometry/checks.json",
+      "replayed_sha256": "3e0708c5fb5affa28a217f5dc1e1f17affc6612e5671897fe4b11b1f3ab4eb7b",
+      "bytes": 493,
+      "expected_reference": "archived ROWS in committed source bundle",
+      "original_source_sha256": "95b8c97776498391881c441eee874ec5108c4e67e13ee8e4326895c3676eafb1",
+      "expected_sha256": "95b8c97776498391881c441eee874ec5108c4e67e13ee8e4326895c3676eafb1",
+      "exact_sha_match": false,
+      "original_matches_archived_row": true,
+      "difference_class": "ROOT_PATH_REBASE_ONLY"
+    },
+    {
+      "path": "F043_FINAL_LOCKED/HAND_REUSE_CONTRACT.json",
+      "replayed_sha256": "fee6edf77d91dea5f1808285157177326b6b1d2ee2da5664521e26b33f390960",
+      "bytes": 6047,
+      "expected_reference": "archived ROWS in committed source bundle",
+      "original_source_sha256": "79a2d42ec3d98734c68a692ac2b23abc38da27b2baa53a26ceb62fc06a5a924c",
+      "expected_sha256": "79a2d42ec3d98734c68a692ac2b23abc38da27b2baa53a26ceb62fc06a5a924c",
+      "exact_sha_match": false,
+      "original_matches_archived_row": true,
+      "difference_class": "ROOT_PATH_REBASE_ONLY"
+    },
+    {
+      "path": "F043_FINAL_LOCKED/SEALED_MANIFEST.json",
+      "replayed_sha256": "9b4e5814b0577497caefde27a27e4213f246d378b4ebaa390ef99e8e8a649ea2",
+      "bytes": 8471,
+      "expected_reference": "archived ROWS in committed source bundle",
+      "original_source_sha256": "7e24097f1a4bf7a20932ca6cfa380662025cffcc9a4e7de276131e02b42fbe62",
+      "expected_sha256": "7e24097f1a4bf7a20932ca6cfa380662025cffcc9a4e7de276131e02b42fbe62",
+      "exact_sha_match": false,
+      "original_matches_archived_row": true,
+      "difference_class": "ROOT_PATH_AND_REFERENCED_METADATA_HASH_AND_SIZE_REBASE_ONLY",
+      "normalized_json_differences": [],
+      "difference_explanation": "All remaining differences are manifest references to independently verified root-path-only JSON files, including their changed SHA256 and byte length."
+    },
+    {
+      "path": "F043_same_raw_final_v3/geometry/FINAL_CHECKS.json",
+      "replayed_sha256": "f532400696be26621cbcbc58bce2a9dc0d382f67ee79e6c4191ddf56e70ce1a8",
+      "bytes": 1306,
+      "expected_reference": "archived ROWS in committed source bundle",
+      "original_source_sha256": "851b758dbb9491379110babc5a97761a1a2334a32bf164231e3fe3eef93afdb1",
+      "expected_sha256": "851b758dbb9491379110babc5a97761a1a2334a32bf164231e3fe3eef93afdb1",
+      "exact_sha_match": false,
+      "original_matches_archived_row": true,
+      "difference_class": "ROOT_PATH_REBASE_ONLY"
+    }
+  ],
+  "classification_rule": "A root-path-only difference is proven by parsing JSON and replacing the isolated worktree root with the original root. Sealed manifest references are normalized only for JSON artifacts independently proven root-path-only; their recorded SHA256 and byte length naturally differ. No pixel difference was suppressed."
+}

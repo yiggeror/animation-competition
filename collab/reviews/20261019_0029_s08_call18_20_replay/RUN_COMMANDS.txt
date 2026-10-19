@@ -1,0 +1,15 @@
+These are the exact guarded executions performed after clean seed materialization. Do not rerun against the existing generated output tree; F043 deliberately refuses raw overwrite. Prepare a new empty replay root first.
+
+python -B run_one_guarded.py 01_F038_composite_returned_crop F038_input_gate/composite_returned_crop.py F038_returned_raw_nominal --raw F038_native_call18/raw/F038_whole_turn_arms_native_raw.png --scale 0.9790086218540862 --tx 7.853431107035116 --ty 23.726857547117948
+python -B run_one_guarded.py 02_F038_build F038_same_raw_semantic_v6/build.py
+python -B run_one_guarded.py 03_F038_apply_colors F038_color_final/apply_colors.py
+python -B run_one_guarded.py 04_F038_prepare_handoff F038_handoff_preparation/prepare_handoff.py
+python -B run_one_guarded.py 05_F041_composite_returned_crop F041_input_gate/composite_returned_crop.py F041_returned_raw_nominal --raw F041_native_call19/raw/F041_whole_turn_arms_native_raw.png --scale 0.9866407607889593 --tx 4.870565263130242 --ty 19.031297248532635
+python -B run_one_guarded.py 06_F041_build F041_same_raw_semantic_v7/build.py
+python -B run_one_guarded.py 07_F041_apply_colors F041_color_candidate/apply_colors.py
+python -B run_one_guarded.py 08_F041_seal_handoff F041_handoff_preparation/seal_handoff.py
+python -B run_one_guarded.py 09_F043_composite_old_aa_collar_v2 F043_input_gate/composite_old_aa_collar_v2.py F043_native_call20/raw/F043_brows_native_raw.png F043_same_raw_aa_v2 --scale 0.7253490452801961 --tx -0.15658574064358735 --ty 3.0993710752053785
+python -B run_one_guarded.py 10_F043_release_old_brow_AA F043_same_raw_final_v3/release_old_brow_AA.py
+python -B run_one_guarded.py 11_F043_seal_handoff F043_handoff_preparation/seal_handoff.py
+
+python compare_replay.py

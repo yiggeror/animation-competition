@@ -1,0 +1,295 @@
+{
+  "step": "04_F038_prepare_handoff",
+  "script": "F038_handoff_preparation/prepare_handoff.py",
+  "arguments": [],
+  "exit_code": 0,
+  "elapsed_seconds": 3.116,
+  "error": null,
+  "blocked_operations": [],
+  "worktree_file_operations": [
+    {
+      "action": "read",
+      "path": "F036_FINAL_LOCKED/F036_fixed_table_box_RGBA.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_FINAL_LOCKED/F038_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_RGBA.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/F038_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_RGBA.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_FINAL_LOCKED/F038_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/F038_complete_underlying_far_hand_jade_AND_TRANSPARENT_SEAT_footprint.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_FINAL_LOCKED/F038_far_exterior_alpha0_occupied_by_actual_near_forearm_NOT_SEAT.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/F038_far_exterior_alpha0_occupied_by_actual_near_forearm_NOT_SEAT.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_FINAL_LOCKED/F038_far_hand_jade_SEAT_hard_guard.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/F038_far_hand_jade_SEAT_hard_guard.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_FINAL_LOCKED/F038_far_historical_complete_jadeAA150.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/F038_far_historical_complete_jadeAA150.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_FINAL_LOCKED/F038_far_jadeAA85_visible_this_frame_only.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/F038_far_jadeAA85_visible_this_frame_only.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_FINAL_LOCKED/F038_far_original_jade_AA_requires_same_raw_skin_underlay.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/F038_far_original_jade_AA_requires_same_raw_skin_underlay.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_FINAL_LOCKED/F038_fixed_table_box_RGBA.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/F038_fixed_table_box_RGBA.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_FINAL_LOCKED/F038_fixed_table_box_footprint.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/F038_fixed_table_box_footprint.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_FINAL_LOCKED/F038_native_foreground_proximal_collar_adopt.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/F038_native_foreground_proximal_collar_adopt.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_FINAL_LOCKED/F038_near_distal_hard_guard_RGBA.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/F038_near_distal_hard_guard_RGBA.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_FINAL_LOCKED/F038_near_distal_hard_guard_footprint.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/F038_near_distal_hard_guard_footprint.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_FINAL_LOCKED/F038_true_near_hand_match_INDEPENDENT_FOREGROUND_RGBA.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/F038_true_near_hand_match_INDEPENDENT_FOREGROUND_RGBA.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_FINAL_LOCKED/F038_true_near_hand_match_INDEPENDENT_FOREGROUND_footprint.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/F038_true_near_hand_match_INDEPENDENT_FOREGROUND_footprint.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_FINAL_LOCKED/HAND_REUSE_CONTRACT.json"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/HAND_REUSE_CONTRACT.json"
+    },
+    {
+      "action": "read",
+      "path": "F038_FINAL_LOCKED/S08_F038_grandma_match_box_RGBA.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/S08_F038_grandma_match_box_RGBA.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_FINAL_LOCKED/SEALED_MANIFEST.json"
+    },
+    {
+      "action": "read",
+      "path": "F038_LAYER_PARTITION/LAYER_VALIDATION.json"
+    },
+    {
+      "action": "write",
+      "path": "F038_LAYER_PARTITION/LAYER_VALIDATION.json"
+    },
+    {
+      "action": "read",
+      "path": "F038_LAYER_PARTITION/frames/F038_body_behind_original_pixels.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_LAYER_PARTITION/frames/F038_body_behind_original_pixels.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_LAYER_PARTITION/frames/F038_forearms_elbows_original_pixels.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_LAYER_PARTITION/frames/F038_forearms_elbows_original_pixels.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_LAYER_PARTITION/frames/F038_table_box_original_pixels.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_LAYER_PARTITION/frames/F038_table_box_original_pixels.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_LAYER_PARTITION/layer_contract.js"
+    },
+    {
+      "action": "write",
+      "path": "F038_LAYER_PARTITION/layer_contract.js"
+    },
+    {
+      "action": "read",
+      "path": "F038_LAYER_PARTITION/masks/F038_arms_binary.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_LAYER_PARTITION/masks/F038_arms_binary.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_LAYER_PARTITION/masks/F038_body_binary.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_LAYER_PARTITION/masks/F038_body_binary.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_LAYER_PARTITION/masks/F038_table_box_binary.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_LAYER_PARTITION/masks/F038_table_box_binary.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_LAYER_PARTITION/qa/F038_layer_TOPOLOGY_ONLY_NOT_CANVAS_dark.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_LAYER_PARTITION/qa/F038_layer_TOPOLOGY_ONLY_NOT_CANVAS_dark.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_LAYER_PARTITION/qa/F038_layer_TOPOLOGY_ONLY_NOT_CANVAS_light.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_LAYER_PARTITION/qa/F038_layer_TOPOLOGY_ONLY_NOT_CANVAS_light.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_LAYER_PARTITION/qa/F038_threeway_overlay_dark.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_LAYER_PARTITION/qa/F038_threeway_overlay_dark.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_LAYER_PARTITION/qa/F038_threeway_overlay_light.png"
+    },
+    {
+      "action": "write",
+      "path": "F038_LAYER_PARTITION/qa/F038_threeway_overlay_light.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_color_final/candidates/S08_F038_whole_turn_same_raw_final_color_RGBA.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_handoff_preparation/prepare_handoff.py"
+    },
+    {
+      "action": "read",
+      "path": "F038_input_gate/inputs/F038_original_underlying_far_hand_SEAT_RGBA.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_input_gate/inputs/F038_preplaced_true_near_hand_match_RGBA.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_input_gate/masks/F038_RELEASE_original_far_EXTERIORalpha0_over_new_body_NOT_SEAT.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_input_gate/masks/F038_far_original_jade_AA_underlay_editable.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_input_gate/masks/F038_far_original_underlying_full_hand_SEAT_footprint.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_input_gate/masks/F038_fixed_table_box_guard.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_input_gate/masks/F038_near_distal_palm_fingers_entire_match_guard.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_input_gate/masks/F038_near_proximal_palmroot_release.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_same_raw_semantic_v6/masks/ACTUAL_raw_front_forearm_contour.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_same_raw_semantic_v6/masks/TRUE_jade_AA_over_collar.png"
+    },
+    {
+      "action": "read",
+      "path": "F038_same_raw_semantic_v6/masks/TRUE_transparent_low_rod_seat.png"
+    }
+  ]
+}

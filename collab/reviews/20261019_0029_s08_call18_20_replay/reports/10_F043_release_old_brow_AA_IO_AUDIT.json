@@ -1,0 +1,95 @@
+{
+  "step": "10_F043_release_old_brow_AA",
+  "script": "F043_same_raw_final_v3/release_old_brow_AA.py",
+  "arguments": [],
+  "exit_code": 0,
+  "elapsed_seconds": 1.617,
+  "error": null,
+  "blocked_operations": [],
+  "worktree_file_operations": [
+    {
+      "action": "read",
+      "path": "F041_FINAL_LOCKED/S08_F041_grandma_match_box_RGBA.png"
+    },
+    {
+      "action": "read",
+      "path": "F043_input_gate/masks/F043_brows_scene_WHITE_permission.png"
+    },
+    {
+      "action": "read",
+      "path": "F043_input_gate/masks/F043_real_glasses_eyelid_black_ink_plus1_guard.png"
+    },
+    {
+      "action": "read",
+      "path": "F043_same_raw_aa_v2/candidates/S08_F043_brows_only_candidate_RGBA.png"
+    },
+    {
+      "action": "read",
+      "path": "F043_same_raw_aa_v2/masks/PROPOSED_RELEASE_old_near_brow_lower_highlight_AA_2rows.png"
+    },
+    {
+      "action": "read",
+      "path": "F043_same_raw_aa_v2/registered/F043_registered_scene_patch_RGBA.png"
+    },
+    {
+      "action": "read",
+      "path": "F043_same_raw_final_v3/candidates/S08_F043_brows_only_candidate_RGBA.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_final_v3/candidates/S08_F043_brows_only_candidate_RGBA.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_final_v3/geometry/FINAL_CHECKS.json"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_final_v3/masks/FINAL_2428_semantic_permission_union.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_final_v3/masks/NEW_122_old_near_brow_lower_AA_release.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_final_v3/masks/OLD_allowed_boundary_full_raw_take.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_final_v3/masks/far_common_actual_forehead_skin_measurement.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_final_v3/masks/near_common_actual_forehead_skin_measurement.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_final_v3/qa/F041_F043_brows_same_scale_dark.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_final_v3/qa/F041_F043_brows_same_scale_light.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_final_v3/qa/brows_dark.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_final_v3/qa/brows_light.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_final_v3/qa/head_to_wick_dark.png"
+    },
+    {
+      "action": "write",
+      "path": "F043_same_raw_final_v3/qa/head_to_wick_light.png"
+    },
+    {
+      "action": "read",
+      "path": "F043_same_raw_final_v3/release_old_brow_AA.py"
+    }
+  ]
+}
