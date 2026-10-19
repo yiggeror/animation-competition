@@ -1,0 +1,13 @@
+[
+  "ffmpeg",
+  "-y",
+  "-loglevel",
+  "error",
+  "-i",
+  "/workspace/animation-competition-s15/collab/reviews/cloud_s13_20261018/render_assist/s15_scene192/S15_scene192_1920x1080_24fps.mp4",
+  "-vsync",
+  "0",
+  "-start_number",
+  "0",
+  "build/S15_scene192_decoded/%05d.png"
+]

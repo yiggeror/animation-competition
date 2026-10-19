@@ -1,0 +1,44 @@
+{
+  "status": "ACTUAL192_ENCODE_AND_SOURCE_DECODE_PASS_VISUAL_REVIEW_SEPARATE",
+  "fixed_commit": "5271da8b1870bf4523cd7bb4eaf101f77147d6d8",
+  "entry_SHA256": "f3b6439da5e152961dce1c81bb615b86bc0a8ef06e3d8c37d52cab0d339360f0",
+  "MP4_SHA256": "c0e2a0cd0ba9ebd6ed1f6829df558f4e452e680a33007126f9c57e492e76ffac",
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": "24/1",
+  "frames": 192,
+  "duration_seconds": 8,
+  "audio_streams": 0,
+  "full_scene_render_runs": 1,
+  "full_scene_encode_runs": 1,
+  "preflight_captured_frames": [
+    0,
+    132,
+    144
+  ],
+  "preflight_vs_full_Canvas_byte_equal_by_frame": {
+    "0": true,
+    "132": true,
+    "144": true
+  },
+  "actual_decoded_keyframes": [
+    0,
+    72,
+    108,
+    112,
+    116,
+    120,
+    124,
+    132,
+    144,
+    191
+  ],
+  "max_encoded_RGB_MSE": 8.841352462768555,
+  "fixed24_source_paths_postchecked": true,
+  "all_loaded_runtime_files_fixed_Git_bytes": true,
+  "whole_character_registration_camera_sheet_lights_unchanged": true,
+  "director_accepted_foreground_shoes_stool_crop": true,
+  "imagegen_calls": 0
+}

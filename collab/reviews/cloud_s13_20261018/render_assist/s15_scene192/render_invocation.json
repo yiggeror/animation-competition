@@ -1,0 +1,29 @@
+{
+  "fixed_commit": "5271da8b1870bf4523cd7bb4eaf101f77147d6d8",
+  "full_scene_command": [
+    "node",
+    "tools/js/frames.cjs",
+    "collab/reviews/20261019_0434_s15_drawn_candidate/s15_drawn.js",
+    "build/S15_scene192",
+    "--fps",
+    "24",
+    "--w",
+    "1920",
+    "--h",
+    "1080",
+    "--workers",
+    "2",
+    "--mp4",
+    "build/S15_scene192.mp4"
+  ],
+  "NODE_OPTIONS": "--require ./collab/reviews/cloud_s13_20261018/render_assist/s15_scene192/tools/network_audit_chromium.cjs",
+  "scene_source_modified": false,
+  "director_acceptance": "Keep original upward sheet camera and whole-person registration; left-foreground feet/stool crop accepted. Review dark-face/unfold-to-lean readability.",
+  "full_scene_render_runs": 1,
+  "full_scene_encode_runs": 1,
+  "preflight_captured_frames": [
+    0,
+    132,
+    144
+  ]
+}
