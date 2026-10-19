@@ -1,0 +1,393 @@
+{
+  "status": "FIRST034_040_ONLY_INPUT_CANDIDATES_0_IMAGEGEN",
+  "mother_commit": "d7ab7768e0d99e92a02de321a466d47ec4ca5788",
+  "mother_native_SHA256": "ace73556d7e6527c6e13779219a66f541f497078f9d05ed691612345042ef9b1",
+  "registration": {
+    "scale": 0.7,
+    "translation": [
+      275,
+      112
+    ],
+    "native_canvas": [
+      1024,
+      1536
+    ]
+  },
+  "source030_lock": {
+    "native_SHA256": "ace73556d7e6527c6e13779219a66f541f497078f9d05ed691612345042ef9b1",
+    "Canvas_SHA256": "95f8e3bf3f15c2c6515bd8647fcf289613769b22cf9c228fdfb858d875b83ae2",
+    "accepted_lower_air_pixel_centres": 3,
+    "accepted_pixel_square_boundary_air": 2
+  },
+  "actual_rig": {
+    "scale": 1.35,
+    "neck3_attach_local_mm": [
+      10,
+      0
+    ],
+    "body_attach_local_mm": [
+      -75,
+      6
+    ],
+    "actual_neck3_point_local_mm": [
+      245.538947598318,
+      77.022813106513
+    ],
+    "actual_body_point_local_mm": [
+      -75,
+      6
+    ],
+    "camera_yaw_pitch": [
+      15,
+      12
+    ],
+    "K_scene_pixels_per_mm": 0.72,
+    "crane_root_scene": [
+      1335.0,
+      775.0
+    ],
+    "tilt": 55,
+    "physical_upper_rod_length_mm": 801.5241112413509,
+    "initial_upper_free_scene": [
+      934.3124976761612,
+      785.1297395769899
+    ],
+    "initial_upper_hinge_scene": [
+      1497.5314905035327,
+      714.6642052957592
+    ],
+    "source_upper_view_depth_mm": 144.7401995137908,
+    "lower_body_rod_scene": [
+      [
+        951.2616943917175,
+        798.9063357461391
+      ],
+      [
+        1282.1986905564156,
+        773.9467944476169
+      ]
+    ],
+    "rod_line_width_scene": 7,
+    "rod_source_calibration": "Current existing prop vector converted into actual makeCrane units only; oldH human/B coordinates and.75 registration are not used. Actual neck3 point is independently re-read from current runtime rig below.",
+    "motion": "Rotate the upper rod about actual fixed neck3 attachment around view depth axis; physical and projected lengths constant, crane/cloth/root fixed. Hand grip at fixed fraction rotates with it, no slip."
+  },
+  "source_actual_joint_estimates": {
+    "near": {
+      "S": [
+        495.0,
+        725.0
+      ],
+      "E": [
+        550.0,
+        950.0
+      ],
+      "W": [
+        735.0,
+        998.0
+      ],
+      "palm_index_MCP_candidate": [
+        820,
+        986
+      ],
+      "thumb_lower_digit_volume_anchor": [
+        823.0,
+        1042.0
+      ],
+      "note": "Current near hand has occlusion/ambiguous hidden digit roots. New anatomical right thumb/index/little must be explicitly redrawn later; these are source-material/volume estimates, not measured hidden bones."
+    },
+    "far": {
+      "S": [
+        645.0,
+        724.0
+      ],
+      "E": [
+        713.0,
+        887.0
+      ],
+      "W": [
+        898.0,
+        927.0
+      ]
+    },
+    "uncertainty_native": {
+      "hidden_shoulder": 20,
+      "elbow": 6,
+      "wrist": 6,
+      "hidden_MCP": 8
+    }
+  },
+  "human_bone_reference": {
+    "upper_3D_proxy_native_equivalent": 252.0,
+    "forearm_3D_proxy_native_equivalent": 196.0,
+    "status": "Depth-aware source-image construction proxies, not measured real3D bones. Source2D measurements and uncertainty retained; no oldB/.75 human rig inherited. A reference is not anatomical output proof."
+  },
+  "plate": {
+    "native_crop": [
+      320,
+      580,
+      1120,
+      1180
+    ],
+    "uniform_scale": 1.12,
+    "padding": [
+      64,
+      176,
+      64,
+      176
+    ],
+    "output": [
+      1024,
+      1024
+    ],
+    "native_to_plate": [
+      [
+        1.12,
+        0,
+        -294.4
+      ],
+      [
+        0,
+        1.12,
+        -473.6
+      ]
+    ],
+    "native_right_edge_in_plate": 852.48,
+    "outside_native_guard": "x1024..1120 is transparent diagnostic guard only. Actual future pixels must fit original x<1024, no palm shrink or cropped finger."
+  },
+  "states": [
+    {
+      "frame": 34,
+      "hold": 6,
+      "last_frame": 39,
+      "status": "CANDIDATE_INPUT_GATE_NOT_LOCKED",
+      "gesture": "LEFT_HANDLE_SEPARATES_RIGHT_EMPTY_UNCHANGED",
+      "upper_handle_lift_scene": 28,
+      "upper_free_end_scene": [
+        931.5123178589768,
+        757.1297395769899
+      ],
+      "upper_hinge_neck3_scene": [
+        1497.5314905035327,
+        714.6642052957592
+      ],
+      "upper_free_end_world_mm": [
+        -553.6284920785675,
+        35.495518213488666,
+        99.04796554242412
+      ],
+      "upper_rod_length_mm": 801.5241112413507,
+      "upper_projection_length_scene": 567.6099236297918,
+      "left_grip_scene": [
+        955.3175883454596,
+        755.3437514359971
+      ],
+      "left_grip_fraction_hinge_to_free_end": 0.9579426428697463,
+      "left_hand_native_rigid_matrix": [
+        [
+          0.9987711240815346,
+          -0.0495604852771639,
+          44.81524283129443
+        ],
+        [
+          0.0495604852771639,
+          0.9987711240815346,
+          -85.49807772401243
+        ]
+      ],
+      "far_arm_actual_native_estimates": {
+        "S": [
+          645.0,
+          724.0
+        ],
+        "E": [
+          711.4009693137137,
+          870.6998939557448
+        ],
+        "W": [
+          895.7691424045815,
+          884.8680700784633
+        ],
+        "source_3D_depth_proxy_E_W": [
+          193.84027545268424,
+          128.85074139918117
+        ]
+      },
+      "near_arm_actual_native_estimates": {
+        "S": [
+          495.0,
+          725.0
+        ],
+        "E": [
+          550.0,
+          950.0
+        ],
+        "W": [
+          735.0,
+          998.0
+        ],
+        "source_3D_depth_proxy_E_W": [
+          -99.26731586982696,
+          -55.827702611880014
+        ]
+      },
+      "near_hand_native_rigid_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "near_hand_source_scale": 1.0,
+      "near_hand_source_mirrored": false,
+      "right_grip_candidate_scene": [
+        970.0,
+        797.4930772766585
+      ],
+      "right_grip_candidate_native": [
+        992.8571428571429,
+        979.2758246809408
+      ],
+      "right_thumb_nominal_surface_native": [
+        993.2331789957764,
+        984.2616643115789
+      ],
+      "right_thumb_pad_nominal_centre_native": [
+        993.6844223621365,
+        990.2446718683447
+      ],
+      "right_contact_expected": false,
+      "crane_root_scene": [
+        1335,
+        775
+      ],
+      "crane_plane_tilt": 55,
+      "crane_pose": "UNCHANGED_ACTUAL_A_FOLDED_CLOTH_SUPPORTED",
+      "both_body_knees_shins_shoes_support": "UNCHANGED_LOW_KNEELING",
+      "no_rise_no_lift_no110": true,
+      "F064_drawing_policy": null
+    },
+    {
+      "frame": 40,
+      "hold": 8,
+      "last_frame": 47,
+      "status": "CANDIDATE_INPUT_GATE_NOT_LOCKED",
+      "gesture": "LEFT_HANDLE_AT_SEPARATION_RIGHT_EMPTY_START",
+      "upper_handle_lift_scene": 56,
+      "upper_free_end_scene": [
+        930.1059238245394,
+        729.1297395769899
+      ],
+      "upper_hinge_neck3_scene": [
+        1497.5314905035327,
+        714.6642052957592
+      ],
+      "upper_free_end_world_mm": [
+        -553.422589539505,
+        73.53459157535889,
+        107.36347272295657
+      ],
+      "upper_rod_length_mm": 801.5241112413507,
+      "upper_projection_length_scene": 567.6099236297919,
+      "left_grip_scene": [
+        953.9703435271945,
+        728.5213574356443
+      ],
+      "left_grip_fraction_hinge_to_free_end": 0.9579426428697463,
+      "left_hand_native_rigid_matrix": [
+        [
+          0.9951057091900055,
+          -0.09881612994575377,
+          93.62338437581343
+        ],
+        [
+          0.09881612994575377,
+          0.9951057091900055,
+          -168.3660239236125
+        ]
+      ],
+      "far_arm_actual_native_estimates": {
+        "S": [
+          645.0,
+          724.0
+        ],
+        "E": [
+          715.5165546552963,
+          851.3755570720141
+        ],
+        "W": [
+          895.6257587687246,
+          842.8338531868095
+        ],
+        "source_3D_depth_proxy_E_W": [
+          205.68637042872012,
+          128.85074139918117
+        ]
+      },
+      "near_arm_actual_native_estimates": {
+        "S": [
+          504.8,
+          733.4
+        ],
+        "E": [
+          593.757548321828,
+          948.4647430674463
+        ],
+        "W": [
+          781.8116421497665,
+          985.7029069439485
+        ],
+        "source_3D_depth_proxy_E_W": [
+          -96.63183163897361,
+          -55.827702611880014
+        ]
+      },
+      "near_hand_native_rigid_matrix": [
+        [
+          0.9997014897811831,
+          0.024432178152653156,
+          22.647733364249007
+        ],
+        [
+          -0.024432178152653156,
+          0.9997014897811831,
+          5.958471084527787
+        ]
+      ],
+      "near_hand_source_scale": 1.0,
+      "near_hand_source_mirrored": false,
+      "right_grip_candidate_scene": [
+        970.0,
+        797.4930772766585
+      ],
+      "right_grip_candidate_native": [
+        992.8571428571429,
+        979.2758246809408
+      ],
+      "right_thumb_nominal_surface_native": [
+        993.2331789957764,
+        984.2616643115789
+      ],
+      "right_thumb_pad_nominal_centre_native": [
+        993.6844223621365,
+        990.2446718683447
+      ],
+      "right_contact_expected": false,
+      "crane_root_scene": [
+        1335,
+        775
+      ],
+      "crane_plane_tilt": 55,
+      "crane_pose": "UNCHANGED_ACTUAL_A_FOLDED_CLOTH_SUPPORTED",
+      "both_body_knees_shins_shoes_support": "UNCHANGED_LOW_KNEELING",
+      "no_rise_no_lift_no110": true,
+      "F064_drawing_policy": null
+    }
+  ],
+  "new_imagegen_calls": 0,
+  "execution_authorized": false
+}
