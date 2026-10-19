@@ -1,0 +1,3 @@
+# F082 sole activity raw — actual registration/Canvas gate pending
+
+Exactly1 imagegen call returned untouched raw `1e2a0674f404054874c3b0ebef3370662d8dedc708fc73d7353ab492f8175afc`, source `/workspace/generated_images/exec-30677b2f-cf6b-46ed-a697-20c85397e762.png`,1024x1536RGBA. Exact executed prompt/3actualinputSHA/request and approved preauthorization originals archived. True alpha background checked; preview glow is hidden RGB, not a solid room backdrop. No raw edits. Lower generated shins/shoes will NOT be adopted; all fixed domain including transparent blank will remain native final074 master. One global similarity registration and one real Canvas pending; no qualified new082 state claimed.
