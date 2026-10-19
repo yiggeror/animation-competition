@@ -1,0 +1,43 @@
+{
+  "status": "F070_ONE_RAW_NATIVE_PLACEMENT_FAILED_FIXED_LOWER_REJOIN_DIAGNOSTIC_ASTRA_GATE_PENDING",
+  "new_image_calls": 1,
+  "raw_outputs": 1,
+  "retries": 0,
+  "approved_input_commit": "a877e887929bf4445547c553c27ff1399c4ea63d",
+  "raw_sha256": "085ea3a700a0d362acb4cef81a88afdd81a1f409053114e911fe30972b7484c5",
+  "raw_size": [
+    1672,
+    941
+  ],
+  "final_png": "F070_native_upper_fixed_full_lower_DIAGNOSTIC_NOT_ADOPTED.png",
+  "final_png_sha256": "600307134fac5c32e8b0a589b48cc98a42f0217b7fe3fdabe029fe644ed3e450",
+  "native_human_transform": "identity; no resize, translation, warp, knee/ankle splice, or generated shoe used",
+  "new_skirt_extraction": "original new natural hem; not clipped to the construction mask or old skirt",
+  "isolated_alpha_noise_outside_native_connected_child_removed_pixels": 494,
+  "new_upper_selected_RGBA_exact_original": true,
+  "fixed_complete_lower_source": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F070_fixed_lower_input_001/fixed_complete_lower_067_roots_legs_shoes.png",
+  "fixed_complete_lower_source_sha256": "d9bab4c9e2b9d95814d6d7cddcd8494ef82cf020532507b1e1d0aaf52d084253",
+  "fixed_complete_lower_layer_RGBA_changes": 0,
+  "source067_visible_lower_reference_RGBA_changes": 0,
+  "actual_fixed_visible_full_legs_shoes_output_RGBA_changes": 0,
+  "actual_grandma_foreground_output_RGBA_changes": 0,
+  "grandma_validation_domain": "all source foreground x860+; actual grandma complete; x835..859 is scene C shafts, not grandma human",
+  "raw_foreground_pixels_outside_input_white": 149835,
+  "final_pixels_changed_outside_white": 103519,
+  "black_domain_comparison_reference": "actual approved complete input target; black domain failures remain reported, not forced through",
+  "visual_blocker": "原件整体人物明显放大、右上漂移；完整新裙摆与已锁067腿根失配，诊断接回出现露根/断口。双前臂连续，X仍在掌前；本图不能采用。",
+  "adopted": false,
+  "new_exposure_frozen": false,
+  "further_states_prepared_or_called": false,
+  "actual_views_inspected": [
+    "raw_actual_full_gray.jpg",
+    "raw_actual_contacts_3x.png",
+    "actual_full_fixed_lower_gray_DIAGNOSTIC.jpg",
+    "actual_contacts_1x.png",
+    "actual_contacts_3x.png",
+    "actual_under_hem_1x.png",
+    "actual_under_hem_3x.png",
+    "actual_support_1x.png",
+    "actual_support_2x.png"
+  ]
+}
