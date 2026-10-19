@@ -1,0 +1,48 @@
+{
+  "frame": 36,
+  "source_full_PNG": "xm/F036.png",
+  "source_sha256": "3f760ab8c0853399853d4fc0ba4423eea829ee84c4678f39b30228f8233f459a",
+  "arm_layer": "xm_layers/F036_RIGHT_arm_layer.png",
+  "arm_mask": "xm_layers/F036_complete_RIGHT_arm_mask.png",
+  "body_layer": "xm_layers/F036_protected_body_layer.png",
+  "alpha_complement_sum_equals_original": true,
+  "all_RGB_unchanged": true,
+  "non_arm_disconnected_torso_fragments_excluded": [
+    [
+      453,
+      560,
+      458,
+      571
+    ],
+    [
+      437,
+      671,
+      446,
+      689
+    ]
+  ],
+  "actual_picked_raw_joint_centers": {
+    "shoulder": [
+      443.0,
+      470.0
+    ],
+    "elbow": [
+      320,
+      541
+    ],
+    "wrist": [
+      230,
+      444
+    ]
+  },
+  "camera_depth_offsets_mm": {
+    "shoulder": 0,
+    "elbow": -60,
+    "wrist_and_hand": -100
+  },
+  "depth_field_formula": "For each arm texture point p, project onto clamped S-E and E-W 2D segments. Choose nearest segment, interpolate 0\u2192-60mm or -60\u2192-100mm. Beyond wrist keep -100mm. Shoulder endpoint stays0. All protected-body texture stays0. Reconstruct each mesh vertex on its original camera ray using this camera-depth offset so approved screen projection and shoulder position are preserved.",
+  "source_size": [
+    1024,
+    1536
+  ]
+}
