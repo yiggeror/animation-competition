@@ -1,0 +1,152 @@
+{
+  "status": "COMPLETE_FULL_ACTION_INPUT_PREPARATION_PENDING_ROOT_ASTRA_0CALL",
+  "calls": 0,
+  "F069_input_or_art_created": false,
+  "crop_native": [
+    550,
+    0,
+    1320,
+    924
+  ],
+  "native_crop_size": [
+    770,
+    924
+  ],
+  "tool_size": [
+    1280,
+    1536
+  ],
+  "whole_forward_scale": 1.6623376623376624,
+  "whole_inverse_scale": 0.6015625,
+  "whole_inverse_translation": [
+    550,
+    0
+  ],
+  "frozen_T": [
+    858.3388552980175,
+    636.9294709248006
+  ],
+  "frozen_L": [
+    1227.0002384706622,
+    562.9985264074178
+  ],
+  "frozen_axis_native": 376.00132978488244,
+  "correct_prop_real_dimensions_reference": {
+    "tailcap_visible80.066±3": "actual044",
+    "redtube_visible68.085±3": "actual044",
+    "lampcap_visible124.023±3": "actual044"
+  },
+  "previous_thin_prop_adopted_pixels": 0,
+  "previous_old044_grasp_adopted_pixels": 0,
+  "fragmentary026_body_backplate_used": false,
+  "current_far_palm_frozen": false,
+  "whole_hand_source_selector": "complete actual far mask intersectsourcex>=995, short wrist entrance; not hardguard",
+  "whole_hand_scale_rotation_from_previous_commonM_for_material_only": {
+    "scale": 0.542209296288587,
+    "rotation_degrees": -2.379877425655823,
+    "M": [
+      [
+        0.5417416274465395,
+        0.02251510766884169
+      ],
+      [
+        -0.02251510766884169,
+        0.5417416274465395
+      ]
+    ],
+    "t": [
+      568.6160012389555,
+      259.87085341839685
+    ],
+    "ALL_same_raw_arm_grasp_prop_material": true,
+    "single_group_resampling_once": true,
+    "no_independent_arm_hand_torch_transforms": true
+  },
+  "whole_hand_new_t": [
+    526.4870189962533,
+    210.0665070442064
+  ],
+  "whole_hand_source_upper_surface_anchor": [
+    1118.0,
+    850.0
+  ],
+  "original_receiving_surface_reference": [
+    1151.292,
+    645.375
+  ],
+  "whole_hand_vertical_adjustment_for_real_edge_gap": 0,
+  "REAL_prop_to_REAL_hand_gap_alpha128_native": 15.0,
+  "closest_actual_hand_pixel": [
+    1217,
+    639
+  ],
+  "closest_actual_prop_pixel": [
+    1217,
+    624
+  ],
+  "actual_prop_hand_overlap": 0,
+  "contact_study_only_whole_hand_translation": [
+    0,
+    -15
+  ],
+  "far_wrist_guide_native": [
+    1085.6259294538359,
+    671.4392482234687
+  ],
+  "near_chain_proxy_native": [
+    [
+      705.0,
+      666.0
+    ],
+    [
+      790.0,
+      730.0
+    ],
+    [
+      1000.0,
+      658.0
+    ],
+    [
+      1049.533,
+      598.588
+    ]
+  ],
+  "far_chain_proxy_native": [
+    [
+      970.0,
+      689.0
+    ],
+    [
+      1005.0,
+      810.0
+    ],
+    [
+      1085.6259294538359,
+      671.4392482234687
+    ]
+  ],
+  "proxy_not_measured_bones": true,
+  "near_technical_volume_intersection_head": 0,
+  "near_technical_volume_intersection_stable_skirt": 0,
+  "far_technical_volume_intersection_head": 0,
+  "far_technical_volume_intersection_stable_skirt": 0,
+  "near_technical_low_elbow_proxy_bottom": 766,
+  "stable_skirt_row_proxy": 777,
+  "guard_RGBA_changes": 0,
+  "guard_alpha0_source_pixels": 0,
+  "WHITE_guard_intersections": 0,
+  "new_material_not_WHITE_except_actualguards": 0,
+  "full_action_volume_bbox_halfopen": [
+    588,
+    499,
+    1249,
+    854
+  ],
+  "WHITE_pixels": 190521,
+  "limits": [
+    "Inputguide only, no art candidate or anatomical/bone-length certification.",
+    "Actual source prop outer boundary and actual palm silhouette gap measured after source material extraction; about15native, not justpointdistance.",
+    "Palm and complete botharms/torso/grip/prop are all redrawable; old044hand/previous063thinprop/previouspalmposition not locked.",
+    "063→contact path is geometric reach-study only; generated063→069 real material/exposure still needs actual review."
+  ]
+}

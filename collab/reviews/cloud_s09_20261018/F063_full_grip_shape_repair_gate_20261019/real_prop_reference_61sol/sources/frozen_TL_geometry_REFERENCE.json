@@ -1,0 +1,366 @@
+{
+  "status": "F063_REBUILT_FIVE_TECHNICAL_INPUTS_PENDING_ROOT_ASTRA_REVIEW_NO_CALL",
+  "mother044_sha256": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+  "crop_native": [
+    600,
+    230,
+    1300,
+    900
+  ],
+  "A_B_native_size": [
+    700,
+    670
+  ],
+  "unit_R_degrees": 78.508,
+  "unit_scale": 1,
+  "unit_M": [
+    [
+      0.19923110917411352,
+      -0.9799525320836987
+    ],
+    [
+      0.9799525320836987,
+      0.19923110917411352
+    ]
+  ],
+  "unit_t": [
+    1284.0792113302323,
+    -606.8253880588991
+  ],
+  "G_target": [
+    1049.533,
+    598.588
+  ],
+  "L_target": [
+    1227.0002384706622,
+    562.9985264074178
+  ],
+  "T_target": [
+    858.3388552980175,
+    636.9294709248006
+  ],
+  "P_fixed_surface": [
+    1151.292,
+    645.375
+  ],
+  "P_definition": "069surface1145,614 plus normal(.196620,.980480)*32, rounded; surface proxy not interior center, not physical contact proof",
+  "near_chain": [
+    [
+      705,
+      666
+    ],
+    [
+      790,
+      730
+    ],
+    [
+      992,
+      650
+    ],
+    [
+      1049.533,
+      598.588
+    ]
+  ],
+  "near_technical_halfwidths": [
+    31,
+    40,
+    27,
+    34
+  ],
+  "far_chain": [
+    [
+      970,
+      689
+    ],
+    [
+      1005,
+      810
+    ],
+    [
+      1100,
+      696
+    ],
+    [
+      1151.292,
+      645.375
+    ]
+  ],
+  "far_technical_halfwidths_assumptions_not_frozen": [
+    31,
+    45,
+    24
+  ],
+  "near_elbow_bottom": 770,
+  "far_elbow_bottom": 855,
+  "far_elbow_to_crop_bottom": 45,
+  "technical_layer_order": [
+    "far_arm",
+    "far_open_palm",
+    "near_arm",
+    "actual_rigid_visible_prop",
+    "new_technical_near_grip",
+    "original_stable_head_ruffle_skirt"
+  ],
+  "source_old_human_unit_pixels_excluded_from_A": 17350,
+  "old_near_source_alpha_remaining_outside_WHITE_except_fixed_material": 0,
+  "base_old_near_source_RGBA_visible_inside_white_after_clear": 0,
+  "old_unit_source_material_remaining_in_A_base_after_clear": 0,
+  "old_far_skin_visible_in_A_base_after_clear": 0,
+  "new_human_pixels_in_A": "Only clearly technical drawn volume; no transformed/retained original human wrist, hand or arm pixels adopted for new limbs. Actual frozen face/neck/cuff material remains source.",
+  "white_pixels": 192771,
+  "guard_intersections": {
+    "head": 0,
+    "near_ruffle": 0,
+    "unchanged_skirt": 0
+  },
+  "guard_source_alpha0_pixels": 0,
+  "near_elbow_bottom770_WHITE_value": 255,
+  "stable_skirt_row777_at790_WHITE_value": 0,
+  "stable_guard_final_RGBA_changes": 0,
+  "new_technical_near_volume_overlap_head_pixels": 0,
+  "new_technical_near_volume_overlap_stable_skirt_pixels": 0,
+  "new_technical_far_volume_overlap_stable_skirt_pixels": 0,
+  "technical_far_hand_vs_true_visible_prop_gap": {
+    "overlap_pixels": 0,
+    "minimum_pixel_center_distance_native": 21.213203435596427
+  },
+  "technical_far_hand_vs_new_near_grip_gap": {
+    "overlap_pixels": 0,
+    "minimum_pixel_center_distance_native": 24.351591323771842
+  },
+  "ref3_source_head_mask_box": [
+    550,
+    15,
+    1020,
+    580
+  ],
+  "ref3_skin_material_box": [
+    903,
+    653,
+    927,
+    677
+  ],
+  "ref3_cloth_material_box": [
+    780,
+    565,
+    836,
+    605
+  ],
+  "ref4_exact026_native_crop": [
+    1155,
+    485,
+    1270,
+    636
+  ],
+  "ref4_nonlamp_excluded_pixels": 408,
+  "ref4_kept_RGBA_changes": 0,
+  "ref5_original_unit_crop": [
+    990,
+    250,
+    1220,
+    690
+  ],
+  "ref5_technical_wrist_full_native_ROI_inclusive": [
+    1008,
+    490,
+    1075,
+    566
+  ],
+  "ref5_source_technical_wrist_pixels_removed": 3484,
+  "request_inputs": [
+    {
+      "path": "reference/1_rebuilt_complete_volume_TARGET_NOT_ART_700x670.png",
+      "sha256": "5f4c77c4089aa54456bb060e12fe78e528d4a16bfa720cd96fafd344c4346100",
+      "size": [
+        700,
+        670
+      ]
+    },
+    {
+      "path": "reference/2_complete_redraw_WHITE_REFERENCE_700x670.png",
+      "sha256": "783d804c3c3774e95f37e67788f1a37507f0fb67cad4dca0fc45a0bc12e69fb5",
+      "size": [
+        700,
+        670
+      ]
+    },
+    {
+      "path": "reference/3_real_head_collar_ruffle_identity_material_NO_OLD_ARMS.png",
+      "sha256": "afe16f82f83d917b4b18e17e47a88d4f85de3002784df22c755bcdf19bdc61bf",
+      "size": [
+        700,
+        670
+      ]
+    },
+    {
+      "path": "reference/4_exact026_lamp_head_crop_NO_FOREIGN_SKIN.png",
+      "sha256": "10d210379f6a00c5d3184778d48c73bf06eb84b51fae01c02ce9b61454f8f4a5",
+      "size": [
+        115,
+        151
+      ]
+    },
+    {
+      "path": "reference/5_original044_unit_material_old_technical_wrist_EXCLUDED.png",
+      "sha256": "a1fa6d9bccf874e65f8d08779a32973ed6180ccb139399bab1a3b921324a9351",
+      "size": [
+        350,
+        535
+      ]
+    }
+  ],
+  "new_calls": 0,
+  "future_states_unopened": true,
+  "new_complete_volume_including_prop_AA_bbox": {
+    "bbox_native_halfopen": [
+      674,
+      498,
+      1253,
+      856
+    ],
+    "bbox_crop_local_halfopen": [
+      74,
+      268,
+      653,
+      626
+    ],
+    "blank_pixel_margins_left_top_right_bottom": [
+      74,
+      268,
+      47,
+      44
+    ],
+    "all_inside_crop": true
+  },
+  "full_white_actual_bbox": {
+    "bbox_native_halfopen": [
+      630,
+      257,
+      1263,
+      866
+    ],
+    "bbox_crop_local_halfopen": [
+      30,
+      27,
+      663,
+      636
+    ],
+    "blank_pixel_margins_left_top_right_bottom": [
+      30,
+      27,
+      37,
+      34
+    ],
+    "all_inside_crop": true
+  },
+  "new_complete_volume_pixels_outside_crop": 0,
+  "new_complete_volume_not_WHITE_or_real_stable_guard": 0,
+  "new_volume_under_stable_actual_ruffle_pixels": 838,
+  "reference_coordinate_mappings": {
+    "A_B": {
+      "source_native_crop": [
+        600,
+        230,
+        1300,
+        900
+      ],
+      "local_xy_equals_native_minus": [
+        600,
+        230
+      ],
+      "scale": 1
+    },
+    "ref3_head_collar": {
+      "source_crop": [
+        550,
+        15,
+        1020,
+        580
+      ],
+      "paste_top_left": [
+        8,
+        30
+      ],
+      "scale": 1,
+      "source_mask": "F044_actual_head_neck_collar_guard.png",
+      "mapping": "ref3=(source-[550,15])+[8,30]"
+    },
+    "ref3_near_ruffle": {
+      "source_crop": [
+        630,
+        600,
+        790,
+        725
+      ],
+      "paste_top_left": [
+        510,
+        55
+      ],
+      "scale": 1,
+      "source_mask": "F044_actual_stable_near_ruffle_guard.png"
+    },
+    "ref3_skin": {
+      "source_crop": [
+        903,
+        653,
+        927,
+        677
+      ],
+      "paste_top_left": [
+        540,
+        240
+      ],
+      "scale": 1
+    },
+    "ref3_cloth": {
+      "source_crop": [
+        780,
+        565,
+        836,
+        605
+      ],
+      "paste_top_left": [
+        520,
+        325
+      ],
+      "scale": 1
+    },
+    "ref4": {
+      "source_crop": [
+        1155,
+        485,
+        1270,
+        636
+      ],
+      "local_xy_equals_source_minus": [
+        1155,
+        485
+      ],
+      "scale": 1,
+      "excluded_pixels_mask": "masks/ref4_nonlamp_skin_and_edge_EXCLUDED.png",
+      "retained_source_RGBA_changed_pixels": 0
+    },
+    "ref5": {
+      "source_crop": [
+        990,
+        250,
+        1220,
+        690
+      ],
+      "paste_top_left": [
+        60,
+        45
+      ],
+      "scale": 1,
+      "mapping": "ref5=(source-[990,250])+[60,45]",
+      "full_wrist_exclusion_native_inclusive": [
+        1008,
+        490,
+        1075,
+        566
+      ]
+    }
+  },
+  "reference_alpha_composition_note": "Refs3/5 source crops pasted at native1:1; masked head/ruffle/unit AA naturally alpha-composited over a neutral reference backdrop. Source RGBA files untouched; internal skin/cloth rectangles copied directly. Ref4 retained source RGBA exact."
+}

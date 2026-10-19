@@ -1,0 +1,51 @@
+{
+  "status": "REFERENCE_ONLY_PREPARATION_COMPLETE_PENDING_ROOT_ASTRA",
+  "actual_viewed": [
+    {
+      "path": "reference/01_real_visible_prop_SOURCE_crop_1to1.png",
+      "sha256": "ce3ffb54250ef1e4c869015979a6c839ac28932d8b9ffdcc871cd133b6ebad2e"
+    },
+    {
+      "path": "reference/02_real_unit_HAND_NOT_TARGET_CONTEXT_crop_1to1.png",
+      "sha256": "f943a08b11c74d47287f5435f84c8cbe74cf0e5b59991ebb2468569ad06127a7"
+    },
+    {
+      "path": "reference/03_flat_mother_HAND_NOT_TARGET_CONTEXT_crop_1to1.png",
+      "sha256": "0149a419ba0c56a5451fe2ce003b413491e7e31f7254ce53bac41d820acf4d04"
+    },
+    {
+      "path": "reference/04_same_frozen_TL_real_visible_prop_SCALE1_NOT_GESTURE.png",
+      "sha256": "e48c30929f3fae7d89cd487239209ae46e310eed4b231b86e006a29892b29cb4"
+    },
+    {
+      "path": "qa/real_prop_size_and_ownership_gray.png",
+      "sha256": "e2b6c51ebae81cbd7e3811afd75312c920a6a8199cd86d079ef34cec3b475f1f"
+    },
+    {
+      "path": "qa/real_prop_size_and_ownership_dark.png",
+      "sha256": "ed60f04460d813a9bd3407b413f578b38af39e3eb1235b786fb1e9b12aa26508"
+    },
+    {
+      "path": "masks/visible_prop_ONLY_alpha_material.png",
+      "sha256": "5df1e8067a1bd5dc612a697f3540289238c63f6deeed35be3e677adfb253c7dc"
+    },
+    {
+      "path": "masks/ALL_old_hand_wrist_NOT_TARGET_EXCLUDED.png",
+      "sha256": "c02c477096967f45fe085b523022be8f538bda85965115b3224224a18e996f88"
+    }
+  ],
+  "finding": "Real tailcap/lampcap/clear lower red tube are independently visible and recoverable without source hand. Conservative unknown gap does not define target grip. Both background QA panels readable.",
+  "measured_native_visible_envelopes": {
+    "tail": 80.06620619459949,
+    "red_clear_band": 68.08486558982716,
+    "lampcap": 124.02349754103162
+  },
+  "limitations": [
+    "Projected2D visible band envelope, not physical3D diameter or full hidden tube.",
+    "Conservative hand exclusion deliberately omits uncertain shared hand/prop boundary; original context documents all visible material.",
+    "Old wrist/grip orientation is not a target; current receiver palm is not frozen; root must rebuild full reachable action band."
+  ],
+  "new_generation_calls": 0,
+  "target_or_white_domain_written": false,
+  "root_files_modified": false
+}

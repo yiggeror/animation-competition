@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+"""Only real044 visible prop reference. NO target gesture, no new human pixels."""
+from pathlib import Path
+from PIL import Image,ImageDraw,ImageFont
+import numpy as np,json,hashlib,shutil
+R=Path(__file__).resolve().parent;S=R/'sources';sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+for d in ['reference','masks','qa','geometry']:(R/d).mkdir(exist_ok=True)
+for row in json.loads((S/'snapshot_manifest.json').read_text())['files']:assert sha(S/row['snapshot'])==row['sha256']
+u=Image.open(S/'F044_b877_unit_REAL_SIZE_ONLY.png').convert('RGBA');a=np.array(u);mother=Image.open(S/'F044_fe70_flat_PRODUCTION_MOTHER_REFERENCE.png').convert('RGBA');h=np.array(Image.open(S/'ALL_old_human_unit_EXCLUSION.png').convert('L'))>0;g=json.loads((S/'frozen_TL_geometry_REFERENCE.json').read_text());M=np.array(g['unit_M']);t=np.array(g['unit_t']);assert np.allclose(M.T@M,np.eye(2),atol=1e-12)
+# This inherited conservative human exclusion removes the entire hand/wrist,
+# including ambiguous shared boundary. Transparent missing material stays unknown.
+p=a.copy();p[h]=0;prop=Image.fromarray(p);pm=p[:,:,3]>0
+Image.fromarray(pm.astype('uint8')*255).save(R/'masks/visible_prop_ONLY_alpha_material.png');Image.fromarray(h.astype('uint8')*255).save(R/'masks/ALL_old_hand_wrist_NOT_TARGET_EXCLUDED.png');prop.save(R/'reference/F044_visible_prop_ONLY_SOURCE_full_canvas.png')
+box=(990,250,1220,690);prop.crop(box).save(R/'reference/01_real_visible_prop_SOURCE_crop_1to1.png');u.crop(box).save(R/'reference/02_real_unit_HAND_NOT_TARGET_CONTEXT_crop_1to1.png');mother.crop(box).save(R/'reference/03_flat_mother_HAND_NOT_TARGET_CONTEXT_crop_1to1.png')
+inv=M.T;it=-inv@t;reg=prop.transform(u.size,Image.Transform.AFFINE,(*inv[0],it[0],*inv[1],it[1]),Image.Resampling.BICUBIC,fillcolor=0);reg.save(R/'reference/04_same_frozen_TL_real_visible_prop_SCALE1_NOT_GESTURE.png')
+T=np.array(g['T_target']);L=np.array(g['L_target']);Ts=M.T@(T-t);Ls=M.T@(L-t);axis=Ls-Ts;length=np.linalg.norm(axis);v=axis/length;n=np.array([-v[1],v[0]]);yy,xx=np.indices(a.shape[:2]);proj=(xx-Ts[0])*v[0]+(yy-Ts[1])*v[1];normal=(xx-Ts[0])*n[0]+(yy-Ts[1])*n[1]
+sections=[]
+for name,roi in [('tailcap_full_visible_material',[1080,620,1190,678]),('red_barrel_below_hand_clear_band',[1090,548,1180,599]),('lampcap_full_visible_material',[1060,266,1200,358])]:
+ x0,y0,x1,y1=roi;z=(p[:,:,3]>=128)&(xx>=x0)&(xx<x1)&(yy>=y0)&(yy<y1);ys,xs=np.where(z);assert len(xs)
+ # Material union extent is a projected 2D band envelope, not a physical diameter.
+ lo=float(normal[z].min());hi=float(normal[z].max());ids=np.argwhere(z);slo=ids[np.argmin(normal[z])];shi=ids[np.argmax(normal[z])]
+ sections.append({'name':name,'manual_source_ROI_halfopen':roi,'alpha_threshold':128,'actual_pixels':int(z.sum()),'transverse_pixel_center_extent_native':hi-lo,'min_xy':[int(slo[1]),int(slo[0])],'max_xy':[int(shi[1]),int(shi[0])],'span_interval_from_T_native':[float(proj[z].min()),float(proj[z].max())],'ownership_boundary_uncertainty_native_px':3,'meaning':'2D visible-material band envelope normal to true axis; not exact 3D diameter. No occluded material reconstructed.'})
+# Precisely compare the historical unit vs flattened mother only on retained material.
+ma=np.array(mother);valid=p[:,:,3]>=128;diff=int(np.any(a[valid]!=ma[valid],axis=1).sum());tailtop=np.array([1093.,643.]);tailbottom=np.array([1174.,643.]);font=ImageFont.truetype('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',14)
+for tone,bgcol in [('gray',(213,223,231,255)),('dark',(35,43,52,255))]:
+ sheet=Image.new('RGB',(990,780),(235,240,245));d=ImageDraw.Draw(sheet)
+ for x,z,label in [(10,u,'044 unit: OLD HAND NOT TARGET'),(255,prop,'Prop only / unknown hand gap'),(500,mother,'Flat044: OLD HAND NOT TARGET')]:
+  pane=Image.new('RGBA',(230,440),bgcol);pane.alpha_composite(z.crop(box));sheet.paste(pane.convert('RGB'),(x,55));d.text((x,14),label,font=ImageFont.truetype('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',11),fill='#26343e')
+ pane=Image.new('RGBA',(1672,941),bgcol);pane.alpha_composite(reg);pane=pane.crop((800,480,1290,720));sheet.paste(pane.convert('RGB'),(10,540));d.text((10,512),'s1 R+78.508° / FROZEN T-L / PROP ONLY, NOT GRASP TARGET',font=font,fill='#26343e')
+ d.text((510,522),'Native1:1 panels; no hand-behind fill',font=font,fill='#26343e')
+ for j,z in enumerate(sections):d.text((510,554+j*45),z['name']+'\n'+str(round(z['transverse_pixel_center_extent_native'],3))+'px material extent, +/-3px ownership',font=font,fill='#26343e')
+ d.text((510,704),'NO PALM FREEZE / NO GESTURE OR ANATOMY LOCK',font=font,fill='#8a4b30');sheet.save(R/f'qa/real_prop_size_and_ownership_{tone}.png')
+report={'status':'REAL_VISIBLE_PROP_SIZE_REFERENCE_ONLY_PENDING_ROOT_ASTRA','unit_SHA256':sha(S/'F044_b877_unit_REAL_SIZE_ONLY.png'),'flat_mother_SHA256':sha(S/'F044_fe70_flat_PRODUCTION_MOTHER_REFERENCE.png'),'unit_vs_flat_visible_prop_alpha128_RGBA_differences':diff,'unit_vs_flat_note':'Historical unit and flattened mother have AA/flattening differences; not claimed byte-identical. No flatmother pixel substituted into unit.','source_T_ellipse_center_inferred_from_frozen_rigid_transform':Ts.tolist(),'source_L_ellipse_center_inferred_from_frozen_rigid_transform':Ls.tolist(),'endpoint_note':'Frozen source points recovered by inverse original s1 matrix. Manual ellipse center read uncertainty ~4native px each; inverse consistency is not independent physical measurement.','source_axis_center_to_center_native':float(length),'registered_axis_native':float(np.linalg.norm(L-T)),'target_T':T.tolist(),'target_L':L.tolist(),'rigid_reference_only':{'M':M.tolist(),'t':t.tolist(),'scale':1,'rotation_degrees':g['unit_R_degrees'],'grasp_not_transformed_or_locked':True,'one_BICUBIC_whole_prop_resample':True},'reference_crop_native_halfopen':box,'local_crop_equals_source_minus':[990,250],'source_sections':sections,'manual_complete_tail_major_axis_prior_estimate_native':{'value':83,'error':4,'limit':'Actual visible projected endcap estimate, not old44px occluded estimate and not physical3D caliper. Current pixel envelope separately recorded.'},'source044_grip_axis_fraction_reference':.5186170239855135,'grip_limit':'Axial station reference only; source hand occludes actual tube/axis. Never copy old wrist or hand-back silhouette; source hand context is labelled NON_TARGET.','exclusion':{'old_human_source_material_removed':int(h.sum()),'no_hidden_prop_fill':True,'all_retained_visible_prop_RGBA_changes':int(np.any(p[pm]!=a[pm],axis=1).sum()),'conservative_shared_hand_prop_boundary':'Old audited polygon intentionally removes ambiguous boundary and may omit a little visible prop; negative space is UNKNOWN, never a true necking/tube cut contour.'},'current_far_palm_frozen':False,'no_target_or_white_domain_written':True,'image_calls':0,'F069_opened':False}
+(R/'geometry/real_prop_dimensions_and_transforms.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+print(json.dumps({'sections':sections,'unit_flat_prop_differences':diff,'source_T':Ts.tolist(),'source_L':Ls.tolist()},indent=2))
