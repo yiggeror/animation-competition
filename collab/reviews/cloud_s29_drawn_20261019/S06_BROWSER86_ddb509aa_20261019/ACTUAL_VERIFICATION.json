@@ -1,0 +1,95 @@
+{
+  "source_commit": "ddb509aa7e8283134e76980a638c81155578f520",
+  "producer_sha256": "7aff911d4b25d4151ed3ad64a2ce6cce8690e562ba02c4e3404010217d9a05e3",
+  "video": "S06.mp4",
+  "video_sha256": "f19c654be13b3d8ef97fefb135ef6522a577466eb30e7ed5cb30d673524bc3ba",
+  "frames": 86,
+  "width": 1920,
+  "height": 1080,
+  "fps": "24/1",
+  "duration_seconds": 3.583333,
+  "audio_streams": 0,
+  "full_independent_decoded_frames": 86,
+  "decoded_keys": [
+    10,
+    11,
+    29,
+    30,
+    34,
+    39,
+    45,
+    46,
+    69,
+    70,
+    78,
+    85
+  ],
+  "native_Canvas_stills_only": [
+    0,
+    85
+  ],
+  "source_checks_before_after_pass": true,
+  "seven_PNGs_plus_background_HTTP200": [
+    {
+      "url": "http://127.0.0.1:42657/assets/paint/bg_01_room_wide.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42657/assets/chars/s06/S06_EYES_PHONE.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42657/assets/chars/s06/S06_F006.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42657/assets/chars/s06/S06_F000.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42657/assets/chars/s06/S06_F011.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42657/assets/chars/s06/S06_F014.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42657/assets/chars/s06/S06_F018.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42657/assets/chars/s06/S06_F027.png",
+      "status": 200
+    }
+  ],
+  "requestfailed": [],
+  "pageerrors": [],
+  "actual_console_errors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "console_404_URL": "Not captured by the original producer/page observer; retain actual error without asserting its origin",
+  "producer_exit_code": 0,
+  "renderer_PID": 76239,
+  "S07_cut_reference": {
+    "commit": "4403cb1058bb35f4e032e3d1682b3f6226009547",
+    "MP4_sha256": "c1c282946ec0a4b4a20bdf5d0f5ba76d8ceb2e04df616faa7271dd9d3317e421",
+    "decoded_F000": "S07_F000_FROM_NEW_FULL108_MP4.png",
+    "decoded_F000_sha256": "c4ded3a352946998f1c9b3402c4dbfdcb1a9a55de6988348c8219687f925147c"
+  },
+  "CPU_scene_rerenders": 0,
+  "new_imagegen_calls": 0,
+  "continuous_visual_review": "PENDING_MAIN_REVIEW",
+  "actual_key_image_review": {
+    "opened": [
+      "CONTACT_BEFORE_AFTER_PAIRS.jpg",
+      "EYES_034_039_078_085.jpg",
+      "CUT_S06_085_TO_NEW_S07_000.jpg"
+    ],
+    "contact_result": "Four decoded pairs show inserted-to-lifted at10/11 and45/46; lowered-to-inserted at29/30 and69/70. Adapter, cable and strip remain readable.",
+    "eye_result": "F034/F039 andF078/F085 are phone-glance exposure holds in the supplied sheet.",
+    "cut_result": "S06F085 still grips the adapter with the reaching hand; S07F000 has both hands at the phone. The cut omits release/return of that hand; main coordination must judge this edit. No production/source fix was made."
+  },
+  "node_warning": "MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added to [Socket]. MaxListeners is 10.",
+  "archival_note": "Independent decode succeeded before a cross-filesystem rename error in the review verifier. Changed archive operation to copy and resumed from existing decoded keys/full decode ledger; no scene rerender or repeated full decode."
+}
