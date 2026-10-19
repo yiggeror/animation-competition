@@ -1,0 +1,76 @@
+{
+  "locked012_SHA256": "063bc020f65f3e9485a57984f20703f0fbc96667a2f5a046ad713ee51d1beb88",
+  "raw018_SHA256": "fbc502639b90de00eb0b664a41af7898df15e92bf5d58ac9e172579121b486a3",
+  "same_canvas": [
+    1024,
+    1536
+  ],
+  "fixed_registration": {
+    "scale": 0.7,
+    "x": 275,
+    "y": 112
+  },
+  "protected_unchanged_pose_pixel_identity_claimed": false,
+  "placket_tip_static_reference_samples": {
+    "lit_matched_blue_core": {
+      "pixels": 408,
+      "locked012_mean_RGB": [
+        110.25245098039215,
+        144.47549019607843,
+        187.4485294117647
+      ],
+      "raw018_mean_RGB": [
+        116.54901960784314,
+        149.52450980392157,
+        193.20833333333334
+      ],
+      "raw018_minus_locked012_mean_RGB": [
+        6.296568627450981,
+        5.0490196078431495,
+        5.759803921568647
+      ],
+      "caveat": "Same-coordinate locked012 reference core, diagnostic only. Any motif/edge displacement can affect means; no per-pixel matching or color correction performed."
+    },
+    "shade_matched_blue_core": {
+      "pixels": 1402,
+      "locked012_mean_RGB": [
+        116.169757489301,
+        150.99215406562055,
+        193.81027104136948
+      ],
+      "raw018_mean_RGB": [
+        121.3851640513552,
+        153.83880171184023,
+        197.24179743223965
+      ],
+      "raw018_minus_locked012_mean_RGB": [
+        5.2154065620541985,
+        2.8466476462196795,
+        3.431526390870175
+      ],
+      "caveat": "Same-coordinate locked012 reference core, diagnostic only. Any motif/edge displacement can affect means; no per-pixel matching or color correction performed."
+    },
+    "shade_matched_flower_core": {
+      "pixels": 184,
+      "locked012_mean_RGB": [
+        211.65217391304347,
+        215.91304347826087,
+        225.2336956521739
+      ],
+      "raw018_mean_RGB": [
+        220.6413043478261,
+        224.0163043478261,
+        234.54891304347825
+      ],
+      "raw018_minus_locked012_mean_RGB": [
+        8.989130434782624,
+        8.103260869565219,
+        9.315217391304344
+      ],
+      "caveat": "Same-coordinate locked012 reference core, diagnostic only. Any motif/edge displacement can affect means; no per-pixel matching or color correction performed."
+    }
+  },
+  "spatial_or_color_edits_applied": false,
+  "scene_renders": 0,
+  "provisional_visual_review": "Full head/body/near hand/kneeling shoes remain in corresponding same-canvas positions. Shoulder is hidden; continuity must be judged from actual whole sleeve/elbow/wrist drawing, not construction coordinates alone. Native review fails finger-rod gap and hair/blue fixed-mother color gates."
+}

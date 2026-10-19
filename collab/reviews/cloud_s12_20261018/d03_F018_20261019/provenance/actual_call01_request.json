@@ -1,0 +1,43 @@
+{
+  "status": "SINGLE_APPROVED_CALL_PENDING",
+  "execution_enabled": true,
+  "tool": "image_gen.imagegen",
+  "frame": 18,
+  "hold": 4,
+  "end_inclusive": 21,
+  "tool_arguments": {
+    "prompt": "S12 drawn animation, F018 only, held for F018-F021. Make ONE native transparent 1024x1536 RGBA grandmother image on the same canvas and registration. This is the second approach, BEFORE any hand touches a rod. No other frame is requested.\n\nINPUT ROLES AND PRIORITY:\nImage 1 is the NEWLY LOCKED F012 continuity mother, SHA256 063bc020f65f3e9485a57984f20703f0fbc96667a2f5a046ad713ee51d1beb88. Use this image for the complete grandmother identity, anatomy, head/gaze, body pose, garment design, finished placket-tip folds and shaded flower colors, empty near right hand, kneeling legs and both shoes. Continue directly from this locked F012; do not go back to an earlier F000 character pose or an older F012 version.\nImage 2 is a MATERIAL-ONLY LOCAL RGB BOARD cropped from the LOCKED F000 (source SHA256 95f80f2d8f56394abd4a808cc8a6f205633658a544de4ab52e1e34c4ac1ed793). It is the fixed intrinsic material-color reference: silver hair, warm skin light/shadow, dusty blue cloth light/fold shade, light flowers and SHADOWED flower fill, dark trousers, black cloth shoe and jade. The board contains no whole character pose. Use only these material colors and light/shadow relationships. Do not copy crop shapes, chunky preview pixels, card layout, labels or text into the drawing.\nImage 3 is the ORIGINAL APPROVED F018 full-arm VOLUME CONSTRUCTION guide, unchanged. Follow its colored FAR LEFT arm volumes and native coordinate placement for this single approach step. Blue/grey/gold diagram colors, bones, dots, letters, rods and ghost body are construction only. The faint older ghost pose in this guide is not a new identity or pose mother; image 1 controls all unchanged character geometry. The pale proximal shoulder volume is HIDDEN beneath the blouse, never an exposed shoulder ball on the chest.\n\nF018 ACTION:\nThe FAR LEFT jade-bangle upper arm, elbow, forearm, wrist and complete relaxed open hand continue forward and down from locked F012 toward the upper neck3 rod. Move the entire arm as a continuous anatomical chain, including the sleeve; remove the previous far-arm silhouette cleanly. Do not translate a detached hand or stretch a forearm. The far elbow stays outside the torso silhouette. Keep the fixed upper-arm .86H and forearm .64H lengths, with projection foreshortening as needed; H is the same mother head unit. One jade bangle stays proximal to the FAR LEFT wrist, never on the near right arm. Fingers remain soft and naturally curved, with coherent palm volume, thumb base and knuckles; not spread stiffly and not clenched.\n\nNO CONTACT YET:\nIn F018 both hands are EMPTY. Every far-left digit remains ABOVE and clearly separated from the upper rod; keep at least 3 scene pixels of air between finger skin and the actual 7px rod outline. Do not wrap any finger around either guide axis, do not place the thumb pad on the rod, and do not close a grasp. F022 is the later first thumb-touch event; do not anticipate it in F018. The near right open hand remains at its locked F012 lower-left resting position and clearly separate from both rods. The crane is still supported by the cloth; no rod endpoint, crane root, prop plane, box or cloth support moves in this approach.\n\nFIXED SCENE REFERENCE, NOT PAINTED PROPS:\nRegistration remains scale .70 at scene (275,112), native1024x1536 onto scene1920x1080. Upper/neck3 rod is fixed from scene (934.3125,785.1297) to (1497.5315,714.6642), outer outline width7px. Lower/body rod is fixed from scene (951.2617,798.9063) to (1282.1987,773.9468), outer outline width7px. Do NOT paint any rod, crane, cloth, box, scenery, cast shadow, axis, letter or arrow into the native character. These are guide coordinates only.\n\nNative construction anchors for F018 (estimates, not substitutes for actual image review):\n{\"S\": [644.0, 684.0], \"E\": [773.753, 830.870], \"W\": [905.300, 911.900], \"G_OPEN_HAND_REFERENCE\": [962.742, 923.298], \"B\": [872.413, 891.643]}\nThe guide label G is the OPEN-HAND construction reference above the rod, not a contact point on the rod and not a final-grasp target. Preserve the guide's visible air gap. The hidden shoulder estimate has +/-10-20 native pixel uncertainty; connect it naturally under the blouse without dislocation.\n\nUNCHANGED AREAS AND MATERIALS:\nKeep image 1 head, fine silver hair, thin round glasses, facial gaze, neck/chest, pelvis, NEAR RIGHT arm and empty hand, trouser folds, kneeling support and both COMPLETE cloth shoes unchanged in placement and structure. Preserve the newly locked F012 static lower placket TIP, its fold direction, blue shadow plane and grey-blue shaded flower fill; do not brighten shaded petals back to white or repaint the entire front placket. Retain natural skin, dusty blue cloth and mother shading; do not bleach skin, saturate blue, brighten trousers or accumulate a warmer palette from frame to frame. Compare skin/hair/blue/trousers using same-material regions against the fixed material authority within +/-4 RGB channel means; keep ink, fold lines, white-pattern edges and the original form gradients. The color board is a palette reference, not a new illumination or drawing style.\n\nTransparent background with clean antialiasing; preserve fine hair and glasses. Full head, both knees/shins/shoes, far fingers and all contours must fit the native canvas with right-edge breathing room. No body lift, turn, new facial expression, hand swap, extra bangle, extra arm/digit, prop grip, diagram text or cropped shoe. Deliver F018 only.\n",
+    "referenced_image_paths": [
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/d03_F018_inputs_20261019/inputs/01_locked_F012.png",
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/d03_F018_inputs_20261019/inputs/02_locked_F000_materials_ONLY.png",
+      "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/d03_F018_inputs_20261019/inputs/03_F018_CONSTRUCTION_UNCHANGED.png"
+    ],
+    "transparent_background": true
+  },
+  "prompt_path": "prompts/F018_full.txt",
+  "prompt_SHA256": "fbadda161afa5914204269f5383d25dca0ec3a00fc1a733eb4a78767abd89185",
+  "actual_three_inputs": [
+    {
+      "order": 1,
+      "role": "newly locked F012 continuity mother",
+      "path": "collab/reviews/cloud_s12_20261018/d03_F018_inputs_20261019/inputs/01_locked_F012.png",
+      "sha256": "063bc020f65f3e9485a57984f20703f0fbc96667a2f5a046ad713ee51d1beb88"
+    },
+    {
+      "order": 2,
+      "role": "locked F000 local material board ONLY; no full old pose",
+      "path": "collab/reviews/cloud_s12_20261018/d03_F018_inputs_20261019/inputs/02_locked_F000_materials_ONLY.png",
+      "sha256": "a6a40d2e847b9a9256f20edb46cf8467fe7487deb0dc97448674ec7c7b5e22cd"
+    },
+    {
+      "order": 3,
+      "role": "original approved F018 volume guide UNCHANGED",
+      "path": "collab/reviews/cloud_s12_20261018/d03_F018_inputs_20261019/inputs/03_F018_CONSTRUCTION_UNCHANGED.png",
+      "sha256": "bcfaffbed6cca5012be23222cefa1035360cf7c8ede97648de82efc603449b8a"
+    }
+  ],
+  "scope": "Review this ONE F018 request only. No generation is performed and F022/F026/F030 are not opened.",
+  "authorization_source": "Astra approval via delegated parent message; fixed d2483baa single F018 only",
+  "approved_commit": "d2483baa791ae818219644093cf620303539371a",
+  "request_id": "S12_F018_call01_d2483baa_20261019"
+}
