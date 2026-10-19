@@ -1,0 +1,28 @@
+{
+  "status": "HOLD_F063_ACTUAL_RECEIVER_PALM_CONTACTS_LAMP_HEAD_NOT_ADOPTED",
+  "reviewer": "cloud_root",
+  "raw_sha256": "8943ae4194c77bf6a87ec43bb62d0970c8ac29b28733827c0b7107e079945489",
+  "actual_viewed": [
+    "originals/F063_call01_RAW.png via actual tool output",
+    "qa/F063_frozen_guide_vs_actual_raw_gray_HOLD.png",
+    "qa/F063_actual_lamp_and_receiver_CONTACT_dark_HOLD.png"
+  ],
+  "blocking_actual_image_finding": "The far LEFT palm is already supporting the lamp head/front tube. Visible fingertip ends directly share the silver rim's lower boundary in at least two places. There is no visible material air gap required for F063. This is a causal/contact failure, not an input-file or technical-guide clearance question.",
+  "finite_actual_findings": {
+    "near_complete_arm_and_lower_left_wrist_entry": "Visible continuous ruffle-to-elbow-to-forearm-to-new-grip chain, without inherited upper-left technical wrist exit.",
+    "far_complete_arm_and_depth": "Lower far elbow rises into the actual open palm; near foreground/far background readable and forearm bodies not visibly crossed.",
+    "actual_palm_and_fingertip_clearance": "FAIL; source raw shows supporting contact with cap. No reuse of historical 15 or technical21.213/24.352 as actual clearance.",
+    "hair_air_and_skin_topology": "Visible natural background between new wrist and hair; no observed hanging old wrist, old hand-back fragment or internal skin hole.",
+    "torch_proportions": "Visible straight body and consistent cap/tail design; no obvious telescoping or old175/44 substitution. Exact registered GLT/length/grip fraction are NOT certified from this failed raw.",
+    "switch_and_light": "Lens dark and no beam. Thumb partly occludes switch, so OFF mechanical endpoint cannot be certified."
+  },
+  "independent_61sol_actual_review": "The reviewer independently viewed RAW, gray fixed-guide comparison and dark contact crop and agreed HOLD: at least two fingertips visibly touch the silver lower rim. Improved complete arms, wrist entry and hair air cannot override the premature supporting contact. No exact axis/grip-fraction or OFF-endpoint lock was claimed.",
+  "mapping_limit": "700/1282 uniform width-defined inverse only for diagnostic comparison; mapped height about669.969. No adaptive fit, nonuniform arm transform, palm translation, source-layer restoration or production composition was attempted.",
+  "request_authority": "Exactly one call from frozen b01dc6c inputs and original prompt, after zero-inflight/zero-prior-output check.",
+  "F063_requests": 1,
+  "F063_originals": 1,
+  "additional_generation_or_retry": false,
+  "usable_F063_candidate_created": false,
+  "F069_generated_or_raw_relabelled_as069": false,
+  "exposure_or_scene_acceptance": false
+}
