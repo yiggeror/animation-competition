@@ -1,0 +1,22 @@
+{
+  "status": "INPUT_GATE_ONLY_NOT_ACTUAL056",
+  "visually_opened": [
+    "inputs/01_correct_full_near_bare_wrist_palmar_TARGET.png",
+    "inputs/02_same_right_target_TRUE_lower_shaft_LOCAL.png",
+    "inputs/03_actual052_local_bare_wrist_palmar_MATERIAL_ONLY.png",
+    "diagnostics/FULL_SCENE_NOT_MODEL_INPUT.jpg"
+  ],
+  "observed": "Single near RIGHT bare wrist and palm-side source-pixel anatomy reference; thenar/web/creases connected to distal forearm; thumb below original lower rod, index curled around, other3 free. Visible source-mesh seams are reference-only and must be redrawn naturally. No failed jade hand or alternate whole hand in model inputs. Full scene diagnostic includes protected far hand and is NOT model input.",
+  "reference_native_alpha8_bbox": [
+    818,
+    949,
+    1023,
+    1074
+  ],
+  "reference_native_right_edge_alpha8_pixels": 0,
+  "repair_imagegen_calls": 0,
+  "new_actual056_canvas": 0,
+  "formal_mother": "locked actual052",
+  "later060064": "PAUSED",
+  "future_adoption": "ONE complete repair patch similarity; small forearm join only, no per-finger deformation"
+}
