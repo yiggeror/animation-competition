@@ -1,0 +1,148 @@
+{
+  "status": "REAL_ORIGINAL_PROPS_REGISTERED_TO_APPROVED_RAW_MOTHER_PENDING_ASTRA",
+  "imagegenCallsThisStage": 0,
+  "nearBareRightPalmTarget": [
+    536,
+    750
+  ],
+  "farBangleLeftClothPinch": [
+    845,
+    744
+  ],
+  "originalCraneDefaultScale": 1.35,
+  "originalTurtleDefaultScale": 1.3,
+  "commonLapProjection": {
+    "sx": 0.55,
+    "sy": -0.33
+  },
+  "craneRoot": [
+    671.046421179075,
+    775.4175283251493
+  ],
+  "turtleRoot": [
+    426,
+    880
+  ],
+  "cranePose": {
+    "angles": {
+      "neck0": 0.25,
+      "neck1": -0.02,
+      "neck2": -0.06,
+      "neck3": -0.1,
+      "neck4": -0.14,
+      "neck5": -0.17,
+      "neck6": -0.19,
+      "neck7": -0.2,
+      "neck8": -0.19,
+      "neck9": -0.16,
+      "neck10": -0.12,
+      "neck11": -0.08,
+      "head": -0.55,
+      "tibia_near": 0.08,
+      "tarsus_near": -0.02,
+      "foot_near": 0.03,
+      "tibia_far": -0.05,
+      "tarsus_far": 0.02,
+      "foot_far": 0.03
+    },
+    "rootAngle": 0,
+    "facing": -1
+  },
+  "turtlePose": {
+    "angles": {
+      "legFN": 0,
+      "legBF": 0,
+      "legFF": 0,
+      "legBN": 0,
+      "tail": 0,
+      "neck0": -1.4174999999999998,
+      "neck1": 2.5675,
+      "neck2": -1.805,
+      "head": 0
+    },
+    "rootAngle": 0,
+    "facing": 1
+  },
+  "neck3TruePartLocalPoint": [
+    10,
+    0
+  ],
+  "neck3NotRivetCenter": true,
+  "neck3ProjectedPoint": [
+    536,
+    750
+  ],
+  "neck3ContactErrorPx": 0,
+  "pointOnFacingApplication": "pointOn excludes facing; apply facing ONCE before common lap plane",
+  "fourRealStraightRods": [
+    {
+      "puppet": "crane",
+      "part": "body",
+      "at": [
+        -75,
+        6
+      ],
+      "end": [
+        973,
+        903
+      ],
+      "start": [
+        712.296421179075,
+        773.4375283251493
+      ]
+    },
+    {
+      "puppet": "crane",
+      "part": "neck3",
+      "at": [
+        10,
+        0
+      ],
+      "end": [
+        945,
+        931
+      ],
+      "start": [
+        536,
+        750
+      ]
+    },
+    {
+      "puppet": "turtle",
+      "part": "shell",
+      "at": [
+        0,
+        40
+      ],
+      "end": [
+        869,
+        967
+      ],
+      "start": [
+        426,
+        866.8
+      ]
+    },
+    {
+      "puppet": "turtle",
+      "part": "head",
+      "at": [
+        20,
+        0
+      ],
+      "end": [
+        864,
+        989
+      ],
+      "start": [
+        544.3583552839057,
+        887.413578981037
+      ]
+    }
+  ],
+  "depthOrder": "original thighs -> repaired original cloth base -> rods -> complete original turtle/crane -> original raised cloth lip -> original near palm",
+  "originalPuppetPartsReshaped": false,
+  "independentHumanPartTransforms": false,
+  "sourceCameraTime": 0,
+  "actualCameraOnlyNoOldActionAdoption": true
+}
