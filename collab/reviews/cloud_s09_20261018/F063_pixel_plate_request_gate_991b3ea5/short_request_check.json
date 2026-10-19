@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETE_THREE_INPUT_REQUEST_PENDING_ASTRA_SHORT_REVIEW_ZERO_CALLS",
+  "approved_pixel_plate_commit": "991b3ea510974b0a2c4617b4c95fc91031ecbd9d",
+  "A_B_byte_exact_source_before_common_crop": true,
+  "crop": [
+    550,
+    0,
+    1320,
+    924
+  ],
+  "whole_forward_scale": 1.6623376623376624,
+  "expected_tool_size": [
+    1280,
+    1536
+  ],
+  "inverse_if_exact_size": "77/128+[550,0]",
+  "output_size_policy": "If tool returns proportionally different canvas, first one uniform whole-canvas mapping to1280x1536, then common77/128+[550,0]. Equivalently770/returned_width plus550,0 if returned aspect is5:6; never fit prop parts or stretch axes independently.",
+  "real_prop_and_whole_hand_gap_reference": "991b3ea5/short_check.json: actual alpha12815native, alpha110.0498756,0overlap",
+  "identity_material_reference_only": [
+    "masked head/neck/collar source crop550,15,1025,580",
+    "inner cloth crop780,565,836,605",
+    "inner skirt fabric crop750,800,850,880"
+  ],
+  "prompt_string_SHA256": "0776017ea5e5d8d292bf7782c38d1fd6977b3c1998391dd5a2602577a73613da",
+  "three_inputs": [
+    {
+      "path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/F063_pixel_plate_request_gate_991b3ea5/inputs_1280x1536/A_F063_pixel_plate_REQUEST_NOT_CALLED.png",
+      "sha256": "1abfc10483ab7c5d8f61d51b8f0cc7f145930a77c19c53a1943cb75a9dd7597f"
+    },
+    {
+      "path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/F063_pixel_plate_request_gate_991b3ea5/inputs_1280x1536/B_F063_pixel_plate_REQUEST_NOT_CALLED.png",
+      "sha256": "6616693e4b0e4540ce26b8476e1880534f130de29dee9b13c875fd11d23896de"
+    },
+    {
+      "path": "/workspace/animation-competition/collab/reviews/cloud_s09_20261018/F063_pixel_plate_request_gate_991b3ea5/inputs_1280x1536/C_F063_identity_fabric_ONLY_NOT_CALLED.png",
+      "sha256": "ed8b2b6dc570aee9bb7f36c5722dbe5534d27cda403ff95ca156a4615b8f11c0"
+    }
+  ],
+  "imagegen_calls": 0,
+  "F069_input": false,
+  "actual_viewed": [
+    "inputs_1280x1536/A_F063_pixel_plate_REQUEST_NOT_CALLED.png",
+    "inputs_1280x1536/B_F063_pixel_plate_REQUEST_NOT_CALLED.png",
+    "inputs_1280x1536/C_F063_identity_fabric_ONLY_NOT_CALLED.png",
+    "qa/three_inputs_dark_CONTACT_SHEET.png"
+  ],
+  "three_common_resample_checks": "PASS_RGBA0",
+  "exact_prompt_and_reference_path_check": "PASS"
+}
