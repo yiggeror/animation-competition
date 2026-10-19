@@ -1,0 +1,115 @@
+{
+  "only_inverse": {
+    "scale": 0.703125,
+    "offset": [
+      1240,
+      0
+    ]
+  },
+  "anchors": [
+    {
+      "name": "red_hair_bead_centroid",
+      "source_tool": [
+        401.73333333333335,
+        172.91666666666666
+      ],
+      "actual_raw_tool": [
+        401.72527472527474,
+        172.73076923076923
+      ],
+      "delta_raw_minus_source_tool": [
+        -0.008058608058604477,
+        -0.1858974358974308
+      ],
+      "source_native_under_only_inverse": [
+        1522.46875,
+        121.58203125
+      ],
+      "actual_native_under_only_inverse": [
+        1522.4630837912089,
+        121.45132211538461
+      ],
+      "method": "largest red material component in toolROI380..435/145..190; complete common canvas",
+      "reading_AA_uncertainty_tool_px": 2
+    },
+    {
+      "name": "overlapping_shoes_upper_visible_right_profile",
+      "source_tool": [
+        427.0,
+        1400.0
+      ],
+      "actual_raw_tool": [
+        428.0,
+        1400.0
+      ],
+      "delta_raw_minus_source_tool": [
+        1.0,
+        0.0
+      ],
+      "source_native_under_only_inverse": [
+        1540.234375,
+        984.375
+      ],
+      "actual_native_under_only_inverse": [
+        1540.9375,
+        984.375
+      ],
+      "method": "alpha128 rightmost visible stacked-shoe silhouette in fixed toolY1370..1400,x<500. It is a silhouette registration band, not a claim that the whole edge belongs to the near shoe; complete shoe source layers are recorded separately.",
+      "reading_AA_uncertainty_tool_px": 2
+    },
+    {
+      "name": "far_rear_toe_visible_lower_band",
+      "source_tool": [
+        448.0,
+        1431.5
+      ],
+      "actual_raw_tool": [
+        449.0,
+        1431.0
+      ],
+      "delta_raw_minus_source_tool": [
+        1.0,
+        -0.5
+      ],
+      "source_native_under_only_inverse": [
+        1555.0,
+        1006.5234375
+      ],
+      "actual_native_under_only_inverse": [
+        1555.703125,
+        1006.171875
+      ],
+      "method": "alpha128 rightmost silhouette in toolY1421..1456,x<500; visible rear toe only",
+      "reading_AA_uncertainty_tool_px": 2
+    },
+    {
+      "name": "actual_bail_top_visible_material",
+      "source_tool": [
+        716.0,
+        475.0
+      ],
+      "actual_raw_tool": [
+        727.5,
+        506.0
+      ],
+      "delta_raw_minus_source_tool": [
+        11.5,
+        31.0
+      ],
+      "source_native_under_only_inverse": [
+        1743.4375,
+        333.984375
+      ],
+      "actual_native_under_only_inverse": [
+        1751.5234375,
+        355.78125
+      ],
+      "method": "alpha128 top of true SOURCE lamp / RAW new lamp component, no hand subtraction",
+      "reading_AA_uncertainty_tool_px": 2
+    }
+  ],
+  "no_separate_fitting_or_offset_optimization": true,
+  "fixed_source_lamp_mask_NOT_carved_by_newhand": true,
+  "actual_person_mask_NOT_carved_by_oldlamp": true,
+  "interpretation": "These4anchors audit a single common registration; new lamp drifts despite head/shoe anchors being close. This does not certify all mother pixels preserved."
+}

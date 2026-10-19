@@ -1,0 +1,182 @@
+{
+  "status": "HOLD_FIXED_PROP_CONTACT_AND_MISSING_FAR_PALM",
+  "raw_sha256": "e2d25f29055fe8de97caea83620be7127fe15bf97ce859f922b83f7c0f0a16bf",
+  "raw_size": [
+    1024,
+    1536
+  ],
+  "only_inverse": {
+    "scale": 0.703125,
+    "offset": [
+      1240,
+      0
+    ],
+    "native_crop": [
+      1240,
+      0,
+      1960,
+      1080
+    ]
+  },
+  "actual_viewed": [
+    "originals/F100_call01_RAW.png",
+    "frozen6cb A",
+    "qa/frozen_vs_actual_whole_gray.png",
+    "qa/frozen_vs_actual_whole_dark.png",
+    "qa/arm_waist_fixed_bail_connections_gray.png",
+    "qa/arm_waist_fixed_bail_connections_dark.png",
+    "qa/actual_hand_against_FIXED_original_bail_gray_4x.png",
+    "qa/actual_hand_against_FIXED_original_bail_dark_4x.png"
+  ],
+  "visible_raw_facts": [
+    "Near RIGHT sleeve→upperarm→elbow→forearm→wrist→whole open hand is visually continuous; no old narrow wrist patch seam visible.",
+    "New broad waist/hip cloth is continuous, without visible old hanging-hand cutout or narrow bridge. This does not approve new cloth/palette against mother.",
+    "At alpha16/128 raw hand and RAW new bail have air, but the raw lamp shifted downward. Restoring actual frozen lamp creates finger/bail material overlap.",
+    "Original far LEFT palm/fingers under blouse are visibly omitted in raw. Small skin sliver at upper side is not a complete far chain."
+  ],
+  "alpha_counts": {
+    "zero": 1140780,
+    "one_through15": 26823,
+    "16through127": 6345,
+    "maximum": 254
+  },
+  "correction_of_initial_preview_claim": "Initial preview-only statement of full opaque haze background is withdrawn. Most haze is hiddenRGB at alpha0/weak AA. Only correctly alpha-composited diagnostic gray/dark images are evidence; original raw unchanged.",
+  "actual_hand_to_actual_new_lamp_gap": {
+    "1": {
+      "person_component": 65,
+      "lamp_component": 65,
+      "joined_through_alpha_threshold": true
+    },
+    "16": {
+      "person_component": 1,
+      "lamp_component": 11,
+      "joined_through_alpha_threshold": false,
+      "min_pixel_center_distance_raw": 5.0990195135927845,
+      "min_pixel_center_distance_native": 3.5852480954949266,
+      "actual_hand_point_raw": [
+        693,
+        506
+      ],
+      "actual_lamp_point_raw": [
+        694,
+        511
+      ]
+    },
+    "128": {
+      "person_component": 1,
+      "lamp_component": 48,
+      "joined_through_alpha_threshold": false,
+      "min_pixel_center_distance_raw": 6.708203932499369,
+      "min_pixel_center_distance_native": 4.716705890038619,
+      "actual_hand_point_raw": [
+        693,
+        505
+      ],
+      "actual_lamp_point_raw": [
+        696,
+        511
+      ]
+    }
+  },
+  "actual_hand_to_fixed_original_lamp": {
+    "16": {
+      "overlap_tool_pixels": 325,
+      "bbox_tool_inclusive": [
+        657,
+        474,
+        722,
+        507
+      ],
+      "bbox_native_inclusive": [
+        1701.953125,
+        333.28125,
+        1747.65625,
+        356.484375
+      ],
+      "source_original_lamp_file": "F100_next_gate_20261019/reference/existing_table_lamp_NATIVE_same_registration.png",
+      "source_original_lamp_sha256": "5c2321d12357ed82cee9e582a00f67faa92a8cc32ca0cbc33ae89608443ed29a"
+    },
+    "128": {
+      "overlap_tool_pixels": 195,
+      "bbox_tool_inclusive": [
+        659,
+        475,
+        717,
+        493
+      ],
+      "bbox_native_inclusive": [
+        1703.359375,
+        333.984375,
+        1744.140625,
+        346.640625
+      ],
+      "source_original_lamp_file": "F100_next_gate_20261019/reference/existing_table_lamp_NATIVE_same_registration.png",
+      "source_original_lamp_sha256": "5c2321d12357ed82cee9e582a00f67faa92a8cc32ca0cbc33ae89608443ed29a"
+    }
+  },
+  "far_left_palm_source_check": {
+    "frozen_actual_visible_far_skin_sample_pixels": 1355,
+    "source_native_bbox_inclusive": [
+      1486,
+      561,
+      1549,
+      604
+    ],
+    "same_positions_actual_raw_warm_visible_pixels": 0,
+    "interpretation": "Frozen far LEFT palm/fingers under blouse are replaced by native navy/empty material, not preserved as requested. Full original fararm cannot be claimed present in raw."
+  },
+  "source_shoe_anchors": [
+    {
+      "source": "F100_near_whole_shoe_FIXED.png",
+      "sha256": "60805bc58c5035c804025d84a00f122e434fb217e68478c86d671a5ab6a180a3",
+      "tool_alpha128_bbox_inclusive": [
+        172,
+        1340,
+        421,
+        1454
+      ],
+      "native_true_source_sole": 1022
+    },
+    {
+      "source": "F100_far_whole_shoe_FIXED.png",
+      "sha256": "64637d1d886e25fdcf3c888b533c1a8164844fe429a87295cfb9194dc585503c",
+      "tool_alpha128_bbox_inclusive": [
+        206,
+        1331,
+        448,
+        1454
+      ],
+      "native_true_source_sole": 1022
+    }
+  ],
+  "manual_lamp_registration_readings": {
+    "fixed_lamp_bail_top_tool_approx": [
+      717,
+      476
+    ],
+    "actual_lamp_bail_top_tool_approx": [
+      729,
+      506
+    ],
+    "reading_uncertainty_tool_px": 3,
+    "actual_lamp_vs_fixed_approx_delta_tool": [
+      12,
+      30
+    ],
+    "actual_lamp_vs_fixed_approx_delta_native": [
+      8.4375,
+      21.09375
+    ],
+    "interpretation": "Whole inverse is held fixed. New lamp moved relative to true original; no independent lamp or hand registration allowed."
+  },
+  "adoption_feasibility": "Neararm+waist are coherent source material, but NOT legal final fixed-prop combination: actual hand overlaps original bail at fixed common registration. Do not independently move hand/lamp, shrink grip, bridge wrist, or reattach far hand/shoes to claim whole chain passed. Only a clearly marked diagnostic is produced; no adopted candidate.",
+  "limits": [
+    "Finger count/topology partly occluded; visible open-hand silhouette is not an automatic five-finger pass.",
+    "Rawbody/shoes/lamp dimensions and palette are not production mother approval. Preserve original layers only after real registered joins pass.",
+    "103/106 four-input gate/calls not authorized here."
+  ],
+  "imagegen_calls": 0,
+  "git_operations": 0,
+  "common_registration_four_anchors": "geometry/common_registration_four_anchors.json",
+  "saved_source_masks": "masks/*_NO_*subtraction.png; source masks retain their material even when overlapping"
+}
