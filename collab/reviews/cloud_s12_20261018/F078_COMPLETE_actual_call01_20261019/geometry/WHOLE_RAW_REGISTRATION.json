@@ -1,0 +1,177 @@
+{
+  "status": "ONE_RAW_ONE_REAL_CANVAS_DELIVERED_NOT_QUALIFIED_SUPPORT_DRIFT",
+  "raw_SHA256": "3e1862e689ff6f891f6324d02fba8abe6bd9b1608604f48396216bbacb41cef8",
+  "native_candidate_SHA256": "d43046ca6d1827fddbac4ba5c53f718d71641bd2836292038e261df0233788f6",
+  "one_whole_raw_to_native_matrix": [
+    [
+      0.9303437925904182,
+      -0.01989621992745651,
+      75.05001385339897
+    ],
+    [
+      0.01989621992745651,
+      0.9303437925904182,
+      40.86447572129016
+    ]
+  ],
+  "uniform_scale": 0.9305565173480463,
+  "rotation_degrees": 1.2251338658955424,
+  "translation_native": [
+    75.05001385339897,
+    40.86447572129016
+  ],
+  "fit_objective": "Whole actual alpha128 silhouette weighted floor3 + PASSED FINAL074 grip soft-contact estimates transformed by same exact rigid upper-body/true-prop matrix. Four global parameters only. Reference body pixels NEVER adopted. FINAL074 grips already passed despite small soft-point-to-axis estimate residual; preserve actual relationship rather than inventing new palm points.",
+  "raw_soft_contacts_far_then_near": [
+    [
+      978.0,
+      744.0
+    ],
+    [
+      981.0,
+      875.0
+    ]
+  ],
+  "target_final074_passed_soft_contacts_same_rigid_transform": [
+    [
+      964.2917704843117,
+      752.979771156246
+    ],
+    [
+      979.2881556763803,
+      875.2844798902086
+    ]
+  ],
+  "registered_soft_contact_estimates": [
+    [
+      970.1234553808002,
+      752.4987604976138
+    ],
+    [
+      970.3080819480748,
+      874.433485986741
+    ]
+  ],
+  "contact_residual_native": [
+    [
+      5.831684896488582,
+      -0.4810106586321581
+    ],
+    [
+      -8.980073728305456,
+      -0.8509939034676108
+    ]
+  ],
+  "contact_estimate_uncertainty_native": 3,
+  "lower_support_contour_absolute_distance_p95_native": 54.36027887564165,
+  "old_support_RGBA_pixels_identical": false,
+  "foreground_partition_only_polygons_raw": {
+    "far_actual_curled_front_digits": [
+      [
+        944,
+        731
+      ],
+      [
+        968,
+        729
+      ],
+      [
+        985,
+        737
+      ],
+      [
+        982,
+        760
+      ],
+      [
+        969,
+        772
+      ],
+      [
+        949,
+        769
+      ],
+      [
+        930,
+        760
+      ],
+      [
+        935,
+        743
+      ]
+    ],
+    "near_actual_curled_front_digits": [
+      [
+        980,
+        832
+      ],
+      [
+        999,
+        836
+      ],
+      [
+        1015,
+        851
+      ],
+      [
+        1018,
+        887
+      ],
+      [
+        1002,
+        900
+      ],
+      [
+        981,
+        893
+      ],
+      [
+        975,
+        884
+      ],
+      [
+        978,
+        872
+      ],
+      [
+        986,
+        865
+      ],
+      [
+        984,
+        848
+      ]
+    ]
+  },
+  "exclusive_BG_FG_union_exact": true,
+  "local_body_finger_shoe_warps": 0,
+  "source_reference_pixels_adopted": 0,
+  "raw_RGBA_material_edits": 0,
+  "actual_Canvas_pending": false,
+  "actual_Canvas_SHA256": "73015291d4adaaf713edfd70bd1a7f5d75b4dac683b7781af219bd2dcf2f5dce",
+  "actual_ground_shadow_box_front_byte_identical_to_final074": {
+    "native_ground_shadows_actual_layer.png": "242ac036e9546967e05e23b42f418deea70923087132bbf8aa1851a2c994ede4",
+    "box_front_actual_layer.png": "4995c6a3e636f9a81a072773658da9c8607579bfc20235acfb0700ad6decbd34"
+  },
+  "BG_FG_visible_reconstruction": {
+    "native_alpha_overlap": 0,
+    "native_visible_RGBA_reconstruction_diff": 0,
+    "native_alpha_reconstruction_diff": 0,
+    "native_fully_transparent_hidden_RGB_diff": 20
+  },
+  "visible_shoe_drift": {
+    "final074": {
+      "leftmost_visible_native_x": 38,
+      "lowest_visible_native_y": 1313,
+      "scope": "left portions of actual shoe silhouettes only, alpha>=128,x<200,y>=1080"
+    },
+    "actual078": {
+      "leftmost_visible_native_x": 75,
+      "lowest_visible_native_y": 1335,
+      "scope": "left portions of actual shoe silhouettes only, alpha>=128,x<200,y>=1080"
+    },
+    "actual078_minus_final074": {
+      "leftmost_x_delta_native": 37,
+      "lowest_y_delta_native": 22
+    }
+  }
+}

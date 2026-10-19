@@ -1,0 +1,54 @@
+{
+  "status": "F078_ACTUAL_UNQUALIFIED_FOR_NEXT_MOTHER_VISIBLE_SUPPORT_DRIFT",
+  "opened": [
+    "originals/F078_call01_raw.png",
+    "actual_scene/F078_canvas.png",
+    "diagnostics/ACTUAL_F078_BOTH_TRUE_GRIPS.png",
+    "diagnostics/ACTUAL_F078_GROUND_HIPS_KNEES_SHINS_SHOES.png",
+    "diagnostics/ACTUAL_F078_CRANE_CLOTH_FRONT.png",
+    "diagnostics/FINAL074_TARGET078_ACTUAL078_SAME_NATIVE_LOWER_BODY.png"
+  ],
+  "imagegen_calls": 1,
+  "actual078_Canvas": 1,
+  "next_posture_calls": 0,
+  "raw_SHA256": "3e1862e689ff6f891f6324d02fba8abe6bd9b1608604f48396216bbacb41cef8",
+  "native_SHA256": "d43046ca6d1827fddbac4ba5c53f718d71641bd2836292038e261df0233788f6",
+  "actual_Canvas_SHA256": "73015291d4adaaf713edfd70bd1a7f5d75b4dac683b7781af219bd2dcf2f5dce",
+  "one_whole_raw_similarity_only": true,
+  "knee_shin_finger_shoe_local_deformations": 0,
+  "reference_body_RGB_alpha_adopted": 0,
+  "raw_material_edits": 0,
+  "protected_prior_final074_original_not_changed": true,
+  "BG_FG_proof": {
+    "native_alpha_overlap": 0,
+    "native_visible_RGBA_reconstruction_diff": 0,
+    "native_alpha_reconstruction_diff": 0,
+    "native_fully_transparent_hidden_RGB_diff": 20
+  },
+  "actual_pageerror_or_requestfailed": [],
+  "frozen078_true_props_source_SHA256": "99ad9ef04be6c42822cd2f62861bf01f25a86e268a7f51cc930ce6987175f75e",
+  "fixed_ground_shadow_and_box_front_byte_identical_to_final074": true,
+  "visible_shoe_drift": {
+    "final074": {
+      "leftmost_visible_native_x": 38,
+      "lowest_visible_native_y": 1313,
+      "scope": "left portions of actual shoe silhouettes only, alpha>=128,x<200,y>=1080"
+    },
+    "actual078": {
+      "leftmost_visible_native_x": 75,
+      "lowest_visible_native_y": 1335,
+      "scope": "left portions of actual shoe silhouettes only, alpha>=128,x<200,y>=1080"
+    },
+    "actual078_minus_final074": {
+      "leftmost_x_delta_native": 37,
+      "lowest_y_delta_native": 22
+    }
+  },
+  "visual_findings": {
+    "body": "Full hips visibly leave heels and thighs/waist/chest/head/arms rise; source posterior gap and hem dots naturally redrawn. Complete new person, not constructed reference adoption.",
+    "grips": "FarLEFTjade / nearRIGHTbare true two-rod closed grips remain readable with foreground digits. Whole fit soft-contact residual far(+5.83,-0.48)native,near(-8.98,-0.85)native,+/-3native estimate uncertainty; no finger/palm pull. Actual final grip approval remains Astra.",
+    "props": "Same frozen078 rigid true two shafts/crane and hinges; original box/front. Crane visibly unloads cloth, source-derived shadow, not an all-parts empty-gap claim.",
+    "blocking_support_issue": "Visible shoes/lower supports drift to RIGHT/DOWN versus final074 frozen support positions. Ground shadow cached layer is still exact final074, so this does NOT pass required fixed knee/shin/instep/shoe support continuity. Whole lower silhouette p95 reference deviation54.36native is not a hidden-bone measurement. Same-native comparison and actual contact crop expose mismatch. No local leg shrinking/translation or automatic rerender/regeneration applied.",
+    "gate": "Not final locked,0new usable pose count until actual support correction/review. Do not bind a next pose to this unqualified078."
+  }
+}
