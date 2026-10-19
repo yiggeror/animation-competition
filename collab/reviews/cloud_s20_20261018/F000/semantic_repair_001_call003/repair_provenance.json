@@ -1,0 +1,397 @@
+{
+  "baseline_commit": "92e74891c29d3453488d8fdc4d73297ece159b15",
+  "source001_SHA256": "de1aec591119393f7f99a61a166f62e9af456ce24ffd718fec0429b20fe2e330",
+  "source003_SHA256": "6eb8ed6145da4cf9a053993c383ae66f80b474d1a4f8b131a89cfd9e3fd6b204",
+  "before_SHA256": "8d628e5fa1d5c8d69aaea749c37cd2b9b1fe14b971d6b38f8efa4a37f8add433",
+  "candidate_SHA256": "423715194ffaa08e867a0e1e3c6f6febe5de703e6c84fb2dc26d282ab6139943",
+  "canvas": [
+    1672,
+    941
+  ],
+  "new_model_calls": 0,
+  "ROIs_half_open": {
+    "L": [
+      970,
+      358,
+      1018,
+      410
+    ],
+    "R": [
+      974,
+      416,
+      1031,
+      470
+    ],
+    "cloth": [
+      1018,
+      398,
+      1200,
+      520
+    ]
+  },
+  "mask_counts": {
+    "L": 2308,
+    "R": 2588,
+    "cloth": 16002,
+    "union": 20898
+  },
+  "changed_counts": {
+    "L": 1268,
+    "R": 2034,
+    "cloth": 7414,
+    "outside_union": 0,
+    "protected_palms_jade_rods_child": 0
+  },
+  "source_skin_to_cloth_pixels": 0,
+  "source001_cloth_donor_min_y": 456,
+  "source001_coordinates_unchanged": true,
+  "lower001_y505_519_exact_pixels": 2557,
+  "color_offset_near_L_from_real_wrist": [
+    -1.0,
+    4.0,
+    10.0
+  ],
+  "color_offset_far_R_from_real_palm": [
+    -1.0,
+    0.0,
+    2.0
+  ],
+  "R_edge_ink_from_actual003": [
+    92.0,
+    74.0,
+    61.0
+  ],
+  "upper003_fold_profile_join": [
+    {
+      "y": 448,
+      "source003_center_x": 1041.8759528759529,
+      "joined_center_x": 1042.0,
+      "source001_shifted": false
+    },
+    {
+      "y": 449,
+      "source003_center_x": 1041.8645116918844,
+      "joined_center_x": 1042.0028686523438,
+      "source001_shifted": false
+    },
+    {
+      "y": 450,
+      "source003_center_x": 1041.8576317590691,
+      "joined_center_x": 1042.01123046875,
+      "source001_shifted": false
+    },
+    {
+      "y": 451,
+      "source003_center_x": 1041.8426738690075,
+      "joined_center_x": 1042.0247192382812,
+      "source001_shifted": false
+    },
+    {
+      "y": 452,
+      "source003_center_x": 1041.8335579514824,
+      "joined_center_x": 1042.04296875,
+      "source001_shifted": false
+    },
+    {
+      "y": 453,
+      "source003_center_x": 1041.8239202657808,
+      "joined_center_x": 1042.0656127929688,
+      "source001_shifted": false
+    },
+    {
+      "y": 454,
+      "source003_center_x": 1041.8088803088804,
+      "joined_center_x": 1042.09228515625,
+      "source001_shifted": false
+    },
+    {
+      "y": 455,
+      "source003_center_x": 1041.808524173028,
+      "joined_center_x": 1042.1226196289062,
+      "source001_shifted": false
+    },
+    {
+      "y": 456,
+      "source003_center_x": 1041.810333963453,
+      "joined_center_x": 1042.15625,
+      "source001_shifted": false
+    },
+    {
+      "y": 457,
+      "source003_center_x": 1041.809583074051,
+      "joined_center_x": 1042.1928100585938,
+      "source001_shifted": false
+    },
+    {
+      "y": 458,
+      "source003_center_x": 1041.812887236679,
+      "joined_center_x": 1042.23193359375,
+      "source001_shifted": false
+    },
+    {
+      "y": 459,
+      "source003_center_x": 1041.8171641791046,
+      "joined_center_x": 1042.2732543945312,
+      "source001_shifted": false
+    },
+    {
+      "y": 460,
+      "source003_center_x": 1041.818125387958,
+      "joined_center_x": 1042.31640625,
+      "source001_shifted": false
+    },
+    {
+      "y": 461,
+      "source003_center_x": 1041.8271759549154,
+      "joined_center_x": 1042.3610229492188,
+      "source001_shifted": false
+    },
+    {
+      "y": 462,
+      "source003_center_x": 1041.8382630585272,
+      "joined_center_x": 1042.40673828125,
+      "source001_shifted": false
+    },
+    {
+      "y": 463,
+      "source003_center_x": 1041.8494282083861,
+      "joined_center_x": 1042.4531860351562,
+      "source001_shifted": false
+    },
+    {
+      "y": 464,
+      "source003_center_x": 1041.8501308900522,
+      "joined_center_x": 1042.5,
+      "source001_shifted": false
+    },
+    {
+      "y": 465,
+      "source003_center_x": 1041.8630419821059,
+      "joined_center_x": 1042.5468139648438,
+      "source001_shifted": false
+    },
+    {
+      "y": 466,
+      "source003_center_x": 1041.8781512605042,
+      "joined_center_x": 1042.59326171875,
+      "source001_shifted": false
+    },
+    {
+      "y": 467,
+      "source003_center_x": 1041.8671820098384,
+      "joined_center_x": 1042.6389770507812,
+      "source001_shifted": false
+    },
+    {
+      "y": 468,
+      "source003_center_x": 1043.0303383897317,
+      "joined_center_x": 1042.68359375,
+      "source001_shifted": false
+    },
+    {
+      "y": 469,
+      "source003_center_x": 1045.096,
+      "joined_center_x": 1042.7267456054688,
+      "source001_shifted": false
+    },
+    {
+      "y": 470,
+      "source003_center_x": 1044.4388059701491,
+      "joined_center_x": 1042.76806640625,
+      "source001_shifted": false
+    },
+    {
+      "y": 471,
+      "source003_center_x": 1044.027027027027,
+      "joined_center_x": 1042.8071899414062,
+      "source001_shifted": false
+    },
+    {
+      "y": 472,
+      "source003_center_x": 1043.8858447488583,
+      "joined_center_x": 1042.84375,
+      "source001_shifted": false
+    },
+    {
+      "y": 473,
+      "source003_center_x": 1043.8913592723598,
+      "joined_center_x": 1042.8773803710938,
+      "source001_shifted": false
+    },
+    {
+      "y": 474,
+      "source003_center_x": 1043.8325229605618,
+      "joined_center_x": 1042.90771484375,
+      "source001_shifted": false
+    },
+    {
+      "y": 475,
+      "source003_center_x": 1043.7905027932961,
+      "joined_center_x": 1042.9343872070312,
+      "source001_shifted": false
+    },
+    {
+      "y": 476,
+      "source003_center_x": 1043.7542735042737,
+      "joined_center_x": 1042.95703125,
+      "source001_shifted": false
+    },
+    {
+      "y": 477,
+      "source003_center_x": 1044.5683297180044,
+      "joined_center_x": 1042.9752807617188,
+      "source001_shifted": false
+    },
+    {
+      "y": 478,
+      "source003_center_x": 1044.6999868989913,
+      "joined_center_x": 1042.98876953125,
+      "source001_shifted": false
+    },
+    {
+      "y": 479,
+      "source003_center_x": 1044.68590620724,
+      "joined_center_x": 1042.9971313476562,
+      "source001_shifted": false
+    }
+  ],
+  "upper003_real_ink_profile_source_rows": [
+    433,
+    455
+  ],
+  "flower_components": [
+    {
+      "source": "003_upper",
+      "white_pixels": 18,
+      "source_bbox_xyxy": [
+        1151,
+        416,
+        1156,
+        422
+      ],
+      "AA_mask_pixels": 53,
+      "source_coordinates_unchanged": true
+    },
+    {
+      "source": "003_upper",
+      "white_pixels": 237,
+      "source_bbox_xyxy": [
+        1173,
+        442,
+        1195,
+        465
+      ],
+      "AA_mask_pixels": 437,
+      "source_coordinates_unchanged": true
+    },
+    {
+      "source": "003_upper",
+      "white_pixels": 109,
+      "source_bbox_xyxy": [
+        1091,
+        451,
+        1106,
+        466
+      ],
+      "AA_mask_pixels": 213,
+      "source_coordinates_unchanged": true
+    },
+    {
+      "source": "001_lower",
+      "white_pixels": 54,
+      "source_bbox_xyxy": [
+        1031,
+        468,
+        1042,
+        486
+      ],
+      "AA_mask_pixels": 150,
+      "source_coordinates_unchanged": true
+    },
+    {
+      "source": "001_lower",
+      "white_pixels": 262,
+      "source_bbox_xyxy": [
+        1134,
+        468,
+        1157,
+        491
+      ],
+      "AA_mask_pixels": 463,
+      "source_coordinates_unchanged": true
+    },
+    {
+      "source": "001_lower",
+      "white_pixels": 231,
+      "source_bbox_xyxy": [
+        1063,
+        477,
+        1084,
+        499
+      ],
+      "AA_mask_pixels": 426,
+      "source_coordinates_unchanged": true
+    },
+    {
+      "source": "001_lower",
+      "white_pixels": 121,
+      "source_bbox_xyxy": [
+        1189,
+        493,
+        1200,
+        516
+      ],
+      "AA_mask_pixels": 219,
+      "source_coordinates_unchanged": true
+    },
+    {
+      "source": "001_lower",
+      "white_pixels": 12,
+      "source_bbox_xyxy": [
+        1171,
+        496,
+        1174,
+        501
+      ],
+      "AA_mask_pixels": 41,
+      "source_coordinates_unchanged": true
+    },
+    {
+      "source": "001_lower",
+      "white_pixels": 138,
+      "source_bbox_xyxy": [
+        1103,
+        508,
+        1126,
+        520
+      ],
+      "AA_mask_pixels": 239,
+      "source_coordinates_unchanged": true
+    },
+    {
+      "source": "001_lower",
+      "white_pixels": 41,
+      "source_bbox_xyxy": [
+        1030,
+        513,
+        1045,
+        520
+      ],
+      "AA_mask_pixels": 92,
+      "source_coordinates_unchanged": true
+    }
+  ],
+  "methods": {
+    "L": "Real003 premultiplied edge sampling, monotone true-wrist boundary and local skin-color join; remove only authorized wrist tail.",
+    "R": "Real003 whole short forearm edge remap and skin join to fixed original palm; chest excluded.",
+    "cloth": "One visible garment semantic piece;003 upper, confirmed001 lower same-coordinate cloth. Broad blue-fabric transition; whole flower components retained; original fold retained; exact lower505–519 connection."
+  },
+  "not_done": [
+    "new image generation",
+    "neck color changes",
+    "global alpha cleanup",
+    "later poses",
+    "scene/camera/EDL/audio changes"
+  ],
+  "production_ready": false
+}

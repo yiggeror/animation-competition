@@ -1,0 +1,27 @@
+{
+  "candidate_SHA256": "423715194ffaa08e867a0e1e3c6f6febe5de703e6c84fb2dc26d282ab6139943",
+  "canvas": [
+    1672,
+    941
+  ],
+  "new_model_calls": 0,
+  "new_raws": 0,
+  "in_flight": 0,
+  "checks": {
+    "three_masks_within_authorized_ROIs": true,
+    "three_masks_disjoint": true,
+    "outside_three_domains_RGBA_zero_change": true,
+    "true_palms_jade_front_rods_child_zero_change": true,
+    "previous_R_palm_guard_zero_change": true,
+    "old_skin_not_copied_to_cloth": true,
+    "existing_tracked_files_unchanged": true
+  },
+  "changed_pixels": 10716,
+  "mask_counts": [
+    2308,
+    2588,
+    16002
+  ],
+  "status": "PENDING_ASTRA_SHORT_REVIEW",
+  "production_ready": false
+}

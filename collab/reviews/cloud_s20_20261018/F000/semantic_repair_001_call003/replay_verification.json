@@ -1,0 +1,41 @@
+{
+  "isolated_replay_root": "/tmp/s20_semantic_replay_v6us7g8o",
+  "exit_code": 0,
+  "setup_note": "Workspace and tmp are different devices; hardlink setup was rejected with errno18, then all six upstream files were copied to a fresh directory. No input was modified.",
+  "candidate_not_supplied_to_replay": true,
+  "only_upstream_inputs_and_script_supplied": true,
+  "new_model_calls": 0,
+  "matches": {
+    "S20_F000_call003_semantic_repair_candidate.png": "423715194ffaa08e867a0e1e3c6f6febe5de703e6c84fb2dc26d282ab6139943",
+    "masks/01_near_L_wrist.png": "9eebb2d1be95ad72b49247aaef6b7b23d5574e81ef04329016cfaffc15ae688c",
+    "masks/02_far_R_forearm.png": "83d773ed2a73bc398277533399275d72d7bffaec37d19e0af2edb01d9025e291",
+    "masks/03_visible_front_cloth.png": "a4cb110c9f3b2e01e44d4470485d40233a89b65446457083cd7f2d8b243a6cfe",
+    "masks/all_three_semantic_union.png": "fb6f65c70230e4a74255b2b8bf3b5475eec6b17654f55e51a27d82382dd03be8"
+  },
+  "source_dependencies": [
+    {
+      "repo_path": "collab/reviews/cloud_s20_20261018/F000/generation_001/S20_F000_call001_raw.png",
+      "SHA256": "de1aec591119393f7f99a61a166f62e9af456ce24ffd718fec0429b20fe2e330"
+    },
+    {
+      "repo_path": "collab/reviews/cloud_s20_20261018/F000/generation_003_correct_pose/S20_F000_call003_correct_pose_raw.png",
+      "SHA256": "6eb8ed6145da4cf9a053993c383ae66f80b474d1a4f8b131a89cfd9e3fd6b204"
+    },
+    {
+      "repo_path": "collab/reviews/cloud_s20_20261018/F000/generation_003_correct_pose/S20_F000_call003_white_composite_candidate.png",
+      "SHA256": "8d628e5fa1d5c8d69aaea749c37cd2b9b1fe14b971d6b38f8efa4a37f8add433"
+    },
+    {
+      "repo_path": "collab/reviews/cloud_s20_20261018/F000/arm_correction_002_no_oldarms/masks_local/protect_R_palm.png",
+      "SHA256": "ed1d8f93d4e70f359759d0b6afe354a61accfe0743b53450b102c13d3aca2d2d"
+    },
+    {
+      "repo_path": "collab/reviews/cloud_s20_20261018/F000/arm_correction_002_no_oldarms/masks_local/protect_four_front_rods.png",
+      "SHA256": "80e46b7005c247b416f9109ba43ff60d43b6bb7ede72a931f968479f2b41b955"
+    },
+    {
+      "repo_path": "assets/fonts/NotoSansSC-VF.ttf",
+      "SHA256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da"
+    }
+  ]
+}

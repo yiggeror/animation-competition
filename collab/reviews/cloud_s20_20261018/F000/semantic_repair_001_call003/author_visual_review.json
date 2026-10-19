@@ -1,0 +1,22 @@
+{
+  "reviewed_utc": "2026-10-19T02:44:54.634760+00:00",
+  "candidate_SHA256": "423715194ffaa08e867a0e1e3c6f6febe5de703e6c84fb2dc26d282ab6139943",
+  "actual_views": [
+    "qa/near_L_before_after.png",
+    "qa/far_R_before_after.png",
+    "qa/cloth_before_after.png",
+    "qa/repaired_full_gray.png",
+    "qa/three_semantic_masks_overlay.png",
+    "qa/mask_contact_sheet.png"
+  ],
+  "findings": [
+    "近L镯后尖角和细浅尾收净，腕缘接向003新前臂；绿镯及真握掌原像素不动。",
+    "远R采用完整短前臂语义域连续接色与上下缘；真掌及胸衣边界保留。",
+    "前襟作为一个连通可见蓝白衣料片接回，保留新双臂/袖口，y469色带与折线接头已收齐；花朵从003上侧、001确认蓝布下侧整组保留。",
+    "下部y505–519在语义衣料mask内与001完全同像素，y520起未改；未回贴001旧肤臂。",
+    "全身仍1672×941，双臂已审结构、孩子、抓持、镜头与帧表不变。"
+  ],
+  "outcome": "AUTHOR_THREE_SEMANTIC_REPAIR_PASS_PENDING_ASTRA_SHORT_REVIEW",
+  "new_model_calls": 0,
+  "production_ready": false
+}
