@@ -1,0 +1,270 @@
+{
+  "status": "REBUILT_FIVE_F063_TECHNICAL_INPUTS_ACTUAL_PREPARER_REVIEW_COMPLETE_PENDING_ROOT_ASTRA_NO_CALL",
+  "reviewer": "cloud_6.1sol_preparer",
+  "actual_viewed_final": [
+    "reference/1_rebuilt_complete_volume_TARGET_NOT_ART_700x670.png",
+    "reference/2_complete_redraw_WHITE_REFERENCE_700x670.png",
+    "reference/3_real_head_collar_ruffle_identity_material_NO_OLD_ARMS.png",
+    "reference/4_exact026_lamp_head_crop_NO_FOREIGN_SKIN.png",
+    "reference/5_original044_unit_material_old_technical_wrist_EXCLUDED.png"
+  ],
+  "actual_findings": [
+    "A实际已无旧双臂/旧近手背下垂轮廓/技术腕残断口。原sourceunit完整人手片17350px排除，新近腕由左下接全新示意握掌；完整技术遮挡块覆盖原人手移除后的未知筒料负形，不代码补红筒RGB。",
+    "近705666→790730/r40→992650/r27→固定G，远970689→1005810/r45→1100696→固定表面P。远先近后，前后臂投影清楚，原近袖ruffle作为真实上层材料遮住体量起点；两前臂不交叉。全为NOT_ART技术体量，不是原生人物画/五指通过。",
+    "B实图完整涵盖旧双臂/手筒腾空、露衣区域、新近远全链与整新握手迎掌；头领/稳定ruffle/裙guard真实材料黑保，guard不含alpha0，后远层没有把新近前景锁断。",
+    "近肘底770在白域，790777在原裙黑保。近新体量不侵头或裙，远新体量也不侵稳定裙。保留原裙guardPNG完整SHA，不为撤回752/45开裙料。",
+    "3实际仅头领身份、真实ruffle、内部肤色/黄衣材质矩形，无旧双臂整姿；4仅精确026灯头，外来指皮/墨边和孤立非灯低alpha点清除408px，保留材料RGBA0改；5完整旧技术腕ROI1008..1075/490..566清3484源像素并明示不能继承，仅保筒尺/握指指属参考。",
+    "新技术体量（含真实筒料AA/示意outline）bbox674,498..1253,856半开，四边空像素余量74/268/47/44；白域bbox630,257..1263,866半开，余量30/27/37/34，无active材料被crop截断。所有新体量在B白域或稳定实际ruffle后层遮挡内。"
+  ],
+  "finite_checks": {
+    "source_mother_SHA": "fe70d79e90559659a83772cb29e4cbeffb2b22b355ed3e403509621b381cfad9",
+    "seven_source_manifest_SHA": "a8a9754898d41beefbfc942f7a0434ea4d893cd2ebef59ff218010862b5edcc3",
+    "inputs": [
+      {
+        "path": "reference/1_rebuilt_complete_volume_TARGET_NOT_ART_700x670.png",
+        "sha256": "5f4c77c4089aa54456bb060e12fe78e528d4a16bfa720cd96fafd344c4346100",
+        "size": [
+          700,
+          670
+        ]
+      },
+      {
+        "path": "reference/2_complete_redraw_WHITE_REFERENCE_700x670.png",
+        "sha256": "783d804c3c3774e95f37e67788f1a37507f0fb67cad4dca0fc45a0bc12e69fb5",
+        "size": [
+          700,
+          670
+        ]
+      },
+      {
+        "path": "reference/3_real_head_collar_ruffle_identity_material_NO_OLD_ARMS.png",
+        "sha256": "afe16f82f83d917b4b18e17e47a88d4f85de3002784df22c755bcdf19bdc61bf",
+        "size": [
+          700,
+          670
+        ]
+      },
+      {
+        "path": "reference/4_exact026_lamp_head_crop_NO_FOREIGN_SKIN.png",
+        "sha256": "10d210379f6a00c5d3184778d48c73bf06eb84b51fae01c02ce9b61454f8f4a5",
+        "size": [
+          115,
+          151
+        ]
+      },
+      {
+        "path": "reference/5_original044_unit_material_old_technical_wrist_EXCLUDED.png",
+        "sha256": "a1fa6d9bccf874e65f8d08779a32973ed6180ccb139399bab1a3b921324a9351",
+        "size": [
+          350,
+          535
+        ]
+      }
+    ],
+    "source_old_human_excluded_A": 17350,
+    "old_near_source_residue_except_actual_guards": 0,
+    "old_near_base_residue_inside_white": 0,
+    "old_far_base_residue_inside_white": 0,
+    "white_pixels": 192771,
+    "guard_intersections": {
+      "head": 0,
+      "near_ruffle": 0,
+      "unchanged_skirt": 0
+    },
+    "guard_alpha0_pixels": 0,
+    "stable_guard_RGBA_changes": 0,
+    "near770_white": 255,
+    "skirt777_black": 0,
+    "new_volume_bbox_and_margins": {
+      "bbox_native_halfopen": [
+        674,
+        498,
+        1253,
+        856
+      ],
+      "bbox_crop_local_halfopen": [
+        74,
+        268,
+        653,
+        626
+      ],
+      "blank_pixel_margins_left_top_right_bottom": [
+        74,
+        268,
+        47,
+        44
+      ],
+      "all_inside_crop": true
+    },
+    "white_bbox_and_margins": {
+      "bbox_native_halfopen": [
+        630,
+        257,
+        1263,
+        866
+      ],
+      "bbox_crop_local_halfopen": [
+        30,
+        27,
+        663,
+        636
+      ],
+      "blank_pixel_margins_left_top_right_bottom": [
+        30,
+        27,
+        37,
+        34
+      ],
+      "all_inside_crop": true
+    },
+    "new_volume_clipped": 0,
+    "new_volume_outside_white_or_actual_stable_guard": 0,
+    "technical_far_hand_vs_true_visible_prop": {
+      "overlap_pixels": 0,
+      "minimum_pixel_center_distance_native": 21.213203435596427
+    },
+    "technical_far_hand_vs_new_grip": {
+      "overlap_pixels": 0,
+      "minimum_pixel_center_distance_native": 24.351591323771842
+    },
+    "reference_coordinate_mappings": {
+      "A_B": {
+        "source_native_crop": [
+          600,
+          230,
+          1300,
+          900
+        ],
+        "local_xy_equals_native_minus": [
+          600,
+          230
+        ],
+        "scale": 1
+      },
+      "ref3_head_collar": {
+        "source_crop": [
+          550,
+          15,
+          1020,
+          580
+        ],
+        "paste_top_left": [
+          8,
+          30
+        ],
+        "scale": 1,
+        "source_mask": "F044_actual_head_neck_collar_guard.png",
+        "mapping": "ref3=(source-[550,15])+[8,30]"
+      },
+      "ref3_near_ruffle": {
+        "source_crop": [
+          630,
+          600,
+          790,
+          725
+        ],
+        "paste_top_left": [
+          510,
+          55
+        ],
+        "scale": 1,
+        "source_mask": "F044_actual_stable_near_ruffle_guard.png"
+      },
+      "ref3_skin": {
+        "source_crop": [
+          903,
+          653,
+          927,
+          677
+        ],
+        "paste_top_left": [
+          540,
+          240
+        ],
+        "scale": 1
+      },
+      "ref3_cloth": {
+        "source_crop": [
+          780,
+          565,
+          836,
+          605
+        ],
+        "paste_top_left": [
+          520,
+          325
+        ],
+        "scale": 1
+      },
+      "ref4": {
+        "source_crop": [
+          1155,
+          485,
+          1270,
+          636
+        ],
+        "local_xy_equals_source_minus": [
+          1155,
+          485
+        ],
+        "scale": 1,
+        "excluded_pixels_mask": "masks/ref4_nonlamp_skin_and_edge_EXCLUDED.png",
+        "retained_source_RGBA_changed_pixels": 0
+      },
+      "ref5": {
+        "source_crop": [
+          990,
+          250,
+          1220,
+          690
+        ],
+        "paste_top_left": [
+          60,
+          45
+        ],
+        "scale": 1,
+        "mapping": "ref5=(source-[990,250])+[60,45]",
+        "full_wrist_exclusion_native_inclusive": [
+          1008,
+          490,
+          1075,
+          566
+        ]
+      }
+    },
+    "ref4_kept_RGBA_independent_check": 0,
+    "draft_prompt_words": 261,
+    "five_references_only": true,
+    "isolated_sources_plus_prepare_replay": {
+      "reference/1_rebuilt_complete_volume_TARGET_NOT_ART_700x670.png": {
+        "sha256": "5f4c77c4089aa54456bb060e12fe78e528d4a16bfa720cd96fafd344c4346100",
+        "isolated_replay_byte_identical": true
+      },
+      "reference/2_complete_redraw_WHITE_REFERENCE_700x670.png": {
+        "sha256": "783d804c3c3774e95f37e67788f1a37507f0fb67cad4dca0fc45a0bc12e69fb5",
+        "isolated_replay_byte_identical": true
+      },
+      "reference/3_real_head_collar_ruffle_identity_material_NO_OLD_ARMS.png": {
+        "sha256": "afe16f82f83d917b4b18e17e47a88d4f85de3002784df22c755bcdf19bdc61bf",
+        "isolated_replay_byte_identical": true
+      },
+      "reference/4_exact026_lamp_head_crop_NO_FOREIGN_SKIN.png": {
+        "sha256": "10d210379f6a00c5d3184778d48c73bf06eb84b51fae01c02ce9b61454f8f4a5",
+        "isolated_replay_byte_identical": true
+      },
+      "reference/5_original044_unit_material_old_technical_wrist_EXCLUDED.png": {
+        "sha256": "a1fa6d9bccf874e65f8d08779a32973ed6180ccb139399bab1a3b921324a9351",
+        "isolated_replay_byte_identical": true
+      }
+    },
+    "isolated_directory": "/tmp/s09_F063_rebuilt5_replay_hscyf2ka/packet"
+  },
+  "limits": [
+    "图1新的蓝/褐手臂与手掌是明确授权技术示意，不是代码画出的最终人物或已验证真实解剖。",
+    "21.21/24.35px间距是本技术体量/源筒扫描，不替代真实手指/掌厚/新握持实图检查；32法线距离仍只是拟接触表面点关系。",
+    "后续原生必须真绘完整近远臂/两手/握筒与显露衣料，清技术色和文字，保持GLTP与稳定源；英文261词仅草稿非冻结。",
+    "只063五输入门；root/Astra实际二审/裁定后才可能调用。本轮0调用/提交/推送，旧退回包与S07文件未改。"
+  ],
+  "remaining_clear_input_geometry_conflicts": [],
+  "new_calls": 0
+}
