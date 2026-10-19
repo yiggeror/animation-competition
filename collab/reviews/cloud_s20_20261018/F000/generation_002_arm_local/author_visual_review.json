@@ -1,0 +1,36 @@
+{
+  "reviewed_utc": "2026-10-19T01:43:35.624982+00:00",
+  "raw_sha256": "9f8edf0f17d5aac7ec425bb74258e168a80f0aad096c56a3efd4f307b6ce98bf",
+  "source_gate_commit": "5ce9da50b92eac9062e808a335c4f0b2f5b08995",
+  "outcome": "FAIL_NEAR_FAR_ARM_OWNERSHIP_AND_CANVAS_WIDTH_NO_COMPOSITE",
+  "actual_views_inspected": [
+    "qa/raw_shoulders_to_palms_3x_QA.png",
+    "qa/raw_high_wrist_to_far_sleeve_3x_QA.png",
+    "qa/raw_low_wrist_to_near_sleeve_3x_QA.png",
+    "qa/approved_target_vs_failed_raw.png"
+  ],
+  "acceptance_checks": {
+    "near_L_from_near_shoulder_to_high_bracelet_palm": false,
+    "far_R_from_far_shoulder_to_low_bare_wrist": false,
+    "canvas_exactly_1672x941": false
+  },
+  "observations": [
+    "高位带镯掌仍通过前臂接到躯干远侧；近侧短袖/上臂/肘仍接低位裸腕掌。",
+    "原错误整条臂链仍保留，没有实现target的近L高掌、远R低掌替代连接；不把它登记为仅有少量旧臂残影。",
+    "PNG IHDR和Pillow独立读数均为1671×941；宽度少1列，不能假定缺列位置或自动补列/缩放注册。",
+    "模型raw未注册且未合成，不称孩子/两掌/玉镯/四前杆与源逐像素保真。所有冻结源和输入原字节均保留。"
+  ],
+  "white_mask_composite_executed": false,
+  "composite_output_exists": false,
+  "raw_resized_padded_cropped_or_edited": false,
+  "neck_or_alpha_cleanup_applied": false,
+  "new_model_calls": 1,
+  "new_raws": 1,
+  "cumulative_model_calls": 2,
+  "cumulative_raws": 2,
+  "in_flight": 0,
+  "retries": 0,
+  "later_pose_calls": 0,
+  "production_ready": false,
+  "cause_limits": "Only observed failure is recorded; model internals and the reason for the one-column width discrepancy are unknown."
+}

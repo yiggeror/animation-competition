@@ -1,0 +1,34 @@
+{
+  "verified_utc": "2026-10-19T01:44:47.365729+00:00",
+  "approved_gate_commit": "5ce9da50b92eac9062e808a335c4f0b2f5b08995",
+  "image_acceptance": "FAIL",
+  "delivery_integrity": "PASS",
+  "raw_sha256": "9f8edf0f17d5aac7ec425bb74258e168a80f0aad096c56a3efd4f307b6ce98bf",
+  "actual_size": [
+    1671,
+    941
+  ],
+  "required_size": [
+    1672,
+    941
+  ],
+  "anatomy_failures": [
+    "nearL does not reach high bracelet palm",
+    "farR does not reach low bare palm"
+  ],
+  "integrity_checks": {
+    "tool_return_payload_equals_original_and_delivery_raw": true,
+    "five_input_snapshots_SHA_match": true,
+    "full_args_and_prompt_exactly_approved": true,
+    "one_local_call_one_raw_zero_retry_zero_inflight": true,
+    "no_resize_padding_cropping_or_white_mask_composite": true,
+    "all_previous_tracked_assets_and_checksum_entries_unchanged": true,
+    "216_frame_contract_unchanged": true,
+    "new_files_only_in_exclusive_call002_review_directory": true,
+    "visual_failure_evidence_preserved": true
+  },
+  "production_ready": false,
+  "white_mask_composite_executed": false,
+  "neck_or_alpha_cleanup_applied": false,
+  "later_pose_calls": 0
+}
