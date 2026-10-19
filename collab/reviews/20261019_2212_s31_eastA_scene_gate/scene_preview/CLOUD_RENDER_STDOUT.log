@@ -1,0 +1,44 @@
+BROWSER error Failed to load resource: the server responded with a status of 404 (Not Found)
+BROWSER warning Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently
+BROWSER warning Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently
+BROWSER warning Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently
+BROWSER warning Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently
+{
+  "status": "failed",
+  "pngs": [
+    {
+      "filename": "S31_B_F180_CLEAN.png",
+      "bytes": 603637,
+      "sha256": "dc354bc063c9fea96193189573954ccafd91b2b8660a4f5dbcf576055064bfa0"
+    },
+    {
+      "filename": "S31_A_F000_ACTUAL_SCENE.png",
+      "bytes": 373627,
+      "sha256": "28aaa976c29186c18597392e8d21c268c935f0707c18a30ca8160c9f9b28641e"
+    },
+    {
+      "filename": "S31_A_F116_ACTUAL_SCENE.png",
+      "bytes": 377055,
+      "sha256": "17f51b450301e58e34b8e1f01735f59c3fd4e33a369a5aa2ec7656de3fef4124"
+    },
+    {
+      "filename": "S31_B_F180_AFTER_A.png",
+      "bytes": 603640,
+      "sha256": "540bff85599dc29962ca06b08099dcaf65583b23b20b0354217694ad95f20b6c"
+    }
+  ],
+  "boundary": [
+    {
+      "frame": 180,
+      "differingChannels": 6,
+      "maxAbsoluteDifference": 1,
+      "totalAbsoluteDifference": 6,
+      "exactMatch": false
+    }
+  ],
+  "httpFailures": [],
+  "requestFailed": [],
+  "pageErrors": []
+}
+Error: Original B180 changed after A: pixel-isolation test FAILED
+    at /workspace/s29-drawn-reference-20261019/collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/render_keyframes.cjs:53:116

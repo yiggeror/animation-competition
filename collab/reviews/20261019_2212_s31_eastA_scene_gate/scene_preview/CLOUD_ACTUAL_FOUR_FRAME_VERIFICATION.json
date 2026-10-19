@@ -1,0 +1,339 @@
+{
+  "fixed_input_commit": "97ffbb4a1988cae54805eda9f04d73093db9d110",
+  "original_input_files_byte_verified": 32,
+  "input_mutations": 0,
+  "runs": 1,
+  "rendered_PNGs": 4,
+  "whole_shot_rendered": false,
+  "strict_B_before_after_zero_difference": false,
+  "runtime_canvas_boundary": [
+    {
+      "frame": 180,
+      "differingChannels": 6,
+      "maxAbsoluteDifference": 1,
+      "totalAbsoluteDifference": 6,
+      "exactMatch": false
+    }
+  ],
+  "independent_PNG_RGBA": {
+    "shape": [
+      540,
+      960,
+      4
+    ],
+    "differing_channels": 6,
+    "differing_pixels": 6,
+    "max_absolute_difference": 1,
+    "total_absolute_difference": 6,
+    "pixel_details": [
+      {
+        "xy": [
+          913,
+          486
+        ],
+        "before": [
+          91,
+          62,
+          32,
+          255
+        ],
+        "after": [
+          91,
+          61,
+          32,
+          255
+        ],
+        "delta": [
+          0,
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "xy": [
+          29,
+          491
+        ],
+        "before": [
+          54,
+          37,
+          22,
+          255
+        ],
+        "after": [
+          54,
+          36,
+          22,
+          255
+        ],
+        "delta": [
+          0,
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "xy": [
+          29,
+          494
+        ],
+        "before": [
+          29,
+          27,
+          20,
+          255
+        ],
+        "after": [
+          29,
+          27,
+          19,
+          255
+        ],
+        "delta": [
+          0,
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "xy": [
+          28,
+          521
+        ],
+        "before": [
+          32,
+          30,
+          22,
+          255
+        ],
+        "after": [
+          32,
+          29,
+          22,
+          255
+        ],
+        "delta": [
+          0,
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "xy": [
+          914,
+          525
+        ],
+        "before": [
+          41,
+          38,
+          27,
+          255
+        ],
+        "after": [
+          41,
+          38,
+          26,
+          255
+        ],
+        "delta": [
+          0,
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "xy": [
+          28,
+          534
+        ],
+        "before": [
+          36,
+          30,
+          19,
+          255
+        ],
+        "after": [
+          36,
+          29,
+          19,
+          255
+        ],
+        "delta": [
+          0,
+          -1,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "runtime_network_page_errors": {
+    "required_http_failures": 0,
+    "requestfailed": 0,
+    "pageerror": 0,
+    "favicon_console404": "console event present; no required response failure reported"
+  },
+  "actual_visual_review_root": {
+    "images_opened": 4,
+    "east_grandma": "present at east/right background, strongly defocused",
+    "foreground_size": "same registration matrix in000/116, readable and not enlarged between keys",
+    "true_turtle_two_rods": "two straight rods visibly enter foreground near grasp in000 and116",
+    "lighting": "original warm background and upward flashlight face light readable",
+    "half_open_ground_bundle_original_crane": "not clearly readable in actual960x540 outputs; floor is below crop and bottom-right bundle/crane are cut/strongly defocused",
+    "bag_mouth_output_960x540": [
+      858.1733988576483,
+      472.59936969219945
+    ],
+    "bag_floor_output_960x540": [
+      859.6031884845459,
+      581.0477963457522
+    ],
+    "floor_below_frame_pixels": 41.0477963457522
+  },
+  "status": "HOLD_STRICT_B_ZERO_DIFF_FAILED_AND_BUNDLE_CRANE_NOT_CLEARLY_VISIBLE",
+  "action": "Deliver this actual one run, no code changes or rerender, coordinator decides/fixes source.",
+  "sources": [
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/BUNDLE_halfopen_call01/S31_HALF_OPEN_BUNDLE_WITH_ORIGINAL_CRANE.png",
+      "SHA256": "0aef89cce4dde10d8542d9f17717cb921870051a415f5e0121e21e21053f1e85"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/F000_final_mother/S31_F000_MOTHER.png",
+      "SHA256": "7f94f27d0f60b756d8f01c5d05ddf8bca8dc632bec52bc39dcf0a6cf09896dc4"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/F036_expression_call01/S31_F036_CHARACTER.png",
+      "SHA256": "288043bc5e2bc57176c082d1cf3a8dd886412ef4cf466c7c200ce0775139a820"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/F116_lift_call01/S31_F116_CHARACTER.png",
+      "SHA256": "5359eb949b8d067e02c86b5deb4c4780d25cebb682af94ce521a8de86fde198a"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/MANIFEST.json",
+      "SHA256": "b4bd11f0aad52bc853c915aaee37f1e4879b6f4c54ed74b7929e42a779054a15"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/README.md",
+      "SHA256": "786bbecf233e4c118b5f461e18bbf46cbe3f9290782414a69523b596882677d1"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/background_east_inputs/S31_EAST_A_PROJECTION.json",
+      "SHA256": "c13b24736f3c9faaea5d4ea2f3c905cd33b8bfac8bb1bd9b7713990121f91cd0"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/background_east_inputs/s28_gm_F000_SOURCE.png",
+      "SHA256": "5654630a64356647efcda09c0c259361ff8428ca5972d38c774c031b19fbce25"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/README_RENDER.md",
+      "SHA256": "360eb45c03c65f7c1ed1bd631b8050ea092dd6d4bbee0f4cf2a857bb9a476191"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/SOURCE_LOCK.json",
+      "SHA256": "945360c6df0b97bc179f4c6736dcec12a033cbf4eff5070d0a4084392edcab1c"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/cards.js",
+      "SHA256": "f6aa857fd1ba89ace359273e640b46915ff1d142cc4d90f1e84b148f430db130"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/choreo.js",
+      "SHA256": "6f838cdfb1aab203f83e5905eb4242a65addb4181ca8e66ed4c91340903e33d6"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/crane.js",
+      "SHA256": "212e8a4fdad764fa50928c60a8efc956ad660c62377ea1ea152433a6fea4e642"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/gl.js",
+      "SHA256": "ba98ba276559c430fc244a261387b32c77901a042e9c60b8acee31da3fdd0b29"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/s06_key.js",
+      "SHA256": "fdd0835b5486ac66385cb339b2a2dbbb8521978d3716c6293c7ef5927ef887d9"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/s06_key_s31a.js",
+      "SHA256": "b376b1b751a8e42cc35fb21f83e85585f01cc4d833e97c97a04a32c74206c2cb"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/scenery.js",
+      "SHA256": "63f8cc830c0ed37db2a178b8b9ae3ed69f2d455915e1c5fb3bd5222d7fa64030"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/shaders.js",
+      "SHA256": "773d25786637b178c73df987f11539d8786f2516fc6c04099d81caae170ddf1d"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/shots/shotkit.js",
+      "SHA256": "3cd7989d0276f0edc791ac72fae11463e611f13c0a3433fe99c27f38cec20a74"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/turtle.js",
+      "SHA256": "f7e91070a5959a2a5b97438a64db0f79af4890c2dbff1cdcbe6e4d6a28817ed2"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/xiaoman.js",
+      "SHA256": "d3b47b12cbcbb4bdec96df0bfa85357543ab6ea98d627cdb8260550cfc6e60e0"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lamp/xm_rig.js",
+      "SHA256": "99b819478174a2bf250883cf05dd3c9f9b5743c1cfb98c5fd58ab876d28b7b22"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lib/core.js",
+      "SHA256": "748c357b97a71d6f122ef483923a64d3395bd692f6775b1601ef19b5bc08883e"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lib/draw.js",
+      "SHA256": "e3d36d237c0f143f349bfd2fbc9afad24fc71897f56b990a5d2ed084d6c6d496"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/lib/figure.js",
+      "SHA256": "03c8928bbe6546af7206024a163c9f56d7826f60917c24ac448010fdae67f3de"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/paint/paintshot.js",
+      "SHA256": "7d61a8e3cfa595b5a2877ce3624c2d8d186a1578cc684a8948471eb0eedca975"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/paint/shots/s31.js",
+      "SHA256": "6782316d1ad14ab0035be7d2a3cec2331b5d6a9a0965157cd8c0f89d8a592b68"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/puppet.js",
+      "SHA256": "04b80760b97185ab8aea7826383d85f3c9d7789cd01aa1d8664fdc74bc4c30b7"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/js/shadowplay.js",
+      "SHA256": "2620c4164efb9a440f69b7d723d1d373894116115c9aa56442160b8a7b0739d8"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/preview.html",
+      "SHA256": "605ca6115d8578179157f88dfe906f2e02a3ab5f36d6bb49d6b470365471f398"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/preview.js",
+      "SHA256": "60a46b41578cc7de4ff3d3d4f679fcbe449847cf06cf6af151d86d30fbcae4da"
+    },
+    {
+      "path": "collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/render_keyframes.cjs",
+      "SHA256": "945f5d36452772236d4028a16844fbf5cd3540b40522527048335e4bcb619bed"
+    }
+  ],
+  "existing_cloud_actual_review": {
+    "reviewer": "/root/s09_motion_audit_61sol",
+    "all_four_actual_PNGs_opened": true,
+    "foreground_child_true_two_rods_lighting": "readable without new obvious issue",
+    "east_grandma": "right background, strongly blurred/dark",
+    "half_open_bundle_and_original_crane": "not visually identifiable in actual A000/A116; cannot confirm narrative prop",
+    "strict_zero_difference": "FAIL six channels differ by1; not a whole gate pass",
+    "edits_renders_generation_by_reviewer": 0
+  }
+}

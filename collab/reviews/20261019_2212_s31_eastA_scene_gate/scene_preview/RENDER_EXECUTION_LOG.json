@@ -1,0 +1,175 @@
+{
+  "status": "failed",
+  "responses": [
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/preview.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/preview.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/paint/shots/s31.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/lamp/s06_key_s31a.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/lamp/turtle.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/puppet.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/lamp/shots/shotkit.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/paint/paintshot.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/lamp/s06_key.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/lamp/choreo.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/lamp/shaders.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/lamp/crane.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/lamp/gl.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/shadowplay.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/lamp/scenery.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/lamp/xiaoman.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/lamp/cards.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/lamp/xm_rig.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/lib/draw.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/lib/figure.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/scene_preview/js/lib/core.js",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/background_east_inputs/S31_EAST_A_PROJECTION.json",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/F000_final_mother/S31_F000_MOTHER.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/F036_expression_call01/S31_F036_CHARACTER.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/F116_lift_call01/S31_F116_CHARACTER.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/background_east_inputs/s28_gm_F000_SOURCE.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://127.0.0.1:37633/BUNDLE_halfopen_call01/S31_HALF_OPEN_BUNDLE_WITH_ORIGINAL_CRANE.png",
+      "status": 200,
+      "ok": true
+    }
+  ],
+  "requestFailed": [],
+  "pageErrors": [],
+  "pngs": [
+    {
+      "filename": "S31_B_F180_CLEAN.png",
+      "bytes": 603637,
+      "sha256": "dc354bc063c9fea96193189573954ccafd91b2b8660a4f5dbcf576055064bfa0"
+    },
+    {
+      "filename": "S31_A_F000_ACTUAL_SCENE.png",
+      "bytes": 373627,
+      "sha256": "28aaa976c29186c18597392e8d21c268c935f0707c18a30ca8160c9f9b28641e"
+    },
+    {
+      "filename": "S31_A_F116_ACTUAL_SCENE.png",
+      "bytes": 377055,
+      "sha256": "17f51b450301e58e34b8e1f01735f59c3fd4e33a369a5aa2ec7656de3fef4124"
+    },
+    {
+      "filename": "S31_B_F180_AFTER_A.png",
+      "bytes": 603640,
+      "sha256": "540bff85599dc29962ca06b08099dcaf65583b23b20b0354217694ad95f20b6c"
+    }
+  ],
+  "boundary": [
+    {
+      "frame": 180,
+      "differingChannels": 6,
+      "maxAbsoluteDifference": 1,
+      "totalAbsoluteDifference": 6,
+      "exactMatch": false
+    }
+  ],
+  "entryUrl": "http://127.0.0.1:37633/scene_preview/preview.html",
+  "error": "Error: Original B180 changed after A: pixel-isolation test FAILED\n    at /workspace/s29-drawn-reference-20261019/collab/reviews/20261019_2212_s31_eastA_scene_gate/scene_preview/render_keyframes.cjs:53:116"
+}
