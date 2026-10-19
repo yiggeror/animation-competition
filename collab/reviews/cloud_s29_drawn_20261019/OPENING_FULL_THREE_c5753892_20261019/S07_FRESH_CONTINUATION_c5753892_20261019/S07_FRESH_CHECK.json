@@ -1,0 +1,431 @@
+{
+  "source_commit": "c57538925035118c0f8901fc2f22f478fbf803b4",
+  "started_utc": "2026-10-19T12:38:20.189Z",
+  "pid": 74750,
+  "state": "COMPLETED",
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "audio": false,
+  "total_frames": 108,
+  "completed_frames": 108,
+  "frames_sent_to_encoder": 108,
+  "fresh_page": true,
+  "new_canvas": true,
+  "prior_S01_S04_render_calls": 0,
+  "canvas_context_creation": "getContext(\"2d\") with no options",
+  "chromium_flags": [
+    "--no-sandbox",
+    "--use-gl=angle",
+    "--use-angle=swiftshader",
+    "--enable-unsafe-swiftshader"
+  ],
+  "output_dir": "/tmp/opening-s07-fresh-c5753892-20261019",
+  "sourceChecks": [
+    {
+      "path": "js/anim/s01_drawn.js",
+      "sha256": "8372b98b68ae4e17200e4e6065871f418827bb922b696d57ab8548f44206a8f4",
+      "expected": "8372b98b68ae4e17200e4e6065871f418827bb922b696d57ab8548f44206a8f4",
+      "pass": true
+    },
+    {
+      "path": "js/anim/s04_drawn.js",
+      "sha256": "883eb313467c755722e44dc864596bc2d7d724833c326bad9c885239def9936d",
+      "expected": "883eb313467c755722e44dc864596bc2d7d724833c326bad9c885239def9936d",
+      "pass": true
+    },
+    {
+      "path": "js/anim/s07_drawn.js",
+      "sha256": "07818e2935635c8b2801901ef3ddc61fc9fe55950725ce4ca60eeab146c736a4",
+      "expected": "07818e2935635c8b2801901ef3ddc61fc9fe55950725ce4ca60eeab146c736a4",
+      "pass": true
+    },
+    {
+      "path": "js/anim/opening_power_strip.js",
+      "sha256": "caffd8110ef164dade76f8ce8ae9ba82cd0691357bad053e19afc8bc06a1901c",
+      "expected": "caffd8110ef164dade76f8ce8ae9ba82cd0691357bad053e19afc8bc06a1901c",
+      "pass": true
+    }
+  ],
+  "approvedSampleChecks": [
+    {
+      "name": "S07_F008.png",
+      "sha256": "68ccf82317e5e7425fd136274615dc7d80a6596a6de723841f6a9a1cbbcb9685",
+      "expected": "68ccf82317e5e7425fd136274615dc7d80a6596a6de723841f6a9a1cbbcb9685",
+      "pass": true
+    },
+    {
+      "name": "S07_F039.png",
+      "sha256": "a3ef75e7ca1ed2fa64bb06626fd15f2f2a8df8a74fad0ce7f77a44fc1050d48c",
+      "expected": "a3ef75e7ca1ed2fa64bb06626fd15f2f2a8df8a74fad0ce7f77a44fc1050d48c",
+      "pass": true
+    },
+    {
+      "name": "S07_F043.png",
+      "sha256": "d8d7dc85fd32e2750dd91c53650319a448b243ffdb89fa8f54c0c32b8917db19",
+      "expected": "d8d7dc85fd32e2750dd91c53650319a448b243ffdb89fa8f54c0c32b8917db19",
+      "pass": true
+    },
+    {
+      "name": "S07_F053.png",
+      "sha256": "d310c2ec7bc2e94d5987b0c9bec700dc7e6ac49c7196580f71757e30b3885146",
+      "expected": "d310c2ec7bc2e94d5987b0c9bec700dc7e6ac49c7196580f71757e30b3885146",
+      "pass": true
+    },
+    {
+      "name": "S07_F057.png",
+      "sha256": "94421cac581cc7fbf5549507df2bc339d5b5a69892a6acadb1264cced59b7aa9",
+      "expected": "94421cac581cc7fbf5549507df2bc339d5b5a69892a6acadb1264cced59b7aa9",
+      "pass": true
+    }
+  ],
+  "http": [
+    {
+      "url": "http://127.0.0.1:42639/__opening_s07_fresh__.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/anim/s01_drawn.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/anim/opening_power_strip.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/paint/paintshot.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/code/s08.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/anim/s01_drawn_timeline.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/paint/shots/s01.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/code/hand3d.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/rig/flipbook.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/anim/s04_drawn.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/anim/s04_drawn_timeline.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/lib/core.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/anim/s07_drawn.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/anim/kit.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/anim/s04.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/anim/s01.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/chars/xiaoman.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/chars/nainai.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/lib/draw.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/chars/hand.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/chars/face.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/js/lib/figure.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/paint/bg_01_room_wide.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/x07/F000.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F000.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/x07/F003.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/x07/F006.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/x07/F008.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F008.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F016.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F018.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F022.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F025.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F028.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F031.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F034.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F037.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/x07/phone_landed.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/x07/F039.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/x07/F043.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/x07/F046.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/x07/F049.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/x07/F053.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F057.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F062.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F068.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F073.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F079.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F084.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F090.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F095.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F100_person_shadow.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F100.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F103_person_shadow.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F103.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F106_person_shadow.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:42639/assets/chars/g07/F106.png",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "console": [
+    {
+      "type": "warning",
+      "text": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+    }
+  ],
+  "new_imagegen_calls": 0,
+  "http_origin": "http://127.0.0.1:42639",
+  "ffmpeg_pid": 74879,
+  "latest_frame": 107,
+  "context_attributes": {
+    "alpha": true,
+    "colorSpace": "srgb",
+    "colorType": "unorm8",
+    "desynchronized": false,
+    "toneMapping": {
+      "mode": "standard"
+    },
+    "willReadFrequently": false
+  },
+  "clip": {
+    "shot": "S07",
+    "frames": 108,
+    "duration": 4.5,
+    "file": "S07/S07_opening_corrected_1080p24.mp4",
+    "sha256": "c1c282946ec0a4b4a20bdf5d0f5ba76d8ceb2e04df616faa7271dd9d3317e421",
+    "approvedSampleChecks": [
+      {
+        "name": "S07_F008.png",
+        "sha256": "68ccf82317e5e7425fd136274615dc7d80a6596a6de723841f6a9a1cbbcb9685",
+        "expected": "68ccf82317e5e7425fd136274615dc7d80a6596a6de723841f6a9a1cbbcb9685",
+        "pass": true
+      },
+      {
+        "name": "S07_F039.png",
+        "sha256": "a3ef75e7ca1ed2fa64bb06626fd15f2f2a8df8a74fad0ce7f77a44fc1050d48c",
+        "expected": "a3ef75e7ca1ed2fa64bb06626fd15f2f2a8df8a74fad0ce7f77a44fc1050d48c",
+        "pass": true
+      },
+      {
+        "name": "S07_F043.png",
+        "sha256": "d8d7dc85fd32e2750dd91c53650319a448b243ffdb89fa8f54c0c32b8917db19",
+        "expected": "d8d7dc85fd32e2750dd91c53650319a448b243ffdb89fa8f54c0c32b8917db19",
+        "pass": true
+      },
+      {
+        "name": "S07_F053.png",
+        "sha256": "d310c2ec7bc2e94d5987b0c9bec700dc7e6ac49c7196580f71757e30b3885146",
+        "expected": "d310c2ec7bc2e94d5987b0c9bec700dc7e6ac49c7196580f71757e30b3885146",
+        "pass": true
+      },
+      {
+        "name": "S07_F057.png",
+        "sha256": "94421cac581cc7fbf5549507df2bc339d5b5a69892a6acadb1264cced59b7aa9",
+        "expected": "94421cac581cc7fbf5549507df2bc339d5b5a69892a6acadb1264cced59b7aa9",
+        "pass": true
+      }
+    ],
+    "keyframes": [
+      0,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      15,
+      16,
+      38,
+      39,
+      42,
+      43,
+      45,
+      46,
+      48,
+      49,
+      52,
+      53,
+      56,
+      57,
+      99,
+      100,
+      102,
+      103,
+      105,
+      106,
+      107
+    ]
+  },
+  "exit_code": 0,
+  "finished_utc": "2026-10-19T12:43:21.559Z",
+  "browser_and_http_stopped": true,
+  "sourceChecksAfter": [
+    {
+      "path": "js/anim/s01_drawn.js",
+      "sha256": "8372b98b68ae4e17200e4e6065871f418827bb922b696d57ab8548f44206a8f4",
+      "expected": "8372b98b68ae4e17200e4e6065871f418827bb922b696d57ab8548f44206a8f4",
+      "pass": true
+    },
+    {
+      "path": "js/anim/s04_drawn.js",
+      "sha256": "883eb313467c755722e44dc864596bc2d7d724833c326bad9c885239def9936d",
+      "expected": "883eb313467c755722e44dc864596bc2d7d724833c326bad9c885239def9936d",
+      "pass": true
+    },
+    {
+      "path": "js/anim/s07_drawn.js",
+      "sha256": "07818e2935635c8b2801901ef3ddc61fc9fe55950725ce4ca60eeab146c736a4",
+      "expected": "07818e2935635c8b2801901ef3ddc61fc9fe55950725ce4ca60eeab146c736a4",
+      "pass": true
+    },
+    {
+      "path": "js/anim/opening_power_strip.js",
+      "sha256": "caffd8110ef164dade76f8ce8ae9ba82cd0691357bad053e19afc8bc06a1901c",
+      "expected": "caffd8110ef164dade76f8ce8ae9ba82cd0691357bad053e19afc8bc06a1901c",
+      "pass": true
+    }
+  ]
+}
