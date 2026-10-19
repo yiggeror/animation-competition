@@ -1,0 +1,248 @@
+{
+  "status": "INPUT_CANDIDATE_ONLY_REQUIRES_INDEPENDENT_VISUAL_GATE",
+  "imagegen_calls": 0,
+  "F030": "BLOCKED",
+  "static_base_SHA256": "2c28bafe7ee05c5b234711fc551dd2a4d358143ea2615dc0a2282428aa744332",
+  "actual_prop_source_SHA256": "8aac66e182d3d6109b61a324ed867e4a3f8934e385ab60ac2697dfd8683c1036",
+  "native_crop": [
+    816,
+    816,
+    1024,
+    1024
+  ],
+  "native_to_plate": [
+    [
+      4,
+      0,
+      -3168
+    ],
+    [
+      0,
+      4,
+      -3168
+    ]
+  ],
+  "plate_to_native": [
+    [
+      0.25,
+      0,
+      792
+    ],
+    [
+      0,
+      0.25,
+      792
+    ]
+  ],
+  "plate_to_scene": [
+    [
+      0.175,
+      0,
+      829.4
+    ],
+    [
+      0,
+      0.175,
+      666.4
+    ]
+  ],
+  "MCP_estimate": [
+    960,
+    923
+  ],
+  "MCP_basis": "Visible locked022 index-palm crease/root; approximate 2D anatomical estimate, not a measured hidden joint. Old (967,918) was not reused.",
+  "PIP": [
+    985,
+    938
+  ],
+  "DIP": [
+    984,
+    957
+  ],
+  "PAD": [
+    976.52,
+    963.83
+  ],
+  "bone_projected_lengths_native": [
+    29.154759474226502,
+    19.026297590440446,
+    10.129131255937047
+  ],
+  "caution": "Only a source-pixel articulated volume projection study. Index texture is the isolated raw026+32 volume diagnostic, never its complete hand/body/endpoint. Static wrist/palm/thumb and rear digits are locked022. Its unfolded 2D length is a projection assumption, not proof of bone lengths. Never adopt this projected finger into production. Actual unique call must draw a natural whole index and pass independent visual/alpha contact gate.",
+  "source_mesh_left": [
+    [
+      975.0,
+      905.0
+    ],
+    [
+      982.0,
+      909.0
+    ],
+    [
+      987.0,
+      916.0
+    ],
+    [
+      991.0,
+      926.0
+    ],
+    [
+      988.0,
+      937.0
+    ],
+    [
+      985.0,
+      944.0
+    ],
+    [
+      983.0,
+      950.0
+    ]
+  ],
+  "source_mesh_right": [
+    [
+      970.0,
+      915.0
+    ],
+    [
+      974.0,
+      919.0
+    ],
+    [
+      977.0,
+      924.0
+    ],
+    [
+      975.0,
+      930.0
+    ],
+    [
+      975.0,
+      938.0
+    ],
+    [
+      976.0,
+      945.0
+    ],
+    [
+      978.0,
+      950.0
+    ]
+  ],
+  "target_mesh_left": [
+    [
+      955.7392527130926,
+      915.7822418607221
+    ],
+    [
+      965.0504583785203,
+      918.3612394590693
+    ],
+    [
+      979.4896906992556,
+      923.5162003297413
+    ],
+    [
+      991.1086572526748,
+      935.7786700899364
+    ],
+    [
+      989.8507971347487,
+      952.3297266215338
+    ],
+    [
+      984.7514554155127,
+      962.7701392445858
+    ],
+    [
+      979.6654884421805,
+      966.6880417176992
+    ]
+  ],
+  "target_mesh_right": [
+    [
+      952.2607472869074,
+      926.2177581392779
+    ],
+    [
+      960.9495416214797,
+      929.6387605409307
+    ],
+    [
+      972.5103093007444,
+      934.4837996702587
+    ],
+    [
+      978.8913427473252,
+      940.2213299100636
+    ],
+    [
+      978.1492028652513,
+      949.6702733784662
+    ],
+    [
+      975.2485445844873,
+      957.2298607554142
+    ],
+    [
+      973.3745115578195,
+      960.9719582823009
+    ]
+  ],
+  "old_index_source_mask": "geometry/old_index_trace_native.png",
+  "source_texture": "raw026+32 isolated index pixels for same-scale volume study ONLY; complete hand/base remains locked022. This is not a production source or generation mother.",
+  "production_adoption": "ONLY future actual drawn whole index plus necessary palm-root transition; all protected locked022 RGBA exact. Current target and full026 diagnostic never production mothers.",
+  "distal_reference_volume_projection": {
+    "source_DIP_direction_reference": [
+      984.0,
+      936.0
+    ],
+    "source_pad_centre": [
+      981.0,
+      942.5
+    ],
+    "target_DIP_direction_reference": [
+      984.0,
+      957.0
+    ],
+    "target_pad_centre": [
+      976.52,
+      963.83
+    ],
+    "linear_matrix": [
+      [
+        0.9216898791868137,
+        -0.3879275275158965
+      ],
+      [
+        0.3879275275158965,
+        0.9216898791868137
+      ]
+    ],
+    "translation": [
+      437.9639232014682,
+      -285.4196156266663
+    ],
+    "source_transverse_scale": 1.0,
+    "projected_longitudinal_scale": 1.0,
+    "scope": "reference only; actual source round cap, not code-drawn capsule; never production adoption"
+  },
+  "MCP_PIP_DIP_PAD_plate": [
+    [
+      672,
+      524
+    ],
+    [
+      772,
+      584
+    ],
+    [
+      768,
+      660
+    ],
+    [
+      738.08,
+      687.32
+    ]
+  ]
+}

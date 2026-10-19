@@ -1,0 +1,25 @@
+{
+  "status": "AUTHOR_VIEWED_INPUT_CANDIDATE_ONLY_INDEPENDENT_GATE_REQUIRED",
+  "actual_images_viewed": [
+    "inputs/01_locked022_whole_index_TARGET_REFERENCE.png",
+    "inputs/02_same_target_frozen_actual_rods.png",
+    "inputs/03_locked022_local_material_patches.png",
+    "diagnostics/00_whole_registration_triptych.jpg",
+    "diagnostics/01_locked022_true_hand_trace_grid.png",
+    "diagnostics/02_whole026_down32_hand_trace_grid.png"
+  ],
+  "findings": [
+    "Whole026 +32 only restores registration. It is not accepted, and is not the production static base.",
+    "Inputs1/2 show the same complete projected index over the actual locked022 wrist/palm/unchanged thumb, with the old index removed within the traced candidate domain. This is a reference construction, not an actual newly drawn finger.",
+    "The new index crosses in front of the true upper shaft and the rounded distal pad turns below it. The actual lower shaft raster remains visible with space.",
+    "MCP is estimated from the actual022 palm crease at (960,923); hidden bone lengths are not measured or certified by this 2D study.",
+    "Local texture projection leaves visible transition seams and should be read as a volume/pose candidate. It cannot satisfy a finished anatomical drawing gate. The independent reviewer must decide whether this construction sufficiently communicates the correct target; if not, do not call.",
+    "Input3 contains only locked022 local material/ink patches, no competing complete pose."
+  ],
+  "blocked": [
+    "Unique imagegen call has not been authorized against these new fixed inputs.",
+    "No future actual026 drawing exists for this local repair.",
+    "F030 remains blocked."
+  ],
+  "new_calls": 0
+}

@@ -1,0 +1,28 @@
+{
+  "status": "REFERENCE_PROJECTION_MEASUREMENT_ONLY_NOT_PRODUCTION_PASS",
+  "actual_7px_prop_raster_SHA256": "8aac66e182d3d6109b61a324ed867e4a3f8934e385ab60ac2697dfd8683c1036",
+  "lower_rod_actual_raster_restricted_by_known_line": true,
+  "measurements": [
+    {
+      "reference_alpha_threshold": 1,
+      "min_pixel_centre_air_to_actual_lower_rod": 3.0,
+      "reference_pixels": 229
+    },
+    {
+      "reference_alpha_threshold": 8,
+      "min_pixel_centre_air_to_actual_lower_rod": 3.0,
+      "reference_pixels": 224
+    },
+    {
+      "reference_alpha_threshold": 32,
+      "min_pixel_centre_air_to_actual_lower_rod": 3.0,
+      "reference_pixels": 217
+    },
+    {
+      "reference_alpha_threshold": 128,
+      "min_pixel_centre_air_to_actual_lower_rod": 4.0,
+      "reference_pixels": 201
+    }
+  ],
+  "warning": "This only measures the displayed projection study. It cannot validate anatomy or a future drawn output. Full future drawn pad/ink/AA must be measured again."
+}
