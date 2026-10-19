@@ -1,0 +1,49 @@
+{
+  "status": "FULL288_FINITE_SEQUENCE_READABLE_ISOLATION_HOLD_PENDING_ASTRA",
+  "method": "Actual MP4 stream independently decoded all288; root and existing read-only helper actually opened12 ordered contact sheets covering000–287 and10 full-size decoded keys. Not a claim of real-time playback or final dynamic art approval.",
+  "full_decoded_keys_seen": [
+    27,
+    39,
+    40,
+    120,
+    138,
+    143,
+    144,
+    147,
+    190,
+    287
+  ],
+  "findings": {
+    "027_039": "actualTV key press, screen shrinks028 andblack029, hand withdraws and starts walking036; no missing background",
+    "040_095": "cuts to south-door camera040, alternating steps and settle/feet readable; wholebody draw states switch per exposure",
+    "096_143": "reach then whole grasp120, pulls down138/143, hand remains at ring",
+    "144_189": "room dark at144 while grasp held; flashlight continues lighting ground;147open fingers separate from loop, cord rebounds then arm lowers",
+    "190_287": "original frozen-head profile and warm screen lighting intact; no missing frame or new detached limb/rod seen"
+  },
+  "strict_isolation": {
+    "status": "HOLD",
+    "original_script_exit": 1,
+    "repeat120": "exact JPEG SHA pass withinfullrun",
+    "repeat190": "exact JPEG SHA pass withinfullrun",
+    "repeat0": "exact JPEG SHA fail; original script stopped; failed repeated image itself not saved",
+    "remaining_repeats": [
+      190,
+      120
+    ],
+    "cause": "UNDETERMINED; no new browser render authorized/executed to inspect failed repeat",
+    "visual_review_does_not_override_exact_hash_failure": true
+  },
+  "cross_run_static_JPEG_comparison": "Only9/20 identical bytes;11 differ afterJPEGdecode mean channel abs0.36–0.42, max6–9. Not a raw RGBA comparison and not evidence for failedrepeat0 cause. See full verification.",
+  "existing_readonly_helper": {
+    "agent": "/root/s09_motion_audit_61sol",
+    "actual_views": "all12ordered sheets + all10fullkeys",
+    "finding": "Requested action sequence readable, no new hard visual omission found, strictisolationHOLD remains; not real-time playback/finalshot artapproval.",
+    "edits": 0,
+    "renders": 0,
+    "generation": 0
+  },
+  "new_generation": 0,
+  "unique_full_render_runs": 1,
+  "new_shared_production_changes": 0,
+  "ready_claimed": false
+}
