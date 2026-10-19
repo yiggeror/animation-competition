@@ -1,0 +1,103 @@
+{
+  "status": "SEPARATE_BLUE_EDGE_SCOPE_PREPARATION_ONLY",
+  "source_locked056_commit": "2d1be224211775ac72d83ea823e802968004a4cc",
+  "source_native_SHA256": "2ab9b4ea2dca4b7589f88bc6407337e442d9b346b0f2337b738fe077121fbaa6",
+  "traces_native": [
+    [
+      [
+        497,
+        967
+      ],
+      [
+        505,
+        956
+      ],
+      [
+        514,
+        944
+      ],
+      [
+        519,
+        933
+      ],
+      [
+        520,
+        920
+      ],
+      [
+        526,
+        914
+      ],
+      [
+        536,
+        916
+      ],
+      [
+        547,
+        923
+      ],
+      [
+        559,
+        935
+      ],
+      [
+        572,
+        942
+      ]
+    ],
+    [
+      [
+        572,
+        938
+      ],
+      [
+        578,
+        945
+      ],
+      [
+        584,
+        954
+      ],
+      [
+        589,
+        945
+      ],
+      [
+        597,
+        937
+      ]
+    ],
+    [
+      [
+        503,
+        949
+      ],
+      [
+        510,
+        958
+      ],
+      [
+        516,
+        952
+      ],
+      [
+        520,
+        945
+      ]
+    ]
+  ],
+  "trace_width_native": 9,
+  "allowed_blue_semantic_pixels": 1199,
+  "bbox_for_lookup_ONLY_NOT_EDIT_MASK": [
+    494,
+    910,
+    601,
+    970
+  ],
+  "rule": "Only original blue cloth edge pixels and <=4px adjacent low-alpha edge cleanup, intersected with traced narrow bands. All opaque non-blue skin/white petals excluded. Preserve real original torso outline, flower shapes, ink and volume shadow; source serrations/short strips need local closure only.",
+  "not_full_armpit_fill": true,
+  "no_hand_or_arm_action_in_this_scope": true,
+  "actual_positive_blue_target_still_requires_own_short_gate": true,
+  "imagegen_calls": 0,
+  "actual_Canvas": 0
+}
