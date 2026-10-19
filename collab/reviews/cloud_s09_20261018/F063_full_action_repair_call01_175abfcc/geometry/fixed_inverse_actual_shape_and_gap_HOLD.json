@@ -1,0 +1,205 @@
+{
+  "status": "HOLD_UNEXPECTED_OUTPUT_CANVAS_AND_PROP_RATIO_PENDING_ASTRA",
+  "raw_SHA256": "be78fe901b39d838c867326b517ed26ee72ed6488c683f94e06b0487a6df020f",
+  "raw_size": [
+    1145,
+    1374
+  ],
+  "frozen_tool_size": [
+    1280,
+    1536
+  ],
+  "resolution_ratio_uniform": 0.89453125,
+  "literal_approved_inverse": {
+    "s": 0.6015625,
+    "offset": [
+      550,
+      0
+    ],
+    "applied_to_full_raw_once": true,
+    "no_resolution_normalization_adopted": true,
+    "no_partfit": true
+  },
+  "manual_source_axis_points": {
+    "T_tail_endplane_center": [
+      438.0,
+      922.0
+    ],
+    "L_lamp_endplane_center": [
+      1007.0,
+      832.0
+    ],
+    "T_uncertainty_raw_px": 7,
+    "L_uncertainty_raw_px": 7
+  },
+  "source_axis_raw": 576.0737799969722,
+  "literal_axis_native": 346.5443832794286,
+  "frozen_axis_native": 376.00132978488244,
+  "literal_T_native": [
+    813.484375,
+    554.640625
+  ],
+  "literal_L_native": [
+    1155.7734375,
+    500.5
+  ],
+  "frozen_T_native": [
+    858.3388552980175,
+    636.9294709248006
+  ],
+  "frozen_L_native": [
+    1227.0002384706622,
+    562.9985264074178
+  ],
+  "visible_section_material_measurements": [
+    {
+      "name": "tailcap_visible",
+      "source_ROI_halfopen": [
+        420,
+        870,
+        510,
+        973
+      ],
+      "seed": [
+        447,
+        920
+      ],
+      "source_pixels": 6784,
+      "raw_transverse_material_extent": 96.2168422251249,
+      "literal_inverse_native_extent": 57.880444151051705,
+      "normal_extreme_source_points": [
+        [
+          459,
+          870
+        ],
+        [
+          430,
+          972
+        ]
+      ],
+      "manual_edge_ownership_uncertainty_raw_px": 4,
+      "limit": "2D visible material band under manual ownership;not physicalcaliper or hidden extent reconstruction."
+    },
+    {
+      "name": "red_tube_clear_band",
+      "source_ROI_halfopen": [
+        710,
+        800,
+        790,
+        970
+      ],
+      "seed": [
+        750,
+        880
+      ],
+      "source_pixels": 8972,
+      "raw_transverse_material_extent": 114.39854110413839,
+      "literal_inverse_native_extent": 68.81787238295824,
+      "normal_extreme_source_points": [
+        [
+          788,
+          820
+        ],
+        [
+          711,
+          948
+        ]
+      ],
+      "manual_edge_ownership_uncertainty_raw_px": 4,
+      "limit": "2D visible material band under manual ownership;not physicalcaliper or hidden extent reconstruction."
+    },
+    {
+      "name": "lampcap_visible",
+      "source_ROI_halfopen": [
+        890,
+        725,
+        1060,
+        945
+      ],
+      "seed": [
+        995,
+        800
+      ],
+      "source_pixels": 26331,
+      "raw_transverse_material_extent": 199.2175377268571,
+      "literal_inverse_native_extent": 119.84180003881248,
+      "normal_extreme_source_points": [
+        [
+          987,
+          736
+        ],
+        [
+          1023,
+          932
+        ]
+      ],
+      "manual_edge_ownership_uncertainty_raw_px": 4,
+      "limit": "2D visible material band under manual ownership;not physicalcaliper or hidden extent reconstruction."
+    }
+  ],
+  "scale_independent_tail_to_axis_ratio_delta_vs_original044": -0.21564418436833444,
+  "whole_canvas_resolution_normalization_if_Astra_later_authorizes_DIAGNOSTIC_NUMBERS_ONLY": {
+    "not_applied_to_images": true,
+    "uniform_factor_1280over1145": 1.1179039301310043,
+    "implied_net_native_per_raw_pixel": 0.6724890829694323,
+    "axis_native_if_normalized": 387.40332803289834,
+    "tail_extent_native_if_normalized": 64.7047759941888,
+    "note": "Uniform normalization could address dimensions but cannot change tail/axis proportion;not authorization or adoption."
+  },
+  "actual_whole_prop_to_far_palm_outline_gaps": {
+    "1": {
+      "raw_material_gap": 9.219544457292887,
+      "literal_inverse_native_gap": 5.546132212590252,
+      "overlap_pixels": 0,
+      "closest_hand_source_pixel": [
+        973,
+        947
+      ],
+      "closest_prop_source_pixel": [
+        971,
+        938
+      ]
+    },
+    "16": {
+      "raw_material_gap": 12.0,
+      "literal_inverse_native_gap": 7.21875,
+      "overlap_pixels": 0,
+      "closest_hand_source_pixel": [
+        976,
+        949
+      ],
+      "closest_prop_source_pixel": [
+        976,
+        937
+      ]
+    },
+    "128": {
+      "raw_material_gap": 13.92838827718412,
+      "literal_inverse_native_gap": 8.378796072993572,
+      "overlap_pixels": 0,
+      "closest_hand_source_pixel": [
+        976,
+        950
+      ],
+      "closest_prop_source_pixel": [
+        971,
+        937
+      ]
+    }
+  },
+  "source_mask_limits": "Manual material domains with sourceRGBA preserved;shared edge ownership±4raw;nearest gap near real lamp lower rim/fingertips,not inferredpoint gap.",
+  "old_head_ruffle_skirt_guard_restoration_performed": false,
+  "production_candidate_created": false,
+  "observations": [
+    "Whole output shrunk uniformly in canvas dimensions to1145x1374;literal requested inverse does not hit frozenT/L.",
+    "Actual cap/barrel proportions must pass independently of canvas resolution;visible tail/axis ratio remains smaller than original044 reference.",
+    "Actual new grasp sits further toward the tail than technicalG;shaftG occluded so do not fabricate precise bone or interior hand center.",
+    "Far yellow sleeve is large and low;own-sleeve/upper-arm continuity under nearforearm needs Astra actual topology review,not automaticacceptance from continuouspixels.",
+    "OFF mechanical slider is not clearly visible in returned grip/shaft;do not claim usable switch interaction."
+  ],
+  "new_request_count": 1,
+  "original_count": 1,
+  "retry_count": 0,
+  "F069_unopened": true,
+  "material_extent_ownership_caution": "Tail neutral/ink ROI gives a conservative visible band envelope; adjacent original white-dot/arm-edge ownership can contribute a few raw pixels. This generous measurement still falls below original tail/axis proportion. Values are2D source diagnostics with manual uncertainty, not physical calipers."
+}

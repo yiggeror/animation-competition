@@ -1,0 +1,27 @@
+{
+  "status": "ROOT_ACTUALLY_VIEWED_HOLD_FIXED_INVERSE_PROP_RATIO_AND_CLEARANCE",
+  "actual_views": [
+    "qa/actual_RAW_full_gray.png",
+    "qa/actual_RAW_full_action_dark_1p5x.png",
+    "qa/actual_tail_source_coordinate_grid.png",
+    "qa/actual_lamp_source_coordinate_grid.png",
+    "qa/actual_grip_source_coordinate_grid.png",
+    "qa/actual_far_sleeve_source_coordinate_grid.png",
+    "qa/frozen_target_vs_LITERAL_inverse_gray_HOLD.png",
+    "qa/frozen_target_vs_LITERAL_inverse_dark_HOLD.png",
+    "qa/actual_far_palm_to_prop_contour_gap_gray_3x.png"
+  ],
+  "findings": [
+    "Actual output1145x1374 differs from1280x1536;literal77/128 results visibly smaller than frozen head/body and missesT/L. No silent normalization adopted.",
+    "Manual endpoint center axis346.54native vs376;visible neutral tail57.88 vs80–83;red68.82 vs68;lamp119.84 vs124. Material ROIs/edge uncertainty explicitly retained.",
+    "Tail/axis ratio about21.56percent below original044 independent of uniform image scale;one uniform canvas normalization cannot cure this proportion.",
+    "Actual alpha128far palm/prop gap8.38native,alpha16=7.22,alpha1=5.55,allstillpositive. Inputtargetabout15not achieved.",
+    "Neargrasp sits towards tail and slider is not visibly established. Far large low sleeve/upperarm and actual near wrist/ruffle need Astra topology review;no autoPASS from pixelcontinuity."
+  ],
+  "production_candidate_created": false,
+  "protected_source_head_or_cloth_adopted_from_raw": false,
+  "new_request_count": 1,
+  "original_count": 1,
+  "no_retry": true,
+  "F069_unopened": true
+}

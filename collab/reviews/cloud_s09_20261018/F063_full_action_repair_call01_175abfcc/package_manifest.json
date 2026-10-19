@@ -1,10 +1,20 @@
 {
-  "status": "ONE_ORIGINAL_FIRST_DELIVERY_HOLD_PENDING_FIXED_INVERSE_REVIEW",
+  "status": "ACTUAL_REVIEW_HOLD_FIXED_INVERSE_PROP_RATIO_CLEARANCE_NO_CANDIDATE",
   "files": [
     {
       "path": "README.md",
-      "sha256": "f8e0ec0bd7cb7ea71c63f2e1c0195e5fce564d452bffdf96d3a5adff2c2da211",
-      "bytes": 1631
+      "sha256": "e6191f6407ef6e16d3aa49c8a9c5a6c5533fbf90e49cc5e540a90af14e9c9ee3",
+      "bytes": 3397
+    },
+    {
+      "path": "audit_fixed_inverse.py",
+      "sha256": "da550ab7d620c687087b31e936c259908e8ec25463a28259ff103bea7d712d9f",
+      "bytes": 8497
+    },
+    {
+      "path": "diagnostic/F063_LITERAL_77over128_plus550_0_HOLD_NOT_ADOPTED.png",
+      "sha256": "6704d6160029d92500bf7fc97dfaad0f3607e88f39421f7637fa8081262ad6ae",
+      "bytes": 569756
     },
     {
       "path": "frozen_input_175abfcc/README.md",
@@ -397,14 +407,109 @@
       "bytes": 5203
     },
     {
+      "path": "geometry/fixed_inverse_actual_shape_and_gap_HOLD.json",
+      "sha256": "778162ad6960368fdb6639884786478987d5fd9d801ac04e08f6400f3cfe00df",
+      "bytes": 6044
+    },
+    {
+      "path": "masks/RAW_far_complete_palm_actual_material_DIAGNOSTIC.png",
+      "sha256": "61a542482fab5fc4af5d5ad1651b83abf015daa11370a9656991da4beb83c52f",
+      "bytes": 3248
+    },
+    {
+      "path": "masks/RAW_lampcap_visible_actual_visible_material_DIAGNOSTIC.png",
+      "sha256": "d881b0118e0707793a8f49d86345f4236793856968a9fda0597af26398f63f89",
+      "bytes": 2610
+    },
+    {
+      "path": "masks/RAW_red_tube_clear_band_actual_visible_material_DIAGNOSTIC.png",
+      "sha256": "5fe26347e34aef9c3d4acdf2b8e4d7cda1b4edf694c2f499ef1a51bdb3db5d18",
+      "bytes": 1977
+    },
+    {
+      "path": "masks/RAW_tailcap_visible_actual_visible_material_DIAGNOSTIC.png",
+      "sha256": "d5c97503099b397dd724ed7ba41ca306c6d5593934b54a7065594ad7df202c21",
+      "bytes": 2104
+    },
+    {
+      "path": "masks/RAW_visible_whole_prop_actual_material_DIAGNOSTIC.png",
+      "sha256": "60414362f0e912019f42240725b5357fac6ed00d31d5d725fc6a8eb77e320623",
+      "bytes": 5676
+    },
+    {
       "path": "originals/F063_full_action_call01_RAW.png",
       "sha256": "be78fe901b39d838c867326b517ed26ee72ed6488c683f94e06b0487a6df020f",
       "bytes": 1254613
     },
     {
+      "path": "qa/actual_RAW_full_action_dark_1p5x.png",
+      "sha256": "0bc53325e07de94fefcd8ef4b2c03d4e56a3eaa1942ce29ae1585668937966fb",
+      "bytes": 854537
+    },
+    {
+      "path": "qa/actual_RAW_full_action_gray_1p5x.png",
+      "sha256": "a215b1da665a8952db216fd686353e4d81445a6b116b71200699e23ccf6c92d7",
+      "bytes": 867300
+    },
+    {
+      "path": "qa/actual_RAW_full_dark.png",
+      "sha256": "695d36d57532eda4c7f07a9c742f0c30a767ce508fd5ff9400a04505939a0e3d",
+      "bytes": 976503
+    },
+    {
+      "path": "qa/actual_RAW_full_gray.png",
+      "sha256": "0f123da3ec36e7edb87b6dd8ecab8313158331f1cfd197443cd049b459829bbf",
+      "bytes": 1006463
+    },
+    {
+      "path": "qa/actual_far_palm_to_prop_contour_gap_dark_3x.png",
+      "sha256": "8b414e85482a2e64d00af03c220e1f6f13d89f95d310e501d3075e1d58276757",
+      "bytes": 162079
+    },
+    {
+      "path": "qa/actual_far_palm_to_prop_contour_gap_gray_3x.png",
+      "sha256": "bf35173010905d36a41b09d0e5e45014e81c72c64522884ba99e884637063bc1",
+      "bytes": 164862
+    },
+    {
+      "path": "qa/actual_far_sleeve_source_coordinate_grid.png",
+      "sha256": "1904ffa707ade095f228e2018cef586f3664ea2c7640e79fca9ea1e19c5c1352",
+      "bytes": 166659
+    },
+    {
+      "path": "qa/actual_grip_source_coordinate_grid.png",
+      "sha256": "4d751b73c9630408ad8e1d67db2d009c703d81d3d5c765db44f1f8241080ceb0",
+      "bytes": 144838
+    },
+    {
+      "path": "qa/actual_lamp_source_coordinate_grid.png",
+      "sha256": "648a67b474d90f299d8689aa30df1c8dd6eba78591e2d1392cedabe3949c5db3",
+      "bytes": 74250
+    },
+    {
+      "path": "qa/actual_tail_source_coordinate_grid.png",
+      "sha256": "c5a110157ffac10f51a46ec66968d6ea2b3950c5e478887e3dc60fc1b1cea5d4",
+      "bytes": 58279
+    },
+    {
+      "path": "qa/frozen_target_vs_LITERAL_inverse_dark_HOLD.png",
+      "sha256": "d666937b0e7a2d03be6e1a8ba4d1a68e983ab79494c6f12c980040ed7d2657c6",
+      "bytes": 806602
+    },
+    {
+      "path": "qa/frozen_target_vs_LITERAL_inverse_gray_HOLD.png",
+      "sha256": "df61c1a2fcb5ac343827898b473f7ae6b2d693e76e179f76b952e056534b24ca",
+      "bytes": 834319
+    },
+    {
       "path": "qa/raw_first_actual_review_HOLD.json",
       "sha256": "83a225a1878c79ea0064223cab7bbc591420e8ff317ce2e7a0e45a398e7eb90b",
       "bytes": 1003
+    },
+    {
+      "path": "qa/root_actual_fixed_inverse_HOLD_review.json",
+      "sha256": "1f3ebf265380f4e0eb336d0c2c7f802e8ecfac59a30661b2af01e66d4c27d2e2",
+      "bytes": 1586
     },
     {
       "path": "requests/arguments_call01_FINAL_EXACT.json",
@@ -423,13 +528,18 @@
     },
     {
       "path": "requests/execution_state.json",
-      "sha256": "92ecdb6897a1914ce3f9327d353ff8f20bff79cb92a78a661b61ccaa5a9f6c76",
-      "bytes": 698
+      "sha256": "0ab6ceddec8a0a14f2bba1c0c2fb418a802f1dd220a73048c9fa958ca93f694b",
+      "bytes": 783
     },
     {
       "path": "requests/prompt_call01_FINAL_EXACT.txt",
       "sha256": "ac700bb6a3b0d46ce8564e7c14804078e8670a2b97e15038581d14339ed751b0",
       "bytes": 2640
+    },
+    {
+      "path": "verify_actual_archive.py",
+      "sha256": "3bb7f3f2dd10c1728edbe3516d26c56a991f93fe2f58f93ca76a54d114c03862",
+      "bytes": 3383
     }
   ]
 }
