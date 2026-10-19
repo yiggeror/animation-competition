@@ -1,0 +1,32 @@
+{
+  "status": "EXACTLY_ONE_F073_APPROVED_IMAGE_REQUEST_RESERVED",
+  "approved_input_commit": "f1bb124c5c53af75795168eb874b06f35c5cae2c",
+  "approval": "Astra实际看完整目标、同姿掌杆、身份小块、完整mask和裙下边界后输入门通过。只准1调用、1原件、0自动重试；整体漂移先统一相似注册完整组件，再接固定完整下肢/奶奶/C杆。未终门不采用、不扩后态、不冻结曝光。",
+  "reserved_at_UTC": "2026-10-19 13:57:22 UTC",
+  "allowed_calls": 1,
+  "retries_authorized": false,
+  "inputs": [
+    {
+      "actual_path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F073_fixed_lower_input_001/inputs/01_unique_complete_F073_target_REVIEW_ONLY.png",
+      "snapshot": "collab/reviews/cloud_s20_20261018/next_F073_fixed_lower_input_001/generation_001/actual_input_snapshots/01_01_unique_complete_F073_target_REVIEW_ONLY.png",
+      "sha256": "00fecf3d77e0c0891d6939f9956d2fbe1e2629e74c2d9585a354a5ef7f2e885d"
+    },
+    {
+      "actual_path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F073_fixed_lower_input_001/inputs/02_same_pose_dual_clamps_X_3x.png",
+      "snapshot": "collab/reviews/cloud_s20_20261018/next_F073_fixed_lower_input_001/generation_001/actual_input_snapshots/02_02_same_pose_dual_clamps_X_3x.png",
+      "sha256": "c935a10971b30502a8c359032dbca6df3710ca97ae54a0d57649e20e9271a3bf"
+    },
+    {
+      "actual_path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F073_fixed_lower_input_001/inputs/03_070_identity_head_clothes_shoes_patches_only.png",
+      "snapshot": "collab/reviews/cloud_s20_20261018/next_F073_fixed_lower_input_001/generation_001/actual_input_snapshots/03_03_070_identity_head_clothes_shoes_patches_only.png",
+      "sha256": "6b2a5d4b062c6775fc6a9fc0a964d04b9cacb75afef50c0a5d230673465701ce"
+    },
+    {
+      "actual_path": "/workspace/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F073_fixed_lower_input_001/inputs/04_new_upper_whole_skirt_white_full_legs_black_mask.png",
+      "snapshot": "collab/reviews/cloud_s20_20261018/next_F073_fixed_lower_input_001/generation_001/actual_input_snapshots/04_04_new_upper_whole_skirt_white_full_legs_black_mask.png",
+      "sha256": "2959296c6a4285f0c87c7c10ea501972374b48fb5c001c68d7922ad3a8922834"
+    }
+  ],
+  "prompt_sha256": "6850ee94b56b26e1f3befe00f029ceee97417e70f341d7bc79cd0f304212e85e",
+  "fixed_complete_lower_sha256": "da1ef7ce8167179f7268edfe1bd70781551f937a18d33c4a12bc62b17ae8e7c4"
+}
