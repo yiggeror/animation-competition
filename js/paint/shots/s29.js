@@ -1,14 +1,37 @@
-import { renderPreparation } from './s29_lamp.js';
-// S29 · 收（12 秒）。候选镜头，尚未写入 EDL。
-// script-v3：手机留在竹席、线仍插着；小满左手始终保留乌龟签。
+import { loadWrapTail } from '../../anim/s29/wrap_tail.js';
+import { renderFrameIndex as renderEarly } from '../../anim/s29/index.js';
+import { renderFrameIndex as renderFrontFold } from '../../anim/s29/front_fold.js';
+// S29 · 收（11秒8帧候选，24fps）：整臂、前段衔接与接地已修；保留已收紧的准备吹灯结尾。
+// 前段/后段按实际曝光合并；EDL与声音衔接仍由总装更新。
+// 手机留在竹席、线仍插着；F116–239小满空手，两偶归奶奶的布包。
+// F000–115合并团队固定支撑/过渡与完整左臂修复；F057补落掌，F075补落腕。
+// F116切宽，F120→F123→F126→lift 接抬布覆盖；F132–239保留已修覆偶/放稳动作。
 // 0–4.8 收布近景，4.8 切祖孙同框，5.5 与既有开机音同步亮锁屏，8.1 开始转看奶奶。
-// 奶奶图只能承担已包住皮影、最后收拢布瓣的一段；不冒称折鹤颈/逐件收偶/转身吹灯已完成。
+// 两偶与四根杆随同一块布被覆盖；不添加系结或起身，F240仍接原靠灯准备。
 // 原件：anim_29_grandma_wrap d794f131…；xiaoman A f5596f90…（均经静图独审有限采用）。
 import { renderPaint, loadImg } from '../paintshot.js';
 import { makeTurtle, turtlePose } from '../../lamp/turtle.js';
 import { drawPuppet, solve, pointOn } from '../../puppet.js';
 
-export const DURATION = 12;
+export const DURATION = 272 / 24;
+// The approved preparation increment is not included in the supplied packages.
+// Load it only at F240, so the complete F000–239 source chain remains usable.
+// Never substitute s29_lamp.js's earlier single-card preparation here.
+let preparationModule;
+async function renderPreparation(ctx, t, w, h) {
+  let ending;
+  try {
+    preparationModule ??= import('./s29_preparation_drawn.js');
+    ending = await preparationModule;
+  } catch (cause) {
+    const error = new Error('S29 F240–271 needs S29_ENDING_PREPARATION_INCREMENT.zip (native preparation module and assets). No earlier ending is substituted.', { cause });
+    error.code = 'S29_ENDING_PREPARATION_MISSING';
+    throw error;
+  }
+  if (typeof ending.renderPreparation !== 'function') throw new TypeError('S29 native preparation module must export renderPreparation');
+  return ending.renderPreparation(ctx, t, w, h);
+}
+
 const BW = 1672, BH = 941, SAMPLE = 2;
 const smooth = (a, b, t) => { const u = Math.max(0, Math.min(1, (t - a) / (b - a))); return u * u * (3 - 2 * u); };
 export const TIMING = { wider: 4.8, boot: 5.5, turnStart: 8.1, turnEnd: 8.42 };
@@ -112,7 +135,14 @@ function ground() {
   if (GROUND) return GROUND;
   const c = canv(BW, BH), x = c.getContext('2d');
   x.fillStyle = 'rgba(38,29,22,.26)'; x.filter = 'blur(3px)';
-  for (const [px,py,rx,ry] of [[GM.x+140,GM.y+337,31,4],[GM.x+193,GM.y+320,28,4],[GM.x+40,GM.y+297,10,3],[GM.x+85,GM.y+315,10,3],[XM.x+117,XM.y+251,59,5],[XM.x+62,XM.y+249,16,3],[XM.x+30,XM.y+244,15,3],[PH.x,PH.y+3,31,5]]) { x.beginPath(); x.ellipse(px,py,rx,ry,0,0,7); x.fill(); }
+  // Contact points measured on the registered 1024×1536 support drawing:
+  // near/far shoe soles, then the two visible stool feet. Convert once to scene space.
+  const grandmaContacts = [[520,1500,138,14],[805,1450,135,12],[55,1348,30,8],[286,1435,34,9]]
+    .map(([px,py,rx,ry])=>[GM.x+px*GM.sc,GM.y+py*GM.sc,rx*GM.sc,ry*GM.sc]);
+  x.fillStyle = 'rgba(38,29,22,.38)'; x.filter = 'blur(1.5px)';
+  for (const [px,py,rx,ry] of grandmaContacts) { x.beginPath(); x.ellipse(px,py,rx,ry,0,0,7); x.fill(); }
+  x.fillStyle = 'rgba(38,29,22,.26)'; x.filter = 'blur(3px)';
+  for (const [px,py,rx,ry] of [[XM.x+117,XM.y+251,59,5],[XM.x+62,XM.y+249,16,3],[XM.x+30,XM.y+244,15,3],[PH.x,PH.y+3,31,5]]) { x.beginPath(); x.ellipse(px,py,rx,ry,0,0,7); x.fill(); }
   x.filter = 'none';
   // A few old bean shells remain at the mat's edge, scaled to the native room plane.
   for (const [px,py,a] of [[754,703,.3],[721,709,-.6],[772,681,.6],[792,715,-.2],[729,675,.9]]) { x.save(); x.translate(px,py); x.rotate(a); x.fillStyle='#7d934b';x.strokeStyle='#586338';x.lineWidth=.6;x.beginPath();x.ellipse(0,0,6,1.8,0,0,7);x.fill();x.stroke();x.restore(); }
@@ -154,11 +184,12 @@ function turtleLayer() {
 }
 const shot = {
   bg:'bg_01_room_wide',size:[BW*SAMPLE,BH*SAMPLE],
-  layers:async t=>{const A=await assets();return [
+  layers:async t=>{const A=await assets(), tail=await loadWrapTail(t,loadImg);return [
     {img:ground(),x:0,y:0,sc:1},{img:phone(t),x:0,y:0,sc:1},
-    {img:grandmaLayer(A.grandma,t),...GM},
+    {img:tail?.mother || grandmaLayer(A.grandma,t),...GM},
     {img:stage(t),x:0,y:0,sc:1},
-    {img:turtleLayer(),x:0,y:0,sc:1},{img:girlLayer(A,t),...XM},
+    ...(tail ? [] : [{img:turtleLayer(),x:0,y:0,sc:1}]),
+    {img:girlLayer(tail ? {...A,girl:tail.girl} : A,t),...XM},
   ].map(L=>({...L,x:L.x*SAMPLE,y:L.y*SAMPLE,sc:L.sc*SAMPLE}));},
   light:t=>{const L={ambient:[.65,.68,.74],lights:[{x:780,y:60,r:1500,color:[.94,.97,1],i:.32,falloff:1.4},{x:300,y:440,r:700,color:[.55,.7,1],i:.2+.03*Math.sin(t*7),falloff:1.6},{x:600,y:350,r:450,color:[1,.65,.32],i:.09,falloff:2}],exposure:1,vignette:.16,grain:3};L.lights=L.lights.map(l=>({...l,x:l.x*SAMPLE,y:l.y*SAMPLE,r:l.r*SAMPLE}));return L;},
   glow:t=>t>=TIMING.boot?[{x:PH.x*SAMPLE,y:PH.y*SAMPLE,r:30*SAMPLE,color:[153,195,225],a:.08,core:.2}]:[],
@@ -171,6 +202,9 @@ const shot = {
 // Light centers/radii and emission receive exactly the same camera transform.
 export async function renderFrame(ctx,t,w,h){
   t=Math.max(0,Math.min(DURATION,t));
+  const frame=Math.floor(t*24+1e-7);
+  if(frame<90)return renderEarly(ctx,frame,w,h);
+  if(frame<116)return renderFrontFold(ctx,frame,w,h);
   if(t>=10)return renderPreparation(ctx,t-10,w,h);
   const camera=shot.cam(t), k=camera.fit*w/shot.size[0];
   const ox=w/2-camera.x*k, oy=h/2-camera.y*k;

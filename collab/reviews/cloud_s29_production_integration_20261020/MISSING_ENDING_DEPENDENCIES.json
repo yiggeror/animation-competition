@@ -1,0 +1,164 @@
+{
+  "status": "WAITING_FOR_AUTHOR_ENDING_PREPARATION_INCREMENT_NO_FILES_FABRICATED",
+  "requiredPackage": "S29_ENDING_PREPARATION_INCREMENT.zip",
+  "affectedRange": [
+    240,
+    271
+  ],
+  "module": "js/paint/shots/s29_preparation_drawn.js",
+  "moduleExportContract": "renderPreparation(ctx, localTimeFromF240, width, height)",
+  "adoptedCelCount": 9,
+  "derivedMapCount": 27,
+  "missingFileCount": 37,
+  "expectedFiles": {
+    "assets/chars/s29_prepare/lip_gather.png": {
+      "sha256": "bd9ec63d30929181ea735cee60162dc98e3e3415fc1b18452bf2852e0dbe22d0",
+      "bytes": 1721760
+    },
+    "assets/chars/s29_prepare/cheek_near.png": {
+      "sha256": "3df017918cc6b5579499690a9794f48703a47500228618b54383432cad326b85",
+      "bytes": 1716340
+    },
+    "assets/chars/s29_prepare/lip_gather_n.png": {
+      "sha256": "c6f947e0d12f3c2778512c028df6a25063e82846e2d8b02515fe3139a3d1bc77",
+      "bytes": 800105
+    },
+    "assets/chars/s29_prepare/approach_middle.png": {
+      "sha256": "a119449c0dac921f87c0d5c02bef84f3e83a0edb27b2110dc6b0fdc278587d35",
+      "bytes": 1697793
+    },
+    "assets/chars/s29_prepare/approach_near.png": {
+      "sha256": "caf7c7dd710d7015a2c7bc187a9c906aa7850da71249241198012c0665336aab",
+      "bytes": 1713369
+    },
+    "assets/chars/s29_prepare/cheek_quarter_n.png": {
+      "sha256": "d52addf7b5c715101bd14c5eb0752b570fa25694ab9a93ad7ac1b1f5962aab64",
+      "bytes": 808178
+    },
+    "assets/chars/s29_prepare/approach_middle_n.png": {
+      "sha256": "42e94882a4a8854648947e7fc42e7e0d7748e98e6ea673c8216cf1b304f43247",
+      "bytes": 781632
+    },
+    "assets/chars/s29_prepare/cheek_near_shadow.png": {
+      "sha256": "10f847cc739639722491a459aa475399ca9a72146c686d71c8987cd911aa054b",
+      "bytes": 86923
+    },
+    "assets/chars/s29_prepare/approach_start_m.png": {
+      "sha256": "54c3321241108eecbd18530b75a1b0c1de2bca40af599c973cb38d076ac63329",
+      "bytes": 152803
+    },
+    "assets/chars/s29_prepare/approach_start_shadow.png": {
+      "sha256": "cf17f6d9394f9b17d12b2b5b98dd21d733ab4ee1121627998dd9404ee945d790",
+      "bytes": 80515
+    },
+    "assets/chars/s29_prepare/approach_near_m.png": {
+      "sha256": "4a86d6f65dcd390b0281f698253593afadf4f31f8a1c233b808e8e3644071aad",
+      "bytes": 155115
+    },
+    "assets/chars/s29_prepare/cheek_quarter_shadow.png": {
+      "sha256": "5e549a47f220629da0a4d712f68045c6f888004c6e0eaf06fe0704f9e711bd77",
+      "bytes": 84874
+    },
+    "assets/chars/s29_prepare/approach_start.png": {
+      "sha256": "afe432f813d424d7f3ee58718b5c81b74b774e2f02afbcd72bf80e285c40550f",
+      "bytes": 1693225
+    },
+    "assets/chars/s29_prepare/approach_quarter_shadow.png": {
+      "sha256": "d76bf1b24a22d1f7434f88fc2103c7296e5b40ca3af274ae19cac9f6039e38b5",
+      "bytes": 80408
+    },
+    "assets/chars/s29_prepare/cheek_near_n.png": {
+      "sha256": "1212480510d170981ef60f569b82de7be4c19d24334ac754a2a1617351e32c55",
+      "bytes": 806460
+    },
+    "assets/chars/s29_prepare/cheek_half.png": {
+      "sha256": "b67cd6d56f9c7423cd15e5d3c6ec242dbb2a908597d8256657c5fcfe4df10315",
+      "bytes": 1740329
+    },
+    "assets/chars/s29_prepare/approach_quarter_m.png": {
+      "sha256": "9928f6f4f827ebe92660bee2b24c8a71f2ee4949d9c208bccc4cfcb120c2c9bf",
+      "bytes": 153132
+    },
+    "assets/chars/s29_prepare/cheek_half_n.png": {
+      "sha256": "5fbb7b8e94cf08cad509e0f8d20d6c7189276bc4e55099f173066cbb5a2a1455",
+      "bytes": 804603
+    },
+    "assets/chars/s29_prepare/cheek_half_shadow.png": {
+      "sha256": "dad85c90af7c43702800a7fada36a330c44b60256873ce1e3f05f192304a1b3f",
+      "bytes": 85228
+    },
+    "assets/chars/s29_prepare/approach_quarter.png": {
+      "sha256": "f5ec675c930c0557c94687c8a0e7e227ec974e734d992eb47fc5ef9d0a72140f",
+      "bytes": 1712085
+    },
+    "assets/chars/s29_prepare/cheek_quarter_m.png": {
+      "sha256": "273126db3dd60b2966cbd7d65029f9d48a3f88f7a87720287251822ae0fa451c",
+      "bytes": 158033
+    },
+    "assets/chars/s29_prepare/cheek_near_m.png": {
+      "sha256": "7d3dffb2958e8210cf91ce2eefd0f439202b731a44f5f51ad549ac94c096bacd",
+      "bytes": 154763
+    },
+    "assets/chars/s29_prepare/lip_gather_m.png": {
+      "sha256": "ab681b3ceba702413839729b6975832dea1b6eedec6ff559891b25e8b543525d",
+      "bytes": 159079
+    },
+    "assets/chars/s29_prepare/approach_start_n.png": {
+      "sha256": "4db04acaa8b32f0a711d8f7c2efa5f4e02cfff5a5d229a33a8afc28ecee1c8e3",
+      "bytes": 782873
+    },
+    "assets/chars/s29_prepare/approach_middle_shadow.png": {
+      "sha256": "07ee641864c277531d7320c8e0bf6f1ebc2b5a36af2dce6e43704666788d0af2",
+      "bytes": 79607
+    },
+    "assets/chars/s29_prepare/approach_near_shadow.png": {
+      "sha256": "53e53e255033ea55d953d38e19c77514eb1320037be271d6e06f8e904485e6c5",
+      "bytes": 78697
+    },
+    "assets/chars/s29_prepare/cheek_half_m.png": {
+      "sha256": "647795e2c74e5b76414c34c7b11307217b8e94c4175a1cec321acd43814e232b",
+      "bytes": 152618
+    },
+    "assets/chars/s29_prepare/inhale_shadow.png": {
+      "sha256": "03693af58d5bab686f0ccd5b99957ead6a8d248097d6292a0f34805272c31883",
+      "bytes": 86328
+    },
+    "assets/chars/s29_prepare/inhale.png": {
+      "sha256": "cb89ba100d9fb3be415eaf9dbc9a8e0aa0f748f9b7c2051965ce3e924e3e8fc4",
+      "bytes": 1709259
+    },
+    "assets/chars/s29_prepare/inhale_m.png": {
+      "sha256": "17e1979c1973eb1c7c41972144ea8c3b0cb4d004b76b7c02dd7a878f370cb7c7",
+      "bytes": 152188
+    },
+    "assets/chars/s29_prepare/cheek_quarter.png": {
+      "sha256": "c9221a6270569f1723a2185c3b74058c44025d06e5a2721485726a47a12117d8",
+      "bytes": 1720903
+    },
+    "assets/chars/s29_prepare/approach_quarter_n.png": {
+      "sha256": "4281cb10e29b18f1656b0a79691b638e159fcc1c1dd902dc222d39f1ae457c6c",
+      "bytes": 799319
+    },
+    "assets/chars/s29_prepare/inhale_n.png": {
+      "sha256": "37e31d920167587c30b8a32f6383f8b8e0d94e697de0c25c1a1ee4710a5b6e5a",
+      "bytes": 807954
+    },
+    "assets/chars/s29_prepare/lip_gather_shadow.png": {
+      "sha256": "a7f267eef1a93f7928849e5b38c75235fa26dbd582157ee60abe99a1bdc9fad2",
+      "bytes": 86214
+    },
+    "assets/chars/s29_prepare/approach_middle_m.png": {
+      "sha256": "4adbc602a071c6bbc6cda5b2401e21f6525c33c90bbf0007b20dc9e95aec4d8d",
+      "bytes": 149717
+    },
+    "assets/chars/s29_prepare/approach_near_n.png": {
+      "sha256": "2d7edf03605f6c9a4781077c6f5943cc86ccbffd99d8bebfd7918206b419cb3d",
+      "bytes": 803750
+    },
+    "js/paint/shots/s29_preparation_drawn.js": {
+      "sha256": "629194244d05c9ac0ec8b46b3b105c4dbf26f0aca526344e35dd87530b1303af",
+      "bytes": 3256
+    }
+  },
+  "boundary": "Production entry lazily imports native preparation only at F240; F000–239 renders without it. Missing ending throws S29_ENDING_PREPARATION_MISSING; old single-card ending is never substituted."
+}

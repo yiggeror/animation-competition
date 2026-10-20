@@ -1,0 +1,576 @@
+{
+  "baselineCommit": "d7f6a646991506712f9d4bf13a1d4dc3fa132df0",
+  "patchOrder": [
+    "source_packages/complete/S29_COMPLETE/patch/S29_COMPLETE_MINIMAL.patch",
+    "source_packages/color/patch/S29_COLOR_ONLY.patch",
+    "38bee256c2459d8cf7bfc2353a7074435978c12a:S29_TAIL_MOTION_ENTRY.patch"
+  ],
+  "baselineSourceFiles": [
+    {
+      "file": "assets/chars/s29/F024.png",
+      "baseSHA256": "87aea20798add9fbbba58e16d151008f6a5a6fc7629b73b49f0e49c3f16caa7a"
+    },
+    {
+      "file": "assets/chars/s29/F030.png",
+      "baseSHA256": "0d621c508dc94fa41d3223374dbc372438b5ab8976dcf10b9b5a028c8a2648fa"
+    },
+    {
+      "file": "assets/chars/s29/F036.png",
+      "baseSHA256": "233294ffa3487f7e00fe0fce78fc3d29520cc91f54f62b70f7be789e44378978"
+    },
+    {
+      "file": "assets/chars/s29/F042.png",
+      "baseSHA256": "6321353572a45919c114ebab0e3c616c92bd5007afbe97ca3018b06a272b3444"
+    },
+    {
+      "file": "assets/chars/s29/F048.png",
+      "baseSHA256": "7cfb050414a6fde23fddf3f44bf2c83ddaae54f0be6b25d3babb874dda40b298"
+    },
+    {
+      "file": "assets/chars/s29/F054.png",
+      "baseSHA256": "d325fd3bc84a6a049aba27a7a07de6363b50adcb46d90132cdb3987687dffe64"
+    },
+    {
+      "file": "assets/chars/s29/F060.png",
+      "baseSHA256": "b58a1241dd966774e9ff68c2ae5e05fadeca523a016b6cabecc264318c9d40c5"
+    },
+    {
+      "file": "assets/chars/s29/F066.png",
+      "baseSHA256": "37f431300cd341dc1992380e75788f0957a7bc3ecdc81ff90fe4f587451e42f0"
+    },
+    {
+      "file": "assets/chars/s29/F072.png",
+      "baseSHA256": "f6535f820571ae957730f6eac21b35168fde0688a173f6361545dca3cba06d33"
+    },
+    {
+      "file": "assets/chars/s29/F078.png",
+      "baseSHA256": "1024ad839aa66d7aa3249206f7df3cc21e8c3b5c866c234cc16b42d67a5774f1"
+    },
+    {
+      "file": "assets/chars/s29/F084.png",
+      "baseSHA256": "b256e538da7a67f9457a2b22706641de899d3978292a40a64fba7ab937cd83ff"
+    },
+    {
+      "file": "js/anim/s29/exposure.js",
+      "baseSHA256": "378de34f4fff864c190cab7dd2092c6c111cc70afab45f498e526ad493081b45"
+    },
+    {
+      "file": "js/paint/shots/s29.js",
+      "baseSHA256": "0aa013b4462457d0142c45e20ed806861a1450c69a60e9e39f01d1be2a6852f9"
+    }
+  ],
+  "comparisonWithLatestBaseline": [
+    {
+      "file": "assets/chars/s29/F054.png",
+      "expected": "4ea68fb924f0411a34572ab634cd3c94d7281bec9330786f0f36c57a780bb370",
+      "actual": "4ea68fb924f0411a34572ab634cd3c94d7281bec9330786f0f36c57a780bb370",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29/F036.png",
+      "expected": "ae89f0737e6b9e2a4c340db4526403a96c186750332fba9ebdd2aff6fe75fef0",
+      "actual": "ae89f0737e6b9e2a4c340db4526403a96c186750332fba9ebdd2aff6fe75fef0",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29/F024.png",
+      "expected": "82a589aeb73f04c7446f9a7c3fdbc1bd605ae778aeb4e5cacbf8717a208c468a",
+      "actual": "82a589aeb73f04c7446f9a7c3fdbc1bd605ae778aeb4e5cacbf8717a208c468a",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29/F048.png",
+      "expected": "5a38d69ec46b267476c1ddc9b39be6857bf84c65db50902b6823f920a9e2dab5",
+      "actual": "5a38d69ec46b267476c1ddc9b39be6857bf84c65db50902b6823f920a9e2dab5",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29/F078.png",
+      "expected": "c521171e1360e6f65c9f5991a34d9b0e1d57c7f334677c3d16bb86b151753e0f",
+      "actual": "c521171e1360e6f65c9f5991a34d9b0e1d57c7f334677c3d16bb86b151753e0f",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29/F108.png",
+      "expected": "0bb07862567cf5bdec940636be6bb7835deee6d6953c9911efd2baf31d443ab5",
+      "actual": "0bb07862567cf5bdec940636be6bb7835deee6d6953c9911efd2baf31d443ab5",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29/F000.png",
+      "expected": "a9d663b68cf725f1f6a00d8781b82903967b864ab427a09f08838e28a57aee3c",
+      "actual": "a9d663b68cf725f1f6a00d8781b82903967b864ab427a09f08838e28a57aee3c",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29/F042.png",
+      "expected": "63842e69701a7a8efef2fe39767788cb84875cf70c2b26027b982848e03e9e9b",
+      "actual": "63842e69701a7a8efef2fe39767788cb84875cf70c2b26027b982848e03e9e9b",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29/F072.png",
+      "expected": "ebcbe9497dc7091fde207f99bf837ad6614a58deaaff1566b686e70c108c4a29",
+      "actual": "ebcbe9497dc7091fde207f99bf837ad6614a58deaaff1566b686e70c108c4a29",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29/F102.png",
+      "expected": "a5f9c2f76e7926325ce3b9b21c9da1cdf5b4b64c9eba24f139e4b5f1248d470c",
+      "actual": "a5f9c2f76e7926325ce3b9b21c9da1cdf5b4b64c9eba24f139e4b5f1248d470c",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29/F120.png",
+      "expected": "4240c96636db7fea5ad252f52726a6f3ce43bc6495127f8a7a3740299f5a3db9",
+      "actual": "4240c96636db7fea5ad252f52726a6f3ce43bc6495127f8a7a3740299f5a3db9",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29/F030.png",
+      "expected": "72242b30bce5a044257b18089b44f2440dab72c8f256bc28393775ee0602f1e9",
+      "actual": "72242b30bce5a044257b18089b44f2440dab72c8f256bc28393775ee0602f1e9",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29/F096.png",
+      "expected": "41af196487f56f5fbb17b968b0894b47cb3bd1e0e13ef85e767c1c0a417baa1a",
+      "actual": "41af196487f56f5fbb17b968b0894b47cb3bd1e0e13ef85e767c1c0a417baa1a",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29/F090.png",
+      "expected": "4db9cadb1ecd148b66a5cfa1ee8af20c8251ecf2b41befc6940f5e746a5e7b5f",
+      "actual": "4db9cadb1ecd148b66a5cfa1ee8af20c8251ecf2b41befc6940f5e746a5e7b5f",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29/F084.png",
+      "expected": "6edce43a6e5c6746e52015eb1fe16b28ed5fbfecf836cde58a49d5ecadc5b568",
+      "actual": "6edce43a6e5c6746e52015eb1fe16b28ed5fbfecf836cde58a49d5ecadc5b568",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29/F060.png",
+      "expected": "0ef97e8fd184b42fdc3ff18c817869fd0fe73e208bb5117526c62ba399221c8e",
+      "actual": "0ef97e8fd184b42fdc3ff18c817869fd0fe73e208bb5117526c62ba399221c8e",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29/F066.png",
+      "expected": "bd6e5d950fa8db7ab805a491203e9d175fb56e7ead11aa00bd48dc6f3e9c2661",
+      "actual": "bd6e5d950fa8db7ab805a491203e9d175fb56e7ead11aa00bd48dc6f3e9c2661",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/tailfix_grip_roll.png",
+      "expected": "d14c2c66e54fcebebdd1d30b0c81de33d2abf857710c380a2f1f6138a4c1d7de",
+      "actual": "d14c2c66e54fcebebdd1d30b0c81de33d2abf857710c380a2f1f6138a4c1d7de",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/tailfix_finger_open.png",
+      "expected": "f817d1d329b63a5ce5b1b88c1f2400c1bcb1ec72b77e5bc811948bb64aca1984",
+      "actual": "f817d1d329b63a5ce5b1b88c1f2400c1bcb1ec72b77e5bc811948bb64aca1984",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/x29_empty_hand.png",
+      "expected": "433fb9545396e54de6337865b91aa8ca3bc95546f93c17955d309aea547d498c",
+      "actual": "433fb9545396e54de6337865b91aa8ca3bc95546f93c17955d309aea547d498c",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/tailfix_edge_out_a.png",
+      "expected": "965983c5ee69572e1d33858d7e599393a8d0dd1cc47ae762f10fd76e10c7a81f",
+      "actual": "965983c5ee69572e1d33858d7e599393a8d0dd1cc47ae762f10fd76e10c7a81f",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/tailfix_edge_out_b.png",
+      "expected": "bb5f5d705088c895b52aa7fedb7f461b2b4cdc017cef70ff85a5e058ebb1706d",
+      "actual": "bb5f5d705088c895b52aa7fedb7f461b2b4cdc017cef70ff85a5e058ebb1706d",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/lift.png",
+      "expected": "acc7c0a8f41c5c5c4f005002a6432443d5bb46b4ddc8e2db8dd4d69fe020834e",
+      "actual": "acc7c0a8f41c5c5c4f005002a6432443d5bb46b4ddc8e2db8dd4d69fe020834e",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/tailfix_thumb_release.png",
+      "expected": "45e02dc6cae79ca9327548ad187c5e57677d39935f56550dadb98ebf566c91c0",
+      "actual": "45e02dc6cae79ca9327548ad187c5e57677d39935f56550dadb98ebf566c91c0",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/tailfix_sweep_start.png",
+      "expected": "e28e57fc4a9a875aaf0a82677dc95123a4d546203ce94f772531ea673e7ba05b",
+      "actual": "e28e57fc4a9a875aaf0a82677dc95123a4d546203ce94f772531ea673e7ba05b",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/tailfix_fingertip_touch.png",
+      "expected": "f2ca4d6aed6bd1e77998ed789e57a195009ed7d39580ec349ca798c07a5825be",
+      "actual": "f2ca4d6aed6bd1e77998ed789e57a195009ed7d39580ec349ca798c07a5825be",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/lowering.png",
+      "expected": "fcefe9ab5ecef06377ee2a865a2a7eece30277f3b8e2d98752d04209cc1794c5",
+      "actual": "fcefe9ab5ecef06377ee2a865a2a7eece30277f3b8e2d98752d04209cc1794c5",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/tailfix_lower_end.png",
+      "expected": "8b914d27c20568f5224b27cfaa7d1463bc2525f5fcb22bc25880ead05c34be45",
+      "actual": "8b914d27c20568f5224b27cfaa7d1463bc2525f5fcb22bc25880ead05c34be45",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/settled.png",
+      "expected": "11996964a776c5c1eedf1ab72ddc5b935af26c3cd02c9dc4ff74351975970744",
+      "actual": "11996964a776c5c1eedf1ab72ddc5b935af26c3cd02c9dc4ff74351975970744",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/release.png",
+      "expected": "eaa1d9e0c6b0512b1a21543d7f7a9aeee7d83f607f5758f8bcefffe41d2a0782",
+      "actual": "eaa1d9e0c6b0512b1a21543d7f7a9aeee7d83f607f5758f8bcefffe41d2a0782",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/cover.png",
+      "expected": "efc88cf9bf723fe1da4a5a7cf1d6bfbf8ee184006cfc2281a33eb50dd26bb07e",
+      "actual": "efc88cf9bf723fe1da4a5a7cf1d6bfbf8ee184006cfc2281a33eb50dd26bb07e",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/tailfix_palm_approach.png",
+      "expected": "be48f3544c4766eb369713dfdf314621b173a27115eabd719327f1ad75c567f3",
+      "actual": "be48f3544c4766eb369713dfdf314621b173a27115eabd719327f1ad75c567f3",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/contact.png",
+      "expected": "bb6716947c6380922f2540f970f592bac82d74394d24d1e8904e9443634ecf21",
+      "actual": "bb6716947c6380922f2540f970f592bac82d74394d24d1e8904e9443634ecf21",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/tailfix_settle_ease.png",
+      "expected": "0da0133d672fad9e4b7f6bf40a33dd4a71e0a2788e86749b4f0d366b49eaac1c",
+      "actual": "0da0133d672fad9e4b7f6bf40a33dd4a71e0a2788e86749b4f0d366b49eaac1c",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_tail/tailfix_cover_low.png",
+      "expected": "3fd6aef806757c0ca044f37aa7083579dca5a85e9c3edf029f2b1e52f7e90d3d",
+      "actual": "3fd6aef806757c0ca044f37aa7083579dca5a85e9c3edf029f2b1e52f7e90d3d",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/s29_prepare/lip_gather.png",
+      "expected": "bd9ec63d30929181ea735cee60162dc98e3e3415fc1b18452bf2852e0dbe22d0",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/cheek_near.png",
+      "expected": "3df017918cc6b5579499690a9794f48703a47500228618b54383432cad326b85",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/lip_gather_n.png",
+      "expected": "c6f947e0d12f3c2778512c028df6a25063e82846e2d8b02515fe3139a3d1bc77",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/approach_middle.png",
+      "expected": "a119449c0dac921f87c0d5c02bef84f3e83a0edb27b2110dc6b0fdc278587d35",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/approach_near.png",
+      "expected": "caf7c7dd710d7015a2c7bc187a9c906aa7850da71249241198012c0665336aab",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/cheek_quarter_n.png",
+      "expected": "d52addf7b5c715101bd14c5eb0752b570fa25694ab9a93ad7ac1b1f5962aab64",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/approach_middle_n.png",
+      "expected": "42e94882a4a8854648947e7fc42e7e0d7748e98e6ea673c8216cf1b304f43247",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/cheek_near_shadow.png",
+      "expected": "10f847cc739639722491a459aa475399ca9a72146c686d71c8987cd911aa054b",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/approach_start_m.png",
+      "expected": "54c3321241108eecbd18530b75a1b0c1de2bca40af599c973cb38d076ac63329",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/approach_start_shadow.png",
+      "expected": "cf17f6d9394f9b17d12b2b5b98dd21d733ab4ee1121627998dd9404ee945d790",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/approach_near_m.png",
+      "expected": "4a86d6f65dcd390b0281f698253593afadf4f31f8a1c233b808e8e3644071aad",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/cheek_quarter_shadow.png",
+      "expected": "5e549a47f220629da0a4d712f68045c6f888004c6e0eaf06fe0704f9e711bd77",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/approach_start.png",
+      "expected": "afe432f813d424d7f3ee58718b5c81b74b774e2f02afbcd72bf80e285c40550f",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/approach_quarter_shadow.png",
+      "expected": "d76bf1b24a22d1f7434f88fc2103c7296e5b40ca3af274ae19cac9f6039e38b5",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/cheek_near_n.png",
+      "expected": "1212480510d170981ef60f569b82de7be4c19d24334ac754a2a1617351e32c55",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/cheek_half.png",
+      "expected": "b67cd6d56f9c7423cd15e5d3c6ec242dbb2a908597d8256657c5fcfe4df10315",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/approach_quarter_m.png",
+      "expected": "9928f6f4f827ebe92660bee2b24c8a71f2ee4949d9c208bccc4cfcb120c2c9bf",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/cheek_half_n.png",
+      "expected": "5fbb7b8e94cf08cad509e0f8d20d6c7189276bc4e55099f173066cbb5a2a1455",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/cheek_half_shadow.png",
+      "expected": "dad85c90af7c43702800a7fada36a330c44b60256873ce1e3f05f192304a1b3f",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/approach_quarter.png",
+      "expected": "f5ec675c930c0557c94687c8a0e7e227ec974e734d992eb47fc5ef9d0a72140f",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/cheek_quarter_m.png",
+      "expected": "273126db3dd60b2966cbd7d65029f9d48a3f88f7a87720287251822ae0fa451c",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/cheek_near_m.png",
+      "expected": "7d3dffb2958e8210cf91ce2eefd0f439202b731a44f5f51ad549ac94c096bacd",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/lip_gather_m.png",
+      "expected": "ab681b3ceba702413839729b6975832dea1b6eedec6ff559891b25e8b543525d",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/approach_start_n.png",
+      "expected": "4db04acaa8b32f0a711d8f7c2efa5f4e02cfff5a5d229a33a8afc28ecee1c8e3",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/approach_middle_shadow.png",
+      "expected": "07ee641864c277531d7320c8e0bf6f1ebc2b5a36af2dce6e43704666788d0af2",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/approach_near_shadow.png",
+      "expected": "53e53e255033ea55d953d38e19c77514eb1320037be271d6e06f8e904485e6c5",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/cheek_half_m.png",
+      "expected": "647795e2c74e5b76414c34c7b11307217b8e94c4175a1cec321acd43814e232b",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/inhale_shadow.png",
+      "expected": "03693af58d5bab686f0ccd5b99957ead6a8d248097d6292a0f34805272c31883",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/inhale.png",
+      "expected": "cb89ba100d9fb3be415eaf9dbc9a8e0aa0f748f9b7c2051965ce3e924e3e8fc4",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/inhale_m.png",
+      "expected": "17e1979c1973eb1c7c41972144ea8c3b0cb4d004b76b7c02dd7a878f370cb7c7",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/cheek_quarter.png",
+      "expected": "c9221a6270569f1723a2185c3b74058c44025d06e5a2721485726a47a12117d8",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/approach_quarter_n.png",
+      "expected": "4281cb10e29b18f1656b0a79691b638e159fcc1c1dd902dc222d39f1ae457c6c",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/inhale_n.png",
+      "expected": "37e31d920167587c30b8a32f6383f8b8e0d94e697de0c25c1a1ee4710a5b6e5a",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/lip_gather_shadow.png",
+      "expected": "a7f267eef1a93f7928849e5b38c75235fa26dbd582157ee60abe99a1bdc9fad2",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/approach_middle_m.png",
+      "expected": "4adbc602a071c6bbc6cda5b2401e21f6525c33c90bbf0007b20dc9e95aec4d8d",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "assets/chars/s29_prepare/approach_near_n.png",
+      "expected": "2d7edf03605f6c9a4781077c6f5943cc86ccbffd99d8bebfd7918206b419cb3d",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "js/anim/s29/front_fold.js",
+      "expected": "6a3c2f7c285911f06a01123714a27f706b9506d2d02c0b7b5febc548f6b0f6bb",
+      "actual": "6a3c2f7c285911f06a01123714a27f706b9506d2d02c0b7b5febc548f6b0f6bb",
+      "matches": true
+    },
+    {
+      "file": "js/anim/s29/index.js",
+      "expected": "c516287c0e2b34e9064cd0b3d2c8fde36c69f0864fd52680fed3768882f65d13",
+      "actual": "c516287c0e2b34e9064cd0b3d2c8fde36c69f0864fd52680fed3768882f65d13",
+      "matches": true
+    },
+    {
+      "file": "js/anim/s29/scene_source.js",
+      "expected": "3543f316773bc2eba3a5f4c80e7cc73bf723a7268fcbaa9dd321f2259c55e186",
+      "actual": "3543f316773bc2eba3a5f4c80e7cc73bf723a7268fcbaa9dd321f2259c55e186",
+      "matches": true
+    },
+    {
+      "file": "js/anim/s29/wrap_tail.js",
+      "expected": "4118cdc2139a5a77e7125272fa5cdc9ab0e1e2182281784ddafbb60820fef4d0",
+      "actual": "4118cdc2139a5a77e7125272fa5cdc9ab0e1e2182281784ddafbb60820fef4d0",
+      "matches": true
+    },
+    {
+      "file": "js/anim/s29/front_fold_exposure.js",
+      "expected": "3de248793fbd4ad928645e4422c1087076fb6248711d2240f90913a1ac282314",
+      "actual": "3de248793fbd4ad928645e4422c1087076fb6248711d2240f90913a1ac282314",
+      "matches": true
+    },
+    {
+      "file": "js/anim/s29/exposure.js",
+      "expected": "a97a04ab6123f9ed3bf12efb7a0b4b446b726dfb51e4991024b5f6927242daa8",
+      "actual": "a97a04ab6123f9ed3bf12efb7a0b4b446b726dfb51e4991024b5f6927242daa8",
+      "matches": true
+    },
+    {
+      "file": "js/paint/shots/s29.js",
+      "expected": "f1637b7f8f170670c0799444021a783688ac1dd8f3aade7437e6b7f7ad8a1472",
+      "actual": "76889bf410082200e6af13b22129c557346daa26fa46bef7d001e8c65e4b2d34",
+      "matches": false
+    },
+    {
+      "file": "js/paint/shots/s29_preparation_drawn.js",
+      "expected": "629194244d05c9ac0ec8b46b3b105c4dbf26f0aca526344e35dd87530b1303af",
+      "actual": null,
+      "matches": false
+    },
+    {
+      "file": "js/paint/shots/s29_lamp.js",
+      "expected": "fa2a68fecf715a810bc0a4319eb64a874f7ed36b6640043ffa831550474f6ae1",
+      "actual": "fa2a68fecf715a810bc0a4319eb64a874f7ed36b6640043ffa831550474f6ae1",
+      "matches": true
+    },
+    {
+      "file": "js/paint/shots/s30.js",
+      "expected": "89125ac376bdd5355e538547e7d217f923aaedb16fb4c4e0ffe0fd2b43cc8da3",
+      "actual": "89125ac376bdd5355e538547e7d217f923aaedb16fb4c4e0ffe0fd2b43cc8da3",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/g29_prepare_blow.png",
+      "expected": "a2e7d70d7bb06b43a88a7ef88f354c2378db33ad7b5018537a62326b0babefa8",
+      "actual": "a2e7d70d7bb06b43a88a7ef88f354c2378db33ad7b5018537a62326b0babefa8",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/g29_prepare_blow_shadow.png",
+      "expected": "db47e43763d24d74199955c16c1a3a58773048f03c8ddabb32817c92b3da98c7",
+      "actual": "db47e43763d24d74199955c16c1a3a58773048f03c8ddabb32817c92b3da98c7",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/g29_prepare_blow_m.png",
+      "expected": "1d0656ed85be9e664728fb420dc47c51f5f21637296cb2b814dca87884ee6223",
+      "actual": "1d0656ed85be9e664728fb420dc47c51f5f21637296cb2b814dca87884ee6223",
+      "matches": true
+    },
+    {
+      "file": "assets/chars/g29_prepare_blow_n.png",
+      "expected": "76d475573da60667c8c364d847668b882670c33241c6fa080879d83d7ccf7f63",
+      "actual": "76d475573da60667c8c364d847668b882670c33241c6fa080879d83d7ccf7f63",
+      "matches": true
+    }
+  ],
+  "temporaryTree": "/tmp/s29_pro1_cumulative_reconstruction_20261020",
+  "filledUnchangedDependenciesFrom": "d7f6a646991506712f9d4bf13a1d4dc3fa132df0"
+}

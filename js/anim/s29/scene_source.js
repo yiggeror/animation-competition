@@ -39,7 +39,13 @@ function ground() {
   if (GROUND) return GROUND;
   const c = canv(BW, BH), x = c.getContext('2d');
   x.fillStyle = 'rgba(38,29,22,.26)'; x.filter = 'blur(3px)';
-  for (const [px,py,rx,ry] of [[GM.x+140,GM.y+337,31,4],[GM.x+193,GM.y+320,28,4],[GM.x+40,GM.y+297,10,3],[GM.x+85,GM.y+315,10,3],[XM.x+117,XM.y+251,59,5],[XM.x+62,XM.y+249,16,3],[XM.x+30,XM.y+244,15,3],[PH.x,PH.y+3,31,5]]) { x.beginPath(); x.ellipse(px,py,rx,ry,0,0,7); x.fill(); }
+  // Same registered source-space shoe/stool contacts as the wide S29 compositor.
+  const grandmaContacts = [[520,1500,138,14],[805,1450,135,12],[55,1348,30,8],[286,1435,34,9]]
+    .map(([px,py,rx,ry])=>[GM.x+px*GM.sc,GM.y+py*GM.sc,rx*GM.sc,ry*GM.sc]);
+  x.fillStyle = 'rgba(38,29,22,.38)'; x.filter = 'blur(1.5px)';
+  for (const [px,py,rx,ry] of grandmaContacts) { x.beginPath(); x.ellipse(px,py,rx,ry,0,0,7); x.fill(); }
+  x.fillStyle = 'rgba(38,29,22,.26)'; x.filter = 'blur(3px)';
+  for (const [px,py,rx,ry] of [[XM.x+117,XM.y+251,59,5],[XM.x+62,XM.y+249,16,3],[XM.x+30,XM.y+244,15,3],[PH.x,PH.y+3,31,5]]) { x.beginPath(); x.ellipse(px,py,rx,ry,0,0,7); x.fill(); }
   x.filter = 'none';
   // A few old bean shells remain at the mat's edge, scaled to the native room plane.
   for (const [px,py,a] of [[754,703,.3],[721,709,-.6],[772,681,.6],[792,715,-.2],[729,675,.9]]) { x.save(); x.translate(px,py); x.rotate(a); x.fillStyle='#7d934b';x.strokeStyle='#586338';x.lineWidth=.6;x.beginPath();x.ellipse(0,0,6,1.8,0,0,7);x.fill();x.stroke();x.restore(); }
