@@ -1,0 +1,89 @@
+{
+  "newSourceCommit": "95ef8644959df81c7852b1ac2427e368ffecc1a9",
+  "newMotherSHA256": "b3396b79653e5bb8c9643c9510abb58494c8befd88ec22e213e16a141f8fa255",
+  "newSourceFiles": {
+    "sources/README.md": "79f3161ad9371b5f1c0c524c05038f000abb8b422e6b53f7493059f6cf3b575a",
+    "sources/F094_101_COMPLETE_CHARACTER.png": "b3396b79653e5bb8c9643c9510abb58494c8befd88ec22e213e16a141f8fa255",
+    "sources/F098_LINKED_FINITE_RODS.png": "026c9879f16063bd6e0214ebe0fe3b03573361b84c0be21cb1048609e524358b",
+    "sources/CONSUMER_MAPPING.json": "01360a2cf6ac83830942bcece14029fd2cfece72e50bf7eed20e1a9020cd6f61",
+    "sources/F094_LINKED_FINITE_RODS.png": "3351780c36e7c3fd10a401ef43c7cbb1e36382eca8680c02ba1e161eee6548c6"
+  },
+  "natural102Commit": "4a791f3316aab5d56d3d6d903176de3a537528a3",
+  "natural106Commit": "3f10d080dcd196aed153b9c11129cab9eef922dd",
+  "previousSuccessfulConsumerCommit": "81a4ab9c377d835fcdf88429bf077b2f6f1142d7",
+  "actual102106Checks": {
+    "102": {
+      "priorNaturalActualRGBAUnchanged": true,
+      "maxPixelDelta": 0
+    },
+    "106": {
+      "priorNaturalActualRGBAUnchanged": true,
+      "maxPixelDelta": 0
+    }
+  },
+  "exposureCandidate": [
+    {
+      "start": 90,
+      "end": 93,
+      "body": "Original final hair/skin actual video"
+    },
+    {
+      "start": 94,
+      "end": 97,
+      "body": "one complete b339 mother",
+      "paperAndRods": 94
+    },
+    {
+      "start": 98,
+      "end": 101,
+      "body": "same complete b339 mother",
+      "paperAndRods": 98
+    },
+    {
+      "start": 102,
+      "end": 105,
+      "body": "natural93bf",
+      "paperAndRods": 102
+    },
+    {
+      "start": 106,
+      "end": 109,
+      "body": "same natural93bf",
+      "paperAndRods": 106
+    }
+  ],
+  "registration": "Each supplied1672x941 body normalized ONCE; original whole-scene camera, no per-body transforms",
+  "actualStatus": "ENTRY_FORWARD_OVERSHOOT_AND_RETURN_VISIBLE; NOT_MOTION_APPROVED",
+  "minimalArtFollowup": [
+    "Repair the single094–101 complete mother: head-neck-chest/shoulder forward overshoot and highL complete arm reach, preserve natural raised-kneel support and whole character continuity toward102. One body source feeds both094/098; do not request two unnecessary independent body generations.",
+    "Recheck090 entry head/body volume from actual comparison; if090 is inconsistent, repair necessary adjacent pose rather than shrinking or freezing the new natural body."
+  ],
+  "gripEvidenceSceneBeforeCamera": {
+    "094098_L": [
+      976.0765550239234,
+      434.98405951115836
+    ],
+    "102106_L": [
+      883,
+      435
+    ],
+    "L_return_px": [
+      -93.0765550239234,
+      0.01594048884164
+    ],
+    "094098_R": [
+      935.8851674641148,
+      603.6981934112646
+    ],
+    "102106_R": [
+      894,
+      607
+    ],
+    "R_return_px": [
+      -41.8851674641148,
+      3.3018065887354
+    ],
+    "note": "Evidence of backward return, not new target coordinates or natural-motion proof"
+  },
+  "unchangedFinal8sSHA256": "4f0568b1c4727fda92be05dac275d58afbf2c4354868ca0e2cc6b2a8b045d5e5"
+}

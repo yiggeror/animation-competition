@@ -1,0 +1,462 @@
+{
+  "status": "FIXED_S12_FINITE_ORIGINAL_DRAWING_CONSUMPTION_PASSED",
+  "proposed_exposure": [
+    94,
+    101
+  ],
+  "same_character_for_094_and_098": true,
+  "character_canvas": [
+    1672,
+    941
+  ],
+  "scene_canvas": [
+    1920,
+    1080
+  ],
+  "character_to_scene": [
+    1.1483253588516746,
+    0,
+    0,
+    1.1477151965993624,
+    0,
+    0
+  ],
+  "registration_baked": false,
+  "do_not_apply_legacy_275_112_0_7": true,
+  "raw_call_id": "call_e8f355dd36544d798ca6dfb37380a945",
+  "raw_sha256": "be274944040978928f674674cc7b3520f6e49c621545b423e59908fe9e26aac8",
+  "character_sha256": "b3396b79653e5bb8c9643c9510abb58494c8befd88ec22e213e16a141f8fa255",
+  "frames": {
+    "94": {
+      "rods": {
+        "L": {
+          "A": [
+            1451.853417413788,
+            462.03927583779404,
+            59.03475681071176
+          ],
+          "G": [
+            976.0765550239234,
+            434.98405951115836,
+            25.213981400719668
+          ],
+          "B": [
+            877.1324425869143,
+            429.357568233748,
+            18.180502328063575
+          ],
+          "length": 577.0973600937725,
+          "fraction": 0.8278397400289513,
+          "tail": 99.35323154234976,
+          "grip_depth": "inherited prior depth hypothesis, not measured palm"
+        },
+        "R": {
+          "A": [
+            1255.6152939366566,
+            565.8325920684642,
+            -12.759875917998416
+          ],
+          "G": [
+            935.8851674641148,
+            603.6981934112646,
+            -171.53619202461405
+          ],
+          "B": [
+            915.776727956704,
+            606.0796335414577,
+            -181.52193838784768
+          ],
+          "length": 381.56350585940044,
+          "fraction": 0.9408294363253727,
+          "tail": 22.577327719367645,
+          "grip_depth": "inherited prior depth hypothesis, not measured palm"
+        }
+      },
+      "original_prop_plan": {
+        "root_scene": [
+          1308.1399140540025,
+          562.2253426889807
+        ],
+        "root_source_locked090": [
+          1325.174892567503,
+          565.2816783612259
+        ],
+        "paper_plane_inclination_degrees": 65.0,
+        "projected_roll_degrees": -5.333333333333334,
+        "code_pose": {
+          "angles": {
+            "neck0": 0.5833333333333333,
+            "neck1": 0.020000000000000004,
+            "neck2": -0.013333333333333336,
+            "neck3": -0.046666666666666676,
+            "neck4": -0.08333333333333334,
+            "neck5": -0.11333333333333336,
+            "neck6": -0.14,
+            "neck7": -0.1566666666666667,
+            "neck8": -0.15666666666666668,
+            "neck9": -0.14,
+            "neck10": -0.11000000000000001,
+            "neck11": -0.07666666666666667,
+            "head": -0.55,
+            "tibia_near": 1.1600000000000001,
+            "tarsus_near": -1.8733333333333335,
+            "foot_near": 0.7433333333333334,
+            "tibia_far": 1.0166666666666668,
+            "tarsus_far": -1.726666666666667,
+            "foot_far": 0.7100000000000002
+          },
+          "rootAngle": 0,
+          "facing": 1
+        },
+        "actual_makeCrane_scale": 1.35,
+        "paper_3D_camera_basis": [
+          [
+            0.9567423592378367,
+            -0.19919738854230282
+          ],
+          [
+            -0.14336121523296047,
+            -0.9570037599760137
+          ],
+          [
+            0.2531632279912453,
+            0.21086536887241436
+          ]
+        ],
+        "mm_to_scene_scale": 0.72,
+        "rods": {
+          "R": {
+            "part": "BODY",
+            "joint_local_mm": [
+              -75.0,
+              6.0
+            ],
+            "hinge_scene": [
+              1255.6152939366566,
+              565.8325920684642
+            ],
+            "hinge_camera3D_scene_units": [
+              1255.6152939366566,
+              565.8325920684642,
+              -12.759875917998416
+            ],
+            "grip_scene": [
+              929.3751766319517,
+              647.1850628485544
+            ],
+            "grip_camera3D_scene_units": [
+              929.3751766319517,
+              647.1850628485544,
+              -171.53619202461405
+            ],
+            "free_scene": [
+              920.8389751151351,
+              649.3136823764256
+            ],
+            "free_camera3D_scene_units": [
+              920.8389751151351,
+              649.3136823764256,
+              -175.6906370437653
+            ],
+            "grip_fraction_from_hinge_unchanged": 0.9745017761505183,
+            "physical_length_H": 1.7747139807413974,
+            "physical_length_scene_units": 381.56350585940044,
+            "physical_length_camera3D_check": 381.5635058594005,
+            "projected_length_previous_scene": 343.82759791836435,
+            "projected_length_new_scene": 345.0279352207514,
+            "projected_angle_delta_degrees": 0.3012086784828134,
+            "camera_depth_solution_is_feasible_not_measured": true
+          },
+          "L": {
+            "part": "NECK3",
+            "joint_local_mm": [
+              231.67364187479248,
+              110.69371371867113
+            ],
+            "hinge_scene": [
+              1451.853417413788,
+              462.03927583779404
+            ],
+            "hinge_camera3D_scene_units": [
+              1451.853417413788,
+              462.03927583779404,
+              59.03475681071176
+            ],
+            "grip_scene": [
+              905.0345242938993,
+              535.9448092572356
+            ],
+            "grip_camera3D_scene_units": [
+              905.0345242938993,
+              535.9448092572356,
+              25.213981400719668
+            ],
+            "free_scene": [
+              881.0270770373306,
+              539.1895457099441
+            ],
+            "free_camera3D_scene_units": [
+              881.0270770373306,
+              539.1895457099441,
+              23.729119608181676
+            ],
+            "grip_fraction_from_hinge_unchanged": 0.957942642869746,
+            "physical_length_H": 2.6841737678780118,
+            "physical_length_scene_units": 577.0973600937725,
+            "physical_length_camera3D_check": 577.0973600937727,
+            "projected_length_previous_scene": 576.0339687188595,
+            "projected_length_new_scene": 576.0163843233323,
+            "projected_angle_delta_degrees": 2.304470909302316,
+            "camera_depth_solution_is_feasible_not_measured": true
+          }
+        },
+        "C110_terminal": {
+          "root": [
+            1240,
+            550
+          ],
+          "paper_plane_inclination": 85
+        },
+        "legacy_C_table_frame114_is_not_used_user_frozen_terminal_is110": true,
+        "human_points_from_old_code_table_used": false,
+        "whole_physical_hand_rod_group_3D_rotation_from_locked090": [
+          [
+            0.9988816664354048,
+            -0.0458419094405132,
+            -0.011573063469839865
+          ],
+          [
+            0.044719092843116634,
+            0.9955018806179983,
+            -0.08352369975831984
+          ],
+          [
+            0.015349892329194514,
+            0.082912755501654,
+            0.9964385860556615
+          ]
+        ],
+        "no_old_code_human_grip_coordinates": true,
+        "camera_depth_is_feasible_model_not_measured": true
+      }
+    },
+    "98": {
+      "rods": {
+        "L": {
+          "A": [
+            1429.0790223660492,
+            451.93255925197246,
+            51.60962495488256
+          ],
+          "G": [
+            976.0765550239234,
+            434.98405951115836,
+            16.725384430677337
+          ],
+          "B": [
+            854.0851163878507,
+            430.41990806572375,
+            7.331222159899681
+          ],
+          "length": 577.0973600937725,
+          "fraction": 0.7878387277365367,
+          "tail": 122.43771013738075,
+          "grip_depth": "inherited prior depth hypothesis, not measured palm"
+        },
+        "R": {
+          "A": [
+            1238.5955341984163,
+            561.4758276407885,
+            -13.11883185745711
+          ],
+          "G": [
+            935.8851674641148,
+            603.6981934112646,
+            -168.93427333342092
+          ],
+          "B": [
+            901.9168768728134,
+            608.4361269198405,
+            -186.41892128838546
+          ],
+          "length": 381.56350585940044,
+          "fraction": 0.8991076807151139,
+          "tail": 38.49682706062714,
+          "grip_depth": "inherited prior depth hypothesis, not measured palm"
+        }
+      },
+      "original_prop_plan": {
+        "root_scene": [
+          1291.1049355405019,
+          559.1690070167356
+        ],
+        "paper_plane_inclination_degrees": 70.0,
+        "projected_roll_degrees": -4.0,
+        "code_pose": {
+          "angles": {
+            "neck0": 0.75,
+            "neck1": 0.04000000000000001,
+            "neck2": 0.009999999999999998,
+            "neck3": -0.020000000000000004,
+            "neck4": -0.055,
+            "neck5": -0.08500000000000002,
+            "neck6": -0.115,
+            "neck7": -0.135,
+            "neck8": -0.14,
+            "neck9": -0.13,
+            "neck10": -0.10500000000000001,
+            "neck11": -0.07500000000000001,
+            "head": -0.55,
+            "tibia_near": 0.8900000000000001,
+            "tarsus_near": -1.4100000000000001,
+            "foot_near": 0.5650000000000001,
+            "tibia_far": 0.7500000000000002,
+            "tarsus_far": -1.2900000000000005,
+            "foot_far": 0.5400000000000001
+          },
+          "rootAngle": 0,
+          "facing": 1
+        },
+        "actual_makeCrane_scale": 1.35,
+        "paper_3D_camera_basis": [
+          [
+            0.9598191786680778,
+            -0.157214281020676
+          ],
+          [
+            -0.1210600027010961,
+            -0.9792637781958946
+          ],
+          [
+            0.2531632279912453,
+            0.12777371621993874
+          ]
+        ],
+        "mm_to_scene_scale": 0.72,
+        "rods": {
+          "R": {
+            "part": "BODY",
+            "joint_local_mm": [
+              -75.0,
+              6.0
+            ],
+            "hinge_scene": [
+              1238.5955341984163,
+              561.4758276407885
+            ],
+            "hinge_camera3D_scene_units": [
+              1238.5955341984163,
+              561.4758276407885,
+              -13.11883185745711
+            ],
+            "grip_scene": [
+              910.517878506216,
+              641.1461309574039
+            ],
+            "grip_camera3D_scene_units": [
+              910.517878506216,
+              641.1461309574039,
+              -168.93427333342092
+            ],
+            "free_scene": [
+              901.9335970717602,
+              643.2307359092264
+            ],
+            "free_camera3D_scene_units": [
+              901.9335970717602,
+              643.2307359092264,
+              -173.01124589847277
+            ],
+            "grip_fraction_from_hinge_unchanged": 0.9745017761505183,
+            "physical_length_H": 1.7747139807413974,
+            "physical_length_scene_units": 381.56350585940044,
+            "physical_length_camera3D_check": 381.5635058594005,
+            "projected_length_new_scene": 346.44642433694304,
+            "projected_angle_delta_degrees": 0.35245089263876
+          },
+          "L": {
+            "part": "NECK3",
+            "joint_local_mm": [
+              220.10816472142866,
+              124.88281348870629
+            ],
+            "hinge_scene": [
+              1429.0790223660492,
+              451.93255925197246
+            ],
+            "hinge_camera3D_scene_units": [
+              1429.0790223660492,
+              451.93255925197246,
+              51.60962495488256
+            ],
+            "grip_scene": [
+              879.8018309146197,
+              503.8404710428031
+            ],
+            "grip_camera3D_scene_units": [
+              879.8018309146197,
+              503.8404710428031,
+              16.725384430677337
+            ],
+            "free_scene": [
+              855.6864549301341,
+              506.1194275130283
+            ],
+            "free_camera3D_scene_units": [
+              855.6864549301341,
+              506.1194275130283,
+              15.193832439684414
+            ],
+            "grip_fraction_from_hinge_unchanged": 0.957942642869746,
+            "physical_length_H": 2.6841737678780118,
+            "physical_length_scene_units": 577.0973600937725,
+            "physical_length_camera3D_check": 577.0973600937726,
+            "projected_length_new_scene": 575.9472658869834,
+            "projected_angle_delta_degrees": 2.2986473743810256
+          }
+        },
+        "C110_terminal": {
+          "root_scene": [
+            1240,
+            550
+          ],
+          "paper_plane_inclination_degrees": 85
+        },
+        "legacy_frame114_not_used": true,
+        "old_code_human_points_used": false,
+        "rod_3D_rotation": [
+          [
+            0.998905956165902,
+            -0.04576267870267387,
+            -0.009626420634948602
+          ],
+          [
+            0.0447983235809559,
+            0.9954775908875007,
+            -0.08377037808888
+          ],
+          [
+            0.013416442919831297,
+            0.08324748211672103,
+            0.9964385860556613
+          ]
+        ],
+        "camera_depth_model_feasible_not_measured": true
+      }
+    }
+  },
+  "layer_order": [
+    "original scene/background and box",
+    "original makeCrane/drawPuppet using each frame original_prop_plan (NOT generated raw crane)",
+    "finite rods A to physical B, 7px outer 3px inner in 1920 scene",
+    "complete character alpha with natural palms in front of finite shafts"
+  ],
+  "foreground": "complete character alpha already contains original complete fingers/skin/ink; do not cut bands through wrists or palms",
+  "boundaries": [
+    "Static full-body and finite-grip review only; not actual scene playback pass.",
+    "Mandatory playback range starts F090 and includes natural F102/F106: check approach/return lean and hand lift, not only F094 onward.",
+    "094 and098 use unchanged original puppet hinges/shape/scale/finite rod length, inherited hand-depth hypothesis; no new 3D hand claim.",
+    "Native rendered short rod material within palm preserved as contact shadow; external generated props excluded."
+  ],
+  "count": "repair existing motion interval; no count assertion"
+}
