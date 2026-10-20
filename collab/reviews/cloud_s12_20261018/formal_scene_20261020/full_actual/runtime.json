@@ -1,0 +1,69 @@
+{
+  "status": "ACTUAL_FULL192_ENCODED_DECODED",
+  "adoptedTailCommit": "4051f3ef4d00bd1234a2e7b8cf3524c82b262c43",
+  "renderer": "real Chromium Canvas -> PNG pipe -> libx264; concat packet-copy",
+  "video": "S12_000_191_actual.mp4",
+  "SHA256": "b6c3ca423a7fba353db3df9632efc26c91ae74fd8062a18d012f5f954255ab61",
+  "bytes": 12711557,
+  "fps": "24/1",
+  "width": 1920,
+  "height": 1080,
+  "durationSeconds": 8,
+  "decodedFrames": 192,
+  "prefixRenderReused": {
+    "frames": [
+      0,
+      105
+    ],
+    "commit": "6ea2b9f6317f5fdfd9754b3e9f59dd3985138b4f",
+    "SHA256": "f62900511727d749aff51f31d172b939f7841a046036a804d27b576d89ddf002",
+    "browserRerendered": false
+  },
+  "tailRender": {
+    "renderer": "real Chromium Canvas",
+    "module": "js/anim/s12_drawn.js",
+    "first": 106,
+    "last": 191,
+    "fps": 24,
+    "width": 1920,
+    "height": 1080,
+    "renderedFrames": 86,
+    "selectedFrames": [
+      106,
+      109,
+      110,
+      120,
+      126,
+      144,
+      168,
+      191
+    ],
+    "errors": [],
+    "startedUTC": "2026-10-20T07:49:12.664Z",
+    "sequence": {
+      "totalFrames": 192,
+      "availableThrough": 191,
+      "exposureRows": 29,
+      "status": "ADOPTED_FULL192_ACTUAL_CAM_PENDING"
+    },
+    "video": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/formal_scene_20261020/tail_actual/S12_106_191_actual.mp4",
+    "completedUTC": "2026-10-20T07:50:48.894Z",
+    "status": "ACTUAL_RANGE_ENCODED"
+  },
+  "audio": "No audio track in verification video; repository sound files, timing and EDL unchanged.",
+  "colour": "Approved source PNG saturation difference remains in the main video. F102 semantic colour candidate is separate and is not imported by production.",
+  "generationCalls": 0,
+  "fullPNGSequenceWritten": false,
+  "completeTailSerialRenderPasses": 1,
+  "visualReadback": {
+    "openedActualImages": [
+      "F110 full1920x1080",
+      "contact_joins_tail_end.jpg",
+      "contact_joins_detail.jpg",
+      "colour_candidate/actual_before_after.jpg"
+    ],
+    "joins105_106_and109_110": "Whole person and prop move together; both grips, finite rods and BODY/NECK3 attachments remain readable.",
+    "tail": "First transmission visible at110; lift120 and return126 visible; whole-head look144 persists through191; grounded knees/shoes retain contact shadow.",
+    "remainingVisibleIssue": "Approved person-source shirt palette changes from grey blue to saturated blue during prefix. Review-only F102 cloth candidate demonstrates a grey-blue option; no coordinated palette pass adopted."
+  }
+}

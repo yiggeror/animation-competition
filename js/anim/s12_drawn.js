@@ -14,7 +14,13 @@ async function image(name){
  if(!images.has(name))images.set(name,(async()=>{const im=await loadImg(BASE+name);if(!im)throw Error('S12 missing production image: '+name);return im;})());
  return images.get(name);
 }
-export async function getSequenceInfo(){return sequencePromise ||= fetch(BASE+'sequence.json').then(async r=>{if(!r.ok)throw Error('Missing S12 sequence.json');return r.json();});}
+export async function getSequenceInfo(){return sequencePromise ||= fetch(BASE+'sequence.json').then(async r=>{
+ if(!r.ok)throw Error('Missing S12 sequence.json');const q=await r.json();
+ // Scene-space ownership masks are already registered. Check every adopted tail
+ // pair before rendering; missing masks cannot silently remove a gripping hand.
+ for(const name of new Set(q.states.filter(s=>s.start>=106).flatMap(s=>[s.bg,s.fg]))){const im=await image(name);if(!im||im.width!==W||im.height!==H)throw Error('S12 invalid scene-space mask: '+name);}
+ return q;
+});}
 export async function stateAtFrame(frame){
  const q=await getSequenceInfo(),row=q.states.find(s=>frame>=s.start&&frame<=s.end);
  if(!row)throw RangeError('S12 frame '+frame+' has no adopted drawing; tail must be supplied, not padded.');
@@ -44,7 +50,7 @@ function transmissionBackground(base,row,props){
  x.globalCompositeOperation='multiply';x.drawImage(map,0,0);x.restore();return out;
 }
 export const shot={size:[W,H],layers:async()=>{
- const q=await getSequenceInfo(),b=q.registration,props=propCanvases(active);
+ const q=await getSequenceInfo(),b=active.registration||q.registration,props=propCanvases(active);
  const [shadow,bg,fg,front]=await Promise.all([image(q.contactShadow),image(active.bg),image(active.fg),image(q.boxFront)]);
  return [{img:shadow,x:0,y:0,sc:1},{img:bg,x:b.x,y:b.y,sc:b.scale},{img:props.r,x:0,y:0,sc:1},...(fg?[{img:fg,x:b.x,y:b.y,sc:b.scale}]:[]),{img:front,x:0,y:0,sc:1}];
 },light:t=>{const f=1+.04*Math.sin(t*11)+.03*Math.sin(t*23);return {ambient:[.03,.026,.03],lights:[{x:-350,y:760,r:2700*f,color:[1,.64,.32],i:1.25,falloff:1.5},{x:1350,y:560,r:760,color:[1,.7,.42],i:.35*f,falloff:1.6}],exposure:1,vignette:.5,grain:7};},glow:()=>[],cam:t=>({x:960+20*smooth(2,8,t),y:540-10*smooth(2,8,t),fit:1+.04*smooth(2,8,t)})};

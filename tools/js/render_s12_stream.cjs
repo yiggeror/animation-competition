@@ -4,7 +4,7 @@ const fs=require('fs'),path=require('path'),{spawn}=require('child_process'),{on
 const {chromium}=require('playwright'),{start}=require('./serve.cjs');
 const args=process.argv.slice(2),out=path.resolve(args[0]||'build/s12_actual');let first=0,last=191;
 for(let i=1;i<args.length;i+=2){if(args[i]==='--first')first=+args[i+1];if(args[i]==='--last')last=+args[i+1];}
-const picks=new Set([0,22,26,40,60,74,90,102,106,110,120,126,144,168,191]);
+const picks=new Set([0,22,26,40,60,74,90,102,106,109,110,120,126,144,168,191]);
 (async()=>{fs.mkdirSync(out,{recursive:true});const server=await start(0),browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--disable-dev-shm-usage']});let ff;
  const record={renderer:'real Chromium Canvas',module:'js/anim/s12_drawn.js',first,last,fps:24,width:1920,height:1080,renderedFrames:0,selectedFrames:[],errors:[],startedUTC:new Date().toISOString()};
  try{const page=await browser.newPage();page.on('pageerror',e=>record.errors.push(String(e)));page.on('requestfailed',r=>record.errors.push(r.url()+': '+JSON.stringify(r.failure())));page.on('response',r=>{if(r.status()>=400&&!r.url().endsWith('/favicon.ico'))record.errors.push(r.status()+' '+r.url());});
