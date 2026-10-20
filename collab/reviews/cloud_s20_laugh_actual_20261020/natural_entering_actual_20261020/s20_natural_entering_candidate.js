@@ -1,0 +1,7 @@
+// A short, explicit adjacency experiment; natural state remains separate grips.
+import {renderCustomState,renderAlignedFrame,renderClosure} from '../../../../js/anim/s20_cam20_drawn.js';
+export const DURATION=8,FPS=24;
+const BASE='/collab/reviews/cloud_s20_laugh_actual_20261020/natural_entering_actual_20261020/sources/';let geometry;
+export async function getSequenceInfo(){geometry ||= await fetch(BASE+'CONSUMER_GEOMETRY.json').then(r=>r.json());return{fps:24,totalFrames:192,availableThrough:139,status:'NATURAL_SEPARATE_GRIP_ADJACENCY_CANDIDATE',states:[{key:'old128',start:128,end:129,originalBody:true},{key:'natural_separate_grips',start:130,end:131,sourcePaperFrame:131},{key:'old_entering132',start:132,end:135,originalBody:true},{key:'closed136',start:136,end:139,originalBody:true}],exposureReason:'Two-frame separate-grip phase before132 entering/136 secure. Not a frame131 label freeze, not a double-grip state.',knownGap:'True intermediate child129 still absent;128→near-belly-up natural pose may jump. Actual neighbouring body/hand continuity must be assessed.'};}
+export async function renderFrame(ctx,t,w,h){const f=Math.floor(t*24+1e-7);if(f<128||f>139)throw RangeError('Only128–139 adjacency is bound.');if(f<130)return renderAlignedFrame(ctx,t,w,h);if(f>=132)return renderClosure(ctx,t,w,h,f<136?'entering':'closed');await getSequenceInfo();return renderCustomState(ctx,t,w,h,{captureBuffers:true,geometry,people:BASE+'PAIR_NATIVE_IDENTITY_CANDIDATE.png'});}
+export async function render(ctx,arg,w,h){return renderFrame(ctx,+arg||130/24,w,h);}
