@@ -1,0 +1,51 @@
+--- a/js/paint/shots/s29.js
++++ b/js/paint/shots/s29.js
+@@ -1,3 +1,4 @@
++import {renderFrameIndex as renderFrontFoldFrameIndex} from '../../anim/s29/front_fold.js';
+ import { renderPreparation } from './s29_lamp.js';
+ // S29 · 收（12 秒）。候选镜头，尚未写入 EDL。
+ // script-v3：手机留在竹席、线仍插着；小满左手始终保留乌龟签。
+@@ -171,6 +172,8 @@
+ // Light centers/radii and emission receive exactly the same camera transform.
+ export async function renderFrame(ctx,t,w,h){
+   t=Math.max(0,Math.min(DURATION,t));
++  const frontFoldFrame=Math.floor(t*24+1e-7);
++  if(frontFoldFrame>=90 && frontFoldFrame<=115) return renderFrontFoldFrameIndex(ctx,frontFoldFrame,w,h);
+   if(t>=10)return renderPreparation(ctx,t-10,w,h);
+   const camera=shot.cam(t), k=camera.fit*w/shot.size[0];
+   const ox=w/2-camera.x*k, oy=h/2-camera.y*k;
+--- /dev/null
++++ b/js/anim/s29/front_fold.js
+@@ -0,0 +1,26 @@
++// Candidate only: reuse audited projection, bounded to F090–115. Not CAM approval.
++import {loadImg, renderPaint} from '../../paint/paintshot.js';
++import {sourceShot} from './scene_source.js';
++import {FPS,resolveFrame} from './front_fold_exposure.js';
++const canvas = (w,h) => {const c = document.createElement('canvas'); c.width=w; c.height=h; return c;};
++export async function renderFrameIndex(ctx, f, w=1920, h=1080) {
++  const row=resolveFrame(f); // Fail before loading or drawing anything outside the exact table.
++  if (w!==1920 || h!==1080) throw new RangeError('Only the audited 1920×1080 registration is enabled');
++  const t=f/FPS, mother=await loadImg(row.url);
++  if(!mother) throw Error('Missing locked S29 state '+row.state);
++  const camera=sourceShot.cam(t), k=camera.fit*w/sourceShot.size[0], ox=w/2-camera.x*k, oy=h/2-camera.y*k;
++  const albedo=canvas(w,h), ax=albedo.getContext('2d'); ax.imageSmoothingQuality='high'; ax.setTransform(k,0,0,k,ox,oy);
++  const bg=await loadImg(sourceShot.bg); if(!bg)throw Error('Missing actual background'); ax.drawImage(bg,0,0,...sourceShot.size);
++  const sourceLayers=await sourceShot.layers(t), oldGM=sourceLayers[2], GM={...oldGM,y:oldGM.y+30/k};
++  for(let i=0;i<sourceLayers.length;i++){
++    if(i===4)continue;
++    const L=i===2?GM:sourceLayers[i], img=i===2?mother:L.img;
++    ax.save(); ax.globalAlpha=L.alpha??1; ax.translate(L.x,L.y); ax.scale(L.sc,L.sc); ax.drawImage(img,0,0); ax.restore();
++  }
++  const light=sourceShot.light(t), map=L=>({...L,x:L.x*k+ox,y:L.y*k+oy,r:L.r*k});
++  const local={bg:albedo,size:[w,h],light:()=>({...light,lights:light.lights.map(map)}),glow:()=>sourceShot.glow(t).map(map),
++    emit:x=>{x.save();x.setTransform(k,0,0,k,ox,oy);sourceShot.emit(x,t);x.restore();},cam:()=>({x:w/2,y:h/2,fit:1})};
++  await renderPaint(ctx,t,w,h,local);
++  const s=k*GM.sc, offset=[ox+k*GM.x,oy+k*GM.y];
++  return {globalFrame:f,state:row.state,t,camera,light,sourceSHA256:row.sha256,wholeMotherSceneMatrix:[s,0,0,s,...offset],uniformDownwardAdjustment:30,oldGrandmaWarpNotDrawn:true,oldChildTurtleExcluded:true};
++}
+--- /dev/null
++++ b/js/anim/s29/front_fold_exposure.js
+@@ -0,0 +1,3 @@
++export const FPS=24;
++export const STATES=Object.freeze([{"state": 90, "start": 90, "end": 95, "url": "/assets/chars/s29/F090.png", "sha256": "677060fef631583bb0fdce04572305c868af6d397e7c44b80e7e4b2483a620b8"}, {"state": 96, "start": 96, "end": 101, "url": "/assets/chars/s29/F096.png", "sha256": "eae8b4abdc72cf0926ec77b5bf8d726b105b55244062fac1b81c4feaefb91bf4"}, {"state": 102, "start": 102, "end": 107, "url": "/assets/chars/s29/F102.png", "sha256": "41ecc6f85b12a8c34dd479597ce552da57dca75bd86b0676941888f72f42065f"}, {"state": 108, "start": 108, "end": 115, "url": "/assets/chars/s29/F108.png", "sha256": "b6ecab7c1ea371b62e15a3dd4e6f1f360173b3ddfa2e496f5f28e7122bc76c02"}].map(Object.freeze));
++export function resolveFrame(f){const row=Number.isInteger(f)&&STATES.find(r=>f>=r.start&&f<=r.end);if(!row)throw new RangeError("Only S29 F090–115 allowed");return row;}
