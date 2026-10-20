@@ -1,0 +1,51 @@
+{
+  "status": "STATIC_CANDIDATE_WITH_DISCLOSED_LAP_ARC_PENDING_ASTRA_REVIEW",
+  "checkedUTC": "2026-10-20T01:30:39.318534+00:00",
+  "candidateSHA256": "5348f5b8a9fd22c609c2b7f2528ac9750558f813553737a24d028b91f8f8019e",
+  "independentAssetChecks": {
+    "STATIONARY_FAR_COMPLETE_CHAIN_PROTECT_DOMAIN": {
+      "protectedPixels": 90377,
+      "changedRGBApixels": 0
+    },
+    "FIXED_HEAD_PROTECT_DOMAIN": {
+      "protectedPixels": 88986,
+      "changedRGBApixels": 0
+    },
+    "legsY1100Plus": {
+      "changedRGBApixels": 0
+    },
+    "completeDomain": {
+      "actualRGBAChangedPixels": 358960,
+      "processedDomainPixels": 463175,
+      "changesOutsideDomain": 0,
+      "actualChangeMaskExact": true
+    },
+    "canonicalLayerSourceRGBAExact": {
+      "cloth": true,
+      "originalTruePuppetsFourRods": true
+    },
+    "oneSimilarityRealPinchErrorPixels": 0.0
+  },
+  "actualImagesViewedByAuthor": [
+    "FULL_CANDIDATE_ON_GRAY.png",
+    "COMPLETE_BOTH_SHOULDER_SLEEVE_ELBOW_WRIST_CLOTH_LAP_1TO1.png",
+    "NEAR_TRUE_CONTACT444_923_4X.png",
+    "FAR_UNCHANGED_TRUE_CONTACT640_746_3X.png",
+    "BOTH_REAL_CONTACTS_SOURCE_AND_CANDIDATE_4_PANEL.png"
+  ],
+  "readOnlyReviewer": "/root/s09_motion_audit_61sol",
+  "independentActualImageObservation": "Whole shoulders/sleeves/elbows/wrists/hands remain connected. Updated near canonical-cloth pinch has no new through-background gap, detached cloth or release. Far contact retains locked084 contact, including original small finger-gap. Limited static contacts pass.",
+  "remainingStaticReviewPoint": {
+    "nativeRegion": [
+      255,
+      958,
+      445,
+      1045
+    ],
+    "observation": "Conspicuous curved dark edge/fold-interface on exposed near trouser lap; cannot establish native fold versus projected-material edge from these static images. No seamless-full-image claim."
+  },
+  "newGenerationCalls": 0,
+  "newSceneRenders": 0,
+  "motionVerified": false,
+  "wholeShotReadyClaimed": false
+}
