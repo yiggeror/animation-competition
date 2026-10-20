@@ -1,0 +1,74 @@
+{
+  "fixedSharedSourceRead": "2d302ac8b829a006715923f929da6187e67471e2",
+  "latestSharedSourceRead": "3f8986c2fffc15c5cb2169689961675004d04970",
+  "newGenerationCalls": 0,
+  "existingDistinctGrandmaPosesLoaded": 29,
+  "existingDistinctLampArmPosesLoaded": 6,
+  "actualAvailableSegments": [
+    [
+      0,
+      17
+    ],
+    [
+      30,
+      95
+    ],
+    [
+      96,
+      131
+    ]
+  ],
+  "notClaimed": "No complete240-frame render, full-S14 continuity or S15 world/camera binding. Exposure frames are not new drawings.",
+  "missingForCompleteScene": [
+    {
+      "range": [
+        18,
+        29
+      ],
+      "need": "Published adopted G018/G021/G024 and confirmed exposure mapping; G027 whole-sheet final is present as an upstream source but does not fill018–026."
+    },
+    {
+      "range": [
+        95,
+        96
+      ],
+      "need": "Coordinator is obtaining the director decision about omitting the bend/down-to-chest action; no fabricated movement, raised chest or added shot."
+    },
+    {
+      "range": [
+        131,
+        132
+      ],
+      "need": "The final close lamp optical center and frozen S15 lamp/sheet world position must be related to the wide return. The local six-state source pixels alone do not provide this calibration."
+    },
+    {
+      "range": [
+        132,
+        167
+      ],
+      "need": "Published X132+ complete adopted source/exposure/registration, including internally pending141/144/147 revisions and156/159/162. Old candidates are not substituted."
+    },
+    {
+      "range": [
+        168,
+        239
+      ],
+      "need": "The promised unified child-to-scene mapping. Existing168 drawings are1190×1350 whereas180+ and S15 F000 are1254×1254, so reusing one pixel registration without that map would move support points."
+    },
+    {
+      "range": [
+        132,
+        239
+      ],
+      "need": "Post-hanging grandmother wide exit/stationary state, with empty hand and the lamp left on the hook, from the same approved wide registration."
+    }
+  ],
+  "explicitlyUnperformed": [
+    "No image generation, including X159.",
+    "No S31 or S29 scene work.",
+    "No historical whole-repository checks.",
+    "No full240 scene render or replacement using an old placeholder.",
+    "No audio/EDL/ready or S15 source changes.",
+    "No independent reviewer agent or extra cloud executor was started."
+  ]
+}
