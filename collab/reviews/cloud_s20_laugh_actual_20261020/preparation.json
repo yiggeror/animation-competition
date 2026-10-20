@@ -1,0 +1,20 @@
+{
+  "adoptionCommit": "7c2f44cbf221873adb243c1178f9c914c765265a",
+  "nativeAlbedo": [
+    "F144_native.png",
+    "F156_native.png"
+  ],
+  "nativeSHA256": {
+    "144": "8da28a9847bfd25976a91314535dd1a54942305c47e7f951ae8eaff0e769a148",
+    "156": "c2d19ed9f047069409a72367b5a6c6f77bc7ee0cee7e19648374c02caf0dd148"
+  },
+  "derivedLightingMaps": "Existing tools/card_maps.py, then tools/card_soft.py at sigma80 strength.35. Material-only lower grey/navy pants classified as cloth; no original person RGB or alpha edited.",
+  "cameraOnlyReprojection": "Original same-eye CAMG rotation and focal curve; source crop y350. No human pose interpolation, body deformation or old GL rig.",
+  "actionLimits": "Only two adopted anchors. Exposure144–155=144 and156–215=156 is an actual scene probe; intermediate and release/settle action drawings are absent.",
+  "projectionDepthConvention": "CAMG_PROJECTION_CHECK stores camera-forward z, not Euclidean range. Unprojection is C+z*(fwd+x/f*right+y/f*up). Original adopted finite rod lengths are retained.",
+  "paperInterfaceLimit": "Adopted rod A world coordinates do not coincide with the time-driven craneState in the supplied old s20.js. Its puppet is outside CAMG; retained source frame6 paper/background is not a certified drawing-to-paper hinge handoff. No rigid-body scaling, invented paper pose, or tighter numerical gate was applied to hide this interface gap.",
+  "renderAttempts": "Initial partial render stopped for confirmed depth-interpretation correction. One subsequent preflight-only IK probe rejected the mismatched source paper anchors before any frames; that unnecessary gate was removed. Only the corrected completed continuous clip is a deliverable.",
+  "sourceCameraSHA256": "9c50d9484c2aafcd3ce6b1f1fe3f4f4ddb100b48bc09f775d24d17bd44deee3e",
+  "originalCameraCurve": "CAMG(t): pos[2.55,1.7,1.2], target[1.2,1.15,1+.02*sstep(6,9,t)], hfov42-4*sstep(6,9,t)",
+  "originalNativeFilesProtected": true
+}

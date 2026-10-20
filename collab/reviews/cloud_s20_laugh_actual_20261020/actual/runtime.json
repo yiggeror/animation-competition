@@ -1,0 +1,75 @@
+{
+  "renderer": "Real Chromium original WebGL2 renderShot",
+  "module": "js/anim/s20_laugh_drawn.js",
+  "first": 144,
+  "last": 215,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "preview": false,
+  "renderedFrames": 72,
+  "errors": [],
+  "startedUTC": "2026-10-20T08:17:54.605Z",
+  "sequence": {
+    "fps": 24,
+    "totalFrames": 216,
+    "availableFrom": 144,
+    "availableThrough": 215,
+    "duration": 9,
+    "clipDuration": 3,
+    "status": "TWO_ADOPTED_ANCHORS_ACTUAL_SCENE_PENDING_ACTION_GAPS",
+    "adoptionCommit": "7c2f44cbf221873adb243c1178f9c914c765265a",
+    "crop": [
+      0,
+      350,
+      1920,
+      1430
+    ],
+    "states": [
+      {
+        "key": 144,
+        "start": 144,
+        "end": 155,
+        "alb": "F144_native.png",
+        "nrm": "F144_n.png",
+        "mat": "F144_m.png",
+        "cameraStateIndex": 0
+      },
+      {
+        "key": 156,
+        "start": 156,
+        "end": 215,
+        "alb": "F156_native.png",
+        "nrm": "F156_n.png",
+        "mat": "F156_m.png",
+        "cameraStateIndex": 1
+      }
+    ],
+    "missingAction": "No accepted intermediate laugh drawings or release/settle drawings. Held144 then156 is an exposure probe, not a completed laugh motion. No132 or rod-transfer action included."
+  },
+  "video": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s20_laugh_actual_20261020/actual/S20_laugh_144_215_actual.mp4",
+  "completedUTC": "2026-10-20T08:25:41.229Z",
+  "status": "ACTUAL_CONTINUOUS_TWO_ANCHOR_EXPOSURE_PROBE",
+  "decodedFrames": 72,
+  "durationSeconds": 3,
+  "videoSHA256": "febc5912518e2a84e96e2ec170446b7c1ebdb75bb0ff4e29b0b25c19f1c4aca1",
+  "bytes": 3401760,
+  "generationCalls": 0,
+  "fullPNGSequenceWritten": false,
+  "acceptedActionDrawings": 2,
+  "actionGapsFile": "../action_gaps.json",
+  "paperInterfaceCertified": false,
+  "nativeAlbedoUnchanged": true,
+  "depthConvention": "Adopted third coordinate is forward depth z; actual finite rods retain their physical lengths.",
+  "visualReadback": {
+    "openedActual": [
+      "F144",
+      "F168",
+      "F215",
+      "contact_actual_laugh.jpg with144/155/156/168/215"
+    ],
+    "appearance": "Original room/lantern/sheet warm lighting visible. Both finite rods enter the same right hand; jade left hand rests at belly. No opaque grey rectangle from hidden RGB. The accepted head/torso change occurs at156.",
+    "motionGap": "144→156 has no accepted intermediate drawing;156 remains a peak hold under camera/light until215.",
+    "paperInterface": "Offscreen source paper anchors are not unified with adopted rod A; not certified as full puppet attachment integration."
+  }
+}

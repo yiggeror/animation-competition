@@ -1,0 +1,42 @@
+{
+  "status": "LIMITED_ORIGINAL_ART_REAL_SCENE_PROBE",
+  "acceptedDifferentActions": [
+    144,
+    156
+  ],
+  "exposureProbe": [
+    [
+      144,
+      155,
+      144
+    ],
+    [
+      156,
+      215,
+      156
+    ]
+  ],
+  "visibleMotionGaps": [
+    {
+      "range": [
+        145,
+        155
+      ],
+      "description": "No accepted laugh-development inbetweens. The actual probe holds onset144, then changes directly to peak156."
+    },
+    {
+      "range": [
+        157,
+        215
+      ],
+      "description": "No accepted follow-through, repeated laughter or release/settle drawing. Only original camera/light continue while peak156 is held."
+    }
+  ],
+  "scopeExcluded": [
+    "frames before144",
+    "frame132",
+    "rod-transfer action",
+    "CAM20 child overlap"
+  ],
+  "outsideFrameInterface": "Adopted finite rod A projections and the supplied old source crane pose are different coordinate anchors. Exact adopted finite rods render; full offscreen paper-attachment continuity is not certified."
+}

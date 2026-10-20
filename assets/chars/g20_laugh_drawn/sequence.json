@@ -1,0 +1,37 @@
+{
+  "fps": 24,
+  "totalFrames": 216,
+  "availableFrom": 144,
+  "availableThrough": 215,
+  "duration": 9,
+  "clipDuration": 3,
+  "status": "REAL_SCENE_TWO_ANCHOR_EXPOSURE_RENDERED_ACTION_GAPS_REMAIN",
+  "adoptionCommit": "7c2f44cbf221873adb243c1178f9c914c765265a",
+  "crop": [
+    0,
+    350,
+    1920,
+    1430
+  ],
+  "states": [
+    {
+      "key": 144,
+      "start": 144,
+      "end": 155,
+      "alb": "F144_native.png",
+      "nrm": "F144_n.png",
+      "mat": "F144_m.png",
+      "cameraStateIndex": 0
+    },
+    {
+      "key": 156,
+      "start": 156,
+      "end": 215,
+      "alb": "F156_native.png",
+      "nrm": "F156_n.png",
+      "mat": "F156_m.png",
+      "cameraStateIndex": 1
+    }
+  ],
+  "missingAction": "No accepted intermediate laugh drawings or release/settle drawings. Held144 then156 is an exposure probe, not a completed laugh motion. No132 or rod-transfer action included."
+}
