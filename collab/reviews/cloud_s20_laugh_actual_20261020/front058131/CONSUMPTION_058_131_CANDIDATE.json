@@ -1,0 +1,1258 @@
+{
+  "status": "NEW_FINITE_EXPOSURE_AND_EXISTING_ART_CONSUMPTION_CANDIDATE",
+  "fps": 24,
+  "coverageInclusive": [
+    58,
+    131
+  ],
+  "historicalExposureFrozen": false,
+  "newImageCalls": 0,
+  "sourceInventoryCommit": "66a0222b3aa9a651d7dba0bcf206014fedd6f483",
+  "sourceArtworkCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+  "timingBasis": {
+    "58_110": "active entangle, no change to original 2.4–4.6s cue",
+    "111_124": "passive residual; 112 drawing starts111 as explicit new exposure candidate",
+    "125_131": "mid-roll; 128 drawing starts125 as explicit new exposure candidate",
+    "132": "outside this table; belly-up stop must use separately adopted source, never alias128",
+    "144": "original CAMG cut unchanged"
+  },
+  "registration": {
+    "base_world_m": [
+      1.13,
+      1.1,
+      0
+    ],
+    "ox": 1110,
+    "oy": 920,
+    "pixels_per_cm": 5.833333333333333,
+    "uniform_scale_only": true,
+    "mirrored": false,
+    "individual_body_warp": false,
+    "note": "Original grandmother F000 stage slot; one whole-pair billboard preserves approved relative proportions."
+  },
+  "camera": {
+    "pos": [
+      3.05,
+      1.5,
+      1.18
+    ],
+    "target": [
+      1.5,
+      0.42,
+      0.95
+    ],
+    "hfov": 58
+  },
+  "peopleToCAM20": [
+    1.5356339213808416,
+    0,
+    -1.1368683772161603e-15,
+    1.5356339213808399,
+    -55.29501789280528,
+    -18.803172678195892
+  ],
+  "assetSemantics": "Sources are adopted full-pair master PNGs, some include painted puppet shafts or original C scene layer. Do not blindly overlay them with duplicate native rods. Separate visible character/prop semantics without repainting body; source raw-to-final matrices already applied, NEVER apply them a second time. Preserve source dimensions and straight alpha.",
+  "finiteLengthPolicy": "F120/F128 baseline lengths are provided with their gate provenance; do not assume these were historically locked world lengths for every earlier state. Earlier finite lengths/puppet registration require actual native visible contact solve, not copying an input-guide endpoint. Keep original material and endpoint ownership.",
+  "loadingPolicy": "Verify each fetched PNG SHA256 against this table before use. This workstation independently verified F128 bytes only; other hashes are from terminal adoption records.",
+  "states": [
+    {
+      "frame": 58,
+      "path": "collab/reviews/cloud_s20_20261018/F058_wrist_cleanup_zero_call_001/F058_wrist_skin_continuous_candidate.png",
+      "sha256": "c952b4e15b79708dec20ada934e25c4f34fb23d77d545e04e84ea9461cb98b0b",
+      "record": "F058_wrist_cleanup_zero_call_001/ADOPTED_F058_SOURCE.json",
+      "public_source_commit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "public_git_blob_sha1": "2edba5185cf0d52d3db266a79d3a55fc8ba4b99a",
+      "actual_png_sha_verified_locally": false,
+      "candidateExposureInclusive": [
+        58,
+        60
+      ],
+      "exposureStatus": "NEW_FINITE_CANDIDATE_NOT_HISTORICAL_FREEZE",
+      "canvas": [
+        1672,
+        941
+      ],
+      "sourceFetchCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "inputReferenceOnly": {
+        "path": "collab/reviews/cloud_s20_20261018/next_F058_input_003/INPUT_MANIFEST.json",
+        "rods": null,
+        "notFinalRegisteredContact": true
+      },
+      "mechanism": {
+        "status": "MEASURE_FINAL_NATIVE_VISIBLE_CLAMPS_AND_AXES",
+        "coordinateSpace": "master1672x941",
+        "ownership": {
+          "T_H": "X.R",
+          "T_S": "X.L"
+        },
+        "rule": "Do not transform the locked people to input targets. Inspect final native PNG, retain actual grip and visible shaft axis; remove painted shaft only as exact semantic prop replacement. Do not extend a finite rod to an infinite axis or move skin. No offscreen reconstruction."
+      }
+    },
+    {
+      "frame": 61,
+      "path": "collab/reviews/cloud_s20_20261018/next_F061_candidate_input_001/generation_001/F061_native_child_locked_G_candidate.png",
+      "sha256": "0dde203fef7d78f00a6628ce1fc702f5ffa13a301adf0bd91b2fc10d80bd12ec",
+      "record": "next_F061_candidate_input_001/generation_001/ADOPTED_F061_SOURCE.json",
+      "public_source_commit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "public_git_blob_sha1": "f91a14ec66ef9e2549d31a94f6df9b39d19e6da1",
+      "actual_png_sha_verified_locally": false,
+      "candidateExposureInclusive": [
+        61,
+        63
+      ],
+      "exposureStatus": "NEW_FINITE_CANDIDATE_NOT_HISTORICAL_FREEZE",
+      "canvas": [
+        1672,
+        941
+      ],
+      "sourceFetchCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "inputReferenceOnly": {
+        "path": "collab/reviews/cloud_s20_20261018/next_F061_candidate_input_001/INPUT_MANIFEST.json",
+        "rods": [
+          {
+            "role": "T_H",
+            "front": [
+              323,
+              469
+            ],
+            "pin": [
+              469,
+              435
+            ],
+            "tail": [
+              489,
+              430.3424657534247
+            ],
+            "slope": -0.2328767123287671,
+            "intercept": 544.2191780821918,
+            "owner": "X.R"
+          },
+          {
+            "role": "T_S",
+            "front": [
+              323,
+              390
+            ],
+            "pin": [
+              491,
+              464
+            ],
+            "tail": [
+              511,
+              472.8095238095238
+            ],
+            "slope": 0.44047619047619047,
+            "intercept": 247.72619047619048,
+            "owner": "X.L"
+          }
+        ],
+        "notFinalRegisteredContact": true
+      },
+      "mechanism": {
+        "status": "MEASURE_FINAL_NATIVE_VISIBLE_CLAMPS_AND_AXES",
+        "coordinateSpace": "master1672x941",
+        "ownership": {
+          "T_H": "X.R",
+          "T_S": "X.L"
+        },
+        "rule": "Do not transform the locked people to input targets. Inspect final native PNG, retain actual grip and visible shaft axis; remove painted shaft only as exact semantic prop replacement. Do not extend a finite rod to an infinite axis or move skin. No offscreen reconstruction."
+      }
+    },
+    {
+      "frame": 64,
+      "path": "collab/reviews/cloud_s20_20261018/F064_root_occlusion_cleanup_zero_call_001/F064_proximal_roots_continuous_candidate.png",
+      "sha256": "5ebf184c08b9e714f8b0030c226a2866158846bdac3db147d6645429867d2e76",
+      "record": "F064_root_occlusion_cleanup_zero_call_001/ADOPTED_F064_SOURCE.json",
+      "public_source_commit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "public_git_blob_sha1": "7e767fc6dc3073e8bbe0721a7fa6c4fba0c12353",
+      "actual_png_sha_verified_locally": false,
+      "candidateExposureInclusive": [
+        64,
+        66
+      ],
+      "exposureStatus": "NEW_FINITE_CANDIDATE_NOT_HISTORICAL_FREEZE",
+      "canvas": [
+        1672,
+        941
+      ],
+      "sourceFetchCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "inputReferenceOnly": {
+        "path": "collab/reviews/cloud_s20_20261018/next_F064_candidate_input_001/INPUT_MANIFEST.json",
+        "rods": [
+          {
+            "role": "T_H",
+            "owner": "X.R",
+            "front": [
+              322,
+              486
+            ],
+            "pin": [
+              450,
+              430
+            ],
+            "tail": [
+              470,
+              421.25
+            ],
+            "slope": -0.4375,
+            "intercept": 626.875
+          },
+          {
+            "role": "T_S",
+            "owner": "X.L",
+            "front": [
+              322,
+              393
+            ],
+            "pin": [
+              489,
+              467
+            ],
+            "tail": [
+              509,
+              475.8622754491018
+            ],
+            "slope": 0.4431137724550898,
+            "intercept": 250.31736526946108
+          }
+        ],
+        "notFinalRegisteredContact": true
+      },
+      "mechanism": {
+        "status": "MEASURE_FINAL_NATIVE_VISIBLE_CLAMPS_AND_AXES",
+        "coordinateSpace": "master1672x941",
+        "ownership": {
+          "T_H": "X.R",
+          "T_S": "X.L"
+        },
+        "rule": "Do not transform the locked people to input targets. Inspect final native PNG, retain actual grip and visible shaft axis; remove painted shaft only as exact semantic prop replacement. Do not extend a finite rod to an infinite axis or move skin. No offscreen reconstruction."
+      }
+    },
+    {
+      "frame": 67,
+      "path": "collab/reviews/cloud_s20_20261018/F067_near_leg_support_root_zero_call_001/F067_near_support_and_root_closed_candidate.png",
+      "sha256": "80a84871aaaa4eddd621e457fa4dae0b95494332d788119ae650ff85356e1dd8",
+      "record": "F067_near_leg_support_root_zero_call_001/ADOPTED_F067_SOURCE.json",
+      "public_source_commit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "public_git_blob_sha1": "9ccb3ffff005ba787e5e147aff9ee8a69149c8f7",
+      "actual_png_sha_verified_locally": false,
+      "candidateExposureInclusive": [
+        67,
+        69
+      ],
+      "exposureStatus": "NEW_FINITE_CANDIDATE_NOT_HISTORICAL_FREEZE",
+      "canvas": [
+        1672,
+        941
+      ],
+      "sourceFetchCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "inputReferenceOnly": {
+        "path": "collab/reviews/cloud_s20_20261018/next_F067_candidate_input_001/INPUT_MANIFEST.json",
+        "rods": [
+          {
+            "role": "T_H",
+            "owner": "X.R",
+            "front": [
+              330,
+              478
+            ],
+            "pin": [
+              450,
+              406
+            ],
+            "tail": [
+              470,
+              394
+            ],
+            "slope": -0.6,
+            "intercept": 676
+          },
+          {
+            "role": "T_S",
+            "owner": "X.L",
+            "front": [
+              306,
+              345
+            ],
+            "pin": [
+              489,
+              449
+            ],
+            "tail": [
+              509,
+              460.3661202185792
+            ],
+            "slope": 0.5683060109289617,
+            "intercept": 171.09836065573774
+          }
+        ],
+        "notFinalRegisteredContact": true
+      },
+      "mechanism": {
+        "status": "MEASURE_FINAL_NATIVE_VISIBLE_CLAMPS_AND_AXES",
+        "coordinateSpace": "master1672x941",
+        "ownership": {
+          "T_H": "X.R",
+          "T_S": "X.L"
+        },
+        "rule": "Do not transform the locked people to input targets. Inspect final native PNG, retain actual grip and visible shaft axis; remove painted shaft only as exact semantic prop replacement. Do not extend a finite rod to an infinite axis or move skin. No offscreen reconstruction."
+      }
+    },
+    {
+      "frame": 70,
+      "path": "collab/reviews/cloud_s20_20261018/F070_uniform_registration_zero_call_001/F070_uniform_registered_upper_fixed_full_lower_candidate.png",
+      "sha256": "1d12ca876cd3cc9a58aabb3d90c6195e31d15360f8bafaeb44aae81945c4d28a",
+      "record": "F070_uniform_registration_zero_call_001/ADOPTED_F070_SOURCE.json",
+      "public_source_commit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "public_git_blob_sha1": "f5bdf12cd40aeeaf1c4b139d3fefafcafaed2293",
+      "actual_png_sha_verified_locally": false,
+      "candidateExposureInclusive": [
+        70,
+        72
+      ],
+      "exposureStatus": "NEW_FINITE_CANDIDATE_NOT_HISTORICAL_FREEZE",
+      "canvas": [
+        1672,
+        941
+      ],
+      "sourceFetchCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "inputReferenceOnly": {
+        "path": "collab/reviews/cloud_s20_20261018/next_F070_fixed_lower_input_001/INPUT_MANIFEST.json",
+        "rods": [
+          {
+            "role": "T_H",
+            "owner": "X.R",
+            "front": [
+              323,
+              480
+            ],
+            "pin": [
+              435,
+              393
+            ],
+            "tail": [
+              455,
+              377.4642857142858
+            ],
+            "slope": -0.7767857142857143,
+            "intercept": 730.9017857142858
+          },
+          {
+            "role": "T_S",
+            "owner": "X.L",
+            "front": [
+              301,
+              317
+            ],
+            "pin": [
+              479,
+              440
+            ],
+            "tail": [
+              499,
+              453.82022471910113
+            ],
+            "slope": 0.6910112359550562,
+            "intercept": 109.00561797752806
+          }
+        ],
+        "notFinalRegisteredContact": true
+      },
+      "mechanism": {
+        "status": "MEASURE_FINAL_NATIVE_VISIBLE_CLAMPS_AND_AXES",
+        "coordinateSpace": "master1672x941",
+        "ownership": {
+          "T_H": "X.R",
+          "T_S": "X.L"
+        },
+        "rule": "Do not transform the locked people to input targets. Inspect final native PNG, retain actual grip and visible shaft axis; remove painted shaft only as exact semantic prop replacement. Do not extend a finite rod to an infinite axis or move skin. No offscreen reconstruction."
+      }
+    },
+    {
+      "frame": 73,
+      "path": "collab/reviews/cloud_s20_20261018/next_F073_fixed_lower_input_001/generation_001/F073_uniform_registered_upper_fixed_full_lower_candidate.png",
+      "sha256": "7f070dbbcb258ab630d4cf2324acec32447275fe9cdb65056cca7110a27da49c",
+      "record": "next_F073_fixed_lower_input_001/generation_001/ADOPTED_F073_SOURCE.json",
+      "public_source_commit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "public_git_blob_sha1": "44da0533060d4c1ec349280e856d30455e53224f",
+      "actual_png_sha_verified_locally": false,
+      "candidateExposureInclusive": [
+        73,
+        75
+      ],
+      "exposureStatus": "NEW_FINITE_CANDIDATE_NOT_HISTORICAL_FREEZE",
+      "canvas": [
+        1672,
+        941
+      ],
+      "sourceFetchCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "inputReferenceOnly": {
+        "path": "collab/reviews/cloud_s20_20261018/next_F073_fixed_lower_input_001/INPUT_MANIFEST.json",
+        "rods": [
+          {
+            "role": "T_H",
+            "owner": "X.R",
+            "front": [
+              305,
+              484
+            ],
+            "pin": [
+              416,
+              383
+            ],
+            "tail": [
+              436,
+              364.8018018018018
+            ],
+            "slope": -0.9099099099099099,
+            "intercept": 761.5225225225225
+          },
+          {
+            "role": "T_S",
+            "owner": "X.L",
+            "front": [
+              288,
+              333
+            ],
+            "pin": [
+              481,
+              455
+            ],
+            "tail": [
+              501,
+              467.64248704663214
+            ],
+            "slope": 0.6321243523316062,
+            "intercept": 150.9481865284974
+          }
+        ],
+        "notFinalRegisteredContact": true
+      },
+      "mechanism": {
+        "status": "MEASURE_FINAL_NATIVE_VISIBLE_CLAMPS_AND_AXES",
+        "coordinateSpace": "master1672x941",
+        "ownership": {
+          "T_H": "X.R",
+          "T_S": "X.L"
+        },
+        "rule": "Do not transform the locked people to input targets. Inspect final native PNG, retain actual grip and visible shaft axis; remove painted shaft only as exact semantic prop replacement. Do not extend a finite rod to an infinite axis or move skin. No offscreen reconstruction."
+      },
+      "actualRegistrationEvidence": "collab/reviews/cloud_s20_20261018/next_F073_fixed_lower_input_001/generation_001/registration_and_protection.json"
+    },
+    {
+      "frame": 76,
+      "path": "collab/reviews/cloud_s20_20261018/next_F076_fixed_lower_input_001/generation_001/F076_uniform_registered_upper_fixed_full_lower_candidate.png",
+      "sha256": "5f5e3b6b1e39fe89ee411eb6f7904cfd007137c20cf33eba6b51423fac35ac9a",
+      "record": "next_F076_fixed_lower_input_001/generation_001/ADOPTED_F076_SOURCE.json",
+      "public_source_commit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "public_git_blob_sha1": "35ea7ad6e84751744f2d5afe1ed433f64843281b",
+      "actual_png_sha_verified_locally": false,
+      "candidateExposureInclusive": [
+        76,
+        78
+      ],
+      "exposureStatus": "NEW_FINITE_CANDIDATE_NOT_HISTORICAL_FREEZE",
+      "canvas": [
+        1672,
+        941
+      ],
+      "sourceFetchCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "inputReferenceOnly": {
+        "path": "collab/reviews/cloud_s20_20261018/next_F076_fixed_lower_input_001/INPUT_MANIFEST.json",
+        "rods": [
+          {
+            "role": "T_H",
+            "owner": "X.R",
+            "front": [
+              282,
+              491.7388581567685
+            ],
+            "pin": [
+              393.7927706962796,
+              380.0238816851996
+            ],
+            "slope": -0.9993041211499976,
+            "intercept": 773.5426203210678
+          },
+          {
+            "role": "T_S",
+            "owner": "X.L",
+            "front": [
+              261,
+              335.2432709090051
+            ],
+            "pin": [
+              469.4563425413541,
+              468.8065027061509
+            ],
+            "slope": 0.6407252001490393,
+            "intercept": 168.01399367010583
+          }
+        ],
+        "notFinalRegisteredContact": true
+      },
+      "mechanism": {
+        "status": "MEASURE_FINAL_NATIVE_VISIBLE_CLAMPS_AND_AXES",
+        "coordinateSpace": "master1672x941",
+        "ownership": {
+          "T_H": "X.R",
+          "T_S": "X.L"
+        },
+        "rule": "Do not transform the locked people to input targets. Inspect final native PNG, retain actual grip and visible shaft axis; remove painted shaft only as exact semantic prop replacement. Do not extend a finite rod to an infinite axis or move skin. No offscreen reconstruction."
+      },
+      "actualRegistrationEvidence": "collab/reviews/cloud_s20_20261018/next_F076_fixed_lower_input_001/generation_001/registration_and_protection.json"
+    },
+    {
+      "frame": 79,
+      "path": "collab/reviews/cloud_s20_20261018/F079_head_neck_scale_close_zero_call_001/F079_own_head_neck_volume_closed_candidate.png",
+      "sha256": "2a2fbbee3aaff0b6289b4bb8df756193fe70e37ab9a552af8192c13e459930af",
+      "record": "F079_head_neck_scale_close_zero_call_001/ADOPTED_F079_SOURCE.json",
+      "public_source_commit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "public_git_blob_sha1": "41458601a93bffd4f1ad4d03af1192cf4ad38330",
+      "actual_png_sha_verified_locally": false,
+      "candidateExposureInclusive": [
+        79,
+        83
+      ],
+      "exposureStatus": "NEW_FINITE_CANDIDATE_NOT_HISTORICAL_FREEZE",
+      "canvas": [
+        1672,
+        941
+      ],
+      "sourceFetchCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "inputReferenceOnly": {
+        "path": "collab/reviews/cloud_s20_20261018/next_F079_fixed_lower_input_001/INPUT_MANIFEST.json",
+        "rods": [
+          {
+            "role": "T_H",
+            "owner": "X.R",
+            "front": [
+              272.832582014556,
+              484.20168041989444
+            ],
+            "pin": [
+              386.7779130680509,
+              373.20910767061895
+            ],
+            "slope": -0.9740861843401627,
+            "intercept": 749.9641291981278
+          },
+          {
+            "role": "T_S",
+            "owner": "X.L",
+            "front": [
+              256.0834630350745,
+              327.90263936026724
+            ],
+            "pin": [
+              462.26091279789483,
+              469.68542812158285
+            ],
+            "slope": 0.6876735982738064,
+            "intercept": 151.80080287652027
+          }
+        ],
+        "notFinalRegisteredContact": true
+      },
+      "mechanism": {
+        "status": "MEASURE_FINAL_NATIVE_VISIBLE_CLAMPS_AND_AXES",
+        "coordinateSpace": "master1672x941",
+        "ownership": {
+          "T_H": "X.R",
+          "T_S": "X.L"
+        },
+        "rule": "Do not transform the locked people to input targets. Inspect final native PNG, retain actual grip and visible shaft axis; remove painted shaft only as exact semantic prop replacement. Do not extend a finite rod to an infinite axis or move skin. No offscreen reconstruction."
+      },
+      "actualRegistrationEvidence": "collab/reviews/cloud_s20_20261018/next_F079_fixed_lower_input_001/generation_001/registration_and_protection.json"
+    },
+    {
+      "frame": 84,
+      "path": "collab/reviews/cloud_s20_20261018/F084_two_domains_close_zero_call_001/F084_two_domains_closed_candidate.png",
+      "sha256": "4df5d046a399f90aa798ca2cba2bd09e0cf7977eacb1058036bfabf52ddce448",
+      "record": "next_F090_rebound_input_001/ADOPTED_F084_SOURCE.json",
+      "public_source_commit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "public_git_blob_sha1": "a2045283d68ae0d1fa71100f7ce3a528b21becf4",
+      "actual_png_sha_verified_locally": false,
+      "candidateExposureInclusive": [
+        84,
+        89
+      ],
+      "exposureStatus": "NEW_FINITE_CANDIDATE_NOT_HISTORICAL_FREEZE",
+      "canvas": [
+        1672,
+        941
+      ],
+      "sourceFetchCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "inputReferenceOnly": {
+        "path": "collab/reviews/cloud_s20_20261018/next_F084_peak_input_001/INPUT_MANIFEST.json",
+        "rods": [
+          {
+            "role": "T_H",
+            "owner": "X.R",
+            "front": [
+              280.06681251510184,
+              444.29582659254993
+            ],
+            "pin": [
+              421.39161847784203,
+              361.3927449580821
+            ],
+            "slope": -0.5866138012340518,
+            "intercept": 608.5868840815383
+          },
+          {
+            "role": "T_S",
+            "owner": "X.L",
+            "front": [
+              295.9155399853058,
+              283.1582079339156
+            ],
+            "pin": [
+              472.76854397387353,
+              480.41339019283083
+            ],
+            "slope": 1.115362350710573,
+            "intercept": -46.89484435588366
+          }
+        ],
+        "notFinalRegisteredContact": true
+      },
+      "mechanism": {
+        "status": "MEASURE_FINAL_NATIVE_VISIBLE_CLAMPS_AND_AXES",
+        "coordinateSpace": "master1672x941",
+        "ownership": {
+          "T_H": "X.R",
+          "T_S": "X.L"
+        },
+        "rule": "Do not transform the locked people to input targets. Inspect final native PNG, retain actual grip and visible shaft axis; remove painted shaft only as exact semantic prop replacement. Do not extend a finite rod to an infinite axis or move skin. No offscreen reconstruction."
+      },
+      "actualRegistrationEvidence": "collab/reviews/cloud_s20_20261018/next_F084_peak_input_001/generation_001/registration_and_protection.json"
+    },
+    {
+      "frame": 90,
+      "path": "collab/reviews/cloud_s20_20261018/next_F090_rebound_input_001/generation_001/F090_uniform_registered_upper_fixed_full_lower_candidate.png",
+      "sha256": "2927d3d6d9c33719fb9d673c54ea843f0682c5ca3e2efaf0188eeff6975194ea",
+      "record": "next_F096_active_pull_input_001/ADOPTED_F090_SOURCE.json",
+      "public_source_commit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "public_git_blob_sha1": "3d06545a5af411af3f593c4c845d2f244bddeac0",
+      "actual_png_sha_verified_locally": false,
+      "candidateExposureInclusive": [
+        90,
+        95
+      ],
+      "exposureStatus": "NEW_FINITE_CANDIDATE_NOT_HISTORICAL_FREEZE",
+      "canvas": [
+        1672,
+        941
+      ],
+      "sourceFetchCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "inputReferenceOnly": {
+        "path": "collab/reviews/cloud_s20_20261018/next_F090_rebound_input_001/INPUT_MANIFEST.json",
+        "rods": [
+          {
+            "role": "T_H",
+            "owner": "X.R",
+            "front": [
+              286.9506008013469,
+              442.4725729372334
+            ],
+            "pin": [
+              423.8963085360328,
+              360.45751884970645
+            ],
+            "slope": -0.598887365250032,
+            "intercept": 614.3236622080658
+          },
+          {
+            "role": "T_S",
+            "owner": "X.L",
+            "front": [
+              287.8148911690025,
+              262.96333247995324
+            ],
+            "pin": [
+              459.1846062997485,
+              442.4880225908593
+            ],
+            "slope": 1.047587025361735,
+            "intercept": -38.547813214593646
+          }
+        ],
+        "notFinalRegisteredContact": true
+      },
+      "mechanism": {
+        "status": "MEASURE_FINAL_NATIVE_VISIBLE_CLAMPS_AND_AXES",
+        "coordinateSpace": "master1672x941",
+        "ownership": {
+          "T_H": "X.R",
+          "T_S": "X.L"
+        },
+        "rule": "Do not transform the locked people to input targets. Inspect final native PNG, retain actual grip and visible shaft axis; remove painted shaft only as exact semantic prop replacement. Do not extend a finite rod to an infinite axis or move skin. No offscreen reconstruction."
+      },
+      "actualRegistrationEvidence": "collab/reviews/cloud_s20_20261018/next_F090_rebound_input_001/generation_001/registration_and_protection.json"
+    },
+    {
+      "frame": 96,
+      "path": "collab/reviews/cloud_s20_20261018/F096_far_R_single_TH_contact_input_001/local_generation_001/F096_R_single_TH_native_local_candidate.png",
+      "sha256": "be1d3ccec0939b22203fa6ad00bb7773049694d3506f3113f47810220889430d",
+      "record": "next_F104_last_active_pull_input_001/F096_SINGLE_STATE_ADOPTION.json",
+      "public_source_commit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "public_git_blob_sha1": "0f8ddb4e57110ac05b6d715402d9712bae2714ad",
+      "actual_png_sha_verified_locally": false,
+      "candidateExposureInclusive": [
+        96,
+        103
+      ],
+      "exposureStatus": "NEW_FINITE_CANDIDATE_NOT_HISTORICAL_FREEZE",
+      "canvas": [
+        1672,
+        941
+      ],
+      "sourceFetchCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "inputReferenceOnly": {
+        "path": "collab/reviews/cloud_s20_20261018/next_F096_active_pull_input_001/INPUT_MANIFEST.json",
+        "rods": [
+          {
+            "role": "T_H",
+            "owner": "X.R",
+            "front": [
+              293.4391041853726,
+              433.75596945292426
+            ],
+            "pin": [
+              427.6174328468865,
+              357.43287894031954
+            ],
+            "slope": -0.5688183127183065,
+            "intercept": 600.6695055812193
+          },
+          {
+            "role": "T_S",
+            "owner": "X.L",
+            "front": [
+              317.70512491571577,
+              293.47200153561926
+            ],
+            "pin": [
+              489.88894077546615,
+              437.2216164400872
+            ],
+            "slope": 0.8348613613114308,
+            "intercept": 28.232268452866606
+          }
+        ],
+        "notFinalRegisteredContact": true
+      },
+      "mechanism": {
+        "status": "FINAL_SINGLE_R_HAND_CORRECTION_FIXED_AXES",
+        "coordinateSpace": "master1672x941",
+        "ownership": {
+          "T_H": "X.R",
+          "T_S": "X.L"
+        },
+        "rule": "Do not transform the locked people to input targets. Inspect final native PNG, retain actual grip and visible shaft axis; remove painted shaft only as exact semantic prop replacement. Do not extend a finite rod to an infinite axis or move skin. No offscreen reconstruction.",
+        "axisTH": [
+          -0.613587107529868,
+          615.2206075761782
+        ],
+        "axisTS": [
+          0.8586772983114437,
+          67.79671669793666
+        ],
+        "actualCross": [
+          371.8244417961197,
+          387.0739238255893
+        ],
+        "actualClamps": {
+          "T_H": [
+            405.91809952555025,
+            366.15449499427467
+          ]
+        },
+        "finiteTHHandEnd": [
+          411.8844896282006,
+          362.4935949487946
+        ],
+        "note": "L actual grip remains in final PNG; do not use pre-local wrong double-grip native."
+      },
+      "actualRegistrationEvidence": "collab/reviews/cloud_s20_20261018/next_F096_active_pull_input_001/generation_001/registration_and_protection.json"
+    },
+    {
+      "frame": 104,
+      "path": "collab/reviews/cloud_s20_20261018/next_F104_last_active_pull_input_001/generation_001/F104_uniform_registered_upper_fixed_full_lower_candidate.png",
+      "sha256": "bebff46038c7845272d64725c110697a3b75d6203be3243a8db20b5011f2ea0e",
+      "record": "next_F112_passive_residual_input_001/F104_SINGLE_STATE_ADOPTION.json",
+      "public_source_commit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "public_git_blob_sha1": "0fa1980c607645abec479d8b9fd7dcbb7fc6ce5a",
+      "actual_png_sha_verified_locally": false,
+      "candidateExposureInclusive": [
+        104,
+        110
+      ],
+      "exposureStatus": "NEW_FINITE_CANDIDATE_NOT_HISTORICAL_FREEZE",
+      "canvas": [
+        1672,
+        941
+      ],
+      "sourceFetchCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "inputReferenceOnly": {
+        "path": "collab/reviews/cloud_s20_20261018/next_F104_last_active_pull_input_001/INPUT_MANIFEST.json",
+        "rods": null,
+        "notFinalRegisteredContact": true
+      },
+      "mechanism": {
+        "status": "ACTUAL_REGISTERED_NATIVE_CLAMP_ANCHORS_AVAILABLE",
+        "coordinateSpace": "master1672x941",
+        "ownership": {
+          "T_H": "X.R",
+          "T_S": "X.L"
+        },
+        "rule": "Do not transform the locked people to input targets. Inspect final native PNG, retain actual grip and visible shaft axis; remove painted shaft only as exact semantic prop replacement. Do not extend a finite rod to an infinite axis or move skin. No offscreen reconstruction.",
+        "actualClamps": {
+          "T_H": [
+            376.39806122832556,
+            366.2157185375124
+          ],
+          "T_S": [
+            428.1370360519825,
+            484.16959041018055
+          ]
+        },
+        "actualCross": [
+          339.09648659928007,
+          381.4475673101455
+        ],
+        "anchorPrecision": "source whole-component fitting observations, not exact skin ownership mask"
+      },
+      "actualRegistrationEvidence": "collab/reviews/cloud_s20_20261018/next_F104_last_active_pull_input_001/generation_001/registration_and_protection.json"
+    },
+    {
+      "frame": 112,
+      "path": "collab/reviews/cloud_s20_20261018/next_F112_passive_residual_input_001/generation_001/F112_uniform_registered_upper_fixed_full_lower_candidate.png",
+      "sha256": "a5e3821aaa0e42b3db44086647c4c064aba019a6d74491fce735785521720b3a",
+      "record": "next_F120_passive_decay_input_001/F112_SINGLE_STATE_ADOPTION.json",
+      "public_source_commit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "public_git_blob_sha1": "0054b8c582983277d89531e821cb8279d8b239ec",
+      "actual_png_sha_verified_locally": false,
+      "candidateExposureInclusive": [
+        111,
+        119
+      ],
+      "exposureStatus": "NEW_FINITE_CANDIDATE_NOT_HISTORICAL_FREEZE",
+      "canvas": [
+        1672,
+        941
+      ],
+      "sourceFetchCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "inputReferenceOnly": {
+        "path": "collab/reviews/cloud_s20_20261018/next_F112_passive_residual_input_001/INPUT_MANIFEST.json",
+        "rods": null,
+        "notFinalRegisteredContact": true
+      },
+      "mechanism": {
+        "status": "ACTUAL_REGISTERED_NATIVE_CLAMP_ANCHORS_AVAILABLE",
+        "coordinateSpace": "master1672x941",
+        "ownership": {
+          "T_H": "X.R",
+          "T_S": "X.L"
+        },
+        "rule": "Do not transform the locked people to input targets. Inspect final native PNG, retain actual grip and visible shaft axis; remove painted shaft only as exact semantic prop replacement. Do not extend a finite rod to an infinite axis or move skin. No offscreen reconstruction.",
+        "actualClamps": {
+          "T_H": [
+            376.7352414048462,
+            394.0189799309443
+          ],
+          "T_S": [
+            428.674578373245,
+            505.8044608793316
+          ]
+        },
+        "actualCross": [
+          331.02702928797476,
+          423.8816444639993
+        ],
+        "anchorPrecision": "source whole-component fitting observations, not exact skin ownership mask"
+      },
+      "actualRegistrationEvidence": "collab/reviews/cloud_s20_20261018/next_F112_passive_residual_input_001/generation_001/registration_and_protection.json"
+    },
+    {
+      "frame": 120,
+      "path": "collab/reviews/cloud_s20_20261018/next_F120_passive_decay_input_001/generation_001/F120_uniform_registered_upper_fixed_full_lower_candidate.png",
+      "sha256": "40d73e42505d5e7c83dc22d33511e5a2e4862dc35b5a4ff210e50eca8ef2bf5c",
+      "record": "next_F128_mid_roll_input_001/F120_SINGLE_STATE_ADOPTION.json",
+      "public_source_commit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "public_git_blob_sha1": "3ad0ca7adbe0f82ca3e5b38e53f1d45f40c16026",
+      "actual_png_sha_verified_locally": false,
+      "candidateExposureInclusive": [
+        120,
+        124
+      ],
+      "exposureStatus": "NEW_FINITE_CANDIDATE_NOT_HISTORICAL_FREEZE",
+      "canvas": [
+        1672,
+        941
+      ],
+      "sourceFetchCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "inputReferenceOnly": {
+        "path": "collab/reviews/cloud_s20_20261018/next_F120_passive_decay_input_001/INPUT_MANIFEST.json",
+        "rods": null,
+        "notFinalRegisteredContact": true
+      },
+      "mechanism": {
+        "status": "ACTUAL_REGISTERED_NATIVE_CLAMP_ANCHORS_AVAILABLE",
+        "coordinateSpace": "master1672x941",
+        "ownership": {
+          "T_H": "X.R",
+          "T_S": "X.L"
+        },
+        "rule": "Do not transform the locked people to input targets. Inspect final native PNG, retain actual grip and visible shaft axis; remove painted shaft only as exact semantic prop replacement. Do not extend a finite rod to an infinite axis or move skin. No offscreen reconstruction.",
+        "actualClamps": {
+          "T_H": [
+            395.5969615931523,
+            391.9163010277811
+          ],
+          "T_S": [
+            433.82592856936486,
+            497.25733241893283
+          ]
+        },
+        "actualCross": [
+          350.8995322146355,
+          413.9852056329818
+        ],
+        "anchorPrecision": "source whole-component fitting observations, not exact skin ownership mask",
+        "finiteGateBaseline": {
+          "root": [
+            1.846259790889171,
+            0.8762118621351968
+          ],
+          "pose": {
+            "angles": {
+              "legFN": -6.858022075225178e-16,
+              "legBF": -6.858022075225178e-16,
+              "legFF": -5.147849420875001e-16,
+              "legBN": -5.147849420875001e-16,
+              "tail": -1.4695761589768238e-16,
+              "neck0": -0.5100000000000001,
+              "neck1": 1.11,
+              "neck2": -0.76,
+              "head": -9.797174393178826e-17
+            },
+            "rootAngle": 0.17683257384135653,
+            "facing": -1
+          },
+          "rods": [
+            {
+              "id": "T_H",
+              "holder": "X.R",
+              "part": "head",
+              "at": [
+                20,
+                0
+              ],
+              "A_master": [
+                470.72802581426726,
+                353.0619374202755
+              ],
+              "B_master": [
+                394.7062437119815,
+                390.0874552859149
+              ],
+              "B_world": [
+                1.7409322405004817,
+                0.03115699999445233,
+                0.9017629010010665
+              ],
+              "candidate_A_B_length_m": 0.21864436547698668
+            },
+            {
+              "id": "T_S",
+              "holder": "X.L",
+              "part": "shell",
+              "at": [
+                0,
+                40
+              ],
+              "A_master": [
+                330.8158507530218,
+                388.47814226431336
+              ],
+              "B_master": [
+                434.78701754799954,
+                496.3308321847294
+              ],
+              "B_world": [
+                1.7197117368701638,
+                0.10011531171426663,
+                0.7209663965210357
+              ],
+              "candidate_A_B_length_m": 0.25504206964477605
+            }
+          ],
+          "people_png": "F120_people_old_exterior_T_cleared_CANDIDATE.png"
+        },
+        "baselineMeaning": "These roots, poses, scale, facing, camera, A-B lengths and F128 grips are accepted now for this F128 input preparation only; not previously frozen, not an exposure freeze.",
+        "note": "This F120 geometry was established for subsequent F128 input gate, not historical F120 whole-scene freeze. Use final visible grips with supplied finite lengths and original turtle; verify actual contact without moving actor."
+      },
+      "actualRegistrationEvidence": "collab/reviews/cloud_s20_20261018/next_F120_passive_decay_input_001/generation_001/registration_and_protection.json"
+    },
+    {
+      "frame": 128,
+      "path": "collab/reviews/cloud_s20_20261018/F128_two_domains_close_zero_call_001/F128_two_domains_closed_CANDIDATE.png",
+      "sha256": "46294a1f899c2b80780ef26da2f632b7446a04636213ce28e56f2859cfaf5bcc",
+      "record": "next_F132_belly_up_stop_input_001/F128_SINGLE_STATE_ADOPTION.json",
+      "public_source_commit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "public_git_blob_sha1": "01d817d66988fe8520e3b9d52127939eabd3d9ac",
+      "actual_png_sha_verified_locally": true,
+      "candidateExposureInclusive": [
+        125,
+        131
+      ],
+      "exposureStatus": "NEW_FINITE_CANDIDATE_NOT_HISTORICAL_FREEZE",
+      "canvas": [
+        1672,
+        941
+      ],
+      "sourceFetchCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+      "inputReferenceOnly": {
+        "path": "collab/reviews/cloud_s20_20261018/next_F128_mid_roll_input_001/character_four_inputs_001/INPUT_MANIFEST.json",
+        "rods": null,
+        "notFinalRegisteredContact": true
+      },
+      "mechanism": {
+        "status": "ORIGINAL_CAM128_FINITE_GEOMETRY_AVAILABLE",
+        "coordinateSpace": "master1672x941",
+        "ownership": {
+          "T_H": "X.R",
+          "T_S": "X.L"
+        },
+        "rule": "Do not transform the locked people to input targets. Inspect final native PNG, retain actual grip and visible shaft axis; remove painted shaft only as exact semantic prop replacement. Do not extend a finite rod to an infinite axis or move skin. No offscreen reconstruction.",
+        "finiteGateBaseline": {
+          "root": [
+            1.839651008168918,
+            0.8019146834916447
+          ],
+          "pose": {
+            "angles": {
+              "legFN": -0.24962768694724094,
+              "legBF": -0.24962768694724094,
+              "legFF": 0.24962768694724008,
+              "legBN": 0.24962768694724008,
+              "tail": -0.05800383327555817,
+              "neck0": -0.5100000000000001,
+              "neck1": 1.11,
+              "neck2": -0.76,
+              "head": -0.03566109813532014
+            },
+            "rootAngle": 1.5025220313637777,
+            "facing": -1
+          },
+          "rods": [
+            {
+              "id": "T_H",
+              "holder": "X.R",
+              "part": "head",
+              "at": [
+                20,
+                0
+              ],
+              "A_master": [
+                338.2626054104362,
+                291.37892098338426
+              ],
+              "B_master": [
+                400.3988637166487,
+                402.6996190692074
+              ],
+              "B_world": [
+                1.7374971890394892,
+                0.04065762579288482,
+                0.8803005266629407
+              ],
+              "candidate_A_B_length_m": 0.21864436547698668
+            },
+            {
+              "id": "T_S",
+              "holder": "X.L",
+              "part": "shell",
+              "at": [
+                0,
+                40
+              ],
+              "A_master": [
+                319.83489249979783,
+                457.5233847386403
+              ],
+              "B_master": [
+                463.6082671920906,
+                508.76677359903914
+              ],
+              "B_world": [
+                1.693579958192722,
+                0.1421260805831277,
+                0.6998039033543602
+              ],
+              "candidate_A_B_length_m": 0.25504206964477605
+            }
+          ],
+          "people_png": "F128_people_proposed_arms_CONSTRUCTION_ONLY.png"
+        },
+        "baselineMeaning": "These roots, poses, scale, facing, camera, A-B lengths and F128 grips are accepted now for this F128 input preparation only; not previously frozen, not an exposure freeze.",
+        "actualCAMGeometry": {
+          "frame": 128,
+          "time": 5.333333333333333,
+          "camera": {
+            "pos": [
+              3.05,
+              1.5,
+              1.18
+            ],
+            "target": [
+              1.5,
+              0.42,
+              0.95
+            ],
+            "hfov": 58
+          },
+          "canvas": [
+            1920,
+            1080
+          ],
+          "root_input_baseline_established_this_gate": [
+            1.839651008168918,
+            0.8019146834916447
+          ],
+          "pose": {
+            "angles": {
+              "legFN": -0.24962768694724094,
+              "legBF": -0.24962768694724094,
+              "legFF": 0.24962768694724008,
+              "legBN": 0.24962768694724008,
+              "tail": -0.05800383327555817,
+              "neck0": -0.5100000000000001,
+              "neck1": 1.11,
+              "neck2": -0.76,
+              "head": -0.03566109813532014
+            },
+            "rootAngle": 1.5025220313637777,
+            "facing": -1
+          },
+          "original_material": "unmodified makeTurtle(1.3), drawPuppet r",
+          "whole_card_texture_padding_only": {
+            "old_size": [
+              1200,
+              1000
+            ],
+            "old_origin": [
+              600,
+              500
+            ],
+            "new_size": [
+              1600,
+              1400
+            ],
+            "new_origin": [
+              800,
+              700
+            ],
+            "world_transform_changed": false
+          },
+          "people_to_CAM20": [
+            1.5356339213808416,
+            0,
+            -1.1368683772161603e-15,
+            1.5356339213808399,
+            -55.29501789280528,
+            -18.803172678195892
+          ],
+          "rods": [
+            {
+              "id": "T_H",
+              "holder": "X.R",
+              "part": "head",
+              "at": [
+                20,
+                0
+              ],
+              "A_master": [
+                338.2626054104362,
+                291.37892098338426
+              ],
+              "B_master": [
+                400.3988637166487,
+                402.6996190692074
+              ],
+              "B_world": [
+                1.7374971890394892,
+                0.04065762579288482,
+                0.8803005266629407
+              ],
+              "candidate_A_B_length_m": 0.21864436547698668,
+              "local_point_mm": [
+                7.87524545881124,
+                274.4292770783662
+              ],
+              "A_screen": [
+                464.1525133101231,
+                428.64818235923633
+              ],
+              "B_screen": [
+                559.5710593128247,
+                599.5960224916215
+              ],
+              "width_screen": 6.270505178971761,
+              "depthA": 1.9610989747041683,
+              "skin_endpoint_from_same_card": true
+            },
+            {
+              "id": "T_S",
+              "holder": "X.L",
+              "part": "shell",
+              "at": [
+                0,
+                40
+              ],
+              "A_master": [
+                319.83489249979783,
+                457.5233847386403
+              ],
+              "B_master": [
+                463.6082671920906,
+                508.76677359903914
+              ],
+              "B_world": [
+                1.693579958192722,
+                0.1421260805831277,
+                0.6998039033543602
+              ],
+              "candidate_A_B_length_m": 0.25504206964477605,
+              "local_point_mm": [
+                -39.90680862013801,
+                2.7288506290522223
+              ],
+              "A_screen": [
+                435.85429227107875,
+                683.7852567514371
+              ],
+              "B_screen": [
+                656.6375634399612,
+                762.4763429319745
+              ],
+              "width_screen": 6.27050517897176,
+              "depthA": 1.9610989747041683,
+              "skin_endpoint_from_same_card": true
+            }
+          ],
+          "finite_A_B_only": true,
+          "external_handle_tail_m": 0,
+          "old_infinite_intersection_not_a_collision_test": true,
+          "source_person_rig_called": false,
+          "scope": "One zero-call two-domain closed F128 actual scene; unchanged accepted finite mechanism. Complete same native palms preserved. No132 or whole-shot render.",
+          "new_image_calls": 0,
+          "cumulative_native_requests": 1
+        }
+      },
+      "actualRegistrationEvidence": "collab/reviews/cloud_s20_20261018/next_F128_mid_roll_input_001/character_four_inputs_001/generation_001/registration_and_protection.json"
+    }
+  ]
+}

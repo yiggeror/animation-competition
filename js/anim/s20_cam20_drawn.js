@@ -33,7 +33,7 @@ async function renderState(ctx,t,W,H,row,closure){
   rods=[...scene.finite_T_rods.map(r=>({...r,end_world:r.B_world,part:r.source_original_binding.part,at:r.source_original_binding.at})),...(Cprops.rods||Cprops.finite_C_rods.map(r=>({...r,end_world:r.physical_end_world})))];
  }else{
   people=await image(row.people);
-  if(row.geometry){const scene=await json(row.geometry);g.T.root=scene.turtle.root;g.T.pose=scene.turtle.pose;rods=[...rods.filter(r=>r.id.startsWith('C')), ...scene.rods];}
+  if(row.geometry){const scene=await json(row.geometry);g.T.root=scene.turtle.root;g.T.pose=scene.turtle.pose;rods=[...rods.filter(r=>r.id.startsWith('C')).map(r=>scene.craneRodOverrides?.find(x=>x.id===r.id)||r), ...scene.rods];}
  }
  const C=propCard(crane,g.C.pose,2400,2400,1200,1300),T=turtleRaster||propCard(turtle,g.T.pose,1600,1400,800,700),cm=sheetMatrix(g.cam,g.C.root,1200,1300),tm=turtleRaster?{m:[1,0,0,1,0,0]}:sheetMatrix(g.cam,g.T.root,800,700);
  const previous={occ:S.occ,back:S.occBack};S.occ=[];S.occBack=[];

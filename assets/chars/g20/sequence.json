@@ -2,14 +2,10 @@
   "fps": 24,
   "totalFrames": 216,
   "duration": 9,
-  "status": "PARTIAL_ADOPTED_EXPOSURES_AND_KEYS_NOT_FULL_SHOT",
+  "status": "ALL_FRONT_DRAWINGS_AND_EXPLICIT_CANDIDATE_EXPOSURES_BOUND_ACTUAL_REVIEW_PENDING",
   "availableIntervals": [
     [
       0,
-      57
-    ],
-    [
-      132,
       143
     ]
   ],
@@ -217,6 +213,141 @@
       "people": "F054_people.png",
       "geometry": "F054_geometry.json",
       "stage": "turn_and_crane_handoff"
+    },
+    {
+      "key": 58,
+      "start": 58,
+      "end": 60,
+      "people": "F058_people.png",
+      "geometry": "F058_geometry.json",
+      "stage": "active_entangle",
+      "candidateExposure": true
+    },
+    {
+      "key": 61,
+      "start": 61,
+      "end": 63,
+      "people": "F061_people.png",
+      "geometry": "F061_geometry.json",
+      "stage": "active_entangle",
+      "candidateExposure": true
+    },
+    {
+      "key": 64,
+      "start": 64,
+      "end": 66,
+      "people": "F064_people.png",
+      "geometry": "F064_geometry.json",
+      "stage": "active_entangle",
+      "candidateExposure": true
+    },
+    {
+      "key": 67,
+      "start": 67,
+      "end": 69,
+      "people": "F067_people.png",
+      "geometry": "F067_geometry.json",
+      "stage": "active_entangle",
+      "candidateExposure": true
+    },
+    {
+      "key": 70,
+      "start": 70,
+      "end": 72,
+      "people": "F070_people.png",
+      "geometry": "F070_geometry.json",
+      "stage": "active_entangle",
+      "candidateExposure": true
+    },
+    {
+      "key": 73,
+      "start": 73,
+      "end": 75,
+      "people": "F073_people.png",
+      "geometry": "F073_geometry.json",
+      "stage": "active_entangle",
+      "candidateExposure": true
+    },
+    {
+      "key": 76,
+      "start": 76,
+      "end": 78,
+      "people": "F076_people.png",
+      "geometry": "F076_geometry.json",
+      "stage": "active_entangle",
+      "candidateExposure": true
+    },
+    {
+      "key": 79,
+      "start": 79,
+      "end": 83,
+      "people": "F079_people.png",
+      "geometry": "F079_geometry.json",
+      "stage": "active_entangle",
+      "candidateExposure": true
+    },
+    {
+      "key": 84,
+      "start": 84,
+      "end": 89,
+      "people": "F084_people.png",
+      "geometry": "F084_geometry.json",
+      "stage": "active_entangle",
+      "candidateExposure": true
+    },
+    {
+      "key": 90,
+      "start": 90,
+      "end": 95,
+      "people": "F090_people.png",
+      "geometry": "F090_geometry.json",
+      "stage": "active_entangle",
+      "candidateExposure": true
+    },
+    {
+      "key": 96,
+      "start": 96,
+      "end": 103,
+      "people": "F096_people.png",
+      "geometry": "F096_geometry.json",
+      "stage": "active_entangle",
+      "candidateExposure": true
+    },
+    {
+      "key": 104,
+      "start": 104,
+      "end": 110,
+      "people": "F104_people.png",
+      "geometry": "F104_geometry.json",
+      "stage": "active_entangle",
+      "candidateExposure": true
+    },
+    {
+      "key": 112,
+      "start": 111,
+      "end": 119,
+      "people": "F112_people.png",
+      "geometry": "F112_geometry.json",
+      "stage": "passive_residual",
+      "candidateExposure": true
+    },
+    {
+      "key": 120,
+      "start": 120,
+      "end": 124,
+      "people": "F120_people.png",
+      "geometry": "F120_geometry.json",
+      "stage": "passive_residual",
+      "candidateExposure": true
+    },
+    {
+      "key": 128,
+      "start": 125,
+      "end": 131,
+      "people": "F128_people.png",
+      "geometry": "F128_geometry.json",
+      "stage": "mid_roll",
+      "candidateExposure": true
     }
   ],
   "singleStateOnlyKeys": [
@@ -236,7 +367,7 @@
     120,
     128
   ],
-  "missingExposure": "058–131 new candidate package received; actual native shaft measurements and original-scene consumption still pending.",
+  "missingExposure": null,
   "closure": {
     "adoptionCommit": "4d716425b17bf95148a0fe89162453771cb4288d",
     "keyRole": "RsecureBeforeLwithdrawal",

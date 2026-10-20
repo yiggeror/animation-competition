@@ -81,6 +81,30 @@
     -9.541494457357686e-09,
     8.109566351777175e-10
   ],
+  "craneRodOverrides": [
+    {
+      "id": "C_B",
+      "A_world": [
+        1.8718940992741835,
+        0.0040000000000000036,
+        1.280877753126372
+      ],
+      "end_world": [
+        1.0512961497831796,
+        0.606756122397249,
+        1.002457514702044
+      ],
+      "fixedLengthMetres": 1.0555632463099818,
+      "A_master": [
+        313.37876206162196,
+        162.7807018292012
+      ],
+      "end_master": [
+        875.4709293753181,
+        320.13183117174725
+      ]
+    }
+  ],
   "registrationRationale": "Original1.3 turtle, unchanged internal pose; whole root/rotation registered to the two actual adopted finite axes.039 uses its rigid-pair reference;042+ binds shell to its visible finite front. No source input palm target or world-length historical-freeze claim.",
   "originalTurtleScale": 1.3
 }

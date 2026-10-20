@@ -160,6 +160,12 @@ for hold in binding['holds']:
     # Include AA guide pixels regardless of hidden RGB; solid native silhouettes
     # and all skin envelopes are protected before clearing this exterior mask.
     erase = corridors & (A[:, :, 3] > 0) & ~protected
+    if key >= 47:
+        cb = old_c['C_B']
+        hue = (gg - bb) / np.maximum(1, rr - bb) / 6
+        clear_old_cb = (x > 885) & (x < 960) & (np.abs(y - cb['slope'] * x - cb['intercept']) / math.hypot(1, cb['slope']) < 9) & (A[:, :, 3] > 0) & (rr > gg + 7) & (gg > bb + 7) & (bb < .68 * gg) & (hue > .075)
+        erase |= clear_old_cb
+        protected &= ~clear_old_cb
     B = A.copy()
     B[erase] = 0
     assert np.array_equal(B[~erase], A[~erase])
@@ -168,6 +174,8 @@ for hold in binding['holds']:
     Image.fromarray(erase.astype('uint8') * 255).save(mask)
     name = f'F{key:03}_people.png'
     Image.fromarray(B).save(ASSETS / name)
+    if key >= 47:
+        geometry['craneRodOverrides'] = [json.loads((ASSETS / 'closure_CHARACTER_AND_RODS.json').read_text())['rods'][0]]
     geometry['registrationRationale'] = rationale
     geometry['originalTurtleScale'] = 1.3
     geom_name = f'F{key:03}_geometry.json'
