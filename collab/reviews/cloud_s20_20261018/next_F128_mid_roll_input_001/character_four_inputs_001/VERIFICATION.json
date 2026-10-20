@@ -1,0 +1,57 @@
+{
+  "status": "PASS_ZERO_CALL_F128_INPUT_PREPARATION_ONLY",
+  "not_native_art_or_generation_acceptance": true,
+  "actual_images_opened_for_review": [
+    "inputs/01_unique_complete_F128_target_REVIEW_ONLY.png",
+    "contacts_1x_REVIEW_ONLY.png",
+    "inputs/03_120_identity_head_collar_cloth_shoes_patches_only.png",
+    "inputs/04_complete_upper_whole_skirt_white_full_legs_black_mask.png",
+    "120_left_128_target_right_same_canvas_upper_hands_1x.png",
+    "whole_skirt_hidden_roots_target_left_mask_right_1x.png"
+  ],
+  "new_image_calls": 0,
+  "raw_outputs": 0,
+  "retries": 0,
+  "exact_F128_grips": [
+    [
+      400.3988637166487,
+      402.6996190692074
+    ],
+    [
+      463.6082671920906,
+      508.76677359903914
+    ]
+  ],
+  "protection_pixel_audits": {
+    "actual_support": {
+      "compared_pixels": 25554,
+      "RGBA_changed_pixels": 0
+    },
+    "grandma": {
+      "compared_pixels": 163843,
+      "RGBA_changed_pixels": 0
+    },
+    "visible_fixed_lower": {
+      "compared_pixels": 36054,
+      "RGBA_changed_pixels": 0
+    },
+    "visible_original_C": {
+      "compared_pixels": 1103,
+      "RGBA_changed_pixels": 0
+    }
+  },
+  "binary_full_mask": true,
+  "full_exposed_lower_and_grandma_black": true,
+  "mechanism_baseline_source_sha_unchanged": true,
+  "source120_native_accepted_sha_unchanged": true,
+  "complete_palms_max_field_error_px": [
+    0.03764630359176977,
+    0.01966357281425114
+  ],
+  "four_input_sha256": [
+    "62d04003fb480d79ce3affbbf1755841d1fc16966d66b65de245ce4b507200f5",
+    "0b78f37fb9f6572d950c6cd38ea26c36075537993ea3c13b8a4c74df81d26af5",
+    "dee35aba3b68899748f6cf432f6438561da620d78d7ff1d5abf0788b2b5252f3",
+    "44321aba483781748e8a597172d9e08259213a1dc1e4689598caffffc7c72214"
+  ]
+}

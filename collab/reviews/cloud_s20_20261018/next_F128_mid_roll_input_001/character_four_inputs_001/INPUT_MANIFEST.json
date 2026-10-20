@@ -1,0 +1,217 @@
+{
+  "status": "F128_FOUR_INPUTS_ZERO_CALL_ACTUAL_INPUT_GATE_PENDING",
+  "submitted": false,
+  "generation_authorized": false,
+  "new_image_calls": 0,
+  "raw_outputs": 0,
+  "retries": 0,
+  "frame_label_only": 128,
+  "timing": "125-131 middle flip, not132 complete",
+  "later_states_prepared": false,
+  "frozen_exposure": false,
+  "source120_commit": "63758f3229c6fdbaa02e8b8e23eec2921fa6ce3f",
+  "source120": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F120_passive_decay_input_001/generation_001/F120_uniform_registered_upper_fixed_full_lower_candidate.png",
+  "source120_sha256": "40d73e42505d5e7c83dc22d33511e5a2e4862dc35b5a4ff210e50eca8ef2bf5c",
+  "source_complete_upper_sha256": "5884e44e0891dcf927aa6dafbf576ce2fda0ece89e82800fda476d931bb6ff75",
+  "mechanism_input_baseline": "MECHANISM_INPUT_BASELINE_THIS_GATE.json",
+  "target_is_continuous_construction_only_not_native_art": true,
+  "whole_head_scale": 1,
+  "whole_head_rotation_deg": 1.5,
+  "whole_head_pivot": [
+    636.0,
+    374.0
+  ],
+  "whole_head_translation": [
+    7.0,
+    -4.0
+  ],
+  "neck_chest_shoulder_recoil": true,
+  "whole_upper_one_TPS_field": true,
+  "TPS_control_max_residual_px": 1.9677953559754497e-10,
+  "complete_palm_field_audit": [
+    {
+      "side": "R",
+      "sampled_source_palm_pixels": 3949,
+      "max_translation_residual_px": 0.03764630359176977,
+      "mean_translation_residual_px": 0.0002715510236096716
+    },
+    {
+      "side": "L",
+      "sampled_source_palm_pixels": 4047,
+      "max_translation_residual_px": 0.01966357281425114,
+      "mean_translation_residual_px": 0.00036639993290196726
+    }
+  ],
+  "bone_reference_2D_only": [
+    {
+      "side": "R",
+      "source_shoulder_elbow_wrist": [
+        [
+          546.0,
+          420.0
+        ],
+        [
+          501.0,
+          446.0
+        ],
+        [
+          442.4791910880613,
+          419.5984911398264
+        ]
+      ],
+      "target_shoulder_elbow_wrist": [
+        [
+          550.0,
+          417.0
+        ],
+        [
+          509.85646315392364,
+          450.00752110485894
+        ],
+        [
+          448.17181109272855,
+          432.2106549231189
+        ]
+      ],
+      "projected_upper_length_source_target": [
+        51.97114584074513,
+        51.971145840745116
+      ],
+      "projected_forearm_length_source_target": [
+        64.20066001063746,
+        64.20066001063745
+      ],
+      "palm_translation": [
+        5.692620004667219,
+        12.612163783292488
+      ],
+      "whole_palm_scale": 1,
+      "whole_palm_rotation_deg": 0
+    },
+    {
+      "side": "L",
+      "source_shoulder_elbow_wrist": [
+        [
+          675.0,
+          455.0
+        ],
+        [
+          646.0,
+          502.0
+        ],
+        [
+          495.61637530049626,
+          519.9053017137846
+        ]
+      ],
+      "target_shoulder_elbow_wrist": [
+        [
+          680.0,
+          453.0
+        ],
+        [
+          673.8963036097363,
+          507.8884768451037
+        ],
+        [
+          524.4376249445872,
+          532.3412431280944
+        ]
+      ],
+      "projected_upper_length_source_target": [
+        55.226805085936306,
+        55.226805085936334
+      ],
+      "projected_forearm_length_source_target": [
+        151.44581343577264,
+        151.4458134357726
+      ],
+      "palm_translation": [
+        28.82124964409104,
+        12.435941414309752
+      ],
+      "whole_palm_scale": 1,
+      "whole_palm_rotation_deg": 0
+    }
+  ],
+  "short_contacts_only_not_puppet_or_long_rods": [
+    {
+      "id": "T_H",
+      "A_full_mechanism_only": [
+        338.2626054104362,
+        291.37892098338426
+      ],
+      "B_exact": [
+        400.3988637166487,
+        402.6996190692074
+      ],
+      "short_contact_start": [
+        387.7267564678787,
+        379.99680651490763
+      ],
+      "short_contact_length_px": 26.0,
+      "external_tail_after_B_px": 0
+    },
+    {
+      "id": "T_S",
+      "A_full_mechanism_only": [
+        319.83489249979783,
+        457.5233847386403
+      ],
+      "B_exact": [
+        463.6082671920906,
+        508.76677359903914
+      ],
+      "short_contact_start": [
+        433.46560973968224,
+        498.023394162997
+      ],
+      "short_contact_length_px": 32.0,
+      "external_tail_after_B_px": 0
+    }
+  ],
+  "actual_support_foreground_RGBA_changes": 0,
+  "actual_grandma_foreground_RGBA_changes": 0,
+  "actual_visible_original_C_RGBA_changes": 0,
+  "fixed_visible_lower_RGBA_changes": 0,
+  "full_visible_legs_shoes_and_GC_mask_black": true,
+  "complete_semantic_mask_connected_head_to_whole_skirt": true,
+  "inputs": [
+    {
+      "order": 1,
+      "path": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F128_mid_roll_input_001/character_four_inputs_001/inputs/01_unique_complete_F128_target_REVIEW_ONLY.png",
+      "sha256": "62d04003fb480d79ce3affbbf1755841d1fc16966d66b65de245ce4b507200f5",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "order": 2,
+      "path": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F128_mid_roll_input_001/character_four_inputs_001/inputs/02_same_pose_dual_palms_finite_contacts_3x.png",
+      "sha256": "0b78f37fb9f6572d950c6cd38ea26c36075537993ea3c13b8a4c74df81d26af5",
+      "size": [
+        1200,
+        705
+      ]
+    },
+    {
+      "order": 3,
+      "path": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F128_mid_roll_input_001/character_four_inputs_001/inputs/03_120_identity_head_collar_cloth_shoes_patches_only.png",
+      "sha256": "dee35aba3b68899748f6cf432f6438561da620d78d7ff1d5abf0788b2b5252f3",
+      "size": [
+        1080,
+        640
+      ]
+    },
+    {
+      "order": 4,
+      "path": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F128_mid_roll_input_001/character_four_inputs_001/inputs/04_complete_upper_whole_skirt_white_full_legs_black_mask.png",
+      "sha256": "44321aba483781748e8a597172d9e08259213a1dc1e4689598caffffc7c72214",
+      "size": [
+        1672,
+        941
+      ]
+    }
+  ]
+}
