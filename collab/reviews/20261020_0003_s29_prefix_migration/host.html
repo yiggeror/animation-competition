@@ -1,0 +1,6 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="icon" href="data:,"><title>S29 limited verified prefix</title><style>html,body{margin:0;background:#111}canvas{display:block;width:100vw;height:auto}</style></head><body><canvas id="frame" width="1920" height="1080"></canvas><script type="module">
+import {renderFrameIndex,STATUS,VERIFIED_RANGE} from './js/anim/s29/index.js';
+const c=document.getElementById('frame');
+window.renderActual=async f=>{const geometry=await renderFrameIndex(c.getContext('2d'),f);return {png:c.toDataURL('image/png'),geometry};};
+window.s29Status={STATUS,VERIFIED_RANGE};window.ready=true;
+</script></body></html>
