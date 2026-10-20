@@ -1,0 +1,247 @@
+{
+  "frame": 106,
+  "status": "FIXED_S12_VISIBLE_REUSE_CONTACT_GATE_PASSED_NOT_ACTUAL_PLAYBACK",
+  "character_reuse_exact_file": "s12_f102_natural_whole_rebuild_20261020/CONSUMABLE/F102_COMPLETE_CHARACTER.png",
+  "character_sha256": "93bf8635caf24f2113813971a377a86241f61567c60b37fda52ea70c8132cfce",
+  "character_to_scene": [
+    1.1483253588516746,
+    0,
+    0,
+    1.1477151965993624,
+    0,
+    0
+  ],
+  "whole_person_or_parts_moved": false,
+  "props_canvas": [
+    1920,
+    1080
+  ],
+  "layer_order": [
+    "original106 scene",
+    "F106_TRUE_CRANE_ONLY_RGBA.png",
+    "F106_LINKED_FINITE_RODS_RGBA.png",
+    "same102 complete character"
+  ],
+  "crane_source": "/tmp/s12_hairskin_render/js/lamp/crane.js and js/puppet.js, actual makeCrane/drawPuppet via existing local native Canvas; original hinges checked <1e-7",
+  "rods": {
+    "R": {
+      "hinge_A_true106": [
+        1204.662281948088,
+        552.86871022385,
+        -13.846582652710428
+      ],
+      "same102_natural_hand_G": [
+        894.0,
+        607.0,
+        -165.85200854895731
+      ],
+      "physical_tail_B": [
+        866.0488397479901,
+        611.8703445609596,
+        -179.52836472505402
+      ],
+      "physical_length": 381.56350585940044,
+      "grip_fraction": 0.9174540736764587,
+      "grip_on_finite_segment": true,
+      "angle_from_adopted102_rod_degrees": 1.5268915592874417
+    },
+    "L": {
+      "hinge_A_true106": [
+        1381.7881055998778,
+        438.3757177690869,
+        30.36439077484931
+      ],
+      "same102_natural_hand_G": [
+        883.0,
+        435.0,
+        5.121325309175376
+      ],
+      "physical_tail_B": [
+        805.4415397592549,
+        434.47509680074904,
+        1.196185019554008
+      ],
+      "physical_length": 577.0973600937725,
+      "grip_fraction": 0.8654308625442694,
+      "grip_on_finite_segment": true,
+      "angle_from_adopted102_rod_degrees": 1.2650726584892704
+    }
+  },
+  "original_crane": {
+    "root_scene": [
+      1257.0349785135006,
+      553.0563356722453
+    ],
+    "paper_plane_inclination_degrees": 80.0,
+    "projected_roll_degrees": -1.3333333333333335,
+    "code_pose": {
+      "angles": {
+        "neck0": 1.0833333333333333,
+        "neck1": 0.08000000000000002,
+        "neck2": 0.05666666666666667,
+        "neck3": 0.033333333333333326,
+        "neck4": 0.0016666666666666618,
+        "neck5": -0.028333333333333342,
+        "neck6": -0.065,
+        "neck7": -0.09166666666666667,
+        "neck8": -0.10666666666666667,
+        "neck9": -0.11000000000000001,
+        "neck10": -0.095,
+        "neck11": -0.07166666666666668,
+        "head": -0.55,
+        "tibia_near": 0.35000000000000003,
+        "tarsus_near": -0.48333333333333345,
+        "foot_near": 0.20833333333333337,
+        "tibia_far": 0.21666666666666679,
+        "tarsus_far": -0.41666666666666685,
+        "foot_far": 0.20000000000000007
+      },
+      "rootAngle": 0,
+      "facing": 1
+    },
+    "actual_makeCrane_scale": 1.35,
+    "paper_3D_camera_basis": [
+      [
+        0.9644121557827601,
+        -0.06815744285728954
+      ],
+      [
+        -0.0762730212558958,
+        -0.996844582456848
+      ],
+      [
+        0.2531632279912453,
+        -0.04068711601462541
+      ]
+    ],
+    "mm_to_scene_scale": 0.72,
+    "rods": {
+      "R": {
+        "part": "BODY",
+        "joint_local_mm": [
+          -75.0,
+          6.0
+        ],
+        "hinge_scene": [
+          1204.662281948088,
+          552.86871022385
+        ],
+        "hinge_camera3D_scene_units": [
+          1204.662281948088,
+          552.86871022385,
+          -13.846582652710428
+        ],
+        "grip_scene": [
+          872.1715054154936,
+          628.1575309410556
+        ],
+        "grip_camera3D_scene_units": [
+          872.1715054154936,
+          628.1575309410556,
+          -162.3128555673553
+        ],
+        "free_scene": [
+          863.4717529313004,
+          630.1274926702113
+        ],
+        "free_camera3D_scene_units": [
+          863.4717529313004,
+          630.1274926702113,
+          -166.19753423446855
+        ],
+        "grip_fraction_from_hinge_unchanged": 0.9745017761505183,
+        "physical_length_H": 1.7747139807413974,
+        "physical_length_scene_units": 381.56350585940044,
+        "physical_length_camera3D_check": 381.56350585940055,
+        "projected_length_new_scene": 349.82838157566573,
+        "projected_angle_delta_degrees": 0.47872061462309884
+      },
+      "L": {
+        "part": "NECK3",
+        "joint_local_mm": [
+          189.92724531323447,
+          145.25063756769381
+        ],
+        "hinge_scene": [
+          1381.7881055998778,
+          438.3757177690869
+        ],
+        "hinge_camera3D_scene_units": [
+          1381.7881055998778,
+          438.3757177690869,
+          30.36439077484931
+        ],
+        "grip_scene": [
+          830.4232208888363,
+          446.51607641182346
+        ],
+        "grip_camera3D_scene_units": [
+          830.4232208888363,
+          446.51607641182346,
+          -8.971001189043786
+        ],
+        "free_scene": [
+          806.2161871609029,
+          446.8734693863969
+        ],
+        "free_camera3D_scene_units": [
+          806.2161871609029,
+          446.8734693863969,
+          -10.697975804901784
+        ],
+        "grip_fraction_from_hinge_unchanged": 0.957942642869746,
+        "physical_length_H": 2.6841737678780118,
+        "physical_length_scene_units": 577.0973600937725,
+        "physical_length_camera3D_check": 577.0973600937724,
+        "projected_length_new_scene": 575.6346454810302,
+        "projected_angle_delta_degrees": 2.266676333843603
+      }
+    },
+    "C110_terminal": {
+      "root_scene": [
+        1240,
+        550
+      ],
+      "paper_plane_inclination_degrees": 85
+    },
+    "legacy_frame114_not_used": true,
+    "code_human_points_used": false,
+    "true_physical_rod_3D_rotation": [
+      [
+        0.9989433534476175,
+        -0.04560125821714765,
+        -0.005718553299684026
+      ],
+      [
+        0.044959744066482135,
+        0.9954401936057852,
+        -0.0841275363216679
+      ],
+      [
+        0.009528799310759216,
+        0.08378153855766886,
+        0.9964385860556614
+      ]
+    ],
+    "camera_depth_feasible_model_not_measured": true
+  },
+  "depth_note": "same new102 hand-plane assumption; finite lengths unchanged; interior grasp and physical tails retained",
+  "limitation": "actual098102106 playback decides whether an additional body phase is necessary",
+  "character_dependency": {
+    "path": "../F102_COMPLETE_CHARACTER.png",
+    "sha256": "93bf8635caf24f2113813971a377a86241f61567c60b37fda52ea70c8132cfce",
+    "reuse_no_new_character_png": true,
+    "git_blob_sha": "31e625e909320d5365a3aa61b20be3f4e5252b92",
+    "published_commit": "4a791f3"
+  },
+  "formal_prop_consumption": "Use original scene makeCrane/drawPuppet with original_crane pose/basis/root. Native Canvas PNG is local visual reference, not a new puppet design or mandatory replacement for the scene renderer.",
+  "code_sha256": {
+    "crane_source.mjs": "212e8a4fdad764fa50928c60a8efc956ad660c62377ea1ea152433a6fea4e642",
+    "puppet_source.mjs": "04b80760b97185ab8aea7826383d85f3c9d7789cd01aa1d8664fdc74bc4c30b7"
+  },
+  "review": "Actual whole frame, 3x contacts, same-size102/106 comparison and mapping reviewed 2026-10-20 12:13 UTC",
+  "prop_reference_files": {
+    "F106_TRUE_CRANE_ONLY_RGBA.png": "original code and pose native Canvas visual reference; production use original scene renderer",
+    "F106_LINKED_FINITE_RODS_RGBA.png": "scene1920x1080 complete finite shafts; draw behind unchanged character"
+  }
+}

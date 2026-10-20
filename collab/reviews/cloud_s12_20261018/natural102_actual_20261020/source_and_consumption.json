@@ -1,0 +1,53 @@
+{
+  "102SourceCommit": "4a791f3316aab5d56d3d6d903176de3a537528a3",
+  "106SourceCommit": "3f10d080dcd196aed153b9c11129cab9eef922dd",
+  "characterSHA256": "93bf8635caf24f2113813971a377a86241f61567c60b37fda52ea70c8132cfce",
+  "sources": {
+    "sources/F102_TRUE_FINITE_RODS.png": "55389a645e4ac0f16b6ba2063ff21206d1810c06005cf1e1699af6392d583841",
+    "sources/README.md": "f4c1b8f6c085c92b85caf1f3796ac06652c394e22d794fc2d69de8bdca090336",
+    "sources/F102_COMPLETE_CHARACTER.png": "93bf8635caf24f2113813971a377a86241f61567c60b37fda52ea70c8132cfce",
+    "sources/F102_ORIGINAL_CRANE.png": "e9e4836e713e8cc4081353a71172e25a06e7f7d0d4ceb8d25edbe5089d9ed434",
+    "sources/CONSUMER_MAPPING.json": "2e9c4df1ae1ee06f863b34ea4c15ffedc0ccad19f91dc47dbdd7d3f6cc081b3e",
+    "sources/f106_continuation/README.md": "d4107cbbf2aa14d54fc4fa6b2026d08d37b26b7a6ce939341f645ac1dfdbb056",
+    "sources/f106_continuation/F106_LINKED_FINITE_RODS_RGBA.png": "77af2e9d7363ac201cdf226434efff91caa21ec4be0dddd3c271f760ebf4b095",
+    "sources/f106_continuation/F106_TRUE_CRANE_ONLY_RGBA.png": "cda6d46d23f173548010ea6507491fc4c19d82446580d668b622173c878bceb6",
+    "sources/f106_continuation/CONSUMER_MAPPING.json": "b66404b8323747cb26a044a1603b2f1382f49c11c1379a84df64aa2ae3297392"
+  },
+  "oneMapping": "1672×941→1920×1080 using character_to_scene once; no native275/112/.7",
+  "actualRenderer": "renderPaint original room/light/cam/box-front/shadow, makeCrane/drawPuppet and supplied finite3D endpoints; no referencePNG prop substitution",
+  "exposures": [
+    {
+      "drawing": 94,
+      "range": [
+        94,
+        97
+      ],
+      "reuse": "final hair/skin audio video, video frames only"
+    },
+    {
+      "drawing": 98,
+      "range": [
+        98,
+        101
+      ],
+      "reuse": "same final colour source"
+    },
+    {
+      "drawing": 102,
+      "range": [
+        102,
+        105
+      ],
+      "person": "natural93bf"
+    },
+    {
+      "drawing": 106,
+      "range": [
+        106,
+        109
+      ],
+      "person": "same natural93bf, original106 paper and finite rods"
+    }
+  ],
+  "scope": "Neighbour candidate only. Old098 shape remains a visible issue; no acceptance of body topology by reuse, no rejected106 body loaded."
+}
