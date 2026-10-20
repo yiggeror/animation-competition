@@ -7,10 +7,31 @@ const boxes={
  grandmaFloor:[[387,1010,489,1029],[501,1000,622,1019]],
  child:[[320,1140,390,1165],[614,1154,680,1176],[435,1096,493,1121],[674,1108,727,1135]]
 };
-function footprint(img,box){
+function footprint(img,box,ignoreDetachedSpeckles=false){
  const [x0,y0,x1,y1]=box.map(Math.round),w=x1-x0,h=y1-y0;
  const c=new OffscreenCanvas(w,h),x=c.getContext('2d');x.drawImage(img,-x0,-y0);
- const p=x.getImageData(0,0,w,h),a=p.data;let base=-1;
+ const p=x.getImageData(0,0,w,h),a=p.data;
+ // G095 has detached brown export speckles below the far shoe. They are not
+ // a support surface. Use the actual connected shoe in the shadow mask only;
+ // the visible artwork is left intact.
+ if(ignoreDetachedSpeckles){
+  const seen=new Uint8Array(w*h);let largest=[];
+  for(let n=0;n<w*h;n++){
+   if(seen[n]||a[n*4+3]<=128)continue;
+   const component=[n];seen[n]=1;
+   for(let q=0;q<component.length;q++){
+    const i=component[q],xx=i%w,yy=Math.floor(i/w);
+    for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++){
+     const nx=xx+dx,ny=yy+dy;if(nx<0||nx>=w||ny<0||ny>=h)continue;
+     const next=ny*w+nx;if(!seen[next]&&a[next*4+3]>128){seen[next]=1;component.push(next);}
+    }
+   }
+   if(component.length>largest.length)largest=component;
+  }
+  const keep=new Uint8Array(w*h);largest.forEach(i=>keep[i]=1);
+  for(let n=0;n<w*h;n++)if(!keep[n])a[n*4+3]=0;
+ }
+ let base=-1;
  for(let yy=h-1;yy>=0&&base<0;yy--)for(let xx=0;xx<w;xx++)if(a[(yy*w+xx)*4+3]>128){base=yy;break;}
  if(base<0)return null;
  let mass=0,cx=0;
@@ -41,7 +62,7 @@ function material(img,kind,id,nativeStoolOffset,groundedSoleRegions){
   if(groundedSoleRegions!==undefined)rects.push(...groundedSoleRegions);
   else if(!/^[CDE]_/.test(id)){const sole=walkingSoleBox(img);if(sole)rects.push(sole);}
  }
- const feet=rects.map(b=>footprint(img,b)).filter(Boolean);const value={feet};map.set(key,value);return value;
+ const feet=rects.map(b=>footprint(img,b,kind==='grandmaFloor')).filter(Boolean);const value={feet};map.set(key,value);return value;
 }
 export function groundedShadowLayers(img,M,{kind,id='',light,castAlpha=.12,nativeStoolOffset,groundedSoleRegions}){
  const {feet}=material(img,kind,id,nativeStoolOffset,groundedSoleRegions),layers=[];

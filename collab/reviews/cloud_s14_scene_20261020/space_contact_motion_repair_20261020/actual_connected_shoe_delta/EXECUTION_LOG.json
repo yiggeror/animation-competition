@@ -1,0 +1,2761 @@
+{
+  "status": "ONE_ACTUAL_SHOE_DELTA_AND_ALL_EXPOSURE_CONTACT_GEOMETRY_COMPLETE",
+  "purpose": "Only confirmed detached-shoe-speckle fix: one actual132 key, no repeated12 pair capture or96frame rerender. Full-range geometry is measured without scene rendering.",
+  "frames": [
+    {
+      "frame": 132,
+      "ground": 1,
+      "binding": {
+        "frame": 132,
+        "drawing": "X141_ADOPTED_EXPOSURE_PROPOSAL",
+        "source": "/collab/reviews/20261020_s14_cloud_handoff/s14_stool_steps_recovery_20261020/APPROVED_F141_F144_F147_PRODUCTION_HANDOFF/adopted/F141_COMPLETE.png",
+        "sourceSHA256": "1e6d5b9a794a169723b3a6462f81969d19eb5618917787a0706ea81155e3679d",
+        "shot": "originalPaintWideCameraAfterHang",
+        "wholeDrawingTransform": {
+          "sc": 0.15891769184026783,
+          "x": 459.5795306176265,
+          "y": 462.1343951571296
+        },
+        "sourceFloor": 1182.1566413870323,
+        "curtainLit": true,
+        "lightEventFrame": 132,
+        "diagnosticExposureOnly": true,
+        "backstageGrandma": {
+          "sc": 0.335,
+          "x": 466.45,
+          "y": 227.26,
+          "sourceShoeBase": 1024,
+          "roomFloor": 570.3
+        }
+      },
+      "file": "PER_FOOT_F132.png",
+      "sha256": "c1e20e9f79cc6ad48b7c33833986b59c3eca2a440fe3d288bf26cef0865fd79d",
+      "grounding": {
+        "grandmaFloor": {
+          "id": "G095",
+          "sourceScale": 0.335,
+          "light": [
+            600,
+            390
+          ],
+          "supports": [
+            {
+              "x": 614.2136472763309,
+              "y": 570.635
+            },
+            {
+              "x": 653.3218984752361,
+              "y": 567.2850000000001
+            }
+          ],
+          "footNative": [
+            [
+              441.0855142577043,
+              1025
+            ],
+            [
+              557.826562612645,
+              1015
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            0.07868711642998812,
+            0.30076937403184767
+          ]
+        },
+        "workStool": {
+          "id": "work",
+          "sourceScale": 0.335,
+          "light": [
+            600,
+            390
+          ],
+          "supports": [
+            {
+              "x": 479.1123756025464,
+              "y": 569.63
+            },
+            {
+              "x": 564.8900367850288,
+              "y": 569.2950000000001
+            },
+            {
+              "x": 494.3427720869721,
+              "y": 563.2650000000001
+            },
+            {
+              "x": 550.5772528121751,
+              "y": 563.2650000000001
+            }
+          ],
+          "footNative": [
+            [
+              370.4847032911833,
+              1178
+            ],
+            [
+              626.5374232388916,
+              1177
+            ],
+            [
+              415.9485733939466,
+              1159
+            ],
+            [
+              583.8126949617166,
+              1159
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            -0.6729812636945587,
+            -0.19582232195527605,
+            -0.6098013327159428,
+            -0.2852436856135106
+          ]
+        },
+        "child": {
+          "id": "X141_ADOPTED_EXPOSURE_PROPOSAL",
+          "sourceScale": 0.15891769184026783,
+          "light": [
+            600,
+            390
+          ],
+          "supports": [
+            {
+              "x": 507.1939246782597,
+              "y": 645.8432469244792
+            },
+            {
+              "x": 554.0368691463211,
+              "y": 647.9091769184026
+            },
+            {
+              "x": 524.5463910662635,
+              "y": 639.4865392508684
+            },
+            {
+              "x": 562.746738354551,
+              "y": 641.2346338611114
+            },
+            {
+              "x": 649.2666013395403,
+              "y": 650.451859987847
+            }
+          ],
+          "footNative": [
+            [
+              299.6166978594907,
+              1156
+            ],
+            [
+              594.3789985550259,
+              1169
+            ],
+            [
+              408.80823082893016,
+              1116
+            ],
+            [
+              649.1864218656061,
+              1127
+            ],
+            [
+              1193.6183349086966,
+              1185
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            -0.3627458470660168,
+            -0.17821440633816882,
+            -0.30243559095532996,
+            -0.1482807568085677,
+            0.18915818586144545
+          ]
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/preview.html",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/s14_tail.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/s14_scene.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/space_contact_motion_repair_20261020/ground_contact.mjs",
+      "status": 200
+    },
+    {
+      "path": "/js/paint/paintshot.js",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_0236_s14_lamp_close/integration_candidate/lamp_close.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_0236_s14_lamp_close/integration_candidate/original_lamp.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/BACKSTAGE_RETURN_132_167_EXPOSURE_PROPOSAL.json",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/G095_FIXED_DRAWN_SHEET_AND_TWO_PEGS_RGBA.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_fall_inputs/G027_upper_contact_repair/G027_complete_sheet_whole_registered.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_throw_inputs/G000_locked_complete_rigid_work_stool.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/G095_EXACT_PERSON_PIXELS_OCCLUSION_STUDY.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_s14_cloud_handoff/s14_stool_steps_recovery_20261020/APPROVED_F141_F144_F147_PRODUCTION_HANDOFF/adopted/F141_COMPLETE.png",
+      "status": 200
+    },
+    {
+      "path": "/assets/paint/bg_01_room_wide.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_fall_inputs/G027_upper_contact_repair/G027_complete_sheet_whole_registered.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/grandma_000_015/G000_whole_person_and_held_sheet_uniform.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/grandma_000_015/G003_whole_person_and_held_sheet_uniform.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/grandma_000_015/G006_whole_person_and_held_sheet_uniform.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/grandma_000_015/G009_whole_person_and_held_sheet_uniform.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/grandma_000_015/G012_whole_person_and_held_sheet_uniform.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/grandma_000_015/G015_whole_person_and_held_sheet_uniform.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_s14_cloud_handoff/s14_stage_setup_inputs_20261019_0756/grandma_fall_inputs/G018_rigid_stool_restored_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_s14_cloud_handoff/s14_stage_setup_inputs_20261019_0756/grandma_fall_inputs/G021_rigid_stool_restored_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_s14_cloud_handoff/s14_stage_setup_inputs_20261019_0756/grandma_fall_inputs/G024_rigid_stool_restored_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_s14_cloud_handoff/s14_stage_setup_inputs_20261019_0756/grandma_fall_inputs/G027_rigid_stool_restored_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_1357_s14_peg_three_locked/G030_wrist_hand_peg_corrective01_inputs/G030_complete_hand_peg_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_1357_s14_peg_three_locked/G033_G036_constant_bone_actual_030_inputs/G033_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_1357_s14_peg_three_locked/G033_G036_constant_bone_actual_030_inputs/G036_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_1456_s14_clamp_approach_eight_locked/G039_G060_complete_body_batch_inputs/G039_complete_native_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_1456_s14_clamp_approach_eight_locked/G042_G060_from_actual_G039_inputs/G042_complete_native_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_1456_s14_clamp_approach_eight_locked/G045_G060_compact_true_arm_inputs/G045_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_1456_s14_clamp_approach_eight_locked/G045_G060_compact_true_arm_inputs/G048_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_1456_s14_clamp_approach_eight_locked/G045_G060_compact_true_arm_inputs/G051_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_1456_s14_clamp_approach_eight_locked/G045_G060_compact_true_arm_inputs/G054_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_1456_s14_clamp_approach_eight_locked/G045_G060_compact_true_arm_inputs/G057_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_1456_s14_clamp_approach_eight_locked/G045_G060_compact_true_arm_inputs/G060_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2202_s14_two_clips_six_locked/G063_G069_first_clamp_inputs/G063_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2202_s14_two_clips_six_locked/G063_G069_first_clamp_inputs/G066_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2202_s14_two_clips_six_locked/G063_G069_first_clamp_inputs/G069_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2202_s14_two_clips_six_locked/G072_G095_second_clamp_inputs/G072_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2202_s14_two_clips_six_locked/G072_G095_second_clamp_inputs/G075_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2202_s14_two_clips_six_locked/G072_G095_second_clamp_inputs/G078_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G081_complete_native_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G084_complete_native_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G087_complete_native_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G090_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G093_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G095_complete_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_s14_cloud_handoff/s14_stool_steps_recovery_20261020/APPROVED_F141_F144_F147_PRODUCTION_HANDOFF/adopted/F144_COMPLETE.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_s14_cloud_handoff/s14_stool_steps_recovery_20261020/APPROVED_F141_F144_F147_PRODUCTION_HANDOFF/adopted/F147_COMPLETE.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_A_fc20c661/A_STOP_COMPLETE.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_B_95ffa1c9/B_FIND_SEAT_COMPLETE.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_C_587ea678/C_SEATED_COMPLETE.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_D_2a476d23/D_ARMS_RAISED_COMPLETE.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_E_b89ef9ad/E_FOLD_ARMS_COMPLETE.png",
+      "status": 200
+    }
+  ],
+  "fullRangeContacts": [
+    {
+      "frames": [
+        0,
+        2
+      ],
+      "id": "G000",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        3,
+        5
+      ],
+      "id": "G003",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        6,
+        8
+      ],
+      "id": "G006",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        9,
+        11
+      ],
+      "id": "G009",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        12,
+        14
+      ],
+      "id": "G012",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        15,
+        17
+      ],
+      "id": "G015",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        18,
+        20
+      ],
+      "id": "G018",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        21,
+        23
+      ],
+      "id": "G021",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        24,
+        26
+      ],
+      "id": "G024",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        27,
+        29
+      ],
+      "id": "G027",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        30,
+        32
+      ],
+      "id": "G030",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        33,
+        35
+      ],
+      "id": "G033",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        36,
+        38
+      ],
+      "id": "G036",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        39,
+        41
+      ],
+      "id": "G039",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        42,
+        44
+      ],
+      "id": "G042",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        45,
+        47
+      ],
+      "id": "G045",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        48,
+        50
+      ],
+      "id": "G048",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        51,
+        53
+      ],
+      "id": "G051",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        54,
+        56
+      ],
+      "id": "G054",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        57,
+        59
+      ],
+      "id": "G057",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        60,
+        62
+      ],
+      "id": "G060",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        63,
+        65
+      ],
+      "id": "G063",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        66,
+        68
+      ],
+      "id": "G066",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        69,
+        71
+      ],
+      "id": "G069",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        72,
+        74
+      ],
+      "id": "G072",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        75,
+        77
+      ],
+      "id": "G075",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        78,
+        80
+      ],
+      "id": "G078",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        81,
+        83
+      ],
+      "id": "G081",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        84,
+        86
+      ],
+      "id": "G084",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        87,
+        89
+      ],
+      "id": "G087",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        90,
+        92
+      ],
+      "id": "G090",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        93,
+        94
+      ],
+      "id": "G093",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        95,
+        95
+      ],
+      "id": "G095",
+      "sourceScale": 0.335,
+      "light": [
+        540,
+        468.92
+      ],
+      "supports": [
+        {
+          "x": 479.1123756025464,
+          "y": 569.63
+        },
+        {
+          "x": 564.8900367850288,
+          "y": 569.2950000000001
+        },
+        {
+          "x": 494.3427720869721,
+          "y": 563.2650000000001
+        },
+        {
+          "x": 550.5772528121751,
+          "y": 563.2650000000001
+        }
+      ],
+      "footNative": [
+        [
+          370.4847032911833,
+          1178
+        ],
+        [
+          626.5374232388916,
+          1177
+        ],
+        [
+          415.9485733939466,
+          1159
+        ],
+        [
+          583.8126949617166,
+          1159
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.604583699706619,
+        0.24797047855570367,
+        -0.4839390313533081,
+        0.11211248939715991
+      ]
+    },
+    {
+      "frames": [
+        132,
+        137
+      ],
+      "id": "X141_ADOPTED_EXPOSURE_PROPOSAL",
+      "sourceScale": 0.15891769184026783,
+      "light": [
+        600,
+        390
+      ],
+      "supports": [
+        {
+          "x": 507.1939246782597,
+          "y": 645.8432469244792
+        },
+        {
+          "x": 554.0368691463211,
+          "y": 647.9091769184026
+        },
+        {
+          "x": 524.5463910662635,
+          "y": 639.4865392508684
+        },
+        {
+          "x": 562.746738354551,
+          "y": 641.2346338611114
+        },
+        {
+          "x": 649.2666013395403,
+          "y": 650.451859987847
+        }
+      ],
+      "footNative": [
+        [
+          299.6166978594907,
+          1156
+        ],
+        [
+          594.3789985550259,
+          1169
+        ],
+        [
+          408.80823082893016,
+          1116
+        ],
+        [
+          649.1864218656061,
+          1127
+        ],
+        [
+          1193.6183349086966,
+          1185
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.3627458470660168,
+        -0.17821440633816882,
+        -0.30243559095532996,
+        -0.1482807568085677,
+        0.18915818586144545
+      ]
+    },
+    {
+      "frames": [
+        138,
+        143
+      ],
+      "id": "X144_ADOPTED_EXPOSURE_PROPOSAL",
+      "sourceScale": 0.15891769184026783,
+      "light": [
+        600,
+        390
+      ],
+      "supports": [
+        {
+          "x": 511.32578466610664,
+          "y": 645.8432469244792
+        },
+        {
+          "x": 558.1687291341681,
+          "y": 647.9091769184026
+        },
+        {
+          "x": 528.6782510541104,
+          "y": 639.4865392508684
+        },
+        {
+          "x": 566.8785983423979,
+          "y": 641.2346338611114
+        },
+        {
+          "x": 649.0739144869277,
+          "y": 649.8161892204859
+        }
+      ],
+      "footNative": [
+        [
+          325.6166978594907,
+          1156
+        ],
+        [
+          620.3789985550259,
+          1169
+        ],
+        [
+          434.80823082893016,
+          1116
+        ],
+        [
+          675.1864218656061,
+          1127
+        ],
+        [
+          1192.405840249472,
+          1181
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.346595880093988,
+        -0.16219380545371798,
+        -0.28587413637644304,
+        -0.13183453709615678,
+        0.18887935595607744
+      ]
+    },
+    {
+      "frames": [
+        144,
+        149
+      ],
+      "id": "X147_ADOPTED_EXPOSURE_PROPOSAL",
+      "sourceScale": 0.15891769184026783,
+      "light": [
+        600,
+        390
+      ],
+      "supports": [
+        {
+          "x": 515.4576446539536,
+          "y": 645.8432469244792
+        },
+        {
+          "x": 562.300589122015,
+          "y": 647.9091769184026
+        },
+        {
+          "x": 532.8101110419575,
+          "y": 639.4865392508684
+        },
+        {
+          "x": 571.010458330245,
+          "y": 641.2346338611114
+        },
+        {
+          "x": 648.7351513415699,
+          "y": 649.6572715286457
+        }
+      ],
+      "footNative": [
+        [
+          351.6166978594907,
+          1156
+        ],
+        [
+          646.3789985550259,
+          1169
+        ],
+        [
+          460.80823082893016,
+          1116
+        ],
+        [
+          701.1864218656061,
+          1127
+        ],
+        [
+          1190.2741509363755,
+          1180
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.33044591312195915,
+        -0.1461732045692671,
+        -0.26931268179755563,
+        -0.11538831738374541,
+        0.1876903005822173
+      ]
+    },
+    {
+      "frames": [
+        150,
+        155
+      ],
+      "id": "A_STOP_FROM147_MOTHER",
+      "sourceScale": 0.15891769184026783,
+      "light": [
+        600,
+        390
+      ],
+      "supports": [
+        {
+          "x": 515.4576446539536,
+          "y": 645.8432469244792
+        },
+        {
+          "x": 562.300589122015,
+          "y": 647.9091769184026
+        },
+        {
+          "x": 532.8101110419575,
+          "y": 639.4865392508684
+        },
+        {
+          "x": 571.010458330245,
+          "y": 641.2346338611114
+        },
+        {
+          "x": 633.6643733539254,
+          "y": 649.1805184531248
+        }
+      ],
+      "footNative": [
+        [
+          351.6166978594907,
+          1156
+        ],
+        [
+          646.3789985550259,
+          1169
+        ],
+        [
+          460.80823082893016,
+          1116
+        ],
+        [
+          701.1864218656061,
+          1127
+        ],
+        [
+          1095.4402918919554,
+          1177
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.33044591312195915,
+        -0.1461732045692671,
+        -0.26931268179755563,
+        -0.11538831738374541,
+        0.1298877460190508
+      ]
+    },
+    {
+      "frames": [
+        156,
+        161
+      ],
+      "id": "B_INITIAL_SEAT_EDGE_FROM147_MOTHER",
+      "sourceScale": 0.15891769184026783,
+      "light": [
+        600,
+        390
+      ],
+      "supports": [
+        {
+          "x": 515.4576446539536,
+          "y": 645.8432469244792
+        },
+        {
+          "x": 562.2881264110556,
+          "y": 647.9091769184026
+        },
+        {
+          "x": 532.8101110419575,
+          "y": 639.4865392508684
+        },
+        {
+          "x": 571.010458330245,
+          "y": 641.2346338611114
+        },
+        {
+          "x": 636.4997694594945,
+          "y": 646.7967530755208
+        }
+      ],
+      "footNative": [
+        [
+          351.6166978594907,
+          1156
+        ],
+        [
+          646.3005761288307,
+          1169
+        ],
+        [
+          460.80823082893016,
+          1116
+        ],
+        [
+          701.1864218656061,
+          1127
+        ],
+        [
+          1113.2822078720787,
+          1162
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.33044591312195915,
+        -0.1462215266612079,
+        -0.26931268179755563,
+        -0.11538831738374541,
+        0.14213485576572044
+      ]
+    },
+    {
+      "frames": [
+        162,
+        167
+      ],
+      "id": "C_SEATED_SAME147_PERSON",
+      "sourceScale": 0.15891769184026783,
+      "light": [
+        600,
+        390
+      ],
+      "supports": [
+        {
+          "x": 515.4576446539536,
+          "y": 645.8432469244792
+        },
+        {
+          "x": 562.300589122015,
+          "y": 647.9091769184026
+        },
+        {
+          "x": 532.8101110419575,
+          "y": 639.4865392508684
+        },
+        {
+          "x": 571.1013083870032,
+          "y": 641.552469244792
+        }
+      ],
+      "footNative": [
+        [
+          351.6166978594907,
+          1156
+        ],
+        [
+          646.3789985550259,
+          1169
+        ],
+        [
+          460.80823082893016,
+          1116
+        ],
+        [
+          701.7581018070033,
+          1129
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.33044591312195915,
+        -0.1461732045692671,
+        -0.26931268179755563,
+        -0.11488136729389353
+      ]
+    },
+    {
+      "frames": [
+        168,
+        196
+      ],
+      "id": "C_SEATED_SAME147_PERSON",
+      "sourceScale": 0.15891769184026783,
+      "light": [
+        600,
+        390
+      ],
+      "supports": [
+        {
+          "x": 515.4576446539536,
+          "y": 645.8432469244792
+        },
+        {
+          "x": 562.300589122015,
+          "y": 647.9091769184026
+        },
+        {
+          "x": 532.8101110419575,
+          "y": 639.4865392508684
+        },
+        {
+          "x": 571.1013083870032,
+          "y": 641.552469244792
+        }
+      ],
+      "footNative": [
+        [
+          351.6166978594907,
+          1156
+        ],
+        [
+          646.3789985550259,
+          1169
+        ],
+        [
+          460.80823082893016,
+          1116
+        ],
+        [
+          701.7581018070033,
+          1129
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.33044591312195915,
+        -0.1461732045692671,
+        -0.26931268179755563,
+        -0.11488136729389353
+      ]
+    },
+    {
+      "frames": [
+        197,
+        202
+      ],
+      "id": "D_ARMS_RAISED_SAME_C_PERSON",
+      "sourceScale": 0.15891769184026783,
+      "light": [
+        600,
+        390
+      ],
+      "supports": [
+        {
+          "x": 515.4576446539536,
+          "y": 645.8432469244792
+        },
+        {
+          "x": 562.300589122015,
+          "y": 647.9091769184026
+        },
+        {
+          "x": 532.8101110419575,
+          "y": 639.4865392508684
+        },
+        {
+          "x": 571.1314579173584,
+          "y": 641.2346338611114
+        }
+      ],
+      "footNative": [
+        [
+          351.6166978594907,
+          1156
+        ],
+        [
+          646.3789985550259,
+          1169
+        ],
+        [
+          460.80823082893016,
+          1116
+        ],
+        [
+          701.9478197044007,
+          1127
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.33044591312195915,
+        -0.1461732045692671,
+        -0.26931268179755563,
+        -0.11490669753200052
+      ]
+    },
+    {
+      "frames": [
+        203,
+        239
+      ],
+      "id": "E_FOLD_ARMS_SAME_C_PERSON",
+      "sourceScale": 0.15891769184026783,
+      "light": [
+        600,
+        390
+      ],
+      "supports": [
+        {
+          "x": 515.4576446539536,
+          "y": 645.8432469244792
+        },
+        {
+          "x": 562.300589122015,
+          "y": 647.9091769184026
+        },
+        {
+          "x": 532.8101110419575,
+          "y": 639.4865392508684
+        },
+        {
+          "x": 571.010458330245,
+          "y": 641.2346338611114
+        }
+      ],
+      "footNative": [
+        [
+          351.6166978594907,
+          1156
+        ],
+        [
+          646.3789985550259,
+          1169
+        ],
+        [
+          460.80823082893016,
+          1116
+        ],
+        [
+          701.1864218656061,
+          1127
+        ]
+      ],
+      "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+      "castSlopes": [
+        -0.33044591312195915,
+        -0.1461732045692671,
+        -0.26931268179755563,
+        -0.11538831738374541
+      ]
+    }
+  ]
+}
