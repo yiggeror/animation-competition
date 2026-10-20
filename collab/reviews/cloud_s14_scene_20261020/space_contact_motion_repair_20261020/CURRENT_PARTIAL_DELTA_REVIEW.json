@@ -53,7 +53,7 @@
   "remaining": [
     "New081/084 native repairs have now been consumed and checked in actual075–089 short clip. Old087 retract/open-peg source pose still fails its required next action; earlier4s/old081/084 diagnostics remain historical. No full dejitter or whole-scene acceptance.",
     "The old child pull has no stable support-foot phase and oldB→C still snaps to seat; original rejected10s and ABCDE10s remain rejected. Grounding improvements do not certify these motions.",
-    "BothT1 and independentT2 were output-review blocked with no raw. Both retries stopped; noT2 is available to integrate. No replacement generation here."
+    "Old blockedT1/T2 attempts had no raw and are not counted. A new successfulT1 mid-backstep source76f873c has now been tested in actual room; support phase/above-seat arrival still unresolved. T2 is separately under root/team review and not assumed seated."
   ],
   "scope": "Own review directory only; no shared js/audio/EDL or S15 edit, no full-film render, no old Blender/API/paid service, no new generation calls.",
   "nativeSwitchJudgment": {
@@ -84,5 +84,10 @@
     "newSceneFrames": 6,
     "reusedFrames": 9,
     "old087Passed": false
+  },
+  "latestChildT1Actual": {
+    "evidence": "../child_T1_actual_space_20261020/README.md",
+    "library_file_id": "libfile_37965666840481919ee43d276b615834",
+    "onlyIntermediate": true
   }
 }

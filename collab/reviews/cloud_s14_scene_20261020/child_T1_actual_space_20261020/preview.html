@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><link rel="icon" href="data:,"><canvas width="1920" height="1080"></canvas>
+<script type="module">
+import {renderTail,tailBinding} from '../s14_tail.mjs';
+import {currentGroundingReport} from '../space_contact_motion_repair_20261020/ground_contact.mjs';
+const input=await(await fetch('./SOURCE_INPUT.json')).json(),m=input.candidate,c=document.querySelector('canvas'),ctx=c.getContext('2d');
+const t1={id:'T1_BACKSTEP_INTERMEDIATE_NOT_SEATED',frame:153,through:155,path:new URL('./incoming/T1_BACKSTEP_CANDIDATE.png',import.meta.url).pathname,sha256:m.sha256,nativeToCommonScale:m.nativeToCommonScale,nativeToCommonTranslation:m.nativeToCommonTranslation,diagnosticExposureOnly:true};
+window.drawActual=async f=>{
+ if(f<150||f>155)throw Error('Only the authorized A150–152 → intermediateT1153–155 adjacency');
+ const e=f<=152?input.A:t1;
+ await renderTail(ctx,f/24,c.width,c.height,e,{backstage:true,groundFix:true});
+ return{...await tailBinding(f,e),grounding:currentGroundingReport(),meaning:f<=152?'A stopped stool':'T1 backstep mid-motion, no seat load yet'};
+};
+window.ready=true;
+</script>

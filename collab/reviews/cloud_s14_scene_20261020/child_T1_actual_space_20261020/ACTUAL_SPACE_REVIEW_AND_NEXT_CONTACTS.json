@@ -1,0 +1,182 @@
+{
+  "status": "ACTUAL_A_TO_NEW_T1_SPACE_CHECK_PARTIAL_NOT_SEAT_ARRIVAL_OR_SEATED",
+  "newT1SourceCommit": "76f873c492b35f2171141e405df315e1702a6161",
+  "sourceSHA256": "65b913c6f7b88a4efbe438b80135e5db1dffbe86c6f0abf3ceb44601de891f7e",
+  "sceneTransformOnce": {
+    "sc": 0.15891769184026783,
+    "x": 459.5795306176265,
+    "y": 462.1343951571296
+  },
+  "rawNormalizationRepeated": false,
+  "actualSequence": {
+    "A": [
+      150,
+      152
+    ],
+    "newT1": [
+      153,
+      155
+    ],
+    "frameCount": 6,
+    "fps": 24,
+    "seconds": 0.25,
+    "allocation": "Minimal diagnostic adjacency,3normal exposure frames per state. Not final exposure table for full backstep/sit."
+  },
+  "stool": {
+    "AActualFootNative": [
+      [
+        351.6166978594907,
+        1156
+      ],
+      [
+        646.3789985550259,
+        1169
+      ],
+      [
+        460.80823082893016,
+        1116
+      ],
+      [
+        701.1864218656061,
+        1127
+      ]
+    ],
+    "T1ActualFootNative": [
+      [
+        351.63900949850125,
+        1157
+      ],
+      [
+        646.5586121296687,
+        1169
+      ],
+      [
+        461.598890809565,
+        1116
+      ],
+      [
+        701.7362532730302,
+        1127
+      ]
+    ],
+    "verticalDifferenceNative": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "finding": "Same scene registration; four ground contacts differ0–1nativepx, no visible whole-stool drift with child. Stool top/wood is newly drawn rather than byte-identical, but no reason to move it or rebuild it just for1px contact variation."
+  },
+  "actorAndGrip": {
+    "finding": "Head/body stays close toA in actual same-camera images without sudden enlargement. Hand remains hooked/readable on same stool right edge while torso retreats left. Candidate is a bent-knee backstep mid-state; butt remains outside seat support, not seated.",
+    "handRegionNative": [
+      645,
+      780,
+      740,
+      856
+    ],
+    "fixedGripReference": [
+      713,
+      823
+    ]
+  },
+  "support": {
+    "AOnlyLowestSoleNative": [
+      1095.4402918919554,
+      1177
+    ],
+    "T1OnlyLowestSoleNative": [
+      989.8974021004294,
+      1148
+    ],
+    "deltaNative": [
+      -105.54288979152602,
+      -29
+    ],
+    "P1TargetNative": {
+      "x": [
+        800,
+        950
+      ],
+      "y": [
+        1160,
+        1185
+      ]
+    },
+    "aboveP1MidlineNative": 24.5,
+    "aboveP1MidlineActualScreenPixels": 6.733680426927714,
+    "finding": "Support placement/phase is not closed against the establishedP1 target: lowest new shoe is12–37nativepx above that target band. Actual background has perspective; this is a deviation from the planned landing contact, not proof that one common horizontal y defines all floor points. AO under the drawn shoe does not certify its landing or load.",
+    "rightOfP1ZoneNative": 39.89740210042942,
+    "interpretation": "This is a mid-step, not yetP1/above-seat arrival. Being outsideP1 is not itself proof of airborne anatomy; the planted point and support-transfer phase must be resolved explicitly before treating it as load-bearing. No shader shadow or universal floor-y criterion certifies that."
+  },
+  "coherentRegistrationOptionsNotApplied": {
+    "translation": {
+      "nativeDelta": [
+        0,
+        24.5
+      ],
+      "reason": "Would move the hooked hand down the same24.5px (about7screenpx) away from its present seat-edge contact; translating the compound image would also move the fixed stool."
+    },
+    "pivotRotation": {
+      "scale": 1,
+      "pivotNative": [
+        672.0,
+        798.0
+      ],
+      "angleDegrees": 4.626267268489019,
+      "hypotheticalSoleNative": [
+        960.6321331075285,
+        1172.5
+      ],
+      "illustrativeCrownPointBefore": [
+        850,
+        300
+      ],
+      "illustrativeCrownPointAfter": [
+        889.5867101160449,
+        315.9792290980853
+      ],
+      "illustrativePelvisPointBefore": [
+        845,
+        810
+      ],
+      "illustrativePelvisPointAfter": [
+        843.4684964481495,
+        823.9143729580886
+      ],
+      "reason": "A whole-person rotation around the palm could lower the shoe, but it turns the whole actor forward/right and lowers the already outside pelvis further, while changing grip surface angle. Not adopted as a backstep/seat-arrival repair. These are illustrative registration tradeoffs, not an applied pose or bone measurements."
+    },
+    "decision": "Preserve original candidate and demonstrate exact unresolved contact; no shoe pull, leg warp, head resize, stool move or cosmetic shadow proof."
+  },
+  "nextContactRequirements": [
+    "Maintain fixed original stool feet and seat N x350–724/y795–808, grip nearN713,823; do not move stool under hip.",
+    "Finish support transfer explicitly: one shoe remains on a declared fixed ground point during its weight-bearing phase; the opposite shoe may lift, then land/receive weight. Resolve current lowest shoe againstP1 actual landing choice rather than lengthening leg to the old nominal1198 line.",
+    "Continue full body back toward seat until butt is aboveN610–700/y792–810 support region (above-seat intermediate wasN620–700/y760–785); this newT1 is not there yet.",
+    "Only after above-seat arrival may knees flex/lower into initial seat load; a foot and hand assist until the seat bears weight. Then feet may relax/hang and hands collect. Do not jump thisT1 straight into oldC.",
+    "T2 elsewhere remains under root/team review; no assumed initial sit completion or importedT2 in this check."
+  ],
+  "newGenerationCalls": 0,
+  "sharedSceneOrGrandmaCodeChanged": false,
+  "S29Changed": false,
+  "preview": {
+    "file": "actual_raw/S14_A_TO_T1_RAW_ACTUAL_150_155_6F.mp4",
+    "sha256": "3821672c38f6a694e52faad375f4da74564385e63151c3a478bebc0a7c61a4c4",
+    "library_file_id": "libfile_37965666840481919ee43d276b615834",
+    "normalSpeedPlayback": {
+      "newSceneRenders": 0,
+      "clips": [
+        {
+          "file": "child_T1_actual_space_20261020/actual_raw/S14_A_TO_T1_RAW_ACTUAL_150_155_6F.mp4",
+          "ended": true,
+          "duration": 0.25,
+          "width": 1920,
+          "height": 1080,
+          "totalVideoFrames": 6,
+          "droppedVideoFrames": 0,
+          "corruptedVideoFrames": 0,
+          "mediaError": null
+        }
+      ]
+    }
+  }
+}

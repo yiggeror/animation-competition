@@ -8,7 +8,7 @@
     "Independent downward head/torso poses162/168 plus seated183/189 nods."
   ],
   "implemented": "Historical ABCDE10s was rejected. Current independent per-foot grounding/grain delta has a checked4s early preview and actual shadow examples; old pull/seat motion remains unresolved.",
-  "externalArtRequest": "BothT1/T2 blocked with no raw and stopped. Newgrandma081/084 integrated locally from9f853d79; minimumG087 complete pose repair still required fromnew084 mother. Old087 as-is actual reuse does not complete clamp; no limb warp or extra scene registration applied.",
+  "externalArtRequest": "New successfulT1 from76f873c is a published mid-backstep candidate, distinct from old blocked/no-raw attempts. ActualA→T1 space trial available; plannedP1 support transfer and above-seat arrival unresolved. T2 separately under root/team review, not adopted here. Grandma hanging isPro2 scope and untouched.",
   "storage": "Same original worktree stored under /tmp with original /workspace path preserved as symlink. All sources and rejected film retained.",
   "grandmaCandidate": {
     "status": "GRANDMA_EARLY_WHOLE_PERSON_REGISTRATION_CANDIDATE_NOT_FINAL_PASS",
@@ -388,5 +388,14 @@
     "newRenderFrames": 6,
     "reusedFrames": 9,
     "wholeSceneAccepted": false
+  },
+  "latestChildT1SpaceTrial": {
+    "status": "MID_BACKSTEP_ACTUAL_NOT_ABOVE_SEAT_OR_SEATED_SUPPORT_PHASE_UNRESOLVED",
+    "sourceCommit": "76f873c492b35f2171141e405df315e1702a6161",
+    "evidence": "child_T1_actual_space_20261020/README.md",
+    "library_file_id": "libfile_37965666840481919ee43d276b615834",
+    "newActualFrames": 6,
+    "newGenerationCalls": 0,
+    "T2Adopted": false
   }
 }

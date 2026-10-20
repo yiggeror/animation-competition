@@ -1,0 +1,22 @@
+{
+  "status": "TECHNICAL_MIME_FAILURE_BEFORE_ACTUAL_RENDER_PRESERVED",
+  "frames": [],
+  "responses": [
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/child_T1_actual_space_20261020/preview.html",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/s14_tail.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/space_contact_motion_repair_20261020/ground_contact.mjs",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "newGenerationCalls": 0,
+  "error": "page.waitForFunction: Timeout 180000ms exceeded.\n    at /tmp/s29-drawn-reference-20261019_storage/collab/reviews/cloud_s14_scene_20261020/child_T1_actual_space_20261020/capture_actual.cjs:12:159",
+  "knownCause": "Initial private capture reused project serve.cjs, which has no .mjs MIME mapping. Fixed in private capture only. No actual frame was produced."
+}
