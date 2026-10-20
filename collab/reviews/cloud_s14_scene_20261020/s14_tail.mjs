@@ -1,5 +1,6 @@
 // Existing S14 tail drawings in the original painted wide shot. No S15 edits.
 import {renderPaint,loadImg} from '/js/paint/paintshot.js';
+import {groundedShadowLayers} from './space_contact_motion_repair_20261020/ground_contact.mjs';
 let rows;
 async function exposure(f){rows??=await(await fetch(new URL('./published_child_tail_exposures.json',import.meta.url))).json();return rows.find(e=>f>=e.frame&&f<=e.through);}
 async function image(path){const im=await loadImg(path);if(!im)throw Error('Missing S14 tail source '+path);return im;}
@@ -42,14 +43,18 @@ export async function renderTail(ctx,t,W,H,forcedExposure=null,options={}){
  const binding=e?await tailBinding(f,e):null;
  // The post-hang material/light descriptions retain the original S14 pass.
  // Curtain gain starts at the approved5.5-second return, not old5.0 seconds.
- const gain=f>=132?1:0;
+ const gain=f>=132?1:0,fix=options.groundFix!==false;
+ const lightPos=gain?[LAMP[0],LAMP[1]+60]:[520,520];
  await renderPaint(ctx,t,W,H,{
   bg,size:[1672,941],
   layers:()=>[
-   ...(grandma?[options.showUncoveredGrandma?{img:grandma.source,...BACKSTAGE_GRANDMA}:{img:grandma.occluded,x:0,y:0,sc:1,contact:{a:.32,blur:3,sy:-.07,skew:.4,base:BACKSTAGE_GRANDMA.roomFloor}}]:[]),
+   ...(fix&&grandma?groundedShadowLayers(grandma.source,BACKSTAGE_GRANDMA,{kind:'grandmaFloor',id:'G095',light:lightPos}):[]),
+   ...(fix?groundedShadowLayers(workStool,GM,{kind:'workStool',id:'work',light:lightPos}):[]),
+   ...(fix&&child?groundedShadowLayers(child,binding.wholeDrawingTransform,{kind:'child',id:e.id,light:lightPos,nativeStoolOffset:e.nativeStoolOffset,groundedSoleRegions:e.groundedSoleRegions}):[]),
+   ...(grandma?[options.showUncoveredGrandma?{img:grandma.source,...BACKSTAGE_GRANDMA}:{img:grandma.occluded,x:0,y:0,sc:1,...(!fix?{contact:{a:.32,blur:3,sy:-.07,skew:.4,base:BACKSTAGE_GRANDMA.roomFloor}}:{})}]:[]),
    ...(!options.showUncoveredGrandma?[{img:cloth,...GM}]:[]),
-   {img:workStool,...GM,contact:{a:.4,blur:4,sy:-.07,skew:.4,base:1180}},
-   ...(child?[{img:child,...binding.wholeDrawingTransform,contact:{a:.4,blur:4,sy:-.07,skew:.4,base:binding.sourceFloor}}]:[])
+   {img:workStool,...GM,...(!fix?{contact:{a:.4,blur:4,sy:-.07,skew:.4,base:1180}}:{})},
+   ...(child?[{img:child,...binding.wholeDrawingTransform,...(!fix?{contact:{a:.4,blur:4,sy:-.07,skew:.4,base:binding.sourceFloor}}:{})}]:[])
   ],
   light:()=>({ambient:[.022,.026,.044],lights:[
    {x:520,y:520,r:900*fl(t),color:[1,.62,.30],i:.75*(1-gain),falloff:2},

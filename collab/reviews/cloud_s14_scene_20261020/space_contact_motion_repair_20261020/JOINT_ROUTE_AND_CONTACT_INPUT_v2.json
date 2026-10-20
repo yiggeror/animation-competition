@@ -1,0 +1,213 @@
+{
+  "status": "TEAM_ALIGNED_ROUTE_V2_GROUND_INPUT_RELEASED_TO_ORIGINAL_ARTIST",
+  "scope": "Same S14 ten seconds, same camera/event132 and story. Scene coordinates/force chain only, not3D skeleton or head-size acceptance.",
+  "nativeMotherCanvas": [
+    1500,
+    1254
+  ],
+  "nativeToRoom": {
+    "scale": 0.15891769184026783,
+    "translation": [
+      459.5795306176265,
+      462.1343951571296
+    ]
+  },
+  "stoolFinal": {
+    "sameRigidOriginal147": true,
+    "seatTopRegion": [
+      350,
+      795,
+      724,
+      808
+    ],
+    "fixedPullGrabPoint": [
+      713,
+      823
+    ],
+    "afterStopPalmBraceNear": [
+      700,
+      800
+    ],
+    "afterBackstepPalmBraceFar": [
+      620,
+      800
+    ],
+    "feetNative": {
+      "front_left": [
+        351,
+        1152
+      ],
+      "front_right": [
+        646,
+        1166
+      ],
+      "back_left": [
+        463,
+        1113
+      ],
+      "back_right": [
+        699,
+        1125
+      ]
+    },
+    "feetRoom": {
+      "front_left": [
+        515.36,
+        645.208
+      ],
+      "front_right": [
+        562.24,
+        647.432
+      ],
+      "back_left": [
+        533.158,
+        639.01
+      ],
+      "back_right": [
+        570.663,
+        640.917
+      ]
+    },
+    "sourceFloorRule": "Use each actual foot-bottom boundary, not nominal1198. Different y values are perspective positions on the same floor, not different physical floor heights."
+  },
+  "pullConstraint": {
+    "stoolRootNativeX": [
+      {
+        "frame": 132,
+        "x": -52
+      },
+      {
+        "frame": 140,
+        "x": -26
+      },
+      {
+        "frame": 149,
+        "x": 0
+      }
+    ],
+    "stoolRootNativeY": 0,
+    "weightBearingNearSoleZone": [
+      1090,
+      1160,
+      1230,
+      1190
+    ],
+    "personRootRule": "No whole person+stool co-translation. Weight-bearing sole remains fixed while real elbow retracts; body may lean slightly but may not advance with stool. Artist to confirm the pose reach from original147 body.",
+    "handRule": "Hand contact=stool rigid grab713,823 plus current stool dx. No hand sliding along wood or detached thumb contour.",
+    "actualExisting132NearSoleReference": [
+      1194,
+      1185
+    ]
+  },
+  "seatConstraint": {
+    "currentBad156": "Butt/hip remains ahead of seat; do not assign seat weight to current B.",
+    "backstepLandingSoleZone": [
+      800,
+      1160,
+      950,
+      1185
+    ],
+    "weightTransfer": "Near sole supports first; back foot must visibly land and take weight before the near foot lifts. No both-foot slide.",
+    "aboveSeatPelvisTargetZone": [
+      680,
+      730,
+      735,
+      770
+    ],
+    "aboveSeatLowestButtTargetZone": [
+      620,
+      760,
+      700,
+      785
+    ],
+    "finalButtLoadZone": [
+      610,
+      792,
+      700,
+      810
+    ],
+    "chairHighEnoughToRequireSupport": "Follow team route: planted support then backstep/pivot, hip over seat, knee bend and first seat load while foot assists, then feet relax. If a distant fixed foot makes reach impossible, transfer support to the backstepped foot; do not stretch legs. A hand on the locked seat can share load, not an unshown unsupported jump.",
+    "finalFeet": "C natural hanging feet may remain only after seat bears weight. No shoe-floor contact shadow is added to hanging feet.",
+    "pathRule": "These are contact zones for artist alignment, not a command to slide an existing complete body across the floor."
+  },
+  "proposedReturnExposure": [
+    {
+      "frames": [
+        132,
+        149
+      ],
+      "count": 18,
+      "stage": "Rightward stool pull; support sole fixed within each weight phase, real grip follows rigid wood."
+    },
+    {
+      "frames": [
+        150,
+        152
+      ],
+      "count": 3,
+      "stage": "Stool stops; both feet absorb motion; no continued stool drift."
+    },
+    {
+      "frames": [
+        153,
+        161
+      ],
+      "count": 9,
+      "stage": "One foot supports while other steps/pivots left-back, lands and receives weight; butt moves above locked seat. T1 is above-seat, not seated."
+    },
+    {
+      "frames": [
+        162,
+        173
+      ],
+      "count": 12,
+      "stage": "Knees flex and butt lowers; T2 initial real seat load while foot still assists. Seat load must occur before foot unweights."
+    },
+    {
+      "frames": [
+        174,
+        181
+      ],
+      "count": 8,
+      "stage": "Fully seated, feet relax/hang naturally; hands collect only after support is secure."
+    },
+    {
+      "frames": [
+        182,
+        203
+      ],
+      "count": 22,
+      "stage": "Stable C-family seated gaze; preserve completed seat load, no head nod."
+    },
+    {
+      "frames": [
+        204,
+        209
+      ],
+      "count": 6,
+      "stage": "D arm collection after stable sitting."
+    },
+    {
+      "frames": [
+        210,
+        239
+      ],
+      "count": 30,
+      "stage": "E folded-arms watching hold."
+    }
+  ],
+  "reusableAndMissing": {
+    "preserve": "Existing final C/D/E complete mother family and same rigid stool are references/endpoints. Their support zones must be confirmed against this common canvas.",
+    "oldDrag": "141/144/147 supply costume/grip references, but original coupled rightward co-motion is not an adopted pull path.",
+    "trueMissing": "Minimum complete T1: butt already above seat but not seated, with explicit backstep/weight transfer. T2: butt first loaded on seat while a foot still assists. A/B/C may be repaired as needed; do not preserve their bad contact geometry.",
+    "notAWholeShotRedrawOrder": true
+  },
+  "sceneOwnerIndependentFixes": [
+    "Tight per-foot actual-alpha contact shadows at actual sole/wood foot boundary; cast away from existing lamp",
+    "Remove excessive temporal grain shimmer separately from source-drawing body wobble",
+    "Keep unaffected096–131 close and S15 paused"
+  ],
+  "artistResponseNeeded": "These fixed scene contacts now release the native work. Original artist aligns staged support and chooses reachable sole placement within floor zones, then returns the exact points with T1/T2. No root-by-root approval or further3D model needed.",
+  "nativeCoordinateMeaning": "1500x1254 same147 mother; contact regions/picture-space floor targets, not a new3D skeleton. Original artist may choose reachable shoe point inside indicated ground zone, then keep that chosen point fixed during its support phase.",
+  "phaseBudgetNotSingleDrawingHolds": true
+}

@@ -3,6 +3,7 @@ import {renderPaint,loadImg} from '/js/paint/paintshot.js';
 import {makeLampClose,exposureAt,VIEW} from '../20261020_0236_s14_lamp_close/integration_candidate/lamp_close.mjs';
 import {lamp,flameShape} from '../20261020_0236_s14_lamp_close/integration_candidate/original_lamp.mjs';
 import {renderTail,tailBinding} from './s14_tail.mjs';
+import {groundedShadowLayers} from './space_contact_motion_repair_20261020/ground_contact.mjs';
 
 export const DURATION=10,FPS=24;
 export const CLOSE_BACKGROUND=Object.freeze({
@@ -50,23 +51,27 @@ function originalBoxLamp(){
   boxLamp=new OffscreenCanvas(1672,941);const c=boxLamp.getContext('2d');
   c.translate(540,487);c.scale(.08,.08);lamp(c,0,true,true);return boxLamp;
 }
-async function renderGrandmaWide(ctx,t,W,H,e){
+async function renderGrandmaWide(ctx,t,W,H,e,options={}){
   const bg=await requiredImage(CLOSE_BACKGROUND.asset),drawing=await requiredImage(e.path);
-  await renderPaint(ctx,t,W,H,{
+  const fix=options.groundFix!==false;
+  // Callbacks retain actual t; the render argument only controls temporal grain seed.
+  const grainTime=options.stableGrain===false?t:0;
+  await renderPaint(ctx,grainTime,W,H,{
     bg,size:[1672,941],layers:()=>[
+      ...(fix?groundedShadowLayers(drawing,GRANDMA_TO_ROOM,{kind:'grandmaWide',id:e.id,light:[540,487-226*.08]}):[]),
       {img:originalBoxLamp(),x:0,y:0,sc:1},
-      {img:drawing,...GRANDMA_TO_ROOM,contact:{a:.4,blur:4,sy:-.07,skew:.4,base:1180}}
+      {img:drawing,...GRANDMA_TO_ROOM,...(!fix?{contact:{a:.4,blur:4,sy:-.07,skew:.4,base:1180}}:{})}
     ],
     light:()=>({ambient:[.022,.026,.044],lights:[{x:540,y:487-226*.08,r:900,color:[1,.62,.30],i:.75,falloff:2}],exposure:1,vignette:.5,grain:7}),
     emit:x=>flameShape(x,[540,487-226*.08],.06,5.8),
     cam:()=>({x:640+20*(t/10)**2*(3-2*t/10),y:430,fit:1.45+.08*(t/10)**2*(3-2*t/10)})
   });
 }
-export async function renderFrame(ctx,t,W,H){
+export async function renderFrame(ctx,t,W,H,options={}){
   if(await close(ctx,t,W,H))return;
-  if(Math.floor(t*24+1e-6)>=168&&await renderTail(ctx,t,W,H))return;
+  if(Math.floor(t*24+1e-6)>=168&&await renderTail(ctx,t,W,H,null,options))return;
   const f=Math.floor(t*24+1e-6),e=await grandmaBinding(f);
-  if(e){await renderGrandmaWide(ctx,t,W,H,e);return;}
+  if(e){await renderGrandmaWide(ctx,t,W,H,e,options);return;}
   throw Error('S14 frame '+Math.floor(t*24+1e-6)+' not yet bound to published complete character mapping. No old candidate substitution.');
 }
 export async function frameBinding(f){

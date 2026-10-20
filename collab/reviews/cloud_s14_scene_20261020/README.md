@@ -1,3 +1,7 @@
+# S14 再次被用户否决：空间支撑／拖凳落坐／奶奶抖动优先修
+
+此前“三项原问题未再现”结论撤回。3d7e4ba2…十秒片保留为被否决历史，不可标ready或接声；S15 E候选暂停。新工作在`space_contact_motion_repair_20261020/`，先完成真实地面/抓沿/支撑脚/髋到座面的共同方案，并独立修明确接影和过抖。
+
 # S14 ABCDE 10秒修正候选：S15首段旧体量切口待协调
 
 当前实际新片：`repair_user_rejection_20261020/S14_ABCDE_REPAIR_240F_10S.mp4`，240帧／10秒／1920×1080／24fps／静音，SHA256 `3d7e4ba2ce24b429d370ff8ebc2d63e66d67674ea9e74d5757b11c48f10cf278`。Library `libfile_df8baff37f6c81919bc535d2aba83fa3`。

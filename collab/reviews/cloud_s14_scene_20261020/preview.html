@@ -9,11 +9,12 @@ const trialFile=p.get('backstage')==='1'&&p.get('steps')==='1'?'./BACKSTAGE_RETU
 const trial=trialFile?await(await fetch(trialFile)).json():null;
 window.measureBackstageOcclusion=measureBackstageOcclusion;
 window.drawActualFrame=async f=>{
- const backstage=p.get('backstage')==='1',options={backstage,showUncoveredGrandma:p.get('uncovered')==='1'};
+ const backstage=p.get('backstage')==='1',options={backstage,showUncoveredGrandma:p.get('uncovered')==='1',groundFix:p.get('ground')!=='0',stableGrain:p.get('grain')!=='animated'};
  if(backstage&&!trial&&f>=132&&f<=140){await renderTail(ctx,f/24,canvas.width,canvas.height,null,options);return{frame:f,drawing:'NO_CHILD_OCCLUSION_DIAGNOSTIC_ONLY',shot:'originalWideBackstageOcclusionStudy',grandma:BACKSTAGE_GRANDMA,curtainLit:true,newDrawing:false};}
  if(trial){const e=trial.trialRows.find(e=>f>=e.frame&&f<=e.through);if(e){await renderTail(ctx,f/24,canvas.width,canvas.height,e,options);return{...await tailBinding(f,e),...(backstage?{backstageGrandma:BACKSTAGE_GRANDMA}:{})};}if(!(p.get('steps')==='1'&&f>=168))throw Error('Outside explicit trial range');}
  if(backstage&&f>=168){await renderTail(ctx,f/24,canvas.width,canvas.height,null,options);return{...await tailBinding(f),backstageGrandma:BACKSTAGE_GRANDMA};}
- await renderFrame(ctx,f/24,canvas.width,canvas.height);return frameBinding(f);
+ await renderFrame(ctx,f/24,canvas.width,canvas.height,options);return frameBinding(f);
 };
+window.groundingReport=(await import('./space_contact_motion_repair_20261020/ground_contact.mjs')).currentGroundingReport;
 window.ready=true;
 </script>

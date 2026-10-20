@@ -1,0 +1,207 @@
+{
+  "status": "PROPOSED_FOR_ORIGINAL_ARTIST_JOINT_ALIGNMENT_NOT_FROZEN_NO_NEW_IMAGE_CALLS",
+  "scope": "Same S14 ten seconds, same camera/event132 and story. Scene coordinates/force chain only, not3D skeleton or head-size acceptance.",
+  "nativeMotherCanvas": [
+    1500,
+    1254
+  ],
+  "nativeToRoom": {
+    "scale": 0.15891769184026783,
+    "translation": [
+      459.5795306176265,
+      462.1343951571296
+    ]
+  },
+  "stoolFinal": {
+    "sameRigidOriginal147": true,
+    "seatTopRegion": [
+      350,
+      795,
+      724,
+      808
+    ],
+    "fixedPullGrabPoint": [
+      713,
+      823
+    ],
+    "afterStopPalmBraceNear": [
+      700,
+      800
+    ],
+    "afterBackstepPalmBraceFar": [
+      620,
+      800
+    ],
+    "feetNative": {
+      "front_left": [
+        351,
+        1152
+      ],
+      "front_right": [
+        646,
+        1166
+      ],
+      "back_left": [
+        463,
+        1113
+      ],
+      "back_right": [
+        699,
+        1125
+      ]
+    },
+    "feetRoom": {
+      "front_left": [
+        515.36,
+        645.208
+      ],
+      "front_right": [
+        562.24,
+        647.432
+      ],
+      "back_left": [
+        533.158,
+        639.01
+      ],
+      "back_right": [
+        570.663,
+        640.917
+      ]
+    },
+    "sourceFloorRule": "Use each actual foot-bottom boundary, not nominal1198. Different y values are perspective positions on the same floor, not different physical floor heights."
+  },
+  "pullConstraint": {
+    "stoolRootNativeX": [
+      {
+        "frame": 132,
+        "x": -52
+      },
+      {
+        "frame": 140,
+        "x": -26
+      },
+      {
+        "frame": 149,
+        "x": 0
+      }
+    ],
+    "stoolRootNativeY": 0,
+    "weightBearingNearSoleZone": [
+      1105,
+      1170,
+      1145,
+      1180
+    ],
+    "personRootRule": "No whole person+stool co-translation. Weight-bearing sole remains fixed while real elbow retracts; body may lean slightly but may not advance with stool. Artist to confirm the pose reach from original147 body.",
+    "handRule": "Hand contact=stool rigid grab713,823 plus current stool dx. No hand sliding along wood or detached thumb contour."
+  },
+  "seatConstraint": {
+    "currentBad156": "Butt/hip remains ahead of seat; do not assign seat weight to current B.",
+    "backstepLandingSoleZone": [
+      825,
+      1163,
+      875,
+      1173
+    ],
+    "weightTransfer": "Near sole supports first; back foot must visibly land and take weight before the near foot lifts. No both-foot slide.",
+    "aboveSeatPelvisTargetZone": [
+      680,
+      730,
+      735,
+      770
+    ],
+    "aboveSeatLowestButtTargetZone": [
+      620,
+      760,
+      690,
+      785
+    ],
+    "finalButtLoadZone": [
+      610,
+      792,
+      700,
+      810
+    ],
+    "chairHighEnoughToRequireSupport": "Do not keep a distant planted foot and stretch the leg to reach these hip coordinates. After backstep, both palms brace the locked seat and support a small hip lift; feet may unweight naturally. Hips/butt must be above the seat before lowering.",
+    "finalFeet": "C natural hanging feet may remain only after seat bears weight. No shoe-floor contact shadow is added to hanging feet.",
+    "pathRule": "These are contact zones for artist alignment, not a command to slide an existing complete body across the floor."
+  },
+  "proposedReturnExposure": [
+    {
+      "frames": [
+        132,
+        149
+      ],
+      "count": 18,
+      "stage": "Actual pull with fixed planted sole and fixed hand/wood grip; rigid stool moves fromdx−52to0"
+    },
+    {
+      "frames": [
+        150,
+        155
+      ],
+      "count": 6,
+      "stage": "Stool stops; grip rolls/releases to palm-on-seat, no continued stool drift"
+    },
+    {
+      "frames": [
+        156,
+        167
+      ],
+      "count": 12,
+      "stage": "Visible backstep and weight transfer to back foot; hips approach seat rather than already sitting"
+    },
+    {
+      "frames": [
+        168,
+        173
+      ],
+      "count": 6,
+      "stage": "Both palms brace; butt moves above actual seat, brief arm-supported lift if high stool requires it"
+    },
+    {
+      "frames": [
+        174,
+        185
+      ],
+      "count": 12,
+      "stage": "Lower butt onto seat; seat receives weight before supporting foot unweights"
+    },
+    {
+      "frames": [
+        186,
+        203
+      ],
+      "count": 18,
+      "stage": "C-like stable seated gaze; hands move to knees after body is supported"
+    },
+    {
+      "frames": [
+        204,
+        209
+      ],
+      "count": 6,
+      "stage": "D collects arms, keeping seated body/stool support"
+    },
+    {
+      "frames": [
+        210,
+        239
+      ],
+      "count": 30,
+      "stage": "E naturally crosses arms and watches; no unrelated head nod"
+    }
+  ],
+  "reusableAndMissing": {
+    "preserve": "Existing final C/D/E complete mother family and same rigid stool are references/endpoints. Their support zones must be confirmed against this common canvas.",
+    "oldDrag": "141/144/147 supply costume/grip references, but original coupled rightward co-motion is not an adopted pull path.",
+    "trueMissing": "A real planted-foot pulling elbow change if current source cannot meet fixed sole+rigid grip; a visible backstep/weight-transfer pose; above-seat/palm-supported hip stage. Confirm these with original author before choosing minimum new poses.",
+    "notAWholeShotRedrawOrder": true
+  },
+  "sceneOwnerIndependentFixes": [
+    "Tight per-foot actual-alpha contact shadows at actual sole/wood foot boundary; cast away from existing lamp",
+    "Remove excessive temporal grain shimmer separately from source-drawing body wobble",
+    "Keep unaffected096–131 close and S15 paused"
+  ],
+  "artistResponseNeeded": "Align the staged support diagram to these final stool/ground/grip zones; correct any unreachable pose zones using the same mother without limb stretch. No native generation until the route agrees."
+}

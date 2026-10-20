@@ -1,0 +1,1235 @@
+{
+  "status": "ACTUAL_SHADOW_PAIRS_COMPLETE_PENDING_VISUAL_CONTACT_REVIEW",
+  "purpose": "Same actual frame/camera/light/source; only ground-contact mode changes. Early grain held stable in both modes to isolate shadow.",
+  "frames": [
+    {
+      "frame": 0,
+      "ground": 0,
+      "binding": {
+        "frame": 0,
+        "drawing": "G000",
+        "source": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/grandma_000_015/G000_whole_person_and_held_sheet_uniform.png",
+        "sourceSHA256": "caf0dcbfc002046e2cf10e7e5069d42caf5a65b8b6d5048660f53578e7e8bc1b",
+        "shot": "originalPaintWideCamera",
+        "wholeDrawingTransform": {
+          "x": 355,
+          "y": 175,
+          "sc": 0.335
+        },
+        "curtainLit": false
+      },
+      "file": "OLD_NOMINAL_F000.png",
+      "sha256": "12c7bf5e9b55afaf5694176849f88ef25e8ec23b694700885fc0f2b127bda3f8",
+      "grounding": {}
+    },
+    {
+      "frame": 81,
+      "ground": 0,
+      "binding": {
+        "frame": 81,
+        "drawing": "G081",
+        "source": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G081_complete_native_registered_candidate.png",
+        "sourceSHA256": "80d51097d37d674d141711f3bd59247403299c5970ff1c40f0c18d72caf7dbb5",
+        "shot": "originalPaintWideCamera",
+        "wholeDrawingTransform": {
+          "x": 355,
+          "y": 175,
+          "sc": 0.335
+        },
+        "curtainLit": false
+      },
+      "file": "OLD_NOMINAL_F081.png",
+      "sha256": "ccd962331be28b34fcb558d18bebee1c526991473a2296a73ff7f60cc0c9ab75",
+      "grounding": {}
+    },
+    {
+      "frame": 132,
+      "ground": 0,
+      "binding": {
+        "frame": 132,
+        "drawing": "X141_ADOPTED_EXPOSURE_PROPOSAL",
+        "source": "/collab/reviews/20261020_s14_cloud_handoff/s14_stool_steps_recovery_20261020/APPROVED_F141_F144_F147_PRODUCTION_HANDOFF/adopted/F141_COMPLETE.png",
+        "sourceSHA256": "1e6d5b9a794a169723b3a6462f81969d19eb5618917787a0706ea81155e3679d",
+        "shot": "originalPaintWideCameraAfterHang",
+        "wholeDrawingTransform": {
+          "sc": 0.15891769184026783,
+          "x": 459.5795306176265,
+          "y": 462.1343951571296
+        },
+        "sourceFloor": 1182.1566413870323,
+        "curtainLit": true,
+        "lightEventFrame": 132,
+        "diagnosticExposureOnly": true,
+        "backstageGrandma": {
+          "sc": 0.335,
+          "x": 466.45,
+          "y": 227.26,
+          "sourceShoeBase": 1024,
+          "roomFloor": 570.3
+        }
+      },
+      "file": "OLD_NOMINAL_F132.png",
+      "sha256": "bb0a4d6b109a9058e8cc3a711c50036f4e2397f4c447c1a6b5a5f184722a044d",
+      "grounding": {}
+    },
+    {
+      "frame": 156,
+      "ground": 0,
+      "binding": {
+        "frame": 156,
+        "drawing": "B_INITIAL_SEAT_EDGE_FROM147_MOTHER",
+        "source": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_B_95ffa1c9/B_FIND_SEAT_COMPLETE.png",
+        "sourceSHA256": "687b5a17192d7651d4822629fda3dc263b05d0822549697a28544945881f4816",
+        "shot": "originalPaintWideCameraAfterHang",
+        "wholeDrawingTransform": {
+          "sc": 0.15891769184026783,
+          "x": 459.5795306176265,
+          "y": 462.1343951571296
+        },
+        "sourceFloor": 1182.1566413870323,
+        "curtainLit": true,
+        "lightEventFrame": 132,
+        "diagnosticExposureOnly": false,
+        "backstageGrandma": {
+          "sc": 0.335,
+          "x": 466.45,
+          "y": 227.26,
+          "sourceShoeBase": 1024,
+          "roomFloor": 570.3
+        }
+      },
+      "file": "OLD_NOMINAL_F156.png",
+      "sha256": "de819ed3114402044dcebe7ba71563d62abb272f805fb15badd69424ae27fd3d",
+      "grounding": {}
+    },
+    {
+      "frame": 162,
+      "ground": 0,
+      "binding": {
+        "frame": 162,
+        "drawing": "C_SEATED_SAME147_PERSON",
+        "source": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_C_587ea678/C_SEATED_COMPLETE.png",
+        "sourceSHA256": "c046100d91b59b40715747df93c4dda01f19f123246f8c9baa0de8aab5e71209",
+        "shot": "originalPaintWideCameraAfterHang",
+        "wholeDrawingTransform": {
+          "sc": 0.15891769184026783,
+          "x": 459.5795306176265,
+          "y": 462.1343951571296
+        },
+        "sourceFloor": 1182.1566413870323,
+        "curtainLit": true,
+        "lightEventFrame": 132,
+        "diagnosticExposureOnly": false,
+        "backstageGrandma": {
+          "sc": 0.335,
+          "x": 466.45,
+          "y": 227.26,
+          "sourceShoeBase": 1024,
+          "roomFloor": 570.3
+        }
+      },
+      "file": "OLD_NOMINAL_F162.png",
+      "sha256": "aa835c23ccbb2134cca422838bad4107241753112e9c6083483c25722d8556b6",
+      "grounding": {}
+    },
+    {
+      "frame": 239,
+      "ground": 0,
+      "binding": {
+        "frame": 239,
+        "drawing": "E_FOLD_ARMS_SAME_C_PERSON",
+        "source": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_E_b89ef9ad/E_FOLD_ARMS_COMPLETE.png",
+        "sourceSHA256": "7d7b25445944a394485699fdbba68fc4ccfdbd756d8f97ce779ba51b8c4f40ff",
+        "shot": "originalPaintWideCameraAfterHang",
+        "wholeDrawingTransform": {
+          "sc": 0.15891769184026783,
+          "x": 459.5795306176265,
+          "y": 462.1343951571296
+        },
+        "sourceFloor": 1182.1566413870323,
+        "curtainLit": true,
+        "lightEventFrame": 132,
+        "diagnosticExposureOnly": false,
+        "backstageGrandma": {
+          "sc": 0.335,
+          "x": 466.45,
+          "y": 227.26,
+          "sourceShoeBase": 1024,
+          "roomFloor": 570.3
+        }
+      },
+      "file": "OLD_NOMINAL_F239.png",
+      "sha256": "323245a64dab3b85b6528d158820dc5ec3fee590c5225907e087c3621f76ca85",
+      "grounding": {}
+    },
+    {
+      "frame": 0,
+      "ground": 1,
+      "binding": {
+        "frame": 0,
+        "drawing": "G000",
+        "source": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/grandma_000_015/G000_whole_person_and_held_sheet_uniform.png",
+        "sourceSHA256": "caf0dcbfc002046e2cf10e7e5069d42caf5a65b8b6d5048660f53578e7e8bc1b",
+        "shot": "originalPaintWideCamera",
+        "wholeDrawingTransform": {
+          "x": 355,
+          "y": 175,
+          "sc": 0.335
+        },
+        "curtainLit": false
+      },
+      "file": "PER_FOOT_F000.png",
+      "sha256": "d927b68a5206dc8a585852b522bb57f8e2f64b672d63678080f65ff56392eec6",
+      "grounding": {
+        "grandmaWide": {
+          "id": "G000",
+          "sourceScale": 0.335,
+          "light": [
+            540,
+            468.92
+          ],
+          "supports": [
+            {
+              "x": 479.1123756025464,
+              "y": 569.63
+            },
+            {
+              "x": 564.8900367850288,
+              "y": 569.2950000000001
+            },
+            {
+              "x": 494.3427720869721,
+              "y": 563.2650000000001
+            },
+            {
+              "x": 550.5772528121751,
+              "y": 563.2650000000001
+            }
+          ],
+          "footNative": [
+            [
+              370.4847032911833,
+              1178
+            ],
+            [
+              626.5374232388916,
+              1177
+            ],
+            [
+              415.9485733939466,
+              1159
+            ],
+            [
+              583.8126949617166,
+              1159
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            -0.604583699706619,
+            0.24797047855570367,
+            -0.4839390313533081,
+            0.11211248939715991
+          ]
+        }
+      }
+    },
+    {
+      "frame": 81,
+      "ground": 1,
+      "binding": {
+        "frame": 81,
+        "drawing": "G081",
+        "source": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G081_complete_native_registered_candidate.png",
+        "sourceSHA256": "80d51097d37d674d141711f3bd59247403299c5970ff1c40f0c18d72caf7dbb5",
+        "shot": "originalPaintWideCamera",
+        "wholeDrawingTransform": {
+          "x": 355,
+          "y": 175,
+          "sc": 0.335
+        },
+        "curtainLit": false
+      },
+      "file": "PER_FOOT_F081.png",
+      "sha256": "59c909bec76b3c324c17f758c71deaa53fd5e93490857a8c5e169c7ccd50301e",
+      "grounding": {
+        "grandmaWide": {
+          "id": "G081",
+          "sourceScale": 0.335,
+          "light": [
+            540,
+            468.92
+          ],
+          "supports": [
+            {
+              "x": 479.1123756025464,
+              "y": 569.63
+            },
+            {
+              "x": 564.8900367850288,
+              "y": 569.2950000000001
+            },
+            {
+              "x": 494.3427720869721,
+              "y": 563.2650000000001
+            },
+            {
+              "x": 550.5772528121751,
+              "y": 563.2650000000001
+            }
+          ],
+          "footNative": [
+            [
+              370.4847032911833,
+              1178
+            ],
+            [
+              626.5374232388916,
+              1177
+            ],
+            [
+              415.9485733939466,
+              1159
+            ],
+            [
+              583.8126949617166,
+              1159
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            -0.604583699706619,
+            0.24797047855570367,
+            -0.4839390313533081,
+            0.11211248939715991
+          ]
+        }
+      }
+    },
+    {
+      "frame": 132,
+      "ground": 1,
+      "binding": {
+        "frame": 132,
+        "drawing": "X141_ADOPTED_EXPOSURE_PROPOSAL",
+        "source": "/collab/reviews/20261020_s14_cloud_handoff/s14_stool_steps_recovery_20261020/APPROVED_F141_F144_F147_PRODUCTION_HANDOFF/adopted/F141_COMPLETE.png",
+        "sourceSHA256": "1e6d5b9a794a169723b3a6462f81969d19eb5618917787a0706ea81155e3679d",
+        "shot": "originalPaintWideCameraAfterHang",
+        "wholeDrawingTransform": {
+          "sc": 0.15891769184026783,
+          "x": 459.5795306176265,
+          "y": 462.1343951571296
+        },
+        "sourceFloor": 1182.1566413870323,
+        "curtainLit": true,
+        "lightEventFrame": 132,
+        "diagnosticExposureOnly": true,
+        "backstageGrandma": {
+          "sc": 0.335,
+          "x": 466.45,
+          "y": 227.26,
+          "sourceShoeBase": 1024,
+          "roomFloor": 570.3
+        }
+      },
+      "file": "PER_FOOT_F132.png",
+      "sha256": "54b6071db19cd2fce5b0ce608873f51695a03e3afd4680fc7ca0a64163e817fd",
+      "grounding": {
+        "grandmaFloor": {
+          "id": "G095",
+          "sourceScale": 0.335,
+          "light": [
+            600,
+            390
+          ],
+          "supports": [
+            {
+              "x": 614.2136472763309,
+              "y": 570.635
+            },
+            {
+              "x": 652.9311888497451,
+              "y": 568.29
+            }
+          ],
+          "footNative": [
+            [
+              441.0855142577043,
+              1025
+            ],
+            [
+              556.6602652231197,
+              1018
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            0.07868711642998812,
+            0.2968825444486238
+          ]
+        },
+        "workStool": {
+          "id": "work",
+          "sourceScale": 0.335,
+          "light": [
+            600,
+            390
+          ],
+          "supports": [
+            {
+              "x": 479.1123756025464,
+              "y": 569.63
+            },
+            {
+              "x": 564.8900367850288,
+              "y": 569.2950000000001
+            },
+            {
+              "x": 494.3427720869721,
+              "y": 563.2650000000001
+            },
+            {
+              "x": 550.5772528121751,
+              "y": 563.2650000000001
+            }
+          ],
+          "footNative": [
+            [
+              370.4847032911833,
+              1178
+            ],
+            [
+              626.5374232388916,
+              1177
+            ],
+            [
+              415.9485733939466,
+              1159
+            ],
+            [
+              583.8126949617166,
+              1159
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            -0.6729812636945587,
+            -0.19582232195527605,
+            -0.6098013327159428,
+            -0.2852436856135106
+          ]
+        },
+        "child": {
+          "id": "X141_ADOPTED_EXPOSURE_PROPOSAL",
+          "sourceScale": 0.15891769184026783,
+          "light": [
+            600,
+            390
+          ],
+          "supports": [
+            {
+              "x": 507.1939246782597,
+              "y": 645.8432469244792
+            },
+            {
+              "x": 554.0368691463211,
+              "y": 647.9091769184026
+            },
+            {
+              "x": 524.5463910662635,
+              "y": 639.4865392508684
+            },
+            {
+              "x": 562.746738354551,
+              "y": 641.2346338611114
+            },
+            {
+              "x": 649.2666013395403,
+              "y": 650.451859987847
+            }
+          ],
+          "footNative": [
+            [
+              299.6166978594907,
+              1156
+            ],
+            [
+              594.3789985550259,
+              1169
+            ],
+            [
+              408.80823082893016,
+              1116
+            ],
+            [
+              649.1864218656061,
+              1127
+            ],
+            [
+              1193.6183349086966,
+              1185
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            -0.3627458470660168,
+            -0.17821440633816882,
+            -0.30243559095532996,
+            -0.1482807568085677,
+            0.18915818586144545
+          ]
+        }
+      }
+    },
+    {
+      "frame": 156,
+      "ground": 1,
+      "binding": {
+        "frame": 156,
+        "drawing": "B_INITIAL_SEAT_EDGE_FROM147_MOTHER",
+        "source": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_B_95ffa1c9/B_FIND_SEAT_COMPLETE.png",
+        "sourceSHA256": "687b5a17192d7651d4822629fda3dc263b05d0822549697a28544945881f4816",
+        "shot": "originalPaintWideCameraAfterHang",
+        "wholeDrawingTransform": {
+          "sc": 0.15891769184026783,
+          "x": 459.5795306176265,
+          "y": 462.1343951571296
+        },
+        "sourceFloor": 1182.1566413870323,
+        "curtainLit": true,
+        "lightEventFrame": 132,
+        "diagnosticExposureOnly": false,
+        "backstageGrandma": {
+          "sc": 0.335,
+          "x": 466.45,
+          "y": 227.26,
+          "sourceShoeBase": 1024,
+          "roomFloor": 570.3
+        }
+      },
+      "file": "PER_FOOT_F156.png",
+      "sha256": "9c5c344612edd1362091c0eacbc5bb8e3b26714e11d257e82c4f9de1edffb213",
+      "grounding": {
+        "grandmaFloor": {
+          "id": "G095",
+          "sourceScale": 0.335,
+          "light": [
+            600,
+            390
+          ],
+          "supports": [
+            {
+              "x": 614.2136472763309,
+              "y": 570.635
+            },
+            {
+              "x": 652.9311888497451,
+              "y": 568.29
+            }
+          ],
+          "footNative": [
+            [
+              441.0855142577043,
+              1025
+            ],
+            [
+              556.6602652231197,
+              1018
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            0.07868711642998812,
+            0.2968825444486238
+          ]
+        },
+        "workStool": {
+          "id": "work",
+          "sourceScale": 0.335,
+          "light": [
+            600,
+            390
+          ],
+          "supports": [
+            {
+              "x": 479.1123756025464,
+              "y": 569.63
+            },
+            {
+              "x": 564.8900367850288,
+              "y": 569.2950000000001
+            },
+            {
+              "x": 494.3427720869721,
+              "y": 563.2650000000001
+            },
+            {
+              "x": 550.5772528121751,
+              "y": 563.2650000000001
+            }
+          ],
+          "footNative": [
+            [
+              370.4847032911833,
+              1178
+            ],
+            [
+              626.5374232388916,
+              1177
+            ],
+            [
+              415.9485733939466,
+              1159
+            ],
+            [
+              583.8126949617166,
+              1159
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            -0.6729812636945587,
+            -0.19582232195527605,
+            -0.6098013327159428,
+            -0.2852436856135106
+          ]
+        },
+        "child": {
+          "id": "B_INITIAL_SEAT_EDGE_FROM147_MOTHER",
+          "sourceScale": 0.15891769184026783,
+          "light": [
+            600,
+            390
+          ],
+          "supports": [
+            {
+              "x": 515.4576446539536,
+              "y": 645.8432469244792
+            },
+            {
+              "x": 562.2881264110556,
+              "y": 647.9091769184026
+            },
+            {
+              "x": 532.8101110419575,
+              "y": 639.4865392508684
+            },
+            {
+              "x": 571.010458330245,
+              "y": 641.2346338611114
+            },
+            {
+              "x": 636.4997694594945,
+              "y": 646.7967530755208
+            }
+          ],
+          "footNative": [
+            [
+              351.6166978594907,
+              1156
+            ],
+            [
+              646.3005761288307,
+              1169
+            ],
+            [
+              460.80823082893016,
+              1116
+            ],
+            [
+              701.1864218656061,
+              1127
+            ],
+            [
+              1113.2822078720787,
+              1162
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            -0.33044591312195915,
+            -0.1462215266612079,
+            -0.26931268179755563,
+            -0.11538831738374541,
+            0.14213485576572044
+          ]
+        }
+      }
+    },
+    {
+      "frame": 162,
+      "ground": 1,
+      "binding": {
+        "frame": 162,
+        "drawing": "C_SEATED_SAME147_PERSON",
+        "source": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_C_587ea678/C_SEATED_COMPLETE.png",
+        "sourceSHA256": "c046100d91b59b40715747df93c4dda01f19f123246f8c9baa0de8aab5e71209",
+        "shot": "originalPaintWideCameraAfterHang",
+        "wholeDrawingTransform": {
+          "sc": 0.15891769184026783,
+          "x": 459.5795306176265,
+          "y": 462.1343951571296
+        },
+        "sourceFloor": 1182.1566413870323,
+        "curtainLit": true,
+        "lightEventFrame": 132,
+        "diagnosticExposureOnly": false,
+        "backstageGrandma": {
+          "sc": 0.335,
+          "x": 466.45,
+          "y": 227.26,
+          "sourceShoeBase": 1024,
+          "roomFloor": 570.3
+        }
+      },
+      "file": "PER_FOOT_F162.png",
+      "sha256": "e23ebbe9da069d46cba83bc90d59bd9bd2ebf45b5569983add6a1f64b55b985b",
+      "grounding": {
+        "grandmaFloor": {
+          "id": "G095",
+          "sourceScale": 0.335,
+          "light": [
+            600,
+            390
+          ],
+          "supports": [
+            {
+              "x": 614.2136472763309,
+              "y": 570.635
+            },
+            {
+              "x": 652.9311888497451,
+              "y": 568.29
+            }
+          ],
+          "footNative": [
+            [
+              441.0855142577043,
+              1025
+            ],
+            [
+              556.6602652231197,
+              1018
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            0.07868711642998812,
+            0.2968825444486238
+          ]
+        },
+        "workStool": {
+          "id": "work",
+          "sourceScale": 0.335,
+          "light": [
+            600,
+            390
+          ],
+          "supports": [
+            {
+              "x": 479.1123756025464,
+              "y": 569.63
+            },
+            {
+              "x": 564.8900367850288,
+              "y": 569.2950000000001
+            },
+            {
+              "x": 494.3427720869721,
+              "y": 563.2650000000001
+            },
+            {
+              "x": 550.5772528121751,
+              "y": 563.2650000000001
+            }
+          ],
+          "footNative": [
+            [
+              370.4847032911833,
+              1178
+            ],
+            [
+              626.5374232388916,
+              1177
+            ],
+            [
+              415.9485733939466,
+              1159
+            ],
+            [
+              583.8126949617166,
+              1159
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            -0.6729812636945587,
+            -0.19582232195527605,
+            -0.6098013327159428,
+            -0.2852436856135106
+          ]
+        },
+        "child": {
+          "id": "C_SEATED_SAME147_PERSON",
+          "sourceScale": 0.15891769184026783,
+          "light": [
+            600,
+            390
+          ],
+          "supports": [
+            {
+              "x": 515.4576446539536,
+              "y": 645.8432469244792
+            },
+            {
+              "x": 562.300589122015,
+              "y": 647.9091769184026
+            },
+            {
+              "x": 532.8101110419575,
+              "y": 639.4865392508684
+            },
+            {
+              "x": 571.1013083870032,
+              "y": 641.552469244792
+            }
+          ],
+          "footNative": [
+            [
+              351.6166978594907,
+              1156
+            ],
+            [
+              646.3789985550259,
+              1169
+            ],
+            [
+              460.80823082893016,
+              1116
+            ],
+            [
+              701.7581018070033,
+              1129
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            -0.33044591312195915,
+            -0.1461732045692671,
+            -0.26931268179755563,
+            -0.11488136729389353
+          ]
+        }
+      }
+    },
+    {
+      "frame": 239,
+      "ground": 1,
+      "binding": {
+        "frame": 239,
+        "drawing": "E_FOLD_ARMS_SAME_C_PERSON",
+        "source": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_E_b89ef9ad/E_FOLD_ARMS_COMPLETE.png",
+        "sourceSHA256": "7d7b25445944a394485699fdbba68fc4ccfdbd756d8f97ce779ba51b8c4f40ff",
+        "shot": "originalPaintWideCameraAfterHang",
+        "wholeDrawingTransform": {
+          "sc": 0.15891769184026783,
+          "x": 459.5795306176265,
+          "y": 462.1343951571296
+        },
+        "sourceFloor": 1182.1566413870323,
+        "curtainLit": true,
+        "lightEventFrame": 132,
+        "diagnosticExposureOnly": false,
+        "backstageGrandma": {
+          "sc": 0.335,
+          "x": 466.45,
+          "y": 227.26,
+          "sourceShoeBase": 1024,
+          "roomFloor": 570.3
+        }
+      },
+      "file": "PER_FOOT_F239.png",
+      "sha256": "cc85fdd5db2dd544d9a06a76d24d35b0ab3cf379ebeae3401452417b466594a7",
+      "grounding": {
+        "grandmaFloor": {
+          "id": "G095",
+          "sourceScale": 0.335,
+          "light": [
+            600,
+            390
+          ],
+          "supports": [
+            {
+              "x": 614.2136472763309,
+              "y": 570.635
+            },
+            {
+              "x": 652.9311888497451,
+              "y": 568.29
+            }
+          ],
+          "footNative": [
+            [
+              441.0855142577043,
+              1025
+            ],
+            [
+              556.6602652231197,
+              1018
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            0.07868711642998812,
+            0.2968825444486238
+          ]
+        },
+        "workStool": {
+          "id": "work",
+          "sourceScale": 0.335,
+          "light": [
+            600,
+            390
+          ],
+          "supports": [
+            {
+              "x": 479.1123756025464,
+              "y": 569.63
+            },
+            {
+              "x": 564.8900367850288,
+              "y": 569.2950000000001
+            },
+            {
+              "x": 494.3427720869721,
+              "y": 563.2650000000001
+            },
+            {
+              "x": 550.5772528121751,
+              "y": 563.2650000000001
+            }
+          ],
+          "footNative": [
+            [
+              370.4847032911833,
+              1178
+            ],
+            [
+              626.5374232388916,
+              1177
+            ],
+            [
+              415.9485733939466,
+              1159
+            ],
+            [
+              583.8126949617166,
+              1159
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            -0.6729812636945587,
+            -0.19582232195527605,
+            -0.6098013327159428,
+            -0.2852436856135106
+          ]
+        },
+        "child": {
+          "id": "E_FOLD_ARMS_SAME_C_PERSON",
+          "sourceScale": 0.15891769184026783,
+          "light": [
+            600,
+            390
+          ],
+          "supports": [
+            {
+              "x": 515.4576446539536,
+              "y": 645.8432469244792
+            },
+            {
+              "x": 562.300589122015,
+              "y": 647.9091769184026
+            },
+            {
+              "x": 532.8101110419575,
+              "y": 639.4865392508684
+            },
+            {
+              "x": 571.010458330245,
+              "y": 641.2346338611114
+            }
+          ],
+          "footNative": [
+            [
+              351.6166978594907,
+              1156
+            ],
+            [
+              646.3789985550259,
+              1169
+            ],
+            [
+              460.80823082893016,
+              1116
+            ],
+            [
+              701.1864218656061,
+              1127
+            ]
+          ],
+          "contactMethod": "Real lower-foot alpha, exact per-foot bottom; native paint contact projection; no ellipse, no common nominal floor1198.",
+          "castSlopes": [
+            -0.33044591312195915,
+            -0.1461732045692671,
+            -0.26931268179755563,
+            -0.11538831738374541
+          ]
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/preview.html",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/s14_scene.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/s14_tail.mjs",
+      "status": 200
+    },
+    {
+      "path": "/js/paint/paintshot.js",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_0236_s14_lamp_close/integration_candidate/lamp_close.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_0236_s14_lamp_close/integration_candidate/original_lamp.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/space_contact_motion_repair_20261020/ground_contact.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/published_grandma_exposures.json",
+      "status": 200
+    },
+    {
+      "path": "/assets/paint/bg_01_room_wide.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/grandma_000_015/G000_whole_person_and_held_sheet_uniform.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G081_complete_native_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/preview.html",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/s14_scene.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/s14_tail.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_0236_s14_lamp_close/integration_candidate/lamp_close.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/space_contact_motion_repair_20261020/ground_contact.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_0236_s14_lamp_close/integration_candidate/original_lamp.mjs",
+      "status": 200
+    },
+    {
+      "path": "/js/paint/paintshot.js",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/BACKSTAGE_RETURN_132_167_EXPOSURE_PROPOSAL.json",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/G095_FIXED_DRAWN_SHEET_AND_TWO_PEGS_RGBA.png",
+      "status": 200
+    },
+    {
+      "path": "/assets/paint/bg_01_room_wide.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_throw_inputs/G000_locked_complete_rigid_work_stool.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/G095_EXACT_PERSON_PIXELS_OCCLUSION_STUDY.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_s14_cloud_handoff/s14_stool_steps_recovery_20261020/APPROVED_F141_F144_F147_PRODUCTION_HANDOFF/adopted/F141_COMPLETE.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_fall_inputs/G027_upper_contact_repair/G027_complete_sheet_whole_registered.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_fall_inputs/G027_upper_contact_repair/G027_complete_sheet_whole_registered.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_B_95ffa1c9/B_FIND_SEAT_COMPLETE.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_C_587ea678/C_SEATED_COMPLETE.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/published_child_tail_exposures.json",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_E_b89ef9ad/E_FOLD_ARMS_COMPLETE.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/preview.html",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/s14_scene.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/s14_tail.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_0236_s14_lamp_close/integration_candidate/lamp_close.mjs",
+      "status": 200
+    },
+    {
+      "path": "/js/paint/paintshot.js",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/space_contact_motion_repair_20261020/ground_contact.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_0236_s14_lamp_close/integration_candidate/original_lamp.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/published_grandma_exposures.json",
+      "status": 200
+    },
+    {
+      "path": "/assets/paint/bg_01_room_wide.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/grandma_000_015/G000_whole_person_and_held_sheet_uniform.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G081_complete_native_registered_candidate.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/preview.html",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/s14_scene.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/s14_tail.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_0236_s14_lamp_close/integration_candidate/lamp_close.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_0236_s14_lamp_close/integration_candidate/original_lamp.mjs",
+      "status": 200
+    },
+    {
+      "path": "/js/paint/paintshot.js",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/space_contact_motion_repair_20261020/ground_contact.mjs",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/BACKSTAGE_RETURN_132_167_EXPOSURE_PROPOSAL.json",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/G095_FIXED_DRAWN_SHEET_AND_TWO_PEGS_RGBA.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_fall_inputs/G027_upper_contact_repair/G027_complete_sheet_whole_registered.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_throw_inputs/G000_locked_complete_rigid_work_stool.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261020_s14_cloud_handoff/s14_stool_steps_recovery_20261020/APPROVED_F141_F144_F147_PRODUCTION_HANDOFF/adopted/F141_COMPLETE.png",
+      "status": 200
+    },
+    {
+      "path": "/assets/paint/bg_01_room_wide.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/G095_EXACT_PERSON_PIXELS_OCCLUSION_STUDY.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_fall_inputs/G027_upper_contact_repair/G027_complete_sheet_whole_registered.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_B_95ffa1c9/B_FIND_SEAT_COMPLETE.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_C_587ea678/C_SEATED_COMPLETE.png",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/published_child_tail_exposures.json",
+      "status": 200
+    },
+    {
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_E_b89ef9ad/E_FOLD_ARMS_COMPLETE.png",
+      "status": 200
+    }
+  ]
+}
