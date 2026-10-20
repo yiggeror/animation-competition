@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><link rel="icon" href="data:,"><canvas></canvas>
+<script type="module">
+import {renderFrame,frameBinding} from './s14_scene.mjs';
+import {renderTail,tailBinding} from './s14_tail.mjs';
+const p=new URLSearchParams(location.search),canvas=document.querySelector('canvas');
+canvas.width=+(p.get('w')||1920);canvas.height=canvas.width*9/16;
+const ctx=canvas.getContext('2d');
+const trialFile=p.get('steps')==='1'?'./EXISTING_STEP_141_167_EXPOSURE_PROPOSAL.json':p.get('trial159')==='1'?'./ORIGINAL159_ACTUAL_TRIAL_BINDINGS.json':null;
+const trial=trialFile?await(await fetch(trialFile)).json():null;
+window.drawActualFrame=async f=>{
+ if(trial){const e=trial.trialRows.find(e=>f>=e.frame&&f<=e.through);if(!e)throw Error('Outside explicit original159 trial');await renderTail(ctx,f/24,canvas.width,canvas.height,e);return tailBinding(f,e);}
+ await renderFrame(ctx,f/24,canvas.width,canvas.height);return frameBinding(f);
+};
+window.ready=true;
+</script>

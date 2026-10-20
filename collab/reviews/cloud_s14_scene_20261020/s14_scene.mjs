@@ -2,6 +2,7 @@
 import {renderPaint,loadImg} from '/js/paint/paintshot.js';
 import {makeLampClose,exposureAt,VIEW} from '../20261020_0236_s14_lamp_close/integration_candidate/lamp_close.mjs';
 import {lamp,flameShape} from '../20261020_0236_s14_lamp_close/integration_candidate/original_lamp.mjs';
+import {renderTail,tailBinding} from './s14_tail.mjs';
 
 export const DURATION=10,FPS=24;
 export const CLOSE_BACKGROUND=Object.freeze({
@@ -63,6 +64,7 @@ async function renderGrandmaWide(ctx,t,W,H,e){
 }
 export async function renderFrame(ctx,t,W,H){
   if(await close(ctx,t,W,H))return;
+  if(Math.floor(t*24+1e-6)>=168&&await renderTail(ctx,t,W,H))return;
   const f=Math.floor(t*24+1e-6),e=await grandmaBinding(f);
   if(e){await renderGrandmaWide(ctx,t,W,H,e);return;}
   throw Error('S14 frame '+Math.floor(t*24+1e-6)+' not yet bound to published complete character mapping. No old candidate substitution.');
@@ -71,5 +73,5 @@ export async function frameBinding(f){
   const e=exposureAt(f/24);
   if(e)return {frame:f,drawing:e.id,shot:'approved096–131close',lampSource:[e.lampX,e.lampY],curtainLit:false,background:CLOSE_BACKGROUND};
   const g=await grandmaBinding(f);
-  return g?{frame:f,drawing:g.id,source:g.path,sourceSHA256:g.sha256,shot:'originalPaintWideCamera',wholeDrawingTransform:GRANDMA_TO_ROOM,curtainLit:false}:null;
+  return g?{frame:f,drawing:g.id,source:g.path,sourceSHA256:g.sha256,shot:'originalPaintWideCamera',wholeDrawingTransform:GRANDMA_TO_ROOM,curtainLit:false}:await tailBinding(f);
 }

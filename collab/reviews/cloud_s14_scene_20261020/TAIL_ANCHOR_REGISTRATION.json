@@ -1,0 +1,82 @@
+{
+  "status": "WHOLE_DRAWING_REGISTRATION_FROM_REAL_FIXED_STOOL_FEET",
+  "commonMother": "/assets/chars/x15/F000.png",
+  "commonMotherSHA256": "57e175f4d15527201d5241a2a5fea395f7b12d994cb1ab78d9432d3bd93e4907",
+  "commonMotherNativeSize": [
+    1254,
+    1254
+  ],
+  "commonFootAnchors": [
+    [
+      386.0,
+      1168.0
+    ],
+    [
+      679.0,
+      1182.0
+    ]
+  ],
+  "native168FootAnchors": [
+    [
+      186.0,
+      1268.0
+    ],
+    [
+      479.0,
+      1282.0
+    ]
+  ],
+  "native168ToCommon": {
+    "scale": 1.0,
+    "translation": [
+      200.0,
+      -100.0
+    ],
+    "rotationDegrees": 0.0,
+    "evidence": "Measured corresponding lower left and near stool feet; also explicitly corroborated by published close_complete_semantic_stool_surfaces.py copying F000 at(-200,+100)."
+  },
+  "commonToOriginalRoom": {
+    "scale": 0.16,
+    "translation": [
+      453.6,
+      458.32
+    ],
+    "sourceSeatAnchor": [
+      540.0,
+      835.0
+    ],
+    "roomSeatAnchor": [
+      540.0,
+      591.92
+    ],
+    "sourceFootPlaneY": 1198.0,
+    "roomFootPlaneY": 650.0,
+    "basis": "One whole figure at the fixed audience patch on the original room mat. Uniform .16 retains the established S01 child native-image scale as the initial foreground registration; actual source feet and stool support remain aligned, original S14 camera push is applied afterwards. This is a 2D painted-room registration, not an S15 world-camera calibration."
+  },
+  "sourceSheet": {
+    "path": "collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G095_complete_registered_candidate.png",
+    "sha256": "2fb5693f3cf4b90cf0738747660106b69027d3f1d69d5f160e1806db5f5d5b76",
+    "derivedWholeClothAndClosedPegs": "collab/reviews/cloud_s14_scene_20261020/G095_FIXED_DRAWN_SHEET_AND_TWO_PEGS_RGBA.png",
+    "scope": "Exact complete original sheet source plus two already closed source pegs extracted from G095. No visible old hand or new cloth painting.",
+    "completeClothSource": {
+      "path": "collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_fall_inputs/G027_upper_contact_repair/G027_complete_sheet_whole_registered.png",
+      "sha256": "891e5d807ddbc93cd816867a3ff120437bdae3cf34b932b4bb10dd4754564d30",
+      "role": "Original complete sheet layer only, never a complete G027 person."
+    },
+    "finalDerivedSHA256": "b860ba6cddf23f3c583d4090779540fe3fbb36bec2def15473dc74b4043d1224"
+  },
+  "perLimbTransforms": false,
+  "S15Changed": false,
+  "originalWorkingStoolAfterHang": {
+    "path": "collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_throw_inputs/G000_locked_complete_rigid_work_stool.png",
+    "sha256": "06eebf0d42e4ed9b9c8276978b462ea1f0a55ead67a7d3de4c6cddd3074d683a",
+    "wholeRoomTransform": {
+      "scale": 0.335,
+      "translation": [
+        355,
+        175
+      ]
+    },
+    "sameAsBeforeHang": true
+  }
+}
