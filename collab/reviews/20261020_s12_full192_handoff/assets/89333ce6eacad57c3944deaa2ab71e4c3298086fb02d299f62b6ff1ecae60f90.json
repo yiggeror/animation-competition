@@ -1,0 +1,155 @@
+{
+  "root_scene": [
+    1325.174892567503,
+    565.2816783612259
+  ],
+  "root_source_final086": [
+    1342.2098710810035,
+    568.338014033471
+  ],
+  "root_remaining_to_C110": [
+    -85.1748925675031,
+    -15.281678361225886
+  ],
+  "paper_plane_inclination_degrees": 60.0,
+  "projected_roll_degrees": -6.666666666666667,
+  "code_pose": {
+    "angles": {
+      "neck0": 0.41666666666666663,
+      "neck1": 0.0,
+      "neck2": -0.03666666666666667,
+      "neck3": -0.07333333333333335,
+      "neck4": -0.11166666666666668,
+      "neck5": -0.1416666666666667,
+      "neck6": -0.165,
+      "neck7": -0.17833333333333334,
+      "neck8": -0.17333333333333334,
+      "neck9": -0.15,
+      "neck10": -0.115,
+      "neck11": -0.07833333333333334,
+      "head": -0.55,
+      "tibia_near": 1.4300000000000002,
+      "tarsus_near": -2.336666666666667,
+      "foot_near": 0.9216666666666667,
+      "tibia_far": 1.2833333333333334,
+      "tarsus_far": -2.1633333333333336,
+      "foot_far": 0.8800000000000001
+    },
+    "rootAngle": 0,
+    "facing": 1
+  },
+  "code_pose_progress_to_C": 0.16666666666666666,
+  "actual_makeCrane_scale": 1.35,
+  "paper_3D_camera_basis": [
+    [
+      0.953147446942103,
+      -0.23853419870214784
+    ],
+    [
+      -0.16558479513772997,
+      -0.9260840253951893
+    ],
+    [
+      0.2531632279912453,
+      0.2923522087437802
+    ]
+  ],
+  "mm_to_scene_scale": 0.72,
+  "rods": {
+    "R": {
+      "part": "BODY",
+      "joint_local_mm": [
+        -75.0,
+        6.0
+      ],
+      "hinge_scene": [
+        1272.6744626942364,
+        570.222574308956
+      ],
+      "hinge_camera3D_scene_units": [
+        1272.6744626942364,
+        570.222574308956,
+        -12.407852769754115
+      ],
+      "grip_scene": [
+        948.0,
+        653.0
+      ],
+      "grip_camera3D_scene_units": [
+        948.0,
+        653.0,
+        -173.63796245021524
+      ],
+      "free_scene": [
+        939.5047644544168,
+        655.1659040358979
+      ],
+      "free_camera3D_scene_units": [
+        939.5047644544168,
+        655.1659040358979,
+        -177.85661194734445
+      ],
+      "grip_fraction_from_hinge_unchanged": 0.9745017761505183,
+      "physical_length_H": 1.7747139807413974,
+      "physical_length_scene_units": 381.56350585940044,
+      "physical_length_camera3D_check": 381.56350585940044,
+      "physical_length_mm": 529.9493136936118,
+      "projected_length_previous_scene": 331.8768960508491,
+      "projected_length_new_scene": 343.82759791836435,
+      "projected_angle_delta_degrees": -1.9900096845792206,
+      "camera_depth_solution_is_feasible_not_measured": true
+    },
+    "L": {
+      "part": "NECK3",
+      "joint_local_mm": [
+        240.26001568833385,
+        94.5317360849784
+      ],
+      "hinge_scene": [
+        1473.8218939858923,
+        473.60570832695254
+      ],
+      "hinge_camera3D_scene_units": [
+        1473.8218939858923,
+        473.60570832695254,
+        63.69232533819363
+      ],
+      "grip_scene": [
+        930.4003699375054,
+        569.4418543304015
+      ],
+      "grip_camera3D_scene_units": [
+        930.4003699375054,
+        569.4418543304015,
+        30.147505882135164
+      ],
+      "free_scene": [
+        906.5420802170449,
+        573.6494288114576
+      ],
+      "free_camera3D_scene_units": [
+        906.5420802170449,
+        573.6494288114576,
+        28.674759614668737
+      ],
+      "grip_fraction_from_hinge_unchanged": 0.957942642869746,
+      "physical_length_H": 2.6841737678780118,
+      "physical_length_scene_units": 577.0973600937725,
+      "physical_length_camera3D_check": 577.0973600937725,
+      "physical_length_mm": 801.5241112413507,
+      "projected_length_previous_scene": 567.609923629792,
+      "projected_length_new_scene": 576.0339687188595,
+      "projected_angle_delta_degrees": -0.5413230549970756,
+      "camera_depth_solution_is_feasible_not_measured": true
+    }
+  },
+  "physical_lengths_frozen_not_arbitrary_projected_scaling": true,
+  "camera_depth_branch_note": "one feasible exact-length solution; depth is not measured from art",
+  "C110_terminal": {
+    "root": [
+      1240,
+      550
+    ],
+    "paper_plane_inclination": 85
+  }
+}
