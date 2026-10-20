@@ -1,5 +1,7 @@
 # F132 零调用准备：实际机构预检已交，T_H→R 可达门待明确
 
+> 最新澄清：[固定卡平面假设与精确rho²](FIXED_CARD_ASSUMPTION_CLARIFICATION.md)。两项rho²均为正；失败仅指同卡平面＋128肩位/二维投影链参考，不是完整新三维双臂或原杆长/根角绝对不可达。132掌位没有固定，完整交圈均已查。最终生产是否必须共面尚未证明。
+
 - [实际机构＋完整可达圈诊断](DIAGNOSTIC_132_true_mechanism_fixed128_person_reach_1x.png)
 - [正常倍率 R 可达缺口](DIAGNOSTIC_R_reach_gap_normal_1x.png)
 - [原 CAM20 实际诊断单张](CAM20_F132_mechanism_DIAGNOSTIC_fixed128_actual.png)

@@ -1,0 +1,35 @@
+{
+  "constraint_is_inherited_preflight_assumption_not_a_proven_mandatory_final_production_rule": true,
+  "people_card_plane_origin_world": [
+    1.13,
+    1.1,
+    0.0
+  ],
+  "people_card_plane_unit_normal": [
+    -0.8144594486498068,
+    -0.5674943255108332,
+    -0.1208552730254552
+  ],
+  "rows": [
+    {
+      "id": "T_H",
+      "rod_length_m": 0.21864436547698668,
+      "signed_A_to_people_card_normal_distance_m": -0.2178261138635049,
+      "absolute_A_to_people_card_normal_distance_m": 0.2178261138635049,
+      "rho_squared_m2": 0.00035714267395752647,
+      "rho_m": 0.018898218803832453,
+      "sphere_plane_intersection_exists": true
+    },
+    {
+      "id": "T_S",
+      "rod_length_m": 0.25504206964477605,
+      "signed_A_to_people_card_normal_distance_m": -0.008210737635890334,
+      "absolute_A_to_people_card_normal_distance_m": 0.008210737635890334,
+      "rho_squared_m2": 0.06497904107616537,
+      "rho_m": 0.2549098685342829,
+      "sphere_plane_intersection_exists": true
+    }
+  ],
+  "both_rho_squared_positive_no_sphere_plane_incompatibility": true,
+  "scope": "No128-palm fixed constraint;132 B entire circles searched. Additional128-shoulder/projected-chain assumption caused conditional2D shortfall. No free3D-arm reach proof yet."
+}
