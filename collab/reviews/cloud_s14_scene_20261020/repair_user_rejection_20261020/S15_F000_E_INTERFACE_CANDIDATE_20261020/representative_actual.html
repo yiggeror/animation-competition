@@ -1,0 +1,7 @@
+<!doctype html><meta charset="utf-8"><title>S15 F000 E interface representative actual scenes</title><canvas width="1920" height="1080"></canvas><script type="module">
+const candidate=new URLSearchParams(location.search).get('candidate')==='1';
+const module=await import(candidate?'./candidate/s15_drawn_E_F000_candidate.js':'/js/anim/s15_drawn.js');
+const c=document.querySelector('canvas'),ctx=c.getContext('2d');
+window.captureActualS15=async frame=>{if(!Number.isInteger(frame)||frame<0||frame>191)throw Error('S15 only0–191');await module.renderFrame(ctx,frame/24,1920,1080);return{png:c.toDataURL('image/png'),frame,time:frame/24,candidate,exposure:module.pickExposure(frame/24),registration:module.DRAWING_REGISTRATION};};
+window.ready=true;
+</script>

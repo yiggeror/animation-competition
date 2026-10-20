@@ -1,0 +1,193 @@
+{
+  "scope": "Source-plane supporting silhouette/strict-red-shoe landmarks only, not anatomical bone measurements or acceptance gates. Whole opaque top is visible crown/hair spike. Original seat835/floor1198 are existing S15 registration. F144 original0.94 about555,835 retained. No head or limb edited.",
+  "nominalSeatY": 835,
+  "nominalSourceFloorY": 1198,
+  "states": [
+    {
+      "state": "NEW_E",
+      "source": "candidate/E_COMPLETE_COMMON1254.png",
+      "sourceSHA256": "06fa61b3ca25bcfec54a821e3e1492a0fbbcc3fb37b5292f9dc12be2cc5e9766",
+      "existingWholeDrawingScale": 1,
+      "wholeOpaqueBounds": [
+        358,
+        221,
+        1055,
+        1186
+      ],
+      "crownToNominalSeat835": 614,
+      "strictRedShoeBox": [
+        763,
+        1000,
+        1054,
+        1134
+      ],
+      "redShoeBottomToNominalFloor1198": 64
+    },
+    {
+      "state": "F000",
+      "source": "upstream_current/assets/chars/x15/F000.png",
+      "sourceSHA256": "57e175f4d15527201d5241a2a5fea395f7b12d994cb1ab78d9432d3bd93e4907",
+      "existingWholeDrawingScale": 1,
+      "wholeOpaqueBounds": [
+        359,
+        31,
+        1020,
+        1202
+      ],
+      "crownToNominalSeat835": 804,
+      "strictRedShoeBox": [
+        729,
+        1076,
+        1018,
+        1200
+      ],
+      "redShoeBottomToNominalFloor1198": -2
+    },
+    {
+      "state": "F108",
+      "source": "upstream_current/assets/chars/x15/F108.png",
+      "sourceSHA256": "7203bb636085cba2df1f706b73ffd8e09d1c3cde0c2a8e227c6ba8b5b41c40e7",
+      "existingWholeDrawingScale": 1,
+      "wholeOpaqueBounds": [
+        357,
+        28,
+        1022,
+        1203
+      ],
+      "crownToNominalSeat835": 807,
+      "strictRedShoeBox": [
+        729,
+        1078,
+        1020,
+        1201
+      ],
+      "redShoeBottomToNominalFloor1198": -3
+    },
+    {
+      "state": "F112",
+      "source": "upstream_current/assets/chars/x15/F112.png",
+      "sourceSHA256": "a2a94bb4e925dc124472da6b307374749003ec38dd62d552ad0734bf653ba69b",
+      "existingWholeDrawingScale": 1,
+      "wholeOpaqueBounds": [
+        356,
+        25,
+        1024,
+        1206
+      ],
+      "crownToNominalSeat835": 810,
+      "strictRedShoeBox": [
+        729,
+        1078,
+        1021,
+        1203
+      ],
+      "redShoeBottomToNominalFloor1198": -5
+    },
+    {
+      "state": "F116",
+      "source": "upstream_current/assets/chars/x15/F116.png",
+      "sourceSHA256": "05a24b88d6ddcd5b8111bb1e9fb1225de8a68455f41b81e5de2fe9cd44f7e100",
+      "existingWholeDrawingScale": 1,
+      "wholeOpaqueBounds": [
+        353,
+        24,
+        1026,
+        1209
+      ],
+      "crownToNominalSeat835": 811,
+      "strictRedShoeBox": [
+        728,
+        1081,
+        1024,
+        1207
+      ],
+      "redShoeBottomToNominalFloor1198": -9
+    },
+    {
+      "state": "F120",
+      "source": "upstream_current/assets/chars/x15/F120.png",
+      "sourceSHA256": "e0aa2a8eb70b38c5ef492e7f73b14ade19d7a4187c37e1f9427965985ab462f6",
+      "existingWholeDrawingScale": 1,
+      "wholeOpaqueBounds": [
+        353,
+        26,
+        1023,
+        1204
+      ],
+      "crownToNominalSeat835": 809,
+      "strictRedShoeBox": [
+        730,
+        1077,
+        1020,
+        1202
+      ],
+      "redShoeBottomToNominalFloor1198": -4
+    },
+    {
+      "state": "F124",
+      "source": "upstream_current/assets/chars/x15/F124.png",
+      "sourceSHA256": "1842fcf6ef71a6961cddfdc7e87c4f6d8e6415b7f2fedfddb468db1689f9e4f3",
+      "existingWholeDrawingScale": 1,
+      "wholeOpaqueBounds": [
+        357,
+        28,
+        1023,
+        1205
+      ],
+      "crownToNominalSeat835": 807,
+      "strictRedShoeBox": [
+        729,
+        1077,
+        1021,
+        1202
+      ],
+      "redShoeBottomToNominalFloor1198": -4
+    },
+    {
+      "state": "F132",
+      "source": "upstream_current/assets/chars/x15/F132.png",
+      "sourceSHA256": "3682f0e0573e4951dffa50c6176876b2d1b3fc6b8db89506078edabe297f29c4",
+      "existingWholeDrawingScale": 1,
+      "wholeOpaqueBounds": [
+        356,
+        27,
+        1022,
+        1205
+      ],
+      "crownToNominalSeat835": 808,
+      "strictRedShoeBox": [
+        729,
+        1070,
+        1020,
+        1202
+      ],
+      "redShoeBottomToNominalFloor1198": -4
+    },
+    {
+      "state": "F144",
+      "source": "upstream_current/assets/chars/x15/F144.png",
+      "sourceSHA256": "48bc6ed1e1bbeda8b1d2c1910c5983da5b69d4e4f63c71af0496f5425d0a8580",
+      "existingWholeDrawingScale": 0.94,
+      "wholeOpaqueBounds": [
+        338,
+        70,
+        1035,
+        1205
+      ],
+      "crownToNominalSeat835": 765,
+      "strictRedShoeBox": [
+        732,
+        1076,
+        1033,
+        1203
+      ],
+      "redShoeBottomToNominalFloor1198": -5
+    }
+  ],
+  "pixelSelection": {
+    "wholeOpaqueBounds": "alpha>128, all complete drawing pixels; upper bound is crown/hair spike",
+    "strictRedShoeBox": "alpha>200,y>900,R>150,G<100,B<110,R>2G,R>1.8B",
+    "coordinates": "bbox maxima exclusive; source pixel plane; no light/color adjustment",
+    "F144": "Original .94 uniform about[555,835],bicubic reference sampling before source-plane pixel read"
+  }
+}

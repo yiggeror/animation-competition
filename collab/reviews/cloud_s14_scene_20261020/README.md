@@ -9,3 +9,7 @@
 **E239→当前S15首帧体量仍不接。** 最新b89ef9ad的S15正式源码／F000原画／实片同原blob。实际末首帧及同共同画布比较在`S14_E_TO_CURRENT_S15_BODY_CONTINUITY_EVIDENCE.jpg`：旧F000颈胸／躯干／小腿更长，不能仅归因于景别。只交最小零生图整人注册参考`E_COMPLETE_COMMON1254_REGISTRATION_REFERENCE_ONLY.png`及准确矩阵建议，未修改S15动作、灯光、机位或任何生产文件；是否采纳及F108后接点由主协调／S15所有者审。
 
 当前是主协调审片候选，不是整链通过，不能写ready或接声。原ABC、C→D局部片及来源／实际日志保留在repair目录；最终E原blob和消费映射在`incoming_E_b89ef9ad/`，实际37格在`actual_E203_239/`。
+
+## S15仅F000候选实际续查（未应用）
+
+`repair_user_rejection_20261020/S15_F000_E_INTERFACE_CANDIDATE_20261020/`保存一行仅F000改址补丁／完整E1254源／固定共享原8源／13真实代表帧。入口E→新S15首段同身量，但107→原108同机位重新长身，后继独立解臂／落膝／前倾不能覆盖。证据Library `libfile_0758965562b881918e27d24b011899d1`。仅交root最小修源建议；未渲满108或192、未改生产／声音／EDL，S14不重渲。

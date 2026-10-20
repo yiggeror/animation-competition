@@ -1,0 +1,319 @@
+{
+  "status": "F000_ONLY_E_SOURCE_CANDIDATE_WORKS_AT_ENTRY_BUT107_TO108_AND_SUCCESSOR_BODY_STATURE_BLOCK_ADOPTION",
+  "sourceCommit": "23853d082d3ff59bf7722e9028647c9b80ff45b9",
+  "candidateChanges": {
+    "oneProductionCodeLineOnly": "repair_user_rejection_20261020/S15_F000_E_INTERFACE_CANDIDATE_20261020/ONLY_F000_SOURCE_PATH.patch",
+    "onlyCharacterSourceID": "F000",
+    "affectedRange": [
+      0,
+      107
+    ],
+    "inputPNG": "candidate/E_COMPLETE_COMMON1254.png",
+    "candidatePNG_SHA256": "06fa61b3ca25bcfec54a821e3e1492a0fbbcc3fb37b5292f9dc12be2cc5e9766",
+    "sourceETransform": "Whole complete native E to common1254 only:sc.993235574001674,t[37.37206636016555,23.8399697320599]. No head/leg split or old figure shrink.",
+    "allExposureStartsAndHoldsUnchanged": true,
+    "F144ExistingRegistration": {
+      "scale": 0.94,
+      "anchor": [
+        555,
+        835
+      ]
+    },
+    "S15CameraLightCurtainCraneTimingAndAudioUnchanged": true,
+    "productionApplied": false
+  },
+  "actualScenes": {
+    "saved": 13,
+    "originalReferences": [
+      0,
+      107
+    ],
+    "candidateModuleRepresentatives": [
+      0,
+      72,
+      107,
+      108,
+      112,
+      116,
+      120,
+      124,
+      132,
+      144,
+      191
+    ],
+    "post108Sources": "All unchanged original artwork; CANDIDATE_ filename refers only to using the isolated candidate module, not a replacement of those sources.",
+    "requestOrPageErrors": [],
+    "library_file_id": "libfile_0758965562b881918e27d24b011899d1",
+    "evidence": "S14_E_TO_S15_NEW000_107_TO_OLD108_144_ACTUAL_EVIDENCE.jpg"
+  },
+  "observedResult": {
+    "entry": "S14E239→S15 candidate0/72/107 keeps the same complete newE character and original stool, original scene/camera/light. No cross-camera pixel-zero gate used.",
+    "nextSeam": "Actual same-camera new107→original108 jumps upward/taller through head/chest/torso; hips remain on the same seat. Mouth opening does not explain whole-figure body-length reset.",
+    "successorChecks": "Original112/116/120/124/132 retain long torso/lower-leg family;144/191 still taller than E after original.94. Separate unfolding/lap/leaning performance must remain.",
+    "sourceSupportingLandmarks": {
+      "newE": {
+        "crownToNominalSeat": 614,
+        "shoeBottomAboveNominalFloor": 64
+      },
+      "old108": {
+        "crownToNominalSeat": 807,
+        "shoeBottomAboveNominalFloor": -3
+      },
+      "old144AfterExisting094": {
+        "crownToNominalSeat": 765,
+        "shoeBottomAboveNominalFloor": -5
+      },
+      "meaning": "Source-plane silhouette/shoe references only, not bone length measurements or a substitute for actual visual checks."
+    }
+  },
+  "originalSourcesAndSpecificPerformance": [
+    {
+      "sourcePath": "assets/chars/x15/F000.png",
+      "localCopy": "upstream_current/assets/chars/x15/F000.png",
+      "gitBlob": "74e0dea22f6f549bf01ffd20b7a02b79acd0e4f9",
+      "sha256": "57e175f4d15527201d5241a2a5fea395f7b12d994cb1ab78d9432d3bd93e4907",
+      "bytes": 632822,
+      "pose": "原F000抱臂看幕，持续000–107；候选仅此输入改为完整新E",
+      "sourceLandmark": {
+        "state": "F000",
+        "source": "upstream_current/assets/chars/x15/F000.png",
+        "sourceSHA256": "57e175f4d15527201d5241a2a5fea395f7b12d994cb1ab78d9432d3bd93e4907",
+        "existingWholeDrawingScale": 1,
+        "wholeOpaqueBounds": [
+          359,
+          31,
+          1020,
+          1202
+        ],
+        "crownToNominalSeat835": 804,
+        "strictRedShoeBox": [
+          729,
+          1076,
+          1018,
+          1200
+        ],
+        "redShoeBottomToNominalFloor1198": -2
+      }
+    },
+    {
+      "sourcePath": "assets/chars/x15/F108.png",
+      "localCopy": "upstream_current/assets/chars/x15/F108.png",
+      "gitBlob": "137833599b5a0032708acafda4aa31f4c6a62160",
+      "sha256": "7203bb636085cba2df1f706b73ffd8e09d1c3cde0c2a8e227c6ba8b5b41c40e7",
+      "bytes": 663084,
+      "pose": "张口/眼神开始看呆，双前臂仍交叉",
+      "sourceLandmark": {
+        "state": "F108",
+        "source": "upstream_current/assets/chars/x15/F108.png",
+        "sourceSHA256": "7203bb636085cba2df1f706b73ffd8e09d1c3cde0c2a8e227c6ba8b5b41c40e7",
+        "existingWholeDrawingScale": 1,
+        "wholeOpaqueBounds": [
+          357,
+          28,
+          1022,
+          1203
+        ],
+        "crownToNominalSeat835": 807,
+        "strictRedShoeBox": [
+          729,
+          1078,
+          1020,
+          1201
+        ],
+        "redShoeBottomToNominalFloor1198": -3
+      }
+    },
+    {
+      "sourcePath": "assets/chars/x15/F112.png",
+      "localCopy": "upstream_current/assets/chars/x15/F112.png",
+      "gitBlob": "be728468c1b9649e2fcdacb6beea444be1369ea9",
+      "sha256": "a2a94bb4e925dc124472da6b307374749003ec38dd62d552ad0734bf653ba69b",
+      "bytes": 679740,
+      "pose": "开始解臂，近前臂抬离另一上臂",
+      "sourceLandmark": {
+        "state": "F112",
+        "source": "upstream_current/assets/chars/x15/F112.png",
+        "sourceSHA256": "a2a94bb4e925dc124472da6b307374749003ec38dd62d552ad0734bf653ba69b",
+        "existingWholeDrawingScale": 1,
+        "wholeOpaqueBounds": [
+          356,
+          25,
+          1024,
+          1206
+        ],
+        "crownToNominalSeat835": 810,
+        "strictRedShoeBox": [
+          729,
+          1078,
+          1021,
+          1203
+        ],
+        "redShoeBottomToNominalFloor1198": -5
+      }
+    },
+    {
+      "sourcePath": "assets/chars/x15/F116.png",
+      "localCopy": "upstream_current/assets/chars/x15/F116.png",
+      "gitBlob": "cf36e59856906864eef494aa58b1013d416bb220",
+      "sha256": "05a24b88d6ddcd5b8111bb1e9fb1225de8a68455f41b81e5de2fe9cd44f7e100",
+      "bytes": 692686,
+      "pose": "双臂打开，远手继续下落",
+      "sourceLandmark": {
+        "state": "F116",
+        "source": "upstream_current/assets/chars/x15/F116.png",
+        "sourceSHA256": "05a24b88d6ddcd5b8111bb1e9fb1225de8a68455f41b81e5de2fe9cd44f7e100",
+        "existingWholeDrawingScale": 1,
+        "wholeOpaqueBounds": [
+          353,
+          24,
+          1026,
+          1209
+        ],
+        "crownToNominalSeat835": 811,
+        "strictRedShoeBox": [
+          728,
+          1081,
+          1024,
+          1207
+        ],
+        "redShoeBottomToNominalFloor1198": -9
+      }
+    },
+    {
+      "sourcePath": "assets/chars/x15/F120.png",
+      "localCopy": "upstream_current/assets/chars/x15/F120.png",
+      "gitBlob": "7385f8be3be088cfbc76551a58d77ca8d31d7c4b",
+      "sha256": "e0aa2a8eb70b38c5ef492e7f73b14ade19d7a4187c37e1f9427965985ab462f6",
+      "bytes": 682433,
+      "pose": "近手下放途中，远手接近膝面",
+      "sourceLandmark": {
+        "state": "F120",
+        "source": "upstream_current/assets/chars/x15/F120.png",
+        "sourceSHA256": "e0aa2a8eb70b38c5ef492e7f73b14ade19d7a4187c37e1f9427965985ab462f6",
+        "existingWholeDrawingScale": 1,
+        "wholeOpaqueBounds": [
+          353,
+          26,
+          1023,
+          1204
+        ],
+        "crownToNominalSeat835": 809,
+        "strictRedShoeBox": [
+          730,
+          1077,
+          1020,
+          1202
+        ],
+        "redShoeBottomToNominalFloor1198": -4
+      }
+    },
+    {
+      "sourcePath": "assets/chars/x15/F124.png",
+      "localCopy": "upstream_current/assets/chars/x15/F124.png",
+      "gitBlob": "b1c837c42ad7452a3ee531783fae23d94bf5ebdd",
+      "sha256": "1842fcf6ef71a6961cddfdc7e87c4f6d8e6415b7f2fedfddb468db1689f9e4f3",
+      "bytes": 682423,
+      "pose": "双手继续下落、尚未完全落稳",
+      "sourceLandmark": {
+        "state": "F124",
+        "source": "upstream_current/assets/chars/x15/F124.png",
+        "sourceSHA256": "1842fcf6ef71a6961cddfdc7e87c4f6d8e6415b7f2fedfddb468db1689f9e4f3",
+        "existingWholeDrawingScale": 1,
+        "wholeOpaqueBounds": [
+          357,
+          28,
+          1023,
+          1205
+        ],
+        "crownToNominalSeat835": 807,
+        "strictRedShoeBox": [
+          729,
+          1077,
+          1021,
+          1202
+        ],
+        "redShoeBottomToNominalFloor1198": -4
+      }
+    },
+    {
+      "sourcePath": "assets/chars/x15/F132.png",
+      "localCopy": "upstream_current/assets/chars/x15/F132.png",
+      "gitBlob": "407380c76c1cbf384d600d66a6af3d2fc1e54ab2",
+      "sha256": "3682f0e0573e4951dffa50c6176876b2d1b3fc6b8db89506078edabe297f29c4",
+      "bytes": 702869,
+      "pose": "双手落膝，保持看幕",
+      "sourceLandmark": {
+        "state": "F132",
+        "source": "upstream_current/assets/chars/x15/F132.png",
+        "sourceSHA256": "3682f0e0573e4951dffa50c6176876b2d1b3fc6b8db89506078edabe297f29c4",
+        "existingWholeDrawingScale": 1,
+        "wholeOpaqueBounds": [
+          356,
+          27,
+          1022,
+          1205
+        ],
+        "crownToNominalSeat835": 808,
+        "strictRedShoeBox": [
+          729,
+          1070,
+          1020,
+          1202
+        ],
+        "redShoeBottomToNominalFloor1198": -4
+      }
+    },
+    {
+      "sourcePath": "assets/chars/x15/F144.png",
+      "localCopy": "upstream_current/assets/chars/x15/F144.png",
+      "gitBlob": "bf2aabfeb90e8cb3dabb735ee444f14731761e9f",
+      "sha256": "48bc6ed1e1bbeda8b1d2c1910c5983da5b69d4e4f63c71af0496f5425d0a8580",
+      "bytes": 739544,
+      "pose": "上身前倾/看呆末态，保原整稿.94注册",
+      "sourceLandmark": {
+        "state": "F144",
+        "source": "upstream_current/assets/chars/x15/F144.png",
+        "sourceSHA256": "48bc6ed1e1bbeda8b1d2c1910c5983da5b69d4e4f63c71af0496f5425d0a8580",
+        "existingWholeDrawingScale": 0.94,
+        "wholeOpaqueBounds": [
+          338,
+          70,
+          1035,
+          1205
+        ],
+        "crownToNominalSeat835": 765,
+        "strictRedShoeBox": [
+          732,
+          1076,
+          1033,
+          1203
+        ],
+        "redShoeBottomToNominalFloor1198": -5
+      }
+    }
+  ],
+  "minimumNextHandling": {
+    "stop": "Do not adopt F000-only patch or render its full108frame segment yet; no full S15 rerender.",
+    "firstNeededSource": "Root/S15 original artist should first supply an existing or approved complete same-E-stature F108 input preserving its open-mouth/still-crossed-arms performance; current8 S15 inputs contain no same-stature substitute for this role.",
+    "successorGroupsToPreserve": [
+      "112/116/120/124: distinct unfolding/lowering hand positions at existing4/4/4/8 holds",
+      "132:both hands settle on lap at existing12hold",
+      "144:forward attentive reaction at existing48hold with original.94 about[555,835]"
+    ],
+    "doNotDo": [
+      "replace all later states with E",
+      "shrink original whole long figure and stool",
+      "split head or legs",
+      "redraw native characters in this cloud without new root direction",
+      "preorder a whole-shot redraw or alter existing action points"
+    ],
+    "allowedCurrentWorkCompleted": "One-path source patch, registered existing complete E, exact frozen sources,13 actual representative scenes, specific source/pose/scale report. Await source/handling direction from root before further affected rendering."
+  },
+  "full108FirstHoldRendered": false,
+  "full192S15Rendered": false,
+  "S14Rerendered": false,
+  "newImageGenerationCalls": 0,
+  "oldVoicedFilmOrAudioModified": false,
+  "originalSpeedFullChainPassClaimed": false,
+  "firstHarnessFailurePreserved": "FIRST_CAPTURE_FAVICON_ONLY_FAILURE_PRESERVED.json: browser favicon request miscounted as a dependency404; no scenePNG saved. Dedicated handler returns204; bounded representative capture then completed. No S15 source fix was made for this harness issue."
+}

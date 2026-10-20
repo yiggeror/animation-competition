@@ -1,0 +1,11 @@
+--- a/js/anim/s15_drawn.js
++++ b/js/anim/s15_drawn.js
+@@ -26,7 +26,7 @@
+   {id:'F112',start:112,hold:4}, {id:'F116',start:116,hold:4},
+   {id:'F120',start:120,hold:4}, {id:'F124',start:124,hold:8},
+   {id:'F132',start:132,hold:12}, {id:'F144',start:144,hold:48},
+-].map(e=>Object.freeze({...e,end:e.start+e.hold-1,path:new URL('/assets/chars/x15/'+e.id+'.png',import.meta.url).href})));
++].map(e=>Object.freeze({...e,end:e.start+e.hold-1,path:new URL(e.id==='F000'?'/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/S15_F000_E_INTERFACE_CANDIDATE_20261020/candidate/E_COMPLETE_COMMON1254.png':'/assets/chars/x15/'+e.id+'.png',import.meta.url).href})));
+ export function pickExposure(t) {
+   if (!Number.isFinite(t) || t < 0 || t >= DURATION) throw new RangeError('S15 drawn supports t in [0,8).');
+   const frame=Math.floor(t*FPS+1e-6);
