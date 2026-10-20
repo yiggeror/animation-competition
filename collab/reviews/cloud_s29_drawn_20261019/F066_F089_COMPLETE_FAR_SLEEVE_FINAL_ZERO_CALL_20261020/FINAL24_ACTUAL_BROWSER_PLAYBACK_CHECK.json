@@ -1,0 +1,24 @@
+{
+  "newSceneRenders": 0,
+  "generationCalls": 0,
+  "pageErrors": [],
+  "requestFailures": [],
+  "priorInfrastructureAttempt": {
+    "error": "page.goto: Download is starting",
+    "cause": "Repository static server sends mp4 as download. No scene renderer was called.",
+    "fix": "Read exact MP4 bytes through Playwright route with video/mp4 MIME and an HTML video element."
+  },
+  "playback": {
+    "width": 1920,
+    "height": 1080,
+    "duration": 1,
+    "readyState": 4,
+    "ended": true,
+    "mediaError": null,
+    "totalVideoFrames": 24,
+    "droppedVideoFrames": 0,
+    "corruptedVideoFrames": 0,
+    "currentTime": 1
+  },
+  "pass": true
+}

@@ -1,0 +1,48 @@
+{
+  "status": "HOLD_ONLY_UNCHANGED072_SLEEVE_CUFF_GAP",
+  "reviewed_actual_images": [
+    "F078_FINAL_FULL_ON_GRAY.png",
+    "F084_FINAL_FULL_ON_GRAY.png",
+    "F078_COMPLETE_SHOULDER_SLEEVE_CUFF_3X.png",
+    "F084_COMPLETE_SHOULDER_SLEEVE_CUFF_3X.png",
+    "ALL24_REUSED6_NEW18_ACTUAL_DECODED_CONTACT.png",
+    "THREE_SWITCHES_COMPLETE_ARMS_CONTACTS_ACTUAL_1TO1.png",
+    "THREE_SWITCHES_COMPLETE_FAR_SLEEVE_ACTUAL_1TO1.png",
+    "actual_decoded_keys/S29_F072_ACTUAL_DECODED.png",
+    "actual_decoded_keys/S29_F078_ACTUAL_DECODED.png",
+    "actual_decoded_keys/S29_F084_ACTUAL_DECODED.png"
+  ],
+  "root_normal_brightness_actual_view": true,
+  "independent_61sol_actual_view": true,
+  "fixed078_084_outer_sleeve_teeth_absent": true,
+  "fixed078_084_complete_sleeve_cuff_closed": true,
+  "both_hands_contacts_no_new_visible_failure": true,
+  "one_jade_no_new_duplicate": true,
+  "true_puppets_four_rods_no_visible_jump": true,
+  "blockers": [
+    {
+      "states": [
+        72
+      ],
+      "global_frames": [
+        72,
+        77
+      ],
+      "actual_1920x1080_bbox": [
+        795,
+        500,
+        875,
+        560
+      ],
+      "issue": "远袖口到上臂细透背景斜缝，袖口外端肤色尖角；071→072出现，077→078消失。",
+      "origin": "072 candidate copied byte-exact from prior V3; not changed by this078/084 repair.",
+      "source_RGBA_SHA256": "386830377bc73fc7330a7d7581a597306c9bc252c5daf8400f5c2e0fe5a0855d",
+      "next_work": "072同raw完整袖口语义接回后，仅验证该六帧并重新拼接；本轮限定18帧已完成，不追加渲染。"
+    }
+  ],
+  "root_observation": "原078完整肩袖接回在实景成立；072旧候选残缝使24帧整体HOLD。",
+  "independent_reviewer": "/root/s09_motion_audit_61sol",
+  "independent_observation": "实看确认072..077远袖接上臂透背景细斜缝和肤色尖角。078/084完整肩袖在场景中保持闭合。近掌压布→084换夹真实前沿、远单镯手持续夹同布可读，未见新增断腕/重掌、假夹或偶杆跳变。0修改/生成/渲染。",
+  "ready_claimed": false,
+  "full_shot_reviewed": false
+}
