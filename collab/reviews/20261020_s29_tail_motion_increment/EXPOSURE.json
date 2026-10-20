@@ -1,0 +1,148 @@
+{
+  "fps": 24,
+  "duration_seconds": 12,
+  "frame_count": 288,
+  "scope": [
+    132,
+    239
+  ],
+  "changed_frames": [
+    132,
+    187
+  ],
+  "reuse_unaffected_actual_frames": [
+    [
+      0,
+      131
+    ],
+    [
+      188,
+      287
+    ]
+  ],
+  "phone_frame": 132,
+  "xiaoman_turn": "8.1–8.42 seconds; original implementation untouched",
+  "warm_closeup_first_frame": 240,
+  "rows": [
+    {
+      "first": 126,
+      "last": 131,
+      "file": "lift",
+      "label": "existing reference — unchanged",
+      "frames": 6,
+      "seconds": 0.25
+    },
+    {
+      "first": 132,
+      "last": 135,
+      "file": "tailfix_sweep_start",
+      "label": "continue the original pinch; far cloth edge begins travelling",
+      "frames": 4,
+      "seconds": 0.16666666666666666
+    },
+    {
+      "first": 136,
+      "last": 138,
+      "file": "tailfix_edge_out_a",
+      "label": "far grip carries cloth outward",
+      "frames": 3,
+      "seconds": 0.125
+    },
+    {
+      "first": 139,
+      "last": 141,
+      "file": "tailfix_edge_out_b",
+      "label": "far grip continues outward without releasing",
+      "frames": 3,
+      "seconds": 0.125
+    },
+    {
+      "first": 142,
+      "last": 144,
+      "file": "tailfix_grip_roll",
+      "label": "near wrist rolls through a three-quarter grip",
+      "frames": 3,
+      "seconds": 0.125
+    },
+    {
+      "first": 145,
+      "last": 148,
+      "file": "tailfix_cover_low",
+      "label": "cloth spreads over the covered bundle",
+      "frames": 4,
+      "seconds": 0.16666666666666666
+    },
+    {
+      "first": 149,
+      "last": 153,
+      "file": "lowering",
+      "label": "existing controlled lowering key",
+      "frames": 5,
+      "seconds": 0.20833333333333334
+    },
+    {
+      "first": 154,
+      "last": 156,
+      "file": "tailfix_lower_end",
+      "label": "last controlled lowering before release",
+      "frames": 3,
+      "seconds": 0.125
+    },
+    {
+      "first": 157,
+      "last": 159,
+      "file": "tailfix_thumb_release",
+      "label": "thumb leaves the pinch while fingertips support cloth",
+      "frames": 3,
+      "seconds": 0.125
+    },
+    {
+      "first": 160,
+      "last": 162,
+      "file": "tailfix_finger_open",
+      "label": "fingers unfurl without reversing wrist",
+      "frames": 3,
+      "seconds": 0.125
+    },
+    {
+      "first": 163,
+      "last": 166,
+      "file": "tailfix_fingertip_touch",
+      "label": "curved fingertips arrive on cloth",
+      "frames": 4,
+      "seconds": 0.16666666666666666
+    },
+    {
+      "first": 167,
+      "last": 171,
+      "file": "tailfix_palm_approach",
+      "label": "palm heel approaches the bundle",
+      "frames": 5,
+      "seconds": 0.20833333333333334
+    },
+    {
+      "first": 172,
+      "last": 178,
+      "file": "contact",
+      "label": "existing palm contact key",
+      "frames": 7,
+      "seconds": 0.2916666666666667
+    },
+    {
+      "first": 179,
+      "last": 187,
+      "file": "tailfix_settle_ease",
+      "label": "hands soften into the supported rest",
+      "frames": 9,
+      "seconds": 0.375
+    },
+    {
+      "first": 188,
+      "last": 239,
+      "file": "settled",
+      "label": "existing final bundle position; completed rest while Xiaoman turns",
+      "frames": 52,
+      "seconds": 2.1666666666666665
+    }
+  ]
+}
