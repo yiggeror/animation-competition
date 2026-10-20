@@ -1,0 +1,585 @@
+{
+  "startUTC": "2026-10-20T00:41:00.030Z",
+  "generationCalls": 0,
+  "sourceBefore": {
+    "js/paint/shots/s29.js": "0aa013b4462457d0142c45e20ed806861a1450c69a60e9e39f01d1be2a6852f9",
+    "js/paint/paintshot.js": "7d61a8e3cfa595b5a2877ce3624c2d8d186a1578cc684a8948471eb0eedca975",
+    "js/paint/shots/s29_lamp.js": "fa2a68fecf715a810bc0a4319eb64a874f7ed36b6640043ffa831550474f6ae1",
+    "assets/paint/bg_01_room_wide.png": "3bc55f3b9d238b4242eddbd06a0c3f81a394673fa19c4f33ef263ba65d4e01ed"
+  },
+  "responses": [
+    {
+      "url": "http://127.0.0.1:37703/collab/reviews/cloud_s29_drawn_20261019/F072_COMPLETE_SLEEVE_REUSED18_NEW6_ZERO_CALL_20261020/scene.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/collab/reviews/cloud_s29_drawn_20261019/F072_COMPLETE_SLEEVE_REUSED18_NEW6_ZERO_CALL_20261020/scene.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/paint/shots/s29.js?readonlyShotExport=1",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/paint/paintshot.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/paint/shots/s29_lamp.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/lamp/turtle.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/puppet.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/lamp/s06_key.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/lamp/s08_back.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/lamp/crane.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/lamp/gl.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/lamp/shaders.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/shadowplay.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/lamp/scenery.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/lamp/xm_rig.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/lamp/cards.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/lamp/xiaoman.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/lib/draw.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/lib/figure.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/js/lib/core.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/collab/reviews/cloud_s29_drawn_20261019/F072_COMPLETE_SLEEVE_REUSED18_NEW6_ZERO_CALL_20261020/SOURCES_EXPOSURE_AND_T_LAYER.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/collab/reviews/cloud_s29_drawn_20261019/F072_COMPLETE_SLEEVE_REUSED18_NEW6_ZERO_CALL_20261020/F072_COMPLETE_SLEEVE_FINAL_RGBA.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/assets/paint/bg_01_room_wide.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/assets/chars/g29_wrap.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/assets/chars/x29_look_a.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:37703/assets/chars/x29_head_b.png",
+      "status": 200
+    }
+  ],
+  "failed": [],
+  "pageerrors": [],
+  "consoleErrors": [],
+  "frames": [
+    {
+      "globalFrame": 72,
+      "localFrame": 0,
+      "state": 72,
+      "t": 3,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.2250996691560817,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "canvasPNG_SHA256": "a5182afa67017ef8f91ed3b0bb1e98f04cb019a933e17fdfe01fbdaa5e6dd691"
+    },
+    {
+      "globalFrame": 73,
+      "localFrame": 1,
+      "state": 72,
+      "t": 3.0416666666666665,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.21931464027590344,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "canvasPNG_SHA256": "9965b4aebf79d4a1e070e785f6415106c7adfca28ba127d502d9e7951f2411ec"
+    },
+    {
+      "globalFrame": 74,
+      "localFrame": 2,
+      "state": 72,
+      "t": 3.0833333333333335,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.21189814073064914,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "canvasPNG_SHA256": "d02bbe9a7fe98afff30b02c61171c3eff8e42899504318822541bedc5ca75b77"
+    },
+    {
+      "globalFrame": 75,
+      "localFrame": 3,
+      "state": 72,
+      "t": 3.125,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.2034766280298968,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "canvasPNG_SHA256": "7a65cd7442e9214a397956f6bbbdc6c5c47b55fecc6c1a1082851010b1267a3f"
+    },
+    {
+      "globalFrame": 76,
+      "localFrame": 4,
+      "state": 72,
+      "t": 3.1666666666666665,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.19476145121927058,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "canvasPNG_SHA256": "554c53b94555b95352eb38f18448a8b33995a7213d30acbf595d2d824240f601"
+    },
+    {
+      "globalFrame": 77,
+      "localFrame": 5,
+      "state": 72,
+      "t": 3.2083333333333335,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.18648876458921418,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "canvasPNG_SHA256": "84481c4f46e2560a253604fa48bc6403be4dd6c35208e57d43edcd3e29fc5df4"
+    }
+  ],
+  "ffmpegCommand": [
+    "ffmpeg",
+    "-y",
+    "-hide_banner",
+    "-loglevel",
+    "warning",
+    "-f",
+    "image2pipe",
+    "-vcodec",
+    "png",
+    "-framerate",
+    "24",
+    "-i",
+    "pipe:0",
+    "-an",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "15",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s29_drawn_20261019/F072_COMPLETE_SLEEVE_REUSED18_NEW6_ZERO_CALL_20261020/S29_F072_F077_NEW6_ACTUAL_SCENE_1080p24.mp4"
+  ],
+  "ffmpegStderr": "",
+  "mp4_SHA256": "4d5c036b6be1a8f6dc4ca8d152b752c7df2ce898f7a8738aa465ae6b3e61aa4c",
+  "sourceAfter": {
+    "js/paint/shots/s29.js": "0aa013b4462457d0142c45e20ed806861a1450c69a60e9e39f01d1be2a6852f9",
+    "js/paint/paintshot.js": "7d61a8e3cfa595b5a2877ce3624c2d8d186a1578cc684a8948471eb0eedca975",
+    "js/paint/shots/s29_lamp.js": "fa2a68fecf715a810bc0a4319eb64a874f7ed36b6640043ffa831550474f6ae1",
+    "assets/paint/bg_01_room_wide.png": "3bc55f3b9d238b4242eddbd06a0c3f81a394673fa19c4f33ef263ba65d4e01ed"
+  },
+  "sourceUnchanged": true,
+  "endUTC": "2026-10-20T00:41:10.063Z",
+  "pass": true
+}
