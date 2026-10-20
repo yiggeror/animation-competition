@@ -1,0 +1,143 @@
+{
+  "status": "FIXED_S12_FINITE_ENTERING_ALPHA_CONSUMPTION_PASSED_NOT_SCENE",
+  "character": "ENTERING_CHARACTER_REAL_RODS_SEPARATE_CANDIDATE.png",
+  "sha256": "9f37731940346c7d3f37d32a51dc09ef98f6e26e68685ef0dfaad8ad74a23769",
+  "canvas": [
+    1672,
+    941
+  ],
+  "raw": "ENTERING_RAW_UNMODIFIED.png",
+  "raw_sha256": "079a565e22097079d556a4afb656a6b3b1e301e6bdd093615d67f8977454b3c9",
+  "rawToMaster": [
+    [
+      0.3970184606565288,
+      -0.04874773736205899,
+      834.3181172375225
+    ],
+    [
+      0.04874773736205899,
+      0.3970184606565288,
+      93.35273128735915
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera": {
+    "pos": [
+      3.05,
+      1.5,
+      1.18
+    ],
+    "target": [
+      1.5,
+      0.42,
+      0.95
+    ],
+    "hfov": 58
+  },
+  "camera_canvas": [
+    1920,
+    1080
+  ],
+  "masterToCAM20": [
+    1.5356339213808416,
+    0,
+    -1.1368683772161603e-15,
+    1.5356339213808399,
+    -55.29501789280528,
+    -18.803172678195892
+  ],
+  "people_registration": {
+    "base_world_m": [
+      1.13,
+      1.1,
+      0
+    ],
+    "ox": 1110,
+    "oy": 920,
+    "pixels_per_cm": 5.833333333333333,
+    "uniform_scale_only": true,
+    "mirrored": false,
+    "individual_body_warp": false,
+    "note": "Original grandmother F000 stage slot; one whole-pair billboard preserves approved relative proportions."
+  },
+  "finite_C_rods": [
+    {
+      "id": "C_B",
+      "A_world": [
+        1.8718940992741835,
+        0.0040000000000000036,
+        1.280877753126372
+      ],
+      "physical_end_world": [
+        1.0512961497831796,
+        0.606756122397249,
+        1.002457514702044
+      ],
+      "length_m": 1.0555632463099818,
+      "diameter_m": 0.007,
+      "master_projected_finite_quad": [
+        [
+          312.85468731679464,
+          164.9147529353552
+        ],
+        [
+          875.0343364796543,
+          321.90965305903813
+        ],
+        [
+          875.907522270982,
+          318.35400928445637
+        ],
+        [
+          313.9028368064491,
+          160.64665072304723
+        ]
+      ],
+      "holder_this_entering_state": "G.R lower-rod hold"
+    },
+    {
+      "id": "C_N",
+      "A_world": [
+        1.5396276638083182,
+        0.004000000000000226,
+        1.2837003115266323
+      ],
+      "physical_end_world": [
+        1.017446334017162,
+        0.6473403771935171,
+        0.991734675968748
+      ],
+      "length_m": 0.8785238269146012,
+      "diameter_m": 0.007,
+      "master_projected_finite_quad": [
+        [
+          461.9078348707894,
+          171.38083514014596
+        ],
+        [
+          901.7657724348197,
+          327.24162211489215
+        ],
+        [
+          902.946909249356,
+          323.7865203759851
+        ],
+        [
+          463.14354780144237,
+          167.7660854829148
+        ]
+      ],
+      "holder_this_entering_state": "G.L upper-rod supporting delivery"
+    }
+  ],
+  "drawing_ownership": "Both entire native hands and wrists unchanged RGB/position; L open thumb with original fine supporting finger, R holds lower rod. Not secure double hold.",
+  "occlusion_scope": "Native front skin covers finite engineering rods; actual scene/child head depth and temporal integration remain external gate.",
+  "support": "Same closed-mother cloth below master y478 and full original lower support; no individual limb move",
+  "count_increment": 0,
+  "new_generation_calls": 0,
+  "review": "S12 actual4x review2026-10-20T09:29UTC: L original supporting finger contacts CN, R cavity holds CB; isolated painted shaft debris removed; no premature double grip"
+}
