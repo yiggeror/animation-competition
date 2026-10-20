@@ -1,0 +1,58 @@
+{
+  "status": "SUPPORT_FIRST_COMPLETE_BODY_SINGLE_TRANSLATION_CANDIDATE",
+  "raw": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x180_x196_seated_settle_zero_call/X183_complete_body_call01_original.png",
+  "raw_sha256": "adad8d86b4a97bbc153e8e56c83596f01b7b124000d27714249d8917e3a1b4ee",
+  "scale": 1.0,
+  "rotation_deg": 0,
+  "translation": [
+    -8.0,
+    -1.0
+  ],
+  "preserved": "Complete native head/chest/hips/skirt/both arms/hands/knees/legs/whole shoes kept as one body; original wooden bench fixed. Shoe silhouette was not used to scale the person.",
+  "manual_physical_guides_native_before_translation": {
+    "pelvis_seat_contact_approx": [
+      451,
+      817
+    ],
+    "near_back_sole_heel_approx": [
+      732,
+      1190
+    ],
+    "far_back_sole_heel_approx": [
+      857,
+      1170
+    ]
+  },
+  "original_physical_guides_approx": {
+    "pelvis_seat_contact": [
+      452,
+      819
+    ],
+    "near_back_sole_heel": [
+      727,
+      1190
+    ],
+    "far_back_sole_heel": [
+      846,
+      1171
+    ]
+  },
+  "approx_residual_after_translation": {
+    "pelvis_seat": [
+      -9,
+      -3
+    ],
+    "near_heel": [
+      -3,
+      -1
+    ],
+    "far_heel": [
+      3,
+      -2
+    ]
+  },
+  "note": "Approximate contact landmarks from actual images, not a claim of identical shoe outline. Increased forward lean is real; raw head/chest not stretched or shrunk. Parent to judge actual 180/183/186 exposure.",
+  "final": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x180_x196_seated_settle_zero_call/X183_complete_physical_registered_candidate.png",
+  "final_sha256": "d1304ef7ba7203b72793ea8852854110c66230027601dbeeabf7f55212257251",
+  "superseded_bad_method": "X183_complete_registered_candidate.png scaled by the changed red-shoe outline and clipped native hands; not for locking or downstream use."
+}

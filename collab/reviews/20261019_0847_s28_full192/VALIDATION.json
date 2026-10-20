@@ -1,0 +1,19 @@
+{
+  "phone_region_exact_after_one_scrOn_replacement": true,
+  "PH_floor_phone_top_body_otherwise_identical_to_authority": true,
+  "stage_frames": 132,
+  "phone_frames": 60,
+  "all_192_exactly_once": true,
+  "director_commit": "30588f55d1e653550e9cf4b5236a05e7d1f54ee9",
+  "old_regression_expected_failures": [
+    "cut3.2 not5.5",
+    "F132 icon opacity0 not1"
+  ],
+  "new_gate_test": "PASS",
+  "wrapper_dispatch_test": "PASS",
+  "syntax_check": "PASS",
+  "phone_CPU_render_132_162_191": "PASS; reviewed132/191,1920x1080",
+  "browser_full192_or_phone_render": "NOT RUN locally; existing cloud command supplied",
+  "audio_EDL_changed": false,
+  "stage_frozen_directory_changed": false
+}

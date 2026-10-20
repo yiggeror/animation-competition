@@ -1,0 +1,104 @@
+{
+  "commit": "428d40d1a73ccbda9111324965e7ceec4cb00a1d",
+  "independent_master_source_commit": "428d40d1a73ccbda9111324965e7ceec4cb00a1d",
+  "source_sha256": {
+    "audio/build.py": "f3dbeae9501c72ea3a0ea15e67cc4bcaa971a2d478ac0bd4d05e842ebff71e41",
+    "audio/inst.py": "c6b8f630335dfabe6302e21dfb880dae34fd02b37a475418d1f0f57112d98275",
+    "audio/score.py": "2171a6189a971a1b88b7619fc92ced65d015cada8894e59362ddb04e67f40b2e",
+    "audio/sfx.py": "34943517c83815b8499f28ebb43bef57b377d827cef1b7375de5d16a320e6dc2",
+    "package.json": "7435fe87be491d71687e23a98dabe79423370904520a23e57d13ce65ce7cbde7",
+    "js/film/edl.js": "ab53f239c5a7012c2a67ab1484181d3ca2d4a881237323e8e1da72e9761cd261"
+  },
+  "independent_master_sha256": "0f5380057fb73100b1cc03057223a4a0d8022bdd6da06652dcd70ec30f7fbf51",
+  "subjective_listening": false,
+  "shots": {
+    "S30": {
+      "mp4_sha256": "df47e3f2edb64bef7246c1b85b38f2ae04d15944bd76719ae321284ff46a8e14",
+      "pcm_sha256": "ab815b20dc242b02ae5b0b9a9ca42ad529b05eaf2bf71471887a6b26ce354c5c",
+      "video_stream_identical_to_approved_silent": true,
+      "h264_sha256": "2e67feeaef7c29e88916c2a532bd0f75cc069e622fa033d574896ccc8f0f03e2",
+      "frames": 288,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "fps": "24/1",
+      "video_duration": "12.000000",
+      "aac_duration": "12.000000",
+      "video_start": "0.000000",
+      "aac_start": "0.000000",
+      "pcm_samples": 576000,
+      "pcm_rate": 48000,
+      "master_slice": [
+        8740000,
+        9316000
+      ],
+      "pcm_master_max_lsb": 3.0,
+      "pcm_master_rmse_lsb": 0.010744830798523022,
+      "aac_decoded_samples": 576512,
+      "aac_best_lag_samples": 0,
+      "aac_pcm_correlation": 0.99948408206969,
+      "aac_true_peak_dbtp": -4.49,
+      "aac_integrated_lufs": -19.76,
+      "aac_first_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": -1024,
+        "pts_time": "-0.021333",
+        "dts": -1024,
+        "dts_time": "-0.021333",
+        "duration": 1024,
+        "duration_time": "0.021333",
+        "size": "537",
+        "pos": "432177",
+        "flags": "KD_",
+        "side_data_list": [
+          {
+            "side_data_type": "Skip Samples",
+            "skip_samples": 1024,
+            "discard_padding": 0,
+            "skip_reason": 0,
+            "discard_reason": 0
+          }
+        ]
+      },
+      "aac_last_packet": {
+        "codec_type": "audio",
+        "stream_index": 1,
+        "pts": 575488,
+        "pts_time": "11.989333",
+        "dts": 575488,
+        "dts_time": "11.989333",
+        "duration": 512,
+        "duration_time": "0.010667",
+        "size": "629",
+        "pos": "31151766",
+        "flags": "K__"
+      },
+      "event_windows": [
+        {
+          "time": 1.125,
+          "frame_at_24fps": 27.0,
+          "sample": 54000,
+          "window_max_lsb": 2.0,
+          "window_rmse_lsb": 0.02104063528825433
+        },
+        {
+          "time": 6.0,
+          "frame_at_24fps": 144.0,
+          "sample": 288000,
+          "window_max_lsb": 2.0,
+          "window_rmse_lsb": 0.013501543121683042
+        }
+      ],
+      "edl": {
+        "id": "S30",
+        "scene": 12,
+        "line": "paint",
+        "dur": 12,
+        "mod": "js/paint/shots/s30_drawn.js",
+        "text": "全景：小满走到门边，踮脚拉灯绳——\"咔嗒\"，暗了；马灯的光重新显出来"
+      }
+    }
+  }
+}

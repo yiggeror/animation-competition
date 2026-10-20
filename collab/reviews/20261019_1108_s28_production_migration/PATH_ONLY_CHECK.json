@@ -1,0 +1,125 @@
+{
+  "source_commit": "8a86a552fba1a822aae0f27ca53e2b0defb4e392",
+  "modules": [
+    {
+      "path": "js/anim/s28/stage_renderer.js",
+      "literal_replacements": [
+        {
+          "from": "geometry.json",
+          "to": "../../../assets/chars/s28/geometry.json"
+        }
+      ],
+      "reverse_restore_byte_identical": true
+    },
+    {
+      "path": "js/anim/s28/phone_insert.js",
+      "literal_replacements": [
+        {
+          "from": "../../../js/paint/paintshot.js",
+          "to": "../../paint/paintshot.js"
+        },
+        {
+          "from": "../../../js/code/phone.js",
+          "to": "../../code/phone.js"
+        }
+      ],
+      "reverse_restore_byte_identical": true
+    },
+    {
+      "path": "js/anim/s28/timeline.js",
+      "literal_replacements": [],
+      "reverse_restore_byte_identical": true
+    },
+    {
+      "path": "js/anim/s28/index.js",
+      "literal_replacements": [
+        {
+          "from": "../20261019_0847_s28_full192/s28_full192.mjs",
+          "to": "./timeline.js"
+        },
+        {
+          "from": "../20261019_0847_s28_full192/phone_insert.mjs",
+          "to": "./phone_insert.js"
+        },
+        {
+          "from": "../20261019_0847_s28_full192/s28_full192.mjs",
+          "to": "./timeline.js"
+        },
+        {
+          "from": "./stage_adapter.mjs",
+          "to": "./stage_adapter.js"
+        }
+      ],
+      "reverse_restore_byte_identical": true
+    },
+    {
+      "path": "js/anim/s28/float_gl_adapter.js",
+      "literal_replacements": [],
+      "reverse_restore_byte_identical": true
+    },
+    {
+      "path": "js/anim/s28/stage_adapter.js",
+      "literal_replacements": [
+        {
+          "from": "./float_gl_adapter.mjs",
+          "to": "./float_gl_adapter.js"
+        },
+        {
+          "from": "../../../js/lamp/gl.js",
+          "to": "../../lamp/gl.js"
+        },
+        {
+          "from": "../20261019_0830_s28_stage_module/s28_stage_candidate.mjs",
+          "to": "./stage_renderer.js"
+        },
+        {
+          "from": "../../../js/lamp/s06_key.js",
+          "to": "../../lamp/s06_key.js"
+        },
+        {
+          "from": "../../../js/lamp/shots/s26.js",
+          "to": "../../lamp/shots/s26.js"
+        },
+        {
+          "from": "../../../js/lamp/choreo.js",
+          "to": "../../lamp/choreo.js"
+        },
+        {
+          "from": "../../../js/puppet.js",
+          "to": "../../puppet.js"
+        },
+        {
+          "from": "../../../js/lamp/s08_back.js",
+          "to": "../../lamp/s08_back.js"
+        },
+        {
+          "from": "../20261019_0830_s28_stage_module/geometry.json",
+          "to": "../../../assets/chars/s28/geometry.json"
+        },
+        {
+          "from": "../20261019_0820_s28_locked_stage_assets/",
+          "to": "../../../assets/chars/s28/"
+        },
+        {
+          "from": "../20261019_0830_s28_stage_module/local/",
+          "to": "../../../assets/chars/s28/local/"
+        }
+      ],
+      "reverse_restore_byte_identical": true
+    }
+  ],
+  "bindings_source_occurrences": 29,
+  "registration_metadata_paths": [
+    [
+      "/workspace/scratch/f060b5601755/s28_first_input_20261019_0540/call001/REGISTRATION_CANDIDATE.json",
+      "assets/chars/s28/geometry.json#XMmatrix"
+    ],
+    [
+      "/workspace/scratch/f060b5601755/s28_rod_clearance_review/actual_grandma_registration/ACTUAL_REGISTRATION.json",
+      "assets/chars/s28/geometry.json#GMmatrix"
+    ]
+  ],
+  "bindings_reverse_byte_identical": true,
+  "status": "LOCAL_ONLY; full192 actual review PASS at03d5a24; production migration and actual six-PNG equivalence still pending",
+  "full192_review": "../full192_actual_03d5a24/INDEPENDENT_REVIEW.json"
+}

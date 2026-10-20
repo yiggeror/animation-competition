@@ -1,0 +1,430 @@
+{
+  "status": "ZERO_CALL_FULL_VOLUME_REACH_GUIDES_NOT_GENERATION_INPUTS",
+  "existing095_final_sha256": "2fb5693f3cf4b90cf0738747660106b69027d3f1d69d5f160e1806db5f5d5b76",
+  "five_causal_beats": [
+    {
+      "id": "A_reach",
+      "label": "A / turn and lower to handle",
+      "hip": [
+        500.0,
+        790.0
+      ],
+      "rotation": 14,
+      "near_wrist": [
+        650,
+        660
+      ],
+      "contact": null,
+      "far_wrist": [
+        600,
+        680
+      ],
+      "lamp": [
+        463.0,
+        815.0
+      ],
+      "shoulders": {
+        "near": [
+          639.7923689834397,
+          551.7415403936351
+        ],
+        "far": [
+          673.234969741495,
+          508.5490357830279
+        ]
+      },
+      "elbows": {
+        "near": [
+          566.8450937085993,
+          604.4548691632798
+        ],
+        "far": [
+          621.8039752784055,
+          582.4060111376798
+        ]
+      },
+      "arm_lengths": [
+        90,
+        100
+      ],
+      "knees": [
+        [
+          547.9711338192049,
+          900.4941815202972
+        ],
+        [
+          646.967831495856,
+          877.8977343228522
+        ]
+      ],
+      "ankles": [
+        [
+          438.0,
+          995.0
+        ],
+        [
+          555.0,
+          990.0
+        ]
+      ],
+      "leg_lengths": [
+        140,
+        145
+      ],
+      "hand_cause": "whole real empty palm",
+      "guide": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/grandma_lamp_G096_G131_zero_call/A_reach_COMPLETE_VOLUME_GUIDE_NOT_CALL_INPUT.jpg"
+    },
+    {
+      "id": "B_grasp",
+      "label": "B / grip handle, base still on box",
+      "hip": [
+        350.0,
+        850.0
+      ],
+      "rotation": 48,
+      "near_wrist": [
+        485,
+        755
+      ],
+      "contact": [
+        463.0,
+        815.0
+      ],
+      "far_wrist": [
+        620,
+        770
+      ],
+      "lamp": [
+        463.0,
+        815.0
+      ],
+      "shoulders": {
+        "near": [
+          599.1255660475005,
+          730.6456857021393
+        ],
+        "far": [
+          651.003680661265,
+          713.538341544699
+        ]
+      },
+      "elbows": {
+        "near": [
+          534.4356088925576,
+          668.0740512078121
+        ],
+        "far": [
+          565.2099995856822,
+          686.3456166444396
+        ]
+      },
+      "arm_lengths": [
+        90,
+        100
+      ],
+      "knees": [
+        [
+          451.99836171937847,
+          850.6772856783332
+        ],
+        [
+          527.9783866578243,
+          847.540067343881
+        ]
+      ],
+      "ankles": [
+        [
+          438.0,
+          995.0
+        ],
+        [
+          555.0,
+          990.0
+        ]
+      ],
+      "leg_lengths": [
+        140,
+        145
+      ],
+      "hand_cause": "whole real B grip as guide",
+      "guide": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/grandma_lamp_G096_G131_zero_call/B_grasp_COMPLETE_VOLUME_GUIDE_NOT_CALL_INPUT.jpg"
+    },
+    {
+      "id": "C_lift",
+      "label": "C / whole lamp lifts in hand",
+      "hip": [
+        490.0,
+        780.0
+      ],
+      "rotation": 16,
+      "near_wrist": [
+        665,
+        590
+      ],
+      "contact": [
+        685,
+        650
+      ],
+      "far_wrist": [
+        620,
+        675
+      ],
+      "lamp": [
+        685,
+        650
+      ],
+      "shoulders": {
+        "near": [
+          638.0223115746936,
+          546.7653643300714
+        ],
+        "far": [
+          672.9519366761866,
+          504.7663013611294
+        ]
+      },
+      "elbows": {
+        "near": [
+          565.5086867815752,
+          600.0736584254826
+        ],
+        "far": [
+          616.7401984066106,
+          575.0531456544443
+        ]
+      },
+      "arm_lengths": [
+        90,
+        100
+      ],
+      "knees": [
+        [
+          538.2718329502463,
+          890.2595612153649
+        ],
+        [
+          635.6543888170316,
+          869.5015785806673
+        ]
+      ],
+      "ankles": [
+        [
+          438.0,
+          995.0
+        ],
+        [
+          555.0,
+          990.0
+        ]
+      ],
+      "leg_lengths": [
+        140,
+        145
+      ],
+      "hand_cause": "whole real B grip as guide",
+      "guide": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/grandma_lamp_G096_G131_zero_call/C_lift_COMPLETE_VOLUME_GUIDE_NOT_CALL_INPUT.jpg"
+    },
+    {
+      "id": "D_hook_load",
+      "label": "D / handle enters hook, rope bears",
+      "hip": [
+        525.0,
+        745.0
+      ],
+      "rotation": 6,
+      "near_wrist": [
+        790,
+        445
+      ],
+      "contact": [
+        833.0,
+        413.0
+      ],
+      "far_wrist": [
+        645,
+        610
+      ],
+      "lamp": [
+        833.0,
+        413.0
+      ],
+      "shoulders": {
+        "near": [
+          630.2727506046535,
+          489.60491786228454
+        ],
+        "far": [
+          657.3786554661382,
+          442.17844928575926
+        ]
+      },
+      "elbows": {
+        "near": [
+          717.0660226861713,
+          513.4151661050818
+        ],
+        "far": [
+          607.6920651796207,
+          517.2200560496055
+        ]
+      },
+      "arm_lengths": [
+        90,
+        100
+      ],
+      "knees": [
+        [
+          525.7157644109725,
+          879.5402898245505
+        ],
+        [
+          631.7321501088697,
+          866.9667640851875
+        ]
+      ],
+      "ankles": [
+        [
+          438.0,
+          995.0
+        ],
+        [
+          555.0,
+          990.0
+        ]
+      ],
+      "leg_lengths": [
+        140,
+        145
+      ],
+      "hand_cause": "whole real B grip as guide",
+      "guide": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/grandma_lamp_G096_G131_zero_call/D_hook_load_COMPLETE_VOLUME_GUIDE_NOT_CALL_INPUT.jpg"
+    },
+    {
+      "id": "E_release",
+      "label": "E / release only after rope taut",
+      "hip": [
+        525.0,
+        745.0
+      ],
+      "rotation": 6,
+      "near_wrist": [
+        738,
+        501
+      ],
+      "contact": null,
+      "far_wrist": [
+        645,
+        610
+      ],
+      "lamp": [
+        833.0,
+        413.0
+      ],
+      "shoulders": {
+        "near": [
+          630.2727506046535,
+          489.60491786228454
+        ],
+        "far": [
+          657.3786554661382,
+          442.17844928575926
+        ]
+      },
+      "elbows": {
+        "near": [
+          667.2407094422143,
+          571.6620322362644
+        ],
+        "far": [
+          607.6920651796207,
+          517.2200560496055
+        ]
+      },
+      "arm_lengths": [
+        90,
+        100
+      ],
+      "knees": [
+        [
+          525.7157644109725,
+          879.5402898245505
+        ],
+        [
+          631.7321501088697,
+          866.9667640851875
+        ]
+      ],
+      "ankles": [
+        [
+          438.0,
+          995.0
+        ],
+        [
+          555.0,
+          990.0
+        ]
+      ],
+      "leg_lengths": [
+        140,
+        145
+      ],
+      "hand_cause": "whole real empty palm",
+      "guide": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/grandma_lamp_G096_G131_zero_call/E_release_COMPLETE_VOLUME_GUIDE_NOT_CALL_INPUT.jpg"
+    }
+  ],
+  "physical_lamp_height_m_assumption": 0.3488372093023256,
+  "pickup_handle_stage": [
+    463.0,
+    815.0
+  ],
+  "hook_stage": [
+    833.0,
+    413.0
+  ],
+  "stage_floor_y": 1180,
+  "stage_px_per_m": 430,
+  "same_work_stool_and_true_shoes": "original unchanged layers for all five",
+  "native_redraw_required": "Every full body/head-neck-torso/hips/legs and complete sleeves/arms must be generated from approved unique whole volume; guide pieces are not finals.",
+  "critical_visibility": "Ghost sheet and planar box/rope are reach-only helpers, not physical scene registration. S15 optical source is the priority; true camera/prop-size/body-world mapping awaits director gate.",
+  "world_registration_proposal": {
+    "work_stool_center": [
+      1.35,
+      4.2
+    ],
+    "work_stool_top_z": 0.37,
+    "box_unchanged_extent": [
+      [
+        0.08,
+        0.88
+      ],
+      [
+        4.48,
+        4.95
+      ],
+      [
+        0,
+        0.5
+      ]
+    ],
+    "pickup_lamp_base": [
+      0.78,
+      4.6,
+      0.5
+    ],
+    "original_lamp_flame": [
+      1.3,
+      4.7,
+      1.55
+    ],
+    "candidate_visible_lamp_flame": [
+      1.95,
+      4.7,
+      1.55
+    ],
+    "low_hook_z": 1.7845803842264913,
+    "not_frozen": "Original exploration retained only as provenance; east1.95 is NOT adopted. Follow S14_S15_LAMP_COORDINATES_OCCLUSION_THIN.json. Five full-body shapes demonstrate causal articulation only, not common-world positions.",
+    "status": "SUPERSEDED_UNAPPROVED_GEOMETRY_SKETCH_NOT_FOR_SCENE_USE"
+  },
+  "not_frame_ids": "No precise096/099 etc exposure assigned until parent checks causal group",
+  "full_body_reach_cause_only": true
+}

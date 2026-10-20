@@ -1,13 +1,14 @@
 // LOCAL COLLAB CANDIDATE. No change to the production S01 implementation or EDL.
 // Original scene/props/light/camera, with only characters replaced by approved drawings.
+import { openingPowerStripLayer, HELD_PHONE_PORT } from './opening_power_strip.js';
 import { renderPaint, loadImg } from '/js/paint/paintshot.js';
 import { COIL, COILC, FAN } from '/js/paint/shots/s01.js';
 import { lamp as drawLamp, LX, LB } from '/js/code/s08.js';
-import { DURATION, FRAME_COUNT, REGISTRATION, ASSET_INFO, frameIndex, frameAssets } from './s01_drawn_timeline.js';
+import { DURATION, FRAME_COUNT, REGISTRATION, ASSET_INFO, frameIndex, frameAssets } from '/js/anim/s01_drawn_timeline.js';
 export { DURATION, FRAME_COUNT };
 const BW = 1672, BH = 941;
 const tv = (t) => 0.3 + 0.12 * Math.sin(t * 3.1) + 0.08 * Math.sin(t * 7.7 + 1) + (Math.sin(t * 1.3) > 0.85 ? 0.15 : 0);
-const FRAMES = new URL('../../assets/chars/s01/', import.meta.url);
+const FRAMES = new URL('/assets/chars/s01/', import.meta.url);
 const verifiedImages = new Map();
 async function lockedImage(filename) {
   if (!verifiedImages.has(filename)) verifiedImages.set(filename, (async () => {
@@ -51,6 +52,7 @@ export const shot = {
     return [
       { img: COILC, x: COIL[0] - 60, y: COIL[1] - 34, sc: 1 },
       cachedLamp ||= tableLamp(),
+      openingPowerStripLayer(HELD_PHONE_PORT),
       { img: X, ...REGISTRATION.X, contact: { a: 0.4, blur: 3, sy: 1, dx: -2, dy: 3 } },   // 接地影子（Opus 10-18）：趴着，影子在身子正下方露一圈；奶奶和凳子在灯的右前方，影子往镜头这边、略往右
       cachedStool ||= originalStoolLayer(),
       { img: G, ...REGISTRATION.G, contact: { a: 0.45, blur: 4, sy: -0.07, skew: 0.5 } }, // Basin, beans, hands and phone are already in the drawings.

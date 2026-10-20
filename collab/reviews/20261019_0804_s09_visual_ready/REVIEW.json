@@ -1,0 +1,47 @@
+{
+  "status": "PASS_FRAME_LEVEL_COMPLETE_S09_VISUAL",
+  "source_commit": "07ae7dff749abd53394e05b1c37f232afee67791",
+  "actual_commit": "a30342c47283ca9ccc5625628f4b2ab752f5003d",
+  "sha256": "6d3d244ae703c024f4af5e79e71da2e41fac8f70761902e00196badaf3ae1b15",
+  "independent_ffprobe": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "frames": 96,
+    "duration": 4,
+    "audio_streams": 0
+  },
+  "main_independent_decoded_states": [
+    0,
+    8,
+    14,
+    18,
+    26,
+    31,
+    37,
+    42,
+    44,
+    48,
+    52,
+    56,
+    58,
+    60,
+    62,
+    63,
+    69,
+    73,
+    77,
+    85
+  ],
+  "main_detail_tables": [
+    "first_switch_fail_reset",
+    "both_tail_contacts_and_rebounds",
+    "whole058_060_062_063_bridge",
+    "072_dark_to073_first_light",
+    "073_077_085_whole_head_neck"
+  ],
+  "scope": "Actual encoded picture/shot gate. Not a subjective real-time playback assertion or soundtrack acceptance.",
+  "production_assets": 23,
+  "reviews_requests": 0,
+  "remaining": "Opus subjective timing/director final; new audio/EDL integration"
+}

@@ -1,0 +1,12 @@
+import {createFloatStageAdapter} from './float_gl_adapter.js';
+import {GL} from '../../lamp/gl.js';
+import {createS28StageCandidate,freezeS27End,bitmapLayer,project} from './stage_renderer.js';
+import {renderShot,S,billboardM,DEBUG} from '../../lamp/s06_key.js';
+import {cast} from '../../lamp/shots/s26.js';
+import * as choreo from '../../lamp/choreo.js';
+import {drawPuppet,solve,pointOn} from '../../puppet.js';
+import {makeLamp} from '../../lamp/s08_back.js';
+const geometry=await(await fetch(new URL('../../../assets/chars/s28/geometry.json',import.meta.url))).json();
+const lamp=makeLamp();
+const sheetAtEnd=freezeS27End(cast,choreo,geometry);
+export const renderer=await createFloatStageAdapter({createStage:createS28StageCandidate,GL,DEBUG,assetsRoot:'../../../assets/chars/s28/',repoRoot:'../../../',bindingsFile:'FRAME_BINDINGS.json',localRoot:'../../../assets/chars/s28/local/',geometry,renderShot,sceneState:S,sheetAtEnd,drawPuppet,extraLayers:async({hostCam,cam})=>{const base=[S.lamp.x,S.lamp.y,S.lamp.z],m=billboardM(hostCam,base,lamp.ox,lamp.oy,lamp.K).map(v=>v/cam.scale),z=project(base,cam)[2];return['metal','glass','flame'].map(k=>bitmapLayer({maps:lamp[k],m,depthCamera:z,cam,id:'lamp_'+k}));}});

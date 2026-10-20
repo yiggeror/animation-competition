@@ -1,0 +1,17 @@
+{
+  "status": "LOCAL_BROWSER_UNAVAILABLE_DO_NOT_RETRY",
+  "attempts": [
+    {
+      "mode": "ordinary exec sandbox",
+      "result": "Chromium exited SIGABRT before browser created",
+      "actual_error": "FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)"
+    },
+    {
+      "mode": "one require_escalated exec attempt",
+      "result": "wrapper initialization exit1, browser never launched",
+      "actual_error": "bwrap: Can't create file /home/agent/.codex/sessions: Read-only file system"
+    }
+  ],
+  "restricted_path_accessed_or_modified": false,
+  "parent_instruction": "Stop local browser attempts; provide repository-root minimal renderer for original cloud execution."
+}

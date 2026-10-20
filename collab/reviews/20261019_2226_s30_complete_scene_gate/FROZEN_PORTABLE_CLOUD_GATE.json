@@ -1,0 +1,77 @@
+{
+  "status": "FROZEN_FOR_20_KEYFRAME_ORIGINAL_CLOUD_GATE_ONLY",
+  "review_directory": "collab/reviews/20261019_2226_s30_complete_scene_gate",
+  "command_from_original_repo_root": "node collab/reviews/20261019_2226_s30_complete_scene_gate/render_repository_keyframes.cjs",
+  "directory_independent": true,
+  "module_destination": "js/paint/shots/s30_drawn.js",
+  "assets_manifest": "RAW_ASSET_REUSE_SHA.json",
+  "report_relative_to_script": "actual_browser_frames/ACTUAL_BROWSER_RENDER_REPORT.json",
+  "default_saved_frames": [
+    0,
+    26,
+    27,
+    39,
+    40,
+    54,
+    96,
+    114,
+    120,
+    132,
+    138,
+    143,
+    144,
+    146,
+    147,
+    162,
+    180,
+    189,
+    190,
+    287
+  ],
+  "unsaved_isolation_rerenders": [
+    120,
+    190,
+    0,
+    190,
+    120
+  ],
+  "full_288_execution": "NOT_REQUESTED_NOW; wait for this keyframe gate",
+  "local_browser_attempts_added": 0,
+  "files": [
+    {
+      "file": "s30_drawn.js",
+      "bytes": 54745,
+      "sha256": "edfdd2cb5e4ae95f639bab6ef58bd2253918e4a3b746a11065336a2d067170d4"
+    },
+    {
+      "file": "render_repository_keyframes.cjs",
+      "bytes": 6533,
+      "sha256": "ee1be7b737925a68cbb5b252e9ad9282b681580b9ce6ecc50da97f0cfcc9931f"
+    },
+    {
+      "file": "RAW_ASSET_REUSE_SHA.json",
+      "bytes": 13924,
+      "sha256": "6fd3c186166af0251253388dc17a30fef728dd539a9e04e6dac9f4ca3421b238"
+    },
+    {
+      "file": "PORTABLE_ENTRY_AND_ORIGINAL_TAIL_AUDIT.json",
+      "bytes": 7891,
+      "sha256": "0d8f74f771e140a888c4380d9d047cc157be3cdda273e6f97c0a71cf15e4ab3b"
+    },
+    {
+      "file": "CPU_RANDOM_ACCESS_ISOLATION.json",
+      "bytes": 1745,
+      "sha256": "74c7e6cfa6065269afcca18d18f98572d0c17d0179089b5c0e4d1a5fb3fd996c"
+    },
+    {
+      "file": "ALL_288_STATE_ASSERTIONS.json",
+      "bytes": 638,
+      "sha256": "37a0beb99c47864eaa75e9ef79e636893612e529b5ccf2d66cfb193ebb6aff10"
+    },
+    {
+      "file": "README_HANDOFF.md",
+      "bytes": 5419,
+      "sha256": "0702ffa91225d274eacd68c388109f0e94278f7bfe872069229adc0e6e09e6f6"
+    }
+  ]
+}

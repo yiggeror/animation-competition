@@ -1,0 +1,94 @@
+{
+  "status": "COMPLETE_NATIVE_BODY_SINGLE_SIMILARITY_AND_MINIMAL_CLOTH_COLOUR_CANDIDATE",
+  "frame": 180,
+  "scale": 0.9960193895347388,
+  "rotation_deg": 0,
+  "translation": [
+    3.3449648917700188,
+    4.078827957124531
+  ],
+  "registration_anchor": "complete pair of red sandals, global similarity only; exact original legs and bench retained under same native complete hand silhouettes",
+  "raw_sha256": "2b6b7646b9fcb01b67a7fa17586e9644f5ebfd133d914810c52ea4745ce8455c",
+  "final_sha256": "6ebcbbec27e50bc6f100dbd9955f6c9830177602ac45d693fd6dec86dce8e661",
+  "palette_same_mother_semantic_mean_rgb": {
+    "hair": {
+      "mean_rgb": [
+        58.94636691674671,
+        46.92206848212663,
+        41.648866851847046
+      ],
+      "mother_mean_rgb": [
+        56.93118890547503,
+        46.36059613810372,
+        41.26513218086387
+      ],
+      "delta": [
+        2.0151780112716793,
+        0.5614723440229099,
+        0.3837346709831735
+      ],
+      "within4": true
+    },
+    "skin": {
+      "mean_rgb": [
+        251.04653512639624,
+        200.86046810699588,
+        167.09086566725455
+      ],
+      "mother_mean_rgb": [
+        251.82090652254024,
+        199.25068582893175,
+        164.11151373705113
+      ],
+      "delta": [
+        -0.7743713961440051,
+        1.6097822780641309,
+        2.9793519302034213
+      ],
+      "within4": true
+    },
+    "yellow_cloth": {
+      "mean_rgb": [
+        250.27642237738945,
+        207.39290090047226,
+        53.16781852569974
+      ],
+      "mother_mean_rgb": [
+        251.10615251299828,
+        203.55939485846332,
+        61.70865829000578
+      ],
+      "delta": [
+        -0.8297301356088269,
+        3.833506042008935,
+        -8.540839764306043
+      ],
+      "within4": false
+    }
+  },
+  "disconnected_dust_removed_pixels": 3,
+  "no_independent_limb_transform": true,
+  "minimal_native_cloth_colour_calibration": {
+    "same_original_before_final_sha256": "5493731b74eea7dbbc075afebd17ceda213acde20939a11bf5db3351eb968a78",
+    "max_rgb_offset": [
+      0.0,
+      0.0,
+      6.0
+    ],
+    "after_mean_rgb": [
+      250.27642237738945,
+      207.39290090047226,
+      59.15425791333104
+    ],
+    "after_mean_delta_from_mother": [
+      -0.8297301356088269,
+      3.833506042008935,
+      -2.5544003766747423
+    ],
+    "within4": true,
+    "alpha_changed_pixels": 0,
+    "white_core_changed_pixels": 0,
+    "dark_ink_changed_pixels": 0,
+    "rule": "Only semantic native yellow; preserve shading contrast/white dots/ink/alpha, no geometry or arm edits."
+  }
+}

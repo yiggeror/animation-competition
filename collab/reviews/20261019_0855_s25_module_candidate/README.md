@@ -1,0 +1,4 @@
+# S25 candidate, pending actual browser gate
+17 locked drawn poses, 144 frames / 6 seconds / 24fps. New dedicated production-path candidate js/anim/s25_drawn.js; EDL and active old implementation unchanged. Body of author module is unchanged, only compatible render export added. Assets keep original bytes.
+CPU Canvas actual sequence was independently reviewed for landing, release, real-alpha dog formation and both mouth cycles. It does not substitute for Chromium. Landing F029, bark peaks F110/F128.
+Existing cloud: run repo root HTTP on8196; S25_OUTPUT_DIR=/tmp/s25-actual144 node collab/reviews/20261019_0855_s25_module_candidate/render144.cjs; then ffmpeg -framerate 24 -i /tmp/s25-actual144/F%03d.png -c:v libx264 -crf 16 -pix_fmt yuv420p /tmp/s25-actual144/S25_actual144.mp4. Review boundaries029/035/041/044/048/056/064/072/084/106/110/114/126/128/132/143. No new drawing or audio change.

@@ -1,0 +1,97 @@
+{
+  "status": "PARENT_FINAL_LOCKED_147_162_180",
+  "review_utc": "2026-10-19T22:05:12Z",
+  "usable_new_count": 3,
+  "poses": {
+    "F147": {
+      "pose": "F147",
+      "start_frame": 147,
+      "end_frame": 161,
+      "count": 15,
+      "raw": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/release_settle_results/F147/RAW_call01.png",
+      "raw_sha256": "944ec8340cfee1fbdc977513ebf985bd73c3d767b98d248d3429ac407da9b1b2",
+      "matrix_raw_to_scene": [
+        [
+          0.58,
+          0,
+          562.41
+        ],
+        [
+          0,
+          0.58,
+          60.85
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "actual_request": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/release_settle_results/F147/ACTUAL_REQUEST.json",
+      "request_sha256": "40f7d1e039cfa05d9ad30f699df7aedf88f057151022bbec503cdbf646663713",
+      "action": "release_open_hand"
+    },
+    "F162": {
+      "pose": "F162",
+      "start_frame": 162,
+      "end_frame": 179,
+      "count": 18,
+      "raw": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/release_settle_results/F162/RAW_call01.png",
+      "raw_sha256": "ed3fb8413c71bfb385ae0ca0f49f4823645081073777e866c3f8fd6ea9c04e2b",
+      "matrix_raw_to_scene": [
+        [
+          0.58,
+          0,
+          562.41
+        ],
+        [
+          0,
+          0.58,
+          60.85
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "actual_request": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/release_settle_results/F162/ACTUAL_REQUEST.json",
+      "request_sha256": "209fb42d7b451c9fcf996b650f3d9c2ff28991932f34bb0db6a24db688c1d3c5",
+      "action": "whole_right_arm_recovery"
+    },
+    "F180": {
+      "pose": "F180",
+      "start_frame": 180,
+      "end_frame": 189,
+      "count": 10,
+      "raw": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/release_settle_results/F180/RAW_call01.png",
+      "raw_sha256": "e53ef34c923cfd6f5f35d1d4bb661fa23d5c84bb82e7af1b16ae4b6b13f8eac6",
+      "matrix_raw_to_scene": [
+        [
+          0.58,
+          0,
+          562.41
+        ],
+        [
+          0,
+          0.58,
+          60.85
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "actual_request": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/release_settle_results/F180/ACTUAL_REQUEST.json",
+      "request_sha256": "a93462c6d8a244e74875dc48781bf1a9f22ce28b85bbbde0377963eb7efed44d",
+      "action": "relaxed_right_arm_settled"
+    }
+  },
+  "exposure": "/workspace/scratch/f060b5601755/s30_first_inputs_20261019/release_settle_results/ACTUAL_RELEASE_EXPOSURE.json",
+  "notes": [
+    "162 thumb curl inner line read as flex crease at normal size, accepted; no further call.",
+    "All whole raws and one wholebody matrix retained.",
+    "Formal full-scene288f still pending production module review."
+  ]
+}

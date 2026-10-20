@@ -1,0 +1,32 @@
+{
+  "frame": "F060",
+  "calls": 1,
+  "retries": 0,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    254
+  ],
+  "alpha_bbox": [
+    89,
+    14,
+    1004,
+    1486
+  ],
+  "alpha_gt128_bbox": [
+    152,
+    17,
+    890,
+    1477
+  ],
+  "sha256": "650233585de4000c1b53d89ef411f606c6955d29fe41df719b400aac7e7b29af",
+  "request_sha256": "03c81505347bdba19fd027b4a74a9037b8982a2ac2ad15315d42eba8bf7cf5ce",
+  "generated_original": "/workspace/scratch/f060b5601755/generated_images/exec-7b6d874c-d19f-4c31-aa85-5393091af5b4.png",
+  "status": "REJECTED_CALL01_AMBIGUOUS_OR_REPEATED_LEFT_LEADING_LEG_OCCLUSION",
+  "review_note": "Actual F060 repeats F048 under-hem near-trailing-leg-over-far-leading-leg overlap and retains a broad stride; it does not clearly establish the required new near-right leading step. Do not lock or silently relabel feet. Original preserved.",
+  "comparison": "../F048_F060_ACTUAL_LEG_OCCLUSION_QA.jpg"
+}

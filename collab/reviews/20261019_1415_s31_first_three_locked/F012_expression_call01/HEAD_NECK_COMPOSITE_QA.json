@@ -1,0 +1,312 @@
+{
+  "whole_body_registration": {
+    "method": "One robust complete-body similarity from stable original body landmarks; no local face warp",
+    "params_scale_rotation_tx_ty": [
+      0.979386924941445,
+      -0.004934856804008877,
+      5.365488885449378,
+      2.3798104434181537
+    ],
+    "observations": [
+      {
+        "target": [
+          598,
+          441
+        ],
+        "output": [
+          603,
+          451
+        ],
+        "ncc": 0.9783965022848308
+      },
+      {
+        "target": [
+          566,
+          487
+        ],
+        "output": [
+          586,
+          481
+        ],
+        "ncc": 0.443814022055563
+      },
+      {
+        "target": [
+          523,
+          555
+        ],
+        "output": [
+          525,
+          567
+        ],
+        "ncc": 0.8935879943777415
+      },
+      {
+        "target": [
+          588,
+          617
+        ],
+        "output": [
+          592,
+          631
+        ],
+        "ncc": 0.9737934702894896
+      },
+      {
+        "target": [
+          454,
+          519
+        ],
+        "output": [
+          455,
+          530
+        ],
+        "ncc": 0.8663380095692359
+      },
+      {
+        "target": [
+          333,
+          748
+        ],
+        "output": [
+          329,
+          762
+        ],
+        "ncc": 0.8816159761273541
+      },
+      {
+        "target": [
+          719,
+          486
+        ],
+        "output": [
+          727,
+          497
+        ],
+        "ncc": 0.9551987399361258
+      },
+      {
+        "target": [
+          790,
+          598
+        ],
+        "output": [
+          800,
+          614
+        ],
+        "ncc": 0.607502636020491
+      },
+      {
+        "target": [
+          626,
+          678
+        ],
+        "output": [
+          631,
+          693
+        ],
+        "ncc": 0.9865954949316584
+      },
+      {
+        "target": [
+          518,
+          748
+        ],
+        "output": [
+          519,
+          764
+        ],
+        "ncc": 0.9902657020587025
+      },
+      {
+        "target": [
+          661,
+          806
+        ],
+        "output": [
+          667,
+          826
+        ],
+        "ncc": 0.988922620694221
+      },
+      {
+        "target": [
+          530,
+          940
+        ],
+        "output": [
+          531,
+          959
+        ],
+        "ncc": 0.916194694984877
+      },
+      {
+        "target": [
+          815,
+          970
+        ],
+        "output": [
+          827,
+          988
+        ],
+        "ncc": 0.9624037880061695
+      },
+      {
+        "target": [
+          550,
+          1197
+        ],
+        "output": [
+          564,
+          1173
+        ],
+        "ncc": 0.532385505731147
+      },
+      {
+        "target": [
+          713,
+          1197
+        ],
+        "output": [
+          732,
+          1174
+        ],
+        "ncc": 0.528977912820313
+      },
+      {
+        "target": [
+          525,
+          1330
+        ],
+        "output": [
+          530,
+          1340
+        ],
+        "ncc": 0.9561116762374207
+      },
+      {
+        "target": [
+          715,
+          1330
+        ],
+        "output": [
+          721,
+          1342
+        ],
+        "ncc": 0.9906497373081184
+      }
+    ],
+    "used_landmarks": [
+      {
+        "target": [
+          598,
+          441
+        ],
+        "output": [
+          603,
+          451
+        ],
+        "ncc": 0.9783965022848308
+      },
+      {
+        "target": [
+          523,
+          555
+        ],
+        "output": [
+          525,
+          567
+        ],
+        "ncc": 0.8935879943777415
+      },
+      {
+        "target": [
+          588,
+          617
+        ],
+        "output": [
+          592,
+          631
+        ],
+        "ncc": 0.9737934702894896
+      },
+      {
+        "target": [
+          454,
+          519
+        ],
+        "output": [
+          455,
+          530
+        ],
+        "ncc": 0.8663380095692359
+      },
+      {
+        "target": [
+          719,
+          486
+        ],
+        "output": [
+          727,
+          497
+        ],
+        "ncc": 0.9551987399361258
+      },
+      {
+        "target": [
+          626,
+          678
+        ],
+        "output": [
+          631,
+          693
+        ],
+        "ncc": 0.9865954949316584
+      },
+      {
+        "target": [
+          518,
+          748
+        ],
+        "output": [
+          519,
+          764
+        ],
+        "ncc": 0.9902657020587025
+      },
+      {
+        "target": [
+          530,
+          940
+        ],
+        "output": [
+          531,
+          959
+        ],
+        "ncc": 0.916194694984877
+      }
+    ],
+    "residuals_px": [
+      0.19619776120974886,
+      0.7372779938493946,
+      0.5443800732332768,
+      0.5209631577578824,
+      0.8634964243269575,
+      0.7014380247280003,
+      0.6563493446765029,
+      0.9671692048893731
+    ],
+    "rms_px": 0.6849887579457249
+  },
+  "motherSha256": "7f94f27d0f60b756d8f01c5d05ddf8bca8dc632bec52bc39dcf0a6cf09896dc4",
+  "character": "S31_F012_CHARACTER.png",
+  "sha256": "cb73205bb4da48819d4c5cb0da93c710589ac363e5888784634061d22a5cecc5",
+  "changed_pixels_outside_white": 0,
+  "collar_ink_and_white_changed": 0,
+  "lamp_palm_forearm_changed": 0,
+  "body_below_y450_changed": 0,
+  "whole_head_neck_adopted": true,
+  "lower_neck_join": "Original collar white and ink retained; only 4px skin-side seam blend. Full generated head, cheeks, chin and neck remain one coherent drawing.",
+  "production_writes": 0,
+  "status": "Registered character ready for parent visual lock"
+}

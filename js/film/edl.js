@@ -14,11 +14,11 @@ export const SHOTS = [
   { id: 'S04a', scene: 2, line: 'code', dur: 2, mod: 'js/anim/s04a.js', text: '特写：吊扇停了，蚊香的烟变成一根直直往上升的线' },
   { id: 'S05', scene: 2, line: 'code', dur: 3, mod: 'js/anim/s05.js', text: '特写：手机 1%，手指狂按——屏幕一暗、全黑，拇指停住' },
   { id: 'S05a', scene: 2, line: 'paint', dur: 2.5, mod: 'js/anim/s05a_drawn.js', text: '近景：小满的脸也黑了——愣住，"不是吧"，猛按电源键' },
-  { id: 'S06', scene: 2, line: 'paint', dur: 86 / 24, mod: 'js/anim/s06.js', text: '特写（月光，侧面）：墙脚插座，小满拔下插头再插回去；再拔、吹一口、插回去——还是不亮' },
-  { id: 'S07', scene: 2, line: 'paint', dur: 4.5, mod: 'js/anim/s07.js', text: '全景：小满放下手机、翻身仰躺，扇两下风；奶奶把盆放到脚边，撑着膝盖站起来，转身走到八仙桌边，伸手拿桌上的马灯' },
-  { id: 'S08', scene: 2, line: 'paint', dur: 6, mod: 'js/anim/s08.js', text: '中景：奶奶在八仙桌边"嚓"地划着火柴，火光照亮脸；抬起灯罩，凑近点着灯芯，甩灭火柴；灯罩落下"叮"，暖光铺开，她看着灯笑了，往小满那边瞟一眼' },
+  { id: 'S06', scene: 2, line: 'paint', dur: 86 / 24, mod: 'js/anim/s06_drawn.js', text: '特写（月光，侧面）：墙脚插座，小满拔下插头再插回去；再拔、吹一口、插回去——还是不亮' },
+  { id: 'S07', scene: 2, line: 'paint', dur: 4.5, mod: 'js/anim/s07_drawn.js', text: '全景：小满放下手机、翻身仰躺，扇两下风；奶奶把盆放到脚边，撑着膝盖站起来，转身走到八仙桌边，伸手拿桌上的马灯' },
+  { id: 'S08', scene: 2, line: 'paint', dur: 6, mod: 'js/anim/s08_drawn.js', text: '中景：奶奶在八仙桌边"嚓"地划着火柴，火光照亮脸；抬起灯罩，凑近点着灯芯，甩灭火柴；灯罩落下"叮"，暖光铺开，她看着灯笑了，往小满那边瞟一眼' },
   // 第 3 场 · 手电
-  { id: 'S09', scene: 3, line: 'paint', dur: 4, mod: 'js/paint/shots/s09.js', text: '近景（马灯从右边照过来）：小满跪在电视柜前捧着旧手电，推开关不亮，往手心磕两下，再推——亮了，光柱打出去' },
+  { id: 'S09', scene: 3, line: 'paint', dur: 4, mod: 'js/anim/s09_drawn.js', text: '近景（马灯从右边照过来）：小满跪在电视柜前捧着旧手电，推开关不亮，往手心磕两下，再推——亮了，光柱打出去' },
   { id: 'S10', scene: 3, line: 'paint', dur: 5, mod: 'js/anim/s10_drawn.js', text: '手电光束扫过屋子，照到奶奶，奶奶眯起眼' },
   // 第 4 场 · 木箱
   { id: 'S12', scene: 4, line: 'paint', dur: 8, mod: 'js/paint/shots/s12.js', text: '中景：樟木箱开着，奶奶跪在箱边俯身握住签子，直起身把鹤立起来，马灯的光透过牛皮，鹤影落在箱盖内侧' },
@@ -26,7 +26,7 @@ export const SHOTS = [
   // 第 5 场 · 搭台
   { id: 'S14', scene: 5, line: 'paint', dur: 10, mod: 'js/paint/shots/s14.js', text: '全景：奶奶把床单搭上铁丝、夹衣夹、挂马灯，床单亮起；小满拖板凳坐下，抱起胳膊' },
   // 第 6 场 · 鹤
-  { id: 'S15', scene: 6, line: 'engine', dur: 8, mod: 'js/lamp/shots/s15.js', text: '床单正面：鹤的大虚影从远处贴近床单、变清楚；亮相，昂首；小满抱着胳膊 → 看呆了' },
+  { id: 'S15', scene: 6, line: 'engine', dur: 8, mod: 'js/anim/s15_drawn.js', text: '床单正面：鹤的大虚影从远处贴近床单、变清楚；亮相，昂首；小满抱着胳膊 → 看呆了' },
   { id: 'S16', scene: 6, line: 'engine', dur: 8, mod: 'js/lamp/shots/s16.js', text: '床单正面：鹤踱步、梳毛、啄水（慢慢推近）' },
   // 第 7 场 · 乌龟
   { id: 'S17', scene: 7, line: 'engine', dur: 14, mod: 'js/lamp/shots/s17.js', text: '床单正面：乌龟爬进来；鹤啄空、一头撞在龟壳上、晕了' },
@@ -38,7 +38,7 @@ export const SHOTS = [
   { id: 'S23', scene: 8, line: 'engine', dur: 5, mod: 'js/lamp/shots/s23.js', text: '床单正面：乌龟伸长脖子咬住鹤嘴，鹤僵住；后台小满得意地看奶奶' },
   { id: 'S24', scene: 8, line: 'engine', dur: 2.5, mod: 'js/anim/s24_drawn.js', text: '后台近景：小满回过头，得意地看奶奶' },
   // 第 9 场 · 小狗
-  { id: 'S25', scene: 9, line: 'code', dur: 6, mod: 'js/code/s25.js', text: '后台：小满把手电架在木箱上，两只手伸进光里比出小狗' },
+  { id: 'S25', scene: 9, line: 'code', dur: 6, mod: 'js/anim/s25_drawn.js', text: '后台：小满把手电架在木箱上，两只手伸进光里比出小狗' },
   { id: 'S26', scene: 9, line: 'engine', dur: 18, mod: 'js/lamp/shots/s26.js', text: '床单正面：暖的皮影、冷的狗影；小狗追鹤，乌龟骑在狗背上，越演越快' },
   // 第 10 场 · 来电
   { id: 'S27', scene: 10, line: 'engine', dur: 5, mod: 'js/lamp/shots/s27.js', text: '床单正面（硬切进惨白）：日光灯闪两下亮了，影子几乎看不见' },
@@ -46,8 +46,8 @@ export const SHOTS = [
   // 第 11 场 · 收
   { id: 'S29', scene: 11, line: 'paint', dur: 12, mod: 'js/paint/shots/s29.js', text: '奶奶笑笑，开始用布包皮影；手机"叮咚"开机；小满看看手机，又看看奶奶' },
   // 第 12 场 · 关灯
-  { id: 'S30', scene: 12, line: 'paint', dur: 12, mod: 'js/paint/shots/s30.js', text: '全景：小满走到门边，踮脚拉灯绳——"咔嗒"，暗了；马灯的光重新显出来' },
-  { id: 'S31', scene: 12, line: 'paint', dur: 14, mod: 'js/paint/shots/s31.js', text: '床单前：小满把手电抵在下巴下往上照、做鬼脸，举着乌龟晃一晃；切床单正面：鹤跳起来，乌龟爬进来，又演起来了' },
+  { id: 'S30', scene: 12, line: 'paint', dur: 12, mod: 'js/paint/shots/s30_drawn.js', text: '全景：小满走到门边，踮脚拉灯绳——"咔嗒"，暗了；马灯的光重新显出来' },
+  { id: 'S31', scene: 12, line: 'paint', dur: 14, mod: 'js/paint/shots/s31_drawn.js', text: '床单前：小满把手电抵在下巴下往上照、做鬼脸，举着乌龟晃一晃；切床单正面：鹤跳起来，乌龟爬进来，又演起来了' },
   // 第 13 场 · 尾声
   { id: 'S32', scene: 13, line: 'code', dur: 15, mod: 'js/code/s32.js', text: '屋外，慢慢后退：家家户户白灯，只有这扇窗暖黄，窗里鹤和乌龟的影子；片名"来电"' },
   { id: 'END', scene: 0, line: 'code', dur: 9, mod: 'js/code/credits.js', text: '字幕；最后一张：竹席上小满的手机，锁屏壁纸换成床单上的鹤影，屏幕熄灭' },
