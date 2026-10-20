@@ -1,0 +1,107 @@
+{
+  "scope": "Cumulative natural S12 source/consumer delta only; requires original repo renderer and stage assets. No new image generation.",
+  "inputSoundFilm": {
+    "path": "collab/reviews/20261020_s12_hair_skin_final/S12_hair_skin_fixed_8s_audio.mp4",
+    "publishedCommit": "eea710dad33759e73b1b724c9125da765a1af0e5",
+    "sha256": "4f0568b1c4727fda92be05dac275d58afbf2c4354868ca0e2cc6b2a8b045d5e5"
+  },
+  "sources": [
+    {
+      "role": "pre102",
+      "publishedCommit": "0825f3ad10fc53de57d3d688b16c40222aa992f1",
+      "publishedDirectory": "collab/reviews/20261020_s12_monotonic_pre102_handoff/",
+      "consumerMapping": "collab/reviews/cloud_s12_20261018/monotonic_pre102_actual_20261020/sources/CONSUMER_MAPPING.json",
+      "mappingSHA256": "e0035378de4608352b29145d63f221903f7c4c8e5d239925d35da8f2f133a44f",
+      "rawCall": "exec-fb91da56-b9ad-4d20-9684-81e9806a22a2",
+      "rawSHA256": "645cff7729abc07c4364674ea616f21f9f5aa1cba2daa3a2ff9c8a9b57b75d0b",
+      "adoptedCharacter": "collab/reviews/cloud_s12_20261018/monotonic_pre102_actual_20261020/sources/F094_101_COMPLETE_CHARACTER.png",
+      "characterSHA256": "8b604715c01cc71e50ad8360b3aa5dea39a873bffcfc2d95a2ab4964f4491f5f",
+      "publishedGitBlob": "fab44f7600a97b7e961f0b985bbd93ee44e8141e"
+    },
+    {
+      "role": "102",
+      "publishedCommit": "4a791f3316aab5d56d3d6d903176de3a537528a3",
+      "publishedDirectory": "collab/reviews/20261020_s12_natural102_handoff/",
+      "consumerMapping": "collab/reviews/cloud_s12_20261018/natural102_actual_20261020/sources/CONSUMER_MAPPING.json",
+      "mappingSHA256": "2e9c4df1ae1ee06f863b34ea4c15ffedc0ccad19f91dc47dbdd7d3f6cc081b3e",
+      "rawCall": "call_5bb3f4432c504db3953eedd5d43c397b",
+      "rawSHA256": "995c57b0d2f9835019024b0d1db85d8132092f0237731338f5cda59881105dda",
+      "adoptedCharacter": "collab/reviews/cloud_s12_20261018/natural102_actual_20261020/sources/F102_COMPLETE_CHARACTER.png",
+      "characterSHA256": "93bf8635caf24f2113813971a377a86241f61567c60b37fda52ea70c8132cfce",
+      "publishedGitBlob": "31e625e909320d5365a3aa61b20be3f4e5252b92"
+    },
+    {
+      "role": "106",
+      "publishedCommit": "3f10d080dcd196aed153b9c11129cab9eef922dd",
+      "publishedDirectory": "collab/reviews/20261020_s12_natural102_handoff/f106_continuation/",
+      "consumerMapping": "collab/reviews/cloud_s12_20261018/natural102_actual_20261020/sources/f106_continuation/CONSUMER_MAPPING.json",
+      "mappingSHA256": "b66404b8323747cb26a044a1603b2f1382f49c11c1379a84df64aa2ae3297392",
+      "rawCall": null,
+      "rawSHA256": null,
+      "completeCharacterReuse": "102"
+    },
+    {
+      "role": "110132",
+      "publishedCommit": "1132fc467abe0faf0496e3e77bbd102042ae619b",
+      "publishedDirectory": "collab/reviews/20261020_s12_natural_tail_handoff/f110/",
+      "consumerMapping": "collab/reviews/cloud_s12_20261018/natural_tail110_actual_20261020/sources/CONSUMER_MAPPING.json",
+      "mappingSHA256": "9c0b43b5c2bb624fc375427bdc89910b5368c5bf8a1cd6c433f6a59837b3584b",
+      "rawCall": null,
+      "rawSHA256": null,
+      "completeCharacterReuse": "102"
+    },
+    {
+      "role": "120",
+      "publishedCommit": "26e14d891e9f1f960cd0bd274c5be29c2d16ec6b",
+      "publishedDirectory": "collab/reviews/20261020_s12_natural_tail_handoff/f120/",
+      "consumerMapping": "collab/reviews/cloud_s12_20261018/natural_peak120_actual_20261020/sources/CONSUMER_MAPPING.json",
+      "mappingSHA256": "f7573dc4fed53d96c589951ab1dc6fd5cef7a2234e4ecefbc089fb9bd2acc3f7",
+      "rawCall": "exec-dab8893e-4677-462a-8d77-75c71cc0345c",
+      "rawSHA256": "a882f1b630e55f9331a4315a53c424bf9a6cf02dc465989ffec4206ecb05b0cf",
+      "adoptedCharacter": "collab/reviews/cloud_s12_20261018/natural_peak120_actual_20261020/sources/F120_COMPLETE_CHARACTER.png",
+      "characterSHA256": "0867f3967b48543e2c41ac0daf85e2ed1e072e34101280e98aaf7fecc3bef05f",
+      "publishedGitBlob": "46cf3d63a453ced4b1ad4ba038fe0ed8025abd69"
+    },
+    {
+      "role": "126",
+      "publishedCommit": "bf114cee35ce85be628a50be34a1afa12e7aa055",
+      "publishedDirectory": "collab/reviews/20261020_s12_natural_tail_handoff/f126/",
+      "consumerMapping": "collab/reviews/cloud_s12_20261018/natural_return126_actual_20261020/sources/CONSUMER_MAPPING.json",
+      "mappingSHA256": "bd3c0fe8a30ca7e15916f5671afc3df1a997cc9c7bc14fc28e225b427005e43c",
+      "rawCall": "exec-591074ff-5e4c-4391-8630-ebe22d4ba484",
+      "rawSHA256": "d6c0b3d7b48938d2b0620f7c666ba62ddd695d4fc80cccc031184b6d052bf796",
+      "adoptedCharacter": "collab/reviews/cloud_s12_20261018/natural_return126_actual_20261020/sources/F126_COMPLETE_CHARACTER.png",
+      "characterSHA256": "3d3b35f2d1da9090556758194f332958df2b88b75f917a7935d2e35facc5ee29",
+      "publishedGitBlob": "89673425f922c67b20dba8130b11940c63dd12ae"
+    },
+    {
+      "role": "144",
+      "publishedCommit": "0cd01c023d91f7af8ffb5b667052196a318c241e",
+      "publishedDirectory": "collab/reviews/20261020_s12_natural_tail_handoff/f144/",
+      "consumerMapping": "collab/reviews/cloud_s12_20261018/natural_gaze144_actual_20261020/sources/CONSUMER_MAPPING.json",
+      "mappingSHA256": "afd103cb394d89684f22f9bdc3e19623c8e4e4c7f0b5d5e4204e07f61bd32eff",
+      "rawCall": "exec-471b1b5f-bd56-40b7-a057-08cc0d2a4cb3",
+      "rawSHA256": "1966ebffb90b2508565c952eb02bc7fae3be8142ededdd4762942b6ad3607de2",
+      "adoptedCharacter": "collab/reviews/cloud_s12_20261018/natural_gaze144_actual_20261020/sources/F144_COMPLETE_CHARACTER.png",
+      "characterSHA256": "1e4f84eade5303cb81035ff4245ca6c9a84e75483f8b4c514765c3da70b24cf4",
+      "publishedGitBlob": "3675b58b049ebed2c009df59c1aade0a87770034"
+    }
+  ],
+  "originalRepoDependencies": {
+    "js/anim/s12_drawn.js": "8cec1c69c9bf47cdb23bd460c8cf6835bada953d7cb5a67d8ea98b61b6cd8e9b",
+    "js/paint/paintshot.js": "7d61a8e3cfa595b5a2877ce3624c2d8d186a1578cc684a8948471eb0eedca975",
+    "js/lamp/crane.js": "212e8a4fdad764fa50928c60a8efc956ad660c62377ea1ea152433a6fea4e642",
+    "js/puppet.js": "04b80760b97185ab8aea7826383d85f3c9d7789cd01aa1d8664fdc74bc4c30b7",
+    "tools/js/serve.cjs": "85e67155f5b39852bb8f7d08457a1ba15db538ce05e582cc26d4b364f8b6136d",
+    "dev/view.html": "2b5228f5447bcb919a6dea545152e5645cee890f89377d6ff7ffa14c9f6ed701",
+    "assets/chars/g12/sequence.json": "59e66bc4ed1a7353a74ff5e377911f72a439dcf2492541c361684955661de008",
+    "assets/chars/g12/box_front_4995c6a3e636.png": "4995c6a3e636f9a81a072773658da9c8607579bfc20235acfb0700ad6decbd34",
+    "assets/chars/g12/contact_shadow_242ac036e954.png": "242ac036e9546967e05e23b42f418deea70923087132bbf8aa1851a2c994ede4",
+    "assets/chars/g12/stage_2047a2da673e.png": "2047a2da673ee3ae5627f07e63b89c7db06a86fe575c09adc2c3be8dce858286",
+    "assets/chars/g12/stage_33735dcb4c9e.png": "33735dcb4c9ea8e933319bf02115c99e84607d693b2b4bfcf4dac1e859f19664",
+    "assets/chars/g12/stage_48f4f5f4c323.png": "48f4f5f4c323e2021e6ab92216c92dbfd6d3b18eb69f56eb95c429256cc87406",
+    "assets/chars/g12/stage_8ac7b598c546.png": "8ac7b598c5467ea462d7c18ab2550a7e5711e2fa67e063e5f42f95f230683bad"
+  },
+  "finalVideo": "5cea5897390314a42ee536579d908a9ed4820735ab026535535e4a50d49adced",
+  "filmEDLChanged": false
+}
