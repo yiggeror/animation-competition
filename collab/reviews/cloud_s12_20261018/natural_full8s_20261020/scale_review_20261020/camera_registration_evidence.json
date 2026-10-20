@@ -1,0 +1,276 @@
+{
+  "status": "PRODUCTION_PAUSED_SCALE_DIAGNOSIS_NO_RERENDER",
+  "renderer": "renderPaint: 2D scene composition, then one global pan/fit. No pose-dependent human3D projection or world-scale parameter.",
+  "cameraTotal0to191Percent": 3.9994239754800986,
+  "camera0to110Percent": 1.5860125171467843,
+  "camera74to110Percent": 1.2376392536399994,
+  "entryRetimingMaxExtraCameraScalePercent": 0.07819247021267905,
+  "newNormalizationXvsYAnisotropyPercent": 0.05316321105794941,
+  "outputSourceRows": [
+    {
+      "outputFrame": 0,
+      "renderSourceFrame": 0,
+      "sourceCanvas": [
+        1024,
+        1536
+      ],
+      "sourceToScene": [
+        0.7,
+        0,
+        0,
+        0.7,
+        275,
+        112
+      ],
+      "sceneCamera": {
+        "sourceFrame": 0,
+        "fit": 1.0,
+        "centre": [
+          960,
+          540
+        ],
+        "sceneToOutput": [
+          1.0,
+          0,
+          0,
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "totalSourcePixelToScreen": [
+        0.7,
+        0.0,
+        0.0,
+        0.7,
+        275.0,
+        112.0
+      ],
+      "route": "legacy portrait source",
+      "bodyWorldDepthParameter": null,
+      "note": "Total source-pixel scale is not anatomical scale: canvas/pixel densities differ. No head/shoulder/limb scale conclusion from canvas ratio or bbox height."
+    },
+    {
+      "outputFrame": 74,
+      "renderSourceFrame": 74,
+      "sourceCanvas": [
+        1024,
+        1536
+      ],
+      "sourceToScene": [
+        0.7,
+        0,
+        0,
+        0.7,
+        275,
+        112
+      ],
+      "sceneCamera": {
+        "sourceFrame": 74,
+        "fit": 1.0034411436899864,
+        "centre": [
+          961.7205718449932,
+          539.1397140775034
+        ],
+        "sceneToOutput": [
+          1.0034411436899864,
+          0,
+          0,
+          1.0034411436899864,
+          -5.029990522327694,
+          -0.9949713026222753
+        ]
+      },
+      "totalSourcePixelToScreen": [
+        0.7024088005829904,
+        0.0,
+        0.0,
+        0.7024088005829904,
+        270.9163239924186,
+        111.39043679065622
+      ],
+      "route": "legacy portrait source",
+      "bodyWorldDepthParameter": null,
+      "note": "Total source-pixel scale is not anatomical scale: canvas/pixel densities differ. No head/shoulder/limb scale conclusion from canvas ratio or bbox height."
+    },
+    {
+      "outputFrame": 90,
+      "renderSourceFrame": 90,
+      "sourceCanvas": [
+        1024,
+        1536
+      ],
+      "sourceToScene": [
+        0.7,
+        0,
+        0,
+        0.7,
+        275,
+        112
+      ],
+      "sceneCamera": {
+        "sourceFrame": 90,
+        "fit": 1.0082233796296296,
+        "centre": [
+          964.1116898148148,
+          537.9441550925926
+        ],
+        "sceneToOutput": [
+          1.0082233796296296,
+          0,
+          0,
+          1.0082233796296296,
+          -12.039946245525698,
+          -2.3678740994593
+        ]
+      },
+      "totalSourcePixelToScreen": [
+        0.7057563657407406,
+        0.0,
+        0.0,
+        0.7057563657407406,
+        265.22148315262245,
+        110.55314441905915
+      ],
+      "route": "legacy portrait source",
+      "bodyWorldDepthParameter": null,
+      "note": "Total source-pixel scale is not anatomical scale: canvas/pixel densities differ. No head/shoulder/limb scale conclusion from canvas ratio or bbox height."
+    },
+    {
+      "outputFrame": 95,
+      "renderSourceFrame": 94,
+      "sourceCanvas": [
+        1671,
+        941
+      ],
+      "sourceToScene": [
+        1.1483253588516746,
+        0,
+        0,
+        1.1477151965993624,
+        0,
+        0
+      ],
+      "sceneCamera": {
+        "sourceFrame": 94,
+        "fit": 1.0096375600137175,
+        "centre": [
+          964.8187800068587,
+          537.5906099965706
+        ],
+        "sceneToOutput": [
+          1.0096375600137175,
+          0,
+          0,
+          1.0096375600137175,
+          -14.117278901536451,
+          -2.771671763223594
+        ]
+      },
+      "totalSourcePixelToScreen": [
+        1.1593924134128815,
+        0.0,
+        0.0,
+        1.1587763706852443,
+        -14.117278901536451,
+        -2.771671763223594
+      ],
+      "route": "one full-canvas normalization",
+      "bodyWorldDepthParameter": null,
+      "note": "Total source-pixel scale is not anatomical scale: canvas/pixel densities differ. No head/shoulder/limb scale conclusion from canvas ratio or bbox height."
+    },
+    {
+      "outputFrame": 102,
+      "renderSourceFrame": 104,
+      "sourceCanvas": [
+        1672,
+        941
+      ],
+      "sourceToScene": [
+        1.1483253588516746,
+        0,
+        0,
+        1.1477151965993624,
+        0,
+        0
+      ],
+      "sceneCamera": {
+        "sourceFrame": 104,
+        "fit": 1.013443072702332,
+        "centre": [
+          966.7215363511659,
+          536.639231824417
+        ],
+        "sceneToOutput": [
+          1.013443072702332,
+          0,
+          0,
+          1.013443072702332,
+          -19.717244247244707,
+          -3.853312032756321
+        ]
+      },
+      "totalSourcePixelToScreen": [
+        1.1637623801366492,
+        0.0,
+        0.0,
+        1.1631440154288188,
+        -19.717244247244707,
+        -3.853312032756321
+      ],
+      "route": "one full-canvas normalization",
+      "bodyWorldDepthParameter": null,
+      "note": "Total source-pixel scale is not anatomical scale: canvas/pixel densities differ. No head/shoulder/limb scale conclusion from canvas ratio or bbox height."
+    },
+    {
+      "outputFrame": 110,
+      "renderSourceFrame": 110,
+      "sourceCanvas": [
+        1672,
+        941
+      ],
+      "sourceToScene": [
+        1.1483253588516746,
+        0,
+        0,
+        1.1477151965993624,
+        0,
+        0
+      ],
+      "sceneCamera": {
+        "sourceFrame": 110,
+        "fit": 1.0158601251714678,
+        "centre": [
+          967.9300625857339,
+          536.0349687071331
+        ],
+        "sceneToOutput": [
+          1.0158601251714678,
+          0,
+          0,
+          1.0158601251714678,
+          -23.28155453557042,
+          -4.536550407112031
+        ]
+      },
+      "totalSourcePixelToScreen": [
+        1.1665379427806328,
+        0.0,
+        0.0,
+        1.165918103278624,
+        -23.28155453557042,
+        -4.536550407112031
+      ],
+      "route": "one full-canvas normalization",
+      "bodyWorldDepthParameter": null,
+      "note": "Total source-pixel scale is not anatomical scale: canvas/pixel densities differ. No head/shoulder/limb scale conclusion from canvas ratio or bbox height."
+    }
+  ],
+  "codeFinding": "No duplicate275/112/.7 application and no second normalization. Portrait .7 and landscape1.148 mappings are pixel registration, not a calibrated common body/world scale.",
+  "immediateSafeCodeFix": "None identified that would remove the reported body-volume growth. Do not remove the legitimate camera or blindly shrink the complete body/limbs; await same-size anatomical/source calibration from parallel source authors, then change whole-group registration/finite contact only if justified.",
+  "bodyMeasurementTask": "Parallel source author/reviewer owns head/shoulder/limb measurements. This report supplies actual output + exact camera/registration transforms, avoids duplicate whole-figure measurement.",
+  "productionState": "Prior unreserved pass withdrawn. Existing video/library markedPAUSED.144–191 pause pendingS13 audio cut review.",
+  "coordinatorSourceReviewConclusion": "2026-10-20主协调转达两原岗共同实证：头/鞋近同，相机074→110约1.24%，主要是090细长窄腰→095/102胸腰衣摆/髋腿裤换型。新完整体量母以074同人比例为准，新102只参考高跪和正确臂动作。",
+  "codeAuditCounterEvidence": "None. Camera/registration audit agrees with source diagnosis; no uniform person shrink or separate limb distortion performed.",
+  "nextAction": "Wait for new complete volume mother, then one actual registered adjacency; no repeated generation or full rerender before a concrete source fix."
+}

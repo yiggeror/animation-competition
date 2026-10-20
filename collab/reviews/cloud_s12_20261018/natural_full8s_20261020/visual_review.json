@@ -1,5 +1,5 @@
 {
-  "status": "FULL8S_SELF_REVIEW_PASSED_FOR_REQUESTED_FIXES",
+  "status": "WITHDRAWN_USER_SCALE_FEEDBACK_PRODUCTION_PAUSED",
   "scope": "Complete original-speed8s, not only fragments; final signoff remains withAstra",
   "reviewed": [
     "09020-frame5/5/5/5 entry: no large forward/return body loop",
@@ -9,13 +9,18 @@
     "Original finite rods/paper and shadow entry",
     "Original palette retained and completeAAC/PCM exact"
   ],
-  "blockingIssues": [],
-  "nonBlockingNote": "Entry remains a brisk held-drawing lift; current timing retained rather than generating extra body art.",
+  "blockingIssues": [
+    "Apparent progressive growth during rising; head/shoulder/limb/world-scale audit pending. Prior unreserved pass withdrawn."
+  ],
+  "nonBlockingNote": "Prior classification of only a brisk entry was insufficient; whole-process scale continuity is now blocking.",
   "originalSpeedPlayback": "actual/actual_full_playback_1x.json",
   "actualVisualEvidence": [
     "actual/actual_played_1x_contact.jpg",
     "actual/actual_full8s_contact.jpg",
     "actual/actual_entry_20f_contact.jpg",
     "actual/actual_return_gaze_end_contact.jpg"
-  ]
+  ],
+  "productionAdoption": "PAUSED",
+  "userFeedback": "奶奶起身过程逐渐变大了",
+  "previousSelfReview": "scale_review_20261020/previous_visual_review_before_user_scale_feedback.json"
 }
