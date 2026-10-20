@@ -1,0 +1,127 @@
+{
+  "status": "ACTUAL_SOURCE_REFERENCE_REQUIRES_VISIBLE_CHAIN_READBACK",
+  "source_final098_rebound": true,
+  "old102_person_target_reused": false,
+  "new102_imagegen_calls": 0,
+  "new106_imagegen_calls": 0,
+  "actual102_person_Canvas": 0,
+  "protected_native_RGBA_differences": 0,
+  "qualified_support_RGBA_differences": 0,
+  "reference_BG_FG_RGBA_reconstruction_differences": 0,
+  "reference_BG_FG_overlap": 0,
+  "whole_person_mesh_or_TPS": false,
+  "new_knee_or_waist_plates": false,
+  "technical_skin_guide_pixels": 0,
+  "source_group_details": {
+    "L": {
+      "independent_source_masks_before_motion": true,
+      "source_hand_semantic_mask_pixels": 9551,
+      "upper_source_pixels": 1847,
+      "forearm_source_pixels": 4297,
+      "small_distal_wrist_transition": "actual source skin coordinates only, forearm matrix to whole-hand matrix over50px ending40px before proxy wrist; no new flat skin guide",
+      "no_finger_warp": true
+    },
+    "R": {
+      "independent_source_masks_before_motion": true,
+      "source_hand_semantic_mask_pixels": 4469,
+      "upper_source_pixels": 35337,
+      "forearm_source_pixels": 17684,
+      "small_distal_wrist_transition": "actual source skin coordinates only, forearm matrix to whole-hand matrix over50px ending40px before proxy wrist; no new flat skin guide",
+      "no_finger_warp": true
+    }
+  },
+  "newly_revealed_far_upper_arm_reference": {
+    "donor": "same locked098 complete near upper sleeve and upper-arm source shape; input reference only; no production adoption",
+    "single_similarity_to_far_proxy_chain": [
+      [
+        0.9521928391810874,
+        0.13046750249386227,
+        -6.611523025772044
+      ],
+      [
+        -0.13046750249386227,
+        0.9521928391810874,
+        44.20342838620434
+      ]
+    ],
+    "projected_scale": 0.9610894714826119,
+    "full_upper_length_preserved_at_measured_far_proxy_length": true
+  },
+  "newly_revealed_far_forearm_reference": {
+    "donor": "same locked098 complete near forearm real-art source; replaces old far occlusion-cut stump ONLY in input reference. Far own hand and complete jade remain original rigid groups.",
+    "matrix": [
+      [
+        0.025638312139209196,
+        0.8156040478813863,
+        98.69693333224166
+      ],
+      [
+        -0.6710113571140621,
+        0.27031940759813383,
+        838.9480855908698
+      ]
+    ],
+    "axial_projected_length_scale": 0.6157890137621095,
+    "cross_section_scale": 0.9,
+    "no_finger_transform": true
+  },
+  "small_rib_underlap": "same-mother real blue flower cloth, source x488..552/y650..770 translations(+100,-110)/(+120,-110), clipped to the actual expected torso silhouette and newly revealed rib corridor only",
+  "internal_low_alpha_regions_for_actual_review": [
+    {
+      "pixels": 149,
+      "bbox": [
+        537,
+        64,
+        580,
+        74
+      ]
+    },
+    {
+      "pixels": 58,
+      "bbox": [
+        648,
+        85,
+        671,
+        93
+      ]
+    },
+    {
+      "pixels": 210,
+      "bbox": [
+        448,
+        90,
+        480,
+        126
+      ]
+    },
+    {
+      "pixels": 234,
+      "bbox": [
+        416,
+        155,
+        433,
+        202
+      ]
+    },
+    {
+      "pixels": 159,
+      "bbox": [
+        392,
+        278,
+        408,
+        316
+      ]
+    },
+    {
+      "pixels": 135,
+      "bbox": [
+        694,
+        515,
+        728,
+        546
+      ]
+    }
+  ],
+  "pants_reference_only_transition": "real098 hip/thigh/knee source cloth; hip/thigh y880-960, near knee folds transition y1125-1190, good far round knee retained along its actual curved fold with36px source-material blend (no rectangular plate). Qualified shins exact throughout; no new navy shape.",
+  "allowed_pixels": 422413
+}
