@@ -8,6 +8,8 @@
 
 本轮又修一处实证误差：奶奶远鞋下的棕色脱离残点不能当成鞋底。只在阴影mask中保留鞋主体连通轮廓，将远鞋基底1018改为真实1015；可见PNG原像素不动。只补渲受影响F132并看实际鞋底对照`ACTUAL_SHOE_SPECKLE_DELTA_F132.png`。该分支只影响后段grandmaFloor，已存早段96帧的绘制路径不变；渲染前源哈希快照保持原貌。
 
-团队绘图基准仍为`TEAM_DRAWING_INPUT_ACTUAL_ROOM_CONTACTS_v2.jpg`（Library `libfile_88d00f8b049481918d9f8f993ecbf32f`）与`JOINT_ROUTE_AND_CONTACT_INPUT_v2.json`。原作者已使用：132–149拖／150–152停／153–161后撤到座上／162–173初承重下坐／174–181坐实收手。T1被图像工具阻断、无raw，不代画或重复调用；T2原作者独立推进。代码支持精确`nativeStoolOffset`及`groundedSoleRegions`，接新画时按真实支撑脚写入，悬脚传空列表。
+团队绘图基准仍为`TEAM_DRAWING_INPUT_ACTUAL_ROOM_CONTACTS_v2.jpg`（Library `libfile_88d00f8b049481918d9f8f993ecbf32f`）与`JOINT_ROUTE_AND_CONTACT_INPUT_v2.json`。原作者已使用：132–149拖／150–152停／153–161后撤到座上／162–173初承重下坐／174–181坐实收手。T1与独立T2均被输出审核拦截、无raw，两项均已停重试；不存在可合入T2，不代画或重复调用。代码支持精确`nativeStoolOffset`及`groundedSoleRegions`，接新画时按真实支撑脚写入，悬脚传空列表。
 
 旧拖段身凳同向滑、无相位固定脚，B臀仍在座外、C突然回座，这些旧动作未修成；原10秒影片及ABCDE10秒候选继续否决。当前交付是可整合的接影与时间颗粒最小增量，不是整场终版。详细界限见`CURRENT_PARTIAL_DELTA_REVIEW.json`。
+
+奶奶换张专项判断已交：`grandma_native_switch_handoff_20261020/README.md`。已渲实际080→081／083→084／086→087及同坐标原图证明原画体形／姿态关系跳变；当前层注册无跳，不能再整层移缩掩盖。专项实际同尺图Library `libfile_0a316f0535b48191a46f93d87ad98d0d`。

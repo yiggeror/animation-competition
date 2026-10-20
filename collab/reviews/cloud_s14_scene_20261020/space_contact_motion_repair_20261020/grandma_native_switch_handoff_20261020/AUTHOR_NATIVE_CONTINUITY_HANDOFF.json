@@ -1,0 +1,261 @@
+{
+  "status": "AUTHOR_SOURCE_POSE_CONTINUITY_HANDOFF_NOT_FULL_DEJITTER_PASS",
+  "existingPreview": {
+    "file": "../S14_GROUND_STABLE_GRAIN_000_095_4S_PARTIAL.mp4",
+    "sha256": "08e7e04b6e8ba564ac3b26ea30b5ff958a6f43b312391154af6d5191120350d5",
+    "library_file_id": "libfile_6fc96798041c819194fd7cc7762f9360"
+  },
+  "newSceneRenderFrames": 0,
+  "newImageGenerationCalls": 0,
+  "repeatedContactChecks": 0,
+  "method": "Decoded existing4s MP4 only. Actual pairs use same fixed screen crop [650,205,1110,805], 1screen pixel=1saved-image pixel. Native pairs use same [330,140,930,1060] source-plane crop at1:1; only identical gray guide lines added. No per-person fitting, optical stabilization, pose warp or changing exposure.",
+  "runtimeRegistrationFinding": "All compared actual binding records use x355,y175,sc.335. Camera is original continuous cubic; exact projection gives <0.375screen pixel change anywhere on1254canvas across each selected boundary. No runtime layer-anchor jump found. Original1254 PNGs already contain nonuniform head/torso/hip shape changes. A whole-layer shift/scale/rotation cannot correct the hip and upper-body changes while preserving the existing grip and both support soles.",
+  "upstreamProvenanceFinding": "G081/084/087 native_assembly_candidate.json document separate raw complete-figure similarities constrained by two soles and Bthumb. Their registered grip/sole residuals are small, but this does not constrain head/torso/hip proportions. Ask original author to correct native figure/registration output together; do not stack another scene-level transform over the baked source.",
+  "observations": [
+    {
+      "before": 80,
+      "after": 81,
+      "sourcePair": [
+        "G078",
+        "G081"
+      ],
+      "observation": "Primary jump: hem/hip flare left abruptly and torso outline/leg direction resets while shoes, stool, face neighborhood and held cloth contact stay much closer. Visible in source-plane pair as well.",
+      "authorAction": "UseG078 stature and torso/hip contour as adjacent continuity reference; retain intended second-peg reach and supported feet. CorrectG081 torso/hip proportions and weight transition as one anatomically coherent complete figure; keep actual thumb grip and rigid stool.",
+      "actualBindings": [
+        {
+          "frame": 80,
+          "drawing": "G078",
+          "source": "/collab/reviews/20261019_2202_s14_two_clips_six_locked/G072_G095_second_clamp_inputs/G078_complete_registered_candidate.png",
+          "sourceSHA256": "570cc182365a1d5ba6e9f3ee34255526dc4ac0b34fe3ed89191b8c7176e6c7d7",
+          "shot": "originalPaintWideCamera",
+          "wholeDrawingTransform": {
+            "x": 355,
+            "y": 175,
+            "sc": 0.335
+          },
+          "curtainLit": false
+        },
+        {
+          "frame": 81,
+          "drawing": "G081",
+          "source": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G081_complete_native_registered_candidate.png",
+          "sourceSHA256": "80d51097d37d674d141711f3bd59247403299c5970ff1c40f0c18d72caf7dbb5",
+          "shot": "originalPaintWideCamera",
+          "wholeDrawingTransform": {
+            "x": 355,
+            "y": 175,
+            "sc": 0.335
+          },
+          "curtainLit": false
+        }
+      ],
+      "maxKnownCameraOnlyMotionScreenPixelsOverWhole1254Canvas": 0.361265,
+      "sourceFiles": [
+        {
+          "id": "G078",
+          "file": "/collab/reviews/20261019_2202_s14_two_clips_six_locked/G072_G095_second_clamp_inputs/G078_complete_registered_candidate.png",
+          "sha256": "570cc182365a1d5ba6e9f3ee34255526dc4ac0b34fe3ed89191b8c7176e6c7d7",
+          "exposure": [
+            78,
+            80
+          ]
+        },
+        {
+          "id": "G081",
+          "file": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G081_complete_native_registered_candidate.png",
+          "sha256": "80d51097d37d674d141711f3bd59247403299c5970ff1c40f0c18d72caf7dbb5",
+          "exposure": [
+            81,
+            83
+          ]
+        }
+      ]
+    },
+    {
+      "before": 83,
+      "after": 84,
+      "sourcePair": [
+        "G081",
+        "G084"
+      ],
+      "observation": "Head/neck/shoulder rise and move right abruptly relative to fixed sheet grip, lower-leg/hip shape changes too; not a common translation of scene.",
+      "authorAction": "Continue same head-neck-shoulder/torso proportions from correctedG081 intoG084 while allowing real reach and mild lean; preserve jaw-to-cloth peg action and foot support.",
+      "actualBindings": [
+        {
+          "frame": 83,
+          "drawing": "G081",
+          "source": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G081_complete_native_registered_candidate.png",
+          "sourceSHA256": "80d51097d37d674d141711f3bd59247403299c5970ff1c40f0c18d72caf7dbb5",
+          "shot": "originalPaintWideCamera",
+          "wholeDrawingTransform": {
+            "x": 355,
+            "y": 175,
+            "sc": 0.335
+          },
+          "curtainLit": false
+        },
+        {
+          "frame": 84,
+          "drawing": "G084",
+          "source": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G084_complete_native_registered_candidate.png",
+          "sourceSHA256": "ee1bb3110a8b11781e1fb50cb9db4a703b3d54c792cd87ae9dc182254145922b",
+          "shot": "originalPaintWideCamera",
+          "wholeDrawingTransform": {
+            "x": 355,
+            "y": 175,
+            "sc": 0.335
+          },
+          "curtainLit": false
+        }
+      ],
+      "maxKnownCameraOnlyMotionScreenPixelsOverWhole1254Canvas": 0.368008,
+      "sourceFiles": [
+        {
+          "id": "G081",
+          "file": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G081_complete_native_registered_candidate.png",
+          "sha256": "80d51097d37d674d141711f3bd59247403299c5970ff1c40f0c18d72caf7dbb5",
+          "exposure": [
+            81,
+            83
+          ]
+        },
+        {
+          "id": "G084",
+          "file": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G084_complete_native_registered_candidate.png",
+          "sha256": "ee1bb3110a8b11781e1fb50cb9db4a703b3d54c792cd87ae9dc182254145922b",
+          "exposure": [
+            84,
+            86
+          ]
+        }
+      ]
+    },
+    {
+      "before": 86,
+      "after": 87,
+      "sourcePair": [
+        "G084",
+        "G087"
+      ],
+      "observation": "Head and reaching hands drop back relative to previous state; torso silhouette also reverses. Native sequence gives a bob/rebound across084 rather than a smooth reach.",
+      "authorAction": "Join correctedG084 toG087 with continuous reach/settle and coherent body lengths; do not remove the peg close/release action or hold a single frame for this interval.",
+      "actualBindings": [
+        {
+          "frame": 86,
+          "drawing": "G084",
+          "source": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G084_complete_native_registered_candidate.png",
+          "sourceSHA256": "ee1bb3110a8b11781e1fb50cb9db4a703b3d54c792cd87ae9dc182254145922b",
+          "shot": "originalPaintWideCamera",
+          "wholeDrawingTransform": {
+            "x": 355,
+            "y": 175,
+            "sc": 0.335
+          },
+          "curtainLit": false
+        },
+        {
+          "frame": 87,
+          "drawing": "G087",
+          "source": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G087_complete_native_registered_candidate.png",
+          "sourceSHA256": "691817b91fd5eb29bab3cbe1291e36adafc41d18c9bae94fc3844011e31595c0",
+          "shot": "originalPaintWideCamera",
+          "wholeDrawingTransform": {
+            "x": 355,
+            "y": 175,
+            "sc": 0.335
+          },
+          "curtainLit": false
+        }
+      ],
+      "maxKnownCameraOnlyMotionScreenPixelsOverWhole1254Canvas": 0.374261,
+      "sourceFiles": [
+        {
+          "id": "G084",
+          "file": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G084_complete_native_registered_candidate.png",
+          "sha256": "ee1bb3110a8b11781e1fb50cb9db4a703b3d54c792cd87ae9dc182254145922b",
+          "exposure": [
+            84,
+            86
+          ]
+        },
+        {
+          "id": "G087",
+          "file": "/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G087_complete_native_registered_candidate.png",
+          "sha256": "691817b91fd5eb29bab3cbe1291e36adafc41d18c9bae94fc3844011e31595c0",
+          "exposure": [
+            87,
+            89
+          ]
+        }
+      ]
+    }
+  ],
+  "actionPreservation": "Early011→012 and014→015 remain intentional raise/throw/cloth-hand action, not selected for freezing.038→039 is the lead-in reach/lean. Preserve all actual arm/cloth/peg actions and normal3frame native exposure; no single-frame long hold or frozen person.",
+  "artToolState": "BothT1 and independently attemptedT2 were output-review blocked, no raw exists, both retries stopped. NoT2 artwork is available to integrate.",
+  "handoffMainImage": "AUTHOR_THREE_ADJACENT_PAIRS_ACTUAL_1TO1.jpg",
+  "handoffLibraryFileId": "libfile_0a316f0535b48191a46f93d87ad98d0d",
+  "upstreamAssemblyReferences": [
+    {
+      "file": "collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G081_native_assembly_candidate.json",
+      "sha256": "72f0df3bac3de046d15e2fbe859baae062be5c1ae473dce2dae1a9a724cd155f"
+    },
+    {
+      "file": "collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G084_native_assembly_candidate.json",
+      "sha256": "7e19f0af727356eaaf0d692d07588b6df637da483d723d8b508b058062fbb34b"
+    },
+    {
+      "file": "collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G087_native_assembly_candidate.json",
+      "sha256": "e47ead1ec0d57fcd0bb72cf0348c4279bf58b9c83d0b69626a9b3055b542caa3"
+    }
+  ],
+  "outputHashes": [
+    {
+      "file": "ACTUAL_F080_FROM_EXISTING_MP4.png",
+      "sha256": "20f663990a300f15ef9df91dcea18b9379b94dc1dfa2b70d4ab31ddf416ec537"
+    },
+    {
+      "file": "ACTUAL_F081_FROM_EXISTING_MP4.png",
+      "sha256": "b3ebb86d9c234a2aeef613eea682236a9e35c4278e06006708cb0e815a2ac1d1"
+    },
+    {
+      "file": "ACTUAL_F083_FROM_EXISTING_MP4.png",
+      "sha256": "d0dc85f88d48e5a6994c0007661b272854cdc532758955a4d717d39af9c9293f"
+    },
+    {
+      "file": "ACTUAL_F084_FROM_EXISTING_MP4.png",
+      "sha256": "b72bed8eae2b0fc78d477de2492208737cfd29d9eb412bb09af6224cff50deef"
+    },
+    {
+      "file": "ACTUAL_F086_FROM_EXISTING_MP4.png",
+      "sha256": "785ca73bdac7fa08a0757d75a45926fe03aab4e8b3ac4ba740ef639dd42dcfe6"
+    },
+    {
+      "file": "ACTUAL_F087_FROM_EXISTING_MP4.png",
+      "sha256": "ae53d39cf51b9387bf95c5a8ee1fa33c939c1eb4a3b2cf4d1ae6b4606349667e"
+    },
+    {
+      "file": "ACTUAL_SIX_ADJACENT_SWITCHES_SAME_SCALE.jpg",
+      "sha256": "f055a4687700f0a8bc7f73e59fc92baa500789509448391495af528c0b73d8a4"
+    },
+    {
+      "file": "AUTHOR_PAIR_LIBRARY.json",
+      "sha256": "0b5b170f2719c4fcd0c46b2a44b529d8cbc255ea6a5c060deb33fa9d154eaafe"
+    },
+    {
+      "file": "AUTHOR_THREE_ADJACENT_PAIRS_ACTUAL_1TO1.jpg",
+      "sha256": "22161f7ca1ebf323eefbf023e9f44677bd1ccb13bec32bb2365ff70e6a831c66"
+    },
+    {
+      "file": "NATIVE_G078_G081_IDENTICAL_COORDINATES.png",
+      "sha256": "6a6e7e0c3b09ff543ae8aae3fbf538986f260bdeb8b0106802d9d9b9703c8624"
+    },
+    {
+      "file": "NATIVE_G081_G084_IDENTICAL_COORDINATES.png",
+      "sha256": "a6c7232049bfd8c2dfc16c8cf0d8b938817f6a934452b517fa395fb01b0e62a9"
+    },
+    {
+      "file": "NATIVE_G084_G087_IDENTICAL_COORDINATES.png",
+      "sha256": "127d1b7bc82cd82ee76dca1ee5f2acfa308f5de96d1ceb4b3adc9e7152a48fe7"
+    }
+  ]
+}
