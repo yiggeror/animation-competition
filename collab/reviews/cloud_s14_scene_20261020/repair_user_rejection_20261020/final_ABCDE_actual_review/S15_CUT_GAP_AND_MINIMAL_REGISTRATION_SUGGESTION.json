@@ -1,0 +1,34 @@
+{
+  "status": "CURRENT_S15_SOURCE_BODY_LENGTH_MISMATCH_SUGGESTION_ONLY_NOT_APPLIED",
+  "sourceCommit": "b89ef9adea79709f590777628e1cebfbae604fe5",
+  "newESHA256": "7d7b25445944a394485699fdbba68fc4ccfdbd756d8f97ce779ba51b8c4f40ff",
+  "currentS15F000SHA256": "57e175f4d15527201d5241a2a5fea395f7b12d994cb1ab78d9432d3bd93e4907",
+  "actualComparison": "ACTUAL_S14_E239_TO_CURRENT_S15_F000.jpg",
+  "commonPlaneSourceComparison": "SAME_COMMON_PLANE_E_VS_CURRENT_S15F000.png",
+  "observation": "S14新E为短躯干/短小腿自然悬足；旧S15F000在同共同画布和近似同凳位下，头顶更高、颈胸和小腿更长、鞋更接近凳脚底线。抱臂和看幕方向相同，但不是当前E同身量。S15正式首帧较近且前景很暗，不能仅以景别改变把体段差异算通过。",
+  "uniformShrinkOldF000NotSufficient": "Oldhead scale and torso/leg proportions do not match newE uniformly; shrinking old whole figure also shrinks head and stool. No independent head/limb scaling is proposed.",
+  "minimumZeroImageCallRegistrationSuggestion": {
+    "source": "Existing complete E, including original147 stool",
+    "inputNativeCanvas": [
+      1500,
+      1254
+    ],
+    "outputCommonCanvas": [
+      1254,
+      1254
+    ],
+    "uniformScale": 0.993235574001674,
+    "translation": [
+      37.37206636016555,
+      23.8399697320599
+    ],
+    "referenceFile": "E_COMPLETE_COMMON1254_REGISTRATION_REFERENCE_ONLY.png",
+    "referenceSHA256": "06fa61b3ca25bcfec54a821e3e1492a0fbbcc3fb37b5292f9dc12be2cc5e9766",
+    "intendedIfMainCoordinatorAdopts": "Use complete registered E as S15F000 card input, retain original0–107 folded-arms hold and original world card registration/camera/light/puppet action. This local file is only a reference, not a production replacement.",
+    "nextBoundaryCaveat": "S15F108 resumes original reaction artwork; its source stature must be reviewed by the S15 owner before adopting any first-hold substitution. Do not silently shift the size jump to108 or broaden this cloud task."
+  },
+  "S15ActualSceneRerendered": false,
+  "S15SourceModified": false,
+  "S15CameraOrLightOrActionChanged": false,
+  "newImageGenerationCalls": 0
+}

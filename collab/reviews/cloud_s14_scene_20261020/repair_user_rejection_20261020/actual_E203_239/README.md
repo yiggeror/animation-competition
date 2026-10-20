@@ -1,0 +1,3 @@
+最终E来自b89ef9adea79709f590777628e1cebfbae604fe5原blob，SHA7d7b25445944a394485699fdbba68fc4ccfdbd756d8f97ce779ba51b8c4f40ff。仅新渲203–239共37格，原PNG字节不改，raw注册不重复乘，实际资源／页面错误0。
+
+完整240格由前132+ABC65+D6+E37原编码拼接，前203格不重渲。全片及视觉边界详见相邻final_ABCDE_actual_review，当前S15旧长身体量切口未关闭，不能计整链ready。

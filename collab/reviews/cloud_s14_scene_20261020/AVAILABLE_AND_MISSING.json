@@ -1,5 +1,5 @@
 {
-  "status": "ACTUAL_ABCD_INTEGRATED_E_CROSSED_ARMS_PENDING",
+  "status": "S14_ABCDE_10S_REPAIR_CANDIDATE_ORIGINAL_THREE_FAULTS_NOT_OBSERVED_AGAIN_S15_CUT_BODY_GAP_PENDING",
   "oldPassWithdrawn": true,
   "AActualRange": [
     150,
@@ -13,9 +13,7 @@
     162,
     196
   ],
-  "pendingInputs": [
-    "E crossed-arms complete figure from C mother for203–239; preserve C head/body/short hanging legs and original stool. D received/rendered; do not request it again."
-  ],
+  "pendingInputs": [],
   "grandmaCandidateUnchanged": true,
   "sceneDurationSeconds": 10,
   "CActualRange": [
@@ -116,5 +114,19 @@
       "mediaError": null
     },
     "library_file_id": "libfile_a705249b35208191b4f826a98599b44f"
+  },
+  "EActualRange": [
+    203,
+    239
+  ],
+  "pendingCoordination": [
+    "S14E239→currentS15F000 old-body length mismatch; concrete full-E registration reference provided only, S15 owner to review F108 next boundary."
+  ],
+  "currentFullCandidate": {
+    "file": "repair_user_rejection_20261020/S14_ABCDE_REPAIR_240F_10S.mp4",
+    "sha256": "3d7e4ba2ce24b429d370ff8ebc2d63e66d67674ea9e74d5757b11c48f10cf278",
+    "frameCount": 240,
+    "seconds": 10,
+    "library_file_id": "libfile_df8baff37f6c81919bc535d2aba83fa3"
   }
 }

@@ -1,0 +1,91 @@
+{
+  "status": "S14_ABCDE_10S_REPAIR_CANDIDATE_ORIGINAL_THREE_FAULTS_NOT_OBSERVED_AGAIN_S15_CUT_BODY_GAP_PENDING",
+  "film": {
+    "file": "repair_user_rejection_20261020/S14_ABCDE_REPAIR_240F_10S.mp4",
+    "sha256": "3d7e4ba2ce24b429d370ff8ebc2d63e66d67674ea9e74d5757b11c48f10cf278",
+    "bytes": 13402661,
+    "frameCount": 240,
+    "fps": 24,
+    "seconds": 10,
+    "width": 1920,
+    "height": 1080,
+    "audioStreams": 0,
+    "newSceneRenderFramesThisRun": 37,
+    "reusedPreviouslyRenderedFrames": 203
+  },
+  "library_file_id": "libfile_df8baff37f6c81919bc535d2aba83fa3",
+  "originalThreeFaultsReview": [
+    {
+      "fault": "奶奶突然变大",
+      "result": "本轮未见原起段整人身量突增。000–017用已交整人+持布统一注册候选，018后保持原片；脚底与原工作凳连接，抬臂/转头时未见全人突然放大。已看000/015/018/030/060/078/081/095原尺寸序列及全部换张时序。",
+      "evidence": [
+        "GRANDMA_ACTUAL_NATIVE_SEQUENCE_1.png",
+        "GRANDMA_ACTUAL_NATIVE_SEQUENCE_2.png",
+        "FULL240_ACTUAL_MOTION_SEQUENCE_1.jpg",
+        "FULL240_ACTUAL_MOTION_SEQUENCE_2.jpg"
+      ],
+      "limit": "原画线形/姿态差异仍在，不宣称所有独立画稿每根骨长精确一致。"
+    },
+    {
+      "fault": "小满搬到坐瞬移/变大",
+      "result": "实际132–149步态后，A150停步扶凳，B156髋后移/初触凳沿，C162坐实；同原凳位置、同头身，短腿自然悬足。没有再调用旧长身156/162/168落坐人物，不把鞋拉到地面。",
+      "evidence": [
+        "CHILD_ACTUAL_DRAG_TO_SEAT_TO_FOLD_SEQUENCE.png",
+        "FULL240_ACTUAL_MOTION_SEQUENCE_3.jpg",
+        "FULL240_ACTUAL_MOTION_SEQUENCE_4.jpg"
+      ]
+    },
+    {
+      "fault": "坐后莫名低头",
+      "result": "C162–196看幕坐定，D197–202双臂收向胸前，E203–239自然交叉抱臂。头眼朝向保持，无独立俯头/回正链；C→D→E没有恢复旧长躯干/落地长腿。",
+      "evidence": [
+        "CHILD_ACTUAL_DRAG_TO_SEAT_TO_FOLD_SEQUENCE.png",
+        "FULL240_ACTUAL_MOTION_SEQUENCE_4.jpg"
+      ]
+    }
+  ],
+  "S15Cut": {
+    "status": "NOT_ACCEPTED_AS_SAME_BODY_STATURE",
+    "currentSharedCommit": "b89ef9adea79709f590777628e1cebfbae604fe5",
+    "currentS15SourceAndMovieSameBlob": true,
+    "actualEvidence": "S14_E_TO_CURRENT_S15_BODY_CONTINUITY_EVIDENCE.jpg",
+    "specificGap": "同共同画布近似同凳位下，现S15 F000颈胸/躯干及小腿仍明显更长。实际S15首帧虽更近更暗，不能把该体段差异当成景别变化已通过。",
+    "minimumSuggestionFile": "S15_CUT_GAP_AND_MINIMAL_REGISTRATION_SUGGESTION.json",
+    "sourceReferenceOnly": "E_COMPLETE_COMMON1254_REGISTRATION_REFERENCE_ONLY.png",
+    "S15SourceOrCameraOrLightOrActionChanged": false,
+    "additionalArtGenerated": false
+  },
+  "visualMethod": "完整10秒按播放器默认1×正常播放；视觉复核为全部原画换张和关键接点的62张实际MP4解码图按时序查看，以及原尺寸人物/手臂/腿凳比较。未冒称通过实时视频视觉通道主观观看了全240帧。",
+  "technicalPlayback": {
+    "duringConcurrentPNGDecode": {
+      "file": "repair_user_rejection_20261020/S14_ABCDE_REPAIR_240F_10S.mp4",
+      "ended": true,
+      "duration": 10,
+      "width": 1920,
+      "height": 1080,
+      "totalVideoFrames": 240,
+      "droppedVideoFrames": 7,
+      "corruptedVideoFrames": 0,
+      "mediaError": null
+    },
+    "isolatedAfterDecodeFinished": {
+      "file": "repair_user_rejection_20261020/S14_ABCDE_REPAIR_240F_10S.mp4",
+      "ended": true,
+      "duration": 10,
+      "width": 1920,
+      "height": 1080,
+      "totalVideoFrames": 240,
+      "droppedVideoFrames": 0,
+      "corruptedVideoFrames": 0,
+      "mediaError": null
+    },
+    "note": "首次在完整解码/图板生成并行运行时记7丢帧，原记录保留；结束并行解码后，仅重播既有同一MP4一次，0丢帧。没有重渲场景或修改编码。"
+  },
+  "all240DecodedFramesExactlyPreserveSourceChunks": true,
+  "newImageGenerationCalls": 0,
+  "oldRejectedMovieSHA256Retained": "5b2ed3ff18dc785899724d838cb3741253947e29beb9277b23d92071772f33b7",
+  "wholeFilmRerendered": false,
+  "soundOrEDLChanged": false,
+  "readyOrFinalDirectorAcceptanceClaimed": false,
+  "remainingBlocker": "S15首段旧体量的切口协调；仅提供完整E注册参考和最小建议，等待主协调/S15所有者处理。"
+}

@@ -1,0 +1,134 @@
+{
+  "status": "S14_ABCDE_10S_REPAIR_CANDIDATE_ORIGINAL_THREE_FAULTS_NOT_OBSERVED_AGAIN_S15_CUT_BODY_GAP_PENDING",
+  "createdUTC": "2026-10-20T10:51:15.674852+00:00",
+  "file": "repair_user_rejection_20261020/S14_ABCDE_REPAIR_240F_10S.mp4",
+  "sha256": "3d7e4ba2ce24b429d370ff8ebc2d63e66d67674ea9e74d5757b11c48f10cf278",
+  "bytes": 13402661,
+  "frameCount": 240,
+  "fps": 24,
+  "seconds": 10,
+  "width": 1920,
+  "height": 1080,
+  "audioStreams": 0,
+  "sourceChunks": [
+    {
+      "path": "repair_user_rejection_20261020/S14_REPAIRED_GRANDMA_PREFIX_000_131_132F.mp4",
+      "sha256": "2212e2b51cafb8ccf8ddfc07c921aaa02057ecc39daa82071fa3c2a0d369c676",
+      "frames": 132
+    },
+    {
+      "path": "repair_user_rejection_20261020/S14_EXISTING_DRAG_A_B_C_132_196_65F.mp4",
+      "sha256": "5284d39fed0d4cf68ae54c098dcdd740d6930c2070624569cb6e696be3262aec",
+      "frames": 65
+    },
+    {
+      "path": "repair_user_rejection_20261020/actual_D197_202/S14_ACTUAL_SEGMENT.mp4",
+      "sha256": "263457134d929609ef2125fec377cbd72be423b3e33e143581c28b3c0636de6a",
+      "frames": 6
+    },
+    {
+      "path": "repair_user_rejection_20261020/actual_E203_239/S14_ACTUAL_SEGMENT.mp4",
+      "sha256": "3f95613377bccbd5729fc2011d2876b4f713567d048d682f3e4748d732581cf1",
+      "frames": 37
+    }
+  ],
+  "newSceneRenderFramesThisRun": 37,
+  "reusedPreviouslyRenderedFrames": 203,
+  "newImageGenerationCalls": 0,
+  "fullSceneRerendered": false,
+  "oldRejectedFilmRetained": true,
+  "rawRegistrationAppliedAgain": false,
+  "S15Modified": false,
+  "EDLOrSoundChanged": false,
+  "technicalProbe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1088,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 4,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/12288",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 122880,
+        "duration": "10.000000",
+        "bit_rate": "10718980",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "240",
+        "nb_read_frames": "240",
+        "extradata_size": 47,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc61.19.101 libx264"
+        }
+      }
+    ],
+    "format": {
+      "filename": "collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/S14_ABCDE_REPAIR_240F_10S.mp4",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "10.000000",
+      "size": "13402661",
+      "bit_rate": "10722128",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf61.7.103"
+      }
+    }
+  },
+  "fullRepairAccepted": false,
+  "originalThreeFaultsReviewFile": "repair_user_rejection_20261020/final_ABCDE_actual_review/ORIGINAL_THREE_FAULTS_AND_S15_CUT_REVIEW.json",
+  "completeDecodeMatchesSourceChunks": true,
+  "library_file_id": "libfile_df8baff37f6c81919bc535d2aba83fa3",
+  "S15CutBodyMismatchPending": true
+}
