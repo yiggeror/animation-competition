@@ -1,0 +1,80 @@
+{
+  "status": "TWO_ACTUALLY_VIEWED_REFERENCES_SEALED_FOR_ASTRA_INPUT_GATE_NOT_A_FINISHED_DRAWING",
+  "input_PNGs": [
+    {
+      "order": 1,
+      "path": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F098_EXACT_NATIVE_ACTIVITY_INPUT_FROM_FINAL094_20261020/inputs/01_F098_EXACT_NATIVE_ACTIVITY_TARGET.png",
+      "SHA256": "8860b4f7a69f36a5d8597f616686870dea7a1f206215aa1f2d056bb79b712755",
+      "decoded_size": [
+        1024,
+        1536
+      ],
+      "actually_opened_and_visually_reviewed": true
+    },
+    {
+      "order": 2,
+      "path": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F098_EXACT_NATIVE_ACTIVITY_INPUT_FROM_FINAL094_20261020/inputs/02_SAME_F098_TRUE70_PAPER_RODS_BOX_GROUND_CONTEXT.png",
+      "SHA256": "2b74d4e5d1c7991128f7e8cc52fd1cb0db7df117e554ad3555bca8d4054c4e37",
+      "decoded_size": [
+        1920,
+        1080
+      ],
+      "actually_opened_and_visually_reviewed": true
+    }
+  ],
+  "full_prompt_SHA256": "d1d03eb0d421b6a068816181701a9ac160cb5ed0045d9907fa51e56e045bb89d",
+  "request_submitted": false,
+  "new098_imagegen_calls": 0,
+  "new102_imagegen_calls": 0,
+  "new098_raw_outputs": 0,
+  "actual098_person_Canvas": 0,
+  "code_prop_reference_batches": 1,
+  "code_prop_person_draws": 0,
+  "comparison_native_file": "anatomy/F098_NATIVE_SOURCE_GROUP_REFERENCE_ONLY.png",
+  "protected_native_RGBA_differing_pixels": 0,
+  "qualified_final094_support_RGBA_differing_pixels": 0,
+  "reference_BG_FG_overlap_pixels": 0,
+  "reference_BG_FG_RGBA_reconstruction_differing_pixels": 0,
+  "input2_same_person_context_RGBA_reconstruction_differing_pixels": 0,
+  "paper_degrees": 70,
+  "root_scene": [
+    1291.1049355405019,
+    559.1690070167356
+  ],
+  "actual_hinges_and_rigid_hands": {
+    "R": {
+      "rigid_complete_hand_grip_residual_native": 0.0,
+      "rigid_hand_scale": 1,
+      "independent_finger_moves": 0,
+      "physical_rod_length_scene": 381.56350585940044,
+      "physical_rod_length_residual": 1.7053025658242404e-13,
+      "actual_makeCrane_hinge_residual_scene": 0.0,
+      "native_true_grip": [
+        907.8826835803086,
+        755.9230442248628
+      ],
+      "straight_reach_spare_native": 57.68920345813518
+    },
+    "L": {
+      "rigid_complete_hand_grip_residual_native": 0.0,
+      "rigid_hand_scale": 1,
+      "independent_finger_moves": 0,
+      "physical_rod_length_scene": 577.0973600937725,
+      "physical_rod_length_residual": 1.1368683772161603e-13,
+      "actual_makeCrane_hinge_residual_scene": 0.0,
+      "native_true_grip": [
+        864.0026155923139,
+        559.7721014897187
+      ],
+      "straight_reach_spare_native": 164.35836080042446
+    }
+  },
+  "visual_readback": [
+    "Final complete input01 and final complete input02 actually opened after wrist cleanup.",
+    "Real hands/bangle and both shaft axes examined in actual context crop.",
+    "Chest/waist alpha gaps and displaced knee ghost from internal assembly removed before sealing.",
+    "Head/face/collar and natural existing knee cloth retained from the sole final094.",
+    "Remaining sleeve/elbow/wrist and small rib cloth material joins require natural new drawing; not claimed production-qualified."
+  ],
+  "generation_blocker": "Astra must review these exact two inputs / request before the sole proposed098 generation. No generation is authorized by this report."
+}

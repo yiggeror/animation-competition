@@ -1,0 +1,382 @@
+{
+  "status": "INPUT_ONLY_AWAITING_GATE_NEW_IMAGEGEN0",
+  "frame": 98,
+  "source_final094": {
+    "commit": "5e65b2213351166bd2143f6e4e56e907c7519cd9",
+    "native_path": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F094_LOCAL_ARMS_KNEES_actual_call01_20261019/candidate/F094.png",
+    "native_SHA256": "63fb22a00e9a3521d5e1d6b2f3c116ad1f0e78baa7993f7fa39626daea7bc417",
+    "actual_Canvas_path": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F094_LOCAL_ARMS_KNEES_actual_call01_20261019/actual_scene/F094_canvas.png",
+    "actual_Canvas_SHA256": "12bf5d70b7d38785132f41bba5e0996da6737a446e98d45d69f6900fdd77f26d",
+    "locked094_is_not_changed": true
+  },
+  "proxy_uncertainty_native": "15-25px sleeve-hidden shoulder/elbow/hip; projected visible proxies, not anatomical measurements",
+  "hip_source_actual094_visible_proxy": [
+    486.5308350349993,
+    869.0413363645418
+  ],
+  "hip_target": [
+    521.8018125544002,
+    857.9483204779814
+  ],
+  "hip_delta_native": [
+    35.270977519400844,
+    -11.093015886560465
+  ],
+  "knee_support_visible_proxy": [
+    610.0,
+    1200.0
+  ],
+  "whole_torso_head_rigid_matrix": [
+    [
+      0.9990482215818578,
+      0.043619387365336,
+      -2.1730036194263675
+    ],
+    [
+      -0.043619387365336,
+      0.9990482215818578,
+      10.956295860436853
+    ]
+  ],
+  "thigh_rigid_matrix": [
+    [
+      0.9945218953682733,
+      -0.10452846326765347,
+      128.77579974653747
+    ],
+    [
+      0.10452846326765347,
+      0.9945218953682733,
+      -57.18863703519651
+    ]
+  ],
+  "arms": {
+    "R": {
+      "source_final094": {
+        "shoulder": [
+          543.0,
+          461.0
+        ],
+        "elbow": [
+          642.0,
+          684.0
+        ],
+        "wrist": [
+          865.0,
+          789.0
+        ],
+        "true_grip": [
+          934.8216809027882,
+          764.5500897836491
+        ]
+      },
+      "target": {
+        "shoulder": [
+          560.4187182749423,
+          447.83219867029584
+        ],
+        "elbow": [
+          609.7094669478157,
+          686.7891447824932
+        ],
+        "wrist": [
+          837.9119227754229,
+          779.9429914784242
+        ],
+        "true_grip": [
+          907.8826835803086,
+          755.9230442248628
+        ]
+      },
+      "upper_rigid_matrix": [
+        [
+          0.9771070569735343,
+          -0.2127482061323161,
+          127.92650936531089
+        ],
+        [
+          0.2127482061323161,
+          0.9771070569735343,
+          -118.13643052435111
+        ]
+      ],
+      "forearm_rigid_matrix": [
+        [
+          0.9986223384901265,
+          0.05247308899341818,
+          -67.29766723434352
+        ],
+        [
+          -0.05247308899341818,
+          0.9986223384901265,
+          37.4191883890212
+        ]
+      ],
+      "whole_hand_bangle_same_rod_angle_matrix": [
+        [
+          0.9999810800231929,
+          -0.00615138973312878,
+          -22.218264945200303
+        ],
+        [
+          0.00615138973312878,
+          0.9999810800231929,
+          -14.3630327790313
+        ]
+      ],
+      "upper_projected_proxy_length": 243.98770460824454,
+      "forearm_projected_proxy_length": 246.48326515201796,
+      "straight_reach_spare_native": 57.68920345813518,
+      "elbow_delta_native": [
+        -32.29053305218429,
+        2.7891447824931674
+      ],
+      "hand_scale": 1,
+      "independent_finger_moves": 0
+    },
+    "L": {
+      "source_final094": {
+        "shoulder": [
+          579.5153433574776,
+          442.599710580553
+        ],
+        "elbow": [
+          679.0,
+          643.0
+        ],
+        "wrist": [
+          823.5364834028757,
+          578.3632026173367
+        ],
+        "true_grip": [
+          900.0493204198561,
+          605.6354417960509
+        ]
+      },
+      "target": {
+        "shoulder": [
+          596.0966977648601,
+          427.85664534251777
+        ],
+        "elbow": [
+          673.2538150853949,
+          637.8667692733986
+        ],
+        "wrist": [
+          788.6451857482148,
+          529.4530146713513
+        ],
+        "true_grip": [
+          864.0026155923139,
+          559.7721014897187
+        ]
+      },
+      "upper_rigid_matrix": [
+        [
+          0.9940981046664741,
+          -0.10848482980824478,
+          68.0169475835603
+        ],
+        [
+          0.10848482980824478,
+          0.9940981046664741,
+          -74.99951146694241
+        ]
+      ],
+      "forearm_rigid_matrix": [
+        [
+          0.9448344268078228,
+          0.3275483260814087,
+          -178.9023343874626
+        ],
+        [
+          -0.3275483260814087,
+          0.9448344268078228,
+          252.7435462452451
+        ]
+      ],
+      "whole_hand_bangle_same_rod_angle_matrix": [
+        [
+          0.9991953422581588,
+          -0.040108203769316064,
+          -11.031523464351721
+        ],
+        [
+          0.040108203769316064,
+          0.9991953422581588,
+          -81.47537260519175
+        ]
+      ],
+      "upper_projected_proxy_length": 223.73527416721464,
+      "forearm_projected_proxy_length": 158.33101594557277,
+      "straight_reach_spare_native": 164.35836080042446,
+      "elbow_delta_native": [
+        -5.746184914605124,
+        -5.133230726601369
+      ],
+      "hand_scale": 1,
+      "independent_finger_moves": 0
+    }
+  },
+  "prop_plan": {
+    "root_scene": [
+      1291.1049355405019,
+      559.1690070167356
+    ],
+    "paper_plane_inclination_degrees": 70.0,
+    "projected_roll_degrees": -4.0,
+    "code_pose": {
+      "angles": {
+        "neck0": 0.75,
+        "neck1": 0.04000000000000001,
+        "neck2": 0.009999999999999998,
+        "neck3": -0.020000000000000004,
+        "neck4": -0.055,
+        "neck5": -0.08500000000000002,
+        "neck6": -0.115,
+        "neck7": -0.135,
+        "neck8": -0.14,
+        "neck9": -0.13,
+        "neck10": -0.10500000000000001,
+        "neck11": -0.07500000000000001,
+        "head": -0.55,
+        "tibia_near": 0.8900000000000001,
+        "tarsus_near": -1.4100000000000001,
+        "foot_near": 0.5650000000000001,
+        "tibia_far": 0.7500000000000002,
+        "tarsus_far": -1.2900000000000005,
+        "foot_far": 0.5400000000000001
+      },
+      "rootAngle": 0,
+      "facing": 1
+    },
+    "actual_makeCrane_scale": 1.35,
+    "paper_3D_camera_basis": [
+      [
+        0.9598191786680778,
+        -0.157214281020676
+      ],
+      [
+        -0.1210600027010961,
+        -0.9792637781958946
+      ],
+      [
+        0.2531632279912453,
+        0.12777371621993874
+      ]
+    ],
+    "mm_to_scene_scale": 0.72,
+    "rods": {
+      "R": {
+        "part": "BODY",
+        "joint_local_mm": [
+          -75.0,
+          6.0
+        ],
+        "hinge_scene": [
+          1238.5955341984163,
+          561.4758276407885
+        ],
+        "hinge_camera3D_scene_units": [
+          1238.5955341984163,
+          561.4758276407885,
+          -13.11883185745711
+        ],
+        "grip_scene": [
+          910.517878506216,
+          641.1461309574039
+        ],
+        "grip_camera3D_scene_units": [
+          910.517878506216,
+          641.1461309574039,
+          -168.93427333342092
+        ],
+        "free_scene": [
+          901.9335970717602,
+          643.2307359092264
+        ],
+        "free_camera3D_scene_units": [
+          901.9335970717602,
+          643.2307359092264,
+          -173.01124589847277
+        ],
+        "grip_fraction_from_hinge_unchanged": 0.9745017761505183,
+        "physical_length_H": 1.7747139807413974,
+        "physical_length_scene_units": 381.56350585940044,
+        "physical_length_camera3D_check": 381.5635058594005,
+        "projected_length_new_scene": 346.44642433694304,
+        "projected_angle_delta_degrees": 0.35245089263876
+      },
+      "L": {
+        "part": "NECK3",
+        "joint_local_mm": [
+          220.10816472142866,
+          124.88281348870629
+        ],
+        "hinge_scene": [
+          1429.0790223660492,
+          451.93255925197246
+        ],
+        "hinge_camera3D_scene_units": [
+          1429.0790223660492,
+          451.93255925197246,
+          51.60962495488256
+        ],
+        "grip_scene": [
+          879.8018309146197,
+          503.8404710428031
+        ],
+        "grip_camera3D_scene_units": [
+          879.8018309146197,
+          503.8404710428031,
+          16.725384430677337
+        ],
+        "free_scene": [
+          855.6864549301341,
+          506.1194275130283
+        ],
+        "free_camera3D_scene_units": [
+          855.6864549301341,
+          506.1194275130283,
+          15.193832439684414
+        ],
+        "grip_fraction_from_hinge_unchanged": 0.957942642869746,
+        "physical_length_H": 2.6841737678780118,
+        "physical_length_scene_units": 577.0973600937725,
+        "physical_length_camera3D_check": 577.0973600937726,
+        "projected_length_new_scene": 575.9472658869834,
+        "projected_angle_delta_degrees": 2.2986473743810256
+      }
+    },
+    "C110_terminal": {
+      "root_scene": [
+        1240,
+        550
+      ],
+      "paper_plane_inclination_degrees": 85
+    },
+    "legacy_frame114_not_used": true,
+    "old_code_human_points_used": false,
+    "rod_3D_rotation": [
+      [
+        0.998905956165902,
+        -0.04576267870267387,
+        -0.009626420634948602
+      ],
+      [
+        0.0447983235809559,
+        0.9954775908875007,
+        -0.08377037808888
+      ],
+      [
+        0.013416442919831297,
+        0.08324748211672103,
+        0.9964385860556613
+      ]
+    ],
+    "camera_depth_model_feasible_not_measured": true
+  },
+  "new098_imagegen_calls": 0,
+  "new102_imagegen_calls": 0,
+  "actual098_full_Canvas": 0
+}

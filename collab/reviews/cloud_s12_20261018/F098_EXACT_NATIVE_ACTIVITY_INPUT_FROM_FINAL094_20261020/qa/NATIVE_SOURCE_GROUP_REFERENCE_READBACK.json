@@ -1,0 +1,134 @@
+{
+  "status": "REFERENCE_ASSEMBLY_VISUAL_READBACK_PENDING_NOT_PRODUCTION_ART",
+  "imagegen098_calls": 0,
+  "imagegen102_calls": 0,
+  "actual098_person_Canvas": 0,
+  "protected_RGBA_differences": 0,
+  "qualified_support_RGBA_differences": 0,
+  "BG_FG_overlap": 0,
+  "BG_FG_RGBA_reconstruction_differences": 0,
+  "whole_person_mesh_or_TPS": false,
+  "pants_reference_only_transition": "actual cloth only: rigid hip to thigh y890-1000; thigh to existing knees y980-1070, smooth coordinate transition; no new navy shapes",
+  "small_rib_underlap": "same-mother actual flower cloth source x480..532 y606..734, translation(+130,-65), clipped to newly revealed corridor",
+  "RGB_garment_threshold": false,
+  "pre_move_R_subtracted_from_L": false,
+  "new_large_knee_or_waist_plates": false,
+  "guide_regions": [
+    {
+      "role": "L",
+      "type": "small_smooth_tapered_wrist_underlap",
+      "control_points": [
+        [
+          728.0,
+          532.0
+        ],
+        [
+          740.0,
+          515.0
+        ],
+        [
+          748.0,
+          515.0
+        ],
+        [
+          750.0,
+          531.0
+        ],
+        [
+          746.0,
+          553.0
+        ],
+        [
+          736.0,
+          580.0
+        ],
+        [
+          729.0,
+          588.0
+        ],
+        [
+          724.0,
+          565.0
+        ]
+      ],
+      "reference_only": true
+    },
+    {
+      "role": "R",
+      "type": "short_rounded_wrist_underlap_only",
+      "endpoints": [
+        [
+          821.246920377132,
+          773.140220347116
+        ],
+        [
+          834.3035660817374,
+          778.2167927728476
+        ]
+      ],
+      "radius": 18,
+      "reference_only": true
+    }
+  ],
+  "internal_low_alpha_regions_for_actual_review": [
+    {
+      "pixels": 195,
+      "bbox": [
+        579,
+        74,
+        626,
+        88
+      ]
+    },
+    {
+      "pixels": 212,
+      "bbox": [
+        486,
+        94,
+        520,
+        126
+      ]
+    },
+    {
+      "pixels": 80,
+      "bbox": [
+        692,
+        106,
+        715,
+        117
+      ]
+    },
+    {
+      "pixels": 253,
+      "bbox": [
+        448,
+        153,
+        469,
+        199
+      ]
+    },
+    {
+      "pixels": 181,
+      "bbox": [
+        413,
+        274,
+        428,
+        312
+      ]
+    },
+    {
+      "pixels": 49,
+      "bbox": [
+        516,
+        574,
+        526,
+        583
+      ]
+    }
+  ],
+  "allowed_pixels": 442049,
+  "source_native_size": [
+    1024,
+    1536
+  ]
+}
