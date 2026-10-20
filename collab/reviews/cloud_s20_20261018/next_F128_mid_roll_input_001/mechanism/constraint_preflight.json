@@ -1,0 +1,172 @@
+{
+  "status": "PRELIMINARY_GEOMETRY_NOT_PRODUCTION_RENDER",
+  "new_image_calls": 0,
+  "scene_renders": 0,
+  "camera": {
+    "pos": [
+      3.05,
+      1.5,
+      1.18
+    ],
+    "target": [
+      1.5,
+      0.42,
+      0.95
+    ],
+    "hfov": 58
+  },
+  "original_turtle_scale": 1.3,
+  "source120_sha256": "40d73e42505d5e7c83dc22d33511e5a2e4862dc35b5a4ff210e50eca8ef2bf5c",
+  "axis120": [
+    [
+      -0.4870382781775184,
+      582.3245046093143
+    ],
+    [
+      1.0373326882760847,
+      45.31204644412187
+    ]
+  ],
+  "root120_registered_from_passed_axes": [
+    1.846259790889171,
+    0.8762118621351968
+  ],
+  "root128_same_registration_plus_original_puppet_delta": [
+    1.839651008168918,
+    0.8019146834916447
+  ],
+  "root_solver_residual_master": [
+    -5.8937796206350376e-09,
+    2.3749377243353946e-08
+  ],
+  "original_pose_roll_angle120": 0.17683257384135653,
+  "original_pose_roll_angle128": 1.5025220313637777,
+  "flip_fraction128": 0.4170096021947855,
+  "rows": [
+    {
+      "id": "T_H",
+      "part": "head",
+      "at": [
+        20,
+        0
+      ],
+      "source_grip_master": [
+        394.7062437119815,
+        390.0874552859149
+      ],
+      "source_axis": [
+        -0.4870382781775184,
+        582.3245046093143
+      ],
+      "A120_master": [
+        470.72802581426726,
+        353.0619374202755
+      ],
+      "A128_master": [
+        338.2626054104362,
+        291.37892098338426
+      ],
+      "A120_world_effective": [
+        1.5281996936333042,
+        0.0039999999999997815,
+        0.9443389436722633
+      ],
+      "A128_world_effective": [
+        1.8315343713512777,
+        0.0040000000000000036,
+        1.074255638399967
+      ],
+      "B120_world": [
+        1.7409322405004817,
+        0.03115699999445233,
+        0.9017629010010665
+      ],
+      "rigid_rod_length_m": 0.21864436547698668,
+      "hand_plane_sphere_radius_squared": 0.04152844498437253,
+      "B128_world": [
+        1.7374971890394892,
+        0.04065762579288482,
+        0.8803005266629407
+      ],
+      "grip128_master": [
+        400.3988637166487,
+        402.6996190692074
+      ],
+      "grip_delta_master": [
+        5.692620004667219,
+        12.612163783292488
+      ],
+      "length_error_m": -2.7755575615628914e-17
+    },
+    {
+      "id": "T_S",
+      "part": "shell",
+      "at": [
+        0,
+        40
+      ],
+      "source_grip_master": [
+        434.78701754799954,
+        496.3308321847294
+      ],
+      "source_axis": [
+        1.0373326882760847,
+        45.31204644412187
+      ],
+      "A120_master": [
+        330.8158507530218,
+        388.47814226431336
+      ],
+      "A128_master": [
+        319.83489249979783,
+        457.5233847386403
+      ],
+      "A120_world_effective": [
+        1.8535751458597232,
+        0.0040000000000000036,
+        0.9156170884706255
+      ],
+      "A128_world_effective": [
+        1.8806171488955266,
+        0.0040000000000000036,
+        0.804611977687576
+      ],
+      "B120_world": [
+        1.7197117368701638,
+        0.10011531171426663,
+        0.7209663965210357
+      ],
+      "rigid_rod_length_m": 0.25504206964477605,
+      "hand_plane_sphere_radius_squared": 0.057544290623983314,
+      "B128_world": [
+        1.693579958192722,
+        0.1421260805831277,
+        0.6998039033543602
+      ],
+      "grip128_master": [
+        463.6082671920906,
+        508.76677359903914
+      ],
+      "grip_delta_master": [
+        28.82124964409104,
+        12.435941414309752
+      ],
+      "length_error_m": 1.1102230246251565e-16
+    }
+  ],
+  "old_cross_remap_used": false,
+  "card_endpoint_rule": "Original sheetM affine projection; effective sheet-world point from that actual skin-point ray. Raw millimetre FK and camera preserved.",
+  "minimal_grip_solution_audit": {
+    "axis_intersection_master": [
+      458.60795702912895,
+      506.9845740878178
+    ],
+    "distance_to_R_grip_px": 119.43052535886555,
+    "distance_to_L_grip_px": 5.308421311803999,
+    "head_attachment_to_R_intersection_parameter": 1.9367975301251836,
+    "shell_attachment_to_L_intersection_parameter": 0.9652208889603976,
+    "intersection_is_on_A_to_B_of_both_original_renderer_rods": false,
+    "single_grip_crossing_gate_passed": false,
+    "note": "This closest-hand candidate is a preflight failure, not proof that all registrations/hand branches are impossible."
+  }
+}
