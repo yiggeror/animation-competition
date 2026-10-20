@@ -1,0 +1,324 @@
+{
+  "status": "ONE_COMMON_WHOLE_SOURCE_AFFINE_READBACK_NO_LOCAL_LIMB_FITS",
+  "raw_SHA256": "a020a9a5bc5d7776a9686f6cf8722127760a270fae64bc937378331beed99b8c",
+  "common_raw_to_native_matrix": [
+    [
+      0.9543347119351197,
+      -0.007167037688720401,
+      24.325079137357775
+    ],
+    [
+      -0.0008987030570680422,
+      0.979214700990312,
+      2.848987309203894
+    ]
+  ],
+  "linear_singular_values": [
+    0.9798571529675983,
+    0.9537024205246011
+  ],
+  "actual_surface_measurements_all_regions": [
+    {
+      "region": "far_grip",
+      "actual_surface_template_native": [
+        833,
+        530,
+        886,
+        601
+      ],
+      "target": [
+        864.0026155923139,
+        559.7721014897187
+      ],
+      "source_raw_visible_proxy": [
+        883.0026155923139,
+        570.7721014897187
+      ],
+      "raw_delta_native": [
+        19.0,
+        11.0
+      ],
+      "NCC": 0.628344925825055,
+      "weight": 4,
+      "common_registered_visible_proxy": [
+        862.9143807635589,
+        560.963862853039
+      ],
+      "residual_native": [
+        -1.0882348287549348,
+        1.1917613633203246
+      ],
+      "distance_native": 1.6138618867853596,
+      "distance_scene": 1.1297033207497515
+    },
+    {
+      "region": "near_grip",
+      "actual_surface_template_native": [
+        879,
+        730,
+        924,
+        809
+      ],
+      "target": [
+        907.8826835803086,
+        755.9230442248628
+      ],
+      "source_raw_visible_proxy": [
+        934.8826835803086,
+        768.9230442248628
+      ],
+      "raw_delta_native": [
+        27.0,
+        13.0
+      ],
+      "NCC": 0.5653093410256097,
+      "weight": 4,
+      "common_registered_visible_proxy": [
+        911.0051752274179,
+        754.9495542186799
+      ],
+      "residual_native": [
+        3.122491647109314,
+        -0.9734900061829421
+      ],
+      "distance_native": 3.2707242131377416,
+      "distance_scene": 2.289506949196419
+    },
+    {
+      "region": "glasses",
+      "actual_surface_template_native": [
+        642,
+        183,
+        716,
+        264
+      ],
+      "target": [
+        679,
+        223.5
+      ],
+      "source_raw_visible_proxy": [
+        685.0,
+        226.5
+      ],
+      "raw_delta_native": [
+        6.0,
+        3.0
+      ],
+      "NCC": 0.6828991396813907,
+      "weight": 1,
+      "common_registered_visible_proxy": [
+        676.4210227764196,
+        224.02550548941795
+      ],
+      "residual_native": [
+        -2.5789772235804094,
+        0.5255054894179523
+      ],
+      "distance_native": 2.631972556687269,
+      "distance_scene": 1.8423807896810882
+    },
+    {
+      "region": "ear_bun",
+      "actual_surface_template_native": [
+        448,
+        237,
+        589,
+        319
+      ],
+      "target": [
+        518.5,
+        278
+      ],
+      "source_raw_visible_proxy": [
+        522.5,
+        281.0
+      ],
+      "raw_delta_native": [
+        4.0,
+        3.0
+      ],
+      "NCC": 0.6322447984519453,
+      "weight": 1,
+      "common_registered_visible_proxy": [
+        520.9510285329274,
+        277.53874594016355
+      ],
+      "residual_native": [
+        2.451028532927353,
+        -0.46125405983644896
+      ],
+      "distance_native": 2.4940521600278567,
+      "distance_scene": 1.7458365120194996
+    },
+    {
+      "region": "shoulder_cloth",
+      "actual_surface_template_native": [
+        484,
+        416,
+        580,
+        529
+      ],
+      "target": [
+        532,
+        472.5
+      ],
+      "source_raw_visible_proxy": [
+        535.0,
+        478.5
+      ],
+      "raw_delta_native": [
+        3.0,
+        6.0
+      ],
+      "NCC": 0.5805415120019443,
+      "weight": 1,
+      "common_registered_visible_proxy": [
+        531.4647224885941,
+        470.9224155975368
+      ],
+      "residual_native": [
+        -0.5352775114058659,
+        -1.5775844024631738
+      ],
+      "distance_native": 1.6659215351006018,
+      "distance_scene": 1.1661450745704212
+    },
+    {
+      "region": "collar",
+      "actual_surface_template_native": [
+        521,
+        324,
+        632,
+        400
+      ],
+      "target": [
+        576.5,
+        362
+      ],
+      "source_raw_visible_proxy": [
+        581.5,
+        366.0
+      ],
+      "raw_delta_native": [
+        5.0,
+        4.0
+      ],
+      "NCC": 0.7511582780284779,
+      "weight": 1,
+      "common_registered_visible_proxy": [
+        576.6475783335582,
+        360.71897204397305
+      ],
+      "residual_native": [
+        0.1475783335581582,
+        -1.2810279560269464
+      ],
+      "distance_native": 1.2895006741597226,
+      "distance_scene": 0.9026504719118057
+    },
+    {
+      "region": "hip_cloth",
+      "actual_surface_template_native": [
+        540,
+        716,
+        625,
+        824
+      ],
+      "target": [
+        582.5,
+        770
+      ],
+      "source_raw_visible_proxy": [
+        588.5,
+        785.0
+      ],
+      "raw_delta_native": [
+        6.0,
+        15.0
+      ],
+      "NCC": 0.7778909721571012,
+      "weight": 2,
+      "common_registered_visible_proxy": [
+        580.3249325255302,
+        771.0036408375144
+      ],
+      "residual_native": [
+        -2.1750674744697562,
+        1.0036408375143537
+      ],
+      "distance_native": 2.3954568351825416,
+      "distance_scene": 1.676819784627779
+    },
+    {
+      "region": "complete_knee_fold",
+      "actual_surface_template_native": [
+        576,
+        1142,
+        702,
+        1269
+      ],
+      "target": [
+        639,
+        1205.5
+      ],
+      "source_raw_visible_proxy": [
+        649.0,
+        1228.5
+      ],
+      "raw_delta_native": [
+        10.0,
+        23.0
+      ],
+      "NCC": 0.8694949645242799,
+      "weight": 2,
+      "common_registered_visible_proxy": [
+        634.8836013826574,
+        1205.230989191765
+      ],
+      "residual_native": [
+        -4.116398617342611,
+        -0.2690108082349525
+      ],
+      "distance_native": 4.125179316321581,
+      "distance_scene": 2.887625521425106
+    },
+    {
+      "region": "shoe_support",
+      "actual_surface_template_native": [
+        78,
+        1260,
+        233,
+        1313
+      ],
+      "target": [
+        155.5,
+        1286.5
+      ],
+      "source_raw_visible_proxy": [
+        152.5,
+        1311.5
+      ],
+      "raw_delta_native": [
+        -3.0,
+        25.0
+      ],
+      "NCC": 0.7332714347339071,
+      "weight": 1,
+      "common_registered_visible_proxy": [
+        160.46155277870668,
+        1286.9520154417953
+      ],
+      "residual_native": [
+        4.961552778706675,
+        0.45201544179531084
+      ],
+      "distance_native": 4.98210035381799,
+      "distance_scene": 3.4874702476725927
+    }
+  ],
+  "uncertainty": "Surface NCC proxies, approx3-5px grip, larger sleeve-hidden anatomical uncertainty; not bone measurement. Manual visual Canvas contact gate remains required.",
+  "independent_hand_finger_arm_knee_transforms": 0,
+  "applied_whole_source_registrations": 1,
+  "multiple_generated_candidates": false,
+  "model_calls": 1
+}
