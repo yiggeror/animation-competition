@@ -1,0 +1,83 @@
+{
+  "status": "ACTUAL_ABC_PARTIAL_COMPLETE_OLD_FOLD_REJECTED_PENDING_C_MOTHER_ARM_ART",
+  "createdUTC": "2026-10-20T10:25:14.372308+00:00",
+  "C": {
+    "file": "repair_user_rejection_20261020/S14_NEW_C_162_196_35F.mp4",
+    "sha256": "93eefaac64b54e9e293ad5de5f7cd2390d1d2dfa4b2c5ee3f57a2ea3b83ddda9",
+    "bytes": 1987903,
+    "frames": 35,
+    "fps": 24,
+    "seconds": 1.4583333333333333,
+    "width": 1920,
+    "height": 1080,
+    "audioStreams": 0,
+    "decodedPacketsPreserved": true,
+    "sourceMP4s": [
+      {
+        "path": "repair_user_rejection_20261020/actual_C162_196/C162_195_S14_ACTUAL_SEGMENT.mp4",
+        "sha256": "af5b7e992151ad8619dfffa0540e85c9ff8d605e406b9a1cba943b0a2b93977e"
+      },
+      {
+        "path": "repair_user_rejection_20261020/actual_C162_196/C196_ONCE_S14_ACTUAL_SEGMENT.mp4",
+        "sha256": "1f49167c9a34e351dc15437f0f31c3763e25947560a1c0502b07059319d99f49"
+      }
+    ]
+  },
+  "ABC": {
+    "file": "repair_user_rejection_20261020/S14_EXISTING_DRAG_A_B_C_132_196_65F.mp4",
+    "sha256": "5284d39fed0d4cf68ae54c098dcdd740d6930c2070624569cb6e696be3262aec",
+    "bytes": 3613910,
+    "frames": 65,
+    "fps": 24,
+    "seconds": 2.7083333333333335,
+    "width": 1920,
+    "height": 1080,
+    "audioStreams": 0,
+    "decodedPacketsPreserved": true,
+    "sourceMP4s": [
+      {
+        "path": "repair_user_rejection_20261020/S14_EXISTING_DRAG_A_B_132_161_30F.mp4",
+        "sha256": "eee2133da9e4aa1fcab7d464684c9bed5cb26e8f26424388c5e2f03aaa0a9564"
+      },
+      {
+        "path": "repair_user_rejection_20261020/S14_NEW_C_162_196_35F.mp4",
+        "sha256": "93eefaac64b54e9e293ad5de5f7cd2390d1d2dfa4b2c5ee3f57a2ea3b83ddda9"
+      }
+    ]
+  },
+  "correctedPrefix": {
+    "file": "repair_user_rejection_20261020/S14_REPAIRED_GRANDMA_PREFIX_000_131_132F.mp4",
+    "sha256": "2212e2b51cafb8ccf8ddfc07c921aaa02057ecc39daa82071fa3c2a0d369c676",
+    "bytes": 7423951,
+    "frames": 132,
+    "fps": 24,
+    "seconds": 5.5,
+    "width": 1920,
+    "height": 1080,
+    "audioStreams": 0,
+    "decodedPacketsPreserved": true,
+    "sourceMP4s": [
+      {
+        "path": "repair_user_rejection_20261020/S14_GRANDMA_000_095_4S_CANDIDATE.mp4",
+        "sha256": "fed8e1211566985baf513a6f3bfd844bf17f11e13c1a0ee848decba800f4d84f"
+      },
+      {
+        "path": "actual_close096_131/S14_ACTUAL_SEGMENT.mp4",
+        "sha256": "41bdb55c43277312b6f1d471a061894d50fddbc9306764fb3f0c0d409ce06229"
+      }
+    ]
+  },
+  "newSceneRenderedFramesForC": 35,
+  "rerenderedC196": false,
+  "extraSceneRendersForAssembly": 0,
+  "imageGenerationCalls": 0,
+  "sourceCCommit": "587ea678b2f27218710dd6cec07e551d1a16754c",
+  "sourceCSHA256": "c046100d91b59b40715747df93c4dda01f19f123246f8c9baa0de8aab5e71209",
+  "rawRegistrationAppliedAgain": false,
+  "naturalShortCalvesAndHangingFeetPreserved": true,
+  "seatedDownwardNodSourcesConsumed": false,
+  "oldLongBody197To239Consumed": false,
+  "remainingArt": "Two complete figures derived from C mother: arms collecting at chest197–202; crossed arms203–239. Same head, torso, hip, short legs and hanging shoes.",
+  "wholeS14DurationSeconds": 10,
+  "wholeRepairAccepted": false
+}

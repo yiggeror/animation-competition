@@ -1,5 +1,5 @@
 {
-  "status": "REJECTED_OLD_PASS_WITHDRAWN_ABC_INTEGRATED_OLD_FOLD_ACTUAL_SIZE_RESET",
+  "status": "ACTUAL_ABC_PARTIAL_COMPLETE_OLD_FOLD_REJECTED_PENDING_C_MOTHER_ARM_ART",
   "rejectedFilmSHA256": "5b2ed3ff18dc785899724d838cb3741253947e29beb9277b23d92071772f33b7",
   "priorVisualPassWithdrawn": true,
   "confirmedProblems": [
@@ -7,12 +7,12 @@
     "Child147→156 size jump and missing upright gait-to-sit action.",
     "Independent downward head/torso poses162/168 plus seated183/189 nods."
   ],
-  "implemented": "000–017 complete person+held sheet uniform registration candidate rendered18frames, stool fixed.180–196 temporary existing uprightX186 exposure removes nod. Neither is a repaired whole-film acceptance.",
+  "implemented": "Early grandma complete-person+held-sheet registration candidate; new A150–155/B156–161/C162–196 actual scene frames. Old nod and long-body seated source chain excluded through196. Old197–239 remains diagnostic only; no repaired whole film yet.",
   "externalArtRequest": "ABC now received/consumed. Actual newC196→old197/208 shows body/leg growth. Need only C-mother collecting-arms and complete-crossed-arms poses; do not reuse old long-body folded figures or force feet onto floor.",
-  "storage": "Workspace full; new references/render output in /tmp/s14_user_repair_20261020; original film retained.",
+  "storage": "Same original worktree stored under /tmp with original /workspace path preserved as symlink. All sources and rejected film retained.",
   "grandmaCandidate": {
     "status": "GRANDMA_EARLY_WHOLE_PERSON_REGISTRATION_CANDIDATE_NOT_FINAL_PASS",
-    "file": "/tmp/s14_user_repair_20261020/S14_GRANDMA_REGISTRATION_000_095_4S_CANDIDATE.mp4",
+    "file": "repair_user_rejection_20261020/S14_GRANDMA_000_095_4S_CANDIDATE.mp4",
     "sha256": "fed8e1211566985baf513a6f3bfd844bf17f11e13c1a0ee848decba800f4d84f",
     "frames": 96,
     "fps": 24,
@@ -80,8 +80,83 @@
       196
     ],
     "actual196Rendered": true,
-    "whole162to195RenderRunning": true,
+    "whole162to195RenderRunning": false,
     "naturalHangingFeetPreserved": true,
-    "oldFoldRejectedByActualComparison": true
-  }
+    "oldFoldRejectedByActualComparison": true,
+    "actualRange": [
+      162,
+      196
+    ],
+    "renderedFrames": 35,
+    "actualVideo": {
+      "file": "repair_user_rejection_20261020/S14_NEW_C_162_196_35F.mp4",
+      "sha256": "93eefaac64b54e9e293ad5de5f7cd2390d1d2dfa4b2c5ee3f57a2ea3b83ddda9",
+      "bytes": 1987903,
+      "frames": 35,
+      "fps": 24,
+      "seconds": 1.4583333333333333,
+      "width": 1920,
+      "height": 1080,
+      "audioStreams": 0,
+      "decodedPacketsPreserved": true,
+      "sourceMP4s": [
+        {
+          "path": "repair_user_rejection_20261020/actual_C162_196/C162_195_S14_ACTUAL_SEGMENT.mp4",
+          "sha256": "af5b7e992151ad8619dfffa0540e85c9ff8d605e406b9a1cba943b0a2b93977e"
+        },
+        {
+          "path": "repair_user_rejection_20261020/actual_C162_196/C196_ONCE_S14_ACTUAL_SEGMENT.mp4",
+          "sha256": "1f49167c9a34e351dc15437f0f31c3763e25947560a1c0502b07059319d99f49"
+        }
+      ]
+    },
+    "actualVisualReview": "Actual162/195/196 and native-scale A150/B156/C162/C196 crops inspected: stable C complete figure, gaze toward screen, short natural hanging feet, no nod. Browser playback is a technical playback check, not a subjective full-film pass."
+  },
+  "currentABCPartial": {
+    "file": "repair_user_rejection_20261020/S14_EXISTING_DRAG_A_B_C_132_196_65F.mp4",
+    "sha256": "5284d39fed0d4cf68ae54c098dcdd740d6930c2070624569cb6e696be3262aec",
+    "bytes": 3613910,
+    "frames": 65,
+    "fps": 24,
+    "seconds": 2.7083333333333335,
+    "width": 1920,
+    "height": 1080,
+    "audioStreams": 0,
+    "decodedPacketsPreserved": true,
+    "sourceMP4s": [
+      {
+        "path": "repair_user_rejection_20261020/S14_EXISTING_DRAG_A_B_132_161_30F.mp4",
+        "sha256": "eee2133da9e4aa1fcab7d464684c9bed5cb26e8f26424388c5e2f03aaa0a9564"
+      },
+      {
+        "path": "repair_user_rejection_20261020/S14_NEW_C_162_196_35F.mp4",
+        "sha256": "93eefaac64b54e9e293ad5de5f7cd2390d1d2dfa4b2c5ee3f57a2ea3b83ddda9"
+      }
+    ],
+    "library_file_id": "libfile_e4bc2719d28c8191bdf760a6421e1c1d"
+  },
+  "correctedPrefixPrepared": {
+    "file": "repair_user_rejection_20261020/S14_REPAIRED_GRANDMA_PREFIX_000_131_132F.mp4",
+    "sha256": "2212e2b51cafb8ccf8ddfc07c921aaa02057ecc39daa82071fa3c2a0d369c676",
+    "bytes": 7423951,
+    "frames": 132,
+    "fps": 24,
+    "seconds": 5.5,
+    "width": 1920,
+    "height": 1080,
+    "audioStreams": 0,
+    "decodedPacketsPreserved": true,
+    "sourceMP4s": [
+      {
+        "path": "repair_user_rejection_20261020/S14_GRANDMA_000_095_4S_CANDIDATE.mp4",
+        "sha256": "fed8e1211566985baf513a6f3bfd844bf17f11e13c1a0ee848decba800f4d84f"
+      },
+      {
+        "path": "actual_close096_131/S14_ACTUAL_SEGMENT.mp4",
+        "sha256": "41bdb55c43277312b6f1d471a061894d50fddbc9306764fb3f0c0d409ce06229"
+      }
+    ]
+  },
+  "supersededPartial": "Temporary X186180–196 superseded by C. Historical A/B records retain their original pending status; current ABC record is authoritative.",
+  "fullRepairAccepted": false
 }

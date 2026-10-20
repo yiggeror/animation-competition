@@ -1,0 +1,210 @@
+{
+  "status": "TECHNICAL_COMPLETE_PENDING_ACTUAL_VISUAL_REVIEW",
+  "pid": 24235,
+  "startedUTC": "2026-10-20T10:14:57.439Z",
+  "sourceCommit": "a409b3279c2b1f520c40e22a677229d6837ec0df",
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "requestedFrames": [
+    196
+  ],
+  "renderedFrames": [
+    {
+      "frame": 196,
+      "drawing": "C_SEATED_SAME147_PERSON",
+      "source": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_C_587ea678/C_SEATED_COMPLETE.png",
+      "sourceSHA256": "c046100d91b59b40715747df93c4dda01f19f123246f8c9baa0de8aab5e71209",
+      "shot": "originalPaintWideCameraAfterHang",
+      "wholeDrawingTransform": {
+        "sc": 0.15891769184026783,
+        "x": 459.5795306176265,
+        "y": 462.1343951571296
+      },
+      "sourceFloor": 1182.1566413870323,
+      "curtainLit": true,
+      "lightEventFrame": 132,
+      "diagnosticExposureOnly": false,
+      "backstageGrandma": {
+        "sc": 0.335,
+        "x": 466.45,
+        "y": 227.26,
+        "sourceShoeBase": 1024,
+        "roomFloor": 570.3
+      }
+    }
+  ],
+  "keyPNGs": [
+    {
+      "frame": 196,
+      "file": "F196.png",
+      "sha256": "763359bdcc79946931abbe48d0e4383b0b4dd85efb1345285df8bf184242fc9f"
+    }
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:40943/collab/reviews/cloud_s14_scene_20261020/preview.html?w=1920&steps=1&backstage=1",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40943/collab/reviews/cloud_s14_scene_20261020/s14_tail.mjs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40943/collab/reviews/cloud_s14_scene_20261020/s14_scene.mjs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40943/collab/reviews/20261020_0236_s14_lamp_close/integration_candidate/lamp_close.mjs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40943/js/paint/paintshot.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40943/collab/reviews/20261020_0236_s14_lamp_close/integration_candidate/original_lamp.mjs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40943/collab/reviews/cloud_s14_scene_20261020/BACKSTAGE_RETURN_132_167_EXPOSURE_PROPOSAL.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40943/collab/reviews/cloud_s14_scene_20261020/G095_EXACT_PERSON_PIXELS_OCCLUSION_STUDY.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40943/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_fall_inputs/G027_upper_contact_repair/G027_complete_sheet_whole_registered.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40943/collab/reviews/cloud_s14_scene_20261020/published_child_tail_exposures.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40943/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_throw_inputs/G000_locked_complete_rigid_work_stool.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40943/collab/reviews/cloud_s14_scene_20261020/G095_FIXED_DRAWN_SHEET_AND_TWO_PEGS_RGBA.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40943/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_C_587ea678/C_SEATED_COMPLETE.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40943/assets/paint/bg_01_room_wide.png",
+      "status": 200
+    }
+  ],
+  "requestFailures": [],
+  "pageErrors": [],
+  "newGenerationCalls": 0,
+  "backstageOcclusion": {
+    "visibleHeadAndRaisedArmsPixelsInOriginalRoom": 0,
+    "maximumVisibleUpperAlpha": 0,
+    "conservativeNativeUpperCutY": 550,
+    "wholeFigureTransform": {
+      "sc": 0.335,
+      "x": 466.45,
+      "y": 227.26,
+      "sourceShoeBase": 1024,
+      "roomFloor": 570.3
+    },
+    "occlusion": "Original fixed cloth contour only; opaque material mask, no contour expansion; original clothRGBA used in visible composite."
+  },
+  "video": {
+    "file": "S14_ACTUAL_SEGMENT.mp4",
+    "sha256": "1f49167c9a34e351dc15437f0f31c3763e25947560a1c0502b07059319d99f49",
+    "bytes": 103974,
+    "probe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 1920,
+          "height": 1080,
+          "coded_width": 1920,
+          "coded_height": 1088,
+          "closed_captions": 0,
+          "film_grain": 0,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 40,
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 4,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "24/1",
+          "time_base": "1/12288",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 512,
+          "duration": "0.041667",
+          "bit_rate": "19804992",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "1",
+          "nb_read_frames": "1",
+          "extradata_size": 47,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc61.19.101 libx264"
+          }
+        }
+      ],
+      "format": {
+        "filename": "/tmp/s14_user_repair_20261020/actual_C_boundary196_once/S14_ACTUAL_SEGMENT.partial.mp4",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "0.041667",
+        "size": "103974",
+        "bit_rate": "19962848",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf61.7.103"
+        }
+      }
+    }
+  },
+  "finishedUTC": "2026-10-20T10:15:03.304Z"
+}
