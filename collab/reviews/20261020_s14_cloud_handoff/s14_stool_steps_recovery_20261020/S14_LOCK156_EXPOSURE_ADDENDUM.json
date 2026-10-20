@@ -1,0 +1,27 @@
+{
+  "status": "KEY_LOCK_UPDATE_NOT_COMPLETE_EXPOSURE_APPROVAL",
+  "supersedes": "S14_MINIMAL_WIRING_CANDIDATE.json only regarding F156 availability; no exposure intervals silently approved",
+  "new_locked_key": {
+    "key": 156,
+    "path": "s14_stool_steps_recovery_20261020/APPROVED_LOCAL_F156_HANDOFF/F156_COMPLETE.png",
+    "sha256": "4ee56ed4a37f4bc3d4e64a929f212b28aa9c91b34ff95789ebe5c5f791432cd9",
+    "gate": "limited drawing acceptance, known fine skirt seam; actual CAM pending",
+    "exposure": null
+  },
+  "confirmed_missing_distinct_action_drawings": [
+    {"key":150,"meaning":"second-step braking onset, distinct from airborne recovery F156 and touchdown F162","status":"blocked; not available for production"}
+  ],
+  "existing_keys_requiring_timing_or_transition_review_not_automatic_new_drawings": [
+    {"from":147,"to":156,"note":"F150 unresolved; do not conceal with holds or deformation"},
+    {"from":156,"to":162,"note":"recovery to touchdown; intervening exposures not assigned"},
+    {"from":162,"to":168,"positions_unbound":[163,167],"note":"touchdown to seated setup; no evidence yet requiring five additional drawings"}
+  ],
+  "existing_tail": {
+    "positions":[168,239],
+    "mapping":"s14_stool_steps_recovery_20261020/POST168_PRODUCTION_MAPPING.json",
+    "missing_distinct_drawings_confirmed":0,
+    "note":"Existing native poses recovered; mapping is character exposure only, not full-shot CAM acceptance"
+  },
+  "timing_invariants": {"lamp_closeup":[96,131],"lamp_closeup_seconds":1.5,"curtain_lit_at_seconds":5.5,"S15_silhouette":"unchanged"},
+  "prohibitions": ["No invented hold across missing phases","No deformation substitute for missing complete actions","Do not count repair copies or exposure positions as distinct drawings"]
+}

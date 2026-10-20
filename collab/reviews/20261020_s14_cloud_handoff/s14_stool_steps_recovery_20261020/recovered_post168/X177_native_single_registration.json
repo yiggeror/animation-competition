@@ -1,0 +1,234 @@
+{
+  "status": "ONE_COMPLETE_NATIVE_BODY_SINGLE_SIMILARITY_CANDIDATE",
+  "frame": 177,
+  "scale": 0.8534228220944777,
+  "translation": [
+    42.60993401357928,
+    192.10468364112285
+  ],
+  "rotation_deg": 0,
+  "raw": "/tmp/laidian_s14_turn_sit_20261020/X177_complete_body_call01_original.png",
+  "raw_sha256": "e7e0809e73b78ad1ca8dd29ef21b1fd046061309d5339c36ca2ff32e15a8e6d8",
+  "final": "/tmp/laidian_s14_turn_sit_20261020/X177_complete_stool_closed_FINAL_CANDIDATE.png",
+  "final_sha256": "bce04dc262f26770a4cee26048c481235d0f46ad220bc3964156d4d0c2eab4b7",
+  "return_scope": "Whole native head neck chest both arms full skirt hips knees calves; true known stool and complete true feet restored behind. No per-limb spatial transforms.",
+  "same_mother_semantic_mean_rgb": {
+    "hair": {
+      "mother_mean_rgb": [
+        56.93118890547503,
+        46.36059613810372,
+        41.26513218086387
+      ],
+      "mean_rgb": [
+        59.857836644591615,
+        48.23524217634073,
+        42.457576938059994
+      ],
+      "delta": [
+        2.926647739116582,
+        1.8746460382370103,
+        1.192444757196121
+      ],
+      "within4": true
+    },
+    "skin": {
+      "mother_mean_rgb": [
+        251.9530270422008,
+        199.36028586132684,
+        163.98006924300552
+      ],
+      "mean_rgb": [
+        250.98668381427,
+        199.6878600326876,
+        164.85397744018434
+      ],
+      "delta": [
+        -0.9663432279307926,
+        0.32757417136076583,
+        0.873908197178821
+      ],
+      "within4": true
+    },
+    "yellow_cloth": {
+      "mother_mean_rgb": [
+        251.1925411759015,
+        203.64179988874648,
+        61.5929087962851
+      ],
+      "mean_rgb": [
+        250.60461275706805,
+        206.77036430618094,
+        59.46168503959236
+      ],
+      "delta": [
+        -0.5879284188334566,
+        3.128564417434461,
+        -2.131223756692741
+      ],
+      "within4": true
+    }
+  },
+  "minimal_native_material_calibration": [
+    {
+      "region": "hair",
+      "max_rgb_offset": [
+        -2,
+        0,
+        0
+      ],
+      "before_mean_delta": [
+        4.926647739116582,
+        1.8746460382370103,
+        1.192444757196121
+      ],
+      "material_pixels": 45310,
+      "alpha_unchanged": true
+    },
+    {
+      "region": "yellow_cloth",
+      "max_rgb_offset": [
+        0,
+        -4,
+        11
+      ],
+      "before_mean_delta": [
+        -0.6586277912882679,
+        6.968921252301271,
+        -13.150626700814826
+      ],
+      "material_pixels": 81000,
+      "alpha_unchanged": true
+    }
+  ],
+  "disconnected_dust_pixels_removed": 14,
+  "calf_background_bright_pixels_removed": 454,
+  "entry168_dependency": "Missing150–167 actual final stance remains unresolved",
+  "pre_stool_semantic_close_final": "/tmp/laidian_s14_turn_sit_20261020/X177_complete_native_registered_candidate.png",
+  "pre_stool_semantic_close_sha256": "5e034b4dc29926b2da69f38ba19ed6398bc9df0d2bfc0284685b61937534dffc",
+  "same_source_stool_semantic_close": {
+    "scope": "Complete continuous seat board and whole exposed post faces, all from same registered X168 native stool. No narrow top patches; original mother fixed feet and crossbars. Whole character transform unchanged.",
+    "source_native168": "/tmp/laidian_s14_turn_sit_20261020/X168_complete_body_call01_original.png",
+    "complete_stool_layer": "/tmp/laidian_s14_turn_sit_20261020/X168_X177_COMPLETE_CONTINUOUS_FIXED_STOOL.png",
+    "complete_stool_sha256": "61ad1df8a79efae2e4af7b08aec2f289b57fc84ad8207a6b6b00f8e2e58b6da3",
+    "surface_planar_texture_registration": [
+      [
+        "back_left_post",
+        [
+          [
+            286,
+            978
+          ],
+          [
+            329,
+            978
+          ],
+          [
+            311,
+            1230
+          ],
+          [
+            267,
+            1230
+          ]
+        ],
+        [
+          [
+            301,
+            972
+          ],
+          [
+            338,
+            972
+          ],
+          [
+            318,
+            1231
+          ],
+          [
+            274,
+            1233
+          ]
+        ]
+      ],
+      [
+        "back_right_post",
+        [
+          [
+            493,
+            999
+          ],
+          [
+            525,
+            999
+          ],
+          [
+            541,
+            1180
+          ],
+          [
+            507,
+            1180
+          ]
+        ],
+        [
+          [
+            491,
+            973
+          ],
+          [
+            522,
+            973
+          ],
+          [
+            553,
+            1242
+          ],
+          [
+            514,
+            1244
+          ]
+        ]
+      ],
+      [
+        "near_right_complete_post",
+        [
+          [
+            444,
+            979
+          ],
+          [
+            489,
+            979
+          ],
+          [
+            509,
+            1276
+          ],
+          [
+            455,
+            1277
+          ]
+        ],
+        [
+          [
+            438,
+            972
+          ],
+          [
+            487,
+            972
+          ],
+          [
+            507,
+            1284
+          ],
+          [
+            454,
+            1285
+          ]
+        ]
+      ]
+    ],
+    "whole_native_body_transform_unchanged": true
+  }
+}

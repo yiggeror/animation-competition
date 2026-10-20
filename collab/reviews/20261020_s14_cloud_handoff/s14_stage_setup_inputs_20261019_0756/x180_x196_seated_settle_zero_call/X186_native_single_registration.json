@@ -1,0 +1,105 @@
+{
+  "status": "COMPLETE_NATIVE_BODY_SINGLE_SIMILARITY_AND_MINIMAL_CLOTH_COLOUR_CANDIDATE",
+  "frame": 186,
+  "scale": 1.001714305559795,
+  "rotation_deg": 0,
+  "translation": [
+    -1.9620270912920432,
+    -2.526438571466997
+  ],
+  "registration_anchor": "complete pair of red sandals, global similarity only; exact original legs and bench retained under same native complete hand silhouettes",
+  "raw_sha256": "04d6e0771526759d21404aa25c1d6a023559d9d71c6c0592e0ceaaf0bc416dd9",
+  "final_sha256": "bc6bc6954b4e825a14a2e44e2b1017a36cab941d46ff0942060143078ac5c2d3",
+  "palette_same_mother_semantic_mean_rgb": {
+    "hair": {
+      "mean_rgb": [
+        61.14452122925501,
+        48.68601120360191,
+        41.778205329563896
+      ],
+      "mother_mean_rgb": [
+        56.93118890547503,
+        46.36059613810372,
+        41.26513218086387
+      ],
+      "delta": [
+        4.21333232377998,
+        2.325415065498184,
+        0.5130731487000233
+      ],
+      "within4": false
+    },
+    "skin": {
+      "mean_rgb": [
+        250.81453151434434,
+        198.7916381699723,
+        163.74707533926065
+      ],
+      "mother_mean_rgb": [
+        251.82090652254024,
+        199.25068582893175,
+        164.11151373705113
+      ],
+      "delta": [
+        -1.0063750081959029,
+        -0.459047658959463,
+        -0.3644383977904795
+      ],
+      "within4": true
+    },
+    "yellow_cloth": {
+      "mean_rgb": [
+        248.9856956779159,
+        200.93495559502665,
+        46.952504440497336
+      ],
+      "mother_mean_rgb": [
+        251.10615251299828,
+        203.55939485846332,
+        61.70865829000578
+      ],
+      "delta": [
+        -2.120456835082365,
+        -2.6244392634366704,
+        -14.756153849508443
+      ],
+      "within4": false
+    }
+  },
+  "disconnected_dust_removed_pixels": 13,
+  "no_independent_limb_transform": true,
+  "minimal_native_cloth_colour_calibration": {
+    "same_original_before_final_sha256": "d4606d73027a88af54289317ba6d3fa1faa5a4353c6d4cf134ca7aed291b167f",
+    "max_rgb_offset": [
+      0.0,
+      0.0,
+      12.0
+    ],
+    "after_mean_rgb": [
+      248.9856956779159,
+      200.93495559502665,
+      58.91584369449378
+    ],
+    "after_mean_delta_from_mother": [
+      -2.120456835082365,
+      -2.6244392634366704,
+      -2.7928145955119987
+    ],
+    "within4": true,
+    "alpha_changed_pixels": 0,
+    "white_core_changed_pixels": 0,
+    "dark_ink_changed_pixels": 0,
+    "rule": "Only semantic native yellow; preserve shading contrast/white dots/ink/alpha, no geometry or arm edits."
+  },
+  "minimal_native_hair_colour_calibration": {
+    "before_final_sha256": "d45bf8c4a597768c235bd5238be20c24bf33f271ed7abdfe1f471721de0d890a",
+    "red_offset": -1,
+    "same_hair_mean_delta_approx": [
+      3.2133,
+      2.3254,
+      0.5131
+    ],
+    "pixels": 46592,
+    "scope": "Only large true dark-hair components, no face/eye/cloth/alpha/shape change."
+  }
+}
