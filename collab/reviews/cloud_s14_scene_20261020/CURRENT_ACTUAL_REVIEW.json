@@ -8,7 +8,7 @@
     "Independent downward head/torso poses162/168 plus seated183/189 nods."
   ],
   "implemented": "Historical ABCDE10s was rejected. Current independent per-foot grounding/grain delta has a checked4s early preview and actual shadow examples; old pull/seat motion remains unresolved.",
-  "externalArtRequest": "Original author owns T1/T2 onv2 route. Both output-review blocked, no raw, both stopped retrying. NoT2 available and no substitute generation here. Grandma source-pose continuity handoff identifiesG078→081→084→087; current runtime layer registration has no jump.",
+  "externalArtRequest": "BothT1/T2 blocked with no raw and stopped. Newgrandma081/084 integrated locally from9f853d79; minimumG087 complete pose repair still required fromnew084 mother. Old087 as-is actual reuse does not complete clamp; no limb warp or extra scene registration applied.",
   "storage": "Same original worktree stored under /tmp with original /workspace path preserved as symlink. All sources and rejected film retained.",
   "grandmaCandidate": {
     "status": "GRANDMA_EARLY_WHOLE_PERSON_REGISTRATION_CANDIDATE_NOT_FINAL_PASS",
@@ -379,6 +379,14 @@
   "grandmaNativeSwitchJudgment": {
     "handoff": "space_contact_motion_repair_20261020/grandma_native_switch_handoff_20261020/README.md",
     "library_file_id": "libfile_0a316f0535b48191a46f93d87ad98d0d",
+    "wholeSceneAccepted": false
+  },
+  "latestGrandmaNew081084Actual": {
+    "status": "NEW081_084_ACTUAL_LOCAL_CONTINUITY_AVAILABLE_OLD087_SEAM_UNRESOLVED_NOT_WHOLE_S14_PASS",
+    "evidence": "space_contact_motion_repair_20261020/new081084_actual_continuity_20261020/README.md",
+    "library_file_id": "libfile_192430e326548191b81ea0fb2f5bf79b",
+    "newRenderFrames": 6,
+    "reusedFrames": 9,
     "wholeSceneAccepted": false
   }
 }

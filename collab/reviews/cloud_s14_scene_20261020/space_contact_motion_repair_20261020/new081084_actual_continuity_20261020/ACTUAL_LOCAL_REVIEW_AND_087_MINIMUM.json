@@ -1,0 +1,126 @@
+{
+  "status": "NEW081_084_ACTUAL_LOCAL_CONTINUITY_AVAILABLE_OLD087_SEAM_UNRESOLVED_NOT_WHOLE_S14_PASS",
+  "upstreamSourceCommit": "9f853d793b2fbcd8dea06838011751459a572b3e",
+  "preview": {
+    "file": "S14_NEW081_NEW084_WITH_OLD087_075_089_15F.mp4",
+    "sha256": "3d257c4753cc4572354985043d9f0e0f475735aef3d1e667116df3271053d3cf",
+    "frames": 15,
+    "fps": 24,
+    "duration": 0.625,
+    "width": 1920,
+    "height": 1080,
+    "library_file_id": "libfile_192430e326548191b81ea0fb2f5bf79b"
+  },
+  "assembly": {
+    "originalFrames": [
+      75,
+      89
+    ],
+    "newSceneRenderFrames": [
+      81,
+      82,
+      83,
+      84,
+      85,
+      86
+    ],
+    "newSceneRenderCount": 6,
+    "reusedFrames": [
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      87,
+      88,
+      89
+    ],
+    "reusedFrameCount": 9,
+    "old4sSHA256": "08e7e04b6e8ba564ac3b26ea30b5ff958a6f43b312391154af6d5191120350d5",
+    "new6frameSHA256": "f520c609f671256490e849f9704934230fa98fd0d9376d64960661582743749a",
+    "timeline": [
+      {
+        "clipFrames": [
+          0,
+          5
+        ],
+        "originalFrames": [
+          75,
+          80
+        ],
+        "source": "Preserved4s actual MP4"
+      },
+      {
+        "clipFrames": [
+          6,
+          11
+        ],
+        "originalFrames": [
+          81,
+          86
+        ],
+        "source": "New actual6frame render"
+      },
+      {
+        "clipFrames": [
+          12,
+          14
+        ],
+        "originalFrames": [
+          87,
+          89
+        ],
+        "source": "Preserved4s actual MP4 - deliberately old087"
+      }
+    ],
+    "encoding": "Original24fps exposure order retained; CFR output setpts=N/(24*TB), no duplicated or lengthened poses. Firstconcat mux omitted final frame duration; original first-mux file preserved as diagnostic, corrected final15frame file is0.625s."
+  },
+  "consumption": {
+    "G081": "3776d1c5c025d5def998a94bf87913dc288559f5066dd416ccf1e36456dd0a84",
+    "G084": "328146ff274cc2450d0af02dbbea23c3f5b64bea6697e0361f56019b08585b18",
+    "mapping": "Raw native similarities already baked. Original1254 canvas at x355,y175,sc.335 once. Scene/ground/grain code unchanged fromfc4f4ab8. Original exposure81–83/84–86 retained.",
+    "G084Action": "Braceleted far hand offers open second peg toward edge; unbraceleted hand supports cloth. NOT closed or released.",
+    "alpha": "Original PNG bytes retained. Real alpha compositing used; hiddenRGB in transparent pixels not interpreted as visible extra head/hand."
+  },
+  "actualReview": {
+    "method": "Original-speed browser playback of final15f stored MP4 plus ordered actual1:1 body/hand/hip and uniform2x foot/stool crops. No direct subjective-video-vision claim.",
+    "normalSpeedPlayback": {
+      "newSceneRenders": 0,
+      "clips": [
+        {
+          "file": "space_contact_motion_repair_20261020/new081084_actual_continuity_20261020/S14_NEW081_NEW084_WITH_OLD087_075_089_15F.mp4",
+          "ended": true,
+          "duration": 0.625,
+          "width": 1920,
+          "height": 1080,
+          "totalVideoFrames": 15,
+          "droppedVideoFrames": 0,
+          "corruptedVideoFrames": 0,
+          "mediaError": null
+        }
+      ]
+    },
+    "frameEvidence": "ACTUAL_078_NEW081_NEW084_OLD087_FIXED_CROPS.jpg",
+    "native087Evidence": [
+      "NATIVE_NEW084_TO_OLD087_IDENTICAL_COORDINATES.png",
+      "NATIVE_NEW084_OLD087_REAL_ALPHA_HANDS_2X.png"
+    ],
+    "078toNew081toNew084": "Visible head/shoulder and hip volume is steadier than rejected old081/084; no former abrupt left-flared hip/large rising head at these states. Soles remain on same stool top and stool feet/contact shadows stay grounded. Original real arm reach is preserved.",
+    "new084toOld087": "Unresolved: old087 retracts the peg arm into a flexed pose after new084 forward offer; support hand rises back too, and body leans/changes outline. Peg is still open, so this cannot be labeled as completed clamping."
+  },
+  "old087ZeroCallDecision": {
+    "tested": "Existing registered complete old087 reused as-is in actual original-speed clip, with fixed camera/material/grounding. No extra transform or warped limbs applied.",
+    "result": "Cannot make required next clamping state by legal complete-figure similarity. Translation/rotation/uniform scale preserve elbow/jaw angles and cannot turn the retracted/open-peg pose into continuous clamping while retaining cloth and both sole supports. Moving the full compound PNG would additionally move the fixed cloth/stool.",
+    "minimumRequired": "One completeG087 derived from new084 stature/head-neck/torso/hips/legs/soles. Braceleted peg hand continues forward/settles peg jaws over same fold+wire and closes them; unbraceleted hand continues supporting cloth through load transfer. Keep original stool/sheet and3frame87–89 budget; no independent limb stretch/twist, no frozen whole figure, no replacement long hold. Successor090 release must be checked when this actualG087 exists; not certified by this clip."
+  },
+  "otherBlockedWork": "BothT1 and independentT2 remain output-review blocked with no raw; retries stopped. No calls made for them.",
+  "newImageGenerationCalls": 0,
+  "full96rerendered": false,
+  "repeated42ContactChecks": false,
+  "sceneRuntimeModulesChanged": false,
+  "technicalFailures": {
+    "renderPageErrors": [],
+    "requestFailures": []
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "status": "TECHNICAL_COMPLETE_PENDING_ACTUAL_VISUAL_REVIEW",
+  "pid": 31169,
+  "startedUTC": "2026-10-20T13:15:43.117Z",
+  "sourceCommit": "bcfe93a9b4a7752ef09122744b52f4d8cdd9a84c",
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "requestedFrames": [
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
+  ],
+  "renderedFrames": [
+    {
+      "frame": 81,
+      "drawing": "G081",
+      "source": "/collab/reviews/cloud_s14_scene_20261020/space_contact_motion_repair_20261020/new081084_actual_continuity_20261020/incoming/G081/G081_COMPLETE_SCENE_CANDIDATE.png",
+      "sourceSHA256": "3776d1c5c025d5def998a94bf87913dc288559f5066dd416ccf1e36456dd0a84",
+      "shot": "originalPaintWideCamera",
+      "wholeDrawingTransform": {
+        "x": 355,
+        "y": 175,
+        "sc": 0.335
+      },
+      "curtainLit": false
+    },
+    {
+      "frame": 82,
+      "drawing": "G081",
+      "source": "/collab/reviews/cloud_s14_scene_20261020/space_contact_motion_repair_20261020/new081084_actual_continuity_20261020/incoming/G081/G081_COMPLETE_SCENE_CANDIDATE.png",
+      "sourceSHA256": "3776d1c5c025d5def998a94bf87913dc288559f5066dd416ccf1e36456dd0a84",
+      "shot": "originalPaintWideCamera",
+      "wholeDrawingTransform": {
+        "x": 355,
+        "y": 175,
+        "sc": 0.335
+      },
+      "curtainLit": false
+    },
+    {
+      "frame": 83,
+      "drawing": "G081",
+      "source": "/collab/reviews/cloud_s14_scene_20261020/space_contact_motion_repair_20261020/new081084_actual_continuity_20261020/incoming/G081/G081_COMPLETE_SCENE_CANDIDATE.png",
+      "sourceSHA256": "3776d1c5c025d5def998a94bf87913dc288559f5066dd416ccf1e36456dd0a84",
+      "shot": "originalPaintWideCamera",
+      "wholeDrawingTransform": {
+        "x": 355,
+        "y": 175,
+        "sc": 0.335
+      },
+      "curtainLit": false
+    },
+    {
+      "frame": 84,
+      "drawing": "G084",
+      "source": "/collab/reviews/cloud_s14_scene_20261020/space_contact_motion_repair_20261020/new081084_actual_continuity_20261020/incoming/G084/G084_COMPLETE_SCENE_CANDIDATE.png",
+      "sourceSHA256": "328146ff274cc2450d0af02dbbea23c3f5b64bea6697e0361f56019b08585b18",
+      "shot": "originalPaintWideCamera",
+      "wholeDrawingTransform": {
+        "x": 355,
+        "y": 175,
+        "sc": 0.335
+      },
+      "curtainLit": false
+    },
+    {
+      "frame": 85,
+      "drawing": "G084",
+      "source": "/collab/reviews/cloud_s14_scene_20261020/space_contact_motion_repair_20261020/new081084_actual_continuity_20261020/incoming/G084/G084_COMPLETE_SCENE_CANDIDATE.png",
+      "sourceSHA256": "328146ff274cc2450d0af02dbbea23c3f5b64bea6697e0361f56019b08585b18",
+      "shot": "originalPaintWideCamera",
+      "wholeDrawingTransform": {
+        "x": 355,
+        "y": 175,
+        "sc": 0.335
+      },
+      "curtainLit": false
+    },
+    {
+      "frame": 86,
+      "drawing": "G084",
+      "source": "/collab/reviews/cloud_s14_scene_20261020/space_contact_motion_repair_20261020/new081084_actual_continuity_20261020/incoming/G084/G084_COMPLETE_SCENE_CANDIDATE.png",
+      "sourceSHA256": "328146ff274cc2450d0af02dbbea23c3f5b64bea6697e0361f56019b08585b18",
+      "shot": "originalPaintWideCamera",
+      "wholeDrawingTransform": {
+        "x": 355,
+        "y": 175,
+        "sc": 0.335
+      },
+      "curtainLit": false
+    }
+  ],
+  "keyPNGs": [
+    {
+      "frame": 81,
+      "file": "F081.png",
+      "sha256": "da41d941e3a6ff37f6b05892e6dd77ed5c4e76134650e4393ab4be71b36060e1"
+    },
+    {
+      "frame": 84,
+      "file": "F084.png",
+      "sha256": "b521ff404f6b2ebfad8f664042cc3f14beb54108e1ae7d23cec88412fc4ae4ef"
+    }
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:32923/collab/reviews/cloud_s14_scene_20261020/preview.html?w=1920",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:32923/collab/reviews/cloud_s14_scene_20261020/s14_scene.mjs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:32923/collab/reviews/cloud_s14_scene_20261020/s14_tail.mjs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:32923/js/paint/paintshot.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:32923/collab/reviews/20261020_0236_s14_lamp_close/integration_candidate/lamp_close.mjs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:32923/collab/reviews/20261020_0236_s14_lamp_close/integration_candidate/original_lamp.mjs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:32923/collab/reviews/cloud_s14_scene_20261020/space_contact_motion_repair_20261020/ground_contact.mjs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:32923/collab/reviews/cloud_s14_scene_20261020/published_grandma_exposures.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:32923/assets/paint/bg_01_room_wide.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:32923/collab/reviews/cloud_s14_scene_20261020/space_contact_motion_repair_20261020/new081084_actual_continuity_20261020/incoming/G081/G081_COMPLETE_SCENE_CANDIDATE.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:32923/collab/reviews/cloud_s14_scene_20261020/space_contact_motion_repair_20261020/new081084_actual_continuity_20261020/incoming/G084/G084_COMPLETE_SCENE_CANDIDATE.png",
+      "status": 200
+    }
+  ],
+  "requestFailures": [],
+  "pageErrors": [],
+  "newGenerationCalls": 0,
+  "video": {
+    "file": "S14_ACTUAL_SEGMENT.mp4",
+    "sha256": "f520c609f671256490e849f9704934230fa98fd0d9376d64960661582743749a",
+    "bytes": 336863,
+    "probe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 1920,
+          "height": 1080,
+          "coded_width": 1920,
+          "coded_height": 1088,
+          "closed_captions": 0,
+          "film_grain": 0,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 40,
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 4,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "24/1",
+          "time_base": "1/12288",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 3072,
+          "duration": "0.250000",
+          "bit_rate": "10750080",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "6",
+          "nb_read_frames": "6",
+          "extradata_size": 47,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc61.19.101 libx264"
+          }
+        }
+      ],
+      "format": {
+        "filename": "/tmp/s14_new081084_six_exposures_20261020/S14_ACTUAL_SEGMENT.partial.mp4",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "0.250000",
+        "size": "336863",
+        "bit_rate": "10779616",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf61.7.103"
+        }
+      }
+    }
+  },
+  "finishedUTC": "2026-10-20T13:16:02.507Z"
+}

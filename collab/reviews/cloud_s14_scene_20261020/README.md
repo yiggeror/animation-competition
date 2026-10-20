@@ -1,3 +1,5 @@
+最新奶奶081／084实际局部交付：`space_contact_motion_repair_20261020/new081084_actual_continuity_20261020/README.md`。15帧／0.625秒；旧087仍不通过，整场未验收。
+
 当前接影/颗粒局部交付：`space_contact_motion_repair_20261020/README.md`。4秒实际预览已存Library `libfile_6fc96798041c819194fd7cc7762f9360`；原整场仍否决，拖／坐与原画换张摆幅未宣称通过。
 
 # S14 再次被用户否决：空间支撑／拖凳落坐／奶奶抖动优先修
