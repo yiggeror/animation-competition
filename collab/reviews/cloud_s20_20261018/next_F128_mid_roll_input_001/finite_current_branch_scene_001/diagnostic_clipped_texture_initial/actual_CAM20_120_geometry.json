@@ -1,0 +1,133 @@
+{
+  "frame": 120,
+  "time": 5,
+  "camera": {
+    "pos": [
+      3.05,
+      1.5,
+      1.18
+    ],
+    "target": [
+      1.5,
+      0.42,
+      0.95
+    ],
+    "hfov": 58
+  },
+  "canvas": [
+    1920,
+    1080
+  ],
+  "root_candidate_not_frozen": [
+    1.846259790889171,
+    0.8762118621351968
+  ],
+  "pose": {
+    "angles": {
+      "legFN": -6.858022075225178e-16,
+      "legBF": -6.858022075225178e-16,
+      "legFF": -5.147849420875001e-16,
+      "legBN": -5.147849420875001e-16,
+      "tail": -1.4695761589768238e-16,
+      "neck0": -0.5100000000000001,
+      "neck1": 1.11,
+      "neck2": -0.76,
+      "head": -9.797174393178826e-17
+    },
+    "rootAngle": 0.17683257384135653,
+    "facing": -1
+  },
+  "original_material": "unmodified makeTurtle(1.3), drawPuppet r",
+  "people_to_CAM20": [
+    1.5356339213808416,
+    0,
+    -1.1368683772161603e-15,
+    1.5356339213808399,
+    -55.29501789280528,
+    -18.803172678195892
+  ],
+  "rods": [
+    {
+      "id": "T_H",
+      "holder": "X.R",
+      "part": "head",
+      "at": [
+        20,
+        0
+      ],
+      "A_master": [
+        470.72802581426726,
+        353.0619374202755
+      ],
+      "B_master": [
+        394.7062437119815,
+        390.0874552859149
+      ],
+      "B_world": [
+        1.7409322405004817,
+        0.03115699999445233,
+        0.9017629010010665
+      ],
+      "candidate_A_B_length_m": 0.21864436547698668,
+      "local_point_mm": [
+        268.1386883459737,
+        59.66632716257595
+      ],
+      "A_screen": [
+        667.5709062922195,
+        523.3707147728186
+      ],
+      "B_screen": [
+        550.8292789321265,
+        580.2283559639867
+      ],
+      "width_screen": 6.270505178971762,
+      "depthA": 1.9440405663816656,
+      "skin_endpoint_from_same_card": true
+    },
+    {
+      "id": "T_S",
+      "holder": "X.L",
+      "part": "shell",
+      "at": [
+        0,
+        40
+      ],
+      "A_master": [
+        330.8158507530218,
+        388.47814226431336
+      ],
+      "B_master": [
+        434.78701754799954,
+        496.3308321847294
+      ],
+      "B_world": [
+        1.7197117368701638,
+        0.10011531171426663,
+        0.7209663965210357
+      ],
+      "candidate_A_B_length_m": 0.25504206964477605,
+      "local_point_mm": [
+        -7.0364971329472485,
+        39.376232781946335
+      ],
+      "A_screen": [
+        452.7170242539962,
+        577.7570402978954
+      ],
+      "B_screen": [
+        612.3786748299095,
+        743.3792894518557
+      ],
+      "width_screen": 6.270505178971761,
+      "depthA": 1.9440405663816656,
+      "skin_endpoint_from_same_card": true
+    }
+  ],
+  "finite_A_B_only": true,
+  "external_handle_tail_m": 0,
+  "old_infinite_intersection_not_a_collision_test": true,
+  "source_person_rig_called": false,
+  "scope": "Two isolated turtle/person scene gates; grandma/C painted state fixed120; crane-puppet integration and whole-shot readiness are outside this local gate.",
+  "new_image_calls": 0
+}

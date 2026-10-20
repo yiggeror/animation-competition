@@ -1,0 +1,279 @@
+{
+  "status": "CURRENT_MINIMUM_DISPLACEMENT_BRANCH_ONLY_NOT_ADOPTED",
+  "camera": {
+    "pos": [
+      3.05,
+      1.5,
+      1.18
+    ],
+    "target": [
+      1.5,
+      0.42,
+      0.95
+    ],
+    "hfov": 58
+  },
+  "reg": {
+    "base_world_m": [
+      1.13,
+      1.1,
+      0
+    ],
+    "ox": 1110,
+    "oy": 920,
+    "pixels_per_cm": 5.833333333333333,
+    "uniform_scale_only": true,
+    "mirrored": false,
+    "individual_body_warp": false,
+    "note": "Original grandmother F000 stage slot; one whole-pair billboard preserves approved relative proportions."
+  },
+  "canvas": [
+    1920,
+    1080
+  ],
+  "frames": {
+    "120": {
+      "root": [
+        1.846259790889171,
+        0.8762118621351968
+      ],
+      "pose": {
+        "angles": {
+          "legFN": -6.858022075225178e-16,
+          "legBF": -6.858022075225178e-16,
+          "legFF": -5.147849420875001e-16,
+          "legBN": -5.147849420875001e-16,
+          "tail": -1.4695761589768238e-16,
+          "neck0": -0.5100000000000001,
+          "neck1": 1.11,
+          "neck2": -0.76,
+          "head": -9.797174393178826e-17
+        },
+        "rootAngle": 0.17683257384135653,
+        "facing": -1
+      },
+      "rods": [
+        {
+          "id": "T_H",
+          "holder": "X.R",
+          "part": "head",
+          "at": [
+            20,
+            0
+          ],
+          "A_master": [
+            470.72802581426726,
+            353.0619374202755
+          ],
+          "B_master": [
+            394.7062437119815,
+            390.0874552859149
+          ],
+          "B_world": [
+            1.7409322405004817,
+            0.03115699999445233,
+            0.9017629010010665
+          ],
+          "candidate_A_B_length_m": 0.21864436547698668
+        },
+        {
+          "id": "T_S",
+          "holder": "X.L",
+          "part": "shell",
+          "at": [
+            0,
+            40
+          ],
+          "A_master": [
+            330.8158507530218,
+            388.47814226431336
+          ],
+          "B_master": [
+            434.78701754799954,
+            496.3308321847294
+          ],
+          "B_world": [
+            1.7197117368701638,
+            0.10011531171426663,
+            0.7209663965210357
+          ],
+          "candidate_A_B_length_m": 0.25504206964477605
+        }
+      ],
+      "people_png": "F120_people_old_exterior_T_cleared_CANDIDATE.png"
+    },
+    "128": {
+      "root": [
+        1.839651008168918,
+        0.8019146834916447
+      ],
+      "pose": {
+        "angles": {
+          "legFN": -0.24962768694724094,
+          "legBF": -0.24962768694724094,
+          "legFF": 0.24962768694724008,
+          "legBN": 0.24962768694724008,
+          "tail": -0.05800383327555817,
+          "neck0": -0.5100000000000001,
+          "neck1": 1.11,
+          "neck2": -0.76,
+          "head": -0.03566109813532014
+        },
+        "rootAngle": 1.5025220313637777,
+        "facing": -1
+      },
+      "rods": [
+        {
+          "id": "T_H",
+          "holder": "X.R",
+          "part": "head",
+          "at": [
+            20,
+            0
+          ],
+          "A_master": [
+            338.2626054104362,
+            291.37892098338426
+          ],
+          "B_master": [
+            400.3988637166487,
+            402.6996190692074
+          ],
+          "B_world": [
+            1.7374971890394892,
+            0.04065762579288482,
+            0.8803005266629407
+          ],
+          "candidate_A_B_length_m": 0.21864436547698668
+        },
+        {
+          "id": "T_S",
+          "holder": "X.L",
+          "part": "shell",
+          "at": [
+            0,
+            40
+          ],
+          "A_master": [
+            319.83489249979783,
+            457.5233847386403
+          ],
+          "B_master": [
+            463.6082671920906,
+            508.76677359903914
+          ],
+          "B_world": [
+            1.693579958192722,
+            0.1421260805831277,
+            0.6998039033543602
+          ],
+          "candidate_A_B_length_m": 0.25504206964477605
+        }
+      ],
+      "people_png": "F128_people_proposed_arms_CONSTRUCTION_ONLY.png"
+    }
+  },
+  "new_image_calls": 0,
+  "old_infinite_line_gate_withdrawn": true,
+  "rod_rule": "Only finite A-to-B, no rendered free tail. Original paint outside palms erased on copies.",
+  "external_handle_tail_length_m": 0,
+  "root120_and_candidate_lengths_not_previously_frozen": true,
+  "source120_file": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F120_passive_decay_input_001/generation_001/F120_uniform_registered_upper_fixed_full_lower_candidate.png",
+  "source120_sha256": "40d73e42505d5e7c83dc22d33511e5a2e4862dc35b5a4ff210e50eca8ef2bf5c",
+  "bones": [
+    {
+      "side": "R",
+      "source_SH_E_WR": [
+        [
+          546.0,
+          420.0
+        ],
+        [
+          501.0,
+          446.0
+        ],
+        [
+          442.4791910880613,
+          419.5984911398264
+        ]
+      ],
+      "target_SH_E_WR": [
+        [
+          546.0,
+          420.0
+        ],
+        [
+          508.01209723295386,
+          455.46715724950974
+        ],
+        [
+          448.17181109272855,
+          432.2106549231189
+        ]
+      ],
+      "projected_upper_length_source_target": [
+        51.97114584074513,
+        51.97114584074516
+      ],
+      "projected_fore_length_source_target": [
+        64.20066001063746,
+        64.20066001063746
+      ],
+      "palm_translation": [
+        5.692620004667219,
+        12.612163783292488
+      ],
+      "whole_palm_scale": 1,
+      "whole_palm_rotation_deg": 0,
+      "note": "2D construction reference, not 3D bone certification or new native drawing."
+    },
+    {
+      "side": "L",
+      "source_SH_E_WR": [
+        [
+          675.0,
+          455.0
+        ],
+        [
+          646.0,
+          502.0
+        ],
+        [
+          495.61637530049626,
+          519.9053017137846
+        ]
+      ],
+      "target_SH_E_WR": [
+        [
+          675.0,
+          455.0
+        ],
+        [
+          674.259406992572,
+          510.221839176157
+        ],
+        [
+          524.4376249445872,
+          532.3412431280944
+        ]
+      ],
+      "projected_upper_length_source_target": [
+        55.226805085936306,
+        55.2268050859363
+      ],
+      "projected_fore_length_source_target": [
+        151.44581343577264,
+        151.44581343577264
+      ],
+      "palm_translation": [
+        28.82124964409104,
+        12.435941414309752
+      ],
+      "whole_palm_scale": 1,
+      "whole_palm_rotation_deg": 0,
+      "note": "2D construction reference, not 3D bone certification or new native drawing."
+    }
+  ],
+  "head_torso_skirt_full_legs_grandma_C_unchanged": true,
+  "people128_is_construction_not_new_native_art": true
+}
