@@ -1,0 +1,20 @@
+{
+  "source_thread_id": "01a15188-00cc-7705-b91f-7b18102ba0d0",
+  "utc": "2026-10-19T23:58:58.152061+00:00",
+  "input_gate_commit": "d67882d22d89913c6458c5afe22b83069a83b740",
+  "authorization": "One local094 image-generation and actual scene using exact two approved references. Append exact natural volume sentence only; preserve real body-only registered base. If uniform source canvas difference exists, at most one common source coordinate regression for the complete local arm/knee union, fixed head/body never re-registered. Complete semanticRGBA/alpha cloth, no color thresholds, isolated finger/palm moves, sparse-patch holes or automatic second image call.094 final review pending;0980.",
+  "exact_ordered_input_SHA256": [
+    {
+      "path": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F094_LOCAL_REPAIR_INPUT_FROM_BODY_ONLY_DIAGNOSTIC_20261019/inputs/01_AUTHORITATIVE_CORRECT_LOCAL_ARMS_KNEES_BODY_LOCKED.png",
+      "SHA256": "0ce9283de62a8f41f595e2c2f3c083d5e4ee5ff43c2cf833d11f0e539c1f7d8e"
+    },
+    {
+      "path": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F094_LOCAL_REPAIR_INPUT_FROM_BODY_ONLY_DIAGNOSTIC_20261019/inputs/02_SAME_CORRECT_LOCAL_POSE_TRUE65_RODS_BOX_GROUND.png",
+      "SHA256": "d2eb3ba78bdaee6da1b71c4bce7c05a52c557ca9f50130e447042d5f86071385"
+    }
+  ],
+  "only_prompt_append": "The simple arm tubes, dark blue triangular underarm fill and dark knee plate are volume and allowed-area guides, not literal contours or clothing pieces: draw natural continuous short sleeves, ordinary blouse side folds, smoothly tapering wrists and rounded loaded knee cloth. Retain the exact real palm contact locations and protected body frame.",
+  "prompt_SHA256": "ea3ed3d5f9ba373014f464c8773a78c355024dc497771e8dfd34888da8ab07c2",
+  "max_new_model_calls": 1,
+  "new098_calls": 0
+}
