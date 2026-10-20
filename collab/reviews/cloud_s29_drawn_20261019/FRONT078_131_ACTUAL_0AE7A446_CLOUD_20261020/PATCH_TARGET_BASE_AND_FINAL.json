@@ -1,0 +1,25 @@
+{
+  "sourceCommit": "0ae7a446d95343b835fb83f77f05eae61dfb6fb6",
+  "changedOnlyTables": [
+    {
+      "target": "js/anim/s29/exposure.js",
+      "baseSHA256": "c8f84687894ddd3cbb6461c12fe4095460fbb105909ce2ff359648807ea10ea1",
+      "finalSHA256": "90644cf6b21c5fe29a71113632734b57c6dd5900cff6b4894d775bb0f78be20e"
+    },
+    {
+      "target": "js/anim/s29/front_fold_exposure.js",
+      "baseSHA256": "3de248793fbd4ad928645e4422c1087076fb6248711d2240f90913a1ac282314",
+      "finalSHA256": "fa7f1bf065215e3dd12316583d4d929078b4625f09f72746cb99fb8ebda998ba"
+    }
+  ],
+  "baselineReconstructedFromSuppliedPatchAndVerifiedAgainstSourceBaseSHA256": true,
+  "appliedToRenderedTree": false,
+  "productionFilesChanged": false,
+  "requiredAssetsAlreadyInSourceTree": [
+    "F081.png",
+    "F090.png",
+    "F093.png",
+    "F099.png"
+  ],
+  "note": "Only apply on exact base checksums. Root production tables at the shared commit are a different baseline; no automatic application attempted."
+}

@@ -1,0 +1,6 @@
+<!doctype html><html><meta charset="utf-8"><title>S29 actual front 078–131 verification</title><style>body{margin:0;background:#222}canvas{display:block;width:960px;height:540px}</style><canvas id="frame" width="1920" height="1080"></canvas><script type="module">
+import {renderFrame} from '/js/paint/shots/s29.js';
+const c=document.querySelector('canvas'),ctx=c.getContext('2d');
+window.renderActualS29=async f=>{if(!Number.isInteger(f)||f<78||f>131)throw new RangeError('Only078–131');ctx.clearRect(0,0,1920,1080);await renderFrame(ctx,f/24,1920,1080);window.lastActual={globalFrame:f,time:f/24,width:1920,height:1080,renderer:'/js/paint/shots/s29.js',scope:'actual scene, not native portrait preview'};return window.lastActual;};
+window.captureActualS29=async f=>{await window.renderActualS29(f);return c.toDataURL('image/png');};window.ready=true;
+</script></html>

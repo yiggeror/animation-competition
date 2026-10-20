@@ -1,0 +1,15 @@
+# S29 078–131实际动作短片
+
+固定共享提交`0ae7a446d95343b835fb83f77f05eae61dfb6fb6`原blob源树，直接以`source_at_0ae7a446/served_tree`作HTTP根，打开`/s29-front-078-131-actual.html`，等待window.ready，按全局078–131调用captureActualS29(f)。真实s29.renderFrame(f/24)，没有重置时间、没有重复应用补丁。
+
+交付：`actual/S29_ACTUAL078_131_54F.mp4`，1920×1080／24fps／54帧／2.25秒／静音，SHA256 `c0a16cef979300aa3f0b4d8b28b26314b739db46ca559318a472c0ab7b53eb97`。Library：`libfile_b417c76287c88191983b2bb10fb4a1a5`。
+
+实际顺序查看全部54解码帧、16关键原Canvas及三组原尺寸手布接点：078→081→084为离布下探取前缘；090→093→096连续小提；096→最终099→102保持同一夹持翻提；戴镯远手固定后缘。115→116原切口继续同一108持布姿态，120／126延续收拢与提布。限定动作段未发现必须新增补画的因果断点；不作为整S29或132后续通过。
+
+正常1×浏览器播放实测2251ms，54帧完整结束、0丢帧／损坏帧。全部54帧完整解码；视觉依据是时间顺序全帧和原尺寸接点，播放日志是另行技术证据，不冒称通过视频视觉工具亲眼实时观看。详见`ACTUAL_ACTION_REVIEW.json`与`ACTUAL_MP4_ALL54_ORDERED_1/2/3.jpg`。
+
+40项源依赖前后哈希相同，实际资源／页面错误0。源包旧TABLE_TEST与旧ONLY_FRONT_EXPOSURES.patch未登记最终099，均保真留存，不作为当前曝光依据。本次实际096–098用096、099–101用最终099（b07b10e2…），以实际逐帧读回为准。
+
+最小接入补丁`ONLY_FRONT_TABLES_INCLUDING_FINAL099.patch`仅改`js/anim/s29/exposure.js`与`front_fold_exposure.js`，包含最终099拆分。其精确基线由上游附带补丁复原并核SOURCE_BASE_SHA256一致，保存在`patch_exact_base`；具体新旧SHA见`PATCH_TARGET_BASE_AND_FINAL.json`。共享提交顶层生产表并非该色修工作副本基线，不能盲目直接应用。渲染树已经含改动，本次没有再apply；F081／F090／F093／F099四采用PNG原blob在served_tree/assets/chars/s29中。
+
+只渲078–131；未改小满转头、镜头、衣色、240暖光、EDL/声轨或共享生产文件。132+仍归Pro独占，S12不在本云队列。S14的ABC及奶奶前缀保留，等原作者两尾态到件后接回。生图调用0。

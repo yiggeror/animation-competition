@@ -1,0 +1,144 @@
+{
+  "status": "BOUNDED_ACTUAL_ACTION_REVIEW_NO_NEW_REQUIRED_ART_IDENTIFIED_NOT_FULL_SHOT_PASS",
+  "sourceCommit": "0ae7a446d95343b835fb83f77f05eae61dfb6fb6",
+  "video": {
+    "path": "actual/S29_ACTUAL078_131_54F.mp4",
+    "sha256": "c0a16cef979300aa3f0b4d8b28b26314b739db46ca559318a472c0ab7b53eb97",
+    "frames": 54,
+    "fps": 24,
+    "seconds": 2.25,
+    "width": 1920,
+    "height": 1080,
+    "audioStreams": 0
+  },
+  "actualExposureReadback": [
+    {
+      "first": 78,
+      "last": 80,
+      "source": "F078.png"
+    },
+    {
+      "first": 81,
+      "last": 83,
+      "source": "F081.png"
+    },
+    {
+      "first": 84,
+      "last": 89,
+      "source": "F084.png"
+    },
+    {
+      "first": 90,
+      "last": 92,
+      "source": "F090.png"
+    },
+    {
+      "first": 93,
+      "last": 95,
+      "source": "F093.png"
+    },
+    {
+      "first": 96,
+      "last": 98,
+      "source": "F096.png"
+    },
+    {
+      "first": 99,
+      "last": 101,
+      "source": "F099.png"
+    },
+    {
+      "first": 102,
+      "last": 107,
+      "source": "F102.png"
+    },
+    {
+      "first": 108,
+      "last": 115,
+      "source": "F108.png"
+    },
+    {
+      "first": 116,
+      "last": 119,
+      "source": "F108.png"
+    },
+    {
+      "first": 120,
+      "last": 125,
+      "source": "F120.png"
+    },
+    {
+      "first": 126,
+      "last": 131,
+      "source": "lift.png"
+    }
+  ],
+  "visualObservations": [
+    {
+      "range": [
+        78,
+        84
+      ],
+      "observation": "近侧工作手先离开布面、张掌下探，再用拇指与指腹取前侧布沿；戴镯远手持续固定后缘。081提供下探中间态，未见手从布上直接跳成下方握拳。",
+      "evidence": "ACTUAL078_081_084_HAND_CLOTH.png"
+    },
+    {
+      "range": [
+        90,
+        96
+      ],
+      "observation": "090低位捏住同一前缘，093小提，096继续提起；布折在真实指间收拢，后缘固定点保持，未见整块布独立升起。",
+      "evidence": "ACTUAL090_093_096_LIFT.png"
+    },
+    {
+      "range": [
+        96,
+        102
+      ],
+      "observation": "096→099保持前缘夹持，099作小幅提/翻过渡，102继续抬手；本次是最终099，不消费先前过冲原件。头身没有随手势明显整体变大。",
+      "evidence": "ACTUAL096_099_102_TURN_GRIP.png"
+    },
+    {
+      "range": [
+        115,
+        116
+      ],
+      "observation": "原115→116近景切宽景：两手仍握同一前后布沿，鹤/龟仍在膝上布面对应位置；同一108姿态接切，未重演抬手或换持。",
+      "evidence": "ACTUAL115_116_CUT_120_126_CONTINUATION.jpg"
+    },
+    {
+      "range": [
+        120,
+        131
+      ],
+      "observation": "120延续持布收拢，126两手提起前折覆盖偶具，膝上支撑保留。仅审到131；未渲132+，不评价后续包裹/转头/暖光。",
+      "evidence": "ACTUAL115_116_CUT_120_126_CONTINUATION.jpg"
+    }
+  ],
+  "visualMethod": "Visually inspected all54 decoded frames in temporal order, all state changes, native-aspect hand/cloth crops and full actual115/116/120/131. Normal-rate browser playback separately recorded at1.0×. This does not assert subjective real-time video viewing through an unavailable video-vision tool.",
+  "normalRatePlayback": {
+    "ended": true,
+    "duration": 2.25,
+    "playbackRate": 1,
+    "elapsedMS": 2251.2999999970198,
+    "totalVideoFrames": 54,
+    "droppedVideoFrames": 0,
+    "corruptedVideoFrames": 0
+  },
+  "all40FrozenDependenciesUnchanged": true,
+  "missingResources": [],
+  "pageErrors": [],
+  "library_file_id": "libfile_b417c76287c88191983b2bb10fb4a1a5",
+  "newImageCalls": 0,
+  "renderedOnlyGlobal078To131": true,
+  "productionFilesChanged": false,
+  "scopeExclusions": [
+    "132+ Pro-owned continuation",
+    "Xiaoman head-turn",
+    "240 warm light",
+    "camera",
+    "shirt color",
+    "S12"
+  ],
+  "S14PreservedAndPendingOriginalArtistTwoTails": true
+}
