@@ -1,5 +1,5 @@
 {
-  "status": "REJECTED_BY_USER_REPAIR_IN_PROGRESS",
+  "status": "REJECTED_OLD_PASS_WITHDRAWN_ABC_INTEGRATED_OLD_FOLD_ACTUAL_SIZE_RESET",
   "rejectedFilmSHA256": "5b2ed3ff18dc785899724d838cb3741253947e29beb9277b23d92071772f33b7",
   "priorVisualPassWithdrawn": true,
   "confirmedProblems": [
@@ -8,7 +8,7 @@
     "Independent downward head/torso poses162/168 plus seated183/189 nods."
   ],
   "implemented": "000–017 complete person+held sheet uniform registration candidate rendered18frames, stool fixed.180–196 temporary existing uprightX186 exposure removes nod. Neither is a repaired whole-film acceptance.",
-  "externalArtRequest": "A received and consumed fromfc20c661. B/C pending original artist. Complete147-mother figure; no repeated raw registration. Do not force seated feet to floor.",
+  "externalArtRequest": "ABC now received/consumed. Actual newC196→old197/208 shows body/leg growth. Need only C-mother collecting-arms and complete-crossed-arms poses; do not reuse old long-body folded figures or force feet onto floor.",
   "storage": "Workspace full; new references/render output in /tmp/s14_user_repair_20261020; original film retained.",
   "grandmaCandidate": {
     "status": "GRANDMA_EARLY_WHOLE_PERSON_REGISTRATION_CANDIDATE_NOT_FINAL_PASS",
@@ -44,5 +44,44 @@
     "pageErrors": [],
     "fullSceneDurationSeconds": 10,
     "fullRepairAccepted": false
+  },
+  "newBIntegrated": {
+    "status": "A_B_ACTUAL_SCENE_PARTIAL_C_PENDING",
+    "actualRange": [
+      132,
+      161
+    ],
+    "frameCount": 30,
+    "fps": 24,
+    "durationSeconds": "1.250000",
+    "newBRenderRange": [
+      156,
+      161
+    ],
+    "newSceneRenderFramesThisRun": 6,
+    "reusedPreviouslyRenderedFrames": 24,
+    "sourceBSHA256": "687b5a17192d7651d4822629fda3dc263b05d0822549697a28544945881f4816",
+    "sourceBCommit": "95ffa1c9a59d93ad7c1d63d09998746be1b2a85f",
+    "rawRegistrationAppliedAgain": false,
+    "sourcePNGBytesModified": false,
+    "actualBComposite": "One visible child in realCanvas. Hiddenalpha0RGB not interpreted as extra characters.",
+    "BMeans": "Initial seat-edge contact with one supporting foot/hand; not full seatedC.",
+    "resourceFailures": [],
+    "pageErrors": [],
+    "fullSceneDurationSeconds": 10,
+    "fullRepairAccepted": false,
+    "fileSHA256": "eee2133da9e4aa1fcab7d464684c9bed5cb26e8f26424388c5e2f03aaa0a9564"
+  },
+  "newCIntegrated": {
+    "sourceCommit": "587ea678b2f27218710dd6cec07e551d1a16754c",
+    "sourceSHA256": "c046100d91b59b40715747df93c4dda01f19f123246f8c9baa0de8aab5e71209",
+    "chosenRange": [
+      162,
+      196
+    ],
+    "actual196Rendered": true,
+    "whole162to195RenderRunning": true,
+    "naturalHangingFeetPreserved": true,
+    "oldFoldRejectedByActualComparison": true
   }
 }

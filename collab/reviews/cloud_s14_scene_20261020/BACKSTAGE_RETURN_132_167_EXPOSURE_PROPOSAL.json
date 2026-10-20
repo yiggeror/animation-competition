@@ -1,5 +1,5 @@
 {
-  "status": "USER_REPAIR_A_STOP_CONSUMED_PENDING_B_C",
+  "status": "USER_REPAIR_A_B_C_BOUND_PENDING_C_TO_FOLD_REVIEW",
   "original141to147WholeDrawingRegistrationFromRealStoolFeet": {
     "source147": [
       [
@@ -87,12 +87,43 @@
       "upstreamCommit": "fc20c6612e696d8e52e74a412fc4215459a684e3",
       "rawRegistrationAlreadyBaked": true,
       "note": "Only native→common and common→room; .9319899 raw transform is already baked and is not reapplied. Exact later timing pending B/C."
+    },
+    {
+      "id": "B_INITIAL_SEAT_EDGE_FROM147_MOTHER",
+      "frame": 156,
+      "through": 161,
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_B_95ffa1c9/B_FIND_SEAT_COMPLETE.png",
+      "sha256": "687b5a17192d7651d4822629fda3dc263b05d0822549697a28544945881f4816",
+      "nativeToCommonScale": 0.993235574001674,
+      "nativeToCommonTranslation": [
+        37.37206636016555,
+        23.8399697320599
+      ],
+      "diagnosticExposureOnly": false,
+      "upstreamCommit": "95ffa1c9a59d93ad7c1d63d09998746be1b2a85f",
+      "rawRegistrationAlreadyBaked": true,
+      "initialSeatEdgeOnlyNotFullySeated": true,
+      "note": "Consume original alpha unmodified, includingalpha0 hiddenRGB; actual Canvas respects alpha. Raw .9487179 registration is already baked; apply native→common→room only."
+    },
+    {
+      "id": "C_SEATED_SAME147_PERSON",
+      "path": "/collab/reviews/cloud_s14_scene_20261020/repair_user_rejection_20261020/incoming_C_587ea678/C_SEATED_COMPLETE.png",
+      "sha256": "c046100d91b59b40715747df93c4dda01f19f123246f8c9baa0de8aab5e71209",
+      "nativeToCommonScale": 0.993235574001674,
+      "nativeToCommonTranslation": [
+        37.37206636016555,
+        23.8399697320599
+      ],
+      "rawRegistrationAlreadyBaked": true,
+      "diagnosticExposureOnly": false,
+      "upstreamCommit": "587ea678b2f27218710dd6cec07e551d1a16754c",
+      "naturalHangingFeetPreserved": true,
+      "note": "Whole canvas native→common→room only; no raw0.902439 registration again, no leg-to-floor fitting.",
+      "frame": 162,
+      "through": 167
     }
   ],
-  "reason": "Replace the rejected long-bodied156 with the new complete147-mother stop poseA. Old162/168 head dip is not consumed as a placeholder.",
-  "unboundPendingInputRange": [
-    156,
-    167
-  ],
+  "reason": "Astop150–155;Binitial-seat156–161;Cseated162 onward, with natural hanging feet. No old deep-bow162/168.",
+  "unboundPendingInputRange": [],
   "fixedSceneDurationSeconds": 10
 }
