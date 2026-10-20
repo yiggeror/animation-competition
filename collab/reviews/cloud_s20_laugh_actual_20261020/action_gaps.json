@@ -1,42 +1,49 @@
 {
-  "status": "LIMITED_ORIGINAL_ART_REAL_SCENE_PROBE",
+  "status": "PARTIAL_S20_WITH_FOUR_ACTION_LAUGH_WINDOW",
   "acceptedDifferentActions": [
     144,
-    156
+    150,
+    156,
+    192
   ],
-  "exposureProbe": [
+  "exposure": [
     [
       144,
-      155,
+      149,
       144
     ],
     [
+      150,
+      155,
+      150
+    ],
+    [
       156,
-      215,
+      179,
       156
+    ],
+    [
+      180,
+      215,
+      192
     ]
   ],
-  "visibleMotionGaps": [
-    {
-      "range": [
-        145,
-        155
-      ],
-      "description": "No accepted laugh-development inbetweens. The actual probe holds onset144, then changes directly to peak156."
-    },
-    {
-      "range": [
-        157,
-        215
-      ],
-      "description": "No accepted follow-through, repeated laughter or release/settle drawing. Only original camera/light continue while peak156 is held."
-    }
+  "actualAvailableIntervals": [
+    [
+      0,
+      35
+    ],
+    [
+      144,
+      215
+    ]
   ],
-  "scopeExcluded": [
-    "frames before144",
-    "frame132",
-    "rod-transfer action",
-    "CAM20 child overlap"
+  "pendingConsumption": "036–057 has original exposure, but per-state finite T mechanism still needs binding.058–131 has accepted single drawings, not a final full exposure manifest.",
+  "missingInputs": [
+    "Actual132 child RGBA and its final turtle/finite-rod mapping",
+    "Incoming crane-transfer drawing before supplied closed grip; no long closed hold over132–143"
   ],
-  "outsideFrameInterface": "Adopted finite rod A projections and the supplied old source crane pose are different coordinate anchors. Exact adopted finite rods render; full offscreen paper-attachment continuity is not certified."
+  "outsideFrameInterface": "Resolved coordinate-source comparison: frozen CAM20_003 root + same affine paper skin + inverse sheet ray yields adopted A_world; CAMG forward-z projections match exactly. Existing offscreen paper pixels are retained; no new offscreen drawing required.",
+  "proof": "integration_000_143/frozen_source_coordinate_reconciliation.json",
+  "notFullS20": true
 }

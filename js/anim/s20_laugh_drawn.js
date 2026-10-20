@@ -23,9 +23,9 @@ export async function getSequenceInfo(){
  await (init ||= (async()=>{
   const [q,p]=await Promise.all(['sequence.json','camera_and_rods.json'].map(async f=>{const r=await fetch(BASE+f);if(!r.ok)throw Error('Missing S20 '+f);return r.json();}));sequence=q;states=new Map();
   for(const row of q.states){
-   const plan=p.states[row.cameraStateIndex],sourceCam=camera(NW,NH,plan.camera),maps={};
+   const plan=p.states[row.rodSourceIndex??row.cameraStateIndex],rodCam=camera(NW,NH,plan.camera),sourceCam=camera(NW,NH,row.sourceCamera||plan.camera),maps={};
    for(const side of ['alb','nrm','mat']){const im=await loadImg(BASE+row[side]);if(!im||im.width!==1920||im.height!==2510)throw Error('Invalid S20 adopted map '+row[side]);maps[side]=pixels(im);}
-   const rods=plan.rods.map(r=>({...r,worldA:unproject(sourceCam,r.A),worldEnd:unproject(sourceCam,r.physical_end),worldGrip:unproject(sourceCam,r.grip)}));
+   const rods=plan.rods.map(r=>({...r,worldA:unproject(rodCam,r.A),worldEnd:unproject(rodCam,r.physical_end),worldGrip:unproject(rodCam,r.grip)}));
    states.set(row.key,{row,plan,sourceCam,maps,rods});
   }
  })());return sequence;

@@ -1,0 +1,56 @@
+{
+  "nativeSources": [
+    {
+      "key": 150,
+      "sourceCommit": "dd1f0f50e94584c2518492dc156e14dae173e587",
+      "source": "collab/reviews/20261020_s20_laugh_150_192_handoff/F150_CHARACTER_ALPHA.png",
+      "originalSHA256": "89dacad341ed273a69fdc4411f4500ebc4d9973600f5e887172215fd9a0a418d",
+      "dimensions": [
+        1920,
+        2510
+      ],
+      "albedoAlphaUnchanged": true,
+      "rawToCanvasScaleAlreadyAppliedNotRepeated": true,
+      "normalMaterialMaps": {
+        "n": "9f7e722b4c7048c6535d81bcae179f28b6db0697b401cf6c34047c879c6e1f29",
+        "m": "fabaebdef5f766f6d3ea0908a8ed37c3ae0fa9558c5e6c7b27775c3915928414"
+      }
+    },
+    {
+      "key": 192,
+      "sourceCommit": "dd1f0f50e94584c2518492dc156e14dae173e587",
+      "source": "collab/reviews/20261020_s20_laugh_150_192_handoff/F192_CHARACTER_ALPHA.png",
+      "originalSHA256": "ca82bfa23444b8d11a3600282d35b5e0bbe746251868a50a7d239d7b2f4db617",
+      "dimensions": [
+        1920,
+        2510
+      ],
+      "albedoAlphaUnchanged": true,
+      "rawToCanvasScaleAlreadyAppliedNotRepeated": true,
+      "normalMaterialMaps": {
+        "n": "305260dee36cc0606c9533b7a14870b9a8292709577684b0894588f12f45bea7",
+        "m": "feda77cdbf86b879062761f3cbc65838dbb04c59c2995a8d39efa26eb7455347"
+      }
+    }
+  ],
+  "derivedLightingMaps": "Canonical tools/card_maps.py followed by tools/card_soft.py sigma80 strength.35; lower-y>950 material-only hair classification assigned cloth tag3. Native albedo/RGBA unchanged.",
+  "camera": "Each own delivered CAMG and H; cropY=-350. Camera-only same-eye reprojection;192 is not calibrated as144.",
+  "props": "Adopted144 finite world C rods; use own-camera projection, original lengths and7mm diameter.",
+  "generationCalls": 0,
+  "newOffscreenPaperDrawings": 0,
+  "reuse": {
+    "decodedAcceptedRanges": [
+      [
+        144,
+        149
+      ],
+      [
+        156,
+        179
+      ]
+    ],
+    "newBrowserFrames": 42,
+    "totalEncodedFrames": 72
+  },
+  "verification": "Real final MP4 independently decoded72frames; saved decoded keys actually opened. No browser loading errors."
+}

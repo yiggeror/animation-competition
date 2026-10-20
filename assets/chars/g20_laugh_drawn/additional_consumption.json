@@ -1,0 +1,226 @@
+{
+  "scene": "S20",
+  "status": "APPROVED_LIMITED_ACTION_DRAWINGS_NOT_FULL_CAM",
+  "items": [
+    {
+      "frame": 150,
+      "alpha": "F150_CHARACTER_ALPHA.png",
+      "sha256": "89dacad341ed273a69fdc4411f4500ebc4d9973600f5e887172215fd9a0a418d",
+      "canvas": [
+        1920,
+        2510
+      ],
+      "source_canvas_to_own_CAMG_screen": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -350
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "camera": {
+        "pos": [
+          2.55,
+          1.7,
+          1.2
+        ],
+        "target": [
+          1.2,
+          1.15,
+          1.0003935185185184
+        ],
+        "hfov": 41.9212962962963
+      },
+      "endpoint_sources_to_this_canvas_H": {
+        "144": [
+          [
+            1.0020565508764758,
+            -0.00010171381365409453,
+            -1.8837972485347674
+          ],
+          [
+            -1.0518137345605844e-16,
+            1.001962218517381,
+            -1.0823744190561284
+          ],
+          [
+            -1.1799941206362604e-19,
+            -1.0595188922288611e-07,
+            1.0000942620759183
+          ]
+        ],
+        "156": [
+          [
+            0.9943198634717723,
+            0.0002790756743189736,
+            5.204296047674245
+          ],
+          [
+            -1.547347823101501e-17,
+            0.9945783229972511,
+            2.9889520252186927
+          ],
+          [
+            4.413771659678185e-20,
+            2.9070382741532264e-07,
+            0.999741005188099
+          ]
+        ]
+      },
+      "raw_to_canvas_uniform_scale": 1.7502278942570648,
+      "raw_to_canvas_translation": [
+        0,
+        0
+      ],
+      "adoption": "APPROVED_LIMITED_ACTION_DRAWING",
+      "rod_check": {
+        "method": "original144 finite rod polygons projected by exact target camera homography; native alpha foreground. No extended rods; no person fitting.",
+        "R_grips_fullcanvas": [
+          [
+            339.9161352378325,
+            822.5195844622718
+          ],
+          [
+            339.57283012415104,
+            811.4427016657281
+          ]
+        ],
+        "native_raw_uniform_scale": 1.7502278942570648,
+        "translation": [
+          0,
+          0
+        ],
+        "rotation": 0,
+        "support_check": "visual sameCAM comparison, not pixel-zero protection assertion",
+        "sha256": "89dacad341ed273a69fdc4411f4500ebc4d9973600f5e887172215fd9a0a418d"
+      },
+      "rod_source": "../20261020_s20_laugh_144_156_handoff/review_s20_132_20261020/grandma_handoff_gate/laugh144_156_gate/CAMG_PROJECTION_CHECK.json : frame144 finite rods transformed by embedded H144_to_target",
+      "candidate_exposure": [
+        150,
+        155
+      ],
+      "exposure_status": "new minimum laugh timing candidate, must bind actual scene and review cuts; not full CAM approval",
+      "immutable_alpha_note": "Existing filename contains NOT_ADOPTED from pre-review stage; this exact SHA is now frozen, no pixel change or duplicate image."
+    },
+    {
+      "frame": 192,
+      "alpha": "F192_CHARACTER_ALPHA.png",
+      "sha256": "ca82bfa23444b8d11a3600282d35b5e0bbe746251868a50a7d239d7b2f4db617",
+      "canvas": [
+        1920,
+        2510
+      ],
+      "source_canvas_to_own_CAMG_screen": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -350
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "camera": {
+        "pos": [
+          2.55,
+          1.7,
+          1.2
+        ],
+        "target": [
+          1.2,
+          1.15,
+          1.0148148148148148
+        ],
+        "hfov": 39.03703703703704
+      },
+      "endpoint_sources_to_this_canvas_H": {
+        "144": [
+          [
+            1.0828861606659763,
+            -0.0038341431556443034,
+            -76.20621562145118
+          ],
+          [
+            -7.394821662446142e-17,
+            1.0792775715856053,
+            -43.55142048165342
+          ],
+          [
+            -1.169730681319877e-19,
+            -3.993899120462669e-06,
+            1.0035046860602974
+          ]
+        ],
+        "156": [
+          [
+            1.0745254032689768,
+            -0.0034245533927319857,
+            -68.53533493637157
+          ],
+          [
+            1.0457627880780158e-17,
+            1.0713071278038313,
+            -39.15098112235804
+          ],
+          [
+            6.932177014922861e-20,
+            -3.567243117429432e-06,
+            1.0031344293769224
+          ]
+        ]
+      },
+      "raw_to_canvas_uniform_scale": 1.7502278942570648,
+      "raw_to_canvas_translation": [
+        0,
+        0
+      ],
+      "adoption": "APPROVED_LIMITED_ACTION_DRAWING",
+      "rod_check": {
+        "method": "original144 finite rod polygons projected by exact target camera homography; native alpha foreground. No extended rods; no person fitting.",
+        "R_grips_fullcanvas": [
+          [
+            290.0416028133641,
+            843.4222590287486
+          ],
+          [
+            289.6994870123513,
+            831.4575225911091
+          ]
+        ],
+        "native_raw_uniform_scale": 1.7502278942570648,
+        "translation": [
+          0,
+          0
+        ],
+        "rotation": 0,
+        "support_check": "visual sameCAM comparison, not pixel-zero protection assertion",
+        "sha256": "ca82bfa23444b8d11a3600282d35b5e0bbe746251868a50a7d239d7b2f4db617"
+      },
+      "rod_source": "../20261020_s20_laugh_144_156_handoff/review_s20_132_20261020/grandma_handoff_gate/laugh144_156_gate/CAMG_PROJECTION_CHECK.json : frame144 finite rods transformed by embedded H144_to_target",
+      "candidate_exposure": [
+        192,
+        215
+      ],
+      "exposure_status": "new minimum laugh timing candidate, must bind actual scene and review cuts; not full CAM approval",
+      "immutable_alpha_note": "Existing filename contains NOT_ADOPTED from pre-review stage; this exact SHA is now frozen, no pixel change or duplicate image."
+    }
+  ],
+  "scope": "Only two laugh actions. No changes to paperA, craneState or132 transition. No pixel-identical limb-protection claim for native output.",
+  "independent_review": "Both actions visually passed native full body, finite original dual-rod grip occlusion and same-camera shoe support. No pixel-zero claim; real scene exposure/lighting review still required."
+}

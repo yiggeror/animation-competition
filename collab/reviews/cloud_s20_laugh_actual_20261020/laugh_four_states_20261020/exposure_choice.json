@@ -1,0 +1,123 @@
+{
+  "states": [
+    {
+      "key": 144,
+      "start": 144,
+      "end": 149,
+      "alb": "F144_native.png",
+      "nrm": "F144_n.png",
+      "mat": "F144_m.png",
+      "cameraStateIndex": 0
+    },
+    {
+      "key": 150,
+      "start": 150,
+      "end": 155,
+      "alb": "F150_native.png",
+      "nrm": "F150_n.png",
+      "mat": "F150_m.png",
+      "rodSourceIndex": 0,
+      "sourceCamera": {
+        "pos": [
+          2.55,
+          1.7,
+          1.2
+        ],
+        "target": [
+          1.2,
+          1.15,
+          1.0003935185185184
+        ],
+        "hfov": 41.9212962962963
+      },
+      "canvasToOwnScreen": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -350
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "key": 156,
+      "start": 156,
+      "end": 179,
+      "alb": "F156_native.png",
+      "nrm": "F156_n.png",
+      "mat": "F156_m.png",
+      "cameraStateIndex": 1
+    },
+    {
+      "key": 192,
+      "start": 180,
+      "end": 215,
+      "alb": "F192_native.png",
+      "nrm": "F192_n.png",
+      "mat": "F192_m.png",
+      "rodSourceIndex": 0,
+      "sourceCamera": {
+        "pos": [
+          2.55,
+          1.7,
+          1.2
+        ],
+        "target": [
+          1.2,
+          1.15,
+          1.0148148148148148
+        ],
+        "hfov": 39.03703703703704
+      },
+      "canvasToOwnScreen": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -350
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "exposureReason": "Recovery begins180 per frozen beat plan; drawing name192 is its calibrated source camera, not a mandatory first exposure."
+    }
+  ],
+  "sourceCamera192Preserved": true,
+  "oldPixelRangesReused": [
+    [
+      144,
+      149
+    ],
+    [
+      156,
+      179
+    ]
+  ],
+  "newBrowserRanges": [
+    [
+      150,
+      155
+    ],
+    [
+      180,
+      215
+    ]
+  ],
+  "reason": "144 onset6f,150 deepen6f,156 peak24f,192 recovery36f from180, matching original180–215 return/settle beat. Source192 is projected from its own8s camera to each actual exposure camera, not cropped as144."
+}

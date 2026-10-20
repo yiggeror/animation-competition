@@ -5,7 +5,7 @@
   "availableThrough": 215,
   "duration": 9,
   "clipDuration": 3,
-  "status": "REAL_SCENE_TWO_ANCHOR_EXPOSURE_RENDERED_ACTION_GAPS_REMAIN",
+  "status": "FOUR_ADOPTED_LAUGH_ACTIONS_ACTUAL_READY",
   "adoptionCommit": "7c2f44cbf221873adb243c1178f9c914c765265a",
   "crop": [
     0,
@@ -17,21 +17,102 @@
     {
       "key": 144,
       "start": 144,
-      "end": 155,
+      "end": 149,
       "alb": "F144_native.png",
       "nrm": "F144_n.png",
       "mat": "F144_m.png",
       "cameraStateIndex": 0
     },
     {
+      "key": 150,
+      "start": 150,
+      "end": 155,
+      "alb": "F150_native.png",
+      "nrm": "F150_n.png",
+      "mat": "F150_m.png",
+      "rodSourceIndex": 0,
+      "sourceCamera": {
+        "pos": [
+          2.55,
+          1.7,
+          1.2
+        ],
+        "target": [
+          1.2,
+          1.15,
+          1.0003935185185184
+        ],
+        "hfov": 41.9212962962963
+      },
+      "canvasToOwnScreen": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -350
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
       "key": 156,
       "start": 156,
-      "end": 215,
+      "end": 179,
       "alb": "F156_native.png",
       "nrm": "F156_n.png",
       "mat": "F156_m.png",
       "cameraStateIndex": 1
+    },
+    {
+      "key": 192,
+      "start": 180,
+      "end": 215,
+      "alb": "F192_native.png",
+      "nrm": "F192_n.png",
+      "mat": "F192_m.png",
+      "rodSourceIndex": 0,
+      "sourceCamera": {
+        "pos": [
+          2.55,
+          1.7,
+          1.2
+        ],
+        "target": [
+          1.2,
+          1.15,
+          1.0148148148148148
+        ],
+        "hfov": 39.03703703703704
+      },
+      "canvasToOwnScreen": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -350
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "exposureReason": "Recovery begins180 per frozen beat plan; drawing name192 is its calibrated source camera, not a mandatory first exposure."
     }
   ],
-  "missingAction": "No accepted intermediate laugh drawings or release/settle drawings. Held144 then156 is an exposure probe, not a completed laugh motion. No132 or rod-transfer action included."
+  "missingAction": "Four accepted whole actions are bound without body interpolation. This is the minimum actual laugh timing; transition132–143 and front exposure gaps remain separate.",
+  "additionalAdoptionCommit": "dd1f0f50e94584c2518492dc156e14dae173e587",
+  "minimumFourActionExposure": true
 }

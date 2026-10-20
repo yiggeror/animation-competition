@@ -1,0 +1,197 @@
+{
+  "sourceCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+  "records": [
+    {
+      "record": "F058_wrist_cleanup_zero_call_001/ADOPTED_F058_SOURCE.json",
+      "data": {
+        "status": "ASTRA_ACTUAL_FULL_AND_1X_4X_FINAL_GATE_PASSED",
+        "frame_label": 58,
+        "unique_adopted_source": "collab/reviews/cloud_s20_20261018/F058_wrist_cleanup_zero_call_001/F058_wrist_skin_continuous_candidate.png",
+        "sha256": "c952b4e15b79708dec20ada934e25c4f34fb23d77d545e04e84ea9461cb98b0b",
+        "source_commit": "aa598ac9",
+        "requires_no_repeat_review_or_generation": true,
+        "new_hold_or_exposure_assignment": false
+      }
+    },
+    {
+      "record": "F064_root_occlusion_cleanup_zero_call_001/ADOPTED_F064_SOURCE.json",
+      "data": {
+        "status": "ASTRA_ACTUAL_FULL_NORMAL_UNDER_HEM_AND_SUPPORT_FINAL_GATE_PASSED",
+        "frame_label": 64,
+        "unique_adopted_source": "collab/reviews/cloud_s20_20261018/F064_root_occlusion_cleanup_zero_call_001/F064_proximal_roots_continuous_candidate.png",
+        "sha256": "5ebf184c08b9e714f8b0030c226a2866158846bdac3db147d6645429867d2e76",
+        "source_commit": "3103594720d08756453add598f52e5f14214bed3",
+        "minor_proximal_light_transition_accepted_do_not_rework": true,
+        "support_and_registered_legs_accepted_do_not_register_again": true,
+        "new_hold_or_exposure_assignment": false
+      }
+    },
+    {
+      "record": "F067_near_leg_support_root_zero_call_001/ADOPTED_F067_SOURCE.json",
+      "data": {
+        "status": "ASTRA_FINAL_PASSED_ADOPTED_F067_SOURCE",
+        "source_commit": "fb7cc408b5f29ea308c6b4042680346104554587",
+        "file": "F067_near_support_and_root_closed_candidate.png",
+        "sha256": "80a84871aaaa4eddd621e457fa4dae0b95494332d788119ae650ff85356e1dd8",
+        "approval": "Astra终门通过；唯一采用本修后067，后续070仅准备四输入，等待新短门。",
+        "new_image_calls": 0,
+        "frozen_new_exposure": false,
+        "original_failed_support_candidate_adopted": false
+      }
+    },
+    {
+      "record": "F070_uniform_registration_zero_call_001/ADOPTED_F070_SOURCE.json",
+      "data": {
+        "status": "ASTRA_FINAL_PASSED_ADOPTED_F070_SOURCE",
+        "source_commit": "e10e2b6532fc45a24ae4e6ab4c3814769bc09cd0",
+        "file": "F070_uniform_registered_upper_fixed_full_lower_candidate.png",
+        "sha256": "1d12ca876cd3cc9a58aabb3d90c6195e31d15360f8bafaeb44aae81945c4d28a",
+        "approval": "Astra实际看完整灰图、067/070同尺上身及裙根、正常尺寸掌杆后终门通过。唯一采用此统一注册源；不重修、不重复生成。",
+        "new_image_calls": 0,
+        "new_exposure_frozen": false
+      }
+    },
+    {
+      "record": "F079_head_neck_scale_close_zero_call_001/ADOPTED_F079_SOURCE.json",
+      "data": {
+        "status": "ASTRA_FINAL_PASSED_ADOPTED_F079_SOURCE",
+        "source_commit": "4848cab5e41b6b4d0c8e7ad223865f192eade7a6",
+        "file": "F079_own_head_neck_volume_closed_candidate.png",
+        "sha256": "2a2fbbee3aaff0b6289b4bb8df756193fe70e37ab9a552af8192c13e459930af",
+        "approval": "Astra实际看完整正常图、076/修后079同尺头颈和颈领接缝后最终通过。唯一采用本头颈修后源；不再修079。",
+        "new_exposure_frozen": false
+      }
+    },
+    {
+      "record": "next_F061_candidate_input_001/generation_001/ADOPTED_F061_SOURCE.json",
+      "data": {
+        "status": "ASTRA_ACTUAL_FULL_RAW_SCOPED_AND_1X_4X_FINAL_GATE_PASSED",
+        "frame_label": 61,
+        "unique_adopted_source": "collab/reviews/cloud_s20_20261018/next_F061_candidate_input_001/generation_001/F061_native_child_locked_G_candidate.png",
+        "sha256": "0dde203fef7d78f00a6628ce1fc702f5ffa13a301adf0bd91b2fc10d80bd12ec",
+        "source_commit": "62aedca47347bf9a948f6f887e072ece8ddf59d7",
+        "no_new_hold_or_exposure_assignment": true,
+        "no_repeat_review_or_generation": true,
+        "TS_foreground_curled_R_fingers_is_occlusion_not_R_extra_grip": true
+      }
+    },
+    {
+      "record": "next_F073_fixed_lower_input_001/generation_001/ADOPTED_F073_SOURCE.json",
+      "data": {
+        "status": "ASTRA_FINAL_PASSED_ADOPTED_F073_SOURCE",
+        "source_commit": "10bdf399a4a34c08d672be0266b736e54758b7d6",
+        "file": "F073_uniform_registered_upper_fixed_full_lower_candidate.png",
+        "sha256": "7f070dbbcb258ab630d4cf2324acec32447275fe9cdb65056cca7110a27da49c",
+        "approval": "Astra实际终门通过：统一注册后的头身体量、双臂掌杆、裙根和固定双足自然。唯一采用此源，不重修、不重复生成。",
+        "new_exposure_frozen": false
+      }
+    },
+    {
+      "record": "next_F076_fixed_lower_input_001/generation_001/ADOPTED_F076_SOURCE.json",
+      "data": {
+        "status": "ASTRA_FINAL_PASSED_ADOPTED_F076_SOURCE",
+        "source_commit": "5aa522ad36836e28b8f7e80189165795960d489f",
+        "file": "F076_uniform_registered_upper_fixed_full_lower_candidate.png",
+        "sha256": "5f5e3b6b1e39fe89ee411eb6f7904cfd007137c20cf33eba6b51423fac35ac9a",
+        "approval": "Astra已看原件、全图/掌杆/裙根/073同尺对照，完整骨链、动作推进和足支持终门通过。唯一采用本态，不重修、不重复生成。",
+        "new_exposure_frozen": false
+      }
+    },
+    {
+      "record": "next_F090_rebound_input_001/ADOPTED_F084_SOURCE.json",
+      "data": {
+        "status": "ASTRA_TERMINAL_APPROVED_INDEPENDENT_F084_SOURCE_NOT_EXPOSURE_FROZEN",
+        "approved_commit": "2c7142b2129bf0bff3b55295d2b067f6f237008c",
+        "file": "../F084_two_domains_close_zero_call_001/F084_two_domains_closed_candidate.png",
+        "sha256": "4df5d046a399f90aa798ca2cba2bd09e0cf7977eacb1058036bfabf52ddce448",
+        "adopted": true,
+        "exposure_frozen": false,
+        "production_branch_writer": "Astra coordinator only"
+      }
+    },
+    {
+      "record": "next_F096_active_pull_input_001/ADOPTED_F090_SOURCE.json",
+      "data": {
+        "status": "ASTRA_TERMINAL_APPROVED_F090_INDEPENDENT_STATE_NOT_EXPOSURE_FROZEN",
+        "approved_commit": "2fdd1012abd0d1f4f66dbdee8539849797befe44",
+        "file": "../next_F090_rebound_input_001/generation_001/F090_uniform_registered_upper_fixed_full_lower_candidate.png",
+        "sha256": "2927d3d6d9c33719fb9d673c54ea843f0682c5ca3e2efaf0188eeff6975194ea",
+        "adopted": true,
+        "exposure_frozen": false,
+        "production_branch_writer": "Astra coordinator only"
+      }
+    },
+    {
+      "record": "next_F104_last_active_pull_input_001/F096_SINGLE_STATE_ADOPTION.json",
+      "data": {
+        "status": "ASTRA_TERMINAL_APPROVED_SINGLE_F096_STATE",
+        "frame_label": 96,
+        "approved_commit": "3d5a6a7e8a2bc188d403abf3922062938be28fc7",
+        "approved_file": "../F096_far_R_single_TH_contact_input_001/local_generation_001/F096_R_single_TH_native_local_candidate.png",
+        "approved_sha256": "be1d3ccec0939b22203fa6ad00bb7773049694d3506f3113f47810220889430d",
+        "independent_state_count": 1,
+        "full_native_and_local_hand_correction_are_two_states": false,
+        "original_wrong_double_grip_candidate_adopted": false,
+        "additional_F096_repairs_authorized_or_performed": false,
+        "exposure_frozen": false,
+        "scope": "Register Astra's accepted final F096 only. No exposure assignment or production integration."
+      }
+    },
+    {
+      "record": "next_F112_passive_residual_input_001/F104_SINGLE_STATE_ADOPTION.json",
+      "data": {
+        "status": "ASTRA_TERMINAL_APPROVED_SINGLE_F104_STATE",
+        "frame_label": 104,
+        "approved_commit": "0c22667517ab830becdd8e66e8dab0b7348323b1",
+        "approved_file": "../next_F104_last_active_pull_input_001/generation_001/F104_uniform_registered_upper_fixed_full_lower_candidate.png",
+        "approved_sha256": "bebff46038c7845272d64725c110697a3b75d6203be3243a8db20b5011f2ea0e",
+        "independent_state_count": 1,
+        "existing_sole_image_request_succeeded": true,
+        "resubmission_needed_or_performed": false,
+        "exposure_frozen": false,
+        "scope": "Register Astra terminal acceptance only; no hold-frame assignment or production integration."
+      }
+    },
+    {
+      "record": "next_F120_passive_decay_input_001/F112_SINGLE_STATE_ADOPTION.json",
+      "data": {
+        "status": "ASTRA_TERMINAL_APPROVED_SINGLE_F112_STATE",
+        "frame_label": 112,
+        "approved_commit": "63812699879a3185cf0a591a3f2d5c3660490cd4",
+        "approved_file": "../next_F112_passive_residual_input_001/generation_001/F112_uniform_registered_upper_fixed_full_lower_candidate.png",
+        "approved_sha256": "a5e3821aaa0e42b3db44086647c4c064aba019a6d74491fce735785521720b3a",
+        "independent_state_count": 1,
+        "existing_sole_image_request_succeeded": true,
+        "resubmission_needed_or_performed": false,
+        "exposure_frozen": false,
+        "scope": "Register Astra terminal acceptance only; no hold-frame assignment or production integration."
+      }
+    },
+    {
+      "record": "next_F128_mid_roll_input_001/F120_SINGLE_STATE_ADOPTION.json",
+      "data": {
+        "status": "ASTRA_TERMINAL_APPROVED_SINGLE_F120_CHARACTER_STATE",
+        "frame_label": 120,
+        "approved_commit": "63758f3229c6fdbaa02e8b8e23eec2921fa6ce3f",
+        "approved_file": "../next_F120_passive_decay_input_001/generation_001/F120_uniform_registered_upper_fixed_full_lower_candidate.png",
+        "approved_sha256": "40d73e42505d5e7c83dc22d33511e5a2e4862dc35b5a4ff210e50eca8ef2bf5c",
+        "independent_state_count": 1,
+        "exposure_frozen": false,
+        "scope": "Register accepted120 character image only. No claim that the F120 turtle root/facing/pose or complete scene integration was frozen."
+      }
+    },
+    {
+      "record": "next_F132_belly_up_stop_input_001/F128_SINGLE_STATE_ADOPTION.json",
+      "data": {
+        "status": "F128_TERMINAL_SINGLE_STATE_LOCKED_BY_ASTRA_AND_INDEPENDENT_ACTUAL_REVIEW",
+        "approved_commit": "34781f2253181eb5feee39a23099b15dd721370c",
+        "candidate": "collab/reviews/cloud_s20_20261018/F128_two_domains_close_zero_call_001/F128_two_domains_closed_CANDIDATE.png",
+        "candidate_sha256": "46294a1f899c2b80780ef26da2f632b7446a04636213ce28e56f2859cfaf5bcc",
+        "scope": "Only F128 state; fixed prior leg join retained, not whole-person or whole-shot acceptance.",
+        "exposure_frozen": false,
+        "source_thread_id": "01a156dc-85d3-7647-9aa3-1d2742a02017"
+      }
+    }
+  ],
+  "warning": "These are adopted individual drawings, not a final058–131 exposure or all-scene registration."
+}

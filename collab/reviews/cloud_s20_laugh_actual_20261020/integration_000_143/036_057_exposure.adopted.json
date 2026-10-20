@@ -1,0 +1,75 @@
+{
+  "fps": 24,
+  "frozen_exposure_unchanged": true,
+  "holds": [
+    {
+      "state": 36,
+      "start_inclusive": 36,
+      "end_exclusive": 39,
+      "frames": 3,
+      "file": "collab/reviews/cloud_s20_20261018/costume_036_039_zero_call_001/S20_F036_costume_corrected.png",
+      "sha256": "9996baa93ed323cf7f2d67d2ebec5426c558c29ca58252ec8a49337482ac04c2"
+    },
+    {
+      "state": 39,
+      "start_inclusive": 39,
+      "end_exclusive": 42,
+      "frames": 3,
+      "file": "collab/reviews/cloud_s20_20261018/costume_036_039_zero_call_001/S20_F039_costume_corrected.png",
+      "sha256": "439135c0b70c78b0da0cd9412794a5f61be10d6b73c2ce0173138340112e4185"
+    },
+    {
+      "state": 42,
+      "start_inclusive": 42,
+      "end_exclusive": 45,
+      "frames": 3,
+      "file": "collab/reviews/cloud_s20_20261018/continuation_042_054_generation_001/F042/S20_F042_semantic_closed.png",
+      "sha256": "8a34b2f21b4e981d3323334d0610b030fb46c806f2e907257b768c518c8ff29c"
+    },
+    {
+      "state": 45,
+      "start_inclusive": 45,
+      "end_exclusive": 47,
+      "frames": 2,
+      "file": "collab/reviews/cloud_s20_20261018/local_045_047_repair_001/S20_F045_sleeve_material_fixed.png",
+      "sha256": "c535ba8bc65de92c63276be523f31e5c0e3521485c58b6302454c22519ae4d2c"
+    },
+    {
+      "state": 47,
+      "start_inclusive": 47,
+      "end_exclusive": 54,
+      "frames": 7,
+      "file": "collab/reviews/cloud_s20_20261018/local_045_047_repair_001/B047_compact_palm_target_003/flex_up_zero_call_001/F047_continuous_flex_up_candidate.png",
+      "sha256": "6a77d1579e2aea260a052da73c1629e35c9e0af4089028fabd59291570f2248d",
+      "approval": "Astra final actual gate passed 7f885752"
+    },
+    {
+      "state": 54,
+      "start_inclusive": 54,
+      "end_exclusive": 58,
+      "frames": 4,
+      "file": "collab/reviews/cloud_s20_20261018/adopt047_hold054_zero_call_001/F054_inherited047_candidate.png",
+      "sha256": "3a52cc363a537cbbe4ea00bfe7130d6dbe574f8020465ce11517dbc4c25c41bf",
+      "approval": "Astra actual inheritance-only gate passed; fixed SHA 3a52cc363a537cbbe4ea00bfe7130d6dbe574f8020465ce11517dbc4c25c41bf"
+    }
+  ],
+  "048_053_exact_047_reuse": true,
+  "continuation_042_045_047_054_actual_image_calls": 4,
+  "raw_outputs": 4,
+  "zero_call_costume_and_semantic_edge_repairs_separate": true,
+  "group_status": "036_039_042_045_047_APPROVED;054_CHILD_AND_047_INHERITANCE_FINAL_APPROVED",
+  "pending_repair_packet": "../local_045_047_repair_001/",
+  "047_old_accepted_filename_is_legacy_not_final_release_gate": true,
+  "054_child_frozen": true,
+  "latest047_continuous_palm_target": "../local_045_047_repair_001/B047_continuous_palm_target/",
+  "do_not_propagate047_G_until_local_B_actual_pass": false,
+  "latest047_local_B_result": "../local_045_047_repair_001/B047_compact_palm_target_003/generation_001/",
+  "latest047_B_status": "Astra actual final gate passed, fixed 7f885752 / 6a77d1579e2aea260a052da73c1629e35c9e0af4089028fabd59291570f2248d",
+  "latest047_compact_palm_target": "../local_045_047_repair_001/B047_compact_palm_target_003/",
+  "latest047_rod_restored_result": "../local_045_047_repair_001/B047_compact_palm_target_003/rod_restore_zero_call_001/",
+  "latest047_final_approved_source": {
+    "file": "collab/reviews/cloud_s20_20261018/local_045_047_repair_001/B047_compact_palm_target_003/flex_up_zero_call_001/F047_continuous_flex_up_candidate.png",
+    "sha256": "6a77d1579e2aea260a052da73c1629e35c9e0af4089028fabd59291570f2248d"
+  },
+  "latest047_inheritance_index": "collab/reviews/cloud_s20_20261018/adopt047_hold054_zero_call_001/ADOPTION_SOURCE_INDEX.json"
+}

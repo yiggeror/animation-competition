@@ -1,0 +1,132 @@
+{
+  "cause": "Previously compared the revised frozen CAM20 crane to obsolete time-varying craneState(6), and mixed affine skin endpoints with direct perspective FK endpoints.",
+  "frozenSourceCommit": "86cd914a919c84fe2aec9583e66ddca8d8d550aa",
+  "frozenSource": "cam20_lower_only_plus2_zero_call_003/CAM20_F000_geometry.json",
+  "frozenCraneRoot": [
+    1.8087953950721305,
+    1.2395888430186253
+  ],
+  "frozenCranePose": {
+    "angles": {
+      "neck0": 1.1375,
+      "neck1": 0.115,
+      "neck2": 0.095,
+      "neck3": 0.075,
+      "neck4": 0.042499999999999996,
+      "neck5": 0.005,
+      "neck6": -0.045,
+      "neck7": -0.08750000000000001,
+      "neck8": -0.1225,
+      "neck9": -0.14500000000000002,
+      "neck10": -0.1425,
+      "neck11": -0.11750000000000001,
+      "head": -0.45000000000000007,
+      "tibia_near": 0.08,
+      "tarsus_near": -0.02,
+      "foot_near": 0.03,
+      "tibia_far": -0.05,
+      "tarsus_far": 0.02,
+      "foot_far": 0.03
+    },
+    "rootAngle": -0.517331917499374,
+    "facing": -1
+  },
+  "formulas": [
+    "Render paper with original affine card map; derive A_screen from that identical skin map.",
+    "Intersect that screen ray with the paper plane y=.004 to get adopted effective A_world.",
+    "Project that same A_world through CAM20 or CAMG. CAMG tables store forward depth z, not Euclidean range."
+  ],
+  "comparisons": [
+    {
+      "id": "C_B",
+      "fixedCAM20MasterA": [
+        313.37876206162184,
+        162.78070182920106
+      ],
+      "closureMasterA": [
+        313.37876206162196,
+        162.7807018292012
+      ],
+      "adoptedWorldA": [
+        1.8718940992741835,
+        0.0040000000000000036,
+        1.280877753126372
+      ],
+      "CAMG": [
+        {
+          "frame": 144,
+          "fromSameWorldA": [
+            -1680.8442392960005,
+            32.91304910053509,
+            1.2451237015081178
+          ],
+          "adoptedA": [
+            -1680.8442392960005,
+            32.91304910053509,
+            1.2451237015081178
+          ]
+        },
+        {
+          "frame": 156,
+          "fromSameWorldA": [
+            -1700.8554122907108,
+            31.58472587496408,
+            1.2453749528591576
+          ],
+          "adoptedA": [
+            -1700.8554122907108,
+            31.58472587496408,
+            1.2453749528591576
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C_N",
+      "fixedCAM20MasterA": [
+        462.5256913361157,
+        169.5734603115303
+      ],
+      "closureMasterA": [
+        462.52569133611587,
+        169.57346031153037
+      ],
+      "adoptedWorldA": [
+        1.5396276638083182,
+        0.004000000000000226,
+        1.2837003115266323
+      ],
+      "CAMG": [
+        {
+          "frame": 144,
+          "fromSameWorldA": [
+            -959.6381437112823,
+            60.53215446488514,
+            1.5495936175011138
+          ],
+          "adoptedA": [
+            -959.6381437112823,
+            60.53215446488514,
+            1.5495936175011138
+          ]
+        },
+        {
+          "frame": 156,
+          "fromSameWorldA": [
+            -974.2056358040695,
+            59.407809024545486,
+            1.5498892342769124
+          ],
+          "adoptedA": [
+            -974.2056358040695,
+            59.407809024545486,
+            1.5498892342769124
+          ]
+        }
+      ]
+    }
+  ],
+  "visibleInterfaceDecision": "Keep adopted A_world, finite end, physical length and palm clamps. Use corrected frozen staging in CAM20. Existing accepted CAMG clip is reused; no new image or invisible-paper solve is needed.",
+  "laughClipRerendered": false,
+  "newArtCalls": 0
+}
