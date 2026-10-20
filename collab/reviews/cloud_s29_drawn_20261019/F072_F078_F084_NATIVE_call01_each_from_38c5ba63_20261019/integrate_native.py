@@ -21,7 +21,7 @@ target=load(d/'inputs/01_UNIQUE_COMPLETE_CURRENT_TARGET_RGBA.png');clothp=d/'inp
 rgb=raw[:,:,:3].astype(float);shirt=(rgb[:,:,1]>95)&(rgb[:,:,2]>135)&(rgb[:,:,2]>rgb[:,:,0]+15);skin=(rgb[:,:,0]>120)&(rgb[:,:,1]>65)&(rgb[:,:,2]>90)&(rgb[:,:,0]>rgb[:,:,2]+25);jade=(rgb[:,:,1]>rgb[:,:,0]*1.05)&(rgb[:,:,1]>rgb[:,:,2]*1.03)&(rgb[:,:,1]>50)
 seed=(shirt|skin|jade)&(raw[:,:,3]>128)&(Y>=300)&(Y<1020)&(X>=40)&(X<810);lab,_=nd.label(nd.binary_closing(seed,iterations=3));m=nd.binary_dilation(nd.binary_fill_holes(lab==lab[500,350]),iterations=2)&(raw[:,:,3]>0)
 human=np.zeros_like(raw);human[m]=raw[m];human[m&(raw[:,:,3]>=128),3]=255
-farpoly=poly([(510,550),(590,490),(665,545),(790,630),(790,820),(650,820),(615,720),(510,625)])
+farpoly=poly([(490,480),(660,460),(810,600),(810,820),(600,820),(490,735),(480,600)])
 fs=(skin|jade)&m&farpoly;fl,_=nd.label(nd.binary_closing(fs,iterations=2));counts=np.bincount(fl.ravel());counts[0]=0;farlabel=int(counts.argmax());assert counts[farlabel]>3000
 fm=nd.binary_dilation(nd.binary_fill_holes(fl==farlabel),iterations=2)&m&farpoly
 far=np.zeros_like(human);far[fm]=human[fm]
@@ -41,9 +41,11 @@ cuffunder=fm&skin&(cuffdistance>=-4)&(cuffdistance<18)
 blouse[cuffunder]=human[cuffunder]
 # Whole far BARE arm, jade, wrist and fingers receive ONE similarity. Fixed native
 # blouse/sleeves draw in front of its cuff, never old technical blue arm pixels.
-srcC=np.array({72:[697.,724.],78:[0.,0.],84:[0.,0.]}[f]);dstC=np.array({72:[660.098467936869,710.61030076984],78:[640.098467936869,745.61030076984],84:[640.098467936869,745.61030076984]}[f]);root=np.array([548.,530.]);v=srcC-root;w=dstC-root;u=float(w@v/(v@v));rot=float((w[1]*v[0]-w[0]*v[1])/(v@v));A=np.array([[u,-rot],[rot,u]]);t=root-A@root;farreg=affine(far,A,t)
+srcC=np.array({72:[697.,724.],78:[645.,755.],84:[0.,0.]}[f]);dstC=np.array({72:[660.098467936869,710.61030076984],78:[640.098467936869,745.61030076984],84:[640.098467936869,745.61030076984]}[f]);root=np.array({72:[548.,530.],78:[554.,544.],84:[554.,544.]}[f]);v=srcC-root;w=dstC-root;u=float(w@v/(v@v));rot=float((w[1]*v[0]-w[0]*v[1])/(v@v));A=np.array([[u,-rot],[rot,u]]);t=root-A@root;farreg=affine(far,A,t)
 white=np.array(Image.open(d/'inputs/04_WHOLE_TWO_ARMS_EXPOSED_BLOUSE_WHITE_DOMAIN.png').convert('L'))>0
 headguard=poly([(215,25),(640,25),(640,335),(523,372),(488,417),(425,416),(383,357),(345,323),(260,299),(217,270)])
+tr=target[:,:,:3].astype(float);oldblue=(tr[:,:,1]>95)&(tr[:,:,2]>135)&(tr[:,:,2]>tr[:,:,0]+15)
+headguard&=~oldblue  # old collar fragments cannot cut across the NEW native collar
 edit=(white|nd.binary_dilation(m,iterations=4))&~headguard
 base=target.copy();base[edit]=0
 # Remove ALL obsolete technical human silhouettes in broad sleeves/body domain.

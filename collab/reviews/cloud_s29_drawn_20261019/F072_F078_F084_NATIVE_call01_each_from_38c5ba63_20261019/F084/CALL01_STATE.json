@@ -1,0 +1,17 @@
+{
+  "state": 84,
+  "attempt": 1,
+  "status": "RETURNED_ARCHIVED_NO_RETRY",
+  "generation_calls": 1,
+  "utc_submit": "2026-10-19T23:56:47.273360+00:00",
+  "accepted_predecessor": 78,
+  "no_retry": true,
+  "pre_submission_read_transport_failure": {
+    "tool": "exec_command reading saved arguments",
+    "image_request_sent": false,
+    "reason": "exec-server transport disconnected / unknown session id; harmless pwd succeeded immediately afterward",
+    "effect": "same saved args, first image request still to be sent"
+  },
+  "raw_SHA256": "cac2e0900097e3aef4965c510141889030ddfcb3f696443b62fe680718c2283a",
+  "utc_return_archive": "2026-10-19T23:59:11.823313+00:00"
+}
