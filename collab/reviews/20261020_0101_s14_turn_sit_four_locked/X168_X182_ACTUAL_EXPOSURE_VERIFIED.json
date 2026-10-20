@@ -1,0 +1,87 @@
+{
+  "status": "actual_15_frames_decoded_verified",
+  "fps": 24,
+  "frame_count": 15,
+  "range": [
+    168,
+    182
+  ],
+  "states": [
+    {
+      "frame": 168,
+      "hold_frames": 3,
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X168_complete_stool_closed_FINAL_CANDIDATE.png",
+      "sha256": "a2151404524c938ab7a4ce3dd2652ed71abae6f307c00767bf2da3278e2a1bb4",
+      "source_translation_if_locked180": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 171,
+      "hold_frames": 3,
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X171_complete_stool_closed_FINAL_CANDIDATE.png",
+      "sha256": "75cf8112f9d5b713310abfede0f51bb87cf0204c7c5cc3a24da3ab35310d593e",
+      "source_translation_if_locked180": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 174,
+      "hold_frames": 3,
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X174_complete_stool_closed_FINAL_CANDIDATE.png",
+      "sha256": "84db21d2af0ecb87c96faea275aae4cd81b76765a5545c2037261716c0567a27",
+      "source_translation_if_locked180": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 177,
+      "hold_frames": 3,
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X177_complete_stool_closed_FINAL_CANDIDATE.png",
+      "sha256": "bce04dc262f26770a4cee26048c481235d0f46ad220bc3964156d4d0c2eab4b7",
+      "source_translation_if_locked180": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 180,
+      "hold_frames": 3,
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x180_x196_seated_settle_zero_call/X180_complete_cuff_restored_CANDIDATE.png",
+      "sha256": "1c1d21fedf2957d52ac9e4caf48a1e6e213606533f98a62b2ef68d86dea2983e",
+      "source_translation_if_locked180": [
+        -200,
+        100
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "decoded_frame_sha256": "6d9ce16818bb7101b6c1e2cb6de8e2826cc095aee6bbd8854f99b63e1e90b998",
+      "count": 3
+    },
+    {
+      "decoded_frame_sha256": "4a7ddcd484aa0e9ad97c4cd9dc44996c3baaa307421bb6fd1da25fa0cde93115",
+      "count": 3
+    },
+    {
+      "decoded_frame_sha256": "e3e161308e0501e5af4f654a1f9ef67eea62ec84354efe51334d370ffe646fb1",
+      "count": 3
+    },
+    {
+      "decoded_frame_sha256": "d29f5285219e8ec3d18944a9d4d8a544ae54ffc0e7eec21add31917f039afde8",
+      "count": 3
+    },
+    {
+      "decoded_frame_sha256": "1669e19446c50d816c9b5cbfcf0fc4e81788eed29d81250cfa7a406fce2e10a2",
+      "count": 3
+    }
+  ],
+  "review": "/tmp/laidian_s14_turn_sit_20261020/X168_X171_X174_X177_X180_ACTUAL_COMPLETE_REVIEW.jpg",
+  "video": "/tmp/laidian_s14_turn_sit_20261020/X168_X182_ACTUAL_3_3_3_3_3_FRAMES_24FPS.mp4",
+  "video_sha256": "54301075b46033c887b79c272fac9f814cce9f4a3e491fe6ebbe6b7d9cda86b2",
+  "entry_dependency": "150\u2013167 remains missing; this review does not claim continuity across that gap"
+}

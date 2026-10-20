@@ -1,0 +1,610 @@
+{
+  "status": "FOUR_FINALS_LOCKED_PARENT_ACTUAL_15_FRAME_EXPOSURE_APPROVED",
+  "created_utc": "2026-10-20T00:48:21.329073+00:00",
+  "counts": {
+    "requests": 4,
+    "successful_calls": 4,
+    "originals": 4,
+    "candidate_states": 4,
+    "new_calls_for_finishing": 0,
+    "new_locked_states": 4
+  },
+  "frames": [
+    {
+      "frame": 168,
+      "hold_frames": 3,
+      "request": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X168_request_INPUT_GATE_PENDING_NOT_CALLED.json",
+      "request_sha256": "d61fefbea279003f8efc5e38efaaada471e0eda3072bccef642fa60c63dcaa62",
+      "inputs": [
+        {
+          "index": 1,
+          "path": "/tmp/laidian_s14_turn_sit_20261020/X168_ONLY_COMPLETE_NEW_BODY_TARGET.png",
+          "sha256": "bcf068346dd8415d5ed84c8e8b1002bedd62cb451a202dfb9210cf6304985502"
+        },
+        {
+          "index": 2,
+          "path": "/tmp/laidian_s14_turn_sit_20261020/X168_WHOLE_HEAD_TORSO_ARMS_HIPS_LEGS_WHITE_DOMAIN.png",
+          "sha256": "b6a1dcfaa94f1c9c01bddbe902c328a5a66d3bfbb57d3c8147ae41364bdf82ab"
+        },
+        {
+          "index": 3,
+          "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x197_x208_zero_call/X197_MATERIAL_ONLY_NO_COMPETING_POSE.png",
+          "sha256": "9298cafd43b30660a219c00c99f83770f835960e7418d26468355e05b8e54e48"
+        },
+        {
+          "index": 4,
+          "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x180_x196_seated_settle_zero_call/X180_LOCAL_FACE_HAIR_IDENTITY_ONLY.png",
+          "sha256": "7e44ed4a42b21da352a077b49e99a889d91d73e5e88aff6ce7d744e7d49e4fb9"
+        }
+      ],
+      "original": "/tmp/laidian_s14_turn_sit_20261020/X168_complete_body_call01_original.png",
+      "original_sha256": "0f4ece187f31d2ac6652cef82a0263d6bebb8568ce6adbaa78d374e78c3829f1",
+      "final": "/tmp/laidian_s14_turn_sit_20261020/X168_complete_stool_closed_FINAL_CANDIDATE.png",
+      "final_sha256": "a2151404524c938ab7a4ce3dd2652ed71abae6f307c00767bf2da3278e2a1bb4",
+      "registration": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X168_native_single_registration.json",
+      "status": "FINAL_LOCKED_ACTUAL_EXPOSURE_APPROVED",
+      "body_single_similarity": {
+        "scale": 0.8656434295304912,
+        "translation": [
+          64.54800238842358,
+          185.6508690313508
+        ],
+        "rotation_deg": 0
+      }
+    },
+    {
+      "frame": 171,
+      "hold_frames": 3,
+      "request": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X171_request_INPUT_GATE_PENDING_NOT_CALLED.json",
+      "request_sha256": "841030fefda875b2c6272766763191468aadc8f71e3cfad1e7df09a931a57dda",
+      "inputs": [
+        {
+          "index": 1,
+          "path": "/tmp/laidian_s14_turn_sit_20261020/X171_ONLY_COMPLETE_NEW_BODY_TARGET.png",
+          "sha256": "15f5ad830ee9a493be599675c14710e964766a48ba15e290420047834f3a47f3"
+        },
+        {
+          "index": 2,
+          "path": "/tmp/laidian_s14_turn_sit_20261020/X171_WHOLE_HEAD_TORSO_ARMS_HIPS_LEGS_WHITE_DOMAIN.png",
+          "sha256": "8b7cdbbc890be734b56d16eaaad7e25c5315dd7a9cec7bc55f4985348cbf04ce"
+        },
+        {
+          "index": 3,
+          "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x197_x208_zero_call/X197_MATERIAL_ONLY_NO_COMPETING_POSE.png",
+          "sha256": "9298cafd43b30660a219c00c99f83770f835960e7418d26468355e05b8e54e48"
+        },
+        {
+          "index": 4,
+          "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x180_x196_seated_settle_zero_call/X180_LOCAL_FACE_HAIR_IDENTITY_ONLY.png",
+          "sha256": "7e44ed4a42b21da352a077b49e99a889d91d73e5e88aff6ce7d744e7d49e4fb9"
+        }
+      ],
+      "original": "/tmp/laidian_s14_turn_sit_20261020/X171_complete_body_call01_original.png",
+      "original_sha256": "3b4e8fbf69b2ade5a1f62ec8cd48fc559d4dd54929155e6e89a1502e7c3ac9d9",
+      "final": "/tmp/laidian_s14_turn_sit_20261020/X171_complete_stool_closed_FINAL_CANDIDATE.png",
+      "final_sha256": "75cf8112f9d5b713310abfede0f51bb87cf0204c7c5cc3a24da3ab35310d593e",
+      "registration": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X171_native_single_registration.json",
+      "status": "FINAL_LOCKED_ACTUAL_EXPOSURE_APPROVED",
+      "body_single_similarity": {
+        "scale": 0.9292508277083891,
+        "translation": [
+          19.86954429996365,
+          99.45788404518657
+        ],
+        "rotation_deg": 0
+      }
+    },
+    {
+      "frame": 174,
+      "hold_frames": 3,
+      "request": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X174_request_INPUT_GATE_PENDING_NOT_CALLED.json",
+      "request_sha256": "0754318c87bbb5607f4d0099a501221ea755dc49f951b5cb616edb6e600a1220",
+      "inputs": [
+        {
+          "index": 1,
+          "path": "/tmp/laidian_s14_turn_sit_20261020/X174_ONLY_COMPLETE_NEW_BODY_TARGET.png",
+          "sha256": "9db6eff1d79b3bcdef9bb94d382dd5466b4e90ec4e05512e0ecf2145bbdf7995"
+        },
+        {
+          "index": 2,
+          "path": "/tmp/laidian_s14_turn_sit_20261020/X174_WHOLE_HEAD_TORSO_ARMS_HIPS_LEGS_WHITE_DOMAIN.png",
+          "sha256": "546a254acf22eac9bcee916c053b47d4d2ee0d03f23ee5a6ab4fbffb07d620d7"
+        },
+        {
+          "index": 3,
+          "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x197_x208_zero_call/X197_MATERIAL_ONLY_NO_COMPETING_POSE.png",
+          "sha256": "9298cafd43b30660a219c00c99f83770f835960e7418d26468355e05b8e54e48"
+        },
+        {
+          "index": 4,
+          "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x180_x196_seated_settle_zero_call/X180_LOCAL_FACE_HAIR_IDENTITY_ONLY.png",
+          "sha256": "7e44ed4a42b21da352a077b49e99a889d91d73e5e88aff6ce7d744e7d49e4fb9"
+        }
+      ],
+      "original": "/tmp/laidian_s14_turn_sit_20261020/X174_complete_body_call01_original.png",
+      "original_sha256": "5eeaa02e0d81977d38852606147d638e809cd8aea1c4df481fd163dfb849114b",
+      "final": "/tmp/laidian_s14_turn_sit_20261020/X174_complete_stool_closed_FINAL_CANDIDATE.png",
+      "final_sha256": "84db21d2af0ecb87c96faea275aae4cd81b76765a5545c2037261716c0567a27",
+      "registration": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X174_native_single_registration.json",
+      "status": "FINAL_LOCKED_ACTUAL_EXPOSURE_APPROVED",
+      "body_single_similarity": {
+        "scale": 0.8488760545789543,
+        "translation": [
+          59.18818934908313,
+          200.57082686113995
+        ],
+        "rotation_deg": 0
+      }
+    },
+    {
+      "frame": 177,
+      "hold_frames": 3,
+      "request": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X177_request_INPUT_GATE_PENDING_NOT_CALLED.json",
+      "request_sha256": "3fd34d8e390acd7cb77d09aa92bbba9b513d642e0705c776c5ea9307fcc53b14",
+      "inputs": [
+        {
+          "index": 1,
+          "path": "/tmp/laidian_s14_turn_sit_20261020/X177_ONLY_COMPLETE_NEW_BODY_TARGET.png",
+          "sha256": "cb342532ccf2dacc1ca7a2ba9947693cb27c900d9d1d5ebfca3799719bb96ef2"
+        },
+        {
+          "index": 2,
+          "path": "/tmp/laidian_s14_turn_sit_20261020/X177_WHOLE_HEAD_TORSO_ARMS_HIPS_LEGS_WHITE_DOMAIN.png",
+          "sha256": "cea9a543ed7de9da3056b55d4de9748f884d9f33684d74180283f54fce0147fb"
+        },
+        {
+          "index": 3,
+          "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x197_x208_zero_call/X197_MATERIAL_ONLY_NO_COMPETING_POSE.png",
+          "sha256": "9298cafd43b30660a219c00c99f83770f835960e7418d26468355e05b8e54e48"
+        },
+        {
+          "index": 4,
+          "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x180_x196_seated_settle_zero_call/X180_LOCAL_FACE_HAIR_IDENTITY_ONLY.png",
+          "sha256": "7e44ed4a42b21da352a077b49e99a889d91d73e5e88aff6ce7d744e7d49e4fb9"
+        }
+      ],
+      "original": "/tmp/laidian_s14_turn_sit_20261020/X177_complete_body_call01_original.png",
+      "original_sha256": "e7e0809e73b78ad1ca8dd29ef21b1fd046061309d5339c36ca2ff32e15a8e6d8",
+      "final": "/tmp/laidian_s14_turn_sit_20261020/X177_complete_stool_closed_FINAL_CANDIDATE.png",
+      "final_sha256": "bce04dc262f26770a4cee26048c481235d0f46ad220bc3964156d4d0c2eab4b7",
+      "registration": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X177_native_single_registration.json",
+      "status": "FINAL_LOCKED_ACTUAL_EXPOSURE_APPROVED",
+      "body_single_similarity": {
+        "scale": 0.8534228220944777,
+        "translation": [
+          42.60993401357928,
+          192.10468364112285
+        ],
+        "rotation_deg": 0
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X168_ONLY_COMPLETE_NEW_BODY_TARGET.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X168_ONLY_COMPLETE_NEW_BODY_TARGET.png",
+      "sha256": "bcf068346dd8415d5ed84c8e8b1002bedd62cb451a202dfb9210cf6304985502",
+      "bytes": 535259,
+      "roles": [
+        "X168 actual submitted input 1"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X168_WHOLE_HEAD_TORSO_ARMS_HIPS_LEGS_WHITE_DOMAIN.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X168_WHOLE_HEAD_TORSO_ARMS_HIPS_LEGS_WHITE_DOMAIN.png",
+      "sha256": "b6a1dcfaa94f1c9c01bddbe902c328a5a66d3bfbb57d3c8147ae41364bdf82ab",
+      "bytes": 7583,
+      "roles": [
+        "X168 actual submitted input 2"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x197_x208_zero_call/X197_MATERIAL_ONLY_NO_COMPETING_POSE.png",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x197_x208_zero_call/X197_MATERIAL_ONLY_NO_COMPETING_POSE.png",
+      "sha256": "9298cafd43b30660a219c00c99f83770f835960e7418d26468355e05b8e54e48",
+      "bytes": 43013,
+      "roles": [
+        "X168 actual submitted input 3",
+        "X171 actual submitted input 3",
+        "X174 actual submitted input 3",
+        "X177 actual submitted input 3"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x180_x196_seated_settle_zero_call/X180_LOCAL_FACE_HAIR_IDENTITY_ONLY.png",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x180_x196_seated_settle_zero_call/X180_LOCAL_FACE_HAIR_IDENTITY_ONLY.png",
+      "sha256": "7e44ed4a42b21da352a077b49e99a889d91d73e5e88aff6ce7d744e7d49e4fb9",
+      "bytes": 130721,
+      "roles": [
+        "X168 actual submitted input 4",
+        "X171 actual submitted input 4",
+        "X174 actual submitted input 4",
+        "X177 actual submitted input 4"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X168_request_INPUT_GATE_PENDING_NOT_CALLED.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X168_request_INPUT_GATE_PENDING_NOT_CALLED.json",
+      "sha256": "d61fefbea279003f8efc5e38efaaada471e0eda3072bccef642fa60c63dcaa62",
+      "bytes": 2912,
+      "roles": [
+        "X168 actual submitted request"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X168_call_started.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X168_call_started.json",
+      "sha256": "b5e1cc4267dea103cf92fb432f6632d9d19ffe6aacbada7ffa7dcdce05bf0e54",
+      "bytes": 1338,
+      "roles": [
+        "X168 unique-call preflight log"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X168_call_completed.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X168_call_completed.json",
+      "sha256": "6f1743dff4fac3b885ca28b990671147f4ff528a90b0796bce79c1187adf39bb",
+      "bytes": 726,
+      "roles": [
+        "X168 successful unique raw receipt"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X168_complete_body_call01_original.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X168_complete_body_call01_original.png",
+      "sha256": "0f4ece187f31d2ac6652cef82a0263d6bebb8568ce6adbaa78d374e78c3829f1",
+      "bytes": 924042,
+      "roles": [
+        "X168 unique original"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X168_native_single_registration.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X168_native_single_registration.json",
+      "sha256": "b8be06507f975d65d87274f4c12b9c09b8adc44b74a3fab1e2153389662af0de",
+      "bytes": 4707,
+      "roles": [
+        "X168 whole-body single registration and semantic finishing"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X168_complete_stool_closed_FINAL_CANDIDATE.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X168_complete_stool_closed_FINAL_CANDIDATE.png",
+      "sha256": "a2151404524c938ab7a4ce3dd2652ed71abae6f307c00767bf2da3278e2a1bb4",
+      "bytes": 700915,
+      "roles": [
+        "X168 final candidate"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X171_ONLY_COMPLETE_NEW_BODY_TARGET.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X171_ONLY_COMPLETE_NEW_BODY_TARGET.png",
+      "sha256": "15f5ad830ee9a493be599675c14710e964766a48ba15e290420047834f3a47f3",
+      "bytes": 558280,
+      "roles": [
+        "X171 actual submitted input 1"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X171_WHOLE_HEAD_TORSO_ARMS_HIPS_LEGS_WHITE_DOMAIN.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X171_WHOLE_HEAD_TORSO_ARMS_HIPS_LEGS_WHITE_DOMAIN.png",
+      "sha256": "8b7cdbbc890be734b56d16eaaad7e25c5315dd7a9cec7bc55f4985348cbf04ce",
+      "bytes": 7663,
+      "roles": [
+        "X171 actual submitted input 2"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X171_request_INPUT_GATE_PENDING_NOT_CALLED.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X171_request_INPUT_GATE_PENDING_NOT_CALLED.json",
+      "sha256": "841030fefda875b2c6272766763191468aadc8f71e3cfad1e7df09a931a57dda",
+      "bytes": 2772,
+      "roles": [
+        "X171 actual submitted request"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X171_call_started.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X171_call_started.json",
+      "sha256": "d34ca68fe6c4bf8921ee6645d98c2972553944ca97315297d76c470eba2b89c1",
+      "bytes": 1257,
+      "roles": [
+        "X171 unique-call preflight log"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X171_call_completed.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X171_call_completed.json",
+      "sha256": "838f743179b4cb14ce943989463fd5e394cccb3075a1af28c331baeeb195dce5",
+      "bytes": 726,
+      "roles": [
+        "X171 successful unique raw receipt"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X171_complete_body_call01_original.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X171_complete_body_call01_original.png",
+      "sha256": "3b4e8fbf69b2ade5a1f62ec8cd48fc559d4dd54929155e6e89a1502e7c3ac9d9",
+      "bytes": 822225,
+      "roles": [
+        "X171 unique original"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X171_native_single_registration.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X171_native_single_registration.json",
+      "sha256": "56be2acf83eb0218c216a5ac7f6cfc34ff0a3b46e33f5f979ce1d5fea5f91f8a",
+      "bytes": 5301,
+      "roles": [
+        "X171 whole-body single registration and semantic finishing"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X171_complete_stool_closed_FINAL_CANDIDATE.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X171_complete_stool_closed_FINAL_CANDIDATE.png",
+      "sha256": "75cf8112f9d5b713310abfede0f51bb87cf0204c7c5cc3a24da3ab35310d593e",
+      "bytes": 705583,
+      "roles": [
+        "X171 final candidate"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X174_ONLY_COMPLETE_NEW_BODY_TARGET.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X174_ONLY_COMPLETE_NEW_BODY_TARGET.png",
+      "sha256": "9db6eff1d79b3bcdef9bb94d382dd5466b4e90ec4e05512e0ecf2145bbdf7995",
+      "bytes": 559946,
+      "roles": [
+        "X174 actual submitted input 1"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X174_WHOLE_HEAD_TORSO_ARMS_HIPS_LEGS_WHITE_DOMAIN.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X174_WHOLE_HEAD_TORSO_ARMS_HIPS_LEGS_WHITE_DOMAIN.png",
+      "sha256": "546a254acf22eac9bcee916c053b47d4d2ee0d03f23ee5a6ab4fbffb07d620d7",
+      "bytes": 7683,
+      "roles": [
+        "X174 actual submitted input 2"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X174_request_INPUT_GATE_PENDING_NOT_CALLED.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X174_request_INPUT_GATE_PENDING_NOT_CALLED.json",
+      "sha256": "0754318c87bbb5607f4d0099a501221ea755dc49f951b5cb616edb6e600a1220",
+      "bytes": 2823,
+      "roles": [
+        "X174 actual submitted request"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X174_call_started.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X174_call_started.json",
+      "sha256": "a459ded98ce1b438ad4432010d2d8c5a6e7807a1b2d2013e3fa323e33ee78470",
+      "bytes": 1257,
+      "roles": [
+        "X174 unique-call preflight log"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X174_call_completed.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X174_call_completed.json",
+      "sha256": "8fee1aa3568b905426252c638731cd738f15e9c90bf5e4f59a864e92568f15a3",
+      "bytes": 660,
+      "roles": [
+        "X174 successful unique raw receipt"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X174_complete_body_call01_original.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X174_complete_body_call01_original.png",
+      "sha256": "5eeaa02e0d81977d38852606147d638e809cd8aea1c4df481fd163dfb849114b",
+      "bytes": 879055,
+      "roles": [
+        "X174 unique original"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X174_native_single_registration.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X174_native_single_registration.json",
+      "sha256": "f695374bb9bb61a1075d04d300f3f242a6908dec0958bd8092722192a24fab73",
+      "bytes": 5011,
+      "roles": [
+        "X174 whole-body single registration and semantic finishing"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X174_complete_stool_closed_FINAL_CANDIDATE.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X174_complete_stool_closed_FINAL_CANDIDATE.png",
+      "sha256": "84db21d2af0ecb87c96faea275aae4cd81b76765a5545c2037261716c0567a27",
+      "bytes": 663105,
+      "roles": [
+        "X174 final candidate"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X177_ONLY_COMPLETE_NEW_BODY_TARGET.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X177_ONLY_COMPLETE_NEW_BODY_TARGET.png",
+      "sha256": "cb342532ccf2dacc1ca7a2ba9947693cb27c900d9d1d5ebfca3799719bb96ef2",
+      "bytes": 555640,
+      "roles": [
+        "X177 actual submitted input 1"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X177_WHOLE_HEAD_TORSO_ARMS_HIPS_LEGS_WHITE_DOMAIN.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X177_WHOLE_HEAD_TORSO_ARMS_HIPS_LEGS_WHITE_DOMAIN.png",
+      "sha256": "cea9a543ed7de9da3056b55d4de9748f884d9f33684d74180283f54fce0147fb",
+      "bytes": 7557,
+      "roles": [
+        "X177 actual submitted input 2"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X177_request_INPUT_GATE_PENDING_NOT_CALLED.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X177_request_INPUT_GATE_PENDING_NOT_CALLED.json",
+      "sha256": "3fd34d8e390acd7cb77d09aa92bbba9b513d642e0705c776c5ea9307fcc53b14",
+      "bytes": 2843,
+      "roles": [
+        "X177 actual submitted request"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X177_call_started.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X177_call_started.json",
+      "sha256": "153c4a80ce48fa18487cc9f91f9190e1de2aed6f0d70976cb3d304dcd75b01c4",
+      "bytes": 1257,
+      "roles": [
+        "X177 unique-call preflight log"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X177_call_completed.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X177_call_completed.json",
+      "sha256": "688f83a29f52bb28afff2cb8aa0f27bd1a641c713d7b4458ae2eeb4f5edcb1a4",
+      "bytes": 660,
+      "roles": [
+        "X177 successful unique raw receipt"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X177_complete_body_call01_original.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X177_complete_body_call01_original.png",
+      "sha256": "e7e0809e73b78ad1ca8dd29ef21b1fd046061309d5339c36ca2ff32e15a8e6d8",
+      "bytes": 865272,
+      "roles": [
+        "X177 unique original"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X177_native_single_registration.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X177_native_single_registration.json",
+      "sha256": "9bc5ac85b59ca6c2195b6d4a1c6a1fbd11de1475511e758347710fa114f4dfbc",
+      "bytes": 5293,
+      "roles": [
+        "X177 whole-body single registration and semantic finishing"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X177_complete_stool_closed_FINAL_CANDIDATE.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X177_complete_stool_closed_FINAL_CANDIDATE.png",
+      "sha256": "bce04dc262f26770a4cee26048c481235d0f46ad220bc3964156d4d0c2eab4b7",
+      "bytes": 654110,
+      "roles": [
+        "X177 final candidate"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X168_X177_FINAL_SEMANTIC_MEAN_RGB_GATE.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X168_X177_FINAL_SEMANTIC_MEAN_RGB_GATE.json",
+      "sha256": "e4259c76820d6fbe2c7dce04302f1aa9f7603ee47254dfdd6f76d76200d8adf1",
+      "bytes": 6390,
+      "roles": [
+        "four final semantic mean RGB gate"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/register_complete_turn_sit_native.py",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/register_complete_turn_sit_native.py",
+      "sha256": "9c4f561981a8dbaf1d5ae08003a208bc2dd43ac079646263203fa7a8bb34e448",
+      "bytes": 5908,
+      "roles": [
+        "whole-body registration and minimal native palette calibration script"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/close_complete_semantic_stool_surfaces.py",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/close_complete_semantic_stool_surfaces.py",
+      "sha256": "38fce4675189458c8a8c577c4652529766be440331bd52ad8248c17886789e45",
+      "bytes": 7390,
+      "roles": [
+        "complete same-stool semantic surface finishing script"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/build_actual_turn_sit_exposure.py",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/build_actual_turn_sit_exposure.py",
+      "sha256": "62b61b3dbf66b0e6393dffc8b30a9efded8e1d7b2eaee688a83a775e1efce176",
+      "bytes": 2540,
+      "roles": [
+        "actual exposure encoding and independent decode script"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X168_X177_COMPLETE_CONTINUOUS_FIXED_STOOL.png",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X168_X177_COMPLETE_CONTINUOUS_FIXED_STOOL.png",
+      "sha256": "61ad1df8a79efae2e4af7b08aec2f289b57fc84ad8207a6b6b00f8e2e58b6da3",
+      "bytes": 129522,
+      "roles": [
+        "common complete stool layer"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X168_X171_COMPLETE_STOOL_AND_CONTACTS_REVIEW.jpg",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X168_X171_COMPLETE_STOOL_AND_CONTACTS_REVIEW.jpg",
+      "sha256": "6c8a97fd2a6cd365dd6d7149da348c390e55ee5dc32a2fc6e352b79ee8bdbdfd",
+      "bytes": 139956,
+      "roles": [
+        "common stool and gripping contact review"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X168_X171_X174_X177_X180_ACTUAL_COMPLETE_REVIEW.jpg",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X168_X171_X174_X177_X180_ACTUAL_COMPLETE_REVIEW.jpg",
+      "sha256": "9051a1f202fb4116194dee554b93ff79ad387668f3bcaa7710e34401a31a1328",
+      "bytes": 157286,
+      "roles": [
+        "five-state same-size review"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/X168_X182_ACTUAL_3_3_3_3_3_FRAMES_24FPS.mp4",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/X168_X182_ACTUAL_3_3_3_3_3_FRAMES_24FPS.mp4",
+      "sha256": "54301075b46033c887b79c272fac9f814cce9f4a3e491fe6ebbe6b7d9cda86b2",
+      "bytes": 307848,
+      "roles": [
+        "actual 15-frame exposure"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X168_X182_ACTUAL_EXPOSURE_VERIFIED.json",
+      "resolved_path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x168_x179_turn_sit_zero_call/X168_X182_ACTUAL_EXPOSURE_VERIFIED.json",
+      "sha256": "0b6391f989213c76f2c65860db6a1491a05b7da2e9a62ad0453f83c77476e9e6",
+      "bytes": 2812,
+      "roles": [
+        "independent decoded exposure count"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/INDEPENDENT_15F_DECODE.json",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/INDEPENDENT_15F_DECODE.json",
+      "sha256": "59778333f862eb363ab01d541d0341d409889dac8dbc35d7ec172b1599f3cea0",
+      "bytes": 1327,
+      "roles": [
+        "parent independent 15-frame verification"
+      ]
+    },
+    {
+      "path": "/tmp/laidian_s14_turn_sit_20261020/INDEPENDENT_DECODED_FIVE.jpg",
+      "resolved_path": "/tmp/laidian_s14_turn_sit_20261020/INDEPENDENT_DECODED_FIVE.jpg",
+      "sha256": "064a614a9c35b3a7dddab225c854c7f6a6bd09b563a1584ed0370b09eaa512b8",
+      "bytes": 110918,
+      "roles": [
+        "parent independently decoded actual five states"
+      ]
+    }
+  ],
+  "existing_frozen_dependencies_not_duplicated": [
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/refs/assets/chars/x15/F000.png",
+      "sha256": "57e175f4d15527201d5241a2a5fea395f7b12d994cb1ab78d9432d3bd93e4907",
+      "role": "same mother stool fixed support, sandals, and RGB reference"
+    },
+    {
+      "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/x180_x196_seated_settle_zero_call/X180_complete_cuff_restored_CANDIDATE.png",
+      "sha256": "1c1d21fedf2957d52ac9e4caf48a1e6e213606533f98a62b2ef68d86dea2983e",
+      "role": "unchanged locked endpoint at180, same-size source offset[-200,100]"
+    }
+  ],
+  "storage": "Large unique originals and final assets live in /tmp per shared disk instruction; scratch contains thin logs only. Default generation originals preserved. No repository writes.",
+  "unresolved": "150–167 entry remains missing after stopped X150 route; no claim of complete S14 continuity.",
+  "parent_final_review_utc": "2026-10-20T00:48:21Z"
+}
