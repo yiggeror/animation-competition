@@ -1,0 +1,74 @@
+{
+  "status": "ADOPT_CURRENT_SILENT240_FRAME_FILM_THREE_POINT_CLOSEOUT_COMPLETE",
+  "authorConclusion": "Current10second film is adoptable within the requested visible-continuity and finite-animation scope. Required additional drawings:0. Preserve all current exposures and movie bytes.",
+  "reviewUTC": "2026-10-20T08:49:13.937551+00:00",
+  "sourceSharedCommitForCurrentS15": "e07baa0a0b3c018ff70052fb46774eb9e9c8c7e5",
+  "currentS14Movie": {
+    "path": "collab/reviews/cloud_s14_scene_20261020/assembled/S14_FULL240_10S_BACKSTAGE_CANDIDATE.mp4",
+    "sha256": "5b2ed3ff18dc785899724d838cb3741253947e29beb9277b23d92071772f33b7"
+  },
+  "currentS15Movie": {
+    "path": "collab/reviews/cloud_s13_20261018/render_assist/s15_production192/S15_production192_1920x1080_24fps.mp4",
+    "sha256": "c0e2a0cd0ba9ebd6ed1f6829df558f4e452e680a33007126f9c57e492e76ffac"
+  },
+  "library_file_id": "libfile_9ded824b9b088191adb710bbf1fba641",
+  "149to150": {
+    "decision": "ADOPT_CURRENT_EXPOSURES_NO_NEW_TRANSITION_REQUIRED",
+    "observed": "Visible change from extended step to recovered bent-knee/upward torso pose. Original stool rail/grip and visible floor remain coherent; no observed torso/arm intersection, detached contact, or planted-foot slide within the actual held states. Native scene-size head silhouette remains the same child; the visible height change is a discrete articulated-pose change, not runtime uniform growth. The actual whole-drawing scale ratio is1.00681, with no per-limb transform.",
+    "action": "Retain147 on144–149,156 on150–155,162 on156–167. Do not reintroduce original159 backward-return toe diagnostic or retry stopped150.",
+    "limit": "This is a limited-animation acceptability finding at actual1080p shot size. It is not a claim of exact anatomical bone equality across independently drawn poses."
+  },
+  "179to180": {
+    "decision": "ADOPT_CURRENT_REGISTRATION_AND_SOURCE_DRAWINGS",
+    "observed": "Head/neck ink and exposed neck surface visibly change as the seated torso returns upright. The neck remains connected to the collar and head; no newly visible cut seam or foot/stool support break at this boundary. Original native canvases differ, but both complete states use the same common .16 scene scale; matching stool feet use only(+200,-100) for1190x1350 states and identity for1254x1254 states.",
+    "action": "Keep native adopted drawings and whole-canvas registration. No independent head shrink or replacement drawing.",
+    "limit": "A visible hand-drawn change remains. No observed defect at actual shot size justifies adding a new drawing."
+  },
+  "239toS15F000": {
+    "decision": "PASS_VISIBLE_CUT_CONTINUITY_NO_WORLD_EQUIVALENCE_BLOCKER",
+    "observed": "Both sides use exactly the same completeF000 crossed-arm figure and wooden stool source. Seated hip/support, crossed hands and upward-right gaze continue. S15 closer/lower framing enlarges/crops the figure and stool; shoes fall outside its frame. The warm screen stays lit to the right; S15 foreground is cooler/darker as in the accepted original shot. No visible seated pose reset, stool replacement, or light-off/re-light event.",
+    "action": "PreserveS15 unchanged. Close the requested visible cut review; no full3D-world equality proof is required or asserted.",
+    "scope": "One final-frame/current-production-first-frame comparison, at original brightness."
+  },
+  "newSceneRenderFrames": 0,
+  "newDrawings": 0,
+  "newImageGenerationCalls": 0,
+  "changedMovieBytes": false,
+  "necessaryAdditionalDrawingRequests": [],
+  "remainingBlockingIssuesInRequestedScope": [],
+  "actualClipPlayback": {
+    "newSceneRenders": 0,
+    "clips": [
+      {
+        "file": "final_three_point_review/actual_132_167_24fps.mp4",
+        "ended": true,
+        "duration": 1.458333,
+        "width": 1920,
+        "height": 1080,
+        "totalVideoFrames": 36,
+        "droppedVideoFrames": 0,
+        "corruptedVideoFrames": 0,
+        "mediaError": null
+      },
+      {
+        "file": "final_three_point_review/actual_171_188_24fps.mp4",
+        "ended": true,
+        "duration": 0.708333,
+        "width": 1920,
+        "height": 1080,
+        "totalVideoFrames": 18,
+        "droppedVideoFrames": 0,
+        "corruptedVideoFrames": 0,
+        "mediaError": null
+      }
+    ]
+  },
+  "evidence": [
+    "149_150_actual_size_context.png",
+    "179_180_actual_size_context.png",
+    "S14_F239_TO_CURRENT_S15_F000_ACTUAL.jpg",
+    "REGISTRATION_AND_LIMITED_FINDINGS.json",
+    "CURRENT_S15_SOURCE_READBACK.json"
+  ],
+  "unchangedBoundaries": "095→096 omission allowed by main coordinator;131→132 tested real cloth occlusion retained. Other passed sections preserved. No audio/EDL/ready/shared-document/S15 change."
+}

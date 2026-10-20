@@ -1,0 +1,57 @@
+{
+  "149to150": {
+    "firstActualSourceKey": 147,
+    "nextActualSourceKey": 156,
+    "firstNativeToCommonScale": 0.993235574001674,
+    "nextNativeToCommonScale": 1,
+    "ratio": 1.0068104950883632,
+    "commonToRoomScale": 0.16,
+    "registrationBasis": "Fixed original stool feet, not canvas width/height. The<0.7% scale difference cannot explain a sudden whole-character resize; visible height changes are articulated drawing changes. No per-head or per-limb fit applied.",
+    "stoolGrip": "Grip remains on the original stool rail; raised/recovered shoes exchange support on the same visible floor, not a planted-foot slide within a held exposure.",
+    "exposures": "147 used144\u2013149,156 used150\u2013155,162 used156\u2013167; retain current6/6/12 sequence."
+  },
+  "179to180": {
+    "lastTurnSitNativeSize": [
+      1190,
+      1350
+    ],
+    "nextSeatedNativeSize": [
+      1254,
+      1254
+    ],
+    "lastWholeTranslationToCommon": [
+      200,
+      -100
+    ],
+    "nextWholeTranslationToCommon": [
+      0,
+      0
+    ],
+    "commonToRoomScaleBoth": 0.16,
+    "native168StoolFeet": [
+      [
+        186,
+        1268
+      ],
+      [
+        479,
+        1282
+      ]
+    ],
+    "commonStoolFeet": [
+      [
+        386,
+        1168
+      ],
+      [
+        679,
+        1182
+      ]
+    ],
+    "registrationBasis": "1190\u21921254 canvas change handled by actual matching stool feet, unit scale and translation only. It is not an instruction to shrink the head. Fixed stool and shoes preserve the seated support through the pose change."
+  },
+  "239toS15": {
+    "sameCompleteDrawingSHA256": "57e175f4d15527201d5241a2a5fea395f7b12d994cb1ab78d9432d3bd93e4907",
+    "scope": "Same complete crossed-arm figure+stool source. Existing S15 lower/closer camera changes size/crop/foreground brightness; visible pose/gaze/support and warm lit-screen state continue. No3D equality assertion or requirement."
+  }
+}
