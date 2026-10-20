@@ -1,0 +1,25 @@
+{
+  "status": "F132_CONTACT_REACH_GATE_BLOCKED_UNDER_CURRENT128_CARD_REFERENCE",
+  "submitted": false,
+  "generation_authorized": false,
+  "new_image_calls": 0,
+  "actual_callable_tool_args_prepared": false,
+  "actual_args": null,
+  "known_parameters": {
+    "transparent_background": true,
+    "output_canvas_requested": [
+      1672,
+      941
+    ]
+  },
+  "required_inputs": {
+    "01_unique_complete132_target": null,
+    "02_same_pose_actual132_contacts": null,
+    "03_identity_only": "/tmp/cloud-s20-reference-20261018/collab/reviews/cloud_s20_20261018/next_F132_belly_up_stop_input_001/prepared_identity_only/03_locked128_identity_head_collar_cloth_shoes_ONLY.png",
+    "04_complete_actual132_mask": null
+  },
+  "missing_requirement": "Need an explicit F132 T_H-to-R contact/reach continuation within accepted staging. Current same-card circle is remote from128 arm and has world y<0 throughout. Do not choose a new torso action, card-depth rule, rod length, root or registration automatically.",
+  "why_not_complete_args": "No valid132 contact/pose or complete mask exists. Do not submit an incomplete payload or feed fixed128 diagnostic as132 target.",
+  "132_exposure_frozen": false,
+  "later_states_opened": false
+}
