@@ -1,0 +1,185 @@
+{
+  "fps": 24,
+  "adoptionCommit": "7c2f44cbf221873adb243c1178f9c914c765265a",
+  "crop": [
+    0,
+    350,
+    1920,
+    1430
+  ],
+  "additionalAdoptionCommit": "dd1f0f50e94584c2518492dc156e14dae173e587",
+  "continuousAdoptionCommit": "ec7248f12ce8a2a6c2ea9db15caba830b9389fc8",
+  "totalFrames": 192,
+  "availableFrom": 144,
+  "availableThrough": 191,
+  "duration": 8,
+  "clipDuration": 2,
+  "status": "COMPACT_SEVEN_STATE_ACTUAL_SPEED_REVIEW_PENDING",
+  "acceptedForFinal": false,
+  "compactAdoptionCommit": "c1e66b162b12035ad636456bd3d337339af5b2fd",
+  "states": [
+    {
+      "key": 144,
+      "start": 144,
+      "end": 149,
+      "alb": "F144_native.png",
+      "nrm": "F144_n.png",
+      "mat": "F144_m.png",
+      "cameraStateIndex": 0
+    },
+    {
+      "key": 150,
+      "start": 150,
+      "end": 155,
+      "alb": "F150_native.png",
+      "nrm": "F150_n.png",
+      "mat": "F150_m.png",
+      "rodSourceIndex": 0,
+      "sourceCamera": {
+        "pos": [
+          2.55,
+          1.7,
+          1.2
+        ],
+        "target": [
+          1.2,
+          1.15,
+          1.0003935185185184
+        ],
+        "hfov": 41.9212962962963
+      },
+      "canvasToOwnScreen": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -350
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "key": 156,
+      "start": 156,
+      "end": 163,
+      "alb": "F156_native.png",
+      "nrm": "F156_n.png",
+      "mat": "F156_m.png",
+      "cameraStateIndex": 1
+    },
+    {
+      "key": 168,
+      "alb": "F168_native.png",
+      "nrm": "F168_n.png",
+      "mat": "F168_m.png",
+      "rodSourceIndex": 0,
+      "sourceCamera": {
+        "pos": [
+          2.55,
+          1.7,
+          1.2
+        ],
+        "target": [
+          1.2,
+          1.15,
+          1.003125
+        ],
+        "hfov": 41.375
+      },
+      "canonicalCamera": 162,
+      "start": 164,
+      "end": 169
+    },
+    {
+      "key": 176,
+      "alb": "F176_native.png",
+      "nrm": "F176_n.png",
+      "mat": "F176_m.png",
+      "rodSourceIndex": 0,
+      "sourceCamera": {
+        "pos": [
+          2.55,
+          1.7,
+          1.2
+        ],
+        "target": [
+          1.2,
+          1.15,
+          1.003125
+        ],
+        "hfov": 41.375
+      },
+      "canonicalCamera": 162,
+      "start": 170,
+      "end": 175
+    },
+    {
+      "key": 184,
+      "alb": "F184_native.png",
+      "nrm": "F184_n.png",
+      "mat": "F184_m.png",
+      "rodSourceIndex": 0,
+      "sourceCamera": {
+        "pos": [
+          2.55,
+          1.7,
+          1.2
+        ],
+        "target": [
+          1.2,
+          1.15,
+          1.003125
+        ],
+        "hfov": 41.375
+      },
+      "canonicalCamera": 162,
+      "start": 176,
+      "end": 183
+    },
+    {
+      "key": 208,
+      "alb": "F208_native.png",
+      "nrm": "F208_n.png",
+      "mat": "F208_m.png",
+      "rodSourceIndex": 0,
+      "sourceCamera": {
+        "pos": [
+          2.55,
+          1.7,
+          1.2
+        ],
+        "target": [
+          1.2,
+          1.15,
+          1.003125
+        ],
+        "hfov": 41.375
+      },
+      "canonicalCamera": 162,
+      "start": 184,
+      "end": 191
+    }
+  ],
+  "excludedDrawings": [
+    192,
+    200
+  ],
+  "failed180Excluded": true,
+  "remainingTransition": "176→184 new whole-person180 still pending; seven-state timing alone is not final acceptance.",
+  "cameraRetiming": {
+    "startSeconds": 6,
+    "endSeconds": 8,
+    "originalStartSeconds": 6,
+    "originalEndSeconds": 9,
+    "mode": "same-eye path, smoothstep retimed to2s; scene lighting uses actual output time"
+  },
+  "sharedEDLUnchanged": true
+}
