@@ -1,0 +1,73 @@
+{
+  "candidates": [
+    {
+      "state": 0,
+      "source": "s29_user_video_motion_audit_20261020/PREFIX_STOOL_REGISTRATION_AUDIT/ORIGINAL_F000.png",
+      "source_sha256": "a9d663b68cf725f1f6a00d8781b82903967b864ab427a09f08838e28a57aee3c",
+      "whole_similarity": [
+        0.9868885358222323,
+        -35.20888169850292,
+        -1.1690520590639226
+      ],
+      "candidate": "F000_CANONICAL_STOOL_CANDIDATE.png",
+      "sha256": "d9652a3c78e1a5eb348bb33eb7a1ebf4e1b5293734937ddd7a6381214ddc1a21",
+      "scope": "whole body uniformly mapped, no limb/head transform; canonical030 wood behind complete original supported character",
+      "status": "FINITE_ZERO_CALL_SUPPORT_REPAIR_ADOPTED",
+      "bytes": 1424230
+    },
+    {
+      "state": 24,
+      "source": "/workspace/scratch/f060b5601755/s29_prefix_support_repair_20261020/color_inputs/assets/chars/s29/F024.png",
+      "source_sha256": "82a589aeb73f04c7446f9a7c3fdbc1bd605ae778aeb4e5cacbf8717a208c468a",
+      "whole_similarity": [
+        0.97031453849276,
+        11.078762391749741,
+        15.776050015300587
+      ],
+      "candidate": "F024_CANONICAL_STOOL_CANDIDATE.png",
+      "sha256": "b7201bbe59ad1b083bd0458c74ccb2a817154b64ee42b764962cce009c9ab4e8",
+      "scope": "whole body uniformly mapped, no limb/head transform; canonical030 wood behind complete original supported character",
+      "status": "FINITE_ZERO_CALL_SUPPORT_REPAIR_ADOPTED",
+      "bytes": 1470216
+    }
+  ],
+  "canonical030_sha256": "72242b30bce5a044257b18089b44f2440dab72c8f256bc28393775ee0602f1e9",
+  "original_scene_matrix": [
+    1.0026666666666666,
+    0,
+    0,
+    1.0026666666666666,
+    277.33333333333303,
+    -6
+  ],
+  "calls": 0,
+  "stool_reveal_scope": {
+    "top": "x100:450, <=12pixels above visible seat wood originally hidden by030 trousers, samex top+8 source",
+    "right_tip_polygon": [
+      [
+        385,
+        1030
+      ],
+      [
+        438,
+        1043
+      ],
+      [
+        430,
+        1050
+      ],
+      [
+        385,
+        1043
+      ]
+    ],
+    "right_tip_source_offset": [
+      -40,
+      0
+    ],
+    "preserved": "same030 fixed stool principal outline, original highlights/ink recovered; same whole registered character, no limbs altered"
+  },
+  "status": "FIXED_INDEPENDENT_ART_SUPPORT_GATE_PASSED_NOT_SCENE",
+  "new_action_count": 0,
+  "scene_integration": "Two PNGs retain1024x1536 original native canvas. Internal similarity already baked; use unchanged scene matrix. Do not apply internal similarity again. F030 onward not altered."
+}
