@@ -1,0 +1,98 @@
+{
+  "frame": 84,
+  "status": "HOLD_UPPER_OUTER_FAR_SLEEVE_CONTOUR_CUT",
+  "generation_calls_state": 1,
+  "additional_calls": 0,
+  "existing066_static_head_blouse_near_pressure_cells_reused": false,
+  "old066_whole_pose_sent_to_image_tool": false,
+  "new_native_near_source": 84,
+  "new_native_far_source": 78,
+  "far078_084_exact_reuse": true,
+  "near072_078_exact066_reuse": false,
+  "one_whole_far_group_registration": {
+    "source_root": [
+      554.0,
+      544.0
+    ],
+    "source_contact": [
+      645.0,
+      755.0
+    ],
+    "target_root": [
+      548.0,
+      530.0
+    ],
+    "target_contact": [
+      640.098467936869,
+      745.61030076984
+    ],
+    "matrix": [
+      [
+        1.0203161631129753,
+        -0.0035559379450792543
+      ],
+      [
+        0.0035559379450792543,
+        1.0203161631129753
+      ]
+    ],
+    "translation": [
+      -15.320724122465208,
+      -27.021982355032492
+    ],
+    "scale": 1.0203223595532214,
+    "rotation_degrees": 0.19968262676644,
+    "whole_group": true,
+    "per_finger_transform": false
+  },
+  "one_whole_near_group_registration": {
+    "source_root": [
+      174.0,
+      615.0
+    ],
+    "source_contact": [
+      432.0,
+      949.0
+    ],
+    "target_root": [
+      174.0,
+      615.0
+    ],
+    "target_contact": [
+      430.0,
+      959.0
+    ],
+    "matrix": [
+      [
+        1.0158544801257579,
+        -0.01823489782169324
+      ],
+      [
+        0.01823489782169324,
+        1.0158544801257579
+      ]
+    ],
+    "translation": [
+      8.455782618459466,
+      -12.92337749831563
+    ],
+    "scale": 1.0160181279338185,
+    "rotation_degrees": 1.0283662796368358,
+    "whole_group": true,
+    "per_finger_transform": false
+  },
+  "per_finger_transform": false,
+  "cloth_SHA256": "d433040c2bb996fdf755bd457ad8f9eebc94556a7c729f0f78f28e853cbed12f",
+  "original_props_SHA256": "c006b3fb3d05d29a4a3d16b06496308bce34797e93a76bc80c0e5511cdcd2704",
+  "props_four_rods_geometry_changed": false,
+  "protected_legs_RGBA_changes": 0,
+  "output_SHA256": "bf52b21065cf52bcd0dfc3e4dcf6eaf28defbe747a804d38c2857ba0452705c4",
+  "whole_cuff_proximal_native078_joint_restored": true,
+  "native_jade_hand_geometry_not_individually_warped": true,
+  "remaining_hard_contour_location": [
+    552,
+    450,
+    592,
+    480
+  ]
+}

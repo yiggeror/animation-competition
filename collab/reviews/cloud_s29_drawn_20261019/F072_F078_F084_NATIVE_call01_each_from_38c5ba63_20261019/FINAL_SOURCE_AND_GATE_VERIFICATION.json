@@ -1,0 +1,42 @@
+{
+  "verification": "PASS_PROVENANCE_AND_FINITE_NATIVE_ONLY_COMPOSITES_78_84_HOLD",
+  "generation_calls": 3,
+  "actual_image_outputs": 3,
+  "executed_tool_reference_count": 15,
+  "old066_whole_pose_supplied_to_tool": false,
+  "rows": [
+    {
+      "state": 72,
+      "native_raw_SHA256": "59fb252da3357d4f565f439643c1a2ce7148584770d48a76e979ad34bcf325d3",
+      "native_gate": "PASS_ROOT_AND_EXISTING61SOL",
+      "actual_args_refs_tool_return_archive_verified": true,
+      "composition_path": "collab/reviews/cloud_s29_drawn_20261019/F072_F078_F084_NATIVE_call01_each_from_38c5ba63_20261019/F072/reintegration_v3_locked_hold/F072_SAME_SOURCE_CLOTH_TRUE_PROPS_NATIVE_RGBA.png",
+      "composition_SHA256": "386830377bc73fc7330a7d7581a597306c9bc252c5daf8400f5c2e0fe5a0855d",
+      "composition_gate": "STATIC_CANDIDATE_PENDING_ASTRA_SCENE"
+    },
+    {
+      "state": 78,
+      "native_raw_SHA256": "3d1cf98951cb3cf4adab78710efcc792bb2c98143f14c3682439d6392cb5390d",
+      "native_gate": "PASS_ROOT_AND_EXISTING61SOL",
+      "actual_args_refs_tool_return_archive_verified": true,
+      "composition_path": "collab/reviews/cloud_s29_drawn_20261019/F072_F078_F084_NATIVE_call01_each_from_38c5ba63_20261019/F078/reintegration_v3_locked_hold/F078_SAME_SOURCE_CLOTH_TRUE_PROPS_NATIVE_RGBA.png",
+      "composition_SHA256": "54d39fac656b620f8e0f3b3d6e2c16c53363ff053147bcf5e6d30045eb6f57de",
+      "composition_gate": "HOLD_UPPER_OUTER_FAR_SLEEVE_CONTOUR_CUT"
+    },
+    {
+      "state": 84,
+      "native_raw_SHA256": "cac2e0900097e3aef4965c510141889030ddfcb3f696443b62fe680718c2283a",
+      "native_gate": "PASS_ROOT_AND_EXISTING61SOL",
+      "actual_args_refs_tool_return_archive_verified": true,
+      "composition_path": "collab/reviews/cloud_s29_drawn_20261019/F072_F078_F084_NATIVE_call01_each_from_38c5ba63_20261019/F084/reintegration_v3_locked_hold/F084_SAME_SOURCE_CLOTH_TRUE_PROPS_NATIVE_RGBA.png",
+      "composition_SHA256": "bf52b21065cf52bcd0dfc3e4dcf6eaf28defbe747a804d38c2857ba0452705c4",
+      "composition_gate": "HOLD_UPPER_OUTER_FAR_SLEEVE_CONTOUR_CUT"
+    }
+  ],
+  "near72_78_RGBA_exact": true,
+  "far78_84_RGBA_exact": true,
+  "cotton78_84_bytes_exact": true,
+  "new_scene_renders": 0,
+  "remaining_hard_composite_issue": "078/084 far sleeve upper exterior contour cut atx552-592/y450-480; do not adopt current composites",
+  "scope": "no new calls/retries/full shot/production edits"
+}

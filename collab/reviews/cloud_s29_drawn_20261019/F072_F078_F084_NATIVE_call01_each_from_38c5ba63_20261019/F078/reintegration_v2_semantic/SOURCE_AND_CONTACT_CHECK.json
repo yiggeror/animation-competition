@@ -1,0 +1,56 @@
+{
+  "frame": 78,
+  "status": "PENDING_ACTUAL_V2_SEMANTIC_REVIEW_NOT_PRODUCTION_LOCK",
+  "generation_calls": 1,
+  "additional_generation_calls": 0,
+  "source_human_body": 72,
+  "source_near_arm": 72,
+  "source_far_arm": 78,
+  "near072_078_exact_same_array": true,
+  "far078_084_exact_same_array": true,
+  "whole_far_registration": {
+    "source_root": [
+      554.0,
+      544.0
+    ],
+    "source_contact": [
+      645.0,
+      755.0
+    ],
+    "target_root": [
+      548.0,
+      530.0
+    ],
+    "target_contact": [
+      640.098467936869,
+      745.61030076984
+    ],
+    "matrix": [
+      [
+        1.0203161631129753,
+        -0.0035559379450792543
+      ],
+      [
+        0.0035559379450792543,
+        1.0203161631129753
+      ]
+    ],
+    "translation": [
+      -15.320724122465208,
+      -27.021982355032492
+    ],
+    "scale": 1.0203223595532214,
+    "rotation_degrees": 0.19968262676644,
+    "whole_group": true,
+    "per_finger_transform": false
+  },
+  "whole_near_registration": null,
+  "blouse_same_source_lower_hem_max_projection_dy": 27,
+  "body_head_same_native_raw_coherent": true,
+  "old_head_collar_guard_removed": true,
+  "per_finger_transform": false,
+  "cloth_SHA256": "d433040c2bb996fdf755bd457ad8f9eebc94556a7c729f0f78f28e853cbed12f",
+  "true_props_SHA256": "c006b3fb3d05d29a4a3d16b06496308bce34797e93a76bc80c0e5511cdcd2704",
+  "true_props_and_four_rods_geometry_changed": false,
+  "output_SHA256": "db675ee714239259ecaf2089b1311b4936fac93323d93507256bb9ef3759d076"
+}
