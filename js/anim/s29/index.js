@@ -1,9 +1,9 @@
-// S29 limited migration module. Verified frames 036–071 only; whole shot is not ready.
+// S29 bounded review module: candidate000–035 plus locked036–071; no full-shot claim.
 import {loadImg, renderPaint} from '../../paint/paintshot.js';
 import {sourceShot} from './scene_source.js';
 import {FPS, SHOT_DURATION, SHOT_TOTAL_FRAMES, VERIFIED_RANGE, STATES, resolveFrame, frameAtTime} from './exposure.js';
 export {FPS, SHOT_DURATION, SHOT_TOTAL_FRAMES, VERIFIED_RANGE, STATES, resolveFrame};
-export const STATUS = 'PARTIAL_LOCKED_STATES_PENDING_ACTUAL_MIGRATION_RENDER';
+export const STATUS = 'EARLY_CANDIDATES_PENDING_SIX_FORMAL_PNG_REVIEW';
 const canvas = (w,h) => {const c = document.createElement('canvas'); c.width=w; c.height=h; return c;};
 export async function renderFrameIndex(ctx, f, w=1920, h=1080) {
   const row=resolveFrame(f); // Fail before loading or drawing anything outside the exact table.

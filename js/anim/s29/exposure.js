@@ -1,8 +1,32 @@
-// Exact verified range only. Missing early evidence fails closed.
+// Review-only: early000–035 candidate states plus unchanged locked036–071.
 export const FPS = 24;
 export const SHOT_DURATION = 12;
 export const SHOT_TOTAL_FRAMES = 288;
 export const STATES = Object.freeze([
+  {
+    "state": 0,
+    "start": 0,
+    "end": 23,
+    "count": 24,
+    "url": "/assets/chars/s29/F000.png",
+    "sha256": "a9d663b68cf725f1f6a00d8781b82903967b864ab427a09f08838e28a57aee3c"
+  },
+  {
+    "state": 24,
+    "start": 24,
+    "end": 29,
+    "count": 6,
+    "url": "/assets/chars/s29/F024.png",
+    "sha256": "87aea20798add9fbbba58e16d151008f6a5a6fc7629b73b49f0e49c3f16caa7a"
+  },
+  {
+    "state": 30,
+    "start": 30,
+    "end": 35,
+    "count": 6,
+    "url": "/assets/chars/s29/F030.png",
+    "sha256": "0d621c508dc94fa41d3223374dbc372438b5ab8976dcf10b9b5a028c8a2648fa"
+  },
   {
     "state": 36,
     "start": 36,
@@ -56,7 +80,7 @@ export const VERIFIED_RANGE = Object.freeze([Math.min(...STATES.map(s => s.start
 export function resolveFrame(f) {
   if (!Number.isInteger(f) || f < 0 || f >= SHOT_TOTAL_FRAMES) throw new RangeError("S29 frame must be an integer from 0 through 287");
   const row = STATES.find(s => f >= s.start && f <= s.end);
-  if (!row) throw new RangeError("S29 F" + String(f).padStart(3, "0") + " is not covered by this verified prefix module; no fallback or inferred hold");
+  if (!row) throw new RangeError("S29 F" + String(f).padStart(3, "0") + " is not covered by this bounded review module; no fallback or inferred hold");
   return row;
 }
 export function frameAtTime(t) {
