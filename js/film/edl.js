@@ -21,7 +21,7 @@ export const SHOTS = [
   { id: 'S09', scene: 3, line: 'paint', dur: 4, mod: 'js/anim/s09_drawn.js', text: '近景（马灯从右边照过来）：小满跪在电视柜前捧着旧手电，推开关不亮，往手心磕两下，再推——亮了，光柱打出去' },
   { id: 'S10', scene: 3, line: 'paint', dur: 5, mod: 'js/anim/s10_drawn.js', text: '手电光束扫过屋子，照到奶奶，奶奶眯起眼' },
   // 第 4 场 · 木箱
-  { id: 'S12', scene: 4, line: 'paint', dur: 8, mod: 'js/paint/shots/s12.js', text: '中景：樟木箱开着，奶奶跪在箱边俯身握住签子，直起身把鹤立起来，马灯的光透过牛皮，鹤影落在箱盖内侧' },
+  { id: 'S12', scene: 4, line: 'paint', dur: 8, mod: 'js/anim/s12_drawn.js', text: '中景：樟木箱开着，奶奶跪在箱边俯身握住签子，直起身把鹤立起来，马灯的光透过牛皮，鹤影落在箱盖内侧' },
   { id: 'S13', scene: 4, line: 'paint', dur: 5, mod: 'js/anim/s13_drawn.js', text: '近景：小满盯着看 → 发现奶奶在看她 → 假装打哈欠，扭开头' },
   // 第 5 场 · 搭台
   { id: 'S14', scene: 5, line: 'paint', dur: 10, mod: 'js/paint/shots/s14.js', text: '全景：奶奶把床单搭上铁丝、夹衣夹、挂马灯，床单亮起；小满拖板凳坐下，抱起胳膊' },
