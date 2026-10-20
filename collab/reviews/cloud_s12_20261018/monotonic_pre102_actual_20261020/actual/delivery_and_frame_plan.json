@@ -1,0 +1,149 @@
+{
+  "status": "SHORT_PHASE_TIMING_DIAGNOSTIC_NOT_FINAL_EDL",
+  "newSourceCommit": "0825f3ad10fc53de57d3d688b16c40222aa992f1",
+  "newSourceSHA256": "8b604715c01cc71e50ad8360b3aa5dea39a873bffcfc2d95a2ab4964f4491f5f",
+  "frames": 16,
+  "fps": 24,
+  "videoSeconds": 0.6666666666666666,
+  "containerSeconds": 0.687,
+  "newBrowserFrames": 4,
+  "reusedDecodedActualFrames": 12,
+  "full8sEDLChanged": false,
+  "tail": "Known bad110+ not rerendered, new source pending from author",
+  "audio": "Corresponding original sourceAAC packets directly copied; no encoding/mix change",
+  "source90MovieSHA256": "4f0568b1c4727fda92be05dac275d58afbf2c4354868ca0e2cc6b2a8b045d5e5",
+  "source102106MovieSHA256": "79bfabfe397a6359faf2aa8567af2b69a28a95d363f335e6bc2c9afb52dce6b3",
+  "output": "S12_monotonic_adjacency_16f_original_audio.mp4",
+  "bytes": 3278303,
+  "sha256": "e817955636e685dc964a295e32a472f564502d78398f99b84f2c51605b514b00",
+  "framePlan": [
+    {
+      "outputFrame": 0,
+      "diagnosticTimelineFrame": 90,
+      "sourceActualFrame": 90,
+      "kind": "reused_actual_decoded_png",
+      "actualPNG": "/tmp/s12_monotonic_reused_actual/old90_01.png",
+      "sha256": "29ffe2e8e4bda2697348af281ce381bc832c2bfc958c83fe2f52e8ccbd500959"
+    },
+    {
+      "outputFrame": 1,
+      "diagnosticTimelineFrame": 91,
+      "sourceActualFrame": 91,
+      "kind": "reused_actual_decoded_png",
+      "actualPNG": "/tmp/s12_monotonic_reused_actual/old90_02.png",
+      "sha256": "adf70820889eab3efa5621786aaa92d494bfcc825bbb3d63f01c1993f0b05892"
+    },
+    {
+      "outputFrame": 2,
+      "diagnosticTimelineFrame": 92,
+      "sourceActualFrame": 92,
+      "kind": "reused_actual_decoded_png",
+      "actualPNG": "/tmp/s12_monotonic_reused_actual/old90_03.png",
+      "sha256": "eba0ae569725c0c5a5ba004c041d5226b9c4691444066aebdf950b24418d3025"
+    },
+    {
+      "outputFrame": 3,
+      "diagnosticTimelineFrame": 93,
+      "sourceActualFrame": 93,
+      "kind": "reused_actual_decoded_png",
+      "actualPNG": "/tmp/s12_monotonic_reused_actual/old90_04.png",
+      "sha256": "f66b7f0d9b36136aaf6d07aff105505c81ffcc15acbbfb3b44032a0c26b7d836"
+    },
+    {
+      "outputFrame": 4,
+      "diagnosticTimelineFrame": 94,
+      "sourceActualFrame": 94,
+      "kind": "new_browser_actual",
+      "actualPNG": "collab/reviews/cloud_s12_20261018/monotonic_pre102_actual_20261020/new_actual_keys/F94.png",
+      "sha256": "25119e9129314b32a78975b848d385b0669586818f1dfa882497f25fc3e04579"
+    },
+    {
+      "outputFrame": 5,
+      "diagnosticTimelineFrame": 95,
+      "sourceActualFrame": 95,
+      "kind": "new_browser_actual",
+      "actualPNG": "collab/reviews/cloud_s12_20261018/monotonic_pre102_actual_20261020/new_actual_keys/F95.png",
+      "sha256": "33b5870a9e28dec207f55ffe54747b1e9aafaa0e658a9083bab00256d61548f7"
+    },
+    {
+      "outputFrame": 6,
+      "diagnosticTimelineFrame": 96,
+      "sourceActualFrame": 98,
+      "kind": "new_browser_actual",
+      "actualPNG": "collab/reviews/cloud_s12_20261018/monotonic_pre102_actual_20261020/new_actual_keys/F98.png",
+      "sha256": "1197de61f9cfd9061257b19925be5b7e9995d9ec92707f9374e355a5ae50790f"
+    },
+    {
+      "outputFrame": 7,
+      "diagnosticTimelineFrame": 97,
+      "sourceActualFrame": 99,
+      "kind": "new_browser_actual",
+      "actualPNG": "collab/reviews/cloud_s12_20261018/monotonic_pre102_actual_20261020/new_actual_keys/F99.png",
+      "sha256": "005265e427bccd8b0bca74a014ef93e3e7956a70f1af355438a54a22e8a54fd6"
+    },
+    {
+      "outputFrame": 8,
+      "diagnosticTimelineFrame": 98,
+      "sourceActualFrame": 102,
+      "kind": "reused_actual_decoded_png",
+      "actualPNG": "/tmp/s12_monotonic_reused_actual/natural102_01.png",
+      "sha256": "e8342affdf45c1fc85a8f42ed63fa7e3f15d392b3ac40f90a91b4d6b7ebeec1c"
+    },
+    {
+      "outputFrame": 9,
+      "diagnosticTimelineFrame": 99,
+      "sourceActualFrame": 103,
+      "kind": "reused_actual_decoded_png",
+      "actualPNG": "/tmp/s12_monotonic_reused_actual/natural102_02.png",
+      "sha256": "62d121daf886bacc723338e7bff9d21d2800e07dbb0a942df7c71c960023a193"
+    },
+    {
+      "outputFrame": 10,
+      "diagnosticTimelineFrame": 100,
+      "sourceActualFrame": 104,
+      "kind": "reused_actual_decoded_png",
+      "actualPNG": "/tmp/s12_monotonic_reused_actual/natural102_03.png",
+      "sha256": "0b52847dccd0db3e0cd7359e5e4547b976723185b761f62e3f13d3626e88da28"
+    },
+    {
+      "outputFrame": 11,
+      "diagnosticTimelineFrame": 101,
+      "sourceActualFrame": 105,
+      "kind": "reused_actual_decoded_png",
+      "actualPNG": "/tmp/s12_monotonic_reused_actual/natural102_04.png",
+      "sha256": "04f30ac7f5f4bf99b37e851697be0952a52158b2cb3f258a082b64640ff50b78"
+    },
+    {
+      "outputFrame": 12,
+      "diagnosticTimelineFrame": 102,
+      "sourceActualFrame": 106,
+      "kind": "reused_actual_decoded_png",
+      "actualPNG": "/tmp/s12_monotonic_reused_actual/natural102_05.png",
+      "sha256": "cdc17727ae63f916c5ad408c8a64977ffda112695305a34ae2725715f3199066"
+    },
+    {
+      "outputFrame": 13,
+      "diagnosticTimelineFrame": 103,
+      "sourceActualFrame": 107,
+      "kind": "reused_actual_decoded_png",
+      "actualPNG": "/tmp/s12_monotonic_reused_actual/natural102_06.png",
+      "sha256": "4fac167006cc2bd31a3c1ba57e8c6761dbdfabb103fe4bb9f83b95a74ae1c52a"
+    },
+    {
+      "outputFrame": 14,
+      "diagnosticTimelineFrame": 104,
+      "sourceActualFrame": 108,
+      "kind": "reused_actual_decoded_png",
+      "actualPNG": "/tmp/s12_monotonic_reused_actual/natural102_07.png",
+      "sha256": "88b16a57f40f05f9cb2ed86d6d72f03c6aeb2d139e027290ed079640aaa6e1ed"
+    },
+    {
+      "outputFrame": 15,
+      "diagnosticTimelineFrame": 105,
+      "sourceActualFrame": 109,
+      "kind": "reused_actual_decoded_png",
+      "actualPNG": "/tmp/s12_monotonic_reused_actual/natural102_08.png",
+      "sha256": "668868d09ebc34caabf21acf54fb2d68f620c2b0938bca65c26eb84134489725"
+    }
+  ]
+}
