@@ -1,0 +1,64 @@
+{
+  "status": "F156_INPUT_PREPARATION_ONLY_NO_CALL",
+  "context": "Adopted144 alpha reprojected by exact original camera144→156 rotation/intrinsics. Same camera eye, projective homography valid independent of depth. It is fixed pose context, not a156 generated pose.",
+  "H_canvas144_to_canvas156": [
+    [
+      1.0077808838874949,
+      -0.0003829609062168896,
+      -7.129291069616273
+    ],
+    [
+      -9.032140074593842e-18,
+      1.0074253456917044,
+      -4.094585665344425
+    ],
+    [
+      -3.3192715266042984e-20,
+      -3.9891761064259333e-07,
+      1.0003545390233115
+    ]
+  ],
+  "camera144": {
+    "pos": [
+      2.55,
+      1.7,
+      1.2
+    ],
+    "target": [
+      1.2,
+      1.15,
+      1.0
+    ],
+    "hfov": 42.0
+  },
+  "camera156": {
+    "pos": [
+      2.55,
+      1.7,
+      1.2
+    ],
+    "target": [
+      1.2,
+      1.15,
+      1.0014814814814814
+    ],
+    "hfov": 41.7037037037037
+  },
+  "CN_grip_mapped": [
+    336.04275049073954,
+    812.8422995558784
+  ],
+  "CN_grip_engineering_target": [
+    336.04275049073976,
+    812.8422995558784
+  ],
+  "scope": "Original156 laugh peak RtwoC/Ljade belly; only head-neck-chest natural laugh progression, preserve locked complete clothes/ankle-shoe world support and Rgrip. Existing engineering lean -10→-14 and pitch-3.5→-5 are bounded guidance, not a35deg redesign or new skeletal measurement.",
+  "original_crop": [
+    0,
+    350,
+    1920,
+    1430
+  ],
+  "no_camera_change": true,
+  "new_calls": 0
+}

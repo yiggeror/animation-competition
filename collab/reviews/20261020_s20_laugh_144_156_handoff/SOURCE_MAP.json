@@ -1,0 +1,52 @@
+{
+  "schema": "s20-grandma-laugh-limited-original-art-v1",
+  "canvas": [
+    1920,
+    2510
+  ],
+  "source_crop_CAMG": [
+    0,
+    350,
+    1920,
+    1430
+  ],
+  "alpha_semantics": "Straight RGBA person only; native painted shafts excluded. Composite original finite rods behind original skin alpha. Do not treat gray hidden RGB as opaque background.",
+  "frames": {
+    "144": {
+      "alpha": "review_s20_132_20261020/grandma_handoff_gate/laugh144_156_gate/F144_native_call01/true_rods_gate/F144_CHARACTER_FINAL_ALPHA.png",
+      "sha256": "8da28a9847bfd25976a91314535dd1a54942305c47e7f951ae8eaff0e769a148",
+      "camera_and_rods": "review_s20_132_20261020/grandma_handoff_gate/laugh144_156_gate/CAMG_PROJECTION_CHECK.json",
+      "camera_state_index": 0
+    },
+    "156": {
+      "alpha": "review_s20_132_20261020/grandma_handoff_gate/laugh144_156_gate/F156_native_input_pending/NATIVE_CLOTH_ORIGINAL_SUPPORT_CANDIDATE.png",
+      "sha256": "c2d19ed9f047069409a72367b5a6c6f77bc7ee0cee7e19648374c02caf0dd148",
+      "camera_and_rods": "review_s20_132_20261020/grandma_handoff_gate/laugh144_156_gate/CAMG_PROJECTION_CHECK.json",
+      "camera_state_index": 1
+    }
+  },
+  "camera_source": "review_s20_132_20261020/grandma_handoff_gate/source/s20.js",
+  "camera_source_sha256": "9c50d9484c2aafcd3ce6b1f1fe3f4f4ddb100b48bc09f775d24d17bd44deee3e",
+  "homography144to156": "review_s20_132_20261020/grandma_handoff_gate/laugh144_156_gate/F156_native_input_pending/CAMERA_AND_SCOPE.json",
+  "original_world_support_master_xy": [
+    [
+      1046,
+      903
+    ],
+    [
+      1150,
+      920
+    ]
+  ],
+  "original_support": "review_s20_132_20261020/isolated_arm_call01/GRANDMA_C_SOURCE_PROTECTION_LAYER.png",
+  "exposure_scope": "Authored action anchors144 laugh onset and156 peak. Keep original scene temporal scheme; intermediate exposure/tween verification is not certified by this map. No invented additional action drawings.",
+  "actual_scene_render_passed": false,
+  "finite_rod_diameter_m": 0.007,
+  "native_generation_calls": {
+    "144_action": 1,
+    "144_cloth_repair": 1,
+    "156_action": 1
+  },
+  "accepted_different_actions": 2,
+  "package_scope": "Adopted alpha and exact camera/finite rods/source-support data only. Production assembly scripts and their historical dependencies are not bundled or claimed independently reproducible."
+}
