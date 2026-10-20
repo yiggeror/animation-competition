@@ -1,5 +1,5 @@
 {
-  "status": "ACTUAL_ABC_PARTIAL_COMPLETE_OLD_FOLD_REJECTED_PENDING_C_MOTHER_ARM_ART",
+  "status": "ACTUAL_ABCD_INTEGRATED_E_CROSSED_ARMS_PENDING",
   "rejectedFilmSHA256": "5b2ed3ff18dc785899724d838cb3741253947e29beb9277b23d92071772f33b7",
   "priorVisualPassWithdrawn": true,
   "confirmedProblems": [
@@ -7,8 +7,8 @@
     "Child147→156 size jump and missing upright gait-to-sit action.",
     "Independent downward head/torso poses162/168 plus seated183/189 nods."
   ],
-  "implemented": "Early grandma complete-person+held-sheet registration candidate; new A150–155/B156–161/C162–196 actual scene frames. Old nod and long-body seated source chain excluded through196. Old197–239 remains diagnostic only; no repaired whole film yet.",
-  "externalArtRequest": "ABC now received/consumed. Actual newC196→old197/208 shows body/leg growth. Need only C-mother collecting-arms and complete-crossed-arms poses; do not reuse old long-body folded figures or force feet onto floor.",
+  "implemented": "Repaired early grandma candidate plus actual A150–155/B156–161/C162–196/D197–202. No old nod or old long-body197/200 consumed. E203–239 still awaited; old203+ remains diagnostic only.",
+  "externalArtRequest": "Only E: complete crossed-arms figure from C mother, same head, torso, hip, short hanging legs and original stool; intended203–239. D same-C collecting-arms source already received and actually rendered197–202.",
   "storage": "Same original worktree stored under /tmp with original /workspace path preserved as symlink. All sources and rejected film retained.",
   "grandmaCandidate": {
     "status": "GRANDMA_EARLY_WHOLE_PERSON_REGISTRATION_CANDIDATE_NOT_FINAL_PASS",
@@ -158,5 +158,51 @@
     ]
   },
   "supersededPartial": "Temporary X186180–196 superseded by C. Historical A/B records retain their original pending status; current ABC record is authoritative.",
-  "fullRepairAccepted": false
+  "fullRepairAccepted": false,
+  "newDIntegrated": {
+    "status": "ACTUAL_C_TO_D_PARTIAL_READY_PENDING_E",
+    "sourceDCommit": "2a476d237475abac3bc3972f9d7989bca02aa882",
+    "sourceDSHA256": "4c163d06a25a1c262503dbc86a4e8932f243061d8fbab3224c93a394ef3f8260",
+    "newDActualRange": [
+      197,
+      202
+    ],
+    "actualContextRange": [
+      162,
+      202
+    ],
+    "frames": 41,
+    "fps": 24,
+    "seconds": 1.7083333333333333,
+    "file": "repair_user_rejection_20261020/S14_NEW_C_TO_D_162_202_41F.mp4",
+    "sha256": "043cabe6dc243948f7ee35766b5291a81d439f23654c68ad6a8381af270ad2d8",
+    "bytes": 2366705,
+    "newSceneRenderFrames": 6,
+    "reusedPreviouslyRenderedCFrames": 35,
+    "rawRegistrationAppliedAgain": false,
+    "sourcePNGBytesModified": false,
+    "naturalHangingFeetPreserved": true,
+    "oldLongBody197And200Consumed": false,
+    "ABCOrGrandmaRerendered": false,
+    "imageCalls": 0,
+    "resourcesFailed": [],
+    "pageErrors": [],
+    "E203To239Pending": true,
+    "fullRepairAccepted": false,
+    "actualVisualReview": "Actual C196/D197/D202 native-size scene crops and full197 inspected: same complete-child stature, original stool footprint, naturally hanging feet and gaze; arms rise from knees toward chest, not yet crossed. No old197/200 whole figures consumed.",
+    "packetDecodedSequencePreserved": true,
+    "normalPlayback": {
+      "file": "repair_user_rejection_20261020/S14_NEW_C_TO_D_162_202_41F.mp4",
+      "ended": true,
+      "duration": 1.708333,
+      "width": 1920,
+      "height": 1080,
+      "totalVideoFrames": 41,
+      "droppedVideoFrames": 0,
+      "corruptedVideoFrames": 0,
+      "mediaError": null
+    },
+    "library_file_id": "libfile_a705249b35208191b4f826a98599b44f"
+  },
+  "remainingFinalAssemblyFrames": 37
 }
