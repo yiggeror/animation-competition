@@ -1,5 +1,5 @@
 {
-  "status": "BOUNDED_ACTUAL_ACTION_REVIEW_NO_NEW_REQUIRED_ART_IDENTIFIED_NOT_FULL_SHOT_PASS",
+  "status": "ACTUAL_RENDER_COMPLETE_ACTION_JUDGMENT_WITHDRAWN_USER_NEAR_HAND_REJECTION",
   "sourceCommit": "0ae7a446d95343b835fb83f77f05eae61dfb6fb6",
   "video": {
     "path": "actual/S29_ACTUAL078_131_54F.mp4",
@@ -140,5 +140,14 @@
     "shirt color",
     "S12"
   ],
-  "S14PreservedAndPendingOriginalArtistTwoTails": true
+  "S14PreservedAndPendingOriginalArtistTwoTails": true,
+  "previousCloudJudgmentWithdrawn": "BOUNDED_ACTUAL_ACTION_REVIEW_NO_NEW_REQUIRED_ART_IDENTIFIED_NOT_FULL_SHOT_PASS",
+  "latestUserRejection": {
+    "issue": "前景无镯握布手仍扭曲，约102/108附近；原作者正在精确对应源。",
+    "localizationOwner": "root and original artist",
+    "newRenderRequested": false,
+    "sourceOrVideoOverwritten": false,
+    "cloudReinvestigationOpened": false
+  },
+  "currentConclusion": "Only the54-frame actual render/decode/normal-rate playback are complete. Prior no-required-redraw judgment withdrawn. Await exact source repair, do not rerender this excerpt or remake132+."
 }
