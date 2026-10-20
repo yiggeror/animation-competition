@@ -1,0 +1,131 @@
+{
+  "rods": {
+    "L": {
+      "A": [
+        1354.5098496531928,
+        423.72306749399445,
+        17.905687887192947
+      ],
+      "G": [
+        893.3971291866029,
+        394.81402763018065,
+        5.121325309175376
+      ],
+      "B": [
+        778.7636845143165,
+        387.6271887626601,
+        1.9431099722080862
+      ],
+      "length": 577.0973600937725,
+      "fraction": 0.8008958606877815
+    },
+    "R": {
+      "A": [
+        1184.7425566947816,
+        536.6206892847187,
+        -14.209838885525228
+      ],
+      "G": [
+        896.8421052631579,
+        572.7098831030818,
+        -165.85200854895731
+      ],
+      "B": [
+        849.2033374916463,
+        578.6815469710087,
+        -190.94417519559462
+      ],
+      "length": 381.56350585940044,
+      "fraction": 0.8580232502041105
+    }
+  },
+  "status": "FIXED_S12_FULL_BODY_AND_FINITE_CONTACT_PASSED",
+  "character": "F120_COMPLETE_CHARACTER.png",
+  "character_sha256": "0867f3967b48543e2c41ac0daf85e2ed1e072e34101280e98aaf7fecc3bef05f",
+  "native_canvas": [
+    1672,
+    941
+  ],
+  "scene_canvas": [
+    1920,
+    1080
+  ],
+  "character_to_scene": [
+    1.1483253588516746,
+    0,
+    0,
+    1.1477151965993624,
+    0,
+    0
+  ],
+  "original_crane": {
+    "root_scene": [
+      1237,
+      538
+    ],
+    "paper_plane_inclination_degrees": 85,
+    "projected_roll_degrees": 0,
+    "code_pose": {
+      "angles": {
+        "neck0": 1.25,
+        "neck1": 0.10000000000000002,
+        "neck2": 0.08000000000000002,
+        "neck3": 0.05999999999999999,
+        "neck4": 0.03,
+        "neck5": 0.0,
+        "neck6": -0.039999999999999994,
+        "neck7": -0.07,
+        "neck8": -0.09,
+        "neck9": -0.1,
+        "neck10": -0.08999999999999998,
+        "neck11": -0.07000000000000002,
+        "head": -0.55,
+        "tibia_near": 0.07999999999999996,
+        "tarsus_near": -0.020000000000000018,
+        "foot_near": 0.02999999999999997,
+        "tibia_far": -0.04999999999999999,
+        "tarsus_far": 0.020000000000000018,
+        "foot_far": 0.02999999999999997
+      },
+      "rootAngle": 0,
+      "facing": 1
+    },
+    "actual_makeCrane_scale": 1.35,
+    "paper_3D_camera_basis": [
+      [
+        0.9659258262890683,
+        -0.022557566113149827
+      ],
+      [
+        -0.053811505283103,
+        -0.9919287038353878
+      ],
+      [
+        0.2531632279912453,
+        -0.1247742069439773
+      ]
+    ],
+    "mm_to_scene_scale": 0.72
+  },
+  "occlusion_order": [
+    "original_scene_context",
+    "original_scene_crane_makeCrane_drawPuppet",
+    "finite_rods_A_to_B",
+    "complete_character_front"
+  ],
+  "rod_metadata": "A is original hinge; B physical finite tail, G legal interior grip. No shortening or endpoint relocation. Z at grip is inherited feasible hypothesis, not measured hand volume.",
+  "raw_call": "exec-dab8893e-4677-462a-8d77-75c71cc0345c",
+  "raw_sha256": "a882f1b630e55f9331a4315a53c424bf9a6cf02dc465989ffec4206ecb05b0cf",
+  "technical_marker_repair": {
+    "red_marker_pixels_restored": 38,
+    "scope": [
+      773,
+      491,
+      786,
+      503
+    ],
+    "same_source_adjacent_thumb_skin": true,
+    "alpha_or_shape_changed_for_marker": false
+  },
+  "exposure": "120 lift peak.126 partial return and132 baseline separate. Actual continuity and exposure pending."
+}
