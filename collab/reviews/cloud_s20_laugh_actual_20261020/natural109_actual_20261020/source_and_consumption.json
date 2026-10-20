@@ -1,0 +1,38 @@
+{
+  "sourceCommit": "1701eecbdd6bb3a0ba61a5ae6c4bd69908d636b1",
+  "sourceChildSHA256": "c3b6a749b14c5a361dcc9515f5003a9c7f89ccd89e31d511316df5830543094d",
+  "grandmotherPixels": "Exact complete positive-alpha component from original104, also byte-identical in112; child replaced as a complete native drawing",
+  "sourcePromptAndRaw": "Source raw_call_id/raw_sha256 retained in unmodified CONSUMER_GEOMETRY.json; no new model call",
+  "boundaryPreparation": [
+    {
+      "frame": 104,
+      "externalOldWoodPixelsRemoved": 0,
+      "allPixelsAtOrBeyondX350Unchanged": true,
+      "geometrySource": "ad0f2942 finite boundary, unchanged native grip rays; supersedes early arbitrary A/H geometry"
+    },
+    {
+      "frame": 112,
+      "externalOldWoodPixelsRemoved": 575,
+      "allPixelsAtOrBeyondX350Unchanged": true,
+      "geometrySource": "ad0f2942 finite boundary, unchanged native grip rays; supersedes early arbitrary A/H geometry"
+    }
+  ],
+  "exposureCandidate": [
+    {
+      "start": 104,
+      "end": 106,
+      "source": "old104, physical finite boundary"
+    },
+    {
+      "start": 107,
+      "end": 110,
+      "source": "natural complete109, not failed107 raw"
+    },
+    {
+      "start": 111,
+      "end": 112,
+      "source": "old112 drawing, physical finite boundary"
+    }
+  ],
+  "acceptance": "Actual continuity pending; exposure is only an adjacency candidate"
+}
