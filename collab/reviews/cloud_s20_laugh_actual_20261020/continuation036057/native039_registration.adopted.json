@@ -1,0 +1,251 @@
+{
+  "status": "ZERO_CALL_WHOLE_SOURCE_DIAGNOSTIC_NOT_F039_ACCEPTANCE",
+  "new_image_calls": 0,
+  "source": "collab/reviews/cloud_s20_20261018/B04_B05_generation_002/F039/raw_original.png",
+  "source_sha256": "c3607005ebde263dda1ea9bc83016ba6bd39ec34b9a67b54ca9cfa7cadc12b11",
+  "complete_child_one_similarity_transform": {
+    "scale": 0.9181770406300922,
+    "screen_clockwise_degrees": 2.1014090631185307,
+    "matrix_source_to_registered_2x3": [
+      [
+        0.9175595595052587,
+        -0.03366797737835732,
+        94.80199483868341
+      ],
+      [
+        0.03366797737835732,
+        0.9175595595052587,
+        53.070611952987974
+      ]
+    ],
+    "translation_px": [
+      94.80199483868341,
+      53.070611952987974
+    ],
+    "fit": "support sole fixed exactly; pelvis and shoulder-axis center weighted fit; no hand in the fit",
+    "hidden_joint_estimate_uncertainty_px": 12,
+    "per_hand_registration": false,
+    "old_palm_paste": false,
+    "source_body_or_head_redraw": false,
+    "mirroring": false,
+    "nonuniform_scaling": false
+  },
+  "anchors": {
+    "support": {
+      "source": [
+        562.2948717948718,
+        919.5897435897436
+      ],
+      "target": [
+        579.780303030303,
+        915.780303030303
+      ],
+      "registered": [
+        579.780303030303,
+        915.780303030303
+      ],
+      "residual_vector_px": [
+        0.0,
+        0.0
+      ],
+      "residual_norm_px": 0.0
+    },
+    "pelvis_estimate": {
+      "source": [
+        584.0,
+        518.0
+      ],
+      "target": [
+        607.225,
+        558.125
+      ],
+      "registered": [
+        613.2167653077654,
+        548.0285625656727
+      ],
+      "residual_vector_px": [
+        5.991765307765377,
+        -10.0964374343273
+      ],
+      "residual_norm_px": 11.74049830154693
+    },
+    "shoulder_center_estimate": {
+      "source": [
+        570.5,
+        345.0
+      ],
+      "target": [
+        609.0,
+        384.5
+      ],
+      "registered": [
+        606.6542713409002,
+        388.8362410766551
+      ],
+      "residual_vector_px": [
+        -2.345728659099791,
+        4.336241076655085
+      ],
+      "residual_norm_px": 4.93005371339836
+    },
+    "far_support_check_only": {
+      "source": [
+        692.0263157894736,
+        900.8508771929825
+      ],
+      "target": [
+        652.4351145038167,
+        901.7862595419847
+      ],
+      "registered": [
+        699.4475293659132,
+        902.9540723553348
+      ],
+      "residual_vector_px": [
+        47.01241486209642,
+        1.1678128133501104
+      ],
+      "residual_norm_px": 47.02691716382107
+    },
+    "visible_waist_check_only": {
+      "source": [
+        583,
+        458
+      ],
+      "target": [
+        608,
+        505
+      ],
+      "registered": [
+        614.3192843909616,
+        492.94132101797874
+      ],
+      "residual_vector_px": [
+        6.31928439096157,
+        -12.058678982021263
+      ],
+      "residual_norm_px": 13.614150506193617
+    }
+  },
+  "native_clamps_source_px": [
+    [
+      735.0,
+      365.15443877551
+    ],
+    [
+      774.0,
+      418.6138775510202
+    ]
+  ],
+  "native_clamps_registered_px": [
+    [
+      756.9142596907478,
+      412.8675213203275
+    ],
+    [
+      790.8992113360995,
+      463.2327915323389
+    ]
+  ],
+  "clamp_selection": "source wood axis through each original closed hand; manual along-axis x, approximate +/-3px; not old grip coordinates",
+  "native_shaft_fits": [
+    {
+      "slope": 0.33178571428571535,
+      "intercept": 121.29193877550925,
+      "RMS_px": 0.1629317383249909
+    },
+    {
+      "slope": 0.2415306122448991,
+      "intercept": 231.66918367346832,
+      "RMS_px": 0.1791448519146286
+    }
+  ],
+  "old039_shaft_fits": [
+    {
+      "slope": 0.33845205057046074,
+      "intercept": 127.84397163120454,
+      "RMS_px": 0.14293105267794476
+    },
+    {
+      "slope": 0.21927227875424202,
+      "intercept": 263.1934936786906,
+      "RMS_px": 0.18179229570538694
+    }
+  ],
+  "same_two_shaft_rigid_layer_test": {
+    "scale": 1,
+    "rotation_degrees": 2.5352069119304623,
+    "matrix_2x3": [
+      [
+        0.9990212298826283,
+        -0.04423327077891305,
+        -17.455916273157776
+      ],
+      [
+        0.04423327077891305,
+        0.9990212298826283,
+        -17.93109737257399
+      ]
+    ],
+    "transverse_contact_fit_only_not_puppet_scene_signoff": true,
+    "fits_native_grip_corridors": true,
+    "shafts": [
+      {
+        "role": "T_H",
+        "new_clamp_px": [
+          756.9142596907478,
+          412.8675213203275
+        ],
+        "transverse_residual_px": 3.416421891404555e-15,
+        "station_slide_px": 55.60265818304147,
+        "within_same_finite_shaft": true,
+        "angle_vs_native_deg": 0.7771859399774386,
+        "estimated_edge_difference_over_36px_grip": 0.2441526766690352,
+        "ends_px": [
+          [
+            616.521879356871,
+            358.31787988698477
+          ],
+          [
+            846.7896703089425,
+            447.7887286624751
+          ]
+        ]
+      },
+      {
+        "role": "T_S",
+        "new_clamp_px": [
+          790.8992113360995,
+          463.2327915323389
+        ],
+        "transverse_residual_px": 9.121179800265833e-16,
+        "station_slide_px": 65.36426911754553,
+        "within_same_finite_shaft": true,
+        "angle_vs_native_deg": -0.7771859399774386,
+        "estimated_edge_difference_over_36px_grip": 0.2441526766690352,
+        "ends_px": [
+          [
+            594.1750975290796,
+            410.8780777782769
+          ],
+          [
+            823.697824683186,
+            471.961574090238
+          ]
+        ]
+      }
+    ]
+  },
+  "body_diagnosis": "Native complete arms/palms survive one whole-body registration; no duplicated hands or wrist transplant. Far support differs from the old fixed-foot target and needs director judgment; this diagnostic does not force it to match.",
+  "head_neck_gap": "Original complete head/neck retained, still right profile. Required curtain-facing intermediate head direction is NOT passed; any later correction must redraw the complete head/neck only after body decision.",
+  "next_generation_authorized_here": false,
+  "actual_rigid_pair_trial": {
+    "file": "F039_registered_rigid_pair_trial.png",
+    "native_human_one_transform_unchanged": true,
+    "native_external_prop_pixels_removed_only": 1729,
+    "old_palms_pasted": false,
+    "per_hand_transform": false,
+    "G_plate": "original039 raw; fixed in place, complete open bareR included",
+    "not_a_final_scene_puppet_registration": true
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "turtle": {
+    "root": [
+      0.8653724653632375,
+      0.658956084904454
+    ],
+    "pose": {
+      "angles": {
+        "legFN": -0.2057248383023654,
+        "legBF": -0.2057248383023654,
+        "legFF": 0.20572483830236535,
+        "legBN": 0.20572483830236535,
+        "tail": 0.14265847744427304,
+        "neck0": -0.5100000000000001,
+        "neck1": 1.11,
+        "neck2": -0.76,
+        "head": -0.02938926261462363
+      },
+      "rootAngle": 0.16757298251970804,
+      "facing": -1
+    }
+  },
+  "rods": [
+    {
+      "id": "T_H",
+      "part": "head",
+      "at": [
+        20,
+        0
+      ],
+      "A_world": [
+        0.5637954672667189,
+        0.0040000000000000036,
+        0.7208350273301765
+      ],
+      "end_world": [
+        1.3076849225181655,
+        0.6738582690012899,
+        0.8035714764150022
+      ],
+      "A_master": [
+        735.8064729873736,
+        404.6660634234956
+      ],
+      "end_master": [
+        846.7896703089425,
+        447.7887286624751
+      ],
+      "length_m": 1.004453554023711
+    },
+    {
+      "id": "T_S",
+      "part": "shell",
+      "at": [
+        0,
+        40
+      ],
+      "A_world": [
+        0.8722258026471708,
+        0.0040000000000000036,
+        0.6984213126561105
+      ],
+      "end_world": [
+        1.334424691771181,
+        0.6442420692915818,
+        0.7624360561728734
+      ],
+      "A_master": [
+        668.5491447773053,
+        430.67144158473843
+      ],
+      "end_master": [
+        823.697824683186,
+        471.961574090238
+      ],
+      "length_m": 0.7922345661391913
+    }
+  ],
+  "nativeAxisResidualMasterPx": [
+    -1.4855758204495054e-09,
+    -1.6007008043302418e-09,
+    1.8894752429332584e-10
+  ],
+  "registrationRationale": "Original1.3 turtle, unchanged internal pose; whole root/rotation registered to the two actual adopted finite axes.039 uses its rigid-pair reference;042+ binds shell to its visible finite front. No source input palm target or world-length historical-freeze claim.",
+  "originalTurtleScale": 1.3
+}

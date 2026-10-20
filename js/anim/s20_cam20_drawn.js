@@ -23,10 +23,19 @@ function frozenGeometry(){const g=frozen.geometry,cam=camera(1920,1080,g.camera)
 async function renderState(ctx,t,W,H,row,closure){
  await getSequenceInfo();const g=frozenGeometry(),reg=frozen.registration.pair_registration;
  if(W!==1920||H!==1080)throw Error('S20 adopted CAM20 adapter currently requires1920x1080');
- let people,child,rods=g.rods;
- if(closure){if(!sequence.closure.child)throw Error(sequence.closure.childMissingReason);if(!sequence.closure.scene)throw Error(sequence.closure.sceneMissingReason);throw Error('Actual132 scene source must be bound before closure rendering; frozen000 props are not a substitute');}
- else people=await image(row.people);
- const C=propCard(crane,g.C.pose,2400,2400,1200,1300),T=propCard(turtle,g.T.pose,1600,1400,800,700),cm=sheetMatrix(g.cam,g.C.root,1200,1300),tm=sheetMatrix(g.cam,g.T.root,800,700);
+ let people,child,turtleRaster,rods=g.rods;
+ if(closure){
+  if(!sequence.closure.child)throw Error(sequence.closure.childMissingReason);
+  if(!sequence.closure.scene)throw Error(sequence.closure.sceneMissingReason);
+  const scene=await json(sequence.closure.scene);g.T.root=scene.turtle.root_effective_world_xz;g.T.pose=scene.turtle.pose;
+  const role=sequence.closure.roleAssets[closure],Cprops=await json(role.rodMapping);
+  people=await image(role.people);child=await image(sequence.closure.child);turtleRaster=await image(sequence.closure.turtleRaster);
+  rods=[...scene.finite_T_rods.map(r=>({...r,end_world:r.B_world,part:r.source_original_binding.part,at:r.source_original_binding.at})),...(Cprops.rods||Cprops.finite_C_rods.map(r=>({...r,end_world:r.physical_end_world})))];
+ }else{
+  people=await image(row.people);
+  if(row.geometry){const scene=await json(row.geometry);g.T.root=scene.turtle.root;g.T.pose=scene.turtle.pose;rods=[...rods.filter(r=>r.id.startsWith('C')), ...scene.rods];}
+ }
+ const C=propCard(crane,g.C.pose,2400,2400,1200,1300),T=turtleRaster||propCard(turtle,g.T.pose,1600,1400,800,700),cm=sheetMatrix(g.cam,g.C.root,1200,1300),tm=turtleRaster?{m:[1,0,0,1,0,0]}:sheetMatrix(g.cam,g.T.root,800,700);
  const previous={occ:S.occ,back:S.occBack};S.occ=[];S.occBack=[];
  const actor=(p,ids)=>({pup:p.pup,pose:p.pose,root:p.root,dist:.004,rods:rods.filter(r=>ids.includes(r.id)).map(r=>({part:r.part|| (r.id==='C_B'?'body':r.id==='C_N'?'neck3':r.id==='T_H'?'head':'shell'),at:r.at||(r.id==='C_B'?[-75,6]:r.id==='C_N'?[10,0]:r.id==='T_H'?[20,0]:[0,40]),hand:[r.end_world[0],r.end_world[2],r.end_world[1]]}))});
  const shot={cam:frozen.geometry.camera,exp:.26,fog:.5,sheet:()=>[actor(g.T,['T_H','T_S']),actor(g.C,['C_B','C_N'])],cards:async cards=>{

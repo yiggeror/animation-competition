@@ -5,7 +5,7 @@
   "availableThrough": 215,
   "duration": 9,
   "clipDuration": 3,
-  "status": "FOUR_ADOPTED_LAUGH_ACTIONS_ACTUAL_READY",
+  "status": "NINE_STATE_ACTUAL_SPEED_REVIEW_PENDING",
   "adoptionCommit": "7c2f44cbf221873adb243c1178f9c914c765265a",
   "crop": [
     0,
@@ -65,16 +65,85 @@
     {
       "key": 156,
       "start": 156,
-      "end": 179,
+      "end": 167,
       "alb": "F156_native.png",
       "nrm": "F156_n.png",
       "mat": "F156_m.png",
       "cameraStateIndex": 1
     },
     {
+      "key": 168,
+      "alb": "F168_native.png",
+      "nrm": "F168_n.png",
+      "mat": "F168_m.png",
+      "rodSourceIndex": 0,
+      "sourceCamera": {
+        "pos": [
+          2.55,
+          1.7,
+          1.2
+        ],
+        "target": [
+          1.2,
+          1.15,
+          1.003125
+        ],
+        "hfov": 41.375
+      },
+      "canonicalCamera": 162,
+      "start": 168,
+      "end": 175
+    },
+    {
+      "key": 176,
+      "alb": "F176_native.png",
+      "nrm": "F176_n.png",
+      "mat": "F176_m.png",
+      "rodSourceIndex": 0,
+      "sourceCamera": {
+        "pos": [
+          2.55,
+          1.7,
+          1.2
+        ],
+        "target": [
+          1.2,
+          1.15,
+          1.003125
+        ],
+        "hfov": 41.375
+      },
+      "canonicalCamera": 162,
+      "start": 176,
+      "end": 183
+    },
+    {
+      "key": 184,
+      "alb": "F184_native.png",
+      "nrm": "F184_n.png",
+      "mat": "F184_m.png",
+      "rodSourceIndex": 0,
+      "sourceCamera": {
+        "pos": [
+          2.55,
+          1.7,
+          1.2
+        ],
+        "target": [
+          1.2,
+          1.15,
+          1.003125
+        ],
+        "hfov": 41.375
+      },
+      "canonicalCamera": 162,
+      "start": 184,
+      "end": 191
+    },
+    {
       "key": 192,
-      "start": 180,
-      "end": 215,
+      "start": 192,
+      "end": 199,
       "alb": "F192_native.png",
       "nrm": "F192_n.png",
       "mat": "F192_m.png",
@@ -109,10 +178,58 @@
           1
         ]
       ],
-      "exposureReason": "Recovery begins180 per frozen beat plan; drawing name192 is its calibrated source camera, not a mandatory first exposure."
+      "exposureReason": "Original192 recovery exposed192–199 under the new nine-state candidate."
+    },
+    {
+      "key": 200,
+      "alb": "F200_native.png",
+      "nrm": "F200_n.png",
+      "mat": "F200_m.png",
+      "rodSourceIndex": 0,
+      "sourceCamera": {
+        "pos": [
+          2.55,
+          1.7,
+          1.2
+        ],
+        "target": [
+          1.2,
+          1.15,
+          1.003125
+        ],
+        "hfov": 41.375
+      },
+      "canonicalCamera": 162,
+      "start": 200,
+      "end": 207
+    },
+    {
+      "key": 208,
+      "alb": "F208_native.png",
+      "nrm": "F208_n.png",
+      "mat": "F208_m.png",
+      "rodSourceIndex": 0,
+      "sourceCamera": {
+        "pos": [
+          2.55,
+          1.7,
+          1.2
+        ],
+        "target": [
+          1.2,
+          1.15,
+          1.003125
+        ],
+        "hfov": 41.375
+      },
+      "canonicalCamera": 162,
+      "start": 208,
+      "end": 215
     }
   ],
-  "missingAction": "Four accepted whole actions are bound without body interpolation. This is the minimum actual laugh timing; transition132–143 and front exposure gaps remain separate.",
+  "missingAction": "Nine distinct whole drawings; candidate timing must be judged from actual original-speed playback, especially156→168→176→184→192 and recovery200/208. Failed162 excluded.",
   "additionalAdoptionCommit": "dd1f0f50e94584c2518492dc156e14dae173e587",
-  "minimumFourActionExposure": true
+  "minimumFourActionExposure": false,
+  "userFeedback": "Long peak156–179 and recovery180–215 holds rejected; keep preview, await new whole action drawings.144–149 and150–155 retained. No looping or camera motion as substitute.",
+  "continuousAdoptionCommit": "ec7248f12ce8a2a6c2ea9db15caba830b9389fc8"
 }

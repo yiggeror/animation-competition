@@ -1,0 +1,175 @@
+{
+  "status": "EXISTING132_CHARACTER_AND_PROP_CONSUMER_MAPPING_NOT_SCENE_PASS",
+  "character_canvas": [
+    1672,
+    941
+  ],
+  "character": "CHILD132_COMPLETE_FINAL_RGBA_CANDIDATE.png",
+  "character_sha256": "23b9fe1491ae66e8e0a416e225a99d22821731fed9937b7a9a6b1caee8a05e74",
+  "character_source_sha256": "e60da27e4f7caed1fc4cb8434e1245a7a8fab2e9a3551d63d247a39119aba696",
+  "master_to_original_CAM20": [
+    1.5356339213808416,
+    0,
+    -1.1368683772161603e-15,
+    1.5356339213808399,
+    -55.29501789280528,
+    -18.803172678195892
+  ],
+  "camera": {
+    "pos": [
+      3.05,
+      1.5,
+      1.18
+    ],
+    "target": [
+      1.5,
+      0.42,
+      0.95
+    ],
+    "hfov": 58
+  },
+  "camera_canvas": [
+    1920,
+    1080
+  ],
+  "people_billboard_registration": {
+    "base_world_m": [
+      1.13,
+      1.1,
+      0
+    ],
+    "ox": 1110,
+    "oy": 920,
+    "pixels_per_cm": 5.833333333333333,
+    "uniform_scale_only": true,
+    "mirrored": false,
+    "individual_body_warp": false,
+    "note": "Original grandmother F000 stage slot; one whole-pair billboard preserves approved relative proportions."
+  },
+  "turtle": {
+    "raster": "TURTLE132_ORIGINAL_CAM20_RGBA.png",
+    "sha256": "ee1410283170afb4c8e94b4e5d18fcfb263b626e289092ff9bfbba9c95063846",
+    "canvas": [
+      1920,
+      1080
+    ],
+    "raster_space": "Already original CAM20; do not apply people matrix again",
+    "root_effective_world_xz": [
+      1.8008993525391996,
+      0.7766813283552342
+    ],
+    "pose": {
+      "angles": {
+        "legFN": -0.3328697807033061,
+        "legBF": -0.3328697807033061,
+        "legFF": 0.33286978070330725,
+        "legBN": 0.33286978070330725,
+        "tail": 0.08816778784387229,
+        "neck0": -0.5100000000000001,
+        "neck1": 1.11,
+        "neck2": -0.76,
+        "head": -0.04755282581475802
+      },
+      "rootAngle": 3.2962696219050174,
+      "facing": -1
+    },
+    "scale": 1.3,
+    "source_material": "Original turtle, no new generation",
+    "original_material": "unmodified makeTurtle(1.3), drawPuppet r"
+  },
+  "finite_T_rods": [
+    {
+      "id": "T_H",
+      "A_world": [
+        2.0529216477416017,
+        0.0040000000000000036,
+        0.7291170343740162
+      ],
+      "B_world": [
+        1.8981752802441456,
+        0.10297987303988178,
+        0.847699938033434
+      ],
+      "A_master": [
+        228.97285474192648,
+        525.1833562948415
+      ],
+      "B_master": [
+        350.5719911379891,
+        439.750986135089
+      ],
+      "rod_length_m": 0.2186443654909671,
+      "original_length_m": 0.21864436547698668,
+      "length_error_m": 1.3980427926441052e-11,
+      "world_y_behind_screen": 0.10297987303988178,
+      "registration_error_master_px": 0.0,
+      "status": "offline mathematical check; not actual Canvas depth/occlusion pass",
+      "holder": "X.R",
+      "A_CAM20": [
+        296.3234649243045,
+        787.6862041928023
+      ],
+      "B_CAM20": [
+        483.0552235847141,
+        656.4933585915222
+      ],
+      "width_screen_CAM20": 6.27050517897176,
+      "source_original_binding": {
+        "part": "head",
+        "at": [
+          20,
+          0
+        ],
+        "holder": "X.R"
+      }
+    },
+    {
+      "id": "T_S",
+      "A_world": [
+        1.7944292395410502,
+        0.0040000000000000036,
+        0.7366980692153716
+      ],
+      "B_world": [
+        1.8096724802776978,
+        0.2585514922376007,
+        0.7408979144685948
+      ],
+      "A_master": [
+        362.60039386678403,
+        488.19729524289977
+      ],
+      "B_master": [
+        463.7042260076218,
+        508.78861467051286
+      ],
+      "rod_length_m": 0.25504206964478565,
+      "original_length_m": 0.25504206964477605,
+      "length_error_m": 9.603429163007604e-15,
+      "world_y_behind_screen": 0.2585514922376007,
+      "registration_error_master_px": 5.684341886080802e-14,
+      "status": "offline mathematical check; not actual Canvas depth/occlusion pass",
+      "holder": "X.L",
+      "A_CAM20": [
+        501.5264468350814,
+        730.8891542231779
+      ],
+      "B_CAM20": [
+        656.7849210521465,
+        762.5098828222089
+      ],
+      "width_screen_CAM20": 6.270505178971762,
+      "source_original_binding": {
+        "part": "shell",
+        "at": [
+          0,
+          40
+        ],
+        "holder": "X.L"
+      }
+    }
+  ],
+  "depth_scope": "Finite A/B exact; continuous arm-depth proposal. Rod palm and scene depth/occlusion still actual integration gate. No extension beyond B.",
+  "known_gap": "Inherited child thigh seam at approx CAM20 y1036 may remain visible. Check actual foreground occlusion. No new action counted.",
+  "grandma_entering_status": "Separate candidate not delivered here; closure and release already public in20261020_s20_closure_handoff."
+}

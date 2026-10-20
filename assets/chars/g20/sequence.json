@@ -6,7 +6,11 @@
   "availableIntervals": [
     [
       0,
-      35
+      57
+    ],
+    [
+      132,
+      143
     ]
   ],
   "states": [
@@ -165,6 +169,54 @@
         "C_B_owner": "G.L",
         "C_N_owner": "G.L"
       }
+    },
+    {
+      "key": 36,
+      "start": 36,
+      "end": 38,
+      "people": "F036_people.png",
+      "geometry": "F036_geometry.json",
+      "stage": "turn_and_crane_handoff"
+    },
+    {
+      "key": 39,
+      "start": 39,
+      "end": 41,
+      "people": "F039_people.png",
+      "geometry": "F039_geometry.json",
+      "stage": "turn_and_crane_handoff"
+    },
+    {
+      "key": 42,
+      "start": 42,
+      "end": 44,
+      "people": "F042_people.png",
+      "geometry": "F042_geometry.json",
+      "stage": "turn_and_crane_handoff"
+    },
+    {
+      "key": 45,
+      "start": 45,
+      "end": 46,
+      "people": "F045_people.png",
+      "geometry": "F045_geometry.json",
+      "stage": "turn_and_crane_handoff"
+    },
+    {
+      "key": 47,
+      "start": 47,
+      "end": 53,
+      "people": "F047_people.png",
+      "geometry": "F047_geometry.json",
+      "stage": "turn_and_crane_handoff"
+    },
+    {
+      "key": 54,
+      "start": 54,
+      "end": 57,
+      "people": "F054_people.png",
+      "geometry": "F054_geometry.json",
+      "stage": "turn_and_crane_handoff"
     }
   ],
   "singleStateOnlyKeys": [
@@ -184,15 +236,20 @@
     120,
     128
   ],
-  "missingExposure": "058–131 have adopted labelled poses but no public final hold assignments;036–057 has explicit exposure but is pending per-state turtle/finite-prop registration consumption.",
+  "missingExposure": "058–131 new candidate package received; actual native shaft measurements and original-scene consumption still pending.",
   "closure": {
     "adoptionCommit": "4d716425b17bf95148a0fe89162453771cb4288d",
     "keyRole": "RsecureBeforeLwithdrawal",
     "timingFrozen": false,
-    "child": null,
-    "childMissingReason": "Public closure package includes grandma alpha and132 head mask, but not actual132 child RGBA or its final turtle rod mapping.",
+    "child": "child132_CHARACTER_seam_fixed.png",
+    "childMissingReason": null,
     "releaseAdoptionCommit": "e07baa0a0b3c018ff70052fb46774eb9e9c8c7e5",
     "exposures": [
+      {
+        "role": "entering",
+        "start": 132,
+        "end": 135
+      },
       {
         "role": "closed",
         "start": 136,
@@ -204,10 +261,27 @@
         "end": 143
       }
     ],
-    "incoming132_135": "Not adopted yet; do not backfill with the closed picture.",
-    "exposureChoice": "Four frames closed then four frames complete-L-withdrawal near the original144 cut; conditional on actual132 child/mapping source, not full132–143 continuity.",
-    "scene": null,
-    "sceneMissingReason": "Actual132 turtle root/pose, effective A_world and finite T rods must be supplied with child RGBA; frozen000 mechanism cannot stand in."
+    "incoming132_135": "Adopted entering alpha d14613b2 now bound132–135 with actual132 child; not128 and not closed.",
+    "exposureChoice": "Three short4-frame stages: enter132–135, secure136–139, release140–143. Actual native drawings, not a long closed hold.",
+    "scene": "child132_CONSUMER_MAPPING.json",
+    "sceneMissingReason": null,
+    "turtleRaster": "child132_TURTLE_ORIGINAL_CAM20.png",
+    "childAdoptionCommit": "f647cacadb3e5ef8ef6737063b1799ac87d434a4",
+    "enteringAdoptionCommit": "d14613b249138d300c53e7cfa9a3aa490dc8ff96",
+    "roleAssets": {
+      "entering": {
+        "people": "entering_CHARACTER_ALPHA.png",
+        "rodMapping": "entering_CONSUMER_MAPPING.json"
+      },
+      "closed": {
+        "people": "closure_CHARACTER_ALPHA.png",
+        "rodMapping": "closure_CHARACTER_AND_RODS.json"
+      },
+      "release": {
+        "people": "closure_L_RELEASE_CHARACTER_ALPHA.png",
+        "rodMapping": "closure_CHARACTER_AND_RODS.json"
+      }
+    }
   },
   "laugh": {
     "module": "js/anim/s20_laugh_drawn.js",
@@ -215,39 +289,40 @@
       144,
       215
     ],
-    "fourAdoptedActions": [
+    "status": "NINE_STATE_CANDIDATE_AWAITING_ACTUAL_SPEED_REVIEW",
+    "adoptedActions": [
       144,
       150,
       156,
-      192
+      168,
+      176,
+      184,
+      192,
+      200,
+      208
     ],
-    "newSource192UsedFrom": 180,
     "oldPixelRangesReused": [
       [
         144,
-        149
+        167
       ],
       [
-        156,
-        179
+        192,
+        199
       ]
     ],
     "newBrowserRanges": [
       [
-        150,
-        155
+        168,
+        191
       ],
       [
-        180,
+        200,
         215
       ]
-    ]
+    ],
+    "failed162Excluded": true
   },
-  "publicExposureIntervalsNotYetIntegrated": [
-    [
-      36,
-      57
-    ]
-  ],
+  "publicExposureIntervalsNotYetIntegrated": [],
   "engineeringGuideCleanup": "Only explicit T-shaft corridors and non-skin brown wood; protected native palms/arms/body unchanged. Real finite code props supply shafts."
 }
