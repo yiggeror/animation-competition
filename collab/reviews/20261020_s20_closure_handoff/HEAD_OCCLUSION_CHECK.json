@@ -1,0 +1,36 @@
+{
+  "status": "ACTUAL_PAINTED132_HEAD_MASK_FINITE_PROJECTION_NOT_CAM",
+  "rows": [
+    {
+      "rod": "CB_physical_end",
+      "head_overlap_samples": 1222,
+      "min_head_plane_margin_m": 0.012098653196024545,
+      "physical_length_m": 1.0555632463099818,
+      "screen_A": [
+        313.37876206162196,
+        162.7807018292012
+      ],
+      "screen_physical_end": [
+        875.4709293753181,
+        320.13183117174725
+      ]
+    },
+    {
+      "rod": "CN_physical_end",
+      "head_overlap_samples": 1528,
+      "min_head_plane_margin_m": 0.15948834765694442,
+      "physical_length_m": 0.8785238269146012,
+      "screen_A": [
+        462.52569133611587,
+        169.57346031153037
+      ],
+      "screen_physical_end": [
+        902.3563408420877,
+        325.51407124543863
+      ]
+    }
+  ],
+  "mask": "actual132 chromatic painted head inside explicit semantic polygon, holes filled and dilated3px; not old128 mask",
+  "head_depth": "original people camera-facing plane only, no invented depth offset",
+  "limits": "master registration space; no full stage lighting/actualCAM; grandmother baseline pixels still old unleaned pose; colored centerlines indicate proposed complete arms. Palm anatomy and intermediate elbow paths pending."
+}
