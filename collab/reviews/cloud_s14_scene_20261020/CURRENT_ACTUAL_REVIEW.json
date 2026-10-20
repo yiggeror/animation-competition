@@ -1,69 +1,25 @@
 {
-  "status": "ADOPT_CURRENT_SILENT240_FRAME_FILM_THREE_POINT_CLOSEOUT_COMPLETE",
-  "currentMainFilm": "assembled/S14_FULL240_10S_BACKSTAGE_CANDIDATE.mp4",
-  "sha256": "5b2ed3ff18dc785899724d838cb3741253947e29beb9277b23d92071772f33b7",
-  "library_file_id": "libfile_9ded824b9b088191adb710bbf1fba641",
-  "candidateRanges": [
-    [
-      0,
-      239
-    ]
+  "status": "REJECTED_BY_USER_REPAIR_IN_PROGRESS",
+  "rejectedFilmSHA256": "5b2ed3ff18dc785899724d838cb3741253947e29beb9277b23d92071772f33b7",
+  "priorVisualPassWithdrawn": true,
+  "confirmedProblems": [
+    "Grandma body-size growth in original drawings, clear81onward.",
+    "Child147→156 size jump and missing upright gait-to-sit action.",
+    "Independent downward head/torso poses162/168 plus seated183/189 nods."
   ],
-  "frameCount": 240,
-  "fps": 24,
-  "durationSeconds": 10,
-  "width": 1920,
-  "height": 1080,
-  "audioStreams": 0,
-  "newGenerationCalls": 0,
-  "newDrawings": 0,
-  "preservedOriginalThreeSegmentFrames": 120,
-  "preservedPrefixFrames": 132,
-  "newRenderedReturnFrames": 108,
-  "fullDecodedSequenceExactlyMatchesSourceChunks": true,
-  "actualPlayback": {
-    "newSceneRenders": 0,
-    "clips": [
-      {
-        "file": "assembled/S14_FULL240_10S_BACKSTAGE_CANDIDATE.mp4",
-        "ended": true,
-        "duration": 10,
-        "width": 1920,
-        "height": 1080,
-        "totalVideoFrames": 240,
-        "droppedVideoFrames": 0,
-        "corruptedVideoFrames": 0,
-        "mediaError": null
-      }
-    ]
-  },
-  "backstageOcclusion": {
-    "visibleHeadAndRaisedArmsPixelsInOriginalRoom": 0,
-    "maximumVisibleUpperAlpha": 0,
-    "conservativeNativeUpperCutY": 550,
-    "wholeFigureTransform": {
-      "sc": 0.335,
-      "x": 466.45,
-      "y": 227.26,
-      "sourceShoeBase": 1024,
-      "roomFloor": 570.3
-    },
-    "occlusion": "Original fixed cloth contour only; opaque material mask, no contour expansion; original clothRGBA used in visible composite."
-  },
-  "actualVisualScope": [
-    "Final encoded095/096 and131/132 cut board.",
-    "Actual132/138/144/150/156/168/180/197/208/239 scene keys and1:1 support board.",
-    "Original uncovered/initial exposed fingertip and corrected occlusion study."
-  ],
-  "remainingReview": [],
-  "notPerformed": [
-    "No new image generation or extra agent.",
-    "No S15/S29/S31 edits or rendering.",
-    "No audio/EDL/ready change.",
-    "No final director approval claim."
-  ],
-  "completedFinalThreePointReview": "final_three_point_review/FINAL_THREE_POINT_REVIEW.json",
-  "necessaryAdditionalDrawingRequests": [],
-  "visibleS14S15Continuity": "PASS_CURRENT_PRODUCTION_FIRST_FRAME_COMPARISON_NO_3D_EQUALITY_REQUIREMENT",
-  "adoption": "Adopt current silent240-frame movie unchanged; no further drawing needed in the requested scope."
+  "implemented": "000–017 complete person+held sheet uniform registration candidate rendered18frames, stool fixed.180–196 temporary existing uprightX186 exposure removes nod. Neither is a repaired whole-film acceptance.",
+  "externalArtRequest": "Original author producing THREE adjacent stand/hip-descent/seat-contact poses from147 whole-person mother; do not uniformly shrink long-bodied156 or regenerate here.",
+  "storage": "Workspace full; new references/render output in /tmp/s14_user_repair_20261020; original film retained.",
+  "grandmaCandidate": {
+    "status": "GRANDMA_EARLY_WHOLE_PERSON_REGISTRATION_CANDIDATE_NOT_FINAL_PASS",
+    "file": "/tmp/s14_user_repair_20261020/S14_GRANDMA_REGISTRATION_000_095_4S_CANDIDATE.mp4",
+    "sha256": "fed8e1211566985baf513a6f3bfd844bf17f11e13c1a0ee848decba800f4d84f",
+    "frames": 96,
+    "fps": 24,
+    "seconds": 4,
+    "newSceneRenderFrames": 18,
+    "unchangedCopiedFrames": 78,
+    "oldMovieRetained": true,
+    "reviewLimitation": "Only the early complete-person stature correction is rendered. Later original source width/head-body inconsistencies are still under actual sequence review, not silently certified."
+  }
 }
