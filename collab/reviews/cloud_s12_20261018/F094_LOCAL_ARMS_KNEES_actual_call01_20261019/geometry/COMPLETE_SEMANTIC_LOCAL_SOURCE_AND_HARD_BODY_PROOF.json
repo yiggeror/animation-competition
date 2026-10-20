@@ -1,0 +1,132 @@
+{
+  "status": "AUTHOR_NORMAL_CAMERA_PASS_LOCAL094_ASTRA_FINAL_GATE_PENDING",
+  "raw_SHA256": "fcb4d4b52f259c7b5fc9ee63473203fa4b70778a4edb19a756ac7f5389c21f74",
+  "body_base_SHA256": "f226da50ffb1d87d1869dd9a6d0fba026539930e3c3de10de16ba8abe9efdd8e",
+  "native_SHA256": "63fb22a00e9a3521d5e1d6b2f3c116ad1f0e78baa7993f7fa39626daea7bc417",
+  "source_alignment": {
+    "source_head_alpha_bbox": [
+      399,
+      85,
+      727,
+      389
+    ],
+    "fixed_body_head_alpha_bbox": [
+      399,
+      86,
+      726,
+      389
+    ],
+    "bbox_deltas": [
+      0,
+      -1,
+      1,
+      0
+    ],
+    "decision": "Native1024 frame visually/body-contour aligned; retain identity. No source similarity regression required. Fixed real body never transformed.",
+    "source_coordinate_matrix": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "nonidentity_source_regressions": 0,
+    "new_fixed_body_registrations": 0
+  },
+  "allowed_union_SHA256": "3eb8dbac7804a783b3d673ad01f915dce7bbd4787da489f50beb153d0d31a4fd",
+  "protected_domain_SHA256": "a9e39783b00b13185788690bdc067a404fa5c4c27d2499db9b377449b274925d",
+  "adopted_new_source_RGBA_differences": 0,
+  "protected_body_RGBA_changes": 0,
+  "whole_original_collar_chest_RGBA_changes": 0,
+  "head_neck_RGBA_changes": 0,
+  "waist_hips_main_pants_RGBA_changes": 0,
+  "actual_shin_ankle_shoe_neighbor_air_RGBA_changes": 0,
+  "sparse_patch_composition": false,
+  "garment_color_thresholds": false,
+  "pre_motion_arm_subtraction": false,
+  "source_alpha_preserved_complete_RGBA": true,
+  "technical_reference_pixels_adopted": 0,
+  "new_imagegen_calls_this_task": 1,
+  "local_raw_count": 1,
+  "actual_local094_Canvas": 1,
+  "new098_calls": 0,
+  "new_internal_low_alpha_components_for_review": [],
+  "actual_raw_front_digit_polygons": {
+    "L_far_jade_actual_front_curled_digits": [
+      [
+        882,
+        582
+      ],
+      [
+        904,
+        582
+      ],
+      [
+        919,
+        596
+      ],
+      [
+        920,
+        620
+      ],
+      [
+        908,
+        642
+      ],
+      [
+        885,
+        643
+      ],
+      [
+        873,
+        626
+      ],
+      [
+        881,
+        608
+      ]
+    ],
+    "R_near_bare_actual_front_curled_digits": [
+      [
+        914,
+        741
+      ],
+      [
+        936,
+        732
+      ],
+      [
+        951,
+        744
+      ],
+      [
+        953,
+        770
+      ],
+      [
+        941,
+        793
+      ],
+      [
+        920,
+        800
+      ],
+      [
+        908,
+        786
+      ],
+      [
+        915,
+        769
+      ]
+    ]
+  },
+  "BG_FG_reconstruction_differences": 0,
+  "BG_FG_overlap": 0,
+  "actual_Canvas_SHA256": "12bf5d70b7d38785132f41bba5e0996da6737a446e98d45d69f6900fdd77f26d"
+}

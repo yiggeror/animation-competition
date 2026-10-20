@@ -1,0 +1,48 @@
+{
+  "raw_original": {
+    "path": "collab/reviews/cloud_s12_20261018/F094_LOCAL_ARMS_KNEES_actual_call01_20261019/originals/F094_local_arms_knees_call01_raw.png",
+    "SHA256": "fcb4d4b52f259c7b5fc9ee63473203fa4b70778a4edb19a756ac7f5389c21f74",
+    "tool_output_original": "/workspace/generated_images/exec-4fe58b4e-34f3-4fbe-b7cc-072ef0bfcff7.png"
+  },
+  "hard_body_base": {
+    "path": "collab/reviews/cloud_s12_20261018/F094_LOCAL_REPAIR_INPUT_FROM_BODY_ONLY_DIAGNOSTIC_20261019/body_diagnostic/BODY_DIAGNOSTIC_NATIVE_WITH_FAILED_ARMS_VISIBLE.png",
+    "SHA256": "f226da50ffb1d87d1869dd9a6d0fba026539930e3c3de10de16ba8abe9efdd8e"
+  },
+  "native_source_transform": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "adopted_union_mask": {
+    "path": "collab/reviews/cloud_s12_20261018/F094_LOCAL_REPAIR_INPUT_FROM_BODY_ONLY_DIAGNOSTIC_20261019/masks/ALLOW_UNION_LOCAL_REPAIR.png",
+    "SHA256": "3eb8dbac7804a783b3d673ad01f915dce7bbd4787da489f50beb153d0d31a4fd"
+  },
+  "hard_mask": {
+    "path": "collab/reviews/cloud_s12_20261018/F094_LOCAL_REPAIR_INPUT_FROM_BODY_ONLY_DIAGNOSTIC_20261019/masks/HARD_PROTECTED_BODY_COLLAR_WAIST_PANTS_SUPPORT.png",
+    "SHA256": "a9e39783b00b13185788690bdc067a404fa5c4c27d2499db9b377449b274925d"
+  },
+  "frozen_props": {
+    "path": "collab/reviews/cloud_s12_20261018/F094_COMPLETE_TARGET_FROM_LOCKED090_20261019/code_props/F094_TRUE_CRANE_AND_TWO_PHYSICALLY_RIGID_RODS_REFERENCE.png",
+    "SHA256": "5b9f80127467ec81bbfeef2ced2707cdcd556a953835fff7bfc71e4f0f53f855"
+  },
+  "prompt_SHA256": "ea3ed3d5f9ba373014f464c8773a78c355024dc497771e8dfd34888da8ab07c2",
+  "exact_input_SHA256": [
+    {
+      "path": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F094_LOCAL_REPAIR_INPUT_FROM_BODY_ONLY_DIAGNOSTIC_20261019/inputs/01_AUTHORITATIVE_CORRECT_LOCAL_ARMS_KNEES_BODY_LOCKED.png",
+      "SHA256": "0ce9283de62a8f41f595e2c2f3c083d5e4ee5ff43c2cf833d11f0e539c1f7d8e"
+    },
+    {
+      "path": "/workspace/animation-competition-s08-first14/collab/reviews/cloud_s12_20261018/F094_LOCAL_REPAIR_INPUT_FROM_BODY_ONLY_DIAGNOSTIC_20261019/inputs/02_SAME_CORRECT_LOCAL_POSE_TRUE65_RODS_BOX_GROUND.png",
+      "SHA256": "d2eb3ba78bdaee6da1b71c4bce7c05a52c557ca9f50130e447042d5f86071385"
+    }
+  ],
+  "complete_local_new_RGBA_equals_raw": true,
+  "protected_RGBA_equals_real_selected_body": true
+}
