@@ -1,0 +1,158 @@
+{
+  "root_scene": [
+    1291.1049355405019,
+    559.1690070167356
+  ],
+  "paper_plane_inclination_degrees": 70.0,
+  "projected_roll_degrees": -4.0,
+  "code_pose": {
+    "angles": {
+      "neck0": 0.75,
+      "neck1": 0.04000000000000001,
+      "neck2": 0.009999999999999998,
+      "neck3": -0.020000000000000004,
+      "neck4": -0.055,
+      "neck5": -0.08500000000000002,
+      "neck6": -0.115,
+      "neck7": -0.135,
+      "neck8": -0.14,
+      "neck9": -0.13,
+      "neck10": -0.10500000000000001,
+      "neck11": -0.07500000000000001,
+      "head": -0.55,
+      "tibia_near": 0.8900000000000001,
+      "tarsus_near": -1.4100000000000001,
+      "foot_near": 0.5650000000000001,
+      "tibia_far": 0.7500000000000002,
+      "tarsus_far": -1.2900000000000005,
+      "foot_far": 0.5400000000000001
+    },
+    "rootAngle": 0,
+    "facing": 1
+  },
+  "actual_makeCrane_scale": 1.35,
+  "paper_3D_camera_basis": [
+    [
+      0.9598191786680778,
+      -0.157214281020676
+    ],
+    [
+      -0.1210600027010961,
+      -0.9792637781958946
+    ],
+    [
+      0.2531632279912453,
+      0.12777371621993874
+    ]
+  ],
+  "mm_to_scene_scale": 0.72,
+  "rods": {
+    "R": {
+      "part": "BODY",
+      "joint_local_mm": [
+        -75.0,
+        6.0
+      ],
+      "hinge_scene": [
+        1238.5955341984163,
+        561.4758276407885
+      ],
+      "hinge_camera3D_scene_units": [
+        1238.5955341984163,
+        561.4758276407885,
+        -13.11883185745711
+      ],
+      "grip_scene": [
+        910.517878506216,
+        641.1461309574039
+      ],
+      "grip_camera3D_scene_units": [
+        910.517878506216,
+        641.1461309574039,
+        -168.93427333342092
+      ],
+      "free_scene": [
+        901.9335970717602,
+        643.2307359092264
+      ],
+      "free_camera3D_scene_units": [
+        901.9335970717602,
+        643.2307359092264,
+        -173.01124589847277
+      ],
+      "grip_fraction_from_hinge_unchanged": 0.9745017761505183,
+      "physical_length_H": 1.7747139807413974,
+      "physical_length_scene_units": 381.56350585940044,
+      "physical_length_camera3D_check": 381.5635058594005,
+      "projected_length_new_scene": 346.44642433694304,
+      "projected_angle_delta_degrees": 0.35245089263876
+    },
+    "L": {
+      "part": "NECK3",
+      "joint_local_mm": [
+        220.10816472142866,
+        124.88281348870629
+      ],
+      "hinge_scene": [
+        1429.0790223660492,
+        451.93255925197246
+      ],
+      "hinge_camera3D_scene_units": [
+        1429.0790223660492,
+        451.93255925197246,
+        51.60962495488256
+      ],
+      "grip_scene": [
+        879.8018309146197,
+        503.8404710428031
+      ],
+      "grip_camera3D_scene_units": [
+        879.8018309146197,
+        503.8404710428031,
+        16.725384430677337
+      ],
+      "free_scene": [
+        855.6864549301341,
+        506.1194275130283
+      ],
+      "free_camera3D_scene_units": [
+        855.6864549301341,
+        506.1194275130283,
+        15.193832439684414
+      ],
+      "grip_fraction_from_hinge_unchanged": 0.957942642869746,
+      "physical_length_H": 2.6841737678780118,
+      "physical_length_scene_units": 577.0973600937725,
+      "physical_length_camera3D_check": 577.0973600937726,
+      "projected_length_new_scene": 575.9472658869834,
+      "projected_angle_delta_degrees": 2.2986473743810256
+    }
+  },
+  "C110_terminal": {
+    "root_scene": [
+      1240,
+      550
+    ],
+    "paper_plane_inclination_degrees": 85
+  },
+  "legacy_frame114_not_used": true,
+  "old_code_human_points_used": false,
+  "rod_3D_rotation": [
+    [
+      0.998905956165902,
+      -0.04576267870267387,
+      -0.009626420634948602
+    ],
+    [
+      0.0447983235809559,
+      0.9954775908875007,
+      -0.08377037808888
+    ],
+    [
+      0.013416442919831297,
+      0.08324748211672103,
+      0.9964385860556613
+    ]
+  ],
+  "camera_depth_model_feasible_not_measured": true
+}

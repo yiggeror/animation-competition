@@ -1,0 +1,194 @@
+{
+  "status": "THREE_ACTUAL_DRAWINGS_APPROVED_REPAIR_ONLY_READY_FOR_EXISTING_TIMELINE_BINDING",
+  "assets": [
+    {
+      "frame_key": 141,
+      "asset": "adopted/F141_COMPLETE.png",
+      "size": [
+        1500,
+        1254
+      ],
+      "sha256": "1e6d5b9a794a169723b3a6462f81969d19eb5618917787a0706ea81155e3679d",
+      "approved_prepack_source_sha256": "23d68cc276672e2a97644d0ae40c06339afae293c48c3446a34f61f1407dce97",
+      "pack_only_fix": "Restore exact original RGBA in right torso x-shift>1000,600<=y<945 to remove semitransparent sleeve double-composite; no source overwrite or pose change.",
+      "original_source": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/drag_next_141_147_inputs/X141_arm_contact_repair/X141_complete_contact_repaired_candidate.png",
+      "original_sha256": "007ee2cd3d0ebc0db9d3ef70fe9e4011748d9ca78c505426a8086ce468508ddd",
+      "protected_domain_checks": {
+        "head_upper": {
+          "changed_rgba_pixels": 0,
+          "original_region_sha256": "4ed699b1f41c5b9890ddfea944241dc8abd742c61ee64b06d424001c4378e4e4",
+          "adopted_region_sha256": "4ed699b1f41c5b9890ddfea944241dc8abd742c61ee64b06d424001c4378e4e4"
+        },
+        "far_arm_right": {
+          "changed_rgba_pixels": 0,
+          "original_region_sha256": "73a1f37c390e2ccec3b338866aaba0416e253549e4378ae670f381afc5165929",
+          "adopted_region_sha256": "73a1f37c390e2ccec3b338866aaba0416e253549e4378ae670f381afc5165929"
+        },
+        "lower_legs_shoes": {
+          "changed_rgba_pixels": 0,
+          "original_region_sha256": "4f4c2ea2229250d6543a7e31700bfec0e62f8f4f9de5ee4330b4f9b07c11f985",
+          "adopted_region_sha256": "4f4c2ea2229250d6543a7e31700bfec0e62f8f4f9de5ee4330b4f9b07c11f985"
+        },
+        "right_torso": {
+          "changed_rgba_pixels": 0,
+          "original_region_sha256": "2da191bb5d3480f8b0a724887524a3443bf1b71d297cb5ed95e9589005feecfb",
+          "adopted_region_sha256": "2da191bb5d3480f8b0a724887524a3443bf1b71d297cb5ed95e9589005feecfb"
+        }
+      },
+      "guard_definitions": {
+        "coordinate_x": "source x minus frame-specific shift",
+        "shift": -52,
+        "head_upper": "y<600",
+        "far_arm_right": "x-shift>1015 and y<900",
+        "lower_legs_shoes": "y>945 and x-shift>800",
+        "right_torso": "x-shift>1000 and 600<=y<945"
+      },
+      "replacement_semantics": "Replace whole old character+stool component; never overlay onto old stool/old holding arm.",
+      "exposure": "Inherit existing approved exposure keyed by this frame. No timing change in this package.",
+      "new_action_count": 0,
+      "pack_vs_approved_source_change_pixels": 1171,
+      "pack_vs_approved_source_max_rgba_delta": [
+        0,
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "frame_key": 144,
+      "asset": "adopted/F144_COMPLETE.png",
+      "size": [
+        1500,
+        1254
+      ],
+      "sha256": "303a064b587b232efff7e3bf19159bd6c8c1254501998dbac144cd01ccdf8275",
+      "approved_prepack_source_sha256": "45ff724e36239fca62bc6f14966f3e6d9a25796bbce0c7628e07b9aac6727623",
+      "pack_only_fix": "Restore exact original RGBA in right torso x-shift>1000,600<=y<945 to remove semitransparent sleeve double-composite; no source overwrite or pose change.",
+      "original_source": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/drag_next_141_147_inputs/X144_lower_repair/output_registration_20261019/X144_complete_registered_candidate.png",
+      "original_sha256": "3ae9b3f8cd8ec14c7be62b919b23eea8706a5d4e6612ebea3c5fb29e131fdc8e",
+      "protected_domain_checks": {
+        "head_upper": {
+          "changed_rgba_pixels": 0,
+          "original_region_sha256": "3c9d01ebad5baa685332c6e9fbcb7fcac550606f4959259708b1bf2ff32942cd",
+          "adopted_region_sha256": "3c9d01ebad5baa685332c6e9fbcb7fcac550606f4959259708b1bf2ff32942cd"
+        },
+        "far_arm_right": {
+          "changed_rgba_pixels": 0,
+          "original_region_sha256": "c9ea0eb144b031331671ecadb6d643dd7d8ab72839ce1cc883aaa6546e932166",
+          "adopted_region_sha256": "c9ea0eb144b031331671ecadb6d643dd7d8ab72839ce1cc883aaa6546e932166"
+        },
+        "lower_legs_shoes": {
+          "changed_rgba_pixels": 0,
+          "original_region_sha256": "0914ccb23560f63c05bc03694b4fb8d3c493cbefb1f4c689996d98d1d109d037",
+          "adopted_region_sha256": "0914ccb23560f63c05bc03694b4fb8d3c493cbefb1f4c689996d98d1d109d037"
+        },
+        "right_torso": {
+          "changed_rgba_pixels": 0,
+          "original_region_sha256": "261127b011e61898b7bfee22d24b09c19bf39117045148a1a17103fad73376d0",
+          "adopted_region_sha256": "261127b011e61898b7bfee22d24b09c19bf39117045148a1a17103fad73376d0"
+        }
+      },
+      "guard_definitions": {
+        "coordinate_x": "source x minus frame-specific shift",
+        "shift": -26,
+        "head_upper": "y<600",
+        "far_arm_right": "x-shift>1015 and y<900",
+        "lower_legs_shoes": "y>945 and x-shift>800",
+        "right_torso": "x-shift>1000 and 600<=y<945"
+      },
+      "replacement_semantics": "Replace whole old character+stool component; never overlay onto old stool/old holding arm.",
+      "exposure": "Inherit existing approved exposure keyed by this frame. No timing change in this package.",
+      "new_action_count": 0,
+      "pack_vs_approved_source_change_pixels": 1171,
+      "pack_vs_approved_source_max_rgba_delta": [
+        0,
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "frame_key": 147,
+      "asset": "adopted/F147_COMPLETE.png",
+      "size": [
+        1500,
+        1254
+      ],
+      "sha256": "b35765a3a163a86622d58b9e41e4eb0e9fb71c9930179a32359380b81ac4e9f0",
+      "approved_prepack_source_sha256": "bd52ee65699be694d613b8b9de17498f6369e896f6b54552efdb45b988f4d7db",
+      "pack_only_fix": "Restore exact original RGBA in right torso x-shift>1000,600<=y<945 to remove semitransparent sleeve double-composite; no source overwrite or pose change.",
+      "original_source": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/drag_next_141_147_inputs/X144_lower_repair/output_registration_20261019/X147_from_locked144_inputs/X147_near_arm_zero_call/X147_complete_registered_edgeclean_candidate.png",
+      "original_sha256": "d5522eeceb23db62a045f1ddc6d65de28d1247769649c5bb06acaac9975b01b9",
+      "protected_domain_checks": {
+        "head_upper": {
+          "changed_rgba_pixels": 0,
+          "original_region_sha256": "4468145a4b8f86c539c9a08a7bfda9e9c90d0ba8c38d603291b2742024d89047",
+          "adopted_region_sha256": "4468145a4b8f86c539c9a08a7bfda9e9c90d0ba8c38d603291b2742024d89047"
+        },
+        "far_arm_right": {
+          "changed_rgba_pixels": 0,
+          "original_region_sha256": "c893287fc934ce2e1d69406d79635faaa6343f7c0c5351b3f3d6f5228433892d",
+          "adopted_region_sha256": "c893287fc934ce2e1d69406d79635faaa6343f7c0c5351b3f3d6f5228433892d"
+        },
+        "lower_legs_shoes": {
+          "changed_rgba_pixels": 0,
+          "original_region_sha256": "793cef647323751369122bfc92bde104adde01c0329409445880e7fe79f146f6",
+          "adopted_region_sha256": "793cef647323751369122bfc92bde104adde01c0329409445880e7fe79f146f6"
+        },
+        "right_torso": {
+          "changed_rgba_pixels": 0,
+          "original_region_sha256": "d474b4a48729bdc0739a60a58c15bb5b0e8794a8c311e01c74c9f59784ff4d16",
+          "adopted_region_sha256": "d474b4a48729bdc0739a60a58c15bb5b0e8794a8c311e01c74c9f59784ff4d16"
+        }
+      },
+      "guard_definitions": {
+        "coordinate_x": "source x minus frame-specific shift",
+        "shift": 0,
+        "head_upper": "y<600",
+        "far_arm_right": "x-shift>1015 and y<900",
+        "lower_legs_shoes": "y>945 and x-shift>800",
+        "right_torso": "x-shift>1000 and 600<=y<945"
+      },
+      "replacement_semantics": "Replace whole old character+stool component; never overlay onto old stool/old holding arm.",
+      "exposure": "Inherit existing approved exposure keyed by this frame. No timing change in this package.",
+      "new_action_count": 0,
+      "pack_vs_approved_source_change_pixels": 1193,
+      "pack_vs_approved_source_max_rgba_delta": [
+        14,
+        12,
+        10,
+        3
+      ]
+    }
+  ],
+  "locked168_unchanged_proof": {
+    "path": "/workspace/scratch/f060b5601755/s14_stage_setup_inputs_20261019_0756/recovery_20261020_lamp_close_gate/recovered_locked168/X168_complete_stool_closed_FINAL_CANDIDATE.png",
+    "sha256": "a2151404524c938ab7a4ce3dd2652ed71abae6f307c00767bf2da3278e2a1bb4",
+    "expected_sha256": "a2151404524c938ab7a4ce3dd2652ed71abae6f307c00767bf2da3278e2a1bb4",
+    "matches": true,
+    "fixed_whole_prop_sha256": "61ad1df8a79efae2e4af7b08aec2f289b57fc84ad8207a6b6b00f8e2e58b6da3"
+  },
+  "timing_policy": {
+    "frame_keys": [
+      141,
+      144,
+      147
+    ],
+    "do_not_change_existing_exposure": true,
+    "no_generated_inbetweens": [
+      150,
+      153,
+      156,
+      159,
+      162,
+      165
+    ],
+    "not_an_entire_S14_pass": true
+  },
+  "protected_scope_note": "Only explicitly measured masks are pixel-proof; actual three-state visual approval covers full appearance. Do not extrapolate exact mask counts to untested pixels.",
+  "counts": {
+    "new_different_action_drawings": 0,
+    "same_actions_repaired": 3,
+    "generation_calls_for_three": 1
+  }
+}

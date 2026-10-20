@@ -1,0 +1,148 @@
+{
+  "status": "EXISTING_LOCKED_G018_TO_G029_SOURCE_BINDING",
+  "fps": 24,
+  "range": [
+    18,
+    29
+  ],
+  "rows": [
+    {
+      "key": 18,
+      "start": 18,
+      "end": 20,
+      "exposure_count": 3,
+      "source": "s14_stage_setup_inputs_20261019_0756/grandma_fall_inputs/G018_rigid_stool_restored_candidate.png",
+      "remote": "collab/reviews/20261020_s14_cloud_handoff/s14_stage_setup_inputs_20261019_0756/grandma_fall_inputs/G018_rigid_stool_restored_candidate.png",
+      "sha256": "5f739f4a824fc3b2a9bb95acc4f3353c22bffaf2316177cf0e363353919dbbb6",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "adoption": "complete figure plus sheet plus fixed stool",
+      "raw_to_native_registration_already_baked": {
+        "whole": [
+          0.84,
+          128,
+          159.3
+        ]
+      },
+      "runtime_instruction": "Use complete locked component. Do not reapply raw registration or overlay another stool/sheet. Actual scene camera placement must retain original G000 shared world basis.",
+      "wire_y_native": 277,
+      "wire_layer": "behind peg/figure/sheet",
+      "scene_owned_pegs_x": [
+        616,
+        645
+      ],
+      "first_peg_owner": "scene"
+    },
+    {
+      "key": 21,
+      "start": 21,
+      "end": 23,
+      "exposure_count": 3,
+      "source": "s14_stage_setup_inputs_20261019_0756/grandma_fall_inputs/G021_rigid_stool_restored_candidate.png",
+      "remote": "collab/reviews/20261020_s14_cloud_handoff/s14_stage_setup_inputs_20261019_0756/grandma_fall_inputs/G021_rigid_stool_restored_candidate.png",
+      "sha256": "96f877939c0c1838d89e31110285df5e26a9b3a3eb052dca3b75dca220c9c936",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "adoption": "complete figure plus sheet plus fixed stool",
+      "raw_to_native_registration_already_baked": {
+        "person": [
+          0.84,
+          128,
+          159.3
+        ],
+        "whole_sheet": [
+          0.465,
+          642.5,
+          246.3
+        ]
+      },
+      "runtime_instruction": "Use complete locked component. Do not reapply raw registration or overlay another stool/sheet. Actual scene camera placement must retain original G000 shared world basis.",
+      "wire_y_native": 277,
+      "wire_layer": "behind peg/figure/sheet",
+      "scene_owned_pegs_x": [
+        616,
+        645
+      ],
+      "first_peg_owner": "scene"
+    },
+    {
+      "key": 24,
+      "start": 24,
+      "end": 26,
+      "exposure_count": 3,
+      "source": "s14_stage_setup_inputs_20261019_0756/grandma_fall_inputs/G024_rigid_stool_restored_candidate.png",
+      "remote": "collab/reviews/20261020_s14_cloud_handoff/s14_stage_setup_inputs_20261019_0756/grandma_fall_inputs/G024_rigid_stool_restored_candidate.png",
+      "sha256": "e3fd868a1603833aabc89e194dd58aa19c560539b7d736fb387fce9cc8ccb01b",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "adoption": "complete figure plus sheet plus fixed stool",
+      "raw_to_native_registration_already_baked": {
+        "whole": [
+          0.83,
+          128,
+          149.6
+        ]
+      },
+      "runtime_instruction": "Use complete locked component. Do not reapply raw registration or overlay another stool/sheet. Actual scene camera placement must retain original G000 shared world basis.",
+      "wire_y_native": 277,
+      "wire_layer": "behind peg/figure/sheet",
+      "scene_owned_pegs_x": [
+        616,
+        645
+      ],
+      "first_peg_owner": "scene"
+    },
+    {
+      "key": 27,
+      "start": 27,
+      "end": 29,
+      "exposure_count": 3,
+      "source": "s14_stage_setup_inputs_20261019_0756/grandma_fall_inputs/G027_rigid_stool_restored_candidate.png",
+      "remote": "collab/reviews/20261020_s14_cloud_handoff/s14_stage_setup_inputs_20261019_0756/grandma_fall_inputs/G027_rigid_stool_restored_candidate.png",
+      "sha256": "ec0cea6f0a1c8ab5b540a3577e6145df4a351724fc5ed62eed6a5a8c6c45d7e1",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "adoption": "complete figure plus sheet plus fixed stool",
+      "raw_to_native_registration_already_baked": {
+        "body": [
+          0.8,
+          148,
+          170.8
+        ],
+        "whole_sheet": [
+          0.4880952381,
+          486.8,
+          225.7499999995
+        ],
+        "note": "complete left arm similarity and whole sheet already assembled; rigid original stool restored afterward"
+      },
+      "runtime_instruction": "Use complete locked component. Do not reapply raw registration or overlay another stool/sheet. Actual scene camera placement must retain original G000 shared world basis.",
+      "wire_y_native": 277,
+      "wire_layer": "behind peg/figure/sheet",
+      "scene_owned_pegs_x": [
+        645
+      ],
+      "first_peg_owner": "G027 hand only"
+    }
+  ],
+  "approval_source": "grandma_fall_locked_018_027_20261019_1112_manifest.json",
+  "G027_resolution": "G027_complete_sheet_whole_registered.png is an intermediate sheet-only layer, NOT a later complete-frame replacement. assemble.py combines it with complete arm/body, then restore_stool.py creates the final locked G027_rigid_stool_restored_candidate.png (ec0cea6f...).",
+  "G027_final_contact": {
+    "peg_jaw": [
+      616,
+      277
+    ],
+    "sheet_fold_start_x": 726,
+    "clear_gap_px": 110,
+    "second_scene_peg_x": 645
+  },
+  "camera_status": "Native source binding only; no new fullCAM approval."
+}
