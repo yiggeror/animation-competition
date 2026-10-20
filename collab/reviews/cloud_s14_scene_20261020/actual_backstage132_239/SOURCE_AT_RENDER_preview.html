@@ -1,0 +1,19 @@
+<!doctype html><meta charset="utf-8"><link rel="icon" href="data:,"><canvas></canvas>
+<script type="module">
+import {renderFrame,frameBinding} from './s14_scene.mjs';
+import {renderTail,tailBinding,BACKSTAGE_GRANDMA,measureBackstageOcclusion} from './s14_tail.mjs';
+const p=new URLSearchParams(location.search),canvas=document.querySelector('canvas');
+canvas.width=+(p.get('w')||1920);canvas.height=canvas.width*9/16;
+const ctx=canvas.getContext('2d');
+const trialFile=p.get('backstage')==='1'&&p.get('steps')==='1'?'./BACKSTAGE_RETURN_132_167_EXPOSURE_PROPOSAL.json':p.get('steps')==='1'?'./EXISTING_STEP_141_167_EXPOSURE_PROPOSAL.json':p.get('trial159')==='1'?'./ORIGINAL159_ACTUAL_TRIAL_BINDINGS.json':null;
+const trial=trialFile?await(await fetch(trialFile)).json():null;
+window.measureBackstageOcclusion=measureBackstageOcclusion;
+window.drawActualFrame=async f=>{
+ const backstage=p.get('backstage')==='1',options={backstage,showUncoveredGrandma:p.get('uncovered')==='1'};
+ if(backstage&&!trial&&f>=132&&f<=140){await renderTail(ctx,f/24,canvas.width,canvas.height,null,options);return{frame:f,drawing:'NO_CHILD_OCCLUSION_DIAGNOSTIC_ONLY',shot:'originalWideBackstageOcclusionStudy',grandma:BACKSTAGE_GRANDMA,curtainLit:true,newDrawing:false};}
+ if(trial){const e=trial.trialRows.find(e=>f>=e.frame&&f<=e.through);if(e){await renderTail(ctx,f/24,canvas.width,canvas.height,e,options);return{...await tailBinding(f,e),...(backstage?{backstageGrandma:BACKSTAGE_GRANDMA}:{})};}if(!(p.get('steps')==='1'&&f>=168))throw Error('Outside explicit trial range');}
+ if(backstage&&f>=168){await renderTail(ctx,f/24,canvas.width,canvas.height,null,options);return{...await tailBinding(f),backstageGrandma:BACKSTAGE_GRANDMA};}
+ await renderFrame(ctx,f/24,canvas.width,canvas.height);return frameBinding(f);
+};
+window.ready=true;
+</script>

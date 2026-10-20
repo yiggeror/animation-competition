@@ -1,0 +1,155 @@
+{
+  "status": "COMPLETE240_FRAME10_SECOND_CANDIDATE_PENDING_DIRECTOR_AND_WORLD_REVIEW",
+  "createdUTC": "2026-10-20T08:30:12.814531+00:00",
+  "file": "assembled/S14_FULL240_10S_BACKSTAGE_CANDIDATE.mp4",
+  "sha256": "5b2ed3ff18dc785899724d838cb3741253947e29beb9277b23d92071772f33b7",
+  "bytes": 13265461,
+  "sourceMP4s": [
+    {
+      "path": "assembled/S14_PREFIX000_131_132F_CUT_GATE_PENDING.mp4",
+      "sha256": "2cb211c76f133b6af6652e0a2caec35f86aefdc010e4d105772324d9ed3cade3"
+    },
+    {
+      "path": "actual_backstage132_239/S14_ACTUAL_SEGMENT.mp4",
+      "sha256": "1b83ab877cdd53b188f348b7b3c24aa90eaf5aac920fc74c48e40d387f894841"
+    }
+  ],
+  "assembly": "ffmpeg concat demuxer, H264 packet copy. Original000–131 decoded hashes all132 match published segment hashes; new108 decoded hashes also match exactly.",
+  "decodeVerifiedFrames": 240,
+  "frameRate": "24/1",
+  "durationSeconds": 10,
+  "width": 1920,
+  "height": 1080,
+  "audioStreams": 0,
+  "fullDecodedSequenceExactlyMatchesSourceChunks": true,
+  "backstageOcclusion": {
+    "visibleHeadAndRaisedArmsPixelsInOriginalRoom": 0,
+    "maximumVisibleUpperAlpha": 0,
+    "conservativeNativeUpperCutY": 550,
+    "wholeFigureTransform": {
+      "sc": 0.335,
+      "x": 466.45,
+      "y": 227.26,
+      "sourceShoeBase": 1024,
+      "roomFloor": 570.3
+    },
+    "occlusion": "Original fixed cloth contour only; opaque material mask, no contour expansion; original clothRGBA used in visible composite."
+  },
+  "encodedCutFrames": [
+    {
+      "frame": 95,
+      "path": "assembled/encoded_cut_keys/CUT_01.png",
+      "sha256": "c25aae477219e7069565bb4e15985853f0b66546c247aefb66dbc429186e9202"
+    },
+    {
+      "frame": 96,
+      "path": "assembled/encoded_cut_keys/CUT_02.png",
+      "sha256": "307a575762f62ae8093a065a292044e274972a04246c4ccf82e9053cf93ae159"
+    },
+    {
+      "frame": 131,
+      "path": "assembled/encoded_cut_keys/CUT_03.png",
+      "sha256": "bfb9404845bdd2ebbd27476dde200ac5d0cec5349ad35eec9dadc3495c8536c4"
+    },
+    {
+      "frame": 132,
+      "path": "assembled/encoded_cut_keys/CUT_04.png",
+      "sha256": "18e990f5605fc57036bba066041de9e54140950da659d5c55b14f4f911133b58"
+    }
+  ],
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1088,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 4,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/12288",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 122880,
+        "duration": "10.000000",
+        "bit_rate": "10609265",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "240",
+        "nb_read_frames": "240",
+        "extradata_size": 47,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc61.19.101 libx264"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/workspace/s29-drawn-reference-20261019/collab/reviews/cloud_s14_scene_20261020/assembled/S14_FULL240_10S_BACKSTAGE_CANDIDATE.mp4",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "10.000000",
+      "size": "13265461",
+      "bit_rate": "10612368",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf61.7.103"
+      }
+    }
+  },
+  "newImageGenerationCalls": 0,
+  "newDrawings": 0,
+  "reviewPending": [
+    "095→096 cut omits stool descent/approach/bend.",
+    "131→132 return-cut staging and proposed132–167 child exposure timing.",
+    "S15 world/camera correspondence is not proved by2D original-painted-room registration.",
+    "179→180 adopted head/neck pose change remains visible for director judgment."
+  ],
+  "notClaimed": "Not a ready/EDL/audio update or final director approval. NoS15 changes."
+}

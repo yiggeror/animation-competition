@@ -1,53 +1,70 @@
 {
-  "status": "231_ACTUAL_CANDIDATE_POSITIONS_COMPLETE_WITH9_BODY_POSITIONS_MISSING_AND_DIRECTOR_GATES_PENDING",
-  "newGenerationCalls": 0,
-  "newDrawings": 0,
+  "status": "COMPLETE240_FRAME10_SECOND_CANDIDATE_DELIVERED_PENDING_DIRECTOR_AND_WORLD_REVIEW",
+  "currentMainFilm": "assembled/S14_FULL240_10S_BACKSTAGE_CANDIDATE.mp4",
+  "sha256": "5b2ed3ff18dc785899724d838cb3741253947e29beb9277b23d92071772f33b7",
+  "library_file_id": "libfile_9ded824b9b088191adb710bbf1fba641",
   "candidateRanges": [
     [
       0,
-      131
-    ],
-    [
-      141,
       239
     ]
   ],
-  "unfilledBodyFrameKeys": [
-    132,
-    135,
-    138
-  ],
-  "unfilledExposureRange": [
-    132,
-    140
-  ],
+  "frameCount": 240,
+  "fps": 24,
+  "durationSeconds": 10,
+  "width": 1920,
+  "height": 1080,
+  "audioStreams": 0,
+  "newGenerationCalls": 0,
+  "newDrawings": 0,
   "preservedOriginalThreeSegmentFrames": 120,
-  "newCompleteEarlyFrames": 12,
-  "lateCandidateFrames": 99,
-  "timingProposal": "1414 /1444 /1474 /1564 /16211 across141–167;168 onward unchanged. Pending main motion acceptance.",
-  "original159Trial": "Full original only; whole-canvas registration. Actual shot-size support shoe moves forward and returns relative to the fixed stool. Raw159 and9-frame trial remain diagnostic; no rejected far-chain or ankle-gap candidate adopted.",
+  "preservedPrefixFrames": 132,
+  "newRenderedReturnFrames": 108,
+  "fullDecodedSequenceExactlyMatchesSourceChunks": true,
+  "actualPlayback": {
+    "newSceneRenders": 0,
+    "clips": [
+      {
+        "file": "assembled/S14_FULL240_10S_BACKSTAGE_CANDIDATE.mp4",
+        "ended": true,
+        "duration": 10,
+        "width": 1920,
+        "height": 1080,
+        "totalVideoFrames": 240,
+        "droppedVideoFrames": 0,
+        "corruptedVideoFrames": 0,
+        "mediaError": null
+      }
+    ]
+  },
+  "backstageOcclusion": {
+    "visibleHeadAndRaisedArmsPixelsInOriginalRoom": 0,
+    "maximumVisibleUpperAlpha": 0,
+    "conservativeNativeUpperCutY": 550,
+    "wholeFigureTransform": {
+      "sc": 0.335,
+      "x": 466.45,
+      "y": 227.26,
+      "sourceShoeBase": 1024,
+      "roomFloor": 570.3
+    },
+    "occlusion": "Original fixed cloth contour only; opaque material mask, no contour expansion; original clothRGBA used in visible composite."
+  },
   "actualVisualScope": [
-    "Four early complete states and all prior grandma changes.",
-    "Corrected99-frame tail:20 native pose changes, full239, original-size167/168,179/180,207/208 support contacts.",
-    "Actual original156/159/162 whole images and source-size foot-support contact board."
-  ],
-  "findings": [
-    "No new per-limb scaling, source painting or code character substitution.",
-    "Complete original same-source curtain removes the former hand-occluded extraction edge.",
-    "Original fixed working stool retained behind the child after the grandma character layer leaves.",
-    "Stool/foot plane is common across168–177 and the1254 mother space;179/180 head/neck pose change remains visible in the review board and is not silently rescaled."
+    "Final encoded095/096 and131/132 cut board.",
+    "Actual132/138/144/150/156/168/180/197/208/239 scene keys and1:1 support board.",
+    "Original uncovered/initial exposed fingertip and corrected occlusion study."
   ],
   "remainingReview": [
-    "132–140 source missing; no fabricated hold or shortening.",
-    "095/096 omitted-action decision remains pending with coordinator.",
-    "131/132 and S15 world/camera relationship not proved by the2D close integration.",
-    "Five-state141–167 timing proposal needs main motion acceptance."
+    "095→096 omitted descent/approach/bend director choice.",
+    "131→132 original-room backdrop staging and132–167 exposure proposal.",
+    "149→150 adopted147→156 stature/support pose change;179→180 head/neck change retained for review.",
+    "2D paint registration does not prove S15 world/camera correspondence."
   ],
   "notPerformed": [
-    "No full240-frame render or whole-shot ready.",
-    "NoS15/S31/S29 rendering or edits.",
-    "No audio/EDL changes.",
-    "No whole-repository historical regression.",
-    "No additional agent."
+    "No new image generation or extra agent.",
+    "No S15/S29/S31 edits or rendering.",
+    "No audio/EDL/ready change.",
+    "No final director approval claim."
   ]
 }

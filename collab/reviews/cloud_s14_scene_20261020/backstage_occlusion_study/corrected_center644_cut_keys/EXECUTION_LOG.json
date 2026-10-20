@@ -1,0 +1,234 @@
+{
+  "status": "TECHNICAL_COMPLETE_PENDING_ACTUAL_VISUAL_REVIEW",
+  "pid": 19502,
+  "startedUTC": "2026-10-20T08:23:27.223Z",
+  "sourceCommit": "ac2ca3218d65b3c1b9eeee8bac9c5a41762ce9df",
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "requestedFrames": [
+    132,
+    239
+  ],
+  "renderedFrames": [
+    {
+      "frame": 132,
+      "drawing": "X141_ADOPTED_EXPOSURE_PROPOSAL",
+      "source": "/collab/reviews/20261020_s14_cloud_handoff/s14_stool_steps_recovery_20261020/APPROVED_F141_F144_F147_PRODUCTION_HANDOFF/adopted/F141_COMPLETE.png",
+      "sourceSHA256": "1e6d5b9a794a169723b3a6462f81969d19eb5618917787a0706ea81155e3679d",
+      "shot": "originalPaintWideCameraAfterHang",
+      "wholeDrawingTransform": {
+        "sc": 0.15891769184026783,
+        "x": 459.5795306176265,
+        "y": 462.1343951571296
+      },
+      "sourceFloor": 1182.1566413870323,
+      "curtainLit": true,
+      "lightEventFrame": 132,
+      "diagnosticExposureOnly": true,
+      "backstageGrandma": {
+        "sc": 0.335,
+        "x": 466.45,
+        "y": 227.26,
+        "sourceShoeBase": 1024,
+        "roomFloor": 570.3
+      }
+    },
+    {
+      "frame": 239,
+      "drawing": "S15_F000",
+      "source": "/assets/chars/x15/F000.png",
+      "sourceSHA256": "57e175f4d15527201d5241a2a5fea395f7b12d994cb1ab78d9432d3bd93e4907",
+      "shot": "originalPaintWideCameraAfterHang",
+      "wholeDrawingTransform": {
+        "sc": 0.16,
+        "x": 453.6,
+        "y": 458.32
+      },
+      "sourceFloor": 1198,
+      "curtainLit": true,
+      "lightEventFrame": 132,
+      "diagnosticExposureOnly": false,
+      "backstageGrandma": {
+        "sc": 0.335,
+        "x": 466.45,
+        "y": 227.26,
+        "sourceShoeBase": 1024,
+        "roomFloor": 570.3
+      }
+    }
+  ],
+  "keyPNGs": [
+    {
+      "frame": 132,
+      "file": "F132.png",
+      "sha256": "84fdf04313402648005c400e9a58d5eb6d5c09d0e873a0f341823660d8d4aa71"
+    },
+    {
+      "frame": 239,
+      "file": "F239.png",
+      "sha256": "5654ef7cf1b2f999398ceef372534f72d8bb94aaa7c4d13ad67afe7411135b96"
+    }
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:34107/collab/reviews/cloud_s14_scene_20261020/preview.html?w=1920&steps=1&backstage=1",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34107/collab/reviews/cloud_s14_scene_20261020/s14_scene.mjs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34107/collab/reviews/cloud_s14_scene_20261020/s14_tail.mjs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34107/collab/reviews/20261020_0236_s14_lamp_close/integration_candidate/lamp_close.mjs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34107/js/paint/paintshot.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34107/collab/reviews/20261020_0236_s14_lamp_close/integration_candidate/original_lamp.mjs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34107/collab/reviews/cloud_s14_scene_20261020/BACKSTAGE_RETURN_132_167_EXPOSURE_PROPOSAL.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34107/collab/reviews/cloud_s14_scene_20261020/G095_FIXED_DRAWN_SHEET_AND_TWO_PEGS_RGBA.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34107/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_fall_inputs/G027_upper_contact_repair/G027_complete_sheet_whole_registered.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34107/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_throw_inputs/G000_locked_complete_rigid_work_stool.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34107/collab/reviews/20261020_s14_cloud_handoff/s14_stool_steps_recovery_20261020/APPROVED_F141_F144_F147_PRODUCTION_HANDOFF/adopted/F141_COMPLETE.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34107/assets/paint/bg_01_room_wide.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34107/collab/reviews/cloud_s14_scene_20261020/G095_EXACT_PERSON_PIXELS_OCCLUSION_STUDY.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34107/collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_fall_inputs/G027_upper_contact_repair/G027_complete_sheet_whole_registered.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34107/collab/reviews/cloud_s14_scene_20261020/published_child_tail_exposures.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:34107/assets/chars/x15/F000.png",
+      "status": 200
+    }
+  ],
+  "requestFailures": [],
+  "pageErrors": [],
+  "newGenerationCalls": 0,
+  "video": {
+    "file": "S14_ACTUAL_SEGMENT.mp4",
+    "sha256": "9be57326e21e930c994774bb8920cafcdff9b97af4901f47f20676f03ed55fc5",
+    "bytes": 186311,
+    "probe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 1920,
+          "height": 1080,
+          "coded_width": 1920,
+          "coded_height": 1088,
+          "closed_captions": 0,
+          "film_grain": 0,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 40,
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 4,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "24/1",
+          "time_base": "1/12288",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 1024,
+          "duration": "0.083333",
+          "bit_rate": "17804160",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "2",
+          "nb_read_frames": "2",
+          "extradata_size": 47,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc61.19.101 libx264"
+          }
+        }
+      ],
+      "format": {
+        "filename": "/tmp/s14_backstage_return_corrected_key_study_20261020/S14_ACTUAL_SEGMENT.partial.mp4",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "0.083333",
+        "size": "186311",
+        "bit_rate": "17885927",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf61.7.103"
+        }
+      }
+    }
+  },
+  "finishedUTC": "2026-10-20T08:23:34.280Z"
+}

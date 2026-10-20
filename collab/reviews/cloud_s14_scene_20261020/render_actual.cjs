@@ -16,7 +16,11 @@ const keys=new Set((process.env.S14_KEYS||'96,101,102,107,108,113,114,119,120,12
   browser=await chromium.launch({headless:true,executablePath:'/usr/bin/chromium',args:['--no-sandbox','--disable-dev-shm-usage','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
   const page=await browser.newPage({viewport:{width:W,height:H}});page.setDefaultTimeout(180000);
   page.on('pageerror',e=>log.pageErrors.push(e.message));page.on('requestfailed',r=>log.requestFailures.push({url:r.url(),error:r.failure()}));page.on('response',r=>log.responses.push({url:r.url(),status:r.status()}));
-  await page.goto(`http://127.0.0.1:${server.address().port}/collab/reviews/cloud_s14_scene_20261020/preview.html?w=${W}${process.env.S14_ORIGINAL159_TRIAL==='1'?'&trial159=1':''}${process.env.S14_EXISTING_STEP_TRIAL==='1'?'&steps=1':''}`);await page.waitForFunction(()=>window.ready);
+  await page.goto(`http://127.0.0.1:${server.address().port}/collab/reviews/cloud_s14_scene_20261020/preview.html?w=${W}${process.env.S14_ORIGINAL159_TRIAL==='1'?'&trial159=1':''}${process.env.S14_EXISTING_STEP_TRIAL==='1'?'&steps=1':''}${process.env.S14_BACKSTAGE_OCCLUSION==='1'?'&backstage=1':''}${process.env.S14_UNCOVERED_DIAGNOSTIC==='1'?'&uncovered=1':''}`);await page.waitForFunction(()=>window.ready);
+  if(process.env.S14_BACKSTAGE_OCCLUSION==='1'){
+   log.backstageOcclusion=await page.evaluate(()=>window.measureBackstageOcclusion());
+   if(log.backstageOcclusion.visibleHeadAndRaisedArmsPixelsInOriginalRoom!==0)throw Error('Actual original cloth does not fully occlude old upper pose');
+  }
   ff=spawn('ffmpeg',['-v','error','-f','image2pipe','-vcodec','png','-framerate','24','-i','pipe:0','-c:v','libx264','-preset','medium','-crf','18','-pix_fmt','yuv420p','-movflags','+faststart',path.join(out,'S14_ACTUAL_SEGMENT.partial.mp4')],{stdio:['pipe','ignore','pipe']});
   let stderr='';ff.stderr.on('data',b=>stderr+=b);ffDone=new Promise(ok=>ff.on('close',ok));
   for(const f of frames){

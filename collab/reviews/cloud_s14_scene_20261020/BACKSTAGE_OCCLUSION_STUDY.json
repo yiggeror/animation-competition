@@ -1,0 +1,42 @@
+{
+  "status": "ACTUAL_SOURCE_BACKSTAGE_OCCLUSION_STUDY_NOT_NEW_DRAWING",
+  "source": "collab/reviews/20261019_2247_s14_second_clip_six_locked/grandma_take_first_peg_030_036_inputs/G072_G095_second_clamp_inputs/G095_complete_registered_candidate.png",
+  "sourceSHA256": "2fb5693f3cf4b90cf0738747660106b69027d3f1d69d5f160e1806db5f5d5b76",
+  "bodyPixels": "G095_EXACT_PERSON_PIXELS_OCCLUSION_STUDY.png",
+  "bodySHA256": "f7cceb05c905f3b235e8545767449546a7ab07afc58f02440e600edaff82ef9b",
+  "extraction": "Exact source RGBA where completeG095 differs from the same fixed original cloth/pegs/stool. No RGB repaint, per-limb transform or anatomy synthesis. Any upper-body edge over an old prop is diagnostic only and must be fully occluded.",
+  "oldWholeFigureTransform": {
+    "x": 355.0,
+    "y": 175.0,
+    "sc": 0.335
+  },
+  "backstageWholeFigureTransform": {
+    "x": 466.45,
+    "y": 227.25999999999993,
+    "sc": 0.335
+  },
+  "nativeShoeSupport": [
+    530.0,
+    1024.0
+  ],
+  "roomShoeSupport": [
+    644.0,
+    570.3
+  ],
+  "nativeOldWorkStoolFloor": 1180.0,
+  "positionBasis": "Existing original room floor at the original work stool baseline; whole-person center530 registered to room644 within fixed original curtain. Initial room650 study exposed a fingertip at the existing right curtain edge, so the entire person moves6room pixels left, with no curtain/furniture change. This is a2D candidate registration pending director choice, not an independently calibratedS15 world position.",
+  "upperBodyConservativeNativeDomain": {
+    "x": [
+      350,
+      750
+    ],
+    "y": [
+      275,
+      550
+    ]
+  },
+  "cutOmission": "095→096 omits descent/approach/bend;131→132 returns after the hang. No visible walking or arm lowering is fabricated.",
+  "newImageCalls": 0,
+  "newDrawings": 0,
+  "S15Changed": false
+}
