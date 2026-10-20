@@ -1,5 +1,5 @@
 {
-  "scope": "Global S29 frames078–131 only; actual scene runtime candidate",
+  "scope": "Available actual ranges000–035 and078–131 only;036–077 sources absent, reuse existing actual footage, no complete-film claim.",
   "serve_root": "actual_entry/served_tree",
   "files": [
     {
@@ -231,16 +231,34 @@
       "git_blob_sha1": "d8bd82c363e0ab431c809f3ac5ebcc98a8bb9732"
     },
     {
-      "repo_target": "js/anim/s29/exposure.js",
-      "bytes": 3312,
-      "sha256": "90644cf6b21c5fe29a71113632734b57c6dd5900cff6b4894d775bb0f78be20e",
-      "git_blob_sha1": "a9d95beee4d3ec9beae577ee64361feae5b7ce98"
-    },
-    {
       "repo_target": "js/anim/s29/front_fold_exposure.js",
       "bytes": 1181,
       "sha256": "96263a2d7b2dbbb2d2518ae0e63c9cc10bfbf58f7285da9db2518f899d7202e3",
       "git_blob_sha1": "811206c85e516cf3b019eaed23c5c44457f92412"
+    },
+    {
+      "repo_target": "assets/chars/s29/F000.png",
+      "bytes": 1424230,
+      "sha256": "d9652a3c78e1a5eb348bb33eb7a1ebf4e1b5293734937ddd7a6381214ddc1a21",
+      "git_blob_sha1": "d2fe973aae0d862d7458b80221c8db666df8540c"
+    },
+    {
+      "repo_target": "assets/chars/s29/F024.png",
+      "bytes": 1470216,
+      "sha256": "b7201bbe59ad1b083bd0458c74ccb2a817154b64ee42b764962cce009c9ab4e8",
+      "git_blob_sha1": "f58f53bd5ce64cd333114176b49ced71e1ea963e"
+    },
+    {
+      "repo_target": "assets/chars/s29/F030.png",
+      "bytes": 1898912,
+      "sha256": "72242b30bce5a044257b18089b44f2440dab72c8f256bc28393775ee0602f1e9",
+      "git_blob_sha1": "a78a58010dd32427389620b8a77bef47a0a51242"
+    },
+    {
+      "repo_target": "js/anim/s29/exposure.js",
+      "bytes": 3312,
+      "sha256": "e6cabe6ec75c641829a502a01255cca90617561cf12c00b9c9a68488c245d575",
+      "git_blob_sha1": "61428c2312b22a2d3849886de159114e7192ff87"
     }
   ]
 }

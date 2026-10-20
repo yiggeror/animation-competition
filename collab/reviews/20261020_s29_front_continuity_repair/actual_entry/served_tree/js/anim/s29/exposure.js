@@ -9,7 +9,7 @@ export const STATES = Object.freeze([
     "end": 23,
     "count": 24,
     "url": "/assets/chars/s29/F000.png",
-    "sha256": "a9d663b68cf725f1f6a00d8781b82903967b864ab427a09f08838e28a57aee3c"
+    "sha256": "d9652a3c78e1a5eb348bb33eb7a1ebf4e1b5293734937ddd7a6381214ddc1a21"
   },
   {
     "state": 24,
@@ -17,7 +17,7 @@ export const STATES = Object.freeze([
     "end": 29,
     "count": 6,
     "url": "/assets/chars/s29/F024.png",
-    "sha256": "82a589aeb73f04c7446f9a7c3fdbc1bd605ae778aeb4e5cacbf8717a208c468a"
+    "sha256": "b7201bbe59ad1b083bd0458c74ccb2a817154b64ee42b764962cce009c9ab4e8"
   },
   {
     "state": 30,
