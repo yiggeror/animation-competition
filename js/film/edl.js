@@ -46,7 +46,7 @@ export const SHOTS = [
   // 第 11 场 · 收
   { id: 'S29', scene: 11, line: 'paint', dur: 12, mod: 'js/paint/shots/s29.js', text: '奶奶笑笑，开始用布包皮影；手机"叮咚"开机；小满看看手机，又看看奶奶' },
   // 第 12 场 · 关灯
-  { id: 'S30', scene: 12, line: 'paint', dur: 12, mod: 'js/paint/shots/s30.js', text: '全景：小满走到门边，踮脚拉灯绳——"咔嗒"，暗了；马灯的光重新显出来' },
+  { id: 'S30', scene: 12, line: 'paint', dur: 12, mod: 'js/paint/shots/s30_drawn.js', text: '全景：小满走到门边，踮脚拉灯绳——"咔嗒"，暗了；马灯的光重新显出来' },
   { id: 'S31', scene: 12, line: 'paint', dur: 14, mod: 'js/paint/shots/s31.js', text: '床单前：小满把手电抵在下巴下往上照、做鬼脸，举着乌龟晃一晃；切床单正面：鹤跳起来，乌龟爬进来，又演起来了' },
   // 第 13 场 · 尾声
   { id: 'S32', scene: 13, line: 'code', dur: 15, mod: 'js/code/s32.js', text: '屋外，慢慢后退：家家户户白灯，只有这扇窗暖黄，窗里鹤和乌龟的影子；片名"来电"' },
