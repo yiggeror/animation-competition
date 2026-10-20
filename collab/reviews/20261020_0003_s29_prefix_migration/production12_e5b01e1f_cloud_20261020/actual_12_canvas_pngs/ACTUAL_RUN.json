@@ -1,0 +1,1148 @@
+{
+  "sourceReadbackBefore": [
+    {
+      "path": "js/anim/s29/exposure.js",
+      "sha256": "4677561d3578bedcc15aeffe3fdec7ea70c2cd042001b0c14ec6dbfd6b4510be",
+      "bytes": 2080
+    },
+    {
+      "path": "js/anim/s29/index.js",
+      "sha256": "314223c5b26daeef704ba14717eab461948730483f9d2096dbe051214c739190",
+      "bytes": 2579
+    },
+    {
+      "path": "js/anim/s29/scene_source.js",
+      "sha256": "3543f316773bc2eba3a5f4c80e7cc73bf723a7268fcbaa9dd321f2259c55e186",
+      "bytes": 6576
+    },
+    {
+      "path": "assets/chars/s29/F036.png",
+      "sha256": "233294ffa3487f7e00fe0fce78fc3d29520cc91f54f62b70f7be789e44378978",
+      "bytes": 1904331
+    },
+    {
+      "path": "assets/chars/s29/F042.png",
+      "sha256": "6321353572a45919c114ebab0e3c616c92bd5007afbe97ca3018b06a272b3444",
+      "bytes": 1893312
+    },
+    {
+      "path": "assets/chars/s29/F048.png",
+      "sha256": "7cfb050414a6fde23fddf3f44bf2c83ddaae54f0be6b25d3babb874dda40b298",
+      "bytes": 1891124
+    },
+    {
+      "path": "assets/chars/s29/F054.png",
+      "sha256": "d325fd3bc84a6a049aba27a7a07de6363b50adcb46d90132cdb3987687dffe64",
+      "bytes": 1558691
+    },
+    {
+      "path": "assets/chars/s29/F060.png",
+      "sha256": "b58a1241dd966774e9ff68c2ae5e05fadeca523a016b6cabecc264318c9d40c5",
+      "bytes": 1543944
+    },
+    {
+      "path": "assets/chars/s29/F066.png",
+      "sha256": "37f431300cd341dc1992380e75788f0957a7bc3ecdc81ff90fe4f587451e42f0",
+      "bytes": 1554717
+    },
+    {
+      "path": "support/js/paint/paintshot.js",
+      "sha256": "7d61a8e3cfa595b5a2877ce3624c2d8d186a1578cc684a8948471eb0eedca975",
+      "bytes": 12532
+    },
+    {
+      "path": "support/assets/paint/bg_01_room_wide.png",
+      "sha256": "3bc55f3b9d238b4242eddbd06a0c3f81a394673fa19c4f33ef263ba65d4e01ed",
+      "bytes": 1930766
+    },
+    {
+      "path": "support/assets/chars/x29_look_a.png",
+      "sha256": "f20ba5137ad60169950c2d3019218cb9d9fe880985c1c0d3841d4f72895bfff7",
+      "bytes": 1650751
+    },
+    {
+      "path": "SOURCE_ASSET_MAP.json",
+      "sha256": "e809f69f6426442e5a9a150c5f8238114b323145613fd79bb20bcd404d93c066",
+      "bytes": 3473
+    },
+    {
+      "path": "SUPPORT_ASSET_MAP.json",
+      "sha256": "401112b0807fa54406d1557fcccf9fddc406912cf28248b34f1922e89dce7bda",
+      "bytes": 1303
+    },
+    {
+      "path": "ACTUAL_REFERENCE_INDEX.json",
+      "sha256": "397c385340c3743e75b21b8bf4b70da398f81a76cc4ce562e93d441394c9e44c",
+      "bytes": 27361
+    },
+    {
+      "path": "MISSING_EARLY_PREFIX.json",
+      "sha256": "21e1a9ab231f7692142f235074b997699def99fe4160c0fc5b09450555387889",
+      "bytes": 1961
+    },
+    {
+      "path": "host.html",
+      "sha256": "64be242ec24588c1b1bad25e2816b4bdcd1b4a4701399616cee0c20b2a203873",
+      "bytes": 653
+    },
+    {
+      "path": "host.cjs",
+      "sha256": "bdd7a42d60a5e3e91a3f65c0ea4fabd8b2612ab782f16c46451238094057ffc6",
+      "bytes": 1433
+    },
+    {
+      "path": "render_few.cjs",
+      "sha256": "388f3c3b31996527c65c88a47b21055fe09d03b850dd80356c4b76b6a7e286f4",
+      "bytes": 4174
+    }
+  ],
+  "started": "2026-10-20T00:10:44.371Z",
+  "scope": "partial036–071 only",
+  "frames": [
+    {
+      "globalFrame": 36,
+      "state": 36,
+      "t": 1.5,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.17360912720084992,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "sourceSHA256": "233294ffa3487f7e00fe0fce78fc3d29520cc91f54f62b70f7be789e44378978",
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "file": "S29_F036.png",
+      "pngSHA256": "4517c83c4462c7060345ccae58588604285f157f306fdc49a064f223c319b9fd",
+      "expectedCanvasPNG_SHA256": "4517c83c4462c7060345ccae58588604285f157f306fdc49a064f223c319b9fd",
+      "matchesOriginalCanvas": true
+    },
+    {
+      "globalFrame": 41,
+      "state": 36,
+      "t": 1.7083333333333333,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.18286227143005684,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "sourceSHA256": "233294ffa3487f7e00fe0fce78fc3d29520cc91f54f62b70f7be789e44378978",
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "file": "S29_F041.png",
+      "pngSHA256": "1524c7f8af55bd4816ab08e75e1a1ce73df42c436888d582ffb23f2e30ec2734",
+      "expectedCanvasPNG_SHA256": "1524c7f8af55bd4816ab08e75e1a1ce73df42c436888d582ffb23f2e30ec2734",
+      "matchesOriginalCanvas": true
+    },
+    {
+      "globalFrame": 42,
+      "state": 42,
+      "t": 1.75,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.1906664193505662,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "sourceSHA256": "6321353572a45919c114ebab0e3c616c92bd5007afbe97ca3018b06a272b3444",
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "file": "S29_F042.png",
+      "pngSHA256": "232817e18c21fc5190ae02e51c3978dc9ff3c684c7a80ba7eb079a5384665eb6",
+      "expectedCanvasPNG_SHA256": "232817e18c21fc5190ae02e51c3978dc9ff3c684c7a80ba7eb079a5384665eb6",
+      "matchesOriginalCanvas": true
+    },
+    {
+      "globalFrame": 47,
+      "state": 42,
+      "t": 1.9583333333333333,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.22728354098293335,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "sourceSHA256": "6321353572a45919c114ebab0e3c616c92bd5007afbe97ca3018b06a272b3444",
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "file": "S29_F047.png",
+      "pngSHA256": "8778d698ddc3425f59eb0035020613d97a865fd5abb4a5370f46f80c4983fa2b",
+      "expectedCanvasPNG_SHA256": "8778d698ddc3425f59eb0035020613d97a865fd5abb4a5370f46f80c4983fa2b",
+      "matchesOriginalCanvas": true
+    },
+    {
+      "globalFrame": 48,
+      "state": 48,
+      "t": 2,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.22971822067084613,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "sourceSHA256": "7cfb050414a6fde23fddf3f44bf2c83ddaae54f0be6b25d3babb874dda40b298",
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "file": "S29_F048.png",
+      "pngSHA256": "856c791b1dcb85dcaf866a9b1fbffa8d0c8f54adc0f319eb04df18e893f70801",
+      "expectedCanvasPNG_SHA256": "856c791b1dcb85dcaf866a9b1fbffa8d0c8f54adc0f319eb04df18e893f70801",
+      "matchesOriginalCanvas": true
+    },
+    {
+      "globalFrame": 53,
+      "state": 48,
+      "t": 2.2083333333333335,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.20741136144122485,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "sourceSHA256": "7cfb050414a6fde23fddf3f44bf2c83ddaae54f0be6b25d3babb874dda40b298",
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "file": "S29_F053.png",
+      "pngSHA256": "77212ea2d3465b3135e5282bbd6d52a49d52f05eee7fbd34ca87b2a160395435",
+      "expectedCanvasPNG_SHA256": "77212ea2d3465b3135e5282bbd6d52a49d52f05eee7fbd34ca87b2a160395435",
+      "matchesOriginalCanvas": true
+    },
+    {
+      "globalFrame": 54,
+      "state": 54,
+      "t": 2.25,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.19873926941843478,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "sourceSHA256": "d325fd3bc84a6a049aba27a7a07de6363b50adcb46d90132cdb3987687dffe64",
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "file": "S29_F054.png",
+      "pngSHA256": "847f94a41a8f4895bf3f2f5cb79a2657db70ea5a39278c53690fd3bef7126574",
+      "expectedCanvasPNG_SHA256": "847f94a41a8f4895bf3f2f5cb79a2657db70ea5a39278c53690fd3bef7126574",
+      "matchesOriginalCanvas": true
+    },
+    {
+      "globalFrame": 59,
+      "state": 54,
+      "t": 2.4583333333333335,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.17007436712928453,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "sourceSHA256": "d325fd3bc84a6a049aba27a7a07de6363b50adcb46d90132cdb3987687dffe64",
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "file": "S29_F059.png",
+      "pngSHA256": "03c3f6974165e4c4b44bfd3deee0b2a140265b61218c26cfab85c90f23bdcaef",
+      "expectedCanvasPNG_SHA256": "03c3f6974165e4c4b44bfd3deee0b2a140265b61218c26cfab85c90f23bdcaef",
+      "matchesOriginalCanvas": true
+    },
+    {
+      "globalFrame": 60,
+      "state": 60,
+      "t": 2.5,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.1707312198359553,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "sourceSHA256": "b58a1241dd966774e9ff68c2ae5e05fadeca523a016b6cabecc264318c9d40c5",
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "file": "S29_F060.png",
+      "pngSHA256": "e8891ce6d1b1aba1490897aea43f3845841e1813f6bb325586852dfe0cceedec",
+      "expectedCanvasPNG_SHA256": "e8891ce6d1b1aba1490897aea43f3845841e1813f6bb325586852dfe0cceedec",
+      "matchesOriginalCanvas": true
+    },
+    {
+      "globalFrame": 65,
+      "state": 60,
+      "t": 2.7083333333333335,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.20325689060281488,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "sourceSHA256": "b58a1241dd966774e9ff68c2ae5e05fadeca523a016b6cabecc264318c9d40c5",
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "file": "S29_F065.png",
+      "pngSHA256": "5b63e226ae4113a72fe916b658365e301aa82ae1f639b630d2a420fed3c0771f",
+      "expectedCanvasPNG_SHA256": "5b63e226ae4113a72fe916b658365e301aa82ae1f639b630d2a420fed3c0771f",
+      "matchesOriginalCanvas": true
+    },
+    {
+      "globalFrame": 66,
+      "state": 66,
+      "t": 2.75,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.21169481981739136,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "sourceSHA256": "37f431300cd341dc1992380e75788f0957a7bc3ecdc81ff90fe4f587451e42f0",
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "file": "S29_F066.png",
+      "pngSHA256": "816e4c8fafac6beb58239d39d2e3ec9304937f42c7e94a8b5ae61739d25a3b0f",
+      "expectedCanvasPNG_SHA256": "816e4c8fafac6beb58239d39d2e3ec9304937f42c7e94a8b5ae61739d25a3b0f",
+      "matchesOriginalCanvas": true
+    },
+    {
+      "globalFrame": 71,
+      "state": 66,
+      "t": 2.9583333333333335,
+      "camera": {
+        "x": 1900,
+        "y": 900,
+        "fit": 3.7155555555555555
+      },
+      "light": {
+        "ambient": [
+          0.65,
+          0.68,
+          0.74
+        ],
+        "lights": [
+          {
+            "x": 1560,
+            "y": 120,
+            "r": 3000,
+            "color": [
+              0.94,
+              0.97,
+              1
+            ],
+            "i": 0.32,
+            "falloff": 1.4
+          },
+          {
+            "x": 600,
+            "y": 880,
+            "r": 1400,
+            "color": [
+              0.55,
+              0.7,
+              1
+            ],
+            "i": 0.22876457706344822,
+            "falloff": 1.6
+          },
+          {
+            "x": 1200,
+            "y": 700,
+            "r": 900,
+            "color": [
+              1,
+              0.65,
+              0.32
+            ],
+            "i": 0.09,
+            "falloff": 2
+          }
+        ],
+        "exposure": 1,
+        "vignette": 0.16,
+        "grain": 3
+      },
+      "sourceSHA256": "37f431300cd341dc1992380e75788f0957a7bc3ecdc81ff90fe4f587451e42f0",
+      "wholeMotherSceneMatrix": [
+        1.0026666666666666,
+        0,
+        0,
+        1.0026666666666666,
+        277.33333333333303,
+        -6
+      ],
+      "uniformDownwardAdjustment": 30,
+      "oldGrandmaWarpNotDrawn": true,
+      "oldChildTurtleExcluded": true,
+      "file": "S29_F071.png",
+      "pngSHA256": "7adf6d1ee2b05ab9be7586157956b105e5de2ae2ba668cd0b92953ebf11cb90e",
+      "expectedCanvasPNG_SHA256": "7adf6d1ee2b05ab9be7586157956b105e5de2ae2ba668cd0b92953ebf11cb90e",
+      "matchesOriginalCanvas": true
+    }
+  ],
+  "failed": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:40489/host.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40489/js/anim/s29/index.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40489/js/anim/s29/scene_source.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40489/js/paint/paintshot.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40489/js/anim/s29/exposure.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40489/assets/chars/s29/F036.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40489/assets/paint/bg_01_room_wide.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40489/assets/chars/x29_look_a.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40489/assets/chars/s29/F042.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40489/assets/chars/s29/F048.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40489/assets/chars/s29/F054.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40489/assets/chars/s29/F060.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:40489/assets/chars/s29/F066.png",
+      "status": 200
+    }
+  ],
+  "sourceReadbackAfter": [
+    {
+      "path": "js/anim/s29/exposure.js",
+      "sha256": "4677561d3578bedcc15aeffe3fdec7ea70c2cd042001b0c14ec6dbfd6b4510be",
+      "bytes": 2080
+    },
+    {
+      "path": "js/anim/s29/index.js",
+      "sha256": "314223c5b26daeef704ba14717eab461948730483f9d2096dbe051214c739190",
+      "bytes": 2579
+    },
+    {
+      "path": "js/anim/s29/scene_source.js",
+      "sha256": "3543f316773bc2eba3a5f4c80e7cc73bf723a7268fcbaa9dd321f2259c55e186",
+      "bytes": 6576
+    },
+    {
+      "path": "assets/chars/s29/F036.png",
+      "sha256": "233294ffa3487f7e00fe0fce78fc3d29520cc91f54f62b70f7be789e44378978",
+      "bytes": 1904331
+    },
+    {
+      "path": "assets/chars/s29/F042.png",
+      "sha256": "6321353572a45919c114ebab0e3c616c92bd5007afbe97ca3018b06a272b3444",
+      "bytes": 1893312
+    },
+    {
+      "path": "assets/chars/s29/F048.png",
+      "sha256": "7cfb050414a6fde23fddf3f44bf2c83ddaae54f0be6b25d3babb874dda40b298",
+      "bytes": 1891124
+    },
+    {
+      "path": "assets/chars/s29/F054.png",
+      "sha256": "d325fd3bc84a6a049aba27a7a07de6363b50adcb46d90132cdb3987687dffe64",
+      "bytes": 1558691
+    },
+    {
+      "path": "assets/chars/s29/F060.png",
+      "sha256": "b58a1241dd966774e9ff68c2ae5e05fadeca523a016b6cabecc264318c9d40c5",
+      "bytes": 1543944
+    },
+    {
+      "path": "assets/chars/s29/F066.png",
+      "sha256": "37f431300cd341dc1992380e75788f0957a7bc3ecdc81ff90fe4f587451e42f0",
+      "bytes": 1554717
+    },
+    {
+      "path": "support/js/paint/paintshot.js",
+      "sha256": "7d61a8e3cfa595b5a2877ce3624c2d8d186a1578cc684a8948471eb0eedca975",
+      "bytes": 12532
+    },
+    {
+      "path": "support/assets/paint/bg_01_room_wide.png",
+      "sha256": "3bc55f3b9d238b4242eddbd06a0c3f81a394673fa19c4f33ef263ba65d4e01ed",
+      "bytes": 1930766
+    },
+    {
+      "path": "support/assets/chars/x29_look_a.png",
+      "sha256": "f20ba5137ad60169950c2d3019218cb9d9fe880985c1c0d3841d4f72895bfff7",
+      "bytes": 1650751
+    },
+    {
+      "path": "SOURCE_ASSET_MAP.json",
+      "sha256": "e809f69f6426442e5a9a150c5f8238114b323145613fd79bb20bcd404d93c066",
+      "bytes": 3473
+    },
+    {
+      "path": "SUPPORT_ASSET_MAP.json",
+      "sha256": "401112b0807fa54406d1557fcccf9fddc406912cf28248b34f1922e89dce7bda",
+      "bytes": 1303
+    },
+    {
+      "path": "ACTUAL_REFERENCE_INDEX.json",
+      "sha256": "397c385340c3743e75b21b8bf4b70da398f81a76cc4ce562e93d441394c9e44c",
+      "bytes": 27361
+    },
+    {
+      "path": "MISSING_EARLY_PREFIX.json",
+      "sha256": "21e1a9ab231f7692142f235074b997699def99fe4160c0fc5b09450555387889",
+      "bytes": 1961
+    },
+    {
+      "path": "host.html",
+      "sha256": "64be242ec24588c1b1bad25e2816b4bdcd1b4a4701399616cee0c20b2a203873",
+      "bytes": 653
+    },
+    {
+      "path": "host.cjs",
+      "sha256": "bdd7a42d60a5e3e91a3f65c0ea4fabd8b2612ab782f16c46451238094057ffc6",
+      "bytes": 1433
+    },
+    {
+      "path": "render_few.cjs",
+      "sha256": "388f3c3b31996527c65c88a47b21055fe09d03b850dd80356c4b76b6a7e286f4",
+      "bytes": 4174
+    }
+  ],
+  "sourceUnchanged": true,
+  "pass": true,
+  "finished": "2026-10-20T00:10:57.150Z"
+}
