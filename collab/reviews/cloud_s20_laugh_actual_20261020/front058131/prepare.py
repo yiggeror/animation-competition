@@ -64,7 +64,19 @@ for row in table['states']:
  for role in ['C_B','C_N']:
   a=oldC[role];m,b=a['slope'],a['intercept'];corridor|=(x>=670)&(x<=956)&(abs(y-m*x-b)/math.hypot(1,m)<8)
  a=oldC['C_B'];old_cb=(x>885)&(x<960)&(abs(y-a['slope']*x-a['intercept'])/math.hypot(1,a['slope'])<9);clear_old_cb=old_cb&(A[:,:,3]>0)&(rr>gg+7)&(gg>bb+7)&(bb<.68*gg)&(hue>.075)
- erase=(corridor&(A[:,:,3]>0)&~protected)|clear_old_cb;B=A.copy();B[erase]=0;assert np.array_equal(B[protected&~clear_old_cb],A[protected&~clear_old_cb]);assert np.array_equal(B[~erase],A[~erase]);Image.fromarray(erase.astype('uint8')*255).save(P/f'F{f:03}_engineering_only_mask.png')
+ erase=(corridor&(A[:,:,3]>0)&~protected)|clear_old_cb
+ # F120's discarded wide T_S handle has a short exterior tail underneath
+ # the palm. The broad silhouette protection above also caught that tail.
+ # Preserve every opaque skin pixel and two contour pixels per column;
+ # clear only the explicitly measured old shaft corridor below that edge.
+ tail=np.zeros((H,W),dtype=bool)
+ if f==120:
+  palm_skin=(A[:,:,3]>200)&(rr>170)&(gg>100)&(bb>60)&(hue<.075)
+  for xx in range(460,491):
+   yy=np.flatnonzero(palm_skin[520:546,xx])+520
+   if yy.size:tail[:,xx]=(y[:,xx]>int(yy.max())+2)&(y[:,xx]<560)&(A[:,xx,3]>0)
+  erase|=tail
+ B=A.copy();B[erase]=0;assert np.array_equal(B[protected&~clear_old_cb&~tail],A[protected&~clear_old_cb&~tail]);assert np.array_equal(B[~erase],A[~erase]);Image.fromarray(erase.astype('uint8')*255).save(P/f'F{f:03}_engineering_only_mask.png')
  name=f'F{f:03}_people.png';Image.fromarray(B).save(ASSETS/name);gname=f'F{f:03}_geometry.json';geometry['originalTurtleScale']=1.3;geometry['noPersonTransform']=True;write(ASSETS/gname,geometry)
  start,end=row['candidateExposureInclusive'];states.append({'key':f,'start':start,'end':end,'people':name,'geometry':gname,'stage':'active_entangle' if start<111 else 'passive_residual' if start<125 else 'mid_roll','candidateExposure':True})
  records.append({'key':f,'source':row['path'],'sourceCommit':row['sourceFetchCommit'],'sourceSHA256':row['sha256'],'production':name,'productionSHA256':hashlib.sha256((ASSETS/name).read_bytes()).hexdigest(),'protectedNativePixelsUnchanged':True,'exteriorGuidePixelsRemoved':int(erase.sum()),'newImageCalls':0})
