@@ -2,7 +2,7 @@
   "status": "FIXED_REVIEW_FULL_BODY_CONTACT_PASSED_NOT_REALTIME_CONTINUITY",
   "body": {
     "url": "/collab/reviews/cloud_s12_20261018/consistent_return126_20261021/F126_COMPLETE_CHARACTER.png",
-    "sha256": "f004a15a60e076b77c200be71903bdc8e595d6fb135e1b7389e402b6f7ce8083",
+    "sha256": "1f2ab3d7703d8f593a8151033c45d566074741cf017b1cd62ef43ba03ca89088",
     "canvas": [
       1920,
       1080
@@ -133,5 +133,12 @@
       }
     }
   },
-  "phase": "unified body partial return;120126132 actual cadence pending"
+  "phase": "unified body partial return;120126132 actual cadence pending",
+  "alpha_edge_repair": {
+    "source_same_raw": true,
+    "prior_alpha_sha256": "f004a15a60e076b77c200be71903bdc8e595d6fb135e1b7389e402b6f7ce8083",
+    "scope": "native head ROI [440,130,710,325], original hair/face/collar edge semantic restoration and neutral-background dematting only",
+    "body_geometry_timing_unchanged": true,
+    "new_generation": false
+  }
 }
