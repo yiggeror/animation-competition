@@ -1,0 +1,125 @@
+{
+  "status": "finite whole-body phase, native alpha and actual finite contacts passed; FIRST-to-middle-to-terminal original-speed timing pending",
+  "asset": "FIRST_TERMINAL_MID_COMPLETE_CHARACTER.png",
+  "sha256": "af162aa2fde60705795dfd4cbce0572d6d93537358fdd8987f3c4ee7e88b8215",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "native_canvas": [
+    1672,
+    941
+  ],
+  "baked_normalization": [
+    1.1483253588516746,
+    1.1477151965993624
+  ],
+  "baked_whole_person_similarity": {
+    "scale": 0.83,
+    "translation_scene": [
+      -29,
+      168
+    ],
+    "actual_resized_pixels": [
+      1594,
+      896
+    ]
+  },
+  "runtime_registration": "identity",
+  "raw_call": "exec-d14441f8-5b7a-45a6-bb96-621fda381b3e",
+  "raw_sha256": "c615c6bb68bd2600db9562c090422af370b9b780686b2a8cd03275b6415f09d7",
+  "states": {
+    "76": {
+      "original_prop": {
+        "root": [
+          1303.0349785135006,
+          653.5563356722453
+        ],
+        "matrix": [
+          [
+            0.6833061997122981,
+            -0.19767727232924331
+          ],
+          [
+            -0.1351574697274836,
+            -0.6385406813153373
+          ]
+        ],
+        "pose": {
+          "angles": {
+            "neck0": 0.25,
+            "neck1": -0.02,
+            "neck2": -0.06,
+            "neck3": -0.1,
+            "neck4": -0.14,
+            "neck5": -0.17,
+            "neck6": -0.19,
+            "neck7": -0.2,
+            "neck8": -0.19,
+            "neck9": -0.16,
+            "neck10": -0.12,
+            "neck11": -0.08,
+            "head": -0.55,
+            "tibia_near": 1.7,
+            "tarsus_near": -2.8,
+            "foot_near": 1.1,
+            "tibia_far": 1.55,
+            "tarsus_far": -2.6,
+            "foot_far": 1.05
+          },
+          "rootAngle": 0,
+          "facing": 1
+        },
+        "paperDegrees": 55
+      },
+      "rods": {
+        "L": {
+          "A": [
+            1455.5876040762437,
+            571.1877132374507,
+            65.36461951439091
+          ],
+          "B": [
+            879.7445403629349,
+            609.2157160836639,
+            65.36461951439091
+          ],
+          "G": [
+            1014.9174641148325,
+            600.289054197662,
+            65.36461951439091
+          ],
+          "length": 577.0973600937725,
+          "grip_fraction": 0.7652608283926552,
+          "reachable": true,
+          "depth_note": "2.5D construction: contact same depth as hinge; not measured palm volume"
+        },
+        "R": {
+          "A": [
+            1250.600949901103,
+            659.8619018139145,
+            -12.065441521439746
+          ],
+          "B": [
+            869.5880790506392,
+            680.3533939510087,
+            -12.065441521439746
+          ],
+          "G": [
+            959.6232057416267,
+            675.5111583421892,
+            -12.065441521439746
+          ],
+          "length": 381.56350585940044,
+          "grip_fraction": 0.7636953143078371,
+          "reachable": true,
+          "depth_note": "2.5D construction: contact same depth as hinge; not measured palm volume"
+        }
+      }
+    }
+  },
+  "background_source_key": 74,
+  "scope": "Complete intermediate FIRST-to-upright character, biased toward FIRST rather than mathematically centered. Selector76 is the already-continuous apparatus diagnostic, not an exposure requirement. Preserve both endpoints and accepted later family.",
+  "depth_note": "Grip depth set at current real hinge depth is a constructive 2.5D convention, not measured palm volume. Original hinges and finite lengths unchanged.",
+  "geometry_source": "A FINAL_SHORT_CHECK_AND_ONE_POSE_HANDOFF.json current_continuous_paper_frame76; do not revert to old discontinuous source-key root jumps."
+}
