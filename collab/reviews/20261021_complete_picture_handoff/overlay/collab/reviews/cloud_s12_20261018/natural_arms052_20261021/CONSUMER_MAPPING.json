@@ -1,0 +1,106 @@
+{
+  "status": "limited full-body and preparatory-contact passed; actual sequence timing pending",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "asset": "F052_NATURAL_COMPLETE.png",
+  "sha256": "8cae842f3cbe736fb0de44d9612b6d327b2902aca3a2716b82226c4df514361e",
+  "source_call": "exec-ad42dc57-2fb1-4ebe-b603-ee60585e5887",
+  "raw_sha256": "9abde26f918f39d8547731602b241ededef6b7c893797c18c41eeacadde7c1a8",
+  "baked_transform": {
+    "native_canvas": [
+      1672,
+      941
+    ],
+    "scale_xy": [
+      1.1483253588516746,
+      1.1477151965993624
+    ],
+    "extra_whole_person_transform": null
+  },
+  "runtime_registration": "identity",
+  "source_key": 52,
+  "suggested_source_interval": [
+    52,
+    55
+  ],
+  "pose_scope": "L holds NECK upper; R palm-up receiving at finger edge, NOT closed grip",
+  "original_prop": {
+    "root": [
+      1335,
+      775
+    ],
+    "matrix": [
+      [
+        0.6954665949281291,
+        -0.10688580399577285
+      ],
+      [
+        -0.03874428380383416,
+        -0.6598378062784536
+      ]
+    ],
+    "pose": {
+      "angles": {
+        "neck0": 0.25,
+        "neck1": -0.02,
+        "neck2": -0.06,
+        "neck3": -0.1,
+        "neck4": -0.14,
+        "neck5": -0.17,
+        "neck6": -0.19,
+        "neck7": -0.2,
+        "neck8": -0.19,
+        "neck9": -0.16,
+        "neck10": -0.12,
+        "neck11": -0.08,
+        "head": -0.55,
+        "tibia_near": 1.7,
+        "tarsus_near": -2.8,
+        "foot_near": 1.1,
+        "tibia_far": 1.55,
+        "tarsus_far": -2.6,
+        "foot_far": 1.05
+      },
+      "rootAngle": 0,
+      "facing": 1
+    },
+    "free": {
+      "R": [
+        951.2616943917175,
+        798.9063357461391
+      ],
+      "L": [
+        930.1059238245394,
+        729.1297395769899
+      ]
+    },
+    "paperDegrees": 55
+  },
+  "endpoints": {
+    "L": {
+      "A": [
+        1497.5314905035327,
+        714.6642052957591
+      ],
+      "B": [
+        930.1059238245394,
+        729.1297395769899
+      ]
+    },
+    "R": {
+      "A": [
+        1282.1986905564156,
+        773.9467944476168
+      ],
+      "B": [
+        951.2616943917175,
+        798.9063357461391
+      ]
+    }
+  },
+  "geometry_change": "none; exact original finite52 rods and crane",
+  "no_extra_fg": "complete alpha already includes both hands; do not add F040_FG",
+  "shadow_scope": "unchanged original early renderer; lamp/early projection repair belongs separate task"
+}

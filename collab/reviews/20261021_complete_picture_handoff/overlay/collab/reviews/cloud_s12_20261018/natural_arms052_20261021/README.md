@@ -1,0 +1,4 @@
+F052 complete natural double-arm repair.
+Use native registered1920×1080 alpha at identity; do NOT apply old275/112/.7 again. Original low-kneeling040 is the anatomy mother, gesture advances toward052. Left bracelet hand holds upperNECK rod; bareRight palm is open/upward with lowerBODY rod end at curled-finger edge, not closed grip.
+Runtime replaces complete person layers, not just a hand: draw original contactShadow, exact source52 apparatus, this complete alpha, original boxFront. Do not add oldFG or oldBG. Crane/rod geometry, camera/light unchanged. Existing cumulative scene and stage assets required. Early shadow changes are separate; this module retains original early behavior, not a claim of physically solved shadow.
+Only source52–55 suggested; later close-grip and rising poses need distinct continuous action. Same-shot repair, no new shot. Actual adjacent playback pending; no local browser render.

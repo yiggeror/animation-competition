@@ -1,0 +1,123 @@
+{
+  "status": "finite whole-body/alpha/contact gate passed; actual lift-peak-return timing pending",
+  "asset": "SAME_IDENTITY_PEAK_COMPLETE_CHARACTER.png",
+  "sha256": "b9fcc96346d509f64b2500f4135abd6fb1cb8dcdf0439c0e082f0817a0aed70d",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "native_canvas": [
+    1672,
+    941
+  ],
+  "baked_normalization": [
+    1.1483253588516746,
+    1.1477151965993624
+  ],
+  "runtime_registration": "identity",
+  "raw_call": "exec-20080d4d-c4ea-444c-bdf6-a92e755663b5",
+  "raw_sha256": "0d5be0ab69464e47e5608a7781454c2bf52b1994f528aef08609e5b5005661a7",
+  "states": {
+    "120": {
+      "original_prop": {
+        "root": [
+          1237,
+          538
+        ],
+        "matrix": [
+          [
+            0.6954665949281291,
+            -0.016241447601467875
+          ],
+          [
+            -0.03874428380383416,
+            -0.7141886667614792
+          ]
+        ],
+        "pose": {
+          "angles": {
+            "neck0": 1.25,
+            "neck1": 0.10000000000000002,
+            "neck2": 0.08000000000000002,
+            "neck3": 0.05999999999999999,
+            "neck4": 0.03,
+            "neck5": 0,
+            "neck6": -0.039999999999999994,
+            "neck7": -0.07,
+            "neck8": -0.09,
+            "neck9": -0.1,
+            "neck10": -0.08999999999999998,
+            "neck11": -0.07000000000000002,
+            "head": -0.55,
+            "tibia_near": 0.07999999999999996,
+            "tarsus_near": -0.020000000000000018,
+            "foot_near": 0.02999999999999997,
+            "tibia_far": -0.04999999999999999,
+            "tarsus_far": 0.020000000000000018,
+            "foot_far": 0.02999999999999997
+          },
+          "rootAngle": 0,
+          "facing": 1
+        },
+        "free": {
+          "R": [
+            840.9640811384024,
+            610.9921307446873
+          ],
+          "L": [
+            779.3061685763762,
+            409.71629363786093
+          ]
+        },
+        "paperDegrees": 85
+      },
+      "rods": {
+        "L": {
+          "A": [
+            1354.5098496531928,
+            423.72306749399445,
+            17.905687887192983
+          ],
+          "B": [
+            779.7732107086304,
+            371.5775127274646,
+            17.905687887192983
+          ],
+          "G": [
+            972.6315789473684,
+            389.07545164718385,
+            17.905687887192983
+          ],
+          "length": 577.0973600937725,
+          "grip_fraction": 0.6644404494676027,
+          "reachable": true,
+          "depth_note": "2.5D construction: contact same depth as hinge; not measured palm volume"
+        },
+        "R": {
+          "A": [
+            1184.7425566947816,
+            536.6206892847187,
+            -14.209838885525237
+          ],
+          "B": [
+            803.2128263770765,
+            541.697488218696,
+            -14.209838885525237
+          ],
+          "G": [
+            887.6555023923445,
+            540.5738575982997,
+            -14.209838885525237
+          ],
+          "length": 381.56350585940044,
+          "grip_fraction": 0.7786734052286007,
+          "reachable": true,
+          "depth_note": "2.5D construction: contact same depth as hinge; not measured palm volume"
+        }
+      }
+    }
+  },
+  "scope": "Small lift peak of the new same-identity LIFT. Not another rising phase. Return may reuse LIFT if actual motion permits; old broad-sleeve tail is not an identity source.",
+  "depth_note": "G depth equal to hinge is constructive2.5D; preserve original finite length and visible tail.",
+  "edge_note": "Fine pale forearm antialiasing remains for actual dark-scene check, not a skin break."
+}

@@ -1,0 +1,135 @@
+{
+  "status": "finite complete shoulder anatomy, closed hold, intact alpha and true shaft contact passed; actual adjacent playback pending",
+  "asset": "CORRECT_SHOULDER_CLOSED_HOLD_COMPLETE_CHARACTER.png",
+  "sha256": "30e34bae19be2564a7695d5516a894c78ea63cdf9c840536b7c52a5d5f3661c9",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "raw_call": "exec-4040bdef-a463-4021-81c5-74bda7db2548",
+  "raw_sha256": "c904acfef2399ca0b9ffc9494f35ac12fe753e8ed7f82786b05221801e74f7f9",
+  "baked_registration": {
+    "native_canvas": [
+      1672,
+      941
+    ],
+    "normalize_to": [
+      1920,
+      1080
+    ],
+    "uniform_scale": 0.86,
+    "translation": [
+      130,
+      151
+    ],
+    "raster_size": [
+      1651,
+      929
+    ],
+    "rationale": "Whole head shell, sleeves and shoes share generated enlargement; one complete-person transform returns same character scale and knee/shin/shoe support, no grip-point fitting.",
+    "runtime": "baked identity"
+  },
+  "runtime_registration": "identity",
+  "states": {
+    "60": {
+      "original_prop": {
+        "root": [
+          1335,
+          775
+        ],
+        "matrix": [
+          [
+            0.6954665949281291,
+            -0.10688580399577285
+          ],
+          [
+            -0.03874428380383416,
+            -0.6598378062784536
+          ]
+        ],
+        "pose": {
+          "angles": {
+            "neck0": 0.25,
+            "neck1": -0.02,
+            "neck2": -0.06,
+            "neck3": -0.1,
+            "neck4": -0.14,
+            "neck5": -0.17,
+            "neck6": -0.19,
+            "neck7": -0.2,
+            "neck8": -0.19,
+            "neck9": -0.16,
+            "neck10": -0.12,
+            "neck11": -0.08,
+            "head": -0.55,
+            "tibia_near": 1.7,
+            "tarsus_near": -2.8,
+            "foot_near": 1.1,
+            "tibia_far": 1.55,
+            "tarsus_far": -2.6,
+            "foot_far": 1.05
+          },
+          "rootAngle": 0,
+          "facing": 1
+        },
+        "free": {
+          "R": [
+            951.2616943917175,
+            798.9063357461391
+          ],
+          "L": [
+            930.1059238245394,
+            729.1297395769899
+          ]
+        },
+        "paperDegrees": 55
+      },
+      "rods": {
+        "L": {
+          "A": [
+            1497.5314905035327,
+            714.6642052957591,
+            65.36461951439091
+          ],
+          "B": [
+            921.534662104051,
+            679.0409446232803,
+            65.36461951439091
+          ],
+          "G": [
+            1035.4826555023924,
+            686.0882040382571,
+            65.36461951439091
+          ],
+          "length": 577.0973600937725,
+          "grip_fraction": 0.8021725332846574,
+          "reachable": true,
+          "depth_note": "2.5D construction: contact same depth as hinge; not measured palm volume"
+        },
+        "R": {
+          "A": [
+            1282.1986905564156,
+            773.9467944476168,
+            -12.06544152143975
+          ],
+          "B": [
+            905.9537595066986,
+            837.4327051925246,
+            -12.06544152143975
+          ],
+          "G": [
+            954.5125598086124,
+            829.2391073326248,
+            -12.06544152143975
+          ],
+          "length": 381.56350585940044,
+          "grip_fraction": 0.8709383268860644,
+          "reachable": true,
+          "depth_note": "2.5D construction: contact same depth as hinge; not measured palm volume"
+        }
+      }
+    }
+  },
+  "scope": "Closed low hold after open receiving. Far jade L retains full shoulder-upper-arm-elbow architecture; bare R naturally closes lower shaft. Not an all-early-phase hold.",
+  "layer_note": "Original apparatus behind complete person; retain current A geometric light/receiver and continuous paper path. This adapter is not a replacement lighting renderer."
+}

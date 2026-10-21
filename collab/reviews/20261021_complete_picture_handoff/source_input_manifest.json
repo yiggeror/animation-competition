@@ -1,0 +1,99 @@
+{
+  "status": "PICTURE_WORKPRINT_NOT_FINAL_AUDIO_OR_HD",
+  "output": "LAIDIAN_S25V8_PICTURE_WORKPRINT_360P24_SILENT_NOT_FINAL.mp4",
+  "sha256": "0b19a165682a060be632469680a051bad728eb49c0a14bb468a7a7709c7e3c59",
+  "bytes": 13377583,
+  "frames": 5235,
+  "fps": 24,
+  "duration_seconds": 218.125,
+  "timecode": "00:03:38:03",
+  "title_retained": "来电",
+  "inputs": {
+    "BASE": {
+      "path": "LAIDIAN_COMPLETE_36of36_S18_CLEAN_PREVIEW_360p24_SILENT_NOT_FINAL.mp4",
+      "frames": 5530,
+      "width": 640,
+      "height": 360,
+      "fps": "24/1",
+      "duration": "230.416667",
+      "audio_streams": 0
+    },
+    "S14": {
+      "path": "S14_STANDING_THREE_BRIDGES_FULL_190F_1080P24_SILENT.mp4",
+      "frames": 190,
+      "width": 1920,
+      "height": 1080,
+      "fps": "24/1",
+      "duration": "7.916667",
+      "audio_streams": 0
+    },
+    "S20": {
+      "path": "S20_COHERENT127_ACTION_CLEAR_LAUGH_FIXED_1080P24_SILENT_CANDIDATE.mp4",
+      "frames": 127,
+      "width": 1920,
+      "height": 1080,
+      "fps": "24/1",
+      "duration": "5.291667",
+      "audio_streams": 0
+    },
+    "S26": {
+      "path": "S26_COMPLETE18S_REAL_GL_640x360_24FPS_SILENT_PREVIEW.mp4",
+      "frames": 432,
+      "width": 640,
+      "height": 360,
+      "fps": "24/1",
+      "duration": "18.000000",
+      "audio_streams": 0
+    },
+    "S30": {
+      "path": "S30_V3_SHORT196_8s04f_1080p24_SILENT.mp4",
+      "frames": 196,
+      "width": 1920,
+      "height": 1080,
+      "fps": "24/1",
+      "duration": "8.166667",
+      "audio_streams": 0
+    },
+    "S32": {
+      "path": "S32_WINDOW_TITLE_FIXED_15S_1080P24_SILENT.mp4",
+      "frames": 360,
+      "width": 1920,
+      "height": 1080,
+      "fps": "24/1",
+      "duration": "15.000000",
+      "audio_streams": 0
+    },
+    "S12": {
+      "path": "S12_CORRECT_SHOULDER_COLOR_UNIFIED_COMPLETE140_720P24_SILENT_WORKPRINT.mp4",
+      "frames": 140,
+      "width": 1280,
+      "height": 720,
+      "fps": "24/1",
+      "duration": "5.833333",
+      "audio_streams": 0,
+      "status": "FINAL_INDEPENDENT_REVIEW_PASSED_ROOT_RELEASED"
+    },
+    "S27": {
+      "path": "S27_COMPLETE5S_NEW_S26_ENDPOINT_640x360_24FPS_SILENT_PREVIEW.mp4",
+      "frames": 120,
+      "width": 640,
+      "height": 360,
+      "fps": "24/1",
+      "duration": "5.000000",
+      "audio_streams": 0,
+      "status": "ALL120_INDEPENDENT_REVIEW_PASSED_REPLACE_FULL_SHOT"
+    },
+    "S25": {
+      "path": "S25_CANDIDATE_V8.mp4",
+      "frames": 108,
+      "width": 1280,
+      "height": 720,
+      "fps": "24/1",
+      "duration": "4.500000",
+      "audio_streams": 0,
+      "status": "USER_ADOPTED_V8_108F",
+      "sha256": "d784e1fdcfc16ae80b173b4f551888862d524f063cf63c32cfcb8131696c2733",
+      "source_handoff": "dog_gesture_review/repair/S25_LOCAL_HANDOFF_V8"
+    }
+  }
+}
