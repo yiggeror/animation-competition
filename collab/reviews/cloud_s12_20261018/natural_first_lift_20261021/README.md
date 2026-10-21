@@ -1,0 +1,7 @@
+# First-lift phase-selection candidate
+
+Use the complete 1920x1080 character at identity registration. Native canvas normalization is baked; do not apply the old character registration again. Replace both old BG/FG with this complete figure. Keep the original stage, contact shadow, box front, lamp and camera. The consumer requires the existing cumulative S12 repository modules and assets; it is not a standalone renderer. Use the original crane drawing/material and each state's original hinge/pose, with the new finite rods in mapping.states[70 or 74].rods. The original_prop.free values are provenance, not adopted grip targets.
+
+This is a trial replacement for old070074 and early/rising, not a required additional hold before early. Proposed order is new low hold → this first lift → existing HIP_MID →095. Whole-body comparison shows rising head/chest without the old early reversal; first lift→HIP_MID has little hip rise and R turns toward an upturned grip. Actual timing and that grip transition must be judged in a short original-speed scene trial. Do not force eight exposures or retain the removed bad sleeves.
+
+renderPhase(ctx,t,w,h,70|74) selects apparatus independently of timeline. renderFrame has a diagnostic70–77 default only, not final exposure approval. Depth is a2.5D same-depth construction, not measured palm geometry. Alpha and finite contact have passed independent source review; full continuity has not. No source endpoints or history raw are included.
