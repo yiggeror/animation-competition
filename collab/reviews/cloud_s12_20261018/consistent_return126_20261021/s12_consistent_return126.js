@@ -36,5 +36,5 @@ export async function getSequenceInfo(){await(init||=(async()=>{
 })());return{fps:24,totalFrames:192,status:'CONSISTENT_BODY_SINGLE_PROBE_NOT_FINAL',availableIntervals:[[126,131]],body:'f004a15a baked scene identity runtime',scope:'Original source126131 only, unified-body partial return; actual110120126132 continuity pending.'};}
 
 const shot={size:[1920,1080],light:originalShot.light,glow:originalShot.glow,cam:originalShot.cam,layers:async()=>[{img:shadow,x:0,y:0,sc:1},{img:active.props.r,x:0,y:0,sc:1},{img:person,x:0,y:0,sc:1},{img:front,x:0,y:0,sc:1}]};
-export async function renderFrame(ctx,t,w,h){const f=Math.floor(t*24+1e-7);if(f<126||f>131)throw RangeError('Only source126131; no early/tail fallback');await getSequenceInfo();active=states.get(126);shot.bg=active.base;return renderPaint(ctx,t,w,h,shot);}
+export async function renderFrame(ctx,t,w,h){const f=Math.floor(t*24+1e-7);if(f<126||f>131)throw RangeError('Only source126131; no early/tail fallback');await getSequenceInfo();active=states.get(126);shot.bg=transmissionBackground(active.base,active.row,active.props,1);return renderPaint(ctx,t,w,h,shot);}
 export async function render(ctx,arg,w,h){return renderFrame(ctx,+arg||126/24,w,h);}
