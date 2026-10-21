@@ -1,0 +1,484 @@
+{
+  "status": "OFFLINE_TWO_STATE_CONSUMPTION_CANDIDATE_NOT_CHAIN_ADOPTED",
+  "bodies": {
+    "early": {
+      "url": "/collab/reviews/cloud_s12_20261018/consistent_early_chain_20261021/EARLY_COMPLETE_ALPHA.png",
+      "sha256": "3bf15bbd0dd9bdb4d4c308ebc18d1580d9cbee95279784eba021ae795239464f",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "runtime_transform": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "registration_already_baked": true
+    },
+    "rising": {
+      "url": "/collab/reviews/cloud_s12_20261018/consistent_early_chain_20261021/RISING_COMPLETE_ALPHA.png",
+      "sha256": "4b6395059e4579fe57d2707e8cab1f8ac80cdb3144dc1e603d8e3927c624555f",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "runtime_transform": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "registration_already_baked": true
+    }
+  },
+  "states": {
+    "78": {
+      "body": "early",
+      "original_prop": {
+        "root": [
+          1334.9974573609704,
+          671.5906465164292
+        ],
+        "matrix": [
+          [
+            0.6924857629886036,
+            -0.14127256327299642
+          ],
+          [
+            -0.07508909539000978,
+            -0.6533395507364161
+          ]
+        ],
+        "pose": {
+          "angles": {
+            "neck0": 0.25,
+            "neck1": -0.02,
+            "neck2": -0.06,
+            "neck3": -0.1,
+            "neck4": -0.14,
+            "neck5": -0.17,
+            "neck6": -0.19,
+            "neck7": -0.2,
+            "neck8": -0.19,
+            "neck9": -0.16,
+            "neck10": -0.12,
+            "neck11": -0.08,
+            "head": -0.55,
+            "tibia_near": 1.7,
+            "tarsus_near": -2.8,
+            "foot_near": 1.1,
+            "tibia_far": 1.55,
+            "tarsus_far": -2.6,
+            "foot_far": 1.05
+          },
+          "rootAngle": 0,
+          "facing": 1
+        },
+        "free": {
+          "R": [
+            953.0362127054018,
+            715.5475306313392
+          ],
+          "L": [
+            928.2576105026361,
+            646.9737683448735
+          ]
+        },
+        "paperDegrees": 55
+      },
+      "background": "stage_52b7713a4ddc.png",
+      "rods": {
+        "L": {
+          "A": [
+            1494.1484725939563,
+            602.8312989467923,
+            65.36461951439088
+          ],
+          "G": [
+            952.3100478468898,
+            592.0518597236982,
+            5.121325309175376
+          ],
+          "B": [
+            920.6974118291455,
+            591.4229517816411,
+            1.6065333615419704
+          ],
+          "length": 577.0973600937725,
+          "grip_fraction": 0.9448730010620565,
+          "remaining_tail": 31.813645556979395,
+          "reachable": true,
+          "depth_note": "original orthonormal paper plane depth reconstructed from source projection, signed orthogonal basis matching original state depth; L retains probe construction depth; R uses -120 scene-depth to preserve finite length at unchanged visible grip; 2.5D construction, not measured hand volume"
+        },
+        "R": {
+          "A": [
+            1282.2133897571873,
+            673.3022913662613,
+            -12.065441521439736
+          ],
+          "G": [
+            946.5224880382774,
+            711.5978746014878,
+            -120
+          ],
+          "B": [
+            921.0881928196698,
+            714.4994163608444,
+            -128.17787855010883
+          ],
+          "length": 381.56350585940044,
+          "grip_fraction": 0.9295693143699184,
+          "remaining_tail": 26.873779329095214,
+          "reachable": true,
+          "depth_note": "original orthonormal paper plane depth reconstructed from source projection, signed orthogonal basis matching original state depth; L retains probe construction depth; R uses -120 scene-depth to preserve finite length at unchanged visible grip; 2.5D construction, not measured hand volume"
+        }
+      }
+    },
+    "82": {
+      "body": "early",
+      "original_prop": {
+        "root": [
+          1342.3216807880278,
+          615.8038138318266
+        ],
+        "matrix": [
+          [
+            0.6876068757068216,
+            -0.17527210427402418
+          ],
+          [
+            -0.11122809298510042,
+            -0.6450505368988855
+          ]
+        ],
+        "pose": {
+          "angles": {
+            "neck0": 0.25,
+            "neck1": -0.02,
+            "neck2": -0.06,
+            "neck3": -0.1,
+            "neck4": -0.14,
+            "neck5": -0.17,
+            "neck6": -0.19,
+            "neck7": -0.2,
+            "neck8": -0.19,
+            "neck9": -0.16,
+            "neck10": -0.12,
+            "neck11": -0.08,
+            "head": -0.55,
+            "tibia_near": 1.7,
+            "tarsus_near": -2.8,
+            "foot_near": 1.1,
+            "tibia_far": 1.55,
+            "tarsus_far": -2.6,
+            "foot_far": 1.05
+          },
+          "rootAngle": 0,
+          "facing": 1
+        },
+        "free": {
+          "R": [
+            963.1844263069734,
+            679.690763551554
+          ],
+          "L": [
+            934.8509088949183,
+            612.5077910636953
+          ]
+        },
+        "paperDegrees": 55
+      },
+      "background": "stage_241ad6e2d098.png",
+      "rods": {
+        "L": {
+          "A": [
+            1497.6559988801648,
+            538.8093779890785,
+            65.36461951439091
+          ],
+          "G": [
+            952.3100478468898,
+            592.0518597236982,
+            5.121325309175376
+          ],
+          "B": [
+            926.7298071788699,
+            594.5492753439181,
+            2.2955264534510107
+          ],
+          "length": 577.0973600937725,
+          "grip_fraction": 0.9551951880298333,
+          "remaining_tail": 25.8567387074811,
+          "reachable": true,
+          "depth_note": "original orthonormal paper plane depth reconstructed from source projection, signed orthogonal basis matching original state depth; L retains probe construction depth; R uses -120 scene-depth to preserve finite length at unchanged visible grip; 2.5D construction, not measured hand volume"
+        },
+        "R": {
+          "A": [
+            1289.6995324843722,
+            620.2756175843158,
+            -12.06544152143975
+          ],
+          "G": [
+            946.5224880382774,
+            711.5978746014878,
+            -120
+          ],
+          "B": [
+            936.9037994536416,
+            714.1574873882697,
+            -123.02522829637725
+          ],
+          "length": 381.56350585940044,
+          "grip_fraction": 0.9727358137185916,
+          "remaining_tail": 10.403018501937936,
+          "reachable": true,
+          "depth_note": "original orthonormal paper plane depth reconstructed from source projection, signed orthogonal basis matching original state depth; L retains probe construction depth; R uses -120 scene-depth to preserve finite length at unchanged visible grip; 2.5D construction, not measured hand volume"
+        }
+      }
+    },
+    "86": {
+      "body": "rising",
+      "original_prop": {
+        "root": [
+          1342.2098710810035,
+          568.338014033471
+        ],
+        "matrix": [
+          [
+            0.6833061997122981,
+            -0.19767727232924331
+          ],
+          [
+            -0.1351574697274836,
+            -0.6385406813153373
+          ]
+        ],
+        "pose": {
+          "angles": {
+            "neck0": 0.25,
+            "neck1": -0.02,
+            "neck2": -0.06,
+            "neck3": -0.1,
+            "neck4": -0.14,
+            "neck5": -0.17,
+            "neck6": -0.19,
+            "neck7": -0.2,
+            "neck8": -0.19,
+            "neck9": -0.16,
+            "neck10": -0.12,
+            "neck11": -0.08,
+            "head": -0.55,
+            "tibia_near": 1.7,
+            "tarsus_near": -2.8,
+            "foot_near": 1.1,
+            "tibia_far": 1.55,
+            "tarsus_far": -2.6,
+            "foot_far": 1.05
+          },
+          "rootAngle": 0,
+          "facing": 1
+        },
+        "free": {
+          "R": [
+            965.5331991625096,
+            645.4177449121538
+          ],
+          "L": [
+            934.8722898369117,
+            579.2645239734038
+          ]
+        },
+        "paperDegrees": 55
+      },
+      "background": "stage_424787b31f6f.png",
+      "rods": {
+        "L": {
+          "A": [
+            1494.7624966437465,
+            485.9693915986765,
+            65.36461951439082
+          ],
+          "G": [
+            960.6277511961722,
+            575.5336875664187,
+            5.121325309175376
+          ],
+          "B": [
+            929.0997703495241,
+            580.8203337392835,
+            1.56538845610757
+          ],
+          "length": 577.0973600937725,
+          "grip_fraction": 0.9442636408921714,
+          "remaining_tail": 32.16530570236637,
+          "reachable": true,
+          "depth_note": "original orthonormal paper plane depth reconstructed from source projection, signed orthogonal basis matching original state depth; L retains probe construction depth; R uses -120 scene-depth to preserve finite length at unchanged visible grip; 2.5D construction, not measured hand volume"
+        },
+        "R": {
+          "A": [
+            1289.7758424686058,
+            574.6435801751403,
+            -12.065441521439697
+          ],
+          "G": [
+            957.3894736842104,
+            712.5479277364506,
+            -120
+          ],
+          "B": [
+            952.1991916601066,
+            714.7013326995088,
+            -121.68542049633282
+          ],
+          "length": 381.56350585940044,
+          "grip_fraction": 0.9846248784930086,
+          "remaining_tail": 5.866585265221886,
+          "reachable": true,
+          "depth_note": "original orthonormal paper plane depth reconstructed from source projection, signed orthogonal basis matching original state depth; L retains probe construction depth; R uses -120 scene-depth to preserve finite length at unchanged visible grip; 2.5D construction, not measured hand volume"
+        }
+      }
+    },
+    "90": {
+      "body": "rising",
+      "original_prop": {
+        "root": [
+          1325.174892567503,
+          565.2816783612259
+        ],
+        "matrix": [
+          [
+            0.6862661617983141,
+            -0.17174462306554644
+          ],
+          [
+            -0.11922105249916558,
+            -0.6667804982845362
+          ]
+        ],
+        "pose": {
+          "angles": {
+            "neck0": 0.41666666666666663,
+            "neck1": 0.0,
+            "neck2": -0.03666666666666667,
+            "neck3": -0.07333333333333335,
+            "neck4": -0.11166666666666668,
+            "neck5": -0.1416666666666667,
+            "neck6": -0.165,
+            "neck7": -0.17833333333333334,
+            "neck8": -0.17333333333333334,
+            "neck9": -0.15,
+            "neck10": -0.115,
+            "neck11": -0.07833333333333334,
+            "head": -0.55,
+            "tibia_near": 1.4300000000000002,
+            "tarsus_near": -2.336666666666667,
+            "foot_near": 0.9216666666666667,
+            "tibia_far": 1.2833333333333334,
+            "tarsus_far": -2.1633333333333336,
+            "foot_far": 0.8800000000000001
+          },
+          "rootAngle": 0,
+          "facing": 1
+        },
+        "free": {
+          "R": [
+            939.5047644544168,
+            655.1659040358979
+          ],
+          "L": [
+            906.5420802170449,
+            573.6494288114576
+          ]
+        },
+        "paperDegrees": 60.0
+      },
+      "background": "stage_48f4f5f4c323.png",
+      "rods": {
+        "L": {
+          "A": [
+            1473.8218939858923,
+            473.6057083269525,
+            63.6923253381936
+          ],
+          "G": [
+            960.6277511961722,
+            575.5336875664187,
+            5.121325309175376
+          ],
+          "B": [
+            911.294747666174,
+            585.3319548114262,
+            -0.5090650446191347
+          ],
+          "length": 577.0973600937725,
+          "grip_fraction": 0.9123011149723976,
+          "remaining_tail": 50.61079503259657,
+          "reachable": true,
+          "depth_note": "original orthonormal paper plane depth reconstructed from source projection, signed orthogonal basis matching original state depth; L retains probe construction depth; R uses -120 scene-depth to preserve finite length at unchanged visible grip; 2.5D construction, not measured hand volume"
+        },
+        "R": {
+          "A": [
+            1272.6744626942361,
+            570.222574308956,
+            -12.407852769754088
+          ],
+          "G": [
+            957.3894736842104,
+            712.5479277364506,
+            -120
+          ],
+          "B": [
+            940.5952845760564,
+            720.1291288201159,
+            -125.73107800917107
+          ],
+          "length": 381.56350585940044,
+          "grip_fraction": 0.9494271540801714,
+          "remaining_tail": 19.296752390457073,
+          "reachable": true,
+          "depth_note": "original orthonormal paper plane depth reconstructed from source projection, signed orthogonal basis matching original state depth; L retains probe construction depth; R uses -120 scene-depth to preserve finite length at unchanged visible grip; 2.5D construction, not measured hand volume"
+        }
+      }
+    }
+  },
+  "sources": {
+    "early": {
+      "call_id": "exec-cd116c85-cc76-49ee-a24d-ea731ccfd10f",
+      "raw_sha256": "058f5483d04981d741139ddcf0300ad33654d00c22bf9973e187f9d24753ef38",
+      "raw_to_scene": [
+        1.1483253588516746,
+        1.1477151965993624
+      ],
+      "whole_scene_similarity": [
+        0.84,
+        0,
+        0,
+        0.84,
+        -20,
+        164
+      ]
+    },
+    "rising": {
+      "call_id": "exec-41404789-ed21-4a32-a9d3-a789abb4d588",
+      "raw_sha256": "8edec197ebd18c29034d6128307d90a37a854ee938e6c8fbf6b2509ea8e43c0c",
+      "raw_to_scene": [
+        1.1483253588516746,
+        1.1477151965993624
+      ],
+      "whole_scene_similarity": [
+        0.94,
+        0,
+        0,
+        0.94,
+        -40,
+        62
+      ]
+    }
+  },
+  "exposure": "State keys select original apparatus only, NOT adoption of seventeen-frame hold. Try074->early->rising->095, omit old078090 bodies. Select short exposure based on real cadence; rising-to095 major hip-rise gap remains to evaluate."
+}
