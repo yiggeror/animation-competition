@@ -8,6 +8,8 @@
 - S28 用已审定的 1080p 成片：当前 `js/paint/shots/s28.js` 渲出来前半段多了一只大鹤（共享皮影代码后来改过），和审定版、工作片都不一致，不用模块重渲。S29 用交付的 272 格成片（模块的 240 格以后不全）。
 - 声音按新画面重新对位：片头小锣鼓；S12 立鹤、S14 衣夹/挂灯/拖凳/坐下、S20 递龟/缠签/翻肚/笑、S25 V8 放手电/手影/两声叫、S26 新动作（14.4 秒起加速）、S30 F110 关灯、S31 7.5 秒切床单正面时主题回来、S32 结尾"呛"、片尾笛子主题。
 - 母带改为线性增益 + 4 倍过采样限幅（不再用 loudnorm 动态模式，锣鼓保留冲击力）。
+- **成片**：`renders/final/nainai-de-piying_1080p24.mp4`（仓库里分两段，`python3 renders/final/restore_final.py` 还原）。1080p24，5787 帧，241.125 秒；-16.1 LUFS，真峰 -2.3 dBTP（AAC 编码后实测）。
+  36 个镜头每一帧缩到 360p 和合作方工作片比对，全部一致（PSNR 33.7 dB 以上；S32 296 帧之后不同是去掉了片名）。在 16 个声音点抽成片画面核对动作，全部对上；停电"啪"、撞龟壳"咣"在成片音轨里实测只差 5 ms。
 
 粗剪预览：`node tools/film.mjs --preview --audio build/audio/film_mix_norm.wav` → `build/film_preview.mp4`（960×540，build/ 不进仓库），
 按 `js/film/edl.js` 31 个镜头，约 244.5 秒。声音 `python3 audio/build.py` → `build/audio/film_mix_norm.wav`（-16 LUFS / -1.5 dBTP，三条分轨相加 = 总混音）。
