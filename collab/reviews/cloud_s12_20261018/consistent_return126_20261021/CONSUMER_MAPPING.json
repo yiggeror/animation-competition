@@ -1,0 +1,137 @@
+{
+  "status": "FIXED_REVIEW_FULL_BODY_CONTACT_PASSED_NOT_REALTIME_CONTINUITY",
+  "body": {
+    "url": "/collab/reviews/cloud_s12_20261018/consistent_return126_20261021/F126_COMPLETE_CHARACTER.png",
+    "sha256": "f004a15a60e076b77c200be71903bdc8e595d6fb135e1b7389e402b6f7ce8083",
+    "canvas": [
+      1920,
+      1080
+    ],
+    "runtime_transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "registration_already_baked": true
+  },
+  "source": {
+    "raw_sha256": "b8cbbfd6a77476d3a2a9a99abc4260fc2023998324c8096f787e32da325c4f4a",
+    "call_id": "exec-54b7667b-7edf-436b-8311-5be2f2b69b77",
+    "native_canvas": [
+      1672,
+      941
+    ],
+    "normalization": [
+      1.1483253588516746,
+      1.1477151965993624
+    ],
+    "no_additional_transform": true
+  },
+  "states": {
+    "126": {
+      "original_prop": {
+        "root": [
+          1239,
+          546
+        ],
+        "matrix": [
+          [
+            0.6954665949281291,
+            -0.016241447601467875
+          ],
+          [
+            -0.03874428380383416,
+            -0.7141886667614792
+          ]
+        ],
+        "pose": {
+          "angles": {
+            "neck0": 1.25,
+            "neck1": 0.10000000000000002,
+            "neck2": 0.08000000000000002,
+            "neck3": 0.05999999999999999,
+            "neck4": 0.03,
+            "neck5": 0.0,
+            "neck6": -0.039999999999999994,
+            "neck7": -0.07,
+            "neck8": -0.09,
+            "neck9": -0.1,
+            "neck10": -0.08999999999999998,
+            "neck11": -0.07000000000000002,
+            "head": -0.55,
+            "tibia_near": 0.07999999999999996,
+            "tarsus_near": -0.020000000000000018,
+            "foot_near": 0.02999999999999997,
+            "tibia_far": -0.04999999999999999,
+            "tarsus_far": 0.020000000000000018,
+            "foot_far": 0.02999999999999997
+          },
+          "rootAngle": 0,
+          "facing": 1
+        },
+        "free": {
+          "R": [
+            842.9640811384024,
+            618.9921307446873
+          ],
+          "L": [
+            781.3061685763762,
+            417.71629363786093
+          ]
+        },
+        "paperDegrees": 85
+      },
+      "background": "stage_8ac7b598c546.png",
+      "rods": {
+        "L": {
+          "A": [
+            1356.5098496531928,
+            431.72306749399445,
+            17.905687887192983
+          ],
+          "G": [
+            926.6985645933014,
+            459.0860786397449,
+            5.121325309175376
+          ],
+          "B": [
+            780.8319935710516,
+            468.3723601949583,
+            0.7826511124270326
+          ],
+          "length": 577.0973600937725,
+          "grip_fraction": 0.7466177142630327,
+          "remaining_tail": 146.22624819332975,
+          "reachable": true,
+          "depth_note": "original orthonormal paper plane depth reconstructed from source projection, signed orthogonal basis matching original126 depth; G inherits feasible probe depth, not measured hand volume"
+        },
+        "R": {
+          "A": [
+            1186.7425566947816,
+            544.6206892847187,
+            -14.209838885525237
+          ],
+          "G": [
+            948.5167464114833,
+            594.5164718384697,
+            -165.85200854895731
+          ],
+          "B": [
+            869.7687290255676,
+            611.0100413108709,
+            -215.97890369475647
+          ],
+          "length": 381.56350585940044,
+          "grip_fraction": 0.751563029777666,
+          "remaining_tail": 94.79448134312122,
+          "reachable": true,
+          "depth_note": "original orthonormal paper plane depth reconstructed from source projection, signed orthogonal basis matching original126 depth; G inherits feasible probe depth, not measured hand volume"
+        }
+      }
+    }
+  },
+  "phase": "unified body partial return;120126132 actual cadence pending"
+}
