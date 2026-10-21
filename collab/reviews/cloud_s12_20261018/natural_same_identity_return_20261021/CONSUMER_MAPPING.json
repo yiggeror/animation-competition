@@ -1,0 +1,111 @@
+{
+  "status": "fixed review finite return-reuse gate passed, no new drawing",
+  "asset_reference": "/collab/reviews/cloud_s12_20261018/natural_same_identity_lift_20261021/SAME_IDENTITY_LIFT_COMPLETE_CHARACTER.png",
+  "asset_sha256": "8287a906702a9777c6690ec2b49b66fe9b66528c4aa9077862c4041ec46a38e7",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "runtime_registration": "identity",
+  "states": {
+    "126": {
+      "original_prop": {
+        "root": [
+          1239,
+          546
+        ],
+        "matrix": [
+          [
+            0.6954665949281291,
+            -0.016241447601467875
+          ],
+          [
+            -0.03874428380383416,
+            -0.7141886667614792
+          ]
+        ],
+        "pose": {
+          "angles": {
+            "neck0": 1.25,
+            "neck1": 0.10000000000000002,
+            "neck2": 0.08000000000000002,
+            "neck3": 0.05999999999999999,
+            "neck4": 0.03,
+            "neck5": 0,
+            "neck6": -0.039999999999999994,
+            "neck7": -0.07,
+            "neck8": -0.09,
+            "neck9": -0.1,
+            "neck10": -0.08999999999999998,
+            "neck11": -0.07000000000000002,
+            "head": -0.55,
+            "tibia_near": 0.07999999999999996,
+            "tarsus_near": -0.020000000000000018,
+            "foot_near": 0.02999999999999997,
+            "tibia_far": -0.04999999999999999,
+            "tarsus_far": 0.020000000000000018,
+            "foot_far": 0.02999999999999997
+          },
+          "rootAngle": 0,
+          "facing": 1
+        },
+        "free": {
+          "R": [
+            842.9640811384024,
+            618.9921307446873
+          ],
+          "L": [
+            781.3061685763762,
+            417.71629363786093
+          ]
+        },
+        "paperDegrees": 85
+      },
+      "rods": {
+        "L": {
+          "A": [
+            1356.5098496531928,
+            431.72306749399445,
+            17.905687887192983
+          ],
+          "B": [
+            779.6274367614678,
+            415.97363183989194,
+            17.905687887192983
+          ],
+          "G": [
+            971.4832535885167,
+            421.211477151966,
+            17.905687887192983
+          ],
+          "length": 577.0973600937725,
+          "grip_fraction": 0.6674264762807766,
+          "reachable": true,
+          "depth_note": "2.5D construction: contact same depth as hinge; not measured palm volume"
+        },
+        "R": {
+          "A": [
+            1186.7425566947816,
+            544.6206892847187,
+            -14.209838885525237
+          ],
+          "B": [
+            806.5901471541399,
+            577.4056633454219,
+            -14.209838885525237
+          ],
+          "G": [
+            887.6555023923445,
+            570.4144527098831,
+            -14.209838885525237
+          ],
+          "length": 381.56350585940044,
+          "grip_fraction": 0.7867556453577128,
+          "reachable": true,
+          "depth_note": "2.5D construction: contact same depth as hinge; not measured palm volume"
+        }
+      }
+    }
+  },
+  "scope": "Return from small120 peak to exact newLIFT body; apparatus126 selector only, exposure pending actual. No PNG duplicate or generation."
+}
