@@ -1,6 +1,6 @@
 // Phase-selection correct complete far shoulder receiving phase. Keep exposure selection external.
 import {renderPaint,loadImg} from '../../../../js/paint/paintshot.js';
-import {shot as originalShot} from '../../../../js/anim/s12_drawn.js';
+import {shot as originalShot} from '../../../../js/anim/s12_early_retained_current140.js';
 import {makeCrane} from '../../../../js/lamp/crane.js';
 import {drawPuppet,solve,pointOn} from '../../../../js/puppet.js';
 export const DURATION=8,FPS=24;

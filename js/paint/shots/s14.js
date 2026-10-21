@@ -1,26 +1,9 @@
-// Production entry adapter for the adopted S14 render, source commit 6933ee5f.
-// Keep source modules/assets at their published URLs. No drawing/timing changes.
-import {renderFrame as renderPrefix} from '/collab/reviews/cloud_s14_scene_20261020/s14_scene.mjs';
-import {renderTail} from '/collab/reviews/cloud_s14_scene_20261020/s14_tail.mjs';
-export const DURATION = 10;
-export const FPS = 24;
-const EXPOSURES = '/collab/reviews/cloud_s14_scene_20261020/BACKSTAGE_RETURN_132_167_EXPOSURE_PROPOSAL.json';
-let rowsPromise;
-async function stepRows() {
-  return rowsPromise ??= fetch(EXPOSURES).then(async r => {
-    if (!r.ok) throw Error('S14 exposure load failed: '+r.status);
-    return (await r.json()).trialRows;
-  });
-}
-export async function renderFrame(ctx, t, W, H) {
-  const f = Math.max(0, Math.min(239, Math.floor(t * FPS + 1e-6)));
-  const time = f / FPS;
-  if (f < 132) return renderPrefix(ctx, time, W, H);
-  if (f < 168) {
-    const e = (await stepRows()).find(e => f >= e.frame && f <= e.through);
-    if (!e) throw Error('S14 approved step exposure absent at '+f);
-    return renderTail(ctx, time, W, H, e, {backstage:true, showUncoveredGrandma:false});
-  }
-  return renderTail(ctx, time, W, H, null, {backstage:true, showUncoveredGrandma:false});
-}
-export async function render(ctx, arg, W, H) { return renderFrame(ctx, +arg || 0, W, H); }
+// S14 final190-frame source glue. Keeps actual source clocks and one-time native registrations.
+import {renderFrame as renderGrandma} from '../../../collab/reviews/cloud_s14_scene_20261020/s14_scene.mjs';
+import {renderTail} from '../../../collab/reviews/cloud_s14_scene_20261020/s14_tail.mjs';
+export const FPS=24,DURATION=190/24;
+let rows;
+async function exposureRows(){return rows||=(await fetch('/collab/reviews/cloud_s14_scene_20261020/standing_drag_repair_20261021/EXPOSURES_THREE_BRIDGES_132_189.json')).json();}
+export async function getSequenceInfo(){return {fps:24,totalFrames:190,grandmaPrefix:[0,131],childTail:[132,189],sourceClocks:'original f/24 retained; no second normalization',tail:await exposureRows()};}
+export async function renderFrame(ctx,t,w,h){const f=Math.floor(t*24+1e-7);if(f<0||f>=190)throw RangeError('S14 exactly190 frames');if(f<132)return renderGrandma(ctx,t,w,h,{groundFix:true,stableGrain:true});const e=(await exposureRows()).find(r=>f>=r.frame&&f<=r.through);if(!e)throw Error('Missing S14 adopted tail exposure '+f);return renderTail(ctx,t,w,h,e,{backstage:true,groundFix:true});}
+export async function render(ctx,arg,w,h){return renderFrame(ctx,+arg||0,w,h);}

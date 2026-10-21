@@ -1,15 +1,42 @@
 // S32 · 第 13 场：屋外，夜。镜头从这扇窗慢慢往后退：村子里家家户户亮着日光灯的白光，电线杆和电线横过夜空（"来电"了）；
-// 只有这一扇窗是暖黄的——窗里挂着床单，床单上鹤和乌龟的影子还在动。退到全景，片名"来电"浮出来（音乐的"呛"在 S32 结尾）。
+// 只有这一扇窗是暖黄的——窗里挂着床单，床单上鹤和乌龟的影子还在动。退到全景（片名已移到片头；音乐的"呛"在 S32 结尾）。
 // 代码画的版本（等合作方的 bg_34_village_night 到了再换成底图 + 程序打光）。世界坐标 3840×2160，镜头从窗口拉到全景。
 import { makeCrane } from '../lamp/crane.js';
 import { makeTurtle, turtlePose } from '../lamp/turtle.js';
-import { drawPuppet } from '../puppet.js';
-import { NECK_UP, NECK_LOW, cranePoseOf, mixNeck } from '../lamp/choreo.js';
+import { drawPuppet, pointOn } from '../puppet.js';
+import { NECK_UP, NECK_LOW, NECK_DOWN, cranePoseOf, mixNeck } from '../lamp/choreo.js';
 export const DURATION = 15;
+export const SHOW_TITLE = false;
 const WW = 3840, WH = 2160, LINE = '#120d0a';
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
 const WIN = { x: 1920, y: 1330, w: 300, h: 230 };       // 那扇窗（世界坐标中心、宽高）
 let SKY = null, CRANE = null, TURTLE = null;
+
+// 一次连续的安静对戏，不取模、不让两只偶同步往复。
+// 每次行进都以零速度起停；腿的相位只在行进中累积，停下便落脚。
+export function windowPerformance(t) {
+  const ramp = (a, b) => sstep(a, b, t);
+  const pulse = (a, b, c, d) => ramp(a, b) - ramp(c, d);
+  const first = ramp(0.45, 1.85), second = ramp(6.10, 7.65);
+  const velocity = (a, b) => {
+    const u = Math.max(0, Math.min(1, (t - a) / (b - a)));
+    return 4 * u * (1 - u);
+  };
+  return {
+    travel: 23 * first + 17 * second,
+    stepTime: 1.25 * first + 1.25 * second,
+    walk: 0.95 * Math.max(velocity(0.45, 1.85), velocity(6.10, 7.65)),
+    // 龟先走近停住，鹤看它；龟伸颈回答后，鹤才抬起。
+    bow: 0.06 + 0.83 * pulse(1.65, 2.65, 3.65, 4.65)
+      + 0.69 * pulse(7.55, 8.70, 9.50, 10.65)
+      + 0.40 * pulse(12.05, 13.25, 14.00, 15.40),
+    neckOut: 0.38 + 0.45 * pulse(2.75, 3.35, 4.25, 5.10)
+      + 0.38 * pulse(8.70, 9.30, 10.25, 11.15)
+      + 0.30 * ramp(13.35, 14.50),
+    headTilt: 0.14 * pulse(2.90, 3.45, 4.10, 4.80)
+      + 0.12 * pulse(8.85, 9.40, 10.20, 10.90),
+  };
+}
 
 function rnd(seed) { let s = seed; return () => ((s = (s * 16807) % 2147483647) / 2147483647); }
 
@@ -84,9 +111,36 @@ function mainHouse(x, t) {
   CRANE ||= makeCrane(1.35, 'plain'); TURTLE ||= makeTurtle();
   // 皮影在床单上的影子：先画到单独的画布，再整块涂成暗色（只要轮廓）
   const sh = new OffscreenCanvas(w * 2, h * 2), sx = sh.getContext('2d');
-  const neck = mixNeck(NECK_UP, NECK_LOW, 0.5 + 0.5 * Math.sin(t * 1.3));
-  sx.save(); sx.translate(w * 0.72, h * 1.55); sx.scale(0.62, -0.62); drawPuppet(sx, CRANE, cranePoseOf(neck, { mode: 'stand' }, 0.04 + 0.03 * Math.sin(t * 1.3), 1), 'r'); sx.restore();
-  sx.save(); sx.translate(w * 1.45, h * 1.7); sx.scale(0.6, -0.6); drawPuppet(sx, TURTLE, turtlePose(t, { facing: -1, walk: 0.6, neckOut: 0.5 + 0.4 * Math.sin(t * 0.9) }), 'r'); sx.restore();
+  const a = windowPerformance(t);
+  const neck = mixNeck(NECK_UP, mixNeck(NECK_LOW, NECK_DOWN, 0.34), a.bow);
+  const cp = cranePoseOf(neck, { mode: 'stand', swing: a.bow * 0.08 }, 0.04, 1);
+  const tp = turtlePose(a.stepTime, {
+    facing: -1, walk: a.walk, speed: 0.8, neckOut: a.neckOut,
+    headTilt: a.headTilt,
+  });
+  // 固定投影尺度与朝向。头颈有转动，不用镜像翻转冒充转身。
+  // 签子端点从同一次正向运动学求解得到，不能漂在皮影旁边。
+  const drawHeld = (pup, pose, px, py, scale, rods) => {
+    sx.save(); sx.translate(px, py); sx.scale(scale, -scale);
+    const sol = drawPuppet(sx, pup, pose, 'r');
+    sx.restore();
+    sx.save(); sx.strokeStyle = '#462612'; sx.lineWidth = 2.8; sx.lineCap = 'round';
+    for (const rod of rods) {
+      const pt = pointOn(pup, sol, rod.part, rod.at);
+      const ax = px + scale * pose.facing * pt[0], ay = py - scale * pt[1];
+      sx.beginPath(); sx.moveTo(ax, ay);
+      sx.lineTo(rod.handX, h * 2 + 24); sx.stroke();
+    }
+    sx.restore();
+  };
+  drawHeld(CRANE, cp, w * 0.72, h * 1.30, 0.62, [
+    { part: 'body', at: [24, 12], handX: w * 0.62 },
+    { part: 'head', at: [0, 0], handX: w * 1.10 + 10 * a.bow },
+  ]);
+  drawHeld(TURTLE, tp, w * 1.53 - a.travel, h * 1.70, 0.6, [
+    { part: 'shell', at: [0, 35], handX: w * 1.55 - a.travel },
+    { part: 'head', at: [20, 0], handX: w * 1.28 - a.travel * 0.7 },
+  ]);
   sx.globalCompositeOperation = 'source-in'; sx.fillStyle = 'rgba(70,38,18,0.82)'; sx.fillRect(0, 0, w * 2, h * 2);
   wc.filter = 'blur(2px)'; wc.drawImage(sh, 0, 0); wc.filter = 'none';
   x.drawImage(win, wx - w / 2, wy - h / 2, w, h);
@@ -137,8 +191,8 @@ export async function renderFrame(ctx, t, W, H) {
   ctx.translate(W / 2, H / 2); ctx.scale(sc, sc); ctx.translate(-cx, -cy);
   ctx.drawImage(world, 0, 0);
   ctx.restore();
-  // 片名
-  const ta = sstep(11.6, 13.0, t);
+  // 片名（10-21 起片名移到片头 js/code/title.js；这里留着开关，成片不显示）
+  const ta = SHOW_TITLE ? sstep(11.6, 13.0, t) : 0;
   if (ta > 0) {
     ctx.save(); ctx.globalAlpha = ta; ctx.fillStyle = '#f6e7c8'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
     ctx.font = `${Math.round(H * 0.16)}px "Ma Shan Zheng"`; ctx.shadowColor = 'rgba(255,200,120,0.6)'; ctx.shadowBlur = H * 0.03;
@@ -147,3 +201,4 @@ export async function renderFrame(ctx, t, W, H) {
   const v = ctx.createRadialGradient(W / 2, H / 2, H * 0.4, W / 2, H / 2, H * 0.95); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,0.5)'); ctx.fillStyle = v; ctx.fillRect(0, 0, W, H);
 }
 export async function render(ctx, arg, W, H) { return renderFrame(ctx, +arg || 0, W, H); }
+

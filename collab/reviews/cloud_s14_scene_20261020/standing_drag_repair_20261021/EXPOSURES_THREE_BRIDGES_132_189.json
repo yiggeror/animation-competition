@@ -1,0 +1,665 @@
+[
+  {
+    "id": "01_STANDING_GRIP_STANDING_DRAG_V2",
+    "frame": 132,
+    "through": 135,
+    "path": "/collab/reviews/cloud_s14_scene_20261020/standing_drag_repair_20261021/01_STANDING_GRIP_REGISTERED.png",
+    "sha256": "272a7dac022bf190fd85ea4896b37df09d36dd4db0b7c4263dd57c11a99aad9c",
+    "nativeToCommonScale": 1,
+    "nativeToCommonTranslation": [
+      96.25,
+      140
+    ],
+    "diagnosticExposureOnly": true,
+    "workprintAction": "standing grip -> pull stool with planted feet -> stop -> turn standing; no hoist",
+    "groundedSoleRegions": [
+      [
+        329,
+        1033,
+        404,
+        1064
+      ],
+      [
+        620,
+        1035,
+        691,
+        1065
+      ],
+      [
+        414,
+        985,
+        471,
+        1014
+      ],
+      [
+        663,
+        988,
+        724,
+        1020
+      ],
+      [
+        780,
+        1005,
+        928,
+        1034
+      ],
+      [
+        870,
+        1031,
+        1040,
+        1064
+      ]
+    ]
+  },
+  {
+    "id": "01B_PULL_MID_STANDING_DRAG_V2",
+    "frame": 136,
+    "through": 138,
+    "path": "/collab/reviews/cloud_s14_scene_20261020/standing_drag_repair_20261021/01B_PULL_MID_REGISTERED.png",
+    "sha256": "66f91e3ba160da073292ec58141cf2780837bcde7c5db279a5e143127a233635",
+    "nativeToCommonScale": 1,
+    "nativeToCommonTranslation": [
+      96.25,
+      140
+    ],
+    "diagnosticExposureOnly": true,
+    "workprintAction": "standing grip -> pull stool with planted feet -> stop -> turn standing; no hoist",
+    "groundedSoleRegions": [
+      [
+        347,
+        1033,
+        422,
+        1064
+      ],
+      [
+        638,
+        1035,
+        709,
+        1065
+      ],
+      [
+        432,
+        985,
+        489,
+        1014
+      ],
+      [
+        681,
+        988,
+        742,
+        1020
+      ],
+      [
+        780,
+        1005,
+        928,
+        1034
+      ],
+      [
+        870,
+        1031,
+        1040,
+        1064
+      ]
+    ]
+  },
+  {
+    "operation": "insert one whole-body pull drawing after01B and before02",
+    "durationFrames": 3,
+    "id": "01H_GUIDED_MID_STANDING_PULL",
+    "path": "/collab/reviews/cloud_s14_scene_20261020/standing_drag_repair_20261021/01H_GUIDED_MID_REGISTERED.png",
+    "sha256": "31714185cab6a5d76cfe56b17d0c842718c4e855a5c3ff78d9b20d0bc32617d8",
+    "nativeToCommonScale": 1,
+    "nativeToCommonTranslation": [
+      96.25,
+      140
+    ],
+    "groundedSoleRegions": [
+      [
+        394,
+        1033,
+        469,
+        1064
+      ],
+      [
+        685,
+        1035,
+        756,
+        1065
+      ],
+      [
+        479,
+        985,
+        536,
+        1014
+      ],
+      [
+        728,
+        988,
+        789,
+        1020
+      ],
+      [
+        780,
+        1005,
+        928,
+        1034
+      ],
+      [
+        870,
+        1031,
+        1040,
+        1067
+      ]
+    ],
+    "stoolOffset": [
+      -24,
+      0
+    ],
+    "personTranslation": [
+      0,
+      0
+    ],
+    "shoeCentroidX": 916.83327,
+    "diagnosticExposureOnly": true,
+    "workprintAction": "feet planted, stool guided mid-pull; source offset already baked, no extra prop/person transform",
+    "frame": 139,
+    "through": 141
+  },
+  {
+    "id": "02_PULL_NEAR_STANDING_DRAG_V2",
+    "frame": 142,
+    "through": 144,
+    "path": "/collab/reviews/cloud_s14_scene_20261020/standing_drag_repair_20261021/02_PULL_NEAR_REGISTERED.png",
+    "sha256": "9f2fd2ae3f7daa716c228540bd7acf6cce9e07405315894f2f4e9179e35f541d",
+    "nativeToCommonScale": 1,
+    "nativeToCommonTranslation": [
+      96.25,
+      140
+    ],
+    "diagnosticExposureOnly": true,
+    "workprintAction": "standing grip -> pull stool with planted feet -> stop -> turn standing; no hoist",
+    "groundedSoleRegions": [
+      [
+        418,
+        1033,
+        493,
+        1064
+      ],
+      [
+        709,
+        1035,
+        780,
+        1065
+      ],
+      [
+        503,
+        985,
+        560,
+        1014
+      ],
+      [
+        752,
+        988,
+        813,
+        1020
+      ],
+      [
+        780,
+        1005,
+        928,
+        1034
+      ],
+      [
+        870,
+        1031,
+        1040,
+        1064
+      ]
+    ]
+  },
+  {
+    "id": "02J_RISE_HALF_TURN",
+    "path": "/collab/reviews/cloud_s14_scene_20261020/standing_drag_repair_20261021/02J_RISE_HALF_TURN_REGISTERED.png",
+    "sha256": "93847a4895d3138a1d4e5b2488a0d80abb8a1a8aada38fa5df4630a9400345b0",
+    "nativeToCommonScale": 1,
+    "nativeToCommonTranslation": [
+      96.25,
+      140
+    ],
+    "groundedSoleRegions": [
+      [
+        418,
+        1033,
+        493,
+        1064
+      ],
+      [
+        709,
+        1035,
+        780,
+        1065
+      ],
+      [
+        503,
+        985,
+        560,
+        1014
+      ],
+      [
+        752,
+        988,
+        813,
+        1020
+      ],
+      [
+        805,
+        1015,
+        930,
+        1065
+      ],
+      [
+        900,
+        1040,
+        1040,
+        1080
+      ]
+    ],
+    "stoolOffset": [
+      0,
+      0
+    ],
+    "diagnosticExposureOnly": true,
+    "frame": 145,
+    "through": 147,
+    "workprintAction": "rise and half-turn between stopped pull and standing turn"
+  },
+  {
+    "id": "03_TURN_MID_STANDING_DRAG_V2",
+    "frame": 148,
+    "through": 150,
+    "path": "/collab/reviews/cloud_s14_scene_20261020/standing_drag_repair_20261021/03_TURN_MID_REGISTERED.png",
+    "sha256": "ae42c6466e3c1eaa70fa2a1b0ee01e2eb2885816310bd732a7cd997796adcb57",
+    "nativeToCommonScale": 1,
+    "nativeToCommonTranslation": [
+      96.25,
+      140
+    ],
+    "diagnosticExposureOnly": true,
+    "workprintAction": "standing grip -> pull stool with planted feet -> stop -> turn standing; no hoist",
+    "groundedSoleRegions": [
+      [
+        418,
+        1033,
+        493,
+        1064
+      ],
+      [
+        709,
+        1035,
+        780,
+        1065
+      ],
+      [
+        503,
+        985,
+        560,
+        1014
+      ],
+      [
+        752,
+        988,
+        813,
+        1020
+      ],
+      [
+        812,
+        1025,
+        925,
+        1057
+      ],
+      [
+        900,
+        1040,
+        1022,
+        1075
+      ]
+    ]
+  },
+  {
+    "id": "04_RIGHT_STAND_STANDING_DRAG_V2",
+    "frame": 151,
+    "through": 154,
+    "path": "/collab/reviews/cloud_s14_scene_20261020/standing_drag_repair_20261021/04_RIGHT_STAND_REGISTERED.png",
+    "sha256": "3c2f6888b44ed8038f1fb29b587c1dec2ed0084dcb6538690b6d555de53aa988",
+    "nativeToCommonScale": 1,
+    "nativeToCommonTranslation": [
+      96.25,
+      140
+    ],
+    "diagnosticExposureOnly": true,
+    "workprintAction": "standing grip -> pull stool with planted feet -> stop -> turn standing; no hoist",
+    "groundedSoleRegions": [
+      [
+        418,
+        1033,
+        493,
+        1064
+      ],
+      [
+        709,
+        1035,
+        780,
+        1065
+      ],
+      [
+        503,
+        985,
+        560,
+        1014
+      ],
+      [
+        752,
+        988,
+        813,
+        1020
+      ],
+      [
+        821,
+        1030,
+        960,
+        1073
+      ],
+      [
+        924,
+        1024,
+        1040,
+        1058
+      ]
+    ]
+  },
+  {
+    "id": "04K_KNEE_SOFTEN",
+    "path": "/collab/reviews/cloud_s14_scene_20261020/standing_drag_repair_20261021/04K_KNEE_SOFTEN_REGISTERED.png",
+    "sha256": "aa825420a662c593b1baef81ffc161dbcacd7e8e21d3a31cf97a47441edb780c",
+    "nativeToCommonScale": 1,
+    "nativeToCommonTranslation": [
+      96.25,
+      140
+    ],
+    "groundedSoleRegions": [
+      [
+        418,
+        1033,
+        493,
+        1064
+      ],
+      [
+        709,
+        1035,
+        780,
+        1065
+      ],
+      [
+        503,
+        985,
+        560,
+        1014
+      ],
+      [
+        752,
+        988,
+        813,
+        1020
+      ],
+      [
+        810,
+        1030,
+        980,
+        1073
+      ],
+      [
+        937,
+        1018,
+        1055,
+        1060
+      ]
+    ],
+    "stoolOffset": [
+      0,
+      0
+    ],
+    "diagnosticExposureOnly": true,
+    "frame": 155,
+    "through": 156,
+    "workprintAction": "two-frame knee softening only; no held head nod"
+  },
+  {
+    "id": "05_SUPPORTED_LOWER_NATURAL_SIT_V2",
+    "frame": 157,
+    "through": 160,
+    "path": "/collab/reviews/cloud_s14_scene_20261020/standing_drag_repair_20261021/05_SUPPORTED_LOWER_REGISTERED.png",
+    "sha256": "01bc45a123253145fd8a44edd756cb1330fc3d3d1c3bff197037eaf5cb7d72d5",
+    "nativeToCommonScale": 1,
+    "nativeToCommonTranslation": [
+      96.25,
+      140
+    ],
+    "diagnosticExposureOnly": true,
+    "groundedSoleRegions": [
+      [
+        418,
+        1033,
+        493,
+        1064
+      ],
+      [
+        709,
+        1035,
+        780,
+        1065
+      ],
+      [
+        503,
+        985,
+        560,
+        1014
+      ],
+      [
+        752,
+        988,
+        813,
+        1020
+      ],
+      [
+        807,
+        1038,
+        980,
+        1080
+      ],
+      [
+        947,
+        1020,
+        1085,
+        1065
+      ]
+    ],
+    "workprintAction": "feet and hand support until touching seat"
+  },
+  {
+    "id": "05J_SEAT_CONTACT_BRIDGE",
+    "path": "/collab/reviews/cloud_s14_scene_20261020/standing_drag_repair_20261021/05J_SEAT_CONTACT_BRIDGE_REGISTERED.png",
+    "sha256": "14ecc31c14d22127890aae54942d2957001aa421caceb06cad3f4141eb35ea85",
+    "nativeToCommonScale": 1,
+    "nativeToCommonTranslation": [
+      96.25,
+      140
+    ],
+    "groundedSoleRegions": [
+      [
+        418,
+        1033,
+        493,
+        1064
+      ],
+      [
+        709,
+        1035,
+        780,
+        1065
+      ],
+      [
+        503,
+        985,
+        560,
+        1014
+      ],
+      [
+        752,
+        988,
+        813,
+        1020
+      ],
+      [
+        802,
+        1030,
+        990,
+        1085
+      ],
+      [
+        939,
+        1023,
+        1090,
+        1075
+      ]
+    ],
+    "stoolOffset": [
+      0,
+      0
+    ],
+    "diagnosticExposureOnly": true,
+    "frame": 161,
+    "through": 163,
+    "workprintAction": "first seat contact, support transfers from feet and palm to stool"
+  },
+  {
+    "id": "06_SEATED_SETTLE_NATURAL_SIT_V2",
+    "frame": 164,
+    "through": 169,
+    "path": "/collab/reviews/cloud_s14_scene_20261020/standing_drag_repair_20261021/06_SEATED_SETTLE_REGISTERED.png",
+    "sha256": "068487e77bb8780442a595b674e1aefd66bf41dd98b09ec4760953104d3a494f",
+    "nativeToCommonScale": 1,
+    "nativeToCommonTranslation": [
+      96.25,
+      140
+    ],
+    "diagnosticExposureOnly": true,
+    "groundedSoleRegions": [
+      [
+        418,
+        1033,
+        493,
+        1064
+      ],
+      [
+        709,
+        1035,
+        780,
+        1065
+      ],
+      [
+        503,
+        985,
+        560,
+        1014
+      ],
+      [
+        752,
+        988,
+        813,
+        1020
+      ]
+    ],
+    "workprintAction": "pelvis supported on fixed seat; no shoe-ground AO"
+  },
+  {
+    "id": "07_STABLE_HEAD_NATURAL_SIT_V2",
+    "frame": 170,
+    "through": 174,
+    "path": "/collab/reviews/cloud_s14_scene_20261020/standing_drag_repair_20261021/07_STABLE_HEAD_REGISTERED.png",
+    "sha256": "f495cddce0f63132c9bdfcc523abdb38bbc8f579e154e76bfafb3ee7e4b18b2a",
+    "nativeToCommonScale": 1,
+    "nativeToCommonTranslation": [
+      96.25,
+      140
+    ],
+    "diagnosticExposureOnly": true,
+    "groundedSoleRegions": [
+      [
+        418,
+        1033,
+        493,
+        1064
+      ],
+      [
+        709,
+        1035,
+        780,
+        1065
+      ],
+      [
+        503,
+        985,
+        560,
+        1014
+      ],
+      [
+        752,
+        988,
+        813,
+        1020
+      ]
+    ],
+    "workprintAction": "pelvis supported on fixed seat; no shoe-ground AO"
+  },
+  {
+    "id": "08_ARMS_CROSSED_NATURAL_SIT_V2",
+    "frame": 175,
+    "through": 189,
+    "path": "/collab/reviews/cloud_s14_scene_20261020/standing_drag_repair_20261021/08_ARMS_CROSSED_REGISTERED.png",
+    "sha256": "5054a551bddb882f30059fa64e0e6763b758498d808432d0b2b96c64ec5f3c65",
+    "nativeToCommonScale": 1,
+    "nativeToCommonTranslation": [
+      96.25,
+      140
+    ],
+    "diagnosticExposureOnly": true,
+    "groundedSoleRegions": [
+      [
+        418,
+        1033,
+        493,
+        1064
+      ],
+      [
+        709,
+        1035,
+        780,
+        1065
+      ],
+      [
+        503,
+        985,
+        560,
+        1014
+      ],
+      [
+        752,
+        988,
+        813,
+        1020
+      ]
+    ],
+    "workprintAction": "pelvis supported on fixed seat; no shoe-ground AO"
+  }
+]

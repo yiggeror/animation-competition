@@ -1,10 +1,12 @@
 # CREDITS · 素材来源与授权
 
+片名《奶奶的皮影》。片尾"制作与资源"（`js/code/making.js`）只列技术手段、工具、字体和声音来源，内容与本页一致。
+
 ## 字体
 | 字体 | 作者 | 授权 | 来源 | 用途 |
 |---|---|---|---|---|
 | Noto Sans SC（思源黑体） | Adobe / Google | SIL Open Font License 1.1（`assets/fonts/OFL-NotoSansSC.txt`） | https://github.com/google/fonts/tree/main/ofl/notosanssc | 文档插图、字幕 |
-| Ma Shan Zheng（马善政毛笔楷书） | 马善政 | SIL Open Font License 1.1（`assets/fonts/OFL-MaShanZheng.txt`） | https://github.com/google/fonts/tree/main/ofl/mashanzheng | 片名备选 |
+| Ma Shan Zheng（马善政毛笔楷书） | 马善政 | SIL Open Font License 1.1（`assets/fonts/OFL-MaShanZheng.txt`） | https://github.com/google/fonts/tree/main/ofl/mashanzheng | 片名、片尾片名卡 |
 
 ## 画面
 - 屋子、光照、皮影（鹤、乌龟）、手影狗、影子、手机屏幕：本仓库的程序逐帧计算生成，不使用现成图片素材。

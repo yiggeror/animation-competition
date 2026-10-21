@@ -2,6 +2,7 @@
 // not a facial morph or a completed blow. No change to the global renderer.
 import { renderShot, billboardM, S } from '../../lamp/s06_key.js';
 import { loadMaps, makeLamp, flatMaps } from '../../lamp/s08_back.js';
+import { composeGrandmaShadow } from './s29_shadow_bust.js';
 const GR={ox:250,oy:770,sc:24}; // original lip point; 24 source pixels per cm
 const FINAL=[1.43,.44,1.23];
 const smooth=(a,b,t)=>{const u=Math.max(0,Math.min(1,(t-a)/(b-a)));return u*u*(3-2*u);};
@@ -9,7 +10,9 @@ let GM=null,LM=null,PUP=null;
 async function ready(){
   if(GM)return;
   const maps=await loadMaps('g29_prepare_blow');
-  const mask=await createImageBitmap(await(await fetch('/assets/chars/g29_prepare_blow_shadow.png')).blob());
+  const original=await createImageBitmap(await(await fetch('/assets/chars/g29_prepare_blow_shadow.png')).blob());
+  const extension=await createImageBitmap(await(await fetch('/assets/chars/g29_neck_shoulders_20261021.png')).blob());
+  const mask=composeGrandmaShadow(original,extension);
   const bounds=[-GR.ox/GR.sc*10,(GR.oy-mask.height)/GR.sc*10,(mask.width-GR.ox)/GR.sc*10,GR.oy/GR.sc*10];
   const part={part:'head',parent:null,layer:0,bounds,t:mask,r:maps.alb};
   PUP={rig:[part],parts:{head:part}};LM=preparationLamp();GM=maps;
@@ -60,3 +63,4 @@ const frozen={
 };
 export async function renderPreparation(ctx,localTime,w,h){await ready();return renderShot(ctx,10+localTime,w,h,prepare);}
 export async function renderFrozenHead(ctx,s30Time,w,h){await ready();return renderShot(ctx,12+s30Time,w,h,frozen);}
+
