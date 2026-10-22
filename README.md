@@ -1,95 +1,30 @@
-# 《奶奶的皮影》
+# 奶奶的皮影｜工程源代码
 
-全国大学生数字媒体科技作品及创意竞赛 · 影视/动画赛道 · 2D 动画短片（无对白，4 分 05 秒；制作期间的工作标题是《来电》，仓库和代码里的 `laidian` 沿用旧名）。
+本目录为影片制作工程的源程序与配置文件整理版。文件路径沿用原项目，以保持镜头模块之间的导入关系。
 
-> 停电了。奶奶从木箱里翻出一套皮影，祖孙俩在床单上演起了《龟与鹤》。最热闹的时候，来电了。
+## 代码结构
 
-**画面由本仓库的程序逐帧绘制生成**——不是录屏，不拼现成素材。团队原先规定不用 AI 生成的图片，2026-10-16 放宽为"最终动画好看最重要"：AI 生成的图可以作参考或经处理入片，每张都登记在 `docs/ai-usage-log.md`。从 2026-10-16 起，人物改用合作 AI 和用户生成的人物图：抠图后由程序算法线和材质，放进同一套光照，再用程序做头部转动、眨眼、换图等动作（`tools/cutout.py`、`tools/card_maps.py`、`js/lamp/xm_rig.js`）；屋子、光照、皮影和影子仍由程序绘制。床单上的影子按真实几何计算：马灯有真实的位置和大小，皮影离床单越远影子越大越虚，彩色牛皮透出彩色的光。
+- `js/film/edl.js`：最终镜头顺序、时长及视频镜头接入。
+- `js/anim/`、`js/chars/`、`js/rig/`：人物动作、姿态序列与变形逻辑。
+- `js/paint/`、`js/lamp/`、`js/puppet.js`：手绘场景、二维光照、皮影与投影计算。
+- `js/code/`、`js/film/`：画面模块、片头片尾与剪辑时间线。
+- `task/`、`collab/reviews/`：S12、S14、S31 等镜头仍在使用的独立程序模块及数据映射文件。仅收录运行依赖，不包含评审材料。
+- `assets/`：帧曝光、骨骼及动作序列 JSON 配置，未收录图片等媒体文件。
+- `src/laidian/`：Python 画面绘制与渲染辅助程序。
+- `tools/`：浏览器逐帧导出、视频拼接及工程处理脚本。
+- `dev/view.html`：镜头预览页。
 
-## 成片怎么做出来
-1. 画面：`node tools/render_film.mjs` 按剪辑表 `js/film/edl.js`（片头 + 36 个镜头 + 片尾，5883 格）把每个镜头渲成 1080p24 中间片 `build/final/<镜头>.mp4`；
-   有 `video` 字段的镜头（S28、S29）直接用已审定的成片。`python3 tools/verify_film.py` 把渲出来的每一帧和合作方的完整画面工作片逐帧比对。
-2. 声音：`python3 audio/build.py` → `build/audio/film_mix_norm.wav`（-16 LUFS，真峰 ≤ -2.4 dBTP）。配乐程序合成，音效和人声用 Freesound 的 CC0 真实录音（`assets/sfx/`）。所有声音按"镜头号 + 镜头内秒数/帧号"定位，剪辑表改了自动跟着走。
-3. 合成：`node tools/master_film.mjs` → `renders/final/nainai-de-piying_1080p24.mp4`。
+## 主要处理流程
 
-## 目录
-| 路径 | 内容 |
-|---|---|
-| `docs/brief-v2.md` | 团队的制作提示词（原始需求） |
-| `docs/research/` | 皮影查证 |
-| `docs/preproduction/` | 剧本 v3、节拍表与能量曲线、平面图、镜头表 |
-| `docs/design/` | 画风方向、人物 / 皮影 / 场景设计说明 |
-| `docs/ai-usage-log.md` | AI 使用记录（哪些是 AI 做的，哪些是团队的决定） |
-| `src/laidian/layout.py` | 堂屋布局：全片唯一的空间数据来源 |
-| `js/lamp/` | 第四版：光照引擎、人物卡片、皮影与布景、关键镜头 |
-| `js/` | 第二、三版（2D、剪纸片）：绘制库、人物、皮影与影子、镜头、设计稿 |
-| `src/laidian/render/` | 第一版（3D）渲染器，保留作过程记录 |
-| `src/laidian/shots/` | 各个镜头 / 样张 / 设计稿的脚本 |
-| `tools/` | 平面图、能量曲线、检查用的小工具 |
-| `renders/` | 提交到仓库的预览图和小样（完整高清版另存，见下） |
-| `PROGRESS.md` | 进度 |
-| `CREDITS.md` | 素材来源与授权 |
+最终镜头表由 `js/film/edl.js` 定义；`tools/js/frames.cjs` 通过浏览器逐帧调用各镜头的 `renderFrame()`；`tools/render_film.mjs` 生成分镜片段，`tools/master_film.mjs` 负责按时间线合成为影片。
 
-## 当前技术路线（第四版："一盏灯照亮的世界"）
-屋子、床单、马灯、月光按真实尺寸建模，在 WebGL 着色器里逐像素计算光照（无头 Chromium 自带的 SwiftShader 软件渲染，结果和显卡无关）；
-人物是 2D 设计的"卡片"，由轮廓算法线后参与同一套光照；皮影是刻花、染色的牛皮透光图，床单上的影子由 `js/shadowplay.js` 按几何投影。
-- `js/lamp/gl.js`、`js/lamp/shaders.js`：渲染遍（表面 → 空气散射 → 合成 → 泛光 → 调色）
-- `js/lamp/cards.js`：由轮廓算法线（精确欧氏距离变换）；`js/lamp/xiaoman.js`：小满
-- `js/lamp/crane.js`：鹤皮影；`js/lamp/scenery.js`：皮影布景（荷塘、松枝）
-- `js/lamp/s06_key.js`：第 6 场关键镜头（场景尺寸、镜头、动作）；`xm_sheet.js`、`crane_sheet.js`：造型检查图
+在具有完整素材的原工程中，可安装 `package.json` 声明的 Node.js 依赖，并准备 FFmpeg 与 Playwright 浏览器环境；随后运行对应渲染和合成脚本。
 
-```bash
-npm install
-node tools/js/snap.cjs js/lamp/s06_key.js key.png 1920 1080 3.0            # 静帧（参数 = 时间，秒）
-node tools/js/frames.cjs js/lamp/s06_key.js build/key --fps 24 --workers 3 --mp4 key.mp4   # 5 秒动态
-```
+## 本代码包的边界
 
-## 第二版技术路线（2D，已被取代）
-画面由 `js/` 里的 JavaScript 在 Canvas 上逐帧绘制，用无头 Chromium（Playwright）逐帧导出、ffmpeg 合成。每一帧是时间的纯函数。
-- `js/lib/`：手绘笔触、一笔画成的人物（连续外轮廓）、亮边、光照图
-- `js/chars/`：小满、奶奶（正面/侧面/背面）、五官、手
-- `js/puppet.js`、`js/shadowplay.js`：皮影部件与正向运动学；床单上影子的几何计算（放大、两种半影、彩色透光、签子）
-- `js/shots/`：镜头；`js/sheets/`：设计稿
+本包仅包含源代码、HTML 预览页与 JSON 配置。图像、视频、音频、字体、制作记录、测试报告和生成提示词均未收录。
 
-```bash
-npm install                       # Playwright（用本机已装的 Chromium）
-bash tools/render_cp1_2d.sh build/cp1_2d          # 人物设计稿 + 两段动作测试
-node tools/js/snap.cjs js/sheets/characters.js out.png 1920 1080 expr   # 单张
-node tools/js/frames.cjs js/shots/s06_test.js build/s06 --mp4 build/s06.mp4  # 一段动画
-PYTHONPATH=src python tools/export_puppets.py assets/puppets             # 重新导出皮影贴图
-```
+部分镜头依赖外部绘制的角色逐帧图，因而仅凭本包不能完整复现最终成片。最终剪辑表中 S28、S29 直接接入已完成的视频片段；原项目的对应视频资源也未包含在本包内。文件中的媒体资源路径保持原状，便于与完整工程对应。
 
-第一版的 Python 3D 渲染器（`src/laidian/render/`）保留作过程记录；它算出的布景结论（马灯高度、艺人站位、皮影要靠近灯影子才大而虚）在第二版里继续沿用。
-
-## 第一版怎么重新生成
-
-### 环境
-- Python 3.11+，依赖：`pip install numpy scipy numba pillow`
-- ffmpeg（拼视频用）
-- 字体已在 `assets/fonts/`（SIL OFL 授权）
-
-### 命令
-```bash
-export PYTHONPATH=src
-
-# 平面图、剖面图、能量曲线
-python tools/draw_floorplan.py
-python tools/draw_tension.py
-
-# 第一个检查点的全部图：画风样张（1920×1080）、设计稿、动态小样
-bash tools/render_checkpoint1.sh build/checkpoint1
-
-# 单独跑某一部分
-python -m laidian.shots.style_samples build/samples --w 1920 --h 1080 --ss 2 --moments 6,10,10w
-python -m laidian.shots.design_sheets build/design --only characters,expressions,puppets
-python -m laidian.shots.motion_sample build/motion --w 960 --h 540
-```
-渲染在 CPU 上进行（numba 多线程）。1920×1080 的一帧约 2–4 分钟（4 核）。
-
-## 技术路线（简述）
-1. **场景**：堂屋按 `layout.py` 的尺寸搭成三维几何（解析几何体 + BVH），逐像素光线求交。
-2. **光**：每个光源有真实的位置和大小（马灯 = 火苗 + 被熏黄的玻璃罩，日光灯 = 线光源，手电 = 带光斑轮廓的聚光，月光 = 有角直径的平行光）。阴影由光线追踪算出，半影宽度由光源大小和距离决定。间接光用虚拟点光源近似。
-3. **床单**：两面受光——背后的灯透射过来，前面的灯反射回去；被照亮的床单本身又作为面光源照亮人。来电时影子"消失"是因为日光灯从正面把床单照亮、压低了影子的对比度，不是手动擦掉。
-4. **皮影**：每个部件是一片带透射贴图的牛皮，阴影光线穿过它时被染色；离床单越远，影子越大越虚。
-5. **人物**：三维骨架 + 有向距离场的连续形体（关节处没有缝），IK 摆放四肢；渲染出几何、法线、光照等缓冲，再由画风合成画成二维。
-6. **画风合成**：同一套光照缓冲，三种画法（灯影 / 刻光 / 绢灯）。明暗、阴影都来自光照计算，不是滤镜。
+原始工程：`yiggeror/animation-competition`
+源代码版本：`claude/intelligent-euler-t2so6e` / `1048b28168f6d3d8cdfffb682e8abdacc4ffc5be`

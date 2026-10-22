@@ -1,5 +1,0 @@
-# S01 full84 actual visual pass, production-path check pending
-
-Actual 1280×720/24fps/84f/3.5s silent Canvas from fixed ab3644e, delivered at cloud10c35cbf: 931404B, SHA25674de28879cd95843fdcbe774c2985ef1287ae7720439a0bc54265c1184cd7471. Coordinator and independent reviewer each decoded84 actual frames and viewed complete frame/seat/feet/leg changes/bean boundaries. Seat and floor contact are stable; near-leg high/low then far-leg raising reads; basin is single and rests on lap. Bean release28–35, next pod50→62, head-down70 are actually exposed. At native established wide shot, viewers chiefly read peeling/reaching; precise bean count/finger detail requires enlargement. X043 holds41frames to83, G070 holds14; no claim of continued finger taps or kicks.
-
-Production migration only changes timeline import and frame-directory path. js/anim/s01_drawn.js + dedicated s01_drawn_timeline.js and18 exact original Git blobs under assets/chars/s01. Other source rendering code, timing, camera, props, light are unchanged. Waiting actual production path decoding/pixel equality before ready. Shared EDL/audio unchanged.

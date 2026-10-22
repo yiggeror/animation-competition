@@ -1,1 +1,0 @@
-Preparation completed after unique F027 final lock and author SEALED layers. See README.md and STAGE.json. Frames000–029; first rejected030. Previous first27 actual passed; new027 actual Canvas pending.

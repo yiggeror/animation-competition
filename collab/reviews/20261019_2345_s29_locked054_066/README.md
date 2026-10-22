@@ -1,5 +1,0 @@
-# S29 locked 054/060/066 and actual 24-frame scene
-
-Final gates: 054 d325fd3bc84a6a049aba27a7a07de6363b50adcb46d90132cdb3987687dffe64; 060 b58a1241dd966774e9ff68c2ae5e05fadeca523a016b6cabecc264318c9d40c5; 066 37f431300cd341dc1992380e75788f0957a7bc3ecdc81ff90fe4f587451e42f0.
-
-All three original calls and their actual inputs/requests preserved from15061c1c. Intermediate semantic source55942c39 is retained as history; its old060 shoulder gap and old24-frame MP4 are superseded by93fa4af2. Latest complete repaired actual24-frame scene is the file whose SHA256 is f1feeb4d0502c22866010a1a6462400e7a78c0be3af7a7ab696e2d59e8ed93d6, in F060_COLLAR_SHOULDER_SEMANTIC_CLOSURE_ZERO_CALL_20261019. Six060–065 frames newly rendered once; prior18 exact frames reused with decoded equality checks. Coordinator actually viewed old/new shoulder, bothswitches and all24 ordered decoded images; gap closed naturally, hands and true props maintained. Cloud independent review agrees. Only local048–071 segment passed, not whole S29 ready.072 onward continues separately.

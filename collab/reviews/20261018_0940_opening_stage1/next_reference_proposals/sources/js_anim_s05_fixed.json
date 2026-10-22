@@ -1,7 +1,0 @@
-{
-  "content": "// 2-3 手机特写（3 秒）：电量 1%，拇指狂按，2.42 屏幕一暗、2.5 全黑，拇指停住，黑屏停半秒再切近景。取原 js/code/s05.js 的 0.63–3.63 秒。\nimport * as S from '../code/s05.js';\nexport const DURATION = 3, OFFSET = 0.63;   // 原片 3.05 屏幕变暗 → 本镜 2.42；黑屏 2.5～3.0 共 12 帧（Astra 10-18 建议，原来只有 2 帧）\nexport async function renderFrame(ctx, t, W, H) { return S.renderFrame(ctx, t + OFFSET, W, H); }\n",
-  "encoding": "utf-8",
-  "sha": "b2b08e56783637ff9a418d07ac3cd9a912e37599",
-  "display_url": "https://github.com/yiggeror/animation-competition/blob/280c1e25533b76cc5e44e954b45cc98297a36b46/js/anim/s05.js",
-  "display_title": "s05.js"
-}

@@ -1,3 +1,0 @@
-S12 F106 zero-call natural-body reuse approved for finite visible consumption. Reuse exact F102 character SHA 93bf8635caf24f2113813971a377a86241f61567c60b37fda52ea70c8132cfce with its full-canvas mapping. Do not apply old native 1024 matrix.
-
-Render original F106 crane pose and finite rod endpoints from CONSUMER_MAPPING_CANDIDATE.json; then the unchanged complete character/front fingers. No new body, changed limbs or added action count. Local native Canvas prop/composite images demonstrate contact only; keep the original production prop renderer. Actual098→102→106 motion/timing is still unapproved.

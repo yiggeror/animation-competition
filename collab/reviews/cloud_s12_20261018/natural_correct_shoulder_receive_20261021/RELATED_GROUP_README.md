@@ -1,7 +1,0 @@
-Unified corrected complete shoulder source group. Five new complete RGBA sources plus references to already published reach, receive and closed-hold sources. All full-body transforms are baked: runtime identity only. Do not reapply original g12 registration or any recorded normalization/scale.
-
-Use preparePhase(phase, apparatusKey) from the unified adapter. It returns the complete character, original crane pose and finite rods for the current authoritative Cloud A light/receiver and continuous-paper path. There is deliberately no full-shot renderFrame that could omit the repaired shadow. Original props/hinges and finite rod lengths are preserved; depth is a constructive2.5D assumption, not a physical measurement. Both bridge phases have independent identities even where70/74 selectors repeat.
-
-The group repairs the complete far-left shoulder through upper arm and elbow, not a sleeve patch. Acquire26/30 begins left wrap while right remains unheld. Reach precedes supinated receive, then closed hold and rise. Keep the existing correct elevated-arm LIFT tail, rather than returning to old bad low chest sleeves.
-
-Actual continuity remains to be checked as one sequence. LOW_MID has a more upright chest/neck and slightly fuller visual volume than FIRST, potentially producing a small recovery; this is disclosed for short-exposure testing, not approved as already smooth. Source selectors do not dictate exposure count or a new shot duration.

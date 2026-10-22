@@ -1,1 +1,0 @@
-These two masks are diagnostic-only connected-background mattes used to inspect placement on the scene mat. They are not accepted production cutouts. Original source bytes are unchanged. No generated image, no body deformation, no pose alteration. White=source pixels retained; black=background hidden. Transparent cutout copies in reference/.

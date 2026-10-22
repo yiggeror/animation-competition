@@ -1,9 +1,0 @@
-# S29 090–115 complete adopted front-fold bridge
-
-Four PNGs in adopted/ are the exact accepted090/096/102/108 states, exposed6/6/6/8 frames. F116 begins wide. They include puppets and finite rods; do not draw a second prop copy. EXPOSURES.json is included. No additional lock-history JSON is needed to consume these images.
-
-In an isolated repository worktree, copy four adopted/Fxxx_COMPLETE.png to assets/chars/s29/Fxxx.png. Put integration/front_fold.js, front_fold_exposure.js and scene_source.js together in js/anim/s29/. The original repository paintshot.js and existing background/character assets remain dependencies; this is not a standalone repository.
-
-integration/ONLY_F090_115.patch shows the exact bounded dispatch in original js/paint/shots/s29.js: only global090–115 invokes front_fold.renderFrameIndex. If your continuation already edits that entry, merge this one import and bounded dispatch manually; do not overwrite your116–287 work or apply duplicate new-file hunks after copying. The complete original scene_source.js dependency is supplied, fixing the earlier incomplete handoff. Keep the old000–089/116+ routes until replacing them with adopted sequences in your full-shot integration.
-
-For full12seconds, existing js/anim/s29/index.js and exposure.js cover000–071. The repaired072/078/084 complete sources are public under collab/reviews/cloud_s29_drawn_20261019/F072_COMPLETE_SLEEVE_REUSED18_NEW6_ZERO_CALL_20261020; use its actual24-exposure record, not old sleeve pixels. Existing index STATUS text predates subsequent finite actual reviews. Latest120 is collab/reviews/20261020_s29_continue_wrap_handoff/assets/F120_COMPLETE_LOCKED.png at072f598; use it before your132 onward continuation, do not redraw120. Phone132, look195–203, preparation240 and total288 remain unchanged. Current handoff is source adoption and bounded tested integration only, not fullshot CAM acceptance.

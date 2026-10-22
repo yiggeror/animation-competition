@@ -1,7 +1,0 @@
-# S20 complete joined-rod action within132–143
-
-CHARACTER_ALPHA.png is the single adopted1672x941 person master, SHA256f3398f134d5341993192edca9e35b88e938fb0280740370989d54b4791d96033. It is not the1920x2510 CAMG laugh canvas: do not apply144/156 crop offsets. CHARACTER_AND_RODS.json gives the exact master-to-originalCAM20 matrix and both finite rods' world/master endpoints and original physical lengths/7mm diameter.
-
-Use original actual132 child and head-depth occlusion, not any gray diagnostic context. ACTUAL132_HEAD_MASK.png and HEAD_OCCLUSION_CHECK.json retain the conservative actual head check. Hand is in front of the finite true shafts at the verified contact bands (FINITE_CONTACT_CHECK.json); do not lengthen rods or use the native generated brown shafts. The adopted transparent character has neither child nor engineering rods baked into visible pixels. Hidden RGB outside alpha is not a background.
-
-This is the complete joined-rod closure key before the jade L hand withdraws. Exact subframe exposure within132–143 is not frozen. An incoming transfer and L-withdrawal continuation are separate; do not hold this one picture for the whole action or jump directly to144 belly and claim continuity. Native wholebody/waist/support/contact limited gates passed; actualGL/child/sequence integration is now the cloud task. Reuse prior001–131 source without new native drawing generation. Do not rebuild invisible offscreen geometry just to match a different old craneState; reconcile source/time only where visible contacts depend on it.
