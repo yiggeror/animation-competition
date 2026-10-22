@@ -2,7 +2,6 @@
 // "贴"上床单；然后接第 6 场关键镜头的亮相（低头 → 扬起脖子 → 收住），小满从抱着胳膊到看呆了。
 import { makeShot } from '/js/lamp/shots/shotkit.js';
 import { cranePose, CRANE_ROOT, RODS, raiseAt, xmWorld, billboardM } from '/js/lamp/s06_key.js';
-import { flatMaps } from '/js/lamp/s08_back.js';
 import { sstep } from '/js/lamp/choreo.js';
 export const DURATION = 8;
 const T0 = 3;   // 贴上床单用的时间；之后的动作 = 关键镜头的 0～5 秒
@@ -50,7 +49,10 @@ async function drawingMaps(e) {
     const r=await fetch(e.path);if(!r.ok)throw new Error('Missing S15 drawing '+e.path);
     const im=await createImageBitmap(await r.blob());
     if(im.width!==1254||im.height!==1254)throw new Error('S15 drawing native dimensions changed: '+e.path);
-    return flatMaps(im,0);
+    // 小满坐在床单前的暗处，唯一的光是右边发亮的床单。平法线（正对镜头）让床单光从侧面掠过，人几乎看不见（10-22 用户指出）；
+    // 法线整体朝床单（右）和略朝上偏，材质按布料（wrap 0.6、暗部带一点暖），她被床单照亮侧脸和手臂，仍比床单暗。
+    const mk=(fill)=>{const c=new OffscreenCanvas(im.width,im.height),x=c.getContext('2d');x.drawImage(im,0,0);x.globalCompositeOperation='source-in';x.fillStyle=fill;x.fillRect(0,0,c.width,c.height);return c;};
+    return {alb:im,nrm:mk('rgb(175,140,235)'),mat:mk('rgb(0,30,0)')};
   })());
   return mapsCache.get(e.path);
 }

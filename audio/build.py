@@ -22,6 +22,7 @@ from inst import *
 import inst
 from sfx import *
 from score import *
+import rec as RC
 
 ROOT = os.path.join(os.path.dirname(__file__), '..')
 OUT = os.path.join(ROOT, 'build', 'audio')
@@ -56,6 +57,35 @@ def sfx(clip, t, gain=1.0, p=0.0):
     if s >= N:
         return
     e = min(N, s + len(clip)); SFX[s:e] += clip[:e - s] * gain
+
+
+def act(x):
+    """有声部分的 RMS（只算幅度在峰值 1% 以上的采样）"""
+    x = np.asarray(x); m = x if x.ndim == 1 else x.mean(1); a = np.abs(m); v = m[a > a.max() * 0.01]
+    return float(np.sqrt(np.mean((v if len(v) else m) ** 2))) + 1e-9
+
+
+def like(clip, ref):
+    """真实录音按原来合成音效的响度（有声部分 RMS）对齐：只换音色，不动混音平衡；峰值不超过原来合成音效的 1.2 倍（短促的录音按 RMS 对齐会冲得太高）"""
+    pk = lambda x: float(np.abs(np.asarray(x)).max()) + 1e-9
+    return (clip * min(act(ref) / act(clip), 1.2 * pk(ref) / pk(clip))).astype(np.float32)
+
+
+def steps(name, times, vel=0.4):
+    """真实脚步：录音里切出的一步一步轮流用，按 times 放"""
+    hs = RC.hits(name); out = np.zeros(ns(max(times) + 1.3), np.float32)
+    for k, tt in enumerate(times):
+        c = hs[(k * 3 + 1) % len(hs)][1] * (vel if k % 2 else vel * 0.85)
+        s0 = ns(tt); out[s0:s0 + len(c)] += c[:len(out) - s0]
+    return out
+
+
+def voice(name, t, gain, p=0.0, semis=0.0, maxlen=None):
+    """人物的语气声（无台词）：录音起音对齐 t"""
+    c = RC.one(name, rel=-30, maxlen=maxlen or 6.0)
+    if semis:
+        c = RC.pitch(c, semis)
+    sfx(c, t, gain, p)
 
 
 def gain_curve(points, n=N):
@@ -117,13 +147,17 @@ D5 = 587.33
 # ================================================================ 环境声（整片）
 print('环境声…')
 amb_len = TOTAL
-cr = crickets(amb_len, 6, seed=1); fr = frogs(amb_len, 1.1, seed=3); ci = cicadas(amb_len, seed=2)
+# 虫鸣：真实的夏夜蟋蟀（Freesound 333221，220 秒）和蛙鸣（32655，81 秒）循环，按原来合成虫鸣的响度对齐
+cr_old = crickets(amb_len, 6, seed=1)[:, 0] + 0.55 * frogs(amb_len, 1.1, seed=3)[:, 0]
+night = RC.loop('night', amb_len, xf=3.0) + 0.45 * RC.loop('frogs', amb_len, xf=3.0, t0=2.0)
+night = np.pad(night, (0, max(0, N - len(night))))[:N] * (act(cr_old) / act(night)); del cr_old
+fr = ci = None
 # 停电以后屋里静了，虫子显得更响；音乐进来时压低；来电时被电器盖住；关灯后又回来
 CUT = T('S04', 7 / 24); ON = T('S27', 0.0); OFF = T('S30', 110 / 24)   # S30 196 格版：F110 拉灯绳灭灯
 insects_db = [(0, -40), (0.4, -40), (1.2, -19), (S01 - 0.01, -19), (S01, -14), (CUT, -14), (CUT + 1.5, -8), (T('S15'), -8), (T('S15', 3), -15), (ON - 0.01, -15), (ON, -24),
               (OFF, -24), (OFF + 2, -7), (T('S31', 2), -9), (T('S31', 6), -15), (T('S32'), -10), (T('END'), -14), (TOTAL, -30)]
 g_ins = gain_curve(insects_db)[:, None]
-AMB += cr * g_ins * 1.0 + fr * g_ins * 0.55 + ci * g_ins * 0.18
+AMB += np.stack([night, np.roll(night, ns(0.013))], 1) * g_ins   # 两声道错开 13 毫秒，宽一点
 # 吊扇独立开关：开场转着；停电后慢慢停；来电后转起来；第12场只关电视和日光灯，吊扇继续转。
 FAN_ON = T('S28', 0.2)
 
@@ -134,12 +168,18 @@ def fan_speed(tt):
     return np.clip(s, 0, 1)
 
 
-fan_x = fan(TOTAL, fan_speed)
+fan_syn = fan(TOTAL, fan_speed)
+# 吊扇：真实吊扇录音（345230）循环，音量跟转速走（转慢了也闷一点），响度对齐原来合成的吊扇
+tt_all = secs(N); spd = fan_speed(tt_all).astype(np.float32)
+fan_rec = np.pad(RC.loop('fan', TOTAL, xf=1.0), (0, 2))[:N]
+fan_x = fan_rec * spd ** 1.3 + lp(fan_rec, 600) * spd * (1 - spd) * 0.8
+fan_x = fan_x * (act(fan_syn) / act(fan_rec)); del fan_syn
 fan_db = [(0, -22), (T('S02'), -27), (T('S03'), -22), (CUT + 5, -22), (TOTAL, -22)]
 ROOM = np.zeros(N, np.float32); ROOM[ns(S01):] = 1           # 片头没有屋里的电器声
 AMB += pan(fan_x * gain_curve(fan_db) * ROOM, 0.0)
 # 日光灯的嗡声：开场亮着，停电灭；来电亮，关灯灭
-hum = fluor_hum(TOTAL)
+hum = np.pad(RC.loop('fluor_hum', TOTAL, xf=0.8), (0, 2))[:N]          # 真实日光灯镇流器的嗡声（474312）
+hum = hum * (act(fluor_hum(10.0)) / act(hum))
 hum_g = np.zeros(N, np.float32)
 hum_g[ns(S01):ns(CUT)] = 1; hum_g[ns(T('S27', 0.52)):ns(OFF)] = 1.3
 AMB += pan(hum * hum_g * 10 ** (-30 / 20), 0.2)
@@ -236,66 +276,72 @@ for i, p in enumerate(MASH):
         sfx(jump_snd(), T('S05', p - S05_OFF), 0.10)
 for p in [39 / 24, 44 / 24]:
     sfx(click(0.2, 1800, 300), T('S05a', p), 0.25)          # 黑屏后猛按电源键：手机举进画面后拇指按侧键的两下（F039、F044）
+voice('girl_gasp', T('S05a', 0.15), 0.32, 0.0, maxlen=1.6)   # 小满：屏幕黑了——"啊？"轻轻吸一口气
 # 剥毛豆（奶奶，右边）、推西瓜
 # S01 奶奶剥豆的声音对画面（Astra 的 S01 B 曝光表，帧号 24fps）：掰开豆荚那一帧"啪"，两颗豆落盆各"叮"一下（悬空三帧之后、换成落定那一帧，即落下那帧后 3 帧）
 # 10-18 重排后（js/anim/s01.js）：0.5 掐开豆荚，1.35–1.7 豆子落盆两下
 sfx(beans_at([12 / 24], [34 / 24, 35 / 24], 10), T('S01', 0), 0.10, 0.45)   # Astra 17:47：F012 掐开，F034/F035 两豆各自第一次碰盆
 # S03 不演剥豆（母版手里是西瓜，10-17 定），这里不再放剥豆声
-sfx(rustle(0.5, 21, 600, 4000), T('S03b', 0.5), 0.15, 0.1)  # 咬西瓜（脆的、湿的一下；js/anim/s03b.js 0.6 咬下）
-sfx(burst(0.12, 1500, 6000, r=0.03, g=0.5), T('S03b', 0.6), 0.25, 0.1)
+sfx(like(RC.one('bite'), rustle(0.5, 21, 600, 4000)), T('S03b', 0.6), 0.3, 0.1)   # 咬西瓜（js/anim/s03b.js 0.6 咬下），真实咬脆果子的录音
 # 停电：继电器"啪"、电视"嘣"
-sfx(power_cut(), CUT, 0.7, -0.3)
+sfx(power_cut(), CUT, 0.4, -0.3); sfx(like(RC.whole('tv_off'), power_cut()), CUT, 0.45, -0.55)   # 继电器"啪" + 真实显像管电视断电
 
 # ================================================================ 第 2–5 场：插头、倒下、找灯、划火柴、手电、木箱、搭台（屋内镜头的动作按这些时间来做）
 print('屋内音效…')
 # S06 画稿版（插线板在席子边，Astra 10-19）：F011 拔、F030 插、F046 拔、F070 插；中间两次看仍黑的手机，不吹插头
-for t0 in (11 / 24, 30 / 24, 46 / 24, 70 / 24):
-    sfx(plug(False), T('S06', t0), 0.4, 0.15)
+for k, t0 in enumerate((11 / 24, 30 / 24, 46 / 24, 70 / 24)):   # 拔、插、拔、插（真实插头录音）
+    sfx(like(RC.one('plug_out' if k % 2 == 0 else 'plug_in'), plug(False)), T('S06', t0), 0.4, 0.15)
 # js/anim/s07.js（10-18 Astra 修订版 f75be82 的节拍）：0.5 手机落席，0.64～1.08 小满侧滚到仰躺，1.45 起扇风；
 # 奶奶 0.72 盆落地，0.92 掌压膝、1.05 离凳，1.62～1.98 转身两步，走四步落脚 2.43/2.88/3.33/3.78、4.095 收脚，4.3 抓住提梁
 # S07 画稿版（Astra 10-19 按实片给的帧）：008 手机落席、018 盆触地、043 扇风、068/079/090/095 四脚承重、103 握提梁
 # 小满翻身在 016–038 被切走（画外），沙沙声在 039 仰躺前收住；奶奶转身两步在 048/054（画外，听感补的）；凳子没挪，只轻轻吱一声
-sfx(click(0.12, 900, 250), T('S07', 8 / 24), 0.15, -0.1)                         # 手机落在竹席上
-sfx(bamboo_mat(0.3), T('S07', 1.0), 0.2, -0.1)                                   # 画外侧滚，衣服蹭席子
-sfx(thud(0.9, 80, 0.15, 900), T('S07', 36 / 24), 0.4, -0.1); sfx(bamboo_mat(0.7), T('S07', 36 / 24 + 0.02), 0.35, -0.1)   # 仰面落定（039 切回时已躺好）
+sfx(like(RC.one('phone_drop'), click(0.12, 900, 250)), T('S07', 8 / 24), 0.2, -0.1)   # 手机落在竹席上
+sfx(like(RC.whole('mat'), bamboo_mat(0.3)), T('S07', 1.0), 0.2, -0.1)                 # 画外侧滚，衣服蹭席子
+sfx(like(RC.one('flop'), thud(0.9, 80, 0.15, 900)), T('S07', 36 / 24), 0.4, -0.1); sfx(like(RC.whole('mat'), bamboo_mat(0.7)), T('S07', 36 / 24 + 0.02), 0.35, -0.1)   # 仰面落定
+voice('girl_sigh', T('S07', 38 / 24), 0.3, -0.1)                                # 小满：仰面一躺，"唉——"
 sfx(fan_hand(1.4, 1.4), T('S07', 43 / 24), 0.25, -0.1)
-sfx(thud(0.3, 160, 0.05, 1800), T('S07', 18 / 24), 0.18, 0.4)                     # 搪瓷盆放到地上
-sfx(scrape(0.12, 4), T('S07', 27 / 24), 0.1, 0.4)                                 # 起身时凳子轻轻吱一声
-sfx(footsteps([0, 6 / 24], 0.25), T('S07', 48 / 24), 0.3, 0.5)                     # 转身的两步，轻（画外）
-sfx(footsteps([0, 11 / 24, 22 / 24, 27 / 24]), T('S07', 68 / 24), 0.35, 0.55)     # 走到桌边，四脚承重
-sfx(click(0.15, 2600, 500), T('S07', 103 / 24), 0.12, 0.7)                        # 握住提梁"咔"一下
+sfx(like(RC.one('basin', 4), thud(0.3, 160, 0.05, 1800)), T('S07', 18 / 24), 0.16, 0.4)   # 搪瓷盆放到地上（真实敲铁盆录音）
+sfx(like(RC.one('sit', maxlen=0.25), scrape(0.12, 4)), T('S07', 27 / 24), 0.1, 0.4)       # 起身时凳子轻轻吱一声
+sfx(like(steps('steps_slipper', [0, 6 / 24], 0.25), footsteps([0, 6 / 24], 0.25)), T('S07', 48 / 24), 0.3, 0.5)   # 转身的两步，轻（画外）
+sfx(like(steps('steps_slipper', [0, 11 / 24, 22 / 24, 27 / 24]), footsteps([0, 11 / 24, 22 / 24, 27 / 24])), T('S07', 68 / 24), 0.35, 0.55)   # 走到桌边，四脚承重（真实拖鞋脚步）
+sfx(like(RC.whole('latch'), click(0.15, 2600, 500)), T('S07', 103 / 24), 0.12, 0.7)       # 握住提梁"咔"一下
 # js/code/s08.js：0.35 划火柴，1.8 灯芯着了，2.2 甩灭火柴，3.4 放下灯罩
 # S08 画稿版（Astra 41 态表，帧号 24fps）：003 擦柴、017 盒落桌、025 压杆升罩、043 灯芯着、049 甩柴、066 柴落桌、078 松杆、082 罩落座
-sfx(match_strike(), T('S08', 3 / 24), 0.7, -0.15)
-sfx(thud(0.25, 220, 0.03, 2500), T('S08', 17 / 24), 0.18, -0.1)             # 火柴盒放到桌上
-sfx(click(0.15, 2200, 500), T('S08', 25 / 24), 0.15, 0.1)                   # 压下拨杆、灯罩升起
+sfx(like(RC.one('match', 1), match_strike()), T('S08', 3 / 24), 0.7, -0.15)   # 真实划火柴：擦、着
+sfx(like(RC.whole('thud_small'), thud(0.25, 220, 0.03, 2500)), T('S08', 17 / 24), 0.18, -0.1)   # 火柴盒放到桌上
+sfx(like(RC.whole('latch'), click(0.15, 2200, 500)), T('S08', 25 / 24), 0.15, 0.1)               # 压下拨杆、灯罩升起
 sfx(burst(0.4, 300, 3000, a=0.05, r=0.15, g=0.4), T('S08', 43 / 24), 0.4, 0.05)   # 灯芯着了
 sfx(burst(0.25, 200, 1500, a=0.02, r=0.08, g=0.25), T('S08', 49 / 24), 0.3, 0.2)  # 甩灭火柴的"呼"
-sfx(click(0.08, 3000, 400), T('S08', 66 / 24), 0.08, -0.05)                 # 火柴梗落桌
-sfx(click(0.1, 1800, 400), T('S08', 78 / 24), 0.1, 0.1)                     # 松开拨杆
-sfx(glass_clink(0.6), T('S08', 82 / 24), 0.4, 0.05)                         # 灯罩落座"叮"
+sfx(like(RC.whole('tap'), click(0.08, 3000, 400)), T('S08', 66 / 24), 0.08, -0.05)   # 火柴梗落桌
+sfx(like(RC.whole('latch'), click(0.1, 1800, 400)), T('S08', 78 / 24), 0.1, 0.1)       # 松开拨杆
+sfx(like(RC.whole('glass'), glass_clink(0.6)), T('S08', 82 / 24), 0.4, 0.05)           # 灯罩落座"叮"（真实小玻璃杯）
 # js/paint/shots/s09.js：开镜时手电已经在手里（抽屉在上一镜之间翻过了）；1.6 推开关不亮，2.1、2.5 往手心磕，2.9 推亮
 # S09 画稿版（Astra 10-19）：014 推开关不亮、026 推回、042/056 尾盖两下磕手心、073 再推亮了
-sfx(flashlight_click(), T('S09', 14 / 24), 0.4, -0.3); sfx(flashlight_click(0.5), T('S09', 26 / 24), 0.3, -0.3)
-sfx(flashlight_slap(), T('S09', 42 / 24), 0.45, -0.3); sfx(flashlight_slap(0.9), T('S09', 56 / 24), 0.5, -0.3)
-sfx(flashlight_click(0.8), T('S09', 73 / 24), 0.45, -0.3)
+fc = lambda i, v=0.7: like(RC.one('torch_click', i), flashlight_click(v))           # 真实手电开关
+sfx(fc(0), T('S09', 14 / 24), 0.4, -0.3); sfx(fc(1, 0.5), T('S09', 26 / 24), 0.3, -0.3)
+sfx(like(RC.whole('tap'), flashlight_slap()), T('S09', 42 / 24), 0.45, -0.3); sfx(like(RC.whole('tap'), flashlight_slap(0.9)), T('S09', 56 / 24), 0.5, -0.3)
+sfx(like(RC.one('torch_on'), flashlight_click(0.8)), T('S09', 73 / 24), 0.45, -0.3)
 # S31 手电从木箱拿起时就一直亮着；开镜直接照下巴，不增加推开关的 click。
 # js/code/s12.js：0～0.9 箱盖开到底，1.5 手伸进来碰到布，2.4～4.0 握住签子把鹤立起来
 # js/paint/shots/s12.js：开镜时箱盖已经开着（奶奶两只手都握着签子），没有开盖声
 # S12 画稿 140 格（10-21 交接）：000–028 两手探进箱里，030 前后握住签子，072–084 把鹤立起来，084 起鹤站在箱里、灯光透过牛皮
-sfx(rustle(0.9, 23, 800, 5000), T('S12', 0.3), 0.25, 0.1)   # 手碰到包布
-sfx(leather(0.5, 29), T('S12', 30 / 24), 0.2, 0.1)          # 握住签子
-sfx(leather(1.0, 24), T('S12', 72 / 24), 0.35, 0.1)         # 立起来，牛皮沙沙
+sfx(like(RC.one('cloth2'), rustle(0.9, 23, 800, 5000)), T('S12', 0.3), 0.25, 0.1)   # 手碰到包布（真实布料）
+sfx(like(RC.one('leather', 3), leather(0.5, 29)), T('S12', 30 / 24), 0.2, 0.1)        # 握住签子
+sfx(like(RC.one('leather', 1), leather(1.0, 24)), T('S12', 72 / 24), 0.35, 0.1)       # 立起来，牛皮沙沙（真实皮革）
 # S14 画稿 190 格（10-21 交接的曝光表）：000–017 奶奶站在凳上把床单甩上铁丝，040 前后夹好第一只衣夹、086 第二只，092 手收回；
 # 096–131 近景挂马灯（108 握住提梁、116 挂上钩）；132–144 小满站着拖凳子，161 坐到凳上，175 抱起胳膊
-sfx(rustle(1.0, 25, 300, 2500, 0.6), T('S14', 0.0), 0.35, 0.0)   # 床单甩上铁丝
-sfx(metal_clink(0.4), T('S14', 10 / 24), 0.22, 0.0)        # 铁丝晃
-sfx(clothespin(), T('S14', 40 / 24), 0.35, -0.1); sfx(clothespin(), T('S14', 86 / 24), 0.35, 0.1)
-sfx(click(0.15, 2600, 500), T('S14', 108 / 24), 0.12, 0.2)  # 握住提梁
-sfx(metal_clink(0.6), T('S14', 116 / 24), 0.3, 0.2)         # 马灯挂上钩
-sfx(scrape(0.55, 7), T('S14', 133 / 24), 0.35, -0.4)        # 拖凳子
-sfx(thud(0.5, 120, 0.06, 2000), T('S14', 161 / 24), 0.35, -0.4)   # 坐到凳上
-sfx(rustle(0.4, 26, 1000, 5000), T('S14', 173 / 24), 0.18, -0.4)  # 抱起胳膊
+ref = rustle(1.0, 25, 300, 2500, 0.6)
+sfx(like(RC.whole('sheet'), ref), T('S14', 0.0), 0.3, 0.0); sfx(like(RC.whole('sheet'), ref), T('S14', 0.3), 0.25, 0.05)   # 床单甩上铁丝（真实布料抖动，两下）
+sfx(like(RC.one('hook', 0), metal_clink(0.4)), T('S14', 10 / 24), 0.18, 0.0)          # 铁丝晃
+sfx(like(RC.one('clothespin', 0), clothespin()), T('S14', 40 / 24), 0.35, -0.1); sfx(like(RC.one('clothespin', 2), clothespin()), T('S14', 86 / 24), 0.35, 0.1)   # 真实木衣夹
+sfx(like(RC.whole('latch'), click(0.15, 2600, 500)), T('S14', 108 / 24), 0.12, 0.2)   # 握住提梁
+sfx(like(RC.one('hook', 1), metal_clink(0.6)), T('S14', 116 / 24), 0.3, 0.2)          # 马灯挂上钩
+sfx(like(RC.one('stool'), scrape(0.55, 7)), T('S14', 133 / 24), 0.35, -0.4)          # 拖凳子（真实木椅挪动）
+sfx(like(RC.one('sit'), thud(0.5, 120, 0.06, 2000)), T('S14', 161 / 24), 0.35, -0.4)  # 坐到凳上
+sfx(like(RC.one('cloth', 1), rustle(0.4, 26, 1000, 5000)), T('S14', 173 / 24), 0.18, -0.4)   # 抱起胳膊
+voice('girl_effort', T('S14', 176 / 24), 0.22, -0.4)                                # 小满抱着胳膊："哼"
+# S13 小满盯着看，发现奶奶在看她，装打哈欠（画稿 F048 张嘴、054–066 张到最大、072–084 合上）
+voice('girl_yawn', T('S13', 46 / 24), 0.32, -0.1)
 # 第 4 场木箱：奶奶把鹤举到马灯前，彩色光斑落下——扬琴很轻的"叮—咚"（主题头两个音，先埋一下）
 place(MUS['yq'], yangqin(jp(1, 1, D5), 3.0, 0.5), T('S12', 86 / 24), 0.5)   # 鹤站稳、透光（F084 之后）
 place(MUS['yq'], yangqin(jp(5, 0, D5), 3.0, 0.5), T('S12', 96 / 24), 0.42)
@@ -317,6 +363,7 @@ melody('banhu', mel(THEME_A, TH, BPM, D5), 0.55)
 yq_chords(TH, THEME_ROOTS, BPM, 8, 0.4)
 bangzi_beats(TH, BPM, 16, 0.4)
 place(MUS['perc'], xiaoluo(0.6), TH + 1.0, 0.35)          # 昂首到顶，"台"
+voice('girl_gasp', TH + 1.25, 0.2, -0.5, maxlen=1.2)       # 小满看呆了，轻轻"哇"地吸一口气
 # S16：主题第二遍在笛子上（鹤踱步、梳毛），最后两小节啄水——琵琶往下拨两下 + 梆子
 TH2 = TH + 16 * SP
 melody('dizi', mel(THEME_A_DIZI, TH2, BPM, D5), 0.5)
@@ -345,7 +392,7 @@ melody('dizi', [{'t': t0 + 7.35, 'd': 0.12, 'f': jp(6, 1, D5), 'acc': 0.6}, {'t'
 # 第二啄撞在龟壳上（8.5 秒）："咣"（大锣 + 钹）
 HIT = t0 + 8.5
 place(MUS['perc'], daluo(1.0, 3.5), HIT, 0.8); place(MUS['perc'], bo(0.9), HIT, 0.4)
-sfx(thud(0.9, 220, 0.05, 3000), HIT, 0.5, 0.2)
+sfx(like(RC.whole('knock'), thud(0.9, 220, 0.05, 3000)), HIT, 0.5, 0.2)   # 鹤嘴撞龟壳（真实敲木头）
 # 晕（8.6～12.4）：板胡大滑音一上一下，小锣闷着敲，像天旋地转
 wob = []
 for k in range(5):
@@ -361,11 +408,12 @@ melody('dizi', [{'t': t0 + 11.6, 'd': 0.8, 'f': jp(3, 1, D5), 'acc': 0.6, 'trill
                 {'t': t0 + 12.9, 'd': 0.5, 'f': jp(6, 0, D5), 'acc': 0.6}], 0.4)
 place(MUS['pipa'], pipa(jp(1, -1, D5), 1.0, 0.8), t0 + 13.4, 0.4); place(MUS['perc'], bangzi(0.8), t0 + 13.4, 0.35)
 for t in [t0 + 5.6, HIT - 0.05]:
-    sfx(leather(0.3, int(t)), t, 0.2, -0.1)
+    sfx(like(RC.one('leather', 3), leather(0.3, int(t))), t, 0.2, -0.1)
 
 # ================================================================ 第 7、8 场：小满笑（S18）、上手（S20–S23）
 print('第 8 场…')
 place(MUS['pipa'], pipa(jp(5, 0, D5), 0.6, 0.6), T('S18', 0.6), 0.35)   # "噗"
+voice('girl_giggle', T('S18', 15 / 24), 0.42, -0.2, semis=-3)   # 小满"噗"地笑出声（第 15 帧），捂住嘴
 # S20 后台：奶奶把乌龟递过去（拨弦主题碎片）→ 签子缠在一起（扬琴乱了拍子的音簇）→ 乌龟翻肚皮（板胡往下滚）→ 奶奶笑弯腰（笛子颤音 + 梆子碎敲）
 # S20 画稿 127 格（10-21 交接）：000–028 奶奶把乌龟递到小满手里，042–058 小满让乌龟往左走，052–064 签子缠住，064–070 乌龟翻过去、070 肚皮朝天；
 # 079 切奶奶近景笑弯了腰（080–126）
@@ -376,13 +424,14 @@ for k, x in enumerate([1.85, 2.15]):                       # 乌龟走两步
     place(MUS['pipa'], pipa(jp([1, 5][k], -2, D5), 0.6, 0.7), t0 + x, 0.3)
 for k, x in enumerate([2.17, 2.33, 2.5, 2.62]):            # 签子缠在一起：扬琴乱了拍子的音簇
     place(MUS['yq'], yangqin(jp([2, 4, 7, 3][k], 0, D5, alt=[0, 0, -1, 0][k]), 0.9, 0.6), t0 + x, 0.3)
-    sfx(rod_tap(0.5), t0 + x + 0.02, 0.3, 0.2)
+    sfx(like(RC.whole('rods'), rod_tap(0.5)), t0 + x + 0.02, 0.3, 0.2)   # 签子相碰（真实木棍）
 flip = t0 + 70 / 24 - 0.1
 melody('banhu', [{'t': flip - 0.4 + k * 0.1, 'd': 0.1, 'f': jp(1, 1, D5) * 2 ** (-k / 12 * 2.4), 'acc': 0.8, 'legato': k > 0, 'slide': 0.06} for k in range(5)], 0.45)
-sfx(thud(0.6, 140, 0.05, 2500), flip + 0.1, 0.35, 0.2); place(MUS['perc'], xiaoluo(0.5), flip + 0.1, 0.3)
+sfx(like(RC.whole('thud_small'), thud(0.6, 140, 0.05, 2500)), flip + 0.1, 0.35, 0.2); place(MUS['perc'], xiaoluo(0.5), flip + 0.1, 0.3)
+voice('woman_laugh', t0 + 81 / 24, 0.55, 0.3, semis=-2)          # 奶奶笑弯了腰（F080 起）：成年女声的笑压低两个半音
 melody('dizi', [{'t': flip + 0.6, 'd': 1.0, 'f': jp(5, 1, D5), 'acc': 0.6, 'trill': jp(6, 1, D5)}, {'t': flip + 1.7, 'd': 0.7, 'f': jp(3, 1, D5), 'acc': 0.55, 'trill': jp(5, 1, D5)}], 0.35)
 for k in range(8):                                         # 奶奶笑（F080 起）
-    place(MUS['perc'], bangzi(0.6), flip + 0.65 + k * 0.22, 0.22)
+    place(MUS['perc'], bangzi(0.6), flip + 0.65 + k * 0.22, 0.14)
 # S21：乌龟的影子忽大忽小（js/lamp/shots/s21.js d(t)），鹤笑得前仰后合（sin(8.5t)）：板胡奏主题头两小节，音量跟着影子大小走；
 # 鹤每仰一次，笛子"哈"一个小滑音
 t0 = T('S21')
@@ -409,12 +458,13 @@ melody('banhu', [{'t': t0 + 2.4, 'd': 2.0, 'f': jp(6, 0, D5), 'acc': 0.75, 'tril
 for k in range(9):
     place(MUS['perc'], bangzi(0.7), t0 + 2.4 + k * 0.25, 0.25)
 melody('banhu', mel("5:0.25 6:0.25 1':0.5! 0:0.5 5:0.25 1':0.75!", t0 + 4.45, 140, D5), 0.45)
+voice('girl_laugh2', T('S24', 0.45), 0.3, 0.1, semis=-2)        # S24 小满回头得意地看奶奶："嘿嘿"
 
 # ================================================================ 第 9 场：小狗（S25、S26）
 print('第 9 场…')
 # S25 V8 108 格（js/anim/s25_continuous_v8.js）：000–015 手电放到木箱上（F015 落稳），042 手伸进光里，066 狗成形，074–078、093–097 狗嘴张两下
 t0 = T('S25')
-sfx(thud(0.5, 200, 0.04, 3000), t0 + 15 / 24, 0.35, -0.2)   # 手电架在木箱上（手电从第 3 场起一直亮着，不再有开关声）
+sfx(like(RC.whole('thud_small'), thud(0.5, 200, 0.04, 3000)), t0 + 15 / 24, 0.35, -0.2)   # 手电架在木箱上（手电从第 3 场起一直亮着，不再有开关声）
 # 两只手伸进光里：8-bit 琶音一点点往上爬，狗成形时到顶，扬琴低音垫着
 arp = []
 for k in range(9):
@@ -422,8 +472,8 @@ for k in range(9):
     arp.append({'t': tk, 'd': 0.11, 'f': jp([1, 3, 5, 1, 2, 5, 6, 2, 3][k], 1 + (k >= 6), D5), 'acc': 0.4 + 0.04 * k})
 y = chip_lead(arp, 4.5, 0.125); place(MUS['chip'], y, t0, 0.35)
 place(MUS['yq'], yangqin(jp(5, -1, D5), 2.5, 0.5), t0 + 66 / 24, 0.25)
-for tw in (74 / 24, 93 / 24):                              # 狗嘴张开
-    sfx(woof(0.7), t0 + tw, 0.16, 0.2)
+for k, tw in enumerate((74 / 24, 93 / 24)):                 # 狗嘴张开：真实小奶狗的叫声
+    sfx(like(RC.one('puppy', k), woof(0.7)), t0 + tw, 0.16, 0.2)
 # S26 新动作（js/lamp/shots/s26_motion.js）：0–1.4 狗影进来，0.95、1.68 两声叫，1.35 鹤吓一跳转身，2.5–5.2 被追着往左跑；
 # 6.05–7.8 乌龟爬上狗背（7.8 坐稳）；8.05–8.8 狗掉头，鹤往右跑、狗追回去；11.85–13.35 鹤啄狗、狗一缩；14.4 起越玩越快。
 # 音乐的拍 b(t) = 2t + 0.25·max(0, t−14.4)²：前面 120 拍/分，14.4 秒起跟画面一起加速；来电（S27）一刀切断。
@@ -440,8 +490,8 @@ def put(track, clip, b, g):
         place(MUS[track], clip[:max(1, ns(END26 - tt))], tt, g)
 
 
-for tw in (0.95, 1.68):                                    # 狗嘴张开的两下
-    sfx(woof(0.8), t0 + tw, 0.22, 0.25)
+for k, tw in enumerate((0.95, 1.68)):                      # 狗嘴张开的两下
+    sfx(like(RC.one('puppy', k + 1), woof(0.8)), t0 + tw, 0.22, 0.25)
 place(MUS['perc'], xiaoluo(0.45), t0 + 1.4, 0.25)          # 鹤吓一跳
 # 前奏四拍：8-bit 低音"咚咚"+梆子；第 4 拍（2.0 秒，开追）起主题：方波奏前四小节，板胡接后四小节；第二遍笛子领，方波和声；第三遍一起，越来越快
 for b in range(4):
@@ -516,31 +566,34 @@ s_on = ns(ON)
 for k in MUS:
     MUS[k][s_on:s_on + ns(8)] = 0          # 先清掉可能拖过来的余音（后面关灯后的音乐再加）
 # 日光灯：启辉器"嗒"、闪两下、"叮"一声亮起（js/lamp/shots/s27.js fluorAt：0、0.22、0.52 秒亮）
-for x, v in [(0.0, 0.7), (0.12, 0.4), (0.22, 0.6), (0.30, 0.4), (0.52, 0.8)]:
-    sfx(click(v, 4000, 600), ON + x, 0.5, 0.25)
-ping = modal([3100, 4800, 7400], [0.5, 0.3, 0.15], [1, 0.5, 0.3], 1.2); sfx(norm(ping, 0.5), ON + 0.52, 0.25, 0.25)
+for x, v in [(0.0, 0.7), (0.12, 0.4), (0.22, 0.6), (0.30, 0.4), (0.52, 0.8)]:   # 真实日光灯启辉器的"嗒"（145120 切出来的）
+    sfx(like(RC.one('fluor_start', 0), click(v, 4000, 600)), ON + x, 0.5, 0.25)
+sfx(like(RC.one('fluor_start', 1), click(0.8, 4000, 600)), ON + 0.52, 0.35, 0.25)   # 灯管亮起那一下
 # 一串电器：吊扇转起来（嗡声和风声在环境声里）、电视"嗡—咚"显像管消磁再响起来、手机"叮"开始充电
 dg_n = ns(1.2); dgt = secs(dg_n)
 degauss = norm(np.sin(2 * np.pi * 60 * dgt) * np.exp(-dgt / 0.35) * (1 + 0.5 * np.sin(2 * np.pi * 7 * dgt)) + bp(R.standard_normal(dg_n), 100, 2000) * np.exp(-dgt / 0.05), 0.8)
-sfx(click(0.6, 2500, 200), TV_ON - 0.05, 0.4, -0.55); sfx(degauss, TV_ON, 0.45, -0.55)
+sfx(like(RC.whole('latch'), click(0.6, 2500, 200)), TV_ON - 0.05, 0.4, -0.55); sfx(degauss, TV_ON, 0.45, -0.55)
 sfx(tv_static(0.9) * np.linspace(1, 0.2, ns(0.9)).astype(np.float32), TV_ON + 0.1, 0.15, -0.55)
-sfx(click(0.5, 1800, 300), FAN_ON, 0.3, 0.0)                # 吊扇的开关
+sfx(like(RC.whole('latch'), click(0.5, 1800, 300)), FAN_ON, 0.3, 0.0)   # 吊扇的开关
 sfx(chime([1568.0], 0.2, 1.0), T('S28', 5.5), 0.25, -0.1)   # 手机开始充电
 # 奶奶用布包皮影
-sfx(rustle(3.0, 27, 600, 5000), T('S29', 1.0), 0.3, 0.2); sfx(leather(1.2, 28), T('S29', 1.6), 0.25, 0.2)
+sfx(like(RC.one('cloth2'), rustle(1.0, 27, 600, 5000)), T('S29', 1.0), 0.3, 0.2); sfx(like(RC.one('cloth', 0), rustle(1.0, 28, 600, 5000)), T('S29', 2.2), 0.25, 0.2)   # 奶奶用布包皮影（真实布料）
+sfx(like(RC.one('leather', 0), leather(1.2, 28)), T('S29', 1.6), 0.25, 0.2)
 # 手机开机"叮—咚"：就是主题的头两个音（高音 1 → 5）
 sfx(chime([jp(1, 1, D5), jp(5, 0, D5)], 0.28, 1.6), T('S29', 5.5), 0.35, -0.1)
 
 # ================================================================ 第 12 场：关灯（S30、S31）
 print('第 12 场…')
-sfx(footsteps([k * 10 / 24 for k in range(6)]), T('S30', 30 / 24), 0.3, -0.5)   # 关了电视走到门边（F030–084）
-sfx(pull_cord(), OFF - 0.05, 0.6, -0.6)
-sfx(click(0.5, 2500, 200), TV_OFF, 0.3, -0.55)            # 电视关掉
+st = [k * 10 / 24 for k in range(6)]
+sfx(like(steps('steps_light', st), footsteps(st)), T('S30', 30 / 24), 0.3, -0.5)   # 关了电视走到门边（F030–084），真实轻脚步
+sfx(like(RC.one('cord', 1), pull_cord()), OFF - 0.05, 0.6, -0.6)   # 真实拉线开关
+sfx(like(RC.whole('tv_off'), click(0.5, 2500, 200)), TV_OFF, 0.3, -0.55)   # 电视关掉
 # 关灯后安静；S31 A 段（小满手电照下巴做鬼脸，4.7–7.3 举着乌龟晃）只有笛子轻轻吹主题前两小节；
 # 7.5 秒切到床单正面"又演起来了"：小锣、梆子带起，板胡奏主题；乌龟爬进来（8.0–10）低音拨弦一步一下，鹤低头碰乌龟（11.3）小锣"台"；
 # S32 屋外拉远：笛子领奏第二遍，板胡低八度托、琵琶轮指，再把后半句走一遍收住。速度按拍数算，"呛"正好落在 S32 结尾。
 t0 = T('S31')
 melody('dizi', mel(THEME_A, t0 + 1.0, 84, D5, beats_to=8, gap=0.03, acc=0.5), 0.4)
+voice('girl_laugh', t0 + 4.75, 0.36, -0.1, semis=-2)          # 小满举着乌龟晃，自己咯咯笑
 for k, x in enumerate([4.9, 5.6, 6.3]):                    # 举着乌龟晃三下
     place(MUS['pipa'], pipa(jp([5, 6, 5][k], 0, D5), 0.5, 0.45), t0 + x, 0.25)
 TB = t0 + 7.5; TE32 = T('END')
@@ -572,14 +625,14 @@ TE = T('END')
 place(MUS['yq'], yangqin(jp(1, 1, D5), 4.0, 0.6), TE + 2.4, 0.3)
 place(MUS['yq'], yangqin(jp(5, 0, D5), 4.0, 0.6), TE + 2.85, 0.28)
 place(MUS['perc'], bangzi(0.8), TE + 6.3, 0.4)
-# 片尾"制作与资源"（js/code/making.js，18 秒）：笛子慢慢吹一遍主题，扬琴分解和弦垫着；片名那张卡（14.6 秒起）扬琴"叮—咚"，最后一声梆子
+# 片尾"制作与资源"（js/code/making.js，22 秒）：笛子慢慢吹一遍主题，扬琴分解和弦垫着；片名那张卡（19.1 秒起）扬琴"叮—咚"，最后一声梆子
 TM = T('MAKING')
-BPM_M = 16 * 60 / 13.0                                      # 主题 16 拍，从 0.8 秒吹到 13.8 秒
+BPM_M = 16 * 60 / 16.8                                      # 主题 16 拍，从 0.8 秒吹到 17.6 秒
 melody('dizi', mel(THEME_A_DIZI, TM + 0.8, BPM_M, D5, gap=0.03, acc=0.5), 0.38)
 yq_chords(TM + 0.8, THEME_ROOTS, BPM_M, 8, 0.22, pattern='arp')
-place(MUS['yq'], yangqin(jp(1, 1, D5), 4.0, 0.55), TM + 14.7, 0.3)
-place(MUS['yq'], yangqin(jp(5, 0, D5), 4.0, 0.55), TM + 15.15, 0.28)
-place(MUS['perc'], bangzi(0.7), TM + 16.6, 0.3)
+place(MUS['yq'], yangqin(jp(1, 1, D5), 4.0, 0.55), TM + 19.2, 0.3)
+place(MUS['yq'], yangqin(jp(5, 0, D5), 4.0, 0.55), TM + 19.65, 0.28)
+place(MUS['perc'], bangzi(0.7), TM + 21.0, 0.3)
 print(f'  尾声速度 {BPF:.1f} 拍/分，"呛"在 {t4:.2f} 秒（S32 结尾 {T("END"):.2f}），屏幕熄灭梆子 {TE + 6.3:.1f} 秒，全片 {TOTAL - 1:.2f} 秒')
 
 # ================================================================ 合成旋律、混音

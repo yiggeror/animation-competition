@@ -1,15 +1,15 @@
 # 《奶奶的皮影》
 
-全国大学生数字媒体科技作品及创意竞赛 · 影视/动画赛道 · 2D 动画短片（无对白，4 分 01 秒；制作期间的工作标题是《来电》，仓库和代码里的 `laidian` 沿用旧名）。
+全国大学生数字媒体科技作品及创意竞赛 · 影视/动画赛道 · 2D 动画短片（无对白，4 分 05 秒；制作期间的工作标题是《来电》，仓库和代码里的 `laidian` 沿用旧名）。
 
 > 停电了。奶奶从木箱里翻出一套皮影，祖孙俩在床单上演起了《龟与鹤》。最热闹的时候，来电了。
 
 **画面由本仓库的程序逐帧绘制生成**——不是录屏，不拼现成素材。团队原先规定不用 AI 生成的图片，2026-10-16 放宽为"最终动画好看最重要"：AI 生成的图可以作参考或经处理入片，每张都登记在 `docs/ai-usage-log.md`。从 2026-10-16 起，人物改用合作 AI 和用户生成的人物图：抠图后由程序算法线和材质，放进同一套光照，再用程序做头部转动、眨眼、换图等动作（`tools/cutout.py`、`tools/card_maps.py`、`js/lamp/xm_rig.js`）；屋子、光照、皮影和影子仍由程序绘制。床单上的影子按真实几何计算：马灯有真实的位置和大小，皮影离床单越远影子越大越虚，彩色牛皮透出彩色的光。
 
 ## 成片怎么做出来
-1. 画面：`node tools/render_film.mjs` 按剪辑表 `js/film/edl.js`（片头 + 36 个镜头 + 片尾，5787 格）把每个镜头渲成 1080p24 中间片 `build/final/<镜头>.mp4`；
+1. 画面：`node tools/render_film.mjs` 按剪辑表 `js/film/edl.js`（片头 + 36 个镜头 + 片尾，5883 格）把每个镜头渲成 1080p24 中间片 `build/final/<镜头>.mp4`；
    有 `video` 字段的镜头（S28、S29）直接用已审定的成片。`python3 tools/verify_film.py` 把渲出来的每一帧和合作方的完整画面工作片逐帧比对。
-2. 声音：`python3 audio/build.py` → `build/audio/film_mix_norm.wav`（-16 LUFS，真峰 ≤ -2.4 dBTP）。所有声音按"镜头号 + 镜头内秒数/帧号"定位，剪辑表改了自动跟着走。
+2. 声音：`python3 audio/build.py` → `build/audio/film_mix_norm.wav`（-16 LUFS，真峰 ≤ -2.4 dBTP）。配乐程序合成，音效和人声用 Freesound 的 CC0 真实录音（`assets/sfx/`）。所有声音按"镜头号 + 镜头内秒数/帧号"定位，剪辑表改了自动跟着走。
 3. 合成：`node tools/master_film.mjs` → `renders/final/nainai-de-piying_1080p24.mp4`。
 
 ## 目录

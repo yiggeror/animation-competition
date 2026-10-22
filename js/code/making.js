@@ -1,24 +1,30 @@
 // 片尾"制作与资源"：手机屏幕熄灭以后，暗底上一张一张淡入淡出。只写实际用到的技术手段、工具、字体和声音来源（核对见 CREDITS.md）。
-export const DURATION = 18;
+export const DURATION = 22;
 const sstep = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
 // [开始, 结束, 小标题, [[项目, 内容], ...]]
 const CARDS = [
-  [0.6, 4.4, '画面', [
-    ['人物与屋内底图', '生成式图像绘制，抠图分层，逐格修整'],
-    ['皮影、手影、光与影', '程序逐帧计算（Canvas 2D · WebGL）'],
+  [0.6, 5.4, '人物', [
+    ['角色母版', '三视图 · 表情表 · 手型，定比例与骨长'],
+    ['关键姿势', '2D 骨架参考图（母版骨长 · 两节 IK）约束姿势，生成式图像模型以母版为底出关键帧'],
+    ['分层与对位', 'Alpha 抠图分层 · 定位点注册 · 逐格曝光表（一拍二 / 一拍三）'],
+    ['进入光照', '由轮廓推算法线图与材质图，人物与场景共用马灯、月光、日光灯'],
+  ]],
+  [5.4, 9.6, '画面', [
+    ['屋子与光', '真实尺寸建模，WebGL 着色器逐像素计算光照与空气散射'],
+    ['皮影与影子', '灯—皮影—床单几何投影：离灯越近影子越大越虚，牛皮透光着色'],
     ['渲染', 'Chromium 无头逐帧输出 · FFmpeg 编码'],
   ]],
-  [4.4, 8.2, '声音', [
-    ['配乐与音效', '程序合成（加法合成 · Karplus-Strong 拨弦 · 模态合成）'],
+  [9.6, 13.8, '声音', [
+    ['配乐', '程序合成（加法合成 · Karplus-Strong 拨弦 · 模态合成），旋律原创'],
+    ['音效与人声', '真实录音（Freesound，CC0 公有领域），逐帧对位，程序做混响与声像'],
     ['音色', '板胡 · 笛子 · 扬琴 · 琵琶 · 梆子 · 板鼓 · 锣 · 钹 · 8-bit'],
-    ['', '旋律原创，未使用采样与录音'],
   ]],
-  [8.2, 11.4, '字体', [
+  [13.8, 16.6, '字体', [
     ['马善政毛笔楷书 Ma Shan Zheng', 'SIL Open Font License 1.1'],
     ['思源黑体 Noto Sans SC', 'SIL Open Font License 1.1'],
   ]],
-  [11.4, 14.4, '工具', [
-    ['', 'Node.js · Playwright · Chromium'],
+  [16.6, 19.0, '工具', [
+    ['', 'Node.js · Playwright · Chromium · WebGL'],
     ['', 'Python · NumPy · SciPy · Pillow · FFmpeg'],
   ]],
 ];
@@ -49,7 +55,7 @@ export function renderFrame(ctx, t, W, H) {
     }
   }
   // 最后一张：片名
-  const al = sstep(14.6, 15.4, t) * (1 - sstep(16.9, 17.8, t));
+  const al = sstep(19.1, 19.9, t) * (1 - sstep(21.0, 21.85, t));
   if (al > 0) {
     ctx.save(); ctx.font = `${Math.round(110 * k)}px "Ma Shan Zheng"`; ctx.fillStyle = `rgba(246,231,200,${al})`;
     ctx.shadowColor = `rgba(255,190,110,${0.45 * al})`; ctx.shadowBlur = 30 * k; ctx.fillText('奶奶的皮影', W / 2, H * 0.47); ctx.restore();

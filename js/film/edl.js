@@ -53,6 +53,6 @@ export const SHOTS = [
   // 第 13 场 · 尾声
   { id: 'S32', scene: 13, line: 'code', dur: 15, mod: 'js/code/s32.js', text: '屋外，慢慢后退：家家户户白灯，只有这扇窗暖黄，窗里鹤和乌龟还在演（片名已移到片头）' },
   { id: 'END', scene: 0, line: 'code', dur: 9, mod: 'js/code/credits.js', text: '尾声：竹席上小满的手机，锁屏壁纸换成床单上的鹤影，屏幕熄灭' },
-  { id: 'MAKING', scene: 0, line: 'code', dur: 18, mod: 'js/code/making.js', text: '片尾"制作与资源"：画面、声音、字体、工具（只列技术手段和素材来源）' },
+  { id: 'MAKING', scene: 0, line: 'code', dur: 22, mod: 'js/code/making.js', text: '片尾"制作与资源"：画面、声音、字体、工具（只列技术手段和素材来源）' },
 ];
 export const TOTAL = SHOTS.reduce((s, x) => s + x.dur, 0);
