@@ -8,8 +8,6 @@ PICK = {
     'torch_on': 187335, 'tap': 566685, 'plug_in': 525017, 'plug_out': 477641, 'cord': 591569, 'tv_off': 869534,
     'fluor_start': 145120, 'fluor_hum': 474312, 'fan': 345230, 'rods': 348959, 'knock': 629987, 'bite': 275015,
     'night': 333221, 'frogs': 32655, 'puppy': 583142,
-    'girl_yawn': 471859, 'girl_gasp': 471930, 'girl_effort': 471926, 'girl_sigh': 377736, 'girl_giggle': 203230,
-    'girl_laugh': 184616, 'girl_laugh2': 119450, 'woman_laugh': 433921, 'woman_laugh2': 93775,
 }
 os.makedirs('assets/sfx', exist_ok=True)
 man = {}

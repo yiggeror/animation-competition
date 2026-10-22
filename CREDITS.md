@@ -14,9 +14,9 @@
 
 ## 声音
 - **配乐**：本仓库的程序合成（`audio/inst.py`、`audio/score.py`）：板胡、笛子、扬琴、琵琶、梆子、板鼓、锣、钹、8-bit 音色用加法合成、Karplus-Strong 拨弦和模态合成算出来。主题旋律和各段编排为本片原创。
-- **音效与人声**：10-22 起换成真实录音，全部来自 Freesound、授权为 CC0 1.0 公有领域（逐条打开页面核对过，`tools/pick_sfx.py`），文件在 `assets/sfx/`，清单 `assets/sfx/manifest.json`。
+- **音效**：10-22 起换成真实录音，全部来自 Freesound、授权为 CC0 1.0 公有领域（逐条打开页面核对过，`tools/pick_sfx.py`），文件在 `assets/sfx/`，清单 `assets/sfx/manifest.json`。
   程序负责切分、对位（按画面帧号）、响度对齐、混响与声像（`audio/rec.py`、`audio/build.py`）。手机提示音、游戏 8-bit 小曲、显像管的嗡声和消磁声、马灯火苗仍由程序合成。
-- 人物没有台词，只有语气声（叹气、哈欠、笑、吸气）。
+- 人物没有台词，也不放语气声（10-22 试过一版，用户听后决定先去掉）。
 
 | 用在 | 录音 | 作者 | 授权 |
 |---|---|---|---|
@@ -28,8 +28,6 @@
 | S07 仰面躺倒 | [BodyFall.wav](https://freesound.org/people/000600/sounds/187136/) | 000600 | CC0 1.0 |
 | 火柴盒、手电落箱、乌龟翻倒 | [Thud / Falling on wooden floor / Snapping, breaking neck](https://freesound.org/people/Breviceps/sounds/447922/) | Breviceps | CC0 1.0 |
 | S07 蹭竹席 | [Blanket Movement 6](https://freesound.org/people/OwlStorm/sounds/320144/) | OwlStorm | CC0 1.0 |
-| S07 奶奶的拖鞋脚步 | [FOOTSTEPS SLIPPER WALK LEAVES NIGHT 01.wav](https://freesound.org/people/sengjinn/sounds/176538/) | sengjinn | CC0 1.0 |
-| S30 小满的脚步 | [Footsteps Inside Light - Foley.wav](https://freesound.org/people/tothrec2/sounds/596537/) | tothrec2 | CC0 1.0 |
 | S14 拖凳子 | [Chair Movement 02.wav](https://freesound.org/people/LilMati/sounds/364988/) | LilMati | CC0 1.0 |
 | S07/S14 凳子 | [Chair Movement 01.wav](https://freesound.org/people/LilMati/sounds/364985/) | LilMati | CC0 1.0 |
 | S14 床单甩上铁丝 | [Fabric Flap.wav](https://freesound.org/people/akennedybrewer/sounds/389170/) | akennedybrewer | CC0 1.0 |
@@ -54,14 +52,6 @@
 | 夏夜蟋蟀 | [Night Crickets Back Porch.aiff](https://freesound.org/people/hdfreema/sounds/333221/) | hdfreema | CC0 1.0 |
 | 蛙鸣 | [FrogsAndCrickets_ExcerptB_JMA_24Bit_48k.wav](https://freesound.org/people/greysound/sounds/32655/) | greysound | CC0 1.0 |
 | S25/S26 手影小狗叫 | [Puppy Bark](https://freesound.org/people/AntumDeluge/sounds/583142/) | AntumDeluge | CC0 1.0 |
-| S13 小满装打哈欠 | [46-BostezoNiña.wav](https://freesound.org/people/wintuh/sounds/471859/) | wintuh | CC0 1.0 |
-| S05a/S15 小满吸气 | [50-MiniGaspNiña.wav](https://freesound.org/people/wintuh/sounds/471930/) | wintuh | CC0 1.0 |
-| S14 小满"哼" | [48-EsfuercitoNiña.wav](https://freesound.org/people/wintuh/sounds/471926/) | wintuh | CC0 1.0 |
-| S07 小满叹气 | [Girl sighs](https://freesound.org/people/BlueSiren/sounds/377736/) | BlueSiren | CC0 1.0 |
-| S18 小满"噗"地笑 | [child giggle](https://freesound.org/people/RaspberryTickle/sounds/203230/) | RaspberryTickle | CC0 1.0 |
-| S31 小满笑 | [Young Female Child Laughing](https://freesound.org/people/kim.headlee/sounds/184616/) | kim.headlee | CC0 1.0 |
-| S24 小满"嘿嘿" | [Girl Laugh.wav](https://freesound.org/people/lmbubec/sounds/119450/) | lmbubec | CC0 1.0 |
-| S20 奶奶笑（降两个半音） | [Woman laugh](https://freesound.org/people/Kalibrk/sounds/433921/) | Kalibrk | CC0 1.0 |
 
 ## 参考资料（不进片）
 皮影查证资料见 `docs/research/shadow-puppetry.md` 第 4 节。
